@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P3 | [AR-0406](../tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. |
 | P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done. |
 
 ### Cancelled (2)

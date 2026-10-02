@@ -392,8 +392,8 @@
 | [AR-1648](../tasks/AR-1648.md) | [AR-1645](../tasks/AR-1645.md), [AR-1646](../tasks/AR-1646.md) | [AR-1647](../tasks/AR-1647.md), [AR-1649](../tasks/AR-1649.md), [AR-1650](../tasks/AR-1650.md), [AR-1686](../tasks/AR-1686.md) |
 | [AR-1649](../tasks/AR-1649.md) | [AR-1648](../tasks/AR-1648.md) | [AR-1647](../tasks/AR-1647.md), [AR-1651](../tasks/AR-1651.md), [AR-1686](../tasks/AR-1686.md) |
 | [AR-1650](../tasks/AR-1650.md) | [AR-1644](../tasks/AR-1644.md), [AR-1648](../tasks/AR-1648.md) | [AR-1647](../tasks/AR-1647.md), [AR-1652](../tasks/AR-1652.md), [AR-1686](../tasks/AR-1686.md) |
-| [AR-1651](../tasks/AR-1651.md) | [AR-1649](../tasks/AR-1649.md) | [AR-1643](../tasks/AR-1643.md), [AR-1647](../tasks/AR-1647.md), [AR-1655](../tasks/AR-1655.md), [AR-1657](../tasks/AR-1657.md) |
-| [AR-1652](../tasks/AR-1652.md) | [AR-1646](../tasks/AR-1646.md), [AR-1650](../tasks/AR-1650.md) | [AR-1643](../tasks/AR-1643.md), [AR-1654](../tasks/AR-1654.md), [AR-1655](../tasks/AR-1655.md) |
+| [AR-1651](../tasks/AR-1651.md) | [AR-1649](../tasks/AR-1649.md) | [AR-1643](../tasks/AR-1643.md), [AR-1647](../tasks/AR-1647.md), [AR-1655](../tasks/AR-1655.md), [AR-1657](../tasks/AR-1657.md), [AR-1686](../tasks/AR-1686.md) |
+| [AR-1652](../tasks/AR-1652.md) | [AR-1646](../tasks/AR-1646.md), [AR-1650](../tasks/AR-1650.md) | [AR-1643](../tasks/AR-1643.md), [AR-1654](../tasks/AR-1654.md), [AR-1655](../tasks/AR-1655.md), [AR-1686](../tasks/AR-1686.md) |
 | [AR-1653](../tasks/AR-1653.md) | [AR-1562](../tasks/AR-1562.md), [AR-1563](../tasks/AR-1563.md), [AR-1564](../tasks/AR-1564.md), [AR-1613](../tasks/AR-1613.md), [AR-1623](../tasks/AR-1623.md), [AR-1643](../tasks/AR-1643.md) | [AR-1654](../tasks/AR-1654.md), [AR-1655](../tasks/AR-1655.md), [AR-1658](../tasks/AR-1658.md) |
 | [AR-1654](../tasks/AR-1654.md) | [AR-1643](../tasks/AR-1643.md), [AR-1652](../tasks/AR-1652.md), [AR-1653](../tasks/AR-1653.md), [AR-1656](../tasks/AR-1656.md) | [AR-1655](../tasks/AR-1655.md), [AR-1660](../tasks/AR-1660.md) |
 | [AR-1655](../tasks/AR-1655.md) | [AR-1623](../tasks/AR-1623.md), [AR-1624](../tasks/AR-1624.md), [AR-1651](../tasks/AR-1651.md), [AR-1652](../tasks/AR-1652.md), [AR-1653](../tasks/AR-1653.md), [AR-1654](../tasks/AR-1654.md), [AR-1657](../tasks/AR-1657.md) | None |
@@ -422,7 +422,7 @@
 | [AR-1683](../tasks/AR-1683.md) | [AR-1682](../tasks/AR-1682.md) | None |
 | [AR-1684](../tasks/AR-1684.md) | [AR-1671](../tasks/AR-1671.md) | None |
 | [AR-1685](../tasks/AR-1685.md) | None | None |
-| [AR-1686](../tasks/AR-1686.md) | [AR-1645](../tasks/AR-1645.md), [AR-1646](../tasks/AR-1646.md), [AR-1648](../tasks/AR-1648.md), [AR-1649](../tasks/AR-1649.md), [AR-1650](../tasks/AR-1650.md) | None |
+| [AR-1686](../tasks/AR-1686.md) | [AR-1645](../tasks/AR-1645.md), [AR-1646](../tasks/AR-1646.md), [AR-1648](../tasks/AR-1648.md), [AR-1649](../tasks/AR-1649.md), [AR-1650](../tasks/AR-1650.md), [AR-1651](../tasks/AR-1651.md), [AR-1652](../tasks/AR-1652.md) | None |
 
 ## Complete AR inventory
 
@@ -430,7 +430,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Replace hand-authored plan synthesis with plan create, add stale-identity negatives, and publish exact-head paired evidence for AR-1613. |
+| P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete provider-bound comparison and runner-owned capture/replay through AR-1651 and AR-1652, then publish exact-head paired evidence for AR-1613. |
 
 ### Open (1)
 
@@ -604,4 +604,3 @@
 | P1 | [AR-1679](../tasks/AR-1679.md): ASB legacy task-spec normalization | Unclaimed | Normalize the remaining ASB legacy task-spec records rejected by strict validation without changing task intent or gates. | Normalize AR-1625/1626/1628-1630 and AR-1641-1655, regenerate projections, and pass fresh strict validation. |
 | P1 | [AR-1680](../tasks/AR-1680.md): Repair vendor manifest regression fixture | Unclaimed | Align the immutable vendor-manifest regression fixture with the intentional task-spec validator vocabulary extension. | Run vendor verification and the complete vendor regression test on the exact signed head. |
 | P1 | [AR-1681](../tasks/AR-1681.md): Normalize residual ASB task specifications | Unclaimed | Complete strict-schema normalization for residual ASB task records AR-1617 through AR-1621 without changing their acceptance or evidence requirements. | Add only missing strict vocabulary fields, regenerate projections, and pass exact validation. |
-| P1 | [AR-1682](../tasks/AR-1682.md): Restore formal hierarchy model contract | Unclaimed | Repair the PR-publication formal model fixture so its hierarchy invariant matches the declared task domain without weakening any invariant or hosted gate. | Run exact formal publication verification and independent review on the corrected model fixture. |

@@ -4680,7 +4680,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Replace hand-authored plan synthesis with plan create, add stale-identity negatives, and publish exact-head paired evidence for AR-1613. |
+| Next action | Complete provider-bound comparison and runner-owned capture/replay through AR-1651 and AR-1652, then publish exact-head paired evidence for AR-1613. |
 
 
 ## Dependency graph
