@@ -1,0 +1,12 @@
+{
+  "id": "AR-1628",
+  "title": "Top-level ASB-TUI bootstrap integration repair",
+  "evidence_class": "hosted",
+  "acceptance": [
+    "unavailable development catalog choices remain visible",
+    "unsupported lifecycle polls are skipped",
+    "the bootstrap status-2 failure is absent on the exact paired route",
+    "development auth/signature/key checks remain warning-only"
+  ],
+  "required_checks": ["repository-quality", "awq", "exact-paired-pty"]
+}
