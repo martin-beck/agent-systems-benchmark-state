@@ -1,0 +1,10 @@
+AR: AR-1621
+ASB protected-main commit: 1521b9800bf408ff833f8908391cdeedccee39c1
+Implementation PR: #435, final signed head 65834e135c21de033896fb8c0718db683e8f6e0d
+Paired TUI protected-main commit: 867d302a8a9fd6d5865071ffd3b8dcc1c5f73c6a
+Evidence: development setup --json succeeds without credentials; nested authentication.status=unavailable and development-only warnings are classified as non-blocking; compact warning fixtures remain supported. TUI all-route regressions keep missing API keys, signatures, and key management visible but non-blocking.
+Review: independent exact-head review found no product blocker; signed commits and DCO verified.
+Hosted evidence: ASB PR #435 and TUI PR #215 required hosted checks passed after the TUI module-inventory repair.
+Status: released after paired protected-main merges.
+
+Production publication and strict verification boundaries remain fail-closed; development-only authentication, signatures, and key management never block the prototype.
