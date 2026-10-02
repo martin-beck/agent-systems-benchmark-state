@@ -696,7 +696,7 @@
         AR_1646["AR-1646 - Done"]:::status_done
         AR_1647["AR-1647 - Planned"]:::status_planned
         AR_1648["AR-1648 - Done"]:::status_done
-        AR_1649["AR-1649 - Open"]:::status_open
+        AR_1649["AR-1649 - In progress"]:::status_in_progress
         AR_1650["AR-1650 - Planned"]:::status_planned
         AR_1651["AR-1651 - Planned"]:::status_planned
         AR_1652["AR-1652 - Planned"]:::status_planned

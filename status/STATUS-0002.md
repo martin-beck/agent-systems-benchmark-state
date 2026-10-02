@@ -4224,11 +4224,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1649-release |
 | Parent | None |
 | Children | None |
 | Summary | Produce typed selected-agent comparison analysis and human/JSON reports from paired runs. |

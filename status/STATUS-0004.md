@@ -426,12 +426,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1649](../tasks/AR-1649.md): Comparison analysis and report | codex-ar1649-release | Produce typed selected-agent comparison analysis and human/JSON reports from paired runs. | Implement comparability analysis, confounder/unavailable evidence reporting, and projections for fan-out run references. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. |
-| P0 | [AR-1649](../tasks/AR-1649.md): Comparison analysis and report | Unclaimed | Produce typed selected-agent comparison analysis and human/JSON reports from paired runs. | Implement comparability analysis, confounder/unavailable evidence reporting, and projections for fan-out run references. |
 
 ### Blocked (82)
 
