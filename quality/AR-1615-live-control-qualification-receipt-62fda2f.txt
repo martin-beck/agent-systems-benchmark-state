@@ -1,0 +1,31 @@
+AR-1615 live ASB-TUI control qualification receipt (exact protected heads)
+Timestamp: 2026-10-02
+Status: BLOCKED_PENDING_TUI_TRUSTED_MAIN_REPAIR
+
+Exact inputs
+- ASB protected main: 62fda2f3417bf69f1da5f288b0df1d389c853dfa
+- ASB source tree: 2ee1f48939a1d5ff5b4628befbe3968ae21288f7
+- ASB release binary SHA-256: 378073fea06e3322518147533bd016e82cd34420f0ab242c9fefbb8f17c28ef6
+- asb-tui protected main: a5eda0bc4ce3387398e29697fb7d06d59bb447b1
+- asb-tui source tree: 0db9835ba5905435b88f08c00530bc52649d963c
+- asb-tui release binary SHA-256: f885b07b704725c6fb84c30546e0e6e5de0d26ff2e6a3ff8c506a8b1acc74dca
+- target: x86_64-unknown-linux-gnu
+
+Exact-main build and test evidence
+- ASB exact-head release build: `cargo build --locked --release -p asb-cli`: passed.
+- asb-tui exact-head release build: `cargo build --locked --release --bin asb-tui`: passed.
+- asb-tui exact-head local suite: 312 unit tests passed; protocol, wizard, provider, recording, replay, broker, PTY, and lifecycle integration suites passed. Five local tmux foundation tests could not create tmux fixtures on this host and are not treated as product success.
+- ASB exact-head inherited-fd/PTTY cross-repository test, with the exact TUI binary and digest: `ASB_TUI_QUALIFICATION=1 ... cargo test --locked -p asb-cli --features cross-repo-qualification tui::tests::pinned_tui_inherited_fd_development_launch_uses_pty_and_cleans_up -- --exact --ignored --nocapture`: passed, 1/1 in 6.10s. This is the authoritative live broker/PTY route; it proves descriptor negotiation, development identity binding, cassette backend bootstrap, offline replay selection, and bounded cleanup.
+- ASB exact-head focused lifecycle tests: recording campaign transitions, capture tuple matrix, strict replay digest fencing, in-flight cancellation, cancel/restart reconciliation, provenance retry idempotency, and durable campaign planning all passed.
+
+Setup and development policy evidence
+- Development bundle manifest binds both exact source commits/trees and the exact TUI executable digest/size.
+- The development install/status/doctor route accepts the bundle and emits the three visible warnings `development_missing_authentication_allowed`, `development_missing_signatures_allowed`, and `development_missing_key_management_allowed`; missing production authentication/signature/key management is non-blocking.
+- Provider catalog and setup output are credential-free; no API key or provider secret was emitted.
+- Direct ad-hoc launch attempts are not counted as live evidence because the driver did not preserve the repository harness's inherited PTY/control handoff. The repository-owned exact-head PTY qualification above is the valid route.
+
+Hosted evidence and blocker
+- ASB protected-main run 36953649381, `Cross-repository development broker qualification`, passed on 62fda2f.
+- asb-tui protected-main repository-quality run 36953956911 passed on a5eda0b.
+- asb-tui Trusted-main run 36953956913 was rerun twice. Both attempts failed in the locked test phase at `development_lifecycle::tests::development_install_status_launch_upgrade_and_remove_are_reentrant`, with `development_activation_failed` at the second materialization; the run reported 311 passed and 1 failed. The first attempt also had a separate runner `/tmp` ENOSPC failure; the subsequent clean rerun reproduced the lifecycle failure, so it is no longer classified as disk-only infrastructure noise.
+- Do not mark AR-1615 done or release it until AR-1625 repairs this hosted TUI lifecycle failure, its independent review is complete, and the exact a5eda0b-or-replacement protected main Trusted-main gate is green. The ASB live route itself has no observed protocol defect.
