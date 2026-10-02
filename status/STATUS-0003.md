@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_0906["AR-0906 - Done"]:::status_done
         AR_0907["AR-0907 - Done"]:::status_done
         AR_0908["AR-0908 - Done"]:::status_done
         AR_0909["AR-0909 - Done"]:::status_done

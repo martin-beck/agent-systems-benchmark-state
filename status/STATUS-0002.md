@@ -4469,8 +4469,8 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Restore the missing typed coordinator adapters and repair strict mypy errors so Git-backed ASB state verification is runnable without weakening gates. |
-| Next action | Reproduce the failure on the current base, restore or correctly package the typed adapter/role modules, and run the full strict state workflow on the repair head. |
+| Summary | Restore the missing typed coordinator adapters from the pinned vendor source and repair strict mypy errors without removing barrier, identity, rollback, or WAL safety semantics. |
+| Next action | Reproduce the failure on the current base, restore exact coordinator.vendor.json source (v0.3.53) or document a reviewed compatibility diff, and run the full strict state workflow on the repair head. |
 
 
 ## Dependency graph
@@ -4671,4 +4671,3 @@ flowchart LR
         AR_0903["AR-0903 - Planned"]:::status_planned
         AR_0904["AR-0904 - Done"]:::status_done
         AR_0905["AR-0905 - Done"]:::status_done
-        AR_0906["AR-0906 - Done"]:::status_done

@@ -750,6 +750,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-state-ar-status-document` | `feature/ar-status-document` | `eedd3119c08b` | 0 | behind 49995, ahead 0 |
 | `agent-systems-benchmark-state-ar1061-tmux-isolation` | `docs/ar1061-tmux-live-fixture-isolation` | `51cd8f1d82da` | 1 | behind 33362, ahead 0 |
 | changed files | - | - | - | `.runtime` |
+| `agent-systems-benchmark-state-ar1670` | `DETACHED` | `7f6920416253` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-state-formal-verification` | `fix/handoffctl-ci-dco-merge` | `dfb7061b0239` | 0 | behind 43294, ahead 0 |
 | `agent-systems-benchmark-state-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `3ff44bd93d1a` | 0 | behind 40278, ahead 0 |
 | `agent-systems-benchmark-state-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations-state` | `1bd496c86c84` | 0 | behind 38599, ahead 4 |
@@ -768,5 +769,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `plans/AR-1198.md`, `tasks/AR-1198.md` |
 | `review-ar1308-e11` | `DETACHED` | `e11adae64fc3` | 0 | behind 23119, ahead 3 |
 | `ar1661-asb.rcLI` | `DETACHED` | `019213d52cca` | 0 | behind 6, ahead 0 |
-| `asb-state-ar1667-69` | `coord/ar-1667-release-consumption` | `22558ea9e2b0` | 6 | behind 0, ahead 1 |
-| changed files | - | - | - | `CURRENT.md`, `PROJECT_STATE.md`, `WORKTREES.md`, `plans/AR-1670-state-mypy-baseline-repair.md`, `specs/AR-1670.json`, `tasks/AR-1670.md` |
+| `asb-state-ar1667-69` | `coord/ar-1667-release-consumption` | `190836f7bfff` | 3 | behind 0, ahead 2 |
+| changed files | - | - | - | `plans/AR-1670-state-mypy-baseline-repair.md`, `specs/AR-1670.json`, `tasks/AR-1670.md` |
