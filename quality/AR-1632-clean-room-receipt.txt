@@ -1,0 +1,14 @@
+AR-1632 exact-head clean-room acceptance receipt
+
+Status: pass
+ASB main: c8c992ff4373810bfce9b2f56878a86039f093c9
+TUI main: af1a691b32d067fc1147affc1ca3b3c347a6a67f
+TUI source tree: 33e210d4b240d71a054500a9bc60dd2bedddef9d
+Evidence directory: /srv/data/projects/qual-ar1632-smoke-1790924866
+Transcript sha256: 21cd7d99faf634410d2830e0228badd1d28a2dd9c60ff75bf5fd02d6c81809e7
+
+Under env -i, PATH=/nonexistent, and explicit validated canonical linker tools,
+fresh dev install, restart/status persistence, human status and doctor, JSON
+upgrade, post-upgrade checks, remove/post-remove state, tamper detection, and
+offline-source diagnostics passed. Development authentication, signatures, and
+key-management warnings remained visible and non-blocking.

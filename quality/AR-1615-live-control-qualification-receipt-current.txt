@@ -1,0 +1,14 @@
+AR-1615 current exact PTY/control acceptance receipt
+
+Status: pass
+ASB main: c8c992ff4373810bfce9b2f56878a86039f093c9
+TUI main: af1a691b32d067fc1147affc1ca3b3c347a6a67f
+TUI source tree: 33e210d4b240d71a054500a9bc60dd2bedddef9d
+
+Repository-owned command:
+ASB_TUI_QUALIFICATION=1 ASB_TUI_BINARY=<qualified-binary> ASB_TUI_EXPECTED_SHA256=1f534ebe838a49ef68825feccab52dfe2e96fedfcd3faac12345727fc739bb56 ASB_TUI_SOURCE_COMMIT=af1a691b32d067fc1147affc1ca3b3c347a6a67f ASB_TUI_SOURCE_TREE=33e210d4b240d71a054500a9bc60dd2bedddef9d cargo test --locked -p asb-cli --features cross-repo-qualification tui::tests::pinned_tui_inherited_fd_development_launch_uses_pty_and_cleans_up -- --exact --ignored --nocapture
+
+Result: 1 passed, 0 failed. The inherited-FD broker, PTY terminal handoff,
+typed bootstrap, offline replay, quit sequence, and cleanup all passed.
+Missing terminal overrides remain typed environment_path_invalid diagnostics.
+Development authentication, signatures, and key management remain warnings.
