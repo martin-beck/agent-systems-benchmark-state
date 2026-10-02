@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-workflow-coordinator/schema/role-assignment.schema.json",
+  "title": "Coordinator role assignment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "assignment_id", "owner_id", "roles", "authorization_evidence"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "assignment_id": {"type": "string", "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]{2,63}$"},
+    "owner_id": {"type": "string", "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._:@/-]{2,127}$"},
+    "roles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/assignment"}
+    },
+    "authorization_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/evidence"}
+    }
+  },
+  "$defs": {
+    "publicRef": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$"
+    },
+    "roleId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{2,63}$"
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "assignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role_id", "expires_at"],
+      "properties": {
+        "role_id": {"$ref": "#/$defs/roleId"},
+        "expires_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "ref", "digest"],
+      "properties": {
+        "kind": {"enum": ["review", "policy", "ticket"]},
+        "ref": {"$ref": "#/$defs/publicRef"},
+        "digest": {"$ref": "#/$defs/digest"}
+      }
+    }
+  }
+}

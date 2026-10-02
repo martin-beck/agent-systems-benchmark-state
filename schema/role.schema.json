@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-workflow-coordinator/schema/role.schema.json",
+  "title": "Coordinator role",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "role_id",
+    "title",
+    "summary",
+    "capabilities",
+    "forbidden_actions",
+    "tool_policy",
+    "worktree_policy",
+    "awq_profile_refs"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "role_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]{2,63}$"},
+    "title": {"type": "string", "minLength": 1, "maxLength": 100},
+    "summary": {"type": "string", "minLength": 1, "maxLength": 1000},
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/capability"}
+    },
+    "forbidden_actions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/action"}
+    },
+    "tool_policy": {"$ref": "#/$defs/toolPolicy"},
+    "worktree_policy": {"$ref": "#/$defs/worktreePolicy"},
+    "awq_profile_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/publicRef"}
+    }
+  },
+  "$defs": {
+    "action": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_.:-]{1,63}$"
+    },
+    "publicRef": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$"
+    },
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capability_id", "description", "actions", "scope"],
+      "properties": {
+        "capability_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]{2,63}$"},
+        "description": {"type": "string", "minLength": 1, "maxLength": 500},
+        "actions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/action"}
+        },
+        "scope": {"enum": ["read", "write", "admin"]}
+      }
+    },
+    "toolPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allow", "deny"],
+      "properties": {
+        "allow": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/action"}},
+        "deny": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/action"}}
+      }
+    },
+    "worktreePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "path_patterns"],
+      "properties": {
+        "mode": {"enum": ["shared", "isolated", "none"]},
+        "path_patterns": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1, "maxLength": 200}
+        }
+      }
+    }
+  }
+}
