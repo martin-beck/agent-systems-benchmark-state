@@ -1,0 +1,17 @@
+AR-1639 acceptance receipt
+
+Status: pass (scoped materialization/lifecycle contract)
+ASB main: c8c992ff4373810bfce9b2f56878a86039f093c9
+TUI main: af1a691b32d067fc1147affc1ca3b3c347a6a67f
+TUI source tree: 33e210d4b240d71a054500a9bc60dd2bedddef9d
+Evidence transcript: /srv/data/projects/qual-ar1640-final/final-qualification-transcript.txt
+Evidence sha256: b1acc19946a9ac94bc3dde11eb87c315010b938c832dbe180805fbefce59d33b
+
+Under a private validated rustup/toolchain and cleared ambient environment,
+install --channel dev, status, human status, doctor, upgrade, and remove all
+passed. Nested TUI Cargo build used explicit validated auxiliary tools and
+bounded -C link-arg=-B/usr/bin. Development authentication, signatures, and
+key-management warnings remained visible and non-blocking.
+
+The live PTY terminal application failure is not an auxiliary-linker failure;
+it remains tracked by AR-1615.
