@@ -1,0 +1,9 @@
+AR: AR-1627
+Status: DONE
+TUI merged protected-main commit: c4e2d6ab3f31bb9ab56194d6408b11d8d5812bf6
+Implementation PR: asb-tui #217, signed/DCO repair head 4e7cb5dc401738ee89673695fd343c220e7c55b3
+Evidence: shared FAIL_RENAME_AT activation tests are serialized only with a test-local mutex; the full local library suite passed 312/312. The module inventory classification was updated and hosted repository-quality/DCO gates passed before merge.
+Scope: test-only race isolation; no production behavior, authentication, signatures, or key-management policy was changed.
+AR-1615 remains separate and is not closed by this receipt.
+
+Development-only authentication, signatures, and key management remain warning-only and non-blocking.
