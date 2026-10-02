@@ -1,0 +1,11 @@
+{
+  "id": "AR-1629",
+  "title": "Post-bootstrap ASB-TUI launch progression",
+  "evidence_class": "hosted",
+  "acceptance": [
+    "exact paired top-level launch reaches an interactive lifecycle response",
+    "real PTY cleanup is bounded and recorded",
+    "development auth/signature/key checks remain warning-only"
+  ],
+  "required_checks": ["repository-quality", "awq", "exact-paired-pty"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "AR-1630",
+  "title": "Development unavailable-agent coverage",
+  "evidence_class": "hosted",
+  "acceptance": [
+    "unavailable choices remain visible",
+    "unsupported lifecycle polls are skipped",
+    "coverage threshold remains enforced",
+    "development auth/signature/key checks remain warning-only"
+  ],
+  "required_checks": ["repository-quality", "awq", "coverage"]
+}
