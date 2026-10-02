@@ -153,7 +153,7 @@
       "source": "tools/task_spec.py"
     },
     "tools/upgrade_authority.py": {
-      "sha256": "13351edbea86873b0fd4d09d1f4f4c6540d5db2f2f397c0894e8d22064c51dd1",
+      "sha256": "84181acfe379426be5934be03dd9c6423223345d07dfb863eb154acc3716c67b",
       "source": "tools/upgrade_authority.py"
     },
     "tools/upgrade_binding.py": {
