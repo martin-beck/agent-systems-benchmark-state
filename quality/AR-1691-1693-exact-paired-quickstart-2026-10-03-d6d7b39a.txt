@@ -1,0 +1,29 @@
+AR-1691 / AR-1693 exact paired quickstart receipt
+Date: 2026-10-03
+Classification: development/mock; credentials: none
+
+Exact product heads
+- ASB main: d6d7b39a9557f0fa059cf67befb11270a7998a9d
+- ASB source tree: 236e7d9f3133da440d55cf4320c083b8b8e56d76
+- TUI main: 29f3f61d910198d8e042dc53e5e37ddcdc98a614
+- TUI source tree: 831ab8d4e069733eec8515e526c2c93971a37730
+
+Qualification evidence
+- Fresh paired exact-head quickstart runner passed.
+- Default channel dev; install, status, restart, launch, onboarding and journey passed.
+- Development authentication, signatures and key management were absent but remained visible non-blocking warnings.
+- Installed executable SHA-256: 1b8e3a378cd5423bea1ecc539863c64715a60071da7f176e0ccab68c9f6ef6b1.
+- Handoff manifest SHA-256: ef98fffbc7c5e4dd78b64972b3f595980fc690b0b53d1faac1abf16f04d8057b.
+- Runner binary SHA-256: 640e7966a51d3d78c8044f5c1eb51afef060f7b06abf370a1bfaf7a2e1a8ab25.
+- ASB binary SHA-256: 1284c45dd6a385606714a9b951e93fdde79ef7b5436f160e0fe08137c8431af9.
+- All-workload matrix: 7 workloads / 7 tuples. Selected matrix: 1 workload / 1 tuple.
+- Incomplete coverage correctly reported offline_ready=false.
+- Strict replay passed with network=denied; comparison and analysis passed.
+- Tamper negative correctly rejected the invalid development manifest.
+- TUI fanout_dispatch tests: 2 passed.
+- ASB-side published v1.14 fanout fixture through real RunnerBackend: 1 passed with an isolated non-overlapping test root.
+
+Scope boundary
+AR-1695 remains open for the paired live acceptance path. The quickstart runner's fanout route remains a summary string and does not itself prove that the TUI serialized request reached the ASB backend. The ASB fixture/backend test proves the ASB-side contract only; do not mark AR-1691 or AR-1693 complete on this receipt alone.
+
+Network policy: install/materialization allowed; benchmark and replay denied. No credentials or provider responses were recorded.
