@@ -4252,11 +4252,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb1651-comparison-availability |
 | Parent | None |
 | Children | None |
 | Summary | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. |
@@ -4698,5 +4698,3 @@
 
 ### AR-1688 — Runner-owned cassette capture and replay qualification
 
-| Field | Value |
-| --- | --- |
