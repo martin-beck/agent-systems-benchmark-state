@@ -4322,11 +4322,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb1656-provider-catalog |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Allow adding/editing providers and selecting models from a connected provider catalog with development-only non-blocking diagnostics. |
@@ -4698,3 +4698,5 @@
 
 ### AR-1688 — Runner-owned cassette capture and replay qualification
 
+| Field | Value |
+| --- | --- |
