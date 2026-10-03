@@ -1,0 +1,26 @@
+AR-1691 / AR-1693 exact paired quickstart receipt
+Date: 2026-10-03
+Classification: development/mock; credentials: none
+
+Exact product heads
+- ASB main: 65f36e97dcff1969dd62c1d6864456305d6d4860
+- ASB source tree: de1ca7ded0cf78baa80093ac0ef8bbd6ea60cf95
+- TUI main: e1ee6c21c132f171a635724cc660c9b9dda76436
+- TUI source tree: cd9d8139ed52316c908e5620ae69c4bd03ce3372
+
+Qualification evidence
+- Disposable paired quickstart runner passed.
+- Default channel: dev; install, status, restart, launch, onboarding and journey passed.
+- Development authentication, signatures and key management were absent but remained visible non-blocking warnings.
+- Install executable SHA-256: c778ca4bacc837618206e1a9740965c272dc51aca339a2c13d416e6f14ba7477.
+- Handoff manifest SHA-256: 9b08fd9fbdf7896a872d6c7df0aa813b698995ee45e73e16856615a6d8b21f18.
+- All-workload matrix: 7 workloads / 7 tuples. Selected matrix: 1 workload / 1 tuple.
+- Incomplete coverage correctly reported offline_ready=false.
+- Strict replay passed with network=denied; comparison and analysis passed.
+- Tamper negative correctly rejected the invalid development manifest.
+- TUI fanout_dispatch tests: 2 passed. ASB orchestrator tests: 21 passed, including duplicate, partial-admission, idempotency and cassette-binding fan-out cases.
+
+Scope boundary
+AR-1695 remains planned. The quickstart receipt does not claim live paired RunRequest wire-contract conformance: the runner and local fan-out tests do not replace the required real serialized request/real-backend acceptance. Keep AR-1691 and AR-1693 open until AR-1695 is completed or its dependency is explicitly re-evaluated.
+
+Network policy: install/materialization allowed; benchmark and replay denied. No credentials or provider responses were recorded.
