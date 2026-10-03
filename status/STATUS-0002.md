@@ -4686,7 +4686,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4701,3 +4701,4 @@
 | Field | Value |
 | --- | --- |
 | Status | done |
+| Priority | P0 |
