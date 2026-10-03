@@ -1,0 +1,17 @@
+AR-1692 paired development-channel handoff contract receipt
+
+Status: done for the paired handoff implementation; final clean-room journey remains
+AR-1691/AR-1693 and fan-out wire conformance remains AR-1695.
+
+Exact implementation evidence:
+- ASB handoff/materializer implementation: PR #460 merge `0d241cabc674a96191e67477758994c36427ebe2`.
+- TUI handoff consumer: PR #243 merge `103d90ebd6f9904374c942df19fe70e858c13421`.
+- TUI handoff state receipt was previously published in the paired TUI state repository.
+- The current ASB main head is `65f36e97dcff1969dd62c1d6864456305d6d4860`; the current TUI main head is
+  `b736be925b09af50349d3552ce9869650958fed1`.
+
+The handoff persists paired source commit/tree identities, manifest and executable digests,
+and typed stale, mismatch, invalid, and unavailable diagnostics. Development authentication,
+signatures, and key management are warning-only and do not block this prototype path. Hosted
+checks for the implementation merges passed; this receipt does not claim the final paired
+benchmark/capture/replay journey, which remains separately gated.
