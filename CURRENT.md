@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1651](tasks/AR-1651.md): Comparison availability and comparability repair | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Repair the comparison projection and add asymmetric, symmetric, and multi-candidate tests after AR-1649 implementation. | asb1651-comparison-availability |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | codex-ar1686-qualification |
 
 ## Open

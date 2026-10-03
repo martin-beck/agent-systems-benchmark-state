@@ -4252,11 +4252,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb1651-comparison-availability |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. |
@@ -4700,3 +4700,4 @@
 
 | Field | Value |
 | --- | --- |
+| Status | done |
