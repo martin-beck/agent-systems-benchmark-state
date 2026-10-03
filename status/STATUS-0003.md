@@ -51,6 +51,34 @@
 | Summary | Qualify the ASB clone-to-benchmark lifecycle with omitted dev selection, current-main provenance, recording, strict offline replay, comparison, and analysis. |
 | Next action | Run the clean-room lifecycle against exact ASB and TUI main heads and publish a receipt covering install, wizard handoff, benchmark, selected/all recording, replay, comparison, and analysis. |
 
+### AR-1692 — Paired development-channel handoff contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Publish and validate the ASB handoff that lets asb-tui consume the exact default-dev materialization without losing provenance or blocking on development credentials. |
+| Next action | Implement and test the versioned ASB-to-TUI handoff, including exact paired provenance, digest compatibility, stale/mismatch diagnostics, and warning-only development authentication metadata. |
+
+### AR-1693 — Default-dev quickstart qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Prove the smallest selection-driven ASB journey from clone and omitted dev channel through benchmark, recording, offline replay, comparison, and analysis. |
+| Next action | Run the disposable exact-head paired quickstart after AR-1691 and AR-1692, publish a privacy-safe receipt, and retain typed unavailable-channel and warning-only development-auth evidence. |
+
 
 ## Dependency graph
 
@@ -804,6 +832,8 @@ flowchart LR
         AR_1689["AR-1689 - Planned"]:::status_planned
         AR_1690["AR-1690 - Planned"]:::status_planned
         AR_1691["AR-1691 - Planned"]:::status_planned
+        AR_1692["AR-1692 - Planned"]:::status_planned
+        AR_1693["AR-1693 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2578,6 +2608,9 @@ flowchart LR
     AR_1688 --> AR_1689
     AR_1688 --> AR_1691
     AR_1690 --> AR_1691
+    AR_1690 --> AR_1692
+    AR_1691 --> AR_1693
+    AR_1692 --> AR_1693
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2855,4 +2888,3 @@ flowchart LR
 | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
 | [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
-| [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) |
