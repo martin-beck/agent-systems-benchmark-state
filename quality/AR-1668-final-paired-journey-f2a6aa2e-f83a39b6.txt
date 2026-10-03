@@ -1,0 +1,27 @@
+AR-1668 final paired journey receipt
+classification=development/mock
+status=passed; AR remains planned pending dependency-policy reconciliation
+
+Exact product provenance:
+asb_commit=f2a6aa2ebfe8b52f1ea74ad0954e8d642918085d
+asb_tree=8f65ced83ecc0cce2679b172c9a58269aa1ff39c
+tui_commit=f83a39b6be3ebb3e9f5c546bb97da6fb5400c49b
+tui_tree=8837b18cd9085ac5c05430d761839b16321d66dd
+asb_binary_sha256=3138ae1e203636d0e462affb2fcb601710139fdbf4ec6f8ef3076e503f49cab9
+tui_binary_sha256=5648dfa940180e670cce0fca62d0e2d9f780a4517a81ed21973e15fc98b25958
+
+Journey:
+channel=dev; provider=fixture/OpenRouter-compatible; authentication=development_fixture
+agents=opencode,opendesk; models=provider_catalog_compatible; defaults=shared
+workloads=selected_and_all; capture=passed; strict_offline_replay=passed
+comparison=passed; analysis=passed; rollback_preservation=passed; removal=passed
+channel_cases=11; pty=used; install_materialization=allowed; benchmark_and_replay_network=denied
+
+Development warnings (visible and non-blocking):
+development_missing_authentication_allowed
+development_missing_signatures_allowed
+development_missing_key_management_allowed
+
+Receipt SHA-256=710b7b04f1f93044464424c29aa74c2b53a5b886678702bf1db6de11c43ff81e
+Candidate implementation PR253 was merged before this exact-main rerun; no secrets,
+private paths, or raw provider output are included.
