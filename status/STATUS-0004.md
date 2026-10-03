@@ -445,12 +445,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1695](../tasks/AR-1695.md): Fan-out RunRequest wire-contract conformance | ar1695-final-state-worker | Make the paired TUI fan-out route emit and validate the complete ASB RunRequest schema against the live control contract. | Implement the paired contract fixture and real-backend acceptance checks for every required RunRequest field, bounded limits, digest/revision identity, and development-only warning behavior before the final lifecycle gates. |
 
 ### Open (1)
 
@@ -599,3 +598,4 @@
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
 | P1 | [AR-0811](../tasks/AR-0811-documentation-qualification.md): Audit workflow documentation and publication | Unclaimed | Qualify documentation completeness, executability, accessibility, privacy, provenance, and release accuracy. | Independently audit every published workflow against released programs and deployed Pages output. |
 | P1 | [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md): Manage remote benchmark run lifecycles | Unclaimed | Manage durable benchmark runs from another machine without making the frontend their owner. | Implement remote validation, launch, detach, reconnect, status, cancellation, and recovery workflows. |
+| P1 | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md): Qualify cross-platform remote control | Unclaimed | Validate remote TUI interoperability with native x86_64 and required emulated AArch64 coverage; keep native ARM64 optional. | Prove native x86_64 and pinned QEMU AArch64 controller-runner protocol workflows across available distributions; document native ARM64 cross-host testing as optional future evidence. |

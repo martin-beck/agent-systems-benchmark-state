@@ -97,11 +97,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1695-final-state-worker |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make the paired TUI fan-out route emit and validate the complete ASB RunRequest schema against the live control contract. |
@@ -877,7 +877,7 @@ flowchart LR
         AR_1692["AR-1692 - Done"]:::status_done
         AR_1693["AR-1693 - Planned"]:::status_planned
         AR_1694["AR-1694 - Done"]:::status_done
-        AR_1695["AR-1695 - In progress"]:::status_in_progress
+        AR_1695["AR-1695 - Done"]:::status_done
         AR_1696["AR-1696 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
