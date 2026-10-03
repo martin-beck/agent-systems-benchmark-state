@@ -1,0 +1,42 @@
+AR-1651/AR-1687 comparison availability post-merge receipt
+Date: 2026-10-03
+Classification: hosted development qualification evidence; no secret material
+
+Exact product result
+--------------------
+Repository: https://github.com/martin-beck/agent-systems-benchmark.git
+Merged PR: #466
+Merged ASB commit: ad43609b67825f7f422b371f5d8104e0a5b20f2e
+Reviewed PR head: 76d238886d4300be158a132d17256a2098dd459f
+
+All required hosted checks for the merged PR completed successfully: Rust,
+policy/supply-chain, emulated aarch64, credential-free benchmark path, exact
+TUI PTY journey, retained faults, formal models, fuzz, Kani, Loom, mutation,
+platform evidence, AWQ shadow evidence, and exact headers.
+
+Local exact-head evidence
+-------------------------
+* `cargo fmt --all -- --check` passed.
+* `cargo test --locked -p asb-cli --test workflow_transcript` passed 3/3,
+  including exact source provenance and privacy-safe transcript checks.
+* `ASB_TEST_ROOT=/home/martin/t cargo test --locked -p asb-cli comparison`
+  passed 4/4.
+
+The comparison qualification exercises two runs with the same provider/model
+selection, confirms distinct execution bindings remain explicitly
+non-comparable, then exercises a three-run baseline/multi-candidate matrix.
+The matrix emits one pair per candidate and reports the candidate-specific
+`comparison-unavailable:provider_selection_unavailable` reason when provider
+provenance is absent. No raw provider content or credentials are emitted.
+
+Development boundary
+--------------------
+The test path uses local fixtures only. Missing authentication, signature
+validation, and key management remain warning-only development conditions and
+are not used to weaken release or provenance gates.
+
+Conclusion
+----------
+AR-1651 comparison availability/comparability repair and AR-1687
+development/mock provider-bound comparison qualification are qualified at the
+exact merged ASB head. Downstream channel and fresh-user ARs remain unchanged.
