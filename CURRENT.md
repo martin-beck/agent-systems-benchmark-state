@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | codex-ar1686-qualification |
+| P0 | [AR-1687](tasks/AR-1687.md): Development/mock provider-bound comparison qualification | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. | asb1687-provider-comparison |
 
 ## Open
 
@@ -15,7 +16,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. | - |
 | P0 | [AR-1656](tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | Allow adding/editing providers and selecting models from a connected provider catalog with development-only non-blocking diagnostics. | Implement the provider registry refresh and redacted add/edit route, then verify connected and unavailable provider matrices. | - |
-| P0 | [AR-1687](tasks/AR-1687.md): Development/mock provider-bound comparison qualification | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. | - |
 
 ## Blocked
 
