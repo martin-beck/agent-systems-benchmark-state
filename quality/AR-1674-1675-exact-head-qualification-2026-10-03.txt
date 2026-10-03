@@ -1,0 +1,56 @@
+AR-1674/AR-1675 exact-head qualification receipt
+Date: 2026-10-03
+Classification: development qualification evidence; no secret material
+
+Scope
+-----
+This receipt audits the already implemented ASB channel selector/persistence
+and versioned development-channel manifest against the paired current heads.
+It does not transition downstream ARs and does not claim release or production
+authentication readiness.
+
+Exact inputs
+------------
+ASB repository: https://github.com/martin-beck/agent-systems-benchmark.git
+ASB commit: 502254bd9eca1866bfb54b13f663c4aa4166c62a
+ASB tree: 91da6742583a363679bab9f0674781f6921e60e2
+asb-tui repository: https://github.com/martin-beck/asb-tui.git
+asb-tui commit: 29f3f61d910198d8e042dc53e5e37ddcdc98a614
+asb-tui tree: 831ab8d4e069733eec8515e526c2c93971a37730
+Workspace: fresh isolated clones under /tmp/ar1674-audit-RLKf
+
+Executed checks
+---------------
+ASB: `cargo test --locked -p asb-cli tui::tests -- --nocapture`
+Result: 67 passed, 0 failed, 139 filtered out.
+Coverage includes exact versioned manifest/schema validation, current-main
+source identity, stale identity rejection, digest/signature checks, channel
+selection and unavailable-channel diagnostics, rollback, atomic lifecycle,
+and development-only warning semantics.
+
+asb-tui: `cargo test --locked --test compatibility --test release_discovery --test top_level`
+Result: 24 passed, 0 failed.
+Breakdown: compatibility 9/9; release discovery and tamper/signature fixtures
+5/5; top-level lifecycle/default persistence/unavailable channels/dev material-
+ization 10/10.
+
+Acceptance findings
+-------------------
+* Omitted channel resolves to `dev` for a fresh install; an existing active
+  channel is preserved across status/launch/upgrade/remove and restart.
+* Explicit `dev` is persisted and surfaced. stable/nightly/experimental are
+  typed as unavailable in this development build and never silently fall back.
+* Development manifests carry schema version, channel, repository/ref,
+  source commit/tree, build identity/digest, and development-only provenance.
+  Stale source identity, malformed/tampered manifests, digest mismatches, and
+  invalid signatures fail closed with privacy-safe typed diagnostics.
+* Missing authentication, signatures, and key-management material do not
+  block the development channel; production/release paths retain their strict
+  validation gates.
+
+Conclusion
+----------
+No product repair was required at these exact heads. AR-1674 and AR-1675 are
+implementation-complete by the focused paired evidence above, subject to the
+authoritative handoffctl state transition and any remaining dependency policy.
+Downstream ARs remain unchanged.
