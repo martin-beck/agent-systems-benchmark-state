@@ -1,0 +1,19 @@
+AR-1694 deterministic development artifact identity receipt
+
+Status: done for ASB materialization.
+
+Exact implementation evidence:
+- ASB PR #461 source `6bfd221a66fa841e136f1cfd60cde59712da1206`, merged as
+  `97818dee58a811d36a232282c6afeec42595c58d`.
+- TUI PR #246 source `d9cf2a0dc4d025267fa4caecc9a8eb9a3b769913`, merged as
+  `bf02697c68957d9246d8920f9d8b6f26959cdb6d`.
+- ASB PR #461 hosted checks: all 14 required checks passed.
+- TUI PR #246 hosted quality/AWQ checks passed after module-inventory repair.
+
+The ASB and TUI materializers remap disposable workspace, target, and Cargo-home paths,
+disable incremental state, and retain exact manifest-byte and executable-digest validation.
+Regression coverage builds equivalent sources in distinct disposable roots and compares
+executable bytes/digests; tampered or mismatched manifests remain fail-closed. Missing
+development authentication, signatures, and key management remain visible warnings only.
+The final cross-repository clean-room journey is intentionally not claimed here and remains
+AR-1691/AR-1693.

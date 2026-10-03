@@ -55,7 +55,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -63,7 +63,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Publish and validate the ASB handoff that lets asb-tui consume the exact default-dev materialization without losing provenance or blocking on development credentials. |
-| Next action | Implement and test the versioned ASB-to-TUI handoff, including exact paired provenance, digest compatibility, stale/mismatch diagnostics, and warning-only development authentication metadata. |
+| Next action | No further action; paired handoff implementation and hosted evidence are recorded in quality/AR-1692-paired-channel-handoff-receipt.txt. Final clean-room journey remains AR-1691/AR-1693. |
 
 ### AR-1693 — Default-dev quickstart qualification
 
@@ -83,7 +83,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -91,7 +91,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make repeated ASB dev-channel TUI builds path-independent so content-addressed handoff manifests validate across clean-room materializations. |
-| Next action | Implement deterministic compiler path remapping in the ASB materializer, add repeated-build and manifest-validation regression coverage, and publish exact hosted evidence without weakening digest checks before AR-1691/1693 qualification. |
+| Next action | No further action; deterministic materialization and hosted evidence are recorded in quality/AR-1694-deterministic-artifact-receipt.txt. Final clean-room journey remains AR-1691/AR-1693. |
 
 ### AR-1695 — Fan-out RunRequest wire-contract conformance
 
@@ -860,9 +860,9 @@ flowchart LR
         AR_1689["AR-1689 - Planned"]:::status_planned
         AR_1690["AR-1690 - Done"]:::status_done
         AR_1691["AR-1691 - Planned"]:::status_planned
-        AR_1692["AR-1692 - Planned"]:::status_planned
+        AR_1692["AR-1692 - Done"]:::status_done
         AR_1693["AR-1693 - Planned"]:::status_planned
-        AR_1694["AR-1694 - Planned"]:::status_planned
+        AR_1694["AR-1694 - Done"]:::status_done
         AR_1695["AR-1695 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
