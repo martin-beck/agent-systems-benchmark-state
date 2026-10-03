@@ -27,7 +27,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -35,7 +35,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement the ASB dev-channel materializer that resolves the latest repository main heads, persists the selected channel, and emits a diagnostic manifest for the TUI handoff. |
-| Next action | Implement the shared dev-channel resolver/materializer and its human/JSON contract, then verify current-main, restart persistence, stale-head, and unavailable-channel behavior. |
+| Next action | No further action; exact merged materializer and hosted evidence are recorded in quality/AR-1690-development-channel-materializer-receipt.txt. Continue AR-1691/AR-1693 paired lifecycle qualification. |
 
 ### AR-1691 — ASB default-dev fresh-user lifecycle gate
 
@@ -830,7 +830,7 @@ flowchart LR
         AR_1687["AR-1687 - Planned"]:::status_planned
         AR_1688["AR-1688 - Done"]:::status_done
         AR_1689["AR-1689 - Planned"]:::status_planned
-        AR_1690["AR-1690 - Planned"]:::status_planned
+        AR_1690["AR-1690 - Done"]:::status_done
         AR_1691["AR-1691 - Planned"]:::status_planned
         AR_1692["AR-1692 - Planned"]:::status_planned
         AR_1693["AR-1693 - Planned"]:::status_planned
