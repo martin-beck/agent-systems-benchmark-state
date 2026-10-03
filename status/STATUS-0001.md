@@ -14,9 +14,9 @@
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 82 |
-| **Planned** | Defined work awaiting promotion or dependencies | 86 |
+| **Planned** | Defined work awaiting promotion or dependencies | 84 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 494 |
+| **Done** | Accepted, integrated, and durably verified | 496 |
 | **Cancelled** | Stopped with a recorded rationale | 2 |
 | **Superseded** | Replaced by another AR | 32 |
 
@@ -36,7 +36,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 699 | 2 | 82 | 494 |
+| unassigned | unassigned | 699 | 2 | 82 | 496 |
 
 ## Task drill-down
 
