@@ -93,6 +93,20 @@
 | Summary | Make repeated ASB dev-channel TUI builds path-independent so content-addressed handoff manifests validate across clean-room materializations. |
 | Next action | Implement deterministic compiler path remapping in the ASB materializer, add repeated-build and manifest-validation regression coverage, and publish exact hosted evidence without weakening digest checks before AR-1691/1693 qualification. |
 
+### AR-1695 — Fan-out RunRequest wire-contract conformance
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the paired TUI fan-out route emit and validate the complete ASB RunRequest schema against the live control contract. |
+| Next action | Implement the paired contract fixture and real-backend acceptance checks for every required RunRequest field, bounded limits, digest/revision identity, and development-only warning behavior before the final lifecycle gates. |
+
 
 ## Dependency graph
 
@@ -849,6 +863,7 @@ flowchart LR
         AR_1692["AR-1692 - Planned"]:::status_planned
         AR_1693["AR-1693 - Planned"]:::status_planned
         AR_1694["AR-1694 - Planned"]:::status_planned
+        AR_1695["AR-1695 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2541,6 +2556,7 @@ flowchart LR
     AR_1645 --> AR_1648
     AR_1645 --> AR_1657
     AR_1645 --> AR_1686
+    AR_1645 --> AR_1695
     AR_1646 --> AR_1643
     AR_1646 --> AR_1647
     AR_1646 --> AR_1648
@@ -2553,6 +2569,7 @@ flowchart LR
     AR_1648 --> AR_1649
     AR_1648 --> AR_1650
     AR_1648 --> AR_1686
+    AR_1648 --> AR_1695
     AR_1649 --> AR_1647
     AR_1649 --> AR_1651
     AR_1649 --> AR_1686
@@ -2560,6 +2577,7 @@ flowchart LR
     AR_1650 --> AR_1647
     AR_1650 --> AR_1652
     AR_1650 --> AR_1686
+    AR_1650 --> AR_1695
     AR_1651 --> AR_1643
     AR_1651 --> AR_1647
     AR_1651 --> AR_1655
@@ -2629,6 +2647,8 @@ flowchart LR
     AR_1692 --> AR_1693
     AR_1694 --> AR_1691
     AR_1694 --> AR_1693
+    AR_1695 --> AR_1691
+    AR_1695 --> AR_1693
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2902,4 +2922,3 @@ flowchart LR
 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md) |
 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1151](../tasks/AR-1151.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) |
-| [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1151](../tasks/AR-1151.md), [AR-1244](../tasks/AR-1244-publish-replay-supervision.md), [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) |
