@@ -120,6 +120,34 @@
 | Summary | Repair the TUI trusted-main coverage deficit after fan-out integration and requalify the paired release gate without weakening thresholds or development semantics. |
 | Next action | Coordinate with TUI AR-1610 and add focused behavior coverage for changed fan-out, handoff, capture/replay, and comparison paths; rerun trusted-main coverage at the exact merged head and publish paired hosted evidence before AR-1691/AR-1693 closure. |
 
+### AR-1697 — Channel specification and current-head qualification repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the missing authoritative channel specs and requalify ASB/TUI channel propagation, manifest provenance, compatibility, and default-dev quickstart at current main heads. |
+| Next action | Complete valid AR-1674/1675-compatible state specifications, then run the current-head channel and quickstart matrix against ASB ad43609b and TUI 1cf4b43d without closing predecessor ARs from stale receipts. |
+
+### AR-1698 — Current-head recording and strict offline qualification repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the existing ASB selected/all recording, cassette sealing, and strict offline replay implementation at the current merged ASB head so AR-1652 can be reconciled truthfully. |
+| Next action | Run the current-head record, record-campaign, cassette integrity, strict offline replay, incomplete coverage, redaction, and network-denial matrix; publish a signed receipt without changing AR-1652 status from stale evidence. |
+
 
 ## Dependency graph
 
@@ -878,6 +906,8 @@ flowchart LR
         AR_1694["AR-1694 - Done"]:::status_done
         AR_1695["AR-1695 - Done"]:::status_done
         AR_1696["AR-1696 - Done"]:::status_done
+        AR_1697["AR-1697 - Planned"]:::status_planned
+        AR_1698["AR-1698 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2577,6 +2607,7 @@ flowchart LR
     AR_1646 --> AR_1652
     AR_1646 --> AR_1686
     AR_1646 --> AR_1688
+    AR_1646 --> AR_1698
     AR_1647 --> AR_1643
     AR_1647 --> AR_1657
     AR_1648 --> AR_1647
@@ -2618,11 +2649,14 @@ flowchart LR
     AR_1658 --> AR_1674
     AR_1658 --> AR_1675
     AR_1658 --> AR_1676
+    AR_1658 --> AR_1697
     AR_1659 --> AR_1660
     AR_1659 --> AR_1667
     AR_1659 --> AR_1674
+    AR_1659 --> AR_1697
     AR_1660 --> AR_1667
     AR_1660 --> AR_1668
+    AR_1660 --> AR_1697
     AR_1661 --> AR_1663
     AR_1661 --> AR_1665
     AR_1663 --> AR_1665
@@ -2654,6 +2688,7 @@ flowchart LR
     AR_1688 --> AR_1686
     AR_1688 --> AR_1689
     AR_1688 --> AR_1691
+    AR_1688 --> AR_1698
     AR_1690 --> AR_1691
     AR_1690 --> AR_1692
     AR_1690 --> AR_1694
@@ -2932,8 +2967,3 @@ flowchart LR
 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1212](../tasks/AR-1212-benchmark-readiness.md) | [AR-1214](../tasks/AR-1214-record-replay.md), [AR-1215](../tasks/AR-1215-result-comparison.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
 | [AR-1214](../tasks/AR-1214-record-replay.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
 | [AR-1215](../tasks/AR-1215-result-comparison.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md), [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md), [AR-1212](../tasks/AR-1212-benchmark-readiness.md), [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md), [AR-1214](../tasks/AR-1214-record-replay.md), [AR-1215](../tasks/AR-1215-result-comparison.md) | None |
-| [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) |
-| [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md), [AR-1160](../tasks/AR-1160.md) | None |
-| [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) |
-| [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md) |
