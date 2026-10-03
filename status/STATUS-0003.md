@@ -49,7 +49,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the ASB clone-to-benchmark lifecycle with omitted dev selection, current-main provenance, recording, strict offline replay, comparison, and analysis. |
-| Next action | Run the clean-room lifecycle against exact ASB and TUI main heads and publish a receipt covering install, wizard handoff, benchmark, selected/all recording, replay, comparison, and analysis. |
+| Next action | Run the clean-room lifecycle only after deterministic artifact identity is released, then publish a receipt covering install, wizard handoff, benchmark, selected/all recording, replay, comparison, and analysis. |
 
 ### AR-1692 — Paired development-channel handoff contract
 
@@ -77,7 +77,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Prove the smallest selection-driven ASB journey from clone and omitted dev channel through benchmark, recording, offline replay, comparison, and analysis. |
-| Next action | Run the disposable exact-head paired quickstart after AR-1691 and AR-1692, publish a privacy-safe receipt, and retain typed unavailable-channel and warning-only development-auth evidence. |
+| Next action | Run the disposable exact-head paired quickstart only after deterministic artifact identity is released; publish a privacy-safe receipt with typed unavailable-channel and warning-only development-auth evidence. |
 
 ### AR-1694 — Deterministic development artifact identity
 
@@ -91,7 +91,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make repeated ASB dev-channel TUI builds path-independent so content-addressed handoff manifests validate across clean-room materializations. |
-| Next action | Implement deterministic compiler path remapping in the ASB materializer, add repeated-build and manifest-validation regression coverage, and publish exact hosted evidence without weakening digest checks. |
+| Next action | Implement deterministic compiler path remapping in the ASB materializer, add repeated-build and manifest-validation regression coverage, and publish exact hosted evidence without weakening digest checks before AR-1691/1693 qualification. |
 
 
 ## Dependency graph
@@ -2627,7 +2627,8 @@ flowchart LR
     AR_1690 --> AR_1694
     AR_1691 --> AR_1693
     AR_1692 --> AR_1693
-    AR_1693 --> AR_1694
+    AR_1694 --> AR_1691
+    AR_1694 --> AR_1693
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2902,4 +2903,3 @@ flowchart LR
 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1151](../tasks/AR-1151.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) |
 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1151](../tasks/AR-1151.md), [AR-1244](../tasks/AR-1244-publish-replay-supervision.md), [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) |
-| [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
