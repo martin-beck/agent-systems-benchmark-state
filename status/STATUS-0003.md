@@ -49,7 +49,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the ASB clone-to-benchmark lifecycle with omitted dev selection, current-main provenance, recording, strict offline replay, comparison, and analysis. |
-| Next action | Run the clean-room lifecycle only after deterministic artifact identity is released, then publish a receipt covering install, wizard handoff, benchmark, selected/all recording, replay, comparison, and analysis. |
+| Next action | A paired positive/negative journey receipt is recorded, but AR-1695 complete RunRequest wire-contract/backend qualification and AR-1696 TUI coverage repair remain required; after both, rerun the exact-head lifecycle and promote only with final receipt evidence. |
 
 ### AR-1692 — Paired development-channel handoff contract
 
@@ -77,7 +77,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Prove the smallest selection-driven ASB journey from clone and omitted dev channel through benchmark, recording, offline replay, comparison, and analysis. |
-| Next action | Run the disposable exact-head paired quickstart only after deterministic artifact identity is released; publish a privacy-safe receipt with typed unavailable-channel and warning-only development-auth evidence. |
+| Next action | The exact paired quickstart receipt is recorded, but AR-1695 complete RunRequest wire-contract/backend qualification and AR-1696 TUI coverage repair remain required; after both, rerun and promote only with final hosted/post-merge evidence. |
 
 ### AR-1694 — Deterministic development artifact identity
 
@@ -106,6 +106,20 @@
 | Children | None |
 | Summary | Make the paired TUI fan-out route emit and validate the complete ASB RunRequest schema against the live control contract. |
 | Next action | Implement the paired contract fixture and real-backend acceptance checks for every required RunRequest field, bounded limits, digest/revision identity, and development-only warning behavior before the final lifecycle gates. |
+
+### AR-1696 — Paired TUI trusted-main coverage and release-gate repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the TUI trusted-main coverage deficit after fan-out integration and requalify the paired release gate without weakening thresholds or development semantics. |
+| Next action | Coordinate with TUI AR-1610 and add focused behavior coverage for changed fan-out, handoff, capture/replay, and comparison paths; rerun trusted-main coverage at the exact merged head and publish paired hosted evidence before AR-1691/AR-1693 closure. |
 
 
 ## Dependency graph
@@ -864,6 +878,7 @@ flowchart LR
         AR_1693["AR-1693 - Planned"]:::status_planned
         AR_1694["AR-1694 - Done"]:::status_done
         AR_1695["AR-1695 - Planned"]:::status_planned
+        AR_1696["AR-1696 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2649,6 +2664,9 @@ flowchart LR
     AR_1694 --> AR_1693
     AR_1695 --> AR_1691
     AR_1695 --> AR_1693
+    AR_1695 --> AR_1696
+    AR_1696 --> AR_1691
+    AR_1696 --> AR_1693
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2920,5 +2938,3 @@ flowchart LR
 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md), [AR-1160](../tasks/AR-1160.md) | None |
 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) |
 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md) |
-| [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
-| [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1151](../tasks/AR-1151.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) |
