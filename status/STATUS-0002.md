@@ -4686,11 +4686,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb1687-provider-comparison |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
@@ -4700,3 +4700,5 @@
 
 | Field | Value |
 | --- | --- |
+| Status | done |
+| Priority | P0 |
