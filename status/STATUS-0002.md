@@ -4322,11 +4322,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb1656-provider-catalog |
 | Parent | None |
 | Children | None |
 | Summary | Allow adding/editing providers and selecting models from a connected provider catalog with development-only non-blocking diagnostics. |
@@ -4700,5 +4700,3 @@
 
 | Field | Value |
 | --- | --- |
-| Status | done |
-| Priority | P0 |
