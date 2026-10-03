@@ -1,0 +1,35 @@
+Final paired AR-1695 / AR-1691 / AR-1693 qualification receipt
+Date: 2026-10-03
+Classification: development/mock; credentials: none
+
+Exact product heads
+- ASB main: 502254bd9eca1866bfb54b13f663c4aa4166c62a
+- ASB source tree: 91da6742583a363679bab9f0674781f6921e60e2
+- TUI main: 29f3f61d910198d8e042dc53e5e37ddcdc98a614
+- TUI source tree: 831ab8d4e069733eec8515e526c2c93971a37730
+
+Paired quickstart evidence
+- Fresh exact-head quickstart runner passed.
+- Default channel dev; install, status, restart, launch, onboarding and journey passed.
+- Development authentication, signatures and key management were absent but remained visible non-blocking warnings.
+- Installed executable SHA-256: 1b8e3a378cd5423bea1ecc539863c64715a60071da7f176e0ccab68c9f6ef6b1.
+- Handoff manifest SHA-256: 3df4636ebb8819d87f7065d9049fa09e8948adb2a53f5d44180bd1d6dc305cd4.
+- Runner binary SHA-256: bc50edb292e16b1eada24bb405f0998269ac1b87ac346856ab599198238cec3b.
+- ASB binary SHA-256: 734d17179162408ee3302e17998a0997b0506e09bf9213f6f18686302a57d3c6.
+- All-workload matrix: 7 workloads / 7 tuples. Selected matrix: 1 workload / 1 tuple.
+- Incomplete coverage correctly reported offline_ready=false.
+- Strict replay passed with network=denied; comparison and analysis passed.
+- Tamper negative correctly rejected the invalid development manifest.
+
+Live transport evidence
+- ASB `runner_accepts_the_published_fanout_wire_fixture` passed on this exact ASB head.
+- The test preserves published fixture agent/provider/model/workload identities and catalog/workload/scorer digests; only the deterministic local member idempotency key is bound to the seeded development plan.
+- The request was negotiated as CONTROL_FANOUT_V1 and sent through the Unix ControlServer/ControlClient transport, then admitted by RunnerBackend and response-validated.
+- This is deterministic local/mock execution; no provider credentials or network were used.
+
+State interpretation
+- AR-1695 implementation and ASB-side live transport acceptance are complete by evidence.
+- The task file remains `planned` in this checkout because handoffctl requires a claimable/open task for lifecycle mutation; no direct task JSON mutation was performed.
+- AR-1691 and AR-1693 remain planned because AR-1696 is still an explicit dependency in the authoritative state and the TUI quickstart runner does not itself invoke the live transport route.
+
+Network policy: install/materialization allowed; benchmark and replay denied. No credentials or provider responses were recorded.
