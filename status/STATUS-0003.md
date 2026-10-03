@@ -839,7 +839,7 @@ flowchart LR
         AR_1648["AR-1648 - Done"]:::status_done
         AR_1649["AR-1649 - Done"]:::status_done
         AR_1650["AR-1650 - Done"]:::status_done
-        AR_1651["AR-1651 - Planned"]:::status_planned
+        AR_1651["AR-1651 - Open"]:::status_open
         AR_1652["AR-1652 - Planned"]:::status_planned
         AR_1653["AR-1653 - Planned"]:::status_planned
         AR_1654["AR-1654 - Planned"]:::status_planned

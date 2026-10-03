@@ -452,11 +452,12 @@
 | P0 | [AR-1656](../tasks/AR-1656.md): Connected-provider catalog refresh and add-provider flow | asb1656-provider-catalog | Allow adding/editing providers and selecting models from a connected provider catalog with development-only non-blocking diagnostics. | Implement the provider registry refresh and redacted add/edit route, then verify connected and unavailable provider matrices. |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. |
+| P0 | [AR-1651](../tasks/AR-1651.md): Comparison availability and comparability repair | Unclaimed | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Repair the comparison projection and add asymmetric, symmetric, and multi-candidate tests after AR-1649 implementation. |
 
 ### Blocked (82)
 
@@ -545,7 +546,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (83)
+### Planned (82)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -570,7 +571,6 @@
 | P0 | [AR-1623](../tasks/AR-1623.md): Development-channel release, upgrade, and rollback gate | Unclaimed | Qualify clean-machine dev installation, default-channel behavior, restart persistence, upgrade, rollback, and tamper diagnostics across ASB and TUI. | Promote after the quickstart runner and exact bundle consumer are released; execute disposable release-gate matrix. |
 | P0 | [AR-1643](../tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | Implement the disposable paired runner after setup-to-runtime, capture/replay, and comparison seams are complete. |
 | P0 | [AR-1647](../tasks/AR-1647.md): Selected-agent comparison orchestration | Unclaimed | Run selected agents/workloads and produce comparison results from online or offline replay runs. | Integrate AR-1650 protocol/TUI fan-out, AR-1648 runtime fan-out, and AR-1649 analysis into the final paired comparison route. |
-| P0 | [AR-1651](../tasks/AR-1651.md): Comparison availability and comparability repair | Unclaimed | Make baseline/candidate availability, comparability, and unavailable reasons truthful for asymmetric or legacy runs. | Repair the comparison projection and add asymmetric, symmetric, and multi-candidate tests after AR-1649 implementation. |
 | P0 | [AR-1652](../tasks/AR-1652.md): Selected-workload recording and offline replay command | Unclaimed | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. |
 | P0 | [AR-1653](../tasks/AR-1653.md): Current-main development-channel consumption | Unclaimed | Qualify a clean clone using the default dev channel to install and run the current ASB/TUI heads with rollback evidence. | Run the bounded clean-clone materializer and lifecycle matrix after the paired quickstart runner exists. |
 | P0 | [AR-1654](../tasks/AR-1654.md): Self-explanatory operator quickstart | Unclaimed | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. |
