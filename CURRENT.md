@@ -8,13 +8,13 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | codex-ar1686-qualification |
+| P0 | [AR-1696](tasks/AR-1696.md): Paired TUI trusted-main coverage and release-gate repair | Repair the TUI trusted-main coverage deficit after fan-out integration and requalify the paired release gate without weakening thresholds or development semantics. | Coordinate with TUI AR-1610 and add focused behavior coverage for changed fan-out, handoff, capture/replay, and comparison paths; rerun trusted-main coverage at the exact merged head and publish paired hosted evidence before AR-1691/AR-1693 closure. | ar1695-final-state-worker |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. | - |
-| P0 | [AR-1696](tasks/AR-1696.md): Paired TUI trusted-main coverage and release-gate repair | Repair the TUI trusted-main coverage deficit after fan-out integration and requalify the paired release gate without weakening thresholds or development semantics. | Coordinate with TUI AR-1610 and add focused behavior coverage for changed fan-out, handoff, capture/replay, and comparison paths; rerun trusted-main coverage at the exact merged head and publish paired hosted evidence before AR-1691/AR-1693 closure. | - |
 
 ## Blocked
 

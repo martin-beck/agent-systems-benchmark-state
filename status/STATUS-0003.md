@@ -111,11 +111,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1695-final-state-worker |
 | Parent | None |
 | Children | None |
 | Summary | Repair the TUI trusted-main coverage deficit after fan-out integration and requalify the paired release gate without weakening thresholds or development semantics. |
@@ -878,7 +878,7 @@ flowchart LR
         AR_1693["AR-1693 - Planned"]:::status_planned
         AR_1694["AR-1694 - Done"]:::status_done
         AR_1695["AR-1695 - Done"]:::status_done
-        AR_1696["AR-1696 - Open"]:::status_open
+        AR_1696["AR-1696 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
