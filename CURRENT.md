@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | codex-ar1686-qualification |
-| P0 | [AR-1700](tasks/AR-1700.md): Development live OpenRouter benchmark execution | Make `asb run` and benchmark/sweep routes execute real OpenRouter ChatCompletions for the selected agents and model in development mode, with bounded progress, errors, and cost/network reporting. | Wire the development live capability into run, sweep, and selected/all-agent fan-out, preserving local-mock as an explicit alternative and recording provider/model/request outcomes. | live-openrouter-reconcile |
 
 ## Open
 
