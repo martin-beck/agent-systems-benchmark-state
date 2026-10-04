@@ -152,11 +152,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | live-openrouter-reconcile |
 | Parent | None |
 | Children | None |
 | Summary | Connect the development setup and wizard configuration to a warning-only OpenRouter API-key reference and an explicit live-provider capability without requiring production attestation or key management. |
@@ -950,7 +950,7 @@ flowchart LR
         AR_1696["AR-1696 - Done"]:::status_done
         AR_1697["AR-1697 - Planned"]:::status_planned
         AR_1698["AR-1698 - Planned"]:::status_planned
-        AR_1699["AR-1699 - Open"]:::status_open
+        AR_1699["AR-1699 - In progress"]:::status_in_progress
     end
     subgraph series_17["17 - Additional work"]
         direction TB
