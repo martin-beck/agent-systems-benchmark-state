@@ -473,11 +473,12 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. |
+| P0 | [AR-1700](../tasks/AR-1700.md): Development live OpenRouter benchmark execution | Unclaimed | Make &#96;asb run&#96; and benchmark/sweep routes execute real OpenRouter ChatCompletions for the selected agents and model in development mode, with bounded progress, errors, and cost/network reporting. | Wire the development live capability into run, sweep, and selected/all-agent fan-out, preserving local-mock as an explicit alternative and recording provider/model/request outcomes. |
 
 ### Blocked (82)
 
@@ -566,7 +567,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (85)
+### Planned (84)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -607,4 +608,3 @@
 | P0 | [AR-1674](../tasks/AR-1674.md): ASB channel option propagation and default persistence | Unclaimed | Carry the explicit release-channel option through install, status, launch, upgrade, rollback, and remove, with dev as the persisted default and stable typed diagnostics. | Implement one shared channel selector for every supported ASB command, persist the selected channel for subsequent runs, and add human/JSON tests for omitted dev, explicit dev, and unavailable future channels. |
 | P0 | [AR-1675](../tasks/AR-1675.md): ASB channel manifest and current-main provenance | Unclaimed | Publish a channel manifest that identifies the resolved source head and build, and make dev current-main provenance inspectable by the installer and TUI. | Define the versioned manifest fields and validation rules, emit them from the dev materializer, and add tamper, stale-head, and future-channel fixtures without blocking development credentials. |
 | P0 | [AR-1676](../tasks/AR-1676.md): Paired ASB/TUI channel compatibility matrix | Unclaimed | Qualify ASB and asb-tui against the same dev/stable/nightly/experimental channel vocabulary, defaults, manifests, and typed failure cases. | Build the paired compatibility runner and exact-head receipt covering omitted dev, explicit channels, restart persistence, upgrade/rollback preservation, and unavailable-channel diagnostics. |
-| P0 | [AR-1677](../tasks/AR-1677.md): Channel-aware release and quickstart gate | Unclaimed | Make the default-dev clone, configure, benchmark, offline replay, comparison, and analysis journey channel-aware and release-gated. | Update the one-command quickstart and release gate to show the selected channel, preserve it through all runs, and verify online/offline analysis with a clean-room receipt. |
