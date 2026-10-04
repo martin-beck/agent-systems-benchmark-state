@@ -166,11 +166,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | live-openrouter-reconcile |
 | Parent | None |
 | Children | None |
 | Summary | Make &#96;asb run&#96; and benchmark/sweep routes execute real OpenRouter ChatCompletions for the selected agents and model in development mode, with bounded progress, errors, and cost/network reporting. |
@@ -954,7 +954,7 @@ flowchart LR
     end
     subgraph series_17["17 - Additional work"]
         direction TB
-        AR_1700["AR-1700 - Open"]:::status_open
+        AR_1700["AR-1700 - In progress"]:::status_in_progress
         AR_1701["AR-1701 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
