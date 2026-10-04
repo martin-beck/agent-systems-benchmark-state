@@ -1,5 +1,9 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1180](../tasks/AR-1180.md) | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
+| [AR-1181](../tasks/AR-1181.md) | None | None |
+| [AR-1190](../tasks/AR-1190.md) | None | [AR-1191](../tasks/AR-1191.md), [AR-1198](../tasks/AR-1198.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1299](../tasks/AR-1299.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
+| [AR-1191](../tasks/AR-1191.md) | [AR-1190](../tasks/AR-1190.md) | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md) | None | None |
 | [AR-1197](../tasks/AR-1197-control-scratch-isolation-current-main.md) | None | None |
 | [AR-1198](../tasks/AR-1198.md) | [AR-1190](../tasks/AR-1190.md) | None |
@@ -460,9 +464,10 @@
 | [AR-1696](../tasks/AR-1696.md) | [AR-1695](../tasks/AR-1695.md) | [AR-1691](../tasks/AR-1691.md), [AR-1693](../tasks/AR-1693.md) |
 | [AR-1697](../tasks/AR-1697.md) | [AR-1658](../tasks/AR-1658.md), [AR-1659](../tasks/AR-1659.md), [AR-1660](../tasks/AR-1660.md) | None |
 | [AR-1698](../tasks/AR-1698.md) | [AR-1646](../tasks/AR-1646.md), [AR-1688](../tasks/AR-1688.md) | [AR-1701](../tasks/AR-1701.md) |
-| [AR-1699](../tasks/AR-1699.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md) | [AR-1700](../tasks/AR-1700.md) |
-| [AR-1700](../tasks/AR-1700.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1699](../tasks/AR-1699.md) | [AR-1701](../tasks/AR-1701.md) |
+| [AR-1699](../tasks/AR-1699.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md) | [AR-1700](../tasks/AR-1700.md), [AR-1702](../tasks/AR-1702.md) |
+| [AR-1700](../tasks/AR-1700.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1699](../tasks/AR-1699.md) | [AR-1701](../tasks/AR-1701.md), [AR-1702](../tasks/AR-1702.md) |
 | [AR-1701](../tasks/AR-1701.md) | [AR-1698](../tasks/AR-1698.md), [AR-1700](../tasks/AR-1700.md) | None |
+| [AR-1702](../tasks/AR-1702.md) | [AR-1699](../tasks/AR-1699.md), [AR-1700](../tasks/AR-1700.md) | None |
 
 ## Complete AR inventory
 
@@ -565,7 +570,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (84)
+### Planned (85)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -606,5 +611,3 @@
 | P0 | [AR-1674](../tasks/AR-1674.md): ASB channel option propagation and default persistence | Unclaimed | Carry the explicit release-channel option through install, status, launch, upgrade, rollback, and remove, with dev as the persisted default and stable typed diagnostics. | Implement one shared channel selector for every supported ASB command, persist the selected channel for subsequent runs, and add human/JSON tests for omitted dev, explicit dev, and unavailable future channels. |
 | P0 | [AR-1675](../tasks/AR-1675.md): ASB channel manifest and current-main provenance | Unclaimed | Publish a channel manifest that identifies the resolved source head and build, and make dev current-main provenance inspectable by the installer and TUI. | Define the versioned manifest fields and validation rules, emit them from the dev materializer, and add tamper, stale-head, and future-channel fixtures without blocking development credentials. |
 | P0 | [AR-1676](../tasks/AR-1676.md): Paired ASB/TUI channel compatibility matrix | Unclaimed | Qualify ASB and asb-tui against the same dev/stable/nightly/experimental channel vocabulary, defaults, manifests, and typed failure cases. | Build the paired compatibility runner and exact-head receipt covering omitted dev, explicit channels, restart persistence, upgrade/rollback preservation, and unavailable-channel diagnostics. |
-| P0 | [AR-1677](../tasks/AR-1677.md): Channel-aware release and quickstart gate | Unclaimed | Make the default-dev clone, configure, benchmark, offline replay, comparison, and analysis journey channel-aware and release-gated. | Update the one-command quickstart and release gate to show the selected channel, preserve it through all runs, and verify online/offline analysis with a clean-room receipt. |
-| P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run the disposable exact-head ASB/TUI journey and publish a privacy-safe paired receipt without closing AR-1686 prematurely. |
