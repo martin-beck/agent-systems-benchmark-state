@@ -467,12 +467,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1699](../tasks/AR-1699.md): Development live-provider credential bridge | live-openrouter-reconcile | Connect the development setup and wizard configuration to a warning-only OpenRouter API-key reference and an explicit live-provider capability without requiring production attestation or key management. | Implement a development-only credential bridge that reads the configured environment key at live-run time, exposes provider/model connectivity diagnostics, never persists the secret, and keeps setup warnings non-blocking. |
 
 ### Open (1)
 
@@ -608,3 +607,4 @@
 | P0 | [AR-1674](../tasks/AR-1674.md): ASB channel option propagation and default persistence | Unclaimed | Carry the explicit release-channel option through install, status, launch, upgrade, rollback, and remove, with dev as the persisted default and stable typed diagnostics. | Implement one shared channel selector for every supported ASB command, persist the selected channel for subsequent runs, and add human/JSON tests for omitted dev, explicit dev, and unavailable future channels. |
 | P0 | [AR-1675](../tasks/AR-1675.md): ASB channel manifest and current-main provenance | Unclaimed | Publish a channel manifest that identifies the resolved source head and build, and make dev current-main provenance inspectable by the installer and TUI. | Define the versioned manifest fields and validation rules, emit them from the dev materializer, and add tamper, stale-head, and future-channel fixtures without blocking development credentials. |
 | P0 | [AR-1676](../tasks/AR-1676.md): Paired ASB/TUI channel compatibility matrix | Unclaimed | Qualify ASB and asb-tui against the same dev/stable/nightly/experimental channel vocabulary, defaults, manifests, and typed failure cases. | Build the paired compatibility runner and exact-head receipt covering omitted dev, explicit channels, restart persistence, upgrade/rollback preservation, and unavailable-channel diagnostics. |
+| P0 | [AR-1677](../tasks/AR-1677.md): Channel-aware release and quickstart gate | Unclaimed | Make the default-dev clone, configure, benchmark, offline replay, comparison, and analysis journey channel-aware and release-gated. | Update the one-command quickstart and release gate to show the selected channel, preserve it through all runs, and verify online/offline analysis with a clean-room receipt. |

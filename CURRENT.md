@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | codex-ar1686-qualification |
-| P0 | [AR-1699](tasks/AR-1699.md): Development live-provider credential bridge | Connect the development setup and wizard configuration to a warning-only OpenRouter API-key reference and an explicit live-provider capability without requiring production attestation or key management. | Implement a development-only credential bridge that reads the configured environment key at live-run time, exposes provider/model connectivity diagnostics, never persists the secret, and keeps setup warnings non-blocking. | live-openrouter-reconcile |
 
 ## Open
 

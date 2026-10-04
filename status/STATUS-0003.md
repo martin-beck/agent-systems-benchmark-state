@@ -152,15 +152,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | live-openrouter-reconcile |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Connect the development setup and wizard configuration to a warning-only OpenRouter API-key reference and an explicit live-provider capability without requiring production attestation or key management. |
-| Next action | Implement a development-only credential bridge that reads the configured environment key at live-run time, exposes provider/model connectivity diagnostics, never persists the secret, and keeps setup warnings non-blocking. |
+| Next action | No further action; retain the warning-only development setup boundary and require an operator API key only for an explicitly selected live run. |
 
 ### AR-1700 — Development live OpenRouter benchmark execution
 
@@ -950,7 +950,7 @@ flowchart LR
         AR_1696["AR-1696 - Done"]:::status_done
         AR_1697["AR-1697 - Planned"]:::status_planned
         AR_1698["AR-1698 - Planned"]:::status_planned
-        AR_1699["AR-1699 - In progress"]:::status_in_progress
+        AR_1699["AR-1699 - Done"]:::status_done
     end
     subgraph series_17["17 - Additional work"]
         direction TB
