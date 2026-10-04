@@ -148,6 +148,48 @@
 | Summary | Qualify the existing ASB selected/all recording, cassette sealing, and strict offline replay implementation at the current merged ASB head so AR-1652 can be reconciled truthfully. |
 | Next action | Run the current-head record, record-campaign, cassette integrity, strict offline replay, incomplete coverage, redaction, and network-denial matrix; publish a signed receipt without changing AR-1652 status from stale evidence. |
 
+### AR-1699 — Development live-provider credential bridge
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Connect the development setup and wizard configuration to a warning-only OpenRouter API-key reference and an explicit live-provider capability without requiring production attestation or key management. |
+| Next action | Implement a development-only credential bridge that reads the configured environment key at live-run time, exposes provider/model connectivity diagnostics, never persists the secret, and keeps setup warnings non-blocking. |
+
+### AR-1700 — Development live OpenRouter benchmark execution
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make &#96;asb run&#96; and benchmark/sweep routes execute real OpenRouter ChatCompletions for the selected agents and model in development mode, with bounded progress, errors, and cost/network reporting. |
+| Next action | Wire the development live capability into run, sweep, and selected/all-agent fan-out, preserving local-mock as an explicit alternative and recording provider/model/request outcomes. |
+
+### AR-1701 — Development live recording and comparison qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Record live OpenRouter responses for selected or all agents, seal a replayable cassette, and make the next run offline with comparison and analysis against the live baseline. |
+| Next action | Add live-run capture selection, redaction and cassette sealing, then qualify strict offline replay, comparison, and analysis from the same benchmark manifest. |
+
 
 ## Dependency graph
 
@@ -908,6 +950,12 @@ flowchart LR
         AR_1696["AR-1696 - Done"]:::status_done
         AR_1697["AR-1697 - Planned"]:::status_planned
         AR_1698["AR-1698 - Planned"]:::status_planned
+        AR_1699["AR-1699 - Planned"]:::status_planned
+    end
+    subgraph series_17["17 - Additional work"]
+        direction TB
+        AR_1700["AR-1700 - Planned"]:::status_planned
+        AR_1701["AR-1701 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1883,8 +1931,10 @@ flowchart LR
     AR_1328 --> AR_1437
     AR_1328 --> AR_1440
     AR_1328 --> AR_1442
+    AR_1328 --> AR_1699
     AR_1329 --> AR_1330
     AR_1329 --> AR_1333
+    AR_1329 --> AR_1700
     AR_1330 --> AR_1463
     AR_1330 --> AR_1496
     AR_1331 --> AR_1332
@@ -2160,12 +2210,14 @@ flowchart LR
     AR_1425 --> AR_1426
     AR_1427 --> AR_1431
     AR_1430 --> AR_1424
+    AR_1432 --> AR_1699
     AR_1433 --> AR_1446
     AR_1433 --> AR_1447
     AR_1433 --> AR_1451
     AR_1433 --> AR_1452
     AR_1433 --> AR_1456
     AR_1433 --> AR_1496
+    AR_1433 --> AR_1700
     AR_1434 --> AR_1435
     AR_1435 --> AR_1436
     AR_1436 --> AR_1437
@@ -2701,6 +2753,9 @@ flowchart LR
     AR_1695 --> AR_1696
     AR_1696 --> AR_1691
     AR_1696 --> AR_1693
+    AR_1698 --> AR_1701
+    AR_1699 --> AR_1700
+    AR_1700 --> AR_1701
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2955,15 +3010,3 @@ flowchart LR
 | [AR-1180](../tasks/AR-1180.md) | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
 | [AR-1181](../tasks/AR-1181.md) | None | None |
 | [AR-1190](../tasks/AR-1190.md) | None | [AR-1191](../tasks/AR-1191.md), [AR-1198](../tasks/AR-1198.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1299](../tasks/AR-1299.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
-| [AR-1191](../tasks/AR-1191.md) | [AR-1190](../tasks/AR-1190.md) | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
-| [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md) | None | None |
-| [AR-1197](../tasks/AR-1197-control-scratch-isolation-current-main.md) | None | None |
-| [AR-1198](../tasks/AR-1198.md) | [AR-1190](../tasks/AR-1190.md) | None |
-| [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md) | [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) | None |
-| [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | None | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md), [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md), [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md), [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md) |
-| [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md) | None | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md) | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md) | [AR-1212](../tasks/AR-1212-benchmark-readiness.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1212](../tasks/AR-1212-benchmark-readiness.md) | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1212](../tasks/AR-1212-benchmark-readiness.md) | [AR-1214](../tasks/AR-1214-record-replay.md), [AR-1215](../tasks/AR-1215-result-comparison.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1214](../tasks/AR-1214-record-replay.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1215](../tasks/AR-1215-result-comparison.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
