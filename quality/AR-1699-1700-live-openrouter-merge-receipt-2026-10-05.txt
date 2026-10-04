@@ -1,0 +1,25 @@
+ASB development-live OpenRouter implementation reconciliation
+Date: 2026-10-05
+
+Product repository: martin-beck/agent-systems-benchmark
+Exact product main: 401253e53160dc51b39b6618c2b2459cba569c7f
+
+AR-1699 evidence:
+- PR #468 merged at fd95f0784cba03ebbded130dac2c268e9862e8fc.
+- Development credential bridge reads OPENROUTER_API_KEY only for an explicit live run,
+  preserves the selected provider/model boundary, and does not persist or display the secret.
+- Setup and authenticity/key-management warnings remain warning-only.
+
+AR-1700 evidence:
+- PR #470 merged at 401253e53160dc51b39b6618c2b2459cba569c7f after restoring signed topology.
+- Hosted PR #468 and #470 checks passed, including Rust, repository quality, fault, formal,
+  portability, credential-free, and cross-repository journey checks.
+- Development live run/sweep/fan-out reaches the selected OpenRouter endpoint when the
+  operator explicitly chooses live mode; missing key or transport failure is typed and actionable.
+- Local/mock remains explicit and is not silently substituted for live execution.
+
+Boundary:
+- Real OpenRouter reachability requires an operator-supplied OPENROUTER_API_KEY at run time.
+- No key value is included in this receipt or persisted by setup.
+- Production attestation, secret-management hardening, and public release promotion are separate
+  future gates and are not claimed by these development ARs.

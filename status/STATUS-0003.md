@@ -152,7 +152,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -160,13 +160,13 @@
 | Parent | None |
 | Children | None |
 | Summary | Connect the development setup and wizard configuration to a warning-only OpenRouter API-key reference and an explicit live-provider capability without requiring production attestation or key management. |
-| Next action | Implement a development-only credential bridge that reads the configured environment key at live-run time, exposes provider/model connectivity diagnostics, never persists the secret, and keeps setup warnings non-blocking. |
+| Next action | No further action; retain the warning-only development setup boundary and require an operator API key only for an explicitly selected live run. |
 
 ### AR-1700 — Development live OpenRouter benchmark execution
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -174,7 +174,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make &#96;asb run&#96; and benchmark/sweep routes execute real OpenRouter ChatCompletions for the selected agents and model in development mode, with bounded progress, errors, and cost/network reporting. |
-| Next action | Wire the development live capability into run, sweep, and selected/all-agent fan-out, preserving local-mock as an explicit alternative and recording provider/model/request outcomes. |
+| Next action | No further action; retain explicit live selection and typed operator-key/transport failures, with local/mock remaining an explicit alternative. |
 
 ### AR-1701 — Development live recording and comparison qualification
 
@@ -950,11 +950,11 @@ flowchart LR
         AR_1696["AR-1696 - Done"]:::status_done
         AR_1697["AR-1697 - Planned"]:::status_planned
         AR_1698["AR-1698 - Planned"]:::status_planned
-        AR_1699["AR-1699 - Planned"]:::status_planned
+        AR_1699["AR-1699 - Done"]:::status_done
     end
     subgraph series_17["17 - Additional work"]
         direction TB
-        AR_1700["AR-1700 - Planned"]:::status_planned
+        AR_1700["AR-1700 - Done"]:::status_done
         AR_1701["AR-1701 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -3010,3 +3010,4 @@ flowchart LR
 | [AR-1180](../tasks/AR-1180.md) | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
 | [AR-1181](../tasks/AR-1181.md) | None | None |
 | [AR-1190](../tasks/AR-1190.md) | None | [AR-1191](../tasks/AR-1191.md), [AR-1198](../tasks/AR-1198.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1299](../tasks/AR-1299.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
+| [AR-1191](../tasks/AR-1191.md) | [AR-1190](../tasks/AR-1190.md) | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
