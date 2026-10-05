@@ -27,7 +27,7 @@
   ],
   "allowed_tools": ["git", "gh", "tools/handoffctl", "unshare", "systemd-run", "bwrap"],
   "forbidden_tools": ["host-network-fallback", "credential-output", "arbitrary-shell-wrapper"],
-  "required_evidence_classes": ["contract-test", "integration-test", "environmental", "hosted-ci"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental", "hosted"],
   "gates": [
     {"id":"backend-contract","description":"Backend enum, preflight, and typed unavailable behavior are covered by tests."},
     {"id":"fault-matrix","description":"All five cases pass with cleanup_ok true and external-network denial proven."},
