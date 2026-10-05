@@ -302,6 +302,34 @@
 | Summary | Run the real OpenRouter selected/all live benchmark smoke and typed failure matrix with an operator API key, producing a privacy-safe exact-head receipt. |
 | Next action | PR #483 merged at ASB b9c5835; exact-main provider path reached OpenRouter but returned HTTP 429 free-models-per-day (daily remaining 0). Credential-free negative returns OPENROUTER_API_KEY required exit 3. Keep planned until quota recovers and selected/all succeeds. |
 
+### AR-1716 — Cassette provider-profile identity binding
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Bind every recording index insertion to the selected provider profile identity and reject mismatched cassette metadata before mutation. |
+| Next action | Add a focused RecordingIndex::insert identity fence and deterministic positive/mismatch tests, then qualify exact human/JSON diagnostics and receipt integrity. |
+
+### AR-1717 — Comparison exact provider/settings/endpoint identity fences
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Require exact provider, model settings, and endpoint identity equality before comparison admits online/offline results. |
+| Next action | Add focused comparison admission fences for provider, model/settings digest, endpoint identity, and generation; qualify symmetric/asymmetric mismatch diagnostics without weakening development setup. |
+
 
 ## Dependency graph
 
@@ -1076,6 +1104,8 @@ flowchart LR
         AR_1711["AR-1711 - Planned"]:::status_planned
         AR_1712["AR-1712 - Planned"]:::status_planned
         AR_1715["AR-1715 - Planned"]:::status_planned
+        AR_1716["AR-1716 - Planned"]:::status_planned
+        AR_1717["AR-1717 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2899,6 +2929,8 @@ flowchart LR
     AR_1709 --> AR_1715
     AR_1711 --> AR_1712
     AR_1711 --> AR_1715
+    AR_1712 --> AR_1716
+    AR_1712 --> AR_1717
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3113,15 +3145,3 @@ flowchart LR
 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1160](../tasks/AR-1160.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1170](../tasks/AR-1170.md) |
 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) |
 | [AR-1036](../tasks/AR-1036-measurement-catalog-control.md) | [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) |
-| [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
-| [AR-1038](../tasks/AR-1038-capability-coverage-sink.md) | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | None |
-| [AR-1039](../tasks/AR-1039-measurement-catalog-merge-attestation.md) | None | None |
-| [AR-1040](../tasks/AR-1040-protected-merge-signature-policy.md) | None | [AR-1043](../tasks/AR-1043-protected-topic-sync-topology.md) |
-| [AR-1041](../tasks/AR-1041-gemini-hook-readiness-race.md) | None | None |
-| [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md) | None | None |
-| [AR-1043](../tasks/AR-1043-protected-topic-sync-topology.md) | [AR-1040](../tasks/AR-1040-protected-merge-signature-policy.md) | None |
-| [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md) | None | None |
-| [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md) | None | [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md) |
-| [AR-1046](../tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md) | None | None |
-| [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md) | None | None |
-| [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md) | None | None |
