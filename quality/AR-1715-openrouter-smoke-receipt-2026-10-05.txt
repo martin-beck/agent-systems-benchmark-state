@@ -1,0 +1,22 @@
+AR-1715 credential-backed OpenRouter smoke receipt
+Date: 2026-10-05
+
+Evidence target
+- Product: martin-beck/agent-systems-benchmark
+- PR #480 exact head: 97611098ca70e1f108707b89f80ee92ee85065cd
+- PR state at receipt: open; hosted checks were still running.
+
+Observed smoke outcomes
+- Credential-backed `record-live` smoke exited 0.
+- Provider response status: HTTP 200.
+- Selected model identity: cohere/north-mini-code:free.
+- Cassette was sealed successfully.
+- Credential-unset negative exited 4 with typed
+  `provider_credential_unavailable` and produced no cassette.
+
+Boundary
+- This receipt records a bounded smoke only. It does not close selected/all
+  benchmark, full typed-failure, recording/comparison, or paired TUI ARs.
+- No API key, raw response, prompt, cassette bytes, or private path is stored.
+- Development authentication/signatures/key management remain warning-only;
+  explicitly requested live failures remain no-fallback.
