@@ -533,20 +533,20 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 | P0 | [AR-1718](../tasks/AR-1718.md): Portable fault-matrix network isolation repair | ar1718_isolation | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. | PR #487 is under hosted verification; merge protected, verify post-merge checks, publish the exact matrix receipt, and requalify AR-1596. |
+| P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | ar1721_catalog_repair | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await AR-1719 exact post-merge catalog evidence and paired TUI AR-1720 readiness; then promote the additive v1.15 ControlServer dynamic OpenRouter bridge for implementation. |
 | P0 | [AR-1722](../tasks/AR-1722.md): PR #487 protected-main requalification and merge-settings recovery | ar1722_merge_requalification | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. | Monitor PR #490 exact head 9b7941cdd810de1a948b0bfa632b8cfe649e748c until all 14 hosted checks are terminal green and obtain independent exact-head review. Keep GitHub settings and main unchanged until those gates pass. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. |
-| P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Unclaimed | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await AR-1719 exact post-merge catalog evidence and paired TUI AR-1720 readiness; then promote the additive v1.15 ControlServer dynamic OpenRouter bridge for implementation. |
 
 ### Blocked (82)
 
