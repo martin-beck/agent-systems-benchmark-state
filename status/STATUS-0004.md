@@ -1,5 +1,17 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
+| [AR-1038](../tasks/AR-1038-capability-coverage-sink.md) | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | None |
+| [AR-1039](../tasks/AR-1039-measurement-catalog-merge-attestation.md) | None | None |
+| [AR-1040](../tasks/AR-1040-protected-merge-signature-policy.md) | None | [AR-1043](../tasks/AR-1043-protected-topic-sync-topology.md) |
+| [AR-1041](../tasks/AR-1041-gemini-hook-readiness-race.md) | None | None |
+| [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md) | None | None |
+| [AR-1043](../tasks/AR-1043-protected-topic-sync-topology.md) | [AR-1040](../tasks/AR-1040-protected-merge-signature-policy.md) | None |
+| [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md) | None | None |
+| [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md) | None | [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md) |
+| [AR-1046](../tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md) | None | None |
+| [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md) | None | None |
+| [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md) | None | None |
 | [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md) | None | None |
 | [AR-1050](../tasks/AR-1050-tmux-authenticated-startup-readiness.md) | None | None |
 | [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md) | [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md) | None |
@@ -498,8 +510,10 @@
 | [AR-1709](../tasks/AR-1709.md) | [AR-1699](../tasks/AR-1699.md), [AR-1700](../tasks/AR-1700.md), [AR-1704](../tasks/AR-1704.md) | [AR-1710](../tasks/AR-1710.md), [AR-1711](../tasks/AR-1711.md), [AR-1715](../tasks/AR-1715.md) |
 | [AR-1710](../tasks/AR-1710.md) | [AR-1656](../tasks/AR-1656.md), [AR-1657](../tasks/AR-1657.md), [AR-1709](../tasks/AR-1709.md) | None |
 | [AR-1711](../tasks/AR-1711.md) | [AR-1700](../tasks/AR-1700.md), [AR-1704](../tasks/AR-1704.md), [AR-1709](../tasks/AR-1709.md) | [AR-1712](../tasks/AR-1712.md), [AR-1715](../tasks/AR-1715.md) |
-| [AR-1712](../tasks/AR-1712.md) | [AR-1698](../tasks/AR-1698.md), [AR-1701](../tasks/AR-1701.md), [AR-1711](../tasks/AR-1711.md) | None |
+| [AR-1712](../tasks/AR-1712.md) | [AR-1698](../tasks/AR-1698.md), [AR-1701](../tasks/AR-1701.md), [AR-1711](../tasks/AR-1711.md) | [AR-1716](../tasks/AR-1716.md), [AR-1717](../tasks/AR-1717.md) |
 | [AR-1715](../tasks/AR-1715.md) | [AR-1700](../tasks/AR-1700.md), [AR-1709](../tasks/AR-1709.md), [AR-1711](../tasks/AR-1711.md) | None |
+| [AR-1716](../tasks/AR-1716.md) | [AR-1712](../tasks/AR-1712.md) | None |
+| [AR-1717](../tasks/AR-1717.md) | [AR-1712](../tasks/AR-1712.md) | None |
 
 ## Complete AR inventory
 
@@ -602,7 +616,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (92)
+### Planned (94)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -620,7 +634,3 @@
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
-| P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
-| P0 | [AR-1545](../tasks/AR-1545.md): AR-1307 formal-input readiness repair | Unclaimed | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. |
-| P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
-| P0 | [AR-1622](../tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | Unclaimed | Make the clone-to-wizard-to-benchmark-to-offline-comparison journey executable in one disposable runner with simple selection-driven guidance. | Promote after final lifecycle and development-auth qualification; implement paired runner, guide, and exact-head acceptance. |
