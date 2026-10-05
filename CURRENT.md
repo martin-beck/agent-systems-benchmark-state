@@ -10,13 +10,13 @@ Never edit this file directly.
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | codex-ar1686-qualification |
 | P0 | [AR-1718](tasks/AR-1718.md): Portable fault-matrix network isolation repair | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. | PR #487 is under hosted verification; merge protected, verify post-merge checks, publish the exact matrix receipt, and requalify AR-1596. | ar1718_isolation |
 | P0 | [AR-1719](tasks/AR-1719.md): OpenRouter free-model catalog and wizard selection | Enumerate OpenRouter explicit :free models and free-router eligibility, normalize dynamic metadata/capabilities, and expose eligible models through provider catalog, provider-plan, and wizard selection. | Continue deterministic OpenRouter catalog normalization and fixtures; expose every eligible free model with typed unavailable/model-mismatch diagnostics and a credential-free/live smoke qualification path. | ar1718_openrouter_free_catalog |
+| P0 | [AR-1720](tasks/AR-1720.md): Claimed-task identity and coordinator integrity | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. | Review the integrity plan against the current coordinator contract and promote only after the remote state and dirty-checkout boundary are confirmed. | ar1720_integrity_repair |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. | - |
-| P0 | [AR-1720](tasks/AR-1720.md): Claimed-task identity and coordinator integrity | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. | Review the integrity plan against the current coordinator contract and promote only after the remote state and dirty-checkout boundary are confirmed. | - |
 
 ## Blocked
 
