@@ -370,7 +370,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. |
-| Next action | Route claim identity and explicit migration through agent-workflow-coordinator upstream; separately repair the pre-existing malformed spec/privacy baseline, then rerun reconcile and doctor --live. |
+| Next action | Route claim identity and explicit migration through the upstream coordinator vendor path; add a safe recovery transaction for expired AR-1686 with no session snapshot; then repair the malformed spec/privacy baseline and rerun doctor --live. |
 
 ### AR-1721 — ControlServer v1.15 dynamic OpenRouter bridge
 
