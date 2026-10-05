@@ -370,7 +370,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. |
-| Next action | Submit the isolated claim-ledger design as an upstream coordinator proposal with formal migration/race tests; after an approved signed release, vendor it into ASB and rerun exact-head CI, reconcile, and doctor --live. |
+| Next action | Obtain upstream review/authorization for the isolated claim-ledger and explicit migration implementation; then commit through upstream PR, release a signed coordinator version, vendor it into ASB, and rerun downstream exact-head CI/reconcile/doctor. |
 
 ### AR-1721 — ControlServer v1.15 dynamic OpenRouter bridge
 
