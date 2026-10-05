@@ -398,7 +398,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. |
-| Next action | Candidate 76c4f2c58b95acb1cee637d03427026302222a48 is a signed+DCO zero-file descendant of exact main d207cc4eded60f29a0ec72047f3fa11e7a9fa385; both trees and the exact merge preview are 78c6c1b5591ee2d397025e0b129297b0c8035b61, DCO and pull-request repository policy pass. Hold branch publication and settings mutation until independent review/authorization; then apply the tracked repository settings, audit them, push the candidate branch, open the requalification PR, and run exact-head gates. |
+| Next action | Tracked all-disabled merge-settings PATCH was atomically rejected by GitHub and no-apply audit confirms the old settings remain. Keep candidate 76c4f2c58b95acb1cee637d03427026302222a48 and all publication held. Repair repository_settings.py, its tests, docs, and AR-1722 policy/spec to express a GitHub-compatible invariant with one enabled merge method plus protected-current-base/status/signature/tree enforcement; independently review that policy before applying any alternative settings. |
 
 
 ## Dependency graph
