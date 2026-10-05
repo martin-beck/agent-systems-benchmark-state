@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1719.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"closed-backends","description":"Only direct-unshare, systemd-private-network, and bubblewrap-network backends are selectable."},
+    {"id":"preflight","description":"The selected backend proves loopback availability and external-network denial before cases run."},
+    {"id":"fail-closed","description":"No backend returns runner_unavailable and never falls back to host networking."},
+    {"id":"bounded-cleanup","description":"Timeout, output, workspace, process-group cleanup, and descendant reaping remain enforced."},
+    {"id":"matrix","description":"All five AR-1597 fault cases pass through an approved equivalent backend with cleanup_ok true."},
+    {"id":"receipt","description":"Exact head, backend identity, preflight, classifications, cleanup, and network-denial evidence are recorded without secrets or private paths."}
+  ],
+  "definition_of_done": ["PR #487 merges on protected main after independent review and exact hosted checks.","Post-merge checks pass and an exact matrix receipt is published.","AR-1596 is requalified or remains blocked only for a separately recorded reason."],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental", "hosted"],
+  "allowed_tools": ["git", "gh", "tools/handoffctl", "unshare", "systemd-run", "bwrap"],
+  "forbidden_tools": ["host-network-fallback", "credential-output", "arbitrary-shell-wrapper"],
+  "gates": [{"id":"backend","description":"Backend contract and focused tests pass."},{"id":"matrix","description":"Five-case matrix passes with network denial and cleanup evidence."},{"id":"hosted","description":"Exact-head and post-merge hosted checks pass."}]
+}
