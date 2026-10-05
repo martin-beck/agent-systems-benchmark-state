@@ -398,7 +398,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. |
-| Next action | Independently review exact clean two-commit policy series 906986f6603af70f49d9747e6b1118c44c779247..cf883d8b5f9cec3187ccfa491c1f698c5500b5a9 (tip tree dcb6c3aaef33ae4d80a499e62f05b5393e90a896). Hold push, PR, merge, and settings application until review accepts merge-only ruleset semantics, local-only protected-main signature policy, regression coverage, and partial-apply behavior. |
+| Next action | Monitor PR #490 exact head cf883d8b5f9cec3187ccfa491c1f698c5500b5a9 until all 14 hosted checks are terminal green and obtain independent PR review. Keep GitHub settings and main unchanged; only after review/CI may the reviewed ruleset/settings be applied and audited before exact merge_pr.py publication. |
 
 
 ## Dependency graph
