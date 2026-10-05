@@ -386,6 +386,20 @@
 | Summary | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. |
 | Next action | Await AR-1719 exact post-merge catalog evidence and paired TUI AR-1720 readiness; then promote the additive v1.15 ControlServer dynamic OpenRouter bridge for implementation. |
 
+### AR-1722 — PR #487 protected-main requalification and merge-settings recovery
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. |
+| Next action | Reproduce the PR #487 protected-main merge-tree mismatch with reviewed/base/merge identities, repair merge-settings recovery, and publish exact requalification evidence before unblocking AR-1718 and AR-1596. |
+
 
 ## Dependency graph
 
@@ -1166,6 +1180,7 @@ flowchart LR
         AR_1719["AR-1719 - Done"]:::status_done
         AR_1720["AR-1720 - In progress"]:::status_in_progress
         AR_1721["AR-1721 - Planned"]:::status_planned
+        AR_1722["AR-1722 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2419,7 +2434,9 @@ flowchart LR
     AR_1424 --> AR_1425
     AR_1425 --> AR_1426
     AR_1427 --> AR_1431
+    AR_1427 --> AR_1722
     AR_1430 --> AR_1424
+    AR_1431 --> AR_1722
     AR_1432 --> AR_1699
     AR_1433 --> AR_1446
     AR_1433 --> AR_1447
@@ -3197,6 +3214,3 @@ flowchart LR
 | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-0904](../tasks/AR-0904-contract-consistency.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md), [AR-1038](../tasks/AR-1038-capability-coverage-sink.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) |
 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md) | [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md) |
 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
-| [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md), [AR-1170](../tasks/AR-1170.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md), [AR-1180](../tasks/AR-1180.md) |
-| [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) | [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) | None |
-| [AR-1028](../tasks/AR-1028-asb-cli-workflow-captures.md) | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md) | None |
