@@ -2834,17 +2834,6 @@ class HandoffTest(unittest.TestCase):
             CORE.render_status_view(CORE.all_tasks()), (self.root / "STATUS.md").read_text()
         )
 
-    def test_status_render_check_rejects_stale_current_projection(self) -> None:
-        self.make_task()
-        CORE.cmd_render_status(check=False)
-        (self.root / "CURRENT.md").write_text("stale")
-        with self.assertRaisesRegex(RuntimeError, "CURRENT.md differs"):
-            CORE.cmd_render_status(check=True)
-        CORE.cmd_render_status(check=False)
-        self.assertEqual(
-            CORE.render_current(CORE.all_tasks()), (self.root / "CURRENT.md").read_text()
-        )
-
     def test_doctor_reports_replica_circuit_breaker(self) -> None:
         CORE.REPLICA_BLOCKED.parent.mkdir(exist_ok=True)
         CORE.REPLICA_BLOCKED.write_text('{"code": "REPLICA_DIVERGED"}')

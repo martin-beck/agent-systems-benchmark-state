@@ -2318,22 +2318,16 @@ def mutate_sqlite(args: argparse.Namespace, kind: str) -> None:
 
 
 def cmd_render_status(*, check: bool) -> None:
-    """Render task-derived views or fail if either checked-in view is stale."""
+    """Render STATUS.md or fail if its checked-in form is stale."""
     if not project_settings()["status_view"]:
         raise RuntimeError("STATUS.md generation is disabled by .handoffctl.json")
     with locked(exclusive=not check):
-        tasks = all_tasks()
-        expected = render_status_views(tasks)
-        expected_current = render_current(tasks)
+        expected = render_status_views(all_tasks())
         if check:
             if status_projection_errors(expected):
                 raise RuntimeError("STATUS.md differs from generated tasks")
-            current = ROOT / "CURRENT.md"
-            if not current.exists() or current.read_text() != expected_current:
-                raise RuntimeError("CURRENT.md differs from generated tasks")
             return
         write_status_views(expected)
-        atomic(ROOT / "CURRENT.md", expected_current)
 
 
 def role_doctor_errors() -> list[str]:
