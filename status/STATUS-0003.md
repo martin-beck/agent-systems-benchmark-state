@@ -288,6 +288,20 @@
 | Summary | Define the ASB live-run result and selected/all recording handoff consumed by TUI for offline replay and comparison. |
 | Next action | Define the versioned result/cassette catalog handoff, selected/all capture scope, sealing metadata, strict offline identity, and comparison inputs without persisting secrets or raw responses in state. |
 
+### AR-1715 — Credential-backed development OpenRouter qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Run the real OpenRouter selected/all live benchmark smoke and typed failure matrix with an operator API key, producing a privacy-safe exact-head receipt. |
+| Next action | Promote after implementation dependencies are released; run one bounded real OpenRouter success smoke plus selected/all benchmark and missing-key, malformed-key, timeout, transport, non-2xx, and no-fallback negatives at exact current ASB main. |
+
 
 ## Dependency graph
 
@@ -1061,6 +1075,7 @@ flowchart LR
         AR_1710["AR-1710 - Planned"]:::status_planned
         AR_1711["AR-1711 - Planned"]:::status_planned
         AR_1712["AR-1712 - Planned"]:::status_planned
+        AR_1715["AR-1715 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2873,6 +2888,7 @@ flowchart LR
     AR_1700 --> AR_1704
     AR_1700 --> AR_1709
     AR_1700 --> AR_1711
+    AR_1700 --> AR_1715
     AR_1701 --> AR_1703
     AR_1701 --> AR_1712
     AR_1702 --> AR_1703
@@ -2880,7 +2896,9 @@ flowchart LR
     AR_1704 --> AR_1711
     AR_1709 --> AR_1710
     AR_1709 --> AR_1711
+    AR_1709 --> AR_1715
     AR_1711 --> AR_1712
+    AR_1711 --> AR_1715
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3109,10 +3127,3 @@ flowchart LR
 | [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md) | None | None |
 | [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md) | None | None |
 | [AR-1050](../tasks/AR-1050-tmux-authenticated-startup-readiness.md) | None | None |
-| [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md) | [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md) | None |
-| [AR-1052](../tasks/AR-1052-tmux-server-authority-portability.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
-| [AR-1053](../tasks/AR-1053-asb-tui-roadmap-hardening.md) | None | None |
-| [AR-1054](../tasks/AR-1054-tmux-socket-connect-completion.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
-| [AR-1055](../tasks/AR-1055-asb-tui-install-integration-readiness.md) | None | None |
-| [AR-1056](../tasks/AR-1056-tmux-socket-connect-diagnostics.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
-| [AR-1057](../tasks/AR-1057-asb-tui-control-v1-3-readiness.md) | None | None |
