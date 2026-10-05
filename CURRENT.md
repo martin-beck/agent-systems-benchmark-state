@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | codex-ar1686-qualification |
 | P0 | [AR-1718](tasks/AR-1718.md): Portable fault-matrix network isolation repair | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. | PR #487 is under hosted verification; merge protected, verify post-merge checks, publish the exact matrix receipt, and requalify AR-1596. | ar1718_isolation |
-| P0 | [AR-1720](tasks/AR-1720.md): Claimed-task identity and coordinator integrity | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. | Add typed baseline-validation diagnostics or a scoped dependency repair for pre-existing invalid task/spec/privacy records; then rerun handoffctl doctor --live before closure. | ar1720_integrity_repair |
+| P0 | [AR-1720](tasks/AR-1720.md): Claimed-task identity and coordinator integrity | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. | Propose and implement the claim-identity/migration hook in agent-workflow-coordinator upstream, with formal concurrency tests; then vendor a new signed release before retrying downstream integration. | ar1720_integrity_repair |
 
 ## Open
 

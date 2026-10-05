@@ -370,7 +370,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. |
-| Next action | Add typed baseline-validation diagnostics or a scoped dependency repair for pre-existing invalid task/spec/privacy records; then rerun handoffctl doctor --live before closure. |
+| Next action | Propose and implement the claim-identity/migration hook in agent-workflow-coordinator upstream, with formal concurrency tests; then vendor a new signed release before retrying downstream integration. |
 
 ### AR-1721 — ControlServer v1.15 dynamic OpenRouter bridge
 
