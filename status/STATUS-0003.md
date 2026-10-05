@@ -370,7 +370,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. |
-| Next action | Review the integrity plan against the current coordinator contract and promote only after the remote state and dirty-checkout boundary are confirmed. |
+| Next action | Add typed baseline-validation diagnostics or a scoped dependency repair for pre-existing invalid task/spec/privacy records; then rerun handoffctl doctor --live before closure. |
 
 
 ## Dependency graph
