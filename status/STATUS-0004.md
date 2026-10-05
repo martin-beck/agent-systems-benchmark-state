@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) | [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1160](../tasks/AR-1160.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1170](../tasks/AR-1170.md) |
 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) |
 | [AR-1036](../tasks/AR-1036-measurement-catalog-control.md) | [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) |
@@ -409,7 +410,7 @@
 | [AR-1594](../tasks/AR-1594.md) | [AR-1576](../tasks/AR-1576.md) | [AR-1590](../tasks/AR-1590.md) |
 | [AR-1595](../tasks/AR-1595.md) | [AR-1592](../tasks/AR-1592.md), [AR-1593](../tasks/AR-1593.md) | [AR-1596](../tasks/AR-1596.md), [AR-1602](../tasks/AR-1602.md), [AR-1607](../tasks/AR-1607.md) |
 | [AR-1596](../tasks/AR-1596.md) | [AR-1590](../tasks/AR-1590.md), [AR-1595](../tasks/AR-1595.md) | [AR-1597](../tasks/AR-1597.md), [AR-1602](../tasks/AR-1602.md) |
-| [AR-1597](../tasks/AR-1597.md) | [AR-1596](../tasks/AR-1596.md) | [AR-1598](../tasks/AR-1598.md), [AR-1600](../tasks/AR-1600.md) |
+| [AR-1597](../tasks/AR-1597.md) | [AR-1596](../tasks/AR-1596.md) | [AR-1598](../tasks/AR-1598.md), [AR-1600](../tasks/AR-1600.md), [AR-1718](../tasks/AR-1718.md) |
 | [AR-1598](../tasks/AR-1598.md) | [AR-1588](../tasks/AR-1588.md), [AR-1589](../tasks/AR-1589.md), [AR-1591](../tasks/AR-1591.md), [AR-1597](../tasks/AR-1597.md) | [AR-1603](../tasks/AR-1603.md) |
 | [AR-1599](../tasks/AR-1599.md) | [AR-1563](../tasks/AR-1563.md), [AR-1564](../tasks/AR-1564.md), [AR-1568](../tasks/AR-1568.md), [AR-1588](../tasks/AR-1588.md) | [AR-1600](../tasks/AR-1600.md), [AR-1601](../tasks/AR-1601.md), [AR-1611](../tasks/AR-1611.md) |
 | [AR-1600](../tasks/AR-1600.md) | [AR-1597](../tasks/AR-1597.md), [AR-1599](../tasks/AR-1599.md) | [AR-1601](../tasks/AR-1601.md), [AR-1611](../tasks/AR-1611.md) |
@@ -466,7 +467,7 @@
 | [AR-1653](../tasks/AR-1653.md) | [AR-1562](../tasks/AR-1562.md), [AR-1563](../tasks/AR-1563.md), [AR-1564](../tasks/AR-1564.md), [AR-1613](../tasks/AR-1613.md), [AR-1623](../tasks/AR-1623.md), [AR-1643](../tasks/AR-1643.md) | [AR-1654](../tasks/AR-1654.md), [AR-1655](../tasks/AR-1655.md), [AR-1658](../tasks/AR-1658.md) |
 | [AR-1654](../tasks/AR-1654.md) | [AR-1643](../tasks/AR-1643.md), [AR-1652](../tasks/AR-1652.md), [AR-1653](../tasks/AR-1653.md), [AR-1656](../tasks/AR-1656.md) | [AR-1655](../tasks/AR-1655.md), [AR-1660](../tasks/AR-1660.md) |
 | [AR-1655](../tasks/AR-1655.md) | [AR-1623](../tasks/AR-1623.md), [AR-1624](../tasks/AR-1624.md), [AR-1651](../tasks/AR-1651.md), [AR-1652](../tasks/AR-1652.md), [AR-1653](../tasks/AR-1653.md), [AR-1654](../tasks/AR-1654.md), [AR-1657](../tasks/AR-1657.md) | None |
-| [AR-1656](../tasks/AR-1656.md) | [AR-1607](../tasks/AR-1607.md), [AR-1608](../tasks/AR-1608.md), [AR-1609](../tasks/AR-1609.md) | [AR-1654](../tasks/AR-1654.md), [AR-1657](../tasks/AR-1657.md), [AR-1704](../tasks/AR-1704.md), [AR-1710](../tasks/AR-1710.md), [AR-1718](../tasks/AR-1718.md) |
+| [AR-1656](../tasks/AR-1656.md) | [AR-1607](../tasks/AR-1607.md), [AR-1608](../tasks/AR-1608.md), [AR-1609](../tasks/AR-1609.md) | [AR-1654](../tasks/AR-1654.md), [AR-1657](../tasks/AR-1657.md), [AR-1704](../tasks/AR-1704.md), [AR-1710](../tasks/AR-1710.md), [AR-1719](../tasks/AR-1719.md) |
 | [AR-1657](../tasks/AR-1657.md) | [AR-1641](../tasks/AR-1641.md), [AR-1645](../tasks/AR-1645.md), [AR-1647](../tasks/AR-1647.md), [AR-1651](../tasks/AR-1651.md), [AR-1656](../tasks/AR-1656.md) | [AR-1655](../tasks/AR-1655.md), [AR-1660](../tasks/AR-1660.md), [AR-1704](../tasks/AR-1704.md), [AR-1710](../tasks/AR-1710.md) |
 | [AR-1658](../tasks/AR-1658.md) | [AR-1562](../tasks/AR-1562.md), [AR-1563](../tasks/AR-1563.md), [AR-1653](../tasks/AR-1653.md) | [AR-1659](../tasks/AR-1659.md), [AR-1663](../tasks/AR-1663.md), [AR-1667](../tasks/AR-1667.md), [AR-1674](../tasks/AR-1674.md), [AR-1675](../tasks/AR-1675.md), [AR-1676](../tasks/AR-1676.md), [AR-1697](../tasks/AR-1697.md) |
 | [AR-1659](../tasks/AR-1659.md) | [AR-1611](../tasks/AR-1611.md), [AR-1658](../tasks/AR-1658.md) | [AR-1660](../tasks/AR-1660.md), [AR-1667](../tasks/AR-1667.md), [AR-1674](../tasks/AR-1674.md), [AR-1697](../tasks/AR-1697.md) |
@@ -517,16 +518,18 @@
 | [AR-1715](../tasks/AR-1715.md) | [AR-1700](../tasks/AR-1700.md), [AR-1709](../tasks/AR-1709.md), [AR-1711](../tasks/AR-1711.md) | None |
 | [AR-1716](../tasks/AR-1716.md) | [AR-1712](../tasks/AR-1712.md) | None |
 | [AR-1717](../tasks/AR-1717.md) | [AR-1712](../tasks/AR-1712.md) | None |
-| [AR-1718](../tasks/AR-1718.md) | [AR-1656](../tasks/AR-1656.md) | None |
+| [AR-1718](../tasks/AR-1718.md) | [AR-1597](../tasks/AR-1597.md) | None |
+| [AR-1719](../tasks/AR-1719.md) | [AR-1656](../tasks/AR-1656.md) | None |
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1718](../tasks/AR-1718.md): OpenRouter free-model catalog and wizard selection | ar1718_openrouter_free_catalog | Enumerate OpenRouter explicit :free models and free-router eligibility, normalize dynamic metadata/capabilities, and expose eligible models through provider catalog, provider-plan, and wizard selection. | Claim and implement deterministic OpenRouter catalog normalization and fixtures; expose every eligible free model with typed unavailable/model-mismatch diagnostics and a credential-free/live smoke qualification path. |
+| P0 | [AR-1718](../tasks/AR-1718.md): Portable fault-matrix network isolation repair | ar1718_isolation | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. | PR #487 is under hosted verification; merge protected, verify post-merge checks, publish the exact matrix receipt, and requalify AR-1596. |
+| P0 | [AR-1719](../tasks/AR-1719.md): OpenRouter free-model catalog and wizard selection | ar1718_openrouter_free_catalog | Enumerate OpenRouter explicit :free models and free-router eligibility, normalize dynamic metadata/capabilities, and expose eligible models through provider catalog, provider-plan, and wizard selection. | Continue deterministic OpenRouter catalog normalization and fixtures; expose every eligible free model with typed unavailable/model-mismatch diagnostics and a credential-free/live smoke qualification path. |
 
 ### Open (1)
 
@@ -630,6 +633,3 @@
 | P0 | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md): Build remote terminal frontend workflows | Unclaimed | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. |
 | P0 | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Unclaimed | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
 | P0 | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md): Generate asb-tui CI workflow screenshots | Unclaimed | Produce reproducible standalone TUI screenshots and text equivalents from workflows executed in CI. | Generate privacy-safe asb-tui workflow screenshots from real synthetic CI executions. |
-| P0 | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md): Qualify cross-repository ASB and asb-tui integration | Unclaimed | Integrate and adversarially test the exact ASB and asb-tui revisions together. | Wait for AR-1024, AR-1025, AR-1029 and the complete standalone UI integration AR-1011, then qualify exact install, update, rollback, launch, remove and benchmark-continuity paths across both repositories. |
-| P0 | [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md): Remove the legacy in-tree TUI implementation | Unclaimed | Ensure agent-systems-benchmark contains no TUI renderer or terminal application implementation. | Remove the legacy ASB renderer only after the standalone application and trusted router are complete. |
-| P0 | [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md): Build the standalone TUI landing screen | Unclaimed | Add a state-aware landing screen with primary journeys and bounded recent activity. | Implement the landing screen after the shell, visual system and first-run wizard expose stable typed routes. |
