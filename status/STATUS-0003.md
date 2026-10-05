@@ -330,6 +330,20 @@
 | Summary | Require exact provider, model settings, and endpoint identity equality before comparison admits online/offline results. |
 | Next action | Add focused comparison admission fences for provider, model/settings digest, endpoint identity, and generation; qualify symmetric/asymmetric mismatch diagnostics without weakening development setup. |
 
+### AR-1718 — Portable fault-matrix network isolation backend
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | ar1718_isolation |
+| Parent | None |
+| Children | None |
+| Summary | Allow the ASB fault matrix to run where direct unshare --net is denied by using an explicitly validated loopback-only isolation backend without any host-network fallback. |
+| Next action | Claim one worker; implement and test the closed isolation-backend abstraction, run the five-case matrix on an approved equivalent backend, then publish a receipt linked to AR-1596. |
+
 
 ## Dependency graph
 
@@ -1106,6 +1120,7 @@ flowchart LR
         AR_1715["AR-1715 - Planned"]:::status_planned
         AR_1716["AR-1716 - Planned"]:::status_planned
         AR_1717["AR-1717 - Planned"]:::status_planned
+        AR_1718["AR-1718 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2671,6 +2686,7 @@ flowchart LR
     AR_1596 --> AR_1602
     AR_1597 --> AR_1598
     AR_1597 --> AR_1600
+    AR_1597 --> AR_1718
     AR_1598 --> AR_1603
     AR_1599 --> AR_1600
     AR_1599 --> AR_1601
@@ -3143,5 +3159,3 @@ flowchart LR
 | [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md) |
 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) | [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1160](../tasks/AR-1160.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1170](../tasks/AR-1170.md) |
-| [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) |
-| [AR-1036](../tasks/AR-1036-measurement-catalog-control.md) | [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) |
