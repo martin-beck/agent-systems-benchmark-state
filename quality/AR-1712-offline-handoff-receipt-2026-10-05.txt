@@ -1,0 +1,21 @@
+AR-1712 deterministic offline recording handoff receipt
+Date: 2026-10-05
+
+Product evidence
+- Product: martin-beck/agent-systems-benchmark
+- PR #484 merged commit: 972a29f43257bd6a960ee0fccbbd71ce449411bd
+- Product PR head: 6c5c2ceec6cda84c3ed1e0693041f45c0ea6c02a
+
+Offline handoff evidence
+- Selected matrix: 2 agents x 2 workloads = 4 sealed cassettes.
+- Full current matrix: 9 agents x 27 workloads = 243 sealed cassettes.
+- All generated cassette publications reported `offline_ready=true`.
+- Runner uses deterministic `record-campaign --local-mock`, never
+  `benchmark-live`, and reads no credentials.
+
+Qualification boundary
+- This proves the deterministic recording/offline-ready publication sub-scope.
+- AR-1712 remains planned pending strict network-denied replay, comparison,
+  and paired TUI handoff evidence. It does not close AR-1711/1715 live work.
+- No key, raw response, prompt, or private path is recorded; development
+  authentication/signature/key warnings remain non-blocking.

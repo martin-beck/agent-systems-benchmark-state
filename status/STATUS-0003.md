@@ -286,7 +286,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define the ASB live-run result and selected/all recording handoff consumed by TUI for offline replay and comparison. |
-| Next action | After live workload completion, produce selected/all recording, sealed cassette catalog, strict network-denied replay, and comparison evidence; no recording/comparison completion is claimed from provider contact alone. |
+| Next action | PR #484 merged at ASB 972a29f provides selected 2x2 and full 9x27 deterministic local-mock recording with offline_ready=true; still qualify strict network-denied replay, comparison, and paired TUI handoff before closure. |
 
 ### AR-1715 — Credential-backed development OpenRouter qualification
 
