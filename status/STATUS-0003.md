@@ -370,7 +370,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. |
-| Next action | Keep the upstream-only prototype isolated until coordinator review is authorized; refresh formal evidence hashes only for the reviewed upstream commit, then obtain an approved signed coordinator release before any ASB vendoring. |
+| Next action | Record the same-user independent-agent review of the exact isolated prototype head; no additional upstream authorization or merge is required for this development repair. |
 
 ### AR-1721 — ControlServer v1.15 dynamic OpenRouter bridge
 
