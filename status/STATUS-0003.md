@@ -362,11 +362,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1720_integrity_repair |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. |
@@ -1178,7 +1178,7 @@ flowchart LR
         AR_1717["AR-1717 - Planned"]:::status_planned
         AR_1718["AR-1718 - In progress"]:::status_in_progress
         AR_1719["AR-1719 - Done"]:::status_done
-        AR_1720["AR-1720 - In progress"]:::status_in_progress
+        AR_1720["AR-1720 - Done"]:::status_done
         AR_1721["AR-1721 - Planned"]:::status_planned
         AR_1722["AR-1722 - In progress"]:::status_in_progress
     end
