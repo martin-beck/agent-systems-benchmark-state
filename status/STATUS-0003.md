@@ -244,7 +244,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. |
-| Next action | Implement the bounded live-provider request contract and credential injection seam; qualify missing-key, malformed-key, transport, timeout, non-2xx, and success outcomes without persisting secrets. |
+| Next action | Implementation is merged in ASB PR #474; run the credential-backed success smoke and complete missing-key, malformed-key, transport, timeout, and non-2xx qualification when an operator key is supplied. |
 
 ### AR-1710 — Wizard provider-model selection and warning-only readiness
 
@@ -272,7 +272,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide a simple explicit online benchmark command with selectable agents/workloads, typed failures, and no implicit mock or replay fallback. |
-| Next action | Implement and qualify the explicit live benchmark runner/CLI route with selection-driven fan-out, human-default output, --json diagnostics, and strict no-fallback behavior. |
+| Next action | Implementation is merged in ASB PR #475; run the credential-backed selected/all benchmark matrix and exact no-fallback live qualification when an operator key is supplied. |
 
 ### AR-1712 — Live result, recording, and comparison handoff contract
 

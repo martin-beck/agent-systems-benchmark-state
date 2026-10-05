@@ -1,0 +1,13 @@
+AR-1709 implementation receipt
+Product: martin-beck/agent-systems-benchmark
+Merged PR #474 head: 2db25e36fa0be4c0fbc709e46cbf023580c3321a
+Merge commit: 07ff1ef12c09f54d643150a3602867dde1558bcb
+
+PR #474 preserves typed OpenRouter live errors through the CLI boundary. Its
+hosted checks are green, including AWQ, credential-free benchmark, TUI PTY,
+platform, formal, policy/supply-chain, Rust, fuzz, Kani, mutation, and Loom.
+
+Status remains planned: a real credential-backed success smoke and complete
+negative qualification are not claimed without an operator API key. No key,
+raw response, or private path is recorded. Development auth/signature/key
+warnings remain non-blocking; explicit live failures do not fall back.
