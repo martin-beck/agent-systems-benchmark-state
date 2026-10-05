@@ -232,6 +232,62 @@
 | Summary | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. |
 | Next action | Implement or qualify typed non-2xx and transport failure propagation, complete the connected provider/model compatibility matrix, and replace the fixed curl path with bounded trusted tool discovery; publish exact-head human/JSON evidence. |
 
+### AR-1709 — Development live provider execution contract and credential injection
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. |
+| Next action | Implement the bounded live-provider request contract and credential injection seam; qualify missing-key, malformed-key, transport, timeout, non-2xx, and success outcomes without persisting secrets. |
+
+### AR-1710 — Wizard provider-model selection and warning-only readiness
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make provider, authentication mode, API-key readiness, agent defaults, and supported-model selection explicit and non-blocking in development setup. |
+| Next action | Expose the connected provider/model catalog and readiness diagnostics to the setup/materialization boundary; qualify shared defaults, per-agent overrides, unavailable models, and warning-only development auth. |
+
+### AR-1711 — Explicit live benchmark runner and typed failures
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide a simple explicit online benchmark command with selectable agents/workloads, typed failures, and no implicit mock or replay fallback. |
+| Next action | Implement and qualify the explicit live benchmark runner/CLI route with selection-driven fan-out, human-default output, --json diagnostics, and strict no-fallback behavior. |
+
+### AR-1712 — Live result, recording, and comparison handoff contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Define the ASB live-run result and selected/all recording handoff consumed by TUI for offline replay and comparison. |
+| Next action | Define the versioned result/cassette catalog handoff, selected/all capture scope, sealing metadata, strict offline identity, and comparison inputs without persisting secrets or raw responses in state. |
+
 
 ## Dependency graph
 
@@ -1001,6 +1057,10 @@ flowchart LR
         AR_1702["AR-1702 - Planned"]:::status_planned
         AR_1703["AR-1703 - Planned"]:::status_planned
         AR_1704["AR-1704 - Planned"]:::status_planned
+        AR_1709["AR-1709 - Planned"]:::status_planned
+        AR_1710["AR-1710 - Planned"]:::status_planned
+        AR_1711["AR-1711 - Planned"]:::status_planned
+        AR_1712["AR-1712 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2739,9 +2799,11 @@ flowchart LR
     AR_1656 --> AR_1654
     AR_1656 --> AR_1657
     AR_1656 --> AR_1704
+    AR_1656 --> AR_1710
     AR_1657 --> AR_1655
     AR_1657 --> AR_1660
     AR_1657 --> AR_1704
+    AR_1657 --> AR_1710
     AR_1658 --> AR_1659
     AR_1658 --> AR_1663
     AR_1658 --> AR_1667
@@ -2801,14 +2863,24 @@ flowchart LR
     AR_1696 --> AR_1691
     AR_1696 --> AR_1693
     AR_1698 --> AR_1701
+    AR_1698 --> AR_1712
     AR_1699 --> AR_1700
     AR_1699 --> AR_1702
     AR_1699 --> AR_1704
+    AR_1699 --> AR_1709
     AR_1700 --> AR_1701
     AR_1700 --> AR_1702
     AR_1700 --> AR_1704
+    AR_1700 --> AR_1709
+    AR_1700 --> AR_1711
     AR_1701 --> AR_1703
+    AR_1701 --> AR_1712
     AR_1702 --> AR_1703
+    AR_1704 --> AR_1709
+    AR_1704 --> AR_1711
+    AR_1709 --> AR_1710
+    AR_1709 --> AR_1711
+    AR_1711 --> AR_1712
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3044,16 +3116,3 @@ flowchart LR
 | [AR-1055](../tasks/AR-1055-asb-tui-install-integration-readiness.md) | None | None |
 | [AR-1056](../tasks/AR-1056-tmux-socket-connect-diagnostics.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
 | [AR-1057](../tasks/AR-1057-asb-tui-control-v1-3-readiness.md) | None | None |
-| [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md) | [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
-| [AR-1059](../tasks/AR-1059-asb-tui-lifecycle-router-publication-readiness.md) | None | None |
-| [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1160](../tasks/AR-1160.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) |
-| [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) | [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
-| [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) |
-| [AR-1064](../tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md) | None | None |
-| [AR-1065](../tasks/AR-1065-asb-tui-branch-policy-context.md) | None | None |
-| [AR-1100](../tasks/AR-1100.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
-| [AR-1110](../tasks/AR-1110.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1120](../tasks/AR-1120.md) | [AR-1130](../tasks/AR-1130.md) |
-| [AR-1120](../tasks/AR-1120.md) | [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1110](../tasks/AR-1110.md) |
-| [AR-1130](../tasks/AR-1130.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1110](../tasks/AR-1110.md) | [AR-1140](../tasks/AR-1140.md), [AR-1150](../tasks/AR-1150.md) |
-| [AR-1140](../tasks/AR-1140.md) | [AR-1130](../tasks/AR-1130.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1180](../tasks/AR-1180.md) |
-| [AR-1150](../tasks/AR-1150.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1130](../tasks/AR-1130.md) | [AR-1151](../tasks/AR-1151.md) |
