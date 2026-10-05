@@ -372,6 +372,20 @@
 | Summary | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. |
 | Next action | Add typed baseline-validation diagnostics or a scoped dependency repair for pre-existing invalid task/spec/privacy records; then rerun handoffctl doctor --live before closure. |
 
+### AR-1721 — ControlServer v1.15 dynamic OpenRouter bridge
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. |
+| Next action | Await AR-1719 exact post-merge catalog evidence and paired TUI AR-1720 readiness; then promote the additive v1.15 ControlServer dynamic OpenRouter bridge for implementation. |
+
 
 ## Dependency graph
 
@@ -1151,6 +1165,7 @@ flowchart LR
         AR_1718["AR-1718 - In progress"]:::status_in_progress
         AR_1719["AR-1719 - In progress"]:::status_in_progress
         AR_1720["AR-1720 - In progress"]:::status_in_progress
+        AR_1721["AR-1721 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2978,6 +2993,7 @@ flowchart LR
     AR_1711 --> AR_1715
     AR_1712 --> AR_1716
     AR_1712 --> AR_1717
+    AR_1719 --> AR_1721
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3184,5 +3200,3 @@ flowchart LR
 | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md), [AR-1170](../tasks/AR-1170.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md), [AR-1180](../tasks/AR-1180.md) |
 | [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) | [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) | None |
 | [AR-1028](../tasks/AR-1028-asb-cli-workflow-captures.md) | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md) | None |
-| [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) | [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) |
-| [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
