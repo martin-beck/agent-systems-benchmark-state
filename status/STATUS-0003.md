@@ -398,7 +398,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. |
-| Next action | Independently review exact clean product candidate 906986f6603af70f49d9747e6b1118c44c779247 (tree 544f33f722c8f3f043a89172965f9ba651f938fc), especially GitHub ruleset payload semantics, Web Flow rejection, merge_pr.py compatibility, required-context completeness, and failure/partial-apply behavior. Hold push, PR, and settings application until review is clear. |
+| Next action | Independently review exact clean two-commit policy series 906986f6603af70f49d9747e6b1118c44c779247..cf883d8b5f9cec3187ccfa491c1f698c5500b5a9 (tip tree dcb6c3aaef33ae4d80a499e62f05b5393e90a896). Hold push, PR, merge, and settings application until review accepts merge-only ruleset semantics, local-only protected-main signature policy, regression coverage, and partial-apply behavior. |
 
 
 ## Dependency graph
