@@ -370,7 +370,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. |
-| Next action | Propose and implement the claim-identity/migration hook in agent-workflow-coordinator upstream, with formal concurrency tests; then vendor a new signed release before retrying downstream integration. |
+| Next action | Route claim identity and explicit migration through agent-workflow-coordinator upstream; separately repair the pre-existing malformed spec/privacy baseline, then rerun reconcile and doctor --live. |
 
 ### AR-1721 — ControlServer v1.15 dynamic OpenRouter bridge
 
