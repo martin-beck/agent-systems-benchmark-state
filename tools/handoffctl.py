@@ -38,6 +38,24 @@ if __package__:
         load_checkpoints,
         validate_checkpoint,
     )
+    from .claim_records import (
+        append_record as append_claim_record,
+    )
+    from .claim_records import (
+        build_record as build_claim_record,
+    )
+    from .claim_records import (
+        latest_for_task as latest_claim_for_task,
+    )
+    from .claim_records import (
+        ledger_path as claim_ledger_path,
+    )
+    from .claim_records import (
+        load_records as load_claim_records,
+    )
+    from .claim_records import (
+        mismatch as claim_record_mismatch,
+    )
     from .directive_records import (
         append_directive,
         build_directive,
@@ -106,6 +124,14 @@ else:  # pragma: no cover - direct script execution
             del metrics
             raise RuntimeError("board metrics module is unavailable in this vendored bootstrap")
 
+    from claim_records import (  # type: ignore[import-not-found,no-redef]  # noqa: I001
+        append_record as append_claim_record,
+        build_record as build_claim_record,
+        latest_for_task as latest_claim_for_task,
+        ledger_path as claim_ledger_path,
+        load_records as load_claim_records,
+        mismatch as claim_record_mismatch,
+    )
     from checkpoint_records import (  # type: ignore[import-not-found,no-redef]
         append_checkpoint,
         build_checkpoint,
@@ -1203,6 +1229,35 @@ def claim_errors(
     return errors
 
 
+def claim_integrity_errors(tasks: list[Task]) -> list[str]:
+    """Validate active claims against the append-only identity ledger.
+
+    Older repositories without a ledger remain readable until an explicit
+    enrollment transaction creates the ledger. Once enabled, every active
+    claim must have an exact revision-bound record.
+    """
+    path = claim_ledger_path(ROOT)
+    if not path.exists():
+        return []
+    try:
+        records = load_claim_records(ROOT)
+    except (OSError, ValueError, RuntimeError) as error:
+        return [f"claim ledger validation failed: {error}"]
+    errors: list[str] = []
+    for _, meta, _ in tasks:
+        if meta.get("status") != "in_progress":
+            continue
+        task_id = str(meta.get("id", ""))
+        record = latest_claim_for_task(records, task_id)
+        if record is None:
+            errors.append(f"{task_id}: active claim missing append-only ledger record")
+            continue
+        mismatch = claim_record_mismatch(record, meta)
+        if mismatch:
+            errors.append(mismatch)
+    return errors
+
+
 def mutation_global_errors(tasks: list[Task]) -> list[str]:
     """Check global identities, dependency graph, and active-key uniqueness."""
     errors: list[str] = []
@@ -1346,6 +1401,7 @@ def validate(*, live: bool = False) -> list[str]:
     errors.extend(graph_errors(tasks))
     errors.extend(hierarchy_errors(tasks))
     errors.extend(supersession_errors(tasks))
+    errors.extend(claim_integrity_errors(tasks))
     errors.extend(generated_view_errors(tasks))
     try:
         for record in storage_backend().load_checkpoint_records():
@@ -1532,7 +1588,7 @@ def write_generated_views(tasks: list[Task], state: Meta) -> None:
     atomic(ROOT / "WORKTREES.md", worktrees)
 
 
-def reconcile(*, do_commit: bool, push: bool = False) -> bool:
+def reconcile(*, do_commit: bool, push: bool = False) -> bool:  # noqa: C901
     if backend_selection()["backend"] == "sqlite":
         return reconcile_sqlite(do_commit=do_commit, push=push)
 
@@ -1542,12 +1598,30 @@ def reconcile(*, do_commit: bool, push: bool = False) -> bool:
         sync_replica_before_write()
         state = project_scan()
         generated = generated_paths()
-        before: dict[Path, str | None] = {path: path.read_text() for path, _, _ in all_tasks()}
+        initial_tasks = all_tasks()
+        integrity_errors = claim_integrity_errors(initial_tasks)
+        if integrity_errors:
+            raise RuntimeError("claim integrity validation failed:\n" + "\n".join(integrity_errors))
+        before: dict[Path, str | None] = {path: path.read_text() for path, _, _ in initial_tasks}
         before.update({path: path.read_text() if path.exists() else None for path in generated})
+        ledger = claim_ledger_path(ROOT)
+        before[ledger] = ledger.read_text() if ledger.exists() else None
         committed = False
         try:
-            sync_task_observations(all_tasks(), state)
+            sync_task_observations(initial_tasks, state)
             tasks = all_tasks()
+            initial_by_id = {meta["id"]: meta for _, meta, _ in initial_tasks}
+            for _, meta, _ in tasks:
+                if meta.get("status") != "in_progress":
+                    continue
+                previous = initial_by_id.get(meta["id"])
+                if previous is not None and previous.get("task_revision") != meta.get(
+                    "task_revision"
+                ):
+                    append_claim_record(
+                        ROOT,
+                        build_claim_record(meta, "reconcile", str(meta["updated_at"])),
+                    )
             write_generated_views(tasks, state)
             errors = validate(live=False)
             if errors:
@@ -2180,6 +2254,9 @@ def mutate(args: argparse.Namespace, kind: str) -> None:  # noqa: C901
             raise RuntimeError("BACKEND_CHANGED: retry using the selected backend")
         sync_replica_before_write()
         path, meta, body = locate(args.task)
+        integrity_errors = claim_integrity_errors(all_tasks())
+        if integrity_errors:
+            raise RuntimeError("claim integrity validation failed:\n" + "\n".join(integrity_errors))
         require_promotion_preflight(kind)
         before: dict[Path, str | None] = {path: path.read_text()}
         before.update(
@@ -2188,10 +2265,14 @@ def mutate(args: argparse.Namespace, kind: str) -> None:  # noqa: C901
                 for target in generated_paths()
             }
         )
+        ledger = claim_ledger_path(ROOT)
+        before[ledger] = ledger.read_text() if ledger.exists() else None
         committed = False
         note = apply_transition(args, kind, meta, all_tasks())
         meta["task_revision"] += 1
         meta["updated_at"] = now()
+        if meta.get("status") == "in_progress":
+            append_claim_record(ROOT, build_claim_record(meta, kind, str(meta["updated_at"])))
         session_record = git_session_record(args, kind, meta, before)
         checkpoint_record = None
         if kind == "checkpoint":
@@ -3055,6 +3136,43 @@ def cmd_migrate(args: argparse.Namespace) -> None:  # noqa: C901
     print(f"Migrated authoritative storage from {current} to {args.to}")
 
 
+def cmd_integrity(args: argparse.Namespace) -> None:  # noqa: C901
+    """Enable append-only claim identity checks through one signed transaction."""
+    if args.integrity_action != "enroll":
+        raise RuntimeError("unsupported integrity action")
+    with locked():
+        if claim_ledger_path(ROOT).exists():
+            raise RuntimeError("claim identity ledger is already enabled")
+        if backend_selection()["backend"] != "git":
+            raise RuntimeError("claim ledger enrollment currently requires the Git backend")
+        sync_replica_before_write()
+        tasks = all_tasks()
+        active = [meta for _, meta, _ in tasks if meta.get("status") == "in_progress"]
+        if not active:
+            raise RuntimeError("cannot enroll an empty claim set")
+        path = claim_ledger_path(ROOT)
+        before = path.read_text() if path.exists() else None
+        committed = False
+        try:
+            for meta in active:
+                append_claim_record(ROOT, build_claim_record(meta, "enroll", now()))
+            errors = claim_integrity_errors(all_tasks())
+            if errors:
+                raise RuntimeError("claim ledger enrollment failed:\n" + "\n".join(errors))
+            if not commit("chore(state): enroll claim identity ledger", [path]):
+                raise RuntimeError("claim ledger enrollment produced no commit")
+            committed = True
+            push_replica()
+        except Exception:
+            if not committed:
+                if before is None:
+                    path.unlink(missing_ok=True)
+                else:
+                    atomic(path, before)
+            raise
+    print(f"Enrolled {len(active)} active claims in append-only identity ledger")
+
+
 def cmd_upgrade(args: argparse.Namespace) -> int:
     """Dispatch only the reviewed, fail-closed upgrade command boundary."""
     if __package__:
@@ -3246,6 +3364,8 @@ def dispatch_bound_command(args: argparse.Namespace) -> int:  # noqa: C901
         return cmd_run(args)
     elif args.cmd == "migrate":
         cmd_migrate(args)
+    elif args.cmd == "integrity":
+        cmd_integrity(args)
     elif args.cmd == "upgrade":
         return cmd_upgrade(args)
     return 0
@@ -3264,6 +3384,9 @@ def main() -> int:
     item.add_argument("--backend", choices=BACKENDS, default="sqlite")
     item = commands.add_parser("migrate")
     item.add_argument("--to", choices=BACKENDS, required=True)
+    item = commands.add_parser("integrity")
+    integrity_actions = item.add_subparsers(dest="integrity_action", required=True)
+    integrity_actions.add_parser("enroll")
     item = commands.add_parser("upgrade")
     upgrade_actions = item.add_subparsers(dest="upgrade_action", required=True)
     for action in ("check", "plan", "apply", "rollback"):
