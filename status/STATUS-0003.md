@@ -330,19 +330,19 @@
 | Summary | Require exact provider, model settings, and endpoint identity equality before comparison admits online/offline results. |
 | Next action | Add focused comparison admission fences for provider, model/settings digest, endpoint identity, and generation; qualify symmetric/asymmetric mismatch diagnostics without weakening development setup. |
 
-### AR-1718 — Portable fault-matrix network isolation backend
+### AR-1718 — OpenRouter free-model catalog and wizard selection
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | planned |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1718_isolation |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Allow the ASB fault matrix to run where direct unshare --net is denied by using an explicitly validated loopback-only isolation backend without any host-network fallback. |
-| Next action | Claim one worker; implement and test the closed isolation-backend abstraction, run the five-case matrix on an approved equivalent backend, then publish a receipt linked to AR-1596. |
+| Summary | Enumerate OpenRouter explicit :free models and free-router eligibility, normalize dynamic metadata/capabilities, and expose eligible models through provider catalog, provider-plan, and wizard selection. |
+| Next action | Claim and implement deterministic OpenRouter catalog normalization and fixtures; expose every eligible free model with typed unavailable/model-mismatch diagnostics and a credential-free/live smoke qualification path. |
 
 
 ## Dependency graph
@@ -1120,7 +1120,7 @@ flowchart LR
         AR_1715["AR-1715 - Planned"]:::status_planned
         AR_1716["AR-1716 - Planned"]:::status_planned
         AR_1717["AR-1717 - Planned"]:::status_planned
-        AR_1718["AR-1718 - In progress"]:::status_in_progress
+        AR_1718["AR-1718 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2686,7 +2686,6 @@ flowchart LR
     AR_1596 --> AR_1602
     AR_1597 --> AR_1598
     AR_1597 --> AR_1600
-    AR_1597 --> AR_1718
     AR_1598 --> AR_1603
     AR_1599 --> AR_1600
     AR_1599 --> AR_1601
@@ -2861,6 +2860,7 @@ flowchart LR
     AR_1656 --> AR_1657
     AR_1656 --> AR_1704
     AR_1656 --> AR_1710
+    AR_1656 --> AR_1718
     AR_1657 --> AR_1655
     AR_1657 --> AR_1660
     AR_1657 --> AR_1704
