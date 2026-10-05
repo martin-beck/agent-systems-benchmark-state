@@ -1,0 +1,22 @@
+AR-1715 exact merged-main OpenRouter smoke receipt
+Date: 2026-10-05
+
+Qualification identity
+- Product: martin-beck/agent-systems-benchmark
+- Exact merged ASB main commit: bdd57098134067c33fec48cae4bdc47bd9d0eb3f
+- Fresh archive build completed before the smoke.
+
+Observed outcomes
+- `record-live` reached OpenRouter and returned HTTP 200.
+- Selected model: cohere/north-mini-code:free.
+- Cassette sealing completed successfully.
+- Credential-free negative exited 4 with typed provider credential
+  unavailable and produced no cassette.
+
+Boundary and remaining work
+- This is a bounded smoke, not full AR completion. AR-1709 and AR-1715
+  remain planned pending selected/all benchmark success, the complete typed
+  failure matrix, and exact merged-head qualification evidence.
+- No API key, raw response, prompt, cassette bytes, or private path is
+  recorded. Development authentication/signatures/key management remain
+  warning-only; explicitly requested live failures remain no-fallback.
