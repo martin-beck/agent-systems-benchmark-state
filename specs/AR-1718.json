@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1718.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"closed-backends","description":"Only direct-unshare, systemd-private-network, and bubblewrap-network backends are selectable; arbitrary commands are rejected."},
+    {"id":"isolation-preflight","description":"Each backend proves loopback availability and denial of an external connection before any case runs."},
+    {"id":"no-host-fallback","description":"Unavailable isolation returns runner_unavailable and never executes a case on the host network."},
+    {"id":"bounded-lifecycle","description":"Timeout, output, workspace, process-group cleanup, and descendant reaping remain enforced for every backend."},
+    {"id":"portable-matrix","description":"The five AR-1597 fault cases pass on direct unshare and at least one approved equivalent backend."},
+    {"id":"receipt","description":"The receipt records exact ASB head, backend/tool identity, preflight, case classifications, cleanup, and network-denial evidence without secrets or private paths."}
+  ],
+  "definition_of_done": [
+    "Focused unit/integration tests pass for backend selection, preflight, denial, cleanup, and receipt schema.",
+    "The five-case matrix passes with an approved equivalent backend where direct unshare is denied.",
+    "Exact-head hosted Repository Quality and AWQ checks pass; protected merge and post-merge checks pass.",
+    "AR-1596 receives a matrix-linked receipt and is independently requalified or explicitly remains blocked for a separate reason."
+  ],
+  "inputs": [
+    {"id":"fault-manifest","description":"Versioned tools/fault-matrix/manifest-v1.json"},
+    {"id":"binary","description":"Exact ASB development binary under test"},
+    {"id":"backend","description":"Closed isolation backend and validated host capability"}
+  ],
+  "outputs": [
+    {"id":"runner","description":"Portable fail-closed fault-matrix isolation implementation"},
+    {"id":"receipt","description":"quality/AR-1718-fault-matrix-isolation-receipt.txt"}
+  ],
+  "allowed_tools": ["git", "gh", "tools/handoffctl", "unshare", "systemd-run", "bwrap"],
+  "forbidden_tools": ["host-network-fallback", "credential-output", "arbitrary-shell-wrapper"],
+  "required_evidence_classes": ["contract-test", "integration-test", "environmental", "hosted-ci"],
+  "gates": [
+    {"id":"backend-contract","description":"Backend enum, preflight, and typed unavailable behavior are covered by tests."},
+    {"id":"fault-matrix","description":"All five cases pass with cleanup_ok true and external-network denial proven."},
+    {"id":"hosted","description":"Exact-head PR and post-merge quality gates pass."}
+  ]
+}
