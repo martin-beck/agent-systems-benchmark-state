@@ -244,7 +244,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. |
-| Next action | PR #480 head 97611098 records a credential-backed HTTP 200 record-live smoke and env-unset provider_credential_unavailable exit 4 with no cassette; complete the remaining typed failure matrix and exact merged-head qualification. |
+| Next action | PR #481 merged at ASB b21fa8c adds unavailable-model and malformed-credential deterministic negatives; run live selected/all success and final exact-head qualification against current main. |
 
 ### AR-1710 — Wizard provider-model selection and warning-only readiness
 
@@ -300,7 +300,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Run the real OpenRouter selected/all live benchmark smoke and typed failure matrix with an operator API key, producing a privacy-safe exact-head receipt. |
-| Next action | PR #480 head 97611098 proves one credential-backed HTTP 200 record-live smoke and env-unset provider_credential_unavailable exit 4 with no cassette; still run selected/all benchmark success, full negatives, and exact merged-head receipt. |
+| Next action | PR #481 merged at ASB b21fa8c completes deterministic unavailable-model and malformed-credential negatives; still run selected/all live success and final exact-head qualification with an operator key. |
 
 
 ## Dependency graph
@@ -3126,3 +3126,4 @@ flowchart LR
 | [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md) | None | None |
 | [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md) | None | None |
 | [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md) | None | None |
+| [AR-1050](../tasks/AR-1050-tmux-authenticated-startup-readiness.md) | None | None |
