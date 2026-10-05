@@ -244,7 +244,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. |
-| Next action | PR #478 is merged at ASB head 612dbd2; the latest live attempt contacted the provider but timed out during workload execution. Re-run bounded success and complete typed negative qualification with an operator key. |
+| Next action | PR #480 head 97611098 records a credential-backed HTTP 200 record-live smoke and env-unset provider_credential_unavailable exit 4 with no cassette; complete the remaining typed failure matrix and exact merged-head qualification. |
 
 ### AR-1710 — Wizard provider-model selection and warning-only readiness
 
@@ -300,7 +300,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Run the real OpenRouter selected/all live benchmark smoke and typed failure matrix with an operator API key, producing a privacy-safe exact-head receipt. |
-| Next action | The latest attempt contacted the provider but timed out during workload execution; once the runner is stable, run one bounded success smoke plus selected/all and complete typed negative/no-fallback matrix with an operator key. |
+| Next action | PR #480 head 97611098 proves one credential-backed HTTP 200 record-live smoke and env-unset provider_credential_unavailable exit 4 with no cassette; still run selected/all benchmark success, full negatives, and exact merged-head receipt. |
 
 
 ## Dependency graph
