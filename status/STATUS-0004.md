@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md) | None | None |
 | [AR-1050](../tasks/AR-1050-tmux-authenticated-startup-readiness.md) | None | None |
 | [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md) | [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md) | None |
 | [AR-1052](../tasks/AR-1052-tmux-server-authority-portability.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
@@ -623,4 +624,3 @@
 | P0 | [AR-1545](../tasks/AR-1545.md): AR-1307 formal-input readiness repair | Unclaimed | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1622](../tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | Unclaimed | Make the clone-to-wizard-to-benchmark-to-offline-comparison journey executable in one disposable runner with simple selection-driven guidance. | Promote after final lifecycle and development-auth qualification; implement paired runner, guide, and exact-head acceptance. |
-| P0 | [AR-1623](../tasks/AR-1623.md): Development-channel release, upgrade, and rollback gate | Unclaimed | Qualify clean-machine dev installation, default-channel behavior, restart persistence, upgrade, rollback, and tamper diagnostics across ASB and TUI. | Promote after the quickstart runner and exact bundle consumer are released; execute disposable release-gate matrix. |
