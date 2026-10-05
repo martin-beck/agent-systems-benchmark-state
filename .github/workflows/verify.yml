@@ -30,6 +30,7 @@ name: Coordination verification
       - "tools/check_source_headers.py"
       - "tools/handoffctl"
       - "tools/handoffctl.py"
+      - "tools/check_generated_views.py"
       - "tools/handoffctl_vendor.py"
       - "tools/sqlite_storage.py"
       - "tools/status_renderer.py"
@@ -65,6 +66,7 @@ name: Coordination verification
       - "tools/check_source_headers.py"
       - "tools/handoffctl"
       - "tools/handoffctl.py"
+      - "tools/check_generated_views.py"
       - "tools/handoffctl_vendor.py"
       - "tools/sqlite_storage.py"
       - "tools/status_renderer.py"
@@ -113,6 +115,7 @@ jobs:
         run: |
           uv run python tests/validate_schema.py
           tools/handoffctl render-status --check
+          uv run python tools/check_generated_views.py
           git diff --exit-code
           test ! -e .runtime/config.json
           test -z "$(git ls-files 'private-archive/**')"
