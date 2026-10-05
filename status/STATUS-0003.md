@@ -384,7 +384,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. |
-| Next action | Await AR-1719 exact post-merge catalog evidence and paired TUI AR-1720 readiness; then promote the additive v1.15 ControlServer dynamic OpenRouter bridge for implementation. |
+| Next action | Await PR #489 exact-head hosted checks and independent approval; then merge through the protected workflow and publish the v1.15 catalog bridge. |
 
 ### AR-1722 — PR #487 protected-main requalification and merge-settings recovery
 
