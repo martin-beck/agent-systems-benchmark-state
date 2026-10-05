@@ -526,11 +526,12 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. |
+| P0 | [AR-1718](../tasks/AR-1718.md): OpenRouter free-model catalog and wizard selection | Unclaimed | Enumerate OpenRouter explicit :free models and free-router eligibility, normalize dynamic metadata/capabilities, and expose eligible models through provider catalog, provider-plan, and wizard selection. | Claim and implement deterministic OpenRouter catalog normalization and fixtures; expose every eligible free model with typed unavailable/model-mismatch diagnostics and a credential-free/live smoke qualification path. |
 
 ### Blocked (82)
 
@@ -619,7 +620,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (95)
+### Planned (94)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -632,5 +633,3 @@
 | P0 | [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md): Remove the legacy in-tree TUI implementation | Unclaimed | Ensure agent-systems-benchmark contains no TUI renderer or terminal application implementation. | Remove the legacy ASB renderer only after the standalone application and trusted router are complete. |
 | P0 | [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md): Build the standalone TUI landing screen | Unclaimed | Add a state-aware landing screen with primary journeys and bounded recent activity. | Implement the landing screen after the shell, visual system and first-run wizard expose stable typed routes. |
 | P0 | [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md): Add contextual hotkeys and complete action help | Unclaimed | Provide a context-fitted hotkey window, global action search and mechanically complete help. | Add the contextual action registry, search field, fitted hotkey window and complete help coverage after the user-facing screens exist. |
-| P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
-| P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
