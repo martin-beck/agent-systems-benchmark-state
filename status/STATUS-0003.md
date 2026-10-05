@@ -244,7 +244,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. |
-| Next action | Implementation is merged in ASB PR #474; run the credential-backed success smoke and complete missing-key, malformed-key, transport, timeout, and non-2xx qualification when an operator key is supplied. |
+| Next action | PR #478 is merged at ASB head 612dbd2; the latest live attempt contacted the provider but timed out during workload execution. Re-run bounded success and complete typed negative qualification with an operator key. |
 
 ### AR-1710 — Wizard provider-model selection and warning-only readiness
 
@@ -272,7 +272,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide a simple explicit online benchmark command with selectable agents/workloads, typed failures, and no implicit mock or replay fallback. |
-| Next action | Implementation is merged in ASB PR #475; run the credential-backed selected/all benchmark matrix and exact no-fallback live qualification when an operator key is supplied. |
+| Next action | The explicit route is merged; the latest provider-contact attempt timed out during workload execution. Re-run selected/all credential-backed benchmarks and exact no-fallback failure qualification. |
 
 ### AR-1712 — Live result, recording, and comparison handoff contract
 
@@ -286,7 +286,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define the ASB live-run result and selected/all recording handoff consumed by TUI for offline replay and comparison. |
-| Next action | Define the versioned result/cassette catalog handoff, selected/all capture scope, sealing metadata, strict offline identity, and comparison inputs without persisting secrets or raw responses in state. |
+| Next action | After live workload completion, produce selected/all recording, sealed cassette catalog, strict network-denied replay, and comparison evidence; no recording/comparison completion is claimed from provider contact alone. |
 
 ### AR-1715 — Credential-backed development OpenRouter qualification
 
@@ -300,7 +300,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Run the real OpenRouter selected/all live benchmark smoke and typed failure matrix with an operator API key, producing a privacy-safe exact-head receipt. |
-| Next action | Promote after implementation dependencies are released; run one bounded real OpenRouter success smoke plus selected/all benchmark and missing-key, malformed-key, timeout, transport, non-2xx, and no-fallback negatives at exact current ASB main. |
+| Next action | The latest attempt contacted the provider but timed out during workload execution; once the runner is stable, run one bounded success smoke plus selected/all and complete typed negative/no-fallback matrix with an operator key. |
 
 
 ## Dependency graph
@@ -3126,4 +3126,3 @@ flowchart LR
 | [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md) | None | None |
 | [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md) | None | None |
 | [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md) | None | None |
-| [AR-1050](../tasks/AR-1050-tmux-authenticated-startup-readiness.md) | None | None |

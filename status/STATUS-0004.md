@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1050](../tasks/AR-1050-tmux-authenticated-startup-readiness.md) | None | None |
 | [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md) | [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md) | None |
 | [AR-1052](../tasks/AR-1052-tmux-server-authority-portability.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
 | [AR-1053](../tasks/AR-1053-asb-tui-roadmap-hardening.md) | None | None |
