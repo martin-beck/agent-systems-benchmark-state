@@ -1,0 +1,32 @@
+AR-1704 typed provider failure/model admission/curl implementation receipt
+Date: 2026-10-05
+
+Implementation target
+- Product: martin-beck/agent-systems-benchmark
+- Exact reviewed PR head: 92b9bb39536d2142b2e1d08fe153939532ab1993
+- Exact merged product commit: deac8f62186231d9cfbf80b0907c781e94a5ee84
+- PR: #472, explicit OpenRouter live capture path.
+
+Implementation evidence
+- The merged live boundary carries typed credential, model mismatch,
+  transport, HTTP status, response-size, and curl-unavailable failures.
+- Explicit live requests do not fall back to mock or cassette execution.
+- The request model is checked against the selected provider profile before
+  credential-backed transport; curl is invoked through the bounded transport
+  boundary and unavailable-tool behavior is typed.
+- The product PR reported `cargo test -p asb-agents -p asb-cli --lib` with
+  211 tests passing (one unrelated shared temporary-state race noted by the
+  PR author).
+- All PR #472 hosted checks passed, including AWQ, credential-free benchmark,
+  exact TUI PTY journey, platform/aarch64, retained faults, formal recovery,
+  policy/supply-chain, Rust, fuzz, Kani, mutation, and Loom/state models.
+
+Qualification boundary
+- This receipt records the implementation merged by PR #472. The complete
+  AR-1704 acceptance still depends on the planned ASB AR-1657 compatibility
+  matrix and its exact-head qualification; AR-1704 therefore remains planned
+  until that dependency supplies the connected provider/model matrix evidence.
+- Credential-backed AR-1702 and paired live qualification remain planned
+  without an operator API key.
+- No credentials, raw provider responses, or private host paths are included;
+  development authentication/signatures/key management remain warning-only.
