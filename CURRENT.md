@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | codex-ar1686-qualification |
-| P0 | [AR-1718](tasks/AR-1718.md): Portable fault-matrix network isolation backend | Allow the ASB fault matrix to run where direct unshare --net is denied by using an explicitly validated loopback-only isolation backend without any host-network fallback. | Claim one worker; implement and test the closed isolation-backend abstraction, run the five-case matrix on an approved equivalent backend, then publish a receipt linked to AR-1596. | ar1718_isolation |
+| P0 | [AR-1718](tasks/AR-1718.md): OpenRouter free-model catalog and wizard selection | Enumerate OpenRouter explicit :free models and free-router eligibility, normalize dynamic metadata/capabilities, and expose eligible models through provider catalog, provider-plan, and wizard selection. | Claim and implement deterministic OpenRouter catalog normalization and fixtures; expose every eligible free model with typed unavailable/model-mismatch diagnostics and a credential-free/live smoke qualification path. | ar1718_openrouter_free_catalog |
 
 ## Open
 
