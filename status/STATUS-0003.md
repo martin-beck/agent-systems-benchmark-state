@@ -358,6 +358,20 @@
 | Summary | Enumerate OpenRouter explicit :free models and free-router eligibility, normalize dynamic metadata/capabilities, and expose eligible models through provider catalog, provider-plan, and wizard selection. |
 | Next action | Continue deterministic OpenRouter catalog normalization and fixtures; expose every eligible free model with typed unavailable/model-mismatch diagnostics and a credential-free/live smoke qualification path. |
 
+### AR-1720 — Claimed-task identity and coordinator integrity
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. |
+| Next action | Review the integrity plan against the current coordinator contract and promote only after the remote state and dirty-checkout boundary are confirmed. |
+
 
 ## Dependency graph
 
@@ -1136,6 +1150,7 @@ flowchart LR
         AR_1717["AR-1717 - Planned"]:::status_planned
         AR_1718["AR-1718 - In progress"]:::status_in_progress
         AR_1719["AR-1719 - In progress"]:::status_in_progress
+        AR_1720["AR-1720 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3172,4 +3187,3 @@ flowchart LR
 | [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) | [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) |
 | [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
 | [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md) | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) |
-| [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md) |
