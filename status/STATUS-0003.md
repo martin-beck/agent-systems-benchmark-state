@@ -272,7 +272,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide a simple explicit online benchmark command with selectable agents/workloads, typed failures, and no implicit mock or replay fallback. |
-| Next action | The explicit route is merged; the latest provider-contact attempt timed out during workload execution. Re-run selected/all credential-backed benchmarks and exact no-fallback failure qualification. |
+| Next action | PR #483 head 3efaa94 adds bounded read/list/glob/grep navigation policy with deterministic permission tests; after merge, rerun exact-main selected/all live benchmarks and verify no external-directory, shell, prompt, planning, or subagent bypass. |
 
 ### AR-1712 — Live result, recording, and comparison handoff contract
 
@@ -300,7 +300,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Run the real OpenRouter selected/all live benchmark smoke and typed failure matrix with an operator API key, producing a privacy-safe exact-head receipt. |
-| Next action | PR #481 merged at ASB b21fa8c completes deterministic unavailable-model and malformed-credential negatives; still run selected/all live success and final exact-head qualification with an operator key. |
+| Next action | PR #483 head 3efaa94 adds bounded read/list/glob/grep policy; after merge, rerun exact-main provider-backed selected/all success and final receipt, preserving fail-closed denial of external directories, shell, prompts, planning, and subagents. |
 
 
 ## Dependency graph
@@ -3126,4 +3126,3 @@ flowchart LR
 | [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md) | None | None |
 | [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md) | None | None |
 | [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md) | None | None |
-| [AR-1050](../tasks/AR-1050-tmux-authenticated-startup-readiness.md) | None | None |

@@ -1,0 +1,19 @@
+AR-1711/AR-1715 OpenCode navigation policy repair receipt
+Date: 2026-10-05
+
+Product evidence
+- Product: martin-beck/agent-systems-benchmark
+- PR #483 current head: 3efaa9410b27b3ecc0d7f8e40bc44fa47365e93a
+- PR status at receipt: open; hosted checks were still running.
+
+Repair scope
+- Adds bounded OpenCode read, list, glob, and grep navigation tools.
+- Retains wildcard deny and explicit denial of external directories, prompts,
+  planning, unrestricted shell, and subagents.
+- Adds deterministic permission-contract coverage.
+
+Qualification boundary
+- This receipt records the focused policy repair pending merge and rerun. It
+  does not close selected/all benchmark or credential-backed AR qualification.
+- No key, raw response, prompt, cassette bytes, or private path is recorded;
+  development auth/signature/key warnings remain non-blocking.
