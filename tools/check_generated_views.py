@@ -12,6 +12,8 @@ if str(ROOT) not in sys.path:
 
 from tools import handoffctl  # noqa: E402
 
+__all__ = ["handoffctl", "main"]
+
 
 def main() -> int:
     tasks = handoffctl.all_tasks()
