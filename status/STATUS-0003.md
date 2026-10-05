@@ -398,7 +398,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. |
-| Next action | Monitor PR #490 exact head cf883d8b5f9cec3187ccfa491c1f698c5500b5a9 until all 14 hosted checks are terminal green and obtain independent PR review. Keep GitHub settings and main unchanged; only after review/CI may the reviewed ruleset/settings be applied and audited before exact merge_pr.py publication. |
+| Next action | Monitor PR #490 exact head 9b7941cdd810de1a948b0bfa632b8cfe649e748c until all 14 hosted checks are terminal green and obtain independent exact-head review. Keep GitHub settings and main unchanged until those gates pass. |
 
 
 ## Dependency graph
