@@ -529,13 +529,12 @@
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 | P0 | [AR-1718](../tasks/AR-1718.md): Portable fault-matrix network isolation repair | ar1718_isolation | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. | PR #487 is under hosted verification; merge protected, verify post-merge checks, publish the exact matrix receipt, and requalify AR-1596. |
-| P0 | [AR-1719](../tasks/AR-1719.md): OpenRouter free-model catalog and wizard selection | ar1718_openrouter_free_catalog | Enumerate OpenRouter explicit :free models and free-router eligibility, normalize dynamic metadata/capabilities, and expose eligible models through provider catalog, provider-plan, and wizard selection. | Continue deterministic OpenRouter catalog normalization and fixtures; expose every eligible free model with typed unavailable/model-mismatch diagnostics and a credential-free/live smoke qualification path. |
 | P0 | [AR-1720](../tasks/AR-1720.md): Claimed-task identity and coordinator integrity | ar1720_integrity_repair | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. | Add typed baseline-validation diagnostics or a scoped dependency repair for pre-existing invalid task/spec/privacy records; then rerun handoffctl doctor --live before closure. |
 
 ### Open (1)
@@ -635,3 +634,5 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0515](../tasks/AR-0515-replay-matrix.md): Aggregate replay conformance matrix | Unclaimed | Aggregate complete per-agent replay conformance. | Aggregate per-agent replay evidence into the complete supported-agent conformance matrix. |
+| P0 | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md): Qualify terminal frontend usability and isolation | Unclaimed | Qualify the standalone TUI across terminals and platforms without perturbing benchmark results. | Independently qualify terminal UX, accessibility, isolation, packaging and recovery after the complete standalone wizard passes focused assurance. |
