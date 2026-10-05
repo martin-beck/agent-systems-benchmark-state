@@ -348,11 +348,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1718_openrouter_free_catalog |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Enumerate OpenRouter explicit :free models and free-router eligibility, normalize dynamic metadata/capabilities, and expose eligible models through provider catalog, provider-plan, and wizard selection. |
@@ -1163,7 +1163,7 @@ flowchart LR
         AR_1716["AR-1716 - Planned"]:::status_planned
         AR_1717["AR-1717 - Planned"]:::status_planned
         AR_1718["AR-1718 - In progress"]:::status_in_progress
-        AR_1719["AR-1719 - In progress"]:::status_in_progress
+        AR_1719["AR-1719 - Done"]:::status_done
         AR_1720["AR-1720 - In progress"]:::status_in_progress
         AR_1721["AR-1721 - Planned"]:::status_planned
     end
