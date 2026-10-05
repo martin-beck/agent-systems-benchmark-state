@@ -272,7 +272,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide a simple explicit online benchmark command with selectable agents/workloads, typed failures, and no implicit mock or replay fallback. |
-| Next action | PR #483 head 3efaa94 adds bounded read/list/glob/grep navigation policy with deterministic permission tests; after merge, rerun exact-main selected/all live benchmarks and verify no external-directory, shell, prompt, planning, or subagent bypass. |
+| Next action | PR #483 merged at ASB b9c5835; exact-main live path reached OpenRouter but returned HTTP 429 free-models-per-day (daily remaining 0). Credential-free exact-main negative returns OPENROUTER_API_KEY required exit 3. Rerun selected/all after quota recovery. |
 
 ### AR-1712 — Live result, recording, and comparison handoff contract
 
@@ -300,7 +300,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Run the real OpenRouter selected/all live benchmark smoke and typed failure matrix with an operator API key, producing a privacy-safe exact-head receipt. |
-| Next action | PR #483 head 3efaa94 adds bounded read/list/glob/grep policy; after merge, rerun exact-main provider-backed selected/all success and final receipt, preserving fail-closed denial of external directories, shell, prompts, planning, and subagents. |
+| Next action | PR #483 merged at ASB b9c5835; exact-main provider path reached OpenRouter but returned HTTP 429 free-models-per-day (daily remaining 0). Credential-free negative returns OPENROUTER_API_KEY required exit 3. Keep planned until quota recovers and selected/all succeeds. |
 
 
 ## Dependency graph
@@ -3125,4 +3125,3 @@ flowchart LR
 | [AR-1046](../tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md) | None | None |
 | [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md) | None | None |
 | [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md) | None | None |
-| [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md) | None | None |
