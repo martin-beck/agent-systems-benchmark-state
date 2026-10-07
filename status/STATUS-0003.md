@@ -342,7 +342,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. |
-| Next action | PR #487 is under hosted verification; merge protected, verify post-merge checks, publish the exact matrix receipt, and requalify AR-1596. |
+| Next action | Run current exact-main PR #490 post-merge fault-matrix qualification, publish the privacy-safe receipt, and independently review the evidence before releasing AR-1718. |
 
 ### AR-1719 — OpenRouter free-model catalog and wizard selection
 

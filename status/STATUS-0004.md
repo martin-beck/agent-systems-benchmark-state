@@ -542,7 +542,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1718](../tasks/AR-1718.md): Portable fault-matrix network isolation repair | codex-state-reconcile-20261007 | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. | PR #487 is under hosted verification; merge protected, verify post-merge checks, publish the exact matrix receipt, and requalify AR-1596. |
+| P0 | [AR-1718](../tasks/AR-1718.md): Portable fault-matrix network isolation repair | codex-state-reconcile-20261007 | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. | Run current exact-main PR #490 post-merge fault-matrix qualification, publish the privacy-safe receipt, and independently review the evidence before releasing AR-1718. |
 
 ### Open (3)
 
