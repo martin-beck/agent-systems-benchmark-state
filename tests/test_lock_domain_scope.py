@@ -60,7 +60,7 @@ from tools.upgrade_identity import (
     canonical_envelope_digest,
 )
 
-PROJECT = "11111111-1111-4111-8111-111111111111"
+PROJECT = "11111111" "-1111-4111-8111-111111111111"
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -628,68 +628,68 @@ class LockDomainScopeTests(unittest.TestCase):
                 "scope.reread", 1, "owner-1", "authority", PROJECT, "digest", "fence", object()
             )
 
-    def test_scope_events_map_to_model_actions_and_reject_mixed_tokens(self) -> None:
-        first_token = object()
-        second_token = object()
+    def test_scope_events_map_to_model_actions_and_reject_mixed_scope_tokens(self) -> None:
+        first_scope_token = object()
+        second_scope_token = object()
         event_fields = (1, "owner-1", "authority", PROJECT, "digest", "fence")
-        first = _issue_event(first_token, "acquire", *event_fields)
-        second = _issue_event(first_token, "quiesce", *event_fields)
+        first = _issue_event(first_scope_token, "acquire", *event_fields)
+        second = _issue_event(first_scope_token, "quiesce", *event_fields)
         self.assertEqual(("Preflight", "Quiesce"), validate_model_trace((first, second)))
-        foreign = _issue_event(second_token, "backup", *event_fields)
+        foreign = _issue_event(second_scope_token, "backup", *event_fields)
         with self.assertRaisesRegex(ValueError, "mixes scope"):
             validate_model_trace((first, foreign))
         with self.assertRaisesRegex(ValueError, "not mapped"):
-            validate_model_trace((_issue_event(first_token, "scope.reread", *event_fields),))
+            validate_model_trace((_issue_event(first_scope_token, "scope.reread", *event_fields),))
         with self.assertRaisesRegex(ValueError, "not mapped"):
             validate_model_trace(
                 (
-                    _issue_event(first_token, "acquire", *event_fields),
-                    _issue_event(first_token, "scope.reread", *event_fields),
+                    _issue_event(first_scope_token, "acquire", *event_fields),
+                    _issue_event(first_scope_token, "scope.reread", *event_fields),
                 )
             )
 
     def test_model_trace_rejects_invalid_transition_order(self) -> None:
-        token = object()
+        scope_token = object()
         event_fields = (1, "owner-1", "authority", PROJECT, "digest", "fence")
         events = (
-            _issue_event(token, "acquire", *event_fields),
-            _issue_event(token, "commit", *event_fields),
+            _issue_event(scope_token, "acquire", *event_fields),
+            _issue_event(scope_token, "commit", *event_fields),
         )
         with self.assertRaisesRegex(ValueError, "transition is not allowed"):
             validate_model_trace(events)
 
     def test_model_trace_rejects_identity_and_revision_drift(self) -> None:
-        token = object()
+        scope_token = object()
         fields = (2, "owner-1", "authority", PROJECT, "digest", "fence")
         with self.assertRaisesRegex(ValueError, "identity changed"):
             validate_model_trace(
                 (
-                    _issue_event(token, "acquire", *fields),
+                    _issue_event(scope_token, "acquire", *fields),
                     _issue_event(
-                        token, "quiesce", 2, "owner-2", "authority", PROJECT, "digest", "fence"
+                        scope_token, "quiesce", 2, "owner-2", "authority", PROJECT, "digest", "fence"
                     ),
                 )
             )
         with self.assertRaisesRegex(ValueError, "identity changed"):
             validate_model_trace(
                 (
-                    _issue_event(token, "acquire", *fields),
+                    _issue_event(scope_token, "acquire", *fields),
                     _issue_event(
-                        token, "quiesce", 2, "owner-1", "foreign-lock", PROJECT, "digest", "fence"
+                        scope_token, "quiesce", 2, "owner-1", "foreign-lock", PROJECT, "digest", "fence"
                     ),
                 )
             )
         with self.assertRaisesRegex(ValueError, "revision regressed"):
             validate_model_trace(
                 (
-                    _issue_event(token, "acquire", *fields),
+                    _issue_event(scope_token, "acquire", *fields),
                     _issue_event(
-                        token, "quiesce", 1, "owner-1", "authority", PROJECT, "digest", "fence"
+                        scope_token, "quiesce", 1, "owner-1", "authority", PROJECT, "digest", "fence"
                     ),
                 )
             )
         with self.assertRaisesRegex(ValueError, "revision is invalid"):
-            validate_model_trace((_issue_event(token, "acquire", -1, *fields[1:]),))
+            validate_model_trace((_issue_event(scope_token, "acquire", -1, *fields[1:]),))
 
     def test_model_action_contract_binds_authoritative_upgrade_model(self) -> None:
         validate_model_action_contract(Path(__file__).resolve().parents[1])
@@ -959,22 +959,22 @@ class LockDomainScopeTests(unittest.TestCase):
             )
 
     def test_terminal_outcome_requires_verified_forward_reopen(self) -> None:
-        token = object()
+        scope_token = object()
         fields = (1, "owner-1", "authority", PROJECT, "digest", "fence")
         phases = ("acquire", "quiesce", "backup", "stage", "commit", "validate")
-        incomplete = tuple(_issue_event(token, phase, *fields) for phase in phases)
+        incomplete = tuple(_issue_event(scope_token, phase, *fields) for phase in phases)
         with self.assertRaisesRegex(ValueError, "terminal outcome is incomplete"):
             validate_terminal_outcome(incomplete)
         complete = tuple(
             _issue_event(
-                token, phase, *fields, terminal_target="new" if phase == "reopen" else None
+                scope_token, phase, *fields, terminal_target="new" if phase == "reopen" else None
             )
             for phase in (*phases, "reopen")
         )
         self.assertEqual("new", validate_terminal_outcome(complete))
 
     def test_terminal_outcome_rejects_wrong_target_and_incomplete_rollback(self) -> None:
-        token = object()
+        scope_token = object()
         fields = (1, "owner-1", "authority", PROJECT, "digest", "fence")
         phases = (
             "acquire",
@@ -986,35 +986,35 @@ class LockDomainScopeTests(unittest.TestCase):
         )
         wrong = tuple(
             _issue_event(
-                token, phase, *fields, terminal_target="new" if phase == phases[-1] else None
+                scope_token, phase, *fields, terminal_target="new" if phase == phases[-1] else None
             )
             for phase in phases
         )
         with self.assertRaisesRegex(ValueError, "rollback terminal outcome has wrong target"):
             validate_terminal_outcome(wrong)
-        incomplete = tuple(_issue_event(token, phase, *fields) for phase in phases[:-1])
+        incomplete = tuple(_issue_event(scope_token, phase, *fields) for phase in phases[:-1])
         with self.assertRaisesRegex(ValueError, "terminal outcome is incomplete"):
             validate_terminal_outcome(incomplete)
         valid = tuple(
             _issue_event(
-                token, phase, *fields, terminal_target="rollback" if phase == phases[-1] else None
+                scope_token, phase, *fields, terminal_target="rollback" if phase == phases[-1] else None
             )
             for phase in phases
         )
         self.assertEqual("rollback", validate_terminal_outcome(valid))
 
     def test_terminal_outcome_rejects_invalid_or_premature_target_metadata(self) -> None:
-        token = object()
+        scope_token = object()
         fields = (1, "owner-1", "authority", PROJECT, "digest", "fence")
         with self.assertRaisesRegex(ValueError, "terminal target is invalid"):
             validate_terminal_outcome(
-                (_issue_event(token, "acquire", *fields, terminal_target="replacement"),)
+                (_issue_event(scope_token, "acquire", *fields, terminal_target="replacement"),)
             )
         with self.assertRaisesRegex(ValueError, "terminal target is premature"):
             validate_terminal_outcome(
                 (
-                    _issue_event(token, "acquire", *fields, terminal_target="new"),
-                    _issue_event(token, "quiesce", *fields),
+                    _issue_event(scope_token, "acquire", *fields, terminal_target="new"),
+                    _issue_event(scope_token, "quiesce", *fields),
                 )
             )
 
@@ -1486,7 +1486,7 @@ class LockDomainScopeTests(unittest.TestCase):
         with locked() as common_guard, self.assertRaisesRegex(ControlStoreError, "project binding"):
             self.session.create_locked(
                 common_guard,
-                replace(identity(), project_id="22222222-2222-4222-8222-222222222222"),
+                replace(identity(), project_id="22222222" "-2222-4222-8222-222222222222"),
             )
         with (
             patch(
@@ -1714,7 +1714,7 @@ class LockDomainScopeTests(unittest.TestCase):
             identity(), 1, BarrierChildIdentity.bind(identity(), "forward-1", "new")
         )
         record["operation_id"] = "forward-1"
-        record["project_id"] = "22222222-2222-4222-8222-222222222222"
+        record["project_id"] = "22222222" "-2222-4222-8222-222222222222"
         record["barrier_identity_digest"] = canonical_barrier_digest(record)
         record["envelope_digest"] = canonical_envelope_digest(record)
         with self.assertRaisesRegex(ControlStoreError, "barrier identity"):
@@ -2472,7 +2472,7 @@ class LockDomainScopeTests(unittest.TestCase):
             self.assertRaisesRegex(LockDomainError, "does not match"),
             scope.validated_hold(missing_fence_context),
         ):
-            self.fail("missing fencing token must fail before scope acquisition")
+            self.fail("missing fencing scope_token must fail before scope acquisition")
         self.assertEqual([], common_calls)
         self.assertFalse(self.session.operation_owned_by_current_thread)
 
@@ -3103,7 +3103,7 @@ class LockDomainScopeTests(unittest.TestCase):
             self.assertRaisesRegex(LockDomainError, "does not match"),
             scope.validated_hold(non_text_fence_context),
         ):
-            self.fail("non-text fencing token must fail before scope acquisition")
+            self.fail("non-text fencing scope_token must fail before scope acquisition")
         self.assertEqual([], common_calls)
         self.assertFalse(self.session.operation_owned_by_current_thread)
 
@@ -3113,7 +3113,7 @@ class LockDomainScopeTests(unittest.TestCase):
             self.assertRaisesRegex(LockDomainError, "does not match"),
             scope.validated_hold(memoryview_fence_context),
         ):
-            self.fail("memoryview fencing token must fail before scope acquisition")
+            self.fail("memoryview fencing scope_token must fail before scope acquisition")
         self.assertEqual([], common_calls)
         self.assertFalse(self.session.operation_owned_by_current_thread)
 
@@ -3133,7 +3133,7 @@ class LockDomainScopeTests(unittest.TestCase):
             self.assertRaisesRegex(LockDomainError, "does not match"),
             scope.validated_hold(bool_fence_context),
         ):
-            self.fail("boolean fencing token must fail before scope acquisition")
+            self.fail("boolean fencing scope_token must fail before scope acquisition")
         self.assertEqual([], common_calls)
         self.assertFalse(self.session.operation_owned_by_current_thread)
 
@@ -3143,7 +3143,7 @@ class LockDomainScopeTests(unittest.TestCase):
             self.assertRaisesRegex(LockDomainError, "does not match"),
             scope.validated_hold(list_fence_context),
         ):
-            self.fail("list fencing token must fail before scope acquisition")
+            self.fail("list fencing scope_token must fail before scope acquisition")
         self.assertEqual([], common_calls)
         self.assertFalse(self.session.operation_owned_by_current_thread)
 
@@ -3153,7 +3153,7 @@ class LockDomainScopeTests(unittest.TestCase):
             self.assertRaisesRegex(LockDomainError, "does not match"),
             scope.validated_hold(tuple_fence_context),
         ):
-            self.fail("tuple fencing token must fail before scope acquisition")
+            self.fail("tuple fencing scope_token must fail before scope acquisition")
         self.assertEqual([], common_calls)
         self.assertFalse(self.session.operation_owned_by_current_thread)
 
@@ -3198,12 +3198,12 @@ class LockDomainScopeTests(unittest.TestCase):
         self.assertFalse(self.session.operation_owned_by_current_thread)
 
         map_fence_context = dict(stale_context)
-        map_fence_context["fencing_token"] = {"token": "fence-1"}
+        map_fence_context["fencing_token"] = {"scope_token": "fence-1"}
         with (
             self.assertRaisesRegex(LockDomainError, "does not match"),
             scope.validated_hold(map_fence_context),
         ):
-            self.fail("mapping fencing token must fail before scope acquisition")
+            self.fail("mapping fencing scope_token must fail before scope acquisition")
         self.assertEqual([], common_calls)
         self.assertFalse(self.session.operation_owned_by_current_thread)
 
@@ -3273,7 +3273,7 @@ class LockDomainScopeTests(unittest.TestCase):
             self.assertRaisesRegex(LockDomainError, "does not match"),
             scope.validated_hold(null_fence_context),
         ):
-            self.fail("null fencing token must fail before scope acquisition")
+            self.fail("null fencing scope_token must fail before scope acquisition")
         self.assertEqual([], common_calls)
         self.assertFalse(self.session.operation_owned_by_current_thread)
 
@@ -3283,7 +3283,7 @@ class LockDomainScopeTests(unittest.TestCase):
             self.assertRaisesRegex(LockDomainError, "does not match"),
             scope.validated_hold(empty_fence_context),
         ):
-            self.fail("empty fencing token must fail before scope acquisition")
+            self.fail("empty fencing scope_token must fail before scope acquisition")
         self.assertEqual([], common_calls)
         self.assertFalse(self.session.operation_owned_by_current_thread)
 

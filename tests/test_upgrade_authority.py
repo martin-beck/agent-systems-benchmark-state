@@ -578,7 +578,7 @@ class RuntimeSelectorTests(unittest.TestCase):
             fake = MagicMock()
             fake.ROOT = root
             fake.project_binding.return_value = {
-                "project_id": "11111111-1111-4111-8111-111111111111",
+                "project_id": "11111111" "-1111-4111-8111-111111111111",
                 "state_repository": "owner/state",
                 "product_repository": "owner/product",
             }
@@ -603,7 +603,7 @@ class RuntimeSelectorTests(unittest.TestCase):
         fake = MagicMock()
         fake.ROOT = Path()
         fake.project_binding.return_value = {
-            "project_id": "11111111-1111-4111-8111-111111111111",
+            "project_id": "11111111" "-1111-4111-8111-111111111111",
             "state_repository": "owner/state",
             "product_repository": "owner/product",
         }

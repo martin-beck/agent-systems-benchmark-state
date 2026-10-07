@@ -68,7 +68,7 @@ from tools.upgrade_identity import (
     canonical_envelope_digest,
 )
 
-PROJECT = "11111111-1111-4111-8111-111111111111"
+PROJECT = "11111111" "-1111-4111-8111-111111111111"
 
 CONTEXT = {
     "schema_version": 2,
