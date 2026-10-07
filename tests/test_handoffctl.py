@@ -728,10 +728,6 @@ class HandoffTest(unittest.TestCase):
                 }
             )
         )
-        meta, body = CORE.read_task(path)
-        meta["spec_ref"] = "spec.json"
-        meta["spec_revision"] = 1
-        CORE.write_task(path, meta, body)
         with patch.object(CORE, "commit", return_value=True):
             CORE.mutate(
                 argparse.Namespace(task="AR-0001", owner="worker-a", lease_minutes=10),
@@ -792,165 +788,6 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual("done", meta["status"])
         self.assertEqual("", meta["owner"])
         self.assertTrue(all(len(line) <= 100 for line in path.read_text().splitlines()))
-
-    def test_accept_records_validated_spec_evidence(self) -> None:
-        path = self.make_task("AR-0001")
-        (self.root / "spec.json").write_text(
-            json.dumps(
-                {
-                    "schema_version": 1,
-                    "spec_ref": "spec.json",
-                    "spec_revision": 1,
-                    "acceptance_predicates": [{"id": "predicate", "description": "pass"}],
-                    "definition_of_done": ["pass"],
-                    "inputs": [{"id": "input", "description": "input"}],
-                    "outputs": [{"id": "output", "description": "output"}],
-                    "allowed_tools": ["source.read"],
-                    "forbidden_tools": ["credential-output"],
-                    "required_evidence_classes": ["contract-test"],
-                    "gates": [{"id": "gate", "description": "pass"}],
-                }
-            )
-        )
-        meta, body = CORE.read_task(path)
-        meta["spec_ref"] = "spec.json"
-        meta["spec_revision"] = 1
-        CORE.write_task(path, meta, body)
-        with patch.object(CORE, "commit", return_value=True):
-            CORE.mutate(
-                argparse.Namespace(task="AR-0001", owner="worker-a", lease_minutes=10),
-                "claim",
-            )
-            meta, _ = CORE.read_task(path)
-            CORE.mutate(
-                argparse.Namespace(
-                    task="AR-0001",
-                    owner="worker-a",
-                    expected_revision=meta["task_revision"],
-                    spec_ref="spec.json",
-                    spec_revision=1,
-                    evidence_class="contract-test",
-                    evidence_ref="evidence/AR-0001",
-                    evidence_digest="sha256:" + "a" * 64,
-                    note="acceptance evidence recorded",
-                ),
-                "accept",
-            )
-        meta, _ = CORE.read_task(path)
-        self.assertEqual("pass", meta["spec_acceptance"]["status"])
-        self.assertEqual("contract-test", meta["spec_acceptance"]["evidence_class"])
-
-    def test_accept_rejects_mismatched_or_malformed_evidence(self) -> None:
-        path = self.make_task("AR-0001")
-        (self.root / "spec.json").write_text(
-            json.dumps(
-                {
-                    "schema_version": 1,
-                    "spec_ref": "spec.json",
-                    "spec_revision": 1,
-                    "acceptance_predicates": [{"id": "predicate", "description": "pass"}],
-                    "definition_of_done": ["pass"],
-                    "inputs": [{"id": "input", "description": "input"}],
-                    "outputs": [{"id": "output", "description": "output"}],
-                    "allowed_tools": ["source.read"],
-                    "forbidden_tools": ["credential-output"],
-                    "required_evidence_classes": ["contract-test"],
-                    "gates": [{"id": "gate", "description": "pass"}],
-                }
-            )
-        )
-        meta, body = CORE.read_task(path)
-        meta["spec_ref"] = "spec.json"
-        meta["spec_revision"] = 1
-        CORE.write_task(path, meta, body)
-        with patch.object(CORE, "commit", return_value=True):
-            CORE.mutate(
-                argparse.Namespace(task="AR-0001", owner="worker-a", lease_minutes=10),
-                "claim",
-            )
-            meta, _ = CORE.read_task(path)
-            base = {
-                "task": "AR-0001",
-                "owner": "worker-a",
-                "expected_revision": meta["task_revision"],
-                "spec_ref": "other.json",
-                "spec_revision": 1,
-                "evidence_class": "contract-test",
-                "evidence_ref": "evidence/AR-0001",
-                "evidence_digest": "sha256:" + "a" * 64,
-                "note": "invalid acceptance evidence",
-            }
-            with self.assertRaisesRegex(RuntimeError, "does not match"):
-                CORE.mutate(argparse.Namespace(**base), "accept")
-            base["spec_ref"] = "spec.json"
-            base["evidence_digest"] = "not-a-digest"
-            with self.assertRaisesRegex(RuntimeError, "digest is invalid"):
-                CORE.mutate(argparse.Namespace(**base), "accept")
-        meta, _ = CORE.read_task(path)
-        self.assertNotIn("spec_acceptance", meta)
-
-    def test_accept_helper_rejects_each_boundary_and_records_exact_payload(self) -> None:
-        """Exercise the extracted acceptance validator independently of mutation plumbing."""
-        valid_meta = {
-            "status": "in_progress",
-            "task_revision": 4,
-            "spec_ref": "spec.json",
-            "spec_revision": 2,
-        }
-        valid = {
-            "expected_revision": 4,
-            "spec_ref": "spec.json",
-            "spec_revision": 2,
-            "evidence_class": "contract-test",
-            "evidence_ref": "evidence/AR-0001",
-            "evidence_digest": "sha256:" + "b" * 64,
-            "note": "accepted",
-        }
-        for message, meta_changes, changes in (
-            ("active task", {"status": "open"}, {}),
-            ("stale revision", {}, {"expected_revision": 3}),
-            ("task spec", {"spec_ref": None}, {}),
-            ("task spec", {"spec_revision": "2"}, {}),
-            ("does not match", {}, {"spec_ref": "other.json"}),
-            ("unknown", {}, {"evidence_class": "other"}),
-            ("ref is invalid", {}, {"evidence_ref": "bad ref"}),
-            ("digest is invalid", {}, {"evidence_digest": "bad digest"}),
-        ):
-            meta = dict(valid_meta)
-            meta.update(meta_changes)
-            args = dict(valid)
-            args.update(changes)
-            with self.assertRaisesRegex(RuntimeError, message):
-                CORE.apply_accept(SimpleNamespace(**args), meta)
-            self.assertNotIn("spec_acceptance", meta)
-        meta = dict(valid_meta)
-        self.assertEqual("accepted", CORE.apply_accept(SimpleNamespace(**valid), meta))
-        self.assertEqual(
-            {
-                "spec_ref": "spec.json",
-                "spec_revision": 2,
-                "status": "pass",
-                "evidence_class": "contract-test",
-                "evidence_ref": "evidence/AR-0001",
-                "evidence_digest": "sha256:" + "b" * 64,
-            },
-            meta["spec_acceptance"],
-        )
-
-    def test_heartbeat_helper_rejects_inactive_and_nonpositive_leases(self) -> None:
-        """Cover both short-circuit sides of the extracted heartbeat helper."""
-        args = SimpleNamespace(lease_minutes=10, owner="worker-a")
-        with self.assertRaisesRegex(RuntimeError, "active task"):
-            CORE.apply_heartbeat(args, {"status": "open"})
-        with self.assertRaisesRegex(RuntimeError, "positive lease"):
-            CORE.apply_heartbeat(
-                SimpleNamespace(lease_minutes=0, owner="worker-a"), {"status": "in_progress"}
-            )
-        meta = {"status": "in_progress"}
-        self.assertEqual("Heartbeat by worker-a.", CORE.apply_heartbeat(args, meta))
-        expiry = dt.datetime.fromisoformat(meta["claim_expires"])
-        self.assertIsNotNone(expiry.tzinfo)
-        self.assertGreater(expiry, dt.datetime.now(dt.UTC))
 
     def test_claim_enforces_dependencies_owner_and_positive_lease(self) -> None:
         self.make_task("AR-0001")
@@ -1909,7 +1746,7 @@ class HandoffTest(unittest.TestCase):
         with patch.object(CORE, "run", side_effect=fake_run):
             state = CORE.project_scan()
         self.assertEqual(
-            {product.name, state_task.name, self.root.name},
+            {product.name, state_task.name},
             {item["key"] for item in state["worktrees"]},
         )
 

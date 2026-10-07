@@ -79,6 +79,12 @@ tracked binding.
 
 ## Normal user and agent loop
 
+Development merge review identity is defined in
+[`DEVELOPMENT_REVIEW_POLICY.md`](DEVELOPMENT_REVIEW_POLICY.md). The required
+technical review remains independent, while a same-account GitHub approval is
+acceptable for development-only integration. Verified releases retain their
+separate release and provenance gates.
+
 1. Read the project's development policy, complete snapshot, selected task and plan.
 2. Claim one dependency-ready open task with a stable unique owner.
 3. Run every state-changing product, Git, review or publication command through `run`.

@@ -315,11 +315,6 @@ def _remove_selector_temporary(parent: int, entry: str) -> None:
     descriptor = -1
     try:
         descriptor = os.open(entry, os.O_RDONLY | os.O_NOFOLLOW, dir_fd=parent)
-        # Only names emitted by commit_runtime_selector are eligible for
-        # cleanup. Missing entries remain an idempotent no-op, but an existing
-        # active selector must never be removed through this helper.
-        if re.fullmatch(r"\.[^/]+\.[0-9a-f]{32}", entry) is None:
-            raise AuthorityError("runtime selector temporary name is unsafe")
         status = os.fstat(descriptor)
         if (
             not stat.S_ISREG(status.st_mode)

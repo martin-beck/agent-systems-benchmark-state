@@ -17,6 +17,8 @@ EVIDENCE_CLASSES = frozenset(
         "property-or-fuzz",
         "bounded-model",
         "environmental",
+        # Downstream ASB qualification classes retained by the project
+        # profile; these are evidence labels, not relaxed acceptance gates.
         "hosted",
         "offline",
         "privacy",

@@ -1,7 +1,7 @@
 {
   "files": {
     "docs/agent-workflow-coordinator.md": {
-      "sha256": "e9c01d8aeca559f5a033658a4c0b1ff8aacabb80a38ff15b7d22805689f31322",
+      "sha256": "de5b06c87677a78040fda8136974ed0afb8b4f72729e15a0ee3bcf0b2fc71263",
       "source": "docs/PROJECT_GUIDE.md"
     },
     "schema/handoffctl-backend-config.schema.json": {
@@ -45,7 +45,7 @@
       "source": "tests/test_checkpoint_records.py"
     },
     "tests/test_handoffctl.py": {
-      "sha256": "53918bcb5f4c80fce9ba402d4b604c5ccfbe9b5da99aa618bd3f99d001fefdef",
+      "sha256": "8b453fc3a05d0cfbe7d93209c4b98558899a90351fca1947c089fb84ffbe4537",
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_hierarchy.py": {
@@ -81,7 +81,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "84cce540666128c6aa8003a6302d33d51e1fea5e8211068cfec038391b3dfd0e",
+      "sha256": "3f9cc3c9aea8e1b364bbc92dd7d754cbb523b7b663ed6c0da8e76f0c7c89fa4b",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -149,11 +149,11 @@
       "source": "tools/status_renderer.py"
     },
     "tools/task_spec.py": {
-      "sha256": "5ad1bdb1b79dbb2e85233993f35b2e0f9bacc5d530bd26498d4fca27b65734d2",
+      "sha256": "6a8c47665757b680ccfcba3b8a8ca3aa5e4de50c687edafcadd40c040227d4f4",
       "source": "tools/task_spec.py"
     },
     "tools/upgrade_authority.py": {
-      "sha256": "84181acfe379426be5934be03dd9c6423223345d07dfb863eb154acc3716c67b",
+      "sha256": "13351edbea86873b0fd4d09d1f4f4c6540d5db2f2f397c0894e8d22064c51dd1",
       "source": "tools/upgrade_authority.py"
     },
     "tools/upgrade_binding.py": {
@@ -179,8 +179,8 @@
   },
   "schema_version": 1,
   "upstream": {
-    "commit": "b476a61e93d777e163148d15490adec6e21fca41",
+    "commit": "ae5bf94a9c1c858452ac076df143cd52a334eb66",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
-    "version": "v0.3.53"
+    "version": "v0.3.54"
   }
 }

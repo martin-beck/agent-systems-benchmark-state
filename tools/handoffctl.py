@@ -85,13 +85,7 @@ if __package__:
         render_status,
         render_status_pages_from_text,
     )
-    from .task_spec import (
-        DIGEST,
-        EVIDENCE_CLASSES,
-        EVIDENCE_REF,
-        done_admission_error,
-        task_spec_errors,
-    )
+    from .task_spec import done_admission_error, task_spec_errors
 else:  # pragma: no cover - direct script execution
     try:
         from board_metrics import build_metrics  # type: ignore[import-not-found,no-redef]  # noqa: I001
@@ -164,9 +158,6 @@ else:  # pragma: no cover - direct script execution
         render_status_pages_from_text,
     )
     from task_spec import (  # type: ignore[import-not-found,no-redef]
-        DIGEST,
-        EVIDENCE_CLASSES,
-        EVIDENCE_REF,
         done_admission_error,
         task_spec_errors,
     )
@@ -246,7 +237,7 @@ type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
-COORDINATOR_VERSION = "0.3.53"
+COORDINATOR_VERSION = "0.3.54"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -871,6 +862,14 @@ def project_scan() -> State:
                     paths.append(path)
     worktrees = []
     for path in paths:
+        # The coordinator checkout is the repository being reconciled. Its
+        # HEAD necessarily changes when reconcile commits generated views, so
+        # recording this self-referential checkout would make both the live
+        # inventory and any projection containing it stale immediately after
+        # every successful reconcile. Linked coordinator worktrees remain
+        # observable; exclude only this checkout.
+        if path.resolve() == ROOT.resolve():
+            continue
         head = run(["git", "-C", str(path), "rev-parse", "HEAD"]).stdout.strip()
         branch = (
             run(
@@ -1746,7 +1745,7 @@ def require_role_admission(owner_id: str, required_role: str = "implementer") ->
 
 
 def require_update_role_admission(kind: str, owner_id: str) -> None:
-    if kind in {"update", "pause", "accept"}:
+    if kind in {"update", "pause"}:
         require_role_admission(owner_id)
 
 
@@ -1935,60 +1934,22 @@ def require_promotion_preflight(kind: str) -> None:
         raise RuntimeError("promotion requires a clean state repository")
 
 
-def apply_accept(args: argparse.Namespace, meta: Meta) -> str:
-    """Record exact acceptance evidence before a fail-closed done release."""
-    if meta.get("status") != "in_progress":
-        raise RuntimeError("acceptance evidence requires an active task")
-    if args.expected_revision != meta["task_revision"]:
-        raise RuntimeError(
-            f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
-        )
-    spec_ref = meta.get("spec_ref")
-    spec_revision = meta.get("spec_revision")
-    if not isinstance(spec_ref, str) or not isinstance(spec_revision, int):
-        raise RuntimeError("acceptance evidence requires a task spec")
-    if args.spec_ref != spec_ref or args.spec_revision != spec_revision:
-        raise RuntimeError("acceptance evidence spec reference does not match task")
-    if args.evidence_class not in EVIDENCE_CLASSES:
-        raise RuntimeError("acceptance evidence class is unknown")
-    if not EVIDENCE_REF.fullmatch(args.evidence_ref):
-        raise RuntimeError("acceptance evidence ref is invalid")
-    if not DIGEST.fullmatch(args.evidence_digest):
-        raise RuntimeError("acceptance evidence digest is invalid")
-    meta["spec_acceptance"] = {
-        "spec_ref": args.spec_ref,
-        "spec_revision": args.spec_revision,
-        "status": "pass",
-        "evidence_class": args.evidence_class,
-        "evidence_ref": args.evidence_ref,
-        "evidence_digest": args.evidence_digest,
-    }
-    return str(args.note)
-
-
-def apply_heartbeat(args: argparse.Namespace, meta: Meta) -> str:
-    """Extend an active task lease without changing its task state."""
-    if args.lease_minutes <= 0 or meta.get("status") != "in_progress":
-        raise RuntimeError("heartbeat requires an active task and positive lease")
-    meta["claim_expires"] = (
-        (dt.datetime.now(dt.UTC) + dt.timedelta(minutes=args.lease_minutes))
-        .replace(microsecond=0)
-        .isoformat()
-    )
-    return f"Heartbeat by {args.owner}."
-
-
 def apply_owned_change(  # noqa: C901
     args: argparse.Namespace, kind: str, meta: Meta, tasks: list[Task] | None = None
 ) -> str:
     if meta.get("owner") != args.owner:
         raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
     require_update_role_admission(kind, str(args.owner))
-    if kind == "accept":
-        return apply_accept(args, meta)
     require_release_admission(kind, getattr(args, "status", None), meta, tasks)
     if kind == "heartbeat":
-        return apply_heartbeat(args, meta)
+        if args.lease_minutes <= 0 or meta.get("status") != "in_progress":
+            raise RuntimeError("heartbeat requires an active task and positive lease")
+        meta["claim_expires"] = (
+            (dt.datetime.now(dt.UTC) + dt.timedelta(minutes=args.lease_minutes))
+            .replace(microsecond=0)
+            .isoformat()
+        )
+        return f"Heartbeat by {args.owner}."
     if kind == "release":
         try:
             transition_allowed(meta, "release")
@@ -3230,7 +3191,6 @@ def dispatch_bound_command(args: argparse.Namespace) -> int:  # noqa: C901
     elif args.cmd in (
         "claim",
         "heartbeat",
-        "accept",
         "release",
         "promote",
         "pause",
@@ -3351,16 +3311,6 @@ def main() -> int:
     item.add_argument(
         "--status", required=True, choices=[value for value in STATUSES if value != "in_progress"]
     )
-    item.add_argument("--note", required=True)
-    item = commands.add_parser("accept")
-    item.add_argument("task")
-    item.add_argument("--owner", required=True)
-    item.add_argument("--expected-revision", type=int, required=True)
-    item.add_argument("--spec-ref", required=True)
-    item.add_argument("--spec-revision", type=int, required=True)
-    item.add_argument("--evidence-class", required=True)
-    item.add_argument("--evidence-ref", required=True)
-    item.add_argument("--evidence-digest", required=True)
     item.add_argument("--note", required=True)
     item = commands.add_parser("promote")
     item.add_argument("task")
