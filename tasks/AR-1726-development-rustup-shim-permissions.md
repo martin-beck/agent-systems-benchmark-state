@@ -1,5 +1,31 @@
 ---
-{"id":"AR-1726","title":"Allow user-owned group-writable rustup shim in development","priority":"P0","depends_on":["AR-1634","AR-1636","AR-1637"],"plan":"../plans/AR-1726-development-rustup-shim-permissions.md","summary":"Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.","status":"planned","next_action":"Promote after dependency verification; implement the bounded development-only permission exception, focused hostile-path tests, and exact paired installed lifecycle qualification.","owner":"","claim_expires":"","checkpoint_commit":"","worktree_key":"agent-systems-benchmark-ar-1726-development-rustup-shim-permissions","branch":"repair/ar-1726-development-rustup-shim-permissions","observed_branch":"","observed_head":"","observed_dirty":0,"schema_version":1,"spec_ref":"specs/AR-1726.json","spec_revision":1,"task_revision":1,"updated_at":"2026-10-08T00:45:00+02:00"}
+{
+  "branch": "repair/ar-1726-development-rustup-shim-permissions",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [
+    "AR-1634",
+    "AR-1636",
+    "AR-1637"
+  ],
+  "id": "AR-1726",
+  "next_action": "Promote after dependency verification; implement the bounded development-only permission exception, focused hostile-path tests, and exact paired installed lifecycle qualification.",
+  "observed_branch": "",
+  "observed_dirty": 0,
+  "observed_head": "",
+  "owner": "",
+  "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1726.json",
+  "spec_revision": 1,
+  "status": "open",
+  "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
+  "task_revision": 2,
+  "title": "Allow user-owned group-writable rustup shim in development",
+  "updated_at": "2026-10-07T22:37:38+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
+}
 ---
 
 This is a development-only compatibility repair. The current host has a regular,
@@ -15,3 +41,7 @@ production installation policy is unchanged.
 Completion requires focused positive and hostile-path tests, exact paired
 ASB/asb-tui install/status/bare-launch/upgrade/remove evidence, independent
 review, protected merge, and terminal-green post-merge CI.
+
+- 2026-10-07T22:37:38+00:00: Dependencies AR-1634, AR-1636, and AR-1637 are done. User authorized
+  the bounded development-only 0775 rustup shim exception; promote implementation and paired
+  qualification.
