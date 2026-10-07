@@ -465,7 +465,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give the ASB development broker child correct foreground process-group ownership on the caller&#x27;s controlling terminal without weakening descendant cleanup. |
-| Next action | Await independent exact-head review of PR #500 at 23138efcc45dc78232fdb13ebbf722f76f14824b; do not merge without review and required exact-head CI. |
+| Next action | Repair PR #500 changed-foreground ownership race: revalidate the captured terminal foreground group under scoped SIGTTOU masking before tcsetpgrp, preserve the new owner on mismatch, restore the prior signal mask on every path, and add a real controlling-PTY changed-owner failure/cleanup regression; then rerun exact-head review and CI. |
 
 ### AR-1728 — Freeze development cli2key contract and bridge
 

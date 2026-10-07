@@ -7,7 +7,7 @@
     "AR-1590"
   ],
   "id": "AR-1727",
-  "next_action": "Await independent exact-head review of PR #500 at 23138efcc45dc78232fdb13ebbf722f76f14824b; do not merge without review and required exact-head CI.",
+  "next_action": "Repair PR #500 changed-foreground ownership race: revalidate the captured terminal foreground group under scoped SIGTTOU masking before tcsetpgrp, preserve the new owner on mismatch, restore the prior signal mask on every path, and add a real controlling-PTY changed-owner failure/cleanup regression; then rerun exact-head review and CI.",
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "23138efcc45dc78232fdb13ebbf722f76f14824b",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-07T23:36:02+00:00",
+  "updated_at": "2026-10-07T23:36:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -154,3 +154,13 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-07T23:36:02+00:00: Recorded command exit 0; command argv SHA-256
   bbfb3d04c990bd9a126526c0548ba0d1d058dc1a5c3e1603fad4b119edb4020d.
+
+- 2026-10-07T23:36:43+00:00: Independent review at exact head
+  23138efcc45dc78232fdb13ebbf722f76f14824b/tree 64b5b218de1d563cd1f875c82a6ee2b059d6922c found one
+  P1. DevelopmentForegroundTerminal::assign calls tcsetpgrp without revalidating tcgetpgrp against
+  the captured original group and without blocking SIGTTOU. If terminal ownership changes during
+  setup/spawn, ASB may stop as a background pgrp or overwrite a new owner instead of returning the
+  required typed failure with bounded cleanup. Exact focused controlling-PTY regression passed; all
+  37 development tests passed; 14 hosted checks terminal green; signature, DCO, scope, privacy,
+  safe-Rust boundary clean. GitHub exact-head review comment records the repair and regression
+  requirements.
