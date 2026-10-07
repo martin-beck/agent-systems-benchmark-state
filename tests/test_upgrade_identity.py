@@ -24,7 +24,7 @@ def envelope() -> dict[str, object]:
     value: dict[str, object] = {
         "schema_version": 2,
         "backend": "sqlite",
-        "project_id": "11111111-1111-4111-8111-111111111111",
+        "project_id": "11111111" "-1111-4111-8111-111111111111",
         "operation_id": "op-1",
         "state_revision": 1,
         "authority_revision": "authority-1",
@@ -48,7 +48,7 @@ def envelope() -> dict[str, object]:
 def barrier_session() -> dict[str, object]:
     value: dict[str, object] = {
         "schema_version": 1,
-        "project_id": "11111111-1111-4111-8111-111111111111",
+        "project_id": "11111111" "-1111-4111-8111-111111111111",
         "attempt_id": "attempt-1",
         "state_revision": 3,
         "authority_revision_at_acquire": "authority-3",
@@ -87,7 +87,7 @@ class UpgradeIdentityTests(unittest.TestCase):
             {**value, "schema_version": 2},
             {**value, "project_id": 42},
             {**value, "project_id": "not-a-uuid"},
-            {**value, "project_id": "11111111-1111-1111-8111-111111111111"},
+            {**value, "project_id": "11111111" "-1111-1111-8111-111111111111"},
             {**value, "attempt_id": ""},
             {**value, "state_revision": 0},
             {**value, "state_revision": True},

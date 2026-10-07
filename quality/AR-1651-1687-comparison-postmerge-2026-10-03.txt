@@ -19,7 +19,7 @@ Local exact-head evidence
 * `cargo fmt --all -- --check` passed.
 * `cargo test --locked -p asb-cli --test workflow_transcript` passed 3/3,
   including exact source provenance and privacy-safe transcript checks.
-* `ASB_TEST_ROOT=/home/martin/t cargo test --locked -p asb-cli comparison`
+* `ASB_TEST_ROOT=<temporary test root> cargo test --locked -p asb-cli comparison`
   passed 4/4.
 
 The comparison qualification exercises two runs with the same provider/model

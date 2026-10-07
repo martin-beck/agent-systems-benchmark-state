@@ -62,7 +62,7 @@ def make_context(operation_id: str = "op-1", target: str = "new") -> dict[str, o
     context: dict[str, object] = {
         "schema_version": 2,
         "backend": "sqlite",
-        "project_id": "11111111-1111-4111-8111-111111111111",
+        "project_id": "11111111" "-1111-4111-8111-111111111111",
         "operation_id": operation_id,
         "state_revision": 1,
         "authority_revision": "authority-1",

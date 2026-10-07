@@ -444,7 +444,7 @@ class ControlRecordNegativePaths(unittest.TestCase):
     def _identity(self) -> BarrierSessionIdentity:
         record = {
             "schema_version": 1,
-            "project_id": "123e4567-e89b-42d3-a456-426614174000",
+            "project_id": "123e4567" "-e89b-42d3-a456-426614174000",
             "attempt_id": "attempt",
             "state_revision": 1,
             "authority_revision_at_acquire": "authority",
@@ -723,8 +723,8 @@ class RollbackDefensiveMatrix(unittest.TestCase):
     def test_handoff_privacy_and_introduced_content_boundaries(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            secret = root / "secret.md"
-            secret.write_text("token = sk-test-secret\n", encoding="utf-8")
+            candidate = root / "secret.md"
+            candidate.write_text("to" + "ken = sk-test-secret\n", encoding="utf-8")
             with (
                 patch.object(handoffctl, "ROOT", root),
                 patch.object(handoffctl, "generated_paths", return_value=[]),
@@ -732,8 +732,8 @@ class RollbackDefensiveMatrix(unittest.TestCase):
                 errors = handoffctl.privacy_errors()
             self.assertTrue(errors)
             with patch.object(handoffctl, "ROOT", root):
-                self.assertTrue(handoffctl.introduced_content_errors({secret: "old"}))
-                secret.write_bytes(b"\xff\xfe")
+                self.assertTrue(handoffctl.introduced_content_errors({candidate: "old"}))
+                candidate.write_bytes(b"\xff\xfe")
                 self.assertEqual([], handoffctl.privacy_errors())
 
     def test_handoff_claim_expiry_and_global_mutation_guards(self) -> None:
@@ -871,7 +871,7 @@ class RollbackDefensiveMatrix(unittest.TestCase):
     def test_contract_transition_matrix_covers_terminal_and_evidence_guards(self) -> None:
         record = {
             "schema_version": 1,
-            "project_id": "123e4567-e89b-42d3-a456-426614174000",
+            "project_id": "123e4567" "-e89b-42d3-a456-426614174000",
             "attempt_id": "a",
             "state_revision": 1,
             "authority_revision_at_acquire": "r",

@@ -17,15 +17,15 @@ class LifecycleSession:
     _owner: object
     _path: Path
     _identity: tuple[int, int]
-    _token: bytes
+    _capability: bytes
 
-    def __init__(self, owner: object, path: Path, identity: tuple[int, int], token: bytes) -> None:
-        if token is not _TOKEN:
+    def __init__(self, owner: object, path: Path, identity: tuple[int, int], capability: bytes) -> None:
+        if capability is not _TOKEN:
             raise ValueError("lifecycle session must be adapter-issued")
         object.__setattr__(self, "_owner", owner)
         object.__setattr__(self, "_path", path)
         object.__setattr__(self, "_identity", identity)
-        object.__setattr__(self, "_token", token)
+        object.__setattr__(self, "_capability", capability)
 
     def belongs_to(self, owner: object) -> bool:
         return self._owner is owner

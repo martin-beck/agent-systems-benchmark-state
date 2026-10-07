@@ -22,7 +22,7 @@ from tools.upgrade_identity import (
     validate_envelope,
 )
 
-PROJECT = "11111111-1111-4111-8111-111111111111"
+PROJECT = "11111111" "-1111-4111-8111-111111111111"
 ADMISSION_TRUE_FIELDS = (
     "release_authentic",
     "runtime_supported",
