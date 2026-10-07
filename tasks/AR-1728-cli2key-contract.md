@@ -2,21 +2,21 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-07T23:55:27+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1728",
   "next_action": "Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets.",
-  "owner": "codex-cli2key-planning",
+  "owner": "",
   "plan": "../plans/AR-1728-cli2key-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1728.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Freeze development cli2key contract and bridge",
-  "updated_at": "2026-10-07T23:26:17+00:00",
+  "updated_at": "2026-10-07T23:26:53+00:00",
   "worktree_key": ""
 }
 ---
@@ -44,3 +44,6 @@ unofficial, opt-in, and provides no production or provider-authority claim.
 
 - 2026-10-07T23:26:17+00:00: Recorded command exit 0; command argv SHA-256
   657ceb20b632c8bae94d629eab17b3a147b52e6905374e2680a1d1592cbf09b6.
+
+- 2026-10-07T23:26:53+00:00: AR series design is published and validated; AR-1728 is intentionally
+  unclaimed and ready for an isolated implementation worker.
