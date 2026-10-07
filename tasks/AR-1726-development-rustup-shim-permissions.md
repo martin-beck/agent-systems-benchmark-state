@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1726-development-rustup-shim-permissions",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T01:33:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1634",
     "AR-1636",
@@ -13,17 +13,17 @@
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "a3222ae105dcad1a1b8050289a3618c68e3920f8",
-  "owner": "codex-ar1726-pr499-correctness-review",
+  "owner": "",
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1726.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-07T23:37:13+00:00",
+  "updated_at": "2026-10-07T23:38:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -212,3 +212,10 @@ review, protected merge, and terminal-green post-merge CI.
 
 - 2026-10-07T23:37:13+00:00: Recorded command exit 0; command argv SHA-256
   e8eb8a2c40fb4ab7b10c5645774f10c2d93c6f273d1cefd7e4ad3fe30b688606.
+
+- 2026-10-07T23:38:28+00:00: Independent review completed against a3222ae/tree ca7cf7 and published
+  as GitHub review 5449688892. Do not merge PR #499: repair the P1 Cargo/rustc
+  validation-to-execution substitution gap with an object-bound execution design and retain a
+  deterministic post-validation replacement regression. Existing exact-head CI, signature, DCO,
+  stable boundary, and warning behavior are otherwise acceptable. Fresh independent review is
+  required after the head changes.
