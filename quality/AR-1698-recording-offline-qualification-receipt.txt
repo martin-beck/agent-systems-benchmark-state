@@ -4,7 +4,7 @@ AR-1698 current-head recording and strict-offline qualification receipt
 Evidence class: contract-test (development-only, provider-free)
 Qualification date: 2026-10-07
 ASB source commit: d207cc4eded60f29a0ec72047f3fa11e7a9fa385
-ASB source tree: 6bd9b83654ce9513a385541d503888b351a27fd3
+ASB source tree: 78c6c1b5591ee2d397025e0b129297b0c8035b61
 
 The exact current ASB main tree was checked out in an isolated clean
 worktree.  The locked asb-cli test target passed 255 tests in total:
