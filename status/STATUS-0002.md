@@ -4266,7 +4266,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4705,3 +4705,4 @@
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
+| Parent | None |
