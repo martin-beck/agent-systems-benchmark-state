@@ -709,4 +709,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1698-qual.fE5S7P` | `DETACHED` | `d207cc4eded6` | 0 | behind 26, ahead 0 |
 | `asb-main-verify.FEM1UX` | `DETACHED` | `856294553f2f` | 0 | behind 3, ahead 0 |
 | `asb-pr492-review.MtjSxm` | `DETACHED` | `c5a7e64af8cd` | 0 | behind 12, ahead 1 |
+| `asb-pr496-review.3ZigFi` | `DETACHED` | `dc5a635fd37f` | 0 | behind 0, ahead 1 |
 | `policy-asb-review` | `codex/development-review-identity-asb` | `589e218f64a4` | 0 | behind 25, ahead 0 |
