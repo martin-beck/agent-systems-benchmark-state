@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-07T23:41:45+00:00",
+  "updated_at": "2026-10-07T23:41:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -177,3 +177,6 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-07T23:41:18+00:00: Recorded command exit 0; command argv SHA-256
   329cfaab5497eb08c4eba0e21fb9bac6fe08f011863f70db6045184762a32cfe.
+
+- 2026-10-07T23:41:52+00:00: Recorded command exit 0; command argv SHA-256
+  79da272f7e4e7a786ca90e5ea99a1b051339fd1ac5cd8d61b67c8ebfbc695ad8.
