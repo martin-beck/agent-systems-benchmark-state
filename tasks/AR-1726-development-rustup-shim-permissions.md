@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1726-development-rustup-shim-permissions",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T00:57:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1634",
     "AR-1636",
@@ -13,17 +13,17 @@
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "a3222ae105dcad1a1b8050289a3618c68e3920f8",
-  "owner": "codex-ar1726-rustup",
+  "owner": "",
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1726.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-07T23:16:29+00:00",
+  "updated_at": "2026-10-07T23:16:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -173,3 +173,9 @@ review, protected merge, and terminal-green post-merge CI.
   parallel runtime scratch-root collision that passes isolated. Paired
   install/status/launch/upgrade/remove remains post-merge because source identity must equal remote
   main.
+
+- 2026-10-07T23:16:41+00:00: PR #499 is open at signed DCO head
+  a3222ae105dcad1a1b8050289a3618c68e3920f8 tree ca7cf753962ae05872ba4c9518a5fff09644c5ab. Exact-host
+  release preflight and focused gates pass; hosted checks are running. Independent reviewer must
+  bind findings/approval to this head, then merge only after required checks and run exact paired
+  post-merge install/status/bare-launch/upgrade/remove qualification.
