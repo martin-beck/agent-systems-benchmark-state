@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1698](tasks/AR-1698.md): Current-head recording and strict offline qualification repair | Qualify the existing ASB selected/all recording, cassette sealing, and strict offline replay implementation at the current merged ASB head so AR-1652 can be reconciled truthfully. | Run the current-head record, record-campaign, cassette integrity, strict offline replay, incomplete coverage, redaction, and network-denial matrix; publish a signed receipt without changing AR-1652 status from stale evidence. | codex-ar1698-offline |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -16,6 +10,7 @@ Never edit this file directly.
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Obtain independent review of quality/AR-1613-20261007-current-paired-journey.json and reconcile exact protected-main paired-head policy before any done/release claim. | - |
 | P0 | [AR-1652](tasks/AR-1652.md): Selected-workload recording and offline replay command | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. | - |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
+| P0 | [AR-1698](tasks/AR-1698.md): Current-head recording and strict offline qualification repair | Qualify the existing ASB selected/all recording, cassette sealing, and strict offline replay implementation at the current merged ASB head so AR-1652 can be reconciled truthfully. | Run the current-head record, record-campaign, cassette integrity, strict offline replay, incomplete coverage, redaction, and network-denial matrix; publish a signed receipt without changing AR-1652 status from stale evidence. | - |
 | P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | TUI_ROUTE_UNAVAILABLE: exact TUI main d8668bd has no dynamic-catalog route; implement/promote AR-1720, then rerun installed asb tui install -> bare asb tui dynamic-catalog qualification against ASB v1.15 exact main. | - |
 
 ## Blocked
