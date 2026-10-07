@@ -23,8 +23,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37646394246 | `0230e96ae5f4` | push | Emulated aarch64 portability | in_progress:- |
-| 37646394153 | `0230e96ae5f4` | push | Rust verification | in_progress:- |
+| 37646394246 | `0230e96ae5f4` | push | Emulated aarch64 portability | completed:success |
+| 37646394153 | `0230e96ae5f4` | push | Rust verification | completed:failure |
 | 37646394132 | `0230e96ae5f4` | push | Credential-free benchmark path | completed:success |
 | 37646394111 | `0230e96ae5f4` | push | Cross-repository development broker qualification | completed:success |
 | 37646394089 | `0230e96ae5f4` | push | Hosted portability and native qualification | completed:success |
