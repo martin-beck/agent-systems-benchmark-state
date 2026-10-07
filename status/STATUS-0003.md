@@ -383,7 +383,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. |
-| Next action | PR #489 is superseded by the merged v1.15 ASB path; run current exact-main paired ControlServer/TUI qualification with independent worker review, then release or record a typed blocker. Same-account development merge is allowed after independent review; no authorized-maintainer approval is required. |
+| Next action | TUI_ROUTE_UNAVAILABLE: exact TUI main d8668bd has no dynamic-catalog route; implement/promote AR-1720, then rerun installed asb tui install -&gt; bare asb tui dynamic-catalog qualification against ASB v1.15 exact main. |
 
 ### AR-1722 — PR #487 protected-main requalification and merge-settings recovery
 

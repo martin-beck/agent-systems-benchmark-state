@@ -543,7 +543,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | ar1721_qualification_repair2 | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | PR #489 is superseded by the merged v1.15 ASB path; run current exact-main paired ControlServer/TUI qualification with independent worker review, then release or record a typed blocker. Same-account development merge is allowed after independent review; no authorized-maintainer approval is required. |
+| P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | ar1721_qualification_repair2 | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | TUI_ROUTE_UNAVAILABLE: exact TUI main d8668bd has no dynamic-catalog route; implement/promote AR-1720, then rerun installed asb tui install -&gt; bare asb tui dynamic-catalog qualification against ASB v1.15 exact main. |
 
 ### Open (4)
 
