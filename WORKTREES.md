@@ -391,6 +391,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar1060-verify` | `DETACHED` | `b74b9c1eaa8d` | 0 | behind 282, ahead 373 |
 | `agent-systems-benchmark-ar1244-merge` | `DETACHED` | `5a2c1516a072` | 0 | behind 282, ahead 593 |
 | `agent-systems-benchmark-ar1252-merge` | `DETACHED` | `4e2820bffe93` | 0 | behind 282, ahead 644 |
+| `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 282, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 282, ahead 323 |
@@ -610,6 +611,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1451-postmerge` | `DETACHED` | `071167df4fe2` | 0 | behind 282, ahead 1126 |
 | `asb-ar1523-development-local-mock` | `DETACHED` | `bf89a45ddd71` | 0 | behind 282, ahead 1306 |
 | `asb-ar1551-platform-authority` | `feature/ar-1551-platform-authority` | `bf89a45ddd71` | 0 | behind 282, ahead 1306 |
+| `asb-ar1596-qual-20261008` | `DETACHED` | `f535e3cb327b` | 0 | behind 0, ahead 0 |
 | `asb-ar1599-qualified` | `fix/dev-workspace-quota-race` | `6ea6b9b58645` | 0 | behind 259, ahead 1 |
 | `asb-ar1601-qual` | `DETACHED` | `c94586d0751b` | 0 | behind 241, ahead 0 |
 | `asb-ar1603-acceptance` | `DETACHED` | `3d87e99b300d` | 0 | behind 221, ahead 0 |
@@ -629,6 +631,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1652-codex` | `codex/ar1652-record-replay-20261007` | `0c4ba0c721d0` | 0 | behind 8, ahead 1 |
 | `asb-ar1652-followup` | `codex/ar1652-followup-20261007` | `dc5a635fd37f` | 0 | behind 5, ahead 1 |
 | `asb-ar1654-quickstart` | `ar-1654-quickstart` | `e5117123bb12` | 0 | behind 146, ahead 0 |
+| `asb-ar1654-requal-20261008` | `DETACHED` | `f535e3cb327b` | 0 | behind 0, ahead 0 |
 | `asb-ar1656.MBtHI4` | `feature/ar-1656-provider-catalog` | `d7882b3d91e7` | 0 | behind 116, ahead 0 |
 | `asb-ar1659-materializer` | `DETACHED` | `45f5668197c4` | 0 | behind 121, ahead 0 |
 | `asb-ar1693-build.aDSB` | `DETACHED` | `0d241cabc674` | 0 | behind 104, ahead 0 |
