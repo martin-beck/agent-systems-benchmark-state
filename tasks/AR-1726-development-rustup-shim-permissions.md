@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1726-development-rustup-shim-permissions",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T01:40:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1634",
     "AR-1636",
@@ -13,17 +13,17 @@
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "d9ef0bce9bf656f07b3a64f306ed65d6204177cb",
-  "owner": "codex-ar1726-pr499-repair",
+  "owner": "",
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1726.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-07T23:58:57+00:00",
+  "updated_at": "2026-10-07T23:59:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -281,3 +281,12 @@ review, protected merge, and terminal-green post-merge CI.
 
 - 2026-10-07T23:58:57+00:00: Recorded command exit 0; command argv SHA-256
   68898b05008101e43c21167b962a52ea89aae5da2e3d8ff52752727f481b1bdc.
+
+- 2026-10-07T23:59:30+00:00: Repaired PR #499 at signed+DCO head
+  d9ef0bce9bf656f07b3a64f306ed65d6204177cb tree 3d15a55982be6ae04f64a9675603a12aacca5216.
+  Descriptor-relative O_NOFOLLOW traversal retains exact Cargo/rustc objects and executes them
+  through inherited descriptor handles; deterministic replacement, restoration, cleanup, and hostile
+  symlink regressions pass. Full asb-cli 229 plus integrations, fmt, workspace Clippy, rustdoc,
+  release build, and exact-host human/JSON preflight pass. Full workspace exposed only the known
+  parallel runtime scratch collision, whose exact test passed isolated. Hosted exact-head checks are
+  running; obtain fresh independent review, then merge only after terminal green.
