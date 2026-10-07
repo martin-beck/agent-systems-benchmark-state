@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1727-development-broker-foreground-terminal",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T01:31:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1590"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "23138efcc45dc78232fdb13ebbf722f76f14824b",
-  "owner": "codex-ar1727-independent-review",
+  "owner": "",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-07T23:36:43+00:00",
+  "updated_at": "2026-10-07T23:36:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -164,3 +164,8 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
   37 development tests passed; 14 hosted checks terminal green; signature, DCO, scope, privacy,
   safe-Rust boundary clean. GitHub exact-head review comment records the repair and regression
   requirements.
+
+- 2026-10-07T23:36:49+00:00: Independent exact-head review completed with one merge-blocking P1
+  changed-foreground/SIGTTOU race. PR #500 must be repaired and re-reviewed at its new exact head;
+  current success and development suites plus hosted CI are green but do not cover terminal
+  ownership changing between capture and assignment.
