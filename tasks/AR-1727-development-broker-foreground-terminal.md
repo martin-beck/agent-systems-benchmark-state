@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1727-development-broker-foreground-terminal",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T00:55:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1590"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "23138efcc45dc78232fdb13ebbf722f76f14824b",
-  "owner": "codex-ar1727-broker-foreground",
+  "owner": "",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-07T23:19:09+00:00",
+  "updated_at": "2026-10-07T23:30:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -130,3 +130,7 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
   real controlling-PTY development-broker regression passed, all 37 development broker tests passed,
   full asb-cli suite passed, cargo check/clippy/fmt and git diff --check passed. Stop for
   independent exact-head review.
+
+- 2026-10-07T23:30:13+00:00: Implementation worker stopped after publishing PR #500 exact head
+  23138efcc45dc78232fdb13ebbf722f76f14824b; release the author lease so a distinct independent
+  reviewer can claim it.
