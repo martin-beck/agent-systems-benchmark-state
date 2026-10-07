@@ -17,6 +17,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `.asb-rebase-446` | `DETACHED` | `0559c6f268db` | 0 | behind 133, ahead 4 |
 | `.asb-rebase-448` | `DETACHED` | `58d108d9192a` | 0 | behind 131, ahead 0 |
 | `.asb-rebase-450` | `DETACHED` | `1b245632c957` | 0 | behind 132, ahead 2 |
+| `ar1652-record-replay` | `ar-1652-record-replay-integration` | `4ceacaa7ea1f` | 0 | behind 0, ahead 0 |
 | `asb-ar1621` | `ar-1621-auth-audit` | `65834e135c21` | 0 | behind 168, ahead 0 |
 | `asb-dev-materializer-current` | `verify/asb-dev-materializer` | `d7882b3d91e7` | 0 | behind 99, ahead 0 |
 | `_ar1615-asb` | `DETACHED` | `1521b9800bf4` | 0 | behind 167, ahead 0 |
@@ -631,6 +632,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1693-build.aDSB` | `DETACHED` | `0d241cabc674` | 0 | behind 87, ahead 0 |
 | `asb-ar1697-pair` | `DETACHED` | `ad43609b6782` | 0 | behind 76, ahead 0 |
 | `asb-ar1698-qual` | `DETACHED` | `d207cc4eded6` | 0 | behind 14, ahead 0 |
+| `asb-ar1698-runtime-authority` | `codex-ar1698-runtime-authority` | `4ceacaa7ea1f` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `crates/asb-runtime/src/launch_factory.rs` |
 | `asb-ar1701` | `feature/ar1701-live-record-replay` | `9f80593e1e90` | 0 | behind 69, ahead 1 |
 | `asb-base-cov2` | `DETACHED` | `9c6a69a0f91c` | 2 | behind 237, ahead 0 |
 | changed files | - | - | - | `crates/asb-cli/default_2328882718243884030_0_991568.profraw`, `crates/asb-cli/default_2328882718243884030_0_991569.profraw` |
