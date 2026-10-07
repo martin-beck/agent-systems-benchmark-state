@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1727](tasks/AR-1727-development-broker-foreground-terminal.md): Repair development broker foreground-terminal handoff | Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup. | Await independent exact-head review of PR #500 at 23138efcc45dc78232fdb13ebbf722f76f14824b; do not merge without review and required exact-head CI. | codex-ar1727-broker-foreground |
+| P1 | [AR-1728](tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. | codex-cli2key-planning |
 
 ## Open
 
@@ -17,7 +18,6 @@ Never edit this file directly.
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
 | P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -> bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. | - |
 | P0 | [AR-1726](tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Independent review PR #499 at exact head a3222ae105dcad1a1b8050289a3618c68e3920f8; repair findings, require hosted checks, then protected merge and exact paired post-merge lifecycle qualification. | - |
-| P1 | [AR-1728](tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. | - |
 
 ## Blocked
 
