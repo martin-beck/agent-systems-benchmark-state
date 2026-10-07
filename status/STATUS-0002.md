@@ -4266,11 +4266,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1652-record-replay |
 | Parent | None |
 | Children | None |
 | Summary | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. |
@@ -4704,5 +4704,3 @@
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
