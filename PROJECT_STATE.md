@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
-| #492 | `codex-ar1698-runtime-authority@358bd9a2816f` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(replay): provide explicit development authority fixture |
+| #492 | `codex-ar1698-runtime-authority@358bd9a2816f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(replay): provide explicit development authority fixture |
 
 ## Recent workflows
 
@@ -27,7 +27,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37653877898 | `358bd9a2816f` | pull_request | Fault assurance | completed:success |
 | 37653877894 | `358bd9a2816f` | pull_request | Rust verification | completed:success |
 | 37653877868 | `358bd9a2816f` | pull_request | Repository quality | completed:failure |
-| 37653877864 | `358bd9a2816f` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37653877864 | `358bd9a2816f` | pull_request | Emulated aarch64 portability | completed:success |
 | 37653877840 | `358bd9a2816f` | pull_request | Hosted portability and native qualification | completed:success |
 | 37653877808 | `358bd9a2816f` | pull_request | Huawei MIT source headers | completed:success |
 | 37653877805 | `358bd9a2816f` | pull_request | Agent Workflow Quality shadow | completed:success |
