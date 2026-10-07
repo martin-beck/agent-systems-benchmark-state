@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1718](tasks/AR-1718.md): Portable fault-matrix network isolation repair | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. | Run current exact-main PR #490 post-merge fault-matrix qualification, publish the privacy-safe receipt, and independently review the evidence before releasing AR-1718. | codex-ar1718-qualification-20261007 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |

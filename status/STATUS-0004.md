@@ -539,12 +539,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1718](../tasks/AR-1718.md): Portable fault-matrix network isolation repair | codex-ar1718-qualification-20261007 | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. | Run current exact-main PR #490 post-merge fault-matrix qualification, publish the privacy-safe receipt, and independently review the evidence before releasing AR-1718. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -628,3 +622,4 @@
 | P1 | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Unclaimed | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. |
 | P1 | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Unclaimed | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |
 | P1 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
+| P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Hostile harness repair is signed, but pinned MockAgents still accepts oversized requests and approved AArch64/network-none runner evidence is unavailable. | Keep AR-0890 blocked. Repair or replace the pinned MockAgents oversized-request behavior, then rerun amd64 hostile/repeat qualification and an approved network-none AArch64 QEMU lane; do not use host QEMU or claim support. |
