@@ -18,21 +18,21 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #495 | `codex/ar1652-record-replay-20261007@6c27783b228a` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): cover direct recording campaign route |
+| #495 | `codex/ar1652-record-replay-20261007@c2d318a4c566` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): cover direct recording campaign route |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37666042798 | `c2d318a4c566` | pull_request | Rust verification | completed:success |
+| 37666042762 | `c2d318a4c566` | pull_request | Hosted portability and native qualification | completed:success |
+| 37666042693 | `c2d318a4c566` | pull_request | Huawei MIT source headers | completed:success |
+| 37666042688 | `c2d318a4c566` | pull_request | Credential-free benchmark path | completed:success |
+| 37666042675 | `c2d318a4c566` | pull_request | Fault assurance | completed:success |
+| 37666042661 | `c2d318a4c566` | pull_request | Formal assurance | completed:success |
+| 37666042659 | `c2d318a4c566` | pull_request | Cross-repository development broker qualification | completed:success |
+| 37666042656 | `c2d318a4c566` | pull_request | Repository quality | in_progress:- |
+| 37666042647 | `c2d318a4c566` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37666042643 | `c2d318a4c566` | pull_request | Emulated aarch64 portability | completed:success |
 | 37663805742 | `6c27783b228a` | pull_request | Huawei MIT source headers | completed:success |
 | 37663805733 | `6c27783b228a` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37663805621 | `6c27783b228a` | pull_request | Credential-free benchmark path | completed:success |
-| 37663805606 | `6c27783b228a` | pull_request | Cross-repository development broker qualification | completed:success |
-| 37663805601 | `6c27783b228a` | pull_request | Rust verification | completed:success |
-| 37663805576 | `6c27783b228a` | pull_request | Formal assurance | completed:success |
-| 37663805562 | `6c27783b228a` | pull_request | Repository quality | completed:success |
-| 37663805525 | `6c27783b228a` | pull_request | Hosted portability and native qualification | completed:success |
-| 37663805521 | `6c27783b228a` | pull_request | Emulated aarch64 portability | completed:success |
-| 37663805508 | `6c27783b228a` | pull_request | Fault assurance | completed:success |
-| 37662940469 | `0c4ba0c721d0` | pull_request | Cross-repository development broker qualification | completed:success |
-| 37662940467 | `0c4ba0c721d0` | pull_request | Formal assurance | completed:success |
