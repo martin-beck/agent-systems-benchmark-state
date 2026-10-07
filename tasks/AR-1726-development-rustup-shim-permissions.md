@@ -9,7 +9,7 @@
     "AR-1637"
   ],
   "id": "AR-1726",
-  "next_action": "Independent review PR #499 at exact head a3222ae105dcad1a1b8050289a3618c68e3920f8; repair findings, require hosted checks, then protected merge and exact paired post-merge lifecycle qualification.",
+  "next_action": "Repair PR #499 so accepted group-writable rustup toolchain executables remain bound to the validated Cargo and rustc objects through execution; retain the deterministic substitution regression, rerun exact gates, and obtain fresh independent review.",
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "a3222ae105dcad1a1b8050289a3618c68e3920f8",
@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-07T23:35:05+00:00",
+  "updated_at": "2026-10-07T23:35:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -196,3 +196,16 @@ review, protected merge, and terminal-green post-merge CI.
 
 - 2026-10-07T23:35:05+00:00: Recorded command exit 101; command argv SHA-256
   f33b585651edce4e4935cd9a0c3697094b012ddd3ac85938863f97e98d7162a2.
+
+- 2026-10-07T23:35:37+00:00: Independent exact-head review of
+  a3222ae105dcad1a1b8050289a3618c68e3920f8 found a blocking P1 validation-to-execution substitution
+  gap. validate_development_rustup_tool accepts group-write on selected toolchain directories and
+  returns only a PathBuf; materialize_development later executes Cargo and exports rustc by pathname
+  after remote discovery and checkout. A temporary deterministic regression resolved an accepted
+  fixture, replaced Cargo at that pathname, then observed execution output substituted rather than
+  validated. The temporary test was removed and the review worktree restored clean at tree
+  ca7cf753962ae05872ba4c9518a5fff09644c5ab. The actual host compatibility need includes 0775
+  user-owned Cargo shim and selected toolchain directories plus 0664 settings; current local primary
+  group has no additional listed member, but the contract must not depend on mutable group
+  membership. Stable code path remains unchanged; exact commit signature, author-matching DCO, diff
+  check, and all 14 exact-head hosted checks passed.
