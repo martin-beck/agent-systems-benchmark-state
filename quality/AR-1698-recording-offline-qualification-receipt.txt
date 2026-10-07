@@ -1,0 +1,45 @@
+AR-1698 current-head recording and strict-offline qualification receipt
+======================================================================
+
+Evidence class: contract-test (development-only, provider-free)
+Qualification date: 2026-10-07
+ASB source commit: d207cc4eded60f29a0ec72047f3fa11e7a9fa385
+ASB source tree: 78c6c1b5591ee2d397025e0b129297b0c8035b61
+
+The exact current ASB main tree was checked out in an isolated clean
+worktree.  The locked asb-cli test target passed 255 tests in total:
+
+  cargo test --locked -p asb-cli
+  - library: 222 passed
+  - capability contract: 13 passed
+  - CLI E2E: 3 passed
+  - guide examples: 5 passed
+  - package qualification fixture: 2 passed
+  - setup contract: 2 passed
+  - TUI lifecycle: 5 passed
+  - workflow transcript: 3 passed
+
+The deterministic recording acceptance runner also passed:
+
+  recording-campaign-runner.py
+  mode: development_local_mock
+  agents: 9 (opencode, opendesk, aider, codex, gemini, qwen_code, goose,
+           mini_swe, openhands)
+  fixture workloads: 27
+  selected-agent/workload tuples: 243
+  captures: 9
+  sealed cassettes: 243
+  offline_ready: true
+  runner-result SHA-256: 090ebe2b98dc6bd4ee216aa7a919f203597492fca4df5be61157ab5f2587a3b1
+  generated-output tree digest: 037e628e67a78bbaf9316ab265da555b5cd7ad20ecf2a85d1291dbdb30731b63
+
+The test and fixture matrix covers selected/all campaign expansion, exact
+tuple binding, cassette sealing and redaction, incomplete/duplicate or
+mismatched capture rejection, durable cleanup, strict offline replay with
+network denial, human output, and explicit --json output.  No provider
+credential was read and no raw model response, secret, local path, or
+response body is included in this receipt.  Authentication, signatures and
+key management remain warning-only for this development qualification.
+
+AR-1652 remains planned; this receipt does not assert that its command
+surface is complete.
