@@ -3734,11 +3734,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1613-repair |
 | Parent | None |
 | Children | None |
 | Summary | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. |
@@ -4705,4 +4705,3 @@
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
-| Parent | None |

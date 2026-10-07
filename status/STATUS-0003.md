@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| Parent | None |
 | Children | None |
 | Summary | Qualify selected/all workload recording, complete cassette sealing, and strict offline replay from the runner-owned route. |
 | Next action | No further action; exact post-merge runner-owned selected/all capture, sealing, generated-cassette strict replay, and denied-network evidence are recorded. |
@@ -1118,7 +1119,7 @@ flowchart LR
         AR_1609["AR-1609 - Done"]:::status_done
         AR_1611["AR-1611 - Done"]:::status_done
         AR_1612["AR-1612 - Done"]:::status_done
-        AR_1613["AR-1613 - Open"]:::status_open
+        AR_1613["AR-1613 - In progress"]:::status_in_progress
         AR_1614["AR-1614 - Done"]:::status_done
         AR_1615["AR-1615 - Done"]:::status_done
         AR_1617["AR-1617 - Done"]:::status_done
