@@ -8,6 +8,9 @@
   ],
   "id": "AR-1727",
   "next_action": "Promote and claim after coordinator reconciliation; repair the ASB development broker foreground-terminal handoff, add a controlling-PTY regression on the actual broker launch path, and retain bounded process-group cleanup.",
+  "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
+  "observed_dirty": 0,
+  "observed_head": "f535e3cb327b99b35bae2ddae9f0086b3c211303",
   "owner": "codex-ar1727-broker-foreground",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
@@ -16,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-07T22:56:52+00:00",
+  "updated_at": "2026-10-07T22:57:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
