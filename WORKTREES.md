@@ -626,6 +626,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1650-product` | `repair/ar1650-fanout-asb` | `d7882b3d91e7` | 0 | behind 108, ahead 0 |
 | `asb-ar1651-repair` | `repair/ar-1651-comparison` | `a8af8c8a3fe3` | 0 | behind 144, ahead 3 |
 | `asb-ar1652-audit` | `repair/ar-1652-all-workloads` | `6388a5d35915` | 0 | behind 109, ahead 0 |
+| `asb-ar1652-codex` | `codex/ar1652-record-replay-20261007` | `0c4ba0c721d0` | 0 | behind 0, ahead 1 |
 | `asb-ar1654-quickstart` | `ar-1654-quickstart` | `e5117123bb12` | 0 | behind 138, ahead 0 |
 | `asb-ar1656.MBtHI4` | `feature/ar-1656-provider-catalog` | `d7882b3d91e7` | 0 | behind 108, ahead 0 |
 | `asb-ar1659-materializer` | `DETACHED` | `45f5668197c4` | 0 | behind 113, ahead 0 |
