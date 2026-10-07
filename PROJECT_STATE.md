@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
-| #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | repair: restore protected-main signed provenance |
+| #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 
 ## Recent workflows
 
@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 37661012970 | `26bdd021b0d3` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 37661012923 | `26bdd021b0d3` | pull_request | Fault assurance | in_progress:- |
-| 37661012920 | `26bdd021b0d3` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37661012920 | `26bdd021b0d3` | pull_request | Hosted portability and native qualification | completed:success |
 | 37661012889 | `26bdd021b0d3` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37661012886 | `26bdd021b0d3` | pull_request | Rust verification | in_progress:- |
 | 37661012873 | `26bdd021b0d3` | pull_request | Repository quality | in_progress:- |
