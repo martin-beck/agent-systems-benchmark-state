@@ -30,8 +30,8 @@ Generated from local Git and GitHub. Do not edit.
 | 37673586957 | `10291b465bd3` | push | Fault assurance | completed:success |
 | 37673586907 | `10291b465bd3` | push | Hosted portability and native qualification | completed:success |
 | 37673586846 | `10291b465bd3` | push | Huawei MIT source headers | completed:success |
-| 37673586805 | `10291b465bd3` | push | Emulated aarch64 portability | in_progress:- |
-| 37673586792 | `10291b465bd3` | push | Rust verification | in_progress:- |
+| 37673586805 | `10291b465bd3` | push | Emulated aarch64 portability | completed:failure |
+| 37673586792 | `10291b465bd3` | push | Rust verification | completed:success |
 | 37672158442 | `6ddeec36d0ac` | pull_request | Formal assurance | completed:success |
 | 37672158432 | `6ddeec36d0ac` | pull_request | Fault assurance | completed:success |
 | 37672158419 | `6ddeec36d0ac` | pull_request | Huawei MIT source headers | completed:success |
