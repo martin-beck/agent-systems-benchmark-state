@@ -17,20 +17,22 @@ Generated from local Git and GitHub. Do not edit.
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
+| #492 | `codex-ar1698-runtime-authority@c5a7e64af8cd` | `main` | CLEAN | - | fix(replay): provide explicit development authority fixture |
+| #493 | `repair/ar-1721-tui-provider-router@8345a9890e5b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(tui): route live provider and dynamic catalog operations |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37631343580 | `4ceacaa7ea1f` | push | Formal assurance | completed:success |
-| 37631343510 | `4ceacaa7ea1f` | push | Huawei MIT source headers | completed:success |
-| 37631343326 | `4ceacaa7ea1f` | push | Repository quality | completed:failure |
-| 37631343198 | `4ceacaa7ea1f` | push | Hosted portability and native qualification | completed:success |
-| 37631343182 | `4ceacaa7ea1f` | push | Emulated aarch64 portability | completed:success |
-| 37631343158 | `4ceacaa7ea1f` | push | Credential-free benchmark path | completed:success |
-| 37631343034 | `4ceacaa7ea1f` | push | Cross-repository development broker qualification | completed:success |
-| 37631342968 | `4ceacaa7ea1f` | push | Rust verification | completed:failure |
-| 37631342961 | `4ceacaa7ea1f` | push | Fault assurance | completed:success |
-| 37620665235 | `9b27d5d9053e` | push | Credential-free benchmark path | completed:success |
-| 37620665231 | `9b27d5d9053e` | push | Formal assurance | completed:success |
-| 37620665138 | `9b27d5d9053e` | push | Emulated aarch64 portability | completed:success |
+| 37644930582 | `8345a9890e5b` | pull_request | Repository quality | in_progress:- |
+| 37644930524 | `8345a9890e5b` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37644930462 | `8345a9890e5b` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37644930435 | `8345a9890e5b` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37644930411 | `8345a9890e5b` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37644930406 | `8345a9890e5b` | pull_request | Fault assurance | in_progress:- |
+| 37644930405 | `8345a9890e5b` | pull_request | Huawei MIT source headers | completed:success |
+| 37644930344 | `8345a9890e5b` | pull_request | Formal assurance | in_progress:- |
+| 37644930329 | `8345a9890e5b` | pull_request | Rust verification | in_progress:- |
+| 37644930309 | `8345a9890e5b` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37644794945 | `c5a7e64af8cd` | workflow_dispatch | Rust verification | in_progress:- |
+| 37644790732 | `c5a7e64af8cd` | workflow_dispatch | Repository quality | completed:failure |

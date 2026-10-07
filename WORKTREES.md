@@ -632,9 +632,9 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1693-build.aDSB` | `DETACHED` | `0d241cabc674` | 0 | behind 87, ahead 0 |
 | `asb-ar1697-pair` | `DETACHED` | `ad43609b6782` | 0 | behind 76, ahead 0 |
 | `asb-ar1698-qual` | `DETACHED` | `d207cc4eded6` | 0 | behind 14, ahead 0 |
-| `asb-ar1698-runtime-authority` | `codex-ar1698-runtime-authority` | `4ceacaa7ea1f` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `crates/asb-runtime/src/launch_factory.rs` |
+| `asb-ar1698-runtime-authority` | `codex-ar1698-runtime-authority` | `c5a7e64af8cd` | 0 | behind 0, ahead 1 |
 | `asb-ar1701` | `feature/ar1701-live-record-replay` | `9f80593e1e90` | 0 | behind 69, ahead 1 |
+| `asb-ar1721-tui-provider-router` | `repair/ar-1721-tui-provider-router` | `8345a9890e5b` | 0 | behind 0, ahead 1 |
 | `asb-base-cov2` | `DETACHED` | `9c6a69a0f91c` | 2 | behind 237, ahead 0 |
 | changed files | - | - | - | `crates/asb-cli/default_2328882718243884030_0_991568.profraw`, `crates/asb-cli/default_2328882718243884030_0_991569.profraw` |
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 265, ahead 411 |
@@ -702,4 +702,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar1722-receipt-worker.ObeqHt` | `DETACHED` | `ac6557038cc3` | 0 | behind 7, ahead 0 |
 | `asb-ar1698-product-1791367157` | `DETACHED` | `d207cc4eded6` | 0 | behind 14, ahead 0 |
 | `asb-ar1698-qual.fE5S7P` | `DETACHED` | `d207cc4eded6` | 0 | behind 14, ahead 0 |
+| `asb-pr492-review.MtjSxm` | `DETACHED` | `c5a7e64af8cd` | 0 | behind 0, ahead 1 |
 | `policy-asb-review` | `codex/development-review-identity-asb` | `589e218f64a4` | 0 | behind 13, ahead 0 |
