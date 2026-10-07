@@ -542,7 +542,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | codex-ar1686-qualification | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | codex-state-reconcile-20261007 | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | PR #489 exact head dd10b075 is hosted-green; obtain an independent maintainer approval, then merge through the protected workflow and publish paired v1.15 qualification. |
+| P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | codex-state-reconcile-20261007 | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | PR #489 is superseded by the merged v1.15 ASB path; run current exact-main paired ControlServer/TUI qualification with independent worker review, then release or record a typed blocker. Same-account development merge is allowed after independent review; no authorized-maintainer approval is required. |
 
 ### Open (3)
 
