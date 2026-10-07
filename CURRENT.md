@@ -3,16 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1652](tasks/AR-1652.md): Selected-workload recording and offline replay command | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. | codex-ar1652-record-replay-20261007 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1652](tasks/AR-1652.md): Selected-workload recording and offline replay command | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. | - |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
 | P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -> bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. | - |
 
