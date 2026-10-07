@@ -14,11 +14,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-07T22:48:00+00:00",
+  "updated_at": "2026-10-07T22:54:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -46,3 +46,7 @@ PTY repair is outside this AR.
 Completion requires signed+DCO commits, focused and full relevant tests,
 independent exact-head review, protected merge, and terminal-green post-merge
 CI before the downstream asb-tui AR-1654 qualification is rerun.
+
+- 2026-10-07T22:54:25+00:00: AR-1590 is done; downstream TUI AR-1654 has exact evidence of the ASB
+  development child remaining in a background terminal group. Begin the bounded foreground-terminal
+  repair and real controlling-PTY regression.
