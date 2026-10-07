@@ -4,8 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-systems-benchmark` | `main` | `bd7d10d4a760` | 7 | behind 282, ahead 275 |
-| changed files | - | - | - | `crates/asb-cli/tests/guide_examples.rs`, `crates/asb-runtime/src/launch_factory.rs`, `docs/QUALITY_GATES.md`, `docs/workflows/record-replay.md`, `tools/quality/check_dco.py`, `tools/quality/test_failure_paths.py`, `ProvisionedControlServer` |
+| `agent-systems-benchmark` | `main` | `f535e3cb327b` | 0 | behind 0, ahead 0 |
 | `asb` | `DETACHED` | `62fda2f3417b` | 0 | behind 182, ahead 0 |
 | `asb-ar447.SMPvqN` | `repair-ar447-current` | `18a60c6e6539` | 0 | behind 145, ahead 7 |
 | `asb-base.22r1kh` | `DETACHED` | `96b40ec3f298` | 23 | behind 145, ahead 0 |
@@ -365,7 +364,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1608-config-persistence` | `feature/ar-1608-config-persistence` | `61a71bcfedfb` | 0 | behind 229, ahead 0 |
 | `agent-systems-benchmark-ar-1609` | `feature/ar-1609-coding-agent-adapter-catalog` | `bd40695b8e81` | 0 | behind 231, ahead 0 |
 | `agent-systems-benchmark-ar-1722-requalification` | `repair/ar-1722-pr487-requalification` | `9b7941cdd810` | 0 | behind 26, ahead 0 |
-| `agent-systems-benchmark-ar-1726-development-rustup-shim-permissions` | `repair/ar-1726-development-rustup-shim-permissions` | `f535e3cb327b` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1726-development-rustup-shim-permissions` | `repair/ar-1726-development-rustup-shim-permissions` | `f535e3cb327b` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/tui.rs` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 282, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 282, ahead 830 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 282, ahead 89 |
