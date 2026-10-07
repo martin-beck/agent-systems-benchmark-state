@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | TUI_ROUTE_UNAVAILABLE: exact TUI main d8668bd has no dynamic-catalog route; implement/promote AR-1720, then rerun installed asb tui install -> bare asb tui dynamic-catalog qualification against ASB v1.15 exact main. | codex_ar1721_tui_router |
+| P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants for live-provider and dynamic-catalog; then run installed asb tui install -> bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. | codex_ar1721_tui_router |
 
 ## Open
 
