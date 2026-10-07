@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1698](tasks/AR-1698.md): Current-head recording and strict offline qualification repair | Qualify the existing ASB selected/all recording, cassette sealing, and strict offline replay implementation at the current merged ASB head so AR-1652 can be reconciled truthfully. | Run the current-head record, record-campaign, cassette integrity, strict offline replay, incomplete coverage, redaction, and network-denial matrix; publish a signed receipt without changing AR-1652 status from stale evidence. | codex-ar1698-offline |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -86,6 +80,7 @@ Never edit this file directly.
 | P0 | [AR-1566](tasks/AR-1566.md): ASB development broker handoff integration | Wire ASB development launch through the authenticated asb-tui broker handoff seam. | Remain blocked as historical evidence; the active real bridge work is tracked by TUI AR-1587 and ASB AR-1590, which must complete before this boundary can be closed. | - |
 | P0 | [AR-1571](tasks/AR-1571.md): ASB development broker channel transport handoff | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. | Remain blocked as historical evidence; the active exact inherited-fd qualification is tracked by ASB AR-1590 after TUI AR-1587 completes the real bridge. | - |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Obtain independent review of quality/AR-1613-20261007-current-paired-journey.json and reconcile exact protected-main paired-head policy before any done/release claim. | - |
+| P0 | [AR-1698](tasks/AR-1698.md): Current-head recording and strict offline qualification repair | Qualify the existing ASB selected/all recording, cassette sealing, and strict offline replay implementation at the current merged ASB head so AR-1652 can be reconciled truthfully. | Run the current-head record, record-campaign, cassette integrity, strict offline replay, incomplete coverage, redaction, and network-denial matrix; publish a signed receipt without changing AR-1652 status from stale evidence. | - |
 | P0 | [AR-1722](tasks/AR-1722.md): PR #487 protected-main requalification and merge-settings recovery | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. | PR #490 exact head ac6557038 was independently reviewed and merged as 9b27d5d9. Verify post-merge ASB main, reconcile the corrected AR-1722 receipt, and release this incident only after exact-main post-merge evidence is recorded; do not require an authorized-maintainer review. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |
