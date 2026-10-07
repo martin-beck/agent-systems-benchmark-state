@@ -334,11 +334,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1718_isolation |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. |
@@ -1204,7 +1204,7 @@ flowchart LR
         AR_1715["AR-1715 - Planned"]:::status_planned
         AR_1716["AR-1716 - Planned"]:::status_planned
         AR_1717["AR-1717 - Planned"]:::status_planned
-        AR_1718["AR-1718 - In progress"]:::status_in_progress
+        AR_1718["AR-1718 - Open"]:::status_open
         AR_1719["AR-1719 - Done"]:::status_done
         AR_1720["AR-1720 - Done"]:::status_done
         AR_1721["AR-1721 - Open"]:::status_open
