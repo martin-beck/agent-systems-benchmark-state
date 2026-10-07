@@ -467,6 +467,90 @@
 | Summary | Give the ASB development broker child correct foreground process-group ownership on the caller&#x27;s controlling terminal without weakening descendant cleanup. |
 | Next action | Await independent exact-head review of PR #500 at 23138efcc45dc78232fdb13ebbf722f76f14824b; do not merge without review and required exact-head CI. |
 
+### AR-1728 — Freeze development cli2key contract and bridge
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. |
+| Next action | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
+
+### AR-1729 — Supervise cli2key sidecar and ephemeral key
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence. |
+| Next action | Promote after AR-1728; implement the runtime-owned sidecar lifecycle and hostile cleanup/privacy tests. |
+
+### AR-1730 — Add cli2key provider and selection contracts
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support. |
+| Next action | Promote after AR-1728; add protocol, control, catalog, selection, and launch contracts with fixture coverage. |
+
+### AR-1731 — Connect Codex adapter to cli2key backend
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter. |
+| Next action | Promote after AR-1729 and AR-1730; integrate the Codex adapter with exact launch binding and no fallback. |
+
+### AR-1732 — Integrate cli2key runs and sweeps
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence. |
+| Next action | Promote after AR-1731; integrate cli2key into run and sweep without parallel sidecars, fallback, or attribution drift. |
+
+### AR-1733 — Qualify and document cli2key development mode
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits. |
+| Next action | Promote after AR-1732; run independent fake and opt-in live qualification and publish user-facing setup/status/reset guidance. |
+
 
 ## Dependency graph
 
@@ -1253,6 +1337,12 @@ flowchart LR
         AR_1725["AR-1725 - Planned"]:::status_planned
         AR_1726["AR-1726 - Open"]:::status_open
         AR_1727["AR-1727 - In progress"]:::status_in_progress
+        AR_1728["AR-1728 - Open"]:::status_open
+        AR_1729["AR-1729 - Planned"]:::status_planned
+        AR_1730["AR-1730 - Planned"]:::status_planned
+        AR_1731["AR-1731 - Planned"]:::status_planned
+        AR_1732["AR-1732 - Planned"]:::status_planned
+        AR_1733["AR-1733 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3097,6 +3187,12 @@ flowchart LR
     AR_1723 --> AR_1724
     AR_1723 --> AR_1725
     AR_1724 --> AR_1725
+    AR_1728 --> AR_1729
+    AR_1728 --> AR_1730
+    AR_1729 --> AR_1731
+    AR_1730 --> AR_1731
+    AR_1731 --> AR_1732
+    AR_1732 --> AR_1733
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3286,12 +3382,3 @@ flowchart LR
 | [AR-1008](../tasks/AR-1008.md) | None | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) |
 | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md), [AR-1052](../tasks/AR-1052-tmux-server-authority-portability.md), [AR-1054](../tasks/AR-1054-tmux-socket-connect-completion.md), [AR-1056](../tasks/AR-1056-tmux-socket-connect-diagnostics.md), [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md), [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) |
 | [AR-1011](../tasks/AR-1011-tui-ux-quality.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1170](../tasks/AR-1170.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) |
-| [AR-1012](../tasks/AR-1012-tui-quality-assurance.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md) | [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) |
-| [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md) |
-| [AR-1014](../tasks/AR-1014-tui-measurement-selection.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1016](../tasks/AR-1016-measurement-integration-audit.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md) |
-| [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) | [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md), [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md) | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md) |
-| [AR-1016](../tasks/AR-1016-measurement-integration-audit.md) | [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) | None |
-| [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0851](../tasks/AR-0851-shared-workflow-coordinator.md) | [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md) |
-| [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
-| [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
-| [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
