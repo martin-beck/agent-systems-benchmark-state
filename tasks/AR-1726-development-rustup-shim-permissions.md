@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1726-development-rustup-shim-permissions",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T01:30:07+00:00",
   "depends_on": [
     "AR-1634",
     "AR-1636",
@@ -13,17 +13,17 @@
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "a3222ae105dcad1a1b8050289a3618c68e3920f8",
-  "owner": "",
+  "owner": "codex-ar1726-security-review",
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1726.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-07T23:16:41+00:00",
+  "updated_at": "2026-10-07T23:30:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -179,3 +179,5 @@ review, protected merge, and terminal-green post-merge CI.
   release preflight and focused gates pass; hosted checks are running. Independent reviewer must
   bind findings/approval to this head, then merge only after required checks and run exact paired
   post-merge install/status/bare-launch/upgrade/remove qualification.
+
+- 2026-10-07T23:30:07+00:00: Claimed by codex-ar1726-security-review.

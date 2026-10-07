@@ -558,20 +558,20 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | codex-ar1726-security-review | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Independent review PR #499 at exact head a3222ae105dcad1a1b8050289a3618c68e3920f8; repair findings, require hosted checks, then protected merge and exact paired post-merge lifecycle qualification. |
 | P0 | [AR-1727](../tasks/AR-1727-development-broker-foreground-terminal.md): Repair development broker foreground-terminal handoff | codex-ar1727-broker-foreground | Give the ASB development broker child correct foreground process-group ownership on the caller&#x27;s controlling terminal without weakening descendant cleanup. | Await independent exact-head review of PR #500 at 23138efcc45dc78232fdb13ebbf722f76f14824b; do not merge without review and required exact-head CI. |
 
-### Open (5)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1652](../tasks/AR-1652.md): Selected-workload recording and offline replay command | Unclaimed | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 | P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Unclaimed | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -&gt; bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. |
-| P0 | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | Unclaimed | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Independent review PR #499 at exact head a3222ae105dcad1a1b8050289a3618c68e3920f8; repair findings, require hosted checks, then protected merge and exact paired post-merge lifecycle qualification. |
 | P1 | [AR-1728](../tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Unclaimed | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
 
 ### Blocked (85)
