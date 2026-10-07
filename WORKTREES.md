@@ -705,5 +705,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar1722-receipt-worker.ObeqHt` | `DETACHED` | `ac6557038cc3` | 0 | behind 16, ahead 0 |
 | `asb-ar1698-product-1791367157` | `DETACHED` | `d207cc4eded6` | 0 | behind 23, ahead 0 |
 | `asb-ar1698-qual.fE5S7P` | `DETACHED` | `d207cc4eded6` | 0 | behind 23, ahead 0 |
+| `asb-main-verify.FEM1UX` | `DETACHED` | `856294553f2f` | 0 | behind 0, ahead 0 |
 | `asb-pr492-review.MtjSxm` | `DETACHED` | `c5a7e64af8cd` | 0 | behind 9, ahead 1 |
 | `policy-asb-review` | `codex/development-review-identity-asb` | `589e218f64a4` | 0 | behind 22, ahead 0 |
