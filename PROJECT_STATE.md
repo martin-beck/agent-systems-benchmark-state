@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `856294553f2f920f42fea1ee4ad3ea9e36e328e4`
-- Local origin/main: `0230e96ae5f4f2fa78f10ade56056b8fe166f956`
+- Local origin/main: `856294553f2f920f42fea1ee4ad3ea9e36e328e4`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -17,20 +17,21 @@ Generated from local Git and GitHub. Do not edit.
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
+| #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | repair: restore protected-main signed provenance |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37660181216 | `856294553f2f` | push | Rust verification | in_progress:- |
-| 37660181208 | `856294553f2f` | push | Hosted portability and native qualification | in_progress:- |
-| 37660181200 | `856294553f2f` | push | Repository quality | completed:failure |
-| 37660181176 | `856294553f2f` | push | Fault assurance | in_progress:- |
-| 37660181129 | `856294553f2f` | push | Huawei MIT source headers | completed:success |
-| 37660181115 | `856294553f2f` | push | Emulated aarch64 portability | in_progress:- |
-| 37660181098 | `856294553f2f` | push | Cross-repository development broker qualification | in_progress:- |
-| 37660180985 | `856294553f2f` | push | Credential-free benchmark path | in_progress:- |
-| 37660180974 | `856294553f2f` | push | Formal assurance | in_progress:- |
-| 37658894834 | `eb3b320e45fc` | pull_request | Hosted portability and native qualification | completed:success |
-| 37658894668 | `eb3b320e45fc` | pull_request | Rust verification | completed:success |
-| 37658894659 | `eb3b320e45fc` | pull_request | Fault assurance | completed:success |
+| 37661012970 | `26bdd021b0d3` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37661012923 | `26bdd021b0d3` | pull_request | Fault assurance | in_progress:- |
+| 37661012920 | `26bdd021b0d3` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37661012889 | `26bdd021b0d3` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37661012886 | `26bdd021b0d3` | pull_request | Rust verification | in_progress:- |
+| 37661012873 | `26bdd021b0d3` | pull_request | Repository quality | in_progress:- |
+| 37661012858 | `26bdd021b0d3` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37661012828 | `26bdd021b0d3` | pull_request | Huawei MIT source headers | completed:success |
+| 37661012784 | `26bdd021b0d3` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37661012707 | `26bdd021b0d3` | pull_request | Formal assurance | in_progress:- |
+| 37660181216 | `856294553f2f` | push | Rust verification | completed:failure |
+| 37660181208 | `856294553f2f` | push | Hosted portability and native qualification | completed:success |
