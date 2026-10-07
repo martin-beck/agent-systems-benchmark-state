@@ -647,7 +647,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-current-review` | `DETACHED` | `d178ef34747e` | 0 | behind 280, ahead 1311 |
 | `asb-dco-repair` | `repair/protected-main-dco-history` | `200edbbbc3f0` | 0 | behind 280, ahead 419 |
 | `asb-dynamic-workload-plan` | `codex/dynamic-workload-plan` | `5dde104c614d` | 0 | behind 280, ahead 1309 |
-| `asb-goose-repair` | `repair/ar-1730-goose-aarch64-diagnostic` | `24655ac5876e` | 0 | behind 0, ahead 1 |
+| `asb-goose-repair` | `repair/ar-1730-goose-aarch64-diagnostic` | `71b48057cd03` | 0 | behind 0, ahead 1 |
 | `asb-integrate-219` | `DETACHED` | `7ea3e001dffa` | 0 | behind 280, ahead 735 |
 | `asb-metrics-timeout` | `repair/metrics-timeout-stability` | `78ae48b71ccc` | 0 | behind 280, ahead 418 |
 | `asb-metrics-timeout-fix` | `repair/metrics-timeout-flake` | `0a7f6a192af9` | 0 | behind 280, ahead 425 |
