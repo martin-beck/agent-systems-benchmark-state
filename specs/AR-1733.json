@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1733.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "fake-e2e",
+      "description": "Credential-free CI covers setup, discovery, run, bounded sweep, results, comparison, cancellation, reset, and cleanup through public surfaces."
+    },
+    {
+      "id": "live-opt-in",
+      "description": "A separately authorized live Codex OAuth qualification records only redacted and digest-bound evidence."
+    },
+    {
+      "id": "fault-matrix",
+      "description": "Listener, substitution, key, response, timeout, crash, orphan, restart, concurrency, and redaction faults are exercised."
+    },
+    {
+      "id": "documentation",
+      "description": "User guidance clearly distinguishes the local key, upstream OAuth, quota/cost, reset/revocation, and development-only limitations."
+    }
+  ],
+  "definition_of_done": [
+    "Full fake qualification and fault matrix are terminal green.",
+    "Opt-in live evidence is either green and redacted or explicitly unavailable without blocking credential-free CI.",
+    "Independent review, exact-head checks, merge, and post-merge checks pass."
+  ],
+  "inputs": [
+    {
+      "id": "journey",
+      "description": "AR-1732 run and sweep integration."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "qualification",
+      "description": "Development-only cli2key qualification receipt and user documentation."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "git",
+    "gh",
+    "tools/handoffctl",
+    "credential-free-fakes",
+    "opt-in-live-test"
+  ],
+  "forbidden_tools": [
+    "secret-receipt",
+    "mandatory-live-ci",
+    "release-promotion",
+    "official-provider-claim"
+  ],
+  "required_evidence_classes": [
+    "journey",
+    "privacy",
+    "hosted"
+  ],
+  "gates": [
+    {
+      "id": "e2e",
+      "description": "The public credential-free journey is complete and reproducible."
+    },
+    {
+      "id": "privacy",
+      "description": "No generated key or OAuth material appears in any durable or diagnostic surface."
+    },
+    {
+      "id": "hosted",
+      "description": "Independent exact-head review and required pre/post-merge CI pass."
+    }
+  ]
+}

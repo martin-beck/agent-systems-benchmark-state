@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1732.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "run",
+      "description": "An explicit cli2key provider selection executes a normal ASB Codex benchmark run and produces typed development-live evidence."
+    },
+    {
+      "id": "sweep",
+      "description": "A bounded multi-point sweep reuses one supervised sidecar lifetime while binding every attempt and respecting concurrency limits."
+    },
+    {
+      "id": "failure-semantics",
+      "description": "Auth expiry, wrong key, 401, 429, drift, crash, timeout, cancellation, and uncertain effects are typed and never cause fallback."
+    },
+    {
+      "id": "measurement",
+      "description": "Sidecar queue/transport overhead is separated from agent execution latency and provenance remains explicit."
+    }
+  ],
+  "definition_of_done": [
+    "Credential-free fake-sidecar run and multi-point sweep pass.",
+    "Reports and comparisons retain exact provider/model/runtime provenance.",
+    "Independent review and exact-head/post-merge CI pass."
+  ],
+  "inputs": [
+    {
+      "id": "adapter",
+      "description": "AR-1731 exact Codex cli2key route."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "run-sweep",
+      "description": "Normal run and sweep support for explicit cli2key selections."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "git",
+    "gh",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "provider-fallback",
+    "unbounded-concurrency",
+    "uncertain-retry",
+    "production-claim"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "bounded-model",
+    "hosted"
+  ],
+  "gates": [
+    {
+      "id": "journey",
+      "description": "A full fake-sidecar run and bounded sweep complete through public CLI surfaces."
+    },
+    {
+      "id": "faults",
+      "description": "Concurrency and all typed provider/sidecar failures remain bounded and fail closed."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1729.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "fresh-key",
+      "description": "Each invocation receives a cryptographically random local client key with at least 256 bits of entropy and no reuse."
+    },
+    {
+      "id": "loopback-supervisor",
+      "description": "The exact pinned sidecar binds only to a validated kernel-selected loopback endpoint and is runtime-owned."
+    },
+    {
+      "id": "secret-boundary",
+      "description": "Keys and OAuth material never enter argv, observable logs, reports, manifests, environment dumps, or coordinator state."
+    },
+    {
+      "id": "bounded-cleanup",
+      "description": "Every success and failure path terminates and reaps the sidecar group and removes private staging."
+    }
+  ],
+  "definition_of_done": [
+    "Hostile lifecycle, listener, substitution, permission, cancellation, and redaction tests pass.",
+    "Independent review, exact-head CI, merge, and post-merge CI are green."
+  ],
+  "inputs": [
+    {
+      "id": "contract",
+      "description": "AR-1728 pinned cli2key bridge contract."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "sidecar-handle",
+      "description": "Runtime-owned endpoint and opaque ephemeral-key handle."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "git",
+    "gh",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "public-bind",
+    "secret-argv",
+    "secret-log",
+    "unbounded-child",
+    "host-network-agent"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "privacy",
+    "hosted"
+  ],
+  "gates": [
+    {
+      "id": "lifecycle",
+      "description": "Sidecar startup, readiness, use, cancellation, and cleanup remain bounded."
+    },
+    {
+      "id": "privacy",
+      "description": "Secret scanners and adversarial output tests find no credential disclosure."
+    }
+  ]
+}

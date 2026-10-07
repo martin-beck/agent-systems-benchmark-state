@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1730.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "provider-identity",
+      "description": "cli2key is a distinct development-only loopback Responses provider and is never represented as official OpenAI."
+    },
+    {
+      "id": "digest-binding",
+      "description": "Selection and launch bind catalog generation, discovered model roster, bridge/runtime/executable identities, and opaque credential generation."
+    },
+    {
+      "id": "agent-boundary",
+      "description": "Only independently qualified adapters are advertised; the initial contract includes Codex only."
+    },
+    {
+      "id": "fail-closed",
+      "description": "Stale discovery, endpoint drift, unsupported cells, and unknown fields fail before launch."
+    }
+  ],
+  "definition_of_done": [
+    "Protocol, schema, fixture, catalog, selection, and projection tests pass.",
+    "Independent exact-head review and required pre/post-merge CI pass."
+  ],
+  "inputs": [
+    {
+      "id": "contract",
+      "description": "AR-1728 cli2key contract and pinned bridge."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "provider-contract",
+      "description": "Digest-bound cli2key provider selection and launch identity."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "git",
+    "gh",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "openai-alias",
+    "unproven-agent",
+    "arbitrary-endpoint",
+    "production-readiness"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "mechanical",
+    "hosted"
+  ],
+  "gates": [
+    {
+      "id": "schema",
+      "description": "Canonical and hostile provider contracts validate fail-closed."
+    },
+    {
+      "id": "catalog",
+      "description": "Catalog and selection expose only the exact proven development cell."
+    }
+  ]
+}

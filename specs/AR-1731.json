@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1731.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "exact-projection",
+      "description": "Codex receives only the selected loopback endpoint, model, and invocation credential from the bound cli2key launch."
+    },
+    {
+      "id": "no-fallback",
+      "description": "Authentication, model, bridge, endpoint, or sidecar failure never falls back to another provider or ambient Codex defaults."
+    },
+    {
+      "id": "secret-safe",
+      "description": "The credential reaches only the final child boundary and remains absent from ordinary evidence and diagnostics."
+    },
+    {
+      "id": "single-agent",
+      "description": "The benchmark invokes Codex directly and never nests another agent behind Codex app-server."
+    }
+  ],
+  "definition_of_done": [
+    "Fake-sidecar success and hostile adapter tests pass.",
+    "Independent review and exact-head/post-merge CI are green."
+  ],
+  "inputs": [
+    {
+      "id": "sidecar",
+      "description": "AR-1729 runtime-owned sidecar handle."
+    },
+    {
+      "id": "provider",
+      "description": "AR-1730 cli2key selection and launch contract."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "codex-route",
+      "description": "Exact Codex Responses adapter route through cli2key."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "git",
+    "gh",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "ambient-auth",
+    "provider-fallback",
+    "nested-agent",
+    "secret-evidence"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "mechanical",
+    "hosted"
+  ],
+  "gates": [
+    {
+      "id": "adapter",
+      "description": "The exact bound fake-sidecar exchange succeeds and hostile drift/failure cases fail closed."
+    }
+  ]
+}
