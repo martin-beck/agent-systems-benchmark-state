@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | codex-ar1686-qualification |
-| P0 | [AR-1722](tasks/AR-1722.md): PR #487 protected-main requalification and merge-settings recovery | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. | Monitor PR #490 exact head 9b7941cdd810de1a948b0bfa632b8cfe649e748c until all 14 hosted checks are terminal green and obtain independent exact-head review. Keep GitHub settings and main unchanged until those gates pass. | codex-state-reconcile-20261007 |
+| P0 | [AR-1722](tasks/AR-1722.md): PR #487 protected-main requalification and merge-settings recovery | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. | PR #490 exact head ac6557038 was independently reviewed and merged as 9b27d5d9. Verify post-merge ASB main, reconcile the corrected AR-1722 receipt, and release this incident only after exact-main post-merge evidence is recorded; do not require an authorized-maintainer review. | codex-state-reconcile-20261007 |
 
 ## Open
 
