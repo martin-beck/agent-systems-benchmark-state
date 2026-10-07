@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-07T23:45:15+00:00",
+  "updated_at": "2026-10-07T23:46:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -198,3 +198,12 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-07T23:45:15+00:00: Recorded command exit 0; command argv SHA-256
   4e2ec95e86bbdfc43c8b630cb9dfe2bc66d915f0441d5685bba9470486aff196.
+
+- 2026-10-07T23:46:16+00:00: Repaired the P1 foreground race in the isolated PR #500 worktree:
+  assignment now blocks SIGTTOU, revalidates the captured caller foreground group immediately before
+  tcsetpgrp, restores the prior mask on all paths through an RAII guard, and restoration only
+  replaces the exact assigned child group or accepts an already-restored caller group. A
+  deterministic real controlling-PTY launch regression changes foreground ownership between capture
+  and assignment, verifies typed development_terminal_unavailable, preserves the intervening owner,
+  reaps the launched group, and removes broker state. The new test and Clippy -D warnings pass;
+  continue full relevant gates, signed commit, push, and fresh independent review.
