@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1726-development-rustup-shim-permissions",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T01:40:38+00:00",
   "depends_on": [
     "AR-1634",
     "AR-1636",
@@ -13,17 +13,17 @@
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "a3222ae105dcad1a1b8050289a3618c68e3920f8",
-  "owner": "",
+  "owner": "codex-ar1726-pr499-repair",
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1726.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-07T23:38:28+00:00",
+  "updated_at": "2026-10-07T23:40:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -219,3 +219,5 @@ review, protected merge, and terminal-green post-merge CI.
   deterministic post-validation replacement regression. Existing exact-head CI, signature, DCO,
   stable boundary, and warning behavior are otherwise acceptable. Fresh independent review is
   required after the head changes.
+
+- 2026-10-07T23:40:38+00:00: Claimed by codex-ar1726-pr499-repair.
