@@ -632,6 +632,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1693-build.aDSB` | `DETACHED` | `0d241cabc674` | 0 | behind 89, ahead 0 |
 | `asb-ar1697-pair` | `DETACHED` | `ad43609b6782` | 0 | behind 78, ahead 0 |
 | `asb-ar1698-qual` | `DETACHED` | `d207cc4eded6` | 0 | behind 16, ahead 0 |
+| `asb-ar1698-qualification` | `DETACHED` | `c9f86739e45c` | 0 | behind 0, ahead 2 |
 | `asb-ar1698-runtime-authority` | `codex-ar1698-runtime-authority` | `c5a7e64af8cd` | 0 | behind 2, ahead 1 |
 | `asb-ar1701` | `feature/ar1701-live-record-replay` | `9f80593e1e90` | 0 | behind 71, ahead 1 |
 | `asb-ar1721-tui-provider-router` | `repair/ar-1721-tui-provider-router` | `8345a9890e5b` | 0 | behind 1, ahead 0 |
@@ -685,8 +686,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-pr472-review` | `DETACHED` | `8bbdd5c662eb` | 0 | behind 71, ahead 28 |
 | `asb-pr472-review-906e` | `repair/pr472-live-errors` | `92b9bb39536d` | 0 | behind 71, ahead 36 |
 | `asb-pr482-coverage` | `DETACHED` | `441874f9efd4` | 0 | behind 49, ahead 0 |
-| `asb-pr492-review` | `repair/pr492-coverage-cleanup` | `c9f86739e45c` | 24 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-cli/default_18030454848137907808_0_2262316.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262319.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262399.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262776.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262777.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262794.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262798.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262799.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262800.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262802.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262804.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262807.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262809.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262811.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262812.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262815.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262816.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262818.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262820.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262821.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262823.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262825.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262827.profraw`, `crates/asb-cli/default_18030454848137907808_0_2262828.profraw` |
+| `asb-pr492-review` | `repair/pr492-coverage-cleanup` | `358bd9a2816f` | 0 | behind 0, ahead 4 |
 | `asb-provider-registry` | `feature/provider-profile-upsert` | `ff149cb96c05` | 0 | behind 267, ahead 839 |
 | `asb-provider-registry-producer` | `feature/provider-profile-registry-producer` | `fde043688794` | 0 | behind 267, ahead 841 |
 | `asb-qual-ar1345` | `DETACHED` | `852dcb14f9c1` | 0 | behind 267, ahead 1327 |
