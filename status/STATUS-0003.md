@@ -1119,7 +1119,7 @@ flowchart LR
         AR_1609["AR-1609 - Done"]:::status_done
         AR_1611["AR-1611 - Done"]:::status_done
         AR_1612["AR-1612 - Done"]:::status_done
-        AR_1613["AR-1613 - In progress"]:::status_in_progress
+        AR_1613["AR-1613 - Blocked"]:::status_blocked
         AR_1614["AR-1614 - Done"]:::status_done
         AR_1615["AR-1615 - Done"]:::status_done
         AR_1617["AR-1617 - Done"]:::status_done
