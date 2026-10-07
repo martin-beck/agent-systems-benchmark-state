@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1727-development-broker-foreground-terminal",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T01:38:17+00:00",
   "depends_on": [
     "AR-1590"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "23138efcc45dc78232fdb13ebbf722f76f14824b",
-  "owner": "",
+  "owner": "codex-ar1727-p1-repair",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-07T23:36:49+00:00",
+  "updated_at": "2026-10-07T23:38:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -169,3 +169,5 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
   changed-foreground/SIGTTOU race. PR #500 must be repaired and re-reviewed at its new exact head;
   current success and development suites plus hosted CI are green but do not cover terminal
   ownership changing between capture and assignment.
+
+- 2026-10-07T23:38:17+00:00: Claimed by codex-ar1727-p1-repair.
