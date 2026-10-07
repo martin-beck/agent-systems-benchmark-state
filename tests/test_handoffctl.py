@@ -163,7 +163,7 @@ class HandoffTest(unittest.TestCase):
             json.dumps(
                 {
                     "schema_version": 1,
-                    "project_id": "11111111" "-1111-4111-8111-111111111111",
+                    "project_id": "11111111-1111-4111-8111-111111111111",
                     "project_name": "test-project",
                     "project_title": "Test Project",
                     "status_view": True,
@@ -175,7 +175,7 @@ class HandoffTest(unittest.TestCase):
             json.dumps(
                 {
                     "schema_version": 1,
-                    "project_id": "11111111" "-1111-4111-8111-111111111111",
+                    "project_id": "11111111-1111-4111-8111-111111111111",
                     "state_repository": "owner/state",
                     "product_repository": "owner/product",
                 }
@@ -266,14 +266,14 @@ class HandoffTest(unittest.TestCase):
             patch.object(
                 CORE.uuid,
                 "uuid4",
-                return_value=CORE.uuid.UUID("33333333" "-3333-4333-8333-333333333333"),
+                return_value=CORE.uuid.UUID("33333333-3333-4333-8333-333333333333"),
             ),
             patch("builtins.print"),
         ):
             run.return_value = subprocess.CompletedProcess([], 0, str(self.root) + "\n", "")
             CORE.cmd_init(args)
         self.assertEqual(
-            "33333333" "-3333-4333-8333-333333333333", CORE.project_settings()["project_id"]
+            "33333333-3333-4333-8333-333333333333", CORE.project_settings()["project_id"]
         )
         with self.assertRaisesRegex(RuntimeError, "already initialized"):
             CORE.cmd_init(args)
@@ -286,7 +286,7 @@ class HandoffTest(unittest.TestCase):
             [],
             {**valid_settings, "schema_version": 2},
             {**valid_settings, "project_id": "bad"},
-            {**valid_settings, "project_id": "11111111" "-1111-1111-8111-111111111111"},
+            {**valid_settings, "project_id": "11111111-1111-1111-8111-111111111111"},
             {**valid_settings, "project_name": "Bad Name"},
             {**valid_settings, "project_title": ""},
             {**valid_settings, "status_view": "yes"},
@@ -301,7 +301,7 @@ class HandoffTest(unittest.TestCase):
             {},
             {**valid_binding, "schema_version": 2},
             {**valid_binding, "project_id": "bad"},
-            {**valid_binding, "project_id": "11111111" "-1111-1111-8111-111111111111"},
+            {**valid_binding, "project_id": "11111111-1111-1111-8111-111111111111"},
         ):
             with self.subTest(binding=value), self.assertRaises(RuntimeError):
                 CORE.BINDING.write_text(json.dumps(value))
@@ -1689,7 +1689,7 @@ class HandoffTest(unittest.TestCase):
         binary.write_bytes(b"\\xff")
         large = self.root / "large.md"
         large.write_text("x" * 200001)
-        sample_uuid = "33333333" "-3333-4333-8333-333333333333"
+        sample_uuid = "33333333-3333-4333-8333-333333333333"
         for relative in (
             Path("tools/handoffctl.py"),
             Path("tests/test_handoffctl.py"),
