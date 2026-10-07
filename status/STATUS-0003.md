@@ -451,7 +451,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. |
-| Next action | Promote after dependency verification; implement the bounded development-only permission exception, focused hostile-path tests, and exact paired installed lifecycle qualification. |
+| Next action | Independent review PR #499 at exact head a3222ae105dcad1a1b8050289a3618c68e3920f8; repair findings, require hosted checks, then protected merge and exact paired post-merge lifecycle qualification. |
 
 ### AR-1727 — Repair development broker foreground-terminal handoff
 

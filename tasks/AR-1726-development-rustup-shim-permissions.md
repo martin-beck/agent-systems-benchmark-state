@@ -9,7 +9,7 @@
     "AR-1637"
   ],
   "id": "AR-1726",
-  "next_action": "Promote after dependency verification; implement the bounded development-only permission exception, focused hostile-path tests, and exact paired installed lifecycle qualification.",
+  "next_action": "Independent review PR #499 at exact head a3222ae105dcad1a1b8050289a3618c68e3920f8; repair findings, require hosted checks, then protected merge and exact paired post-merge lifecycle qualification.",
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "a3222ae105dcad1a1b8050289a3618c68e3920f8",
@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-07T23:15:52+00:00",
+  "updated_at": "2026-10-07T23:16:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -165,3 +165,11 @@ review, protected merge, and terminal-green post-merge CI.
 
 - 2026-10-07T23:15:52+00:00: Recorded command exit 0; command argv SHA-256
   ee1741888df0ec254dd681a0d0b13eea18a9d56c2671fba52cc75e9c64522c9d.
+
+- 2026-10-07T23:16:29+00:00: Implemented and pushed signed DCO head
+  a3222ae105dcad1a1b8050289a3618c68e3920f8 tree ca7cf753962ae05872ba4c9518a5fff09644c5ab; PR #499
+  open. Focused rustup tests 8/8, exact-host release preflight human/JSON warning, fmt, workspace
+  Clippy, rustdoc, release build, and asb-cli 228/228 passed. Full workspace had one unrelated
+  parallel runtime scratch-root collision that passes isolated. Paired
+  install/status/launch/upgrade/remove remains post-merge because source identity must equal remote
+  main.

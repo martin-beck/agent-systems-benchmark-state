@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1726](tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Promote after dependency verification; implement the bounded development-only permission exception, focused hostile-path tests, and exact paired installed lifecycle qualification. | codex-ar1726-rustup |
+| P0 | [AR-1726](tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Independent review PR #499 at exact head a3222ae105dcad1a1b8050289a3618c68e3920f8; repair findings, require hosted checks, then protected merge and exact paired post-merge lifecycle qualification. | codex-ar1726-rustup |
 | P0 | [AR-1727](tasks/AR-1727-development-broker-foreground-terminal.md): Repair development broker foreground-terminal handoff | Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup. | Promote and claim after coordinator reconciliation; repair the ASB development broker foreground-terminal handoff, add a controlling-PTY regression on the actual broker launch path, and retain bounded process-group cleanup. | codex-ar1727-broker-foreground |
 
 ## Open
