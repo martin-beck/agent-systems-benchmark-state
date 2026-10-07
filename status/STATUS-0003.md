@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
@@ -400,7 +399,7 @@
 | Summary | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. |
 | Next action | PR #490 exact head ac6557038 was independently reviewed and merged as 9b27d5d9. Verify post-merge ASB main, reconcile the corrected AR-1722 receipt, and release this incident only after exact-main post-merge evidence is recorded; do not require an authorized-maintainer review. |
 
-### AR-1723 — Make easy run online by default
+### AR-1723 — Make the easy run default to online provider execution
 
 | Field | Value |
 | --- | --- |
@@ -411,10 +410,10 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Make asb easy run execute the configured live provider by default while retaining an explicit local/mock option. |
-| Next action | Promote after dependency verification; implement default-online easy run and explicit --local-mock behavior with fail-closed credential and selection checks. |
+| Summary | Make the shortest user-facing run use the configured live provider by default while keeping local mock explicit and development authentication warning-only. |
+| Next action | Promote after the live runner and provider qualification dependencies are current; implement and qualify the default-online easy run. |
 
-### AR-1724 — Make easy sweep online by default
+### AR-1724 — Make the easy sweep default to online provider execution
 
 | Field | Value |
 | --- | --- |
@@ -425,8 +424,22 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Make asb easy sweep execute the configured live provider by default while retaining an explicit local/mock option. |
-| Next action | Promote after dependency verification; implement default-online easy sweep and explicit --local-mock behavior with bounded fan-out, cancellation, and no-fallback checks. |
+| Summary | Extend the simple default-online journey to bounded selected/all agent and workload sweeps with explicit mock and replay alternatives. |
+| Next action | Promote after AR-1723 and recording/comparison dependencies are current; implement and qualify the bounded online sweep. |
+
+### AR-1725 — Document two-agent OpenRouter and TUI quickstarts
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Publish a linked, executable tutorial for two-agent OpenRouter benchmarking, ASB TUI workflows, dependencies, and per-distribution installation. |
+| Next action | Promote after coordinator integrity repair and dependency verification; audit existing docs, add the CLI/TUI tutorial and platform install matrix, then qualify links, commands, and visual evidence. |
 
 
 ## Dependency graph
@@ -1175,7 +1188,7 @@ flowchart LR
         AR_1683["AR-1683 - Planned"]:::status_planned
         AR_1684["AR-1684 - Planned"]:::status_planned
         AR_1685["AR-1685 - Done"]:::status_done
-        AR_1686["AR-1686 - In progress"]:::status_in_progress
+        AR_1686["AR-1686 - Open"]:::status_open
         AR_1687["AR-1687 - Done"]:::status_done
         AR_1688["AR-1688 - Done"]:::status_done
         AR_1689["AR-1689 - Planned"]:::status_planned
@@ -1211,6 +1224,7 @@ flowchart LR
         AR_1722["AR-1722 - Open"]:::status_open
         AR_1723["AR-1723 - Planned"]:::status_planned
         AR_1724["AR-1724 - Planned"]:::status_planned
+        AR_1725["AR-1725 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2190,8 +2204,6 @@ flowchart LR
     AR_1329 --> AR_1330
     AR_1329 --> AR_1333
     AR_1329 --> AR_1700
-    AR_1329 --> AR_1723
-    AR_1329 --> AR_1724
     AR_1330 --> AR_1463
     AR_1330 --> AR_1496
     AR_1331 --> AR_1332
@@ -2201,17 +2213,14 @@ flowchart LR
     AR_1333 --> AR_1335
     AR_1333 --> AR_1336
     AR_1333 --> AR_1420
-    AR_1333 --> AR_1724
     AR_1334 --> AR_1335
     AR_1334 --> AR_1336
     AR_1335 --> AR_1336
-    AR_1336 --> AR_1723
-    AR_1336 --> AR_1724
+    AR_1336 --> AR_1725
     AR_1337 --> AR_1397
     AR_1337 --> AR_1398
     AR_1338 --> AR_1526
-    AR_1338 --> AR_1723
-    AR_1338 --> AR_1724
+    AR_1338 --> AR_1725
     AR_1339 --> AR_1340
     AR_1339 --> AR_1341
     AR_1339 --> AR_1342
@@ -2487,8 +2496,6 @@ flowchart LR
     AR_1436 --> AR_1437
     AR_1436 --> AR_1440
     AR_1436 --> AR_1442
-    AR_1436 --> AR_1723
-    AR_1436 --> AR_1724
     AR_1437 --> AR_1440
     AR_1437 --> AR_1443
     AR_1437 --> AR_1447
@@ -2815,8 +2822,6 @@ flowchart LR
     AR_1607 --> AR_1609
     AR_1607 --> AR_1642
     AR_1607 --> AR_1656
-    AR_1607 --> AR_1723
-    AR_1607 --> AR_1724
     AR_1608 --> AR_1603
     AR_1608 --> AR_1612
     AR_1608 --> AR_1641
@@ -2908,13 +2913,13 @@ flowchart LR
     AR_1641 --> AR_1643
     AR_1641 --> AR_1645
     AR_1641 --> AR_1657
+    AR_1641 --> AR_1725
     AR_1642 --> AR_1613
     AR_1642 --> AR_1622
     AR_1642 --> AR_1643
     AR_1642 --> AR_1645
     AR_1642 --> AR_1646
-    AR_1642 --> AR_1723
-    AR_1642 --> AR_1724
+    AR_1642 --> AR_1725
     AR_1643 --> AR_1653
     AR_1643 --> AR_1654
     AR_1644 --> AR_1650
@@ -2938,7 +2943,6 @@ flowchart LR
     AR_1648 --> AR_1650
     AR_1648 --> AR_1686
     AR_1648 --> AR_1695
-    AR_1648 --> AR_1724
     AR_1649 --> AR_1647
     AR_1649 --> AR_1651
     AR_1649 --> AR_1686
@@ -3052,9 +3056,15 @@ flowchart LR
     AR_1709 --> AR_1715
     AR_1711 --> AR_1712
     AR_1711 --> AR_1715
+    AR_1711 --> AR_1723
     AR_1712 --> AR_1716
     AR_1712 --> AR_1717
+    AR_1712 --> AR_1724
+    AR_1715 --> AR_1723
     AR_1719 --> AR_1721
+    AR_1723 --> AR_1724
+    AR_1723 --> AR_1725
+    AR_1724 --> AR_1725
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3255,4 +3265,3 @@ flowchart LR
 | [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
 | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md) |
 | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) |
-| [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-0904](../tasks/AR-0904-contract-consistency.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md), [AR-1038](../tasks/AR-1038-capability-coverage-sink.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) |
