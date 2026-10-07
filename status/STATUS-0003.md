@@ -439,6 +439,20 @@
 | Summary | Publish a linked, executable tutorial for two-agent OpenRouter benchmarking, ASB TUI workflows, dependencies, and per-distribution installation. |
 | Next action | Promote after coordinator integrity repair and dependency verification; audit existing docs, add the CLI/TUI tutorial and platform install matrix, then qualify links, commands, and visual evidence. |
 
+### AR-1726 — Allow user-owned group-writable rustup shim in development
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. |
+| Next action | Promote after dependency verification; implement the bounded development-only permission exception, focused hostile-path tests, and exact paired installed lifecycle qualification. |
+
 
 ## Dependency graph
 
@@ -1223,6 +1237,7 @@ flowchart LR
         AR_1723["AR-1723 - Planned"]:::status_planned
         AR_1724["AR-1724 - Planned"]:::status_planned
         AR_1725["AR-1725 - Planned"]:::status_planned
+        AR_1726["AR-1726 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2888,6 +2903,7 @@ flowchart LR
     AR_1634 --> AR_1632
     AR_1634 --> AR_1635
     AR_1634 --> AR_1636
+    AR_1634 --> AR_1726
     AR_1635 --> AR_1615
     AR_1635 --> AR_1632
     AR_1635 --> AR_1636
@@ -2895,9 +2911,11 @@ flowchart LR
     AR_1636 --> AR_1632
     AR_1636 --> AR_1637
     AR_1636 --> AR_1638
+    AR_1636 --> AR_1726
     AR_1637 --> AR_1615
     AR_1637 --> AR_1632
     AR_1637 --> AR_1638
+    AR_1637 --> AR_1726
     AR_1638 --> AR_1615
     AR_1638 --> AR_1632
     AR_1638 --> AR_1639
@@ -3262,4 +3280,3 @@ flowchart LR
 | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
 | [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
 | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md) |
-| [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) |
