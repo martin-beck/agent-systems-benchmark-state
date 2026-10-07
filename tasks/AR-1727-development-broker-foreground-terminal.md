@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1727-development-broker-foreground-terminal",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T01:31:36+00:00",
   "depends_on": [
     "AR-1590"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "23138efcc45dc78232fdb13ebbf722f76f14824b",
-  "owner": "",
+  "owner": "codex-ar1727-independent-review",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-07T23:30:13+00:00",
+  "updated_at": "2026-10-07T23:31:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -134,3 +134,5 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 - 2026-10-07T23:30:13+00:00: Implementation worker stopped after publishing PR #500 exact head
   23138efcc45dc78232fdb13ebbf722f76f14824b; release the author lease so a distinct independent
   reviewer can claim it.
+
+- 2026-10-07T23:31:36+00:00: Claimed by codex-ar1727-independent-review.
