@@ -45,7 +45,7 @@
       "source": "tests/test_checkpoint_records.py"
     },
     "tests/test_handoffctl.py": {
-      "sha256": "8b453fc3a05d0cfbe7d93209c4b98558899a90351fca1947c089fb84ffbe4537",
+      "sha256": "aff3fa4a2b6f20099ec8a107dfcbd983888043211a1b9cb14c1eb5f296b6886f",
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_hierarchy.py": {
@@ -81,7 +81,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "3f9cc3c9aea8e1b364bbc92dd7d754cbb523b7b663ed6c0da8e76f0c7c89fa4b",
+      "sha256": "90657e041f8628432902720199ea0d317c7b2def344bd2c813e338419a27b771",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -149,7 +149,7 @@
       "source": "tools/status_renderer.py"
     },
     "tools/task_spec.py": {
-      "sha256": "6a8c47665757b680ccfcba3b8a8ca3aa5e4de50c687edafcadd40c040227d4f4",
+      "sha256": "a4bcaf8bdf7d9f91d612d960993d8a35ff74d63776a0aaf02eb3672da1556930",
       "source": "tools/task_spec.py"
     },
     "tools/upgrade_authority.py": {
@@ -179,8 +179,8 @@
   },
   "schema_version": 1,
   "upstream": {
-    "commit": "ae5bf94a9c1c858452ac076df143cd52a334eb66",
+    "commit": "1e77a620d6bde769dd30db786c92e5ee71704405",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
-    "version": "v0.3.54"
+    "version": "v0.3.57"
   }
 }

@@ -237,7 +237,7 @@ type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
-COORDINATOR_VERSION = "0.3.54"
+COORDINATOR_VERSION = "0.3.57"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -852,24 +852,23 @@ def project_scan() -> State:
     settings = config()
     base = Path(settings["projects_root"])
     repo = base / settings["product_worktree"]
-    paths: list[Path] = []
-    for checkout in (repo, ROOT):
+
+    def listed_worktrees(checkout: Path) -> list[Path]:
         raw = run(["git", "-C", str(checkout), "worktree", "list", "--porcelain"]).stdout
-        for line in raw.splitlines():
-            if line.startswith("worktree "):
-                path = Path(line[9:])
-                if path not in paths:
-                    paths.append(path)
+        return [Path(line[9:]) for line in raw.splitlines() if line.startswith("worktree ")]
+
+    # The coordinator repository may have many linked worker checkouts. Their
+    # relationship to the coordinator's origin/main changes whenever state is
+    # committed, so including them makes the generated live projections stale
+    # after every coordinator update. Keep all product-repository worktrees,
+    # but exclude every checkout owned by the coordinator repository.
+    coordinator_paths = {path.resolve() for path in listed_worktrees(ROOT)}
+    paths: list[Path] = []
+    for path in listed_worktrees(repo):
+        if path.resolve() not in coordinator_paths and path not in paths:
+            paths.append(path)
     worktrees = []
     for path in paths:
-        # The coordinator checkout is the repository being reconciled. Its
-        # HEAD necessarily changes when reconcile commits generated views, so
-        # recording this self-referential checkout would make both the live
-        # inventory and any projection containing it stale immediately after
-        # every successful reconcile. Linked coordinator worktrees remain
-        # observable; exclude only this checkout.
-        if path.resolve() == ROOT.resolve():
-            continue
         head = run(["git", "-C", str(path), "rev-parse", "HEAD"]).stdout.strip()
         branch = (
             run(

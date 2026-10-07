@@ -1658,8 +1658,10 @@ class HandoffTest(unittest.TestCase):
     def test_project_scan_covers_dirty_and_detached_worktrees(self) -> None:  # noqa: C901
         product = self.root / "agent-systems-benchmark"
         second = self.root / "agent-systems-benchmark-two"
+        state_task = self.root / "state-task"
         product.mkdir()
         second.mkdir()
+        state_task.mkdir()
         CORE.CONFIG.parent.mkdir()
         CORE.CONFIG.write_text(
             json.dumps(
@@ -1676,7 +1678,11 @@ class HandoffTest(unittest.TestCase):
             stdout = ""
             returncode = 0
             if "worktree list" in joined:
-                stdout = f"worktree {product}\n\nworktree {second}\n"
+                checkout = args[args.index("-C") + 1]
+                if checkout == str(CORE.ROOT):
+                    stdout = f"worktree {CORE.ROOT}\n\nworktree {state_task}\n"
+                else:
+                    stdout = f"worktree {product}\n\nworktree {second}\n"
             elif "symbolic-ref" in joined and str(second) in joined:
                 returncode = 1
             elif "symbolic-ref" in joined:
@@ -1706,7 +1712,7 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual(1, state["worktrees"][0]["dirty"])
         self.assertEqual("DETACHED", state["worktrees"][1]["branch"])
 
-    def test_project_scan_includes_bound_state_worktrees(self) -> None:
+    def test_project_scan_excludes_all_coordinator_worktrees(self) -> None:
         product = self.root / "product"
         state_task = self.root / "state-task"
         product.mkdir()
@@ -1746,7 +1752,7 @@ class HandoffTest(unittest.TestCase):
         with patch.object(CORE, "run", side_effect=fake_run):
             state = CORE.project_scan()
         self.assertEqual(
-            {product.name, state_task.name},
+            {product.name},
             {item["key"] for item in state["worktrees"]},
         )
 
