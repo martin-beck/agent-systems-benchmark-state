@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1693",
+  "classification": "development/mock",
+  "network": {
+    "install_materialization": "allowed",
+    "benchmark_and_replay": "denied"
+  },
+  "credentials": "none",
+  "selection": {
+    "channel": "dev",
+    "provider": "fixture",
+    "auth": "development_fixture",
+    "agent": "opencode",
+    "model": "fixture-model",
+    "cassette": "strict-replay-cassette",
+    "replay": "offline"
+  },
+  "routes": {
+    "install": {
+      "schema_version": 1,
+      "classification": "development_only",
+      "development_only": true,
+      "channel": "dev",
+      "ok": true,
+      "code": "development_installed",
+      "installed": true,
+      "verified": true,
+      "source_commit": "eb9a483cd8cc000ae4002f3c486af988f1797dbd",
+      "source_tree": "1fad07e4de00ec475276f74e669bc4a7d9aa357d",
+      "executable_sha256": "32166b4e3101545c78ec20f86cdc28702adee4dc9e9666aebf74af5b2d236071",
+      "asb_source_commit": "dd10b075c065a5a5aef6062c7d9a6939a5a029a0",
+      "asb_source_tree": "18e85911d593a8cc70ebcbefee91ba0d87c63ea2",
+      "channel_manifest_sha256": "1b30e4c5620fab685d44a5019c6eab3f3ca60aada680ab59333fd8b14e391d28"
+    },
+    "status": {
+      "schema_version": 1,
+      "classification": "development_only",
+      "development_only": true,
+      "channel": "dev",
+      "ok": true,
+      "code": "development_installed",
+      "installed": true,
+      "verified": true,
+      "source_commit": "eb9a483cd8cc000ae4002f3c486af988f1797dbd",
+      "source_tree": "1fad07e4de00ec475276f74e669bc4a7d9aa357d",
+      "executable_sha256": "32166b4e3101545c78ec20f86cdc28702adee4dc9e9666aebf74af5b2d236071",
+      "asb_source_commit": "dd10b075c065a5a5aef6062c7d9a6939a5a029a0",
+      "asb_source_tree": "18e85911d593a8cc70ebcbefee91ba0d87c63ea2",
+      "channel_manifest_sha256": "1b30e4c5620fab685d44a5019c6eab3f3ca60aada680ab59333fd8b14e391d28"
+    },
+    "restart_status": {
+      "schema_version": 1,
+      "classification": "development_only",
+      "development_only": true,
+      "channel": "dev",
+      "ok": true,
+      "code": "development_installed",
+      "installed": true,
+      "verified": true,
+      "source_commit": "eb9a483cd8cc000ae4002f3c486af988f1797dbd",
+      "source_tree": "1fad07e4de00ec475276f74e669bc4a7d9aa357d",
+      "executable_sha256": "32166b4e3101545c78ec20f86cdc28702adee4dc9e9666aebf74af5b2d236071",
+      "asb_source_commit": "dd10b075c065a5a5aef6062c7d9a6939a5a029a0",
+      "asb_source_tree": "18e85911d593a8cc70ebcbefee91ba0d87c63ea2",
+      "channel_manifest_sha256": "1b30e4c5620fab685d44a5019c6eab3f3ca60aada680ab59333fd8b14e391d28"
+    },
+    "launch": {
+      "schema_version": 1,
+      "classification": "development_only",
+      "development_only": true,
+      "channel": "dev",
+      "ok": true,
+      "code": "development_launch_ready",
+      "installed": true,
+      "verified": true,
+      "source_commit": "eb9a483cd8cc000ae4002f3c486af988f1797dbd",
+      "source_tree": "1fad07e4de00ec475276f74e669bc4a7d9aa357d",
+      "executable_sha256": "32166b4e3101545c78ec20f86cdc28702adee4dc9e9666aebf74af5b2d236071",
+      "asb_source_commit": "dd10b075c065a5a5aef6062c7d9a6939a5a029a0",
+      "asb_source_tree": "18e85911d593a8cc70ebcbefee91ba0d87c63ea2",
+      "channel_manifest_sha256": "1b30e4c5620fab685d44a5019c6eab3f3ca60aada680ab59333fd8b14e391d28"
+    },
+    "tamper_negative": {
+      "schema_version": 1,
+      "classification": "development_only",
+      "development_only": true,
+      "channel": "dev",
+      "ok": false,
+      "code": "dev_channel_manifest_invalid",
+      "installed": true,
+      "verified": false,
+      "source_commit": "eb9a483cd8cc000ae4002f3c486af988f1797dbd",
+      "source_tree": "1fad07e4de00ec475276f74e669bc4a7d9aa357d",
+      "executable_sha256": "32166b4e3101545c78ec20f86cdc28702adee4dc9e9666aebf74af5b2d236071",
+      "asb_source_commit": "dd10b075c065a5a5aef6062c7d9a6939a5a029a0",
+      "asb_source_tree": "18e85911d593a8cc70ebcbefee91ba0d87c63ea2",
+      "channel_manifest_sha256": "1b30e4c5620fab685d44a5019c6eab3f3ca60aada680ab59333fd8b14e391d28"
+    },
+    "onboarding": {
+      "schema_version": 1,
+      "profile": "development",
+      "development_only": true,
+      "ready": true,
+      "code": "development_onboarding_ready",
+      "recovery": "continue"
+    },
+    "journey": {
+      "schema_version": 1,
+      "profile": "development",
+      "development_only": true,
+      "ready": true,
+      "code": "development_journey_ready",
+      "recovery": "continue"
+    },
+    "provider_selection": "provider_lifecycle_1656 passed",
+    "fanout_capture_replay": "coverage_setup_recording and development_journey passed",
+    "end_to_end_test": "passed",
+    "channel_compatibility_matrix": {
+      "ar": "AR-1676",
+      "cases": [
+        {
+          "channel": "dev",
+          "exit_code": 3,
+          "name": "omitted-dev",
+          "response_code": "development_not_installed"
+        },
+        {
+          "channel": "dev",
+          "exit_code": 3,
+          "name": "explicit-dev",
+          "response_code": "development_not_installed"
+        },
+        {
+          "channel": "stable",
+          "exit_code": 3,
+          "name": "future-stable",
+          "response_code": "stable_channel_unavailable"
+        },
+        {
+          "channel": "nightly",
+          "exit_code": 3,
+          "name": "future-nightly",
+          "response_code": "nightly_channel_unavailable"
+        },
+        {
+          "channel": "experimental",
+          "exit_code": 3,
+          "name": "future-experimental",
+          "response_code": "experimental_channel_unavailable"
+        },
+        {
+          "channel": "stable",
+          "exit_code": 3,
+          "name": "persist-stable-selection",
+          "response_code": "stable_channel_unavailable"
+        },
+        {
+          "channel": "stable",
+          "exit_code": 3,
+          "name": "persisted-stable-selection",
+          "response_code": "stable_channel_unavailable"
+        },
+        {
+          "channel": "dev",
+          "exit_code": 3,
+          "name": "restore-dev-selection",
+          "response_code": "development_not_installed"
+        },
+        {
+          "channel": "dev",
+          "exit_code": 3,
+          "name": "rollback-preserves-channel",
+          "response_code": "development_command_failed"
+        },
+        {
+          "channel": "dev",
+          "exit_code": 0,
+          "name": "remove",
+          "response_code": "development_removed"
+        },
+        {
+          "channel": "dev",
+          "exit_code": 3,
+          "name": "malformed-manifest",
+          "response_code": "development_installation_invalid"
+        }
+      ],
+      "credentials": "none",
+      "head": "97bc395eedb9b1fba2e34ba35eb8ffa538a11a20",
+      "network": "denied",
+      "provenance": {
+        "asb_commit": "dd10b075c065a5a5aef6062c7d9a6939a5a029a0",
+        "asb_tree": "18e85911d593a8cc70ebcbefee91ba0d87c63ea2",
+        "executable_sha256": "94016b78c2b4a213371cf0d552b878a47951193afd77df186d93c5f1e8cdf6e7",
+        "manifest": "release/channel-status.json",
+        "manifest_sha256": "86782220463003e06113595aa8d9ef42a6f2c3c811839303aac3f247f3c45a79",
+        "tui_commit": "97bc395eedb9b1fba2e34ba35eb8ffa538a11a20",
+        "tui_tree": "3ff0925190756d987999987288877a2b34cdc731"
+      },
+      "schema_version": 1
+    },
+    "capture_replay_matrix": {
+      "selected": {
+        "workload_count": 1,
+        "tuple_count": 1,
+        "cassette_sha256": "c10566dde82bb333c1400980183611e8c1e688f9e26f589ba76ccd5ca6ae86a8",
+        "replay": {
+          "cassette_sha256": "c5317e23f358fd099a549cfb2db6cc36ddc407fe88add936b18764bd6970df97",
+          "result_digest": "48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5",
+          "network": "denied"
+        }
+      },
+      "all": {
+        "workload_count": 7,
+        "tuple_count": 7
+      },
+      "incomplete_matrix": {
+        "complete_coverage": false,
+        "offline_ready": false
+      },
+      "strict_replay": {
+        "cassette_sha256": "c5317e23f358fd099a549cfb2db6cc36ddc407fe88add936b18764bd6970df97",
+        "result_digest": "48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5",
+        "network": "denied"
+      },
+      "strict_replay_reference": {
+        "cassette_sha256": "b76c8dd9335add880e5232ad63f7359d4cca8ec7d4bbade1dee6b40e409d38e9",
+        "result_digest": "48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5",
+        "network": "denied"
+      }
+    },
+    "comparison": "end_to_end_qualification passed",
+    "analysis": "end_to_end_qualification passed"
+  },
+  "provenance": {
+    "tui_commit": "eb9a483cd8cc000ae4002f3c486af988f1797dbd",
+    "tui_tree": "1fad07e4de00ec475276f74e669bc4a7d9aa357d",
+    "asb_commit": "dd10b075c065a5a5aef6062c7d9a6939a5a029a0",
+    "asb_tree": "18e85911d593a8cc70ebcbefee91ba0d87c63ea2",
+    "manifest": "release/channel-status.json",
+    "manifest_sha256": "86782220463003e06113595aa8d9ef42a6f2c3c811839303aac3f247f3c45a79",
+    "handoff_manifest_sha256": "1b30e4c5620fab685d44a5019c6eab3f3ca60aada680ab59333fd8b14e391d28",
+    "handoff": {
+      "schema_version": 1,
+      "channel": "dev",
+      "development_only": true,
+      "asb_repository": "https://github.com/martin-beck/agent-systems-benchmark.git",
+      "asb_ref": "refs/heads/main",
+      "asb_source_commit": "dd10b075c065a5a5aef6062c7d9a6939a5a029a0",
+      "asb_source_tree": "18e85911d593a8cc70ebcbefee91ba0d87c63ea2",
+      "tui_repository": "https://github.com/martin-beck/asb-tui.git",
+      "tui_ref": "refs/heads/main",
+      "tui_source_commit": "eb9a483cd8cc000ae4002f3c486af988f1797dbd",
+      "tui_source_tree": "1fad07e4de00ec475276f74e669bc4a7d9aa357d",
+      "executable_sha256": "32166b4e3101545c78ec20f86cdc28702adee4dc9e9666aebf74af5b2d236071",
+      "executable_size": 4894120,
+      "built_unix": 1,
+      "warnings": [
+        "development_missing_authentication_allowed",
+        "development_missing_signatures_allowed",
+        "development_missing_key_management_allowed"
+      ]
+    },
+    "runner_binary_sha256": "94016b78c2b4a213371cf0d552b878a47951193afd77df186d93c5f1e8cdf6e7",
+    "installed_executable_sha256": "32166b4e3101545c78ec20f86cdc28702adee4dc9e9666aebf74af5b2d236071",
+    "asb_binary_sha256": "7c0ad6ba3c85b78bfd10200d713ee149f68b989f93cdde1d5fcc553bfcbef879"
+  }
+}
