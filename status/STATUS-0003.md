@@ -1,8 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify selected/all workload recording, complete cassette sealing, and strict offline replay from the runner-owned route. |
