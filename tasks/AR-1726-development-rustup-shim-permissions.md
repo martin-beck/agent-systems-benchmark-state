@@ -11,8 +11,8 @@
   "id": "AR-1726",
   "next_action": "Repair PR #499 so accepted group-writable rustup toolchain executables remain bound to the validated Cargo and rustc objects through execution; retain the deterministic substitution regression, rerun exact gates, and obtain fresh independent review.",
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
-  "observed_dirty": 1,
-  "observed_head": "a3222ae105dcad1a1b8050289a3618c68e3920f8",
+  "observed_dirty": 0,
+  "observed_head": "d9ef0bce9bf656f07b3a64f306ed65d6204177cb",
   "owner": "codex-ar1726-pr499-repair",
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
   "priority": "P0",
@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-07T23:57:41+00:00",
+  "updated_at": "2026-10-07T23:58:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
