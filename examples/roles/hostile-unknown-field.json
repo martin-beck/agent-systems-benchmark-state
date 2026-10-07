@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "registry_id": "coordinator-default",
+  "default_role": "implementer",
+  "default_awq_profile_refs": ["awq/profiles/core"],
+  "unexpected": true,
+  "roles": []
+}

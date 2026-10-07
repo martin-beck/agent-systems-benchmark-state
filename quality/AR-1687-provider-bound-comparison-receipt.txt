@@ -1,0 +1,24 @@
+# AR-1687 development/mock provider-bound comparison qualification receipt
+
+Status: qualification evidence collected; AR remains planned.
+
+- Exact ASB remote main tested: `af06a23851adf55c1c83e4bfa2e454ea38e67aff`.
+- Fresh disposable clone and locked build were used; the existing product
+  checkout was not modified.
+- `cargo test --locked -p asb-cli --test guide_examples -- --nocapture`: 5/5
+  passed, including unavailable provider-selection comparison reasons and the
+  documented offline workflow.
+- `cargo test --locked -p asb-cli provider_selection -- --nocapture`: 3/3
+  provider-selection tests passed, including available provider-bound runs,
+  alternate bindings, comparison, and fail-closed import behavior.
+- `cargo test --locked -p asb-cli comparison -- --nocapture`: 3/3 comparison
+  tests passed, including opaque IDs, comparison projection, and persisted
+  run comparison without raw content.
+- The current comparison contract reports unavailable baseline/candidate
+  provider-selection evidence by side, exposes provider/model and execution
+  confounders, and never marks those pairs comparable. No live provider,
+  credential, signature service, or key manager was used.
+
+This receipt is not a claim that the complete paired TUI journey is finished;
+AR-1689 remains responsible for that evidence. Missing development
+authentication, signatures, and key management remain warning-only.

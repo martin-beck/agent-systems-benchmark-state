@@ -1,0 +1,22 @@
+AR-1709/AR-1715 deterministic negative-matrix receipt
+Date: 2026-10-05
+
+Product evidence
+- Product: martin-beck/agent-systems-benchmark
+- PR #481 merged commit: b21fa8c9a291e8f28e0709d55e3bd2750fb6004f
+- PR head: fa1187b37df1db04d32272084ebe6718dcd9cad9
+
+Coverage added and verified
+- Unavailable model selection is rejected deterministically before transport.
+- Malformed credential values propagate as typed failures before transport.
+- Existing exact-main coverage retains transport/process failure, timeout,
+  non-2xx, malformed status, oversized response, missing credential/reference,
+  and unsupported-route cases.
+- Focused negative-matrix, full OpenRouter module, credential tests, format,
+  and diff checks passed; all hosted product checks passed.
+
+Boundary
+- AR-1709 and AR-1715 remain planned: selected/all live success and final
+  exact-current-main qualification are still required.
+- No key, raw response, prompt, cassette bytes, or private path is recorded;
+  development auth/signature/key warnings remain non-blocking.

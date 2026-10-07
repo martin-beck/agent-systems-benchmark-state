@@ -1,0 +1,24 @@
+# AR-1688 runner-owned cassette capture and replay implementation receipt
+
+Status: implementation merged; qualification remains open.
+
+- ASB implementation PR #458 merged at current main
+  `d49b6815dbe6d7b453e87c84e50a2763eb807778`.
+- PR #458 exact-head hosted checks all passed, including AWQ shadow,
+  credential-free benchmark, TUI inherited-fd/PTY journey, aarch64
+  portability, fault assurance, formal assurance, platform evidence, headers,
+  policy/coverage/supply chain, and Rust verification.
+- The implementation adds the explicit guided `easy replay --local-mock` and
+  `easy replay-offline --local-mock` route through the runtime-owned,
+  digest-bound strict replay seam, with network denied and no live-provider
+  fallback. Ordinary replay remains authority-required and fail-closed.
+- The authoritative workflow provenance fixture was refreshed for the changed
+  CLI source digest without weakening transcript assertions.
+
+AR-1688 remains planned/open for exact post-merge runner-owned qualification:
+selected and all-workload capture, sealing, incomplete-matrix rejection,
+network-denied strict offline replay, and exact provider/agent binding. No
+completion claim is made from implementation or hosted checks alone.
+
+Development authentication, signatures, and key management remain warning-only
+and never block this prototype qualification.

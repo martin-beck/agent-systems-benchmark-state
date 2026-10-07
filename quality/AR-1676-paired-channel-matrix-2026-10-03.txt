@@ -1,0 +1,23 @@
+AR-1676 paired channel compatibility matrix receipt
+Date: 2026-10-03
+Classification: development/mock; credentials: none
+
+Exact heads
+- ASB main: 502254bd9eca1866bfb54b13f663c4aa4166c62a
+- ASB tree: 91da6742583a363679bab9f0674781f6921e60e2
+- TUI main: 29f3f61d910198d8e042dc53e5e37ddcdc98a614
+- TUI tree: 831ab8d4e069733eec8515e526c2c93971a37730
+
+Matrix evidence from fresh paired clones
+- TUI compatibility suite: 9 passed, including channel boundaries, malformed/unknown/oversized versions, unavailable platform, and deterministic selection.
+- TUI release discovery suite: 5 passed, including unsigned/tampered/mutable/unavailable channel rejection and exact signed-lock acceptance.
+- TUI top-level suite: 10 passed, including omitted/default dev, explicit stable/nightly/experimental unavailable diagnostics without fallback, restart persistence, and dev install/status/launch/upgrade/remove without authentication.
+- ASB lifecycle suite: 5 passed, including absent network-free lifecycle, unavailable channel diagnostics, exact manifest consumption, and closed schemas.
+
+Development boundary
+- Missing authentication, signatures, and key management remain warning-only and do not block development-channel operations.
+- Unavailable stable/nightly/experimental channels return typed diagnostics and never silently fall back to dev.
+
+State boundary
+- Existing implementation covers the scoped AR-1676 matrix; no product repair was required.
+- AR-1676 remains open/planned in coordinator state until its prerequisite chain and hosted evidence are reconciled through handoffctl.

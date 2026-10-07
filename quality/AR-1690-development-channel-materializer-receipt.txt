@@ -1,0 +1,23 @@
+AR-1690 development-channel materializer receipt
+
+Status: PASS
+Product: agent-systems-benchmark
+Exact merged product head: 0d241cabc674a96191e67477758994c36427ebe2
+Exact source PR head: db4f15719159a2021344da8f4122dd95d960f12a
+Merged PR: https://github.com/martin-beck/agent-systems-benchmark/pull/460
+
+Hosted evidence: all 14 required PR checks passed, including Rust,
+Policy/Coverage/Supply Chain, credential-free benchmark, exact TUI inherited-fd
+and PTY journey, emulated aarch64, fault/formal/model, fuzz/Kani/Loom,
+mutation, platform, AWQ, and source-header gates.
+
+Implementation evidence: default omitted channel resolves to dev; bounded
+ASB/TUI refs/heads/main provenance is persisted in paired manifests; status,
+launch, upgrade, rollback, and removal validate the manifest; stale, tampered,
+and digest-mismatch cases are typed failures. Development-only missing
+authentication, signatures, and key-management metadata remain warnings and
+never block the development path.
+
+Independent review: approved exact source head after hosted checks; no gate
+weakening found. This receipt qualifies AR-1690 implementation only. AR-1691
+and AR-1693 still require paired fresh-user lifecycle evidence.

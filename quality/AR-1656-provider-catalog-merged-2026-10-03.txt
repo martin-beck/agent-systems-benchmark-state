@@ -1,0 +1,42 @@
+AR-1656 connected-provider catalog merged-head receipt
+Date: 2026-10-03
+Classification: development qualification evidence; no secret material
+
+State handling
+--------------
+The prior AR-1656 lease expired before evidence publication. handoffctl
+released the task back to `open`; this receipt intentionally does not mark the
+AR done. A later coordinator-controlled transition may accept the evidence
+after this state PR is merged and dependencies are reconciled.
+
+Exact product result
+--------------------
+Repository: https://github.com/martin-beck/agent-systems-benchmark.git
+Merged PR: #465
+Merged ASB commit: f2a6aa2ebfe8b52f1ea74ad0954e8d642918085d
+Merged tree: 8f65ced83ecc0cce2679b172c9a58269aa1ff39c
+Reviewed PR head: a3b788453a3a5a3c33a466520d3e3fdb2e871d33
+
+The merged implementation provides deterministic provider-catalog refresh,
+custom provider add/edit over the control boundary, generation fencing,
+idempotent mutation, supported-model filtering, typed unavailable-provider
+diagnostics, and digest-only credential references. Development fixtures keep
+missing authentication, signature validation, and key management as visible
+warnings; they never block provider addition, catalog display, or offline use.
+
+Local evidence
+--------------
+On the pre-merge reviewed head, focused provider-catalog tests passed 4/4:
+human-default output, explicit `--json`, catalog stability/redaction, and
+control catalog refresh/add/edit/unavailable behavior. Formatting passed.
+The provenance repair was validated by the workflow transcript suite 3/3 on
+the corresponding source revision; the final merged PR hosted checks all
+completed successfully, including Rust checks, credential-free benchmark path,
+TUI PTY journey, policy/supply-chain, emulated aarch64, retained faults, and
+model/fuzz gates.
+
+Conclusion
+----------
+AR-1656 implementation and hosted product verification are complete at the
+exact merged head. This receipt records evidence only; AR status remains open
+until the state PR is merged and handoffctl dependency policy permits closure.

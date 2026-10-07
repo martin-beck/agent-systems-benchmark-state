@@ -3734,7 +3734,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -3742,7 +3742,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. |
-| Next action | Run the disposable exact-head current-main journey now that AR-1615 and AR-1632 are complete; record the remaining wizard-to-benchmark/offline-comparison evidence. |
+| Next action | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. |
 
 ### AR-1614 — Immutable dev-channel TUI bundle and installability
 
@@ -4224,7 +4224,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4238,7 +4238,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4252,7 +4252,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4322,7 +4322,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4430,240 +4430,275 @@
 | Summary | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. |
 | Next action | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
+### AR-1666 — Trusted-main broad TUI coverage qualification
 
-## Dependency graph
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Raise current TUI main coverage from 89.43&#37; to the strict 90&#37; gate through behavior-focused tests without weakening thresholds. |
+| Next action | Reproduce trusted-main coverage at exact head 06e96770, identify low-coverage wizard/runtime/UI paths, and add focused behavior tests preserving development nonblocking authentication, signature, and key-management rules. |
 
-Arrows point from each prerequisite to the work that depends on it. Color is redundant
-with the status text inside every node; the tables below are the complete text
-alternative.
+### AR-1667 — Development-channel launch diagnostics repair
 
-```mermaid
-flowchart LR
-    subgraph series_00["00 - Coordination foundation"]
-        direction TB
-        AR_0001["AR-0001 - Done"]:::status_done
-        AR_0002["AR-0002 - Done"]:::status_done
-        AR_0003["AR-0003 - Done"]:::status_done
-        AR_0004["AR-0004 - Done"]:::status_done
-        AR_0005["AR-0005 - Done"]:::status_done
-    end
-    subgraph series_01["01 - Contracts and runtime"]
-        direction TB
-        AR_0101["AR-0101 - Done"]:::status_done
-        AR_0102["AR-0102 - Done"]:::status_done
-        AR_0103["AR-0103 - Done"]:::status_done
-        AR_0104["AR-0104 - Done"]:::status_done
-        AR_0105["AR-0105 - Done"]:::status_done
-    end
-    subgraph series_02["02 - Analysis"]
-        direction TB
-        AR_0201["AR-0201 - Done"]:::status_done
-        AR_0202["AR-0202 - Done"]:::status_done
-        AR_0203["AR-0203 - Done"]:::status_done
-        AR_0204["AR-0204 - Done"]:::status_done
-    end
-    subgraph series_03["03 - Adapters and workloads"]
-        direction TB
-        AR_0301["AR-0301 - Done"]:::status_done
-        AR_0302["AR-0302 - Done"]:::status_done
-        AR_0303["AR-0303 - Done"]:::status_done
-        AR_0304["AR-0304 - Done"]:::status_done
-        AR_0305["AR-0305 - Done"]:::status_done
-        AR_0306["AR-0306 - Done"]:::status_done
-        AR_0307["AR-0307 - Done"]:::status_done
-        AR_0308["AR-0308 - Done"]:::status_done
-        AR_0309["AR-0309 - Done"]:::status_done
-        AR_0310["AR-0310 - Done"]:::status_done
-        AR_0311["AR-0311 - Done"]:::status_done
-        AR_0312["AR-0312 - Done"]:::status_done
-        AR_0313["AR-0313 - Done"]:::status_done
-        AR_0314["AR-0314 - Done"]:::status_done
-        AR_0315["AR-0315 - Done"]:::status_done
-        AR_0316["AR-0316 - Done"]:::status_done
-        AR_0317["AR-0317 - Done"]:::status_done
-        AR_0318["AR-0318 - Done"]:::status_done
-        AR_0319["AR-0319 - Done"]:::status_done
-        AR_0320["AR-0320 - Done"]:::status_done
-    end
-    subgraph series_04["04 - Live measurement"]
-        direction TB
-        AR_0401["AR-0401 - Done"]:::status_done
-        AR_0402["AR-0402 - Done"]:::status_done
-        AR_0403["AR-0403 - Done"]:::status_done
-        AR_0404["AR-0404 - Done"]:::status_done
-        AR_0405["AR-0405 - Done"]:::status_done
-        AR_0406["AR-0406 - Done"]:::status_done
-    end
-    subgraph series_05["05 - Replay"]
-        direction TB
-        AR_0501["AR-0501 - Done"]:::status_done
-        AR_0502["AR-0502 - Done"]:::status_done
-        AR_0503["AR-0503 - Done"]:::status_done
-        AR_0504["AR-0504 - Done"]:::status_done
-        AR_0505["AR-0505 - Done"]:::status_done
-        AR_0506["AR-0506 - Done"]:::status_done
-        AR_0507["AR-0507 - Done"]:::status_done
-        AR_0508["AR-0508 - Done"]:::status_done
-        AR_0509["AR-0509 - Done"]:::status_done
-        AR_0510["AR-0510 - Done"]:::status_done
-        AR_0511["AR-0511 - Done"]:::status_done
-        AR_0512["AR-0512 - Done"]:::status_done
-        AR_0513["AR-0513 - Done"]:::status_done
-        AR_0514["AR-0514 - Blocked"]:::status_blocked
-        AR_0515["AR-0515 - Planned"]:::status_planned
-        AR_0516["AR-0516 - Done"]:::status_done
-        AR_0517["AR-0517 - Done"]:::status_done
-        AR_0518["AR-0518 - Done"]:::status_done
-        AR_0519["AR-0519 - Done"]:::status_done
-        AR_0520["AR-0520 - Done"]:::status_done
-        AR_0521["AR-0521 - Blocked"]:::status_blocked
-    end
-    subgraph series_06["06 - Metrics"]
-        direction TB
-        AR_0601["AR-0601 - Done"]:::status_done
-        AR_0602["AR-0602 - Planned"]:::status_planned
-        AR_0603["AR-0603 - Done"]:::status_done
-        AR_0604["AR-0604 - Blocked"]:::status_blocked
-    end
-    subgraph series_07["07 - Platforms"]
-        direction TB
-        AR_0701["AR-0701 - Done"]:::status_done
-        AR_0702["AR-0702 - Done"]:::status_done
-        AR_0703["AR-0703 - Future"]:::status_future
-        AR_0704["AR-0704 - Done"]:::status_done
-        AR_0705["AR-0705 - Blocked"]:::status_blocked
-        AR_0706["AR-0706 - Blocked"]:::status_blocked
-        AR_0707["AR-0707 - Done"]:::status_done
-    end
-    subgraph series_08["08 - Interfaces"]
-        direction TB
-        AR_0801["AR-0801 - Done"]:::status_done
-        AR_0802["AR-0802 - Done"]:::status_done
-        AR_0803["AR-0803 - Done"]:::status_done
-        AR_0804["AR-0804 - Done"]:::status_done
-        AR_0805["AR-0805 - Done"]:::status_done
-        AR_0806["AR-0806 - Done"]:::status_done
-        AR_0807["AR-0807 - Planned"]:::status_planned
-        AR_0808["AR-0808 - Planned"]:::status_planned
-        AR_0809["AR-0809 - Planned"]:::status_planned
-        AR_0810["AR-0810 - Planned"]:::status_planned
-        AR_0811["AR-0811 - Planned"]:::status_planned
-        AR_0812["AR-0812 - Done"]:::status_done
-        AR_0813["AR-0813 - Done"]:::status_done
-        AR_0814["AR-0814 - Blocked"]:::status_blocked
-        AR_0815["AR-0815 - Planned"]:::status_planned
-        AR_0816["AR-0816 - Planned"]:::status_planned
-        AR_0817["AR-0817 - Planned"]:::status_planned
-        AR_0818["AR-0818 - Planned"]:::status_planned
-        AR_0819["AR-0819 - Done"]:::status_done
-        AR_0820["AR-0820 - Done"]:::status_done
-        AR_0821["AR-0821 - Done"]:::status_done
-        AR_0822["AR-0822 - Done"]:::status_done
-        AR_0823["AR-0823 - Planned"]:::status_planned
-        AR_0830["AR-0830 - Done"]:::status_done
-        AR_0831["AR-0831 - Done"]:::status_done
-        AR_0832["AR-0832 - Blocked"]:::status_blocked
-        AR_0833["AR-0833 - Planned"]:::status_planned
-        AR_0834["AR-0834 - Done"]:::status_done
-        AR_0835["AR-0835 - Done"]:::status_done
-        AR_0836["AR-0836 - Blocked"]:::status_blocked
-        AR_0837["AR-0837 - Planned"]:::status_planned
-        AR_0840["AR-0840 - Done"]:::status_done
-        AR_0841["AR-0841 - Done"]:::status_done
-        AR_0842["AR-0842 - Done"]:::status_done
-        AR_0843["AR-0843 - Done"]:::status_done
-        AR_0844["AR-0844 - Done"]:::status_done
-        AR_0845["AR-0845 - Done"]:::status_done
-        AR_0846["AR-0846 - Planned"]:::status_planned
-        AR_0847["AR-0847 - Done"]:::status_done
-        AR_0848["AR-0848 - Done"]:::status_done
-        AR_0849["AR-0849 - Done"]:::status_done
-        AR_0850["AR-0850 - Done"]:::status_done
-        AR_0851["AR-0851 - Done"]:::status_done
-        AR_0852["AR-0852 - Done"]:::status_done
-        AR_0853["AR-0853 - Done"]:::status_done
-        AR_0854["AR-0854 - Done"]:::status_done
-        AR_0855["AR-0855 - Done"]:::status_done
-        AR_0856["AR-0856 - Planned"]:::status_planned
-        AR_0857["AR-0857 - Done"]:::status_done
-        AR_0858["AR-0858 - Done"]:::status_done
-        AR_0859["AR-0859 - Done"]:::status_done
-        AR_0860["AR-0860 - Done"]:::status_done
-        AR_0861["AR-0861 - Blocked"]:::status_blocked
-        AR_0862["AR-0862 - Planned"]:::status_planned
-        AR_0863["AR-0863 - Blocked"]:::status_blocked
-        AR_0864["AR-0864 - Planned"]:::status_planned
-        AR_0865["AR-0865 - Planned"]:::status_planned
-        AR_0866["AR-0866 - Planned"]:::status_planned
-        AR_0867["AR-0867 - Planned"]:::status_planned
-        AR_0868["AR-0868 - Planned"]:::status_planned
-        AR_0869["AR-0869 - Done"]:::status_done
-        AR_0870["AR-0870 - Done"]:::status_done
-        AR_0871["AR-0871 - Done"]:::status_done
-        AR_0872["AR-0872 - Done"]:::status_done
-        AR_0873["AR-0873 - Planned"]:::status_planned
-        AR_0874["AR-0874 - Planned"]:::status_planned
-        AR_0875["AR-0875 - Done"]:::status_done
-        AR_0876["AR-0876 - Done"]:::status_done
-        AR_0877["AR-0877 - Done"]:::status_done
-        AR_0878["AR-0878 - Done"]:::status_done
-        AR_0879["AR-0879 - Done"]:::status_done
-        AR_0880["AR-0880 - Done"]:::status_done
-        AR_0888["AR-0888 - Done"]:::status_done
-        AR_0889["AR-0889 - Done"]:::status_done
-        AR_0890["AR-0890 - Blocked"]:::status_blocked
-        AR_0891["AR-0891 - Done"]:::status_done
-        AR_0892["AR-0892 - Planned"]:::status_planned
-        AR_0893["AR-0893 - Planned"]:::status_planned
-        AR_0894["AR-0894 - Planned"]:::status_planned
-        AR_0895["AR-0895 - Done"]:::status_done
-        AR_0896["AR-0896 - Blocked"]:::status_blocked
-        AR_0897["AR-0897 - Done"]:::status_done
-        AR_0898["AR-0898 - Done"]:::status_done
-        AR_0899["AR-0899 - Done"]:::status_done
-    end
-    subgraph series_09["09 - Assurance"]
-        direction TB
-        AR_0901["AR-0901 - Done"]:::status_done
-        AR_0902["AR-0902 - Done"]:::status_done
-        AR_0903["AR-0903 - Planned"]:::status_planned
-        AR_0904["AR-0904 - Done"]:::status_done
-        AR_0905["AR-0905 - Done"]:::status_done
-        AR_0906["AR-0906 - Done"]:::status_done
-        AR_0907["AR-0907 - Done"]:::status_done
-        AR_0908["AR-0908 - Done"]:::status_done
-        AR_0909["AR-0909 - Done"]:::status_done
-    end
-    subgraph series_10["10 - Reliability and release"]
-        direction TB
-        AR_1001["AR-1001 - Done"]:::status_done
-        AR_1002["AR-1002 - Done"]:::status_done
-        AR_1003["AR-1003 - Done"]:::status_done
-        AR_1004["AR-1004 - Done"]:::status_done
-        AR_1005["AR-1005 - Done"]:::status_done
-        AR_1006["AR-1006 - Done"]:::status_done
-        AR_1007["AR-1007 - Done"]:::status_done
-        AR_1008["AR-1008 - Done"]:::status_done
-        AR_1010["AR-1010 - Done"]:::status_done
-        AR_1011["AR-1011 - Planned"]:::status_planned
-        AR_1012["AR-1012 - Planned"]:::status_planned
-        AR_1013["AR-1013 - Done"]:::status_done
-        AR_1014["AR-1014 - Planned"]:::status_planned
-        AR_1015["AR-1015 - Planned"]:::status_planned
-        AR_1016["AR-1016 - Planned"]:::status_planned
-        AR_1017["AR-1017 - Done"]:::status_done
-        AR_1018["AR-1018 - Done"]:::status_done
-        AR_1019["AR-1019 - Done"]:::status_done
-        AR_1020["AR-1020 - Done"]:::status_done
-        AR_1021["AR-1021 - Done"]:::status_done
-        AR_1022["AR-1022 - Done"]:::status_done
-        AR_1023["AR-1023 - Done"]:::status_done
-        AR_1024["AR-1024 - Blocked"]:::status_blocked
-        AR_1025["AR-1025 - Blocked"]:::status_blocked
-        AR_1026["AR-1026 - Planned"]:::status_planned
-        AR_1027["AR-1027 - Planned"]:::status_planned
-        AR_1028["AR-1028 - Done"]:::status_done
-        AR_1029["AR-1029 - Planned"]:::status_planned
-        AR_1030["AR-1030 - Done"]:::status_done
-        AR_1031["AR-1031 - Planned"]:::status_planned
-        AR_1032["AR-1032 - Planned"]:::status_planned
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Preserve the resolved development channel and warning-only diagnostics on every ASB TUI launch failure, including omitted-channel launches. |
+| Next action | Review and merge the signed ASB launch repair, then rerun the exact-head PTY launch and fresh-user journey without weakening environment or security boundaries. |
+
+### AR-1668 — Post-launch fresh-user journey qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Requalify the paired install, wizard setup, benchmark, recording, offline replay, comparison, rollback, and removal journey after launch diagnostics are repaired. |
+| Next action | Run the clean-room journey against exact ASB and TUI heads and publish a receipt covering every selection-driven step and offline boundary. |
+
+### AR-1670 — Exact Coordinator authority vendoring closure
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Restore only the Coordinator v0.3.53 authority, role, lifecycle, rollback, and upgrade modules required by the ASB state contract, with immutable provenance. |
+| Next action | Complete the exact-tag source comparison and vendor-manifest reconciliation; remove accidental formal-only modules and record the signed repair head. |
+
+### AR-1671 — ASB state strict coverage restoration
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Raise the repaired ASB coordination checkout back above the unchanged 95&#37; coverage gate with behavior-focused tests. |
+| Next action | Add focused tests for authority adapters, rollback/CAS lifecycle, handoff leases, oracle lifecycle, and upgrade contract paths, then pass the unchanged strict gate. |
+
+### AR-1674 — ASB channel option propagation and default persistence
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Carry the explicit release-channel option through install, status, launch, upgrade, rollback, and remove, with dev as the persisted default and stable typed diagnostics. |
+| Next action | Implement one shared channel selector for every supported ASB command, persist the selected channel for subsequent runs, and add human/JSON tests for omitted dev, explicit dev, and unavailable future channels. |
+
+### AR-1675 — ASB channel manifest and current-main provenance
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Publish a channel manifest that identifies the resolved source head and build, and make dev current-main provenance inspectable by the installer and TUI. |
+| Next action | Define the versioned manifest fields and validation rules, emit them from the dev materializer, and add tamper, stale-head, and future-channel fixtures without blocking development credentials. |
+
+### AR-1676 — Paired ASB/TUI channel compatibility matrix
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify ASB and asb-tui against the same dev/stable/nightly/experimental channel vocabulary, defaults, manifests, and typed failure cases. |
+| Next action | Build the paired compatibility runner and exact-head receipt covering omitted dev, explicit channels, restart persistence, upgrade/rollback preservation, and unavailable-channel diagnostics. |
+
+### AR-1677 — Channel-aware release and quickstart gate
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the default-dev clone, configure, benchmark, offline replay, comparison, and analysis journey channel-aware and release-gated. |
+| Next action | Update the one-command quickstart and release gate to show the selected channel, preserve it through all runs, and verify online/offline analysis with a clean-room receipt. |
+
+### AR-1678 — Development install host preflight and typed recovery
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the default-dev install path detect missing host tools before launch and return actionable typed recovery without turning development authentication or signature warnings into blockers. |
+| Next action | No further action; merged ASB PR #456 at d49b6815dbe6d7b453e87c84e50a2763eb807778 and all hosted checks passed. |
+
+### AR-1679 — ASB legacy task-spec normalization
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Normalize the remaining ASB legacy task-spec records rejected by strict validation without changing task intent or gates. |
+| Next action | Normalize AR-1625/1626/1628-1630 and AR-1641-1655, regenerate projections, and pass fresh strict validation. |
+
+### AR-1680 — Repair vendor manifest regression fixture
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Align the immutable vendor-manifest regression fixture with the intentional task-spec validator vocabulary extension. |
+| Next action | Run vendor verification and the complete vendor regression test on the exact signed head. |
+
+### AR-1681 — Normalize residual ASB task specifications
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Complete strict-schema normalization for residual ASB task records AR-1617 through AR-1621 without changing their acceptance or evidence requirements. |
+| Next action | Add only missing strict vocabulary fields, regenerate projections, and pass exact validation. |
+
+### AR-1682 — Restore formal hierarchy model contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the PR-publication formal model fixture so its hierarchy invariant matches the declared task domain without weakening any invariant or hosted gate. |
+| Next action | Run exact formal publication verification and independent review on the corrected model fixture. |
+
+### AR-1683 — Provide approved TLC attestation resource bounds
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the hosted formal workflow export the approved TLC memory and swap bounds required by attestation. |
+| Next action | Run formal publication verification and runner regression tests on the exact hosted head. |
+
+### AR-1684 — Harden runtime selector helper matrix
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Lock in fail-closed rejection of hostile selector directory, symlink, and non-regular entries. |
+| Next action | Run the targeted authority defensive matrix and full hosted checks on the signed head. |
+
+### AR-1685 — Spec-acceptance completion metadata contract
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair task metadata and handoffctl validation so supported done transitions can record exact acceptance evidence without weakening fail-closed gates. |
+| Next action | Claim through handoffctl, implement the validated spec_acceptance metadata contract and focused rejection/acceptance tests, then open a reviewed state-only PR. |
+
+### AR-1686 — Current-head content-addressed plan generation and qualification repair
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | codex-ar1686-qualification |
+| Parent | None |
+| Children | None |
+| Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
+| Next action | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
+
+### AR-1687 — Development/mock provider-bound comparison qualification
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
+| Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
+
+### AR-1688 — Runner-owned cassette capture and replay qualification
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |

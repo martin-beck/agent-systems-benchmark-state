@@ -1,0 +1,13 @@
+AR-1711 implementation receipt
+Product: martin-beck/agent-systems-benchmark
+Merged PR #475 head: 4e11b92daded4aa828f22dffbd6d46db729f6784
+Merge commit: 25bb7778965b2fe8cbf5f260cea0c4744735aec0
+
+PR #475 adds the explicit live benchmark route with typed failures and no
+implicit mock/replay fallback. Hosted checks are green or completing at the
+merged head; topology repair PR #476 is tracked separately.
+
+Status remains planned: selected/all credential-backed online qualification,
+including a real success path, remains outstanding without an operator API
+key. AR-1702, AR-1703, and AR-1712 remain planned. No secret or raw response
+is recorded; development auth/signature/key warnings remain non-blocking.

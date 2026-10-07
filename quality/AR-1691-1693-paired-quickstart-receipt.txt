@@ -1,0 +1,27 @@
+AR-1691/AR-1693 paired default-dev quickstart receipt
+
+Classification: development/mock. Qualification evidence only; final AR closure
+remains gated by AR-1695 and AR-1696.
+
+Source receipt SHA-256: fa317b95a4084d58ac16cbab8270ef14f84d315d50db41f083e995c5b9e8fdbd
+
+Exact tested identities:
+- ASB main `65f36e97dcff1969dd62c1d6864456305d6d4860`, tree
+  `de1ca7ded0cf78baa80093ac0ef8bbd6ea60cf95`.
+- TUI main `e1ee6c21c132f171a635724cc660c9b9dda76436`, tree
+  `cd9d8139ed52316c908e5620ae69c4bd03ce3372`.
+- Installed TUI executable `c778ca4bacc837618206e1a9740965c272dc51aca339a2c13d416e6f14ba7477`.
+- Channel manifest `9b08fd9fbdf7896a872d6c7df0aa813b698995ee45e73e16856615a6d8b21f18`.
+
+The omitted/default dev channel installed, status-checked, restarted, and
+launched successfully. Fixture provider/model setup used no credentials and
+missing development auth/signatures/key management remained warning-only.
+Selected capture covered one tuple; all-workload capture expanded to seven
+tuples. Strict replay used network denial and result digest
+`48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5`.
+Incomplete coverage correctly remained offline-unready; tampered handoff
+failed as `dev_channel_manifest_invalid`; provider selection, comparison, and
+analysis checks passed.
+
+AR-1695 complete RunRequest wire-contract/backend qualification and AR-1696
+trusted-main coverage repair must pass before promoting AR-1691/AR-1693 to done.

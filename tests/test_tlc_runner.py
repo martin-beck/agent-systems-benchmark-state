@@ -63,12 +63,14 @@ class TlcRunnerTests(unittest.TestCase):
         verify = (ROOT / "formal" / "handoffctl" / "verify.sh").read_text(encoding="utf-8")
         self.assertIn("TLC_RUNTIME_ROOT", workflow)
         self.assertIn("TLC_ATTESTATION_PATH", workflow)
+        self.assertIn("TLC_MEMORY_MAX: 3G", workflow)
+        self.assertIn("TLC_SWAP_MAX: 3G", workflow)
         self.assertIn("TLC_RUNTIME_ROOT", verify)
 
     def test_pr_tier_has_one_process_contract_fixture(self) -> None:
         config = (ROOT / "formal" / "handoffctl" / "HandoffctlPR.cfg").read_text(encoding="utf-8")
         self.assertIn("Processes = {p1}", config)
-        self.assertIn("Tasks = {t1}", config)
+        self.assertIn('Tasks = {"t1", "t2"}', config)
 
     def test_command_has_bounded_jvm_and_process_group(self) -> None:
         command = RUNNER.build_command(
@@ -300,7 +302,7 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertTrue(Path(RUNNER.DEFAULT_QUEUE).is_relative_to(RUNNER.APPROVED_RUNTIME_ROOT))
         self.assertEqual(
             RUNNER.DEFAULT_ADMISSION_LOCK,
-            str(Path("/srv/data/projects/.asb-tlc") / "admission.lock"),
+            str(RUNNER.APPROVED_RUNTIME_ROOT / "admission.lock"),
         )
 
     def test_canonical_lock_is_shared_by_default(self) -> None:

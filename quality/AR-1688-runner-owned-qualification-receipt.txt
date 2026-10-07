@@ -1,0 +1,27 @@
+AR-1688 runner-owned cassette capture and replay qualification
+Classification: development/mock; provider credentials: none; provider network: denied
+
+Exact product heads:
+- ASB main: d49b6815dbe6d7b453e87c84e50a2763eb807778
+- ASB tree: 1cc4c9b52d96c7d617b0d8a5cdaf3de2833b4887
+- asb-tui main: 1189e8a1b578f8ebe89fad20095123766e7c3b7e
+- asb-tui tree: 34fe2191d6f12698d1657f8a61d30ddc9e54e900
+
+Runner: tools/run-quickstart-acceptance.py from the merged asb-tui main head.
+The runner created cassettes through `easy record-campaign --local-mock`; no
+cassette was hand-authored as an output artifact. The selected matrix covered
+1 tuple and the complete matrix covered 7 tuples. The intentionally incomplete
+matrix reported complete_coverage=false and offline_ready=false.
+
+Generated selected cassette/replay:
+- cassette digest: 86a3f65eea6b9435f4063a385494bd10ae2d095d4dcdbbd3ac98763a5e871f9b
+- result digest: 48b9080e01800250046cf22e734a8c3cf8d829054a3ebedd8efa7db0f9bd1eb5
+- network: denied; source: strict_replay
+
+Reference strict replay also passed with cassette digest
+b76c8dd9335add880e5232ad63f7359d4cca8ec7d4bbade1dee6b40e409d38e9 and the
+same result digest. Environment credentials were sanitized before subprocess
+launch. Development authentication, signatures, and key management remained
+visible warnings and never blocked capture or replay.
+
+Focused runner tests: 3/3 passed. Exact post-merge runner exit: 0.

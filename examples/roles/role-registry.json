@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "registry_id": "coordinator-default",
+  "default_role": "implementer",
+  "default_awq_profile_refs": ["awq/profiles/core", "awq/profiles/python"],
+  "roles": [
+    {
+      "schema_version": 1,
+      "role_id": "implementer",
+      "title": "Implementer",
+      "summary": "Implements an assigned change within its declared worktree.",
+      "capabilities": [
+        {
+          "capability_id": "source-change",
+          "description": "Read and modify tracked source files.",
+          "actions": ["source.read", "source.write", "tests.run"],
+          "scope": "write"
+        }
+      ],
+      "forbidden_actions": ["authority.release", "authority.rollback"],
+      "tool_policy": {
+        "allow": ["source.read", "source.write", "tests.run"],
+        "deny": ["authority.release", "authority.rollback"]
+      },
+      "worktree_policy": {
+        "mode": "isolated",
+        "path_patterns": ["/srv/data/projects/*"]
+      },
+      "awq_profile_refs": ["awq/profiles/core", "awq/profiles/python"]
+    },
+    {
+      "schema_version": 1,
+      "role_id": "reviewer",
+      "title": "Reviewer",
+      "summary": "Reviews an assigned change without mutating authority.",
+      "capabilities": [
+        {
+          "capability_id": "review-change",
+          "description": "Read source and test results for review.",
+          "actions": ["source.read", "tests.run"],
+          "scope": "read"
+        }
+      ],
+      "forbidden_actions": ["source.write", "authority.release", "authority.rollback"],
+      "tool_policy": {
+        "allow": ["source.read", "tests.run"],
+        "deny": ["source.write", "authority.release", "authority.rollback"]
+      },
+      "worktree_policy": {
+        "mode": "isolated",
+        "path_patterns": ["/srv/data/projects/*"]
+      },
+      "awq_profile_refs": ["awq/profiles/core"]
+    }
+  ]
+}

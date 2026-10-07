@@ -1,0 +1,44 @@
+AR-1687 development/mock provider-bound comparison qualification receipt
+Date: 2026-10-03
+Classification: hosted development qualification evidence; no secret material
+
+Exact product result
+--------------------
+Repository: https://github.com/martin-beck/agent-systems-benchmark.git
+Exact ASB main: ad43609b67825f7f422b371f5d8104e0a5b20f2e
+Merged PR: #466
+Merged tree: 8f65ced83ecc0cce2679b172c9a58269aa1ff39c
+
+The merged PR hosted checks were green, including Rust, policy/supply-chain,
+emulated aarch64, credential-free benchmark, PTY, formal, fuzz, Kani, Loom,
+mutation, platform-evidence, AWQ shadow-evidence, and exact-header checks.
+The state specification repair PR #72 also merged at ae5a9f7490565182f640878d284337c52bbd7c91;
+its Strict state consistency and AWQ shadow evidence checks passed.
+
+Exact-main qualification
+------------------------
+* `cargo fmt --all -- --check` passed.
+* `cargo test --locked -p asb-cli comparison_reports_same_selection_multi_candidate_and_asymmetric_availability --lib -- --nocapture` passed 1/1.
+* `cargo test --locked -p asb-cli comparison --lib -- --nocapture` passed 4/4.
+* The comparison matrix covers available baseline/candidate selections,
+  missing provider selection, asymmetric availability, differing execution
+  bindings, and three-run multi-candidate fan-out. It preserves opaque run
+  identities and emits typed provider-selection-unavailable reasons without
+  claiming comparability for unavailable or provider-confounded pairs.
+* A broader exact-main `asb-cli --lib` run passed 207/208 under parallel
+  execution; the one unrelated catalog test passed when rerun alone. The
+  isolated comparison predicates are all green and unaffected.
+
+Privacy and development boundary
+---------------------------------
+Only local deterministic fixtures were used; no live provider, credential,
+signature service, or key manager was contacted. Missing authentication,
+signature validation, and key management remain visible warning-only
+development conditions and do not weaken production/provenance gates. Output
+contains no credentials, raw provider responses, or host paths.
+
+Conclusion
+----------
+The AR-1687 revision-2 comparison predicates are qualified at the exact
+merged ASB main head. This receipt does not claim completion of downstream
+paired TUI/fresh-user journey ARs.

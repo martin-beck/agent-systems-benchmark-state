@@ -1,0 +1,22 @@
+AR-1711/AR-1715 exact-main quota-blocked live receipt
+Date: 2026-10-05
+
+Evidence identity
+- Product: martin-beck/agent-systems-benchmark
+- PR #483 exact merged commit: b9c5835
+- Qualification target: exact current ASB main after the bounded OpenCode
+  navigation policy repair.
+
+Observed outcomes
+- Credential-backed live execution reached the OpenRouter provider and
+  returned HTTP 429 `free-models-per-day`; daily remaining was 0.
+- Credential-free exact-main negative returned validation
+  `OPENROUTER_API_KEY required` with exit code 3.
+
+Conclusion
+- Provider reach proves the live code path is wired, but HTTP 429 quota
+  exhaustion prevents selected/all benchmark qualification. AR-1711 and
+  AR-1715 remain planned until quota recovers and the selected/all matrix,
+  final receipt, and exact-head evidence succeed.
+- No key, raw response, prompt, cassette bytes, or private path is recorded;
+  development auth/signature/key warnings remain non-blocking.

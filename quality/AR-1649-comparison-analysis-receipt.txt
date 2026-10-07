@@ -1,0 +1,13 @@
+AR-1649 comparison analysis and report receipt
+
+Implementation: ASB PR #446, merged at 048748091c6c76f790b1f556e5294746ed1b1874.
+Exact paired product heads were reviewed and all required hosted PR checks passed.
+
+Evidence:
+- Typed selected-agent comparison analysis and human/JSON projections are
+  implemented and preserve unavailable/confounder evidence.
+- Independent review approved the immutable implementation head.
+- Hosted ASB checks passed for the reviewed PR, including policy, Rust, formal,
+  fault, portability, and credential-free paths.
+- Development-only missing authentication, signatures, and key management are
+  warnings and never blockers.

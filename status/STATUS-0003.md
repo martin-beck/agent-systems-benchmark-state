@@ -1,5 +1,642 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify selected/all workload recording, complete cassette sealing, and strict offline replay from the runner-owned route. |
+| Next action | No further action; exact post-merge runner-owned selected/all capture, sealing, generated-cassette strict replay, and denied-network evidence are recorded. |
+
+### AR-1689 — Paired TUI fresh-user integration and receipt qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. |
+| Next action | Run the disposable exact-head ASB/TUI journey and publish a privacy-safe paired receipt without closing AR-1686 prematurely. |
+
+### AR-1690 — ASB development-channel current-main materializer
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Implement the ASB dev-channel materializer that resolves the latest repository main heads, persists the selected channel, and emits a diagnostic manifest for the TUI handoff. |
+| Next action | No further action; exact merged materializer and hosted evidence are recorded in quality/AR-1690-development-channel-materializer-receipt.txt. Continue AR-1691/AR-1693 paired lifecycle qualification. |
+
+### AR-1691 — ASB default-dev fresh-user lifecycle gate
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the ASB clone-to-benchmark lifecycle with omitted dev selection, current-main provenance, recording, strict offline replay, comparison, and analysis. |
+| Next action | A paired positive/negative journey receipt is recorded, but AR-1695 complete RunRequest wire-contract/backend qualification and AR-1696 TUI coverage repair remain required; after both, rerun the exact-head lifecycle and promote only with final receipt evidence. |
+
+### AR-1692 — Paired development-channel handoff contract
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Publish and validate the ASB handoff that lets asb-tui consume the exact default-dev materialization without losing provenance or blocking on development credentials. |
+| Next action | No further action; paired handoff implementation and hosted evidence are recorded in quality/AR-1692-paired-channel-handoff-receipt.txt. Final clean-room journey remains AR-1691/AR-1693. |
+
+### AR-1693 — Default-dev quickstart qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Prove the smallest selection-driven ASB journey from clone and omitted dev channel through benchmark, recording, offline replay, comparison, and analysis. |
+| Next action | The exact paired quickstart receipt is recorded, but AR-1695 complete RunRequest wire-contract/backend qualification and AR-1696 TUI coverage repair remain required; after both, rerun and promote only with final hosted/post-merge evidence. |
+
+### AR-1694 — Deterministic development artifact identity
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make repeated ASB dev-channel TUI builds path-independent so content-addressed handoff manifests validate across clean-room materializations. |
+| Next action | No further action; deterministic materialization and hosted evidence are recorded in quality/AR-1694-deterministic-artifact-receipt.txt. Final clean-room journey remains AR-1691/AR-1693. |
+
+### AR-1695 — Fan-out RunRequest wire-contract conformance
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the paired TUI fan-out route emit and validate the complete ASB RunRequest schema against the live control contract. |
+| Next action | Implement the paired contract fixture and real-backend acceptance checks for every required RunRequest field, bounded limits, digest/revision identity, and development-only warning behavior before the final lifecycle gates. |
+
+### AR-1696 — Paired TUI trusted-main coverage and release-gate repair
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the TUI trusted-main coverage deficit after fan-out integration and requalify the paired release gate without weakening thresholds or development semantics. |
+| Next action | Coordinate with TUI AR-1610 and add focused behavior coverage for changed fan-out, handoff, capture/replay, and comparison paths; rerun trusted-main coverage at the exact merged head and publish paired hosted evidence before AR-1691/AR-1693 closure. |
+
+### AR-1697 — Channel specification and current-head qualification repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the missing authoritative channel specs and requalify ASB/TUI channel propagation, manifest provenance, compatibility, and default-dev quickstart at current main heads. |
+| Next action | Complete valid AR-1674/1675-compatible state specifications, then run the current-head channel and quickstart matrix against ASB ad43609b and TUI 1cf4b43d without closing predecessor ARs from stale receipts. |
+
+### AR-1698 — Current-head recording and strict offline qualification repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the existing ASB selected/all recording, cassette sealing, and strict offline replay implementation at the current merged ASB head so AR-1652 can be reconciled truthfully. |
+| Next action | Run the current-head record, record-campaign, cassette integrity, strict offline replay, incomplete coverage, redaction, and network-denial matrix; publish a signed receipt without changing AR-1652 status from stale evidence. |
+
+### AR-1699 — Development live-provider credential bridge
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Connect the development setup and wizard configuration to a warning-only OpenRouter API-key reference and an explicit live-provider capability without requiring production attestation or key management. |
+| Next action | No further action; retain the warning-only development setup boundary and require an operator API key only for an explicitly selected live run. |
+
+### AR-1700 — Development live OpenRouter benchmark execution
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make &#96;asb run&#96; and benchmark/sweep routes execute real OpenRouter ChatCompletions for the selected agents and model in development mode, with bounded progress, errors, and cost/network reporting. |
+| Next action | No further action; retain explicit live selection and typed operator-key/transport failures, with local/mock remaining an explicit alternative. |
+
+### AR-1701 — Development live recording and comparison qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Record live OpenRouter responses for selected or all agents, seal a replayable cassette, and make the next run offline with comparison and analysis against the live baseline. |
+| Next action | Add live-run capture selection, redaction and cassette sealing, then qualify strict offline replay, comparison, and analysis from the same benchmark manifest. |
+
+### AR-1702 — Development live OpenRouter qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Run credential-backed online OpenRouter smoke and typed negative tests for the merged ASB live path without mock fallback. |
+| Next action | Promote after AR-1699 and AR-1700 are released; run the disposable credential-backed smoke and credential-free negative matrix at current exact ASB main. |
+
+### AR-1703 — Current-main TUI live-control qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify and repair the exact current asb-tui main PTY/control journey against ASB development live recording without pinning an older frontend or weakening live semantics. |
+| Next action | Reproduce the current-main PTY action gap, repair the owning boundary, then run the exact paired live/offline journey with a real OpenRouter key when supplied and credential-free negative checks otherwise. |
+
+### AR-1704 — Typed provider failures, model admission, and trusted curl discovery
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. |
+| Next action | Implement or qualify typed non-2xx and transport failure propagation, complete the connected provider/model compatibility matrix, and replace the fixed curl path with bounded trusted tool discovery; publish exact-head human/JSON evidence. |
+
+### AR-1709 — Development live provider execution contract and credential injection
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. |
+| Next action | PR #481 merged at ASB b21fa8c adds unavailable-model and malformed-credential deterministic negatives; run live selected/all success and final exact-head qualification against current main. |
+
+### AR-1710 — Wizard provider-model selection and warning-only readiness
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make provider, authentication mode, API-key readiness, agent defaults, and supported-model selection explicit and non-blocking in development setup. |
+| Next action | Expose the connected provider/model catalog and readiness diagnostics to the setup/materialization boundary; qualify shared defaults, per-agent overrides, unavailable models, and warning-only development auth. |
+
+### AR-1711 — Explicit live benchmark runner and typed failures
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide a simple explicit online benchmark command with selectable agents/workloads, typed failures, and no implicit mock or replay fallback. |
+| Next action | PR #483 merged at ASB b9c5835; exact-main live path reached OpenRouter but returned HTTP 429 free-models-per-day (daily remaining 0). Credential-free exact-main negative returns OPENROUTER_API_KEY required exit 3. Rerun selected/all after quota recovery. |
+
+### AR-1712 — Live result, recording, and comparison handoff contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Define the ASB live-run result and selected/all recording handoff consumed by TUI for offline replay and comparison. |
+| Next action | PR #484 merged at ASB 972a29f provides selected 2x2 and full 9x27 deterministic local-mock recording with offline_ready=true; still qualify strict network-denied replay, comparison, and paired TUI handoff before closure. |
+
+### AR-1715 — Credential-backed development OpenRouter qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Run the real OpenRouter selected/all live benchmark smoke and typed failure matrix with an operator API key, producing a privacy-safe exact-head receipt. |
+| Next action | PR #483 merged at ASB b9c5835; exact-main provider path reached OpenRouter but returned HTTP 429 free-models-per-day (daily remaining 0). Credential-free negative returns OPENROUTER_API_KEY required exit 3. Keep planned until quota recovers and selected/all succeeds. |
+
+### AR-1716 — Cassette provider-profile identity binding
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Bind every recording index insertion to the selected provider profile identity and reject mismatched cassette metadata before mutation. |
+| Next action | Add a focused RecordingIndex::insert identity fence and deterministic positive/mismatch tests, then qualify exact human/JSON diagnostics and receipt integrity. |
+
+### AR-1717 — Comparison exact provider/settings/endpoint identity fences
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Require exact provider, model settings, and endpoint identity equality before comparison admits online/offline results. |
+| Next action | Add focused comparison admission fences for provider, model/settings digest, endpoint identity, and generation; qualify symmetric/asymmetric mismatch diagnostics without weakening development setup. |
+
+### AR-1718 — Portable fault-matrix network isolation repair
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | ar1718_isolation |
+| Parent | None |
+| Children | None |
+| Summary | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. |
+| Next action | PR #487 is under hosted verification; merge protected, verify post-merge checks, publish the exact matrix receipt, and requalify AR-1596. |
+
+### AR-1719 — OpenRouter free-model catalog and wizard selection
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Enumerate OpenRouter explicit :free models and free-router eligibility, normalize dynamic metadata/capabilities, and expose eligible models through provider catalog, provider-plan, and wizard selection. |
+| Next action | Continue deterministic OpenRouter catalog normalization and fixtures; expose every eligible free model with typed unavailable/model-mismatch diagnostics and a credential-free/live smoke qualification path. |
+
+### AR-1720 — Claimed-task identity and coordinator integrity
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. |
+| Next action | Record the same-user independent-agent review of the exact isolated prototype head; no additional upstream authorization or merge is required for this development repair. |
+
+### AR-1721 — ControlServer v1.15 dynamic OpenRouter bridge
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | root_ar1721_recovery |
+| Parent | None |
+| Children | None |
+| Summary | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. |
+| Next action | PR #489 exact head dd10b075 is hosted-green; obtain an independent maintainer approval, then merge through the protected workflow and publish paired v1.15 qualification. |
+
+### AR-1722 — PR #487 protected-main requalification and merge-settings recovery
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | root_ar1722_recovery |
+| Parent | None |
+| Children | None |
+| Summary | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. |
+| Next action | Monitor PR #490 exact head 9b7941cdd810de1a948b0bfa632b8cfe649e748c until all 14 hosted checks are terminal green and obtain independent exact-head review. Keep GitHub settings and main unchanged until those gates pass. |
+
+
+## Dependency graph
+
+Arrows point from each prerequisite to the work that depends on it. Color is redundant
+with the status text inside every node; the tables below are the complete text
+alternative.
+
+```mermaid
+flowchart LR
+    subgraph series_00["00 - Coordination foundation"]
+        direction TB
+        AR_0001["AR-0001 - Done"]:::status_done
+        AR_0002["AR-0002 - Done"]:::status_done
+        AR_0003["AR-0003 - Done"]:::status_done
+        AR_0004["AR-0004 - Done"]:::status_done
+        AR_0005["AR-0005 - Done"]:::status_done
+    end
+    subgraph series_01["01 - Contracts and runtime"]
+        direction TB
+        AR_0101["AR-0101 - Done"]:::status_done
+        AR_0102["AR-0102 - Done"]:::status_done
+        AR_0103["AR-0103 - Done"]:::status_done
+        AR_0104["AR-0104 - Done"]:::status_done
+        AR_0105["AR-0105 - Done"]:::status_done
+    end
+    subgraph series_02["02 - Analysis"]
+        direction TB
+        AR_0201["AR-0201 - Done"]:::status_done
+        AR_0202["AR-0202 - Done"]:::status_done
+        AR_0203["AR-0203 - Done"]:::status_done
+        AR_0204["AR-0204 - Done"]:::status_done
+    end
+    subgraph series_03["03 - Adapters and workloads"]
+        direction TB
+        AR_0301["AR-0301 - Done"]:::status_done
+        AR_0302["AR-0302 - Done"]:::status_done
+        AR_0303["AR-0303 - Done"]:::status_done
+        AR_0304["AR-0304 - Done"]:::status_done
+        AR_0305["AR-0305 - Done"]:::status_done
+        AR_0306["AR-0306 - Done"]:::status_done
+        AR_0307["AR-0307 - Done"]:::status_done
+        AR_0308["AR-0308 - Done"]:::status_done
+        AR_0309["AR-0309 - Done"]:::status_done
+        AR_0310["AR-0310 - Done"]:::status_done
+        AR_0311["AR-0311 - Done"]:::status_done
+        AR_0312["AR-0312 - Done"]:::status_done
+        AR_0313["AR-0313 - Done"]:::status_done
+        AR_0314["AR-0314 - Done"]:::status_done
+        AR_0315["AR-0315 - Done"]:::status_done
+        AR_0316["AR-0316 - Done"]:::status_done
+        AR_0317["AR-0317 - Done"]:::status_done
+        AR_0318["AR-0318 - Done"]:::status_done
+        AR_0319["AR-0319 - Done"]:::status_done
+        AR_0320["AR-0320 - Done"]:::status_done
+    end
+    subgraph series_04["04 - Live measurement"]
+        direction TB
+        AR_0401["AR-0401 - Done"]:::status_done
+        AR_0402["AR-0402 - Done"]:::status_done
+        AR_0403["AR-0403 - Done"]:::status_done
+        AR_0404["AR-0404 - Done"]:::status_done
+        AR_0405["AR-0405 - Done"]:::status_done
+        AR_0406["AR-0406 - Done"]:::status_done
+    end
+    subgraph series_05["05 - Replay"]
+        direction TB
+        AR_0501["AR-0501 - Done"]:::status_done
+        AR_0502["AR-0502 - Done"]:::status_done
+        AR_0503["AR-0503 - Done"]:::status_done
+        AR_0504["AR-0504 - Done"]:::status_done
+        AR_0505["AR-0505 - Done"]:::status_done
+        AR_0506["AR-0506 - Done"]:::status_done
+        AR_0507["AR-0507 - Done"]:::status_done
+        AR_0508["AR-0508 - Done"]:::status_done
+        AR_0509["AR-0509 - Done"]:::status_done
+        AR_0510["AR-0510 - Done"]:::status_done
+        AR_0511["AR-0511 - Done"]:::status_done
+        AR_0512["AR-0512 - Done"]:::status_done
+        AR_0513["AR-0513 - Done"]:::status_done
+        AR_0514["AR-0514 - Blocked"]:::status_blocked
+        AR_0515["AR-0515 - Planned"]:::status_planned
+        AR_0516["AR-0516 - Done"]:::status_done
+        AR_0517["AR-0517 - Done"]:::status_done
+        AR_0518["AR-0518 - Done"]:::status_done
+        AR_0519["AR-0519 - Done"]:::status_done
+        AR_0520["AR-0520 - Done"]:::status_done
+        AR_0521["AR-0521 - Blocked"]:::status_blocked
+    end
+    subgraph series_06["06 - Metrics"]
+        direction TB
+        AR_0601["AR-0601 - Done"]:::status_done
+        AR_0602["AR-0602 - Planned"]:::status_planned
+        AR_0603["AR-0603 - Done"]:::status_done
+        AR_0604["AR-0604 - Blocked"]:::status_blocked
+    end
+    subgraph series_07["07 - Platforms"]
+        direction TB
+        AR_0701["AR-0701 - Done"]:::status_done
+        AR_0702["AR-0702 - Done"]:::status_done
+        AR_0703["AR-0703 - Future"]:::status_future
+        AR_0704["AR-0704 - Done"]:::status_done
+        AR_0705["AR-0705 - Blocked"]:::status_blocked
+        AR_0706["AR-0706 - Blocked"]:::status_blocked
+        AR_0707["AR-0707 - Done"]:::status_done
+    end
+    subgraph series_08["08 - Interfaces"]
+        direction TB
+        AR_0801["AR-0801 - Done"]:::status_done
+        AR_0802["AR-0802 - Done"]:::status_done
+        AR_0803["AR-0803 - Done"]:::status_done
+        AR_0804["AR-0804 - Done"]:::status_done
+        AR_0805["AR-0805 - Done"]:::status_done
+        AR_0806["AR-0806 - Done"]:::status_done
+        AR_0807["AR-0807 - Planned"]:::status_planned
+        AR_0808["AR-0808 - Planned"]:::status_planned
+        AR_0809["AR-0809 - Planned"]:::status_planned
+        AR_0810["AR-0810 - Planned"]:::status_planned
+        AR_0811["AR-0811 - Planned"]:::status_planned
+        AR_0812["AR-0812 - Done"]:::status_done
+        AR_0813["AR-0813 - Done"]:::status_done
+        AR_0814["AR-0814 - Blocked"]:::status_blocked
+        AR_0815["AR-0815 - Planned"]:::status_planned
+        AR_0816["AR-0816 - Planned"]:::status_planned
+        AR_0817["AR-0817 - Planned"]:::status_planned
+        AR_0818["AR-0818 - Planned"]:::status_planned
+        AR_0819["AR-0819 - Done"]:::status_done
+        AR_0820["AR-0820 - Done"]:::status_done
+        AR_0821["AR-0821 - Done"]:::status_done
+        AR_0822["AR-0822 - Done"]:::status_done
+        AR_0823["AR-0823 - Planned"]:::status_planned
+        AR_0830["AR-0830 - Done"]:::status_done
+        AR_0831["AR-0831 - Done"]:::status_done
+        AR_0832["AR-0832 - Blocked"]:::status_blocked
+        AR_0833["AR-0833 - Planned"]:::status_planned
+        AR_0834["AR-0834 - Done"]:::status_done
+        AR_0835["AR-0835 - Done"]:::status_done
+        AR_0836["AR-0836 - Blocked"]:::status_blocked
+        AR_0837["AR-0837 - Planned"]:::status_planned
+        AR_0840["AR-0840 - Done"]:::status_done
+        AR_0841["AR-0841 - Done"]:::status_done
+        AR_0842["AR-0842 - Done"]:::status_done
+        AR_0843["AR-0843 - Done"]:::status_done
+        AR_0844["AR-0844 - Done"]:::status_done
+        AR_0845["AR-0845 - Done"]:::status_done
+        AR_0846["AR-0846 - Planned"]:::status_planned
+        AR_0847["AR-0847 - Done"]:::status_done
+        AR_0848["AR-0848 - Done"]:::status_done
+        AR_0849["AR-0849 - Done"]:::status_done
+        AR_0850["AR-0850 - Done"]:::status_done
+        AR_0851["AR-0851 - Done"]:::status_done
+        AR_0852["AR-0852 - Done"]:::status_done
+        AR_0853["AR-0853 - Done"]:::status_done
+        AR_0854["AR-0854 - Done"]:::status_done
+        AR_0855["AR-0855 - Done"]:::status_done
+        AR_0856["AR-0856 - Planned"]:::status_planned
+        AR_0857["AR-0857 - Done"]:::status_done
+        AR_0858["AR-0858 - Done"]:::status_done
+        AR_0859["AR-0859 - Done"]:::status_done
+        AR_0860["AR-0860 - Done"]:::status_done
+        AR_0861["AR-0861 - Blocked"]:::status_blocked
+        AR_0862["AR-0862 - Planned"]:::status_planned
+        AR_0863["AR-0863 - Blocked"]:::status_blocked
+        AR_0864["AR-0864 - Planned"]:::status_planned
+        AR_0865["AR-0865 - Planned"]:::status_planned
+        AR_0866["AR-0866 - Planned"]:::status_planned
+        AR_0867["AR-0867 - Planned"]:::status_planned
+        AR_0868["AR-0868 - Planned"]:::status_planned
+        AR_0869["AR-0869 - Done"]:::status_done
+        AR_0870["AR-0870 - Done"]:::status_done
+        AR_0871["AR-0871 - Done"]:::status_done
+        AR_0872["AR-0872 - Done"]:::status_done
+        AR_0873["AR-0873 - Planned"]:::status_planned
+        AR_0874["AR-0874 - Planned"]:::status_planned
+        AR_0875["AR-0875 - Done"]:::status_done
+        AR_0876["AR-0876 - Done"]:::status_done
+        AR_0877["AR-0877 - Done"]:::status_done
+        AR_0878["AR-0878 - Done"]:::status_done
+        AR_0879["AR-0879 - Done"]:::status_done
+        AR_0880["AR-0880 - Done"]:::status_done
+        AR_0888["AR-0888 - Done"]:::status_done
+        AR_0889["AR-0889 - Done"]:::status_done
+        AR_0890["AR-0890 - Blocked"]:::status_blocked
+        AR_0891["AR-0891 - Done"]:::status_done
+        AR_0892["AR-0892 - Planned"]:::status_planned
+        AR_0893["AR-0893 - Planned"]:::status_planned
+        AR_0894["AR-0894 - Planned"]:::status_planned
+        AR_0895["AR-0895 - Done"]:::status_done
+        AR_0896["AR-0896 - Blocked"]:::status_blocked
+        AR_0897["AR-0897 - Done"]:::status_done
+        AR_0898["AR-0898 - Done"]:::status_done
+        AR_0899["AR-0899 - Done"]:::status_done
+    end
+    subgraph series_09["09 - Assurance"]
+        direction TB
+        AR_0901["AR-0901 - Done"]:::status_done
+        AR_0902["AR-0902 - Done"]:::status_done
+        AR_0903["AR-0903 - Planned"]:::status_planned
+        AR_0904["AR-0904 - Done"]:::status_done
+        AR_0905["AR-0905 - Done"]:::status_done
+        AR_0906["AR-0906 - Done"]:::status_done
+        AR_0907["AR-0907 - Done"]:::status_done
+        AR_0908["AR-0908 - Done"]:::status_done
+        AR_0909["AR-0909 - Done"]:::status_done
+    end
+    subgraph series_10["10 - Reliability and release"]
+        direction TB
+        AR_1001["AR-1001 - Done"]:::status_done
+        AR_1002["AR-1002 - Done"]:::status_done
+        AR_1003["AR-1003 - Done"]:::status_done
+        AR_1004["AR-1004 - Done"]:::status_done
+        AR_1005["AR-1005 - Done"]:::status_done
+        AR_1006["AR-1006 - Done"]:::status_done
+        AR_1007["AR-1007 - Done"]:::status_done
+        AR_1008["AR-1008 - Done"]:::status_done
+        AR_1010["AR-1010 - Done"]:::status_done
+        AR_1011["AR-1011 - Planned"]:::status_planned
+        AR_1012["AR-1012 - Planned"]:::status_planned
+        AR_1013["AR-1013 - Done"]:::status_done
+        AR_1014["AR-1014 - Planned"]:::status_planned
+        AR_1015["AR-1015 - Planned"]:::status_planned
+        AR_1016["AR-1016 - Planned"]:::status_planned
+        AR_1017["AR-1017 - Done"]:::status_done
+        AR_1018["AR-1018 - Done"]:::status_done
+        AR_1019["AR-1019 - Done"]:::status_done
+        AR_1020["AR-1020 - Done"]:::status_done
+        AR_1021["AR-1021 - Done"]:::status_done
+        AR_1022["AR-1022 - Done"]:::status_done
+        AR_1023["AR-1023 - Done"]:::status_done
+        AR_1024["AR-1024 - Blocked"]:::status_blocked
+        AR_1025["AR-1025 - Blocked"]:::status_blocked
+        AR_1026["AR-1026 - Planned"]:::status_planned
+        AR_1027["AR-1027 - Planned"]:::status_planned
+        AR_1028["AR-1028 - Done"]:::status_done
+        AR_1029["AR-1029 - Planned"]:::status_planned
+        AR_1030["AR-1030 - Done"]:::status_done
+        AR_1031["AR-1031 - Planned"]:::status_planned
+        AR_1032["AR-1032 - Planned"]:::status_planned
         AR_1033["AR-1033 - Planned"]:::status_planned
         AR_1034["AR-1034 - Planned"]:::status_planned
         AR_1035["AR-1035 - Planned"]:::status_planned
@@ -443,7 +1080,7 @@
         AR_1609["AR-1609 - Done"]:::status_done
         AR_1611["AR-1611 - Done"]:::status_done
         AR_1612["AR-1612 - Done"]:::status_done
-        AR_1613["AR-1613 - In progress"]:::status_in_progress
+        AR_1613["AR-1613 - Open"]:::status_open
         AR_1614["AR-1614 - Done"]:::status_done
         AR_1615["AR-1615 - Done"]:::status_done
         AR_1617["AR-1617 - Done"]:::status_done
@@ -478,14 +1115,14 @@
         AR_1646["AR-1646 - Done"]:::status_done
         AR_1647["AR-1647 - Planned"]:::status_planned
         AR_1648["AR-1648 - Done"]:::status_done
-        AR_1649["AR-1649 - Planned"]:::status_planned
-        AR_1650["AR-1650 - Planned"]:::status_planned
-        AR_1651["AR-1651 - Planned"]:::status_planned
+        AR_1649["AR-1649 - Done"]:::status_done
+        AR_1650["AR-1650 - Done"]:::status_done
+        AR_1651["AR-1651 - Done"]:::status_done
         AR_1652["AR-1652 - Planned"]:::status_planned
         AR_1653["AR-1653 - Planned"]:::status_planned
         AR_1654["AR-1654 - Planned"]:::status_planned
         AR_1655["AR-1655 - Planned"]:::status_planned
-        AR_1656["AR-1656 - Planned"]:::status_planned
+        AR_1656["AR-1656 - Done"]:::status_done
         AR_1657["AR-1657 - Planned"]:::status_planned
         AR_1658["AR-1658 - Planned"]:::status_planned
         AR_1659["AR-1659 - Planned"]:::status_planned
@@ -493,6 +1130,57 @@
         AR_1661["AR-1661 - Done"]:::status_done
         AR_1663["AR-1663 - Planned"]:::status_planned
         AR_1665["AR-1665 - Planned"]:::status_planned
+        AR_1666["AR-1666 - Planned"]:::status_planned
+        AR_1667["AR-1667 - Planned"]:::status_planned
+        AR_1668["AR-1668 - Planned"]:::status_planned
+        AR_1670["AR-1670 - Planned"]:::status_planned
+        AR_1671["AR-1671 - Planned"]:::status_planned
+        AR_1674["AR-1674 - Planned"]:::status_planned
+        AR_1675["AR-1675 - Planned"]:::status_planned
+        AR_1676["AR-1676 - Planned"]:::status_planned
+        AR_1677["AR-1677 - Planned"]:::status_planned
+        AR_1678["AR-1678 - Done"]:::status_done
+        AR_1679["AR-1679 - Planned"]:::status_planned
+        AR_1680["AR-1680 - Planned"]:::status_planned
+        AR_1681["AR-1681 - Planned"]:::status_planned
+        AR_1682["AR-1682 - Planned"]:::status_planned
+        AR_1683["AR-1683 - Planned"]:::status_planned
+        AR_1684["AR-1684 - Planned"]:::status_planned
+        AR_1685["AR-1685 - Done"]:::status_done
+        AR_1686["AR-1686 - In progress"]:::status_in_progress
+        AR_1687["AR-1687 - Done"]:::status_done
+        AR_1688["AR-1688 - Done"]:::status_done
+        AR_1689["AR-1689 - Planned"]:::status_planned
+        AR_1690["AR-1690 - Done"]:::status_done
+        AR_1691["AR-1691 - Planned"]:::status_planned
+        AR_1692["AR-1692 - Done"]:::status_done
+        AR_1693["AR-1693 - Planned"]:::status_planned
+        AR_1694["AR-1694 - Done"]:::status_done
+        AR_1695["AR-1695 - Done"]:::status_done
+        AR_1696["AR-1696 - Done"]:::status_done
+        AR_1697["AR-1697 - Planned"]:::status_planned
+        AR_1698["AR-1698 - Planned"]:::status_planned
+        AR_1699["AR-1699 - Done"]:::status_done
+    end
+    subgraph series_17["17 - Additional work"]
+        direction TB
+        AR_1700["AR-1700 - Done"]:::status_done
+        AR_1701["AR-1701 - Planned"]:::status_planned
+        AR_1702["AR-1702 - Planned"]:::status_planned
+        AR_1703["AR-1703 - Planned"]:::status_planned
+        AR_1704["AR-1704 - Planned"]:::status_planned
+        AR_1709["AR-1709 - Planned"]:::status_planned
+        AR_1710["AR-1710 - Planned"]:::status_planned
+        AR_1711["AR-1711 - Planned"]:::status_planned
+        AR_1712["AR-1712 - Planned"]:::status_planned
+        AR_1715["AR-1715 - Planned"]:::status_planned
+        AR_1716["AR-1716 - Planned"]:::status_planned
+        AR_1717["AR-1717 - Planned"]:::status_planned
+        AR_1718["AR-1718 - In progress"]:::status_in_progress
+        AR_1719["AR-1719 - Done"]:::status_done
+        AR_1720["AR-1720 - Done"]:::status_done
+        AR_1721["AR-1721 - In progress"]:::status_in_progress
+        AR_1722["AR-1722 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1468,8 +2156,10 @@
     AR_1328 --> AR_1437
     AR_1328 --> AR_1440
     AR_1328 --> AR_1442
+    AR_1328 --> AR_1699
     AR_1329 --> AR_1330
     AR_1329 --> AR_1333
+    AR_1329 --> AR_1700
     AR_1330 --> AR_1463
     AR_1330 --> AR_1496
     AR_1331 --> AR_1332
@@ -1744,13 +2434,17 @@
     AR_1424 --> AR_1425
     AR_1425 --> AR_1426
     AR_1427 --> AR_1431
+    AR_1427 --> AR_1722
     AR_1430 --> AR_1424
+    AR_1431 --> AR_1722
+    AR_1432 --> AR_1699
     AR_1433 --> AR_1446
     AR_1433 --> AR_1447
     AR_1433 --> AR_1451
     AR_1433 --> AR_1452
     AR_1433 --> AR_1456
     AR_1433 --> AR_1496
+    AR_1433 --> AR_1700
     AR_1434 --> AR_1435
     AR_1435 --> AR_1436
     AR_1436 --> AR_1437
@@ -2054,6 +2748,7 @@
     AR_1596 --> AR_1602
     AR_1597 --> AR_1598
     AR_1597 --> AR_1600
+    AR_1597 --> AR_1718
     AR_1598 --> AR_1603
     AR_1599 --> AR_1600
     AR_1599 --> AR_1601
@@ -2184,26 +2879,41 @@
     AR_1645 --> AR_1647
     AR_1645 --> AR_1648
     AR_1645 --> AR_1657
+    AR_1645 --> AR_1686
+    AR_1645 --> AR_1695
     AR_1646 --> AR_1643
     AR_1646 --> AR_1647
     AR_1646 --> AR_1648
     AR_1646 --> AR_1652
+    AR_1646 --> AR_1686
+    AR_1646 --> AR_1688
+    AR_1646 --> AR_1698
     AR_1647 --> AR_1643
     AR_1647 --> AR_1657
     AR_1648 --> AR_1647
     AR_1648 --> AR_1649
     AR_1648 --> AR_1650
+    AR_1648 --> AR_1686
+    AR_1648 --> AR_1695
     AR_1649 --> AR_1647
     AR_1649 --> AR_1651
+    AR_1649 --> AR_1686
+    AR_1649 --> AR_1687
     AR_1650 --> AR_1647
     AR_1650 --> AR_1652
+    AR_1650 --> AR_1686
+    AR_1650 --> AR_1695
     AR_1651 --> AR_1643
     AR_1651 --> AR_1647
     AR_1651 --> AR_1655
     AR_1651 --> AR_1657
+    AR_1651 --> AR_1686
+    AR_1651 --> AR_1687
     AR_1652 --> AR_1643
     AR_1652 --> AR_1654
     AR_1652 --> AR_1655
+    AR_1652 --> AR_1686
+    AR_1652 --> AR_1688
     AR_1653 --> AR_1654
     AR_1653 --> AR_1655
     AR_1653 --> AR_1658
@@ -2211,14 +2921,96 @@
     AR_1654 --> AR_1660
     AR_1656 --> AR_1654
     AR_1656 --> AR_1657
+    AR_1656 --> AR_1704
+    AR_1656 --> AR_1710
+    AR_1656 --> AR_1719
     AR_1657 --> AR_1655
     AR_1657 --> AR_1660
+    AR_1657 --> AR_1704
+    AR_1657 --> AR_1710
     AR_1658 --> AR_1659
     AR_1658 --> AR_1663
+    AR_1658 --> AR_1667
+    AR_1658 --> AR_1674
+    AR_1658 --> AR_1675
+    AR_1658 --> AR_1676
+    AR_1658 --> AR_1697
     AR_1659 --> AR_1660
+    AR_1659 --> AR_1667
+    AR_1659 --> AR_1674
+    AR_1659 --> AR_1697
+    AR_1660 --> AR_1667
+    AR_1660 --> AR_1668
+    AR_1660 --> AR_1697
     AR_1661 --> AR_1663
     AR_1661 --> AR_1665
     AR_1663 --> AR_1665
+    AR_1663 --> AR_1666
+    AR_1665 --> AR_1666
+    AR_1665 --> AR_1670
+    AR_1665 --> AR_1679
+    AR_1665 --> AR_1680
+    AR_1665 --> AR_1681
+    AR_1665 --> AR_1682
+    AR_1667 --> AR_1668
+    AR_1668 --> AR_1677
+    AR_1670 --> AR_1671
+    AR_1671 --> AR_1684
+    AR_1674 --> AR_1675
+    AR_1674 --> AR_1676
+    AR_1674 --> AR_1690
+    AR_1675 --> AR_1676
+    AR_1675 --> AR_1690
+    AR_1676 --> AR_1677
+    AR_1676 --> AR_1678
+    AR_1676 --> AR_1691
+    AR_1677 --> AR_1678
+    AR_1677 --> AR_1691
+    AR_1682 --> AR_1683
+    AR_1686 --> AR_1689
+    AR_1687 --> AR_1686
+    AR_1687 --> AR_1689
+    AR_1688 --> AR_1686
+    AR_1688 --> AR_1689
+    AR_1688 --> AR_1691
+    AR_1688 --> AR_1698
+    AR_1690 --> AR_1691
+    AR_1690 --> AR_1692
+    AR_1690 --> AR_1694
+    AR_1691 --> AR_1693
+    AR_1692 --> AR_1693
+    AR_1694 --> AR_1691
+    AR_1694 --> AR_1693
+    AR_1695 --> AR_1691
+    AR_1695 --> AR_1693
+    AR_1695 --> AR_1696
+    AR_1696 --> AR_1691
+    AR_1696 --> AR_1693
+    AR_1698 --> AR_1701
+    AR_1698 --> AR_1712
+    AR_1699 --> AR_1700
+    AR_1699 --> AR_1702
+    AR_1699 --> AR_1704
+    AR_1699 --> AR_1709
+    AR_1700 --> AR_1701
+    AR_1700 --> AR_1702
+    AR_1700 --> AR_1704
+    AR_1700 --> AR_1709
+    AR_1700 --> AR_1711
+    AR_1700 --> AR_1715
+    AR_1701 --> AR_1703
+    AR_1701 --> AR_1712
+    AR_1702 --> AR_1703
+    AR_1704 --> AR_1709
+    AR_1704 --> AR_1711
+    AR_1709 --> AR_1710
+    AR_1709 --> AR_1711
+    AR_1709 --> AR_1715
+    AR_1711 --> AR_1712
+    AR_1711 --> AR_1715
+    AR_1712 --> AR_1716
+    AR_1712 --> AR_1717
+    AR_1719 --> AR_1721
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2422,135 +3214,3 @@
 | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-0904](../tasks/AR-0904-contract-consistency.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md), [AR-1038](../tasks/AR-1038-capability-coverage-sink.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) |
 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md) | [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md) |
 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
-| [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md), [AR-1170](../tasks/AR-1170.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md), [AR-1180](../tasks/AR-1180.md) |
-| [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) | [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) | None |
-| [AR-1028](../tasks/AR-1028-asb-cli-workflow-captures.md) | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md) | None |
-| [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) | [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) |
-| [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
-| [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md) | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) |
-| [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md) |
-| [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) | [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
-| [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1160](../tasks/AR-1160.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1170](../tasks/AR-1170.md) |
-| [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) |
-| [AR-1036](../tasks/AR-1036-measurement-catalog-control.md) | [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) |
-| [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
-| [AR-1038](../tasks/AR-1038-capability-coverage-sink.md) | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | None |
-| [AR-1039](../tasks/AR-1039-measurement-catalog-merge-attestation.md) | None | None |
-| [AR-1040](../tasks/AR-1040-protected-merge-signature-policy.md) | None | [AR-1043](../tasks/AR-1043-protected-topic-sync-topology.md) |
-| [AR-1041](../tasks/AR-1041-gemini-hook-readiness-race.md) | None | None |
-| [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md) | None | None |
-| [AR-1043](../tasks/AR-1043-protected-topic-sync-topology.md) | [AR-1040](../tasks/AR-1040-protected-merge-signature-policy.md) | None |
-| [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md) | None | None |
-| [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md) | None | [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md) |
-| [AR-1046](../tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md) | None | None |
-| [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md) | None | None |
-| [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md) | None | None |
-| [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md) | None | None |
-| [AR-1050](../tasks/AR-1050-tmux-authenticated-startup-readiness.md) | None | None |
-| [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md) | [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md) | None |
-| [AR-1052](../tasks/AR-1052-tmux-server-authority-portability.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
-| [AR-1053](../tasks/AR-1053-asb-tui-roadmap-hardening.md) | None | None |
-| [AR-1054](../tasks/AR-1054-tmux-socket-connect-completion.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
-| [AR-1055](../tasks/AR-1055-asb-tui-install-integration-readiness.md) | None | None |
-| [AR-1056](../tasks/AR-1056-tmux-socket-connect-diagnostics.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
-| [AR-1057](../tasks/AR-1057-asb-tui-control-v1-3-readiness.md) | None | None |
-| [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md) | [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
-| [AR-1059](../tasks/AR-1059-asb-tui-lifecycle-router-publication-readiness.md) | None | None |
-| [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1160](../tasks/AR-1160.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) |
-| [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) | [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
-| [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) |
-| [AR-1064](../tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md) | None | None |
-| [AR-1065](../tasks/AR-1065-asb-tui-branch-policy-context.md) | None | None |
-| [AR-1100](../tasks/AR-1100.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
-| [AR-1110](../tasks/AR-1110.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1120](../tasks/AR-1120.md) | [AR-1130](../tasks/AR-1130.md) |
-| [AR-1120](../tasks/AR-1120.md) | [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1110](../tasks/AR-1110.md) |
-| [AR-1130](../tasks/AR-1130.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1110](../tasks/AR-1110.md) | [AR-1140](../tasks/AR-1140.md), [AR-1150](../tasks/AR-1150.md) |
-| [AR-1140](../tasks/AR-1140.md) | [AR-1130](../tasks/AR-1130.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1180](../tasks/AR-1180.md) |
-| [AR-1150](../tasks/AR-1150.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1130](../tasks/AR-1130.md) | [AR-1151](../tasks/AR-1151.md) |
-| [AR-1151](../tasks/AR-1151.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1150](../tasks/AR-1150.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-1160](../tasks/AR-1160.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) |
-| [AR-1160](../tasks/AR-1160.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1170](../tasks/AR-1170.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) |
-| [AR-1170](../tasks/AR-1170.md) | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1160](../tasks/AR-1160.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1180](../tasks/AR-1180.md) |
-| [AR-1180](../tasks/AR-1180.md) | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
-| [AR-1181](../tasks/AR-1181.md) | None | None |
-| [AR-1190](../tasks/AR-1190.md) | None | [AR-1191](../tasks/AR-1191.md), [AR-1198](../tasks/AR-1198.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1299](../tasks/AR-1299.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
-| [AR-1191](../tasks/AR-1191.md) | [AR-1190](../tasks/AR-1190.md) | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
-| [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md) | None | None |
-| [AR-1197](../tasks/AR-1197-control-scratch-isolation-current-main.md) | None | None |
-| [AR-1198](../tasks/AR-1198.md) | [AR-1190](../tasks/AR-1190.md) | None |
-| [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md) | [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) | None |
-| [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | None | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md), [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md), [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md), [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md) |
-| [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md) | None | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md) | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md) | [AR-1212](../tasks/AR-1212-benchmark-readiness.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1212](../tasks/AR-1212-benchmark-readiness.md) | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1212](../tasks/AR-1212-benchmark-readiness.md) | [AR-1214](../tasks/AR-1214-record-replay.md), [AR-1215](../tasks/AR-1215-result-comparison.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1214](../tasks/AR-1214-record-replay.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1215](../tasks/AR-1215-result-comparison.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
-| [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md), [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md), [AR-1212](../tasks/AR-1212-benchmark-readiness.md), [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md), [AR-1214](../tasks/AR-1214-record-replay.md), [AR-1215](../tasks/AR-1215-result-comparison.md) | None |
-| [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) |
-| [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md), [AR-1160](../tasks/AR-1160.md) | None |
-| [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) |
-| [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md) |
-| [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
-| [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1151](../tasks/AR-1151.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) |
-| [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1151](../tasks/AR-1151.md), [AR-1244](../tasks/AR-1244-publish-replay-supervision.md), [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) |
-| [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
-| [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
-| [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
-| [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) |
-| [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md), [AR-1268](../tasks/AR-1268-replay-transport-boundary.md), [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md), [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md), [AR-1271](../tasks/AR-1271-cassette-operation-contract.md), [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md), [AR-1273](../tasks/AR-1273-complete-replay-context.md), [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md), [AR-1275](../tasks/AR-1275-replay-operation-injection.md), [AR-1276](../tasks/AR-1276-primary-replay-runtime.md), [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md), [AR-1278](../tasks/AR-1278-primary-runtime-client.md), [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md), [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md), [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
-| [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md), [AR-1268](../tasks/AR-1268-replay-transport-boundary.md), [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md), [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md), [AR-1271](../tasks/AR-1271-cassette-operation-contract.md), [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md), [AR-1273](../tasks/AR-1273-complete-replay-context.md), [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md), [AR-1275](../tasks/AR-1275-replay-operation-injection.md), [AR-1276](../tasks/AR-1276-primary-replay-runtime.md), [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md), [AR-1278](../tasks/AR-1278-primary-runtime-client.md), [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md), [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md), [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
-| [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md), [AR-1268](../tasks/AR-1268-replay-transport-boundary.md), [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md), [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md), [AR-1271](../tasks/AR-1271-cassette-operation-contract.md), [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md), [AR-1273](../tasks/AR-1273-complete-replay-context.md), [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md), [AR-1275](../tasks/AR-1275-replay-operation-injection.md), [AR-1276](../tasks/AR-1276-primary-replay-runtime.md), [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md), [AR-1278](../tasks/AR-1278-primary-runtime-client.md), [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md), [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md), [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
-| [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
-| [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
-| [AR-1242](../tasks/AR-1242-protected-main-admission.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md), [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md), [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md), [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) |
-| [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) |
-| [AR-1244](../tasks/AR-1244-publish-replay-supervision.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |
-| [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) |
-| [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | None |
-| [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
-| [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |
-| [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | None |
-| [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
-| [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
-| [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md), [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md), [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md), [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) |
-| [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md), [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md), [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md) |
-| [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md) |
-| [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md) | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md), [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md) | None |
-| [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | None |
-| [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) | None |
-| [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md) | None | None |
-| [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
-| [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | None |
-| [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) | [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | None |
-| [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1267](../tasks/AR-1267-runtime-replay-execution.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1268](../tasks/AR-1268-replay-transport-boundary.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1271](../tasks/AR-1271-cassette-operation-contract.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1273](../tasks/AR-1273-complete-replay-context.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1275](../tasks/AR-1275-replay-operation-injection.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1276](../tasks/AR-1276-primary-replay-runtime.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1278](../tasks/AR-1278-primary-runtime-client.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
-| [AR-1283](../tasks/AR-1283-formal-lockfile.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
-| [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | None |
-| [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
-| [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
-| [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
-| [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) |
-| [AR-1289](../tasks/AR-1289-formal-lock-gate.md) | None | None |
-| [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md) | None | None |
-| [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md) | None | None |
-| [AR-1292](../tasks/AR-1292-tla-provenance-repair.md) | None | None |
-| [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |

@@ -1,0 +1,1 @@
+{"id":"AR-1702","title":"Development live OpenRouter qualification","version":1,"acceptance":["credential-backed bounded online smoke","typed missing/invalid credential, timeout, transport, and provider failure paths","explicit local/mock distinction with no live fallback","redacted credential-free receipt at exact ASB head"]}

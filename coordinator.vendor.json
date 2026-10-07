@@ -45,7 +45,7 @@
       "source": "tests/test_checkpoint_records.py"
     },
     "tests/test_handoffctl.py": {
-      "sha256": "2d02343b78bca26b3389ab89160d5eafe5002101150f70eb7e10d805ca47af00",
+      "sha256": "53918bcb5f4c80fce9ba402d4b604c5ccfbe9b5da99aa618bd3f99d001fefdef",
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_hierarchy.py": {
@@ -81,7 +81,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "3c7f8b2b2bfecb98d707572d1be1be9b40cc27c4104b230b80567b8a65eb5b36",
+      "sha256": "84cce540666128c6aa8003a6302d33d51e1fea5e8211068cfec038391b3dfd0e",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -149,11 +149,11 @@
       "source": "tools/status_renderer.py"
     },
     "tools/task_spec.py": {
-      "sha256": "99b6568042eb46955a419d9d8084b48229a1bd079360a246e468f97bdbd1f314",
+      "sha256": "5ad1bdb1b79dbb2e85233993f35b2e0f9bacc5d530bd26498d4fca27b65734d2",
       "source": "tools/task_spec.py"
     },
     "tools/upgrade_authority.py": {
-      "sha256": "13351edbea86873b0fd4d09d1f4f4c6540d5db2f2f397c0894e8d22064c51dd1",
+      "sha256": "84181acfe379426be5934be03dd9c6423223345d07dfb863eb154acc3716c67b",
       "source": "tools/upgrade_authority.py"
     },
     "tools/upgrade_binding.py": {

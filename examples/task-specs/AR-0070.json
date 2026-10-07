@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "spec_ref": "examples/task-specs/AR-0070.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "schema-valid", "description": "The task specification validates against its schema."},
+    {"id": "metadata-bound", "description": "The task metadata revision matches this specification."}
+  ],
+  "definition_of_done": ["Schema and hostile fixtures pass the repository validation gates."],
+  "inputs": [{"id": "task-record", "description": "The Coordinator task record being specified."}],
+  "outputs": [{"id": "review-pr", "description": "A reviewed implementation pull request."}],
+  "allowed_tools": ["source.read", "source.write", "tests.run"],
+  "forbidden_tools": ["authority.release", "authority.rollback"],
+  "required_evidence_classes": ["mechanical", "contract-test"],
+  "gates": [{"id": "quality", "description": "Format, lint, type, test, and coverage gates pass."}]
+}

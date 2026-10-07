@@ -1,0 +1,59 @@
+AR-1676/AR-1677 paired channel and rollback qualification receipt
+Date: 2026-10-03
+Classification: development qualification evidence; no secret material
+
+Scope
+-----
+This receipt qualifies the paired channel vocabulary, persistence, unavailable
+channel behavior, manifest/release fixtures, and ASB rollback behavior against
+the exact current product heads. It does not transition AR statuses; the
+authoritative dependency chain remains coordinator-controlled.
+
+Exact inputs
+------------
+ASB repository: https://github.com/martin-beck/agent-systems-benchmark.git
+ASB commit: 502254bd9eca1866bfb54b13f663c4aa4166c62a
+ASB tree: 91da6742583a363679bab9f0674781f6921e60e2
+asb-tui repository: https://github.com/martin-beck/asb-tui.git
+asb-tui commit: c9777ed33be3bd095c119b912803cdc44cbc94d9
+asb-tui tree: e1e102be776c18dc67c0ae2407117d5388190b92
+Workspace: fresh isolated clones under /tmp/ar1676-final-R4GJ
+
+Executed checks
+---------------
+asb-tui:
+`cargo test --locked --test compatibility --test release_discovery --test top_level`
+Result: 24 passed, 0 failed.
+Breakdown: compatibility 9/9; release discovery/tamper/signature fixtures
+5/5; top-level lifecycle, default persistence, unavailable channels, and
+development materialization 10/10.
+
+ASB rollback:
+`cargo test --locked -p asb-cli tui::tests::durable_rollback_survives_download_cache_removal -- --nocapture`
+Result: 1 passed, 0 failed. The durable rollback marker survives removal of
+the download cache and restores the prior materialized version.
+
+ASB lifecycle contract:
+`cargo test --locked -p asb-cli --test tui_lifecycle`
+Result: 5 passed, 0 failed. This was already verified in the same isolated
+workspace; a concurrent duplicate build hit host disk exhaustion before test
+linking, not a source/test failure. The completed lifecycle run is the
+authoritative result.
+
+Acceptance findings
+-------------------
+* Omitted channel defaults to `dev` for a fresh install; explicit selection is
+  persisted through restart and lifecycle operations.
+* stable/nightly/experimental remain typed unavailable channels with no silent
+  fallback to dev or stable.
+* Manifest/release fixtures reject malformed, unsigned, tampered, substituted-
+  signer, stale, and mutable inputs with privacy-safe diagnostics.
+* ASB rollback is durable and cache-independent.
+* Development authentication, signatures, and key-management remain warning-
+  only; strict release gates remain intact.
+
+Conclusion
+----------
+The paired AR-1676/1677 predicates pass at these exact heads. No product repair
+was required. AR statuses intentionally remain unchanged until handoffctl
+dependency policy permits their authoritative transitions.

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "assignment_id": "assignment-worker-001",
+  "owner_id": "worker-001",
+  "roles": [{"role_id": "implementer", "expires_at": "2020-01-01T00:00:00Z"}],
+  "authorization_evidence": [{"kind": "policy", "ref": "coordinator/policy/roles", "digest": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}]
+}

@@ -17,8 +17,11 @@
   "summary": "Optional future production-live platform authority bootstrap; not a development qualification requirement.",
   "task_revision": 10,
   "title": "First-customer platform authority deployment bootstrap",
-  "updated_at": "2026-09-30T03:11:41+00:00"
+  "updated_at": "2026-09-30T03:11:41+00:00",
+  "worktree_key": "",
+  "plan": ""
 }
+
 ---
 
 # AR-1551

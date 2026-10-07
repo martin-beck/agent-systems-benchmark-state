@@ -1,0 +1,11 @@
+AR-1650 fan-out control protocol and TUI integration receipt
+
+Implementation: ASB PR #447, merged at 91ef33813468118ee0186aff32e38b51d63291ba.
+Paired TUI adapter: PR #238, merged at a1923cb9bc1547904963bd8debd2d5894e35f20b.
+Both immutable heads were independently reviewed and hosted checks passed.
+
+Evidence:
+- Versioned control route exposes selected-agent/workload fan-out.
+- TUI adapter preserves human-readable and JSON projections and offline mode.
+- Development-only missing authentication, signatures, and key management remain
+  visible warnings and never block the prototype route.

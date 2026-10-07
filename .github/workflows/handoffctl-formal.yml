@@ -37,6 +37,9 @@ env:
   # second-disk root; never fall back to runner /tmp or checkout paths.
   TLC_RUNTIME_ROOT: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}
   TLC_ATTESTATION_PATH: /srv/data/projects/.asb-tlc/attestations/ci-${{ github.run_id }}.json
+  # Match the approved pr-publication resource profile consumed by attest.py.
+  TLC_MEMORY_MAX: 3G
+  TLC_SWAP_MAX: 3G
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
