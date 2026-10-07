@@ -1,5 +1,13 @@
 # State-repository coordinator policy
 
+Development review identity is defined in
+[`DEVELOPMENT_REVIEW_POLICY.md`](DEVELOPMENT_REVIEW_POLICY.md). An independent
+technical review-worker remains mandatory, but a same-account GitHub approval
+is sufficient for development integration after exact-head checks, signatures,
+DCO, privacy, and post-merge assurance requirements pass. No separate
+authorized-maintainer or second-account approval is required. Verified release
+and provenance gates remain unchanged.
+
 This file contains project-local policy; `docs/agent-workflow-coordinator.md` remains an
 unaltered vendored coordinator release document.
 
