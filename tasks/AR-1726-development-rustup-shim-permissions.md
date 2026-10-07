@@ -11,7 +11,7 @@
   "id": "AR-1726",
   "next_action": "Promote after dependency verification; implement the bounded development-only permission exception, focused hostile-path tests, and exact paired installed lifecycle qualification.",
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "a00796aabce4bc0e125149b9d193e0b7d9799718",
   "owner": "codex-ar1726-rustup",
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-07T23:10:19+00:00",
+  "updated_at": "2026-10-07T23:11:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
