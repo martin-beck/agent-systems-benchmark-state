@@ -2,23 +2,23 @@
 {
   "branch": "repair/ar-1727-development-broker-foreground-terminal",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T00:55:31+00:00",
   "depends_on": [
     "AR-1590"
   ],
   "id": "AR-1727",
   "next_action": "Promote and claim after coordinator reconciliation; repair the ASB development broker foreground-terminal handoff, add a controlling-PTY regression on the actual broker launch path, and retain bounded process-group cleanup.",
-  "owner": "",
+  "owner": "codex-ar1727-broker-foreground",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-07T22:54:25+00:00",
+  "updated_at": "2026-10-07T22:55:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -50,3 +50,5 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 - 2026-10-07T22:54:25+00:00: AR-1590 is done; downstream TUI AR-1654 has exact evidence of the ASB
   development child remaining in a background terminal group. Begin the bounded foreground-terminal
   repair and real controlling-PTY regression.
+
+- 2026-10-07T22:55:31+00:00: Claimed by codex-ar1727-broker-foreground.

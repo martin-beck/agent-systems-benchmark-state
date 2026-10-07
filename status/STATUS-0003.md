@@ -457,11 +457,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1727-broker-foreground |
 | Parent | None |
 | Children | None |
 | Summary | Give the ASB development broker child correct foreground process-group ownership on the caller&#x27;s controlling terminal without weakening descendant cleanup. |
@@ -1252,7 +1252,7 @@ flowchart LR
         AR_1724["AR-1724 - Planned"]:::status_planned
         AR_1725["AR-1725 - Planned"]:::status_planned
         AR_1726["AR-1726 - In progress"]:::status_in_progress
-        AR_1727["AR-1727 - Open"]:::status_open
+        AR_1727["AR-1727 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
