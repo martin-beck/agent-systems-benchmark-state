@@ -765,7 +765,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar1698-state-repair` | `repair/ar-1698-source-tree` | `fb36efbc3ad2` | 0 | behind 22, ahead 6 |
 | `asb-state-fix-qIRjAW` | `DETACHED` | `18f6e760585c` | 0 | behind 20, ahead 0 |
 | `asb-state-pr105-review.M8e2lD` | `DETACHED` | `837976fc577c` | 0 | behind 0, ahead 2 |
-| `asb-state-privacy-20261007` | `repair/ar1651-1687-privacy-size-20261007` | `837976fc577c` | 2 | behind 0, ahead 2 |
-| changed files | - | - | - | `PROJECT_STATE.md`, `WORKTREES.md` |
+| `asb-state-privacy-20261007` | `repair/ar1651-1687-privacy-size-20261007` | `ccb38f8b2fe4` | 1 | behind 0, ahead 3 |
+| changed files | - | - | - | `PROJECT_STATE.md` |
 | `policy-state-review` | `codex/development-review-identity-state` | `0328750eaf9f` | 0 | behind 21, ahead 0 |
 | `pr105-state-review.YTGa3r` | `DETACHED` | `837976fc577c` | 0 | behind 0, ahead 2 |
