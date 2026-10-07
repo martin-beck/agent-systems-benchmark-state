@@ -7,7 +7,7 @@
     "AR-1590"
   ],
   "id": "AR-1727",
-  "next_action": "Promote and claim after coordinator reconciliation; repair the ASB development broker foreground-terminal handoff, add a controlling-PTY regression on the actual broker launch path, and retain bounded process-group cleanup.",
+  "next_action": "Await independent exact-head review of PR #500 at 23138efcc45dc78232fdb13ebbf722f76f14824b; do not merge without review and required exact-head CI.",
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "23138efcc45dc78232fdb13ebbf722f76f14824b",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-07T23:18:29+00:00",
+  "updated_at": "2026-10-07T23:19:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -124,3 +124,9 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-07T23:18:29+00:00: Recorded command exit 0; command argv SHA-256
   0f6593c2fabffb24437f96375c518552aa7ec6b0b0278b23a30fbf11a85381f5.
+
+- 2026-10-07T23:19:09+00:00: Implementation is signed+DCO and pushed in PR #500 at head
+  23138efcc45dc78232fdb13ebbf722f76f14824b, tree 64b5b218de1d563cd1f875c82a6ee2b059d6922c. Focused
+  real controlling-PTY development-broker regression passed, all 37 development broker tests passed,
+  full asb-cli suite passed, cargo check/clippy/fmt and git diff --check passed. Stop for
+  independent exact-head review.

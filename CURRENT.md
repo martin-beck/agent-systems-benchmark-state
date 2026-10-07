@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1727](tasks/AR-1727-development-broker-foreground-terminal.md): Repair development broker foreground-terminal handoff | Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup. | Promote and claim after coordinator reconciliation; repair the ASB development broker foreground-terminal handoff, add a controlling-PTY regression on the actual broker launch path, and retain bounded process-group cleanup. | codex-ar1727-broker-foreground |
+| P0 | [AR-1727](tasks/AR-1727-development-broker-foreground-terminal.md): Repair development broker foreground-terminal handoff | Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup. | Await independent exact-head review of PR #500 at 23138efcc45dc78232fdb13ebbf722f76f14824b; do not merge without review and required exact-head CI. | codex-ar1727-broker-foreground |
 
 ## Open
 
