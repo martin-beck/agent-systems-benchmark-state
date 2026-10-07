@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-07T22:46:30+00:00",
+  "updated_at": "2026-10-07T22:46:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -63,4 +63,7 @@ review, protected merge, and terminal-green post-merge CI.
 - 2026-10-07T22:46:07+00:00: Heartbeat by codex-ar1726-rustup.
 
 - 2026-10-07T22:46:30+00:00: Recorded command exit 0; command argv SHA-256
+  e104325b6323d4e30c2bd59bfcd21152fd18d5c5ae3d0de40a0ff7c3bc52b3e9.
+
+- 2026-10-07T22:46:58+00:00: Recorded command exit 0; command argv SHA-256
   e104325b6323d4e30c2bd59bfcd21152fd18d5c5ae3d0de40a0ff7c3bc52b3e9.
