@@ -1,0 +1,26 @@
+AR: AR-1718
+Qualification: current exact-main portable fault-matrix network isolation
+
+ASB exact-main commit: 4ceacaa7ea1f25d3de0ad71f196a8f21f61694aa
+ASB exact-main tree: 09005dfe92097a1b785a1493fb89d47f90d1a82a
+Paired TUI exact-main commit: eb9a483cd8cc000ae4002f3c486af988f1797dbd
+Fault-matrix manifest SHA-256: cb976336f79c9f73fbafa919419a9834e476b189680a73e93ad474afc22b7091
+
+Backend: bubblewrap-network
+Preflight: available=true; loopback=true; external_denied=true; classification=ready.
+The selected backend uses a private network namespace. Host-network fallback is forbidden;
+unavailable isolation remains a typed runner_unavailable result.
+
+Evidence:
+- cargo build --locked --bin asb: passed.
+- PYTHONPATH=tools/fault-matrix python3 -m unittest tools/fault-matrix/test_run.py: 13/13 passed.
+- Five-case matrix: setup-missing-auth=warning (development-only auth_unavailable),
+  record-invalid-input=passed, replay-invalid-cassette=passed,
+  benchmark-invalid-plan=passed, recovery-doctor=passed.
+- Every case reported cleanup_ok=true; output was bounded and no secrets or private paths
+  were retained.
+- Paired TUI cargo test --locked: passed with zero failed tests.
+
+This receipt is privacy-safe and records no credentials, raw host diagnostics, or private
+filesystem paths. It is qualification evidence only; independent review remains required
+before AR-1718 release.
