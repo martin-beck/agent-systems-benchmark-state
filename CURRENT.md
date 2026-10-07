@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1722](tasks/AR-1722.md): PR #487 protected-main requalification and merge-settings recovery | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. | PR #490 exact head ac6557038 was independently reviewed and merged as 9b27d5d9. Verify post-merge ASB main, reconcile the corrected AR-1722 receipt, and release this incident only after exact-main post-merge evidence is recorded; do not require an authorized-maintainer review. | ar1722-postmerge-20261007 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -85,6 +79,7 @@ Never edit this file directly.
 | P0 | [AR-1539](tasks/AR-1539.md): Coordinator v0.3.50 compatibility repair | Compatibility audit reproduced the v0.3.50 failures and split them into AR-1540 session/lifecycle and AR-1541 SQLite fence repairs; no incompatible runtime is publishable. | Remain blocked pending AR-1540, AR-1541 and AR-1544. Preserve the exact v0.3.50 verifier result and the disposable failure evidence; resume AR-1534 only after all compatibility successors pass. | - |
 | P0 | [AR-1566](tasks/AR-1566.md): ASB development broker handoff integration | Wire ASB development launch through the authenticated asb-tui broker handoff seam. | Remain blocked as historical evidence; the active real bridge work is tracked by TUI AR-1587 and ASB AR-1590, which must complete before this boundary can be closed. | - |
 | P0 | [AR-1571](tasks/AR-1571.md): ASB development broker channel transport handoff | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. | Remain blocked as historical evidence; the active exact inherited-fd qualification is tracked by ASB AR-1590 after TUI AR-1587 completes the real bridge. | - |
+| P0 | [AR-1722](tasks/AR-1722.md): PR #487 protected-main requalification and merge-settings recovery | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. | PR #490 exact head ac6557038 was independently reviewed and merged as 9b27d5d9. Verify post-merge ASB main, reconcile the corrected AR-1722 receipt, and release this incident only after exact-main post-merge evidence is recorded; do not require an authorized-maintainer review. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |
