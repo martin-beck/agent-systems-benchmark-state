@@ -23,8 +23,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37673587031 | `10291b465bd3` | push | Formal assurance | in_progress:- |
-| 37673587012 | `10291b465bd3` | push | Cross-repository development broker qualification | in_progress:- |
+| 37673587031 | `10291b465bd3` | push | Formal assurance | completed:success |
+| 37673587012 | `10291b465bd3` | push | Cross-repository development broker qualification | completed:success |
 | 37673587002 | `10291b465bd3` | push | Repository quality | in_progress:- |
 | 37673586973 | `10291b465bd3` | push | Credential-free benchmark path | completed:success |
 | 37673586957 | `10291b465bd3` | push | Fault assurance | completed:success |
