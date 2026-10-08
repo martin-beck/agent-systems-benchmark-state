@@ -18,21 +18,21 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #499 | `repair/ar-1726-development-rustup-shim-permissions@d9ef0bce9bf6` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(tui): accept bounded development rustup paths |
+| #499 | `repair/ar-1726-development-rustup-shim-permissions@acd7a146baba` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(tui): accept bounded development rustup paths |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37711026550 | `acd7a146baba` | pull_request | Huawei MIT source headers | completed:success |
+| 37711026504 | `acd7a146baba` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37711026459 | `acd7a146baba` | pull_request | Rust verification | queued:- |
+| 37711026420 | `acd7a146baba` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37711026413 | `acd7a146baba` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37711026411 | `acd7a146baba` | pull_request | Fault assurance | in_progress:- |
+| 37711026407 | `acd7a146baba` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37711026401 | `acd7a146baba` | pull_request | Repository quality | in_progress:- |
+| 37711026387 | `acd7a146baba` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37711026385 | `acd7a146baba` | pull_request | Formal assurance | in_progress:- |
 | 37709308733 | `457317b21dbe` | push | Emulated aarch64 portability | completed:success |
 | 37709308689 | `457317b21dbe` | push | Rust verification | completed:success |
-| 37709308681 | `457317b21dbe` | push | Hosted portability and native qualification | completed:success |
-| 37709308678 | `457317b21dbe` | push | Formal assurance | completed:success |
-| 37709308655 | `457317b21dbe` | push | Credential-free benchmark path | completed:success |
-| 37709308637 | `457317b21dbe` | push | Fault assurance | completed:success |
-| 37709308636 | `457317b21dbe` | push | Huawei MIT source headers | completed:success |
-| 37709308634 | `457317b21dbe` | push | Cross-repository development broker qualification | completed:success |
-| 37709308632 | `457317b21dbe` | push | Repository quality | completed:success |
-| 37707897644 | `0714b0e96c45` | pull_request | Repository quality | completed:success |
-| 37707897618 | `0714b0e96c45` | pull_request | Formal assurance | completed:success |
-| 37707897593 | `0714b0e96c45` | pull_request | Credential-free benchmark path | completed:success |
