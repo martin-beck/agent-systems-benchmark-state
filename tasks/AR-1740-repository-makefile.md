@@ -7,8 +7,8 @@
   "id": "AR-1740",
   "next_action": "Hand off to a newly created/promoted narrow protected-main exact-tree recovery AR: preserve a9abcf2, 2f7387e base, e424c39 topic, reviewed tree 1aa96736, merge tree befcb782; use docs/PROTECTED_MAIN_MERGE.md and tools/integration/merge_pr.py for a signed forward repair merge, then rerun exact-main policy and all required workflows. Existing AR-1722 is a separate blocked incident and must not be conflated.",
   "observed_branch": "feature/ar-1740-repository-makefile",
-  "observed_dirty": 3,
-  "observed_head": "e424c392d7bcd99199ed8f194918656a27d4b65b",
+  "observed_dirty": 0,
+  "observed_head": "79e5a976d6f6e92fdf4e1cef109157814d365568",
   "owner": "codex-ar1740-makefile",
   "plan": "../plans/AR-1740-repository-makefile.md",
   "priority": "P1",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T09:46:24+00:00",
+  "updated_at": "2026-10-08T09:46:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
