@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair implemented; default make test and focused named test pass, PR #511 is awaiting long-running required CI.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T13:52:44+00:00",
+  "updated_at": "2026-10-08T13:52:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -248,3 +248,6 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 
 - 2026-10-08T13:52:21+00:00: Recorded command exit 0; command argv SHA-256
   79da272f7e4e7a786ca90e5ea99a1b051339fd1ac5cd8d61b67c8ebfbc695ad8.
+
+- 2026-10-08T13:52:57+00:00: Recorded command exit 0; command argv SHA-256
+  e7856fdbe5b7ccde26c626200fae10a3624e91633260bda551b24ee85bd3ee1b.
