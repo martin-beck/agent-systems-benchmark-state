@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T09:23:02+00:00",
+  "updated_at": "2026-10-08T09:23:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -53,3 +53,6 @@ quality gates, and never become a runtime or installed-user dependency.
 
 - 2026-10-08T09:23:02+00:00: Recorded command exit 0; command argv SHA-256
   99de9b5dc9b464fc09801648882783ba0bc151ae33972f6316812102ee2c4721.
+
+- 2026-10-08T09:23:26+00:00: Recorded command exit 0; command argv SHA-256
+  8522fee6a9d1029f16dc416ccac976721bc9406b60cc6cd0d2c871a603ac1fc4.
