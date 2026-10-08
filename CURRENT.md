@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1734](tasks/AR-1734-development-tui-tool-environment.md): Propagate validated development tools to installed TUI | Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch. | Independently review PR #502 exact head 40f618b9389c594c4274bc08195f93f3cd2dd547 and tree e5c4645c9e4384fb57424eaa42139a99b78c5c69; complete hostile tool/descriptor and installed-TUI qualification, verify signed+DCO and all exact-head hosted checks, then record approval or precise repair action without merging. | codex-ar1734-pr502-review |
+| P0 | [AR-1734](tasks/AR-1734-development-tui-tool-environment.md): Propagate validated development tools to installed TUI | Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch. | Integrate approved PR #502 with tools/integration/merge_pr.py against base 736a65cd8904b8f4a6f1715fc86ae1c854fe2232, head 40f618b9389c594c4274bc08195f93f3cd2dd547, tree e5c4645c9e4384fb57424eaa42139a99b78c5c69; then require exact-main CI and immutable post-merge evidence. | codex-ar1734-pr502-review |
 
 ## Open
 

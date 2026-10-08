@@ -8,7 +8,7 @@
     "AR-1727"
   ],
   "id": "AR-1734",
-  "next_action": "Independently review PR #502 exact head 40f618b9389c594c4274bc08195f93f3cd2dd547 and tree e5c4645c9e4384fb57424eaa42139a99b78c5c69; complete hostile tool/descriptor and installed-TUI qualification, verify signed+DCO and all exact-head hosted checks, then record approval or precise repair action without merging.",
+  "next_action": "Integrate approved PR #502 with tools/integration/merge_pr.py against base 736a65cd8904b8f4a6f1715fc86ae1c854fe2232, head 40f618b9389c594c4274bc08195f93f3cd2dd547, tree e5c4645c9e4384fb57424eaa42139a99b78c5c69; then require exact-main CI and immutable post-merge evidence.",
   "observed_branch": "repair/ar-1734-development-tui-tool-environment",
   "observed_dirty": 0,
   "observed_head": "40f618b9389c594c4274bc08195f93f3cd2dd547",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T02:42:47+00:00",
+  "updated_at": "2026-10-08T02:43:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1734-development-tui-tool-environment"
 }
 ---
@@ -255,3 +255,17 @@ and production policy remains fail closed and unchanged.
 
 - 2026-10-08T02:42:47+00:00: Recorded command exit 0; command argv SHA-256
   e4b5df171d0c2c09d9320e02030312931340d5033661b45bfab2ac190690934a.
+
+- 2026-10-08T02:43:27+00:00: Independent technical approval: no actionable findings at exact
+  signed+DCO head 40f618b9389c594c4274bc08195f93f3cd2dd547/tree
+  e5c4645c9e4384fb57424eaa42139a99b78c5c69/base 736a65cd8904b8f4a6f1715fc86ae1c854fe2232. Audited
+  env_clear retention, absent ambient PATH, development-only validated
+  git/setsid/cc/ar/ld/rustup-home policy, same-toolchain descriptor-bound Cargo/Rustc, and CLOEXEC
+  rollback/restoration on success and every error. Hostile replacement, symlink/missing tool,
+  descriptor inheritance/leak, spawn/exit/descendant cleanup, and typed human/JSON tests pass. Exact
+  pinned installed TUI install/status/bare PTY launch/dynamic-catalog/provider-free network-denied
+  journeys pass. Serial locked workspace tests, fmt, clippy -D warnings, rustdoc -D warnings,
+  release build, repository policy, diff check, and scoped Gitleaks pass locally. All 14 exact-head
+  hosted checks are terminal success; PR is open and mergeable. Review only; no merge performed.
+  Initial PROJECT_STATE discrepancy was only stale live-CI projection refreshed by reconcile, not
+  product-head drift or another worker mutation.
