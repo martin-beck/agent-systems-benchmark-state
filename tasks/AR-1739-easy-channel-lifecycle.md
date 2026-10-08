@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T09:50:13+00:00",
+  "updated_at": "2026-10-08T09:50:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -130,3 +130,6 @@ provider-free by default and preserve all stable/production fail-closed gates.
 
 - 2026-10-08T09:50:13+00:00: Recorded command exit 0; command argv SHA-256
   565b04b503d6d7bfabfd2845aea0b91208d33abbc73adaaf208c27f9198d6768.
+
+- 2026-10-08T09:50:55+00:00: Recorded command exit 0; command argv SHA-256
+  dbd7b70c6e18bf73056eb329604f8477779b91d08cae9fbfbcbd434b77693b74.
