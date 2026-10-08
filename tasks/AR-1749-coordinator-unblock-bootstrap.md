@@ -1,5 +1,24 @@
 ---
-{"branch":"repair/ar-1749-coordinator-unblock-bootstrap","checkpoint_commit":"","claim_expires":"","depends_on":[],"id":"AR-1749","next_action":"Adopt the exact reviewed Coordinator development vendor handoff on a claimable bootstrap AR, merge and verify it, then hand canonical unblock capability to blocked AR-1747.","owner":"","plan":"../plans/AR-1749-coordinator-unblock-bootstrap.md","priority":"P0","schema_version":1,"spec_ref":"specs/AR-1749.json","spec_revision":1,"status":"planned","summary":"Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool.","task_revision":1,"title":"Bootstrap canonical Coordinator unblock vendor adoption","updated_at":"2026-10-08T18:31:00+00:00","worktree_key":"agent-systems-benchmark-state-ar-1749-coordinator-unblock-bootstrap"}
+{
+  "branch": "repair/ar-1749-coordinator-unblock-bootstrap",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [],
+  "id": "AR-1749",
+  "next_action": "Adopt the exact reviewed Coordinator development vendor handoff on a claimable bootstrap AR, merge and verify it, then hand canonical unblock capability to blocked AR-1747.",
+  "owner": "",
+  "plan": "../plans/AR-1749-coordinator-unblock-bootstrap.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1749.json",
+  "spec_revision": 1,
+  "status": "open",
+  "summary": "Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool.",
+  "task_revision": 2,
+  "title": "Bootstrap canonical Coordinator unblock vendor adoption",
+  "updated_at": "2026-10-08T18:35:26+00:00",
+  "worktree_key": "agent-systems-benchmark-state-ar-1749-coordinator-unblock-bootstrap"
+}
 ---
 
 AR-1747 is correctly blocked at revision 27 on canonical ASB-state main. The
@@ -23,3 +42,6 @@ This is development vendor adoption, not a release. Production authentication,
 release signing, or a verified publication is not required. Exact identities,
 privacy, schemas, formal closure, signatures, DCO, independent technical
 review, hosted CI, and signed local integration remain mandatory.
+
+- 2026-10-08T18:35:26+00:00: Promoted as the claimable reviewed bootstrap required to install
+  canonical unblock and project evidence-policy support before blocked AR-1747 can resume.
