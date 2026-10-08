@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Bootstrap canonical Coordinator unblock vendor adoption",
-  "updated_at": "2026-10-08T18:36:14+00:00",
+  "updated_at": "2026-10-08T18:36:23+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1749-coordinator-unblock-bootstrap"
 }
 ---
@@ -47,3 +47,6 @@ review, hosted CI, and signed local integration remain mandatory.
   canonical unblock and project evidence-policy support before blocked AR-1747 can resume.
 
 - 2026-10-08T18:36:14+00:00: Claimed by codex-asb-ar1749-vendor-bootstrap-20261008.
+
+- 2026-10-08T18:36:23+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
