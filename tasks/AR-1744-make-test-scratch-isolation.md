@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T14:41:03+00:00",
   "depends_on": [],
   "id": "AR-1744",
-  "next_action": "Wait for emulated-aarch64 job 113337465103 to reach a terminal result; merge only after all required checks are green, then run exact-main post-merge verification.",
+  "next_action": "Wait for PR #511 required jobs 37786237232, 37786237229, 37786237193, and 37786237212 to finish; merge only after all are green, then verify exact main.",
   "observed_branch": "repair/ar-1744-make-test-scratch-isolation",
   "observed_dirty": 0,
   "observed_head": "0d057ade6f450ded6255aa1500b0023a0969ecbd",
@@ -24,10 +24,10 @@
   "spec_ref": "specs/AR-1744.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Repair is implemented and PR #511 is green except the emulated-aarch64 required job remains unassigned in GitHub Actions.",
-  "task_revision": 82,
+  "summary": "Repair implemented; default make test and focused named test pass, PR #511 is awaiting long-running required CI.",
+  "task_revision": 83,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T13:40:32+00:00",
+  "updated_at": "2026-10-08T13:44:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -238,3 +238,7 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 
 - 2026-10-08T13:40:32+00:00: Recorded command exit 0; command argv SHA-256
   85d7931526bf76ea7e6d175da89de2854609a3f285d6023ddda347f87b4b3f02.
+
+- 2026-10-08T13:44:18+00:00: Added RUST_TEST_THREADS ?= 1 to Makefile with documented override and
+  passed plain make test through handoffctl. PR head is 0d057ade6f450ded6255aa1500b0023a0969ecbd.
+  Fast checks are green; remaining required jobs are in progress without failures.

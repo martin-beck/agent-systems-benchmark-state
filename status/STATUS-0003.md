@@ -702,8 +702,8 @@
 | Owner | codex-ar1744-make-test |
 | Parent | None |
 | Children | None |
-| Summary | Repair is implemented and PR #511 is green except the emulated-aarch64 required job remains unassigned in GitHub Actions. |
-| Next action | Wait for emulated-aarch64 job 113337465103 to reach a terminal result; merge only after all required checks are green, then run exact-main post-merge verification. |
+| Summary | Repair implemented; default make test and focused named test pass, PR #511 is awaiting long-running required CI. |
+| Next action | Wait for PR #511 required jobs 37786237232, 37786237229, 37786237193, and 37786237212 to finish; merge only after all are green, then verify exact main. |
 
 ### AR-1745 — Install ASB into the invoking user&#x27;s local bin
 
