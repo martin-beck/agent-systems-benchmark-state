@@ -7,8 +7,8 @@
   "id": "AR-1744",
   "next_action": "Reproduce the current-main make test failure and repair test scratch-root isolation.",
   "observed_branch": "repair/ar-1744-make-test-scratch-isolation",
-  "observed_dirty": 1,
-  "observed_head": "ae0f73434d02fc28c35c0ec3a7dc2f280499f447",
+  "observed_dirty": 0,
+  "observed_head": "a11b5d2fc0c2deac0a56b3b7c645b3563b561725",
   "owner": "codex-ar1744-make-test",
   "plan": "../plans/AR-1744-make-test-scratch-isolation.md",
   "priority": "P0",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T12:56:32+00:00",
+  "updated_at": "2026-10-08T12:56:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
