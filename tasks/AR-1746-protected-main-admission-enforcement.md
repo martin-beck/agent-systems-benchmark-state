@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Apply and independently verify ASB's merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Enforce protected-main admission for AR-1722 recovery",
-  "updated_at": "2026-10-08T16:31:07+00:00",
+  "updated_at": "2026-10-08T16:31:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1746-protected-main-admission"
 }
 ---
@@ -93,3 +93,6 @@ mandatory.
 
 - 2026-10-08T16:31:07+00:00: Recorded command exit 0; command argv SHA-256
   80172830c4b80c8b129e803a3fa0a4e49673192696722265cac7eb5fdc0df620.
+
+- 2026-10-08T16:31:45+00:00: Recorded command exit 0; command argv SHA-256
+  ce6b0c1c0e0321606c9bc1e550f1db7bf18efe150bf9b6982e6d9bca36d6d406.
