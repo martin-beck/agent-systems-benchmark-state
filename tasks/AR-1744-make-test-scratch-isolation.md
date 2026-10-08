@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T14:41:03+00:00",
   "depends_on": [],
   "id": "AR-1744",
-  "next_action": "Wait for PR #511 required jobs 37786237232, 37786237229, 37786237193, and 37786237212 to finish; merge only after all are green, then verify exact main.",
+  "next_action": "Wait for PR #511 jobs 37788419498, 37788419514, and 37788419573 to finish; merge only after all required checks are green, then verify exact main.",
   "observed_branch": "repair/ar-1744-make-test-scratch-isolation",
   "observed_dirty": 0,
   "observed_head": "42b6453922c8b38fdab03e2b1aa2d396c0cf288e",
@@ -24,10 +24,10 @@
   "spec_ref": "specs/AR-1744.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Repair implemented; default make test and focused named test pass, PR #511 is awaiting long-running required CI.",
-  "task_revision": 94,
+  "summary": "Repair now also prevents plan-create tests from reading the operator terminal; focused test passes and PR #511 awaits three long-running CI jobs.",
+  "task_revision": 95,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T13:56:43+00:00",
+  "updated_at": "2026-10-08T14:00:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -269,3 +269,9 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 
 - 2026-10-08T13:56:43+00:00: Recorded command exit 0; command argv SHA-256
   85d7931526bf76ea7e6d175da89de2854609a3f285d6023ddda347f87b4b3f02.
+
+- 2026-10-08T14:00:28+00:00: Root cause confirmed: create_plan used io::stdin().is_terminal()
+  despite the test harness passing no stdin, then blocked read_line on the terminal. Fix commit
+  42b6453922c8b38fdab03e2b1aa2d396c0cf288e passes the exact test immediately, uses injected stdin,
+  and bounds interactive selection to 64 bytes. PR #511 fast checks are green; three hosted jobs
+  remain pending with no failure.
