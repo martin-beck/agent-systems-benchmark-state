@@ -16,13 +16,21 @@
   "plan": "../plans/AR-1750-github-ruleset-response-normalization.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:746486c6016d35c0328d5030ebcab088a5f97d48e38f313a757aa213b3d96d0e",
+    "evidence_ref": "github/pr517/31ca7a4/live-policy-receipt-review",
+    "spec_ref": "specs/AR-1750.json",
+    "spec_revision": 2,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1750.json",
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T22:26:44+00:00",
+  "updated_at": "2026-10-08T22:28:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -301,3 +309,6 @@ independent review, all hosted checks, and a root execution gate are recorded.
   signoff=true; active branch ruleset 24750310 on refs/heads/main with approval count0,
   last-push=false, reviewers=[], server normalization extra-unattributed=true. Await independent
   receipt review; no release yet.
+
+- 2026-10-08T22:28:58+00:00: Recorded command exit 0; command argv SHA-256
+  2f935e7d631c472ffc82855ed869e81f56a559788c0be5d3cdfe1fe5eb99da29.
