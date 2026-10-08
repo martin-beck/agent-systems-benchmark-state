@@ -8,7 +8,7 @@
   "next_action": "PR #506 base d53e901 exact head 13412c6; 10 required checks pass and Emulated aarch64, Policy/coverage, Rust, TLC remain pending. Merge only after all green, then post-merge verify and release AR.",
   "observed_branch": "feature/ar-1739-easy-channel-lifecycle",
   "observed_dirty": 0,
-  "observed_head": "13412c685ddb99523e14ae7fcdcb1c3b84148192",
+  "observed_head": "617af40b356fb5b8b89cb3a541a28018904c251b",
   "owner": "codex-ar1739-easy-lifecycle",
   "plan": "../plans/AR-1739-easy-channel-lifecycle.md",
   "priority": "P1",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T10:48:08+00:00",
+  "updated_at": "2026-10-08T10:48:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---

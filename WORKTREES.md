@@ -372,7 +372,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 11, ahead 0 |
 | `agent-systems-benchmark-ar-1737-development-tui-linker-handoff` | `repair/ar-1737-development-tui-linker-handoff` | `199bd00a95c2` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility` | `repair/ar-1738-development-rustup-permission-compatibility` | `f020b2d4fd65` | 0 | behind 10, ahead 0 |
-| `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `13412c685ddb` | 0 | behind 2, ahead 5 |
+| `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `617af40b356f` | 0 | behind 0, ahead 5 |
 | `agent-systems-benchmark-ar-1740-repository-makefile` | `feature/ar-1740-repository-makefile` | `d0c692690564` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738` | `repair/ar-1741-signed-main-recovery-ar1738` | `0c100e4624a6` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 305, ahead 192 |
