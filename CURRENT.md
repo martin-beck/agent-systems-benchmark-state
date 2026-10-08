@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1750](tasks/AR-1750-github-ruleset-response-normalization.md): Canonicalize GitHub ruleset response and complete guarded admission | Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation. | Claim from exact canonical main and repair owned ruleset ID 24750310 with strict request/response normalization before any settings PATCH. | codex-asb-ar1750-ruleset-normalization-20261008 |
+| P0 | [AR-1750](tasks/AR-1750-github-ruleset-response-normalization.md): Canonicalize GitHub ruleset response and complete guarded admission | Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation. | Obtain independent exact-head review of PR #517 at ba75120573fc580f50cc08ae50aa5f038d829836 tree 241f7903019f9de17426f05127aaa3280ce525c2; do not merge or perform live settings mutation before root gate. | codex-asb-ar1750-ruleset-normalization-20261008 |
 
 ## Open
 

@@ -8,7 +8,7 @@
     "AR-1431"
   ],
   "id": "AR-1750",
-  "next_action": "Claim from exact canonical main and repair owned ruleset ID 24750310 with strict request/response normalization before any settings PATCH.",
+  "next_action": "Obtain independent exact-head review of PR #517 at ba75120573fc580f50cc08ae50aa5f038d829836 tree 241f7903019f9de17426f05127aaa3280ce525c2; do not merge or perform live settings mutation before root gate.",
   "observed_branch": "repair/ar-1750-ruleset-response-normalization",
   "observed_dirty": 0,
   "observed_head": "ba75120573fc580f50cc08ae50aa5f038d829836",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T21:24:24+00:00",
+  "updated_at": "2026-10-08T21:25:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -140,3 +140,8 @@ ruleset, and never retry an ambiguous mutation blindly.
 
 - 2026-10-08T21:24:24+00:00: Recorded command exit 0; command argv SHA-256
   a783bbc016340b654e302e8f1b5059cf5d13285c81b1d6e0677aa64adb973c58.
+
+- 2026-10-08T21:25:05+00:00: Published signed+DCO PR #517 from exact base
+  dc19bb1b758a60b4fe316021ab9fe751aaae361d. Local hostile transaction, policy, DCO, headers,
+  contracts, Ruff, fmt/clippy, configured coverage, actionlint/zizmor, cargo-deny/audit, and
+  introduced-history gitleaks gates passed. Hosted checks are running; STOP for independent review.
