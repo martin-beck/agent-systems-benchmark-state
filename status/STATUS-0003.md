@@ -647,7 +647,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows. |
-| Next action | Post-merge recovery required: protected-main Repository quality failed because GitHub merge a9abcf2 tree befcb782 differs from reviewed topic tree 1aa96736 (topic e424c39; base 2f7387e). Coordinate exact-tree repair/republication, then rerun all main required workflows and release only after green. |
+| Next action | Hand off to a newly created/promoted narrow protected-main exact-tree recovery AR: preserve a9abcf2, 2f7387e base, e424c39 topic, reviewed tree 1aa96736, merge tree befcb782; use docs/PROTECTED_MAIN_MERGE.md and tools/integration/merge_pr.py for a signed forward repair merge, then rerun exact-main policy and all required workflows. Existing AR-1722 is a separate blocked incident and must not be conflated. |
 
 
 ## Dependency graph
