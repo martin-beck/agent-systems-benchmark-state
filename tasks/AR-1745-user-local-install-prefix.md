@@ -7,7 +7,7 @@
     "AR-1740"
   ],
   "id": "AR-1745",
-  "next_action": "Open PR from reviewed signed head 250ef66, run exact-head hosted checks, then merge and verify protected-main post-merge workflows.",
+  "next_action": "Record completion receipt, release AR-1745 done, and reconcile live state.",
   "observed_branch": "feature/ar-1745-user-local-install-prefix",
   "observed_dirty": 0,
   "observed_head": "250ef6658e0cdaa3d8cea53bb009a0bbd88787d4",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB development installation place the asb executable at the invoking user's $HOME/.local/bin/asb by default, with a safe explicit prefix override.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Install ASB into the invoking user's local bin",
-  "updated_at": "2026-10-08T13:37:22+00:00",
+  "updated_at": "2026-10-08T13:48:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1745-user-local-install-prefix"
 }
 ---
@@ -91,3 +91,7 @@ clear PATH guidance when `$HOME/.local/bin` is not already on PATH.
 
 - 2026-10-08T13:37:22+00:00: Recorded command exit 0; command argv SHA-256
   e54079976049d8b5a885a7fca1ad256ce7620a590256c4a86487f95aef8f9d65.
+
+- 2026-10-08T13:48:45+00:00: PR #512 merged as signed protected-main merge 1ab175c3. Exact
+  tree/parents, signature/DCO, local policy, focused tests, independent review, and all nine
+  post-merge workflows passed.
