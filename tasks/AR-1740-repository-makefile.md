@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1740-repository-makefile",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T11:19:08+00:00",
+  "claim_expires": "2026-10-08T11:19:13+00:00",
   "depends_on": [],
   "id": "AR-1740",
   "next_action": "Promote after reviewing the pinned Cargo/toolchain commands and storage boundaries; implement and test the optional repository Makefile with dependency checks and safe build/install/clean/update/test targets.",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T09:19:08+00:00",
+  "updated_at": "2026-10-08T09:19:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -31,3 +31,5 @@ quality gates, and never become a runtime or installed-user dependency.
 - 2026-10-08T09:17:47+00:00: dependencies verified; ready for isolated implementation worker
 
 - 2026-10-08T09:19:08+00:00: Claimed by codex-ar1740-makefile.
+
+- 2026-10-08T09:19:13+00:00: Heartbeat by codex-ar1740-makefile.
