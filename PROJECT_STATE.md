@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37758192019 | `a9abcf2e63f7` | push | Fault assurance | completed:success |
-| 37758191985 | `a9abcf2e63f7` | push | Emulated aarch64 portability | queued:- |
+| 37758191985 | `a9abcf2e63f7` | push | Emulated aarch64 portability | in_progress:- |
 | 37758191884 | `a9abcf2e63f7` | push | Credential-free benchmark path | completed:success |
 | 37758191874 | `a9abcf2e63f7` | push | Rust verification | in_progress:- |
 | 37758191763 | `a9abcf2e63f7` | push | Hosted portability and native qualification | completed:success |
