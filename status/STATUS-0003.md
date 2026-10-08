@@ -747,6 +747,20 @@
 | Summary | Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition. |
 | Next action | Wait for official Coordinator AR-0087 to merge a reviewed follow-up that preserves task_spec evidence classes, removes scanner-triggering UUID literals from every declared vendor file, and retains exact unblock/formal closure; then resync via sync-development from that official commit, rebase PR #106 without downstream vendor edits, rerun all 95&#37;/formal/privacy gates, and obtain fresh exact-head independent review. |
 
+### AR-1748 — Portable protected-main provenance and capability admission
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. |
+| Next action | Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits. |
+
 
 ## Dependency graph
 
@@ -1553,6 +1567,7 @@ flowchart LR
         AR_1745["AR-1745 - Done"]:::status_done
         AR_1746["AR-1746 - Blocked"]:::status_blocked
         AR_1747["AR-1747 - Blocked"]:::status_blocked
+        AR_1748["AR-1748 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2810,9 +2825,11 @@ flowchart LR
     AR_1427 --> AR_1431
     AR_1427 --> AR_1722
     AR_1427 --> AR_1746
+    AR_1427 --> AR_1748
     AR_1430 --> AR_1424
     AR_1431 --> AR_1722
     AR_1431 --> AR_1746
+    AR_1431 --> AR_1748
     AR_1432 --> AR_1699
     AR_1433 --> AR_1446
     AR_1433 --> AR_1447
@@ -3576,6 +3593,3 @@ flowchart LR
 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
 | [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) | [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
 | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md) | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) | [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
-| [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md), [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md) | [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md) |
-| [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) | None |
-| [AR-0895](../tasks/AR-0895-verify-coordination-content.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
