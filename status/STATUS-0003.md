@@ -647,7 +647,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows. |
-| Next action | Hold PR #507 integration until AR-1741 recovery PR #508 is independently reviewed and locally signed-integrated, because protected main a9abcf2 has invalid historical provenance. Then refresh exact protected base, rerun PR507 checks/review, and use merge_pr.py local signed integration. |
+| Next action | PR #507 rebased exact head d0c6926 onto protected base bbe25d0; wait for all refreshed checks, then run local signed merge_pr.py integration and post-merge exact-main verification. Preserve separate AR-1742 historical recovery. |
 
 ### AR-1741 — Signed protected-main recovery for AR-1738
 

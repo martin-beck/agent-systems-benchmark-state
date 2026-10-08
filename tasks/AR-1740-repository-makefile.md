@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T11:41:32+00:00",
   "depends_on": [],
   "id": "AR-1740",
-  "next_action": "Hold PR #507 integration until AR-1741 recovery PR #508 is independently reviewed and locally signed-integrated, because protected main a9abcf2 has invalid historical provenance. Then refresh exact protected base, rerun PR507 checks/review, and use merge_pr.py local signed integration.",
+  "next_action": "PR #507 rebased exact head d0c6926 onto protected base bbe25d0; wait for all refreshed checks, then run local signed merge_pr.py integration and post-merge exact-main verification. Preserve separate AR-1742 historical recovery.",
   "observed_branch": "feature/ar-1740-repository-makefile",
   "observed_dirty": 0,
   "observed_head": "d0c6926905642c95222f5acfc6bc1b00f75d63e7",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T10:12:15+00:00",
+  "updated_at": "2026-10-08T10:19:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -162,3 +162,7 @@ quality gates, and never become a runtime or installed-user dependency.
 
 - 2026-10-08T10:12:15+00:00: Recorded command exit 0; command argv SHA-256
   fe6b79e858ce1ff63d4fcc808f72a7afdc543f202fe6ca41610c5d92f6e918e7.
+
+- 2026-10-08T10:19:04+00:00: Independent review confirms d0c6926 contains only Makefile/README/tests
+  changes and is SSH-signed with matching DCO. PR #507 refreshed base is bbe25d0 after AR-1741
+  recovery; hosted checks remain in progress.
