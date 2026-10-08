@@ -451,7 +451,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. |
-| Next action | Repair PR #499 by deriving and opening rustc descriptor-relatively from the same retained selected toolchain/bin identity as Cargo without canonicalizing the mutable Cargo pathname; retain the deterministic cross-toolchain replacement regression, rerun exact gates, and obtain fresh independent review. |
+| Next action | Fresh independent review of PR #499 exact signed+DCO head acd7a146babaf39371e4cabe04dd2aa084df8c6c tree cd964a0fb4d938ef68fc654ca7706be72eb9dbd9; wait for all exact-head checks, then integrate only after approval. |
 
 ### AR-1727 — Repair development broker foreground-terminal handoff
 

@@ -9,7 +9,7 @@
     "AR-1637"
   ],
   "id": "AR-1726",
-  "next_action": "Repair PR #499 by deriving and opening rustc descriptor-relatively from the same retained selected toolchain/bin identity as Cargo without canonicalizing the mutable Cargo pathname; retain the deterministic cross-toolchain replacement regression, rerun exact gates, and obtain fresh independent review.",
+  "next_action": "Fresh independent review of PR #499 exact signed+DCO head acd7a146babaf39371e4cabe04dd2aa084df8c6c tree cd964a0fb4d938ef68fc654ca7706be72eb9dbd9; wait for all exact-head checks, then integrate only after approval.",
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "acd7a146babaf39371e4cabe04dd2aa084df8c6c",
@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T01:03:58+00:00",
+  "updated_at": "2026-10-08T01:04:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -422,3 +422,14 @@ review, protected merge, and terminal-green post-merge CI.
 
 - 2026-10-08T01:03:58+00:00: Recorded command exit 0; command argv SHA-256
   b47f3297b1f648a7e8462ac7da4b8c22123cc68953eb2c71883b830084b9345b.
+
+- 2026-10-08T01:04:43+00:00: Repaired the cross-toolchain pairing race: selected rustup Cargo
+  retains its validated bin directory descriptor and rustc is opened descriptor-relatively with
+  O_NOFOLLOW from that same directory object. Deterministic regression replaces the selected
+  toolchain pathname with a symlink to toolchain B, proves missing/symlink failures remain closed,
+  and proves Cargo A executes rustc A rather than B with CLOEXEC restoration and object cleanup.
+  Exact head acd7a146/tree cd964a0 is current-main descendant; focused rustup 6/6, development
+  41/41, asb-cli 233 plus integrations, workspace serialized, fmt, workspace Clippy, rustdoc,
+  release build, and actual-host human/JSON preflight passed. Parallel workspace exposed two known
+  shared scratch-root collisions; each passed isolated and the serialized full workspace passed. PR
+  checks are running; fresh review required.
