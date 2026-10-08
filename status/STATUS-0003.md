@@ -689,7 +689,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file. |
-| Next action | Independently review PR #510 at exact head 02664a5; wait for all required checks, then perform documented signed local integration and post-merge exact-main verification. |
+| Next action | Wait for PR #510 required checks at exact head 02664a5/base 507559f; after all green, merge only with documented signed local integration and verify post-merge exact-main gates. |
 
 
 ## Dependency graph

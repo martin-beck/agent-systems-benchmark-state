@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T13:26:12+00:00",
   "depends_on": [],
   "id": "AR-1743",
-  "next_action": "Independently review PR #510 at exact head 02664a5; wait for all required checks, then perform documented signed local integration and post-merge exact-main verification.",
+  "next_action": "Wait for PR #510 required checks at exact head 02664a5/base 507559f; after all green, merge only with documented signed local integration and verify post-merge exact-main gates.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Repair Make update lockfile handling",
-  "updated_at": "2026-10-08T11:26:21+00:00",
+  "updated_at": "2026-10-08T11:26:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1743-make-update-lockfile"
 }
 ---
@@ -82,3 +82,8 @@ unrelated product changes and record the exact failure and recovery evidence.
   dirty-tree rejection. PR #510 open at exact head 02664a5; focused tests pass. Wrapper
   post-reconcile still references stale nested path after worktree relocation, but command outputs
   and git state are verified in declared worktree.
+
+- 2026-10-08T11:26:31+00:00: Independent review of PR #510 exact head 02664a5 found only Makefile,
+  README.md, and tests/makefile.sh changes; signed+DCO commit verified. PR base is 507559f. Required
+  checks are currently pending; AWQ shadow evidence and header checks pass. Focused
+  ./tests/makefile.sh passes.
