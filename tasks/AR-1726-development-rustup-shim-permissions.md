@@ -17,13 +17,21 @@
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:fcd0d9c97766e816428ba03ad180521083a81721647faddcafcd1ffecd8b4a87",
+    "evidence_ref": "sessions/AR-1726.jsonl",
+    "spec_ref": "specs/AR-1726.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1726.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 154,
+  "task_revision": 155,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T01:34:17+00:00",
+  "updated_at": "2026-10-08T01:34:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -520,3 +528,6 @@ review, protected merge, and terminal-green post-merge CI.
   goose::tests::diagnostic_and_symlink_fail_closed; exact-main attempt 2 passed. Preserve that
   observation for a separate fixture-hardening AR; AR-1726 descriptor-bound rustup behavior, review,
   merge integrity, and post-merge qualification are complete.
+
+- 2026-10-08T01:34:26+00:00: Accepted durable exact-review, signed-merge, descriptor-pairing, and
+  terminal-green post-merge hosted evidence from the AR-1726 session journal.
