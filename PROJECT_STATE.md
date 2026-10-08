@@ -24,14 +24,14 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37767084189 | `507559f636e0` | push | Huawei MIT source headers | completed:success |
-| 37767084179 | `507559f636e0` | push | Cross-repository development broker qualification | in_progress:- |
+| 37767084179 | `507559f636e0` | push | Cross-repository development broker qualification | completed:success |
 | 37767084162 | `507559f636e0` | push | Repository quality | in_progress:- |
 | 37767084143 | `507559f636e0` | push | Credential-free benchmark path | in_progress:- |
 | 37767084139 | `507559f636e0` | push | Rust verification | in_progress:- |
 | 37767084127 | `507559f636e0` | push | Emulated aarch64 portability | in_progress:- |
 | 37767084110 | `507559f636e0` | push | Formal assurance | in_progress:- |
 | 37767084108 | `507559f636e0` | push | Hosted portability and native qualification | completed:success |
-| 37767084105 | `507559f636e0` | push | Fault assurance | in_progress:- |
+| 37767084105 | `507559f636e0` | push | Fault assurance | completed:success |
 | 37765978753 | `617af40b356f` | pull_request | Rust verification | completed:success |
 | 37765978700 | `617af40b356f` | pull_request | Credential-free benchmark path | completed:success |
 | 37765978686 | `617af40b356f` | pull_request | Agent Workflow Quality shadow | completed:success |
