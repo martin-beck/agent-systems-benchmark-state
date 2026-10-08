@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1740-repository-makefile",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T11:41:32+00:00",
+  "claim_expires": "2026-10-08T12:21:08+00:00",
   "depends_on": [],
   "id": "AR-1740",
   "next_action": "PR #507 rebased exact head d0c6926 onto protected base bbe25d0; wait for all refreshed checks, then run local signed merge_pr.py integration and post-merge exact-main verification. Preserve separate AR-1742 historical recovery.",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T10:19:04+00:00",
+  "updated_at": "2026-10-08T10:21:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -166,3 +166,5 @@ quality gates, and never become a runtime or installed-user dependency.
 - 2026-10-08T10:19:04+00:00: Independent review confirms d0c6926 contains only Makefile/README/tests
   changes and is SSH-signed with matching DCO. PR #507 refreshed base is bbe25d0 after AR-1741
   recovery; hosted checks remain in progress.
+
+- 2026-10-08T10:21:08+00:00: Heartbeat by codex-ar1740-makefile.
