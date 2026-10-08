@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T11:01:06+00:00",
+  "updated_at": "2026-10-08T11:01:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -238,3 +238,6 @@ provider-free by default and preserve all stable/production fail-closed gates.
 - 2026-10-08T11:01:06+00:00: Inspected Repository quality failure: external digest-pinned analyzer
   download returned HTTP 500 after retries; no repository regression. Reran workflow 37767084162
   through handoffctl; it is active again. Other exact-main workflows remain active/success.
+
+- 2026-10-08T11:01:09+00:00: Recorded command exit 0; command argv SHA-256
+  9119ca2647ea8e4ab38bec827072c0e42b547c934102764d000e6d95384f2877.
