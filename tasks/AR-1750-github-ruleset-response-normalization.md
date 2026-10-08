@@ -20,9 +20,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T22:00:14+00:00",
+  "updated_at": "2026-10-08T22:09:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -250,3 +250,6 @@ independent review, all hosted checks, and a root execution gate are recorded.
   actionlint/zizmor, introduced-history gitleaks, and clean-tree validation. Publication used exact
   stale-head lease b6dfe7c; remote topic and PR now resolve to cb8be7e. Hosted checks restarted. No
   live API mutation, repository-settings PATCH, merge, or policy execution occurred.
+
+- 2026-10-08T22:09:52+00:00: Recorded command exit 0; command argv SHA-256
+  ebd1cb5a21144a6e0c9e6e17dd9f0673418684efc51a0115b4fe675fb74a1404.
