@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T01:25:35+00:00",
+  "updated_at": "2026-10-08T01:25:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -511,3 +511,6 @@ review, protected merge, and terminal-green post-merge CI.
   observed Ok(GooseOutcome status Failed exit 127). The same exact-head PR workflow passed, and
   AR-1726 does not modify Goose; classify as suspected nondeterministic fixture pending exact-main
   rerun, not as success.
+
+- 2026-10-08T01:25:39+00:00: Recorded command exit 0; command argv SHA-256
+  a41fac7de65f2a7c85b019861bec7330fc78da5661d07a6556c0ca6d244d5fc3.
