@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1727-development-broker-foreground-terminal",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T01:40:58+00:00",
   "depends_on": [
     "AR-1590"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
-  "owner": "",
+  "owner": "codex-ar1727-recovery501-review",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:35:10+00:00",
+  "updated_at": "2026-10-08T00:40:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -346,3 +346,5 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-08T00:35:10+00:00: Structural recovery review is clean; released ownerless while
   exact-head CI finishes so independent AR-1726 work may use the coordinator.
+
+- 2026-10-08T00:40:58+00:00: Claimed by codex-ar1727-recovery501-review.
