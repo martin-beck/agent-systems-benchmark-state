@@ -14,20 +14,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:b510a6647d3d6291b73f66808a32817172c24f582837b7e3b661633ee26011e9",
+    "evidence_ref": "quality/AR-1744-make-test-receipt.txt",
     "spec_ref": "specs/AR-1744.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1744.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Merged PR #511 and verified exact protected main; all required post-merge workflows are green.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T14:48:11+00:00",
+  "updated_at": "2026-10-08T14:48:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -329,3 +329,6 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 
 - 2026-10-08T14:48:11+00:00: Recorded command exit 0; command argv SHA-256
   4e434812f88198457a4ecf8e1cc9f9a9565d1aeeeade5823f3f46d0f27744d89.
+
+- 2026-10-08T14:48:58+00:00: Accepted exact protected-main merge and post-merge CI receipt for
+  AR-1744.
