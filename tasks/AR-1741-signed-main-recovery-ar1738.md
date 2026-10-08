@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Signed protected-main recovery for AR-1738",
-  "updated_at": "2026-10-08T09:51:39+00:00",
+  "updated_at": "2026-10-08T09:56:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738"
 }
 ---
@@ -38,3 +38,6 @@ main. AR-1740 is a separate publication incident and is intentionally excluded.
 - 2026-10-08T09:51:39+00:00: Forward-only descendant 0c100e4 has parent current protected main
   a9abcf2 and identical tree (zero product changes), SSH signature and matching DCO verified. Push
   remains blocked by recurring shared handoffctl lock; no remote effect yet.
+
+- 2026-10-08T09:56:06+00:00: Recorded command exit 0; command argv SHA-256
+  8b345685eff1898e70d2ebe7333b76c16a982b199126a5513c0641f29e46f3d9.
