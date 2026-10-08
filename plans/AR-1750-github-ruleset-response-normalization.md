@@ -44,7 +44,19 @@ merge-only admission, and resolved review threads remain mandatory.
    supply-chain, and workflow gates. Require signed+DCO commits, independent
    exact-head review, all PR checks, signed exact-tree local merge, and all
    exact-main post-merge workflows.
-8. After post-merge green, run one guarded apply with expected ID 24750310.
+8. If the old formal-approval rules make that reviewed merge circular, publish
+   and separately review a recovery-only CLI boundary. `--apply --ruleset-only
+   --expected-ruleset-id 24750310` performs full admission, identity, head,
+   capability, inventory, strict-settings-tuple and exact-ID checks; PUTs only
+   the desired ruleset; validates the bounded canonical response and fresh
+   complete drift-fenced readback; and never PATCHes repository settings.
+   `--ruleset-only --expected-ruleset-id 24750310` is read-only, accepts only
+   the admitted pre/final strict settings tuple, and requires the desired
+   ruleset. Fixtures, missing IDs, and incompatible CLI combinations fail
+   before API mutation. The live bootstrap remains forbidden until a fresh
+   exact-head review, all hosted checks, and an explicit root execution gate.
+9. After the bootstrap audit permits the reviewed signed merge and post-merge
+   workflows are green, run one normal guarded apply with expected ID 24750310.
    PATCH settings only after verified readback. Stop without retry on rejection
    or ambiguity. On success run two separate ID-bound read-only audits and
    independently review the durable receipt.
@@ -59,5 +71,7 @@ merge-only admission, and resolved review threads remain mandatory.
   capability, and foreign inventory remain stable.
 - Development policy remains representable with same-account independent-agent
   Coordinator review and the remaining protected-main gates intact.
+- The recovery-only ruleset bootstrap is exact-ID, never PATCHes settings, and
+  fails without mutation on unknown state, drift, fixture use, or ambiguity.
 - One guarded PUT/PATCH and two clean ID-bound audits produce a privacy-safe,
   independently reviewed receipt before AR-1748 can be unblocked.
