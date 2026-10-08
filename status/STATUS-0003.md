@@ -579,6 +579,20 @@
 | Summary | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. |
 | Next action | Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics. |
 
+### AR-1736 — Require model catalogs and execution parity for every backend
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make every supported model-bearing backend enumerate selectable models and carry the exact selection through complete run and sweep execution. |
+| Next action | Promote after AR-1733; inventory the canonical backend registry and implement catalog, selection, run, and sweep parity with exhaustive fixtures. |
+
 
 ## Dependency graph
 
@@ -1373,6 +1387,7 @@ flowchart LR
         AR_1733["AR-1733 - Planned"]:::status_planned
         AR_1734["AR-1734 - Done"]:::status_done
         AR_1735["AR-1735 - Open"]:::status_open
+        AR_1736["AR-1736 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3225,6 +3240,7 @@ flowchart LR
     AR_1730 --> AR_1731
     AR_1731 --> AR_1732
     AR_1732 --> AR_1733
+    AR_1733 --> AR_1736
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px

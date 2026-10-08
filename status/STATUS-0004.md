@@ -556,9 +556,10 @@
 | [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md) | [AR-1728](../tasks/AR-1728-cli2key-contract.md) | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) |
 | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md) | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) |
 | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) |
-| [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) | None |
+| [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) | [AR-1736](../tasks/AR-1736-backend-model-catalog-execution.md) |
 | [AR-1734](../tasks/AR-1734-development-tui-tool-environment.md) | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md), [AR-1727](../tasks/AR-1727-development-broker-foreground-terminal.md) | None |
 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md) | None | None |
+| [AR-1736](../tasks/AR-1736-backend-model-catalog-execution.md) | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | None |
 
 ## Complete AR inventory
 
@@ -631,4 +632,3 @@
 | P0 | [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | Unclaimed | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Development qualification is not blocked: exercise process bootstrap with deterministic local/mock and strict-replay authority. A real deployment-owned authenticated provider/materializer is optional future production hardening; preserve fail-closed live behavior. |
 | P0 | [AR-1483](../tasks/AR-1483-authenticated-control-process-owner.md): Authenticated control process owner | Unclaimed | Own authenticated control session and lifecycle while minting opaque CLI dispatch sources. | Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority. |
 | P0 | [AR-1506](../tasks/AR-1506-runtime-platform-launcher-integration.md): Runtime platform launcher integration | Unclaimed | Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch. | Development qualification is not blocked: test the launcher integration with deterministic local/mock and strict-replay authority and no public injection. A runtime-owned deployment adapter from authenticated AR-1505 state is optional future production hardening; do not claim live support from mocks. |
-| P0 | [AR-1507](../tasks/AR-1507-runtime-owned-authority-materialization.md): Runtime-owned authority materialization | Unclaimed | Materialize private runtime launch authority from authenticated AR-1505 bootstrap state without caller or synthetic authority. | Promote after dependency verification; define and implement the runtime-owned authority materializer that maps authenticated bootstrap state to private roots, tools, policy, and opaque dispatch source. |
