@@ -2,14 +2,14 @@
 {
   "branch": "feature/ar-1739-easy-channel-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T11:38:02+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1739",
   "next_action": "Post-merge exact main 507559f workflows active; Repository quality is rerunning after transient analyzer HTTP 500 (run 37767084162), while remaining hosted workflows continue. Release only after every exact-main workflow is green.",
   "observed_branch": "feature/ar-1739-easy-channel-lifecycle",
   "observed_dirty": 0,
   "observed_head": "617af40b356fb5b8b89cb3a541a28018904c251b",
-  "owner": "codex-ar1739-easy-lifecycle",
+  "owner": "",
   "plan": "../plans/AR-1739-easy-channel-lifecycle.md",
   "priority": "P1",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1739.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T11:12:02+00:00",
+  "updated_at": "2026-10-08T11:12:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -271,3 +271,8 @@ provider-free by default and preserve all stable/production fail-closed gates.
 
 - 2026-10-08T11:12:02+00:00: Recorded command exit 0; command argv SHA-256
   46ca8145305b6a6df862ff7d5e8c49ded9a4f60632be1d9bf385f34fa11ef872.
+
+- 2026-10-08T11:12:36+00:00: Released AR-1739: signed local integration merge 507559f from base
+  9aeea48 and reviewed head 617af40; exact origin/main verified. Receipt
+  quality/AR-1739-easy-channel-lifecycle-receipt.txt records all nine green exact-main workflows,
+  including recovered Repository quality and credential-free reruns.
