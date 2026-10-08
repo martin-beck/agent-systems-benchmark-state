@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1741-signed-main-recovery-ar1738",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T12:07:06+00:00",
+  "claim_expires": "2026-10-08T12:10:37+00:00",
   "depends_on": [],
   "id": "AR-1741",
   "next_action": "Wait for PR #508 required checks to turn green; then invoke tools/integration/merge_pr.py with exact base a9abcf2e63f761e314593e9abc6bf074b7418e5e, head 0c100e4624a6dc3972660dc24713940d87753709, tree befcb782d6ce260d1d4dd0e4fe25c2fb0b1b900f; verify signed protected-main descendant and post-merge policy before releasing AR-1741 and AR-1738.",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Signed protected-main recovery for AR-1738",
-  "updated_at": "2026-10-08T10:10:05+00:00",
+  "updated_at": "2026-10-08T10:10:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738"
 }
 ---
@@ -63,3 +63,5 @@ main. AR-1740 is a separate publication incident and is intentionally excluded.
 
 - 2026-10-08T10:10:05+00:00: Recorded command exit 0; command argv SHA-256
   5e93c159288a84c74ea030275ba3a0d35c7ca99714c62b6d5612243578565a39.
+
+- 2026-10-08T10:10:37+00:00: Heartbeat by codex-ar1738-rustup-permission.
