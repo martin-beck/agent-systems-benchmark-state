@@ -563,7 +563,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch. |
-| Next action | Integrate approved PR #502 with tools/integration/merge_pr.py against base 736a65cd8904b8f4a6f1715fc86ae1c854fe2232, head 40f618b9389c594c4274bc08195f93f3cd2dd547, tree e5c4645c9e4384fb57424eaa42139a99b78c5c69; then require exact-main CI and immutable post-merge evidence. |
+| Next action | Record spec acceptance for exact-main evidence, release done, reconcile, snapshot, and verify doctor --live. |
 
 ### AR-1735 — Harden Goose diagnostic fixture determinism
 

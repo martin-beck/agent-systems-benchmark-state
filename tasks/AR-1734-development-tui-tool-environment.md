@@ -8,7 +8,7 @@
     "AR-1727"
   ],
   "id": "AR-1734",
-  "next_action": "Integrate approved PR #502 with tools/integration/merge_pr.py against base 736a65cd8904b8f4a6f1715fc86ae1c854fe2232, head 40f618b9389c594c4274bc08195f93f3cd2dd547, tree e5c4645c9e4384fb57424eaa42139a99b78c5c69; then require exact-main CI and immutable post-merge evidence.",
+  "next_action": "Record spec acceptance for exact-main evidence, release done, reconcile, snapshot, and verify doctor --live.",
   "observed_branch": "repair/ar-1734-development-tui-tool-environment",
   "observed_dirty": 0,
   "observed_head": "40f618b9389c594c4274bc08195f93f3cd2dd547",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T02:49:02+00:00",
+  "updated_at": "2026-10-08T02:57:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1734-development-tui-tool-environment"
 }
 ---
@@ -291,3 +291,15 @@ and production policy remains fail closed and unchanged.
 
 - 2026-10-08T02:49:02+00:00: Recorded command exit 0; command argv SHA-256
   2c11e49aa5ab7f512f73c03be0dc233fd29f09079cb40ffbacc81d8c9feaf6ca.
+
+- 2026-10-08T02:57:33+00:00: Integrated approved PR #502 only through tools/integration/merge_pr.py:
+  exact signed+DCO merge 1a5888ce1c96414015bbaf223ac42302871d47fe, tree
+  e5c4645c9e4384fb57424eaa42139a99b78c5c69, parents 736a65cd8904b8f4a6f1715fc86ae1c854fe2232 and
+  reviewed head 40f618b9389c594c4274bc08195f93f3cd2dd547. Remote main and merged PR object match.
+  Exact-merge local focused development-launch tests 5/5, fmt, clippy -D warnings, signature, and
+  DCO passed. All nine exact-main push workflows are terminal success: 37719574657, 37719574960,
+  37719574501, 37719574567, 37719574598, 37719574552, 37719574548, 37719574479, 37719574756.
+  Cross-repository run 37719574960 reran the exact installed TUI inherited-descriptor/PTTY
+  development journey on the merge; independent exact-tree review also passed install, status, bare
+  launch, dynamic catalog, and provider-free qualification. Development-only; no
+  public/live-provider claim.
