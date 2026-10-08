@@ -4,7 +4,7 @@ Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `a9abcf2e63f761e314593e9abc6bf074b7418e5e`
 - Local origin/main: `a9abcf2e63f761e314593e9abc6bf074b7418e5e`
-- Primary worktree head: `736a65cd8904b8f4a6f1715fc86ae1c854fe2232`
+- Primary worktree head: `a9abcf2e63f761e314593e9abc6bf074b7418e5e`
 
 ## Open pull requests
 
@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #506 | `feature/ar-1739-easy-channel-lifecycle@fb6d81d5c103` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): add easy channel lifecycle |
+| #506 | `feature/ar-1739-easy-channel-lifecycle@fb6d81d5c103` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): add easy channel lifecycle |
 
 ## Recent workflows
 
@@ -35,4 +35,4 @@ Generated from local Git and GitHub. Do not edit.
 | 37758191633 | `a9abcf2e63f7` | push | Repository quality | completed:failure |
 | 37758035254 | `fb6d81d5c103` | pull_request | Formal assurance | completed:success |
 | 37758035178 | `fb6d81d5c103` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 37758035094 | `fb6d81d5c103` | pull_request | Repository quality | in_progress:- |
+| 37758035094 | `fb6d81d5c103` | pull_request | Repository quality | completed:failure |
