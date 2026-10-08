@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T10:11:10+00:00",
   "depends_on": [],
   "id": "AR-1739",
-  "next_action": "Monitor PR #506 at exact head fb6d81d; required CI is still pending after provenance refresh, then merge only when all green and perform post-merge exact-head verification.",
+  "next_action": "PR #506 exact head 8d86ebe is rebased onto protected origin/main a9abcf2; monitor required CI, then merge only all-green and perform post-merge exact-head verification.",
   "observed_branch": "feature/ar-1739-easy-channel-lifecycle",
   "observed_dirty": 0,
   "observed_head": "8d86ebe49043cc1672426f807bdb31dcd45ab1d6",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T09:58:31+00:00",
+  "updated_at": "2026-10-08T09:59:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -154,3 +154,8 @@ provider-free by default and preserve all stable/production fail-closed gates.
 
 - 2026-10-08T09:58:31+00:00: Recorded command exit 0; command argv SHA-256
   d3cf1a78e5f84cf0c5d2a58d1fd8ca5047ad356d2b559fcabee40b0c59fc6014.
+
+- 2026-10-08T09:59:56+00:00: Removed unsafe environment mutation from lifecycle tests by introducing
+  root-injected guided_lifecycle_at helper; refreshed provenance digest and pushed signed+DCO commit
+  8d86ebe. Local source/provenance digests match and worktree is clean. Fresh CI is running;
+  completed AWQ/header/retained-fault checks are green.
