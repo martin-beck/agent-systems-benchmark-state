@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1726-development-rustup-shim-permissions",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T02:02:13+00:00",
   "depends_on": [
     "AR-1634",
     "AR-1636",
@@ -13,17 +13,17 @@
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "d9ef0bce9bf656f07b3a64f306ed65d6204177cb",
-  "owner": "",
+  "owner": "codex-ar1726-pr499-rereview",
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1726.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-07T23:59:30+00:00",
+  "updated_at": "2026-10-08T00:02:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -290,3 +290,5 @@ review, protected merge, and terminal-green post-merge CI.
   release build, and exact-host human/JSON preflight pass. Full workspace exposed only the known
   parallel runtime scratch collision, whose exact test passed isolated. Hosted exact-head checks are
   running; obtain fresh independent review, then merge only after terminal green.
+
+- 2026-10-08T00:02:13+00:00: Claimed by codex-ar1726-pr499-rereview.
