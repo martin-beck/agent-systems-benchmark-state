@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T10:10:21+00:00",
   "depends_on": [],
   "id": "AR-1740",
-  "next_action": "Open PR from pushed feature/ar-1740-repository-makefile at 9dcf586; run exact-head hosted checks, merge only green, then perform post-merge verification and release done.",
+  "next_action": "Post-merge recovery required: protected-main Repository quality failed because GitHub merge a9abcf2 tree befcb782 differs from reviewed topic tree 1aa96736 (topic e424c39; base 2f7387e). Coordinate exact-tree repair/republication, then rerun all main required workflows and release only after green.",
   "observed_branch": "feature/ar-1740-repository-makefile",
   "observed_dirty": 0,
   "observed_head": "e424c392d7bcd99199ed8f194918656a27d4b65b",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T09:40:21+00:00",
+  "updated_at": "2026-10-08T09:40:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -105,3 +105,9 @@ quality gates, and never become a runtime or installed-user dependency.
   076eb2d44eecce0ee7f3326ad58534b02a74d1ccef886e60d473235950be40e6.
 
 - 2026-10-08T09:40:21+00:00: Heartbeat by codex-ar1740-makefile.
+
+- 2026-10-08T09:40:36+00:00: PR #505 merged at a9abcf2 after all pre-merge checks passed. Post-merge
+  exact-main verification found Repository quality failure: protected-main merge tree differs from
+  reviewed topic tree; diff is unrelated crates/asb-cli/src/tui.rs caused by protected base
+  advancing during publication. Makefile implementation itself passed all pre-merge gates. AR
+  remains in progress pending publication-integrity recovery.
