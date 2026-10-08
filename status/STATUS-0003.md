@@ -635,6 +635,20 @@
 | Summary | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. |
 | Next action | Promote after reviewing the existing asb easy and TUI channel contracts; implement the native dependency-free build/install/update/test/status/remove lifecycle with explicit channel selection, a visibly labelled development stable mock, and safe human/JSON guidance. |
 
+### AR-1740 — Add developer Makefile workflow
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows. |
+| Next action | Promote after reviewing the pinned Cargo/toolchain commands and storage boundaries; implement and test the optional repository Makefile with dependency checks and safe build/install/clean/update/test targets. |
+
 
 ## Dependency graph
 
@@ -1433,6 +1447,7 @@ flowchart LR
         AR_1737["AR-1737 - Open"]:::status_open
         AR_1738["AR-1738 - In progress"]:::status_in_progress
         AR_1739["AR-1739 - Planned"]:::status_planned
+        AR_1740["AR-1740 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3467,5 +3482,3 @@ flowchart LR
 | [AR-0905](../tasks/AR-0905-recovery-models.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | None |
 | [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) |
 | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md) | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) |
-| [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md) | None |
-| [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | None |
