@@ -677,6 +677,20 @@
 | Summary | Recover PR #505 protected-main exact-tree publication failure without rewriting history. |
 | Next action | Promote after reviewing the preserved PR #505 mismatch and exact signed local integration procedure. |
 
+### AR-1743 — Repair Make update lockfile handling
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file. |
+| Next action | Promote for implementation after confirming the current Makefile failure and preserving unrelated work. |
+
 
 ## Dependency graph
 
@@ -1478,6 +1492,7 @@ flowchart LR
         AR_1740["AR-1740 - Done"]:::status_done
         AR_1741["AR-1741 - Done"]:::status_done
         AR_1742["AR-1742 - Open"]:::status_open
+        AR_1743["AR-1743 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3507,5 +3522,3 @@ flowchart LR
 | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0901](../tasks/AR-0901-formal-assurance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |
 | [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) |
-| [AR-0903](../tasks/AR-0903-release-qualification.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0811](../tasks/AR-0811-documentation-qualification.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md) | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) |
-| [AR-0904](../tasks/AR-0904-contract-consistency.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
