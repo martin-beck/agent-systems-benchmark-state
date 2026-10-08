@@ -736,5 +736,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-pr496-review.3ZigFi` | `DETACHED` | `dc5a635fd37f` | 0 | behind 26, ahead 1 |
 | `asb-pr507-integration` | `DETACHED` | `bbe25d0c516b` | 0 | behind 2, ahead 0 |
 | `asb-pr509-final-review.BKrQ1c` | `DETACHED` | `ad6957261a84` | 0 | behind 0, ahead 1 |
+| `asb-pr509-final2-review.1YuRDv` | `DETACHED` | `199bd00a95c2` | 0 | behind 0, ahead 1 |
 | `asb-pr509-review.r2gLtk` | `DETACHED` | `bb9c35cdea59` | 0 | behind 2, ahead 1 |
 | `policy-asb-review` | `codex/development-review-identity-asb` | `589e218f64a4` | 0 | behind 51, ahead 0 |
