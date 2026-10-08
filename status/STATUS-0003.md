@@ -390,7 +390,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. |
-| Next action | Await exact-head CI for asb-tui PR #296 head 7c69b415563aa017d9a86dc38338df034980274a/tree cccfb06c303728eb8e145c8d6051f2b1f94b3529; after terminal green, require a fresh independent review of both commits and do not merge from this worker. |
+| Next action | Fresh independent reviewer: review asb-tui PR #296 exact head 7c69b415563aa017d9a86dc38338df034980274a/tree cccfb06c303728eb8e145c8d6051f2b1f94b3529 against base 168ea56a1e3724bc72f097ffedf91c80704a72c2; inspect both commits and the formal model/module inventory repair, require terminal-green exact-head Repository Quality run 37860938908 and AWQ shadow run 37860939191, then return approval or findings without merging. |
 
 ### AR-1722 — PR #487 protected-main requalification and merge-settings recovery
 
