@@ -4,12 +4,12 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-systems-benchmark` | `feature/ar-1740-default-lifecycle` | `a9abcf2e63f7` | 0 | behind 2, ahead 0 |
-| `asb` | `DETACHED` | `62fda2f3417b` | 0 | behind 201, ahead 0 |
-| `asb-ar447.SMPvqN` | `repair-ar447-current` | `18a60c6e6539` | 0 | behind 164, ahead 7 |
-| `asb-base.22r1kh` | `DETACHED` | `96b40ec3f298` | 23 | behind 164, ahead 0 |
+| `agent-systems-benchmark` | `feature/ar-1740-default-lifecycle` | `a9abcf2e63f7` | 0 | behind 4, ahead 0 |
+| `asb` | `DETACHED` | `62fda2f3417b` | 0 | behind 203, ahead 0 |
+| `asb-ar447.SMPvqN` | `repair-ar447-current` | `18a60c6e6539` | 0 | behind 166, ahead 7 |
+| `asb-base.22r1kh` | `DETACHED` | `96b40ec3f298` | 23 | behind 166, ahead 0 |
 | changed files | - | - | - | `crates/asb-cli/default_2330231352076078078_0_271840.profraw`, `crates/asb-cli/default_2330231352076078078_0_271841.profraw`, `crates/asb-cli/default_2330231352076078078_0_271887.profraw`, `crates/asb-cli/default_2330231352076078078_0_271888.profraw`, `crates/asb-cli/default_2330231352076078078_0_271889.profraw`, `crates/asb-cli/default_2330231352076078078_0_271891.profraw`, `crates/asb-cli/default_2330231352076078078_0_271892.profraw`, `crates/asb-cli/default_2330231352076078078_0_271893.profraw`, `crates/asb-cli/default_2330231352076078078_0_271894.profraw`, `crates/asb-cli/default_2330231352076078078_0_271895.profraw`, `crates/asb-cli/default_2330231352076078078_0_271896.profraw`, `crates/asb-cli/default_2330231352076078078_0_271897.profraw`, `crates/asb-cli/default_2330231352076078078_0_271898.profraw`, `crates/asb-cli/default_2330231352076078078_0_271899.profraw`, `crates/asb-cli/default_2330231352076078078_0_271900.profraw`, `crates/asb-cli/default_2330231352076078078_0_271901.profraw`, `crates/asb-cli/default_2330231352076078078_0_271902.profraw`, `crates/asb-cli/default_2330231352076078078_0_271903.profraw`, `crates/asb-cli/default_2330231352076078078_0_271904.profraw`, `crates/asb-cli/default_2330231352076078078_0_271905.profraw`, `crates/asb-cli/default_2330231352076078078_0_271906.profraw`, `crates/asb-cli/default_2330231352076078078_0_271907.profraw`, `crates/asb-cli/default_2330231352076078078_0_271908.profraw` |
-| `asb-main-check` | `DETACHED` | `e9d4d3d1c6a4` | 0 | behind 301, ahead 975 |
+| `asb-main-check` | `DETACHED` | `e9d4d3d1c6a4` | 0 | behind 303, ahead 975 |
 | `.ar1649-comparison` | `ar-1649-comparison-impl` | `826122952a8e` | 0 | behind 173, ahead 3 |
 | `.ar1698-current` | `DETACHED` | `4ceacaa7ea1f` | 0 | behind 38, ahead 0 |
 | `.ar1698-product-clean` | `DETACHED` | `d207cc4eded6` | 0 | behind 52, ahead 0 |
@@ -370,7 +370,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1727-development-broker-foreground-terminal` | `repair/ar-1727-development-broker-foreground-terminal` | `420b57d20a6c` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-ar-1734-development-tui-tool-environment` | `repair/ar-1734-development-tui-tool-environment` | `40f618b9389c` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 9, ahead 0 |
-| `agent-systems-benchmark-ar-1737-development-tui-linker-handoff` | `repair/ar-1737-development-tui-linker-handoff` | `bb9c35cdea59` | 0 | behind 2, ahead 1 |
+| `agent-systems-benchmark-ar-1737-development-tui-linker-handoff` | `repair/ar-1737-development-tui-linker-handoff` | `bb9c35cdea59` | 1 | behind 2, ahead 1 |
+| changed files | - | - | - | `crates/asb-cli/src/tui.rs` |
 | `agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility` | `repair/ar-1738-development-rustup-permission-compatibility` | `f020b2d4fd65` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `f38594e40d36` | 0 | behind 2, ahead 5 |
 | `agent-systems-benchmark-ar-1740-repository-makefile` | `feature/ar-1740-repository-makefile` | `d0c692690564` | 0 | behind 1, ahead 0 |
