@@ -633,7 +633,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. |
-| Next action | PR #506 base d53e901 exact head 13412c6; 10 required checks pass and Emulated aarch64, Policy/coverage, Rust, TLC remain pending. Merge only after all green, then post-merge verify and release AR. |
+| Next action | PR #506 base 9aeea48 exact head 617af40; fresh exact-base required checks are active after signed/DCO-preserving rebase. Merge only after all green, then post-merge verify and release AR. |
 
 ### AR-1740 — Add developer Makefile workflow
 
