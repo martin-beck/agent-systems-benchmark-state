@@ -7,8 +7,8 @@
   "id": "AR-1739",
   "next_action": "Add focused lifecycle contract tests, run the exact current-main gates, then review and publish the PR.",
   "observed_branch": "feature/ar-1739-easy-channel-lifecycle",
-  "observed_dirty": 3,
-  "observed_head": "1a5888ce1c96414015bbaf223ac42302871d47fe",
+  "observed_dirty": 0,
+  "observed_head": "98f27d1634d4349e204572edcd034aeb8b1e5259",
   "owner": "codex-ar1739-easy-lifecycle",
   "plan": "../plans/AR-1739-easy-channel-lifecycle.md",
   "priority": "P1",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T09:30:48+00:00",
+  "updated_at": "2026-10-08T09:31:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
