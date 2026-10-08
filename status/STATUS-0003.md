@@ -745,7 +745,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition. |
-| Next action | Wait for official Coordinator AR-0087 to merge a reviewed follow-up that preserves task_spec evidence classes, removes scanner-triggering UUID literals from every declared vendor file, and retains exact unblock/formal closure; then resync via sync-development from that official commit, rebase PR #106 without downstream vendor edits, rerun all 95&#37;/formal/privacy gates, and obtain fresh exact-head independent review. |
+| Next action | Release complete: canonical main already contains the stricter official Coordinator 113dc610 vendor adoption through reviewed PR #107/signed merge d6556e1; stale superseded PR #106 is closed unmerged and exact hosted/postmerge evidence is green. |
 
 ### AR-1748 — Portable protected-main provenance and capability admission
 

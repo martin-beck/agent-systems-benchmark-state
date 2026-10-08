@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T22:13:25+00:00",
   "depends_on": [],
   "id": "AR-1747",
-  "next_action": "Wait for official Coordinator AR-0087 to merge a reviewed follow-up that preserves task_spec evidence classes, removes scanner-triggering UUID literals from every declared vendor file, and retains exact unblock/formal closure; then resync via sync-development from that official commit, rebase PR #106 without downstream vendor edits, rerun all 95%/formal/privacy gates, and obtain fresh exact-head independent review.",
+  "next_action": "Release complete: canonical main already contains the stricter official Coordinator 113dc610 vendor adoption through reviewed PR #107/signed merge d6556e1; stale superseded PR #106 is closed unmerged and exact hosted/postmerge evidence is green.",
   "owner": "codex-asb-ar1747-closeout-20261008",
   "plan": "../plans/AR-1747-coordinator-unblock-vendor-adoption.md",
   "priority": "P0",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Adopt Coordinator unblock support for AR-1722",
-  "updated_at": "2026-10-08T20:13:46+00:00",
+  "updated_at": "2026-10-08T20:14:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1747-coordinator-unblock-vendor"
 }
 ---
@@ -126,3 +126,8 @@ fabricate a pause, edit AR-1722 directly, or change ASB product runtime code.
 
 - 2026-10-08T20:13:46+00:00: Recorded command exit 0; command argv SHA-256
   77fd77e6cc5b97e2723ea0eff946a77085433dd521e67459112036ccbafe837b.
+
+- 2026-10-08T20:14:33+00:00: Reconciled the original AR-1747 adoption obligations to completed
+  dependency AR-1749. Canonical vendor verification reports official 113dc610/tree45ae with manifest
+  02149740; exact signed merge and hosted Formal/Coordination/header evidence passed, and stale PR
+  #106 was closed without merge.
