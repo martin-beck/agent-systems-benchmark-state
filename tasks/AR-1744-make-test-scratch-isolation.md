@@ -2,14 +2,14 @@
 {
   "branch": "repair/ar-1744-make-test-scratch-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T14:41:03+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1744",
   "next_action": "Wait for PR #511 jobs 37788419498, 37788419514, and 37788419573 to finish; merge only after all required checks are green, then verify exact main.",
   "observed_branch": "repair/ar-1744-make-test-scratch-isolation",
   "observed_dirty": 0,
   "observed_head": "3a14e8846af46792e2dd1c15a0b50343ec7fc1d8",
-  "owner": "codex-ar1744-make-test",
+  "owner": "",
   "plan": "../plans/AR-1744-make-test-scratch-isolation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1744.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair now also prevents plan-create tests from reading the operator terminal; focused test passes and PR #511 awaits three long-running CI jobs.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T14:33:22+00:00",
+  "updated_at": "2026-10-08T14:43:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -305,3 +305,6 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 
 - 2026-10-08T14:33:22+00:00: Recorded command exit 0; command argv SHA-256
   659668ef6fa90d61d897e63f874389dcfc72fbedfd74cb35ed1bf7c7e4940884.
+
+- 2026-10-08T14:43:09+00:00: Recovered expired claim formerly owned by codex-ar1744-make-test.
+  Recovering expired coordinator claim to record completed merge and exact-main verification.
