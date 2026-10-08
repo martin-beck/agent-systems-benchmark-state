@@ -2,21 +2,21 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T05:14:00+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1728",
   "next_action": "Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets.",
-  "owner": "codex-root-backend-model-ar-20261008",
+  "owner": "",
   "plan": "../plans/AR-1728-cli2key-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1728.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Freeze development cli2key contract and bridge",
-  "updated_at": "2026-10-08T04:15:05+00:00",
+  "updated_at": "2026-10-08T04:15:35+00:00",
   "worktree_key": ""
 }
 ---
@@ -55,3 +55,9 @@ unofficial, opt-in, and provides no production or provider-authority claim.
 
 - 2026-10-08T04:15:05+00:00: Recorded command exit 0; command argv SHA-256
   55f87efa3ecf8614a4b0779a8bb686a63224999d23c26c93472b16d1bc33fef4.
+
+- 2026-10-08T04:15:35+00:00: Added dependent AR-1736 with task, plan, and spec for canonical
+  registry-driven model enumeration, selection, and exact identity propagation through full run and
+  bounded sweep for every supported backend; deterministic development fixtures are sufficient and
+  optional live credentials are nonblocking. AR-1728 implementation scope remains unchanged and
+  ready.
