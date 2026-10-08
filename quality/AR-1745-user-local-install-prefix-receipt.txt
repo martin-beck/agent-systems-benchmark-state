@@ -1,0 +1,19 @@
+AR-1745 user-local ASB install-prefix completion receipt
+
+status=pass
+product_pr=512
+product_head=250ef6658e0cdaa3d8cea53bb009a0bbd88787d4
+protected_base=fd956d857970f039db0a4aad03c9e15e59b13da6
+product_merge=1ab175c30eb039877782487aa863823c5c9e9733
+merge_parents=fd956d857970f039db0a4aad03c9e15e59b13da6,250ef6658e0cdaa3d8cea53bb009a0bbd88787d4
+reviewed_tree=e43c597a5389c5d983fcbe63409eee01ec59f7ff
+merge_signature=verified Martin Beck SSH signature
+merge_dco=verified matching Signed-off-by
+local_policy=pass
+independent_review=approved exact head 250ef66; install and clean symlink escapes, spaces, and focused tests verified
+focused_tests=tests/makefile.sh pass
+hosted_workflows=37785805791,37785805792,37785805796,37785805813,37785805818,37785805851,37785805853,37785805888,37785807073
+hosted_workflow_conclusions=all success
+default_install=$HOME/.local/bin/asb
+explicit_prefix=validated absolute PREFIX override
+safety=install and clean reject traversal and symlink escapes; cleanup preserves external files

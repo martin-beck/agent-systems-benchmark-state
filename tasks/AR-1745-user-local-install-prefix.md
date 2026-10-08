@@ -17,11 +17,11 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:66bf5fed50a77ec22ba3aea98d407d9d9502c485e4d782928443760626525b5f",
+    "evidence_ref": "quality/AR-1745-user-local-install-prefix-receipt.txt",
     "spec_ref": "specs/AR-1745.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1745.json",
   "spec_revision": 1,
