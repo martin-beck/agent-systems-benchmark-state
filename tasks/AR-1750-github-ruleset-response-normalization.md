@@ -10,7 +10,7 @@
   "id": "AR-1750",
   "next_action": "Obtain a fresh independent exact-head review of repaired PR #517 at 880fe4f4b1248328cb496b4ec6097954d620065a tree ca6265a7ed0e1304266044b73c5c2a811d84b64b; stale ba751205 review must not be reused. Do not merge or perform live settings mutation before root gate.",
   "observed_branch": "repair/ar-1750-ruleset-response-normalization",
-  "observed_dirty": 0,
+  "observed_dirty": 4,
   "observed_head": "880fe4f4b1248328cb496b4ec6097954d620065a",
   "owner": "codex-asb-ar1750-ruleset-normalization-20261008",
   "plan": "../plans/AR-1750-github-ruleset-response-normalization.md",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T21:36:31+00:00",
+  "updated_at": "2026-10-08T21:37:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
