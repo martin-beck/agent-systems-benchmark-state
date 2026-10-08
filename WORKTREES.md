@@ -364,11 +364,14 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1608-config-persistence` | `feature/ar-1608-config-persistence` | `61a71bcfedfb` | 0 | behind 241, ahead 0 |
 | `agent-systems-benchmark-ar-1609` | `feature/ar-1609-coding-agent-adapter-catalog` | `bd40695b8e81` | 0 | behind 243, ahead 0 |
 | `agent-systems-benchmark-ar-1722-requalification` | `repair/ar-1722-pr487-requalification` | `9b7941cdd810` | 0 | behind 38, ahead 0 |
-| `agent-systems-benchmark-ar-1726-development-rustup-shim-permissions` | `repair/ar-1726-development-rustup-shim-permissions` | `acd7a146baba` | 0 | behind 3, ahead 0 |
+| `agent-systems-benchmark-ar-1726-development-rustup-shim-permissions` | `repair/ar-1726-development-rustup-shim-permissions` | `acd7a146baba` | 1 | behind 3, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/tui.rs` |
 | `agent-systems-benchmark-ar-1726-pr499-review3` | `DETACHED` | `acd7a146baba` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1727-development-broker-foreground-terminal` | `repair/ar-1727-development-broker-foreground-terminal` | `420b57d20a6c` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1734-development-tui-tool-environment` | `repair/ar-1734-development-tui-tool-environment` | `40f618b9389c` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility` | `repair/ar-1738-development-rustup-permission-compatibility` | `acd7a146baba` | 1 | behind 3, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/tui.rs` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 294, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 294, ahead 830 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 294, ahead 89 |

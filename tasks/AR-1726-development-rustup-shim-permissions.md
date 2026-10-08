@@ -11,7 +11,7 @@
   "id": "AR-1726",
   "next_action": "No further AR-1726 implementation action; signed main 736a65cd8904b8f4a6f1715fc86ae1c854fe2232 passed every required exact-main workflow after one documented successful rerun of the unrelated nondeterministic Goose symlink fixture.",
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "acd7a146babaf39371e4cabe04dd2aa084df8c6c",
   "owner": "",
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "done",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T01:34:29+00:00",
+  "updated_at": "2026-10-08T08:33:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
