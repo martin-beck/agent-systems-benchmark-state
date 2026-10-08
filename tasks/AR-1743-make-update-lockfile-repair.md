@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repair Make update lockfile handling",
-  "updated_at": "2026-10-08T11:19:56+00:00",
+  "updated_at": "2026-10-08T11:21:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1743-make-update-lockfile"
 }
 ---
@@ -41,3 +41,6 @@ unrelated product changes and record the exact failure and recovery evidence.
   mutation failure; repair scope and tests are defined.
 
 - 2026-10-08T11:19:56+00:00: Claimed by codex-ar1743-make-update.
+
+- 2026-10-08T11:21:19+00:00: Recorded command exit 2; command argv SHA-256
+  071dd2d3df583a7d847ec9572789b07c5be72fc731397c41d0f076181e333214.
