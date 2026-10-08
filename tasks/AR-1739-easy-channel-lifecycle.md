@@ -6,6 +6,9 @@
   "depends_on": [],
   "id": "AR-1739",
   "next_action": "Promote after reviewing the existing asb easy and TUI channel contracts; implement the native dependency-free build/install/update/test/status/remove lifecycle with explicit channel selection, a visibly labelled development stable mock, and safe human/JSON guidance.",
+  "observed_branch": "feature/ar-1739-easy-channel-lifecycle",
+  "observed_dirty": 0,
+  "observed_head": "1a5888ce1c96414015bbaf223ac42302871d47fe",
   "owner": "codex-ar1739-easy-lifecycle",
   "plan": "../plans/AR-1739-easy-channel-lifecycle.md",
   "priority": "P1",
@@ -14,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T09:18:27+00:00",
+  "updated_at": "2026-10-08T09:18:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
