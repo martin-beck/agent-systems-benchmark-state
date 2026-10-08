@@ -2,24 +2,24 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T02:06:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1726",
     "AR-1727"
   ],
   "id": "AR-1734",
   "next_action": "Claim in an isolated ASB worktree; reproduce the AR-1713 installed-launch failure, then pass only validated development tool identities across the scrubbed broker environment with hostile replacement tests.",
-  "owner": "codex-ar1734-planning",
+  "owner": "",
   "plan": "../plans/AR-1734-development-tui-tool-environment.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1734.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T01:36:43+00:00",
+  "updated_at": "2026-10-08T01:37:20+00:00",
   "worktree_key": ""
 }
 ---
@@ -40,3 +40,7 @@ and production policy remains fail closed and unchanged.
 
 - 2026-10-08T01:36:43+00:00: Recorded command exit 0; command argv SHA-256
   a0a5101c89c1881d8ddb910a6fd38534f58d1c35f702171439b1c42e63920303.
+
+- 2026-10-08T01:37:20+00:00: Published detailed P0 dependency for the bounded validated tool
+  environment required by installed ASB-TUI launch; ready for an isolated ASB implementation worker
+  after current TUI review/repair capacity permits.
