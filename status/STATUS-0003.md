@@ -633,7 +633,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. |
-| Next action | Promote after reviewing the existing asb easy and TUI channel contracts; implement the native dependency-free build/install/update/test/status/remove lifecycle with explicit channel selection and safe human/JSON guidance. |
+| Next action | Promote after reviewing the existing asb easy and TUI channel contracts; implement the native dependency-free build/install/update/test/status/remove lifecycle with explicit channel selection, a visibly labelled development stable mock, and safe human/JSON guidance. |
 
 
 ## Dependency graph
