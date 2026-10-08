@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T09:32:23+00:00",
+  "updated_at": "2026-10-08T09:32:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -80,3 +80,6 @@ provider-free by default and preserve all stable/production fail-closed gates.
   feature/ar-1739-easy-channel-lifecycle; PR #506 opened. Focused cargo test -p asb-cli --lib
   --locked passed with 237 tests. Formatting was run through handoffctl; publication retried after
   shared coordinator lock contention cleared.
+
+- 2026-10-08T09:32:30+00:00: Recorded command exit 8; command argv SHA-256
+  b6cbe55eae2724ca6d3f63fd43118d490cdb933a0f40128089be2bc319dbba3c.
