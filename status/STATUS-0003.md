@@ -751,11 +751,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-ar1748-closeout-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. |
@@ -1595,7 +1595,7 @@ flowchart LR
         AR_1745["AR-1745 - Done"]:::status_done
         AR_1746["AR-1746 - Blocked"]:::status_blocked
         AR_1747["AR-1747 - Done"]:::status_done
-        AR_1748["AR-1748 - In progress"]:::status_in_progress
+        AR_1748["AR-1748 - Done"]:::status_done
         AR_1749["AR-1749 - Done"]:::status_done
         AR_1750["AR-1750 - Done"]:::status_done
     end

@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md): Runtime cassette operation executor adapter | Unclaimed | Provide a runtime cassette operation executor callback boundary. | Provide CLI/replay adapter over RuntimeOperationHandle and bind actual replay command; add supervised lifecycle/egress/no-fallback fixtures. |
 | P0 | [AR-1275](../tasks/AR-1275-replay-operation-injection.md): Runtime operation injection into replay dispatcher | Unclaimed | Inject runtime-owned operation handles into actual strict-replay dispatch. | Bind runtime-issued operation handle into the primary argument-level replay command; add supervised cassette response/egress/cancel/restart/timeout/crash/cleanup evidence. |
 | P0 | [AR-1276](../tasks/AR-1276-primary-replay-runtime.md): Primary replay runtime integration | Unclaimed | Integrate runtime-owned operation execution into the primary strict-replay command. | Promote after dependency verification; wire the primary replay command to runtime-issued operation execution and prove supervised lifecycle behavior. |
 | P0 | [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md): Runtime-to-CLI replay transport boundary | Unclaimed | Provide a runtime-issued transport channel for primary strict replay. | Wire ReplayTransportClient into the primary replay dispatch and connect runtime-issued cassette service; add supervised egress/lifecycle evidence. |
@@ -178,7 +177,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (518)
+### Done (519)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -497,3 +496,4 @@
 | P0 | [AR-1718](../tasks/AR-1718.md): Portable fault-matrix network isolation repair | Unclaimed | Repair the ASB fault matrix with explicitly validated loopback-only isolation backends and no host-network fallback. | Run current exact-main PR #490 post-merge fault-matrix qualification, publish the privacy-safe receipt, and independently review the evidence before releasing AR-1718. |
 | P0 | [AR-1719](../tasks/AR-1719.md): OpenRouter free-model catalog and wizard selection | Unclaimed | Enumerate OpenRouter explicit :free models and free-router eligibility, normalize dynamic metadata/capabilities, and expose eligible models through provider catalog, provider-plan, and wizard selection. | Continue deterministic OpenRouter catalog normalization and fixtures; expose every eligible free model with typed unavailable/model-mismatch diagnostics and a credential-free/live smoke qualification path. |
 | P0 | [AR-1720](../tasks/AR-1720.md): Claimed-task identity and coordinator integrity | Unclaimed | Prevent claimed AR identity and scope swaps, add auditable collision migration, and restore safe live reconciliation diagnostics. | Record the same-user independent-agent review of the exact isolated prototype head; no additional upstream authorization or merge is required for this development repair. |
+| P0 | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | Unclaimed | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | No further AR-1726 implementation action; signed main 736a65cd8904b8f4a6f1715fc86ae1c854fe2232 passed every required exact-main workflow after one documented successful rerun of the unrelated nondeterministic Goose symlink fixture. |

@@ -605,12 +605,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1748](../tasks/AR-1748-protected-main-portable-provenance.md): Portable protected-main provenance and capability admission | codex-asb-ar1748-closeout-20261009 | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. | Release AR-1748 done after attaching spec acceptance for independently approved PR #517/merge 31ca7a4/live-policy receipt; no further product or GitHub mutation is required. |
-
 ### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -647,3 +641,4 @@
 | P0 | [AR-1271](../tasks/AR-1271-cassette-operation-contract.md): Dependency-neutral cassette operation contract | Unclaimed | Define a dependency-neutral cassette request/response operation contract. | Requires a runtime-authenticated cassette-content/backend capability (successor AR-1272/AR-1274 seam) before actual StrictReplayService invocation; then add supervised response, no-fallback/egress, cancellation/restart, timeout/crash cleanup fixtures. |
 | P0 | [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | Unclaimed | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Complete backend capability review; runtime branch has no authenticated launch-record/isolation issuer, so parent must decide whether this bounded capability plus real StrictReplayService fixture is sufficient or leave blocked for launch-authority successor. |
 | P0 | [AR-1273](../tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | Unclaimed | Provide complete runtime-owned context for strict-replay execution. | Integrate ReplayRequestContext into actual argument-level replay dispatch and connect runtime cassette service; add real response parity and supervised egress/no-fallback/cancel/restart/timeout/crash cleanup tests. |
+| P0 | [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md): Runtime cassette operation executor adapter | Unclaimed | Provide a runtime cassette operation executor callback boundary. | Provide CLI/replay adapter over RuntimeOperationHandle and bind actual replay command; add supervised lifecycle/egress/no-fallback fixtures. |

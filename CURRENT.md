@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1748](tasks/AR-1748-protected-main-portable-provenance.md): Portable protected-main provenance and capability admission | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. | Release AR-1748 done after attaching spec acceptance for independently approved PR #517/merge 31ca7a4/live-policy receipt; no further product or GitHub mutation is required. | codex-asb-ar1748-closeout-20261009 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
