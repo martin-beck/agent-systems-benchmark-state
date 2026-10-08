@@ -713,7 +713,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-pr500-rereview-420b57d` | `DETACHED` | `420b57d20a6c` | 0 | behind 21, ahead 0 |
 | `asb-pr501-review-0714b0e` | `DETACHED` | `0714b0e96c45` | 0 | behind 19, ahead 0 |
 | `asb-pr502-review-40f618b` | `DETACHED` | `40f618b9389c` | 0 | behind 12, ahead 0 |
-| `asb-pr509-integration` | `DETACHED` | `d53e90167702` | 0 | behind 2, ahead 0 |
+| `asb-pr509-integration` | `DETACHED` | `9aeea48c4041` | 0 | behind 0, ahead 0 |
 | `asb-pr509-postmerge` | `DETACHED` | `9aeea48c4041` | 0 | behind 0, ahead 0 |
 | `asb-provider-registry` | `feature/provider-profile-upsert` | `ff149cb96c05` | 0 | behind 305, ahead 839 |
 | `asb-provider-registry-producer` | `feature/provider-profile-registry-producer` | `fde043688794` | 0 | behind 305, ahead 841 |
