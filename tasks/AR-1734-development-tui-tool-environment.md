@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1734-development-tui-tool-environment",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T04:45:40+00:00",
   "depends_on": [
     "AR-1726",
     "AR-1727"
@@ -12,17 +12,17 @@
   "observed_branch": "repair/ar-1734-development-tui-tool-environment",
   "observed_dirty": 0,
   "observed_head": "40f618b9389c594c4274bc08195f93f3cd2dd547",
-  "owner": "",
+  "owner": "codex-ar1734-pr502-integrate",
   "plan": "../plans/AR-1734-development-tui-tool-environment.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1734.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T02:43:36+00:00",
+  "updated_at": "2026-10-08T02:45:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1734-development-tui-tool-environment"
 }
 ---
@@ -274,3 +274,5 @@ and production policy remains fail closed and unchanged.
   is the coordinator/integrator: use the repository merge_pr.py path with the recorded exact
   base/head/tree, do not substitute a hosted merge, and retain AR-1734 open until exact-main
   post-merge workflows and immutable merge evidence pass.
+
+- 2026-10-08T02:45:40+00:00: Claimed by codex-ar1734-pr502-integrate.
