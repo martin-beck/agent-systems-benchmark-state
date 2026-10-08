@@ -647,7 +647,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows. |
-| Next action | PR #507 rebased exact head d0c6926 onto protected base bbe25d0; wait for all refreshed checks, then run local signed merge_pr.py integration and post-merge exact-main verification. Preserve separate AR-1742 historical recovery. |
+| Next action | Released; preserve AR-1742 as the separate historical PR505 mismatch recovery. |
 
 ### AR-1741 — Signed protected-main recovery for AR-1738
 

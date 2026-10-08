@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T12:28:11+00:00",
   "depends_on": [],
   "id": "AR-1740",
-  "next_action": "PR #507 rebased exact head d0c6926 onto protected base bbe25d0; wait for all refreshed checks, then run local signed merge_pr.py integration and post-merge exact-main verification. Preserve separate AR-1742 historical recovery.",
+  "next_action": "Released; preserve AR-1742 as the separate historical PR505 mismatch recovery.",
   "observed_branch": "feature/ar-1740-repository-makefile",
   "observed_dirty": 0,
   "observed_head": "d0c6926905642c95222f5acfc6bc1b00f75d63e7",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T10:28:11+00:00",
+  "updated_at": "2026-10-08T10:32:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -173,3 +173,9 @@ quality gates, and never become a runtime or installed-user dependency.
   909f91f27712df6cbd73ae83fd86cd22b0ac18716f0525b9153aff39bc7aa83c.
 
 - 2026-10-08T10:28:11+00:00: Heartbeat by codex-ar1740-makefile.
+
+- 2026-10-08T10:32:27+00:00: Post-merge verification complete on protected main
+  d53e901677024741cdf0477c9e1efb5d0b664c02: signed local merge parents bbe25d0 and d0c6926, reviewed
+  tree 78d06a52, local protected-main policy passed, and all required hosted workflows including
+  Rust, repository quality, formal, fault, portability, cross-repo, credential-free, headers, and
+  emulated AArch64 completed successfully. PR #507 default lifecycle is integrated.
