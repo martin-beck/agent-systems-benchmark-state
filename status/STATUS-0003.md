@@ -611,11 +611,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1738-rustup-permission |
 | Parent | None |
 | Children | None |
 | Summary | Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries. |
@@ -1473,7 +1473,7 @@ flowchart LR
         AR_1735["AR-1735 - Open"]:::status_open
         AR_1736["AR-1736 - Planned"]:::status_planned
         AR_1737["AR-1737 - In progress"]:::status_in_progress
-        AR_1738["AR-1738 - Open"]:::status_open
+        AR_1738["AR-1738 - In progress"]:::status_in_progress
         AR_1739["AR-1739 - In progress"]:::status_in_progress
         AR_1740["AR-1740 - In progress"]:::status_in_progress
         AR_1741["AR-1741 - Done"]:::status_done

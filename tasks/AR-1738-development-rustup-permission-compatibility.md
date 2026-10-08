@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1738-development-rustup-permission-compatibility",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T10:54:12+00:00",
   "depends_on": [
     "AR-1726",
     "AR-1734"
@@ -12,17 +12,25 @@
   "observed_branch": "repair/ar-1738-development-rustup-permission-compatibility",
   "observed_dirty": 0,
   "observed_head": "f020b2d4fd65b92edf89a0db73a0b04c0b975684",
-  "owner": "",
+  "owner": "codex-ar1738-rustup-permission",
   "plan": "../plans/AR-1738-development-rustup-permission-compatibility.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:a2298ca18b1ec5a6fc04443754be1e25a2a0c256e40909971da92bb4b0e748c5",
+    "evidence_ref": "quality/AR-1738-rustup-permission-recovery-receipt.txt",
+    "spec_ref": "specs/AR-1738.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1738.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Repair permissive development rustup permission acceptance",
-  "updated_at": "2026-10-08T09:48:21+00:00",
+  "updated_at": "2026-10-08T10:24:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility"
 }
 ---
@@ -112,3 +120,5 @@ weaken stable or production installation policy.
 
 - 2026-10-08T09:48:21+00:00: Hand off to successor AR-1741 for signed protected-main recovery;
   preserve implementation and historical merge evidence.
+
+- 2026-10-08T10:24:12+00:00: Claimed by codex-ar1738-rustup-permission.
