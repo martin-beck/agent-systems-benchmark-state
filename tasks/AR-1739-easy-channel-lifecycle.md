@@ -13,13 +13,21 @@
   "plan": "../plans/AR-1739-easy-channel-lifecycle.md",
   "priority": "P1",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:507559f636e0cb66a35da2fb992ff7ebadfdf4ce",
+    "evidence_ref": "quality/AR-1739-easy-channel-lifecycle-receipt.txt",
+    "spec_ref": "specs/AR-1739.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1739.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T11:09:57+00:00",
+  "updated_at": "2026-10-08T11:10:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -254,3 +262,6 @@ provider-free by default and preserve all stable/production fail-closed gates.
 
 - 2026-10-08T11:09:57+00:00: Recorded command exit 1; command argv SHA-256
   291a60c59baa125d0b9623841ee2d5eb3019601f692b8950eeb7ca94e3826b28.
+
+- 2026-10-08T11:10:54+00:00: Recorded command exit 0; command argv SHA-256
+  3d58c9f6ffe08aa0e41fd0da3b37db67eb49a97274000996278d19c628bfa952.
