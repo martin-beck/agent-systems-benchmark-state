@@ -611,11 +611,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1738-rustup-permission |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries. |
@@ -1473,7 +1473,7 @@ flowchart LR
         AR_1735["AR-1735 - Open"]:::status_open
         AR_1736["AR-1736 - Planned"]:::status_planned
         AR_1737["AR-1737 - In progress"]:::status_in_progress
-        AR_1738["AR-1738 - In progress"]:::status_in_progress
+        AR_1738["AR-1738 - Done"]:::status_done
         AR_1739["AR-1739 - In progress"]:::status_in_progress
         AR_1740["AR-1740 - In progress"]:::status_in_progress
         AR_1741["AR-1741 - Done"]:::status_done
@@ -3507,3 +3507,4 @@ flowchart LR
 | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0901](../tasks/AR-0901-formal-assurance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |
 | [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) |
+| [AR-0903](../tasks/AR-0903-release-qualification.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0811](../tasks/AR-0811-documentation-qualification.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md) | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) |
