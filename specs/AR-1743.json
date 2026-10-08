@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1743.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "reproduced", "description": "The current make update failure and its Cargo lockfile cause are recorded against an exact source head."},
+    {"id": "explicit-refresh", "description": "Dependency refresh and locked validation are separate explicit operations; no lock-mutating Cargo command receives --locked."},
+    {"id": "safety", "description": "Clean-tree, fast-forward, pinned-toolchain, bounded-command, and failure-propagation boundaries remain fail-closed."},
+    {"id": "coverage", "description": "Positive and negative tests cover refresh success, unchanged lock validation, dirty trees, lockfile-write failure, and refresh failure."},
+    {"id": "documentation", "description": "Make help and README accurately explain the repaired update behavior and how Cargo.lock changes are reviewed."}
+  ],
+  "definition_of_done": [
+    "Signed+DCO repair is independently reviewed and merged into protected ASB main.",
+    "Focused and full applicable gates pass on the exact reviewed head.",
+    "All required exact-main post-merge workflows pass and durable state records the original failure and repaired evidence."
+  ],
+  "inputs": [
+    {"id": "makefile", "description": "Current repository Makefile update target and its locked Cargo invocation."},
+    {"id": "docs", "description": "ASB DEVELOPMENT.md, ARCHITECTURE.md, QUALITY.md, and QUALITY_GATES.md."},
+    {"id": "failure", "description": "User-observed cargo update --locked cannot update the lock file failure."}
+  ],
+  "outputs": [
+    {"id": "repair", "description": "Corrected Make update lifecycle with tests and documentation."},
+    {"id": "evidence", "description": "Signed PR, exact merge, CI, post-merge receipt, and durable state release."}
+  ],
+  "allowed_tools": ["cargo", "rustup", "git", "make", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["locked-lockfile-mutation", "implicit-package-install", "floating-toolchain", "forced-git-update", "unsafe-clean"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [
+    {"id": "focused", "description": "Make update repair and all positive/negative lockfile tests pass."},
+    {"id": "workspace", "description": "Locked build, test, documentation, and dependency integrity gates pass."},
+    {"id": "hosted", "description": "Exact reviewed PR and protected-main post-merge workflows pass."}
+  ]
+}

@@ -1,0 +1,19 @@
+AR-1739 exact-main release receipt
+
+Implementation: PR #506, reviewed topic 617af40b356fb5b8b89cb3a541a28018904c251b
+Signed integration: 507559f636e0cb66a35da2fb992ff7ebadfdf4ce
+Protected base: 9aeea48c40417108b95c0a2743b2d4b3220f56bd
+Exact origin/main: 507559f636e0cb66a35da2fb992ff7ebadfdf4ce
+
+All exact-main workflows passed:
+- Fault assurance: 37767084105
+- Hosted portability and native qualification: 37767084108
+- Cross-repository development broker qualification: 37767084179
+- Emulated aarch64 portability: 37767084127
+- Repository quality: 37767084162 (rerun after transient analyzer HTTP 500)
+- Formal assurance: 37767084110
+- Credential-free benchmark path: 37767084143 (rerun after transient timing failure)
+- Rust verification: 37767084139
+- Huawei MIT source headers: 37767084189
+
+Focused lifecycle tests and required PR checks passed. No credentials or private paths are included.

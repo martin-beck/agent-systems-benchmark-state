@@ -1,0 +1,12 @@
+AR-1741 signed-main recovery receipt
+
+PR #508 exact reviewed head: 0c100e4624a6dc3972660dc24713940d87753709
+Protected-main base: a9abcf2e63f761e314593e9abc6bf074b7418e5e
+Signed local integration merge: bbe25d0c516b29a38a66908cbb025204dfe9e4d8
+Merge parents: a9abcf2e63f761e314593e9abc6bf074b7418e5e 0c100e4624a6dc3972660dc24713940d87753709
+Merge tree: befcb782d6ce260d1d4dd0e4fe25c2fb0b1b900f
+Signer/committer: Martin Beck <martin.beck2@gmx.de>, certified SSH signature G
+DCO: matching Signed-off-by trailer
+Historical GitHub merge 2f7387e5c269449f2337ece3bf702e2a76ee67c3 preserved unchanged.
+Local protected-main repository policy passed.
+Exact post-merge required runs all passed: 37761615219, 37761614618, 37761614807, 37761614748, 37761614829, 37761614739, 37761614825, 37761614612, 37761614776.
