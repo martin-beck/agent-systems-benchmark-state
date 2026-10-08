@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T13:26:12+00:00",
   "depends_on": [],
   "id": "AR-1743",
-  "next_action": "Promote for implementation after confirming the current Makefile failure and preserving unrelated work.",
+  "next_action": "Independently review PR #510 at exact head 02664a5; wait for all required checks, then perform documented signed local integration and post-merge exact-main verification.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Repair Make update lockfile handling",
-  "updated_at": "2026-10-08T11:26:12+00:00",
+  "updated_at": "2026-10-08T11:26:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1743-make-update-lockfile"
 }
 ---
@@ -73,3 +73,12 @@ unrelated product changes and record the exact failure and recovery evidence.
   838272a685de70b90cdded4f6a050dbbc2e125757d6e83ecba2574205395dc9f.
 
 - 2026-10-08T11:26:12+00:00: Heartbeat by codex-ar1743-make-update.
+
+- 2026-10-08T11:26:21+00:00: Reproduced make update failure: Cargo attempted 19 lockfile updates
+  then failed because --locked prevented writing Cargo.lock. Implemented and signed 02664a5: update
+  performs git fast-forward plus cargo metadata --locked --no-deps; refresh-lock deliberately runs
+  cargo update without --locked, validates locked metadata, and requires a clean tree. README and
+  positive/negative fake-tool tests cover no mutation, ordering, refresh failure short-circuit, and
+  dirty-tree rejection. PR #510 open at exact head 02664a5; focused tests pass. Wrapper
+  post-reconcile still references stale nested path after worktree relocation, but command outputs
+  and git state are verified in declared worktree.
