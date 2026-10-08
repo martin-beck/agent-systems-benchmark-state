@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T21:11:58+00:00",
+  "updated_at": "2026-10-08T21:12:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -98,3 +98,6 @@ ruleset, and never retry an ambiguous mutation blindly.
   2326d03710b69cafb6ba3e9824a06c9adbca024a1a6f87985542235d1e48406f.
 
 - 2026-10-08T21:11:58+00:00: Heartbeat by codex-asb-ar1750-ruleset-normalization-20261008.
+
+- 2026-10-08T21:12:50+00:00: Recorded command exit 0; command argv SHA-256
+  e33a5c51e9c36a808243d40463543e7d7b82c8c66fb3657ddd4b2636118a85a5.
