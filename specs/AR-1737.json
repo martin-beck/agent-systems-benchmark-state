@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1737.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "effective-linker-binding",
+      "description": "The env-cleared development build passes the validated linker search root through flags that rustc and GCC actually apply, including descriptor-bound Cargo and rustc execution."
+    },
+    {
+      "id": "empty-path-boundary",
+      "description": "The repair does not restore ambient PATH lookup or accept unvalidated compiler, linker, archiver, Cargo, rustc, or Rustup paths."
+    },
+    {
+      "id": "reproducibility-preserved",
+      "description": "Source, target, and Cargo-home path remapping remains effective and repeated exact-source builds retain deterministic artifact identity."
+    },
+    {
+      "id": "paired-lifecycle",
+      "description": "Exact paired source-built install, status, doctor, upgrade, bare launch, and removal complete through the public ASB command boundary."
+    }
+  ],
+  "definition_of_done": [
+    "The exact collect2 cannot find ld failure is covered by a deterministic regression.",
+    "Signed+DCO implementation and independent exact-head review are complete.",
+    "Focused lifecycle, full relevant workspace, paired installed-entrypoint, and post-merge hosted gates pass."
+  ],
+  "inputs": [
+    {
+      "id": "paired-failure",
+      "description": "AR-1575 exact-head source materialization failure at ASB 1a5888ce and asb-tui ee45ff34."
+    },
+    {
+      "id": "validated-tools",
+      "description": "AR-1726 and AR-1734 validated rustup shim, Cargo/rustc descriptors, and development tool propagation."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "closed-linker-handoff",
+      "description": "A deterministic, PATH-free development TUI build using only validated compiler and linker objects."
+    }
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["ambient-path-widening", "unvalidated-linker", "stable-policy-weakening", "credential-output"],
+  "required_evidence_classes": ["contract-test", "environmental", "hosted"],
+  "gates": [
+    {
+      "id": "focused",
+      "description": "Descriptor-bound env-cleared linker positive and hostile path negatives pass."
+    },
+    {
+      "id": "paired",
+      "description": "Exact ASB/asb-tui source materialization and installed lifecycle pass."
+    },
+    {
+      "id": "hosted",
+      "description": "Exact reviewed head and signed post-merge main workflows pass."
+    }
+  ]
+}
