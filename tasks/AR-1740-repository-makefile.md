@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T11:41:32+00:00",
   "depends_on": [],
   "id": "AR-1740",
-  "next_action": "Hand off to a newly created/promoted narrow protected-main exact-tree recovery AR: preserve a9abcf2, 2f7387e base, e424c39 topic, reviewed tree 1aa96736, merge tree befcb782; use docs/PROTECTED_MAIN_MERGE.md and tools/integration/merge_pr.py for a signed forward repair merge, then rerun exact-main policy and all required workflows. Existing AR-1722 is a separate blocked incident and must not be conflated.",
+  "next_action": "Hold PR #507 integration until AR-1741 recovery PR #508 is independently reviewed and locally signed-integrated, because protected main a9abcf2 has invalid historical provenance. Then refresh exact protected base, rerun PR507 checks/review, and use merge_pr.py local signed integration.",
   "observed_branch": "feature/ar-1740-repository-makefile",
   "observed_dirty": 0,
   "observed_head": "8fdda72fa7f1209ac13a96e1ffe6c3ee99bd5b12",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T10:00:16+00:00",
+  "updated_at": "2026-10-08T10:00:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -151,3 +151,8 @@ quality gates, and never become a runtime or installed-user dependency.
 
 - 2026-10-08T10:00:16+00:00: Recorded command exit 0; command argv SHA-256
   cc5f86a47d9d8cc10addaaf10e42cad0f1e9e5c0411e09d78c8d9b4fca81b4b6.
+
+- 2026-10-08T10:00:50+00:00: PR #507 exact head 8fdda72 is fully green and independently reviewed;
+  exact-base integration worktree /tmp/asb-pr507-integration at a9abcf2 is prepared but
+  intentionally not integrated. Parent coordination requires waiting for AR-1741/PR508 provenance
+  recovery before creating another GitHub merge against invalid protected main.

@@ -647,7 +647,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows. |
-| Next action | Hand off to a newly created/promoted narrow protected-main exact-tree recovery AR: preserve a9abcf2, 2f7387e base, e424c39 topic, reviewed tree 1aa96736, merge tree befcb782; use docs/PROTECTED_MAIN_MERGE.md and tools/integration/merge_pr.py for a signed forward repair merge, then rerun exact-main policy and all required workflows. Existing AR-1722 is a separate blocked incident and must not be conflated. |
+| Next action | Hold PR #507 integration until AR-1741 recovery PR #508 is independently reviewed and locally signed-integrated, because protected main a9abcf2 has invalid historical provenance. Then refresh exact protected base, rerun PR507 checks/review, and use merge_pr.py local signed integration. |
 
 ### AR-1741 — Signed protected-main recovery for AR-1738
 
