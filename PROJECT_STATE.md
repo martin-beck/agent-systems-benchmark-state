@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37765241487 | `9aeea48c4041` | push | Emulated aarch64 portability | in_progress:- |
 | 37765241465 | `9aeea48c4041` | push | Cross-repository development broker qualification | completed:success |
 | 37765241447 | `9aeea48c4041` | push | Fault assurance | completed:success |
-| 37765241440 | `9aeea48c4041` | push | Formal assurance | in_progress:- |
+| 37765241440 | `9aeea48c4041` | push | Formal assurance | completed:success |
 | 37765241396 | `9aeea48c4041` | push | Credential-free benchmark path | completed:success |
 | 37765241394 | `9aeea48c4041` | push | Rust verification | in_progress:- |
 | 37764604086 | `13412c685ddb` | pull_request | Fault assurance | completed:success |
