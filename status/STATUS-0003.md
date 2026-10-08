@@ -705,6 +705,20 @@
 | Summary | Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory. |
 | Next action | Reproduce the current-main make test failure and repair test scratch-root isolation. |
 
+### AR-1745 — Install ASB into the invoking user&#x27;s local bin
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make ASB development installation place the asb executable at the invoking user&#x27;s $HOME/.local/bin/asb by default, with a safe explicit prefix override. |
+| Next action | Audit the exact current-main install targets and define the shared user-local prefix contract before implementation. |
+
 
 ## Dependency graph
 
@@ -1508,6 +1522,7 @@ flowchart LR
         AR_1742["AR-1742 - Open"]:::status_open
         AR_1743["AR-1743 - Done"]:::status_done
         AR_1744["AR-1744 - In progress"]:::status_in_progress
+        AR_1745["AR-1745 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3365,6 +3380,7 @@ flowchart LR
     AR_1733 --> AR_1736
     AR_1734 --> AR_1737
     AR_1734 --> AR_1738
+    AR_1740 --> AR_1745
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3536,4 +3552,3 @@ flowchart LR
 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-1008](../tasks/AR-1008.md) | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0901](../tasks/AR-0901-formal-assurance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |
-| [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) |
