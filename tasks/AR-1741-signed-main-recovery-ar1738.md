@@ -2,24 +2,32 @@
 {
   "branch": "repair/ar-1741-signed-main-recovery-ar1738",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T12:10:37+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1741",
   "next_action": "Monitor exact protected-main post-merge workflows for bbe25d0 (runs 37761614825, 37761614612, 37761614776, 37761614739, 37761614829, 37761614748, 37761614807); after all required workflows are green, release AR-1741 and update/release AR-1738 with exact signed-main evidence.",
   "observed_branch": "repair/ar-1741-signed-main-recovery-ar1738",
   "observed_dirty": 0,
   "observed_head": "0c100e4624a6dc3972660dc24713940d87753709",
-  "owner": "codex-ar1738-rustup-permission",
+  "owner": "",
   "plan": "../plans/AR-1741-signed-main-recovery-ar1738.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:371d37080e74c8df7d06b05f3d5cb77718f6374c8f810556bfc798d3f6dd9800",
+    "evidence_ref": "quality/AR-1741-signed-main-recovery-receipt.txt",
+    "spec_ref": "specs/AR-1741.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1741.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Signed protected-main recovery for AR-1738",
-  "updated_at": "2026-10-08T10:19:49+00:00",
+  "updated_at": "2026-10-08T10:21:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738"
 }
 ---
@@ -83,3 +91,13 @@ main. AR-1740 is a separate publication incident and is intentionally excluded.
 
 - 2026-10-08T10:19:49+00:00: Recorded command exit 1; command argv SHA-256
   885b2d4bd1f380232b3efb1c37557b964ff0cf7c3d124b2e4a76698df7f1bd33.
+
+- 2026-10-08T10:21:46+00:00: Completed signed forward-only protected-main provenance recovery. PR
+  #508 exact head 0c100e4624a6dc3972660dc24713940d87753709 independently reviewed (zero tree diff,
+  Good Martin Beck SSH signature, matching DCO) and locally integrated with
+  tools/integration/merge_pr.py as bbe25d0c516b29a38a66908cbb025204dfe9e4d8. Exact parents
+  a9abcf2e63f761e314593e9abc6bf074b7418e5e and 0c100e4624a6dc3972660dc24713940d87753709; tree
+  befcb782d6ce260d1d4dd0e4fe25c2fb0b1b900f; signed committer Martin Beck; local repository policy
+  passed. All exact post-merge runs green: 37761615219, 37761614618, 37761614807, 37761614748,
+  37761614829, 37761614739, 37761614825, 37761614612, 37761614776. Historical GitHub merge 2f7387e
+  preserved unchanged; no rewrite.

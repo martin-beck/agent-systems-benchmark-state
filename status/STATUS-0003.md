@@ -653,11 +653,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1738-rustup-permission |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge. |
@@ -1476,7 +1476,7 @@ flowchart LR
         AR_1738["AR-1738 - Open"]:::status_open
         AR_1739["AR-1739 - In progress"]:::status_in_progress
         AR_1740["AR-1740 - In progress"]:::status_in_progress
-        AR_1741["AR-1741 - In progress"]:::status_in_progress
+        AR_1741["AR-1741 - Done"]:::status_done
         AR_1742["AR-1742 - Open"]:::status_open
     end
     AR_0001 --> AR_0002

@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P1 | [AR-0201](../tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | Unclaimed | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Run final state reconcile/live doctor/full validation, then release AR-0201 done and explicitly return the Cargo workspace/lock fence. |
 | P1 | [AR-0203](../tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | Unclaimed | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Create and push reviewed signed+DCO no-ff merge of exact head 3bcfd85; verify PR merge identity, then run exact-main local and hosted post-merge checks. |
 | P1 | [AR-0204](../tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | Unclaimed | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await coordinator postmerge local validation/state doctor confirmation before releasing AR-0204. |
 | P1 | [AR-0301](../tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Unclaimed | Run pinned OpenCode through its structured supported interfaces. | Await exact PR #13 head dfb0d54 hosted CI and immutable independent review; integrate only if both are green. |
