@@ -571,7 +571,13 @@
 
 ## Complete AR inventory
 
-### Open (7)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1738](../tasks/AR-1738-development-rustup-permission-compatibility.md): Repair permissive development rustup permission acceptance | codex-ar1738-rustup-permission | Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries. | Claim an isolated worktree, reproduce current-main trusted_tool_invalid for RUSTUP_HOME, implement warning-only development permission/ownership handling, and requalify the exact paired lifecycle without changing stable or production policy. |
+
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -579,7 +585,6 @@
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 | P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Unclaimed | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -&gt; bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. |
 | P0 | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md): Repair development TUI linker handoff | Unclaimed | Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH. | Reproduce the exact env-cleared development materializer failure, bind the validated linker search root in the effective Cargo/rustc flags, and requalify source-built install, upgrade, and bare launch without widening PATH. |
-| P0 | [AR-1738](../tasks/AR-1738-development-rustup-permission-compatibility.md): Repair permissive development rustup permission acceptance | Unclaimed | Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries. | Claim an isolated worktree, reproduce current-main trusted_tool_invalid for RUSTUP_HOME, implement warning-only development permission/ownership handling, and requalify the exact paired lifecycle without changing stable or production policy. |
 | P1 | [AR-1728](../tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Unclaimed | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
 | P1 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md): Harden Goose diagnostic fixture determinism | Unclaimed | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. | Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics. |
 
@@ -630,4 +635,3 @@
 | P0 | [AR-1376](../tasks/AR-1376-runtime-live-adapter.md): Runtime-owned live adapter | Unclaimed | Materialize authenticated runtime receipts into opaque live dispatch attempts. | Audit blocker: ControlClient can issue RuntimeReceipt, but no runtime-owned authenticated chain store/source is available to validate the receipt. Do not synthesize a chain or accept caller authority. Create a successor for chain enrollment materialization before adapter implementation. |
 | P0 | [AR-1382](../tasks/AR-1382-authenticated-live-execution-source.md): Authenticated live execution source | Unclaimed | Materialize authenticated runtime-owned live execution for asb run and sweep. | Promote and claim this dependency-valid authenticated execution-source successor, then implement runtime-owned scheduler materialization. |
 | P0 | [AR-1386](../tasks/AR-1386-live-cli-dispatch-integration.md): Production live CLI dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into production asb run and sweep. | Refresh the declared isolated worktree from protected main, integrate the authenticated runtime live dispatch source into production asb run and sweep, and add local provider-mock plus fail-closed egress/teardown tests. |
-| P0 | [AR-1387](../tasks/AR-1387-runtime-control-cli-bridge.md): Authenticated runtime-control CLI bridge | Unclaimed | Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path. | Resume AR-1391 runtime-control bootstrap constructor; AR-1387 remains blocked pending that successor and has no safe in-scope product diff. |
