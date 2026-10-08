@@ -374,7 +374,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `1a5888ce1c96` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-ar-1740-repository-makefile` | `feature/ar-1740-repository-makefile` | `736a65cd8904` | 3 | behind 2, ahead 0 |
-| changed files | - | - | - | `README.md`, `Makefile`, `tests/makefile.sh` |
+| changed files | - | - | - | `Makefile`, `README.md`, `tests/makefile.sh` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 294, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 294, ahead 830 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 294, ahead 89 |
