@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair is implemented and PR #511 is green except the emulated-aarch64 required job remains unassigned in GitHub Actions.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T13:37:45+00:00",
+  "updated_at": "2026-10-08T13:38:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -223,3 +223,6 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
   RUST_TEST_THREADS=1 make test passed. PR #511 head cbcfa025ca31e5a216076a3bc9d3bd3fb4d2f874 has
   every required check green except emulated-aarch64 job 113337465103; stale queued attempt was
   cancelled and rerun once, but runner assignment is still pending. No merge attempted.
+
+- 2026-10-08T13:38:04+00:00: Recorded command exit 0; command argv SHA-256
+  3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
