@@ -8,7 +8,7 @@
   "next_action": "Open PR from pushed feature/ar-1740-repository-makefile at 9dcf586; run exact-head hosted checks, merge only green, then perform post-merge verification and release done.",
   "observed_branch": "feature/ar-1740-repository-makefile",
   "observed_dirty": 0,
-  "observed_head": "9dcf5861f4ee5aca4e8e40a46dc87a59af354e06",
+  "observed_head": "e424c392d7bcd99199ed8f194918656a27d4b65b",
   "owner": "codex-ar1740-makefile",
   "plan": "../plans/AR-1740-repository-makefile.md",
   "priority": "P1",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T09:29:13+00:00",
+  "updated_at": "2026-10-08T09:29:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
