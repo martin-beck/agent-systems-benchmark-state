@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1734-development-tui-tool-environment",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T05:22:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1726",
     "AR-1727"
@@ -12,17 +12,17 @@
   "observed_branch": "repair/ar-1734-development-tui-tool-environment",
   "observed_dirty": 0,
   "observed_head": "40f618b9389c594c4274bc08195f93f3cd2dd547",
-  "owner": "codex-ar1734-pr502-review",
+  "owner": "",
   "plan": "../plans/AR-1734-development-tui-tool-environment.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1734.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T02:43:27+00:00",
+  "updated_at": "2026-10-08T02:43:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1734-development-tui-tool-environment"
 }
 ---
@@ -269,3 +269,8 @@ and production policy remains fail closed and unchanged.
   hosted checks are terminal success; PR is open and mergeable. Review only; no merge performed.
   Initial PROJECT_STATE discrepancy was only stale live-CI projection refreshed by reconcile, not
   product-head drift or another worker mutation.
+
+- 2026-10-08T02:43:36+00:00: Released ownerless after independent technical approval. Next authority
+  is the coordinator/integrator: use the repository merge_pr.py path with the recorded exact
+  base/head/tree, do not substitute a hosted merge, and retain AR-1734 open until exact-main
+  post-merge workflows and immutable merge evidence pass.
