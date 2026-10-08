@@ -7,7 +7,7 @@
   "id": "AR-1744",
   "next_action": "Wait for emulated-aarch64 job 113337465103 to reach a terminal result; merge only after all required checks are green, then run exact-main post-merge verification.",
   "observed_branch": "repair/ar-1744-make-test-scratch-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "cbcfa025ca31e5a216076a3bc9d3bd3fb4d2f874",
   "owner": "codex-ar1744-make-test",
   "plan": "../plans/AR-1744-make-test-scratch-isolation.md",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair is implemented and PR #511 is green except the emulated-aarch64 required job remains unassigned in GitHub Actions.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T13:35:10+00:00",
+  "updated_at": "2026-10-08T13:37:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
