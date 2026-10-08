@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair is implemented and PR #511 is green except the emulated-aarch64 required job remains unassigned in GitHub Actions.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T13:38:04+00:00",
+  "updated_at": "2026-10-08T13:38:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -226,3 +226,6 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 
 - 2026-10-08T13:38:04+00:00: Recorded command exit 0; command argv SHA-256
   3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
+
+- 2026-10-08T13:38:44+00:00: Recorded command exit 129; command argv SHA-256
+  89acba3111d0be4d622dc0b8ed90242ff67b0e43aef52840a274689e6d088e2a.
