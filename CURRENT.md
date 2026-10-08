@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1737](tasks/AR-1737-development-tui-linker-handoff.md): Repair development TUI linker handoff | Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH. | Wait only for exact post-merge Emulated aarch64 run 37765241487 on merge 9aeea48c to finish green, then release done and reconcile. | codex-asb-ar1737-linker-handoff |
-| P1 | [AR-1739](tasks/AR-1739-easy-channel-lifecycle.md): Add easy channel build, install, update, and test lifecycle | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. | PR #506 base 9aeea48 exact head 617af40; fresh exact-base required checks are active after signed/DCO-preserving rebase. Merge only after all green, then post-merge verify and release AR. | codex-ar1739-easy-lifecycle |
+| P1 | [AR-1739](tasks/AR-1739-easy-channel-lifecycle.md): Add easy channel build, install, update, and test lifecycle | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. | Post-merge exact main 507559f is published; monitor all required post-merge workflows (Fault assurance, Hosted portability/native qualification, broker qualification, AArch64 portability, Repository quality, Formal assurance, credential-free, Rust) until green, then release AR. | codex-ar1739-easy-lifecycle |
 
 ## Open
 

@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T11:24:55+00:00",
   "depends_on": [],
   "id": "AR-1739",
-  "next_action": "PR #506 base 9aeea48 exact head 617af40; fresh exact-base required checks are active after signed/DCO-preserving rebase. Merge only after all green, then post-merge verify and release AR.",
+  "next_action": "Post-merge exact main 507559f is published; monitor all required post-merge workflows (Fault assurance, Hosted portability/native qualification, broker qualification, AArch64 portability, Repository quality, Formal assurance, credential-free, Rust) until green, then release AR.",
   "observed_branch": "feature/ar-1739-easy-channel-lifecycle",
   "observed_dirty": 0,
   "observed_head": "617af40b356fb5b8b89cb3a541a28018904c251b",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T10:59:17+00:00",
+  "updated_at": "2026-10-08T10:59:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -224,3 +224,7 @@ provider-free by default and preserve all stable/production fail-closed gates.
 
 - 2026-10-08T10:59:17+00:00: Recorded command exit 0; command argv SHA-256
   69978c08b9056e08fdf221fc1d51dde7491fb9b26cd1b527adea7739c11d404e.
+
+- 2026-10-08T10:59:50+00:00: Signed local integration published merge 507559f from approved base
+  9aeea48 and reviewed head 617af40. PR #506 is MERGED. Exact origin/main matches 507559f; eight
+  post-merge workflows are in progress and headers already passed.
