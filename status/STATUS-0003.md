@@ -661,7 +661,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge. |
-| Next action | Wait for PR #508 required checks to turn green; then invoke tools/integration/merge_pr.py with exact base a9abcf2e63f761e314593e9abc6bf074b7418e5e, head 0c100e4624a6dc3972660dc24713940d87753709, tree befcb782d6ce260d1d4dd0e4fe25c2fb0b1b900f; verify signed protected-main descendant and post-merge policy before releasing AR-1741 and AR-1738. |
+| Next action | Monitor exact protected-main post-merge workflows for bbe25d0 (runs 37761614825, 37761614612, 37761614776, 37761614739, 37761614829, 37761614748, 37761614807); after all required workflows are green, release AR-1741 and update/release AR-1738 with exact signed-main evidence. |
 
 ### AR-1742 — PR #505 exact-tree recovery
 
