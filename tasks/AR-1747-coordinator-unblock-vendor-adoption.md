@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Adopt Coordinator unblock support for AR-1722",
-  "updated_at": "2026-10-08T16:52:14+00:00",
+  "updated_at": "2026-10-08T16:52:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1747-coordinator-unblock-vendor"
 }
 ---
@@ -62,3 +62,6 @@ fabricate a pause, edit AR-1722 directly, or change ASB product runtime code.
 
 - 2026-10-08T16:52:14+00:00: Recorded command exit 0; command argv SHA-256
   6532337c5032d4d6925093fcca4bb25098786bfa5cac379ac14f4d2d912001e3.
+
+- 2026-10-08T16:52:54+00:00: Recorded command exit 0; command argv SHA-256
+  bb030e778d0dc783c28c64ed2a3d987f49f40be7e4e90d634f07375906e90b8d.
