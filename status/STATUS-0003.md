@@ -208,7 +208,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Run credential-backed online OpenRouter smoke and typed negative tests for the merged ASB live path without mock fallback. |
-| Next action | Promote after AR-1699 and AR-1700 are released; run the disposable credential-backed smoke and credential-free negative matrix at current exact ASB main. |
+| Next action | Provide OPENROUTER_API_KEY only in the worker runtime environment, then rerun one bounded real OpenRouter request at exact ASB main 31ca7a481fca8b79bfbff126b92db6c6118beb7c and record only redacted provider/model/timing/outcome metadata; retain the already-green credential-free negative matrix. |
 
 ### AR-1703 — Current-main TUI live-control qualification
 
@@ -3628,4 +3628,3 @@ flowchart LR
 | [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |
 | [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) |
 | [AR-0880](../tasks/AR-0880-openjiuwen-runtime-closure.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md) | None |
-| [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md), [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md), [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) |

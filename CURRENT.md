@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1702](tasks/AR-1702.md): Development live OpenRouter qualification | Run credential-backed online OpenRouter smoke and typed negative tests for the merged ASB live path without mock fallback. | Promote after AR-1699 and AR-1700 are released; run the disposable credential-backed smoke and credential-free negative matrix at current exact ASB main. | codex-asb-ar1702-20261009 |
+| P0 | [AR-1702](tasks/AR-1702.md): Development live OpenRouter qualification | Run credential-backed online OpenRouter smoke and typed negative tests for the merged ASB live path without mock fallback. | Provide OPENROUTER_API_KEY only in the worker runtime environment, then rerun one bounded real OpenRouter request at exact ASB main 31ca7a481fca8b79bfbff126b92db6c6118beb7c and record only redacted provider/model/timing/outcome metadata; retain the already-green credential-free negative matrix. | codex-asb-ar1702-20261009 |
 | P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -> bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. | codex-asb-ar1721-qualification-20261009 |
 
 ## Open
