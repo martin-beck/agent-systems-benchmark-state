@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1743](tasks/AR-1743-make-update-lockfile-repair.md): Repair Make update lockfile handling | Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file. | Wait for PR #510 required checks at exact head 02664a5/base 507559f; after all green, merge only with documented signed local integration and verify post-merge exact-main gates. | codex-ar1743-make-update |
+| P0 | [AR-1743](tasks/AR-1743-make-update-lockfile-repair.md): Repair Make update lockfile handling | Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file. | Monitor all protected-main workflows for exact merge fd956d857970f039db0a4aad03c9e15e59b13da6; after every required workflow is green, record receipts and release AR-1743 done. | codex-ar1743-make-update |
 
 ## Open
 

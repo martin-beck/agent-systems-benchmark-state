@@ -689,7 +689,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file. |
-| Next action | Wait for PR #510 required checks at exact head 02664a5/base 507559f; after all green, merge only with documented signed local integration and verify post-merge exact-main gates. |
+| Next action | Monitor all protected-main workflows for exact merge fd956d857970f039db0a4aad03c9e15e59b13da6; after every required workflow is green, record receipts and release AR-1743 done. |
 
 
 ## Dependency graph

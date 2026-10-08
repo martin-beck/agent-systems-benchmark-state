@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T13:29:23+00:00",
   "depends_on": [],
   "id": "AR-1743",
-  "next_action": "Wait for PR #510 required checks at exact head 02664a5/base 507559f; after all green, merge only with documented signed local integration and verify post-merge exact-main gates.",
+  "next_action": "Monitor all protected-main workflows for exact merge fd956d857970f039db0a4aad03c9e15e59b13da6; after every required workflow is green, record receipts and release AR-1743 done.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Repair Make update lockfile handling",
-  "updated_at": "2026-10-08T11:36:48+00:00",
+  "updated_at": "2026-10-08T11:37:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1743-make-update-lockfile"
 }
 ---
@@ -98,3 +98,9 @@ unrelated product changes and record the exact failure and recovery evidence.
 
 - 2026-10-08T11:36:48+00:00: Recorded command exit 0; command argv SHA-256
   59feb504ee0c6cac84d5b0c2b9da807ac5f71fb2ca6e110a0a0ec0bfe647708e.
+
+- 2026-10-08T11:37:16+00:00: PR #510 final review passed at exact base
+  507559f636e0cb66a35da2fb992ff7ebadfdf4ce/head 02664a5d386215c430a07f0deb95ded24bebf66f, tree
+  8369576975cdef8cac0619f85efcf93c3336e8a3. Signed local integration published merge
+  fd956d857970f039db0a4aad03c9e15e59b13da6 with exact parents and matching tree; remote main
+  confirms signed/DCO merge. Protected-main workflows are running for exact merge.
