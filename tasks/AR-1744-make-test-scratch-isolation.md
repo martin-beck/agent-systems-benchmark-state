@@ -8,7 +8,7 @@
   "next_action": "Wait for PR #511 jobs 37788419498, 37788419514, and 37788419573 to finish; merge only after all required checks are green, then verify exact main.",
   "observed_branch": "repair/ar-1744-make-test-scratch-isolation",
   "observed_dirty": 0,
-  "observed_head": "790edf2ac632c6f1d3b43231fae13866ce3e70b9",
+  "observed_head": "3a14e8846af46792e2dd1c15a0b50343ec7fc1d8",
   "owner": "codex-ar1744-make-test",
   "plan": "../plans/AR-1744-make-test-scratch-isolation.md",
   "priority": "P0",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair now also prevents plan-create tests from reading the operator terminal; focused test passes and PR #511 awaits three long-running CI jobs.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T14:16:21+00:00",
+  "updated_at": "2026-10-08T14:16:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
