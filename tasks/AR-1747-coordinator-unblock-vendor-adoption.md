@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T18:17:08+00:00",
   "depends_on": [],
   "id": "AR-1747",
-  "next_action": "Promote and claim; synchronize the reviewed upstream Coordinator development identity that adds provenance-checked unblock, then qualify the complete ASB state vendor closure and blocked-task transition fixtures.",
+  "next_action": "Wait for official Coordinator AR-0087 to merge a reviewed follow-up that preserves task_spec evidence classes, removes scanner-triggering UUID literals from every declared vendor file, and retains exact unblock/formal closure; then resync via sync-development from that official commit, rebase PR #106 without downstream vendor edits, rerun all 95%/formal/privacy gates, and obtain fresh exact-head independent review.",
   "owner": "codex-asb-ar1747-vendor-20261008",
   "plan": "../plans/AR-1747-coordinator-unblock-vendor-adoption.md",
   "priority": "P0",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Adopt Coordinator unblock support for AR-1722",
-  "updated_at": "2026-10-08T17:06:47+00:00",
+  "updated_at": "2026-10-08T17:07:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1747-coordinator-unblock-vendor"
 }
 ---
@@ -101,3 +101,11 @@ fabricate a pause, edit AR-1722 directly, or change ASB product runtime code.
 
 - 2026-10-08T17:06:47+00:00: Recorded command exit 1; command argv SHA-256
   f27794a5170c4c05424a997990601066d86c849f54b2d3f557b97f890bbabfad.
+
+- 2026-10-08T17:07:41+00:00: PR #106 exact head f09e15934 failed hosted Coordination on
+  scanner-triggering UUID formatting and hosted Formal because its canonical fixed /tmp queue was
+  not writable. Independent review requested changes. Downstream-only repair now wires
+  TLC_ADMISSION_QUEUE and TLC_ADMISSION_LOCK beneath the private run-id root and converts ASB-owned
+  fixtures to scanner-safe joined parts; focused lint and 188 tests pass. Exact vendored bytes and
+  vendored task_spec.py remain untouched. AR-1747 must block until official Coordinator AR-0087
+  provides a new resync identity.
