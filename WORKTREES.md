@@ -396,6 +396,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar1726-review` | `DETACHED` | `a3222ae105dc` | 0 | behind 3, ahead 1 |
 | `agent-systems-benchmark-ar1727-review` | `DETACHED` | `23138efcc45d` | 0 | behind 2, ahead 0 |
+| `agent-systems-benchmark-ar1727-signed-recovery` | `repair/ar-1727-signed-descendant-recovery` | `0714b0e96c45` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 285, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 285, ahead 323 |
