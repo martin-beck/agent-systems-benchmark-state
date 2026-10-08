@@ -364,8 +364,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1608-config-persistence` | `feature/ar-1608-config-persistence` | `61a71bcfedfb` | 0 | behind 234, ahead 0 |
 | `agent-systems-benchmark-ar-1609` | `feature/ar-1609-coding-agent-adapter-catalog` | `bd40695b8e81` | 0 | behind 236, ahead 0 |
 | `agent-systems-benchmark-ar-1722-requalification` | `repair/ar-1722-pr487-requalification` | `9b7941cdd810` | 0 | behind 31, ahead 0 |
-| `agent-systems-benchmark-ar-1726-development-rustup-shim-permissions` | `repair/ar-1726-development-rustup-shim-permissions` | `4fc7e67f5b5b` | 3 | behind 5, ahead 3 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/tui.rs` |
+| `agent-systems-benchmark-ar-1726-development-rustup-shim-permissions` | `repair/ar-1726-development-rustup-shim-permissions` | `acd7a146baba` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1727-development-broker-foreground-terminal` | `repair/ar-1727-development-broker-foreground-terminal` | `420b57d20a6c` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 287, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 287, ahead 830 |
