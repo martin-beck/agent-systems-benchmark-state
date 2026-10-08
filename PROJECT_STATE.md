@@ -26,7 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 37709308733 | `457317b21dbe` | push | Emulated aarch64 portability | in_progress:- |
 | 37709308689 | `457317b21dbe` | push | Rust verification | in_progress:- |
-| 37709308681 | `457317b21dbe` | push | Hosted portability and native qualification | in_progress:- |
+| 37709308681 | `457317b21dbe` | push | Hosted portability and native qualification | completed:success |
 | 37709308678 | `457317b21dbe` | push | Formal assurance | in_progress:- |
 | 37709308655 | `457317b21dbe` | push | Credential-free benchmark path | in_progress:- |
 | 37709308637 | `457317b21dbe` | push | Fault assurance | in_progress:- |
