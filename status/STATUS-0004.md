@@ -592,7 +592,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1744](../tasks/AR-1744-make-test-scratch-isolation.md): Repair make test scratch-root isolation | codex-ar1744-make-test | Repair now also prevents plan-create tests from reading the operator terminal; focused test passes and PR #511 awaits three long-running CI jobs. | Wait for PR #511 jobs 37788419498, 37788419514, and 37788419573 to finish; merge only after all required checks are green, then verify exact main. |
+| P0 | [AR-1744](../tasks/AR-1744-make-test-scratch-isolation.md): Repair make test scratch-root isolation | codex-ar1744-make-test | Merged PR #511 and verified exact protected main; all required post-merge workflows are green. | Release AR-1744 done, reconcile state, and run doctor --live. |
 
 ### Open (6)
 

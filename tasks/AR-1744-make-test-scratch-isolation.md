@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T15:43:15+00:00",
   "depends_on": [],
   "id": "AR-1744",
-  "next_action": "Wait for PR #511 jobs 37788419498, 37788419514, and 37788419573 to finish; merge only after all required checks are green, then verify exact main.",
+  "next_action": "Release AR-1744 done, reconcile state, and run doctor --live.",
   "observed_branch": "repair/ar-1744-make-test-scratch-isolation",
   "observed_dirty": 0,
   "observed_head": "3a14e8846af46792e2dd1c15a0b50343ec7fc1d8",
@@ -24,10 +24,10 @@
   "spec_ref": "specs/AR-1744.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Repair now also prevents plan-create tests from reading the operator terminal; focused test passes and PR #511 awaits three long-running CI jobs.",
-  "task_revision": 110,
+  "summary": "Merged PR #511 and verified exact protected main; all required post-merge workflows are green.",
+  "task_revision": 111,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T14:43:15+00:00",
+  "updated_at": "2026-10-08T14:43:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -310,3 +310,13 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
   Recovering expired coordinator claim to record completed merge and exact-main verification.
 
 - 2026-10-08T14:43:15+00:00: Claimed by codex-ar1744-make-test.
+
+- 2026-10-08T14:43:28+00:00: Final evidence: PR #511 merged at signed merge
+  5e8e5b7fdb04a50950e0790d9d66c605e7978606 with parents 1ab175c30eb039877782487aa863823c5c9e9733 and
+  3a14e8846af46792e2dd1c15a0b50343ec7fc1d8, tree eaef794258db33165d94fbf6a3e151f52059404c. PR
+  required checks all green after the policy PTY retry. Exact-main runs for this merge are all
+  successful: Fault assurance 37793431382, Hosted portability 37793431469, Rust verification
+  37793431395, Cross-repository qualification 37793431401, Credential-free 37793431436, Huawei
+  headers 37793431599, Repository quality 37793431344, Emulated aarch64 37793431378, Formal
+  assurance 37793431370. Local focused plan-create and workflow-transcript tests passed; default
+  make test passed earlier.

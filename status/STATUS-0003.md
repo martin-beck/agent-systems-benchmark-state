@@ -702,8 +702,8 @@
 | Owner | codex-ar1744-make-test |
 | Parent | None |
 | Children | None |
-| Summary | Repair now also prevents plan-create tests from reading the operator terminal; focused test passes and PR #511 awaits three long-running CI jobs. |
-| Next action | Wait for PR #511 jobs 37788419498, 37788419514, and 37788419573 to finish; merge only after all required checks are green, then verify exact main. |
+| Summary | Merged PR #511 and verified exact protected main; all required post-merge workflows are green. |
+| Next action | Release AR-1744 done, reconcile state, and run doctor --live. |
 
 ### AR-1745 — Install ASB into the invoking user&#x27;s local bin
 
