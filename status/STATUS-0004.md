@@ -585,12 +585,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1743](../tasks/AR-1743-make-update-lockfile-repair.md): Repair Make update lockfile handling | codex-ar1743-make-update | Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file. | Monitor all protected-main workflows for exact merge fd956d857970f039db0a4aad03c9e15e59b13da6; after every required workflow is green, record receipts and release AR-1743 done. |
-
 ### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -640,3 +634,4 @@
 | P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Unclaimed | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await signed or attested immutable TLA+ v1.8.0 provenance, or deterministic source-build qualification for 142d0ba; do not update hash only. |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. | Use the generated-seed unsigned-development path for provider-free runner and integration tests, recording qualification_authorized=false. Do not wait on archival seed recovery; create a separate formal-only successor only if signed publication qualification is explicitly requested. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Runner implementation remains blocked for its unrelated formal CI OOM/publication transition, but development execution no longer depends on a reviewed seed digest. The explicit unsigned-development profile accepts locally generated disposable seeds and remains qualification_authorized=false. | No further unsigned-development action remains: AR-1532/1542 and the AR-1536 handoff provide the provider-free diagnostic evidence. Keep this AR blocked only for separately authorized formal/publication qualification with reviewed inputs. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | QEMU fixture passes boot/transient/JAR checks; corrected full-tier rerun reproducibly times out at 1700s without attestation. | No further unsigned-development action remains: AR-1543/1536 provide the provider-free diagnostic QEMU/preflight handoff. Keep this AR blocked only for separately authorized formal capacity qualification with reviewed inputs. |

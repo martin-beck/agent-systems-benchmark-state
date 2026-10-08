@@ -2,14 +2,14 @@
 {
   "branch": "repair/ar-1743-make-update-lockfile",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T13:44:10+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1743",
   "next_action": "Monitor all protected-main workflows for exact merge fd956d857970f039db0a4aad03c9e15e59b13da6; after every required workflow is green, record receipts and release AR-1743 done.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1743-make-update",
+  "owner": "",
   "plan": "../plans/AR-1743-make-update-lockfile-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1743.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Repair Make update lockfile handling",
-  "updated_at": "2026-10-08T11:47:39+00:00",
+  "updated_at": "2026-10-08T11:48:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1743-make-update-lockfile"
 }
 ---
@@ -138,3 +138,9 @@ unrelated product changes and record the exact failure and recovery evidence.
 
 - 2026-10-08T11:47:39+00:00: Recorded command exit 0; command argv SHA-256
   c7b2f7c287c887e5c3b606337ae7c12b0be07e89289bcb9240916d50c89fb46e.
+
+- 2026-10-08T11:48:00+00:00: Released AR-1743 after signed merge
+  fd956d857970f039db0a4aad03c9e15e59b13da6, exact tree/provenance verification, focused exact-merge
+  test, and all nine green protected-main workflows. Acceptance receipt
+  quality/AR-1743-make-update-lockfile-receipt.txt is
+  sha256:18191c12f2084a6af467b4fcd68d680991d588bb6550582e81cfda8a2690a66e.
