@@ -9,8 +9,8 @@
   "id": "AR-1727",
   "next_action": "Repair PR #500 changed-foreground ownership race: revalidate the captured terminal foreground group under scoped SIGTTOU masking before tcsetpgrp, preserve the new owner on mismatch, restore the prior signal mask on every path, and add a real controlling-PTY changed-owner failure/cleanup regression; then rerun exact-head review and CI.",
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
-  "observed_dirty": 1,
-  "observed_head": "23138efcc45dc78232fdb13ebbf722f76f14824b",
+  "observed_dirty": 0,
+  "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
   "owner": "codex-ar1727-p1-repair",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:10:49+00:00",
+  "updated_at": "2026-10-08T00:11:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
