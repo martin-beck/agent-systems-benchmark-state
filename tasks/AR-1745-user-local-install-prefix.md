@@ -9,7 +9,7 @@
   "id": "AR-1745",
   "next_action": "Audit the exact current-main install targets and define the shared user-local prefix contract before implementation.",
   "observed_branch": "feature/ar-1745-user-local-install-prefix",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "fd956d857970f039db0a4aad03c9e15e59b13da6",
   "owner": "codex-ar1745-install",
   "plan": "../plans/AR-1745-user-local-install-prefix.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB development installation place the asb executable at the invoking user's $HOME/.local/bin/asb by default, with a safe explicit prefix override.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Install ASB into the invoking user's local bin",
-  "updated_at": "2026-10-08T13:14:29+00:00",
+  "updated_at": "2026-10-08T13:16:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1745-user-local-install-prefix"
 }
 ---
