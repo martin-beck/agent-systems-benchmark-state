@@ -8,7 +8,7 @@
     "AR-1734"
   ],
   "id": "AR-1738",
-  "next_action": "Claim an isolated worktree, reproduce current-main trusted_tool_invalid for RUSTUP_HOME, implement warning-only development permission/ownership handling, and requalify the exact paired lifecycle without changing stable or production policy.",
+  "next_action": "Preserve historical merge 2f7387e. Repository policy confirms GitHub merge committer identity failure. A new signed DCO-bearing descendant via local integration path is required before exact-main policy can be green; do not rewrite protected main. Coordinate successor recovery.",
   "observed_branch": "repair/ar-1738-development-rustup-permission-compatibility",
   "observed_dirty": 0,
   "observed_head": "f020b2d4fd65b92edf89a0db73a0b04c0b975684",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Repair permissive development rustup permission acceptance",
-  "updated_at": "2026-10-08T09:36:30+00:00",
+  "updated_at": "2026-10-08T09:38:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility"
 }
 ---
@@ -95,3 +95,8 @@ weaken stable or production installation policy.
 
 - 2026-10-08T09:36:30+00:00: Recorded command exit 0; command argv SHA-256
   b5963f3876026d82e0b34242a0de52fcff27529f4e551a0917af5706b81fcefa.
+
+- 2026-10-08T09:38:12+00:00: Read docs/MERGE_INTEGRITY.md and docs/DEVELOPMENT_REVIEW_POLICY.md.
+  Verified repository_policy.py with head 2f7387e, base 1a5888c, protected-main push: fails solely
+  protected-main merge committer is not local integration identity. Remote merge parents/tree are
+  preserved; compliant repair is signed descendant, not rewrite.

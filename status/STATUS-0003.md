@@ -619,7 +619,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries. |
-| Next action | Claim an isolated worktree, reproduce current-main trusted_tool_invalid for RUSTUP_HOME, implement warning-only development permission/ownership handling, and requalify the exact paired lifecycle without changing stable or production policy. |
+| Next action | Preserve historical merge 2f7387e. Repository policy confirms GitHub merge committer identity failure. A new signed DCO-bearing descendant via local integration path is required before exact-main policy can be green; do not rewrite protected main. Coordinate successor recovery. |
 
 ### AR-1739 — Add easy channel build, install, update, and test lifecycle
 
