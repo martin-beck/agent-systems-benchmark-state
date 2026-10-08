@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB development installation place the asb executable at the invoking user's $HOME/.local/bin/asb by default, with a safe explicit prefix override.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Install ASB into the invoking user's local bin",
-  "updated_at": "2026-10-08T13:23:00+00:00",
+  "updated_at": "2026-10-08T13:23:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1745-user-local-install-prefix"
 }
 ---
@@ -69,3 +69,6 @@ clear PATH guidance when `$HOME/.local/bin` is not already on PATH.
 
 - 2026-10-08T13:22:30+00:00: Recorded command exit 0; command argv SHA-256
   e0625d493101da8b6bf211fff8be801b798bee0a8bcd7018ae8ac48f319ddd78.
+
+- 2026-10-08T13:23:21+00:00: Recorded command exit 0; command argv SHA-256
+  31615385e59695400741f4436f46d12a893be41c3c5e31931fa259bd475f9229.
