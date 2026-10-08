@@ -7,7 +7,7 @@
   "id": "AR-1744",
   "next_action": "Wait for PR #511 required jobs 37786237232, 37786237229, 37786237193, and 37786237212 to finish; merge only after all are green, then verify exact main.",
   "observed_branch": "repair/ar-1744-make-test-scratch-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "0d057ade6f450ded6255aa1500b0023a0969ecbd",
   "owner": "codex-ar1744-make-test",
   "plan": "../plans/AR-1744-make-test-scratch-isolation.md",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair implemented; default make test and focused named test pass, PR #511 is awaiting long-running required CI.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T13:52:21+00:00",
+  "updated_at": "2026-10-08T13:52:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
