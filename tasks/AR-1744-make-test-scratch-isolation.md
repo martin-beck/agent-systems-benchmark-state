@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair implemented; default make test and focused named test pass, PR #511 is awaiting long-running required CI.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T13:44:18+00:00",
+  "updated_at": "2026-10-08T13:51:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -242,3 +242,6 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 - 2026-10-08T13:44:18+00:00: Added RUST_TEST_THREADS ?= 1 to Makefile with documented override and
   passed plain make test through handoffctl. PR head is 0d057ade6f450ded6255aa1500b0023a0969ecbd.
   Fast checks are green; remaining required jobs are in progress without failures.
+
+- 2026-10-08T13:51:05+00:00: Recorded command exit 0; command argv SHA-256
+  60784069cad657573cf381fda6969a0403149c741eede8d8378e03cd00027a09.
