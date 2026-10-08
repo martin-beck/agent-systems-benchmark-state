@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair now also prevents plan-create tests from reading the operator terminal; focused test passes and PR #511 awaits three long-running CI jobs.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T14:00:28+00:00",
+  "updated_at": "2026-10-08T14:03:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -275,3 +275,6 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
   42b6453922c8b38fdab03e2b1aa2d396c0cf288e passes the exact test immediately, uses injected stdin,
   and bounds interactive selection to 64 bytes. PR #511 fast checks are green; three hosted jobs
   remain pending with no failure.
+
+- 2026-10-08T14:03:29+00:00: Recorded command exit 0; command argv SHA-256
+  9101955416b0fa537273d09b73dd8f87f10eb9f0d755f697fc109c68bd64e4e8.
