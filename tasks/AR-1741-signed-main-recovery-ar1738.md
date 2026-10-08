@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Signed protected-main recovery for AR-1738",
-  "updated_at": "2026-10-08T10:07:06+00:00",
+  "updated_at": "2026-10-08T10:07:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738"
 }
 ---
@@ -46,3 +46,6 @@ main. AR-1740 is a separate publication incident and is intentionally excluded.
   c421c34f778e6835543f9cd6bd52216a6bf5a5fd52ad00e973d1bb476cff16eb.
 
 - 2026-10-08T10:07:06+00:00: Heartbeat by codex-ar1738-rustup-permission.
+
+- 2026-10-08T10:07:09+00:00: Recorded command exit 0; command argv SHA-256
+  1709c8ef0a4e862e1aecf02723498ed1079408e720748fcf58ca984ae4cd6519.
