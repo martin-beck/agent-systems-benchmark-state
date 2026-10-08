@@ -7,7 +7,7 @@
     "AR-1590"
   ],
   "id": "AR-1727",
-  "next_action": "Merge independently approved PR #500 exact head 420b57d20a6c58eb52095cb344e3bf601ec8c2b2/tree bd5cc8111417b7b9031988b0c6e354db3354ac0f through signed merge integrity, verify the exact merge object/tree/parents/signature/DCO and terminal-green post-merge CI, then requalify downstream asb-tui AR-1654.",
+  "next_action": "Independently review metadata-only signed descendant recovery PR #501 at exact head 0714b0e, wait for exact-head CI, then integrate only with tools/integration/merge_pr.py using exact base/head/tree and verify terminal-green protected-main post-merge CI.",
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:27:50+00:00",
+  "updated_at": "2026-10-08T00:28:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -313,3 +313,9 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-08T00:27:50+00:00: Recorded command exit 0; command argv SHA-256
   a6b32e4bed3dce5ea2f8b1347af69b9715adf9d13e4a9fcf2169946e34cc316b.
+
+- 2026-10-08T00:28:34+00:00: PR #500 was mistakenly web-merged as published GitHub-signed merge
+  317768c and protected-main Repository Quality correctly rejected the GitHub Web Flow committer.
+  Per MERGE_INTEGRITY.md, history is preserved. Created signed+DCO metadata-only descendant recovery
+  PR #501 at head 0714b0e with unchanged product tree; it now requires independent review and local
+  signed merge integration.
