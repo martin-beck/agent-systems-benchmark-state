@@ -375,8 +375,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `617af40b356f` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1740-repository-makefile` | `feature/ar-1740-repository-makefile` | `d0c692690564` | 0 | behind 11, ahead 0 |
 | `agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738` | `repair/ar-1741-signed-main-recovery-ar1738` | `0c100e4624a6` | 0 | behind 13, ahead 0 |
-| `agent-systems-benchmark-ar-1744-make-test-scratch-isolation` | `repair/ar-1744-make-test-scratch-isolation` | `fd956d857970` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-runtime/src/sandbox.rs` |
+| `agent-systems-benchmark-ar-1744-make-test-scratch-isolation` | `repair/ar-1744-make-test-scratch-isolation` | `fb0b2e39baa6` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 313, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 313, ahead 830 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 313, ahead 89 |
