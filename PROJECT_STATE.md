@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37785805818 | `1ab175c30eb0` | push | Rust verification | in_progress:- |
 | 37785805813 | `1ab175c30eb0` | push | Emulated aarch64 portability | in_progress:- |
 | 37785805796 | `1ab175c30eb0` | push | Hosted portability and native qualification | completed:success |
-| 37785805792 | `1ab175c30eb0` | push | Cross-repository development broker qualification | in_progress:- |
+| 37785805792 | `1ab175c30eb0` | push | Cross-repository development broker qualification | completed:success |
 | 37785805791 | `1ab175c30eb0` | push | Credential-free benchmark path | completed:success |
 | 37784417966 | `250ef6658e0c` | pull_request | Rust verification | completed:success |
 | 37784417919 | `250ef6658e0c` | pull_request | Agent Workflow Quality shadow | completed:success |
