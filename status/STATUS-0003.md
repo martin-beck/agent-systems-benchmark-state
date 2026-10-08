@@ -639,11 +639,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1740-makefile |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows. |
@@ -1475,7 +1475,7 @@ flowchart LR
         AR_1737["AR-1737 - In progress"]:::status_in_progress
         AR_1738["AR-1738 - Done"]:::status_done
         AR_1739["AR-1739 - In progress"]:::status_in_progress
-        AR_1740["AR-1740 - In progress"]:::status_in_progress
+        AR_1740["AR-1740 - Done"]:::status_done
         AR_1741["AR-1741 - Done"]:::status_done
         AR_1742["AR-1742 - Open"]:::status_open
     end

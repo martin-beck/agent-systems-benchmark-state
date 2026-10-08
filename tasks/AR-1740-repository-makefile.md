@@ -2,14 +2,14 @@
 {
   "branch": "feature/ar-1740-repository-makefile",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T12:28:11+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1740",
   "next_action": "Released; preserve AR-1742 as the separate historical PR505 mismatch recovery.",
   "observed_branch": "feature/ar-1740-repository-makefile",
   "observed_dirty": 0,
   "observed_head": "d0c6926905642c95222f5acfc6bc1b00f75d63e7",
-  "owner": "codex-ar1740-makefile",
+  "owner": "",
   "plan": "../plans/AR-1740-repository-makefile.md",
   "priority": "P1",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1740.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T10:34:56+00:00",
+  "updated_at": "2026-10-08T10:35:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -196,3 +196,9 @@ quality gates, and never become a runtime or installed-user dependency.
 
 - 2026-10-08T10:34:56+00:00: Recorded command exit 1; command argv SHA-256
   87400d26b23b9ec348da05d2a2b7ebe66aa597f7ebb4af626c9f8a96202df861.
+
+- 2026-10-08T10:35:30+00:00: Completed PR #507 default lifecycle follow-up. Signed local merge
+  d53e901 (base bbe25d0, topic d0c6926, tree 78d06a52); local protected-main policy and all
+  exact-main hosted workflows green, including AArch64 37763044768. Evidence receipt
+  quality/AR-1740-default-lifecycle-receipt.txt recorded. AR-1742 remains separate historical PR505
+  mismatch recovery.
