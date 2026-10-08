@@ -8,7 +8,7 @@
     "AR-1431"
   ],
   "id": "AR-1750",
-  "next_action": "Obtain independent exact-head review of PR #517 at ba75120573fc580f50cc08ae50aa5f038d829836 tree 241f7903019f9de17426f05127aaa3280ce525c2; do not merge or perform live settings mutation before root gate.",
+  "next_action": "Obtain a fresh independent exact-head review of repaired PR #517 at 880fe4f4b1248328cb496b4ec6097954d620065a tree ca6265a7ed0e1304266044b73c5c2a811d84b64b; stale ba751205 review must not be reused. Do not merge or perform live settings mutation before root gate.",
   "observed_branch": "repair/ar-1750-ruleset-response-normalization",
   "observed_dirty": 0,
   "observed_head": "880fe4f4b1248328cb496b4ec6097954d620065a",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T21:33:55+00:00",
+  "updated_at": "2026-10-08T21:34:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -169,3 +169,9 @@ ruleset, and never retry an ambiguous mutation blindly.
 
 - 2026-10-08T21:33:55+00:00: Recorded command exit 0; command argv SHA-256
   8b8474b692cfd88e4ab778f87b0fc0c32588dff59c6ddee5b345db8f55e60d9d.
+
+- 2026-10-08T21:34:33+00:00: Repaired P1 review finding by separating exact pre-apply admission from
+  desired post-PATCH validation. Added documented prestate transaction order and hostile prestate
+  no-PUT/no-PATCH tests. Signed+DCO replacement head published with exact-head policy, DCO, Ruff,
+  focused 34/34, tools/signature/header/contract, fmt/clippy, supply-chain, workflow and gitleaks
+  gates green; hosted checks restarted.
