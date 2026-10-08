@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T02:34:46+00:00",
+  "updated_at": "2026-10-08T02:36:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1734-development-tui-tool-environment"
 }
 ---
@@ -234,3 +234,6 @@ and production policy remains fail closed and unchanged.
 
 - 2026-10-08T02:34:46+00:00: Recorded command exit 0; command argv SHA-256
   dcaa9223956780b28d312c6c05c079d7653f1f532ce1f69a0456687c7f85f49d.
+
+- 2026-10-08T02:36:01+00:00: Recorded command exit 101; command argv SHA-256
+  3e281a8e5621a7b6a79c7efb846eb1519cef0ec77bc8521b4c360346b9aaf3fa.
