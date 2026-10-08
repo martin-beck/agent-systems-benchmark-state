@@ -607,6 +607,20 @@
 | Summary | Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH. |
 | Next action | Reproduce the exact env-cleared development materializer failure, bind the validated linker search root in the effective Cargo/rustc flags, and requalify source-built install, upgrade, and bare launch without widening PATH. |
 
+### AR-1738 — Repair permissive development rustup permission acceptance
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries. |
+| Next action | Claim an isolated worktree, reproduce current-main trusted_tool_invalid for RUSTUP_HOME, implement warning-only development permission/ownership handling, and requalify the exact paired lifecycle without changing stable or production policy. |
+
 
 ## Dependency graph
 
@@ -1403,6 +1417,7 @@ flowchart LR
         AR_1735["AR-1735 - Open"]:::status_open
         AR_1736["AR-1736 - Planned"]:::status_planned
         AR_1737["AR-1737 - Open"]:::status_open
+        AR_1738["AR-1738 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3249,6 +3264,7 @@ flowchart LR
     AR_1724 --> AR_1725
     AR_1726 --> AR_1734
     AR_1726 --> AR_1737
+    AR_1726 --> AR_1738
     AR_1727 --> AR_1734
     AR_1728 --> AR_1729
     AR_1728 --> AR_1730
@@ -3258,6 +3274,7 @@ flowchart LR
     AR_1732 --> AR_1733
     AR_1733 --> AR_1736
     AR_1734 --> AR_1737
+    AR_1734 --> AR_1738
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3439,7 +3456,3 @@ flowchart LR
 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | None |
 | [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md) | [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-0904](../tasks/AR-0904-contract-consistency.md), [AR-1006](../tasks/AR-1006-distributed-workers.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md), [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md) |
 | [AR-1002](../tasks/AR-1002-verifier-integrity.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-1016](../tasks/AR-1016-measurement-integration-audit.md) |
-| [AR-1003](../tasks/AR-1003-execution-budgets.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md) | None |
-| [AR-1004](../tasks/AR-1004-reliability-fairness.md) | [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md) | None |
-| [AR-1005](../tasks/AR-1005-trace-interoperability.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | None |
-| [AR-1006](../tasks/AR-1006-distributed-workers.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | None |
