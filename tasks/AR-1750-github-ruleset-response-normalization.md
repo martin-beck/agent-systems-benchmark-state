@@ -8,7 +8,7 @@
     "AR-1431"
   ],
   "id": "AR-1750",
-  "next_action": "Resolve circular admission without retry: current ruleset 24750310 requires one approval and last-push approval while PR #517 reviewDecision is REVIEW_REQUIRED under the sole same GitHub account. Signed exact-tree merge 041705503d0580ac307e787478e475e67d5f4d7c was rejected and remote main remains dc19bb1. Obtain root authorization for a reviewed pre-merge guarded ID-bound policy PUT only, or another valid account approval; do not blind-retry, PATCH settings, merge, or live-mutate meanwhile.",
+  "next_action": "Obtain a fresh independent exact-head review of PR #517 at cb8be7e4ea8866a21ae999af1aee062544622896 tree 40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde and wait for every hosted check to succeed. Do not merge or execute the live ruleset-only PUT until root issues the explicit execution gate bound to this head.",
   "observed_branch": "repair/ar-1750-ruleset-response-normalization",
   "observed_dirty": 0,
   "observed_head": "cb8be7e4ea8866a21ae999af1aee062544622896",
@@ -20,9 +20,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T21:59:24+00:00",
+  "updated_at": "2026-10-08T22:00:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -241,3 +241,12 @@ independent review, all hosted checks, and a root execution gate are recorded.
 
 - 2026-10-08T21:59:24+00:00: Recorded command exit 0; command argv SHA-256
   8bc99afe06eb4a325e16260a4acd741d4316cc304e418e2ece3fa8425bb95148.
+
+- 2026-10-08T22:00:14+00:00: Published the recovery-only ruleset bootstrap replacement candidate for
+  PR #517 from unchanged exact base dc19bb1b758a60b4fe316021ab9fe751aaae361d. Signed+DCO head
+  cb8be7e4ea8866a21ae999af1aee062544622896 tree 40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde passed
+  exact-head repository policy, DCO, Ruff and changed-file formatting, focused 37/37 transaction
+  tests, full tools tests, signatures/headers/contracts, cargo fmt/clippy, cargo-deny/audit,
+  actionlint/zizmor, introduced-history gitleaks, and clean-tree validation. Publication used exact
+  stale-head lease b6dfe7c; remote topic and PR now resolve to cb8be7e. Hosted checks restarted. No
+  live API mutation, repository-settings PATCH, merge, or policy execution occurred.

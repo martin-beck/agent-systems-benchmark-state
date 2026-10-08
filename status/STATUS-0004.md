@@ -609,7 +609,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md): Canonicalize GitHub ruleset response and complete guarded admission | codex-asb-ar1750-ruleset-normalization-20261008 | Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation. | Resolve circular admission without retry: current ruleset 24750310 requires one approval and last-push approval while PR #517 reviewDecision is REVIEW_REQUIRED under the sole same GitHub account. Signed exact-tree merge 041705503d0580ac307e787478e475e67d5f4d7c was rejected and remote main remains dc19bb1. Obtain root authorization for a reviewed pre-merge guarded ID-bound policy PUT only, or another valid account approval; do not blind-retry, PATCH settings, merge, or live-mutate meanwhile. |
+| P0 | [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md): Canonicalize GitHub ruleset response and complete guarded admission | codex-asb-ar1750-ruleset-normalization-20261008 | Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation. | Obtain a fresh independent exact-head review of PR #517 at cb8be7e4ea8866a21ae999af1aee062544622896 tree 40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde and wait for every hosted check to succeed. Do not merge or execute the live ruleset-only PUT until root issues the explicit execution gate bound to this head. |
 
 ### Open (6)
 
