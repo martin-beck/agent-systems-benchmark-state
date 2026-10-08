@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1727-development-broker-foreground-terminal",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T01:38:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1590"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
-  "owner": "codex-ar1727-p1-repair",
+  "owner": "",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:13:13+00:00",
+  "updated_at": "2026-10-08T00:13:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -257,3 +257,8 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
   tests; workspace Clippy -D warnings; fmt; rustdoc -D warnings; release build;
   diff/privacy/safe-Rust audit. Hosted checks are running; fresh independent exact-head review is
   required.
+
+- 2026-10-08T00:13:18+00:00: Author repair complete at PR #500 exact signed+DCO head
+  420b57d20a6c58eb52095cb344e3bf601ec8c2b2/tree bd5cc8111417b7b9031988b0c6e354db3354ac0f with
+  focused, full asb-cli, and full workspace gates green. Released ownerless for a distinct
+  independent exact-head review and terminal hosted checks; do not merge without both.
