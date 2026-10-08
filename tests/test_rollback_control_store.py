@@ -22,6 +22,11 @@ from pathlib import Path
 from typing import Any, cast
 from unittest.mock import MagicMock, patch
 
+from _rollback_control_store_subprocess import (
+    STALE_FENCE_SCRIPT,
+    SUBPROCESS_SESSION_SCRIPT,
+)
+
 from tools import upgrade_authority
 from tools.handoffctl import CoordinatorLockGuard, LockOwnershipError, locked
 from tools.rollback_control_store import (
@@ -82,7 +87,7 @@ def _runtime_evidence(state: BarrierSessionState | None, target: str) -> dict[st
     }
 
 
-PROJECT = "11111111" "-1111-4111-8111-111111111111"
+PROJECT = "11111111-1111-4111-8111-111111111111"
 RECORD = {
     "schema_version": 2,
     "backend": "sqlite",
@@ -120,12 +125,6 @@ AUTHORITY_BINDING = {
     "state_repository": "owner/state",
     "product_repository": "owner/product",
 }
-
-
-from _rollback_control_store_subprocess import (
-    STALE_FENCE_SCRIPT,
-    SUBPROCESS_SESSION_SCRIPT,
-)
 
 
 def _reopen_ambiguous_child(control_text: str, authority_text: str, result_text: str) -> None:
@@ -267,7 +266,7 @@ class RollbackControlStoreTests(unittest.TestCase):
                 store.provision_released(
                     BarrierSessionIdentity(
                         identity.schema_version,
-                        "22222222" "-2222-4222-8222-222222222222",
+                        "22222222-2222-4222-8222-222222222222",
                         identity.attempt_id,
                         identity.state_revision,
                         identity.authority_revision_at_acquire,
@@ -3158,7 +3157,7 @@ class RollbackControlStoreTests(unittest.TestCase):
 
             invalid_states = (
                 {"backend": "git"},
-                {"project_id": "22222222" "-2222-4222-8222-222222222222"},
+                {"project_id": "22222222-2222-4222-8222-222222222222"},
                 {"authority_revision": "changed"},
                 {"fencing_token": "stale"},
                 {"target": "new"},
@@ -3583,7 +3582,7 @@ class RollbackControlStoreTests(unittest.TestCase):
             with self.assertRaises(ControlStoreError):
                 store.cas(0, {**RECORD, "revision": 1})
             with self.assertRaises(ControlStoreError):
-                store.cas(1, {**RECORD, "project_id": "22222222" "-2222-4222-8222-222222222222"})
+                store.cas(1, {**RECORD, "project_id": "22222222-2222-4222-8222-222222222222"})
             with self.assertRaises(ControlStoreError):
                 store.cas(0, {**RECORD, "operation_id": "op-2"})
 
@@ -3608,7 +3607,7 @@ class RollbackControlStoreTests(unittest.TestCase):
             with self.assertRaises(ControlStoreError):
                 store.cas(1, changed_fence)
             with self.assertRaises(ControlStoreError):
-                store.cas(1, candidate(project_id="22222222" "-2222-4222-8222-222222222222"))
+                store.cas(1, candidate(project_id="22222222-2222-4222-8222-222222222222"))
             ambiguous = store.cas(1, {**held, "status": "ambiguous", "revision": 2})
             with self.assertRaises(ControlStoreError):
                 store.cas(2, {**ambiguous, "status": "held", "revision": 3})
@@ -3648,7 +3647,7 @@ class RollbackControlStoreTests(unittest.TestCase):
     def test_public_guards_reject_invalid_projects_transitions_and_reentry(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            for project_id in ("not-a-uuid", "11111111" "-1111-1111-8111-111111111111"):
+            for project_id in ("not-a-uuid", "11111111-1111-1111-8111-111111111111"):
                 with self.subTest(project_id=project_id), self.assertRaises(ControlStoreError):
                     SQLiteRollbackControlStore(root / f"{project_id}.sqlite", project_id)
 
@@ -3715,7 +3714,7 @@ class RollbackControlStoreTests(unittest.TestCase):
                         action()
             self.assertIsNone(store.verify_rollback_context({**RECORD, "operation_id": None}))
 
-            other_project = "22222222" "-2222-4222-8222-222222222222"
+            other_project = "22222222-2222-4222-8222-222222222222"
             other_record = {**RECORD, "project_id": other_project}
             other_record["barrier_identity_digest"] = canonical_barrier_digest(other_record)
             other_record["envelope_digest"] = canonical_envelope_digest(other_record)
@@ -3753,7 +3752,7 @@ class RollbackControlStoreTests(unittest.TestCase):
             first = SQLiteRollbackControlStore(project_path, PROJECT)
             first.cas(0, RECORD)
             second = SQLiteRollbackControlStore(
-                project_path, "22222222" "-2222-4222-8222-222222222222"
+                project_path, "22222222-2222-4222-8222-222222222222"
             )
             with self.assertRaisesRegex(ControlStoreError, "project binding mismatch"):
                 second.snapshot("op-1")

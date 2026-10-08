@@ -157,6 +157,39 @@ def revision_stress_worker(
     outcomes.put(("done", task_id, completed))
 
 
+def sqlite_unblock_worker(start: Any, outcomes: Any) -> None:
+    """Race the supported external unblock against one SQLite authority."""
+    start.wait(5)
+    try:
+        CORE.mutate(
+            argparse.Namespace(task="AR-0001", expected_revision=1, note="external clear"),
+            "unblock",
+        )
+    except RuntimeError as error:
+        outcomes.put(("rejected", str(error)))
+    else:
+        outcomes.put(("accepted", "open"))
+
+
+def sqlite_resume_worker(start: Any, outcomes: Any) -> None:
+    """Race the supported paused resume against one SQLite authority."""
+    start.wait(5)
+    try:
+        CORE.mutate(
+            argparse.Namespace(
+                task="AR-0001",
+                expected_revision=1,
+                session="AR-0001@1",
+                note="resume",
+            ),
+            "resume",
+        )
+    except RuntimeError as error:
+        outcomes.put(("rejected", str(error)))
+    else:
+        outcomes.put(("accepted", "open"))
+
+
 class SQLiteStorageTest(unittest.TestCase):
     def test_authority_sidecar_descriptor_failures_are_fail_closed(self) -> None:
         with TemporaryDirectory() as directory:
@@ -227,7 +260,12 @@ class SQLiteStorageTest(unittest.TestCase):
     def tearDown(self) -> None:
         self.temporary.cleanup()
 
-    def create(self, tasks: list[Any] | None = None) -> SQLiteBackend:
+    def create(
+        self,
+        tasks: list[Any] | None = None,
+        *,
+        session_records: list[dict[str, Any]] | None = None,
+    ) -> SQLiteBackend:
         create_database(
             self.database,
             BINDING,
@@ -235,6 +273,7 @@ class SQLiteStorageTest(unittest.TestCase):
             imported_at="2026-09-08T00:00:00+00:00",
             source_backend="git",
             source_checkpoint="a" * 40,
+            session_records=session_records or (),
         )
         return SQLiteBackend(self.database, BINDING, self.tasks)
 
@@ -612,6 +651,43 @@ class SQLiteStorageTest(unittest.TestCase):
         self.assertEqual(1, len(CORE.storage_backend().load_session_records()))
         self.assertEqual(1, len(CORE.storage_backend().load_checkpoint_records()))
 
+    def test_external_blocked_provenance_survives_migration_round_trip(self) -> None:
+        self.configure_core()
+        external = task("AR-0001", status="in_progress")
+        external[1].update(
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+            next_action="Wait for external dependency.",
+        )
+        self.write_git_tasks([external])
+        with (
+            patch.object(CORE, "sync_replica_before_write"),
+            patch.object(CORE, "commit", return_value=True),
+        ):
+            CORE.mutate(
+                argparse.Namespace(
+                    task="AR-0001", owner="worker-a", status="blocked", note="external wait"
+                ),
+                "release",
+            )
+        completed = subprocess.CompletedProcess([], 0, "b" * 40 + "\n", "")
+        with (
+            patch.object(CORE, "sync_replica_before_write"),
+            patch.object(CORE, "run", return_value=completed),
+            patch("builtins.print"),
+        ):
+            CORE.cmd_migrate(argparse.Namespace(to="sqlite"))
+        CORE.mutate(
+            argparse.Namespace(task="AR-0001", expected_revision=2, note="external clear"),
+            "unblock",
+        )
+        with patch("builtins.print"):
+            CORE.cmd_migrate(argparse.Namespace(to="git"))
+        restored = CORE.git_tasks()[0][1]
+        self.assertEqual(("open", 3), (restored["status"], restored["task_revision"]))
+        self.assertEqual("Wait for external dependency.", restored["next_action"])
+        self.assertEqual([], CORE.storage_backend().load_session_records("AR-0001"))
+
     def test_sqlite_cli_lifecycle_uses_same_transition_contract(self) -> None:
         self.configure_core(backend="sqlite")
         task_path, task_meta, task_body = task("AR-0001")
@@ -675,6 +751,167 @@ class SQLiteStorageTest(unittest.TestCase):
             ("done", 4, "P0"), (final["status"], final["task_revision"], final["priority"])
         )
         self.assertIn("updated", (self.tasks / "AR-0001-test.md").read_text())
+
+    def test_sqlite_release_blocked_unblock_and_claim_is_session_free(self) -> None:
+        self.configure_core(backend="sqlite")
+        task_path, task_meta, task_body = task("AR-0001", status="in_progress")
+        task_meta.update(
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+            next_action="Wait for external dependency.",
+        )
+        backend = self.create([(task_path, task_meta, task_body)])
+        CORE.export_sqlite_projections()
+        with patch.object(CORE, "push_replica"):
+            CORE.mutate(
+                argparse.Namespace(
+                    task="AR-0001", owner="worker-a", status="blocked", note="external wait"
+                ),
+                "release",
+            )
+            CORE.mutate(
+                argparse.Namespace(task="AR-0001", expected_revision=2, note="external clear"),
+                "unblock",
+            )
+            CORE.mutate(
+                argparse.Namespace(task="AR-0001", owner="worker-b", lease_minutes=10),
+                "claim",
+            )
+        final = backend.load_tasks()[0][1]
+        self.assertEqual(("in_progress", 4), (final["status"], final["task_revision"]))
+        self.assertEqual("Wait for external dependency.", final["next_action"])
+        self.assertEqual([], backend.load_session_records("AR-0001"))
+        with closing(sqlite3.connect(self.database)) as connection:
+            self.assertEqual(
+                ["import", "release", "unblock", "claim"],
+                [row[0] for row in connection.execute("SELECT kind FROM events ORDER BY revision")],
+            )
+
+    def test_sqlite_unique_pause_resume_restores_next_action(self) -> None:
+        self.configure_core(backend="sqlite")
+        task_path, task_meta, task_body = task("AR-0001", status="in_progress")
+        task_meta.update(
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+            next_action="Resume this exact step.",
+        )
+        backend = self.create([(task_path, task_meta, task_body)])
+        CORE.export_sqlite_projections()
+        with patch.object(CORE, "push_replica"):
+            CORE.mutate(
+                argparse.Namespace(
+                    task="AR-0001", owner="worker-a", expected_revision=1, note="pause"
+                ),
+                "pause",
+            )
+            CORE.mutate(
+                argparse.Namespace(
+                    task="AR-0001",
+                    expected_revision=2,
+                    session="AR-0001@2",
+                    note="resume",
+                ),
+                "resume",
+            )
+        final = backend.load_tasks()[0][1]
+        self.assertEqual(("open", 3), (final["status"], final["task_revision"]))
+        self.assertEqual("Resume this exact step.", final["next_action"])
+
+    def test_sqlite_resume_projection_failure_keeps_committed_authority(self) -> None:
+        self.configure_core(backend="sqlite")
+        blocked = task("AR-0001", status="blocked")
+        backend = self.create(
+            [blocked],
+            session_records=[
+                CORE.build_session_record(blocked[1], "pause", "2026-10-08T00:00:00+00:00")
+            ],
+        )
+        CORE.export_sqlite_projections()
+        with (
+            patch.object(CORE, "export_sqlite_projections", side_effect=OSError(28, "disk full")),
+            self.assertRaisesRegex(CORE.StorageCommittedError, "SQLITE_COMMITTED_EXPORT_FAILED"),
+        ):
+            CORE.mutate(
+                argparse.Namespace(
+                    task="AR-0001",
+                    expected_revision=1,
+                    session="AR-0001@1",
+                    note="resume",
+                ),
+                "resume",
+            )
+        committed = backend.load_tasks()[0][1]
+        self.assertEqual(("open", 2), (committed["status"], committed["task_revision"]))
+        self.assertIn('"status": "blocked"', (self.tasks / "AR-0001-test.md").read_text())
+
+    def test_sqlite_unblock_projection_failure_keeps_committed_authority(self) -> None:
+        self.configure_core(backend="sqlite")
+        backend = self.create([task("AR-0001", status="blocked")])
+        CORE.export_sqlite_projections()
+        with (
+            patch.object(CORE, "export_sqlite_projections", side_effect=OSError(28, "disk full")),
+            self.assertRaisesRegex(CORE.StorageCommittedError, "SQLITE_COMMITTED_EXPORT_FAILED"),
+        ):
+            CORE.mutate(
+                argparse.Namespace(task="AR-0001", expected_revision=1, note="external clear"),
+                "unblock",
+            )
+        committed = backend.load_tasks()[0][1]
+        self.assertEqual(("open", 2), (committed["status"], committed["task_revision"]))
+        self.assertIn('"status": "blocked"', (self.tasks / "AR-0001-test.md").read_text())
+        CORE.export_sqlite_projections()
+        self.assertIn('"status": "open"', (self.tasks / "AR-0001-test.md").read_text())
+
+    def test_parallel_sqlite_unblocks_have_one_exact_revision_winner(self) -> None:
+        self.configure_core(backend="sqlite")
+        backend = self.create([task("AR-0001", status="blocked")])
+        CORE.export_sqlite_projections()
+        context = multiprocessing.get_context("fork")
+        start = context.Event()
+        outcomes: Any = context.Queue()
+        workers = [
+            context.Process(target=sqlite_unblock_worker, args=(start, outcomes)) for _ in range(2)
+        ]
+        for process in workers:
+            process.start()
+        start.set()
+        for process in workers:
+            process.join(10)
+            self.assertEqual(0, process.exitcode)
+        self.assertEqual(
+            ["accepted", "rejected"], sorted(outcomes.get(timeout=2)[0] for _ in workers)
+        )
+        final = backend.load_tasks()[0][1]
+        self.assertEqual(("open", 2), (final["status"], final["task_revision"]))
+        self.assertEqual([], backend.load_session_records("AR-0001"))
+
+    def test_parallel_sqlite_resumes_have_one_exact_revision_winner(self) -> None:
+        self.configure_core(backend="sqlite")
+        blocked = task("AR-0001", status="blocked")
+        backend = self.create(
+            [blocked],
+            session_records=[
+                CORE.build_session_record(blocked[1], "pause", "2026-10-08T00:00:00+00:00")
+            ],
+        )
+        CORE.export_sqlite_projections()
+        context = multiprocessing.get_context("fork")
+        start = context.Event()
+        outcomes: Any = context.Queue()
+        workers = [
+            context.Process(target=sqlite_resume_worker, args=(start, outcomes)) for _ in range(2)
+        ]
+        for process in workers:
+            process.start()
+        start.set()
+        for process in workers:
+            process.join(10)
+            self.assertEqual(0, process.exitcode)
+        self.assertEqual(
+            ["accepted", "rejected"], sorted(outcomes.get(timeout=2)[0] for _ in workers)
+        )
+        final = backend.load_tasks()[0][1]
+        self.assertEqual(("open", 2), (final["status"], final["task_revision"]))
 
     def test_sqlite_projection_failure_does_not_rollback_committed_task(self) -> None:
         self.configure_core(backend="sqlite")
@@ -798,6 +1035,120 @@ class SQLiteStorageTest(unittest.TestCase):
         connection.close()
         with self.assertRaisesRegex(RuntimeError, "invalid session JSON"):
             CORE.storage_backend().load_session_records()
+
+    def test_sqlite_session_reader_rejects_semantic_identity_corruption(self) -> None:
+        self.configure_core(backend="sqlite")
+        backend = self.create()
+        blocked = task("AR-0001", status="blocked")[1]
+        record = CORE.build_session_record(blocked, "pause", "2026-10-08T00:00:00+00:00")
+        connection = sqlite3.connect(self.database)
+        connection.execute(
+            """CREATE TABLE session_records(
+               sequence INTEGER PRIMARY KEY, task_id TEXT, task_revision INTEGER,
+               record_json TEXT, recorded_at TEXT)"""
+        )
+        connection.execute(
+            "INSERT INTO session_records VALUES (1, 'AR-0001', 1, ?, 'now')",
+            (json.dumps(dict(record, task="AR-0002")),),
+        )
+        connection.commit()
+        with self.assertRaisesRegex(RuntimeError, "identity mismatch"):
+            backend.load_session_records()
+        incoherent = dict(record, step_state={"status": "open", "task_revision": 1})
+        connection.execute(
+            "UPDATE session_records SET record_json=?",
+            (json.dumps(incoherent),),
+        )
+        connection.commit()
+        connection.close()
+        with self.assertRaisesRegex(RuntimeError, "invalid session record"):
+            backend.load_session_records()
+
+    def test_sqlite_duplicate_pause_resume_stutters_before_projection(self) -> None:
+        self.configure_core(backend="sqlite")
+        blocked = task("AR-0001", status="blocked")
+        backend = self.create([blocked])
+        CORE.export_sqlite_projections()
+        record = CORE.build_session_record(blocked[1], "pause", "2026-10-08T00:00:00+00:00")
+        connection = sqlite3.connect(self.database)
+        connection.execute(
+            """CREATE TABLE session_records(
+               sequence INTEGER PRIMARY KEY, task_id TEXT, task_revision INTEGER,
+               record_json TEXT, recorded_at TEXT)"""
+        )
+        payload = json.dumps(record, sort_keys=True, separators=(",", ":"))
+        connection.executemany(
+            "INSERT INTO session_records VALUES (?, 'AR-0001', 1, ?, 'now')",
+            [(1, payload), (2, payload)],
+        )
+        connection.commit()
+        connection.close()
+        task_before = backend.load_tasks()[0][1]
+        projection_before = (self.tasks / "AR-0001-test.md").read_bytes()
+        with (
+            patch.object(CORE, "export_sqlite_projections") as export,
+            self.assertRaisesRegex(RuntimeError, "ambiguous"),
+        ):
+            CORE.mutate(
+                argparse.Namespace(
+                    task="AR-0001",
+                    expected_revision=1,
+                    session="AR-0001@1",
+                    note="resume",
+                ),
+                "resume",
+            )
+        self.assertEqual(task_before, backend.load_tasks()[0][1])
+        self.assertEqual(projection_before, (self.tasks / "AR-0001-test.md").read_bytes())
+        export.assert_not_called()
+
+    def test_sqlite_boolean_pause_revision_stutters_before_projection(self) -> None:
+        self.configure_core(backend="sqlite")
+        blocked = task("AR-0001", status="blocked")
+        backend = self.create([blocked])
+        CORE.export_sqlite_projections()
+        record = CORE.build_session_record(blocked[1], "pause", "2026-10-08T00:00:00+00:00")
+        record.update(
+            task_revision=True,
+            step_state={"status": "blocked", "task_revision": True},
+        )
+        connection = sqlite3.connect(self.database)
+        connection.execute(
+            """CREATE TABLE session_records(
+               sequence INTEGER PRIMARY KEY, task_id TEXT, task_revision INTEGER,
+               record_json TEXT, recorded_at TEXT)"""
+        )
+        connection.execute(
+            "INSERT INTO session_records VALUES (?, ?, ?, ?, ?)",
+            (
+                1,
+                "AR-0001",
+                1,
+                json.dumps(record, sort_keys=True, separators=(",", ":")),
+                "now",
+            ),
+        )
+        connection.commit()
+        connection.close()
+        task_before = backend.load_tasks()[0][1]
+        projection = self.tasks / "AR-0001-test.md"
+        projection_before = projection.read_bytes()
+        with (
+            patch.object(CORE, "export_sqlite_projections") as export,
+            self.assertRaisesRegex(RuntimeError, "invalid session record"),
+        ):
+            CORE.mutate(
+                argparse.Namespace(
+                    task="AR-0001",
+                    expected_revision=1,
+                    session="AR-0001@1",
+                    note="resume",
+                ),
+                "resume",
+            )
+        self.assertEqual(task_before, backend.load_tasks()[0][1])
+        self.assertEqual(projection_before, projection.read_bytes())
+        export.assert_not_called()
 
     def test_sqlite_session_reader_translates_unexpected_database_errors(self) -> None:
         self.configure_core(backend="sqlite")

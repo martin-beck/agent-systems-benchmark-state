@@ -70,26 +70,49 @@ class SessionRecordTests(unittest.TestCase):
             self.assertEqual(MAX_SESSION_RECORDS + 4, latest["task_revision"])
 
     def test_rejects_unsafe_or_oversized_next_action(self) -> None:
-        with self.assertRaisesRegex(ValueError, "exceeds bounded size"):
+        with self.assertRaisesRegex(ValueError, "invalid session next action"):
             build_session_record(
                 {**meta(), "next_action": "x" * MAX_SESSION_BYTES}, "update", "now"
             )
         with self.assertRaisesRegex(ValueError, "unknown session trigger"):
             build_session_record(meta(), "claim", "now")
+        oversized = build_session_record(meta(), "update", "now")
+        oversized["artifact_refs"] = ["x" * MAX_SESSION_BYTES]
+        with self.assertRaisesRegex(ValueError, "exceeds bounded size"):
+            from tools.session_records import validate_session_record
+
+            validate_session_record(oversized)
 
     def test_rejects_each_malformed_record_boundary(self) -> None:
         valid = build_session_record(meta(), "update", "now")
         cases: tuple[tuple[dict[str, object], str], ...] = (
             ({"extra": True}, "fields are not exact"),
             ({"schema_version": 2}, "unsupported session"),
+            ({"schema_version": True}, "unsupported session"),
             ({"task": "bad"}, "invalid session record task"),
             ({"task_revision": 0}, "invalid session record revision"),
+            ({"task_revision": True}, "invalid session record revision"),
+            ({"recorded_at": ""}, "invalid session record timestamp"),
             ({"trigger": "claim"}, "invalid session record trigger"),
             ({"status": ""}, "invalid session record status"),
             ({"context_digest": "sha256:bad"}, "invalid session context digest"),
             ({"step_state": {}}, "invalid session step state"),
+            (
+                {"step_state": {"status": "blocked", "task_revision": 1}},
+                "step status differs",
+            ),
+            (
+                {"step_state": {"status": "in_progress", "task_revision": 2}},
+                "step revision differs",
+            ),
+            (
+                {"step_state": {"status": "in_progress", "task_revision": True}},
+                "invalid session step revision",
+            ),
             ({"artifact_refs": [""]}, "invalid session artifact refs"),
+            ({"artifact_refs": ["ref"] * 9}, "invalid session artifact refs"),
             ({"next_action": "line\nbreak"}, "invalid session next action"),
+            ({"next_action": "x" * 1025}, "invalid session next action"),
         )
         for changes, message in cases:
             candidate = dict(valid)
@@ -130,6 +153,31 @@ class SessionRecordTests(unittest.TestCase):
             path.write_text("\n".join(json.dumps(record) for _ in range(MAX_SESSION_RECORDS + 1)))
             with self.assertRaisesRegex(ValueError, "retention"):
                 decode_session_lines(path)
+
+    def test_history_binds_task_identity_and_unique_revisions(self) -> None:
+        record = build_session_record(meta(), "update", "now")
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "AR-0001.jsonl"
+            wrong_task = dict(record, task="AR-0002")
+            path.write_text(json.dumps(wrong_task) + "\n")
+            with self.assertRaisesRegex(ValueError, "task differs from history"):
+                decode_session_lines(path)
+            path.write_text(json.dumps(record) + "\n" + json.dumps(record) + "\n")
+            with self.assertRaisesRegex(ValueError, "duplicate session revision"):
+                decode_session_lines(path)
+            path.write_text(json.dumps(record) + "\n")
+            with self.assertRaisesRegex(ValueError, "expected session task"):
+                decode_session_lines(path, "invalid")
+
+    def test_append_rejects_duplicate_revision_before_replacement(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            record = build_session_record(meta(), "update", "now")
+            path = append_session_record(root, record)
+            before = path.read_bytes()
+            with self.assertRaisesRegex(ValueError, "duplicate session revision"):
+                append_session_record(root, record)
+            self.assertEqual(before, path.read_bytes())
 
 
 if __name__ == "__main__":

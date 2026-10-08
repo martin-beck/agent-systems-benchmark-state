@@ -11,20 +11,7 @@ from pathlib import Path
 from typing import Any
 
 EVIDENCE_CLASSES = frozenset(
-    {
-        "mechanical",
-        "contract-test",
-        "property-or-fuzz",
-        "bounded-model",
-        "environmental",
-        # Downstream ASB qualification labels retained by the project
-        # profile; these do not relax acceptance gates.
-        "hosted",
-        "offline",
-        "privacy",
-        "journey",
-        "quality",
-    }
+    {"mechanical", "contract-test", "property-or-fuzz", "bounded-model", "environmental"}
 )
 SPEC_REF = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._/-]{2,255}$")
 TOOL_REF = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:/-]{0,127}$")

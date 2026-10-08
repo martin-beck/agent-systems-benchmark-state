@@ -4,6 +4,7 @@
 """Create and verify self-contained handoffctl vendor snapshots."""
 
 import argparse
+import ast
 import hashlib
 import json
 import os
@@ -43,12 +44,14 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("tools/upgrade_binding.py", "tools/upgrade_binding.py"),
     ("tools/production_upgrade_binding.py", "tools/production_upgrade_binding.py"),
     ("tools/upgrade_contract_runtime.py", "tools/upgrade_contract_runtime.py"),
+    ("tools/tlc_runner.py", "tools/tlc_runner.py"),
     ("tools/vendor.py", "tools/handoffctl_vendor.py"),
     ("tests/test_handoffctl.py", "tests/test_handoffctl.py"),
     ("tests/test_sqlite_storage.py", "tests/test_sqlite_storage.py"),
     ("tests/test_session_records.py", "tests/test_session_records.py"),
     ("tests/test_checkpoint_records.py", "tests/test_checkpoint_records.py"),
     ("tests/test_hierarchy.py", "tests/test_hierarchy.py"),
+    ("tests/test_tlc_runner.py", "tests/test_tlc_runner.py"),
     (
         "schema/project-config.schema.json",
         "schema/handoffctl-project-config.schema.json",
@@ -80,10 +83,36 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ),
     ("schema/task-record.schema.json", "schema/task-record.schema.json"),
     ("docs/PROJECT_GUIDE.md", "docs/agent-workflow-coordinator.md"),
+    ("formal/evidence.json", "formal/evidence.json"),
+    ("formal/tier-evidence.json", "formal/tier-evidence.json"),
+    ("formal/handoffctl/Handoffctl.cfg", "formal/handoffctl/Handoffctl.cfg"),
+    ("formal/handoffctl/Handoffctl.tla", "formal/handoffctl/Handoffctl.tla"),
+    ("formal/handoffctl/HandoffctlBinding.cfg", "formal/handoffctl/HandoffctlBinding.cfg"),
+    ("formal/handoffctl/HandoffctlBinding.tla", "formal/handoffctl/HandoffctlBinding.tla"),
+    ("formal/handoffctl/HandoffctlFast.cfg", "formal/handoffctl/HandoffctlFast.cfg"),
+    ("formal/handoffctl/HandoffctlLocks.cfg", "formal/handoffctl/HandoffctlLocks.cfg"),
+    ("formal/handoffctl/HandoffctlLocks.tla", "formal/handoffctl/HandoffctlLocks.tla"),
+    ("formal/handoffctl/HandoffctlPR.cfg", "formal/handoffctl/HandoffctlPR.cfg"),
+    ("formal/handoffctl/HandoffctlRecovery.cfg", "formal/handoffctl/HandoffctlRecovery.cfg"),
+    ("formal/handoffctl/HandoffctlRecovery.tla", "formal/handoffctl/HandoffctlRecovery.tla"),
+    ("formal/handoffctl/HandoffctlRun.cfg", "formal/handoffctl/HandoffctlRun.cfg"),
+    ("formal/handoffctl/HandoffctlRun.tla", "formal/handoffctl/HandoffctlRun.tla"),
+    ("formal/handoffctl/HandoffctlStorage.cfg", "formal/handoffctl/HandoffctlStorage.cfg"),
+    ("formal/handoffctl/HandoffctlStorage.tla", "formal/handoffctl/HandoffctlStorage.tla"),
+    (
+        "formal/handoffctl/LIFECYCLE_CORRESPONDENCE.md",
+        "formal/handoffctl/LIFECYCLE_CORRESPONDENCE.md",
+    ),
+    ("formal/handoffctl/README.md", "formal/handoffctl/README.md"),
+    ("formal/handoffctl/attest.py", "formal/handoffctl/attest.py"),
+    ("formal/handoffctl/verify.sh", "formal/handoffctl/verify.sh"),
+    ("formal/oracle/OracleInteractionGates.cfg", "formal/oracle/OracleInteractionGates.cfg"),
+    ("formal/oracle/OracleInteractionGates.tla", "formal/oracle/OracleInteractionGates.tla"),
     ("LICENSE", "vendor/agent-workflow-coordinator/LICENSE"),
 )
 VERSION_PATTERN = re.compile(r"v\d+\.\d+\.\d+")
 COMMIT_PATTERN = re.compile(r"[0-9a-f]{40}")
+RUNTIME_VERSION_PATTERN = re.compile(r"^COORDINATOR_VERSION = \"(\d+\.\d+\.\d+)\"$", re.MULTILINE)
 
 
 def sha256(path: Path) -> str:
@@ -123,6 +152,17 @@ def git_output(source: Path, *args: str) -> str:
     return result.stdout.strip()
 
 
+def git_bytes(source: Path, *args: str) -> bytes:
+    """Read immutable Git object bytes with a bounded subprocess."""
+    result = subprocess.run(
+        ["git", "-C", str(source), *args],
+        check=True,
+        capture_output=True,
+        timeout=30,
+    )
+    return result.stdout
+
+
 def release_identity(source: Path, version: str) -> str:
     """Require a clean source tree whose HEAD carries the requested release tag."""
     if not VERSION_PATTERN.fullmatch(version):
@@ -136,6 +176,49 @@ def release_identity(source: Path, version: str) -> str:
     if not COMMIT_PATTERN.fullmatch(commit):
         raise RuntimeError("upstream HEAD is not a full commit identifier")
     return commit
+
+
+def development_identity(source: Path, commit: str) -> str:
+    """Bind an untagged development snapshot to one clean exact commit and tree."""
+    if not COMMIT_PATTERN.fullmatch(commit):
+        raise RuntimeError("development commit must be a full commit identifier")
+    top_level = Path(git_output(source, "rev-parse", "--show-toplevel")).resolve()
+    if top_level != source.resolve():
+        raise RuntimeError("development source must be the Git worktree root")
+    if git_output(source, "status", "--porcelain"):
+        raise RuntimeError("upstream source must be clean before vendoring")
+    head = git_output(source, "rev-parse", "HEAD")
+    if head != commit:
+        raise RuntimeError("upstream HEAD differs from the requested development commit")
+    tree = git_output(source, "rev-parse", "HEAD^{tree}")
+    if not COMMIT_PATTERN.fullmatch(tree):
+        raise RuntimeError("upstream development tree is not a full object identifier")
+    return tree
+
+
+def runtime_version(content: bytes) -> str:
+    """Read the Coordinator version from one immutable runtime payload."""
+    try:
+        runtime = content.decode("utf-8")
+    except UnicodeDecodeError as error:
+        raise RuntimeError("coordinator runtime is not UTF-8") from error
+    version_match = RUNTIME_VERSION_PATTERN.search(runtime)
+    if version_match is None:
+        raise RuntimeError("cannot determine coordinator runtime version")
+    return f"v{version_match.group(1)}"
+
+
+def git_blob_payload(source: Path, commit: str, source_name: str) -> tuple[bytes, int]:
+    """Return one regular file payload and mode from an exact commit tree."""
+    record = git_output(source, "ls-tree", commit, "--", source_name)
+    try:
+        metadata, name = record.split("\t", 1)
+        mode, kind, _object_id = metadata.split(" ", 2)
+    except ValueError as error:
+        raise RuntimeError(f"invalid Git tree entry: {source_name}") from error
+    if name != source_name or kind != "blob" or mode not in {"100644", "100755"}:
+        raise RuntimeError(f"vendor source is not a regular committed file: {source_name}")
+    return git_bytes(source, "cat-file", "blob", f"{commit}:{source_name}"), int(mode[-3:], 8)
 
 
 def build_lock(source: Path, version: str, commit: str) -> dict[str, Any]:
@@ -155,6 +238,47 @@ def build_lock(source: Path, version: str, commit: str) -> dict[str, Any]:
         },
         "files": files,
     }
+
+
+def development_snapshot(
+    source: Path, commit: str
+) -> tuple[dict[str, Any], dict[str, tuple[bytes, int]]]:
+    """Build one exact development manifest and its immutable Git payloads."""
+    tree = development_identity(source, commit)
+    payloads = {
+        source_name: git_blob_payload(source, commit, source_name)
+        for source_name, _destination_name in SOURCE_FILES
+    }
+    try:
+        version = runtime_version(payloads["tools/handoffctl.py"][0])
+    except KeyError as error:
+        raise RuntimeError("development snapshot omits tools/handoffctl.py") from error
+    files = {
+        destination_name: {
+            "source": source_name,
+            "sha256": hashlib.sha256(payloads[source_name][0]).hexdigest(),
+        }
+        for source_name, destination_name in SOURCE_FILES
+    }
+    return (
+        {
+            "schema_version": 2,
+            "upstream": {
+                "repository": UPSTREAM_REPOSITORY,
+                "version": version,
+                "commit": commit,
+                "channel": "development",
+                "tree": tree,
+            },
+            "files": files,
+        },
+        payloads,
+    )
+
+
+def build_development_lock(source: Path, commit: str) -> dict[str, Any]:
+    """Build a manifest explicitly classified as an exact development snapshot."""
+    return development_snapshot(source, commit)[0]
 
 
 def install_staged_snapshot(staged: Path, target: Path, destinations: list[str]) -> None:
@@ -183,21 +307,40 @@ def install_staged_snapshot(staged: Path, target: Path, destinations: list[str])
         raise
 
 
-def sync(source: Path, target: Path, version: str, commit: str) -> None:
-    """Stage and transactionally install an allowlisted immutable release."""
-    manifest = build_lock(source, version, commit)
+def install_snapshot(
+    source: Path,
+    target: Path,
+    manifest: dict[str, Any],
+    payloads: dict[str, tuple[bytes, int]] | None = None,
+) -> None:
+    """Stage and transactionally install one prevalidated vendor manifest."""
     target.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix=".handoffctl-vendor-", dir=target) as temporary:
         staged = Path(temporary)
         for source_name, destination_name in SOURCE_FILES:
-            source_path = source / source_name
-            mode = source_path.stat().st_mode & 0o777
-            atomic_bytes(staged / destination_name, source_path.read_bytes(), mode)
+            if payloads is None:
+                source_path = source / source_name
+                content = source_path.read_bytes()
+                mode = source_path.stat().st_mode & 0o777
+            else:
+                content, mode = payloads[source_name]
+            atomic_bytes(staged / destination_name, content, mode)
         payload = json.dumps(manifest, indent=2, sort_keys=True).encode() + b"\n"
         atomic_bytes(staged / LOCK_NAME, payload)
         destinations = [destination for _, destination in SOURCE_FILES]
+        verify(staged)
         install_staged_snapshot(staged, target, [*destinations, LOCK_NAME])
-    verify(target)
+
+
+def sync(source: Path, target: Path, version: str, commit: str) -> None:
+    """Stage and transactionally install an allowlisted immutable release."""
+    install_snapshot(source, target, build_lock(source, version, commit))
+
+
+def sync_development(source: Path, target: Path, commit: str) -> None:
+    """Install a clean untagged development head with exact commit and tree identity."""
+    manifest, payloads = development_snapshot(source, commit)
+    install_snapshot(source, target, manifest, payloads)
 
 
 def load_lock(target: Path) -> dict[str, Any]:
@@ -209,16 +352,18 @@ def load_lock(target: Path) -> dict[str, Any]:
         raise RuntimeError(f"cannot read {LOCK_NAME}: {error}") from error
     if not isinstance(value, dict) or set(value) != {"schema_version", "upstream", "files"}:
         raise RuntimeError("invalid vendor lock structure")
-    if value["schema_version"] != 1:
+    if value["schema_version"] not in {1, 2}:
         raise RuntimeError("unsupported vendor lock schema")
     return value
 
 
-def verify(target: Path) -> None:
-    """Fail unless every pinned downstream artifact matches its recorded digest."""
-    manifest = load_lock(target)
+def validated_upstream_identity(manifest: dict[str, Any]) -> dict[str, Any]:
+    """Return one strict release or development upstream identity."""
     upstream = manifest["upstream"]
-    if not isinstance(upstream, dict) or set(upstream) != {"repository", "version", "commit"}:
+    expected_upstream = {"repository", "version", "commit"}
+    if manifest["schema_version"] == 2:
+        expected_upstream.update({"channel", "tree"})
+    if not isinstance(upstream, dict) or set(upstream) != expected_upstream:
         raise RuntimeError("invalid upstream identity in vendor lock")
     if upstream["repository"] != UPSTREAM_REPOSITORY:
         raise RuntimeError("unexpected upstream repository")
@@ -226,6 +371,68 @@ def verify(target: Path) -> None:
         str(upstream["commit"])
     ):
         raise RuntimeError("invalid pinned upstream version or commit")
+    if manifest["schema_version"] == 2 and (
+        upstream["channel"] != "development" or not COMMIT_PATTERN.fullmatch(str(upstream["tree"]))
+    ):
+        raise RuntimeError("invalid development channel or tree identity")
+    return upstream
+
+
+def _literal_string_tuple(tree: ast.Module, name: str) -> set[str]:
+    """Read one exact tuple of string literals without executing vendored code."""
+    for statement in tree.body:
+        if (
+            isinstance(statement, ast.Assign)
+            and any(
+                isinstance(target, ast.Name) and target.id == name for target in statement.targets
+            )
+            and isinstance(statement.value, (ast.Tuple, ast.List))
+        ):
+            values = statement.value.elts
+            literals: set[str] = set()
+            for value in values:
+                if not isinstance(value, ast.Constant) or not isinstance(value.value, str):
+                    break
+                literals.add(value.value)
+            else:
+                return literals
+    raise RuntimeError("formal lifecycle runtime inventory is missing or malformed")
+
+
+def verify_formal_lifecycle_alignment(target: Path) -> None:
+    """Reject a vendor snapshot whose runtime and lifecycle model actions drift."""
+    try:
+        runtime = ast.parse((target / "tools/handoffctl.py").read_text(encoding="utf-8"))
+        model = (target / "formal/handoffctl/Handoffctl.tla").read_text(encoding="utf-8")
+    except (OSError, SyntaxError) as error:
+        raise RuntimeError("formal lifecycle inputs are unreadable") from error
+    runtime_operations = _literal_string_tuple(runtime, "LIFECYCLE_MUTATION_COMMANDS")
+    blocks = re.findall(
+        r"(?:ReleaseOperations|Operations)\s*==\s*(.*?)(?=\n\n[A-Za-z])",
+        model,
+        flags=re.DOTALL,
+    )
+    if len(blocks) < 2:
+        raise RuntimeError("formal lifecycle operation inventory is missing or malformed")
+    modeled = set(re.findall(r'"([a-z_]+)"', "\n".join(blocks[:2])))
+    model_operations = {
+        (
+            "release"
+            if item.startswith("release_")
+            else "recover-expired"
+            if item == "recover_expired"
+            else item
+        )
+        for item in modeled
+    }
+    if runtime_operations != model_operations:
+        raise RuntimeError("formal lifecycle operation drift")
+
+
+def verify(target: Path) -> None:
+    """Fail unless every pinned downstream artifact matches its recorded digest."""
+    manifest = load_lock(target)
+    upstream = validated_upstream_identity(manifest)
     files = manifest["files"]
     expected = {destination: source for source, destination in SOURCE_FILES}
     if not isinstance(files, dict) or set(files) != set(expected):
@@ -240,6 +447,8 @@ def verify(target: Path) -> None:
     expected_version = str(upstream["version"]).removeprefix("v")
     if f'COORDINATOR_VERSION = "{expected_version}"' not in core:
         raise RuntimeError("runtime version differs from vendor lock")
+    if "formal/handoffctl/Handoffctl.tla" in expected:
+        verify_formal_lifecycle_alignment(target)
     print(f"OK: agent-workflow-coordinator {upstream['version']} at {upstream['commit']}")
 
 
@@ -250,12 +459,20 @@ def main() -> int:
     sync_parser.add_argument("--source", type=Path, required=True)
     sync_parser.add_argument("--target", type=Path, required=True)
     sync_parser.add_argument("--version", required=True)
+    development_parser = commands.add_parser(
+        "sync-development", help="vendor a clean local development head at one exact commit"
+    )
+    development_parser.add_argument("--source", type=Path, required=True)
+    development_parser.add_argument("--target", type=Path, required=True)
+    development_parser.add_argument("--commit", required=True)
     verify_parser = commands.add_parser("verify", help="verify an existing offline vendor pin")
     verify_parser.add_argument("--target", type=Path, default=Path.cwd())
     args = parser.parse_args()
     if args.command == "sync":
         commit = release_identity(args.source, args.version)
         sync(args.source, args.target, args.version, commit)
+    elif args.command == "sync-development":
+        sync_development(args.source, args.target, args.commit)
     else:
         verify(args.target)
     return 0
