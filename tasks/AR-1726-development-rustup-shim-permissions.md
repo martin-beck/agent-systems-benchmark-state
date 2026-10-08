@@ -9,7 +9,7 @@
     "AR-1637"
   ],
   "id": "AR-1726",
-  "next_action": "Wait for all required exact-main workflows at signed merge 736a65cd8904b8f4a6f1715fc86ae1c854fe2232 to become terminal green; then record acceptance evidence, release done, reconcile, snapshot, and doctor.",
+  "next_action": "Rerun failed exact-main Emulated aarch64 workflow 37712243495 after its unrelated Goose symlink fixture returned a normal failed outcome instead of the expected setup error; if it repeats, isolate and repair the flaky fixture before closing AR-1726. Also await Repository quality.",
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "acd7a146babaf39371e4cabe04dd2aa084df8c6c",
@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T01:19:05+00:00",
+  "updated_at": "2026-10-08T01:25:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -505,3 +505,9 @@ review, protected merge, and terminal-green post-merge CI.
   736a65cd8904b8f4a6f1715fc86ae1c854fe2232 with exact base 457317b21dbe300907ba7889ff68a16514fcd5c5,
   head acd7a146babaf39371e4cabe04dd2aa084df8c6c, and tree cd964a0fb4d938ef68fc654ca7706be72eb9dbd9;
   origin/main and GitHub merge object match. Await exact-main post-merge CI.
+
+- 2026-10-08T01:25:35+00:00: Post-merge main 736a65c has seven protected workflows green; Emulated
+  aarch64 failed only at goose::tests::diagnostic_and_symlink_fail_closed because unwrap_err
+  observed Ok(GooseOutcome status Failed exit 127). The same exact-head PR workflow passed, and
+  AR-1726 does not modify Goose; classify as suspected nondeterministic fixture pending exact-main
+  rerun, not as success.

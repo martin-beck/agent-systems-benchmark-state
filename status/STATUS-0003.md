@@ -451,7 +451,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. |
-| Next action | Wait for all required exact-main workflows at signed merge 736a65cd8904b8f4a6f1715fc86ae1c854fe2232 to become terminal green; then record acceptance evidence, release done, reconcile, snapshot, and doctor. |
+| Next action | Rerun failed exact-main Emulated aarch64 workflow 37712243495 after its unrelated Goose symlink fixture returned a normal failed outcome instead of the expected setup error; if it repeats, isolate and repair the flaky fixture before closing AR-1726. Also await Repository quality. |
 
 ### AR-1727 — Repair development broker foreground-terminal handoff
 
