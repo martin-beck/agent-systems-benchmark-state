@@ -588,12 +588,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1744](../tasks/AR-1744-make-test-scratch-isolation.md): Repair make test scratch-root isolation | codex-ar1744-make-test | Merged PR #511 and verified exact protected main; all required post-merge workflows are green. | Release AR-1744 done, reconcile state, and run doctor --live. |
-
 ### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -642,3 +636,4 @@
 | P0 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Unclaimed | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. |
 | P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Unclaimed | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await signed or attested immutable TLA+ v1.8.0 provenance, or deterministic source-build qualification for 142d0ba; do not update hash only. |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. | Use the generated-seed unsigned-development path for provider-free runner and integration tests, recording qualification_authorized=false. Do not wait on archival seed recovery; create a separate formal-only successor only if signed publication qualification is explicitly requested. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Runner implementation remains blocked for its unrelated formal CI OOM/publication transition, but development execution no longer depends on a reviewed seed digest. The explicit unsigned-development profile accepts locally generated disposable seeds and remains qualification_authorized=false. | No further unsigned-development action remains: AR-1532/1542 and the AR-1536 handoff provide the provider-free diagnostic evidence. Keep this AR blocked only for separately authorized formal/publication qualification with reviewed inputs. |

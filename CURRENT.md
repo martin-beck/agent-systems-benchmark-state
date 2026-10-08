@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1744](tasks/AR-1744-make-test-scratch-isolation.md): Repair make test scratch-root isolation | Merged PR #511 and verified exact protected main; all required post-merge workflows are green. | Release AR-1744 done, reconcile state, and run doctor --live. | codex-ar1744-make-test |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |

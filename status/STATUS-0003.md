@@ -695,11 +695,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1744-make-test |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Merged PR #511 and verified exact protected main; all required post-merge workflows are green. |
@@ -1521,7 +1521,7 @@ flowchart LR
         AR_1741["AR-1741 - Done"]:::status_done
         AR_1742["AR-1742 - Open"]:::status_open
         AR_1743["AR-1743 - Done"]:::status_done
-        AR_1744["AR-1744 - In progress"]:::status_in_progress
+        AR_1744["AR-1744 - Done"]:::status_done
         AR_1745["AR-1745 - Done"]:::status_done
     end
     AR_0001 --> AR_0002

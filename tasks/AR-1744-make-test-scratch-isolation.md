@@ -2,14 +2,14 @@
 {
   "branch": "repair/ar-1744-make-test-scratch-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T15:43:15+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1744",
   "next_action": "Release AR-1744 done, reconcile state, and run doctor --live.",
   "observed_branch": "repair/ar-1744-make-test-scratch-isolation",
   "observed_dirty": 0,
   "observed_head": "3a14e8846af46792e2dd1c15a0b50343ec7fc1d8",
-  "owner": "codex-ar1744-make-test",
+  "owner": "",
   "plan": "../plans/AR-1744-make-test-scratch-isolation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1744.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Merged PR #511 and verified exact protected main; all required post-merge workflows are green.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T14:48:58+00:00",
+  "updated_at": "2026-10-08T14:49:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -332,3 +332,6 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 
 - 2026-10-08T14:48:58+00:00: Accepted exact protected-main merge and post-merge CI receipt for
   AR-1744.
+
+- 2026-10-08T14:49:06+00:00: AR-1744 complete: PR #511 merged at
+  5e8e5b7fdb04a50950e0790d9d66c605e7978606 and all exact-main required workflows passed.
