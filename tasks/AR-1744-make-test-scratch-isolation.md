@@ -23,7 +23,7 @@
   },
   "spec_ref": "specs/AR-1744.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "planned",
   "summary": "Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory.",
   "task_revision": 1,
   "title": "Repair make test scratch-root isolation",
