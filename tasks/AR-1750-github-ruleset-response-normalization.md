@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T21:34:33+00:00",
+  "updated_at": "2026-10-08T21:36:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -175,3 +175,6 @@ ruleset, and never retry an ambiguous mutation blindly.
   no-PUT/no-PATCH tests. Signed+DCO replacement head published with exact-head policy, DCO, Ruff,
   focused 34/34, tools/signature/header/contract, fmt/clippy, supply-chain, workflow and gitleaks
   gates green; hosted checks restarted.
+
+- 2026-10-08T21:36:31+00:00: Recorded command exit 0; command argv SHA-256
+  7ba50d9a6a382d010680d9786160bbd7241b457ff601d15b6767cd9652b1d853.
