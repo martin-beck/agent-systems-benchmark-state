@@ -8,7 +8,7 @@
     "AR-1727"
   ],
   "id": "AR-1734",
-  "next_action": "Claim in an isolated ASB worktree; reproduce the AR-1713 installed-launch failure, then pass only validated development tool identities across the scrubbed broker environment with hostile replacement tests.",
+  "next_action": "Independently review PR #502 exact head 40f618b9389c594c4274bc08195f93f3cd2dd547 and tree e5c4645c9e4384fb57424eaa42139a99b78c5c69; complete hostile tool/descriptor and installed-TUI qualification, verify signed+DCO and all exact-head hosted checks, then record approval or precise repair action without merging.",
   "observed_branch": "repair/ar-1734-development-tui-tool-environment",
   "observed_dirty": 0,
   "observed_head": "40f618b9389c594c4274bc08195f93f3cd2dd547",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T02:22:23+00:00",
+  "updated_at": "2026-10-08T02:22:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1734-development-tui-tool-environment"
 }
 ---
@@ -192,3 +192,6 @@ and production policy remains fail closed and unchanged.
   independent review.
 
 - 2026-10-08T02:22:23+00:00: Claimed by codex-ar1734-pr502-review.
+
+- 2026-10-08T02:22:32+00:00: Replaced stale implementation action with the exact immutable review,
+  qualification, and hosted-CI action after reconciliation.
