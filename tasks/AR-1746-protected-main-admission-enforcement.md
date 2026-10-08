@@ -8,7 +8,7 @@
     "AR-1431"
   ],
   "id": "AR-1746",
-  "next_action": "Promote and claim after verifying the current GitHub settings/ruleset snapshot; apply and audit the checked-in protected-main contract without changing product source or weakening development review policy.",
+  "next_action": "Require all exact-main post-merge workflows for 2f52ecbaf79ae8316e0c2a42ad4c4a79dae5d9eb terminal-success, then invoke the merged typed settings apply once and audit normalized live state; stop on any rejected, partial, or ambiguous result.",
   "observed_branch": "repair/ar-1746-protected-main-admission",
   "observed_dirty": 0,
   "observed_head": "fee04c29616b56cac8c54f1afd4539bedce7dee2",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Apply and independently verify ASB's merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Enforce protected-main admission for AR-1722 recovery",
-  "updated_at": "2026-10-08T16:51:18+00:00",
+  "updated_at": "2026-10-08T16:51:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1746-protected-main-admission"
 }
 ---
@@ -120,3 +120,11 @@ mandatory.
 
 - 2026-10-08T16:51:18+00:00: Recorded command exit 0; command argv SHA-256
   ff075de826de3ad7f165284e3dd2940bdb8cf2bb618eb81301a27055ede844a7.
+
+- 2026-10-08T16:51:58+00:00: PR #513 exact reviewed head
+  fee04c29616b56cac8c54f1afd4539bedce7dee2/tree aeb7841fc289b938e709aa87ecfecf3ae7cbd892 passed
+  14/14 hosted checks and independent review. Local signed merge
+  2f52ecbaf79ae8316e0c2a42ad4c4a79dae5d9eb has parents 5e8e5b7fdb04a50950e0790d9d66c605e7978606 and
+  fee04c29616b56cac8c54f1afd4539bedce7dee2, preserves exact reviewed tree
+  aeb7841fc289b938e709aa87ecfecf3ae7cbd892, and passes allowed SSH signature plus matching DCO
+  verification.
