@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1746-protected-main-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T18:17:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1427",
     "AR-1431"
@@ -12,17 +12,17 @@
   "observed_branch": "repair/ar-1746-protected-main-admission",
   "observed_dirty": 0,
   "observed_head": "fee04c29616b56cac8c54f1afd4539bedce7dee2",
-  "owner": "ar1746_protected_main_admission_20261008",
+  "owner": "",
   "plan": "../plans/AR-1746-protected-main-admission-enforcement.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1746.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Apply and independently verify ASB's merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Enforce protected-main admission for AR-1722 recovery",
-  "updated_at": "2026-10-08T17:20:11+00:00",
+  "updated_at": "2026-10-08T17:20:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1746-protected-main-admission"
 }
 ---
@@ -146,3 +146,11 @@ mandatory.
 
 - 2026-10-08T17:20:11+00:00: Recorded command exit 0; command argv SHA-256
   e85f35d7b680e1e5a6eb3bc5c537033b82293cbff0f6a036db7dbb3bf4b73565.
+
+- 2026-10-08T17:20:56+00:00: Single exact-main apply rejected atomically: create
+  protected-main-ruleset category=validation HTTP=422 effect=rejected exit=1 message=Validation
+  Failed. Two consecutive audits and normalized readback prove unchanged settings and zero rulesets;
+  no partial mutation and no retry. Privacy-safe receipt
+  quality/AR-1746-protected-main-admission-blocked-receipt.txt at SHA-256
+  db87ee0b12b6eef855de22a9464958a0bbf0ea02377588d51860b219e7c6f074. Requires reviewed
+  payload/platform-capability repair before any new apply.

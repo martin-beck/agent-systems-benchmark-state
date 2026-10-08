@@ -595,12 +595,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md): Enforce protected-main admission for AR-1722 recovery | ar1746_protected_main_admission_20261008 | Apply and independently verify ASB&#x27;s merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub. | Require all exact-main post-merge workflows for 2f52ecbaf79ae8316e0c2a42ad4c4a79dae5d9eb terminal-success, then invoke the merged typed settings apply once and audit normalized live state; stop on any rejected, partial, or ambiguous result. |
-
 ### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -612,7 +606,7 @@
 | P1 | [AR-1728](../tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Unclaimed | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
 | P1 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md): Harden Goose diagnostic fixture determinism | Unclaimed | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. | Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics. |
 
-### Blocked (86)
+### Blocked (87)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -644,3 +638,5 @@
 | P0 | [AR-1278](../tasks/AR-1278-primary-runtime-client.md): Primary replay runtime client handoff | Unclaimed | Connect the primary replay command to the runtime-issued transport client. | Promote after dependency verification; hand the runtime-issued replay client into primary argument dispatch and prove supervised lifecycle behavior. |
 | P0 | [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md): End-to-end primary replay runtime handoff | Unclaimed | Implement end-to-end runtime-owned execution for primary strict replay. | Promote after dependency verification; implement transport plus primary runtime-client handoff from protected main and prove full supervised lifecycle. |
 | P0 | [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md): Cross-crate replay process entrypoint | Unclaimed | Implement the cross-crate runtime process entrypoint for primary strict replay. | Extend replay-plan dispatch to invoke runtime-owned supervised process with argument-level command and cassette service; preserve denied egress/no-fallback and add lifecycle fault tests. Current signed head f92a86b provides bridge/binding baseline. |
+| P0 | [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md): Supervised cassette lifecycle execution | Unclaimed | Execute primary strict replay through a supervised runtime cassette lifecycle. | Promote after dependency verification; implement the complete supervised cassette path and lifecycle fault matrix from protected main. |
+| P0 | [AR-1283](../tasks/AR-1283-formal-lockfile.md): Formal lockfile CI drift repair | Unclaimed | Repair formal workspace lockfile drift that fails the locked CI gate. | Promote after dependency verification; regenerate and verify formal/Cargo.lock so hosted --locked formal tests do not attempt updates. |

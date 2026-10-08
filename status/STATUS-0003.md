@@ -723,11 +723,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1746_protected_main_admission_20261008 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Apply and independently verify ASB&#x27;s merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub. |
@@ -1551,7 +1551,7 @@ flowchart LR
         AR_1743["AR-1743 - Done"]:::status_done
         AR_1744["AR-1744 - Done"]:::status_done
         AR_1745["AR-1745 - Done"]:::status_done
-        AR_1746["AR-1746 - In progress"]:::status_in_progress
+        AR_1746["AR-1746 - Blocked"]:::status_blocked
         AR_1747["AR-1747 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
