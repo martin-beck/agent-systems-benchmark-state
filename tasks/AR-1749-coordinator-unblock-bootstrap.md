@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Bootstrap canonical Coordinator unblock vendor adoption",
-  "updated_at": "2026-10-08T19:30:51+00:00",
+  "updated_at": "2026-10-08T19:33:11+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1749-coordinator-unblock-bootstrap"
 }
 ---
@@ -194,3 +194,6 @@ review, hosted CI, and signed local integration remain mandatory.
 
 - 2026-10-08T19:30:51+00:00: Recorded command exit 1; command argv SHA-256
   4fc88ee1a8397c8507f703b4a9d284589e3022335c78a26122d5238a8a15e087.
+
+- 2026-10-08T19:33:11+00:00: Recorded command exit 1; command argv SHA-256
+  a79d59bb90b6817afde2bca464092b7de0ae88ca2fb5973bdb176f24bd24a354.
