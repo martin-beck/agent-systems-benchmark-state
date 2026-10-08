@@ -27,10 +27,10 @@ Generated from local Git and GitHub. Do not edit.
 | 37833613495 | `b58217d9ec54` | push | Formal assurance | completed:success |
 | 37833613426 | `b58217d9ec54` | push | Fault assurance | completed:success |
 | 37833613360 | `b58217d9ec54` | push | Credential-free benchmark path | completed:success |
-| 37833613342 | `b58217d9ec54` | push | Emulated aarch64 portability | in_progress:- |
-| 37833613322 | `b58217d9ec54` | push | Repository quality | in_progress:- |
+| 37833613342 | `b58217d9ec54` | push | Emulated aarch64 portability | completed:success |
+| 37833613322 | `b58217d9ec54` | push | Repository quality | completed:success |
 | 37833613297 | `b58217d9ec54` | push | Cross-repository development broker qualification | completed:success |
-| 37833613269 | `b58217d9ec54` | push | Rust verification | in_progress:- |
+| 37833613269 | `b58217d9ec54` | push | Rust verification | completed:success |
 | 37833613256 | `b58217d9ec54` | push | Portable protected-main provenance | completed:success |
 | 37833613253 | `b58217d9ec54` | push | Hosted portability and native qualification | completed:success |
 | 37832283787 | `7c3e9e3eca96` | pull_request | Hosted portability and native qualification | completed:success |
