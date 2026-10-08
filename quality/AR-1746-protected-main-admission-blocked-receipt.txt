@@ -1,0 +1,86 @@
+AR-1746 protected-main admission blocked receipt
+================================================
+
+Outcome
+-------
+
+AR-1746 is blocked. The single authorized live apply was rejected before any
+repository setting or ruleset mutation. No retry was attempted.
+
+Exact product identity
+----------------------
+
+- Repository: martin-beck/agent-systems-benchmark (GitHub repository ID
+  1359260742)
+- Exact merged main: 2f52ecbaf79ae8316e0c2a42ad4c4a79dae5d9eb
+- Tree: aeb7841fc289b938e709aa87ecfecf3ae7cbd892
+- Parents: 5e8e5b7fdb04a50950e0790d9d66c605e7978606 and
+  fee04c29616b56cac8c54f1afd4539bedce7dee2
+- Reviewed repair PR: #513
+- Independent review: approved exact head fee04c29616b56cac8c54f1afd4539bedce7dee2
+  and tree aeb7841fc289b938e709aa87ecfecf3ae7cbd892 with no findings
+
+Post-merge hosted evidence
+--------------------------
+
+All nine exact-main workflow classes passed at the merge identity. Successful
+run IDs were 37812026002, 37812024304, 37812024226, 37812024237, 37812024116,
+37812024096, 37812024109, 37812024426, and replacement aarch64 run
+37814017053. The original aarch64 run 37812024120 was infrastructure-stuck and
+cancelled; the replacement was workflow-dispatched at immutable exact main and
+completed successfully in 9m6s.
+
+Single live apply
+-----------------
+
+The exact merged repository_settings.py was invoked once with --apply through
+the claim-fenced coordinator workflow. It returned exit 1 with the bounded
+typed diagnostic:
+
+- operation: create protected-main-ruleset
+- category: validation
+- HTTP status: 422
+- effect: rejected
+- safe GitHub message: Validation Failed
+
+The diagnostic did not expose an endpoint, query, header, token, raw response,
+stderr, host path, or arbitrary response text.
+
+No-partial-mutation readback
+----------------------------
+
+Two consecutive post-failure audits both rejected the live state because the
+protected-publication ruleset is absent. Two bounded normalized API readbacks
+were identical:
+
+- allow_merge_commit: true
+- allow_squash_merge: true
+- allow_rebase_merge: true
+- allow_auto_merge: false
+- web_commit_signoff_required: false
+- rulesets: empty
+
+This equals the pre-apply normalized state, proving that the rejected ruleset
+creation did not partially change repository settings and did not create or
+delete any ruleset.
+
+Local contract evidence
+-----------------------
+
+- Focused and signature unit suites: 34/34 passed.
+- Independent hostile diagnostic slice: 17/17 passed.
+- Ruff check, diff-check, repository policy, signature, DCO, and cargo format
+  gates passed for the reviewed repair.
+- Fixtures cover 401, 403, 404, 409, 422, 5xx, network failure, bounded
+  redaction, partial apply, duplicate/foreign rulesets, and idempotent named
+  ruleset update.
+
+Disposition
+-----------
+
+The required live protected-main contract is not enforced, so AR-1746 cannot
+be released done and the ASB AR-1722 external-settings blocker is not cleared.
+AR-1746 must remain blocked pending a reviewed correction for the rejected
+GitHub ruleset payload or an authoritative platform capability decision. Any
+future apply requires a fresh claimed repair and exact review; this receipt
+does not authorize a blind retry or policy weakening.
