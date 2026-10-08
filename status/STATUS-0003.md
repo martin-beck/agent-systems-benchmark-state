@@ -717,7 +717,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make ASB development installation place the asb executable at the invoking user&#x27;s $HOME/.local/bin/asb by default, with a safe explicit prefix override. |
-| Next action | Audit the exact current-main install targets and define the shared user-local prefix contract before implementation. |
+| Next action | Open PR from reviewed signed head 250ef66, run exact-head hosted checks, then merge and verify protected-main post-merge workflows. |
 
 
 ## Dependency graph

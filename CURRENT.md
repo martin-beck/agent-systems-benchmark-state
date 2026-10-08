@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1744](tasks/AR-1744-make-test-scratch-isolation.md): Repair make test scratch-root isolation | Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory. | Reproduce the current-main make test failure and repair test scratch-root isolation. | codex-ar1744-make-test |
-| P0 | [AR-1745](tasks/AR-1745-user-local-install-prefix.md): Install ASB into the invoking user's local bin | Make ASB development installation place the asb executable at the invoking user's $HOME/.local/bin/asb by default, with a safe explicit prefix override. | Audit the exact current-main install targets and define the shared user-local prefix contract before implementation. | codex-ar1745-install |
+| P0 | [AR-1745](tasks/AR-1745-user-local-install-prefix.md): Install ASB into the invoking user's local bin | Make ASB development installation place the asb executable at the invoking user's $HOME/.local/bin/asb by default, with a safe explicit prefix override. | Open PR from reviewed signed head 250ef66, run exact-head hosted checks, then merge and verify protected-main post-merge workflows. | codex-ar1745-install |
 
 ## Open
 

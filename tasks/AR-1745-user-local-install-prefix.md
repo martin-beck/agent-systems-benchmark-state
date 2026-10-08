@@ -7,7 +7,7 @@
     "AR-1740"
   ],
   "id": "AR-1745",
-  "next_action": "Audit the exact current-main install targets and define the shared user-local prefix contract before implementation.",
+  "next_action": "Open PR from reviewed signed head 250ef66, run exact-head hosted checks, then merge and verify protected-main post-merge workflows.",
   "observed_branch": "feature/ar-1745-user-local-install-prefix",
   "observed_dirty": 0,
   "observed_head": "250ef6658e0cdaa3d8cea53bb009a0bbd88787d4",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB development installation place the asb executable at the invoking user's $HOME/.local/bin/asb by default, with a safe explicit prefix override.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Install ASB into the invoking user's local bin",
-  "updated_at": "2026-10-08T13:25:39+00:00",
+  "updated_at": "2026-10-08T13:26:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1745-user-local-install-prefix"
 }
 ---
@@ -81,3 +81,7 @@ clear PATH guidance when `$HOME/.local/bin` is not already on PATH.
 
 - 2026-10-08T13:25:39+00:00: Recorded command exit 0; command argv SHA-256
   31615385e59695400741f4436f46d12a893be41c3c5e31931fa259bd475f9229.
+
+- 2026-10-08T13:26:42+00:00: Independent review approved exact head
+  250ef6658e0cdaa3d8cea53bb009a0bbd88787d4. Focused tests and diff-check pass; symlink install and
+  cleanup escapes are covered.
