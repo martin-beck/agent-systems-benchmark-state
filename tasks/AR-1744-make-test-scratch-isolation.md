@@ -2,14 +2,14 @@
 {
   "branch": "repair/ar-1744-make-test-scratch-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T14:41:03+00:00",
   "depends_on": [],
   "id": "AR-1744",
   "next_action": "Reproduce the current-main make test failure and repair test scratch-root isolation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1744-make-test",
   "plan": "../plans/AR-1744-make-test-scratch-isolation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1744.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T12:40:57+00:00",
+  "updated_at": "2026-10-08T12:41:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -48,3 +48,5 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 
 - 2026-10-08T12:40:57+00:00: Dependencies verified; reproduce and repair current-main make test
   scratch isolation.
+
+- 2026-10-08T12:41:03+00:00: Claimed by codex-ar1744-make-test.

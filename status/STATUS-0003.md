@@ -695,11 +695,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1744-make-test |
 | Parent | None |
 | Children | None |
 | Summary | Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory. |
@@ -1507,7 +1507,7 @@ flowchart LR
         AR_1741["AR-1741 - Done"]:::status_done
         AR_1742["AR-1742 - Open"]:::status_open
         AR_1743["AR-1743 - Done"]:::status_done
-        AR_1744["AR-1744 - Open"]:::status_open
+        AR_1744["AR-1744 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
