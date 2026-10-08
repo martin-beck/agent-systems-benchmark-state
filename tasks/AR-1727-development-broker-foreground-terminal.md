@@ -7,7 +7,7 @@
     "AR-1590"
   ],
   "id": "AR-1727",
-  "next_action": "Repair PR #500 changed-foreground ownership race: revalidate the captured terminal foreground group under scoped SIGTTOU masking before tcsetpgrp, preserve the new owner on mismatch, restore the prior signal mask on every path, and add a real controlling-PTY changed-owner failure/cleanup regression; then rerun exact-head review and CI.",
+  "next_action": "Independently review PR #500 exact head 420b57d20a6c58eb52095cb344e3bf601ec8c2b2/tree bd5cc8111417b7b9031988b0c6e354db3354ac0f, verify the repaired foreground-owner and signal-mask invariants plus all terminal hosted checks, then repair findings or merge through signed integrity and watch post-merge CI.",
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:12:42+00:00",
+  "updated_at": "2026-10-08T00:13:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -246,3 +246,14 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-08T00:12:42+00:00: Recorded command exit 0; command argv SHA-256
   6b17d69ce88b76e4fdfbe8341ae0b4b27782d44011bc177f7a6cf26e13af7e69.
+
+- 2026-10-08T00:13:13+00:00: P1 repair is signed+DCO and pushed to PR #500 at exact head
+  420b57d20a6c58eb52095cb344e3bf601ec8c2b2/tree bd5cc8111417b7b9031988b0c6e354db3354ac0f. Assignment
+  blocks SIGTTOU, revalidates the captured caller group immediately before tcsetpgrp, restores the
+  prior mask, returns typed failure with bounded child-group cleanup on ownership drift, and cleanup
+  never overwrites an intervening foreground owner. Real controlling-PTY regressions cover
+  successful restore, capture-to-assignment drift, process reaping/root cleanup, and post-assignment
+  restore drift. Green: 39 development tests; full asb-cli 228 plus integrations; full workspace
+  tests; workspace Clippy -D warnings; fmt; rustdoc -D warnings; release build;
+  diff/privacy/safe-Rust audit. Hosted checks are running; fresh independent exact-head review is
+  required.
