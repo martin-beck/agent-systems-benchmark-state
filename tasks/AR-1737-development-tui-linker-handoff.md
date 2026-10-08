@@ -11,7 +11,7 @@
   "next_action": "Wait for independent exact-head review and PR #509 CI; fix any findings, merge reviewed green head, then run real source-built install/status/doctor/upgrade/bare launch/repeated remove and exact post-merge CI.",
   "observed_branch": "repair/ar-1737-development-tui-linker-handoff",
   "observed_dirty": 0,
-  "observed_head": "6d3298aa222c24dc4315af43ed16ba111443cb24",
+  "observed_head": "ad6957261a840395a8e3dd25cdfbf95408e86412",
   "owner": "codex-asb-ar1737-linker-handoff",
   "plan": "../plans/AR-1737-development-tui-linker-handoff.md",
   "priority": "P0",
@@ -20,9 +20,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Repair development TUI linker handoff",
-  "updated_at": "2026-10-08T10:25:36+00:00",
+  "updated_at": "2026-10-08T10:26:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1737-development-tui-linker-handoff"
 }
 ---

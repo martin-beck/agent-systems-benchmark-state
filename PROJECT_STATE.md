@@ -19,15 +19,15 @@ Generated from local Git and GitHub. Do not edit.
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #506 | `feature/ar-1739-easy-channel-lifecycle@f38594e40d36` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): add easy channel lifecycle |
-| #509 | `repair/ar-1737-development-tui-linker-handoff@6d3298aa222c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | fix(tui): bind validated linker in encoded rustflags |
+| #509 | `repair/ar-1737-development-tui-linker-handoff@6d3298aa222c` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(tui): bind validated linker in encoded rustflags |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37763339575 | `6d3298aa222c` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37763339575 | `6d3298aa222c` | pull_request | Hosted portability and native qualification | completed:failure |
 | 37763339563 | `6d3298aa222c` | pull_request | Credential-free benchmark path | in_progress:- |
-| 37763339521 | `6d3298aa222c` | pull_request | Formal assurance | pending:- |
+| 37763339521 | `6d3298aa222c` | pull_request | Formal assurance | in_progress:- |
 | 37763339437 | `6d3298aa222c` | pull_request | Fault assurance | in_progress:- |
 | 37763339428 | `6d3298aa222c` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 37763339427 | `6d3298aa222c` | pull_request | Repository quality | pending:- |
