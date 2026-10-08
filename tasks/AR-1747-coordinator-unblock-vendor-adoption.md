@@ -10,13 +10,21 @@
   "plan": "../plans/AR-1747-coordinator-unblock-vendor-adoption.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:bcf0efc241d68f7d5a59fdf34f716f26a9d8db52c3e1b0b91469dc2be71dcfe0",
+    "evidence_ref": "github/pr107/d6556e/ar1747-closeout",
+    "spec_ref": "specs/AR-1747.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1747.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Adopt Coordinator unblock support for AR-1722",
-  "updated_at": "2026-10-08T20:14:33+00:00",
+  "updated_at": "2026-10-08T20:14:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1747-coordinator-unblock-vendor"
 }
 ---
@@ -131,3 +139,6 @@ fabricate a pause, edit AR-1722 directly, or change ASB product runtime code.
   dependency AR-1749. Canonical vendor verification reports official 113dc610/tree45ae with manifest
   02149740; exact signed merge and hosted Formal/Coordination/header evidence passed, and stale PR
   #106 was closed without merge.
+
+- 2026-10-08T20:14:42+00:00: Recorded command exit 0; command argv SHA-256
+  07175f316543c315adfd4ff7ccc643740bb3772cfccd5ea3b8f4a12050d9670f.
