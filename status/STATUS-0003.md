@@ -451,7 +451,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. |
-| Next action | Fresh independent review of PR #499 exact signed+DCO head acd7a146babaf39371e4cabe04dd2aa084df8c6c tree cd964a0fb4d938ef68fc654ca7706be72eb9dbd9; wait for all exact-head checks, then integrate only after approval. |
+| Next action | Integrate PR #499 locally with tools/integration/merge_pr.py using expected base 457317b21dbe300907ba7889ff68a16514fcd5c5, head acd7a146babaf39371e4cabe04dd2aa084df8c6c, and tree cd964a0fb4d938ef68fc654ca7706be72eb9dbd9; then verify the signed DCO merge object/tree/parents, terminal-green exact-main CI, paired ASB/asb-tui install/status/bare-launch/upgrade/remove, reconcile, and doctor. |
 
 ### AR-1727 — Repair development broker foreground-terminal handoff
 

@@ -9,7 +9,7 @@
     "AR-1637"
   ],
   "id": "AR-1726",
-  "next_action": "Fresh independent review of PR #499 exact signed+DCO head acd7a146babaf39371e4cabe04dd2aa084df8c6c tree cd964a0fb4d938ef68fc654ca7706be72eb9dbd9; wait for all exact-head checks, then integrate only after approval.",
+  "next_action": "Integrate PR #499 locally with tools/integration/merge_pr.py using expected base 457317b21dbe300907ba7889ff68a16514fcd5c5, head acd7a146babaf39371e4cabe04dd2aa084df8c6c, and tree cd964a0fb4d938ef68fc654ca7706be72eb9dbd9; then verify the signed DCO merge object/tree/parents, terminal-green exact-main CI, paired ASB/asb-tui install/status/bare-launch/upgrade/remove, reconcile, and doctor.",
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "acd7a146babaf39371e4cabe04dd2aa084df8c6c",
@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 146,
+  "task_revision": 147,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T01:16:04+00:00",
+  "updated_at": "2026-10-08T01:16:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -478,3 +478,15 @@ review, protected merge, and terminal-green post-merge CI.
 
 - 2026-10-08T01:16:04+00:00: Recorded command exit 0; command argv SHA-256
   7320a9639a5882adacf37a5dfcea5098e3dc4d20e1545c913ae0138fbad63938.
+
+- 2026-10-08T01:16:50+00:00: Independent exact-head review approved
+  acd7a146babaf39371e4cabe04dd2aa084df8c6c tree cd964a0fb4d938ef68fc654ca7706be72eb9dbd9 against
+  base 457317b21dbe300907ba7889ff68a16514fcd5c5 with no findings. Descriptor-bound Cargo retains the
+  validated selected bin object; rustc opens O_NOFOLLOW from that exact retained directory, and the
+  deterministic pathname-to-toolchain-B regression proves Cargo A executes rustc A while
+  missing/symlink substitution fails closed. Group-writable development layout warns in human+JSON
+  actual-host preflight; override and stable/production boundaries remain strict. Focused tests,
+  serialized full workspace, fmt, Clippy -D warnings, rustdoc -D warnings, release build, all
+  signatures/DCO, diff/privacy, and all 14 hosted checks passed. GitHub review
+  PRR_kwDOUQSsRs8AAAABRNyZrw records the approval as COMMENTED because GitHub rejected same-account
+  APPROVE.
