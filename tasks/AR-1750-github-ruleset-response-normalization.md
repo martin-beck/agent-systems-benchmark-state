@@ -2,21 +2,24 @@
 {
   "branch": "repair/ar-1750-ruleset-response-normalization",
   "checkpoint_commit": "",
-  "claim_expires": "",
-  "depends_on": ["AR-1427", "AR-1431"],
+  "claim_expires": "2026-10-08T22:56:21+00:00",
+  "depends_on": [
+    "AR-1427",
+    "AR-1431"
+  ],
   "id": "AR-1750",
   "next_action": "Claim from exact canonical main and repair owned ruleset ID 24750310 with strict request/response normalization before any settings PATCH.",
-  "owner": "",
+  "owner": "codex-asb-ar1750-ruleset-normalization-20261008",
   "plan": "../plans/AR-1750-github-ruleset-response-normalization.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1750.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T20:50:00+00:00",
+  "updated_at": "2026-10-08T20:56:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -40,3 +43,5 @@ to pull_request.parameters.
 This task owns only the narrow repair and completion. Preserve ruleset ID
 24750310, never discover mutation ownership by name alone, never delete the
 ruleset, and never retry an ambiguous mutation blindly.
+
+- 2026-10-08T20:56:21+00:00: Claimed by codex-asb-ar1750-ruleset-normalization-20261008.
