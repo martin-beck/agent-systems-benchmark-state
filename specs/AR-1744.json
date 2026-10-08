@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1744.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "reproduced", "description": "The current-main make test failure and CARGO_TARGET_DIR scratch-root cause are recorded against an exact source head."},
+    {"id": "isolation", "description": "Test scratch fixtures remain external to the repository target tree when Make exports CARGO_TARGET_DIR."},
+    {"id": "safety", "description": "Private roots, bounded commands, symlink rejection, cleanup, pinned toolchain, and locked dependencies remain fail-closed."},
+    {"id": "coverage", "description": "Focused and full tests cover the named validated-linker path and scratch placement/cleanup regression."}
+  ],
+  "definition_of_done": [
+    "Signed+DCO repair is independently reviewed and merged into protected ASB main.",
+    "Focused and full applicable gates pass on the exact reviewed head.",
+    "All required exact-main post-merge workflows pass and durable state records the original failure and repaired evidence."
+  ],
+  "inputs": [
+    {"id": "makefile", "description": "ASB Makefile test target and its CARGO_TARGET_DIR environment propagation."},
+    {"id": "runtime", "description": "ASB runtime scratch fixture and validated path tests."},
+    {"id": "failure", "description": "User-observed make test failure at the validated-linker environment boundary."}
+  ],
+  "outputs": [
+    {"id": "repair", "description": "Test scratch-root isolation repair with regression coverage."},
+    {"id": "evidence", "description": "Signed PR, exact merge, CI, post-merge receipt, and durable state release."}
+  ],
+  "allowed_tools": ["cargo", "rustup", "git", "make", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["unsafe-clean", "floating-toolchain", "unlocked-test-dependencies", "forced-git-update"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [
+    {"id": "focused", "description": "Named linker test and scratch-root isolation regression pass under the Make environment."},
+    {"id": "workspace", "description": "Locked build, format, clippy, test, documentation, and dependency integrity gates pass."},
+    {"id": "hosted", "description": "Exact reviewed PR and protected-main post-merge workflows pass."}
+  ]
+}

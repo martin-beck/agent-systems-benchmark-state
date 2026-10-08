@@ -691,6 +691,20 @@
 | Summary | Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file. |
 | Next action | Released; preserve the signed merge, receipt, and all-green protected-main evidence. |
 
+### AR-1744 — Repair make test scratch-root isolation
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory. |
+| Next action | Reproduce the current-main make test failure and repair test scratch-root isolation. |
+
 
 ## Dependency graph
 
@@ -1493,6 +1507,7 @@ flowchart LR
         AR_1741["AR-1741 - Done"]:::status_done
         AR_1742["AR-1742 - Open"]:::status_open
         AR_1743["AR-1743 - Done"]:::status_done
+        AR_1744["AR-1744 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
