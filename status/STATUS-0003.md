@@ -649,6 +649,20 @@
 | Summary | Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows. |
 | Next action | Hand off to a newly created/promoted narrow protected-main exact-tree recovery AR: preserve a9abcf2, 2f7387e base, e424c39 topic, reviewed tree 1aa96736, merge tree befcb782; use docs/PROTECTED_MAIN_MERGE.md and tools/integration/merge_pr.py for a signed forward repair merge, then rerun exact-main policy and all required workflows. Existing AR-1722 is a separate blocked incident and must not be conflated. |
 
+### AR-1741 — Signed protected-main recovery for AR-1738
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge. |
+| Next action | Create a fresh recovery worktree from protected main 2f7387e, prepare a minimal signed+DCO forward-only descendant PR, and integrate it only with tools/integration/merge_pr.py after independent review. |
+
 
 ## Dependency graph
 
@@ -1448,6 +1462,7 @@ flowchart LR
         AR_1738["AR-1738 - In progress"]:::status_in_progress
         AR_1739["AR-1739 - In progress"]:::status_in_progress
         AR_1740["AR-1740 - In progress"]:::status_in_progress
+        AR_1741["AR-1741 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3479,5 +3494,3 @@ flowchart LR
 | [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) |
 | [AR-0903](../tasks/AR-0903-release-qualification.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0811](../tasks/AR-0811-documentation-qualification.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md) | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) |
 | [AR-0904](../tasks/AR-0904-contract-consistency.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
-| [AR-0905](../tasks/AR-0905-recovery-models.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | None |
-| [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) |
