@@ -7,7 +7,7 @@
     "AR-1590"
   ],
   "id": "AR-1727",
-  "next_action": "Independently review metadata-only signed descendant recovery PR #501 at exact head 0714b0e, wait for exact-head CI, then integrate only with tools/integration/merge_pr.py using exact base/head/tree and verify terminal-green protected-main post-merge CI.",
+  "next_action": "Wait for the remaining exact-head PR #501 checks to become terminal green, then reclaim for the final independent GitHub approval and release for local merge_pr.py integration at exact base 317768c9fabe934ee4966e3300a83d8e13866817/head 0714b0e96c455034b01c5737e22a4c3087349409/tree bd5cc8111417b7b9031988b0c6e354db3354ac0f.",
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:32:10+00:00",
+  "updated_at": "2026-10-08T00:35:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -334,3 +334,12 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-08T00:32:10+00:00: Recorded command exit 0; command argv SHA-256
   bd0fa1f8a8eb19cfed9b105e8ec588f6f06cc35a636f79c8e804a0ee1f203743.
+
+- 2026-10-08T00:35:05+00:00: Independent structural recovery review found no findings at PR #501
+  exact head 0714b0e96c455034b01c5737e22a4c3087349409. origin/main and PR base are published GitHub
+  merge 317768c9fabe934ee4966e3300a83d8e13866817; recovery head is its one-parent metadata-only
+  empty descendant, both trees equal bd5cc8111417b7b9031988b0c6e354db3354ac0f, merge-tree reproduces
+  that exact tree, and no published history is rewritten. Repository DCO checker passed;
+  allowed-signers verification reports good signature with author, committer, signer, and single DCO
+  principal all martin.beck2@gmx.de. Exact-head hosted checks are still running; release the
+  coordinator lock so AR-1726 can proceed while this reviewer monitors them read-only.
