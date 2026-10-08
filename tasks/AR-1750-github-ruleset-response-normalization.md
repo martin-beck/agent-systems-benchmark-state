@@ -10,8 +10,8 @@
   "id": "AR-1750",
   "next_action": "Claim from exact canonical main and repair owned ruleset ID 24750310 with strict request/response normalization before any settings PATCH.",
   "observed_branch": "repair/ar-1750-ruleset-response-normalization",
-  "observed_dirty": 1,
-  "observed_head": "f7f7093d136306ae7e34037fdc2dfeb7051dbaad",
+  "observed_dirty": 0,
+  "observed_head": "ba75120573fc580f50cc08ae50aa5f038d829836",
   "owner": "codex-asb-ar1750-ruleset-normalization-20261008",
   "plan": "../plans/AR-1750-github-ruleset-response-normalization.md",
   "priority": "P0",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T21:22:31+00:00",
+  "updated_at": "2026-10-08T21:23:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
