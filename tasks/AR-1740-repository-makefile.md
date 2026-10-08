@@ -12,11 +12,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1740.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T00:00:00+00:00",
+  "updated_at": "2026-10-08T09:17:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -27,3 +27,5 @@ common source workflows. It must check dependencies and explain remediation,
 never install packages implicitly, preserve the pinned toolchain and locked
 quality gates, and never become a runtime or installed-user dependency.
 
+
+- 2026-10-08T09:17:47+00:00: dependencies verified; ready for isolated implementation worker
