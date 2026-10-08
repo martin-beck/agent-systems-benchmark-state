@@ -17,12 +17,12 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1750.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T21:50:39+00:00",
+  "updated_at": "2026-10-08T21:51:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -46,6 +46,18 @@ to pull_request.parameters.
 This task owns only the narrow repair and completion. Preserve ruleset ID
 24750310, never discover mutation ownership by name alone, never delete the
 ruleset, and never retry an ambiguous mutation blindly.
+
+The first reviewed signed exact-tree merge attempt constructed merge
+041705503d0580ac307e787478e475e67d5f4d7c with parents dc19bb1 and b6dfe7c
+and reviewed tree f9334134c993399d62f729115beb55f1e8ddc023. GitHub rejected the push
+without changing remote main because ruleset 24750310 still required a formal
+different-account approval and last-push approval while the sole same-account
+independent review is durable Coordinator evidence. Recovery therefore permits
+one separately reviewed pre-merge, exact-ID ruleset-only bootstrap: it may PUT
+the desired ruleset and prove canonical response plus fresh drift-fenced
+readback, but must never PATCH repository settings. The mode must be durable,
+explicit, recovery-only, and cannot execute live until a fresh exact-head
+independent review, all hosted checks, and a root execution gate are recorded.
 
 - 2026-10-08T20:56:21+00:00: Claimed by codex-asb-ar1750-ruleset-normalization-20261008.
 
@@ -202,3 +214,6 @@ ruleset, and never retry an ambiguous mutation blindly.
   f933413. GitHub rejected publication without remote target change. Read-only rules audit confirms
   ruleset 24750310 still requires approving_count=1 and last_push=true; PR
   reviewDecision=REVIEW_REQUIRED. No live settings apply was attempted.
+
+- 2026-10-08T21:51:53+00:00: Recorded command exit 0; command argv SHA-256
+  29183e10682764ce6b22c5344ef7e460c24bf54593da0b6c2f658402229dd050.
