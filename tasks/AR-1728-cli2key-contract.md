@@ -2,21 +2,21 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T09:52:59+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1728",
   "next_action": "Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets.",
-  "owner": "codex-backend-discovery-contract-20261008",
+  "owner": "",
   "plan": "../plans/AR-1728-cli2key-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1728.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Freeze development cli2key contract and bridge",
-  "updated_at": "2026-10-08T09:22:59+00:00",
+  "updated_at": "2026-10-08T09:24:35+00:00",
   "worktree_key": ""
 }
 ---
@@ -76,3 +76,7 @@ unofficial, opt-in, and provides no production or provider-authority claim.
   qualification. AR-1728 remains unchanged and ready.
 
 - 2026-10-08T09:22:59+00:00: Claimed by codex-backend-discovery-contract-20261008.
+
+- 2026-10-08T09:24:35+00:00: No supplemental AR created: coordinator review confirmed AR-1736
+  already preserves the required strict enumeration and full run/sweep contract; the attempted
+  wrapped edit failed on the coordinator lock before any file mutation.
