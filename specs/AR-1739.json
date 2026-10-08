@@ -9,7 +9,7 @@
     },
     {
       "id": "channel-binding",
-      "description": "Explicit channel selection is validated against the existing channel manifest and active-channel contracts; omitted update selection preserves the active channel and unavailable channels fail before mutation."
+      "description": "Explicit channel selection is validated against the existing channel manifest and active-channel contracts; omitted update selection preserves the active channel and unavailable channels fail before mutation. Development --channel stable uses only a local mock fixture and is visibly labelled as mock."
     },
     {
       "id": "safe-guidance",
@@ -18,6 +18,10 @@
     {
       "id": "provider-free-test",
       "description": "The guided test path performs bounded local/mock lifecycle checks and does not contact a provider unless a separate explicit live operation is requested."
+    },
+    {
+      "id": "stable-mock",
+      "description": "Development install/update/test with --channel stable uses a checked-in or locally generated mock manifest and artifact, performs no future-stable network lookup, and cannot be presented as public stable evidence."
     },
     {
       "id": "bounded-build",

@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1739",
-  "next_action": "Promote after reviewing the existing asb easy and TUI channel contracts; implement the native dependency-free build/install/update/test/status/remove lifecycle with explicit channel selection and safe human/JSON guidance.",
+  "next_action": "Promote after reviewing the existing asb easy and TUI channel contracts; implement the native dependency-free build/install/update/test/status/remove lifecycle with explicit channel selection, a visibly labelled development stable mock, and safe human/JSON guidance.",
   "owner": "",
   "plan": "../plans/AR-1739-easy-channel-lifecycle.md",
   "priority": "P1",
@@ -25,6 +25,12 @@ ASB currently exposes build and lifecycle operations through lower-level command
 developer-oriented command sequences. Users should not need to remember Cargo,
 source checkout, or install commands to select a channel, update it, test the
 installation, or recover from a failed update.
+
+For development qualification, `--channel stable` is deliberately a local
+mock channel. It exercises the stable-shaped UX and lifecycle without fetching
+or depending on a future public stable channel. Every human and JSON result must
+identify this as a development mock, and no mock run may create public-release
+or stable-promotion evidence.
 
 Extend the existing native `asb easy` family with `build`, `install`, `update`,
 `test`, `status`, `rollback`, and `remove` rather than adding a Makefile or
