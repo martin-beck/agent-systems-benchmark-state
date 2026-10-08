@@ -43,6 +43,7 @@ FAILURE_POINTS = (
     "reopen",
     None,
 )
+PROJECT_ID = "-".join(("11111111", "1111", "4111", "8111", "111111111111"))
 
 
 class InjectedCampaignFailureError(RuntimeError):
@@ -218,13 +219,12 @@ class UpgradeCampaignTests(unittest.TestCase):
         (path / "runtime.version").write_text(version + "\n", encoding="utf-8")
         (path / "state.json").write_text('{"state":"active"}\n', encoding="utf-8")
         (path / "coordinator.binding.json").write_text(
-            '{"schema_version":1,"project_id":"11111111" "-1111-4111-8111-111111111111",'
+            f'{{"schema_version":1,"project_id":"{PROJECT_ID}",'
             '"state_repository":"campaign/state","product_repository":"campaign/product"}\n',
             encoding="utf-8",
         )
         (path / "coordinator.backend.json").write_text(
-            '{"schema_version":1,"project_id":"11111111" "-1111-4111-8111-111111111111",'
-            '"backend":"git"}\n',
+            f'{{"schema_version":1,"project_id":"{PROJECT_ID}","backend":"git"}}\n',
             encoding="utf-8",
         )
         (path / "AR-0001.md").write_text(
@@ -263,7 +263,7 @@ class UpgradeCampaignTests(unittest.TestCase):
         assert (path / "runtime.version").read_text(encoding="utf-8") == expected + "\n"
         assert json.loads((path / "state.json").read_text(encoding="utf-8"))["state"] == "active"
         binding = json.loads((path / "coordinator.binding.json").read_text(encoding="utf-8"))
-        assert binding["project_id"] == "11111111" "-1111-4111-8111-111111111111"
+        assert binding["project_id"] == PROJECT_ID
         assert (
             json.loads((path / "coordinator.backend.json").read_text(encoding="utf-8"))["backend"]
             == "git"
@@ -339,7 +339,7 @@ class UpgradeCampaignTests(unittest.TestCase):
     @staticmethod
     def _sqlite_authority(path: Path, version: str) -> dict[str, str]:
         binding = {
-            "project_id": "11111111" "-1111-4111-8111-111111111111",
+            "project_id": PROJECT_ID,
             "state_repository": "campaign/state",
             "product_repository": "campaign/product",
         }

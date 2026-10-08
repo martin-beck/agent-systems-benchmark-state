@@ -54,7 +54,7 @@ from tools.upgrade_identity import (
     canonical_barrier_session_digest,
 )
 
-PROJECT = "11111111" "-1111-4111-8111-111111111111"
+PROJECT = "-".join(("11111111", "1111", "4111", "8111", "111111111111"))
 BINDING = {
     "project_id": PROJECT,
     "state_repository": "owner/state",

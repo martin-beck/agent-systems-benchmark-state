@@ -444,7 +444,7 @@ class ControlRecordNegativePaths(unittest.TestCase):
     def _identity(self) -> BarrierSessionIdentity:
         record = {
             "schema_version": 1,
-            "project_id": "123e4567" "-e89b-42d3-a456-426614174000",
+            "project_id": "-".join(("123e4567", "e89b", "42d3", "a456", "426614174000")),
             "attempt_id": "attempt",
             "state_revision": 1,
             "authority_revision_at_acquire": "authority",
@@ -615,6 +615,7 @@ class AuthorityDefensiveMatrix(unittest.TestCase):
                 selector.unlink()
                 target.unlink()
                 selector.write_text("{}", encoding="utf-8")
+                selector.chmod(0o644)
                 with self.assertRaises(AuthorityError):
                     upgrade_authority._remove_selector_temporary(parent, selector.name)
                 selector.unlink()
@@ -871,7 +872,7 @@ class RollbackDefensiveMatrix(unittest.TestCase):
     def test_contract_transition_matrix_covers_terminal_and_evidence_guards(self) -> None:
         record = {
             "schema_version": 1,
-            "project_id": "123e4567" "-e89b-42d3-a456-426614174000",
+            "project_id": "-".join(("123e4567", "e89b", "42d3", "a456", "426614174000")),
             "attempt_id": "a",
             "state_revision": 1,
             "authority_revision_at_acquire": "r",

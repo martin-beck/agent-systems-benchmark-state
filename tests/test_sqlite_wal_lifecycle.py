@@ -22,7 +22,7 @@ from tools.sqlite_wal_lifecycle import (
     _digest,
 )
 
-PROJECT = "11111111" "-1111-4111-8111-111111111111"
+PROJECT = "-".join(("11111111", "1111", "4111", "8111", "111111111111"))
 
 
 class WALLifecycleTests(unittest.TestCase):

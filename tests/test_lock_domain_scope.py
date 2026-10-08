@@ -60,7 +60,8 @@ from tools.upgrade_identity import (
     canonical_envelope_digest,
 )
 
-PROJECT = "11111111" "-1111-4111-8111-111111111111"
+PROJECT = "-".join(("11111111", "1111", "4111", "8111", "111111111111"))
+OTHER_PROJECT = "-".join(("22222222", "2222", "4222", "8222", "222222222222"))
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -666,7 +667,14 @@ class LockDomainScopeTests(unittest.TestCase):
                 (
                     _issue_event(scope_token, "acquire", *fields),
                     _issue_event(
-                        scope_token, "quiesce", 2, "owner-2", "authority", PROJECT, "digest", "fence"
+                        scope_token,
+                        "quiesce",
+                        2,
+                        "owner-2",
+                        "authority",
+                        PROJECT,
+                        "digest",
+                        "fence",
                     ),
                 )
             )
@@ -675,7 +683,14 @@ class LockDomainScopeTests(unittest.TestCase):
                 (
                     _issue_event(scope_token, "acquire", *fields),
                     _issue_event(
-                        scope_token, "quiesce", 2, "owner-1", "foreign-lock", PROJECT, "digest", "fence"
+                        scope_token,
+                        "quiesce",
+                        2,
+                        "owner-1",
+                        "foreign-lock",
+                        PROJECT,
+                        "digest",
+                        "fence",
                     ),
                 )
             )
@@ -684,7 +699,14 @@ class LockDomainScopeTests(unittest.TestCase):
                 (
                     _issue_event(scope_token, "acquire", *fields),
                     _issue_event(
-                        scope_token, "quiesce", 1, "owner-1", "authority", PROJECT, "digest", "fence"
+                        scope_token,
+                        "quiesce",
+                        1,
+                        "owner-1",
+                        "authority",
+                        PROJECT,
+                        "digest",
+                        "fence",
                     ),
                 )
             )
@@ -997,7 +1019,10 @@ class LockDomainScopeTests(unittest.TestCase):
             validate_terminal_outcome(incomplete)
         valid = tuple(
             _issue_event(
-                scope_token, phase, *fields, terminal_target="rollback" if phase == phases[-1] else None
+                scope_token,
+                phase,
+                *fields,
+                terminal_target="rollback" if phase == phases[-1] else None,
             )
             for phase in phases
         )
@@ -1486,7 +1511,7 @@ class LockDomainScopeTests(unittest.TestCase):
         with locked() as common_guard, self.assertRaisesRegex(ControlStoreError, "project binding"):
             self.session.create_locked(
                 common_guard,
-                replace(identity(), project_id="22222222" "-2222-4222-8222-222222222222"),
+                replace(identity(), project_id=OTHER_PROJECT),
             )
         with (
             patch(
@@ -1714,7 +1739,7 @@ class LockDomainScopeTests(unittest.TestCase):
             identity(), 1, BarrierChildIdentity.bind(identity(), "forward-1", "new")
         )
         record["operation_id"] = "forward-1"
-        record["project_id"] = "22222222" "-2222-4222-8222-222222222222"
+        record["project_id"] = OTHER_PROJECT
         record["barrier_identity_digest"] = canonical_barrier_digest(record)
         record["envelope_digest"] = canonical_envelope_digest(record)
         with self.assertRaisesRegex(ControlStoreError, "barrier identity"):

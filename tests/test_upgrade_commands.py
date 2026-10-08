@@ -109,7 +109,7 @@ class UpgradeCommandTests(unittest.TestCase):
         envelope: dict[str, object] = {
             "schema_version": 2,
             "backend": document["backend"],
-            "project_id": "123e4567" "-e89b-42d3-a456-426614174000",
+            "project_id": "-".join(("123e4567", "e89b", "42d3", "a456", "426614174000")),
             "operation_id": document["operation_id"],
             "state_revision": inputs["expected_state_revision"],
             "authority_revision": "authority-7",

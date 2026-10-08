@@ -31,7 +31,7 @@ restore_database = MODULE.restore_database
 write_manifest = MODULE.write_manifest
 
 BINDING = {
-    "project_id": "11111111" "-1111-4111-8111-111111111111",
+    "project_id": "-".join(("11111111", "1111", "4111", "8111", "111111111111")),
     "state_repository": "owner/state",
     "product_repository": "owner/product",
 }
@@ -635,7 +635,9 @@ class SQLiteBackupTests(unittest.TestCase):
             )
 
     def test_binding_mismatch_fails_before_backup(self) -> None:
-        wrong = dict(BINDING, project_id="22222222" "-2222-4222-8222-222222222222")
+        wrong = dict(
+            BINDING, project_id="-".join(("22222222", "2222", "4222", "8222", "222222222222"))
+        )
         with self.assertRaises(BackupError):
             backup_database(self.source, self.root / "backup.sqlite3", wrong)
 

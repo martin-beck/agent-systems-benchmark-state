@@ -324,7 +324,9 @@ ready_path = Path(sys.argv[3])
 role = sys.argv[4]
 project_id = sys.argv[5]
 
-def identity(attempt_id: str, revision: int, barrier_id: str, fence_value: str) -> BarrierSessionIdentity:
+def identity(
+    attempt_id: str, revision: int, barrier_id: str, fence_value: str
+) -> BarrierSessionIdentity:
     record = {
         "schema_version": 1,
         "project_id": project_id,

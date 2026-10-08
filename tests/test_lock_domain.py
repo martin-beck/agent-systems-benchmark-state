@@ -22,7 +22,7 @@ from tools.rollback_control_store import (
 )
 from tools.upgrade_identity import BarrierSessionIdentity, canonical_barrier_session_digest
 
-PROJECT = "11111111" "-1111-4111-8111-111111111111"
+PROJECT = "-".join(("11111111", "1111", "4111", "8111", "111111111111"))
 
 
 def session_identity() -> BarrierSessionIdentity:

@@ -33,7 +33,7 @@ AUTHORITATIVE_MUTATION_ROUTES = (
     "append_command_result",
     "retire",
 )
-BARRIER_PROJECT = "00000000" "-0000-4000-8000-000000000002"
+BARRIER_PROJECT = "-".join(("00000000", "0000", "4000", "8000", "000000000002"))
 
 
 class MutationFenceTests(unittest.TestCase):
@@ -409,7 +409,7 @@ class MutationFenceTests(unittest.TestCase):
         """Inventory contract: every SQLite writer crosses the injected seam."""
         database = self.root / "route-inventory.sqlite3"
         binding = {
-            "project_id": "00000000" "-0000-4000-8000-000000000001",
+            "project_id": "-".join(("00000000", "0000", "4000", "8000", "000000000001")),
             "state_repository": "owner/state",
             "product_repository": "owner/product",
         }
