@@ -609,7 +609,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1748](../tasks/AR-1748-protected-main-portable-provenance.md): Portable protected-main provenance and capability admission | codex-asb-ar1748-closeout-20261009 | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. | Wait for AR-1750 to repair exact ruleset ID 24750310 request/response normalization and complete one guarded ID-bound PUT/PATCH plus two clean audits; then unblock and finish receipt/release. |
+| P0 | [AR-1748](../tasks/AR-1748-protected-main-portable-provenance.md): Portable protected-main provenance and capability admission | codex-asb-ar1748-closeout-20261009 | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. | Release AR-1748 done after attaching spec acceptance for independently approved PR #517/merge 31ca7a4/live-policy receipt; no further product or GitHub mutation is required. |
 
 ### Open (6)
 

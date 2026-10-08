@@ -7,7 +7,7 @@
     "AR-1750"
   ],
   "id": "AR-1748",
-  "next_action": "Wait for AR-1750 to repair exact ruleset ID 24750310 request/response normalization and complete one guarded ID-bound PUT/PATCH plus two clean audits; then unblock and finish receipt/release.",
+  "next_action": "Release AR-1748 done after attaching spec acceptance for independently approved PR #517/merge 31ca7a4/live-policy receipt; no further product or GitHub mutation is required.",
   "observed_branch": "repair/ar-1748-portable-main-provenance",
   "observed_dirty": 0,
   "observed_head": "7c3e9e3eca962474c03db9b77dbe09a30e95099d",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Portable protected-main provenance and capability admission",
-  "updated_at": "2026-10-08T22:29:42+00:00",
+  "updated_at": "2026-10-08T22:29:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
 }
 ---
@@ -393,3 +393,14 @@ closed with an exact typed blocker rather than weakening it.
   solely for receipt acceptance and release.
 
 - 2026-10-08T22:29:42+00:00: Claimed by codex-asb-ar1748-closeout-20261009.
+
+- 2026-10-08T22:29:55+00:00: Dependency receipt accepted independently with no findings. AR-1750
+  revision92 is done. Exact repair: reviewed signed+DCO PR #517 head cb8be7e/tree40ab; merge
+  31ca7a481fca8b79bfbff126b92db6c6118beb7c parents dc19bb1+cb8be7e and same tree; all exact-main
+  workflows 37852141052,37852141065
+  attempt2,37852141069,37852141078,37852141086,37852141097,37852141128,37852141151,37852141152,37852141200
+  succeeded. Ruleset-only recovery and two audits, then normal guarded apply and two final audits,
+  all bound active ID 24750310 with readback-verified ownership. Final repository 1359260742
+  settings are merge=true squash=false rebase=false auto=false signoff=true; desired main ruleset
+  approval count0, last-push=false, reviewers=[], exact server normalization accepted. Independent
+  receipt review approved without findings.
