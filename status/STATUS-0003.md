@@ -625,11 +625,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1739-easy-lifecycle |
 | Parent | None |
 | Children | None |
 | Summary | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. |
@@ -1446,7 +1446,7 @@ flowchart LR
         AR_1736["AR-1736 - Planned"]:::status_planned
         AR_1737["AR-1737 - Open"]:::status_open
         AR_1738["AR-1738 - In progress"]:::status_in_progress
-        AR_1739["AR-1739 - Open"]:::status_open
+        AR_1739["AR-1739 - In progress"]:::status_in_progress
         AR_1740["AR-1740 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
