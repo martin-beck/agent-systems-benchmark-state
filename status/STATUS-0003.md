@@ -605,7 +605,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH. |
-| Next action | Wait for independent exact-head review and PR #509 CI; fix any findings, merge reviewed green head, then run real source-built install/status/doctor/upgrade/bare launch/repeated remove and exact post-merge CI. |
+| Next action | Wait for every PR #509 hosted check on exact head 199bd00a to finish green; merge only that independently reviewed tree, then qualify the real source-built development lifecycle and exact post-merge CI. |
 
 ### AR-1738 — Repair permissive development rustup permission acceptance
 

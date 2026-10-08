@@ -8,7 +8,7 @@
     "AR-1734"
   ],
   "id": "AR-1737",
-  "next_action": "Wait for independent exact-head review and PR #509 CI; fix any findings, merge reviewed green head, then run real source-built install/status/doctor/upgrade/bare launch/repeated remove and exact post-merge CI.",
+  "next_action": "Wait for every PR #509 hosted check on exact head 199bd00a to finish green; merge only that independently reviewed tree, then qualify the real source-built development lifecycle and exact post-merge CI.",
   "observed_branch": "repair/ar-1737-development-tui-linker-handoff",
   "observed_dirty": 0,
   "observed_head": "199bd00a95c2c8cb1559851da9655e58f80f9998",
@@ -20,9 +20,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Repair development TUI linker handoff",
-  "updated_at": "2026-10-08T10:32:52+00:00",
+  "updated_at": "2026-10-08T10:33:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1737-development-tui-linker-handoff"
 }
 ---
@@ -186,3 +186,10 @@ its `collect2` helper cannot discover `ld` because ambient `PATH` is empty.
 
 - 2026-10-08T10:32:52+00:00: Recorded command exit 0; command argv SHA-256
   04fd1ded27ab92e528002b5a7ed91bdc9be9f393bd2f8053694432badb0aa41d.
+
+- 2026-10-08T10:33:41+00:00: Independent worker review APPROVED exact head
+  199bd00a95c2c8cb1559851da9655e58f80f9998, tree 55f384140095a39819296863cc690183dedf35fa, base
+  d53e901677024741cdf0477c9e1efb5d0b664c02 with no remaining findings. Reviewer verified the
+  one-channel encoded flags, empty PATH, validated tools/linker root, deterministic remaps,
+  signature/DCO, real Cargo link, and hostile/non-UTF8 rejection. Hosted CI remains pending and is
+  the only pre-merge gate.
