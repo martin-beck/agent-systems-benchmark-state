@@ -619,7 +619,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries. |
-| Next action | Preserve historical merge 2f7387e. Repository policy confirms GitHub merge committer identity failure. A new signed DCO-bearing descendant via local integration path is required before exact-main policy can be green; do not rewrite protected main. Coordinate successor recovery. |
+| Next action | Successor signed-main recovery AR required (next available ID likely AR-1741; no active successor exists). Preserve 2f7387e, create minimal signed+DCO forward-only descendant PR based on it, integrate with tools/integration/merge_pr.py, rerun exact-main policy/post-merge gates, then release AR-1738. |
 
 ### AR-1739 — Add easy channel build, install, update, and test lifecycle
 

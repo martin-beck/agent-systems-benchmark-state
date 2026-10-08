@@ -8,7 +8,7 @@
     "AR-1734"
   ],
   "id": "AR-1738",
-  "next_action": "Preserve historical merge 2f7387e. Repository policy confirms GitHub merge committer identity failure. A new signed DCO-bearing descendant via local integration path is required before exact-main policy can be green; do not rewrite protected main. Coordinate successor recovery.",
+  "next_action": "Successor signed-main recovery AR required (next available ID likely AR-1741; no active successor exists). Preserve 2f7387e, create minimal signed+DCO forward-only descendant PR based on it, integrate with tools/integration/merge_pr.py, rerun exact-main policy/post-merge gates, then release AR-1738.",
   "observed_branch": "repair/ar-1738-development-rustup-permission-compatibility",
   "observed_dirty": 0,
   "observed_head": "f020b2d4fd65b92edf89a0db73a0b04c0b975684",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Repair permissive development rustup permission acceptance",
-  "updated_at": "2026-10-08T09:38:12+00:00",
+  "updated_at": "2026-10-08T09:41:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility"
 }
 ---
@@ -100,3 +100,8 @@ weaken stable or production installation policy.
   Verified repository_policy.py with head 2f7387e, base 1a5888c, protected-main push: fails solely
   protected-main merge committer is not local integration identity. Remote merge parents/tree are
   preserved; compliant repair is signed descendant, not rewrite.
+
+- 2026-10-08T09:41:29+00:00: Inspected coordination graph: no active successor AR for this incident.
+  Prior precedent AR-1398 uses an independent signed protected-main recovery AR without rewriting
+  historical merge. Do not create a dependency cycle: successor recovery should independently
+  reference AR-1738/PR504 evidence.
