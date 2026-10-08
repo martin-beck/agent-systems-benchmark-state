@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T09:24:11+00:00",
+  "updated_at": "2026-10-08T09:28:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -63,3 +63,6 @@ provider-free by default and preserve all stable/production fail-closed gates.
   EASY_LIFECYCLE.md docs. cargo test -p asb-cli --lib --no-run --locked passes after fixing one
   dispatcher return-type error (prior exit 101). Build/journey retry is currently contending on
   shared coordinator lock held by another worker; no product failure observed.
+
+- 2026-10-08T09:28:45+00:00: Recorded command exit 0; command argv SHA-256
+  a8ead32e951460d96f5ef53ad26f5f0381d0ad41b3580927aa87ff0757275af4.
