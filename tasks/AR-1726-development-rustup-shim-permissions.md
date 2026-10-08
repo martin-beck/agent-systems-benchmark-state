@@ -9,7 +9,7 @@
     "AR-1637"
   ],
   "id": "AR-1726",
-  "next_action": "Repair PR #499 so accepted group-writable rustup toolchain executables remain bound to the validated Cargo and rustc objects through execution; retain the deterministic substitution regression, rerun exact gates, and obtain fresh independent review.",
+  "next_action": "Repair PR #499 by deriving and opening rustc descriptor-relatively from the same retained selected toolchain/bin identity as Cargo without canonicalizing the mutable Cargo pathname; retain the deterministic cross-toolchain replacement regression, rerun exact gates, and obtain fresh independent review.",
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "d9ef0bce9bf656f07b3a64f306ed65d6204177cb",
@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T00:15:12+00:00",
+  "updated_at": "2026-10-08T00:15:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -310,3 +310,14 @@ review, protected merge, and terminal-green post-merge CI.
 
 - 2026-10-08T00:15:12+00:00: Recorded command exit 0; command argv SHA-256
   023471af2a51b5a7dd71276d1a71ef9014072e396c6b87e142a58cbdd77d0d5b.
+
+- 2026-10-08T00:15:47+00:00: Independent rereview of exact signed+DCO head
+  d9ef0bce9bf656f07b3a64f306ed65d6204177cb tree 3d15a55982be6ae04f64a9675603a12aacca5216 found a
+  blocking P1 Cargo/Rustc pairing race. After descriptor-binding selected Cargo A, a deterministic
+  review-only regression replaced its accepted group-writable pathname with a symlink to Cargo B;
+  production resolve_development_rustc_bound reopened that pathname by canonicalize, selected Rustc
+  B, and pinned Cargo A executed Rustc B with output alternate-rustc. Temporary test removed;
+  isolated review worktree restored clean. GitHub exact-head review PRR_kwDOUQSsRs8AAAABRNcp2g
+  records repair guidance. All 14 hosted checks green, signatures/DCO/diff/privacy acceptable,
+  stable remains strict, and independent actual-host human+JSON preflight passed with the bounded
+  warning. Do not merge until repaired and freshly reviewed.

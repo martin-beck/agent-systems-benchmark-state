@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1726](tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Repair PR #499 so accepted group-writable rustup toolchain executables remain bound to the validated Cargo and rustc objects through execution; retain the deterministic substitution regression, rerun exact gates, and obtain fresh independent review. | codex-ar1726-pr499-rereview |
+| P0 | [AR-1726](tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Repair PR #499 by deriving and opening rustc descriptor-relatively from the same retained selected toolchain/bin identity as Cargo without canonicalizing the mutable Cargo pathname; retain the deterministic cross-toolchain replacement regression, rerun exact gates, and obtain fresh independent review. | codex-ar1726-pr499-rereview |
 
 ## Open
 
