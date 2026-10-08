@@ -562,7 +562,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | codex-ar1726-local-integration | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Integrate PR #499 locally with tools/integration/merge_pr.py using expected base 457317b21dbe300907ba7889ff68a16514fcd5c5, head acd7a146babaf39371e4cabe04dd2aa084df8c6c, and tree cd964a0fb4d938ef68fc654ca7706be72eb9dbd9; then verify the signed DCO merge object/tree/parents, terminal-green exact-main CI, paired ASB/asb-tui install/status/bare-launch/upgrade/remove, reconcile, and doctor. |
+| P0 | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | codex-ar1726-local-integration | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Wait for all required exact-main workflows at signed merge 736a65cd8904b8f4a6f1715fc86ae1c854fe2232 to become terminal green; then record acceptance evidence, release done, reconcile, snapshot, and doctor. |
 
 ### Open (4)
 
