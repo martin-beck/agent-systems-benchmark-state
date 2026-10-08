@@ -558,12 +558,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | codex-ar1726-pr499-pairing-repair | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Repair PR #499 by deriving and opening rustc descriptor-relatively from the same retained selected toolchain/bin identity as Cargo without canonicalizing the mutable Cargo pathname; retain the deterministic cross-toolchain replacement regression, rerun exact gates, and obtain fresh independent review. |
-| P0 | [AR-1727](../tasks/AR-1727-development-broker-foreground-terminal.md): Repair development broker foreground-terminal handoff | codex-ar1727-local-integration | Give the ASB development broker child correct foreground process-group ownership on the caller&#x27;s controlling terminal without weakening descendant cleanup. | No further implementation action; AR-1727 is merged on exact signed main 457317b21dbe300907ba7889ff68a16514fcd5c5 with terminal-green post-merge checks. Downstream asb-tui qualification may resume. |
 
 ### Open (4)
 
@@ -631,3 +630,4 @@
 | P0 | [AR-1507](../tasks/AR-1507-runtime-owned-authority-materialization.md): Runtime-owned authority materialization | Unclaimed | Materialize private runtime launch authority from authenticated AR-1505 bootstrap state without caller or synthetic authority. | Promote after dependency verification; define and implement the runtime-owned authority materializer that maps authenticated bootstrap state to private roots, tools, policy, and opaque dispatch source. |
 | P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Unclaimed | Lifecycle expiry fencing repaired and covered by seven focused plus 167 full asb-runtime tests; production platform authority callsite remains absent. | Development qualification is not blocked: retain the passing lifecycle-fencing tests and use deterministic local/mock and strict-replay authority for development. Route any non-test deployment source to optional future production hardening; do not make it a local qualification gate. |
 | P0 | [AR-1509](../tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | Unclaimed | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Blocked: implement a real runtime/control platform-authority adapter that obtains credential/enrollment/private roots from authenticated control state, emits a control-authenticated receipt, wires materialize_provisioner into live run/sweep, and rechecks restart/revocation/expiry at transitions; preserve this worktree for successor AR. |
+| P0 | [AR-1510](../tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | Unclaimed | Provider boundary and expiry fencing are implemented and runtime/CLI tests mostly pass; ordinary production dispatch still lacks an authenticated non-test platform material source. | Development qualification is not blocked: wire and test the opaque source with deterministic local/mock and strict-replay authority through ordinary run/sweep. A platform-owned deployment adapter is optional future production hardening and must not gate local qualification. |

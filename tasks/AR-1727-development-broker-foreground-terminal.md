@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1727-development-broker-foreground-terminal",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T01:43:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1590"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
-  "owner": "codex-ar1727-local-integration",
+  "owner": "",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T01:00:14+00:00",
+  "updated_at": "2026-10-08T01:00:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -394,3 +394,7 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-08T01:00:14+00:00: Accepted durable exact-merge, independent-review, and terminal-green
   hosted evidence recorded in the AR-1727 session journal.
+
+- 2026-10-08T01:00:24+00:00: Released after independent exact-head review, local signed+DCO recovery
+  merge 457317b21dbe300907ba7889ff68a16514fcd5c5, exact-tree verification, and all required
+  exact-main post-merge workflows terminal green.

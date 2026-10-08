@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1726](tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Repair PR #499 by deriving and opening rustc descriptor-relatively from the same retained selected toolchain/bin identity as Cargo without canonicalizing the mutable Cargo pathname; retain the deterministic cross-toolchain replacement regression, rerun exact gates, and obtain fresh independent review. | codex-ar1726-pr499-pairing-repair |
-| P0 | [AR-1727](tasks/AR-1727-development-broker-foreground-terminal.md): Repair development broker foreground-terminal handoff | Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup. | No further implementation action; AR-1727 is merged on exact signed main 457317b21dbe300907ba7889ff68a16514fcd5c5 with terminal-green post-merge checks. Downstream asb-tui qualification may resume. | codex-ar1727-local-integration |
 
 ## Open
 
