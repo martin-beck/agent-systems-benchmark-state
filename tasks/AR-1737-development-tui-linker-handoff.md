@@ -10,7 +10,7 @@
   "id": "AR-1737",
   "next_action": "Reproduce the exact env-cleared development materializer failure, bind the validated linker search root in the effective Cargo/rustc flags, and requalify source-built install, upgrade, and bare launch without widening PATH.",
   "observed_branch": "repair/ar-1737-development-tui-linker-handoff",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "a9abcf2e63f761e314593e9abc6bf074b7418e5e",
   "owner": "codex-asb-ar1737-linker-handoff",
   "plan": "../plans/AR-1737-development-tui-linker-handoff.md",
@@ -20,9 +20,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Repair development TUI linker handoff",
-  "updated_at": "2026-10-08T10:07:44+00:00",
+  "updated_at": "2026-10-08T10:09:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1737-development-tui-linker-handoff"
 }
 ---
