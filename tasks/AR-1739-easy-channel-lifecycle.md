@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T12:38:28+00:00",
   "depends_on": [],
   "id": "AR-1739",
-  "next_action": "PR #506 exact head 8d86ebe is rebased onto protected origin/main a9abcf2; monitor required CI, then merge only all-green and perform post-merge exact-head verification.",
+  "next_action": "PR #506 remote base d53e901 and exact head 13412c6; final-base required checks are active. Merge via signed integration only after all checks green, then perform post-merge verification and release AR.",
   "observed_branch": "feature/ar-1739-easy-channel-lifecycle",
   "observed_dirty": 0,
   "observed_head": "13412c685ddb99523e14ae7fcdcb1c3b84148192",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T10:38:28+00:00",
+  "updated_at": "2026-10-08T10:38:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -183,3 +183,7 @@ provider-free by default and preserve all stable/production fail-closed gates.
   d3cf1a78e5f84cf0c5d2a58d1fd8ca5047ad356d2b559fcabee40b0c59fc6014.
 
 - 2026-10-08T10:38:28+00:00: Heartbeat by codex-ar1739-easy-lifecycle.
+
+- 2026-10-08T10:38:40+00:00: Rebased and force-pushed reviewed topic onto current protected main
+  d53e901; verified gh PR base/head. Final CI has AWQ/header/Kani/platform/retained-fault gates
+  green; remaining required checks are active with no failures.
