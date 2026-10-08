@@ -200,11 +200,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-ar1702-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Run credential-backed online OpenRouter smoke and typed negative tests for the merged ASB live path without mock fallback. |
@@ -1564,7 +1564,7 @@ flowchart LR
         direction TB
         AR_1700["AR-1700 - Done"]:::status_done
         AR_1701["AR-1701 - Planned"]:::status_planned
-        AR_1702["AR-1702 - In progress"]:::status_in_progress
+        AR_1702["AR-1702 - Blocked"]:::status_blocked
         AR_1703["AR-1703 - Planned"]:::status_planned
         AR_1704["AR-1704 - Planned"]:::status_planned
         AR_1709["AR-1709 - Planned"]:::status_planned
