@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1737-development-tui-linker-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T13:03:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1726",
     "AR-1734"
@@ -12,7 +12,7 @@
   "observed_branch": "repair/ar-1737-development-tui-linker-handoff",
   "observed_dirty": 0,
   "observed_head": "199bd00a95c2c8cb1559851da9655e58f80f9998",
-  "owner": "codex-asb-ar1737-linker-handoff",
+  "owner": "",
   "plan": "../plans/AR-1737-development-tui-linker-handoff.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1737.json",
   "spec_revision": 2,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Repair development TUI linker handoff",
-  "updated_at": "2026-10-08T11:03:12+00:00",
+  "updated_at": "2026-10-08T11:03:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1737-development-tui-linker-handoff"
 }
 ---
@@ -261,3 +261,14 @@ its `collect2` helper cannot discover `ld` because ambient `PATH` is empty.
 
 - 2026-10-08T11:03:12+00:00: Recorded command exit 0; command argv SHA-256
   32c4f6a0f05d6f0711075eaf957cd4dd863aa22e34cb44ccdddcfa17dfc6852a.
+
+- 2026-10-08T11:03:54+00:00: Completed and merged PR #509. Remote main is exact merge
+  9aeea48c40417108b95c0a2743b2d4b3220f56bd, tree 55f384140095a39819296863cc690183dedf35fa, with
+  independently approved topic parent 199bd00a95c2c8cb1559851da9655e58f80f9998 and base
+  d53e901677024741cdf0477c9e1efb5d0b664c02. Exact-head real-link, effective-argument, hostile
+  override/path, non-UTF8, deterministic dual-root, fmt, Clippy, rustdoc, unit, and integration
+  gates passed. Exact merge auto-detected Cargo lifecycle and omitted-channel repeated remove
+  passed; hosted paired inherited-fd PTY qualification passed. All nine exact post-merge workflows
+  on 9aeea48c completed successfully. Acceptance receipt
+  quality/AR-1737-development-tui-linker-handoff-receipt.txt has digest
+  sha256:0737dac7de29099d22af47bcf87aedb23326a4db3e3b087ac110a60a9809681d.

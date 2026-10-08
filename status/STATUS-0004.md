@@ -582,11 +582,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md): Repair development TUI linker handoff | codex-asb-ar1737-linker-handoff | Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH. | Acceptance evidence is complete; publish the receipt, release AR-1737 done, reconcile, and run live doctor. |
 | P1 | [AR-1739](../tasks/AR-1739-easy-channel-lifecycle.md): Add easy channel build, install, update, and test lifecycle | codex-ar1739-easy-lifecycle | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. | Post-merge exact main 507559f workflows active; Repository quality is rerunning after transient analyzer HTTP 500 (run 37767084162), while remaining hosted workflows continue. Release only after every exact-main workflow is green. |
 
 ### Open (6)
@@ -640,3 +639,4 @@
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Runner implementation remains blocked for its unrelated formal CI OOM/publication transition, but development execution no longer depends on a reviewed seed digest. The explicit unsigned-development profile accepts locally generated disposable seeds and remains qualification_authorized=false. | No further unsigned-development action remains: AR-1532/1542 and the AR-1536 handoff provide the provider-free diagnostic evidence. Keep this AR blocked only for separately authorized formal/publication qualification with reviewed inputs. |
 | P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | QEMU fixture passes boot/transient/JAR checks; corrected full-tier rerun reproducibly times out at 1700s without attestation. | No further unsigned-development action remains: AR-1543/1536 provide the provider-free diagnostic QEMU/preflight handoff. Keep this AR blocked only for separately authorized formal capacity qualification with reviewed inputs. |
 | P0 | [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Unclaimed | Transport runtime-attested enrollment authority without exposing it to the CLI. | Implement the runtime/control-owned attested enrollment-record transport, validate target/tool/lease/relay authority inside asb-runtime, mint opaque handles, then consume them in asb run/sweep with positive and negative tests. |
+| P0 | [AR-1358](../tasks/AR-1358-runtime-enrollment-cli-dispatch.md): Runtime enrollment CLI dispatch | Unclaimed | Consume runtime-attested enrollment records in asb run and sweep without exposing authority. | Promote after AR-1357 is done, then wire asb run/sweep through runtime-attested enrollment records with fail-closed positive and negative tests. |
