@@ -200,7 +200,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -1564,7 +1564,7 @@ flowchart LR
         direction TB
         AR_1700["AR-1700 - Done"]:::status_done
         AR_1701["AR-1701 - Planned"]:::status_planned
-        AR_1702["AR-1702 - Planned"]:::status_planned
+        AR_1702["AR-1702 - Open"]:::status_open
         AR_1703["AR-1703 - Planned"]:::status_planned
         AR_1704["AR-1704 - Planned"]:::status_planned
         AR_1709["AR-1709 - Planned"]:::status_planned
