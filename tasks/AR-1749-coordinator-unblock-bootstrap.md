@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T21:36:14+00:00",
   "depends_on": [],
   "id": "AR-1749",
-  "next_action": "Publish the clean exact-head replacement PR after one final rebase onto current receipt-only main; obtain independent exact-head review and hosted Coordination/Formal success before signed local integration.",
+  "next_action": "PR #107 exact head 9c8f379e287903482b08b2621d8ddff43d09a5a5 tree 50340294a4d34a8e819c5d53bfe2114825b6f2f3 is published. Wait for independent exact-head technical review and hosted Coordination/Formal terminal success; do not merge stale PR #106.",
   "owner": "codex-asb-ar1749-vendor-bootstrap-20261008",
   "plan": "../plans/AR-1749-coordinator-unblock-bootstrap.md",
   "priority": "P0",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Bootstrap canonical Coordinator unblock vendor adoption",
-  "updated_at": "2026-10-08T19:26:23+00:00",
+  "updated_at": "2026-10-08T19:27:05+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1749-coordinator-unblock-bootstrap"
 }
 ---
@@ -187,3 +187,7 @@ review, hosted CI, and signed local integration remain mandatory.
 
 - 2026-10-08T19:26:23+00:00: Recorded command exit 0; command argv SHA-256
   25723d37bd75801052c225883e4be419e9e35843a8cf806239275a3d0b7a5880.
+
+- 2026-10-08T19:27:05+00:00: Published clean replacement PR #107 after rebasing onto current
+  receipt-only main. Exact signed+DCO head 9c8f379e, tree 50340294; local full coverage, static,
+  privacy, vendor, and required-cgroup formal qualification are green. Independent review requested.
