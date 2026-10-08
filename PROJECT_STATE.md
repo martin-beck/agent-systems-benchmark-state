@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #506 | `feature/ar-1739-easy-channel-lifecycle@f38594e40d36` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): add easy channel lifecycle |
-| #509 | `repair/ar-1737-development-tui-linker-handoff@199bd00a95c2` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | fix(tui): bind validated linker in encoded rustflags |
+| #509 | `repair/ar-1737-development-tui-linker-handoff@199bd00a95c2` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(tui): bind validated linker in encoded rustflags |
 
 ## Recent workflows
 
@@ -27,13 +27,13 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 37764017984 | `199bd00a95c2` | pull_request | Formal assurance | in_progress:- |
 | 37764017959 | `199bd00a95c2` | pull_request | Huawei MIT source headers | completed:success |
-| 37764017953 | `199bd00a95c2` | pull_request | Fault assurance | in_progress:- |
+| 37764017953 | `199bd00a95c2` | pull_request | Fault assurance | completed:success |
 | 37764017950 | `199bd00a95c2` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37764017906 | `199bd00a95c2` | pull_request | Repository quality | in_progress:- |
 | 37764017859 | `199bd00a95c2` | pull_request | Rust verification | in_progress:- |
 | 37764017847 | `199bd00a95c2` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 37764017818 | `199bd00a95c2` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37764017818 | `199bd00a95c2` | pull_request | Cross-repository development broker qualification | completed:success |
 | 37764017799 | `199bd00a95c2` | pull_request | Hosted portability and native qualification | completed:success |
-| 37764017787 | `199bd00a95c2` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37764017787 | `199bd00a95c2` | pull_request | Credential-free benchmark path | completed:success |
 | 37763468508 | `ad6957261a84` | pull_request | Emulated aarch64 portability | completed:cancelled |
 | 37763468453 | `ad6957261a84` | pull_request | Credential-free benchmark path | completed:success |
