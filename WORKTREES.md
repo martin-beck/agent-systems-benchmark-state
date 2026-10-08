@@ -378,8 +378,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1744-make-test-scratch-isolation` | `repair/ar-1744-make-test-scratch-isolation` | `3a14e8846af4` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1745-user-local-install-prefix` | `feature/ar-1745-user-local-install-prefix` | `250ef6658e0c` | 0 | behind 14, ahead 0 |
 | `agent-systems-benchmark-ar-1746-protected-main-admission` | `repair/ar-1746-protected-main-admission` | `fee04c29616b` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1748-portable-main-provenance` | `repair/ar-1748-portable-main-provenance` | `2f52ecbaf79a` | 5 | behind 0, ahead 0 |
-| changed files | - | - | - | `tools/integration/repository_settings.py`, `tools/integration/test_merge_pr.py`, `.github/workflows/portable-provenance.yml`, `config/github-ruleset-openapi.json`, `tools/integration/portable_provenance.py` |
+| `agent-systems-benchmark-ar-1748-portable-main-provenance` | `repair/ar-1748-portable-main-provenance` | `2f52ecbaf79a` | 6 | behind 0, ahead 0 |
+| changed files | - | - | - | `tools/integration/repository_settings.py`, `tools/integration/test_merge_pr.py`, `tools/quality/repository_policy.py`, `.github/workflows/portable-provenance.yml`, `config/github-ruleset-openapi.json`, `tools/integration/portable_provenance.py` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 330, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 330, ahead 830 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 330, ahead 89 |
