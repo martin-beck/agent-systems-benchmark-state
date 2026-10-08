@@ -681,11 +681,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1743-make-update |
 | Parent | None |
 | Children | None |
 | Summary | Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file. |
@@ -1492,7 +1492,7 @@ flowchart LR
         AR_1740["AR-1740 - Done"]:::status_done
         AR_1741["AR-1741 - Done"]:::status_done
         AR_1742["AR-1742 - Open"]:::status_open
-        AR_1743["AR-1743 - Open"]:::status_open
+        AR_1743["AR-1743 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
