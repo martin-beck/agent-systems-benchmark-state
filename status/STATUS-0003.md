@@ -737,11 +737,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1747-closeout-20261008 |
 | Parent | None |
 | Children | None |
 | Summary | Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition. |
@@ -1580,7 +1580,7 @@ flowchart LR
         AR_1744["AR-1744 - Done"]:::status_done
         AR_1745["AR-1745 - Done"]:::status_done
         AR_1746["AR-1746 - Blocked"]:::status_blocked
-        AR_1747["AR-1747 - Open"]:::status_open
+        AR_1747["AR-1747 - In progress"]:::status_in_progress
         AR_1748["AR-1748 - In progress"]:::status_in_progress
         AR_1749["AR-1749 - Done"]:::status_done
     end

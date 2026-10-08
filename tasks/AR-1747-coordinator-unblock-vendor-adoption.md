@@ -2,21 +2,21 @@
 {
   "branch": "repair/ar-1747-coordinator-unblock-vendor",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T22:13:25+00:00",
   "depends_on": [],
   "id": "AR-1747",
   "next_action": "Wait for official Coordinator AR-0087 to merge a reviewed follow-up that preserves task_spec evidence classes, removes scanner-triggering UUID literals from every declared vendor file, and retains exact unblock/formal closure; then resync via sync-development from that official commit, rebase PR #106 without downstream vendor edits, rerun all 95%/formal/privacy gates, and obtain fresh exact-head independent review.",
-  "owner": "",
+  "owner": "codex-asb-ar1747-closeout-20261008",
   "plan": "../plans/AR-1747-coordinator-unblock-vendor-adoption.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1747.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Adopt Coordinator unblock support for AR-1722",
-  "updated_at": "2026-10-08T20:13:20+00:00",
+  "updated_at": "2026-10-08T20:13:25+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1747-coordinator-unblock-vendor"
 }
 ---
@@ -121,3 +121,5 @@ fabricate a pause, edit AR-1722 directly, or change ASB product runtime code.
   45ae6988ccd1c88230f262d735ff24d9d9b3bc4b with manifest SHA-256
   02149740b14a554d784e2f0fd8572a67dbf3faabe379fc39b4e9703de74e9936 and exposes provenance-checked
   unblock without fabricated pause state.
+
+- 2026-10-08T20:13:25+00:00: Claimed by codex-asb-ar1747-closeout-20261008.
