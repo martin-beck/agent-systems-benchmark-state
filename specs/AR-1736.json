@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1736.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "registry-completeness",
+      "description": "Every canonical supported backend has exactly one model-capability record; CI rejects missing, duplicate, or untested backends."
+    },
+    {
+      "id": "enumeration",
+      "description": "Every model-bearing backend exposes a bounded normalized generation/digest-bound model catalog with typed availability; model-less backends explicitly declare not_applicable."
+    },
+    {
+      "id": "selection",
+      "description": "Human and JSON setup/easy surfaces select only catalog-backed backend/model pairs and reject stale, unavailable, unknown, or cross-backend identities before effects."
+    },
+    {
+      "id": "run-integration",
+      "description": "A complete normal benchmark run preserves exact backend, profile, model, catalog generation, digest, and execution mode through results and reports."
+    },
+    {
+      "id": "sweep-integration",
+      "description": "Every bounded sweep point preserves the selected backend/model identity, concurrency limits, cleanup, and typed partial failures without fallback."
+    },
+    {
+      "id": "development-boundary",
+      "description": "Deterministic fixtures qualify every supported backend cell without credentials; optional live checks add evidence but never block development completion."
+    },
+    {
+      "id": "privacy-and-no-fallback",
+      "description": "Catalogs, selections, logs, state, and receipts contain no credential values or raw provider payloads, and execution never silently changes backend or mode."
+    }
+  ],
+  "definition_of_done": [
+    "The canonical backend registry and model-capability matrix are mechanically exhaustive at the exact implementation head.",
+    "Catalog, selection, plan, full run, bounded sweep, result/report, comparison, fault, cleanup, and privacy fixtures pass for every supported backend.",
+    "Independent exact-head review, required hosted checks, signed/DCO merge, exact-main post-merge checks, and a privacy-safe receipt pass."
+  ],
+  "inputs": [
+    {
+      "id": "qualified-backends",
+      "description": "Exact-head canonical ASB backend registry after AR-1733, including OpenRouter and cli2key plus retained local/mock or replay modes."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "model-capability-matrix",
+      "description": "Exhaustive registry-bound catalog and selection semantics for every supported backend."
+    },
+    {
+      "id": "execution-parity-receipt",
+      "description": "Privacy-safe exact-head evidence for full run and bounded sweep execution across every supported backend cell."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "git",
+    "gh",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "credential-output",
+    "raw-provider-payload-persistence",
+    "silent-fallback",
+    "registry-omission",
+    "mandatory-live-credential",
+    "production-readiness-claim"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "mechanical",
+    "hosted"
+  ],
+  "gates": [
+    {
+      "id": "backend-matrix",
+      "description": "Registry-to-model-capability completeness and hostile selection tests pass."
+    },
+    {
+      "id": "run-sweep",
+      "description": "Every supported backend completes deterministic full-run and bounded-sweep fixtures with exact identity propagation."
+    },
+    {
+      "id": "privacy",
+      "description": "No secret, raw provider response, or silent backend/mode fallback enters output, state, or evidence."
+    }
+  ]
+}
