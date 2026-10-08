@@ -594,7 +594,13 @@
 
 ## Complete AR inventory
 
-### Open (8)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1747](../tasks/AR-1747-coordinator-unblock-vendor-adoption.md): Adopt Coordinator unblock support for AR-1722 | codex-asb-ar1747-vendor-20261008 | Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition. | Promote and claim; synchronize the reviewed upstream Coordinator development identity that adds provenance-checked unblock, then qualify the complete ASB state vendor closure and blocked-task transition fixtures. |
+
+### Open (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -603,7 +609,6 @@
 | P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Unclaimed | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -&gt; bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. |
 | P0 | [AR-1742](../tasks/AR-1742-protected-main-exact-tree-recovery.md): PR #505 exact-tree recovery | Unclaimed | Recover PR #505 protected-main exact-tree publication failure without rewriting history. | Promote after reviewing the preserved PR #505 mismatch and exact signed local integration procedure. |
 | P0 | [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md): Enforce protected-main admission for AR-1722 recovery | Unclaimed | Apply and independently verify ASB&#x27;s merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub. | Promote and claim after verifying the current GitHub settings/ruleset snapshot; apply and audit the checked-in protected-main contract without changing product source or weakening development review policy. |
-| P0 | [AR-1747](../tasks/AR-1747-coordinator-unblock-vendor-adoption.md): Adopt Coordinator unblock support for AR-1722 | Unclaimed | Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition. | Promote and claim; synchronize the reviewed upstream Coordinator development identity that adds provenance-checked unblock, then qualify the complete ASB state vendor closure and blocked-task transition fixtures. |
 | P1 | [AR-1728](../tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Unclaimed | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
 | P1 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md): Harden Goose diagnostic fixture determinism | Unclaimed | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. | Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics. |
 
@@ -638,4 +643,3 @@
 | P0 | [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md): Runtime-to-CLI replay transport boundary | Unclaimed | Provide a runtime-issued transport channel for primary strict replay. | Wire ReplayTransportClient into the primary replay dispatch and connect runtime-issued cassette service; add supervised egress/lifecycle evidence. |
 | P0 | [AR-1278](../tasks/AR-1278-primary-runtime-client.md): Primary replay runtime client handoff | Unclaimed | Connect the primary replay command to the runtime-issued transport client. | Promote after dependency verification; hand the runtime-issued replay client into primary argument dispatch and prove supervised lifecycle behavior. |
 | P0 | [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md): End-to-end primary replay runtime handoff | Unclaimed | Implement end-to-end runtime-owned execution for primary strict replay. | Promote after dependency verification; implement transport plus primary runtime-client handoff from protected main and prove full supervised lifecycle. |
-| P0 | [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md): Cross-crate replay process entrypoint | Unclaimed | Implement the cross-crate runtime process entrypoint for primary strict replay. | Extend replay-plan dispatch to invoke runtime-owned supervised process with argument-level command and cassette service; preserve denied egress/no-fallback and add lifecycle fault tests. Current signed head f92a86b provides bridge/binding baseline. |

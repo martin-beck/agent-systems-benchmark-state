@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1747](tasks/AR-1747-coordinator-unblock-vendor-adoption.md): Adopt Coordinator unblock support for AR-1722 | Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition. | Promote and claim; synchronize the reviewed upstream Coordinator development identity that adds provenance-checked unblock, then qualify the complete ASB state vendor closure and blocked-task transition fixtures. | codex-asb-ar1747-vendor-20261008 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -12,7 +18,6 @@ Never edit this file directly.
 | P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -> bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. | - |
 | P0 | [AR-1742](tasks/AR-1742-protected-main-exact-tree-recovery.md): PR #505 exact-tree recovery | Recover PR #505 protected-main exact-tree publication failure without rewriting history. | Promote after reviewing the preserved PR #505 mismatch and exact signed local integration procedure. | - |
 | P0 | [AR-1746](tasks/AR-1746-protected-main-admission-enforcement.md): Enforce protected-main admission for AR-1722 recovery | Apply and independently verify ASB's merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub. | Promote and claim after verifying the current GitHub settings/ruleset snapshot; apply and audit the checked-in protected-main contract without changing product source or weakening development review policy. | - |
-| P0 | [AR-1747](tasks/AR-1747-coordinator-unblock-vendor-adoption.md): Adopt Coordinator unblock support for AR-1722 | Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition. | Promote and claim; synchronize the reviewed upstream Coordinator development identity that adds provenance-checked unblock, then qualify the complete ASB state vendor closure and blocked-task transition fixtures. | - |
 | P1 | [AR-1728](tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. | - |
 | P1 | [AR-1735](tasks/AR-1735-goose-symlink-fixture-determinism.md): Harden Goose diagnostic fixture determinism | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. | Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics. | - |
 
