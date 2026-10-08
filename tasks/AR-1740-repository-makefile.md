@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T09:22:56+00:00",
+  "updated_at": "2026-10-08T09:23:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -50,3 +50,6 @@ quality gates, and never become a runtime or installed-user dependency.
   help/check-deps/build/install/clean/update/test targets, pinned Rust 1.93.0 and locked Cargo
   gates, actionable no-install diagnostics, safe repository-local staging and clean-tree/update
   guards. Added README usage and positive/negative tests/makefile.sh; focused script passes.
+
+- 2026-10-08T09:23:02+00:00: Recorded command exit 0; command argv SHA-256
+  99de9b5dc9b464fc09801648882783ba0bc151ae33972f6316812102ee2c4721.
