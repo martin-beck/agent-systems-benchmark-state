@@ -1,0 +1,11 @@
+AR-1740 default lifecycle receipt
+status=pass
+product_merge=d53e901677024741cdf0477c9e1efb5d0b664c02
+protected_base=bbe25d0c516b29a38a66908cbb025204dfe9e4d8
+reviewed_topic=d0c6926905642c95222f5acfc6bc1b00f75d63e7
+reviewed_tree=78d06a5281af02480784ea0d147da00b1bab0a4f
+merge_parents=bbe25d0c516b29a38a66908cbb025204dfe9e4d8,d0c6926905642c95222f5acfc6bc1b00f75d63e7
+local_protected_policy=pass
+hosted_workflows=all_required_pass
+default_order=update,build,test,install
+historical_recovery=AR-1742
