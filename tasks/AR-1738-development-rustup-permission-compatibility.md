@@ -9,9 +9,9 @@
   ],
   "id": "AR-1738",
   "next_action": "Claim an isolated worktree, reproduce current-main trusted_tool_invalid for RUSTUP_HOME, implement warning-only development permission/ownership handling, and requalify the exact paired lifecycle without changing stable or production policy.",
-  "observed_branch": "repair/ar-1738-development-rustup-permission-compatibility-v2",
+  "observed_branch": "repair/ar-1738-development-rustup-permission-compatibility",
   "observed_dirty": 0,
-  "observed_head": "1a5888ce1c96414015bbaf223ac42302871d47fe",
+  "observed_head": "f020b2d4fd65b92edf89a0db73a0b04c0b975684",
   "owner": "codex-ar1738-rustup-permission",
   "plan": "../plans/AR-1738-development-rustup-permission-compatibility.md",
   "priority": "P0",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Repair permissive development rustup permission acceptance",
-  "updated_at": "2026-10-08T08:55:40+00:00",
+  "updated_at": "2026-10-08T08:56:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility"
 }
 ---
