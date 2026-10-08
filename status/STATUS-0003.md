@@ -551,6 +551,34 @@
 | Summary | Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits. |
 | Next action | Promote after AR-1732; run independent fake and opt-in live qualification and publish user-facing setup/status/reset guidance. |
 
+### AR-1734 — Propagate validated development tools to installed TUI
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | codex-ar1734-planning |
+| Parent | None |
+| Children | None |
+| Summary | Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch. |
+| Next action | Claim in an isolated ASB worktree; reproduce the AR-1713 installed-launch failure, then pass only validated development tool identities across the scrubbed broker environment with hostile replacement tests. |
+
+### AR-1735 — Harden Goose diagnostic fixture determinism
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. |
+| Next action | Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics. |
+
 
 ## Dependency graph
 
@@ -1343,6 +1371,8 @@ flowchart LR
         AR_1731["AR-1731 - Planned"]:::status_planned
         AR_1732["AR-1732 - Planned"]:::status_planned
         AR_1733["AR-1733 - Planned"]:::status_planned
+        AR_1734["AR-1734 - In progress"]:::status_in_progress
+        AR_1735["AR-1735 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3187,6 +3217,8 @@ flowchart LR
     AR_1723 --> AR_1724
     AR_1723 --> AR_1725
     AR_1724 --> AR_1725
+    AR_1726 --> AR_1734
+    AR_1727 --> AR_1734
     AR_1728 --> AR_1729
     AR_1728 --> AR_1730
     AR_1729 --> AR_1731
@@ -3380,5 +3412,3 @@ flowchart LR
 | [AR-1006](../tasks/AR-1006-distributed-workers.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | None |
 | [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md), [AR-1016](../tasks/AR-1016-measurement-integration-audit.md), [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
 | [AR-1008](../tasks/AR-1008.md) | None | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) |
-| [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md), [AR-1052](../tasks/AR-1052-tmux-server-authority-portability.md), [AR-1054](../tasks/AR-1054-tmux-socket-connect-completion.md), [AR-1056](../tasks/AR-1056-tmux-socket-connect-diagnostics.md), [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md), [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) |
-| [AR-1011](../tasks/AR-1011-tui-ux-quality.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1170](../tasks/AR-1170.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) |
