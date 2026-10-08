@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1734](tasks/AR-1734-development-tui-tool-environment.md): Propagate validated development tools to installed TUI | Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch. | Record spec acceptance for exact-main evidence, release done, reconcile, snapshot, and verify doctor --live. | codex-ar1734-pr502-integrate |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |

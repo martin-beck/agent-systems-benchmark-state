@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1734-development-tui-tool-environment",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T04:45:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1726",
     "AR-1727"
@@ -12,7 +12,7 @@
   "observed_branch": "repair/ar-1734-development-tui-tool-environment",
   "observed_dirty": 0,
   "observed_head": "40f618b9389c594c4274bc08195f93f3cd2dd547",
-  "owner": "codex-ar1734-pr502-integrate",
+  "owner": "",
   "plan": "../plans/AR-1734-development-tui-tool-environment.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1734.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T02:58:07+00:00",
+  "updated_at": "2026-10-08T02:58:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1734-development-tui-tool-environment"
 }
 ---
@@ -315,3 +315,8 @@ and production policy remains fail closed and unchanged.
 - 2026-10-08T02:58:07+00:00: Accepted against exact signed merge
   1a5888ce1c96414015bbaf223ac42302871d47fe: approved tree and parents verified, focused local gates
   passed, and all nine immutable exact-main workflow runs are terminal success.
+
+- 2026-10-08T02:58:15+00:00: Completed: PR #502 merged through local signed merge integrity as
+  1a5888ce1c96414015bbaf223ac42302871d47fe; exact tree/parents/signature/DCO verified, focused
+  post-merge gates passed, all nine exact-main push workflows including cross-repository
+  installed-TUI qualification are terminal success, and spec acceptance is recorded.

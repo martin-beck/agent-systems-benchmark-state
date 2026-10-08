@@ -555,11 +555,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1734-pr502-integrate |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch. |
@@ -1371,7 +1371,7 @@ flowchart LR
         AR_1731["AR-1731 - Planned"]:::status_planned
         AR_1732["AR-1732 - Planned"]:::status_planned
         AR_1733["AR-1733 - Planned"]:::status_planned
-        AR_1734["AR-1734 - In progress"]:::status_in_progress
+        AR_1734["AR-1734 - Done"]:::status_done
         AR_1735["AR-1735 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
