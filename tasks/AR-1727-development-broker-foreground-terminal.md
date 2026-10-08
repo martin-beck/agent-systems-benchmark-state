@@ -7,7 +7,7 @@
     "AR-1590"
   ],
   "id": "AR-1727",
-  "next_action": "Independently review PR #500 exact head 420b57d20a6c58eb52095cb344e3bf601ec8c2b2/tree bd5cc8111417b7b9031988b0c6e354db3354ac0f, verify the repaired foreground-owner and signal-mask invariants plus all terminal hosted checks, then repair findings or merge through signed integrity and watch post-merge CI.",
+  "next_action": "Merge independently approved PR #500 exact head 420b57d20a6c58eb52095cb344e3bf601ec8c2b2/tree bd5cc8111417b7b9031988b0c6e354db3354ac0f through signed merge integrity, verify the exact merge object/tree/parents/signature/DCO and terminal-green post-merge CI, then requalify downstream asb-tui AR-1654.",
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:21:07+00:00",
+  "updated_at": "2026-10-08T00:21:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -279,3 +279,14 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-08T00:21:07+00:00: Recorded command exit 0; command argv SHA-256
   3f06f2fc80c2df9f476f2cef4be306a4528006ec57779d004e8e0a6b01cbf0c8.
+
+- 2026-10-08T00:21:39+00:00: Independent rereview approved PR #500 exact head
+  420b57d20a6c58eb52095cb344e3bf601ec8c2b2/tree bd5cc8111417b7b9031988b0c6e354db3354ac0f with no
+  merge-blocking findings. Reproduced all three real controlling-PTY paths: successful child
+  foreground assignment and exact caller restoration; pre-assignment owner drift with typed failure,
+  child-group reaping, and intervening-owner preservation; post-assignment owner drift with
+  preservation and exact signal-mask restoration. All 39 development tests and full asb-cli 228-unit
+  plus integration/doc targets passed; strict Clippy completed clean. All 14 exact-head hosted
+  checks are terminal green. Remote ref/tree, both verified SSH signatures, matching DCO, safe-Rust
+  scope, privacy, and diff hygiene verified. Exact-head GitHub review comment records the distinct
+  development reviewer result.
