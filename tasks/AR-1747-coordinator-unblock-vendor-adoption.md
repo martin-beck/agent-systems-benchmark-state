@@ -12,11 +12,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1747.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Adopt Coordinator unblock support for AR-1722",
-  "updated_at": "2026-10-08T17:07:48+00:00",
+  "updated_at": "2026-10-08T20:13:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1747-coordinator-unblock-vendor"
 }
 ---
@@ -114,3 +114,10 @@ fabricate a pause, edit AR-1722 directly, or change ASB product runtime code.
   sync-development resync. PR #106 remains open and must not merge. Downstream private TLC admission
   wiring and scanner-safe ASB fixtures are locally repaired and focused-green; no exact vendored
   byte was hand-edited.
+
+- 2026-10-08T20:13:20+00:00: External dependency is resolved by canonical signed merge
+  d6556e167d0edaa81e2a5baa703e456ad5dffea7 from reviewed PR #107 and completed AR-1749. Canonical
+  main now vendors official Coordinator 113dc61029f0e0c57bc7832e1e41430eafa17e73/tree
+  45ae6988ccd1c88230f262d735ff24d9d9b3bc4b with manifest SHA-256
+  02149740b14a554d784e2f0fd8572a67dbf3faabe379fc39b4e9703de74e9936 and exposes provenance-checked
+  unblock without fabricated pause state.
