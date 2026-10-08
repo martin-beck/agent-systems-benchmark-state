@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1743-make-update-lockfile",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T13:38:31+00:00",
+  "claim_expires": "2026-10-08T13:40:26+00:00",
   "depends_on": [],
   "id": "AR-1743",
   "next_action": "Monitor all protected-main workflows for exact merge fd956d857970f039db0a4aad03c9e15e59b13da6; after every required workflow is green, record receipts and release AR-1743 done.",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Repair Make update lockfile handling",
-  "updated_at": "2026-10-08T11:38:31+00:00",
+  "updated_at": "2026-10-08T11:40:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1743-make-update-lockfile"
 }
 ---
@@ -106,3 +106,5 @@ unrelated product changes and record the exact failure and recovery evidence.
   confirms signed/DCO merge. Protected-main workflows are running for exact merge.
 
 - 2026-10-08T11:38:31+00:00: Heartbeat by codex-ar1743-make-update.
+
+- 2026-10-08T11:40:26+00:00: Heartbeat by codex-ar1743-make-update.
