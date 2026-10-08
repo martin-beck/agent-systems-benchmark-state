@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #511 | `repair/ar-1744-make-test-scratch-isolation@cbcfa025ca31` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Repair make test scratch-root isolation |
-| #512 | `feature/ar-1745-user-local-install-prefix@250ef6658e0c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: install ASB into user-local bin by default |
+| #512 | `feature/ar-1745-user-local-install-prefix@250ef6658e0c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: install ASB into user-local bin by default |
 
 ## Recent workflows
 
@@ -31,9 +31,9 @@ Generated from local Git and GitHub. Do not edit.
 | 37784417892 | `250ef6658e0c` | pull_request | Fault assurance | completed:success |
 | 37784417891 | `250ef6658e0c` | pull_request | Credential-free benchmark path | completed:success |
 | 37784417884 | `250ef6658e0c` | pull_request | Cross-repository development broker qualification | completed:success |
-| 37784417879 | `250ef6658e0c` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37784417879 | `250ef6658e0c` | pull_request | Emulated aarch64 portability | completed:success |
 | 37784417866 | `250ef6658e0c` | pull_request | Hosted portability and native qualification | completed:success |
 | 37784417859 | `250ef6658e0c` | pull_request | Formal assurance | completed:success |
-| 37784417849 | `250ef6658e0c` | pull_request | Repository quality | in_progress:- |
+| 37784417849 | `250ef6658e0c` | pull_request | Repository quality | completed:success |
 | 37783502559 | `cbcfa025ca31` | pull_request | Huawei MIT source headers | completed:success |
 | 37783502257 | `cbcfa025ca31` | pull_request | Repository quality | completed:success |
