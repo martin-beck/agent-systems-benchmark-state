@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T10:00:50+00:00",
+  "updated_at": "2026-10-08T10:11:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -156,3 +156,6 @@ quality gates, and never become a runtime or installed-user dependency.
   exact-base integration worktree /tmp/asb-pr507-integration at a9abcf2 is prepared but
   intentionally not integrated. Parent coordination requires waiting for AR-1741/PR508 provenance
   recovery before creating another GitHub merge against invalid protected main.
+
+- 2026-10-08T10:11:14+00:00: Recorded command exit 0; command argv SHA-256
+  b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
