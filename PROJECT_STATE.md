@@ -24,14 +24,14 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37712243605 | `736a65cd8904` | push | Repository quality | in_progress:- |
-| 37712243562 | `736a65cd8904` | push | Credential-free benchmark path | in_progress:- |
-| 37712243544 | `736a65cd8904` | push | Fault assurance | in_progress:- |
+| 37712243562 | `736a65cd8904` | push | Credential-free benchmark path | completed:success |
+| 37712243544 | `736a65cd8904` | push | Fault assurance | completed:success |
 | 37712243526 | `736a65cd8904` | push | Huawei MIT source headers | completed:success |
-| 37712243496 | `736a65cd8904` | push | Rust verification | in_progress:- |
+| 37712243496 | `736a65cd8904` | push | Rust verification | completed:success |
 | 37712243495 | `736a65cd8904` | push | Emulated aarch64 portability | in_progress:- |
-| 37712243494 | `736a65cd8904` | push | Hosted portability and native qualification | in_progress:- |
-| 37712243491 | `736a65cd8904` | push | Cross-repository development broker qualification | in_progress:- |
-| 37712243463 | `736a65cd8904` | push | Formal assurance | in_progress:- |
+| 37712243494 | `736a65cd8904` | push | Hosted portability and native qualification | completed:success |
+| 37712243491 | `736a65cd8904` | push | Cross-repository development broker qualification | completed:success |
+| 37712243463 | `736a65cd8904` | push | Formal assurance | completed:success |
 | 37711026550 | `acd7a146baba` | pull_request | Huawei MIT source headers | completed:success |
 | 37711026504 | `acd7a146baba` | pull_request | Emulated aarch64 portability | completed:success |
 | 37711026459 | `acd7a146baba` | pull_request | Rust verification | completed:success |
