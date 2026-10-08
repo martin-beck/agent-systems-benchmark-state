@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Apply and independently verify ASB's merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Enforce protected-main admission for AR-1722 recovery",
-  "updated_at": "2026-10-08T16:17:11+00:00",
+  "updated_at": "2026-10-08T16:17:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1746-protected-main-admission"
 }
 ---
@@ -42,3 +42,6 @@ mandatory.
   GitHub admission mismatch and no overlapping worker owns repository settings.
 
 - 2026-10-08T16:17:11+00:00: Claimed by ar1746_protected_main_admission_20261008.
+
+- 2026-10-08T16:17:43+00:00: Recorded command exit 0; command argv SHA-256
+  94f02abdfe9b939aeb6a1a7498761e025303dd44291c9a4f26c429f01bcdabb9.
