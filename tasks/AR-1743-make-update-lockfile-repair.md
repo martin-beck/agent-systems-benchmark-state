@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Repair Make update lockfile handling",
-  "updated_at": "2026-10-08T11:44:10+00:00",
+  "updated_at": "2026-10-08T11:44:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1743-make-update-lockfile"
 }
 ---
@@ -112,3 +112,6 @@ unrelated product changes and record the exact failure and recovery evidence.
 - 2026-10-08T11:41:42+00:00: Heartbeat by codex-ar1743-make-update.
 
 - 2026-10-08T11:44:10+00:00: Heartbeat by codex-ar1743-make-update.
+
+- 2026-10-08T11:44:54+00:00: Recorded command exit 0; command argv SHA-256
+  94d0b15b8a4e4d6f2769bdd51448d90b53c942bde97ff2001792dc5e68ef3fbc.
