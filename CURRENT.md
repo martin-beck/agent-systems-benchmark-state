@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1726](tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | Rerun failed exact-main Emulated aarch64 workflow 37712243495 after its unrelated Goose symlink fixture returned a normal failed outcome instead of the expected setup error; if it repeats, isolate and repair the flaky fixture before closing AR-1726. Also await Repository quality. | codex-ar1726-local-integration |
+| P0 | [AR-1726](tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | No further AR-1726 implementation action; signed main 736a65cd8904b8f4a6f1715fc86ae1c854fe2232 passed every required exact-main workflow after one documented successful rerun of the unrelated nondeterministic Goose symlink fixture. | codex-ar1726-local-integration |
 
 ## Open
 

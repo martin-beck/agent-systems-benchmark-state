@@ -9,7 +9,7 @@
     "AR-1637"
   ],
   "id": "AR-1726",
-  "next_action": "Rerun failed exact-main Emulated aarch64 workflow 37712243495 after its unrelated Goose symlink fixture returned a normal failed outcome instead of the expected setup error; if it repeats, isolate and repair the flaky fixture before closing AR-1726. Also await Repository quality.",
+  "next_action": "No further AR-1726 implementation action; signed main 736a65cd8904b8f4a6f1715fc86ae1c854fe2232 passed every required exact-main workflow after one documented successful rerun of the unrelated nondeterministic Goose symlink fixture.",
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "acd7a146babaf39371e4cabe04dd2aa084df8c6c",
@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T01:25:39+00:00",
+  "updated_at": "2026-10-08T01:34:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -514,3 +514,9 @@ review, protected merge, and terminal-green post-merge CI.
 
 - 2026-10-08T01:25:39+00:00: Recorded command exit 0; command argv SHA-256
   a41fac7de65f2a7c85b019861bec7330fc78da5661d07a6556c0ca6d244d5fc3.
+
+- 2026-10-08T01:34:17+00:00: All nine required exact-main workflows are now terminal green at signed
+  merge 736a65c. Emulated aarch64 attempt 1 exposed unrelated nondeterminism in
+  goose::tests::diagnostic_and_symlink_fail_closed; exact-main attempt 2 passed. Preserve that
+  observation for a separate fixture-hardening AR; AR-1726 descriptor-bound rustup behavior, review,
+  merge integrity, and post-merge qualification are complete.
