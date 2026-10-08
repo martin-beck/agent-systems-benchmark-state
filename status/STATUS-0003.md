@@ -787,7 +787,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation. |
-| Next action | Obtain a fresh independent exact-head review of PR #517 at cb8be7e4ea8866a21ae999af1aee062544622896 tree 40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde and wait for every hosted check to succeed. Do not merge or execute the live ruleset-only PUT until root issues the explicit execution gate bound to this head. |
+| Next action | Obtain independent receipt review of the exact AR-1750 live transaction and postmerge evidence. Do not release AR-1750 or unblock AR-1748 until that review accepts ruleset ID 24750310, merge 31ca7a48, final settings, two final audits, and exact-main workflows. |
 
 
 ## Dependency graph

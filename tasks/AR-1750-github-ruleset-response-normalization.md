@@ -8,7 +8,7 @@
     "AR-1431"
   ],
   "id": "AR-1750",
-  "next_action": "Obtain a fresh independent exact-head review of PR #517 at cb8be7e4ea8866a21ae999af1aee062544622896 tree 40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde and wait for every hosted check to succeed. Do not merge or execute the live ruleset-only PUT until root issues the explicit execution gate bound to this head.",
+  "next_action": "Obtain independent receipt review of the exact AR-1750 live transaction and postmerge evidence. Do not release AR-1750 or unblock AR-1748 until that review accepts ruleset ID 24750310, merge 31ca7a48, final settings, two final audits, and exact-main workflows.",
   "observed_branch": "repair/ar-1750-ruleset-response-normalization",
   "observed_dirty": 0,
   "observed_head": "cb8be7e4ea8866a21ae999af1aee062544622896",
@@ -20,9 +20,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T22:25:55+00:00",
+  "updated_at": "2026-10-08T22:26:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -286,3 +286,18 @@ independent review, all hosted checks, and a root execution gate are recorded.
 
 - 2026-10-08T22:25:55+00:00: Recorded command exit 0; command argv SHA-256
   a619b7389b7ef03b9a4ee0f43d2faeb3fc633593a485af8ff2495c67666c8faf.
+
+- 2026-10-08T22:26:44+00:00: Execution gate completed without retry or ambiguous effect. One
+  recovery-only apply from reviewed cb8be7e/tree40ab returned ruleset-id=24750310
+  ownership=readback-verified and performed no settings PATCH; two separate ruleset-only ID-bound
+  audits passed. Signed exact-tree merge 31ca7a481fca8b79bfbff126b92db6c6118beb7c published with
+  parents dc19bb1,cb8be7e, tree40ab69c, valid ED25519 signature and DCO. Nine exact-main workflows
+  passed initially; provenance run 37852141065 attempt1 failed only because GitHub had not yet
+  exposed the PR association, then exact commits/31ca/pulls returned solely PR517 and the one
+  permitted rerun attempt2 passed. All ten exact-main workflows are green:
+  37852141052,1065,1069,1078,1086,1097,1128,1151,1152,1200. One normal guarded apply then returned
+  ruleset-id=24750310 ownership=readback-verified; two separate normal ID-bound audits passed. Final
+  bounded readback: repository 1359260742 main; merge=true squash=false rebase=false auto=false
+  signoff=true; active branch ruleset 24750310 on refs/heads/main with approval count0,
+  last-push=false, reviewers=[], server normalization extra-unattributed=true. Await independent
+  receipt review; no release yet.
