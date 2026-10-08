@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Repair permissive development rustup permission acceptance",
-  "updated_at": "2026-10-08T08:56:00+00:00",
+  "updated_at": "2026-10-08T08:56:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility"
 }
 ---
@@ -77,3 +77,6 @@ weaken stable or production installation policy.
 
 - 2026-10-08T08:55:40+00:00: Recorded command exit 0; command argv SHA-256
   31d1e8aaa2b35c43bc645183fb33b0565ea9e5dc3d3676a88b278b2bdf9bcd44.
+
+- 2026-10-08T08:56:06+00:00: Recorded command exit 0; command argv SHA-256
+  38ed3a475a2a1584f533113258ea64a0f8e6e79594a4638e9acf13582ec58269.
