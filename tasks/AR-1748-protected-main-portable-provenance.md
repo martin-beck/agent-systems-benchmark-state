@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1748-portable-main-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T23:29:42+00:00",
   "depends_on": [
     "AR-1750"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1748-portable-main-provenance",
   "observed_dirty": 0,
   "observed_head": "7c3e9e3eca962474c03db9b77dbe09a30e95099d",
-  "owner": "",
+  "owner": "codex-asb-ar1748-closeout-20261009",
   "plan": "../plans/AR-1748-protected-main-portable-provenance.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1748.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
-  "task_revision": 143,
+  "task_revision": 144,
   "title": "Portable protected-main provenance and capability admission",
-  "updated_at": "2026-10-08T22:29:37+00:00",
+  "updated_at": "2026-10-08T22:29:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
 }
 ---
@@ -391,3 +391,5 @@ closed with an exact typed blocker rather than weakening it.
   #517/merge 31ca7a4, active ruleset ID 24750310, final protected repository settings, two clean
   final audits, all exact-main workflows green, and live coordinator doctor green. Reopen AR-1748
   solely for receipt acceptance and release.
+
+- 2026-10-08T22:29:42+00:00: Claimed by codex-asb-ar1748-closeout-20261009.
