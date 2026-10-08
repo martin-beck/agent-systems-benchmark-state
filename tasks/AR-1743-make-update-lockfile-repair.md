@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair make update so dependency refresh never combines Cargo lockfile mutation with --locked and fails with cannot update the lock file.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Repair Make update lockfile handling",
-  "updated_at": "2026-10-08T11:25:27+00:00",
+  "updated_at": "2026-10-08T11:25:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1743-make-update-lockfile"
 }
 ---
@@ -68,3 +68,6 @@ unrelated product changes and record the exact failure and recovery evidence.
 
 - 2026-10-08T11:25:27+00:00: Recorded command exit 0; command argv SHA-256
   2003ccacbeb523d0efa23a6957cac520ff64f922eee02ef8bf88330f687e4bb9.
+
+- 2026-10-08T11:25:48+00:00: Recorded command exit 0; command argv SHA-256
+  838272a685de70b90cdded4f6a050dbbc2e125757d6e83ecba2574205395dc9f.
