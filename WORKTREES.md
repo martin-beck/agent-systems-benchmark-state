@@ -373,7 +373,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility` | `repair/ar-1738-development-rustup-permission-compatibility` | `f020b2d4fd65` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `fb6d81d5c103` | 2 | behind 5, ahead 2 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
-| `agent-systems-benchmark-ar-1740-repository-makefile` | `feature/ar-1740-repository-makefile` | `79e5a976d6f6` | 0 | behind 3, ahead 1 |
+| `agent-systems-benchmark-ar-1740-repository-makefile` | `feature/ar-1740-repository-makefile` | `8fdda72fa7f1` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738` | `repair/ar-1741-signed-main-recovery-ar1738` | `a9abcf2e63f7` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 299, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 299, ahead 830 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 299, ahead 89 |
