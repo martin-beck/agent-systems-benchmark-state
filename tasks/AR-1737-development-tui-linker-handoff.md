@@ -8,7 +8,7 @@
     "AR-1734"
   ],
   "id": "AR-1737",
-  "next_action": "Wait only for exact post-merge Emulated aarch64 run 37765241487 on merge 9aeea48c to finish green, then release done and reconcile.",
+  "next_action": "Acceptance evidence is complete; publish the receipt, release AR-1737 done, reconcile, and run live doctor.",
   "observed_branch": "repair/ar-1737-development-tui-linker-handoff",
   "observed_dirty": 0,
   "observed_head": "199bd00a95c2c8cb1559851da9655e58f80f9998",
@@ -16,13 +16,21 @@
   "plan": "../plans/AR-1737-development-tui-linker-handoff.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:0737dac7de29099d22af47bcf87aedb23326a4db3e3b087ac110a60a9809681d",
+    "evidence_ref": "quality/AR-1737-development-tui-linker-handoff-receipt.txt",
+    "spec_ref": "specs/AR-1737.json",
+    "spec_revision": 2,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1737.json",
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Repair development TUI linker handoff",
-  "updated_at": "2026-10-08T10:55:04+00:00",
+  "updated_at": "2026-10-08T11:02:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1737-development-tui-linker-handoff"
 }
 ---
@@ -242,3 +250,8 @@ its `collect2` helper cannot discover `ld` because ambient `PATH` is empty.
   reached/rendered the TUI but synthetic q timing hit the bounded 15s launcher timeout; this is not
   used as acceptance evidence because the exact hosted paired PTY test is green. Eight of nine exact
   post-merge workflows are green; only Emulated aarch64 remains in progress, with no failures.
+
+- 2026-10-08T11:02:22+00:00: Recorded hosted spec acceptance for specs/AR-1737.json revision 2
+  against quality/AR-1737-development-tui-linker-handoff-receipt.txt digest
+  sha256:0737dac7de29099d22af47bcf87aedb23326a4db3e3b087ac110a60a9809681d. Exact protected-main
+  merge 9aeea48c and all nine exact post-merge workflows are green.

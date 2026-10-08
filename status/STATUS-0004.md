@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-0904](../tasks/AR-0904-contract-consistency.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0905](../tasks/AR-0905-recovery-models.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | None |
 | [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) |
 | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md) | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) |
@@ -587,7 +586,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md): Repair development TUI linker handoff | codex-asb-ar1737-linker-handoff | Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH. | Wait only for exact post-merge Emulated aarch64 run 37765241487 on merge 9aeea48c to finish green, then release done and reconcile. |
+| P0 | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md): Repair development TUI linker handoff | codex-asb-ar1737-linker-handoff | Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH. | Acceptance evidence is complete; publish the receipt, release AR-1737 done, reconcile, and run live doctor. |
 | P1 | [AR-1739](../tasks/AR-1739-easy-channel-lifecycle.md): Add easy channel build, install, update, and test lifecycle | codex-ar1739-easy-lifecycle | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. | Post-merge exact main 507559f workflows active; Repository quality is rerunning after transient analyzer HTTP 500 (run 37767084162), while remaining hosted workflows continue. Release only after every exact-main workflow is green. |
 
 ### Open (6)
