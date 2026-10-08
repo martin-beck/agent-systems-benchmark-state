@@ -380,6 +380,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1746-protected-main-admission` | `repair/ar-1746-protected-main-admission` | `fee04c29616b` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar-1748-head-projection` | `repair/ar-1748-head-projection` | `e1e8f8b69c19` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1748-portable-main-provenance` | `repair/ar-1748-portable-main-provenance` | `7c3e9e3eca96` | 0 | behind 3, ahead 0 |
+| `agent-systems-benchmark-ar-1750-ruleset-response-normalization` | `repair/ar-1750-ruleset-response-normalization` | `dc19bb1b758a` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 334, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 334, ahead 830 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 334, ahead 89 |
