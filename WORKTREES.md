@@ -370,8 +370,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1727-development-broker-foreground-terminal` | `repair/ar-1727-development-broker-foreground-terminal` | `420b57d20a6c` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-ar-1734-development-tui-tool-environment` | `repair/ar-1734-development-tui-tool-environment` | `40f618b9389c` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 9, ahead 0 |
-| `agent-systems-benchmark-ar-1737-development-tui-linker-handoff` | `repair/ar-1737-development-tui-linker-handoff` | `bb9c35cdea59` | 1 | behind 2, ahead 1 |
-| changed files | - | - | - | `crates/asb-cli/src/tui.rs` |
+| `agent-systems-benchmark-ar-1737-development-tui-linker-handoff` | `repair/ar-1737-development-tui-linker-handoff` | `6d3298aa222c` | 0 | behind 2, ahead 1 |
 | `agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility` | `repair/ar-1738-development-rustup-permission-compatibility` | `f020b2d4fd65` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `f38594e40d36` | 0 | behind 2, ahead 5 |
 | `agent-systems-benchmark-ar-1740-repository-makefile` | `feature/ar-1740-repository-makefile` | `d0c692690564` | 0 | behind 1, ahead 0 |
