@@ -639,11 +639,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1740-makefile |
 | Parent | None |
 | Children | None |
 | Summary | Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows. |
@@ -1447,7 +1447,7 @@ flowchart LR
         AR_1737["AR-1737 - Open"]:::status_open
         AR_1738["AR-1738 - In progress"]:::status_in_progress
         AR_1739["AR-1739 - In progress"]:::status_in_progress
-        AR_1740["AR-1740 - Open"]:::status_open
+        AR_1740["AR-1740 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3481,4 +3481,3 @@ flowchart LR
 | [AR-0904](../tasks/AR-0904-contract-consistency.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0905](../tasks/AR-0905-recovery-models.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | None |
 | [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) |
-| [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md) | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) |
