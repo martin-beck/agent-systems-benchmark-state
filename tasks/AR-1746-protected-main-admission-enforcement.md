@@ -10,8 +10,8 @@
   "id": "AR-1746",
   "next_action": "Promote and claim after verifying the current GitHub settings/ruleset snapshot; apply and audit the checked-in protected-main contract without changing product source or weakening development review policy.",
   "observed_branch": "repair/ar-1746-protected-main-admission",
-  "observed_dirty": 3,
-  "observed_head": "5e8e5b7fdb04a50950e0790d9d66c605e7978606",
+  "observed_dirty": 0,
+  "observed_head": "fee04c29616b56cac8c54f1afd4539bedce7dee2",
   "owner": "ar1746_protected_main_admission_20261008",
   "plan": "../plans/AR-1746-protected-main-admission-enforcement.md",
   "priority": "P0",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Apply and independently verify ASB's merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Enforce protected-main admission for AR-1722 recovery",
-  "updated_at": "2026-10-08T16:32:19+00:00",
+  "updated_at": "2026-10-08T16:32:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1746-protected-main-admission"
 }
 ---
