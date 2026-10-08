@@ -8,7 +8,7 @@
   "next_action": "Create a fresh recovery worktree from protected main 2f7387e, prepare a minimal signed+DCO forward-only descendant PR, and integrate it only with tools/integration/merge_pr.py after independent review.",
   "observed_branch": "repair/ar-1741-signed-main-recovery-ar1738",
   "observed_dirty": 0,
-  "observed_head": "a9abcf2e63f761e314593e9abc6bf074b7418e5e",
+  "observed_head": "0c100e4624a6dc3972660dc24713940d87753709",
   "owner": "codex-ar1738-rustup-permission",
   "plan": "../plans/AR-1741-signed-main-recovery-ar1738.md",
   "priority": "P0",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Signed protected-main recovery for AR-1738",
-  "updated_at": "2026-10-08T09:49:37+00:00",
+  "updated_at": "2026-10-08T09:50:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738"
 }
 ---
