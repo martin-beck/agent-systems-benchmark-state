@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1743",
-  "next_action": "Monitor all protected-main workflows for exact merge fd956d857970f039db0a4aad03c9e15e59b13da6; after every required workflow is green, record receipts and release AR-1743 done.",
+  "next_action": "Released; preserve the signed merge, receipt, and all-green protected-main evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
