@@ -593,6 +593,20 @@
 | Summary | Make every supported model-bearing backend enumerate selectable models and carry the exact selection through complete run and sweep execution. |
 | Next action | Promote after AR-1733; inventory the canonical backend registry and implement catalog, selection, run, and sweep parity with exhaustive fixtures. |
 
+### AR-1737 — Repair development TUI linker handoff
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH. |
+| Next action | Reproduce the exact env-cleared development materializer failure, bind the validated linker search root in the effective Cargo/rustc flags, and requalify source-built install, upgrade, and bare launch without widening PATH. |
+
 
 ## Dependency graph
 
@@ -1388,6 +1402,7 @@ flowchart LR
         AR_1734["AR-1734 - Done"]:::status_done
         AR_1735["AR-1735 - Open"]:::status_open
         AR_1736["AR-1736 - Planned"]:::status_planned
+        AR_1737["AR-1737 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3233,6 +3248,7 @@ flowchart LR
     AR_1723 --> AR_1725
     AR_1724 --> AR_1725
     AR_1726 --> AR_1734
+    AR_1726 --> AR_1737
     AR_1727 --> AR_1734
     AR_1728 --> AR_1729
     AR_1728 --> AR_1730
@@ -3241,6 +3257,7 @@ flowchart LR
     AR_1731 --> AR_1732
     AR_1732 --> AR_1733
     AR_1733 --> AR_1736
+    AR_1734 --> AR_1737
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3426,5 +3443,3 @@ flowchart LR
 | [AR-1004](../tasks/AR-1004-reliability-fairness.md) | [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md) | None |
 | [AR-1005](../tasks/AR-1005-trace-interoperability.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | None |
 | [AR-1006](../tasks/AR-1006-distributed-workers.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | None |
-| [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md), [AR-1016](../tasks/AR-1016-measurement-integration-audit.md), [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
-| [AR-1008](../tasks/AR-1008.md) | None | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) |
