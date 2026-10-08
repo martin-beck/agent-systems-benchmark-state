@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1744.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T00:00:00+00:00",
+  "updated_at": "2026-10-08T12:40:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -45,3 +45,6 @@ private bounded fixtures, cleanup guarantees, and all existing positive and
 negative path checks. Add regression coverage for the Make invocation and the
 named validated-linker environment test, update documentation only if needed,
 and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
+
+- 2026-10-08T12:40:57+00:00: Dependencies verified; reproduce and repair current-main make test
+  scratch isolation.
