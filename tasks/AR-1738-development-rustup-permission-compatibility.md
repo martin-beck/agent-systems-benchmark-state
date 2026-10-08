@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Repair permissive development rustup permission acceptance",
-  "updated_at": "2026-10-08T08:54:59+00:00",
+  "updated_at": "2026-10-08T08:55:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility"
 }
 ---
@@ -71,3 +71,6 @@ weaken stable or production installation policy.
   321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
 
 - 2026-10-08T08:54:59+00:00: Heartbeat by codex-ar1738-rustup-permission.
+
+- 2026-10-08T08:55:02+00:00: Recorded command exit 0; command argv SHA-256
+  0083d04456ae6d9bf112a7c160d29830d425d2d9555172f67618debcc58cbb04.
