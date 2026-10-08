@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1740.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "developer-only",
+      "description": "The Makefile is optional developer tooling and no runtime, installed-user, or release path requires Make."
+    },
+    {
+      "id": "dependency-diagnostics",
+      "description": "check-deps detects missing or mismatched Cargo, pinned Rust toolchain, target, and required host utilities without installing or downloading anything, and prints actionable remediation."
+    },
+    {
+      "id": "standard-targets",
+      "description": "help, check-deps, build, install, clean, update, and test targets execute bounded documented workflows with safe defaults and overridable paths."
+    },
+    {
+      "id": "gate-parity",
+      "description": "Build and test targets retain locked workspace, formatting, Clippy, documentation, and applicable quality-gate semantics rather than creating weaker substitutes."
+    },
+    {
+      "id": "safe-mutation",
+      "description": "Install, clean, and update refuse unsafe prefixes, dirty source trees, ambiguous toolchains, or destructive paths and remain bounded to the repository and configured staging root."
+    }
+  ],
+  "definition_of_done": [
+    "Signed+DCO Makefile and supporting test/documentation changes are independently reviewed and merged on protected ASB main.",
+    "Positive and negative dependency, path, clean-tree, and target tests pass.",
+    "Exact current-main build/install/clean/update/test walkthrough and required hosted checks pass."
+  ],
+  "inputs": [
+    {
+      "id": "development-docs",
+      "description": "ASB DEVELOPMENT.md, QUALITY.md, and QUALITY_GATES.md command and storage boundaries."
+    },
+    {
+      "id": "cargo-workspace",
+      "description": "Pinned Rust workspace and existing locked quality commands."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "developer-makefile",
+      "description": "A documented, dependency-checking Makefile for common ASB source development operations."
+    }
+  ],
+  "allowed_tools": ["cargo", "rustup", "git", "make", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["implicit-package-install", "floating-toolchain", "unsafe-clean", "forced-git-update", "runtime-make-dependency"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental", "hosted"],
+  "gates": [
+    {
+      "id": "focused",
+      "description": "Make target, dependency, path-safety, and negative behavior tests pass."
+    },
+    {
+      "id": "workspace",
+      "description": "The Makefile reproduces the documented locked build and test gates."
+    },
+    {
+      "id": "hosted",
+      "description": "Exact reviewed head and post-merge required workflows pass."
+    }
+  ]
+}
+
