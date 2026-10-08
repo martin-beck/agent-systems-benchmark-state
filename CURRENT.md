@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1747](tasks/AR-1747-coordinator-unblock-vendor-adoption.md): Adopt Coordinator unblock support for AR-1722 | Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition. | Release complete: canonical main already contains the stricter official Coordinator 113dc610 vendor adoption through reviewed PR #107/signed merge d6556e1; stale superseded PR #106 is closed unmerged and exact hosted/postmerge evidence is green. | codex-asb-ar1747-closeout-20261008 |
 | P0 | [AR-1748](tasks/AR-1748-protected-main-portable-provenance.md): Portable protected-main provenance and capability admission | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. | Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits. | ar1748_portable_main_provenance_20261008 |
 
 ## Open

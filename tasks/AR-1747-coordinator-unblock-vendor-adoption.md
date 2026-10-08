@@ -2,11 +2,11 @@
 {
   "branch": "repair/ar-1747-coordinator-unblock-vendor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T22:13:25+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1747",
   "next_action": "Release complete: canonical main already contains the stricter official Coordinator 113dc610 vendor adoption through reviewed PR #107/signed merge d6556e1; stale superseded PR #106 is closed unmerged and exact hosted/postmerge evidence is green.",
-  "owner": "codex-asb-ar1747-closeout-20261008",
+  "owner": "",
   "plan": "../plans/AR-1747-coordinator-unblock-vendor-adoption.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1747.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Adopt Coordinator unblock support for AR-1722",
-  "updated_at": "2026-10-08T20:14:42+00:00",
+  "updated_at": "2026-10-08T20:15:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1747-coordinator-unblock-vendor"
 }
 ---
@@ -142,3 +142,11 @@ fabricate a pause, edit AR-1722 directly, or change ASB product runtime code.
 
 - 2026-10-08T20:14:42+00:00: Recorded command exit 0; command argv SHA-256
   07175f316543c315adfd4ff7ccc643740bb3772cfccd5ea3b8f4a12050d9670f.
+
+- 2026-10-08T20:15:14+00:00: Completed through the stricter canonical replacement adoption in
+  AR-1749: official Coordinator 113dc61029f0e0c57bc7832e1e41430eafa17e73/tree
+  45ae6988ccd1c88230f262d735ff24d9d9b3bc4b and manifest
+  02149740b14a554d784e2f0fd8572a67dbf3faabe379fc39b4e9703de74e9936 verify exactly. Signed+DCO merge
+  d6556e1, fresh independent review, 1395-test/95% coverage, formal/privacy/schema/vendor gates, and
+  exact postmerge runs 37836736141/37836736245/37836736083 passed. Stale PR #106 is closed unmerged;
+  canonical provenance-checked unblock is installed.
