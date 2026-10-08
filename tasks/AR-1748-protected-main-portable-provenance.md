@@ -17,11 +17,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1748.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
-  "task_revision": 142,
+  "task_revision": 143,
   "title": "Portable protected-main provenance and capability admission",
-  "updated_at": "2026-10-08T20:53:56+00:00",
+  "updated_at": "2026-10-08T22:29:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
 }
 ---
@@ -386,3 +386,8 @@ closed with an exact typed blocker rather than weakening it.
   server added require_extra_approval_for_unattributed_changes=true and required_reviewers=[]. Two
   ID-bound read-only audits stably failed on unchanged allow_squash_merge before reporting policy
   normalization. No delete or retry.
+
+- 2026-10-08T22:29:37+00:00: AR-1750 is done at revision 92 with independently accepted PR
+  #517/merge 31ca7a4, active ruleset ID 24750310, final protected repository settings, two clean
+  final audits, all exact-main workflows green, and live coordinator doctor green. Reopen AR-1748
+  solely for receipt acceptance and release.
