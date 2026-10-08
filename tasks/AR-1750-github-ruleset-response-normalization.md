@@ -8,7 +8,7 @@
     "AR-1431"
   ],
   "id": "AR-1750",
-  "next_action": "Obtain a fresh independent exact-head review of repaired PR #517 at 880fe4f4b1248328cb496b4ec6097954d620065a tree ca6265a7ed0e1304266044b73c5c2a811d84b64b; stale ba751205 review must not be reused. Do not merge or perform live settings mutation before root gate.",
+  "next_action": "Obtain a fresh independent exact-head review of repaired PR #517 at b6dfe7cea0db89b44c03aba486ee29f736daad9f tree f9334134c993399d62f729115beb55f1e8ddc023; stale 880fe4f4 review must not be reused. Do not merge or perform live settings mutation before root gate.",
   "observed_branch": "repair/ar-1750-ruleset-response-normalization",
   "observed_dirty": 0,
   "observed_head": "b6dfe7cea0db89b44c03aba486ee29f736daad9f",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T21:38:29+00:00",
+  "updated_at": "2026-10-08T21:39:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -187,3 +187,9 @@ ruleset, and never retry an ambiguous mutation blindly.
 
 - 2026-10-08T21:38:29+00:00: Recorded command exit 0; command argv SHA-256
   24c2153b18d6fe25cbb94ea4c6b85814003181a390d692f951af7ad415fe480a.
+
+- 2026-10-08T21:39:04+00:00: Repaired second P1 by admitting only the exact strict-Boolean
+  documented prestate or exact REQUIRED_SETTINGS tuple before PUT. Added reviewer reproduction plus
+  missing, int, string, null, partial-transition and unknown tuple no-API matrix. Exact-head policy,
+  DCO, focused 35/35, tools/signature/header/contract, Ruff, fmt/clippy, supply-chain, workflows and
+  gitleaks all green; hosted checks restarted.

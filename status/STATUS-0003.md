@@ -787,7 +787,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation. |
-| Next action | Obtain a fresh independent exact-head review of repaired PR #517 at 880fe4f4b1248328cb496b4ec6097954d620065a tree ca6265a7ed0e1304266044b73c5c2a811d84b64b; stale ba751205 review must not be reused. Do not merge or perform live settings mutation before root gate. |
+| Next action | Obtain a fresh independent exact-head review of repaired PR #517 at b6dfe7cea0db89b44c03aba486ee29f736daad9f tree f9334134c993399d62f729115beb55f1e8ddc023; stale 880fe4f4 review must not be reused. Do not merge or perform live settings mutation before root gate. |
 
 
 ## Dependency graph
