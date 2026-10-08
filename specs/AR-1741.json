@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1741.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "preserve-history", "description": "Historical merge 2f7387e remains unchanged and is explicitly recorded as noncompliant provenance."},
+    {"id": "signed-descendant", "description": "A forward-only descendant is signed by the local integration identity and carries matching DCO."},
+    {"id": "exact-main-green", "description": "Protected-main repository policy and all required post-merge workflows pass on the recovery descendant."}
+  ],
+  "definition_of_done": [
+    "Recovery PR is independently reviewed at an exact immutable head.",
+    "tools/integration/merge_pr.py creates the signed two-parent merge with exact tree and target lease.",
+    "Exact-main policy and post-merge hosted checks are terminal green.",
+    "AR-1738 is released only after durable recovery evidence is recorded."
+  ],
+  "inputs": [
+    {"id": "historical-merge", "description": "Protected-main merge 2f7387e from PR #504 with GitHub committer identity."},
+    {"id": "reviewed-head", "description": "AR-1738 reviewed product head f020b2d4fd65b92edf89a0db73a0b04c0b975684."}
+  ],
+  "outputs": [
+    {"id": "signed-recovery", "description": "Signed+DCO protected-main descendant and exact policy/post-merge evidence."}
+  ],
+  "allowed_tools": ["git", "gh", "tools/integration/merge_pr.py", "tools/handoffctl"],
+  "forbidden_tools": ["history-rewrite", "protected-main-force-update", "policy-exception"],
+  "required_evidence_classes": ["contract-test", "environmental", "hosted"],
+  "gates": [
+    {"id": "integrity", "description": "Exact parents/tree/signature/DCO and local integration identity pass."},
+    {"id": "hosted", "description": "Exact-main policy and required post-merge workflows pass."}
+  ]
+}
