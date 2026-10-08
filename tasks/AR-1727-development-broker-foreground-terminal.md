@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1727-development-broker-foreground-terminal",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T01:40:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1590"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
-  "owner": "codex-ar1727-recovery501-review",
+  "owner": "",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:41:43+00:00",
+  "updated_at": "2026-10-08T00:41:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -360,3 +360,6 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
   matching author/committer/signer/DCO identity; GitHub signature is valid. All 14 exact-head hosted
   checks are terminal green and PR is clean/mergeable. GitHub exact-head review comment records
   approval and explicitly forbids web merge.
+
+- 2026-10-08T00:41:48+00:00: Independent PR #501 recovery review is complete and approved; released
+  ownerless for exact local signed integration and post-merge validation.
