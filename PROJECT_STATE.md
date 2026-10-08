@@ -28,8 +28,8 @@ Generated from local Git and GitHub. Do not edit.
 | 37765241539 | `9aeea48c4041` | push | Repository quality | in_progress:- |
 | 37765241491 | `9aeea48c4041` | push | Huawei MIT source headers | completed:success |
 | 37765241487 | `9aeea48c4041` | push | Emulated aarch64 portability | in_progress:- |
-| 37765241465 | `9aeea48c4041` | push | Cross-repository development broker qualification | in_progress:- |
-| 37765241447 | `9aeea48c4041` | push | Fault assurance | in_progress:- |
+| 37765241465 | `9aeea48c4041` | push | Cross-repository development broker qualification | completed:success |
+| 37765241447 | `9aeea48c4041` | push | Fault assurance | completed:success |
 | 37765241440 | `9aeea48c4041` | push | Formal assurance | in_progress:- |
 | 37765241396 | `9aeea48c4041` | push | Credential-free benchmark path | completed:success |
 | 37765241394 | `9aeea48c4041` | push | Rust verification | in_progress:- |
