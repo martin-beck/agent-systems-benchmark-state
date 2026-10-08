@@ -2,24 +2,24 @@
 {
   "branch": "repair/ar-1748-portable-main-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T20:27:25+00:00",
   "depends_on": [
     "AR-1427",
     "AR-1431"
   ],
   "id": "AR-1748",
   "next_action": "Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits.",
-  "owner": "",
+  "owner": "ar1748_portable_main_provenance_20261008",
   "plan": "../plans/AR-1748-protected-main-portable-provenance.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1748.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Portable protected-main provenance and capability admission",
-  "updated_at": "2026-10-08T17:24:52+00:00",
+  "updated_at": "2026-10-08T17:27:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
 }
 ---
@@ -49,3 +49,5 @@ closed with an exact typed blocker rather than weakening it.
 - 2026-10-08T17:24:52+00:00: Promoted after AR-1746 atomic rejection diagnosis: implement portable
   Web Flow provenance enforcement and capability-aware core ruleset admission without weakening
   development policy.
+
+- 2026-10-08T17:27:25+00:00: Claimed by ar1748_portable_main_provenance_20261008.
