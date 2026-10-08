@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1748-portable-main-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T21:20:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1750"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1748-portable-main-provenance",
   "observed_dirty": 0,
   "observed_head": "7c3e9e3eca962474c03db9b77dbe09a30e95099d",
-  "owner": "ar1748_portable_main_provenance_20261008",
+  "owner": "",
   "plan": "../plans/AR-1748-protected-main-portable-provenance.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1748.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Portable protected-main provenance and capability admission",
-  "updated_at": "2026-10-08T20:53:52+00:00",
+  "updated_at": "2026-10-08T20:53:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
 }
 ---
@@ -377,3 +377,12 @@ closed with an exact typed blocker rather than weakening it.
 - 2026-10-08T20:53:52+00:00: Created canonical P0 dependency AR-1750 with spec revision 1. AR-1748
   single apply created response-only ruleset ID 24750310, stopped before settings PATCH, and is
   blocked solely on that repair.
+
+- 2026-10-08T20:53:56+00:00: Blocked solely on AR-1750. Exact partial receipt:
+  phase=ruleset-readback; prior-ruleset-effect=applied; settings-effect=not-attempted;
+  effect=ambiguous; ruleset-id=24750310; ownership=response-only. Before inventory empty; after only
+  active branch ruleset 24750310. Repository ID 1359260742 and settings unchanged: merge=true,
+  squash=true, rebase=true, auto-merge=false, web-signoff=false. Requested policy otherwise matched;
+  server added require_extra_approval_for_unattributed_changes=true and required_reviewers=[]. Two
+  ID-bound read-only audits stably failed on unchanged allow_squash_merge before reporting policy
+  normalization. No delete or retry.
