@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "repair/ar-1737-development-tui-linker-handoff",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-08T13:03:21+00:00",
   "depends_on": [
@@ -14,12 +14,12 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1737.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "status": "in_progress",
   "summary": "Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair development TUI linker handoff",
-  "updated_at": "2026-10-08T10:03:21+00:00",
+  "updated_at": "2026-10-08T10:04:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1737-development-tui-linker-handoff"
 }
 ---
@@ -39,4 +39,58 @@ the deterministic remap flags, and cover the exact descriptor-bound Cargo and
 rustc path. Development authentication, signatures, and key management remain
 warning-only and are outside this repair.
 
+## Confirmed root cause
+
+The source materializer deliberately clears the child environment and sets
+global `RUSTFLAGS` for deterministic source, target, and Cargo-home path
+remapping. `apply_development_toolchain_environment` separately writes
+`CARGO_TARGET_<TARGET>_RUSTFLAGS=-C link-arg=-B<validated-ld-parent>`. Cargo
+selects the global `RUSTFLAGS` channel, so the target-specific value is not in
+the effective rustc invocation. The absolute validated GCC driver starts, but
+its `collect2` helper cannot discover `ld` because ambient `PATH` is empty.
+
+## Required implementation
+
+- Establish one authoritative effective rustc-flag channel for development
+  materialization. The preferred repair is `CARGO_ENCODED_RUSTFLAGS` containing
+  the three existing remap arguments plus `-C` and
+  `link-arg=-B<validated-ld-parent>` as separately encoded arguments.
+- Remove or make impossible the competing global/target-specific flag setup;
+  tests must assert the exact effective Cargo/rustc arguments rather than only
+  asserting that two environment variables exist.
+- Derive the linker search root only from the already validated absolute `ld`
+  descriptor/path. Reject missing, relative, escaping, substituted, symlinked,
+  wrong-owner, or writable-by-untrusted-party candidates under the existing
+  development trust rules.
+- Keep `PATH` absent. Preserve descriptor-bound absolute Cargo, rustc, compiler,
+  archiver, and linker variables and all deterministic remapping behavior.
+- Cover both GCC/collect2 behavior and a bounded non-GCC/unsupported-driver
+  diagnostic; do not assume that assigning `LD` alone controls GCC's helper
+  lookup.
+- Requalify the public development lifecycle using an exact compatible
+  asb-tui source/bundle: install, status, doctor, upgrade, bare controlling-PTY
+  launch, and repeated remove. Status/doctor/launch/remove remain network-free.
+
+## Acceptance evidence
+
+1. A real minimal Cargo crate compiles and links under `env_clear`, empty
+   `PATH`, descriptor-bound Cargo/rustc, the validated absolute compiler tools,
+   and the production environment-construction code.
+2. Captured rustc/GCC arguments prove all remap flags and the validated `-B`
+   linker root reach every linking rustc invocation through one channel.
+3. Hostile PATH and tool override fixtures cannot redirect Cargo, rustc, GCC,
+   `collect2`, `ld`, or `ar`; invalid linker-root derivations fail before build.
+4. Two clean builds of the same exact source pair in different staging roots
+   produce identical executable digests and contain no leaked private paths.
+5. Focused tests, formatting, Clippy, the relevant serialized workspace suite,
+   exact paired lifecycle tests, independent exact-head review, PR CI, merge,
+   and exact post-merge CI pass.
+6. Authentication, cryptographic signing, DCO, provider credentials, and
+   production release qualification are development warnings only and cannot
+   block this repair. Functional integrity, content identity, peer review, and
+   CI remain required.
+
 - 2026-10-08T10:03:21+00:00: Claimed by codex-asb-ar1737-linker-handoff.
+
+- 2026-10-08T10:04:19+00:00: Recorded command exit 0; command argv SHA-256
+  8fe42c85f61fed9459d267175bcc90d4514ec268db8e368d3a7c3d0672a0afaf.
