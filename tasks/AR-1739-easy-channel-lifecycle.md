@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T11:24:55+00:00",
   "depends_on": [],
   "id": "AR-1739",
-  "next_action": "Post-merge exact main 507559f is published; monitor all required post-merge workflows (Fault assurance, Hosted portability/native qualification, broker qualification, AArch64 portability, Repository quality, Formal assurance, credential-free, Rust) until green, then release AR.",
+  "next_action": "Post-merge exact main 507559f workflows active; Repository quality is rerunning after transient analyzer HTTP 500 (run 37767084162), while remaining hosted workflows continue. Release only after every exact-main workflow is green.",
   "observed_branch": "feature/ar-1739-easy-channel-lifecycle",
   "observed_dirty": 0,
   "observed_head": "617af40b356fb5b8b89cb3a541a28018904c251b",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T11:00:30+00:00",
+  "updated_at": "2026-10-08T11:01:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -234,3 +234,7 @@ provider-free by default and preserve all stable/production fail-closed gates.
 
 - 2026-10-08T11:00:30+00:00: Recorded command exit 0; command argv SHA-256
   6ca9769bc4aa9bd9c43c84777c8d281f5f112a1656ff7b70e41e65f1cc103d95.
+
+- 2026-10-08T11:01:06+00:00: Inspected Repository quality failure: external digest-pinned analyzer
+  download returned HTTP 500 after retries; no repository regression. Reran workflow 37767084162
+  through handoffctl; it is active again. Other exact-main workflows remain active/success.

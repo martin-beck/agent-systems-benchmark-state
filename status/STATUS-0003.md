@@ -633,7 +633,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. |
-| Next action | Post-merge exact main 507559f is published; monitor all required post-merge workflows (Fault assurance, Hosted portability/native qualification, broker qualification, AArch64 portability, Repository quality, Formal assurance, credential-free, Rust) until green, then release AR. |
+| Next action | Post-merge exact main 507559f workflows active; Repository quality is rerunning after transient analyzer HTTP 500 (run 37767084162), while remaining hosted workflows continue. Release only after every exact-main workflow is green. |
 
 ### AR-1740 — Add developer Makefile workflow
 
