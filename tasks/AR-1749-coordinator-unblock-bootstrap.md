@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T21:36:14+00:00",
   "depends_on": [],
   "id": "AR-1749",
-  "next_action": "Adopt the exact reviewed Coordinator development vendor handoff on a claimable bootstrap AR, merge and verify it, then hand canonical unblock capability to blocked AR-1747.",
+  "next_action": "Publish the clean exact-head replacement PR after one final rebase onto current receipt-only main; obtain independent exact-head review and hosted Coordination/Formal success before signed local integration.",
   "owner": "codex-asb-ar1749-vendor-bootstrap-20261008",
   "plan": "../plans/AR-1749-coordinator-unblock-bootstrap.md",
   "priority": "P0",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Bootstrap canonical Coordinator unblock vendor adoption",
-  "updated_at": "2026-10-08T19:24:24+00:00",
+  "updated_at": "2026-10-08T19:25:11+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1749-coordinator-unblock-bootstrap"
 }
 ---
@@ -173,3 +173,11 @@ review, hosted CI, and signed local integration remain mandatory.
 
 - 2026-10-08T19:24:24+00:00: Recorded command exit 0; command argv SHA-256
   0a48695ac54b8cce8b3fcb3c1f538f31b7e4054d9758fb6b44888cd66d55742a.
+
+- 2026-10-08T19:25:11+00:00: Exact official Coordinator 113dc610/tree 45ae6988 adopted with
+  coordinator.vendor.json SHA-256 02149740 and 79-file verification green. Downstream compatibility
+  paths are nonvendor and scoped to project evidence policy, private TLC admission wiring,
+  scanner-safe ASB fixtures, and two formatting-only E501 repairs.
+  Static/schema/header/privacy/generated/size checks pass; 1,395 tests pass at unchanged
+  branch-aware 95% threshold; required-cgroup portable-smoke and six-model pr-publication formal
+  tiers pass.

@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1748](tasks/AR-1748-protected-main-portable-provenance.md): Portable protected-main provenance and capability admission | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. | Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits. | ar1748_portable_main_provenance_20261008 |
-| P0 | [AR-1749](tasks/AR-1749-coordinator-unblock-bootstrap.md): Bootstrap canonical Coordinator unblock vendor adoption | Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool. | Adopt the exact reviewed Coordinator development vendor handoff on a claimable bootstrap AR, merge and verify it, then hand canonical unblock capability to blocked AR-1747. | codex-asb-ar1749-vendor-bootstrap-20261008 |
+| P0 | [AR-1749](tasks/AR-1749-coordinator-unblock-bootstrap.md): Bootstrap canonical Coordinator unblock vendor adoption | Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool. | Publish the clean exact-head replacement PR after one final rebase onto current receipt-only main; obtain independent exact-head review and hosted Coordination/Formal success before signed local integration. | codex-asb-ar1749-vendor-bootstrap-20261008 |
 
 ## Open
 

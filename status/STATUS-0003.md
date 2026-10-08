@@ -773,7 +773,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool. |
-| Next action | Adopt the exact reviewed Coordinator development vendor handoff on a claimable bootstrap AR, merge and verify it, then hand canonical unblock capability to blocked AR-1747. |
+| Next action | Publish the clean exact-head replacement PR after one final rebase onto current receipt-only main; obtain independent exact-head review and hosted Coordination/Formal success before signed local integration. |
 
 
 ## Dependency graph
