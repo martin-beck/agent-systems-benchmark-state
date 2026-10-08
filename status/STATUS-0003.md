@@ -709,11 +709,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1745-install |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make ASB development installation place the asb executable at the invoking user&#x27;s $HOME/.local/bin/asb by default, with a safe explicit prefix override. |
@@ -1522,7 +1522,7 @@ flowchart LR
         AR_1742["AR-1742 - Open"]:::status_open
         AR_1743["AR-1743 - Done"]:::status_done
         AR_1744["AR-1744 - In progress"]:::status_in_progress
-        AR_1745["AR-1745 - In progress"]:::status_in_progress
+        AR_1745["AR-1745 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1744](tasks/AR-1744-make-test-scratch-isolation.md): Repair make test scratch-root isolation | Repair implemented; default make test and focused named test pass, PR #511 is awaiting long-running required CI. | Wait for PR #511 required jobs 37786237232, 37786237229, 37786237193, and 37786237212 to finish; merge only after all are green, then verify exact main. | codex-ar1744-make-test |
-| P0 | [AR-1745](tasks/AR-1745-user-local-install-prefix.md): Install ASB into the invoking user's local bin | Make ASB development installation place the asb executable at the invoking user's $HOME/.local/bin/asb by default, with a safe explicit prefix override. | Record completion receipt, release AR-1745 done, and reconcile live state. | codex-ar1745-install |
 
 ## Open
 

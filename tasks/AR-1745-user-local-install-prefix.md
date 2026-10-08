@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1745-user-local-install-prefix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T15:06:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1740"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1745-user-local-install-prefix",
   "observed_dirty": 0,
   "observed_head": "250ef6658e0cdaa3d8cea53bb009a0bbd88787d4",
-  "owner": "codex-ar1745-install",
+  "owner": "",
   "plan": "../plans/AR-1745-user-local-install-prefix.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1745.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make ASB development installation place the asb executable at the invoking user's $HOME/.local/bin/asb by default, with a safe explicit prefix override.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Install ASB into the invoking user's local bin",
-  "updated_at": "2026-10-08T13:50:30+00:00",
+  "updated_at": "2026-10-08T13:53:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1745-user-local-install-prefix"
 }
 ---
@@ -98,3 +98,7 @@ clear PATH guidance when `$HOME/.local/bin` is not already on PATH.
 
 - 2026-10-08T13:50:30+00:00: Recorded command exit 0; command argv SHA-256
   ea69062e540cb6188f6063e7f61bc381069d41b04dc2c8bbf50a5b89b902206f.
+
+- 2026-10-08T13:53:59+00:00: AR-1745 complete: PR #512 signed-integrated as 1ab175c3 with exact
+  reviewed tree/parents, independent approval, focused tests, local policy, and all nine
+  protected-main post-merge workflows successful.
