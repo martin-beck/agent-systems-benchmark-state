@@ -4274,7 +4274,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. |
-| Next action | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. |
+| Next action | Add an upstream-supported exact-revision mutation that binds branch and worktree_key on an active legacy task, vendor it into ASB state, then bind AR-1652 to repair/ar-1652-record-replay and agent-systems-benchmark-ar-1652-record-replay before any wrapped product command. |
 
 ### AR-1653 — Current-main development-channel consumption
 
@@ -4696,11 +4696,3 @@
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
 | Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
 
-### AR-1688 — Runner-owned cassette capture and replay qualification
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |

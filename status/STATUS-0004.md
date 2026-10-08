@@ -609,7 +609,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1652](../tasks/AR-1652.md): Selected-workload recording and offline replay command | codex-asb-ar1652-20261009 | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add the paired record/replay command over the capture and fan-out seams with redaction, sealing, and network-denial tests. |
+| P0 | [AR-1652](../tasks/AR-1652.md): Selected-workload recording and offline replay command | codex-asb-ar1652-20261009 | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Add an upstream-supported exact-revision mutation that binds branch and worktree_key on an active legacy task, vendor it into ASB state, then bind AR-1652 to repair/ar-1652-record-replay and agent-systems-benchmark-ar-1652-record-replay before any wrapped product command. |
 | P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | codex-asb-ar1721-qualification-20261009 | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -&gt; bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. |
 
 ### Open (5)
