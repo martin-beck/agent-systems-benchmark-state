@@ -10,7 +10,7 @@
     "task": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
     "task_revision": {"type": "integer", "minimum": 1},
     "recorded_at": {"type": "string", "minLength": 1},
-    "trigger": {"enum": ["update", "run"]},
+    "trigger": {"enum": ["update", "run", "pause"]},
     "status": {"type": "string", "minLength": 1},
     "context_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
     "step_state": {

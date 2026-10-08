@@ -15,6 +15,11 @@ from contextlib import AbstractContextManager, contextmanager, nullcontext
 from pathlib import Path
 from typing import Any, Protocol, cast
 
+if __package__:
+    from .session_records import validate_session_record
+else:  # pragma: no cover - direct script import
+    from session_records import validate_session_record  # type: ignore[import-not-found,no-redef]
+
 type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 SCHEMA_VERSION = 1
@@ -811,7 +816,7 @@ class SQLiteBackend:
         try:
             try:
                 rows = connection.execute(
-                    """SELECT record_json FROM session_records
+                    """SELECT task_id, task_revision, record_json FROM session_records
                        WHERE (? IS NULL OR task_id=?) ORDER BY sequence""",
                     (task_id, task_id),
                 )
@@ -824,6 +829,16 @@ class SQLiteBackend:
                 value = json.loads(str(row["record_json"]))
                 if not isinstance(value, dict):
                     raise StorageCorruptionError("SQLITE_CORRUPT: invalid session record")
+                try:
+                    validate_session_record(value)
+                except ValueError as error:
+                    raise StorageCorruptionError(
+                        "SQLITE_CORRUPT: invalid session record"
+                    ) from error
+                if value["task"] != str(row["task_id"]) or value["task_revision"] != int(
+                    row["task_revision"]
+                ):
+                    raise StorageCorruptionError("SQLITE_CORRUPT: session record identity mismatch")
                 records.append(cast(Meta, value))
             return records
         except json.JSONDecodeError as error:

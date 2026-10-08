@@ -102,12 +102,17 @@ def build_session_record(meta: Meta, trigger: str, recorded_at: str) -> Meta:
 def _validate_header(record: Meta) -> None:
     if set(record) != SESSION_FIELDS:
         raise ValueError("session record fields are not exact")
-    if record["schema_version"] != SESSION_SCHEMA_VERSION:
+    if (
+        type(record["schema_version"]) is not int
+        or record["schema_version"] != SESSION_SCHEMA_VERSION
+    ):
         raise ValueError("unsupported session record schema")
     if not isinstance(record["task"], str) or not TASK_ID.fullmatch(record["task"]):
         raise ValueError("invalid session record task")
-    if not isinstance(record["task_revision"], int) or record["task_revision"] < 1:
+    if type(record["task_revision"]) is not int or record["task_revision"] < 1:
         raise ValueError("invalid session record revision")
+    if not isinstance(record["recorded_at"], str) or not record["recorded_at"]:
+        raise ValueError("invalid session record timestamp")
     if record["trigger"] not in TRIGGERS:
         raise ValueError("invalid session record trigger")
     if not isinstance(record["status"], str) or not record["status"]:
@@ -122,13 +127,27 @@ def _validate_state(record: Meta) -> None:
     state = record["step_state"]
     if not isinstance(state, dict) or set(state) != {"status", "task_revision"}:
         raise ValueError("invalid session step state")
+    if type(state["task_revision"]) is not int or state["task_revision"] < 1:
+        raise ValueError("invalid session step revision")
+    if state["status"] != record["status"]:
+        raise ValueError("session step status differs from record status")
+    if state["task_revision"] != record["task_revision"]:
+        raise ValueError("session step revision differs from record revision")
 
 
 def _validate_payload(record: Meta) -> None:
     refs = record["artifact_refs"]
-    if not isinstance(refs, list) or not all(isinstance(value, str) and value for value in refs):
+    if (
+        not isinstance(refs, list)
+        or len(refs) > 8
+        or not all(isinstance(value, str) and value for value in refs)
+    ):
         raise ValueError("invalid session artifact refs")
-    if not isinstance(record["next_action"], str) or "\n" in record["next_action"]:
+    if (
+        not isinstance(record["next_action"], str)
+        or "\n" in record["next_action"]
+        or len(record["next_action"]) > 1024
+    ):
         raise ValueError("invalid session next action")
     if len(_canonical(record)) > MAX_SESSION_BYTES:
         raise ValueError("session record exceeds bounded size")
@@ -141,12 +160,20 @@ def validate_session_record(record: Meta) -> None:
     _validate_payload(record)
 
 
-def decode_session_lines(path: Path) -> list[Meta]:
+def decode_session_lines(path: Path, expected_task: str | None = None) -> list[Meta]:
     """Read and validate a bounded session history."""
     if not path.exists():
         return []
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if len(lines) > MAX_SESSION_RECORDS:
+        raise ValueError("session history exceeds bounded retention")
     records: list[Meta] = []
-    for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+    revisions: set[int] = set()
+    inferred_task = path.stem if TASK_ID.fullmatch(path.stem) else None
+    bound_task = expected_task if expected_task is not None else inferred_task
+    if bound_task is not None and not TASK_ID.fullmatch(bound_task):
+        raise ValueError("invalid expected session task")
+    for number, line in enumerate(lines, 1):
         try:
             value = json.loads(line)
         except json.JSONDecodeError as error:
@@ -154,9 +181,13 @@ def decode_session_lines(path: Path) -> list[Meta]:
         if not isinstance(value, dict):
             raise ValueError(f"invalid session record line {number}")
         validate_session_record(value)
+        if bound_task is not None and value["task"] != bound_task:
+            raise ValueError(f"session record task differs from history at line {number}")
+        revision = int(value["task_revision"])
+        if revision in revisions:
+            raise ValueError(f"duplicate session revision at line {number}")
+        revisions.add(revision)
         records.append(value)
-    if len(records) > MAX_SESSION_RECORDS:
-        raise ValueError("session history exceeds bounded retention")
     return records
 
 
@@ -164,7 +195,9 @@ def append_session_record(root: Path, record: Meta) -> Path:
     """Atomically append one record while retaining only the newest records."""
     validate_session_record(record)
     path = session_path(root, str(record["task"]))
-    records = decode_session_lines(path)
+    records = decode_session_lines(path, str(record["task"]))
+    if any(item["task_revision"] == record["task_revision"] for item in records):
+        raise ValueError("duplicate session revision")
     records.append(record)
     records = records[-MAX_SESSION_RECORDS:]
     path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
@@ -189,5 +222,5 @@ def append_session_record(root: Path, record: Meta) -> Path:
 
 
 def latest_session(root: Path, task_id: str) -> Meta | None:
-    records = decode_session_lines(session_path(root, task_id))
+    records = decode_session_lines(session_path(root, task_id), task_id)
     return records[-1] if records else None

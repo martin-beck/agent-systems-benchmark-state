@@ -36,6 +36,7 @@ authoritative revision, task status and owner unchanged.
 | `promote` | `planned`, unowned, dependencies done | exact revision | `open` |
 | `pause` | `in_progress`, owned | exact revision and owner | `blocked`, ownership and lease cleared |
 | `resume` | `blocked`, unowned, paused session | exact revision and session reference | `open` |
+| `unblock` | `blocked`, unowned, no current-revision session | exact revision | `open` |
 | `claim` | `open`, dependencies done | owner has no active task | `in_progress`, lease set |
 | `heartbeat` | `in_progress` | current owner, positive lease | lease renewed |
 | `update` | `in_progress` | current owner, exact revision | active fields updated |
@@ -79,7 +80,8 @@ outside the lifecycle abstraction below and does not alter the TLA+ transition r
 ## Checked properties
 
 `Handoffctl.tla` exhaustively enumerates two processes, two tasks, every
-coherent initial status/owner combination, ready and blocked dependencies,
+coherent initial status/owner combination, absent, unique-valid,
+unique-incoherent and duplicate pause provenance, ready and blocked dependencies,
 every lifecycle command, current and stale revisions, injected pre-commit
 rollback, and every process interleaving. `HandoffctlLocks.tla` separately
 enumerates three processes as readers and writers, including two simultaneous
@@ -91,6 +93,8 @@ readers, a competing writer, and bounded lock-wait timeout. TLC checks:
 - atomic task/projection revision advancement and rollback;
 - reciprocal, bounded acyclic parent/child edges and done-rollup admission;
 - rejection of invalid source, owner, dependency, and revision combinations;
+- rejection of pause/external-block cross-mode transitions without mutation;
+- rejection of missing, incoherent, or duplicate provenance for paused resume;
 - timeout without state mutation when another process holds the lock;
 - acceptance of eligible recovery despite simultaneous expiries and an unrelated repository
   finding;
@@ -186,15 +190,18 @@ death for stale-job recovery; completed, failed, and canceled outcomes retain
 the exact resource bounds and exit classification. `systemd-run` owns the process group (`KillMode=control-group`) on hosts with a user systemd bus. Hosted CI selects an explicit `portable` containment mode: GNU `timeout` and `prlimit` enforce aggregate address-space, process-count, CPU-time, and wall-clock limits; the runner fails closed if either tool is unavailable.
 
 The runner retains `/tmp/agent-workflow-coordinator-tlc-admission.lock` as the canonical
-publication lock. For an authorized local run on a host where that shared lock is inaccessible,
-the lower-level runner accepts an explicit private lock together with a private queue:
+publication lock. The verifier uses that shared admission path by default. For an isolated
+clean-destination diagnostic on a host where the shared path is inaccessible, the verifier accepts
+an explicit private queue and lock pair:
 
 ```bash
-python3 tools/tlc_runner.py --queue ./private-tlc-queue \\
-  --admission-lock ./private-tlc-admission.lock ...
+formal/handoffctl/verify.sh --tier portable-smoke \
+  --diagnostic-queue /absolute/private-tlc-queue \
+  --diagnostic-admission-lock /absolute/private-tlc-admission.lock
 ```
 
-This option is intentionally CLI-only; there is no environment override. The checked-in
-`formal/handoffctl/verify.sh` workflow never supplies it and therefore cannot silently replace
-canonical publication admission. An isolated run is local diagnostic evidence only and must not be
-reported as a canonical publication or weekly full attestation.
+Both distinct absolute paths are required together and are propagated as explicit runner CLI
+arguments; there is no verifier environment override. The resulting attestation is classified
+`diagnostic-private-admission`, sets `canonical_publication_evidence` to false, and states that it
+cannot support publication or release claims. Hosted and checked-in workflows omit these flags and
+therefore retain the canonical shared admission path and fail-closed publication semantics.

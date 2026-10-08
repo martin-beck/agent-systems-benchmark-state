@@ -12,6 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WORKFLOW = ROOT / ".github" / "workflows" / "verify.yml"
+FORMAL_WORKFLOW = ROOT / ".github" / "workflows" / "handoffctl-formal.yml"
 REQUIRED_COORDINATION_PATHS = frozenset({"CURRENT.md", "STATUS.md", "plans/**", "tasks/**"})
 
 
@@ -41,6 +42,13 @@ def triggers(paths: tuple[str, ...], changed: tuple[str, ...]) -> bool:
 
 
 class WorkflowTriggerTests(unittest.TestCase):
+    def test_formal_admission_paths_are_scoped_to_the_private_run_root(self) -> None:
+        workflow = FORMAL_WORKFLOW.read_text(encoding="utf-8")
+        root = "/srv/data/projects/.asb-tlc/ci-${{ github.run_id }}"
+        self.assertIn(f"TLC_RUNTIME_ROOT: {root}", workflow)
+        self.assertIn(f"TLC_ADMISSION_QUEUE: {root}/queue", workflow)
+        self.assertIn(f"TLC_ADMISSION_LOCK: {root}/admission.lock", workflow)
+
     def test_pull_requests_cover_every_coordination_projection(self) -> None:
         paths = event_paths("pull_request")
         self.assertTrue(REQUIRED_COORDINATION_PATHS.issubset(paths))

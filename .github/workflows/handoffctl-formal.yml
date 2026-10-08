@@ -36,6 +36,8 @@ env:
   # Keep disposable queue, runtime and attestation state on the approved
   # second-disk root; never fall back to runner /tmp or checkout paths.
   TLC_RUNTIME_ROOT: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}
+  TLC_ADMISSION_QUEUE: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}/queue
+  TLC_ADMISSION_LOCK: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}/admission.lock
   TLC_ATTESTATION_PATH: /srv/data/projects/.asb-tlc/attestations/ci-${{ github.run_id }}.json
   # Match the approved pr-publication resource profile consumed by attest.py.
   TLC_MEMORY_MAX: 3G
