@@ -29,10 +29,10 @@ Generated from local Git and GitHub. Do not edit.
 | 37757831455 | `2f7387e5c269` | push | Repository quality | completed:failure |
 | 37757831454 | `2f7387e5c269` | push | Cross-repository development broker qualification | in_progress:- |
 | 37757831450 | `2f7387e5c269` | push | Huawei MIT source headers | completed:success |
-| 37757831442 | `2f7387e5c269` | push | Credential-free benchmark path | in_progress:- |
+| 37757831442 | `2f7387e5c269` | push | Credential-free benchmark path | completed:success |
 | 37757831436 | `2f7387e5c269` | push | Emulated aarch64 portability | in_progress:- |
 | 37757831433 | `2f7387e5c269` | push | Fault assurance | in_progress:- |
-| 37757831425 | `2f7387e5c269` | push | Hosted portability and native qualification | in_progress:- |
+| 37757831425 | `2f7387e5c269` | push | Hosted portability and native qualification | completed:success |
 | 37757831386 | `2f7387e5c269` | push | Formal assurance | in_progress:- |
 | 37757294232 | `98f27d1634d4` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 37757294196 | `98f27d1634d4` | pull_request | Repository quality | completed:failure |
