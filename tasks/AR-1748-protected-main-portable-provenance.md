@@ -10,8 +10,8 @@
   "id": "AR-1748",
   "next_action": "Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits.",
   "observed_branch": "repair/ar-1748-portable-main-provenance",
-  "observed_dirty": 9,
-  "observed_head": "2f52ecbaf79ae8316e0c2a42ad4c4a79dae5d9eb",
+  "observed_dirty": 0,
+  "observed_head": "0f3e191ad59ca70934f937e6ea6b6e9e999e90c3",
   "owner": "ar1748_portable_main_provenance_20261008",
   "plan": "../plans/AR-1748-protected-main-portable-provenance.md",
   "priority": "P0",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Portable protected-main provenance and capability admission",
-  "updated_at": "2026-10-08T18:00:56+00:00",
+  "updated_at": "2026-10-08T18:01:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
 }
 ---
