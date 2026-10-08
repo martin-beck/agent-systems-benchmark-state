@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1727-development-broker-foreground-terminal",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T02:00:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1590"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
-  "owner": "codex-ar1727-recovery501-review",
+  "owner": "",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:35:05+00:00",
+  "updated_at": "2026-10-08T00:35:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -343,3 +343,6 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
   allowed-signers verification reports good signature with author, committer, signer, and single DCO
   principal all martin.beck2@gmx.de. Exact-head hosted checks are still running; release the
   coordinator lock so AR-1726 can proceed while this reviewer monitors them read-only.
+
+- 2026-10-08T00:35:10+00:00: Structural recovery review is clean; released ownerless while
+  exact-head CI finishes so independent AR-1726 work may use the coordinator.
