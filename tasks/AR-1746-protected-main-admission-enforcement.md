@@ -2,24 +2,24 @@
 {
   "branch": "repair/ar-1746-protected-main-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T18:17:11+00:00",
   "depends_on": [
     "AR-1427",
     "AR-1431"
   ],
   "id": "AR-1746",
   "next_action": "Promote and claim after verifying the current GitHub settings/ruleset snapshot; apply and audit the checked-in protected-main contract without changing product source or weakening development review policy.",
-  "owner": "",
+  "owner": "ar1746_protected_main_admission_20261008",
   "plan": "../plans/AR-1746-protected-main-admission-enforcement.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1746.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Apply and independently verify ASB's merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Enforce protected-main admission for AR-1722 recovery",
-  "updated_at": "2026-10-08T16:15:53+00:00",
+  "updated_at": "2026-10-08T16:17:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1746-protected-main-admission"
 }
 ---
@@ -40,3 +40,5 @@ mandatory.
 
 - 2026-10-08T16:15:53+00:00: AR-1427 and AR-1431 are done; current live audit confirms the external
   GitHub admission mismatch and no overlapping worker owns repository settings.
+
+- 2026-10-08T16:17:11+00:00: Claimed by ar1746_protected_main_admission_20261008.
