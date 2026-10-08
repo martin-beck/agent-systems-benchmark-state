@@ -8,7 +8,7 @@
     "AR-1734"
   ],
   "id": "AR-1737",
-  "next_action": "Reproduce the exact env-cleared development materializer failure, bind the validated linker search root in the effective Cargo/rustc flags, and requalify source-built install, upgrade, and bare launch without widening PATH.",
+  "next_action": "Wait for independent exact-head review and PR #509 CI; fix any findings, merge reviewed green head, then run real source-built install/status/doctor/upgrade/bare launch/repeated remove and exact post-merge CI.",
   "observed_branch": "repair/ar-1737-development-tui-linker-handoff",
   "observed_dirty": 0,
   "observed_head": "bb9c35cdea59efe6295cde1de46702366aacbc32",
@@ -20,9 +20,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Repair development TUI linker handoff",
-  "updated_at": "2026-10-08T10:21:15+00:00",
+  "updated_at": "2026-10-08T10:21:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1737-development-tui-linker-handoff"
 }
 ---
@@ -133,3 +133,11 @@ its `collect2` helper cannot discover `ld` because ambient `PATH` is empty.
 
 - 2026-10-08T10:21:15+00:00: Recorded command exit 0; command argv SHA-256
   acc76213742e02cb8fc4fc7fd3850c00fb5c937b1188a70e47005d086410d96c.
+
+- 2026-10-08T10:21:51+00:00: Candidate bb9c35cdea59efe6295cde1de46702366aacbc32 (tree
+  8d20100f3bacd65fdb9b2256539f9c61ea5f3fda) is rebased on current main
+  bbe25d0c516b29a38a66908cbb025204dfe9e4d8, SSH-signed with the accepted ED25519 key and
+  DCO-bearing. PR #509 opened. Exact-head fmt, Clippy -D warnings, 237 asb-cli unit tests, all 33
+  asb-cli integration tests, rustdoc -D warnings, real env-cleared Cargo link, hostile linker
+  rejection, and dual-root deterministic artifact tests pass. Independent review and hosted CI are
+  in progress.
