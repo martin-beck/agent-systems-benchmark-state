@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T01:41:07+00:00",
+  "updated_at": "2026-10-08T01:41:15+00:00",
   "worktree_key": ""
 }
 ---
@@ -46,3 +46,6 @@ and production policy remains fail closed and unchanged.
   after current TUI review/repair capacity permits.
 
 - 2026-10-08T01:41:07+00:00: Claimed by codex-ar1734-tool-environment.
+
+- 2026-10-08T01:41:15+00:00: Recorded command exit 0; command argv SHA-256
+  5345cd4b5f66285dc80cddfe59c0a95475263f9ff88d25d2639fce3c300aa4b9.
