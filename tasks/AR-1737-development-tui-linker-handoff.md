@@ -20,9 +20,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Repair development TUI linker handoff",
-  "updated_at": "2026-10-08T10:18:16+00:00",
+  "updated_at": "2026-10-08T10:19:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1737-development-tui-linker-handoff"
 }
 ---
@@ -124,3 +124,6 @@ its `collect2` helper cannot discover `ld` because ambient `PATH` is empty.
 
 - 2026-10-08T10:17:46+00:00: Recorded command exit 0; command argv SHA-256
   3c89fd0b69b6082939b79f1bbc2e00f5197d8ff09dc87981e2164f4f777fea8b.
+
+- 2026-10-08T10:19:07+00:00: Recorded command exit 0; command argv SHA-256
+  f831e4619af96665e49993a2694428d335b39919d89ba55848589732012aaf6e.
