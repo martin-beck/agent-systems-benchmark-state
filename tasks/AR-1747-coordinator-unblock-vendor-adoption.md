@@ -2,21 +2,21 @@
 {
   "branch": "repair/ar-1747-coordinator-unblock-vendor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T18:17:08+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1747",
   "next_action": "Wait for official Coordinator AR-0087 to merge a reviewed follow-up that preserves task_spec evidence classes, removes scanner-triggering UUID literals from every declared vendor file, and retains exact unblock/formal closure; then resync via sync-development from that official commit, rebase PR #106 without downstream vendor edits, rerun all 95%/formal/privacy gates, and obtain fresh exact-head independent review.",
-  "owner": "codex-asb-ar1747-vendor-20261008",
+  "owner": "",
   "plan": "../plans/AR-1747-coordinator-unblock-vendor-adoption.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1747.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Adopt Coordinator unblock support for AR-1722",
-  "updated_at": "2026-10-08T17:07:41+00:00",
+  "updated_at": "2026-10-08T17:07:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1747-coordinator-unblock-vendor"
 }
 ---
@@ -109,3 +109,8 @@ fabricate a pause, edit AR-1722 directly, or change ASB product runtime code.
   fixtures to scanner-safe joined parts; focused lint and 188 tests pass. Exact vendored bytes and
   vendored task_spec.py remain untouched. AR-1747 must block until official Coordinator AR-0087
   provides a new resync identity.
+
+- 2026-10-08T17:07:48+00:00: Blocked on official Coordinator AR-0087 follow-up and exact
+  sync-development resync. PR #106 remains open and must not merge. Downstream private TLC admission
+  wiring and scanner-safe ASB fixtures are locally repaired and focused-green; no exact vendored
+  byte was hand-edited.
