@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Merged PR #511 and verified exact protected main; all required post-merge workflows are green.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T14:43:28+00:00",
+  "updated_at": "2026-10-08T14:47:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -320,3 +320,6 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
   headers 37793431599, Repository quality 37793431344, Emulated aarch64 37793431378, Formal
   assurance 37793431370. Local focused plan-create and workflow-transcript tests passed; default
   make test passed earlier.
+
+- 2026-10-08T14:47:00+00:00: Recorded command exit 0; command argv SHA-256
+  cb8fa8ca09d80e82264ffb3a4c40fdb8cace8e8bc9644f47c2289445647ade82.
