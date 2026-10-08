@@ -19,7 +19,9 @@ class LifecycleSession:
     _identity: tuple[int, int]
     _capability: bytes
 
-    def __init__(self, owner: object, path: Path, identity: tuple[int, int], capability: bytes) -> None:
+    def __init__(
+        self, owner: object, path: Path, identity: tuple[int, int], capability: bytes
+    ) -> None:
         if capability is not _TOKEN:
             raise ValueError("lifecycle session must be adapter-issued")
         object.__setattr__(self, "_owner", owner)

@@ -14,7 +14,6 @@ import time
 from pathlib import Path
 
 EXPECTED_MODELS = {
-    "development-reduced": {"HandoffctlBinding", "HandoffctlRecovery"},
     "portable-smoke": {"HandoffctlBinding"},
     "pr-fast": {"HandoffctlFast", "OracleInteractionGates"},
     "pr-publication": {
@@ -33,14 +32,6 @@ EXPECTED_MODELS = {
         "Handoffctl",
         "HandoffctlRecovery",
     },
-    "full-exhaustive-capacity": {
-        "HandoffctlBinding",
-        "HandoffctlLocks",
-        "HandoffctlRun",
-        "HandoffctlStorage",
-        "Handoffctl",
-        "HandoffctlRecovery",
-    },
 }
 MODEL_SOURCE = {
     "HandoffctlPR": "Handoffctl",
@@ -48,12 +39,6 @@ MODEL_SOURCE = {
     "OracleInteractionGates": "../oracle/OracleInteractionGates",
 }
 MODEL_CONFIG = {"OracleInteractionGates": "../oracle/OracleInteractionGates"}
-TIER_KEYS = {
-    "models", "exhaustive", "workers", "heap", "memory_max", "swap_max",
-    "address_space_max", "timeout_seconds", "containment",
-}
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-APPROVED_RUNTIME_ROOT = Path("/srv/data/projects")
 
 
 def effective_bound(name: str, default: str, boundary: str) -> str:
@@ -69,73 +54,57 @@ def effective_bound(name: str, default: str, boundary: str) -> str:
 
 
 def digest(path: Path) -> str:
-    if not path.is_file():
-        raise ValueError(f"required evidence file is missing: {path}")
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def read_manifest(path: Path) -> dict[str, str]:
-    """Read and validate the bounded runner outcome manifest."""
-    outcomes: dict[str, str] = {}
-    try:
-        lines = path.read_text(encoding="utf-8").splitlines()
-    except OSError as error:
-        raise ValueError(f"cannot read outcome manifest: {error}") from error
-    for number, line in enumerate(lines, 1):
-        fields = line.split()
-        if len(fields) != 2 or fields[1] not in {"success", "failed"}:
-            raise ValueError(f"malformed outcome manifest line {number}: expected MODEL success")
-        model, result = fields
-        if model in outcomes:
-            raise ValueError(f"duplicate outcome manifest entry for {model}")
-        outcomes[model] = result
-    if not outcomes:
-        raise ValueError("outcome manifest is empty")
-    return outcomes
-
-
-def read_tier_evidence(path: Path) -> dict[str, dict[str, object]]:
-    """Read the exact resource contract used by every formal tier."""
-    try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as error:
-        raise ValueError(f"tier evidence is unreadable or malformed: {error}") from error
-    if not isinstance(payload, dict) or set(payload) != {"schema_version", "tiers"}:
-        raise ValueError("tier evidence must contain only schema_version and tiers")
-    if payload["schema_version"] != 1 or not isinstance(payload["tiers"], dict):
-        raise ValueError("tier evidence has an unsupported schema")
-    tiers = payload["tiers"]
-    evidence_tiers = set(EXPECTED_MODELS) - {"pr-fast"}
-    if set(tiers) != evidence_tiers:
-        raise ValueError("tier evidence does not describe exactly the supported tiers")
-    for tier, entry in tiers.items():
-        if not isinstance(entry, dict) or set(entry) != TIER_KEYS:
-            raise ValueError(f"tier evidence for {tier} has unknown or missing fields")
-        models = entry["models"]
-        if not isinstance(models, list) or len(models) != len(set(models)):
-            raise ValueError(f"tier evidence for {tier} has duplicate or invalid models")
-        if set(models) != EXPECTED_MODELS[tier]:
-            raise ValueError(f"tier evidence for {tier} has an unexpected model set")
-        reduced = tier == "development-reduced"
-        capacity = tier == "full-exhaustive-capacity"
-        if entry["workers"] != (1 if reduced else 2):
-            raise ValueError(f"tier evidence for {tier} has unsupported bounds")
-        expected = (
-            ("6144m", "8G", "8G", "16G") if capacity else
-            (("1024m", "2G", "2G", "4G") if reduced else
-             ("2048m", "3G", "3G", "8G"))
-        )
-        if tuple(entry[k] for k in ("heap", "memory_max", "swap_max", "address_space_max")) != expected:
-            raise ValueError(f"tier evidence for {tier} has unsupported memory bounds")
-        expected_timeout = 900 if reduced else (7200 if tier in {"full-exhaustive", "full-exhaustive-capacity"} else 1800)
-        if entry["timeout_seconds"] != expected_timeout:
-            raise ValueError(f"tier evidence for {tier} has unsupported timeout")
-        expected_containment = "portable-timeout-prlimit" if tier == "portable-smoke" else "systemd-run-user-cgroup"
-        if entry["containment"] != expected_containment:
-            raise ValueError(f"tier evidence for {tier} has unsupported containment")
-        if entry["exhaustive"] != (tier in {"full-exhaustive", "full-exhaustive-capacity"}):
-            raise ValueError(f"tier evidence for {tier} has incorrect exhaustive flag")
-    return tiers
+def candidate_identity(root: Path) -> dict[str, str]:
+    """Bind source execution or a vendored downstream run to immutable candidate identity."""
+    manifest_path = root / "coordinator.vendor.json"
+    if manifest_path.exists():
+        try:
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            upstream = manifest["upstream"]
+            commit = upstream["commit"]
+        except (OSError, json.JSONDecodeError, KeyError, TypeError) as error:
+            raise ValueError("invalid vendor identity") from error
+        schema = manifest.get("schema_version")
+        if re.fullmatch(r"[0-9a-f]{40}", str(commit)) is None:
+            raise ValueError("formal attestation requires an exact vendor commit")
+        if schema == 2:
+            tree = upstream.get("tree")
+            if (
+                upstream.get("channel") != "development"
+                or re.fullmatch(r"[0-9a-f]{40}", str(tree)) is None
+            ):
+                raise ValueError("formal attestation requires an exact development vendor identity")
+            kind = "development-vendor"
+        elif schema == 1:
+            tree = ""
+            kind = "release-vendor"
+        else:
+            raise ValueError("formal attestation requires a supported vendor identity")
+        return {
+            "kind": kind,
+            "commit": str(commit),
+            "tree": str(tree),
+            "vendor_manifest_sha256": digest(manifest_path),
+        }
+    commit = subprocess.check_output(
+        ["git", "rev-parse", "HEAD"],  # noqa: S607
+        cwd=root,
+        text=True,
+    ).strip()
+    tree = subprocess.check_output(
+        ["git", "rev-parse", "HEAD^{tree}"],  # noqa: S607
+        cwd=root,
+        text=True,
+    ).strip()
+    return {
+        "kind": "source",
+        "commit": commit,
+        "tree": tree,
+        "vendor_manifest_sha256": "",
+    }
 
 
 def main() -> int:
@@ -145,6 +114,11 @@ def main() -> int:
     parser.add_argument("--jar", type=Path, required=True)
     parser.add_argument("--models", nargs="+", required=True)
     parser.add_argument("--manifest", type=Path, required=True)
+    parser.add_argument(
+        "--execution-classification",
+        choices=("canonical", "diagnostic-private-admission"),
+        default="canonical",
+    )
     parser.add_argument(
         "--status",
         choices=("success", "oom", "timeout", "canceled", "incomplete"),
@@ -185,21 +159,16 @@ def main() -> int:
             "formal/handoffctl/verify.sh",
             "tools/tlc_runner.py",
             "formal/handoffctl/attest.py",
+            "formal/evidence.json",
             "formal/tier-evidence.json",
         )
     }
-    commit = subprocess.check_output(
-        ["git", "rev-parse", "HEAD"],  # noqa: S607
-        cwd=root,
-        text=True,
-    ).strip()
-    tree = subprocess.check_output(
-        ["git", "rev-parse", "HEAD^{tree}"],  # noqa: S607
-        cwd=root,
-        text=True,
-    ).strip()
+    identity = candidate_identity(root)
     formal_hash = hashlib.sha256(
-        json.dumps({"models": models, "configs": configs}, sort_keys=True).encode()
+        json.dumps(
+            {"models": models, "configs": configs, "inputs": inputs, "candidate": identity},
+            sort_keys=True,
+        ).encode()
     ).hexdigest()
     try:
         memory_max = effective_bound("TLC_MEMORY_MAX", "3G", boundary)
@@ -210,14 +179,17 @@ def main() -> int:
         "schema_version": 1,
         "profile": args.tier,
         "exhaustive": args.tier == "full-exhaustive",
-        "commit": commit,
-        "tree": tree,
+        "commit": identity["commit"],
+        "tree": identity["tree"],
+        "candidate_identity": identity,
         "formal_input_sha256": formal_hash,
         "formal_inputs": inputs,
         "models": models,
         "configs": configs,
         "tool_jar_sha256": digest(args.jar),
         "containment_mode": boundary,
+        "execution_classification": args.execution_classification,
+        "canonical_publication_evidence": args.execution_classification == "canonical",
         "resource_bounds": {
             "workers": 2,
             "heap": os.environ.get("TLC_HEAP", "2048m"),
@@ -240,6 +212,14 @@ def main() -> int:
             "bounded model checking does not prove implementation correspondence",
             "state_counts are unavailable unless parsed from TLC output and are not evidence "
             "of exhaustive exploration",
+            *(
+                [
+                    "diagnostic private-admission execution is noncanonical and cannot support "
+                    "release or publication claims"
+                ]
+                if args.execution_classification == "diagnostic-private-admission"
+                else []
+            ),
         ],
     }
     args.output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-workflow-coordinator/schema/task-spec-policy.schema.json",
+  "title": "Coordinator project task-spec policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "additional_evidence_classes"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "additional_evidence_classes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 32,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 32,
+        "pattern": "^[a-z]+(?:-[a-z]+)*$",
+        "not": {
+          "enum": ["mechanical", "contract-test", "property-or-fuzz", "bounded-model", "environmental"]
+        }
+      }
+    }
+  }
+}

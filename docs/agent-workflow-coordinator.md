@@ -33,6 +33,10 @@ rewrites the coordinator source, Git history, and binding files.
   the complete graph, dependency index and AR inventory.
 - `PROJECT_STATE.md` and `WORKTREES.md`: generated live observations.
 - `coordinator.vendor.json`: upstream version, commit and SHA-256 for every vendored file.
+- Optional `task-spec-policy.json`: a tracked version-1 project policy that
+  adds a bounded evidence-class vocabulary without changing the five built-in
+  classes. Validate it with `schema/task-spec-policy.schema.json`; the file
+  must remain clean, regular, state-root-bound, and non-symlinked.
 - `sessions/AR-####.jsonl`: bounded, content-minimized session snapshots. Each record stores
   only a context digest, step state, safe artifact references and the next action; raw prompts,
   logs and command output are never retained. The latest record can be replayed with
@@ -135,14 +139,19 @@ or `ambiguous`. It may continue only when the product checkout is at the exact
 durable rollback head (or at the previously recorded pre-rollback head when no
 product commit was published); otherwise the operation remains fail-closed.
 
-Use `promote` only for `planned -> open` after dependencies complete. Use `resume` only for
-`blocked -> open` after independently verifying the external blocker. Both require the exact
-current revision. Use `recover-expired` instead of impersonating the prior owner with `release`
+Use `promote` only for `planned -> open` after dependencies complete. Use `resume --session` only
+to restore a task from one unique, coherent pause record at that exact task and revision. Duplicate,
+cross-task, or internally inconsistent history fails closed. After independently verifying an external blocker,
+use `unblock` on a task that reached `blocked` through `release --status blocked`; it preserves the
+current `next_action` and creates no session snapshot. These commands require the exact current
+revision and reject cross-mode provenance. Use `recover-expired` instead of impersonating the prior owner with `release`
 when another process recovers an abandoned claim:
 
 ```sh
 tools/handoffctl recover-expired AR-0001 --expected-revision REVISION \
   --note "UTC expiry and absence of the previous worker independently verified"
+tools/handoffctl unblock AR-0002 --expected-revision REVISION \
+  --note "External blocker and exact revision independently verified"
 ```
 
 A future or malformed deadline and a stale revision are rejected before mutation.
@@ -183,11 +192,31 @@ regenerates the project profile or binding. Review the full vendor diff and run 
 tests before committing. On interruption, inspect the manifest, hashes, refs, release and CI before
 retrying.
 
-The vendor boundary intentionally excludes formal qualification models,
-attestation helpers, tier evidence and launchers owned by downstream quality
-projects. Those paths remain downstream-owned and must not be overwritten by
-coordinator sync; coordinator formal models are still tested and released by
-this repository itself.
+For development integration from an untagged Coordinator head, use the explicit development-only
+path with a full immutable commit identifier:
+
+```sh
+python /path/to/agent-workflow-coordinator/tools/vendor.py sync-development \
+  --source /path/to/agent-workflow-coordinator \
+  --target /path/to/project-state \
+  --commit FULL_40_CHARACTER_HEAD_COMMIT
+```
+
+The source must be clean and its `HEAD` must equal the requested commit. The resulting schema-v2
+manifest is explicitly classified as `development` and binds the exact Git tree plus every vendored
+file digest. It is not release evidence. Normal `sync --version vMAJOR.MINOR.PATCH` behavior remains
+tag-bound and emits the existing schema-v1 release manifest.
+
+The vendor boundary includes the complete first-party Coordinator formal
+verification closure: lifecycle, binding, lock, run, storage, recovery and
+interaction-gate models/configurations; the verifier, runner, attestation
+helper; and evidence metadata. Vendor verification rejects runtime/model
+operation drift. Additional qualification models and launchers owned by
+downstream quality projects remain downstream-owned and are not overwritten.
+An empty-destination vendor diagnostic may supply the paired absolute
+`--diagnostic-queue` and `--diagnostic-admission-lock` verifier flags. That execution is explicitly
+noncanonical (`diagnostic-private-admission`) and cannot support publication or release claims;
+normal hosted verification continues to use the shared canonical admission path.
 
 ## Proof boundary
 

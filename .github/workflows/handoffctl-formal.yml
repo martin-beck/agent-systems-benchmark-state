@@ -77,6 +77,9 @@ jobs:
         run: uv sync --locked --only-group quality
 
       - name: Check exhaustive concurrent-state model
+        env:
+          TLC_ADMISSION_QUEUE: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}/queue
+          TLC_ADMISSION_LOCK: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}/admission.lock
         run: formal/handoffctl/verify.sh --tier pr-publication
 
       - name: Check implementation refinement and fault behavior

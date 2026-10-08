@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "spec_ref": "examples/task-specs/downstream-additive.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "downstream-policy", "description": "The project-bound additive evidence policy validates."}
+  ],
+  "definition_of_done": ["Every downstream evidence class is admitted through one policy."],
+  "inputs": [{"id": "project-policy", "description": "The tracked project task-spec policy."}],
+  "outputs": [{"id": "validated-spec", "description": "A validated downstream task specification."}],
+  "allowed_tools": ["handoffctl"],
+  "forbidden_tools": [],
+  "required_evidence_classes": ["hosted", "offline", "privacy", "journey", "quality"],
+  "gates": [{"id": "policy-gate", "description": "The complete additive vocabulary is available."}]
+}
