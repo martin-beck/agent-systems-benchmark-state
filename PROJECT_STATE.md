@@ -26,11 +26,11 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37761615219 | `bbe25d0c516b` | push | Huawei MIT source headers | completed:success |
-| 37761614829 | `bbe25d0c516b` | push | Fault assurance | in_progress:- |
+| 37761614829 | `bbe25d0c516b` | push | Fault assurance | completed:success |
 | 37761614825 | `bbe25d0c516b` | push | Repository quality | in_progress:- |
 | 37761614807 | `bbe25d0c516b` | push | Credential-free benchmark path | completed:success |
 | 37761614776 | `bbe25d0c516b` | push | Emulated aarch64 portability | in_progress:- |
-| 37761614748 | `bbe25d0c516b` | push | Cross-repository development broker qualification | in_progress:- |
+| 37761614748 | `bbe25d0c516b` | push | Cross-repository development broker qualification | completed:success |
 | 37761614739 | `bbe25d0c516b` | push | Formal assurance | in_progress:- |
 | 37761614618 | `bbe25d0c516b` | push | Hosted portability and native qualification | completed:success |
 | 37761614612 | `bbe25d0c516b` | push | Rust verification | in_progress:- |
