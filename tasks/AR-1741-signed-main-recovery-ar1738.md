@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T11:51:32+00:00",
   "depends_on": [],
   "id": "AR-1741",
-  "next_action": "Create a fresh recovery worktree from protected main 2f7387e, prepare a minimal signed+DCO forward-only descendant PR, and integrate it only with tools/integration/merge_pr.py after independent review.",
+  "next_action": "Publish exact signed recovery commit 0c100e4 from clean worktree once shared lock clears; create recovery PR, independently review exact tree, then integrate with tools/integration/merge_pr.py.",
   "observed_branch": "repair/ar-1741-signed-main-recovery-ar1738",
   "observed_dirty": 0,
   "observed_head": "0c100e4624a6dc3972660dc24713940d87753709",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Signed protected-main recovery for AR-1738",
-  "updated_at": "2026-10-08T09:51:32+00:00",
+  "updated_at": "2026-10-08T09:51:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738"
 }
 ---
@@ -34,3 +34,7 @@ main. AR-1740 is a separate publication incident and is intentionally excluded.
   8955c1a4f9d012421dbe400da15b32bf2b4d6fd81e7b7229f8d7a55bcc174a6c.
 
 - 2026-10-08T09:51:32+00:00: Heartbeat by codex-ar1738-rustup-permission.
+
+- 2026-10-08T09:51:39+00:00: Forward-only descendant 0c100e4 has parent current protected main
+  a9abcf2 and identical tree (zero product changes), SSH signature and matching DCO verified. Push
+  remains blocked by recurring shared handoffctl lock; no remote effect yet.

@@ -661,7 +661,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge. |
-| Next action | Create a fresh recovery worktree from protected main 2f7387e, prepare a minimal signed+DCO forward-only descendant PR, and integrate it only with tools/integration/merge_pr.py after independent review. |
+| Next action | Publish exact signed recovery commit 0c100e4 from clean worktree once shared lock clears; create recovery PR, independently review exact tree, then integrate with tools/integration/merge_pr.py. |
 
 
 ## Dependency graph
