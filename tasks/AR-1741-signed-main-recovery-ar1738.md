@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T12:07:06+00:00",
   "depends_on": [],
   "id": "AR-1741",
-  "next_action": "Publish exact signed recovery commit 0c100e4 from clean worktree once shared lock clears; create recovery PR, independently review exact tree, then integrate with tools/integration/merge_pr.py.",
+  "next_action": "Wait for PR #508 required checks to turn green; then invoke tools/integration/merge_pr.py with exact base a9abcf2e63f761e314593e9abc6bf074b7418e5e, head 0c100e4624a6dc3972660dc24713940d87753709, tree befcb782d6ce260d1d4dd0e4fe25c2fb0b1b900f; verify signed protected-main descendant and post-merge policy before releasing AR-1741 and AR-1738.",
   "observed_branch": "repair/ar-1741-signed-main-recovery-ar1738",
   "observed_dirty": 0,
   "observed_head": "0c100e4624a6dc3972660dc24713940d87753709",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Signed protected-main recovery for AR-1738",
-  "updated_at": "2026-10-08T10:07:09+00:00",
+  "updated_at": "2026-10-08T10:07:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738"
 }
 ---
@@ -49,3 +49,8 @@ main. AR-1740 is a separate publication incident and is intentionally excluded.
 
 - 2026-10-08T10:07:09+00:00: Recorded command exit 0; command argv SHA-256
   1709c8ef0a4e862e1aecf02723498ed1079408e720748fcf58ca984ae4cd6519.
+
+- 2026-10-08T10:07:41+00:00: PR #508 is open at exact base a9abcf2e63f761e314593e9abc6bf074b7418e5e
+  and head 0c100e4624a6dc3972660dc24713940d87753709. Independent review: clean zero-diff tree, Good
+  SSH signature, matching DCO, parent is exact protected main. Checks pass except Repository quality
+  and emulated aarch64, both still in progress; Rust checks now pass. Main remains unchanged.
