@@ -581,14 +581,15 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1741](../tasks/AR-1741-signed-main-recovery-ar1738.md): Signed protected-main recovery for AR-1738 | codex-ar1738-rustup-permission | Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge. | Create a fresh recovery worktree from protected main 2f7387e, prepare a minimal signed+DCO forward-only descendant PR, and integrate it only with tools/integration/merge_pr.py after independent review. |
 | P1 | [AR-1739](../tasks/AR-1739-easy-channel-lifecycle.md): Add easy channel build, install, update, and test lifecycle | codex-ar1739-easy-lifecycle | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. | Monitor PR #506 at exact head fb6d81d; required CI is still pending after provenance refresh, then merge only when all green and perform post-merge exact-head verification. |
 | P1 | [AR-1740](../tasks/AR-1740-repository-makefile.md): Add developer Makefile workflow | codex-ar1740-makefile | Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows. | Hand off to a newly created/promoted narrow protected-main exact-tree recovery AR: preserve a9abcf2, 2f7387e base, e424c39 topic, reviewed tree 1aa96736, merge tree befcb782; use docs/PROTECTED_MAIN_MERGE.md and tools/integration/merge_pr.py for a signed forward repair merge, then rerun exact-main policy and all required workflows. Existing AR-1722 is a separate blocked incident and must not be conflated. |
 
-### Open (8)
+### Open (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -597,7 +598,6 @@
 | P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Unclaimed | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -&gt; bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. |
 | P0 | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md): Repair development TUI linker handoff | Unclaimed | Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH. | Reproduce the exact env-cleared development materializer failure, bind the validated linker search root in the effective Cargo/rustc flags, and requalify source-built install, upgrade, and bare launch without widening PATH. |
 | P0 | [AR-1738](../tasks/AR-1738-development-rustup-permission-compatibility.md): Repair permissive development rustup permission acceptance | Unclaimed | Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries. | Successor AR-1741 is open for signed-main recovery. Preserve 2f7387e, create minimal signed+DCO forward-only descendant PR, integrate with tools/integration/merge_pr.py, rerun exact-main policy/post-merge gates, then release AR-1738. |
-| P0 | [AR-1741](../tasks/AR-1741-signed-main-recovery-ar1738.md): Signed protected-main recovery for AR-1738 | Unclaimed | Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge. | Create a fresh recovery worktree from protected main 2f7387e, prepare a minimal signed+DCO forward-only descendant PR, and integrate it only with tools/integration/merge_pr.py after independent review. |
 | P1 | [AR-1728](../tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Unclaimed | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
 | P1 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md): Harden Goose diagnostic fixture determinism | Unclaimed | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. | Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics. |
 
