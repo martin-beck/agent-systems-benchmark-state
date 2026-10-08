@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "repair/ar-1734-development-tui-tool-environment",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-08T04:41:07+00:00",
   "depends_on": [
@@ -9,6 +9,9 @@
   ],
   "id": "AR-1734",
   "next_action": "Claim in an isolated ASB worktree; reproduce the AR-1713 installed-launch failure, then pass only validated development tool identities across the scrubbed broker environment with hostile replacement tests.",
+  "observed_branch": "repair/ar-1734-development-tui-tool-environment",
+  "observed_dirty": 1,
+  "observed_head": "736a65cd8904b8f4a6f1715fc86ae1c854fe2232",
   "owner": "codex-ar1734-tool-environment",
   "plan": "../plans/AR-1734-development-tui-tool-environment.md",
   "priority": "P0",
@@ -17,10 +20,10 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T01:41:47+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-10-08T01:47:41+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1734-development-tui-tool-environment"
 }
 ---
 
