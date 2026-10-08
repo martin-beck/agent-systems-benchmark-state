@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T13:08:00+00:00",
+  "updated_at": "2026-10-08T13:09:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -152,3 +152,6 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 
 - 2026-10-08T13:08:00+00:00: Recorded command exit 101; command argv SHA-256
   b6cc4cfcbdad37ecbeb90e4fa51d2ba1a3e39ba415767d77881c565bf0336098.
+
+- 2026-10-08T13:09:03+00:00: Recorded command exit 101; command argv SHA-256
+  195f3d9c2e7d9ae032177ae159d0a6785a5a268e53a84f1a43322eb9dc7b3f9f.
