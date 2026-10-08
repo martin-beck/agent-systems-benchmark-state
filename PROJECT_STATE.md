@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #506 | `feature/ar-1739-easy-channel-lifecycle@19e9170b52ef` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): add easy channel lifecycle |
-| #507 | `feature/ar-1740-repository-makefile@d0c692690564` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: make default lifecycle update and install |
+| #507 | `feature/ar-1740-repository-makefile@d0c692690564` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: make default lifecycle update and install |
 
 ## Recent workflows
 
@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37761919089 | `d0c692690564` | pull_request | Formal assurance | in_progress:- |
 | 37761919071 | `d0c692690564` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37761919061 | `d0c692690564` | pull_request | Huawei MIT source headers | completed:success |
-| 37761919059 | `d0c692690564` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37761919059 | `d0c692690564` | pull_request | Cross-repository development broker qualification | completed:success |
 | 37761919054 | `d0c692690564` | pull_request | Hosted portability and native qualification | completed:success |
 | 37761918986 | `d0c692690564` | pull_request | Credential-free benchmark path | completed:success |
 | 37761918981 | `d0c692690564` | pull_request | Rust verification | in_progress:- |
