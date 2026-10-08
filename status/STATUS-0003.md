@@ -465,7 +465,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give the ASB development broker child correct foreground process-group ownership on the caller&#x27;s controlling terminal without weakening descendant cleanup. |
-| Next action | Wait for the remaining exact-head PR #501 checks to become terminal green, then reclaim for the final independent GitHub approval and release for local merge_pr.py integration at exact base 317768c9fabe934ee4966e3300a83d8e13866817/head 0714b0e96c455034b01c5737e22a4c3087349409/tree bd5cc8111417b7b9031988b0c6e354db3354ac0f. |
+| Next action | Integrate independently approved recovery PR #501 only with tools/integration/merge_pr.py using exact base 317768c9fabe934ee4966e3300a83d8e13866817, head 0714b0e96c455034b01c5737e22a4c3087349409, and tree bd5cc8111417b7b9031988b0c6e354db3354ac0f; verify the resulting signed two-parent merge identity/tree/parents/DCO and all exact-main post-merge checks before closing AR-1727. |
 
 ### AR-1728 — Freeze development cli2key contract and bridge
 

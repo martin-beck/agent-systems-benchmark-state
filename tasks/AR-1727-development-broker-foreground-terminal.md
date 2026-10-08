@@ -7,7 +7,7 @@
     "AR-1590"
   ],
   "id": "AR-1727",
-  "next_action": "Wait for the remaining exact-head PR #501 checks to become terminal green, then reclaim for the final independent GitHub approval and release for local merge_pr.py integration at exact base 317768c9fabe934ee4966e3300a83d8e13866817/head 0714b0e96c455034b01c5737e22a4c3087349409/tree bd5cc8111417b7b9031988b0c6e354db3354ac0f.",
+  "next_action": "Integrate independently approved recovery PR #501 only with tools/integration/merge_pr.py using exact base 317768c9fabe934ee4966e3300a83d8e13866817, head 0714b0e96c455034b01c5737e22a4c3087349409, and tree bd5cc8111417b7b9031988b0c6e354db3354ac0f; verify the resulting signed two-parent merge identity/tree/parents/DCO and all exact-main post-merge checks before closing AR-1727.",
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:41:12+00:00",
+  "updated_at": "2026-10-08T00:41:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -351,3 +351,12 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-08T00:41:12+00:00: Recorded command exit 0; command argv SHA-256
   6684a69631fbb092f954d7ff0e590daab3f3e46f9fa2ef1276ca713ded9005e2.
+
+- 2026-10-08T00:41:43+00:00: Final independent recovery review approved PR #501 exact head
+  0714b0e96c455034b01c5737e22a4c3087349409 with no findings. Remote main/base remains published
+  merge 317768c9fabe934ee4966e3300a83d8e13866817; head is its single-parent metadata-only empty
+  descendant, no files differ, and base/head/merge-preview trees all equal
+  bd5cc8111417b7b9031988b0c6e354db3354ac0f. Repository DCO and allowed-signers checks pass with
+  matching author/committer/signer/DCO identity; GitHub signature is valid. All 14 exact-head hosted
+  checks are terminal green and PR is clean/mergeable. GitHub exact-head review comment records
+  approval and explicitly forbids web merge.
