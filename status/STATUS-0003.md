@@ -759,7 +759,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. |
-| Next action | Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits. |
+| Next action | Wait for AR-1750 to repair exact ruleset ID 24750310 request/response normalization and complete one guarded ID-bound PUT/PATCH plus two clean audits; then unblock and finish receipt/release. |
 
 ### AR-1749 — Bootstrap canonical Coordinator unblock vendor adoption
 

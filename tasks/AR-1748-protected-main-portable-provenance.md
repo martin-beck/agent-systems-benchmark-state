@@ -7,7 +7,7 @@
     "AR-1750"
   ],
   "id": "AR-1748",
-  "next_action": "Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits.",
+  "next_action": "Wait for AR-1750 to repair exact ruleset ID 24750310 request/response normalization and complete one guarded ID-bound PUT/PATCH plus two clean audits; then unblock and finish receipt/release.",
   "observed_branch": "repair/ar-1748-portable-main-provenance",
   "observed_dirty": 0,
   "observed_head": "7c3e9e3eca962474c03db9b77dbe09a30e95099d",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Portable protected-main provenance and capability admission",
-  "updated_at": "2026-10-08T20:53:06+00:00",
+  "updated_at": "2026-10-08T20:53:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
 }
 ---
@@ -373,3 +373,7 @@ closed with an exact typed blocker rather than weakening it.
 
 - 2026-10-08T20:53:06+00:00: Recorded command exit 0; command argv SHA-256
   bae2843ab0b5142bef3319e1381648913ab0f0d0fe3d238537029bd32ba63cae.
+
+- 2026-10-08T20:53:52+00:00: Created canonical P0 dependency AR-1750 with spec revision 1. AR-1748
+  single apply created response-only ruleset ID 24750310, stopped before settings PATCH, and is
+  blocked solely on that repair.

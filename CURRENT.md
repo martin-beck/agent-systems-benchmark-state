@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1748](tasks/AR-1748-protected-main-portable-provenance.md): Portable protected-main provenance and capability admission | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. | Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits. | ar1748_portable_main_provenance_20261008 |
+| P0 | [AR-1748](tasks/AR-1748-protected-main-portable-provenance.md): Portable protected-main provenance and capability admission | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. | Wait for AR-1750 to repair exact ruleset ID 24750310 request/response normalization and complete one guarded ID-bound PUT/PATCH plus two clean audits; then unblock and finish receipt/release. | ar1748_portable_main_provenance_20261008 |
 
 ## Open
 
