@@ -20,9 +20,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T22:11:07+00:00",
+  "updated_at": "2026-10-08T22:11:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -259,3 +259,6 @@ independent review, all hosted checks, and a root execution gate are recorded.
 
 - 2026-10-08T22:11:07+00:00: Recorded command exit 0; command argv SHA-256
   48faa72605d4f2250f296f946ac913eb9db74f1f43c1e35436bf05e59fc225b2.
+
+- 2026-10-08T22:11:57+00:00: Recorded command exit 0; command argv SHA-256
+  081a5e1216002759c7c1d4028e722aa0f7efe7a0572aad3d82dad1d362752f4b.
