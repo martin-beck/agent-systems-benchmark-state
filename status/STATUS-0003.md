@@ -1516,7 +1516,7 @@ flowchart LR
         AR_1649["AR-1649 - Done"]:::status_done
         AR_1650["AR-1650 - Done"]:::status_done
         AR_1651["AR-1651 - Done"]:::status_done
-        AR_1652["AR-1652 - In progress"]:::status_in_progress
+        AR_1652["AR-1652 - Blocked"]:::status_blocked
         AR_1653["AR-1653 - Planned"]:::status_planned
         AR_1654["AR-1654 - Planned"]:::status_planned
         AR_1655["AR-1655 - Planned"]:::status_planned
