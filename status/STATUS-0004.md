@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) | [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
+| [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md) | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) | [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
 | [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md), [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md) | [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md) |
 | [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) | None |
 | [AR-0895](../tasks/AR-0895-verify-coordination-content.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
@@ -596,6 +598,7 @@
 | [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md), [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | None |
 | [AR-1747](../tasks/AR-1747-coordinator-unblock-vendor-adoption.md) | None | None |
 | [AR-1748](../tasks/AR-1748-protected-main-portable-provenance.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md), [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | None |
+| [AR-1749](../tasks/AR-1749-coordinator-unblock-bootstrap.md) | None | None |
 
 ## Complete AR inventory
 
@@ -643,5 +646,3 @@
 | P0 | [AR-1273](../tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | Unclaimed | Provide complete runtime-owned context for strict-replay execution. | Integrate ReplayRequestContext into actual argument-level replay dispatch and connect runtime cassette service; add real response parity and supervised egress/no-fallback/cancel/restart/timeout/crash cleanup tests. |
 | P0 | [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md): Runtime cassette operation executor adapter | Unclaimed | Provide a runtime cassette operation executor callback boundary. | Provide CLI/replay adapter over RuntimeOperationHandle and bind actual replay command; add supervised lifecycle/egress/no-fallback fixtures. |
 | P0 | [AR-1275](../tasks/AR-1275-replay-operation-injection.md): Runtime operation injection into replay dispatcher | Unclaimed | Inject runtime-owned operation handles into actual strict-replay dispatch. | Bind runtime-issued operation handle into the primary argument-level replay command; add supervised cassette response/egress/cancel/restart/timeout/crash/cleanup evidence. |
-| P0 | [AR-1276](../tasks/AR-1276-primary-replay-runtime.md): Primary replay runtime integration | Unclaimed | Integrate runtime-owned operation execution into the primary strict-replay command. | Promote after dependency verification; wire the primary replay command to runtime-issued operation execution and prove supervised lifecycle behavior. |
-| P0 | [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md): Runtime-to-CLI replay transport boundary | Unclaimed | Provide a runtime-issued transport channel for primary strict replay. | Wire ReplayTransportClient into the primary replay dispatch and connect runtime-issued cassette service; add supervised egress/lifecycle evidence. |

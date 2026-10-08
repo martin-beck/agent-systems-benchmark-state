@@ -761,6 +761,20 @@
 | Summary | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. |
 | Next action | Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits. |
 
+### AR-1749 — Bootstrap canonical Coordinator unblock vendor adoption
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool. |
+| Next action | Adopt the exact reviewed Coordinator development vendor handoff on a claimable bootstrap AR, merge and verify it, then hand canonical unblock capability to blocked AR-1747. |
+
 
 ## Dependency graph
 
@@ -1568,6 +1582,7 @@ flowchart LR
         AR_1746["AR-1746 - Blocked"]:::status_blocked
         AR_1747["AR-1747 - Blocked"]:::status_blocked
         AR_1748["AR-1748 - In progress"]:::status_in_progress
+        AR_1749["AR-1749 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3591,5 +3606,3 @@ flowchart LR
 | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md), [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md), [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) |
 | [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md), [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) |
 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
-| [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) | [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
-| [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md) | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) | [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
