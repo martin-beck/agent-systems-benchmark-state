@@ -15,13 +15,21 @@
   "plan": "../plans/AR-1748-protected-main-portable-provenance.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:329c47b3c46c94ce389658b4435fa53c218507c4ba5412e1b2b6af68c7091c95",
+    "evidence_ref": "github/pr517/31ca7a4/ar1748-closeout",
+    "spec_ref": "specs/AR-1748.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1748.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
-  "task_revision": 145,
+  "task_revision": 146,
   "title": "Portable protected-main provenance and capability admission",
-  "updated_at": "2026-10-08T22:29:55+00:00",
+  "updated_at": "2026-10-08T22:30:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
 }
 ---
@@ -404,3 +412,6 @@ closed with an exact typed blocker rather than weakening it.
   settings are merge=true squash=false rebase=false auto=false signoff=true; desired main ruleset
   approval count0, last-push=false, reviewers=[], exact server normalization accepted. Independent
   receipt review approved without findings.
+
+- 2026-10-08T22:30:10+00:00: Recorded command exit 0; command argv SHA-256
+  027a86f6d6c985e0c0cc02f6cc7b6385248b23e04cc6ce2d5fc877a9a5839745.
