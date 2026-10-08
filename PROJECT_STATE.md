@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #515 | `repair/ar-1748-portable-main-provenance@e8b65be942d2` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce portable protected-main provenance |
+| #515 | `repair/ar-1748-portable-main-provenance@e8b65be942d2` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce portable protected-main provenance |
 
 ## Recent workflows
 
@@ -28,7 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37823649188 | `e8b65be942d2` | pull_request | Fault assurance | completed:success |
 | 37823649177 | `e8b65be942d2` | pull_request | Formal assurance | completed:success |
 | 37823649155 | `e8b65be942d2` | pull_request | Credential-free benchmark path | completed:success |
-| 37823649091 | `e8b65be942d2` | pull_request | Rust verification | in_progress:- |
+| 37823649091 | `e8b65be942d2` | pull_request | Rust verification | completed:success |
 | 37823649079 | `e8b65be942d2` | pull_request | Huawei MIT source headers | completed:success |
 | 37823649063 | `e8b65be942d2` | pull_request | Hosted portability and native qualification | completed:success |
 | 37823648974 | `e8b65be942d2` | pull_request | Agent Workflow Quality shadow | completed:success |
