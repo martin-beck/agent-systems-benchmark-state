@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1734.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "minimal-environment", "description": "The development launcher supplies only explicitly validated tool identities and bounded locale/runtime variables; it never inherits the caller environment or PATH wholesale."},
+    {"id": "object-binding", "description": "Cargo and Rustc remain bound to the same validated rustup toolchain objects across pathname replacement, and every other tool is resolved through the existing development trust policy."},
+    {"id": "installed-launch", "description": "A verified development bundle passes install, status, bare launch, dynamic-catalog, and provider-free selected/all launch through the real installed ASB boundary."},
+    {"id": "failure-contract", "description": "Missing, replaced, symlinked, or unusable tools produce typed credential-free human and JSON failures without fallback or leaked host paths."},
+    {"id": "stable-isolation", "description": "Stable and production launch semantics, authentication, signature, key-management, and trust gates remain unchanged."}
+  ],
+  "definition_of_done": [
+    "The signed and DCO-certified implementation is independently reviewed and merged through local merge integrity.",
+    "Focused hostile-tool and full ASB tests pass at the exact reviewed head.",
+    "Required hosted and exact-main post-merge checks are green, and the downstream ASB-TUI installed qualification is rerun."
+  ],
+  "inputs": [
+    {"id": "rustup-binding", "description": "Descriptor-bound development Cargo and Rustc selection merged by AR-1726."},
+    {"id": "paired-failure", "description": "Privacy-safe AR-1713 receipt proving installed launch fails before provider dispatch after environment scrubbing."}
+  ],
+  "outputs": [
+    {"id": "tool-environment", "description": "A bounded development-only environment for the installed standalone frontend."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["ambient-path-forwarding", "mutable-tool-reopen", "stable-policy-weakening", "credential-output"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [
+    {"id": "hostile-tools", "description": "Hostile PATH and tool replacement tests prove object binding and fail-closed diagnostics."},
+    {"id": "paired-installed", "description": "The real installed ASB-to-TUI development journey reaches the provider-free frontend without preflight failure."},
+    {"id": "hosted", "description": "Independent review, signed merge integrity, required PR checks, and post-merge checks pass."}
+  ]
+}
+

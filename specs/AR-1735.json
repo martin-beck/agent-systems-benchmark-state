@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1735.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "deterministic-diagnostic", "description": "The Goose diagnostic fixture deterministically observes and classifies the required-extension diagnostic before returning a terminal outcome."},
+    {"id": "no-semantic-weakening", "description": "Production adapter failure, redaction, symlink rejection, and cleanup semantics remain unchanged."},
+    {"id": "portable-repeat", "description": "Repeated native and emulated AArch64 executions pass without timing assumptions or retries inside the test."}
+  ],
+  "definition_of_done": [
+    "The exact failure is reproduced or bounded by a deterministic race test.",
+    "Signed+DCO implementation and independent review complete.",
+    "Full relevant hosted and post-merge portability checks pass."
+  ],
+  "inputs": [
+    {"id": "failed-run", "description": "ASB main AArch64 workflow 37712243495 attempt 1 failure and attempt 2 success at the same signed commit."}
+  ],
+  "outputs": [
+    {"id": "stable-fixture", "description": "Deterministic Goose diagnostic and symlink regression coverage."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["test-retry-masking", "adapter-policy-weakening", "diagnostic-leakage"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [
+    {"id": "repetition", "description": "The focused race regression passes repeated native and emulated execution."},
+    {"id": "hosted", "description": "Exact-head and post-merge portability workflows pass."}
+  ]
+}
+
