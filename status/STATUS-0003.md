@@ -773,7 +773,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool. |
-| Next action | PR #107 exact head 9c8f379e287903482b08b2621d8ddff43d09a5a5 tree 50340294a4d34a8e819c5d53bfe2114825b6f2f3 is published. Wait for independent exact-head technical review and hosted Coordination/Formal terminal success; do not merge stale PR #106. |
+| Next action | Rebuild the exact two signed implementation commits onto canonical main, publish repaired PR #107, require hosted Formal rerun and fresh independent exact-head review; do not merge stale PR #106. |
 
 
 ## Dependency graph

@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T21:36:14+00:00",
   "depends_on": [],
   "id": "AR-1749",
-  "next_action": "PR #107 exact head 9c8f379e287903482b08b2621d8ddff43d09a5a5 tree 50340294a4d34a8e819c5d53bfe2114825b6f2f3 is published. Wait for independent exact-head technical review and hosted Coordination/Formal terminal success; do not merge stale PR #106.",
+  "next_action": "Rebuild the exact two signed implementation commits onto canonical main, publish repaired PR #107, require hosted Formal rerun and fresh independent exact-head review; do not merge stale PR #106.",
   "owner": "codex-asb-ar1749-vendor-bootstrap-20261008",
   "plan": "../plans/AR-1749-coordinator-unblock-bootstrap.md",
   "priority": "P0",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Bootstrap canonical Coordinator unblock vendor adoption",
-  "updated_at": "2026-10-08T19:40:25+00:00",
+  "updated_at": "2026-10-08T19:43:44+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1749-coordinator-unblock-bootstrap"
 }
 ---
@@ -215,3 +215,11 @@ review, hosted CI, and signed local integration remain mandatory.
 
 - 2026-10-08T19:40:25+00:00: Recorded command exit 1; command argv SHA-256
   9a7bd210f10d901be0ebf36a5012fa4b05f4f4379556d875d67eeeecf72f4b5a.
+
+- 2026-10-08T19:43:44+00:00: Independent review changes addressed in topic: TLC admission queue/lock
+  are scoped only to the exhaustive formal step, the default and explicit environment parser tests
+  pass, and the hostile selector fixture deterministically chmods 0644. Focused hosted-equivalent
+  tests are green. The complete 1395-test suite passes outside the outer coordinator lock with
+  unchanged 95% coverage; the wrapper-held attempt produced only four expected self-lock timeout
+  errors. Publication will preserve all canonical receipts by rebasing exactly two implementation
+  commits onto current main.
