@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -> bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. | codex-asb-ar1721-qualification-20261009 |
+| P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Independent reviewer: review asb-tui PR #296 exact head 218735341aebc482a372ec0ed114bbd4ebb40dbd/tree 2ca01ad5d8dc91be68d8b4d00aef187fae647276 against base 168ea56a1e3724bc72f097ffedf91c80704a72c2; require terminal-green exact-head checks, then return approval or defect findings without merging. | codex-asb-ar1721-qualification-20261009 |
 
 ## Open
 
