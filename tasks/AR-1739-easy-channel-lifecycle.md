@@ -12,11 +12,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1739.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T00:00:00+00:00",
+  "updated_at": "2026-10-08T09:17:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -38,3 +38,5 @@ Justfile. A Make/Just wrapper would require an extra tool and a source checkout,
 while the ASB binary already owns channel manifests, installation state,
 diagnostics, rollback, human output, and JSON contracts. Keep the lifecycle
 provider-free by default and preserve all stable/production fail-closed gates.
+
+- 2026-10-08T09:17:44+00:00: dependencies verified; ready for isolated implementation worker
