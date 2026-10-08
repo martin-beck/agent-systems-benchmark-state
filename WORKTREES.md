@@ -371,7 +371,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1734-development-tui-tool-environment` | `repair/ar-1734-development-tui-tool-environment` | `40f618b9389c` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility` | `repair/ar-1738-development-rustup-permission-compatibility` | `f020b2d4fd65` | 0 | behind 4, ahead 0 |
-| `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `8d86ebe49043` | 0 | behind 0, ahead 4 |
+| `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `8d86ebe49043` | 2 | behind 0, ahead 4 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-ar-1740-repository-makefile` | `feature/ar-1740-repository-makefile` | `8fdda72fa7f1` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738` | `repair/ar-1741-signed-main-recovery-ar1738` | `0c100e4624a6` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 299, ahead 192 |
