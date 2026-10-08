@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1006](../tasks/AR-1006-distributed-workers.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | None |
 | [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md), [AR-1016](../tasks/AR-1016-measurement-integration-audit.md), [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
 | [AR-1008](../tasks/AR-1008.md) | None | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) |
 | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md), [AR-1052](../tasks/AR-1052-tmux-server-authority-portability.md), [AR-1054](../tasks/AR-1054-tmux-socket-connect-completion.md), [AR-1056](../tasks/AR-1056-tmux-socket-connect-diagnostics.md), [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md), [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) |
@@ -567,13 +566,7 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1728](../tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | codex-root-ar1737-register-20261008 | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
-
-### Open (5)
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -581,6 +574,7 @@
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 | P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Unclaimed | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -&gt; bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. |
 | P0 | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md): Repair development TUI linker handoff | Unclaimed | Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH. | Reproduce the exact env-cleared development materializer failure, bind the validated linker search root in the effective Cargo/rustc flags, and requalify source-built install, upgrade, and bare launch without widening PATH. |
+| P1 | [AR-1728](../tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Unclaimed | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
 | P1 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md): Harden Goose diagnostic fixture determinism | Unclaimed | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. | Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics. |
 
 ### Blocked (85)
@@ -634,3 +628,4 @@
 | P0 | [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md): Runtime control bootstrap constructor | Unclaimed | Materialize authenticated runtime live authority into an opaque source without caller injection. | Claim the pre-bound isolated worktree, implement the runtime/control-owned authenticated bootstrap constructor, and publish a signed PR. |
 | P0 | [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md): Runtime certificate-chain enrollment materialization | Unclaimed | Materialize runtime-owned certificate-chain enrollment authority for live dispatch. | Protected-main setup is not current: AR worktree is clean but 86 commits behind origin/main 7167e3d; refresh via handoffctl run, then implement the narrow runtime-owned authenticated enrollment source. Existing RuntimeAuthorityRecord holds only public digests/opaque chain metadata; no private bootstrap authority or caller-safe issuer is available. Do not fabricate authority. |
 | P0 | [AR-1481](../tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md): Runtime-owned CLI entry bootstrap | Unclaimed | Wire runtime-owned authenticated dispatch into the ordinary CLI entry path. | Promote and claim, then inspect the protected-main entrypoint and runtime/control bootstrap inputs. |
+| P0 | [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | Unclaimed | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Development qualification is not blocked: exercise process bootstrap with deterministic local/mock and strict-replay authority. A real deployment-owned authenticated provider/materializer is optional future production hardening; preserve fail-closed live behavior. |

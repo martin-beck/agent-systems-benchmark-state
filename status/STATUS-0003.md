@@ -471,11 +471,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-root-ar1737-register-20261008 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. |
@@ -1393,7 +1393,7 @@ flowchart LR
         AR_1725["AR-1725 - Planned"]:::status_planned
         AR_1726["AR-1726 - Done"]:::status_done
         AR_1727["AR-1727 - Done"]:::status_done
-        AR_1728["AR-1728 - In progress"]:::status_in_progress
+        AR_1728["AR-1728 - Open"]:::status_open
         AR_1729["AR-1729 - Planned"]:::status_planned
         AR_1730["AR-1730 - Planned"]:::status_planned
         AR_1731["AR-1731 - Planned"]:::status_planned
@@ -3442,3 +3442,4 @@ flowchart LR
 | [AR-1003](../tasks/AR-1003-execution-budgets.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md) | None |
 | [AR-1004](../tasks/AR-1004-reliability-fairness.md) | [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md) | None |
 | [AR-1005](../tasks/AR-1005-trace-interoperability.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | None |
+| [AR-1006](../tasks/AR-1006-distributed-workers.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | None |

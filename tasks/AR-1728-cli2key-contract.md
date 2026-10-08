@@ -2,21 +2,21 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T04:53:01+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1728",
   "next_action": "Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets.",
-  "owner": "codex-root-ar1737-register-20261008",
+  "owner": "",
   "plan": "../plans/AR-1728-cli2key-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1728.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Freeze development cli2key contract and bridge",
-  "updated_at": "2026-10-08T04:23:48+00:00",
+  "updated_at": "2026-10-08T04:24:21+00:00",
   "worktree_key": ""
 }
 ---
@@ -69,3 +69,8 @@ unofficial, opt-in, and provides no production or provider-authority claim.
 
 - 2026-10-08T04:23:48+00:00: Recorded command exit 0; command argv SHA-256
   38e9ccad05daa61830e1e28e4d9a5a94ddef7eed77e7956404a98c51623aaeea.
+
+- 2026-10-08T04:24:21+00:00: Registered dependent ASB repair AR-1737 from exact AR-1575 evidence. It
+  repairs the env-cleared validated linker/search-root handoff without restoring ambient PATH,
+  retains reproducible remapping, and requires source-built install/upgrade/bare-launch
+  qualification. AR-1728 remains unchanged and ready.
