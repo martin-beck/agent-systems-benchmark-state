@@ -8,7 +8,7 @@
     "AR-1734"
   ],
   "id": "AR-1737",
-  "next_action": "Wait for every PR #509 hosted check on exact head 199bd00a to finish green; merge only that independently reviewed tree, then qualify the real source-built development lifecycle and exact post-merge CI.",
+  "next_action": "Wait only for exact post-merge Emulated aarch64 run 37765241487 on merge 9aeea48c to finish green, then release done and reconcile.",
   "observed_branch": "repair/ar-1737-development-tui-linker-handoff",
   "observed_dirty": 0,
   "observed_head": "199bd00a95c2c8cb1559851da9655e58f80f9998",
@@ -20,9 +20,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Repair development TUI linker handoff",
-  "updated_at": "2026-10-08T10:54:12+00:00",
+  "updated_at": "2026-10-08T10:55:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1737-development-tui-linker-handoff"
 }
 ---
@@ -232,3 +232,13 @@ its `collect2` helper cannot discover `ld` because ambient `PATH` is empty.
 
 - 2026-10-08T10:54:12+00:00: Recorded command exit 0; command argv SHA-256
   039c58c00a241b1282cc359e53cb62b7d7a17187ef0e51f8a7d22e7cad400c45.
+
+- 2026-10-08T10:55:04+00:00: PR #509 merged as 9aeea48c40417108b95c0a2743b2d4b3220f56bd with
+  reviewed topic 199bd00a95c2c8cb1559851da9655e58f80f9998 and tree
+  55f384140095a39819296863cc690183dedf35fa. Exact source-built lifecycle on the merge passes
+  auto-detected rustup Cargo preflight, install, status, doctor, upgrade, first remove, and
+  omitted-channel repeated remove (exit 3 extension_not_installed, network denied). Exact hosted
+  paired inherited-fd PTY qualification passed in 4.46s. Manual scripted bare-launch input
+  reached/rendered the TUI but synthetic q timing hit the bounded 15s launcher timeout; this is not
+  used as acceptance evidence because the exact hosted paired PTY test is green. Eight of nine exact
+  post-merge workflows are green; only Emulated aarch64 remains in progress, with no failures.
