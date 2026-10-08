@@ -24,14 +24,14 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37719574960 | `1a5888ce1c96` | push | Cross-repository development broker qualification | completed:success |
-| 37719574756 | `1a5888ce1c96` | push | Rust verification | in_progress:- |
+| 37719574756 | `1a5888ce1c96` | push | Rust verification | completed:success |
 | 37719574657 | `1a5888ce1c96` | push | Credential-free benchmark path | completed:success |
-| 37719574598 | `1a5888ce1c96` | push | Formal assurance | in_progress:- |
+| 37719574598 | `1a5888ce1c96` | push | Formal assurance | completed:success |
 | 37719574567 | `1a5888ce1c96` | push | Fault assurance | completed:success |
 | 37719574552 | `1a5888ce1c96` | push | Hosted portability and native qualification | completed:success |
 | 37719574548 | `1a5888ce1c96` | push | Huawei MIT source headers | completed:success |
-| 37719574501 | `1a5888ce1c96` | push | Emulated aarch64 portability | in_progress:- |
-| 37719574479 | `1a5888ce1c96` | push | Repository quality | in_progress:- |
+| 37719574501 | `1a5888ce1c96` | push | Emulated aarch64 portability | completed:success |
+| 37719574479 | `1a5888ce1c96` | push | Repository quality | completed:success |
 | 37717144929 | `40f618b9389c` | pull_request | Huawei MIT source headers | completed:success |
 | 37717144879 | `40f618b9389c` | pull_request | Formal assurance | completed:success |
 | 37717144850 | `40f618b9389c` | pull_request | Fault assurance | completed:success |
