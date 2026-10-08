@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1738.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "development-permission-warning",
+      "description": "Development rustup shim and RUSTUP_HOME permission or ownership findings are warning-only and do not produce trusted_tool_invalid."
+    },
+    {
+      "id": "development-only",
+      "description": "The permissive behavior is reachable only through the explicit development installation path; stable and production trust policy remains strict."
+    },
+    {
+      "id": "path-boundary",
+      "description": "Absolute, non-escaping, non-malformed, and non-symlink path-shape checks remain enforced even when permission and ownership checks warn."
+    },
+    {
+      "id": "paired-lifecycle",
+      "description": "Exact current-main ASB/asb-tui install, status, upgrade, bare launch, and removal complete with warning-labelled evidence."
+    }
+  ],
+  "definition_of_done": [
+    "Signed+DCO implementation is independently reviewed and merged on protected ASB main.",
+    "Focused resolver tests cover permissive development cases and hostile path-shape cases.",
+    "Exact-head paired lifecycle and required hosted checks are terminal green."
+  ],
+  "inputs": [
+    {
+      "id": "reported-failure",
+      "description": "Current-main asb tui install failure reported as trusted_tool_invalid for RUSTUP_HOME."
+    },
+    {
+      "id": "existing-contract",
+      "description": "AR-1726 development shim warning contract and AR-1734 validated tool environment."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "permissive-development-rustup",
+      "description": "Warning-labelled development rustup compatibility without stable or production policy weakening."
+    }
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["stable-policy-weakening", "ambient-production-bypass", "credential-output"],
+  "required_evidence_classes": ["contract-test", "environmental", "hosted"],
+  "gates": [
+    {
+      "id": "focused",
+      "description": "Resolver positive warning cases and hostile path-shape negatives pass."
+    },
+    {
+      "id": "paired",
+      "description": "Exact ASB/asb-tui development lifecycle passes with warning-labelled evidence."
+    },
+    {
+      "id": "hosted",
+      "description": "Exact reviewed head and post-merge required workflows pass."
+    }
+  ]
+}
+
