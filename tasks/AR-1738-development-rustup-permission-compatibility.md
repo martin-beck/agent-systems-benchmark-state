@@ -8,7 +8,7 @@
     "AR-1734"
   ],
   "id": "AR-1738",
-  "next_action": "Successor signed-main recovery AR required (next available ID likely AR-1741; no active successor exists). Preserve 2f7387e, create minimal signed+DCO forward-only descendant PR based on it, integrate with tools/integration/merge_pr.py, rerun exact-main policy/post-merge gates, then release AR-1738.",
+  "next_action": "Successor AR-1741 is open for signed-main recovery. Preserve 2f7387e, create minimal signed+DCO forward-only descendant PR, integrate with tools/integration/merge_pr.py, rerun exact-main policy/post-merge gates, then release AR-1738.",
   "observed_branch": "repair/ar-1738-development-rustup-permission-compatibility",
   "observed_dirty": 0,
   "observed_head": "f020b2d4fd65b92edf89a0db73a0b04c0b975684",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Repair permissive development rustup permission acceptance",
-  "updated_at": "2026-10-08T09:41:29+00:00",
+  "updated_at": "2026-10-08T09:43:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility"
 }
 ---
@@ -105,3 +105,7 @@ weaken stable or production installation policy.
   Prior precedent AR-1398 uses an independent signed protected-main recovery AR without rewriting
   historical merge. Do not create a dependency cycle: successor recovery should independently
   reference AR-1738/PR504 evidence.
+
+- 2026-10-08T09:43:40+00:00: Created and pushed successor AR-1741 task/plan/spec (state commit
+  b3f07d811), narrowly scoped to AR-1738 PR504 signed protected-main provenance recovery. AR-1740
+  remains separate; no product changes or claim made.

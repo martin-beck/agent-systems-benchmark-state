@@ -619,7 +619,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries. |
-| Next action | Successor signed-main recovery AR required (next available ID likely AR-1741; no active successor exists). Preserve 2f7387e, create minimal signed+DCO forward-only descendant PR based on it, integrate with tools/integration/merge_pr.py, rerun exact-main policy/post-merge gates, then release AR-1738. |
+| Next action | Successor AR-1741 is open for signed-main recovery. Preserve 2f7387e, create minimal signed+DCO forward-only descendant PR, integrate with tools/integration/merge_pr.py, rerun exact-main policy/post-merge gates, then release AR-1738. |
 
 ### AR-1739 — Add easy channel build, install, update, and test lifecycle
 
