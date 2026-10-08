@@ -11,7 +11,7 @@
   "id": "AR-1726",
   "next_action": "Repair PR #499 by deriving and opening rustc descriptor-relatively from the same retained selected toolchain/bin identity as Cargo without canonicalizing the mutable Cargo pathname; retain the deterministic cross-toolchain replacement regression, rerun exact gates, and obtain fresh independent review.",
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "4fc7e67f5b5bb58f4a428c038b703234bab0df80",
   "owner": "codex-ar1726-pr499-pairing-repair",
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T00:46:57+00:00",
+  "updated_at": "2026-10-08T00:47:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
