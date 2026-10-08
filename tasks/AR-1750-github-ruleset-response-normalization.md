@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1750-ruleset-response-normalization",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T23:11:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1427",
     "AR-1431"
@@ -12,7 +12,7 @@
   "observed_branch": "repair/ar-1750-ruleset-response-normalization",
   "observed_dirty": 0,
   "observed_head": "cb8be7e4ea8866a21ae999af1aee062544622896",
-  "owner": "codex-asb-ar1750-ruleset-normalization-20261008",
+  "owner": "",
   "plan": "../plans/AR-1750-github-ruleset-response-normalization.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1750.json",
   "spec_revision": 2,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T22:28:58+00:00",
+  "updated_at": "2026-10-08T22:29:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -312,3 +312,8 @@ independent review, all hosted checks, and a root execution gate are recorded.
 
 - 2026-10-08T22:28:58+00:00: Recorded command exit 0; command argv SHA-256
   2f935e7d631c472ffc82855ed869e81f56a559788c0be5d3cdfe1fe5eb99da29.
+
+- 2026-10-08T22:29:28+00:00: Released done after independent receipt review approved without
+  findings. Reviewed PR #517 head cb8be7e/tree40ab merged as signed+DCO exact-tree 31ca7a4; all
+  exact-main workflows succeeded, guarded ruleset-only and normal applies bound ID 24750310, and two
+  separate final audits proved the desired active policy and final repository settings.

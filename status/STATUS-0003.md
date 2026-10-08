@@ -779,11 +779,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-ar1750-ruleset-normalization-20261008 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation. |
@@ -1597,7 +1597,7 @@ flowchart LR
         AR_1747["AR-1747 - Done"]:::status_done
         AR_1748["AR-1748 - Blocked"]:::status_blocked
         AR_1749["AR-1749 - Done"]:::status_done
-        AR_1750["AR-1750 - In progress"]:::status_in_progress
+        AR_1750["AR-1750 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

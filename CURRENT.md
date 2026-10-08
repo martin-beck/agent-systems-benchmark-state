@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1750](tasks/AR-1750-github-ruleset-response-normalization.md): Canonicalize GitHub ruleset response and complete guarded admission | Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation. | Obtain independent receipt review of the exact AR-1750 live transaction and postmerge evidence. Do not release AR-1750 or unblock AR-1748 until that review accepts ruleset ID 24750310, merge 31ca7a48, final settings, two final audits, and exact-main workflows. | codex-asb-ar1750-ruleset-normalization-20261008 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
