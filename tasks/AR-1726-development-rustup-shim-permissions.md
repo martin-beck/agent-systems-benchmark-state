@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1726-development-rustup-shim-permissions",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T02:17:59+00:00",
   "depends_on": [
     "AR-1634",
     "AR-1636",
@@ -13,17 +13,17 @@
   "observed_branch": "repair/ar-1726-development-rustup-shim-permissions",
   "observed_dirty": 0,
   "observed_head": "d9ef0bce9bf656f07b3a64f306ed65d6204177cb",
-  "owner": "",
+  "owner": "codex-ar1726-pr499-pairing-repair",
   "plan": "../plans/AR-1726-development-rustup-shim-permissions.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1726.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T00:15:59+00:00",
+  "updated_at": "2026-10-08T00:17:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -325,3 +325,5 @@ review, protected merge, and terminal-green post-merge CI.
 - 2026-10-08T00:15:59+00:00: Released for repair after exact-head independent review confirmed the
   cross-toolchain Cargo/Rustc pairing race. Preserve PR #499, repair the descriptor-relative
   same-toolchain binding, retain the reproduction, and require fresh exact-head review.
+
+- 2026-10-08T00:17:59+00:00: Claimed by codex-ar1726-pr499-pairing-repair.

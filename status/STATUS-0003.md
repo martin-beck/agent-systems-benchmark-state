@@ -443,11 +443,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1726-pr499-pairing-repair |
 | Parent | None |
 | Children | None |
 | Summary | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. |
@@ -1335,7 +1335,7 @@ flowchart LR
         AR_1723["AR-1723 - Planned"]:::status_planned
         AR_1724["AR-1724 - Planned"]:::status_planned
         AR_1725["AR-1725 - Planned"]:::status_planned
-        AR_1726["AR-1726 - Open"]:::status_open
+        AR_1726["AR-1726 - In progress"]:::status_in_progress
         AR_1727["AR-1727 - In progress"]:::status_in_progress
         AR_1728["AR-1728 - Open"]:::status_open
         AR_1729["AR-1729 - Planned"]:::status_planned
