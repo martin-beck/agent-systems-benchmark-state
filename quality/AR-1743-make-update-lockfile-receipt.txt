@@ -1,0 +1,14 @@
+AR-1743 exact release receipt
+
+PR: 510
+Reviewed head: 02664a5d386215c430a07f0deb95ded24bebf66f
+Reviewed base: 507559f636e0cb66a35da2fb992ff7ebadfdf4ce
+Reviewed tree: 8369576975cdef8cac0619f85efcf93c3336e8a3
+Signed local merge: fd956d857970f039db0a4aad03c9e15e59b13da6
+Merge parents: 507559f636e0cb66a35da2fb992ff7ebadfdf4ce 02664a5d386215c430a07f0deb95ded24bebf66f
+Merge tree: 8369576975cdef8cac0619f85efcf93c3336e8a3
+
+Focused tests/makefile.sh passed on the exact merge worktree.
+Protected-main workflows passed:
+37771209005, 37771208926, 37771208929, 37771208934, 37771208961,
+37771208966, 37771208969, 37771208976, 37771208983.
