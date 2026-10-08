@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T11:18:19+00:00",
   "depends_on": [],
   "id": "AR-1739",
-  "next_action": "Add focused lifecycle contract tests, run the exact current-main gates, then review and publish the PR.",
+  "next_action": "Monitor PR #506 required CI at exact head 98f27d1, independently review any failures, then merge only when green and perform post-merge exact-head verification.",
   "observed_branch": "feature/ar-1739-easy-channel-lifecycle",
   "observed_dirty": 0,
   "observed_head": "98f27d1634d4349e204572edcd034aeb8b1e5259",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T09:31:53+00:00",
+  "updated_at": "2026-10-08T09:32:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -75,3 +75,8 @@ provider-free by default and preserve all stable/production fail-closed gates.
 
 - 2026-10-08T09:31:53+00:00: Recorded command exit 0; command argv SHA-256
   663d118a2321ec29aa26c49906bc95af9c82aa0b05ff7411d1fbdf680023ed05.
+
+- 2026-10-08T09:32:23+00:00: Published signed+DCO implementation commit 98f27d1 on
+  feature/ar-1739-easy-channel-lifecycle; PR #506 opened. Focused cargo test -p asb-cli --lib
+  --locked passed with 237 tests. Formatting was run through handoffctl; publication retried after
+  shared coordinator lock contention cleared.

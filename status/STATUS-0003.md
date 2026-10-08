@@ -633,7 +633,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. |
-| Next action | Add focused lifecycle contract tests, run the exact current-main gates, then review and publish the PR. |
+| Next action | Monitor PR #506 required CI at exact head 98f27d1, independently review any failures, then merge only when green and perform post-merge exact-head verification. |
 
 ### AR-1740 — Add developer Makefile workflow
 
