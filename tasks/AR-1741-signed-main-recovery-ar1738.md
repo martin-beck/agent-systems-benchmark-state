@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Signed protected-main recovery for AR-1738",
-  "updated_at": "2026-10-08T10:12:12+00:00",
+  "updated_at": "2026-10-08T10:18:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738"
 }
 ---
@@ -74,3 +74,6 @@ main. AR-1740 is a separate publication incident and is intentionally excluded.
   a9abcf2e63f761e314593e9abc6bf074b7418e5e and 0c100e4624a6dc3972660dc24713940d87753709; tree
   befcb782d6ce260d1d4dd0e4fe25c2fb0b1b900f; Martin Beck signed with matching DCO. Local repository
   policy passed. Post-merge workflows running; retain open until all green.
+
+- 2026-10-08T10:18:21+00:00: Recorded command exit 1; command argv SHA-256
+  b1d1e67cd1f5fe96358fa2af9c033880293a7b5c23134ce4fe937d4b7db1e561.
