@@ -10,13 +10,21 @@
   "plan": "../plans/AR-1749-coordinator-unblock-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:7541df542bda3e5dd4279535f42dbf8ba29995e6c23db1531d28db2abb30e2ff",
+    "evidence_ref": "github/pr107/d6556e/postmerge-runs",
+    "spec_ref": "specs/AR-1749.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1749.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Bootstrap canonical Coordinator unblock vendor adoption",
-  "updated_at": "2026-10-08T20:10:17+00:00",
+  "updated_at": "2026-10-08T20:11:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1749-coordinator-unblock-bootstrap"
 }
 ---
@@ -238,3 +246,6 @@ review, hosted CI, and signed local integration remain mandatory.
 
 - 2026-10-08T20:10:17+00:00: Recorded command exit 0; command argv SHA-256
   8ef79d8d6b24cd5ea070c3307e316c50537d87d998fac184fe26cd70d3b6c914.
+
+- 2026-10-08T20:11:36+00:00: Recorded command exit 0; command argv SHA-256
+  b966cdbdea577b96f07e633510f9865271955e9fae85108db775211028487e3d.
