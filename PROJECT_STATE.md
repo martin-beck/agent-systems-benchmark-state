@@ -23,15 +23,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37814017053 | `2f52ecbaf79a` | workflow_dispatch | Emulated aarch64 portability | in_progress:- |
 | 37812026002 | `2f52ecbaf79a` | push | Repository quality | completed:success |
 | 37812024426 | `2f52ecbaf79a` | push | Rust verification | completed:success |
 | 37812024304 | `2f52ecbaf79a` | push | Huawei MIT source headers | completed:success |
 | 37812024237 | `2f52ecbaf79a` | push | Fault assurance | completed:success |
 | 37812024226 | `2f52ecbaf79a` | push | Credential-free benchmark path | completed:success |
-| 37812024120 | `2f52ecbaf79a` | push | Emulated aarch64 portability | in_progress:- |
+| 37812024120 | `2f52ecbaf79a` | push | Emulated aarch64 portability | completed:cancelled |
 | 37812024116 | `2f52ecbaf79a` | push | Hosted portability and native qualification | completed:success |
 | 37812024109 | `2f52ecbaf79a` | push | Formal assurance | completed:success |
 | 37812024096 | `2f52ecbaf79a` | push | Cross-repository development broker qualification | completed:success |
 | 37810198918 | `fee04c29616b` | pull_request | Rust verification | completed:success |
 | 37810198838 | `fee04c29616b` | pull_request | Huawei MIT source headers | completed:success |
-| 37810198830 | `fee04c29616b` | pull_request | Formal assurance | completed:success |
