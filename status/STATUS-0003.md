@@ -719,6 +719,34 @@
 | Summary | Make ASB development installation place the asb executable at the invoking user&#x27;s $HOME/.local/bin/asb by default, with a safe explicit prefix override. |
 | Next action | Record completion receipt, release AR-1745 done, and reconcile live state. |
 
+### AR-1746 — Enforce protected-main admission for AR-1722 recovery
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Apply and independently verify ASB&#x27;s merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub. |
+| Next action | Promote and claim after verifying the current GitHub settings/ruleset snapshot; apply and audit the checked-in protected-main contract without changing product source or weakening development review policy. |
+
+### AR-1747 — Adopt Coordinator unblock support for AR-1722
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt the official Coordinator development unblock capability in ASB state so AR-1722 can be reopened through a supported provenance-checked transition. |
+| Next action | Promote and claim; synchronize the reviewed upstream Coordinator development identity that adds provenance-checked unblock, then qualify the complete ASB state vendor closure and blocked-task transition fixtures. |
+
 
 ## Dependency graph
 
@@ -1523,6 +1551,8 @@ flowchart LR
         AR_1743["AR-1743 - Done"]:::status_done
         AR_1744["AR-1744 - Done"]:::status_done
         AR_1745["AR-1745 - Done"]:::status_done
+        AR_1746["AR-1746 - Planned"]:::status_planned
+        AR_1747["AR-1747 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2779,8 +2809,10 @@ flowchart LR
     AR_1425 --> AR_1426
     AR_1427 --> AR_1431
     AR_1427 --> AR_1722
+    AR_1427 --> AR_1746
     AR_1430 --> AR_1424
     AR_1431 --> AR_1722
+    AR_1431 --> AR_1746
     AR_1432 --> AR_1699
     AR_1433 --> AR_1446
     AR_1433 --> AR_1447
@@ -3548,7 +3580,3 @@ flowchart LR
 | [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) | None |
 | [AR-0895](../tasks/AR-0895-verify-coordination-content.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | None |
-| [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) |
-| [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-1008](../tasks/AR-1008.md) | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
-| [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
-| [AR-0901](../tasks/AR-0901-formal-assurance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |
