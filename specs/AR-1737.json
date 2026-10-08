@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "spec_ref": "specs/AR-1737.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "acceptance_predicates": [
     {
       "id": "effective-linker-binding",
@@ -16,14 +16,26 @@
       "description": "Source, target, and Cargo-home path remapping remains effective and repeated exact-source builds retain deterministic artifact identity."
     },
     {
+      "id": "single-effective-flag-channel",
+      "description": "One authoritative Cargo-to-rustc flag channel carries every deterministic remap argument and the validated linker search root; no global/target-specific precedence ambiguity remains."
+    },
+    {
+      "id": "real-link-regression",
+      "description": "A real minimal Cargo crate compiles and links through the production env-cleared materializer, proving collect2 can resolve only the validated ld without PATH."
+    },
+    {
+      "id": "hostile-tool-rejection",
+      "description": "Hostile PATH and tool overrides plus missing, relative, escaping, symlinked, wrongly owned, or unsafely writable linker roots fail closed before unvalidated execution."
+    },
+    {
       "id": "paired-lifecycle",
       "description": "Exact paired source-built install, status, doctor, upgrade, bare launch, and removal complete through the public ASB command boundary."
     }
   ],
   "definition_of_done": [
     "The exact collect2 cannot find ld failure is covered by a deterministic regression.",
-    "Signed+DCO implementation and independent exact-head review are complete.",
-    "Focused lifecycle, full relevant workspace, paired installed-entrypoint, and post-merge hosted gates pass."
+    "Independent exact-head technical review is complete; development authentication, signing, and DCO results are recorded as warnings rather than functional blockers.",
+    "Focused real-link and hostile tests, deterministic dual-root builds, full relevant workspace gates, paired installed-entrypoint lifecycle, PR CI, merge, and exact post-merge hosted gates pass."
   ],
   "inputs": [
     {
@@ -47,7 +59,7 @@
   "gates": [
     {
       "id": "focused",
-      "description": "Descriptor-bound env-cleared linker positive and hostile path negatives pass."
+      "description": "A real descriptor-bound env-cleared Cargo link, effective-argument assertions, deterministic dual-root build, and hostile tool/path negatives pass."
     },
     {
       "id": "paired",
@@ -55,7 +67,7 @@
     },
     {
       "id": "hosted",
-      "description": "Exact reviewed head and signed post-merge main workflows pass."
+      "description": "Exact independently reviewed head, PR workflows, merged tree, and post-merge main workflows pass; development signing/DCO/authentication checks are warning-only."
     }
   ]
 }
