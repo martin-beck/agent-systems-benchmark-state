@@ -700,6 +700,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-pr492-review` | `repair/pr492-coverage-cleanup` | `358bd9a2816f` | 0 | behind 14, ahead 0 |
 | `asb-pr499-rereview-d9ef0bc` | `DETACHED` | `d9ef0bce9bf6` | 0 | behind 3, ahead 2 |
 | `asb-pr500-rereview-420b57d` | `DETACHED` | `420b57d20a6c` | 0 | behind 1, ahead 0 |
+| `asb-pr501-review-0714b0e` | `DETACHED` | `0714b0e96c45` | 0 | behind 0, ahead 1 |
 | `asb-provider-registry` | `feature/provider-profile-upsert` | `ff149cb96c05` | 0 | behind 285, ahead 839 |
 | `asb-provider-registry-producer` | `feature/provider-profile-registry-producer` | `fde043688794` | 0 | behind 285, ahead 841 |
 | `asb-qual-ar1345` | `DETACHED` | `852dcb14f9c1` | 0 | behind 285, ahead 1327 |
