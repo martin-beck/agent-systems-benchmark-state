@@ -663,6 +663,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1701` | `feature/ar1701-live-record-replay` | `9f80593e1e90` | 0 | behind 138, ahead 1 |
 | `asb` | `DETACHED` | `457317b21dbe` | 0 | behind 47, ahead 0 |
 | `asb-ar1721-tui-provider-router` | `repair/ar-1721-tui-provider-router` | `8345a9890e5b` | 0 | behind 68, ahead 0 |
+| `asb-ar1750-integration.fOtNyt` | `DETACHED` | `dc19bb1b758a` | 0 | behind 0, ahead 0 |
 | `asb-base-cov2` | `DETACHED` | `9c6a69a0f91c` | 2 | behind 306, ahead 0 |
 | changed files | - | - | - | `crates/asb-cli/default_2328882718243884030_0_991568.profraw`, `crates/asb-cli/default_2328882718243884030_0_991569.profraw` |
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 334, ahead 411 |
