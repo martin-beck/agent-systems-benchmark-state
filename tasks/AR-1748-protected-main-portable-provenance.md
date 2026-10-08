@@ -1,5 +1,27 @@
 ---
-{"branch":"repair/ar-1748-portable-main-provenance","checkpoint_commit":"","claim_expires":"","depends_on":["AR-1427","AR-1431"],"id":"AR-1748","next_action":"Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits.","owner":"","plan":"../plans/AR-1748-protected-main-portable-provenance.md","priority":"P0","schema_version":1,"spec_ref":"specs/AR-1748.json","spec_revision":1,"status":"planned","summary":"Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.","task_revision":1,"title":"Portable protected-main provenance and capability admission","updated_at":"2026-10-08T17:23:20+00:00","worktree_key":"agent-systems-benchmark-ar-1748-portable-main-provenance"}
+{
+  "branch": "repair/ar-1748-portable-main-provenance",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [
+    "AR-1427",
+    "AR-1431"
+  ],
+  "id": "AR-1748",
+  "next_action": "Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits.",
+  "owner": "",
+  "plan": "../plans/AR-1748-protected-main-portable-provenance.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1748.json",
+  "spec_revision": 1,
+  "status": "open",
+  "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
+  "task_revision": 2,
+  "title": "Portable protected-main provenance and capability admission",
+  "updated_at": "2026-10-08T17:24:52+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
+}
 ---
 
 AR-1746 merged bounded settings diagnostics and passed every exact-main
@@ -23,3 +45,7 @@ the same GitHub account; it does not require a second account, production
 credentials, a verified release, or an Enterprise upgrade. If the portable
 contract cannot be expressed and observed on the current repository, fail
 closed with an exact typed blocker rather than weakening it.
+
+- 2026-10-08T17:24:52+00:00: Promoted after AR-1746 atomic rejection diagnosis: implement portable
+  Web Flow provenance enforcement and capability-aware core ruleset admission without weakening
+  development policy.
