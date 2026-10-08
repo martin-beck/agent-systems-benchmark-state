@@ -13,13 +13,21 @@
   "plan": "../plans/AR-1740-repository-makefile.md",
   "priority": "P1",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:1555b1384f47e5860b3530aa20bee1356a2b31e91d4b7204c3410569d99290ef",
+    "evidence_ref": "quality/AR-1740-default-lifecycle-receipt.txt",
+    "spec_ref": "specs/AR-1740.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1740.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T10:32:27+00:00",
+  "updated_at": "2026-10-08T10:33:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -179,3 +187,6 @@ quality gates, and never become a runtime or installed-user dependency.
   tree 78d06a52, local protected-main policy passed, and all required hosted workflows including
   Rust, repository quality, formal, fault, portability, cross-repo, credential-free, headers, and
   emulated AArch64 completed successfully. PR #507 default lifecycle is integrated.
+
+- 2026-10-08T10:33:52+00:00: Recorded command exit 0; command argv SHA-256
+  d28c779d3f791ac91cf084cadbf1930c402ba9a7feb5b44f7d937ad997c634f2.
