@@ -751,11 +751,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1748_portable_main_provenance_20261008 |
 | Parent | None |
 | Children | None |
 | Summary | Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission. |
@@ -1581,7 +1581,7 @@ flowchart LR
         AR_1745["AR-1745 - Done"]:::status_done
         AR_1746["AR-1746 - Blocked"]:::status_blocked
         AR_1747["AR-1747 - Done"]:::status_done
-        AR_1748["AR-1748 - Open"]:::status_open
+        AR_1748["AR-1748 - In progress"]:::status_in_progress
         AR_1749["AR-1749 - Done"]:::status_done
     end
     AR_0001 --> AR_0002

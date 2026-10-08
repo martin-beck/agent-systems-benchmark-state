@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1748-portable-main-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-08T21:34:02+00:00",
   "depends_on": [
     "AR-1427",
     "AR-1431"
@@ -12,17 +12,17 @@
   "observed_branch": "repair/ar-1748-portable-main-provenance",
   "observed_dirty": 0,
   "observed_head": "7c3e9e3eca962474c03db9b77dbe09a30e95099d",
-  "owner": "",
+  "owner": "ar1748_portable_main_provenance_20261008",
   "plan": "../plans/AR-1748-protected-main-portable-provenance.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1748.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Portable protected-main provenance and capability admission",
-  "updated_at": "2026-10-08T20:33:59+00:00",
+  "updated_at": "2026-10-08T20:34:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
 }
 ---
@@ -343,3 +343,5 @@ closed with an exact typed blocker rather than weakening it.
 - 2026-10-08T20:33:59+00:00: Recovered expired claim formerly owned by
   ar1748_portable_main_provenance_20261008. Exact reviewed follow-up PR #516 is approved and green;
   recover the elapsed publication lease without changing scope or product identity.
+
+- 2026-10-08T20:34:02+00:00: Claimed by ar1748_portable_main_provenance_20261008.
