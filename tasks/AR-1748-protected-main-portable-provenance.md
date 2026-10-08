@@ -4,8 +4,7 @@
   "checkpoint_commit": "",
   "claim_expires": "2026-10-08T21:20:07+00:00",
   "depends_on": [
-    "AR-1427",
-    "AR-1431"
+    "AR-1750"
   ],
   "id": "AR-1748",
   "next_action": "Implement a generally available required CI provenance check and capability-aware ruleset admission, then independently review, merge, verify post-merge CI, and perform one bounded live settings apply with two consecutive audits.",
@@ -20,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Portable protected-main provenance and capability admission",
-  "updated_at": "2026-10-08T20:50:07+00:00",
+  "updated_at": "2026-10-08T20:50:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
 }
 ---
@@ -362,3 +361,6 @@ closed with an exact typed blocker rather than weakening it.
   0e41a98f5652a6088497a99355589d0868cd6128908ebf4edba53464a1a6cab3.
 
 - 2026-10-08T20:50:07+00:00: Heartbeat by ar1748_portable_main_provenance_20261008.
+
+- 2026-10-08T20:50:34+00:00: Recorded command exit 0; command argv SHA-256
+  dfeac13c5fa738cc9a00e9c59917fb3dd84450600a7846a24da539f18d14bf9c.

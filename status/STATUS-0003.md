@@ -775,6 +775,20 @@
 | Summary | Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool. |
 | Next action | Rebuild the exact two signed implementation commits onto canonical main, publish repaired PR #107, require hosted Formal rerun and fresh independent exact-head review; do not merge stale PR #106. |
 
+### AR-1750 — Canonicalize GitHub ruleset response and complete guarded admission
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation. |
+| Next action | Claim from exact canonical main and repair owned ruleset ID 24750310 with strict request/response normalization before any settings PATCH. |
+
 
 ## Dependency graph
 
@@ -1583,6 +1597,7 @@ flowchart LR
         AR_1747["AR-1747 - Done"]:::status_done
         AR_1748["AR-1748 - In progress"]:::status_in_progress
         AR_1749["AR-1749 - Done"]:::status_done
+        AR_1750["AR-1750 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2840,11 +2855,11 @@ flowchart LR
     AR_1427 --> AR_1431
     AR_1427 --> AR_1722
     AR_1427 --> AR_1746
-    AR_1427 --> AR_1748
+    AR_1427 --> AR_1750
     AR_1430 --> AR_1424
     AR_1431 --> AR_1722
     AR_1431 --> AR_1746
-    AR_1431 --> AR_1748
+    AR_1431 --> AR_1750
     AR_1432 --> AR_1699
     AR_1433 --> AR_1446
     AR_1433 --> AR_1447
@@ -3445,6 +3460,7 @@ flowchart LR
     AR_1734 --> AR_1737
     AR_1734 --> AR_1738
     AR_1740 --> AR_1745
+    AR_1750 --> AR_1748
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3604,5 +3620,3 @@ flowchart LR
 | [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) |
 | [AR-0880](../tasks/AR-0880-openjiuwen-runtime-closure.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md) | None |
 | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md), [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md), [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) |
-| [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md), [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) |
-| [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
