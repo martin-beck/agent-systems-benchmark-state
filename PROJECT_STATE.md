@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #499 | `repair/ar-1726-development-rustup-shim-permissions@d9ef0bce9bf6` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | fix(tui): accept bounded development rustup paths |
+| #499 | `repair/ar-1726-development-rustup-shim-permissions@d9ef0bce9bf6` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | fix(tui): accept bounded development rustup paths |
 | #500 | `repair/ar-1727-development-broker-foreground-terminal@23138efcc45d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(tui): foreground development broker child |
 
 ## Recent workflows
@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37705221071 | `d9ef0bce9bf6` | pull_request | Huawei MIT source headers | completed:success |
 | 37705221055 | `d9ef0bce9bf6` | pull_request | Credential-free benchmark path | completed:success |
 | 37705221036 | `d9ef0bce9bf6` | pull_request | Formal assurance | in_progress:- |
-| 37705220992 | `d9ef0bce9bf6` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37705220992 | `d9ef0bce9bf6` | pull_request | Hosted portability and native qualification | completed:success |
 | 37705220979 | `d9ef0bce9bf6` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37705220976 | `d9ef0bce9bf6` | pull_request | Repository quality | in_progress:- |
 | 37705220954 | `d9ef0bce9bf6` | pull_request | Fault assurance | in_progress:- |
