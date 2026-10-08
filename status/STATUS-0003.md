@@ -765,11 +765,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-ar1749-vendor-bootstrap-20261008 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool. |
@@ -1582,7 +1582,7 @@ flowchart LR
         AR_1746["AR-1746 - Blocked"]:::status_blocked
         AR_1747["AR-1747 - Blocked"]:::status_blocked
         AR_1748["AR-1748 - In progress"]:::status_in_progress
-        AR_1749["AR-1749 - In progress"]:::status_in_progress
+        AR_1749["AR-1749 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

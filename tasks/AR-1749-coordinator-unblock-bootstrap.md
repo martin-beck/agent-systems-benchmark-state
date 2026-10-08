@@ -2,11 +2,11 @@
 {
   "branch": "repair/ar-1749-coordinator-unblock-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T21:36:14+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1749",
   "next_action": "Rebuild the exact two signed implementation commits onto canonical main, publish repaired PR #107, require hosted Formal rerun and fresh independent exact-head review; do not merge stale PR #106.",
-  "owner": "codex-asb-ar1749-vendor-bootstrap-20261008",
+  "owner": "",
   "plan": "../plans/AR-1749-coordinator-unblock-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1749.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Bootstrap the reviewed Coordinator unblock and project evidence-policy vendor into ASB state without using an unreviewed topic-local lifecycle tool.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Bootstrap canonical Coordinator unblock vendor adoption",
-  "updated_at": "2026-10-08T20:11:36+00:00",
+  "updated_at": "2026-10-08T20:12:09+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1749-coordinator-unblock-bootstrap"
 }
 ---
@@ -249,3 +249,12 @@ review, hosted CI, and signed local integration remain mandatory.
 
 - 2026-10-08T20:11:36+00:00: Recorded command exit 0; command argv SHA-256
   b966cdbdea577b96f07e633510f9865271955e9fae85108db775211028487e3d.
+
+- 2026-10-08T20:12:09+00:00: Merged independently approved exact head
+  c71f2ecbba9c253b111ec0bf8e4caea4a4eadb00/tree 40d65ae04a83c6a168afd167b8f794fbb41fe63e as signed
+  DCO two-parent merge d6556e167d0edaa81e2a5baa703e456ad5dffea7. Exact merge Formal 37836736141,
+  headers 37836736083, and Coordination rerun 37836736245 passed; signed receipt descendant
+  f171e9f7e Coordination 37836743376 passed. Vendor verify, 1395 tests/95% coverage,
+  privacy/schema/formal gates, gmx signatures/DCO, fresh detached review, and hosted evidence
+  acceptance are green. Canonical main now exposes the reviewed unblock implementation; stale PR
+  #106 remains unmerged.
