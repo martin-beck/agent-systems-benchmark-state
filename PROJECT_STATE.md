@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #506 | `feature/ar-1739-easy-channel-lifecycle@8d86ebe49043` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): add easy channel lifecycle |
 | #507 | `feature/ar-1740-repository-makefile@8fdda72fa7f1` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: make default lifecycle update and install |
-| #508 | `repair/ar-1741-signed-main-recovery-ar1738@0c100e4624a6` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | chore: restore signed protected-main provenance |
+| #508 | `repair/ar-1741-signed-main-recovery-ar1738@0c100e4624a6` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: restore signed protected-main provenance |
 
 ## Recent workflows
 
@@ -32,7 +32,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37760453624 | `0c100e4624a6` | pull_request | Credential-free benchmark path | completed:success |
 | 37760453622 | `0c100e4624a6` | pull_request | Huawei MIT source headers | completed:success |
 | 37760453618 | `0c100e4624a6` | pull_request | Cross-repository development broker qualification | completed:success |
-| 37760453600 | `0c100e4624a6` | pull_request | Fault assurance | in_progress:- |
+| 37760453600 | `0c100e4624a6` | pull_request | Fault assurance | completed:success |
 | 37760453598 | `0c100e4624a6` | pull_request | Formal assurance | in_progress:- |
 | 37760453552 | `0c100e4624a6` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 37760453435 | `0c100e4624a6` | pull_request | Agent Workflow Quality shadow | completed:success |
