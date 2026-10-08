@@ -702,8 +702,8 @@
 | Owner | codex-ar1744-make-test |
 | Parent | None |
 | Children | None |
-| Summary | Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory. |
-| Next action | Reproduce the current-main make test failure and repair test scratch-root isolation. |
+| Summary | Repair is implemented and PR #511 is green except the emulated-aarch64 required job remains unassigned in GitHub Actions. |
+| Next action | Wait for emulated-aarch64 job 113337465103 to reach a terminal result; merge only after all required checks are green, then run exact-main post-merge verification. |
 
 ### AR-1745 — Install ASB into the invoking user&#x27;s local bin
 

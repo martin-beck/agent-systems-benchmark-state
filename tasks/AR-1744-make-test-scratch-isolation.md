@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T14:41:03+00:00",
   "depends_on": [],
   "id": "AR-1744",
-  "next_action": "Reproduce the current-main make test failure and repair test scratch-root isolation.",
+  "next_action": "Wait for emulated-aarch64 job 113337465103 to reach a terminal result; merge only after all required checks are green, then run exact-main post-merge verification.",
   "observed_branch": "repair/ar-1744-make-test-scratch-isolation",
   "observed_dirty": 0,
   "observed_head": "cbcfa025ca31e5a216076a3bc9d3bd3fb4d2f874",
@@ -24,10 +24,10 @@
   "spec_ref": "specs/AR-1744.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory.",
-  "task_revision": 74,
+  "summary": "Repair is implemented and PR #511 is green except the emulated-aarch64 required job remains unassigned in GitHub Actions.",
+  "task_revision": 75,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T13:34:35+00:00",
+  "updated_at": "2026-10-08T13:35:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -218,3 +218,8 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 
 - 2026-10-08T13:34:35+00:00: Recorded command exit 0; command argv SHA-256
   36493c4fb20e2236f456686dbf53cf3d5b4119699e8785b57bc169abad2cf78e.
+
+- 2026-10-08T13:35:10+00:00: Focused named test passes (1/1) under handoffctl. Full env
+  RUST_TEST_THREADS=1 make test passed. PR #511 head cbcfa025ca31e5a216076a3bc9d3bd3fb4d2f874 has
+  every required check green except emulated-aarch64 job 113337465103; stale queued attempt was
+  cancelled and rerun once, but runner assignment is still pending. No merge attempted.

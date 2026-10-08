@@ -592,7 +592,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1744](../tasks/AR-1744-make-test-scratch-isolation.md): Repair make test scratch-root isolation | codex-ar1744-make-test | Repair make test failure caused by runtime scratch fixtures inheriting the Cargo target directory. | Reproduce the current-main make test failure and repair test scratch-root isolation. |
+| P0 | [AR-1744](../tasks/AR-1744-make-test-scratch-isolation.md): Repair make test scratch-root isolation | codex-ar1744-make-test | Repair is implemented and PR #511 is green except the emulated-aarch64 required job remains unassigned in GitHub Actions. | Wait for emulated-aarch64 job 113337465103 to reach a terminal result; merge only after all required checks are green, then run exact-main post-merge verification. |
 | P0 | [AR-1745](../tasks/AR-1745-user-local-install-prefix.md): Install ASB into the invoking user&#x27;s local bin | codex-ar1745-install | Make ASB development installation place the asb executable at the invoking user&#x27;s $HOME/.local/bin/asb by default, with a safe explicit prefix override. | Open PR from reviewed signed head 250ef66, run exact-head hosted checks, then merge and verify protected-main post-merge workflows. |
 
 ### Open (6)
