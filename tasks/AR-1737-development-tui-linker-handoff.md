@@ -2,21 +2,24 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
-  "depends_on": ["AR-1726", "AR-1734"],
+  "claim_expires": "2026-10-08T13:03:21+00:00",
+  "depends_on": [
+    "AR-1726",
+    "AR-1734"
+  ],
   "id": "AR-1737",
   "next_action": "Reproduce the exact env-cleared development materializer failure, bind the validated linker search root in the effective Cargo/rustc flags, and requalify source-built install, upgrade, and bare launch without widening PATH.",
-  "owner": "",
+  "owner": "codex-asb-ar1737-linker-handoff",
   "plan": "../plans/AR-1737-development-tui-linker-handoff.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1737.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair development TUI linker handoff",
-  "updated_at": "2026-10-08T04:19:50+00:00",
+  "updated_at": "2026-10-08T10:03:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1737-development-tui-linker-handoff"
 }
 ---
@@ -35,3 +38,5 @@ validated linker/search root in the flags that Cargo actually applies, preserve
 the deterministic remap flags, and cover the exact descriptor-bound Cargo and
 rustc path. Development authentication, signatures, and key management remain
 warning-only and are outside this repair.
+
+- 2026-10-08T10:03:21+00:00: Claimed by codex-asb-ar1737-linker-handoff.

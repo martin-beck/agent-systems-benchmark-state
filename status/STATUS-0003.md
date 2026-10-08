@@ -597,11 +597,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1737-linker-handoff |
 | Parent | None |
 | Children | None |
 | Summary | Make env-cleared development TUI materialization pass the validated linker to every rustc link while retaining an empty ambient PATH. |
@@ -1472,7 +1472,7 @@ flowchart LR
         AR_1734["AR-1734 - Done"]:::status_done
         AR_1735["AR-1735 - Open"]:::status_open
         AR_1736["AR-1736 - Planned"]:::status_planned
-        AR_1737["AR-1737 - Open"]:::status_open
+        AR_1737["AR-1737 - In progress"]:::status_in_progress
         AR_1738["AR-1738 - Open"]:::status_open
         AR_1739["AR-1739 - In progress"]:::status_in_progress
         AR_1740["AR-1740 - In progress"]:::status_in_progress
