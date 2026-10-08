@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T11:18:19+00:00",
   "depends_on": [],
   "id": "AR-1739",
-  "next_action": "Promote after reviewing the existing asb easy and TUI channel contracts; implement the native dependency-free build/install/update/test/status/remove lifecycle with explicit channel selection, a visibly labelled development stable mock, and safe human/JSON guidance.",
+  "next_action": "Add focused lifecycle contract tests, run the exact current-main gates, then review and publish the PR.",
   "observed_branch": "feature/ar-1739-easy-channel-lifecycle",
   "observed_dirty": 3,
   "observed_head": "1a5888ce1c96414015bbaf223ac42302871d47fe",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T09:23:44+00:00",
+  "updated_at": "2026-10-08T09:24:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -56,3 +56,10 @@ provider-free by default and preserve all stable/production fail-closed gates.
 
 - 2026-10-08T09:20:46+00:00: Recorded command exit 101; command argv SHA-256
   3efbc34b923d266e0fc349bbfd5dac9463a898353cd31bf3028eb4016520a7fd.
+
+- 2026-10-08T09:24:11+00:00: Implemented native asb easy
+  build/install/update/test/status/rollback/remove with explicit dev/stable mock channel validation,
+  --yes/--dry-run, versioned JSON mock labeling, provider-free test behavior, completion and
+  EASY_LIFECYCLE.md docs. cargo test -p asb-cli --lib --no-run --locked passes after fixing one
+  dispatcher return-type error (prior exit 101). Build/journey retry is currently contending on
+  shared coordinator lock held by another worker; no product failure observed.
