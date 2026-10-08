@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T11:19:13+00:00",
   "depends_on": [],
   "id": "AR-1740",
-  "next_action": "Promote after reviewing the pinned Cargo/toolchain commands and storage boundaries; implement and test the optional repository Makefile with dependency checks and safe build/install/clean/update/test targets.",
+  "next_action": "Commit and independently review Makefile diff; run focused script and applicable locked checks, then publish PR and exact-head CI.",
   "observed_branch": "feature/ar-1740-repository-makefile",
   "observed_dirty": 3,
   "observed_head": "736a65cd8904b8f4a6f1715fc86ae1c854fe2232",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T09:22:16+00:00",
+  "updated_at": "2026-10-08T09:22:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -45,3 +45,8 @@ quality gates, and never become a runtime or installed-user dependency.
 
 - 2026-10-08T09:22:16+00:00: Recorded command exit 0; command argv SHA-256
   68b1e285b99377f1949df050e1627e23e2da5bfead27496d90d8802ed77c0ef7.
+
+- 2026-10-08T09:22:56+00:00: Implemented optional developer Makefile with
+  help/check-deps/build/install/clean/update/test targets, pinned Rust 1.93.0 and locked Cargo
+  gates, actionable no-install diagnostics, safe repository-local staging and clean-tree/update
+  guards. Added README usage and positive/negative tests/makefile.sh; focused script passes.
