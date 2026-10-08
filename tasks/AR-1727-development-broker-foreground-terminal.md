@@ -7,7 +7,7 @@
     "AR-1590"
   ],
   "id": "AR-1727",
-  "next_action": "Integrate independently approved recovery PR #501 only with tools/integration/merge_pr.py using exact base 317768c9fabe934ee4966e3300a83d8e13866817, head 0714b0e96c455034b01c5737e22a4c3087349409, and tree bd5cc8111417b7b9031988b0c6e354db3354ac0f; verify the resulting signed two-parent merge identity/tree/parents/DCO and all exact-main post-merge checks before closing AR-1727.",
+  "next_action": "No further implementation action; AR-1727 is merged on exact signed main 457317b21dbe300907ba7889ff68a16514fcd5c5 with terminal-green post-merge checks. Downstream asb-tui qualification may resume.",
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:58:50+00:00",
+  "updated_at": "2026-10-08T01:00:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -385,3 +385,9 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-08T00:58:50+00:00: Accepted exact reviewed implementation, locally signed recovery merge,
   and terminal-green exact-main hosted evidence.
+
+- 2026-10-08T01:00:04+00:00: Verified recovery PR #501 was independently approved and integrated
+  locally with tools/integration/merge_pr.py as signed+DCO two-parent merge
+  457317b21dbe300907ba7889ff68a16514fcd5c5, exact reviewed tree
+  bd5cc8111417b7b9031988b0c6e354db3354ac0f, and all nine required exact-main workflows terminal
+  green.
