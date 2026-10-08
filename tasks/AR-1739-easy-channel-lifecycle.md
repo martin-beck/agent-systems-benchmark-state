@@ -7,8 +7,8 @@
   "id": "AR-1739",
   "next_action": "Monitor PR #506 at exact head fb6d81d; required CI is still pending after provenance refresh, then merge only when all green and perform post-merge exact-head verification.",
   "observed_branch": "feature/ar-1739-easy-channel-lifecycle",
-  "observed_dirty": 2,
-  "observed_head": "fb6d81d5c103c4ea708560ea16c0e2ee0cfc4203",
+  "observed_dirty": 0,
+  "observed_head": "b3bf9749a46f23b2276850010768bfda99efdecb",
   "owner": "codex-ar1739-easy-lifecycle",
   "plan": "../plans/AR-1739-easy-channel-lifecycle.md",
   "priority": "P1",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T09:50:55+00:00",
+  "updated_at": "2026-10-08T09:51:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---

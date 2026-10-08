@@ -19,16 +19,16 @@ Generated from local Git and GitHub. Do not edit.
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #506 | `feature/ar-1739-easy-channel-lifecycle@fb6d81d5c103` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): add easy channel lifecycle |
-| #507 | `feature/ar-1740-repository-makefile@8fdda72fa7f1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | feat: make default lifecycle update and install |
+| #507 | `feature/ar-1740-repository-makefile@8fdda72fa7f1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: make default lifecycle update and install |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37759341651 | `8fdda72fa7f1` | pull_request | Fault assurance | pending:- |
+| 37759341651 | `8fdda72fa7f1` | pull_request | Fault assurance | in_progress:- |
 | 37759341635 | `8fdda72fa7f1` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37759341614 | `8fdda72fa7f1` | pull_request | Credential-free benchmark path | in_progress:- |
-| 37759341479 | `8fdda72fa7f1` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37759341479 | `8fdda72fa7f1` | pull_request | Hosted portability and native qualification | completed:success |
 | 37759341465 | `8fdda72fa7f1` | pull_request | Repository quality | in_progress:- |
 | 37759341463 | `8fdda72fa7f1` | pull_request | Formal assurance | in_progress:- |
 | 37759341458 | `8fdda72fa7f1` | pull_request | Huawei MIT source headers | completed:success |
