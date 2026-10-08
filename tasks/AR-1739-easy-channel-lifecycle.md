@@ -15,7 +15,7 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "hosted",
-    "evidence_digest": "sha256:507559f636e0cb66a35da2fb992ff7ebadfdf4ce",
+    "evidence_digest": "sha256:296cbbe30eff1bba94c1148f4d0acafa287489cfd6231e82d7d94788635819fc",
     "evidence_ref": "quality/AR-1739-easy-channel-lifecycle-receipt.txt",
     "spec_ref": "specs/AR-1739.json",
     "spec_revision": 1,
