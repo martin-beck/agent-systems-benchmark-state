@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1727-development-broker-foreground-terminal",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T01:24:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1590"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1727-development-broker-foreground-terminal",
   "observed_dirty": 0,
   "observed_head": "420b57d20a6c58eb52095cb344e3bf601ec8c2b2",
-  "owner": "codex-ar1727-merge",
+  "owner": "",
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:28:34+00:00",
+  "updated_at": "2026-10-08T00:30:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -319,3 +319,7 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
   Per MERGE_INTEGRITY.md, history is preserved. Created signed+DCO metadata-only descendant recovery
   PR #501 at head 0714b0e with unchanged product tree; it now requires independent review and local
   signed merge integration.
+
+- 2026-10-08T00:30:47+00:00: Signed-descendant recovery PR #501 is open at exact head
+  0714b0e96c455034b01c5737e22a4c3087349409 for independent review; release integration ownership so
+  the distinct reviewer can claim. Do not web-merge.
