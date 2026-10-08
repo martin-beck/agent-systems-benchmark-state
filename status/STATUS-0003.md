@@ -647,7 +647,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows. |
-| Next action | Commit and independently review Makefile diff; run focused script and applicable locked checks, then publish PR and exact-head CI. |
+| Next action | Open PR from pushed feature/ar-1740-repository-makefile at 9dcf586; run exact-head hosted checks, merge only green, then perform post-merge verification and release done. |
 
 
 ## Dependency graph

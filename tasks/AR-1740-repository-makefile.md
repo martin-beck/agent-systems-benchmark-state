@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-08T11:26:14+00:00",
   "depends_on": [],
   "id": "AR-1740",
-  "next_action": "Commit and independently review Makefile diff; run focused script and applicable locked checks, then publish PR and exact-head CI.",
+  "next_action": "Open PR from pushed feature/ar-1740-repository-makefile at 9dcf586; run exact-head hosted checks, merge only green, then perform post-merge verification and release done.",
   "observed_branch": "feature/ar-1740-repository-makefile",
   "observed_dirty": 0,
   "observed_head": "9dcf5861f4ee5aca4e8e40a46dc87a59af354e06",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T09:26:14+00:00",
+  "updated_at": "2026-10-08T09:26:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
@@ -73,3 +73,7 @@ quality gates, and never become a runtime or installed-user dependency.
   cbf5ddf5432bb8a258d68c8a720382806e82982f640f8de39874becfb43ad37e.
 
 - 2026-10-08T09:26:14+00:00: Heartbeat by codex-ar1740-makefile.
+
+- 2026-10-08T09:26:22+00:00: Independent diff review complete: signed DCO commits 9dcf586 and
+  d9d71b0, clean worktree, branch pushed. Focused tests/makefile.sh and real make check-deps pass;
+  toolchain triplet detection repaired. PR creation and hosted/post-merge gates remain.
