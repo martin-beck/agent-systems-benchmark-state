@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1745.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "default_path", "description": "A default install by an unprivileged user places the ASB executable at $HOME/.local/bin/asb."},
+    {"id": "shared_contract", "description": "Any equivalent ASB install command uses the same user-local default or explicitly documents a distinct, tested contract."},
+    {"id": "override", "description": "An explicit safe PREFIX remains supported for packaging and CI without writing to the user's default location."},
+    {"id": "safety", "description": "Relative, empty, unsafe, or unrelated paths are rejected; no root access or writes outside the selected prefix are required."},
+    {"id": "fresh_user", "description": "Help and diagnostics explain PATH setup and the installed executable location for a fresh user."}
+  ],
+  "definition_of_done": [
+    "Signed+DCO implementation is independently reviewed and merged into protected ASB main.",
+    "Focused install-prefix tests and all applicable locked workspace gates pass on the exact reviewed head.",
+    "Post-merge evidence proves the default user-local path, explicit-prefix path, and no out-of-prefix writes."
+  ],
+  "inputs": [
+    {"id": "makefile", "description": "Current ASB Makefile install target and prefix handling."},
+    {"id": "cli", "description": "Any ASB CLI install path that shares or duplicates binary installation."},
+    {"id": "docs", "description": "Fresh-user installation and PATH guidance."}
+  ],
+  "outputs": [
+    {"id": "implementation", "description": "User-local default install with validated explicit prefix support."},
+    {"id": "tests", "description": "Disposable HOME/prefix regression coverage and exact-head receipt."}
+  ],
+  "allowed_tools": ["cargo", "rustup", "git", "make", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["sudo", "system-prefix-default", "unsafe-clean", "forced-git-update"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [
+    {"id": "install", "description": "Default and explicit-prefix installs pass as an unprivileged disposable user."},
+    {"id": "workspace", "description": "Locked build, format, clippy, test, documentation, and dependency integrity gates pass."},
+    {"id": "hosted", "description": "Exact reviewed PR and protected-main post-merge workflows pass."}
+  ]
+}
