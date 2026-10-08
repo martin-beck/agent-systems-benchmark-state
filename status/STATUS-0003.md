@@ -621,6 +621,20 @@
 | Summary | Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries. |
 | Next action | Claim an isolated worktree, reproduce current-main trusted_tool_invalid for RUSTUP_HOME, implement warning-only development permission/ownership handling, and requalify the exact paired lifecycle without changing stable or production policy. |
 
+### AR-1739 — Add easy channel build, install, update, and test lifecycle
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands. |
+| Next action | Promote after reviewing the existing asb easy and TUI channel contracts; implement the native dependency-free build/install/update/test/status/remove lifecycle with explicit channel selection and safe human/JSON guidance. |
+
 
 ## Dependency graph
 
@@ -1418,6 +1432,7 @@ flowchart LR
         AR_1736["AR-1736 - Planned"]:::status_planned
         AR_1737["AR-1737 - Open"]:::status_open
         AR_1738["AR-1738 - In progress"]:::status_in_progress
+        AR_1739["AR-1739 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3454,5 +3469,3 @@ flowchart LR
 | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md) | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) |
 | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md) | None |
 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | None |
-| [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md) | [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-0904](../tasks/AR-0904-contract-consistency.md), [AR-1006](../tasks/AR-1006-distributed-workers.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md), [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md) |
-| [AR-1002](../tasks/AR-1002-verifier-integrity.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-1016](../tasks/AR-1016-measurement-integration-audit.md) |
