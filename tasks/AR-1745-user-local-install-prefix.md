@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB development installation place the asb executable at the invoking user's $HOME/.local/bin/asb by default, with a safe explicit prefix override.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Install ASB into the invoking user's local bin",
-  "updated_at": "2026-10-08T13:48:45+00:00",
+  "updated_at": "2026-10-08T13:50:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1745-user-local-install-prefix"
 }
 ---
@@ -95,3 +95,6 @@ clear PATH guidance when `$HOME/.local/bin` is not already on PATH.
 - 2026-10-08T13:48:45+00:00: PR #512 merged as signed protected-main merge 1ab175c3. Exact
   tree/parents, signature/DCO, local policy, focused tests, independent review, and all nine
   post-merge workflows passed.
+
+- 2026-10-08T13:50:30+00:00: Recorded command exit 0; command argv SHA-256
+  ea69062e540cb6188f6063e7f61bc381069d41b04dc2c8bbf50a5b89b902206f.
