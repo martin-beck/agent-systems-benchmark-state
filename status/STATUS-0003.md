@@ -390,7 +390,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. |
-| Next action | Independent reviewer: review asb-tui PR #296 exact head 218735341aebc482a372ec0ed114bbd4ebb40dbd/tree 2ca01ad5d8dc91be68d8b4d00aef187fae647276 against base 168ea56a1e3724bc72f097ffedf91c80704a72c2; require terminal-green exact-head checks, then return approval or defect findings without merging. |
+| Next action | Repair independent-review P1 findings on asb-tui PR #296: formally enter DevelopmentHandoff for live-provider without auto-start and preserve typed protocol/catalog/transport-network classifications through CLI output and exit codes; add focused tests, publish a new signed+DCO commit, rerun exact-head gates, then request fresh independent review. |
 
 ### AR-1722 — PR #487 protected-main requalification and merge-settings recovery
 
