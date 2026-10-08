@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1734-development-tui-tool-environment",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T04:41:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1726",
     "AR-1727"
@@ -12,17 +12,17 @@
   "observed_branch": "repair/ar-1734-development-tui-tool-environment",
   "observed_dirty": 0,
   "observed_head": "40f618b9389c594c4274bc08195f93f3cd2dd547",
-  "owner": "codex-ar1734-tool-environment",
+  "owner": "",
   "plan": "../plans/AR-1734-development-tui-tool-environment.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1734.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T02:18:10+00:00",
+  "updated_at": "2026-10-08T02:18:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1734-development-tui-tool-environment"
 }
 ---
@@ -181,3 +181,12 @@ and production policy remains fail closed and unchanged.
 
 - 2026-10-08T02:18:10+00:00: Recorded command exit 0; command argv SHA-256
   21d18b9109ce235db3edafa363c8014481685d4546a17b93038a7e35d3d45db9.
+
+- 2026-10-08T02:18:47+00:00: Implementation published for independent review in ASB PR #502 at
+  signed+DCO head 40f618b9389c594c4274bc08195f93f3cd2dd547 (tree
+  e5c4645c9e4384fb57424eaa42139a99b78c5c69). Local focused and CI-equivalent serial workspace gates,
+  clippy, fmt, rustdoc, release build, repository policy, and scoped Gitleaks passed. Exact pinned
+  installed TUI install/status/bare-launch/dynamic-catalog/provider-free boundary passed with
+  network denied. Hosted CI is running; reviewer must verify exact-head checks and merge integrity.
+  Development-only; no provider-backed live or public-release qualification. Do not merge without
+  independent review.
