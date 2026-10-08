@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a user-friendly native asb easy lifecycle for building, installing, updating a selected channel, testing, inspecting, rolling back, and removing ASB without cargo or Make commands.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Add easy channel build, install, update, and test lifecycle",
-  "updated_at": "2026-10-08T11:08:02+00:00",
+  "updated_at": "2026-10-08T11:09:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1739-easy-channel-lifecycle"
 }
 ---
@@ -248,3 +248,6 @@ provider-free by default and preserve all stable/production fail-closed gates.
 - 2026-10-08T11:05:33+00:00: Heartbeat by codex-ar1739-easy-lifecycle.
 
 - 2026-10-08T11:08:02+00:00: Heartbeat by codex-ar1739-easy-lifecycle.
+
+- 2026-10-08T11:09:20+00:00: Recorded command exit 1; command argv SHA-256
+  e71b4381e8d824cfdb02c75ab898e3922b7581f7853ad0c32779a2456ec819fc.
