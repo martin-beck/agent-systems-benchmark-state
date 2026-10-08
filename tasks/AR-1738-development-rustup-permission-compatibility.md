@@ -8,7 +8,7 @@
     "AR-1734"
   ],
   "id": "AR-1738",
-  "next_action": "Successor AR-1741 is open for signed-main recovery. Preserve 2f7387e, create minimal signed+DCO forward-only descendant PR, integrate with tools/integration/merge_pr.py, rerun exact-main policy/post-merge gates, then release AR-1738.",
+  "next_action": "No further product action. PR #504 implementation and signed forward-only recovery PR #508 are complete on exact protected main bbe25d0; release AR-1738 after recording final evidence.",
   "observed_branch": "repair/ar-1738-development-rustup-permission-compatibility",
   "observed_dirty": 0,
   "observed_head": "f020b2d4fd65b92edf89a0db73a0b04c0b975684",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Allow development rustup shim and RUSTUP_HOME permission/ownership findings with warnings instead of trusted_tool_invalid, while preserving path-shape and stable/production boundaries.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Repair permissive development rustup permission acceptance",
-  "updated_at": "2026-10-08T10:24:12+00:00",
+  "updated_at": "2026-10-08T10:25:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility"
 }
 ---
@@ -122,3 +122,13 @@ weaken stable or production installation policy.
   preserve implementation and historical merge evidence.
 
 - 2026-10-08T10:24:12+00:00: Claimed by codex-ar1738-rustup-permission.
+
+- 2026-10-08T10:25:01+00:00: AR-1738 implementation from PR #504 is preserved on protected main.
+  Provenance recovery AR-1741 completed: PR #508 head 0c100e4624a6dc3972660dc24713940d87753709
+  locally integrated via tools/integration/merge_pr.py as bbe25d0c516b29a38a66908cbb025204dfe9e4d8.
+  Exact parents a9abcf2e63f761e314593e9abc6bf074b7418e5e and
+  0c100e4624a6dc3972660dc24713940d87753709, tree befcb782d6ce260d1d4dd0e4fe25c2fb0b1b900f, Good
+  Martin Beck SSH signature and matching DCO. Local policy passed; all nine exact post-merge
+  workflows passed. Historical 2f7387e preserved unchanged. Receipt
+  quality/AR-1738-rustup-permission-recovery-receipt.txt
+  sha256:a2298ca18b1ec5a6fc04443754be1e25a2a0c256e40909971da92bb4b0e748c5.
