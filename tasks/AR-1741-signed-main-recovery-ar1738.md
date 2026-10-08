@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main provenance after the preserved GitHub-generated AR-1738 merge.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Signed protected-main recovery for AR-1738",
-  "updated_at": "2026-10-08T09:49:33+00:00",
+  "updated_at": "2026-10-08T09:49:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738"
 }
 ---
@@ -29,3 +29,6 @@ Preserve historical merge `2f7387e`; do not rewrite or force-update protected
 main. AR-1740 is a separate publication incident and is intentionally excluded.
 
 - 2026-10-08T09:48:24+00:00: Claimed by codex-ar1738-rustup-permission.
+
+- 2026-10-08T09:49:37+00:00: Recorded command exit 0; command argv SHA-256
+  8955c1a4f9d012421dbe400da15b32bf2b4d6fd81e7b7229f8d7a55bcc174a6c.
