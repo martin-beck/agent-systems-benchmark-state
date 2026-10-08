@@ -8,7 +8,7 @@
   "next_action": "Hold PR #507 integration until AR-1741 recovery PR #508 is independently reviewed and locally signed-integrated, because protected main a9abcf2 has invalid historical provenance. Then refresh exact protected base, rerun PR507 checks/review, and use merge_pr.py local signed integration.",
   "observed_branch": "feature/ar-1740-repository-makefile",
   "observed_dirty": 0,
-  "observed_head": "8fdda72fa7f1209ac13a96e1ffe6c3ee99bd5b12",
+  "observed_head": "d0c6926905642c95222f5acfc6bc1b00f75d63e7",
   "owner": "codex-ar1740-makefile",
   "plan": "../plans/AR-1740-repository-makefile.md",
   "priority": "P1",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T10:11:14+00:00",
+  "updated_at": "2026-10-08T10:11:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
