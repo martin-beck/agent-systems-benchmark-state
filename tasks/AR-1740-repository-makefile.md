@@ -7,8 +7,8 @@
   "id": "AR-1740",
   "next_action": "Commit and independently review Makefile diff; run focused script and applicable locked checks, then publish PR and exact-head CI.",
   "observed_branch": "feature/ar-1740-repository-makefile",
-  "observed_dirty": 1,
-  "observed_head": "d9d71b0d9c610792827b15677decabfa78d24883",
+  "observed_dirty": 0,
+  "observed_head": "9dcf5861f4ee5aca4e8e40a46dc87a59af354e06",
   "owner": "codex-ar1740-makefile",
   "plan": "../plans/AR-1740-repository-makefile.md",
   "priority": "P1",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an optional ASB repository Makefile that checks prerequisites and safely wraps build, install, clean, update, and test workflows.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Add developer Makefile workflow",
-  "updated_at": "2026-10-08T09:25:09+00:00",
+  "updated_at": "2026-10-08T09:25:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1740-repository-makefile"
 }
 ---
