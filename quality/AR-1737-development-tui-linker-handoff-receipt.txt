@@ -1,0 +1,53 @@
+AR-1737 development TUI linker handoff acceptance receipt
+
+Product integration:
+- Pull request: martin-beck/agent-systems-benchmark#509
+- Reviewed topic: 199bd00a95c2c8cb1559851da9655e58f80f9998
+- Reviewed tree: 55f384140095a39819296863cc690183dedf35fa
+- Base: d53e901677024741cdf0477c9e1efb5d0b664c02
+- Merge and exact protected-main head: 9aeea48c40417108b95c0a2743b2d4b3220f56bd
+- Merge parents: d53e901677024741cdf0477c9e1efb5d0b664c02 and
+  199bd00a95c2c8cb1559851da9655e58f80f9998
+- Merge tree: 55f384140095a39819296863cc690183dedf35fa
+
+Implementation evidence:
+- One CARGO_ENCODED_RUSTFLAGS channel carries all deterministic remap arguments
+  and the validated -B linker root; competing RUSTFLAGS channels are absent.
+- PATH remains cleared. Cargo, rustc, compiler, archiver, linker, and rustup
+  paths remain absolute and descriptor/trust validated.
+- A real minimal Cargo crate compiles and links through the production
+  env-cleared environment-construction path.
+- Effective-argument, hostile override/PATH, malformed and non-UTF8 linker-root,
+  and deterministic dual-root artifact regressions pass.
+- Formatting, Clippy with warnings denied, rustdoc with warnings denied, 237
+  asb-cli unit tests, and relevant integration suites pass.
+
+Review and lifecycle evidence:
+- Independent exact-head review approved 199bd00a with no remaining findings.
+- Exact merge source build auto-detected the local rustup Cargo while PATH was
+  cleared. Preflight, install, status, doctor, upgrade, first remove, and the
+  omitted-channel repeated-remove contract passed.
+- The absent repeated remove returned exit 3, extension_not_installed,
+  network denied, and ok false as documented.
+- Exact hosted paired inherited-fd/PTTY qualification
+  pinned_tui_inherited_fd_development_launch_uses_pty_and_cleans_up passed.
+- A supplementary local scripted PTY reached and rendered the installed TUI;
+  its synthetic q injection did not beat the broker's 15-second bound and is
+  recorded as harness-only evidence, not as acceptance evidence.
+
+Exact post-merge hosted runs, all successful on 9aeea48c:
+- Credential-free benchmark path: 37765241396
+- Cross-repository development broker qualification: 37765241465
+- Emulated aarch64 portability: 37765241487
+- Fault assurance: 37765241447
+- Formal assurance: 37765241440
+- Hosted portability and native qualification: 37765241545
+- Huawei MIT source headers: 37765241491
+- Repository quality: 37765241539
+- Rust verification: 37765241394
+
+Development boundary:
+Authentication, cryptographic release signing, provider credentials, and
+production release qualification remained visible development warnings and
+were not used as functional blockers or production evidence. Functional
+integrity, content identity, independent review, and exact hosted CI passed.
