@@ -15,13 +15,21 @@
   "plan": "../plans/AR-1727-development-broker-foreground-terminal.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:6ab4c01456b0dc804f1b3a46a7027a096d58e6146f96fe4d8e78df7e546fa34c",
+    "evidence_ref": "quality/AR-1727-foreground-terminal-receipt.txt",
+    "spec_ref": "specs/AR-1727.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1727.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T00:44:52+00:00",
+  "updated_at": "2026-10-08T00:58:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -374,3 +382,6 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
 
 - 2026-10-08T00:44:52+00:00: Recorded command exit 0; command argv SHA-256
   1fa5ba3ab0586c6e28ecd45ddce255660729425e8a247debc9a57fa54bb81979.
+
+- 2026-10-08T00:58:50+00:00: Accepted exact reviewed implementation, locally signed recovery merge,
+  and terminal-green exact-main hosted evidence.
