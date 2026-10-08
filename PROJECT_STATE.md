@@ -18,21 +18,21 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #511 | `repair/ar-1744-make-test-scratch-isolation@42b6453922c8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Repair make test scratch-root isolation |
+| #511 | `repair/ar-1744-make-test-scratch-isolation@790edf2ac632` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Repair make test scratch-root isolation |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37789566839 | `790edf2ac632` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37789566736 | `790edf2ac632` | pull_request | Rust verification | in_progress:- |
+| 37789566694 | `790edf2ac632` | pull_request | Repository quality | in_progress:- |
+| 37789566633 | `790edf2ac632` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37789566606 | `790edf2ac632` | pull_request | Fault assurance | in_progress:- |
+| 37789566574 | `790edf2ac632` | pull_request | Emulated aarch64 portability | pending:- |
+| 37789566561 | `790edf2ac632` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37789566546 | `790edf2ac632` | pull_request | Huawei MIT source headers | queued:- |
+| 37789566537 | `790edf2ac632` | pull_request | Formal assurance | in_progress:- |
+| 37789566530 | `790edf2ac632` | pull_request | Credential-free benchmark path | in_progress:- |
 | 37788419573 | `42b6453922c8` | pull_request | Rust verification | completed:failure |
 | 37788419542 | `42b6453922c8` | pull_request | Huawei MIT source headers | completed:success |
-| 37788419514 | `42b6453922c8` | pull_request | Repository quality | completed:failure |
-| 37788419498 | `42b6453922c8` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 37788419494 | `42b6453922c8` | pull_request | Fault assurance | completed:success |
-| 37788419479 | `42b6453922c8` | pull_request | Hosted portability and native qualification | completed:success |
-| 37788419459 | `42b6453922c8` | pull_request | Formal assurance | completed:success |
-| 37788419432 | `42b6453922c8` | pull_request | Cross-repository development broker qualification | completed:success |
-| 37788419398 | `42b6453922c8` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37788419371 | `42b6453922c8` | pull_request | Credential-free benchmark path | completed:success |
-| 37786237293 | `0d057ade6f45` | pull_request | Huawei MIT source headers | completed:success |
-| 37786237232 | `0d057ade6f45` | pull_request | Emulated aarch64 portability | completed:success |
