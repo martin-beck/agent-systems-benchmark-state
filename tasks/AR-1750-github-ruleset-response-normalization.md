@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T21:19:10+00:00",
+  "updated_at": "2026-10-08T21:19:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
@@ -116,3 +116,6 @@ ruleset, and never retry an ambiguous mutation blindly.
 
 - 2026-10-08T21:19:10+00:00: Recorded command exit 0; command argv SHA-256
   45c4082c6c499e9715492af9288514755928c394ac5fd77b62beab93c49a1ac6.
+
+- 2026-10-08T21:19:52+00:00: Recorded command exit 0; command argv SHA-256
+  20749496cd6fd159729a16de4f0adb6a08a5ee7f44c4d1791c659d4ae0f65f33.
