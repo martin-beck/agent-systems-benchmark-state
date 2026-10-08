@@ -646,6 +646,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1698-qualification` | `DETACHED` | `c9f86739e45c` | 0 | behind 18, ahead 0 |
 | `asb-ar1698-runtime-authority` | `codex-ar1698-runtime-authority` | `c5a7e64af8cd` | 0 | behind 22, ahead 1 |
 | `asb-ar1701` | `feature/ar1701-live-record-replay` | `9f80593e1e90` | 0 | behind 91, ahead 1 |
+| `asb` | `DETACHED` | `457317b21dbe` | 0 | behind 0, ahead 0 |
 | `asb-ar1721-tui-provider-router` | `repair/ar-1721-tui-provider-router` | `8345a9890e5b` | 0 | behind 21, ahead 0 |
 | `asb-base-cov2` | `DETACHED` | `9c6a69a0f91c` | 2 | behind 259, ahead 0 |
 | changed files | - | - | - | `crates/asb-cli/default_2328882718243884030_0_991568.profraw`, `crates/asb-cli/default_2328882718243884030_0_991569.profraw` |
