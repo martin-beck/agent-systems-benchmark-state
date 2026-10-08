@@ -17,8 +17,8 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "hosted",
-    "evidence_digest": "sha256:6ab4c01456b0dc804f1b3a46a7027a096d58e6146f96fe4d8e78df7e546fa34c",
-    "evidence_ref": "quality/AR-1727-foreground-terminal-receipt.txt",
+    "evidence_digest": "sha256:69503a36752d2e6c3ce138f79622abc2bd8321c1c03079401de9454a86b69a92",
+    "evidence_ref": "sessions/AR-1727.jsonl",
     "spec_ref": "specs/AR-1727.json",
     "spec_revision": 1,
     "status": "pass"
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give the ASB development broker child correct foreground process-group ownership on the caller's controlling terminal without weakening descendant cleanup.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Repair development broker foreground-terminal handoff",
-  "updated_at": "2026-10-08T01:00:04+00:00",
+  "updated_at": "2026-10-08T01:00:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1727-development-broker-foreground-terminal"
 }
 ---
@@ -391,3 +391,6 @@ CI before the downstream asb-tui AR-1654 qualification is rerun.
   457317b21dbe300907ba7889ff68a16514fcd5c5, exact reviewed tree
   bd5cc8111417b7b9031988b0c6e354db3354ac0f, and all nine required exact-main workflows terminal
   green.
+
+- 2026-10-08T01:00:14+00:00: Accepted durable exact-merge, independent-review, and terminal-green
+  hosted evidence recorded in the AR-1727 session journal.
