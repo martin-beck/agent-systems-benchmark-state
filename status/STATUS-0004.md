@@ -558,12 +558,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md): Allow user-owned group-writable rustup shim in development | codex-ar1726-local-integration | Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries. | No further AR-1726 implementation action; signed main 736a65cd8904b8f4a6f1715fc86ae1c854fe2232 passed every required exact-main workflow after one documented successful rerun of the unrelated nondeterministic Goose symlink fixture. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -631,3 +625,5 @@
 | P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Unclaimed | Lifecycle expiry fencing repaired and covered by seven focused plus 167 full asb-runtime tests; production platform authority callsite remains absent. | Development qualification is not blocked: retain the passing lifecycle-fencing tests and use deterministic local/mock and strict-replay authority for development. Route any non-test deployment source to optional future production hardening; do not make it a local qualification gate. |
 | P0 | [AR-1509](../tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | Unclaimed | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Blocked: implement a real runtime/control platform-authority adapter that obtains credential/enrollment/private roots from authenticated control state, emits a control-authenticated receipt, wires materialize_provisioner into live run/sweep, and rechecks restart/revocation/expiry at transitions; preserve this worktree for successor AR. |
 | P0 | [AR-1510](../tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | Unclaimed | Provider boundary and expiry fencing are implemented and runtime/CLI tests mostly pass; ordinary production dispatch still lacks an authenticated non-test platform material source. | Development qualification is not blocked: wire and test the opaque source with deterministic local/mock and strict-replay authority through ordinary run/sweep. A platform-owned deployment adapter is optional future production hardening and must not gate local qualification. |
+| P0 | [AR-1512](../tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Unclaimed | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Independent exact-head review of a4064abf; create successor for authenticated lease-to-LiveProviderRuntimeHandle bridge, then publish exact-head PR/CI if review accepts provider-free boundary. |
+| P0 | [AR-1518](../tasks/AR-1518.md): C | Unclaimed | Capacity profile boots and runs, but the 1700-second bounded QEMU attempt timed out without terminal TLC result or attestation. | Use AR-1519 for separately scoped reduced-model development; do not claim AR-1307 or AR-1308 formal qualification. |
