@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Merged PR #511 and verified exact protected main; all required post-merge workflows are green.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Repair make test scratch-root isolation",
-  "updated_at": "2026-10-08T14:47:37+00:00",
+  "updated_at": "2026-10-08T14:48:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1744-make-test-scratch-isolation"
 }
 ---
@@ -326,3 +326,6 @@ and record exact PR, signature/DCO, CI, merge, and post-merge evidence.
 
 - 2026-10-08T14:47:37+00:00: Recorded command exit 0; command argv SHA-256
   2889a1bee2c9175b066c0a5c6231a174e3901cf21f56f3367b219c6d3892d152.
+
+- 2026-10-08T14:48:11+00:00: Recorded command exit 0; command argv SHA-256
+  4e434812f88198457a4ecf8e1cc9f9a9565d1aeeeade5823f3f46d0f27744d89.
