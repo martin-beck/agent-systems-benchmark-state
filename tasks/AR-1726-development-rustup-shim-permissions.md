@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1726-development-rustup-shim-permissions",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-08T02:17:59+00:00",
+  "claim_expires": "2026-10-08T02:19:49+00:00",
   "depends_on": [
     "AR-1634",
     "AR-1636",
@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T00:17:59+00:00",
+  "updated_at": "2026-10-08T00:19:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -327,3 +327,5 @@ review, protected merge, and terminal-green post-merge CI.
   same-toolchain binding, retain the reproduction, and require fresh exact-head review.
 
 - 2026-10-08T00:17:59+00:00: Claimed by codex-ar1726-pr499-pairing-repair.
+
+- 2026-10-08T00:19:49+00:00: Heartbeat by codex-ar1726-pr499-pairing-repair.
