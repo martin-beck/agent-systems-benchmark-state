@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1739.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "native-easy-lifecycle",
+      "description": "A fresh user can build, install, update a selected channel, test it, inspect status, and remove it through the native asb easy command family without cargo, Make, Just, Python, or shell prerequisites."
+    },
+    {
+      "id": "channel-binding",
+      "description": "Explicit channel selection is validated against the existing channel manifest and active-channel contracts; omitted update selection preserves the active channel and unavailable channels fail before mutation."
+    },
+    {
+      "id": "safe-guidance",
+      "description": "Mutating operations provide human-readable guidance plus bounded --yes, --dry-run, and --json behavior without exposing credentials or private host paths."
+    },
+    {
+      "id": "provider-free-test",
+      "description": "The guided test path performs bounded local/mock lifecycle checks and does not contact a provider unless a separate explicit live operation is requested."
+    },
+    {
+      "id": "bounded-build",
+      "description": "The easy build operation produces a bounded reproducible artifact for the selected profile, reports its path and digest, and never publishes or promotes a channel implicitly."
+    },
+    {
+      "id": "recovery",
+      "description": "Interrupted updates and rollback expose actionable typed diagnostics and preserve the existing atomic install and recovery guarantees."
+    }
+  ],
+  "definition_of_done": [
+    "Signed+DCO implementation is independently reviewed and merged on protected ASB main.",
+    "Focused positive/negative CLI, schema, completion, and lifecycle tests pass.",
+    "Exact current-main build/install/update/test/status/remove and rollback qualification passes with required hosted checks."
+  ],
+  "inputs": [
+    {
+      "id": "existing-easy",
+      "description": "The existing asb easy guided workflow and human/JSON output contracts."
+    },
+    {
+      "id": "tui-lifecycle",
+      "description": "Existing asb tui channel install, upgrade, status, doctor, and removal contracts."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "operator-lifecycle",
+      "description": "A dependency-free, user-friendly ASB channel lifecycle interface with tested recovery and documentation."
+    }
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["runtime-downloads", "credential-output", "unbounded-shell-execution", "stable-policy-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental", "hosted"],
+  "gates": [
+    {
+      "id": "focused",
+      "description": "Easy build/lifecycle command, channel, JSON, dry-run, confirmation, and negative tests pass."
+    },
+    {
+      "id": "journey",
+      "description": "Fresh-user build/install, selected-channel update, provider-free test, rollback, and removal pass."
+    },
+    {
+      "id": "hosted",
+      "description": "Exact reviewed head and post-merge required workflows pass."
+    }
+  ]
+}
