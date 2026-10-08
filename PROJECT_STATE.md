@@ -18,14 +18,14 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #515 | `repair/ar-1748-portable-main-provenance@2dee1f333793` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce portable protected-main provenance |
+| #515 | `repair/ar-1748-portable-main-provenance@2dee1f333793` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce portable protected-main provenance |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37831075627 | `2dee1f333793` | pull_request | Cross-repository development broker qualification | completed:success |
-| 37831075614 | `2dee1f333793` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37831075614 | `2dee1f333793` | pull_request | Emulated aarch64 portability | completed:success |
 | 37831075597 | `2dee1f333793` | pull_request | Credential-free benchmark path | completed:success |
 | 37831075547 | `2dee1f333793` | pull_request | Repository quality | completed:success |
 | 37831075533 | `2dee1f333793` | pull_request | Hosted portability and native qualification | completed:success |
@@ -34,5 +34,5 @@ Generated from local Git and GitHub. Do not edit.
 | 37831075312 | `2dee1f333793` | pull_request | Formal assurance | completed:success |
 | 37831075299 | `2dee1f333793` | pull_request | Huawei MIT source headers | completed:success |
 | 37831075253 | `2dee1f333793` | pull_request | Portable protected-main provenance | completed:success |
-| 37831075206 | `2dee1f333793` | pull_request | Rust verification | in_progress:- |
+| 37831075206 | `2dee1f333793` | pull_request | Rust verification | completed:success |
 | 37829534023 | `350e61d10a05` | pull_request | Huawei MIT source headers | completed:success |
