@@ -16,13 +16,21 @@
   "plan": "../plans/AR-1734-development-tui-tool-environment.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:ccbf795a3049613809d7a94b3db269dd0281f3c47d416ba3313bf298e9205eb6",
+    "evidence_ref": "sessions/AR-1734.jsonl",
+    "spec_ref": "specs/AR-1734.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1734.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the installed development TUI a minimal validated tool environment without inheriting ambient PATH or weakening stable launch.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Propagate validated development tools to installed TUI",
-  "updated_at": "2026-10-08T02:57:33+00:00",
+  "updated_at": "2026-10-08T02:58:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1734-development-tui-tool-environment"
 }
 ---
@@ -303,3 +311,7 @@ and production policy remains fail closed and unchanged.
   development journey on the merge; independent exact-tree review also passed install, status, bare
   launch, dynamic catalog, and provider-free qualification. Development-only; no
   public/live-provider claim.
+
+- 2026-10-08T02:58:07+00:00: Accepted against exact signed merge
+  1a5888ce1c96414015bbaf223ac42302871d47fe: approved tree and parents verified, focused local gates
+  passed, and all nine immutable exact-main workflow runs are terminal success.
