@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Fresh independent reviewer: review asb-tui PR #296 exact head 7c69b415563aa017d9a86dc38338df034980274a/tree cccfb06c303728eb8e145c8d6051f2b1f94b3529 against base 168ea56a1e3724bc72f097ffedf91c80704a72c2; inspect both commits and the formal model/module inventory repair, require terminal-green exact-head Repository Quality run 37860938908 and AWQ shadow run 37860939191, then return approval or findings without merging. | codex-asb-ar1721-qualification-20261009 |
+| P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Fresh independent reviewer: approve or reject asb-tui PR #296 exact synchronized head bb8f503be6cf5cf2543eac782ba31875768e5636/tree d3a26f0da147af628ff2657dcfbd76af80d75834 against exact current main f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d after terminal Repository Quality run 37861623781 and AWQ shadow run 37861624025; merge only this exact tree after approval, then require exact-main post-merge CI and attach acceptance. | codex-asb-ar1721-qualification-20261009 |
 
 ## Open
 
