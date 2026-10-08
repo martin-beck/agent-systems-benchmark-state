@@ -21,9 +21,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make development asb tui installation accept a conventional user-owned 0775 rustup shim path with an explicit warning while preserving hard stable and production trust boundaries.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Allow user-owned group-writable rustup shim in development",
-  "updated_at": "2026-10-08T00:29:27+00:00",
+  "updated_at": "2026-10-08T00:30:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1726-development-rustup-shim-permissions"
 }
 ---
@@ -341,3 +341,6 @@ review, protected merge, and terminal-green post-merge CI.
 
 - 2026-10-08T00:29:27+00:00: Recorded command exit 0; command argv SHA-256
   79da272f7e4e7a786ca90e5ea99a1b051339fd1ac5cd8d61b67c8ebfbc695ad8.
+
+- 2026-10-08T00:30:04+00:00: Recorded command exit 0; command argv SHA-256
+  6783a82505fe9699124dfcb1739fdcd59547eea8dca4d229fb0abd07c27364e7.
