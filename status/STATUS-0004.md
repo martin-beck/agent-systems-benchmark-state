@@ -605,18 +605,18 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1702](../tasks/AR-1702.md): Development live OpenRouter qualification | codex-asb-ar1702-20261009 | Run credential-backed online OpenRouter smoke and typed negative tests for the merged ASB live path without mock fallback. | Promote after AR-1699 and AR-1700 are released; run the disposable credential-backed smoke and credential-free negative matrix at current exact ASB main. |
 | P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | codex-asb-ar1721-qualification-20261009 | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await TUI AR-1720 lifecycle variants; then run installed asb tui install -&gt; bare asb tui dynamic-catalog/live-provider against ASB PR #493 exact head and reconcile hosted evidence. |
 
-### Open (6)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1702](../tasks/AR-1702.md): Development live OpenRouter qualification | Unclaimed | Run credential-backed online OpenRouter smoke and typed negative tests for the merged ASB live path without mock fallback. | Promote after AR-1699 and AR-1700 are released; run the disposable credential-backed smoke and credential-free negative matrix at current exact ASB main. |
 | P0 | [AR-1722](../tasks/AR-1722.md): PR #487 protected-main requalification and merge-settings recovery | Unclaimed | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. | PR #490 exact head ac6557038 was independently reviewed and merged as 9b27d5d9. Verify post-merge ASB main, reconcile the corrected AR-1722 receipt, and release this incident only after exact-main post-merge evidence is recorded; do not require an authorized-maintainer review. |
 | P0 | [AR-1742](../tasks/AR-1742-protected-main-exact-tree-recovery.md): PR #505 exact-tree recovery | Unclaimed | Recover PR #505 protected-main exact-tree publication failure without rewriting history. | Promote after reviewing the preserved PR #505 mismatch and exact signed local integration procedure. |
 | P1 | [AR-1728](../tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Unclaimed | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
