@@ -610,7 +610,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | codex-asb-ar1721-qualification-20261009 | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Repair independent-review P1 findings on asb-tui PR #296: formally enter DevelopmentHandoff for live-provider without auto-start and preserve typed protocol/catalog/transport-network classifications through CLI output and exit codes; add focused tests, publish a new signed+DCO commit, rerun exact-head gates, then request fresh independent review. |
+| P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | codex-asb-ar1721-qualification-20261009 | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Await exact-head CI for asb-tui PR #296 head 7c69b415563aa017d9a86dc38338df034980274a/tree cccfb06c303728eb8e145c8d6051f2b1f94b3529; after terminal green, require a fresh independent review of both commits and do not merge from this worker. |
 
 ### Open (5)
 
