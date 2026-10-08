@@ -10,7 +10,7 @@
   "id": "AR-1750",
   "next_action": "Resolve circular admission without retry: current ruleset 24750310 requires one approval and last-push approval while PR #517 reviewDecision is REVIEW_REQUIRED under the sole same GitHub account. Signed exact-tree merge 041705503d0580ac307e787478e475e67d5f4d7c was rejected and remote main remains dc19bb1. Obtain root authorization for a reviewed pre-merge guarded ID-bound policy PUT only, or another valid account approval; do not blind-retry, PATCH settings, merge, or live-mutate meanwhile.",
   "observed_branch": "repair/ar-1750-ruleset-response-normalization",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "b6dfe7cea0db89b44c03aba486ee29f736daad9f",
   "owner": "codex-asb-ar1750-ruleset-normalization-20261008",
   "plan": "../plans/AR-1750-github-ruleset-response-normalization.md",
@@ -20,9 +20,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair GitHub ruleset request/readback canonicalization and development-review admission after AR-1748 created owned ruleset 24750310 but stopped before repository-settings mutation.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Canonicalize GitHub ruleset response and complete guarded admission",
-  "updated_at": "2026-10-08T21:55:58+00:00",
+  "updated_at": "2026-10-08T21:56:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1750-ruleset-response-normalization"
 }
 ---
