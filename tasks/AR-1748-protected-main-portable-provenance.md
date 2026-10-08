@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Replace the unavailable Enterprise-only commit-metadata ruleset with a required portable provenance check while preserving Web Flow rejection and atomic protected-main admission.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Portable protected-main provenance and capability admission",
-  "updated_at": "2026-10-08T18:29:41+00:00",
+  "updated_at": "2026-10-08T18:29:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1748-portable-main-provenance"
 }
 ---
@@ -240,3 +240,6 @@ closed with an exact typed blocker rather than weakening it.
 
 - 2026-10-08T18:29:12+00:00: Recorded command exit 0; command argv SHA-256
   58b321741371a9c4446b7e38f5814dda07731757fcf9aa157b3414c95e378015.
+
+- 2026-10-08T18:29:58+00:00: Recorded command exit 1; command argv SHA-256
+  9f0dc36c1944b736835593836fda952ceb22258ade07e54c9412e355390f79e1.
