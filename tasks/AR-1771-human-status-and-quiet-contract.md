@@ -34,13 +34,13 @@ input needed to complete an explicitly interactive command and the launched TUI
 application itself are not silently disabled; quiet only suppresses ASB's
 lifecycle wrapper messages around that application.
 
-Every non-quiet human operational line must start with a fixed-width state token:
+Every non-quiet human operational line must start with a fixed-width state marker:
 `[ OK ]`, `[ERR ]`, `[WARN]`, `[WAIT]`, or another closed, documented four-cell
 state. Green represents success, red errors/failures, yellow warnings/partial
 states, and a sensible neutral/in-progress style represents waiting. ANSI styling
 is used only when the human stream is a supported terminal; redirected output is
-plain text with the same token and wording. Lines remain concise, one logical
-operation per line, accessible without color, and never disclose credentials,
+plain text with the same marker and wording. Lines remain concise, one logical
+operation per line, accessible without color, and never disclose authentication material,
 private paths, prompts, or provider payloads.
 
 `--json` is a silent machine-output mode. It emits no human status lines, updates,
