@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 176,
+  "task_revision": 177,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:49:57+00:00",
+  "updated_at": "2026-10-09T21:50:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -525,3 +525,6 @@ say what remains usable.
 - 2026-10-09T21:49:57+00:00: Full workspace run reached 312/313 asb-cli tests; only
   authenticated_lifecycle_restart_fences_unfinished_intent failed due concurrent state-root
   ownership and passed isolated with --test-threads=1. Product tree is clean at signed a601a53.
+
+- 2026-10-09T21:50:30+00:00: Recorded command exit 0; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
