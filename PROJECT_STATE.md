@@ -23,15 +23,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37873753816 | `69bf9029a497` | push | Repository quality | in_progress:- |
+| 37873753816 | `69bf9029a497` | push | Repository quality | completed:success |
 | 37873753802 | `69bf9029a497` | push | Portable protected-main provenance | completed:success |
-| 37873753798 | `69bf9029a497` | push | Fault assurance | in_progress:- |
-| 37873753791 | `69bf9029a497` | push | Cross-repository development broker qualification | in_progress:- |
-| 37873753788 | `69bf9029a497` | push | Emulated aarch64 portability | in_progress:- |
-| 37873753787 | `69bf9029a497` | push | Formal assurance | in_progress:- |
-| 37873753778 | `69bf9029a497` | push | Hosted portability and native qualification | in_progress:- |
+| 37873753798 | `69bf9029a497` | push | Fault assurance | completed:success |
+| 37873753791 | `69bf9029a497` | push | Cross-repository development broker qualification | completed:success |
+| 37873753788 | `69bf9029a497` | push | Emulated aarch64 portability | completed:success |
+| 37873753787 | `69bf9029a497` | push | Formal assurance | completed:success |
+| 37873753778 | `69bf9029a497` | push | Hosted portability and native qualification | completed:success |
 | 37873753777 | `69bf9029a497` | push | Huawei MIT source headers | completed:success |
-| 37873753776 | `69bf9029a497` | push | Credential-free benchmark path | in_progress:- |
-| 37873753767 | `69bf9029a497` | push | Rust verification | in_progress:- |
+| 37873753776 | `69bf9029a497` | push | Credential-free benchmark path | completed:success |
+| 37873753767 | `69bf9029a497` | push | Rust verification | completed:success |
 | 37872776471 | `2cda48c27ae9` | pull_request | Hosted portability and native qualification | completed:success |
 | 37872776452 | `2cda48c27ae9` | pull_request | Cross-repository development broker qualification | completed:success |
