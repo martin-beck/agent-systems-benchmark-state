@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Integrate cli2key runs and sweeps",
-  "updated_at": "2026-10-09T13:16:24+00:00",
+  "updated_at": "2026-10-09T13:17:19+00:00",
   "worktree_key": ""
 }
 ---
@@ -36,3 +36,6 @@ serve as production or official-provider qualification.
   promote cli2key run/sweep integration.
 
 - 2026-10-09T13:16:24+00:00: Claimed by codex-asb-ar1732-run-sweep-20261009.
+
+- 2026-10-09T13:17:19+00:00: Recorded command exit 0; command argv SHA-256
+  af611799c7b6337f91fe45785f8cb2fca85f1c51ecb17ab3ad04fd5fd3224570.
