@@ -522,11 +522,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-ar1731-codex-adapter-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter. |
@@ -1699,7 +1699,7 @@ flowchart LR
         AR_1728["AR-1728 - Done"]:::status_done
         AR_1729["AR-1729 - Done"]:::status_done
         AR_1730["AR-1730 - Done"]:::status_done
-        AR_1731["AR-1731 - In progress"]:::status_in_progress
+        AR_1731["AR-1731 - Done"]:::status_done
         AR_1732["AR-1732 - Planned"]:::status_planned
         AR_1733["AR-1733 - Planned"]:::status_planned
         AR_1734["AR-1734 - Done"]:::status_done

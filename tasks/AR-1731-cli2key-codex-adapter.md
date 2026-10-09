@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1731-cli2key-codex-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T14:48:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1729",
     "AR-1730"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1731-cli2key-codex-adapter",
   "observed_dirty": 0,
   "observed_head": "6386e066b37a99692e3343f6162d648a8cb506f0",
-  "owner": "codex-asb-ar1731-codex-adapter-20261009",
+  "owner": "",
   "plan": "../plans/AR-1731-cli2key-codex-adapter.md",
   "priority": "P1",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1731.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Connect Codex adapter to cli2key backend",
-  "updated_at": "2026-10-09T13:14:37+00:00",
+  "updated_at": "2026-10-09T13:14:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1731-cli2key-adapter"
 }
 ---
@@ -173,3 +173,6 @@ OpenRouter, ambient Codex defaults, or a different endpoint/model.
 - 2026-10-09T13:14:37+00:00: Accepted implementation PR #527 and repaired exact-main publication
   021ca1c39ff0199aa2c193026783712bc73bc51b; focused hostile tests, independent review, and all
   required exact-main workflows are successful.
+
+- 2026-10-09T13:14:40+00:00: Completed Codex cli2key adapter integration and non-rewriting
+  protected-main provenance repair.
