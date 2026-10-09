@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:85696ad9fd36d3779d995bf1f9020e21a55c8654a0b3458ce1374ae8c13c163e",
+    "evidence_ref": "quality/AR-1760-project-init-workspace-postmerge-receipt.json",
     "spec_ref": "specs/AR-1760.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1760.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:38:59+00:00",
+  "updated_at": "2026-10-09T15:39:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -253,3 +253,6 @@ commands for a fresh user and support `--json` without leaking host secrets.
 
 - 2026-10-09T15:38:59+00:00: Recorded command exit 0; command argv SHA-256
   653dee893dbcd132cd9fb3c116ab87014bbb5ed2f92beaf942c3b9bb04c99a8b.
+
+- 2026-10-09T15:39:13+00:00: Accepted project initializer against merged PR #532 exact tree and all
+  ten terminal-green exact-main workflows.
