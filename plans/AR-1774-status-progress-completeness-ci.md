@@ -2,8 +2,9 @@
 
 1. Derive command, step, and public-renderer coverage from authoritative types,
    dispatch inventory, and reporter construction rather than a drift-prone list.
-2. Add static/mechanical checks rejecting direct public status writes, missing
-   `-q`, unregistered steps, invalid tokens, and bypassed reporter construction.
+2. Add static/mechanical checks rejecting direct public output/status writes,
+   missing `-q`, missing output-router use, unregistered steps, invalid tokens,
+   and bypassed reporter construction.
 3. Add fake-clock and PTY controlled-defect tests for the one-second threshold,
    live updates, terminal cleanup, ETA integrity, terminal resizing, interruption,
    cancellation, errors, warnings, partial results, and broken writers.

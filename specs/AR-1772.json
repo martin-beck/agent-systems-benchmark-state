@@ -15,7 +15,7 @@
     "Independent review, exact-head checks, signed merge, and exact-main evidence pass."
   ],
   "inputs": [
-    {"id": "status-contract", "description": "AR-1771 fixed-width states, quiet behavior, JSON silence, stream, and color rules."}
+    {"id": "output-router", "description": "AR-1775 mandatory writer routing, default project configuration, level filtering, and JSON/quiet silence."}
   ],
   "outputs": [
     {"id": "step-reporter", "description": "Shared structured Rust API and renderer for human operation status and progress."},

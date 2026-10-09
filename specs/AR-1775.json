@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1775.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "sole-router", "description": "All ASB-owned user-visible output—including results, diagnostics, warnings, status, and updates—uses the typed configurable output router; direct output writes are mechanically rejected."},
+    {"id": "project-default", "description": "Project init writes output level normal and default ordinary-result stdout/operational stderr routing, while repeat init preserves an explicit user choice."},
+    {"id": "four-levels", "description": "quiet, normal, verbose, and debug have enforced consistent filters and documented configuration/CLI precedence; -q selects quiet."},
+    {"id": "destination-safety", "description": "Configured writers have safe validated destinations and specific actionable failure diagnostics without exposing secrets or private host information."},
+    {"id": "json-exception", "description": "--json ignores human writer routing, preserves the existing stdout envelope, and emits no human/result/diagnostic/status/progress bytes on either stream."}
+  ],
+  "definition_of_done": [
+    "Output router, project configuration, and all pre-existing ASB output routes are independently reviewed and covered by executable tests.",
+    "Default, repeat-init preservation, all levels, CLI overrides, destination failures, quiet, and JSON-silence tests pass.",
+    "Exact-head review, signed merge, and exact-main hosted evidence pass."
+  ],
+  "inputs": [
+    {"id": "output-contract", "description": "AR-1771 status, writer, level, quiet, stream, privacy, and JSON-silence contract."},
+    {"id": "diagnostic-catalog", "description": "AR-1766/1768 typed actionable diagnostics for output configuration and writer failures."}
+  ],
+  "outputs": [
+    {"id": "output-router", "description": "Mandatory typed configurable router for all ASB-owned output."},
+    {"id": "project-output-config", "description": "Generated and validated persistent project output configuration with normal default."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["direct-output-bypass", "unvalidated-writer-target", "json-human-output", "secret-output", "private-path-evidence", "exit-code-change", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id": "router-coverage", "description": "Mechanical checks prove no ASB-owned user-visible writer bypasses the router."},
+    {"id": "config-level-matrix", "description": "Project-init/default/preservation, destination, level, override, quiet, and redaction matrix passes."},
+    {"id": "machine-compatibility", "description": "Every JSON route remains strictly silent on human streams and preserves exact schemas and exits."}
+  ]
+}

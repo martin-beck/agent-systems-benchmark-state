@@ -3,9 +3,9 @@
   "branch": "feature/ar-1772-unified-step-progress-reporter",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1771"],
+  "depends_on": ["AR-1775"],
   "id": "AR-1772",
-  "next_action": "Implement the single human step reporter and its deterministic clock/terminal adapters after the status and quiet contract is accepted.",
+  "next_action": "Implement the single human step reporter on the mandatory output router after its output, level, status, and quiet contracts are accepted.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -43,8 +43,10 @@ clock injection for tests, terminal-width clipping, redraw/line cleanup, nested
 or sequential step behavior, interruption/failure/cancellation finalization, and
 safe writer errors.
 
-Only human operational mode may instantiate it. JSON mode and quiet mode must not
-instantiate a renderer or emit any reporter bytes. Non-terminals receive stable,
+Only human operational mode may instantiate it, and it must render exclusively
+through the AR-1775 output router at the selected output level. JSON mode and
+quiet mode must not instantiate a renderer or emit any reporter bytes.
+Non-terminals receive stable,
 append-only fixed-width lines without ANSI/control/redraw bytes; a terminal may
 redraw the `[WAIT]` progress bar. No hand-written status or progress print is
 allowed outside this helper.

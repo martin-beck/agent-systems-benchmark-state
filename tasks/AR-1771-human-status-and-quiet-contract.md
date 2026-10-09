@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": ["AR-1768"],
   "id": "AR-1771",
-  "next_action": "After AR-1768 is done, define the closed human status vocabulary, global -q semantics, stream/mode rules, and compatibility contract for every ASB command.",
+  "next_action": "After AR-1768 is done, define the closed human status, output-router, level, quiet, stream, and compatibility contract for every ASB command.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -13,13 +13,13 @@
   "plan": "../plans/AR-1771-human-status-and-quiet-contract.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1771.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1771.json", "spec_revision": 2, "status": "pending"},
   "spec_ref": "specs/AR-1771.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "status": "planned",
-  "summary": "Define one stable human status-line vocabulary and a global quiet contract without changing JSON or exit behavior.",
-  "task_revision": 1,
-  "title": "Human status and quiet-output contract",
+  "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
+  "task_revision": 2,
+  "title": "Human output, status, and quiet contract",
   "updated_at": "2026-10-09T21:29:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
@@ -34,6 +34,23 @@ input needed to complete an explicitly interactive command and the launched TUI
 application itself are not silently disabled; quiet only suppresses ASB's
 lifecycle wrapper messages around that application.
 
+Define one configurable output router and require every ASB-owned user-visible
+result, diagnostic, status, update, warning, and progress write to use it. The
+generated project configuration must persist an `output` section with level
+`normal` by default and the default writer routing of ordinary result output to
+stdout and human operational/diagnostic output to stderr. The configuration and
+the router must support explicit safe writer destinations without allowing a
+human output route to accidentally corrupt the machine-result stream. Define
+documented precedence between project configuration and command-line overrides;
+the output router remains the sole path regardless of the selected destination.
+
+Define closed output levels `quiet`, `normal`, `verbose`, and `debug`. `quiet`
+is the level selected by `-q`; `normal` is the generated-project default;
+`verbose` adds useful non-sensitive operational detail; and `debug` adds bounded
+development diagnostics without credentials, raw provider bodies, prompts, or
+private host paths. Level selection must never alter command effects, result
+schemas, or exit codes.
+
 Every non-quiet human operational line must start with a fixed-width state marker:
 `[ OK ]`, `[ERR ]`, `[WARN]`, `[WAIT]`, or another closed, documented four-cell
 state. Green represents success, red errors/failures, yellow warnings/partial
@@ -44,7 +61,8 @@ operation per line, accessible without color, and never disclose authentication 
 private paths, prompts, or provider payloads.
 
 `--json` is a silent machine-output mode. It emits no human status lines, updates,
-or progress bars on stdout or stderr, regardless of terminal detection; stdout
-retains the existing versioned JSON contract exactly. `-q --json` is valid and
-equivalent for operational output. Preserve existing exit meanings, raw protocol
-commands, interactive prompts, and TUI terminal ownership.
+or progress bars on stdout or stderr, regardless of terminal detection or
+configured human writers; stdout retains the existing versioned JSON contract
+exactly. `-q --json` is valid and equivalent for operational output. Preserve
+existing exit meanings, raw protocol commands, interactive prompts, and TUI
+terminal ownership.

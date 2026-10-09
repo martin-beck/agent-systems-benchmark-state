@@ -1,17 +1,19 @@
 {
   "schema_version": 1,
   "spec_ref": "specs/AR-1771.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "acceptance_predicates": [
     {"id": "global-quiet", "description": "Every public ASB command and alias accepts -q/--quiet in any permitted option position and it suppresses ASB human operational output without changing effects, exits, or structured results."},
+    {"id": "universal-output-router", "description": "Every ASB-owned user-visible result, diagnostic, status, update, warning, and progress write goes through one configurable output router; project init persists normal level and the default stdout/stderr routing."},
+    {"id": "closed-output-levels", "description": "quiet, normal, verbose, and debug have documented stable meanings and configuration/CLI precedence; normal is the generated-project default and no level leaks sensitive/private data or changes effects, schemas, or exits."},
     {"id": "fixed-status-vocabulary", "description": "Every human operational line starts with a documented fixed-width four-cell state token whose meaning is available without color; terminal color follows the specified success/error/warning semantics."},
-    {"id": "json-silence", "description": "--json emits no human status, update, or progress output on stdout or stderr while preserving the exact versioned JSON and exit contracts."},
+    {"id": "json-silence", "description": "--json emits no human result, diagnostic, status, update, or progress output on stdout or stderr regardless of configured human writers, while preserving the exact versioned JSON and exit contracts."},
     {"id": "interaction-boundary", "description": "Quiet does not remove required interactive input or suppress the launched TUI application; it only suppresses ASB lifecycle presentation."},
     {"id": "safe-compatibility", "description": "Rendering is concise, plain-text safe when redirected, secret/private-data safe, and leaves raw protocol and terminal ownership contracts intact."}
   ],
   "definition_of_done": [
-    "Contract and parser/rendering tests cover every public command family and early error path.",
-    "Documentation gives exact behavior for human, quiet, redirected, JSON, interactive, and TUI modes.",
+    "Contract and parser/router/rendering tests cover every public command family and early error path.",
+    "Documentation gives exact behavior for default stdout/stderr routing, configured writers, four output levels, human, quiet, redirected, JSON, interactive, and TUI modes.",
     "Independent review, exact-head checks, signed merge, and exact-main evidence pass."
   ],
   "inputs": [
@@ -19,13 +21,14 @@
     {"id": "command-output-contract", "description": "Existing JSON/stdout and diagnostic/stderr compatibility contract."}
   ],
   "outputs": [
-    {"id": "status-contract", "description": "Closed human status token, color, stream, and mode contract."},
+    {"id": "status-contract", "description": "Closed human status token, color, stream, writer, level, and mode contract."},
     {"id": "quiet-contract", "description": "Global quiet parsing and behavior contract for all public command routes."}
   ],
   "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
-  "forbidden_tools": ["json-human-progress", "json-stderr-status", "exit-code-change", "secret-output", "private-path-evidence", "gate-weakening", "history-rewrite", "force-push"],
+  "forbidden_tools": ["output-router-bypass", "json-human-progress", "json-stderr-status", "exit-code-change", "secret-output", "private-path-evidence", "gate-weakening", "history-rewrite", "force-push"],
   "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
   "gates": [
+    {"id": "router-level-contract", "description": "Project-init defaults, configured writer routing, all four levels, and CLI precedence are covered without bypasses or sensitive output."},
     {"id": "mode-contract", "description": "Quiet and JSON mode tests prove silence while human terminal and redirected renderings retain stable fixed-width state tokens."},
     {"id": "route-coverage", "description": "Authoritative public command inventory and early error paths are fully covered."},
     {"id": "compatibility", "description": "JSON, exits, protocol, privacy, prompt, and TUI ownership contracts remain compatible."}

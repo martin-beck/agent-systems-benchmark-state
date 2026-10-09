@@ -3,7 +3,7 @@
   "branch": "feature/ar-1774-status-progress-completeness-ci",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1769", "AR-1773"],
+  "depends_on": ["AR-1769", "AR-1773", "AR-1775"],
   "id": "AR-1774",
   "next_action": "Add required CI enforcement and controlled-defect tests for quiet, status, and progress completeness after universal instrumentation lands.",
   "observed_branch": "",
@@ -25,9 +25,9 @@
 }
 ---
 
-Make the AR-1771 through AR-1773 interaction promises durable. Add required PR
+Make the AR-1771 through AR-1775 interaction promises durable. Add required PR
 and protected-main CI that derives the public command inventory and rejects a
-command missing global quiet support, an eligible operation without a structured
+command missing global quiet support or output-router use, an eligible operation without a structured
 step, a direct human status/progress write outside the reporter, a malformed or
 non-fixed-width state token, a fabricated progress total/ETA, missing terminal
 outcome, or an unsafe stream/color rendering.

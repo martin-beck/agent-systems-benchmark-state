@@ -3,7 +3,7 @@
   "spec_ref": "specs/AR-1774.json",
   "spec_revision": 1,
   "acceptance_predicates": [
-    {"id": "fail-closed-inventory", "description": "CI derives public command and eligible step coverage mechanically and fails for omitted quiet support, missing instrumentation, or renderer bypasses."},
+    {"id": "fail-closed-inventory", "description": "CI derives public command and eligible step coverage mechanically and fails for omitted quiet support, output-router bypasses, missing instrumentation, or renderer bypasses."},
     {"id": "controlled-defects", "description": "Controlled defects prove rejection of direct status writes, invalid tokens, fake totals/ETAs, missing final state, quiet leaks, JSON stream leaks, ANSI leaks, and incomplete progress lifecycle behavior."},
     {"id": "strict-json-silence", "description": "Executable tests prove --json emits no human status, update, progress, ANSI, or carriage-return bytes on either stdout or stderr for every command family and relevant failure path."},
     {"id": "terminal-and-redirected-matrix", "description": "PTY, resize, narrow-width, redirected, broken-pipe, interruption, nesting, warning, failure, and cancellation cases retain safe consistent behavior."},
