@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 263,
+  "task_revision": 264,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T22:10:31+00:00",
+  "updated_at": "2026-10-09T22:12:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -876,3 +876,6 @@ implementation boundary explicitly and keep the product offline after install.
   exact-head reruns after documented Docker registry failures.
 
 - 2026-10-09T22:10:31+00:00: Heartbeat by codex-ar1770-descriptor-safe-races.
+
+- 2026-10-09T22:12:01+00:00: Recorded command exit 0; command argv SHA-256
+  ef5be44ad77cd4f2be1affed17adf9408130b7527c6a0a521a5d643fb9ca1c9a.
