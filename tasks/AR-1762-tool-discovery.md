@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:10:26+00:00",
+  "updated_at": "2026-10-09T16:10:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -364,3 +364,6 @@ development authentication/signatures/keys are absent.
   successfully as be7ab08; no product test failed. Moved the exact generated cache file to
   /srv/data/projects/agent-systems-benchmark-state-evidence-recovery/handoffctl.cpython-312.pyc and
   will re-run state reconciliation/verification.
+
+- 2026-10-09T16:10:38+00:00: Recorded command exit 0; command argv SHA-256
+  832de70d7e4a79a255422c177e029e24017f292f0536de643a4affad63005078.
