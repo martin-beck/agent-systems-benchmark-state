@@ -1,0 +1,39 @@
+---
+{
+  "branch": "fix/ar-1755-idempotent-make-install",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [
+    "AR-1745"
+  ],
+  "id": "AR-1755",
+  "next_action": "Promote and claim; reproduce the existing-destination failure on exact ASB main, make plain `make install` safely idempotent, add repeat-install regressions, and complete independent reviewed integration with exact-head and exact-main CI.",
+  "owner": "",
+  "plan": "../plans/AR-1755-idempotent-make-install.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1755.json",
+  "spec_revision": 1,
+  "status": "planned",
+  "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
+  "task_revision": 1,
+  "title": "Make ASB installation safely idempotent",
+  "updated_at": "2026-10-09T07:30:00+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
+}
+---
+
+On current protected ASB main, a first `make install` succeeds, but a second
+install into the same prefix delegates to `cargo install` without Cargo's
+overwrite flag. Cargo reports that the binary already exists and recommends
+`--force`. Passing that text back as `make install --force` fails earlier because
+GNU Make does not recognize `--force` as one of its options.
+
+Restore the idempotent reinstall contract accepted by AR-1745. Plain
+`make install` must safely replace the ASB-managed executable inside the already
+validated prefix without requiring an additional user option. Preserve all
+absolute-prefix, traversal, repository-root, filesystem-root, symlink-chain,
+ownership-boundary, cleanup-marker, and out-of-prefix protections. Do not broaden
+the change into TUI installation, release packaging, runtime installation, or
+system-wide privilege handling.
+

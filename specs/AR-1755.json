@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1755.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "plain-command",
+      "description": "Two consecutive invocations of plain `make install` into the same validated prefix succeed without an extra Make option."
+    },
+    {
+      "id": "correct-force-boundary",
+      "description": "Overwrite behavior is passed only to Cargo's install operation; documentation and diagnostics never instruct the user to run the invalid `make install --force` form."
+    },
+    {
+      "id": "bounded-replacement",
+      "description": "Only the managed ASB executable is replaced, while unrelated prefix contents and every existing path/symlink safety boundary remain intact."
+    },
+    {
+      "id": "regression-evidence",
+      "description": "Deterministic tests fail without the Cargo overwrite flag and cover repeated default-HOME and explicit-prefix installation plus negative path cases."
+    },
+    {
+      "id": "integration-integrity",
+      "description": "The exact signed+DCO candidate receives independent review, green exact-head CI, a signed reviewed-tree merge, and green exact-main CI."
+    }
+  ],
+  "definition_of_done": [
+    "The current-main existing-destination and invalid Make-option failure is reproduced and repaired without changing the user-facing command.",
+    "Focused Makefile tests and all applicable locked workspace gates pass at unchanged thresholds.",
+    "A privacy-safe receipt binds the reviewed candidate, signed merge, and post-merge verification before the AR is released done."
+  ],
+  "inputs": [
+    {
+      "id": "ar1745-contract",
+      "description": "AR-1745 user-local prefix implementation and its idempotent reinstall requirement."
+    },
+    {
+      "id": "current-makefile",
+      "description": "The exact protected-main Make install target and bounded Makefile test harness."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "idempotent-install",
+      "description": "A safe plain `make install` path that replaces an existing ASB executable within the validated prefix."
+    },
+    {
+      "id": "repeat-install-tests",
+      "description": "Deterministic default and explicit-prefix reinstall tests retaining all negative safety coverage."
+    },
+    {
+      "id": "qualification-receipt",
+      "description": "Exact candidate, review, CI, merge, and post-merge evidence."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "rustup",
+    "git",
+    "make",
+    "gh",
+    "tools/handoffctl",
+    "tools/integration/merge_pr.py"
+  ],
+  "forbidden_tools": [
+    "sudo",
+    "system-prefix-default",
+    "unsafe-clean",
+    "force-push",
+    "gate-weakening",
+    "credential-output"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "mechanical",
+    "hosted"
+  ],
+  "gates": [
+    {
+      "id": "install-contract",
+      "description": "Repeated default and explicit-prefix installs succeed and remain bounded to the validated destination."
+    },
+    {
+      "id": "workspace-quality",
+      "description": "Focused Makefile coverage and applicable locked Rust, policy, documentation, and supply-chain gates pass unchanged."
+    },
+    {
+      "id": "review-and-publication",
+      "description": "Independent review, exact-head CI, signed exact-tree integration, and exact-main CI all pass."
+    }
+  ]
+}
