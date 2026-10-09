@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T09:39:09+00:00",
+  "updated_at": "2026-10-09T09:39:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -79,3 +79,6 @@ system-wide privilege handling.
   empty/root/repository/traversal/non-directory/symlink negatives. A real Cargo run also replaced an
   unmanaged executable, completed a second plain reinstall, reported asb 0.1.0 twice, and preserved
   an unrelated file.
+
+- 2026-10-09T09:39:56+00:00: Recorded command exit 101; command argv SHA-256
+  35b562cfc3d5d2917f7408eb532221249fdcfef96ddf0544dcc1098f75cd0413.
