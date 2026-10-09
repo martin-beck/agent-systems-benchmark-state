@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1730-cli2key-provider-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T13:25:48+00:00",
   "depends_on": [
     "AR-1728"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "feature/ar-1730-cli2key-provider-contract",
   "observed_dirty": 0,
   "observed_head": "918000a5c4f5b1e6821d257f32b279663c6903d1",
-  "owner": "",
+  "owner": "codex-asb-ar1730-closeout-20261009",
   "plan": "../plans/AR-1730-cli2key-provider-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1730.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Add cli2key provider and selection contracts",
-  "updated_at": "2026-10-09T10:20:51+00:00",
+  "updated_at": "2026-10-09T12:25:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1730-cli2key-provider-contract"
 }
 ---
@@ -182,3 +182,5 @@ own independent adapter proof. Do not alias this profile to the official
   codex-ar1730-cli2key-provider-20261009. Expired lease recovered after UTC expiry; no matching
   worker process exists and the registered worktree is clean and idle. Preserve the candidate for a
   fresh owner to resume.
+
+- 2026-10-09T12:25:48+00:00: Claimed by codex-asb-ar1730-closeout-20261009.
