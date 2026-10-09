@@ -852,7 +852,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make configured online/live provider execution the default for canonical run, sweep, easy, recording/campaign, and TUI handoff paths while keeping local mock and strict replay explicit alternatives. |
-| Next action | Promote after AR-1723 and AR-1724 are current; inventory every run/sweep/easy/record/campaign/TUI entry point, implement default-online routing with explicit --local-mock and offline replay alternatives, then qualify positive and negative paths. |
+| Next action | Promote after AR-1723, AR-1724, and cli2key qualification AR-1733 are current; inventory every run/sweep/easy/record/campaign/TUI entry point, implement default-online routing with explicit --local-mock and offline replay alternatives, then qualify positive and negative paths. |
 
 
 ## Dependency graph
@@ -3531,6 +3531,7 @@ flowchart LR
     AR_1731 --> AR_1732
     AR_1732 --> AR_1733
     AR_1733 --> AR_1736
+    AR_1733 --> AR_1754
     AR_1734 --> AR_1737
     AR_1734 --> AR_1738
     AR_1737 --> AR_1751
