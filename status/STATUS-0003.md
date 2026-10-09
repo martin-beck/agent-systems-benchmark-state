@@ -840,6 +840,20 @@
 | Summary | Adopt the exact Agent Workflow Coordinator v0.3.59 release in ASB state and repair every downstream-owned integrity regression exposed by the upgrade. |
 | Next action | Promote and claim; sync the exact v0.3.59 release into an isolated state worktree, repair only downstream-owned compatibility regressions, and run the complete integrity matrix before independent review. |
 
+### AR-1754 — Make online execution the default across ASB workflows
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make configured online/live provider execution the default for canonical run, sweep, easy, recording/campaign, and TUI handoff paths while keeping local mock and strict replay explicit alternatives. |
+| Next action | Promote after AR-1723 and AR-1724 are current; inventory every run/sweep/easy/record/campaign/TUI entry point, implement default-online routing with explicit --local-mock and offline replay alternatives, then qualify positive and negative paths. |
+
 
 ## Dependency graph
 
@@ -1652,6 +1666,7 @@ flowchart LR
         AR_1751["AR-1751 - Done"]:::status_done
         AR_1752["AR-1752 - Done"]:::status_done
         AR_1753["AR-1753 - Done"]:::status_done
+        AR_1754["AR-1754 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3475,12 +3490,14 @@ flowchart LR
     AR_1699 --> AR_1702
     AR_1699 --> AR_1704
     AR_1699 --> AR_1709
+    AR_1699 --> AR_1754
     AR_1700 --> AR_1701
     AR_1700 --> AR_1702
     AR_1700 --> AR_1704
     AR_1700 --> AR_1709
     AR_1700 --> AR_1711
     AR_1700 --> AR_1715
+    AR_1700 --> AR_1754
     AR_1701 --> AR_1703
     AR_1701 --> AR_1712
     AR_1702 --> AR_1703
@@ -3500,7 +3517,9 @@ flowchart LR
     AR_1719 --> AR_1752
     AR_1723 --> AR_1724
     AR_1723 --> AR_1725
+    AR_1723 --> AR_1754
     AR_1724 --> AR_1725
+    AR_1724 --> AR_1754
     AR_1726 --> AR_1734
     AR_1726 --> AR_1737
     AR_1726 --> AR_1738
@@ -3668,5 +3687,3 @@ flowchart LR
 | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
 | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1150](../tasks/AR-1150.md) |
 | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md) | [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md), [AR-1028](../tasks/AR-1028-asb-cli-workflow-captures.md) |
-| [AR-0873](../tasks/AR-0873-ci-workflow-captures.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-1170](../tasks/AR-1170.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md), [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md) |
-| [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md) | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
