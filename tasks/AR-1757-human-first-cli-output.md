@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output.",
-  "task_revision": 332,
+  "task_revision": 333,
   "title": "Human-first ASB command output",
-  "updated_at": "2026-10-09T15:08:44+00:00",
+  "updated_at": "2026-10-09T15:08:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1757-human-first-cli-output"
 }
 ---
@@ -958,3 +958,6 @@ authentication/signing warnings as blockers.
 
 - 2026-10-09T15:08:44+00:00: Recorded command exit 0; command argv SHA-256
   c5de8053a96ca4f1dc6ceb116a264b80a4207212fe70f21043448b3d50c7174e.
+
+- 2026-10-09T15:08:58+00:00: Recorded command exit 0; command argv SHA-256
+  1ee892ef5910fc95beabb841d45c13e5794f964d465adb4f60af32c71261c6ee.
