@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 218,
+  "task_revision": 219,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:37:25+00:00",
+  "updated_at": "2026-10-09T16:38:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -649,3 +649,6 @@ development authentication/signatures/keys are absent.
   stale ea5e52b and GitHub reports mergeStateStatus DIRTY with no exact-head CI rollup. It is not
   merge-ready until rebased/synchronized by its owner and rerun through all required gates. No
   approval or merge performed.
+
+- 2026-10-09T16:38:16+00:00: Recorded command exit 0; command argv SHA-256
+  db59667bc9c7b4d1455a649c80f9321e646431011ea70d84b91ff0007525b527.
