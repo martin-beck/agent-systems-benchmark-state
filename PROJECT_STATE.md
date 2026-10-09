@@ -27,7 +27,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37947479460 | `64843f196737` | push | Hosted portability and native qualification | completed:success |
 | 37947479455 | `64843f196737` | push | Rust verification | completed:success |
 | 37947479451 | `64843f196737` | push | Emulated aarch64 portability | completed:success |
-| 37947479450 | `64843f196737` | push | Repository quality | in_progress:- |
+| 37947479450 | `64843f196737` | push | Repository quality | completed:success |
 | 37947479448 | `64843f196737` | push | Huawei MIT source headers | completed:success |
 | 37947479419 | `64843f196737` | push | Portable protected-main provenance | completed:success |
 | 37947479386 | `64843f196737` | push | Credential-free benchmark path | completed:success |
