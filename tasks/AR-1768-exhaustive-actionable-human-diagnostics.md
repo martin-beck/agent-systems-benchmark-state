@@ -8,7 +8,7 @@
     "AR-1767"
   ],
   "id": "AR-1768",
-  "next_action": "Final repair is signed at a601a53 and the full workspace gate is being rerun after one concurrency-sensitive state-ownership test failed in the parallel run but passed alone. Then run clippy/doc/release gates, push exact head, obtain independent review, and monitor PR #541 CI.",
+  "next_action": "All local gates pass on clean signed exact head a601a53: locked workspace tests, focused diagnostics/human/contract tests, clippy -D warnings, rustdoc -D warnings, and release build. Push exact head, obtain independent review, rerun PR #541 required checks (prior Docker Hub rate-limit failures), then merge only after green exact-head CI.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "observed_dirty": 0,
   "observed_head": "a601a53f2945c16c86369aa5203c071d443e0a66",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:51:42+00:00",
+  "updated_at": "2026-10-09T21:51:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -537,3 +537,7 @@ say what remains usable.
 
 - 2026-10-09T21:51:42+00:00: Recorded command exit 0; command argv SHA-256
   b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
+
+- 2026-10-09T21:51:58+00:00: Full locked workspace test passed on rerun: all applicable tests green
+  with documented ignored native/provider tests. Clippy, docs, and release build also pass; product
+  tree clean and signed.
