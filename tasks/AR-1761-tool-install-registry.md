@@ -10,7 +10,7 @@
   "id": "AR-1761",
   "next_action": "Implement `asb tool install` against the frozen schema and project layout.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "ea5e52bfe843969c493f22146f66ccfa2415159a",
   "owner": "codex-asb-ar1761-tool-install-20261009",
   "plan": "../plans/AR-1761-tool-install-registry.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:41:53+00:00",
+  "updated_at": "2026-10-09T15:42:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
