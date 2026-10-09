@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "Audit TUI lifecycle directory ownership and add equivalent notice wiring if required by AR-1767; then run the full applicable asb-cli gate before review.",
+  "next_action": "Compile TUI notice wiring and then address review-required race/dry-run/documentation gaps before commit; do not claim review-ready until those gates pass.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:39:12+00:00",
+  "updated_at": "2026-10-09T18:39:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -160,3 +160,10 @@ when useful; repeated commands must not claim an existing directory was new.
   tools/__pycache__/handoffctl.cpython-312.pyc exceeds the 200 KiB state evidence limit.
 
 - 2026-10-09T18:39:12+00:00: Heartbeat by codex-ar1767-directory-preparation.
+
+- 2026-10-09T18:39:20+00:00: 2026-10-09T18:40Z: TUI audit found lifecycle state/cache paths are
+  command-owned and previously lacked stderr notices. Added human-only notice plumbing from CLI
+  dispatch into TUI dispatch/execute for dev lifecycle state, stable release cache, and active
+  remove state while preserving JSON stdout. Independent review additionally requires fail-closed
+  TOCTOU/symlink race handling in central output preparation/atomic writers and expanded
+  dry-run/matrix/docs coverage; these remain open gates and are not being hidden.

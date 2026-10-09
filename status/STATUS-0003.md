@@ -1034,7 +1034,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implementing safe directory preparation and notices for command-owned ASB outputs. |
-| Next action | Audit TUI lifecycle directory ownership and add equivalent notice wiring if required by AR-1767; then run the full applicable asb-cli gate before review. |
+| Next action | Compile TUI notice wiring and then address review-required race/dry-run/documentation gaps before commit; do not claim review-ready until those gates pass. |
 
 ### AR-1768 — Exhaustive actionable human diagnostics
 

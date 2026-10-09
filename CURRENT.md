@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | Audit TUI lifecycle directory ownership and add equivalent notice wiring if required by AR-1767; then run the full applicable asb-cli gate before review. | codex-ar1767-directory-preparation |
+| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | Compile TUI notice wiring and then address review-required race/dry-run/documentation gaps before commit; do not claim review-ready until those gates pass. | codex-ar1767-directory-preparation |
 
 ## Open
 
