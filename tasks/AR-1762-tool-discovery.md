@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 273,
+  "task_revision": 274,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T17:00:51+00:00",
+  "updated_at": "2026-10-09T17:00:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -814,3 +814,6 @@ development authentication/signatures/keys are absent.
   dc511318a71920963b75c65bfd2094861361a7cd0348fff4e916bef2c7393c8f.
 
 - 2026-10-09T17:00:51+00:00: Heartbeat by codex-asb-ar1762-tool-discovery-20261009.
+
+- 2026-10-09T17:00:57+00:00: Recorded command exit 0; command argv SHA-256
+  dc511318a71920963b75c65bfd2094861361a7cd0348fff4e916bef2c7393c8f.
