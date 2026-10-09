@@ -2,23 +2,23 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T09:07:37+00:00",
   "depends_on": [
     "AR-1728"
   ],
   "id": "AR-1729",
   "next_action": "Promote after AR-1728; implement the runtime-owned sidecar lifecycle and hostile cleanup/privacy tests.",
-  "owner": "",
+  "owner": "codex-ar1729-cli2key-sidecar-20261009",
   "plan": "../plans/AR-1729-cli2key-sidecar-lifecycle.md",
   "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1729.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Supervise cli2key sidecar and ephemeral key",
-  "updated_at": "2026-10-09T07:37:33+00:00",
+  "updated_at": "2026-10-09T07:37:37+00:00",
   "worktree_key": ""
 }
 ---
@@ -35,3 +35,5 @@ timeout, cancellation, or caller death. The sidecar alone receives upstream
 egress; benchmark agents remain loopback-only.
 
 - 2026-10-09T07:37:33+00:00: AR-1728 is done at exact main 30286af; dependencies verified
+
+- 2026-10-09T07:37:37+00:00: Claimed by codex-ar1729-cli2key-sidecar-20261009.
