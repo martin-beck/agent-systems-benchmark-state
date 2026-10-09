@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 247,
+  "task_revision": 248,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:51:24+00:00",
+  "updated_at": "2026-10-09T16:51:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -740,3 +740,6 @@ development authentication/signatures/keys are absent.
   fully green at head 9cd9e80/base f361cfc. DEVELOPMENT.md permits development-only integration
   after technical review without a GitHub approval object; same-account approval is optional.
   Proceeding with exact-base/tree signed DCO merge via merge_pr.py.
+
+- 2026-10-09T16:51:35+00:00: Recorded command exit 0; command argv SHA-256
+  14b8b0b86cb26d24cbadaaa2ff9711ba24c6a83e8d22b12f7fa4ca481020feb7.
