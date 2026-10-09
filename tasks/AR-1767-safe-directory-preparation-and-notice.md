@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:35:48+00:00",
+  "updated_at": "2026-10-09T18:36:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -145,3 +145,6 @@ when useful; repeated commands must not claim an existing directory was new.
   wrapper; no product behavior was implicated. The wrapper again recorded the command then failed
   only in post-reconcile because tools/__pycache__/handoffctl.cpython-312.pyc exceeds the 200 KiB
   evidence limit.
+
+- 2026-10-09T18:36:01+00:00: Recorded command exit 0; command argv SHA-256
+  b470b3aef8671ea54bcc1116d5e74efb4c80157f0f5583e2241674d1e4d21dfb.
