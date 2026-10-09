@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T14:56:49+00:00",
+  "updated_at": "2026-10-09T15:02:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
@@ -125,3 +125,6 @@ unknown-field/path validation.
 - 2026-10-09T14:56:49+00:00: Post-merge exact-main monitoring: Formal assurance (run 37947479338) is
   terminal success. Emulated aarch64 (37947479451), Rust verification (37947479455), and Repository
   quality (37947479450) remain in progress; acceptance still waits for all three.
+
+- 2026-10-09T15:02:38+00:00: Recorded command exit 0; command argv SHA-256
+  42339310fe201bea44a4eaa9f4b4471d4657643cb4b9c51ac8c3c4ddb732e25d.
