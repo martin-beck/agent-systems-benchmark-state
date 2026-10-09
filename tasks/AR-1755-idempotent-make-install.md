@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T09:33:25+00:00",
+  "updated_at": "2026-10-09T09:33:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -42,3 +42,6 @@ system-wide privilege handling.
   existing-destination failure and GNU Make rejects the suggested --force spelling.
 
 - 2026-10-09T09:33:25+00:00: Claimed by codex-asb-ar1755-install-20261009.
+
+- 2026-10-09T09:33:55+00:00: Recorded command exit 0; command argv SHA-256
+  048c8e1fefac351386dd2444042d2e0c10f87c1379dbb29985451c5f4351ec1e.
