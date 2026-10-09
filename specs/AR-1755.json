@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1755.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "supported-command", "description": "handoffctl exposes a revision-fenced accept command for validated task acceptance."},
+    {"id": "fail-closed", "description": "Invalid owner, status, revision, spec, evidence class, reference, or digest is rejected without metadata mutation."},
+    {"id": "vendor-boundary", "description": "The repair changes only downstream-owned coordinator integration and does not modify vendored v0.3.59 bytes."}
+  ],
+  "definition_of_done": [
+    "Positive and negative acceptance-command tests pass.",
+    "Independent review, exact-head CI, signed merge, and post-merge doctor pass."
+  ],
+  "inputs": [
+    {"id": "coordinator", "description": "ASB state repository with exact Agent Workflow Coordinator v0.3.59 vendor snapshot."},
+    {"id": "task-spec", "description": "A task with matching spec_ref and spec_revision."}
+  ],
+  "outputs": [
+    {"id": "accept-command", "description": "Supported handoffctl mutation for canonical spec_acceptance metadata."}
+  ],
+  "allowed_tools": ["git", "gh", "python", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["vendored-byte-patching", "manual-task-metadata", "force-push", "gate-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [
+    {"id": "acceptance", "description": "The command records exact acceptance and rejects all malformed or stale inputs."},
+    {"id": "integrity", "description": "Vendor integrity, state quality, review, and exact-head gates remain green."}
+  ]
+}

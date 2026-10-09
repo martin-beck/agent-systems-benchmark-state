@@ -108,6 +108,21 @@ tools/handoffctl reconcile --commit --push
 tools/handoffctl doctor --live
 ```
 
+Record task-spec acceptance before releasing a spec-bearing task to `done`.
+The mutation is revision-fenced and keeps only the public evidence reference
+and digest in task metadata; evidence content and secrets remain outside the
+coordination repository:
+
+```sh
+tools/handoffctl accept AR-0001 --owner worker-unique \
+  --expected-revision REV --spec-ref specs/AR-0001.json --spec-revision 1 \
+  --evidence-class hosted --evidence-ref quality/AR-0001-receipt.txt \
+  --evidence-digest sha256:DIGEST \
+  --note "Exact acceptance evidence verified"
+tools/handoffctl release AR-0001 --owner worker-unique --status done \
+  --note "Released after accepted evidence"
+```
+
 Restore a verified checkpoint only from a clean descendant product checkout:
 
 ```sh
