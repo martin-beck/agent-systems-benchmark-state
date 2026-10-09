@@ -741,6 +741,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1498` | `feature/ar-1498-authenticated-lifecycle-executor` | `55ff13fb6cb2` | 0 | behind 340, ahead 1275 |
 | `agent-systems-benchmark-ar-1499` | `feature/ar-1499-development-credential-enrollment` | `0a2f6e9c74f9` | 0 | behind 340, ahead 1280 |
 | `ar1721-asb-dd10b075` | `DETACHED` | `dd10b075c065` | 0 | behind 86, ahead 0 |
+| `asb` | `DETACHED` | `69bf9029a497` | 0 | behind 0, ahead 0 |
 | `ar1722-receipt-worker.ObeqHt` | `DETACHED` | `ac6557038cc3` | 0 | behind 82, ahead 0 |
 | `asb-ar1652-review-20261007` | `DETACHED` | `0c4ba0c721d0` | 0 | behind 66, ahead 1 |
 | `asb-ar1698-product-1791367157` | `DETACHED` | `d207cc4eded6` | 0 | behind 89, ahead 0 |
