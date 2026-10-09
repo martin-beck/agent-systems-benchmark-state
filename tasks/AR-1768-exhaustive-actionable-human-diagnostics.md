@@ -10,7 +10,7 @@
   "id": "AR-1768",
   "next_action": "Full local gates are running on signed repair head 18e938d; then independently review exact diff, monitor refreshed PR #541 checks, rerun Docker-rate-limited checks when available, and do not merge until all required checks are green.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "18e938d50a022c851dea01d4331ab6b1972df25c",
   "owner": "codex-ar1768-diagnostics",
   "plan": "../plans/AR-1768-exhaustive-actionable-human-diagnostics.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:30:55+00:00",
+  "updated_at": "2026-10-09T21:30:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
