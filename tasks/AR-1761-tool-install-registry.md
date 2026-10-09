@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:47:54+00:00",
+  "updated_at": "2026-10-09T15:48:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -104,3 +104,6 @@ for idempotence; never store API keys or tokens.
   validation rejected the documented fixture:// source vocabulary. Extended the closed source
   validator to allow fixture:// only; unsupported network schemes and symlink/local-source checks
   remain fail-closed. Focused tool install/list/status/remove tests now pass (5/5).
+
+- 2026-10-09T15:48:11+00:00: Recorded command exit 0; command argv SHA-256
+  a917c5c96bb0f888caae50bea885d24f8c7158927e33da92e7b5c2eb9571981b.
