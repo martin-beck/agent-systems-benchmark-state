@@ -62,7 +62,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1757-human-first-cli-output` | `feature/ar-1757-human-first-cli-output` | `06a424fadb42` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 12, ahead 0 |
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 3, ahead 0 |
-| `agent-systems-benchmark-ar-1760-project-init` | `feature/ar-1760-project-init-workspace` | `90abb5b3bb29` | 0 | behind 0, ahead 5 |
+| `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 93, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 81, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 27, ahead 0 |
