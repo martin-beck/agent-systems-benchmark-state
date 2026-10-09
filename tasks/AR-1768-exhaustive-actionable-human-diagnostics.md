@@ -10,8 +10,8 @@
   "id": "AR-1768",
   "next_action": "Render every cataloged ASB error, failure, partial outcome, and warning as concise cause-specific human guidance with an honest next action when one exists.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
-  "observed_dirty": 4,
-  "observed_head": "dc67390494805693aef21d917319253b2e705da7",
+  "observed_dirty": 0,
+  "observed_head": "62532a2c9482e1abb6774dcdb6e4d36a4a053d5a",
   "owner": "codex-ar1768-diagnostics",
   "plan": "../plans/AR-1768-exhaustive-actionable-human-diagnostics.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:20:00+00:00",
+  "updated_at": "2026-10-09T21:20:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
