@@ -1076,7 +1076,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. |
-| Next action | Fresh independent reviewer must inspect PR #540 exact head 73aae7bc514eb7fcb15a83f9cf56db7dd23513b2 and tree d37a71df48e02c40b9d0fc7f53ffb8e6d1535d7b; then wait for exact-head CI. |
+| Next action | Fresh independent review must inspect PR #540 exact head 6278fcd6720f39de456a791f0c73e6327ff6e25d and tree 6579db9d5bf4df3d4149ac0f5f5b29ff4f2ab2a8; then wait for exact-head CI. |
 
 
 ## Dependency graph

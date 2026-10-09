@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Fresh independent reviewer must inspect PR #540 exact head 73aae7bc514eb7fcb15a83f9cf56db7dd23513b2 and tree d37a71df48e02c40b9d0fc7f53ffb8e6d1535d7b; then wait for exact-head CI.",
+  "next_action": "Fresh independent review must inspect PR #540 exact head 6278fcd6720f39de456a791f0c73e6327ff6e25d and tree 6579db9d5bf4df3d4149ac0f5f5b29ff4f2ab2a8; then wait for exact-head CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 168,
+  "task_revision": 169,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T20:46:47+00:00",
+  "updated_at": "2026-10-09T20:47:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -583,3 +583,9 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T20:46:47+00:00: Recorded command exit 0; command argv SHA-256
   32ee42a28fd2c30c78edd3266506d5ebc9bdbd38eeb8ea910ddee6f58fb9a926.
+
+- 2026-10-09T20:47:47+00:00: Repaired transaction rollback to track and remove files before
+  directories, preserving pre-existing workspace content. Added deterministic collision test.
+  Workload tests: 43 unit, 4 public API, 5 validity, 2 doc tests passed. Workspace clippy --locked
+  --all-targets -D warnings passed. Signed+DCO commit 6278fcd pushed to PR #540; awaiting fresh
+  independent review and exact-head CI.
