@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Continue monitoring PR #536 exact-head checks; once every required check is terminal success, record final independent review and allow merge workflow.",
+  "next_action": "Obtain approval from a distinct GitHub reviewer identity, then merge PR #536 through merge_pr.py; preserve exact-head green evidence.",
   "observed_branch": "feature/ar-1762-tool-discovery-v2",
   "observed_dirty": 0,
   "observed_head": "9cd9e80cfc2a3bee31a402016371ab70b6cfb1cc",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 238,
+  "task_revision": 239,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:47:03+00:00",
+  "updated_at": "2026-10-09T16:47:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -709,3 +709,9 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:47:03+00:00: Recorded command exit 1; command argv SHA-256
   b45c59632c41a47ab05c0ff6661ba2f6c98422552c67fa28a6e37339d50a29e7.
+
+- 2026-10-09T16:47:17+00:00: PR #536 exact head 9cd9e80 has all required hosted checks terminal
+  SUCCESS. Independent re-review found no blocker, and local focused gates pass. Attempted separate
+  GitHub approval through handoffctl; GitHub rejected it because the authenticated reviewer is the
+  PR author (Review Can not approve your own pull request). Exact approval blocker is reviewer
+  identity, not product or CI.

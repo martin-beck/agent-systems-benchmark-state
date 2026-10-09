@@ -20,7 +20,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1761](../tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | codex-asb-ar1761-tool-install-20261009 | Install supported external ASB tools into a user/project-local root and persist validated records. | Continue monitoring PR #537 exact-head checks; once all required checks are terminal success, record final independent review and approval status. |
-| P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | codex-asb-ar1762-tool-discovery-20261009 | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Continue monitoring PR #536 exact-head checks; once every required check is terminal success, record final independent review and allow merge workflow. |
+| P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | codex-asb-ar1762-tool-discovery-20261009 | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Obtain approval from a distinct GitHub reviewer identity, then merge PR #536 through merge_pr.py; preserve exact-head green evidence. |
 
 ### Open (1)
 
