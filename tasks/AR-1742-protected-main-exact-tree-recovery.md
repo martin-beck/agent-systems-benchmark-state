@@ -13,13 +13,21 @@
   "plan": "../plans/AR-1742-protected-main-exact-tree-recovery.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:a6aee43a7a998ebc3dfe96a028a349787cb03d6972bf42c895d492844c6a462e",
+    "evidence_ref": "quality/AR-1742-protected-main-exact-tree-recovery-receipt.txt",
+    "spec_ref": "specs/AR-1742.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1742.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover PR #505 protected-main exact-tree publication failure without rewriting history.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "PR #505 exact-tree recovery",
-  "updated_at": "2026-10-09T03:06:21+00:00",
+  "updated_at": "2026-10-09T03:15:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1742-exact-tree-recovery"
 }
 ---
@@ -58,3 +66,6 @@ from AR-1740's default-lifecycle PR #507.
 
 - 2026-10-09T03:05:52+00:00: Recorded command exit 0; command argv SHA-256
   8018837e58d4e60b3b7f0c2705b03799524194029118f9d036de8461965f2d9d.
+
+- 2026-10-09T03:15:42+00:00: Recorded command exit 0; command argv SHA-256
+  0bc26bb5f89c99271799f0ae3411866a715dd66e9c562ff19bd22a6ff2e76a83.
