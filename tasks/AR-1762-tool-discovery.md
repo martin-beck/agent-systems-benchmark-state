@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:22:13+00:00",
+  "updated_at": "2026-10-09T16:23:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -477,3 +477,6 @@ development authentication/signatures/keys are absent.
   previously observed exit-101 suite failures were repaired contract fixtures/classification: tool
   is now in human public inventory, output fixture includes tool, and inventory count is 26. CI for
   78bc38b is running; mergeStateStatus is BLOCKED only while required checks are pending.
+
+- 2026-10-09T16:23:05+00:00: Recorded command exit 0; command argv SHA-256
+  23ce422f3dc10f1f18ef6f032d9e18d4fdbc0fb9a3cabf67ad38e14aade1bdb8.
