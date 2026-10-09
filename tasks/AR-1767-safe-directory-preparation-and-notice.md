@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:48:31+00:00",
+  "updated_at": "2026-10-09T18:48:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -251,3 +251,6 @@ when useful; repeated commands must not claim an existing directory was new.
   signed commit 876e6f98d6a9e8b419cbcf83cb34d8a8903f47cd. Exact full test evidence is green as
   recorded above. State wrapper post-reconcile continues to report only the known oversized
   tools/__pycache__/handoffctl.cpython-312.pyc validation failure after durable recording.
+
+- 2026-10-09T18:48:38+00:00: Recorded command exit 8; command argv SHA-256
+  979cf1cd8e67550441e460787e413b3f33fefc7102f833010fc37c8f46492925.
