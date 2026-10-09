@@ -1,0 +1,21 @@
+{
+  "ar": "AR-1732",
+  "product_repository": "martin-beck/agent-systems-benchmark",
+  "pull_request": 529,
+  "reviewed_head": "08226e288e9037fc9819c824c032b9420285a76e",
+  "product_merge_commit": "942c7b110045823c942e362e5247b6ce15027ec5",
+  "required_ci": [
+    37938978869,
+    37938978789,
+    37938978769,
+    37938978831,
+    37938978737,
+    37938978804,
+    37938978794,
+    37938978695,
+    37938978758,
+    37938978842
+  ],
+  "result": "all required exact-main workflows successful",
+  "doctor": "OK: structure, references, privacy, generated views and live state are consistent"
+}
