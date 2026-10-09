@@ -878,6 +878,68 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual("", meta["owner"])
         self.assertTrue(all(len(line) <= 100 for line in path.read_text().splitlines()))
 
+    def test_accept_records_validated_spec_evidence(self) -> None:
+        path = self.make_task("AR-0001")
+        (self.root / "spec.json").write_text(json.dumps({
+            "schema_version": 1, "spec_ref": "spec.json", "spec_revision": 1,
+            "acceptance_predicates": [{"id": "predicate", "description": "pass"}],
+            "definition_of_done": ["pass"], "inputs": [{"id": "input", "description": "input"}],
+            "outputs": [{"id": "output", "description": "output"}],
+            "allowed_tools": ["source.read"], "forbidden_tools": ["credential-output"],
+            "required_evidence_classes": ["contract-test"],
+            "gates": [{"id": "gate", "description": "pass"}],
+        }))
+        meta, body = CORE.read_task(path)
+        meta["spec_ref"], meta["spec_revision"] = "spec.json", 1
+        CORE.write_task(path, meta, body)
+        with patch.object(CORE, "commit", return_value=True):
+            CORE.mutate(
+                argparse.Namespace(task="AR-0001", owner="worker-a", lease_minutes=10), "claim"
+            )
+            meta, _ = CORE.read_task(path)
+            CORE.mutate(argparse.Namespace(
+                task="AR-0001", owner="worker-a", expected_revision=meta["task_revision"],
+                spec_ref="spec.json", spec_revision=1, evidence_class="contract-test",
+                evidence_ref="evidence/AR-0001", evidence_digest="sha256:" + "a" * 64,
+                note="acceptance evidence recorded",
+            ), "accept")
+        meta, _ = CORE.read_task(path)
+        self.assertEqual("pass", meta["spec_acceptance"]["status"])
+        self.assertEqual("contract-test", meta["spec_acceptance"]["evidence_class"])
+
+    def test_accept_rejects_mismatched_or_malformed_evidence_without_mutation(self) -> None:
+        path = self.make_task("AR-0001")
+        (self.root / "spec.json").write_text(json.dumps({
+            "schema_version": 1, "spec_ref": "spec.json", "spec_revision": 1,
+            "acceptance_predicates": [{"id": "predicate", "description": "pass"}],
+            "definition_of_done": ["pass"], "inputs": [{"id": "input", "description": "input"}],
+            "outputs": [{"id": "output", "description": "output"}],
+            "allowed_tools": ["source.read"], "forbidden_tools": ["credential-output"],
+            "required_evidence_classes": ["contract-test"],
+            "gates": [{"id": "gate", "description": "pass"}],
+        }))
+        meta, body = CORE.read_task(path)
+        meta["spec_ref"], meta["spec_revision"] = "spec.json", 1
+        CORE.write_task(path, meta, body)
+        with patch.object(CORE, "commit", return_value=True):
+            CORE.mutate(
+                argparse.Namespace(task="AR-0001", owner="worker-a", lease_minutes=10), "claim"
+            )
+            meta, _ = CORE.read_task(path)
+            base = {
+                "task": "AR-0001", "owner": "worker-a", "expected_revision": meta["task_revision"],
+                "spec_ref": "other.json", "spec_revision": 1, "evidence_class": "contract-test",
+                "evidence_ref": "evidence/AR-0001", "evidence_digest": "sha256:" + "a" * 64,
+                "note": "invalid acceptance evidence",
+            }
+            with self.assertRaisesRegex(RuntimeError, "does not match"):
+                CORE.mutate(argparse.Namespace(**base), "accept")
+            base["spec_ref"], base["evidence_digest"] = "spec.json", "not-a-digest"
+            with self.assertRaisesRegex(RuntimeError, "digest is invalid"):
+                CORE.mutate(argparse.Namespace(**base), "accept")
+        meta, _ = CORE.read_task(path)
+        self.assertNotIn("spec_acceptance", meta)
+
     def test_claim_enforces_dependencies_owner_and_positive_lease(self) -> None:
         self.make_task("AR-0001")
         self.make_task("AR-0002", depends_on=["AR-0001"])
