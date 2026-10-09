@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:15:52+00:00",
+  "updated_at": "2026-10-09T15:16:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -164,3 +164,6 @@ commands for a fresh user and support `--json` without leaking host secrets.
 
 - 2026-10-09T15:15:52+00:00: Recorded command exit 0; command argv SHA-256
   9be03b9748606aa70b593050ef3b423f8c643a53653436862d674448ef6f2f2b.
+
+- 2026-10-09T15:16:04+00:00: Recorded command exit 101; command argv SHA-256
+  1e1cd53b28a343fe9ab1918784ca059a087e19aefe6b87206aa1b920d18c41ef.
