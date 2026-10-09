@@ -928,11 +928,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-ar1760-project-init-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Add an idempotent ASB project initializer containing config, results, and catalog areas. |
@@ -1826,7 +1826,7 @@ flowchart LR
         AR_1757["AR-1757 - In progress"]:::status_in_progress
         AR_1758["AR-1758 - Done"]:::status_done
         AR_1759["AR-1759 - Done"]:::status_done
-        AR_1760["AR-1760 - In progress"]:::status_in_progress
+        AR_1760["AR-1760 - Done"]:::status_done
         AR_1761["AR-1761 - Planned"]:::status_planned
         AR_1762["AR-1762 - Planned"]:::status_planned
         AR_1763["AR-1763 - Planned"]:::status_planned

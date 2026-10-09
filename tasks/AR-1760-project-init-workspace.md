@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1760-project-init-workspace",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T17:26:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1759"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-asb-ar1760-project-init-20261009",
+  "owner": "",
   "plan": "../plans/AR-1760-project-init-workspace.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1760.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:39:13+00:00",
+  "updated_at": "2026-10-09T15:39:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -256,3 +256,6 @@ commands for a fresh user and support `--json` without leaking host secrets.
 
 - 2026-10-09T15:39:13+00:00: Accepted project initializer against merged PR #532 exact tree and all
   ten terminal-green exact-main workflows.
+
+- 2026-10-09T15:39:16+00:00: AR-1760 merged at ea5e52bf and all exact-main post-merge workflows are
+  successful.
