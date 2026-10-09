@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | Run cargo check once after current wiring, then focused positive/negative CLI tests; record exact results before commit. | codex-ar1767-directory-preparation |
+| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | Rerun cargo test -p asb-cli --no-run after restoring the test-only tool wrapper and optional progress argument; then run the two new directory-preparation tests. | codex-ar1767-directory-preparation |
 
 ## Open
 

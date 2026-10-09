@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "Run cargo check once after current wiring, then focused positive/negative CLI tests; record exact results before commit.",
+  "next_action": "Rerun cargo test -p asb-cli --no-run after restoring the test-only tool wrapper and optional progress argument; then run the two new directory-preparation tests.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:35:09+00:00",
+  "updated_at": "2026-10-09T18:35:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -128,3 +128,11 @@ when useful; repeated commands must not claim an existing directory was new.
   b470b3aef8671ea54bcc1116d5e74efb4c80157f0f5583e2241674d1e4d21dfb.
 
 - 2026-10-09T18:35:09+00:00: Heartbeat by codex-ar1767-directory-preparation.
+
+- 2026-10-09T18:35:14+00:00: 2026-10-09T18:35Z: cargo check -p asb-cli completed successfully
+  (Finished dev profile), but handoffctl post-reconcile reported
+  COMMAND_RECORDED_POST_RECONCILE_FAILED because tools/__pycache__/handoffctl.cpython-312.pyc
+  exceeds the 200 KiB evidence limit. First cargo test --no-run exposed two stale test call sites
+  (removed test-only tool wrapper and missing None progress argument); both are repaired, and
+  focused directory tests were added with positive creation/reuse, exact stderr notice,
+  traversal/file/symlink rejection, and machine-JSON path redaction coverage.
