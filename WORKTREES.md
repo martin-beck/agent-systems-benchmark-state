@@ -370,7 +370,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1726-pr499-review3` | `DETACHED` | `acd7a146baba` | 0 | behind 57, ahead 0 |
 | `agent-systems-benchmark-ar-1727-development-broker-foreground-terminal` | `repair/ar-1727-development-broker-foreground-terminal` | `420b57d20a6c` | 0 | behind 64, ahead 0 |
 | `agent-systems-benchmark-ar-1728` | `feature/ar-1728-cli2key-contract` | `b65cac1f6f4f` | 0 | behind 5, ahead 2 |
-| `agent-systems-benchmark-ar-1728-clean` | `feature/ar-1728-cli2key-contract-clean` | `b10da565c2fa` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1728-clean` | `feature/ar-1728-cli2key-contract-clean` | `b10da565c2fa` | 3 | behind 0, ahead 1 |
+| changed files | - | - | - | `config/cli2key-bridge-v1.json`, `tools/cli2key-spike/cli2key_spike.py`, `tools/cli2key-spike/test_cli2key_spike.py` |
 | `agent-systems-benchmark-ar-1734-development-tui-tool-environment` | `repair/ar-1734-development-tui-tool-environment` | `40f618b9389c` | 0 | behind 55, ahead 0 |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 54, ahead 0 |
 | `agent-systems-benchmark-ar-1735` | `repair/ar-1735-goose-fixture-determinism` | `3aea09da2646` | 0 | behind 3, ahead 0 |
