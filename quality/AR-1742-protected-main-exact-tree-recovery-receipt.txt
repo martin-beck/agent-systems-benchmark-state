@@ -1,0 +1,69 @@
+AR: AR-1742
+Qualification: PR #505 protected-main exact-tree recovery
+
+Preserved incident
+
+- PR #505 protected target and published merge first parent:
+  2f7387e5c269449f2337ece3bf702e2a76ee67c3
+- PR #505 reviewed topic: e424c392d7bcd99199ed8f194918656a27d4b65b
+- Protected-target/topic merge base:
+  1a5888ce1c96414015bbaf223ac42302871d47fe
+- Reviewed topic tree: 1aa96736bbbc6d94b8555ebe0da237c3dd7ab7d2
+- Published merge: a9abcf2e63f761e314593e9abc6bf074b7418e5e
+- Published merge tree: befcb782d6ce260d1d4dd0e4fe25c2fb0b1b900f
+- Exact-main rejecting runs: Repository Quality 37758191633 and Rust
+  verification 37758191874.
+
+The reviewed topic tree and published merge tree differ. The immutable merge
+and failed checks remain preserved; no history rewrite, waiver, or policy
+exception was used.
+
+Reviewed forward recovery
+
+- PR: #519
+- Protected base: 69bf9029a4976f14739cf4c25949428ff2fe0bb7
+- Final reviewed head: e00f9cf9b5ce0651187994ca5d5878ea05426229
+- Final reviewed tree: 33e04eb548e990e2e8f5a97fd67ef684a75aab77
+- Signed local merge: 5f9850c138871cd7e2537955e85258030b463eea
+- Merge parents: 69bf9029a4976f14739cf4c25949428ff2fe0bb7 and
+  e00f9cf9b5ce0651187994ca5d5878ea05426229
+- Merge tree: 33e04eb548e990e2e8f5a97fd67ef684a75aab77
+
+Independent review first rejected head f18aef14c8f8ad0438504a6c000e2a49d8cbd5c1
+because the receipt described the protected target as topic ancestry. The
+additive signed and DCO-bearing correction e00f9cf9b5ce0651187994ca5d5878ea05426229
+records the exact merge-base relationship. Fresh independent rereview approved
+the corrected exact head and tree with no findings. All 15 exact-head checks
+passed. Both topic commits and the merge have accepted ED25519 signatures and
+matching DCO trailers. The deterministic protected-base/topic merge preview,
+reviewed topic tree, and published merge tree are identical.
+
+Exact-main hosted evidence
+
+Every workflow associated with exact main
+5f9850c138871cd7e2537955e85258030b463eea reached terminal success:
+
+- Credential-free benchmark path: 37877686922
+- Cross-repository development broker qualification: 37877686941
+- Emulated AArch64 portability: 37877686984
+- Fault assurance: 37877686938
+- Formal assurance: 37877686942
+- Hosted portability and native qualification: 37877687003
+- Huawei MIT source headers: 37877686948
+- Portable protected-main provenance: 37877686982
+- Repository Quality: 37877686933
+- Rust verification: 37877686924
+
+The exact-main protected policy, DCO, signature, parents, and tree validations
+also pass locally against the immutable merge object.
+
+Scope relationship and decision
+
+AR-1740 follow-up PR #507 and merge
+d53e901677024741cdf0477c9e1efb5d0b664c02 are a separate default-lifecycle
+product change. Their successful checks neither replace nor retroactively
+qualify the PR #505 recovery. AR-1742's preserve, signed-recovery, exact-main,
+and relationship predicates are satisfied by the evidence above.
+
+This receipt contains no credentials, prompts, raw logs, private paths, or
+host-specific diagnostics.
