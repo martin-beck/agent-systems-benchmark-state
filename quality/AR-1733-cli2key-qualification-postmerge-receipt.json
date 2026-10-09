@@ -1,0 +1,20 @@
+{
+  "ar": "AR-1733",
+  "status": "postmerge_verified",
+  "merge_commit": "27d7c931a6f3e0adbbe7f4ea9606717f369e9779",
+  "tree": "158bd1de424d13fd92aa0a1dd1d4cf46943b7dcf",
+  "pr": 530,
+  "workflows": {
+    "credential-free benchmark path": 37943533692,
+    "cross-repository development broker qualification": 37943533442,
+    "fault assurance": 37943533648,
+    "formal assurance": 37943533750,
+    "hosted portability and native qualification": 37943533477,
+    "Huawei MIT source headers": 37943533576,
+    "portable protected-main provenance": 37943533600,
+    "repository quality": 37943533666,
+    "rust verification": 37943533688,
+    "emulated aarch64 portability": 37943534736
+  },
+  "all_conclusions": "success"
+}
