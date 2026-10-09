@@ -13,13 +13,21 @@
   "plan": "../plans/AR-1758-ar1731-merge-dco-repair.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:0d0dd88d8ef706b61129a92d2179047f178d330126b124b589c19284c4a9cd9d",
+    "evidence_ref": "quality/AR-1758-merge-dco-repair-receipt.json",
+    "spec_ref": "specs/AR-1758.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1758.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Repair AR-1731 protected-main merge provenance",
-  "updated_at": "2026-10-09T13:13:57+00:00",
+  "updated_at": "2026-10-09T13:14:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1758-merge-dco"
 }
 ---
@@ -75,3 +83,7 @@ until the repaired exact-main workflows are green.
 
 - 2026-10-09T13:13:57+00:00: Recorded command exit 0; command argv SHA-256
   ffd2c2087ea8d4d5936a68173743a8fba699a09882c490f525737dd2bf2fa977.
+
+- 2026-10-09T13:14:28+00:00: Accepted repaired protected-main publication
+  021ca1c39ff0199aa2c193026783712bc73bc51b: merge_pr.py exact base/head/tree, valid SSH signature
+  and DCO, and all exact-main workflows successful.
