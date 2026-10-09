@@ -27,7 +27,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 37990714546 | `2701ae67c996` | pull_request | Portable protected-main provenance | completed:failure |
 | 37990714539 | `2701ae67c996` | pull_request | Fault assurance | queued:- |
-| 37990714506 | `2701ae67c996` | pull_request | Repository quality | queued:- |
+| 37990714506 | `2701ae67c996` | pull_request | Repository quality | in_progress:- |
 | 37990714505 | `2701ae67c996` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 37990714464 | `2701ae67c996` | pull_request | Formal assurance | queued:- |
 | 37990714452 | `2701ae67c996` | pull_request | Hosted portability and native qualification | in_progress:- |
