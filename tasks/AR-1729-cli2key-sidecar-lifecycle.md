@@ -12,13 +12,21 @@
   "plan": "../plans/AR-1729-cli2key-sidecar-lifecycle.md",
   "priority": "P1",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:72ba0f6504fef0a2697994a71f6f903aa9c00458f70955818be42b936b1c6e73",
+    "evidence_ref": "quality/AR-1729-cli2key-sidecar-hosted-receipt.json",
+    "spec_ref": "specs/AR-1729.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1729.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Supervise cli2key sidecar and ephemeral key",
-  "updated_at": "2026-10-09T12:26:14+00:00",
+  "updated_at": "2026-10-09T12:26:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1729-cli2key-sidecar-lifecycle"
 }
 ---
@@ -413,3 +421,6 @@ egress; benchmark agents remain loopback-only.
 
 - 2026-10-09T12:26:14+00:00: Recorded command exit 0; command argv SHA-256
   ffd2c2087ea8d4d5936a68173743a8fba699a09882c490f525737dd2bf2fa977.
+
+- 2026-10-09T12:26:29+00:00: Accepted exact product merge 64eaad2215e4f08fe8e803022acb6e9146b95d94
+  from PR #525 with exact-head hosted workflows all successful.
