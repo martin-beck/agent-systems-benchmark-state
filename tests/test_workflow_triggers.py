@@ -13,6 +13,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WORKFLOW = ROOT / ".github" / "workflows" / "verify.yml"
 FORMAL_WORKFLOW = ROOT / ".github" / "workflows" / "handoffctl-formal.yml"
+SOURCE_HEADERS_WORKFLOW = ROOT / ".github" / "workflows" / "source-headers.yml"
+AWQ_SHADOW_WORKFLOW = ROOT / ".github" / "workflows" / "awq-shadow.yml"
+PUSH_WORKFLOWS = (WORKFLOW, FORMAL_WORKFLOW, SOURCE_HEADERS_WORKFLOW)
 REQUIRED_COORDINATION_PATHS = frozenset({"CURRENT.md", "STATUS.md", "plans/**", "tasks/**"})
 
 
@@ -42,6 +45,21 @@ def triggers(paths: tuple[str, ...], changed: tuple[str, ...]) -> bool:
 
 
 class WorkflowTriggerTests(unittest.TestCase):
+    def test_main_pushes_queue_while_pull_requests_may_cancel(self) -> None:
+        expected = "  cancel-in-progress: ${{ github.event_name != 'push' }}"
+        for path in PUSH_WORKFLOWS:
+            with self.subTest(workflow=path.name):
+                workflow = path.read_text(encoding="utf-8")
+                self.assertIn("  push:", workflow)
+                self.assertIn("  pull_request:", workflow)
+                self.assertEqual(1, workflow.count(expected))
+                self.assertNotIn("  cancel-in-progress: true", workflow)
+
+        awq_shadow = AWQ_SHADOW_WORKFLOW.read_text(encoding="utf-8")
+        self.assertNotIn("  push:", awq_shadow)
+        self.assertIn("  pull_request:", awq_shadow)
+        self.assertEqual(1, awq_shadow.count("  cancel-in-progress: true"))
+
     def test_formal_admission_paths_are_scoped_to_the_private_run_root(self) -> None:
         workflow = FORMAL_WORKFLOW.read_text(encoding="utf-8")
         root = "/srv/data/projects/.asb-tlc/ci-${{ github.run_id }}"
