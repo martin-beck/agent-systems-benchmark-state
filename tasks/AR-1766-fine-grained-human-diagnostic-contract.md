@@ -30,9 +30,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T17:57:08+00:00",
+  "updated_at": "2026-10-09T17:57:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -221,3 +221,6 @@ the catalog.
   enum variant, field, and constructor. Focused catalog tests, full workspace tests (pass on retry
   after unrelated asb-metrics isolated flake), workspace clippy, and workspace rustdoc all pass.
   Repair commit b8ae2dc is SSH-signed+DCO and pushed to PR #538.
+
+- 2026-10-09T17:57:50+00:00: Recorded command exit 0; command argv SHA-256
+  89a739ec0ffefd80eaaebfba710e87e7ddd80b29f46bfe31cb410f16154ad3b9.
