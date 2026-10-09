@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@b20d22b45b4f` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.22 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #529 | `feature/ar-1732-cli2key-run-sweep@08226e288e90` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED: | fix(cli): bind cli2key provider launch per attempt |
+| #529 | `feature/ar-1732-cli2key-run-sweep@08226e288e90` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | fix(cli): bind cli2key provider launch per attempt |
 
 ## Recent workflows
 
@@ -27,11 +27,11 @@ Generated from local Git and GitHub. Do not edit.
 | 37937701266 | `08226e288e90` | pull_request | Cross-repository development broker qualification | pending:- |
 | 37937701245 | `08226e288e90` | pull_request | Credential-free benchmark path | pending:- |
 | 37937701204 | `08226e288e90` | pull_request | Repository quality | pending:- |
-| 37937701108 | `08226e288e90` | pull_request | Hosted portability and native qualification | pending:- |
-| 37937701061 | `08226e288e90` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 37937701108 | `08226e288e90` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37937701061 | `08226e288e90` | pull_request | Agent Workflow Quality shadow | in_progress:- |
 | 37937701028 | `08226e288e90` | pull_request | Fault assurance | pending:- |
-| 37937701014 | `08226e288e90` | pull_request | Portable protected-main provenance | queued:- |
-| 37937700939 | `08226e288e90` | pull_request | Huawei MIT source headers | queued:- |
+| 37937701014 | `08226e288e90` | pull_request | Portable protected-main provenance | in_progress:- |
+| 37937700939 | `08226e288e90` | pull_request | Huawei MIT source headers | completed:success |
 | 37937700875 | `08226e288e90` | pull_request | Formal assurance | pending:- |
 | 37937700858 | `08226e288e90` | pull_request | Emulated aarch64 portability | pending:- |
 | 37937700857 | `08226e288e90` | pull_request | Rust verification | pending:- |
