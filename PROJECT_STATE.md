@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37902047565 | `4f460a6aa707` | push | Portable protected-main provenance | queued:- |
+| 37902047565 | `4f460a6aa707` | push | Portable protected-main provenance | in_progress:- |
 | 37902047563 | `4f460a6aa707` | push | Cross-repository development broker qualification | in_progress:- |
 | 37902047547 | `4f460a6aa707` | push | Formal assurance | in_progress:- |
 | 37902047543 | `4f460a6aa707` | push | Credential-free benchmark path | in_progress:- |
