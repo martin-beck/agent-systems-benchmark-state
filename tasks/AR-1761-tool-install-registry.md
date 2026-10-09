@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Rerun full workspace tests, then rustdoc and release build; inspect diff and publish PR.",
+  "next_action": "Rerun the provenance/full tests, then rustdoc and release build; commit fixture update and inspect exact diff.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 0,
   "observed_head": "793d2967fd9852a9db1e6097db4cd43656f356fb",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:52:23+00:00",
+  "updated_at": "2026-10-09T15:53:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -151,3 +151,8 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T15:52:23+00:00: Recorded command exit 101; command argv SHA-256
   224f23823c49769ec0e2e458fdd3da95be1cb852070fa5d2c7fd088f4ad98da0.
+
+- 2026-10-09T15:53:03+00:00: Full workspace tests then found provenance fixture drift after the CLI
+  source changed: workflow_transcript failed with the stale cli_source_sha256. Updated only the
+  checked-in provenance digest to the exact current lib.rs hash; no behavior bypass or gate
+  weakening.

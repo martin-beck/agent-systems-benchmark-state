@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Rerun full workspace tests, then rustdoc and release build; inspect diff and publish PR. |
+| Next action | Rerun the provenance/full tests, then rustdoc and release build; commit fixture update and inspect exact diff. |
 
 ### AR-1762 — Discover system and project ASB tools
 

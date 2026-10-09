@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. | codex-asb-ar1757-human-output-20261009 |
-| P0 | [AR-1761](tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | Install supported external ASB tools into a user/project-local root and persist validated records. | Rerun full workspace tests, then rustdoc and release build; inspect diff and publish PR. | codex-asb-ar1761-tool-install-20261009 |
+| P0 | [AR-1761](tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | Install supported external ASB tools into a user/project-local root and persist validated records. | Rerun the provenance/full tests, then rustdoc and release build; commit fixture update and inspect exact diff. | codex-asb-ar1761-tool-install-20261009 |
 | P0 | [AR-1762](tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Add the missing enum-level rustdoc, rerun focused tests, then full gates. | codex-asb-ar1762-tool-discovery-20261009 |
 
 ## Open
