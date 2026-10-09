@@ -1,0 +1,80 @@
+AR: AR-1722
+Qualification: protected-main publication-integrity incident closeout
+
+Preserved incident evidence
+
+- PR #487 reviewed topic: 7dceb3c4c58eee1468877d0f2c90ff4d6c38812
+- PR #487 reviewed tree: 8fd722f9573328facc02f286391a62d04c04c34b
+- PR #487 protected base: 6bd9b83654ce9513a385541d503888b351a27fd3
+- PR #487 published merge: d207cc4eded60f29a0ec72047f3fa11e7a9fa385
+- PR #487 published tree: 78c6c1b5591ee2d397025e0b129297b0c8035b61
+- Result: reproduced mismatch; the reviewed tree and published tree differ.
+
+The first PR #490 recovery also remains immutable evidence. Its final reviewed
+head ac6557038cc326fbdeef957a95334421c187f8ce has tree
+d9ece71dc8acf6a84fee13129fe4acad25b71914, while published merge
+9b27d5d9053ecf588d0db561e49ba3c4cc9ec105 has tree
+61b06ac24008d6fce7d24119ea52ac7e3d061cf1. Exact-main Repository Quality
+and Rust verification rejected that mismatch. Neither history was rewritten or
+relabelled.
+
+Corrected reviewed-tree publication
+
+- Current exact ASB main: 31ca7a481fca8b79bfbff126b92db6c6118beb7c
+- Current exact tree: 40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde
+- Parents: dc19bb1b758a60b4fe316021ab9fe751aaae361d and
+  cb8be7e4ea8866a21ae999af1aee062544622896
+- Reviewed PR #517 head: cb8be7e4ea8866a21ae999af1aee062544622896
+- Reviewed PR #517 tree: 40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde
+- Result: the signed two-parent merge tree is exactly the independently
+  approved topic tree. The merge and topic commits carry accepted ED25519
+  signatures and matching DCO evidence.
+
+Exact-main hosted evidence
+
+Every check run associated with current exact main is terminal-success. The
+ten workflow runs cover portable protected-main provenance, Repository Quality,
+Rust verification, emulated AArch64 portability, hosted platform evidence,
+Formal assurance (TLC, Alloy, Kani and Loom), Fault assurance (retained faults,
+bounded fuzz and mutation sentinels), credential-free benchmark execution,
+the exact TUI inherited-fd/PTY journey, Huawei/MIT source headers, and AWQ
+shadow evidence. The exact workflow run IDs are:
+
+- 37852141052, 37852141065 attempt 2, 37852141069, 37852141078,
+  37852141086, 37852141097, 37852141128, 37852141151,
+  37852141152 and 37852141200.
+
+Protected admission evidence
+
+The bounded canonical auditor reports ownership=readback-verified for active
+ruleset ID 24750310. The live repository settings are merge=true,
+squash=false, rebase=false, auto-merge=false and web-signoff=true. The active
+main-targeted ruleset enforces deletion and non-fast-forward denial, required
+signatures, pull-request admission and required status checks. AR-1747 supplied
+the canonical provenance-checked Coordinator unblock path. AR-1748 and AR-1750
+supplied and independently accepted the portable provenance/settings recovery,
+signed exact-tree merge, guarded live application and repeated clean audits.
+No policy exception or history rewrite was used.
+
+Portable matrix and downstream decision
+
+The accepted AR-1718 receipt is
+quality/AR-1718-portable-fault-matrix-receipt.txt at SHA-256
+f57a13a02645839eb8042186cdc07141e48cac1824df1bf32d7a4837b37f7b26.
+It records the five required setup, record, replay, benchmark and recovery
+cases; validated bubblewrap private-network operation with loopback available
+and external traffic denied; approved backend identity; cleanup_ok=true for
+every case; typed development authentication warning; and no host-network
+fallback. Independent review accepted that receipt and AR-1718 is done.
+AR-1596 is also done. Therefore the matrix and downstream-unblock predicates
+are satisfied without reopening either completed task.
+
+Closeout decision
+
+All AR-1722 predicates are satisfied by immutable incident evidence, the
+completed dependency repairs, the reviewed-tree-equivalent current main,
+green exact-main workflows, live protected-admission audit, and accepted
+portable matrix. No additional repair AR is required. This receipt is
+privacy-safe: it contains no credentials, raw authenticated payloads, private
+paths or host-specific diagnostics. Independent review of this exact receipt
+and its bound identities remains required before AR-1722 release.
