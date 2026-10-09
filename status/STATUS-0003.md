@@ -824,7 +824,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works. |
-| Next action | Commit the focused negotiated-version repair, build exact ASB/TUI candidates, and run the installed public install/status/bare/dynamic-catalog journey before PR publication. |
+| Next action | Release done, reconcile canonical state, and verify live doctor; parent AR-1721 may then requalify against exact main e21d6bc7 and TUI 60ab530d. |
 
 
 ## Dependency graph
@@ -3655,3 +3655,4 @@ flowchart LR
 | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-1170](../tasks/AR-1170.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md), [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md) |
 | [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md) | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
 | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
+| [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-1130](../tasks/AR-1130.md) |

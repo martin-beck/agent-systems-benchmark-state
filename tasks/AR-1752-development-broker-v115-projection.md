@@ -7,7 +7,7 @@
     "AR-1719"
   ],
   "id": "AR-1752",
-  "next_action": "Commit the focused negotiated-version repair, build exact ASB/TUI candidates, and run the installed public install/status/bare/dynamic-catalog journey before PR publication.",
+  "next_action": "Release done, reconcile canonical state, and verify live doctor; parent AR-1721 may then requalify against exact main e21d6bc7 and TUI 60ab530d.",
   "owner": "codex-ar1752-v115-projection-20261009",
   "plan": "../plans/AR-1752-development-broker-v115-projection.md",
   "priority": "P0",
@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Repair development broker v1.15 dynamic-catalog projection",
-  "updated_at": "2026-10-09T04:49:29+00:00",
+  "updated_at": "2026-10-09T04:50:10+00:00",
   "worktree_key": ""
 }
 ---
@@ -171,3 +171,14 @@ journey evidence must contain no credential value or raw provider payload.
 
 - 2026-10-09T04:49:29+00:00: Recorded command exit 0; command argv SHA-256
   2cb95feae7eb9ed668a0b3ba9d2d752799cf5642c2dda7fe4466a8a82f05523c.
+
+- 2026-10-09T04:50:10+00:00: AR-1752 complete pending terminal release: independent review approved
+  exact base f3840f35/head c2ad947f/tree 6897b0de and reviewed journey receipt sha256:50a73f74. PR
+  #522 passed all 15 exact-head checks. Signed+DCO two-parent merge
+  e21d6bc7ed1cae3e102eceada291cb7931f6b812 preserves exact tree
+  6897b0de3b8fa4e0e53f232b7c674d0a2538523c. All 10 exact-main workflows passed: 37884751613,
+  37884751589, 37884751590, 37884751636, 37884751702, 37884751619, 37884751645, 37884751632,
+  37884751631, 37884751640. Closeout receipt
+  sha256:2e77c97c8d925c3d9e7200459fe129f6053b76535ff095ada6e02b7fe7476f0f binds the
+  catalog-discovery versus provider-execution network boundary and contains no credential or raw
+  provider payload.
