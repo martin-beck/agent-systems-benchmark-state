@@ -63,7 +63,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 18, ahead 0 |
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 6, ahead 0 |
-| `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `793d2967fd98` | 1 | behind 0, ahead 3 |
+| `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `793d2967fd98` | 1 | behind 0, ahead 4 |
 | changed files | - | - | - | `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery` | `5322501712aa` | 1 | behind 0, ahead 1 |
 | changed files | - | - | - | `crates/asb-cli/src/tool_discovery.rs` |
