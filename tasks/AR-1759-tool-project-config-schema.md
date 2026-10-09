@@ -9,8 +9,8 @@
   "id": "AR-1759",
   "next_action": "Open the schema/config contract for implementation after AR-1745 is reconciled.",
   "observed_branch": "feature/ar-1759-tool-project-config-schema",
-  "observed_dirty": 3,
-  "observed_head": "27d7c931a6f3e0adbbe7f4ea9606717f369e9779",
+  "observed_dirty": 0,
+  "observed_head": "f45082aa86cfe1aed8f1df0e1519b042f20a748e",
   "owner": "codex-asb-ar1759-project-config-20261009",
   "plan": "../plans/AR-1759-tool-project-config-schema.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T14:37:51+00:00",
+  "updated_at": "2026-10-09T14:37:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
