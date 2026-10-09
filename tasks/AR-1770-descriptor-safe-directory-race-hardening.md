@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T20:11:28+00:00",
+  "updated_at": "2026-10-09T20:11:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -364,3 +364,6 @@ implementation boundary explicitly and keep the product offline after install.
   record/campaign, easy, TUI, dry-run, read-only, rollback, and JSON/human stream evidence with
   existing test mappings. Focused safe_fs, route integration, workflow transcript, clippy, header,
   and check gates pass; PR #540 awaits fresh independent review and exact-head CI.
+
+- 2026-10-09T20:11:34+00:00: Recorded command exit 0; command argv SHA-256
+  ece73a2088f3b722bcdc9b3162b2ef9d0d11f671db2e6586d36c829fe1b392ec.
