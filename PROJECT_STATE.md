@@ -28,9 +28,9 @@ Generated from local Git and GitHub. Do not edit.
 | 37965524493 | `ae22d66b8606` | push | Emulated aarch64 portability | in_progress:- |
 | 37965524382 | `ae22d66b8606` | push | Formal assurance | in_progress:- |
 | 37965524345 | `ae22d66b8606` | push | Huawei MIT source headers | completed:success |
-| 37965524223 | `ae22d66b8606` | push | Credential-free benchmark path | in_progress:- |
-| 37965524145 | `ae22d66b8606` | push | Fault assurance | in_progress:- |
-| 37965524100 | `ae22d66b8606` | push | Cross-repository development broker qualification | in_progress:- |
+| 37965524223 | `ae22d66b8606` | push | Credential-free benchmark path | completed:success |
+| 37965524145 | `ae22d66b8606` | push | Fault assurance | completed:success |
+| 37965524100 | `ae22d66b8606` | push | Cross-repository development broker qualification | completed:success |
 | 37965524096 | `ae22d66b8606` | push | Repository quality | in_progress:- |
 | 37965523973 | `ae22d66b8606` | push | Portable protected-main provenance | completed:success |
 | 37965523952 | `ae22d66b8606` | push | Hosted portability and native qualification | completed:success |
