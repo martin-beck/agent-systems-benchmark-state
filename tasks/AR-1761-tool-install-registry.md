@@ -10,7 +10,7 @@
   "id": "AR-1761",
   "next_action": "Fix the two Clippy findings, rerun format/Clippy, then run full tests/docs/build.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "8b4a2bf60c4f1e8bb30363979a3c50f3a7c934b3",
   "owner": "codex-asb-ar1761-tool-install-20261009",
   "plan": "../plans/AR-1761-tool-install-registry.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:50:19+00:00",
+  "updated_at": "2026-10-09T15:50:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
