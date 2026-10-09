@@ -18,19 +18,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:8323d99c0a426b67f6566c0696cfa12171f95fce4f33aec5024c4bbe56fe3c12",
+    "evidence_ref": "quality/AR-1768-postmerge-receipt.json",
     "spec_ref": "specs/AR-1768.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1768.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 230,
+  "task_revision": 231,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T22:28:26+00:00",
+  "updated_at": "2026-10-09T22:28:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -676,3 +676,7 @@ say what remains usable.
 - 2026-10-09T22:28:26+00:00: All exact-main workflows are terminal-success. Committed privacy-safe
   post-merge receipt binds PR #541, candidate cd46a00, signed merge 5377317, reviewed tree, and
   workflow evidence.
+
+- 2026-10-09T22:28:41+00:00: PR #541 reviewed candidate cd46a00 integrated as signed merge 5377317
+  with reviewed tree 4cbf0f9f; all ten immutable exact-main workflows succeeded, including the
+  successful retry after the isolated PTY test failure.
