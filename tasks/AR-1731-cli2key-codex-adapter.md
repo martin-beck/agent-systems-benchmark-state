@@ -8,7 +8,7 @@
     "AR-1730"
   ],
   "id": "AR-1731",
-  "next_action": "PR #527 at exact head 6386e06: await all required checks, then merge signed exact two-parent commit, verify post-merge, and record hosted acceptance.",
+  "next_action": "AR-1758 is repairing failed post-merge provenance for b3cb9b2; remain in progress and unaccepted until supported repair PR and exact-main checks are green.",
   "observed_branch": "feature/ar-1731-cli2key-codex-adapter",
   "observed_dirty": 0,
   "observed_head": "6386e066b37a99692e3343f6162d648a8cb506f0",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Connect Codex adapter to cli2key backend",
-  "updated_at": "2026-10-09T12:54:54+00:00",
+  "updated_at": "2026-10-09T12:55:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1731-cli2key-adapter"
 }
 ---
@@ -157,3 +157,7 @@ OpenRouter, ambient Codex defaults, or a different endpoint/model.
 
 - 2026-10-09T12:54:54+00:00: Recorded command exit 0; command argv SHA-256
   ffd2c2087ea8d4d5936a68173743a8fba699a09882c490f525737dd2bf2fa977.
+
+- 2026-10-09T12:55:37+00:00: Post-merge portable provenance failed because locally constructed merge
+  b3cb9b2 omitted Signed-off-by. AR-1758 records the failure and supported no-history-rewrite repair
+  path.

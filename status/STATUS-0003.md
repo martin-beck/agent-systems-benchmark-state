@@ -530,7 +530,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter. |
-| Next action | PR #527 at exact head 6386e06: await all required checks, then merge signed exact two-parent commit, verify post-merge, and record hosted acceptance. |
+| Next action | AR-1758 is repairing failed post-merge provenance for b3cb9b2; remain in progress and unaccepted until supported repair PR and exact-main checks are green. |
 
 ### AR-1732 — Integrate cli2key runs and sweeps
 
