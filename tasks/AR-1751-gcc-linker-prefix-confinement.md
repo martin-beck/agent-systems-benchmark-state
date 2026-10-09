@@ -7,7 +7,7 @@
     "AR-1737"
   ],
   "id": "AR-1751",
-  "next_action": "Obtain independent same-user agent review of immutable PR #518 head d0ab2af3fed2f73f4c31c56dfbe715f897483e94/tree 251d838f7a43d8a8ee9f0c0b3f43d03d03b7e803; do not merge before explicit approval, then use the reviewed-tree protected merge flow and exact-main post-merge verification.",
+  "next_action": "Obtain independent same-user agent review of immutable PR #518 head d0ab2af3fed2f73f4c31c56dfbe715f897483e94/tree 529eb72b41b7a9692dffa2cf041d99bb9264cb25; do not merge before explicit approval, then use the reviewed-tree protected merge flow and exact-main post-merge verification.",
   "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
   "observed_dirty": 0,
   "observed_head": "d0ab2af3fed2f73f4c31c56dfbe715f897483e94",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T01:18:46+00:00",
+  "updated_at": "2026-10-09T01:18:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -280,3 +280,8 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
   repository policy/coverage/supply chain, Exact TUI inherited-fd and PTY journey, emulated AArch64,
   formal, fault, platform, provider journey, headers, provenance, and AWQ shadow evidence. Head/base
   remain immutable and GitHub reports MERGEABLE. Stop implementation now for independent review.
+
+- 2026-10-09T01:18:57+00:00: Correction: the previous CI-complete update transcribed an incorrect
+  tree identifier. Direct git show verification binds immutable head
+  d0ab2af3fed2f73f4c31c56dfbe715f897483e94 to actual tree 529eb72b41b7a9692dffa2cf041d99bb9264cb25.
+  No product or PR head changed; all 15 exact-head checks remain terminal SUCCESS.
