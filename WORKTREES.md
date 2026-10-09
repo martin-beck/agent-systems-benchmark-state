@@ -368,8 +368,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `crates/asb-cli/src/tui.rs` |
 | `agent-systems-benchmark-ar-1726-pr499-review3` | `DETACHED` | `acd7a146baba` | 0 | behind 49, ahead 0 |
 | `agent-systems-benchmark-ar-1727-development-broker-foreground-terminal` | `repair/ar-1727-development-broker-foreground-terminal` | `420b57d20a6c` | 0 | behind 56, ahead 0 |
-| `agent-systems-benchmark-ar-1728` | `feature/ar-1728-cli2key-contract` | `69bf9029a497` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `docs/ARCHITECTURE.md`, `config/cli2key-bridge-v1.json`, `docs/CLI2KEY_DEVELOPMENT.md`, `tools/cli2key-spike/` |
+| `agent-systems-benchmark-ar-1728` | `feature/ar-1728-cli2key-contract` | `69bf9029a497` | 5 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/ARCHITECTURE.md`, `config/cli2key-bridge-v1.json`, `crates/asb-agents/tests/cli2key_contract.rs`, `docs/CLI2KEY_DEVELOPMENT.md`, `tools/cli2key-spike/` |
 | `agent-systems-benchmark-ar-1734-development-tui-tool-environment` | `repair/ar-1734-development-tui-tool-environment` | `40f618b9389c` | 0 | behind 47, ahead 0 |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 46, ahead 0 |
 | `agent-systems-benchmark-ar-1735` | `repair/ar-1735-goose-fixture-determinism` | `69bf9029a497` | 4 | behind 0, ahead 0 |
