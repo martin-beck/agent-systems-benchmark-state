@@ -7,7 +7,7 @@
     "AR-1737"
   ],
   "id": "AR-1751",
-  "next_action": "Obtain independent same-user agent review of immutable PR #518 head d0ab2af3fed2f73f4c31c56dfbe715f897483e94/tree 529eb72b41b7a9692dffa2cf041d99bb9264cb25; do not merge before explicit approval, then use the reviewed-tree protected merge flow and exact-main post-merge verification.",
+  "next_action": "Repair independent-review P1 on PR #518 without rewriting d0ab2af: isolate the GCC capability probe in an owned process group, bound descendant termination/output drain after leader exit, prove linker-prefix CLOEXEC restoration on hostile descendant and timeout paths, then publish a new signed+DCO head and rerun exact-head gates.",
   "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
   "observed_dirty": 0,
   "observed_head": "d0ab2af3fed2f73f4c31c56dfbe715f897483e94",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T01:18:57+00:00",
+  "updated_at": "2026-10-09T01:20:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -285,3 +285,9 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
   tree identifier. Direct git show verification binds immutable head
   d0ab2af3fed2f73f4c31c56dfbe715f897483e94 to actual tree 529eb72b41b7a9692dffa2cf041d99bb9264cb25.
   No product or PR head changed; all 15 exact-head checks remain terminal SUCCESS.
+
+- 2026-10-09T01:20:06+00:00: Independent review rejected exact head d0ab2af with one P1:
+  validate_development_gcc_driver invokes the accepted compiler without an owned process group; a
+  hostile unsupported driver can leave a descendant retaining stdout and the linker-prefix
+  descriptor after the leader exits, causing an unbounded reader join and delayed CLOEXEC
+  restoration. Repair is active within AR-1751; no merge authorized.
