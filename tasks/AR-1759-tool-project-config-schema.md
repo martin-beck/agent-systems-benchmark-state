@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T14:37:33+00:00",
+  "updated_at": "2026-10-09T14:37:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
@@ -61,3 +61,6 @@ unknown-field/path validation.
   81d627797efc6b08acda359548826bb5f1563136a4a8aed103c98d28146a9563.
 
 - 2026-10-09T14:37:33+00:00: Heartbeat by codex-asb-ar1759-project-config-20261009.
+
+- 2026-10-09T14:37:39+00:00: Recorded command exit 0; command argv SHA-256
+  283344263d625f4c14a16d461b38d09f6a9da33cd44c52da7e69e01121db979f.
