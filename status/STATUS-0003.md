@@ -676,11 +676,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-ar1742-recovery-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Recover PR #505 protected-main exact-tree publication failure without rewriting history. |
@@ -1612,7 +1612,7 @@ flowchart LR
         AR_1739["AR-1739 - Done"]:::status_done
         AR_1740["AR-1740 - Done"]:::status_done
         AR_1741["AR-1741 - Done"]:::status_done
-        AR_1742["AR-1742 - In progress"]:::status_in_progress
+        AR_1742["AR-1742 - Done"]:::status_done
         AR_1743["AR-1743 - Done"]:::status_done
         AR_1744["AR-1744 - Done"]:::status_done
         AR_1745["AR-1745 - Done"]:::status_done

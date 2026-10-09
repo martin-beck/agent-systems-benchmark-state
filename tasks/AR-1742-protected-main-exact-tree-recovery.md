@@ -2,14 +2,14 @@
 {
   "branch": "repair/ar-1742-pr505-exact-tree",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T05:37:41+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1742",
   "next_action": "Released done after signed reviewed-tree PR #519 merge 5f9850c, ten successful exact-main workflows, and accepted receipt.",
   "observed_branch": "DETACHED",
   "observed_dirty": 0,
   "observed_head": "69bf9029a4976f14739cf4c25949428ff2fe0bb7",
-  "owner": "codex-asb-ar1742-recovery-20261009",
+  "owner": "",
   "plan": "../plans/AR-1742-protected-main-exact-tree-recovery.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1742.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Recover PR #505 protected-main exact-tree publication failure without rewriting history.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "PR #505 exact-tree recovery",
-  "updated_at": "2026-10-09T03:18:14+00:00",
+  "updated_at": "2026-10-09T03:18:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1742-exact-tree-recovery"
 }
 ---
@@ -77,3 +77,9 @@ from AR-1740's default-lifecycle PR #507.
   additive provenance correction; signed+DCO merge 5f9850c has exact reviewed tree and all ten
   exact-main runs succeeded. Receipt digest
   sha256:a6aee43a7a998ebc3dfe96a028a349787cb03d6972bf42c895d492844c6a462e accepted.
+
+- 2026-10-09T03:18:20+00:00: AR-1742 complete: preserved PR #505 mismatch; PR #519 exact head
+  e00f9cf/tree 33e04eb independently approved; signed+DCO reviewed-tree merge 5f9850c published; all
+  ten exact-main workflows succeeded; accepted receipt
+  quality/AR-1742-protected-main-exact-tree-recovery-receipt.txt at
+  sha256:a6aee43a7a998ebc3dfe96a028a349787cb03d6972bf42c895d492844c6a462e.
