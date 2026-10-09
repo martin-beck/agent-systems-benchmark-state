@@ -24,13 +24,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37884751702 | `e21d6bc7ed1c` | push | Hosted portability and native qualification | in_progress:- |
-| 37884751645 | `e21d6bc7ed1c` | push | Credential-free benchmark path | in_progress:- |
+| 37884751702 | `e21d6bc7ed1c` | push | Hosted portability and native qualification | completed:success |
+| 37884751645 | `e21d6bc7ed1c` | push | Credential-free benchmark path | completed:success |
 | 37884751640 | `e21d6bc7ed1c` | push | Emulated aarch64 portability | in_progress:- |
 | 37884751636 | `e21d6bc7ed1c` | push | Portable protected-main provenance | completed:success |
 | 37884751632 | `e21d6bc7ed1c` | push | Repository quality | in_progress:- |
 | 37884751631 | `e21d6bc7ed1c` | push | Rust verification | in_progress:- |
-| 37884751619 | `e21d6bc7ed1c` | push | Fault assurance | in_progress:- |
+| 37884751619 | `e21d6bc7ed1c` | push | Fault assurance | completed:success |
 | 37884751613 | `e21d6bc7ed1c` | push | Cross-repository development broker qualification | in_progress:- |
 | 37884751590 | `e21d6bc7ed1c` | push | Huawei MIT source headers | completed:success |
 | 37884751589 | `e21d6bc7ed1c` | push | Formal assurance | in_progress:- |
