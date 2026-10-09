@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:54:58+00:00",
+  "updated_at": "2026-10-09T18:55:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -310,3 +310,6 @@ when useful; repeated commands must not claim an existing directory was new.
 
 - 2026-10-09T18:54:53+00:00: Recorded command exit 0; command argv SHA-256
   d2c1f2da93c56080e89172c6bdbea13dfb310792273bd34989003d5a60853c10.
+
+- 2026-10-09T18:55:07+00:00: Recorded command exit 0; command argv SHA-256
+  a8a2a70ac2b193d0cfed88e260f02aeb6fa3aa23eb783b42f2da4b56f73fc803.
