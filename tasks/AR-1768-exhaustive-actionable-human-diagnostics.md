@@ -10,8 +10,8 @@
   "id": "AR-1768",
   "next_action": "Exact signed head a601a53 is pushed to PR #541. Local locked workspace tests, focused diagnostics/human/contract tests, clippy -D warnings, rustdoc -D warnings, and release build all pass. Independent review of the bulk catalog repair is required; exact-head GitHub checks are running, with prior Docker Hub rate-limit failures to distinguish from product failures. Do not merge until review and every required check are green.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
-  "observed_dirty": 1,
-  "observed_head": "a601a53f2945c16c86369aa5203c071d443e0a66",
+  "observed_dirty": 0,
+  "observed_head": "a270a9d3d709daddb85bd65885e6bd14c988855b",
   "owner": "codex-ar1768-diagnostics",
   "plan": "../plans/AR-1768-exhaustive-actionable-human-diagnostics.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 194,
+  "task_revision": 195,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:56:44+00:00",
+  "updated_at": "2026-10-09T21:56:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
