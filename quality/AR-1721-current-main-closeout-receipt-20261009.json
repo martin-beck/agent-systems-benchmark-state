@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1721",
+  "recorded_at": "2026-10-09T02:45:00Z",
+  "result": "pass",
+  "scope": "current-main paired closeout",
+  "implementation": {
+    "asb_pr": 489,
+    "asb_pr_head": "dd10b075c065a5a5aef6062c7d9a6939a5a029a0",
+    "asb_merge": "4ceacaa7ea1f25d3de0ad71f196a8f21f61694aa",
+    "asb_tui_pr": 296,
+    "asb_tui_pr_head": "bb8f503be6cf5cf2543eac782ba31875768e5636",
+    "asb_tui_merge": "c99ff65cda05b325445c7762040b74a54a45652c"
+  },
+  "current_heads": {
+    "asb": {
+      "commit": "69bf9029a4976f14739cf4c25949428ff2fe0bb7",
+      "signature": "valid",
+      "dco": "present",
+      "post_merge_runs": [
+        37873753767,
+        37873753776,
+        37873753777,
+        37873753778,
+        37873753787,
+        37873753788,
+        37873753791,
+        37873753798,
+        37873753802,
+        37873753816
+      ]
+    },
+    "asb_tui": {
+      "commit": "60ab530dd1a09d6617514f9974217c9f08d48876",
+      "signature": "valid",
+      "dco": "present",
+      "post_merge_runs": [37866323231, 37866323304]
+    }
+  },
+  "focused_tests": [
+    {
+      "repository": "agent-systems-benchmark",
+      "command": "cargo test --locked -p asb-control",
+      "result": "pass",
+      "counts": "94 unit + 32 control + 7 endpoint + 5 schema + 2 doc tests"
+    },
+    {
+      "repository": "agent-systems-benchmark",
+      "command": "cargo test --locked -p asb-cli tui::tests",
+      "result": "pass",
+      "counts": "83 passed"
+    },
+    {
+      "repository": "asb-tui",
+      "command": "cargo test --locked --test dynamic_provider_catalog",
+      "result": "pass",
+      "counts": "2 passed"
+    },
+    {
+      "repository": "asb-tui",
+      "command": "cargo test --locked development_handoff",
+      "result": "pass",
+      "counts": "5 development-handoff tests + 1 formal-state test"
+    }
+  ],
+  "notes": [
+    "The original ASB and paired TUI implementation merges are preserved as provenance; current-main heads include later additive repairs.",
+    "Earlier post-merge failures on the original merge commits are not hidden; later exact-current-main trusted workflows are terminal green.",
+    "Development authentication, signature, and key-management policy remains warning-only; explicit live mode and identity mismatch behavior remain fail-closed.",
+    "No credential value or raw provider payload is present in this receipt."
+  ]
+}
