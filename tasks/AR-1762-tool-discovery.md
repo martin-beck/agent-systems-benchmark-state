@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:45:29+00:00",
+  "updated_at": "2026-10-09T15:45:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -91,3 +91,6 @@ development authentication/signatures/keys are absent.
 - 2026-10-09T15:45:29+00:00: Retry failure recorded: Rust E0382 because configured.insert consumed
   the deterministic key before selected.insert. Clone the key at insertion; rerun through
   handoffctl.
+
+- 2026-10-09T15:45:43+00:00: Recorded command exit 0; command argv SHA-256
+  27cc9c3bd0c4b3c18fe49e5dc258038875e791793f69b05c221ffabfac2d0776.
