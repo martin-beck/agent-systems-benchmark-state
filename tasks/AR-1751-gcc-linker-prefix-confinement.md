@@ -8,9 +8,9 @@
   ],
   "id": "AR-1751",
   "next_action": "Independent rereview of PR #518 at immutable head 2cda48c27ae99381a59dc0676126b34ec77d15ef and tree 5b75e55c7d4ee1e58df42b1e9989a96ab8994995, focusing on bounded continuous-output drain, process-group cleanup/reap, and CLOEXEC restoration. If approved, a different owner may merge and close AR-1751; this owner must not self-review or merge.",
-  "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
+  "observed_branch": "integration/ar-1751-gcc-linker-prefix",
   "observed_dirty": 0,
-  "observed_head": "2cda48c27ae99381a59dc0676126b34ec77d15ef",
+  "observed_head": "31ca7a481fca8b79bfbff126b92db6c6118beb7c",
   "owner": "codex-asb-ar1751-linker-confinement-20261009",
   "plan": "../plans/AR-1751-gcc-linker-prefix-confinement.md",
   "priority": "P0",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T02:15:28+00:00",
+  "updated_at": "2026-10-09T02:15:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---

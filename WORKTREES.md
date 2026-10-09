@@ -381,7 +381,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1748-head-projection` | `repair/ar-1748-head-projection` | `e1e8f8b69c19` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1748-portable-main-provenance` | `repair/ar-1748-portable-main-provenance` | `7c3e9e3eca96` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar-1750-ruleset-response-normalization` | `repair/ar-1750-ruleset-response-normalization` | `cb8be7e4ea88` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement` | `repair/ar-1751-gcc-linker-prefix-confinement` | `2cda48c27ae9` | 0 | behind 0, ahead 3 |
+| `agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement` | `integration/ar-1751-gcc-linker-prefix` | `31ca7a481fca` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 336, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 336, ahead 830 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 336, ahead 89 |
