@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:40:34+00:00",
+  "updated_at": "2026-10-09T15:40:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -47,3 +47,6 @@ development authentication/signatures/keys are absent.
   deterministic tool discovery
 
 - 2026-10-09T15:40:34+00:00: Claimed by codex-asb-ar1762-tool-discovery-20261009.
+
+- 2026-10-09T15:40:42+00:00: Recorded command exit 128; command argv SHA-256
+  2b8452adb1cbcc0952c2f41b8b70232a83047aa768bbd7488006338526dde2ed.
