@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1761-tool-install-registry",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "c34a3d6b52b009d62a513bae6713e748b9dbd1fb",
   "claim_expires": "2026-10-09T17:41:04+00:00",
   "depends_on": [
     "AR-1759",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:49:05+00:00",
+  "updated_at": "2026-10-09T15:49:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -116,3 +116,5 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T15:48:58+00:00: Recorded command exit 0; command argv SHA-256
   56d8695c759a8fa655669ce488499148d7d5f3aa5cd864b645edfddaa37bb475.
+
+- 2026-10-09T15:49:19+00:00: Checkpointed source commit c34a3d6b52b009d62a513bae6713e748b9dbd1fb.
