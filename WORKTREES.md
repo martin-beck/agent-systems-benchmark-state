@@ -393,7 +393,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1750-ruleset-response-normalization` | `repair/ar-1750-ruleset-response-normalization` | `cb8be7e4ea88` | 0 | behind 21, ahead 0 |
 | `agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement` | `integration/ar-1751-gcc-linker-prefix` | `31ca7a481fca` | 0 | behind 20, ahead 0 |
 | `agent-systems-benchmark-ar-1752` | `repair/ar-1752-development-broker-v115-projection` | `c2ad947f27ea` | 0 | behind 9, ahead 0 |
-| `agent-systems-benchmark-ar-1755-idempotent-make-install` | `fix/ar-1755-idempotent-make-install` | `64eaad2215e4` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1755-idempotent-make-install` | `fix/ar-1755-idempotent-make-install` | `64eaad2215e4` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `Makefile`, `README.md`, `tests/makefile.sh` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 356, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 356, ahead 830 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 356, ahead 89 |
