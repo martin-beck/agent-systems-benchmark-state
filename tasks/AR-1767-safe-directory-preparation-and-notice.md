@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:46:12+00:00",
+  "updated_at": "2026-10-09T18:46:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -216,3 +216,6 @@ when useful; repeated commands must not claim an existing directory was new.
   --check); provenance hash and human stderr fixture were updated intentionally. Review-required
   descriptor-relative race and wider dry-run/permission/route matrix remain explicit follow-ups, not
   claimed complete.
+
+- 2026-10-09T18:46:17+00:00: Recorded command exit 0; command argv SHA-256
+  7c730eec3ea71bd24ffc5a9255bf7f542481bf601dba6c72bed6e00f6c2fab3c.
