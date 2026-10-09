@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:58:22+00:00",
+  "updated_at": "2026-10-09T15:58:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -242,3 +242,6 @@ development authentication/signatures/keys are absent.
   unrelated parallel collisions: two control state-root already-owned panics and one TUI
   hostile-path cleanup assertion. None involve tool discovery; rerun each exact test with one test
   thread before gate classification.
+
+- 2026-10-09T15:58:31+00:00: Recorded command exit 0; command argv SHA-256
+  c3a92d18bd522f4f9be9a345c3816673fb9bbaf4eaeb5f73e5697ef45362a2b3.
