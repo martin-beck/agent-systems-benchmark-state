@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1762-tool-discovery",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T17:35:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1759",
     "AR-1760"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1762-tool-discovery-v2",
   "observed_dirty": 0,
   "observed_head": "9cd9e80cfc2a3bee31a402016371ab70b6cfb1cc",
-  "owner": "codex-asb-ar1762-tool-discovery-20261009",
+  "owner": "",
   "plan": "../plans/AR-1762-tool-discovery.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1762.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 287,
+  "task_revision": 288,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T17:06:07+00:00",
+  "updated_at": "2026-10-09T17:06:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -853,3 +853,6 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T17:06:07+00:00: PR #536 merged as signed DCO two-parent commit 3cab69a; exact-main tree
   and signature verified; all 10 required post-merge CI runs green.
+
+- 2026-10-09T17:06:19+00:00: AR-1762 accepted and released after signed exact merge 3cab69a, all 10
+  exact-main checks green, exact-main signature/tree verification, and post-merge receipt.
