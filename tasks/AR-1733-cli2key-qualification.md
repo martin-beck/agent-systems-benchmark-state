@@ -7,7 +7,7 @@
     "AR-1732"
   ],
   "id": "AR-1733",
-  "next_action": "Promote after AR-1732; run independent fake and opt-in live qualification and publish user-facing setup/status/reset guidance.",
+  "next_action": "Audit public cli2key setup/status/run/sweep/result/reset surfaces and existing fake-sidecar coverage in fresh worktree; add qualification journey, hostile fault/privacy tests, and user documentation.",
   "owner": "codex-asb-ar1733-cli2key-20261009",
   "plan": "../plans/AR-1733-cli2key-qualification.md",
   "priority": "P1",
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Qualify and document cli2key development mode",
-  "updated_at": "2026-10-09T13:56:25+00:00",
+  "updated_at": "2026-10-09T13:56:50+00:00",
   "worktree_key": ""
 }
 ---
@@ -42,3 +42,7 @@ or official OpenAI Platform API-key claim.
 
 - 2026-10-09T13:56:25+00:00: Recorded command exit 0; command argv SHA-256
   e073b6eb0501ee117c85b38fcec7db7cddc75e8f66009a0de796940e5415d617.
+
+- 2026-10-09T13:56:50+00:00: Fresh isolated worktree created at
+  /srv/data/projects/agent-systems-benchmark-ar-1733-cli2key-qualification on
+  feature/ar-1733-cli2key-qualification.

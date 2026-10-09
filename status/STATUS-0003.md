@@ -558,7 +558,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits. |
-| Next action | Promote after AR-1732; run independent fake and opt-in live qualification and publish user-facing setup/status/reset guidance. |
+| Next action | Audit public cli2key setup/status/run/sweep/result/reset surfaces and existing fake-sidecar coverage in fresh worktree; add qualification journey, hostile fault/privacy tests, and user documentation. |
 
 ### AR-1734 — Propagate validated development tools to installed TUI
 
@@ -3745,4 +3745,3 @@ flowchart LR
 | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) |
 | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) |
 | [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) |
-| [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) |

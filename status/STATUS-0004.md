@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) |
 | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) |
 | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
 | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
@@ -633,7 +634,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | codex-asb-ar1757-human-output-20261009 | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
-| P1 | [AR-1733](../tasks/AR-1733-cli2key-qualification.md): Qualify and document cli2key development mode | codex-asb-ar1733-cli2key-20261009 | Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits. | Promote after AR-1732; run independent fake and opt-in live qualification and publish user-facing setup/status/reset guidance. |
+| P1 | [AR-1733](../tasks/AR-1733-cli2key-qualification.md): Qualify and document cli2key development mode | codex-asb-ar1733-cli2key-20261009 | Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits. | Audit public cli2key setup/status/run/sweep/result/reset surfaces and existing fake-sidecar coverage in fresh worktree; add qualification journey, hostile fault/privacy tests, and user documentation. |
 
 ### Open (1)
 

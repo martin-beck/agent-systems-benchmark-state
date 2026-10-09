@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. | codex-asb-ar1757-human-output-20261009 |
-| P1 | [AR-1733](tasks/AR-1733-cli2key-qualification.md): Qualify and document cli2key development mode | Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits. | Promote after AR-1732; run independent fake and opt-in live qualification and publish user-facing setup/status/reset guidance. | codex-asb-ar1733-cli2key-20261009 |
+| P1 | [AR-1733](tasks/AR-1733-cli2key-qualification.md): Qualify and document cli2key development mode | Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits. | Audit public cli2key setup/status/run/sweep/result/reset surfaces and existing fake-sidecar coverage in fresh worktree; add qualification journey, hostile fault/privacy tests, and user documentation. | codex-asb-ar1733-cli2key-20261009 |
 
 ## Open
 
