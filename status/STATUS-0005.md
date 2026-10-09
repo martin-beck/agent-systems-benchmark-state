@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1734](../tasks/AR-1734-development-tui-tool-environment.md) | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md), [AR-1727](../tasks/AR-1727-development-broker-foreground-terminal.md) | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md), [AR-1738](../tasks/AR-1738-development-rustup-permission-compatibility.md) |
 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md) | None | None |
 | [AR-1736](../tasks/AR-1736-backend-model-catalog-execution.md) | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | None |
 | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md) | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md), [AR-1734](../tasks/AR-1734-development-tui-tool-environment.md) | [AR-1751](../tasks/AR-1751-gcc-linker-prefix-confinement.md) |
@@ -43,7 +42,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | codex-ar1767-directory-preparation | Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures. | Implement and test central safe command-owned directory preparation and stderr notices in the isolated feature/ar-1767-safe-directory-preparation worktree; preserve input-path fail-closed behavior. |
+| P0 | [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | codex-ar1767-directory-preparation | Implementing safe directory preparation and notices for command-owned ASB outputs. | Run cargo check once after current wiring, then focused positive/negative CLI tests; record exact results before commit. |
 
 ### Open (1)
 
@@ -524,3 +523,5 @@
 | P0 | [AR-1607](../tasks/AR-1607.md): OpenRouter provider and model setup | Unclaimed | Expose OpenRouter, API-key reference, supported models, and validation to the development wizard. | Promote after AR-1601 and implement the additive provider/catalog/config contract. |
 | P0 | [AR-1608](../tasks/AR-1608.md): Configuration persistence and shared defaults | Unclaimed | Persist editable provider/agent/model/auth selections and shared defaults safely for subsequent runs. | Promote after AR-1607 release and implement atomic redacted configuration updates. |
 | P0 | [AR-1609](../tasks/AR-1609.md): Coding-agent adapter catalog and compatibility | Unclaimed | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. | Promote after AR-1607 release; implement additive adapter records and compatibility diagnostics. |
+| P0 | [AR-1611](../tasks/AR-1611.md): Integrated dev-channel TUI install and launch | Unclaimed | Make asb tui install fetch the current dev-channel TUI, build it in a temporary staging area, publish atomically, and launch it through the trusted ASB router. | Promote after the current install/router implementation is audited; add an exact-main disposable install, upgrade, rollback, and launch qualification. |
+| P0 | [AR-1612](../tasks/AR-1612.md): Selected-workload recording campaign controls | Unclaimed | Expose a simple ASB control operation to record responses for selected or all implemented workloads and make the sealed result available for the next offline run. | Promote after configuration persistence is released; implement typed selected/all workload planning, bounded execution, sealing, and offline activation. |

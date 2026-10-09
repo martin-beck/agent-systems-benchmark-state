@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "Implement and test central safe command-owned directory preparation and stderr notices in the isolated feature/ar-1767-safe-directory-preparation worktree; preserve input-path fail-closed behavior.",
+  "next_action": "Run cargo check once after current wiring, then focused positive/negative CLI tests; record exact results before commit.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -26,10 +26,10 @@
   "spec_ref": "specs/AR-1767.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures.",
-  "task_revision": 21,
+  "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
+  "task_revision": 22,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:33:05+00:00",
+  "updated_at": "2026-10-09T18:33:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -113,3 +113,10 @@ when useful; repeated commands must not claim an existing directory was new.
   5aeee75da362015528ba446d4ea84b5ce1f343e91b43718b1ab6b9f8514cc5a2.
 
 - 2026-10-09T18:33:05+00:00: Heartbeat by codex-ar1767-directory-preparation.
+
+- 2026-10-09T18:33:17+00:00: Checkpoint 2026-10-09T18:33Z: exact worktree/branch is prepared and
+  current diff is limited to directory-preparation wiring plus human error path context. Prior cargo
+  check passed before the latest wrapper cleanup; rerunning once now, then advancing immediately to
+  focused tests. Wrapper post-reconcile may report COMMAND_RECORDED_POST_RECONCILE_FAILED because
+  generated tools/__pycache__/handoffctl.cpython-312.pyc exceeds the 200 KiB repository evidence
+  limit; preserve that failure as durable infrastructure evidence.

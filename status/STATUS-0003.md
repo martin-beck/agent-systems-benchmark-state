@@ -1033,8 +1033,8 @@
 | Owner | codex-ar1767-directory-preparation |
 | Parent | None |
 | Children | None |
-| Summary | Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures. |
-| Next action | Implement and test central safe command-owned directory preparation and stderr notices in the isolated feature/ar-1767-safe-directory-preparation worktree; preserve input-path fail-closed behavior. |
+| Summary | Implementing safe directory preparation and notices for command-owned ASB outputs. |
+| Next action | Run cargo check once after current wiring, then focused positive/negative CLI tests; record exact results before commit. |
 
 ### AR-1768 — Exhaustive actionable human diagnostics
 
@@ -3903,3 +3903,4 @@ flowchart LR
 | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) |
 | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) |
 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) |
+| [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | None |
