@@ -7,7 +7,7 @@
     "AR-1745"
   ],
   "id": "AR-1755",
-  "next_action": "Run complete locked workspace and policy gates on the narrow install-boundary repair, then commit signed+DCO and publish the exact candidate for independent review and hosted CI.",
+  "next_action": "Obtain independent defect-focused approval of exact head 909dae145e46c4e67de4d744f389a6011bc28330/tree 3c1be3e898aca2549f4bbcdb7bc48391d5ffa253, wait for every hosted exact-head check on PR #526, then use the documented signed exact-tree integration path and verify exact-main CI.",
   "observed_branch": "fix/ar-1755-idempotent-make-install",
   "observed_dirty": 0,
   "observed_head": "909dae145e46c4e67de4d744f389a6011bc28330",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T09:52:11+00:00",
+  "updated_at": "2026-10-09T09:52:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -118,3 +118,14 @@ system-wide privilege handling.
 
 - 2026-10-09T09:52:11+00:00: Recorded command exit 0; command argv SHA-256
   eaa1e186b29db36d5c3503e85273b238410490d27e35a8d1f9c68ac6a959310b.
+
+- 2026-10-09T09:52:53+00:00: Independent review rejected superseded head
+  e8d123ae790420c2fcac06c33fe79a6ef4fec98c because unconditional Cargo overwrite could replace an
+  unmarked unrelated regular bin/asb. New signed+DCO head 909dae145e46c4e67de4d744f389a6011bc28330,
+  tree 3c1be3e898aca2549f4bbcdb7bc48391d5ffa253, gates replacement on a safe regular Make ownership
+  marker and regular non-symlink destination. Deterministic negatives prove unmarked binaries,
+  non-regular destinations, symlink markers, and non-regular markers remain unchanged and Cargo is
+  not invoked. Real Cargo proves first managed install plus repeat plain install succeeds and an
+  unmarked binary remains byte-identical. Focused harness, fmt, Clippy, complete locked workspace
+  tests, rustdoc, release build/CLI behavior, source-header policy/tests, ShellCheck, and diff
+  checks pass. PR #526 now targets the repaired head; hosted checks are running.
