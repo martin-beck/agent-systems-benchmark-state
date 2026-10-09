@@ -51,6 +51,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1748-head-projection` | `repair/ar-1748-head-projection` | `e1e8f8b69c19` | 0 | behind 23, ahead 0 |
 | `agent-systems-benchmark-ar-1752` | `repair/ar-1752-development-broker-v115-projection` | `c2ad947f27ea` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-ar-1755-idempotent-make-install` | `fix/ar-1755-idempotent-make-install` | `6ac109533612` | 0 | behind 0, ahead 3 |
+| `agent-systems-benchmark-ar-1755-integration` | `DETACHED` | `64eaad2215e4` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 74, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 62, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 8, ahead 0 |
