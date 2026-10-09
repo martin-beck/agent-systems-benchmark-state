@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Supervise cli2key sidecar and ephemeral key",
-  "updated_at": "2026-10-09T07:47:21+00:00",
+  "updated_at": "2026-10-09T07:47:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1729-cli2key-sidecar-lifecycle"
 }
 ---
@@ -110,3 +110,6 @@ egress; benchmark agents remain loopback-only.
 
 - 2026-10-09T07:47:21+00:00: Recorded command exit 8; command argv SHA-256
   a4ed7ee757c5bba93d299db3f893952a5ca2930fa63b269bbc6261b936be5486.
+
+- 2026-10-09T07:47:47+00:00: Recorded command exit 0; command argv SHA-256
+  b097aa877aa7cbe8aea455ab4663da87bbec632bdba5f7c834cfa6a490159179.
