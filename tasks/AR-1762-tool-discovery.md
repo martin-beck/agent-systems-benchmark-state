@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Repair probe lifecycle/read path so descendant-held pipes cannot block and the entire probe is bounded (for example process-group/FD-safe supervision), add a regression fixture, rerun full gates and hosted checks; independent review remains pending.",
+  "next_action": "Monitor fresh PR #536 CI to terminal green, complete independent review evidence, then merge via established integration path; do not merge PR #535.",
   "observed_branch": "feature/ar-1762-tool-discovery-v2",
   "observed_dirty": 0,
   "observed_head": "9cd9e80cfc2a3bee31a402016371ab70b6cfb1cc",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 215,
+  "task_revision": 216,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:36:33+00:00",
+  "updated_at": "2026-10-09T16:36:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -631,3 +631,11 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:36:33+00:00: Recorded command exit 0; command argv SHA-256
   6f942a4d6533da5134b286adfacd9dccbda5b87dbfa33a95169f6fcbaccca6a3.
+
+- 2026-10-09T16:36:49+00:00: Independent review found a real boundedness defect: a probe child could
+  exit while a background descendant held the stdout pipe, causing read_to_end to hang (reproduced
+  with a cargo fixture background sleep). Repaired in signed+DCO commit 9cd9e80 by placing probes in
+  dedicated process groups and killing the complete group before reading output; added
+  version_probe_reaps_background_processes_without_pipe_hang regression. Full package (291 tests),
+  full serialized workspace tests, fmt, Clippy -D warnings, rustdoc, release build, and
+  source-header policy all passed. Pushed exact PR #536 head 9cd9e80.
