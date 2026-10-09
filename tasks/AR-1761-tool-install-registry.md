@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Repair deterministic tool-record comparison and rerun focused tests before broader gates.",
+  "next_action": "Add user-facing project/tool documentation and then run complete applicable quality gates.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 2,
   "observed_head": "ea5e52bfe843969c493f22146f66ccfa2415159a",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:47:17+00:00",
+  "updated_at": "2026-10-09T15:47:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -99,3 +99,8 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T15:47:17+00:00: Recorded command exit 0; command argv SHA-256
   2607424c3654ceee26fa86e853d746acc9c602695281098ece205d223d115425.
+
+- 2026-10-09T15:47:37+00:00: Repaired exit-101 focused test failure: ProjectConfigV1 source
+  validation rejected the documented fixture:// source vocabulary. Extended the closed source
+  validator to allow fixture:// only; unsupported network schemes and symlink/local-source checks
+  remain fail-closed. Focused tool install/list/status/remove tests now pass (5/5).

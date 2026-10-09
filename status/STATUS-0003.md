@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Repair deterministic tool-record comparison and rerun focused tests before broader gates. |
+| Next action | Add user-facing project/tool documentation and then run complete applicable quality gates. |
 
 ### AR-1762 — Discover system and project ASB tools
 
