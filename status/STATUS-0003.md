@@ -812,6 +812,20 @@
 | Summary | Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries. |
 | Next action | Independent rereview of PR #518 at immutable head 2cda48c27ae99381a59dc0676126b34ec77d15ef and tree 5b75e55c7d4ee1e58df42b1e9989a96ab8994995, focusing on bounded continuous-output drain, process-group cleanup/reap, and CLOEXEC restoration. If approved, a different owner may merge and close AR-1751; this owner must not self-review or merge. |
 
+### AR-1752 — Repair development broker v1.15 dynamic-catalog projection
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works. |
+| Next action | Claim in an isolated ASB worktree; reproduce the exact installed asb tui dynamic-catalog failure, repair DevelopmentBackend negotiated-version forwarding, and qualify the public install-to-route journey. |
+
 
 ## Dependency graph
 
@@ -1622,6 +1636,7 @@ flowchart LR
         AR_1749["AR-1749 - Done"]:::status_done
         AR_1750["AR-1750 - Done"]:::status_done
         AR_1751["AR-1751 - Done"]:::status_done
+        AR_1752["AR-1752 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3467,6 +3482,7 @@ flowchart LR
     AR_1712 --> AR_1724
     AR_1715 --> AR_1723
     AR_1719 --> AR_1721
+    AR_1719 --> AR_1752
     AR_1723 --> AR_1724
     AR_1723 --> AR_1725
     AR_1724 --> AR_1725
@@ -3639,6 +3655,3 @@ flowchart LR
 | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-1170](../tasks/AR-1170.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md), [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md) |
 | [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md) | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
 | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
-| [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-1130](../tasks/AR-1130.md) |
-| [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) |
-| [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |

@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-1130](../tasks/AR-1130.md) |
+| [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) |
+| [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |
 | [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) |
 | [AR-0880](../tasks/AR-0880-openjiuwen-runtime-closure.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md) | None |
 | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md), [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md), [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) |
@@ -573,7 +576,7 @@
 | [AR-1716](../tasks/AR-1716.md) | [AR-1712](../tasks/AR-1712.md) | None |
 | [AR-1717](../tasks/AR-1717.md) | [AR-1712](../tasks/AR-1712.md) | None |
 | [AR-1718](../tasks/AR-1718.md) | [AR-1597](../tasks/AR-1597.md) | None |
-| [AR-1719](../tasks/AR-1719.md) | [AR-1656](../tasks/AR-1656.md) | [AR-1721](../tasks/AR-1721.md) |
+| [AR-1719](../tasks/AR-1719.md) | [AR-1656](../tasks/AR-1656.md) | [AR-1721](../tasks/AR-1721.md), [AR-1752](../tasks/AR-1752-development-broker-v115-projection.md) |
 | [AR-1720](../tasks/AR-1720.md) | None | None |
 | [AR-1721](../tasks/AR-1721.md) | [AR-1719](../tasks/AR-1719.md) | None |
 | [AR-1722](../tasks/AR-1722.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md), [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | None |
@@ -606,6 +609,7 @@
 | [AR-1749](../tasks/AR-1749-coordinator-unblock-bootstrap.md) | None | None |
 | [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md), [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | [AR-1748](../tasks/AR-1748-protected-main-portable-provenance.md) |
 | [AR-1751](../tasks/AR-1751-gcc-linker-prefix-confinement.md) | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md) | None |
+| [AR-1752](../tasks/AR-1752-development-broker-v115-projection.md) | [AR-1719](../tasks/AR-1719.md) | None |
 
 ## Complete AR inventory
 
@@ -617,11 +621,12 @@
 | P1 | [AR-1728](../tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | codex-ar1728-cli2key-contract-20261009 | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
 | P1 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md): Harden Goose diagnostic fixture determinism | codex-ar1735-goose-fixture-20261009 | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. | Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
+| P0 | [AR-1752](../tasks/AR-1752-development-broker-v115-projection.md): Repair development broker v1.15 dynamic-catalog projection | Unclaimed | Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works. | Claim in an isolated ASB worktree; reproduce the exact installed asb tui dynamic-catalog failure, repair DevelopmentBackend negotiated-version forwarding, and qualify the public install-to-route journey. |
 
 ### Blocked (87)
 
@@ -642,7 +647,3 @@
 | P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | Unclaimed | Provide a real runtime-owned strict-replay CLI entrypoint. | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. |
 | P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | Unclaimed | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. |
 | P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | Unclaimed | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Add actual replay CLI argument wiring and bounded lifecycle/egress/no-fallback tests around authenticated execution hook; then run full gates. |
-| P0 | [AR-1268](../tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | Unclaimed | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Await approved runtime-owned launch bundle/factory exposing SandboxLaunchInput, ResourceLease, pinned commands, and supervised lifecycle to the transport adapter; then add real child lifecycle/egress tests. |
-| P0 | [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md): Runtime-owned replay launch-bundle factory | Unclaimed | Create runtime-owned launch bundles for supervised strict replay. | Await approved runtime-issued cassette-service handle/shared transport extension; then connect it to spawn_runtime_replay and run real request/response, egress, cancellation/restart, timeout/crash cleanup, no-fallback fixtures. |
-| P0 | [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md): Runtime-issued cassette-service handle | Unclaimed | Provide a runtime-issued cassette-service handle for supervised strict replay. | Expose a runtime-owned cassette operation/response handle and connect it to actual replay dispatch; add supervised lifecycle/egress/no-fallback fixtures before full gates. |
-| P0 | [AR-1271](../tasks/AR-1271-cassette-operation-contract.md): Dependency-neutral cassette operation contract | Unclaimed | Define a dependency-neutral cassette request/response operation contract. | Requires a runtime-authenticated cassette-content/backend capability (successor AR-1272/AR-1274 seam) before actual StrictReplayService invocation; then add supervised response, no-fallback/egress, cancellation/restart, timeout/crash cleanup fixtures. |

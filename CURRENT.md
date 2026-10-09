@@ -16,6 +16,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
+| P0 | [AR-1752](tasks/AR-1752-development-broker-v115-projection.md): Repair development broker v1.15 dynamic-catalog projection | Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works. | Claim in an isolated ASB worktree; reproduce the exact installed asb tui dynamic-catalog failure, repair DevelopmentBackend negotiated-version forwarding, and qualify the public install-to-route journey. | - |
 
 ## Blocked
 
