@@ -2,21 +2,21 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T05:36:09+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1728",
   "next_action": "Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets.",
-  "owner": "codex-ar1728-cli2key-contract-20261009",
+  "owner": "",
   "plan": "../plans/AR-1728-cli2key-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1728.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Freeze development cli2key contract and bridge",
-  "updated_at": "2026-10-09T05:34:23+00:00",
+  "updated_at": "2026-10-09T05:43:47+00:00",
   "worktree_key": ""
 }
 ---
@@ -439,3 +439,7 @@ unofficial, opt-in, and provides no production or provider-authority claim.
 
 - 2026-10-09T05:34:23+00:00: Recorded command exit 0; command argv SHA-256
   9e5f6a19b3e32b75c1460699e3b5d7162ed363e2ab154e0c3993900d5fb3212e.
+
+- 2026-10-09T05:43:47+00:00: Recovered expired claim formerly owned by
+  codex-ar1728-cli2key-contract-20261009. Expired lease observed after exact-head CI; same assigned
+  worker is resuming the independently approved integration with immutable base/head/tree.
