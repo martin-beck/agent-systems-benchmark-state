@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:1740ecc34f306af50ee114147b55bcac94d0de97b6407d636c18dbc4e9acfe1b",
+    "evidence_ref": "quality/AR-1759-tool-project-config-schema-postmerge-receipt.json",
     "spec_ref": "specs/AR-1759.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1759.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T15:02:38+00:00",
+  "updated_at": "2026-10-09T15:02:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
@@ -128,3 +128,6 @@ unknown-field/path validation.
 
 - 2026-10-09T15:02:38+00:00: Recorded command exit 0; command argv SHA-256
   42339310fe201bea44a4eaa9f4b4471d4657643cb4b9c51ac8c3c4ddb732e25d.
+
+- 2026-10-09T15:02:52+00:00: Accepted ProjectConfigV1 schema against merged PR #531 exact tree and
+  all ten terminal-green exact-main workflows.
