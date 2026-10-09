@@ -7,7 +7,7 @@
     "AR-1731"
   ],
   "id": "AR-1732",
-  "next_action": "Implementation 75826b7955b6afbcdf45aa4e8beba2d5b7af56 is signed+DCO; run independent review, push PR, exact-head CI, merge, and post-merge qualification.",
+  "next_action": "PR #529 exact head 08226e2; full asb-cli suite passes (249 tests). Await independent review and exact-head CI, then merge via merge_pr.py and perform post-merge verification.",
   "owner": "codex-asb-ar1732-run-sweep-20261009",
   "plan": "../plans/AR-1732-cli2key-run-sweep.md",
   "priority": "P1",
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Integrate cli2key runs and sweeps",
-  "updated_at": "2026-10-09T13:33:34+00:00",
+  "updated_at": "2026-10-09T13:33:46+00:00",
   "worktree_key": ""
 }
 ---
@@ -183,3 +183,7 @@ serve as production or official-provider qualification.
 
 - 2026-10-09T13:33:34+00:00: Recorded command exit 0; command argv SHA-256
   a6a17ec3c5be1ae57bf2a84dd227c1146b069e0d5f1d88bca836cc88c7391fec.
+
+- 2026-10-09T13:33:46+00:00: Added explicit cli2key runtime-dispatch run regression and
+  authority-required direct-live diagnostic; route remains fail-closed without runtime-issued
+  sidecar launch. Full asb-cli suite passed.
