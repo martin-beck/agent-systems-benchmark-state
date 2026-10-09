@@ -609,12 +609,11 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | codex-asb-ar1721-qualification-20261009 | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Fresh independent reviewer: approve or reject asb-tui PR #296 exact synchronized head bb8f503be6cf5cf2543eac782ba31875768e5636/tree d3a26f0da147af628ff2657dcfbd76af80d75834 against exact current main f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d after terminal Repository Quality run 37861623781 and AWQ shadow run 37861624025; merge only this exact tree after approval, then require exact-main post-merge CI and attach acceptance. |
-| P0 | [AR-1722](../tasks/AR-1722.md): PR #487 protected-main requalification and merge-settings recovery | codex-asb-ar1722-closeout-20261009 | Requalify PR #487 after protected-main merge tree differed from the reviewed topic tree and recover the required merge settings without policy exceptions. | PR #490 exact head ac6557038 was independently reviewed and merged as 9b27d5d9. Verify post-merge ASB main, reconcile the corrected AR-1722 receipt, and release this incident only after exact-main post-merge evidence is recorded; do not require an authorized-maintainer review. |
 | P0 | [AR-1751](../tasks/AR-1751-gcc-linker-prefix-confinement.md): Confine GCC linker-prefix trust after AR-1737 | codex-asb-ar1751-linker-confinement-20261009 | Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries. | Constrain development Cargo linker handoff so a validated ld cannot widen GCC helper or library trust through -B; add adversarial collect2/library regressions, independent exact-head review, signed reviewed-tree merge, and exact-main post-merge verification. |
 
 ### Open (4)
@@ -646,3 +645,4 @@
 | P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | Unclaimed | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. |
 | P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | Unclaimed | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Add actual replay CLI argument wiring and bounded lifecycle/egress/no-fallback tests around authenticated execution hook; then run full gates. |
 | P0 | [AR-1268](../tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | Unclaimed | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Await approved runtime-owned launch bundle/factory exposing SandboxLaunchInput, ResourceLease, pinned commands, and supervised lifecycle to the transport adapter; then add real child lifecycle/egress tests. |
+| P0 | [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md): Runtime-owned replay launch-bundle factory | Unclaimed | Create runtime-owned launch bundles for supervised strict replay. | Await approved runtime-issued cassette-service handle/shared transport extension; then connect it to spawn_runtime_replay and run real request/response, egress, cancellation/restart, timeout/crash cleanup, no-fallback fixtures. |
