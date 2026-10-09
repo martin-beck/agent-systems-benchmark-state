@@ -1,22 +1,24 @@
 ---
 {
+  "branch": "",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [
+    "AR-1728"
+  ],
   "id": "AR-1730",
-  "title": "Add cli2key provider and selection contracts",
-  "priority": "P1",
-  "depends_on": ["AR-1728"],
-  "plan": "../plans/AR-1730-cli2key-provider-contract.md",
-  "summary": "Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support.",
-  "status": "planned",
   "next_action": "Promote after AR-1728; add protocol, control, catalog, selection, and launch contracts with fixture coverage.",
   "owner": "",
-  "claim_expires": "",
-  "checkpoint_commit": "",
-  "task_revision": 1,
+  "plan": "../plans/AR-1730-cli2key-provider-contract.md",
+  "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1730.json",
   "spec_revision": 1,
-  "updated_at": "2026-10-07T23:21:33+00:00",
-  "branch": "",
+  "status": "open",
+  "summary": "Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support.",
+  "task_revision": 2,
+  "title": "Add cli2key provider and selection contracts",
+  "updated_at": "2026-10-09T07:38:48+00:00",
   "worktree_key": ""
 }
 ---
@@ -27,3 +29,5 @@ bridge/runtime/executable identity, and an opaque invocation credential
 reference. Initially advertise only Codex; every additional agent requires its
 own independent adapter proof. Do not alias this profile to the official
 `openai` provider or inherit production readiness claims.
+
+- 2026-10-09T07:38:48+00:00: dependencies verified for cli2key provider contract

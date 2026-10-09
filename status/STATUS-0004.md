@@ -624,11 +624,12 @@
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md): Supervise cli2key sidecar and ephemeral key | codex-ar1729-cli2key-sidecar-20261009 | Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence. | Promote after AR-1728; implement the runtime-owned sidecar lifecycle and hostile cleanup/privacy tests. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
+| P1 | [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md): Add cli2key provider and selection contracts | Unclaimed | Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support. | Promote after AR-1728; add protocol, control, catalog, selection, and launch contracts with fixture coverage. |
 
 ### Blocked (87)
 
@@ -648,4 +649,3 @@
 | P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Unclaimed | Issue runtime-owned authority for supervised strict-replay execution. | Do not merge PR #207; create runtime-to-CLI authority successor and rerun lifecycle, egress and no-fallback evidence. |
 | P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | Unclaimed | Provide a real runtime-owned strict-replay CLI entrypoint. | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. |
 | P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | Unclaimed | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. |
-| P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | Unclaimed | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Add actual replay CLI argument wiring and bounded lifecycle/egress/no-fallback tests around authenticated execution hook; then run full gates. |
