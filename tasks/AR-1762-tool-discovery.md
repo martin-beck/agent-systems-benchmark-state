@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:02:46+00:00",
+  "updated_at": "2026-10-09T16:02:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -278,3 +278,6 @@ development authentication/signatures/keys are absent.
   assertion. This was a pre-existing contract test failure caused by completion ordering, not
   discovery behavior. Repaired by appending tool after existing entries while preserving the legacy
   order; rerun the exact test and full serial suite.
+
+- 2026-10-09T16:02:51+00:00: Recorded command exit 0; command argv SHA-256
+  e7b3a7862a6ebe851c32732b6a205dec60cbf442c6af3906a81851940a3dec78.
