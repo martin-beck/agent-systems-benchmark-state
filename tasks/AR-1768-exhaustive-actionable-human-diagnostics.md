@@ -3,7 +3,10 @@
   "branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1766", "AR-1767"],
+  "depends_on": [
+    "AR-1766",
+    "AR-1767"
+  ],
   "id": "AR-1768",
   "next_action": "Render every cataloged ASB error, failure, partial outcome, and warning as concise cause-specific human guidance with an honest next action when one exists.",
   "observed_branch": "",
@@ -13,14 +16,21 @@
   "plan": "../plans/AR-1768-exhaustive-actionable-human-diagnostics.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1768.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1768.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1768.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T17:21:34+00:00",
+  "updated_at": "2026-10-09T21:11:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -48,3 +58,6 @@ Never recommend blind retry of a non-idempotent operation. Terminal successes do
 not invent next steps, warnings explain their consequence, and partial results
 say what remains usable.
 
+
+- 2026-10-09T21:11:00+00:00: AR-1766 and AR-1767 are durably done with exact-main post-merge
+  evidence; promote diagnostics implementation.

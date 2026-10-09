@@ -52,11 +52,12 @@
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | codex-ar1770-descriptor-safe-races | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Post-merge main dc67390494805693aef21d917319253b2e705da7 has 8/10 assurance workflows terminal-success. Repository quality 37990474230 and Rust verification 37990474203 are green. Formal 37990474025 and aarch64 37990474021 have three failed attempts each, all solely Docker Hub unauthenticated pull rate-limit; continue rerun after rate window, then create receipt and release. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
+| P0 | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | Unclaimed | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | Render every cataloged ASB error, failure, partial outcome, and warning as concise cause-specific human guidance with an honest next action when one exists. |
 
 ### Blocked (87)
 
@@ -150,7 +151,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (101)
+### Planned (100)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -212,7 +213,6 @@
 | P0 | [AR-1763](../tasks/AR-1763-generated-catalog-selection.md): Generate and select ASB project catalogs | Unclaimed | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. | After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory. |
 | P0 | [AR-1764](../tasks/AR-1764-project-run-integration.md): Integrate project tools and catalogs with ASB runs | Unclaimed | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. | Wire project inventory and active catalogs into benchmark setup/run/compare/report commands. |
 | P0 | [AR-1765](../tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Unclaimed | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Run the fresh-user end-to-end qualification after AR-1764 is merged. |
-| P0 | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | Unclaimed | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | Render every cataloged ASB error, failure, partial outcome, and warning as concise cause-specific human guidance with an honest next action when one exists. |
 | P0 | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | Unclaimed | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Add a required CI gate and executable negative journey proving every current and future public diagnostic is cataloged, specifically rendered, actionable, and privacy-safe. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
