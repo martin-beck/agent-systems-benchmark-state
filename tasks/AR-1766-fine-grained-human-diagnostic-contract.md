@@ -30,9 +30,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T17:39:44+00:00",
+  "updated_at": "2026-10-09T17:39:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -113,3 +113,6 @@ the catalog.
 - 2026-10-09T17:39:44+00:00: Focused cargo test -p asb-cli --test diagnostic_contract passed (3
   tests); cargo clippy --locked -p asb-cli --all-targets -- -D warnings passed. Added closed
   catalog, routed TUI resolution, privacy compatibility test, and producer inventory docs.
+
+- 2026-10-09T17:39:54+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
