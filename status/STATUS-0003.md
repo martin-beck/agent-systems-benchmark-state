@@ -488,7 +488,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. |
-| Next action | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
+| Next action | Release done, reconcile canonical state, and verify live doctor; dependent AR-1729 and AR-1730 may proceed from exact main 30286af46920b34096d3a48153e728f7319358a4. |
 
 ### AR-1729 — Supervise cli2key sidecar and ephemeral key
 

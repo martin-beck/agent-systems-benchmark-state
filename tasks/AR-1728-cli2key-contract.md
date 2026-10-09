@@ -5,18 +5,26 @@
   "claim_expires": "2026-10-09T08:43:52+00:00",
   "depends_on": [],
   "id": "AR-1728",
-  "next_action": "Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets.",
+  "next_action": "Release done, reconcile canonical state, and verify live doctor; dependent AR-1729 and AR-1730 may proceed from exact main 30286af46920b34096d3a48153e728f7319358a4.",
   "owner": "codex-ar1728-cli2key-contract-20261009",
   "plan": "../plans/AR-1728-cli2key-contract.md",
   "priority": "P1",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:0bd2faf4c95fb623fccac317776b52018d8f23b8ed2995ea45921df3271b8e5f",
+    "evidence_ref": "quality/AR-1728-cli2key-contract-closeout-20261009.json",
+    "spec_ref": "specs/AR-1728.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1728.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Freeze development cli2key contract and bridge",
-  "updated_at": "2026-10-09T05:56:05+00:00",
+  "updated_at": "2026-10-09T05:57:05+00:00",
   "worktree_key": ""
 }
 ---
@@ -457,3 +465,9 @@ unofficial, opt-in, and provides no production or provider-authority claim.
 
 - 2026-10-09T05:56:05+00:00: Recorded command exit 0; command argv SHA-256
   6d5bce21c08bf0948683bbfd51cdc959d4b72dc0291e349823f404ed0b280b3c.
+
+- 2026-10-09T05:57:05+00:00: AR-1728 acceptance complete: independent review approved exact head
+  51c2d975/tree 831e4e9b; PR #523 passed all 15 exact-head checks; signed+DCO merge 30286af
+  preserves the reviewed tree; all 10 exact-main workflows succeeded. Closeout receipt
+  sha256:0bd2faf4c95fb623fccac317776b52018d8f23b8ed2995ea45921df3271b8e5f contains no credentials,
+  auth-file contents, prompts, provider bodies, or private paths.
