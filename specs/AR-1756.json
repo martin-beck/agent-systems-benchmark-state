@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1756.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "upstream-identity", "description": "Upstream Agent Workflow Coordinator origin/main c2692d08382e0a16e9d0dd4f8c08dba36a29b713 is independently verified to contain the owner- and revision-bound spec acceptance command and declares version 0.4.0; no v0.4.0 tag is claimed when none exists."},
+    {"id": "development-vendor-integrity", "description": "ASB state adopts that exact upstream commit only through the supported sync-development path, with a schema-v2 development manifest and byte-for-byte vendor verification; no vendored byte is manually patched."},
+    {"id": "acceptance-lifecycle", "description": "The adopted coordinator exposes and exercises the supported accept lifecycle so AR-1729 and AR-1730 can record valid revision-bound acceptance without bypassing done admission."},
+    {"id": "downstream-health", "description": "All ASB-owned compatibility, fixture, generated-view, privacy, formal, and test regressions caused by the development vendor are repaired without weakening existing gates."}
+  ],
+  "definition_of_done": [
+    "The exact reviewed development vendor and any downstream repair tree is integrated through a signed DCO merge.",
+    "All required exact-head and exact-main checks pass at unchanged thresholds, including vendor verification and live doctor.",
+    "A privacy-safe immutable receipt binds upstream commit/tree, manifest, acceptance-command evidence, review, CI, merge, and post-merge verification.",
+    "AR-1729 and AR-1730 can use the supported accept command at their exact current revisions; their existing product evidence is preserved and no task is falsely released."
+  ],
+  "inputs": [
+    {"id": "coordinator-main", "description": "Clean upstream Agent Workflow Coordinator origin/main at c2692d08382e0a16e9d0dd4f8c08dba36a29b713, containing f058a8b and version 0.4.0."},
+    {"id": "asb-state", "description": "ASB state main with the reviewed v0.3.59 vendor and preserved AR-1729/AR-1730 merge evidence."}
+  ],
+  "outputs": [
+    {"id": "development-vendor", "description": "An exact schema-v2 development vendor snapshot bound to the upstream commit and complete file digests."},
+    {"id": "acceptance-receipt", "description": "Privacy-safe evidence proving the supported acceptance lifecycle and all integration gates."}
+  ],
+  "allowed_tools": ["git", "gh", "python", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["vendored-byte-patching", "force-push", "credential-output", "gate-weakening", "untagged-release-claim"],
+  "required_evidence_classes": ["mechanical", "environmental", "hosted"],
+  "gates": [
+    {"id": "vendor-integrity", "description": "Exact upstream commit identity, complete development vendor digests, source comparison, and downstream integration checks pass."},
+    {"id": "repository-quality", "description": "All state quality, coverage, formal, generated-view, privacy, review, and hosted gates pass without reduced thresholds."},
+    {"id": "lifecycle-proof", "description": "A clean exact-main checkout records and verifies supported task-spec acceptance, then doctor and post-merge checks pass."}
+  ]
+}

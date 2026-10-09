@@ -868,6 +868,20 @@
 | Summary | Repair the ASB Make install path so rerunning plain &#96;make install&#96; replaces its existing ASB binary without advertising an invalid Make option. |
 | Next action | Publish the privacy-safe acceptance receipt, reconcile stable exact-main observations, then release AR-1755 done. |
 
+### AR-1756 — Coordinator v0.4.0 development vendor for supported acceptance
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt the exact upstream Coordinator main containing the supported spec-acceptance command as an explicitly development-only vendor so merged ASB ARs can be durably accepted. |
+| Next action | Promote and claim; independently verify upstream main c2692d0 and the absence of a v0.4.0 tag, then sync it through sync-development in an isolated state worktree without patching vendored bytes. |
+
 
 ## Dependency graph
 
@@ -1682,6 +1696,7 @@ flowchart LR
         AR_1753["AR-1753 - Done"]:::status_done
         AR_1754["AR-1754 - Planned"]:::status_planned
         AR_1755["AR-1755 - Done"]:::status_done
+        AR_1756["AR-1756 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3554,6 +3569,7 @@ flowchart LR
     AR_1745 --> AR_1755
     AR_1749 --> AR_1753
     AR_1750 --> AR_1748
+    AR_1753 --> AR_1756
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3702,4 +3718,3 @@ flowchart LR
 | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
 | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
 | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
-| [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1150](../tasks/AR-1150.md) |
