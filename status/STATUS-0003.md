@@ -866,7 +866,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the ASB Make install path so rerunning plain &#96;make install&#96; replaces its existing ASB binary without advertising an invalid Make option. |
-| Next action | Promote and claim; reproduce the existing-destination failure on exact ASB main, make plain &#96;make install&#96; safely idempotent, add repeat-install regressions, and complete independent reviewed integration with exact-head and exact-main CI. |
+| Next action | Run complete locked workspace and policy gates on the narrow install-boundary repair, then commit signed+DCO and publish the exact candidate for independent review and hosted CI. |
 
 
 ## Dependency graph

@@ -7,7 +7,7 @@
     "AR-1745"
   ],
   "id": "AR-1755",
-  "next_action": "Promote and claim; reproduce the existing-destination failure on exact ASB main, make plain `make install` safely idempotent, add repeat-install regressions, and complete independent reviewed integration with exact-head and exact-main CI.",
+  "next_action": "Run complete locked workspace and policy gates on the narrow install-boundary repair, then commit signed+DCO and publish the exact candidate for independent review and hosted CI.",
   "observed_branch": "fix/ar-1755-idempotent-make-install",
   "observed_dirty": 3,
   "observed_head": "64eaad2215e4f08fe8e803022acb6e9146b95d94",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T09:38:36+00:00",
+  "updated_at": "2026-10-09T09:39:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -69,3 +69,13 @@ system-wide privilege handling.
 
 - 2026-10-09T09:38:36+00:00: Recorded command exit 0; command argv SHA-256
   79edd2fa6ab3acc370a2014dfa8c343390f85f83495c162be8bddfd529fa42b6.
+
+- 2026-10-09T09:39:09+00:00: Exact base 64eaad2215e4f08fe8e803022acb6e9146b95d94: GNU Make rejects
+  make install --force with exit 2. Cargo 1.93 replaces a repeat install that it already owns, but
+  the reported unmanaged/pre-existing destination case requires Cargo --force. Candidate now passes
+  --force only at Cargo install after all existing prefix/symlink validation. Focused deterministic
+  harness passes repeat default-HOME and explicit-prefix installs, replacement, unrelated-file
+  preservation, fake no-force rejection, correct help, and
+  empty/root/repository/traversal/non-directory/symlink negatives. A real Cargo run also replaced an
+  unmanaged executable, completed a second plain reinstall, reported asb 0.1.0 twice, and preserved
+  an unrelated file.
