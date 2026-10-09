@@ -9,8 +9,8 @@
   "id": "AR-1730",
   "next_action": "Promote after AR-1728; add protocol, control, catalog, selection, and launch contracts with fixture coverage.",
   "observed_branch": "feature/ar-1730-cli2key-provider-contract",
-  "observed_dirty": 2,
-  "observed_head": "30286af46920b34096d3a48153e728f7319358a4",
+  "observed_dirty": 0,
+  "observed_head": "c86b4b40b5fdafb0cdc5dfd8b185e0f3aa87a7d8",
   "owner": "codex-ar1730-cli2key-provider-20261009",
   "plan": "../plans/AR-1730-cli2key-provider-contract.md",
   "priority": "P1",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Add cli2key provider and selection contracts",
-  "updated_at": "2026-10-09T07:43:52+00:00",
+  "updated_at": "2026-10-09T07:44:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1730-cli2key-provider-contract"
 }
 ---
