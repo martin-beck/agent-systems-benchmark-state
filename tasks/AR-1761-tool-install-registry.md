@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 165,
+  "task_revision": 166,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:42:00+00:00",
+  "updated_at": "2026-10-09T16:42:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -446,3 +446,6 @@ for idempotence; never store API keys or tokens.
   gates, docs, release build, focused tests, and prior coverage (90.54% workspace) passed.
   Independent review path-safety repair rejects destination symlinks before digest/read, with
   regression coverage. PR #537 exact-head CI is running; await review and all required checks.
+
+- 2026-10-09T16:42:09+00:00: Recorded command exit 0; command argv SHA-256
+  c44855d75eba855fcc55e7f13522ae9f3508175e5652604d1b8c25beb8745854.
