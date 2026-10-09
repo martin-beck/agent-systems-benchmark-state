@@ -1078,7 +1078,7 @@
 | Summary | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. |
 | Next action | Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green. Repository quality 37990474230 and Rust 37990474203 passed. Retry formal/aarch64 only after Docker Hub runner rate window clears; then create receipt and release. |
 
-### AR-1771 — Human status and quiet-output contract
+### AR-1771 — Human output, status, and quiet contract
 
 | Field | Value |
 | --- | --- |
@@ -1089,8 +1089,8 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Define one stable human status-line vocabulary and a global quiet contract without changing JSON or exit behavior. |
-| Next action | After AR-1768 is done, define the closed human status vocabulary, global -q semantics, stream/mode rules, and compatibility contract for every ASB command. |
+| Summary | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. |
+| Next action | After AR-1768 is done, define the closed human status, output-router, level, quiet, stream, and compatibility contract for every ASB command. |
 
 ### AR-1772 — Unified human step-progress reporter
 
@@ -1104,7 +1104,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output. |
-| Next action | Implement the single human step reporter and its deterministic clock/terminal adapters after the status and quiet contract is accepted. |
+| Next action | Implement the single human step reporter on the mandatory output router after its output, level, status, and quiet contracts are accepted. |
 
 ### AR-1773 — Universal command step instrumentation
 
@@ -1133,6 +1133,20 @@
 | Children | None |
 | Summary | Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode. |
 | Next action | Add required CI enforcement and controlled-defect tests for quiet, status, and progress completeness after universal instrumentation lands. |
+
+### AR-1775 — Configurable output router and levels
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels. |
+| Next action | Implement the sole configurable output router, generated project output defaults, and four-level selection after the output contract is accepted. |
 
 
 ## Dependency graph
@@ -1967,6 +1981,7 @@ flowchart LR
         AR_1772["AR-1772 - Planned"]:::status_planned
         AR_1773["AR-1773 - Planned"]:::status_planned
         AR_1774["AR-1774 - Planned"]:::status_planned
+        AR_1775["AR-1775 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3870,9 +3885,11 @@ flowchart LR
     AR_1769 --> AR_1763
     AR_1769 --> AR_1773
     AR_1769 --> AR_1774
-    AR_1771 --> AR_1772
+    AR_1771 --> AR_1775
     AR_1772 --> AR_1773
     AR_1773 --> AR_1774
+    AR_1775 --> AR_1772
+    AR_1775 --> AR_1774
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3976,5 +3993,3 @@ flowchart LR
 | [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md) | [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
-| [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
-| [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
