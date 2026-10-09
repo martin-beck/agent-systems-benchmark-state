@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1752.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "negotiated-projection",
+      "description": "DevelopmentBackend preserves the negotiated control version and returns the authoritative DynamicProviderCatalog projection to v1.15 clients while older clients retain legacy catalog bytes."
+    },
+    {
+      "id": "read-only-boundary",
+      "description": "The repair does not widen development authority: configuration, auth, provider-profile, run, recording, and other mutations remain unavailable."
+    },
+    {
+      "id": "public-installed-journey",
+      "description": "Exact paired binaries pass asb tui install, status, bare launch, and dynamic-catalog through the public ASB boundary with a controlling PTY, bounded cleanup, and exact source/tree/digest binding."
+    },
+    {
+      "id": "typed-failures",
+      "description": "Protocol, identity, generation, unavailable, static, empty, malformed, and transport failures remain distinct and fail closed without provider calls, mutation, or fallback."
+    },
+    {
+      "id": "development-policy",
+      "description": "Missing development authentication, signatures, and key management remain visible non-blocking warnings; provider network is denied and no credential or raw provider payload is persisted."
+    },
+    {
+      "id": "integration-integrity",
+      "description": "The exact signed DCO candidate is independently approved, all exact-head checks pass, the signed merge preserves the reviewed tree, and all exact-main workflows succeed."
+    }
+  ],
+  "definition_of_done": [
+    "A focused regression fails on the pre-repair DevelopmentBackend and passes with negotiated v1.15 projection while v1.14 compatibility remains intact.",
+    "Existing development backend read-only and mutation-denial tests remain green and cover the versioned path.",
+    "A privacy-safe exact-identity receipt proves the installed public install-to-bare/dynamic-catalog journey with provider network denied.",
+    "Independent review, exact-head CI, signed reviewed-tree merge, exact-main CI, and parent AR-1721 requalification are complete."
+  ],
+  "inputs": [
+    {
+      "id": "ar1721-controlserver",
+      "description": "Merged ControlServer v1.15 dynamic provider-catalog implementation and its normalized AR-1719 catalog input."
+    },
+    {
+      "id": "paired-route",
+      "description": "Merged asb-tui PR #296 development dynamic-catalog route at exact commit 60ab530dd1a09d6617514f9974217c9f08d48876."
+    },
+    {
+      "id": "failure-reproduction",
+      "description": "Exact installed route failure dynamic_catalog_response_missing at ASB 69bf9029 and asb-tui 60ab530d."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "version-preserving-development-backend",
+      "description": "Narrow delegated negotiated-version execution with unchanged read-only authority."
+    },
+    {
+      "id": "public-route-regressions",
+      "description": "Focused protocol/backend tests and exact installed controlling-PTY journey coverage."
+    },
+    {
+      "id": "qualification-receipt",
+      "description": "Privacy-safe exact source, tree, digest, test, review, CI, merge, and post-merge evidence."
+    }
+  ],
+  "allowed_tools": [
+    "git",
+    "gh",
+    "cargo",
+    "python",
+    "tools/handoffctl",
+    "tools/integration/merge_pr.py"
+  ],
+  "forbidden_tools": [
+    "tui-renderer-change",
+    "mutation-authority-expansion",
+    "silent-fallback",
+    "provider-network-bypass",
+    "credential-output",
+    "raw-provider-payload-persistence",
+    "history-rewrite",
+    "force-push",
+    "production-policy-gate"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "mechanical",
+    "environmental",
+    "hosted",
+    "privacy",
+    "quality"
+  ],
+  "gates": [
+    {
+      "id": "version-matrix",
+      "description": "v1.15 dynamic and pre-v1.15 legacy projections pass through DevelopmentBackend with exact request/response validation."
+    },
+    {
+      "id": "negative-authority-matrix",
+      "description": "Mutation calls and every typed identity/catalog/transport failure remain rejected without fallback or effects."
+    },
+    {
+      "id": "paired-public-journey",
+      "description": "Public install, status, bare launch, and dynamic-catalog pass with exact paired artifacts under a bounded controlling PTY."
+    },
+    {
+      "id": "independent-review",
+      "description": "A separate reviewer approves the exact candidate tree and the public-journey evidence."
+    },
+    {
+      "id": "postmerge",
+      "description": "All required workflows succeed at the signed merge whose tree equals the independently reviewed tree."
+    }
+  ]
+}
