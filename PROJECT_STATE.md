@@ -25,9 +25,9 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 37938978869 | `942c7b110045` | push | Repository quality | completed:success |
 | 37938978842 | `942c7b110045` | push | Portable protected-main provenance | completed:success |
-| 37938978831 | `942c7b110045` | push | Rust verification | in_progress:- |
+| 37938978831 | `942c7b110045` | push | Rust verification | completed:success |
 | 37938978804 | `942c7b110045` | push | Hosted portability and native qualification | completed:success |
-| 37938978794 | `942c7b110045` | push | Emulated aarch64 portability | in_progress:- |
+| 37938978794 | `942c7b110045` | push | Emulated aarch64 portability | completed:success |
 | 37938978789 | `942c7b110045` | push | Credential-free benchmark path | completed:success |
 | 37938978769 | `942c7b110045` | push | Cross-repository development broker qualification | completed:success |
 | 37938978758 | `942c7b110045` | push | Huawei MIT source headers | completed:success |
