@@ -23,15 +23,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37915754003 | `b0d1c9d9f352` | push | Emulated aarch64 portability | in_progress:- |
-| 37915753983 | `b0d1c9d9f352` | push | Fault assurance | in_progress:- |
+| 37915754003 | `b0d1c9d9f352` | push | Emulated aarch64 portability | completed:success |
+| 37915753983 | `b0d1c9d9f352` | push | Fault assurance | completed:success |
 | 37915753978 | `b0d1c9d9f352` | push | Huawei MIT source headers | completed:success |
-| 37915753969 | `b0d1c9d9f352` | push | Repository quality | in_progress:- |
-| 37915753949 | `b0d1c9d9f352` | push | Formal assurance | in_progress:- |
-| 37915753942 | `b0d1c9d9f352` | push | Portable protected-main provenance | in_progress:- |
-| 37915753918 | `b0d1c9d9f352` | push | Hosted portability and native qualification | in_progress:- |
-| 37915753916 | `b0d1c9d9f352` | push | Rust verification | in_progress:- |
-| 37915753915 | `b0d1c9d9f352` | push | Cross-repository development broker qualification | in_progress:- |
-| 37915753894 | `b0d1c9d9f352` | push | Credential-free benchmark path | in_progress:- |
+| 37915753969 | `b0d1c9d9f352` | push | Repository quality | completed:success |
+| 37915753949 | `b0d1c9d9f352` | push | Formal assurance | completed:success |
+| 37915753942 | `b0d1c9d9f352` | push | Portable protected-main provenance | completed:success |
+| 37915753918 | `b0d1c9d9f352` | push | Hosted portability and native qualification | completed:success |
+| 37915753916 | `b0d1c9d9f352` | push | Rust verification | completed:success |
+| 37915753915 | `b0d1c9d9f352` | push | Cross-repository development broker qualification | completed:success |
+| 37915753894 | `b0d1c9d9f352` | push | Credential-free benchmark path | completed:success |
 | 37914439303 | `6ac109533612` | pull_request | Repository quality | completed:success |
 | 37914439260 | `6ac109533612` | pull_request | Formal assurance | completed:success |
