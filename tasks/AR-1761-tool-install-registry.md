@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:44:46+00:00",
+  "updated_at": "2026-10-09T15:45:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -74,3 +74,6 @@ for idempotence; never store API keys or tokens.
   failed with exit 101 because wrapper cwd is the state repository and no Cargo.toml was present.
   Repaired by invoking cargo with the product worktree manifest path; cargo check --locked
   --workspace then passed.
+
+- 2026-10-09T15:45:17+00:00: Recorded command exit 0; command argv SHA-256
+  e01e5d95dc6ad658cdb3d81caaf78261e9db1f1e205dec5cad0059c1304ba2f1.
