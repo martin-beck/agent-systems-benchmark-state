@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1730-cli2key-provider-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T10:10:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1728"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "feature/ar-1730-cli2key-provider-contract",
   "observed_dirty": 0,
   "observed_head": "918000a5c4f5b1e6821d257f32b279663c6903d1",
-  "owner": "codex-ar1730-cli2key-provider-20261009",
+  "owner": "",
   "plan": "../plans/AR-1730-cli2key-provider-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1730.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Add cli2key provider and selection contracts",
-  "updated_at": "2026-10-09T08:40:19+00:00",
+  "updated_at": "2026-10-09T10:20:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1730-cli2key-provider-contract"
 }
 ---
@@ -177,3 +177,8 @@ own independent adapter proof. Do not alias this profile to the official
 - 2026-10-09T08:16:20+00:00: Heartbeat by codex-ar1730-cli2key-provider-20261009.
 
 - 2026-10-09T08:40:19+00:00: Heartbeat by codex-ar1730-cli2key-provider-20261009.
+
+- 2026-10-09T10:20:51+00:00: Recovered expired claim formerly owned by
+  codex-ar1730-cli2key-provider-20261009. Expired lease recovered after UTC expiry; no matching
+  worker process exists and the registered worktree is clean and idle. Preserve the candidate for a
+  fresh owner to resume.
