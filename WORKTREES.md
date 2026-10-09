@@ -44,7 +44,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1730-cli2key-provider-contract` | `feature/ar-1730-cli2key-provider-contract` | `918000a5c4f5` | 0 | behind 17, ahead 0 |
 | `agent-systems-benchmark-ar-1731-cli2key-adapter` | `feature/ar-1731-cli2key-codex-adapter` | `6386e066b37a` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-ar-1732-cli2key-run-sweep` | `feature/ar-1732-cli2key-run-sweep` | `08226e288e90` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1733-cli2key-qualification` | `feature/ar-1733-cli2key-qualification` | `12e28f8161ad` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1733-cli2key-qualification` | `feature/ar-1733-cli2key-qualification` | `12e28f8161ad` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `tools/cli2key-spike/qualification.py`, `tools/cli2key-spike/test_cli2key_spike.py` |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 76, ahead 0 |
 | `agent-systems-benchmark-ar-1735-integration` | `DETACHED` | `5f9850c13887` | 0 | behind 27, ahead 0 |
 | `agent-systems-benchmark-ar-1737-development-tui-linker-handoff` | `repair/ar-1737-development-tui-linker-handoff` | `199bd00a95c2` | 0 | behind 66, ahead 0 |
