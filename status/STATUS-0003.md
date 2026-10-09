@@ -1012,11 +1012,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1766-diagnostics |
 | Parent | None |
 | Children | None |
 | Summary | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. |
@@ -1888,7 +1888,7 @@ flowchart LR
         AR_1763["AR-1763 - Planned"]:::status_planned
         AR_1764["AR-1764 - Planned"]:::status_planned
         AR_1765["AR-1765 - Planned"]:::status_planned
-        AR_1766["AR-1766 - Open"]:::status_open
+        AR_1766["AR-1766 - In progress"]:::status_in_progress
         AR_1767["AR-1767 - Planned"]:::status_planned
         AR_1768["AR-1768 - Planned"]:::status_planned
         AR_1769["AR-1769 - Planned"]:::status_planned

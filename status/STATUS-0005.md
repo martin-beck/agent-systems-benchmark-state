@@ -39,12 +39,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | codex-ar1766-diagnostics | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | After AR-1761 is done, inventory every public ASB error, failure, and warning producer and replace the free-form public diagnostic boundary with fine-grained typed context. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | Unclaimed | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | After AR-1761 is done, inventory every public ASB error, failure, and warning producer and replace the free-form public diagnostic boundary with fine-grained typed context. |
 
 ### Blocked (87)
 

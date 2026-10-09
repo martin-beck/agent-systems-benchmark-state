@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1766-fine-grained-human-diagnostic-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T19:32:31+00:00",
   "depends_on": [
     "AR-1757",
     "AR-1760",
@@ -14,7 +14,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1766-diagnostics",
   "plan": "../plans/AR-1766-fine-grained-human-diagnostic-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -28,11 +28,11 @@
   },
   "spec_ref": "specs/AR-1766.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T17:31:49+00:00",
+  "updated_at": "2026-10-09T17:32:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -69,3 +69,5 @@ the catalog.
 
 - 2026-10-09T17:31:49+00:00: AR-1757, AR-1760, AR-1761, and AR-1762 are complete with exact-main
   evidence; begin fine-grained human diagnostic contract.
+
+- 2026-10-09T17:32:31+00:00: Claimed by codex-ar1766-diagnostics.
