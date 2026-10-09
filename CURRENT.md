@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. | codex-asb-ar1757-human-output-20261009 |
-| P0 | [AR-1760](tasks/AR-1760-project-init-workspace.md): Initialize an ASB benchmark project workspace | Add an idempotent ASB project initializer containing config, results, and catalog areas. | Independent review analysis is recorded, but GitHub self-approval is disallowed; obtain the required separate reviewer approval. Continue waiting for all exact-head PR checks, then merge via merge_pr.py. | codex-asb-ar1760-project-init-20261009 |
+| P0 | [AR-1760](tasks/AR-1760-project-init-workspace.md): Initialize an ASB benchmark project workspace | Add an idempotent ASB project initializer containing config, results, and catalog areas. | Independent review has no blocking findings. Obtain separate GitHub approval, wait for all exact-head PR checks to finish, then merge via merge_pr.py. | codex-asb-ar1760-project-init-20261009 |
 
 ## Open
 

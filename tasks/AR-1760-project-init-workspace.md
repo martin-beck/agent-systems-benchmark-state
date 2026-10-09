@@ -7,7 +7,7 @@
     "AR-1759"
   ],
   "id": "AR-1760",
-  "next_action": "Independent review analysis is recorded, but GitHub self-approval is disallowed; obtain the required separate reviewer approval. Continue waiting for all exact-head PR checks, then merge via merge_pr.py.",
+  "next_action": "Independent review has no blocking findings. Obtain separate GitHub approval, wait for all exact-head PR checks to finish, then merge via merge_pr.py.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:26:57+00:00",
+  "updated_at": "2026-10-09T15:27:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -224,3 +224,14 @@ commands for a fresh user and support `--json` without leaking host secrets.
 
 - 2026-10-09T15:26:57+00:00: Recorded command exit 0; command argv SHA-256
   b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b.
+
+- 2026-10-09T15:27:12+00:00: Independent review at exact PR #532 head
+  90abb5b3bb299c83b489d0c9ee9035d6bfa77ee6 (tree reviewed through complete changed-file diff):
+  ProjectConfigV1 authority is reused; init is bounded/idempotent, recovers missing directories,
+  rejects conflicting files/symlinks/invalid config, installs config last with create-new hard-link,
+  and emits relative credential-free human/JSON output. Reviewed docs, schemas, tests, and
+  transcript/provenance updates. Independent gates passed in a detached review worktree: cargo fmt
+  --all -- --check; cargo test --locked -p asb-cli project_init (3/3); cargo clippy --locked -p
+  asb-cli --all-targets -- -D warnings; capability_contract (13/13); guide_examples (5/5); git diff
+  --check. Runtime smoke confirmed human and --json output plus .asb/project.json/results/catalogs
+  creation. All five commits have valid SSH signatures and DCO trailers. No blocking findings.
