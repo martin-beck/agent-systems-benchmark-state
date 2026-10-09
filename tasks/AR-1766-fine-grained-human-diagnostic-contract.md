@@ -20,19 +20,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:95cc84cf255f0c0ce3c526aed3c64b53c36c90cf4d5cfbbff5aa1dd99f3042e2",
+    "evidence_ref": "quality/AR-1766-postmerge-receipt.json",
     "spec_ref": "specs/AR-1766.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1766.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T18:19:40+00:00",
+  "updated_at": "2026-10-09T18:19:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -266,3 +266,7 @@ the catalog.
 
 - 2026-10-09T18:19:40+00:00: Recorded command exit 0; command argv SHA-256
   d5a984d5dff4a0f147b9924ca7b7bbddb58ec41cb5927050acd4122930699673.
+
+- 2026-10-09T18:19:55+00:00: Accepted exact AR-1766 spec at revision 67: signed merge 00840438 and
+  all ten exact-main hosted workflows are successful; receipt is privacy-safe and doctor --live
+  passed.
