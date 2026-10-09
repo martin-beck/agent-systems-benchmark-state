@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T22:45:09+00:00",
+  "updated_at": "2026-10-09T22:45:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -199,3 +199,10 @@ timeouts/cancellation, partial results, and warning-only development behavior.
   d2d8e6383a8c5fa8ae3e37929ddbe546ea6b4e4410790e17b7ea02dee18ea6ff.
 
 - 2026-10-09T22:45:09+00:00: Heartbeat by codex-ar1769-diagnostic-ci-terra.
+
+- 2026-10-09T22:45:15+00:00: Independent review remains rejected. Candidate 47cc38f has valid
+  typed-route and controlled-defect checks, but lacks the required explicit executable scenario
+  matrix for
+  filesystem/config/tool/catalog/runtime/provider/network/timeout/cancellation/partial/warning and
+  details/redirected stream behavior. Add that matrix with concrete fixtures, rerun full gates, then
+  request fresh independent review; do not publish a PR.
