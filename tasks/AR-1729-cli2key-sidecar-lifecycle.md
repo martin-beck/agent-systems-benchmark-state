@@ -7,7 +7,7 @@
     "AR-1728"
   ],
   "id": "AR-1729",
-  "next_action": "Await independent review and exact-head CI for PR #525 at afca463; then merge via signed integrity path and record post-merge evidence.",
+  "next_action": "Await fresh exact-head CI and independent review for rebased PR #525 at 13da72b; then merge via signed integrity path and record post-merge evidence.",
   "owner": "codex-ar1729-cli2key-sidecar-20261009",
   "plan": "../plans/AR-1729-cli2key-sidecar-lifecycle.md",
   "priority": "P1",
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Supervise cli2key sidecar and ephemeral key",
-  "updated_at": "2026-10-09T08:01:57+00:00",
+  "updated_at": "2026-10-09T08:02:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1729-cli2key-sidecar-lifecycle"
 }
 ---
@@ -249,3 +249,8 @@ egress; benchmark agents remain loopback-only.
   44e8d12516750d10c022b703d068352c643d9539b6c610a6c17e0955a5b46e0a.
 
 - 2026-10-09T08:01:57+00:00: Heartbeat by codex-ar1729-cli2key-sidecar-20261009.
+
+- 2026-10-09T08:02:03+00:00: Independent diff review found and repaired staging-root leak on
+  set-permission/file-write failure; local-key read uses O_NOFOLLOW. Rebased signed+DCO
+  implementation onto protected main 4f460a6, producing head 13da72b; force-with-lease publication
+  succeeded. Prior CI failures were solely stale-base policy/provenance after PR #524 advanced main.
