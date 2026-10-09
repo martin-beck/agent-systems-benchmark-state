@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@b20d22b45b4f` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.22 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #520 | `feature/ar-1728-cli2key-contract@b65cac1f6f4f` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): freeze cli2key development contract |
-| #522 | `repair/ar-1752-development-broker-v115-projection@c2ad947f27ea` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(tui): preserve negotiated development catalog |
+| #522 | `repair/ar-1752-development-broker-v115-projection@c2ad947f27ea` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(tui): preserve negotiated development catalog |
 
 ## Recent workflows
 
@@ -27,13 +27,13 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 37883946540 | `c2ad947f27ea` | pull_request | Cross-repository development broker qualification | completed:success |
 | 37883946513 | `c2ad947f27ea` | pull_request | Hosted portability and native qualification | completed:success |
-| 37883946507 | `c2ad947f27ea` | pull_request | Rust verification | in_progress:- |
+| 37883946507 | `c2ad947f27ea` | pull_request | Rust verification | completed:success |
 | 37883946501 | `c2ad947f27ea` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37883946492 | `c2ad947f27ea` | pull_request | Huawei MIT source headers | completed:success |
 | 37883946483 | `c2ad947f27ea` | pull_request | Credential-free benchmark path | completed:success |
-| 37883946479 | `c2ad947f27ea` | pull_request | Repository quality | in_progress:- |
+| 37883946479 | `c2ad947f27ea` | pull_request | Repository quality | completed:success |
 | 37883946470 | `c2ad947f27ea` | pull_request | Fault assurance | completed:success |
 | 37883946463 | `c2ad947f27ea` | pull_request | Formal assurance | completed:success |
-| 37883946448 | `c2ad947f27ea` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37883946448 | `c2ad947f27ea` | pull_request | Emulated aarch64 portability | completed:success |
 | 37883946447 | `c2ad947f27ea` | pull_request | Portable protected-main provenance | completed:success |
 | 37880537655 | `b20d22b45b4f` | pull_request | Repository quality | completed:failure |
