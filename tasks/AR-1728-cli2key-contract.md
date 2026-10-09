@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Freeze development cli2key contract and bridge",
-  "updated_at": "2026-10-09T04:39:37+00:00",
+  "updated_at": "2026-10-09T04:40:17+00:00",
   "worktree_key": ""
 }
 ---
@@ -295,3 +295,6 @@ unofficial, opt-in, and provides no production or provider-authority claim.
 
 - 2026-10-09T04:39:37+00:00: Recorded command exit 0; command argv SHA-256
   8c210d886c244893670505ac2aa95bbcb55d606a820e2c27fd324c043ffe71f4.
+
+- 2026-10-09T04:40:17+00:00: Recorded command exit 0; command argv SHA-256
+  88c2b816b834360832388ea2eed7a4b3b74100437c9a0a306d584ca62cfa7ddb.
