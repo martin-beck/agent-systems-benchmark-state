@@ -1062,7 +1062,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. |
-| Next action | Add a required CI gate and executable negative journey proving every current and future public diagnostic is cataloged, specifically rendered, actionable, and privacy-safe. |
+| Next action | Obtain fresh independent technical review of signed head 57652ef; if clean, publish exact PR and require exact-head CI before integration. |
 
 ### AR-1770 — Descriptor-safe directory race hardening and acceptance matrix
 
