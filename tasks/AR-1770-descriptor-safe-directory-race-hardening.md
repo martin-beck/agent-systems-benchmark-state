@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-10T00:07:29+00:00",
+  "claim_expires": "2026-10-10T00:10:31+00:00",
   "depends_on": [
     "AR-1767"
   ],
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 262,
+  "task_revision": 263,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T22:10:28+00:00",
+  "updated_at": "2026-10-09T22:10:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -874,3 +874,5 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T22:10:28+00:00: Recovered expired claim, reconciled/doctor green, and started
   exact-head reruns after documented Docker registry failures.
+
+- 2026-10-09T22:10:31+00:00: Heartbeat by codex-ar1770-descriptor-safe-races.
