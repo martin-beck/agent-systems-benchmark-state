@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1773.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "complete-command-inventory", "description": "Every public command family, alias, routed lifecycle, and meaningful user-observable operation is inventoried and classified as immediate, bounded, or indeterminate."},
+    {"id": "universal-reporter-use", "description": "Every eligible human status/progress update uses the shared reporter; no ad-hoc public status/progress write remains."},
+    {"id": "real-progress-input", "description": "Bounded operations provide real totals/completion or relevant substeps; unbounded operations explicitly use truthful indeterminate updates rather than invented percentages or ETAs."},
+    {"id": "outcome-coverage", "description": "Success, failure, warning, partial, cancellation, and reconciliation paths each finish with an appropriate concise state line and retain diagnostic detail."},
+    {"id": "silent-machine-modes", "description": "Every command route remains completely free of human status/update/progress output in --json and -q modes."}
+  ],
+  "definition_of_done": [
+    "Executable route matrix covers fast, long-running, failed, warning, partial, cancelled, redirected, quiet, and JSON behavior for every public command family.",
+    "No direct status/progress rendering remains outside the reporter and its approved terminal adapters.",
+    "Independent review, exact-head checks, signed merge, and exact-main evidence pass."
+  ],
+  "inputs": [
+    {"id": "diagnostic-ci", "description": "AR-1769 authoritative public-command and diagnostic completeness gate."},
+    {"id": "step-reporter", "description": "AR-1772 delayed human step-progress reporter and deterministic harness."}
+  ],
+  "outputs": [
+    {"id": "instrumented-command-surface", "description": "Every eligible public ASB operation reports structured real progress through the common helper."},
+    {"id": "route-matrix", "description": "Executable complete command/step/mode outcome matrix."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["ad-hoc-status-print", "synthetic-progress", "fake-eta", "json-human-progress", "json-stderr-status", "quiet-output-leak", "secret-output", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id": "surface-completeness", "description": "Mechanical inventory proves every public route and eligible operation is instrumented or explicitly exempted as an input/protocol boundary."},
+    {"id": "mode-matrix", "description": "Executable route matrix proves status/progress behavior for terminal, redirected, quiet, and JSON modes."},
+    {"id": "truthful-progress", "description": "Focused tests prove bounded and indeterminate operations feed and render only truthful progress information."}
+  ]
+}

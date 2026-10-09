@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1772.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "single-reporter", "description": "One structured helper is the only permitted source of public human status/progress rendering, with compile-time or mechanical enforcement against ad-hoc status writes."},
+    {"id": "delayed-progress", "description": "A completed step under one second has no transient progress rendering; a step exceeding one second begins and updates a progress bar until terminal completion."},
+    {"id": "honest-estimate", "description": "Known totals render real completed/total and rough remaining time from caller-fed observations; unknown totals render indeterminate activity and elapsed time without fabricated completion or ETA."},
+    {"id": "terminal-safe", "description": "TTY rendering redraws safely with clipping and cleanup, while redirected output is append-only plain text with no ANSI or control bytes."},
+    {"id": "silent-modes", "description": "Quiet and JSON modes instantiate no visible reporter and emit no status, update, or progress bytes on either stream."}
+  ],
+  "definition_of_done": [
+    "Deterministic clock, PTY, redirected-stream, and writer-failure tests cover the reporter lifecycle.",
+    "Contributor documentation requires structured work-unit updates for all eligible steps.",
+    "Independent review, exact-head checks, signed merge, and exact-main evidence pass."
+  ],
+  "inputs": [
+    {"id": "status-contract", "description": "AR-1771 fixed-width states, quiet behavior, JSON silence, stream, and color rules."}
+  ],
+  "outputs": [
+    {"id": "step-reporter", "description": "Shared structured Rust API and renderer for human operation status and progress."},
+    {"id": "progress-test-harness", "description": "Deterministic clock, terminal, and redirected-output test harness."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["ad-hoc-status-print", "fake-eta", "json-human-progress", "json-stderr-status", "unbounded-refresh", "secret-output", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id": "renderer-lifecycle", "description": "Clock-driven tests prove threshold, update, finalization, interruption, and no-leaked-render behavior."},
+    {"id": "stream-mode", "description": "PTY, redirected, quiet, and JSON tests prove the exact rendering/silence boundaries."},
+    {"id": "estimate-integrity", "description": "Tests reject fabricated totals or ETAs and exercise truthful known/unknown-work updates."}
+  ]
+}

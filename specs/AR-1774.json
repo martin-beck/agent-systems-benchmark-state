@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1774.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "fail-closed-inventory", "description": "CI derives public command and eligible step coverage mechanically and fails for omitted quiet support, missing instrumentation, or renderer bypasses."},
+    {"id": "controlled-defects", "description": "Controlled defects prove rejection of direct status writes, invalid tokens, fake totals/ETAs, missing final state, quiet leaks, JSON stream leaks, ANSI leaks, and incomplete progress lifecycle behavior."},
+    {"id": "strict-json-silence", "description": "Executable tests prove --json emits no human status, update, progress, ANSI, or carriage-return bytes on either stdout or stderr for every command family and relevant failure path."},
+    {"id": "terminal-and-redirected-matrix", "description": "PTY, resize, narrow-width, redirected, broken-pipe, interruption, nesting, warning, failure, and cancellation cases retain safe consistent behavior."},
+    {"id": "future-extension", "description": "A new command or eligible operation cannot merge until it declares quiet behavior, structured step instrumentation, truthful progress inputs, and mode tests."}
+  ],
+  "definition_of_done": [
+    "Required CI gates and controlled-defect suites pass at the exact reviewed head.",
+    "Documentation gives contributors a mechanically enforced extension path.",
+    "Independent review, signed merge, and exact-main hosted workflows pass."
+  ],
+  "inputs": [
+    {"id": "diagnostic-completeness", "description": "AR-1769 public command/diagnostic inventory and fail-closed CI mechanism."},
+    {"id": "instrumented-surface", "description": "AR-1773 complete common-reporter command instrumentation and route matrix."}
+  ],
+  "outputs": [
+    {"id": "required-progress-gate", "description": "Fail-closed CI enforcement for quiet, status, progress, stream, timing, and truthful-estimate behavior."},
+    {"id": "controlled-defect-suite", "description": "Deterministic terminal, redirected, and machine-mode defects proving the gate works."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["hand-maintained-only-check", "timing-flake", "network-timing-dependency", "json-human-progress", "json-stderr-status", "quiet-output-leak", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id": "completeness", "description": "Mechanical inventory and controlled defects fail closed for every missing or bypassed obligation."},
+    {"id": "stream-and-timing", "description": "Deterministic clock and terminal tests prove threshold, update, silence, and rendering behavior."},
+    {"id": "postmerge", "description": "Independent review and all required exact-head/exact-main hosted workflows are terminal green."}
+  ]
+}
