@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37962236517 | `3cab69a1885f` | push | Hosted portability and native qualification | completed:success |
 | 37962236449 | `3cab69a1885f` | push | Credential-free benchmark path | completed:success |
 | 37962236383 | `3cab69a1885f` | push | Fault assurance | in_progress:- |
-| 37962236342 | `3cab69a1885f` | push | Cross-repository development broker qualification | in_progress:- |
+| 37962236342 | `3cab69a1885f` | push | Cross-repository development broker qualification | completed:success |
 | 37962236332 | `3cab69a1885f` | push | Portable protected-main provenance | completed:success |
 | 37962236306 | `3cab69a1885f` | push | Formal assurance | in_progress:- |
 | 37962236241 | `3cab69a1885f` | push | Rust verification | in_progress:- |
