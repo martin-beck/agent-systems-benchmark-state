@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:33:04+00:00",
+  "updated_at": "2026-10-09T21:33:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -295,3 +295,6 @@ say what remains usable.
   candidate_request_failed, candidate_response_invalid, artifact_transfer_failed,
   rollback_state_invalid, rollback_state_failed after independent review. Focused diagnostics passed
   before this state projection blocker.
+
+- 2026-10-09T21:33:21+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
