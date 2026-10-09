@@ -8,9 +8,9 @@
   ],
   "id": "AR-1770",
   "next_action": "Fresh independent review must inspect PR #540 exact head 6278fcd6720f39de456a791f0c73e6327ff6e25d and tree 6579db9d5bf4df3d4149ac0f5f5b29ff4f2ab2a8; then wait for exact-head CI.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "6278fcd6720f39de456a791f0c73e6327ff6e25d",
   "owner": "codex-ar1770-descriptor-safe-races",
   "plan": "../plans/AR-1770-descriptor-safe-directory-race-hardening.md",
   "priority": "P1",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 191,
+  "task_revision": 192,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T20:58:01+00:00",
+  "updated_at": "2026-10-09T20:58:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
