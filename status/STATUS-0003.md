@@ -1076,7 +1076,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. |
-| Next action | Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green. Repository quality 37990474230 and Rust 37990474203 passed. Repeated exact-SHA hosted and workflow_dispatch retries for formal/aarch64 remain Docker-registry infrastructure failures; retry after registry rate window, then create receipt and release. |
+| Next action | Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green. Repository quality 37990474230 and Rust 37990474203 passed. Retry formal/aarch64 only after Docker Hub runner rate window clears; then create receipt and release. |
 
 ### AR-1771 — Human status and quiet-output contract
 
@@ -3977,3 +3977,4 @@ flowchart LR
 | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
+| [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |

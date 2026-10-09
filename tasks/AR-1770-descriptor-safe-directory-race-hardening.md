@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green. Repository quality 37990474230 and Rust 37990474203 passed. Repeated exact-SHA hosted and workflow_dispatch retries for formal/aarch64 remain Docker-registry infrastructure failures; retry after registry rate window, then create receipt and release.",
+  "next_action": "Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green. Repository quality 37990474230 and Rust 37990474203 passed. Retry formal/aarch64 only after Docker Hub runner rate window clears; then create receipt and release.",
   "observed_branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "observed_dirty": 0,
   "observed_head": "6278fcd6720f39de456a791f0c73e6327ff6e25d",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 249,
+  "task_revision": 250,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T21:36:36+00:00",
+  "updated_at": "2026-10-09T21:36:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -831,3 +831,10 @@ implementation boundary explicitly and keep the product offline after install.
   2b0e3ebbafc3d0abac33830b2817cb2f32d9469e17e1c9bfdb5a82e88143a947.
 
 - 2026-10-09T21:36:36+00:00: Heartbeat by codex-ar1770-descriptor-safe-races.
+
+- 2026-10-09T21:36:44+00:00: Latest exact-SHA workflow_dispatch attempts: aarch64 37993714381 and
+  formal 37993742442 both headSha dc67390494805693aef21d917319253b2e705da7; aarch64 failed Docker
+  Ubuntu pull toomanyrequests, formal failed Docker eclipse-temurin pull toomanyrequests while
+  Kani/Loom passed. Original and prior retries remain 37990474021/37990474025,
+  37992462857/37992484669. All non-container post-merge gates are green. No receipt, accept,
+  release, or gate weakening performed.
