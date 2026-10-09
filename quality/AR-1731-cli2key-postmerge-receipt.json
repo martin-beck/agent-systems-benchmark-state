@@ -1,0 +1,12 @@
+{
+  "ar": "AR-1731",
+  "implementation_pull_request": 527,
+  "implementation_head": "6386e066b37a99692e3343f6162d648a8cb506f0",
+  "implementation_merge": "b3cb9b256cccc15be682dbb1019a239b50edf6cd",
+  "provenance_repair_ar": "AR-1758",
+  "repair_pull_request": 528,
+  "verified_main_merge": "021ca1c39ff0199aa2c193026783712bc73bc51b",
+  "exact_main_result": "all required workflows successful",
+  "review": "independent technical review recorded on PR #527 and repair PR #528",
+  "focused_tests": "asb-agents library and cli2key binding hostile tests passed"
+}

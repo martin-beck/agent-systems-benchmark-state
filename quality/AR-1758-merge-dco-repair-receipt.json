@@ -1,0 +1,16 @@
+{
+  "ar": "AR-1758",
+  "repair_pull_request": 528,
+  "repair_head": "00f0525cbf09b927e722b9a9423231fa74df894f",
+  "merge_commit": "021ca1c39ff0199aa2c193026783712bc73bc51b",
+  "parents": [
+    "b3cb9b256cccc15be682dbb1019a239b50edf6cd",
+    "00f0525cbf09b927e722b9a9423231fa74df894f"
+  ],
+  "tree": "980a60bd5f331066ab41d90bb1f8b52058a15190",
+  "signature_and_dco": "verified",
+  "exact_main_workflows": "all required workflows successful",
+  "provenance_run": 37934176111,
+  "repair_method": "tools/integration/merge_pr.py exact base/head/tree with --push",
+  "history_rewrite": false
+}
