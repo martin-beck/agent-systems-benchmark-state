@@ -18,21 +18,21 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #518 | `repair/ar-1751-gcc-linker-prefix-confinement@d0ab2af3fed2` | `main` | BLOCKED | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(tui): confine GCC linker prefix |
+| #518 | `repair/ar-1751-gcc-linker-prefix-confinement@d0ab2af3fed2` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(tui): confine GCC linker prefix |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37868391747 | `d0ab2af3fed2` | pull_request | Huawei MIT source headers | completed:success |
-| 37868391653 | `d0ab2af3fed2` | pull_request | Formal assurance | in_progress:- |
+| 37868391653 | `d0ab2af3fed2` | pull_request | Formal assurance | completed:success |
 | 37868391565 | `d0ab2af3fed2` | pull_request | Portable protected-main provenance | completed:success |
-| 37868391554 | `d0ab2af3fed2` | pull_request | Fault assurance | in_progress:- |
-| 37868391527 | `d0ab2af3fed2` | pull_request | Cross-repository development broker qualification | in_progress:- |
-| 37868391495 | `d0ab2af3fed2` | pull_request | Credential-free benchmark path | in_progress:- |
-| 37868391459 | `d0ab2af3fed2` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 37868391449 | `d0ab2af3fed2` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 37868391433 | `d0ab2af3fed2` | pull_request | Repository quality | in_progress:- |
-| 37868391414 | `d0ab2af3fed2` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 37868391381 | `d0ab2af3fed2` | pull_request | Rust verification | in_progress:- |
+| 37868391554 | `d0ab2af3fed2` | pull_request | Fault assurance | completed:success |
+| 37868391527 | `d0ab2af3fed2` | pull_request | Cross-repository development broker qualification | completed:success |
+| 37868391495 | `d0ab2af3fed2` | pull_request | Credential-free benchmark path | completed:success |
+| 37868391459 | `d0ab2af3fed2` | pull_request | Hosted portability and native qualification | completed:success |
+| 37868391449 | `d0ab2af3fed2` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37868391433 | `d0ab2af3fed2` | pull_request | Repository quality | completed:success |
+| 37868391414 | `d0ab2af3fed2` | pull_request | Emulated aarch64 portability | completed:success |
+| 37868391381 | `d0ab2af3fed2` | pull_request | Rust verification | completed:success |
 | 37852141200 | `31ca7a481fca` | push | Emulated aarch64 portability | completed:success |
