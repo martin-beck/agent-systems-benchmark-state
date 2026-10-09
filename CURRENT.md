@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | PR #539 is open at exact head 876e6f98d6a9e8b419cbcf83cb34d8a8903f47cd; wait for independent exact-head review and required CI. Parent coordinator must create dependent race-hardening/matrix repair AR before accepting. | codex-ar1767-directory-preparation |
+| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | Monitor PR #539 exact-head CI/review; do not merge until all required checks green. Keep residual race-hardening/matrix repair AR dependency explicit. | codex-ar1767-directory-preparation |
 
 ## Open
 
