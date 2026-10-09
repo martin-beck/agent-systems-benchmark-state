@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37954913586 | `a11c94b50d49` | pull_request | Repository quality | in_progress:- |
 | 37954913501 | `a11c94b50d49` | pull_request | Rust verification | in_progress:- |
 | 37954913498 | `a11c94b50d49` | pull_request | Huawei MIT source headers | completed:success |
-| 37954913442 | `a11c94b50d49` | pull_request | Fault assurance | in_progress:- |
+| 37954913442 | `a11c94b50d49` | pull_request | Fault assurance | completed:success |
 | 37954913375 | `a11c94b50d49` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37954913321 | `a11c94b50d49` | pull_request | Credential-free benchmark path | completed:success |
 | 37954913308 | `a11c94b50d49` | pull_request | Emulated aarch64 portability | in_progress:- |
