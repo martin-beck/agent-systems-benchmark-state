@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Run focused discovery and CLI tests with one cargo filter at a time, then full gates.",
+  "next_action": "Add public API documentation to discovery module, rerun focused tests, then full gates.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 5,
   "observed_head": "ea5e52bfe843969c493f22146f66ccfa2415159a",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:50:09+00:00",
+  "updated_at": "2026-10-09T15:50:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -140,3 +140,7 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:50:09+00:00: Recorded command exit 101; command argv SHA-256
   62ef8d684d2d242b4241eec9f870d2300b4e9f4577ec87169e464167da61d100.
+
+- 2026-10-09T15:50:27+00:00: Focused test retry stopped at compile gate: public discovery API lacked
+  required rustdoc under workspace missing-docs policy (23 diagnostics). Added documentation for
+  schema, source enum, report/entry fields, and discover function; no behavioral failure.
