@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Connect Codex adapter to cli2key backend",
-  "updated_at": "2026-10-09T12:33:20+00:00",
+  "updated_at": "2026-10-09T12:33:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1731-cli2key-adapter"
 }
 ---
@@ -71,3 +71,6 @@ OpenRouter, ambient Codex defaults, or a different endpoint/model.
 
 - 2026-10-09T12:33:20+00:00: Recorded command exit 0; command argv SHA-256
   088b24c762f50a0757e6c661e5f3954c20c2a2c11318582937124be046a41f50.
+
+- 2026-10-09T12:33:46+00:00: Recorded command exit 0; command argv SHA-256
+  feec1ff0d170bea958888980a584bf60d26be6fe6d151c8cb522689379b4e121.
