@@ -802,11 +802,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1751-linker-confinement-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries. |
@@ -1621,7 +1621,7 @@ flowchart LR
         AR_1748["AR-1748 - Done"]:::status_done
         AR_1749["AR-1749 - Done"]:::status_done
         AR_1750["AR-1750 - Done"]:::status_done
-        AR_1751["AR-1751 - Open"]:::status_open
+        AR_1751["AR-1751 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
