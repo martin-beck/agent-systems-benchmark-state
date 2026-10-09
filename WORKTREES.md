@@ -386,7 +386,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1748-portable-main-provenance` | `repair/ar-1748-portable-main-provenance` | `7c3e9e3eca96` | 0 | behind 15, ahead 0 |
 | `agent-systems-benchmark-ar-1750-ruleset-response-normalization` | `repair/ar-1750-ruleset-response-normalization` | `cb8be7e4ea88` | 0 | behind 11, ahead 0 |
 | `agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement` | `integration/ar-1751-gcc-linker-prefix` | `31ca7a481fca` | 0 | behind 10, ahead 0 |
-| `agent-systems-benchmark-ar-1752` | `repair/ar-1752-development-broker-v115-projection` | `f3840f351c9d` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1752` | `repair/ar-1752-development-broker-v115-projection` | `f3840f351c9d` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/control.rs` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 346, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 346, ahead 830 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 346, ahead 89 |
