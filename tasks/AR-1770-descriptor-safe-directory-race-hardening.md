@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T21:43:28+00:00",
+  "claim_expires": "2026-10-09T21:51:31+00:00",
   "depends_on": [
     "AR-1767"
   ],
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 233,
+  "task_revision": 234,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T21:19:17+00:00",
+  "updated_at": "2026-10-09T21:21:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -782,3 +782,5 @@ implementation boundary explicitly and keep the product offline after install.
   37992462857 failed Docker Hub toomanyrequests; formal 37992484669 had Kani/Loom success but TLC
   container auth timeout. Original and rerun IDs retained: aarch64 37990474021, formal 37990474025.
   Receipt/accept/release remain prohibited.
+
+- 2026-10-09T21:21:31+00:00: Heartbeat by codex-ar1770-descriptor-safe-races.
