@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37943533688 | `27d7c931a6f3` | push | Rust verification | in_progress:- |
 | 37943533666 | `27d7c931a6f3` | push | Repository quality | in_progress:- |
 | 37943533648 | `27d7c931a6f3` | push | Fault assurance | in_progress:- |
-| 37943533600 | `27d7c931a6f3` | push | Portable protected-main provenance | completed:failure |
+| 37943533600 | `27d7c931a6f3` | push | Portable protected-main provenance | queued:- |
 | 37943533576 | `27d7c931a6f3` | push | Huawei MIT source headers | completed:success |
 | 37943533477 | `27d7c931a6f3` | push | Hosted portability and native qualification | in_progress:- |
 | 37943533442 | `27d7c931a6f3` | push | Cross-repository development broker qualification | in_progress:- |
