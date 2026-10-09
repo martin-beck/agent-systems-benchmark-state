@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T20:18:08+00:00",
+  "updated_at": "2026-10-09T20:18:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -417,3 +417,6 @@ implementation boundary explicitly and keep the product offline after install.
   failure was reproduced locally: formal/Cargo.lock lacked the new rustix dependency introduced by
   this AR; regenerated lock passed the full formal test suite offline (all reported tests green).
   Fresh CI is required.
+
+- 2026-10-09T20:18:14+00:00: Recorded command exit 0; command argv SHA-256
+  8f6fbc3e647390707f716e2638d244cc72ffa2132a5112d19131566eb6b65089.
