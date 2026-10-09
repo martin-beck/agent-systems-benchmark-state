@@ -1,0 +1,62 @@
+AR-1751 GCC linker-prefix confinement receipt
+
+Scope
+- Repository: martin-beck/agent-systems-benchmark
+- Pull request: #518
+- Reviewed candidate chain (additive, no history rewrite):
+  d0ab2af3fed2f73f4c31c56dfbe715f897483e94 ->
+  abf4b6566c6e8bd519840587f440c0977652cc5b ->
+  2cda48c27ae99381a59dc0676126b34ec77d15ef
+- Reviewed candidate tree: 5b75e55c7d4ee1e58df42b1e9989a96ab8994995
+- Signed reviewed-tree merge: 69bf9029a4976f14739cf4c25949428ff2fe0bb7
+- Merge tree: 5b75e55c7d4ee1e58df42b1e9989a96ab8994995
+
+Implementation and adversarial evidence
+- The development GCC capability probe uses an owned process group and retains
+  the leader until descendant termination, bounded drain, and reap complete.
+- Nonblocking output drain performs at most 16 read attempts per pass, yielding
+  to wall-clock, quota, and process-group enforcement even under continuous
+  hostile stdout while preserving the aggregate 128 KiB oversized-output rule.
+- Deterministic hostile regressions cover a descendant retaining stdout and the
+  linker-prefix descriptor, a continuously writing descendant, timeout cleanup,
+  descendant disappearance, and CLOEXEC restoration on every return path.
+- PATH-free real Cargo linking and hostile sibling/library-prefix regressions
+  preserve the existing AR-1737 trust boundary.
+
+Local qualification
+- Focused continuous-writer regression: pass (1/1).
+- Focused bounded runner regression: pass (1/1).
+- asb-cli library suite: pass (244/244).
+- Full locked workspace tests, workspace clippy with warnings denied, rustdoc
+  with warnings denied, and locked release build: pass.
+- Coverage: pass; 95.88% lines and 92.97% regions.
+- Repository policy, Gitleaks, cargo-deny, cargo-audit, and contract consistency:
+  pass.
+
+Independent review and hosted candidate qualification
+- Independent review rejected d0ab2af for unowned probe descendants; repaired
+  additively by abf4b656.
+- Independent rereview rejected abf4b656 for unbounded continuously readable
+  drain work; repaired additively by 2cda48c.
+- Independent final rereview approved exact candidate 2cda48c/tree 5b75e55c.
+- All 15 pull-request checks were terminal success on the approved candidate,
+  including Rust verification 37872776141, repository quality 37872776367,
+  emulated aarch64 37872776350, exact TUI inherited-fd/PTY 37872776452,
+  formal assurance 37872776391, fault assurance 37872776422, platform evidence
+  37872776471, and credential-free path 37872776384.
+
+Merge and exact-main qualification
+- PR #518 merged through the reviewed-tree integration path as signed+DCO merge
+  69bf9029; its tree exactly equals approved candidate tree 5b75e55c.
+- All 10 exact-main push workflows were terminal success:
+  Rust verification 37873753767; repository quality 37873753816; emulated
+  aarch64 37873753788; cross-repository broker qualification 37873753791;
+  credential-free path 37873753776; formal assurance 37873753787; fault
+  assurance 37873753798; hosted portability 37873753778; protected-main
+  provenance 37873753802; Huawei MIT headers 37873753777.
+
+Privacy
+- This receipt contains only public repository identities, commit/tree hashes,
+  workflow run identifiers, bounded test results, and design facts. It contains
+  no credentials, tokens, secret values, private filesystem paths, or raw user
+  content.
