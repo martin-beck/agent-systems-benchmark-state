@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Add the missing enum-level rustdoc, rerun focused tests, then full gates. |
+| Next action | Repair probe loop syntax, then rerun focused tests. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 

@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Add the missing enum-level rustdoc, rerun focused tests, then full gates.",
+  "next_action": "Repair probe loop syntax, then rerun focused tests.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 1,
   "observed_head": "5322501712aac2ed60976ffad28def0ec4f7cf95",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:53:11+00:00",
+  "updated_at": "2026-10-09T15:53:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -174,3 +174,7 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:53:08+00:00: Recorded command exit 1; command argv SHA-256
   27cc9c3bd0c4b3c18fe49e5dc258038875e791793f69b05c221ffabfac2d0776.
+
+- 2026-10-09T15:53:25+00:00: Focused retry could not parse tool_discovery after probe bounded-output
+  hardening because the let-status loop lacked a terminating semicolon. Added semicolon; no
+  test/runtime result was produced.
