@@ -12,13 +12,21 @@
   "plan": "../plans/AR-1733-cli2key-qualification.md",
   "priority": "P1",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "sha256:9e39797811159e958693af1382ddbe988ce45cdff2be113b21e05e2805a1f2c3",
+    "evidence_ref": "quality/AR-1733-cli2key-qualification-postmerge-receipt.json",
+    "spec_ref": "specs/AR-1733.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1733.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Qualify and document cli2key development mode",
-  "updated_at": "2026-10-09T14:41:17+00:00",
+  "updated_at": "2026-10-09T14:41:34+00:00",
   "worktree_key": ""
 }
 ---
@@ -142,3 +150,6 @@ or official OpenAI Platform API-key claim.
 
 - 2026-10-09T14:41:17+00:00: Recorded command exit 0; command argv SHA-256
   9a8853b57b2935376abde28ec0d203493cd48fcdf9d9016a9c549db8d86b037d.
+
+- 2026-10-09T14:41:34+00:00: Accepted against merged PR #530 exact tree and all ten terminal-green
+  exact-main workflows, including rerun 37943534736.
