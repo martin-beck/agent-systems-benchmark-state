@@ -10,8 +10,8 @@
   "id": "AR-1762",
   "next_action": "Run explicit product-worktree fmt, clippy, rustdoc, and release gates via handoffctl; then inspect clean diff and commit provenance fixture update.",
   "observed_branch": "feature/ar-1762-tool-discovery",
-  "observed_dirty": 2,
-  "observed_head": "b81ef5c7ebf323ddfc49e5722b070569bc4d2df1",
+  "observed_dirty": 0,
+  "observed_head": "fd0ac87cb270011d0e83987696be6f288b1b3f18",
   "owner": "codex-asb-ar1762-tool-discovery-20261009",
   "plan": "../plans/AR-1762-tool-discovery.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:07:52+00:00",
+  "updated_at": "2026-10-09T16:07:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
