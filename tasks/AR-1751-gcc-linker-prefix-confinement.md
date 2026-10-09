@@ -8,6 +8,9 @@
   ],
   "id": "AR-1751",
   "next_action": "Constrain development Cargo linker handoff so a validated ld cannot widen GCC helper or library trust through -B; add adversarial collect2/library regressions, independent exact-head review, signed reviewed-tree merge, and exact-main post-merge verification.",
+  "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
+  "observed_dirty": 0,
+  "observed_head": "31ca7a481fca8b79bfbff126b92db6c6118beb7c",
   "owner": "codex-asb-ar1751-linker-confinement-20261009",
   "plan": "../plans/AR-1751-gcc-linker-prefix-confinement.md",
   "priority": "P0",
@@ -16,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T00:16:48+00:00",
+  "updated_at": "2026-10-09T00:17:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
