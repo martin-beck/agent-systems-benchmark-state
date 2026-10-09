@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green. Repository quality 37990474230 and Rust 37990474203 passed. Retry formal/aarch64 only after Docker Hub runner rate window clears; then create receipt and release.",
+  "next_action": "Exact-SHA rerun attempts are active: aarch64 37990474021 attempt 7 and formal 37990474025 attempt 6, both at merge dc67390494805693aef21d917319253b2e705da7. Await terminal result; create receipt and release only if both pass.",
   "observed_branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "observed_dirty": 0,
   "observed_head": "6278fcd6720f39de456a791f0c73e6327ff6e25d",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 261,
+  "task_revision": 262,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T22:10:03+00:00",
+  "updated_at": "2026-10-09T22:10:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -871,3 +871,6 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T22:10:03+00:00: Recorded command exit 0; command argv SHA-256
   885c3a98ad9f1a3012dd5dbb6f9cf055ad50e2a9fca1847eff3e9e64c5110de3.
+
+- 2026-10-09T22:10:28+00:00: Recovered expired claim, reconciled/doctor green, and started
+  exact-head reruns after documented Docker registry failures.
