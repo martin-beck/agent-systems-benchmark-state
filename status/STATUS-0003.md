@@ -908,7 +908,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates. |
-| Next action | Promote and claim; preserve the failed merge evidence, use the documented repair path, and publish only through a reviewed PR with signed+DCO exact-main verification. |
+| Next action | PR #528 exact repair head 00f0525 is green except long-running policy and emulated-aarch64 jobs; after terminal success run tools/integration/merge_pr.py with exact base b3cb9b2, head 00f0525, tree 980a60bd, --push, then verify exact-main. |
 
 
 ## Dependency graph
@@ -3745,4 +3745,3 @@ flowchart LR
 | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) |
 | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) |
 | [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) |
-| [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) |

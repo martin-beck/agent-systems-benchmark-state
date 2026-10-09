@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-09T15:01:27+00:00",
   "depends_on": [],
   "id": "AR-1758",
-  "next_action": "Promote and claim; preserve the failed merge evidence, use the documented repair path, and publish only through a reviewed PR with signed+DCO exact-main verification.",
+  "next_action": "PR #528 exact repair head 00f0525 is green except long-running policy and emulated-aarch64 jobs; after terminal success run tools/integration/merge_pr.py with exact base b3cb9b2, head 00f0525, tree 980a60bd, --push, then verify exact-main.",
   "observed_branch": "repair/ar-1758-merge-dco",
   "observed_dirty": 0,
   "observed_head": "b3cb9b256cccc15be682dbb1019a239b50edf6cd",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Repair AR-1731 protected-main merge provenance",
-  "updated_at": "2026-10-09T13:01:27+00:00",
+  "updated_at": "2026-10-09T13:01:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1758-merge-dco"
 }
 ---
@@ -49,3 +49,6 @@ until the repaired exact-main workflows are green.
   e75a34f4f25bb34858aa2834408ca3b44567522e4c707405df70509bd9081ed9.
 
 - 2026-10-09T13:01:27+00:00: Heartbeat by codex-asb-ar1758-merge-dco-repair-20261009.
+
+- 2026-10-09T13:01:34+00:00: Dedicated repair worktree is active; monitored hosted checks and
+  preserved no-history-rewrite path.
