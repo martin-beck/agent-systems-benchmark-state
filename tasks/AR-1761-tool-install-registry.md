@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1761-tool-install-registry",
   "checkpoint_commit": "c34a3d6b52b009d62a513bae6713e748b9dbd1fb",
-  "claim_expires": "2026-10-09T19:19:27+00:00",
+  "claim_expires": "2026-10-09T19:21:48+00:00",
   "depends_on": [
     "AR-1759",
     "AR-1760"
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 268,
+  "task_revision": 269,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T17:20:48+00:00",
+  "updated_at": "2026-10-09T17:21:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -732,3 +732,5 @@ for idempotence; never store API keys or tokens.
   tree 3c66540275ffd8a24822150eacb04878e2c74927. GitHub confirms MERGED at 2026-10-09T17:20:06Z;
   exact main remote matches. Post-merge workflows are running for merge commit; no release/accept
   transition until all required exact-main checks are green.
+
+- 2026-10-09T17:21:48+00:00: Heartbeat by codex-asb-ar1761-tool-install-20261009.
