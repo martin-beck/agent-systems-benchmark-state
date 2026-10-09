@@ -18,18 +18,18 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@b20d22b45b4f` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.22 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #526 | `fix/ar-1755-idempotent-make-install@e8d123ae7904` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix: make ASB install idempotent |
+| #526 | `fix/ar-1755-idempotent-make-install@e8d123ae7904` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix: make ASB install idempotent |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37913575146 | `e8d123ae7904` | pull_request | Formal assurance | in_progress:- |
-| 37913574917 | `e8d123ae7904` | pull_request | Portable protected-main provenance | in_progress:- |
+| 37913574917 | `e8d123ae7904` | pull_request | Portable protected-main provenance | completed:success |
 | 37913574914 | `e8d123ae7904` | pull_request | Repository quality | in_progress:- |
 | 37913574876 | `e8d123ae7904` | pull_request | Credential-free benchmark path | in_progress:- |
 | 37913574853 | `e8d123ae7904` | pull_request | Fault assurance | in_progress:- |
-| 37913574851 | `e8d123ae7904` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 37913574851 | `e8d123ae7904` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37913574840 | `e8d123ae7904` | pull_request | Rust verification | in_progress:- |
 | 37913574836 | `e8d123ae7904` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 37913574831 | `e8d123ae7904` | pull_request | Emulated aarch64 portability | in_progress:- |

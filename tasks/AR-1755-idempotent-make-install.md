@@ -9,7 +9,7 @@
   "id": "AR-1755",
   "next_action": "Run complete locked workspace and policy gates on the narrow install-boundary repair, then commit signed+DCO and publish the exact candidate for independent review and hosted CI.",
   "observed_branch": "fix/ar-1755-idempotent-make-install",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "e8d123ae790420c2fcac06c33fe79a6ef4fec98c",
   "owner": "codex-asb-ar1755-install-20261009",
   "plan": "../plans/AR-1755-idempotent-make-install.md",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T09:48:33+00:00",
+  "updated_at": "2026-10-09T09:48:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
