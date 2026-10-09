@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T20:28:39+00:00",
+  "updated_at": "2026-10-09T20:29:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -491,3 +491,6 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T20:28:39+00:00: Recorded command exit 0; command argv SHA-256
   96221c33afe9e533d3b135c51b63a0078c4ed4a76feeeb0eb57bbadc976bb2ca.
+
+- 2026-10-09T20:29:05+00:00: Recorded command exit 0; command argv SHA-256
+  f24dafa9a9f9477b07be7cf723c09279185f623e38aa98b41ee8bc00d334738d.
