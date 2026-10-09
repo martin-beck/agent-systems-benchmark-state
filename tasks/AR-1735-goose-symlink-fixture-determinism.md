@@ -10,6 +10,14 @@
   "plan": "../plans/AR-1735-goose-symlink-fixture-determinism.md",
   "priority": "P1",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:88e3b7d2743122372a9a3685d5e73eea5ecdb3df3bb8556b095818f44ea8240e",
+    "evidence_ref": "quality/AR-1735-goose-symlink-fixture-determinism-receipt.txt",
+    "spec_ref": "specs/AR-1735.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1735.json",
   "spec_revision": 1,
   "status": "in_progress",

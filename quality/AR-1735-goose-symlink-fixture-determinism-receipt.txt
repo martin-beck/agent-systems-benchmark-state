@@ -1,0 +1,64 @@
+AR-1735 Goose diagnostic fixture determinism receipt
+
+Scope and historical observation
+- Repository: martin-beck/agent-systems-benchmark
+- Pull request: #521
+- Historical exact-main run 37712243495 at 736a65cd8904b8f4a6f1715fc86ae1c854fe2232
+  failed attempt 1 because the fixture returned an ordinary exit-127 outcome before
+  the required-extension diagnostic was observed; attempt 2 passed at the same SHA.
+- The repair orders the fixture diagnostic before its terminal-looking JSON output.
+  Production adapter failure classification, redaction, symlink rejection, and
+  cleanup code are unchanged.
+
+Deterministic and local evidence
+- Pre-repair current-tree emulated AArch64 bounding run: 200/200 pass; the hosted
+  same-SHA attempt split remains the bounded race observation.
+- Post-repair focused regression: 100/100 native and 100/100 emulated AArch64 pass.
+- CI repeats the exact focused regression 32 times on native and emulated AArch64.
+- Full asb-agents suite, full locked workspace tests, formatting, clippy, rustdoc,
+  release build, coverage, Cargo Deny, cargo-audit, repository policy, signature
+  policy, actionlint with ShellCheck, zizmor, and Gitleaks passed.
+
+Independent review and candidate qualification
+- Initial candidate 6e721e2c97a37149191457ce2019d8b3f13a4d46 tree
+  9de421b4e1120bb706e753de951a1b351d5138fe was rejected for ShellCheck SC2034
+  because the repetition counters were unused.
+- The additive repair reports each repetition and produced signed+DCO candidate
+  3aea09da2646180cbc1c05f5f022362552377595 with tree
+  a844b2f70a925535950e12fdb6bb3001a99d77ea.
+- Independent rereview approved that exact base/head/tree with no findings.
+- All 15 exact-head checks were terminal success, including Rust verification
+  37879428622, repository quality 37879428697, emulated AArch64 37879428618,
+  cross-repository broker qualification 37879428635, formal assurance
+  37879428681, fault assurance 37879428613, hosted portability 37879428639,
+  credential-free path 37879428789, protected-main provenance 37879428605,
+  AWQ shadow 37879428640, and Huawei MIT headers 37879428619.
+
+Merge and exact-main qualification
+- Reviewed-tree integration produced signed+DCO merge
+  f3840f351c9da1657ad44af594cf2b6ae8b419c9 with parents
+  5f9850c138871cd7e2537955e85258030b463eea and
+  3aea09da2646180cbc1c05f5f022362552377595.
+- Merge tree a844b2f70a925535950e12fdb6bb3001a99d77ea exactly equals the
+  independently reviewed candidate tree.
+- All 10 required exact-main push workflows were terminal success: Rust
+  verification 37880393606; repository quality 37880393565; emulated AArch64
+  37880393627; cross-repository broker qualification 37880393591;
+  credential-free path 37880393637; formal assurance 37880393599; fault
+  assurance 37880393608; hosted portability 37880393618; protected-main
+  provenance 37880393782; Huawei MIT headers 37880393595.
+- Unrelated dynamic Dependabot run 37880478194 is excluded from product
+  acceptance.
+
+Spec acceptance
+- deterministic-diagnostic: pass
+- no-semantic-weakening: pass
+- portable-repeat: pass
+- repetition gate: pass
+- hosted gate: pass
+- definition of done: pass
+
+Privacy
+- This receipt contains only public repository identities, commit/tree hashes,
+  workflow identifiers, bounded test results, and design facts. It contains no
+  credentials, tokens, secret values, private filesystem paths, or raw user data.
