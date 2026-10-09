@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair development broker v1.15 dynamic-catalog projection",
-  "updated_at": "2026-10-09T03:34:23+00:00",
+  "updated_at": "2026-10-09T03:35:16+00:00",
   "worktree_key": ""
 }
 ---
@@ -55,3 +55,6 @@ until this repair produces a reviewed current-main receipt. The eventual public
 journey evidence must contain no credential value or raw provider payload.
 
 - 2026-10-09T03:34:23+00:00: Claimed by codex-ar1752-v115-projection-20261009.
+
+- 2026-10-09T03:35:16+00:00: Recorded command exit 0; command argv SHA-256
+  0cfdba1bb7f3b56220c6a197e7721e065a7fa52691a568c597b93c32f8f0c83a.
