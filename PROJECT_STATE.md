@@ -18,21 +18,21 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@b20d22b45b4f` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.22 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #530 | `feature/ar-1733-cli2key-qualification@61e5e0ed50dc` | `main` | BLOCKED | - | test(cli2key): qualify credential-free development journey |
+| #530 | `feature/ar-1733-cli2key-qualification@61e5e0ed50dc` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | test(cli2key): qualify credential-free development journey |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37941997252 | `61e5e0ed50dc` | pull_request | Cross-repository development broker qualification | queued:- |
+| 37941997238 | `61e5e0ed50dc` | pull_request | Rust verification | pending:- |
+| 37941997214 | `61e5e0ed50dc` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37941997177 | `61e5e0ed50dc` | pull_request | Fault assurance | in_progress:- |
+| 37941997123 | `61e5e0ed50dc` | pull_request | Emulated aarch64 portability | pending:- |
+| 37941997063 | `61e5e0ed50dc` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37941997025 | `61e5e0ed50dc` | pull_request | Portable protected-main provenance | completed:success |
+| 37941997011 | `61e5e0ed50dc` | pull_request | Huawei MIT source headers | completed:success |
+| 37941996983 | `61e5e0ed50dc` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37941996973 | `61e5e0ed50dc` | pull_request | Formal assurance | queued:- |
+| 37941996971 | `61e5e0ed50dc` | pull_request | Repository quality | pending:- |
 | 37941805912 | `56c5ba353b80` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37941805897 | `56c5ba353b80` | pull_request | Formal assurance | in_progress:- |
-| 37941805807 | `56c5ba353b80` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 37941805800 | `56c5ba353b80` | pull_request | Cross-repository development broker qualification | in_progress:- |
-| 37941805796 | `56c5ba353b80` | pull_request | Rust verification | in_progress:- |
-| 37941805782 | `56c5ba353b80` | pull_request | Credential-free benchmark path | completed:failure |
-| 37941805777 | `56c5ba353b80` | pull_request | Portable protected-main provenance | completed:success |
-| 37941805764 | `56c5ba353b80` | pull_request | Huawei MIT source headers | completed:success |
-| 37941805708 | `56c5ba353b80` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 37941805660 | `56c5ba353b80` | pull_request | Repository quality | in_progress:- |
-| 37941805636 | `56c5ba353b80` | pull_request | Fault assurance | in_progress:- |
-| 37941147068 | `75fdf68dd84f` | pull_request | Cross-repository development broker qualification | completed:success |
