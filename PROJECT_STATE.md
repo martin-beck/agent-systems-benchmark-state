@@ -30,8 +30,8 @@ Generated from local Git and GitHub. Do not edit.
 | 37938978794 | `942c7b110045` | push | Emulated aarch64 portability | in_progress:- |
 | 37938978789 | `942c7b110045` | push | Credential-free benchmark path | in_progress:- |
 | 37938978769 | `942c7b110045` | push | Cross-repository development broker qualification | in_progress:- |
-| 37938978758 | `942c7b110045` | push | Huawei MIT source headers | in_progress:- |
+| 37938978758 | `942c7b110045` | push | Huawei MIT source headers | completed:success |
 | 37938978737 | `942c7b110045` | push | Fault assurance | in_progress:- |
-| 37938978695 | `942c7b110045` | push | Formal assurance | queued:- |
+| 37938978695 | `942c7b110045` | push | Formal assurance | in_progress:- |
 | 37937701266 | `08226e288e90` | pull_request | Cross-repository development broker qualification | completed:success |
 | 37937701245 | `08226e288e90` | pull_request | Credential-free benchmark path | completed:success |
