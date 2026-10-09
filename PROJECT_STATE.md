@@ -32,6 +32,6 @@ Generated from local Git and GitHub. Do not edit.
 | 37877686938 | `5f9850c13887` | push | Fault assurance | in_progress:- |
 | 37877686933 | `5f9850c13887` | push | Repository quality | in_progress:- |
 | 37877686924 | `5f9850c13887` | push | Rust verification | in_progress:- |
-| 37877686922 | `5f9850c13887` | push | Credential-free benchmark path | in_progress:- |
+| 37877686922 | `5f9850c13887` | push | Credential-free benchmark path | completed:success |
 | 37876829778 | `e00f9cf9b5ce` | pull_request | Huawei MIT source headers | completed:success |
 | 37876829743 | `e00f9cf9b5ce` | pull_request | Formal assurance | completed:success |
