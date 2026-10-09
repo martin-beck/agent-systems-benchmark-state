@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1761](tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | Install supported external ASB tools into a user/project-local root and persist validated records. | Continue monitoring PR #537 exact-head checks; once all required checks are terminal success, record final independent review and approval status. | codex-asb-ar1761-tool-install-20261009 |
+| P0 | [AR-1761](tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | Install supported external ASB tools into a user/project-local root and persist validated records. | Monitor PR #537 exact-head checks and independent review. Merge only after every required check is terminal success and review evidence is fresh; then verify exact main/post-merge receipts and accept/release AR-1761. | codex-asb-ar1761-tool-install-20261009 |
 
 ## Open
 

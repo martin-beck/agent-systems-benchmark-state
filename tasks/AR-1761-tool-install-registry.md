@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Continue monitoring PR #537 exact-head checks; once all required checks are terminal success, record final independent review and approval status.",
+  "next_action": "Monitor PR #537 exact-head checks and independent review. Merge only after every required check is terminal success and review evidence is fresh; then verify exact main/post-merge receipts and accept/release AR-1761.",
   "observed_branch": "feature/ar-1761-tool-install-registry-v2",
   "observed_dirty": 0,
   "observed_head": "fe6aa7c346e5db1210748c485050c7fff6d0d284",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 241,
+  "task_revision": 242,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T17:10:17+00:00",
+  "updated_at": "2026-10-09T17:10:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -642,3 +642,10 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T17:10:12+00:00: Recorded command exit 0; command argv SHA-256
   7b260f73c8ce96062ec2dee46398dc707af2dbf2384c706c8d0eba055bcbcb58.
+
+- 2026-10-09T17:10:27+00:00: Requalified after AR-1762 merged at exact main
+  3cab69a1885f4bd3444c7d22aaac7eb96fbbadff. Resolved merge conflicts preserving AR-1761 installer
+  plus AR-1762 discovery; signed+DCO merge commit fe6aa7c346e5db1210748c485050c7fff6d0d284 has
+  parents 95e540b and 3cab69a. Serialized local format, clippy, workspace tests, docs, release
+  build, focused tests, and coverage run completed; explicit generated profraw artifacts removed. PR
+  #537 now points exact head fe6aa7c and base 3cab69a; fresh exact-head CI is running.

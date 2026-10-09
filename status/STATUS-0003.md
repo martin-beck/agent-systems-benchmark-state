@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Continue monitoring PR #537 exact-head checks; once all required checks are terminal success, record final independent review and approval status. |
+| Next action | Monitor PR #537 exact-head checks and independent review. Merge only after every required check is terminal success and review evidence is fresh; then verify exact main/post-merge receipts and accept/release AR-1761. |
 
 ### AR-1762 — Discover system and project ASB tools
 
