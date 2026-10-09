@@ -65,8 +65,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 13, ahead 0 |
-| `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `a983e2b913ea` | 3 | behind 0, ahead 9 |
-| changed files | - | - | - | `crates/asb-cli/fixtures/human/public-family-output-v1.tsv`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/tests/human_cli.rs` |
+| `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `b95c89db086a` | 0 | behind 0, ahead 10 |
 | `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery-v2` | `26161a060868` | 0 | behind 0, ahead 6 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 106, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 94, ahead 0 |
@@ -274,6 +273,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1721-tui-provider-router` | `repair/ar-1721-tui-provider-router` | `8345a9890e5b` | 0 | behind 122, ahead 0 |
 | `asb-ar1729-merge` | `DETACHED` | `4f460a6aa707` | 0 | behind 34, ahead 0 |
 | `asb-ar1750-integration.fOtNyt` | `DETACHED` | `dc19bb1b758a` | 0 | behind 54, ahead 0 |
+| `asb-ar1761-review` | `DETACHED` | `644085ecd2f3` | 0 | behind 7, ahead 6 |
 | `asb-goose-repair` | `repair/ar-1730-goose-aarch64-diagnostic` | `71b48057cd03` | 0 | behind 107, ahead 0 |
 | `asb-pr492-review` | `repair/pr492-coverage-cleanup` | `358bd9a2816f` | 0 | behind 117, ahead 0 |
 | `asb-pr499-rereview-d9ef0bc` | `DETACHED` | `d9ef0bce9bf6` | 0 | behind 104, ahead 0 |
