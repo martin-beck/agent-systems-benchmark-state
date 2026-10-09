@@ -7,7 +7,7 @@
   "id": "AR-1742",
   "next_action": "Promote after reviewing the preserved PR #505 mismatch and exact signed local integration procedure.",
   "observed_branch": "repair/ar-1742-pr505-exact-tree",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "f18aef14c8f8ad0438504a6c000e2a49d8cbd5c1",
   "owner": "codex-asb-ar1742-recovery-20261009",
   "plan": "../plans/AR-1742-protected-main-exact-tree-recovery.md",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover PR #505 protected-main exact-tree publication failure without rewriting history.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "PR #505 exact-tree recovery",
-  "updated_at": "2026-10-09T02:45:23+00:00",
+  "updated_at": "2026-10-09T02:53:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1742-exact-tree-recovery"
 }
 ---

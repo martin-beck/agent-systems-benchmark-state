@@ -379,7 +379,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `617af40b356f` | 0 | behind 30, ahead 0 |
 | `agent-systems-benchmark-ar-1740-repository-makefile` | `feature/ar-1740-repository-makefile` | `d0c692690564` | 0 | behind 38, ahead 0 |
 | `agent-systems-benchmark-ar-1741-signed-main-recovery-ar1738` | `repair/ar-1741-signed-main-recovery-ar1738` | `0c100e4624a6` | 0 | behind 40, ahead 0 |
-| `agent-systems-benchmark-ar-1742-exact-tree-recovery` | `repair/ar-1742-pr505-exact-tree` | `f18aef14c8f8` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1742-exact-tree-recovery` | `repair/ar-1742-pr505-exact-tree` | `f18aef14c8f8` | 1 | behind 0, ahead 1 |
+| changed files | - | - | - | `docs/release/AR-1742-pr505-exact-tree-recovery.md` |
 | `agent-systems-benchmark-ar-1744-make-test-scratch-isolation` | `repair/ar-1744-make-test-scratch-isolation` | `3a14e8846af4` | 0 | behind 13, ahead 0 |
 | `agent-systems-benchmark-ar-1745-user-local-install-prefix` | `feature/ar-1745-user-local-install-prefix` | `250ef6658e0c` | 0 | behind 24, ahead 0 |
 | `agent-systems-benchmark-ar-1746-protected-main-admission` | `repair/ar-1746-protected-main-admission` | `fee04c29616b` | 0 | behind 11, ahead 0 |
