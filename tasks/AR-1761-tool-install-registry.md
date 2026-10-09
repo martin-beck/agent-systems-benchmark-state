@@ -10,8 +10,8 @@
   "id": "AR-1761",
   "next_action": "Push exact clean head b95c89d to PR #534; verify exact current base and request fresh independent review/CI. Do not merge until all required checks are green.",
   "observed_branch": "feature/ar-1761-tool-install-registry-v2",
-  "observed_dirty": 1,
-  "observed_head": "35df54bc79d029398caa818df14a4b3c75900fa2",
+  "observed_dirty": 0,
+  "observed_head": "bcdbeb83d269babf38989ba23b5bf06dc5b815b9",
   "owner": "codex-asb-ar1761-tool-install-20261009",
   "plan": "../plans/AR-1761-tool-install-registry.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:36:05+00:00",
+  "updated_at": "2026-10-09T16:36:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
