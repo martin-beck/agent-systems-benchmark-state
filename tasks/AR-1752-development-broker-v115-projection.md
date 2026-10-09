@@ -12,13 +12,21 @@
   "plan": "../plans/AR-1752-development-broker-v115-projection.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:2e77c97c8d925c3d9e7200459fe129f6053b76535ff095ada6e02b7fe7476f0f",
+    "evidence_ref": "quality/AR-1752-development-broker-v115-projection-closeout-20261009.json",
+    "spec_ref": "specs/AR-1752.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1752.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Repair development broker v1.15 dynamic-catalog projection",
-  "updated_at": "2026-10-09T04:48:42+00:00",
+  "updated_at": "2026-10-09T04:49:29+00:00",
   "worktree_key": ""
 }
 ---
@@ -160,3 +168,6 @@ journey evidence must contain no credential value or raw provider payload.
 
 - 2026-10-09T04:48:42+00:00: Recorded command exit 0; command argv SHA-256
   d450b05cfbee2494df4bca9c024b8601be701685de5efe3d0ee716fbe4f4f6de.
+
+- 2026-10-09T04:49:29+00:00: Recorded command exit 0; command argv SHA-256
+  2cb95feae7eb9ed668a0b3ba9d2d752799cf5642c2dda7fe4466a8a82f05523c.
