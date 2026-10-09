@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md) |
 | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md) | [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0903](../tasks/AR-0903-release-qualification.md) | None |
 | [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | None |
 | [AR-0848](../tasks/AR-0848-native-x86-capacity.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md) |
@@ -641,4 +642,3 @@
 | [AR-1751](../tasks/AR-1751-gcc-linker-prefix-confinement.md) | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md) | None |
 | [AR-1752](../tasks/AR-1752-development-broker-v115-projection.md) | [AR-1719](../tasks/AR-1719.md) | None |
 | [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | [AR-1749](../tasks/AR-1749-coordinator-unblock-bootstrap.md) | [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) |
-| [AR-1754](../tasks/AR-1754-default-online-live-workflow.md) | [AR-1699](../tasks/AR-1699.md), [AR-1700](../tasks/AR-1700.md), [AR-1723](../tasks/AR-1723-easy-run-default-online.md), [AR-1724](../tasks/AR-1724-easy-sweep-default-online.md), [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | None |

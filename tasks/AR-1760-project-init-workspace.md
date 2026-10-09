@@ -7,7 +7,7 @@
     "AR-1759"
   ],
   "id": "AR-1760",
-  "next_action": "Implement `asb project init` after AR-1759 is merged.",
+  "next_action": "Repair complete: update the completion contract assertion for the new project command, rerun workspace tests, then complete independent review and exact-head CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:10:54+00:00",
+  "updated_at": "2026-10-09T15:11:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -91,3 +91,8 @@ commands for a fresh user and support `--json` without leaking host secrets.
 
 - 2026-10-09T15:10:54+00:00: Recorded command exit 101; command argv SHA-256
   e722ed1403701d5b7aa87509d78c9e1d3bcfaeb05459ab381d3f44bc7160a842.
+
+- 2026-10-09T15:11:08+00:00: Two exit-101 records at 15:10 were the workspace capability_contract
+  test rejecting the intentionally extended bash completion list (it still expected doctor setup
+  capabilities provider-catalog). No product runtime failure: repair the assertion to require doctor
+  setup capabilities project provider-catalog, then rerun the full workspace gate.

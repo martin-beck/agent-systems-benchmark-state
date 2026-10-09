@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1754](../tasks/AR-1754-default-online-live-workflow.md) | [AR-1699](../tasks/AR-1699.md), [AR-1700](../tasks/AR-1700.md), [AR-1723](../tasks/AR-1723-easy-run-default-online.md), [AR-1724](../tasks/AR-1724-easy-sweep-default-online.md), [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | None |
 | [AR-1755](../tasks/AR-1755-idempotent-make-install.md) | [AR-1745](../tasks/AR-1745-user-local-install-prefix.md) | None |
 | [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) | [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | None |
 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md) | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1555](../tasks/AR-1555.md) | None |
@@ -19,7 +20,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | codex-asb-ar1757-human-output-20261009 | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
-| P0 | [AR-1760](../tasks/AR-1760-project-init-workspace.md): Initialize an ASB benchmark project workspace | codex-asb-ar1760-project-init-20261009 | Add an idempotent ASB project initializer containing config, results, and catalog areas. | Implement &#96;asb project init&#96; after AR-1759 is merged. |
+| P0 | [AR-1760](../tasks/AR-1760-project-init-workspace.md): Initialize an ASB benchmark project workspace | codex-asb-ar1760-project-init-20261009 | Add an idempotent ASB project initializer containing config, results, and catalog areas. | Repair complete: update the completion contract assertion for the new project command, rerun workspace tests, then complete independent review and exact-head CI. |
 
 ### Open (1)
 
@@ -513,5 +514,3 @@
 | P0 | [AR-1626](../tasks/AR-1626.md): ASB-TUI control-loop and PTY launch repair | Unclaimed | Repair the paired development broker/control child-loop launch failure and bounded Unix-socket path handling exposed by AR-1615. | Released after protected-main merge; rerun AR-1615 against the paired repaired heads. |
 | P0 | [AR-1627](../tasks/AR-1627.md): TUI lifecycle test-injection isolation repair | Unclaimed | Eliminate the shared failure-injection race that blocked exact-main AR-1615 Trusted-main qualification. | None; retain the merged repair and exact hosted/local evidence. |
 | P0 | [AR-1628](../tasks/AR-1628.md): Top-level ASB-TUI bootstrap integration repair | Unclaimed | Repair the bootstrap-stage status-2 failure after broker and PTY handoff by skipping unsupported lifecycle polls for unavailable development agents. | None; remaining post-bootstrap timeout is tracked by AR-1629 and coverage hardening by AR-1630. |
-| P0 | [AR-1629](../tasks/AR-1629.md): Post-bootstrap ASB-TUI launch progression | Unclaimed | Repair the remaining exact top-level launch timeout after broker and PTY bootstrap succeed. | No further action; retain the paired launch receipt and continue AR-1615 final qualification. |
-| P0 | [AR-1630](../tasks/AR-1630.md): Development unavailable-agent coverage | Unclaimed | Cover the unavailable-agent bootstrap branch while retaining the protected coverage threshold. | No further action; retain the merged coverage receipt and continue AR-1615 final qualification. |
