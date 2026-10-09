@@ -65,8 +65,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 13, ahead 0 |
 | `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `6ca69c7df59d` | 0 | behind 7, ahead 7 |
-| `agent-systems-benchmark-ar-1762-tool-discovery` | `DETACHED` | `f361cfc7f89a` | 5 | behind 0, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/tool_discovery.rs`, `docs/PROJECT_WORKSPACES.md` |
+| `agent-systems-benchmark-ar-1762-tool-discovery` | `DETACHED` | `aa1d1dbe9635` | 2 | behind 0, ahead 4 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 106, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 40, ahead 0 |
