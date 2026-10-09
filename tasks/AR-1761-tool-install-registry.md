@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Repair destination symlink acceptance in tool_install, add a regression test, rerun full focused/workspace gates and push a fresh exact head; independent review remains pending.",
+  "next_action": "Push exact clean head b95c89d to PR #534; verify exact current base and request fresh independent review/CI. Do not merge until all required checks are green.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 0,
   "observed_head": "b95c89db086a2eff04f1ada7bf0ce9df7de067b4",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:34:15+00:00",
+  "updated_at": "2026-10-09T16:34:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -367,3 +367,12 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T16:34:09+00:00: Recorded command exit 0; command argv SHA-256
   f660170bbb8ca494c8aaf72dae9adb4f0b31ec4f53306907274ffc6ed80832c0.
+
+- 2026-10-09T16:34:22+00:00: Independent review repair complete. Signed+DCO 6ca69c7 rejects existing
+  tool destination symlinks before any digest/read and requires regular-file metadata; regression
+  test proves matching-byte symlink target is untouched. Current base f361cfc was merged in
+  signed+DCO 200c5e3. Main reconciliation required signed+DCO a983e2b/b95c89d to register tool in
+  human command classifier and golden contracts. Focused 7 installer tests plus all 14 human CLI
+  tests pass. Full format/clippy/workspace tests/rustdoc/release build pass. Coverage passes
+  unchanged floors: workspace 90.54% lines, asb-core 99.61%, asb-protocol 96.49%, asb-replay 95.88%.
+  Removed generated profraw files.
