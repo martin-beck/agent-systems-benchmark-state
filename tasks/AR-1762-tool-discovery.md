@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:56:49+00:00",
+  "updated_at": "2026-10-09T15:56:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -219,3 +219,6 @@ development authentication/signatures/keys are absent.
   inspect_candidate_with: 8 arguments violates clippy::too_many_arguments under -D warnings.
   Refactoring source/root/project-local/version fields into CandidateContext; no functional gate
   failure.
+
+- 2026-10-09T15:56:55+00:00: Recorded command exit 0; command argv SHA-256
+  27cc9c3bd0c4b3c18fe49e5dc258038875e791793f69b05c221ffabfac2d0776.
