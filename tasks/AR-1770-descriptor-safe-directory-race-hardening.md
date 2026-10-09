@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Independent reviewer must inspect PR #540 repaired exact head 1e9629b6f37da80a7a3d9d0830df13d55a3cc02e and tree 87a3e4c43377d9481bd9d761e9375ed70ca8a729; then wait for exact-head CI.",
+  "next_action": "Independent reviewer must inspect PR #540 repaired exact head 44667bc73275acc193759f9958d710cc7c80b7f3 and tree a127ae66ab2c19e42cb7960fcbe0c1c59dab94e6; then wait for exact-head CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T20:03:12+00:00",
+  "updated_at": "2026-10-09T20:03:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -306,3 +306,9 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T20:03:12+00:00: Recorded command exit 0; command argv SHA-256
   ddbb5502f0d424795dabf150da7be015ab94ddbaabe138dce1d4d5c038935f17.
+
+- 2026-10-09T20:03:38+00:00: CI header gate repaired with signed DCO commit 44667bc adding the exact
+  required source header to the new descriptor-safe helper. Product branch is attached, clean, and
+  pushed. Prior local gates remain: workspace suites reported passing, CLI 305/305 plus
+  integrations, workload 39+4, clippy, check, workflow transcript 3/3. PR #540 remains blocked
+  pending fresh independent review and exact-head CI.
