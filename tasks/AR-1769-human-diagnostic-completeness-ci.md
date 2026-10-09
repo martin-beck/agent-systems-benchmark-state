@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-10T00:47:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1768"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "observed_dirty": 1,
   "observed_head": "257187d873f2b9620de437838283d2aea7a23881",
-  "owner": "codex-ar1769-diagnostic-ci-terra",
+  "owner": "",
   "plan": "../plans/AR-1769-human-diagnostic-completeness-ci.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1769.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T22:49:28+00:00",
+  "updated_at": "2026-10-09T22:50:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -244,3 +244,7 @@ timeouts/cancellation, partial results, and warning-only development behavior.
 
 - 2026-10-09T22:49:28+00:00: Recorded command exit 0; command argv SHA-256
   0de46a1ecbf928ea4419853f8b841988b6f25d1c83907f516b0c7b9272c91662.
+
+- 2026-10-09T22:50:43+00:00: Recovering idle worker after repeated status-only turns; preserve
+  signed repair checkpoint 257187d and one uncommitted human_cli matrix edit. Reclaim with
+  replacement Terra worker for required timeout/cancellation/partial/warning scenarios.

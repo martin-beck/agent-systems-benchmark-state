@@ -67,17 +67,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | codex-ar1769-diagnostic-ci-terra | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Add a required CI gate and executable negative journey proving every current and future public diagnostic is cataloged, specifically rendered, actionable, and privacy-safe. |
-
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
+| P0 | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | Unclaimed | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Add a required CI gate and executable negative journey proving every current and future public diagnostic is cataloged, specifically rendered, actionable, and privacy-safe. |
 
 ### Blocked (87)
 
