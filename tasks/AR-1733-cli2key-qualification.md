@@ -2,13 +2,13 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T16:24:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1732"
   ],
   "id": "AR-1733",
   "next_action": "Credential-free qualification implementation committed at 12e28f8 and pushed. Run independent review, focused/full tests, open PR, exact-head CI, then merge through merge_pr.py.",
-  "owner": "codex-asb-ar1733-cli2key-20261009",
+  "owner": "",
   "plan": "../plans/AR-1733-cli2key-qualification.md",
   "priority": "P1",
   "schema_version": 1,
@@ -22,11 +22,11 @@
   },
   "spec_ref": "specs/AR-1733.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Qualify and document cli2key development mode",
-  "updated_at": "2026-10-09T14:41:34+00:00",
+  "updated_at": "2026-10-09T14:41:37+00:00",
   "worktree_key": ""
 }
 ---
@@ -153,3 +153,6 @@ or official OpenAI Platform API-key claim.
 
 - 2026-10-09T14:41:34+00:00: Accepted against merged PR #530 exact tree and all ten terminal-green
   exact-main workflows, including rerun 37943534736.
+
+- 2026-10-09T14:41:37+00:00: AR-1733 implementation merged at 27d7c931 and exact-main post-merge
+  qualification is green; receipt recorded.
