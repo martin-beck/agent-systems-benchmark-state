@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T19:41:29+00:00",
+  "updated_at": "2026-10-09T19:41:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -158,3 +158,6 @@ implementation boundary explicitly and keep the product offline after install.
   provenance digest fixture drift; updated the exact lib.rs digest to
   55263b04cf08a8977a2fd6929697d428ff69314ab3fe9a1ebcaae20d8782d39f. Workflow transcript now passes
   3/3.
+
+- 2026-10-09T19:41:36+00:00: Recorded command exit 0; command argv SHA-256
+  7c730eec3ea71bd24ffc5a9255bf7f542481bf601dba6c72bed6e00f6c2fab3c.
