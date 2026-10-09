@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37937701204 | `08226e288e90` | pull_request | Repository quality | in_progress:- |
 | 37937701108 | `08226e288e90` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 37937701061 | `08226e288e90` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37937701028 | `08226e288e90` | pull_request | Fault assurance | queued:- |
+| 37937701028 | `08226e288e90` | pull_request | Fault assurance | in_progress:- |
 | 37937701014 | `08226e288e90` | pull_request | Portable protected-main provenance | completed:success |
 | 37937700939 | `08226e288e90` | pull_request | Huawei MIT source headers | completed:success |
 | 37937700875 | `08226e288e90` | pull_request | Formal assurance | in_progress:- |
