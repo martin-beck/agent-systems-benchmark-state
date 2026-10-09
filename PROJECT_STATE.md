@@ -23,8 +23,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37952105521 | `ea5e52bfe843` | push | Fault assurance | in_progress:- |
-| 37952105285 | `ea5e52bfe843` | push | Cross-repository development broker qualification | in_progress:- |
+| 37952105521 | `ea5e52bfe843` | push | Fault assurance | completed:success |
+| 37952105285 | `ea5e52bfe843` | push | Cross-repository development broker qualification | completed:success |
 | 37952105266 | `ea5e52bfe843` | push | Portable protected-main provenance | completed:success |
 | 37952105205 | `ea5e52bfe843` | push | Hosted portability and native qualification | completed:success |
 | 37952105183 | `ea5e52bfe843` | push | Huawei MIT source headers | completed:success |
