@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T22:40:52+00:00",
+  "updated_at": "2026-10-09T22:41:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -147,3 +147,8 @@ timeouts/cancellation, partial results, and warning-only development behavior.
 
 - 2026-10-09T22:40:52+00:00: Recorded command exit 0; command argv SHA-256
   649e9e1ebfaf13c15c95c6360ca922c0b7c73a9a7fd2cf6943002779fca093b1.
+
+- 2026-10-09T22:41:07+00:00: Candidate 01c2b5a is clean and signed with matching DCO. Focused
+  diagnostic contract/journey, full workspace tests, Clippy, rustdoc, and workflow transcript
+  provenance pass. Obtain independent technical review, publish the exact candidate PR, then require
+  exact-head CI before integration.
