@@ -19,21 +19,21 @@ Generated from local Git and GitHub. Do not edit.
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@b20d22b45b4f` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.22 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #520 | `feature/ar-1728-cli2key-contract@b65cac1f6f4f` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): freeze cli2key development contract |
-| #523 | `feature/ar-1728-cli2key-contract-clean@b10da565c2fa` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): freeze cli2key development contract |
+| #523 | `feature/ar-1728-cli2key-contract-clean@51c2d975d845` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(agents): freeze cli2key development contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37889153365 | `51c2d975d845` | pull_request | Rust verification | in_progress:- |
+| 37889153306 | `51c2d975d845` | pull_request | Portable protected-main provenance | completed:success |
+| 37889153304 | `51c2d975d845` | pull_request | Fault assurance | in_progress:- |
+| 37889153298 | `51c2d975d845` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37889153297 | `51c2d975d845` | pull_request | Formal assurance | in_progress:- |
+| 37889153285 | `51c2d975d845` | pull_request | Repository quality | in_progress:- |
+| 37889153263 | `51c2d975d845` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37889153255 | `51c2d975d845` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37889153250 | `51c2d975d845` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37889153248 | `51c2d975d845` | pull_request | Huawei MIT source headers | completed:success |
+| 37889153244 | `51c2d975d845` | pull_request | Credential-free benchmark path | in_progress:- |
 | 37886555837 | `b10da565c2fa` | pull_request | Huawei MIT source headers | completed:success |
-| 37886555813 | `b10da565c2fa` | pull_request | Fault assurance | completed:success |
-| 37886555792 | `b10da565c2fa` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37886555783 | `b10da565c2fa` | pull_request | Hosted portability and native qualification | completed:success |
-| 37886555753 | `b10da565c2fa` | pull_request | Formal assurance | completed:success |
-| 37886555735 | `b10da565c2fa` | pull_request | Credential-free benchmark path | completed:success |
-| 37886555731 | `b10da565c2fa` | pull_request | Rust verification | completed:success |
-| 37886555730 | `b10da565c2fa` | pull_request | Repository quality | completed:success |
-| 37886555722 | `b10da565c2fa` | pull_request | Cross-repository development broker qualification | completed:success |
-| 37886555721 | `b10da565c2fa` | pull_request | Portable protected-main provenance | completed:success |
-| 37886555719 | `b10da565c2fa` | pull_request | Emulated aarch64 portability | completed:success |
-| 37884751702 | `e21d6bc7ed1c` | push | Hosted portability and native qualification | completed:success |
