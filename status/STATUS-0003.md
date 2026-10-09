@@ -922,7 +922,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define one versioned ASB project/tool inventory and catalog-selection configuration contract. |
-| Next action | Wait for all exact-main post-merge workflows on merge commit 64843f1967370a0fe4df675b4a59f42f58342a14 to finish; then publish post-merge evidence and accept/release AR-1759. |
+| Next action | Wait for exact-main runs 37947479451, 37947479455, and 37947479450 to reach terminal success; then publish evidence and accept/release AR-1759. |
 
 ### AR-1760 — Initialize an ASB benchmark project workspace
 

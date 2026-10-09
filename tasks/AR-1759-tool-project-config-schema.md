@@ -7,7 +7,7 @@
     "AR-1745"
   ],
   "id": "AR-1759",
-  "next_action": "Wait for all exact-main post-merge workflows on merge commit 64843f1967370a0fe4df675b4a59f42f58342a14 to finish; then publish post-merge evidence and accept/release AR-1759.",
+  "next_action": "Wait for exact-main runs 37947479451, 37947479455, and 37947479450 to reach terminal success; then publish evidence and accept/release AR-1759.",
   "observed_branch": "main",
   "observed_dirty": 0,
   "observed_head": "27d7c931a6f3e0adbbe7f4ea9606717f369e9779",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T14:54:55+00:00",
+  "updated_at": "2026-10-09T14:56:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
@@ -121,3 +121,7 @@ unknown-field/path validation.
   3376d5b8f1f171576f2a72cc5a01bee8a192e460 exactly contains reviewed head 36dab7a. All PR checks
   were terminal green. Post-merge exact-main workflows are now running; acceptance waits for their
   terminal success.
+
+- 2026-10-09T14:56:49+00:00: Post-merge exact-main monitoring: Formal assurance (run 37947479338) is
+  terminal success. Emulated aarch64 (37947479451), Rust verification (37947479455), and Repository
+  quality (37947479450) remain in progress; acceptance still waits for all three.
