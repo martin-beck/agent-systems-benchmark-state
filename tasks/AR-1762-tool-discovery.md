@@ -10,8 +10,8 @@
   "id": "AR-1762",
   "next_action": "Remove unnecessary mutable stdout binding from bounded probe, then rerun focused tests.",
   "observed_branch": "feature/ar-1762-tool-discovery",
-  "observed_dirty": 1,
-  "observed_head": "5322501712aac2ed60976ffad28def0ec4f7cf95",
+  "observed_dirty": 0,
+  "observed_head": "969db82f30a45e69974295aee1613311865dadd0",
   "owner": "codex-asb-ar1762-tool-discovery-20261009",
   "plan": "../plans/AR-1762-tool-discovery.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:54:46+00:00",
+  "updated_at": "2026-10-09T15:54:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
