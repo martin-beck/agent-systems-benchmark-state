@@ -18,20 +18,21 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
+| #519 | `repair/ar-1742-pr505-exact-tree@f18aef14c8f8` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | docs: recover PR 505 exact-tree publication |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37876069023 | `f18aef14c8f8` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37876069022 | `f18aef14c8f8` | pull_request | Fault assurance | in_progress:- |
+| 37876069006 | `f18aef14c8f8` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37876069005 | `f18aef14c8f8` | pull_request | Rust verification | in_progress:- |
+| 37876068988 | `f18aef14c8f8` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37876068974 | `f18aef14c8f8` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37876068954 | `f18aef14c8f8` | pull_request | Portable protected-main provenance | completed:success |
+| 37876068920 | `f18aef14c8f8` | pull_request | Formal assurance | in_progress:- |
+| 37876068901 | `f18aef14c8f8` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37876068899 | `f18aef14c8f8` | pull_request | Repository quality | in_progress:- |
+| 37876068897 | `f18aef14c8f8` | pull_request | Huawei MIT source headers | completed:success |
 | 37873753816 | `69bf9029a497` | push | Repository quality | completed:success |
-| 37873753802 | `69bf9029a497` | push | Portable protected-main provenance | completed:success |
-| 37873753798 | `69bf9029a497` | push | Fault assurance | completed:success |
-| 37873753791 | `69bf9029a497` | push | Cross-repository development broker qualification | completed:success |
-| 37873753788 | `69bf9029a497` | push | Emulated aarch64 portability | completed:success |
-| 37873753787 | `69bf9029a497` | push | Formal assurance | completed:success |
-| 37873753778 | `69bf9029a497` | push | Hosted portability and native qualification | completed:success |
-| 37873753777 | `69bf9029a497` | push | Huawei MIT source headers | completed:success |
-| 37873753776 | `69bf9029a497` | push | Credential-free benchmark path | completed:success |
-| 37873753767 | `69bf9029a497` | push | Rust verification | completed:success |
-| 37872776471 | `2cda48c27ae9` | pull_request | Hosted portability and native qualification | completed:success |
-| 37872776452 | `2cda48c27ae9` | pull_request | Cross-repository development broker qualification | completed:success |
