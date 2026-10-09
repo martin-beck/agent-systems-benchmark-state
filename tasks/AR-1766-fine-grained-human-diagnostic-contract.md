@@ -10,7 +10,7 @@
     "AR-1762"
   ],
   "id": "AR-1766",
-  "next_action": "PR #538 is open at exact head f065eed. Obtain independent technical review, then wait for all exact-head hosted checks. After review/checks pass, invoke merge_pr.py through handoffctl with exact base ae22d66 and reviewed head/tree; verify post-merge receipt before accept/release. State reconcile remains blocked by oversized handoffctl pyc.",
+  "next_action": "Repair commit b8ae2dc is pushed; PR #538 exact head is b8ae2dc. Independent review blocker is repaired with full public docs. Wait for fresh exact-head hosted checks and distinct approval; then merge via merge_pr.py through handoffctl using base ae22d66/head b8ae2dc, verify post-merge receipt, accept/release. State reconcile remains blocked by oversized handoffctl pyc.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -30,9 +30,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T17:56:37+00:00",
+  "updated_at": "2026-10-09T17:57:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -216,3 +216,8 @@ the catalog.
 
 - 2026-10-09T17:56:37+00:00: Recorded command exit 0; command argv SHA-256
   027b2435e6b14d402da464a5115d4004c3df231875a5a0851c47a892c9023fbe.
+
+- 2026-10-09T17:57:08+00:00: Removed missing_docs allowance and documented every public diagnostic
+  enum variant, field, and constructor. Focused catalog tests, full workspace tests (pass on retry
+  after unrelated asb-metrics isolated flake), workspace clippy, and workspace rustdoc all pass.
+  Repair commit b8ae2dc is SSH-signed+DCO and pushed to PR #538.

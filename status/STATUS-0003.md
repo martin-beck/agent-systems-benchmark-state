@@ -1020,7 +1020,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. |
-| Next action | PR #538 is open at exact head f065eed. Obtain independent technical review, then wait for all exact-head hosted checks. After review/checks pass, invoke merge_pr.py through handoffctl with exact base ae22d66 and reviewed head/tree; verify post-merge receipt before accept/release. State reconcile remains blocked by oversized handoffctl pyc. |
+| Next action | Repair commit b8ae2dc is pushed; PR #538 exact head is b8ae2dc. Independent review blocker is repaired with full public docs. Wait for fresh exact-head hosted checks and distinct approval; then merge via merge_pr.py through handoffctl using base ae22d66/head b8ae2dc, verify post-merge receipt, accept/release. State reconcile remains blocked by oversized handoffctl pyc. |
 
 ### AR-1767 — Safe automatic directory preparation with clear notice
 

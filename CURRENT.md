@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1766](tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | PR #538 is open at exact head f065eed. Obtain independent technical review, then wait for all exact-head hosted checks. After review/checks pass, invoke merge_pr.py through handoffctl with exact base ae22d66 and reviewed head/tree; verify post-merge receipt before accept/release. State reconcile remains blocked by oversized handoffctl pyc. | codex-ar1766-diagnostics |
+| P0 | [AR-1766](tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | Repair commit b8ae2dc is pushed; PR #538 exact head is b8ae2dc. Independent review blocker is repaired with full public docs. Wait for fresh exact-head hosted checks and distinct approval; then merge via merge_pr.py through handoffctl using base ae22d66/head b8ae2dc, verify post-merge receipt, accept/release. State reconcile remains blocked by oversized handoffctl pyc. | codex-ar1766-diagnostics |
 
 ## Open
 
