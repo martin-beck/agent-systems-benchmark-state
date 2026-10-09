@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #520 | `feature/ar-1728-cli2key-contract@0a39c0821ee5` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): freeze cli2key development contract |
-| #521 | `repair/ar-1735-goose-fixture-determinism@6e721e2c97a3` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): harden Goose diagnostic fixture determinism |
+| #521 | `repair/ar-1735-goose-fixture-determinism@6e721e2c97a3` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): harden Goose diagnostic fixture determinism |
 
 ## Recent workflows
 
@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37878409611 | `6e721e2c97a3` | pull_request | Rust verification | in_progress:- |
 | 37878409599 | `6e721e2c97a3` | pull_request | Cross-repository development broker qualification | completed:success |
 | 37878409561 | `6e721e2c97a3` | pull_request | Hosted portability and native qualification | completed:success |
-| 37878409532 | `6e721e2c97a3` | pull_request | Formal assurance | in_progress:- |
+| 37878409532 | `6e721e2c97a3` | pull_request | Formal assurance | completed:success |
 | 37878409525 | `6e721e2c97a3` | pull_request | Huawei MIT source headers | completed:success |
 | 37878409503 | `6e721e2c97a3` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 37878409484 | `6e721e2c97a3` | pull_request | Fault assurance | completed:success |
