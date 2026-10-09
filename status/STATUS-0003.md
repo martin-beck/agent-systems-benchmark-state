@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Fix the two Clippy findings, rerun format/Clippy, then run full tests/docs/build. |
+| Next action | Rerun full workspace tests, then rustdoc and release build; inspect diff and publish PR. |
 
 ### AR-1762 — Discover system and project ASB tools
 

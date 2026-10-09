@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Fix the two Clippy findings, rerun format/Clippy, then run full tests/docs/build.",
+  "next_action": "Rerun full workspace tests, then rustdoc and release build; inspect diff and publish PR.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 0,
   "observed_head": "19fa40a7575a759cff5713464ae263838ddfb7c4",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:51:37+00:00",
+  "updated_at": "2026-10-09T15:51:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -141,3 +141,7 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T15:51:37+00:00: Recorded command exit 101; command argv SHA-256
   224f23823c49769ec0e2e458fdd3da95be1cb852070fa5d2c7fd088f4ad98da0.
+
+- 2026-10-09T15:51:47+00:00: Full workspace tests found one expected contract-test drift after
+  adding the tool command: capability_contract expected the old completion list and failed. Updated
+  the assertion to include tool; no feature failure or publication occurred.
