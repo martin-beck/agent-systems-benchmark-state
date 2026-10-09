@@ -32,6 +32,6 @@ Generated from local Git and GitHub. Do not edit.
 | 37947479419 | `64843f196737` | push | Portable protected-main provenance | completed:success |
 | 37947479386 | `64843f196737` | push | Credential-free benchmark path | completed:success |
 | 37947479373 | `64843f196737` | push | Fault assurance | completed:success |
-| 37947479338 | `64843f196737` | push | Formal assurance | in_progress:- |
+| 37947479338 | `64843f196737` | push | Formal assurance | completed:success |
 | 37945846545 | `36dab7a7addb` | pull_request | Portable protected-main provenance | completed:success |
 | 37945846416 | `36dab7a7addb` | pull_request | Agent Workflow Quality shadow | completed:success |
