@@ -7,7 +7,7 @@
     "AR-1728"
   ],
   "id": "AR-1729",
-  "next_action": "Await fresh exact-head CI and independent review for rebased PR #525 at 13da72b; then merge via signed integrity path and record post-merge evidence.",
+  "next_action": "Construct and publish signed exact two-parent merge for PR #525; then verify post-merge workflows and close.",
   "owner": "codex-ar1729-cli2key-sidecar-20261009",
   "plan": "../plans/AR-1729-cli2key-sidecar-lifecycle.md",
   "priority": "P1",
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Supervise cli2key sidecar and ephemeral key",
-  "updated_at": "2026-10-09T08:12:36+00:00",
+  "updated_at": "2026-10-09T08:13:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1729-cli2key-sidecar-lifecycle"
 }
 ---
@@ -298,3 +298,9 @@ egress; benchmark agents remain loopback-only.
 
 - 2026-10-09T08:12:36+00:00: Recorded command exit 0; command argv SHA-256
   286c7d1895f9a32c25ae33c124a4e354a328c8fb5606fa31fb64acc518ef14a2.
+
+- 2026-10-09T08:13:05+00:00: Independent full diff review completed at reviewed head 13da72b/tree
+  95febde8: no remaining findings. Verified generated-key fallback and hostile key matrix, no-follow
+  local key opening, loopback-only readiness, pinned executable, no secret argv/environment/receipt,
+  staging failure cleanup, group teardown/reap, focused tests, signatures, DCO, and all required
+  exact-head checks green.

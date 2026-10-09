@@ -502,7 +502,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence. |
-| Next action | Await fresh exact-head CI and independent review for rebased PR #525 at 13da72b; then merge via signed integrity path and record post-merge evidence. |
+| Next action | Construct and publish signed exact two-parent merge for PR #525; then verify post-merge workflows and close. |
 
 ### AR-1730 — Add cli2key provider and selection contracts
 
