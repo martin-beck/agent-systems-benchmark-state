@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1758-merge-dco",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T15:01:27+00:00",
+  "claim_expires": "2026-10-09T15:05:45+00:00",
   "depends_on": [],
   "id": "AR-1758",
   "next_action": "PR #528 exact repair head 00f0525 is green except long-running policy and emulated-aarch64 jobs; after terminal success run tools/integration/merge_pr.py with exact base b3cb9b2, head 00f0525, tree 980a60bd, --push, then verify exact-main.",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Repair AR-1731 protected-main merge provenance",
-  "updated_at": "2026-10-09T13:03:33+00:00",
+  "updated_at": "2026-10-09T13:05:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1758-merge-dco"
 }
 ---
@@ -55,3 +55,5 @@ until the repaired exact-main workflows are green.
 
 - 2026-10-09T13:03:33+00:00: Recorded command exit 0; command argv SHA-256
   abc053ba9c5734d29e149416fd9788df608e3852050b4b24c9ce124afb14d6f8.
+
+- 2026-10-09T13:05:45+00:00: Heartbeat by codex-asb-ar1758-merge-dco-repair-20261009.
