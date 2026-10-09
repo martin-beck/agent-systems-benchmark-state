@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1770.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "descriptor-safe-preparation", "description": "Owned directory preparation validates every ancestor through a descriptor-relative or equivalent fail-closed operation and cannot follow a replacement symlink."},
+    {"id": "atomic-publication-safety", "description": "Atomic single-file and campaign publication rejects destination or ancestor replacement without writing outside the authorized directory."},
+    {"id": "complete-filesystem-matrix", "description": "Positive, repeat, nested, dry-run, concurrent, permission, read-only, rollback, non-directory, symlink, replacement, and cleanup cases pass."},
+    {"id": "complete-route-stream-matrix", "description": "Setup/config, project/tool, plan, run/sweep, report, record/campaign, easy, and TUI routes keep human notices on stderr and JSON stdout unchanged."},
+    {"id": "privacy-offline-compatibility", "description": "No credentials, private paths, payloads, or runtime downloads are introduced and offline-after-install, schemas, exits, and modes remain unchanged."}
+  ],
+  "definition_of_done": [
+    "Descriptor-safe implementation and deterministic replacement-race tests are independently reviewed.",
+    "All AR-1770 focused and full applicable gates, including hosted formal/platform/model checks, are green.",
+    "Exact-head PR, merge, post-merge receipt, and durable acceptance are recorded."
+  ],
+  "inputs": [
+    {"id": "ar-1767", "description": "AR-1767 directory preparation, notices, and known residual review findings."},
+    {"id": "atomic-output-paths", "description": "ASB atomic writers and recording campaign publication paths."}
+  ],
+  "outputs": [
+    {"id": "descriptor-safe-primitive", "description": "Replacement-safe owned directory and atomic publication implementation."},
+    {"id": "acceptance-matrix", "description": "Focused route, filesystem, stream, dry-run, and concurrency tests with durable evidence."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["path-following-race", "blind-recursive-create", "input-path-creation", "partial-publication", "gate-weakening", "credential-output"],
+  "required_evidence_classes": ["contract-test", "property-or-fuzz", "bounded-model", "mechanical", "hosted"],
+  "gates": [
+    {"id": "race-hardening", "description": "Replacement and concurrent reuse tests prove no outside target is followed or modified."},
+    {"id": "matrix", "description": "All positive/negative route and filesystem cases pass with exact stream and privacy assertions."},
+    {"id": "full-quality", "description": "Independent exact-head review and all required hosted gates are green."}
+  ]
+}
