@@ -1062,7 +1062,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. |
-| Next action | Repair fresh-review P0: replace prose-keyword CLI diagnostic inference with a fail-closed reviewed typed identity boundary; reject bare, multiline, and dynamic producer paths; then rerun focused and full gates and obtain fresh review. |
+| Next action | Implement a reviewed typed identity catalog and migrate or explicitly quarantine all 608 bare CliError::usage/validation/operation producers, including multiline and dynamic forms; add controlled defects for prose-keyword, multiline, and identifier-based producer bypasses; then rerun full gates and fresh review. |
 
 ### AR-1770 — Descriptor-safe directory race hardening and acceptance matrix
 

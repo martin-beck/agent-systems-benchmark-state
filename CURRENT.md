@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1769](tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Repair fresh-review P0: replace prose-keyword CLI diagnostic inference with a fail-closed reviewed typed identity boundary; reject bare, multiline, and dynamic producer paths; then rerun focused and full gates and obtain fresh review. | codex-ar1769-matrix-repair-terra |
+| P0 | [AR-1769](tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Implement a reviewed typed identity catalog and migrate or explicitly quarantine all 608 bare CliError::usage/validation/operation producers, including multiline and dynamic forms; add controlled defects for prose-keyword, multiline, and identifier-based producer bypasses; then rerun full gates and fresh review. | codex-ar1769-matrix-repair-terra |
 
 ## Open
 

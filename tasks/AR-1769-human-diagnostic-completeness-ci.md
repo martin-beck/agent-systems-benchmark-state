@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1769",
-  "next_action": "Repair fresh-review P0: replace prose-keyword CLI diagnostic inference with a fail-closed reviewed typed identity boundary; reject bare, multiline, and dynamic producer paths; then rerun focused and full gates and obtain fresh review.",
+  "next_action": "Implement a reviewed typed identity catalog and migrate or explicitly quarantine all 608 bare CliError::usage/validation/operation producers, including multiline and dynamic forms; add controlled defects for prose-keyword, multiline, and identifier-based producer bypasses; then rerun full gates and fresh review.",
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "observed_dirty": 0,
   "observed_head": "eb5bfb381f76e452bfff5b258ab1dad61001e916",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T23:09:58+00:00",
+  "updated_at": "2026-10-09T23:10:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -456,3 +456,10 @@ timeouts/cancellation, partial results, and warning-only development behavior.
 - 2026-10-09T23:09:14+00:00: Heartbeat by codex-ar1769-matrix-repair-terra.
 
 - 2026-10-09T23:09:58+00:00: Checkpointed source commit 42cccc4f372f6423a377992d625a4de4265bda86.
+
+- 2026-10-09T23:10:09+00:00: Fresh independent review P0 remains valid. Audit counted 608 bare CLI
+  producer invocations. A compact wrapper/keyword change would allow a future producer to inherit a
+  generic identity and is not acceptable. Signed clean product head
+  eb5bfb381f76e452bfff5b258ab1dad61001e916 preserves the prior complete matrix, the closed-boundary
+  attempted repair, and refreshed provenance; no PR was published. checkpoint and doctor --live are
+  terminal clean.
