@@ -1048,7 +1048,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
-| Next action | Repair reviewer findings: classify lifecycle rejection and resource exhaustion distinctly, add catalog-driven producer coverage, and map every known warning explicitly; rerun focused/full gates and refresh exact-head PR. |
+| Next action | Full local gates are running on signed repair head 18e938d; then independently review exact diff, monitor refreshed PR #541 checks, rerun Docker-rate-limited checks when available, and do not merge until all required checks are green. |
 
 ### AR-1769 — Human diagnostic completeness CI gate
 
