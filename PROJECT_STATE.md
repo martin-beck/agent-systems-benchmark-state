@@ -18,21 +18,21 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@b20d22b45b4f` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.22 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #525 | `feature/ar-1729-cli2key-sidecar-runtime@b3d71c91102a` | `main` | BEHIND | COMPLETED:FAILURE, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): supervise cli2key sidecar lifecycle |
+| #525 | `feature/ar-1729-cli2key-sidecar-runtime@b3d71c91102a` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): supervise cli2key sidecar lifecycle |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37902191907 | `b3d71c91102a` | pull_request | Huawei MIT source headers | in_progress:- |
+| 37902191907 | `b3d71c91102a` | pull_request | Huawei MIT source headers | completed:success |
 | 37902191838 | `b3d71c91102a` | pull_request | Portable protected-main provenance | completed:failure |
 | 37902191718 | `b3d71c91102a` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 37902191711 | `b3d71c91102a` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37902191709 | `b3d71c91102a` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37902191709 | `b3d71c91102a` | pull_request | Hosted portability and native qualification | completed:failure |
 | 37902191698 | `b3d71c91102a` | pull_request | Credential-free benchmark path | in_progress:- |
 | 37902191657 | `b3d71c91102a` | pull_request | Formal assurance | in_progress:- |
 | 37902191651 | `b3d71c91102a` | pull_request | Fault assurance | in_progress:- |
-| 37902191642 | `b3d71c91102a` | pull_request | Emulated aarch64 portability | queued:- |
+| 37902191642 | `b3d71c91102a` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 37902191575 | `b3d71c91102a` | pull_request | Rust verification | in_progress:- |
-| 37902191566 | `b3d71c91102a` | pull_request | Repository quality | in_progress:- |
+| 37902191566 | `b3d71c91102a` | pull_request | Repository quality | completed:failure |
 | 37902047565 | `4f460a6aa707` | push | Portable protected-main provenance | completed:success |
