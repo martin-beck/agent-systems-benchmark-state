@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 169,
+  "task_revision": 170,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:45:37+00:00",
+  "updated_at": "2026-10-09T16:51:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -462,3 +462,6 @@ for idempotence; never store API keys or tokens.
   destination symlink rejection), human_cli (14/14), capability_contract (13/13), clippy -D
   warnings, and diff check pass. No implementation blocker found. Hosted checks are still running;
   no approval or merge recommendation until all required checks are terminal green.
+
+- 2026-10-09T16:51:32+00:00: Recorded command exit 1; command argv SHA-256
+  2be7176df0c2bc6fd1418f282091ce43bc69a4fdc177bfd1c1638ea144682853.
