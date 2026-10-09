@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:44:32+00:00",
+  "updated_at": "2026-10-09T15:44:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -74,3 +74,6 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:43:54+00:00: Recorded command exit 101; command argv SHA-256
   ddc93c361d7a760463e5c5f2bf3d58c5587b3df1a23e9082b47dac26ddf72818.
+
+- 2026-10-09T15:44:38+00:00: Recorded command exit 101; command argv SHA-256
+  5719b1305347319cb9670126dde5b8aefd936841ab34dc44dd40df59a7e9e38a.
