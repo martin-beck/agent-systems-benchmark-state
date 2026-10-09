@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #520 | `feature/ar-1728-cli2key-contract@0a39c0821ee5` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): freeze cli2key development contract |
+| #520 | `feature/ar-1728-cli2key-contract@0a39c0821ee5` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): freeze cli2key development contract |
 
 ## Recent workflows
 
@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37877898744 | `0a39c0821ee5` | pull_request | Hosted portability and native qualification | completed:failure |
 | 37877898726 | `0a39c0821ee5` | pull_request | Huawei MIT source headers | completed:success |
 | 37877898723 | `0a39c0821ee5` | pull_request | Portable protected-main provenance | completed:failure |
-| 37877898720 | `0a39c0821ee5` | pull_request | Formal assurance | in_progress:- |
+| 37877898720 | `0a39c0821ee5` | pull_request | Formal assurance | completed:success |
 | 37877898719 | `0a39c0821ee5` | pull_request | Credential-free benchmark path | completed:success |
 | 37877898717 | `0a39c0821ee5` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37877898715 | `0a39c0821ee5` | pull_request | Cross-repository development broker qualification | completed:success |
