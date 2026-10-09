@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) |
+| [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) | [AR-1736](../tasks/AR-1736-backend-model-catalog-execution.md), [AR-1754](../tasks/AR-1754-default-online-live-workflow.md) |
 | [AR-1734](../tasks/AR-1734-development-tui-tool-environment.md) | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md), [AR-1727](../tasks/AR-1727-development-broker-foreground-terminal.md) | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md), [AR-1738](../tasks/AR-1738-development-rustup-permission-compatibility.md) |
 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md) | None | None |
 | [AR-1736](../tasks/AR-1736-backend-model-catalog-execution.md) | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | None |
@@ -33,9 +35,10 @@
 | [AR-1764](../tasks/AR-1764-project-run-integration.md) | [AR-1761](../tasks/AR-1761-tool-install-registry.md), [AR-1763](../tasks/AR-1763-generated-catalog-selection.md) | [AR-1765](../tasks/AR-1765-tool-project-e2e-qualification.md) |
 | [AR-1765](../tasks/AR-1765-tool-project-e2e-qualification.md) | [AR-1760](../tasks/AR-1760-project-init-workspace.md), [AR-1761](../tasks/AR-1761-tool-install-registry.md), [AR-1762](../tasks/AR-1762-tool-discovery.md), [AR-1763](../tasks/AR-1763-generated-catalog-selection.md), [AR-1764](../tasks/AR-1764-project-run-integration.md) | None |
 | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md) | [AR-1757](../tasks/AR-1757-human-first-cli-output.md), [AR-1760](../tasks/AR-1760-project-init-workspace.md), [AR-1761](../tasks/AR-1761-tool-install-registry.md), [AR-1762](../tasks/AR-1762-tool-discovery.md) | [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md), [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md) |
-| [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md) | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md) | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md) |
+| [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md) | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md) | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md), [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md) |
 | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md) | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md), [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md) | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md) |
 | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md) | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md) | [AR-1763](../tasks/AR-1763-generated-catalog-selection.md) |
+| [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md) | [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md) | None |
 
 ## Complete AR inventory
 
@@ -143,7 +146,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (101)
+### Planned (102)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -245,6 +248,7 @@
 | P1 | [AR-1683](../tasks/AR-1683.md): Provide approved TLC attestation resource bounds | Unclaimed | Make the hosted formal workflow export the approved TLC memory and swap bounds required by attestation. | Run formal publication verification and runner regression tests on the exact hosted head. |
 | P1 | [AR-1684](../tasks/AR-1684.md): Harden runtime selector helper matrix | Unclaimed | Lock in fail-closed rejection of hostile selector directory, symlink, and non-regular entries. | Run the targeted authority defensive matrix and full hosted checks on the signed head. |
 | P1 | [AR-1725](../tasks/AR-1725-documentation-quickstart-and-platform-install.md): Document two-agent OpenRouter and TUI quickstarts | Unclaimed | Publish a linked, executable tutorial for two-agent OpenRouter benchmarking, ASB TUI workflows, dependencies, and per-distribution installation. | Promote after coordinator integrity repair and dependency verification; audit existing docs, add the CLI/TUI tutorial and platform install matrix, then qualify links, commands, and visual evidence. |
+| P1 | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Unclaimed | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Implement descriptor-relative or equivalent fail-closed directory and atomic publication paths, then complete the hostile filesystem and stream matrix. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
@@ -522,6 +526,3 @@
 | P0 | [AR-1605](../tasks/AR-1605.md): Authenticated cassette control backend | Unclaimed | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. | Release admission after receipt acceptance. |
 | P0 | [AR-1606](../tasks/AR-1606.md): Cross-project cassette lifecycle qualification | Unclaimed | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Release complete: PR #426 merged as da886967; exact-main hosted workflows and independent approval are recorded in spec/receipt. |
 | P0 | [AR-1607](../tasks/AR-1607.md): OpenRouter provider and model setup | Unclaimed | Expose OpenRouter, API-key reference, supported models, and validation to the development wizard. | Promote after AR-1601 and implement the additive provider/catalog/config contract. |
-| P0 | [AR-1608](../tasks/AR-1608.md): Configuration persistence and shared defaults | Unclaimed | Persist editable provider/agent/model/auth selections and shared defaults safely for subsequent runs. | Promote after AR-1607 release and implement atomic redacted configuration updates. |
-| P0 | [AR-1609](../tasks/AR-1609.md): Coding-agent adapter catalog and compatibility | Unclaimed | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. | Promote after AR-1607 release; implement additive adapter records and compatibility diagnostics. |
-| P0 | [AR-1611](../tasks/AR-1611.md): Integrated dev-channel TUI install and launch | Unclaimed | Make asb tui install fetch the current dev-channel TUI, build it in a temporary staging area, publish atomically, and launch it through the trusted ASB router. | Promote after the current install/router implementation is audited; add an exact-main disposable install, upgrade, rollback, and launch qualification. |

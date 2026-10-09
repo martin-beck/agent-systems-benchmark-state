@@ -1064,6 +1064,20 @@
 | Summary | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. |
 | Next action | Add a required CI gate and executable negative journey proving every current and future public diagnostic is cataloged, specifically rendered, actionable, and privacy-safe. |
 
+### AR-1770 — Descriptor-safe directory race hardening and acceptance matrix
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. |
+| Next action | Implement descriptor-relative or equivalent fail-closed directory and atomic publication paths, then complete the hostile filesystem and stream matrix. |
+
 
 ## Dependency graph
 
@@ -1892,6 +1906,7 @@ flowchart LR
         AR_1767["AR-1767 - In progress"]:::status_in_progress
         AR_1768["AR-1768 - Planned"]:::status_planned
         AR_1769["AR-1769 - Planned"]:::status_planned
+        AR_1770["AR-1770 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3789,6 +3804,7 @@ flowchart LR
     AR_1766 --> AR_1767
     AR_1766 --> AR_1768
     AR_1767 --> AR_1768
+    AR_1767 --> AR_1770
     AR_1768 --> AR_1769
     AR_1769 --> AR_1763
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3901,5 +3917,3 @@ flowchart LR
 | [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) |
 | [AR-0823](../tasks/AR-0823-installation-qualification.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) |
 | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) |
-| [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) |
-| [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) |
