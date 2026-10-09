@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Harden Goose diagnostic fixture determinism",
-  "updated_at": "2026-10-09T03:56:28+00:00",
+  "updated_at": "2026-10-09T03:56:38+00:00",
   "worktree_key": ""
 }
 ---
@@ -116,3 +116,6 @@ rerun as proof that the race does not exist.
   f3840f351c9da1657ad44af594cf2b6ae8b419c9 with exact reviewed tree. All 10 required exact-main push
   workflows are terminal success; unrelated Dependabot run excluded. Receipt digest
   sha256:88e3b7d2743122372a9a3685d5e73eea5ecdb3df3bb8556b095818f44ea8240e.
+
+- 2026-10-09T03:56:38+00:00: Recorded command exit 0; command argv SHA-256
+  401a9b7628f5ee98b40edd3b5ba15436e882f982d3297c92709bedf233943951.
