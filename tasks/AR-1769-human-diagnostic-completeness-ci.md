@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1769",
-  "next_action": "Obtain fresh independent technical review of the complete signed 12-commit diff through exact head 83b2b9848a56281052be97099878d692088d4f52; do not publish until it passes.",
+  "next_action": "Rerun the full exact-head qualification at signed head 8fc07b908756a52da6cee3175fa5a52224968019; prior full gate was interrupted solely by intermittent cross-test control-state lock contention, whose isolated target passed three consecutive runs.",
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "observed_dirty": 0,
   "observed_head": "8fc07b908756a52da6cee3175fa5a52224968019",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 212,
+  "task_revision": 213,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T23:22:14+00:00",
+  "updated_at": "2026-10-09T23:22:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -575,3 +575,11 @@ timeouts/cancellation, partial results, and warning-only development behavior.
 
 - 2026-10-09T23:22:14+00:00: Recorded command exit 0; command argv SHA-256
   ccffe074f464f8bfad1c7d854b7197e09452e6b7e62066b72a36404a3ed1218c.
+
+- 2026-10-09T23:22:27+00:00: Fresh review P0 repaired in signed commit
+  8fc07b908756a52da6cee3175fa5a52224968019. Routed and legacy scanners now skip arbitrary whitespace
+  after constructor tokens; legacy inventory calculates original source line positions. Controlled
+  multiline routed, bare, and legacy dynamic defects reject; focused contract 9/9 and human matrix
+  1/1 passed. Full suite had one unrelated concurrent lock failure in
+  tui::tests::qualified_cassette_fixture_reopens_with_catalog_and_offline_campaign; exact target
+  reran 3/3 green, so rerunning the complete gate.
