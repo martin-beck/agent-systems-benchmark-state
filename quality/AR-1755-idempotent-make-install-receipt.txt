@@ -1,0 +1,67 @@
+AR-1755 idempotent Make install receipt
+
+Scope
+- Repository: martin-beck/agent-systems-benchmark
+- Pull request: #526
+- Reviewed additive candidate chain:
+  e8d123ae790420c2fcac06c33fe79a6ef4fec98c ->
+  909dae145e46c4e67de4d744f389a6011bc28330 ->
+  6ac109533612f827320f87bbf65f98694cee4e8d
+- Reviewed candidate tree: 2bc351c195732261fb694e0d4c156a47daba04c0
+- Signed reviewed-tree merge: b0d1c9d9f3521c25b65fe8f6e886920c01fc2da4
+- Merge tree: 2bc351c195732261fb694e0d4c156a47daba04c0
+
+Implementation and regression evidence
+- Plain repeated `make install` now passes Cargo's overwrite flag only to
+  `cargo install`, after the existing prefix and symlink validations.
+- Replacement requires both a regular destination and the regular,
+  non-symlink Make ownership marker. Unmarked executables, symlinks, and
+  non-regular destination or marker objects fail before Cargo is invoked.
+- The focused harness proves repeated default-HOME and explicit-prefix
+  installation, binary replacement, unrelated-file preservation, correct
+  help text, Cargo's without-force failure, and all retained path boundaries.
+- Real Cargo first-install and repeat-install checks passed. A real unmarked
+  executable remained byte-identical after the rejected install.
+- The portable focused harness passed under dash and BusyBox sh/find.
+
+Local qualification
+- `tests/makefile.sh`: pass.
+- Workspace formatting and Clippy with warnings denied: pass.
+- Complete locked workspace test suite and rustdoc with warnings denied: pass.
+- Locked release build and CLI help/version/invalid-command checks: pass.
+- Source-header policy, 18 policy unit tests, ShellCheck, and diff-check: pass.
+
+Independent review and exact-head qualification
+- Independent review rejected e8d123a because unconditional Cargo overwrite
+  could replace an unrelated unmarked executable; 909dae1 repaired that defect.
+- Independent rereview rejected 909dae1 because its test used GNU-only
+  `find -printf`; 6ac1095 repaired the test to use portable `find -print`.
+- Independent final review approved exact head 6ac1095 and tree 2bc351c with no
+  findings after dash and BusyBox execution and signature/DCO verification.
+- All 15 pull-request checks were terminal success on the approved head:
+  Rust verification 37914439065; repository quality 37914439303; emulated
+  aarch64 37914439074; exact TUI inherited-fd/PTY 37914439106; credential-free
+  path 37914439160; formal assurance 37914439260; fault assurance 37914439199;
+  hosted portability 37914439219; protected-main provenance 37914439166;
+  Huawei MIT headers 37914439216; AWQ shadow 37914439233.
+
+Merge and exact-main qualification
+- PR #526 merged through the documented signed reviewed-tree integration path
+  as signed+DCO merge b0d1c9d. Its two parents are the exact reviewed base and
+  head, and its tree exactly equals the approved candidate tree.
+- All 10 exact-main push workflows were terminal success:
+  Rust verification 37915753916; repository quality 37915753969; emulated
+  aarch64 37915754003; cross-repository broker qualification 37915753915;
+  credential-free path 37915753894; formal assurance 37915753949; fault
+  assurance 37915753983; hosted portability 37915753918; protected-main
+  provenance 37915753942; Huawei MIT headers 37915753978.
+- The first protected-main provenance attempt failed closed during GitHub's
+  brief post-publication commit-to-PR indexing delay. The association endpoint
+  subsequently returned exactly PR #526 with the expected base, head, and
+  merge SHA; rerunning the unchanged exact-main workflow succeeded.
+
+Privacy
+- This receipt contains only public repository identities, commit/tree hashes,
+  workflow identifiers, bounded test results, and design facts. It contains no
+  credentials, tokens, secret values, private filesystem paths, or raw user
+  content.
