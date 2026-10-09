@@ -10,8 +10,8 @@
   "id": "AR-1731",
   "next_action": "Promote after AR-1729 and AR-1730; integrate the Codex adapter with exact launch binding and no fallback.",
   "observed_branch": "feature/ar-1731-cli2key-codex-adapter",
-  "observed_dirty": 1,
-  "observed_head": "b0d1c9d9f3521c25b65fe8f6e886920c01fc2da4",
+  "observed_dirty": 0,
+  "observed_head": "7d95987113f325ba06f2931f1fb9dfbe9ac5448c",
   "owner": "codex-asb-ar1731-codex-adapter-20261009",
   "plan": "../plans/AR-1731-cli2key-codex-adapter.md",
   "priority": "P1",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Connect Codex adapter to cli2key backend",
-  "updated_at": "2026-10-09T12:33:46+00:00",
+  "updated_at": "2026-10-09T12:35:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1731-cli2key-adapter"
 }
 ---
