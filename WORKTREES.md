@@ -372,8 +372,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1728` | `feature/ar-1728-cli2key-contract` | `b65cac1f6f4f` | 0 | behind 8, ahead 2 |
 | `agent-systems-benchmark-ar-1728-clean` | `feature/ar-1728-cli2key-contract-clean` | `51c2d975d845` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1728-integration` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 3, ahead 0 |
-| `agent-systems-benchmark-ar-1729-cli2key-sidecar` | `feature/ar-1729-cli2key-sidecar-runtime` | `0f406d9b8e35` | 1 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-runtime/src/cli2key_sidecar.rs` |
+| `agent-systems-benchmark-ar-1729-cli2key-sidecar` | `feature/ar-1729-cli2key-sidecar-runtime` | `afca4631c1cf` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar-1730-cli2key-provider-contract` | `feature/ar-1730-cli2key-provider-contract` | `c86b4b40b5fd` | 1 | behind 0, ahead 1 |
 | changed files | - | - | - | `crates/asb-agents/src/cli2key.rs` |
 | `agent-systems-benchmark-ar-1734-development-tui-tool-environment` | `repair/ar-1734-development-tui-tool-environment` | `40f618b9389c` | 0 | behind 58, ahead 0 |
