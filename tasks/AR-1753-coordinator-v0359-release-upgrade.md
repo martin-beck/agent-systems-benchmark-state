@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.3.59 release in ASB state and repair every downstream-owned integrity regression exposed by the upgrade.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Coordinator v0.3.59 release upgrade and integrity repair",
-  "updated_at": "2026-10-09T07:01:03+00:00",
+  "updated_at": "2026-10-09T07:02:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1753-coordinator-v0359"
 }
 ---
@@ -92,3 +92,6 @@ Preserve unrelated product and state work.
 
 - 2026-10-09T07:01:03+00:00: Recorded command exit 0; command argv SHA-256
   1f93fe20fe72e21dfc65f271f8b005ffc89a6c18fa5c5be190eab0f086765abf.
+
+- 2026-10-09T07:02:33+00:00: Recorded command exit 1; command argv SHA-256
+  126138fa235eaeeb1043658264c5e73e554613bbbbe50e9dafe514d6e82fce24.
