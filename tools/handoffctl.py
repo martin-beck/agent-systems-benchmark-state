@@ -261,7 +261,7 @@ type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
-COORDINATOR_VERSION = "0.3.57"
+COORDINATOR_VERSION = "0.3.59"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -754,14 +754,16 @@ def coordinator_lock_path() -> Path:
 
 @contextlib.contextmanager
 def locked(
-    *, exclusive: bool = True, timeout: float = LOCK_TIMEOUT_SECONDS
+    *, exclusive: bool = True, timeout: float = LOCK_TIMEOUT_SECONDS, phase: str = "other"
 ) -> Iterator[CoordinatorLockGuard]:
     lock_path = coordinator_lock_path()
     lock_path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
     fd = os.open(lock_path, os.O_CREAT | os.O_RDWR, 0o600)
     try:
         operation = fcntl.LOCK_EX if exclusive else fcntl.LOCK_SH
-        deadline = time.monotonic() + timeout
+        tracing = bool(os.environ.get("HANDOFFCTL_LOCK_TRACE"))
+        started = time.monotonic()
+        deadline = started + timeout
         while True:
             try:
                 fcntl.flock(fd, operation | fcntl.LOCK_NB)
@@ -770,17 +772,82 @@ def locked(
                 remaining = deadline - time.monotonic()
                 if remaining <= 0:
                     mode = "exclusive" if exclusive else "shared"
+                    if tracing:
+                        trace_lock_metric(phase, mode, time.monotonic() - started, None)
                     raise LockTimeoutError(
                         f"LOCK_TIMEOUT after {timeout:.1f}s acquiring {mode} coordinator lock"
                     ) from error
                 time.sleep(min(LOCK_POLL_SECONDS, remaining))
+        acquired = time.monotonic() if tracing else started
         guard = CoordinatorLockGuard._create(lock_path, fd, exclusive=exclusive)
         yield guard
     finally:
+        metric: tuple[str, str, float, float] | None = None
         if "guard" in locals():
+            if tracing:
+                metric = (
+                    phase,
+                    "exclusive" if exclusive else "shared",
+                    acquired - started,
+                    time.monotonic() - acquired,
+                )
             guard._invalidate()
         fcntl.flock(fd, fcntl.LOCK_UN)
         os.close(fd)
+        if metric is not None:
+            trace_lock_metric(*metric)
+
+
+def trace_lock_metric(phase: str, mode: str, wait: float, hold: float | None) -> None:
+    """Emit optional private, bounded lock timing without command or path data."""
+    destination = os.environ.get("HANDOFFCTL_LOCK_TRACE")
+    if not destination:
+        return
+    record = {
+        "phase": phase,
+        "mode": mode,
+        "wait_ms": round(wait * 1000, 3),
+        "hold_ms": None if hold is None else round(hold * 1000, 3),
+        "timeout": hold is None,
+        "ended_ns": time.monotonic_ns(),
+    }
+    try:
+        descriptor = os.open(destination, os.O_APPEND | os.O_CREAT | os.O_WRONLY, 0o600)
+        with os.fdopen(descriptor, "ab") as stream:
+            stream.write((json.dumps(record, sort_keys=True) + "\n").encode())
+    except (OSError, ValueError):
+        pass
+
+
+def observation_marker(name: str) -> Path:
+    """Order scans for one checkout's independent task and projection files."""
+    return RUNTIME / name
+
+
+def reserve_observation_ticket() -> int:
+    """Order slow scans without occupying the authority lock while they run."""
+    path = observation_marker("observation-sequence")
+    path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
+    descriptor = os.open(path.with_suffix(".lock"), os.O_CREAT | os.O_RDWR, 0o600)
+    try:
+        fcntl.flock(descriptor, fcntl.LOCK_EX)
+        previous = int(path.read_text()) if path.exists() else 0
+        if previous < 0:
+            raise RuntimeError("invalid observation sequence")
+        ticket = previous + 1
+        atomic(path, f"{ticket}\n")
+        return ticket
+    finally:
+        fcntl.flock(descriptor, fcntl.LOCK_UN)
+        os.close(descriptor)
+
+
+def published_observation_ticket() -> int:
+    path = observation_marker("observation-published")
+    value = int(path.read_text()) if path.exists() else 0
+    if value < 0:
+        raise RuntimeError("invalid published observation ticket")
+    return value
 
 
 def atomic(path: Path, text: str) -> None:
@@ -873,29 +940,49 @@ def render_current(tasks: list[Task]) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
+def parse_worktree_listing(raw: str) -> list[tuple[Path, str, str]]:
+    """Reuse Git's exact listed head/branch, falling back only for incomplete records."""
+    records: list[tuple[Path, str, str]] = []
+    for block in raw.split("\n\n"):
+        lines = block.splitlines()
+        if not lines or not lines[0].startswith("worktree "):
+            continue
+        head = next((line[5:] for line in lines[1:] if line.startswith("HEAD ")), "")
+        if re.fullmatch(r"[0-9a-f]{40,64}", head) is None:
+            head = ""
+        branch = next((line[7:] for line in lines[1:] if line.startswith("branch ")), "")
+        branch = branch.removeprefix("refs/heads/")
+        if not branch and "detached" in lines:
+            branch = "DETACHED"
+        records.append((Path(lines[0][9:]), head, branch))
+    return records
+
+
 def project_scan() -> State:
     settings = config()
     base = Path(settings["projects_root"])
     repo = base / settings["product_worktree"]
 
-    def listed_worktrees(checkout: Path) -> list[Path]:
+    def listed_worktrees(checkout: Path) -> list[tuple[Path, str, str]]:
         raw = run(["git", "-C", str(checkout), "worktree", "list", "--porcelain"]).stdout
-        return [Path(line[9:]) for line in raw.splitlines() if line.startswith("worktree ")]
+        return parse_worktree_listing(raw)
 
     # The coordinator repository may have many linked worker checkouts. Their
     # relationship to the coordinator's origin/main changes whenever state is
     # committed, so including them makes the generated live projections stale
     # after every coordinator update. Keep all product-repository worktrees,
     # but exclude every checkout owned by the coordinator repository.
-    coordinator_paths = {path.resolve() for path in listed_worktrees(ROOT)}
-    paths: list[Path] = []
-    for path in listed_worktrees(repo):
-        if path.resolve() not in coordinator_paths and path not in paths:
-            paths.append(path)
+    coordinator_paths = {path.resolve() for path, _, _ in listed_worktrees(ROOT)}
+    paths: list[tuple[Path, str, str]] = []
+    seen_paths: set[Path] = set()
+    for path, head, branch in listed_worktrees(repo):
+        if path.resolve() not in coordinator_paths and path not in seen_paths:
+            paths.append((path, head, branch))
+            seen_paths.add(path)
     worktrees = []
-    for path in paths:
-        head = run(["git", "-C", str(path), "rev-parse", "HEAD"]).stdout.strip()
-        branch = (
+    for path, listed_head, listed_branch in paths:
+        head = listed_head or run(["git", "-C", str(path), "rev-parse", "HEAD"]).stdout.strip()
+        branch = listed_branch or (
             run(
                 ["git", "-C", str(path), "symbolic-ref", "--short", "-q", "HEAD"], check=False
             ).stdout.strip()
@@ -1358,7 +1445,7 @@ def directive_validation_errors() -> list[str]:
 
 
 def validate(  # noqa: C901
-    *, live: bool = False, policy: EvidencePolicy | None = None
+    *, live: bool = False, policy: EvidencePolicy | None = None, live_state: State | None = None
 ) -> list[str]:
     errors: list[str] = []
     selected_policy = policy
@@ -1394,7 +1481,7 @@ def validate(  # noqa: C901
     errors.extend(directive_validation_errors())
     errors.extend(privacy_errors())
     if live:
-        state = project_scan()
+        state = project_scan() if live_state is None else live_state
         project, worktrees = live_docs(state)
         if (
             not (ROOT / "PROJECT_STATE.md").exists()
@@ -1583,45 +1670,157 @@ def reconcile(
     selected_policy = policy_snapshot(policy)
     if backend_selection()["backend"] == "sqlite":
         return reconcile_sqlite(do_commit=do_commit, push=push, policy=selected_policy)
+    if push and not do_commit:
+        raise RuntimeError("PUSH_REQUIRES_COMMIT: reconcile --push also requires --commit")
 
-    with locked():
-        if backend_selection()["backend"] != "git":
-            raise RuntimeError("BACKEND_CHANGED: retry using the selected backend")
-        sync_replica_before_write()
+    # External product/GitHub observations are advisory and inherently
+    # non-atomic. Keep their potentially long latency outside the authority
+    # lock; only task/projection mutation and publication need serialization.
+    for _ in range(32):
+        scan_config = config() if CONFIG.exists() else None
+        scan_binding = project_binding()
+        ticket = reserve_observation_ticket()
         state = project_scan()
-        generated = generated_paths()
-        before: dict[Path, str | None] = {path: path.read_text() for path, _, _ in all_tasks()}
-        before.update({path: path.read_text() if path.exists() else None for path in generated})
-        committed = False
-        try:
-            sync_task_observations(all_tasks(), state)
-            tasks = all_tasks()
-            write_generated_views(tasks, state)
-            errors = validate(live=False, policy=selected_policy)
-            if errors:
-                raise RuntimeError("validation failed:\n" + "\n".join(errors))
-            require_policy_unchanged(ROOT, selected_policy)
-            for path in generated_paths():
-                before.setdefault(path, None)
-            touched = changed_paths(before, include_deleted=True)
-            title = project_settings()["project_title"]
-            committed = commit(f"chore(state): reconcile {title}", touched) if do_commit else False
-            head = run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], check=False).stdout.strip()
-            if push:
-                push_replica()
-            atomic(
-                RUNTIME / "last-reconcile.json",
-                json.dumps(
-                    {"at": now(), "state_commit": head, "project_main": state["remote_main"]},
-                    indent=2,
-                )
-                + "\n",
+        with locked(phase="git_reconcile"):
+            result = apply_git_reconciliation(
+                state, selected_policy, scan_config, scan_binding, ticket, do_commit, push
             )
-            return committed if do_commit else True
-        except Exception:
-            if not committed:
-                restore_paths(before)
-            raise
+        if result is not None:
+            return result
+    raise RuntimeError("OBSERVATION_SUPERSEDED: retry reconcile after concurrent publications")
+
+
+def observation_is_superseded(scan_config: Meta | None, scan_binding: Meta, ticket: int) -> bool:
+    """Fence an unlocked scan against changed inputs and newer publications."""
+    if backend_selection()["backend"] != "git":
+        raise RuntimeError("BACKEND_CHANGED: retry using the selected backend")
+    current_config = config() if CONFIG.exists() else None
+    if current_config != scan_config or project_binding() != scan_binding:
+        raise RuntimeError("OBSERVATION_INPUT_CHANGED: retry reconcile")
+    sync_replica_before_write()
+    return ticket < published_observation_ticket()
+
+
+def pending_observation_paths() -> list[Path]:
+    """Return only coordinator-produced paths awaiting a reconciliation commit."""
+    marker = RUNTIME / "last-reconcile.json"
+    if not marker.exists():
+        return []
+    record = json.loads(marker.read_text())
+    raw = record.get("pending_paths", [])
+    if not isinstance(raw, list) or not all(isinstance(value, str) for value in raw):
+        raise RuntimeError("invalid pending reconciliation paths")
+    paths = [ROOT / value for value in raw]
+    validate_pending_path_scope(paths)
+    hashes = record.get("pending_hashes", {})
+    if not isinstance(hashes, dict) or set(hashes) != set(raw):
+        raise RuntimeError("invalid pending reconciliation hashes")
+    remaining: list[Path] = []
+    for value, path in zip(raw, paths, strict=True):
+        if hashes[value] == pending_path_digest(path):
+            remaining.append(path)
+        elif not pending_path_matches_head(path):
+            raise RuntimeError(
+                "PENDING_OBSERVATION_CHANGED: reconcile cannot commit edited content"
+            )
+    return remaining
+
+
+def pending_path_matches_head(path: Path) -> bool:
+    """Discard only paths already committed (or absent both locally and at HEAD)."""
+    relative = path.relative_to(ROOT).as_posix()
+    committed = run(["git", "-C", str(ROOT), "show", f"HEAD:{relative}"], check=False)
+    if committed.returncode:
+        return not path.exists()
+    return path.exists() and path.read_text(encoding="utf-8") == committed.stdout
+
+
+def validate_pending_path_scope(paths: list[Path]) -> None:
+    """Refuse marker paths outside task and generated projection namespaces."""
+    allowed = {path.resolve() for path, _, _ in all_tasks()}
+    allowed.update(path.resolve() for path in generated_paths())
+    if any(
+        path.resolve() not in allowed
+        and not (
+            path.parent.resolve() == (ROOT / "status").resolve()
+            and re.fullmatch(r"STATUS-[A-Za-z0-9_-]+\.md", path.name)
+        )
+        for path in paths
+    ):
+        raise RuntimeError("pending reconciliation path is outside coordinator projections")
+
+
+def pending_path_digest(path: Path) -> str | None:
+    """Bind a pending path to exact contents, including an intentional deletion."""
+    return hashlib.sha256(path.read_bytes()).hexdigest() if path.exists() else None
+
+
+def remaining_pending_paths(paths: list[Path], do_commit: bool) -> list[str]:
+    """Keep coordinator-produced paths until a commit request consumes them."""
+    if do_commit:
+        return []
+    return [str(path.relative_to(ROOT)) for path in paths]
+
+
+def apply_git_reconciliation(
+    state: State,
+    policy: EvidencePolicy,
+    scan_config: Meta | None,
+    scan_binding: Meta,
+    ticket: int,
+    do_commit: bool,
+    push: bool,
+) -> bool | None:
+    """Apply a completed external observation while holding the authority lock."""
+    if observation_is_superseded(scan_config, scan_binding, ticket):
+        return None
+    prior_pending = pending_observation_paths()
+    generated = generated_paths()
+    before: dict[Path, str | None] = {path: path.read_text() for path, _, _ in all_tasks()}
+    before.update({path: path.read_text() if path.exists() else None for path in generated})
+    committed = False
+    try:
+        sync_task_observations(all_tasks(), state)
+        tasks = all_tasks()
+        write_generated_views(tasks, state)
+        errors = validate(live=False, policy=policy)
+        if errors:
+            raise RuntimeError("validation failed:\n" + "\n".join(errors))
+        require_policy_unchanged(ROOT, policy)
+        for path in generated_paths():
+            before.setdefault(path, None)
+        touched = changed_paths(before, include_deleted=True)
+        pending = sorted(set(prior_pending + touched))
+        title = project_settings()["project_title"]
+        committed = commit(f"chore(state): reconcile {title}", pending) if do_commit else False
+        head = run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], check=False).stdout.strip()
+        atomic(observation_marker("observation-published"), f"{ticket}\n")
+        atomic(
+            RUNTIME / "last-reconcile.json",
+            json.dumps(
+                {
+                    "at": now(),
+                    "ticket": ticket,
+                    "state_commit": head,
+                    "project_main": state["remote_main"],
+                    "pending_paths": remaining_pending_paths(pending, do_commit),
+                    "pending_hashes": {
+                        str(path.relative_to(ROOT)): pending_path_digest(path) for path in pending
+                    }
+                    if not do_commit
+                    else {},
+                },
+                indent=2,
+            )
+            + "\n",
+        )
+        if push:
+            push_replica()
+        return committed if do_commit else True
+    except Exception:
+        if not committed:
+            restore_paths(before)
+        raise
 
 
 def write_session_projections(session_records: list[Meta]) -> list[Path]:
@@ -2279,7 +2478,7 @@ def mutate(args: argparse.Namespace, kind: str, policy: EvidencePolicy | None = 
     if backend_selection()["backend"] == "sqlite":
         mutate_sqlite(args, kind, policy)
         return
-    with locked():
+    with locked(phase="git_mutate"):
         if backend_selection()["backend"] != "git":
             raise RuntimeError("BACKEND_CHANGED: retry using the selected backend")
         sync_replica_before_write()
@@ -2476,11 +2675,9 @@ def role_doctor_errors() -> list[str]:
         return [f"role admission unavailable: {error}"]
 
 
-def cmd_doctor(*, live: bool) -> int:
-    """Validate static state and optionally compare the live generated views."""
-    sqlite = backend_selection()["backend"] == "sqlite"
-    sqlite_live = CONFIG.exists() and bool(config().get("github_repository"))
-    errors = validate(live=live and (not sqlite or sqlite_live))
+def doctor_checks(*, live: bool, sqlite: bool, live_state: State | None) -> list[str]:
+    """Validate one authority view and its optional pre-scanned live input."""
+    errors = validate(live=live, live_state=live_state)
     errors.extend(role_doctor_errors())
     if sqlite:
         errors.extend(SQLiteBackend(DATABASE, project_binding(), TASKS).integrity_errors())
@@ -2491,6 +2688,52 @@ def cmd_doctor(*, live: bool) -> int:
         except (OSError, json.JSONDecodeError, AttributeError):
             code = "REPLICA_BLOCKED"
         errors.append(f"{code}: replica reconciliation requires operator review")
+    return errors
+
+
+def git_doctor_checks(*, live: bool) -> list[str]:
+    """Read one Git authority view while observing live data outside the lock."""
+    if not live:
+        with locked(exclusive=False, phase="doctor"):
+            return doctor_checks(live=False, sqlite=False, live_state=None)
+    for _ in range(3):
+        ticket = published_observation_ticket()
+        scan_config = config() if CONFIG.exists() else None
+        scan_binding = project_binding()
+        live_state = project_scan() if live else None
+        with locked(exclusive=False, phase="doctor"):
+            if backend_selection()["backend"] != "git":
+                raise RuntimeError("BACKEND_CHANGED: retry doctor")
+            if (config() if CONFIG.exists() else None) != scan_config:
+                raise RuntimeError("OBSERVATION_INPUT_CHANGED: retry doctor")
+            if project_binding() != scan_binding:
+                raise RuntimeError("OBSERVATION_INPUT_CHANGED: retry doctor")
+            errors = doctor_checks(live=live, sqlite=False, live_state=live_state)
+            # An intervening publication is harmless when its rendered live
+            # view agrees with this scan. Retry only a stale live comparison;
+            # never hide unrelated structural errors.
+            if (
+                ticket != published_observation_ticket()
+                and errors
+                and all(
+                    error in {"PROJECT_STATE.md is stale", "WORKTREES.md is stale"}
+                    for error in errors
+                )
+            ):
+                continue
+            return errors
+    return ["OBSERVATION_CHANGED: retry doctor"]
+
+
+def cmd_doctor(*, live: bool) -> int:
+    """Validate one consistent Git authority view without locking its live scan."""
+    sqlite = backend_selection()["backend"] == "sqlite"
+    sqlite_live = CONFIG.exists() and bool(config().get("github_repository"))
+    check_live = live and (not sqlite or sqlite_live)
+    if sqlite:
+        errors = doctor_checks(live=check_live, sqlite=True, live_state=None)
+    else:
+        errors = git_doctor_checks(live=check_live)
     if errors:
         print("\n".join("ERROR: " + value for value in errors))
         return 1
@@ -2503,29 +2746,41 @@ def cmd_doctor(*, live: bool) -> int:
 
 
 def cmd_snapshot(task_id: str | None = None) -> None:
-    with locked(exclusive=False):
-        sqlite = backend_selection()["backend"] == "sqlite"
-        sqlite_live = CONFIG.exists() and bool(config().get("github_repository"))
-        errors = validate(live=not sqlite or sqlite_live)
-        if errors:
-            raise RuntimeError("snapshot refused:\n" + "\n".join(errors))
+    sqlite = backend_selection()["backend"] == "sqlite"
+    sqlite_live = CONFIG.exists() and bool(config().get("github_repository"))
+    for _ in range(3):
+        ticket = published_observation_ticket() if not sqlite else None
+        live_state = project_scan() if not sqlite or sqlite_live else None
+        with locked(exclusive=False, phase="snapshot"):
+            if (backend_selection()["backend"] == "sqlite") != sqlite:
+                raise RuntimeError("BACKEND_CHANGED: retry snapshot")
+            if not sqlite and ticket != published_observation_ticket():
+                continue
+            errors = validate(live=not sqlite or sqlite_live, live_state=live_state)
+            if errors:
+                raise RuntimeError("snapshot refused:\n" + "\n".join(errors))
+            print_snapshot_under_lock(task_id, sqlite)
+            return
+    raise RuntimeError("OBSERVATION_CHANGED: retry snapshot")
+
+
+def print_snapshot_under_lock(task_id: str | None, sqlite: bool) -> None:
+    """Emit one validated snapshot while the caller holds the shared lock."""
+    if sqlite:
+        print("STORAGE_BACKEND=sqlite")
+    else:
+        print("STATE_COMMIT=" + run(["git", "-C", str(ROOT), "rev-parse", "HEAD"]).stdout.strip())
+    print((ROOT / "CURRENT.md").read_text(), end="")
+    if task_id is not None:
         if sqlite:
-            print("STORAGE_BACKEND=sqlite")
+            records = storage_backend().load_session_records(task_id)
+            record = records[-1] if records else None
         else:
-            print(
-                "STATE_COMMIT=" + run(["git", "-C", str(ROOT), "rev-parse", "HEAD"]).stdout.strip()
-            )
-        print((ROOT / "CURRENT.md").read_text(), end="")
-        if task_id is not None:
-            if sqlite:
-                records = storage_backend().load_session_records(task_id)
-                record = records[-1] if records else None
-            else:
-                record = latest_session(ROOT, task_id)
-            if record is None:
-                raise RuntimeError(f"no session snapshot for {task_id}")
-            validate_session_record(record)
-            print("SESSION_SNAPSHOT=" + json.dumps(record, sort_keys=True, separators=(",", ":")))
+            record = latest_session(ROOT, task_id)
+        if record is None:
+            raise RuntimeError(f"no session snapshot for {task_id}")
+        validate_session_record(record)
+        print("SESSION_SNAPSHOT=" + json.dumps(record, sort_keys=True, separators=(",", ":")))
 
 
 def cmd_board() -> None:
@@ -2854,7 +3109,7 @@ def cmd_rollback(args: argparse.Namespace) -> None:
 
 def require_active_owner(task_id: str, owner: str) -> EvidencePolicy:
     """Fence wrapped commands with a live claim before external effects."""
-    with locked(exclusive=False):
+    with locked(exclusive=False, phase="run_preflight"):
         _, meta, _ = locate(task_id)
         try:
             policy = evidence_policy(ROOT)

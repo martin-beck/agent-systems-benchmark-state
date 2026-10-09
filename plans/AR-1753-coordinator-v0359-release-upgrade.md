@@ -17,8 +17,10 @@ all unrelated work.
 
 ## Acceptance
 
-- `coordinator.vendor.json` is a release-class manifest for `v0.3.59` and binds
-  the exact upstream commit, tree, and complete vendored file digest set.
+- `coordinator.vendor.json` is the canonical schema-v1 release manifest for
+  `v0.3.59` and binds the exact upstream commit and complete vendored file
+  digest set. The immutable receipt separately records and verifies the Git
+  tree determined by that commit; do not add a noncanonical manifest field.
 - Offline vendor verification and an independent source-to-vendor byte
   comparison pass with no untracked or locally patched vendored bytes.
 - Task/schema validation, generated-view checks, privacy and source-header
