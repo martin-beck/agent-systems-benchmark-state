@@ -978,7 +978,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. |
-| Next action | Implement catalog generation and selection on top of the installer/discovery inventory. |
+| Next action | After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory. |
 
 ### AR-1764 — Integrate project tools and catalogs with ASB runs
 
@@ -1049,6 +1049,20 @@
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
 | Next action | Render every cataloged ASB error, failure, partial outcome, and warning as concise cause-specific human guidance with an honest next action when one exists. |
+
+### AR-1769 — Human diagnostic completeness CI gate
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. |
+| Next action | Add a required CI gate and executable negative journey proving every current and future public diagnostic is cataloged, specifically rendered, actionable, and privacy-safe. |
 
 
 ## Dependency graph
@@ -1877,6 +1891,7 @@ flowchart LR
         AR_1766["AR-1766 - Planned"]:::status_planned
         AR_1767["AR-1767 - Planned"]:::status_planned
         AR_1768["AR-1768 - Planned"]:::status_planned
+        AR_1769["AR-1769 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3774,6 +3789,8 @@ flowchart LR
     AR_1766 --> AR_1767
     AR_1766 --> AR_1768
     AR_1767 --> AR_1768
+    AR_1768 --> AR_1769
+    AR_1769 --> AR_1763
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3886,7 +3903,3 @@ flowchart LR
 | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) |
 | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) |
 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) |
-| [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | None |
-| [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | None |
-| [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md) |
-| [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md) |
