@@ -613,11 +613,10 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](../tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | codex-root-ar1721-closeout-20261009 | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Independent read-only reviewer: verify receipt b6072dfa3aefea82be76cd2444b2cc646e8cc80739558b78887343d94417d1f2 against exact current ASB 69bf9029a4976f14739cf4c25949428ff2fe0bb7 and asb-tui 60ab530dd1a09d6617514f9974217c9f08d48876, original PR #489/#296 provenance, focused test results, and all listed terminal-green hosted runs; approve or report findings before release. |
 | P1 | [AR-1728](../tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | codex-ar1728-cli2key-contract-20261009 | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
 | P1 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md): Harden Goose diagnostic fixture determinism | codex-ar1735-goose-fixture-20261009 | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. | Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics. |
 
@@ -628,7 +627,7 @@
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 | P0 | [AR-1752](../tasks/AR-1752-development-broker-v115-projection.md): Repair development broker v1.15 dynamic-catalog projection | Unclaimed | Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works. | Claim in an isolated ASB worktree; reproduce the exact installed asb tui dynamic-catalog failure, repair DevelopmentBackend negotiated-version forwarding, and qualify the public install-to-route journey. |
 
-### Blocked (87)
+### Blocked (88)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -647,3 +646,5 @@
 | P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | Unclaimed | Provide a real runtime-owned strict-replay CLI entrypoint. | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. |
 | P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | Unclaimed | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. |
 | P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | Unclaimed | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Add actual replay CLI argument wiring and bounded lifecycle/egress/no-fallback tests around authenticated execution hook; then run full gates. |
+| P0 | [AR-1268](../tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | Unclaimed | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Await approved runtime-owned launch bundle/factory exposing SandboxLaunchInput, ResourceLease, pinned commands, and supervised lifecycle to the transport adapter; then add real child lifecycle/egress tests. |
+| P0 | [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md): Runtime-owned replay launch-bundle factory | Unclaimed | Create runtime-owned launch bundles for supervised strict replay. | Await approved runtime-issued cassette-service handle/shared transport extension; then connect it to spawn_runtime_replay and run real request/response, egress, cancellation/restart, timeout/crash cleanup, no-fallback fixtures. |
