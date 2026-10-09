@@ -9,7 +9,7 @@
   "id": "AR-1751",
   "next_action": "Repair independent-review P1 on PR #518 without rewriting d0ab2af: isolate the GCC capability probe in an owned process group, bound descendant termination/output drain after leader exit, prove linker-prefix CLOEXEC restoration on hostile descendant and timeout paths, then publish a new signed+DCO head and rerun exact-head gates.",
   "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
-  "observed_dirty": 1,
+  "observed_dirty": 25,
   "observed_head": "d0ab2af3fed2f73f4c31c56dfbe715f897483e94",
   "owner": "codex-asb-ar1751-linker-confinement-20261009",
   "plan": "../plans/AR-1751-gcc-linker-prefix-confinement.md",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T01:35:14+00:00",
+  "updated_at": "2026-10-09T01:35:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
