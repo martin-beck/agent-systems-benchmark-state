@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37956211475 | `f361cfc7f89a` | push | Huawei MIT source headers | completed:success |
 | 37956211456 | `f361cfc7f89a` | push | Cross-repository development broker qualification | completed:success |
 | 37956211454 | `f361cfc7f89a` | push | Rust verification | in_progress:- |
-| 37956211438 | `f361cfc7f89a` | push | Formal assurance | in_progress:- |
+| 37956211438 | `f361cfc7f89a` | push | Formal assurance | completed:success |
 | 37956211415 | `f361cfc7f89a` | push | Emulated aarch64 portability | in_progress:- |
 | 37956211410 | `f361cfc7f89a` | push | Credential-free benchmark path | completed:success |
 | 37955302373 | `9bfff7aa4e2b` | pull_request | Credential-free benchmark path | completed:success |
