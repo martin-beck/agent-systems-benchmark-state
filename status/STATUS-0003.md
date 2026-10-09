@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Obtain approval from a distinct GitHub reviewer identity, then merge PR #536 through merge_pr.py; preserve exact-head green evidence. |
+| Next action | Invoke merge_pr.py through handoffctl with exact base f361cfc, head 9cd9e80, and reviewed tree; verify exact-main CI and post-merge receipt before accept/release. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 

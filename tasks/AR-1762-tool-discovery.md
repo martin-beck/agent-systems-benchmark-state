@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Obtain approval from a distinct GitHub reviewer identity, then merge PR #536 through merge_pr.py; preserve exact-head green evidence.",
+  "next_action": "Invoke merge_pr.py through handoffctl with exact base f361cfc, head 9cd9e80, and reviewed tree; verify exact-main CI and post-merge receipt before accept/release.",
   "observed_branch": "feature/ar-1762-tool-discovery-v2",
   "observed_dirty": 0,
   "observed_head": "9cd9e80cfc2a3bee31a402016371ab70b6cfb1cc",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 246,
+  "task_revision": 247,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:50:59+00:00",
+  "updated_at": "2026-10-09T16:51:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -735,3 +735,8 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:50:59+00:00: Recorded command exit 0; command argv SHA-256
   c60f622e20fad966fce3443f7c537bf9bb56e23c13ec83a53834e19d80e19b74.
+
+- 2026-10-09T16:51:24+00:00: Separate technical review is complete and exact-head PR #536 checks are
+  fully green at head 9cd9e80/base f361cfc. DEVELOPMENT.md permits development-only integration
+  after technical review without a GitHub approval object; same-account approval is optional.
+  Proceeding with exact-base/tree signed DCO merge via merge_pr.py.
