@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1752",
+  "qualification_date": "2026-10-09",
+  "candidate": {
+    "base_commit": "f3840f351c9da1657ad44af594cf2b6ae8b419c9",
+    "commit": "c2ad947f27ea178720001c48a2b20f34f4383f5d",
+    "tree": "6897b0de3b8fa4e0e53f232b7c674d0a2538523c",
+    "asb_binary_sha256": "01f9d420be42f79ae992cc578a016d26dd2a856e0e16ffe5b489f37f4ebbccb7",
+    "signed": true,
+    "dco": true
+  },
+  "paired_frontend": {
+    "commit": "60ab530dd1a09d6617514f9974217c9f08d48876",
+    "tree": "72d0e08883130aebc4a88fb9914007ff93a0f555",
+    "binary_sha256": "b722c016a03b6e62e2cb0b4a1b21b48c439d09e44c488377d4e2846a993a2991"
+  },
+  "toolchain": {
+    "cargo_release": "1.93.0",
+    "cargo_commit": "083ac5135f967fd9dc906ab057a2315861c7a80d",
+    "cargo_binary_sha256": "9548937d530bf439ff1ba47a3b2bd26eeb9c3aff1961c20c01798613de922578",
+    "rustc_release": "1.93.0",
+    "rustc_commit": "254b59607d4417e9dffbc307138ae5c86280fe4c",
+    "rustc_binary_sha256": "d32249a7c3bfcfc67b471460386e46323accae7125e344567a12d5664d99bb57"
+  },
+  "pre_repair_reproduction": {
+    "asb_commit": "69bf9029a4976f14739cf4c25949428ff2fe0bb7",
+    "tui_commit": "60ab530dd1a09d6617514f9974217c9f08d48876",
+    "exit": 4,
+    "code": "development_launch_failed",
+    "diagnostic": "dynamic_catalog_response_missing",
+    "raw_artifact_sha256": "4f2a74ff32209889ee33694477fa6d784897bd218d1dfc67854a660d05a0e6a0"
+  },
+  "focused_tests": {
+    "format": "pass",
+    "development_backend_version_and_authority_matrix": "pass",
+    "private_socket_v115_dynamic_catalog": "pass",
+    "focused_clippy": "pass",
+    "coverage": [
+      "v1.14 legacy ProviderCatalog",
+      "v1.15 DynamicProviderCatalog",
+      "status and refresh",
+      "stale runner identity",
+      "future generation",
+      "configuration auth provider-profile run and recording mutation denial",
+      "unavailable malformed static empty and transport projections without fallback"
+    ]
+  },
+  "installed_public_journey": {
+    "artifact_set": "ar1752-c2ad947-qualification-v5",
+    "pty": "80x24 xterm-256color",
+    "disposable_home": true,
+    "operations": {
+      "install": {
+        "exit": 0,
+        "code": "development_bundle_consumed",
+        "raw_artifact_sha256": "0b2f88be0686e380186c61d50f43255a082de07a057e15ba06fb6ffa3e621dc6"
+      },
+      "status": {
+        "exit": 0,
+        "code": "development_installed",
+        "raw_artifact_sha256": "392bea97a7ed3d2ee979793816034316dddb1841c5cea07f6b07961cef48d177"
+      },
+      "bare": {
+        "exit": 0,
+        "code": "development_launched",
+        "raw_artifact_sha256": "1e4116a44497c47d56d38d30f9624752099817b63384b8ce38ddbf3702464abe"
+      },
+      "dynamic_catalog": {
+        "exit": 0,
+        "code": "development_launched",
+        "raw_artifact_sha256": "b839d4657470ee12d2188373f1a00608015cb447a49618a021d92bbba5eb7d1f"
+      }
+    },
+    "residual_socket_list_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "residual_broker_list_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "network_boundary": {
+    "catalog_discovery": {
+      "network": "allowed_and_used",
+      "purpose": "credential-free public OpenRouter model catalog discovery",
+      "credential_sent": false,
+      "basis": "the public dynamic-catalog route accepted only a negotiated DynamicProviderCatalog; ASB live discovery invokes the bounded public catalog transport",
+      "packet_capture_performed": false
+    },
+    "benchmark_or_provider_execution": {
+      "invoked": false,
+      "network": "not_used"
+    },
+    "lifecycle_network_field": "The successful development_launched JSON records network=denied as lifecycle-router metadata. It is not evidence that credential-free catalog discovery HTTP was denied.",
+    "denied_catalog_discovery_behavior": "Injected transport-denial coverage projects typed Unavailable and does not fall back to static, mock, replay, or provider execution."
+  },
+  "development_warnings": [
+    "development_missing_authentication_allowed",
+    "development_missing_signatures_allowed",
+    "development_missing_key_management_allowed"
+  ],
+  "environmental_attempts": [
+    {
+      "artifact_set": "qualification-v2",
+      "result": "host_limitation",
+      "diagnostic": "trusted_tool_invalid",
+      "cause": "direct toolchain binary failed strict parent-permission validation"
+    },
+    {
+      "artifact_set": "qualification-v3",
+      "result": "host_limitation",
+      "diagnostic": "interactive_terminal_required",
+      "cause": "ambient terminal capability was dumb"
+    },
+    {
+      "artifact_set": "qualification-v4",
+      "result": "harness_timeout",
+      "diagnostic": "development_launch_timeout",
+      "cause": "positive dynamic route entered the interactive wizard but the harness supplied no quit input",
+      "dynamic_raw_artifact_sha256": "d3059116ee0dd9b94c2e04358a430d74adadf39fd6ba48f95a12fe09e79e8016"
+    }
+  ],
+  "privacy": {
+    "credential_values_persisted": false,
+    "raw_provider_payload_persisted": false,
+    "raw_terminal_transcript_committed": false,
+    "host_absolute_paths_committed": false
+  },
+  "result": "pass"
+}
