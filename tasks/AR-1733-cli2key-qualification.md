@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T16:07:31+00:00",
+  "claim_expires": "2026-10-09T16:09:20+00:00",
   "depends_on": [
     "AR-1732"
   ],
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Qualify and document cli2key development mode",
-  "updated_at": "2026-10-09T14:09:06+00:00",
+  "updated_at": "2026-10-09T14:09:20+00:00",
   "worktree_key": ""
 }
 ---
@@ -112,3 +112,5 @@ or official OpenAI Platform API-key claim.
 
 - 2026-10-09T14:09:06+00:00: Recorded command exit 0; command argv SHA-256
   fd0189ccb53772c2e359761b176e85a8093a5007418700d57fc1de004333a658.
+
+- 2026-10-09T14:09:20+00:00: Heartbeat by codex-asb-ar1733-cli2key-20261009.
