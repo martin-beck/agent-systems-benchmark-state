@@ -6,6 +6,9 @@
   "depends_on": [],
   "id": "AR-1758",
   "next_action": "Promote and claim; preserve the failed merge evidence, use the documented repair path, and publish only through a reviewed PR with signed+DCO exact-main verification.",
+  "observed_branch": "repair/ar-1758-merge-dco",
+  "observed_dirty": 0,
+  "observed_head": "b3cb9b256cccc15be682dbb1019a239b50edf6cd",
   "owner": "codex-asb-ar1758-merge-dco-repair-20261009",
   "plan": "../plans/AR-1758-ar1731-merge-dco-repair.md",
   "priority": "P0",
@@ -14,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Repair AR-1731 protected-main merge provenance",
-  "updated_at": "2026-10-09T12:57:04+00:00",
+  "updated_at": "2026-10-09T12:57:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1758-merge-dco"
 }
 ---
