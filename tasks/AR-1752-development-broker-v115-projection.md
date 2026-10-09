@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Repair development broker v1.15 dynamic-catalog projection",
-  "updated_at": "2026-10-09T03:58:56+00:00",
+  "updated_at": "2026-10-09T03:59:03+00:00",
   "worktree_key": ""
 }
 ---
@@ -118,3 +118,6 @@ journey evidence must contain no credential value or raw provider payload.
   f3840f351c9da1657ad44af594cf2b6ae8b419c9. Exact pre-repair installed ASB 69bf9029/TUI 60ab530d
   reproduction exits 4 with development_launch_failed and dynamic_catalog_response_missing; focused
   fmt, v1.14/v1.15 backend and private-socket tests, authority negatives, and focused Clippy pass.
+
+- 2026-10-09T03:59:03+00:00: Recorded command exit 0; command argv SHA-256
+  5505d6d58ed10296cbf385a0e04bd5e3da16b777251daad25d2e0270f3dc56f3.
