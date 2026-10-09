@@ -33,6 +33,6 @@ Generated from local Git and GitHub. Do not edit.
 | 37884751619 | `e21d6bc7ed1c` | push | Fault assurance | completed:success |
 | 37884751613 | `e21d6bc7ed1c` | push | Cross-repository development broker qualification | completed:success |
 | 37884751590 | `e21d6bc7ed1c` | push | Huawei MIT source headers | completed:success |
-| 37884751589 | `e21d6bc7ed1c` | push | Formal assurance | in_progress:- |
+| 37884751589 | `e21d6bc7ed1c` | push | Formal assurance | completed:success |
 | 37883946540 | `c2ad947f27ea` | pull_request | Cross-repository development broker qualification | completed:success |
 | 37883946513 | `c2ad947f27ea` | pull_request | Hosted portability and native qualification | completed:success |
