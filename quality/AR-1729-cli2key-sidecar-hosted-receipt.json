@@ -1,0 +1,20 @@
+{
+  "ar": "AR-1729",
+  "product_repository": "martin-beck/agent-systems-benchmark",
+  "pull_request": 525,
+  "product_head": "13da72b3e193af68c728e19f6d503a9ca41d49f8",
+  "product_merge_commit": "64eaad2215e4f08fe8e803022acb6e9146b95d94",
+  "required_ci": [
+    37903726732,
+    37903726650,
+    37903726674,
+    37903726687,
+    37903726667,
+    37903726651,
+    37903726644,
+    37903726739,
+    37903726605,
+    37903726623
+  ],
+  "result": "all required exact-merge workflows successful"
+}
