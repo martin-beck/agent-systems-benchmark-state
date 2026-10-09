@@ -2,23 +2,23 @@
 {
   "branch": "upgrade/ar-1753-coordinator-v0.3.59",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T10:25:40+00:00",
   "depends_on": [
     "AR-1749"
   ],
   "id": "AR-1753",
   "next_action": "Promote and claim; sync the exact v0.3.59 release into an isolated state worktree, repair only downstream-owned compatibility regressions, and run the complete integrity matrix before independent review.",
-  "owner": "",
+  "owner": "codex-asb-state-v0359-20261009",
   "plan": "../plans/AR-1753-coordinator-v0359-release-upgrade.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1753.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.3.59 release in ASB state and repair every downstream-owned integrity regression exposed by the upgrade.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Coordinator v0.3.59 release upgrade and integrity repair",
-  "updated_at": "2026-10-09T06:25:37+00:00",
+  "updated_at": "2026-10-09T06:25:40+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1753-coordinator-v0359"
 }
 ---
@@ -36,3 +36,5 @@ Preserve unrelated product and state work.
 
 - 2026-10-09T06:25:37+00:00: AR-1749 is done; exact v0.3.59 release identity and upgrade scope
   verified.
+
+- 2026-10-09T06:25:40+00:00: Claimed by codex-asb-state-v0359-20261009.
