@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:12:53+00:00",
+  "updated_at": "2026-10-09T16:12:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -201,3 +201,6 @@ for idempotence; never store API keys or tokens.
   3908391941b149d87cd18c760b34fdc3ae214bcacccce9740d77b64a2bbe405d.
 
 - 2026-10-09T16:12:50+00:00: Heartbeat by codex-asb-ar1761-tool-install-20261009.
+
+- 2026-10-09T16:12:57+00:00: Recorded command exit 0; command argv SHA-256
+  f660170bbb8ca494c8aaf72dae9adb4f0b31ec4f53306907274ffc6ed80832c0.
