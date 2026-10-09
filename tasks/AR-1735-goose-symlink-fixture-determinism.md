@@ -2,11 +2,11 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T04:39:08+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1735",
   "next_action": "Acceptance complete: preserve signed merge f3840f351c9da1657ad44af594cf2b6ae8b419c9 and receipt quality/AR-1735-goose-symlink-fixture-determinism-receipt.txt; no further implementation action.",
-  "owner": "codex-ar1735-goose-fixture-20261009",
+  "owner": "",
   "plan": "../plans/AR-1735-goose-symlink-fixture-determinism.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1735.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Harden Goose diagnostic fixture determinism",
-  "updated_at": "2026-10-09T03:56:38+00:00",
+  "updated_at": "2026-10-09T03:57:17+00:00",
   "worktree_key": ""
 }
 ---
@@ -119,3 +119,10 @@ rerun as proof that the race does not exist.
 
 - 2026-10-09T03:56:38+00:00: Recorded command exit 0; command argv SHA-256
   401a9b7628f5ee98b40edd3b5ba15436e882f982d3297c92709bedf233943951.
+
+- 2026-10-09T03:57:17+00:00: Completed. PR #521 independently approved exact head
+  3aea09da2646180cbc1c05f5f022362552377595/tree a844b2f70a925535950e12fdb6bb3001a99d77ea and merged
+  via signed+DCO reviewed-tree integration as f3840f351c9da1657ad44af594cf2b6ae8b419c9 with the same
+  tree. All 10 required exact-main push workflows terminal success. Spec acceptance pass is bound to
+  quality/AR-1735-goose-symlink-fixture-determinism-receipt.txt digest
+  sha256:88e3b7d2743122372a9a3685d5e73eea5ecdb3df3bb8556b095818f44ea8240e.

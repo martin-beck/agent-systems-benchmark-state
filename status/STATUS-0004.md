@@ -613,13 +613,12 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1752](../tasks/AR-1752-development-broker-v115-projection.md): Repair development broker v1.15 dynamic-catalog projection | codex-ar1752-v115-projection-20261009 | Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works. | Claim in an isolated ASB worktree; reproduce the exact installed asb tui dynamic-catalog failure, repair DevelopmentBackend negotiated-version forwarding, and qualify the public install-to-route journey. |
 | P1 | [AR-1728](../tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | codex-ar1728-cli2key-contract-20261009 | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. |
-| P1 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md): Harden Goose diagnostic fixture determinism | codex-ar1735-goose-fixture-20261009 | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. | Acceptance complete: preserve signed merge f3840f351c9da1657ad44af594cf2b6ae8b419c9 and receipt quality/AR-1735-goose-symlink-fixture-determinism-receipt.txt; no further implementation action. |
 
 ### Open (1)
 
@@ -648,3 +647,4 @@
 | P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | Unclaimed | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Add actual replay CLI argument wiring and bounded lifecycle/egress/no-fallback tests around authenticated execution hook; then run full gates. |
 | P0 | [AR-1268](../tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | Unclaimed | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Await approved runtime-owned launch bundle/factory exposing SandboxLaunchInput, ResourceLease, pinned commands, and supervised lifecycle to the transport adapter; then add real child lifecycle/egress tests. |
 | P0 | [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md): Runtime-owned replay launch-bundle factory | Unclaimed | Create runtime-owned launch bundles for supervised strict replay. | Await approved runtime-issued cassette-service handle/shared transport extension; then connect it to spawn_runtime_replay and run real request/response, egress, cancellation/restart, timeout/crash cleanup, no-fallback fixtures. |
+| P0 | [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md): Runtime-issued cassette-service handle | Unclaimed | Provide a runtime-issued cassette-service handle for supervised strict replay. | Expose a runtime-owned cassette operation/response handle and connect it to actual replay dispatch; add supervised lifecycle/egress/no-fallback fixtures before full gates. |

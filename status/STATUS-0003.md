@@ -578,11 +578,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1735-goose-fixture-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. |
@@ -1619,7 +1619,7 @@ flowchart LR
         AR_1732["AR-1732 - Planned"]:::status_planned
         AR_1733["AR-1733 - Planned"]:::status_planned
         AR_1734["AR-1734 - Done"]:::status_done
-        AR_1735["AR-1735 - In progress"]:::status_in_progress
+        AR_1735["AR-1735 - Done"]:::status_done
         AR_1736["AR-1736 - Planned"]:::status_planned
         AR_1737["AR-1737 - Done"]:::status_done
         AR_1738["AR-1738 - Done"]:::status_done
