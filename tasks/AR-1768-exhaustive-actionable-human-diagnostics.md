@@ -8,7 +8,7 @@
     "AR-1767"
   ],
   "id": "AR-1768",
-  "next_action": "State doctor is green and projection clean. Run focused diagnostics/human/contract tests on the completed nine-code repair, then full clippy/workspace/doc/release gates; commit and push signed exact head, obtain independent review, and monitor PR #541 CI.",
+  "next_action": "Bulk producer catalog repair is implemented for all routed RouterError codes, with explicit diagnostic contexts and human text. Focused diagnostic, human, contract, and formatting gates pass; run full workspace test, clippy/doc/release gates, then sign/push the exact head for fresh independent review and PR #541 CI.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "observed_dirty": 2,
   "observed_head": "20a2d7b857da8c1e3737f968eac0ca95ea62b6eb",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:43:30+00:00",
+  "updated_at": "2026-10-09T21:43:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -434,3 +434,7 @@ say what remains usable.
 
 - 2026-10-09T21:43:30+00:00: Recorded command exit 0; command argv SHA-256
   c80ca783fe4cf07f6303dc0ed50924e0e4d4194135b9af0906c309f10569c2b8.
+
+- 2026-10-09T21:43:54+00:00: Reviewer identified 46 additional routed producer codes. Added explicit
+  mappings, catalog entries, and human explanations; focused gates pass. Product worktree remains
+  uncommitted until full gates complete.
