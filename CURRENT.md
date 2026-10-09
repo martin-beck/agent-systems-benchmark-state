@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1769](tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Implement a reviewed typed identity catalog and migrate or explicitly quarantine all 608 bare CliError::usage/validation/operation producers, including multiline and dynamic forms; add controlled defects for prose-keyword, multiline, and identifier-based producer bypasses; then rerun full gates and fresh review. | codex-ar1769-matrix-repair-terra |
+| P0 | [AR-1769](tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Run full exact-head qualification for signed head f8d87c0140b3c2ddd7c1df55eae6eff029543874; if terminal green, obtain fresh independent review of the complete migration before any PR. | codex-ar1769-matrix-repair-terra |
 
 ## Open
 

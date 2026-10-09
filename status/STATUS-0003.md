@@ -1062,7 +1062,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. |
-| Next action | Implement a reviewed typed identity catalog and migrate or explicitly quarantine all 608 bare CliError::usage/validation/operation producers, including multiline and dynamic forms; add controlled defects for prose-keyword, multiline, and identifier-based producer bypasses; then rerun full gates and fresh review. |
+| Next action | Run full exact-head qualification for signed head f8d87c0140b3c2ddd7c1df55eae6eff029543874; if terminal green, obtain fresh independent review of the complete migration before any PR. |
 
 ### AR-1770 — Descriptor-safe directory race hardening and acceptance matrix
 
