@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:48:50+00:00",
+  "updated_at": "2026-10-09T15:48:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -122,3 +122,6 @@ development authentication/signatures/keys are absent.
 - 2026-10-09T15:48:50+00:00: Full asb-cli test gate reached 254 passing tests but failed one
   unrelated control lifecycle test: control state root already owned at control.rs:7398.
   Discovery-specific tests passed. Classify by serial rerun before calling regression.
+
+- 2026-10-09T15:48:55+00:00: Recorded command exit 0; command argv SHA-256
+  b45c83268660fd13a393b0f63396bc006930e794a37c6011340f930ea2be0f71.
