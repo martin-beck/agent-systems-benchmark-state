@@ -854,6 +854,20 @@
 | Summary | Make configured online/live provider execution the default for canonical run, sweep, easy, recording/campaign, and TUI handoff paths while keeping local mock and strict replay explicit alternatives. |
 | Next action | Promote after AR-1723, AR-1724, and cli2key qualification AR-1733 are current; inventory every run/sweep/easy/record/campaign/TUI entry point, implement default-online routing with explicit --local-mock and offline replay alternatives, then qualify positive and negative paths. |
 
+### AR-1755 — Make ASB installation safely idempotent
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the ASB Make install path so rerunning plain &#96;make install&#96; replaces its existing ASB binary without advertising an invalid Make option. |
+| Next action | Promote and claim; reproduce the existing-destination failure on exact ASB main, make plain &#96;make install&#96; safely idempotent, add repeat-install regressions, and complete independent reviewed integration with exact-head and exact-main CI. |
+
 
 ## Dependency graph
 
@@ -1667,6 +1681,7 @@ flowchart LR
         AR_1752["AR-1752 - Done"]:::status_done
         AR_1753["AR-1753 - Done"]:::status_done
         AR_1754["AR-1754 - Planned"]:::status_planned
+        AR_1755["AR-1755 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3536,6 +3551,7 @@ flowchart LR
     AR_1734 --> AR_1738
     AR_1737 --> AR_1751
     AR_1740 --> AR_1745
+    AR_1745 --> AR_1755
     AR_1749 --> AR_1753
     AR_1750 --> AR_1748
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3686,5 +3702,3 @@ flowchart LR
 | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
 | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
 | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
-| [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1150](../tasks/AR-1150.md) |
-| [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md) | [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md), [AR-1028](../tasks/AR-1028-asb-cli-workflow-captures.md) |
