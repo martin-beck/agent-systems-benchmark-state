@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Add contract tests for install/list/status/remove, fixture matrix, rollback, unsupported sources, and secret/path privacy; then run focused and full gates.",
+  "next_action": "Repair deterministic tool-record comparison and rerun focused tests before broader gates.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 1,
   "observed_head": "ea5e52bfe843969c493f22146f66ccfa2415159a",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:46:19+00:00",
+  "updated_at": "2026-10-09T15:46:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -86,3 +86,7 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T15:46:19+00:00: Recorded command exit 0; command argv SHA-256
   1de8f9ad957f9d922fc8cf742b621ec607aa4aa6d2a7b12e7f0ad69c06e24dd8.
+
+- 2026-10-09T15:46:33+00:00: Focused tool tests first failed with exit 101 because the idempotence
+  comparison included the generated record path/kind capability representation differently from the
+  persisted record. Diagnosis is in progress; no publication was attempted.

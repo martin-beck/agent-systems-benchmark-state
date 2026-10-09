@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Add contract tests for install/list/status/remove, fixture matrix, rollback, unsupported sources, and secret/path privacy; then run focused and full gates. |
+| Next action | Repair deterministic tool-record comparison and rerun focused tests before broader gates. |
 
 ### AR-1762 — Discover system and project ASB tools
 
