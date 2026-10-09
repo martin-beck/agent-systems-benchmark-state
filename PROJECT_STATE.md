@@ -25,14 +25,14 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37949645878 | `bb08e89cd559` | pull_request | Fault assurance | queued:- |
-| 37949645791 | `bb08e89cd559` | pull_request | Emulated aarch64 portability | queued:- |
-| 37949645701 | `bb08e89cd559` | pull_request | Portable protected-main provenance | queued:- |
-| 37949645676 | `bb08e89cd559` | pull_request | Cross-repository development broker qualification | queued:- |
-| 37949645600 | `bb08e89cd559` | pull_request | Repository quality | queued:- |
-| 37949645594 | `bb08e89cd559` | pull_request | Huawei MIT source headers | queued:- |
-| 37949645566 | `bb08e89cd559` | pull_request | Rust verification | queued:- |
-| 37949645558 | `bb08e89cd559` | pull_request | Formal assurance | queued:- |
-| 37949645498 | `bb08e89cd559` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 37949645487 | `bb08e89cd559` | pull_request | Credential-free benchmark path | queued:- |
-| 37949645457 | `bb08e89cd559` | pull_request | Hosted portability and native qualification | queued:- |
+| 37949645791 | `bb08e89cd559` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37949645701 | `bb08e89cd559` | pull_request | Portable protected-main provenance | in_progress:- |
+| 37949645676 | `bb08e89cd559` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37949645600 | `bb08e89cd559` | pull_request | Repository quality | in_progress:- |
+| 37949645594 | `bb08e89cd559` | pull_request | Huawei MIT source headers | in_progress:- |
+| 37949645566 | `bb08e89cd559` | pull_request | Rust verification | in_progress:- |
+| 37949645558 | `bb08e89cd559` | pull_request | Formal assurance | in_progress:- |
+| 37949645498 | `bb08e89cd559` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 37949645487 | `bb08e89cd559` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37949645457 | `bb08e89cd559` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 37947479468 | `64843f196737` | push | Cross-repository development broker qualification | completed:success |
