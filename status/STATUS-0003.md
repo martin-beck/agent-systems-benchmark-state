@@ -810,7 +810,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries. |
-| Next action | Constrain development Cargo linker handoff so a validated ld cannot widen GCC helper or library trust through -B; add adversarial collect2/library regressions, independent exact-head review, signed reviewed-tree merge, and exact-main post-merge verification. |
+| Next action | Wait for exact-head CI on PR #518 at d0ab2af3fed2f73f4c31c56dfbe715f897483e94, then obtain an independent same-user agent review; do not merge before immutable approval. |
 
 
 ## Dependency graph

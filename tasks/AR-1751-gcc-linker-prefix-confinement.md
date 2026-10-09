@@ -7,7 +7,7 @@
     "AR-1737"
   ],
   "id": "AR-1751",
-  "next_action": "Constrain development Cargo linker handoff so a validated ld cannot widen GCC helper or library trust through -B; add adversarial collect2/library regressions, independent exact-head review, signed reviewed-tree merge, and exact-main post-merge verification.",
+  "next_action": "Wait for exact-head CI on PR #518 at d0ab2af3fed2f73f4c31c56dfbe715f897483e94, then obtain an independent same-user agent review; do not merge before immutable approval.",
   "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
   "observed_dirty": 0,
   "observed_head": "d0ab2af3fed2f73f4c31c56dfbe715f897483e94",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T01:09:29+00:00",
+  "updated_at": "2026-10-09T01:10:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -265,3 +265,12 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
 
 - 2026-10-09T01:09:29+00:00: Recorded command exit 0; command argv SHA-256
   dc4a8581b37a2bf9f6f393251c1a291b2dfeee075edbcc11e15b492901a0105b.
+
+- 2026-10-09T01:10:21+00:00: Implemented GCC -B trust confinement at signed+DCO head
+  d0ab2af3fed2f73f4c31c56dfbe715f897483e94 and opened PR #518. The fresh 0500 descriptor-bound
+  prefix contains exactly one retained regular ld; empty ambient PATH is preserved; GCC driver
+  semantics fail closed; adversarial siblings, startup/library inputs, pathname/inode substitution,
+  descriptor lifetime, real Cargo linking, and deterministic roots are tested. Local fmt, clippy,
+  workspace tests, docs, release build, coverage, cargo-deny, cargo-audit, contract consistency,
+  repository policy, and revision-scoped Gitleaks passed. Awaiting exact-head hosted CI and
+  independent review.
