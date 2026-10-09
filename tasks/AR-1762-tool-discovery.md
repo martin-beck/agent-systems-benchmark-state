@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Repair probe loop syntax, then rerun focused tests.",
+  "next_action": "Remove unnecessary mutable stdout binding from bounded probe, then rerun focused tests.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 1,
   "observed_head": "5322501712aac2ed60976ffad28def0ec4f7cf95",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:53:49+00:00",
+  "updated_at": "2026-10-09T15:54:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -184,3 +184,6 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:53:49+00:00: Recorded command exit 101; command argv SHA-256
   6d7636ef6a901783afe8ce12e12b7c7118d93add5847209b2575150c7051697b.
+
+- 2026-10-09T15:54:03+00:00: Compile retry reached lint gate and failed only on an unnecessary `mut`
+  binding for probe stdout under -D warnings. Remove mut; no behavioral failure.
