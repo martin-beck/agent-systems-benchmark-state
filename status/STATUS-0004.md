@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) |
 | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | None |
 | [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | None |
 | [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md) |

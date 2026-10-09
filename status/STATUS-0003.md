@@ -1020,7 +1020,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. |
-| Next action | Run full cargo gates, then commit the reviewed diagnostic catalog/docs/tests with SSH signature and DCO; publish PR for independent review. State reconcile remains blocked by oversized generated handoffctl pyc and stale WORKTREES. |
+| Next action | PR #538 is open at exact head f065eed. Obtain independent technical review, then wait for all exact-head hosted checks. After review/checks pass, invoke merge_pr.py through handoffctl with exact base ae22d66 and reviewed head/tree; verify post-merge receipt before accept/release. State reconcile remains blocked by oversized handoffctl pyc. |
 
 ### AR-1767 — Safe automatic directory preparation with clear notice
 
@@ -3902,4 +3902,3 @@ flowchart LR
 | [AR-0823](../tasks/AR-0823-installation-qualification.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) |
 | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) |
 | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) |
-| [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) |

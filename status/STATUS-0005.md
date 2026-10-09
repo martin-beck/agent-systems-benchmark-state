@@ -43,7 +43,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | codex-ar1766-diagnostics | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | Run full cargo gates, then commit the reviewed diagnostic catalog/docs/tests with SSH signature and DCO; publish PR for independent review. State reconcile remains blocked by oversized generated handoffctl pyc and stale WORKTREES. |
+| P0 | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | codex-ar1766-diagnostics | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | PR #538 is open at exact head f065eed. Obtain independent technical review, then wait for all exact-head hosted checks. After review/checks pass, invoke merge_pr.py through handoffctl with exact base ae22d66 and reviewed head/tree; verify post-merge receipt before accept/release. State reconcile remains blocked by oversized handoffctl pyc. |
 
 ### Open (1)
 
