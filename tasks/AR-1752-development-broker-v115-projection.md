@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Repair development broker v1.15 dynamic-catalog projection",
-  "updated_at": "2026-10-09T04:24:02+00:00",
+  "updated_at": "2026-10-09T04:25:38+00:00",
   "worktree_key": ""
 }
 ---
@@ -145,3 +145,6 @@ journey evidence must contain no credential value or raw provider payload.
 
 - 2026-10-09T04:24:02+00:00: Recorded command exit 0; command argv SHA-256
   6b341ef0502e7c4d4250550e83a263707ae28faf12df525c0ea18805525e0563.
+
+- 2026-10-09T04:25:38+00:00: Recorded command exit 0; command argv SHA-256
+  fa25933c66d8cbb6b2d2af597d1b3cd94f826641380acb2b07c4673a25dc25fc.
