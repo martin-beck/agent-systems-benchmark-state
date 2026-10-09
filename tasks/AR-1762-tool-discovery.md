@@ -10,7 +10,7 @@
   "id": "AR-1762",
   "next_action": "Rerun workflow provenance test and full locked serial workspace tests; then run fmt/clippy/rustdoc/release gates.",
   "observed_branch": "feature/ar-1762-tool-discovery",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "b81ef5c7ebf323ddfc49e5722b070569bc4d2df1",
   "owner": "codex-asb-ar1762-tool-discovery-20261009",
   "plan": "../plans/AR-1762-tool-discovery.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:04:39+00:00",
+  "updated_at": "2026-10-09T16:04:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
