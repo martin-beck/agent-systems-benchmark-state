@@ -11,9 +11,9 @@
   ],
   "id": "AR-1766",
   "next_action": "Obtain distinct reviewer approval after hosted checks are terminal green; then merge PR #538 exact base ae22d66/head b8ae2dc through handoffctl, verify post-merge receipt, and accept/release AR-1766.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1766-fine-grained-human-diagnostic-contract",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "b8ae2dc60a71bceecbee73c1abcc25a55d63d9e3",
   "owner": "codex-ar1766-diagnostics",
   "plan": "../plans/AR-1766-fine-grained-human-diagnostic-contract.md",
   "priority": "P0",
@@ -30,9 +30,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T18:08:21+00:00",
+  "updated_at": "2026-10-09T18:08:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---

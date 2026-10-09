@@ -26,6 +26,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `.review-ar1761-537` | `DETACHED` | `95e540be95d2` | 0 | behind 10, ahead 0 |
 | `.review-ar1761-537-v2` | `DETACHED` | `fe6aa7c346e5` | 0 | behind 1, ahead 0 |
 | `.review-ar1762-536` | `DETACHED` | `26161a060868` | 0 | behind 15, ahead 0 |
+| `.review-ar1766` | `DETACHED` | `f065eed1b054` | 0 | behind 0, ahead 1 |
+| `.review-ar1766-repair` | `DETACHED` | `b8ae2dc60a71` | 0 | behind 0, ahead 2 |
 | `_ar1615-asb` | `DETACHED` | `1521b9800bf4` | 0 | behind 311, ahead 0 |
 | `_ar1615-asb62` | `DETACHED` | `62fda2f3417b` | 0 | behind 309, ahead 0 |
 | `a17b` | `DETACHED` | `dd10b075c065` | 0 | behind 155, ahead 0 |
@@ -70,6 +72,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 34, ahead 0 |
 | `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry-v2` | `fe6aa7c346e5` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery-v2` | `9cd9e80cfc2a` | 0 | behind 14, ahead 0 |
+| `agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract` | `feature/ar-1766-fine-grained-human-diagnostic-contract` | `b8ae2dc60a71` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 127, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 115, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 61, ahead 0 |
