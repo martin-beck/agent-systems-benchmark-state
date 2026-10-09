@@ -2,7 +2,7 @@
   "schema_version": 1,
   "ar": "AR-1721",
   "recorded_at": "2026-10-09T02:45:00Z",
-  "result": "pass",
+  "result": "blocked",
   "scope": "current-main paired closeout",
   "implementation": {
     "asb_pr": 489,
@@ -63,10 +63,35 @@
       "counts": "5 development-handoff tests + 1 formal-state test"
     }
   ],
+  "public_installed_journey": {
+    "asb_commit": "69bf9029a4976f14739cf4c25949428ff2fe0bb7",
+    "asb_tree": "5b75e55c7d4ee1e58df42b1e9989a96ab8994995",
+    "asb_binary_sha256": "e7bce35b7bbfb9241e935b08290f2a24dd90178d80ed82b814a0c3dc02d29052",
+    "asb_tui_commit": "60ab530dd1a09d6617514f9974217c9f08d48876",
+    "asb_tui_tree": "72d0e08883130aebc4a88fb9914007ff93a0f555",
+    "asb_tui_binary_sha256": "b722c016a03b6e62e2cb0b4a1b21b48c439d09e44c488377d4e2846a993a2991",
+    "controlling_pty": true,
+    "provider_network": "denied",
+    "install": "pass",
+    "status": "pass",
+    "bare_launch": "pass",
+    "operator_quickstart": "pass",
+    "dynamic_catalog": {
+      "result": "fail",
+      "exit_code": 4,
+      "router_code": "development_launch_failed",
+      "frontend_diagnostic": "dynamic_catalog_response_missing",
+      "frontend_network": "unknown",
+      "raw_output_sha256": "81de96b54f17ef4fe9468a2708568fb3d0f6df78ea8943e92554d59cc58d1a87"
+    },
+    "repair_ar": "AR-1752",
+    "verified": false
+  },
   "notes": [
     "The original ASB and paired TUI implementation merges are preserved as provenance; current-main heads include later additive repairs.",
     "Earlier post-merge failures on the original merge commits are not hidden; later exact-current-main trusted workflows are terminal green.",
-    "Development authentication, signature, and key-management policy remains warning-only; explicit live mode and identity mismatch behavior remain fail-closed.",
+    "Independent review found the original component-only receipt insufficient; the subsequently executed public installed journey is recorded here and truthfully blocks acceptance on the dynamic-catalog failure.",
+    "Development authentication, signature, and key-management policy remains warning-only; the failure is missing negotiated v1.15 projection through DevelopmentBackend, owned by AR-1752.",
     "No credential value or raw provider payload is present in this receipt."
   ]
 }
