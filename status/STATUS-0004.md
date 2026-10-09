@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | None |
 | [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | None |
 | [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md) |
 | [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md) |
@@ -631,4 +632,3 @@
 | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md) | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) |
 | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) |
 | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) | [AR-1736](../tasks/AR-1736-backend-model-catalog-execution.md), [AR-1754](../tasks/AR-1754-default-online-live-workflow.md) |
-| [AR-1734](../tasks/AR-1734-development-tui-tool-environment.md) | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md), [AR-1727](../tasks/AR-1727-development-broker-foreground-terminal.md) | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md), [AR-1738](../tasks/AR-1738-development-rustup-permission-compatibility.md) |

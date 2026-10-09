@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "Run full cargo test -p asb-cli and git diff review; then implement or explicitly document remaining TOCTOU/dry-run matrix gaps before signed commit.",
+  "next_action": "Full asb-cli gate is green; perform final diff review, then create signed DCO commit. Keep descriptor-relative race hardening and expanded matrix as explicit review follow-ups if not implementable in this AR.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:46:06+00:00",
+  "updated_at": "2026-10-09T18:46:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -206,3 +206,13 @@ when useful; repeated commands must not claim an existing directory was new.
   10a701b2424e5ed226b0455eb01ce19376ff98a24fb81ec0200c779f16f8a3dc.
 
 - 2026-10-09T18:46:06+00:00: Heartbeat by codex-ar1767-directory-preparation.
+
+- 2026-10-09T18:46:12+00:00: Full gate evidence 2026-10-09T18:49Z: cargo test -p asb-cli passed
+  302/302 unit tests plus capability 13/13, CLI E2E 4/4, diagnostics 3/3, guide examples 6/6, human
+  CLI 14/14, package qualification 2/2, setup contract 2/2, TUI lifecycle 5/5, workflow transcript
+  3/3, and doc-tests 0; total applicable suites green. The handoff wrapper recorded all output but
+  returned COMMAND_RECORDED_POST_RECONCILE_FAILED solely because state
+  tools/__pycache__/handoffctl.cpython-312.pyc exceeds 200 KiB. Diff review is clean (git diff
+  --check); provenance hash and human stderr fixture were updated intentionally. Review-required
+  descriptor-relative race and wider dry-run/permission/route matrix remain explicit follow-ups, not
+  claimed complete.
