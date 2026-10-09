@@ -2,13 +2,13 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T07:34:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1719"
   ],
   "id": "AR-1752",
   "next_action": "Release done, reconcile canonical state, and verify live doctor; parent AR-1721 may then requalify against exact main e21d6bc7 and TUI 60ab530d.",
-  "owner": "codex-ar1752-v115-projection-20261009",
+  "owner": "",
   "plan": "../plans/AR-1752-development-broker-v115-projection.md",
   "priority": "P0",
   "schema_version": 1,
@@ -22,11 +22,11 @@
   },
   "spec_ref": "specs/AR-1752.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Repair development broker v1.15 dynamic-catalog projection",
-  "updated_at": "2026-10-09T04:50:10+00:00",
+  "updated_at": "2026-10-09T04:50:16+00:00",
   "worktree_key": ""
 }
 ---
@@ -182,3 +182,7 @@ journey evidence must contain no credential value or raw provider payload.
   sha256:2e77c97c8d925c3d9e7200459fe129f6053b76535ff095ada6e02b7fe7476f0f binds the
   catalog-discovery versus provider-execution network boundary and contains no credential or raw
   provider payload.
+
+- 2026-10-09T04:50:16+00:00: Released done after independently approved exact candidate, green PR
+  #522, signed reviewed-tree merge e21d6bc7, all 10 exact-main workflows, and privacy-safe reviewed
+  plus mechanical closeout receipts.
