@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 216,
+  "task_revision": 217,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T22:09:35+00:00",
+  "updated_at": "2026-10-09T22:11:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -632,3 +632,6 @@ say what remains usable.
 - 2026-10-09T22:09:35+00:00: Replacement Terra worker renewed the durable checkpoint: exact head
   cd46a00, independent review clean, 13 of 15 required checks green, with only aarch64 and
   repository-quality live.
+
+- 2026-10-09T22:11:04+00:00: Recorded command exit 0; command argv SHA-256
+  6b5bceed41fba337d5ec826e4c734e7663075edd3201ded87541a028668b98cd.
