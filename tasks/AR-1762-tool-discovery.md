@@ -10,8 +10,8 @@
   "id": "AR-1762",
   "next_action": "Add the missing enum-level rustdoc, rerun focused tests, then full gates.",
   "observed_branch": "feature/ar-1762-tool-discovery",
-  "observed_dirty": 5,
-  "observed_head": "ea5e52bfe843969c493f22146f66ccfa2415159a",
+  "observed_dirty": 0,
+  "observed_head": "5322501712aac2ed60976ffad28def0ec4f7cf95",
   "owner": "codex-asb-ar1762-tool-discovery-20261009",
   "plan": "../plans/AR-1762-tool-discovery.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:52:37+00:00",
+  "updated_at": "2026-10-09T15:52:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
