@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1764.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "project_resolution", "description": "Supported setup/run/compare/report commands resolve the initialized project and bounded result paths."},
+    {"id": "selection_validation", "description": "Commands validate installed/discovered tools and active catalog compatibility before execution."},
+    {"id": "repair_guidance", "description": "Missing or stale dependencies explain the exact install/discover/select next action."},
+    {"id": "mode_boundary", "description": "Live, offline, and mock modes remain explicit and missing development authentication is warning-only."}
+  ],
+  "definition_of_done": ["Reviewed implementation merged", "Command integration, regression, and locked workspace gates pass"],
+  "inputs": [{"id": "project-inventory", "description": "Initialized project, tool inventory, and active catalog contract."}],
+  "outputs": [{"id": "integration", "description": "Project-aware setup, run, compare, and report behavior."}, {"id": "diagnostics", "description": "Actionable missing/stale dependency guidance."}],
+  "allowed_tools": ["cargo", "rustup", "git", "make", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["sudo", "unsafe-clean", "forced-git-update", "credential-values-in-state"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [{"id": "workflow", "description": "A project can progress from readiness to benchmark and result/report commands using selected catalog entries."}]
+}

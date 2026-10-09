@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1762.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "sources", "description": "System PATH and project-configured/local roots are both discovered."},
+    {"id": "typed_results", "description": "Results include kind, identity, canonical path, version/capabilities, availability, and diagnostic reason."},
+    {"id": "deterministic", "description": "Duplicate and precedence resolution is stable and configured pins are not overwritten."},
+    {"id": "safe_probe", "description": "Discovery rejects unsafe paths and runs only bounded allowlisted probes."}
+  ],
+  "definition_of_done": ["Reviewed implementation merged", "Fixture matrix and locked applicable gates pass"],
+  "inputs": [{"id": "schema", "description": "AR-1759 inventory contract and AR-1760 project layout."}],
+  "outputs": [{"id": "discovery", "description": "Deterministic system/project inventory API and CLI."}, {"id": "fixtures", "description": "PATH, project-root, duplicate, missing, and symlink fixtures."}],
+  "allowed_tools": ["cargo", "rustup", "git", "make", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["sudo", "arbitrary-execution", "unsafe-clean", "forced-git-update", "credential-values-in-state"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [{"id": "discovery", "description": "PATH/project/missing/duplicate/symlink fixtures pass with stable JSON."}]
+}

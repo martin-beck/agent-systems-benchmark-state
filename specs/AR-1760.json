@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1760.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "init_layout", "description": "Project init creates canonical config, results, and catalogs locations."},
+    {"id": "idempotent", "description": "A second init preserves valid user data and reports no destructive action."},
+    {"id": "safe", "description": "Conflicting files, traversal, and unsafe symlinks are rejected without writes outside the project."},
+    {"id": "fresh_user", "description": "Default output gives concise next commands and `--json` returns the same facts structurally."}
+  ],
+  "definition_of_done": ["Reviewed implementation merged", "Disposable-directory and locked workspace tests pass on the exact reviewed head"],
+  "inputs": [{"id": "schema", "description": "AR-1759 project configuration contract."}],
+  "outputs": [{"id": "initializer", "description": "Safe idempotent project initialization command."}, {"id": "tests", "description": "Disposable filesystem fixtures."}],
+  "allowed_tools": ["cargo", "rustup", "git", "make", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["sudo", "unsafe-clean", "forced-git-update", "credential-values-in-state"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [{"id": "filesystem", "description": "Fresh, repeat, conflict, partial, and symlink cases pass."}, {"id": "cli", "description": "Human and JSON output contracts pass."}]
+}

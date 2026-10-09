@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1759.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "single_authority", "description": "All project/tool/catalog consumers use one versioned machine-readable contract."},
+    {"id": "typed_inventory", "description": "Agent, harness, benchmark, workload, and support-tool records have bounded identity, source, version, path, platform, digest, and status fields."},
+    {"id": "catalog_provenance", "description": "Generated catalogs are represented by selectable references with source/ref, digest, schema, and generation metadata."},
+    {"id": "secret_boundary", "description": "Secrets are rejected or represented only by references/digests and never persisted as values."},
+    {"id": "safe_validation", "description": "Traversal, unsafe paths, malformed versions, and incompatible schema revisions fail with actionable diagnostics."}
+  ],
+  "definition_of_done": ["Signed/DCO implementation is independently reviewed and merged.", "Focused schema/migration/security-boundary tests and applicable locked gates pass on the exact reviewed head."],
+  "inputs": [{"id": "existing-contracts", "description": "Current ASB CLI, config, adapter, and catalog schemas."}],
+  "outputs": [{"id": "schema", "description": "Versioned project/tool/catalog schema."}, {"id": "fixtures", "description": "Validation and migration fixtures."}, {"id": "diagnostics", "description": "Stable human/JSON diagnostics."}],
+  "allowed_tools": ["cargo", "rustup", "git", "make", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["sudo", "unsafe-clean", "forced-git-update", "credential-values-in-state"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [{"id": "schema", "description": "Valid and invalid fixtures prove compatibility, secret, and path boundaries."}, {"id": "workspace", "description": "Applicable locked format, clippy, test, and documentation gates pass."}]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1763.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "generated", "description": "Catalogs are generated from validated discovered/configured tools and existing supported sources."},
+    {"id": "provenance", "description": "Project config records stable identity, source/ref, digest, schema, generation time, and compatibility."},
+    {"id": "selection", "description": "Users can list and select compatible catalogs; invalid selections fail without changing the active selection."},
+    {"id": "repeatable", "description": "Repeated generation of the same inventory is deterministic and content-addressed."}
+  ],
+  "definition_of_done": ["Independent review and signed merge", "Catalog fixtures, selection tests, and locked applicable gates pass"],
+  "inputs": [{"id": "inventory", "description": "AR-1761 installer records and AR-1762 discovery inventory."}],
+  "outputs": [{"id": "catalogs", "description": "Generated project catalog artifacts and provenance records."}, {"id": "selection", "description": "Catalog list/show/select commands."}],
+  "allowed_tools": ["cargo", "rustup", "git", "make", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["sudo", "unsafe-clean", "forced-git-update", "credential-values-in-state"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [{"id": "catalog", "description": "Generation, provenance, compatibility, selection, and secret-boundary cases pass."}]
+}

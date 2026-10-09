@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1761.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "typed_install", "description": "Agent, harness, benchmark, workload, and support-tool fixtures install through explicit bounded adapters."},
+    {"id": "local_root", "description": "Installation requires no root and writes only inside the selected user/project-local root."},
+    {"id": "registry_record", "description": "Successful installs atomically persist validated source, version, path, platform, digest, and capability metadata."},
+    {"id": "rollback", "description": "Failed or interrupted installation leaves no active partial record or executable."},
+    {"id": "unsupported_safe", "description": "Unsupported tools/sources fail clearly without arbitrary command execution or secret persistence."}
+  ],
+  "definition_of_done": ["Independent review and signed merge", "Installer fixture matrix and locked applicable gates pass"],
+  "inputs": [{"id": "schema", "description": "AR-1759 config contract and AR-1760 project layout."}],
+  "outputs": [{"id": "installer", "description": "Bounded per-kind tool installers."}, {"id": "registry", "description": "Validated project installation records."}],
+  "allowed_tools": ["cargo", "rustup", "git", "make", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["sudo", "arbitrary-shell-install", "unsafe-clean", "forced-git-update", "credential-values-in-state"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [{"id": "install", "description": "All supported fixture kinds, repeat, rollback, and bounded-root cases pass."}, {"id": "secret", "description": "Credentials are never written to config, logs, or fixtures."}]
+}

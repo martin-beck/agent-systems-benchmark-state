@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1765.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "fresh_flow", "description": "A fresh disposable user can initialize a project, install each supported tool kind, discover inventory, select a generated catalog, and run a benchmark."},
+    {"id": "persistence", "description": "Configuration, catalog provenance, and results are present in the project and contain no secret values."},
+    {"id": "recovery", "description": "Repeat, interruption, missing, stale, unsafe, and incompatible cases are actionable and do not corrupt state."},
+    {"id": "output", "description": "Every new command has understandable human output and equivalent `--json` evidence."}
+  ],
+  "definition_of_done": ["Independent review and signed merge", "Fresh-user end-to-end receipt, applicable locked gates, and exact post-merge CI pass"],
+  "inputs": [{"id": "series", "description": "AR-1760 through AR-1764 merged implementation and test contracts."}],
+  "outputs": [{"id": "qualification", "description": "Disposable fresh-user end-to-end evidence receipt."}, {"id": "quickstart", "description": "Concise validated command sequence."}],
+  "allowed_tools": ["cargo", "rustup", "git", "make", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["sudo", "unsafe-clean", "forced-git-update", "real-credential-values", "production-only-auth-gates"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [{"id": "e2e", "description": "The complete disposable project journey passes for all supported tool classes."}, {"id": "secrets", "description": "No real credential, token, private host path, or production-only validation is required."}]
+}
