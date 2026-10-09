@@ -530,7 +530,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter. |
-| Next action | Promote after AR-1729 and AR-1730; integrate the Codex adapter with exact launch binding and no fallback. |
+| Next action | PR #527 at exact head 6386e06: await all required checks, then merge signed exact two-parent commit, verify post-merge, and record hosted acceptance. |
 
 ### AR-1732 — Integrate cli2key runs and sweeps
 

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1731](tasks/AR-1731-cli2key-codex-adapter.md): Connect Codex adapter to cli2key backend | Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter. | Promote after AR-1729 and AR-1730; integrate the Codex adapter with exact launch binding and no fallback. | codex-asb-ar1731-codex-adapter-20261009 |
+| P1 | [AR-1731](tasks/AR-1731-cli2key-codex-adapter.md): Connect Codex adapter to cli2key backend | Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter. | PR #527 at exact head 6386e06: await all required checks, then merge signed exact two-parent commit, verify post-merge, and record hosted acceptance. | codex-asb-ar1731-codex-adapter-20261009 |
 
 ## Open
 

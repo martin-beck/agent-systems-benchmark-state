@@ -8,7 +8,7 @@
     "AR-1730"
   ],
   "id": "AR-1731",
-  "next_action": "Promote after AR-1729 and AR-1730; integrate the Codex adapter with exact launch binding and no fallback.",
+  "next_action": "PR #527 at exact head 6386e06: await all required checks, then merge signed exact two-parent commit, verify post-merge, and record hosted acceptance.",
   "observed_branch": "feature/ar-1731-cli2key-codex-adapter",
   "observed_dirty": 0,
   "observed_head": "6386e066b37a99692e3343f6162d648a8cb506f0",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Connect Codex adapter to cli2key backend",
-  "updated_at": "2026-10-09T12:45:03+00:00",
+  "updated_at": "2026-10-09T12:45:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1731-cli2key-adapter"
 }
 ---
@@ -104,3 +104,6 @@ OpenRouter, ambient Codex defaults, or a different endpoint/model.
 
 - 2026-10-09T12:43:13+00:00: Recorded command exit 0; command argv SHA-256
   395302625f1e72e0b4d832ace51ac9b6e3d33f870ee042f07565de4ad943f209.
+
+- 2026-10-09T12:45:23+00:00: Implementation and focused hostile tests are complete; independent
+  review comment recorded. Awaiting remaining exact-head hosted checks before merge.
