@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 212,
+  "task_revision": 213,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T21:07:35+00:00",
+  "updated_at": "2026-10-09T21:08:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -715,3 +715,6 @@ implementation boundary explicitly and keep the product offline after install.
   dependency-update runs 37990589932/90306/94951/95917/96242 success. Formal 37990474025 and aarch64
   37990474021 first attempts and reruns both report Docker toomanyrequests before any product test.
   No release/receipt yet; preserve failures as infrastructure evidence.
+
+- 2026-10-09T21:08:28+00:00: Recorded command exit 0; command argv SHA-256
+  e33622dcf99b60a4bb3498cd8b921eabc91cb1cd9d46bea181072007afd84554.
