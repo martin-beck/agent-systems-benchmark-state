@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Monitor fresh PR #536 exact-head checks; obtain independent review, merge only when all required checks green, then post-merge verify and reconcile AR.",
+  "next_action": "Obtain independent review of PR #536 exact head; monitor all required checks to terminal green, then merge via established integration path and post-merge verify.",
   "observed_branch": "feature/ar-1762-tool-discovery-v2",
   "observed_dirty": 0,
   "observed_head": "26161a060868782472e25bdfcfca8e66c939f119",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 192,
+  "task_revision": 193,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:29:57+00:00",
+  "updated_at": "2026-10-09T16:30:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -559,3 +559,10 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:29:57+00:00: Recorded command exit 0; command argv SHA-256
   c0c4fc971a71da94a06b408b048e36e88d8a6e3d9a79b1409b528a850e06dc93.
+
+- 2026-10-09T16:30:24+00:00: Clean replacement PR #536 is open at exact head
+  26161a060868782472e25bdfcfca8e66c939f119 (base f361cfc7f89a1ff667a72f0279ac61cf1cc4968f). Its
+  fresh Portable protected-main provenance check is already green, confirming the
+  no-synchronization-merge topology repair. Header and AWQ shadow checks are green; remaining
+  required checks are running. Prior PR #535 remains unmergeable due stale pull-request merge ref
+  and is not being merged.

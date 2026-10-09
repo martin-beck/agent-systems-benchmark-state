@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Monitor fresh PR #536 exact-head checks; obtain independent review, merge only when all required checks green, then post-merge verify and reconcile AR. |
+| Next action | Obtain independent review of PR #536 exact head; monitor all required checks to terminal green, then merge via established integration path and post-merge verify. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 
