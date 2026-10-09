@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T23:11:06+00:00",
   "depends_on": [
     "AR-1766",
     "AR-1767"
@@ -12,7 +12,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1768-diagnostics",
   "plan": "../plans/AR-1768-exhaustive-actionable-human-diagnostics.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1768.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:11:00+00:00",
+  "updated_at": "2026-10-09T21:11:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -61,3 +61,5 @@ say what remains usable.
 
 - 2026-10-09T21:11:00+00:00: AR-1766 and AR-1767 are durably done with exact-main post-merge
   evidence; promote diagnostics implementation.
+
+- 2026-10-09T21:11:06+00:00: Claimed by codex-ar1768-diagnostics.

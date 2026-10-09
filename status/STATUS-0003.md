@@ -1040,11 +1040,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1768-diagnostics |
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
@@ -1904,7 +1904,7 @@ flowchart LR
         AR_1765["AR-1765 - Planned"]:::status_planned
         AR_1766["AR-1766 - Done"]:::status_done
         AR_1767["AR-1767 - Done"]:::status_done
-        AR_1768["AR-1768 - Open"]:::status_open
+        AR_1768["AR-1768 - In progress"]:::status_in_progress
         AR_1769["AR-1769 - Planned"]:::status_planned
         AR_1770["AR-1770 - In progress"]:::status_in_progress
     end
