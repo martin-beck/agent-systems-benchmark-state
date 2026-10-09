@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1734](../tasks/AR-1734-development-tui-tool-environment.md) | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md), [AR-1727](../tasks/AR-1727-development-broker-foreground-terminal.md) | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md), [AR-1738](../tasks/AR-1738-development-rustup-permission-compatibility.md) |
 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md) | None | None |
 | [AR-1736](../tasks/AR-1736-backend-model-catalog-execution.md) | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | None |
 | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md) | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md), [AR-1734](../tasks/AR-1734-development-tui-tool-environment.md) | [AR-1751](../tasks/AR-1751-gcc-linker-prefix-confinement.md) |
@@ -43,7 +42,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | codex-ar1767-directory-preparation | Implementing safe directory preparation and notices for command-owned ASB outputs. | Full asb-cli gate is green; perform final diff review, then create signed DCO commit. Keep descriptor-relative race hardening and expanded matrix as explicit review follow-ups if not implementable in this AR. |
+| P0 | [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | codex-ar1767-directory-preparation | Implementing safe directory preparation and notices for command-owned ASB outputs. | Publish signed commit 876e6f9 for independent review; request follow-up AR for descriptor-relative race hardening and expanded dry-run/permission/route matrix before acceptance. |
 
 ### Open (1)
 

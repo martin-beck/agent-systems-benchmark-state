@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | Full asb-cli gate is green; perform final diff review, then create signed DCO commit. Keep descriptor-relative race hardening and expanded matrix as explicit review follow-ups if not implementable in this AR. | codex-ar1767-directory-preparation |
+| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | Publish signed commit 876e6f9 for independent review; request follow-up AR for descriptor-relative race hardening and expanded dry-run/permission/route matrix before acceptance. | codex-ar1767-directory-preparation |
 
 ## Open
 

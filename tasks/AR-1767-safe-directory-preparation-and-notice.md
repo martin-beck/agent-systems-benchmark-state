@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "Full asb-cli gate is green; perform final diff review, then create signed DCO commit. Keep descriptor-relative race hardening and expanded matrix as explicit review follow-ups if not implementable in this AR.",
+  "next_action": "Publish signed commit 876e6f9 for independent review; request follow-up AR for descriptor-relative race hardening and expanded dry-run/permission/route matrix before acceptance.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:46:38+00:00",
+  "updated_at": "2026-10-09T18:47:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -222,3 +222,16 @@ when useful; repeated commands must not claim an existing directory was new.
 
 - 2026-10-09T18:46:38+00:00: Recorded command exit 0; command argv SHA-256
   cc3219618c175da0f79c31f93d97d1bf8cf3cae1f286c986db4b0b79e645c12c.
+
+- 2026-10-09T18:47:12+00:00: Commit evidence 2026-10-09T18:47Z: exact clean worktree commit
+  876e6f98d6a9e8b419cbcf83cb34d8a8903f47cd is SSH-signed (ED25519
+  SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE) and carries Signed-off-by. Full cargo test -p
+  asb-cli is green across 302 unit tests and all applicable integration/doc suites; wrapper
+  post-reconcile still fails only on oversized handoffctl pyc. Acceptance reconciliation: AR-1767
+  behavior (central path preparation, fail-closed symlink/file/traversal cases, stderr notices, JSON
+  separation, TUI state/cache notice, docs) is implemented and tested. Residual independent-review
+  findings requiring follow-up rather than silent deferral: descriptor-relative/TOCTOU race
+  hardening for directory preparation and atomic writers, deterministic race tests, and broader
+  dry-run/permission/read-only/rollback/route matrix. These are security-quality gaps in shared
+  atomic paths beyond the focused AR behavior; parent coordinator should create a dedicated
+  dependent repair AR before accepting AR-1767.
