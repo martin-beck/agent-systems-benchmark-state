@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Refactor discovery probe context to satisfy clippy too-many-arguments, then rerun clippy and focused tests.",
+  "next_action": "Serially rerun the three unrelated full-suite failures to classify concurrency flakiness; discovery tests and clippy are green.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 0,
   "observed_head": "b81ef5c7ebf323ddfc49e5722b070569bc4d2df1",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:58:13+00:00",
+  "updated_at": "2026-10-09T15:58:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -237,3 +237,8 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:58:13+00:00: Recorded command exit 101; command argv SHA-256
   c02724e2616c7f8300b05c4bbd3ffa05c839bdbb8ea7620fc41e34a6f8ee2c87.
+
+- 2026-10-09T15:58:22+00:00: Full workspace cargo test reached 255 passing tests but had three
+  unrelated parallel collisions: two control state-root already-owned panics and one TUI
+  hostile-path cleanup assertion. None involve tool discovery; rerun each exact test with one test
+  thread before gate classification.

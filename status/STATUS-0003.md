@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Refactor discovery probe context to satisfy clippy too-many-arguments, then rerun clippy and focused tests. |
+| Next action | Serially rerun the three unrelated full-suite failures to classify concurrency flakiness; discovery tests and clippy are green. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 
