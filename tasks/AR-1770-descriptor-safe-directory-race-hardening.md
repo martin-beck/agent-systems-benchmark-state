@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Fresh independent reviewer must inspect PR #540 exact head c207894096c7fa1827b5b5d1089ed2fa94ffb66a and tree c7ae526e2e7c6ece817b74db40a2666275446711; then wait for exact-head CI, including repaired formal lock.",
+  "next_action": "Fresh independent reviewer must inspect PR #540 exact head 73aae7bc514eb7fcb15a83f9cf56db7dd23513b2 and tree d37a71df48e02c40b9d0fc7f53ffb8e6d1535d7b; then wait for exact-head CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T20:24:01+00:00",
+  "updated_at": "2026-10-09T20:24:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -456,3 +456,11 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T20:24:01+00:00: Recorded command exit 0; command argv SHA-256
   ddbb5502f0d424795dabf150da7be015ab94ddbaabe138dce1d4d5c038935f17.
+
+- 2026-10-09T20:24:27+00:00: Nested transaction repair pushed as signed DCO commit 73aae7b.
+  write_initial now collects created directory descriptors and rolls them back in reverse order on
+  later preparation/write failure; pre-existing directories remain untouched. Added focused nested
+  rollback test. Formal lock refresh remains included and the previously failing Loom gate passed
+  locally with --locked after the refresh. Prior workload 42 tests, route integration (human 14,
+  guide 6, TUI 5, transcript 3), clippy, and check gates pass. PR #540 awaits fresh review and
+  exact-head CI.
