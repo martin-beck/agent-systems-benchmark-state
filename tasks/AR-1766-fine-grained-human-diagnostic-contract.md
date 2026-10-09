@@ -30,9 +30,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T17:49:14+00:00",
+  "updated_at": "2026-10-09T17:49:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -171,3 +171,6 @@ the catalog.
 - 2026-10-09T17:49:14+00:00: Published PR #538. Independent self-review found no behavioral blocker;
   all local gates pass: workspace tests, clippy, rustdoc, format, focused diagnostic/provenance
   tests. Hosted checks are queued/in progress.
+
+- 2026-10-09T17:49:45+00:00: Recorded command exit 0; command argv SHA-256
+  e9b24956bbeef05f9b8e311ac4cff9fe48e9c3a8f325530772c2efdff5186d19.
