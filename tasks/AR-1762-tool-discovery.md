@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 239,
+  "task_revision": 240,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:47:17+00:00",
+  "updated_at": "2026-10-09T16:47:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -715,3 +715,6 @@ development authentication/signatures/keys are absent.
   GitHub approval through handoffctl; GitHub rejected it because the authenticated reviewer is the
   PR author (Review Can not approve your own pull request). Exact approval blocker is reviewer
   identity, not product or CI.
+
+- 2026-10-09T16:47:24+00:00: Recorded command exit 0; command argv SHA-256
+  9f4274a1ff2badb622d85fe9ead48e20c2cb50c0d6f299f4f8d9cbf7f303671e.
