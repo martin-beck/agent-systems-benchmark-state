@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Wait for exact-head CI to terminal results; independently inspect/review PR diff and merge only after all required checks green.",
+  "next_action": "Monitor fresh PR #536 exact-head checks; obtain independent review, merge only when all required checks green, then post-merge verify and reconcile AR.",
   "observed_branch": "feature/ar-1762-tool-discovery-v2",
   "observed_dirty": 0,
   "observed_head": "26161a060868782472e25bdfcfca8e66c939f119",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 190,
+  "task_revision": 191,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:29:36+00:00",
+  "updated_at": "2026-10-09T16:29:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -549,3 +549,10 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:29:36+00:00: Recorded command exit 0; command argv SHA-256
   0824c880c152f6ef97cd8815dbfbfbdad1eeb2e2b75d1e451b91c5296f1376de.
+
+- 2026-10-09T16:29:50+00:00: PR #535 provenance rerun attempt 3 (run 37958575962) failed
+  identically: refs/pull/535/merge remained stale and the validator correctly rejected a
+  synchronization merge that was not the topic tip. No bypass used. Created clean replacement PR
+  #536 from exact origin/main f361cfc with signed+DCO non-merge topic commits, head
+  26161a0f2e09e7f9b2e8af5ef7c9389ad1d2d7f0 (exact head will be refreshed from gh); all local
+  tests/fmt/clippy/rustdoc/release/source-header gates green.
