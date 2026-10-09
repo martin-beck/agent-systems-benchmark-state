@@ -10,8 +10,8 @@
   "id": "AR-1761",
   "next_action": "Rerun full workspace tests, then rustdoc and release build; inspect diff and publish PR.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
-  "observed_dirty": 1,
-  "observed_head": "19fa40a7575a759cff5713464ae263838ddfb7c4",
+  "observed_dirty": 0,
+  "observed_head": "793d2967fd9852a9db1e6097db4cd43656f356fb",
   "owner": "codex-asb-ar1761-tool-install-20261009",
   "plan": "../plans/AR-1761-tool-install-registry.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:51:56+00:00",
+  "updated_at": "2026-10-09T15:51:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
