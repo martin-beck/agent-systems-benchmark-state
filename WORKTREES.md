@@ -64,7 +64,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 13, ahead 0 |
-| `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `6ca69c7df59d` | 0 | behind 7, ahead 7 |
+| `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `6ca69c7df59d` | 21 | behind 7, ahead 7 |
+| changed files | - | - | - | `Cargo.lock`, `README.md`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/fixtures/human/outcome-matrix-v1.txt`, `crates/asb-cli/fixtures/human/public-family-output-v1.tsv`, `crates/asb-cli/fixtures/legacy/completion-bash-v1.txt`, `crates/asb-cli/fixtures/legacy/doctor-commands-v1.json`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/tui.rs`, `crates/asb-cli/tests/capability_contract.rs`, `crates/asb-cli/tests/cli_e2e.rs`, `crates/asb-cli/tests/guide_examples.rs`, `crates/asb-cli/tests/human_cli.rs`, `docs/COMMAND_OUTPUT.md`, `docs/QUICKSTART.md`, `docs/examples/asb-cli-workflow-v1.provenance.json`, `docs/workflows/cli-first-run.md`, `docs/workflows/live-benchmark.md`, `docs/workflows/multi-agent-provider.md`, `docs/workflows/troubleshooting.md` |
 | `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery-v2` | `f361cfc7f89a` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 106, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 94, ahead 0 |
