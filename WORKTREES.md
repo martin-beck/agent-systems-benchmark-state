@@ -20,6 +20,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `.asb-rebase-446` | `DETACHED` | `0559c6f268db` | 0 | behind 243, ahead 4 |
 | `.asb-rebase-448` | `DETACHED` | `58d108d9192a` | 0 | behind 241, ahead 0 |
 | `.asb-rebase-450` | `DETACHED` | `1b245632c957` | 0 | behind 242, ahead 2 |
+| `.review-ar1760-532` | `DETACHED` | `90abb5b3bb29` | 0 | behind 0, ahead 5 |
 | `_ar1615-asb` | `DETACHED` | `1521b9800bf4` | 0 | behind 277, ahead 0 |
 | `_ar1615-asb62` | `DETACHED` | `62fda2f3417b` | 0 | behind 275, ahead 0 |
 | `a17b` | `DETACHED` | `dd10b075c065` | 0 | behind 121, ahead 0 |
