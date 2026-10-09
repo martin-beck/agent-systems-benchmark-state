@@ -20,21 +20,21 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #539 | `feature/ar-1767-safe-directory-preparation-and-notice@f34830bb75ce` | `main` | UNKNOWN | QUEUED:, QUEUED:, QUEUED: | feat(cli): prepare command-owned directories safely |
+| #539 | `feature/ar-1767-safe-directory-preparation-and-notice@f34830bb75ce` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): prepare command-owned directories safely |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37976640580 | `f34830bb75ce` | pull_request | Huawei MIT source headers | completed:success |
+| 37976640554 | `f34830bb75ce` | pull_request | Portable protected-main provenance | completed:success |
+| 37976640534 | `f34830bb75ce` | pull_request | Rust verification | in_progress:- |
+| 37976640520 | `f34830bb75ce` | pull_request | Formal assurance | in_progress:- |
+| 37976640514 | `f34830bb75ce` | pull_request | Repository quality | in_progress:- |
+| 37976640498 | `f34830bb75ce` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37976640478 | `f34830bb75ce` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37976640475 | `f34830bb75ce` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37976640471 | `f34830bb75ce` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37976640453 | `f34830bb75ce` | pull_request | Fault assurance | in_progress:- |
+| 37976640450 | `f34830bb75ce` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 37976104851 | `d01741ce97ad` | pull_request | Formal assurance | completed:success |
-| 37976104746 | `d01741ce97ad` | pull_request | Fault assurance | completed:success |
-| 37976104732 | `d01741ce97ad` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37976104717 | `d01741ce97ad` | pull_request | Portable protected-main provenance | completed:success |
-| 37976104698 | `d01741ce97ad` | pull_request | Cross-repository development broker qualification | completed:success |
-| 37976104664 | `d01741ce97ad` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 37976104625 | `d01741ce97ad` | pull_request | Repository quality | in_progress:- |
-| 37976104616 | `d01741ce97ad` | pull_request | Huawei MIT source headers | completed:success |
-| 37976104560 | `d01741ce97ad` | pull_request | Hosted portability and native qualification | completed:success |
-| 37976104557 | `d01741ce97ad` | pull_request | Rust verification | completed:failure |
-| 37976104497 | `d01741ce97ad` | pull_request | Credential-free benchmark path | completed:success |
-| 37975792178 | `876e6f98d6a9` | pull_request | Agent Workflow Quality shadow | completed:success |
