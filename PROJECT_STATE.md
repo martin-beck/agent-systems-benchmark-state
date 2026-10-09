@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37938978869 | `942c7b110045` | push | Repository quality | in_progress:- |
+| 37938978869 | `942c7b110045` | push | Repository quality | completed:success |
 | 37938978842 | `942c7b110045` | push | Portable protected-main provenance | completed:success |
 | 37938978831 | `942c7b110045` | push | Rust verification | in_progress:- |
 | 37938978804 | `942c7b110045` | push | Hosted portability and native qualification | completed:success |
