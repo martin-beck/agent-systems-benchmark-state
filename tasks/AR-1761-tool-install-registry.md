@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Obtain independent technical review and GitHub approval; wait for every PR check at exact head to reach success, then integrate with merge_pr.py against the current exact main base.",
+  "next_action": "Run full local quality, coverage, and build gates; push 22d8de5, then request independent review and monitor exact-head PR checks.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 0,
   "observed_head": "22d8de5361b62ff1cc649873396e18578371d923",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:15:01+00:00",
+  "updated_at": "2026-10-09T16:15:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -225,3 +225,8 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T16:14:55+00:00: Recorded command exit 0; command argv SHA-256
   1178411481f18b826842d37a3b9a5ab5a571c081b00edfbecbf0bba4703c92b4.
+
+- 2026-10-09T16:15:12+00:00: PR #534 repository-quality run 37955302155 failed its unchanged 90%
+  workspace line-coverage floor at 88.18% (131495 lines, 15541 missed); floor was not weakened.
+  Repaired with signed DCO commit 22d8de5 adding positive and negative tool installer
+  parser/source/conflict/status/config branch coverage; focused 6-test suite passes.
