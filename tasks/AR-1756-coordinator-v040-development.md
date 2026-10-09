@@ -2,23 +2,23 @@
 {
   "branch": "upgrade/ar-1756-coordinator-v0.4.0-development",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T13:57:40+00:00",
   "depends_on": [
     "AR-1753"
   ],
   "id": "AR-1756",
   "next_action": "Promote and claim; independently verify upstream main c2692d0 and the absence of a v0.4.0 tag, then sync it through sync-development in an isolated state worktree without patching vendored bytes.",
-  "owner": "",
+  "owner": "codex-asb-ar1756-coordinator-v040-20261009",
   "plan": "../plans/AR-1756-coordinator-v040-development-vendor.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1756.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt the exact upstream Coordinator main containing the supported spec-acceptance command as an explicitly development-only vendor so merged ASB ARs can be durably accepted.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Coordinator v0.4.0 development vendor for supported acceptance",
-  "updated_at": "2026-10-09T11:57:36+00:00",
+  "updated_at": "2026-10-09T11:57:40+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1756-coordinator-v040"
 }
 ---
@@ -37,3 +37,5 @@ be bypassed.
 
 - 2026-10-09T11:57:36+00:00: AR-1753 is done; exact upstream main with supported acceptance command
   independently verified and AR-1756 state files are integrated on protected main.
+
+- 2026-10-09T11:57:40+00:00: Claimed by codex-asb-ar1756-coordinator-v040-20261009.

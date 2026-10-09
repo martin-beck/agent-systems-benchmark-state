@@ -872,11 +872,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1756-coordinator-v040-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Adopt the exact upstream Coordinator main containing the supported spec-acceptance command as an explicitly development-only vendor so merged ASB ARs can be durably accepted. |
@@ -1696,7 +1696,7 @@ flowchart LR
         AR_1753["AR-1753 - Done"]:::status_done
         AR_1754["AR-1754 - Planned"]:::status_planned
         AR_1755["AR-1755 - Done"]:::status_done
-        AR_1756["AR-1756 - Open"]:::status_open
+        AR_1756["AR-1756 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
