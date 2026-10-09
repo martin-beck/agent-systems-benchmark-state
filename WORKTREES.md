@@ -368,7 +368,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `crates/asb-cli/src/tui.rs` |
 | `agent-systems-benchmark-ar-1726-pr499-review3` | `DETACHED` | `acd7a146baba` | 0 | behind 52, ahead 0 |
 | `agent-systems-benchmark-ar-1727-development-broker-foreground-terminal` | `repair/ar-1727-development-broker-foreground-terminal` | `420b57d20a6c` | 0 | behind 59, ahead 0 |
-| `agent-systems-benchmark-ar-1728` | `feature/ar-1728-cli2key-contract` | `0a39c0821ee5` | 0 | behind 3, ahead 1 |
+| `agent-systems-benchmark-ar-1728` | `feature/ar-1728-cli2key-contract` | `2dff1bc3e609` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar-1734-development-tui-tool-environment` | `repair/ar-1734-development-tui-tool-environment` | `40f618b9389c` | 0 | behind 50, ahead 0 |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 49, ahead 0 |
 | `agent-systems-benchmark-ar-1735` | `repair/ar-1735-goose-fixture-determinism` | `6e721e2c97a3` | 0 | behind 0, ahead 1 |
