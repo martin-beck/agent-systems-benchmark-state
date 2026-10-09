@@ -9,8 +9,8 @@
   "id": "AR-1751",
   "next_action": "Repair independent-rereview P1 additively after abf4b656: impose a strict per-call work budget on nonblocking development-command output drain so continuously readable hostile stdout yields to wait/deadline/group termination; add deterministic continuous-writer descendant timeout/cleanup/CLOEXEC regression, rerun full gates, publish a new signed+DCO child commit, and rerun fresh exact-head CI before rereview.",
   "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
-  "observed_dirty": 1,
-  "observed_head": "abf4b6566c6e8bd519840587f440c0977652cc5b",
+  "observed_dirty": 0,
+  "observed_head": "2cda48c27ae99381a59dc0676126b34ec77d15ef",
   "owner": "codex-asb-ar1751-linker-confinement-20261009",
   "plan": "../plans/AR-1751-gcc-linker-prefix-confinement.md",
   "priority": "P0",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T02:02:34+00:00",
+  "updated_at": "2026-10-09T02:03:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
