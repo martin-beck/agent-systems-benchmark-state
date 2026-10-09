@@ -10,7 +10,7 @@
   "id": "AR-1762",
   "next_action": "Repair moved configured-key ownership in discovery, then rerun focused tests.",
   "observed_branch": "feature/ar-1762-tool-discovery",
-  "observed_dirty": 4,
+  "observed_dirty": 5,
   "observed_head": "ea5e52bfe843969c493f22146f66ccfa2415159a",
   "owner": "codex-asb-ar1762-tool-discovery-20261009",
   "plan": "../plans/AR-1762-tool-discovery.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:48:14+00:00",
+  "updated_at": "2026-10-09T15:48:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
