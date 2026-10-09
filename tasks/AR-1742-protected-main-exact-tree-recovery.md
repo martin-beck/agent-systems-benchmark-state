@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover PR #505 protected-main exact-tree publication failure without rewriting history.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "PR #505 exact-tree recovery",
-  "updated_at": "2026-10-09T02:39:41+00:00",
+  "updated_at": "2026-10-09T02:40:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1742-exact-tree-recovery"
 }
 ---
@@ -37,3 +37,6 @@ from AR-1740's default-lifecycle PR #507.
   or worktree mutation performed.
 
 - 2026-10-09T02:37:41+00:00: Claimed by codex-asb-ar1742-recovery-20261009.
+
+- 2026-10-09T02:40:12+00:00: Recorded command exit 0; command argv SHA-256
+  b3fabb7e2b1107ab3c87549923e4b2bb3fae0eff1d057d8b2d573fe8c66b4572.
