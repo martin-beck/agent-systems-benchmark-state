@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1758-merge-dco",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T14:55:12+00:00",
+  "claim_expires": "2026-10-09T15:01:27+00:00",
   "depends_on": [],
   "id": "AR-1758",
   "next_action": "Promote and claim; preserve the failed merge evidence, use the documented repair path, and publish only through a reviewed PR with signed+DCO exact-main verification.",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Repair AR-1731 protected-main merge provenance",
-  "updated_at": "2026-10-09T12:57:55+00:00",
+  "updated_at": "2026-10-09T13:01:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1758-merge-dco"
 }
 ---
@@ -47,3 +47,5 @@ until the repaired exact-main workflows are green.
 
 - 2026-10-09T12:57:55+00:00: Recorded command exit 0; command argv SHA-256
   e75a34f4f25bb34858aa2834408ca3b44567522e4c707405df70509bd9081ed9.
+
+- 2026-10-09T13:01:27+00:00: Heartbeat by codex-asb-ar1758-merge-dco-repair-20261009.
