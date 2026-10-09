@@ -57,8 +57,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1752` | `repair/ar-1752-development-broker-v115-projection` | `c2ad947f27ea` | 0 | behind 23, ahead 0 |
 | `agent-systems-benchmark-ar-1755-idempotent-make-install` | `fix/ar-1755-idempotent-make-install` | `6ac109533612` | 0 | behind 11, ahead 0 |
 | `agent-systems-benchmark-ar-1755-integration` | `DETACHED` | `64eaad2215e4` | 0 | behind 14, ahead 0 |
-| `agent-systems-benchmark-ar-1757-human-first-cli-output` | `feature/ar-1757-human-first-cli-output` | `d11cdbd46bdc` | 10 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/tui.rs`, `crates/asb-cli/tests/guide_examples.rs`, `docs/QUICKSTART.md`, `docs/examples/asb-cli-workflow-v1.json`, `docs/examples/asb-cli-workflow-v1.provenance.json`, `docs/examples/guide-contract.json`, `docs/workflows/cli-first-run.md`, `crates/asb-cli/fixtures/legacy/` |
+| `agent-systems-benchmark-ar-1757-human-first-cli-output` | `feature/ar-1757-human-first-cli-output` | `d11cdbd46bdc` | 8 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/tui.rs`, `crates/asb-cli/tests/guide_examples.rs`, `docs/QUICKSTART.md`, `docs/examples/asb-cli-workflow-v1.provenance.json`, `docs/workflows/cli-first-run.md`, `crates/asb-cli/fixtures/legacy/` |
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 88, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 76, ahead 0 |
