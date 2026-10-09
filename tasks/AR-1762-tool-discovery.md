@@ -10,8 +10,8 @@
   "id": "AR-1762",
   "next_action": "Repair probe lifecycle/read path so descendant-held pipes cannot block and the entire probe is bounded (for example process-group/FD-safe supervision), add a regression fixture, rerun full gates and hosted checks; independent review remains pending.",
   "observed_branch": "feature/ar-1762-tool-discovery-v2",
-  "observed_dirty": 1,
-  "observed_head": "26161a060868782472e25bdfcfca8e66c939f119",
+  "observed_dirty": 0,
+  "observed_head": "9cd9e80cfc2a3bee31a402016371ab70b6cfb1cc",
   "owner": "codex-asb-ar1762-tool-discovery-20261009",
   "plan": "../plans/AR-1762-tool-discovery.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 207,
+  "task_revision": 208,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:34:05+00:00",
+  "updated_at": "2026-10-09T16:34:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
