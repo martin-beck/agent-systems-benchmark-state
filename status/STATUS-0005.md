@@ -20,7 +20,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | codex-asb-ar1757-human-output-20261009 | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
-| P0 | [AR-1760](../tasks/AR-1760-project-init-workspace.md): Initialize an ASB benchmark project workspace | codex-asb-ar1760-project-init-20261009 | Add an idempotent ASB project initializer containing config, results, and catalog areas. | Repair complete: add project init to QUICKSTART executable command/table inventory, rerun guide and full workspace tests, then push the corrected head and obtain independent review. |
+| P0 | [AR-1760](../tasks/AR-1760-project-init-workspace.md): Initialize an ASB benchmark project workspace | codex-asb-ar1760-project-init-20261009 | Add an idempotent ASB project initializer containing config, results, and catalog areas. | Repair provenance fixture hashes for the changed CLI and guide contract, rerun workflow_transcript plus the full workspace gate, then update/push PR #532 and obtain independent review. |
 
 ### Open (1)
 

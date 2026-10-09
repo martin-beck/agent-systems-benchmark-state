@@ -7,7 +7,7 @@
     "AR-1759"
   ],
   "id": "AR-1760",
-  "next_action": "Repair complete: add project init to QUICKSTART executable command/table inventory, rerun guide and full workspace tests, then push the corrected head and obtain independent review.",
+  "next_action": "Repair provenance fixture hashes for the changed CLI and guide contract, rerun workflow_transcript plus the full workspace gate, then update/push PR #532 and obtain independent review.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:15:25+00:00",
+  "updated_at": "2026-10-09T15:15:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -156,3 +156,8 @@ commands for a fresh user and support `--json` without leaking host secrets.
 
 - 2026-10-09T15:15:25+00:00: Recorded command exit 101; command argv SHA-256
   e722ed1403701d5b7aa87509d78c9e1d3bcfaeb05459ab381d3f44bc7160a842.
+
+- 2026-10-09T15:15:46+00:00: The final-head full workspace gate failed only in workflow_transcript:
+  the changed crates/asb-cli/src/lib.rs and docs/examples/guide-contract.json no longer matched
+  docs/examples/asb-cli-workflow-v1.provenance.json. The normalized transcript and replay fixture
+  remain unchanged; update only the two corresponding SHA-256 fields, then rerun.
