@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "property-or-fuzz",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:a1e98d92b0b6567f659590d21a105bbd0e79a4600bdade3af95cb9aa75245711",
+    "evidence_ref": "quality/AR-1770-postmerge-receipt.json",
     "spec_ref": "specs/AR-1770.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1770.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 278,
+  "task_revision": 279,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T22:18:30+00:00",
+  "updated_at": "2026-10-09T22:18:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -921,3 +921,7 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T22:18:30+00:00: Recorded command exit 0; command argv SHA-256
   48217314ceebd04c91928b226bac39a065b09f9c59837ec0dd03003d69e9b140.
+
+- 2026-10-09T22:18:43+00:00: PR #540 merge dc67390494805693aef21d917319253b2e705da7 and all ten
+  exact post-merge assurance workflows are terminal-success; receipt records immutable reviewed
+  head/tree and workflow IDs.
