@@ -922,7 +922,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define one versioned ASB project/tool inventory and catalog-selection configuration contract. |
-| Next action | Obtain independent technical review of PR #531, then wait for all exact-head checks and merge via integration/merge_pr.py. |
+| Next action | Wait for all exact-main post-merge workflows on merge commit 64843f1967370a0fe4df675b4a59f42f58342a14 to finish; then publish post-merge evidence and accept/release AR-1759. |
 
 ### AR-1760 — Initialize an ASB benchmark project workspace
 

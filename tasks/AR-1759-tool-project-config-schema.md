@@ -7,7 +7,7 @@
     "AR-1745"
   ],
   "id": "AR-1759",
-  "next_action": "Obtain independent technical review of PR #531, then wait for all exact-head checks and merge via integration/merge_pr.py.",
+  "next_action": "Wait for all exact-main post-merge workflows on merge commit 64843f1967370a0fe4df675b4a59f42f58342a14 to finish; then publish post-merge evidence and accept/release AR-1759.",
   "observed_branch": "main",
   "observed_dirty": 0,
   "observed_head": "27d7c931a6f3e0adbbe7f4ea9606717f369e9779",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T14:54:46+00:00",
+  "updated_at": "2026-10-09T14:54:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
@@ -115,3 +115,9 @@ unknown-field/path validation.
   5080a893c48ddb34f796b355566b6f31a5839028e6273d6d31a28a5efd6f6d0b.
 
 - 2026-10-09T14:54:46+00:00: Heartbeat by codex-asb-ar1759-project-config-20261009.
+
+- 2026-10-09T14:54:55+00:00: PR #531 merged at signed merge commit
+  64843f1967370a0fe4df675b4a59f42f58342a14; origin/main tree
+  3376d5b8f1f171576f2a72cc5a01bee8a192e460 exactly contains reviewed head 36dab7a. All PR checks
+  were terminal green. Post-merge exact-main workflows are now running; acceptance waits for their
+  terminal success.

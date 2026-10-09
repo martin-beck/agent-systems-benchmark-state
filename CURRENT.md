@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. | codex-asb-ar1757-human-output-20261009 |
-| P0 | [AR-1759](tasks/AR-1759-tool-project-config-schema.md): ASB project and external-tool configuration schema | Define one versioned ASB project/tool inventory and catalog-selection configuration contract. | Obtain independent technical review of PR #531, then wait for all exact-head checks and merge via integration/merge_pr.py. | codex-asb-ar1759-project-config-20261009 |
+| P0 | [AR-1759](tasks/AR-1759-tool-project-config-schema.md): ASB project and external-tool configuration schema | Define one versioned ASB project/tool inventory and catalog-selection configuration contract. | Wait for all exact-main post-merge workflows on merge commit 64843f1967370a0fe4df675b4a59f42f58342a14 to finish; then publish post-merge evidence and accept/release AR-1759. | codex-asb-ar1759-project-config-20261009 |
 
 ## Open
 
