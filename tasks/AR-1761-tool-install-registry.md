@@ -18,19 +18,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:e763448b37cde0ebc0096e7897738e741d543954e7349ff8b2161fb8bb02bbd1",
+    "evidence_ref": "quality/AR-1761-tool-install-registry-postmerge-receipt.json",
     "spec_ref": "specs/AR-1761.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1761.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 283,
+  "task_revision": 284,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T17:30:11+00:00",
+  "updated_at": "2026-10-09T17:30:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -773,3 +773,6 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T17:30:11+00:00: Recorded command exit 0; command argv SHA-256
   655427504bfad206b677a5512dddffbffbd1878abe1ce65f4f883c91b27ed515.
+
+- 2026-10-09T17:30:32+00:00: Accepted after signed merge ae22d66 exact parents/tree and all ten
+  exact-main post-merge workflows terminal SUCCESS; doctor --live is consistent.
