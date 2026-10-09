@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover PR #505 protected-main exact-tree publication failure without rewriting history.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "PR #505 exact-tree recovery",
-  "updated_at": "2026-10-09T02:44:38+00:00",
+  "updated_at": "2026-10-09T02:45:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1742-exact-tree-recovery"
 }
 ---
@@ -46,3 +46,6 @@ from AR-1740's default-lifecycle PR #507.
 
 - 2026-10-09T02:44:38+00:00: Recorded command exit 0; command argv SHA-256
   36074523d8db96703013a3172dcb6df55f7df36a0aebfb056b806ed593f71a0a.
+
+- 2026-10-09T02:45:23+00:00: Recorded command exit 0; command argv SHA-256
+  3766f0ce90d11588a81c105d8d8cc9d99bdd6e586d6fb74c2631021387ce16d7.
