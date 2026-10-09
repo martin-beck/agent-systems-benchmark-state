@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T15:16:24+00:00",
+  "claim_expires": "2026-10-09T15:30:35+00:00",
   "depends_on": [
     "AR-1731"
   ],
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Integrate cli2key runs and sweeps",
-  "updated_at": "2026-10-09T13:28:58+00:00",
+  "updated_at": "2026-10-09T13:30:35+00:00",
   "worktree_key": ""
 }
 ---
@@ -142,3 +142,5 @@ serve as production or official-provider qualification.
 
 - 2026-10-09T13:28:58+00:00: Recorded command exit 0; command argv SHA-256
   a6a17ec3c5be1ae57bf2a84dd227c1146b069e0d5f1d88bca836cc88c7391fec.
+
+- 2026-10-09T13:30:35+00:00: Heartbeat by codex-asb-ar1732-run-sweep-20261009.
