@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1762-tool-discovery",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T18:40:34+00:00",
+  "claim_expires": "2026-10-09T16:43:56+00:00",
   "depends_on": [
     "AR-1759",
     "AR-1760"
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:13:43+00:00",
+  "updated_at": "2026-10-09T16:13:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -390,3 +390,5 @@ development authentication/signatures/keys are absent.
   because human::InvocationKind still classified tool as unsupported; added public tool
   classification, human command family/projection/presentation, then exact test passed. No gate
   weakened.
+
+- 2026-10-09T16:13:56+00:00: Heartbeat by codex-asb-ar1762-tool-discovery-20261009.
