@@ -8,7 +8,7 @@
     "AR-1767"
   ],
   "id": "AR-1768",
-  "next_action": "Full local gates are running on signed repair head 18e938d; then independently review exact diff, monitor refreshed PR #541 checks, rerun Docker-rate-limited checks when available, and do not merge until all required checks are green.",
+  "next_action": "State projection is currently blocked by concurrent AR-1771..1774 untracked plans/specs/tasks. Keep lease heartbeated; after parent reconciles state, run focused/full gates on repair mappings, sign/push follow-up, obtain independent review, and refresh PR #541 exact-head CI.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "observed_dirty": 2,
   "observed_head": "18e938d50a022c851dea01d4331ab6b1972df25c",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:32:56+00:00",
+  "updated_at": "2026-10-09T21:33:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -289,3 +289,9 @@ say what remains usable.
   51d4b9a58c058564e5ab7cd02450b323565df869b12ffaec89e01b6675a2d9a9.
 
 - 2026-10-09T21:32:56+00:00: Heartbeat by codex-ar1768-diagnostics.
+
+- 2026-10-09T21:33:04+00:00: Added explicit catalog and human mappings/tests for
+  trusted_tool_invalid, transfer_too_large, dev_source_identity_unknown, candidate_execution_failed,
+  candidate_request_failed, candidate_response_invalid, artifact_transfer_failed,
+  rollback_state_invalid, rollback_state_failed after independent review. Focused diagnostics passed
+  before this state projection blocker.

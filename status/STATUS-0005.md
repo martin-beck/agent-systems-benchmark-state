@@ -1,5 +1,10 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1712](../tasks/AR-1712.md) | [AR-1698](../tasks/AR-1698.md), [AR-1701](../tasks/AR-1701.md), [AR-1711](../tasks/AR-1711.md) | [AR-1716](../tasks/AR-1716.md), [AR-1717](../tasks/AR-1717.md), [AR-1724](../tasks/AR-1724-easy-sweep-default-online.md) |
+| [AR-1715](../tasks/AR-1715.md) | [AR-1700](../tasks/AR-1700.md), [AR-1709](../tasks/AR-1709.md), [AR-1711](../tasks/AR-1711.md) | [AR-1723](../tasks/AR-1723-easy-run-default-online.md) |
+| [AR-1716](../tasks/AR-1716.md) | [AR-1712](../tasks/AR-1712.md) | None |
+| [AR-1717](../tasks/AR-1717.md) | [AR-1712](../tasks/AR-1712.md) | None |
+| [AR-1718](../tasks/AR-1718.md) | [AR-1597](../tasks/AR-1597.md) | None |
 | [AR-1719](../tasks/AR-1719.md) | [AR-1656](../tasks/AR-1656.md) | [AR-1721](../tasks/AR-1721.md), [AR-1752](../tasks/AR-1752-development-broker-v115-projection.md) |
 | [AR-1720](../tasks/AR-1720.md) | None | None |
 | [AR-1721](../tasks/AR-1721.md) | [AR-1719](../tasks/AR-1719.md) | None |
@@ -63,7 +68,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | codex-ar1768-diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | Full local gates are running on signed repair head 18e938d; then independently review exact diff, monitor refreshed PR #541 checks, rerun Docker-rate-limited checks when available, and do not merge until all required checks are green. |
+| P0 | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | codex-ar1768-diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | State projection is currently blocked by concurrent AR-1771..1774 untracked plans/specs/tasks. Keep lease heartbeated; after parent reconciles state, run focused/full gates on repair mappings, sign/push follow-up, obtain independent review, and refresh PR #541 exact-head CI. |
 | P1 | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | codex-ar1770-descriptor-safe-races | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green. Repository quality 37990474230 and Rust 37990474203 passed. Repeated exact-SHA hosted and workflow_dispatch retries for formal/aarch64 remain Docker-registry infrastructure failures; retry after registry rate window, then create receipt and release. |
 
 ### Open (1)
@@ -527,4 +532,3 @@
 | P0 | [AR-1576](../tasks/AR-1576.md): ASB development bootstrap projection | Unclaimed | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |
 | P0 | [AR-1577](../tasks/AR-1577.md): ASB interactive development supervision | Unclaimed | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. | Await hosted checks and independent review of PR #408 exact head e6f3d901dffba31845273fafd436f613d1485793; merge/release only identical green head. |
 | P0 | [AR-1578](../tasks/AR-1578.md): ASB workspace coverage recovery | Unclaimed | Recover the existing workspace coverage gate that currently blocks otherwise correct ASB transport changes. | Run exact workspace coverage gate on PR #407 using /srv/data target; continue only with concrete stable tests needed for 90&#37;, then merge/release or report measured blocker. |
-| P0 | [AR-1588](../tasks/AR-1588.md): ASB development-channel command surface | Unclaimed | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. |

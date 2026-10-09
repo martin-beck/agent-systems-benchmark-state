@@ -1048,7 +1048,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
-| Next action | Full local gates are running on signed repair head 18e938d; then independently review exact diff, monitor refreshed PR #541 checks, rerun Docker-rate-limited checks when available, and do not merge until all required checks are green. |
+| Next action | State projection is currently blocked by concurrent AR-1771..1774 untracked plans/specs/tasks. Keep lease heartbeated; after parent reconciles state, run focused/full gates on repair mappings, sign/push follow-up, obtain independent review, and refresh PR #541 exact-head CI. |
 
 ### AR-1769 — Human diagnostic completeness CI gate
 
@@ -3977,4 +3977,3 @@ flowchart LR
 | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
-| [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
