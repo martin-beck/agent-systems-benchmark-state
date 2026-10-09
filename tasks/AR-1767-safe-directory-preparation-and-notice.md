@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:33:17+00:00",
+  "updated_at": "2026-10-09T18:33:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -120,3 +120,6 @@ when useful; repeated commands must not claim an existing directory was new.
   focused tests. Wrapper post-reconcile may report COMMAND_RECORDED_POST_RECONCILE_FAILED because
   generated tools/__pycache__/handoffctl.cpython-312.pyc exceeds the 200 KiB repository evidence
   limit; preserve that failure as durable infrastructure evidence.
+
+- 2026-10-09T18:33:24+00:00: Recorded command exit 0; command argv SHA-256
+  5aeee75da362015528ba446d4ea84b5ce1f343e91b43718b1ab6b9f8514cc5a2.
