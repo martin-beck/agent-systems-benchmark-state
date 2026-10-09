@@ -1068,11 +1068,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1770-descriptor-safe-races |
 | Parent | None |
 | Children | None |
 | Summary | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. |
@@ -1906,7 +1906,7 @@ flowchart LR
         AR_1767["AR-1767 - Done"]:::status_done
         AR_1768["AR-1768 - Planned"]:::status_planned
         AR_1769["AR-1769 - Planned"]:::status_planned
-        AR_1770["AR-1770 - Open"]:::status_open
+        AR_1770["AR-1770 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
