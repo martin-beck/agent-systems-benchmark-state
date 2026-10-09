@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Push exact clean head 644085e to PR #534; request independent technical review and monitor all exact-head required checks. |
+| Next action | Obtain independent technical review and GitHub approval; wait for every PR check at exact head 644085e to reach success, then integrate with merge_pr.py against the current exact main base. |
 
 ### AR-1762 — Discover system and project ASB tools
 

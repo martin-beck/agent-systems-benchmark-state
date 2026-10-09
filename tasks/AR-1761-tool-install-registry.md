@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Push exact clean head 644085e to PR #534; request independent technical review and monitor all exact-head required checks.",
+  "next_action": "Obtain independent technical review and GitHub approval; wait for every PR check at exact head 644085e to reach success, then integrate with merge_pr.py against the current exact main base.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 0,
   "observed_head": "644085ecd2f3758aa3482b8a60d4e2ddf099f0c1",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:19:16+00:00",
+  "updated_at": "2026-10-09T16:19:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -261,3 +261,8 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T16:19:16+00:00: Recorded command exit 0; command argv SHA-256
   bbf6437efaaf991a4ca0ea750b9285a4812442bd08a4c916387c1daeaccf1e7b.
+
+- 2026-10-09T16:19:32+00:00: Remote PR #534 verified clean exact head
+  644085ecd2f3758aa3482b8a60d4e2ddf099f0c1 against base ea5e52bfe843969c493f22146f66ccfa2415159a
+  after handoffctl push. PR is OPEN, non-draft, reviewDecision empty, and statusCheckRollup
+  currently empty while GitHub schedules checks.
