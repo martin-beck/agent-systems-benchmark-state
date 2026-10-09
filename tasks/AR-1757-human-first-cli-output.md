@@ -16,13 +16,21 @@
   "plan": "../plans/AR-1757-human-first-cli-output.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:53f8b5bb2f2127038fbbc15748c6f8c87e77996b2d34e928965d28007af3fd8f",
+    "evidence_ref": "quality/AR-1757-human-first-cli-output-postmerge-receipt.json",
+    "spec_ref": "specs/AR-1757.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1757.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output.",
-  "task_revision": 489,
+  "task_revision": 490,
   "title": "Human-first ASB command output",
-  "updated_at": "2026-10-09T16:13:15+00:00",
+  "updated_at": "2026-10-09T16:13:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1757-human-first-cli-output"
 }
 ---
@@ -1360,3 +1368,7 @@ authentication/signing warnings as blockers.
 
 - 2026-10-09T16:13:15+00:00: Recorded command exit 0; command argv SHA-256
   3b3759dd6aa305fa4a6b640891823ba9a29bf6b7f6266df3b3c6a1018413f109.
+
+- 2026-10-09T16:13:36+00:00: Independent exact-head review approved PR #533; signed reviewed-tree
+  merge f361cfc7 is on main; all exact-head and exact-main hosted workflows plus exact-main local
+  policy, signature, secret-scan, and asb-cli tests passed.
