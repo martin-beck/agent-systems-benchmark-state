@@ -42,8 +42,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1729-cli2key-sidecar` | `feature/ar-1729-cli2key-sidecar-runtime` | `13da72b3e193` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1730-cli2key-provider-contract` | `feature/ar-1730-cli2key-provider-contract` | `918000a5c4f5` | 0 | behind 12, ahead 0 |
 | `agent-systems-benchmark-ar-1731-cli2key-adapter` | `feature/ar-1731-cli2key-codex-adapter` | `6386e066b37a` | 0 | behind 3, ahead 0 |
-| `agent-systems-benchmark-ar-1732-cli2key-run-sweep` | `feature/ar-1732-cli2key-run-sweep` | `fd815959370a` | 2 | behind 0, ahead 3 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
+| `agent-systems-benchmark-ar-1732-cli2key-run-sweep` | `feature/ar-1732-cli2key-run-sweep` | `08226e288e90` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 71, ahead 0 |
 | `agent-systems-benchmark-ar-1735-integration` | `DETACHED` | `5f9850c13887` | 0 | behind 22, ahead 0 |
 | `agent-systems-benchmark-ar-1737-development-tui-linker-handoff` | `repair/ar-1737-development-tui-linker-handoff` | `199bd00a95c2` | 0 | behind 61, ahead 0 |
