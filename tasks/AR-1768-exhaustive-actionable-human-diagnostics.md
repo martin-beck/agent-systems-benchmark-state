@@ -10,8 +10,8 @@
   "id": "AR-1768",
   "next_action": "Final exact producer repair is signed at a270a9d and local focused plus locked workspace gates pass. Push a270a9d to PR #541, obtain fresh independent review of the exact dev_metadata_failed mapping/catalog row, and wait for all exact-head required CI checks before merge.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
-  "observed_dirty": 1,
-  "observed_head": "a270a9d3d709daddb85bd65885e6bd14c988855b",
+  "observed_dirty": 0,
+  "observed_head": "cd46a00c276be3111fe2d7140d4d4ffa1a10dbf7",
   "owner": "codex-ar1768-diagnostics",
   "plan": "../plans/AR-1768-exhaustive-actionable-human-diagnostics.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 208,
+  "task_revision": 209,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:59:32+00:00",
+  "updated_at": "2026-10-09T21:59:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
