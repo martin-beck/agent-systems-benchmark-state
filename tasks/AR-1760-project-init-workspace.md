@@ -7,7 +7,7 @@
     "AR-1759"
   ],
   "id": "AR-1760",
-  "next_action": "Repair complete: update the completion contract assertion for the new project command, rerun workspace tests, then complete independent review and exact-head CI.",
+  "next_action": "Repair complete: update the generated guide command inventory for project init, rerun the workspace gate to terminal success, then review and verify PR #532 exact head.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:11:28+00:00",
+  "updated_at": "2026-10-09T15:11:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -99,3 +99,7 @@ commands for a fresh user and support `--json` without leaking host secrets.
 
 - 2026-10-09T15:11:28+00:00: Recorded command exit 101; command argv SHA-256
   e722ed1403701d5b7aa87509d78c9e1d3bcfaeb05459ab381d3f44bc7160a842.
+
+- 2026-10-09T15:11:54+00:00: The subsequent full-workspace run exposed one additional exit-101:
+  guide_inventory_matches_doctor_and_stale_claims_fail_closed expected the old doctor command list.
+  Repaired docs/examples/guide-contract.json to include project init; rerunning the full gate now.
