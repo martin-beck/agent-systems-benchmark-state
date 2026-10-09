@@ -30,15 +30,23 @@ Corrected reviewed-tree publication
   approved topic tree. The merge and topic commits carry accepted ED25519
   signatures and matching DCO evidence.
 
-Exact-main hosted evidence
+Candidate and exact-main hosted evidence
 
-Every check run associated with current exact main is terminal-success. The
-ten workflow runs cover portable protected-main provenance, Repository Quality,
-Rust verification, emulated AArch64 portability, hosted platform evidence,
-Formal assurance (TLC, Alloy, Kani and Loom), Fault assurance (retained faults,
-bounded fuzz and mutation sentinels), credential-free benchmark execution,
-the exact TUI inherited-fd/PTY journey, Huawei/MIT source headers, and AWQ
-shadow evidence. The exact workflow run IDs are:
+The independently reviewed PR #517 candidate head
+cb8be7e4ea8866a21ae999af1aee062544622896 at tree
+40ab69c7aeaf3fbb5ced9a6e0a194e94c0be5dde passed all 15 exact-head checks.
+That candidate-only evidence includes AWQ shadow run 37850548158.
+
+Separately, every check run associated with current exact main
+31ca7a481fca8b79bfbff126b92db6c6118beb7c is terminal-success. Its ten
+post-merge workflow runs produced 14 successful checks covering portable
+protected-main provenance, Repository Quality, Rust verification, emulated
+AArch64 portability, hosted platform evidence, Formal assurance (TLC, Alloy,
+Kani and Loom), Fault assurance (retained faults, bounded fuzz and mutation
+sentinels), credential-free benchmark execution, the exact TUI inherited-fd/PTY
+journey, and Huawei/MIT source headers. AWQ shadow is PR-only and is not
+attributed to exact-main post-merge evidence. The exact post-merge workflow run
+IDs are:
 
 - 37852141052, 37852141065 attempt 2, 37852141069, 37852141078,
   37852141086, 37852141097, 37852141128, 37852141151,
