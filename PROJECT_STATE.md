@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37952105183 | `ea5e52bfe843` | push | Huawei MIT source headers | completed:success |
 | 37952105149 | `ea5e52bfe843` | push | Repository quality | completed:success |
 | 37952105037 | `ea5e52bfe843` | push | Formal assurance | completed:success |
-| 37952105033 | `ea5e52bfe843` | push | Emulated aarch64 portability | in_progress:- |
+| 37952105033 | `ea5e52bfe843` | push | Emulated aarch64 portability | completed:success |
 | 37952105009 | `ea5e52bfe843` | push | Credential-free benchmark path | completed:success |
 | 37952105001 | `ea5e52bfe843` | push | Rust verification | completed:success |
 | 37950649072 | `90abb5b3bb29` | pull_request | Huawei MIT source headers | completed:success |
