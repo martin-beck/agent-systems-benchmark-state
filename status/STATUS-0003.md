@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Full workspace test had parallel-only failures; serial reruns passed. Run locked rustdoc/build and prepare independent review/PR. |
+| Next action | Rerun the repaired completion-contract test, then full locked serial workspace tests; proceed to independent diff review if green. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 

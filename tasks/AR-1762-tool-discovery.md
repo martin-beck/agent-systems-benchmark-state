@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Full workspace test had parallel-only failures; serial reruns passed. Run locked rustdoc/build and prepare independent review/PR.",
+  "next_action": "Rerun the repaired completion-contract test, then full locked serial workspace tests; proceed to independent diff review if green.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 0,
   "observed_head": "b81ef5c7ebf323ddfc49e5722b070569bc4d2df1",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:02:29+00:00",
+  "updated_at": "2026-10-09T16:02:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -270,3 +270,11 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:02:29+00:00: Recorded command exit 101; command argv SHA-256
   3c4e579e7e25cec4880b6f71c01f8c7ac5cd38fd29e6c5d64d4f3577c5a2398e.
+
+- 2026-10-09T16:02:43+00:00: Concrete full-workspace serial failure: existing asb-cli
+  capability_contract test command_ignores_hostile_environment_and_help_completion_are_explicit
+  asserted the legacy contiguous completion substring 'doctor setup capabilities project
+  provider-catalog'; adding tool between project and provider-catalog broke that compatibility
+  assertion. This was a pre-existing contract test failure caused by completion ordering, not
+  discovery behavior. Repaired by appending tool after existing entries while preserving the legacy
+  order; rerun the exact test and full serial suite.
