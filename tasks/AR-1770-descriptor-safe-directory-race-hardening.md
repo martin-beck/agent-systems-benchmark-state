@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Fresh independent review must inspect PR #540 exact head 6278fcd6720f39de456a791f0c73e6327ff6e25d and tree 6579db9d5bf4df3d4149ac0f5f5b29ff4f2ab2a8; then wait for exact-head CI.",
+  "next_action": "Post-merge main dc67390494805693aef21d917319253b2e705da7 has 8/10 assurance workflows terminal-success; Repository quality 37990474230 and Rust verification 37990474203 remain in progress. Formal 37990474025 and aarch64 37990474021 each failed twice solely Docker Hub unauthenticated pull rate-limit; rerun both after rate window, then create receipt and release.",
   "observed_branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "observed_dirty": 0,
   "observed_head": "6278fcd6720f39de456a791f0c73e6327ff6e25d",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 211,
+  "task_revision": 212,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T21:07:22+00:00",
+  "updated_at": "2026-10-09T21:07:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -709,3 +709,9 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T21:07:22+00:00: Recorded command exit 0; command argv SHA-256
   4ee18d0130afaecad599272e86a66a7e5cdf32a16e316908ddb094e55fc5bfd2.
+
+- 2026-10-09T21:07:35+00:00: Post-merge monitoring: success Hosted 37990474147, Credential-free
+  37990474163, Broker 37990474279, Fault 37990474124, Huawei 37990474076, Provenance 37990474221;
+  dependency-update runs 37990589932/90306/94951/95917/96242 success. Formal 37990474025 and aarch64
+  37990474021 first attempts and reruns both report Docker toomanyrequests before any product test.
+  No release/receipt yet; preserve failures as infrastructure evidence.

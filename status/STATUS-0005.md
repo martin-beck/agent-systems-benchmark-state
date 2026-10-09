@@ -1,5 +1,9 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1728](../tasks/AR-1728-cli2key-contract.md) | None | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md) |
+| [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md) | [AR-1728](../tasks/AR-1728-cli2key-contract.md) | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) |
+| [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md) | [AR-1728](../tasks/AR-1728-cli2key-contract.md) | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) |
+| [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md) | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) |
 | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) |
 | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) | [AR-1736](../tasks/AR-1736-backend-model-catalog-execution.md), [AR-1754](../tasks/AR-1754-default-online-live-workflow.md) |
 | [AR-1734](../tasks/AR-1734-development-tui-tool-environment.md) | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md), [AR-1727](../tasks/AR-1727-development-broker-foreground-terminal.md) | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md), [AR-1738](../tasks/AR-1738-development-rustup-permission-compatibility.md) |
@@ -46,7 +50,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | codex-ar1770-descriptor-safe-races | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Fresh independent review must inspect PR #540 exact head 6278fcd6720f39de456a791f0c73e6327ff6e25d and tree 6579db9d5bf4df3d4149ac0f5f5b29ff4f2ab2a8; then wait for exact-head CI. |
+| P1 | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | codex-ar1770-descriptor-safe-races | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Post-merge main dc67390494805693aef21d917319253b2e705da7 has 8/10 assurance workflows terminal-success; Repository quality 37990474230 and Rust verification 37990474203 remain in progress. Formal 37990474025 and aarch64 37990474021 each failed twice solely Docker Hub unauthenticated pull rate-limit; rerun both after rate window, then create receipt and release. |
 
 ### Open (1)
 
@@ -523,6 +527,3 @@
 | P0 | [AR-1602](../tasks/AR-1602.md): Cassette lifecycle control contract | Unclaimed | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. | Release admission after receipt acceptance. |
 | P0 | [AR-1603](../tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Unclaimed | Qualify the complete current-main install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after ASB AR-1598/1601 and TUI AR-1601 are released; execute the disposable exact-head journey. |
 | P0 | [AR-1605](../tasks/AR-1605.md): Authenticated cassette control backend | Unclaimed | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. | Release admission after receipt acceptance. |
-| P0 | [AR-1606](../tasks/AR-1606.md): Cross-project cassette lifecycle qualification | Unclaimed | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Release complete: PR #426 merged as da886967; exact-main hosted workflows and independent approval are recorded in spec/receipt. |
-| P0 | [AR-1607](../tasks/AR-1607.md): OpenRouter provider and model setup | Unclaimed | Expose OpenRouter, API-key reference, supported models, and validation to the development wizard. | Promote after AR-1601 and implement the additive provider/catalog/config contract. |
-| P0 | [AR-1608](../tasks/AR-1608.md): Configuration persistence and shared defaults | Unclaimed | Persist editable provider/agent/model/auth selections and shared defaults safely for subsequent runs. | Promote after AR-1607 release and implement atomic redacted configuration updates. |
