@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "task": "AR-1762",
+  "pull_request": 536,
+  "merge": {
+    "commit": "3cab69a1885f4bd3444c7d22aaac7eb96fbbadff",
+    "base": "f361cfc7f89a1ff667a72f0279ac61cf1cc4968f",
+    "reviewed_head": "9cd9e80cfc2a3bee31a402016371ab70b6cfb1cc",
+    "tree": "614feed3b32279e5898813dcd4ac9bf4b7080300",
+    "signed_dco": true
+  },
+  "post_merge_ci": {
+    "commit": "3cab69a1885f4bd3444c7d22aaac7eb96fbbadff",
+    "all_required_checks": "success",
+    "runs": {
+      "portable_protected_main_provenance": 37962236332,
+      "hosted_portability_native_qualification": 37962236517,
+      "credential_free_benchmark_path": 37962236449,
+      "cross_repository_development_broker_qualification": 37962236342,
+      "fault_assurance": 37962236383,
+      "formal_assurance": 37962236306,
+      "emulated_aarch64_portability": 37962236236,
+      "repository_quality": 37962236218,
+      "huawei_mit_source_headers": 37962236229,
+      "rust_verification": 37962236241
+    }
+  },
+  "verification": {
+    "remote_main_exact": true,
+    "post_merge_receipt_recorded_at": "2026-10-09T17:02:00Z"
+  }
+}
