@@ -7,7 +7,7 @@
     "AR-1759"
   ],
   "id": "AR-1760",
-  "next_action": "Repair workflow transcript fixture and its provenance digest for the intentional doctor command inventory extension; rerun workflow_transcript and full workspace tests, then push and review.",
+  "next_action": "PR #532 is at exact head 90abb5b; obtain independent technical review and wait for all exact-head PR checks to become terminal green, then merge only through merge_pr.py.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:17:41+00:00",
+  "updated_at": "2026-10-09T15:17:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -194,3 +194,8 @@ commands for a fresh user and support `--json` without leaking host secrets.
 
 - 2026-10-09T15:17:41+00:00: Recorded command exit 0; command argv SHA-256
   21d58faf0d1915549ab92081d0fafa9a0dc2e38dd9486fc64a25f2945cd9614d.
+
+- 2026-10-09T15:17:53+00:00: Repaired the deterministic workflow transcript fixture and provenance
+  digest for the intentional doctor/project-init command inventory. workflow_transcript now passes
+  3/3; the final full workspace rerun is required after this exact-head evidence update. Product
+  branch is clean, signed+DCO commits are pushed.

@@ -936,7 +936,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add an idempotent ASB project initializer containing config, results, and catalog areas. |
-| Next action | Repair workflow transcript fixture and its provenance digest for the intentional doctor command inventory extension; rerun workflow_transcript and full workspace tests, then push and review. |
+| Next action | PR #532 is at exact head 90abb5b; obtain independent technical review and wait for all exact-head PR checks to become terminal green, then merge only through merge_pr.py. |
 
 ### AR-1761 — ASB external-tool installer and registry
 
