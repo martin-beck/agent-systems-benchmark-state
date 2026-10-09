@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Run explicit product-worktree fmt, clippy, rustdoc, and release gates via handoffctl; then inspect clean diff and commit provenance fixture update. |
+| Next action | Verify clean state handoff, push the signed merge commit, rerun exact-head gates after updated main base, then continue review/CI. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 

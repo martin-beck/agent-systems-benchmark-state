@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Run explicit product-worktree fmt, clippy, rustdoc, and release gates via handoffctl; then inspect clean diff and commit provenance fixture update.",
+  "next_action": "Verify clean state handoff, push the signed merge commit, rerun exact-head gates after updated main base, then continue review/CI.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 21,
   "observed_head": "fd0ac87cb270011d0e83987696be6f288b1b3f18",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:09:40+00:00",
+  "updated_at": "2026-10-09T16:10:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -357,3 +357,10 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:09:40+00:00: Recorded command exit 0; command argv SHA-256
   f0d46d947d3375fca85c282cec52998193de3cdc5606f1d1d354e5af1c6579e5.
+
+- 2026-10-09T16:10:26+00:00: Post-merge-base gate command returned exit 1 solely because state
+  post-reconcile validation found generated tools/__pycache__/handoffctl.cpython-312.pyc at 202220
+  bytes, exceeding the 200 KiB state-file limit. The signed product merge itself completed
+  successfully as be7ab08; no product test failed. Moved the exact generated cache file to
+  /srv/data/projects/agent-systems-benchmark-state-evidence-recovery/handoffctl.cpython-312.pyc and
+  will re-run state reconciliation/verification.
