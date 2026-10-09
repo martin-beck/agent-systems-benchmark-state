@@ -1076,7 +1076,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. |
-| Next action | Exact-SHA rerun attempts are active: aarch64 37990474021 attempt 7 and formal 37990474025 attempt 6, both at merge dc67390494805693aef21d917319253b2e705da7. Await terminal result; create receipt and release only if both pass. |
+| Next action | AR-1770 is done: merge dc67390494805693aef21d917319253b2e705da7 has all ten terminal-success post-merge workflows, tracked receipt quality/AR-1770-postmerge-receipt.json, and acceptance digest sha256:a1e98d92b0b6567f659590d21a105bbd0e79a4600bdade3af95cb9aa75245711. |
 
 ### AR-1771 — Human output, status, and quiet contract
 
