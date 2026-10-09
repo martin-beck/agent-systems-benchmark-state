@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Supervise cli2key sidecar and ephemeral key",
-  "updated_at": "2026-10-09T07:37:37+00:00",
+  "updated_at": "2026-10-09T07:37:48+00:00",
   "worktree_key": ""
 }
 ---
@@ -37,3 +37,6 @@ egress; benchmark agents remain loopback-only.
 - 2026-10-09T07:37:33+00:00: AR-1728 is done at exact main 30286af; dependencies verified
 
 - 2026-10-09T07:37:37+00:00: Claimed by codex-ar1729-cli2key-sidecar-20261009.
+
+- 2026-10-09T07:37:48+00:00: Recorded command exit 0; command argv SHA-256
+  d3627636957d9729aaab7c75137920cd71b9e359719fc55f7cf73df1a4fb1060.
