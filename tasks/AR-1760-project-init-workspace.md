@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:12:29+00:00",
+  "updated_at": "2026-10-09T15:12:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -114,3 +114,6 @@ commands for a fresh user and support `--json` without leaking host secrets.
   public_guides_reference_the_executable_contract: QUICKSTART lacked the newly advertised project
   init command row. Repaired QUICKSTART command example and supported table; no initializer runtime
   defect.
+
+- 2026-10-09T15:12:37+00:00: Recorded command exit 0; command argv SHA-256
+  b619f5441c209338adae91975b1fb3b3047ceffddb5fe86954ad20c3d2fc3838.
