@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:51:20+00:00",
+  "updated_at": "2026-10-09T18:51:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -283,3 +283,6 @@ when useful; repeated commands must not claim an existing directory was new.
   State post-reconcile warning remains the known oversized handoffctl pyc. The state handoffctl CLI
   has no AR-create subcommand; parent coordinator must create successor AR-1768 through its
   documented task/spec/plan authoring workflow and link it here.
+
+- 2026-10-09T18:51:28+00:00: Recorded command exit 8; command argv SHA-256
+  979cf1cd8e67550441e460787e413b3f33fefc7102f833010fc37c8f46492925.
