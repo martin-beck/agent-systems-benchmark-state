@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1753](tasks/AR-1753-coordinator-v0359-release-upgrade.md): Coordinator v0.3.59 release upgrade and integrity repair | Adopt the exact Agent Workflow Coordinator v0.3.59 release in ASB state and repair every downstream-owned integrity regression exposed by the upgrade. | Promote and claim; sync the exact v0.3.59 release into an isolated state worktree, repair only downstream-owned compatibility regressions, and run the complete integrity matrix before independent review. | codex-asb-state-v0359-20261009 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |

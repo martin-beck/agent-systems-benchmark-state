@@ -2,23 +2,31 @@
 {
   "branch": "upgrade/ar-1753-coordinator-v0.3.59",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T10:25:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1749"
   ],
   "id": "AR-1753",
   "next_action": "Promote and claim; sync the exact v0.3.59 release into an isolated state worktree, repair only downstream-owned compatibility regressions, and run the complete integrity matrix before independent review.",
-  "owner": "codex-asb-state-v0359-20261009",
+  "owner": "",
   "plan": "../plans/AR-1753-coordinator-v0359-release-upgrade.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:fce11e354a67146c960a40cd90e1c2117a7a0ae8f36bb4991117e66c7ad6c561",
+    "evidence_ref": "quality/AR-1753-coordinator-v0359-closeout-20261009.json",
+    "spec_ref": "specs/AR-1753.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1753.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.3.59 release in ASB state and repair every downstream-owned integrity regression exposed by the upgrade.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Coordinator v0.3.59 release upgrade and integrity repair",
-  "updated_at": "2026-10-09T07:13:16+00:00",
+  "updated_at": "2026-10-09T07:19:06+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1753-coordinator-v0359"
 }
 ---
@@ -110,3 +118,9 @@ Preserve unrelated product and state work.
 
 - 2026-10-09T07:13:16+00:00: Recorded command exit 0; command argv SHA-256
   e04e7c6f404ef543ee258a3e441d7d4905221345644bed83ea5de188d8c1d39f.
+
+- 2026-10-09T07:19:06+00:00: Coordinator v0.3.59 is vendored byte-for-byte through reviewed PR #108
+  and signed merge 738b58dfe; exact-head and exact-merge gates passed. PR #109 and signed merge
+  4756a5c96 repaired protected-main workflow cancellation, added regression coverage and immutable
+  closeout evidence; merge runs 37897774505/37897774598/37897774467 and queued descendant run
+  37897782658 passed.
