@@ -19,7 +19,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1761](../tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | codex-asb-ar1761-tool-install-20261009 | Install supported external ASB tools into a user/project-local root and persist validated records. | Continue monitoring PR #537 exact-head checks; require all terminal green plus separate reviewer approval before merge through merge_pr.py. |
+| P0 | [AR-1761](../tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | codex-asb-ar1761-tool-install-20261009 | Install supported external ASB tools into a user/project-local root and persist validated records. | Monitor all post-merge workflows for exact main commit ae22d66b86060b8ee60b56ffd7ca0e31f7e50c54 (runs 37965524382, 37965524223, 37965524100, 37965524493, 37965524096, 37965524145, 37965523882, 37965523952). After terminal success, record post-merge receipt and accept/release AR-1761. |
 
 ### Open (1)
 
@@ -514,4 +514,3 @@
 | P0 | [AR-1629](../tasks/AR-1629.md): Post-bootstrap ASB-TUI launch progression | Unclaimed | Repair the remaining exact top-level launch timeout after broker and PTY bootstrap succeed. | No further action; retain the paired launch receipt and continue AR-1615 final qualification. |
 | P0 | [AR-1630](../tasks/AR-1630.md): Development unavailable-agent coverage | Unclaimed | Cover the unavailable-agent bootstrap branch while retaining the protected coverage threshold. | No further action; retain the merged coverage receipt and continue AR-1615 final qualification. |
 | P0 | [AR-1631](../tasks/AR-1631.md): Cross-repository development-channel binding | Unclaimed | Bind ASB installation/materialization and asb-tui lifecycle to one persisted development-channel selection. | No product change was required; continue with AR-1632 current-head consumption smoke. |
-| P0 | [AR-1632](../tasks/AR-1632.md): Clean-room development-channel consumption smoke | Unclaimed | Qualify fresh install, restart, upgrade, rollback, and human/JSON diagnostics for the default development channel. | No further action; continue release audit with AR-1615 closed and retain typed environment validation for missing terminal overrides. |

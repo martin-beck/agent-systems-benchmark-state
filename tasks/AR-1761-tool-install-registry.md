@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Continue monitoring PR #537 exact-head checks; require all terminal green plus separate reviewer approval before merge through merge_pr.py.",
+  "next_action": "Monitor all post-merge workflows for exact main commit ae22d66b86060b8ee60b56ffd7ca0e31f7e50c54 (runs 37965524382, 37965524223, 37965524100, 37965524493, 37965524096, 37965524145, 37965523882, 37965523952). After terminal success, record post-merge receipt and accept/release AR-1761.",
   "observed_branch": "feature/ar-1761-tool-install-registry-v2",
   "observed_dirty": 0,
   "observed_head": "fe6aa7c346e5db1210748c485050c7fff6d0d284",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 267,
+  "task_revision": 268,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T17:20:31+00:00",
+  "updated_at": "2026-10-09T17:20:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -725,3 +725,10 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T17:20:31+00:00: Recorded command exit 0; command argv SHA-256
   8f49ac381fcb11658e90badad9c3591c7032853686c658d6ab8cbf0f3548f052.
+
+- 2026-10-09T17:20:48+00:00: PR #537 merged exactly through merge_pr.py. Published signed+DCO merge
+  commit ae22d66b86060b8ee60b56ffd7ca0e31f7e50c54 has exact parents
+  3cab69a1885f4bd3444c7d22aaac7eb96fbbadff and fe6aa7c346e5db1210748c485050c7fff6d0d284, reviewed
+  tree 3c66540275ffd8a24822150eacb04878e2c74927. GitHub confirms MERGED at 2026-10-09T17:20:06Z;
+  exact main remote matches. Post-merge workflows are running for merge commit; no release/accept
+  transition until all required exact-main checks are green.

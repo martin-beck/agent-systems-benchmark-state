@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Continue monitoring PR #537 exact-head checks; require all terminal green plus separate reviewer approval before merge through merge_pr.py. |
+| Next action | Monitor all post-merge workflows for exact main commit ae22d66b86060b8ee60b56ffd7ca0e31f7e50c54 (runs 37965524382, 37965524223, 37965524100, 37965524493, 37965524096, 37965524145, 37965523882, 37965523952). After terminal success, record post-merge receipt and accept/release AR-1761. |
 
 ### AR-1762 — Discover system and project ASB tools
 

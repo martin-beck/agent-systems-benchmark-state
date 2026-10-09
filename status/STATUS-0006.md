@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P0 | [AR-1632](../tasks/AR-1632.md): Clean-room development-channel consumption smoke | Unclaimed | Qualify fresh install, restart, upgrade, rollback, and human/JSON diagnostics for the default development channel. | No further action; continue release audit with AR-1615 closed and retain typed environment validation for missing terminal overrides. |
 | P0 | [AR-1633](../tasks/AR-1633.md): Standalone asb-tui human-output parity | Unclaimed | Make direct asb-tui lifecycle commands human-readable by default with opt-in JSON. | No further action; continue AR-1632 paired clean-room consumption smoke. |
 | P0 | [AR-1634](../tasks/AR-1634.md): Trusted development rustup propagation | Unclaimed | Propagate a validated development rustup home through ASB&#x27;s cleared build environment so current TUI installation succeeds. | No further action; merged PR #438 and paired lifecycle evidence cover the scoped rustup propagation. |
 | P0 | [AR-1635](../tasks/AR-1635.md): Control-state ownership test isolation | Unclaimed | Repair the hosted control-state ownership test collision without weakening ownership or recovery semantics. | No further action; retain the merged repair receipt and continue paired qualification. |
