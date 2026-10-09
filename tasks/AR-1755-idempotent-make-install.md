@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T09:56:34+00:00",
+  "updated_at": "2026-10-09T09:57:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -152,3 +152,6 @@ system-wide privilege handling.
   gate payload passes. The enclosing handoffctl command recorded a post-payload reconciliation error
   only because unrelated stale worktree metadata names missing /tmp/asb-ar1698-qual.fE5S7P; this
   does not invalidate the passing product tests but requires separate coordinator cleanup.
+
+- 2026-10-09T09:57:35+00:00: Recorded command exit 0; command argv SHA-256
+  a093358747429c07186377bda4237371fb9bd68bf927ae01ce7a8ca10a87279b.
