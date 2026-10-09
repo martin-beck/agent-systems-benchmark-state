@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Perform independent diff review, publish PR from exact clean head, wait for PR CI, then merge only through merge_pr.py.",
+  "next_action": "Obtain independent technical review and GitHub approval; wait for every PR check at exact head to reach success, then integrate with merge_pr.py against the current exact main base.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 0,
   "observed_head": "9bfff7aa4e2b05cf217cb505678ee0e9ce1259ca",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:55:22+00:00",
+  "updated_at": "2026-10-09T15:56:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -175,3 +175,7 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T15:55:22+00:00: Recorded command exit 0; command argv SHA-256
   6bc71a81c4ea1150dbbd57c6b78d3b4d22542b9e10858d5fa181b1c7bc96c2ab.
+
+- 2026-10-09T15:56:08+00:00: Published PR #534 from clean exact signed head
+  9bfff7aa4e2b05cf217cb505678ee0e9ce1259ca. Hosted required checks are in progress; no approval or
+  merge has been performed. Independent review remains required before integration.

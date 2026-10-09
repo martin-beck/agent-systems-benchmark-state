@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Perform independent diff review, publish PR from exact clean head, wait for PR CI, then merge only through merge_pr.py. |
+| Next action | Obtain independent technical review and GitHub approval; wait for every PR check at exact head to reach success, then integrate with merge_pr.py against the current exact main base. |
 
 ### AR-1762 — Discover system and project ASB tools
 
