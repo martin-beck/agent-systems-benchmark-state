@@ -26,6 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37993714381 | `dc6739049480` | workflow_dispatch | Emulated aarch64 portability | queued:- |
 | 37992867789 | `62532a2c9482` | pull_request | Hosted portability and native qualification | completed:success |
 | 37992867750 | `62532a2c9482` | pull_request | Rust verification | completed:failure |
 | 37992867726 | `62532a2c9482` | pull_request | Huawei MIT source headers | completed:success |
@@ -37,4 +38,3 @@ Generated from local Git and GitHub. Do not edit.
 | 37992867645 | `62532a2c9482` | pull_request | Cross-repository development broker qualification | completed:success |
 | 37992867587 | `62532a2c9482` | pull_request | Fault assurance | completed:success |
 | 37992867585 | `62532a2c9482` | pull_request | Emulated aarch64 portability | completed:failure |
-| 37992484669 | `dc6739049480` | workflow_dispatch | Formal assurance | completed:failure |
