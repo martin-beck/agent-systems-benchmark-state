@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Await independent review and all required exact-head checks on PR #537 at 95e540be95d2c5c4ce06328791437cb25af66ce2. Do not merge while checks or review are pending; merge only through merge_pr.py after green required checks, then perform post-merge verification and reconcile state.",
+  "next_action": "Continue monitoring PR #537 exact-head checks; once all required checks are terminal success, record final independent review and approval status.",
   "observed_branch": "feature/ar-1761-tool-install-registry-v2",
   "observed_dirty": 0,
   "observed_head": "95e540be95d2c5c4ce06328791437cb25af66ce2",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 168,
+  "task_revision": 169,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:45:26+00:00",
+  "updated_at": "2026-10-09T16:45:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -454,3 +454,11 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T16:45:26+00:00: Recorded command exit 0; command argv SHA-256
   b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b.
+
+- 2026-10-09T16:45:37+00:00: Independent re-review of replacement PR #537 exact head
+  95e540be95d2c5c4ce06328791437cb25af66ce2: complete installer diff/contracts/docs and
+  symlink-rejection/completion-fixture changes reviewed. Destination symlink regression is now
+  explicitly rejected before reading target. Local fmt, tool tests (7/7 including matching
+  destination symlink rejection), human_cli (14/14), capability_contract (13/13), clippy -D
+  warnings, and diff check pass. No implementation blocker found. Hosted checks are still running;
+  no approval or merge recommendation until all required checks are terminal green.

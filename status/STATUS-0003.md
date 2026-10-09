@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Await independent review and all required exact-head checks on PR #537 at 95e540be95d2c5c4ce06328791437cb25af66ce2. Do not merge while checks or review are pending; merge only through merge_pr.py after green required checks, then perform post-merge verification and reconcile state. |
+| Next action | Continue monitoring PR #537 exact-head checks; once all required checks are terminal success, record final independent review and approval status. |
 
 ### AR-1762 — Discover system and project ASB tools
 
@@ -3843,3 +3843,4 @@ flowchart LR
 | [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md) | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md) | [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
+| [AR-0844](../tasks/AR-0844-frontend-api-integration.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
