@@ -20,6 +20,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `.asb-ar1733-merge` | `DETACHED` | `942c7b110045` | 0 | behind 56, ahead 0 |
 | `.asb-ar1766-merge` | `DETACHED` | `ae22d66b8606` | 0 | behind 17, ahead 0 |
 | `.asb-ar1767-merge` | `DETACHED` | `00840438d060` | 0 | behind 14, ahead 0 |
+| `.asb-ar1768-merge` | `DETACHED` | `dc6739049480` | 0 | behind 0, ahead 0 |
 | `.asb-ar1770-merge` | `DETACHED` | `31f52d75f006` | 0 | behind 10, ahead 0 |
 | `.asb-rebase-446` | `DETACHED` | `0559c6f268db` | 0 | behind 294, ahead 4 |
 | `.asb-rebase-448` | `DETACHED` | `58d108d9192a` | 0 | behind 292, ahead 0 |
