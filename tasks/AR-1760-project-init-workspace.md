@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:17:53+00:00",
+  "updated_at": "2026-10-09T15:18:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -199,3 +199,6 @@ commands for a fresh user and support `--json` without leaking host secrets.
   digest for the intentional doctor/project-init command inventory. workflow_transcript now passes
   3/3; the final full workspace rerun is required after this exact-head evidence update. Product
   branch is clean, signed+DCO commits are pushed.
+
+- 2026-10-09T15:18:28+00:00: Recorded command exit 0; command argv SHA-256
+  e722ed1403701d5b7aa87509d78c9e1d3bcfaeb05459ab381d3f44bc7160a842.
