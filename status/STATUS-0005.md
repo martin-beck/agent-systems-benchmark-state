@@ -42,12 +42,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | codex-ar1767-directory-preparation | Implementing safe directory preparation and notices for command-owned ASB outputs. | PR #539 now points to signed exact head f34830bb75ce919d43036b4f889afd4b9fa1375d; await rerun exact-head CI and review. AR-1770 is the durable successor for descriptor-safe race hardening and missing acceptance-matrix gates. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -259,7 +253,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (541)
+### Done (542)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -526,3 +520,4 @@
 | P0 | [AR-1605](../tasks/AR-1605.md): Authenticated cassette control backend | Unclaimed | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. | Release admission after receipt acceptance. |
 | P0 | [AR-1606](../tasks/AR-1606.md): Cross-project cassette lifecycle qualification | Unclaimed | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Release complete: PR #426 merged as da886967; exact-main hosted workflows and independent approval are recorded in spec/receipt. |
 | P0 | [AR-1607](../tasks/AR-1607.md): OpenRouter provider and model setup | Unclaimed | Expose OpenRouter, API-key reference, supported models, and validation to the development wizard. | Promote after AR-1601 and implement the additive provider/catalog/config contract. |
+| P0 | [AR-1608](../tasks/AR-1608.md): Configuration persistence and shared defaults | Unclaimed | Persist editable provider/agent/model/auth selections and shared defaults safely for subsequent runs. | Promote after AR-1607 release and implement atomic redacted configuration updates. |

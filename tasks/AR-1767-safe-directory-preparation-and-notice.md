@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1767-safe-directory-preparation-and-notice",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T20:49:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1766"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1767-safe-directory-preparation-and-notice",
   "observed_dirty": 0,
   "observed_head": "f34830bb75ce919d43036b4f889afd4b9fa1375d",
-  "owner": "codex-ar1767-directory-preparation",
+  "owner": "",
   "plan": "../plans/AR-1767-safe-directory-preparation-and-notice.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1767.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T19:21:51+00:00",
+  "updated_at": "2026-10-09T19:21:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -387,3 +387,6 @@ when useful; repeated commands must not claim an existing directory was new.
 - 2026-10-09T19:21:51+00:00: Merged PR #539 exact head f34830b5 into 31f52d75 and all ten exact-main
   post-merge workflows succeeded. Residual descriptor-safe race and acceptance-matrix work is
   explicitly successor AR-1770.
+
+- 2026-10-09T19:21:58+00:00: AR-1767 accepted with exact merge/post-merge receipt; residual
+  race-hardening and matrix scope is tracked in AR-1770.

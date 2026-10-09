@@ -1026,11 +1026,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1767-directory-preparation |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Implementing safe directory preparation and notices for command-owned ASB outputs. |
@@ -1903,7 +1903,7 @@ flowchart LR
         AR_1764["AR-1764 - Planned"]:::status_planned
         AR_1765["AR-1765 - Planned"]:::status_planned
         AR_1766["AR-1766 - Done"]:::status_done
-        AR_1767["AR-1767 - In progress"]:::status_in_progress
+        AR_1767["AR-1767 - Done"]:::status_done
         AR_1768["AR-1768 - Planned"]:::status_planned
         AR_1769["AR-1769 - Planned"]:::status_planned
         AR_1770["AR-1770 - Planned"]:::status_planned
