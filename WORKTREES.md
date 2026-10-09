@@ -64,8 +64,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 18, ahead 0 |
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 6, ahead 0 |
-| `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `ea5e52bfe843` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `crates/asb-config/src/lib.rs`, `docs/PROJECT_WORKSPACES.md`, `docs/PROJECT_TOOLS.md` |
+| `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `8b4a2bf60c4f` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery` | `ea5e52bfe843` | 5 | behind 0, ahead 0 |
 | changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `docs/PROJECT_WORKSPACES.md`, `crates/asb-cli/src/tool_discovery.rs` |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 99, ahead 0 |
