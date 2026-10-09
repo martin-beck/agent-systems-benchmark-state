@@ -20,20 +20,21 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
+| #541 | `feature/ar-1768-exhaustive-actionable-human-diagnostics@62532a2c9482` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(cli): render actionable diagnostics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 37992867789 | `62532a2c9482` | pull_request | Hosted portability and native qualification | queued:- |
+| 37992867750 | `62532a2c9482` | pull_request | Rust verification | queued:- |
+| 37992867726 | `62532a2c9482` | pull_request | Huawei MIT source headers | queued:- |
+| 37992867724 | `62532a2c9482` | pull_request | Repository quality | queued:- |
+| 37992867708 | `62532a2c9482` | pull_request | Formal assurance | queued:- |
+| 37992867703 | `62532a2c9482` | pull_request | Portable protected-main provenance | queued:- |
+| 37992867702 | `62532a2c9482` | pull_request | Credential-free benchmark path | queued:- |
+| 37992867681 | `62532a2c9482` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 37992867645 | `62532a2c9482` | pull_request | Cross-repository development broker qualification | queued:- |
+| 37992867587 | `62532a2c9482` | pull_request | Fault assurance | queued:- |
+| 37992867585 | `62532a2c9482` | pull_request | Emulated aarch64 portability | queued:- |
 | 37992484669 | `dc6739049480` | workflow_dispatch | Formal assurance | completed:failure |
-| 37992462857 | `dc6739049480` | workflow_dispatch | Emulated aarch64 portability | completed:failure |
-| 37990714546 | `2701ae67c996` | pull_request | Portable protected-main provenance | completed:failure |
-| 37990714539 | `2701ae67c996` | pull_request | Fault assurance | completed:success |
-| 37990714506 | `2701ae67c996` | pull_request | Repository quality | completed:failure |
-| 37990714505 | `2701ae67c996` | pull_request | Cross-repository development broker qualification | completed:success |
-| 37990714464 | `2701ae67c996` | pull_request | Formal assurance | completed:failure |
-| 37990714452 | `2701ae67c996` | pull_request | Hosted portability and native qualification | completed:success |
-| 37990714449 | `2701ae67c996` | pull_request | Emulated aarch64 portability | completed:failure |
-| 37990714427 | `2701ae67c996` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37990714424 | `2701ae67c996` | pull_request | Rust verification | completed:failure |
-| 37990714410 | `f655bdc2b720` | pull_request | Cross-repository development broker qualification | completed:success |
