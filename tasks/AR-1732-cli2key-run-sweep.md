@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Integrate cli2key runs and sweeps",
-  "updated_at": "2026-10-09T13:23:05+00:00",
+  "updated_at": "2026-10-09T13:23:19+00:00",
   "worktree_key": ""
 }
 ---
@@ -75,3 +75,6 @@ serve as production or official-provider qualification.
 
 - 2026-10-09T13:23:05+00:00: Recorded command exit 101; command argv SHA-256
   0444148d6e6443057d50176af193d199048298f8c6b1e8b3544f9abd06412489.
+
+- 2026-10-09T13:23:19+00:00: Recorded command exit 0; command argv SHA-256
+  fc507d3ae59cda48d9510175c6aca98c4b4e6f8d694e59c809dee314cb1c47b9.
