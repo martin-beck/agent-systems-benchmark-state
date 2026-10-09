@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Serially rerun the three unrelated full-suite failures to classify concurrency flakiness; discovery tests and clippy are green.",
+  "next_action": "Full workspace test had parallel-only failures; serial reruns passed. Run locked rustdoc/build and prepare independent review/PR.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 0,
   "observed_head": "b81ef5c7ebf323ddfc49e5722b070569bc4d2df1",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:58:48+00:00",
+  "updated_at": "2026-10-09T15:59:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -251,3 +251,7 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:58:48+00:00: Recorded command exit 0; command argv SHA-256
   9e189dd8a2c9dfa16791ade55d61f4366d5b840e3e232cacc2cb4234e4fdf25b.
+
+- 2026-10-09T15:59:02+00:00: Classified the three full-test failures as concurrency flakiness: each
+  exact test passed with --test-threads=1 (two control ownership tests and one TUI path-replacement
+  test). Discovery tests and clippy remain green.

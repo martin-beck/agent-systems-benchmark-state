@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Serially rerun the three unrelated full-suite failures to classify concurrency flakiness; discovery tests and clippy are green. |
+| Next action | Full workspace test had parallel-only failures; serial reruns passed. Run locked rustdoc/build and prepare independent review/PR. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 
