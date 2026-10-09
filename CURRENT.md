@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1768](tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | AR-1768 merge 5377317 is verified but post-merge Repository quality run 37997802597 failed in exactly one PTY scenario: tui::tests::development_broker_foregrounds_interactive_child_and_restores_terminal (312 passed, 1 failed). The failure is product-test behavior, not infrastructure. Reproduce the focused test repeatedly on exact main and rerun the exact workflow to distinguish flake from a repair; do not accept or release while the required post-merge gate is red. | codex-ar1768-diagnostics |
-| P1 | [AR-1770](tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Exact-SHA rerun attempts are active: aarch64 37990474021 attempt 7 and formal 37990474025 attempt 6, both at merge dc67390494805693aef21d917319253b2e705da7. Await terminal result; create receipt and release only if both pass. | codex-ar1770-descriptor-safe-races |
 
 ## Open
 

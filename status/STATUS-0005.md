@@ -67,12 +67,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | codex-ar1768-diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | AR-1768 merge 5377317 is verified but post-merge Repository quality run 37997802597 failed in exactly one PTY scenario: tui::tests::development_broker_foregrounds_interactive_child_and_restores_terminal (312 passed, 1 failed). The failure is product-test behavior, not infrastructure. Reproduce the focused test repeatedly on exact main and rerun the exact workflow to distinguish flake from a repair; do not accept or release while the required post-merge gate is red. |
-| P1 | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | codex-ar1770-descriptor-safe-races | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Exact-SHA rerun attempts are active: aarch64 37990474021 attempt 7 and formal 37990474025 attempt 6, both at merge dc67390494805693aef21d917319253b2e705da7. Await terminal result; create receipt and release only if both pass. |
 
 ### Open (1)
 
@@ -288,7 +287,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (542)
+### Done (543)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -532,3 +531,5 @@
 | P0 | [AR-1570](../tasks/AR-1570.md): ASB dynamic development broker handoff | Unclaimed | Implement dynamic development broker handoff | Independent review and hosted green checks for PR #403 at f0b55e9f9e3056003b5bf949fc54ea7425c494ab |
 | P0 | [AR-1572](../tasks/AR-1572.md): ASB approved development toolchain runner | Unclaimed | Private reproducible development toolchain runner hardened and proposed in PR #404. | Run hosted checks and obtain independent review for PR #404 at f423bca; then merge only after approval. |
 | P0 | [AR-1573](../tasks/AR-1573.md): ASB development control producer bridge | Unclaimed | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. | Await all hosted gates and independent review of b4813cf; merge only identical green head, then release AR-1573 and promote AR-1574. |
+| P0 | [AR-1574](../tasks/AR-1574.md): ASB development control transport wiring | Unclaimed | Wire the ASB development launch transport to the producer control bridge. | Await AR-1578 workspace coverage recovery and hosted rerun; merge only identical green e2986e6 or later head, then release AR-1574. |
+| P0 | [AR-1576](../tasks/AR-1576.md): ASB development bootstrap projection | Unclaimed | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |

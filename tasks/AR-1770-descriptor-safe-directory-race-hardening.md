@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-10T00:10:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1767"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "observed_dirty": 0,
   "observed_head": "6278fcd6720f39de456a791f0c73e6327ff6e25d",
-  "owner": "codex-ar1770-descriptor-safe-races",
+  "owner": "",
   "plan": "../plans/AR-1770-descriptor-safe-directory-race-hardening.md",
   "priority": "P1",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1770.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 279,
+  "task_revision": 280,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T22:18:43+00:00",
+  "updated_at": "2026-10-09T22:18:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -925,3 +925,6 @@ implementation boundary explicitly and keep the product offline after install.
 - 2026-10-09T22:18:43+00:00: PR #540 merge dc67390494805693aef21d917319253b2e705da7 and all ten
   exact post-merge assurance workflows are terminal-success; receipt records immutable reviewed
   head/tree and workflow IDs.
+
+- 2026-10-09T22:18:46+00:00: Released after independent review, signed-DCO merge integrity, all ten
+  exact post-merge workflow successes, accepted receipt, reconciliation and live doctor.
