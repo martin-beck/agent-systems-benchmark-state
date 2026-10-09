@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Qualify and document cli2key development mode",
-  "updated_at": "2026-10-09T14:24:10+00:00",
+  "updated_at": "2026-10-09T14:41:17+00:00",
   "worktree_key": ""
 }
 ---
@@ -139,3 +139,6 @@ or official OpenAI Platform API-key claim.
 - 2026-10-09T14:23:27+00:00: Heartbeat by codex-asb-ar1733-cli2key-20261009.
 
 - 2026-10-09T14:24:10+00:00: Heartbeat by codex-asb-ar1733-cli2key-20261009.
+
+- 2026-10-09T14:41:17+00:00: Recorded command exit 0; command argv SHA-256
+  9a8853b57b2935376abde28ec0d203493cd48fcdf9d9016a9c549db8d86b037d.
