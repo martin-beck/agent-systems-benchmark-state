@@ -32,7 +32,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37950135681 | `aae54cd6b918` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 37950135658 | `aae54cd6b918` | pull_request | Huawei MIT source headers | completed:success |
 | 37950135645 | `aae54cd6b918` | pull_request | Cross-repository development broker qualification | in_progress:- |
-| 37950135617 | `aae54cd6b918` | pull_request | Emulated aarch64 portability | pending:- |
+| 37950135617 | `aae54cd6b918` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 37950135579 | `aae54cd6b918` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37950135576 | `aae54cd6b918` | pull_request | Portable protected-main provenance | completed:success |
 | 37949645878 | `bb08e89cd559` | pull_request | Fault assurance | completed:success |
