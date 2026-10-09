@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Qualify and document cli2key development mode",
-  "updated_at": "2026-10-09T13:56:19+00:00",
+  "updated_at": "2026-10-09T13:56:25+00:00",
   "worktree_key": ""
 }
 ---
@@ -39,3 +39,6 @@ or official OpenAI Platform API-key claim.
   exact-main workflows; dependency verified.
 
 - 2026-10-09T13:56:19+00:00: Claimed by codex-asb-ar1733-cli2key-20261009.
+
+- 2026-10-09T13:56:25+00:00: Recorded command exit 0; command argv SHA-256
+  e073b6eb0501ee117c85b38fcec7db7cddc75e8f66009a0de796940e5415d617.
