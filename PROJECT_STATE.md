@@ -27,7 +27,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37933011747 | `00f0525cbf09` | pull_request | Repository quality | in_progress:- |
 | 37933011686 | `00f0525cbf09` | pull_request | Credential-free benchmark path | in_progress:- |
 | 37933011656 | `00f0525cbf09` | pull_request | Rust verification | in_progress:- |
-| 37933011616 | `00f0525cbf09` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37933011616 | `00f0525cbf09` | pull_request | Hosted portability and native qualification | completed:success |
 | 37933011554 | `00f0525cbf09` | pull_request | Portable protected-main provenance | completed:success |
 | 37933011541 | `00f0525cbf09` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 37933011531 | `00f0525cbf09` | pull_request | Formal assurance | in_progress:- |
