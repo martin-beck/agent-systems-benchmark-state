@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Add cli2key provider and selection contracts",
-  "updated_at": "2026-10-09T07:41:07+00:00",
+  "updated_at": "2026-10-09T07:41:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1730-cli2key-provider-contract"
 }
 ---
@@ -41,3 +41,6 @@ own independent adapter proof. Do not alias this profile to the official
 
 - 2026-10-09T07:40:50+00:00: Recorded command exit 0; command argv SHA-256
   54bf945203015a35ad2709fffcd6495c30d93a8babd0574604ee6c08111410b2.
+
+- 2026-10-09T07:41:39+00:00: Recorded command exit 1; command argv SHA-256
+  469c1f5852ba1a32fb01da328becabc02206e98d6c7a1be3bc037d8958c46163.
