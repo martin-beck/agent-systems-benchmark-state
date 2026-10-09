@@ -7,7 +7,7 @@
     "AR-1719"
   ],
   "id": "AR-1752",
-  "next_action": "Claim in an isolated ASB worktree; reproduce the exact installed asb tui dynamic-catalog failure, repair DevelopmentBackend negotiated-version forwarding, and qualify the public install-to-route journey.",
+  "next_action": "Commit the focused negotiated-version repair, build exact ASB/TUI candidates, and run the installed public install/status/bare/dynamic-catalog journey before PR publication.",
   "owner": "codex-ar1752-v115-projection-20261009",
   "plan": "../plans/AR-1752-development-broker-v115-projection.md",
   "priority": "P0",
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Repair development broker v1.15 dynamic-catalog projection",
-  "updated_at": "2026-10-09T03:52:14+00:00",
+  "updated_at": "2026-10-09T03:58:56+00:00",
   "worktree_key": ""
 }
 ---
@@ -112,3 +112,9 @@ journey evidence must contain no credential value or raw provider payload.
 
 - 2026-10-09T03:52:14+00:00: Recorded command exit 0; command argv SHA-256
   4b48240ee0b5569ca7fab8614a2a30382d7805827e33fff38cc0cae0bcf27f23.
+
+- 2026-10-09T03:58:56+00:00: Active isolated product worktree is agent-systems-benchmark-ar-1752 on
+  branch repair/ar-1752-development-broker-v115-projection, synchronized to base
+  f3840f351c9da1657ad44af594cf2b6ae8b419c9. Exact pre-repair installed ASB 69bf9029/TUI 60ab530d
+  reproduction exits 4 with development_launch_failed and dynamic_catalog_response_missing; focused
+  fmt, v1.14/v1.15 backend and private-socket tests, authority negatives, and focused Clippy pass.
