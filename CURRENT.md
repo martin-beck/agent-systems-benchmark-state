@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1730](tasks/AR-1730-cli2key-provider-contract.md): Add cli2key provider and selection contracts | Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support. | Promote after AR-1728; add protocol, control, catalog, selection, and launch contracts with fixture coverage. | codex-asb-ar1730-closeout-20261009 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |

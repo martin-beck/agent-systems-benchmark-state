@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1730-cli2key-provider-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T13:25:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1728"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1730-cli2key-provider-contract",
   "observed_dirty": 0,
   "observed_head": "918000a5c4f5b1e6821d257f32b279663c6903d1",
-  "owner": "codex-asb-ar1730-closeout-20261009",
+  "owner": "",
   "plan": "../plans/AR-1730-cli2key-provider-contract.md",
   "priority": "P1",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1730.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Add cli2key provider and selection contracts",
-  "updated_at": "2026-10-09T12:26:32+00:00",
+  "updated_at": "2026-10-09T12:26:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1730-cli2key-provider-contract"
 }
 ---
@@ -195,3 +195,6 @@ own independent adapter proof. Do not alias this profile to the official
 
 - 2026-10-09T12:26:32+00:00: Accepted exact product merge 4f460a6aa70732fd8007a496fe4ac9e4810d8104
   from PR #524 with exact-head hosted workflows all successful.
+
+- 2026-10-09T12:26:40+00:00: Closed after exact merged product PR #524, hosted evidence acceptance,
+  and post-merge workflows.
