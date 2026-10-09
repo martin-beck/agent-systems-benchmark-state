@@ -9,8 +9,8 @@
   "id": "AR-1769",
   "next_action": "Implement a reviewed typed identity catalog and migrate or explicitly quarantine all 608 bare CliError::usage/validation/operation producers, including multiline and dynamic forms; add controlled defects for prose-keyword, multiline, and identifier-based producer bypasses; then rerun full gates and fresh review.",
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
-  "observed_dirty": 7,
-  "observed_head": "eb5bfb381f76e452bfff5b258ab1dad61001e916",
+  "observed_dirty": 0,
+  "observed_head": "c3f7e4abf19ba83f28d338565c8f0f825ab76e88",
   "owner": "codex-ar1769-matrix-repair-terra",
   "plan": "../plans/AR-1769-human-diagnostic-completeness-ci.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 176,
+  "task_revision": 177,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T23:14:07+00:00",
+  "updated_at": "2026-10-09T23:14:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
