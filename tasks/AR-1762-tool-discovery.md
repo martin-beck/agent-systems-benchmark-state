@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 216,
+  "task_revision": 217,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:36:49+00:00",
+  "updated_at": "2026-10-09T16:36:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -639,3 +639,6 @@ development authentication/signatures/keys are absent.
   version_probe_reaps_background_processes_without_pipe_hang regression. Full package (291 tests),
   full serialized workspace tests, fmt, Clippy -D warnings, rustdoc, release build, and
   source-header policy all passed. Pushed exact PR #536 head 9cd9e80.
+
+- 2026-10-09T16:36:58+00:00: Recorded command exit 0; command argv SHA-256
+  ebc441ee68158986d4be1f9b348a15d84ccb8edbd1ae11ee209a95f36fcf2fe4.
