@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37955302254 | `9bfff7aa4e2b` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 37955302225 | `9bfff7aa4e2b` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 37955302219 | `9bfff7aa4e2b` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37955302218 | `9bfff7aa4e2b` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37955302218 | `9bfff7aa4e2b` | pull_request | Hosted portability and native qualification | completed:success |
 | 37955302214 | `9bfff7aa4e2b` | pull_request | Rust verification | in_progress:- |
 | 37955302208 | `9bfff7aa4e2b` | pull_request | Fault assurance | in_progress:- |
 | 37955302200 | `9bfff7aa4e2b` | pull_request | Portable protected-main provenance | completed:success |
