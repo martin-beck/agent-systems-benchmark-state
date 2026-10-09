@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T14:40:06+00:00",
+  "updated_at": "2026-10-09T14:41:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
@@ -92,3 +92,6 @@ unknown-field/path validation.
 - 2026-10-09T14:40:06+00:00: Implementation complete at signed SSH+DCO commits f45082a and 36dab7a;
   PR #531 open at exact head 36dab7a. ProjectConfigV1, JSON Schema, documentation, positive/negative
   tests, focused cargo test/clippy pass. Independent review and exact-head CI remain before merge.
+
+- 2026-10-09T14:41:20+00:00: Recorded command exit 0; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
