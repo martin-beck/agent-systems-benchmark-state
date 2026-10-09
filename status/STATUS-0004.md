@@ -1,5 +1,25 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md) | [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0903](../tasks/AR-0903-release-qualification.md) | None |
+| [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | None |
+| [AR-0848](../tasks/AR-0848-native-x86-capacity.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md) |
+| [AR-0849](../tasks/AR-0849-ar0801-documentation-repair.md) | [AR-0004](../tasks/AR-0004-ar-status-document.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | None |
+| [AR-0850](../tasks/AR-0850-aider-deterministic-replay.md) | [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0508](../tasks/AR-0508-replay-aider.md) | None |
+| [AR-0851](../tasks/AR-0851-shared-workflow-coordinator.md) | None | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) |
+| [AR-0852](../tasks/AR-0852-coordinator-path-isolation.md) | None | None |
+| [AR-0853](../tasks/AR-0853-coordinator-merge-attestation.md) | None | None |
+| [AR-0854](../tasks/AR-0854-coordinator-v020-upgrade.md) | None | None |
+| [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) |
+| [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) | [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md), [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) | None |
+| [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md), [AR-0880](../tasks/AR-0880-openjiuwen-runtime-closure.md) |
+| [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md) | [AR-0859](../tasks/AR-0859-openjiuwen-live.md) |
+| [AR-0859](../tasks/AR-0859-openjiuwen-live.md) | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md) | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md) |
+| [AR-0860](../tasks/AR-0860-openjiuwen-replay.md) | [AR-0859](../tasks/AR-0859-openjiuwen-live.md) | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md) |
+| [AR-0861](../tasks/AR-0861-openjiuwen-parity.md) | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md) | [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md) |
+| [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md) | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md) | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
+| [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) |
+| [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) |
+| [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) |
 | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) |
 | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) |
 | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
@@ -612,7 +632,7 @@
 | [AR-1742](../tasks/AR-1742-protected-main-exact-tree-recovery.md) | None | None |
 | [AR-1743](../tasks/AR-1743-make-update-lockfile-repair.md) | None | None |
 | [AR-1744](../tasks/AR-1744-make-test-scratch-isolation.md) | None | None |
-| [AR-1745](../tasks/AR-1745-user-local-install-prefix.md) | [AR-1740](../tasks/AR-1740-repository-makefile.md) | [AR-1755](../tasks/AR-1755-idempotent-make-install.md) |
+| [AR-1745](../tasks/AR-1745-user-local-install-prefix.md) | [AR-1740](../tasks/AR-1740-repository-makefile.md) | [AR-1755](../tasks/AR-1755-idempotent-make-install.md), [AR-1759](../tasks/AR-1759-tool-project-config-schema.md) |
 | [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md), [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | None |
 | [AR-1747](../tasks/AR-1747-coordinator-unblock-vendor-adoption.md) | None | None |
 | [AR-1748](../tasks/AR-1748-protected-main-portable-provenance.md) | [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md) | None |
@@ -622,31 +642,3 @@
 | [AR-1752](../tasks/AR-1752-development-broker-v115-projection.md) | [AR-1719](../tasks/AR-1719.md) | None |
 | [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | [AR-1749](../tasks/AR-1749-coordinator-unblock-bootstrap.md) | [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) |
 | [AR-1754](../tasks/AR-1754-default-online-live-workflow.md) | [AR-1699](../tasks/AR-1699.md), [AR-1700](../tasks/AR-1700.md), [AR-1723](../tasks/AR-1723-easy-run-default-online.md), [AR-1724](../tasks/AR-1724-easy-sweep-default-online.md), [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | None |
-| [AR-1755](../tasks/AR-1755-idempotent-make-install.md) | [AR-1745](../tasks/AR-1745-user-local-install-prefix.md) | None |
-| [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) | [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | None |
-| [AR-1757](../tasks/AR-1757-human-first-cli-output.md) | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1555](../tasks/AR-1555.md) | None |
-| [AR-1758](../tasks/AR-1758-ar1731-merge-dco-repair.md) | None | None |
-
-## Complete AR inventory
-
-### In progress (2)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | codex-asb-ar1757-human-output-20261009 | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
-| P1 | [AR-1733](../tasks/AR-1733-cli2key-qualification.md): Qualify and document cli2key development mode | codex-asb-ar1733-cli2key-20261009 | Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits. | Audit public cli2key setup/status/run/sweep/result/reset surfaces and existing fake-sidecar coverage in fresh worktree; add qualification journey, hostile fault/privacy tests, and user documentation. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-
-### Blocked (87)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0514](../tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Wait for AR-0521 to publish and independently verify the signed content-addressed OpenHands environment bundle, offline verifier, reproducible approved digest, and altered-input rejection; then reclaim AR-0514 for native replay requalification. |
-| P0 | [AR-0521](../tasks/AR-0521-openhands-environment-pin.md): Reproduce and pin the OpenHands replay environment | Unclaimed | Repair OpenHands replay environment provenance and reproducibility. | Use the recorded AR-0514 failure evidence to define an immutable, reproducible OpenHands environment bundle and verifier; AR-0514 remains blocked until this evidence is independently verified. |
-| P0 | [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | Unclaimed | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. |
-| P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |

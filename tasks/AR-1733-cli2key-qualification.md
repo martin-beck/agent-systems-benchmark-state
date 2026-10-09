@@ -7,7 +7,7 @@
     "AR-1732"
   ],
   "id": "AR-1733",
-  "next_action": "Audit public cli2key setup/status/run/sweep/result/reset surfaces and existing fake-sidecar coverage in fresh worktree; add qualification journey, hostile fault/privacy tests, and user documentation.",
+  "next_action": "Credential-free qualification implementation committed at 12e28f8 and pushed. Run independent review, focused/full tests, open PR, exact-head CI, then merge through merge_pr.py.",
   "owner": "codex-asb-ar1733-cli2key-20261009",
   "plan": "../plans/AR-1733-cli2key-qualification.md",
   "priority": "P1",
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Qualify and document cli2key development mode",
-  "updated_at": "2026-10-09T13:59:32+00:00",
+  "updated_at": "2026-10-09T13:59:45+00:00",
   "worktree_key": ""
 }
 ---
@@ -55,3 +55,7 @@ or official OpenAI Platform API-key claim.
 
 - 2026-10-09T13:59:32+00:00: Recorded command exit 0; command argv SHA-256
   86343af567a67fed5c07fe17b9f989e6eda69a94e8452ce52b64a6b1db442ae2.
+
+- 2026-10-09T13:59:45+00:00: Added one-lifetime bounded fake journey, typed fault/privacy matrix,
+  cleanup/reset checks, CI workflow step, and user-facing cli2key
+  setup/status/reset/cost/methodology guidance.

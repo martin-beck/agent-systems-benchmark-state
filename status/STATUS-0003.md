@@ -558,7 +558,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits. |
-| Next action | Audit public cli2key setup/status/run/sweep/result/reset surfaces and existing fake-sidecar coverage in fresh worktree; add qualification journey, hostile fault/privacy tests, and user documentation. |
+| Next action | Credential-free qualification implementation committed at 12e28f8 and pushed. Run independent review, focused/full tests, open PR, exact-head CI, then merge through merge_pr.py. |
 
 ### AR-1734 — Propagate validated development tools to installed TUI
 
@@ -909,6 +909,104 @@
 | Children | None |
 | Summary | Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates. |
 | Next action | Protected main is repaired at exact signed+DCO merge 021ca1c39ff0199aa2c193026783712bc73bc51b; wait for remaining exact-main workflows, then record receipt and accept/release AR-1758 and AR-1731. |
+
+### AR-1759 — ASB project and external-tool configuration schema
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Define one versioned ASB project/tool inventory and catalog-selection configuration contract. |
+| Next action | Open the schema/config contract for implementation after AR-1745 is reconciled. |
+
+### AR-1760 — Initialize an ASB benchmark project workspace
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add an idempotent ASB project initializer containing config, results, and catalog areas. |
+| Next action | Implement &#96;asb project init&#96; after AR-1759 is merged. |
+
+### AR-1761 — ASB external-tool installer and registry
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
+| Next action | Implement &#96;asb tool install&#96; against the frozen schema and project layout. |
+
+### AR-1762 — Discover system and project ASB tools
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
+| Next action | Implement deterministic system/project inventory discovery after AR-1759 and AR-1760. |
+
+### AR-1763 — Generate and select ASB project catalogs
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. |
+| Next action | Implement catalog generation and selection on top of the installer/discovery inventory. |
+
+### AR-1764 — Integrate project tools and catalogs with ASB runs
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. |
+| Next action | Wire project inventory and active catalogs into benchmark setup/run/compare/report commands. |
+
+### AR-1765 — End-to-end qualification of ASB tool projects
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. |
+| Next action | Run the fresh-user end-to-end qualification after AR-1764 is merged. |
 
 
 ## Dependency graph
@@ -1727,6 +1825,13 @@ flowchart LR
         AR_1756["AR-1756 - Done"]:::status_done
         AR_1757["AR-1757 - In progress"]:::status_in_progress
         AR_1758["AR-1758 - Done"]:::status_done
+        AR_1759["AR-1759 - Planned"]:::status_planned
+        AR_1760["AR-1760 - Planned"]:::status_planned
+        AR_1761["AR-1761 - Planned"]:::status_planned
+        AR_1762["AR-1762 - Planned"]:::status_planned
+        AR_1763["AR-1763 - Planned"]:::status_planned
+        AR_1764["AR-1764 - Planned"]:::status_planned
+        AR_1765["AR-1765 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3599,9 +3704,24 @@ flowchart LR
     AR_1737 --> AR_1751
     AR_1740 --> AR_1745
     AR_1745 --> AR_1755
+    AR_1745 --> AR_1759
     AR_1749 --> AR_1753
     AR_1750 --> AR_1748
     AR_1753 --> AR_1756
+    AR_1759 --> AR_1760
+    AR_1759 --> AR_1761
+    AR_1759 --> AR_1762
+    AR_1760 --> AR_1761
+    AR_1760 --> AR_1762
+    AR_1760 --> AR_1765
+    AR_1761 --> AR_1763
+    AR_1761 --> AR_1764
+    AR_1761 --> AR_1765
+    AR_1762 --> AR_1763
+    AR_1762 --> AR_1765
+    AR_1763 --> AR_1764
+    AR_1763 --> AR_1765
+    AR_1764 --> AR_1765
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3725,23 +3845,3 @@ flowchart LR
 | [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0844](../tasks/AR-0844-frontend-api-integration.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md) |
-| [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md) | [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0903](../tasks/AR-0903-release-qualification.md) | None |
-| [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | None |
-| [AR-0848](../tasks/AR-0848-native-x86-capacity.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md) |
-| [AR-0849](../tasks/AR-0849-ar0801-documentation-repair.md) | [AR-0004](../tasks/AR-0004-ar-status-document.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | None |
-| [AR-0850](../tasks/AR-0850-aider-deterministic-replay.md) | [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0508](../tasks/AR-0508-replay-aider.md) | None |
-| [AR-0851](../tasks/AR-0851-shared-workflow-coordinator.md) | None | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) |
-| [AR-0852](../tasks/AR-0852-coordinator-path-isolation.md) | None | None |
-| [AR-0853](../tasks/AR-0853-coordinator-merge-attestation.md) | None | None |
-| [AR-0854](../tasks/AR-0854-coordinator-v020-upgrade.md) | None | None |
-| [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) |
-| [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) | [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md), [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) | None |
-| [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md), [AR-0880](../tasks/AR-0880-openjiuwen-runtime-closure.md) |
-| [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md) | [AR-0859](../tasks/AR-0859-openjiuwen-live.md) |
-| [AR-0859](../tasks/AR-0859-openjiuwen-live.md) | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md) | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md) |
-| [AR-0860](../tasks/AR-0860-openjiuwen-replay.md) | [AR-0859](../tasks/AR-0859-openjiuwen-live.md) | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md) |
-| [AR-0861](../tasks/AR-0861-openjiuwen-parity.md) | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md) | [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md) |
-| [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md) | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md) | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
-| [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) |
-| [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) |
-| [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) |
