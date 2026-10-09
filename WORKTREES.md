@@ -79,8 +79,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract` | `feature/ar-1766-fine-grained-human-diagnostic-contract` | `b8ae2dc60a71` | 0 | behind 24, ahead 0 |
 | `agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice` | `feature/ar-1767-safe-directory-preparation-and-notice` | `f34830bb75ce` | 0 | behind 20, ahead 0 |
 | `agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics` | `feature/ar-1768-exhaustive-actionable-human-diagnostics` | `cd46a00c276b` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci` | `feature/ar-1769-human-diagnostic-completeness-ci` | `e50f55145ec4` | 2 | behind 0, ahead 11 |
-| changed files | - | - | - | `crates/asb-cli/src/diagnostic.rs`, `crates/asb-cli/src/diagnostic_legacy_catalog.rs` |
+| `agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci` | `feature/ar-1769-human-diagnostic-completeness-ci` | `9b1ecb31a3aa` | 0 | behind 0, ahead 12 |
 | `agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening` | `feature/ar-1770-descriptor-safe-directory-race-hardening` | `6278fcd6720f` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 153, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 141, ahead 0 |
