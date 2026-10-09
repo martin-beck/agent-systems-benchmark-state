@@ -62,8 +62,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/tests/capability_contract.rs`, `crates/asb-cli/tests/cli_e2e.rs`, `crates/asb-cli/tests/guide_examples.rs`, `crates/asb-cli/tests/human_cli.rs`, `docs/COMMAND_OUTPUT.md`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 12, ahead 0 |
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 3, ahead 0 |
-| `agent-systems-benchmark-ar-1760-project-init` | `feature/ar-1760-project-init-workspace` | `bb08e89cd559` | 2 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-cli/tests/capability_contract.rs`, `docs/examples/guide-contract.json` |
+| `agent-systems-benchmark-ar-1760-project-init` | `feature/ar-1760-project-init-workspace` | `bb08e89cd559` | 3 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-cli/tests/capability_contract.rs`, `docs/QUICKSTART.md`, `docs/examples/guide-contract.json` |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 93, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 81, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 27, ahead 0 |
