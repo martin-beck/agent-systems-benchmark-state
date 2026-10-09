@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Rerun the provenance/full tests, then rustdoc and release build; commit fixture update and inspect exact diff.",
+  "next_action": "Perform independent diff review, publish PR from exact clean head, wait for PR CI, then merge only through merge_pr.py.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 0,
   "observed_head": "9bfff7aa4e2b05cf217cb505678ee0e9ce1259ca",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:54:39+00:00",
+  "updated_at": "2026-10-09T15:54:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -165,3 +165,7 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T15:54:39+00:00: Recorded command exit 0; command argv SHA-256
   33eb802aab5f68cf0afa5c74694665c81105746e9f87902b0ec0525673b14972.
+
+- 2026-10-09T15:54:58+00:00: Full applicable local gates pass: format check, Clippy with warnings
+  denied, workspace tests (including workflow provenance), rustdoc with -D warnings, and locked
+  release build. Exact implementation branch is clean at 9bfff7a with signed/DCO commits.

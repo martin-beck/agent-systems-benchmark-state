@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Rerun the provenance/full tests, then rustdoc and release build; commit fixture update and inspect exact diff. |
+| Next action | Perform independent diff review, publish PR from exact clean head, wait for PR CI, then merge only through merge_pr.py. |
 
 ### AR-1762 — Discover system and project ASB tools
 
