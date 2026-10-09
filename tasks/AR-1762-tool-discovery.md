@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Verify clean state handoff, push the signed merge commit, rerun exact-head gates after updated main base, then continue review/CI.",
+  "next_action": "Run source-header policy plus full focused/full applicable gates on repaired merge tree, commit signed+DCO, push exact head, and recheck PR #535 CI.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 2,
   "observed_head": "be7ab08161bbc5eb8310242e37844bf95a2f5c73",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 126,
+  "task_revision": 127,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:13:23+00:00",
+  "updated_at": "2026-10-09T16:13:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -382,3 +382,11 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:13:23+00:00: Recorded command exit 0; command argv SHA-256
   b354422e74af7a00c5ad1730cf8c3f612dc59955ca5c86a3bb42239860704934.
+
+- 2026-10-09T16:13:43+00:00: PR #535 CI exact-head be7ab08 exposed two repairable issues: Huawei
+  source-header/policy checks rejected tool_discovery.rs because it lacked the required adjacent
+  Huawei 2026 and SPDX MIT header; added canonical two-line header. After merging origin/main (PR
+  #533), local asb-cli test tool_discover_is_read_only_and_supports_json returned usage exit 2
+  because human::InvocationKind still classified tool as unsupported; added public tool
+  classification, human command family/projection/presentation, then exact test passed. No gate
+  weakened.
