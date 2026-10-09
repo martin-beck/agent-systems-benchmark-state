@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:53:11+00:00",
+  "updated_at": "2026-10-09T15:53:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -156,3 +156,6 @@ for idempotence; never store API keys or tokens.
   source changed: workflow_transcript failed with the stale cli_source_sha256. Updated only the
   checked-in provenance digest to the exact current lib.rs hash; no behavior bypass or gate
   weakening.
+
+- 2026-10-09T15:53:39+00:00: Recorded command exit 0; command argv SHA-256
+  4f4874fc5379a1cb5d8e3eabce9189c6823aac3d3d9fe3893360bb9c1e352a14.
