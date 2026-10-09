@@ -3591,7 +3591,6 @@ flowchart LR
     AR_1729 --> AR_1731
     AR_1730 --> AR_1731
     AR_1731 --> AR_1732
-    AR_1731 --> AR_1758
     AR_1732 --> AR_1733
     AR_1733 --> AR_1736
     AR_1733 --> AR_1754
@@ -3747,3 +3746,4 @@ flowchart LR
 | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) |
 | [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) |
 | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) |
+| [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) |

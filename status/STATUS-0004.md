@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) |
 | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
 | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
 | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
@@ -597,7 +596,7 @@
 | [AR-1728](../tasks/AR-1728-cli2key-contract.md) | None | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md) |
 | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md) | [AR-1728](../tasks/AR-1728-cli2key-contract.md) | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) |
 | [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md) | [AR-1728](../tasks/AR-1728-cli2key-contract.md) | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) |
-| [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md) | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md), [AR-1758](../tasks/AR-1758-ar1731-merge-dco-repair.md) |
+| [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md) | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) |
 | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) |
 | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md) | [AR-1736](../tasks/AR-1736-backend-model-catalog-execution.md), [AR-1754](../tasks/AR-1754-default-online-live-workflow.md) |
 | [AR-1734](../tasks/AR-1734-development-tui-tool-environment.md) | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md), [AR-1727](../tasks/AR-1727-development-broker-foreground-terminal.md) | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md), [AR-1738](../tasks/AR-1738-development-rustup-permission-compatibility.md) |
@@ -624,7 +623,7 @@
 | [AR-1755](../tasks/AR-1755-idempotent-make-install.md) | [AR-1745](../tasks/AR-1745-user-local-install-prefix.md) | None |
 | [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) | [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | None |
 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md) | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1555](../tasks/AR-1555.md) | None |
-| [AR-1758](../tasks/AR-1758-ar1731-merge-dco-repair.md) | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | None |
+| [AR-1758](../tasks/AR-1758-ar1731-merge-dco-repair.md) | None | None |
 
 ## Complete AR inventory
 
@@ -649,3 +648,4 @@
 | P0 | [AR-0521](../tasks/AR-0521-openhands-environment-pin.md): Reproduce and pin the OpenHands replay environment | Unclaimed | Repair OpenHands replay environment provenance and reproducibility. | Use the recorded AR-0514 failure evidence to define an immutable, reproducible OpenHands environment bundle and verifier; AR-0514 remains blocked until this evidence is independently verified. |
 | P0 | [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | Unclaimed | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. |
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
+| P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Unclaimed | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. |
