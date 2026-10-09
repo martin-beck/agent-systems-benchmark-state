@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:51:50+00:00",
+  "updated_at": "2026-10-09T15:51:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -145,3 +145,6 @@ for idempotence; never store API keys or tokens.
 - 2026-10-09T15:51:47+00:00: Full workspace tests found one expected contract-test drift after
   adding the tool command: capability_contract expected the old completion list and failed. Updated
   the assertion to include tool; no feature failure or publication occurred.
+
+- 2026-10-09T15:51:56+00:00: Recorded command exit 0; command argv SHA-256
+  4f3c9574d6c9114953dc0619fbe84dd55c36e97c4f48fff6b047f334d41e7b4c.
