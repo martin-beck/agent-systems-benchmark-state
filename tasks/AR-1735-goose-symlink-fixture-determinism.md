@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Harden Goose diagnostic fixture determinism",
-  "updated_at": "2026-10-09T03:03:26+00:00",
+  "updated_at": "2026-10-09T03:07:51+00:00",
   "worktree_key": ""
 }
 ---
@@ -67,3 +67,6 @@ rerun as proof that the race does not exist.
 
 - 2026-10-09T03:03:26+00:00: Recorded command exit 0; command argv SHA-256
   886f54d6ef6f02aacd36fb1cd241d54958b7d91d5ed2de304abbd6c8b707238e.
+
+- 2026-10-09T03:07:51+00:00: Recorded command exit 101; command argv SHA-256
+  fe0dabaca1300b4a467809ff45c4b3715c1c580b9b395bee3caedcfcf8513b65.
