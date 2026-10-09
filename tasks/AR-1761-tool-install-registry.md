@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Add user-facing project/tool documentation and then run complete applicable quality gates.",
+  "next_action": "Retry exact full format and Clippy commands with product manifest path before the rustfmt separator.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 0,
   "observed_head": "8b4a2bf60c4f1e8bb30363979a3c50f3a7c934b3",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:49:29+00:00",
+  "updated_at": "2026-10-09T15:49:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -121,3 +121,7 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T15:49:29+00:00: Recorded command exit 1; command argv SHA-256
   882a2b0d15036ccccb540d14aabe9077fdf6a4b45684ccd1b5e7fecfe60460c8.
+
+- 2026-10-09T15:49:49+00:00: Full-gate attempt failed before running Clippy: cargo fmt received
+  --manifest-path after the rustfmt separator and exited 101 because the wrapper cwd is the state
+  checkout. No product mutation or publication occurred; retry will pass manifest-path before --.

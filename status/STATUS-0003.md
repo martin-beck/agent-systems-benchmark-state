@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Add user-facing project/tool documentation and then run complete applicable quality gates. |
+| Next action | Retry exact full format and Clippy commands with product manifest path before the rustfmt separator. |
 
 ### AR-1762 — Discover system and project ASB tools
 
