@@ -1048,7 +1048,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
-| Next action | All local gates pass on clean signed exact head a601a53: locked workspace tests, focused diagnostics/human/contract tests, clippy -D warnings, rustdoc -D warnings, and release build. Push exact head, obtain independent review, rerun PR #541 required checks (prior Docker Hub rate-limit failures), then merge only after green exact-head CI. |
+| Next action | Exact signed head a601a53 is pushed to PR #541. Local locked workspace tests, focused diagnostics/human/contract tests, clippy -D warnings, rustdoc -D warnings, and release build all pass. Independent review of the bulk catalog repair is required; exact-head GitHub checks are running, with prior Docker Hub rate-limit failures to distinguish from product failures. Do not merge until review and every required check are green. |
 
 ### AR-1769 — Human diagnostic completeness CI gate
 
