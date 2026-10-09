@@ -622,12 +622,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md): Connect Codex adapter to cli2key backend | codex-asb-ar1731-codex-adapter-20261009 | Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter. | Promote after AR-1729 and AR-1730; integrate the Codex adapter with exact launch binding and no fallback. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P1 | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md): Connect Codex adapter to cli2key backend | Unclaimed | Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter. | Promote after AR-1729 and AR-1730; integrate the Codex adapter with exact launch binding and no fallback. |
 
 ### Blocked (87)
 

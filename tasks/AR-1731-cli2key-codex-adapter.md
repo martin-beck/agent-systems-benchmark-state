@@ -2,24 +2,24 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T14:27:00+00:00",
   "depends_on": [
     "AR-1729",
     "AR-1730"
   ],
   "id": "AR-1731",
   "next_action": "Promote after AR-1729 and AR-1730; integrate the Codex adapter with exact launch binding and no fallback.",
-  "owner": "",
+  "owner": "codex-asb-ar1731-codex-adapter-20261009",
   "plan": "../plans/AR-1731-cli2key-codex-adapter.md",
   "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1731.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Connect Codex adapter to cli2key backend",
-  "updated_at": "2026-10-09T12:26:56+00:00",
+  "updated_at": "2026-10-09T12:27:00+00:00",
   "worktree_key": ""
 }
 ---
@@ -33,3 +33,5 @@ OpenRouter, ambient Codex defaults, or a different endpoint/model.
 
 - 2026-10-09T12:26:56+00:00: Dependencies AR-1729 and AR-1730 are now accepted and done with exact
   hosted merge evidence; ready for implementation.
+
+- 2026-10-09T12:27:00+00:00: Claimed by codex-asb-ar1731-codex-adapter-20261009.
