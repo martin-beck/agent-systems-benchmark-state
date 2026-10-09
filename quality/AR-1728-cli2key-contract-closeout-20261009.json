@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1728",
+  "result": "pass",
+  "bridge": {
+    "source": "CodingForMoney/codex-bridge",
+    "version": "0.1.10",
+    "commit": "da5d271db08cca1f4666c1b035dbfb6c6f9b8f47",
+    "tree": "682881f6d7fea1fa117bf0899ae0754291bba3c4",
+    "archive_sha256": "db256f8b8b9392835fb1277cadcff6ded3da99a6831f3ff902d5f7721cc7d5bb",
+    "license": "MIT"
+  },
+  "contract": {
+    "downstream_client_key": "separate ephemeral loopback client credential under ~/.cb",
+    "upstream_authentication": "user-approved Codex OAuth remains read-only in the user-selected CODEX_HOME",
+    "official_openai_platform_api_key_claim": false,
+    "nested_codex_app_server_benchmarking": "prohibited",
+    "classification": "development-only-unofficial"
+  },
+  "candidate": {
+    "base": "e21d6bc7ed1cae3e102eceada291cb7931f6b812",
+    "reviewed_head": "51c2d975d845d084a28bcf5cdda5b49e2c6bccd3",
+    "reviewed_tree": "831e4e9b1ffdea478e3c0c4baf516a040b0936b7",
+    "signed": true,
+    "dco": true
+  },
+  "independent_review": {
+    "status": "approved",
+    "findings": [],
+    "base": "e21d6bc7ed1cae3e102eceada291cb7931f6b812",
+    "head": "51c2d975d845d084a28bcf5cdda5b49e2c6bccd3",
+    "tree": "831e4e9b1ffdea478e3c0c4baf516a040b0936b7"
+  },
+  "local_gates": {
+    "python_tests": "7 passed including slow-drip absolute deadline",
+    "focused_rust_contract": "3 passed",
+    "capability_contract": "13 passed",
+    "workspace_tests": "pass serialized",
+    "coverage": {
+      "regions_percent": 92.97,
+      "functions_percent": 96.07,
+      "lines_percent": 95.88
+    },
+    "ruff": "pass",
+    "cargo_fmt": "pass",
+    "clippy": "pass",
+    "rustdoc": "pass",
+    "release_build": "pass",
+    "cargo_deny": "pass",
+    "cargo_audit": "pass",
+    "actionlint": "pass",
+    "zizmor": "pass-no-findings",
+    "gitleaks": "pass-2-commits-no-leaks",
+    "repository_policy": "pass",
+    "failure_paths": "pass",
+    "signature_policy": "17 passed"
+  },
+  "pull_request": {
+    "number": 523,
+    "state": "merged",
+    "exact_head_checks": 15,
+    "exact_head_result": "success",
+    "workflow_runs": {
+      "credential_free_benchmark": 37889153244,
+      "source_headers": 37889153248,
+      "awq_shadow": 37889153250,
+      "hosted_portability": 37889153255,
+      "emulated_aarch64": 37889153263,
+      "repository_quality": 37889153285,
+      "formal_assurance": 37889153297,
+      "cross_repository_broker": 37889153298,
+      "fault_assurance": 37889153304,
+      "portable_provenance": 37889153306,
+      "rust_verification": 37889153365
+    },
+    "superseded_pull_request": 520,
+    "superseded_pull_request_state": "closed"
+  },
+  "merge": {
+    "commit": "30286af46920b34096d3a48153e728f7319358a4",
+    "parents": [
+      "e21d6bc7ed1cae3e102eceada291cb7931f6b812",
+      "51c2d975d845d084a28bcf5cdda5b49e2c6bccd3"
+    ],
+    "tree": "831e4e9b1ffdea478e3c0c4baf516a040b0936b7",
+    "signed": true,
+    "dco": true,
+    "protected_main_policy": "pass"
+  },
+  "exact_main": {
+    "commit": "30286af46920b34096d3a48153e728f7319358a4",
+    "workflow_result": "success",
+    "workflow_runs": {
+      "cross_repository_broker": 37890038098,
+      "formal_assurance": 37890038099,
+      "emulated_aarch64": 37890038110,
+      "credential_free_benchmark": 37890038115,
+      "fault_assurance": 37890038120,
+      "source_headers": 37890038121,
+      "rust_verification": 37890038124,
+      "hosted_portability": 37890038175,
+      "portable_provenance": 37890038210,
+      "repository_quality": 37890038571
+    }
+  },
+  "privacy": {
+    "credential_values_persisted": false,
+    "auth_file_contents_persisted": false,
+    "prompts_persisted": false,
+    "provider_bodies_persisted": false,
+    "private_paths_persisted": false
+  }
+}
