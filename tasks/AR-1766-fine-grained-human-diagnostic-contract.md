@@ -10,7 +10,7 @@
     "AR-1762"
   ],
   "id": "AR-1766",
-  "next_action": "After AR-1761 is done, inventory every public ASB error, failure, and warning producer and replace the free-form public diagnostic boundary with fine-grained typed context.",
+  "next_action": "Run full cargo gates, then commit the reviewed diagnostic catalog/docs/tests with SSH signature and DCO; publish PR for independent review. State reconcile remains blocked by oversized generated handoffctl pyc and stale WORKTREES.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -30,9 +30,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T17:39:26+00:00",
+  "updated_at": "2026-10-09T17:39:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -109,3 +109,7 @@ the catalog.
   eb8648d78be9d44db5631385c3fcbaaeaac0114989924fef6dc1415045ce0bfa.
 
 - 2026-10-09T17:39:26+00:00: Heartbeat by codex-ar1766-diagnostics.
+
+- 2026-10-09T17:39:44+00:00: Focused cargo test -p asb-cli --test diagnostic_contract passed (3
+  tests); cargo clippy --locked -p asb-cli --all-targets -- -D warnings passed. Added closed
+  catalog, routed TUI resolution, privacy compatibility test, and producer inventory docs.

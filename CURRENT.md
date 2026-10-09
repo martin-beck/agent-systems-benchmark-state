@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1766](tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | After AR-1761 is done, inventory every public ASB error, failure, and warning producer and replace the free-form public diagnostic boundary with fine-grained typed context. | codex-ar1766-diagnostics |
+| P0 | [AR-1766](tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | Run full cargo gates, then commit the reviewed diagnostic catalog/docs/tests with SSH signature and DCO; publish PR for independent review. State reconcile remains blocked by oversized generated handoffctl pyc and stale WORKTREES. | codex-ar1766-diagnostics |
 
 ## Open
 

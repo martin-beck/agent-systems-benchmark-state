@@ -1020,7 +1020,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. |
-| Next action | After AR-1761 is done, inventory every public ASB error, failure, and warning producer and replace the free-form public diagnostic boundary with fine-grained typed context. |
+| Next action | Run full cargo gates, then commit the reviewed diagnostic catalog/docs/tests with SSH signature and DCO; publish PR for independent review. State reconcile remains blocked by oversized generated handoffctl pyc and stale WORKTREES. |
 
 ### AR-1767 — Safe automatic directory preparation with clear notice
 
