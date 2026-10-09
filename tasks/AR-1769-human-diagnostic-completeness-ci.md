@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 159,
+  "task_revision": 160,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T23:10:09+00:00",
+  "updated_at": "2026-10-09T23:10:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -463,3 +463,6 @@ timeouts/cancellation, partial results, and warning-only development behavior.
   eb5bfb381f76e452bfff5b258ab1dad61001e916 preserves the prior complete matrix, the closed-boundary
   attempted repair, and refreshed provenance; no PR was published. checkpoint and doctor --live are
   terminal clean.
+
+- 2026-10-09T23:10:27+00:00: Recorded command exit 0; command argv SHA-256
+  1998a27ecf74c59ec81887f4e795395b29d17e53bc255dd2f3bf278930ce22f7.
