@@ -480,11 +480,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1728-cli2key-contract-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. |
@@ -1612,7 +1612,7 @@ flowchart LR
         AR_1725["AR-1725 - Planned"]:::status_planned
         AR_1726["AR-1726 - Done"]:::status_done
         AR_1727["AR-1727 - Done"]:::status_done
-        AR_1728["AR-1728 - Open"]:::status_open
+        AR_1728["AR-1728 - In progress"]:::status_in_progress
         AR_1729["AR-1729 - Planned"]:::status_planned
         AR_1730["AR-1730 - Planned"]:::status_planned
         AR_1731["AR-1731 - Planned"]:::status_planned
