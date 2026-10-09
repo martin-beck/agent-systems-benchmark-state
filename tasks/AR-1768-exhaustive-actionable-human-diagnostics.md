@@ -8,7 +8,7 @@
     "AR-1767"
   ],
   "id": "AR-1768",
-  "next_action": "Render every cataloged ASB error, failure, partial outcome, and warning as concise cause-specific human guidance with an honest next action when one exists.",
+  "next_action": "Repair reviewer findings: classify lifecycle rejection and resource exhaustion distinctly, add catalog-driven producer coverage, and map every known warning explicitly; rerun focused/full gates and refresh exact-head PR.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "observed_dirty": 0,
   "observed_head": "62532a2c9482e1abb6774dcdb6e4d36a4a053d5a",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:23:02+00:00",
+  "updated_at": "2026-10-09T21:24:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -133,3 +133,7 @@ say what remains usable.
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
 
 - 2026-10-09T21:23:02+00:00: Heartbeat by codex-ar1768-diagnostics.
+
+- 2026-10-09T21:24:00+00:00: Independent review found lifecycle errors mapped to ProviderRejection,
+  quota mapped to ReadOnlyStorage, missing catalog-driven exhaustiveness, and generic
+  unknown-warning text. Repair started; preserve Docker rate-limit CI evidence.

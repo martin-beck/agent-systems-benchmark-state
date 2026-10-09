@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1768](tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | Render every cataloged ASB error, failure, partial outcome, and warning as concise cause-specific human guidance with an honest next action when one exists. | codex-ar1768-diagnostics |
+| P0 | [AR-1768](tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | Repair reviewer findings: classify lifecycle rejection and resource exhaustion distinctly, add catalog-driven producer coverage, and map every known warning explicitly; rerun focused/full gates and refresh exact-head PR. | codex-ar1768-diagnostics |
 | P1 | [AR-1770](tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green; Repository quality 37990474230 and Rust 37990474203 passed. Exact-SHA workflow_dispatch reruns aarch64 37992462857 and formal 37992484669 are infra-failed on Docker registry rate/timeout; retry after Docker rate window, then receipt and release. | codex-ar1770-descriptor-safe-races |
 
 ## Open

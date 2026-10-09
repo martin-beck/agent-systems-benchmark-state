@@ -1048,7 +1048,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
-| Next action | Render every cataloged ASB error, failure, partial outcome, and warning as concise cause-specific human guidance with an honest next action when one exists. |
+| Next action | Repair reviewer findings: classify lifecycle rejection and resource exhaustion distinctly, add catalog-driven producer coverage, and map every known warning explicitly; rerun focused/full gates and refresh exact-head PR. |
 
 ### AR-1769 — Human diagnostic completeness CI gate
 
