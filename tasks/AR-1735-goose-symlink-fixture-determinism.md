@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-09T04:39:08+00:00",
   "depends_on": [],
   "id": "AR-1735",
-  "next_action": "Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics.",
+  "next_action": "Acceptance complete: preserve signed merge f3840f351c9da1657ad44af594cf2b6ae8b419c9 and receipt quality/AR-1735-goose-symlink-fixture-determinism-receipt.txt; no further implementation action.",
   "owner": "codex-ar1735-goose-fixture-20261009",
   "plan": "../plans/AR-1735-goose-symlink-fixture-determinism.md",
   "priority": "P1",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Harden Goose diagnostic fixture determinism",
-  "updated_at": "2026-10-09T03:55:38+00:00",
+  "updated_at": "2026-10-09T03:56:28+00:00",
   "worktree_key": ""
 }
 ---
@@ -100,3 +100,11 @@ rerun as proof that the race does not exist.
 
 - 2026-10-09T03:55:38+00:00: Recorded command exit 0; command argv SHA-256
   fdcfdb4122ca38597cdd07c4e36baa61143e18b1ff029a6c375274808f2dbdc9.
+
+- 2026-10-09T03:56:28+00:00: Spec acceptance recorded: deterministic-diagnostic,
+  no-semantic-weakening, portable-repeat, repetition, hosted, and definition-of-done all pass. PR
+  #521 exact reviewed head 3aea09da2646180cbc1c05f5f022362552377595 tree
+  a844b2f70a925535950e12fdb6bb3001a99d77ea merged signed+DCO as
+  f3840f351c9da1657ad44af594cf2b6ae8b419c9 with exact reviewed tree. All 10 required exact-main push
+  workflows are terminal success; unrelated Dependabot run excluded. Receipt digest
+  sha256:88e3b7d2743122372a9a3685d5e73eea5ecdb3df3bb8556b095818f44ea8240e.

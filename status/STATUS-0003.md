@@ -586,7 +586,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the Goose diagnostic-and-symlink regression deterministic across native and emulated AArch64 runs. |
-| Next action | Reproduce workflow 37712243495 attempt-1 Goose diagnostic nondeterminism under repeated native and emulated execution, then repair the fixture race without changing adapter semantics. |
+| Next action | Acceptance complete: preserve signed merge f3840f351c9da1657ad44af594cf2b6ae8b419c9 and receipt quality/AR-1735-goose-symlink-fixture-determinism-receipt.txt; no further implementation action. |
 
 ### AR-1736 — Require model catalogs and execution parity for every backend
 
