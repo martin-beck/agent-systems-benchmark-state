@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1760-project-init-workspace",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T17:04:33+00:00",
   "depends_on": [
     "AR-1759"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-ar1760-project-init-20261009",
   "plan": "../plans/AR-1760-project-init-workspace.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1760.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:04:30+00:00",
+  "updated_at": "2026-10-09T15:04:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -41,3 +41,5 @@ and recover cleanly from partial initialization. It must print the next simple
 commands for a fresh user and support `--json` without leaking host secrets.
 
 - 2026-10-09T15:04:30+00:00: AR-1759 schema is merged, accepted, released, and dependency-ready.
+
+- 2026-10-09T15:04:33+00:00: Claimed by codex-asb-ar1760-project-init-20261009.
