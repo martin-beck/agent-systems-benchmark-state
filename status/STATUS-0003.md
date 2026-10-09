@@ -1048,7 +1048,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
-| Next action | Bulk producer catalog repair is implemented for all routed RouterError codes, with explicit diagnostic contexts and human text. Focused diagnostic, human, contract, and formatting gates pass; run full workspace test, clippy/doc/release gates, then sign/push the exact head for fresh independent review and PR #541 CI. |
+| Next action | Final repair is signed at a601a53 and the full workspace gate is being rerun after one concurrency-sensitive state-ownership test failed in the parallel run but passed alone. Then run clippy/doc/release gates, push exact head, obtain independent review, and monitor PR #541 CI. |
 
 ### AR-1769 — Human diagnostic completeness CI gate
 
