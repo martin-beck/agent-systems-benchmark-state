@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:16:42+00:00",
+  "updated_at": "2026-10-09T15:16:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -179,3 +179,6 @@ commands for a fresh user and support `--json` without leaking host secrets.
   but the checked normalized transcript fixture did not. Copy the deterministic actual transcript
   into docs/examples/asb-cli-workflow-v1.json and refresh only transcript_sha256 in the provenance
   fixture.
+
+- 2026-10-09T15:16:51+00:00: Recorded command exit 0; command argv SHA-256
+  26c253067649e7239c6495a022b7bce57a80e4fe31f8bbde34b28a97375651f2.
