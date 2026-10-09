@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T10:07:21+00:00",
+  "updated_at": "2026-10-09T10:07:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -167,3 +167,6 @@ system-wide privilege handling.
   Reviewer verified remote identity, valid SSH signatures and DCO, marker-gated safe overwrite,
   portable BusyBox-compatible harness, clean tree, focused local gates, and all 15 of 15 hosted
   exact-head checks successful.
+
+- 2026-10-09T10:07:30+00:00: Recorded command exit 0; command argv SHA-256
+  a093358747429c07186377bda4237371fb9bd68bf927ae01ce7a8ca10a87279b.
