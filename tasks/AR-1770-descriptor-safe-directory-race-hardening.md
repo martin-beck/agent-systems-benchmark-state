@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green; Repository quality 37990474230 and Rust 37990474203 passed. Exact-SHA workflow_dispatch reruns aarch64 37992462857 and formal 37992484669 are infra-failed on Docker registry rate/timeout; retry after Docker rate window, then receipt and release.",
+  "next_action": "Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green. Repository quality 37990474230 and Rust 37990474203 passed. Repeated exact-SHA hosted and workflow_dispatch retries for formal/aarch64 remain Docker-registry infrastructure failures; retry after registry rate window, then create receipt and release.",
   "observed_branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "observed_dirty": 0,
   "observed_head": "6278fcd6720f39de456a791f0c73e6327ff6e25d",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 243,
+  "task_revision": 244,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T21:31:46+00:00",
+  "updated_at": "2026-10-09T21:32:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -810,3 +810,10 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T21:31:46+00:00: Recorded command exit 0; command argv SHA-256
   022f5769a70a8a6fe6b52869062dea97441659a4388bdf22aa522761c720a3c5.
+
+- 2026-10-09T21:32:00+00:00: Exact merge main and all successful gates retained. Attempts: original
+  aarch64 37990474021 and formal 37990474025; reruns remained Docker toomanyrequests; exact-head
+  workflow_dispatch aarch64 37992462857 and 37993714381, formal 37992484669 and 37993742442, all
+  exact headSha dc67390494805693aef21d917319253b2e705da7. Aarch64 dispatches fail Docker Ubuntu
+  image pull rate limit. Formal dispatches pass Kani/Loom but TLC fails Docker eclipse-temurin image
+  pull/rate limit. No product test failure, no receipt/accept/release yet.
