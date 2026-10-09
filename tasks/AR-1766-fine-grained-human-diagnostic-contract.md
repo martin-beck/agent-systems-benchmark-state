@@ -30,9 +30,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T18:01:56+00:00",
+  "updated_at": "2026-10-09T18:07:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -241,3 +241,6 @@ the catalog.
 - 2026-10-09T18:00:44+00:00: Heartbeat by codex-ar1766-diagnostics.
 
 - 2026-10-09T18:01:56+00:00: Heartbeat by codex-ar1766-diagnostics.
+
+- 2026-10-09T18:07:55+00:00: Recorded command exit 1; command argv SHA-256
+  75cf4977604114f7d8f4cdfc016b493f483be93cb509ba22d2f5384913b01683.
