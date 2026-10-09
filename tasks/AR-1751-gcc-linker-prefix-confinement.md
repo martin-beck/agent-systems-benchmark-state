@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T01:03:10+00:00",
+  "updated_at": "2026-10-09T01:03:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -238,3 +238,6 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
 
 - 2026-10-09T01:03:10+00:00: Recorded command exit 0; command argv SHA-256
   5fbf8cf5f7a5033b168f87348a1437fc40d72ecd1e1d68cf72198b21c522c119.
+
+- 2026-10-09T01:03:49+00:00: Recorded command exit 0; command argv SHA-256
+  c91f3e5478c7be4eebf65c02b491563b30a55d29cc816ccd5010d4763e5e2ed9.
