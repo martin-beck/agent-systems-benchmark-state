@@ -942,7 +942,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -1827,7 +1827,7 @@ flowchart LR
         AR_1758["AR-1758 - Done"]:::status_done
         AR_1759["AR-1759 - Done"]:::status_done
         AR_1760["AR-1760 - Done"]:::status_done
-        AR_1761["AR-1761 - Planned"]:::status_planned
+        AR_1761["AR-1761 - Open"]:::status_open
         AR_1762["AR-1762 - In progress"]:::status_in_progress
         AR_1763["AR-1763 - Planned"]:::status_planned
         AR_1764["AR-1764 - Planned"]:::status_planned
