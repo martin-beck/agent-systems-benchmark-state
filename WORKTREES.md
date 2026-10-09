@@ -373,7 +373,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1728` | `feature/ar-1728-cli2key-contract` | `b65cac1f6f4f` | 0 | behind 11, ahead 2 |
 | `agent-systems-benchmark-ar-1728-clean` | `feature/ar-1728-cli2key-contract-clean` | `51c2d975d845` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-ar-1728-integration` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 6, ahead 0 |
-| `agent-systems-benchmark-ar-1729-cli2key-sidecar` | `feature/ar-1729-cli2key-sidecar-runtime` | `293e5f5bab45` | 0 | behind 3, ahead 1 |
+| `agent-systems-benchmark-ar-1729-cli2key-sidecar` | `feature/ar-1729-cli2key-sidecar-runtime` | `b3d71c91102a` | 0 | behind 3, ahead 1 |
 | `agent-systems-benchmark-ar-1730-cli2key-provider-contract` | `feature/ar-1730-cli2key-provider-contract` | `918000a5c4f5` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1734-development-tui-tool-environment` | `repair/ar-1734-development-tui-tool-environment` | `40f618b9389c` | 0 | behind 61, ahead 0 |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 60, ahead 0 |
