@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact upstream Coordinator main containing the supported spec-acceptance command as an explicitly development-only vendor so merged ASB ARs can be durably accepted.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Coordinator v0.4.0 development vendor for supported acceptance",
-  "updated_at": "2026-10-09T11:57:40+00:00",
+  "updated_at": "2026-10-09T11:59:32+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1756-coordinator-v040"
 }
 ---
@@ -39,3 +39,6 @@ be bypassed.
   independently verified and AR-1756 state files are integrated on protected main.
 
 - 2026-10-09T11:57:40+00:00: Claimed by codex-asb-ar1756-coordinator-v040-20261009.
+
+- 2026-10-09T11:59:32+00:00: Recorded command exit 0; command argv SHA-256
+  e4c5998e75ca3a2c340fadfcbbdb6fe1a5c97bcea15046da8235a9489faeabca.
