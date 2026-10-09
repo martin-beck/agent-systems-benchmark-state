@@ -1,0 +1,22 @@
+{
+  "base": "ae22d66b86060b8ee60b56ffd7ca0e31f7e50c54",
+  "merge_commit": "00840438d0609ec9c0506cf07aee006ee621bbda",
+  "merged_head": "b8ae2dc60a71bceecbee73c1abcc25a55d63d9e3",
+  "merged_tree": "630fd676d1c3ad6bbab01901a729c2ca4ed1f830",
+  "post_merge_workflows": {
+    "37971275898": "success",
+    "37971276010": "success",
+    "37971276018": "success",
+    "37971276033": "success",
+    "37971276073": "success",
+    "37971276120": "success",
+    "37971276122": "success",
+    "37971276132": "success",
+    "37971276230": "success",
+    "37971276278": "success"
+  },
+  "pull_request": 538,
+  "schema_version": 1,
+  "status": "post_merge_verified",
+  "task": "AR-1766"
+}\n
