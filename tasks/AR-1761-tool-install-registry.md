@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 187,
+  "task_revision": 188,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:56:22+00:00",
+  "updated_at": "2026-10-09T16:56:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -510,3 +510,6 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T16:56:17+00:00: Recorded command exit 0; command argv SHA-256
   4c79fc3d60a77436a8ce5a6026f7a364c98d00719bf5d25872b7d51607ade5d5.
+
+- 2026-10-09T16:56:29+00:00: Recorded command exit 0; command argv SHA-256
+  f331a1d2f2e3572b386e7275bf4d067aec1bc924f112360790d3bb04aaacbbfa.
