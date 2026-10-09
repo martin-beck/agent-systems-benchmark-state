@@ -536,11 +536,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-ar1732-run-sweep-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence. |
@@ -1700,7 +1700,7 @@ flowchart LR
         AR_1729["AR-1729 - Done"]:::status_done
         AR_1730["AR-1730 - Done"]:::status_done
         AR_1731["AR-1731 - Done"]:::status_done
-        AR_1732["AR-1732 - In progress"]:::status_in_progress
+        AR_1732["AR-1732 - Done"]:::status_done
         AR_1733["AR-1733 - Planned"]:::status_planned
         AR_1734["AR-1734 - Done"]:::status_done
         AR_1735["AR-1735 - Done"]:::status_done

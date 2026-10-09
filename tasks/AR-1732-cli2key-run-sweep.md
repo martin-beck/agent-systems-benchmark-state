@@ -2,13 +2,13 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T14:23:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1731"
   ],
   "id": "AR-1732",
   "next_action": "PR #529 merged as signed merge 942c7b110045823c942e362e5247b6ce15027ec5; monitor all exact-main workflows, then reconcile/doctor and accept/release AR-1732 with post-merge evidence.",
-  "owner": "codex-asb-ar1732-run-sweep-20261009",
+  "owner": "",
   "plan": "../plans/AR-1732-cli2key-run-sweep.md",
   "priority": "P1",
   "schema_version": 1,
@@ -22,11 +22,11 @@
   },
   "spec_ref": "specs/AR-1732.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Integrate cli2key runs and sweeps",
-  "updated_at": "2026-10-09T13:55:19+00:00",
+  "updated_at": "2026-10-09T13:55:25+00:00",
   "worktree_key": ""
 }
 ---
@@ -263,3 +263,9 @@ serve as production or official-provider qualification.
 - 2026-10-09T13:55:19+00:00: Accepted after signed/DCO merge
   942c7b110045823c942e362e5247b6ce15027ec5; PR #529 reviewed head 08226e2 and all ten exact-main
   workflows succeeded. Reconciled state and doctor --live passed.
+
+- 2026-10-09T13:55:25+00:00: Released AR-1732 after durable hosted acceptance: signed/DCO merge
+  942c7b110045823c942e362e5247b6ce15027ec5, exact-main workflows 37938978869 37938978789 37938978769
+  37938978831 37938978737 37938978804 37938978794 37938978695 37938978758 37938978842 all
+  successful, receipt quality/AR-1732-cli2key-run-sweep-postmerge-receipt.json, and doctor --live
+  OK.
