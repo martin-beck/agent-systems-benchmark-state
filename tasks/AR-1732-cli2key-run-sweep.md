@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Integrate cli2key runs and sweeps",
-  "updated_at": "2026-10-09T13:23:56+00:00",
+  "updated_at": "2026-10-09T13:24:29+00:00",
   "worktree_key": ""
 }
 ---
@@ -88,3 +88,6 @@ serve as production or official-provider qualification.
 - 2026-10-09T13:23:56+00:00: Bound fresh provider launch records to each scheduler attempt, retained
   bounded typed live-provider failure evidence, and updated CLI provenance digest. Full asb-cli
   tests pass.
+
+- 2026-10-09T13:24:29+00:00: Recorded command exit 0; command argv SHA-256
+  32996933c19eb428ea42f17fffee8266d57e3a8e6b912abe660c00a1f22526b7.
