@@ -3,7 +3,12 @@
   "branch": "feature/ar-1766-fine-grained-human-diagnostic-contract",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1757", "AR-1760", "AR-1761", "AR-1762"],
+  "depends_on": [
+    "AR-1757",
+    "AR-1760",
+    "AR-1761",
+    "AR-1762"
+  ],
   "id": "AR-1766",
   "next_action": "After AR-1761 is done, inventory every public ASB error, failure, and warning producer and replace the free-form public diagnostic boundary with fine-grained typed context.",
   "observed_branch": "",
@@ -13,14 +18,21 @@
   "plan": "../plans/AR-1766-fine-grained-human-diagnostic-contract.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1766.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1766.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1766.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T17:21:34+00:00",
+  "updated_at": "2026-10-09T17:31:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -54,3 +66,6 @@ plans, runs/sweeps, reports, record/replay, provider/network boundaries, and
 warnings embedded in successful results. New public diagnostics may not bypass
 the catalog.
 
+
+- 2026-10-09T17:31:49+00:00: AR-1757, AR-1760, AR-1761, and AR-1762 are complete with exact-main
+  evidence; begin fine-grained human diagnostic contract.
