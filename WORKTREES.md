@@ -128,6 +128,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 381, ahead 184 |
 | `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `310fdfe30f71` | 0 | behind 381, ahead 247 |
 | `agent-systems-benchmark-install-lifecycle` | `feature/install-lifecycle` | `c7d6da71c709` | 0 | behind 381, ahead 261 |
+| `agent-systems-benchmark-integration-ar-1757` | `DETACHED` | `ea5e52bfe843` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 381, ahead 81 |
 | `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `b6d04a8305ce` | 0 | behind 381, ahead 307 |
 | `agent-systems-benchmark-llm-double-conformance-spike` | `test/llm-double-conformance-spike` | `78e6a51ce99e` | 0 | behind 381, ahead 267 |
