@@ -32,7 +32,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37950291292 | `87903c75c0e7` | pull_request | Repository quality | in_progress:- |
 | 37950291284 | `87903c75c0e7` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 37950291277 | `87903c75c0e7` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 37950291205 | `87903c75c0e7` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37950291205 | `87903c75c0e7` | pull_request | Credential-free benchmark path | completed:success |
 | 37950291199 | `87903c75c0e7` | pull_request | Portable protected-main provenance | completed:success |
 | 37950291191 | `87903c75c0e7` | pull_request | Rust verification | in_progress:- |
 | 37950135923 | `aae54cd6b918` | pull_request | Fault assurance | completed:cancelled |
