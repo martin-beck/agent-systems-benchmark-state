@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:39:00+00:00",
+  "updated_at": "2026-10-09T21:39:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -371,3 +371,6 @@ say what remains usable.
 
 - 2026-10-09T21:38:55+00:00: Recorded command exit 0; command argv SHA-256
   84f3336c381b0c0f23105c17867393651ef95de069951b258e344016c8a32a6f.
+
+- 2026-10-09T21:39:05+00:00: Recorded command exit 0; command argv SHA-256
+  08802b6411aef1a2a764309fac8ff3d6cfc68c98abfab28681dea82fecb93b28.
