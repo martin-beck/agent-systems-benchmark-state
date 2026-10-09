@@ -30,9 +30,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T17:48:12+00:00",
+  "updated_at": "2026-10-09T17:48:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -164,3 +164,6 @@ the catalog.
 
 - 2026-10-09T17:48:12+00:00: Recorded command exit 0; command argv SHA-256
   f1d63b7b4c6ae355fc6e9198d0412fdcadafa28b199a1f9fbd111079c9d8087c.
+
+- 2026-10-09T17:48:47+00:00: Recorded command exit 0; command argv SHA-256
+  f4b8afb1dcab39563f170d786fa2edc7d367aac722a5db7937cd7d4c9502efec.
