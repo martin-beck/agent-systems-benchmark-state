@@ -33,7 +33,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37958575976 | `78bc38b6e88d` | pull_request | Credential-free benchmark path | completed:success |
 | 37958575974 | `78bc38b6e88d` | pull_request | Hosted portability and native qualification | completed:success |
 | 37958575966 | `78bc38b6e88d` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37958575962 | `78bc38b6e88d` | pull_request | Portable protected-main provenance | queued:- |
+| 37958575962 | `78bc38b6e88d` | pull_request | Portable protected-main provenance | in_progress:- |
 | 37958575946 | `78bc38b6e88d` | pull_request | Repository quality | in_progress:- |
 | 37958575932 | `78bc38b6e88d` | pull_request | Fault assurance | completed:success |
 | 37957202083 | `be7ab08161bb` | pull_request | Huawei MIT source headers | completed:failure |
