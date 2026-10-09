@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Repair discovery compile failures (unused imports, sortable source enum, config bound type), then rerun focused tests.",
+  "next_action": "Repair moved configured-key ownership in discovery, then rerun focused tests.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 4,
   "observed_head": "ea5e52bfe843969c493f22146f66ccfa2415159a",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:45:10+00:00",
+  "updated_at": "2026-10-09T15:45:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -87,3 +87,7 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:45:10+00:00: Recorded command exit 101; command argv SHA-256
   5719b1305347319cb9670126dde5b8aefd936841ab34dc44dd40df59a7e9e38a.
+
+- 2026-10-09T15:45:29+00:00: Retry failure recorded: Rust E0382 because configured.insert consumed
+  the deterministic key before selected.insert. Clone the key at insertion; rerun through
+  handoffctl.
