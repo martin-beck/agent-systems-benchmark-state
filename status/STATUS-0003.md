@@ -936,7 +936,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add an idempotent ASB project initializer containing config, results, and catalog areas. |
-| Next action | Repair complete: update the generated guide command inventory for project init, rerun the workspace gate to terminal success, then review and verify PR #532 exact head. |
+| Next action | Repair complete: add project init to QUICKSTART executable command/table inventory, rerun guide and full workspace tests, then push the corrected head and obtain independent review. |
 
 ### AR-1761 — ASB external-tool installer and registry
 
