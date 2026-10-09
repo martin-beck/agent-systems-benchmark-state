@@ -8,6 +8,9 @@
   ],
   "id": "AR-1755",
   "next_action": "Promote and claim; reproduce the existing-destination failure on exact ASB main, make plain `make install` safely idempotent, add repeat-install regressions, and complete independent reviewed integration with exact-head and exact-main CI.",
+  "observed_branch": "fix/ar-1755-idempotent-make-install",
+  "observed_dirty": 0,
+  "observed_head": "64eaad2215e4f08fe8e803022acb6e9146b95d94",
   "owner": "codex-asb-ar1755-install-20261009",
   "plan": "../plans/AR-1755-idempotent-make-install.md",
   "priority": "P0",
@@ -16,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T09:33:55+00:00",
+  "updated_at": "2026-10-09T09:34:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
