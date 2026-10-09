@@ -14,18 +14,18 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | codex-asb-ar1757-human-output-20261009 | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
+| P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | codex-asb-ar1762-tool-discovery-20261009 | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Implement deterministic system/project inventory discovery after AR-1759 and AR-1760. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | Unclaimed | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Implement deterministic system/project inventory discovery after AR-1759 and AR-1760. |
 
 ### Blocked (87)
 

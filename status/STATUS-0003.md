@@ -956,11 +956,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1762-tool-discovery-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
@@ -1828,7 +1828,7 @@ flowchart LR
         AR_1759["AR-1759 - Done"]:::status_done
         AR_1760["AR-1760 - Done"]:::status_done
         AR_1761["AR-1761 - Planned"]:::status_planned
-        AR_1762["AR-1762 - Open"]:::status_open
+        AR_1762["AR-1762 - In progress"]:::status_in_progress
         AR_1763["AR-1763 - Planned"]:::status_planned
         AR_1764["AR-1764 - Planned"]:::status_planned
         AR_1765["AR-1765 - Planned"]:::status_planned
