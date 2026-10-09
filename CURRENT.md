@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1768](tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | AR-1768 merge 5377317 is verified. The original Repository quality attempt failed in one controlling-PTY test; the exact focused rerun passed locally and hosted Repository quality attempt 2 is currently active. Exact-main aarch64 guest materialization is also active. Wait for both terminal results, classify any failure, and accept/release only after every required exact-main workflow is successful. | codex-ar1768-diagnostics |
+| P0 | [AR-1768](tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | All ten exact-main workflows for signed merge 5377317 are terminal-success. Receipt quality/AR-1768-postmerge-receipt.json is committed at db9b25237 with SHA-256 8323d99c0a426b67f6566c0696cfa12171f95fce4f33aec5024c4bbe56fe3c12. Accept that evidence and release AR-1768 done, then reconcile and run doctor --live. | codex-ar1768-diagnostics |
 
 ## Open
 
