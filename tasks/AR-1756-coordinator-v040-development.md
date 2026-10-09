@@ -12,13 +12,21 @@
   "plan": "../plans/AR-1756-coordinator-v040-development-vendor.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:fbca8d10e80a319034e050ce2ff2f25ab067e335b0f26b7dc3228b2f488555df",
+    "evidence_ref": "quality/AR-1756-coordinator-v040-development-receipt.json",
+    "spec_ref": "specs/AR-1756.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1756.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact upstream Coordinator main containing the supported spec-acceptance command as an explicitly development-only vendor so merged ASB ARs can be durably accepted.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Coordinator v0.4.0 development vendor for supported acceptance",
-  "updated_at": "2026-10-09T12:25:15+00:00",
+  "updated_at": "2026-10-09T12:25:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1756-coordinator-v040"
 }
 ---
@@ -174,3 +182,7 @@ be bypassed.
 
 - 2026-10-09T12:25:15+00:00: Recorded command exit 0; command argv SHA-256
   ffd2c2087ea8d4d5936a68173743a8fba699a09882c490f525737dd2bf2fa977.
+
+- 2026-10-09T12:25:27+00:00: Accepted after PR #112 exact merge
+  3a8da1ee652ea4a56b6327d875ddad3715af1b46, exact-main CI run 37929523217 success, merged accept
+  command and live doctor verification.
