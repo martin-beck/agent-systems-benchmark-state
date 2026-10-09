@@ -10,7 +10,7 @@
   "id": "AR-1761",
   "next_action": "Repair destination symlink acceptance in tool_install, add a regression test, rerun full focused/workspace gates and push a fresh exact head; independent review remains pending.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
-  "observed_dirty": 31,
+  "observed_dirty": 0,
   "observed_head": "b95c89db086a2eff04f1ada7bf0ce9df7de067b4",
   "owner": "codex-asb-ar1761-tool-install-20261009",
   "plan": "../plans/AR-1761-tool-install-registry.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:34:09+00:00",
+  "updated_at": "2026-10-09T16:34:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
