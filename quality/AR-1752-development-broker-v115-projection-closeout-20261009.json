@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1752",
+  "reviewed_qualification_receipt": {
+    "ref": "quality/AR-1752-development-broker-v115-projection-receipt-20261009.json",
+    "sha256": "50a73f740e2316833264589ec2f3469bdbc55f4f29fc85703c6872c7792582a9",
+    "state_commit": "34a6db080"
+  },
+  "independent_review": {
+    "status": "approved",
+    "findings": [],
+    "base": "f3840f351c9da1657ad44af594cf2b6ae8b419c9",
+    "head": "c2ad947f27ea178720001c48a2b20f34f4383f5d",
+    "tree": "6897b0de3b8fa4e0e53f232b7c674d0a2538523c",
+    "receipt_sha256": "50a73f740e2316833264589ec2f3469bdbc55f4f29fc85703c6872c7792582a9"
+  },
+  "pull_request": {
+    "number": 522,
+    "base": "f3840f351c9da1657ad44af594cf2b6ae8b419c9",
+    "head": "c2ad947f27ea178720001c48a2b20f34f4383f5d",
+    "tree": "6897b0de3b8fa4e0e53f232b7c674d0a2538523c",
+    "exact_head_checks": 15,
+    "exact_head_result": "success",
+    "workflow_runs": {
+      "fault_assurance": 37883946470,
+      "repository_quality": 37883946479,
+      "credential_free_benchmark": 37883946483,
+      "hosted_portability": 37883946513,
+      "rust_verification": 37883946507,
+      "cross_repository_broker": 37883946540,
+      "emulated_aarch64": 37883946448,
+      "portable_provenance": 37883946447,
+      "source_headers": 37883946492,
+      "formal_assurance": 37883946463,
+      "awq_shadow": 37883946501
+    }
+  },
+  "merge": {
+    "commit": "e21d6bc7ed1cae3e102eceada291cb7931f6b812",
+    "parents": [
+      "f3840f351c9da1657ad44af594cf2b6ae8b419c9",
+      "c2ad947f27ea178720001c48a2b20f34f4383f5d"
+    ],
+    "tree": "6897b0de3b8fa4e0e53f232b7c674d0a2538523c",
+    "signed": true,
+    "dco": true,
+    "publication": "accepted"
+  },
+  "exact_main": {
+    "commit": "e21d6bc7ed1cae3e102eceada291cb7931f6b812",
+    "workflow_result": "success",
+    "workflow_runs": {
+      "cross_repository_broker": 37884751613,
+      "formal_assurance": 37884751589,
+      "source_headers": 37884751590,
+      "portable_provenance": 37884751636,
+      "hosted_portability": 37884751702,
+      "fault_assurance": 37884751619,
+      "credential_free_benchmark": 37884751645,
+      "repository_quality": 37884751632,
+      "rust_verification": 37884751631,
+      "emulated_aarch64": 37884751640
+    }
+  },
+  "network_boundary": {
+    "credential_free_catalog_discovery": "allowed_and_used",
+    "benchmark_or_provider_execution": "not_invoked",
+    "credential_values_persisted": false,
+    "raw_provider_payload_persisted": false
+  },
+  "result": "pass"
+}
