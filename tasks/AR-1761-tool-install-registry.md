@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Implement `asb tool install` against the frozen schema and project layout.",
+  "next_action": "Add contract tests for install/list/status/remove, fixture matrix, rollback, unsupported sources, and secret/path privacy; then run focused and full gates.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 1,
   "observed_head": "ea5e52bfe843969c493f22146f66ccfa2415159a",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:44:27+00:00",
+  "updated_at": "2026-10-09T15:44:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -69,3 +69,8 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T15:44:27+00:00: Recorded command exit 0; command argv SHA-256
   081af90c8024d255817953c561fd64d176b2fb9188b0198239fe3000831623e8.
+
+- 2026-10-09T15:44:46+00:00: Recorded bounded retry: initial handoffctl cargo check invocation
+  failed with exit 101 because wrapper cwd is the state repository and no Cargo.toml was present.
+  Repaired by invoking cargo with the product worktree manifest path; cargo check --locked
+  --workspace then passed.
