@@ -8,13 +8,13 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1768](tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | Exact signed head cd46a00 is pushed to PR #541. Focused diagnostic/human/contract/formatting gates, full locked workspace tests, and clippy pass. Fresh independent review must verify dedicated human phrases for candidate_timeout, dev_command_timeout, manifest_digest_mismatch, transfer_failed, and transfer_unavailable; exact-head hosted CI is running and merge remains prohibited until review plus every required check are green. | codex-ar1768-diagnostics |
+| P1 | [AR-1770](tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green. Repository quality 37990474230 and Rust 37990474203 passed. Retry formal/aarch64 only after Docker Hub runner rate window clears; then create receipt and release. | codex-ar1770-descriptor-safe-races |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
-| P1 | [AR-1770](tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green. Repository quality 37990474230 and Rust 37990474203 passed. Retry formal/aarch64 only after Docker Hub runner rate window clears; then create receipt and release. | - |
 
 ## Blocked
 

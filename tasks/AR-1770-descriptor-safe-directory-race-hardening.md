@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-10T00:07:29+00:00",
   "depends_on": [
     "AR-1767"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "observed_dirty": 0,
   "observed_head": "6278fcd6720f39de456a791f0c73e6327ff6e25d",
-  "owner": "",
+  "owner": "codex-ar1770-descriptor-safe-races",
   "plan": "../plans/AR-1770-descriptor-safe-directory-race-hardening.md",
   "priority": "P1",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1770.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 251,
+  "task_revision": 252,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T22:07:15+00:00",
+  "updated_at": "2026-10-09T22:07:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -842,3 +842,5 @@ implementation boundary explicitly and keep the product offline after install.
 - 2026-10-09T22:07:15+00:00: Recovered expired claim formerly owned by
   codex-ar1770-descriptor-safe-races. Replacement Terra worker recovered expired lease; preserving
   existing owner and merged exact-head evidence while awaiting hosted registry recovery.
+
+- 2026-10-09T22:07:29+00:00: Claimed by codex-ar1770-descriptor-safe-races.
