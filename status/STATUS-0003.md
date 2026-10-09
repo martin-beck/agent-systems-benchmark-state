@@ -1076,7 +1076,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. |
-| Next action | Post-merge main dc67390494805693aef21d917319253b2e705da7 has 8/10 assurance workflows terminal-success. Repository quality 37990474230 and Rust verification 37990474203 are green. Formal 37990474025 and aarch64 37990474021 have three failed attempts each, all solely Docker Hub unauthenticated pull rate-limit; continue rerun after rate window, then create receipt and release. |
+| Next action | Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green; Repository quality 37990474230 and Rust 37990474203 passed. Exact-SHA workflow_dispatch reruns aarch64 37992462857 and formal 37992484669 are infra-failed on Docker registry rate/timeout; retry after Docker rate window, then receipt and release. |
 
 
 ## Dependency graph

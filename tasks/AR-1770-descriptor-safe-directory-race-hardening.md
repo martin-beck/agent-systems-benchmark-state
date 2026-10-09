@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Post-merge main dc67390494805693aef21d917319253b2e705da7 has 8/10 assurance workflows terminal-success. Repository quality 37990474230 and Rust verification 37990474203 are green. Formal 37990474025 and aarch64 37990474021 have three failed attempts each, all solely Docker Hub unauthenticated pull rate-limit; continue rerun after rate window, then create receipt and release.",
+  "next_action": "Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green; Repository quality 37990474230 and Rust 37990474203 passed. Exact-SHA workflow_dispatch reruns aarch64 37992462857 and formal 37992484669 are infra-failed on Docker registry rate/timeout; retry after Docker rate window, then receipt and release.",
   "observed_branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "observed_dirty": 0,
   "observed_head": "6278fcd6720f39de456a791f0c73e6327ff6e25d",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 232,
+  "task_revision": 233,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T21:19:01+00:00",
+  "updated_at": "2026-10-09T21:19:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -776,3 +776,9 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T21:19:01+00:00: Recorded command exit 0; command argv SHA-256
   3957a4d49b398428e1e0375fada530c81002ebfef580a1e1d8b37784ff63aba5.
+
+- 2026-10-09T21:19:17+00:00: Verified main still points exactly to
+  dc67390494805693aef21d917319253b2e705da7. Dispatch runs headSha exactly matches merge: aarch64
+  37992462857 failed Docker Hub toomanyrequests; formal 37992484669 had Kani/Loom success but TLC
+  container auth timeout. Original and rerun IDs retained: aarch64 37990474021, formal 37990474025.
+  Receipt/accept/release remain prohibited.
