@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1753",
+  "recorded_at": "2026-10-09T07:00:02Z",
+  "result": "pass",
+  "scope": "Coordinator v0.3.59 implementation closeout",
+  "upstream_release": {
+    "release": "v0.3.59",
+    "commit": "c9c21332841b80c967b174893596df1f3326b30b",
+    "tree": "b1f3db5ff59a0696ed146ac41e5ef4949fb432da",
+    "manifest_sha256": "4bd80a60608cbe1109ebe34275e622740bf91ef8d1040de863d7e3ab37c0ae7f",
+    "vendor_file_count": 79,
+    "vendor_verification": "pass",
+    "source_blob_and_mode_comparison": "pass"
+  },
+  "qualification_receipt": {
+    "path": "quality/AR-1753-coordinator-v0359-qualification-20261009.json",
+    "sha256": "49608e1cd40722e7e0c7d0210151500c88cd2a7b17cbbc771b52aac0f59ad90c",
+    "classification": "pre-final-rebase qualification evidence"
+  },
+  "reviewed_implementation": {
+    "pull_request": 108,
+    "base": "818ac697725a19e1553fb279bf3b3e4f8edd5fe0",
+    "head": "8739668f542c1ec22ac4671d7a391e9d6d47237a",
+    "tree": "4141267e7e65c9043b104bb9212597f5c1775a46",
+    "independent_review": {
+      "review_id": 5466800494,
+      "state": "COMMENTED",
+      "verdict": "no findings",
+      "commit": "8739668f542c1ec22ac4671d7a391e9d6d47237a"
+    },
+    "signed_commits": true,
+    "dco": true,
+    "exact_head_runs": [
+      {
+        "id": 37895202331,
+        "workflow": "Agent Workflow Quality shadow",
+        "result": "success"
+      },
+      {
+        "id": 37895202406,
+        "workflow": "Coordination verification",
+        "result": "success"
+      },
+      {
+        "id": 37895202452,
+        "workflow": "handoffctl formal verification",
+        "result": "success"
+      },
+      {
+        "id": 37895202516,
+        "workflow": "Huawei MIT source headers",
+        "result": "success"
+      }
+    ]
+  },
+  "integration": {
+    "merge": "738b58dfefc52da105cbaa8920a80d66954f63cf",
+    "parents": [
+      "818ac697725a19e1553fb279bf3b3e4f8edd5fe0",
+      "8739668f542c1ec22ac4671d7a391e9d6d47237a"
+    ],
+    "tree": "4141267e7e65c9043b104bb9212597f5c1775a46",
+    "signature": "valid",
+    "signer": "martin.beck2@gmx.de",
+    "dco": true,
+    "exact_merge_runs": [
+      {
+        "id": 37895983647,
+        "workflow": "Huawei MIT source headers",
+        "attempt": 1,
+        "result": "success"
+      },
+      {
+        "id": 37895983701,
+        "workflow": "handoffctl formal verification",
+        "attempt": 1,
+        "result": "success"
+      },
+      {
+        "id": 37895983757,
+        "workflow": "Coordination verification",
+        "attempt": 2,
+        "result": "success"
+      }
+    ]
+  },
+  "wrapper_descendant": {
+    "commit": "6f4ca06ea4a74e8801bf3cc2cd51c1c056ef523f",
+    "parent": "738b58dfefc52da105cbaa8920a80d66954f63cf",
+    "coordination_run": 37895990627,
+    "coordination_result": "success"
+  },
+  "local_qualification": {
+    "unit_tests": 1415,
+    "unit_test_result": "pass",
+    "branch_coverage_floor_percent": 95,
+    "branch_coverage_result": "pass",
+    "vendor_verification": "pass",
+    "schema_and_generated_views": "pass",
+    "source_headers": "pass",
+    "ruff_format_and_lint": "pass",
+    "mypy_strict": "pass",
+    "privacy": "pass",
+    "doctor_live": "pass"
+  },
+  "workflow_concurrency_repair": {
+    "observed_failure": {
+      "run": 37895983757,
+      "attempt": 1,
+      "result": "cancelled",
+      "cause": "a later protected-main push shared an unconditional cancelling concurrency group"
+    },
+    "required_semantics": "protected-main push runs queue; pull-request runs may cancel",
+    "repaired_workflows": [
+      ".github/workflows/verify.yml",
+      ".github/workflows/handoffctl-formal.yml",
+      ".github/workflows/source-headers.yml"
+    ],
+    "awq_shadow_changed": false,
+    "regression_test": "tests/test_workflow_triggers.py"
+  },
+  "privacy": {
+    "credentials_persisted": false,
+    "host_absolute_paths_persisted": false,
+    "raw_logs_persisted": false
+  },
+  "notes": [
+    "The exact-merge Coordination run was rerun at the same immutable merge SHA after attempt 1 was cancelled; attempt 2 passed.",
+    "The wrapper descendant changes only durable AR lifecycle evidence and its exact Coordination run passed.",
+    "This receipt binds the reviewed v0.3.59 implementation and does not claim to bind its own later closeout integration."
+  ]
+}
