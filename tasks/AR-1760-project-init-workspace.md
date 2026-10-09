@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:15:46+00:00",
+  "updated_at": "2026-10-09T15:15:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -161,3 +161,6 @@ commands for a fresh user and support `--json` without leaking host secrets.
   the changed crates/asb-cli/src/lib.rs and docs/examples/guide-contract.json no longer matched
   docs/examples/asb-cli-workflow-v1.provenance.json. The normalized transcript and replay fixture
   remain unchanged; update only the two corresponding SHA-256 fields, then rerun.
+
+- 2026-10-09T15:15:52+00:00: Recorded command exit 0; command argv SHA-256
+  9be03b9748606aa70b593050ef3b423f8c643a53653436862d674448ef6f2f2b.
