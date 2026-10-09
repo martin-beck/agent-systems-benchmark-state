@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T01:20:06+00:00",
+  "updated_at": "2026-10-09T01:21:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -291,3 +291,6 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
   hostile unsupported driver can leave a descendant retaining stdout and the linker-prefix
   descriptor after the leader exits, causing an unbounded reader join and delayed CLOEXEC
   restoration. Repair is active within AR-1751; no merge authorized.
+
+- 2026-10-09T01:21:11+00:00: Recorded command exit 1; command argv SHA-256
+  4fe5e6df52eee69f9abda47b6896be6dcde0d41f363cfac5b974b99168d876d4.
