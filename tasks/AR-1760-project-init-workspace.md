@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:11:54+00:00",
+  "updated_at": "2026-10-09T15:12:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -103,3 +103,6 @@ commands for a fresh user and support `--json` without leaking host secrets.
 - 2026-10-09T15:11:54+00:00: The subsequent full-workspace run exposed one additional exit-101:
   guide_inventory_matches_doctor_and_stale_claims_fail_closed expected the old doctor command list.
   Repaired docs/examples/guide-contract.json to include project init; rerunning the full gate now.
+
+- 2026-10-09T15:12:02+00:00: Recorded command exit 0; command argv SHA-256
+  6f25c271a70927d75fec926d61ffa949ce0ab9d62261aa338a7702469464fc50.
