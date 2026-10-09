@@ -9,8 +9,8 @@
   "id": "AR-1755",
   "next_action": "Obtain independent defect-focused approval of exact head 909dae145e46c4e67de4d744f389a6011bc28330/tree 3c1be3e898aca2549f4bbcdb7bc48391d5ffa253, wait for every hosted exact-head check on PR #526, then use the documented signed exact-tree integration path and verify exact-main CI.",
   "observed_branch": "fix/ar-1755-idempotent-make-install",
-  "observed_dirty": 1,
-  "observed_head": "909dae145e46c4e67de4d744f389a6011bc28330",
+  "observed_dirty": 0,
+  "observed_head": "6ac109533612f827320f87bbf65f98694cee4e8d",
   "owner": "codex-asb-ar1755-install-20261009",
   "plan": "../plans/AR-1755-idempotent-make-install.md",
   "priority": "P0",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T09:56:10+00:00",
+  "updated_at": "2026-10-09T09:56:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---

@@ -393,8 +393,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1750-ruleset-response-normalization` | `repair/ar-1750-ruleset-response-normalization` | `cb8be7e4ea88` | 0 | behind 21, ahead 0 |
 | `agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement` | `integration/ar-1751-gcc-linker-prefix` | `31ca7a481fca` | 0 | behind 20, ahead 0 |
 | `agent-systems-benchmark-ar-1752` | `repair/ar-1752-development-broker-v115-projection` | `c2ad947f27ea` | 0 | behind 9, ahead 0 |
-| `agent-systems-benchmark-ar-1755-idempotent-make-install` | `fix/ar-1755-idempotent-make-install` | `909dae145e46` | 1 | behind 0, ahead 2 |
-| changed files | - | - | - | `tests/makefile.sh` |
+| `agent-systems-benchmark-ar-1755-idempotent-make-install` | `fix/ar-1755-idempotent-make-install` | `6ac109533612` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 356, ahead 192 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 356, ahead 830 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 356, ahead 89 |
@@ -757,7 +756,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `ar1722-receipt-worker.ObeqHt` | `DETACHED` | `ac6557038cc3` | 0 | behind 98, ahead 0 |
 | `asb-ar1652-review-20261007` | `DETACHED` | `0c4ba0c721d0` | 0 | behind 82, ahead 1 |
 | `asb-ar1698-product-1791367157` | `DETACHED` | `d207cc4eded6` | 0 | behind 105, ahead 0 |
-| `asb-ar1698-qual.fE5S7P` | `DETACHED` | `d207cc4eded6` | 0 | behind 105, ahead 0 |
 | `asb-ar1743-integration` | `DETACHED` | `507559f636e0` | 0 | behind 45, ahead 0 |
 | `asb-ar1743-postmerge` | `DETACHED` | `fd956d857970` | 0 | behind 43, ahead 0 |
 | `asb-ar1744-main-repro` | `DETACHED` | `1ab175c30eb0` | 0 | behind 39, ahead 0 |
