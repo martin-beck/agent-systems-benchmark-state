@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37932863549 | `b3cb9b256ccc` | push | Hosted portability and native qualification | in_progress:- |
 | 37932863531 | `b3cb9b256ccc` | push | Cross-repository development broker qualification | in_progress:- |
 | 37932863528 | `b3cb9b256ccc` | push | Emulated aarch64 portability | in_progress:- |
-| 37932863526 | `b3cb9b256ccc` | push | Repository quality | in_progress:- |
+| 37932863526 | `b3cb9b256ccc` | push | Repository quality | completed:failure |
 | 37932863521 | `b3cb9b256ccc` | push | Credential-free benchmark path | in_progress:- |
 | 37932863434 | `b3cb9b256ccc` | push | Fault assurance | in_progress:- |
 | 37931576333 | `6386e066b37a` | pull_request | Hosted portability and native qualification | completed:success |
