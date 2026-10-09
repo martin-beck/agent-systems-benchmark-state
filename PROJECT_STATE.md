@@ -19,17 +19,17 @@ Generated from local Git and GitHub. Do not edit.
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@e178bef5f529` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.21 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #520 | `feature/ar-1728-cli2key-contract@0a39c0821ee5` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): freeze cli2key development contract |
-| #521 | `repair/ar-1735-goose-fixture-determinism@3aea09da2646` | `main` | BLOCKED | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | test(agents): harden Goose diagnostic fixture determinism |
+| #521 | `repair/ar-1735-goose-fixture-determinism@3aea09da2646` | `main` | BLOCKED | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | test(agents): harden Goose diagnostic fixture determinism |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37879428789 | `3aea09da2646` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37879428789 | `3aea09da2646` | pull_request | Credential-free benchmark path | completed:success |
 | 37879428697 | `3aea09da2646` | pull_request | Repository quality | in_progress:- |
 | 37879428681 | `3aea09da2646` | pull_request | Formal assurance | in_progress:- |
 | 37879428640 | `3aea09da2646` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37879428639 | `3aea09da2646` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37879428639 | `3aea09da2646` | pull_request | Hosted portability and native qualification | completed:success |
 | 37879428635 | `3aea09da2646` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 37879428622 | `3aea09da2646` | pull_request | Rust verification | queued:- |
 | 37879428619 | `3aea09da2646` | pull_request | Huawei MIT source headers | completed:success |
