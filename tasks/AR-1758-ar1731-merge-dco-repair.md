@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Repair AR-1731 protected-main merge provenance",
-  "updated_at": "2026-10-09T13:01:34+00:00",
+  "updated_at": "2026-10-09T13:03:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1758-merge-dco"
 }
 ---
@@ -52,3 +52,6 @@ until the repaired exact-main workflows are green.
 
 - 2026-10-09T13:01:34+00:00: Dedicated repair worktree is active; monitored hosted checks and
   preserved no-history-rewrite path.
+
+- 2026-10-09T13:03:33+00:00: Recorded command exit 0; command argv SHA-256
+  abc053ba9c5734d29e149416fd9788df608e3852050b4b24c9ce124afb14d6f8.
