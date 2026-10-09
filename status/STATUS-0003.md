@@ -1048,7 +1048,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
-| Next action | PR #541 exact signed head cd46a00c276be3111fe2d7140d4d4ffa1a10dbf7 is unchanged. Focused diagnostic/human/contract/formatting gates, full locked workspace tests, clippy, rustdoc, and release build passed; fresh independent technical review is clean. Thirteen of fifteen exact-head required hosted checks are green. Emulated aarch64 and repository quality are actively running; merge remains prohibited until both terminal success. |
+| Next action | PR #541 was integrated as signed merge 5377317b7fbf04172e70a0ea000f305e5e07e23a: remote main, merge parents, reviewed tree, signature, and DCO are verified. Post-merge exact-main workflows started for that immutable merge. Wait for every required workflow to succeed, then record the receipt, accept and release the AR, reconcile, and run doctor --live. |
 
 ### AR-1769 — Human diagnostic completeness CI gate
 

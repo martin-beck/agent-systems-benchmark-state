@@ -8,7 +8,7 @@
     "AR-1767"
   ],
   "id": "AR-1768",
-  "next_action": "PR #541 exact signed head cd46a00c276be3111fe2d7140d4d4ffa1a10dbf7 is unchanged. Focused diagnostic/human/contract/formatting gates, full locked workspace tests, clippy, rustdoc, and release build passed; fresh independent technical review is clean. Thirteen of fifteen exact-head required hosted checks are green. Emulated aarch64 and repository quality are actively running; merge remains prohibited until both terminal success.",
+  "next_action": "PR #541 was integrated as signed merge 5377317b7fbf04172e70a0ea000f305e5e07e23a: remote main, merge parents, reviewed tree, signature, and DCO are verified. Post-merge exact-main workflows started for that immutable merge. Wait for every required workflow to succeed, then record the receipt, accept and release the AR, reconcile, and run doctor --live.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "observed_dirty": 0,
   "observed_head": "cd46a00c276be3111fe2d7140d4d4ffa1a10dbf7",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 217,
+  "task_revision": 218,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T22:11:04+00:00",
+  "updated_at": "2026-10-09T22:11:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -635,3 +635,6 @@ say what remains usable.
 
 - 2026-10-09T22:11:04+00:00: Recorded command exit 0; command argv SHA-256
   6b5bceed41fba337d5ec826e4c734e7663075edd3201ded87541a028668b98cd.
+
+- 2026-10-09T22:11:42+00:00: Verified signed two-parent merge 5377317 with reviewed tree 4cbf0f9f;
+  all exact-main post-merge workflows were dispatched and are now being monitored.
