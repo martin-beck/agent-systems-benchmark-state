@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1769-human-diagnostic-completeness-ci",
-  "checkpoint_commit": "761d4c6d3c626024ae5afb4b8a2a20368b83d583",
+  "checkpoint_commit": "8eb64d1b01b0a336d4e65e2a7bb3cef943863203",
   "claim_expires": "2026-10-10T00:12:16+00:00",
   "depends_on": [
     "AR-1768"
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 266,
+  "task_revision": 267,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T23:44:45+00:00",
+  "updated_at": "2026-10-09T23:44:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -713,3 +713,5 @@ timeouts/cancellation, partial results, and warning-only development behavior.
   tests, rustdoc -D warnings, release build, and workflow transcript provenance. Multiline aliases
   and post-close qualified-path trivia remain covered by focused contract controls. Fresh
   independent review is required before publication.
+
+- 2026-10-09T23:44:49+00:00: Checkpointed source commit 8eb64d1b01b0a336d4e65e2a7bb3cef943863203.
