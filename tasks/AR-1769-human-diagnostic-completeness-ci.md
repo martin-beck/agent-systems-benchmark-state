@@ -9,8 +9,8 @@
   "id": "AR-1769",
   "next_action": "Add a required CI gate and executable negative journey proving every current and future public diagnostic is cataloged, specifically rendered, actionable, and privacy-safe.",
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
-  "observed_dirty": 1,
-  "observed_head": "257187d873f2b9620de437838283d2aea7a23881",
+  "observed_dirty": 0,
+  "observed_head": "f228b885d0e65508efde3c8fce4995b89dec7927",
   "owner": "codex-ar1769-matrix-repair-terra",
   "plan": "../plans/AR-1769-human-diagnostic-completeness-ci.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T22:54:49+00:00",
+  "updated_at": "2026-10-09T22:54:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
