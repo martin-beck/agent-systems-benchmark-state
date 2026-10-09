@@ -886,11 +886,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1757-human-output-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. |
@@ -1725,7 +1725,7 @@ flowchart LR
         AR_1754["AR-1754 - Planned"]:::status_planned
         AR_1755["AR-1755 - Done"]:::status_done
         AR_1756["AR-1756 - Done"]:::status_done
-        AR_1757["AR-1757 - Open"]:::status_open
+        AR_1757["AR-1757 - In progress"]:::status_in_progress
         AR_1758["AR-1758 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002

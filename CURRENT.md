@@ -7,6 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1757](tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. | codex-asb-ar1757-human-output-20261009 |
 | P0 | [AR-1758](tasks/AR-1758-ar1731-merge-dco-repair.md): Repair AR-1731 protected-main merge provenance | Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates. | Promote and claim; preserve the failed merge evidence, use the documented repair path, and publish only through a reviewed PR with signed+DCO exact-main verification. | codex-asb-ar1758-merge-dco-repair-20261009 |
 | P1 | [AR-1731](tasks/AR-1731-cli2key-codex-adapter.md): Connect Codex adapter to cli2key backend | Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter. | AR-1758 is repairing failed post-merge provenance for b3cb9b2; remain in progress and unaccepted until supported repair PR and exact-main checks are green. | codex-asb-ar1731-codex-adapter-20261009 |
 
@@ -15,7 +16,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
-| P0 | [AR-1757](tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. | - |
 
 ## Blocked
 
