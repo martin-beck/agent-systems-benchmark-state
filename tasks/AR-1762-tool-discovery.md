@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:06:01+00:00",
+  "updated_at": "2026-10-09T16:06:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -321,3 +321,6 @@ development authentication/signatures/keys are absent.
   batch omitted --manifest-path, so handoffctl correctly ran from the state repository and each
   Cargo command failed with 'could not find Cargo.toml'. No product gate was exercised or changed.
   Repair is to rerun every gate with the explicit product worktree manifest path.
+
+- 2026-10-09T16:06:10+00:00: Recorded command exit 0; command argv SHA-256
+  6b4a8c307d149511581eb53d906304635de4a464e7beb00d2ef7ce7251253c38.
