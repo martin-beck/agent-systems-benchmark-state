@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-10T00:24:29+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1766",
     "AR-1767"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "observed_dirty": 0,
   "observed_head": "cd46a00c276be3111fe2d7140d4d4ffa1a10dbf7",
-  "owner": "codex-ar1768-diagnostics",
+  "owner": "",
   "plan": "../plans/AR-1768-exhaustive-actionable-human-diagnostics.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1768.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 231,
+  "task_revision": 232,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T22:28:41+00:00",
+  "updated_at": "2026-10-09T22:28:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -680,3 +680,8 @@ say what remains usable.
 - 2026-10-09T22:28:41+00:00: PR #541 reviewed candidate cd46a00 integrated as signed merge 5377317
   with reviewed tree 4cbf0f9f; all ten immutable exact-main workflows succeeded, including the
   successful retry after the isolated PTY test failure.
+
+- 2026-10-09T22:28:51+00:00: Released done: signed merge 5377317 preserves reviewed head
+  cd46a00/tree 4cbf0f9f; receipt quality/AR-1768-postmerge-receipt.json
+  (sha256:8323d99c0a426b67f6566c0696cfa12171f95fce4f33aec5024c4bbe56fe3c12) records all ten
+  exact-main workflow successes.

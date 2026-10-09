@@ -67,12 +67,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | codex-ar1768-diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | All ten exact-main workflows for signed merge 5377317 are terminal-success. Receipt quality/AR-1768-postmerge-receipt.json is committed at db9b25237 with SHA-256 8323d99c0a426b67f6566c0696cfa12171f95fce4f33aec5024c4bbe56fe3c12. Accept that evidence and release AR-1768 done, then reconcile and run doctor --live. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -287,7 +281,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (543)
+### Done (544)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -533,3 +527,5 @@
 | P0 | [AR-1573](../tasks/AR-1573.md): ASB development control producer bridge | Unclaimed | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. | Await all hosted gates and independent review of b4813cf; merge only identical green head, then release AR-1573 and promote AR-1574. |
 | P0 | [AR-1574](../tasks/AR-1574.md): ASB development control transport wiring | Unclaimed | Wire the ASB development launch transport to the producer control bridge. | Await AR-1578 workspace coverage recovery and hosted rerun; merge only identical green e2986e6 or later head, then release AR-1574. |
 | P0 | [AR-1576](../tasks/AR-1576.md): ASB development bootstrap projection | Unclaimed | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |
+| P0 | [AR-1577](../tasks/AR-1577.md): ASB interactive development supervision | Unclaimed | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. | Await hosted checks and independent review of PR #408 exact head e6f3d901dffba31845273fafd436f613d1485793; merge/release only identical green head. |
+| P0 | [AR-1578](../tasks/AR-1578.md): ASB workspace coverage recovery | Unclaimed | Recover the existing workspace coverage gate that currently blocks otherwise correct ASB transport changes. | Run exact workspace coverage gate on PR #407 using /srv/data target; continue only with concrete stable tests needed for 90&#37;, then merge/release or report measured blocker. |
