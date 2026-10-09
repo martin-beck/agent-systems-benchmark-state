@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 191,
+  "task_revision": 192,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:29:50+00:00",
+  "updated_at": "2026-10-09T16:29:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -556,3 +556,6 @@ development authentication/signatures/keys are absent.
   #536 from exact origin/main f361cfc with signed+DCO non-merge topic commits, head
   26161a0f2e09e7f9b2e8af5ef7c9389ad1d2d7f0 (exact head will be refreshed from gh); all local
   tests/fmt/clippy/rustdoc/release/source-header gates green.
+
+- 2026-10-09T16:29:57+00:00: Recorded command exit 0; command argv SHA-256
+  c0c4fc971a71da94a06b408b048e36e88d8a6e3d9a79b1409b528a850e06dc93.
