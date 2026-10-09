@@ -32,7 +32,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37957201933 | `be7ab08161bb` | pull_request | Repository quality | completed:failure |
 | 37957201924 | `be7ab08161bb` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37957201920 | `be7ab08161bb` | pull_request | Credential-free benchmark path | completed:failure |
-| 37957201912 | `be7ab08161bb` | pull_request | Rust verification | in_progress:- |
+| 37957201912 | `be7ab08161bb` | pull_request | Rust verification | completed:failure |
 | 37957201910 | `be7ab08161bb` | pull_request | Formal assurance | completed:success |
 | 37957201868 | `be7ab08161bb` | pull_request | Cross-repository development broker qualification | completed:success |
 | 37957201857 | `be7ab08161bb` | pull_request | Portable protected-main provenance | completed:success |
