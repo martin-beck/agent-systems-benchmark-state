@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:18:54+00:00",
+  "updated_at": "2026-10-09T16:19:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -255,3 +255,6 @@ for idempotence; never store API keys or tokens.
   tests, rustdoc, release build all pass; check_coverage.py passes unchanged 90% workspace line
   floor (workspace 90.39% lines; critical packages all above 95%). New signed+DCO head is 644085e
   after provenance refresh. Generated profraw files were removed from the checkout.
+
+- 2026-10-09T16:19:00+00:00: Recorded command exit 0; command argv SHA-256
+  a301b4dd020ecbd9133885963264b8daa5f92c08e4a01bd45bdb67d93ba062bd.
