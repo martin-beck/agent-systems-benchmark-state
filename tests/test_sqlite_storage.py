@@ -894,14 +894,6 @@ class SQLiteStorageTest(unittest.TestCase):
             {
                 "spec_ref": "spec.json",
                 "spec_revision": 1,
-                "spec_acceptance": {
-                    "spec_ref": "spec.json",
-                    "spec_revision": 1,
-                    "status": "pass",
-                    "evidence_class": "contract-test",
-                    "evidence_ref": "awq/evidence/AR-0001",
-                    "evidence_digest": "sha256:" + "c" * 64,
-                },
             }
         )
         self.create([(task_path, task_meta, task_body)])
@@ -941,14 +933,34 @@ class SQLiteStorageTest(unittest.TestCase):
                 ),
                 "update",
             )
+            with self.assertRaisesRegex(RuntimeError, "spec_acceptance is incomplete"):
+                CORE.mutate(
+                    argparse.Namespace(task="AR-0001", owner="worker", status="done", note="done"),
+                    "release",
+                )
+            accept = argparse.Namespace(
+                task="AR-0001",
+                owner="worker",
+                expected_revision=3,
+                evidence_class="contract-test",
+                evidence_ref="awq/evidence/AR-0001",
+                evidence_digest="sha256:" + "c" * 64,
+                note="accepted",
+            )
+            with self.assertRaisesRegex(RuntimeError, "stale revision"):
+                CORE.mutate(
+                    argparse.Namespace(**{**vars(accept), "expected_revision": 2}), "accept"
+                )
+            CORE.mutate(accept, "accept")
             CORE.mutate(
                 argparse.Namespace(task="AR-0001", owner="worker", status="done", note="done"),
                 "release",
             )
         final = CORE.all_tasks()[0][1]
         self.assertEqual(
-            ("done", 4, "P0"), (final["status"], final["task_revision"], final["priority"])
+            ("done", 5, "P0"), (final["status"], final["task_revision"], final["priority"])
         )
+        self.assertEqual("pass", final["spec_acceptance"]["status"])
         self.assertIn("updated", (self.tasks / "AR-0001-test.md").read_text())
 
     def test_sqlite_release_blocked_unblock_and_claim_is_session_free(self) -> None:
