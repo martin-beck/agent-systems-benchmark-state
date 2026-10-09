@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1751-gcc-linker-prefix-confinement",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T02:58:54+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1737"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "integration/ar-1751-gcc-linker-prefix",
   "observed_dirty": 0,
   "observed_head": "31ca7a481fca8b79bfbff126b92db6c6118beb7c",
-  "owner": "codex-asb-ar1751-linker-confinement-20261009",
+  "owner": "",
   "plan": "../plans/AR-1751-gcc-linker-prefix-confinement.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1751.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T02:29:02+00:00",
+  "updated_at": "2026-10-09T02:29:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -492,3 +492,12 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
 
 - 2026-10-09T02:29:02+00:00: Recorded command exit 0; command argv SHA-256
   95381eba3e0e3f1731e51e461a21d4ef96b64fedff79a2dbf1e939454b12a158.
+
+- 2026-10-09T02:29:43+00:00: AR-1751 complete. PR #518 final candidate
+  2cda48c27ae99381a59dc0676126b34ec77d15ef/tree 5b75e55c7d4ee1e58df42b1e9989a96ab8994995 received
+  independent final approval after additive P1 repair chain d0ab2af -> abf4b65 -> 2cda48c. All 15
+  exact-candidate checks passed. Signed+DCO reviewed-tree merge
+  69bf9029a4976f14739cf4c25949428ff2fe0bb7 preserved tree 5b75e55c. All 10 exact-main workflows
+  passed. Privacy-safe acceptance receipt quality/AR-1751-gcc-linker-prefix-confinement-receipt.txt
+  is bound by sha256:9a9d8c1d7916f4bdea7bf93cf8710a818a04528244640814b9dd4a6cc9dc6eeb; no further
+  action.

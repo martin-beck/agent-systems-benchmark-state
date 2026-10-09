@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Fresh independent reviewer: approve or reject asb-tui PR #296 exact synchronized head bb8f503be6cf5cf2543eac782ba31875768e5636/tree d3a26f0da147af628ff2657dcfbd76af80d75834 against exact current main f1076cd8d75c6d2dc58e42e1ecfaaec668e5fc8d after terminal Repository Quality run 37861623781 and AWQ shadow run 37861624025; merge only this exact tree after approval, then require exact-main post-merge CI and attach acceptance. | codex-asb-ar1721-qualification-20261009 |
-| P0 | [AR-1751](tasks/AR-1751-gcc-linker-prefix-confinement.md): Confine GCC linker-prefix trust after AR-1737 | Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries. | Independent rereview of PR #518 at immutable head 2cda48c27ae99381a59dc0676126b34ec77d15ef and tree 5b75e55c7d4ee1e58df42b1e9989a96ab8994995, focusing on bounded continuous-output drain, process-group cleanup/reap, and CLOEXEC restoration. If approved, a different owner may merge and close AR-1751; this owner must not self-review or merge. | codex-asb-ar1751-linker-confinement-20261009 |
 
 ## Open
 
