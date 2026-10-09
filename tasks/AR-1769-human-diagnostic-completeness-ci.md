@@ -3,7 +3,9 @@
   "branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1768"],
+  "depends_on": [
+    "AR-1768"
+  ],
   "id": "AR-1769",
   "next_action": "Add a required CI gate and executable negative journey proving every current and future public diagnostic is cataloged, specifically rendered, actionable, and privacy-safe.",
   "observed_branch": "",
@@ -13,14 +15,21 @@
   "plan": "../plans/AR-1769-human-diagnostic-completeness-ci.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "hosted", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1769.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1769.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1769.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T17:21:34+00:00",
+  "updated_at": "2026-10-09T22:31:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -43,3 +52,6 @@ catalog paths, plan/run/sweep/report, recording/replay, provider/network failure
 ASB-routed TUI lifecycle diagnostics, directory creation, permissions/topology,
 timeouts/cancellation, partial results, and warning-only development behavior.
 
+
+- 2026-10-09T22:31:14+00:00: AR-1768 is done and exact-main post-merge evidence is terminal green;
+  dependency and declared worktree path verified.
