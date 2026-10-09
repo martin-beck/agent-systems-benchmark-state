@@ -10,7 +10,7 @@
   "id": "AR-1757",
   "next_action": "Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas.",
   "observed_branch": "feature/ar-1757-human-first-cli-output",
-  "observed_dirty": 0,
+  "observed_dirty": 5,
   "observed_head": "4ba51e3f321bd3f9677fd3d85a2122738d434f2b",
   "owner": "codex-asb-ar1757-human-output-20261009",
   "plan": "../plans/AR-1757-human-first-cli-output.md",
@@ -20,9 +20,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output.",
-  "task_revision": 420,
+  "task_revision": 421,
   "title": "Human-first ASB command output",
-  "updated_at": "2026-10-09T15:38:29+00:00",
+  "updated_at": "2026-10-09T15:38:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1757-human-first-cli-output"
 }
 ---
