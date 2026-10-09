@@ -1,0 +1,25 @@
+{
+  "ar": "AR-1756",
+  "classification": "development",
+  "upstream": {
+    "repository": "martin-beck/agent-workflow-coordinator",
+    "commit": "c2692d08382e0a16e9d0dd4f8c08dba36a29b713",
+    "tree": "b27cf0ee85619904bcb1836231d36dfb967d89da",
+    "version": "0.4.0",
+    "tag": null
+  },
+  "vendor_manifest_sha256": "34a2914e7dd1fdded27eb5346772b32ea6c2e4ac0761d20b1c90811e18d1c597",
+  "state_pull_request": 112,
+  "state_pull_request_head": "1832f8de150dcfa9a42e5a719cce52c1de273ff4",
+  "state_merge_commit": "3a8da1ee652ea4a56b6327d875ddad3715af1b46",
+  "exact_main_ci": {
+    "run": 37929523217,
+    "conclusion": "success"
+  },
+  "verification": [
+    "vendor.py sync-development and handoffctl_vendor.py verify passed",
+    "required hosted PR checks passed",
+    "handoffctl accept --help is available on merged main",
+    "handoffctl doctor --live passed"
+  ]
+}
