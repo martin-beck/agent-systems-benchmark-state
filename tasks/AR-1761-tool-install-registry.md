@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:34:22+00:00",
+  "updated_at": "2026-10-09T16:34:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -376,3 +376,6 @@ for idempotence; never store API keys or tokens.
   tests pass. Full format/clippy/workspace tests/rustdoc/release build pass. Coverage passes
   unchanged floors: workspace 90.54% lines, asb-core 99.61%, asb-protocol 96.49%, asb-replay 95.88%.
   Removed generated profraw files.
+
+- 2026-10-09T16:34:32+00:00: Recorded command exit 0; command argv SHA-256
+  a301b4dd020ecbd9133885963264b8daa5f92c08e4a01bd45bdb67d93ba062bd.
