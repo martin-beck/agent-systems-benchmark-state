@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T14:37:08+00:00",
+  "updated_at": "2026-10-09T14:37:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
@@ -56,3 +56,6 @@ unknown-field/path validation.
 
 - 2026-10-09T14:37:08+00:00: Recorded command exit 0; command argv SHA-256
   31a05f46a65b4172cfcc5ef4e1ed2b4ddd54c042ac56eff6dc51f4205a4051b1.
+
+- 2026-10-09T14:37:21+00:00: Recorded command exit 0; command argv SHA-256
+  81d627797efc6b08acda359548826bb5f1563136a4a8aed103c98d28146a9563.
