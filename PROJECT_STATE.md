@@ -27,7 +27,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37994819936 | `20a2d7b857da` | pull_request | Portable protected-main provenance | completed:success |
-| 37994819354 | `20a2d7b857da` | pull_request | Repository quality | in_progress:- |
+| 37994819354 | `20a2d7b857da` | pull_request | Repository quality | completed:failure |
 | 37994819233 | `20a2d7b857da` | pull_request | Credential-free benchmark path | completed:failure |
 | 37994819207 | `20a2d7b857da` | pull_request | Rust verification | in_progress:- |
 | 37994819182 | `20a2d7b857da` | pull_request | Emulated aarch64 portability | completed:failure |
