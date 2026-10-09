@@ -32,7 +32,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37965524145 | `ae22d66b8606` | push | Fault assurance | in_progress:- |
 | 37965524100 | `ae22d66b8606` | push | Cross-repository development broker qualification | in_progress:- |
 | 37965524096 | `ae22d66b8606` | push | Repository quality | in_progress:- |
-| 37965523973 | `ae22d66b8606` | push | Portable protected-main provenance | in_progress:- |
+| 37965523973 | `ae22d66b8606` | push | Portable protected-main provenance | completed:success |
 | 37965523952 | `ae22d66b8606` | push | Hosted portability and native qualification | in_progress:- |
 | 37965523882 | `ae22d66b8606` | push | Rust verification | in_progress:- |
 | 37964297843 | `fe6aa7c346e5` | pull_request | Portable protected-main provenance | completed:success |
