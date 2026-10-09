@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Qualify and document cli2key development mode",
-  "updated_at": "2026-10-09T13:59:45+00:00",
+  "updated_at": "2026-10-09T14:00:13+00:00",
   "worktree_key": ""
 }
 ---
@@ -59,3 +59,6 @@ or official OpenAI Platform API-key claim.
 - 2026-10-09T13:59:45+00:00: Added one-lifetime bounded fake journey, typed fault/privacy matrix,
   cleanup/reset checks, CI workflow step, and user-facing cli2key
   setup/status/reset/cost/methodology guidance.
+
+- 2026-10-09T14:00:13+00:00: Recorded command exit 0; command argv SHA-256
+  0af787791bbfbaf33beadf62599df47465b661ad54c1845d159c1d270a82ba73.
