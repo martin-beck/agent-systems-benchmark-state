@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:16:33+00:00",
+  "updated_at": "2026-10-09T21:16:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -84,3 +84,6 @@ say what remains usable.
   subject/state/recovery facts, reviewed next-action mapping, explicit TUI failure text, and warning
   semantics; focused tests added; baseline exposed unrelated parallel-test state-root ownership
   race.
+
+- 2026-10-09T21:16:43+00:00: Recorded command exit 101; command argv SHA-256
+  6b8224777d0c3ebf662a6ce6f68fab05e6a2967c4c63727d959a1b8723d3bbb0.
