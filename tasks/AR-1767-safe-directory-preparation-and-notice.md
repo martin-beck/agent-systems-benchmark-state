@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:49:13+00:00",
+  "updated_at": "2026-10-09T18:49:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -262,3 +262,6 @@ when useful; repeated commands must not claim an existing directory was new.
   876e6f98d6a9e8b419cbcf83cb34d8a8903f47cd.
 
 - 2026-10-09T18:49:13+00:00: Heartbeat by codex-ar1767-directory-preparation.
+
+- 2026-10-09T18:49:19+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
