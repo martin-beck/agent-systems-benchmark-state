@@ -1048,7 +1048,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
-| Next action | Exact signed head cd46a00 is pushed to PR #541. Focused diagnostic/human/contract/formatting gates, full locked workspace tests, and clippy pass. Fresh independent review must verify dedicated human phrases for candidate_timeout, dev_command_timeout, manifest_digest_mismatch, transfer_failed, and transfer_unavailable; exact-head hosted CI is running and merge remains prohibited until review plus every required check are green. |
+| Next action | PR #541 exact signed head cd46a00c276be3111fe2d7140d4d4ffa1a10dbf7 is unchanged. Focused diagnostic/human/contract/formatting gates, full locked workspace tests, clippy, rustdoc, and release build passed; fresh independent technical review is clean. Thirteen of fifteen exact-head required hosted checks are green. Emulated aarch64 and repository quality are actively running; merge remains prohibited until both terminal success. |
 
 ### AR-1769 — Human diagnostic completeness CI gate
 
