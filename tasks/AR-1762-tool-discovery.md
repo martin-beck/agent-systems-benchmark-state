@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Obtain independent review of PR #536 exact head; monitor all required checks to terminal green, then merge via established integration path and post-merge verify.",
+  "next_action": "Repair probe lifecycle/read path so descendant-held pipes cannot block and the entire probe is bounded (for example process-group/FD-safe supervision), add a regression fixture, rerun full gates and hosted checks; independent review remains pending.",
   "observed_branch": "feature/ar-1762-tool-discovery-v2",
   "observed_dirty": 0,
   "observed_head": "26161a060868782472e25bdfcfca8e66c939f119",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 198,
+  "task_revision": 199,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:31:37+00:00",
+  "updated_at": "2026-10-09T16:31:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -580,3 +580,12 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:31:37+00:00: Recorded command exit 0; command argv SHA-256
   b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b.
+
+- 2026-10-09T16:31:51+00:00: Independent review of replacement PR #536 exact head
+  26161a060868782472e25bdfcfca8e66c939f119: complete diff/contracts/docs reviewed; local cargo fmt,
+  discovery tests (7/7), read-only CLI test (1/1), clippy -D warnings, and diff check pass. Blocking
+  boundedness finding: probe_version kills only the direct process on timeout, then read_to_end on
+  the inherited stdout pipe can wait indefinitely for descendants. Reproduced with an allowlisted
+  PATH cargo fixture that backgrounds /usr/bin/sleep 100 and prints a version: `timeout 3 asb tool
+  discover ...` exits 124 with no report. This violates bounded allowlisted probes and can hang
+  discovery. No approval or merge recommendation.
