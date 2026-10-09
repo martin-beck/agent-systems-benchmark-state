@@ -7,7 +7,7 @@
     "AR-1737"
   ],
   "id": "AR-1751",
-  "next_action": "Repair independent-rereview P1 additively after abf4b656: impose a strict per-call work budget on nonblocking development-command output drain so continuously readable hostile stdout yields to wait/deadline/group termination; add deterministic continuous-writer descendant timeout/cleanup/CLOEXEC regression, rerun full gates, publish a new signed+DCO child commit, and rerun fresh exact-head CI before rereview.",
+  "next_action": "Wait for every fresh exact-head GitHub check on PR #518 at 2cda48c27ae99381a59dc0676126b34ec77d15ef to finish successfully, then request independent rereview of immutable head 2cda48c/tree 5b75e55c; do not self-review or merge.",
   "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
   "observed_dirty": 0,
   "observed_head": "2cda48c27ae99381a59dc0676126b34ec77d15ef",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T02:03:52+00:00",
+  "updated_at": "2026-10-09T02:04:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -445,3 +445,14 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
 
 - 2026-10-09T02:03:52+00:00: Recorded command exit 0; command argv SHA-256
   9fd0b16af5f25b2e94bf7720908ca512a1db8ef5c1f5d88cec1e57c0752d6e04.
+
+- 2026-10-09T02:04:37+00:00: Published additive signed+DCO P1 repair
+  2cda48c27ae99381a59dc0676126b34ec77d15ef (tree 5b75e55c7d4ee1e58df42b1e9989a96ab8994995), child of
+  abf4b656 with no history rewrite. Each nonblocking drain pass is capped at 16 read attempts so
+  continuously readable hostile stdout yields to waitid/quota/deadline enforcement while aggregate
+  128 KiB oversized semantics remain intact. Deterministic continuous-writer regression uses atomic
+  PID staging/rename plus readiness/start gates, confirms inherited linker FD, streams /dev/zero,
+  then proves bounded timeout, descendant cleanup, and CLOEXEC restoration. Exact adversarial test,
+  focused runner, asb-cli 244/244, workspace tests, clippy, rustdoc, release build, coverage (95.88%
+  lines/92.97% regions), deny, audit, contract, repository policy, and Gitleaks all passed. PR #518
+  is MERGEABLE and fresh exact-head CI is starting.
