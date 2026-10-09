@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the exact upstream Coordinator main containing the supported spec-acceptance command as an explicitly development-only vendor so merged ASB ARs can be durably accepted.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Coordinator v0.4.0 development vendor for supported acceptance",
-  "updated_at": "2026-10-09T12:02:25+00:00",
+  "updated_at": "2026-10-09T12:02:39+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1756-coordinator-v040"
 }
 ---
@@ -81,3 +81,6 @@ be bypassed.
 
 - 2026-10-09T12:02:25+00:00: Recorded command exit 1; command argv SHA-256
   3b627637f4a3d7813c670486170956580489823454d8a7b88611430829569b6c.
+
+- 2026-10-09T12:02:39+00:00: Recorded command exit 0; command argv SHA-256
+  0c05c79ef17f90e8bcfab5d170b6074d04662e2473e0af7377814e53186eb465.
