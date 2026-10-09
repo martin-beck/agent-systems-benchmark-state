@@ -8,9 +8,9 @@
   ],
   "id": "AR-1759",
   "next_action": "Obtain independent technical review of PR #531, then wait for all exact-head checks and merge via integration/merge_pr.py.",
-  "observed_branch": "feature/ar-1759-tool-project-config-schema",
+  "observed_branch": "main",
   "observed_dirty": 0,
-  "observed_head": "36dab7a7addb33afad2ba1874a2b884e81635a6c",
+  "observed_head": "736a65cd8904b8f4a6f1715fc86ae1c854fe2232",
   "owner": "codex-asb-ar1759-project-config-20261009",
   "plan": "../plans/AR-1759-tool-project-config-schema.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T14:52:19+00:00",
+  "updated_at": "2026-10-09T14:52:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
