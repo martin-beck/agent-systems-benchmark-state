@@ -16,20 +16,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:638a0e7c5527f85666b812470b7636e6cec0dee43a70575576977195074d3287",
+    "evidence_ref": "quality/AR-1767-postmerge-receipt.json",
     "spec_ref": "specs/AR-1767.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1767.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T19:21:18+00:00",
+  "updated_at": "2026-10-09T19:21:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -383,3 +383,7 @@ when useful; repeated commands must not claim an existing directory was new.
 
 - 2026-10-09T19:21:18+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-10-09T19:21:51+00:00: Merged PR #539 exact head f34830b5 into 31f52d75 and all ten exact-main
+  post-merge workflows succeeded. Residual descriptor-safe race and acceptance-matrix work is
+  explicitly successor AR-1770.
