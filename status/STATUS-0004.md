@@ -622,11 +622,12 @@
 
 ## Complete AR inventory
 
-### Open (3)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
+| P0 | [AR-1756](../tasks/AR-1756-coordinator-v040-development.md): Coordinator v0.4.0 development vendor for supported acceptance | Unclaimed | Adopt the exact upstream Coordinator main containing the supported spec-acceptance command as an explicitly development-only vendor so merged ASB ARs can be durably accepted. | Promote and claim; independently verify upstream main c2692d0 and the absence of a v0.4.0 tag, then sync it through sync-development in an isolated state worktree without patching vendored bytes. |
 | P1 | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md): Supervise cli2key sidecar and ephemeral key | Unclaimed | Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence. | Construct and publish signed exact two-parent merge for PR #525; then verify post-merge workflows and close. |
 | P1 | [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md): Add cli2key provider and selection contracts | Unclaimed | Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support. | Promote after AR-1728; add protocol, control, catalog, selection, and launch contracts with fixture coverage. |
 
@@ -642,4 +643,3 @@
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Wizard control API | Keep AR-1160 blocked. Create a fresh scoped AR for runtime-owned authenticated provider capture, per-tuple cassette reconciliation, and verified offline activation; preserve fail-closed gates and do not change this AR&#x27;s historical evidence. |
 | P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | No independent work remains: AR-1293 owns the state-scoped runner and AR-1307/AR-1308 own qualification/capacity; preserve their blocked evidence and do not duplicate runner work. |
 | P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Blocked: authenticated renderer-neutral router and owner-only control transport are already on protected main; remaining AgentInstall/Status/Cancel/Retry/Remove backend is intentionally fail-closed at crates/asb-cli/src/control.rs:3088 because no lifecycle artifact executor/activation authority exists. Need an authorized lifecycle executor contract or successor AR before implementation. |
-| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await runtime-owned launch authority, then wire replay through supervised context and add lifecycle/no-fallback tests. |
