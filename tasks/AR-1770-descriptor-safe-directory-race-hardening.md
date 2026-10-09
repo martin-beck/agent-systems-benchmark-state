@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Post-merge main dc67390494805693aef21d917319253b2e705da7 has 8/10 assurance workflows terminal-success; Repository quality 37990474230 and Rust verification 37990474203 remain in progress. Formal 37990474025 and aarch64 37990474021 each failed twice solely Docker Hub unauthenticated pull rate-limit; rerun both after rate window, then create receipt and release.",
+  "next_action": "Post-merge main dc67390494805693aef21d917319253b2e705da7 has 8/10 assurance workflows terminal-success. Repository quality 37990474230 and Rust verification 37990474203 are green. Formal 37990474025 and aarch64 37990474021 have three failed attempts each, all solely Docker Hub unauthenticated pull rate-limit; continue rerun after rate window, then create receipt and release.",
   "observed_branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "observed_dirty": 0,
   "observed_head": "6278fcd6720f39de456a791f0c73e6327ff6e25d",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 216,
+  "task_revision": 217,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T21:09:52+00:00",
+  "updated_at": "2026-10-09T21:10:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -727,3 +727,9 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T21:09:52+00:00: Recorded command exit 0; command argv SHA-256
   e33622dcf99b60a4bb3498cd8b921eabc91cb1cd9d46bea181072007afd84554.
+
+- 2026-10-09T21:10:07+00:00: Post-merge exact-main green: Hosted 37990474147, Credential-free
+  37990474163, Broker 37990474279, Fault 37990474124, Repository quality 37990474230, Rust
+  37990474203, Huawei 37990474076, Provenance 37990474221. Formal 37990474025 and aarch64
+  37990474021 were rerun three times; every failure is Docker toomanyrequests before product
+  execution. Do not accept/release until terminal-success rerun.
