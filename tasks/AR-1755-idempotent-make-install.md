@@ -7,7 +7,7 @@
     "AR-1745"
   ],
   "id": "AR-1755",
-  "next_action": "Post the head-bound independent approval on PR #526, construct and publish the documented signed exact-tree merge for reviewed head 6ac109533612f827320f87bbf65f98694cee4e8d/tree 2bc351c195732261fb694e0d4c156a47daba04c0, then verify all exact-main hosted checks before release.",
+  "next_action": "Publish the privacy-safe acceptance receipt, reconcile stable exact-main observations, then release AR-1755 done.",
   "observed_branch": "fix/ar-1755-idempotent-make-install",
   "observed_dirty": 0,
   "observed_head": "6ac109533612f827320f87bbf65f98694cee4e8d",
@@ -15,13 +15,21 @@
   "plan": "../plans/AR-1755-idempotent-make-install.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:34c5a6398e5c12c51fa28af9ba8ca6d46e79d8d5e7b9b41968c32150dde30163",
+    "evidence_ref": "quality/AR-1755-idempotent-make-install-receipt.txt",
+    "spec_ref": "specs/AR-1755.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1755.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T10:09:07+00:00",
+  "updated_at": "2026-10-09T10:20:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -179,3 +187,9 @@ system-wide privilege handling.
 
 - 2026-10-09T10:09:07+00:00: Recorded command exit 0; command argv SHA-256
   42902ad51e84e13dc3525f4f5165fc88338346af51d6ad5669e441ba9f7cec5e.
+
+- 2026-10-09T10:20:00+00:00: PR #526 merged as signed+DCO exact-tree commit
+  b0d1c9d9f3521c25b65fe8f6e886920c01fc2da4. Independent exact-head review approved with no findings,
+  all 15 candidate checks passed, and all 10 exact-main workflows are terminal success; the
+  initially delayed GitHub PR association was verified exact before the unchanged provenance rerun
+  passed.
