@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "Implement safe automatic directory preparation and concise pre-effect human notices for every ASB command-owned output destination identified by AR-1766.",
+  "next_action": "Implement and test central safe command-owned directory preparation and stderr notices in the isolated feature/ar-1767-safe-directory-preparation worktree; preserve input-path fail-closed behavior.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:22:26+00:00",
+  "updated_at": "2026-10-09T18:23:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -73,3 +73,10 @@ when useful; repeated commands must not claim an existing directory was new.
 
 - 2026-10-09T18:22:26+00:00: Recorded command exit 0; command argv SHA-256
   e8fdc6d25a72c71618842ed1478c8fcc866bc52b9f9f48e124fe6bbc8c529831.
+
+- 2026-10-09T18:23:27+00:00: Checkpoint: verified AR-1767 docs/spec and AR-1766 merged diagnostic
+  catalog; audited ConfigStore, project init, tool install, easy lifecycle, plan-create, run roots,
+  recording and TUI output paths. Initial wrapped worktree bootstrap recorded a post-reconcile
+  failure because generated tools/__pycache__/handoffctl.cpython-312.pyc exceeded the state size
+  guard; repaired the worktree identity to the declared exact key. Begin central safe directory
+  primitive and notice wiring.

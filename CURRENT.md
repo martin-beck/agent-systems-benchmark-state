@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures. | Implement safe automatic directory preparation and concise pre-effect human notices for every ASB command-owned output destination identified by AR-1766. | codex-ar1767-directory-preparation |
+| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures. | Implement and test central safe command-owned directory preparation and stderr notices in the isolated feature/ar-1767-safe-directory-preparation worktree; preserve input-path fail-closed behavior. | codex-ar1767-directory-preparation |
 
 ## Open
 

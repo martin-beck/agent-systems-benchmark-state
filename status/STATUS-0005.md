@@ -43,7 +43,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | codex-ar1767-directory-preparation | Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures. | Implement safe automatic directory preparation and concise pre-effect human notices for every ASB command-owned output destination identified by AR-1766. |
+| P0 | [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | codex-ar1767-directory-preparation | Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures. | Implement and test central safe command-owned directory preparation and stderr notices in the isolated feature/ar-1767-safe-directory-preparation worktree; preserve input-path fail-closed behavior. |
 
 ### Open (1)
 
@@ -524,4 +524,3 @@
 | P0 | [AR-1607](../tasks/AR-1607.md): OpenRouter provider and model setup | Unclaimed | Expose OpenRouter, API-key reference, supported models, and validation to the development wizard. | Promote after AR-1601 and implement the additive provider/catalog/config contract. |
 | P0 | [AR-1608](../tasks/AR-1608.md): Configuration persistence and shared defaults | Unclaimed | Persist editable provider/agent/model/auth selections and shared defaults safely for subsequent runs. | Promote after AR-1607 release and implement atomic redacted configuration updates. |
 | P0 | [AR-1609](../tasks/AR-1609.md): Coding-agent adapter catalog and compatibility | Unclaimed | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. | Promote after AR-1607 release; implement additive adapter records and compatibility diagnostics. |
-| P0 | [AR-1611](../tasks/AR-1611.md): Integrated dev-channel TUI install and launch | Unclaimed | Make asb tui install fetch the current dev-channel TUI, build it in a temporary staging area, publish atomically, and launch it through the trusted ASB router. | Promote after the current install/router implementation is audited; add an exact-main disposable install, upgrade, rollback, and launch qualification. |
