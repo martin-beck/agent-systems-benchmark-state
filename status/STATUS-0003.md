@@ -684,7 +684,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Recover PR #505 protected-main exact-tree publication failure without rewriting history. |
-| Next action | Promote after reviewing the preserved PR #505 mismatch and exact signed local integration procedure. |
+| Next action | Released done after signed reviewed-tree PR #519 merge 5f9850c, ten successful exact-main workflows, and accepted receipt. |
 
 ### AR-1743 — Repair Make update lockfile handling
 

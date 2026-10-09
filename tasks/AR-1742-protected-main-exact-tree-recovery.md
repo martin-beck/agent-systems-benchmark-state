@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-09T05:37:41+00:00",
   "depends_on": [],
   "id": "AR-1742",
-  "next_action": "Promote after reviewing the preserved PR #505 mismatch and exact signed local integration procedure.",
+  "next_action": "Released done after signed reviewed-tree PR #519 merge 5f9850c, ten successful exact-main workflows, and accepted receipt.",
   "observed_branch": "DETACHED",
   "observed_dirty": 0,
   "observed_head": "69bf9029a4976f14739cf4c25949428ff2fe0bb7",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover PR #505 protected-main exact-tree publication failure without rewriting history.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "PR #505 exact-tree recovery",
-  "updated_at": "2026-10-09T03:16:21+00:00",
+  "updated_at": "2026-10-09T03:18:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1742-exact-tree-recovery"
 }
 ---
@@ -72,3 +72,8 @@ from AR-1740's default-lifecycle PR #507.
 
 - 2026-10-09T03:16:21+00:00: Recorded command exit 0; command argv SHA-256
   f4a31be615852e20560cb6061075ed57795b0ba33586d2eb0123b2652ae2746f.
+
+- 2026-10-09T03:18:14+00:00: PR #519 exact head e00f9cf/tree 33e04eb independently approved after
+  additive provenance correction; signed+DCO merge 5f9850c has exact reviewed tree and all ten
+  exact-main runs succeeded. Receipt digest
+  sha256:a6aee43a7a998ebc3dfe96a028a349787cb03d6972bf42c895d492844c6a462e accepted.
