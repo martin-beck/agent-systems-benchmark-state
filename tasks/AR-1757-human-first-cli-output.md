@@ -15,11 +15,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1757.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Human-first ASB command output",
-  "updated_at": "2026-10-09T12:52:30+00:00",
+  "updated_at": "2026-10-09T12:53:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1757-human-first-cli-output"
 }
 ---
@@ -60,3 +60,7 @@ Scope is the ASB CLI presentation and its tests/documentation in
 change exit-code meanings, weaken typed errors, duplicate provider/catalog
 authority, alter asb-tui's actual application UI, or treat development
 authentication/signing warnings as blockers.
+
+- 2026-10-09T12:53:02+00:00: Dependencies AR-1338 and AR-1555 are done; exact current-main generic
+  JSON projection defect and owned CLI presentation paths were reviewed. Human-output repair is
+  ready to claim.
