@@ -27,7 +27,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 37997802625 | `5377317b7fbf` | push | Portable protected-main provenance | completed:success |
 | 37997802607 | `5377317b7fbf` | push | Formal assurance | completed:success |
-| 37997802597 | `5377317b7fbf` | push | Repository quality | completed:failure |
+| 37997802597 | `5377317b7fbf` | push | Repository quality | queued:- |
 | 37997802592 | `5377317b7fbf` | push | Emulated aarch64 portability | in_progress:- |
 | 37997802579 | `5377317b7fbf` | push | Rust verification | completed:success |
 | 37997802544 | `5377317b7fbf` | push | Credential-free benchmark path | completed:success |
