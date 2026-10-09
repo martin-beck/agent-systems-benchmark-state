@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T19:45:24+00:00",
+  "updated_at": "2026-10-09T19:45:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -193,3 +193,6 @@ implementation boundary explicitly and keep the product offline after install.
   before the final clippy-only repair; workflow_transcript 3/3 passed at the current exact source
   digest; diff check clean. The earlier combined cargo filter was an invalid invocation (recorded
   failure), not a product failure.
+
+- 2026-10-09T19:45:35+00:00: Recorded command exit 0; command argv SHA-256
+  ff1f2116dd8b8d6abb0c23dd97279588e2251ffcbf0a5de525218cb70e9260e1.
