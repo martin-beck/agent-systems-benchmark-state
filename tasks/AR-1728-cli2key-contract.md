@@ -2,11 +2,11 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T08:43:52+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1728",
   "next_action": "Release done, reconcile canonical state, and verify live doctor; dependent AR-1729 and AR-1730 may proceed from exact main 30286af46920b34096d3a48153e728f7319358a4.",
-  "owner": "codex-ar1728-cli2key-contract-20261009",
+  "owner": "",
   "plan": "../plans/AR-1728-cli2key-contract.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1728.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation.",
-  "task_revision": 142,
+  "task_revision": 143,
   "title": "Freeze development cli2key contract and bridge",
-  "updated_at": "2026-10-09T05:57:05+00:00",
+  "updated_at": "2026-10-09T05:57:15+00:00",
   "worktree_key": ""
 }
 ---
@@ -471,3 +471,8 @@ unofficial, opt-in, and provides no production or provider-authority claim.
   preserves the reviewed tree; all 10 exact-main workflows succeeded. Closeout receipt
   sha256:0bd2faf4c95fb623fccac317776b52018d8f23b8ed2995ea45921df3271b8e5f contains no credentials,
   auth-file contents, prompts, provider bodies, or private paths.
+
+- 2026-10-09T05:57:15+00:00: Completed by independently reviewed PR #523 at signed+DCO merge
+  30286af46920b34096d3a48153e728f7319358a4 with exact reviewed tree
+  831e4e9b1ffdea478e3c0c4baf516a040b0936b7; all exact-head and exact-main workflows passed and
+  durable acceptance evidence is attached.

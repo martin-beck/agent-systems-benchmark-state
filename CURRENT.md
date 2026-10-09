@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1728](tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Release done, reconcile canonical state, and verify live doctor; dependent AR-1729 and AR-1730 may proceed from exact main 30286af46920b34096d3a48153e728f7319358a4. | codex-ar1728-cli2key-contract-20261009 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
