@@ -10,7 +10,7 @@
   "id": "AR-1762",
   "next_action": "Rerun the repaired completion-contract test, then full locked serial workspace tests; proceed to independent diff review if green.",
   "observed_branch": "feature/ar-1762-tool-discovery",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "b81ef5c7ebf323ddfc49e5722b070569bc4d2df1",
   "owner": "codex-asb-ar1762-tool-discovery-20261009",
   "plan": "../plans/AR-1762-tool-discovery.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:02:43+00:00",
+  "updated_at": "2026-10-09T16:02:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
