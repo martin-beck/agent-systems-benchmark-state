@@ -59,7 +59,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1752` | `repair/ar-1752-development-broker-v115-projection` | `c2ad947f27ea` | 0 | behind 34, ahead 0 |
 | `agent-systems-benchmark-ar-1755-idempotent-make-install` | `fix/ar-1755-idempotent-make-install` | `6ac109533612` | 0 | behind 22, ahead 0 |
 | `agent-systems-benchmark-ar-1755-integration` | `DETACHED` | `64eaad2215e4` | 0 | behind 25, ahead 0 |
-| `agent-systems-benchmark-ar-1757-human-first-cli-output` | `feature/ar-1757-human-first-cli-output` | `ed9fb15ec603` | 0 | behind 0, ahead 5 |
+| `agent-systems-benchmark-ar-1757-human-first-cli-output` | `feature/ar-1757-human-first-cli-output` | `ed9fb15ec603` | 1 | behind 0, ahead 5 |
+| changed files | - | - | - | `crates/asb-cli/tests/human_cli.rs` |
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 18, ahead 0 |
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 6, ahead 0 |
