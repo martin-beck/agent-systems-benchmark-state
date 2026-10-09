@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1729-cli2key-sidecar-lifecycle",
   "checkpoint_commit": "7eacb50d087ea42515d67a00488218bf0ba82880",
-  "claim_expires": "2026-10-09T09:55:05+00:00",
+  "claim_expires": "2026-10-09T09:55:38+00:00",
   "depends_on": [
     "AR-1728"
   ],
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Supervise cli2key sidecar and ephemeral key",
-  "updated_at": "2026-10-09T07:55:15+00:00",
+  "updated_at": "2026-10-09T07:55:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1729-cli2key-sidecar-lifecycle"
 }
 ---
@@ -186,3 +186,5 @@ egress; benchmark agents remain loopback-only.
 
 - 2026-10-09T07:55:15+00:00: Recorded command exit 0; command argv SHA-256
   0606b9642c7413a52edeee341243d09012fc8ea124700504f724887113fa8360.
+
+- 2026-10-09T07:55:38+00:00: Heartbeat by codex-ar1729-cli2key-sidecar-20261009.
