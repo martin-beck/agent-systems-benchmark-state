@@ -21,7 +21,7 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | codex-asb-ar1757-human-output-20261009 | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
 | P0 | [AR-1761](../tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | codex-asb-ar1761-tool-install-20261009 | Install supported external ASB tools into a user/project-local root and persist validated records. | Add user-facing project/tool documentation and then run complete applicable quality gates. |
-| P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | codex-asb-ar1762-tool-discovery-20261009 | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Repair moved configured-key ownership in discovery, then rerun focused tests. |
+| P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | codex-asb-ar1762-tool-discovery-20261009 | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Re-run the single unrelated lifecycle test serially to classify its state-root collision, then continue full gates. |
 
 ### Open (1)
 

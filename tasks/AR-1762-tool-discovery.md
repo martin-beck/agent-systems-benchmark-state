@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Repair moved configured-key ownership in discovery, then rerun focused tests.",
+  "next_action": "Re-run the single unrelated lifecycle test serially to classify its state-root collision, then continue full gates.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 5,
   "observed_head": "ea5e52bfe843969c493f22146f66ccfa2415159a",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:48:38+00:00",
+  "updated_at": "2026-10-09T15:48:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -118,3 +118,7 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:48:38+00:00: Recorded command exit 101; command argv SHA-256
   2c773d075c9455062a72d0991af91dece7d496ef558436fc7e7ec9d898047b31.
+
+- 2026-10-09T15:48:50+00:00: Full asb-cli test gate reached 254 passing tests but failed one
+  unrelated control lifecycle test: control state root already owned at control.rs:7398.
+  Discovery-specific tests passed. Classify by serial rerun before calling regression.
