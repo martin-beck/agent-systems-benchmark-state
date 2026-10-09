@@ -550,11 +550,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1733-cli2key-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits. |
@@ -1701,7 +1701,7 @@ flowchart LR
         AR_1730["AR-1730 - Done"]:::status_done
         AR_1731["AR-1731 - Done"]:::status_done
         AR_1732["AR-1732 - Done"]:::status_done
-        AR_1733["AR-1733 - Open"]:::status_open
+        AR_1733["AR-1733 - In progress"]:::status_in_progress
         AR_1734["AR-1734 - Done"]:::status_done
         AR_1735["AR-1735 - Done"]:::status_done
         AR_1736["AR-1736 - Planned"]:::status_planned

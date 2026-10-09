@@ -2,23 +2,23 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T15:56:19+00:00",
   "depends_on": [
     "AR-1732"
   ],
   "id": "AR-1733",
   "next_action": "Promote after AR-1732; run independent fake and opt-in live qualification and publish user-facing setup/status/reset guidance.",
-  "owner": "",
+  "owner": "codex-asb-ar1733-cli2key-20261009",
   "plan": "../plans/AR-1733-cli2key-qualification.md",
   "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1733.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify and document cli2key development mode",
-  "updated_at": "2026-10-09T13:56:16+00:00",
+  "updated_at": "2026-10-09T13:56:19+00:00",
   "worktree_key": ""
 }
 ---
@@ -37,3 +37,5 @@ or official OpenAI Platform API-key claim.
 
 - 2026-10-09T13:56:16+00:00: AR-1732 is durably accepted/released at signed merge 942c7b1 with green
   exact-main workflows; dependency verified.
+
+- 2026-10-09T13:56:19+00:00: Claimed by codex-asb-ar1733-cli2key-20261009.
