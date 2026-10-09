@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T09:52:53+00:00",
+  "updated_at": "2026-10-09T09:54:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -129,3 +129,6 @@ system-wide privilege handling.
   unmarked binary remains byte-identical. Focused harness, fmt, Clippy, complete locked workspace
   tests, rustdoc, release build/CLI behavior, source-header policy/tests, ShellCheck, and diff
   checks pass. PR #526 now targets the repaired head; hosted checks are running.
+
+- 2026-10-09T09:54:07+00:00: Recorded command exit 0; command argv SHA-256
+  facf61688d3614a3b39febcd477d6131c84f8c3532bbfae6b55af4f66e6b8592.
