@@ -64,6 +64,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 18, ahead 0 |
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 6, ahead 0 |
+| `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery` | `ea5e52bfe843` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 99, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 87, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 33, ahead 0 |
