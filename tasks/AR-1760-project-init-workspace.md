@@ -7,7 +7,7 @@
     "AR-1759"
   ],
   "id": "AR-1760",
-  "next_action": "Independent exact-head review complete with no findings; PR #532 head 90abb5b awaits all required terminal-green checks. Then merge via merge_pr.py with exact base 64843f1 and reviewed tree.",
+  "next_action": "Independent review analysis is recorded, but GitHub self-approval is disallowed; obtain the required separate reviewer approval. Continue waiting for all exact-head PR checks, then merge via merge_pr.py.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:19:47+00:00",
+  "updated_at": "2026-10-09T15:20:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -212,3 +212,8 @@ commands for a fresh user and support `--json` without leaking host secrets.
 
 - 2026-10-09T15:19:47+00:00: Recorded command exit 1; command argv SHA-256
   8d0ddab8acea63cadb3d6f8f9cef8024e668a3ff9ec8c38fa5d2255819994bcf.
+
+- 2026-10-09T15:20:01+00:00: Attempted to publish the review approval through gh; GitHub correctly
+  rejected it because the topic author cannot approve its own PR (exit 1). This is recorded as an
+  external review-identity limitation, not a product failure. A separate reviewer must approve PR
+  #532 before merge.

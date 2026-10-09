@@ -936,7 +936,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add an idempotent ASB project initializer containing config, results, and catalog areas. |
-| Next action | Independent exact-head review complete with no findings; PR #532 head 90abb5b awaits all required terminal-green checks. Then merge via merge_pr.py with exact base 64843f1 and reviewed tree. |
+| Next action | Independent review analysis is recorded, but GitHub self-approval is disallowed; obtain the required separate reviewer approval. Continue waiting for all exact-head PR checks, then merge via merge_pr.py. |
 
 ### AR-1761 — ASB external-tool installer and registry
 
