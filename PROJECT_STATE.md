@@ -21,21 +21,21 @@ Generated from local Git and GitHub. Do not edit.
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
 | #536 | `feature/ar-1762-tool-discovery-v2@9cd9e80cfc2a` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #537 | `feature/ar-1761-tool-install-registry-v2@95e540be95d2` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(cli): add bounded project tool installer (AR-1761) |
+| #537 | `feature/ar-1761-tool-install-registry-v2@95e540be95d2` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): add bounded project tool installer (AR-1761) |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37960856888 | `95e540be95d2` | pull_request | Huawei MIT source headers | queued:- |
-| 37960856886 | `95e540be95d2` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 37960856853 | `95e540be95d2` | pull_request | Fault assurance | queued:- |
-| 37960856818 | `95e540be95d2` | pull_request | Repository quality | queued:- |
-| 37960856811 | `95e540be95d2` | pull_request | Hosted portability and native qualification | queued:- |
-| 37960856790 | `95e540be95d2` | pull_request | Cross-repository development broker qualification | queued:- |
-| 37960856768 | `95e540be95d2` | pull_request | Credential-free benchmark path | queued:- |
-| 37960856743 | `95e540be95d2` | pull_request | Portable protected-main provenance | queued:- |
-| 37960856690 | `95e540be95d2` | pull_request | Rust verification | queued:- |
-| 37960856611 | `95e540be95d2` | pull_request | Emulated aarch64 portability | queued:- |
-| 37960856609 | `95e540be95d2` | pull_request | Formal assurance | queued:- |
+| 37960856888 | `95e540be95d2` | pull_request | Huawei MIT source headers | completed:success |
+| 37960856886 | `95e540be95d2` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37960856853 | `95e540be95d2` | pull_request | Fault assurance | in_progress:- |
+| 37960856818 | `95e540be95d2` | pull_request | Repository quality | in_progress:- |
+| 37960856811 | `95e540be95d2` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37960856790 | `95e540be95d2` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37960856768 | `95e540be95d2` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37960856743 | `95e540be95d2` | pull_request | Portable protected-main provenance | completed:success |
+| 37960856690 | `95e540be95d2` | pull_request | Rust verification | in_progress:- |
+| 37960856611 | `95e540be95d2` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37960856609 | `95e540be95d2` | pull_request | Formal assurance | in_progress:- |
 | 37960352825 | `9cd9e80cfc2a` | pull_request | Formal assurance | completed:success |
