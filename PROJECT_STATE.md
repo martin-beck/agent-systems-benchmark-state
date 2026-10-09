@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37960352765 | `9cd9e80cfc2a` | pull_request | Huawei MIT source headers | completed:success |
 | 37960352747 | `9cd9e80cfc2a` | pull_request | Repository quality | in_progress:- |
 | 37960352732 | `9cd9e80cfc2a` | pull_request | Fault assurance | in_progress:- |
-| 37960352724 | `9cd9e80cfc2a` | pull_request | Emulated aarch64 portability | queued:- |
+| 37960352724 | `9cd9e80cfc2a` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 37960352696 | `9cd9e80cfc2a` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37960352672 | `9cd9e80cfc2a` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 37960352656 | `9cd9e80cfc2a` | pull_request | Rust verification | in_progress:- |
