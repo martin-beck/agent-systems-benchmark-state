@@ -10,8 +10,8 @@
   "id": "AR-1762",
   "next_action": "Wait for exact-head CI to terminal results; independently inspect/review PR diff and merge only after all required checks green.",
   "observed_branch": "feature/ar-1762-tool-discovery-v2",
-  "observed_dirty": 2,
-  "observed_head": "e57ad8563a4c4b26996401a2b82dfe2e4b80ea49",
+  "observed_dirty": 0,
+  "observed_head": "26161a060868782472e25bdfcfca8e66c939f119",
   "owner": "codex-asb-ar1762-tool-discovery-20261009",
   "plan": "../plans/AR-1762-tool-discovery.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:26:56+00:00",
+  "updated_at": "2026-10-09T16:27:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
