@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T00:23:00+00:00",
+  "updated_at": "2026-10-09T00:23:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -69,3 +69,6 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
   7e367e178dfa59bbd2c8dc6fb3c0e1c884771571e39247ba7f21df312ff191b0.
 
 - 2026-10-09T00:23:00+00:00: Heartbeat by codex-asb-ar1751-linker-confinement-20261009.
+
+- 2026-10-09T00:23:28+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
