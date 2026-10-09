@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@b20d22b45b4f` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.22 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #530 | `feature/ar-1733-cli2key-qualification@61e5e0ed50dc` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | test(cli2key): qualify credential-free development journey |
+| #530 | `feature/ar-1733-cli2key-qualification@61e5e0ed50dc` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli2key): qualify credential-free development journey |
 
 ## Recent workflows
 
@@ -27,7 +27,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37941997252 | `61e5e0ed50dc` | pull_request | Cross-repository development broker qualification | completed:success |
 | 37941997238 | `61e5e0ed50dc` | pull_request | Rust verification | in_progress:- |
 | 37941997214 | `61e5e0ed50dc` | pull_request | Hosted portability and native qualification | completed:success |
-| 37941997177 | `61e5e0ed50dc` | pull_request | Fault assurance | in_progress:- |
+| 37941997177 | `61e5e0ed50dc` | pull_request | Fault assurance | completed:success |
 | 37941997123 | `61e5e0ed50dc` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 37941997063 | `61e5e0ed50dc` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 37941997025 | `61e5e0ed50dc` | pull_request | Portable protected-main provenance | completed:success |
