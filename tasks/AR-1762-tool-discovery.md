@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Invoke merge_pr.py through handoffctl with exact base f361cfc, head 9cd9e80, and reviewed tree; verify exact-main CI and post-merge receipt before accept/release.",
+  "next_action": "Monitor all exact-main CI for merge 3cab69a; after terminal green run post-merge verification, create receipt, then accept/release AR-1762.",
   "observed_branch": "feature/ar-1762-tool-discovery-v2",
   "observed_dirty": 0,
   "observed_head": "9cd9e80cfc2a3bee31a402016371ab70b6cfb1cc",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 254,
+  "task_revision": 255,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:52:59+00:00",
+  "updated_at": "2026-10-09T16:53:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -761,3 +761,9 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:52:59+00:00: Recorded command exit 0; command argv SHA-256
   7efe1be77217af334a20999a32e66bc0c4ac237d2aa0792ebe209aeb756f98be.
+
+- 2026-10-09T16:53:15+00:00: Exact merge completed through handoffctl merge_pr.py: base
+  f361cfc7f89a1ff667a72f0279ac61cf1cc4968f, reviewed head 9cd9e80cfc2a3bee31a402016371ab70b6cfb1cc,
+  reviewed tree 614feed3b32279e5898813dcd4ac9bf4b7080300, signed DCO merge
+  3cab69a1885f4bd3444c7d22aaac7eb96fbbadff published to main. Exact-main provenance and header
+  workflows are green; remaining post-merge workflows are running.

@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Invoke merge_pr.py through handoffctl with exact base f361cfc, head 9cd9e80, and reviewed tree; verify exact-main CI and post-merge receipt before accept/release. |
+| Next action | Monitor all exact-main CI for merge 3cab69a; after terminal green run post-merge verification, create receipt, then accept/release AR-1762. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 
