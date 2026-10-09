@@ -8,13 +8,13 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1729](tasks/AR-1729-cli2key-sidecar-lifecycle.md): Supervise cli2key sidecar and ephemeral key | Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence. | Promote after AR-1728; implement the runtime-owned sidecar lifecycle and hostile cleanup/privacy tests. | codex-ar1729-cli2key-sidecar-20261009 |
+| P1 | [AR-1730](tasks/AR-1730-cli2key-provider-contract.md): Add cli2key provider and selection contracts | Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support. | Promote after AR-1728; add protocol, control, catalog, selection, and launch contracts with fixture coverage. | codex-ar1730-cli2key-provider-20261009 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
-| P1 | [AR-1730](tasks/AR-1730-cli2key-provider-contract.md): Add cli2key provider and selection contracts | Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support. | Promote after AR-1728; add protocol, control, catalog, selection, and launch contracts with fixture coverage. | - |
 
 ## Blocked
 
