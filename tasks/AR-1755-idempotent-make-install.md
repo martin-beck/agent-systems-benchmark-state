@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T09:58:10+00:00",
+  "updated_at": "2026-10-09T10:07:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -158,3 +158,6 @@ system-wide privilege handling.
 
 - 2026-10-09T09:58:10+00:00: Recorded command exit 0; command argv SHA-256
   dad0ab377d0884f6c7b6a0a3e0ded6d87584c1094c292a50b9383f9c7e78314c.
+
+- 2026-10-09T10:07:14+00:00: Recorded command exit 0; command argv SHA-256
+  1a61b10878af15b1c21a44760e122297c6e523ff0bd4468bfb61d34166ab80f2.
