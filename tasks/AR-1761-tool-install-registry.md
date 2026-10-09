@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1761-tool-install-registry",
   "checkpoint_commit": "c34a3d6b52b009d62a513bae6713e748b9dbd1fb",
-  "claim_expires": "2026-10-09T18:18:45+00:00",
+  "claim_expires": "2026-10-09T18:19:39+00:00",
   "depends_on": [
     "AR-1759",
     "AR-1760"
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:19:32+00:00",
+  "updated_at": "2026-10-09T16:19:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -266,3 +266,5 @@ for idempotence; never store API keys or tokens.
   644085ecd2f3758aa3482b8a60d4e2ddf099f0c1 against base ea5e52bfe843969c493f22146f66ccfa2415159a
   after handoffctl push. PR is OPEN, non-draft, reviewDecision empty, and statusCheckRollup
   currently empty while GitHub schedules checks.
+
+- 2026-10-09T16:19:39+00:00: Heartbeat by codex-asb-ar1761-tool-install-20261009.
