@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Independent reviewer must inspect PR #540 repaired exact head 44667bc73275acc193759f9958d710cc7c80b7f3 and tree a127ae66ab2c19e42cb7960fcbe0c1c59dab94e6; then wait for exact-head CI.",
+  "next_action": "Independent reviewer must inspect PR #540 repaired exact head bf522fa8ad998b585634f492ef5765a7ff6a4120 and tree 3334d83d8199071d653fbe786e33393960926f42; then wait for exact-head CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T20:11:03+00:00",
+  "updated_at": "2026-10-09T20:11:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -356,3 +356,11 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T20:11:03+00:00: Recorded command exit 0; command argv SHA-256
   ddbb5502f0d424795dabf150da7be015ab94ddbaabe138dce1d4d5c038935f17.
+
+- 2026-10-09T20:11:28+00:00: Review repair pushed as signed DCO commit bf522fa. Descriptor setup now
+  rolls back newly-created directories on fchmod/open failures and reopens concurrent AlreadyExists
+  winners with no-follow validation; a concurrent hostile-path regression test was added. Added
+  CLI_ROUTE_ACCEPTANCE_MATRIX.md documenting setup/config, project/tool, plan, run/sweep, report,
+  record/campaign, easy, TUI, dry-run, read-only, rollback, and JSON/human stream evidence with
+  existing test mappings. Focused safe_fs, route integration, workflow transcript, clippy, header,
+  and check gates pass; PR #540 awaits fresh independent review and exact-head CI.
