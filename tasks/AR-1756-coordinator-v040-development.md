@@ -2,13 +2,13 @@
 {
   "branch": "upgrade/ar-1756-coordinator-v0.4.0-development",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T13:57:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1753"
   ],
   "id": "AR-1756",
   "next_action": "Promote and claim; independently verify upstream main c2692d0 and the absence of a v0.4.0 tag, then sync it through sync-development in an isolated state worktree without patching vendored bytes.",
-  "owner": "codex-asb-ar1756-coordinator-v040-20261009",
+  "owner": "",
   "plan": "../plans/AR-1756-coordinator-v040-development-vendor.md",
   "priority": "P0",
   "schema_version": 1,
@@ -22,11 +22,11 @@
   },
   "spec_ref": "specs/AR-1756.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Adopt the exact upstream Coordinator main containing the supported spec-acceptance command as an explicitly development-only vendor so merged ASB ARs can be durably accepted.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Coordinator v0.4.0 development vendor for supported acceptance",
-  "updated_at": "2026-10-09T12:25:27+00:00",
+  "updated_at": "2026-10-09T12:25:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1756-coordinator-v040"
 }
 ---
@@ -186,3 +186,6 @@ be bypassed.
 - 2026-10-09T12:25:27+00:00: Accepted after PR #112 exact merge
   3a8da1ee652ea4a56b6327d875ddad3715af1b46, exact-main CI run 37929523217 success, merged accept
   command and live doctor verification.
+
+- 2026-10-09T12:25:36+00:00: Completed exact upstream v0.4.0 development vendor adoption; acceptance
+  recorded against hosted receipt and exact-main CI.

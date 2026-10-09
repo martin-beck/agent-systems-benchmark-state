@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1756](tasks/AR-1756-coordinator-v040-development.md): Coordinator v0.4.0 development vendor for supported acceptance | Adopt the exact upstream Coordinator main containing the supported spec-acceptance command as an explicitly development-only vendor so merged ASB ARs can be durably accepted. | Promote and claim; independently verify upstream main c2692d0 and the absence of a v0.4.0 tag, then sync it through sync-development in an isolated state worktree without patching vendored bytes. | codex-asb-ar1756-coordinator-v040-20261009 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
