@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:50:00+00:00",
+  "updated_at": "2026-10-09T15:50:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -137,3 +137,6 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:50:00+00:00: Test invocation failed with cargo usage exit 1 because two TESTNAME
   filters were supplied. No product failure; rerun each focused filter separately.
+
+- 2026-10-09T15:50:09+00:00: Recorded command exit 101; command argv SHA-256
+  62ef8d684d2d242b4241eec9f870d2300b4e9f4577ec87169e464167da61d100.
