@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Qualify and document cli2key development mode",
-  "updated_at": "2026-10-09T13:56:50+00:00",
+  "updated_at": "2026-10-09T13:58:49+00:00",
   "worktree_key": ""
 }
 ---
@@ -46,3 +46,6 @@ or official OpenAI Platform API-key claim.
 - 2026-10-09T13:56:50+00:00: Fresh isolated worktree created at
   /srv/data/projects/agent-systems-benchmark-ar-1733-cli2key-qualification on
   feature/ar-1733-cli2key-qualification.
+
+- 2026-10-09T13:58:49+00:00: Recorded command exit 0; command argv SHA-256
+  311e78f4651f64e5ca0220849f0db93a5918b520108dbabecb12e0aed427ecb7.
