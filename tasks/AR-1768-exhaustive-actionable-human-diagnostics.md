@@ -8,7 +8,7 @@
     "AR-1767"
   ],
   "id": "AR-1768",
-  "next_action": "PR #541 was integrated as signed merge 5377317b7fbf04172e70a0ea000f305e5e07e23a: remote main, merge parents, reviewed tree, signature, and DCO are verified. Post-merge exact-main workflows started for that immutable merge. Wait for every required workflow to succeed, then record the receipt, accept and release the AR, reconcile, and run doctor --live.",
+  "next_action": "AR-1768 merge 5377317 is verified but post-merge Repository quality run 37997802597 failed in exactly one PTY scenario: tui::tests::development_broker_foregrounds_interactive_child_and_restores_terminal (312 passed, 1 failed). The failure is product-test behavior, not infrastructure. Reproduce the focused test repeatedly on exact main and rerun the exact workflow to distinguish flake from a repair; do not accept or release while the required post-merge gate is red.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "observed_dirty": 0,
   "observed_head": "cd46a00c276be3111fe2d7140d4d4ffa1a10dbf7",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 218,
+  "task_revision": 219,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T22:11:42+00:00",
+  "updated_at": "2026-10-09T22:17:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -638,3 +638,7 @@ say what remains usable.
 
 - 2026-10-09T22:11:42+00:00: Verified signed two-parent merge 5377317 with reviewed tree 4cbf0f9f;
   all exact-main post-merge workflows were dispatched and are now being monitored.
+
+- 2026-10-09T22:17:22+00:00: Recorded terminal post-merge failure: Repository quality 37997802597
+  failed only controlling-PTY foreground/restore test; test repair or flake evidence is required
+  before AR acceptance.
