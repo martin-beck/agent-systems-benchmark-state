@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | 37996001451 | `a601a53f2945` | pull_request | Huawei MIT source headers | completed:success |
 | 37996001450 | `a601a53f2945` | pull_request | Credential-free benchmark path | completed:success |
 | 37996001433 | `a601a53f2945` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37996001428 | `a601a53f2945` | pull_request | Formal assurance | in_progress:- |
+| 37996001428 | `a601a53f2945` | pull_request | Formal assurance | completed:success |
 | 37996001424 | `a601a53f2945` | pull_request | Hosted portability and native qualification | completed:success |
 | 37996001418 | `a601a53f2945` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 37996001413 | `a601a53f2945` | pull_request | Repository quality | in_progress:- |
