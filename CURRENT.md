@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1755](tasks/AR-1755-idempotent-make-install.md): Make ASB installation safely idempotent | Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option. | Publish the privacy-safe acceptance receipt, reconcile stable exact-main observations, then release AR-1755 done. | codex-asb-ar1755-install-20261009 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |

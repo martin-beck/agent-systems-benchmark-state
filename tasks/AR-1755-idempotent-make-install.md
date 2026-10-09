@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1755-idempotent-make-install",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T11:33:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1745"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "fix/ar-1755-idempotent-make-install",
   "observed_dirty": 0,
   "observed_head": "6ac109533612f827320f87bbf65f98694cee4e8d",
-  "owner": "codex-asb-ar1755-install-20261009",
+  "owner": "",
   "plan": "../plans/AR-1755-idempotent-make-install.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1755.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T10:20:56+00:00",
+  "updated_at": "2026-10-09T10:21:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -199,3 +199,9 @@ system-wide privilege handling.
 
 - 2026-10-09T10:20:56+00:00: Recorded command exit 0; command argv SHA-256
   06e678ac1e13e9df0d94ba951d05b2f1d33ff88c52039d6ce6baa908e9803ebc.
+
+- 2026-10-09T10:21:21+00:00: Completed by PR #526. Exact reviewed head
+  6ac109533612f827320f87bbf65f98694cee4e8d/tree 2bc351c195732261fb694e0d4c156a47daba04c0 passed
+  independent review and 15/15 exact-head checks; signed+DCO exact-tree merge
+  b0d1c9d9f3521c25b65fe8f6e886920c01fc2da4 is on main and all 10 exact-main workflows passed.
+  Acceptance receipt sha256:34c5a6398e5c12c51fa28af9ba8ca6d46e79d8d5e7b9b41968c32150dde30163.

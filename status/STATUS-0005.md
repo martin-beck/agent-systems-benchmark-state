@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md): Runtime-to-CLI strict-replay handoff entrypoint | Unclaimed | Provide a runtime-owned entrypoint for strict-replay CLI supervision. | Reconcile coordinator view against declared runtime-cli worktree; then run focused/full gates and review exact signed head d91520f. |
-| P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Unclaimed | Issue runtime-owned authority for supervised strict-replay execution. | Do not merge PR #207; create runtime-to-CLI authority successor and rerun lifecycle, egress and no-fallback evidence. |
 | P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | Unclaimed | Provide a real runtime-owned strict-replay CLI entrypoint. | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. |
 | P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | Unclaimed | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. |
 | P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | Unclaimed | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Add actual replay CLI argument wiring and bounded lifecycle/egress/no-fallback tests around authenticated execution hook; then run full gates. |
@@ -188,7 +186,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (527)
+### Done (528)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -498,3 +496,4 @@
 | P0 | [AR-1687](../tasks/AR-1687.md): Development/mock provider-bound comparison qualification | Unclaimed | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
 | P0 | [AR-1688](../tasks/AR-1688.md): Runner-owned cassette capture and replay qualification | Unclaimed | Qualify selected/all workload recording, complete cassette sealing, and strict offline replay from the runner-owned route. | No further action; exact post-merge runner-owned selected/all capture, sealing, generated-cassette strict replay, and denied-network evidence are recorded. |
 | P0 | [AR-1690](../tasks/AR-1690.md): ASB development-channel current-main materializer | Unclaimed | Implement the ASB dev-channel materializer that resolves the latest repository main heads, persists the selected channel, and emits a diagnostic manifest for the TUI handoff. | No further action; exact merged materializer and hosted evidence are recorded in quality/AR-1690-development-channel-materializer-receipt.txt. Continue AR-1691/AR-1693 paired lifecycle qualification. |
+| P0 | [AR-1692](../tasks/AR-1692.md): Paired development-channel handoff contract | Unclaimed | Publish and validate the ASB handoff that lets asb-tui consume the exact default-dev materialization without losing provenance or blocking on development credentials. | No further action; paired handoff implementation and hosted evidence are recorded in quality/AR-1692-paired-channel-handoff-receipt.txt. Final clean-room journey remains AR-1691/AR-1693. |

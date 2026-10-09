@@ -620,12 +620,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1755](../tasks/AR-1755-idempotent-make-install.md): Make ASB installation safely idempotent | codex-asb-ar1755-install-20261009 | Repair the ASB Make install path so rerunning plain &#96;make install&#96; replaces its existing ASB binary without advertising an invalid Make option. | Publish the privacy-safe acceptance receipt, reconcile stable exact-main observations, then release AR-1755 done. |
-
 ### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -648,3 +642,5 @@
 | P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Blocked: authenticated renderer-neutral router and owner-only control transport are already on protected main; remaining AgentInstall/Status/Cancel/Retry/Remove backend is intentionally fail-closed at crates/asb-cli/src/control.rs:3088 because no lifecycle artifact executor/activation authority exists. Need an authorized lifecycle executor contract or successor AR before implementation. |
 | P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await runtime-owned launch authority, then wire replay through supervised context and add lifecycle/no-fallback tests. |
 | P0 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | Unclaimed | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Blocked pending runtime-owned launch context injection: CLI dispatch has no safe source for SidecarHandoff, SandboxBackend, ResourceLease, or pinned supervisor/sidecar commands. Runtime API presence alone does not authorize CLI fabrication; create a narrow runtime-to-CLI entrypoint or successor AR. |
+| P0 | [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md): Runtime-to-CLI strict-replay handoff entrypoint | Unclaimed | Provide a runtime-owned entrypoint for strict-replay CLI supervision. | Reconcile coordinator view against declared runtime-cli worktree; then run focused/full gates and review exact signed head d91520f. |
+| P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Unclaimed | Issue runtime-owned authority for supervised strict-replay execution. | Do not merge PR #207; create runtime-to-CLI authority successor and rerun lifecycle, egress and no-fallback evidence. |
