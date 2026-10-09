@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1759-tool-project-config-schema",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T17:35:19+00:00",
   "depends_on": [
     "AR-1745"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-ar1759-project-config-20261009",
   "plan": "../plans/AR-1759-tool-project-config-schema.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1759.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T14:35:14+00:00",
+  "updated_at": "2026-10-09T14:35:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
@@ -45,3 +45,5 @@ unknown-field/path validation.
 
 - 2026-10-09T14:35:14+00:00: AR-1745 is done and reconciled; opening schema/config contract
   implementation.
+
+- 2026-10-09T14:35:19+00:00: Claimed by codex-asb-ar1759-project-config-20261009.

@@ -14,19 +14,19 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | codex-asb-ar1757-human-output-20261009 | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
+| P0 | [AR-1759](../tasks/AR-1759-tool-project-config-schema.md): ASB project and external-tool configuration schema | codex-asb-ar1759-project-config-20261009 | Define one versioned ASB project/tool inventory and catalog-selection configuration contract. | Open the schema/config contract for implementation after AR-1745 is reconciled. |
 | P1 | [AR-1733](../tasks/AR-1733-cli2key-qualification.md): Qualify and document cli2key development mode | codex-asb-ar1733-cli2key-20261009 | Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits. | Credential-free qualification implementation committed at 12e28f8 and pushed. Run independent review, focused/full tests, open PR, exact-head CI, then merge through merge_pr.py. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1759](../tasks/AR-1759-tool-project-config-schema.md): ASB project and external-tool configuration schema | Unclaimed | Define one versioned ASB project/tool inventory and catalog-selection configuration contract. | Open the schema/config contract for implementation after AR-1745 is reconciled. |
 
 ### Blocked (87)
 
