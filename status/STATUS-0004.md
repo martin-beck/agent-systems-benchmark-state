@@ -633,12 +633,13 @@
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md): Connect Codex adapter to cli2key backend | codex-asb-ar1731-codex-adapter-20261009 | Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter. | PR #527 at exact head 6386e06: await all required checks, then merge signed exact two-parent commit, verify post-merge, and record hosted acceptance. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 | P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | Unclaimed | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
+| P0 | [AR-1758](../tasks/AR-1758-ar1731-merge-dco-repair.md): Repair AR-1731 protected-main merge provenance | Unclaimed | Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates. | Promote and claim; preserve the failed merge evidence, use the documented repair path, and publish only through a reviewed PR with signed+DCO exact-main verification. |
 
 ### Blocked (87)
 
@@ -648,4 +649,3 @@
 | P0 | [AR-0521](../tasks/AR-0521-openhands-environment-pin.md): Reproduce and pin the OpenHands replay environment | Unclaimed | Repair OpenHands replay environment provenance and reproducibility. | Use the recorded AR-0514 failure evidence to define an immutable, reproducible OpenHands environment bundle and verifier; AR-0514 remains blocked until this evidence is independently verified. |
 | P0 | [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | Unclaimed | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. |
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
-| P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Unclaimed | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. |

@@ -1,22 +1,22 @@
 ---
 {
-  "id": "AR-1758",
-  "title": "Repair AR-1731 protected-main merge provenance",
-  "priority": "P0",
+  "branch": "",
+  "checkpoint_commit": "",
+  "claim_expires": "",
   "depends_on": [],
-  "plan": "../plans/AR-1758-ar1731-merge-dco-repair.md",
-  "summary": "Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates.",
-  "status": "planned",
+  "id": "AR-1758",
   "next_action": "Promote and claim; preserve the failed merge evidence, use the documented repair path, and publish only through a reviewed PR with signed+DCO exact-main verification.",
   "owner": "",
-  "claim_expires": "",
-  "checkpoint_commit": "",
-  "task_revision": 2,
+  "plan": "../plans/AR-1758-ar1731-merge-dco-repair.md",
+  "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1758.json",
   "spec_revision": 1,
-  "updated_at": "2026-10-09T12:59:00+00:00",
-  "branch": "",
+  "status": "open",
+  "summary": "Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates.",
+  "task_revision": 3,
+  "title": "Repair AR-1731 protected-main merge provenance",
+  "updated_at": "2026-10-09T12:55:09+00:00",
   "worktree_key": ""
 }
 ---
@@ -27,3 +27,6 @@ portable provenance failed. This repair must preserve that historical evidence,
 must not force-update or rewrite `main`, and must use a reviewed repair PR and
 the repository's documented merge-integrity tooling. AR-1731 remains unaccepted
 until the repaired exact-main workflows are green.
+
+- 2026-10-09T12:55:09+00:00: Created to repair the observed AR-1731 protected-main merge/DCO
+  publication mismatch without rewriting history; dependency cycle removed.
