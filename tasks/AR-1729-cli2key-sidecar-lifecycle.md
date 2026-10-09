@@ -7,7 +7,7 @@
     "AR-1728"
   ],
   "id": "AR-1729",
-  "next_action": "Promote after AR-1728; implement the runtime-owned sidecar lifecycle and hostile cleanup/privacy tests.",
+  "next_action": "Await independent review and exact-head CI for PR #525 at afca463; then merge via signed integrity path and record post-merge evidence.",
   "owner": "codex-ar1729-cli2key-sidecar-20261009",
   "plan": "../plans/AR-1729-cli2key-sidecar-lifecycle.md",
   "priority": "P1",
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Supervise cli2key sidecar and ephemeral key",
-  "updated_at": "2026-10-09T07:51:53+00:00",
+  "updated_at": "2026-10-09T07:52:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1729-cli2key-sidecar-lifecycle"
 }
 ---
@@ -145,3 +145,9 @@ egress; benchmark agents remain loopback-only.
   0ac74e7b444bb843f5dc9a99fe4c8b4967968e7fbc0b0ac15a3c7cc09158e7ec.
 
 - 2026-10-09T07:51:53+00:00: Heartbeat by codex-ar1729-cli2key-sidecar-20261009.
+
+- 2026-10-09T07:52:01+00:00: Implemented signed+DCO afca463 on
+  feature/ar-1729-cli2key-sidecar-runtime. Added generated 256-bit invocation key fallback, local
+  key absent/malformed/stale/valid handling, loopback readiness and executable pinning, private
+  staging, env clearing, redacted digest receipt, process-group cleanup, and hostile tests. Focused
+  runtime tests 177 passed/1 ignored; workspace clippy -D warnings passed.

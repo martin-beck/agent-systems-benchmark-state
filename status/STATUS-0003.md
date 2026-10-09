@@ -502,7 +502,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence. |
-| Next action | Promote after AR-1728; implement the runtime-owned sidecar lifecycle and hostile cleanup/privacy tests. |
+| Next action | Await independent review and exact-head CI for PR #525 at afca463; then merge via signed integrity path and record post-merge evidence. |
 
 ### AR-1730 — Add cli2key provider and selection contracts
 

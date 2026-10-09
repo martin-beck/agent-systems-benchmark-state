@@ -622,7 +622,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md): Supervise cli2key sidecar and ephemeral key | codex-ar1729-cli2key-sidecar-20261009 | Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence. | Promote after AR-1728; implement the runtime-owned sidecar lifecycle and hostile cleanup/privacy tests. |
+| P1 | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md): Supervise cli2key sidecar and ephemeral key | codex-ar1729-cli2key-sidecar-20261009 | Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence. | Await independent review and exact-head CI for PR #525 at afca463; then merge via signed integrity path and record post-merge evidence. |
 | P1 | [AR-1730](../tasks/AR-1730-cli2key-provider-contract.md): Add cli2key provider and selection contracts | codex-ar1730-cli2key-provider-20261009 | Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support. | Promote after AR-1728; add protocol, control, catalog, selection, and launch contracts with fixture coverage. |
 
 ### Open (1)
