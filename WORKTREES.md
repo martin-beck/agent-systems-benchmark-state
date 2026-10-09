@@ -74,8 +74,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry-v2` | `fe6aa7c346e5` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery-v2` | `9cd9e80cfc2a` | 0 | behind 17, ahead 0 |
 | `agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract` | `feature/ar-1766-fine-grained-human-diagnostic-contract` | `b8ae2dc60a71` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice` | `feature/ar-1767-safe-directory-preparation-and-notice` | `d01741ce97ad` | 1 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
+| `agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice` | `feature/ar-1767-safe-directory-preparation-and-notice` | `d01741ce97ad` | 2 | behind 0, ahead 2 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 130, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 118, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 64, ahead 0 |

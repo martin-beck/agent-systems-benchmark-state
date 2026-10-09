@@ -9,7 +9,7 @@
   "id": "AR-1767",
   "next_action": "PR #539 now points to signed exact head d01741ce97ad46dccc603433b8a158a397a91b71; await full exact-head CI and review. Parent must create AR-1768 successor for residual race/matrix hardening before accepting AR-1767.",
   "observed_branch": "feature/ar-1767-safe-directory-preparation-and-notice",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "d01741ce97ad46dccc603433b8a158a397a91b71",
   "owner": "codex-ar1767-directory-preparation",
   "plan": "../plans/AR-1767-safe-directory-preparation-and-notice.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:54:53+00:00",
+  "updated_at": "2026-10-09T18:54:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
