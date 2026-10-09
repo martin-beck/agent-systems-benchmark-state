@@ -8,7 +8,7 @@
   ],
   "id": "AR-1767",
   "next_action": "PR #539 now points to signed exact head f34830bb75ce919d43036b4f889afd4b9fa1375d; await rerun exact-head CI and review. AR-1770 is the durable successor for descriptor-safe race hardening and missing acceptance-matrix gates.",
-  "observed_branch": "DETACHED",
+  "observed_branch": "feature/ar-1767-safe-directory-preparation-and-notice",
   "observed_dirty": 0,
   "observed_head": "f34830bb75ce919d43036b4f889afd4b9fa1375d",
   "owner": "codex-ar1767-directory-preparation",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T19:07:52+00:00",
+  "updated_at": "2026-10-09T19:07:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
