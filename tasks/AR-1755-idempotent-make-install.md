@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T10:20:00+00:00",
+  "updated_at": "2026-10-09T10:20:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -193,3 +193,6 @@ system-wide privilege handling.
   all 15 candidate checks passed, and all 10 exact-main workflows are terminal success; the
   initially delayed GitHub PR association was verified exact before the unchanged provenance rerun
   passed.
+
+- 2026-10-09T10:20:09+00:00: Recorded command exit 0; command argv SHA-256
+  1377a4cc12d357ddf27afb10213c8e23c49d3ce58e91031daef41c90faa81cb4.
