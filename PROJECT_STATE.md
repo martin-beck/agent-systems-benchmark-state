@@ -20,21 +20,21 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #541 | `feature/ar-1768-exhaustive-actionable-human-diagnostics@18e938d50a02` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): render actionable diagnostics |
+| #541 | `feature/ar-1768-exhaustive-actionable-human-diagnostics@18e938d50a02` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): render actionable diagnostics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37993744624 | `18e938d50a02` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 37993744436 | `18e938d50a02` | pull_request | Fault assurance | queued:- |
-| 37993744407 | `18e938d50a02` | pull_request | Emulated aarch64 portability | queued:- |
-| 37993744392 | `18e938d50a02` | pull_request | Portable protected-main provenance | queued:- |
-| 37993744389 | `18e938d50a02` | pull_request | Formal assurance | queued:- |
-| 37993744388 | `18e938d50a02` | pull_request | Rust verification | queued:- |
-| 37993744374 | `18e938d50a02` | pull_request | Huawei MIT source headers | queued:- |
-| 37993744366 | `18e938d50a02` | pull_request | Repository quality | queued:- |
-| 37993744364 | `18e938d50a02` | pull_request | Hosted portability and native qualification | queued:- |
-| 37993744337 | `18e938d50a02` | pull_request | Cross-repository development broker qualification | queued:- |
-| 37993744311 | `18e938d50a02` | pull_request | Credential-free benchmark path | queued:- |
-| 37993742442 | `dc6739049480` | workflow_dispatch | Formal assurance | queued:- |
+| 37993744624 | `18e938d50a02` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 37993744436 | `18e938d50a02` | pull_request | Fault assurance | in_progress:- |
+| 37993744407 | `18e938d50a02` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37993744392 | `18e938d50a02` | pull_request | Portable protected-main provenance | completed:success |
+| 37993744389 | `18e938d50a02` | pull_request | Formal assurance | in_progress:- |
+| 37993744388 | `18e938d50a02` | pull_request | Rust verification | in_progress:- |
+| 37993744374 | `18e938d50a02` | pull_request | Huawei MIT source headers | completed:success |
+| 37993744366 | `18e938d50a02` | pull_request | Repository quality | in_progress:- |
+| 37993744364 | `18e938d50a02` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37993744337 | `18e938d50a02` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37993744311 | `18e938d50a02` | pull_request | Credential-free benchmark path | in_progress:- |
+| 37993742442 | `dc6739049480` | workflow_dispatch | Formal assurance | in_progress:- |
