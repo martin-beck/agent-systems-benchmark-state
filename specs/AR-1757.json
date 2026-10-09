@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1757.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "outcome-first",
+      "description": "Every default human response begins with a clear sentence saying what the current command succeeded or failed to do, without requiring knowledge of internal status fields."
+    },
+    {
+      "id": "relevance",
+      "description": "Default output contains only command-relevant facts and suppresses schema, transport, classification, empty, duplicate, and development-state metadata unless it changes the user's decision."
+    },
+    {
+      "id": "actionable-next-step",
+      "description": "When user action is required, output ends with one clear next step and a valid copyable safe ASB command; terminal outcomes do not fabricate a next action."
+    },
+    {
+      "id": "failure-clarity",
+      "description": "Failures explain the human cause, distinguish user correction, host limitation, dependency unavailability, and product failure, preserve exit semantics, and say whether relevant state changed."
+    },
+    {
+      "id": "complete-command-coverage",
+      "description": "Every public ASB command and typed outcome has an explicit presentation; CI fails instead of falling back to a recursive JSON key/value dump when the command surface grows."
+    },
+    {
+      "id": "machine-compatibility",
+      "description": "Explicit --json and --format json retain their schemas, semantics, exit codes, redaction, and stdout/stderr contracts."
+    },
+    {
+      "id": "usability-journey",
+      "description": "A clean-install setup-to-plan-to-run-to-report/compare journey and TUI lifecycle routing are self-explanatory step by step using only the displayed human output."
+    }
+  ],
+  "definition_of_done": [
+    "Before/after fixtures demonstrate concise command-aware output for representative successes and failures across the complete public command inventory.",
+    "Golden, semantic, exhaustiveness, suggested-command, JSON compatibility, exit-code, privacy, redirection, NO_COLOR, terminal-width, and clean user-journey tests pass.",
+    "The exact signed+DCO candidate receives independent review, green exact-head CI, a signed reviewed-tree merge, green exact-main CI, and a privacy-safe acceptance receipt."
+  ],
+  "inputs": [
+    {
+      "id": "typed-command-results",
+      "description": "Existing ASB command result and error envelopes, exit codes, and remediation data."
+    },
+    {
+      "id": "public-command-inventory",
+      "description": "The exact current-main public ASB commands, subcommands, documented journeys, and structured output contracts."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "human-presentation-contract",
+      "description": "A command-aware presentation model and renderer with outcome, relevant facts, warnings, and optional next action."
+    },
+    {
+      "id": "human-output-coverage",
+      "description": "Exhaustive fixtures and tests for public command and outcome variants."
+    },
+    {
+      "id": "user-guidance",
+      "description": "Updated help and examples showing concise outcomes, safe next commands, JSON opt-in, and diagnostic-detail opt-in."
+    }
+  ],
+  "allowed_tools": [
+    "cargo",
+    "git",
+    "gh",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "credential-output",
+    "raw-json-human-fallback",
+    "exit-code-weakening",
+    "json-schema-break",
+    "business-logic-duplication",
+    "gate-weakening",
+    "force-push"
+  ],
+  "required_evidence_classes": [
+    "contract-test",
+    "journey",
+    "mechanical",
+    "hosted"
+  ],
+  "gates": [
+    {
+      "id": "presentation-coverage",
+      "description": "Every public command and typed outcome maps to an explicit tested human presentation."
+    },
+    {
+      "id": "action-validity",
+      "description": "Displayed next commands are valid, safe, context-appropriate, and secret-free."
+    },
+    {
+      "id": "compatibility",
+      "description": "Machine-readable output, exit behavior, privacy, and command authority remain unchanged."
+    },
+    {
+      "id": "integration",
+      "description": "Independent review, exact-head CI, signed exact-tree integration, and exact-main CI all pass."
+    }
+  ]
+}
