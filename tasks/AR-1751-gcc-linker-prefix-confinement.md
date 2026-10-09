@@ -7,7 +7,7 @@
     "AR-1737"
   ],
   "id": "AR-1751",
-  "next_action": "Wait for exact-head CI on PR #518 at d0ab2af3fed2f73f4c31c56dfbe715f897483e94, then obtain an independent same-user agent review; do not merge before immutable approval.",
+  "next_action": "Obtain independent same-user agent review of immutable PR #518 head d0ab2af3fed2f73f4c31c56dfbe715f897483e94/tree 251d838f7a43d8a8ee9f0c0b3f43d03d03b7e803; do not merge before explicit approval, then use the reviewed-tree protected merge flow and exact-main post-merge verification.",
   "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
   "observed_dirty": 0,
   "observed_head": "d0ab2af3fed2f73f4c31c56dfbe715f897483e94",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T01:10:21+00:00",
+  "updated_at": "2026-10-09T01:18:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -274,3 +274,9 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
   workspace tests, docs, release build, coverage, cargo-deny, cargo-audit, contract consistency,
   repository policy, and revision-scoped Gitleaks passed. Awaiting exact-head hosted CI and
   independent review.
+
+- 2026-10-09T01:18:46+00:00: All 15 hosted checks on exact PR #518 head
+  d0ab2af3fed2f73f4c31c56dfbe715f897483e94 reached terminal SUCCESS, including Rust verification,
+  repository policy/coverage/supply chain, Exact TUI inherited-fd and PTY journey, emulated AArch64,
+  formal, fault, platform, provider journey, headers, provenance, and AWQ shadow evidence. Head/base
+  remain immutable and GitHub reports MERGEABLE. Stop implementation now for independent review.
