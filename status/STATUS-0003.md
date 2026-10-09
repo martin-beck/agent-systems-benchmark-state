@@ -1034,7 +1034,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implementing safe directory preparation and notices for command-owned ASB outputs. |
-| Next action | Rerun cargo test -p asb-cli --no-run after restoring the test-only tool wrapper and optional progress argument; then run the two new directory-preparation tests. |
+| Next action | Run cargo test -p asb-cli --no-run once after removing the unused test-only guided_setup wrapper; then execute the focused directory-preparation tests. |
 
 ### AR-1768 — Exhaustive actionable human diagnostics
 
