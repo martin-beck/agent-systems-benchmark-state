@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Monitor fresh PR #536 CI to terminal green, complete independent review evidence, then merge via established integration path; do not merge PR #535. |
+| Next action | Continue monitoring PR #536 exact-head CI and obtain independent review evidence for the repaired 9cd9e80 head; keep PR #534 blocked on stale base/CI. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 

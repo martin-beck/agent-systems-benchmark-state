@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1761](tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | Install supported external ASB tools into a user/project-local root and persist validated records. | Push exact clean head b95c89d to PR #534; verify exact current base and request fresh independent review/CI. Do not merge until all required checks are green. | codex-asb-ar1761-tool-install-20261009 |
-| P0 | [AR-1762](tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Monitor fresh PR #536 CI to terminal green, complete independent review evidence, then merge via established integration path; do not merge PR #535. | codex-asb-ar1762-tool-discovery-20261009 |
+| P0 | [AR-1762](tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Continue monitoring PR #536 exact-head CI and obtain independent review evidence for the repaired 9cd9e80 head; keep PR #534 blocked on stale base/CI. | codex-asb-ar1762-tool-discovery-20261009 |
 
 ## Open
 
