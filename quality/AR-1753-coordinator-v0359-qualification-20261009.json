@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1753",
+  "qualification_date": "2026-10-09",
+  "implementation_snapshot": {
+    "base_commit": "3fae5d7ea11d78e293abe68c031102ba95302556",
+    "commit": "498fa7054f65bd31c2e88598562fffc65983440c",
+    "tree": "1722703bffdbe7cd6a50e6671c00773e9a9daf9d",
+    "signed": true,
+    "signing_format": "ssh-ed25519",
+    "signing_fingerprint": "SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE",
+    "dco": true
+  },
+  "upstream_release": {
+    "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
+    "release": "v0.3.59",
+    "published_at": "2026-10-08T22:35:43Z",
+    "tag_type": "lightweight",
+    "tag_signed": false,
+    "commit": "c9c21332841b80c967b174893596df1f3326b30b",
+    "tree": "b1f3db5ff59a0696ed146ac41e5ef4949fb432da",
+    "commit_signature": {
+      "github_verified": true,
+      "format": "openpgp",
+      "key_id": "B5690EEEBB952194",
+      "local_verification": "public_key_unavailable"
+    },
+    "release_assets": 0,
+    "hosted_exact_commit_checks": {
+      "verify": {
+        "run_id": 37854135699,
+        "result": "success"
+      },
+      "formal": {
+        "run_id": 37854135700,
+        "result": "success"
+      }
+    }
+  },
+  "vendor_closure": {
+    "manifest": "coordinator.vendor.json",
+    "manifest_schema": 1,
+    "manifest_sha256": "4bd80a60608cbe1109ebe34275e622740bf91ef8d1040de863d7e3ab37c0ae7f",
+    "file_count": 79,
+    "executable_file_count": 4,
+    "added_paths": 0,
+    "removed_paths": 0,
+    "remapped_paths": 0,
+    "changed_paths": {
+      "tools/handoffctl.py": "800f9d6ca0f2bfdd6e7192442fdcfdd336d1e0db71863934d5a767ab151766fe",
+      "tests/test_handoffctl.py": "0707db6be4f4b2b2a1695ab92d39c8d9898e47c5f0213a208cf89a008e9c7d9c"
+    },
+    "source_checkout_clean": true,
+    "source_to_vendor_git_blob_and_mode_comparison": "pass",
+    "offline_vendor_verification": "pass",
+    "locally_patched_vendored_bytes": false
+  },
+  "downstream_repairs": {
+    "files": [
+      "tests/test_handoffctl_vendor.py"
+    ],
+    "purpose": "Update the downstream release identity and canonical manifest digest assertions for v0.3.59.",
+    "gate_or_threshold_reduced": false
+  },
+  "local_quality": {
+    "recorded_command_argv_sha256": "d7c106bdc7678657b3f6e608a53778a5d3186fc79f91bfd1f6718fec461a7dba",
+    "recorded_command_exit": 0,
+    "unit_tests": {
+      "tests_run": 1415,
+      "result": "pass"
+    },
+    "coverage": {
+      "branch_aware": true,
+      "floor_percent": 95,
+      "reported_percent": 95,
+      "result": "pass"
+    },
+    "checks": {
+      "vendor_verify": "pass",
+      "source_headers": "pass",
+      "ruff_format": "pass",
+      "ruff_lint": "pass",
+      "mypy_strict": "pass",
+      "lizard_ccn_14": "pass",
+      "schema_validation": "pass",
+      "rendered_status_current": "pass",
+      "generated_views_current": "pass",
+      "privacy_boundary": "pass",
+      "tracked_private_archive_absent": "pass",
+      "worktree_diff_after_tests": "clean"
+    }
+  },
+  "formal_diagnostic": {
+    "tier": "pr-publication",
+    "result": "pass",
+    "classification": "diagnostic-private-admission",
+    "canonical_publication_evidence": false,
+    "formal_input_sha256": "3b10076f502f5a4e5b01ffaa2a70f8c553239db5ea420ebe460e288c92d154e7",
+    "attestation_sha256": "3b97207cd23e899b0da6b7ff4e5cbb5fa205a7edb7d522cda02f0826a6471fa1",
+    "log_sha256": "9f49775d518188c477e26ebf31c7418d609e72d071033be34c0d5a9681de5bd3",
+    "models": {
+      "binding": {
+        "generated_states": 9,
+        "distinct_states": 4
+      },
+      "locks": {
+        "generated_states": 4352,
+        "distinct_states": 2728
+      },
+      "run": {
+        "generated_states": 146,
+        "distinct_states": 81
+      },
+      "storage": {
+        "generated_states": 516,
+        "distinct_states": 232
+      },
+      "pr_lifecycle": {
+        "generated_states": 606144,
+        "distinct_states": 452928
+      },
+      "recovery": {
+        "generated_states": 110,
+        "distinct_states": 94
+      }
+    }
+  },
+  "publication_boundary": {
+    "independent_exact_tree_review_required": true,
+    "hosted_exact_head_checks_required": true,
+    "signed_dco_merge_required": true,
+    "hosted_exact_main_checks_required": true,
+    "local_formal_diagnostic_substitutes_for_hosted_evidence": false
+  },
+  "privacy": {
+    "credentials_persisted": false,
+    "host_absolute_paths_committed": false,
+    "raw_logs_committed": false
+  },
+  "result": "pass"
+}
