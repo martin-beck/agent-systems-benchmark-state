@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 242,
+  "task_revision": 243,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T17:10:27+00:00",
+  "updated_at": "2026-10-09T17:10:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -649,3 +649,6 @@ for idempotence; never store API keys or tokens.
   parents 95e540b and 3cab69a. Serialized local format, clippy, workspace tests, docs, release
   build, focused tests, and coverage run completed; explicit generated profraw artifacts removed. PR
   #537 now points exact head fe6aa7c and base 3cab69a; fresh exact-head CI is running.
+
+- 2026-10-09T17:10:30+00:00: Recorded command exit 0; command argv SHA-256
+  92195fe1416227cda697bf350b319e1b2468404b7845794d2e1518621ffa6a91.
