@@ -1008,6 +1008,48 @@
 | Summary | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. |
 | Next action | Run the fresh-user end-to-end qualification after AR-1764 is merged. |
 
+### AR-1766 — Fine-grained human diagnostic contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. |
+| Next action | After AR-1761 is done, inventory every public ASB error, failure, and warning producer and replace the free-form public diagnostic boundary with fine-grained typed context. |
+
+### AR-1767 — Safe automatic directory preparation with clear notice
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures. |
+| Next action | Implement safe automatic directory preparation and concise pre-effect human notices for every ASB command-owned output destination identified by AR-1766. |
+
+### AR-1768 — Exhaustive actionable human diagnostics
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
+| Next action | Render every cataloged ASB error, failure, partial outcome, and warning as concise cause-specific human guidance with an honest next action when one exists. |
+
 
 ## Dependency graph
 
@@ -1832,6 +1874,9 @@ flowchart LR
         AR_1763["AR-1763 - Planned"]:::status_planned
         AR_1764["AR-1764 - Planned"]:::status_planned
         AR_1765["AR-1765 - Planned"]:::status_planned
+        AR_1766["AR-1766 - Planned"]:::status_planned
+        AR_1767["AR-1767 - Planned"]:::status_planned
+        AR_1768["AR-1768 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3708,20 +3753,27 @@ flowchart LR
     AR_1749 --> AR_1753
     AR_1750 --> AR_1748
     AR_1753 --> AR_1756
+    AR_1757 --> AR_1766
     AR_1759 --> AR_1760
     AR_1759 --> AR_1761
     AR_1759 --> AR_1762
     AR_1760 --> AR_1761
     AR_1760 --> AR_1762
     AR_1760 --> AR_1765
+    AR_1760 --> AR_1766
     AR_1761 --> AR_1763
     AR_1761 --> AR_1764
     AR_1761 --> AR_1765
+    AR_1761 --> AR_1766
     AR_1762 --> AR_1763
     AR_1762 --> AR_1765
+    AR_1762 --> AR_1766
     AR_1763 --> AR_1764
     AR_1763 --> AR_1765
     AR_1764 --> AR_1765
+    AR_1766 --> AR_1767
+    AR_1766 --> AR_1768
+    AR_1767 --> AR_1768
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3838,9 +3890,3 @@ flowchart LR
 | [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | None |
 | [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md) |
 | [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md) |
-| [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md) | [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md) | None |
-| [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
-| [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md) | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
-| [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md) | [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
-| [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
-| [AR-0844](../tasks/AR-0844-frontend-api-integration.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
