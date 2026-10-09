@@ -26,7 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 37992484669 | `dc6739049480` | workflow_dispatch | Formal assurance | in_progress:- |
-| 37992462857 | `dc6739049480` | workflow_dispatch | Emulated aarch64 portability | in_progress:- |
+| 37992462857 | `dc6739049480` | workflow_dispatch | Emulated aarch64 portability | completed:failure |
 | 37990714546 | `2701ae67c996` | pull_request | Portable protected-main provenance | completed:failure |
 | 37990714539 | `2701ae67c996` | pull_request | Fault assurance | completed:success |
 | 37990714506 | `2701ae67c996` | pull_request | Repository quality | completed:failure |
