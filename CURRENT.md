@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1721](tasks/AR-1721.md): ControlServer v1.15 dynamic OpenRouter bridge | Expose ASB's normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. | Independent read-only reviewer: verify receipt b6072dfa3aefea82be76cd2444b2cc646e8cc80739558b78887343d94417d1f2 against exact current ASB 69bf9029a4976f14739cf4c25949428ff2fe0bb7 and asb-tui 60ab530dd1a09d6617514f9974217c9f08d48876, original PR #489/#296 provenance, focused test results, and all listed terminal-green hosted runs; approve or report findings before release. | codex-ar1721-main-requalification-20261009 |
 | P1 | [AR-1728](tasks/AR-1728-cli2key-contract.md): Freeze development cli2key contract and bridge | Define cli2key as a development-only loopback Codex OAuth bridge with an ephemeral local client key, then select and pin a qualifying implementation. | Claim in an isolated ASB worktree; evaluate and pin a bridge, freeze the contract, and prove bounded Responses compatibility without persisting secrets. | codex-ar1728-cli2key-contract-20261009 |
 
 ## Open

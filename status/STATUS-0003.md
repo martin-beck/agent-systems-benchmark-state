@@ -382,11 +382,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1721-main-requalification-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Expose ASB&#x27;s normalized dynamic OpenRouter provider catalog through an additive v1.15 ControlServer contract for paired TUI wizard selection. |
@@ -1605,7 +1605,7 @@ flowchart LR
         AR_1718["AR-1718 - Done"]:::status_done
         AR_1719["AR-1719 - Done"]:::status_done
         AR_1720["AR-1720 - Done"]:::status_done
-        AR_1721["AR-1721 - In progress"]:::status_in_progress
+        AR_1721["AR-1721 - Done"]:::status_done
         AR_1722["AR-1722 - Done"]:::status_done
         AR_1723["AR-1723 - Planned"]:::status_planned
         AR_1724["AR-1724 - Planned"]:::status_planned
