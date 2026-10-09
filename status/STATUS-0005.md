@@ -20,13 +20,12 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | codex-asb-ar1757-human-output-20261009 | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
-| P0 | [AR-1761](../tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | codex-asb-ar1761-tool-install-20261009 | Install supported external ASB tools into a user/project-local root and persist validated records. | Obtain independent technical review and GitHub approval; wait for every PR check at exact head to reach success, then integrate with merge_pr.py against the current exact main base. |
-| P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | codex-asb-ar1762-tool-discovery-20261009 | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Verify clean state handoff, push the signed merge commit, rerun exact-head gates after updated main base, then continue review/CI. |
+| P0 | [AR-1761](../tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | codex-asb-ar1761-tool-install-20261009 | Install supported external ASB tools into a user/project-local root and persist validated records. | Repair destination symlink acceptance in tool_install, add a regression test, rerun full focused/workspace gates and push a fresh exact head; independent review remains pending. |
+| P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | codex-asb-ar1762-tool-discovery-20261009 | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Wait for exact-head CI to terminal results; independently inspect/review PR diff and merge only after all required checks green. |
 
 ### Open (2)
 
@@ -237,7 +236,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (537)
+### Done (538)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -516,3 +515,4 @@
 | P0 | [AR-1620](../tasks/AR-1620.md): Development bundle integrity and ASB integration repair | Unclaimed | Harden TUI bundle verification/publication and prove ASB consumes the exact immutable dev artifact. | Released after exact consumer merge; retain immutable manifest receipt for release-gate qualification. |
 | P0 | [AR-1621](../tasks/AR-1621.md): Development authentication and provenance non-blocking audit | Unclaimed | Prove development setup never blocks on absent authentication, signatures, or key management while retaining production hardening boundaries. | Released after paired protected-main auth audit merges; use evidence for final handshake and quickstart qualification. |
 | P0 | [AR-1625](../tasks/AR-1625.md): TUI hosted coverage repair for live handshake | Unclaimed | Raise behavior-relevant TUI coverage above the hosted threshold and unblock exact-main AR-1615 acceptance without weakening quality gates. | Released after protected-main merge; rerun AR-1615 against the paired repaired heads. |
+| P0 | [AR-1626](../tasks/AR-1626.md): ASB-TUI control-loop and PTY launch repair | Unclaimed | Repair the paired development broker/control child-loop launch failure and bounded Unix-socket path handling exposed by AR-1615. | Released after protected-main merge; rerun AR-1615 against the paired repaired heads. |

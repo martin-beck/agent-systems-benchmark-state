@@ -2,16 +2,16 @@
 {
   "branch": "feature/ar-1762-tool-discovery",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T18:40:34+00:00",
+  "claim_expires": "2026-10-09T16:43:56+00:00",
   "depends_on": [
     "AR-1759",
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Verify clean state handoff, push the signed merge commit, rerun exact-head gates after updated main base, then continue review/CI.",
-  "observed_branch": "feature/ar-1762-tool-discovery",
-  "observed_dirty": 2,
-  "observed_head": "be7ab08161bbc5eb8310242e37844bf95a2f5c73",
+  "next_action": "Wait for exact-head CI to terminal results; independently inspect/review PR diff and merge only after all required checks green.",
+  "observed_branch": "feature/ar-1762-tool-discovery-v2",
+  "observed_dirty": 0,
+  "observed_head": "26161a060868782472e25bdfcfca8e66c939f119",
   "owner": "codex-asb-ar1762-tool-discovery-20261009",
   "plan": "../plans/AR-1762-tool-discovery.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 120,
+  "task_revision": 171,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:14:24+00:00",
+  "updated_at": "2026-10-09T16:30:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -367,3 +367,140 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:10:38+00:00: Recorded command exit 0; command argv SHA-256
   832de70d7e4a79a255422c177e029e24017f292f0536de643a4affad63005078.
+
+- 2026-10-09T16:11:15+00:00: Recorded command exit 101; command argv SHA-256
+  96e590c914e389886125c31819e992316c1aed21cc12049c4c5dbff418df4fd7.
+
+- 2026-10-09T16:11:43+00:00: Recorded command exit 101; command argv SHA-256
+  c5c7b73bec44351b4e5a3ed7bad1ef21a9acb938627d414c97508b0ada5fbe89.
+
+- 2026-10-09T16:12:05+00:00: Recorded command exit 2; command argv SHA-256
+  ef9cdb404be279e48ccbeab1160278b087ff92defb52b65670e75614ed9a8d81.
+
+- 2026-10-09T16:13:00+00:00: Recorded command exit 101; command argv SHA-256
+  b354422e74af7a00c5ad1730cf8c3f612dc59955ca5c86a3bb42239860704934.
+
+- 2026-10-09T16:13:23+00:00: Recorded command exit 0; command argv SHA-256
+  b354422e74af7a00c5ad1730cf8c3f612dc59955ca5c86a3bb42239860704934.
+
+- 2026-10-09T16:13:43+00:00: PR #535 CI exact-head be7ab08 exposed two repairable issues: Huawei
+  source-header/policy checks rejected tool_discovery.rs because it lacked the required adjacent
+  Huawei 2026 and SPDX MIT header; added canonical two-line header. After merging origin/main (PR
+  #533), local asb-cli test tool_discover_is_read_only_and_supports_json returned usage exit 2
+  because human::InvocationKind still classified tool as unsupported; added public tool
+  classification, human command family/projection/presentation, then exact test passed. No gate
+  weakened.
+
+- 2026-10-09T16:13:56+00:00: Heartbeat by codex-asb-ar1762-tool-discovery-20261009.
+
+- 2026-10-09T16:14:04+00:00: Recorded command exit 2; command argv SHA-256
+  5fbf8cf5f7a5033b168f87348a1437fc40d72ecd1e1d68cf72198b21c522c119.
+
+- 2026-10-09T16:14:16+00:00: Recorded command exit 0; command argv SHA-256
+  44b72aa1343e1b4ff7c49c16194dddf5577584688a84dde467f72210535643e0.
+
+- 2026-10-09T16:14:28+00:00: Recorded command exit 1; command argv SHA-256
+  6b4a8c307d149511581eb53d906304635de4a464e7beb00d2ef7ce7251253c38.
+
+- 2026-10-09T16:14:44+00:00: Recorded command exit 101; command argv SHA-256
+  70591dd3439ccd22b47ae71496fd3e23ee8fbe3115fd7588423b2e93c8ef05dd.
+
+- 2026-10-09T16:14:58+00:00: Recorded command exit 0; command argv SHA-256
+  d0b3c7021a74505c7e8ffde1f90418908b1f9ba967d3e4d121a811a6866e24e1.
+
+- 2026-10-09T16:15:22+00:00: Recorded command exit 0; command argv SHA-256
+  1b7fa08e8ed4276125fcb1b5e365b3554f622b4e59ead723f6d65abae8124194.
+
+- 2026-10-09T16:15:37+00:00: Recorded command exit 0; command argv SHA-256
+  27cc9c3bd0c4b3c18fe49e5dc258038875e791793f69b05c221ffabfac2d0776.
+
+- 2026-10-09T16:15:58+00:00: Recorded command exit 0; command argv SHA-256
+  70591dd3439ccd22b47ae71496fd3e23ee8fbe3115fd7588423b2e93c8ef05dd.
+
+- 2026-10-09T16:16:08+00:00: Recorded command exit 0; command argv SHA-256
+  b354422e74af7a00c5ad1730cf8c3f612dc59955ca5c86a3bb42239860704934.
+
+- 2026-10-09T16:16:33+00:00: Recorded command exit 101; command argv SHA-256
+  96e590c914e389886125c31819e992316c1aed21cc12049c4c5dbff418df4fd7.
+
+- 2026-10-09T16:16:58+00:00: Recorded command exit 0; command argv SHA-256
+  27cc9c3bd0c4b3c18fe49e5dc258038875e791793f69b05c221ffabfac2d0776.
+
+- 2026-10-09T16:17:14+00:00: Recorded command exit 0; command argv SHA-256
+  698c1c28011467e7fc2c9aedcd0a9f674757233fc111a1a4308fc8998d6ffdba.
+
+- 2026-10-09T16:17:38+00:00: Recorded command exit 101; command argv SHA-256
+  96e590c914e389886125c31819e992316c1aed21cc12049c4c5dbff418df4fd7.
+
+- 2026-10-09T16:17:55+00:00: Recorded command exit 101; command argv SHA-256
+  41ac5ceafbd8a013688dc1cc182286e1989bcca1a6f783f0b7a75db51f01ac4c.
+
+- 2026-10-09T16:18:14+00:00: Recorded command exit 101; command argv SHA-256
+  41ac5ceafbd8a013688dc1cc182286e1989bcca1a6f783f0b7a75db51f01ac4c.
+
+- 2026-10-09T16:18:32+00:00: Recorded command exit 0; command argv SHA-256
+  41ac5ceafbd8a013688dc1cc182286e1989bcca1a6f783f0b7a75db51f01ac4c.
+
+- 2026-10-09T16:19:06+00:00: Recorded command exit 0; command argv SHA-256
+  96e590c914e389886125c31819e992316c1aed21cc12049c4c5dbff418df4fd7.
+
+- 2026-10-09T16:19:19+00:00: Recorded command exit 0; command argv SHA-256
+  bad193119846190d75690534a62bd661f26ce0abc1ad5f0a3a9fe7d0e29b34a3.
+
+- 2026-10-09T16:20:24+00:00: Recorded command exit 0; command argv SHA-256
+  3c4e579e7e25cec4880b6f71c01f8c7ac5cd38fd29e6c5d64d4f3577c5a2398e.
+
+- 2026-10-09T16:20:36+00:00: Recorded command exit 0; command argv SHA-256
+  6b4a8c307d149511581eb53d906304635de4a464e7beb00d2ef7ce7251253c38.
+
+- 2026-10-09T16:20:50+00:00: Recorded command exit 0; command argv SHA-256
+  70591dd3439ccd22b47ae71496fd3e23ee8fbe3115fd7588423b2e93c8ef05dd.
+
+- 2026-10-09T16:21:00+00:00: Recorded command exit 0; command argv SHA-256
+  d0b3c7021a74505c7e8ffde1f90418908b1f9ba967d3e4d121a811a6866e24e1.
+
+- 2026-10-09T16:21:24+00:00: Recorded command exit 0; command argv SHA-256
+  1b7fa08e8ed4276125fcb1b5e365b3554f622b4e59ead723f6d65abae8124194.
+
+- 2026-10-09T16:21:33+00:00: Recorded command exit 0; command argv SHA-256
+  44b72aa1343e1b4ff7c49c16194dddf5577584688a84dde467f72210535643e0.
+
+- 2026-10-09T16:21:48+00:00: Recorded command exit 0; command argv SHA-256
+  832de70d7e4a79a255422c177e029e24017f292f0536de643a4affad63005078.
+
+- 2026-10-09T16:21:59+00:00: Recorded command exit 0; command argv SHA-256
+  9e5b46bf1d19faa4398bbf1465542a960a5bf37cb5cfb9857c07676beb2ac69d.
+
+- 2026-10-09T16:22:13+00:00: Repaired product branch now clean and pushed as exact PR #535 head
+  78bc38b6e88d41eb2f96f7595c058f606bf8a6bd. Local full serialized workspace tests passed; fmt,
+  workspace Clippy -D warnings, rustdoc, release build, and source-header policy passed. The
+  previously observed exit-101 suite failures were repaired contract fixtures/classification: tool
+  is now in human public inventory, output fixture includes tool, and inventory count is 26. CI for
+  78bc38b is running; mergeStateStatus is BLOCKED only while required checks are pending.
+
+- 2026-10-09T16:23:05+00:00: Recorded command exit 0; command argv SHA-256
+  23ce422f3dc10f1f18ef6f032d9e18d4fdbc0fb9a3cabf67ad38e14aade1bdb8.
+
+- 2026-10-09T16:23:25+00:00: Recorded command exit 0; command argv SHA-256
+  23ce422f3dc10f1f18ef6f032d9e18d4fdbc0fb9a3cabf67ad38e14aade1bdb8.
+
+- 2026-10-09T16:23:42+00:00: Recorded command exit 0; command argv SHA-256
+  cc3b6b7dac5f7e3defe3c1ccf743e44f9c383e850b0d73b02b9de4567198dce7.
+
+- 2026-10-09T16:23:54+00:00: Recorded command exit 0; command argv SHA-256
+  2ed3c5fa4af709ff3b824e3068c123ed32f02455c02aaf634be3ec24b7c5372b.
+
+- 2026-10-09T16:24:06+00:00: Recorded command exit 0; command argv SHA-256
+  17f4e4cc2778dbf1bef25eef49c8ff78c9459b07fc293e92662cc4992ed55ab6.
+
+- 2026-10-09T16:24:21+00:00: Recorded command exit 0; command argv SHA-256
+  1b514758a774a752922a4f7299a60f91fca3b5a0db9153a6c8a7574c2aefdb27.
+
+- 2026-10-09T16:24:55+00:00: Recorded command exit 0; command argv SHA-256
+  b7683cc1db2c8b714fd6f67d34f00b5550b2d3d89f7661e1e408ab42e471a8b2.
+
+- 2026-10-09T16:25:15+00:00: Recorded command exit 0; command argv SHA-256
+  8ec51aa3dff10bdefda16d83e4d4005a4e3666c0148be06b02e66c63d6961ebc.
+
+- 2026-10-09T16:25:40+00:00: Recorded command exit 0; command argv SHA-256
+  693e76b5b7edeb6fdd21f17efa614b96b814d4d190ec067637baa192144f137a.

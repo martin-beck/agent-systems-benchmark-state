@@ -886,11 +886,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-ar1757-human-output-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. |
@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Obtain independent technical review and GitHub approval; wait for every PR check at exact head to reach success, then integrate with merge_pr.py against the current exact main base. |
+| Next action | Repair destination symlink acceptance in tool_install, add a regression test, rerun full focused/workspace gates and push a fresh exact head; independent review remains pending. |
 
 ### AR-1762 — Discover system and project ASB tools
 
@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Verify clean state handoff, push the signed merge commit, rerun exact-head gates after updated main base, then continue review/CI. |
+| Next action | Wait for exact-head CI to terminal results; independently inspect/review PR diff and merge only after all required checks green. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 
@@ -1837,7 +1837,7 @@ flowchart LR
         AR_1754["AR-1754 - Planned"]:::status_planned
         AR_1755["AR-1755 - Done"]:::status_done
         AR_1756["AR-1756 - Done"]:::status_done
-        AR_1757["AR-1757 - In progress"]:::status_in_progress
+        AR_1757["AR-1757 - Done"]:::status_done
         AR_1758["AR-1758 - Done"]:::status_done
         AR_1759["AR-1759 - Done"]:::status_done
         AR_1760["AR-1760 - Done"]:::status_done

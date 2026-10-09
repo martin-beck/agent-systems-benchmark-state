@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1757",
+  "status": "postmerge_verified",
+  "repository": "martin-beck/agent-systems-benchmark",
+  "pr": 533,
+  "reviewed_base": "ea5e52bfe843969c493f22146f66ccfa2415159a",
+  "reviewed_head": "a11c94b50d49407982ed004292945880546f7cdd",
+  "reviewed_tree": "61b1643121b913926730dad87da396e198262358",
+  "merge_commit": "f361cfc7f89a1ff667a72f0279ac61cf1cc4968f",
+  "merge_signature": {
+    "format": "ssh-ed25519",
+    "status": "valid",
+    "dco": "valid"
+  },
+  "independent_review": {
+    "result": "approved",
+    "attestation_comment_id": 6084384043,
+    "attestation_url": "https://github.com/martin-beck/agent-systems-benchmark/pull/533#issuecomment-6084384043"
+  },
+  "exact_head_workflows": {
+    "awq_shadow": 37954913375,
+    "bounded_fuzz_matcher_and_retained_faults": 37954913442,
+    "credential_free_benchmark_path": 37954913321,
+    "emulated_aarch64": 37954913308,
+    "huawei_headers": 37954913498,
+    "exact_tui_broker_journey": 37954913707,
+    "formal_models": 37954913603,
+    "platform_evidence": 37954913645,
+    "repository_quality": 37954913586,
+    "portable_provenance": 37954913593,
+    "rust_verification": 37954913501
+  },
+  "exact_main_workflows": {
+    "credential_free_benchmark_path": 37956211410,
+    "cross_repository_development_broker_qualification": 37956211456,
+    "emulated_aarch64_portability": 37956211415,
+    "fault_assurance": 37956211530,
+    "formal_assurance": 37956211438,
+    "hosted_portability_and_native_qualification": 37956211522,
+    "huawei_mit_source_headers": 37956211475,
+    "portable_protected_main_provenance": 37956211480,
+    "repository_quality": 37956211517,
+    "rust_verification": 37956211454
+  },
+  "local_exact_main": {
+    "asb_cli_tests": "pass: 252 unit tests and all integration suites",
+    "protected_main_repository_policy": "pass",
+    "signature_policy_tests": "pass: 17 tests",
+    "gitleaks": "pass: 6 commits scanned, no leaks"
+  },
+  "all_conclusions": "success"
+}

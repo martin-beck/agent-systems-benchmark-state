@@ -2,16 +2,16 @@
 {
   "branch": "feature/ar-1761-tool-install-registry",
   "checkpoint_commit": "c34a3d6b52b009d62a513bae6713e748b9dbd1fb",
-  "claim_expires": "2026-10-09T17:58:52+00:00",
+  "claim_expires": "2026-10-09T18:24:10+00:00",
   "depends_on": [
     "AR-1759",
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Obtain independent technical review and GitHub approval; wait for every PR check at exact head to reach success, then integrate with merge_pr.py against the current exact main base.",
+  "next_action": "Repair destination symlink acceptance in tool_install, add a regression test, rerun full focused/workspace gates and push a fresh exact head; independent review remains pending.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
-  "observed_dirty": 1,
-  "observed_head": "9bfff7aa4e2b05cf217cb505678ee0e9ce1259ca",
+  "observed_dirty": 3,
+  "observed_head": "a983e2b913ea4529eedbc3768fe282c1754e9e7e",
   "owner": "codex-asb-ar1761-tool-install-20261009",
   "plan": "../plans/AR-1761-tool-install-registry.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 63,
+  "task_revision": 108,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:14:24+00:00",
+  "updated_at": "2026-10-09T16:30:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -193,3 +193,121 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T16:09:07+00:00: Recorded command exit 0; command argv SHA-256
   824cb7cfbc699838a005b3f55ed44d18f9c1804d40c608d46f7e469b7deb9fb3.
+
+- 2026-10-09T16:11:24+00:00: Recorded command exit 1; command argv SHA-256
+  d80365906793d8451a4a3605ec3948f7108fe261100a3640997838ee3778c61b.
+
+- 2026-10-09T16:11:56+00:00: Recorded command exit 0; command argv SHA-256
+  3908391941b149d87cd18c760b34fdc3ae214bcacccce9740d77b64a2bbe405d.
+
+- 2026-10-09T16:12:50+00:00: Heartbeat by codex-asb-ar1761-tool-install-20261009.
+
+- 2026-10-09T16:12:57+00:00: Recorded command exit 0; command argv SHA-256
+  f660170bbb8ca494c8aaf72dae9adb4f0b31ec4f53306907274ffc6ed80832c0.
+
+- 2026-10-09T16:13:11+00:00: Recorded command exit 1; command argv SHA-256
+  0debb00bbb01341575447426575074b9a75508df324587117c8951792c7a3c00.
+
+- 2026-10-09T16:13:27+00:00: Recorded command exit 101; command argv SHA-256
+  2607424c3654ceee26fa86e853d746acc9c602695281098ece205d223d115425.
+
+- 2026-10-09T16:13:53+00:00: Recorded command exit 0; command argv SHA-256
+  a917c5c96bb0f888caae50bea885d24f8c7158927e33da92e7b5c2eb9571981b.
+
+- 2026-10-09T16:14:12+00:00: Recorded command exit 101; command argv SHA-256
+  2607424c3654ceee26fa86e853d746acc9c602695281098ece205d223d115425.
+
+- 2026-10-09T16:14:31+00:00: Recorded command exit 0; command argv SHA-256
+  a917c5c96bb0f888caae50bea885d24f8c7158927e33da92e7b5c2eb9571981b.
+
+- 2026-10-09T16:14:40+00:00: Recorded command exit 0; command argv SHA-256
+  2607424c3654ceee26fa86e853d746acc9c602695281098ece205d223d115425.
+
+- 2026-10-09T16:14:55+00:00: Recorded command exit 0; command argv SHA-256
+  1178411481f18b826842d37a3b9a5ab5a571c081b00edfbecbf0bba4703c92b4.
+
+- 2026-10-09T16:15:12+00:00: PR #534 repository-quality run 37955302155 failed its unchanged 90%
+  workspace line-coverage floor at 88.18% (131495 lines, 15541 missed); floor was not weakened.
+  Repaired with signed DCO commit 22d8de5 adding positive and negative tool installer
+  parser/source/conflict/status/config branch coverage; focused 6-test suite passes.
+
+- 2026-10-09T16:15:40+00:00: Recorded command exit 101; command argv SHA-256
+  1f32d821ac2a92b7218d30afafdfa184d4a057db7d34e8f1eb937c776dbcda2a.
+
+- 2026-10-09T16:15:49+00:00: Recorded command exit 0; command argv SHA-256
+  b8149b3191ace2123d57711b6849cef3bda7cc953e8b01d2c7079e833470bb3c.
+
+- 2026-10-09T16:16:43+00:00: Recorded command exit 0; command argv SHA-256
+  1f32d821ac2a92b7218d30afafdfa184d4a057db7d34e8f1eb937c776dbcda2a.
+
+- 2026-10-09T16:16:53+00:00: Recorded command exit 2; command argv SHA-256
+  428457ea9cc6a21bd46c5be6651ba2faccb5b0b07ddc2fd6f96eca730dea5ab7.
+
+- 2026-10-09T16:18:23+00:00: Recorded command exit 0; command argv SHA-256
+  92195fe1416227cda697bf350b319e1b2468404b7845794d2e1518621ffa6a91.
+
+- 2026-10-09T16:18:36+00:00: Recorded command exit 0; command argv SHA-256
+  f660170bbb8ca494c8aaf72dae9adb4f0b31ec4f53306907274ffc6ed80832c0.
+
+- 2026-10-09T16:18:45+00:00: Heartbeat by codex-asb-ar1761-tool-install-20261009.
+
+- 2026-10-09T16:18:54+00:00: Coverage repair validated locally: full workspace quality, clippy,
+  tests, rustdoc, release build all pass; check_coverage.py passes unchanged 90% workspace line
+  floor (workspace 90.39% lines; critical packages all above 95%). New signed+DCO head is 644085e
+  after provenance refresh. Generated profraw files were removed from the checkout.
+
+- 2026-10-09T16:19:00+00:00: Recorded command exit 0; command argv SHA-256
+  a301b4dd020ecbd9133885963264b8daa5f92c08e4a01bd45bdb67d93ba062bd.
+
+- 2026-10-09T16:19:16+00:00: Recorded command exit 0; command argv SHA-256
+  bbf6437efaaf991a4ca0ea750b9285a4812442bd08a4c916387c1daeaccf1e7b.
+
+- 2026-10-09T16:19:32+00:00: Remote PR #534 verified clean exact head
+  644085ecd2f3758aa3482b8a60d4e2ddf099f0c1 against base ea5e52bfe843969c493f22146f66ccfa2415159a
+  after handoffctl push. PR is OPEN, non-draft, reviewDecision empty, and statusCheckRollup
+  currently empty while GitHub schedules checks.
+
+- 2026-10-09T16:19:39+00:00: Heartbeat by codex-asb-ar1761-tool-install-20261009.
+
+- 2026-10-09T16:19:47+00:00: Recorded command exit 1; command argv SHA-256
+  d34f24cd2d9e2ec4c4bef5dca888ec312a5b26e36ca5fefd23b0dcf954f2d1d9.
+
+- 2026-10-09T16:20:33+00:00: Heartbeat by codex-asb-ar1761-tool-install-20261009.
+
+- 2026-10-09T16:20:40+00:00: Recorded command exit 1; command argv SHA-256
+  d34f24cd2d9e2ec4c4bef5dca888ec312a5b26e36ca5fefd23b0dcf954f2d1d9.
+
+- 2026-10-09T16:22:17+00:00: Heartbeat by codex-asb-ar1761-tool-install-20261009.
+
+- 2026-10-09T16:22:20+00:00: Recorded command exit 0; command argv SHA-256
+  b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b.
+
+- 2026-10-09T16:22:33+00:00: Independent review of exact PR #534 head
+  644085ecd2f3758aa3482b8a60d4e2ddf099f0c1: complete diff/docs/contracts reviewed; cargo fmt check,
+  focused tool tests (6/6), clippy -D warnings, and diff check pass. However, a blocking path-safety
+  finding remains: tool_install checks destination.exists() and reads bytes before checking symlink
+  metadata, so an existing .asb/tools/<id>/tool symlink to matching bytes is accepted and persisted.
+  Reproduced in a disposable fixture: install exited 0 and retained the symlink target. This
+  violates the documented symlink/path-safe contract and must be repaired by rejecting destination
+  symlinks (and safely validating the destination inode/type) before any digest comparison. No
+  approval or merge recommendation.
+
+- 2026-10-09T16:24:10+00:00: Heartbeat by codex-asb-ar1761-tool-install-20261009.
+
+- 2026-10-09T16:24:33+00:00: Recorded command exit 0; command argv SHA-256
+  a917c5c96bb0f888caae50bea885d24f8c7158927e33da92e7b5c2eb9571981b.
+
+- 2026-10-09T16:24:45+00:00: Recorded command exit 0; command argv SHA-256
+  2607424c3654ceee26fa86e853d746acc9c602695281098ece205d223d115425.
+
+- 2026-10-09T16:24:58+00:00: Recorded command exit 0; command argv SHA-256
+  c32e71f606a1b2be814e9a98750e329dca7c591ad50ff98aa4ea184f18974ede.
+
+- 2026-10-09T16:25:12+00:00: Recorded command exit 0; command argv SHA-256
+  5cdb732b0f4d851fdd6495659bcc2ce53959cfeccd4b036916c4e6efc5dbae7b.
+
+- 2026-10-09T16:25:24+00:00: Recorded command exit 0; command argv SHA-256
+  9747de804a661239fdf4185a7ee6fe3e1d5201cd1b14e4d73c4982b9f2975a8f.
+
+- 2026-10-09T16:25:43+00:00: Recorded command exit 1; command argv SHA-256
+  7f6e958dc25903677768417a8fc57b0457c385bb3005fc77b8cc053ff84c6e02.

@@ -21,6 +21,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `.asb-rebase-448` | `DETACHED` | `58d108d9192a` | 0 | behind 254, ahead 0 |
 | `.asb-rebase-450` | `DETACHED` | `1b245632c957` | 0 | behind 255, ahead 2 |
 | `.review-ar1760-532` | `DETACHED` | `90abb5b3bb29` | 0 | behind 8, ahead 0 |
+| `.review-ar1761-534` | `DETACHED` | `644085ecd2f3` | 0 | behind 7, ahead 6 |
+| `.review-ar1762-536` | `DETACHED` | `26161a060868` | 0 | behind 0, ahead 6 |
 | `_ar1615-asb` | `DETACHED` | `1521b9800bf4` | 0 | behind 290, ahead 0 |
 | `_ar1615-asb62` | `DETACHED` | `62fda2f3417b` | 0 | behind 288, ahead 0 |
 | `a17b` | `DETACHED` | `dd10b075c065` | 0 | behind 134, ahead 0 |
@@ -63,10 +65,9 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 13, ahead 0 |
-| `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `9bfff7aa4e2b` | 1 | behind 7, ahead 4 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
-| `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery` | `be7ab08161bb` | 2 | behind 0, ahead 6 |
-| changed files | - | - | - | `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/tool_discovery.rs` |
+| `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `a983e2b913ea` | 3 | behind 0, ahead 9 |
+| changed files | - | - | - | `crates/asb-cli/fixtures/human/public-family-output-v1.tsv`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/tests/human_cli.rs` |
+| `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery-v2` | `26161a060868` | 0 | behind 0, ahead 6 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 106, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 40, ahead 0 |
