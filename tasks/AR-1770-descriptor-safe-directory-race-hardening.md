@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 244,
+  "task_revision": 245,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T21:32:00+00:00",
+  "updated_at": "2026-10-09T21:34:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -817,3 +817,6 @@ implementation boundary explicitly and keep the product offline after install.
   exact headSha dc67390494805693aef21d917319253b2e705da7. Aarch64 dispatches fail Docker Ubuntu
   image pull rate limit. Formal dispatches pass Kani/Loom but TLC fails Docker eclipse-temurin image
   pull/rate limit. No product test failure, no receipt/accept/release yet.
+
+- 2026-10-09T21:34:20+00:00: Recorded command exit 0; command argv SHA-256
+  ba90b93c23d8097dec8e1868478dbbdf66a7412b6c2b0bc0f6a64ab8274619a0.
