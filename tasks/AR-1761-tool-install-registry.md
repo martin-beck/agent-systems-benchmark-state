@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:50:37+00:00",
+  "updated_at": "2026-10-09T15:50:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -132,3 +132,6 @@ for idempotence; never store API keys or tokens.
 - 2026-10-09T15:50:19+00:00: Clippy gate found two repairable diagnostics in the new installer:
   needless lifetime on tool_kind_map and collapsible nested existing-record check. No warnings were
   suppressed; both will be fixed and the gate rerun.
+
+- 2026-10-09T15:50:42+00:00: Recorded command exit 0; command argv SHA-256
+  196a03c6abea2f1ab0074c6b051e942da5ffb3890376e4b7829efa4f18e52d99.
