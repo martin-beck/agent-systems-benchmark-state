@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1767-safe-directory-preparation-and-notice",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T20:26:59+00:00",
+  "claim_expires": "2026-10-09T20:30:53+00:00",
   "depends_on": [
     "AR-1766"
   ],
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:29:22+00:00",
+  "updated_at": "2026-10-09T18:30:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -100,3 +100,5 @@ when useful; repeated commands must not claim an existing directory was new.
 
 - 2026-10-09T18:29:22+00:00: Recorded command exit 0; command argv SHA-256
   5aeee75da362015528ba446d4ea84b5ce1f343e91b43718b1ab6b9f8514cc5a2.
+
+- 2026-10-09T18:30:53+00:00: Heartbeat by codex-ar1767-directory-preparation.
