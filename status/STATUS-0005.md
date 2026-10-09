@@ -46,7 +46,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | codex-ar1770-descriptor-safe-races | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Push the signed candidate, record exact head/tree, obtain independent review, then run exact-head hosted CI and repair any failures. |
+| P1 | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | codex-ar1770-descriptor-safe-races | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Independent reviewer must inspect PR #540 exact head f5e5f0d5a50bd768a7cf80ccf4c84ceb78f3a96e and tree 8d121f72dde5ddf75b95119c049a61e2e652bba0; then wait for exact-head CI. |
 
 ### Open (1)
 

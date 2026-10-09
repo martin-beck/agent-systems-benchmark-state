@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Push the signed candidate, record exact head/tree, obtain independent review, then run exact-head hosted CI and repair any failures.",
+  "next_action": "Independent reviewer must inspect PR #540 exact head f5e5f0d5a50bd768a7cf80ccf4c84ceb78f3a96e and tree 8d121f72dde5ddf75b95119c049a61e2e652bba0; then wait for exact-head CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T19:46:02+00:00",
+  "updated_at": "2026-10-09T19:46:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -199,3 +199,12 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T19:46:02+00:00: Recorded command exit 0; command argv SHA-256
   b71b5772c61e10cd4dbf8bf36002097887e27e44d5ab3eb44670b410524b4489.
+
+- 2026-10-09T19:46:30+00:00: Published PR #540:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/540. Exact base
+  31f52d75f006accc3ac5c372d6d93b6c85ad42bc, head f5e5f0d5a50bd768a7cf80ccf4c84ceb78f3a96e, tree
+  8d121f72dde5ddf75b95119c049a61e2e652bba0. Candidate commits
+  dfa1f435c2aa3614fc60fe1df759c6c3f7358376 and f5e5f0d5a50bd768a7cf80ccf4c84ceb78f3a96e are
+  SSH-signed with matching DCO. Local check, clippy, 305-test asb-cli suite, and 3/3 workflow
+  transcript pass; PR body records exact evidence. Independent exact-head review and hosted CI are
+  pending.
