@@ -14,11 +14,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1755.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T07:30:00+00:00",
+  "updated_at": "2026-10-09T09:33:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -37,3 +37,6 @@ ownership-boundary, cleanup-marker, and out-of-prefix protections. Do not broade
 the change into TUI installation, release packaging, runtime installation, or
 system-wide privilege handling.
 
+
+- 2026-10-09T09:33:22+00:00: AR-1745 is done; exact ASB main reproduces the Cargo
+  existing-destination failure and GNU Make rejects the suggested --force spelling.
