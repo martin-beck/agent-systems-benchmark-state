@@ -7,7 +7,7 @@
     "AR-1737"
   ],
   "id": "AR-1751",
-  "next_action": "Wait for every fresh exact-head GitHub check on PR #518 at abf4b6566c6e8bd519840587f440c0977652cc5b to finish successfully, then request independent rereview of that immutable head/tree; do not self-review or merge.",
+  "next_action": "Repair independent-rereview P1 additively after abf4b656: impose a strict per-call work budget on nonblocking development-command output drain so continuously readable hostile stdout yields to wait/deadline/group termination; add deterministic continuous-writer descendant timeout/cleanup/CLOEXEC regression, rerun full gates, publish a new signed+DCO child commit, and rerun fresh exact-head CI before rereview.",
   "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
   "observed_dirty": 0,
   "observed_head": "abf4b6566c6e8bd519840587f440c0977652cc5b",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T01:43:42+00:00",
+  "updated_at": "2026-10-09T01:47:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -382,3 +382,9 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
   test/doc/release/clippy gates passed; coverage passed at 95.88% lines/92.97% regions; repository
   policy, Gitleaks, cargo-deny, cargo-audit, and contract consistency passed. Push is exact, PR #518
   is MERGEABLE, and fresh exact-head CI is running.
+
+- 2026-10-09T01:47:18+00:00: Independent rereview rejected abf4b656 on one P1:
+  drain_development_command_output can loop forever while reads continuously succeed because it has
+  no per-call byte/read/time budget and runs before waitid/deadline enforcement. The obsolete
+  exact-head CI watcher was stopped. Repair remains scoped to AR-1751 and will preserve published
+  history.

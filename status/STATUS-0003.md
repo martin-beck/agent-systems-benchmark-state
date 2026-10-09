@@ -810,7 +810,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries. |
-| Next action | Wait for every fresh exact-head GitHub check on PR #518 at abf4b6566c6e8bd519840587f440c0977652cc5b to finish successfully, then request independent rereview of that immutable head/tree; do not self-review or merge. |
+| Next action | Repair independent-rereview P1 additively after abf4b656: impose a strict per-call work budget on nonblocking development-command output drain so continuously readable hostile stdout yields to wait/deadline/group termination; add deterministic continuous-writer descendant timeout/cleanup/CLOEXEC regression, rerun full gates, publish a new signed+DCO child commit, and rerun fresh exact-head CI before rereview. |
 
 
 ## Dependency graph
@@ -3641,4 +3641,3 @@ flowchart LR
 | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
 | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-1130](../tasks/AR-1130.md) |
 | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) |
-| [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |
