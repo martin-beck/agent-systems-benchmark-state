@@ -494,11 +494,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-ar1729-closeout-20261009 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence. |
@@ -1669,7 +1669,7 @@ flowchart LR
         AR_1726["AR-1726 - Done"]:::status_done
         AR_1727["AR-1727 - Done"]:::status_done
         AR_1728["AR-1728 - Done"]:::status_done
-        AR_1729["AR-1729 - In progress"]:::status_in_progress
+        AR_1729["AR-1729 - Done"]:::status_done
         AR_1730["AR-1730 - In progress"]:::status_in_progress
         AR_1731["AR-1731 - Planned"]:::status_planned
         AR_1732["AR-1732 - Planned"]:::status_planned

@@ -2,13 +2,13 @@
 {
   "branch": "feature/ar-1729-cli2key-sidecar-lifecycle",
   "checkpoint_commit": "7eacb50d087ea42515d67a00488218bf0ba82880",
-  "claim_expires": "2026-10-09T13:25:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1728"
   ],
   "id": "AR-1729",
   "next_action": "Construct and publish signed exact two-parent merge for PR #525; then verify post-merge workflows and close.",
-  "owner": "codex-asb-ar1729-closeout-20261009",
+  "owner": "",
   "plan": "../plans/AR-1729-cli2key-sidecar-lifecycle.md",
   "priority": "P1",
   "schema_version": 1,
@@ -22,11 +22,11 @@
   },
   "spec_ref": "specs/AR-1729.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Supervise cli2key sidecar and ephemeral key",
-  "updated_at": "2026-10-09T12:26:29+00:00",
+  "updated_at": "2026-10-09T12:26:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1729-cli2key-sidecar-lifecycle"
 }
 ---
@@ -424,3 +424,6 @@ egress; benchmark agents remain loopback-only.
 
 - 2026-10-09T12:26:29+00:00: Accepted exact product merge 64eaad2215e4f08fe8e803022acb6e9146b95d94
   from PR #525 with exact-head hosted workflows all successful.
+
+- 2026-10-09T12:26:37+00:00: Closed after exact merged product PR #525, hosted evidence acceptance,
+  and post-merge workflows.
