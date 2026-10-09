@@ -20,6 +20,7 @@ import time
 import uuid
 from collections import Counter
 from collections.abc import Iterator
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any, cast
 
@@ -213,6 +214,7 @@ STATUSES = (
 LIFECYCLE_MUTATION_COMMANDS = (
     "claim",
     "heartbeat",
+    "accept",
     "release",
     "promote",
     "pause",
@@ -261,7 +263,7 @@ type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
-COORDINATOR_VERSION = "0.3.59"
+COORDINATOR_VERSION = "0.4.0"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -958,6 +960,32 @@ def parse_worktree_listing(raw: str) -> list[tuple[Path, str, str]]:
     return records
 
 
+def scan_worktree(item: tuple[Path, str, str]) -> dict[str, Any]:
+    """Observe one independent product checkout without changing its Git state."""
+    path, listed_head, listed_branch = item
+    head = listed_head or run(["git", "-C", str(path), "rev-parse", "HEAD"]).stdout.strip()
+    branch = listed_branch or (
+        run(
+            ["git", "-C", str(path), "symbolic-ref", "--short", "-q", "HEAD"], check=False
+        ).stdout.strip()
+        or "DETACHED"
+    )
+    changed = run(["git", "-C", str(path), "status", "--porcelain=v1"]).stdout.splitlines()
+    counts = run(
+        ["git", "-C", str(path), "rev-list", "--left-right", "--count", "origin/main...HEAD"],
+        check=False,
+    ).stdout.split()
+    return {
+        "key": path.name,
+        "branch": branch,
+        "head": head,
+        "dirty": len(changed),
+        "paths": [line[3:] for line in changed[:50]],
+        "behind": int(counts[0]) if len(counts) == 2 else None,
+        "ahead": int(counts[1]) if len(counts) == 2 else None,
+    }
+
+
 def project_scan() -> State:
     settings = config()
     base = Path(settings["projects_root"])
@@ -979,67 +1007,43 @@ def project_scan() -> State:
         if path.resolve() not in coordinator_paths and path not in seen_paths:
             paths.append((path, head, branch))
             seen_paths.add(path)
-    worktrees = []
-    for path, listed_head, listed_branch in paths:
-        head = listed_head or run(["git", "-C", str(path), "rev-parse", "HEAD"]).stdout.strip()
-        branch = listed_branch or (
-            run(
-                ["git", "-C", str(path), "symbolic-ref", "--short", "-q", "HEAD"], check=False
-            ).stdout.strip()
-            or "DETACHED"
-        )
-        changed = run(["git", "-C", str(path), "status", "--porcelain=v1"]).stdout.splitlines()
-        counts = run(
-            ["git", "-C", str(path), "rev-list", "--left-right", "--count", "origin/main...HEAD"],
-            check=False,
-        ).stdout.split()
-        worktrees.append(
-            {
-                "key": path.name,
-                "branch": branch,
-                "head": head,
-                "dirty": len(changed),
-                "paths": [line[3:] for line in changed[:50]],
-                "behind": int(counts[0]) if len(counts) == 2 else None,
-                "ahead": int(counts[1]) if len(counts) == 2 else None,
-            }
-        )
     github = settings["github_repository"]
-    prs = json.loads(
-        run_github_observation(
-            [
-                "gh",
-                "pr",
-                "list",
-                "-R",
-                github,
-                "--state",
-                "open",
-                "--limit",
-                "100",
-                "--json",
-                "number,title,headRefName,headRefOid,baseRefName,isDraft,mergeStateStatus,statusCheckRollup",
-            ]
-        ).stdout
-    )
-    runs = json.loads(
-        run_github_observation(
-            [
-                "gh",
-                "run",
-                "list",
-                "-R",
-                github,
-                "--limit",
-                "12",
-                "--json",
-                "databaseId,headSha,status,conclusion,workflowName,event",
-            ]
-        ).stdout
-    )
-    remote_line = run(
-        ["git", "-C", str(repo), "ls-remote", "origin", "refs/heads/main"]
-    ).stdout.strip()
+    pr_args = [
+        "gh",
+        "pr",
+        "list",
+        "-R",
+        github,
+        "--state",
+        "open",
+        "--limit",
+        "100",
+        "--json",
+        "number,title,headRefName,headRefOid,baseRefName,isDraft,mergeStateStatus,statusCheckRollup",
+    ]
+    run_args = [
+        "gh",
+        "run",
+        "list",
+        "-R",
+        github,
+        "--limit",
+        "12",
+        "--json",
+        "databaseId,headSha,status,conclusion,workflowName,event",
+    ]
+    # Checkouts own separate Git indexes. Observe all fields freshly, but overlap
+    # the independent GitHub and remote reads with the bounded checkout scan.
+    with ThreadPoolExecutor(max_workers=min(32, max(1, len(paths))) + 3) as workers:
+        prs_result = workers.submit(run_github_observation, pr_args)
+        runs_result = workers.submit(run_github_observation, run_args)
+        remote_result = workers.submit(
+            run, ["git", "-C", str(repo), "ls-remote", "origin", "refs/heads/main"]
+        )
+        worktrees = list(workers.map(scan_worktree, paths))
+        prs = json.loads(prs_result.result().stdout)
+        runs = json.loads(runs_result.result().stdout)
+        remote_line = remote_result.result().stdout.strip()
     if not remote_line:
         raise RuntimeError("remote main is missing")
     return {
@@ -2265,6 +2269,33 @@ def require_promotion_preflight(kind: str) -> None:
         raise RuntimeError("promotion requires a clean state repository")
 
 
+def apply_accept(args: argparse.Namespace, meta: Meta, policy: EvidencePolicy | None) -> str:
+    """Record one owner's exact-revision assertion against the referenced spec."""
+    if meta.get("owner") != args.owner:
+        raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
+    require_role_admission(str(args.owner))
+    if meta.get("status") != "in_progress":
+        raise RuntimeError("accept requires an active task")
+    if "spec_ref" not in meta or "spec_revision" not in meta:
+        raise RuntimeError("accept requires a referenced task spec")
+    if args.expected_revision != meta["task_revision"]:
+        raise RuntimeError(
+            f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
+        )
+    meta["spec_acceptance"] = {
+        "spec_ref": meta["spec_ref"],
+        "spec_revision": meta["spec_revision"],
+        "status": "pass",
+        "evidence_class": args.evidence_class,
+        "evidence_ref": args.evidence_ref,
+        "evidence_digest": args.evidence_digest,
+    }
+    error = done_admission_error(ROOT, meta, policy)
+    if error:
+        raise RuntimeError(error)
+    return str(args.note)
+
+
 def apply_owned_change(  # noqa: C901
     args: argparse.Namespace,
     kind: str,
@@ -2410,10 +2441,11 @@ def apply_transition(
         return apply_recover_expired(args, meta, tasks)
     if kind == "gate":
         return apply_gate(args, meta)
-    if kind == "checkpoint":
-        return apply_checkpoint(args, meta)
-    if kind == "rollback":
-        return apply_rollback(args, meta)
+    record_transition = {"checkpoint": apply_checkpoint, "rollback": apply_rollback}.get(kind)
+    if record_transition is not None:
+        return record_transition(args, meta)
+    if kind == "accept":
+        return apply_accept(args, meta, policy)
     return apply_owned_change(args, kind, meta, tasks, policy)
 
 
@@ -3739,6 +3771,14 @@ def main() -> int:
     item.add_argument(
         "--status", required=True, choices=[value for value in STATUSES if value != "in_progress"]
     )
+    item.add_argument("--note", required=True)
+    item = commands.add_parser("accept")
+    item.add_argument("task")
+    item.add_argument("--owner", required=True)
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--evidence-class", required=True)
+    item.add_argument("--evidence-ref", required=True)
+    item.add_argument("--evidence-digest", required=True)
     item.add_argument("--note", required=True)
     item = commands.add_parser("promote")
     item.add_argument("task")

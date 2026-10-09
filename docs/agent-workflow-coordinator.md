@@ -94,7 +94,8 @@ separate release and provenance gates.
 3. Run every state-changing product, Git, review or publication command through `run`.
 4. Record each material result immediately; heartbeat before lease expiry.
 5. After interruption, inspect revisions, commits, refs, processes and CI before retrying.
-6. Release to `done`, `open`, or `blocked`; reconcile and run the live doctor.
+6. For `done`, record reviewed task-spec acceptance at the exact current revision.
+7. Release to `done`, `open`, or `blocked`; reconcile and run the live doctor.
 
 ```sh
 tools/handoffctl snapshot
@@ -102,11 +103,20 @@ tools/handoffctl claim AR-0001 --owner worker-unique --lease-minutes 120
 tools/handoffctl run --owner worker-unique AR-0001 -- command arg
 tools/handoffctl update AR-0001 --owner worker-unique --expected-revision 2 \
   --note "Verified result and exact next action"
+tools/handoffctl accept AR-0001 --owner worker-unique --expected-revision 3 \
+  --evidence-class contract-test --evidence-ref quality/AR-0001-tests.txt \
+  --evidence-digest sha256:YOUR_EXACT_64_HEX_DIGEST \
+  --note "Accepted task spec against reviewed evidence"
 tools/handoffctl release AR-0001 --owner worker-unique --status done \
   --note "Integrated and verified"
 tools/handoffctl reconcile --commit --push
 tools/handoffctl doctor --live
 ```
+
+`accept` records the active owner's acceptance assertion for the task's referenced
+spec and validates the metadata. It does not independently inspect or prove the
+evidence contents; project review and evidence-class obligations still apply.
+The `done` release gate remains fail closed when acceptance is missing or invalid.
 
 Restore a verified checkpoint only from a clean descendant product checkout:
 

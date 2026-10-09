@@ -31,7 +31,7 @@ ReleaseOperations ==
     {"release_planned", "release_open", "release_blocked", "release_done"}
 
 Operations ==
-    {"promote", "resume", "unblock", "pause", "claim", "heartbeat", "update", "recover_expired"}
+    {"promote", "resume", "unblock", "pause", "claim", "heartbeat", "update", "accept", "recover_expired"}
         \cup ReleaseOperations
 
 Phases == {"waiting", "holding", "releasing", "done"}
@@ -134,7 +134,7 @@ EnabledOperation(p) ==
       [] operation[p] = "heartbeat" ->
             /\ status[t] = "in_progress"
             /\ owner[t] = actor[p]
-      [] operation[p] = "update" ->
+      [] operation[p] \in {"update", "accept"} ->
             /\ status[t] = "in_progress"
             /\ owner[t] = actor[p]
             /\ expected[p] = revision[t]
@@ -153,7 +153,7 @@ StatusAfter(p) ==
       [] operation[p] = "pause" -> "blocked"
       [] operation[p] = "claim" -> "in_progress"
       [] operation[p] = "recover_expired" -> "open"
-      [] operation[p] \in {"heartbeat", "update"} -> status[target[p]]
+      [] operation[p] \in {"heartbeat", "update", "accept"} -> status[target[p]]
       [] operation[p] = "release_planned" -> "planned"
       [] operation[p] = "release_open" -> "open"
       [] operation[p] = "release_blocked" -> "blocked"

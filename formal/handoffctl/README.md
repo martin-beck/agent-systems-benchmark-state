@@ -40,9 +40,14 @@ authoritative revision, task status and owner unchanged.
 | `claim` | `open`, dependencies done | owner has no active task | `in_progress`, lease set |
 | `heartbeat` | `in_progress` | current owner, positive lease | lease renewed |
 | `update` | `in_progress` | current owner, exact revision | active fields updated |
+| `accept` | `in_progress`, referenced spec | current owner, exact revision, valid evidence metadata | spec acceptance recorded; lifecycle status unchanged |
 | `release` | `in_progress` | current owner | chosen non-active state, owner and lease cleared |
 | `recover-expired` | expired `in_progress` with a valid session | exact revision | `open`, ownership cleared, session restored |
 | `run` record | `in_progress`, unexpired | owner and current revision | bounded result recorded |
+
+The model includes `accept` as a status-preserving, exact-revision transition.
+Its task-spec and evidence-field validation is checked by the concrete Git/SQLite
+tests; the bounded model does not claim to prove evidence contents.
 
 `release --status` currently accepts every schema status other than
 `in_progress`; therefore the formal model checks releases to `planned`,
