@@ -7,7 +7,7 @@
     "AR-1731"
   ],
   "id": "AR-1732",
-  "next_action": "PR #529 exact head 08226e2; full asb-cli suite passes (249 tests). Await independent review and exact-head CI, then merge via merge_pr.py and perform post-merge verification.",
+  "next_action": "PR #529 merged as signed merge 942c7b110045823c942e362e5247b6ce15027ec5; monitor all exact-main workflows, then reconcile/doctor and accept/release AR-1732 with post-merge evidence.",
   "owner": "codex-asb-ar1732-run-sweep-20261009",
   "plan": "../plans/AR-1732-cli2key-run-sweep.md",
   "priority": "P1",
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Integrate cli2key runs and sweeps",
-  "updated_at": "2026-10-09T13:44:27+00:00",
+  "updated_at": "2026-10-09T13:44:42+00:00",
   "worktree_key": ""
 }
 ---
@@ -205,3 +205,6 @@ serve as production or official-provider qualification.
 
 - 2026-10-09T13:44:27+00:00: Recorded command exit 0; command argv SHA-256
   20e3ad38672cdf391488622cb5bf2478371440316d88630cefcb1e6a1ab31190.
+
+- 2026-10-09T13:44:42+00:00: merge_pr.py published the exact signed/DCO merge commit 942c7b1 to
+  protected main. Exact-main workflows are running; Huawei source-header workflow already passed.

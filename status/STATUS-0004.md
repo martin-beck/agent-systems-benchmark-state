@@ -633,7 +633,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | codex-asb-ar1757-human-output-20261009 | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
-| P1 | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md): Integrate cli2key runs and sweeps | codex-asb-ar1732-run-sweep-20261009 | Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence. | PR #529 exact head 08226e2; full asb-cli suite passes (249 tests). Await independent review and exact-head CI, then merge via merge_pr.py and perform post-merge verification. |
+| P1 | [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md): Integrate cli2key runs and sweeps | codex-asb-ar1732-run-sweep-20261009 | Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence. | PR #529 merged as signed merge 942c7b110045823c942e362e5247b6ce15027ec5; monitor all exact-main workflows, then reconcile/doctor and accept/release AR-1732 with post-merge evidence. |
 
 ### Open (1)
 

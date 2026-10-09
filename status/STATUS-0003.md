@@ -544,7 +544,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence. |
-| Next action | PR #529 exact head 08226e2; full asb-cli suite passes (249 tests). Await independent review and exact-head CI, then merge via merge_pr.py and perform post-merge verification. |
+| Next action | PR #529 merged as signed merge 942c7b110045823c942e362e5247b6ce15027ec5; monitor all exact-main workflows, then reconcile/doctor and accept/release AR-1732 with post-merge evidence. |
 
 ### AR-1733 — Qualify and document cli2key development mode
 
