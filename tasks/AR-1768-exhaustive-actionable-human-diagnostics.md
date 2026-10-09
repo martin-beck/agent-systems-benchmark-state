@@ -10,8 +10,8 @@
   "id": "AR-1768",
   "next_action": "Repair reviewer findings: classify lifecycle rejection and resource exhaustion distinctly, add catalog-driven producer coverage, and map every known warning explicitly; rerun focused/full gates and refresh exact-head PR.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
-  "observed_dirty": 2,
-  "observed_head": "62532a2c9482e1abb6774dcdb6e4d36a4a053d5a",
+  "observed_dirty": 0,
+  "observed_head": "18e938d50a022c851dea01d4331ab6b1972df25c",
   "owner": "codex-ar1768-diagnostics",
   "plan": "../plans/AR-1768-exhaustive-actionable-human-diagnostics.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:29:00+00:00",
+  "updated_at": "2026-10-09T21:29:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
