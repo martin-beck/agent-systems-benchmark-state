@@ -18,21 +18,21 @@ Generated from local Git and GitHub. Do not edit.
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@c540d3c38f7b` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.22 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
-| #532 | `feature/ar-1760-project-init-workspace@87903c75c0e7` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, QUEUED:, QUEUED: | feat: initialize ASB project workspaces |
+| #532 | `feature/ar-1760-project-init-workspace@87903c75c0e7` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: initialize ASB project workspaces |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37950291633 | `87903c75c0e7` | pull_request | Fault assurance | pending:- |
+| 37950291633 | `87903c75c0e7` | pull_request | Fault assurance | in_progress:- |
 | 37950291609 | `87903c75c0e7` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 37950291495 | `87903c75c0e7` | pull_request | Formal assurance | pending:- |
-| 37950291436 | `87903c75c0e7` | pull_request | Hosted portability and native qualification | queued:- |
+| 37950291495 | `87903c75c0e7` | pull_request | Formal assurance | in_progress:- |
+| 37950291436 | `87903c75c0e7` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 37950291357 | `87903c75c0e7` | pull_request | Huawei MIT source headers | completed:success |
-| 37950291292 | `87903c75c0e7` | pull_request | Repository quality | queued:- |
-| 37950291284 | `87903c75c0e7` | pull_request | Cross-repository development broker qualification | queued:- |
-| 37950291277 | `87903c75c0e7` | pull_request | Emulated aarch64 portability | pending:- |
-| 37950291205 | `87903c75c0e7` | pull_request | Credential-free benchmark path | queued:- |
+| 37950291292 | `87903c75c0e7` | pull_request | Repository quality | in_progress:- |
+| 37950291284 | `87903c75c0e7` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 37950291277 | `87903c75c0e7` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37950291205 | `87903c75c0e7` | pull_request | Credential-free benchmark path | in_progress:- |
 | 37950291199 | `87903c75c0e7` | pull_request | Portable protected-main provenance | completed:success |
-| 37950291191 | `87903c75c0e7` | pull_request | Rust verification | pending:- |
-| 37950135923 | `aae54cd6b918` | pull_request | Fault assurance | in_progress:- |
+| 37950291191 | `87903c75c0e7` | pull_request | Rust verification | in_progress:- |
+| 37950135923 | `aae54cd6b918` | pull_request | Fault assurance | completed:cancelled |
