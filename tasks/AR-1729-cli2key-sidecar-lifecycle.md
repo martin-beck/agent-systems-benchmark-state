@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a runtime-owned loopback sidecar lifecycle with a fresh per-invocation client key, private staging, bounded cleanup, and secret-safe evidence.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Supervise cli2key sidecar and ephemeral key",
-  "updated_at": "2026-10-09T12:25:45+00:00",
+  "updated_at": "2026-10-09T12:25:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1729-cli2key-sidecar-lifecycle"
 }
 ---
@@ -404,3 +404,6 @@ egress; benchmark agents remain loopback-only.
   evidence for a fresh terminal reconciliation claim.
 
 - 2026-10-09T12:25:45+00:00: Claimed by codex-asb-ar1729-closeout-20261009.
+
+- 2026-10-09T12:25:59+00:00: Recorded command exit 0; command argv SHA-256
+  1e6061e9e2efb5b931757435135ac45faa92a198430aff38404964135eea1265.
