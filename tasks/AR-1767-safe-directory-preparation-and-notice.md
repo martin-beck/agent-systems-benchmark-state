@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "PR #539 now points to signed exact head f34830b5b1fd5e3fdb8e79f7eb1d23f46f4dcfbe; await rerun exact-head CI and review. AR-1770 is the durable successor for descriptor-safe race hardening and missing acceptance-matrix gates.",
+  "next_action": "PR #539 now points to signed exact head f34830bb75ce919d43036b4f889afd4b9fa1375d; await rerun exact-head CI and review. AR-1770 is the durable successor for descriptor-safe race hardening and missing acceptance-matrix gates.",
   "observed_branch": "feature/ar-1767-safe-directory-preparation-and-notice",
   "observed_dirty": 0,
   "observed_head": "f34830bb75ce919d43036b4f889afd4b9fa1375d",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:55:38+00:00",
+  "updated_at": "2026-10-09T18:55:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -327,3 +327,8 @@ when useful; repeated commands must not claim an existing directory was new.
   deterministic race/concurrency tests, dry-run/permission/read-only/rollback, and full route stream
   matrix. State cache repair moved only the confirmed generated oversized handoffctl pyc into
   .runtime/cache-repair so reconciliation succeeds; handoffctl source was untouched.
+
+- 2026-10-09T18:55:48+00:00: Correction to prior checkpoint: the exact CI repair commit is
+  f34830bb75ce919d43036b4f889afd4b9fa1375d (SSH-signed and DCO), not the abbreviated hash typo in
+  the previous note. It is pushed to PR #539. All other recorded clippy, fmt, test, provenance, and
+  AR-1770 evidence remains unchanged.
