@@ -37,4 +37,4 @@ Generated from local Git and GitHub. Do not edit.
 | 37993744364 | `18e938d50a02` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 37993744337 | `18e938d50a02` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 37993744311 | `18e938d50a02` | pull_request | Credential-free benchmark path | in_progress:- |
-| 37993742442 | `dc6739049480` | workflow_dispatch | Formal assurance | in_progress:- |
+| 37993742442 | `dc6739049480` | workflow_dispatch | Formal assurance | completed:failure |
