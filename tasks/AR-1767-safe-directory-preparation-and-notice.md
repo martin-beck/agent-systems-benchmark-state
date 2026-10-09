@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "Publish signed commit 876e6f9 for independent review; request follow-up AR for descriptor-relative race hardening and expanded dry-run/permission/route matrix before acceptance.",
+  "next_action": "PR #539 is open at exact head 876e6f98d6a9e8b419cbcf83cb34d8a8903f47cd; wait for independent exact-head review and required CI. Parent coordinator must create dependent race-hardening/matrix repair AR before accepting.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:48:04+00:00",
+  "updated_at": "2026-10-09T18:48:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -244,3 +244,10 @@ when useful; repeated commands must not claim an existing directory was new.
 
 - 2026-10-09T18:48:04+00:00: Recorded command exit 0; command argv SHA-256
   da4d8286ea2c622c0f2a84acbe96471d97a4012b46588e04041c335303c7ca66.
+
+- 2026-10-09T18:48:31+00:00: Publication handoff 2026-10-09T18:51Z: branch
+  feature/ar-1767-safe-directory-preparation-and-notice pushed through handoffctl; PR #539 created
+  at https://github.com/martin-beck/agent-systems-benchmark/pull/539. Product worktree was clean at
+  signed commit 876e6f98d6a9e8b419cbcf83cb34d8a8903f47cd. Exact full test evidence is green as
+  recorded above. State wrapper post-reconcile continues to report only the known oversized
+  tools/__pycache__/handoffctl.cpython-312.pyc validation failure after durable recording.
