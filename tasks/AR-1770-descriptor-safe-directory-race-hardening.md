@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Independent reviewer must inspect PR #540 repaired exact head bf522fa8ad998b585634f492ef5765a7ff6a4120 and tree 3334d83d8199071d653fbe786e33393960926f42; then wait for exact-head CI.",
+  "next_action": "Fresh independent reviewer must inspect PR #540 exact head c207894096c7fa1827b5b5d1089ed2fa94ffb66a and tree c7ae526e2e7c6ece817b74db40a2666275446711; then wait for exact-head CI, including repaired formal lock.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T20:18:01+00:00",
+  "updated_at": "2026-10-09T20:18:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -408,3 +408,12 @@ implementation boundary explicitly and keep the product offline after install.
   ddbb5502f0d424795dabf150da7be015ab94ddbaabe138dce1d4d5c038935f17.
 
 - 2026-10-09T20:18:01+00:00: Heartbeat by codex-ar1770-descriptor-safe-races.
+
+- 2026-10-09T20:18:08+00:00: Review repair pushed as signed DCO commit c207894. safe_fs now rolls
+  back accumulated directories when current descriptor cloning or fchmod fails; prepare_child
+  reopens concurrent AlreadyExists winners with no-follow validation; focused tests now cover
+  concurrent reuse and file-parent no-mutation. CLI_ROUTE_ACCEPTANCE_MATRIX documents route-specific
+  human/JSON, dry-run, read-only, permission-shaped, rollback, and TUI evidence. Exact-head CI Loom
+  failure was reproduced locally: formal/Cargo.lock lacked the new rustix dependency introduced by
+  this AR; regenerated lock passed the full formal test suite offline (all reported tests green).
+  Fresh CI is required.
