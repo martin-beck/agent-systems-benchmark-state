@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Re-run the single unrelated lifecycle test serially to classify its state-root collision, then continue full gates. |
+| Next action | Run focused discovery and CLI tests with one cargo filter at a time, then full gates. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 

@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Re-run the single unrelated lifecycle test serially to classify its state-root collision, then continue full gates.",
+  "next_action": "Run focused discovery and CLI tests with one cargo filter at a time, then full gates.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 5,
   "observed_head": "ea5e52bfe843969c493f22146f66ccfa2415159a",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:49:46+00:00",
+  "updated_at": "2026-10-09T15:50:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -134,3 +134,6 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:49:46+00:00: Recorded command exit 1; command argv SHA-256
   ab1f7c499e6e269445892bbd708a6228559c89a99df0bd050ac3b894bfab6926.
+
+- 2026-10-09T15:50:00+00:00: Test invocation failed with cargo usage exit 1 because two TESTNAME
+  filters were supplied. No product failure; rerun each focused filter separately.

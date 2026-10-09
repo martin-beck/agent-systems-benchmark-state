@@ -21,7 +21,7 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | codex-asb-ar1757-human-output-20261009 | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
 | P0 | [AR-1761](../tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | codex-asb-ar1761-tool-install-20261009 | Install supported external ASB tools into a user/project-local root and persist validated records. | Retry exact full format and Clippy commands with product manifest path before the rustfmt separator. |
-| P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | codex-asb-ar1762-tool-discovery-20261009 | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Re-run the single unrelated lifecycle test serially to classify its state-root collision, then continue full gates. |
+| P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | codex-asb-ar1762-tool-discovery-20261009 | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Run focused discovery and CLI tests with one cargo filter at a time, then full gates. |
 
 ### Open (1)
 
@@ -514,3 +514,4 @@
 | P0 | [AR-1627](../tasks/AR-1627.md): TUI lifecycle test-injection isolation repair | Unclaimed | Eliminate the shared failure-injection race that blocked exact-main AR-1615 Trusted-main qualification. | None; retain the merged repair and exact hosted/local evidence. |
 | P0 | [AR-1628](../tasks/AR-1628.md): Top-level ASB-TUI bootstrap integration repair | Unclaimed | Repair the bootstrap-stage status-2 failure after broker and PTY handoff by skipping unsupported lifecycle polls for unavailable development agents. | None; remaining post-bootstrap timeout is tracked by AR-1629 and coverage hardening by AR-1630. |
 | P0 | [AR-1629](../tasks/AR-1629.md): Post-bootstrap ASB-TUI launch progression | Unclaimed | Repair the remaining exact top-level launch timeout after broker and PTY bootstrap succeed. | No further action; retain the paired launch receipt and continue AR-1615 final qualification. |
+| P0 | [AR-1630](../tasks/AR-1630.md): Development unavailable-agent coverage | Unclaimed | Cover the unavailable-agent bootstrap branch while retaining the protected coverage threshold. | No further action; retain the merged coverage receipt and continue AR-1615 final qualification. |
