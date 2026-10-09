@@ -7,7 +7,7 @@
     "AR-1737"
   ],
   "id": "AR-1751",
-  "next_action": "Wait for every fresh exact-head GitHub check on PR #518 at 2cda48c27ae99381a59dc0676126b34ec77d15ef to finish successfully, then request independent rereview of immutable head 2cda48c/tree 5b75e55c; do not self-review or merge.",
+  "next_action": "Independent rereview of PR #518 at immutable head 2cda48c27ae99381a59dc0676126b34ec77d15ef and tree 5b75e55c7d4ee1e58df42b1e9989a96ab8994995, focusing on bounded continuous-output drain, process-group cleanup/reap, and CLOEXEC restoration. If approved, a different owner may merge and close AR-1751; this owner must not self-review or merge.",
   "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
   "observed_dirty": 0,
   "observed_head": "2cda48c27ae99381a59dc0676126b34ec77d15ef",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T02:04:37+00:00",
+  "updated_at": "2026-10-09T02:14:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -456,3 +456,11 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
   focused runner, asb-cli 244/244, workspace tests, clippy, rustdoc, release build, coverage (95.88%
   lines/92.97% regions), deny, audit, contract, repository policy, and Gitleaks all passed. PR #518
   is MERGEABLE and fresh exact-head CI is starting.
+
+- 2026-10-09T02:14:11+00:00: Fresh exact-head GitHub CI is terminal SUCCESS for all 15 checks on
+  2cda48c, including Rust verification (run 37872776141), repository quality/coverage/supply chain
+  (37872776367), emulated aarch64 (37872776350), exact TUI inherited-fd/PTY journey (37872776452),
+  formal assurance (37872776391), fault assurance (37872776422), platform evidence (37872776471),
+  credential-free path (37872776384), and provenance/header/AWQ checks. GitHub reports PR #518
+  MERGEABLE/CLEAN with exact head 2cda48c and base 31ca7a4. Implementation stops now for independent
+  rereview; no self-review or merge.

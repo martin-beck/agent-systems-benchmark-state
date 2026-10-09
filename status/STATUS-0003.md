@@ -810,7 +810,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries. |
-| Next action | Wait for every fresh exact-head GitHub check on PR #518 at 2cda48c27ae99381a59dc0676126b34ec77d15ef to finish successfully, then request independent rereview of immutable head 2cda48c/tree 5b75e55c; do not self-review or merge. |
+| Next action | Independent rereview of PR #518 at immutable head 2cda48c27ae99381a59dc0676126b34ec77d15ef and tree 5b75e55c7d4ee1e58df42b1e9989a96ab8994995, focusing on bounded continuous-output drain, process-group cleanup/reap, and CLOEXEC restoration. If approved, a different owner may merge and close AR-1751; this owner must not self-review or merge. |
 
 
 ## Dependency graph
