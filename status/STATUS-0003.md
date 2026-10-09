@@ -922,7 +922,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define one versioned ASB project/tool inventory and catalog-selection configuration contract. |
-| Next action | Open the schema/config contract for implementation after AR-1745 is reconciled. |
+| Next action | Obtain independent technical review of PR #531, then wait for all exact-head checks and merge via integration/merge_pr.py. |
 
 ### AR-1760 — Initialize an ASB benchmark project workspace
 

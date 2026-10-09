@@ -7,7 +7,7 @@
     "AR-1745"
   ],
   "id": "AR-1759",
-  "next_action": "Open the schema/config contract for implementation after AR-1745 is reconciled.",
+  "next_action": "Obtain independent technical review of PR #531, then wait for all exact-head checks and merge via integration/merge_pr.py.",
   "observed_branch": "feature/ar-1759-tool-project-config-schema",
   "observed_dirty": 0,
   "observed_head": "36dab7a7addb33afad2ba1874a2b884e81635a6c",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T14:39:43+00:00",
+  "updated_at": "2026-10-09T14:40:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
@@ -88,3 +88,7 @@ unknown-field/path validation.
 
 - 2026-10-09T14:39:43+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-10-09T14:40:06+00:00: Implementation complete at signed SSH+DCO commits f45082a and 36dab7a;
+  PR #531 open at exact head 36dab7a. ProjectConfigV1, JSON Schema, documentation, positive/negative
+  tests, focused cargo test/clippy pass. Independent review and exact-head CI remain before merge.
