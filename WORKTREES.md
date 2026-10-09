@@ -64,8 +64,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 13, ahead 0 |
 | `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry` | `644085ecd2f3` | 0 | behind 7, ahead 6 |
-| `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery` | `be7ab08161bb` | 4 | behind 0, ahead 6 |
-| changed files | - | - | - | `crates/asb-cli/fixtures/human/public-family-output-v1.tsv`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/tool_discovery.rs`, `crates/asb-cli/tests/human_cli.rs` |
+| `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery` | `78bc38b6e88d` | 0 | behind 0, ahead 7 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 106, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 40, ahead 0 |
