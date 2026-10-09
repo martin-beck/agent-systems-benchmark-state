@@ -372,8 +372,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `tools/cli2key-spike/cli2key_spike.py`, `tools/cli2key-spike/test_cli2key_spike.py` |
 | `agent-systems-benchmark-ar-1734-development-tui-tool-environment` | `repair/ar-1734-development-tui-tool-environment` | `40f618b9389c` | 0 | behind 50, ahead 0 |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 49, ahead 0 |
-| `agent-systems-benchmark-ar-1735` | `repair/ar-1735-goose-fixture-determinism` | `6e721e2c97a3` | 2 | behind 0, ahead 1 |
-| changed files | - | - | - | `.github/workflows/emulated-aarch64.yml`, `.github/workflows/verify.yml` |
+| `agent-systems-benchmark-ar-1735` | `repair/ar-1735-goose-fixture-determinism` | `3aea09da2646` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar-1737-development-tui-linker-handoff` | `repair/ar-1737-development-tui-linker-handoff` | `199bd00a95c2` | 0 | behind 39, ahead 0 |
 | `agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility` | `repair/ar-1738-development-rustup-permission-compatibility` | `f020b2d4fd65` | 0 | behind 48, ahead 0 |
 | `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `617af40b356f` | 0 | behind 33, ahead 0 |
