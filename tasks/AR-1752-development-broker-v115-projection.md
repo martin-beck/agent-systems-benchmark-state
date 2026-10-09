@@ -2,23 +2,23 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T07:34:23+00:00",
   "depends_on": [
     "AR-1719"
   ],
   "id": "AR-1752",
   "next_action": "Claim in an isolated ASB worktree; reproduce the exact installed asb tui dynamic-catalog failure, repair DevelopmentBackend negotiated-version forwarding, and qualify the public install-to-route journey.",
-  "owner": "",
+  "owner": "codex-ar1752-v115-projection-20261009",
   "plan": "../plans/AR-1752-development-broker-v115-projection.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1752.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair development broker v1.15 dynamic-catalog projection",
-  "updated_at": "2026-10-09T03:20:00+00:00",
+  "updated_at": "2026-10-09T03:34:23+00:00",
   "worktree_key": ""
 }
 ---
@@ -53,3 +53,5 @@ unavailable, static, malformed, and transport failures without silent fallback.
 Reproduction evidence is retained under the active AR-1721 qualification root
 until this repair produces a reviewed current-main receipt. The eventual public
 journey evidence must contain no credential value or raw provider payload.
+
+- 2026-10-09T03:34:23+00:00: Claimed by codex-ar1752-v115-projection-20261009.

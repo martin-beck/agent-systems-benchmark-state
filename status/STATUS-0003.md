@@ -816,11 +816,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1752-v115-projection-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works. |
@@ -1636,7 +1636,7 @@ flowchart LR
         AR_1749["AR-1749 - Done"]:::status_done
         AR_1750["AR-1750 - Done"]:::status_done
         AR_1751["AR-1751 - Done"]:::status_done
-        AR_1752["AR-1752 - Open"]:::status_open
+        AR_1752["AR-1752 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
