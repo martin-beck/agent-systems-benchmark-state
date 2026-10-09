@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Run source-header policy plus full focused/full applicable gates on repaired merge tree, commit signed+DCO, push exact head, and recheck PR #535 CI. |
+| Next action | Wait for exact-head CI to terminal results; independently inspect/review PR diff and merge only after all required checks green. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 

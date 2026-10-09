@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Run source-header policy plus full focused/full applicable gates on repaired merge tree, commit signed+DCO, push exact head, and recheck PR #535 CI.",
+  "next_action": "Wait for exact-head CI to terminal results; independently inspect/review PR diff and merge only after all required checks green.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 0,
   "observed_head": "78bc38b6e88d41eb2f96f7595c058f606bf8a6bd",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:21:59+00:00",
+  "updated_at": "2026-10-09T16:22:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -470,3 +470,10 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:21:59+00:00: Recorded command exit 0; command argv SHA-256
   9e5b46bf1d19faa4398bbf1465542a960a5bf37cb5cfb9857c07676beb2ac69d.
+
+- 2026-10-09T16:22:13+00:00: Repaired product branch now clean and pushed as exact PR #535 head
+  78bc38b6e88d41eb2f96f7595c058f606bf8a6bd. Local full serialized workspace tests passed; fmt,
+  workspace Clippy -D warnings, rustdoc, release build, and source-header policy passed. The
+  previously observed exit-101 suite failures were repaired contract fixtures/classification: tool
+  is now in human public inventory, output fixture includes tool, and inventory count is 26. CI for
+  78bc38b is running; mergeStateStatus is BLOCKED only while required checks are pending.
