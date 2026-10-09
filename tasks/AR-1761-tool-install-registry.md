@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1761-tool-install-registry",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T17:41:04+00:00",
   "depends_on": [
     "AR-1759",
     "AR-1760"
@@ -12,7 +12,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-ar1761-tool-install-20261009",
   "plan": "../plans/AR-1761-tool-install-registry.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1761.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:40:58+00:00",
+  "updated_at": "2026-10-09T15:41:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -46,3 +46,5 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T15:40:58+00:00: dependencies AR-1759 and AR-1760 verified accepted/released;
   implementation ready
+
+- 2026-10-09T15:41:04+00:00: Claimed by codex-asb-ar1761-tool-install-20261009.

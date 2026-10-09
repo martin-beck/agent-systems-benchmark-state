@@ -942,11 +942,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1761-tool-install-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
@@ -1827,7 +1827,7 @@ flowchart LR
         AR_1758["AR-1758 - Done"]:::status_done
         AR_1759["AR-1759 - Done"]:::status_done
         AR_1760["AR-1760 - Done"]:::status_done
-        AR_1761["AR-1761 - Open"]:::status_open
+        AR_1761["AR-1761 - In progress"]:::status_in_progress
         AR_1762["AR-1762 - In progress"]:::status_in_progress
         AR_1763["AR-1763 - Planned"]:::status_planned
         AR_1764["AR-1764 - Planned"]:::status_planned
@@ -3844,4 +3844,3 @@ flowchart LR
 | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md) | [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0844](../tasks/AR-0844-frontend-api-integration.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
-| [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md) |
