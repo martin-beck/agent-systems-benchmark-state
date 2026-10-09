@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. | codex-asb-ar1757-human-output-20261009 |
 | P0 | [AR-1761](tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | Install supported external ASB tools into a user/project-local root and persist validated records. | Obtain independent technical review and GitHub approval; wait for every PR check at exact head to reach success, then integrate with merge_pr.py against the current exact main base. | codex-asb-ar1761-tool-install-20261009 |
-| P0 | [AR-1762](tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Rerun workflow provenance test and full locked serial workspace tests; then run fmt/clippy/rustdoc/release gates. | codex-asb-ar1762-tool-discovery-20261009 |
+| P0 | [AR-1762](tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Run explicit product-worktree fmt, clippy, rustdoc, and release gates via handoffctl; then inspect clean diff and commit provenance fixture update. | codex-asb-ar1762-tool-discovery-20261009 |
 
 ## Open
 

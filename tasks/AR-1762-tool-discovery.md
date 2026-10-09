@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Rerun workflow provenance test and full locked serial workspace tests; then run fmt/clippy/rustdoc/release gates.",
+  "next_action": "Run explicit product-worktree fmt, clippy, rustdoc, and release gates via handoffctl; then inspect clean diff and commit provenance fixture update.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 2,
   "observed_head": "b81ef5c7ebf323ddfc49e5722b070569bc4d2df1",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:05:46+00:00",
+  "updated_at": "2026-10-09T16:06:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -316,3 +316,8 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:05:46+00:00: Recorded command exit 101; command argv SHA-256
   f7fe9c596997f8cbab82afd991fb52d56cfaa4e62e61047d7dee66b068f5986c.
+
+- 2026-10-09T16:06:01+00:00: Gate invocation mistake recorded: the first fmt/clippy/rustdoc/release
+  batch omitted --manifest-path, so handoffctl correctly ran from the state repository and each
+  Cargo command failed with 'could not find Cargo.toml'. No product gate was exercised or changed.
+  Repair is to rerun every gate with the explicit product worktree manifest path.

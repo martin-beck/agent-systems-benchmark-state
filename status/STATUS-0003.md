@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Rerun workflow provenance test and full locked serial workspace tests; then run fmt/clippy/rustdoc/release gates. |
+| Next action | Run explicit product-worktree fmt, clippy, rustdoc, and release gates via handoffctl; then inspect clean diff and commit provenance fixture update. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 
