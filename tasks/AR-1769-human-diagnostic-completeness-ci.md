@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-10T00:31:17+00:00",
   "depends_on": [
     "AR-1768"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1769-diagnostic-ci-terra",
   "plan": "../plans/AR-1769-human-diagnostic-completeness-ci.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1769.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T22:31:14+00:00",
+  "updated_at": "2026-10-09T22:31:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -55,3 +55,5 @@ timeouts/cancellation, partial results, and warning-only development behavior.
 
 - 2026-10-09T22:31:14+00:00: AR-1768 is done and exact-main post-merge evidence is terminal green;
   dependency and declared worktree path verified.
+
+- 2026-10-09T22:31:17+00:00: Claimed by codex-ar1769-diagnostic-ci-terra.
