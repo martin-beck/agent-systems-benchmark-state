@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | PR #539 now points to signed exact head d01741ce97ad46dccc603433b8a158a397a91b71; await full exact-head CI and review. Parent must create AR-1768 successor for residual race/matrix hardening before accepting AR-1767. | codex-ar1767-directory-preparation |
+| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | PR #539 now points to signed exact head f34830b5b1fd5e3fdb8e79f7eb1d23f46f4dcfbe; await rerun exact-head CI and review. AR-1770 is the durable successor for descriptor-safe race hardening and missing acceptance-matrix gates. | codex-ar1767-directory-preparation |
 
 ## Open
 

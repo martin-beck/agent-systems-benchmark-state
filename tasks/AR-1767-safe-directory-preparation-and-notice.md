@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "PR #539 now points to signed exact head d01741ce97ad46dccc603433b8a158a397a91b71; await full exact-head CI and review. Parent must create AR-1768 successor for residual race/matrix hardening before accepting AR-1767.",
+  "next_action": "PR #539 now points to signed exact head f34830b5b1fd5e3fdb8e79f7eb1d23f46f4dcfbe; await rerun exact-head CI and review. AR-1770 is the durable successor for descriptor-safe race hardening and missing acceptance-matrix gates.",
   "observed_branch": "feature/ar-1767-safe-directory-preparation-and-notice",
   "observed_dirty": 0,
   "observed_head": "f34830bb75ce919d43036b4f889afd4b9fa1375d",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:55:21+00:00",
+  "updated_at": "2026-10-09T18:55:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -316,3 +316,14 @@ when useful; repeated commands must not claim an existing directory was new.
 
 - 2026-10-09T18:55:21+00:00: Recorded command exit 0; command argv SHA-256
   bc12b28be8cbce8316d4bfcdfe61c705986063aba7512292466df5192f0f51d4.
+
+- 2026-10-09T18:55:38+00:00: CI repair completed 2026-10-09T18:58Z: repaired clippy failure by
+  removing needless as_deref and restoring mutability only where campaign notice borrowing requires
+  it. cargo fmt --all and cargo clippy -p asb-cli --all-targets -- -D warnings passed; cargo test -p
+  asb-cli passed all prior suites except provenance hash after formatting, then workflow_transcript
+  3/3 passed after updating the exact lib.rs digest. Signed DCO repair commit
+  f34830b5b1fd5e3fdb8e79f7eb1d23f46f4dcfbe is pushed to PR #539. Created and reconciled successor
+  AR-1770 (state commits 1fa805b09/eceb697bc) covering descriptor-relative race hardening,
+  deterministic race/concurrency tests, dry-run/permission/read-only/rollback, and full route stream
+  matrix. State cache repair moved only the confirmed generated oversized handoffctl pyc into
+  .runtime/cache-repair so reconciliation succeeds; handoffctl source was untouched.
