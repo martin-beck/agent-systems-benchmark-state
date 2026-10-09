@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Remove unnecessary mutable stdout binding from bounded probe, then rerun focused tests. |
+| Next action | Refactor discovery probe context to satisfy clippy too-many-arguments, then rerun clippy and focused tests. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 

@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Remove unnecessary mutable stdout binding from bounded probe, then rerun focused tests.",
+  "next_action": "Refactor discovery probe context to satisfy clippy too-many-arguments, then rerun clippy and focused tests.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 0,
   "observed_head": "87aaa121984fda4b503df6a500607295cf1a2f5e",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:56:16+00:00",
+  "updated_at": "2026-10-09T15:56:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -214,3 +214,8 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:56:16+00:00: Recorded command exit 101; command argv SHA-256
   dffdde923dcdbad95c844c3db2575e491c906ddc00cbac3dbf2af63d8fc8ceb7.
+
+- 2026-10-09T15:56:49+00:00: Full workspace clippy failed at discovery helper
+  inspect_candidate_with: 8 arguments violates clippy::too_many_arguments under -D warnings.
+  Refactoring source/root/project-local/version fields into CandidateContext; no functional gate
+  failure.
