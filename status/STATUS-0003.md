@@ -1034,7 +1034,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implementing safe directory preparation and notices for command-owned ASB outputs. |
-| Next action | Compile TUI notice wiring and then address review-required race/dry-run/documentation gaps before commit; do not claim review-ready until those gates pass. |
+| Next action | Run full cargo test -p asb-cli and git diff review; then implement or explicitly document remaining TOCTOU/dry-run matrix gaps before signed commit. |
 
 ### AR-1768 — Exhaustive actionable human diagnostics
 

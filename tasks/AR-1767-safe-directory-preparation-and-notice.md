@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "Compile TUI notice wiring and then address review-required race/dry-run/documentation gaps before commit; do not claim review-ready until those gates pass.",
+  "next_action": "Run full cargo test -p asb-cli and git diff review; then implement or explicitly document remaining TOCTOU/dry-run matrix gaps before signed commit.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:42:45+00:00",
+  "updated_at": "2026-10-09T18:42:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -178,3 +178,11 @@ when useful; repeated commands must not claim an existing directory was new.
   b5ac1bdc1404e1f700e90d066796809b668b376321a3f181578f5521e9969fee.
 
 - 2026-10-09T18:42:45+00:00: Heartbeat by codex-ar1767-directory-preparation.
+
+- 2026-10-09T18:42:54+00:00: 2026-10-09T18:44Z: TUI notice test passed 1/1 after dispatch/execute
+  wiring; earlier central directory tests remain 2/2 passing and test-binary compilation passed. A
+  deliberately invalid combined cargo test filter was recorded as an expected CLI usage failure (two
+  filters are not accepted by cargo test), then the correct single-filter TUI run passed. Added
+  user-facing workspace, command-output, and TUI lifecycle documentation. Added post-rename symlink
+  detection to atomic output writer. Independent review still flags descriptor-relative race
+  hardening and broader dry-run/permission/route matrix as open before commit.

@@ -42,7 +42,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | codex-ar1767-directory-preparation | Implementing safe directory preparation and notices for command-owned ASB outputs. | Compile TUI notice wiring and then address review-required race/dry-run/documentation gaps before commit; do not claim review-ready until those gates pass. |
+| P0 | [AR-1767](../tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | codex-ar1767-directory-preparation | Implementing safe directory preparation and notices for command-owned ASB outputs. | Run full cargo test -p asb-cli and git diff review; then implement or explicitly document remaining TOCTOU/dry-run matrix gaps before signed commit. |
 
 ### Open (1)
 
