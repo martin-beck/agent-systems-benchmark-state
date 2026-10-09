@@ -7,7 +7,7 @@
     "AR-1737"
   ],
   "id": "AR-1751",
-  "next_action": "Repair independent-review P1 on PR #518 without rewriting d0ab2af: isolate the GCC capability probe in an owned process group, bound descendant termination/output drain after leader exit, prove linker-prefix CLOEXEC restoration on hostile descendant and timeout paths, then publish a new signed+DCO head and rerun exact-head gates.",
+  "next_action": "Wait for every fresh exact-head GitHub check on PR #518 at abf4b6566c6e8bd519840587f440c0977652cc5b to finish successfully, then request independent rereview of that immutable head/tree; do not self-review or merge.",
   "observed_branch": "repair/ar-1751-gcc-linker-prefix-confinement",
   "observed_dirty": 0,
   "observed_head": "abf4b6566c6e8bd519840587f440c0977652cc5b",
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Confine GCC linker-prefix trust after AR-1737",
-  "updated_at": "2026-10-09T01:42:54+00:00",
+  "updated_at": "2026-10-09T01:43:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
 }
 ---
@@ -372,3 +372,13 @@ assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
 
 - 2026-10-09T01:42:54+00:00: Recorded command exit 0; command argv SHA-256
   9fd0b16af5f25b2e94bf7720908ca512a1db8ef5c1f5d88cec1e57c0752d6e04.
+
+- 2026-10-09T01:43:42+00:00: Published additive signed+DCO P1 repair
+  abf4b6566c6e8bd519840587f440c0977652cc5b (tree b8fa72b264ee66cdebbdea468a9bd4db8462c87d) without
+  rewriting d0ab2af. The GCC capability probe now owns a process group, detects leader exit without
+  early reap, kills descendants, reaps the leader, and performs bounded nonblocking output drain;
+  all error/timeout paths restore linker-prefix CLOEXEC. Added deterministic
+  descendant-retains-stdout/FD and timeout regressions. Focused tests and full workspace
+  test/doc/release/clippy gates passed; coverage passed at 95.88% lines/92.97% regions; repository
+  policy, Gitleaks, cargo-deny, cargo-audit, and contract consistency passed. Push is exact, PR #518
+  is MERGEABLE, and fresh exact-head CI is running.

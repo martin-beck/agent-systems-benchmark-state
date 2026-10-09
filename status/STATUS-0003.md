@@ -810,7 +810,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries. |
-| Next action | Repair independent-review P1 on PR #518 without rewriting d0ab2af: isolate the GCC capability probe in an owned process group, bound descendant termination/output drain after leader exit, prove linker-prefix CLOEXEC restoration on hostile descendant and timeout paths, then publish a new signed+DCO head and rerun exact-head gates. |
+| Next action | Wait for every fresh exact-head GitHub check on PR #518 at abf4b6566c6e8bd519840587f440c0977652cc5b to finish successfully, then request independent rereview of that immutable head/tree; do not self-review or merge. |
 
 
 ## Dependency graph
