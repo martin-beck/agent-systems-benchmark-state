@@ -26,7 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 37950649072 | `90abb5b3bb29` | pull_request | Huawei MIT source headers | completed:success |
 | 37950648982 | `90abb5b3bb29` | pull_request | Portable protected-main provenance | completed:success |
-| 37950648981 | `90abb5b3bb29` | pull_request | Repository quality | in_progress:- |
+| 37950648981 | `90abb5b3bb29` | pull_request | Repository quality | completed:success |
 | 37950648968 | `90abb5b3bb29` | pull_request | Fault assurance | completed:success |
 | 37950648912 | `90abb5b3bb29` | pull_request | Rust verification | in_progress:- |
 | 37950648908 | `90abb5b3bb29` | pull_request | Emulated aarch64 portability | in_progress:- |
