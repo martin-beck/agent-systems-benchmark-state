@@ -10,7 +10,7 @@
   "id": "AR-1768",
   "next_action": "Bulk producer catalog repair is implemented for all routed RouterError codes, with explicit diagnostic contexts and human text. Focused diagnostic, human, contract, and formatting gates pass; run full workspace test, clippy/doc/release gates, then sign/push the exact head for fresh independent review and PR #541 CI.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "5863a633fc9e40cdf9ff3d92db527233d984eeee",
   "owner": "codex-ar1768-diagnostics",
   "plan": "../plans/AR-1768-exhaustive-actionable-human-diagnostics.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:46:45+00:00",
+  "updated_at": "2026-10-09T21:46:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
