@@ -59,8 +59,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1752` | `repair/ar-1752-development-broker-v115-projection` | `c2ad947f27ea` | 0 | behind 28, ahead 0 |
 | `agent-systems-benchmark-ar-1755-idempotent-make-install` | `fix/ar-1755-idempotent-make-install` | `6ac109533612` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-ar-1755-integration` | `DETACHED` | `64eaad2215e4` | 0 | behind 19, ahead 0 |
-| `agent-systems-benchmark-ar-1757-human-first-cli-output` | `feature/ar-1757-human-first-cli-output` | `6e5e8878ff3c` | 6 | behind 0, ahead 3 |
-| changed files | - | - | - | `crates/asb-cli/src/human.rs`, `crates/asb-cli/tests/cli_e2e.rs`, `crates/asb-cli/tests/guide_examples.rs`, `crates/asb-cli/tests/human_cli.rs`, `docs/QUICKSTART.md`, `crates/asb-cli/fixtures/human/public-family-output-v1.tsv` |
+| `agent-systems-benchmark-ar-1757-human-first-cli-output` | `feature/ar-1757-human-first-cli-output` | `06a424fadb42` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 12, ahead 0 |
 | `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `main` | `27d7c931a6f3` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1760-project-init` | `feature/ar-1760-project-init-workspace` | `90abb5b3bb29` | 0 | behind 0, ahead 5 |
