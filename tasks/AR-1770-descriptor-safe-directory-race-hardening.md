@@ -3,7 +3,9 @@
   "branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1767"],
+  "depends_on": [
+    "AR-1767"
+  ],
   "id": "AR-1770",
   "next_action": "Implement descriptor-relative or equivalent fail-closed directory and atomic publication paths, then complete the hostile filesystem and stream matrix.",
   "observed_branch": "",
@@ -13,14 +15,21 @@
   "plan": "../plans/AR-1770-descriptor-safe-directory-race-hardening.md",
   "priority": "P1",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "property-or-fuzz", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1770.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "property-or-fuzz",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1770.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1770.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T18:52:00+00:00",
+  "updated_at": "2026-10-09T19:22:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -39,3 +48,6 @@ rollback tests; path-specific error and human-notice tests for setup/config,
 project, tool, plan, run/sweep, report, record/campaign, easy lifecycle, and
 TUI routes; and machine-stream privacy checks. Record any platform-specific
 implementation boundary explicitly and keep the product offline after install.
+
+- 2026-10-09T19:22:21+00:00: AR-1767 is released done with exact merge and all post-merge gates;
+  promote the descriptor-safe race and acceptance-matrix successor.

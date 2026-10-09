@@ -42,11 +42,12 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
+| P1 | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Unclaimed | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Implement descriptor-relative or equivalent fail-closed directory and atomic publication paths, then complete the hostile filesystem and stream matrix. |
 
 ### Blocked (87)
 
@@ -140,7 +141,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (102)
+### Planned (101)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -242,7 +243,6 @@
 | P1 | [AR-1683](../tasks/AR-1683.md): Provide approved TLC attestation resource bounds | Unclaimed | Make the hosted formal workflow export the approved TLC memory and swap bounds required by attestation. | Run formal publication verification and runner regression tests on the exact hosted head. |
 | P1 | [AR-1684](../tasks/AR-1684.md): Harden runtime selector helper matrix | Unclaimed | Lock in fail-closed rejection of hostile selector directory, symlink, and non-regular entries. | Run the targeted authority defensive matrix and full hosted checks on the signed head. |
 | P1 | [AR-1725](../tasks/AR-1725-documentation-quickstart-and-platform-install.md): Document two-agent OpenRouter and TUI quickstarts | Unclaimed | Publish a linked, executable tutorial for two-agent OpenRouter benchmarking, ASB TUI workflows, dependencies, and per-distribution installation. | Promote after coordinator integrity repair and dependency verification; audit existing docs, add the CLI/TUI tutorial and platform install matrix, then qualify links, commands, and visual evidence. |
-| P1 | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Unclaimed | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Implement descriptor-relative or equivalent fail-closed directory and atomic publication paths, then complete the hostile filesystem and stream matrix. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
