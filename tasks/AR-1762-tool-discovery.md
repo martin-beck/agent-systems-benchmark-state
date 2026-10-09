@@ -10,8 +10,8 @@
   "id": "AR-1762",
   "next_action": "Verify clean state handoff, push the signed merge commit, rerun exact-head gates after updated main base, then continue review/CI.",
   "observed_branch": "feature/ar-1762-tool-discovery",
-  "observed_dirty": 21,
-  "observed_head": "fd0ac87cb270011d0e83987696be6f288b1b3f18",
+  "observed_dirty": 0,
+  "observed_head": "be7ab08161bbc5eb8310242e37844bf95a2f5c73",
   "owner": "codex-asb-ar1762-tool-discovery-20261009",
   "plan": "../plans/AR-1762-tool-discovery.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:10:38+00:00",
+  "updated_at": "2026-10-09T16:10:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
