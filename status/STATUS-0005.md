@@ -71,7 +71,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | codex-ar1769-matrix-repair-terra | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Obtain fresh independent technical review of signed head 57652ef; if clean, publish exact PR and require exact-head CI before integration. |
+| P0 | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | codex-ar1769-matrix-repair-terra | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Repair fresh-review P0: replace prose-keyword CLI diagnostic inference with a fail-closed reviewed typed identity boundary; reject bare, multiline, and dynamic producer paths; then rerun focused and full gates and obtain fresh review. |
 
 ### Open (1)
 

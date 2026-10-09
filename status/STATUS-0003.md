@@ -1062,7 +1062,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. |
-| Next action | Obtain fresh independent technical review of signed head 57652ef; if clean, publish exact PR and require exact-head CI before integration. |
+| Next action | Repair fresh-review P0: replace prose-keyword CLI diagnostic inference with a fail-closed reviewed typed identity boundary; reject bare, multiline, and dynamic producer paths; then rerun focused and full gates and obtain fresh review. |
 
 ### AR-1770 — Descriptor-safe directory race hardening and acceptance matrix
 

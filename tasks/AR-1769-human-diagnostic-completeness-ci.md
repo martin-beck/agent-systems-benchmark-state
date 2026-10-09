@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1769",
-  "next_action": "Obtain fresh independent technical review of signed head 57652ef; if clean, publish exact PR and require exact-head CI before integration.",
+  "next_action": "Repair fresh-review P0: replace prose-keyword CLI diagnostic inference with a fail-closed reviewed typed identity boundary; reject bare, multiline, and dynamic producer paths; then rerun focused and full gates and obtain fresh review.",
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "observed_dirty": 0,
   "observed_head": "eb5bfb381f76e452bfff5b258ab1dad61001e916",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T23:08:13+00:00",
+  "updated_at": "2026-10-09T23:08:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -444,3 +444,11 @@ timeouts/cancellation, partial results, and warning-only development behavior.
 
 - 2026-10-09T23:08:09+00:00: Recorded command exit 0; command argv SHA-256
   9166d24a19274164d48d4bf2face16b33e7f8195fbe8130f2f3b751a8beb3b7d.
+
+- 2026-10-09T23:08:39+00:00: Signed head eb5bfb381f76e452bfff5b258ab1dad61001e916 refreshes exact
+  workflow provenance for 4ce0f910. Full workspace gate before the refresh passed fmt, clippy,
+  workspace tests and failed only workflow_transcript provenance because lib.rs digest advanced to
+  5cc827b89e7bbd1c8f50e7a44074fdd6ebd5030c3a59b4bcd72a61b1109df290; fixture is now refreshed. Fresh
+  independent review found P0: for_cli_literal still accepts future prose-keyword producers and
+  source scanning misses dynamic/multiline bare constructors. No PR published; repairing fail-closed
+  typed boundary.
