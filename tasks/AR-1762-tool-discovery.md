@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Implement deterministic system/project inventory discovery after AR-1759 and AR-1760.",
+  "next_action": "Repair discovery compile failures (unused imports, sortable source enum, config bound type), then rerun focused tests.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 4,
   "observed_head": "ea5e52bfe843969c493f22146f66ccfa2415159a",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:44:38+00:00",
+  "updated_at": "2026-10-09T15:44:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -77,3 +77,7 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T15:44:38+00:00: Recorded command exit 101; command argv SHA-256
   5719b1305347319cb9670126dde5b8aefd936841ab34dc44dd40df59a7e9e38a.
+
+- 2026-10-09T15:44:49+00:00: Failure recorded: focused cargo test exited 101 because discovery had
+  unused imports, DiscoverySource lacked Ord for deterministic sorting, and tool_discovery passed
+  u64 where read_bounded_json requires usize. Patched all four issues; retry through handoffctl.

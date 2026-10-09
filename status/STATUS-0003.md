@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Implement deterministic system/project inventory discovery after AR-1759 and AR-1760. |
+| Next action | Repair discovery compile failures (unused imports, sortable source enum, config bound type), then rerun focused tests. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 
