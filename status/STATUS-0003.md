@@ -1048,7 +1048,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
-| Next action | Exact signed head a601a53 is pushed to PR #541. Local locked workspace tests, focused diagnostics/human/contract tests, clippy -D warnings, rustdoc -D warnings, and release build all pass. Independent review of the bulk catalog repair is required; exact-head GitHub checks are running, with prior Docker Hub rate-limit failures to distinguish from product failures. Do not merge until review and every required check are green. |
+| Next action | Final exact producer repair is signed at a270a9d and local focused plus locked workspace gates pass. Push a270a9d to PR #541, obtain fresh independent review of the exact dev_metadata_failed mapping/catalog row, and wait for all exact-head required CI checks before merge. |
 
 ### AR-1769 — Human diagnostic completeness CI gate
 

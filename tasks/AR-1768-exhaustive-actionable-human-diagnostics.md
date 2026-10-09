@@ -8,7 +8,7 @@
     "AR-1767"
   ],
   "id": "AR-1768",
-  "next_action": "Exact signed head a601a53 is pushed to PR #541. Local locked workspace tests, focused diagnostics/human/contract tests, clippy -D warnings, rustdoc -D warnings, and release build all pass. Independent review of the bulk catalog repair is required; exact-head GitHub checks are running, with prior Docker Hub rate-limit failures to distinguish from product failures. Do not merge until review and every required check are green.",
+  "next_action": "Final exact producer repair is signed at a270a9d and local focused plus locked workspace gates pass. Push a270a9d to PR #541, obtain fresh independent review of the exact dev_metadata_failed mapping/catalog row, and wait for all exact-head required CI checks before merge.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "observed_dirty": 0,
   "observed_head": "a270a9d3d709daddb85bd65885e6bd14c988855b",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 196,
+  "task_revision": 197,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:56:55+00:00",
+  "updated_at": "2026-10-09T21:57:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -578,3 +578,7 @@ say what remains usable.
   0dd094167397bf43fd3d15e4886090f6918dbd8e37fabc18ddc16144063db1da.
 
 - 2026-10-09T21:56:55+00:00: Heartbeat by codex-ar1768-diagnostics.
+
+- 2026-10-09T21:57:05+00:00: Added explicit typed classifier/context and catalog row for the actual
+  tui.rs producer dev_metadata_failed. Focused diagnostic/human/contract/formatting and full locked
+  workspace tests pass; product tree clean and lease refreshed.
