@@ -16,13 +16,21 @@
   "plan": "../plans/AR-1731-cli2key-codex-adapter.md",
   "priority": "P1",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:0c1145e3541052c6e17abd834e8a298a1a9955d6cdfcc17cadf27e127bdd567a",
+    "evidence_ref": "quality/AR-1731-cli2key-postmerge-receipt.json",
+    "spec_ref": "specs/AR-1731.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1731.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Connect Codex adapter to cli2key backend",
-  "updated_at": "2026-10-09T12:55:37+00:00",
+  "updated_at": "2026-10-09T13:14:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1731-cli2key-adapter"
 }
 ---
@@ -161,3 +169,7 @@ OpenRouter, ambient Codex defaults, or a different endpoint/model.
 - 2026-10-09T12:55:37+00:00: Post-merge portable provenance failed because locally constructed merge
   b3cb9b2 omitted Signed-off-by. AR-1758 records the failure and supported no-history-rewrite repair
   path.
+
+- 2026-10-09T13:14:37+00:00: Accepted implementation PR #527 and repaired exact-main publication
+  021ca1c39ff0199aa2c193026783712bc73bc51b; focused hostile tests, independent review, and all
+  required exact-main workflows are successful.
