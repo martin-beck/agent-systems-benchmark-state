@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "repair/ar-1758-merge-dco",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-09T14:55:12+00:00",
   "depends_on": [],
@@ -14,10 +14,10 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates.",
-  "task_revision": 4,
+  "task_revision": 6,
   "title": "Repair AR-1731 protected-main merge provenance",
-  "updated_at": "2026-10-09T12:55:12+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-10-09T12:56:40+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1758-merge-dco"
 }
 ---
 
@@ -32,3 +32,6 @@ until the repaired exact-main workflows are green.
   publication mismatch without rewriting history; dependency cycle removed.
 
 - 2026-10-09T12:55:12+00:00: Claimed by codex-asb-ar1758-merge-dco-repair-20261009.
+
+- 2026-10-09T12:56:40+00:00: Recorded command exit 0; command argv SHA-256
+  bac5d7b3843f6fd01b1cb89819cc1a7fec08c5ea266e78359b30684dd859efa7.
