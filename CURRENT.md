@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1766](tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | Record post-merge receipt for merge 00840438 and all ten exact-main workflows, run doctor --live, accept spec, then release AR-1766 done. | codex-ar1766-diagnostics |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |

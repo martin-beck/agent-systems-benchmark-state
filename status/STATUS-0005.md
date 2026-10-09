@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1734](../tasks/AR-1734-development-tui-tool-environment.md) | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md), [AR-1727](../tasks/AR-1727-development-broker-foreground-terminal.md) | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md), [AR-1738](../tasks/AR-1738-development-rustup-permission-compatibility.md) |
 | [AR-1735](../tasks/AR-1735-goose-symlink-fixture-determinism.md) | None | None |
 | [AR-1736](../tasks/AR-1736-backend-model-catalog-execution.md) | [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | None |
 | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md) | [AR-1726](../tasks/AR-1726-development-rustup-shim-permissions.md), [AR-1734](../tasks/AR-1734-development-tui-tool-environment.md) | [AR-1751](../tasks/AR-1751-gcc-linker-prefix-confinement.md) |
@@ -38,12 +37,6 @@
 | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md) | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md) | [AR-1763](../tasks/AR-1763-generated-catalog-selection.md) |
 
 ## Complete AR inventory
-
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | codex-ar1766-diagnostics | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | Record post-merge receipt for merge 00840438 and all ten exact-main workflows, run doctor --live, accept spec, then release AR-1766 done. |
 
 ### Open (1)
 
@@ -256,7 +249,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (540)
+### Done (541)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -525,3 +518,5 @@
 | P0 | [AR-1607](../tasks/AR-1607.md): OpenRouter provider and model setup | Unclaimed | Expose OpenRouter, API-key reference, supported models, and validation to the development wizard. | Promote after AR-1601 and implement the additive provider/catalog/config contract. |
 | P0 | [AR-1608](../tasks/AR-1608.md): Configuration persistence and shared defaults | Unclaimed | Persist editable provider/agent/model/auth selections and shared defaults safely for subsequent runs. | Promote after AR-1607 release and implement atomic redacted configuration updates. |
 | P0 | [AR-1609](../tasks/AR-1609.md): Coding-agent adapter catalog and compatibility | Unclaimed | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. | Promote after AR-1607 release; implement additive adapter records and compatibility diagnostics. |
+| P0 | [AR-1611](../tasks/AR-1611.md): Integrated dev-channel TUI install and launch | Unclaimed | Make asb tui install fetch the current dev-channel TUI, build it in a temporary staging area, publish atomically, and launch it through the trusted ASB router. | Promote after the current install/router implementation is audited; add an exact-main disposable install, upgrade, rollback, and launch qualification. |
+| P0 | [AR-1612](../tasks/AR-1612.md): Selected-workload recording campaign controls | Unclaimed | Expose a simple ASB control operation to record responses for selected or all implemented workloads and make the sealed result available for the next offline run. | Promote after configuration persistence is released; implement typed selected/all workload planning, bounded execution, sealing, and offline activation. |

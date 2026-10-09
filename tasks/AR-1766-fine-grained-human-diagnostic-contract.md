@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1766-fine-grained-human-diagnostic-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T20:01:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1757",
     "AR-1760",
@@ -14,7 +14,7 @@
   "observed_branch": "feature/ar-1766-fine-grained-human-diagnostic-contract",
   "observed_dirty": 0,
   "observed_head": "b8ae2dc60a71bceecbee73c1abcc25a55d63d9e3",
-  "owner": "codex-ar1766-diagnostics",
+  "owner": "",
   "plan": "../plans/AR-1766-fine-grained-human-diagnostic-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -28,11 +28,11 @@
   },
   "spec_ref": "specs/AR-1766.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T18:19:55+00:00",
+  "updated_at": "2026-10-09T18:20:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -270,3 +270,9 @@ the catalog.
 - 2026-10-09T18:19:55+00:00: Accepted exact AR-1766 spec at revision 67: signed merge 00840438 and
   all ten exact-main hosted workflows are successful; receipt is privacy-safe and doctor --live
   passed.
+
+- 2026-10-09T18:20:00+00:00: AR-1766 complete: PR #538 merged as
+  00840438d0609ec9c0506cf07aee006ee621bbda; exact-main workflows 37971275898, 37971276010,
+  37971276018, 37971276033, 37971276073, 37971276120, 37971276122, 37971276132, 37971276230,
+  37971276278 all succeeded; receipt quality/AR-1766-postmerge-receipt.json committed and pushed;
+  spec accepted; doctor passed.
