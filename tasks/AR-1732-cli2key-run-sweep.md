@@ -12,13 +12,21 @@
   "plan": "../plans/AR-1732-cli2key-run-sweep.md",
   "priority": "P1",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:fed37bf703553a72b7766cd2c62bb5b3d1287bd7aa9546dfb27af86d193ae009",
+    "evidence_ref": "quality/AR-1732-cli2key-run-sweep-postmerge-receipt.json",
+    "spec_ref": "specs/AR-1732.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1732.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Integrate cli2key runs and sweeps",
-  "updated_at": "2026-10-09T13:54:57+00:00",
+  "updated_at": "2026-10-09T13:55:19+00:00",
   "worktree_key": ""
 }
 ---
@@ -251,3 +259,7 @@ serve as production or official-provider qualification.
 
 - 2026-10-09T13:54:57+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-10-09T13:55:19+00:00: Accepted after signed/DCO merge
+  942c7b110045823c942e362e5247b6ce15027ec5; PR #529 reviewed head 08226e2 and all ten exact-main
+  workflows succeeded. Reconciled state and doctor --live passed.
