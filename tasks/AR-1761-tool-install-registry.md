@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1761-tool-install-registry",
   "checkpoint_commit": "c34a3d6b52b009d62a513bae6713e748b9dbd1fb",
-  "claim_expires": "2026-10-09T19:29:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1759",
     "AR-1760"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1761-tool-install-registry-v2",
   "observed_dirty": 0,
   "observed_head": "fe6aa7c346e5db1210748c485050c7fff6d0d284",
-  "owner": "codex-asb-ar1761-tool-install-20261009",
+  "owner": "",
   "plan": "../plans/AR-1761-tool-install-registry.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1761.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 284,
+  "task_revision": 285,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T17:30:32+00:00",
+  "updated_at": "2026-10-09T17:30:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -776,3 +776,7 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T17:30:32+00:00: Accepted after signed merge ae22d66 exact parents/tree and all ten
   exact-main post-merge workflows terminal SUCCESS; doctor --live is consistent.
+
+- 2026-10-09T17:30:37+00:00: AR-1761 complete: implementation merged in signed+DCO merge ae22d66,
+  exact-main post-merge workflows all SUCCESS, postmerge receipt recorded, doctor --live OK,
+  acceptance evidence durable.
