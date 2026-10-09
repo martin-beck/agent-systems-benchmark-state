@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Monitor PR #537 exact-head checks and independent review. Merge only after every required check is terminal success and review evidence is fresh; then verify exact main/post-merge receipts and accept/release AR-1761.",
+  "next_action": "Continue monitoring PR #537 exact-head checks; require all terminal green plus separate reviewer approval before merge through merge_pr.py.",
   "observed_branch": "feature/ar-1761-tool-install-registry-v2",
   "observed_dirty": 0,
   "observed_head": "fe6aa7c346e5db1210748c485050c7fff6d0d284",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 247,
+  "task_revision": 248,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T17:11:47+00:00",
+  "updated_at": "2026-10-09T17:11:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -663,3 +663,11 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T17:11:47+00:00: Recorded command exit 0; command argv SHA-256
   b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b.
+
+- 2026-10-09T17:11:58+00:00: Independent technical review of refreshed PR #537 exact base
+  3cab69a1885f4bd3444c7d22aaac7eb96fbbadff and head fe6aa7c346e5db1210748c485050c7fff6d0d284:
+  complete diff reviewed, including symlink rejection, regular-file/permission handling, atomic
+  registry updates, AR-1762 integration, docs, completion/human fixtures, and provenance. Local fmt,
+  installer/discovery tests (13/13), human_cli (14/14), capability_contract (13/13), clippy -D
+  warnings, and diff check pass. No implementation blocker found. Hosted required checks are still
+  running; no approval or merge performed.
