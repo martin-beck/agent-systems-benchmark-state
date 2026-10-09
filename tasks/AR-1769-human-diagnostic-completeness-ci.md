@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1769",
-  "next_action": "Obtain fresh independent technical review of the complete signed diff through exact head 812cbea2334e674eba682c3b8c1ad4812394ccdc; do not publish until it passes.",
+  "next_action": "Obtain fresh independent technical review of the complete signed diff through exact head d8ddb98a3553e5aa09f7c415dfcdb0e5318944d6; do not publish until it passes.",
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "observed_dirty": 0,
   "observed_head": "d8ddb98a3553e5aa09f7c415dfcdb0e5318944d6",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 239,
+  "task_revision": 240,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T23:32:50+00:00",
+  "updated_at": "2026-10-09T23:33:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -648,3 +648,10 @@ timeouts/cancellation, partial results, and warning-only development behavior.
 
 - 2026-10-09T23:32:50+00:00: Recorded command exit 0; command argv SHA-256
   3b55d6e5afccc092b85b8c33c487468b461a77cf4f91a3431f7bde4cf8db999f.
+
+- 2026-10-09T23:33:09+00:00: Fresh review P0 function-item/alias bypass repaired in signed head
+  d8ddb98a3553e5aa09f7c415dfcdb0e5318944d6. Contract rejects constructor function items and
+  CliError/RouterError type aliases before inventory lookup, with controlled legacy and routed
+  defects. Focused contract 9/9 and human matrix 1/1 passed. Exact-head full qualification terminal
+  green: fmt, workspace Clippy -D warnings, full locked workspace tests, rustdoc -D warnings,
+  release build, and workflow transcript provenance.
