@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1770](tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Run full workspace format, clippy, tests, docs, policy/privacy and independent review on the frozen candidate. | codex-ar1770-descriptor-safe-races |
+| P1 | [AR-1770](tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Push the signed candidate, record exact head/tree, obtain independent review, then run exact-head hosted CI and repair any failures. | codex-ar1770-descriptor-safe-races |
 
 ## Open
 

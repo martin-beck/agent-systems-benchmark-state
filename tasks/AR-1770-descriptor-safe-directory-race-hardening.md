@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Run full workspace format, clippy, tests, docs, policy/privacy and independent review on the frozen candidate.",
+  "next_action": "Push the signed candidate, record exact head/tree, obtain independent review, then run exact-head hosted CI and repair any failures.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T19:44:56+00:00",
+  "updated_at": "2026-10-09T19:45:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -185,3 +185,11 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T19:44:56+00:00: Recorded command exit 0; command argv SHA-256
   4d0b3e11f1752454fffde0ab5a54a207dae56910561bae034638075afc131390.
+
+- 2026-10-09T19:45:24+00:00: Candidate commits: dfa1f435c2aa3614fc60fe1df759c6c3f7358376
+  (descriptor-safe implementation, signed DCO) and f5e5f0d91f6c3a6e6a7e6b6fb6df10e730bad0e1 (clippy
+  repair, signed DCO). Gates: cargo check -p asb-cli passed; cargo clippy --locked --workspace
+  --all-targets -D warnings passed after f5e5f0d; all 305 asb-cli unit/integration suites passed
+  before the final clippy-only repair; workflow_transcript 3/3 passed at the current exact source
+  digest; diff check clean. The earlier combined cargo filter was an invalid invocation (recorded
+  failure), not a product failure.

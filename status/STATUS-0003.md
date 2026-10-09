@@ -1076,7 +1076,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. |
-| Next action | Run full workspace format, clippy, tests, docs, policy/privacy and independent review on the frozen candidate. |
+| Next action | Push the signed candidate, record exact head/tree, obtain independent review, then run exact-head hosted CI and repair any failures. |
 
 
 ## Dependency graph
