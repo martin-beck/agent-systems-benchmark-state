@@ -63,7 +63,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | codex-ar1768-diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | State projection is currently blocked by concurrent AR-1771..1774 untracked plans/specs/tasks. Keep lease heartbeated; after parent reconciles state, run focused/full gates on repair mappings, sign/push follow-up, obtain independent review, and refresh PR #541 exact-head CI. |
+| P0 | [AR-1768](../tasks/AR-1768-exhaustive-actionable-human-diagnostics.md): Exhaustive actionable human diagnostics | codex-ar1768-diagnostics | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. | State doctor is green and projection clean. Run focused diagnostics/human/contract tests on the completed nine-code repair, then full clippy/workspace/doc/release gates; commit and push signed exact head, obtain independent review, and monitor PR #541 CI. |
 | P1 | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | codex-ar1770-descriptor-safe-races | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Post-merge main dc67390494805693aef21d917319253b2e705da7: 8/10 required workflows green. Repository quality 37990474230 and Rust 37990474203 passed. Retry formal/aarch64 only after Docker Hub runner rate window clears; then create receipt and release. |
 
 ### Open (1)

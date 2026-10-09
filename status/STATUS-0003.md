@@ -1048,7 +1048,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
-| Next action | State projection is currently blocked by concurrent AR-1771..1774 untracked plans/specs/tasks. Keep lease heartbeated; after parent reconciles state, run focused/full gates on repair mappings, sign/push follow-up, obtain independent review, and refresh PR #541 exact-head CI. |
+| Next action | State doctor is green and projection clean. Run focused diagnostics/human/contract tests on the completed nine-code repair, then full clippy/workspace/doc/release gates; commit and push signed exact head, obtain independent review, and monitor PR #541 CI. |
 
 ### AR-1769 — Human diagnostic completeness CI gate
 
