@@ -936,7 +936,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add an idempotent ASB project initializer containing config, results, and catalog areas. |
-| Next action | Repair provenance fixture hashes for the changed CLI and guide contract, rerun workflow_transcript plus the full workspace gate, then update/push PR #532 and obtain independent review. |
+| Next action | Repair workflow transcript fixture and its provenance digest for the intentional doctor command inventory extension; rerun workflow_transcript and full workspace tests, then push and review. |
 
 ### AR-1761 — ASB external-tool installer and registry
 

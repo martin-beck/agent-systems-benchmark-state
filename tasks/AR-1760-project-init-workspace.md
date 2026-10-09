@@ -7,7 +7,7 @@
     "AR-1759"
   ],
   "id": "AR-1760",
-  "next_action": "Repair provenance fixture hashes for the changed CLI and guide contract, rerun workflow_transcript plus the full workspace gate, then update/push PR #532 and obtain independent review.",
+  "next_action": "Repair workflow transcript fixture and its provenance digest for the intentional doctor command inventory extension; rerun workflow_transcript and full workspace tests, then push and review.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:16:25+00:00",
+  "updated_at": "2026-10-09T15:16:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -173,3 +173,9 @@ commands for a fresh user and support `--json` without leaking host secrets.
 
 - 2026-10-09T15:16:25+00:00: Recorded command exit 101; command argv SHA-256
   1e1cd53b28a343fe9ab1918784ca059a087e19aefe6b87206aa1b920d18c41ef.
+
+- 2026-10-09T15:16:42+00:00: After repairing the CLI and guide provenance hashes,
+  workflow_transcript still had one exit-101 because doctor output intentionally gained project init
+  but the checked normalized transcript fixture did not. Copy the deterministic actual transcript
+  into docs/examples/asb-cli-workflow-v1.json and refresh only transcript_sha256 in the provenance
+  fixture.
