@@ -16,6 +16,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
+| P0 | [AR-1766](tasks/AR-1766-coordinator-v040-release.md): Adopt tagged Coordinator v0.4.0 in ASB state | Replace ASB's development Coordinator snapshot with the exact tagged v0.4.0 release and qualify supported spec acceptance end to end. | Claim in the isolated state worktree, replace the development vendor with the exact v0.4.0 tag through vendor.py sync, test accept-to-done on disposable Git and SQLite fixtures, independently review, merge and verify post-merge. | - |
 
 ## Blocked
 

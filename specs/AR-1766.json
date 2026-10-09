@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1766.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "exact-release", "description": "ASB state vendors the exact Coordinator v0.4.0 release tag and commit through supported tag-bound sync, with complete verified checksums and release-classified manifest."},
+    {"id": "accept-lifecycle", "description": "ASB-compatible disposable Git and SQLite fixtures use the supported bound accept command to record valid evidence and release to done, while stale, malformed and unauthorized cases fail closed."},
+    {"id": "integration", "description": "ASB-state native and hosted quality gates, independent exact-head review, signed merge and exact-main post-merge checks pass without weakening thresholds or patching vendored bytes."}
+  ],
+  "definition_of_done": [
+    "The exact tagged v0.4.0 vendor is on ASB-state protected main and independently verified.",
+    "Positive and negative end-to-end acceptance tests pass on disposable Git and SQLite fixtures.",
+    "Independent review, hosted PR and post-merge checks, reconciliation and live doctor pass."
+  ],
+  "inputs": [
+    {"id": "release", "description": "Coordinator v0.4.0 lightweight unsigned tag at 712b36ea3d188237cbe8104e70d905094f93a96b."},
+    {"id": "development-pin", "description": "ASB-state development-classified v0.4.0 snapshot at c2692d08382e0a16e9d0dd4f8c08dba36a29b713."}
+  ],
+  "outputs": [
+    {"id": "release-vendor", "description": "Exact release-classified vendor manifest and byte-verified installed Coordinator."},
+    {"id": "qualification", "description": "Reviewable positive and hostile acceptance lifecycle and integration evidence."}
+  ],
+  "allowed_tools": ["git", "gh", "python", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["vendored-byte-patching", "force-push", "gate-weakening", "development-as-release-claim"],
+  "required_evidence_classes": ["mechanical", "contract-test", "environmental", "hosted"],
+  "gates": [
+    {"id": "identity", "description": "Tag, commit, manifest and installed bytes identify one immutable released source."},
+    {"id": "no-bypass", "description": "Spec acceptance remains owner/revision-bound and done admission remains fail closed."}
+  ]
+}

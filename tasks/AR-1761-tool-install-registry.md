@@ -10,7 +10,7 @@
   "id": "AR-1761",
   "next_action": "Obtain independent technical review and GitHub approval; wait for every PR check at exact head to reach success, then integrate with merge_pr.py against the current exact main base.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
-  "observed_dirty": 24,
+  "observed_dirty": 1,
   "observed_head": "9bfff7aa4e2b05cf217cb505678ee0e9ce1259ca",
   "owner": "codex-asb-ar1761-tool-install-20261009",
   "plan": "../plans/AR-1761-tool-install-registry.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:09:15+00:00",
+  "updated_at": "2026-10-09T16:14:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---

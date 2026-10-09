@@ -1008,6 +1008,20 @@
 | Summary | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. |
 | Next action | Run the fresh-user end-to-end qualification after AR-1764 is merged. |
 
+### AR-1766 — Adopt tagged Coordinator v0.4.0 in ASB state
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Replace ASB&#x27;s development Coordinator snapshot with the exact tagged v0.4.0 release and qualify supported spec acceptance end to end. |
+| Next action | Claim in the isolated state worktree, replace the development vendor with the exact v0.4.0 tag through vendor.py sync, test accept-to-done on disposable Git and SQLite fixtures, independently review, merge and verify post-merge. |
+
 
 ## Dependency graph
 
@@ -1832,6 +1846,7 @@ flowchart LR
         AR_1763["AR-1763 - Planned"]:::status_planned
         AR_1764["AR-1764 - Planned"]:::status_planned
         AR_1765["AR-1765 - Planned"]:::status_planned
+        AR_1766["AR-1766 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3708,6 +3723,7 @@ flowchart LR
     AR_1749 --> AR_1753
     AR_1750 --> AR_1748
     AR_1753 --> AR_1756
+    AR_1756 --> AR_1766
     AR_1759 --> AR_1760
     AR_1759 --> AR_1761
     AR_1759 --> AR_1762
@@ -3842,5 +3858,3 @@ flowchart LR
 | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md) | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md) | [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
-| [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
-| [AR-0844](../tasks/AR-0844-frontend-api-integration.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |

@@ -1,8 +1,12 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md), [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | [AR-1748](../tasks/AR-1748-protected-main-portable-provenance.md) |
+| [AR-1751](../tasks/AR-1751-gcc-linker-prefix-confinement.md) | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md) | None |
+| [AR-1752](../tasks/AR-1752-development-broker-v115-projection.md) | [AR-1719](../tasks/AR-1719.md) | None |
+| [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | [AR-1749](../tasks/AR-1749-coordinator-unblock-bootstrap.md) | [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) |
 | [AR-1754](../tasks/AR-1754-default-online-live-workflow.md) | [AR-1699](../tasks/AR-1699.md), [AR-1700](../tasks/AR-1700.md), [AR-1723](../tasks/AR-1723-easy-run-default-online.md), [AR-1724](../tasks/AR-1724-easy-sweep-default-online.md), [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | None |
 | [AR-1755](../tasks/AR-1755-idempotent-make-install.md) | [AR-1745](../tasks/AR-1745-user-local-install-prefix.md) | None |
-| [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) | [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | None |
+| [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) | [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | [AR-1766](../tasks/AR-1766-coordinator-v040-release.md) |
 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md) | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1555](../tasks/AR-1555.md) | None |
 | [AR-1758](../tasks/AR-1758-ar1731-merge-dco-repair.md) | None | None |
 | [AR-1759](../tasks/AR-1759-tool-project-config-schema.md) | [AR-1745](../tasks/AR-1745-user-local-install-prefix.md) | [AR-1760](../tasks/AR-1760-project-init-workspace.md), [AR-1761](../tasks/AR-1761-tool-install-registry.md), [AR-1762](../tasks/AR-1762-tool-discovery.md) |
@@ -12,6 +16,7 @@
 | [AR-1763](../tasks/AR-1763-generated-catalog-selection.md) | [AR-1761](../tasks/AR-1761-tool-install-registry.md), [AR-1762](../tasks/AR-1762-tool-discovery.md) | [AR-1764](../tasks/AR-1764-project-run-integration.md), [AR-1765](../tasks/AR-1765-tool-project-e2e-qualification.md) |
 | [AR-1764](../tasks/AR-1764-project-run-integration.md) | [AR-1761](../tasks/AR-1761-tool-install-registry.md), [AR-1763](../tasks/AR-1763-generated-catalog-selection.md) | [AR-1765](../tasks/AR-1765-tool-project-e2e-qualification.md) |
 | [AR-1765](../tasks/AR-1765-tool-project-e2e-qualification.md) | [AR-1760](../tasks/AR-1760-project-init-workspace.md), [AR-1761](../tasks/AR-1761-tool-install-registry.md), [AR-1762](../tasks/AR-1762-tool-discovery.md), [AR-1763](../tasks/AR-1763-generated-catalog-selection.md), [AR-1764](../tasks/AR-1764-project-run-integration.md) | None |
+| [AR-1766](../tasks/AR-1766-coordinator-v040-release.md) | [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) | None |
 
 ## Complete AR inventory
 
@@ -23,11 +28,12 @@
 | P0 | [AR-1761](../tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | codex-asb-ar1761-tool-install-20261009 | Install supported external ASB tools into a user/project-local root and persist validated records. | Obtain independent technical review and GitHub approval; wait for every PR check at exact head to reach success, then integrate with merge_pr.py against the current exact main base. |
 | P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | codex-asb-ar1762-tool-discovery-20261009 | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Verify clean state handoff, push the signed merge commit, rerun exact-head gates after updated main base, then continue review/CI. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
+| P0 | [AR-1766](../tasks/AR-1766-coordinator-v040-release.md): Adopt tagged Coordinator v0.4.0 in ASB state | Unclaimed | Replace ASB&#x27;s development Coordinator snapshot with the exact tagged v0.4.0 release and qualify supported spec acceptance end to end. | Claim in the isolated state worktree, replace the development vendor with the exact v0.4.0 tag through vendor.py sync, test accept-to-done on disposable Git and SQLite fixtures, independently review, merge and verify post-merge. |
 
 ### Blocked (87)
 
@@ -510,7 +516,3 @@
 | P0 | [AR-1620](../tasks/AR-1620.md): Development bundle integrity and ASB integration repair | Unclaimed | Harden TUI bundle verification/publication and prove ASB consumes the exact immutable dev artifact. | Released after exact consumer merge; retain immutable manifest receipt for release-gate qualification. |
 | P0 | [AR-1621](../tasks/AR-1621.md): Development authentication and provenance non-blocking audit | Unclaimed | Prove development setup never blocks on absent authentication, signatures, or key management while retaining production hardening boundaries. | Released after paired protected-main auth audit merges; use evidence for final handshake and quickstart qualification. |
 | P0 | [AR-1625](../tasks/AR-1625.md): TUI hosted coverage repair for live handshake | Unclaimed | Raise behavior-relevant TUI coverage above the hosted threshold and unblock exact-main AR-1615 acceptance without weakening quality gates. | Released after protected-main merge; rerun AR-1615 against the paired repaired heads. |
-| P0 | [AR-1626](../tasks/AR-1626.md): ASB-TUI control-loop and PTY launch repair | Unclaimed | Repair the paired development broker/control child-loop launch failure and bounded Unix-socket path handling exposed by AR-1615. | Released after protected-main merge; rerun AR-1615 against the paired repaired heads. |
-| P0 | [AR-1627](../tasks/AR-1627.md): TUI lifecycle test-injection isolation repair | Unclaimed | Eliminate the shared failure-injection race that blocked exact-main AR-1615 Trusted-main qualification. | None; retain the merged repair and exact hosted/local evidence. |
-| P0 | [AR-1628](../tasks/AR-1628.md): Top-level ASB-TUI bootstrap integration repair | Unclaimed | Repair the bootstrap-stage status-2 failure after broker and PTY handoff by skipping unsupported lifecycle polls for unavailable development agents. | None; remaining post-bootstrap timeout is tracked by AR-1629 and coverage hardening by AR-1630. |
-| P0 | [AR-1629](../tasks/AR-1629.md): Post-bootstrap ASB-TUI launch progression | Unclaimed | Repair the remaining exact top-level launch timeout after broker and PTY bootstrap succeed. | No further action; retain the paired launch receipt and continue AR-1615 final qualification. |

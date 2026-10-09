@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
+| [AR-0844](../tasks/AR-0844-frontend-api-integration.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md) |
 | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md) | [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0903](../tasks/AR-0903-release-qualification.md) | None |
 | [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | None |
@@ -638,7 +640,3 @@
 | [AR-1747](../tasks/AR-1747-coordinator-unblock-vendor-adoption.md) | None | None |
 | [AR-1748](../tasks/AR-1748-protected-main-portable-provenance.md) | [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md) | None |
 | [AR-1749](../tasks/AR-1749-coordinator-unblock-bootstrap.md) | None | [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) |
-| [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md), [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | [AR-1748](../tasks/AR-1748-protected-main-portable-provenance.md) |
-| [AR-1751](../tasks/AR-1751-gcc-linker-prefix-confinement.md) | [AR-1737](../tasks/AR-1737-development-tui-linker-handoff.md) | None |
-| [AR-1752](../tasks/AR-1752-development-broker-v115-projection.md) | [AR-1719](../tasks/AR-1719.md) | None |
-| [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | [AR-1749](../tasks/AR-1749-coordinator-unblock-bootstrap.md) | [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) |
