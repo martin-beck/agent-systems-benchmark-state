@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add an idempotent ASB project initializer containing config, results, and catalog areas.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Initialize an ASB benchmark project workspace",
-  "updated_at": "2026-10-09T15:11:08+00:00",
+  "updated_at": "2026-10-09T15:11:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1760-project-init-workspace"
 }
 ---
@@ -96,3 +96,6 @@ commands for a fresh user and support `--json` without leaking host secrets.
   test rejecting the intentionally extended bash completion list (it still expected doctor setup
   capabilities provider-catalog). No product runtime failure: repair the assertion to require doctor
   setup capabilities project provider-catalog, then rerun the full workspace gate.
+
+- 2026-10-09T15:11:28+00:00: Recorded command exit 101; command argv SHA-256
+  e722ed1403701d5b7aa87509d78c9e1d3bcfaeb05459ab381d3f44bc7160a842.
