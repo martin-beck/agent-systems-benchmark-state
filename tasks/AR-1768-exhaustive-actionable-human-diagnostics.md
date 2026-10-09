@@ -8,7 +8,7 @@
     "AR-1767"
   ],
   "id": "AR-1768",
-  "next_action": "AR-1768 merge 5377317 is verified but post-merge Repository quality run 37997802597 failed in exactly one PTY scenario: tui::tests::development_broker_foregrounds_interactive_child_and_restores_terminal (312 passed, 1 failed). The failure is product-test behavior, not infrastructure. Reproduce the focused test repeatedly on exact main and rerun the exact workflow to distinguish flake from a repair; do not accept or release while the required post-merge gate is red.",
+  "next_action": "AR-1768 merge 5377317 is verified. The original Repository quality attempt failed in one controlling-PTY test; the exact focused rerun passed locally and hosted Repository quality attempt 2 is currently active. Exact-main aarch64 guest materialization is also active. Wait for both terminal results, classify any failure, and accept/release only after every required exact-main workflow is successful.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "observed_dirty": 0,
   "observed_head": "cd46a00c276be3111fe2d7140d4d4ffa1a10dbf7",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 226,
+  "task_revision": 227,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T22:24:29+00:00",
+  "updated_at": "2026-10-09T22:26:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -662,3 +662,7 @@ say what remains usable.
   a66210d8a8d7af08224b246385f482c9cebd5e23eef44b1d4a69589499c9b616.
 
 - 2026-10-09T22:24:29+00:00: Heartbeat by codex-ar1768-diagnostics.
+
+- 2026-10-09T22:26:33+00:00: Focused PTY reproduction passed on exact merge; only failed hosted
+  quality workflow was rerun as attempt 2. Repository-quality advanced into controlled-defect
+  proofs; aarch64 guest materialization remains live.

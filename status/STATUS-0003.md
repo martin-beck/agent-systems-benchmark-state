@@ -1048,7 +1048,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
-| Next action | AR-1768 merge 5377317 is verified but post-merge Repository quality run 37997802597 failed in exactly one PTY scenario: tui::tests::development_broker_foregrounds_interactive_child_and_restores_terminal (312 passed, 1 failed). The failure is product-test behavior, not infrastructure. Reproduce the focused test repeatedly on exact main and rerun the exact workflow to distinguish flake from a repair; do not accept or release while the required post-merge gate is red. |
+| Next action | AR-1768 merge 5377317 is verified. The original Repository quality attempt failed in one controlling-PTY test; the exact focused rerun passed locally and hosted Repository quality attempt 2 is currently active. Exact-main aarch64 guest materialization is also active. Wait for both terminal results, classify any failure, and accept/release only after every required exact-main workflow is successful. |
 
 ### AR-1769 — Human diagnostic completeness CI gate
 
