@@ -14,11 +14,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1753.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Adopt the exact Agent Workflow Coordinator v0.3.59 release in ASB state and repair every downstream-owned integrity regression exposed by the upgrade.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Coordinator v0.3.59 release upgrade and integrity repair",
-  "updated_at": "2026-10-09T06:20:00+00:00",
+  "updated_at": "2026-10-09T06:25:37+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1753-coordinator-v0359"
 }
 ---
@@ -33,3 +33,6 @@ Repair every repository-owned compatibility, fixture, schema, coverage, formal,
 or generated-view regression revealed by the update without weakening existing
 privacy, integrity, lifecycle, locking, coverage, or development semantics.
 Preserve unrelated product and state work.
+
+- 2026-10-09T06:25:37+00:00: AR-1749 is done; exact v0.3.59 release identity and upgrade scope
+  verified.
