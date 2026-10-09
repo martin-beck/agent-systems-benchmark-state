@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Integrate cli2key runs and sweeps",
-  "updated_at": "2026-10-09T13:44:42+00:00",
+  "updated_at": "2026-10-09T13:45:09+00:00",
   "worktree_key": ""
 }
 ---
@@ -208,3 +208,6 @@ serve as production or official-provider qualification.
 
 - 2026-10-09T13:44:42+00:00: merge_pr.py published the exact signed/DCO merge commit 942c7b1 to
   protected main. Exact-main workflows are running; Huawei source-header workflow already passed.
+
+- 2026-10-09T13:45:09+00:00: Recorded command exit 0; command argv SHA-256
+  fc178873c8046d55143b500df2a1a3c6dcb8939605e5697fc5e86ab6da517c1d.
