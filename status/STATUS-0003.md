@@ -1048,7 +1048,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery. |
-| Next action | Final exact producer repair is signed at a270a9d and local focused plus locked workspace gates pass. Push a270a9d to PR #541, obtain fresh independent review of the exact dev_metadata_failed mapping/catalog row, and wait for all exact-head required CI checks before merge. |
+| Next action | Exact signed head cd46a00 is pushed to PR #541. Focused diagnostic/human/contract/formatting gates, full locked workspace tests, and clippy pass. Fresh independent review must verify dedicated human phrases for candidate_timeout, dev_command_timeout, manifest_digest_mismatch, transfer_failed, and transfer_unavailable; exact-head hosted CI is running and merge remains prohibited until review plus every required check are green. |
 
 ### AR-1769 — Human diagnostic completeness CI gate
 

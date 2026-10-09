@@ -8,7 +8,7 @@
     "AR-1767"
   ],
   "id": "AR-1768",
-  "next_action": "Final exact producer repair is signed at a270a9d and local focused plus locked workspace gates pass. Push a270a9d to PR #541, obtain fresh independent review of the exact dev_metadata_failed mapping/catalog row, and wait for all exact-head required CI checks before merge.",
+  "next_action": "Exact signed head cd46a00 is pushed to PR #541. Focused diagnostic/human/contract/formatting gates, full locked workspace tests, and clippy pass. Fresh independent review must verify dedicated human phrases for candidate_timeout, dev_command_timeout, manifest_digest_mismatch, transfer_failed, and transfer_unavailable; exact-head hosted CI is running and merge remains prohibited until review plus every required check are green.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
   "observed_dirty": 0,
   "observed_head": "cd46a00c276be3111fe2d7140d4d4ffa1a10dbf7",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 213,
+  "task_revision": 214,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T22:00:18+00:00",
+  "updated_at": "2026-10-09T22:00:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -622,3 +622,7 @@ say what remains usable.
   5eaab3e3a1fb931e890cad44884f5415b0097d223d41b62110ab31a57dc0286c.
 
 - 2026-10-09T22:00:18+00:00: Heartbeat by codex-ar1768-diagnostics.
+
+- 2026-10-09T22:00:25+00:00: Added explicit tui_failure_text entries and test assertions for the
+  five final routed producer codes. Signed commit cd46a00 pushed; PR #541 exact head matches. Hosted
+  checks restarted and are pending.
