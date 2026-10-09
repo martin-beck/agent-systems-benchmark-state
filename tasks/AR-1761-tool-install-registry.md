@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Retry exact full format and Clippy commands with product manifest path before the rustfmt separator.",
+  "next_action": "Fix the two Clippy findings, rerun format/Clippy, then run full tests/docs/build.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 0,
   "observed_head": "8b4a2bf60c4f1e8bb30363979a3c50f3a7c934b3",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:50:07+00:00",
+  "updated_at": "2026-10-09T15:50:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -128,3 +128,7 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T15:50:07+00:00: Recorded command exit 101; command argv SHA-256
   196a03c6abea2f1ab0074c6b051e942da5ffb3890376e4b7829efa4f18e52d99.
+
+- 2026-10-09T15:50:19+00:00: Clippy gate found two repairable diagnostics in the new installer:
+  needless lifetime on tool_kind_map and collapsible nested existing-record check. No warnings were
+  suppressed; both will be fixed and the gate rerun.
