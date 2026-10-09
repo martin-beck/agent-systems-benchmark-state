@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "Monitor PR #539 exact-head CI/review; do not merge until all required checks green. Keep residual race-hardening/matrix repair AR dependency explicit.",
+  "next_action": "PR #539 now points to signed exact head d01741ce97ad46dccc603433b8a158a397a91b71; await full exact-head CI and review. Parent must create AR-1768 successor for residual race/matrix hardening before accepting AR-1767.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:50:42+00:00",
+  "updated_at": "2026-10-09T18:51:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -274,3 +274,12 @@ when useful; repeated commands must not claim an existing directory was new.
 
 - 2026-10-09T18:50:42+00:00: Recorded command exit 0; command argv SHA-256
   bc12b28be8cbce8316d4bfcdfe61c705986063aba7512292466df5192f0f51d4.
+
+- 2026-10-09T18:51:20+00:00: Formatting repair complete 2026-10-09T18:50Z: cargo fmt --all applied
+  through handoffctl and cargo fmt --all -- --check passed. New signed DCO commit
+  d01741ce97ad46dccc603433b8a158a397a91b71 verified with SSH key
+  SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE; pushed to PR #539. No product behavior changed
+  by formatting. Prior full cargo test -p asb-cli was green; CI must rerun against this exact head.
+  State post-reconcile warning remains the known oversized handoffctl pyc. The state handoffctl CLI
+  has no AR-create subcommand; parent coordinator must create successor AR-1768 through its
+  documented task/spec/plan authoring workflow and link it here.
