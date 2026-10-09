@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T15:49:49+00:00",
+  "updated_at": "2026-10-09T15:50:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -125,3 +125,6 @@ for idempotence; never store API keys or tokens.
 - 2026-10-09T15:49:49+00:00: Full-gate attempt failed before running Clippy: cargo fmt received
   --manifest-path after the rustfmt separator and exited 101 because the wrapper cwd is the state
   checkout. No product mutation or publication occurred; retry will pass manifest-path before --.
+
+- 2026-10-09T15:50:07+00:00: Recorded command exit 101; command argv SHA-256
+  196a03c6abea2f1ab0074c6b051e942da5ffb3890376e4b7829efa4f18e52d99.
