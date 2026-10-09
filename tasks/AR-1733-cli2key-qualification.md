@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Qualify and document cli2key development mode",
-  "updated_at": "2026-10-09T14:21:02+00:00",
+  "updated_at": "2026-10-09T14:21:15+00:00",
   "worktree_key": ""
 }
 ---
@@ -124,3 +124,6 @@ or official OpenAI Platform API-key claim.
 
 - 2026-10-09T14:21:02+00:00: Recorded command exit 1; command argv SHA-256
   266c47f4948f34acb68a6aa179f52987eb1fb62fa7a586906552b0e5d92e8473.
+
+- 2026-10-09T14:21:15+00:00: Recorded command exit 0; command argv SHA-256
+  8d4b38ee9cd866630d220e733a5c6ed5ce36ab993b1445b4eb183ae3f27e7b0e.
