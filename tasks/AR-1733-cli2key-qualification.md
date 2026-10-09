@@ -1,22 +1,24 @@
 ---
 {
+  "branch": "",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [
+    "AR-1732"
+  ],
   "id": "AR-1733",
-  "title": "Qualify and document cli2key development mode",
-  "priority": "P1",
-  "depends_on": ["AR-1732"],
-  "plan": "../plans/AR-1733-cli2key-qualification.md",
-  "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
-  "status": "planned",
   "next_action": "Promote after AR-1732; run independent fake and opt-in live qualification and publish user-facing setup/status/reset guidance.",
   "owner": "",
-  "claim_expires": "",
-  "checkpoint_commit": "",
-  "task_revision": 1,
+  "plan": "../plans/AR-1733-cli2key-qualification.md",
+  "priority": "P1",
   "schema_version": 1,
   "spec_ref": "specs/AR-1733.json",
   "spec_revision": 1,
-  "updated_at": "2026-10-07T23:21:33+00:00",
-  "branch": "",
+  "status": "open",
+  "summary": "Qualify the complete cli2key setup, run, sweep, fault, cleanup, and privacy journey and document its development-only limits.",
+  "task_revision": 2,
+  "title": "Qualify and document cli2key development mode",
+  "updated_at": "2026-10-09T13:56:16+00:00",
   "worktree_key": ""
 }
 ---
@@ -32,3 +34,6 @@ Document that the generated key authenticates only the local proxy, that live
 usage consumes the user's Codex entitlement subject to upstream policy, and
 that this path is unofficial, development-only, opt-in, and not a production
 or official OpenAI Platform API-key claim.
+
+- 2026-10-09T13:56:16+00:00: AR-1732 is durably accepted/released at signed merge 942c7b1 with green
+  exact-main workflows; dependency verified.
