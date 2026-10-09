@@ -417,6 +417,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar1252-merge` | `DETACHED` | `4e2820bffe93` | 0 | behind 348, ahead 644 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 66, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 54, ahead 0 |
+| `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1726-review` | `DETACHED` | `a3222ae105dc` | 0 | behind 65, ahead 0 |
 | `agent-systems-benchmark-ar1727-integration` | `DETACHED` | `457317b21dbe` | 0 | behind 61, ahead 0 |
 | `agent-systems-benchmark-ar1727-review` | `DETACHED` | `23138efcc45d` | 0 | behind 65, ahead 0 |
