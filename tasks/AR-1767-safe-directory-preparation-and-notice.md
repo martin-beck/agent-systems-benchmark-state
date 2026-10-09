@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1767-safe-directory-preparation-and-notice",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T20:20:28+00:00",
   "depends_on": [
     "AR-1766"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1767-directory-preparation",
   "plan": "../plans/AR-1767-safe-directory-preparation-and-notice.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1767.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:20:19+00:00",
+  "updated_at": "2026-10-09T18:20:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -57,3 +57,5 @@ when useful; repeated commands must not claim an existing directory was new.
 
 - 2026-10-09T18:20:19+00:00: AR-1766 is released done with all post-merge gates; promoting
   diagnostic follow-up.
+
+- 2026-10-09T18:20:28+00:00: Claimed by codex-ar1767-directory-preparation.
