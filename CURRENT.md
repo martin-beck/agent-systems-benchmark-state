@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | Run cargo test -p asb-cli --no-run once after removing the unused test-only guided_setup wrapper; then execute the focused directory-preparation tests. | codex-ar1767-directory-preparation |
+| P0 | [AR-1767](tasks/AR-1767-safe-directory-preparation-and-notice.md): Safe automatic directory preparation with clear notice | Implementing safe directory preparation and notices for command-owned ASB outputs. | Audit TUI lifecycle directory ownership and add equivalent notice wiring if required by AR-1767; then run the full applicable asb-cli gate before review. | codex-ar1767-directory-preparation |
 
 ## Open
 

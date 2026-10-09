@@ -1034,7 +1034,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implementing safe directory preparation and notices for command-owned ASB outputs. |
-| Next action | Run cargo test -p asb-cli --no-run once after removing the unused test-only guided_setup wrapper; then execute the focused directory-preparation tests. |
+| Next action | Audit TUI lifecycle directory ownership and add equivalent notice wiring if required by AR-1767; then run the full applicable asb-cli gate before review. |
 
 ### AR-1768 — Exhaustive actionable human diagnostics
 

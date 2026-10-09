@@ -7,7 +7,7 @@
     "AR-1766"
   ],
   "id": "AR-1767",
-  "next_action": "Run cargo test -p asb-cli --no-run once after removing the unused test-only guided_setup wrapper; then execute the focused directory-preparation tests.",
+  "next_action": "Audit TUI lifecycle directory ownership and add equivalent notice wiring if required by AR-1767; then run the full applicable asb-cli gate before review.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:36:24+00:00",
+  "updated_at": "2026-10-09T18:37:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -151,3 +151,10 @@ when useful; repeated commands must not claim an existing directory was new.
 
 - 2026-10-09T18:36:24+00:00: Recorded command exit 0; command argv SHA-256
   3b0d15419d3d4080957c0b6e6cf1af4e9bd96a1ef8da0277aca8a0360dc53f97.
+
+- 2026-10-09T18:37:02+00:00: Gate evidence 2026-10-09T18:38Z: cargo test -p asb-cli --no-run
+  compiled all unit/integration test binaries successfully. Focused command cargo test -p asb-cli
+  owned_directory_preparation -- --nocapture passed 2/2 new tests; positive creation/reuse and exact
+  stderr notice passed, traversal/file/symlink rejection and machine-JSON path redaction passed.
+  handoffctl returned COMMAND_RECORDED_POST_RECONCILE_FAILED only after recording because
+  tools/__pycache__/handoffctl.cpython-312.pyc exceeds the 200 KiB state evidence limit.
