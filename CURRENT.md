@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1766](tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | Obtain distinct reviewer approval after hosted checks are terminal green; then merge PR #538 exact base ae22d66/head b8ae2dc through handoffctl, verify post-merge receipt, and accept/release AR-1766. | codex-ar1766-diagnostics |
+| P0 | [AR-1766](tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | Record post-merge receipt for merge 00840438 and all ten exact-main workflows, run doctor --live, accept spec, then release AR-1766 done. | codex-ar1766-diagnostics |
 
 ## Open
 

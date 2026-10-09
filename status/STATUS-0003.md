@@ -1020,7 +1020,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. |
-| Next action | Obtain distinct reviewer approval after hosted checks are terminal green; then merge PR #538 exact base ae22d66/head b8ae2dc through handoffctl, verify post-merge receipt, and accept/release AR-1766. |
+| Next action | Record post-merge receipt for merge 00840438 and all ten exact-main workflows, run doctor --live, accept spec, then release AR-1766 done. |
 
 ### AR-1767 — Safe automatic directory preparation with clear notice
 

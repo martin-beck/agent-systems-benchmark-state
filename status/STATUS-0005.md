@@ -43,7 +43,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | codex-ar1766-diagnostics | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | Obtain distinct reviewer approval after hosted checks are terminal green; then merge PR #538 exact base ae22d66/head b8ae2dc through handoffctl, verify post-merge receipt, and accept/release AR-1766. |
+| P0 | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md): Fine-grained human diagnostic contract | codex-ar1766-diagnostics | Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation. | Record post-merge receipt for merge 00840438 and all ten exact-main workflows, run doctor --live, accept spec, then release AR-1766 done. |
 
 ### Open (1)
 
@@ -524,3 +524,4 @@
 | P0 | [AR-1606](../tasks/AR-1606.md): Cross-project cassette lifecycle qualification | Unclaimed | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Release complete: PR #426 merged as da886967; exact-main hosted workflows and independent approval are recorded in spec/receipt. |
 | P0 | [AR-1607](../tasks/AR-1607.md): OpenRouter provider and model setup | Unclaimed | Expose OpenRouter, API-key reference, supported models, and validation to the development wizard. | Promote after AR-1601 and implement the additive provider/catalog/config contract. |
 | P0 | [AR-1608](../tasks/AR-1608.md): Configuration persistence and shared defaults | Unclaimed | Persist editable provider/agent/model/auth selections and shared defaults safely for subsequent runs. | Promote after AR-1607 release and implement atomic redacted configuration updates. |
+| P0 | [AR-1609](../tasks/AR-1609.md): Coding-agent adapter catalog and compatibility | Unclaimed | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. | Promote after AR-1607 release; implement additive adapter records and compatibility diagnostics. |

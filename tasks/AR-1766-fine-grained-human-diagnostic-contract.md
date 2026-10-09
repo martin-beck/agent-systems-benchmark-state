@@ -10,7 +10,7 @@
     "AR-1762"
   ],
   "id": "AR-1766",
-  "next_action": "Obtain distinct reviewer approval after hosted checks are terminal green; then merge PR #538 exact base ae22d66/head b8ae2dc through handoffctl, verify post-merge receipt, and accept/release AR-1766.",
+  "next_action": "Record post-merge receipt for merge 00840438 and all ten exact-main workflows, run doctor --live, accept spec, then release AR-1766 done.",
   "observed_branch": "feature/ar-1766-fine-grained-human-diagnostic-contract",
   "observed_dirty": 0,
   "observed_head": "b8ae2dc60a71bceecbee73c1abcc25a55d63d9e3",
@@ -30,9 +30,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Fine-grained human diagnostic contract",
-  "updated_at": "2026-10-09T18:09:09+00:00",
+  "updated_at": "2026-10-09T18:19:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
 }
 ---
@@ -256,3 +256,7 @@ the catalog.
 
 - 2026-10-09T18:09:09+00:00: Recorded command exit 0; command argv SHA-256
   d13b41feeb0302ac2210691d0d52ca41fe8ca0f850700283e7ccf33987059b18.
+
+- 2026-10-09T18:19:07+00:00: PR #538 merged through the signed integration helper at
+  2026-10-09T18:09:09Z. All ten exact-main workflows for head 00840438 are terminal success; no
+  hosted failures remain.
