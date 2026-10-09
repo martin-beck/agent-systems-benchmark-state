@@ -19,21 +19,21 @@ Generated from local Git and GitHub. Do not edit.
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@b20d22b45b4f` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.22 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #524 | `feature/ar-1730-cli2key-provider-contract@c86b4b40b5fd` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(agents): add cli2key catalog selection launch contract |
-| #525 | `feature/ar-1729-cli2key-sidecar-runtime@afca4631c1cf` | `main` | BLOCKED | - | feat(runtime): supervise cli2key sidecar lifecycle |
+| #525 | `feature/ar-1729-cli2key-sidecar-runtime@afca4631c1cf` | `main` | BLOCKED | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat(runtime): supervise cli2key sidecar lifecycle |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 37900986097 | `afca4631c1cf` | pull_request | Credential-free benchmark path | queued:- |
+| 37900986097 | `afca4631c1cf` | pull_request | Credential-free benchmark path | in_progress:- |
 | 37900986093 | `afca4631c1cf` | pull_request | Formal assurance | queued:- |
-| 37900986090 | `afca4631c1cf` | pull_request | Rust verification | queued:- |
-| 37900986089 | `afca4631c1cf` | pull_request | Portable protected-main provenance | queued:- |
-| 37900986084 | `afca4631c1cf` | pull_request | Cross-repository development broker qualification | queued:- |
+| 37900986090 | `afca4631c1cf` | pull_request | Rust verification | in_progress:- |
+| 37900986089 | `afca4631c1cf` | pull_request | Portable protected-main provenance | in_progress:- |
+| 37900986084 | `afca4631c1cf` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 37900986078 | `afca4631c1cf` | pull_request | Fault assurance | queued:- |
-| 37900986071 | `afca4631c1cf` | pull_request | Huawei MIT source headers | queued:- |
-| 37900986053 | `afca4631c1cf` | pull_request | Hosted portability and native qualification | queued:- |
-| 37900986047 | `afca4631c1cf` | pull_request | Emulated aarch64 portability | queued:- |
-| 37900986037 | `afca4631c1cf` | pull_request | Repository quality | queued:- |
-| 37900986029 | `afca4631c1cf` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 37900986071 | `afca4631c1cf` | pull_request | Huawei MIT source headers | in_progress:- |
+| 37900986053 | `afca4631c1cf` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 37900986047 | `afca4631c1cf` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 37900986037 | `afca4631c1cf` | pull_request | Repository quality | in_progress:- |
+| 37900986029 | `afca4631c1cf` | pull_request | Agent Workflow Quality shadow | in_progress:- |
 | 37900804673 | `c86b4b40b5fd` | pull_request | Cross-repository development broker qualification | in_progress:- |
