@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Rerun the repaired completion-contract test, then full locked serial workspace tests; proceed to independent diff review if green.",
+  "next_action": "Rerun workflow provenance test and full locked serial workspace tests; then run fmt/clippy/rustdoc/release gates.",
   "observed_branch": "feature/ar-1762-tool-discovery",
   "observed_dirty": 1,
   "observed_head": "b81ef5c7ebf323ddfc49e5722b070569bc4d2df1",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:04:14+00:00",
+  "updated_at": "2026-10-09T16:04:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -290,3 +290,11 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:04:14+00:00: Recorded command exit 101; command argv SHA-256
   96e590c914e389886125c31819e992316c1aed21cc12049c4c5dbff418df4fd7.
+
+- 2026-10-09T16:04:39+00:00: Concrete follow-up full-suite failure: asb-cli workflow_transcript
+  provenance test detected the expected SHA-256 for crates/asb-cli/src/lib.rs was stale after the
+  intentional completion-contract change (actual
+  28ffd72ab002459b40e33f86d674503a48f77fcfce4bd432e515bea06850ecc1, fixture expected 0eef2ba3...).
+  This is fixture drift, not runtime behavior. Updated
+  docs/examples/asb-cli-workflow-v1.provenance.json cli_source_sha256 to the exact reviewed source
+  digest; rerun focused provenance and full workspace tests.

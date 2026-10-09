@@ -964,7 +964,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. |
-| Next action | Rerun the repaired completion-contract test, then full locked serial workspace tests; proceed to independent diff review if green. |
+| Next action | Rerun workflow provenance test and full locked serial workspace tests; then run fmt/clippy/rustdoc/release gates. |
 
 ### AR-1763 — Generate and select ASB project catalogs
 
