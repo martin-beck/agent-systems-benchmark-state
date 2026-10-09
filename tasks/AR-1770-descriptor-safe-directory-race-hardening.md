@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T22:06:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1767"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1770-descriptor-safe-directory-race-hardening",
   "observed_dirty": 0,
   "observed_head": "6278fcd6720f39de456a791f0c73e6327ff6e25d",
-  "owner": "codex-ar1770-descriptor-safe-races",
+  "owner": "",
   "plan": "../plans/AR-1770-descriptor-safe-directory-race-hardening.md",
   "priority": "P1",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1770.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 250,
+  "task_revision": 251,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T21:36:44+00:00",
+  "updated_at": "2026-10-09T22:07:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -838,3 +838,7 @@ implementation boundary explicitly and keep the product offline after install.
   Kani/Loom passed. Original and prior retries remain 37990474021/37990474025,
   37992462857/37992484669. All non-container post-merge gates are green. No receipt, accept,
   release, or gate weakening performed.
+
+- 2026-10-09T22:07:15+00:00: Recovered expired claim formerly owned by
+  codex-ar1770-descriptor-safe-races. Replacement Terra worker recovered expired lease; preserving
+  existing owner and merged exact-head evidence while awaiting hosted registry recovery.
