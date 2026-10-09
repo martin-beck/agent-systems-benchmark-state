@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:22:03+00:00",
+  "updated_at": "2026-10-09T18:22:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -70,3 +70,6 @@ when useful; repeated commands must not claim an existing directory was new.
 
 - 2026-10-09T18:22:03+00:00: Recorded command exit 255; command argv SHA-256
   2c7fa74981fd8a14c97a3f8012adc6dc195f6871931853b919ed83dc9480d2b8.
+
+- 2026-10-09T18:22:26+00:00: Recorded command exit 0; command argv SHA-256
+  e8fdc6d25a72c71618842ed1478c8fcc866bc52b9f9f48e124fe6bbc8c529831.
