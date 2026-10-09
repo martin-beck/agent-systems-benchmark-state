@@ -371,6 +371,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1728` | `feature/ar-1728-cli2key-contract` | `69bf9029a497` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1734-development-tui-tool-environment` | `repair/ar-1734-development-tui-tool-environment` | `40f618b9389c` | 0 | behind 47, ahead 0 |
 | `agent-systems-benchmark-ar-1734-integration` | `DETACHED` | `1a5888ce1c96` | 0 | behind 46, ahead 0 |
+| `agent-systems-benchmark-ar-1735` | `repair/ar-1735-goose-fixture-determinism` | `69bf9029a497` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1737-development-tui-linker-handoff` | `repair/ar-1737-development-tui-linker-handoff` | `199bd00a95c2` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-ar-1738-development-rustup-permission-compatibility` | `repair/ar-1738-development-rustup-permission-compatibility` | `f020b2d4fd65` | 0 | behind 45, ahead 0 |
 | `agent-systems-benchmark-ar-1739-easy-channel-lifecycle` | `feature/ar-1739-easy-channel-lifecycle` | `617af40b356f` | 0 | behind 30, ahead 0 |
