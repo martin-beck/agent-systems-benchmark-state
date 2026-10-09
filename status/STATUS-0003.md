@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Obtain independent technical review and GitHub approval; wait for every PR check at exact head 644085e to reach success, then integrate with merge_pr.py against the current exact main base. |
+| Next action | Repair destination symlink acceptance in tool_install, add a regression test, rerun full focused/workspace gates and push a fresh exact head; independent review remains pending. |
 
 ### AR-1762 — Discover system and project ASB tools
 

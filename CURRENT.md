@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1761](tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | Install supported external ASB tools into a user/project-local root and persist validated records. | Obtain independent technical review and GitHub approval; wait for every PR check at exact head 644085e to reach success, then integrate with merge_pr.py against the current exact main base. | codex-asb-ar1761-tool-install-20261009 |
+| P0 | [AR-1761](tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | Install supported external ASB tools into a user/project-local root and persist validated records. | Repair destination symlink acceptance in tool_install, add a regression test, rerun full focused/workspace gates and push a fresh exact head; independent review remains pending. | codex-asb-ar1761-tool-install-20261009 |
 | P0 | [AR-1762](tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Wait for exact-head CI to terminal results; independently inspect/review PR diff and merge only after all required checks green. | codex-asb-ar1762-tool-discovery-20261009 |
 
 ## Open

@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Obtain independent technical review and GitHub approval; wait for every PR check at exact head 644085e to reach success, then integrate with merge_pr.py against the current exact main base.",
+  "next_action": "Repair destination symlink acceptance in tool_install, add a regression test, rerun full focused/workspace gates and push a fresh exact head; independent review remains pending.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 0,
   "observed_head": "644085ecd2f3758aa3482b8a60d4e2ddf099f0c1",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:22:20+00:00",
+  "updated_at": "2026-10-09T16:22:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -281,3 +281,13 @@ for idempotence; never store API keys or tokens.
 
 - 2026-10-09T16:22:20+00:00: Recorded command exit 0; command argv SHA-256
   b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b.
+
+- 2026-10-09T16:22:33+00:00: Independent review of exact PR #534 head
+  644085ecd2f3758aa3482b8a60d4e2ddf099f0c1: complete diff/docs/contracts reviewed; cargo fmt check,
+  focused tool tests (6/6), clippy -D warnings, and diff check pass. However, a blocking path-safety
+  finding remains: tool_install checks destination.exists() and reads bytes before checking symlink
+  metadata, so an existing .asb/tools/<id>/tool symlink to matching bytes is accepted and persisted.
+  Reproduced in a disposable fixture: install exited 0 and retained the symlink target. This
+  violates the documented symlink/path-safe contract and must be repaired by rejecting destination
+  symlinks (and safely validating the destination inode/type) before any digest comparison. No
+  approval or merge recommendation.
