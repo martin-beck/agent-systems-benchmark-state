@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 199,
+  "task_revision": 200,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:31:51+00:00",
+  "updated_at": "2026-10-09T16:32:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -589,3 +589,6 @@ development authentication/signatures/keys are absent.
   PATH cargo fixture that backgrounds /usr/bin/sleep 100 and prints a version: `timeout 3 asb tool
   discover ...` exits 124 with no report. This violates bounded allowlisted probes and can hang
   discovery. No approval or merge recommendation.
+
+- 2026-10-09T16:32:01+00:00: Recorded command exit 0; command argv SHA-256
+  a81c12e29431a9db01f8a547fe5bd292d7685c25a46fd803beab09ef44e26184.
