@@ -858,11 +858,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1755-install-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Repair the ASB Make install path so rerunning plain &#96;make install&#96; replaces its existing ASB binary without advertising an invalid Make option. |
@@ -1681,7 +1681,7 @@ flowchart LR
         AR_1752["AR-1752 - Done"]:::status_done
         AR_1753["AR-1753 - Done"]:::status_done
         AR_1754["AR-1754 - Planned"]:::status_planned
-        AR_1755["AR-1755 - Open"]:::status_open
+        AR_1755["AR-1755 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

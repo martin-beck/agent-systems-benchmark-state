@@ -2,23 +2,23 @@
 {
   "branch": "fix/ar-1755-idempotent-make-install",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-09T11:33:25+00:00",
   "depends_on": [
     "AR-1745"
   ],
   "id": "AR-1755",
   "next_action": "Promote and claim; reproduce the existing-destination failure on exact ASB main, make plain `make install` safely idempotent, add repeat-install regressions, and complete independent reviewed integration with exact-head and exact-main CI.",
-  "owner": "",
+  "owner": "codex-asb-ar1755-install-20261009",
   "plan": "../plans/AR-1755-idempotent-make-install.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1755.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the ASB Make install path so rerunning plain `make install` replaces its existing ASB binary without advertising an invalid Make option.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Make ASB installation safely idempotent",
-  "updated_at": "2026-10-09T09:33:22+00:00",
+  "updated_at": "2026-10-09T09:33:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1755-idempotent-make-install"
 }
 ---
@@ -40,3 +40,5 @@ system-wide privilege handling.
 
 - 2026-10-09T09:33:22+00:00: AR-1745 is done; exact ASB main reproduces the Cargo
   existing-destination failure and GNU Make rejects the suggested --force spelling.
+
+- 2026-10-09T09:33:25+00:00: Claimed by codex-asb-ar1755-install-20261009.
