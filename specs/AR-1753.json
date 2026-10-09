@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1753.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "release-provenance",
+      "description": "The complete vendor snapshot is byte-identical to the exact Coordinator v0.3.59 release and is recorded as release evidence."
+    },
+    {
+      "id": "downstream-integrity",
+      "description": "All ASB-owned schema, fixture, compatibility, coverage, formal, privacy, and generated-view regressions exposed by the upgrade are repaired without editing vendored bytes."
+    },
+    {
+      "id": "lifecycle-health",
+      "description": "The upgraded repository reconciles cleanly and passes offline vendor verification and live coordinator doctor checks."
+    }
+  ],
+  "definition_of_done": [
+    "The exact reviewed vendor and downstream repair tree is integrated through a signed DCO merge.",
+    "All required exact-head and exact-main checks pass at unchanged thresholds.",
+    "A privacy-safe immutable receipt binds the upstream release identity, reviewed tree, tests, merge, and post-merge verification."
+  ],
+  "inputs": [
+    {
+      "id": "coordinator-release",
+      "description": "Agent Workflow Coordinator v0.3.59 exact tag, commit, tree, release manifest, and hosted verification."
+    },
+    {
+      "id": "current-asb-state",
+      "description": "The clean current ASB-state main and its v0.3.57 development vendor manifest."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "release-vendor",
+      "description": "A complete immutable v0.3.59 release vendor snapshot and manifest."
+    },
+    {
+      "id": "integrity-receipt",
+      "description": "Privacy-safe evidence for compatibility repairs, review, CI, merge, and exact-main health."
+    }
+  ],
+  "allowed_tools": [
+    "git",
+    "gh",
+    "python",
+    "uv",
+    "tools/handoffctl"
+  ],
+  "forbidden_tools": [
+    "vendored-byte-patching",
+    "force-push",
+    "credential-output",
+    "gate-weakening"
+  ],
+  "required_evidence_classes": [
+    "mechanical",
+    "environmental",
+    "hosted"
+  ],
+  "gates": [
+    {
+      "id": "vendor-integrity",
+      "description": "Exact release provenance, complete vendor digests, source comparison, and downstream integration checks pass."
+    },
+    {
+      "id": "repository-quality",
+      "description": "All state quality, coverage, formal, generated-view, privacy, review, and hosted gates pass without reduced thresholds."
+    }
+  ]
+}
