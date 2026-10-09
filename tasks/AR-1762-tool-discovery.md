@@ -17,20 +17,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:f8346377c3fa14042f3531deaba95ebe78aa35ff051a40c7a60fd51bd2d4bd7a",
+    "evidence_ref": "quality/AR-1762-tool-discovery-postmerge-receipt.json",
     "spec_ref": "specs/AR-1762.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1762.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 286,
+  "task_revision": 287,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T17:05:41+00:00",
+  "updated_at": "2026-10-09T17:06:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -850,3 +850,6 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T17:05:41+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-10-09T17:06:07+00:00: PR #536 merged as signed DCO two-parent commit 3cab69a; exact-main tree
+  and signature verified; all 10 required post-merge CI runs green.
