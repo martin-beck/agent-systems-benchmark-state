@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 197,
+  "task_revision": 198,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:57:05+00:00",
+  "updated_at": "2026-10-09T21:57:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -582,3 +582,6 @@ say what remains usable.
 - 2026-10-09T21:57:05+00:00: Added explicit typed classifier/context and catalog row for the actual
   tui.rs producer dev_metadata_failed. Focused diagnostic/human/contract/formatting and full locked
   workspace tests pass; product tree clean and lease refreshed.
+
+- 2026-10-09T21:57:13+00:00: Recorded command exit 0; command argv SHA-256
+  26d6ac6358df95a3682a25ea0a379f030ee36810f384064bbab9298008440581.
