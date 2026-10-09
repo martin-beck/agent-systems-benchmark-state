@@ -866,7 +866,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the ASB Make install path so rerunning plain &#96;make install&#96; replaces its existing ASB binary without advertising an invalid Make option. |
-| Next action | Obtain independent approval of exact head 6ac109533612f827320f87bbf65f98694cee4e8d/tree 2bc351c195732261fb694e0d4c156a47daba04c0, wait for every hosted exact-head check on PR #526, then perform documented signed exact-tree integration and exact-main CI verification. |
+| Next action | Post the head-bound independent approval on PR #526, construct and publish the documented signed exact-tree merge for reviewed head 6ac109533612f827320f87bbf65f98694cee4e8d/tree 2bc351c195732261fb694e0d4c156a47daba04c0, then verify all exact-main hosted checks before release. |
 
 
 ## Dependency graph
