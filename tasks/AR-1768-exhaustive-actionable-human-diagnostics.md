@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 227,
+  "task_revision": 228,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T22:26:33+00:00",
+  "updated_at": "2026-10-09T22:27:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
@@ -666,3 +666,6 @@ say what remains usable.
 - 2026-10-09T22:26:33+00:00: Focused PTY reproduction passed on exact merge; only failed hosted
   quality workflow was rerun as attempt 2. Repository-quality advanced into controlled-defect
   proofs; aarch64 guest materialization remains live.
+
+- 2026-10-09T22:27:31+00:00: Recorded command exit 0; command argv SHA-256
+  22c90de65b7529a098d4806a91853f7189e04c87080d067c5ec4dc09753e873f.
