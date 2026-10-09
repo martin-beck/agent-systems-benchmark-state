@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Tell human users which command-owned directory will be created, create it safely, and report precise path-specific failures.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:23:27+00:00",
+  "updated_at": "2026-10-09T18:25:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -80,3 +80,6 @@ when useful; repeated commands must not claim an existing directory was new.
   failure because generated tools/__pycache__/handoffctl.cpython-312.pyc exceeded the state size
   guard; repaired the worktree identity to the declared exact key. Begin central safe directory
   primitive and notice wiring.
+
+- 2026-10-09T18:25:11+00:00: Recorded command exit 0; command argv SHA-256
+  04597771a78482782e94f4b4a7461fdfebe693705c12334334d2989f552076d3.
