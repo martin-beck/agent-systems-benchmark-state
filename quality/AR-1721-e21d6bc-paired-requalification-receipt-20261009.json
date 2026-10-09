@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1721",
+  "qualification_date": "2026-10-09",
+  "result": "pass",
+  "scope": "exact-current-main installed public paired requalification",
+  "implementation_provenance": {
+    "asb": {
+      "pull_request": 489,
+      "head": "dd10b075c065a5a5aef6062c7d9a6939a5a029a0",
+      "merge": "4ceacaa7ea1f25d3de0ad71f196a8f21f61694aa"
+    },
+    "asb_tui": {
+      "pull_request": 296,
+      "head": "bb8f503be6cf5cf2543eac782ba31875768e5636",
+      "merge": "c99ff65cda05b325445c7762040b74a54a45652c"
+    }
+  },
+  "repair_provenance": {
+    "ar": "AR-1752",
+    "pull_request": 522,
+    "reviewed_candidate": "c2ad947f27ea178720001c48a2b20f34f4383f5d",
+    "reviewed_tree": "6897b0de3b8fa4e0e53f232b7c674d0a2538523c",
+    "merge": "e21d6bc7ed1cae3e102eceada291cb7931f6b812",
+    "qualification_receipt": {
+      "ref": "quality/AR-1752-development-broker-v115-projection-receipt-20261009.json",
+      "sha256": "50a73f740e2316833264589ec2f3469bdbc55f4f29fc85703c6872c7792582a9"
+    },
+    "closeout_receipt": {
+      "ref": "quality/AR-1752-development-broker-v115-projection-closeout-20261009.json",
+      "sha256": "2e77c97c8d925c3d9e7200459fe129f6053b76535ff095ada6e02b7fe7476f0f"
+    }
+  },
+  "exact_heads": {
+    "asb": {
+      "commit": "e21d6bc7ed1cae3e102eceada291cb7931f6b812",
+      "tree": "6897b0de3b8fa4e0e53f232b7c674d0a2538523c",
+      "binary_sha256": "dfd155ed682c82e8e5d02a4825c4f9dca2dcc3d72537bf06951e1f68914fb689",
+      "signature": "valid",
+      "dco": "present"
+    },
+    "asb_tui": {
+      "commit": "60ab530dd1a09d6617514f9974217c9f08d48876",
+      "tree": "72d0e08883130aebc4a88fb9914007ff93a0f555",
+      "binary_sha256": "b722c016a03b6e62e2cb0b4a1b21b48c439d09e44c488377d4e2846a993a2991",
+      "signature": "valid",
+      "dco": "present"
+    }
+  },
+  "hosted_checks": {
+    "asb_exact_main": {
+      "result": "success",
+      "workflow_runs": {
+        "cross_repository_broker": 37884751613,
+        "formal_assurance": 37884751589,
+        "source_headers": 37884751590,
+        "portable_provenance": 37884751636,
+        "hosted_portability": 37884751702,
+        "fault_assurance": 37884751619,
+        "credential_free_benchmark": 37884751645,
+        "repository_quality": 37884751632,
+        "rust_verification": 37884751631,
+        "emulated_aarch64": 37884751640
+      }
+    },
+    "asb_tui_exact_main": {
+      "result": "success",
+      "workflow_runs": {
+        "repository_quality": 37866323231,
+        "trusted_main_verification": 37866323304
+      }
+    }
+  },
+  "toolchain": {
+    "cargo_release": "1.93.0",
+    "rustc_release": "1.93.0",
+    "rustup_cargo_shim_sha256": "dda7234360b7f578ca8b0ddcb80145646fa61a67c1720a5abc7051b35c9fcb71",
+    "resolved_cargo_sha256": "9548937d530bf439ff1ba47a3b2bd26eeb9c3aff1961c20c01798613de922578",
+    "resolved_rustc_sha256": "d32249a7c3bfcfc67b471460386e46323accae7125e344567a12d5664d99bb57",
+    "cargo_version_artifact_sha256": "966c41ad3a4c8cf257adb998076547d6947e4b34912d4b00e1a975f2f8244e0b",
+    "rustc_version_artifact_sha256": "83e4eefd5e010a92d9f63328bf8219e23fe5e4cf5e5d17ce53d0263cfa4218a6"
+  },
+  "installed_public_journey": {
+    "fresh_disposable_home": true,
+    "controlling_pty": "80x24 xterm-256color",
+    "supported_development_cargo_shim": true,
+    "sequence": [
+      "asb tui install",
+      "asb tui status",
+      "asb tui",
+      "asb tui dynamic-catalog"
+    ],
+    "operations": {
+      "install": {
+        "exit": 0,
+        "code": "development_bundle_consumed",
+        "network": "used",
+        "raw_artifact_sha256": "4e4c7b4063b81227504adc2b35858b6d23e01295c307cc249d2df841ffd6d419"
+      },
+      "status": {
+        "exit": 0,
+        "code": "development_installed",
+        "network": "denied",
+        "raw_artifact_sha256": "919204509d83a41a2dd3f05cbc41d56e1bfed67f81f42075c56c29e3357b1a87"
+      },
+      "bare": {
+        "exit": 0,
+        "code": "development_launched",
+        "network": "denied",
+        "raw_artifact_sha256": "cd874a2c7707f50865fd2d67c0317ffe041203a907b2f633ae0a75202658a14c"
+      },
+      "dynamic_catalog": {
+        "exit": 0,
+        "code": "development_launched",
+        "network": "denied",
+        "raw_artifact_sha256": "1c080ab4e74b5d2e96bb04f0273c02d5c06d573bf5c240a2853d8d7990b8835c"
+      }
+    },
+    "identity_artifact_sha256": "5687375a2fdc90bbf911bb2cc25a008019abafb940795b1154fc0074ce584eb1",
+    "asb_commit_identity_artifact_sha256": "4c68a6dd5b9e2515a8cf848b903e2d7523969be38f40d3c1504d38e54c5d7a72",
+    "exit_summary_artifact_sha256": "0691244895d82bf281a848f8f15b68ad44f963826028f9b90a7f4d93b335934e",
+    "channel_manifest_sha256": "1edb6041c9ed09ce9326170bb47b32eaa7bcca0f68cb06fabb3f951f9dd53a46",
+    "residual_socket_list_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "residual_broker_list_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "network_boundary": {
+    "catalog_discovery": {
+      "network": "allowed_and_used",
+      "purpose": "credential-free public OpenRouter model catalog discovery",
+      "credential_sent": false,
+      "basis": "The paired TUI accepts only a negotiated DynamicProviderCatalog on this route; ASB live discovery invokes the bounded public catalog transport.",
+      "packet_capture_performed": false
+    },
+    "benchmark_or_provider_execution": {
+      "invoked": false,
+      "network": "not_used"
+    },
+    "lifecycle_network_field": "The successful development_launched lifecycle JSON records network=denied as outer route metadata. It is not proof that credential-free catalog-discovery HTTP was denied.",
+    "denied_catalog_discovery_behavior": "Reviewed negative coverage preserves typed Unavailable when catalog transport is denied and does not fall back to static, mock, replay, or provider execution."
+  },
+  "development_warnings": {
+    "blocking": false,
+    "codes": [
+      "development_missing_authentication_allowed",
+      "development_missing_signatures_allowed",
+      "development_missing_key_management_allowed"
+    ]
+  },
+  "historical_failure": {
+    "ref": "quality/AR-1721-current-main-closeout-receipt-20261009.json",
+    "sha256": "38ff5678d0af85420f69691ca7bea997eb60c502e9268d666b4c841561a9bb72",
+    "status": "preserved_and_superseded",
+    "note": "The earlier exact-main attempt at ASB 69bf9029 failed with dynamic_catalog_response_missing. It remains immutable historical evidence and is superseded only by this successful post-AR-1752 requalification."
+  },
+  "privacy": {
+    "credential_values_persisted": false,
+    "raw_provider_payload_persisted": false,
+    "raw_terminal_transcript_committed": false,
+    "host_absolute_paths_committed": false,
+    "artifact_policy": "Only privacy-safe result metadata and cryptographic digests are committed."
+  }
+}
