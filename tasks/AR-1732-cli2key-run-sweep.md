@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Integrate cli2key runs and sweeps",
-  "updated_at": "2026-10-09T13:53:10+00:00",
+  "updated_at": "2026-10-09T13:54:14+00:00",
   "worktree_key": ""
 }
 ---
@@ -236,3 +236,6 @@ serve as production or official-provider qualification.
 - 2026-10-09T13:51:44+00:00: Heartbeat by codex-asb-ar1732-run-sweep-20261009.
 
 - 2026-10-09T13:53:10+00:00: Heartbeat by codex-asb-ar1732-run-sweep-20261009.
+
+- 2026-10-09T13:54:14+00:00: Recorded command exit 0; command argv SHA-256
+  b5e922c24daf5a8e091417ffc723ae374fb8f2a6f89df49308989519bbf6b902.
