@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:55:48+00:00",
+  "updated_at": "2026-10-09T18:55:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -332,3 +332,6 @@ when useful; repeated commands must not claim an existing directory was new.
   f34830bb75ce919d43036b4f889afd4b9fa1375d (SSH-signed and DCO), not the abbreviated hash typo in
   the previous note. It is pushed to PR #539. All other recorded clippy, fmt, test, provenance, and
   AR-1770 evidence remains unchanged.
+
+- 2026-10-09T18:55:57+00:00: Recorded command exit 8; command argv SHA-256
+  979cf1cd8e67550441e460787e413b3f33fefc7102f833010fc37c8f46492925.
