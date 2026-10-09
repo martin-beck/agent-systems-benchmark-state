@@ -8,6 +8,7 @@ import datetime as dt
 import importlib.util
 import json
 import multiprocessing
+import os
 import re
 import subprocess
 import sys
@@ -108,6 +109,13 @@ def concurrent_reconcile(root_value: str, start: Any) -> None:
         patch.object(CORE, "run", return_value=completed),
     ):
         CORE.reconcile(do_commit=False)
+
+
+def concurrent_observation_ticket(root_value: str, start: Any, outcomes: Any) -> None:
+    """Reserve an advisory scan ticket from one shared fixture across processes."""
+    configure_child(root_value)
+    start.wait(5)
+    outcomes.put(CORE.reserve_observation_ticket())
 
 
 def concurrent_promote(root_value: str, start: Any) -> None:
@@ -1634,6 +1642,24 @@ class HandoffTest(unittest.TestCase):
         with CORE.locked(timeout=0.1):
             pass
 
+    def test_private_lock_trace_records_wait_hold_and_timeout(self) -> None:
+        trace = self.root / "lock-trace.jsonl"
+        with (
+            patch.dict(os.environ, {"HANDOFFCTL_LOCK_TRACE": str(trace)}),
+            CORE.locked(phase="fixture_hold"),
+            self.assertRaisesRegex(CORE.LockTimeoutError, "LOCK_TIMEOUT"),
+            CORE.locked(timeout=0, phase="fixture_wait"),
+        ):
+            pass
+        records = [json.loads(line) for line in trace.read_text().splitlines()]
+        self.assertEqual({"fixture_hold", "fixture_wait"}, {item["phase"] for item in records})
+        self.assertTrue(
+            next(item for item in records if item["phase"] == "fixture_wait")["timeout"]
+        )
+        self.assertIsInstance(records[0]["ended_ns"], int)
+        with patch.dict(os.environ, {"HANDOFFCTL_LOCK_TRACE": str(self.root)}):
+            CORE.trace_lock_metric("fixture", "shared", 0, 0)
+
     def test_lock_yields_capability_and_invalidates_after_scope(self) -> None:
         with CORE.locked(timeout=0.1) as guard:
             self.assertEqual(CORE.coordinator_lock_path().resolve(), guard.path)
@@ -2034,7 +2060,10 @@ class HandoffTest(unittest.TestCase):
             )
         )
 
+        calls: list[list[str]] = []
+
         def fake_run(args: list[str], **_: object) -> object:  # noqa: C901
+            calls.append(args)
             joined = " ".join(args)
             stdout = ""
             returncode = 0
@@ -2043,7 +2072,10 @@ class HandoffTest(unittest.TestCase):
                 if checkout == str(CORE.ROOT):
                     stdout = f"worktree {CORE.ROOT}\n\nworktree {state_task}\n"
                 else:
-                    stdout = f"worktree {product}\n\nworktree {second}\n"
+                    stdout = (
+                        f"worktree {product}\nHEAD {'b' * 40}\nbranch refs/heads/main\n\n"
+                        f"worktree {second}\nHEAD {'c' * 40}\ndetached\n"
+                    )
             elif "symbolic-ref" in joined and str(second) in joined:
                 returncode = 1
             elif "symbolic-ref" in joined:
@@ -2072,6 +2104,8 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual(2, len(state["worktrees"]))
         self.assertEqual(1, state["worktrees"][0]["dirty"])
         self.assertEqual("DETACHED", state["worktrees"][1]["branch"])
+        self.assertFalse(any("symbolic-ref" in args for args in calls))
+        self.assertFalse(any("rev-parse" in args and str(second) in args for args in calls))
 
     def test_project_scan_excludes_all_coordinator_worktrees(self) -> None:
         product = self.root / "product"
@@ -2139,6 +2173,394 @@ class HandoffTest(unittest.TestCase):
             (self.root / "PROJECT_STATE.md").write_text("stale")
             errors = CORE.validate(live=True)
             self.assertIn("PROJECT_STATE.md is stale", errors)
+
+    def test_git_reconcile_observes_product_without_authority_lock(self) -> None:
+        self.make_task()
+        observed = False
+
+        def scan_without_lock() -> Any:
+            nonlocal observed
+            # A second descriptor must be able to acquire the same lock while
+            # the slow external observation phase is in progress.
+            with CORE.locked(timeout=0):
+                observed = True
+            return self.fake_scan()
+
+        with patch.object(CORE, "project_scan", side_effect=scan_without_lock):
+            self.assertTrue(CORE.reconcile(do_commit=False))
+        self.assertTrue(observed)
+
+    def test_git_snapshot_observes_product_without_shared_lock(self) -> None:
+        self.make_task()
+
+        def scan_without_lock() -> Any:
+            with CORE.locked(timeout=0):
+                pass
+            return self.fake_scan()
+
+        with patch.object(CORE, "project_scan", side_effect=scan_without_lock):
+            CORE.reconcile(do_commit=False)
+            with patch.object(CORE, "run", return_value=SimpleNamespace(stdout="state\n")):
+                CORE.cmd_snapshot()
+
+    def test_git_doctor_scans_unlocked_but_validates_under_shared_lock(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+        actual_validate = CORE.validate
+
+        def unlocked_scan() -> Any:
+            with CORE.locked(timeout=0):
+                pass
+            return self.fake_scan()
+
+        def locked_validation(*, live: bool, live_state: Any) -> list[str]:
+            with (
+                self.assertRaises(CORE.LockTimeoutError),
+                CORE.locked(timeout=0),
+            ):
+                pass
+            return cast(list[str], actual_validate(live=live, live_state=live_state))
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=unlocked_scan),
+            patch.object(CORE, "validate", side_effect=locked_validation),
+        ):
+            self.assertEqual(0, CORE.cmd_doctor(live=True))
+
+    def test_git_doctor_accepts_equivalent_publication_during_scan(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+        scans = 0
+
+        def interleaved_scan() -> Any:
+            nonlocal scans
+            scans += 1
+            if scans == 1:
+                with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+                    CORE.reconcile(do_commit=False)
+            return self.fake_scan()
+
+        with patch.object(CORE, "project_scan", side_effect=interleaved_scan):
+            self.assertEqual(0, CORE.cmd_doctor(live=True))
+        self.assertEqual(1, scans)
+
+    def test_git_doctor_retries_changed_publication_during_scan(self) -> None:
+        self.make_task()
+        older = self.fake_scan()
+        newer = self.fake_scan()
+        newer["remote_main"] = "c" * 40
+        with patch.object(CORE, "project_scan", return_value=older):
+            CORE.reconcile(do_commit=False)
+        scans = 0
+
+        def interleaved_scan() -> Any:
+            nonlocal scans
+            scans += 1
+            if scans == 1:
+                with patch.object(CORE, "project_scan", return_value=newer):
+                    CORE.reconcile(do_commit=False)
+                return older
+            return newer
+
+        with patch.object(CORE, "project_scan", side_effect=interleaved_scan):
+            self.assertEqual(0, CORE.cmd_doctor(live=True))
+        self.assertEqual(2, scans)
+
+    def test_git_doctor_fails_boundedly_if_every_scan_is_overtaken(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+        scans = 0
+
+        def overtaken_scan() -> Any:
+            nonlocal scans
+            scans += 1
+            newer = self.fake_scan()
+            newer["remote_main"] = "c" * 40
+            with patch.object(CORE, "project_scan", return_value=newer):
+                CORE.reconcile(do_commit=False)
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=overtaken_scan),
+            patch("builtins.print") as printed,
+        ):
+            self.assertEqual(1, CORE.cmd_doctor(live=True))
+        self.assertEqual(3, scans)
+        printed.assert_called_once_with("ERROR: OBSERVATION_CHANGED: retry doctor")
+
+    def test_git_doctor_does_not_hide_structural_error_behind_overtaken_scan(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+        scans = 0
+
+        def overtaken_scan() -> Any:
+            nonlocal scans
+            scans += 1
+            with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+                CORE.reconcile(do_commit=False)
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=overtaken_scan),
+            patch.object(
+                CORE,
+                "doctor_checks",
+                return_value=["PROJECT_STATE.md is stale", "structural error"],
+            ),
+            patch("builtins.print") as printed,
+        ):
+            self.assertEqual(1, CORE.cmd_doctor(live=True))
+        self.assertEqual(1, scans)
+        printed.assert_called_once_with("ERROR: PROJECT_STATE.md is stale\nERROR: structural error")
+
+    def test_git_doctor_rejects_changed_binding_after_scan(self) -> None:
+        self.make_task()
+
+        def changed_binding_scan() -> Any:
+            binding = json.loads(CORE.BINDING.read_text())
+            binding["product_repository"] = "owner/other"
+            CORE.BINDING.write_text(json.dumps(binding))
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=changed_binding_scan),
+            self.assertRaisesRegex(RuntimeError, "OBSERVATION_INPUT_CHANGED"),
+        ):
+            CORE.cmd_doctor(live=True)
+
+    def test_git_reconcile_does_not_publish_an_overtaken_scan(self) -> None:
+        self.make_task(worktree_key="worker-one")
+        older = self.fake_scan()
+        newer = self.fake_scan()
+        for state, head in ((older, "a" * 40), (newer, "b" * 40)):
+            state["worktrees"] = [
+                {
+                    "key": "worker-one",
+                    "branch": "feature/one",
+                    "head": head,
+                    "dirty": 0,
+                    "paths": [],
+                    "behind": 0,
+                    "ahead": 1,
+                }
+            ]
+        scans = 0
+
+        def out_of_order_scan() -> Any:
+            nonlocal scans
+            scans += 1
+            if scans == 1:
+                self.assertTrue(CORE.reconcile(do_commit=False))
+                return older
+            return newer
+
+        with patch.object(CORE, "project_scan", side_effect=out_of_order_scan):
+            self.assertTrue(CORE.reconcile(do_commit=False))
+        self.assertEqual(3, scans)
+        self.assertEqual("b" * 40, CORE.locate("AR-0001")[1]["observed_head"])
+        self.assertEqual(CORE.live_docs(newer)[1], (self.root / "WORKTREES.md").read_text())
+        self.assertEqual("3\n", CORE.observation_marker("observation-published").read_text())
+
+    def test_overtaken_commit_and_push_honor_durability_request(self) -> None:
+        task_path = self.make_task()
+        scans = 0
+
+        def publish_newer_plain_reconcile() -> Any:
+            nonlocal scans
+            scans += 1
+            if scans == 1:
+                self.assertTrue(CORE.reconcile(do_commit=False))
+                task_path.write_text(task_path.read_text() + "\nUnrelated draft note.\n")
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=publish_newer_plain_reconcile),
+            patch.object(CORE, "commit", return_value=True) as commit,
+            patch.object(CORE, "push_replica") as push,
+        ):
+            self.assertTrue(CORE.reconcile(do_commit=True, push=True))
+        commit.assert_called_once()
+        self.assertNotIn(task_path, commit.call_args.args[1])
+        push.assert_called_once()
+        self.assertEqual("3\n", CORE.observation_marker("observation-published").read_text())
+
+    def test_commit_collects_pending_paths_from_earlier_plain_reconcile(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+            pending = json.loads((CORE.RUNTIME / "last-reconcile.json").read_text())[
+                "pending_paths"
+            ]
+            self.assertTrue(pending)
+            with patch.object(CORE, "commit", return_value=True) as commit:
+                self.assertTrue(CORE.reconcile(do_commit=True))
+        self.assertTrue(
+            {CORE.ROOT / value for value in pending}.issubset(set(commit.call_args.args[1]))
+        )
+        self.assertEqual(
+            [], json.loads((CORE.RUNTIME / "last-reconcile.json").read_text())["pending_paths"]
+        )
+
+    def test_pending_task_content_change_refuses_later_commit(self) -> None:
+        task_path = self.make_task(worktree_key="worker-one")
+        state = self.fake_scan()
+        state["worktrees"] = [
+            {
+                "key": "worker-one",
+                "branch": "feature/one",
+                "head": "b" * 40,
+                "dirty": 0,
+                "paths": [],
+                "behind": 0,
+                "ahead": 1,
+            }
+        ]
+        with patch.object(CORE, "project_scan", return_value=state):
+            CORE.reconcile(do_commit=False)
+            task_path.write_text(task_path.read_text() + "\nUnrelated draft note.\n")
+            with self.assertRaisesRegex(RuntimeError, "PENDING_OBSERVATION_CHANGED"):
+                CORE.reconcile(do_commit=True)
+
+    def test_committed_task_transition_clears_stale_pending_hash(self) -> None:
+        task_path = self.make_task(worktree_key="worker-one")
+        CORE.run(["git", "init", "-b", "main", str(self.root)])
+        for key, value in (
+            ("user.name", "Fixture"),
+            ("user.email", "fixture@example.invalid"),
+            ("commit.gpgsign", "false"),
+        ):
+            CORE.run(["git", "-C", str(self.root), "config", key, value])
+        CORE.run(["git", "-C", str(self.root), "add", "--all"])
+        CORE.run(["git", "-C", str(self.root), "commit", "-m", "fixture baseline"])
+        state = self.fake_scan()
+        state["worktrees"] = [
+            {
+                "key": "worker-one",
+                "branch": "feature/one",
+                "head": "b" * 40,
+                "dirty": 0,
+                "paths": [],
+                "behind": 0,
+                "ahead": 1,
+            }
+        ]
+        with patch.object(CORE, "project_scan", return_value=state):
+            self.assertTrue(CORE.reconcile(do_commit=False))
+            self.assertIn(
+                str(task_path.relative_to(self.root)),
+                json.loads((CORE.RUNTIME / "last-reconcile.json").read_text())["pending_paths"],
+            )
+            meta, body = CORE.read_task(task_path)
+            meta["status"] = "in_progress"
+            meta["owner"] = "worker-one"
+            meta["claim_expires"] = "2030-01-01T00:00:00+00:00"
+            meta["task_revision"] = 2
+            CORE.write_task(task_path, meta, body)
+            self.refresh_views()
+            CORE.run(["git", "-C", str(self.root), "add", "--all"])
+            CORE.run(["git", "-C", str(self.root), "commit", "-m", "fixture claim"])
+            self.assertTrue(CORE.reconcile(do_commit=False))
+
+    def test_observation_tickets_are_checkout_local(self) -> None:
+        first = CORE.reserve_observation_ticket()
+        other_runtime = self.root / "other-checkout" / ".runtime"
+        with patch.object(CORE, "RUNTIME", other_runtime):
+            self.assertEqual(1, CORE.reserve_observation_ticket())
+            self.assertEqual(0, CORE.published_observation_ticket())
+        self.assertEqual(1, first)
+        self.assertEqual(2, CORE.reserve_observation_ticket())
+
+    def test_failed_push_keeps_locally_published_observation_ticket(self) -> None:
+        self.make_task()
+        with (
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
+            patch.object(CORE, "commit", return_value=True),
+            patch.object(CORE, "push_replica", side_effect=OSError("push failed")),
+            self.assertRaisesRegex(OSError, "push failed"),
+        ):
+            CORE.reconcile(do_commit=True, push=True)
+        self.assertEqual("1\n", CORE.observation_marker("observation-published").read_text())
+
+    def test_failed_publication_marker_recovers_on_later_scan(self) -> None:
+        self.make_task()
+        real_atomic = CORE.atomic
+
+        def fail_marker(path: Path, value: str) -> None:
+            if path.name == "last-reconcile.json":
+                raise OSError("marker write failed")
+            real_atomic(path, value)
+
+        with (
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
+            patch.object(CORE, "commit", return_value=True),
+            patch.object(CORE, "atomic", side_effect=fail_marker),
+            self.assertRaisesRegex(OSError, "marker write failed"),
+        ):
+            CORE.reconcile(do_commit=True)
+        self.assertEqual("1\n", CORE.observation_marker("observation-published").read_text())
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            self.assertTrue(CORE.reconcile(do_commit=False))
+        self.assertEqual("2\n", CORE.observation_marker("observation-published").read_text())
+
+    def test_snapshot_retries_when_reconcile_publishes_during_scan(self) -> None:
+        self.make_task()
+        with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+            CORE.reconcile(do_commit=False)
+        scans = 0
+
+        def scan_with_interleaved_publication() -> Any:
+            nonlocal scans
+            scans += 1
+            if scans == 1:
+                with patch.object(CORE, "project_scan", return_value=self.fake_scan()):
+                    CORE.reconcile(do_commit=False)
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=scan_with_interleaved_publication),
+            patch.object(CORE, "run", return_value=SimpleNamespace(stdout="state\n")),
+        ):
+            CORE.cmd_snapshot()
+        self.assertEqual(2, scans)
+
+    def test_observation_tickets_are_unique_across_workers(self) -> None:
+        start = multiprocessing.Event()
+        outcomes: Any = multiprocessing.Queue()
+        processes = [
+            multiprocessing.Process(
+                target=concurrent_observation_ticket,
+                args=(str(self.root), start, outcomes),
+            )
+            for _ in range(8)
+        ]
+        for process in processes:
+            process.start()
+        start.set()
+        values = [outcomes.get(timeout=5) for _ in processes]
+        for process in processes:
+            process.join(5)
+            self.assertEqual(0, process.exitcode)
+        self.assertEqual(list(range(1, 9)), sorted(values))
+
+    def test_git_reconcile_rejects_changed_scan_binding(self) -> None:
+        self.make_task()
+
+        def change_binding() -> Any:
+            binding = json.loads(CORE.BINDING.read_text())
+            binding["product_repository"] = "owner/other"
+            CORE.BINDING.write_text(json.dumps(binding))
+            return self.fake_scan()
+
+        with (
+            patch.object(CORE, "project_scan", side_effect=change_binding),
+            self.assertRaisesRegex(RuntimeError, "OBSERVATION_INPUT_CHANGED"),
+        ):
+            CORE.reconcile(do_commit=False)
+        self.assertFalse((self.root / "PROJECT_STATE.md").exists())
 
     def test_generated_view_validation_reports_stale_and_renderer_errors(self) -> None:
         self.make_task()
@@ -3003,6 +3425,7 @@ class HandoffTest(unittest.TestCase):
             patch("builtins.print") as output,
             patch.object(CORE, "validate", return_value=[]),
             patch.object(CORE, "run", return_value=SimpleNamespace(stdout="state\n")),
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
         ):
             CORE.cmd_snapshot("AR-0001")
         self.assertTrue(any("SESSION_SNAPSHOT=" in str(call) for call in output.call_args_list))
@@ -3026,6 +3449,7 @@ class HandoffTest(unittest.TestCase):
             patch("builtins.print"),
             patch.object(CORE, "validate", return_value=[]),
             patch.object(CORE, "run", return_value=SimpleNamespace(stdout="state\n")),
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
             self.assertRaisesRegex(RuntimeError, "no session snapshot"),
         ):
             CORE.cmd_snapshot("AR-9999")
@@ -3275,6 +3699,7 @@ class HandoffTest(unittest.TestCase):
             patch.object(
                 CORE, "backend_selection", side_effect=[{"backend": "git"}, {"backend": "sqlite"}]
             ),
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
             self.assertRaisesRegex(RuntimeError, "BACKEND_CHANGED"),
         ):
             CORE.reconcile(do_commit=False)
@@ -3459,6 +3884,7 @@ class HandoffTest(unittest.TestCase):
         with (
             patch.object(sys, "argv", ["handoffctl", "doctor", "--live"]),
             patch.object(CORE, "validate", return_value=["bad"]),
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
             patch.object(CORE, "assert_project_binding"),
             patch("builtins.print"),
         ):

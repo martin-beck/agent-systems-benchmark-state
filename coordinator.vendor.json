@@ -169,7 +169,7 @@
       "source": "tests/test_checkpoint_records.py"
     },
     "tests/test_handoffctl.py": {
-      "sha256": "ef4a79ead1cda1d22bce2522115a42a177eec21aaa97279da0acba08129ba062",
+      "sha256": "0707db6be4f4b2b2a1695ab92d39c8d9898e47c5f0213a208cf89a008e9c7d9c",
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_hierarchy.py": {
@@ -217,7 +217,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "413536fa61af15125f1852c2f04069a01993a36fbd8d28d1df146f8ebe27c1f0",
+      "sha256": "800f9d6ca0f2bfdd6e7192442fdcfdd336d1e0db71863934d5a767ab151766fe",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -317,12 +317,10 @@
       "source": "LICENSE"
     }
   },
-  "schema_version": 2,
+  "schema_version": 1,
   "upstream": {
-    "channel": "development",
-    "commit": "113dc61029f0e0c57bc7832e1e41430eafa17e73",
+    "commit": "c9c21332841b80c967b174893596df1f3326b30b",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
-    "tree": "45ae6988ccd1c88230f262d735ff24d9d9b3bc4b",
-    "version": "v0.3.57"
+    "version": "v0.3.59"
   }
 }

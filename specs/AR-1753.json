@@ -5,7 +5,7 @@
   "acceptance_predicates": [
     {
       "id": "release-provenance",
-      "description": "The complete vendor snapshot is byte-identical to the exact Coordinator v0.3.59 release and is recorded as release evidence."
+      "description": "The complete vendor snapshot is byte-identical to the exact Coordinator v0.3.59 release; its canonical manifest binds the commit and file digests, while the immutable receipt records the commit-determined tree."
     },
     {
       "id": "downstream-integrity",
