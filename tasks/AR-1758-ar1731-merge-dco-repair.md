@@ -2,14 +2,14 @@
 {
   "branch": "repair/ar-1758-merge-dco",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T15:12:28+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1758",
   "next_action": "Protected main is repaired at exact signed+DCO merge 021ca1c39ff0199aa2c193026783712bc73bc51b; wait for remaining exact-main workflows, then record receipt and accept/release AR-1758 and AR-1731.",
   "observed_branch": "repair/ar-1758-merge-dco",
   "observed_dirty": 0,
   "observed_head": "b3cb9b256cccc15be682dbb1019a239b50edf6cd",
-  "owner": "codex-asb-ar1758-merge-dco-repair-20261009",
+  "owner": "",
   "plan": "../plans/AR-1758-ar1731-merge-dco-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1758.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Repair AR-1731 protected-main merge provenance",
-  "updated_at": "2026-10-09T13:14:28+00:00",
+  "updated_at": "2026-10-09T13:14:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1758-merge-dco"
 }
 ---
@@ -87,3 +87,6 @@ until the repaired exact-main workflows are green.
 - 2026-10-09T13:14:28+00:00: Accepted repaired protected-main publication
   021ca1c39ff0199aa2c193026783712bc73bc51b: merge_pr.py exact base/head/tree, valid SSH signature
   and DCO, and all exact-main workflows successful.
+
+- 2026-10-09T13:14:31+00:00: Completed non-rewriting AR-1731 merge provenance repair and verified
+  exact-main gates.
