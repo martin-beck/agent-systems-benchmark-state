@@ -1,5 +1,26 @@
 ---
-{"branch":"repair/ar-1751-gcc-linker-prefix-confinement","checkpoint_commit":"","claim_expires":"","depends_on":["AR-1737"],"id":"AR-1751","next_action":"Constrain development Cargo linker handoff so a validated ld cannot widen GCC helper or library trust through -B; add adversarial collect2/library regressions, independent exact-head review, signed reviewed-tree merge, and exact-main post-merge verification.","owner":"","plan":"../plans/AR-1751-gcc-linker-prefix-confinement.md","priority":"P0","schema_version":1,"spec_ref":"specs/AR-1751.json","spec_revision":1,"status":"planned","summary":"Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.","task_revision":1,"title":"Confine GCC linker-prefix trust after AR-1737","updated_at":"2026-10-09T00:00:00+00:00","worktree_key":"agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"}
+{
+  "branch": "repair/ar-1751-gcc-linker-prefix-confinement",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [
+    "AR-1737"
+  ],
+  "id": "AR-1751",
+  "next_action": "Constrain development Cargo linker handoff so a validated ld cannot widen GCC helper or library trust through -B; add adversarial collect2/library regressions, independent exact-head review, signed reviewed-tree merge, and exact-main post-merge verification.",
+  "owner": "",
+  "plan": "../plans/AR-1751-gcc-linker-prefix-confinement.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1751.json",
+  "spec_revision": 1,
+  "status": "open",
+  "summary": "Confine the PATH-free development linker handoff to validated linker material without trusting sibling GCC helpers or libraries.",
+  "task_revision": 2,
+  "title": "Confine GCC linker-prefix trust after AR-1737",
+  "updated_at": "2026-10-09T00:12:29+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1751-gcc-linker-prefix-confinement"
+}
 ---
 
 AR-1737 repaired env-cleared TUI source materialization by preserving one
@@ -32,3 +53,6 @@ validated and descriptor-bound, or a compiler/linker invocation that selects
 the validated linker without introducing a general GCC prefix. The worker must
 measure the real GCC invocation and prove the selected design, rather than
 assuming `LD`, `-fuse-ld`, or a wrapper has narrower semantics.
+
+- 2026-10-09T00:12:29+00:00: AR-1737 is done; independent follow-up reproduced GCC -B trust widening
+  to unvalidated helper and library siblings, so this P0 repair is dependency-ready.
