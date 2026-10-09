@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:04:42+00:00",
+  "updated_at": "2026-10-09T16:04:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -298,3 +298,6 @@ development authentication/signatures/keys are absent.
   This is fixture drift, not runtime behavior. Updated
   docs/examples/asb-cli-workflow-v1.provenance.json cli_source_sha256 to the exact reviewed source
   digest; rerun focused provenance and full workspace tests.
+
+- 2026-10-09T16:04:45+00:00: Recorded command exit 0; command argv SHA-256
+  a85fcf0190f3badac89d1e7c91daa5eef8d3896bbf52167926d8064cfedce142.
