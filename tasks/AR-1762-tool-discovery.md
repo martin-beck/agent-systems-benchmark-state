@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 193,
+  "task_revision": 194,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:30:24+00:00",
+  "updated_at": "2026-10-09T16:30:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -566,3 +566,6 @@ development authentication/signatures/keys are absent.
   no-synchronization-merge topology repair. Header and AWQ shadow checks are green; remaining
   required checks are running. Prior PR #535 remains unmergeable due stale pull-request merge ref
   and is not being merged.
+
+- 2026-10-09T16:30:30+00:00: Recorded command exit 0; command argv SHA-256
+  13ab2ec638a715844b8ec1172822b384391a2fcc75ce635aa9def178b4c49fd9.
