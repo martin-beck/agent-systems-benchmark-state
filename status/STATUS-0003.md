@@ -950,7 +950,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Install supported external ASB tools into a user/project-local root and persist validated records. |
-| Next action | Run full local quality, coverage, and build gates; push 22d8de5, then request independent review and monitor exact-head PR checks. |
+| Next action | Push exact clean head 644085e to PR #534; request independent technical review and monitor all exact-head required checks. |
 
 ### AR-1762 — Discover system and project ASB tools
 

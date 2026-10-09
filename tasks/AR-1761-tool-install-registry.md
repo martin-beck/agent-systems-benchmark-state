@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1761",
-  "next_action": "Run full local quality, coverage, and build gates; push 22d8de5, then request independent review and monitor exact-head PR checks.",
+  "next_action": "Push exact clean head 644085e to PR #534; request independent technical review and monitor all exact-head required checks.",
   "observed_branch": "feature/ar-1761-tool-install-registry",
   "observed_dirty": 0,
   "observed_head": "644085ecd2f3758aa3482b8a60d4e2ddf099f0c1",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Install supported external ASB tools into a user/project-local root and persist validated records.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "ASB external-tool installer and registry",
-  "updated_at": "2026-10-09T16:18:45+00:00",
+  "updated_at": "2026-10-09T16:18:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1761-tool-install-registry"
 }
 ---
@@ -250,3 +250,8 @@ for idempotence; never store API keys or tokens.
   f660170bbb8ca494c8aaf72dae9adb4f0b31ec4f53306907274ffc6ed80832c0.
 
 - 2026-10-09T16:18:45+00:00: Heartbeat by codex-asb-ar1761-tool-install-20261009.
+
+- 2026-10-09T16:18:54+00:00: Coverage repair validated locally: full workspace quality, clippy,
+  tests, rustdoc, release build all pass; check_coverage.py passes unchanged 90% workspace line
+  floor (workspace 90.39% lines; critical packages all above 95%). New signed+DCO head is 644085e
+  after provenance refresh. Generated profraw files were removed from the checkout.

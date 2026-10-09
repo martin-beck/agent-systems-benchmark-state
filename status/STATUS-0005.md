@@ -19,7 +19,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1761](../tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | codex-asb-ar1761-tool-install-20261009 | Install supported external ASB tools into a user/project-local root and persist validated records. | Run full local quality, coverage, and build gates; push 22d8de5, then request independent review and monitor exact-head PR checks. |
+| P0 | [AR-1761](../tasks/AR-1761-tool-install-registry.md): ASB external-tool installer and registry | codex-asb-ar1761-tool-install-20261009 | Install supported external ASB tools into a user/project-local root and persist validated records. | Push exact clean head 644085e to PR #534; request independent technical review and monitor all exact-head required checks. |
 | P0 | [AR-1762](../tasks/AR-1762-tool-discovery.md): Discover system and project ASB tools | codex-asb-ar1762-tool-discovery-20261009 | Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics. | Run source-header policy plus full focused/full applicable gates on repaired merge tree, commit signed+DCO, push exact head, and recheck PR #535 CI. |
 
 ### Open (1)
