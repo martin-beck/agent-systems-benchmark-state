@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. | codex-asb-ar1757-human-output-20261009 |
-| P0 | [AR-1759](tasks/AR-1759-tool-project-config-schema.md): ASB project and external-tool configuration schema | Define one versioned ASB project/tool inventory and catalog-selection configuration contract. | Wait for exact-main runs 37947479451, 37947479455, and 37947479450 to reach terminal success; then publish evidence and accept/release AR-1759. | codex-asb-ar1759-project-config-20261009 |
 
 ## Open
 

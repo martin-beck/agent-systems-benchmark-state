@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1759-tool-project-config-schema",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T16:54:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1745"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "main",
   "observed_dirty": 0,
   "observed_head": "27d7c931a6f3e0adbbe7f4ea9606717f369e9779",
-  "owner": "codex-asb-ar1759-project-config-20261009",
+  "owner": "",
   "plan": "../plans/AR-1759-tool-project-config-schema.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1759.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define one versioned ASB project/tool inventory and catalog-selection configuration contract.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "ASB project and external-tool configuration schema",
-  "updated_at": "2026-10-09T15:02:52+00:00",
+  "updated_at": "2026-10-09T15:02:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1759-tool-project-config-schema"
 }
 ---
@@ -131,3 +131,6 @@ unknown-field/path validation.
 
 - 2026-10-09T15:02:52+00:00: Accepted ProjectConfigV1 schema against merged PR #531 exact tree and
   all ten terminal-green exact-main workflows.
+
+- 2026-10-09T15:02:55+00:00: AR-1759 merged at 64843f1 and all exact-main post-merge workflows are
+  successful.
