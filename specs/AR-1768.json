@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1768.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "specific-outcome", "description": "Every human diagnostic states what the current command could not do, completed only partially, or completed with a warning."},
+    {"id": "specific-cause-and-target", "description": "Every known cause uses its fine-grained class and names the affected safe target or resource; generic words are never the sole explanation."},
+    {"id": "state-change-clarity", "description": "Output says whether relevant configuration, directories, artifacts, runs, or selections were created, retained, partially produced, or left unchanged."},
+    {"id": "useful-recovery", "description": "Each recoverable case provides one valid context-specific command or a concrete correction; unsafe or non-idempotent retries are not suggested."},
+    {"id": "warning-quality", "description": "Warnings identify the exact limitation and consequence without presenting warning-only development conditions as failures."},
+    {"id": "privacy-compatibility", "description": "Human usefulness does not leak credentials, payloads, prompts, internal temporary paths, or private evidence and does not change JSON schemas, exit meanings, or stream contracts."}
+  ],
+  "definition_of_done": [
+    "Every AR-1766 diagnostic variant and AR-1767 directory outcome has an explicit meaningful human presentation and test.",
+    "All public command-family negative and warning fixtures pass with cause, target, state-change, and remediation assertions.",
+    "Independent exact-head review and hosted checks pass."
+  ],
+  "inputs": [
+    {"id": "diagnostic-catalog", "description": "AR-1766 typed fine-grained causes, context, severity, and remediation metadata."},
+    {"id": "directory-results", "description": "AR-1767 created/reused and path-specific preparation outcomes."}
+  ],
+  "outputs": [
+    {"id": "human-diagnostic-presentations", "description": "Cause-specific concise messages and validated recovery for every public error, failure, partial result, and warning."},
+    {"id": "diagnostic-goldens", "description": "Reviewed semantic and golden fixtures covering the complete catalog."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["generic-known-cause-message", "code-to-spaces-fallback", "invented-remediation", "blind-retry-guidance", "credential-output", "private-path-evidence", "json-schema-break", "exit-code-weakening", "gate-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [
+    {"id": "message-semantics", "description": "Every fixture asserts precise outcome, cause, safe target, state-change result, and useful remediation."},
+    {"id": "fine-grained-distinction", "description": "Negative tests prove materially different causes cannot render the same ambiguous explanation."},
+    {"id": "compatibility", "description": "JSON, exit codes, stdout/stderr, privacy, width, control-character, and shell-safety contracts remain green."}
+  ]
+}

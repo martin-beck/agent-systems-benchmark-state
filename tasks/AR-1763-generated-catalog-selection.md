@@ -3,9 +3,9 @@
   "branch": "feature/ar-1763-generated-catalog-selection",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1761", "AR-1762"],
+  "depends_on": ["AR-1761", "AR-1762", "AR-1769"],
   "id": "AR-1763",
-  "next_action": "Implement catalog generation and selection on top of the installer/discovery inventory.",
+  "next_action": "After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -18,9 +18,9 @@
   "spec_revision": 1,
   "status": "planned",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-09T00:00:00+00:00",
+  "updated_at": "2026-10-09T17:21:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
@@ -32,3 +32,6 @@ source/ref, digest, generated time, compatibility, and active selection.
 Reject incompatible or digest-mismatched selections with actionable output;
 support human and `--json` listing/selection. Do not turn catalogs into a
 secret store or require production signatures in development mode.
+
+- 2026-10-09T17:21:34+00:00: Added AR-1769 as a dependency so new catalog errors and warnings
+  cannot bypass the fine-grained human diagnostic catalog and required completeness gate.

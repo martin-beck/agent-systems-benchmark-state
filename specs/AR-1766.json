@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1766.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "complete-inventory", "description": "Every public command error, operation failure, partial outcome, and warning producer on the implementation baseline is mapped to the diagnostic catalog."},
+    {"id": "fine-grained-causes", "description": "Known causes remain distinct through the public boundary; missing parent, absent input, conflict, type, permission, read-only, topology, malformed input, stale identity, capability, provider, transport, timeout, cancellation, reconciliation, and product failures do not collapse into generic buckets."},
+    {"id": "safe-context", "description": "Diagnostics carry the affected resource role, safe target context, operation phase, state-change result, and validated remediation needed for useful human output without secrets or private internal data."},
+    {"id": "severity-semantics", "description": "Error, failure, warning, and partial-success meanings are explicit and independently preserve existing exit-code and mutation semantics."},
+    {"id": "closed-extension", "description": "Adding a public diagnostic source or cause requires an explicit catalog mapping; no generic free-form public fallback silently accepts it."}
+  ],
+  "definition_of_done": [
+    "The reviewed inventory covers CLI, easy, routed TUI, setup/config/auth, project/tool/catalog, plan/run/sweep, report/compare, record/replay, provider/network, filesystem, and warning paths.",
+    "Fine-grained typed diagnostic and privacy tests pass without changing explicit JSON schemas or exit meanings.",
+    "Independent review and exact-head hosted checks pass."
+  ],
+  "inputs": [
+    {"id": "human-presentation", "description": "AR-1757 command-aware human presentation and exhaustive public command inventory."},
+    {"id": "current-command-surface", "description": "Merged project, tool installation/discovery, setup, execution, and lifecycle commands at the exact implementation baseline."}
+  ],
+  "outputs": [
+    {"id": "diagnostic-catalog", "description": "Closed fine-grained diagnostic identities, severity, safe context, state-change semantics, and remediation metadata."},
+    {"id": "producer-inventory", "description": "Reviewed mapping from every public diagnostic producer to its catalog entry."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["raw-freeform-public-error", "generic-known-cause-collapse", "credential-output", "private-path-evidence", "exit-code-weakening", "json-schema-break", "gate-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [
+    {"id": "catalog-exhaustiveness", "description": "All public diagnostic producers and every typed cause map exhaustively to the closed catalog."},
+    {"id": "cause-preservation", "description": "Focused tests prove known lower-level causes retain their finest useful distinction through the CLI boundary."},
+    {"id": "privacy-compatibility", "description": "Safe context is human-useful while machine schemas, exits, streams, and secret/private-data boundaries remain compatible."}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1769.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "mechanical-exhaustiveness", "description": "CI derives coverage from authoritative closed types and inventories and rejects every unmapped public diagnostic producer, cause, warning, and renderer variant."},
+    {"id": "semantic-quality", "description": "CI rejects known-cause collapse, context-free target/path errors, placeholder-only failure prose, warnings without consequences, and missing recovery disposition."},
+    {"id": "negative-journey", "description": "An executable matrix covers all public command families and filesystem, configuration, tool/catalog, runtime, provider/network, timeout/cancellation, partial, warning, and directory-preparation cases."},
+    {"id": "controlled-defects", "description": "Tests prove the gate fails for uncataloged, overly generic, unactionable, wrong-stream/exit, unsafe-command, secret, and private-path defects."},
+    {"id": "future-extension", "description": "A documented contributor workflow makes every new public command or diagnostic add typed context, human presentation, remediation, and compatibility tests before CI can pass."}
+  ],
+  "definition_of_done": [
+    "The complete executable negative/warning journey and controlled-defect suite pass at the exact reviewed head.",
+    "The required hosted PR gate and all post-merge workflows pass without weakening coverage, privacy, signing, or supply-chain checks.",
+    "A privacy-safe receipt binds the diagnostic inventory, exact candidate, independent review, signed merge, and exact-main evidence."
+  ],
+  "inputs": [
+    {"id": "fine-grained-catalog", "description": "AR-1766 closed diagnostic causes, context, severity, and producer inventory."},
+    {"id": "human-renderings", "description": "AR-1768 explicit actionable presentation for every catalog entry."}
+  ],
+  "outputs": [
+    {"id": "required-ci-gate", "description": "Mechanical and semantic human-diagnostic completeness enforcement in PR and protected-main CI."},
+    {"id": "negative-journey-receipt", "description": "Privacy-safe exact-head and exact-main evidence for the complete failure/error/warning matrix."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["hand-maintained-drift-only-check", "snapshot-only-coverage", "generic-known-cause-message", "credential-output", "private-path-evidence", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [
+    {"id": "exhaustive-ci", "description": "Authoritative coverage and controlled-defect tests fail closed for every missing or degraded diagnostic obligation."},
+    {"id": "journey", "description": "The complete executable error/failure/warning journey passes with meaningful cause-specific output and valid recovery."},
+    {"id": "postmerge", "description": "Independent review, exact-head checks, signed reviewed-tree merge, and exact-main workflows are terminal green."}
+  ]
+}
+

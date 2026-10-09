@@ -1,0 +1,56 @@
+---
+{
+  "branch": "feature/ar-1766-fine-grained-human-diagnostic-contract",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": ["AR-1757", "AR-1760", "AR-1761", "AR-1762"],
+  "id": "AR-1766",
+  "next_action": "After AR-1761 is done, inventory every public ASB error, failure, and warning producer and replace the free-form public diagnostic boundary with fine-grained typed context.",
+  "observed_branch": "",
+  "observed_dirty": 0,
+  "observed_head": "",
+  "owner": "",
+  "plan": "../plans/AR-1766-fine-grained-human-diagnostic-contract.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1766.json", "spec_revision": 1, "status": "pending"},
+  "spec_ref": "specs/AR-1766.json",
+  "spec_revision": 1,
+  "status": "planned",
+  "summary": "Define a fine-grained typed diagnostic catalog carrying the safe context needed for clear human errors, failures, warnings, and remediation.",
+  "task_revision": 1,
+  "title": "Fine-grained human diagnostic contract",
+  "updated_at": "2026-10-09T17:21:34+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract"
+}
+---
+
+AR-1757 added an explicit human presentation for every public command family,
+but the current public failure boundary still receives broad free-form messages.
+Distinct causes can therefore collapse into text such as `unavailable`, `failed`,
+`cannot be staged`, or `parent is unavailable`, without naming the affected
+resource or explaining the correction.
+
+Create one closed, typed diagnostic catalog for every public ASB command error,
+operation failure, partial result, and warning. Use the finest meaningful stable
+class available at the point of failure. At minimum distinguish missing parent,
+missing input, target already exists, target is not a directory, target is not a
+regular file, permission denied, read-only storage, unsafe/symlink topology,
+invalid path, malformed or incompatible input, stale identity, unavailable
+capability, missing tool, provider authentication, provider rejection, transport
+failure, timeout, cancellation, partial completion, reconciliation required, and
+unexpected product failure. Do not erase a known cause by mapping it to a broader
+`Rejected`, `Unavailable`, validation, or I/O bucket.
+
+Each diagnostic must carry only the safe structured context needed to render the
+affected subject, user-supplied path or option, operation, state-change result,
+and recovery. Internal host paths, credentials, provider payloads, prompts, and
+raw operating-system error strings remain private. When a lower boundary truly
+cannot determine a narrower cause, use an explicit bounded unknown-cause variant.
+
+Preserve exit meanings and explicit JSON contracts. Cover CLI, `asb easy`,
+ASB-routed TUI lifecycle results, setup/config/auth, project/tool commands,
+plans, runs/sweeps, reports, record/replay, provider/network boundaries, and
+warnings embedded in successful results. New public diagnostics may not bypass
+the catalog.
+

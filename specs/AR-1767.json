@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1767.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "complete-destination-audit", "description": "Every setup-like and command-owned output destination is classified; eligible missing directories are prepared by ASB while input-only and unsafe paths remain fail-closed."},
+    {"id": "human-notice", "description": "Human mode emits one concise pre-effect message naming the directory and purpose before creation, while JSON stdout remains machine-only."},
+    {"id": "automatic-creation", "description": "Safe missing parents are created with required ownership and mode without asking the user to run mkdir, and repeated execution is idempotent."},
+    {"id": "path-specific-failures", "description": "Missing input, non-directory, conflict, permission, read-only, symlink, unsafe topology, and replacement cases identify the affected path and remain distinct."},
+    {"id": "mutation-safety", "description": "Dry-run performs no mutation; failed preparation does not publish partial configuration/results and cleans only transaction-owned temporary artifacts."}
+  ],
+  "definition_of_done": [
+    "First-run and repeated setup/project/tool/catalog/plan/run/report/record path journeys pass with clear directory notices.",
+    "The positive and hostile filesystem matrix passes with atomicity, mode, symlink, race, cleanup, stream, and JSON compatibility assertions.",
+    "Independent review and exact-head hosted checks pass."
+  ],
+  "inputs": [
+    {"id": "diagnostic-contract", "description": "AR-1766 fine-grained diagnostic causes and safe path context."},
+    {"id": "destination-inventory", "description": "Current ASB configuration, project, tool, catalog, workflow, execution, and artifact destinations."}
+  ],
+  "outputs": [
+    {"id": "directory-preparation", "description": "Safe idempotent directory preparation with created/reused evidence and precise failures."},
+    {"id": "human-directory-notice", "description": "Concise pre-effect human progress notice for each directory ASB will create."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["blind-recursive-create", "input-path-creation", "symlink-follow", "unsafe-permission-widening", "partial-publication", "json-stdout-prose", "credential-output", "gate-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [
+    {"id": "directory-matrix", "description": "Created, reused, nested, missing-input, conflict, permission, read-only, symlink, race, dry-run, and cleanup cases pass."},
+    {"id": "stream-contract", "description": "Human notices use the diagnostic stream and never corrupt JSON or raw protocol output."},
+    {"id": "safe-ownership", "description": "ASB creates only command-owned output directories and preserves trust, ownership, mode, and atomicity boundaries."}
+  ]
+}
