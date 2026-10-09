@@ -61,8 +61,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1757-human-first-cli-output` | `feature/ar-1757-human-first-cli-output` | `d11cdbd46bdc` | 13 | behind 2, ahead 1 |
 | changed files | - | - | - | `Cargo.lock`, `README.md`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/tui.rs`, `crates/asb-cli/tests/guide_examples.rs`, `docs/QUICKSTART.md`, `docs/examples/asb-cli-workflow-v1.provenance.json`, `docs/workflows/cli-first-run.md`, `docs/workflows/live-benchmark.md`, `docs/workflows/troubleshooting.md`, `crates/asb-cli/fixtures/legacy/` |
 | `agent-systems-benchmark-ar-1758-merge-dco` | `repair/ar-1758-merge-dco` | `b3cb9b256ccc` | 0 | behind 9, ahead 0 |
-| `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `feature/ar-1759-tool-project-config-schema` | `27d7c931a6f3` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-config/src/lib.rs` |
+| `agent-systems-benchmark-ar-1759-tool-project-config-schema` | `feature/ar-1759-tool-project-config-schema` | `27d7c931a6f3` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-config/src/lib.rs`, `crates/asb-config/PROJECT_CONFIG.md`, `crates/asb-config/schema/` |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 90, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 78, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 24, ahead 0 |
