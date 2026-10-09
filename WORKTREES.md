@@ -79,8 +79,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract` | `feature/ar-1766-fine-grained-human-diagnostic-contract` | `b8ae2dc60a71` | 0 | behind 24, ahead 0 |
 | `agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice` | `feature/ar-1767-safe-directory-preparation-and-notice` | `f34830bb75ce` | 0 | behind 20, ahead 0 |
 | `agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics` | `feature/ar-1768-exhaustive-actionable-human-diagnostics` | `cd46a00c276b` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci` | `feature/ar-1769-human-diagnostic-completeness-ci` | `eb5bfb381f76` | 1 | behind 0, ahead 9 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
+| `agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci` | `feature/ar-1769-human-diagnostic-completeness-ci` | `eb5bfb381f76` | 4 | behind 0, ahead 9 |
+| changed files | - | - | - | `crates/asb-cli/src/control.rs`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/tui.rs` |
 | `agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening` | `feature/ar-1770-descriptor-safe-directory-race-hardening` | `6278fcd6720f` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 153, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 141, ahead 0 |
