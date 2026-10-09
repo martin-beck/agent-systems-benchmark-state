@@ -826,6 +826,20 @@
 | Summary | Forward negotiated v1.15 provider-catalog projection through the read-only development broker so the installed public dynamic-catalog route works. |
 | Next action | Release done, reconcile canonical state, and verify live doctor; parent AR-1721 may then requalify against exact main e21d6bc7 and TUI 60ab530d. |
 
+### AR-1753 — Coordinator v0.3.59 release upgrade and integrity repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt the exact Agent Workflow Coordinator v0.3.59 release in ASB state and repair every downstream-owned integrity regression exposed by the upgrade. |
+| Next action | Promote and claim; sync the exact v0.3.59 release into an isolated state worktree, repair only downstream-owned compatibility regressions, and run the complete integrity matrix before independent review. |
+
 
 ## Dependency graph
 
@@ -1637,6 +1651,7 @@ flowchart LR
         AR_1750["AR-1750 - Done"]:::status_done
         AR_1751["AR-1751 - Done"]:::status_done
         AR_1752["AR-1752 - Done"]:::status_done
+        AR_1753["AR-1753 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3501,6 +3516,7 @@ flowchart LR
     AR_1734 --> AR_1738
     AR_1737 --> AR_1751
     AR_1740 --> AR_1745
+    AR_1749 --> AR_1753
     AR_1750 --> AR_1748
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -3654,5 +3670,3 @@ flowchart LR
 | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md) | [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md), [AR-1028](../tasks/AR-1028-asb-cli-workflow-captures.md) |
 | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-1170](../tasks/AR-1170.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md), [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md) |
 | [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md) | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
-| [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
-| [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-1130](../tasks/AR-1130.md) |
