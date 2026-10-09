@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implementing safe directory preparation and notices for command-owned ASB outputs.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Safe automatic directory preparation with clear notice",
-  "updated_at": "2026-10-09T18:47:12+00:00",
+  "updated_at": "2026-10-09T18:47:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice"
 }
 ---
@@ -235,3 +235,6 @@ when useful; repeated commands must not claim an existing directory was new.
   dry-run/permission/read-only/rollback/route matrix. These are security-quality gaps in shared
   atomic paths beyond the focused AR behavior; parent coordinator should create a dedicated
   dependent repair AR before accepting AR-1767.
+
+- 2026-10-09T18:47:19+00:00: Recorded command exit 0; command argv SHA-256
+  ee2b3fc3fab33fe14e37701b2837c91b531560bfac8f87e2a44f77fbbdcd9c47.
