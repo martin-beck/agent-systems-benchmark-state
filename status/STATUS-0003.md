@@ -544,7 +544,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence. |
-| Next action | Promote after AR-1731; integrate cli2key into run and sweep without parallel sidecars, fallback, or attribution drift. |
+| Next action | Implementation 75826b7955b6afbcdf45aa4e8beba2d5b7af56 is signed+DCO; run independent review, push PR, exact-head CI, merge, and post-merge qualification. |
 
 ### AR-1733 — Qualify and document cli2key development mode
 

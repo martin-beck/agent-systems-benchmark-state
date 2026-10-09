@@ -7,7 +7,7 @@
     "AR-1731"
   ],
   "id": "AR-1732",
-  "next_action": "Promote after AR-1731; integrate cli2key into run and sweep without parallel sidecars, fallback, or attribution drift.",
+  "next_action": "Implementation 75826b7955b6afbcdf45aa4e8beba2d5b7af56 is signed+DCO; run independent review, push PR, exact-head CI, merge, and post-merge qualification.",
   "owner": "codex-asb-ar1732-run-sweep-20261009",
   "plan": "../plans/AR-1732-cli2key-run-sweep.md",
   "priority": "P1",
@@ -16,9 +16,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Integrate cli2key runs and sweeps",
-  "updated_at": "2026-10-09T13:23:37+00:00",
+  "updated_at": "2026-10-09T13:23:56+00:00",
   "worktree_key": ""
 }
 ---
@@ -84,3 +84,7 @@ serve as production or official-provider qualification.
 
 - 2026-10-09T13:23:37+00:00: Recorded command exit 0; command argv SHA-256
   425e913ecdcfec8ca15823c7a9cb163c116f1ec07be6f9b7a80b5d4e8ce6935c.
+
+- 2026-10-09T13:23:56+00:00: Bound fresh provider launch records to each scheduler attempt, retained
+  bounded typed live-provider failure evidence, and updated CLI provenance digest. Full asb-cli
+  tests pass.

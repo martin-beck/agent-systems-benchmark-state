@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1757](tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. | codex-asb-ar1757-human-output-20261009 |
-| P1 | [AR-1732](tasks/AR-1732-cli2key-run-sweep.md): Integrate cli2key runs and sweeps | Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence. | Promote after AR-1731; integrate cli2key into run and sweep without parallel sidecars, fallback, or attribution drift. | codex-asb-ar1732-run-sweep-20261009 |
+| P1 | [AR-1732](tasks/AR-1732-cli2key-run-sweep.md): Integrate cli2key runs and sweeps | Make explicit cli2key selections executable through normal ASB run and sweep orchestration with bounded concurrency and typed live-development evidence. | Implementation 75826b7955b6afbcdf45aa4e8beba2d5b7af56 is signed+DCO; run independent review, push PR, exact-head CI, merge, and post-merge qualification. | codex-asb-ar1732-run-sweep-20261009 |
 
 ## Open
 
