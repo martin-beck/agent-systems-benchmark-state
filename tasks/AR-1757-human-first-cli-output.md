@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1757-human-first-cli-output",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T17:45:34+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1338",
     "AR-1555"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1757-human-first-cli-output",
   "observed_dirty": 0,
   "observed_head": "a11c94b50d49407982ed004292945880546f7cdd",
-  "owner": "codex-asb-ar1757-human-output-20261009",
+  "owner": "",
   "plan": "../plans/AR-1757-human-first-cli-output.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1757.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output.",
-  "task_revision": 490,
+  "task_revision": 491,
   "title": "Human-first ASB command output",
-  "updated_at": "2026-10-09T16:13:36+00:00",
+  "updated_at": "2026-10-09T16:13:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1757-human-first-cli-output"
 }
 ---
@@ -1372,3 +1372,6 @@ authentication/signing warnings as blockers.
 - 2026-10-09T16:13:36+00:00: Independent exact-head review approved PR #533; signed reviewed-tree
   merge f361cfc7 is on main; all exact-head and exact-main hosted workflows plus exact-main local
   policy, signature, secret-scan, and asb-cli tests passed.
+
+- 2026-10-09T16:13:46+00:00: PR #533 merged as signed exact-tree commit f361cfc7; exact-main
+  workflows and local verification are green; acceptance receipt is recorded.
