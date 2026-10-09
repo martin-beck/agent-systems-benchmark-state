@@ -8,7 +8,7 @@
     "AR-1760"
   ],
   "id": "AR-1762",
-  "next_action": "Continue monitoring PR #536 exact-head CI and obtain independent review evidence for the repaired 9cd9e80 head; keep PR #534 blocked on stale base/CI.",
+  "next_action": "Continue monitoring PR #536 exact-head checks; once every required check is terminal success, record final independent review and allow merge workflow.",
   "observed_branch": "feature/ar-1762-tool-discovery-v2",
   "observed_dirty": 0,
   "observed_head": "9cd9e80cfc2a3bee31a402016371ab70b6cfb1cc",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 229,
+  "task_revision": 230,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T16:42:58+00:00",
+  "updated_at": "2026-10-09T16:43:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -680,3 +680,10 @@ development authentication/signatures/keys are absent.
 
 - 2026-10-09T16:42:58+00:00: Recorded command exit 0; command argv SHA-256
   db59667bc9c7b4d1455a649c80f9321e646431011ea70d84b91ff0007525b527.
+
+- 2026-10-09T16:43:06+00:00: Independent re-review of repaired exact PR #536 head
+  9cd9e80cfc2a3bee31a402016371ab70b6cfb1cc: process-group supervision and regression fixture
+  directly address the prior descendant-held-pipe hang; complete updated diff/contracts/docs
+  reviewed. Local fmt, discovery/read-only tests, clippy, and diff checks pass. No new
+  implementation finding. Hosted required checks are still in progress (Emulated aarch64, Repository
+  quality, Rust verification); no approval or merge recommendation until all are terminal green.
