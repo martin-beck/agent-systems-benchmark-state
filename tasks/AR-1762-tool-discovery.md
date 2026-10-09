@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Auto-detect system-installed and project-configured ASB tools with deterministic diagnostics.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Discover system and project ASB tools",
-  "updated_at": "2026-10-09T15:59:39+00:00",
+  "updated_at": "2026-10-09T16:00:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1762-tool-discovery"
 }
 ---
@@ -257,4 +257,7 @@ development authentication/signatures/keys are absent.
   test). Discovery tests and clippy remain green.
 
 - 2026-10-09T15:59:39+00:00: Recorded command exit 101; command argv SHA-256
+  c74720e2d7e8f1787a55ea031ea32618f18d8e7dfb83b5aebc92a28e10a14b00.
+
+- 2026-10-09T16:00:14+00:00: Recorded command exit 101; command argv SHA-256
   c74720e2d7e8f1787a55ea031ea32618f18d8e7dfb83b5aebc92a28e10a14b00.
