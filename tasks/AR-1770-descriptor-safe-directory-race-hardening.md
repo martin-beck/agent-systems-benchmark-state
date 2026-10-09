@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Independent reviewer must inspect PR #540 exact head f5e5f0d5a50bd768a7cf80ccf4c84ceb78f3a96e and tree 8d121f72dde5ddf75b95119c049a61e2e652bba0; then wait for exact-head CI.",
+  "next_action": "Independent reviewer must inspect PR #540 repaired exact head 1e9629b6f37da80a7a3d9d0830df13d55a3cc02e and tree 87a3e4c43377d9481bd9d761e9375ed70ca8a729; then wait for exact-head CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T20:00:31+00:00",
+  "updated_at": "2026-10-09T20:00:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -287,3 +287,10 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T20:00:31+00:00: Recorded command exit 0; command argv SHA-256
   309637164a3518a96cb52b8afa977f0809dc26141ba775d82424b475beac799a.
+
+- 2026-10-09T20:00:58+00:00: P1 review repair complete and pushed as signed DCO commit 1e9629b6.
+  Descriptor-relative no-follow preparation now covers attempt-private directories, prompt creation,
+  built-in and literature fixture roots, nested initial files, and reset setup. Gates: workspace
+  test command completed with all reported suites passing; second full CLI run 305/305 plus
+  integrations, workload 39+4, clippy, check, workflow transcript 3/3. PR #540 is blocked pending
+  fresh independent review and exact-head CI.

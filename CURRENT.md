@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1770](tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Independent reviewer must inspect PR #540 exact head f5e5f0d5a50bd768a7cf80ccf4c84ceb78f3a96e and tree 8d121f72dde5ddf75b95119c049a61e2e652bba0; then wait for exact-head CI. | codex-ar1770-descriptor-safe-races |
+| P1 | [AR-1770](tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Independent reviewer must inspect PR #540 repaired exact head 1e9629b6f37da80a7a3d9d0830df13d55a3cc02e and tree 87a3e4c43377d9481bd9d761e9375ed70ca8a729; then wait for exact-head CI. | codex-ar1770-descriptor-safe-races |
 
 ## Open
 
