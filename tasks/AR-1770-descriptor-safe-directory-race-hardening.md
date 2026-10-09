@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Run clippy, rustdoc, focused route/privacy matrix, full workspace gates, then independently review the exact clean candidate.",
+  "next_action": "Run full workspace format, clippy, tests, docs, policy/privacy and independent review on the frozen candidate.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T19:41:05+00:00",
+  "updated_at": "2026-10-09T19:41:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -152,3 +152,9 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T19:41:05+00:00: Recorded command exit 0; command argv SHA-256
   ef19043205064ea87bec66574bfe246191c9311bc8c404cd8e347d08fbdc44f0.
+
+- 2026-10-09T19:41:29+00:00: After descriptor-safe migration of easy artifacts, project config, plan
+  output, and tool installation, full asb-cli unit/integration suite passed except the expected
+  provenance digest fixture drift; updated the exact lib.rs digest to
+  55263b04cf08a8977a2fd6929697d428ff69314ab3fe9a1ebcaae20d8782d39f. Workflow transcript now passes
+  3/3.

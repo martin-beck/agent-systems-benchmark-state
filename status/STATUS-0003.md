@@ -1076,7 +1076,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. |
-| Next action | Run clippy, rustdoc, focused route/privacy matrix, full workspace gates, then independently review the exact clean candidate. |
+| Next action | Run full workspace format, clippy, tests, docs, policy/privacy and independent review on the frozen candidate. |
 
 
 ## Dependency graph
