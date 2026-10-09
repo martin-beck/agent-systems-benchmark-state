@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1730-cli2key-provider-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-09T09:22:08+00:00",
+  "claim_expires": "2026-10-09T09:53:48+00:00",
   "depends_on": [
     "AR-1728"
   ],
@@ -19,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Add a development cli2key provider profile, catalog and launch identity for loopback Responses without overstating official OpenAI support.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Add cli2key provider and selection contracts",
-  "updated_at": "2026-10-09T07:52:08+00:00",
+  "updated_at": "2026-10-09T07:53:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1730-cli2key-provider-contract"
 }
 ---
@@ -108,3 +108,5 @@ own independent adapter proof. Do not alias this profile to the official
   2f5b29a617104e6561278f0b490380f3fc95bd67042ad51939ba3d844fb57587.
 
 - 2026-10-09T07:52:08+00:00: Heartbeat by codex-ar1730-cli2key-provider-20261009.
+
+- 2026-10-09T07:53:48+00:00: Heartbeat by codex-ar1730-cli2key-provider-20261009.
