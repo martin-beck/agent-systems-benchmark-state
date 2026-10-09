@@ -10,7 +10,7 @@
   "id": "AR-1768",
   "next_action": "State doctor is green and projection clean. Run focused diagnostics/human/contract tests on the completed nine-code repair, then full clippy/workspace/doc/release gates; commit and push signed exact head, obtain independent review, and monitor PR #541 CI.",
   "observed_branch": "feature/ar-1768-exhaustive-actionable-human-diagnostics",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "20a2d7b857da8c1e3737f968eac0ca95ea62b6eb",
   "owner": "codex-ar1768-diagnostics",
   "plan": "../plans/AR-1768-exhaustive-actionable-human-diagnostics.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Give every human-visible ASB error, failure, partial result, and warning a precise cause, affected target, impact, and useful recovery.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Exhaustive actionable human diagnostics",
-  "updated_at": "2026-10-09T21:41:44+00:00",
+  "updated_at": "2026-10-09T21:41:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics"
 }
 ---
