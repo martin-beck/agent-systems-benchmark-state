@@ -7,7 +7,7 @@
     "AR-1767"
   ],
   "id": "AR-1770",
-  "next_action": "Implement descriptor-relative or equivalent fail-closed directory and atomic publication paths, then complete the hostile filesystem and stream matrix.",
+  "next_action": "Run clippy, rustdoc, focused route/privacy matrix, full workspace gates, then independently review the exact clean candidate.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Descriptor-safe directory race hardening and acceptance matrix",
-  "updated_at": "2026-10-09T19:35:55+00:00",
+  "updated_at": "2026-10-09T19:38:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening"
 }
 ---
@@ -129,3 +129,11 @@ implementation boundary explicitly and keep the product offline after install.
 
 - 2026-10-09T19:35:55+00:00: Recorded command exit 0; command argv SHA-256
   f1e3e8a65e3ee6ff08b55f21651597413fa3014f1fa03f5ba071c63f9074ae66.
+
+- 2026-10-09T19:38:09+00:00: Implementation now uses descriptor-relative rustix
+  openat/mkdirat/renameat/unlinkat with O_NOFOLLOW and anchored directory FDs; staged output
+  publication and campaign rollback retain parent descriptors. Evidence: cargo check --locked -p
+  asb-cli passed; 305 asb-cli unit tests passed; record_campaign focused tests passed;
+  directory/publication tests passed; workflow_transcript initially exposed provenance digest drift,
+  fixture was updated to the exact new lib.rs digest and workflow_transcript now passes. Next gate
+  is lint/docs/full applicable quality.

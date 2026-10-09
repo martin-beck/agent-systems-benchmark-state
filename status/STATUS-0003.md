@@ -1076,7 +1076,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. |
-| Next action | Implement descriptor-relative or equivalent fail-closed directory and atomic publication paths, then complete the hostile filesystem and stream matrix. |
+| Next action | Run clippy, rustdoc, focused route/privacy matrix, full workspace gates, then independently review the exact clean candidate. |
 
 
 ## Dependency graph

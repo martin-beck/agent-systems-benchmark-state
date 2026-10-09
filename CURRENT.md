@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1770](tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Implement descriptor-relative or equivalent fail-closed directory and atomic publication paths, then complete the hostile filesystem and stream matrix. | codex-ar1770-descriptor-safe-races |
+| P1 | [AR-1770](tasks/AR-1770-descriptor-safe-directory-race-hardening.md): Descriptor-safe directory race hardening and acceptance matrix | Close remaining directory and atomic-publication replacement races and complete the AR-1767 acceptance matrix. | Run clippy, rustdoc, focused route/privacy matrix, full workspace gates, then independently review the exact clean candidate. | codex-ar1770-descriptor-safe-races |
 
 ## Open
 
