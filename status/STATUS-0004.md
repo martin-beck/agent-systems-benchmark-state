@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) |
 | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
 | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
 | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
@@ -627,19 +628,19 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1758](../tasks/AR-1758-ar1731-merge-dco-repair.md): Repair AR-1731 protected-main merge provenance | codex-asb-ar1758-merge-dco-repair-20261009 | Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates. | Promote and claim; preserve the failed merge evidence, use the documented repair path, and publish only through a reviewed PR with signed+DCO exact-main verification. |
 | P1 | [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md): Connect Codex adapter to cli2key backend | codex-asb-ar1731-codex-adapter-20261009 | Project the runtime-owned cli2key endpoint, model, and ephemeral client credential into the existing Codex Responses adapter. | PR #527 at exact head 6386e06: await all required checks, then merge signed exact two-parent commit, verify post-merge, and record hosted acceptance. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 | P0 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md): Human-first ASB command output | Unclaimed | Make default ASB CLI output concise, command-aware, self-explanatory, and actionable while preserving stable machine-readable output. | Inventory every public ASB command outcome at exact current main, define the command-aware human presentation contract, and replace the generic JSON key/value renderer without changing explicit --json schemas. |
-| P0 | [AR-1758](../tasks/AR-1758-ar1731-merge-dco-repair.md): Repair AR-1731 protected-main merge provenance | Unclaimed | Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates. | Promote and claim; preserve the failed merge evidence, use the documented repair path, and publish only through a reviewed PR with signed+DCO exact-main verification. |
 
 ### Blocked (87)
 
@@ -648,4 +649,3 @@
 | P0 | [AR-0514](../tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Wait for AR-0521 to publish and independently verify the signed content-addressed OpenHands environment bundle, offline verifier, reproducible approved digest, and altered-input rejection; then reclaim AR-0514 for native replay requalification. |
 | P0 | [AR-0521](../tasks/AR-0521-openhands-environment-pin.md): Reproduce and pin the OpenHands replay environment | Unclaimed | Repair OpenHands replay environment provenance and reproducibility. | Use the recorded AR-0514 failure evidence to define an immutable, reproducible OpenHands environment bundle and verifier; AR-0514 remains blocked until this evidence is independently verified. |
 | P0 | [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | Unclaimed | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. |
-| P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |

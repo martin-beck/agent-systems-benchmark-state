@@ -900,11 +900,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1758-merge-dco-repair-20261009 |
 | Parent | None |
 | Children | None |
 | Summary | Restore a compliant protected-main publication after the AR-1731 local merge lacked a DCO trailer, without rewriting published history or weakening gates. |
@@ -1726,7 +1726,7 @@ flowchart LR
         AR_1755["AR-1755 - Done"]:::status_done
         AR_1756["AR-1756 - Done"]:::status_done
         AR_1757["AR-1757 - Open"]:::status_open
-        AR_1758["AR-1758 - Open"]:::status_open
+        AR_1758["AR-1758 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3746,4 +3746,3 @@ flowchart LR
 | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) |
 | [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) |
 | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) |
-| [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) |
