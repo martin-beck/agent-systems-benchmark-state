@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1771",
-  "next_action": "Preserved uncommitted AR-1771 patch touches crates/asb-cli/src/lib.rs, human.rs, tui.rs and the additive output config/schema seam. AR-1763 now owns concurrent edits in lib.rs/human.rs/config; do not commit or edit until its exact main head lands, then rebase and reconcile all seams before resuming gates.",
+  "next_action": "AR-1763 is merged at protected main 5e08ddadff5a716bcce844ed8ed5e1bc1868d02f. Rebase preserved AR-1771 output-contract patch onto that exact head, reconcile catalog/shared config seams without touching AR-1764 project_run ownership, then complete contract gates.",
   "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
   "observed_dirty": 0,
   "observed_head": "772bc46537b0574008635ebfc27d6b147c12c805",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T10:42:50+00:00",
+  "updated_at": "2026-10-10T10:43:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -176,3 +176,6 @@ terminal ownership.
   aa54729ab7f6458b3779170ee3a4e3160e8b545c7527f0a5418de3e4f44a9f8a.
 
 - 2026-10-10T10:42:50+00:00: Heartbeat by ar1771-output-contract-terra.
+
+- 2026-10-10T10:43:17+00:00: Recovered preserved patch after AR-1763 merge; serialization condition
+  is resolved.
