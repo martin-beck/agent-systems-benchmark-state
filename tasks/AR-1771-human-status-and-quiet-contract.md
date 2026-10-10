@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T09:34:37+00:00",
+  "updated_at": "2026-10-10T09:35:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -95,3 +95,6 @@ terminal ownership.
   commit will be made.
 
 - 2026-10-10T09:34:37+00:00: Heartbeat by ar1771-output-contract-terra.
+
+- 2026-10-10T09:35:53+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
