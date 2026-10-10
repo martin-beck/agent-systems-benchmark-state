@@ -11,7 +11,7 @@
     "AR-1764"
   ],
   "id": "AR-1765",
-  "next_action": "Wait for AR-1771 output-router merge, then rebase this signed parser repair onto current main and complete the fresh-user JSON-silence, negative-recovery, full-gate, PR, review, CI, merge, and post-merge qualification.",
+  "next_action": "Run the disposable fresh-user JSON-silence and negative-recovery qualification on rebased signed head 4326cf11, then complete full gates, PR, independent review, exact-head CI, merge, and post-merge acceptance.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
   "observed_head": "4326cf11be13a63e98042430373c49c06338a04a",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:17:05+00:00",
+  "updated_at": "2026-10-10T12:17:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -93,3 +93,7 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
   3d4cc54827fa0ae5c402321266e4a8e9a84a69a17f7ff27b7a0f0c858d454784.
 
 - 2026-10-10T12:17:05+00:00: Checkpointed source commit 4326cf11be13a63e98042430373c49c06338a04a.
+
+- 2026-10-10T12:17:11+00:00: Confirmed origin/main 3cd8ae24048d153a4928511b6b1e64a50213d5e0;
+  0bd71b64 rebased cleanly as signed-DCO 4326cf11 with no conflicts; cargo test --locked -p asb-cli
+  --lib passed (326 tests).
