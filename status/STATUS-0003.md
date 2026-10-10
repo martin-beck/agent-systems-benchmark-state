@@ -252,7 +252,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. |
-| Next action | Add deterministic runtime-factory live-provider error injection coverage through the public CLI output router in human-default and --json modes, asserting typed no-fallback results without a host credential; then run focused/full gates before a signed DCO commit. |
+| Next action | Repair public human output routing for injected non-success live results: preserve typed exit/result rather than degrading it to generic output failure 4; rerun the deterministic human/JSON no-fallback test and full gates before commit. |
 
 ### AR-1710 — Wizard provider-model selection and warning-only readiness
 
