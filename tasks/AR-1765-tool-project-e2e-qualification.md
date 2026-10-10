@@ -13,7 +13,7 @@
   "id": "AR-1765",
   "next_action": "Await independent exact-head review and required hosted CI for PR #546 at ac669d1c; after both are green, perform the signed protected-main merge and verify the post-merge receipt.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "ac669d1ca1fd5324f505ac24feec5e4878a625fa",
   "owner": "ar1765-tool-project-e2e-terra",
   "plan": "../plans/AR-1765-tool-project-e2e-qualification.md",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:27:47+00:00",
+  "updated_at": "2026-10-10T12:27:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
