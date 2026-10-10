@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #542 | `feature/ar-1769-human-diagnostic-completeness-ci@bf5858cb72ac` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | test(cli): enforce complete human diagnostic inventory |
+| #542 | `feature/ar-1769-human-diagnostic-completeness-ci@bf5858cb72ac` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): enforce complete human diagnostic inventory |
 
 ## Recent workflows
 
@@ -29,12 +29,12 @@ Generated from local Git and GitHub. Do not edit.
 | 38038979520 | `bf5858cb72ac` | pull_request | Repository quality | in_progress:- |
 | 38038979516 | `bf5858cb72ac` | pull_request | Hosted portability and native qualification | completed:success |
 | 38038979504 | `bf5858cb72ac` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38038979496 | `bf5858cb72ac` | pull_request | Cross-repository development broker qualification | in_progress:- |
-| 38038979477 | `bf5858cb72ac` | pull_request | Fault assurance | in_progress:- |
+| 38038979496 | `bf5858cb72ac` | pull_request | Cross-repository development broker qualification | completed:success |
+| 38038979477 | `bf5858cb72ac` | pull_request | Fault assurance | completed:success |
 | 38038979476 | `bf5858cb72ac` | pull_request | Rust verification | in_progress:- |
 | 38038979465 | `bf5858cb72ac` | pull_request | Portable protected-main provenance | completed:success |
 | 38038979453 | `bf5858cb72ac` | pull_request | Huawei MIT source headers | completed:success |
 | 38038979451 | `bf5858cb72ac` | pull_request | Credential-free benchmark path | completed:success |
 | 38038979440 | `bf5858cb72ac` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38038979439 | `bf5858cb72ac` | pull_request | Formal assurance | in_progress:- |
+| 38038979439 | `bf5858cb72ac` | pull_request | Formal assurance | completed:success |
 | 38037540093 | `6828a00924c0` | pull_request | Repository quality | completed:failure |
