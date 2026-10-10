@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1769",
-  "next_action": "Obtain fresh independent exact-head review of 99b3a76; if approved, publish PR and wait for exact-head CI before merge.",
+  "next_action": "Obtain fresh independent exact-head review of 1d512cd; do not publish until approved.",
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "observed_dirty": 0,
   "observed_head": "99b3a761966d27203f83bbd15400084596f7d32e",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 326,
+  "task_revision": 327,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-10T08:11:49+00:00",
+  "updated_at": "2026-10-10T08:12:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -864,3 +864,8 @@ timeouts/cancellation, partial results, and warning-only development behavior.
   c932e351155ee7d44136a02391bc4f7f80c9647791f44669147cd090f33d00c6.
 
 - 2026-10-10T08:11:49+00:00: Heartbeat by codex-ar1769-macro-statement-repair-terra.
+
+- 2026-10-10T08:12:00+00:00: Repaired statement-form macro producer parsing at 1d512cd. Focused
+  diagnostic contract, full workspace tests, formatting, Clippy, rustdoc, and release build passed;
+  commit is SSH-signed with matching DCO. Fresh independent exact-head review is required before
+  publication.
