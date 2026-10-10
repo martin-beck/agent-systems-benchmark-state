@@ -238,7 +238,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. |
-| Next action | Implement or qualify typed non-2xx and transport failure propagation, complete the connected provider/model compatibility matrix, and replace the fixed curl path with bounded trusted tool discovery; publish exact-head human/JSON evidence. |
+| Next action | Replace host-only curl discovery coverage with an injectable bounded discovery/transport seam proving absent tool, ambient PATH decoy rejection, typed public human/JSON diagnostic, and no fallback; then rerun focused/full gates before publication. |
 
 ### AR-1709 — Development live provider execution contract and credential injection
 
