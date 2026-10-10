@@ -4204,7 +4204,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Run selected agents/workloads and produce comparison results from online or offline replay runs. |
-| Next action | Integrate AR-1650 protocol/TUI fan-out, AR-1648 runtime fan-out, and AR-1649 analysis into the final paired comparison route. |
+| Next action | Focused current-main fan-out, comparison, and offline-cassette gates pass; run full exact-head quality gates, independently review current-head qualification, then accept/release. |
 
 ### AR-1648 — Selected-agent/workload fan-out
 
@@ -4694,5 +4694,3 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
-| Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
-

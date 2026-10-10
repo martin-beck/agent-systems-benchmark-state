@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1647](tasks/AR-1647.md): Selected-agent comparison orchestration | Run selected agents/workloads and produce comparison results from online or offline replay runs. | Integrate AR-1650 protocol/TUI fan-out, AR-1648 runtime fan-out, and AR-1649 analysis into the final paired comparison route. | ar1647-comparison-fanout |
+| P0 | [AR-1647](tasks/AR-1647.md): Selected-agent comparison orchestration | Run selected agents/workloads and produce comparison results from online or offline replay runs. | Focused current-main fan-out, comparison, and offline-cassette gates pass; run full exact-head quality gates, independently review current-head qualification, then accept/release. | ar1647-comparison-fanout |
 
 ## Open
 
