@@ -252,7 +252,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. |
-| Next action | Repair public human output routing for injected non-success live results: preserve typed exit/result rather than degrading it to generic output failure 4; rerun the deterministic human/JSON no-fallback test and full gates before commit. |
+| Next action | Repair the deterministic public live-provider parity fixture to use separate content-addressed run identities for JSON and human modes; rerun it to verify typed runtime-unavailable no-fallback behavior, then continue gates. |
 
 ### AR-1710 — Wizard provider-model selection and warning-only readiness
 
