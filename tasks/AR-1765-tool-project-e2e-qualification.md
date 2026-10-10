@@ -13,8 +13,8 @@
   "id": "AR-1765",
   "next_action": "Commit the repaired exact source-location diagnostic catalog and executable disposable five-tool receipt; then run full local gates, push a fresh signed PR #546 head, and obtain a new independent exact-head review and hosted CI. Do not merge ac669d1c.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
-  "observed_dirty": 1,
-  "observed_head": "519438cde3281cf8bea1d5ee1269baa029143235",
+  "observed_dirty": 0,
+  "observed_head": "60fe1d7c2a7a93494e9ac2b2ab5516fa1f17c608",
   "owner": "ar1765-tool-project-e2e-terra",
   "plan": "../plans/AR-1765-tool-project-e2e-qualification.md",
   "priority": "P0",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:37:01+00:00",
+  "updated_at": "2026-10-10T12:37:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
