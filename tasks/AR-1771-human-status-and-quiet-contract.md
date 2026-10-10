@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1771-human-status-and-quiet-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-10T14:02:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1768"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
   "observed_dirty": 0,
   "observed_head": "4b86c4a7a0993de2a5f93a061505c1d819d4a2df",
-  "owner": "ar1771-output-contract-terra",
+  "owner": "",
   "plan": "../plans/AR-1771-human-status-and-quiet-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1771.json",
   "spec_revision": 2,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 298,
+  "task_revision": 299,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T12:25:49+00:00",
+  "updated_at": "2026-10-10T12:26:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -848,3 +848,8 @@ terminal ownership.
 - 2026-10-10T12:25:49+00:00: Accepted signed exact-base merge
   3cd8ae24048d153a4928511b6b1e64a50213d5e0 with all ten exact-main hosted workflows
   terminal-success.
+
+- 2026-10-10T12:26:02+00:00: AR-1771 accepted: receipt quality/AR-1771-postmerge-receipt.json binds
+  PR #545, reviewed head 4b86c4a7a0993de2a5f93a061505c1d819d4a2df, signed merge
+  3cd8ae24048d153a4928511b6b1e64a50213d5e0, exact tree ef5ee164ac8753a30fd2b5b75c187a4e9ecb7620, and
+  ten terminal-success exact-main workflows.
