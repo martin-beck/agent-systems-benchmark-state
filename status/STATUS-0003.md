@@ -1090,7 +1090,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. |
-| Next action | PR #545 is rebased and published at exact head e9168d44b16d231406707c3d96169e2320be8109 on protected main fd61b856570bf1d57e9dba4f8bee1da99b77189e. Focused, serialized workspace, fmt/clippy/rustdoc/release, and provenance gates are green; await fresh independent exact-head review and hosted CI. Do not merge before both are green. |
+| Next action | PR #545 exact head e9168d44 failed the hosted Repository quality coverage gate: workspace line coverage 88.44&#37;, below the required 90&#37;. Add focused executable/library/TUI output-router behavior tests for AR-1771 changed paths; rerun local coverage and all full gates, then publish a signed repair for fresh review and CI. Do not merge the failed head. |
 
 ### AR-1772 — Unified human step-progress reporter
 

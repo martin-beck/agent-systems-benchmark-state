@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1771",
-  "next_action": "PR #545 is rebased and published at exact head e9168d44b16d231406707c3d96169e2320be8109 on protected main fd61b856570bf1d57e9dba4f8bee1da99b77189e. Focused, serialized workspace, fmt/clippy/rustdoc/release, and provenance gates are green; await fresh independent exact-head review and hosted CI. Do not merge before both are green.",
+  "next_action": "PR #545 exact head e9168d44 failed the hosted Repository quality coverage gate: workspace line coverage 88.44%, below the required 90%. Add focused executable/library/TUI output-router behavior tests for AR-1771 changed paths; rerun local coverage and all full gates, then publish a signed repair for fresh review and CI. Do not merge the failed head.",
   "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
   "observed_dirty": 0,
   "observed_head": "e9168d44b16d231406707c3d96169e2320be8109",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 230,
+  "task_revision": 231,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T11:52:39+00:00",
+  "updated_at": "2026-10-10T11:52:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -655,3 +655,7 @@ terminal ownership.
 
 - 2026-10-10T11:52:39+00:00: Recorded command exit 0; command argv SHA-256
   c00f10a92b06681c416a13a57285e32d62cc196fe2d715acd643ee7ebb382e0b.
+
+- 2026-10-10T11:52:47+00:00: Hosted Repository quality coverage failure is terminal and not waived.
+  Rust/aarch64 were still active when failure arrived; repair must raise behavior coverage without
+  weakening the 90% threshold.
