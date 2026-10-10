@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Integrate project tools and catalogs with ASB runs",
-  "updated_at": "2026-10-10T11:13:12+00:00",
+  "updated_at": "2026-10-10T11:14:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1764-project-run-integration"
 }
 ---
@@ -236,3 +236,6 @@ output contracts.
 
 - 2026-10-10T11:13:12+00:00: Corrected the durable exact repair-head identifier after verification
   with git rev-parse HEAD.
+
+- 2026-10-10T11:14:39+00:00: Recorded command exit 0; command argv SHA-256
+  41c077c406c684d53361c474e77b18e96c1310e2ab581fb8b589b1cd153f3b8d.
