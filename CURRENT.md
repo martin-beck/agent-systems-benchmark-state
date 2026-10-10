@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Open a pull request for signed head ac669d1c, obtain independent exact-head review, run required hosted CI, construct the signed merge receipt, then complete post-merge acceptance. | ar1765-tool-project-e2e-terra |
+| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Await independent exact-head review and required hosted CI for PR #546 at ac669d1c; after both are green, perform the signed protected-main merge and verify the post-merge receipt. | ar1765-tool-project-e2e-terra |
 | P0 | [AR-1771](tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | Signed exact-base merge receipt accepted: protected main 3cd8ae24048d153a4928511b6b1e64a50213d5e0 has parents fd61b856570bf1d57e9dba4f8bee1da99b77189e and 4b86c4a7a0993de2a5f93a061505c1d819d4a2df, reviewed tree ef5ee164ac8753a30fd2b5b75c187a4e9ecb7620, verified signature and matching DCO. Await all exact-main hosted workflow results before release. | ar1771-output-contract-terra |
 
 ## Open

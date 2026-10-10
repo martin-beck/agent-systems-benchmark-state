@@ -11,7 +11,7 @@
     "AR-1764"
   ],
   "id": "AR-1765",
-  "next_action": "Open a pull request for signed head ac669d1c, obtain independent exact-head review, run required hosted CI, construct the signed merge receipt, then complete post-merge acceptance.",
+  "next_action": "Await independent exact-head review and required hosted CI for PR #546 at ac669d1c; after both are green, perform the signed protected-main merge and verify the post-merge receipt.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
   "observed_head": "ac669d1ca1fd5324f505ac24feec5e4878a625fa",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:21:21+00:00",
+  "updated_at": "2026-10-10T12:22:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -143,3 +143,7 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 
 - 2026-10-10T12:21:21+00:00: Recorded command exit 0; command argv SHA-256
   a6d4a023b21bb9e7c041d5c995460311ea99b20ef1ebc42571e0dd2512222a9f.
+
+- 2026-10-10T12:22:15+00:00: Published PR #546 from exact signed head
+  ac669d1ca1fd5324f505ac24feec5e4878a625fa. Hosted workflows are queued; portable provenance, SPDX,
+  and AWQ shadow checks already passed.

@@ -1006,7 +1006,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. |
-| Next action | Open a pull request for signed head ac669d1c, obtain independent exact-head review, run required hosted CI, construct the signed merge receipt, then complete post-merge acceptance. |
+| Next action | Await independent exact-head review and required hosted CI for PR #546 at ac669d1c; after both are green, perform the signed protected-main merge and verify the post-merge receipt. |
 
 ### AR-1766 — Fine-grained human diagnostic contract
 
