@@ -20,21 +20,21 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #547 | `codex/ar-1657-compatibility-matrix@f8bb3803ddfe` | `main` | UNKNOWN | - | test(asb-cli): qualify paired provider matrix |
+| #547 | `codex/ar-1657-compatibility-matrix@f8bb3803ddfe` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | test(asb-cli): qualify paired provider matrix |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38068177430 | `f8bb3803ddfe` | pull_request | Fault assurance | in_progress:- |
+| 38068177354 | `f8bb3803ddfe` | pull_request | Huawei MIT source headers | completed:success |
+| 38068177342 | `f8bb3803ddfe` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38068177324 | `f8bb3803ddfe` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38068177319 | `f8bb3803ddfe` | pull_request | Portable protected-main provenance | completed:success |
+| 38068177239 | `f8bb3803ddfe` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38068177164 | `f8bb3803ddfe` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38068177153 | `f8bb3803ddfe` | pull_request | Formal assurance | in_progress:- |
+| 38068177144 | `f8bb3803ddfe` | pull_request | Rust verification | completed:failure |
+| 38068177123 | `f8bb3803ddfe` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38068177103 | `f8bb3803ddfe` | pull_request | Repository quality | in_progress:- |
 | 38067753037 | `6e8c97c144f7` | pull_request | Portable protected-main provenance | completed:success |
-| 38067753028 | `6e8c97c144f7` | pull_request | Formal assurance | completed:success |
-| 38067753017 | `6e8c97c144f7` | pull_request | Hosted portability and native qualification | completed:success |
-| 38067753005 | `6e8c97c144f7` | pull_request | Fault assurance | completed:success |
-| 38067752995 | `6e8c97c144f7` | pull_request | Cross-repository development broker qualification | completed:success |
-| 38067752986 | `6e8c97c144f7` | pull_request | Rust verification | completed:failure |
-| 38067752978 | `6e8c97c144f7` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38067752977 | `6e8c97c144f7` | pull_request | Credential-free benchmark path | completed:success |
-| 38067752967 | `6e8c97c144f7` | pull_request | Repository quality | completed:failure |
-| 38067752965 | `6e8c97c144f7` | pull_request | Huawei MIT source headers | completed:success |
-| 38067752960 | `6e8c97c144f7` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38067012118 | `d247c7bd2b16` | pull_request | Huawei MIT source headers | completed:success |
