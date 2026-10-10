@@ -82,7 +82,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1763-generated-catalog-selection` | `feature/ar-1763-generated-catalog-selection` | `2e6a5d949e17` | 0 | behind 12, ahead 0 |
 | `agent-systems-benchmark-ar-1764-merge-base` | `DETACHED` | `5e08ddadff5a` | 0 | behind 11, ahead 0 |
 | `agent-systems-benchmark-ar-1764-project-run-integration` | `feature/ar-1764-project-run-integration` | `9faa1e88fc0b` | 0 | behind 9, ahead 0 |
-| `agent-systems-benchmark-ar-1765-tool-project-e2e-qualification` | `feature/ar-1765-tool-project-e2e-qualification` | `4326cf11be13` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1765-tool-project-e2e-qualification` | `feature/ar-1765-tool-project-e2e-qualification` | `4326cf11be13` | 1 | behind 0, ahead 1 |
+| changed files | - | - | - | `docs/workflows/cli-first-run.md` |
 | `agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract` | `feature/ar-1766-fine-grained-human-diagnostic-contract` | `b8ae2dc60a71` | 0 | behind 72, ahead 0 |
 | `agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice` | `feature/ar-1767-safe-directory-preparation-and-notice` | `f34830bb75ce` | 0 | behind 68, ahead 0 |
 | `agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics` | `feature/ar-1768-exhaustive-actionable-human-diagnostics` | `cd46a00c276b` | 0 | behind 49, ahead 0 |
