@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Integrate project tools and catalogs with ASB runs",
-  "updated_at": "2026-10-10T11:04:40+00:00",
+  "updated_at": "2026-10-10T11:04:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1764-project-run-integration"
 }
 ---
@@ -179,3 +179,6 @@ output contracts.
 
 - 2026-10-10T11:04:40+00:00: Signed SSH+DCO head 99a3ed6b6e2ec05ff7d2afb24a1b34c2f2e6c80e pushed
   after full workspace, rustdoc, release-build, focused diagnostic and human workflow gates passed.
+
+- 2026-10-10T11:04:48+00:00: Recorded command exit 0; command argv SHA-256
+  d39effd11e62fee90f99aef374607010ba29a957b06b12f1e11cded5b2775a05.
