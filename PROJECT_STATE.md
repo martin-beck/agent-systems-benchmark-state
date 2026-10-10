@@ -20,21 +20,21 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #545 | `feature/ar-1771-human-status-and-quiet-contract@4b86c4a7a099` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define human status and quiet contract |
+| #545 | `feature/ar-1771-human-status-and-quiet-contract@4b86c4a7a099` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define human status and quiet contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38050518287 | `4b86c4a7a099` | pull_request | Rust verification | in_progress:- |
+| 38050518287 | `4b86c4a7a099` | pull_request | Rust verification | completed:success |
 | 38050518215 | `4b86c4a7a099` | pull_request | Credential-free benchmark path | completed:success |
 | 38050518184 | `4b86c4a7a099` | pull_request | Hosted portability and native qualification | completed:success |
 | 38050518178 | `4b86c4a7a099` | pull_request | Huawei MIT source headers | completed:success |
 | 38050518174 | `4b86c4a7a099` | pull_request | Fault assurance | completed:success |
 | 38050518172 | `4b86c4a7a099` | pull_request | Portable protected-main provenance | completed:success |
-| 38050518170 | `4b86c4a7a099` | pull_request | Repository quality | in_progress:- |
+| 38050518170 | `4b86c4a7a099` | pull_request | Repository quality | completed:success |
 | 38050518169 | `4b86c4a7a099` | pull_request | Cross-repository development broker qualification | completed:success |
 | 38050518162 | `4b86c4a7a099` | pull_request | Formal assurance | completed:success |
-| 38050518155 | `4b86c4a7a099` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38050518155 | `4b86c4a7a099` | pull_request | Emulated aarch64 portability | completed:success |
 | 38050518141 | `4b86c4a7a099` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38049573556 | `e9168d44b16d` | pull_request | Credential-free benchmark path | completed:success |
