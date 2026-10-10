@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | PR #546 now points to signed head af6c1bcb. Obtain a fresh independent exact-head review and wait for all hosted CI on af6c1bcb to reach terminal success; only then merge and record post-merge receipt and acceptance. Do not merge prior failed heads. | ar1765-tool-project-e2e-terra |
+| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Independent exact-head review approved and all 15 hosted PR checks are terminal-success on af6c1bcb; record same-account GitHub approval, then perform only the signed exact-target-ref merge procedure and post-merge qualification. | ar1765-tool-project-e2e-terra |
 
 ## Open
 
