@@ -238,7 +238,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. |
-| Next action | Reinvoke the signed merge verifier from the clean /tmp/asb-ar1704-integration worktree at reviewed base 4dfc1e07, preserving expected PR #548 head/tree identities; the prior run failed closed solely because handoffctl launched it from state cwd. |
+| Next action | Monitor all ten exact-main workflows for signed merge 2c6f3083504c3b2636f9e6da044a9a6f626f511c to terminal success; then record the post-merge receipt, accept/release AR-1704, reconcile durable state, and run doctor --live. |
 
 ### AR-1709 — Development live provider execution contract and credential injection
 

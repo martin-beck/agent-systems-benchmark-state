@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1704](tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Reinvoke the signed merge verifier from the clean /tmp/asb-ar1704-integration worktree at reviewed base 4dfc1e07, preserving expected PR #548 head/tree identities; the prior run failed closed solely because handoffctl launched it from state cwd. | ar1704-provider-errors |
+| P0 | [AR-1704](tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Monitor all ten exact-main workflows for signed merge 2c6f3083504c3b2636f9e6da044a9a6f626f511c to terminal success; then record the post-merge receipt, accept/release AR-1704, reconcile durable state, and run doctor --live. | ar1704-provider-errors |
 
 ## Open
 
