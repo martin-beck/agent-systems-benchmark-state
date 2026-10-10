@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1763](tasks/AR-1763-generated-catalog-selection.md): Generate and select ASB project catalogs | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. | Implement deterministic project catalog generation, list/show/select, provenance and compatibility/digest/secret-boundary tests in the isolated worktree; then obtain independent exact-head review. | codex-asb-ar1763-catalog-terra |
+| P0 | [AR-1763](tasks/AR-1763-generated-catalog-selection.md): Generate and select ASB project catalogs | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. | PR #543 is pushed at exact head 8bf16709ada8008d7295e2e439ec6b660a3693c4; await independent exact-head review and all required hosted checks, then use the documented signed merge path and post-merge verification. | codex-asb-ar1763-catalog-terra |
 | P0 | [AR-1771](tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | Preserved uncommitted AR-1771 patch touches crates/asb-cli/src/lib.rs, human.rs, tui.rs and the additive output config/schema seam. AR-1763 now owns concurrent edits in lib.rs/human.rs/config; do not commit or edit until its exact main head lands, then rebase and reconcile all seams before resuming gates. | ar1771-output-contract-terra |
 
 ## Open

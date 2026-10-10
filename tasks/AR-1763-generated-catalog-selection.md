@@ -9,7 +9,7 @@
     "AR-1769"
   ],
   "id": "AR-1763",
-  "next_action": "Implement deterministic project catalog generation, list/show/select, provenance and compatibility/digest/secret-boundary tests in the isolated worktree; then obtain independent exact-head review.",
+  "next_action": "PR #543 is pushed at exact head 8bf16709ada8008d7295e2e439ec6b660a3693c4; await independent exact-head review and all required hosted checks, then use the documented signed merge path and post-merge verification.",
   "observed_branch": "feature/ar-1763-generated-catalog-selection",
   "observed_dirty": 0,
   "observed_head": "8bf16709ada8008d7295e2e439ec6b660a3693c4",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T09:58:41+00:00",
+  "updated_at": "2026-10-10T09:59:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
@@ -217,3 +217,7 @@ secret store or require production signatures in development mode.
 
 - 2026-10-10T09:58:41+00:00: Recorded command exit 0; command argv SHA-256
   2de8b739a87d0c1874751d91b9a42f88b0fe05097ecb8366a3f6690c3e61b137.
+
+- 2026-10-10T09:59:04+00:00: Implemented, signed, and pushed generated catalog selection as PR #543
+  at exact head 8bf16709ada8008d7295e2e439ec6b660a3693c4. Local focused/full serialized gates,
+  rustdoc, and release build passed; hosted CI and independent review are pending.

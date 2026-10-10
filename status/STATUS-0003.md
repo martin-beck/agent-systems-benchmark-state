@@ -978,7 +978,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. |
-| Next action | Implement deterministic project catalog generation, list/show/select, provenance and compatibility/digest/secret-boundary tests in the isolated worktree; then obtain independent exact-head review. |
+| Next action | PR #543 is pushed at exact head 8bf16709ada8008d7295e2e439ec6b660a3693c4; await independent exact-head review and all required hosted checks, then use the documented signed merge path and post-merge verification. |
 
 ### AR-1764 — Integrate project tools and catalogs with ASB runs
 
