@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38069874531 | `4dfc1e07f424` | push | Portable protected-main provenance | completed:success |
 | 38069874511 | `4dfc1e07f424` | push | Formal assurance | in_progress:- |
 | 38069874499 | `4dfc1e07f424` | push | Rust verification | in_progress:- |
-| 38069874495 | `4dfc1e07f424` | push | Hosted portability and native qualification | in_progress:- |
+| 38069874495 | `4dfc1e07f424` | push | Hosted portability and native qualification | completed:success |
 | 38069874491 | `4dfc1e07f424` | push | Credential-free benchmark path | in_progress:- |
 | 38069874485 | `4dfc1e07f424` | push | Repository quality | in_progress:- |
 | 38069874479 | `4dfc1e07f424` | push | Fault assurance | in_progress:- |
