@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T11:16:30+00:00",
+  "updated_at": "2026-10-10T11:17:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -406,3 +406,6 @@ terminal ownership.
 
 - 2026-10-10T11:16:30+00:00: Recorded command exit 0; command argv SHA-256
   44558c192eac5b17d24572a3e135ad538d1cb599bd810cf8a7e7dbe45203d7e3.
+
+- 2026-10-10T11:17:41+00:00: Recorded command exit 0; command argv SHA-256
+  94ccfa59f18a45d53835c50edf500f13cb92f3f2e246f896644db0962b6de20c.
