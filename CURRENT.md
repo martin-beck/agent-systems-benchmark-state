@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1709](tasks/AR-1709.md): Development live provider execution contract and credential injection | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. | Repair the deterministic public live-provider parity fixture to use separate content-addressed run identities for JSON and human modes; rerun it to verify typed runtime-unavailable no-fallback behavior, then continue gates. | ar1709-live-provider |
+| P0 | [AR-1709](tasks/AR-1709.md): Development live provider execution contract and credential injection | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. | Repair human execution presentation to include the bounded typed live_provider_attempt_unavailable diagnostic from structured attempt failures, matching JSON without provider data or mock/replay fallback; then rerun the public parity fixture and gates. | ar1709-live-provider |
 
 ## Open
 
