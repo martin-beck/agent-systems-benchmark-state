@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
-
 ### AR-1688 — Runner-owned cassette capture and replay qualification
 
 | Field | Value |
@@ -1989,7 +1987,7 @@ flowchart LR
         AR_1644["AR-1644 - Done"]:::status_done
         AR_1645["AR-1645 - Done"]:::status_done
         AR_1646["AR-1646 - Done"]:::status_done
-        AR_1647["AR-1647 - In progress"]:::status_in_progress
+        AR_1647["AR-1647 - Done"]:::status_done
         AR_1648["AR-1648 - Done"]:::status_done
         AR_1649["AR-1649 - Done"]:::status_done
         AR_1650["AR-1650 - Done"]:::status_done

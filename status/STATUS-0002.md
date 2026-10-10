@@ -4196,11 +4196,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1647-comparison-fanout |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Run selected agents/workloads and produce comparison results from online or offline replay runs. |
@@ -4694,3 +4694,5 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
+| Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
+
