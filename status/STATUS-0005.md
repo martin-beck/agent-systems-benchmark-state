@@ -67,12 +67,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | codex-ar1769-macro-statement-repair-terra | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Obtain fresh independent exact-head review of 99b3a76; if approved, publish PR and wait for exact-head CI before merge. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | Unclaimed | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Obtain fresh independent exact-head review of 99b3a76; if approved, publish PR and wait for exact-head CI before merge. |
 
 ### Blocked (87)
 
@@ -529,4 +534,3 @@
 | P0 | [AR-1576](../tasks/AR-1576.md): ASB development bootstrap projection | Unclaimed | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |
 | P0 | [AR-1577](../tasks/AR-1577.md): ASB interactive development supervision | Unclaimed | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. | Await hosted checks and independent review of PR #408 exact head e6f3d901dffba31845273fafd436f613d1485793; merge/release only identical green head. |
 | P0 | [AR-1578](../tasks/AR-1578.md): ASB workspace coverage recovery | Unclaimed | Recover the existing workspace coverage gate that currently blocks otherwise correct ASB transport changes. | Run exact workspace coverage gate on PR #407 using /srv/data target; continue only with concrete stable tests needed for 90&#37;, then merge/release or report measured blocker. |
-| P0 | [AR-1588](../tasks/AR-1588.md): ASB development-channel command surface | Unclaimed | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. |
