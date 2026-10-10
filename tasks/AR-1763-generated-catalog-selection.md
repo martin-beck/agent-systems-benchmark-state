@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1763-generated-catalog-selection",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-10T11:29:59+00:00",
   "depends_on": [
     "AR-1761",
     "AR-1762",
@@ -13,7 +13,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-ar1763-catalog-terra",
   "plan": "../plans/AR-1763-generated-catalog-selection.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1763.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T09:29:02+00:00",
+  "updated_at": "2026-10-10T09:29:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
@@ -49,3 +49,5 @@ secret store or require production signatures in development mode.
 
 - 2026-10-10T09:29:02+00:00: AR-1769 is accepted/done with merged protected-main and post-merge
   evidence; promote generated catalog implementation.
+
+- 2026-10-10T09:29:59+00:00: Claimed by codex-asb-ar1763-catalog-terra.

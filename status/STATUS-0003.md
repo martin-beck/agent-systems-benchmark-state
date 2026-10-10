@@ -970,11 +970,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1763-catalog-terra |
 | Parent | None |
 | Children | None |
 | Summary | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. |
@@ -1969,7 +1969,7 @@ flowchart LR
         AR_1760["AR-1760 - Done"]:::status_done
         AR_1761["AR-1761 - Done"]:::status_done
         AR_1762["AR-1762 - Done"]:::status_done
-        AR_1763["AR-1763 - Open"]:::status_open
+        AR_1763["AR-1763 - In progress"]:::status_in_progress
         AR_1764["AR-1764 - Planned"]:::status_planned
         AR_1765["AR-1765 - Planned"]:::status_planned
         AR_1766["AR-1766 - Done"]:::status_done

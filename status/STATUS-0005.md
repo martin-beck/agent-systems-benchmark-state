@@ -67,12 +67,17 @@
 
 ## Complete AR inventory
 
-### Open (3)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1763](../tasks/AR-1763-generated-catalog-selection.md): Generate and select ASB project catalogs | codex-asb-ar1763-catalog-terra | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. | After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory. |
+
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1763](../tasks/AR-1763-generated-catalog-selection.md): Generate and select ASB project catalogs | Unclaimed | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. | After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory. |
 | P0 | [AR-1771](../tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | Unclaimed | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | After AR-1768 is done, define the closed human status, output-router, level, quiet, stream, and compatibility contract for every ASB command. |
 
 ### Blocked (87)
