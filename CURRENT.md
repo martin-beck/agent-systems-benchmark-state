@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. | Create the reviewed PR, obtain independent exact-head technical review, observe exact-head hosted CI, then merge and record the qualification receipt. | ar1657-compatibility-matrix |
+| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. | Run the repaired public CLI matrix and diagnostic-contract tests after the formatter-adjusted reviewed identity is updated; then commit, push a new signed DCO commit, rerun full gates, and request re-review. | ar1657-compatibility-matrix |
 
 ## Open
 

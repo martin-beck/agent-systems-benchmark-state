@@ -4344,7 +4344,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. |
-| Next action | Create the reviewed PR, obtain independent exact-head technical review, observe exact-head hosted CI, then merge and record the qualification receipt. |
+| Next action | Run the repaired public CLI matrix and diagnostic-contract tests after the formatter-adjusted reviewed identity is updated; then commit, push a new signed DCO commit, rerun full gates, and request re-review. |
 
 ### AR-1658 — Development release-channel resolver contract
 
