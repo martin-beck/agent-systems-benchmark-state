@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1771-human-status-and-quiet-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-10T11:30:15+00:00",
   "depends_on": [
     "AR-1768"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1771-output-contract-terra",
   "plan": "../plans/AR-1771-human-status-and-quiet-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1771.json",
   "spec_revision": 2,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T09:29:30+00:00",
+  "updated_at": "2026-10-10T09:30:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -78,3 +78,5 @@ terminal ownership.
 
 - 2026-10-10T09:29:30+00:00: AR-1768 is done with exact-head review and hosted evidence; promote
   output contract in parallel with catalog work.
+
+- 2026-10-10T09:30:15+00:00: Claimed by ar1771-output-contract-terra.

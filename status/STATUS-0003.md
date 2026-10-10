@@ -1082,11 +1082,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1771-output-contract-terra |
 | Parent | None |
 | Children | None |
 | Summary | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. |
@@ -1977,7 +1977,7 @@ flowchart LR
         AR_1768["AR-1768 - Done"]:::status_done
         AR_1769["AR-1769 - Done"]:::status_done
         AR_1770["AR-1770 - Done"]:::status_done
-        AR_1771["AR-1771 - Open"]:::status_open
+        AR_1771["AR-1771 - In progress"]:::status_in_progress
         AR_1772["AR-1772 - Planned"]:::status_planned
         AR_1773["AR-1773 - Planned"]:::status_planned
         AR_1774["AR-1774 - Planned"]:::status_planned
