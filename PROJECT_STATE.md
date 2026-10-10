@@ -20,21 +20,21 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #543 | `feature/ar-1763-generated-catalog-selection@2e6a5d949e17` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): add generated project catalogs |
+| #543 | `feature/ar-1763-generated-catalog-selection@2e6a5d949e17` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): add generated project catalogs |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 38044243542 | `2e6a5d949e17` | pull_request | Huawei MIT source headers | completed:success |
-| 38044243473 | `2e6a5d949e17` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 38044243473 | `2e6a5d949e17` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38044243465 | `2e6a5d949e17` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 38044243450 | `2e6a5d949e17` | pull_request | Cross-repository development broker qualification | in_progress:- |
-| 38044243426 | `2e6a5d949e17` | pull_request | Fault assurance | queued:- |
+| 38044243426 | `2e6a5d949e17` | pull_request | Fault assurance | in_progress:- |
 | 38044243416 | `2e6a5d949e17` | pull_request | Rust verification | in_progress:- |
 | 38044243413 | `2e6a5d949e17` | pull_request | Credential-free benchmark path | in_progress:- |
-| 38044243412 | `2e6a5d949e17` | pull_request | Portable protected-main provenance | in_progress:- |
+| 38044243412 | `2e6a5d949e17` | pull_request | Portable protected-main provenance | completed:success |
 | 38044243408 | `2e6a5d949e17` | pull_request | Repository quality | in_progress:- |
 | 38044243407 | `2e6a5d949e17` | pull_request | Formal assurance | in_progress:- |
-| 38044243404 | `2e6a5d949e17` | pull_request | Emulated aarch64 portability | pending:- |
+| 38044243404 | `2e6a5d949e17` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38043944464 | `238529db6932` | pull_request | Agent Workflow Quality shadow | completed:success |
