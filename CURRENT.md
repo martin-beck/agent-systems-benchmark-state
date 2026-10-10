@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. | Monitor all ten exact-main push workflows for signed merge 4dfc1e07 to terminal success; then record the receipt, accept, release, reconcile, and run doctor --live. | ar1657-compatibility-matrix |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |

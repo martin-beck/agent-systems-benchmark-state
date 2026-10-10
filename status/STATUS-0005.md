@@ -118,12 +118,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1657](../tasks/AR-1657.md): Agent/provider/model compatibility matrix | ar1657-compatibility-matrix | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. | Monitor all ten exact-main push workflows for signed merge 4dfc1e07 to terminal success; then record the receipt, accept, release, reconcile, and run doctor --live. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -340,7 +334,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (550)
+### Done (551)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -557,3 +551,4 @@
 | P0 | [AR-1529](../tasks/AR-1529.md): AR-1307/1308 formal capacity decision successor | Unclaimed | Replace the stale AR-1309 dependency with a reviewed formal capacity/model decision grounded in the completed capacity and reduced-profile evidence. | No further action: the 8 GiB/8 GiB signed-capacity contract is recorded; AR-1530 owns implementation. |
 | P0 | [AR-1530](../tasks/AR-1530.md): State formal capacity profile for AR-1307/1308 | Unclaimed | Implement the state-owned 8G/8G formal capacity profile selected by AR-1529 and route it to AR-1522. | No further action: merged PR #31 provides the signed-capacity-8g profile; AR-1531 owns disposable fixture provisioning. |
 | P0 | [AR-1532](../tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Unclaimed | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote and claim; rerun the provider-free unsigned-development AR-1307 runner path on the v0.3.53-compatible state, then record non-qualifying evidence. |
+| P0 | [AR-1533](../tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | Unclaimed | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Promote and claim; rerun the provider-free unsigned-development AR-1308 QEMU fixture on the v0.3.53-compatible state and preserve qualification_authorized=false. |

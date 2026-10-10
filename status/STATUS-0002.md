@@ -4336,11 +4336,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1657-compatibility-matrix |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. |
