@@ -238,7 +238,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. |
-| Next action | Isolate the quiet full-suite failure in the asb-cli package serial suite, record the exact failing test/assertion, repair only that root cause, then rerun all gates before commit. |
+| Next action | Verify the deliberate CLI provenance fixture hash refresh with workflow_transcript, then rerun format, focused, strict clippy, and serialized full workspace gates before signing the repair commit. |
 
 ### AR-1709 — Development live provider execution contract and credential injection
 
