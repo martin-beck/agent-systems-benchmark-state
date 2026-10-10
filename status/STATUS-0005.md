@@ -67,11 +67,12 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
+| P0 | [AR-1763](../tasks/AR-1763-generated-catalog-selection.md): Generate and select ASB project catalogs | Unclaimed | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. | After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory. |
 
 ### Blocked (87)
 
@@ -165,7 +166,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (104)
+### Planned (103)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -224,7 +225,6 @@
 | P0 | [AR-1724](../tasks/AR-1724-easy-sweep-default-online.md): Make the easy sweep default to online provider execution | Unclaimed | Extend the simple default-online journey to bounded selected/all agent and workload sweeps with explicit mock and replay alternatives. | Promote after AR-1723 and recording/comparison dependencies are current; implement and qualify the bounded online sweep. |
 | P0 | [AR-1736](../tasks/AR-1736-backend-model-catalog-execution.md): Require model catalogs and execution parity for every backend | Unclaimed | Make every supported model-bearing backend enumerate selectable models and carry the exact selection through complete run and sweep execution. | Promote after AR-1733; inventory the canonical backend registry and implement catalog, selection, run, and sweep parity with exhaustive fixtures. |
 | P0 | [AR-1754](../tasks/AR-1754-default-online-live-workflow.md): Make online execution the default across ASB workflows | Unclaimed | Make configured online/live provider execution the default for canonical run, sweep, easy, recording/campaign, and TUI handoff paths while keeping local mock and strict replay explicit alternatives. | Promote after AR-1723, AR-1724, and cli2key qualification AR-1733 are current; inventory every run/sweep/easy/record/campaign/TUI entry point, implement default-online routing with explicit --local-mock and offline replay alternatives, then qualify positive and negative paths. |
-| P0 | [AR-1763](../tasks/AR-1763-generated-catalog-selection.md): Generate and select ASB project catalogs | Unclaimed | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. | After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory. |
 | P0 | [AR-1764](../tasks/AR-1764-project-run-integration.md): Integrate project tools and catalogs with ASB runs | Unclaimed | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. | Wire project inventory and active catalogs into benchmark setup/run/compare/report commands. |
 | P0 | [AR-1765](../tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Unclaimed | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Run the fresh-user end-to-end qualification after AR-1764 is merged. |
 | P0 | [AR-1771](../tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | Unclaimed | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | After AR-1768 is done, define the closed human status, output-router, level, quiet, stream, and compatibility contract for every ASB command. |

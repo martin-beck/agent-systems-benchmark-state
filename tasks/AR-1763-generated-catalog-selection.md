@@ -3,7 +3,11 @@
   "branch": "feature/ar-1763-generated-catalog-selection",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1761", "AR-1762", "AR-1769"],
+  "depends_on": [
+    "AR-1761",
+    "AR-1762",
+    "AR-1769"
+  ],
   "id": "AR-1763",
   "next_action": "After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory.",
   "observed_branch": "",
@@ -13,14 +17,21 @@
   "plan": "../plans/AR-1763-generated-catalog-selection.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1763.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1763.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1763.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-09T17:21:34+00:00",
+  "updated_at": "2026-10-10T09:29:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
@@ -35,3 +46,6 @@ secret store or require production signatures in development mode.
 
 - 2026-10-09T17:21:34+00:00: Added AR-1769 as a dependency so new catalog errors and warnings
   cannot bypass the fine-grained human diagnostic catalog and required completeness gate.
+
+- 2026-10-10T09:29:02+00:00: AR-1769 is accepted/done with merged protected-main and post-merge
+  evidence; promote generated catalog implementation.
