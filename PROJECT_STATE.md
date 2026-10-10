@@ -21,21 +21,21 @@ Generated from local Git and GitHub. Do not edit.
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
 | #544 | `feature/ar-1764-project-run-integration@9faa1e88fc0b` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): bind benchmark runs to project catalogs |
-| #545 | `feature/ar-1771-human-status-and-quiet-contract@4bfbca5c409e` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define human status and quiet contract |
+| #545 | `feature/ar-1771-human-status-and-quiet-contract@36865d484287` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): define human status and quiet contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38048378890 | `36865d484287` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38048378871 | `36865d484287` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38048378804 | `36865d484287` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38048378803 | `36865d484287` | pull_request | Huawei MIT source headers | completed:success |
+| 38048378801 | `36865d484287` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38048378777 | `36865d484287` | pull_request | Fault assurance | in_progress:- |
+| 38048378768 | `36865d484287` | pull_request | Formal assurance | in_progress:- |
+| 38048378753 | `36865d484287` | pull_request | Rust verification | in_progress:- |
+| 38048378747 | `36865d484287` | pull_request | Portable protected-main provenance | completed:success |
+| 38048378744 | `36865d484287` | pull_request | Repository quality | in_progress:- |
+| 38048378737 | `36865d484287` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 38048152627 | `4bfbca5c409e` | pull_request | Fault assurance | completed:success |
-| 38048152625 | `4bfbca5c409e` | pull_request | Credential-free benchmark path | completed:success |
-| 38048152621 | `4bfbca5c409e` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38048152590 | `4bfbca5c409e` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38048152588 | `4bfbca5c409e` | pull_request | Formal assurance | in_progress:- |
-| 38048152583 | `4bfbca5c409e` | pull_request | Portable protected-main provenance | completed:success |
-| 38048152572 | `4bfbca5c409e` | pull_request | Hosted portability and native qualification | completed:success |
-| 38048152569 | `4bfbca5c409e` | pull_request | Rust verification | in_progress:- |
-| 38048152566 | `4bfbca5c409e` | pull_request | Cross-repository development broker qualification | completed:success |
-| 38048152563 | `4bfbca5c409e` | pull_request | Huawei MIT source headers | completed:success |
-| 38048152556 | `4bfbca5c409e` | pull_request | Repository quality | in_progress:- |
-| 38048104746 | `b18ca5c1d494` | pull_request | Fault assurance | completed:cancelled |
