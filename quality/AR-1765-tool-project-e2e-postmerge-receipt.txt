@@ -1,0 +1,10 @@
+AR-1765 project-local tool end-to-end qualification receipt
+
+Pull request: #546
+Reviewed head: af6c1bcbddbba03a6f90f670c30f44acf99eca6e
+Protected merge: a65ebb560cf26447858a1241ac80049c59a4bcbd
+Merge base: 3cd8ae24048d153a4928511b6b1e64a50213d5e0
+Merge tree: 64c4e060e902b5767c10d32da4570c37d997c4dc
+Merge verification: exact parents, reviewed tree, SSH signature, and matching DCO verified.
+Checks: 38064639751, 38064639754, 38064639770, 38064639775, 38064639797, 38064639821, 38064639863, 38064639963, 38064639759, 38064639765 (all success)
+Local gates: disposable installed-binary fresh-user qualification, workflow provenance, locked workspace, rustdoc warnings, and release build passed.
