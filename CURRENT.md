@@ -3,17 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | All 15 hosted checks are terminal-success for PR #546 exact signed head af6c1bcb. Await a fresh GitHub pull-request approval visible in the PR reviews API; only then perform the signed exact-target-ref merge and post-merge qualification. Do not treat state text as approval evidence. | ar1765-tool-project-e2e-terra |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
+| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | All 15 hosted checks are terminal-success for PR #546 exact signed head af6c1bcb. Await a fresh GitHub pull-request approval visible in the PR reviews API; only then perform the signed exact-target-ref merge and post-merge qualification. Do not treat state text as approval evidence. | - |
 
 ## Blocked
 

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1765-tool-project-e2e-qualification",
   "checkpoint_commit": "af6c1bcbddbba03a6f90f670c30f44acf99eca6e",
-  "claim_expires": "2026-10-10T14:51:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1760",
     "AR-1761",
@@ -15,7 +15,7 @@
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
   "observed_head": "af6c1bcbddbba03a6f90f670c30f44acf99eca6e",
-  "owner": "ar1765-tool-project-e2e-terra",
+  "owner": "",
   "plan": "../plans/AR-1765-tool-project-e2e-qualification.md",
   "priority": "P0",
   "schema_version": 1,
@@ -29,11 +29,11 @@
   },
   "spec_ref": "specs/AR-1765.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:56:23+00:00",
+  "updated_at": "2026-10-10T15:40:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -378,3 +378,7 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 
 - 2026-10-10T12:56:23+00:00: Recorded command exit 0; command argv SHA-256
   c537af7a89a71da2ddadc7d6dc55e10cfeafd2dc26faa148c4110a30bedc5eda.
+
+- 2026-10-10T15:40:38+00:00: Recovered expired claim formerly owned by
+  ar1765-tool-project-e2e-terra. Recovered expired AR-1765 claim before correcting mistaken GitHub
+  reviews-API requirement; preserve existing owner and all review/CI evidence.
