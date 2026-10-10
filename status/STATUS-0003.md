@@ -252,7 +252,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. |
-| Next action | Complete the line-stable public live-provider fixture placement, then rerun diagnostic_contract and update only any remaining reviewed legacy identity; follow with provenance and full gates. |
+| Next action | Run diagnostic_contract once after the line-stable test-only factory seam; if clean, run the public parity fixture and provenance/full gates. |
 
 ### AR-1710 — Wizard provider-model selection and warning-only readiness
 

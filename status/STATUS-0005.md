@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1709](../tasks/AR-1709.md): Development live provider execution contract and credential injection | ar1709-live-provider | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. | Complete the line-stable public live-provider fixture placement, then rerun diagnostic_contract and update only any remaining reviewed legacy identity; follow with provenance and full gates. |
+| P0 | [AR-1709](../tasks/AR-1709.md): Development live provider execution contract and credential injection | ar1709-live-provider | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. | Run diagnostic_contract once after the line-stable test-only factory seam; if clean, run the public parity fixture and provenance/full gates. |
 
 ### Open (1)
 
