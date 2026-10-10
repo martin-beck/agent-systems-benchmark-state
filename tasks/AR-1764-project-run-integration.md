@@ -10,7 +10,7 @@
   "id": "AR-1764",
   "next_action": "Independent exact-head review of PR for 99a3ed6b6e2ec05ff7d2afb24a1b34c2f2e6c80e; wait for required hosted CI before merge.",
   "observed_branch": "feature/ar-1764-project-run-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "99a3ed6b6e2ec05ff7d2afb24a1b34c2f2e6c80e",
   "owner": "ar1764-project-run-terra",
   "plan": "../plans/AR-1764-project-run-integration.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Integrate project tools and catalogs with ASB runs",
-  "updated_at": "2026-10-10T11:07:33+00:00",
+  "updated_at": "2026-10-10T11:07:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1764-project-run-integration"
 }
 ---
