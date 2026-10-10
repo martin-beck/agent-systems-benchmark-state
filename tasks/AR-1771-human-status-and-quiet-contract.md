@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T09:30:15+00:00",
+  "updated_at": "2026-10-10T09:30:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -80,3 +80,6 @@ terminal ownership.
   output contract in parallel with catalog work.
 
 - 2026-10-10T09:30:15+00:00: Claimed by ar1771-output-contract-terra.
+
+- 2026-10-10T09:30:41+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
