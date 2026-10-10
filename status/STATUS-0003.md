@@ -1244,7 +1244,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
-| Next action | Implement asb workload install/list/status/repair/update/remove for verified official external workload bundles and preparation closures. |
+| Next action | Implement asb workload install/list/status/select/repair/update/remove for every development-supported official external workload bundle. |
 
 ### AR-1783 — Installed workload selection and execution
 
@@ -1257,8 +1257,8 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Select verified external workload bundles and prove ASB run/sweep uses their exact project-local identity. |
-| Next action | Integrate verified installed workload bundles into catalog selection and prove run/sweep consumes their exact recorded identity. |
+| Summary | Select every development external workload and prove ASB uses its exact project-local identity end to end. |
+| Next action | Integrate every development-supported installed workload bundle into selection and prove full run/sweep/report/compare consumes its exact recorded identity. |
 
 ### AR-1784 — Command dependency registry and preflight
 
