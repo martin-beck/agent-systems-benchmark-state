@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": ["AR-1776"],
   "id": "AR-1777",
-  "next_action": "Implement catalog-driven verified compatible-binary reuse and official prebuilt tool/workload acquisition into project-local storage.",
+  "next_action": "Implement catalog-driven verified compatible-binary reuse and official prebuilt executable-tool acquisition into project-local storage.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
