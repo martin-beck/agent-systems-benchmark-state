@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1771",
-  "next_action": "Implement the closed global quiet and human output contract in the declared worktree; preserve project-config compatibility while coordinating any shared schema overlap with AR-1763.",
+  "next_action": "AR-1771 output config seam is preserved uncommitted in crates/asb-config/src/lib.rs and schema/v1/project-config.schema.json; wait for AR-1763 exact config head, then rebase/merge the additive output section before committing. Continue isolated CLI/human routing tests only.",
   "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
   "observed_dirty": 0,
   "observed_head": "772bc46537b0574008635ebfc27d6b147c12c805",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T09:31:32+00:00",
+  "updated_at": "2026-10-10T09:34:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -90,3 +90,6 @@ terminal ownership.
 - 2026-10-10T09:31:29+00:00: AR-1768 is done; implementation is active in the declared worktree.
 
 - 2026-10-10T09:31:32+00:00: Heartbeat by ar1771-output-contract-terra.
+
+- 2026-10-10T09:34:33+00:00: Coordinator identified AR-1763 ownership overlap; no conflicting schema
+  commit will be made.

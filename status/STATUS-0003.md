@@ -1090,7 +1090,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. |
-| Next action | Implement the closed global quiet and human output contract in the declared worktree; preserve project-config compatibility while coordinating any shared schema overlap with AR-1763. |
+| Next action | AR-1771 output config seam is preserved uncommitted in crates/asb-config/src/lib.rs and schema/v1/project-config.schema.json; wait for AR-1763 exact config head, then rebase/merge the additive output section before committing. Continue isolated CLI/human routing tests only. |
 
 ### AR-1772 — Unified human step-progress reporter
 
