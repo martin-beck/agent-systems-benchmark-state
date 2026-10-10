@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1771-human-status-and-quiet-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-10T11:31:32+00:00",
+  "claim_expires": "2026-10-10T11:34:37+00:00",
   "depends_on": [
     "AR-1768"
   ],
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T09:34:33+00:00",
+  "updated_at": "2026-10-10T09:34:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -93,3 +93,5 @@ terminal ownership.
 
 - 2026-10-10T09:34:33+00:00: Coordinator identified AR-1763 ownership overlap; no conflicting schema
   commit will be made.
+
+- 2026-10-10T09:34:37+00:00: Heartbeat by ar1771-output-contract-terra.
