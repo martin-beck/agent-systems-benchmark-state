@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1771",
-  "next_action": "PR #545 is at exact head 5978aab04533920da1090dc27cded441a7699b59. Serialized workspace and fmt/clippy/rustdoc/release gates are green; await fresh independent exact-head review and hosted CI. Non-serialized workspace control-state ownership failures were classified as shared-root contention and pass when isolated.",
+  "next_action": "PR #545 is rebased and published at exact head e9168d44b16d231406707c3d96169e2320be8109 on protected main fd61b856570bf1d57e9dba4f8bee1da99b77189e. Focused, serialized workspace, fmt/clippy/rustdoc/release, and provenance gates are green; await fresh independent exact-head review and hosted CI. Do not merge before both are green.",
   "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
   "observed_dirty": 0,
   "observed_head": "e9168d44b16d231406707c3d96169e2320be8109",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 203,
+  "task_revision": 204,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T11:46:33+00:00",
+  "updated_at": "2026-10-10T11:46:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -573,3 +573,8 @@ terminal ownership.
   e24882fc968dbd258b64fec8fbe6aa39b91ed143b54a80d198a62b0c84687b8e.
 
 - 2026-10-10T11:46:33+00:00: Heartbeat by ar1771-output-contract-terra.
+
+- 2026-10-10T11:46:40+00:00: Rebased from stale 5978aab onto fd61b856, reconciled public
+  fixture/router/library seams, reanchored reviewed diagnostic identities, and refreshed workflow
+  transcript/provenance. Force-with-lease published e9168d44; exact remote branch and pull ref
+  verified.

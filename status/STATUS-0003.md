@@ -1090,7 +1090,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. |
-| Next action | PR #545 is at exact head 5978aab04533920da1090dc27cded441a7699b59. Serialized workspace and fmt/clippy/rustdoc/release gates are green; await fresh independent exact-head review and hosted CI. Non-serialized workspace control-state ownership failures were classified as shared-root contention and pass when isolated. |
+| Next action | PR #545 is rebased and published at exact head e9168d44b16d231406707c3d96169e2320be8109 on protected main fd61b856570bf1d57e9dba4f8bee1da99b77189e. Focused, serialized workspace, fmt/clippy/rustdoc/release, and provenance gates are green; await fresh independent exact-head review and hosted CI. Do not merge before both are green. |
 
 ### AR-1772 — Unified human step-progress reporter
 
