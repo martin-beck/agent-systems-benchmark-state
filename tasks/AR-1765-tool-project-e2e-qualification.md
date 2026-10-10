@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:20:54+00:00",
+  "updated_at": "2026-10-10T12:21:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -134,3 +134,6 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
   diagnostic public-command recovery journey 1/1; five-kind idempotent install 1/1; project-bound
   run/report/compare plus documented local-mock ordering 1/1. Full locked fmt, Clippy, workspace
   tests, rustdoc, and release build passed on ac669d1c.
+
+- 2026-10-10T12:21:06+00:00: Recorded command exit 0; command argv SHA-256
+  e717bbb58f84bbf36b9322ae43a4f7055d78c99afd2851df40ba3ff0b5a4ec7b.
