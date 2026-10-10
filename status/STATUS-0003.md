@@ -238,7 +238,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. |
-| Next action | Diagnose the serialized workspace exit 101 with the identical Cargo test suite in quiet mode so the terminal failing test is visible without retaining broad output. Repair only the identified cause, then rerun normal full gates before commit. |
+| Next action | Isolate the quiet full-suite failure in the asb-cli package serial suite, record the exact failing test/assertion, repair only that root cause, then rerun all gates before commit. |
 
 ### AR-1709 — Development live provider execution contract and credential injection
 

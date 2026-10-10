@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1704](../tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | ar1704-provider-errors | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Diagnose the serialized workspace exit 101 with the identical Cargo test suite in quiet mode so the terminal failing test is visible without retaining broad output. Repair only the identified cause, then rerun normal full gates before commit. |
+| P0 | [AR-1704](../tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | ar1704-provider-errors | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Isolate the quiet full-suite failure in the asb-cli package serial suite, record the exact failing test/assertion, repair only that root cause, then rerun all gates before commit. |
 
 ### Open (1)
 
