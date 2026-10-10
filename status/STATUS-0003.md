@@ -1090,7 +1090,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. |
-| Next action | After AR-1768 is done, define the closed human status, output-router, level, quiet, stream, and compatibility contract for every ASB command. |
+| Next action | Implement the closed global quiet and human output contract in the declared worktree; preserve project-config compatibility while coordinating any shared schema overlap with AR-1763. |
 
 ### AR-1772 — Unified human step-progress reporter
 

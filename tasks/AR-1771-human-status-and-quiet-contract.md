@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1771",
-  "next_action": "After AR-1768 is done, define the closed human status, output-router, level, quiet, stream, and compatibility contract for every ASB command.",
+  "next_action": "Implement the closed global quiet and human output contract in the declared worktree; preserve project-config compatibility while coordinating any shared schema overlap with AR-1763.",
   "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
   "observed_dirty": 0,
   "observed_head": "772bc46537b0574008635ebfc27d6b147c12c805",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T09:30:50+00:00",
+  "updated_at": "2026-10-10T09:31:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -86,3 +86,5 @@ terminal ownership.
 
 - 2026-10-10T09:30:50+00:00: Recorded command exit 0; command argv SHA-256
   22e8959654c0611947b6779be4c91bd3912ef67d0baea66d067a0c7acde50b69.
+
+- 2026-10-10T09:31:29+00:00: AR-1768 is done; implementation is active in the declared worktree.
