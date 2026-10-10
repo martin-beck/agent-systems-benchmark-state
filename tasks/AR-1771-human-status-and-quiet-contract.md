@@ -10,7 +10,7 @@
   "next_action": "PR #545 exact head e9168d44 failed the hosted Repository quality coverage gate: workspace line coverage 88.44%, below the required 90%. Add focused executable/library/TUI output-router behavior tests for AR-1771 changed paths; rerun local coverage and all full gates, then publish a signed repair for fresh review and CI. Do not merge the failed head.",
   "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
   "observed_dirty": 0,
-  "observed_head": "2cee1ebfa395671da68af7995e648d4661130cdf",
+  "observed_head": "4b86c4a7a0993de2a5f93a061505c1d819d4a2df",
   "owner": "ar1771-output-contract-terra",
   "plan": "../plans/AR-1771-human-status-and-quiet-contract.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 249,
+  "task_revision": 250,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T12:00:27+00:00",
+  "updated_at": "2026-10-10T12:00:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
