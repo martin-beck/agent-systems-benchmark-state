@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T11:43:14+00:00",
+  "updated_at": "2026-10-10T11:44:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -57,3 +57,6 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 
 - 2026-10-10T11:42:15+00:00: Completed AR/spec/plan/development-doc review and established the fresh
   merged-base worktree; qualification baseline is in progress.
+
+- 2026-10-10T11:44:17+00:00: Recorded command exit 0; command argv SHA-256
+  e274074a17e0682b5edf79b5caca577a41520ed9ca8daf9342f0433b678582a1.
