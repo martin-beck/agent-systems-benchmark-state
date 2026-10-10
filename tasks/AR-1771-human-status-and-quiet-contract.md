@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T11:32:09+00:00",
+  "updated_at": "2026-10-10T11:32:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -458,3 +458,6 @@ terminal ownership.
 - 2026-10-10T11:32:09+00:00: Replaced stale AR-1763 rebase instruction after exact-head gates.
   Recorded two non-serial shared control-state root ownership flakes, their focused pass, and full
   serialized workspace success; no readiness or merge decision.
+
+- 2026-10-10T11:32:28+00:00: Recorded command exit 0; command argv SHA-256
+  5317ca406792374861c51b069e7ed3b7bc39c540a8f20d5d69278442c3e77a33.
