@@ -9,7 +9,7 @@
     "AR-1769"
   ],
   "id": "AR-1763",
-  "next_action": "PR #543 is pushed at exact head 8bf16709ada8008d7295e2e439ec6b660a3693c4; await independent exact-head review and all required hosted checks, then use the documented signed merge path and post-merge verification.",
+  "next_action": "PR #543 repair head e7fd647594cea24ccddd976c26a17c4ba8b24341 has green local gates; await fresh independent exact-head review and all required hosted checks before the documented signed merge and post-merge verification.",
   "observed_branch": "feature/ar-1763-generated-catalog-selection",
   "observed_dirty": 0,
   "observed_head": "e7fd647594cea24ccddd976c26a17c4ba8b24341",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T10:05:50+00:00",
+  "updated_at": "2026-10-10T10:06:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
@@ -280,3 +280,8 @@ secret store or require production signatures in development mode.
 
 - 2026-10-10T10:05:50+00:00: Recorded command exit 0; command argv SHA-256
   358e6d43ceef97708fc873412c29a2d33f5b20d4c12df954fbbee9a4f029f890.
+
+- 2026-10-10T10:06:08+00:00: Addressed independent review: catalog is now a distinct human
+  presentation family and public fixture count is updated; refreshed line-bound diagnostic
+  identities. Signed repair head e7fd647594cea24ccddd976c26a17c4ba8b24341 pushed; hosted exact-head
+  CI and fresh review pending.

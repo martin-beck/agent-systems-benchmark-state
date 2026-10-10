@@ -978,7 +978,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. |
-| Next action | PR #543 is pushed at exact head 8bf16709ada8008d7295e2e439ec6b660a3693c4; await independent exact-head review and all required hosted checks, then use the documented signed merge path and post-merge verification. |
+| Next action | PR #543 repair head e7fd647594cea24ccddd976c26a17c4ba8b24341 has green local gates; await fresh independent exact-head review and all required hosted checks before the documented signed merge and post-merge verification. |
 
 ### AR-1764 — Integrate project tools and catalogs with ASB runs
 
