@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1765-tool-project-e2e-qualification",
-  "checkpoint_commit": "ac669d1ca1fd5324f505ac24feec5e4878a625fa",
+  "checkpoint_commit": "60fe1d7c2a7a93494e9ac2b2ab5516fa1f17c608",
   "claim_expires": "2026-10-10T14:33:20+00:00",
   "depends_on": [
     "AR-1760",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:38:48+00:00",
+  "updated_at": "2026-10-10T12:38:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -289,3 +289,5 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
   diagnostic_contract 9/9; project_qualification 1/1 covering five kinds, configured/PATH discovery,
   catalog selection, JSON silence, negative recovery, and project-bound results; rustdoc -D
   warnings; locked release build. Golden updated for discover usage.
+
+- 2026-10-10T12:38:53+00:00: Checkpointed source commit 60fe1d7c2a7a93494e9ac2b2ab5516fa1f17c608.
