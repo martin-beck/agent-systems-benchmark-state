@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1704](tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Implement or qualify typed non-2xx and transport failure propagation, complete the connected provider/model compatibility matrix, and replace the fixed curl path with bounded trusted tool discovery; publish exact-head human/JSON evidence. | ar1704-provider-errors |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
-| P0 | [AR-1704](tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Implement or qualify typed non-2xx and transport failure propagation, complete the connected provider/model compatibility matrix, and replace the fixed curl path with bounded trusted tool discovery; publish exact-head human/JSON evidence. | - |
 
 ## Blocked
 

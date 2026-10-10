@@ -230,11 +230,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1704-provider-errors |
 | Parent | None |
 | Children | None |
 | Summary | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. |
@@ -2044,7 +2044,7 @@ flowchart LR
         AR_1701["AR-1701 - Planned"]:::status_planned
         AR_1702["AR-1702 - Blocked"]:::status_blocked
         AR_1703["AR-1703 - Planned"]:::status_planned
-        AR_1704["AR-1704 - Open"]:::status_open
+        AR_1704["AR-1704 - In progress"]:::status_in_progress
         AR_1709["AR-1709 - Planned"]:::status_planned
         AR_1710["AR-1710 - Planned"]:::status_planned
         AR_1711["AR-1711 - Planned"]:::status_planned
