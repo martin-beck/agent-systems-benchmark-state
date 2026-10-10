@@ -1062,7 +1062,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. |
-| Next action | Obtain fresh independent technical review of the complete signed diff through exact head 8393511e269b6b588e22ba76cd15aa1bc84a3218; do not publish until it passes. |
+| Next action | Record green focused/full evidence for exact head aeb9f10; obtain an independent exact-head review, then publish only if it passes. |
 
 ### AR-1770 — Descriptor-safe directory race hardening and acceptance matrix
 
