@@ -1216,7 +1216,7 @@
 | Parent | None |
 | Children | None |
 | Summary | End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution. |
-| Next action | Qualify that default-installed project tools and separately acquired workload bundles are selected and actually used by run, sweep, report, and comparison flows. |
+| Next action | Qualify every development external workload, after installation and selection, through actual run, sweep, report, and comparison flows. |
 
 ### AR-1781 — External workload acquisition catalog
 
