@@ -10,7 +10,7 @@
   "id": "AR-1764",
   "next_action": "Wire project inventory and active catalogs into benchmark setup/run/compare/report commands.",
   "observed_branch": "feature/ar-1764-project-run-integration",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "5e08ddadff5a716bcce844ed8ed5e1bc1868d02f",
   "owner": "ar1764-project-run-terra",
   "plan": "../plans/AR-1764-project-run-integration.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Integrate project tools and catalogs with ASB runs",
-  "updated_at": "2026-10-10T10:42:46+00:00",
+  "updated_at": "2026-10-10T10:42:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1764-project-run-integration"
 }
 ---
