@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1647](../tasks/AR-1647.md): Selected-agent comparison orchestration | ar1647-comparison-fanout | Run selected agents/workloads and produce comparison results from online or offline replay runs. | Focused current-main fan-out, comparison, and offline-cassette gates pass; run full exact-head quality gates, independently review current-head qualification, then accept/release. |
+| P0 | [AR-1647](../tasks/AR-1647.md): Selected-agent comparison orchestration | ar1647-comparison-fanout | Run selected agents/workloads and produce comparison results from online or offline replay runs. | Current signed ASB main already contains the final route; exact-head focused/full gates and hosted assurance pass. Record acceptance from the paired qualification receipt and release. |
 
 ### Open (1)
 

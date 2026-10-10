@@ -4204,7 +4204,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Run selected agents/workloads and produce comparison results from online or offline replay runs. |
-| Next action | Focused current-main fan-out, comparison, and offline-cassette gates pass; run full exact-head quality gates, independently review current-head qualification, then accept/release. |
+| Next action | Current signed ASB main already contains the final route; exact-head focused/full gates and hosted assurance pass. Record acceptance from the paired qualification receipt and release. |
 
 ### AR-1648 — Selected-agent/workload fan-out
 
