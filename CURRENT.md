@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1704](tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | PR #548 is published at exact head b2fefe2f9a425ac1be2685160caf68749fa88bdf. Obtain fresh independent technical exact-head review, then wait for every exact-head CI check; do not merge without the review receipt and green CI. | ar1704-provider-errors |
+| P0 | [AR-1704](tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | PR #548 exact head b2fefe2f9a425ac1be2685160caf68749fa88bdf has fresh independent technical approval and all 15 exact-head checks green; merge only through signed protected-main procedure, then verify exact-main workflows. | ar1704-provider-errors |
 
 ## Open
 
