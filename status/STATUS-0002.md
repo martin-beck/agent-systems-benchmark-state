@@ -4196,11 +4196,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1647-comparison-fanout |
 | Parent | None |
 | Children | None |
 | Summary | Run selected agents/workloads and produce comparison results from online or offline replay runs. |
@@ -4695,6 +4695,4 @@
 | Children | None |
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
 | Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
-
-### AR-1688 — Runner-owned cassette capture and replay qualification
 
