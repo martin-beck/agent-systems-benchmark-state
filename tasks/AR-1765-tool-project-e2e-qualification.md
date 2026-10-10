@@ -21,19 +21,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:37fb7c2160488dc5bfa7466d9bcbd3cc4c8b4186040e7b0d53447003c1a53127",
+    "evidence_ref": "quality/AR-1765-tool-project-e2e-postmerge-receipt.txt",
     "spec_ref": "specs/AR-1765.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1765.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T15:53:45+00:00",
+  "updated_at": "2026-10-10T15:54:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -411,3 +411,6 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 
 - 2026-10-10T15:53:45+00:00: Recorded command exit 0; command argv SHA-256
   18d9e6bea409598568a9f0b16c66a54b06b4d5d902e7b7e2e89ed5c89cbf3e7e.
+
+- 2026-10-10T15:54:18+00:00: Accepted: signed merge a65ebb560 has reviewed tree 64c4e060, exact
+  parents 3cd8ae24 and af6c1bcb, verified SSH/DCO, and all 10 exact-main workflows terminal-success.
