@@ -11,7 +11,7 @@
     "AR-1764"
   ],
   "id": "AR-1765",
-  "next_action": "Independent exact-head review approved and all 15 hosted PR checks are terminal-success on af6c1bcb; record same-account GitHub approval, then perform only the signed exact-target-ref merge procedure and post-merge qualification.",
+  "next_action": "All 15 hosted checks are terminal-success for PR #546 exact signed head af6c1bcb. Await a fresh GitHub pull-request approval visible in the PR reviews API; only then perform the signed exact-target-ref merge and post-merge qualification. Do not treat state text as approval evidence.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
   "observed_head": "af6c1bcbddbba03a6f90f670c30f44acf99eca6e",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:55:32+00:00",
+  "updated_at": "2026-10-10T12:56:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -370,3 +370,8 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 
 - 2026-10-10T12:55:32+00:00: Recorded command exit 1; command argv SHA-256
   444faf8b2f4744812fac706257069dad2859d2d1cb6673fe500b59c62932808a.
+
+- 2026-10-10T12:56:00+00:00: Reconciled approval discrepancy: GitHub API GET
+  /repos/martin-beck/agent-systems-benchmark/pulls/546/reviews returned [] and gh pr view
+  reviewDecision is empty, despite a concurrent state note. Exact-head CI remains 15/15 green; merge
+  prohibited pending externally visible independent approval.
