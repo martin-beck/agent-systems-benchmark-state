@@ -4344,7 +4344,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. |
-| Next action | Run the repaired public CLI matrix and diagnostic-contract tests after the formatter-adjusted reviewed identity is updated; then commit, push a new signed DCO commit, rerun full gates, and request re-review. |
+| Next action | PR #547 head 1a7aef07 has independent exact-head approval and all 15 exact-head checks green; merge only through the signed protected-main procedure, then verify exact-main workflows. |
 
 ### AR-1658 — Development release-channel resolver contract
 
