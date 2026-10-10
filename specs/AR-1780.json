@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1780.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "fresh-user-execution", "description": "A fresh project installs supported tools/workloads by ID, selects them, and completes a bounded benchmark/report/compare journey."},
+    {"id": "installed-identity-use", "description": "Run evidence proves execution used the selected project-local acquired/built identity and rejects ambient substitution or stale/revoked/mismatched records."},
+    {"id": "acquisition-path-matrix", "description": "Verified reuse, official prebuilt, source fallback, local dependency closure, offline-after-install, update, repair, remove, and recovery are qualified."},
+    {"id": "failure-separation", "description": "Tool/workload acquisition and build failures remain distinct from benchmark/provider failures and preserve usable prior state."}
+  ],
+  "definition_of_done": ["Independent end-to-end fresh-user evidence covers every supported installation class and a representative official source path.", "Exact-head review, signed merge, and exact-main hosted qualification pass."],
+  "inputs": [{"id": "run-integration", "description": "AR-1764 project tools/catalogs consumed by execution."}, {"id": "usable-tool-command", "description": "AR-1779 supported-ID usable installer."}],
+  "outputs": [{"id": "e2e-qualification", "description": "Privacy-safe exact identity evidence for installed tools/workloads through ASB execution."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["ambient-tool-substitution", "credential-output", "false-benchmark-attribution", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "environmental", "mechanical", "hosted"],
+  "gates": [{"id": "end-to-end", "description": "Fresh-user install/select/run/report/compare path proves exact installed identity use."}, {"id": "recovery", "description": "All acquisition, build, update, removal, offline, mismatch, and failure-boundary tests pass."}]
+}

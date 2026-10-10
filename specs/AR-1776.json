@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1776.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "complete-supported-inventory", "description": "Every ASB-supported executable tool has one reviewed catalog entry or is explicitly unsupported/development-only; workload bundles use the separate asb workload catalog."},
+    {"id": "official-immutable-sources", "description": "Every installable entry names its official primary source, exact immutable binary/source identity, platform compatibility, verifier, license, and entrypoint."},
+    {"id": "bounded-alternatives", "description": "Entries define a verified compatible-system reuse path, official prebuilt path where available, and bounded pinned-source fallback where buildable."},
+    {"id": "default-resolution", "description": "The catalog supports asb tool install by supported ID without a user-supplied source and rejects arbitrary URLs, package-manager installs, shell snippets, and unverifiable artifacts."},
+    {"id": "typed-unavailability", "description": "Unsupported platform, missing proof, unavailable primary source, incompatible license, and absent build recipe retain distinct actionable diagnostics."}
+  ],
+  "definition_of_done": ["Catalog schema, entries, fixtures, and contributor documentation pass provenance/schema tests.", "Independent review and exact-head hosted checks pass."],
+  "inputs": [{"id": "local-installer", "description": "AR-1761 project-local registry and AR-1762 discovery baseline."}],
+  "outputs": [{"id": "acquisition-catalog", "description": "Versioned official source, verifier, platform, artifact, and build-recipe catalog."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["floating-source", "arbitrary-url", "arbitrary-shell-install", "ambient-binary-trust", "credential-output", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "catalog", "description": "Schema and catalog inventory validate every supported entry and immutable primary source."}, {"id": "negative", "description": "Unverified, unsupported, revoked, incompatible, and arbitrary acquisition paths fail closed with distinct diagnostics."}]
+}

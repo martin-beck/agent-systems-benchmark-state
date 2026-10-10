@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1778.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "pinned-source-build", "description": "Fallback builds use only catalog-pinned source, declared toolchain, declared recipe, and verified output/entrypoint."},
+    {"id": "project-local-dependencies", "description": "Missing declared dependencies are built/acquired into a project-owned prefix or reused only after identity validation; no root/global package-manager mutation occurs."},
+    {"id": "isolated-bounded-build", "description": "Build execution clears credentials, constrains environment/network/resource/time, rejects arbitrary hooks, and retains only safe bounded diagnostics."},
+    {"id": "atomic-closure", "description": "Tool plus dependency closure publishes atomically with receipt and transactional cleanup; failure preserves prior usable state."},
+    {"id": "granular-build-errors", "description": "Toolchain, platform, dependency, policy, output, resource, timeout, cancellation, and cleanup failures remain distinct and actionable."}
+  ],
+  "definition_of_done": ["At least one supported tool for each declared build family passes reproducible project-local source-build qualification.", "Hostile and failure fixtures plus independent exact-head/exact-main evidence pass."],
+  "inputs": [{"id": "acquisition-catalog", "description": "AR-1776 catalog source and build recipes."}],
+  "outputs": [{"id": "source-builder", "description": "Bounded pinned source-builder and project dependency materializer."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["sudo", "global-package-mutation", "ambient-build-hook", "credential-inheritance", "unbounded-build", "unsafe-clean", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "property-or-fuzz", "bounded-model", "environmental", "mechanical"],
+  "gates": [{"id": "source-build", "description": "Pinned source/dependency project-prefix builds and reproducibility tests pass."}, {"id": "isolation", "description": "Hostile environment/script, resource, cleanup, and secret-boundary tests pass."}]
+}

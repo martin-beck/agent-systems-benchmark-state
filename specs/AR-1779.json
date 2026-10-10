@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1779.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "default-supported-install", "description": "asb tool install supported-id needs no manual source/version/kind input and deterministically chooses verified reuse, official prebuilt, or pinned source fallback."},
+    {"id": "usable-not-copied", "description": "A tool is registered active only after adapter-specific entrypoint smoke verification succeeds."},
+    {"id": "receipt-lifecycle", "description": "Status, repair, update, and remove expose exact acquisition/build state without hidden downloads on read-only commands and retain prior usable state on failure."},
+    {"id": "development-import-boundary", "description": "Local-file and fixture modes are explicit development/import paths and cannot be confused with a verified supported installation."},
+    {"id": "human-machine-contract", "description": "Human output explains acquisition/build outcome and next action while JSON/quiet/privacy contracts remain intact."}
+  ],
+  "definition_of_done": ["Fresh project installations and lifecycle operations qualify every supported tool fixture and representative official path.", "Independent review and exact-head/exact-main evidence pass."],
+  "inputs": [{"id": "prebuilt-acquirer", "description": "AR-1777 verified prebuilt resolver."}, {"id": "source-builder", "description": "AR-1778 project-local pinned source builder."}],
+  "outputs": [{"id": "usable-tool-command", "description": "Default public supported-ID installer with verified usable registration."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["manual-source-required-default", "false-install-success", "silent-tool-fallback", "read-only-network-effect", "credential-output", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "fresh-user", "description": "Fresh project supported-ID installs produce usable verified entries."}, {"id": "lifecycle", "description": "Status/repair/update/remove/idempotence/failure retention matrix passes."}]
+}

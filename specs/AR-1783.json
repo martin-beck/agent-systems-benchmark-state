@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1783.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "bundle-selection", "description": "Catalog selection references only verified asb workload bundle records and validates their complete compatibility state."},
+    {"id": "exact-execution-identity", "description": "Run/sweep and downstream evidence bind exact selected external workload identities and reject ambient/substituted/stale/revoked bundles."},
+    {"id": "external-workload-matrix", "description": "SWE-mini and every other cataloged external workload class are qualified through selection and bounded execution."}
+  ],
+  "definition_of_done": ["Fresh project workload install/select/run/sweep/report/compare evidence passes for each external workload class.", "Independent review and exact-head/exact-main evidence pass."],
+  "inputs": [{"id": "catalog-selection", "description": "AR-1763 generated selection."}, {"id": "run-integration", "description": "AR-1764 project execution integration."}, {"id": "workload-command", "description": "AR-1782 verified workload lifecycle."}],
+  "outputs": [{"id": "workload-execution", "description": "Exact verified external workload identity selection and execution integration."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["workload-as-tool", "ambient-workload-fallback", "identity-bypass", "license-bypass", "credential-output", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "environmental", "mechanical"],
+  "gates": [{"id": "identity", "description": "Selection and execution identity/substitution/revocation matrix passes."}, {"id": "external-workloads", "description": "Every cataloged external workload has install-to-execution evidence."}]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1782.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "dedicated-command", "description": "asb workload install/list/status/repair/update/remove is separate from asb tool and operates on workload bundle records."},
+    {"id": "default-primary-install", "description": "asb workload install supported-id downloads and prepares the official catalog-pinned source by default, including SWE-mini and all other cataloged external workloads."},
+    {"id": "verified-atomic-bundle", "description": "Identity/proof/license/size/archive/preparation/adapter validation completes before atomic project-local publication and receipt registration."},
+    {"id": "lifecycle-safety", "description": "Read-only operations are network-free; update/repair/rollback/offline/stale/revoked/incompatible paths preserve prior usable bundles and report distinct causes."}
+  ],
+  "definition_of_done": ["Every cataloged external workload class has deterministic install/lifecycle fixtures and SWE-mini has explicit coverage.", "Independent review and exact-head/exact-main evidence pass."],
+  "inputs": [{"id": "workload-catalog", "description": "AR-1781 official external workload source catalog."}],
+  "outputs": [{"id": "workload-command", "description": "Dedicated verified project-local external workload lifecycle command."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["workload-as-tool", "downloaded-installer-script", "root-install", "global-package-mutation", "arbitrary-url", "license-bypass", "credential-output", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "property-or-fuzz", "environmental", "mechanical"],
+  "gates": [{"id": "workload-lifecycle", "description": "Full install/list/status/repair/update/remove/offline matrix passes."}, {"id": "bundle-safety", "description": "Identity, proof, license, archive, preparation, atomicity, and hostile-input gates pass."}]
+}

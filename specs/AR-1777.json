@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1777.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "verified-selection", "description": "Only compatible catalog-pinned system or prebuilt artifacts can be reused/acquired and recorded."},
+    {"id": "bounded-retrieval", "description": "Official retrieval enforces source, size, timeout, digest, declared proof, archive, entrypoint, and license checks before publication."},
+    {"id": "atomic-project-install", "description": "Verified executable artifacts are atomically installed project-locally with a complete receipt and failed updates retain a usable prior installation."},
+    {"id": "safe-negative-matrix", "description": "Wrong platform, unavailable/offline source, mismatch, revoked proof, archive traversal, unsafe executable, and partial transfer fail closed distinctly."}
+  ],
+  "definition_of_done": ["Deterministic compatible-binary and official-prebuilt fixtures plus hostile negatives pass.", "Independent review and exact-head/exact-main evidence pass."],
+  "inputs": [{"id": "acquisition-catalog", "description": "AR-1776 official pinned source and verifier catalog."}],
+  "outputs": [{"id": "prebuilt-acquirer", "description": "Verified system/prebuilt executable-tool resolver/publisher."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["downloaded-installer-script", "package-manager-install", "root-install", "archive-traversal", "unsigned-artifact-acceptance", "credential-output", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "property-or-fuzz", "environmental", "mechanical"],
+  "gates": [{"id": "acquisition", "description": "Positive verified reuse/retrieval and hostile artifact matrix pass."}, {"id": "publication", "description": "Atomicity, prior-version retention, receipt, privacy, and project-root confinement pass."}]
+}

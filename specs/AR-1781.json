@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1781.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "external-workload-inventory", "description": "Every externally sourced workload ASB supports or advertises, including eligible SWE-mini, is cataloged or explicitly classified unavailable/restricted/unsupported."},
+    {"id": "official-identity", "description": "Every installable workload declares official primary source, immutable release/dataset identity, proof, license/terms, preparation closure, adapter, and compatibility."},
+    {"id": "separate-lifecycle", "description": "Workloads are modeled as bundles/data through asb workload, never as executable asb tool records."},
+    {"id": "safe-extension", "description": "Adding a workload requires catalog identity/provenance/license/compatibility validation and cannot introduce arbitrary URLs or moving source state."}
+  ],
+  "definition_of_done": ["Schema, catalog, fixtures, and workload-admission documentation pass.", "Independent review and exact-head hosted checks pass."],
+  "inputs": [{"id": "project-layout", "description": "AR-1760 project metadata/results/catalog layout."}],
+  "outputs": [{"id": "workload-catalog", "description": "Versioned official external workload acquisition/preparation catalog."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["workload-as-tool", "arbitrary-url", "floating-dataset", "license-bypass", "credential-output", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "catalog", "description": "External workload inventory, schema, primary-source, proof, and license rules validate."}, {"id": "negative", "description": "Restricted, unsupported, unproven, incompatible, and arbitrary sources fail distinctly."}]
+}
