@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:7e6fa063a23df433de428eeaecf6e9fcf0378a2e86238ee66cc7ecbe0013d435",
+    "evidence_ref": "quality/AR-1771-postmerge-receipt.json",
     "spec_ref": "specs/AR-1771.json",
     "spec_revision": 2,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1771.json",
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 297,
+  "task_revision": 298,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T12:24:54+00:00",
+  "updated_at": "2026-10-10T12:25:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -844,3 +844,7 @@ terminal ownership.
 
 - 2026-10-10T12:24:54+00:00: Recorded command exit 0; command argv SHA-256
   88c500b397c70891466cffdce9f27019cb3b28336a8cf31676497663eb32eb9c.
+
+- 2026-10-10T12:25:49+00:00: Accepted signed exact-base merge
+  3cd8ae24048d153a4928511b6b1e64a50213d5e0 with all ten exact-main hosted workflows
+  terminal-success.
