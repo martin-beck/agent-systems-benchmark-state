@@ -1090,7 +1090,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. |
-| Next action | PR #545 coverage repair is published at exact signed head 4b86c4a7a0993de2a5f93a061505c1d819d4a2df. New process-boundary output-routing coverage raises enforced local line coverage to 90.35&#37;; exact-head serialized workspace, fmt/clippy/rustdoc/release gates are green. Await fresh independent exact-head review and hosted CI; do not merge before both are green. |
+| Next action | Signed exact-base merge receipt accepted: protected main 3cd8ae24048d153a4928511b6b1e64a50213d5e0 has parents fd61b856570bf1d57e9dba4f8bee1da99b77189e and 4b86c4a7a0993de2a5f93a061505c1d819d4a2df, reviewed tree ef5ee164ac8753a30fd2b5b75c187a4e9ecb7620, verified signature and matching DCO. Await all exact-main hosted workflow results before release. |
 
 ### AR-1772 — Unified human step-progress reporter
 
