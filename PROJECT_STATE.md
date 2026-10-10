@@ -20,21 +20,21 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #544 | `feature/ar-1764-project-run-integration@9faa1e88fc0b` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(cli): bind benchmark runs to project catalogs |
+| #544 | `feature/ar-1764-project-run-integration@9faa1e88fc0b` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): bind benchmark runs to project catalogs |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38047577696 | `9faa1e88fc0b` | pull_request | Cross-repository development broker qualification | queued:- |
-| 38047577686 | `9faa1e88fc0b` | pull_request | Credential-free benchmark path | queued:- |
-| 38047577683 | `9faa1e88fc0b` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 38047577681 | `9faa1e88fc0b` | pull_request | Huawei MIT source headers | queued:- |
-| 38047577673 | `9faa1e88fc0b` | pull_request | Hosted portability and native qualification | queued:- |
-| 38047577659 | `9faa1e88fc0b` | pull_request | Repository quality | queued:- |
-| 38047577658 | `9faa1e88fc0b` | pull_request | Fault assurance | queued:- |
+| 38047577696 | `9faa1e88fc0b` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38047577686 | `9faa1e88fc0b` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38047577683 | `9faa1e88fc0b` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38047577681 | `9faa1e88fc0b` | pull_request | Huawei MIT source headers | completed:success |
+| 38047577673 | `9faa1e88fc0b` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38047577659 | `9faa1e88fc0b` | pull_request | Repository quality | pending:- |
+| 38047577658 | `9faa1e88fc0b` | pull_request | Fault assurance | in_progress:- |
 | 38047577654 | `9faa1e88fc0b` | pull_request | Rust verification | pending:- |
-| 38047577602 | `9faa1e88fc0b` | pull_request | Formal assurance | queued:- |
-| 38047577595 | `9faa1e88fc0b` | pull_request | Emulated aarch64 portability | queued:- |
-| 38047577591 | `9faa1e88fc0b` | pull_request | Portable protected-main provenance | queued:- |
+| 38047577602 | `9faa1e88fc0b` | pull_request | Formal assurance | in_progress:- |
+| 38047577595 | `9faa1e88fc0b` | pull_request | Emulated aarch64 portability | pending:- |
+| 38047577591 | `9faa1e88fc0b` | pull_request | Portable protected-main provenance | completed:success |
 | 38047137760 | `99a3ed6b6e2e` | pull_request | Agent Workflow Quality shadow | completed:success |
