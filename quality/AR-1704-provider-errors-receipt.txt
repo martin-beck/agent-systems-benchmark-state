@@ -1,0 +1,40 @@
+AR-1704 typed provider failures, model admission, and trusted curl receipt
+
+Product integration:
+- Pull request: martin-beck/agent-systems-benchmark#548
+- Reviewed topic: b2fefe2f9a425ac1be2685160caf68749fa88bdf
+- Reviewed tree: d42c1ad869f6a0de00fe32267acdfb57a4c7b10e
+- Base: 4dfc1e07f424e8b20d2ea35155aace2af7716c12
+- Signed protected-main merge: 2c6f3083504c3b2636f9e6da044a9a6f626f511c
+- Merge parents: 4dfc1e07f424e8b20d2ea35155aace2af7716c12 and
+  b2fefe2f9a425ac1be2685160caf68749fa88bdf
+- Merge tree: d42c1ad869f6a0de00fe32267acdfb57a4c7b10e
+- The reviewed topic and merge were SSH-signed and carry matching DCO trailers.
+
+Acceptance evidence:
+- Bounded trusted-curl discovery never uses ambient PATH; absent candidates and
+  an executable PATH-decoy fixture return typed trusted_tool_unavailable.
+- Public JSON and human error rendering retain trusted_tool_unavailable and do
+  not offer replay or mock fallback.
+- Focused discovery, public-output, diagnostic-contract, and workflow
+  provenance tests passed. Formatter, strict workspace Clippy, and the locked
+  serialized workspace suite passed.
+- Independent technical review approved exact head b2fefe2f, and all 15
+  exact-head PR checks were successful.
+
+Exact post-merge hosted runs, all successful on 2c6f3083:
+- Huawei MIT source headers: 38072847528
+- Hosted portability and native qualification: 38072847584
+- Portable protected-main provenance: 38072847507
+- Formal assurance: 38072847495
+- Fault assurance: 38072847480
+- Rust verification: 38072847485
+- Repository quality: 38072847514
+- Credential-free benchmark path: 38072847521
+- Emulated aarch64 portability: 38072847510
+- Cross-repository development broker qualification: 38072847504
+
+Development boundary:
+No provider credential or live-provider key was required for acceptance.
+Explicit live failures remain typed and fail closed; this receipt contains no
+credentials, private paths, prompts, transcripts, or raw provider material.
