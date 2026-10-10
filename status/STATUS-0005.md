@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1657](../tasks/AR-1657.md): Agent/provider/model compatibility matrix | ar1657-compatibility-matrix | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. | Build the deterministic compatibility matrix runner after provider refresh and comparison seams are available. |
+| P0 | [AR-1657](../tasks/AR-1657.md): Agent/provider/model compatibility matrix | ar1657-compatibility-matrix | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. | Implement the missing deterministic opencode/opendesk provider-model matrix runner with typed unsupported rows, persisted default/override restart checks, and offline replay parity; then qualify and review exact head. |
 
 ### Open (1)
 
