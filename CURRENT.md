@@ -7,6 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1764](tasks/AR-1764-project-run-integration.md): Integrate project tools and catalogs with ASB runs | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. | Wire project inventory and active catalogs into benchmark setup/run/compare/report commands. | ar1764-project-run-terra |
 | P0 | [AR-1771](tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | Preserved uncommitted AR-1771 patch touches crates/asb-cli/src/lib.rs, human.rs, tui.rs and the additive output config/schema seam. AR-1763 now owns concurrent edits in lib.rs/human.rs/config; do not commit or edit until its exact main head lands, then rebase and reconcile all seams before resuming gates. | ar1771-output-contract-terra |
 
 ## Open
@@ -14,7 +15,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
-| P0 | [AR-1764](tasks/AR-1764-project-run-integration.md): Integrate project tools and catalogs with ASB runs | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. | Wire project inventory and active catalogs into benchmark setup/run/compare/report commands. | - |
 
 ## Blocked
 

@@ -984,11 +984,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1764-project-run-terra |
 | Parent | None |
 | Children | None |
 | Summary | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. |
@@ -2096,7 +2096,7 @@ flowchart LR
         AR_1761["AR-1761 - Done"]:::status_done
         AR_1762["AR-1762 - Done"]:::status_done
         AR_1763["AR-1763 - Done"]:::status_done
-        AR_1764["AR-1764 - Open"]:::status_open
+        AR_1764["AR-1764 - In progress"]:::status_in_progress
         AR_1765["AR-1765 - Planned"]:::status_planned
         AR_1766["AR-1766 - Done"]:::status_done
         AR_1767["AR-1767 - Done"]:::status_done
@@ -4131,4 +4131,3 @@ flowchart LR
 | [AR-0802](../tasks/AR-0802-executable-guides.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0803](../tasks/AR-0803-frontend-control-api.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md) | [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
-| [AR-0805](../tasks/AR-0805-tui-run-control.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
