@@ -19,19 +19,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:438a6c1ffaf8630b55fd590bfaefd9b99d832fb83e3d7b958a4bf961661b4457",
+    "evidence_ref": "quality/AR-1763-postmerge-receipt.json",
     "spec_ref": "specs/AR-1763.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1763.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 188,
+  "task_revision": 189,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T10:39:06+00:00",
+  "updated_at": "2026-10-10T10:39:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
@@ -550,3 +550,7 @@ secret store or require production signatures in development mode.
 
 - 2026-10-10T10:39:06+00:00: Recorded command exit 0; command argv SHA-256
   36bf4b40977482ab9b8663679e306363fa6aee6e848297b168ceaeedaf2a96d5.
+
+- 2026-10-10T10:39:18+00:00: PR #543 exact reviewed head 2e6a5d949e177599d6e78fec9488ad5e71cbe703
+  merged as signed DCO two-parent main commit 5e08ddadff5a716bcce844ed8ed5e1bc1868d02f; reviewed
+  tree, protected-main policy, and all exact-main workflows passed.
