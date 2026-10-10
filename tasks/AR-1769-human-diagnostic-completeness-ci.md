@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "hosted",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:f33b032fc70c5372e5e6a8c4bc08f9777b6751cdb8e7e112ddfa593fe549c407",
+    "evidence_ref": "quality/AR-1769-postmerge-receipt.json",
     "spec_ref": "specs/AR-1769.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1769.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 486,
+  "task_revision": 487,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-10T09:28:25+00:00",
+  "updated_at": "2026-10-10T09:28:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -1286,3 +1286,7 @@ timeouts/cancellation, partial results, and warning-only development behavior.
 
 - 2026-10-10T09:28:25+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-10-10T09:28:51+00:00: Accepted reviewed head 971a3a9afea18e6287541996699bab52e82ffafa after
+  independent review, all required PR checks, signed merge 772bc46537b0574008635ebfc27d6b147c12c805,
+  protected-main policy, and all required post-merge workflows passed.
