@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1771-human-status-and-quiet-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-10T13:52:33+00:00",
+  "claim_expires": "2026-10-10T14:02:36+00:00",
   "depends_on": [
     "AR-1768"
   ],
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 254,
+  "task_revision": 255,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T12:02:25+00:00",
+  "updated_at": "2026-10-10T12:02:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -716,3 +716,5 @@ terminal ownership.
 
 - 2026-10-10T12:02:25+00:00: Recorded command exit 0; command argv SHA-256
   53cba0ce930dad6e6d096ae5dad9d3b9e6c00ed303905e4162915edf87bd9b4d.
+
+- 2026-10-10T12:02:36+00:00: Heartbeat by ar1771-output-contract-terra.
