@@ -238,7 +238,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. |
-| Next action | Replace host-only curl discovery coverage with an injectable bounded discovery/transport seam proving absent tool, ambient PATH decoy rejection, typed public human/JSON diagnostic, and no fallback; then rerun focused/full gates before publication. |
+| Next action | Run diagnostic-contract and full serialized workspace gates for the repaired bounded discovery and public JSON/human typed-error coverage; update any reviewed diagnostic identity required by the checker before a signed DCO commit and fresh independent review. |
 
 ### AR-1709 — Development live provider execution contract and credential injection
 

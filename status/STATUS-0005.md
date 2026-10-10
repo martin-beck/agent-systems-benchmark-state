@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1704](../tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | ar1704-provider-errors | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Replace host-only curl discovery coverage with an injectable bounded discovery/transport seam proving absent tool, ambient PATH decoy rejection, typed public human/JSON diagnostic, and no fallback; then rerun focused/full gates before publication. |
+| P0 | [AR-1704](../tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | ar1704-provider-errors | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Run diagnostic-contract and full serialized workspace gates for the repaired bounded discovery and public JSON/human typed-error coverage; update any reviewed diagnostic identity required by the checker before a signed DCO commit and fresh independent review. |
 
 ### Open (1)
 
