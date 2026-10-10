@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
 | #544 | `feature/ar-1764-project-run-integration@9faa1e88fc0b` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): bind benchmark runs to project catalogs |
-| #545 | `feature/ar-1771-human-status-and-quiet-contract@91552706358f` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | feat(cli): define human status and quiet contract |
+| #545 | `feature/ar-1771-human-status-and-quiet-contract@91552706358f` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define human status and quiet contract |
 
 ## Recent workflows
 
@@ -31,11 +31,11 @@ Generated from local Git and GitHub. Do not edit.
 | 38047827493 | `91552706358f` | pull_request | Rust verification | in_progress:- |
 | 38047827481 | `91552706358f` | pull_request | Huawei MIT source headers | completed:success |
 | 38047827480 | `91552706358f` | pull_request | Cross-repository development broker qualification | in_progress:- |
-| 38047827433 | `91552706358f` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38047827433 | `91552706358f` | pull_request | Hosted portability and native qualification | completed:success |
 | 38047827420 | `91552706358f` | pull_request | Portable protected-main provenance | completed:success |
 | 38047827413 | `91552706358f` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38047827410 | `91552706358f` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38047827394 | `91552706358f` | pull_request | Repository quality | in_progress:- |
 | 38047827391 | `91552706358f` | pull_request | Formal assurance | in_progress:- |
-| 38047827388 | `91552706358f` | pull_request | Fault assurance | in_progress:- |
+| 38047827388 | `91552706358f` | pull_request | Fault assurance | completed:success |
 | 38047577696 | `9faa1e88fc0b` | pull_request | Cross-repository development broker qualification | completed:success |
