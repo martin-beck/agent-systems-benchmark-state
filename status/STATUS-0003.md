@@ -1006,7 +1006,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. |
-| Next action | Run the disposable fresh-user JSON-silence and negative-recovery qualification on rebased signed head 4326cf11, then complete full gates, PR, independent review, exact-head CI, merge, and post-merge acceptance. |
+| Next action | Open a pull request for signed head ac669d1c, obtain independent exact-head review, run required hosted CI, construct the signed merge receipt, then complete post-merge acceptance. |
 
 ### AR-1766 — Fine-grained human diagnostic contract
 

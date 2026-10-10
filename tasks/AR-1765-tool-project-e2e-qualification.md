@@ -11,7 +11,7 @@
     "AR-1764"
   ],
   "id": "AR-1765",
-  "next_action": "Run the disposable fresh-user JSON-silence and negative-recovery qualification on rebased signed head 4326cf11, then complete full gates, PR, independent review, exact-head CI, merge, and post-merge acceptance.",
+  "next_action": "Open a pull request for signed head ac669d1c, obtain independent exact-head review, run required hosted CI, construct the signed merge receipt, then complete post-merge acceptance.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
   "observed_head": "ac669d1ca1fd5324f505ac24feec5e4878a625fa",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:20:51+00:00",
+  "updated_at": "2026-10-10T12:20:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -129,3 +129,8 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
   b36d15881eb65027724bc584f1b04db05666cd79896b100806e528307c04b65c.
 
 - 2026-10-10T12:20:51+00:00: Checkpointed source commit ac669d1ca1fd5324f505ac24feec5e4878a625fa.
+
+- 2026-10-10T12:20:54+00:00: Fresh qualification passed: cli_e2e JSON/quiet stream contract 6/6;
+  diagnostic public-command recovery journey 1/1; five-kind idempotent install 1/1; project-bound
+  run/report/compare plus documented local-mock ordering 1/1. Full locked fmt, Clippy, workspace
+  tests, rustdoc, and release build passed on ac669d1c.
