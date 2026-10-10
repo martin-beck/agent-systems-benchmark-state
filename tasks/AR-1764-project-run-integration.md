@@ -18,19 +18,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:074af99e523118e813d6269a2495cf5a70181a85fff3509e7bdb20d5f271f55e",
+    "evidence_ref": "quality/AR-1764-project-run-receipt.txt",
     "spec_ref": "specs/AR-1764.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1764.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Integrate project tools and catalogs with ASB runs",
-  "updated_at": "2026-10-10T11:38:50+00:00",
+  "updated_at": "2026-10-10T11:39:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1764-project-run-integration"
 }
 ---
@@ -388,3 +388,7 @@ output contracts.
 
 - 2026-10-10T11:38:50+00:00: Recorded command exit 0; command argv SHA-256
   3354013f6f8a28761a45ad1f4c1abf39371a7ed01c7a7bc37ea39083aa87ae5d.
+
+- 2026-10-10T11:39:19+00:00: Project workflow, drift regression, diagnostic closure, locked
+  workspace, rustdoc, release build, reviewed merge, and exact-main hosted qualification receipts
+  are complete.
