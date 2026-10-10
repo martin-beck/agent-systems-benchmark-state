@@ -3,7 +3,9 @@
   "branch": "feature/ar-1771-human-status-and-quiet-contract",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1768"],
+  "depends_on": [
+    "AR-1768"
+  ],
   "id": "AR-1771",
   "next_action": "After AR-1768 is done, define the closed human status, output-router, level, quiet, stream, and compatibility contract for every ASB command.",
   "observed_branch": "",
@@ -13,14 +15,21 @@
   "plan": "../plans/AR-1771-human-status-and-quiet-contract.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1771.json", "spec_revision": 2, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1771.json",
+    "spec_revision": 2,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1771.json",
   "spec_revision": 2,
-  "status": "planned",
+  "status": "open",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-09T21:29:29+00:00",
+  "updated_at": "2026-10-10T09:29:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -66,3 +75,6 @@ configured human writers; stdout retains the existing versioned JSON contract
 exactly. `-q --json` is valid and equivalent for operational output. Preserve
 existing exit meanings, raw protocol commands, interactive prompts, and TUI
 terminal ownership.
+
+- 2026-10-10T09:29:30+00:00: AR-1768 is done with exact-head review and hosted evidence; promote
+  output contract in parallel with catalog work.
