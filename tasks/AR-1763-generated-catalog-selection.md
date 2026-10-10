@@ -9,7 +9,7 @@
     "AR-1769"
   ],
   "id": "AR-1763",
-  "next_action": "After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory.",
+  "next_action": "Implement deterministic project catalog generation, list/show/select, provenance and compatibility/digest/secret-boundary tests in the isolated worktree; then obtain independent exact-head review.",
   "observed_branch": "feature/ar-1763-generated-catalog-selection",
   "observed_dirty": 0,
   "observed_head": "772bc46537b0574008635ebfc27d6b147c12c805",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T09:30:32+00:00",
+  "updated_at": "2026-10-10T09:31:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
@@ -57,3 +57,6 @@ secret store or require production signatures in development mode.
 
 - 2026-10-10T09:30:27+00:00: Recorded command exit 0; command argv SHA-256
   29599af8132dec402789720e6015a4d85ea47fd36537254dde889df99cacf1a3.
+
+- 2026-10-10T09:31:35+00:00: AR-1769 is accepted/done; claimed AR-1763 and created isolated worktree
+  at protected main 772bc465.

@@ -978,7 +978,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. |
-| Next action | After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory. |
+| Next action | Implement deterministic project catalog generation, list/show/select, provenance and compatibility/digest/secret-boundary tests in the isolated worktree; then obtain independent exact-head review. |
 
 ### AR-1764 — Integrate project tools and catalogs with ASB runs
 

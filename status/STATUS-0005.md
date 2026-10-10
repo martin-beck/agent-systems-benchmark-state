@@ -71,7 +71,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1763](../tasks/AR-1763-generated-catalog-selection.md): Generate and select ASB project catalogs | codex-asb-ar1763-catalog-terra | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. | After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory. |
+| P0 | [AR-1763](../tasks/AR-1763-generated-catalog-selection.md): Generate and select ASB project catalogs | codex-asb-ar1763-catalog-terra | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. | Implement deterministic project catalog generation, list/show/select, provenance and compatibility/digest/secret-boundary tests in the isolated worktree; then obtain independent exact-head review. |
 | P0 | [AR-1771](../tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | ar1771-output-contract-terra | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | Implement the closed global quiet and human output contract in the declared worktree; preserve project-config compatibility while coordinating any shared schema overlap with AR-1763. |
 
 ### Open (1)
