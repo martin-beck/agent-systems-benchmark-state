@@ -9,8 +9,8 @@
   "id": "AR-1769",
   "next_action": "Obtain fresh independent technical review of the complete signed diff through exact head 8393511e269b6b588e22ba76cd15aa1bc84a3218; do not publish until it passes.",
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
-  "observed_dirty": 2,
-  "observed_head": "32c3a7e3f4e857816328ac8afefa69286f8f3284",
+  "observed_dirty": 0,
+  "observed_head": "aeb9f10a471d63d04ae3966d282e2a0251c09789",
   "owner": "codex-ar1769-matrix-repair-terra",
   "plan": "../plans/AR-1769-human-diagnostic-completeness-ci.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 285,
+  "task_revision": 286,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-09T23:59:56+00:00",
+  "updated_at": "2026-10-10T00:03:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
