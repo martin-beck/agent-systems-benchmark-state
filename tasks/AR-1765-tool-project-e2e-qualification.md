@@ -11,7 +11,7 @@
     "AR-1764"
   ],
   "id": "AR-1765",
-  "next_action": "Await independent exact-head review and required hosted CI for PR #546 at ac669d1c; after both are green, perform the signed protected-main merge and verify the post-merge receipt.",
+  "next_action": "Commit the repaired exact source-location diagnostic catalog and executable disposable five-tool receipt; then run full local gates, push a fresh signed PR #546 head, and obtain a new independent exact-head review and hosted CI. Do not merge ac669d1c.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 4,
   "observed_head": "ac669d1ca1fd5324f505ac24feec5e4878a625fa",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:33:20+00:00",
+  "updated_at": "2026-10-10T12:33:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -212,3 +212,8 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 - 2026-10-10T12:30:33+00:00: Heartbeat by ar1765-tool-project-e2e-terra.
 
 - 2026-10-10T12:33:20+00:00: Heartbeat by ar1765-tool-project-e2e-terra.
+
+- 2026-10-10T12:33:29+00:00: Focused evidence: project_qualification covers project init, five
+  fixture kinds, configured and deterministic PATH discovery, catalog selection, JSON stderr
+  silence, negative missing-project recovery, and project-bound local/mock results; diagnostic
+  closure contract passes after precise reviewed catalog coordinate remap.

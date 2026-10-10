@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Await independent exact-head review and required hosted CI for PR #546 at ac669d1c; after both are green, perform the signed protected-main merge and verify the post-merge receipt. | ar1765-tool-project-e2e-terra |
+| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Commit the repaired exact source-location diagnostic catalog and executable disposable five-tool receipt; then run full local gates, push a fresh signed PR #546 head, and obtain a new independent exact-head review and hosted CI. Do not merge ac669d1c. | ar1765-tool-project-e2e-terra |
 
 ## Open
 
