@@ -118,11 +118,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1764](../tasks/AR-1764-project-run-integration.md): Integrate project tools and catalogs with ASB runs | ar1764-project-run-terra | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. | Wait for every post-merge workflow on exact main merge fd61b856570bf1d57e9dba4f8bee1da99b77189e to reach successful terminal status; then record receipt and accept/release. |
 | P0 | [AR-1771](../tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | ar1771-output-contract-terra | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | PR #545 is at exact head 5978aab04533920da1090dc27cded441a7699b59. Serialized workspace and fmt/clippy/rustdoc/release gates are green; await fresh independent exact-head review and hosted CI. Non-serialized workspace control-state ownership failures were classified as shared-root contention and pass when isolated. |
 
 ### Open (1)
@@ -344,7 +343,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (546)
+### Done (547)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -556,3 +555,5 @@
 | P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Qualify the central orchestration path with deterministic local/mock and strict-replay authority; deployment-owned live authority is optional future hardening, not a development prerequisite. | Development path is unblocked: promote and claim this AR, qualify the existing central orchestrator with deterministic local/mock and strict-replay authority, and run exact-head gates. A deployment-owned authenticated source is optional future production hardening and must not block development qualification. |
 | P0 | [AR-1524](../tasks/AR-1524.md): Repair live-dispatch dependency graph | Unclaimed | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. |
 | P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | Unclaimed | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | No development action remains. Preserve the exact-main first-customer local/mock and strict-replay receipt; live-provider deployment remains optional future hardening. |
+| P0 | [AR-1527](../tasks/AR-1527.md): Normalize AR-1307/1308 development seed policy | Unclaimed | Remove reviewed seed and digest prerequisites from the AR-1307/1308 development path while preserving separate formal and release evidence gates. | Promote after state review; audit AR-1307/1308 and every active dependent for development-only seed/digest prerequisites, then normalize their task and plan language without changing formal gates. |
+| P0 | [AR-1528](../tasks/AR-1528.md): Rerun AR-1307/1308 development fixtures | Unclaimed | Run the repaired AR-1307/1308 unsigned-development fixture path and preserve separate formal qualification blockers. | No further action: development fixture rerun is complete; retain its non-qualifying evidence while formal work proceeds separately. |

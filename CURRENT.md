@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1764](tasks/AR-1764-project-run-integration.md): Integrate project tools and catalogs with ASB runs | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. | Wait for every post-merge workflow on exact main merge fd61b856570bf1d57e9dba4f8bee1da99b77189e to reach successful terminal status; then record receipt and accept/release. | ar1764-project-run-terra |
 | P0 | [AR-1771](tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | PR #545 is at exact head 5978aab04533920da1090dc27cded441a7699b59. Serialized workspace and fmt/clippy/rustdoc/release gates are green; await fresh independent exact-head review and hosted CI. Non-serialized workspace control-state ownership failures were classified as shared-root contention and pass when isolated. | ar1771-output-contract-terra |
 
 ## Open

@@ -984,11 +984,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1764-project-run-terra |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. |
@@ -2096,7 +2096,7 @@ flowchart LR
         AR_1761["AR-1761 - Done"]:::status_done
         AR_1762["AR-1762 - Done"]:::status_done
         AR_1763["AR-1763 - Done"]:::status_done
-        AR_1764["AR-1764 - In progress"]:::status_in_progress
+        AR_1764["AR-1764 - Done"]:::status_done
         AR_1765["AR-1765 - Planned"]:::status_planned
         AR_1766["AR-1766 - Done"]:::status_done
         AR_1767["AR-1767 - Done"]:::status_done

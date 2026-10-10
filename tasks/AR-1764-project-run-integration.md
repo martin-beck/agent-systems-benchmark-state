@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1764-project-run-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-10T13:23:32+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1761",
     "AR-1763"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1764-project-run-integration",
   "observed_dirty": 0,
   "observed_head": "9faa1e88fc0b1bc8fb8c13ddf98c2fc642de84ec",
-  "owner": "ar1764-project-run-terra",
+  "owner": "",
   "plan": "../plans/AR-1764-project-run-integration.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1764.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Integrate project tools and catalogs with ASB runs",
-  "updated_at": "2026-10-10T11:39:19+00:00",
+  "updated_at": "2026-10-10T11:39:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1764-project-run-integration"
 }
 ---
@@ -392,3 +392,6 @@ output contracts.
 - 2026-10-10T11:39:19+00:00: Project workflow, drift regression, diagnostic closure, locked
   workspace, rustdoc, release build, reviewed merge, and exact-main hosted qualification receipts
   are complete.
+
+- 2026-10-10T11:39:26+00:00: AR-1764 released: reviewed PR #544 merged at
+  fd61b856570bf1d57e9dba4f8bee1da99b77189e with all exact-head and post-merge gates green.
