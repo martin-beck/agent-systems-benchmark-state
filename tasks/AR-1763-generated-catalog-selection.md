@@ -10,9 +10,9 @@
   ],
   "id": "AR-1763",
   "next_action": "After AR-1769 lands the required diagnostic gate, implement catalog generation and selection on top of the installer/discovery inventory.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1763-generated-catalog-selection",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "772bc46537b0574008635ebfc27d6b147c12c805",
   "owner": "codex-asb-ar1763-catalog-terra",
   "plan": "../plans/AR-1763-generated-catalog-selection.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T09:30:27+00:00",
+  "updated_at": "2026-10-10T09:30:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
