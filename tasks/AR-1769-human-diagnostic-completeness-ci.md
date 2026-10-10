@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "checkpoint_commit": "c9ef9b193cd7c48c440fff2cf32918eb7e3fed57",
-  "claim_expires": "2026-10-10T11:02:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1768"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "observed_dirty": 0,
   "observed_head": "971a3a9afea18e6287541996699bab52e82ffafa",
-  "owner": "codex-ar1769-macro-statement-repair-terra",
+  "owner": "",
   "plan": "../plans/AR-1769-human-diagnostic-completeness-ci.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1769.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 487,
+  "task_revision": 488,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-10T09:28:51+00:00",
+  "updated_at": "2026-10-10T09:28:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -1290,3 +1290,6 @@ timeouts/cancellation, partial results, and warning-only development behavior.
 - 2026-10-10T09:28:51+00:00: Accepted reviewed head 971a3a9afea18e6287541996699bab52e82ffafa after
   independent review, all required PR checks, signed merge 772bc46537b0574008635ebfc27d6b147c12c805,
   protected-main policy, and all required post-merge workflows passed.
+
+- 2026-10-10T09:28:54+00:00: AR-1769 merged and fully verified at protected main
+  772bc46537b0574008635ebfc27d6b147c12c805; receipt quality/AR-1769-postmerge-receipt.json.
