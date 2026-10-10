@@ -30,10 +30,10 @@ Generated from local Git and GitHub. Do not edit.
 | 38069874511 | `4dfc1e07f424` | push | Formal assurance | in_progress:- |
 | 38069874499 | `4dfc1e07f424` | push | Rust verification | in_progress:- |
 | 38069874495 | `4dfc1e07f424` | push | Hosted portability and native qualification | completed:success |
-| 38069874491 | `4dfc1e07f424` | push | Credential-free benchmark path | in_progress:- |
+| 38069874491 | `4dfc1e07f424` | push | Credential-free benchmark path | completed:success |
 | 38069874485 | `4dfc1e07f424` | push | Repository quality | in_progress:- |
-| 38069874479 | `4dfc1e07f424` | push | Fault assurance | in_progress:- |
+| 38069874479 | `4dfc1e07f424` | push | Fault assurance | completed:success |
 | 38069874473 | `4dfc1e07f424` | push | Huawei MIT source headers | completed:success |
-| 38069874463 | `4dfc1e07f424` | push | Cross-repository development broker qualification | in_progress:- |
+| 38069874463 | `4dfc1e07f424` | push | Cross-repository development broker qualification | completed:success |
 | 38068903947 | `fd56a4c7762a` | pull_request | Huawei MIT source headers | completed:success |
 | 38068903943 | `fd56a4c7762a` | pull_request | Hosted portability and native qualification | completed:success |
