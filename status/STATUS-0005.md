@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1709](../tasks/AR-1709.md): Development live provider execution contract and credential injection | ar1709-live-provider | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. | PR #481 merged at ASB b21fa8c adds unavailable-model and malformed-credential deterministic negatives; run live selected/all success and final exact-head qualification against current main. |
+| P0 | [AR-1709](../tasks/AR-1709.md): Development live provider execution contract and credential injection | ar1709-live-provider | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. | Add deterministic runtime-factory live-provider error injection coverage through the public CLI output router in human-default and --json modes, asserting typed no-fallback results without a host credential; then run focused/full gates before a signed DCO commit. |
 
 ### Open (1)
 
