@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1784.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "complete-dependency-map", "description": "Every public command, adapter, monitor, runtime path, workload adapter, and build recipe maps all external executable/library/host dependencies to typed registry records."},
+    {"id": "initial-id-set", "description": "The registry covers aider, codex, gemini, goose, mini-swe, opencode, opendesk, openhands, openjiuwen, qwen-code, development-only cli2key, perf, and bpftool, with provider APIs and procfs/cgroup correctly classified."},
+    {"id": "host-honesty", "description": "Linux, cgroup v2, user systemd, Bubblewrap, and kernel permission/BTF/PMU constraints are explicit host capabilities with honest remediation, never false downloadable tools."},
+    {"id": "fail-fast", "description": "ASB preflight reports missing supported IDs with exact install commands and host-only blockers before a command reaches a missing-tool runtime failure."},
+    {"id": "future-completeness", "description": "Mechanical CI rejects a new tool/workload/adapter/executable invocation without complete acquisition, dependency, preflight, and test metadata."}
+  ],
+  "definition_of_done": ["Complete dependency inventory and positive/negative preflight matrix pass.", "Independent review and exact-head/exact-main qualification pass."],
+  "inputs": [{"id": "tool-catalog", "description": "AR-1776 official executable-tool acquisition catalog."}],
+  "outputs": [{"id": "dependency-registry", "description": "Generated typed command/tool/workload/host dependency mapping and preflight."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["undeclared-executable", "host-capability-as-download", "ambient-path-trust", "missing-tool-late-failure", "credential-output", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "coverage", "description": "Generated inventory and controlled defects reject missing dependency declarations."}, {"id": "preflight", "description": "All initial IDs and host-only conditions have precise readiness/remediation evidence."}]
+}

@@ -3,7 +3,7 @@
   "branch": "feature/ar-1779-default-usable-tool-install-command",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1777", "AR-1778"],
+  "depends_on": ["AR-1777", "AR-1778", "AR-1784"],
   "id": "AR-1779",
   "next_action": "Make asb tool install supported-id resolve, acquire/build, validate, and register a usable project-local executable tool by default.",
   "observed_branch": "",

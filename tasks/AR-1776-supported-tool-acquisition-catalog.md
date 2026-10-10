@@ -13,12 +13,12 @@
   "plan": "../plans/AR-1776-supported-tool-acquisition-catalog.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1776.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1776.json", "spec_revision": 2, "status": "pending"},
   "spec_ref": "specs/AR-1776.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "status": "planned",
   "summary": "Define pinned official acquisition and build recipes for every ASB-supported executable tool.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Supported-tool acquisition catalog",
   "updated_at": "2026-10-10T09:49:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1776-supported-tool-acquisition-catalog"
@@ -42,3 +42,13 @@ records that reuse. Unsupported targets, unavailable official artifacts, missing
 verification material, incompatible licenses, and unavailable build recipes are
 typed actionable outcomes, not a reason to invoke arbitrary package managers or
 shell installers. Keep credentials out of records.
+
+The initial catalog inventory must cover the supported executable-agent IDs
+`aider`, `codex`, `gemini`, `goose`, `mini-swe`, `opencode`, `opendesk`,
+`openhands`, `openjiuwen`, and `qwen-code`; the development-only `cli2key`
+bridge/sidecar when enabled; and optional monitoring executables `perf` and
+`bpftool`. It must distinguish provider APIs (OpenAI, OpenRouter, Ollama) from
+installable executables. Runtime host capabilities such as Linux, cgroup v2,
+user systemd delegation, and Bubblewrap are declared by the companion command
+dependency/preflight catalog rather than falsely represented as downloadable
+tools.
