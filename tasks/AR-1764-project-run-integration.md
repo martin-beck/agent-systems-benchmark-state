@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Integrate project tools and catalogs with ASB runs",
-  "updated_at": "2026-10-10T10:59:06+00:00",
+  "updated_at": "2026-10-10T10:59:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1764-project-run-integration"
 }
 ---
@@ -130,3 +130,6 @@ output contracts.
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
 
 - 2026-10-10T10:58:20+00:00: Heartbeat by ar1764-project-run-terra.
+
+- 2026-10-10T10:59:10+00:00: Recorded command exit 101; command argv SHA-256
+  7109951d44fa989265b6b6481cadfc8b40676ae39f4e04b8e1126fe99b431b01.
