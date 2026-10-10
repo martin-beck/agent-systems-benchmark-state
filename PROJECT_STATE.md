@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38069874540 | `4dfc1e07f424` | push | Emulated aarch64 portability | in_progress:- |
+| 38069874540 | `4dfc1e07f424` | push | Emulated aarch64 portability | completed:success |
 | 38069874531 | `4dfc1e07f424` | push | Portable protected-main provenance | completed:success |
 | 38069874511 | `4dfc1e07f424` | push | Formal assurance | completed:success |
 | 38069874499 | `4dfc1e07f424` | push | Rust verification | in_progress:- |
