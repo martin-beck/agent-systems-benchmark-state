@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T15:41:04+00:00",
+  "updated_at": "2026-10-10T15:41:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -389,3 +389,6 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
   independent technical review receipt plus all exact-head CI; a GitHub reviews-API approval is not
   required. All 15 PR checks are terminal-success on af6c1bcb; proceeding only through documented
   signed two-parent exact-target-ref integration.
+
+- 2026-10-10T15:41:18+00:00: Recorded command exit 0; command argv SHA-256
+  c9ccd5cdfc265f919e793abb46360d20e48babbd3f0a3b2091b7f245b35c4429.
