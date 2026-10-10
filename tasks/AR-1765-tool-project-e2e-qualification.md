@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:56:00+00:00",
+  "updated_at": "2026-10-10T12:56:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -375,3 +375,6 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
   /repos/martin-beck/agent-systems-benchmark/pulls/546/reviews returned [] and gh pr view
   reviewDecision is empty, despite a concurrent state note. Exact-head CI remains 15/15 green; merge
   prohibited pending externally visible independent approval.
+
+- 2026-10-10T12:56:23+00:00: Recorded command exit 0; command argv SHA-256
+  c537af7a89a71da2ddadc7d6dc55e10cfeafd2dc26faa148c4110a30bedc5eda.
