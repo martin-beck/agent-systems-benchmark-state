@@ -81,13 +81,14 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1763-generated-catalog-selection` | `feature/ar-1763-generated-catalog-selection` | `2e6a5d949e17` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-ar-1764-merge-base` | `DETACHED` | `5e08ddadff5a` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1764-project-run-integration` | `feature/ar-1764-project-run-integration` | `9faa1e88fc0b` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1765-tool-project-e2e-qualification` | `feature/ar-1765-tool-project-e2e-qualification` | `fd61b856570b` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1765-tool-project-e2e-qualification` | `feature/ar-1765-tool-project-e2e-qualification` | `fd61b856570b` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract` | `feature/ar-1766-fine-grained-human-diagnostic-contract` | `b8ae2dc60a71` | 0 | behind 64, ahead 0 |
 | `agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice` | `feature/ar-1767-safe-directory-preparation-and-notice` | `f34830bb75ce` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics` | `feature/ar-1768-exhaustive-actionable-human-diagnostics` | `cd46a00c276b` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci` | `feature/ar-1769-human-diagnostic-completeness-ci` | `971a3a9afea1` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening` | `feature/ar-1770-descriptor-safe-directory-race-hardening` | `6278fcd6720f` | 0 | behind 50, ahead 0 |
-| `agent-systems-benchmark-ar-1771-human-status-and-quiet-contract` | `feature/ar-1771-human-status-and-quiet-contract` | `c8992682a8ea` | 0 | behind 0, ahead 5 |
+| `agent-systems-benchmark-ar-1771-human-status-and-quiet-contract` | `feature/ar-1771-human-status-and-quiet-contract` | `e9168d44b16d` | 0 | behind 0, ahead 6 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 193, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 181, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 127, ahead 0 |

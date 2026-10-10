@@ -13,7 +13,7 @@
   "id": "AR-1765",
   "next_action": "Execute a disposable fresh-user fixture journey across all five tool kinds, catalogs, selections, project-bound run/report/compare, JSON/human output, and negative recovery boundaries; then add bounded qualification evidence and run exact-head gates.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "fd61b856570bf1d57e9dba4f8bee1da99b77189e",
   "owner": "ar1765-tool-project-e2e-terra",
   "plan": "../plans/AR-1765-tool-project-e2e-qualification.md",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T11:42:15+00:00",
+  "updated_at": "2026-10-10T11:43:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
