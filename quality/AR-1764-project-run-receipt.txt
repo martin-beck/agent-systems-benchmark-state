@@ -1,0 +1,9 @@
+AR-1764 project-run integration receipt
+
+Pull request: #544
+Reviewed head: 9faa1e88fc0b1bc8fb8c13ddf98c2fc642de84ec
+Protected merge: fd61b856570bf1d57e9dba4f8bee1da99b77189e
+Merge base: 5e08ddadff5a716bcce844ed8ed5e1bc1868d02f
+Merge tree: ff8e4623834f287e0cd6da6ffc1f0f27b580aa92
+Checks: 38048496243, 38048496249, 38048496257, 38048496266, 38048496269, 38048496285, 38048496297, 38048496301, 38048496305, 38048496318 (all success)
+Local gates: project regression, diagnostic contract, locked workspace, rustdoc warnings, and release build passed.
