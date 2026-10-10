@@ -80,7 +80,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery-v2` | `9cd9e80cfc2a` | 0 | behind 77, ahead 0 |
 | `agent-systems-benchmark-ar-1763-generated-catalog-selection` | `feature/ar-1763-generated-catalog-selection` | `2e6a5d949e17` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1764-merge-base` | `DETACHED` | `5e08ddadff5a` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar-1764-topic` | `feature/ar-1764-project-run-integration` | `9faa1e88fc0b` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract` | `feature/ar-1766-fine-grained-human-diagnostic-contract` | `b8ae2dc60a71` | 0 | behind 61, ahead 0 |
 | `agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice` | `feature/ar-1767-safe-directory-preparation-and-notice` | `f34830bb75ce` | 0 | behind 57, ahead 0 |
 | `agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics` | `feature/ar-1768-exhaustive-actionable-human-diagnostics` | `cd46a00c276b` | 0 | behind 38, ahead 0 |
