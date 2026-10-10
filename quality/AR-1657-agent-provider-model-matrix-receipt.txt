@@ -1,0 +1,11 @@
+AR-1657 agent/provider/model compatibility matrix qualification receipt
+
+Pull request: #547
+Reviewed head: fd56a4c7762a79737511a76968736aec44dfe39a
+Protected merge: 4dfc1e07f424e8b20d2ea35155aace2af7716c12
+Merge base: a65ebb560cf26447858a1241ac80049c59a4bcbd
+Merge tree: 75c5c30d037c5c841b1c4c1201e3027a0c095549
+Merge verification: exact parents, reviewed tree, SSH signature, matching DCO, and remote main verified.
+Independent review: recorded for the exact reviewed head; GitHub review-count is not an acceptance requirement.
+Checks: 38069874463, 38069874473, 38069874479, 38069874485, 38069874491, 38069874495, 38069874499, 38069874511, 38069874531, 38069874540 (all exact-main push success)
+Local gates: deterministic OpenCode/OpenDesk OpenAI/OpenRouter public CLI matrix; tuple-bound record-live and strict replay-offline parity; typed unsupported catalog rows; workflow provenance; diagnostic contract; locked workspace; formatter; and clippy passed.
