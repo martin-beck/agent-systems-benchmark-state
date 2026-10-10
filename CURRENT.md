@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. | Observe fresh PR #547 checks on exact head fd56a4c7 after the provenance fixture refresh; obtain a fresh independent technical re-review of that head, then follow the signed protected-main merge procedure only if all required checks pass. | ar1657-compatibility-matrix |
+| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. | PR #547 head fd56a4c7 has fresh independent exact-head approval and all 15 exact-head checks green; merge only through the signed protected-main procedure, then verify exact-main workflows. | ar1657-compatibility-matrix |
 
 ## Open
 

@@ -4344,7 +4344,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. |
-| Next action | Observe fresh PR #547 checks on exact head fd56a4c7 after the provenance fixture refresh; obtain a fresh independent technical re-review of that head, then follow the signed protected-main merge procedure only if all required checks pass. |
+| Next action | PR #547 head fd56a4c7 has fresh independent exact-head approval and all 15 exact-head checks green; merge only through the signed protected-main procedure, then verify exact-main workflows. |
 
 ### AR-1658 — Development release-channel resolver contract
 
