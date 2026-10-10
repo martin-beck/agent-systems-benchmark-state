@@ -1006,7 +1006,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. |
-| Next action | Run the fresh-user end-to-end qualification after AR-1764 is merged. |
+| Next action | Execute a disposable fresh-user fixture journey across all five tool kinds, catalogs, selections, project-bound run/report/compare, JSON/human output, and negative recovery boundaries; then add bounded qualification evidence and run exact-head gates. |
 
 ### AR-1766 — Fine-grained human diagnostic contract
 

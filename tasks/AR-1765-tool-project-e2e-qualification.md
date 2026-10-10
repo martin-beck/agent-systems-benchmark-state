@@ -11,7 +11,7 @@
     "AR-1764"
   ],
   "id": "AR-1765",
-  "next_action": "Run the fresh-user end-to-end qualification after AR-1764 is merged.",
+  "next_action": "Execute a disposable fresh-user fixture journey across all five tool kinds, catalogs, selections, project-bound run/report/compare, JSON/human output, and negative recovery boundaries; then add bounded qualification evidence and run exact-head gates.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
   "observed_head": "fd61b856570bf1d57e9dba4f8bee1da99b77189e",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T11:41:48+00:00",
+  "updated_at": "2026-10-10T11:42:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -54,3 +54,6 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 
 - 2026-10-10T11:41:48+00:00: Recorded command exit 0; command argv SHA-256
   8c73f2b423a7f7ef08a6a03236ad094855706daa60df5194e4c4fc21225249fd.
+
+- 2026-10-10T11:42:15+00:00: Completed AR/spec/plan/development-doc review and established the fresh
+  merged-base worktree; qualification baseline is in progress.
