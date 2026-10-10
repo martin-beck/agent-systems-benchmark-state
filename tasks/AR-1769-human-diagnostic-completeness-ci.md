@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1769-human-diagnostic-completeness-ci",
-  "checkpoint_commit": "a3c77330134e1f789237a0d8de138d0913c8e8f4",
+  "checkpoint_commit": "c9ef9b193cd7c48c440fff2cf32918eb7e3fed57",
   "claim_expires": "2026-10-10T01:59:36+00:00",
   "depends_on": [
     "AR-1768"
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 306,
+  "task_revision": 307,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-10T00:10:52+00:00",
+  "updated_at": "2026-10-10T00:11:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -806,3 +806,5 @@ timeouts/cancellation, partial results, and warning-only development behavior.
 
 - 2026-10-10T00:10:52+00:00: Recorded command exit 0; command argv SHA-256
   b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
+
+- 2026-10-10T00:11:08+00:00: Checkpointed source commit c9ef9b193cd7c48c440fff2cf32918eb7e3fed57.
