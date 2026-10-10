@@ -20,21 +20,21 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #548 | `codex/ar-1704-provider-errors@b2fefe2f9a42` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test(openrouter): qualify trusted curl failures |
+| #548 | `codex/ar-1704-provider-errors@b2fefe2f9a42` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(openrouter): qualify trusted curl failures |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38071983465 | `b2fefe2f9a42` | pull_request | Huawei MIT source headers | queued:- |
-| 38071983447 | `b2fefe2f9a42` | pull_request | Emulated aarch64 portability | queued:- |
-| 38071983434 | `b2fefe2f9a42` | pull_request | Cross-repository development broker qualification | queued:- |
-| 38071983433 | `b2fefe2f9a42` | pull_request | Hosted portability and native qualification | queued:- |
-| 38071983415 | `b2fefe2f9a42` | pull_request | Formal assurance | queued:- |
-| 38071983406 | `b2fefe2f9a42` | pull_request | Fault assurance | queued:- |
-| 38071983394 | `b2fefe2f9a42` | pull_request | Rust verification | queued:- |
-| 38071983393 | `b2fefe2f9a42` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 38071983384 | `b2fefe2f9a42` | pull_request | Repository quality | queued:- |
-| 38071983379 | `b2fefe2f9a42` | pull_request | Portable protected-main provenance | queued:- |
-| 38071983342 | `b2fefe2f9a42` | pull_request | Credential-free benchmark path | queued:- |
+| 38071983465 | `b2fefe2f9a42` | pull_request | Huawei MIT source headers | completed:success |
+| 38071983447 | `b2fefe2f9a42` | pull_request | Emulated aarch64 portability | completed:success |
+| 38071983434 | `b2fefe2f9a42` | pull_request | Cross-repository development broker qualification | completed:success |
+| 38071983433 | `b2fefe2f9a42` | pull_request | Hosted portability and native qualification | completed:success |
+| 38071983415 | `b2fefe2f9a42` | pull_request | Formal assurance | completed:success |
+| 38071983406 | `b2fefe2f9a42` | pull_request | Fault assurance | completed:success |
+| 38071983394 | `b2fefe2f9a42` | pull_request | Rust verification | completed:success |
+| 38071983393 | `b2fefe2f9a42` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38071983384 | `b2fefe2f9a42` | pull_request | Repository quality | completed:success |
+| 38071983379 | `b2fefe2f9a42` | pull_request | Portable protected-main provenance | completed:success |
+| 38071983342 | `b2fefe2f9a42` | pull_request | Credential-free benchmark path | completed:success |
 | 38069874540 | `4dfc1e07f424` | push | Emulated aarch64 portability | completed:success |
