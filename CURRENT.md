@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. | Implement the missing deterministic opencode/opendesk provider-model matrix runner with typed unsupported rows, persisted default/override restart checks, and offline replay parity; then qualify and review exact head. | ar1657-compatibility-matrix |
+| P0 | [AR-1657](tasks/AR-1657.md): Agent/provider/model compatibility matrix | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. | Implement a deterministic opencode/opendesk matrix runner: evaluate all catalog rows (openai/openrouter positive; ollama/gemini typed unsupported), persist/reload shared defaults plus a per-agent override, and bind each selected tuple through local run, recording, strict offline replay, comparison, and human/JSON projections. Then require independent exact-head review and hosted checks. | ar1657-compatibility-matrix |
 
 ## Open
 

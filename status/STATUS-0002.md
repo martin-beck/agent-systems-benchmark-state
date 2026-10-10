@@ -4344,7 +4344,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. |
-| Next action | Implement the missing deterministic opencode/opendesk provider-model matrix runner with typed unsupported rows, persisted default/override restart checks, and offline replay parity; then qualify and review exact head. |
+| Next action | Implement a deterministic opencode/opendesk matrix runner: evaluate all catalog rows (openai/openrouter positive; ollama/gemini typed unsupported), persist/reload shared defaults plus a per-agent override, and bind each selected tuple through local run, recording, strict offline replay, comparison, and human/JSON projections. Then require independent exact-head review and hosted checks. |
 
 ### AR-1658 — Development release-channel resolver contract
 
@@ -4693,4 +4693,3 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
