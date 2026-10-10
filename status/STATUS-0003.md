@@ -1260,6 +1260,20 @@
 | Summary | Select verified external workload bundles and prove ASB run/sweep uses their exact project-local identity. |
 | Next action | Integrate verified installed workload bundles into catalog selection and prove run/sweep consumes their exact recorded identity. |
 
+### AR-1784 — Command dependency registry and preflight
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make every ASB command dependency declared, installable or explicitly host-only, and fail-fast before a missing-tool runtime failure. |
+| Next action | Derive a complete command-to-tool/host-capability dependency registry and fail-fast preflight from all ASB command paths, adapters, monitors, and build recipes. |
+
 
 ## Dependency graph
 
@@ -2102,6 +2116,7 @@ flowchart LR
         AR_1781["AR-1781 - Planned"]:::status_planned
         AR_1782["AR-1782 - Planned"]:::status_planned
         AR_1783["AR-1783 - Planned"]:::status_planned
+        AR_1784["AR-1784 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4018,12 +4033,14 @@ flowchart LR
     AR_1775 --> AR_1774
     AR_1776 --> AR_1777
     AR_1776 --> AR_1778
+    AR_1776 --> AR_1784
     AR_1777 --> AR_1779
     AR_1778 --> AR_1779
     AR_1779 --> AR_1780
     AR_1781 --> AR_1782
     AR_1782 --> AR_1783
     AR_1783 --> AR_1780
+    AR_1784 --> AR_1779
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -4115,4 +4132,3 @@ flowchart LR
 | [AR-0803](../tasks/AR-0803-frontend-control-api.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md) | [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
 | [AR-0805](../tasks/AR-0805-tui-run-control.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
-| [AR-0806](../tasks/AR-0806-tui-history-analysis.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
