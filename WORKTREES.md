@@ -314,6 +314,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1743-postmerge` | `DETACHED` | `fd956d857970` | 0 | behind 170, ahead 0 |
 | `asb-ar1744-main-repro` | `DETACHED` | `1ab175c30eb0` | 0 | behind 166, ahead 0 |
 | `asb-ar1746-postmerge` | `DETACHED` | `2f52ecbaf79a` | 0 | behind 153, ahead 0 |
+| `asb-ar1765-merge.X54pFB` | `DETACHED` | `3cd8ae24048d` | 0 | behind 0, ahead 0 |
 | `asb-main-verify.FEM1UX` | `DETACHED` | `856294553f2f` | 0 | behind 209, ahead 0 |
 | `asb-pr496-review.3ZigFi` | `DETACHED` | `dc5a635fd37f` | 0 | behind 206, ahead 1 |
 | `asb-pr507-integration` | `DETACHED` | `bbe25d0c516b` | 0 | behind 182, ahead 0 |
