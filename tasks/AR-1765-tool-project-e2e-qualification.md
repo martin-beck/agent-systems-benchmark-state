@@ -11,7 +11,7 @@
     "AR-1764"
   ],
   "id": "AR-1765",
-  "next_action": "Commit the repaired exact source-location diagnostic catalog and executable disposable five-tool receipt; then run full local gates, push a fresh signed PR #546 head, and obtain a new independent exact-head review and hosted CI. Do not merge ac669d1c.",
+  "next_action": "PR #546 now points to signed head 60fe1d7c. Obtain a fresh independent exact-head review and wait for all hosted CI on 60fe1d7c to reach terminal success; only then merge and record post-merge receipt and acceptance. Do not merge the failed ac669d1c head.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
   "observed_head": "60fe1d7c2a7a93494e9ac2b2ab5516fa1f17c608",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:38:33+00:00",
+  "updated_at": "2026-10-10T12:38:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -283,3 +283,9 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 
 - 2026-10-10T12:38:33+00:00: Recorded command exit 0; command argv SHA-256
   b1bbb43163d13790da8f72ac47c7ed3dc692f5fd79a31375501578c329d77cc2.
+
+- 2026-10-10T12:38:48+00:00: Published fresh signed DCO head 60fe1d7c with force-with-lease after
+  all local gates passed: fmt; locked workspace clippy -D warnings; locked workspace tests;
+  diagnostic_contract 9/9; project_qualification 1/1 covering five kinds, configured/PATH discovery,
+  catalog selection, JSON silence, negative recovery, and project-bound results; rustdoc -D
+  warnings; locked release build. Golden updated for discover usage.

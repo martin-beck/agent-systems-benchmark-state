@@ -1006,7 +1006,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. |
-| Next action | Commit the repaired exact source-location diagnostic catalog and executable disposable five-tool receipt; then run full local gates, push a fresh signed PR #546 head, and obtain a new independent exact-head review and hosted CI. Do not merge ac669d1c. |
+| Next action | PR #546 now points to signed head 60fe1d7c. Obtain a fresh independent exact-head review and wait for all hosted CI on 60fe1d7c to reach terminal success; only then merge and record post-merge receipt and acceptance. Do not merge the failed ac669d1c head. |
 
 ### AR-1766 — Fine-grained human diagnostic contract
 
