@@ -118,18 +118,18 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1765](../tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | ar1765-tool-project-e2e-terra | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Run the fresh-user end-to-end qualification after AR-1764 is merged. |
 | P0 | [AR-1771](../tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | ar1771-output-contract-terra | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | PR #545 is at exact head 5978aab04533920da1090dc27cded441a7699b59. Serialized workspace and fmt/clippy/rustdoc/release gates are green; await fresh independent exact-head review and hosted CI. Non-serialized workspace control-state ownership failures were classified as shared-root contention and pass when isolated. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1765](../tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Unclaimed | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Run the fresh-user end-to-end qualification after AR-1764 is merged. |
 
 ### Blocked (87)
 
@@ -556,4 +556,3 @@
 | P0 | [AR-1524](../tasks/AR-1524.md): Repair live-dispatch dependency graph | Unclaimed | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. |
 | P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | Unclaimed | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | No development action remains. Preserve the exact-main first-customer local/mock and strict-replay receipt; live-provider deployment remains optional future hardening. |
 | P0 | [AR-1527](../tasks/AR-1527.md): Normalize AR-1307/1308 development seed policy | Unclaimed | Remove reviewed seed and digest prerequisites from the AR-1307/1308 development path while preserving separate formal and release evidence gates. | Promote after state review; audit AR-1307/1308 and every active dependent for development-only seed/digest prerequisites, then normalize their task and plan language without changing formal gates. |
-| P0 | [AR-1528](../tasks/AR-1528.md): Rerun AR-1307/1308 development fixtures | Unclaimed | Run the repaired AR-1307/1308 unsigned-development fixture path and preserve separate formal qualification blockers. | No further action: development fixture rerun is complete; retain its non-qualifying evidence while formal work proceeds separately. |

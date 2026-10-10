@@ -7,6 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Run the fresh-user end-to-end qualification after AR-1764 is merged. | ar1765-tool-project-e2e-terra |
 | P0 | [AR-1771](tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | PR #545 is at exact head 5978aab04533920da1090dc27cded441a7699b59. Serialized workspace and fmt/clippy/rustdoc/release gates are green; await fresh independent exact-head review and hosted CI. Non-serialized workspace control-state ownership failures were classified as shared-root contention and pass when isolated. | ar1771-output-contract-terra |
 
 ## Open
@@ -14,7 +15,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. | - |
-| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Run the fresh-user end-to-end qualification after AR-1764 is merged. | - |
 
 ## Blocked
 
