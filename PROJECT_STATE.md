@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #546 | `feature/ar-1765-tool-project-e2e-qualification@af6c1bcbddbb` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1765: qualify project-local tool journey |
+| #546 | `feature/ar-1765-tool-project-e2e-qualification@af6c1bcbddbb` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1765: qualify project-local tool journey |
 
 ## Recent workflows
 
@@ -30,11 +30,11 @@ Generated from local Git and GitHub. Do not edit.
 | 38053027383 | `af6c1bcbddbb` | pull_request | Huawei MIT source headers | completed:success |
 | 38053027340 | `af6c1bcbddbb` | pull_request | Cross-repository development broker qualification | completed:success |
 | 38053027330 | `af6c1bcbddbb` | pull_request | Portable protected-main provenance | completed:success |
-| 38053027328 | `af6c1bcbddbb` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38053027328 | `af6c1bcbddbb` | pull_request | Emulated aarch64 portability | completed:success |
 | 38053027325 | `af6c1bcbddbb` | pull_request | Credential-free benchmark path | completed:success |
 | 38053027324 | `af6c1bcbddbb` | pull_request | Hosted portability and native qualification | completed:success |
 | 38053027321 | `af6c1bcbddbb` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38053027299 | `af6c1bcbddbb` | pull_request | Fault assurance | completed:success |
 | 38053027292 | `af6c1bcbddbb` | pull_request | Formal assurance | completed:success |
-| 38053027281 | `af6c1bcbddbb` | pull_request | Rust verification | in_progress:- |
+| 38053027281 | `af6c1bcbddbb` | pull_request | Rust verification | completed:success |
 | 38052707246 | `60fe1d7c2a7a` | pull_request | Rust verification | completed:failure |
