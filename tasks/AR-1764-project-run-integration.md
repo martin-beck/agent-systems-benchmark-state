@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Integrate project tools and catalogs with ASB runs",
-  "updated_at": "2026-10-10T11:32:18+00:00",
+  "updated_at": "2026-10-10T11:32:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1764-project-run-integration"
 }
 ---
@@ -331,3 +331,6 @@ output contracts.
 
 - 2026-10-10T11:32:18+00:00: Recorded command exit 0; command argv SHA-256
   757f0a26111ae6ad0eb9bbc15fa60116f9b995845f2d05873990d6de42633c44.
+
+- 2026-10-10T11:32:39+00:00: Recorded command exit 0; command argv SHA-256
+  52d785de5026c788b3f01b98921270145b95d3405080562225fee894874ca85f.
