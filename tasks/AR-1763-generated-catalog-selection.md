@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T10:06:13+00:00",
+  "updated_at": "2026-10-10T10:06:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
@@ -287,3 +287,6 @@ secret store or require production signatures in development mode.
   CI and fresh review pending.
 
 - 2026-10-10T10:06:13+00:00: Heartbeat by codex-asb-ar1763-catalog-terra.
+
+- 2026-10-10T10:06:17+00:00: Recorded command exit 8; command argv SHA-256
+  6960420870a2cb37014e973761aa0a317b5e7cd40779adabe51cb704b2e6c947.
