@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 365,
+  "task_revision": 366,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-10T08:28:10+00:00",
+  "updated_at": "2026-10-10T08:29:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -973,3 +973,6 @@ timeouts/cancellation, partial results, and warning-only development behavior.
   6c7392db83b2cb0dbb6793b8cba4cc9ee254277d9f2cce84ae061a37e9c52bb2.
 
 - 2026-10-10T08:28:10+00:00: Heartbeat by codex-ar1769-macro-statement-repair-terra.
+
+- 2026-10-10T08:29:46+00:00: Recorded command exit 1; command argv SHA-256
+  428457ea9cc6a21bd46c5be6651ba2faccb5b0b07ddc2fd6f96eca730dea5ab7.
