@@ -11,7 +11,7 @@
     "AR-1764"
   ],
   "id": "AR-1765",
-  "next_action": "PR #546 now points to signed head 60fe1d7c. Obtain a fresh independent exact-head review and wait for all hosted CI on 60fe1d7c to reach terminal success; only then merge and record post-merge receipt and acceptance. Do not merge the failed ac669d1c head.",
+  "next_action": "PR #546 now points to signed head af6c1bcb. Obtain a fresh independent exact-head review and wait for all hosted CI on af6c1bcb to reach terminal success; only then merge and record post-merge receipt and acceptance. Do not merge prior failed heads.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
   "observed_head": "af6c1bcbddbba03a6f90f670c30f44acf99eca6e",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:43:42+00:00",
+  "updated_at": "2026-10-10T12:43:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -321,3 +321,9 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 
 - 2026-10-10T12:43:42+00:00: Recorded command exit 0; command argv SHA-256
   739f89e01c0a0812fa89741e5510699347e5b25fba104f2a33ed7cebfb99b6ab.
+
+- 2026-10-10T12:43:57+00:00: Fresh review repairs published: workflow provenance now binds the exact
+  lib.rs SHA; project qualification copies and validates the ASB executable in a disposable
+  HOME/.local/bin, clears inherited environment, controls HOME/XDG/PATH/LANG, verifies configured
+  and PATH discovery, catalog selection, JSON-silent recovery, run/results/report. Full locked fmt,
+  clippy -D warnings, workspace tests, rustdoc -D warnings, and release build pass on af6c1bcb.
