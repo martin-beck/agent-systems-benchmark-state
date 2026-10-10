@@ -118,12 +118,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1709](../tasks/AR-1709.md): Development live provider execution contract and credential injection | ar1709-live-provider | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. | PR #481 merged at ASB b21fa8c adds unavailable-model and malformed-credential deterministic negatives; run live selected/all success and final exact-head qualification against current main. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
-| P0 | [AR-1709](../tasks/AR-1709.md): Development live provider execution contract and credential injection | Unclaimed | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. | PR #481 merged at ASB b21fa8c adds unavailable-model and malformed-credential deterministic negatives; run live selected/all success and final exact-head qualification against current main. |
 
 ### Blocked (87)
 
