@@ -1159,8 +1159,8 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Define pinned official acquisition and build recipes for every ASB-supported tool and workload bundle. |
-| Next action | Define the authoritative supported-tool and workload acquisition catalog, official primary sources, binary/source alternatives, verification identities, and build recipes. |
+| Summary | Define pinned official acquisition and build recipes for every ASB-supported executable tool. |
+| Next action | Define the authoritative supported executable-tool acquisition catalog, official primary sources, binary/source alternatives, verification identities, and build recipes. |
 
 ### AR-1777 — Verified prebuilt tool acquisition
 
@@ -1174,7 +1174,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Acquire, verify, and atomically install official compatible prebuilt executable tools into a project-local root. |
-| Next action | Implement catalog-driven verified compatible-binary reuse and official prebuilt tool/workload acquisition into project-local storage. |
+| Next action | Implement catalog-driven verified compatible-binary reuse and official prebuilt executable-tool acquisition into project-local storage. |
 
 ### AR-1778 — Pinned source builds and project dependencies
 
@@ -1201,8 +1201,8 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Make default asb tool install produce and verify a usable project-local supported tool or workload without manual source copying. |
-| Next action | Make asb tool install supported-id resolve, acquire/build, validate, and register a usable project-local tool or workload by default. |
+| Summary | Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying. |
+| Next action | Make asb tool install supported-id resolve, acquire/build, validate, and register a usable project-local executable tool by default. |
 
 ### AR-1780 — Installed tool and workload execution qualification
 
