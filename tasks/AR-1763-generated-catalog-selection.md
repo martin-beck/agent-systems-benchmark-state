@@ -11,8 +11,8 @@
   "id": "AR-1763",
   "next_action": "PR #543 repair head e7fd647594cea24ccddd976c26a17c4ba8b24341 has green local gates; await fresh independent exact-head review and all required hosted checks before the documented signed merge and post-merge verification.",
   "observed_branch": "feature/ar-1763-generated-catalog-selection",
-  "observed_dirty": 1,
-  "observed_head": "e7fd647594cea24ccddd976c26a17c4ba8b24341",
+  "observed_dirty": 0,
+  "observed_head": "238529db69321561be890344431c8161075c847e",
   "owner": "codex-asb-ar1763-catalog-terra",
   "plan": "../plans/AR-1763-generated-catalog-selection.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T10:09:23+00:00",
+  "updated_at": "2026-10-10T10:09:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---

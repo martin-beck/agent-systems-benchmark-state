@@ -1229,8 +1229,8 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Define pinned official acquisition and preparation recipes for every externally sourced AI-agent workload, including SWE-mini where supported. |
-| Next action | Define the authoritative external AI-agent workload catalog, primary sources, immutable dataset/bundle identities, licenses, preparation recipes, and compatibility metadata. |
+| Summary | Make every documented external AI-agent workload a pinned, development-supported ASB workload, including SWE-mini. |
+| Next action | Define the authoritative development external-workload catalog and make every documented suite installable, selectable, and executable through its pinned official source. |
 
 ### AR-1782 — Verified asb workload installation
 
