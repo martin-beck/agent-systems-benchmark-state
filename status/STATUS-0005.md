@@ -118,11 +118,12 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
+| P0 | [AR-1704](../tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | Unclaimed | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Implement or qualify typed non-2xx and transport failure propagation, complete the connected provider/model compatibility matrix, and replace the fixed curl path with bounded trusted tool discovery; publish exact-head human/JSON evidence. |
 
 ### Blocked (87)
 
@@ -216,7 +217,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (107)
+### Planned (106)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -261,7 +262,6 @@
 | P0 | [AR-1697](../tasks/AR-1697.md): Channel specification and current-head qualification repair | Unclaimed | Repair the missing authoritative channel specs and requalify ASB/TUI channel propagation, manifest provenance, compatibility, and default-dev quickstart at current main heads. | Complete valid AR-1674/1675-compatible state specifications, then run the current-head channel and quickstart matrix against ASB ad43609b and TUI 1cf4b43d without closing predecessor ARs from stale receipts. |
 | P0 | [AR-1701](../tasks/AR-1701.md): Development live recording and comparison qualification | Unclaimed | Record live OpenRouter responses for selected or all agents, seal a replayable cassette, and make the next run offline with comparison and analysis against the live baseline. | Add live-run capture selection, redaction and cassette sealing, then qualify strict offline replay, comparison, and analysis from the same benchmark manifest. |
 | P0 | [AR-1703](../tasks/AR-1703.md): Current-main TUI live-control qualification | Unclaimed | Qualify and repair the exact current asb-tui main PTY/control journey against ASB development live recording without pinning an older frontend or weakening live semantics. | Reproduce the current-main PTY action gap, repair the owning boundary, then run the exact paired live/offline journey with a real OpenRouter key when supplied and credential-free negative checks otherwise. |
-| P0 | [AR-1704](../tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | Unclaimed | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Implement or qualify typed non-2xx and transport failure propagation, complete the connected provider/model compatibility matrix, and replace the fixed curl path with bounded trusted tool discovery; publish exact-head human/JSON evidence. |
 | P0 | [AR-1709](../tasks/AR-1709.md): Development live provider execution contract and credential injection | Unclaimed | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. | PR #481 merged at ASB b21fa8c adds unavailable-model and malformed-credential deterministic negatives; run live selected/all success and final exact-head qualification against current main. |
 | P0 | [AR-1710](../tasks/AR-1710.md): Wizard provider-model selection and warning-only readiness | Unclaimed | Make provider, authentication mode, API-key readiness, agent defaults, and supported-model selection explicit and non-blocking in development setup. | Expose the connected provider/model catalog and readiness diagnostics to the setup/materialization boundary; qualify shared defaults, per-agent overrides, unavailable models, and warning-only development auth. |
 | P0 | [AR-1711](../tasks/AR-1711.md): Explicit live benchmark runner and typed failures | Unclaimed | Provide a simple explicit online benchmark command with selectable agents/workloads, typed failures, and no implicit mock or replay fallback. | PR #483 merged at ASB b9c5835; exact-main live path reached OpenRouter but returned HTTP 429 free-models-per-day (daily remaining 0). Credential-free exact-main negative returns OPENROUTER_API_KEY required exit 3. Rerun selected/all after quota recovery. |
