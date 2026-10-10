@@ -1054,11 +1054,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1769-matrix-repair-terra |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. |
@@ -1975,7 +1975,7 @@ flowchart LR
         AR_1766["AR-1766 - Done"]:::status_done
         AR_1767["AR-1767 - Done"]:::status_done
         AR_1768["AR-1768 - Done"]:::status_done
-        AR_1769["AR-1769 - In progress"]:::status_in_progress
+        AR_1769["AR-1769 - Open"]:::status_open
         AR_1770["AR-1770 - Done"]:::status_done
         AR_1771["AR-1771 - Planned"]:::status_planned
         AR_1772["AR-1772 - Planned"]:::status_planned

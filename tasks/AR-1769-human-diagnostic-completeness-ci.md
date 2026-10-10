@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "checkpoint_commit": "c9ef9b193cd7c48c440fff2cf32918eb7e3fed57",
-  "claim_expires": "2026-10-10T02:11:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1768"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "observed_dirty": 0,
   "observed_head": "99b3a761966d27203f83bbd15400084596f7d32e",
-  "owner": "codex-ar1769-matrix-repair-terra",
+  "owner": "",
   "plan": "../plans/AR-1769-human-diagnostic-completeness-ci.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1769.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 309,
+  "task_revision": 310,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-10T00:11:55+00:00",
+  "updated_at": "2026-10-10T08:05:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -815,3 +815,7 @@ timeouts/cancellation, partial results, and warning-only development behavior.
   publication remains gated on independent review.
 
 - 2026-10-10T00:11:55+00:00: Heartbeat by codex-ar1769-matrix-repair-terra.
+
+- 2026-10-10T08:05:53+00:00: Recovered expired claim formerly owned by
+  codex-ar1769-matrix-repair-terra. Recovered expired AR-1769 lease for Terra-medium macro statement
+  repair worker; preserved exact head 99b3a76 and review blocker.
