@@ -91,6 +91,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1771-human-status-and-quiet-contract` | `feature/ar-1771-human-status-and-quiet-contract` | `4b86c4a7a099` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 208, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 196, ahead 0 |
+| `agent-systems-benchmark-ar1647-final-comparison` | `codex/ar-1647-final-comparison` | `a65ebb560cf2` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 142, ahead 0 |
 | `agent-systems-benchmark-ar1726-review` | `DETACHED` | `a3222ae105dc` | 0 | behind 207, ahead 0 |
 | `agent-systems-benchmark-ar1727-integration` | `DETACHED` | `457317b21dbe` | 0 | behind 203, ahead 0 |
