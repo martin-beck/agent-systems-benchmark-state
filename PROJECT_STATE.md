@@ -30,10 +30,10 @@ Generated from local Git and GitHub. Do not edit.
 | 38051166285 | `3cd8ae24048d` | push | Cross-repository development broker qualification | completed:success |
 | 38051166260 | `3cd8ae24048d` | push | Hosted portability and native qualification | completed:success |
 | 38051166257 | `3cd8ae24048d` | push | Portable protected-main provenance | completed:success |
-| 38051166247 | `3cd8ae24048d` | push | Rust verification | in_progress:- |
+| 38051166247 | `3cd8ae24048d` | push | Rust verification | completed:success |
 | 38051166237 | `3cd8ae24048d` | push | Formal assurance | completed:success |
 | 38051166236 | `3cd8ae24048d` | push | Credential-free benchmark path | completed:success |
-| 38051166221 | `3cd8ae24048d` | push | Emulated aarch64 portability | in_progress:- |
+| 38051166221 | `3cd8ae24048d` | push | Emulated aarch64 portability | completed:success |
 | 38051166215 | `3cd8ae24048d` | push | Repository quality | in_progress:- |
 | 38050518287 | `4b86c4a7a099` | pull_request | Rust verification | completed:success |
 | 38050518215 | `4b86c4a7a099` | pull_request | Credential-free benchmark path | completed:success |
