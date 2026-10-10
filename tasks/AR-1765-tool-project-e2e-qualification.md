@@ -12,9 +12,9 @@
   ],
   "id": "AR-1765",
   "next_action": "Run the fresh-user end-to-end qualification after AR-1764 is merged.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "fd61b856570bf1d57e9dba4f8bee1da99b77189e",
   "owner": "ar1765-tool-project-e2e-terra",
   "plan": "../plans/AR-1765-tool-project-e2e-qualification.md",
   "priority": "P0",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T11:40:55+00:00",
+  "updated_at": "2026-10-10T11:41:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
