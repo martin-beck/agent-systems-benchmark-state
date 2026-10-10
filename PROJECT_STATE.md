@@ -20,13 +20,13 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #542 | `feature/ar-1769-human-diagnostic-completeness-ci@bf5858cb72ac` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): enforce complete human diagnostic inventory |
+| #542 | `feature/ar-1769-human-diagnostic-completeness-ci@bf5858cb72ac` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): enforce complete human diagnostic inventory |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38038979520 | `bf5858cb72ac` | pull_request | Repository quality | in_progress:- |
+| 38038979520 | `bf5858cb72ac` | pull_request | Repository quality | completed:failure |
 | 38038979516 | `bf5858cb72ac` | pull_request | Hosted portability and native qualification | completed:success |
 | 38038979504 | `bf5858cb72ac` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38038979496 | `bf5858cb72ac` | pull_request | Cross-repository development broker qualification | completed:success |
