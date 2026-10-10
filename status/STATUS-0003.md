@@ -1062,7 +1062,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. |
-| Next action | Obtain fresh independent exact-head review of bf5858cb72ac059278789fe46884f5250add1dac; then wait for PR #542 exact-head CI before any merge. |
+| Next action | Obtain fresh independent exact-head review of 971a3a9afea18e6287541996699bab52e82ffafa; then wait for PR #542 exact-head CI before any merge. |
 
 ### AR-1770 — Descriptor-safe directory race hardening and acceptance matrix
 

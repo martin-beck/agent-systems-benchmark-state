@@ -71,7 +71,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | codex-ar1769-macro-statement-repair-terra | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Obtain fresh independent exact-head review of bf5858cb72ac059278789fe46884f5250add1dac; then wait for PR #542 exact-head CI before any merge. |
+| P0 | [AR-1769](../tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | codex-ar1769-macro-statement-repair-terra | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Obtain fresh independent exact-head review of 971a3a9afea18e6287541996699bab52e82ffafa; then wait for PR #542 exact-head CI before any merge. |
 
 ### Open (1)
 
