@@ -20,21 +20,21 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #547 | `codex/ar-1657-compatibility-matrix@fd56a4c7762a` | `main` | BLOCKED | - | test(asb-cli): qualify paired provider matrix |
+| #547 | `codex/ar-1657-compatibility-matrix@fd56a4c7762a` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(asb-cli): qualify paired provider matrix |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38068903947 | `fd56a4c7762a` | pull_request | Huawei MIT source headers | completed:success |
+| 38068903943 | `fd56a4c7762a` | pull_request | Hosted portability and native qualification | completed:success |
+| 38068903939 | `fd56a4c7762a` | pull_request | Formal assurance | completed:success |
+| 38068903932 | `fd56a4c7762a` | pull_request | Fault assurance | completed:success |
+| 38068903923 | `fd56a4c7762a` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38068903916 | `fd56a4c7762a` | pull_request | Portable protected-main provenance | completed:success |
+| 38068903901 | `fd56a4c7762a` | pull_request | Rust verification | completed:success |
+| 38068903899 | `fd56a4c7762a` | pull_request | Cross-repository development broker qualification | completed:success |
+| 38068903894 | `fd56a4c7762a` | pull_request | Credential-free benchmark path | completed:success |
+| 38068903886 | `fd56a4c7762a` | pull_request | Repository quality | in_progress:- |
+| 38068903872 | `fd56a4c7762a` | pull_request | Emulated aarch64 portability | completed:success |
 | 38068320489 | `1a7aef07e761` | pull_request | Fault assurance | completed:success |
-| 38068320461 | `1a7aef07e761` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38068320460 | `1a7aef07e761` | pull_request | Formal assurance | completed:success |
-| 38068320459 | `1a7aef07e761` | pull_request | Credential-free benchmark path | completed:success |
-| 38068320446 | `1a7aef07e761` | pull_request | Cross-repository development broker qualification | completed:success |
-| 38068320445 | `1a7aef07e761` | pull_request | Huawei MIT source headers | completed:success |
-| 38068320434 | `1a7aef07e761` | pull_request | Rust verification | completed:failure |
-| 38068320418 | `1a7aef07e761` | pull_request | Portable protected-main provenance | completed:success |
-| 38068320411 | `1a7aef07e761` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38068320393 | `1a7aef07e761` | pull_request | Hosted portability and native qualification | completed:success |
-| 38068320391 | `1a7aef07e761` | pull_request | Repository quality | completed:failure |
-| 38068177430 | `f8bb3803ddfe` | pull_request | Fault assurance | completed:cancelled |
