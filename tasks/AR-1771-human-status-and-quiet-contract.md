@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 256,
+  "task_revision": 257,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T12:02:42+00:00",
+  "updated_at": "2026-10-10T12:03:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -722,3 +722,6 @@ terminal ownership.
 - 2026-10-10T12:02:42+00:00: Repaired terminal 88.44% hosted Repository quality coverage failure
   with executable project-output routing tests, not a threshold change. Verified remote branch and
   pull ref equal 4b86c4a7.
+
+- 2026-10-10T12:03:00+00:00: Recorded command exit 0; command argv SHA-256
+  e928c094f3177a2492e56916ba05fa530f02d703515b33ca38b2c7afddb03dca.
