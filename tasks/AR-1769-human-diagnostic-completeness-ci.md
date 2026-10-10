@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1769",
-  "next_action": "Record green focused/full evidence for exact head aeb9f10; obtain an independent exact-head review, then publish only if it passes.",
+  "next_action": "Resolve independent review findings for macro token streams and qualified regular paths; add fixtures, rerun focused/full gates, then obtain fresh exact-head review before publication.",
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "observed_dirty": 0,
   "observed_head": "aeb9f10a471d63d04ae3966d282e2a0251c09789",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 290,
+  "task_revision": 291,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-10T00:07:02+00:00",
+  "updated_at": "2026-10-10T00:07:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -763,3 +763,7 @@ timeouts/cancellation, partial results, and warning-only development behavior.
 
 - 2026-10-10T00:07:02+00:00: Recorded command exit 0; command argv SHA-256
   d32df0a8f7802e39b9a6743613fff16ac35e4dddba3905aa783a204f77a7e43f.
+
+- 2026-10-10T00:07:27+00:00: Independent coordinator review of aeb9f10 found possible bypasses: syn
+  visitor does not traverse ExprMacro token streams, and constructor matching only accepts exactly
+  two path segments. AR remains unpublished pending repair or documented architectural proof.

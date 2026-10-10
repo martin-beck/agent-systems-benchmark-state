@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1769](tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Record green focused/full evidence for exact head aeb9f10; obtain an independent exact-head review, then publish only if it passes. | codex-ar1769-matrix-repair-terra |
+| P0 | [AR-1769](tasks/AR-1769-human-diagnostic-completeness-ci.md): Human diagnostic completeness CI gate | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. | Resolve independent review findings for macro token streams and qualified regular paths; add fixtures, rerun focused/full gates, then obtain fresh exact-head review before publication. | codex-ar1769-matrix-repair-terra |
 
 ## Open
 

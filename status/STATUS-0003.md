@@ -1062,7 +1062,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics. |
-| Next action | Record green focused/full evidence for exact head aeb9f10; obtain an independent exact-head review, then publish only if it passes. |
+| Next action | Resolve independent review findings for macro token streams and qualified regular paths; add fixtures, rerun focused/full gates, then obtain fresh exact-head review before publication. |
 
 ### AR-1770 — Descriptor-safe directory race hardening and acceptance matrix
 
