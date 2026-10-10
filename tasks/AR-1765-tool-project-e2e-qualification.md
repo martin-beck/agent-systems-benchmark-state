@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T11:41:33+00:00",
+  "updated_at": "2026-10-10T11:41:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -51,3 +51,6 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
   qualification.
 
 - 2026-10-10T11:40:55+00:00: Claimed by ar1765-tool-project-e2e-terra.
+
+- 2026-10-10T11:41:48+00:00: Recorded command exit 0; command argv SHA-256
+  8c73f2b423a7f7ef08a6a03236ad094855706daa60df5194e4c4fc21225249fd.
