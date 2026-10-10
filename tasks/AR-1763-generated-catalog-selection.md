@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 176,
+  "task_revision": 177,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T10:32:30+00:00",
+  "updated_at": "2026-10-10T10:33:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
@@ -514,3 +514,6 @@ secret store or require production signatures in development mode.
 
 - 2026-10-10T10:32:30+00:00: Recorded command exit 0; command argv SHA-256
   c9eb0abe013ecfbde2db5b16874d9adad08a09e56671794175a35c69c19589c0.
+
+- 2026-10-10T10:33:43+00:00: Recorded command exit 0; command argv SHA-256
+  438241a07ad74f7740067c9d6e14a7c2daaebf0ae8f3a7ea517e6b31d999790c.
