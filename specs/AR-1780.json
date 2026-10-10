@@ -1,9 +1,10 @@
 {
   "schema_version": 1,
   "spec_ref": "specs/AR-1780.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "acceptance_predicates": [
-    {"id": "fresh-user-execution", "description": "A fresh project installs supported tools/workloads by ID, selects them, and completes a bounded benchmark/report/compare journey."},
+    {"id": "fresh-user-execution", "description": "A fresh project installs every AR-1781 development workload by ID, selects it, and completes a bounded benchmark/run/sweep/report/compare journey using a controlled development backend where needed."},
+    {"id": "development-nonblocking", "description": "Production authorization or hosted qualification absence cannot block otherwise compatible development workload evidence."},
     {"id": "installed-identity-use", "description": "Run evidence proves execution used the selected project-local acquired/built identity and rejects ambient substitution or stale/revoked/mismatched records."},
     {"id": "acquisition-path-matrix", "description": "Verified reuse, official prebuilt, source fallback, local dependency closure, offline-after-install, update, repair, remove, and recovery are qualified."},
     {"id": "failure-separation", "description": "Tool/workload acquisition and build failures remain distinct from benchmark/provider failures and preserve usable prior state."}

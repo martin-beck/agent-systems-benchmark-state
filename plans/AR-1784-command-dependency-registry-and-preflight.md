@@ -10,5 +10,6 @@
 4. Implement fail-fast preflight/status output and generated exact install or
    host-remediation guidance before execution.
 5. Add mechanical coverage rejecting an undeclared executable invocation or a
-   newly supported tool/workload lacking acquisition, dependency, and preflight
-   metadata; test every initial ID and host-only negative.
+   newly supported tool/workload lacking acquisition, dependency, preflight,
+   selection, and end-to-end development-run metadata; test every initial ID and
+   host-only negative.

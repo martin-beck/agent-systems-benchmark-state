@@ -1,10 +1,11 @@
 {
   "schema_version": 1,
   "spec_ref": "specs/AR-1782.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "acceptance_predicates": [
-    {"id": "dedicated-command", "description": "asb workload install/list/status/repair/update/remove is separate from asb tool and operates on workload bundle records."},
-    {"id": "default-primary-install", "description": "asb workload install supported-id downloads and prepares the official catalog-pinned source by default, including SWE-mini and all other cataloged external workloads."},
+    {"id": "dedicated-command", "description": "asb workload install/list/status/select/repair/update/remove is separate from asb tool and operates on workload bundle records."},
+    {"id": "default-primary-install", "description": "asb workload install supported-id downloads and prepares every AR-1781 catalog-pinned development workload by default, including SWE-mini."},
+    {"id": "development-nonblocking", "description": "Production authorization, release signing, or hosted verification absence cannot block development installation or selection; immutable identity and declared legal/resource constraints remain enforced."},
     {"id": "verified-atomic-bundle", "description": "Identity/proof/license/size/archive/preparation/adapter validation completes before atomic project-local publication and receipt registration."},
     {"id": "lifecycle-safety", "description": "Read-only operations are network-free; update/repair/rollback/offline/stale/revoked/incompatible paths preserve prior usable bundles and report distinct causes."}
   ],

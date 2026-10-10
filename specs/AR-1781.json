@@ -1,9 +1,10 @@
 {
   "schema_version": 1,
   "spec_ref": "specs/AR-1781.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "acceptance_predicates": [
-    {"id": "external-workload-inventory", "description": "Every externally sourced workload ASB supports or advertises, including eligible SWE-mini, is cataloged or explicitly classified unavailable/restricted/unsupported."},
+    {"id": "external-workload-inventory", "description": "The development catalog contains agentbench, agentdojo, agentops, ai-agents-that-matter, aider-polyglot, bigcodebench, core-bench, evalplus, exercism-tracks, hal, harbor, helm, inspect-ai, livecodebench, swe-bench, swe-bench-pro, swe-fficiency, swe-lancer, swe-mini, swe-perf, swe-rebench, tau-bench, and terminal-bench; subsequently documented external suites are admitted by the same schema."},
+    {"id": "development-support", "description": "Every documented catalog entry is development-installable, selectable, and bounded-executable; methodology-only, provenance-only, or production-authorization absence is not a development exclusion."},
     {"id": "official-identity", "description": "Every installable workload declares official primary source, immutable release/dataset identity, proof, license/terms, preparation closure, adapter, and compatibility."},
     {"id": "separate-lifecycle", "description": "Workloads are modeled as bundles/data through asb workload, never as executable asb tool records."},
     {"id": "safe-extension", "description": "Adding a workload requires catalog identity/provenance/license/compatibility validation and cannot introduce arbitrary URLs or moving source state."}

@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
   "spec_ref": "specs/AR-1783.json",
-  "spec_revision": 1,
+  "spec_revision": 2,
   "acceptance_predicates": [
     {"id": "bundle-selection", "description": "Catalog selection references only verified asb workload bundle records and validates their complete compatibility state."},
     {"id": "exact-execution-identity", "description": "Run/sweep and downstream evidence bind exact selected external workload identities and reject ambient/substituted/stale/revoked bundles."},
-    {"id": "external-workload-matrix", "description": "SWE-mini and every other cataloged external workload class are qualified through selection and bounded execution."}
+    {"id": "external-workload-matrix", "description": "Every AR-1781 development workload ID, including SWE-mini, is qualified through fresh-project install, selection, bounded run/sweep, report, and comparison."},
+    {"id": "development-nonblocking", "description": "Controlled development backend execution is valid evidence; production authorization or hosted qualification absence does not block an otherwise compatible suite."}
   ],
   "definition_of_done": ["Fresh project workload install/select/run/sweep/report/compare evidence passes for each external workload class.", "Independent review and exact-head/exact-main evidence pass."],
   "inputs": [{"id": "catalog-selection", "description": "AR-1763 generated selection."}, {"id": "run-integration", "description": "AR-1764 project execution integration."}, {"id": "workload-command", "description": "AR-1782 verified workload lifecycle."}],

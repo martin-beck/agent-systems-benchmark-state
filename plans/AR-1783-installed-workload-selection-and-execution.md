@@ -6,6 +6,7 @@
    platform, and revocation before plan/run/sweep.
 3. Bind selected workload identity through run, recording, report, and comparison
    evidence; reject manual substitution and stale/missing bundles.
-4. Add full deterministic selection/execution fixtures for SWE-mini and every
-   external workload class, including incompatible/revoked/offline negatives.
+4. Add fresh-project deterministic install/select/run/sweep/report/compare
+   fixtures for every AR-1781 suite, including SWE-mini, with a controlled
+   development backend where necessary and incompatible/revoked/offline negatives.
 5. Publish independent exact-head and exact-main qualification evidence.
