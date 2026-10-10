@@ -1006,7 +1006,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. |
-| Next action | Execute a disposable fresh-user fixture journey across all five tool kinds, catalogs, selections, project-bound run/report/compare, JSON/human output, and negative recovery boundaries; then add bounded qualification evidence and run exact-head gates. |
+| Next action | Wait for AR-1771 output-router merge, then rebase this signed parser repair onto current main and complete the fresh-user JSON-silence, negative-recovery, full-gate, PR, review, CI, merge, and post-merge qualification. |
 
 ### AR-1766 — Fine-grained human diagnostic contract
 

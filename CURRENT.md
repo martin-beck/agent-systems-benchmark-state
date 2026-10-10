@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Execute a disposable fresh-user fixture journey across all five tool kinds, catalogs, selections, project-bound run/report/compare, JSON/human output, and negative recovery boundaries; then add bounded qualification evidence and run exact-head gates. | ar1765-tool-project-e2e-terra |
+| P0 | [AR-1765](tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Wait for AR-1771 output-router merge, then rebase this signed parser repair onto current main and complete the fresh-user JSON-silence, negative-recovery, full-gate, PR, review, CI, merge, and post-merge qualification. | ar1765-tool-project-e2e-terra |
 | P0 | [AR-1771](tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | PR #545 is at exact head 5978aab04533920da1090dc27cded441a7699b59. Serialized workspace and fmt/clippy/rustdoc/release gates are green; await fresh independent exact-head review and hosted CI. Non-serialized workspace control-state ownership failures were classified as shared-root contention and pass when isolated. | ar1771-output-contract-terra |
 
 ## Open
