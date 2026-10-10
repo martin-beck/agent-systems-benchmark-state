@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1769",
-  "next_action": "Resolve independent review findings for macro token streams and qualified regular paths; add fixtures, rerun focused/full gates, then obtain fresh exact-head review before publication.",
+  "next_action": "Obtain fresh independent exact-head review of 99b3a76; if approved, publish PR and wait for exact-head CI before merge.",
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
   "observed_dirty": 0,
   "observed_head": "99b3a761966d27203f83bbd15400084596f7d32e",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 307,
+  "task_revision": 308,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-10T00:11:08+00:00",
+  "updated_at": "2026-10-10T00:11:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
@@ -808,3 +808,8 @@ timeouts/cancellation, partial results, and warning-only development behavior.
   b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
 
 - 2026-10-10T00:11:08+00:00: Checkpointed source commit c9ef9b193cd7c48c440fff2cf32918eb7e3fed57.
+
+- 2026-10-10T00:11:19+00:00: Parser repair 99b3a76 adds macro token-group traversal and qualified
+  regular-path detection with hostile fixtures. Focused 9/9, fmt, Clippy, full workspace tests,
+  rustdoc, and release build are green through handoffctl. Signature/DCO and state doctor verified;
+  publication remains gated on independent review.
