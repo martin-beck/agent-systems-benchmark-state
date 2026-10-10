@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #362 | `dependabot/cargo/serde_json-1.0.151@68e11eaad4b1` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): Bump serde_json from 1.0.143 to 1.0.151 |
-| #363 | `dependabot/cargo/rustix-1.1.5@f655bdc2b720` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): Bump rustix from 1.1.4 to 1.1.5 |
-| #364 | `dependabot/cargo/jsonschema-0.56.0@2701ae67c996` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump jsonschema from 0.33.0 to 0.58.4 |
-| #365 | `dependabot/cargo/rcgen-0.14.10@e743d516d87c` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump rcgen from 0.14.7 to 0.14.10 |
-| #366 | `dependabot/cargo/schemars-1.2.2@6ef2c96d0789` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): Bump schemars from 1.0.4 to 1.2.2 |
+| #362 | `dependabot/cargo/serde_json-1.0.151@1ba4e44f0a3a` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, QUEUED:, QUEUED:, QUEUED:, QUEUED: | chore(deps): Bump serde_json from 1.0.143 to 1.0.151 |
+| #363 | `dependabot/cargo/rustix-1.1.5@1b013603d982` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, COMPLETED:SUCCESS, QUEUED:, QUEUED:, QUEUED:, QUEUED: | chore(deps): Bump rustix from 1.1.4 to 1.1.5 |
+| #364 | `dependabot/cargo/jsonschema-0.56.0@d402330f61e0` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, COMPLETED:SUCCESS, QUEUED:, QUEUED:, QUEUED:, QUEUED: | chore(deps): Bump jsonschema from 0.33.0 to 0.58.5 |
+| #365 | `dependabot/cargo/rcgen-0.14.10@47d663b55236` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, QUEUED:, QUEUED:, QUEUED:, QUEUED: | chore(deps): Bump rcgen from 0.14.7 to 0.14.10 |
+| #366 | `dependabot/cargo/schemars-1.2.2@d6f9277d0c0c` | `main` | BLOCKED | COMPLETED:FAILURE, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, QUEUED:, QUEUED:, QUEUED:, QUEUED: | chore(deps): Bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
-| #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@c540d3c38f7b` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.22 |
+| #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@c1ab0092afb1` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, QUEUED:, IN_PROGRESS: | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.23 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
@@ -25,15 +25,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38040737579 | `772bc46537b0` | push | Repository quality | in_progress:- |
-| 38040737564 | `772bc46537b0` | push | Hosted portability and native qualification | in_progress:- |
-| 38040737562 | `772bc46537b0` | push | Cross-repository development broker qualification | in_progress:- |
-| 38040737554 | `772bc46537b0` | push | Fault assurance | in_progress:- |
-| 38040737550 | `772bc46537b0` | push | Formal assurance | in_progress:- |
-| 38040737543 | `772bc46537b0` | push | Credential-free benchmark path | in_progress:- |
-| 38040737535 | `772bc46537b0` | push | Huawei MIT source headers | completed:success |
-| 38040737493 | `772bc46537b0` | push | Portable protected-main provenance | completed:success |
-| 38040737454 | `772bc46537b0` | push | Rust verification | in_progress:- |
-| 38040737442 | `772bc46537b0` | push | Emulated aarch64 portability | in_progress:- |
-| 38039995878 | `971a3a9afea1` | pull_request | Portable protected-main provenance | completed:success |
-| 38039995871 | `971a3a9afea1` | pull_request | Credential-free benchmark path | completed:success |
+| 38040873453 | `1b013603d982` | pull_request | Credential-free benchmark path | queued:- |
+| 38040873442 | `1b013603d982` | pull_request | Huawei MIT source headers | completed:success |
+| 38040873440 | `1b013603d982` | pull_request | Formal assurance | queued:- |
+| 38040873429 | `1b013603d982` | pull_request | Fault assurance | queued:- |
+| 38040873424 | `1b013603d982` | pull_request | Rust verification | queued:- |
+| 38040873411 | `1b013603d982` | pull_request | Repository quality | queued:- |
+| 38040873407 | `1b013603d982` | pull_request | Hosted portability and native qualification | queued:- |
+| 38040873406 | `1b013603d982` | pull_request | Cross-repository development broker qualification | queued:- |
+| 38040873390 | `1b013603d982` | pull_request | Emulated aarch64 portability | queued:- |
+| 38040873381 | `1b013603d982` | pull_request | Portable protected-main provenance | queued:- |
+| 38040873364 | `1b013603d982` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 38040872132 | `d402330f61e0` | pull_request | Rust verification | queued:- |
