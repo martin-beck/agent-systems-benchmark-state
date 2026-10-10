@@ -314,6 +314,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1499` | `feature/ar-1499-development-credential-enrollment` | `0a2f6e9c74f9` | 0 | behind 496, ahead 1280 |
 | `ar1722-receipt-worker.ObeqHt` | `DETACHED` | `ac6557038cc3` | 0 | behind 238, ahead 0 |
 | `asb-ar1652-review-20261007` | `DETACHED` | `0c4ba0c721d0` | 0 | behind 222, ahead 1 |
+| `asb-ar1704-integration` | `DETACHED` | `4dfc1e07f424` | 0 | behind 0, ahead 0 |
 | `asb-ar1743-integration` | `DETACHED` | `507559f636e0` | 0 | behind 185, ahead 0 |
 | `asb-ar1743-postmerge` | `DETACHED` | `fd956d857970` | 0 | behind 183, ahead 0 |
 | `asb-ar1744-main-repro` | `DETACHED` | `1ab175c30eb0` | 0 | behind 179, ahead 0 |
