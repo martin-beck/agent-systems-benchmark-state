@@ -1162,7 +1162,7 @@
 | Summary | Define pinned official acquisition and build recipes for every ASB-supported tool and workload bundle. |
 | Next action | Define the authoritative supported-tool and workload acquisition catalog, official primary sources, binary/source alternatives, verification identities, and build recipes. |
 
-### AR-1777 — Verified prebuilt tool and workload acquisition
+### AR-1777 — Verified prebuilt tool acquisition
 
 | Field | Value |
 | --- | --- |
@@ -1173,7 +1173,7 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Acquire, verify, and atomically install official compatible prebuilt tools and workload bundles into a project-local root. |
+| Summary | Acquire, verify, and atomically install official compatible prebuilt executable tools into a project-local root. |
 | Next action | Implement catalog-driven verified compatible-binary reuse and official prebuilt tool/workload acquisition into project-local storage. |
 
 ### AR-1778 — Pinned source builds and project dependencies
@@ -1216,7 +1216,49 @@
 | Parent | None |
 | Children | None |
 | Summary | End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution. |
-| Next action | Qualify that default-installed project tools and workload bundles are selected and actually used by run, sweep, report, and comparison flows. |
+| Next action | Qualify that default-installed project tools and separately acquired workload bundles are selected and actually used by run, sweep, report, and comparison flows. |
+
+### AR-1781 — External workload acquisition catalog
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Define pinned official acquisition and preparation recipes for every externally sourced AI-agent workload, including SWE-mini where supported. |
+| Next action | Define the authoritative external AI-agent workload catalog, primary sources, immutable dataset/bundle identities, licenses, preparation recipes, and compatibility metadata. |
+
+### AR-1782 — Verified asb workload installation
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
+| Next action | Implement asb workload install/list/status/repair/update/remove for verified official external workload bundles and preparation closures. |
+
+### AR-1783 — Installed workload selection and execution
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Select verified external workload bundles and prove ASB run/sweep uses their exact project-local identity. |
+| Next action | Integrate verified installed workload bundles into catalog selection and prove run/sweep consumes their exact recorded identity. |
 
 
 ## Dependency graph
@@ -2057,6 +2099,9 @@ flowchart LR
         AR_1778["AR-1778 - Planned"]:::status_planned
         AR_1779["AR-1779 - Planned"]:::status_planned
         AR_1780["AR-1780 - Planned"]:::status_planned
+        AR_1781["AR-1781 - Planned"]:::status_planned
+        AR_1782["AR-1782 - Planned"]:::status_planned
+        AR_1783["AR-1783 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3941,6 +3986,7 @@ flowchart LR
     AR_1760 --> AR_1762
     AR_1760 --> AR_1765
     AR_1760 --> AR_1766
+    AR_1760 --> AR_1781
     AR_1761 --> AR_1763
     AR_1761 --> AR_1764
     AR_1761 --> AR_1765
@@ -3952,8 +3998,10 @@ flowchart LR
     AR_1762 --> AR_1776
     AR_1763 --> AR_1764
     AR_1763 --> AR_1765
+    AR_1763 --> AR_1783
     AR_1764 --> AR_1765
     AR_1764 --> AR_1780
+    AR_1764 --> AR_1783
     AR_1766 --> AR_1767
     AR_1766 --> AR_1768
     AR_1767 --> AR_1768
@@ -3973,6 +4021,9 @@ flowchart LR
     AR_1777 --> AR_1779
     AR_1778 --> AR_1779
     AR_1779 --> AR_1780
+    AR_1781 --> AR_1782
+    AR_1782 --> AR_1783
+    AR_1783 --> AR_1780
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -4065,5 +4116,3 @@ flowchart LR
 | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md) | [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
 | [AR-0805](../tasks/AR-0805-tui-run-control.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
 | [AR-0806](../tasks/AR-0806-tui-history-analysis.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
-| [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1170](../tasks/AR-1170.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md) |
-| [AR-0808](../tasks/AR-0808-core-workflow-guides.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md), [AR-1140](../tasks/AR-1140.md), [AR-1151](../tasks/AR-1151.md) | [AR-0810](../tasks/AR-0810-github-pages-documentation.md), [AR-0811](../tasks/AR-0811-documentation-qualification.md) |
