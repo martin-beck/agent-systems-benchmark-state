@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "task": "AR-1763",
+  "pull_request": 543,
+  "reviewed_head": "2e6a5d949e177599d6e78fec9488ad5e71cbe703",
+  "base_commit": "772bc46537b0574008635ebfc27d6b147c12c805",
+  "merge_commit": "5e08ddadff5a716bcce844ed8ed5e1bc1868d02f",
+  "merge_parents": [
+    "772bc46537b0574008635ebfc27d6b147c12c805",
+    "2e6a5d949e177599d6e78fec9488ad5e71cbe703"
+  ],
+  "merge_tree": "8a875262efb901b4df7dab7c2af765324ee0fb5d",
+  "independent_review": "approved exact head",
+  "pull_request_checks": "all required checks passed",
+  "post_merge_checks": {
+    "repository_quality": 38044929517,
+    "rust_verification": 38044929479,
+    "emulated_aarch64_portability": 38044929449,
+    "formal_assurance": 38044929478,
+    "fault_assurance": 38044929450,
+    "cross_repository_development_broker": 38044929507,
+    "hosted_portability": 38044929620,
+    "credential_free_benchmark": 38044929461,
+    "source_headers": 38044929554,
+    "portable_protected_main_provenance": 38044929447,
+    "status": "all required exact-main workflows passed"
+  },
+  "protected_main_policy": "passed",
+  "merge_signature": "verified SSH signature",
+  "merge_dco": "verified"
+}
