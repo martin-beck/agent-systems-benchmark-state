@@ -992,7 +992,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. |
-| Next action | Fresh independent exact-head review and required hosted CI for PR #544 at signed repair head 9faa1e88f6c89f516e12bc5b08b54ef3136a9553; do not merge before green checks. |
+| Next action | Fresh independent exact-head review and required hosted CI for PR #544 at signed repair head 9faa1e88fc0b1bc8fb8c13ddf98c2fc642de84ec; do not merge before green checks. |
 
 ### AR-1765 — End-to-end qualification of ASB tool projects
 

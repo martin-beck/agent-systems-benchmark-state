@@ -8,7 +8,7 @@
     "AR-1763"
   ],
   "id": "AR-1764",
-  "next_action": "Fresh independent exact-head review and required hosted CI for PR #544 at signed repair head 9faa1e88f6c89f516e12bc5b08b54ef3136a9553; do not merge before green checks.",
+  "next_action": "Fresh independent exact-head review and required hosted CI for PR #544 at signed repair head 9faa1e88fc0b1bc8fb8c13ddf98c2fc642de84ec; do not merge before green checks.",
   "observed_branch": "feature/ar-1764-project-run-integration",
   "observed_dirty": 0,
   "observed_head": "9faa1e88fc0b1bc8fb8c13ddf98c2fc642de84ec",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Integrate project tools and catalogs with ASB runs",
-  "updated_at": "2026-10-10T11:13:03+00:00",
+  "updated_at": "2026-10-10T11:13:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1764-project-run-integration"
 }
 ---
@@ -233,3 +233,6 @@ output contracts.
   to its active catalog entry identity. Drift regression proves no result is created. Exact focused,
   CLI lib, serialized workspace, rustdoc, and release-build gates passed; repair head signed SSH+DCO
   and pushed.
+
+- 2026-10-10T11:13:12+00:00: Corrected the durable exact repair-head identifier after verification
+  with git rev-parse HEAD.

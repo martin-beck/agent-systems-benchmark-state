@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1764](../tasks/AR-1764-project-run-integration.md): Integrate project tools and catalogs with ASB runs | ar1764-project-run-terra | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. | Fresh independent exact-head review and required hosted CI for PR #544 at signed repair head 9faa1e88f6c89f516e12bc5b08b54ef3136a9553; do not merge before green checks. |
+| P0 | [AR-1764](../tasks/AR-1764-project-run-integration.md): Integrate project tools and catalogs with ASB runs | ar1764-project-run-terra | Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs. | Fresh independent exact-head review and required hosted CI for PR #544 at signed repair head 9faa1e88fc0b1bc8fb8c13ddf98c2fc642de84ec; do not merge before green checks. |
 | P0 | [AR-1771](../tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | ar1771-output-contract-terra | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | AR-1763 is merged at protected main 5e08ddadff5a716bcce844ed8ed5e1bc1868d02f. Rebase preserved AR-1771 output-contract patch onto that exact head, reconcile catalog/shared config seams without touching AR-1764 project_run ownership, then complete contract gates. |
 
 ### Open (1)
