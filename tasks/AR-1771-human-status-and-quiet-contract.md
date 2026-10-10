@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T10:43:17+00:00",
+  "updated_at": "2026-10-10T10:44:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -179,3 +179,6 @@ terminal ownership.
 
 - 2026-10-10T10:43:17+00:00: Recovered preserved patch after AR-1763 merge; serialization condition
   is resolved.
+
+- 2026-10-10T10:44:07+00:00: Recorded command exit 0; command argv SHA-256
+  ed516f6f0da731f7f0c8670680dc0151dbd38c6637e417bb47b211eb4c8699ca.
