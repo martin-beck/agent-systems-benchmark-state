@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:22:15+00:00",
+  "updated_at": "2026-10-10T12:22:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -147,3 +147,6 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 - 2026-10-10T12:22:15+00:00: Published PR #546 from exact signed head
   ac669d1ca1fd5324f505ac24feec5e4878a625fa. Hosted workflows are queued; portable provenance, SPDX,
   and AWQ shadow checks already passed.
+
+- 2026-10-10T12:22:37+00:00: Recorded command exit 0; command argv SHA-256
+  7959d0d29991902d7c3bff78d745c6bc6c22bf1b7cd308db08897c4cded95a3b.
