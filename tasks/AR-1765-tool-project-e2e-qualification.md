@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1765-tool-project-e2e-qualification",
   "checkpoint_commit": "af6c1bcbddbba03a6f90f670c30f44acf99eca6e",
-  "claim_expires": "2026-10-10T17:49:32+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1760",
     "AR-1761",
@@ -15,7 +15,7 @@
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
   "observed_head": "af6c1bcbddbba03a6f90f670c30f44acf99eca6e",
-  "owner": "ar1765-tool-project-e2e-terra",
+  "owner": "",
   "plan": "../plans/AR-1765-tool-project-e2e-qualification.md",
   "priority": "P0",
   "schema_version": 1,
@@ -29,11 +29,11 @@
   },
   "spec_ref": "specs/AR-1765.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T15:54:18+00:00",
+  "updated_at": "2026-10-10T15:54:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -414,3 +414,6 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 
 - 2026-10-10T15:54:18+00:00: Accepted: signed merge a65ebb560 has reviewed tree 64c4e060, exact
   parents 3cd8ae24 and af6c1bcb, verified SSH/DCO, and all 10 exact-main workflows terminal-success.
+
+- 2026-10-10T15:54:24+00:00: Released AR-1765 after fresh-user receipt, independent technical
+  review, all exact-head CI, signed protected-main merge a65ebb560, and all exact-main CI success.

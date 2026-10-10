@@ -998,11 +998,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1765-tool-project-e2e-terra |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. |
@@ -2097,7 +2097,7 @@ flowchart LR
         AR_1762["AR-1762 - Done"]:::status_done
         AR_1763["AR-1763 - Done"]:::status_done
         AR_1764["AR-1764 - Done"]:::status_done
-        AR_1765["AR-1765 - In progress"]:::status_in_progress
+        AR_1765["AR-1765 - Done"]:::status_done
         AR_1766["AR-1766 - Done"]:::status_done
         AR_1767["AR-1767 - Done"]:::status_done
         AR_1768["AR-1768 - Done"]:::status_done
