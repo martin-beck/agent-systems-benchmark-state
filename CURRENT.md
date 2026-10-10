@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1704](tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Run the serialized full workspace suite after green format, public typed-error, discovery, diagnostic-contract, and clippy gates. If green, inspect the exact diff and create the signed DCO repair commit; then seek fresh independent review before any PR. | ar1704-provider-errors |
+| P0 | [AR-1704](tasks/AR-1704.md): Typed provider failures, model admission, and trusted curl discovery | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. | Diagnose the serialized workspace exit 101 with the identical Cargo test suite in quiet mode so the terminal failing test is visible without retaining broad output. Repair only the identified cause, then rerun normal full gates before commit. | ar1704-provider-errors |
 
 ## Open
 
