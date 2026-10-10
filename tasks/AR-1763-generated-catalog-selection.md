@@ -11,7 +11,7 @@
   "id": "AR-1763",
   "next_action": "Implement deterministic project catalog generation, list/show/select, provenance and compatibility/digest/secret-boundary tests in the isolated worktree; then obtain independent exact-head review.",
   "observed_branch": "feature/ar-1763-generated-catalog-selection",
-  "observed_dirty": 9,
+  "observed_dirty": 10,
   "observed_head": "772bc46537b0574008635ebfc27d6b147c12c805",
   "owner": "codex-asb-ar1763-catalog-terra",
   "plan": "../plans/AR-1763-generated-catalog-selection.md",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T09:40:38+00:00",
+  "updated_at": "2026-10-10T09:41:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
