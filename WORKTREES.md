@@ -77,13 +77,15 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1760-project-init` | `DETACHED` | `64843f196737` | 0 | behind 92, ahead 0 |
 | `agent-systems-benchmark-ar-1761-tool-install-registry` | `feature/ar-1761-tool-install-registry-v2` | `fe6aa7c346e5` | 0 | behind 59, ahead 0 |
 | `agent-systems-benchmark-ar-1762-tool-discovery` | `feature/ar-1762-tool-discovery-v2` | `9cd9e80cfc2a` | 0 | behind 72, ahead 0 |
-| `agent-systems-benchmark-ar-1763-generated-catalog-selection` | `feature/ar-1763-generated-catalog-selection` | `772bc46537b0` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1763-generated-catalog-selection` | `feature/ar-1763-generated-catalog-selection` | `772bc46537b0` | 5 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-config/PROJECT_CONFIG.md`, `crates/asb-config/schema/v1/project-config.schema.json`, `crates/asb-config/src/lib.rs` |
 | `agent-systems-benchmark-ar-1766-fine-grained-human-diagnostic-contract` | `feature/ar-1766-fine-grained-human-diagnostic-contract` | `b8ae2dc60a71` | 0 | behind 56, ahead 0 |
 | `agent-systems-benchmark-ar-1767-safe-directory-preparation-and-notice` | `feature/ar-1767-safe-directory-preparation-and-notice` | `f34830bb75ce` | 0 | behind 52, ahead 0 |
 | `agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics` | `feature/ar-1768-exhaustive-actionable-human-diagnostics` | `cd46a00c276b` | 0 | behind 33, ahead 0 |
 | `agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci` | `feature/ar-1769-human-diagnostic-completeness-ci` | `971a3a9afea1` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening` | `feature/ar-1770-descriptor-safe-directory-race-hardening` | `6278fcd6720f` | 0 | behind 42, ahead 0 |
-| `agent-systems-benchmark-ar-1771-human-status-and-quiet-contract` | `feature/ar-1771-human-status-and-quiet-contract` | `772bc46537b0` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1771-human-status-and-quiet-contract` | `feature/ar-1771-human-status-and-quiet-contract` | `772bc46537b0` | 4 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-config/schema/v1/project-config.schema.json`, `crates/asb-config/src/lib.rs` |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 185, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 173, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 119, ahead 0 |
