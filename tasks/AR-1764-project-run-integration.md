@@ -8,7 +8,7 @@
     "AR-1763"
   ],
   "id": "AR-1764",
-  "next_action": "Independent exact-head review of PR for 99a3ed6b6e2ec05ff7d2afb24a1b34c2f2e6c80e; wait for required hosted CI before merge.",
+  "next_action": "Fresh independent exact-head review and required hosted CI for PR #544 at signed repair head 9faa1e88f6c89f516e12bc5b08b54ef3136a9553; do not merge before green checks.",
   "observed_branch": "feature/ar-1764-project-run-integration",
   "observed_dirty": 0,
   "observed_head": "9faa1e88fc0b1bc8fb8c13ddf98c2fc642de84ec",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Integrate project tools and catalogs with ASB runs",
-  "updated_at": "2026-10-10T11:12:59+00:00",
+  "updated_at": "2026-10-10T11:13:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1764-project-run-integration"
 }
 ---
@@ -228,3 +228,8 @@ output contracts.
   b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
 
 - 2026-10-10T11:12:59+00:00: Heartbeat by ar1764-project-run-terra.
+
+- 2026-10-10T11:13:03+00:00: Review P1 repaired: every selected primary inventory record now binds
+  to its active catalog entry identity. Drift regression proves no result is created. Exact focused,
+  CLI lib, serialized workspace, rustdoc, and release-build gates passed; repair head signed SSH+DCO
+  and pushed.
