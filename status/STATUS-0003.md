@@ -1006,7 +1006,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. |
-| Next action | All 15 hosted checks are terminal-success for PR #546 exact signed head af6c1bcb. Await a fresh GitHub pull-request approval visible in the PR reviews API; only then perform the signed exact-target-ref merge and post-merge qualification. Do not treat state text as approval evidence. |
+| Next action | Use the documented signed local exact-target-ref merge procedure for PR #546 with base 3cd8ae24048d153a4928511b6b1e64a50213d5e0 and reviewed signed head af6c1bcbddbba03a6f90f670c30f44acf99eca6e; then verify the remote merge, exact-main CI, receipt, and durable acceptance/release. |
 
 ### AR-1766 — Fine-grained human diagnostic contract
 
