@@ -13,8 +13,8 @@
   "id": "AR-1765",
   "next_action": "Run the disposable fresh-user JSON-silence and negative-recovery qualification on rebased signed head 4326cf11, then complete full gates, PR, independent review, exact-head CI, merge, and post-merge acceptance.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
-  "observed_dirty": 1,
-  "observed_head": "4326cf11be13a63e98042430373c49c06338a04a",
+  "observed_dirty": 0,
+  "observed_head": "ac669d1ca1fd5324f505ac24feec5e4878a625fa",
   "owner": "ar1765-tool-project-e2e-terra",
   "plan": "../plans/AR-1765-tool-project-e2e-qualification.md",
   "priority": "P0",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:18:56+00:00",
+  "updated_at": "2026-10-10T12:19:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
