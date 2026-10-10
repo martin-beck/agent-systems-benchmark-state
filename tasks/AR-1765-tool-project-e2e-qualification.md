@@ -14,7 +14,7 @@
   "next_action": "Wait for AR-1771 output-router merge, then rebase this signed parser repair onto current main and complete the fresh-user JSON-silence, negative-recovery, full-gate, PR, review, CI, merge, and post-merge qualification.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
-  "observed_head": "0bd71b645a1d31ae23749d3c22621d663b1aa165",
+  "observed_head": "4326cf11be13a63e98042430373c49c06338a04a",
   "owner": "ar1765-tool-project-e2e-terra",
   "plan": "../plans/AR-1765-tool-project-e2e-qualification.md",
   "priority": "P0",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:15:57+00:00",
+  "updated_at": "2026-10-10T12:16:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
