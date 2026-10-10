@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1771",
-  "next_action": "PR #545 exact head e9168d44 failed the hosted Repository quality coverage gate: workspace line coverage 88.44%, below the required 90%. Add focused executable/library/TUI output-router behavior tests for AR-1771 changed paths; rerun local coverage and all full gates, then publish a signed repair for fresh review and CI. Do not merge the failed head.",
+  "next_action": "PR #545 coverage repair is published at exact signed head 4b86c4a7a0993de2a5f93a061505c1d819d4a2df. New process-boundary output-routing coverage raises enforced local line coverage to 90.35%; exact-head serialized workspace, fmt/clippy/rustdoc/release gates are green. Await fresh independent exact-head review and hosted CI; do not merge before both are green.",
   "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
   "observed_dirty": 0,
   "observed_head": "4b86c4a7a0993de2a5f93a061505c1d819d4a2df",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 255,
+  "task_revision": 256,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T12:02:36+00:00",
+  "updated_at": "2026-10-10T12:02:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -718,3 +718,7 @@ terminal ownership.
   53cba0ce930dad6e6d096ae5dad9d3b9e6c00ed303905e4162915edf87bd9b4d.
 
 - 2026-10-10T12:02:36+00:00: Heartbeat by ar1771-output-contract-terra.
+
+- 2026-10-10T12:02:42+00:00: Repaired terminal 88.44% hosted Repository quality coverage failure
+  with executable project-output routing tests, not a threshold change. Verified remote branch and
+  pull ref equal 4b86c4a7.
