@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:44:03+00:00",
+  "updated_at": "2026-10-10T12:44:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -329,3 +329,6 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
   clippy -D warnings, workspace tests, rustdoc -D warnings, and release build pass on af6c1bcb.
 
 - 2026-10-10T12:44:03+00:00: Checkpointed source commit af6c1bcbddbba03a6f90f670c30f44acf99eca6e.
+
+- 2026-10-10T12:44:34+00:00: Recorded command exit 8; command argv SHA-256
+  1dd8419b7f84b541050de3a44d71ca8b34130c6f4634f2568be77513dc043da6.
