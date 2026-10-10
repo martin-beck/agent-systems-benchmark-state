@@ -8,7 +8,7 @@
     "AR-1763"
   ],
   "id": "AR-1764",
-  "next_action": "Fresh independent exact-head review and required hosted CI for PR #544 at signed repair head 9faa1e88fc0b1bc8fb8c13ddf98c2fc642de84ec; do not merge before green checks.",
+  "next_action": "Wait for every post-merge workflow on exact main merge fd61b856570bf1d57e9dba4f8bee1da99b77189e to reach successful terminal status; then record receipt and accept/release.",
   "observed_branch": "feature/ar-1764-project-run-integration",
   "observed_dirty": 0,
   "observed_head": "9faa1e88fc0b1bc8fb8c13ddf98c2fc642de84ec",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make ASB benchmark commands consume initialized projects, discovered tools, and selected catalogs.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Integrate project tools and catalogs with ASB runs",
-  "updated_at": "2026-10-10T11:28:10+00:00",
+  "updated_at": "2026-10-10T11:28:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1764-project-run-integration"
 }
 ---
@@ -298,3 +298,9 @@ output contracts.
 
 - 2026-10-10T11:28:10+00:00: Recorded command exit 0; command argv SHA-256
   41c077c406c684d53361c474e77b18e96c1310e2ab581fb8b589b1cd153f3b8d.
+
+- 2026-10-10T11:28:38+00:00: Protected local merge published:
+  fd61b856570bf1d57e9dba4f8bee1da99b77189e. Remote main matches. Parents are exact base
+  5e08ddadff5a716bcce844ed8ed5e1bc1868d02f and reviewed head
+  9faa1e88fc0b1bc8fb8c13ddf98c2fc642de84ec; tree ff8e4623834f287e0cd6da6ffc1f0f27b580aa92; SSH
+  signature and DCO verified. Post-merge workflows pending.
