@@ -9,8 +9,8 @@
   "id": "AR-1769",
   "next_action": "Resolve independent review findings for macro token streams and qualified regular paths; add fixtures, rerun focused/full gates, then obtain fresh exact-head review before publication.",
   "observed_branch": "feature/ar-1769-human-diagnostic-completeness-ci",
-  "observed_dirty": 1,
-  "observed_head": "aeb9f10a471d63d04ae3966d282e2a0251c09789",
+  "observed_dirty": 0,
+  "observed_head": "99b3a761966d27203f83bbd15400084596f7d32e",
   "owner": "codex-ar1769-matrix-repair-terra",
   "plan": "../plans/AR-1769-human-diagnostic-completeness-ci.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject uncataloged, overly generic, context-free, unactionable, or privacy-unsafe human diagnostics.",
-  "task_revision": 300,
+  "task_revision": 301,
   "title": "Human diagnostic completeness CI gate",
-  "updated_at": "2026-10-10T00:09:30+00:00",
+  "updated_at": "2026-10-10T00:09:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci"
 }
 ---
