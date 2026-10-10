@@ -978,7 +978,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. |
-| Next action | PR #543 exact repair head 238529db69321561be890344431c8161075c847e has green local gates; await fresh independent exact-head review and all required hosted checks before the documented signed merge and post-merge verification. |
+| Next action | PR #543 exact provenance-repair head 2e6a5d949e177599d6e78fec9488ad5e71cbe703 has green local gates; await fresh independent exact-head review and all required hosted checks before the documented signed merge and post-merge verification. |
 
 ### AR-1764 — Integrate project tools and catalogs with ASB runs
 

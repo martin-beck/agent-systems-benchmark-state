@@ -9,7 +9,7 @@
     "AR-1769"
   ],
   "id": "AR-1763",
-  "next_action": "PR #543 exact repair head 238529db69321561be890344431c8161075c847e has green local gates; await fresh independent exact-head review and all required hosted checks before the documented signed merge and post-merge verification.",
+  "next_action": "PR #543 exact provenance-repair head 2e6a5d949e177599d6e78fec9488ad5e71cbe703 has green local gates; await fresh independent exact-head review and all required hosted checks before the documented signed merge and post-merge verification.",
   "observed_branch": "feature/ar-1763-generated-catalog-selection",
   "observed_dirty": 0,
   "observed_head": "2e6a5d949e177599d6e78fec9488ad5e71cbe703",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T10:15:08+00:00",
+  "updated_at": "2026-10-10T10:15:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
@@ -375,3 +375,7 @@ secret store or require production signatures in development mode.
 
 - 2026-10-10T10:15:08+00:00: Recorded command exit 0; command argv SHA-256
   4d27eefe97b191ccd384a5173673bc10100e7eef24073bb3efe4822055c687da.
+
+- 2026-10-10T10:15:18+00:00: Refreshed the reviewed public CLI provenance digest after catalog
+  dispatch changed lib.rs; workflow transcript privacy and reproducibility pass. Signed/DCO head
+  2e6a5d949e177599d6e78fec9488ad5e71cbe703 pushed; fresh hosted CI and review pending.
