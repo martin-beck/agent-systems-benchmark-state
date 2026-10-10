@@ -86,7 +86,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics` | `feature/ar-1768-exhaustive-actionable-human-diagnostics` | `cd46a00c276b` | 0 | behind 38, ahead 0 |
 | `agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci` | `feature/ar-1769-human-diagnostic-completeness-ci` | `971a3a9afea1` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening` | `feature/ar-1770-descriptor-safe-directory-race-hardening` | `6278fcd6720f` | 0 | behind 47, ahead 0 |
-| `agent-systems-benchmark-ar-1771-human-status-and-quiet-contract` | `feature/ar-1771-human-status-and-quiet-contract` | `772bc46537b0` | 0 | behind 5, ahead 0 |
+| `agent-systems-benchmark-ar-1771-human-status-and-quiet-contract` | `feature/ar-1771-human-status-and-quiet-contract` | `5e08ddadff5a` | 5 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/tui.rs`, `crates/asb-config/schema/v1/project-config.schema.json`, `crates/asb-config/src/lib.rs` |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 190, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 178, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 124, ahead 0 |

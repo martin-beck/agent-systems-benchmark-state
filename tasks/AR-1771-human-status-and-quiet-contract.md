@@ -9,8 +9,8 @@
   "id": "AR-1771",
   "next_action": "AR-1763 is merged at protected main 5e08ddadff5a716bcce844ed8ed5e1bc1868d02f. Rebase preserved AR-1771 output-contract patch onto that exact head, reconcile catalog/shared config seams without touching AR-1764 project_run ownership, then complete contract gates.",
   "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
-  "observed_dirty": 0,
-  "observed_head": "772bc46537b0574008635ebfc27d6b147c12c805",
+  "observed_dirty": 5,
+  "observed_head": "5e08ddadff5a716bcce844ed8ed5e1bc1868d02f",
   "owner": "ar1771-output-contract-terra",
   "plan": "../plans/AR-1771-human-status-and-quiet-contract.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T10:46:24+00:00",
+  "updated_at": "2026-10-10T10:46:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
