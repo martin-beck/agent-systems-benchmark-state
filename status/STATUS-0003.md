@@ -1997,7 +1997,7 @@ flowchart LR
         AR_1654["AR-1654 - Planned"]:::status_planned
         AR_1655["AR-1655 - Planned"]:::status_planned
         AR_1656["AR-1656 - Done"]:::status_done
-        AR_1657["AR-1657 - Planned"]:::status_planned
+        AR_1657["AR-1657 - Open"]:::status_open
         AR_1658["AR-1658 - Planned"]:::status_planned
         AR_1659["AR-1659 - Planned"]:::status_planned
         AR_1660["AR-1660 - Planned"]:::status_planned
