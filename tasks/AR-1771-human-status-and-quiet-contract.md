@@ -8,9 +8,9 @@
   ],
   "id": "AR-1771",
   "next_action": "After AR-1768 is done, define the closed human status, output-router, level, quiet, stream, and compatibility contract for every ASB command.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "772bc46537b0574008635ebfc27d6b147c12c805",
   "owner": "ar1771-output-contract-terra",
   "plan": "../plans/AR-1771-human-status-and-quiet-contract.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T09:30:41+00:00",
+  "updated_at": "2026-10-10T09:30:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
