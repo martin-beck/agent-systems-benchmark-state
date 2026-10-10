@@ -13,7 +13,7 @@
   "id": "AR-1765",
   "next_action": "PR #546 now points to signed head 60fe1d7c. Obtain a fresh independent exact-head review and wait for all hosted CI on 60fe1d7c to reach terminal success; only then merge and record post-merge receipt and acceptance. Do not merge the failed ac669d1c head.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "60fe1d7c2a7a93494e9ac2b2ab5516fa1f17c608",
   "owner": "ar1765-tool-project-e2e-terra",
   "plan": "../plans/AR-1765-tool-project-e2e-qualification.md",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:41:49+00:00",
+  "updated_at": "2026-10-10T12:42:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
