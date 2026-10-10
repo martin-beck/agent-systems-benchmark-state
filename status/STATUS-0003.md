@@ -252,7 +252,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define and qualify the explicit development live provider boundary, runtime credential injection, and typed no-fallback failures. |
-| Next action | Repair human execution presentation to include the bounded typed live_provider_attempt_unavailable diagnostic from structured attempt failures, matching JSON without provider data or mock/replay fallback; then rerun the public parity fixture and gates. |
+| Next action | Complete the line-stable public live-provider fixture placement, then rerun diagnostic_contract and update only any remaining reviewed legacy identity; follow with provenance and full gates. |
 
 ### AR-1710 — Wizard provider-model selection and warning-only readiness
 
