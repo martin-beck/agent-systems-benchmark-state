@@ -9,7 +9,7 @@
   "id": "AR-1771",
   "next_action": "PR #545 is at exact head 5978aab04533920da1090dc27cded441a7699b59. Serialized workspace and fmt/clippy/rustdoc/release gates are green; await fresh independent exact-head review and hosted CI. Non-serialized workspace control-state ownership failures were classified as shared-root contention and pass when isolated.",
   "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "f2deefac6c3ec9703f0ab9470ebad0988b31746f",
   "owner": "ar1771-output-contract-terra",
   "plan": "../plans/AR-1771-human-status-and-quiet-contract.md",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 167,
+  "task_revision": 168,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T11:36:02+00:00",
+  "updated_at": "2026-10-10T11:36:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
