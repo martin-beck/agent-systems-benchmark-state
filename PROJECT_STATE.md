@@ -20,21 +20,21 @@ Generated from local Git and GitHub. Do not edit.
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
 | #534 | `feature/ar-1761-tool-install-registry@b95c89db086a` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add bounded project tool installer |
 | #535 | `feature/ar-1762-tool-discovery@78bc38b6e88d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add deterministic tool discovery |
-| #545 | `feature/ar-1771-human-status-and-quiet-contract@e9168d44b16d` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(cli): define human status and quiet contract |
+| #545 | `feature/ar-1771-human-status-and-quiet-contract@e9168d44b16d` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): define human status and quiet contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38049573556 | `e9168d44b16d` | pull_request | Credential-free benchmark path | queued:- |
-| 38049573541 | `e9168d44b16d` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 38049573525 | `e9168d44b16d` | pull_request | Cross-repository development broker qualification | queued:- |
-| 38049573523 | `e9168d44b16d` | pull_request | Portable protected-main provenance | queued:- |
-| 38049573516 | `e9168d44b16d` | pull_request | Hosted portability and native qualification | queued:- |
-| 38049573512 | `e9168d44b16d` | pull_request | Rust verification | queued:- |
-| 38049573504 | `e9168d44b16d` | pull_request | Emulated aarch64 portability | queued:- |
-| 38049573496 | `e9168d44b16d` | pull_request | Formal assurance | queued:- |
-| 38049573495 | `e9168d44b16d` | pull_request | Huawei MIT source headers | queued:- |
-| 38049573490 | `e9168d44b16d` | pull_request | Fault assurance | queued:- |
-| 38049573489 | `e9168d44b16d` | pull_request | Repository quality | queued:- |
+| 38049573556 | `e9168d44b16d` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38049573541 | `e9168d44b16d` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38049573525 | `e9168d44b16d` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38049573523 | `e9168d44b16d` | pull_request | Portable protected-main provenance | in_progress:- |
+| 38049573516 | `e9168d44b16d` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38049573512 | `e9168d44b16d` | pull_request | Rust verification | in_progress:- |
+| 38049573504 | `e9168d44b16d` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38049573496 | `e9168d44b16d` | pull_request | Formal assurance | in_progress:- |
+| 38049573495 | `e9168d44b16d` | pull_request | Huawei MIT source headers | completed:success |
+| 38049573490 | `e9168d44b16d` | pull_request | Fault assurance | in_progress:- |
+| 38049573489 | `e9168d44b16d` | pull_request | Repository quality | in_progress:- |
 | 38048496318 | `fd61b856570b` | push | Emulated aarch64 portability | completed:success |
