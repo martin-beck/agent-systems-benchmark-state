@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:17:11+00:00",
+  "updated_at": "2026-10-10T12:17:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -97,3 +97,6 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 - 2026-10-10T12:17:11+00:00: Confirmed origin/main 3cd8ae24048d153a4928511b6b1e64a50213d5e0;
   0bd71b64 rebased cleanly as signed-DCO 4326cf11 with no conflicts; cargo test --locked -p asb-cli
   --lib passed (326 tests).
+
+- 2026-10-10T12:17:32+00:00: Recorded command exit 0; command argv SHA-256
+  c1336e55779d058eb506fbff81b7c4a528e1e4201f92677c732438419429ec6d.
