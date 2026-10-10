@@ -11,10 +11,10 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #362 | `dependabot/cargo/serde_json-1.0.151@1ba4e44f0a3a` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): Bump serde_json from 1.0.143 to 1.0.151 |
-| #363 | `dependabot/cargo/rustix-1.1.5@1b013603d982` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): Bump rustix from 1.1.4 to 1.1.5 |
-| #364 | `dependabot/cargo/jsonschema-0.56.0@d402330f61e0` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump jsonschema from 0.33.0 to 0.58.5 |
-| #365 | `dependabot/cargo/rcgen-0.14.10@47d663b55236` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump rcgen from 0.14.7 to 0.14.10 |
-| #366 | `dependabot/cargo/schemars-1.2.2@d6f9277d0c0c` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): Bump schemars from 1.0.4 to 1.2.2 |
+| #363 | `dependabot/cargo/rustix-1.1.5@e42ad6479ccc` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | chore(deps): Bump rustix from 1.1.4 to 1.1.5 |
+| #364 | `dependabot/cargo/jsonschema-0.56.0@d402330f61e0` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump jsonschema from 0.33.0 to 0.58.5 |
+| #365 | `dependabot/cargo/rcgen-0.14.10@9058d80291a7` | `main` | BLOCKED | QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | chore(deps): Bump rcgen from 0.14.7 to 0.14.10 |
+| #366 | `dependabot/cargo/schemars-1.2.2@326986b2889d` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | chore(deps): Bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #467 | `dependabot/github_actions/taiki-e/install-action-2.87.21@c1ab0092afb1` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.23 |
 | #494 | `repair/ar-protected-provenance@26bdd021b0d3` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: restore protected-main signed provenance |
@@ -25,15 +25,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38044995975 | `5e08ddadff5a` | dynamic | Dependabot Updates | in_progress:- |
-| 38044995157 | `5e08ddadff5a` | dynamic | Dependabot Updates | in_progress:- |
-| 38044994463 | `5e08ddadff5a` | dynamic | Dependabot Updates | in_progress:- |
-| 38044992596 | `5e08ddadff5a` | dynamic | Dependabot Updates | in_progress:- |
-| 38044992575 | `5e08ddadff5a` | dynamic | Dependabot Updates | in_progress:- |
-| 38044929620 | `5e08ddadff5a` | push | Hosted portability and native qualification | in_progress:- |
-| 38044929554 | `5e08ddadff5a` | push | Huawei MIT source headers | completed:success |
-| 38044929517 | `5e08ddadff5a` | push | Repository quality | in_progress:- |
-| 38044929507 | `5e08ddadff5a` | push | Cross-repository development broker qualification | in_progress:- |
-| 38044929479 | `5e08ddadff5a` | push | Rust verification | in_progress:- |
-| 38044929478 | `5e08ddadff5a` | push | Formal assurance | in_progress:- |
-| 38044929461 | `5e08ddadff5a` | push | Credential-free benchmark path | in_progress:- |
+| 38045051834 | `326986b2889d` | pull_request | Hosted portability and native qualification | queued:- |
+| 38045051821 | `326986b2889d` | pull_request | Huawei MIT source headers | queued:- |
+| 38045051805 | `326986b2889d` | pull_request | Portable protected-main provenance | queued:- |
+| 38045051779 | `326986b2889d` | pull_request | Credential-free benchmark path | queued:- |
+| 38045051776 | `326986b2889d` | pull_request | Emulated aarch64 portability | queued:- |
+| 38045051773 | `326986b2889d` | pull_request | Cross-repository development broker qualification | queued:- |
+| 38045051768 | `326986b2889d` | pull_request | Rust verification | queued:- |
+| 38045051710 | `326986b2889d` | pull_request | Formal assurance | queued:- |
+| 38045051682 | `326986b2889d` | pull_request | Repository quality | queued:- |
+| 38045051662 | `326986b2889d` | pull_request | Fault assurance | queued:- |
+| 38045051657 | `326986b2889d` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 38045049764 | `e42ad6479ccc` | pull_request | Formal assurance | queued:- |
