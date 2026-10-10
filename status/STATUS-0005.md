@@ -1,10 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1659](../tasks/AR-1659.md) | [AR-1611](../tasks/AR-1611.md), [AR-1658](../tasks/AR-1658.md) | [AR-1660](../tasks/AR-1660.md), [AR-1667](../tasks/AR-1667.md), [AR-1674](../tasks/AR-1674.md), [AR-1697](../tasks/AR-1697.md) |
-| [AR-1660](../tasks/AR-1660.md) | [AR-1654](../tasks/AR-1654.md), [AR-1657](../tasks/AR-1657.md), [AR-1659](../tasks/AR-1659.md) | [AR-1667](../tasks/AR-1667.md), [AR-1668](../tasks/AR-1668.md), [AR-1697](../tasks/AR-1697.md) |
-| [AR-1661](../tasks/AR-1661.md) | None | [AR-1663](../tasks/AR-1663.md), [AR-1665](../tasks/AR-1665.md) |
-| [AR-1663](../tasks/AR-1663.md) | [AR-1658](../tasks/AR-1658.md), [AR-1661](../tasks/AR-1661.md) | [AR-1665](../tasks/AR-1665.md), [AR-1666](../tasks/AR-1666.md) |
-| [AR-1665](../tasks/AR-1665.md) | [AR-1661](../tasks/AR-1661.md), [AR-1663](../tasks/AR-1663.md) | [AR-1666](../tasks/AR-1666.md), [AR-1670](../tasks/AR-1670.md), [AR-1679](../tasks/AR-1679.md), [AR-1680](../tasks/AR-1680.md), [AR-1681](../tasks/AR-1681.md), [AR-1682](../tasks/AR-1682.md) |
 | [AR-1666](../tasks/AR-1666.md) | [AR-1663](../tasks/AR-1663.md), [AR-1665](../tasks/AR-1665.md) | None |
 | [AR-1667](../tasks/AR-1667.md) | [AR-1658](../tasks/AR-1658.md), [AR-1659](../tasks/AR-1659.md), [AR-1660](../tasks/AR-1660.md) | [AR-1668](../tasks/AR-1668.md) |
 | [AR-1668](../tasks/AR-1668.md) | [AR-1660](../tasks/AR-1660.md), [AR-1667](../tasks/AR-1667.md) | [AR-1677](../tasks/AR-1677.md) |
@@ -118,11 +113,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1763](../tasks/AR-1763-generated-catalog-selection.md): Generate and select ASB project catalogs | codex-asb-ar1763-catalog-terra | Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance. | PR #543 exact head 2e6a5d949e177599d6e78fec9488ad5e71cbe703 has independent technical review approval and terminal-green hosted checks. A distinct integration owner may now perform only the documented signed protected merge, then identify the immutable merge commit and record terminal exact-main assurance; do not treat this development approval as release evidence. |
 | P0 | [AR-1771](../tasks/AR-1771-human-status-and-quiet-contract.md): Human output, status, and quiet contract | ar1771-output-contract-terra | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. | Preserved uncommitted AR-1771 patch touches crates/asb-cli/src/lib.rs, human.rs, tui.rs and the additive output config/schema seam. AR-1763 now owns concurrent edits in lib.rs/human.rs/config; do not commit or edit until its exact main head lands, then rebase and reconcile all seams before resuming gates. |
 
 ### Open (1)
@@ -345,7 +339,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (545)
+### Done (546)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -556,3 +550,7 @@
 | P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | Unclaimed | Reduced profile passes self-contained QEMU: transient admission, bounded models, sanitized non-claiming attestation, and clean poweroff. | Release after exact-head review; retain AR-1307/1308 formal qualification as separate blocked gates. |
 | P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Qualify the central orchestration path with deterministic local/mock and strict-replay authority; deployment-owned live authority is optional future hardening, not a development prerequisite. | Development path is unblocked: promote and claim this AR, qualify the existing central orchestrator with deterministic local/mock and strict-replay authority, and run exact-head gates. A deployment-owned authenticated source is optional future production hardening and must not block development qualification. |
 | P0 | [AR-1524](../tasks/AR-1524.md): Repair live-dispatch dependency graph | Unclaimed | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. |
+| P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | Unclaimed | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | No development action remains. Preserve the exact-main first-customer local/mock and strict-replay receipt; live-provider deployment remains optional future hardening. |
+| P0 | [AR-1527](../tasks/AR-1527.md): Normalize AR-1307/1308 development seed policy | Unclaimed | Remove reviewed seed and digest prerequisites from the AR-1307/1308 development path while preserving separate formal and release evidence gates. | Promote after state review; audit AR-1307/1308 and every active dependent for development-only seed/digest prerequisites, then normalize their task and plan language without changing formal gates. |
+| P0 | [AR-1528](../tasks/AR-1528.md): Rerun AR-1307/1308 development fixtures | Unclaimed | Run the repaired AR-1307/1308 unsigned-development fixture path and preserve separate formal qualification blockers. | No further action: development fixture rerun is complete; retain its non-qualifying evidence while formal work proceeds separately. |
+| P0 | [AR-1529](../tasks/AR-1529.md): AR-1307/1308 formal capacity decision successor | Unclaimed | Replace the stale AR-1309 dependency with a reviewed formal capacity/model decision grounded in the completed capacity and reduced-profile evidence. | No further action: the 8 GiB/8 GiB signed-capacity contract is recorded; AR-1530 owns implementation. |

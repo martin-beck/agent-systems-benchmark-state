@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1763-generated-catalog-selection",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-10T12:15:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1761",
     "AR-1762",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1763-generated-catalog-selection",
   "observed_dirty": 0,
   "observed_head": "2e6a5d949e177599d6e78fec9488ad5e71cbe703",
-  "owner": "codex-asb-ar1763-catalog-terra",
+  "owner": "",
   "plan": "../plans/AR-1763-generated-catalog-selection.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1763.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Generate selectable agent/harness/benchmark/workload catalogs and persist their provenance.",
-  "task_revision": 189,
+  "task_revision": 190,
   "title": "Generate and select ASB project catalogs",
-  "updated_at": "2026-10-10T10:39:18+00:00",
+  "updated_at": "2026-10-10T10:39:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1763-generated-catalog-selection"
 }
 ---
@@ -554,3 +554,8 @@ secret store or require production signatures in development mode.
 - 2026-10-10T10:39:18+00:00: PR #543 exact reviewed head 2e6a5d949e177599d6e78fec9488ad5e71cbe703
   merged as signed DCO two-parent main commit 5e08ddadff5a716bcce844ed8ed5e1bc1868d02f; reviewed
   tree, protected-main policy, and all exact-main workflows passed.
+
+- 2026-10-10T10:39:27+00:00: Accepted post-merge receipt quality/AR-1763-postmerge-receipt.json: PR
+  #543 exact head 2e6a5d949e177599d6e78fec9488ad5e71cbe703 merged as signed DCO commit
+  5e08ddadff5a716bcce844ed8ed5e1bc1868d02f; protected-main policy and all required exact-main
+  workflows passed.
