@@ -4344,7 +4344,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify opencode and opendesk against every connected provider/model tuple, shared defaults, overrides, restart, and offline parity. |
-| Next action | PR #547 head fd56a4c7 has fresh independent exact-head approval and all 15 exact-head checks green; merge only through the signed protected-main procedure, then verify exact-main workflows. |
+| Next action | Monitor all ten exact-main push workflows for signed merge 4dfc1e07 to terminal success; then record the receipt, accept, release, reconcile, and run doctor --live. |
 
 ### AR-1658 — Development release-channel resolver contract
 
