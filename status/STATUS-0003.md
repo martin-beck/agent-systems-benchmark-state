@@ -238,7 +238,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair and qualify ASB live-provider error propagation, provider/model compatibility admission, and bounded curl discovery without weakening development warning-only behavior. |
-| Next action | Use coordinator command delimiter for full gates, then run formatted focused tests, diagnostic contract, clippy, and serialized workspace suite. Do not commit until each passes. |
+| Next action | Run the serialized full workspace suite after green format, public typed-error, discovery, diagnostic-contract, and clippy gates. If green, inspect the exact diff and create the signed DCO repair commit; then seek fresh independent review before any PR. |
 
 ### AR-1709 — Development live provider execution contract and credential injection
 
