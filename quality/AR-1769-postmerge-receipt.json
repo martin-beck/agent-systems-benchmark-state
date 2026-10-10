@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "task": "AR-1769",
+  "pull_request": 542,
+  "reviewed_head": "971a3a9afea18e6287541996699bab52e82ffafa",
+  "merge_commit": "772bc46537b0574008635ebfc27d6b147c12c805",
+  "merge_tree": "cb3439160d23e1983803cb999ae92dca4881aef9",
+  "base_commit": "5377317b7fbf04172e70a0ea000f305e5e07e23a",
+  "independent_review": "approved exact head",
+  "pull_request_checks": "all required checks passed",
+  "post_merge_checks": "all required main workflows passed",
+  "protected_main_policy": "passed"
+}
