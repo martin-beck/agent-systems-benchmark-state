@@ -94,6 +94,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar1647-final-comparison` | `codex/ar-1647-final-comparison` | `a65ebb560cf2` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-ar1657-compatibility-matrix` | `codex/ar-1657-compatibility-matrix` | `fd56a4c7762a` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar1657-merge` | `DETACHED` | `a65ebb560cf2` | 0 | behind 6, ahead 0 |
+| `agent-systems-benchmark-ar1704-provider-errors` | `codex/ar-1704-provider-errors` | `4dfc1e07f424` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 148, ahead 0 |
 | `agent-systems-benchmark-ar1726-review` | `DETACHED` | `a3222ae105dc` | 0 | behind 213, ahead 0 |
 | `agent-systems-benchmark-ar1727-integration` | `DETACHED` | `457317b21dbe` | 0 | behind 209, ahead 0 |
