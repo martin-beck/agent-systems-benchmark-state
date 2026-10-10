@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1765-tool-project-e2e-qualification",
-  "checkpoint_commit": "4326cf11be13a63e98042430373c49c06338a04a",
+  "checkpoint_commit": "ac669d1ca1fd5324f505ac24feec5e4878a625fa",
   "claim_expires": "2026-10-10T14:15:32+00:00",
   "depends_on": [
     "AR-1760",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T12:20:24+00:00",
+  "updated_at": "2026-10-10T12:20:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -127,3 +127,5 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 
 - 2026-10-10T12:20:24+00:00: Recorded command exit 0; command argv SHA-256
   b36d15881eb65027724bc584f1b04db05666cd79896b100806e528307c04b65c.
+
+- 2026-10-10T12:20:51+00:00: Checkpointed source commit ac669d1ca1fd5324f505ac24feec5e4878a625fa.
