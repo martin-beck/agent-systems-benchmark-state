@@ -94,8 +94,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar1647-final-comparison` | `codex/ar-1647-final-comparison` | `a65ebb560cf2` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-ar1657-compatibility-matrix` | `DETACHED` | `cfe97d26fd1d` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar1657-merge` | `DETACHED` | `a65ebb560cf2` | 0 | behind 6, ahead 0 |
-| `agent-systems-benchmark-ar1704-provider-errors` | `codex/ar-1704-provider-errors` | `cfe97d26fd1d` | 2 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-agents/src/openrouter.rs`, `crates/asb-cli/src/lib.rs` |
+| `agent-systems-benchmark-ar1704-provider-errors` | `codex/ar-1704-provider-errors` | `cfe97d26fd1d` | 3 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-agents/src/openrouter.rs`, `crates/asb-cli/src/diagnostic_legacy_catalog.rs`, `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 148, ahead 0 |
 | `agent-systems-benchmark-ar1726-review` | `DETACHED` | `a3222ae105dc` | 0 | behind 213, ahead 0 |
 | `agent-systems-benchmark-ar1727-integration` | `DETACHED` | `457317b21dbe` | 0 | behind 209, ahead 0 |
