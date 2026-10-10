@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1765](../tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | ar1765-tool-project-e2e-terra | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Use the documented signed local exact-target-ref merge procedure for PR #546 with base 3cd8ae24048d153a4928511b6b1e64a50213d5e0 and reviewed signed head af6c1bcbddbba03a6f90f670c30f44acf99eca6e; then verify the remote merge, exact-main CI, receipt, and durable acceptance/release. |
+| P0 | [AR-1765](../tasks/AR-1765-tool-project-e2e-qualification.md): End-to-end qualification of ASB tool projects | ar1765-tool-project-e2e-terra | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. | Verify every exact-main workflow for signed merge a65ebb560cf26447858a1241ac80049c59a4bcbd reaches terminal success; then record the post-merge receipt, accept/release AR-1765, reconcile state, and run live doctor. |
 
 ### Open (1)
 

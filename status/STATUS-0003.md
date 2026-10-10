@@ -1006,7 +1006,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results. |
-| Next action | Use the documented signed local exact-target-ref merge procedure for PR #546 with base 3cd8ae24048d153a4928511b6b1e64a50213d5e0 and reviewed signed head af6c1bcbddbba03a6f90f670c30f44acf99eca6e; then verify the remote merge, exact-main CI, receipt, and durable acceptance/release. |
+| Next action | Verify every exact-main workflow for signed merge a65ebb560cf26447858a1241ac80049c59a4bcbd reaches terminal success; then record the post-merge receipt, accept/release AR-1765, reconcile state, and run live doctor. |
 
 ### AR-1766 — Fine-grained human diagnostic contract
 

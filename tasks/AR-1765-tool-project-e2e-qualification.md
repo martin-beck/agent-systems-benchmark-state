@@ -11,7 +11,7 @@
     "AR-1764"
   ],
   "id": "AR-1765",
-  "next_action": "Use the documented signed local exact-target-ref merge procedure for PR #546 with base 3cd8ae24048d153a4928511b6b1e64a50213d5e0 and reviewed signed head af6c1bcbddbba03a6f90f670c30f44acf99eca6e; then verify the remote merge, exact-main CI, receipt, and durable acceptance/release.",
+  "next_action": "Verify every exact-main workflow for signed merge a65ebb560cf26447858a1241ac80049c59a4bcbd reaches terminal success; then record the post-merge receipt, accept/release AR-1765, reconcile state, and run live doctor.",
   "observed_branch": "feature/ar-1765-tool-project-e2e-qualification",
   "observed_dirty": 0,
   "observed_head": "af6c1bcbddbba03a6f90f670c30f44acf99eca6e",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Qualify the complete fresh-user flow from project init through tool install/discovery/catalog selection and benchmark results.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "End-to-end qualification of ASB tool projects",
-  "updated_at": "2026-10-10T15:41:39+00:00",
+  "updated_at": "2026-10-10T15:41:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1765-tool-project-e2e-qualification"
 }
 ---
@@ -395,3 +395,8 @@ and `--json`. Record a short fresh-user help/tutorial path and exact CI evidence
 
 - 2026-10-10T15:41:39+00:00: Recorded command exit 0; command argv SHA-256
   b4c82b88c6b5a6c4b19b9e9a0535c1697cd8b6d6634eb5c161ffe52cab7d2c14.
+
+- 2026-10-10T15:41:58+00:00: Signed local merge published: a65ebb560cf26447858a1241ac80049c59a4bcbd.
+  Remote main exactly has parents 3cd8ae24048d153a4928511b6b1e64a50213d5e0 and
+  af6c1bcbddbba03a6f90f670c30f44acf99eca6e, reviewed tree 64c4e060e902b5767c10d32da4570c37d997c4dc,
+  verified SSH signature, and matching DCO. Exact-main workflows are newly in progress.
