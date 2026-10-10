@@ -86,8 +86,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1768-exhaustive-actionable-human-diagnostics` | `feature/ar-1768-exhaustive-actionable-human-diagnostics` | `cd46a00c276b` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-ar-1769-human-diagnostic-completeness-ci` | `feature/ar-1769-human-diagnostic-completeness-ci` | `971a3a9afea1` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-ar-1770-descriptor-safe-directory-race-hardening` | `feature/ar-1770-descriptor-safe-directory-race-hardening` | `6278fcd6720f` | 0 | behind 50, ahead 0 |
-| `agent-systems-benchmark-ar-1771-human-status-and-quiet-contract` | `feature/ar-1771-human-status-and-quiet-contract` | `d330c98fdeb2` | 3 | behind 3, ahead 6 |
-| changed files | - | - | - | `crates/asb-cli/tests/workflow_transcript.rs`, `docs/examples/asb-cli-workflow-v1.json`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
+| `agent-systems-benchmark-ar-1771-human-status-and-quiet-contract` | `feature/ar-1771-human-status-and-quiet-contract` | `5978aab04533` | 0 | behind 3, ahead 7 |
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 193, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 181, ahead 0 |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 127, ahead 0 |
