@@ -1090,7 +1090,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior. |
-| Next action | AR-1771 output config seam is preserved uncommitted in crates/asb-config/src/lib.rs and schema/v1/project-config.schema.json; wait for AR-1763 exact config head, then rebase/merge the additive output section before committing. Continue isolated CLI/human routing tests only. |
+| Next action | Preserved uncommitted AR-1771 patch touches crates/asb-cli/src/lib.rs, human.rs, tui.rs and the additive output config/schema seam. AR-1763 now owns concurrent edits in lib.rs/human.rs/config; do not commit or edit until its exact main head lands, then rebase and reconcile all seams before resuming gates. |
 
 ### AR-1772 — Unified human step-progress reporter
 

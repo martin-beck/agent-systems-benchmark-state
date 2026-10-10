@@ -7,7 +7,7 @@
     "AR-1768"
   ],
   "id": "AR-1771",
-  "next_action": "AR-1771 output config seam is preserved uncommitted in crates/asb-config/src/lib.rs and schema/v1/project-config.schema.json; wait for AR-1763 exact config head, then rebase/merge the additive output section before committing. Continue isolated CLI/human routing tests only.",
+  "next_action": "Preserved uncommitted AR-1771 patch touches crates/asb-cli/src/lib.rs, human.rs, tui.rs and the additive output config/schema seam. AR-1763 now owns concurrent edits in lib.rs/human.rs/config; do not commit or edit until its exact main head lands, then rebase and reconcile all seams before resuming gates.",
   "observed_branch": "feature/ar-1771-human-status-and-quiet-contract",
   "observed_dirty": 5,
   "observed_head": "772bc46537b0574008635ebfc27d6b147c12c805",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Define one routed human-output vocabulary, levels, writers, and quiet contract without changing JSON or exit behavior.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Human output, status, and quiet contract",
-  "updated_at": "2026-10-10T09:44:48+00:00",
+  "updated_at": "2026-10-10T09:45:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1771-human-status-and-quiet-contract"
 }
 ---
@@ -166,3 +166,6 @@ terminal ownership.
   a2b72999f264a1723535f52fad41e050b63be478df1e76d49a0a6afdefae3692.
 
 - 2026-10-10T09:44:48+00:00: Heartbeat by ar1771-output-contract-terra.
+
+- 2026-10-10T09:45:11+00:00: Coordinator reported new AR-1763 overlap in CLI human presentation;
+  focused AR-1771 tests are green, but integration must serialize.
