@@ -92,7 +92,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar1575-qualification` | `DETACHED` | `f535e3cb327b` | 0 | behind 208, ahead 0 |
 | `agent-systems-benchmark-ar1575-requal-20261008` | `DETACHED` | `1a5888ce1c96` | 0 | behind 196, ahead 0 |
 | `agent-systems-benchmark-ar1647-final-comparison` | `codex/ar-1647-final-comparison` | `a65ebb560cf2` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar1657-compatibility-matrix` | `codex/ar-1657-compatibility-matrix` | `6e8c97c144f7` | 0 | behind 0, ahead 2 |
+| `agent-systems-benchmark-ar1657-compatibility-matrix` | `codex/ar-1657-compatibility-matrix` | `6e8c97c144f7` | 1 | behind 0, ahead 2 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-ar1721-requalification-20261009` | `DETACHED` | `e21d6bc7ed1c` | 0 | behind 142, ahead 0 |
 | `agent-systems-benchmark-ar1726-review` | `DETACHED` | `a3222ae105dc` | 0 | behind 207, ahead 0 |
 | `agent-systems-benchmark-ar1727-integration` | `DETACHED` | `457317b21dbe` | 0 | behind 203, ahead 0 |
