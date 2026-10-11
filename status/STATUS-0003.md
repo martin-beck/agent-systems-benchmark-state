@@ -1246,7 +1246,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
-| Next action | PR #584 rebased onto origin/main 24cb72d; exact remote head 96ea497a. Credential-free workload matrix, diagnostic contract, provenance, resolver, and clippy focused gates pass. Poll fresh exact-head CI; do not merge. |
+| Next action | Independently review repaired head 2ee4626e; monitor fresh PR #584 exact-head CI, then merge only after all required checks and review are green; perform post-merge verification and release AR-1782. |
 
 ### AR-1783 — Installed workload selection and execution
 

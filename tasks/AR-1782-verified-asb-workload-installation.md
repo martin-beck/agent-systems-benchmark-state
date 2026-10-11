@@ -7,7 +7,7 @@
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "PR #584 rebased onto origin/main 24cb72d; exact remote head 96ea497a. Credential-free workload matrix, diagnostic contract, provenance, resolver, and clippy focused gates pass. Poll fresh exact-head CI; do not merge.",
+  "next_action": "Independently review repaired head 2ee4626e; monitor fresh PR #584 exact-head CI, then merge only after all required checks and review are green; perform post-merge verification and release AR-1782.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "2ee4626e7784d4f7deb8d1110a8c58257b6dac2e",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T19:30:00+00:00",
+  "updated_at": "2026-10-11T19:30:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -405,3 +405,7 @@ remain mandatory.
   and await fresh exact-head validation.
 
 - 2026-10-11T19:30:00+00:00: Claimed by ar1782-coordinator-repair.
+
+- 2026-10-11T19:30:05+00:00: Repair commits e2b6c96a and 2ee4626e close path confinement, evaluator
+  layout, license, and diagnostic-contract gaps; worker tests and clippy passed. Coordinator now
+  owns exact-head review and CI transition.
