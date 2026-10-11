@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Default usable tool-install command",
-  "updated_at": "2026-10-11T20:52:07+00:00",
+  "updated_at": "2026-10-11T20:52:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1779-default-usable-tool-install-command"
 }
 ---
@@ -132,3 +132,6 @@ the adapter smoke check failed.
   recovery: lease expired; preserve PR #583 head and recorded next action.
 
 - 2026-10-11T20:52:07+00:00: Claimed by ar1779-review-merge-luna56.
+
+- 2026-10-11T20:52:10+00:00: Recorded command exit 0; command argv SHA-256
+  17a35505ebdb797ffbaba7bbdde53d009e26b289b62293d5e1e4d0aabfa8ca1d.
