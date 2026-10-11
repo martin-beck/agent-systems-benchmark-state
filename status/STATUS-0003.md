@@ -1434,7 +1434,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep autonomous development live during concurrent protected-main integration. |
-| Next action | Canonical portable-smoke passed on exact AWC origin/main efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0; record fresh full-exhaustive evidence and independently review exact candidate before any release. |
+| Next action | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 passed canonical portable-smoke and full-exhaustive recorded outcomes; obtain independent exact-head review and complete normal release/provenance gates before accept/release. |
 
 ### AR-1797 — Wire cli2key sidecar into live benchmark execution
 

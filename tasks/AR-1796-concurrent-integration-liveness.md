@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T00:48:21+00:00",
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Canonical portable-smoke passed on exact AWC origin/main efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0; record fresh full-exhaustive evidence and independently review exact candidate before any release.",
+  "next_action": "Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 passed canonical portable-smoke and full-exhaustive recorded outcomes; obtain independent exact-head review and complete normal release/provenance gates before accept/release.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T22:50:40+00:00",
+  "updated_at": "2026-10-11T22:51:04+00:00",
   "worktree_key": ""
 }
 ---
@@ -135,3 +135,8 @@ workers checkpoint, retry, and continue useful work during integration churn.
   efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 contains it as ancestor. Canonical portable-smoke passed
   on exact candidate with HandoffctlBinding; attestation /tmp/ar1796-portable-efbe.json, formal
   input digest e8a3da82e6ae7e2b64fcf9e563f8df42554bccbf50ee746ef26957e45ee75af6.
+
+- 2026-10-11T22:51:04+00:00: Formal full-exhaustive completed successfully on the reconciled exact
+  candidate; successful outcomes recorded for HandoffctlBinding, HandoffctlLocks, HandoffctlRun, and
+  HandoffctlStorage. No release publication or acceptance performed; independent exact-head review
+  and remaining release gates are still required.

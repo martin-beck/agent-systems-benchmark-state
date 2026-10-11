@@ -174,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Canonical portable-smoke passed on exact AWC origin/main efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0; record fresh full-exhaustive evidence and independently review exact candidate before any release. |
+| P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 passed canonical portable-smoke and full-exhaustive recorded outcomes; obtain independent exact-head review and complete normal release/provenance gates before accept/release. |
 
 ### Blocked (84)
 
