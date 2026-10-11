@@ -4680,7 +4680,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Repair durable receipt to exact product head 3b83d541 and reconcile the uncommitted product attestation; rerun exact-head review before PR publication. |
+| Next action | Request another fresh independent review of product commit bb4d90aa and durable receipt evidence; do not publish or merge. |
 
 ### AR-1687 — Development/mock provider-bound comparison qualification
 
