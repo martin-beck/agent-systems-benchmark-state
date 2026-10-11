@@ -9,8 +9,8 @@
   "id": "AR-1782",
   "next_action": "Refresh the version-coupled provenance digest for current d6bddcab lib.rs, rerun workflow_transcript provenance tests, then obtain final exact-head review and hosted CI before merge.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
-  "observed_dirty": 0,
-  "observed_head": "d16375681b952934909d5ecbdd13e3d5ec361c4d",
+  "observed_dirty": 1,
+  "observed_head": "d6bddcabab5cfd1063a5f31c01c505f02f4b5d1a",
   "owner": "ar1782-coordinator-repair",
   "plan": "../plans/AR-1782-verified-asb-workload-installation.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 225,
+  "task_revision": 226,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T20:25:05+00:00",
+  "updated_at": "2026-10-11T20:25:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
