@@ -4680,7 +4680,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | BLOCKED: PR #586 exact head bb4d90aa fails required Repository Quality and Huawei/SPDX header checks on tests/workloads/test_content_addressed_qualification.py; repair source header in a reviewed follow-up head, rerun exact-head CI, and do not merge this failed head. |
+| Next action | BLOCKED: PR #586 follow-up b41c83fc fixes the test header but required Huawei/SPDX check still fails on tools/run-content-addressed-qualification.py; authorize a narrowly scoped second header repair, then rerun all exact-head CI before review/merge. |
 
 ### AR-1687 — Development/mock provider-bound comparison qualification
 

@@ -175,7 +175,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | ar1686-qualification-retry-luna56 | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | BLOCKED: PR #586 exact head bb4d90aa fails required Repository Quality and Huawei/SPDX header checks on tests/workloads/test_content_addressed_qualification.py; repair source header in a reviewed follow-up head, rerun exact-head CI, and do not merge this failed head. |
+| P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | ar1686-qualification-retry-luna56 | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | BLOCKED: PR #586 follow-up b41c83fc fixes the test header but required Huawei/SPDX check still fails on tools/run-content-addressed-qualification.py; authorize a narrowly scoped second header repair, then rerun all exact-head CI before review/merge. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair. |
 
 ### Blocked (84)
