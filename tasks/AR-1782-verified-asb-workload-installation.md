@@ -7,7 +7,7 @@
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "Run one clean full workspace llvm-cov gate at exact head 04ec40fa after lifecycle coverage and provenance refresh; if >=90% and all CI green, obtain final review, merge PR #584, then post-merge verify and release AR-1782.",
+  "next_action": "Await exact-head PR #584 hosted CI at 04ec40fa. All local gates and independent review pass; merge only after every required check is green, then verify the protected-main merge and release AR-1782.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "04ec40fadf7858e9fb676fad85e58e891b975e47",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 188,
+  "task_revision": 189,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T19:52:51+00:00",
+  "updated_at": "2026-10-11T19:52:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -534,3 +534,6 @@ remain mandatory.
   0f95a7f9172e2a97212e5dbb24d9696c5ff9cf610903dc5271d64450a1d5a9a6.
 
 - 2026-10-11T19:52:51+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:52:52+00:00: Clean full workspace llvm-cov completed at 90.22% lines against
+  unchanged 90% floor; all tests and coverage gate passed. No source changes in verification run.

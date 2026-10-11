@@ -174,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1782](../tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | ar1782-coordinator-repair | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Run one clean full workspace llvm-cov gate at exact head 04ec40fa after lifecycle coverage and provenance refresh; if &gt;=90&#37; and all CI green, obtain final review, merge PR #584, then post-merge verify and release AR-1782. |
+| P0 | [AR-1782](../tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | ar1782-coordinator-repair | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Await exact-head PR #584 hosted CI at 04ec40fa. All local gates and independent review pass; merge only after every required check is green, then verify the protected-main merge and release AR-1782. |
 
 ### Open (3)
 

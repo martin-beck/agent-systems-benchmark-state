@@ -1246,7 +1246,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
-| Next action | Run one clean full workspace llvm-cov gate at exact head 04ec40fa after lifecycle coverage and provenance refresh; if &gt;=90&#37; and all CI green, obtain final review, merge PR #584, then post-merge verify and release AR-1782. |
+| Next action | Await exact-head PR #584 hosted CI at 04ec40fa. All local gates and independent review pass; merge only after every required check is green, then verify the protected-main merge and release AR-1782. |
 
 ### AR-1783 — Installed workload selection and execution
 
