@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1782-verified-asb-workload-installation",
   "checkpoint_commit": "c5154b12fc85bf356ce61d746c56b83d856ff502",
-  "claim_expires": "2026-10-11T22:24:09+00:00",
+  "claim_expires": "2026-10-11T22:24:14+00:00",
   "depends_on": [
     "AR-1781"
   ],
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 221,
+  "task_revision": 222,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T20:24:09+00:00",
+  "updated_at": "2026-10-11T20:24:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -614,3 +614,5 @@ remain mandatory.
 - 2026-10-11T20:24:09+00:00: Independent review blocked only on provenance drift: actual lib.rs
   SHA-256 1348bbd2... differs from recorded f0373063... after headroom tests. No source or gate
   defect found.
+
+- 2026-10-11T20:24:14+00:00: Heartbeat by ar1782-coordinator-repair.
