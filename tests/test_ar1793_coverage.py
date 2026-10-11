@@ -17,7 +17,7 @@ from pathlib import Path
 from typing import Any
 from unittest.mock import MagicMock, patch
 
-from tools import fast_receipt_socket, handoffctl
+from tools import fast_receipt_socket, handoffctl, role_assignment, role_registry
 from tools.guest_seed import build_user_data
 from tools.role_assignment import assignment_errors, validate_assignment
 from tools.role_registry import registry_errors, validate_registry
@@ -168,6 +168,37 @@ class RoleValidationCoverageTests(unittest.TestCase):
         expired = copy.deepcopy(self.assignment)
         expired["roles"][0]["expires_at"] = "2000-01-01T00:00:00Z"
         self.assertTrue(assignment_errors(expired, self.registry, now=self.now))
+
+    def test_role_helper_boundaries_reject_noncanonical_primitives(self) -> None:
+        self.assertTrue(role_registry._exact_object([], {"field"}, "item"))
+        self.assertTrue(role_registry._string(1, "item", role_registry.ROLE_ID, 3, 64))
+        self.assertTrue(role_registry._string("x", "item", role_registry.ROLE_ID, 3, 64))
+        self.assertTrue(
+            role_registry._unique_strings([], "items", minimum=1, pattern=role_registry.ROLE_ID)
+        )
+        self.assertTrue(
+            role_registry._unique_strings(
+                ["worker", "worker"], "items", minimum=1, pattern=role_registry.ROLE_ID
+            )
+        )
+        with self.assertRaises(role_registry.RoleRegistryError):
+            role_registry.validate_registry([])
+        self.assertTrue(role_assignment._assignment_role_errors([]))
+        self.assertTrue(role_assignment._assignment_role_errors([{}]))
+        self.assertTrue(role_assignment._evidence_errors([]))
+        self.assertTrue(role_assignment._evidence_errors([{}]))
+
+    def test_assignment_semantics_reject_naive_time_and_missing_registry_roles(self) -> None:
+        self.assertTrue(
+            role_assignment._semantic_errors(
+                self.assignment,
+                {"roles": self.registry["roles"]},
+                dt.datetime.fromisoformat("2026-09-24T00:00:00"),
+            )
+        )
+        self.assertTrue(role_assignment._semantic_errors(self.assignment, {}, self.now))
+        with self.assertRaises(role_assignment.RoleAssignmentError):
+            role_assignment.validate_assignment([], self.registry, now=self.now)
 
 
 class WorktreeBindingCoverageTests(unittest.TestCase):
