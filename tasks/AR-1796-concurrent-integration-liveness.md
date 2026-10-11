@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T00:48:21+00:00",
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair.",
+  "next_action": "Canonical portable-smoke passed on exact AWC origin/main efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0; record fresh full-exhaustive evidence and independently review exact candidate before any release.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T22:50:18+00:00",
+  "updated_at": "2026-10-11T22:50:40+00:00",
   "worktree_key": ""
 }
 ---
@@ -129,3 +129,9 @@ workers checkpoint, retry, and continue useful work during integration churn.
 
 - 2026-10-11T22:50:18+00:00: Recorded command exit 0; command argv SHA-256
   693aa0088ccdecc05ff54853e060c4cd2a941e153a45f19f53376e43324d6165.
+
+- 2026-10-11T22:50:40+00:00: Reconciled GitHub PR #1226 as merged commit
+  31a7e14f9059282b95f348fafaca83092bfa7003; current AWC origin/main
+  efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 contains it as ancestor. Canonical portable-smoke passed
+  on exact candidate with HandoffctlBinding; attestation /tmp/ar1796-portable-efbe.json, formal
+  input digest e8a3da82e6ae7e2b64fcf9e563f8df42554bccbf50ee746ef26957e45ee75af6.

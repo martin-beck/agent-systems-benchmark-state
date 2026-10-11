@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair. | ar1796-reconcile-candidate-luna56 |
+| P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Canonical portable-smoke passed on exact AWC origin/main efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0; record fresh full-exhaustive evidence and independently review exact candidate before any release. | ar1796-reconcile-candidate-luna56 |
 
 ## Blocked
 

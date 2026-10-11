@@ -1434,7 +1434,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep autonomous development live during concurrent protected-main integration. |
-| Next action | Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair. |
+| Next action | Canonical portable-smoke passed on exact AWC origin/main efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0; record fresh full-exhaustive evidence and independently review exact candidate before any release. |
 
 ### AR-1797 — Wire cli2key sidecar into live benchmark execution
 
