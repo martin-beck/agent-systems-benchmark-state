@@ -7,7 +7,7 @@
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "Independently review repaired head 8398dcbf; monitor fresh PR #584 exact-head CI, then merge only after every required check and review is green; perform post-merge verification and release AR-1782.",
+  "next_action": "Repair hosted workspace coverage shortfall (89.96% vs unchanged 90% floor) with meaningful workload lifecycle tests and headroom; rerun clean cargo llvm-cov, then re-review and exact-head CI.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "8398dcbf32aa16014d16dd87a537199d8db27af6",
@@ -27,7 +27,7 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "Verified asb workload installation",
   "updated_at": "2026-10-11T19:41:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
@@ -452,3 +452,6 @@ remain mandatory.
   eb8648d78be9d44db5631385c3fcbaaeaac0114989924fef6dc1415045ce0bfa.
 
 - 2026-10-11T19:41:25+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:41:25+00:00: Policy gate failed on hosted workspace line coverage 89.96%; no
+  threshold or exclusion change authorized. Start focused headroom repair.

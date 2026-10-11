@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1782](tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Independently review repaired head 8398dcbf; monitor fresh PR #584 exact-head CI, then merge only after every required check and review is green; perform post-merge verification and release AR-1782. | ar1782-coordinator-repair |
+| P0 | [AR-1782](tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Repair hosted workspace coverage shortfall (89.96% vs unchanged 90% floor) with meaningful workload lifecycle tests and headroom; rerun clean cargo llvm-cov, then re-review and exact-head CI. | ar1782-coordinator-repair |
 
 ## Open
 
