@@ -4680,7 +4680,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Fresh independent review of signed exact head 4a8c250, then publish PR and wait for exact-head CI. |
+| Next action | Fresh independent review of signed exact head 18c9972; AR-specific scheduler-load fixture is repaired and focused/full asb-cli gates pass. Full workspace rerun still has an unrelated asb-metrics resource-sensitive fixture failure; do not publish until independent review and full required gate are resolved. |
 
 ### AR-1687 — Development/mock provider-bound comparison qualification
 
@@ -4694,8 +4694,3 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
-| Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
-
-### AR-1688 — Runner-owned cassette capture and replay qualification
-
-| Field | Value |
