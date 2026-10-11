@@ -171,18 +171,18 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1652](../tasks/AR-1652.md): Selected-workload recording and offline replay command | ar1652-binding-repair-luna56 | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Create or refresh the bound product worktree agent-systems-benchmark-ar-1652-record-replay on branch repair/ar-1652-record-replay from exact protected ASB main, then implement and independently review selected/all recording plus strict offline replay; use handoffctl run for every product/Git/build/test/review mutation. |
 | P0 | [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md): Default usable tool-install command | ar1779-review-merge-luna56 | Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying. | Independent review and exact-head CI for PR #583 at 7c08cfb0; source-only fallback remains to be resolved before merge. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1652](../tasks/AR-1652.md): Selected-workload recording and offline replay command | Unclaimed | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Create or refresh the bound product worktree agent-systems-benchmark-ar-1652-record-replay on branch repair/ar-1652-record-replay from exact protected ASB main, then implement and independently review selected/all recording plus strict offline replay; use handoffctl run for every product/Git/build/test/review mutation. |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 
 ### Blocked (84)
