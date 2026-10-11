@@ -25,7 +25,7 @@ from tools.git_authority_adapter import (
 from tools.git_authority_mutation import GitMutationError
 from tools.lock_domain_scope import LockDomainScope
 
-PROJECT = "11111111-1111-4111-8111-111111111111"
+PROJECT = "project-ar1793"
 CONTEXT: dict[str, object] = {
     "schema_version": 2,
     "backend": "git",
