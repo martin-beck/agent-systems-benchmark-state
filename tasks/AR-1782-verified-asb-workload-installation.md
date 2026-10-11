@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 232,
+  "task_revision": 233,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T20:26:07+00:00",
+  "updated_at": "2026-10-11T20:37:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -639,3 +639,6 @@ remain mandatory.
 
 - 2026-10-11T20:26:07+00:00: Provenance repair commit 3be3029d is SSH-signed+DCO, exact digest
   1348bbd2..., focused workflow transcript tests pass, and worktree is clean.
+
+- 2026-10-11T20:37:07+00:00: Recorded command exit 0; command argv SHA-256
+  5fd28450679fe0f026a4ece8457988112387518f7a55ba64de3246fcc7473b0f.
