@@ -204,7 +204,9 @@ class RoleValidationCoverageTests(unittest.TestCase):
     def test_role_validation_clis_fail_closed_for_invalid_inputs(self) -> None:
         with (
             patch.object(sys, "argv", ["role_registry.py", "registry.json"]),
-            patch.object(role_registry, "check_registry", side_effect=role_registry.RoleRegistryError("bad")),
+            patch.object(
+                role_registry, "check_registry", side_effect=role_registry.RoleRegistryError("bad")
+            ),
             self.assertRaises(SystemExit),
         ):
             role_registry.main()
