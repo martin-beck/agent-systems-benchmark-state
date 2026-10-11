@@ -486,7 +486,10 @@ class FastReceiptTransportCoverageTests(unittest.TestCase):
             "--key",
             "key-1",
         ]
-        self.assertEqual("promote", fast_receipt_socket._fast_request(valid_promote)["action"])
+        request = fast_receipt_socket._fast_request(valid_promote)
+        self.assertIsNotNone(request)
+        assert request is not None
+        self.assertEqual("promote", request["action"])
         invalid = (
             [*valid_promote[:3], "--unexpected", "x", *valid_promote[5:]],
             [*valid_promote[:3], "--expected-revision", "not-an-int", *valid_promote[5:]],
