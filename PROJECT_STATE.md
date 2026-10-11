@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
 | #583 | `feature/ar-1779-default-usable-tool-install-command@7c08cfb019ee` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): default supported tool installation |
-| #584 | `feature/ar-1782-verified-asb-workload-installation@2ee4626e7784` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | feat(cli): add verified workload lifecycle |
+| #584 | `feature/ar-1782-verified-asb-workload-installation@2ee4626e7784` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(cli): add verified workload lifecycle |
 
 ## Recent workflows
 
@@ -43,7 +43,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38167992426 | `2ee4626e7784` | pull_request | Formal assurance | in_progress:- |
 | 38167992425 | `2ee4626e7784` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 38167992421 | `2ee4626e7784` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38167992410 | `2ee4626e7784` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38167992410 | `2ee4626e7784` | pull_request | Hosted portability and native qualification | completed:success |
 | 38167992407 | `2ee4626e7784` | pull_request | Huawei MIT source headers | completed:success |
 | 38167992402 | `2ee4626e7784` | pull_request | Portable protected-main provenance | completed:success |
 | 38167875311 | `e2b6c96adc96` | pull_request | Fault assurance | completed:cancelled |
