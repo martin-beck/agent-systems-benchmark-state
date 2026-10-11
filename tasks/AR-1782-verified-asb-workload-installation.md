@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1782-verified-asb-workload-installation",
   "checkpoint_commit": "c5154b12fc85bf356ce61d746c56b83d856ff502",
-  "claim_expires": "2026-10-11T19:28:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1781"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "12fbe26399975e9114a451ddee632bdadb65b820",
-  "owner": "ar1782_workload_install_luna56",
+  "owner": "",
   "plan": "../plans/AR-1782-verified-asb-workload-installation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1782.json",
   "spec_revision": 2,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T17:28:26+00:00",
+  "updated_at": "2026-10-11T19:29:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -399,3 +399,7 @@ remain mandatory.
 
 - 2026-10-11T17:28:26+00:00: Rebase completed with signed repair 96ea497a; preserved arXiv v1
   bounded validation and credential-free network deny boundary.
+
+- 2026-10-11T19:29:04+00:00: Recovered expired claim formerly owned by
+  ar1782_workload_install_luna56. Coordinator recovery: lease expired; preserve recorded PR evidence
+  and await fresh exact-head validation.
