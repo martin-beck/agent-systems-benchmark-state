@@ -35,7 +35,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38174316080 | `daf2d3ee9750` | pull_request | Hosted portability and native qualification | completed:success |
 | 38174316078 | `daf2d3ee9750` | pull_request | Huawei MIT source headers | completed:success |
-| 38174316051 | `daf2d3ee9750` | pull_request | Rust verification | in_progress:- |
+| 38174316051 | `daf2d3ee9750` | pull_request | Rust verification | completed:success |
 | 38174316046 | `daf2d3ee9750` | pull_request | Cross-repository development broker qualification | completed:success |
 | 38174316043 | `daf2d3ee9750` | pull_request | Portable protected-main provenance | completed:success |
 | 38174316028 | `daf2d3ee9750` | pull_request | Credential-free benchmark path | completed:success |
