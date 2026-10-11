@@ -1,0 +1,7 @@
+AR-1779 post-merge receipt
+implementation_pr=585
+merge=24cb72d97422a9b541d4d3fa8406d9dbe8602b1c
+current_main=7ce484612db043831e4acb995839455f512197c0
+checks=15/15 required green
+focused_tests=cargo test --locked -p asb-cli: 404 unit tests plus integration suites passed
+pr583=closed superseded and empty against current main
