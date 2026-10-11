@@ -174,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1782](../tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | ar1782-coordinator-repair | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Repair hosted workspace coverage shortfall (89.96&#37; vs unchanged 90&#37; floor) with meaningful workload lifecycle tests and headroom; rerun clean cargo llvm-cov, then re-review and exact-head CI. |
+| P0 | [AR-1782](../tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | ar1782-coordinator-repair | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Run one clean full workspace llvm-cov gate at exact head 04ec40fa after lifecycle coverage and provenance refresh; if &gt;=90&#37; and all CI green, obtain final review, merge PR #584, then post-merge verify and release AR-1782. |
 
 ### Open (3)
 

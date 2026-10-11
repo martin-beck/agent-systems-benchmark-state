@@ -7,7 +7,7 @@
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "Repair hosted workspace coverage shortfall (89.96% vs unchanged 90% floor) with meaningful workload lifecycle tests and headroom; rerun clean cargo llvm-cov, then re-review and exact-head CI.",
+  "next_action": "Run one clean full workspace llvm-cov gate at exact head 04ec40fa after lifecycle coverage and provenance refresh; if >=90% and all CI green, obtain final review, merge PR #584, then post-merge verify and release AR-1782.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "04ec40fadf7858e9fb676fad85e58e891b975e47",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 179,
+  "task_revision": 180,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T19:48:29+00:00",
+  "updated_at": "2026-10-11T19:48:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -507,3 +507,7 @@ remain mandatory.
   4f8df750c52059d8635553b027b488846a11042048be7fbf9b169d768cc9b33c.
 
 - 2026-10-11T19:48:29+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:48:30+00:00: Headroom repair added project-bound lifecycle coverage and refreshed
+  diagnostic/provenance fixtures; signed exact head independently verified. Final clean coverage
+  measurement is the remaining gate.
