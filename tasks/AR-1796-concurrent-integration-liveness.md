@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T20:55:50+00:00",
+  "updated_at": "2026-10-11T20:56:10+00:00",
   "worktree_key": ""
 }
 ---
@@ -73,3 +73,6 @@ workers checkpoint, retry, and continue useful work during integration churn.
 
 - 2026-10-11T20:55:50+00:00: Recorded command exit 2; command argv SHA-256
   5a8d343f201ec474b0785dcde6d4720befb0918db8f07d9f7803fcb5473bcb4a.
+
+- 2026-10-11T20:56:10+00:00: Recorded command exit 0; command argv SHA-256
+  ca1aadbe4d2e57a313652f844e61d00aa7c0d40337c962f7a8c50d09225578bc.
