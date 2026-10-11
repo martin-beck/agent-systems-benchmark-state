@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T21:00:47+00:00",
+  "updated_at": "2026-10-11T21:01:50+00:00",
   "worktree_key": ""
 }
 ---
@@ -101,3 +101,13 @@ workers checkpoint, retry, and continue useful work during integration churn.
 
 - 2026-10-11T21:00:47+00:00: Recorded command exit 0; command argv SHA-256
   bf36bfe9ad14dc3de9999bf713e52ca5565dc82bea504d546e94f18538a6d291.
+
+- 2026-10-11T21:01:50+00:00: Candidate reconciliation complete: historical PR #1226 is in the
+  agent-workflow-coordinator repository
+  (https://github.com/martin-beck/agent-workflow-coordinator/pull/1226), merged commit
+  31a7e14f9059282b95f348fafaca83092bfa7003, and is an ancestor of current origin/main
+  82e507b01791ed81667db37aeab3a9fd1b7f47c1. Current main declares version 0.5.2 and includes
+  subsequent exact-main fixes through PR #1242; product ASB origin/main remains
+  7ce484612db043831e4acb995839455f512197c0. Treat AWC origin/main
+  82e507b01791ed81667db37aeab3a9fd1b7f47c1 as the reconciled v0.5.2 candidate; run fresh
+  full-exhaustive there before any release. No tag or release publication authorized yet.
