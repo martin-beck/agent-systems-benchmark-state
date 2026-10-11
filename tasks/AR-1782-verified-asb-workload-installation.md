@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T19:41:25+00:00",
+  "updated_at": "2026-10-11T19:41:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -455,3 +455,6 @@ remain mandatory.
 
 - 2026-10-11T19:41:25+00:00: Policy gate failed on hosted workspace line coverage 89.96%; no
   threshold or exclusion change authorized. Start focused headroom repair.
+
+- 2026-10-11T19:41:37+00:00: Recorded command exit 1; command argv SHA-256
+  9021062b2f94c8237a275d55c1d58d4b68f814009d1e64c0331cc2e79485dbf5.
