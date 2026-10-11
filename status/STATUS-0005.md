@@ -174,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1782](../tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | ar1782-coordinator-repair | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Repair hosted workspace coverage at 89.99&#37; (one line below unchanged 90&#37; floor) with substantial meaningful lifecycle/safety tests; target &gt;=90.2 hosted headroom, then rerun exact-head CI and independent review. |
+| P0 | [AR-1782](../tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | ar1782-coordinator-repair | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Independently review exact head d6bddcab; monitor fresh PR #584 CI, require hosted workspace coverage &gt;=90&#37; and all checks green, then merge and verify protected-main result before releasing AR-1782. |
 
 ### Open (3)
 

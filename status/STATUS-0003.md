@@ -1246,7 +1246,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
-| Next action | Repair hosted workspace coverage at 89.99&#37; (one line below unchanged 90&#37; floor) with substantial meaningful lifecycle/safety tests; target &gt;=90.2 hosted headroom, then rerun exact-head CI and independent review. |
+| Next action | Independently review exact head d6bddcab; monitor fresh PR #584 CI, require hosted workspace coverage &gt;=90&#37; and all checks green, then merge and verify protected-main result before releasing AR-1782. |
 
 ### AR-1783 — Installed workload selection and execution
 

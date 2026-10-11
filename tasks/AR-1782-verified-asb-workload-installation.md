@@ -7,7 +7,7 @@
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "Repair hosted workspace coverage at 89.99% (one line below unchanged 90% floor) with substantial meaningful lifecycle/safety tests; target >=90.2 hosted headroom, then rerun exact-head CI and independent review.",
+  "next_action": "Independently review exact head d6bddcab; monitor fresh PR #584 CI, require hosted workspace coverage >=90% and all checks green, then merge and verify protected-main result before releasing AR-1782.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "d16375681b952934909d5ecbdd13e3d5ec361c4d",
@@ -27,7 +27,7 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 218,
+  "task_revision": 219,
   "title": "Verified asb workload installation",
   "updated_at": "2026-10-11T20:22:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
@@ -604,3 +604,7 @@ remain mandatory.
   floor/exclusion change authorized. Start final larger headroom repair.
 
 - 2026-10-11T20:22:59+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:22:59+00:00: Final headroom repair added archive/lifecycle safety tests;
+  hosted-equivalent coverage is 90.26%, signed exact head d6bddcabab5cfd1063a5f31c01c505f02f4b5d1a
+  is clean. Fresh independent review required.
