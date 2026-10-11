@@ -170,19 +170,14 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | codex-ar1796-release-path | Keep autonomous development live during concurrent protected-main integration. | Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release. |
-
-### Open (3)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 | P0 | [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md): Default usable tool-install command | Unclaimed | Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying. | Independent review and exact-head CI for PR #583 at 7c08cfb0; source-only fallback remains to be resolved before merge. |
 | P0 | [AR-1782](../tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Unclaimed | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | PR #584 rebased onto origin/main 24cb72d; exact remote head 96ea497a. Credential-free workload matrix, diagnostic contract, provenance, resolver, and clippy focused gates pass. Poll fresh exact-head CI; do not merge. |
+| P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release. |
 
 ### Blocked (85)
 

@@ -2,22 +2,22 @@
 {
   "branch": "policy/concurrent-integration-liveness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-11T15:48:19+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1796",
   "next_action": "Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1796-release-path",
+  "owner": "",
   "plan": "../plans/AR-1796-concurrent-integration-liveness.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T13:48:19+00:00",
+  "updated_at": "2026-10-11T19:29:10+00:00",
   "worktree_key": ""
 }
 ---
@@ -49,3 +49,6 @@ workers checkpoint, retry, and continue useful work during integration churn.
   release-only exact-head full-attestation step without treating it as a worker failure.
 
 - 2026-10-11T13:48:19+00:00: Claimed by codex-ar1796-release-path.
+
+- 2026-10-11T19:29:10+00:00: Coordinator recovery: release-only claim expired without scope-bound
+  recovery identity; preserve merged PR #1226 and explicit full-attestation next action.
