@@ -4274,7 +4274,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. |
-| Next action | Independent technical review of exact protected main evidence; then accept AR-1652 with selected/all recording, strict offline replay, TUI paired evidence, and exact-head post-merge checks. |
+| Next action | Coordinator/independent reviewer to accept evidence and release AR-1652; no product PR is needed because exact protected main already contains the implementation. |
 
 ### AR-1653 — Current-main development-channel consumption
 
