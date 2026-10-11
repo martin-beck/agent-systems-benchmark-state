@@ -2,25 +2,36 @@
 {
   "branch": "feature/ar-1779-default-usable-tool-install-command",
   "checkpoint_commit": "",
-  "claim_expires": "",
-  "depends_on": ["AR-1777", "AR-1778", "AR-1784"],
+  "claim_expires": "2026-10-11T16:10:32+00:00",
+  "depends_on": [
+    "AR-1777",
+    "AR-1778",
+    "AR-1784"
+  ],
   "id": "AR-1779",
-  "next_action": "Make asb tool install supported-id resolve, acquire/build, validate, and register a usable project-local executable tool by default.",
-  "observed_branch": "",
+  "next_action": "Independent review and exact-head CI for PR #583 at 7c08cfb0; source-only fallback remains to be resolved before merge.",
+  "observed_branch": "feature/ar-1779-default-usable-tool-install-command",
   "observed_dirty": 0,
-  "observed_head": "",
-  "owner": "",
+  "observed_head": "7c08cfb019eebfbfc9032a25a94bf69cde9c8e29",
+  "owner": "luna56-ar1779",
   "plan": "../plans/AR-1779-default-usable-tool-install-command.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "integration-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1779.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "integration-test",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1779.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1779.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "in_progress",
   "summary": "Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying.",
-  "task_revision": 1,
+  "task_revision": 28,
   "title": "Default usable tool-install command",
-  "updated_at": "2026-10-10T09:49:36+00:00",
+  "updated_at": "2026-10-11T14:11:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1779-default-usable-tool-install-command"
 }
 ---
@@ -42,3 +53,77 @@ created dependencies, result location, and next action; JSON retains its stable
 machine contract and never includes secrets. The command must not silently use a
 wrong binary, silently fall back to an unrelated tool, or claim installation when
 the adapter smoke check failed.
+
+- 2026-10-11T13:53:29+00:00: Promote dependency-safe AR-1779 now that AR-1777, AR-1778, and AR-1784
+  are durably done.
+
+- 2026-10-11T13:54:34+00:00: Claimed by luna56-ar1779.
+
+- 2026-10-11T13:55:27+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-10-11T13:57:08+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-10-11T13:57:59+00:00: Recorded command exit 0; command argv SHA-256
+  a15cc58cd42c65980b3f718472d4802c1ccec6ff105530e3f2089168c16c493a.
+
+- 2026-10-11T13:58:50+00:00: Recorded command exit 0; command argv SHA-256
+  a15cc58cd42c65980b3f718472d4802c1ccec6ff105530e3f2089168c16c493a.
+
+- 2026-10-11T13:59:14+00:00: Recorded command exit 0; command argv SHA-256
+  e274074a17e0682b5edf79b5caca577a41520ed9ca8daf9342f0433b678582a1.
+
+- 2026-10-11T13:59:42+00:00: Recorded command exit 0; command argv SHA-256
+  66f996973c66b1dc6463c1cf5f3af22fc2e3038ab84de35cb406f119798f0306.
+
+- 2026-10-11T14:00:27+00:00: Recorded command exit 101; command argv SHA-256
+  10a701b2424e5ed226b0455eb01ce19376ff98a24fb81ec0200c779f16f8a3dc.
+
+- 2026-10-11T14:00:55+00:00: Recorded command exit 0; command argv SHA-256
+  245e3b0fff1646dc3984ec302e56aa0b1995e88266374bb46e25680733a6a143.
+
+- 2026-10-11T14:01:23+00:00: Recorded command exit 0; command argv SHA-256
+  3ce7e7052283f0a20f77e43c8d9a7bbdd6c377538c05e7f56ee034002add5ad6.
+
+- 2026-10-11T14:02:37+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-10-11T14:03:07+00:00: Recorded command exit 0; command argv SHA-256
+  e274074a17e0682b5edf79b5caca577a41520ed9ca8daf9342f0433b678582a1.
+
+- 2026-10-11T14:03:33+00:00: Recorded command exit 0; command argv SHA-256
+  9bee9533393737c3f6f9394ca04410e19296da8940afaf99aaad5895237504ef.
+
+- 2026-10-11T14:03:58+00:00: Recorded command exit 0; command argv SHA-256
+  f18ad62f9c9d9a6760e09d95ece99cc58b831e4016946fa857d41e1688516b8c.
+
+- 2026-10-11T14:04:44+00:00: Recorded command exit 0; command argv SHA-256
+  cab79174958809e6e46c45ff4e7953c404de8b4e7dcba8de94d226f3ce8d4ac8.
+
+- 2026-10-11T14:05:22+00:00: Rustfmt repair 32cb692a pushed. Full cargo test -p asb-cli passed
+  before repair; repair is formatting-only. PR #583 exact head updated.
+
+- 2026-10-11T14:08:25+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-10-11T14:09:07+00:00: Recorded command exit 0; command argv SHA-256
+  e274074a17e0682b5edf79b5caca577a41520ed9ca8daf9342f0433b678582a1.
+
+- 2026-10-11T14:09:29+00:00: Recorded command exit 0; command argv SHA-256
+  f6b6f842c448a90c56fe8c665d4f473b301b67152ad8b1849254c6ae566946c2.
+
+- 2026-10-11T14:09:54+00:00: Recorded command exit 0; command argv SHA-256
+  f18ad62f9c9d9a6760e09d95ece99cc58b831e4016946fa857d41e1688516b8c.
+
+- 2026-10-11T14:10:16+00:00: Pushed signed repair 7c08cfb0. Added explicit lifecycle repair/update
+  installed-ID validation, transactional rerun behavior, and human/machine
+  selection/source/build/reuse/path/next fields. Focused parser test passes.
+
+- 2026-10-11T14:10:32+00:00: Heartbeat by luna56-ar1779.
+
+- 2026-10-11T14:11:42+00:00: Recorded command exit 0; command argv SHA-256
+  a3fcf50559681de15238986360c1d4702b78883aa98c68d9afd55eca44a0b8e2.
+
+- 2026-10-11T14:11:53+00:00: Recorded command exit 0; command argv SHA-256
+  5cf7ef1b33d2d66d11d63bbe78d94081f0cb3366cd0a77c841993395ec8f82a9.

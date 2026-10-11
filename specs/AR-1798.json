@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1798.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "catalog-only", "description": "Only an AR-1776 repository and exact immutable revision can be selected; moving refs, unrelated repositories, and arbitrary paths are rejected."},
+    {"id": "verified-checkout", "description": "The provider returns a project-local checkout whose repository identity and HEAD exactly match the catalog before AR-1778 consumes it."},
+    {"id": "bounded-safe", "description": "Checkout transfer, staging, argv/env, hooks, time, output, path, and cleanup are bounded and credential-free."},
+    {"id": "typed-failures", "description": "Offline, unavailable, identity, revision, limit, cancellation, and cleanup failures remain distinct actionable outcomes."},
+    {"id": "builder-integration", "description": "AR-1779 invokes the AR-1778 pinned source builder with the verified checkout and records the real source-build result."}
+  ],
+  "definition_of_done": ["Source-only supported tool installation succeeds through a verified checkout and pinned builder in deterministic fixtures.", "Independent review, exact-head CI, signed protected merge, and exact-main post-merge evidence pass."],
+  "inputs": [{"id": "catalog", "description": "AR-1776 immutable tool acquisition catalog."}, {"id": "source-builder", "description": "AR-1778 pinned source builder and dependency materializer."}, {"id": "installer", "description": "AR-1779 default usable tool installation."}],
+  "outputs": [{"id": "checkout-provider", "description": "Bounded verified source checkout provider integrated into supported tool installation."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl", "credential-free-fixtures"],
+  "forbidden_tools": ["credential-output", "shell-hooks", "moving-ref-substitution", "arbitrary-checkout", "provider-fallback", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical"],
+  "gates": [{"id": "checkout-contract", "description": "Positive and negative deterministic checkout-provider matrix passes."}, {"id": "installer-source-fallback", "description": "AR-1779 source-only installation invokes the verified checkout and AR-1778 builder, with exact receipt evidence."}]
+}

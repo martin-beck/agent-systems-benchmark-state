@@ -10,21 +10,29 @@
     "AR-1788"
   ],
   "id": "AR-1785",
-  "next_action": "AR-1791 must repair recurrent GCC and rustup TUI fixture contamination first. Then independently re-review d46180c297699f96d2c4e5f2d4b2cc6b6aabed12, publish exact-head CI, merge, and requalify AR-1715. No GitHub Reviews API approval object is required.",
+  "next_action": "Monitor exact-main post-merge workflows for daae06efa2d78b11acd6902c5ac6958091bfe546; after terminal success, run post-merge verification, accept, release, and requalify AR-1715. No GitHub Reviews API approval object required.",
   "observed_branch": "codex/ar-1785-openrouter-config",
   "observed_dirty": 0,
-  "observed_head": "d46180c297699f96d2c4e5f2d4b2cc6b6aabed12",
+  "observed_head": "dd1930684ca8fbe13ff0c0cdc6964ae862ff0edf",
   "owner": "",
   "plan": "../plans/AR-1785-openrouter-config-identity-repair.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:ad3325bc51f7d5770343c780647e81efeffe3fa50f831cbec2aee3f1cff3ea8f",
+    "evidence_ref": "quality/AR-1785-openrouter-config-postmerge-receipt.json",
+    "spec_ref": "specs/AR-1785.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1785.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "done",
   "summary": "Align persisted OpenRouter configuration, provider-plan selection identity, and benchmark-live selected/all execution.",
-  "task_revision": 167,
+  "task_revision": 201,
   "title": "Repair OpenRouter configuration identity for live benchmark qualification",
-  "updated_at": "2026-10-11T19:27:08+00:00",
+  "updated_at": "2026-10-11T00:37:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar1785-config"
 }
 ---
@@ -512,6 +520,115 @@ merging, and post-merge verification remain required.
 - 2026-10-10T23:10:10+00:00: Recorded command exit 0; command argv SHA-256
   7c932abe78352cc76ed3bd21d50df0dd0d9e52dcf98321925906a3c2f07317cb.
 
-- 2026-10-11T19:27:08+00:00: Recovered expired claim formerly owned by
-  codex-clean-state-coordinator. Coordinator recovery: lease expired; preserve observed head
-  d46180c297699f96d2c4e5f2d4b2cc6b6aabed12 and next action.
+- 2026-10-10T23:49:54+00:00: Recovered expired claim formerly owned by
+  codex-clean-state-coordinator. Expired owner codex-clean-state-coordinator recovered after AR-1791
+  postmerge completion; preserve candidate d46180c and requalify before publication.
+
+- 2026-10-10T23:50:01+00:00: Claimed by codex-ar1785-coordinator.
+
+- 2026-10-10T23:51:15+00:00: Recorded command exit 0; command argv SHA-256
+  e2cfcf4cc1351f97215f462a50eb4827821f7d0f4ca3bb899d56676c5b5acde3.
+
+- 2026-10-10T23:51:26+00:00: Recorded command exit 0; command argv SHA-256
+  18399f436a01ca94a727fb51be14ac26f2d612bd9abfd5f3272c691075208a4d.
+
+- 2026-10-10T23:52:58+00:00: Recorded command exit 0; command argv SHA-256
+  f66bb4e1ac1d50678a4ec4d31dbf6cbe961265655f69a439cee02c66f841ab93.
+
+- 2026-10-10T23:54:13+00:00: Recorded command exit 0; command argv SHA-256
+  f66bb4e1ac1d50678a4ec4d31dbf6cbe961265655f69a439cee02c66f841ab93.
+
+- 2026-10-10T23:55:22+00:00: AR-1791 completed with green post-merge assurance. Rebased AR-1785
+  candidate onto current main; two ordinary locked workspace runs and focused/configuration gates
+  pass. Release for independent exact-head review.
+
+- 2026-10-10T23:55:29+00:00: AR-1785 candidate dd1930684 is ready for independent exact-head review;
+  no GitHub Reviews API approval object required.
+
+- 2026-10-10T23:55:39+00:00: Claimed by codex-ar1785-independent-review.
+
+- 2026-10-10T23:56:02+00:00: Recorded command exit 0; command argv SHA-256
+  e67a834933280fc93548e8dd4ddd08419d5f0e88fc9cbe6d17a0180c1d7d2e73.
+
+- 2026-10-10T23:56:20+00:00: Recorded command exit 0; command argv SHA-256
+  cdf6d2a2d2c758bb763b1459cabe312c5d93250aabd24375a57683bff5527494.
+
+- 2026-10-10T23:56:24+00:00: Recorded command exit 0; command argv SHA-256
+  2aae988546139e07ede2e66e4d48b24c8fa3f7e2a202c270735df2422eb342a8.
+
+- 2026-10-10T23:56:33+00:00: Recorded command exit 101; command argv SHA-256
+  0a80e5fef7a7fd1f9619dda5154f8e236f7046b2d753e8434f5dc84d2c1342d8.
+
+- 2026-10-10T23:57:57+00:00: Recorded command exit 0; command argv SHA-256
+  f24764ccc8494b42adf54484668b433dbe432ce9b3b9321f9b62e0ffa64c2bfd.
+
+- 2026-10-10T23:58:07+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-10-10T23:58:17+00:00: Independent review clean for exact rebased candidate
+  dd1930684ca8fbe13ff0c0cdc6964ae862ff0edf. Complete diff is 3 files: crates/asb-cli/src/lib.rs
+  identity binding for setup-config OpenRouter profiles and selected/all benchmark-live no-fallback
+  paths; diagnostic_legacy_catalog.rs generated identity rebase; provenance example digest update.
+  git diff --check passed; no credentials, secrets, private paths, telemetry, or network fallback
+  added. Candidate SSH signature good (ED25519 SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE)
+  with matching Signed-off-by. Focused config/no-fallback tests passed:
+  plan_and_run_config_sources_bind_selection_before_execution; 5 benchmark_live tests (explicit
+  online/selection, malformed/duplicate denial, selected/all runtime-factory matrix); 5
+  provider_plan tests (catalog binding, bounds, stale/unknown/mismatch denial, config dispatch).
+  First ordinary full workspace gate exit 101 was infrastructure-only: /srv/data had 40 MiB free and
+  Cargo failed writing libasb_cli.rlib with No space left on device. Identical cargo test --locked
+  --workspace --all-targets rerun with CARGO_TARGET_DIR=/tmp/asb-ar1785-review-target passed all
+  applicable tests (external/native fixtures explicitly ignored). cargo fmt --all -- --check passed.
+  No GitHub Reviews API approval object required. Released for integration; reviewer did not accept
+  or merge.
+
+- 2026-10-10T23:59:01+00:00: Claimed by codex-ar1785-integration.
+
+- 2026-10-10T23:59:10+00:00: Recorded command exit 0; command argv SHA-256
+  d7e8d28aa142f81ed95dddbcbcc4e89248e4d1ded16431687b2e1c47d38a17a9.
+
+- 2026-10-10T23:59:26+00:00: Recorded command exit 0; command argv SHA-256
+  6d80b858233fffb171b7a8ccd819d3be6dcf59008fccbc5ca7bc859dfd3916cb.
+
+- 2026-10-11T00:05:52+00:00: Recorded command exit 0; command argv SHA-256
+  0794c4573e9b4e8fe1c5f7acbd5be699141770439567f672984c736d40ba87cb.
+
+- 2026-10-11T00:06:01+00:00: Recorded command exit 0; command argv SHA-256
+  306092fba64e0435e83af69c1ba9b9da9ce8214ca751ca57709d5e4269fa0a57.
+
+- 2026-10-11T00:06:09+00:00: Recorded command exit 0; command argv SHA-256
+  1bc174af6136366bb3c9fec24877914bc23d694207020af38ec109bb356e9f37.
+
+- 2026-10-11T00:09:58+00:00: Heartbeat by codex-ar1785-integration.
+
+- 2026-10-11T00:26:16+00:00: Recorded command exit 0; command argv SHA-256
+  8a57be6b6100eda0280b5757279c9f846d6d11cebbcd67e70e150d1a00d21990.
+
+- 2026-10-11T00:26:30+00:00: Recorded command exit 0; command argv SHA-256
+  1420d1044b0c73b48806e092a961bf46164e83d22f19d83fbbb7c4a42a456a9e.
+
+- 2026-10-11T00:26:43+00:00: PR #555 merged via signed protected merge daae06e; exact-head checks
+  including rerun policy coverage are green. Await exact-main workflows.
+
+- 2026-10-11T00:26:55+00:00: Heartbeat by codex-ar1785-integration.
+
+- 2026-10-11T00:36:29+00:00: Recorded command exit 0; command argv SHA-256
+  856fba8cae95db7c820ecd7d60ee447a51cf062324442ad9c343a46629ca52d0.
+
+- 2026-10-11T00:37:18+00:00: Recorded command exit 0; command argv SHA-256
+  f00615503919f4b4e89c61c609389ab02dfc709fadb3c240ff8a0ce45062133c.
+
+- 2026-10-11T00:37:23+00:00: Recorded command exit 0; command argv SHA-256
+  9389920e2c24795df72bd32d92cb7e6784c06f1f41aebd5e09c7d9de994cff97.
+
+- 2026-10-11T00:37:29+00:00: Recorded command exit 0; command argv SHA-256
+  1bc174af6136366bb3c9fec24877914bc23d694207020af38ec109bb356e9f37.
+
+- 2026-10-11T00:37:33+00:00: Recorded command exit 0; command argv SHA-256
+  6418b5ad6dd608fa8777a31de5f97361121ea054334c495bea3e5ea86b1b2942.
+
+- 2026-10-11T00:37:37+00:00: Accepted after signed merge daae06e, all ten exact-main workflows
+  green, and 341/341 post-merge asb-cli tests. No GitHub Reviews API approval object required.
+
+- 2026-10-11T00:37:42+00:00: AR-1785 complete: PR #555 merged as daae06e; exact-main workflows and
+  post-merge tests green; release requalification dependency AR-1715 may proceed.

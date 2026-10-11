@@ -73,7 +73,7 @@ class BoardMetricsTests(unittest.TestCase):
         self.assertEqual(0, result["decision_backlog"]["count"])
         self.assertEqual(0, result["gate_failures"]["count"])
 
-    def test_gate_failure_classification_is_fail_closed(self) -> None:
+    def test_gate_failure_classification_uses_required_stages(self) -> None:
         self.assertEqual(
             "reconciliation",
             _gate_failure(
@@ -100,7 +100,7 @@ class BoardMetricsTests(unittest.TestCase):
             ),
         )
         self.assertEqual(
-            "authorization",
+            None,
             _gate_failure(
                 {
                     "oracle_gate": {

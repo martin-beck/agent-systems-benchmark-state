@@ -433,6 +433,72 @@ class SQLiteStorageTest(unittest.TestCase):
         self.assertEqual(2, connection.execute("SELECT count(*) FROM events").fetchone()[0])
         connection.close()
 
+    def test_bind_worktree_uses_the_same_live_owner_and_identity_fence(self) -> None:
+        active = task("AR-0001", status="in_progress")
+        active[1].update(owner="worker-a", claim_expires="2099-01-01T00:00:00+00:00")
+        conflict = task("AR-0002", status="in_progress")
+        conflict[1].update(
+            owner="worker-b",
+            claim_expires="2099-01-01T00:00:00+00:00",
+            branch="repair/existing",
+            worktree_key="existing-worker",
+        )
+        candidate = task("AR-0003", status="in_progress")
+        candidate[1].update(owner="worker-c", claim_expires="2099-01-01T00:00:00+00:00")
+        backend = self.create([active, conflict, candidate])
+        self.configure_core(backend="sqlite")
+        CORE.RUNTIME.mkdir(exist_ok=True)
+        CORE.CONFIG.write_text(
+            json.dumps(
+                {
+                    "projects_root": str(self.root.parent),
+                    "product_worktree": "product",
+                    "github_repository": "owner/product",
+                    "push_enabled": False,
+                }
+            )
+        )
+        args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker-a",
+            expected_revision=1,
+            branch="repair/ar-0001",
+            worktree_key="worker-one",
+        )
+        CORE.mutate(args, "bind-worktree")
+        bound = next(item[1] for item in backend.load_tasks() if item[1]["id"] == "AR-0001")
+        self.assertEqual(
+            ("repair/ar-0001", "worker-one", 2),
+            (bound["branch"], bound["worktree_key"], bound["task_revision"]),
+        )
+        connection = sqlite3.connect(self.database)
+        events_before = connection.execute("SELECT count(*) FROM events").fetchone()[0]
+        connection.close()
+        self.assertEqual(
+            "Worktree worker-one on branch repair/ar-0001 is already bound.",
+            CORE.mutate(
+                argparse.Namespace(**{**vars(args), "expected_revision": 2}), "bind-worktree"
+            ),
+        )
+        replayed = next(item[1] for item in backend.load_tasks() if item[1]["id"] == "AR-0001")
+        self.assertEqual(2, replayed["task_revision"])
+        connection = sqlite3.connect(self.database)
+        self.assertEqual(
+            events_before, connection.execute("SELECT count(*) FROM events").fetchone()[0]
+        )
+        connection.close()
+        with self.assertRaisesRegex(RuntimeError, "identity conflicts with an active task"):
+            CORE.mutate(
+                argparse.Namespace(
+                    task="AR-0003",
+                    owner="worker-c",
+                    expected_revision=1,
+                    branch="repair/existing",
+                    worktree_key="candidate-worker",
+                ),
+                "bind-worktree",
+            )
+
     def test_every_write_route_enters_fence_before_sqlite_mutation(self) -> None:
         ordinary = self.create()
 
@@ -962,6 +1028,35 @@ class SQLiteStorageTest(unittest.TestCase):
         )
         self.assertEqual("pass", final["spec_acceptance"]["status"])
         self.assertIn("updated", (self.tasks / "AR-0001-test.md").read_text())
+
+    def test_sqlite_gate_persists_and_exports_human_session_metadata(self) -> None:
+        self.configure_core(backend="sqlite")
+        task_path, task_meta, task_body = task("AR-0001")
+        backend = self.create([(task_path, task_meta, task_body)])
+        CORE.export_sqlite_projections()
+        gate = argparse.Namespace(
+            task="AR-0001",
+            expected_revision=1,
+            stage="intake",
+            action="open",
+            disposition="unresolved",
+            before=["plan/before=sha256:" + "a" * 64],
+            after=["plan/after=sha256:" + "b" * 64],
+            public_ref="oracle/session-1",
+            session_id="AWTUI-SESSION-1",
+            request_ref="AWG-SESSION-1",
+            activation="user-decision",
+            tui_contract_version="1.0",
+        )
+        with patch.object(CORE, "push_replica"):
+            CORE.mutate(gate, "gate")
+        stored = backend.load_tasks()[0][1]["oracle_gate"]["human_session"]
+        self.assertEqual(
+            ("AWTUI-SESSION-1", 1, "presenting"),
+            (stored["session_id"], stored["task_revision"], stored["status"]),
+        )
+        exported = json.loads((self.tasks / "AR-0001-test.md").read_text().split("---", 2)[1])
+        self.assertEqual(stored, exported["oracle_gate"]["human_session"])
 
     def test_sqlite_release_blocked_unblock_and_claim_is_session_free(self) -> None:
         self.configure_core(backend="sqlite")

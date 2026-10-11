@@ -1606,7 +1606,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |

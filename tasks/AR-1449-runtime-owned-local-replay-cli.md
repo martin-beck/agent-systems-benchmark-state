@@ -16,11 +16,21 @@
   "plan": "../plans/AR-1449.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "spec_acceptance": {
+    "evidence_class": "quality",
+    "evidence_digest": "sha256:5b93d20e8910a526b16ffc3502389e5c939fd6b66bbe5f66decdfd25b11e150e",
+    "evidence_ref": "quality/AR-1449-current-main-requalification.json",
+    "spec_ref": "specs/AR-1449.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
+  "spec_ref": "specs/AR-1449.json",
+  "spec_revision": 1,
+  "status": "done",
   "summary": "Provide fail-closed runtime-owned local replay authority for the guided CLI wrapper.",
-  "task_revision": 29,
+  "task_revision": 35,
   "title": "Runtime-owned local replay CLI authority",
-  "updated_at": "2026-10-10T23:06:27+00:00",
+  "updated_at": "2026-10-10T23:13:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1449-current-main"
 }
 ---
@@ -116,3 +126,22 @@ Do not weaken AR-1448 or make live provider reachability a prerequisite.
   product diff required because runtime-owned LocalReplayProvisioner/development_fixture and guided
   replay integration are already on protected head. Coordinator must complete spec_acceptance or
   accept no-op requalification; no merge/API approval object was needed.
+
+- 2026-10-10T23:12:33+00:00: Spec and privacy-safe exact-main receipt are now present;
+  requalification is terminal green. Admit the existing runtime-owned replay implementation without
+  a PR or GitHub Reviews API approval object.
+
+- 2026-10-10T23:12:36+00:00: Claimed by codex-ar1449-final.
+
+- 2026-10-10T23:12:47+00:00: Recorded command exit 0; command argv SHA-256
+  74dcd1cb28fa2fad4b01a1261e8fa21822af4c19bc8a7c826b6f4129e8f8ca8b.
+
+- 2026-10-10T23:12:54+00:00: Recorded command exit 1; command argv SHA-256
+  ea46d009fa95347762ef8ec0148e1e47b0d5dd359d2b3f9e65357ffd30552339.
+
+- 2026-10-10T23:13:10+00:00: Exact-main requalification passed guided replay, launch-factory, full
+  workspace, fmt, signatures/DCO, privacy, and clean-diff gates; implementation is already
+  integrated and no API approval object is required.
+
+- 2026-10-10T23:13:13+00:00: AR-1449 complete via exact-main requalification; no product diff, PR,
+  merge, provider traffic, or GitHub Reviews API approval was required.

@@ -46,6 +46,8 @@ run_model() {
     # The fast tier has its own reduced configuration over the binding spec.
     if [[ "${model}" == "HandoffctlFast" ]]; then
         source=HandoffctlBinding
+    elif [[ "${model}" == "HandoffctlReceiptsFast" ]]; then
+        source=HandoffctlReceipts
     elif [[ "${model}" == "OracleInteractionGates" ]]; then
         source=../oracle/OracleInteractionGates
         config="${SPEC_DIR}/../oracle/OracleInteractionGates.cfg"
@@ -65,6 +67,8 @@ if [[ "${TIER}" == "portable-smoke" ]]; then
 elif [[ "${TIER}" == "pr-fast" ]]; then
     # Deliberately smaller safety-only required merge gate.
     run_model HandoffctlFast
+    run_model HandoffctlReceiptsFast HandoffctlReceipts
+    run_model HandoffctlObservation
     run_model OracleInteractionGates
 elif [[ "${TIER}" == "pr-publication" ]]; then
     # PR publication checks every invariant family. The general lifecycle
@@ -74,6 +78,8 @@ elif [[ "${TIER}" == "pr-publication" ]]; then
     run_model HandoffctlLocks
     run_model HandoffctlRun
     run_model HandoffctlStorage
+    run_model HandoffctlReceipts
+    run_model HandoffctlObservation
     run_model HandoffctlPR Handoffctl
     run_model HandoffctlRecovery
 else
@@ -81,8 +87,10 @@ else
     run_model HandoffctlLocks
     run_model HandoffctlRun
     run_model HandoffctlStorage
+    run_model HandoffctlReceipts
+    run_model HandoffctlObservation
     run_model Handoffctl
     run_model HandoffctlRecovery
 fi
 python3 "${SPEC_DIR}/attest.py" --tier "${TIER}" --output "${ATTESTATION}" --jar "${JAR}" --manifest "${MANIFEST}" --execution-classification "${EXECUTION_CLASSIFICATION}" \
-    --models $(if [[ "${TIER}" == "portable-smoke" ]]; then echo HandoffctlBinding; elif [[ "${TIER}" == "pr-fast" ]]; then echo HandoffctlFast OracleInteractionGates; elif [[ "${TIER}" == "pr-publication" ]]; then echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage HandoffctlPR HandoffctlRecovery; else echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage Handoffctl HandoffctlRecovery; fi)
+    --models $(if [[ "${TIER}" == "portable-smoke" ]]; then echo HandoffctlBinding; elif [[ "${TIER}" == "pr-fast" ]]; then echo HandoffctlFast HandoffctlReceiptsFast HandoffctlObservation OracleInteractionGates; elif [[ "${TIER}" == "pr-publication" ]]; then echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage HandoffctlReceipts HandoffctlObservation HandoffctlPR HandoffctlRecovery; else echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage HandoffctlReceipts HandoffctlObservation Handoffctl HandoffctlRecovery; fi)

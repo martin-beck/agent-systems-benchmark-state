@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1698",
+  "status": "qualified",
+  "product_commit": "f090de56710db16e3751df180ee4183ca87d952e",
+  "qualification": {
+    "recording_campaign": {
+      "agents": 9,
+      "workloads": 27,
+      "tuples": 243,
+      "offline_ready": true,
+      "mode": "development_local_mock"
+    },
+    "guided_strict_replay": {
+      "runtime_authority": "local_mock_fixture",
+      "network": "denied",
+      "provider_fallback": "forbidden",
+      "result": "pass"
+    },
+    "synthetic_campaign_replay": {
+      "result": "expected_fail_closed",
+      "reason": "synthetic dialect is not an authenticated strict-replay dialect",
+      "provider_fallback": "forbidden"
+    },
+    "focused_cli_replay_tests": 7,
+    "asb_replay_locked_tests": {
+      "unit": 28,
+      "cassette_roundtrip": 20,
+      "fault": 1,
+      "gemini": 9,
+      "migration": 5,
+      "pacing": 7,
+      "redaction": 12,
+      "schema": 5,
+      "strict_replay": 21
+    }
+  },
+  "privacy": {
+    "credentials_recorded": false,
+    "provider_traffic": false,
+    "prompts_or_responses_recorded": false,
+    "private_paths_recorded": false
+  },
+  "github_reviews_api_approval_required": false,
+  "independent_technical_review": "coordinator exact-main qualification",
+  "next_action": "Accept and release AR-1698, then reconcile AR-1652 without altering its historical evidence."
+}

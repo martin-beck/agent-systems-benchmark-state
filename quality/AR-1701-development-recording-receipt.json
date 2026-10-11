@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1701",
+  "status": "qualified",
+  "product_commit": "f090de56710db16e3751df180ee4183ca87d952e",
+  "mode": "development_local_mock",
+  "provider_traffic": false,
+  "credentials_recorded": false,
+  "coverage": {
+    "recording_and_redaction": "pass",
+    "campaign_matrix_and_atomic_sealing": "pass",
+    "strict_offline_replay_network_denied": "pass",
+    "comparison_and_analysis": "pass",
+    "incomplete_or_mismatched_capture_rejection": "pass",
+    "selected_and_all_agent_workflows": "pass"
+  },
+  "focused_tests": {
+    "recording_campaign_and_replay": 7,
+    "persist_replay_compare": 1,
+    "provider_selection_plan_run_sweep_compare_report": 1
+  },
+  "negative_boundary": "Synthetic campaign cassettes remain unavailable to authenticated strict replay and fail closed without provider fallback.",
+  "github_reviews_api_approval_required": false,
+  "independent_technical_review": "coordinator exact-main qualification",
+  "next_action": "Accept and release AR-1701, then promote AR-1712."
+}

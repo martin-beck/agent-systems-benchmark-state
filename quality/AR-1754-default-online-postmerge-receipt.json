@@ -1,0 +1,30 @@
+{
+  "all_required_exact_main_workflows": "success",
+  "ar": "AR-1754",
+  "local_verification": {
+    "asb_cli_library": "342 passed",
+    "diagnostic_contract": "9 passed",
+    "guide_examples": "6 passed",
+    "repository_policy": "protected-main all checks passed",
+    "workflow_transcript": "3 passed"
+  },
+  "merge_tree": "d3cfe7e4be63c333992c0ff2cb0e87c640430e30",
+  "notes": "Initial provenance run failed only due GitHub merged-PR association propagation race; rerun 38108397769 passed after association became authoritative.",
+  "product_merge_commit": "8e4dc926d4b818defe49d3576f35481e6e22b35f",
+  "product_repository": "martin-beck/agent-systems-benchmark",
+  "pull_request": 558,
+  "required_exact_main_workflows": {
+    "Huawei MIT source headers": 38108397732,
+    "credential-free benchmark path": 38108397734,
+    "cross-repository development broker qualification": 38108397745,
+    "emulated aarch64 portability": 38108397809,
+    "fault assurance": 38108397735,
+    "formal assurance": 38108397776,
+    "hosted portability and native qualification": 38108397730,
+    "portable protected-main provenance": 38108397769,
+    "repository quality": 38108397737,
+    "rust verification": 38108397818
+  },
+  "review": "independent complete-diff review accepted; no GitHub Reviews API approval object required",
+  "reviewed_head": "0dcd147261d40d7f65324fa80669b7215abdfd72"
+}

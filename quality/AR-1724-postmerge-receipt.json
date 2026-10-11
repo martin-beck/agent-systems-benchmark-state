@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1724",
+  "status": "postmerge_verified",
+  "pr": 557,
+  "reviewed_head": "70f20a9f1f5d00b289d6db1fab25b5bab7d8f5ad",
+  "reviewed_tree": "d3cfe7e4be63c333992c0ff2cb0e87c640430e30",
+  "merge_commit": "a31232f401460cc9f22e1324fb455956e0ed5cb6",
+  "merge_parents": [
+    "f090de56710db16e3751df180ee4183ca87d952e",
+    "70f20a9f1f5d00b289d6db1fab25b5bab7d8f5ad"
+  ],
+  "merge_tree_matches_reviewed_tree": true,
+  "merge_signature_and_dco": true,
+  "independent_exact_head_review": true,
+  "github_reviews_api_approval_required": false,
+  "local_postmerge": {
+    "commit": "a31232f401460cc9f22e1324fb455956e0ed5cb6",
+    "asb_cli_lib_tests_passed": 341,
+    "dirty": false
+  },
+  "postmerge_workflows": {
+    "all_required_terminal_success": true,
+    "runs": [
+      38104013710,
+      38104013711,
+      38104013718,
+      38104013720,
+      38104013726,
+      38104013741,
+      38104013743,
+      38104013745,
+      38104013756,
+      38104013799
+    ]
+  },
+  "privacy": {
+    "credentials_recorded": false,
+    "raw_prompts_or_responses_recorded": false,
+    "private_paths_recorded": false
+  }
+}\n

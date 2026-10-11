@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1715",
+  "status": "qualified",
+  "asb_commit": "daae06efa2d78b11acd6902c5ac6958091bfe546",
+  "asb_remote_main_verified": true,
+  "selection": {
+    "catalog_sha256": "b8663692cb452bffa4e882e510bf6ec111f238ddb6cdebf7f6a34540f1b04cf8",
+    "selection_sha256": "8b37dea93505a971b4d843ec46ab004f6539f9acf5c8ed9f39a28aabc4e41d26",
+    "provider_profile_sha256": "a28b4afbdea2822c910941d53db8eb4924bbf2afd296e96072b0daff17780fcb",
+    "model": "cohere/north-mini-code:free",
+    "credential_source": "environment",
+    "credential_reference_sha256": "92df3a66daaf7ff4187949b9153a97b0b9dc0d8434c2da664300cbd97027e3f1",
+    "agents": ["opencode", "opendesk"],
+    "online_explicit": true
+  },
+  "live_evidence": {
+    "selected_json_real_transport": {
+      "workload": "original.dependency-migration",
+      "exit_code": 0,
+      "outcome": "failed",
+      "grade_passed": false,
+      "provider_request_completed": true,
+      "fallback": false
+    },
+    "all_agent_mode_exercised": true,
+    "all_agent_timeout_bounded": true,
+    "malformed_key": {"exit_code": 4, "typed_failure": true, "fallback": false},
+    "missing_key": {"exit_code": 3, "typed_failure": true, "fallback": false}
+  },
+  "negative_matrix": {
+    "missing_key": "covered by CLI and unit tests",
+    "malformed_key": "covered by CLI and unit tests",
+    "timeout": "covered by bounded attempt timeout tests",
+    "transport": "covered by provider boundary tests",
+    "non_2xx": "covered by provider failure tests",
+    "unavailable_model": "covered by catalog/provider-plan tests",
+    "process_failure": "covered by adapter/process boundary tests",
+    "no_fallback": true
+  },
+  "focused_tests": {
+    "live_provider_filter": {"passed": 4, "failed": 0},
+    "openrouter_filter": {"passed": 15, "failed": 0},
+    "postmerge_cli_lib": {"passed": 341, "failed": 0}
+  },
+  "hosted_exact_main": {
+    "all_required_workflows_green": true,
+    "workflow_runs": [
+      38098432062, 38098432067, 38098432070, 38098432078, 38098432082,
+      38098432083, 38098432092, 38098432057, 38098432120, 38098432125
+    ]
+  },
+  "privacy": {
+    "api_key_recorded": false,
+    "prompt_recorded": false,
+    "response_recorded": false,
+    "private_paths_recorded": false
+  },
+  "review": {
+    "independent_exact_head_review": true,
+    "github_reviews_api_approval_required": false
+  }
+}

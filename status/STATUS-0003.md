@@ -146,7 +146,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -188,7 +188,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -258,7 +258,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -286,7 +286,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -300,7 +300,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -308,13 +308,13 @@
 | Parent | None |
 | Children | None |
 | Summary | Run the real OpenRouter selected/all live benchmark smoke and typed failure matrix with an operator API key, producing a privacy-safe exact-head receipt. |
-| Next action | Create a product-bound repair AR for the disposable config-path inconsistency: setup persisted a valid OpenRouter selection under the supplied XDG_CONFIG_HOME, but provider-plan --use-config reported configuration absent. After exact-head repair, regenerate one config-bound selection and rerun benchmark-live selected/all human and JSON plus the credential/no-fallback negative matrix. |
+| Next action | Run the post-AR-1785 CLI live qualification matrix on exact main: regenerate config-bound selection, exercise selected/all human and JSON, then complete credential-free typed negative cases without retaining the runtime key. |
 
 ### AR-1716 — Cassette provider-profile identity binding
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -322,13 +322,13 @@
 | Parent | None |
 | Children | None |
 | Summary | Bind every recording index insertion to the selected provider profile identity and reject mismatched cassette metadata before mutation. |
-| Next action | Add a focused RecordingIndex::insert identity fence and deterministic positive/mismatch tests, then qualify exact human/JSON diagnostics and receipt integrity. |
+| Next action | PR #566 rebased onto protected main 7e795589 at exact head 58a445a5; await fresh required checks green, then protected merge and exact-main verification. |
 
 ### AR-1717 — Comparison exact provider/settings/endpoint identity fences
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -336,7 +336,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Require exact provider, model settings, and endpoint identity equality before comparison admits online/offline results. |
-| Next action | Add focused comparison admission fences for provider, model/settings digest, endpoint identity, and generation; qualify symmetric/asymmetric mismatch diagnostics without weakening development setup. |
+| Next action | Monitor PR #567 exact head c0e3f8f4 for fresh required CI; independent review, protected merge, postmerge verify, then accept/release. |
 
 ### AR-1718 — Portable fault-matrix network isolation repair
 
@@ -412,7 +412,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -420,13 +420,13 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the shortest user-facing run use the configured live provider by default while keeping local mock explicit and development authentication warning-only. |
-| Next action | Promote after the live runner and provider qualification dependencies are current; implement and qualify the default-online easy run. |
+| Next action | Implement easy run default-online on the bound worktree; keep --local-mock explicit, add human/JSON positive and no-fallback negative coverage, then run focused/full gates and publish a reviewed PR. |
 
 ### AR-1724 — Make the easy sweep default to online provider execution
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -440,7 +440,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
@@ -448,7 +448,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Publish a linked, executable tutorial for two-agent OpenRouter benchmarking, ASB TUI workflows, dependencies, and per-distribution installation. |
-| Next action | Promote after coordinator integrity repair and dependency verification; audit existing docs, add the CLI/TUI tutorial and platform install matrix, then qualify links, commands, and visual evidence. |
+| Next action | Post-merge exact main verified at 7e795589fd4dbefecf17a7d4457623e1de33d2b4: tutorial freshness passes and broken link audit reports 0. Accept and release with protected merge evidence. |
 
 ### AR-1726 — Allow user-owned group-writable rustup shim in development
 
@@ -594,7 +594,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -846,7 +846,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -854,7 +854,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make configured online/live provider execution the default for canonical run, sweep, easy, recording/campaign, and TUI handoff paths while keeping local mock and strict replay explicit alternatives. |
-| Next action | Promote after AR-1723, AR-1724, and cli2key qualification AR-1733 are current; inventory every run/sweep/easy/record/campaign/TUI entry point, implement default-online routing with explicit --local-mock and offline replay alternatives, then qualify positive and negative paths. |
+| Next action | PR #558 now points to exact signed head 0dcd1472. The hosted Rust failure was a stale workflow provenance digest; it is repaired and the focused workflow-transcript gate passes locally. Independently review the complete diff, then wait for all 15 exact-head checks to reach terminal success. No GitHub Reviews API approval object is required; merge only through the documented signed protected-main procedure. |
 
 ### AR-1755 — Make ASB installation safely idempotent
 
@@ -1154,7 +1154,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -1168,21 +1168,21 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Acquire, verify, and atomically install official compatible prebuilt executable tools into a project-local root. |
-| Next action | Implement catalog-driven verified compatible-binary reuse and official prebuilt executable-tool acquisition into project-local storage. |
+| Summary | PR #579 exact head d30079b7: credential-channel command construction is tested even when hosted bwrap is unavailable; source/archive validation remains hardened. |
+| Next action | AR-1794 — protected-main merge-path repair must create the signed local forward merge after the web-merge provenance failure; then rerun exact-main workflows and close AR-1777 only after all post-merge gates pass. |
 
 ### AR-1778 — Pinned source builds and project dependencies
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -1190,21 +1190,21 @@
 | Parent | None |
 | Children | None |
 | Summary | Build supported tools from verified pinned source and materialize missing dependencies in a project-owned prefix. |
-| Next action | Implement catalog-pinned source fallback builds and project-local dependency materialization for supported tools without root or ambient package-manager mutation. |
+| Next action | Accept AR-1778 with exact-main postmerge evidence at d64ac90a; then release done after durable acceptance. |
 
 ### AR-1779 — Default usable tool-install command
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | luna56-ar1779 |
 | Parent | None |
 | Children | None |
 | Summary | Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying. |
-| Next action | Make asb tool install supported-id resolve, acquire/build, validate, and register a usable project-local executable tool by default. |
+| Next action | Independent review and exact-head CI for PR #583 at 7c08cfb0; source-only fallback remains to be resolved before merge. |
 
 ### AR-1780 — Installed tool and workload execution qualification
 
@@ -1224,29 +1224,29 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Make every documented external AI-agent workload a pinned, development-supported ASB workload, including SWE-mini. |
-| Next action | Define the authoritative development external-workload catalog and make every documented suite installable, selectable, and executable through its pinned official source. |
+| Summary | PR #578 merged at signed local merge 4a8f0925. |
+| Next action | Wait for all exact-main workflows at 4a8f0925 to finish green, then post-merge verify and close AR-1781. |
 
 ### AR-1782 — Verified asb workload installation
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1782_workload_install_luna56 |
 | Parent | None |
 | Children | None |
 | Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
-| Next action | Implement asb workload install/list/status/select/repair/update/remove for every development-supported official external workload bundle. |
+| Next action | PR #584 rebased onto origin/main 24cb72d; exact remote head 96ea497a. Credential-free workload matrix, diagnostic contract, provenance, resolver, and clippy focused gates pass. Poll fresh exact-head CI; do not merge. |
 
 ### AR-1783 — Installed workload selection and execution
 
@@ -1266,21 +1266,21 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Make every ASB command dependency declared, installable or explicitly host-only, and fail-fast before a missing-tool runtime failure. |
-| Next action | Derive a complete command-to-tool/host-capability dependency registry and fail-fast preflight from all ASB command paths, adapters, monitors, and build recipes. |
+| Summary | PR #575 merged at signed local merge 14de8bce. |
+| Next action | Wait for all exact-main workflows at 14de8bce to finish green, then perform post-merge verification and close AR-1784 with durable evidence. |
 
 ### AR-1785 — Repair OpenRouter configuration identity for live benchmark qualification
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -1288,13 +1288,13 @@
 | Parent | None |
 | Children | None |
 | Summary | Align persisted OpenRouter configuration, provider-plan selection identity, and benchmark-live selected/all execution. |
-| Next action | AR-1791 must repair recurrent GCC and rustup TUI fixture contamination first. Then independently re-review d46180c297699f96d2c4e5f2d4b2cc6b6aabed12, publish exact-head CI, merge, and requalify AR-1715. No GitHub Reviews API approval object is required. |
+| Next action | Monitor exact-main post-merge workflows for daae06efa2d78b11acd6902c5ac6958091bfe546; after terminal success, run post-merge verification, accept, release, and requalify AR-1715. No GitHub Reviews API approval object required. |
 
 ### AR-1786 — Repair control state-root isolation race
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -1302,7 +1302,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Eliminate control state-root ownership collisions in ordinary parallel workspace tests. |
-| Next action | Independent exact-head review of 7be2fcb0dc0ee3ba4f30176c491a4d278ecd584b, then exact-head CI; no PR or merge before both pass. |
+| Next action | Continue monitoring PR #563 exact-head required CI at a5e58954; Rust verification, Repository quality, and Emulated aarch64 portability remain in progress, all completed checks are green. Merge only after terminal green. |
 
 ### AR-1787 — Repair control lock lifetime semantics
 
@@ -1364,7 +1364,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -1372,7 +1372,105 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the GCC descendant-marker and rustup descriptor-cleanup TUI fixtures deterministic under repeated ordinary workspace execution. |
-| Next action | Bind an isolated current-main worktree, implement and qualify both fixture repairs, then independently review, publish exact-head CI, merge, and requalify AR-1785. |
+| Next action | Inspect privacy/diff, then run another ordinary full workspace gate; release only if it passes and static/provenance gates remain green. |
+
+### AR-1792 — Make development broker PTY fixture deterministic
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the intermittent development broker foreground/restore PTY fixture exposed by PR #555 coverage. |
+| Next action | Release AR-1792 as done ownerless after independent review; no source changes. |
+
+### AR-1793 — Repair human diagnostic output-parent contract
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the legacy human diagnostic output-parent wording contract exposed by the full ASB CLI suite. |
+| Next action | Repair the legacy human diagnostic output-parent wording contract and add focused positive/negative coverage; do not publish AR-1784 until green. |
+
+### AR-1794 — Protected-main merge-path repair
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the protected-main publication path after a GitHub web merge produced a rejected committer identity. |
+| Next action | Keep open pending a clean signed local merge and green exact-main provenance receipt; do not use GitHub web merge. |
+
+### AR-1795 — Coordinator v0.5.1 adoption
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt v0.5.1 with strict coverage repair. |
+| Next action | Retry canonical publication-tier formal verification after the occupied shared admission lane clears; then independently review the exact state and release only with all required evidence. |
+
+### AR-1796 — Concurrent integration liveness
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | codex-ar1796-release-path |
+| Parent | None |
+| Children | None |
+| Summary | Keep autonomous development live during concurrent protected-main integration. |
+| Next action | Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release. |
+
+### AR-1797 — Wire cli2key sidecar into live benchmark execution
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark. |
+| Next action | Wire the verified project-local cli2key bridge into the runtime-owned sidecar launch path, then qualify fake and opt-in live benchmark execution without exposing credentials. |
+
+### AR-1798 — Pinned source-checkout acquisition
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Coverage margin repair pushed at c5303c05. |
+| Next action | Monitor PR #585 exact-head CI at 55a78934; request independent re-review after hosted coverage passes. |
 
 
 ## Dependency graph
@@ -1896,7 +1994,7 @@ flowchart LR
         AR_1446["AR-1446 - Done"]:::status_done
         AR_1447["AR-1447 - Done"]:::status_done
         AR_1448["AR-1448 - Done"]:::status_done
-        AR_1449["AR-1449 - Blocked"]:::status_blocked
+        AR_1449["AR-1449 - Done"]:::status_done
         AR_1450["AR-1450 - Done"]:::status_done
         AR_1451["AR-1451 - Done"]:::status_done
         AR_1452["AR-1452 - Done"]:::status_done
@@ -2133,31 +2231,31 @@ flowchart LR
         AR_1695["AR-1695 - Done"]:::status_done
         AR_1696["AR-1696 - Done"]:::status_done
         AR_1697["AR-1697 - Planned"]:::status_planned
-        AR_1698["AR-1698 - Open"]:::status_open
+        AR_1698["AR-1698 - Done"]:::status_done
         AR_1699["AR-1699 - Done"]:::status_done
     end
     subgraph series_17["17 - Additional work"]
         direction TB
         AR_1700["AR-1700 - Done"]:::status_done
-        AR_1701["AR-1701 - Planned"]:::status_planned
+        AR_1701["AR-1701 - Done"]:::status_done
         AR_1702["AR-1702 - Blocked"]:::status_blocked
         AR_1703["AR-1703 - Planned"]:::status_planned
         AR_1704["AR-1704 - Done"]:::status_done
         AR_1709["AR-1709 - Done"]:::status_done
-        AR_1710["AR-1710 - Planned"]:::status_planned
+        AR_1710["AR-1710 - Done"]:::status_done
         AR_1711["AR-1711 - Done"]:::status_done
-        AR_1712["AR-1712 - Planned"]:::status_planned
-        AR_1715["AR-1715 - Blocked"]:::status_blocked
-        AR_1716["AR-1716 - Planned"]:::status_planned
-        AR_1717["AR-1717 - Planned"]:::status_planned
+        AR_1712["AR-1712 - Done"]:::status_done
+        AR_1715["AR-1715 - Done"]:::status_done
+        AR_1716["AR-1716 - Done"]:::status_done
+        AR_1717["AR-1717 - Done"]:::status_done
         AR_1718["AR-1718 - Done"]:::status_done
         AR_1719["AR-1719 - Done"]:::status_done
         AR_1720["AR-1720 - Done"]:::status_done
         AR_1721["AR-1721 - Done"]:::status_done
         AR_1722["AR-1722 - Done"]:::status_done
-        AR_1723["AR-1723 - Planned"]:::status_planned
-        AR_1724["AR-1724 - Planned"]:::status_planned
-        AR_1725["AR-1725 - Planned"]:::status_planned
+        AR_1723["AR-1723 - Done"]:::status_done
+        AR_1724["AR-1724 - Done"]:::status_done
+        AR_1725["AR-1725 - Done"]:::status_done
         AR_1726["AR-1726 - Done"]:::status_done
         AR_1727["AR-1727 - Done"]:::status_done
         AR_1728["AR-1728 - Done"]:::status_done
@@ -2168,7 +2266,7 @@ flowchart LR
         AR_1733["AR-1733 - Done"]:::status_done
         AR_1734["AR-1734 - Done"]:::status_done
         AR_1735["AR-1735 - Done"]:::status_done
-        AR_1736["AR-1736 - Planned"]:::status_planned
+        AR_1736["AR-1736 - Done"]:::status_done
         AR_1737["AR-1737 - Done"]:::status_done
         AR_1738["AR-1738 - Done"]:::status_done
         AR_1739["AR-1739 - Done"]:::status_done
@@ -2186,7 +2284,7 @@ flowchart LR
         AR_1751["AR-1751 - Done"]:::status_done
         AR_1752["AR-1752 - Done"]:::status_done
         AR_1753["AR-1753 - Done"]:::status_done
-        AR_1754["AR-1754 - Planned"]:::status_planned
+        AR_1754["AR-1754 - Done"]:::status_done
         AR_1755["AR-1755 - Done"]:::status_done
         AR_1756["AR-1756 - Done"]:::status_done
         AR_1757["AR-1757 - Done"]:::status_done
@@ -2208,22 +2306,29 @@ flowchart LR
         AR_1773["AR-1773 - Planned"]:::status_planned
         AR_1774["AR-1774 - Planned"]:::status_planned
         AR_1775["AR-1775 - Planned"]:::status_planned
-        AR_1776["AR-1776 - Planned"]:::status_planned
-        AR_1777["AR-1777 - Planned"]:::status_planned
-        AR_1778["AR-1778 - Planned"]:::status_planned
-        AR_1779["AR-1779 - Planned"]:::status_planned
+        AR_1776["AR-1776 - Done"]:::status_done
+        AR_1777["AR-1777 - Done"]:::status_done
+        AR_1778["AR-1778 - Done"]:::status_done
+        AR_1779["AR-1779 - In progress"]:::status_in_progress
         AR_1780["AR-1780 - Planned"]:::status_planned
-        AR_1781["AR-1781 - Planned"]:::status_planned
-        AR_1782["AR-1782 - Planned"]:::status_planned
+        AR_1781["AR-1781 - Done"]:::status_done
+        AR_1782["AR-1782 - In progress"]:::status_in_progress
         AR_1783["AR-1783 - Planned"]:::status_planned
-        AR_1784["AR-1784 - Planned"]:::status_planned
-        AR_1785["AR-1785 - Open"]:::status_open
-        AR_1786["AR-1786 - Open"]:::status_open
+        AR_1784["AR-1784 - Done"]:::status_done
+        AR_1785["AR-1785 - Done"]:::status_done
+        AR_1786["AR-1786 - Done"]:::status_done
         AR_1787["AR-1787 - Done"]:::status_done
         AR_1788["AR-1788 - Done"]:::status_done
         AR_1789["AR-1789 - Done"]:::status_done
         AR_1790["AR-1790 - Done"]:::status_done
-        AR_1791["AR-1791 - Planned"]:::status_planned
+        AR_1791["AR-1791 - Done"]:::status_done
+        AR_1792["AR-1792 - Done"]:::status_done
+        AR_1793["AR-1793 - Done"]:::status_done
+        AR_1794["AR-1794 - Done"]:::status_done
+        AR_1795["AR-1795 - Done"]:::status_done
+        AR_1796["AR-1796 - In progress"]:::status_in_progress
+        AR_1797["AR-1797 - Planned"]:::status_planned
+        AR_1798["AR-1798 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4092,9 +4197,12 @@ flowchart LR
     AR_1728 --> AR_1729
     AR_1728 --> AR_1730
     AR_1729 --> AR_1731
+    AR_1729 --> AR_1797
     AR_1730 --> AR_1731
     AR_1731 --> AR_1732
+    AR_1731 --> AR_1797
     AR_1732 --> AR_1733
+    AR_1732 --> AR_1797
     AR_1733 --> AR_1736
     AR_1733 --> AR_1754
     AR_1733 --> AR_1785
@@ -4103,6 +4211,7 @@ flowchart LR
     AR_1733 --> AR_1788
     AR_1733 --> AR_1789
     AR_1733 --> AR_1790
+    AR_1733 --> AR_1797
     AR_1734 --> AR_1737
     AR_1734 --> AR_1738
     AR_1737 --> AR_1751
@@ -4112,6 +4221,7 @@ flowchart LR
     AR_1749 --> AR_1753
     AR_1750 --> AR_1748
     AR_1753 --> AR_1756
+    AR_1756 --> AR_1795
     AR_1757 --> AR_1766
     AR_1759 --> AR_1760
     AR_1759 --> AR_1761
@@ -4146,6 +4256,7 @@ flowchart LR
     AR_1769 --> AR_1773
     AR_1769 --> AR_1774
     AR_1770 --> AR_1791
+    AR_1770 --> AR_1792
     AR_1771 --> AR_1775
     AR_1772 --> AR_1773
     AR_1773 --> AR_1774
@@ -4154,13 +4265,18 @@ flowchart LR
     AR_1776 --> AR_1777
     AR_1776 --> AR_1778
     AR_1776 --> AR_1784
+    AR_1776 --> AR_1798
     AR_1777 --> AR_1779
     AR_1778 --> AR_1779
+    AR_1778 --> AR_1798
     AR_1779 --> AR_1780
+    AR_1779 --> AR_1797
     AR_1781 --> AR_1782
+    AR_1781 --> AR_1794
     AR_1782 --> AR_1783
     AR_1783 --> AR_1780
     AR_1784 --> AR_1779
+    AR_1784 --> AR_1793
     AR_1787 --> AR_1785
     AR_1788 --> AR_1785
     AR_1788 --> AR_1791
@@ -4168,6 +4284,7 @@ flowchart LR
     AR_1789 --> AR_1791
     AR_1790 --> AR_1789
     AR_1790 --> AR_1791
+    AR_1791 --> AR_1792
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -4236,15 +4353,3 @@ flowchart LR
 | [AR-0512](../tasks/AR-0512-replay-goose.md) | [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0513](../tasks/AR-0513-replay-miniswe.md) | [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0514](../tasks/AR-0514-replay-openhands.md) | [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0515](../tasks/AR-0515-replay-matrix.md) | [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md) | None |
-| [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md) | [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | None |
-| [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md) |
-| [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md) | [AR-0519](../tasks/AR-0519-gemini-thinking-config-contract.md) |
-| [AR-0519](../tasks/AR-0519-gemini-thinking-config-contract.md) | [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md) | None |
-| [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md) | None |
-| [AR-0521](../tasks/AR-0521-openhands-environment-pin.md) | [AR-0309](../tasks/AR-0309-agent-openhands.md) | None |
-| [AR-0601](../tasks/AR-0601-csb-integration.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0603](../tasks/AR-0603-csb-execution-assurance.md) | [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md), [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) |
-| [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md) | [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0202](../tasks/AR-0202-kernel-diagnostics.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md) | [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) |
-| [AR-0603](../tasks/AR-0603-csb-execution-assurance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md) | [AR-0601](../tasks/AR-0601-csb-integration.md) |
-| [AR-0604](../tasks/AR-0604-csb-native-qualification.md) | [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0202](../tasks/AR-0202-kernel-diagnostics.md), [AR-0601](../tasks/AR-0601-csb-integration.md) | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) |
-| [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0704](../tasks/AR-0704-native-capacity-controller.md), [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) |

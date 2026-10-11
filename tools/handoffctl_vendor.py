@@ -11,6 +11,7 @@ import os
 import re
 import subprocess
 import tempfile
+from collections.abc import Callable
 from pathlib import Path
 from typing import Any
 
@@ -19,10 +20,36 @@ LOCK_NAME = "coordinator.vendor.json"
 SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("tools/handoffctl", "tools/handoffctl"),
     ("tools/handoffctl.py", "tools/handoffctl.py"),
+    ("tools/fast_receipts.py", "tools/fast_receipts.py"),
+    ("tools/fast_observation.py", "tools/fast_observation.py"),
+    ("tools/fast_receipt_worker.py", "tools/fast_receipt_worker.py"),
+    ("tools/fast_receipt_cli.py", "tools/fast_receipt_cli.py"),
+    ("tools/fast_receipt_socket.py", "tools/fast_receipt_socket.py"),
     ("tools/runtime_bootstrap.py", "tools/runtime_bootstrap.py"),
     ("tools/upgrade_authority.py", "tools/upgrade_authority.py"),
     ("tools/admission_lease.py", "tools/admission_lease.py"),
+    ("tools/admitted_control_store.py", "tools/admitted_control_store.py"),
+    ("tools/authority_mutation.py", "tools/authority_mutation.py"),
+    ("tools/authority_neutral_backup.py", "tools/authority_neutral_backup.py"),
+    ("tools/authority_neutral_commit.py", "tools/authority_neutral_commit.py"),
+    (
+        "tools/authority_neutral_commit_dispatch.py",
+        "tools/authority_neutral_commit_dispatch.py",
+    ),
+    (
+        "tools/authority_neutral_rollback_dispatch.py",
+        "tools/authority_neutral_rollback_dispatch.py",
+    ),
+    ("tools/authority_neutral_stage.py", "tools/authority_neutral_stage.py"),
+    (
+        "tools/authority_neutral_validation.py",
+        "tools/authority_neutral_validation.py",
+    ),
     ("tools/board_metrics.py", "tools/board_metrics.py"),
+    ("tools/git_authority_adapter.py", "tools/git_authority_adapter.py"),
+    ("tools/git_authority_mutation.py", "tools/git_authority_mutation.py"),
+    ("tools/git_backup.py", "tools/git_backup.py"),
+    ("tools/lifecycle_session.py", "tools/lifecycle_session.py"),
     ("tools/oracle_lifecycle.py", "tools/oracle_lifecycle.py"),
     ("tools/sqlite_storage.py", "tools/sqlite_storage.py"),
     ("tools/lifecycle_trace.py", "tools/lifecycle_trace.py"),
@@ -38,15 +65,30 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("tools/rollback_records.py", "tools/rollback_records.py"),
     ("tools/directive_records.py", "tools/directive_records.py"),
     ("tools/hierarchy.py", "tools/hierarchy.py"),
+    ("tools/role_assignment.py", "tools/role_assignment.py"),
+    ("tools/role_registry.py", "tools/role_registry.py"),
+    ("tools/roles.py", "tools/roles.py"),
+    ("tools/scoped_backend_adapter.py", "tools/scoped_backend_adapter.py"),
+    ("tools/sqlite_authority_adapter.py", "tools/sqlite_authority_adapter.py"),
+    ("tools/sqlite_authority_mutation.py", "tools/sqlite_authority_mutation.py"),
+    ("tools/sqlite_backup.py", "tools/sqlite_backup.py"),
     ("tools/status_renderer.py", "tools/status_renderer.py"),
     ("tools/task_spec.py", "tools/task_spec.py"),
     ("tools/upgrade_commands.py", "tools/upgrade_commands.py"),
+    ("tools/upgrade_admission.py", "tools/upgrade_admission.py"),
     ("tools/upgrade_binding.py", "tools/upgrade_binding.py"),
+    ("tools/upgrade_engine.py", "tools/upgrade_engine.py"),
     ("tools/production_upgrade_binding.py", "tools/production_upgrade_binding.py"),
     ("tools/upgrade_contract_runtime.py", "tools/upgrade_contract_runtime.py"),
     ("tools/tlc_runner.py", "tools/tlc_runner.py"),
     ("tools/vendor.py", "tools/handoffctl_vendor.py"),
     ("tests/test_handoffctl.py", "tests/test_handoffctl.py"),
+    ("tests/test_handoffctl_recovery.py", "tests/test_handoffctl_recovery.py"),
+    ("tests/test_fast_receipts.py", "tests/test_fast_receipts.py"),
+    ("tests/test_fast_observation.py", "tests/test_fast_observation.py"),
+    ("tests/test_fast_receipt_worker.py", "tests/test_fast_receipt_worker.py"),
+    ("tests/test_fast_receipt_cli.py", "tests/test_fast_receipt_cli.py"),
+    ("tests/test_fast_receipt_socket.py", "tests/test_fast_receipt_socket.py"),
     ("tests/test_sqlite_storage.py", "tests/test_sqlite_storage.py"),
     ("tests/fixture_ids.py", "tests/fixture_ids.py"),
     ("tests/test_task_spec.py", "tests/test_task_spec.py"),
@@ -85,6 +127,9 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
         "schema/handoffctl-directive-record.schema.json",
     ),
     ("schema/task-record.schema.json", "schema/task-record.schema.json"),
+    ("schema/role.schema.json", "schema/role.schema.json"),
+    ("schema/role-registry.schema.json", "schema/role-registry.schema.json"),
+    ("schema/role-assignment.schema.json", "schema/role-assignment.schema.json"),
     ("schema/task-spec.schema.json", "schema/task-spec.schema.json"),
     (
         "schema/task-spec-policy.schema.json",
@@ -106,6 +151,7 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
         "examples/task-specs/downstream-additive.json",
         "examples/task-specs/downstream-additive.json",
     ),
+    ("examples/roles/role-registry.json", "examples/roles/role-registry.json"),
     ("docs/PROJECT_GUIDE.md", "docs/agent-workflow-coordinator.md"),
     ("docs/EXTENDING.md", "docs/EXTENDING.md"),
     ("docs/PUBLIC_CONTRACTS.md", "docs/PUBLIC_CONTRACTS.md"),
@@ -116,6 +162,18 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("formal/handoffctl/HandoffctlBinding.cfg", "formal/handoffctl/HandoffctlBinding.cfg"),
     ("formal/handoffctl/HandoffctlBinding.tla", "formal/handoffctl/HandoffctlBinding.tla"),
     ("formal/handoffctl/HandoffctlFast.cfg", "formal/handoffctl/HandoffctlFast.cfg"),
+    (
+        "formal/handoffctl/HandoffctlObservation.cfg",
+        "formal/handoffctl/HandoffctlObservation.cfg",
+    ),
+    (
+        "formal/handoffctl/HandoffctlObservation.tla",
+        "formal/handoffctl/HandoffctlObservation.tla",
+    ),
+    (
+        "formal/handoffctl/OBSERVATION_CORRESPONDENCE.md",
+        "formal/handoffctl/OBSERVATION_CORRESPONDENCE.md",
+    ),
     ("formal/handoffctl/HandoffctlLocks.cfg", "formal/handoffctl/HandoffctlLocks.cfg"),
     ("formal/handoffctl/HandoffctlLocks.tla", "formal/handoffctl/HandoffctlLocks.tla"),
     ("formal/handoffctl/HandoffctlPR.cfg", "formal/handoffctl/HandoffctlPR.cfg"),
@@ -123,6 +181,18 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("formal/handoffctl/HandoffctlRecovery.tla", "formal/handoffctl/HandoffctlRecovery.tla"),
     ("formal/handoffctl/HandoffctlRun.cfg", "formal/handoffctl/HandoffctlRun.cfg"),
     ("formal/handoffctl/HandoffctlRun.tla", "formal/handoffctl/HandoffctlRun.tla"),
+    (
+        "formal/handoffctl/HandoffctlReceipts.cfg",
+        "formal/handoffctl/HandoffctlReceipts.cfg",
+    ),
+    (
+        "formal/handoffctl/HandoffctlReceiptsFast.cfg",
+        "formal/handoffctl/HandoffctlReceiptsFast.cfg",
+    ),
+    (
+        "formal/handoffctl/HandoffctlReceipts.tla",
+        "formal/handoffctl/HandoffctlReceipts.tla",
+    ),
     ("formal/handoffctl/HandoffctlStorage.cfg", "formal/handoffctl/HandoffctlStorage.cfg"),
     ("formal/handoffctl/HandoffctlStorage.tla", "formal/handoffctl/HandoffctlStorage.tla"),
     (
@@ -307,7 +377,12 @@ def build_development_lock(source: Path, commit: str) -> dict[str, Any]:
     return development_snapshot(source, commit)[0]
 
 
-def install_staged_snapshot(staged: Path, target: Path, destinations: list[str]) -> None:
+def install_staged_snapshot(
+    staged: Path,
+    target: Path,
+    destinations: list[str],
+    verify_installed: Callable[[], None] | None = None,
+) -> None:
     """Install one fully staged vendor set and roll back failed rename sequences."""
     backup_root = staged / ".backup"
     installed: list[tuple[Path, Path, bool]] = []
@@ -325,6 +400,8 @@ def install_staged_snapshot(staged: Path, target: Path, destinations: list[str])
                 destination.replace(backup)
             installed.append((destination, backup, existed))
             source.replace(destination)
+        if verify_installed is not None:
+            verify_installed()
     except Exception:
         for destination, backup, existed in reversed(installed):
             destination.unlink(missing_ok=True)
@@ -354,8 +431,13 @@ def install_snapshot(
         payload = json.dumps(manifest, indent=2, sort_keys=True).encode() + b"\n"
         atomic_bytes(staged / LOCK_NAME, payload)
         destinations = [destination for _, destination in SOURCE_FILES]
-        verify(staged)
-        install_staged_snapshot(staged, target, [*destinations, LOCK_NAME])
+        verify(staged, emit=False)
+        install_staged_snapshot(
+            staged,
+            target,
+            [*destinations, LOCK_NAME],
+            lambda: verify(target),
+        )
 
 
 def sync(source: Path, target: Path, version: str, commit: str) -> None:
@@ -440,7 +522,7 @@ def verify_formal_lifecycle_alignment(target: Path) -> None:
     )
     if len(blocks) < 2:
         raise RuntimeError("formal lifecycle operation inventory is missing or malformed")
-    modeled = set(re.findall(r'"([a-z_]+)"', "\n".join(blocks[:2])))
+    modeled = set(re.findall(r'"([a-z_-]+)"', "\n".join(blocks[:2])))
     model_operations = {
         (
             "release"
@@ -455,7 +537,7 @@ def verify_formal_lifecycle_alignment(target: Path) -> None:
         raise RuntimeError("formal lifecycle operation drift")
 
 
-def verify(target: Path) -> None:
+def verify(target: Path, *, emit: bool = True) -> None:
     """Fail unless every pinned downstream artifact matches its recorded digest."""
     manifest = load_lock(target)
     upstream = validated_upstream_identity(manifest)
@@ -475,7 +557,8 @@ def verify(target: Path) -> None:
         raise RuntimeError("runtime version differs from vendor lock")
     if "formal/handoffctl/Handoffctl.tla" in expected:
         verify_formal_lifecycle_alignment(target)
-    print(f"OK: agent-workflow-coordinator {upstream['version']} at {upstream['commit']}")
+    if emit:
+        print(f"OK: agent-workflow-coordinator {upstream['version']} at {upstream['commit']}")
 
 
 def main() -> int:

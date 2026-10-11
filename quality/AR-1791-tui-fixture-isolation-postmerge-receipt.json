@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1791",
+  "candidate_commit": "4dbf735db270be0faf25fa005104397d8a680eb3",
+  "merge_commit": "16d8512debab5515068d285fd820e1be0751c51b",
+  "reviewed_tree": "b6b2a8eb860fcee07d3aa78ccfa4ea218bde9e4c",
+  "pr": 554,
+  "independent_review": "clean exact-head review recorded at state revision 34",
+  "exact_head_ci": "all 15 required PR checks succeeded",
+  "postmerge_workflows": {
+    "38095677425": "success",
+    "38095677427": "success",
+    "38095677428": "success",
+    "38095677430": "success",
+    "38095677437": "success",
+    "38095677445": "success after bounded rerun for GitHub association visibility race",
+    "38095677459": "success",
+    "38095677460": "success",
+    "38095677465": "success",
+    "38095677491": "success"
+  },
+  "gates": [
+    "focused GCC descendant and rustup descriptor tests",
+    "repeated cargo test --locked --workspace --all-targets",
+    "fmt, clippy, rustdoc, signatures, DCO, privacy, exact-tree and hosted checks"
+  ],
+  "github_reviews_api_approval_required": false,
+  "status": "accepted"
+}

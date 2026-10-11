@@ -22,6 +22,8 @@ ASSUME /\ Cardinality(Processes) = 2
 
 Phases == {"waiting", "holding", "releasing", "done"}
 Results == {"pending", "accepted", "rejected"}
+SessionKinds == {"absent", "stale", "current", "future"}
+Actions == {"current", "snapshot"}
 
 VARIABLES
     status,
@@ -32,11 +34,17 @@ VARIABLES
     target,
     lockOwner,
     result,
+    sessionKind,
+    claimIdentity,
+    workerScopeMatches,
+    workerAbsent,
+    action,
+    snapshotAction,
     unrelatedFinding
 
 vars ==
     <<status, owner, revision, projectionRevision, pc, target, lockOwner,
-      result, unrelatedFinding>>
+      result, sessionKind, claimIdentity, workerScopeMatches, workerAbsent, action, snapshotAction, unrelatedFinding>>
 
 OwnerIsUnique(o) ==
     \A a \in Actors:
@@ -52,6 +60,12 @@ Init ==
     /\ target \in [Processes -> Tasks]
     /\ lockOwner = NoProcess
     /\ result = [p \in Processes |-> "pending"]
+    /\ sessionKind \in [Tasks -> SessionKinds]
+    /\ claimIdentity \in [Tasks -> BOOLEAN]
+    /\ workerScopeMatches \in [Tasks -> BOOLEAN]
+    /\ workerAbsent \in [Tasks -> BOOLEAN]
+    /\ action = [t \in Tasks |-> "current"]
+    /\ snapshotAction = [t \in Tasks |-> "snapshot"]
     /\ unrelatedFinding = TRUE
 
 RecoveryEnabled(p) ==
@@ -60,6 +74,12 @@ RecoveryEnabled(p) ==
     /\ owner[t] # NoActor
     /\ revision[t] = 0
 
+RecoveryAdmitted(p) ==
+    /\ RecoveryEnabled(p)
+    /\ sessionKind[target[p]] # "future"
+    /\ (sessionKind[target[p]] = "current" \/
+        (claimIdentity[target[p]] /\ workerScopeMatches[target[p]] /\ workerAbsent[target[p]]))
+
 Acquire(p) ==
     /\ pc[p] = "waiting"
     /\ lockOwner = NoProcess
@@ -67,30 +87,32 @@ Acquire(p) ==
     /\ pc' = [pc EXCEPT ![p] = "holding"]
     /\ UNCHANGED
         <<status, owner, revision, projectionRevision, target, result,
-          unrelatedFinding>>
+          sessionKind, claimIdentity, workerScopeMatches, workerAbsent, action, snapshotAction, unrelatedFinding>>
 
 ExecuteSuccess(p) ==
     LET t == target[p] IN
     /\ pc[p] = "holding"
     /\ lockOwner = p
-    /\ RecoveryEnabled(p)
+    /\ RecoveryAdmitted(p)
     /\ status' = [status EXCEPT ![t] = "open"]
     /\ owner' = [owner EXCEPT ![t] = NoActor]
     /\ revision' = [revision EXCEPT ![t] = @ + 1]
     /\ projectionRevision' = [projectionRevision EXCEPT ![t] = @ + 1]
     /\ result' = [result EXCEPT ![p] = "accepted"]
+    /\ action' = [action EXCEPT ![t] =
+          IF sessionKind[t] = "current" THEN snapshotAction[t] ELSE action[t]]
     /\ pc' = [pc EXCEPT ![p] = "releasing"]
-    /\ UNCHANGED <<target, lockOwner, unrelatedFinding>>
+    /\ UNCHANGED <<target, lockOwner, sessionKind, claimIdentity, workerScopeMatches, workerAbsent, snapshotAction, unrelatedFinding>>
 
 ExecuteReject(p) ==
     /\ pc[p] = "holding"
     /\ lockOwner = p
-    /\ ~RecoveryEnabled(p)
+    /\ ~RecoveryAdmitted(p)
     /\ result' = [result EXCEPT ![p] = "rejected"]
     /\ pc' = [pc EXCEPT ![p] = "releasing"]
     /\ UNCHANGED
         <<status, owner, revision, projectionRevision, target, lockOwner,
-          unrelatedFinding>>
+          sessionKind, claimIdentity, workerScopeMatches, workerAbsent, action, snapshotAction, unrelatedFinding>>
 
 Release(p) ==
     /\ pc[p] = "releasing"
@@ -99,7 +121,7 @@ Release(p) ==
     /\ pc' = [pc EXCEPT ![p] = "done"]
     /\ UNCHANGED
         <<status, owner, revision, projectionRevision, target, result,
-          unrelatedFinding>>
+          sessionKind, claimIdentity, workerScopeMatches, workerAbsent, action, snapshotAction, unrelatedFinding>>
 
 Quiescent ==
     /\ \A p \in Processes: pc[p] = "done"
@@ -127,6 +149,12 @@ TypeOK ==
     /\ target \in [Processes -> Tasks]
     /\ lockOwner \in Processes \cup {NoProcess}
     /\ result \in [Processes -> Results]
+    /\ sessionKind \in [Tasks -> SessionKinds]
+    /\ claimIdentity \in [Tasks -> BOOLEAN]
+    /\ workerScopeMatches \in [Tasks -> BOOLEAN]
+    /\ workerAbsent \in [Tasks -> BOOLEAN]
+    /\ action \in [Tasks -> Actions]
+    /\ snapshotAction \in [Tasks -> Actions]
     /\ unrelatedFinding \in BOOLEAN
 
 OwnershipCoherence ==
@@ -152,17 +180,39 @@ LockSafety ==
 UnrelatedFindingPersists ==
     unrelatedFinding
 
+RecoveryActionCoherence ==
+    \A p \in Processes:
+        result[p] = "accepted" =>
+            LET t == target[p] IN
+                IF sessionKind[t] = "current"
+                THEN action[t] = snapshotAction[t]
+                ELSE action[t] = "current"
+
+FutureSessionRejected ==
+    \A p \in Processes:
+        sessionKind[target[p]] = "future" => result[p] # "accepted"
+
+SnapshotlessRecoveryRequiresClaimIdentity ==
+    \A p \in Processes:
+        result[p] = "accepted" /\ sessionKind[target[p]] # "current"
+            => claimIdentity[target[p]] /\ workerScopeMatches[target[p]] /\ workerAbsent[target[p]]
+
 EligibleRecovery(p) ==
     /\ pc[p] = "holding"
     /\ lockOwner = p
-    /\ RecoveryEnabled(p)
+    /\ RecoveryAdmitted(p)
 
 RecoveryAdmissionProgress ==
     \A p \in Processes:
         EligibleRecovery(p) ~> (result[p] = "accepted")
 
 DistinctRecoveryProgress ==
-    Cardinality({target[p] : p \in Processes}) = Cardinality(Processes)
-        => <>(\A p \in Processes: result[p] = "accepted")
+    (
+        /\ Cardinality({target[p] : p \in Processes}) = Cardinality(Processes)
+        /\ \A p \in Processes: sessionKind[target[p]] # "future"
+        /\ \A p \in Processes:
+            sessionKind[target[p]] = "current" \/
+                (claimIdentity[target[p]] /\ workerScopeMatches[target[p]] /\ workerAbsent[target[p]])
+    ) => <>(\A p \in Processes: result[p] = "accepted")
 
 =============================================================================

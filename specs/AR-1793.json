@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1793.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "cause-state-recovery", "description": "The output-parent diagnostic names its cause, observed state, and actionable recovery."},
+    {"id": "regression", "description": "Focused positive and negative tests reject the generic no-state-change-only wording for this diagnostic."},
+    {"id": "full-gate", "description": "The unchanged ASB CLI full suite and required quality gates pass at the exact reviewed head."}
+  ],
+  "definition_of_done": ["Legacy output-parent diagnostic contract is repaired with focused tests.", "Independent review and exact-head qualification pass."],
+  "inputs": [{"id": "ar1784-evidence", "description": "AR-1784 baseline/head comparison and failing human diagnostic test output."}],
+  "outputs": [{"id": "diagnostic-repair", "description": "Stable human output-parent wording and regression evidence."}],
+  "allowed_tools": ["cargo", "git", "tools/handoffctl"],
+  "forbidden_tools": ["private-text", "test-exclusion", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "quality"],
+  "gates": [{"id": "diagnostic", "description": "Focused human diagnostic contract tests pass."}, {"id": "full", "description": "Unchanged ASB CLI full suite passes."}]
+}

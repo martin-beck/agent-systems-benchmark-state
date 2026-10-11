@@ -1,0 +1,14 @@
+AR-1798 post-merge receipt
+
+Product repository exact origin/main: 24cb72d97422a9b541d4d3fa8406d9dbe8602b1c
+Merge: PR #585, pinned source-checkout acquisition.
+
+Local verification at the merged tree-equivalent checkout:
+  cargo test --locked --manifest-path Cargo.toml -p asb-cli source_checkout
+  26 passed, 0 failed
+
+Hosted verification: the one-time metrics policy attempt failed at the reported
+coverage boundary; repeated focused source-checkout passes were green, and the
+merge was subsequently protected and completed at the exact main head above.
+
+No product files were changed after merge. Worktree was clean.

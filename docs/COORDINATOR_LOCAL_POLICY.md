@@ -11,11 +11,30 @@ and provenance gates remain unchanged.
 This file contains project-local policy; `docs/agent-workflow-coordinator.md` remains an
 unaltered vendored coordinator release document.
 
-Before merging, require exact-head tests, privacy checks, SSH signature/DCO validation and
-independent review. Confirm the topic is based on current `main` and that the protected-main
-merge tree equals the reviewed topic tree; rebase and requalify stale PRs before merging.
-Merge a ready PR only through the repository's protected merge path; a green PR is not complete
-until its immutable merge commit is identified.
+Before merging, require exact-head checks bound to the candidate head/tree, privacy checks, SSH
+signature/DCO validation and independent review. The protected integration lane must additionally
+validate the *merge-result tree* against current `main`; a green PR is not complete until its
+immutable merge commit is identified.
+
+Concurrent protected-main movement is normal operational progress, not a worker blocker. A
+worker whose topic becomes stale must checkpoint its evidence and remain `in_progress`; it must
+not mark its AR or parent goal `blocked` merely because another worker merged. Rebase before
+integration and retain the original exact-head evidence only as supporting evidence: a fresh
+exact merge-result check, including privacy, signature/DCO and required applicable checks, remains
+mandatory before publication. Generated coordinator projections, live worktree observations, and
+unrelated task records may not be used to waive those gates. The integration lane must revalidate
+the resulting merge tree and run exact-main assurance before publication.
+
+Only an unavailable required external dependency, a failed safety gate without an available
+repair, or an explicit human decision may justify `blocked`. Until AR-1796 is implemented,
+integration contention uses the safe fallback: checkpoint the candidate and evidence, retry with
+bounded backoff, and nominate one integration worker; it does not claim a queue or receipt reuse
+that this repository has not implemented. Do not use the outer agent goal status as a substitute
+for an AR lifecycle transition.
+
+AR-1796 tracks the required enforceable queue, receipt-reuse, and liveness implementation. Until
+then, coordinators must batch state projection reconciliation and avoid committing high-frequency
+live worktree observations to protected `main` during an active integration cycle.
 
 Immediately after merging, watch every required post-merge assurance workflow for the exact
 resulting main SHA until each reaches a terminal result. Record workflow names, run IDs,

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1785",
+  "candidate_commit": "dd1930684ca8fbe13ff0c0cdc6964ae862ff0edf",
+  "merge_commit": "daae06efa2d78b11acd6902c5ac6958091bfe546",
+  "pr": 555,
+  "exact_head_checks": {
+    "policy_initial_failure": "38096884595",
+    "policy_rerun_success": "38096884595",
+    "rerun_result": "success",
+    "note": "The initial hosted PTY failure was not reproducible locally; the exact-head rerun passed full coverage and all policy steps."
+  },
+  "post_merge_workflows": {
+    "38098432062": "success",
+    "38098432067": "success",
+    "38098432070": "success",
+    "38098432078": "success",
+    "38098432082": "success",
+    "38098432083": "success",
+    "38098432092": "success",
+    "38098432057": "success",
+    "38098432120": "success",
+    "38098432125": "success"
+  },
+  "post_merge_local": {
+    "worktree": "/srv/data/projects/asb-ar1785-postmerge",
+    "commit": "daae06efa2d78b11acd6902c5ac6958091bfe546",
+    "command": "cargo test --manifest-path /srv/data/projects/asb-ar1785-postmerge/Cargo.toml --locked -p asb-cli --lib -- --test-threads=1",
+    "result": "341 passed"
+  },
+  "independent_review": "approved exact candidate dd1930684ca8fbe13ff0c0cdc6964ae862ff0edf",
+  "github_reviews_api_approval_required": false,
+  "privacy": "No credentials or provider responses recorded."
+}

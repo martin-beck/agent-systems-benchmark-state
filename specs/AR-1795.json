@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1795.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "released-vendor", "description": "The complete Coordinator v0.5.1 release at 7b19c0ffc8b37d0071d480cd666baef3f3672e35 is installed only through the vendor tool and verifies byte-for-byte."},
+    {"id": "coverage-floor", "description": "ASB-owned behavior tests meet the unchanged 95 percent branch-aware tools coverage floor without excluding vendored code or lowering thresholds."},
+    {"id": "binding-retry", "description": "The adopted worktree-binding retry is idempotent only for the exact active binding and remains fail-closed for conflicting, stale, expired, partial, or unauthorized requests."},
+    {"id": "integration-evidence", "description": "Exact-head review, required hosted checks, the project integration pr-publication formal tier, and exact-main verification are successful before done release."}
+  ],
+  "definition_of_done": [
+    "Vendor manifest verification, schema/generated views, and the unchanged coverage gate pass on the exact candidate.",
+    "Independent review, exact-head CI, signed protected integration, exact-main verification, and the project integration pr-publication formal tier pass."
+  ],
+  "inputs": [
+    {"id": "upstream-release", "description": "Coordinator v0.5.1 lightweight tag and immutable source commit."},
+    {"id": "asb-coverage", "description": "ASB-owned behavior and negative-path coverage suite."}
+  ],
+  "outputs": [
+    {"id": "verified-vendor-adoption", "description": "Verified ASB Coordinator v0.5.1 vendor manifest and release evidence."}
+  ],
+  "allowed_tools": ["git", "gh", "uv", "python", "tools/handoffctl", "tools/handoffctl_vendor.py", "formal/handoffctl/verify.sh"],
+  "forbidden_tools": ["vendor-patching", "coverage-threshold-lowering", "coverage-exclusion", "private-admission-release-evidence", "history-rewrite", "force-push-main"],
+  "required_evidence_classes": ["mechanical", "hosted", "quality"],
+  "gates": [
+    {"id": "vendor", "description": "The exact v0.5.1 vendor manifest verifies with no digest mismatch."},
+    {"id": "quality", "description": "The full branch-aware suite meets the unchanged 95 percent threshold."},
+    {"id": "formal", "description": "The trusted exact-head pr-publication formal tier succeeds; diagnostic private admission is non-qualifying. Full-exhaustive capacity attestation remains separately owned by AR-1522 and its dependencies."}
+  ]
+}

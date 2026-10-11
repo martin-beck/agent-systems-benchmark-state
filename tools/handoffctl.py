@@ -3,6 +3,15 @@
 # SPDX-License-Identifier: MIT
 """Transactional, project-configurable coordination state."""
 
+import sys
+
+if __name__ == "__main__" and len(sys.argv) > 2 and sys.argv[1] == "fast":
+    from fast_receipt_socket import try_socket_fast  # type: ignore[import-not-found]
+
+    _FAST_EXIT = try_socket_fast(sys.argv[1:])
+    if _FAST_EXIT is not None:
+        raise SystemExit(_FAST_EXIT)
+
 import argparse
 import contextlib
 import datetime as dt
@@ -11,8 +20,8 @@ import hashlib
 import json
 import os
 import re
+import stat
 import subprocess
-import sys
 import tempfile
 import textwrap
 import threading
@@ -215,6 +224,8 @@ LIFECYCLE_MUTATION_COMMANDS = (
     "claim",
     "heartbeat",
     "accept",
+    "bind-spec",
+    "bind-worktree",
     "release",
     "promote",
     "pause",
@@ -223,6 +234,12 @@ LIFECYCLE_MUTATION_COMMANDS = (
     "recover-expired",
     "update",
 )
+
+
+class IdempotentMutationError(RuntimeError):
+    """Signal an admitted replay that must not create another state revision."""
+
+
 # CURRENT.md is the compact actionable queue; terminal history remains in the
 # full STATUS.md projection and authoritative task records.
 CURRENT_STATUSES = ("in_progress", "open", "blocked", "planned", "future")
@@ -243,6 +260,7 @@ FIELDS = set(REQ) | {
     "role",
     "team",
     "claim_expires",
+    "claim_process",
     "worktree_key",
     "branch",
     "checkpoint_commit",
@@ -263,7 +281,7 @@ type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
-COORDINATOR_VERSION = "0.4.0"
+COORDINATOR_VERSION = "0.5.1"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -526,7 +544,7 @@ def configured_product_checkout(binding: Meta) -> tuple[Path, Path]:
     return projects_root, product.resolve()
 
 
-def assert_project_binding() -> None:
+def assert_project_binding(caller_cwd: Path | None = None) -> None:
     """Fail closed when this initialized coordinator is called from another project."""
     settings = project_settings()
     binding = project_binding()
@@ -543,7 +561,7 @@ def assert_project_binding() -> None:
     if CONFIG.exists():
         projects_root, product = configured_product_checkout(binding)
         allowed.append(product)
-    current = Path.cwd().resolve()
+    current = (Path.cwd() if caller_cwd is None else caller_cwd).resolve()
     if projects_root is not None and inside(current, projects_root):
         candidate = run(
             ["git", "-C", str(current), "rev-parse", "--show-toplevel"], check=False
@@ -673,6 +691,7 @@ PRIVATE = (
         "session-like UUID",
     ),
 )
+PRIVATE_HEX_DIGITS = frozenset("0123456789abcdefABCDEF")
 
 UUID_PRIVACY_EXEMPT = frozenset(
     {
@@ -1139,6 +1158,64 @@ def privacy_pattern_applies(relative: Path, label: str) -> bool:
     return label != "session-like UUID" or relative not in UUID_PRIVACY_EXEMPT
 
 
+def possible_uuid_pattern(text: str) -> bool:
+    """Reject text without the fixed ASCII shape of any UUID regex match."""
+    if len(text) < 36:
+        return False
+    hyphen = text.find("-", 8)
+    while hyphen >= 0:
+        if (
+            hyphen + 28 <= len(text)
+            and text[hyphen + 5] == "-"
+            and text[hyphen + 10] == "-"
+            and text[hyphen + 15] == "-"
+            and all(char in PRIVATE_HEX_DIGITS for char in text[hyphen - 8 : hyphen])
+        ):
+            return True
+        hyphen = text.find("-", hyphen + 1)
+    return False
+
+
+def possible_privacy_pattern(text: str, lowered: str, label: str) -> bool:
+    """Use only necessary literals before the authoritative privacy regex."""
+    # Python's Unicode IGNORECASE can match non-ASCII case variants of ASCII
+    # literals that lower() does not turn into those same ASCII byte sequences.
+    if not text.isascii():
+        return True
+    if label == "absolute Linux home path":
+        return "/" + "home/" in text
+    if label == "absolute Windows user path":
+        return ":\\users\\" in lowered
+    if label == "private host alias":
+        return "ai" + "-ws" in lowered
+    if label == "private or loopback IP":
+        return "10." in text or "127." in text
+    if label == "possible credential":
+        return any(
+            word in lowered
+            for word in ("password", "passwd", "token", "secret", "api_key", "api-key", "apikey")
+        )
+    if label == "private key":
+        return "-----BEGIN " in text
+    if label == "session-like UUID":
+        return possible_uuid_pattern(text)
+    # New pattern families must retain the full regex until a necessary
+    # prefilter is reviewed; an unknown label must never suppress a finding.
+    return True
+
+
+def private_text_errors(relative: Path, text: str) -> list[str]:
+    """Keep the original regex and label ordering after cheap prefilters."""
+    lowered = text.lower()
+    return [
+        f"{relative}: {label}"
+        for regex, label in PRIVATE
+        if privacy_pattern_applies(relative, label)
+        and possible_privacy_pattern(text, lowered, label)
+        and regex.search(text)
+    ]
+
+
 def privacy_errors() -> list[str]:
     errors: list[str] = []
     for path in sorted(ROOT.rglob("*")):
@@ -1159,11 +1236,7 @@ def privacy_errors() -> list[str]:
             text = path.read_text()
         except UnicodeDecodeError:
             continue
-        for regex, label in PRIVATE:
-            if not privacy_pattern_applies(relative, label):
-                continue
-            if regex.search(text):
-                errors.append(f"{relative}: {label}")
+        errors.extend(private_text_errors(relative, text))
     return errors
 
 
@@ -1179,6 +1252,8 @@ def introduced_content_errors(before: dict[Path, str | None]) -> list[str]:
         previous_size = len(previous_text.encode()) if previous is not None else 0
         if path.stat().st_size > 200000 and previous_size <= 200000:
             errors.append(f"{relative}: state file exceeds 200 KiB")
+        if current == previous_text:
+            continue
         for regex, label in PRIVATE:
             if not privacy_pattern_applies(relative, label):
                 continue
@@ -1193,6 +1268,36 @@ def field_errors(path: Path, meta: Meta) -> list[str]:
     errors = [f"{path.name}: missing {name}" for name in REQ if name not in meta]
     errors.extend(f"{path.name}: unknown field {name}" for name in set(meta) - FIELDS)
     return errors
+
+
+def valid_claim_process(value: object) -> bool:
+    """Recognize a legacy or scope-bound optional claim-time process identity."""
+    if not isinstance(value, dict) or set(value) not in (
+        {"pid", "start_time"},
+        {"pid", "start_time", "boot_digest", "pid_namespace"},
+    ):
+        return False
+    if type(value.get("pid")) is not int or int(value["pid"]) <= 0:
+        return False
+    if type(value.get("start_time")) is not int or int(value["start_time"]) < 0:
+        return False
+    if set(value) == {"pid", "start_time"}:
+        return True
+    return (
+        isinstance(value.get("boot_digest"), str)
+        and bool(re.fullmatch(r"sha256:[0-9a-f]{64}", value["boot_digest"]))
+        and isinstance(value.get("pid_namespace"), str)
+        and bool(re.fullmatch(r"[0-9]+:[0-9]+", value["pid_namespace"]))
+    )
+
+
+def scoped_claim_process(value: object) -> bool:
+    """Require the scope fields needed to safely inspect a former worker."""
+    return (
+        isinstance(value, dict)
+        and set(value) == {"pid", "start_time", "boot_digest", "pid_namespace"}
+        and valid_claim_process(value)
+    )
 
 
 def value_errors(path: Path, meta: Meta) -> list[str]:
@@ -1213,6 +1318,9 @@ def value_errors(path: Path, meta: Meta) -> list[str]:
         if not isinstance(meta.get(name), str) or not meta.get(name)
     )
     errors.extend(f"{task_id}: {error}" for error in gate_errors(meta.get("oracle_gate")))
+    claim_process = meta.get("claim_process")
+    if claim_process is not None and not valid_claim_process(claim_process):
+        errors.append(f"{task_id}: invalid claim_process")
     return errors
 
 
@@ -1275,6 +1383,81 @@ def parse_claim_expiry(expiry: object) -> dt.datetime:
     if parsed.tzinfo is None:
         raise ValueError("claim expiry lacks timezone")
     return parsed.astimezone(dt.UTC)
+
+
+def process_start_time(pid: int) -> int | None:
+    """Return a Linux process start time, or ``None`` after it has exited."""
+    proc = Path("/proc") / str(pid)
+    try:
+        stat_fields = (proc / "stat").read_text(encoding="utf-8").rsplit(")", 1)[1].split()
+        return int(stat_fields[19])
+    except FileNotFoundError:
+        return None
+    except (OSError, IndexError, ValueError) as error:
+        raise RuntimeError("cannot independently read worker process identity") from error
+
+
+def worker_execution_scope() -> tuple[str, str]:
+    """Return the local boot and PID-namespace identities for recovery fencing."""
+    try:
+        boot_id = (Path("/proc/sys/kernel/random/boot_id").read_text(encoding="utf-8")).strip()
+        namespace = Path("/proc/self/ns/pid").stat()
+    except OSError as error:
+        raise RuntimeError("cannot independently read worker execution scope") from error
+    pid_namespace = f"{namespace.st_dev}:{namespace.st_ino}"
+    try:
+        valid_boot_id = str(uuid.UUID(boot_id)) == boot_id
+    except ValueError:
+        valid_boot_id = False
+    if not valid_boot_id:
+        raise RuntimeError("worker execution scope has invalid boot identity")
+    return f"sha256:{hashlib.sha256(boot_id.encode()).hexdigest()}", pid_namespace
+
+
+def claimed_process_identity(args: argparse.Namespace) -> Meta | None:
+    """Validate an optional live worker identity at the exact claim transition."""
+    pid = getattr(args, "worker_pid", None)
+    start_time = getattr(args, "worker_start_time", None)
+    if pid is None and start_time is None:
+        return None
+    if type(pid) is not int or pid <= 0 or type(start_time) is not int or start_time < 0:
+        raise RuntimeError(
+            "claim worker identity requires positive --worker-pid and --worker-start-time"
+        )
+    if process_start_time(pid) != start_time:
+        raise RuntimeError("claim worker identity is not a live matching process")
+    boot_digest, pid_namespace = worker_execution_scope()
+    return {
+        "pid": pid,
+        "start_time": start_time,
+        "boot_digest": boot_digest,
+        "pid_namespace": pid_namespace,
+    }
+
+
+def require_claimed_worker_absent(meta: Meta) -> None:
+    """Require a claim-time identity and independently confirm it no longer runs."""
+    identity = meta.get("claim_process")
+    if not scoped_claim_process(identity):
+        raise RuntimeError(
+            "snapshot-less recovery requires a scope-bound claim-time worker identity"
+        )
+    identity = cast(Meta, identity)
+    boot_digest, pid_namespace = worker_execution_scope()
+    if identity["boot_digest"] != boot_digest or identity["pid_namespace"] != pid_namespace:
+        raise RuntimeError("snapshot-less recovery cannot verify the claim execution scope")
+    pid = identity["pid"]
+    start_time = identity["start_time"]
+    if process_start_time(pid) == start_time:
+        raise RuntimeError("former worker process is still alive")
+
+
+def attach_claim_process(args: argparse.Namespace, meta: Meta) -> None:
+    """Replace optional claim-time process identity after strict live validation."""
+    meta.pop("claim_process", None)
+    process_identity = claimed_process_identity(args)
+    if process_identity is not None:
+        meta["claim_process"] = process_identity
 
 
 def active_expiry_errors(task_id: str, expiry: object) -> list[str]:
@@ -1349,6 +1532,8 @@ def mutation_errors(
     path: Path,
     before: dict[Path, str | None],
     policy: EvidencePolicy | None = None,
+    *,
+    rendered_snapshot: tuple[list[Task], dict[Path, str], Meta] | None = None,
 ) -> list[str]:
     """Validate a Git mutation without gating on unrelated repository findings."""
     tasks = all_tasks()
@@ -1359,7 +1544,7 @@ def mutation_errors(
     errors.extend(basic_task_errors(path, selected[0], policy))
     errors.extend(claim_errors(selected[0], {}, {}, {}))
     errors.extend(mutation_global_errors(tasks))
-    errors.extend(generated_view_errors(tasks))
+    errors.extend(generated_view_errors(tasks, rendered_snapshot=rendered_snapshot))
     errors.extend(introduced_content_errors(before))
     return errors
 
@@ -1390,18 +1575,44 @@ def status_projection_errors(expected: dict[str, str]) -> list[str]:
     return errors
 
 
-def generated_view_errors(tasks: list[Task]) -> list[str]:
+def status_views_for_validation(
+    tasks: list[Task], snapshot: tuple[list[Task], dict[Path, str], Meta] | None
+) -> dict[str, str]:
+    if snapshot is None:
+        return render_status_views(tasks)
+    return {
+        str(target.relative_to(ROOT)): content
+        for target, content in snapshot[1].items()
+        if target.name == "STATUS.md" or target.parent.name == "status"
+    }
+
+
+def generated_view_errors(
+    tasks: list[Task],
+    *,
+    rendered_snapshot: tuple[list[Task], dict[Path, str], Meta] | None = None,
+) -> list[str]:
     """Check both task-derived views without allowing renderer errors to escape."""
     errors: list[str] = []
     if not all(meta.get("status") in STATUSES for _, meta, _ in tasks):
         return errors
+    reusable_snapshot = (
+        rendered_snapshot
+        if rendered_snapshot is not None
+        and tasks == rendered_snapshot[0]
+        and project_settings() == rendered_snapshot[2]
+        else None
+    )
     current = ROOT / "CURRENT.md"
-    if current.exists() and current.read_text() != render_current(tasks):
+    expected_current = (
+        reusable_snapshot[1][current] if reusable_snapshot is not None else render_current(tasks)
+    )
+    if current.exists() and current.read_text() != expected_current:
         errors.append("CURRENT.md differs from generated tasks")
     if not project_settings()["status_view"]:
         return errors
     try:
-        expected_status = render_status_views(tasks)
+        expected_status = status_views_for_validation(tasks, reusable_snapshot)
     except StatusRenderError as error:
         errors.extend(str(error).splitlines())
     else:
@@ -1519,6 +1730,13 @@ def commit(message: str, paths: list[Path]) -> bool:
     except Exception:
         run(["git", "-C", str(ROOT), "reset", "--", *relative], check=False)
         raise
+
+
+def current_commit_oid() -> str:
+    oid = run(["git", "-C", str(ROOT), "rev-parse", "HEAD"]).stdout.strip()
+    if not re.fullmatch(r"[0-9a-f]{40}", oid):
+        raise RuntimeError("cannot identify signed receipt commit")
+    return oid
 
 
 def replication_enabled() -> bool:
@@ -2040,6 +2258,13 @@ def require_release_admission(
 
 
 def apply_claim(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
+    if (
+        getattr(args, "_receipt_id", None) is not None
+        and args.expected_revision != meta["task_revision"]
+    ):
+        raise RuntimeError(
+            f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
+        )
     if args.lease_minutes <= 0:
         raise RuntimeError("lease must be positive")
     if meta.get("status") != "open":
@@ -2063,6 +2288,7 @@ def apply_claim(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
         raise RuntimeError(f"owner already holds {held[0]}")
     meta["owner"] = args.owner
     meta["status"] = "in_progress"
+    attach_claim_process(args, meta)
     meta["claim_expires"] = (
         (dt.datetime.now(dt.UTC) + dt.timedelta(minutes=args.lease_minutes))
         .replace(microsecond=0)
@@ -2159,6 +2385,7 @@ def apply_pause(args: argparse.Namespace, meta: Meta) -> str:
     meta["status"] = "blocked"
     meta["owner"] = ""
     meta["claim_expires"] = ""
+    meta.pop("claim_process", None)
     return str(args.note)
 
 
@@ -2228,7 +2455,7 @@ def apply_unblock(args: argparse.Namespace, meta: Meta, _tasks: list[Task]) -> s
 
 
 def apply_recover_expired(args: argparse.Namespace, meta: Meta, _tasks: list[Task]) -> str:
-    """Reopen an expired claim after restoring its latest bounded session."""
+    """Reopen an expired claim, restoring only its exact current session snapshot."""
     if args.expected_revision != meta["task_revision"]:
         raise RuntimeError(
             f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
@@ -2244,17 +2471,27 @@ def apply_recover_expired(args: argparse.Namespace, meta: Meta, _tasks: list[Tas
     if not args.note.strip():
         raise RuntimeError("expired-claim recovery note must not be empty")
     records = storage_backend().load_session_records(args.task)
-    if not records:
-        raise RuntimeError(f"no session snapshot for {args.task}")
-    session = records[-1]
-    validate_session_record(session)
-    if session["task_revision"] > meta["task_revision"]:
-        raise RuntimeError("session snapshot revision is newer than the task")
+    for session in records:
+        validate_session_record(session)
+        if session["task_revision"] > meta["task_revision"]:
+            raise RuntimeError("session snapshot revision is newer than the task")
     previous_owner = str(meta["owner"])
-    meta["next_action"] = str(session["next_action"])
+    current_session = next(
+        (
+            session
+            for session in reversed(records)
+            if session["task_revision"] == meta["task_revision"]
+        ),
+        None,
+    )
+    if current_session is not None:
+        meta["next_action"] = str(current_session["next_action"])
+    else:
+        require_claimed_worker_absent(meta)
     meta["status"] = "open"
     meta["owner"] = ""
     meta["claim_expires"] = ""
+    meta.pop("claim_process", None)
     return f"Recovered expired claim formerly owned by {previous_owner}. {args.note}"
 
 
@@ -2296,6 +2533,120 @@ def apply_accept(args: argparse.Namespace, meta: Meta, policy: EvidencePolicy | 
     return str(args.note)
 
 
+def apply_bind_spec(args: argparse.Namespace, meta: Meta, policy: EvidencePolicy | None) -> str:
+    """Bind one validated immutable task spec to a previously unbound active task."""
+    if meta.get("owner") != args.owner:
+        raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
+    require_role_admission(str(args.owner))
+    if meta.get("status") != "in_progress":
+        raise RuntimeError("bind-spec requires an active task")
+    try:
+        if parse_claim_expiry(meta.get("claim_expires")) <= dt.datetime.now(dt.UTC):
+            raise RuntimeError("bind-spec requires an unexpired owner lease")
+    except ValueError as error:
+        raise RuntimeError("bind-spec requires an unexpired owner lease") from error
+    if args.expected_revision != meta["task_revision"]:
+        raise RuntimeError(
+            f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
+        )
+    if any(name in meta for name in ("spec_ref", "spec_revision", "spec_acceptance")):
+        raise RuntimeError("bind-spec requires an unbound task spec")
+    candidate = {**meta, "spec_ref": args.spec_ref, "spec_revision": args.spec_revision}
+    errors = task_spec_errors(ROOT, candidate, policy)
+    if errors:
+        raise RuntimeError("bind-spec task spec is invalid: " + "; ".join(errors))
+    meta["spec_ref"] = args.spec_ref
+    meta["spec_revision"] = args.spec_revision
+    return f"Bound task spec {args.spec_ref} revision {args.spec_revision}."
+
+
+def valid_binding_branch(value: object) -> bool:
+    """Accept one bounded, non-detached branch accepted by Git itself."""
+    if not isinstance(value, str) or len(value) > 128 or value == "DETACHED":
+        return False
+    try:
+        result = run(["git", "check-ref-format", "--branch", value], check=False)
+        return result.returncode == 0 and result.stdout.strip() == value
+    except SubprocessTimeoutError:
+        return False
+
+
+def valid_binding_worktree(value: object) -> bool:
+    """Accept one bounded worktree basename below the configured projects root."""
+    if not isinstance(value, str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]{0,127}", value):
+        return False
+    if value in {".", "..", str(config().get("product_worktree", ""))}:
+        return False
+    try:
+        return inside(
+            Path(str(config()["projects_root"])).resolve() / value,
+            Path(str(config()["projects_root"])).resolve(),
+        )
+    except (KeyError, RuntimeError):
+        return False
+
+
+def binding_identity_conflicts(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> bool:
+    """Report whether another active task already owns either requested identity."""
+    return any(
+        other.get("id") != meta.get("id")
+        and other.get("status") == "in_progress"
+        and (other.get("branch") == args.branch or other.get("worktree_key") == args.worktree_key)
+        for _, other, _ in tasks
+    )
+
+
+def require_active_binding_owner(args: argparse.Namespace, meta: Meta) -> None:
+    """Require the exact live owner and revision before binding an identity."""
+    if meta.get("owner") != args.owner:
+        raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
+    require_role_admission(str(args.owner))
+    if meta.get("status") != "in_progress":
+        raise RuntimeError("bind-worktree requires an active task")
+    try:
+        if parse_claim_expiry(meta.get("claim_expires")) <= dt.datetime.now(dt.UTC):
+            raise RuntimeError("bind-worktree requires an unexpired owner lease")
+    except ValueError as error:
+        raise RuntimeError("bind-worktree requires an unexpired owner lease") from error
+    if args.expected_revision != meta["task_revision"]:
+        raise RuntimeError(
+            f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
+        )
+
+
+def require_bind_worktree_admission(
+    args: argparse.Namespace, meta: Meta, tasks: list[Task]
+) -> None:
+    """Admit a first binding or an exact no-op replay, rejecting every other request."""
+    require_active_binding_owner(args, meta)
+    if not valid_binding_branch(args.branch):
+        raise RuntimeError("bind-worktree branch is invalid")
+    if not valid_binding_worktree(args.worktree_key):
+        raise RuntimeError("bind-worktree worktree key is invalid")
+    if binding_identity_conflicts(args, meta, tasks):
+        raise RuntimeError("bind-worktree identity conflicts with an active task")
+    branch = meta.get("branch", "")
+    worktree_key = meta.get("worktree_key", "")
+    if branch or worktree_key:
+        if (
+            branch == args.branch
+            and worktree_key == args.worktree_key
+            and valid_binding_branch(branch)
+            and valid_binding_worktree(worktree_key)
+        ):
+            raise IdempotentMutationError(
+                f"Worktree {args.worktree_key} on branch {args.branch} is already bound."
+            )
+        raise RuntimeError("bind-worktree requires empty legacy worktree metadata")
+
+
+def apply_bind_worktree(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
+    """Bind one legacy task, or report an exact retry without mutating it."""
+    require_bind_worktree_admission(args, meta, tasks)
+    meta.update(branch=args.branch, worktree_key=args.worktree_key)
+    return f"Bound worktree {args.worktree_key} on branch {args.branch}."
+
+
 def apply_owned_change(  # noqa: C901
     args: argparse.Namespace,
     kind: str,
@@ -2310,6 +2661,7 @@ def apply_owned_change(  # noqa: C901
     if kind == "heartbeat":
         if args.lease_minutes <= 0 or meta.get("status") != "in_progress":
             raise RuntimeError("heartbeat requires an active task and positive lease")
+        require_optional_revision(args, meta)
         meta["claim_expires"] = (
             (dt.datetime.now(dt.UTC) + dt.timedelta(minutes=args.lease_minutes))
             .replace(microsecond=0)
@@ -2324,6 +2676,7 @@ def apply_owned_change(  # noqa: C901
         meta["status"] = args.status
         meta["owner"] = ""
         meta["claim_expires"] = ""
+        meta.pop("claim_process", None)
         return str(args.note)
     if args.expected_revision is not None and args.expected_revision != meta["task_revision"]:
         expected = args.expected_revision
@@ -2336,6 +2689,13 @@ def apply_owned_change(  # noqa: C901
         if value is not None:
             meta[name] = value
     return str(args.note)
+
+
+def require_optional_revision(args: argparse.Namespace, meta: Meta) -> None:
+    """Reject a supplied lifecycle fence without changing legacy owner-only calls."""
+    requested = getattr(args, "expected_revision", None)
+    if requested is not None and requested != meta["task_revision"]:
+        raise RuntimeError(f"stale revision: expected {requested}, current {meta['task_revision']}")
 
 
 def apply_checkpoint(args: argparse.Namespace, meta: Meta) -> str:
@@ -2377,6 +2737,7 @@ def apply_rollback(args: argparse.Namespace, meta: Meta) -> str:
     meta["status"] = "open" if state.get("status") == "in_progress" else state.get("status")
     meta["owner"] = ""
     meta["claim_expires"] = ""
+    meta.pop("claim_process", None)
     meta["checkpoint_commit"] = str(checkpoint["source_commit"])
     return (
         f"Restored checkpoint {checkpoint['name']} from source commit "
@@ -2397,13 +2758,44 @@ def _artifact_values(values: list[str], label: str) -> tuple[ArtifactRef, ...]:
     return tuple(result)
 
 
+def _human_session_values(args: argparse.Namespace, recorded_at: str) -> Meta | None:
+    """Build one complete public-safe TUI session record or reject partial input."""
+    session_id = getattr(args, "session_id", None)
+    request_ref = getattr(args, "request_ref", None)
+    activation = getattr(args, "activation", None)
+    version = getattr(args, "tui_contract_version", None)
+    if not any((session_id, request_ref, activation, version)):
+        return None
+    if getattr(args, "action", None) != "open":
+        raise RuntimeError("human session metadata is valid only when opening a gate")
+    if not all((session_id, request_ref, activation, version)):
+        raise RuntimeError(
+            "human session metadata requires --session-id, --request-ref, --activation, "
+            "and --tui-contract-version"
+        )
+    return {
+        "schema_version": "1.0",
+        "session_id": session_id,
+        "request_ref": request_ref,
+        "activation": activation,
+        "status": "presenting",
+        "task_revision": int(args.expected_revision),
+        "tui_contract_version": version,
+        "opened_at": recorded_at,
+    }
+
+
 def apply_gate(args: argparse.Namespace, meta: Meta) -> str:
     """Record one typed interaction event as the task's next revision."""
     try:
         try:
-            stage = GateStage(str(args.stage))
+            stage: GateStage | StageGate = GateStage(str(args.stage))
         except ValueError as error:
-            raise GateError("unknown interaction gate stage") from error
+            try:
+                stage = StageGate(str(args.stage))
+            except ValueError:
+                raise GateError("unknown interaction gate stage") from error
+        recorded_at = now()
         event = InteractionEvent(
             task_id=str(meta["id"]),
             task_revision=int(args.expected_revision),
@@ -2413,9 +2805,9 @@ def apply_gate(args: argparse.Namespace, meta: Meta) -> str:
             before=_artifact_values(args.before, "--before"),
             after=_artifact_values(args.after, "--after"),
             public_ref=str(args.public_ref),
-            recorded_at=now(),
+            recorded_at=recorded_at,
         )
-        return apply_event(meta, event)
+        return apply_event(meta, event, _human_session_values(args, recorded_at))
     except (GateError, ValueError) as error:
         raise RuntimeError(str(error)) from error
 
@@ -2444,8 +2836,13 @@ def apply_transition(
     record_transition = {"checkpoint": apply_checkpoint, "rollback": apply_rollback}.get(kind)
     if record_transition is not None:
         return record_transition(args, meta)
-    if kind == "accept":
-        return apply_accept(args, meta, policy)
+    transition = {
+        "accept": lambda: apply_accept(args, meta, policy),
+        "bind-spec": lambda: apply_bind_spec(args, meta, policy),
+        "bind-worktree": lambda: apply_bind_worktree(args, meta, tasks),
+    }.get(kind)
+    if transition is not None:
+        return transition()
     return apply_owned_change(args, kind, meta, tasks, policy)
 
 
@@ -2459,6 +2856,49 @@ def rendered_task_views(tasks: list[Task]) -> dict[Path, str]:
     return views
 
 
+def safe_generated_view_inode(info: os.stat_result) -> bool:
+    return (
+        stat.S_ISREG(info.st_mode)
+        and info.st_nlink == 1
+        and info.st_uid == os.geteuid()
+        and stat.S_IMODE(info.st_mode) == 0o600
+    )
+
+
+def unchanged_generated_view(path: Path, content: str) -> bool:
+    """Avoid an fsync only for an ordinary, already-correct projection file."""
+    try:
+        parent = path.parent.lstat()
+        if not stat.S_ISDIR(parent.st_mode):
+            return False
+        descriptor = os.open(path, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK)
+    except OSError:
+        return False
+    try:
+        found = os.fstat(descriptor)
+        if not safe_generated_view_inode(found):
+            return False
+        expected = content.encode("utf-8")
+        with os.fdopen(descriptor, "rb", closefd=False) as stream:
+            if stream.read(len(expected) + 1) != expected:
+                return False
+        # A non-cooperating writer can replace the pathname while this inode is
+        # open. Do not mistake the old inode's bytes for the current view.
+        try:
+            current_parent = path.parent.lstat()
+            current = path.lstat()
+        except OSError:
+            return False
+        return (
+            stat.S_ISDIR(current_parent.st_mode)
+            and (current_parent.st_dev, current_parent.st_ino) == (parent.st_dev, parent.st_ino)
+            and (current.st_dev, current.st_ino) == (found.st_dev, found.st_ino)
+            and safe_generated_view_inode(current)
+        )
+    finally:
+        os.close(descriptor)
+
+
 def write_status_views(views: dict[str, str]) -> None:
     """Atomically replace the root status index and remove obsolete shards."""
     expected_paths = {ROOT / relative for relative in views}
@@ -2468,7 +2908,9 @@ def write_status_views(views: dict[str, str]) -> None:
         ):
             path.unlink(missing_ok=True)
     for relative, content in views.items():
-        atomic(ROOT / relative, content)
+        target = ROOT / relative
+        if not unchanged_generated_view(target, content):
+            atomic(target, content)
 
 
 def write_rendered_task_views(views: dict[Path, str]) -> None:
@@ -2480,7 +2922,11 @@ def write_rendered_task_views(views: dict[Path, str]) -> None:
     }
     write_status_views(status_views)
     for target, content in views.items():
-        if target.name != "STATUS.md" and target.parent.name != "status":
+        if (
+            target.name != "STATUS.md"
+            and target.parent.name != "status"
+            and not unchanged_generated_view(target, content)
+        ):
             atomic(target, content)
 
 
@@ -2506,10 +2952,100 @@ def git_session_record(
     return record
 
 
-def mutate(args: argparse.Namespace, kind: str, policy: EvidencePolicy | None = None) -> None:  # noqa: C901
+def require_project_settings_unchanged(settings: Meta) -> None:
+    if project_settings() != settings:
+        raise RuntimeError("PROJECT_CONFIG_CHANGED: retry after a stable project profile")
+
+
+def fast_receipt_id(args: argparse.Namespace, kind: str) -> str | None:
+    """Validate receipt-only mutation arguments before selecting an authority backend."""
+    receipt_id = getattr(args, "_receipt_id", None)
+    if receipt_id is None:
+        return None
+    if (
+        kind not in {"claim", "heartbeat", "promote", "update"}
+        or not isinstance(receipt_id, str)
+        or not re.fullmatch(r"[0-9a-f]{32}", receipt_id)
+        or getattr(args, "expected_revision", None) is None
+    ):
+        raise RuntimeError("invalid fast receipt mutation")
+    return receipt_id
+
+
+def persist_git_mutation(
+    args: argparse.Namespace,
+    kind: str,
+    receipt_id: str | None,
+    path: Path,
+    meta: Meta,
+    body: str,
+    before: dict[Path, str | None],
+    selected_policy: EvidencePolicy,
+    session_record: Meta | None,
+    checkpoint_record: Meta | None,
+) -> None:
+    """Write, validate, commit, and retain one locked Git mutation transaction."""
+    committed = False
+    try:
+        if session_record is not None:
+            append_session_record(ROOT, session_record)
+        if checkpoint_record is not None:
+            append_checkpoint(ROOT, checkpoint_record)
+        write_task(path, meta, body)
+        view_tasks = all_tasks()
+        view_settings = project_settings()
+        views = rendered_task_views(view_tasks)
+        require_project_settings_unchanged(view_settings)
+        write_rendered_task_views(views)
+        require_policy_unchanged(ROOT, selected_policy)
+        errors = mutation_errors(
+            path,
+            before,
+            selected_policy,
+            rendered_snapshot=(view_tasks, views, view_settings),
+        )
+        if errors:
+            raise RuntimeError("\n".join(errors))
+        for target in generated_paths():
+            before.setdefault(target, None)
+        committed = commit_persisted_mutation(args, kind, receipt_id, before, meta)
+        if receipt_id is None:
+            push_replica()
+    except Exception:
+        if not committed:
+            restore_paths(before)
+        raise
+
+
+def commit_persisted_mutation(
+    args: argparse.Namespace,
+    kind: str,
+    receipt_id: str | None,
+    before: dict[Path, str | None],
+    meta: Meta,
+) -> bool:
+    """Commit a validated mutation and expose receipt-only local evidence."""
+    message = f"chore(state): {kind} {args.task}"
+    if receipt_id is not None:
+        message += f"\n\nHandoffctl-Receipt: {receipt_id}"
+    committed = commit(message, changed_paths(before, include_deleted=True))
+    if receipt_id is not None and not committed:
+        raise RuntimeError("fast receipt mutation produced no signed commit")
+    if receipt_id is not None:
+        args._committed_oid = current_commit_oid()
+        args._committed_revision = meta["task_revision"]
+    return committed
+
+
+def mutate(args: argparse.Namespace, kind: str, policy: EvidencePolicy | None = None) -> str | None:
+    receipt_id = fast_receipt_id(args, kind)
     if backend_selection()["backend"] == "sqlite":
-        mutate_sqlite(args, kind, policy)
-        return
+        if receipt_id is not None:
+            raise RuntimeError("fast receipts require Git authority")
+        try:
+            return mutate_sqlite(args, kind, policy)
+        except IdempotentMutationError as replay:
+            return str(replay)
     with locked(phase="git_mutate"):
         if backend_selection()["backend"] != "git":
             raise RuntimeError("BACKEND_CHANGED: retry using the selected backend")
@@ -2524,8 +3060,10 @@ def mutate(args: argparse.Namespace, kind: str, policy: EvidencePolicy | None = 
                 for target in generated_paths()
             }
         )
-        committed = False
-        note = apply_transition(args, kind, meta, all_tasks(), selected_policy)
+        try:
+            note = apply_transition(args, kind, meta, all_tasks(), selected_policy)
+        except IdempotentMutationError as replay:
+            return str(replay)
         meta["task_revision"] += 1
         meta["updated_at"] = now()
         session_record = git_session_record(args, kind, meta, before)
@@ -2549,30 +3087,19 @@ def mutate(args: argparse.Namespace, kind: str, policy: EvidencePolicy | None = 
                 )
                 + "\n"
             )
-        try:
-            if session_record is not None:
-                append_session_record(ROOT, session_record)
-            if checkpoint_record is not None:
-                append_checkpoint(ROOT, checkpoint_record)
-            write_task(path, meta, body)
-            views = rendered_task_views(all_tasks())
-            write_rendered_task_views(views)
-            require_policy_unchanged(ROOT, selected_policy)
-            errors = mutation_errors(path, before, selected_policy)
-            if errors:
-                raise RuntimeError("\n".join(errors))
-            for target in generated_paths():
-                before.setdefault(target, None)
-            touched = changed_paths(before, include_deleted=True)
-            committed = commit(f"chore(state): {kind} {args.task}", touched)
-            push_replica()
-        except Exception:
-            # A signed local commit is already durable even when replication fails.
-            # Keep its worktree representation intact so a later reconcile can safely
-            # inspect and retry the push instead of silently rolling state backward.
-            if not committed:
-                restore_paths(before)
-            raise
+        persist_git_mutation(
+            args,
+            kind,
+            receipt_id,
+            path,
+            meta,
+            body,
+            before,
+            selected_policy,
+            session_record,
+            checkpoint_record,
+        )
+    return None
 
 
 def _transition_note(body: str, note: str, at: str) -> str:
@@ -2595,7 +3122,7 @@ def _transition_note(body: str, note: str, at: str) -> str:
 
 def mutate_sqlite(
     args: argparse.Namespace, kind: str, policy: EvidencePolicy | None = None
-) -> None:
+) -> str | None:
     """Linearize a lifecycle mutation at SQLite's committed CAS update."""
     selected_policy = policy_snapshot(policy)
     backend = mutating_sqlite_backend()
@@ -2657,6 +3184,7 @@ def mutate_sqlite(
         raise StorageCommittedError(
             f"SQLITE_COMMITTED_EXPORT_FAILED: task={args.task}; revision={expected + 1}; {error}"
         ) from error
+    return None
 
 
 def cmd_render_status(*, check: bool) -> None:
@@ -3639,8 +4167,22 @@ def dispatch_read_only_command(args: argparse.Namespace) -> None:
         cmd_metrics()
 
 
-def dispatch_bound_command(args: argparse.Namespace) -> int:  # noqa: C901
-    """Dispatch a command only after the permanent project binding has passed."""
+def dispatch_fast_command(args: argparse.Namespace) -> int:
+    """Dispatch the opt-in receipt contract after normal project binding."""
+    from tools.fast_receipt_cli import dispatch_fast
+
+    return dispatch_fast(sys.modules[__name__], args)
+
+
+def dispatch_lifecycle_mutation(args: argparse.Namespace) -> None:
+    """Run one lifecycle mutation and report an admitted no-op replay."""
+    note = mutate(args, args.cmd)
+    if note is not None:
+        print(note)
+
+
+def dispatch_bound_standard_command(args: argparse.Namespace) -> int:  # noqa: C901
+    """Dispatch every non-fast command after permanent project binding."""
     if args.cmd == "reconcile":
         reconcile(do_commit=args.commit, push=args.push)
     elif args.cmd == "roles":
@@ -3659,7 +4201,7 @@ def dispatch_bound_command(args: argparse.Namespace) -> int:  # noqa: C901
         *LIFECYCLE_MUTATION_COMMANDS,
         "gate",
     ):
-        mutate(args, args.cmd)
+        dispatch_lifecycle_mutation(args)
     elif args.cmd == "run":
         if args.command and args.command[0] == "--":
             args.command = args.command[1:]
@@ -3669,6 +4211,13 @@ def dispatch_bound_command(args: argparse.Namespace) -> int:  # noqa: C901
     elif args.cmd == "upgrade":
         return cmd_upgrade(args)
     return 0
+
+
+def dispatch_bound_command(args: argparse.Namespace) -> int:
+    """Dispatch a bound command while retaining the opt-in receipt route."""
+    if args.cmd == "fast":
+        return dispatch_fast_command(args)
+    return dispatch_bound_standard_command(args)
 
 
 def main() -> int:
@@ -3731,6 +4280,48 @@ def main() -> int:
     item.add_argument("task")
     item.add_argument("--owner", required=True)
     item.add_argument("--expected-revision", type=int, required=True)
+    item = commands.add_parser("fast")
+    fast_actions = item.add_subparsers(dest="fast_action", required=True)
+    fast_heartbeat = fast_actions.add_parser("heartbeat")
+    fast_heartbeat.add_argument("task")
+    fast_heartbeat.add_argument("--owner", required=True)
+    fast_heartbeat.add_argument("--expected-revision", type=int, required=True)
+    fast_heartbeat.add_argument("--lease-minutes", type=int, default=120)
+    fast_heartbeat.add_argument("--key", required=True)
+    fast_claim = fast_actions.add_parser("claim")
+    fast_claim.add_argument("task")
+    fast_claim.add_argument("--owner", required=True)
+    fast_claim.add_argument("--expected-revision", type=int, required=True)
+    fast_claim.add_argument("--lease-minutes", type=int, default=120)
+    fast_claim.add_argument("--worker-pid", type=int)
+    fast_claim.add_argument("--worker-start-time", type=int)
+    fast_claim.add_argument("--key", required=True)
+    fast_promote = fast_actions.add_parser("promote")
+    fast_promote.add_argument("task")
+    fast_promote.add_argument("--expected-revision", type=int, required=True)
+    fast_promote.add_argument("--note", required=True)
+    fast_promote.add_argument("--key", required=True)
+    fast_update = fast_actions.add_parser("update")
+    fast_update.add_argument("task")
+    fast_update.add_argument("--owner", required=True)
+    fast_update.add_argument("--expected-revision", type=int, required=True)
+    fast_update.add_argument("--status", choices=STATUSES)
+    fast_update.add_argument("--priority", choices=PRIORITIES)
+    fast_update.add_argument("--summary")
+    fast_update.add_argument("--next-action")
+    fast_update.add_argument("--note", required=True)
+    fast_update.add_argument("--key", required=True)
+    fast_receipt = fast_actions.add_parser("receipt")
+    fast_receipt.add_argument("receipt_id")
+    fast_observe = fast_actions.add_parser("observe")
+    fast_observe.add_argument("--max-age-seconds", type=int, required=True)
+    fast_worker = fast_actions.add_parser("worker")
+    fast_worker.add_argument("--limit", type=int, default=16)
+    fast_worker.add_argument("--serve", action="store_true")
+    fast_worker.add_argument("--poll-seconds", type=float, default=0.05)
+    fast_publisher = fast_actions.add_parser("publisher")
+    fast_publisher.add_argument("--serve", action="store_true")
+    fast_publisher.add_argument("--poll-seconds", type=float, default=5.0)
     item = commands.add_parser("directive")
     directive_commands = item.add_subparsers(dest="directive_action", required=True)
     directive = directive_commands.add_parser("create")
@@ -3765,6 +4356,11 @@ def main() -> int:
         item.add_argument("task")
         item.add_argument("--owner", required=True)
         item.add_argument("--lease-minutes", type=int, default=120)
+        if name == "claim":
+            item.add_argument("--worker-pid", type=int)
+            item.add_argument("--worker-start-time", type=int)
+        if name == "heartbeat":
+            item.add_argument("--expected-revision", type=int)
     item = commands.add_parser("release")
     item.add_argument("task")
     item.add_argument("--owner", required=True)
@@ -3780,6 +4376,18 @@ def main() -> int:
     item.add_argument("--evidence-ref", required=True)
     item.add_argument("--evidence-digest", required=True)
     item.add_argument("--note", required=True)
+    item = commands.add_parser("bind-spec")
+    item.add_argument("task")
+    item.add_argument("--owner", required=True)
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--spec-ref", required=True)
+    item.add_argument("--spec-revision", type=int, required=True)
+    item = commands.add_parser("bind-worktree")
+    item.add_argument("task")
+    item.add_argument("--owner", required=True)
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--branch", required=True)
+    item.add_argument("--worktree-key", required=True)
     item = commands.add_parser("promote")
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
@@ -3826,6 +4434,19 @@ def main() -> int:
     item.add_argument("--before", action="append", default=[], required=True)
     item.add_argument("--after", action="append", default=[], required=True)
     item.add_argument("--public-ref", required=True)
+    item.add_argument("--session-id")
+    item.add_argument("--request-ref")
+    item.add_argument(
+        "--activation",
+        choices=(
+            "user-decision",
+            "user-detail-request",
+            "user-proposal-review",
+            "agent-uncertainty",
+            "policy-required-approval",
+        ),
+    )
+    item.add_argument("--tui-contract-version")
     item = commands.add_parser("run")
     item.add_argument("task")
     item.add_argument("--owner", required=True)

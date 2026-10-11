@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1717",
+  "status": "qualified",
+  "product_commit": "4245b4a1046cdb6f0eb82bf8d4742f5049ee1405",
+  "reviewed_head": "c0e3f8f4393d1c72b74c78f601de36a4487d85f5",
+  "pull_request": 567,
+  "scope": "comparison_provider_settings_endpoint_generation_identity_fence",
+  "gates": {
+    "focused_identity_tests": "passed",
+    "workspace_tests_and_clippy": "passed",
+    "hosted_required_checks": "all_green",
+    "exact_main_parent": "3031428aab47be95943b75cd753b0b5e3aeb4f6b"
+  },
+  "identity_and_privacy": {
+    "provider_model_settings_endpoint_generation_mismatch_fails_closed": true,
+    "symmetric_and_asymmetric_diagnostics": true,
+    "credentials_recorded": false,
+    "raw_prompts_or_responses_recorded": false,
+    "private_paths_recorded": false
+  },
+  "next_action": "Accept and release AR-1717."
+}

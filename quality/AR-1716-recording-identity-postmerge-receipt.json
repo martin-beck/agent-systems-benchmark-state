@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1716",
+  "status": "qualified",
+  "product_commit": "3031428aab47be95943b75cd753b0b5e3aeb4f6b",
+  "reviewed_head": "58a445a5dd906bc417fc161428adecb55a9543ed",
+  "pull_request": 566,
+  "scope": "recording_index_provider_identity_fence",
+  "gates": {
+    "focused_selection_tests": "passed",
+    "exact_main_provenance_test": "passed",
+    "hosted_required_checks": "all_green"
+  },
+  "identity_and_privacy": {
+    "provider_identity_mismatch_fails_before_mutation": true,
+    "human_and_json_diagnostics_typed": true,
+    "credentials_recorded": false,
+    "raw_prompts_or_responses_recorded": false,
+    "private_paths_recorded": false
+  },
+  "next_action": "Accept and release AR-1716."
+}

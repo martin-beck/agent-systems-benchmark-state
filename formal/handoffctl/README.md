@@ -7,7 +7,7 @@ the Python implementation, not a replacement implementation.
 ## Evidence classification
 
 [`../evidence.json`](../evidence.json) records the structured formal-evidence contract required by
-Agent Workflow Quality v0.24.0. It classifies these six TLC runs as bounded-model evidence and
+Agent Workflow Quality v0.24.0. It classifies these eight TLC runs as bounded-model evidence and
 records the largest finite process, task, actor, project, worktree, and revision domains used by
 their checked configurations. Each `.cfg` file remains authoritative for the exact bound of its
 model.
@@ -42,7 +42,7 @@ authoritative revision, task status and owner unchanged.
 | `update` | `in_progress` | current owner, exact revision | active fields updated |
 | `accept` | `in_progress`, referenced spec | current owner, exact revision, valid evidence metadata | spec acceptance recorded; lifecycle status unchanged |
 | `release` | `in_progress` | current owner | chosen non-active state, owner and lease cleared |
-| `recover-expired` | expired `in_progress` with a valid session | exact revision | `open`, ownership cleared, session restored |
+| `recover-expired` | expired `in_progress` | exact revision; a verified claim-time worker identity must now be absent unless a validated exact-current session exists | `open`, ownership cleared; restores `next_action` only from an exact-current session snapshot |
 | `run` record | `in_progress`, unexpired | owner and current revision | bounded result recorded |
 
 The model includes `accept` as a status-preserving, exact-revision transition.
@@ -120,6 +120,24 @@ project and one foreign caller, including rejection without mutation and fair pr
 exhaustive proofs of the abstractions, not proofs of Linux, Git, Python, or the filesystem
 implementation.
 
+HandoffctlReceipts.tla checks bounded opt-in receipt phases: an enqueued
+intent is not a successful transition, local completion requires a verified
+commit, remote completion requires an observed remote ref, and crash recovery
+either finds that commit or retains an explicit ambiguous outcome. It models
+finite executor/publisher crash and restart with weak fairness; it does not
+prove operating-system service supervision, denial-of-service resistance, or
+implementation correspondence. Its liveness property is conditional on both
+services eventually remaining available; repeated crashes are therefore an
+explicitly nonterminal environmental condition, not a false completion claim.
+
+HandoffctlObservation.tla checks the bounded opt-in `cached-observation-v1`
+contract: cache hits require the exact current input generation, one refresh
+serves concurrent waiters, an input change rejects the in-flight generation,
+and timeout is terminal. It is an abstraction of the resident socket cache;
+it does not claim operating-system event delivery or implementation refinement.
+[`OBSERVATION_CORRESPONDENCE.md`](OBSERVATION_CORRESPONDENCE.md) maps the
+abstraction to focused implementation evidence and records those limits.
+
 `HandoffctlStorage.tla` checks both selected backends, transaction mutual exclusion, one accepted
 revision increment per process, prepared SQLite authority before selector switch, eventual command
 completion and eventual migration switch under weak fairness. Real independent-process tests connect
@@ -155,6 +173,15 @@ rollback, concurrent mutation/reconciliation, revision fencing, ownership and
 generated-view behavior. The model and tests must both pass before a
 `handoffctl` change is accepted.
 
+## Human TUI handoff
+
+An interaction gate may retain one current `human_session` record while a decision is presented
+through a human TUI. The record binds its public session/request references and activation reason to
+the gate-opening revision. The `OracleInteractionGates` model checks that a presented session is
+revision-bound and cannot admit autonomous claim, run, or release work; resolution changes the
+session to a terminal public status. This is bounded best-effort design guidance, not a proof of
+the Python, TUI, or external decision system.
+
 ## CI scope
 
 `.github/workflows/verify.yml` runs these models for coordinator changes. Downstream integrations
@@ -174,12 +201,12 @@ the JAR or modify coordinator state.
 
 Formal tiers are explicit: `verify.sh --tier portable-smoke` runs one model
 and is non-exhaustive; it cannot produce publication or full evidence.
-`verify.sh --tier pr-publication` checks every invariant family. Five models
+`verify.sh --tier pr-publication` checks every invariant family. Six models
 use their full configurations; the general lifecycle model uses the
 one-process `HandoffctlPR.cfg`, while the separate lock and recovery models
 retain independent-process races. This exact-head PR tier is not the complete
 two-process lifecycle cross-product and cannot produce full release evidence.
-`verify.sh --tier full-exhaustive` runs all six full configurations on the
+`verify.sh --tier full-exhaustive` runs all eight full configurations on the
 scheduled weekly or manually dispatched gate. A release claim requires its
 fresh exact-head full attestation; neither smaller tier substitutes for it.
 

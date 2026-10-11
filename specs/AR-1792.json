@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1792.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "pty-determinism", "description": "The development broker foreground/restore PTY fixture is deterministic under repeated ordinary workspace and coverage execution."},
+    {"id": "semantic-preservation", "description": "Terminal foreground ownership, child lifecycle, restoration, and cleanup assertions remain intact; no serialization, exclusion, or test weakening is introduced."},
+    {"id": "quality", "description": "Focused repetitions, full locked workspace tests, coverage, fmt, clippy, rustdoc, signatures, DCO, privacy, exact-head CI, and exact-main post-merge assurance pass."},
+    {"id": "review-boundary", "description": "Independent technical review binds the exact candidate; no GitHub Reviews API approval object is required."}
+  ],
+  "definition_of_done": [
+    "The reproduced hosted PTY failure is explained and repaired with positive regression coverage.",
+    "Repeated local coverage-equivalent and full workspace gates pass without serial-only bypass or ignored tests.",
+    "A signed DCO candidate is independently reviewed, merged through the protected path, and all exact-main workflows succeed."
+  ],
+  "inputs": [
+    {"id": "ar1785-ci-failure", "description": "PR #555 policy/coverage run 38096884595 failed at the PTY foreground/restore fixture while 340 sibling tests passed."},
+    {"id": "ar1791-repair", "description": "AR-1791 descriptor cleanup repair and its no-API-review development boundary."}
+  ],
+  "outputs": [
+    {"id": "pty-repair", "description": "Deterministic development broker foreground/restore fixture and regression evidence."},
+    {"id": "qualification", "description": "Privacy-safe exact-head and post-merge quality evidence."}
+  ],
+  "allowed_tools": ["git", "cargo", "rustc", "python", "tools/handoffctl"],
+  "forbidden_tools": ["test-exclusion", "serial-only-gate-bypass", "credential-output", "history-rewrite", "force-push", "github-reviews-api-approval-gate"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted", "privacy", "quality"],
+  "gates": [
+    {"id": "focused", "description": "The PTY fixture and hostile ownership/cleanup cases pass repeatedly."},
+    {"id": "workspace", "description": "Repeated cargo test --locked --workspace --all-targets passes."},
+    {"id": "publication", "description": "Independent review, exact-head CI, signed DCO merge, and exact-main post-merge workflows pass without a GitHub Reviews API approval object."}
+  ]
+}

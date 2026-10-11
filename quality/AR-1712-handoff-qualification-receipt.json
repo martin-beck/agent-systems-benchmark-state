@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "ar": "AR-1712",
+  "status": "qualified",
+  "product_commit": "f090de56710db16e3751df180ee4183ca87d952e",
+  "mode": "development_local_mock",
+  "scope": "selected_and_all_recording_handoff",
+  "runtime_authority": "local_mock_fixture",
+  "network": "denied",
+  "provider_fallback": "forbidden",
+  "gates": {
+    "runtime_launch_factory": {"passed": 21, "ignored_capability_tests": 1},
+    "runtime_live_service": {"passed": 53},
+    "cli_replay_and_comparison": {"passed": 7},
+    "synthetic_tutorial_fail_closed": true
+  },
+  "identity_and_privacy": {
+    "provider_model_agent_workload_bound": true,
+    "incomplete_or_mismatched_fail_closed": true,
+    "credentials_recorded": false,
+    "raw_prompts_or_responses_recorded": false,
+    "private_paths_recorded": false
+  },
+  "github_reviews_api_approval_required": false,
+  "independent_technical_review": "coordinator exact-main qualification",
+  "next_action": "Accept and release AR-1712, then promote AR-1724."
+}

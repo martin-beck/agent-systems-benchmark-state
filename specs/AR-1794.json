@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1794.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "merge-path", "description": "The documented coordinator merge path constructs a signed DCO merge with the local integration identity and never uses the GitHub web merge path."},
+    {"id": "postmerge-receipt", "description": "A real protected-main merge reaches terminal success for portable provenance and all required exact-main workflows."},
+    {"id": "failure-recovery", "description": "A GitHub-committer provenance failure is preserved as evidence and recovery does not rewrite protected main or weaken Web Flow rejection."}
+  ],
+  "definition_of_done": [
+    "Repair procedure and helper usage are documented and tested.",
+    "Independent review and exact-head CI pass for the repair.",
+    "A subsequent signed local merge produces a green exact-main provenance receipt."
+  ],
+  "inputs": [
+    {"id": "failed-merge", "description": "AR-1781 merge af75cd06 and failed Portable protected-main provenance run 38131187031."},
+    {"id": "merge-tool", "description": "tools/integration/merge_pr.py and docs/MERGE_INTEGRITY.md."}
+  ],
+  "outputs": [
+    {"id": "repair-receipt", "description": "Privacy-safe evidence of the corrected signed local merge path and green exact-main workflows."}
+  ],
+  "allowed_tools": ["git", "gh", "python", "tools/handoffctl", "tools/integration/merge_pr.py"],
+  "forbidden_tools": ["web-merge", "force-push-main", "history-rewrite", "policy-weakening"],
+  "required_evidence_classes": ["mechanical", "hosted", "privacy", "quality"],
+  "gates": [
+    {"id": "integrity", "description": "Signed merge-integrity and DCO checks pass."},
+    {"id": "publication", "description": "All required PR checks and exact-main post-merge workflows pass."}
+  ]
+}

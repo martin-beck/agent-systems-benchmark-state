@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1797.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "runtime-issued-launch", "description": "A direct ASB cli2key live run obtains a launch only from the runtime-owned sidecar; no caller-provided endpoint, key, or sidecar identity is accepted."},
+    {"id": "installed-bridge-identity", "description": "The sidecar starts only the AR-1779 project-local verified cli2key bridge receipt with matching catalog identity, digest, platform, and entrypoint."},
+    {"id": "bounded-lifecycle", "description": "One loopback-only sidecar is retained for a normal run or bounded sweep and is reaped with private staging removed on every terminal path."},
+    {"id": "adapter-only-projection", "description": "Only the ephemeral endpoint, invocation credential, and selected model reach the Codex Responses adapter; OAuth data, local keys, paths, prompts, and provider bodies never reach durable state or evidence."},
+    {"id": "no-fallback", "description": "Authentication, readiness, model, timeout, cancellation, crash, or cleanup failure remains a typed cli2key failure and never falls back to OpenRouter, platform API keys, replay, another provider, or Codex app-server."},
+    {"id": "end-to-end-development-evidence", "description": "Credential-free public CLI fake coverage proves install/select/run/sweep/report/compare; a separate opt-in user-authorized live development benchmark proves the bounded real bridge path with redacted evidence."}
+  ],
+  "definition_of_done": ["The current cli2key live-execution rejection is replaced by a runtime-issued sidecar launch path with full negative coverage.", "Independent review, exact-head CI, signed protected merge, and exact-main post-merge qualification pass."],
+  "inputs": [
+    {"id": "sidecar-lifecycle", "description": "AR-1729 runtime-owned cli2key sidecar lifecycle."},
+    {"id": "codex-adapter", "description": "AR-1731 cli2key Codex Responses adapter route."},
+    {"id": "run-sweep-contract", "description": "AR-1732 and AR-1733 run/sweep and qualification contracts."},
+    {"id": "verified-install", "description": "AR-1779 usable project-local cli2key bridge installation."}
+  ],
+  "outputs": [{"id": "cli2key-live-runtime", "description": "Development-only runtime-issued cli2key launch for real ASB benchmark execution."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl", "credential-free-fakes", "opt-in-live-test"],
+  "forbidden_tools": ["auth-file-scraping", "credential-output", "oauth-copy", "ambient-bridge-substitution", "caller-supplied-launch", "provider-fallback", "nested-agent-benchmark", "production-promotion", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id": "runtime-wiring", "description": "Public CLI fake install-to-run and hostile sidecar lifecycle matrix pass."},
+    {"id": "opt-in-live", "description": "A user-authorized bounded live development benchmark succeeds or yields an actionable typed failure without retaining secrets."}
+  ]
+}

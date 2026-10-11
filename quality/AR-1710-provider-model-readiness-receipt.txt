@@ -1,0 +1,17 @@
+AR-1710 provider/model readiness qualification
+
+Product revision: c059e9a6 (protected-main checkout used for qualification)
+Scope: existing merged setup/materialization boundary
+
+Acceptance evidence:
+- setup selection accepts catalog-backed provider/model pairs and rejects typed incompatible/unavailable models.
+- shared defaults and selected-agent configuration persist through ConfigStore restart; --no-default preserves existing shared defaults.
+- provider catalog/control projection exposes supported models and authentication methods without credentials.
+- missing development authentication is warning-only and setup remains non-blocking.
+- output is human-default/JSON-compatible and contains digest-only credential metadata.
+
+Focused commands (offline, no provider contact):
+- cargo test --manifest-path /srv/data/projects/agent-systems-benchmark-ar1710/Cargo.toml -p asb-cli setup_ --lib: 16 passed
+- cargo test --manifest-path /srv/data/projects/agent-systems-benchmark-ar1710/Cargo.toml -p asb-config -p asb-cli provider_catalog --lib: 9 passed
+
+No product delta was required: the reviewed implementation is already present on protected main.
