@@ -1246,7 +1246,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
-| Next action | Repair deterministic Rust provenance drift by refreshing the reviewed lib.rs digest fixture, rerun workflow_transcript provenance tests and exact-head CI, then obtain independent review before merge. |
+| Next action | Independently review repaired head 8398dcbf; monitor fresh PR #584 exact-head CI, then merge only after every required check and review is green; perform post-merge verification and release AR-1782. |
 
 ### AR-1783 — Installed workload selection and execution
 

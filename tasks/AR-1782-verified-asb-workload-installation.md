@@ -7,7 +7,7 @@
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "Repair deterministic Rust provenance drift by refreshing the reviewed lib.rs digest fixture, rerun workflow_transcript provenance tests and exact-head CI, then obtain independent review before merge.",
+  "next_action": "Independently review repaired head 8398dcbf; monitor fresh PR #584 exact-head CI, then merge only after every required check and review is green; perform post-merge verification and release AR-1782.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "8398dcbf32aa16014d16dd87a537199d8db27af6",
@@ -27,7 +27,7 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Verified asb workload installation",
   "updated_at": "2026-10-11T19:33:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
@@ -438,3 +438,6 @@ remain mandatory.
   7e98eb9e102fb5d7990fdbc762db8b81b0736b84bd704ca74b2362608b3609fb.
 
 - 2026-10-11T19:33:26+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:33:26+00:00: Provenance fixture refreshed to exact lib.rs digest 212ecc...; focused
+  provenance tests, formatting, diff checks, SSH signature, and DCO verified.
