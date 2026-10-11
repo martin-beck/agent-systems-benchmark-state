@@ -16,20 +16,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "environmental",
+    "evidence_digest": "sha256:965d865fd1afadeb545c34aac7d9efb6fbed9f3203c0695c0e3f68178702e3e9",
+    "evidence_ref": "evidence/AR-1782-post-merge-receipt.txt",
     "spec_ref": "specs/AR-1782.json",
     "spec_revision": 2,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1782.json",
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 251,
+  "task_revision": 252,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T20:57:16+00:00",
+  "updated_at": "2026-10-11T20:57:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -695,3 +695,6 @@ remain mandatory.
 
 - 2026-10-11T20:57:16+00:00: Recorded command exit 0; command argv SHA-256
   8ee7e06cbf2fce8c635b1fa102e13e1c933ff90ceb67105832e260738a46d084.
+
+- 2026-10-11T20:57:29+00:00: Independent post-merge acceptance: exact merge, full workspace test,
+  all post-merge workflows, signature/DCO, clean worktree, and live doctor verified.
