@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 242,
+  "task_revision": 243,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T20:51:14+00:00",
+  "updated_at": "2026-10-11T20:51:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -669,3 +669,6 @@ remain mandatory.
 - 2026-10-11T20:51:14+00:00: All 10 exact-main workflows are terminal-success. The attempted
   post-merge workspace run ended, but its integration worktree was at pre-merge base 24cb72d, so it
   is invalid evidence; AR remains in progress.
+
+- 2026-10-11T20:51:59+00:00: Recorded command exit 0; command argv SHA-256
+  8835ca6afa124b5f0cfd058e18f654c75cfea93cbe35cb3c57d7948687d35db1.
