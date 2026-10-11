@@ -10,7 +10,7 @@
   "next_action": "Repair deterministic Rust provenance drift by refreshing the reviewed lib.rs digest fixture, rerun workflow_transcript provenance tests and exact-head CI, then obtain independent review before merge.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
-  "observed_head": "2ee4626e7784d4f7deb8d1110a8c58257b6dac2e",
+  "observed_head": "8398dcbf32aa16014d16dd87a537199d8db27af6",
   "owner": "ar1782-coordinator-repair",
   "plan": "../plans/AR-1782-verified-asb-workload-installation.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 143,
+  "task_revision": 144,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T19:32:57+00:00",
+  "updated_at": "2026-10-11T19:32:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
