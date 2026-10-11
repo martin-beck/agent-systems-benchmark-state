@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1782](tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Independently review exact head d6bddcab; monitor fresh PR #584 CI, require hosted workspace coverage >=90% and all checks green, then merge and verify protected-main result before releasing AR-1782. | ar1782-coordinator-repair |
+| P0 | [AR-1782](tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Refresh the version-coupled provenance digest for current d6bddcab lib.rs, rerun workflow_transcript provenance tests, then obtain final exact-head review and hosted CI before merge. | ar1782-coordinator-repair |
 
 ## Open
 

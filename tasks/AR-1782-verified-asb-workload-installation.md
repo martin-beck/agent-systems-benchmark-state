@@ -7,7 +7,7 @@
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "Independently review exact head d6bddcab; monitor fresh PR #584 CI, require hosted workspace coverage >=90% and all checks green, then merge and verify protected-main result before releasing AR-1782.",
+  "next_action": "Refresh the version-coupled provenance digest for current d6bddcab lib.rs, rerun workflow_transcript provenance tests, then obtain final exact-head review and hosted CI before merge.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "d16375681b952934909d5ecbdd13e3d5ec361c4d",
@@ -27,7 +27,7 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 220,
+  "task_revision": 221,
   "title": "Verified asb workload installation",
   "updated_at": "2026-10-11T20:24:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
@@ -610,3 +610,7 @@ remain mandatory.
   is clean. Fresh independent review required.
 
 - 2026-10-11T20:24:09+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:24:09+00:00: Independent review blocked only on provenance drift: actual lib.rs
+  SHA-256 1348bbd2... differs from recorded f0373063... after headroom tests. No source or gate
+  defect found.
