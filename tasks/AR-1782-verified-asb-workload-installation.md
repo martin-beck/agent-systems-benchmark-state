@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T19:48:30+00:00",
+  "updated_at": "2026-10-11T19:48:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -511,3 +511,6 @@ remain mandatory.
 - 2026-10-11T19:48:30+00:00: Headroom repair added project-bound lifecycle coverage and refreshed
   diagnostic/provenance fixtures; signed exact head independently verified. Final clean coverage
   measurement is the remaining gate.
+
+- 2026-10-11T19:48:59+00:00: Recorded command exit 0; command argv SHA-256
+  0595a130fcc91554f444c68fea9ef76dbfed8d5b1eaeca807ca3bed0c813cd47.
