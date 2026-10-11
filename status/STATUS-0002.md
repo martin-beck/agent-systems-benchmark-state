@@ -4680,7 +4680,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Run independent review of the exact qualification branch, then publish the PR and wait for exact-head CI. |
+| Next action | Independent review the signed qualification commits, then publish PR and wait for exact-head CI. |
 
 ### AR-1687 — Development/mock provider-bound comparison qualification
 
@@ -4698,3 +4698,4 @@
 
 ### AR-1688 — Runner-owned cassette capture and replay qualification
 
+| Field | Value |

@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| Field | Value |
 | --- | --- |
 | Status | done |
 | Priority | P0 |
