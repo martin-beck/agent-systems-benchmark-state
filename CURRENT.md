@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1782](tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Independently review repaired head 2ee4626e; monitor fresh PR #584 exact-head CI, then merge only after all required checks and review are green; perform post-merge verification and release AR-1782. | ar1782-coordinator-repair |
+| P0 | [AR-1782](tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Repair deterministic Rust provenance drift by refreshing the reviewed lib.rs digest fixture, rerun workflow_transcript provenance tests and exact-head CI, then obtain independent review before merge. | ar1782-coordinator-repair |
 
 ## Open
 
