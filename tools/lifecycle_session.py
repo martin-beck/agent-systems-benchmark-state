@@ -9,7 +9,7 @@ import secrets
 from dataclasses import dataclass
 from pathlib import Path
 
-_TOKEN = secrets.token_bytes(32)
+_GUARD = secrets.token_bytes(32)
 
 
 @dataclass(frozen=True, init=False)
@@ -17,17 +17,15 @@ class LifecycleSession:
     _owner: object
     _path: Path
     _identity: tuple[int, int]
-    _capability: bytes
+    _guard: bytes
 
-    def __init__(
-        self, owner: object, path: Path, identity: tuple[int, int], capability: bytes
-    ) -> None:
-        if capability is not _TOKEN:
+    def __init__(self, owner: object, path: Path, identity: tuple[int, int], guard: bytes) -> None:
+        if guard is not _GUARD:
             raise ValueError("lifecycle session must be adapter-issued")
         object.__setattr__(self, "_owner", owner)
         object.__setattr__(self, "_path", path)
         object.__setattr__(self, "_identity", identity)
-        object.__setattr__(self, "_capability", capability)
+        object.__setattr__(self, "_guard", guard)
 
     def belongs_to(self, owner: object) -> bool:
         return self._owner is owner
@@ -44,4 +42,4 @@ class LifecycleSession:
 
 def _issue(owner: object, path: Path) -> LifecycleSession:
     status = path.stat()
-    return LifecycleSession(owner, path, (status.st_dev, status.st_ino), _TOKEN)
+    return LifecycleSession(owner, path, (status.st_dev, status.st_ino), _GUARD)

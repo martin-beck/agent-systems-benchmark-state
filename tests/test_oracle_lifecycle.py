@@ -51,7 +51,7 @@ def stage_event(
 
 
 class OracleLifecycleTests(unittest.TestCase):
-    def test_generic_role_spec_decision_gates_are_ordered_and_authorizing(self) -> None:
+    def test_generic_role_spec_decision_gates_are_ordered_without_authorized_flag(self) -> None:
         meta: dict[str, Any] = {"id": "AR-0022", "task_revision": 1}
         for stage in StageGate:
             revision = meta["task_revision"]
@@ -60,7 +60,7 @@ class OracleLifecycleTests(unittest.TestCase):
             apply_event(meta, stage_event(meta["task_revision"], stage, "resolve", "accepted"))
             meta["task_revision"] += 1
         self.assertEqual([item.value for item in StageGate], meta["oracle_gate"]["completed"])
-        self.assertTrue(meta["oracle_gate"]["authorized"])
+        self.assertNotIn("authorized", meta["oracle_gate"])
 
     def test_generic_gate_unknown_stage_and_invalid_sequence_fail_closed(self) -> None:
         valid = stage_event(1, StageGate.ROLE, "open", "accepted").as_record()
@@ -344,7 +344,7 @@ class OracleLifecycleTests(unittest.TestCase):
         meta["task_revision"] += 1
         apply_event(meta, event(3, GateStage.INTAKE, "reopen", "contradiction"))
         self.assertEqual([], meta["oracle_gate"]["completed"])
-        self.assertFalse(meta["oracle_gate"]["authorized"])
+        self.assertNotIn("authorized", meta["oracle_gate"])
         with self.assertRaisesRegex(GateError, "unresolved"):
             transition_allowed(meta, "release")
 

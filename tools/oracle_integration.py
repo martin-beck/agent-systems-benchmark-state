@@ -111,8 +111,8 @@ def run_synthetic_trace(
 
     gate = meta["oracle_gate"]
     expected = [stage.value for stage in GateStage]
-    if gate["authorized"] is not True or gate["completed"] != expected:
-        raise IntegrationTraceError("Coordinator did not authorize the complete gate sequence")
+    if gate["completed"] != expected:
+        raise IntegrationTraceError("Coordinator did not complete the gate sequence")
     return IntegrationResult(
         task_id=task_id,
         final_revision=meta["task_revision"],

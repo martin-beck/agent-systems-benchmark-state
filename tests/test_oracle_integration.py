@@ -82,7 +82,7 @@ class OracleIntegrationTests(unittest.TestCase):
         apply_event(meta, _event("AR-0025", 1, GateStage.INTAKE, "open", "unresolved"))
         meta["task_revision"] = 2
         apply_event(meta, _event("AR-0025", 2, GateStage.INTAKE, "resolve", "unresolved"))
-        self.assertFalse(meta["oracle_gate"]["authorized"])
+        self.assertNotIn("authorized", meta["oracle_gate"])
 
 
 if __name__ == "__main__":

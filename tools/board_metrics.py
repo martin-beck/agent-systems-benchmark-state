@@ -24,18 +24,16 @@ def _gate_failure(meta: Meta) -> str | None:
         return str(gate["open_stage"])
     if gate.get("reconciliation_required"):
         return "reconciliation"
-    if gate.get("authorized") is not True:
-        sequence = gate.get("stage_sequence") or (
-            "intake",
-            "discussion",
-            "formal_spec_review",
-            "reconciliation",
-        )
-        completed = gate.get("completed") or []
-        for stage in sequence:
-            if stage not in completed:
-                return str(stage)
-        return "authorization"
+    sequence = gate.get("stage_sequence") or (
+        "intake",
+        "discussion",
+        "formal_spec_review",
+        "reconciliation",
+    )
+    completed = gate.get("completed") or []
+    for stage in sequence:
+        if stage not in completed:
+            return str(stage)
     return None
 
 

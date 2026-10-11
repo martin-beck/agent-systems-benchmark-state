@@ -30,6 +30,35 @@ The correspondence inventory is exercised by `tests/test_task_spec.py`,
 policy identity races, failed Git mutation restoration, and interrupted
 Git-to-SQLite migration before authority selection changes.
 
+## Legacy task-spec binding
+
+`bind-spec` is modelled as an owner and exact-revision-fenced active-task
+transition.  It is admitted only when the lease is live and the task is still
+unbound; an accepted transition makes `specBound` true, while stale, expired,
+foreign-owner, or already-bound requests take `ExecuteReject(p)` and stutter.
+`SpecBindingIsMonotonic` and `AcceptedSpecBindIsBound` make the one-way
+binding property explicit.  This is bounded-model guidance and hostile test
+correspondence, not a proof that the Python implementation refines the model.
+
+## Legacy worktree binding
+
+`bind-worktree` is the corresponding exact-revision transition for a claimed
+legacy record with both worktree fields empty. It requires a live owner lease,
+rejects unsafe or conflicting identities, and changes the bounded
+`worktreeBound`, branch, and worktree-key states only on acceptance. A retry
+at the immediately resulting revision with the same owner and exact identity
+is an accepted no-op: it preserves task/projection revisions and records no
+second mutation. A different identity remains rejected.
+`WorktreeBindingIsMonotonic`, `AcceptedWorktreeBindIsBound`, and
+`UniqueActiveWorktreeIdentity` preserve the one-way binding and prohibit two
+active tasks from sharing either bounded identity, while timeouts, stale
+requests, expired leases, and conflicting requests stutter.
+The model starts each bounded task with empty legacy worktree metadata; this
+keeps the checked domain focused on the migration transition rather than on
+arbitrary pre-existing identities.
+This is bounded-model guidance and hostile test correspondence, not an
+implementation-refinement proof.
+
 The executable checker binds this vocabulary to the authoritative predicates:
 `NoReplacementBeforeBackup` to `ProjectionAtomicity`, `AmbiguousIsWriteClosed`
 to `LockSafety`, and `ReconcileRequiresFence` to `RevisionAccounting`. It also

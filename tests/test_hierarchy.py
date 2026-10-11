@@ -108,6 +108,25 @@ class HierarchyTests(unittest.TestCase):
         record = task("AR-0001", children=["AR-0002"])[1]
         jsonschema.Draft202012Validator(schema).validate(record)
 
+    def test_task_schema_requires_closed_at_for_terminal_human_session(self) -> None:
+        schema = json.loads(Path("schema/task-record.schema.json").read_text(encoding="utf-8"))
+        record = task("AR-0001")[1]
+        session = {
+            "schema_version": "1.0",
+            "session_id": "AWTUI-SESSION-1",
+            "request_ref": "AWG-SESSION-1",
+            "activation": "user-decision",
+            "status": "resolved",
+            "task_revision": 1,
+            "tui_contract_version": "1.0",
+            "opened_at": "2026-10-10T00:00:00+00:00",
+        }
+        record["oracle_gate"] = {"human_session": session}
+        with self.assertRaises(jsonschema.ValidationError):
+            jsonschema.Draft202012Validator(schema).validate(record)
+        session["closed_at"] = "2026-10-10T00:00:01+00:00"
+        jsonschema.Draft202012Validator(schema).validate(record)
+
 
 if __name__ == "__main__":
     unittest.main()

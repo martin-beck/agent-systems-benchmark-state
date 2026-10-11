@@ -10,6 +10,7 @@ strictly versioned and must reject unknown fields before a caller treats it as v
 | Coordinator role assignment | `schema/role-assignment.schema.json` | `tools/role_assignment.py` | `tests/test_role_assignment.py` |
 | Task specification | `schema/task-spec.schema.json` | `tools/task_spec.py` | `tests/test_task_spec.py` |
 | Project task-spec evidence policy | `schema/task-spec-policy.schema.json` | `tools/task_spec.py` | `tests/test_task_spec.py`, `tests/test_handoffctl.py`, and `tests/test_sqlite_storage.py` |
+| Human TUI gate session | `schema/task-record.schema.json#/$defs/humanSession` | `tools.oracle_lifecycle.py` | `tests/test_oracle_lifecycle.py`, `tests/test_handoffctl.py`, and `formal/oracle/OracleInteractionGates.tla` |
 | Capability matrix formal contract | `formal/roles/CapabilityMatrix.tla` and `formal/roles/CapabilityMatrix.cfg` | `tools/capability_matrix_correspondence.py` | `tests/test_capability_matrix_formal.py` |
 
 The role registry is descriptive authorization input. It does not itself authorize a mutation,
