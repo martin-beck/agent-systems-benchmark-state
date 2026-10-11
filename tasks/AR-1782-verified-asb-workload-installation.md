@@ -3,24 +3,33 @@
   "branch": "feature/ar-1782-verified-asb-workload-installation",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1781"],
+  "depends_on": [
+    "AR-1781"
+  ],
   "id": "AR-1782",
   "next_action": "Implement asb workload install/list/status/select/repair/update/remove for every development-supported official external workload bundle.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "2ee4626e7784d4f7deb8d1110a8c58257b6dac2e",
   "owner": "",
   "plan": "../plans/AR-1782-verified-asb-workload-installation.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1782.json", "spec_revision": 2, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1782.json",
+    "spec_revision": 2,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1782.json",
   "spec_revision": 2,
   "status": "planned",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-10T09:49:36+00:00",
+  "updated_at": "2026-10-11T19:27:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
