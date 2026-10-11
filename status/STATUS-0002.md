@@ -4672,11 +4672,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1686-qualification-retry-luna56 |
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
@@ -4695,6 +4695,4 @@
 | Children | None |
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
 | Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
-
-### AR-1688 — Runner-owned cassette capture and replay qualification
 
