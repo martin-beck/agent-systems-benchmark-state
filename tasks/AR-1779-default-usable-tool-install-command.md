@@ -18,20 +18,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "integration-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "environmental",
+    "evidence_digest": "sha256:eb4b75b18b5b7ea8304c10949634963b29e25f6b1f205408c8da21b93979478b",
+    "evidence_ref": "evidence/AR-1779-post-merge-receipt.txt",
     "spec_ref": "specs/AR-1779.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1779.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Default usable tool-install command",
-  "updated_at": "2026-10-11T21:04:44+00:00",
+  "updated_at": "2026-10-11T21:04:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1779-default-usable-tool-install-command"
 }
 ---
@@ -203,3 +203,7 @@ the adapter smoke check failed.
 
 - 2026-10-11T21:04:44+00:00: Recorded command exit 0; command argv SHA-256
   8662a565deeeba67d44e00559c68165429b3e59d16ce0b0c285de916da75a82f.
+
+- 2026-10-11T21:04:58+00:00: Exact-main acceptance: implementation is present via merged PR #585,
+  all 15 required checks are green, focused CLI/install lifecycle tests pass, and superseded PR #583
+  is closed without merge.
