@@ -1,5 +1,24 @@
 ---
-{"id":"AR-1793","title":"Coordinator v0.5.1 adoption","priority":"P0","depends_on":["AR-1756"],"plan":"../plans/AR-1793-coordinator-v051-adoption.md","summary":"Adopt the released Coordinator v0.5.1 snapshot in ASB state and restore all downstream quality gates without modifying vendored bytes.","status":"open","next_action":"Verify the released snapshot, complete ASB-owned compatibility and coverage repairs, then submit the isolated vendor adoption for review.","owner":"","claim_expires":"","checkpoint_commit":"","task_revision":1,"schema_version":1,"updated_at":"2026-10-11T00:00:00+00:00","branch":"","worktree_key":""}
+{
+  "branch": "",
+  "checkpoint_commit": "",
+  "claim_expires": "2026-10-11T10:47:53+00:00",
+  "depends_on": [
+    "AR-1756"
+  ],
+  "id": "AR-1793",
+  "next_action": "Verify the released snapshot, complete ASB-owned compatibility and coverage repairs, then submit the isolated vendor adoption for review.",
+  "owner": "codex-ar1793-awc-v051",
+  "plan": "../plans/AR-1793-coordinator-v051-adoption.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "in_progress",
+  "summary": "Adopt the released Coordinator v0.5.1 snapshot in ASB state and restore all downstream quality gates without modifying vendored bytes.",
+  "task_revision": 2,
+  "title": "Coordinator v0.5.1 adoption",
+  "updated_at": "2026-10-11T08:47:53+00:00",
+  "worktree_key": ""
+}
 ---
 
 Adopt the exact unsigned lightweight upstream release `v0.5.1` at
@@ -13,3 +32,5 @@ manifest verified byte-for-byte. ASB-owned compatibility adapters and tests may
 be repaired for the removed legacy `authorized` gate field, but vendored bytes,
 coverage thresholds, privacy policy, and generated-state integrity must not be
 weakened.
+
+- 2026-10-11T08:47:53+00:00: Claimed by codex-ar1793-awc-v051.
