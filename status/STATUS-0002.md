@@ -4680,7 +4680,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Request another fresh independent review of product commit bb4d90aa and durable receipt evidence; do not publish or merge. |
+| Next action | Publish signed exact head bb4d90aa, verify PR checks, merge only after required CI green, then perform exact-main post-merge acceptance. |
 
 ### AR-1687 — Development/mock provider-bound comparison qualification
 
