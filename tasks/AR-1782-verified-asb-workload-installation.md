@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 148,
+  "task_revision": 149,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T19:33:26+00:00",
+  "updated_at": "2026-10-11T19:33:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -441,3 +441,6 @@ remain mandatory.
 
 - 2026-10-11T19:33:26+00:00: Provenance fixture refreshed to exact lib.rs digest 212ecc...; focused
   provenance tests, formatting, diff checks, SSH signature, and DCO verified.
+
+- 2026-10-11T19:33:31+00:00: Recorded command exit 0; command argv SHA-256
+  d32df0a8f7802e39b9a6743613fff16ac35e4dddba3905aa783a204f77a7e43f.
