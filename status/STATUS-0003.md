@@ -1246,7 +1246,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
-| Next action | Refresh the version-coupled provenance digest for current d6bddcab lib.rs, rerun workflow_transcript provenance tests, then obtain final exact-head review and hosted CI before merge. |
+| Next action | Obtain final exact-head review for 3be3029d, monitor all fresh PR #584 checks, merge only when every required check is green, then verify protected-main merge and release AR-1782. |
 
 ### AR-1783 — Installed workload selection and execution
 

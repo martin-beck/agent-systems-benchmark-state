@@ -7,7 +7,7 @@
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "Refresh the version-coupled provenance digest for current d6bddcab lib.rs, rerun workflow_transcript provenance tests, then obtain final exact-head review and hosted CI before merge.",
+  "next_action": "Obtain final exact-head review for 3be3029d, monitor all fresh PR #584 checks, merge only when every required check is green, then verify protected-main merge and release AR-1782.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "3be3029d7a1d927b86b4ae938abfc939d8339009",
@@ -27,7 +27,7 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 231,
+  "task_revision": 232,
   "title": "Verified asb workload installation",
   "updated_at": "2026-10-11T20:26:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
@@ -636,3 +636,6 @@ remain mandatory.
   4f8df750c52059d8635553b027b488846a11042048be7fbf9b169d768cc9b33c.
 
 - 2026-10-11T20:26:07+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:26:07+00:00: Provenance repair commit 3be3029d is SSH-signed+DCO, exact digest
+  1348bbd2..., focused workflow transcript tests pass, and worktree is clean.
