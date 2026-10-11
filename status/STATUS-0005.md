@@ -113,7 +113,7 @@
 | [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | [AR-1749](../tasks/AR-1749-coordinator-unblock-bootstrap.md) | [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) |
 | [AR-1754](../tasks/AR-1754-default-online-live-workflow.md) | [AR-1699](../tasks/AR-1699.md), [AR-1700](../tasks/AR-1700.md), [AR-1723](../tasks/AR-1723-easy-run-default-online.md), [AR-1724](../tasks/AR-1724-easy-sweep-default-online.md), [AR-1733](../tasks/AR-1733-cli2key-qualification.md) | None |
 | [AR-1755](../tasks/AR-1755-idempotent-make-install.md) | [AR-1745](../tasks/AR-1745-user-local-install-prefix.md) | None |
-| [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) | [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | None |
+| [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) | [AR-1753](../tasks/AR-1753-coordinator-v0359-release-upgrade.md) | [AR-1795](../tasks/AR-1795-coordinator-v051-adoption.md) |
 | [AR-1757](../tasks/AR-1757-human-first-cli-output.md) | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1555](../tasks/AR-1555.md) | [AR-1766](../tasks/AR-1766-fine-grained-human-diagnostic-contract.md) |
 | [AR-1758](../tasks/AR-1758-ar1731-merge-dco-repair.md) | None | None |
 | [AR-1759](../tasks/AR-1759-tool-project-config-schema.md) | [AR-1745](../tasks/AR-1745-user-local-install-prefix.md) | [AR-1760](../tasks/AR-1760-project-init-workspace.md), [AR-1761](../tasks/AR-1761-tool-install-registry.md), [AR-1762](../tasks/AR-1762-tool-discovery.md) |
@@ -152,16 +152,18 @@
 | [AR-1792](../tasks/AR-1792-pty-fixture-determinism.md) | [AR-1770](../tasks/AR-1770-descriptor-safe-directory-race-hardening.md), [AR-1791](../tasks/AR-1791-tui-fixture-isolation.md) | None |
 | [AR-1793](../tasks/AR-1793-human-diagnostic-output-parent.md) | [AR-1784](../tasks/AR-1784-command-dependency-registry-and-preflight.md) | None |
 | [AR-1794](../tasks/AR-1794-protected-main-merge-path-repair.md) | [AR-1781](../tasks/AR-1781-external-workload-acquisition-catalog.md) | None |
+| [AR-1795](../tasks/AR-1795-coordinator-v051-adoption.md) | [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) | None |
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1777](../tasks/AR-1777-verified-prebuilt-tool-and-workload-acquisition.md): Verified prebuilt tool acquisition | codex-ar1777-verified-prebuilt-tool-and-workload-acquisition-luna56 | Acquire, verify, and atomically install official compatible prebuilt executable tools into a project-local root. | Await required checks for PR #574 at 0a389a2f (coverage repaired to 90.28&#37;); then obtain independent exact-head review, merge only through signed local merge-integrity, and verify exact-main workflows. |
 | P0 | [AR-1781](../tasks/AR-1781-external-workload-acquisition-catalog.md): External workload acquisition catalog | ar1781-luna56 | Repair pushed as c4cd8ea6: SWE-mini documented and all seven fixture candidates covered by bounded selection/dispatch tests. | Repair post-merge provenance for merge af75cd06: protected-main verifier rejected GitHub merge committer; do not accept/release until exact-main provenance is green. |
 | P0 | [AR-1784](../tasks/AR-1784-command-dependency-registry-and-preflight.md): Command dependency registry and preflight | coordinator | Make every ASB command dependency declared, installable or explicitly host-only, and fail-fast before a missing-tool runtime failure. | Repair remaining hosted workspace coverage failure at 89.99&#37; on PR #575 with additional bounded dependency-preflight execution/presenter tests; rerun full exact-head checks, then signed local merge and exact-main verification. |
+| P0 | [AR-1795](../tasks/AR-1795-coordinator-v051-adoption.md): Coordinator v0.5.1 adoption | codex-ar1793-awc-v051 | Adopt v0.5.1 with strict coverage repair. | Add ASB-owned targeted tests until the strict 95 percent coverage gate passes, then independently review the exact candidate. |
 
 ### Open (2)
 
@@ -570,4 +572,3 @@
 | P0 | [AR-1519](../tasks/AR-1519.md): AR-1307/1308 reduced-model development profile | Unclaimed | Reduced development tier implemented with explicit 900s/1-worker/2G/2G/4G bounds and non-claiming attestation. | Independently review the exact head, then release this development-only repair; full AR-1307/1308 qualification remains separate. |
 | P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | Unclaimed | Reduced profile passes self-contained QEMU: transient admission, bounded models, sanitized non-claiming attestation, and clean poweroff. | Release after exact-head review; retain AR-1307/1308 formal qualification as separate blocked gates. |
 | P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Qualify the central orchestration path with deterministic local/mock and strict-replay authority; deployment-owned live authority is optional future hardening, not a development prerequisite. | Development path is unblocked: promote and claim this AR, qualify the existing central orchestrator with deterministic local/mock and strict-replay authority, and run exact-head gates. A deployment-owned authenticated source is optional future production hardening and must not block development qualification. |
-| P0 | [AR-1524](../tasks/AR-1524.md): Repair live-dispatch dependency graph | Unclaimed | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. |

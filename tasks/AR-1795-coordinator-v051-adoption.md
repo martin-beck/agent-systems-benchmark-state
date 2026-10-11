@@ -6,10 +6,10 @@
   "depends_on": [
     "AR-1756"
   ],
-  "id": "AR-1793",
+  "id": "AR-1795",
   "next_action": "Add ASB-owned targeted tests until the strict 95 percent coverage gate passes, then independently review the exact candidate.",
   "owner": "codex-ar1793-awc-v051",
-  "plan": "../plans/AR-1793-coordinator-v051-adoption.md",
+  "plan": "../plans/AR-1795-coordinator-v051-adoption.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",

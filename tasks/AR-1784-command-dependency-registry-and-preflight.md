@@ -9,8 +9,8 @@
   "id": "AR-1784",
   "next_action": "Repair remaining hosted workspace coverage failure at 89.99% on PR #575 with additional bounded dependency-preflight execution/presenter tests; rerun full exact-head checks, then signed local merge and exact-main verification.",
   "observed_branch": "feature/ar-1784-command-dependency-registry-and-preflight",
-  "observed_dirty": 2,
-  "observed_head": "9d729dd610d303b5ab5ba9815fff76bab1b917a7",
+  "observed_dirty": 1,
+  "observed_head": "e85e6872f055209fb54de3e4e5c3f62353db80f5",
   "owner": "coordinator",
   "plan": "../plans/AR-1784-command-dependency-registry-and-preflight.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Make every ASB command dependency declared, installable or explicitly host-only, and fail-fast before a missing-tool runtime failure.",
-  "task_revision": 230,
+  "task_revision": 231,
   "title": "Command dependency registry and preflight",
-  "updated_at": "2026-10-11T10:50:10+00:00",
+  "updated_at": "2026-10-11T10:51:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1784-command-dependency-registry-and-preflight"
 }
 ---

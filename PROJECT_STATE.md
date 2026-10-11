@@ -23,22 +23,25 @@ Generated from local Git and GitHub. Do not edit.
 | #564 | `docs/ar-1725-quickstart-platform-install@695f1335c4ed` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs: add two-agent OpenRouter and TUI walkthrough |
 | #569 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition@8d3d85f72d99` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: verified prebuilt tool acquisition |
 | #570 | `feature/ar-1784-command-dependency-registry@13cc2fb461fb` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add command dependency preflight registry |
-| #571 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-repair@62951d5629fa` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool acquisition repair |
-| #573 | `feature/ar-1784-command-dependency-registry-and-preflight@9d729dd610d3` | `main` | DIRTY | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add command dependency preflight registry |
+| #571 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-repair@37fcf2697dd8` | `main` | DIRTY | - | AR-1777: verified prebuilt tool acquisition repair |
+| #573 | `feature/ar-1784-command-dependency-registry-and-preflight@e85e6872f055` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add command dependency preflight registry |
+| #574 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-repair-v2@0a389a2f8aa3` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool acquisition (superseding repair) |
+| #575 | `feature/ar-1784-command-dependency-registry-clean@e5f378aa4a82` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): enforce command dependency preflight before execution |
+| #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@a666bfdab274` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38131187182 | `af75cd06a2ad` | push | Hosted portability and native qualification | completed:success |
-| 38131187179 | `af75cd06a2ad` | push | Credential-free benchmark path | in_progress:- |
-| 38131187176 | `af75cd06a2ad` | push | Huawei MIT source headers | completed:success |
-| 38131187102 | `af75cd06a2ad` | push | Cross-repository development broker qualification | in_progress:- |
-| 38131187098 | `af75cd06a2ad` | push | Repository quality | completed:failure |
-| 38131187088 | `af75cd06a2ad` | push | Rust verification | in_progress:- |
-| 38131187079 | `af75cd06a2ad` | push | Fault assurance | in_progress:- |
-| 38131187072 | `af75cd06a2ad` | push | Emulated aarch64 portability | in_progress:- |
-| 38131187056 | `af75cd06a2ad` | push | Formal assurance | in_progress:- |
-| 38131187031 | `af75cd06a2ad` | push | Portable protected-main provenance | completed:failure |
-| 38130866721 | `9d729dd610d3` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38130866679 | `9d729dd610d3` | pull_request | Portable protected-main provenance | completed:success |
+| 38133385647 | `a666bfdab274` | pull_request | Rust verification | in_progress:- |
+| 38133385640 | `a666bfdab274` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38133385609 | `a666bfdab274` | pull_request | Repository quality | in_progress:- |
+| 38133385574 | `a666bfdab274` | pull_request | Huawei MIT source headers | completed:success |
+| 38133385564 | `a666bfdab274` | pull_request | Fault assurance | in_progress:- |
+| 38133385553 | `a666bfdab274` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38133385551 | `a666bfdab274` | pull_request | Portable protected-main provenance | completed:success |
+| 38133385520 | `a666bfdab274` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38133385512 | `a666bfdab274` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38133385506 | `a666bfdab274` | pull_request | Formal assurance | in_progress:- |
+| 38133385493 | `a666bfdab274` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38133241213 | `286738832020` | pull_request | Credential-free benchmark path | completed:success |

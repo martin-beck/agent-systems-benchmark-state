@@ -1,4 +1,4 @@
-# AR-1793 plan: Coordinator v0.5.1 adoption
+# AR-1795 plan: Coordinator v0.5.1 adoption
 
 ## Scope
 
