@@ -52,7 +52,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-aider-deterministic-replay` | `fix/aider-deterministic-replay` | `87a22654913a` | 0 | behind 691, ahead 99 |
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 691, ahead 136 |
 | `agent-systems-benchmark-ar-1652-record-replay` | `repair/ar-1652-record-replay` | `7ce484612db0` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar-1686-qualification` | `DETACHED` | `7ce484612db0` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1686` | `qualification/ar-1686` | `0caa14c40d00` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar-1779-default-usable-tool-install-command` | `feature/ar-1779-default-usable-tool-install-command` | `daf2d3ee9750` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1782-verified-asb-workload-installation` | `feature/ar-1782-verified-asb-workload-installation` | `3be3029d7a1d` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1798-pinned-source-checkout-acquisition` | `feature/ar-1798-pinned-source-checkout-acquisition` | `55a789348f6f` | 0 | behind 37, ahead 0 |
