@@ -2,22 +2,22 @@
 {
   "branch": "policy/concurrent-integration-liveness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-11T23:00:39+00:00",
   "depends_on": [],
   "id": "AR-1796",
   "next_action": "Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1796-reconcile-candidate-luna56",
   "plan": "../plans/AR-1796-concurrent-integration-liveness.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T20:58:37+00:00",
+  "updated_at": "2026-10-11T21:00:39+00:00",
   "worktree_key": ""
 }
 ---
@@ -96,3 +96,5 @@ workers checkpoint, retry, and continue useful work during integration churn.
   portable-smoke passes after safe queue/lock repair, but recorded PR #1226/31a7e14 cannot be
   corroborated in current refs; preserve exact mismatch and leave full-exhaustive/release blocked
   until candidate reconciliation.
+
+- 2026-10-11T21:00:39+00:00: Claimed by ar1796-reconcile-candidate-luna56.
