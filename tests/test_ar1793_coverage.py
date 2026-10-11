@@ -11,6 +11,7 @@ import datetime as dt
 import json
 import os
 import struct
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -199,6 +200,24 @@ class RoleValidationCoverageTests(unittest.TestCase):
         self.assertTrue(role_assignment._semantic_errors(self.assignment, {}, self.now))
         with self.assertRaises(role_assignment.RoleAssignmentError):
             role_assignment.validate_assignment([], self.registry, now=self.now)
+
+    def test_role_validation_clis_fail_closed_for_invalid_inputs(self) -> None:
+        with (
+            patch.object(sys, "argv", ["role_registry.py", "registry.json"]),
+            patch.object(role_registry, "check_registry", side_effect=role_registry.RoleRegistryError("bad")),
+            self.assertRaises(SystemExit),
+        ):
+            role_registry.main()
+        with (
+            patch.object(sys, "argv", ["role_assignment.py", "assignment.json", "registry.json"]),
+            patch.object(
+                role_assignment,
+                "check_assignment",
+                side_effect=role_assignment.RoleAssignmentError("bad"),
+            ),
+            self.assertRaises(SystemExit),
+        ):
+            role_assignment.main()
 
 
 class WorktreeBindingCoverageTests(unittest.TestCase):
