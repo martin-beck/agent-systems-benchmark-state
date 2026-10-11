@@ -7,7 +7,7 @@
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "Obtain final exact-head review for 3be3029d, monitor all fresh PR #584 checks, merge only when every required check is green, then verify protected-main merge and release AR-1782.",
+  "next_action": "Monitor post-merge workflows at exact main merge 7ce484612db043831e4acb995839455f512197c0 until all terminal-success; then run product post-merge verification, reconcile evidence, and release AR-1782 done.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "3be3029d7a1d927b86b4ae938abfc939d8339009",
@@ -27,7 +27,7 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 238,
+  "task_revision": 239,
   "title": "Verified asb workload installation",
   "updated_at": "2026-10-11T20:38:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
@@ -656,3 +656,7 @@ remain mandatory.
   45cd3a6588bbaf54a4e107b912c9bf1e8ae98d1d086587bf3525d7a8c61359b4.
 
 - 2026-10-11T20:38:14+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:38:14+00:00: PR #584 merged through signed exact-tree two-parent merge 7ce4846 (base
+  24cb72d, reviewed head 3be3029d, tree 842ebc25). Ten post-merge workflows are in progress; do not
+  release yet.

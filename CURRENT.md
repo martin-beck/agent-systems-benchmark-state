@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1782](tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Obtain final exact-head review for 3be3029d, monitor all fresh PR #584 checks, merge only when every required check is green, then verify protected-main merge and release AR-1782. | ar1782-coordinator-repair |
+| P0 | [AR-1782](tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Monitor post-merge workflows at exact main merge 7ce484612db043831e4acb995839455f512197c0 until all terminal-success; then run product post-merge verification, reconcile evidence, and release AR-1782 done. | ar1782-coordinator-repair |
 
 ## Open
 
