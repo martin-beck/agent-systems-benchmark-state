@@ -28,21 +28,21 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
-| #583 | `feature/ar-1779-default-usable-tool-install-command@7c08cfb019ee` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): default supported tool installation |
+| #583 | `feature/ar-1779-default-usable-tool-install-command@daf2d3ee9750` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): default supported tool installation |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38174316080 | `daf2d3ee9750` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38174316078 | `daf2d3ee9750` | pull_request | Huawei MIT source headers | completed:success |
+| 38174316051 | `daf2d3ee9750` | pull_request | Rust verification | in_progress:- |
+| 38174316046 | `daf2d3ee9750` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38174316043 | `daf2d3ee9750` | pull_request | Portable protected-main provenance | completed:success |
+| 38174316028 | `daf2d3ee9750` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38174316000 | `daf2d3ee9750` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38174315983 | `daf2d3ee9750` | pull_request | Formal assurance | in_progress:- |
+| 38174315977 | `daf2d3ee9750` | pull_request | Repository quality | in_progress:- |
+| 38174315972 | `daf2d3ee9750` | pull_request | Fault assurance | in_progress:- |
+| 38174315962 | `daf2d3ee9750` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38173025072 | `7ce484612db0` | push | Emulated aarch64 portability | completed:success |
-| 38173025067 | `7ce484612db0` | push | Repository quality | completed:success |
-| 38173025063 | `7ce484612db0` | push | Rust verification | completed:success |
-| 38173025061 | `7ce484612db0` | push | Portable protected-main provenance | completed:success |
-| 38173025055 | `7ce484612db0` | push | Formal assurance | completed:success |
-| 38173025054 | `7ce484612db0` | push | Cross-repository development broker qualification | completed:success |
-| 38173025052 | `7ce484612db0` | push | Huawei MIT source headers | completed:success |
-| 38173025049 | `7ce484612db0` | push | Fault assurance | completed:success |
-| 38173025048 | `7ce484612db0` | push | Hosted portability and native qualification | completed:success |
-| 38173025046 | `7ce484612db0` | push | Credential-free benchmark path | completed:success |
-| 38172156365 | `3be3029d7a1d` | pull_request | Emulated aarch64 portability | completed:success |
-| 38172156363 | `3be3029d7a1d` | pull_request | Formal assurance | completed:success |
