@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T20:54:51+00:00",
+  "updated_at": "2026-10-11T20:54:56+00:00",
   "worktree_key": ""
 }
 ---
@@ -64,3 +64,6 @@ workers checkpoint, retry, and continue useful work during integration churn.
   martin. No model ran and no attestation was produced. Independent GitHub/product audit also found
   PR #1226 and commit 31a7e14 absent (gh PR view 1226 returned no PullRequest; product origin/main
   is 7ce4846), so the recorded release candidate identity is currently unverified.
+
+- 2026-10-11T20:54:56+00:00: Recorded command exit 0; command argv SHA-256
+  df8529b61480a02c135af6b4c0c186274acf5eccad460a9008d8ff84dd3863d9.
