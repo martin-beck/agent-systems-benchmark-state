@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-11T22:54:15+00:00",
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release.",
+  "next_action": "Repair canonical TLC queue ownership at /tmp/agent-workflow-coordinator-tlc, rerun canonical portable-smoke, then execute full-exhaustive only against a verified exact release candidate; PR #1226/31a7e14 is not present in the current GitHub/product refs and must be reconciled before release.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T20:54:33+00:00",
+  "updated_at": "2026-10-11T20:54:51+00:00",
   "worktree_key": ""
 }
 ---
@@ -57,3 +57,10 @@ workers checkpoint, retry, and continue useful work during integration churn.
 
 - 2026-10-11T20:54:33+00:00: Recorded command exit 1; command argv SHA-256
   78f6b4081cde943d99b7b7552614113dc373741770fd7bddb7e3f5e37e3e7fed.
+
+- 2026-10-11T20:54:51+00:00: Canonical portable-smoke preflight failed closed before TLC:
+  tlc_runner.py could not create /tmp/agent-workflow-coordinator-tlc/<pid>-<uuid>.job.json because
+  the directory is mode 0700 and owned by gha-workflow-coordinator, while this worker runs as
+  martin. No model ran and no attestation was produced. Independent GitHub/product audit also found
+  PR #1226 and commit 31a7e14 absent (gh PR view 1226 returned no PullRequest; product origin/main
+  is 7ce4846), so the recorded release candidate identity is currently unverified.
