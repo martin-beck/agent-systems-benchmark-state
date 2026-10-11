@@ -2,22 +2,22 @@
 {
   "branch": "policy/concurrent-integration-liveness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-11T22:58:22+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1796",
   "next_action": "Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "ar1796-release-attestation-luna56",
+  "owner": "",
   "plan": "../plans/AR-1796-concurrent-integration-liveness.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T20:58:25+00:00",
+  "updated_at": "2026-10-11T20:58:37+00:00",
   "worktree_key": ""
 }
 ---
@@ -91,3 +91,8 @@ workers checkpoint, retry, and continue useful work during integration churn.
   non-exhaustive; it cannot authorize release. State vendor identity is v0.5.1 commit
   7b19c0ffc8b37d0071d480cd666baef3f3672e35, while product origin/main remains 7ce4846 and GitHub has
   no PR #1226, so the claimed release candidate still cannot be verified.
+
+- 2026-10-11T20:58:37+00:00: Release-only worker completed infrastructure preflight. Canonical
+  portable-smoke passes after safe queue/lock repair, but recorded PR #1226/31a7e14 cannot be
+  corroborated in current refs; preserve exact mismatch and leave full-exhaustive/release blocked
+  until candidate reconciliation.
