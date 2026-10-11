@@ -2217,7 +2217,7 @@ flowchart LR
         AR_1683["AR-1683 - Planned"]:::status_planned
         AR_1684["AR-1684 - Planned"]:::status_planned
         AR_1685["AR-1685 - Done"]:::status_done
-        AR_1686["AR-1686 - In progress"]:::status_in_progress
+        AR_1686["AR-1686 - Done"]:::status_done
         AR_1687["AR-1687 - Done"]:::status_done
         AR_1688["AR-1688 - Done"]:::status_done
         AR_1689["AR-1689 - Planned"]:::status_planned

@@ -170,11 +170,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | ar1686-qualification-retry-luna56 | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Authorized publisher may merge PR #586 at exact head f37d3a3ef839d2d790642948da0abc96f456e6d1; then verify exact-main post-merge and reconcile acceptance. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair. |
 
 ### Blocked (84)
@@ -364,7 +363,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (587)
+### Done (588)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -575,3 +574,4 @@
 | P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | Unclaimed | Reduced profile passes self-contained QEMU: transient admission, bounded models, sanitized non-claiming attestation, and clean poweroff. | Release after exact-head review; retain AR-1307/1308 formal qualification as separate blocked gates. |
 | P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Qualify the central orchestration path with deterministic local/mock and strict-replay authority; deployment-owned live authority is optional future hardening, not a development prerequisite. | Development path is unblocked: promote and claim this AR, qualify the existing central orchestrator with deterministic local/mock and strict-replay authority, and run exact-head gates. A deployment-owned authenticated source is optional future production hardening and must not block development qualification. |
 | P0 | [AR-1524](../tasks/AR-1524.md): Repair live-dispatch dependency graph | Unclaimed | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. |
+| P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | Unclaimed | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | No development action remains. Preserve the exact-main first-customer local/mock and strict-replay receipt; live-provider deployment remains optional future hardening. |
