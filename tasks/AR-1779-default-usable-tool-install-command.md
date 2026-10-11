@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Default usable tool-install command",
-  "updated_at": "2026-10-11T21:00:49+00:00",
+  "updated_at": "2026-10-11T21:00:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1779-default-usable-tool-install-command"
 }
 ---
@@ -182,3 +182,6 @@ the adapter smoke check failed.
   exact head daf2d3ee and source-only fallback concern for a replacement worker.
 
 - 2026-10-11T21:00:49+00:00: Claimed by ar1779-review-merge-luna56.
+
+- 2026-10-11T21:00:51+00:00: Recorded command exit 0; command argv SHA-256
+  17a35505ebdb797ffbaba7bbdde53d009e26b289b62293d5e1e4d0aabfa8ca1d.
