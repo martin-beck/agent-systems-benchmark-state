@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Fresh independent review required for signed follow-up f37d3a3e (PR #586) with all required checks green; only after approval merge, then verify exact-main post-merge and reconcile acceptance. | ar1686-qualification-retry-luna56 |
+| P0 | [AR-1686](tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Authorized publisher may merge PR #586 at exact head f37d3a3ef839d2d790642948da0abc96f456e6d1; then verify exact-main post-merge and reconcile acceptance. | ar1686-qualification-retry-luna56 |
 | P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair. | ar1796-reconcile-candidate-luna56 |
 
 ## Blocked

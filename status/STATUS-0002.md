@@ -4680,7 +4680,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Fresh independent review required for signed follow-up f37d3a3e (PR #586) with all required checks green; only after approval merge, then verify exact-main post-merge and reconcile acceptance. |
+| Next action | Authorized publisher may merge PR #586 at exact head f37d3a3ef839d2d790642948da0abc96f456e6d1; then verify exact-main post-merge and reconcile acceptance. |
 
 ### AR-1687 — Development/mock provider-bound comparison qualification
 
@@ -4695,3 +4695,4 @@
 | Children | None |
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
 | Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
+
