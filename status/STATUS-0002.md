@@ -4680,7 +4680,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Fresh independent review of signed exact head 18c9972; AR-specific scheduler-load fixture is repaired and focused/full asb-cli gates pass. Full workspace rerun still has an unrelated asb-metrics resource-sensitive fixture failure; do not publish until independent review and full required gate are resolved. |
+| Next action | Fresh independent review of signed exact head 3b83d541; metrics spawn contention repair passes focused and two full locked workspace runs. Publish PR only after review, then wait for exact-head CI. |
 
 ### AR-1687 — Development/mock provider-bound comparison qualification
 

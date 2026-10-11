@@ -175,7 +175,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | ar1686-qualification-retry-luna56 | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Fresh independent review of signed exact head 18c9972; AR-specific scheduler-load fixture is repaired and focused/full asb-cli gates pass. Full workspace rerun still has an unrelated asb-metrics resource-sensitive fixture failure; do not publish until independent review and full required gate are resolved. |
+| P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | ar1686-qualification-retry-luna56 | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Fresh independent review of signed exact head 3b83d541; metrics spawn contention repair passes focused and two full locked workspace runs. Publish PR only after review, then wait for exact-head CI. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair. |
 
 ### Blocked (84)
