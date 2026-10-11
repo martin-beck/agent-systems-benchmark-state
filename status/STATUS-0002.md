@@ -4274,7 +4274,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. |
-| Next action | Add an upstream-supported exact-revision mutation that binds branch and worktree_key on an active legacy task, vendor it into ASB state, then bind AR-1652 to repair/ar-1652-record-replay and agent-systems-benchmark-ar-1652-record-replay before any wrapped product command. |
+| Next action | Create or refresh the bound product worktree agent-systems-benchmark-ar-1652-record-replay on branch repair/ar-1652-record-replay from exact protected ASB main, then implement and independently review selected/all recording plus strict offline replay; use handoffctl run for every product/Git/build/test/review mutation. |
 
 ### AR-1653 — Current-main development-channel consumption
 
