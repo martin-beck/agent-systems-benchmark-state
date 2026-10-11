@@ -35,7 +35,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 38179669987 | `bb4d90aaca42` | pull_request | Fault assurance | in_progress:- |
-| 38179669957 | `bb4d90aaca42` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38179669957 | `bb4d90aaca42` | pull_request | Hosted portability and native qualification | completed:success |
 | 38179669934 | `bb4d90aaca42` | pull_request | Portable protected-main provenance | completed:success |
 | 38179669931 | `bb4d90aaca42` | pull_request | Formal assurance | in_progress:- |
 | 38179669923 | `bb4d90aaca42` | pull_request | Cross-repository development broker qualification | in_progress:- |
