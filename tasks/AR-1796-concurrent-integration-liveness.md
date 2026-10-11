@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-11T22:58:22+00:00",
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Repair canonical TLC queue ownership at /tmp/agent-workflow-coordinator-tlc, rerun canonical portable-smoke, then execute full-exhaustive only against a verified exact release candidate; PR #1226/31a7e14 is not present in the current GitHub/product refs and must be reconciled before release.",
+  "next_action": "Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T20:58:22+00:00",
+  "updated_at": "2026-10-11T20:58:25+00:00",
   "worktree_key": ""
 }
 ---
@@ -84,3 +84,10 @@ workers checkpoint, retry, and continue useful work during integration churn.
   5a8d343f201ec474b0785dcde6d4720befb0918db8f07d9f7803fcb5473bcb4a.
 
 - 2026-10-11T20:58:22+00:00: Heartbeat by ar1796-release-attestation-luna56.
+
+- 2026-10-11T20:58:25+00:00: Canonical portable-smoke rerun passed on 2026-10-11 after recreating
+  the queue and lock for martin: TLC Binding completed with no error, runner exit 0, and a canonical
+  smoke attestation was emitted. This only validates runner infrastructure and is explicitly
+  non-exhaustive; it cannot authorize release. State vendor identity is v0.5.1 commit
+  7b19c0ffc8b37d0071d480cd666baef3f3672e35, while product origin/main remains 7ce4846 and GitHub has
+  no PR #1226, so the claimed release candidate still cannot be verified.

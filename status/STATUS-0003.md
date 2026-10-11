@@ -1442,7 +1442,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep autonomous development live during concurrent protected-main integration. |
-| Next action | Repair canonical TLC queue ownership at /tmp/agent-workflow-coordinator-tlc, rerun canonical portable-smoke, then execute full-exhaustive only against a verified exact release candidate; PR #1226/31a7e14 is not present in the current GitHub/product refs and must be reconciled before release. |
+| Next action | Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair. |
 
 ### AR-1797 — Wire cli2key sidecar into live benchmark execution
 
