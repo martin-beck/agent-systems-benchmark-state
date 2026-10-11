@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T20:54:15+00:00",
+  "updated_at": "2026-10-11T20:54:33+00:00",
   "worktree_key": ""
 }
 ---
@@ -54,3 +54,6 @@ workers checkpoint, retry, and continue useful work during integration churn.
   recovery identity; preserve merged PR #1226 and explicit full-attestation next action.
 
 - 2026-10-11T20:54:15+00:00: Claimed by ar1796-release-attestation-luna56.
+
+- 2026-10-11T20:54:33+00:00: Recorded command exit 1; command argv SHA-256
+  78f6b4081cde943d99b7b7552614113dc373741770fd7bddb7e3f5e37e3e7fed.
