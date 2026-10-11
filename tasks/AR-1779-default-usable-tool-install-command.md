@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1779-default-usable-tool-install-command",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-11T22:52:07+00:00",
   "depends_on": [
     "AR-1777",
     "AR-1778",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1779-default-usable-tool-install-command",
   "observed_dirty": 0,
   "observed_head": "7c08cfb019eebfbfc9032a25a94bf69cde9c8e29",
-  "owner": "",
+  "owner": "ar1779-review-merge-luna56",
   "plan": "../plans/AR-1779-default-usable-tool-install-command.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1779.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Default usable tool-install command",
-  "updated_at": "2026-10-11T19:29:04+00:00",
+  "updated_at": "2026-10-11T20:52:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1779-default-usable-tool-install-command"
 }
 ---
@@ -130,3 +130,5 @@ the adapter smoke check failed.
 
 - 2026-10-11T19:29:04+00:00: Recovered expired claim formerly owned by luna56-ar1779. Coordinator
   recovery: lease expired; preserve PR #583 head and recorded next action.
+
+- 2026-10-11T20:52:07+00:00: Claimed by ar1779-review-merge-luna56.

@@ -1196,11 +1196,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1779-review-merge-luna56 |
 | Parent | None |
 | Children | None |
 | Summary | Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying. |
@@ -2309,7 +2309,7 @@ flowchart LR
         AR_1776["AR-1776 - Done"]:::status_done
         AR_1777["AR-1777 - Done"]:::status_done
         AR_1778["AR-1778 - Done"]:::status_done
-        AR_1779["AR-1779 - Open"]:::status_open
+        AR_1779["AR-1779 - In progress"]:::status_in_progress
         AR_1780["AR-1780 - Planned"]:::status_planned
         AR_1781["AR-1781 - Done"]:::status_done
         AR_1782["AR-1782 - In progress"]:::status_in_progress
