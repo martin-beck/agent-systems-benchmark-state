@@ -4680,7 +4680,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Publish signed exact head bb4d90aa, verify PR checks, merge only after required CI green, then perform exact-main post-merge acceptance. |
+| Next action | BLOCKED: PR #586 exact head bb4d90aa fails required Repository Quality and Huawei/SPDX header checks on tests/workloads/test_content_addressed_qualification.py; repair source header in a reviewed follow-up head, rerun exact-head CI, and do not merge this failed head. |
 
 ### AR-1687 — Development/mock provider-bound comparison qualification
 
@@ -4694,5 +4694,3 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
-| Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
-
