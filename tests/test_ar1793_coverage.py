@@ -404,9 +404,10 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
 
     def test_lifecycle_dispatch_reports_an_admitted_noop_replay(self) -> None:
         args = argparse.Namespace(cmd="bind-worktree")
-        with patch.object(handoffctl, "mutate", return_value="already bound"), patch(
-            "builtins.print"
-        ) as printed:
+        with (
+            patch.object(handoffctl, "mutate", return_value="already bound"),
+            patch("builtins.print") as printed,
+        ):
             handoffctl.dispatch_lifecycle_mutation(args)
         printed.assert_called_once_with("already bound")
 
