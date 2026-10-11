@@ -174,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 passed canonical portable-smoke and full-exhaustive recorded outcomes; obtain independent exact-head review and complete normal release/provenance gates before accept/release. |
+| P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Fresh exact-candidate full-exhaustive remains incomplete: generated exhaustive slice exits 1 under 5 GiB TLC heap after tens of millions of states. Rerun on a host with sufficient memory or an approved exact-tier execution; retain portable-smoke only as non-exhaustive. Do not accept or release. |
 
 ### Blocked (84)
 

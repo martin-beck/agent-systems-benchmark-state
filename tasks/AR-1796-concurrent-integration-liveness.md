@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T00:53:02+00:00",
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 passed canonical portable-smoke and full-exhaustive recorded outcomes; obtain independent exact-head review and complete normal release/provenance gates before accept/release.",
+  "next_action": "Fresh exact-candidate full-exhaustive remains incomplete: generated exhaustive slice exits 1 under 5 GiB TLC heap after tens of millions of states. Rerun on a host with sufficient memory or an approved exact-tier execution; retain portable-smoke only as non-exhaustive. Do not accept or release.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T23:32:28+00:00",
+  "updated_at": "2026-10-11T23:32:43+00:00",
   "worktree_key": ""
 }
 ---
@@ -148,3 +148,9 @@ workers checkpoint, retry, and continue useful work during integration churn.
 
 - 2026-10-11T23:32:28+00:00: Recorded command exit 1; command argv SHA-256
   12888e5ce2643d5095bdbaf00ae65a95d3675ab1da1d1b8c66c428847c7d91bc.
+
+- 2026-10-11T23:32:43+00:00: Fresh full-exhaustive retry was candidate-bound to
+  efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0. Binding, locks, run, storage, and observation models
+  passed; generated slice reached at least 65 million states but terminated exit 1 without
+  attestation (initial 2 GiB retry explicitly failed Java OOM during liveness). No full-exhaustive
+  success claim or release action made.
