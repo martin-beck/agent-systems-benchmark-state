@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1782-verified-asb-workload-installation",
   "checkpoint_commit": "c5154b12fc85bf356ce61d746c56b83d856ff502",
-  "claim_expires": "2026-10-11T21:25:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1781"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "3be3029d7a1d927b86b4ae938abfc939d8339009",
-  "owner": "ar1782-coordinator-repair",
+  "owner": "",
   "plan": "../plans/AR-1782-verified-asb-workload-installation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1782.json",
   "spec_revision": 2,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 252,
+  "task_revision": 253,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T20:57:29+00:00",
+  "updated_at": "2026-10-11T20:57:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -698,3 +698,8 @@ remain mandatory.
 
 - 2026-10-11T20:57:29+00:00: Independent post-merge acceptance: exact merge, full workspace test,
   all post-merge workflows, signature/DCO, clean worktree, and live doctor verified.
+
+- 2026-10-11T20:57:31+00:00: PR #584 merged at 7ce484612db043831e4acb995839455f512197c0 with exact
+  reviewed head 3be3029d7a1d927b86b4ae938abfc939d8339009; exact merge signature/DCO, full locked
+  workspace test, 10/10 post-merge workflows, clean worktree, and doctor verified; acceptance
+  receipt recorded.
