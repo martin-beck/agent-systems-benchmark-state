@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1782-verified-asb-workload-installation",
   "checkpoint_commit": "c5154b12fc85bf356ce61d746c56b83d856ff502",
-  "claim_expires": "",
+  "claim_expires": "2026-10-11T21:30:00+00:00",
   "depends_on": [
     "AR-1781"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "2ee4626e7784d4f7deb8d1110a8c58257b6dac2e",
-  "owner": "",
+  "owner": "ar1782-coordinator-repair",
   "plan": "../plans/AR-1782-verified-asb-workload-installation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1782.json",
   "spec_revision": 2,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T19:29:14+00:00",
+  "updated_at": "2026-10-11T19:30:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -403,3 +403,5 @@ remain mandatory.
 - 2026-10-11T19:29:04+00:00: Recovered expired claim formerly owned by
   ar1782_workload_install_luna56. Coordinator recovery: lease expired; preserve recorded PR evidence
   and await fresh exact-head validation.
+
+- 2026-10-11T19:30:00+00:00: Claimed by ar1782-coordinator-repair.

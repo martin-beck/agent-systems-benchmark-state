@@ -1238,11 +1238,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1782-coordinator-repair |
 | Parent | None |
 | Children | None |
 | Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
@@ -2312,7 +2312,7 @@ flowchart LR
         AR_1779["AR-1779 - Open"]:::status_open
         AR_1780["AR-1780 - Planned"]:::status_planned
         AR_1781["AR-1781 - Done"]:::status_done
-        AR_1782["AR-1782 - Open"]:::status_open
+        AR_1782["AR-1782 - In progress"]:::status_in_progress
         AR_1783["AR-1783 - Planned"]:::status_planned
         AR_1784["AR-1784 - Done"]:::status_done
         AR_1785["AR-1785 - Done"]:::status_done
