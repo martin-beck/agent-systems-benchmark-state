@@ -97,6 +97,78 @@ class RoleValidationCoverageTests(unittest.TestCase):
                 "implementer", validate_registry(json.loads(path.read_text()))["default_role"]
             )
 
+    def test_registry_schema_and_nested_role_guards_reject_malformed_values(self) -> None:
+        cases: tuple[tuple[str, Any], ...] = (
+            ("not-an-object", []),
+            ("roles-empty", {**self.registry, "roles": []}),
+            ("roles-nonobjects", {**self.registry, "roles": ["not-a-role"]}),
+            ("boolean-schema", {**self.registry, "schema_version": True}),
+        )
+        for label, registry in cases:
+            with self.subTest(label=label):
+                self.assertTrue(registry_errors(registry))
+        nested_cases: tuple[tuple[str, Any], ...] = (
+            ("role-schema", {"schema_version": 2}),
+            ("role-title", {"title": ""}),
+            ("role-capabilities-empty", {"capabilities": []}),
+            ("role-capabilities-nonobjects", {"capabilities": ["bad"]}),
+            ("worktree-mode", {"worktree_policy": {"mode": "bad", "path_patterns": ["src/**"]}}),
+            (
+                "capability-description",
+                {
+                    "capabilities": [
+                        {
+                            **self.registry["roles"][0]["capabilities"][0],
+                            "description": "",
+                        }
+                    ]
+                },
+            ),
+        )
+        for label, changes in nested_cases:
+            with self.subTest(label=label):
+                registry = copy.deepcopy(self.registry)
+                registry["roles"][0].update(changes)
+                self.assertTrue(registry_errors(registry))
+
+    def test_assignment_schema_evidence_and_semantic_guards_reject_invalid_data(self) -> None:
+        cases: tuple[tuple[str, Any], ...] = (
+            ("not-an-object", []),
+            ("boolean-schema", {**self.assignment, "schema_version": True}),
+            ("roles-empty", {**self.assignment, "roles": []}),
+            ("role-fields", {**self.assignment, "roles": [{}]}),
+            (
+                "role-id",
+                {
+                    **self.assignment,
+                    "roles": [{"role_id": "BAD", "expires_at": "2999-01-01T00:00:00Z"}],
+                },
+            ),
+            (
+                "evidence-empty",
+                {**self.assignment, "authorization_evidence": []},
+            ),
+            (
+                "evidence-fields",
+                {**self.assignment, "authorization_evidence": [{}]},
+            ),
+            (
+                "evidence-kind-ref",
+                {
+                    **self.assignment,
+                    "authorization_evidence": [
+                        {"kind": "bad", "ref": "bad ref", "digest": "sha256:" + "0" * 64}
+                    ],
+                },
+            ),
+        )
+        for label, assignment in cases:
+            with self.subTest(label=label):
+                self.assertTrue(assignment_errors(assignment, self.registry, now=self.now))
+        expired = copy.deepcopy(self.assignment)
+        expired["roles"][0]["expires_at"] = "2000-01-01T00:00:00Z"
+        self.assertTrue(assignment_errors(expired, self.registry, now=self.now))
+
 
 class WorktreeBindingCoverageTests(unittest.TestCase):
     def setUp(self) -> None:
