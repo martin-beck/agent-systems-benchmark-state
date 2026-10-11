@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1652](tasks/AR-1652.md): Selected-workload recording and offline replay command | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Create or refresh the bound product worktree agent-systems-benchmark-ar-1652-record-replay on branch repair/ar-1652-record-replay from exact protected ASB main, then implement and independently review selected/all recording plus strict offline replay; use handoffctl run for every product/Git/build/test/review mutation. | ar1652-record-replay-luna56 |
+| P0 | [AR-1652](tasks/AR-1652.md): Selected-workload recording and offline replay command | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Independent technical review of exact protected main evidence; then accept AR-1652 with selected/all recording, strict offline replay, TUI paired evidence, and exact-head post-merge checks. | ar1652-record-replay-luna56 |
 | P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair. | ar1796-reconcile-candidate-luna56 |
 
 ## Open

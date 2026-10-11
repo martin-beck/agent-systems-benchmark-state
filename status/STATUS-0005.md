@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1620](../tasks/AR-1620.md) | [AR-1614](../tasks/AR-1614.md), [AR-1619](../tasks/AR-1619.md) | [AR-1615](../tasks/AR-1615.md), [AR-1621](../tasks/AR-1621.md), [AR-1623](../tasks/AR-1623.md), [AR-1646](../tasks/AR-1646.md) |
 | [AR-1621](../tasks/AR-1621.md) | [AR-1619](../tasks/AR-1619.md), [AR-1620](../tasks/AR-1620.md) | [AR-1615](../tasks/AR-1615.md), [AR-1622](../tasks/AR-1622.md), [AR-1642](../tasks/AR-1642.md) |
 | [AR-1622](../tasks/AR-1622.md) | [AR-1613](../tasks/AR-1613.md), [AR-1615](../tasks/AR-1615.md), [AR-1621](../tasks/AR-1621.md), [AR-1641](../tasks/AR-1641.md), [AR-1642](../tasks/AR-1642.md) | [AR-1623](../tasks/AR-1623.md), [AR-1632](../tasks/AR-1632.md) |
 | [AR-1623](../tasks/AR-1623.md) | [AR-1614](../tasks/AR-1614.md), [AR-1620](../tasks/AR-1620.md), [AR-1622](../tasks/AR-1622.md), [AR-1632](../tasks/AR-1632.md) | [AR-1624](../tasks/AR-1624.md), [AR-1653](../tasks/AR-1653.md), [AR-1655](../tasks/AR-1655.md) |
@@ -175,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1652](../tasks/AR-1652.md): Selected-workload recording and offline replay command | ar1652-record-replay-luna56 | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Create or refresh the bound product worktree agent-systems-benchmark-ar-1652-record-replay on branch repair/ar-1652-record-replay from exact protected ASB main, then implement and independently review selected/all recording plus strict offline replay; use handoffctl run for every product/Git/build/test/review mutation. |
+| P0 | [AR-1652](../tasks/AR-1652.md): Selected-workload recording and offline replay command | ar1652-record-replay-luna56 | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. | Independent technical review of exact protected main evidence; then accept AR-1652 with selected/all recording, strict offline replay, TUI paired evidence, and exact-head post-merge checks. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Do not release yet: reconcile the recorded PR #1226/31a7e14 against current GitHub/product refs (currently absent), and only after a valid exact release candidate exists run canonical full-exhaustive; canonical portable-smoke now passes after queue/lock ownership repair. |
 
 ### Open (1)

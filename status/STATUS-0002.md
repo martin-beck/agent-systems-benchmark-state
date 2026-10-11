@@ -4274,7 +4274,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. |
-| Next action | Create or refresh the bound product worktree agent-systems-benchmark-ar-1652-record-replay on branch repair/ar-1652-record-replay from exact protected ASB main, then implement and independently review selected/all recording plus strict offline replay; use handoffctl run for every product/Git/build/test/review mutation. |
+| Next action | Independent technical review of exact protected main evidence; then accept AR-1652 with selected/all recording, strict offline replay, TUI paired evidence, and exact-head post-merge checks. |
 
 ### AR-1653 — Current-main development-channel consumption
 
@@ -4694,3 +4694,5 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
+| Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
+
