@@ -39,7 +39,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38174316046 | `daf2d3ee9750` | pull_request | Cross-repository development broker qualification | completed:success |
 | 38174316043 | `daf2d3ee9750` | pull_request | Portable protected-main provenance | completed:success |
 | 38174316028 | `daf2d3ee9750` | pull_request | Credential-free benchmark path | completed:success |
-| 38174316000 | `daf2d3ee9750` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38174316000 | `daf2d3ee9750` | pull_request | Emulated aarch64 portability | completed:success |
 | 38174315983 | `daf2d3ee9750` | pull_request | Formal assurance | completed:success |
 | 38174315977 | `daf2d3ee9750` | pull_request | Repository quality | in_progress:- |
 | 38174315972 | `daf2d3ee9750` | pull_request | Fault assurance | completed:success |
