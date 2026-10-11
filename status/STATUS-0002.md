@@ -4680,7 +4680,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Refresh the qualification receipt at exact ASB head 3b83d541 (paired_heads.asb and source_revision), then rerun receipt/no-secret validation and obtain fresh independent review before PR publication. |
+| Next action | Obtain fresh independent review of the regenerated receipt and exact-head gate evidence before PR publication; do not publish or merge yet. |
 
 ### AR-1687 — Development/mock provider-bound comparison qualification
 
@@ -4694,3 +4694,5 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
+| Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
+
