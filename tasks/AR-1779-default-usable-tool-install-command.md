@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1779-default-usable-tool-install-command",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-11T22:52:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1777",
     "AR-1778",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1779-default-usable-tool-install-command",
   "observed_dirty": 0,
   "observed_head": "daf2d3ee9750b24adb2a33d113a7096acd961e93",
-  "owner": "ar1779-review-merge-luna56",
+  "owner": "",
   "plan": "../plans/AR-1779-default-usable-tool-install-command.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1779.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Default usable tool-install command",
-  "updated_at": "2026-10-11T20:58:49+00:00",
+  "updated_at": "2026-10-11T20:59:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1779-default-usable-tool-install-command"
 }
 ---
@@ -177,3 +177,6 @@ the adapter smoke check failed.
 
 - 2026-10-11T20:58:49+00:00: Recorded command exit 0; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-10-11T20:59:59+00:00: Review worker stopped after no active AR process; preserve PR #583
+  exact head daf2d3ee and source-only fallback concern for a replacement worker.
