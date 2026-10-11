@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1785-openrouter-config",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-10T23:40:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1711",
     "AR-1733",
@@ -14,17 +14,17 @@
   "observed_branch": "codex/ar-1785-openrouter-config",
   "observed_dirty": 0,
   "observed_head": "d46180c297699f96d2c4e5f2d4b2cc6b6aabed12",
-  "owner": "codex-clean-state-coordinator",
+  "owner": "",
   "plan": "../plans/AR-1785-openrouter-config-identity-repair.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1785.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align persisted OpenRouter configuration, provider-plan selection identity, and benchmark-live selected/all execution.",
-  "task_revision": 166,
+  "task_revision": 167,
   "title": "Repair OpenRouter configuration identity for live benchmark qualification",
-  "updated_at": "2026-10-10T23:10:10+00:00",
+  "updated_at": "2026-10-11T19:27:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar1785-config"
 }
 ---
@@ -511,3 +511,7 @@ merging, and post-merge verification remain required.
 
 - 2026-10-10T23:10:10+00:00: Recorded command exit 0; command argv SHA-256
   7c932abe78352cc76ed3bd21d50df0dd0d9e52dcf98321925906a3c2f07317cb.
+
+- 2026-10-11T19:27:08+00:00: Recovered expired claim formerly owned by
+  codex-clean-state-coordinator. Coordinator recovery: lease expired; preserve observed head
+  d46180c297699f96d2c4e5f2d4b2cc6b6aabed12 and next action.
