@@ -402,6 +402,14 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
         self.assertEqual(["true"], run.command)
         command.assert_called_once_with(run)
 
+    def test_lifecycle_dispatch_reports_an_admitted_noop_replay(self) -> None:
+        args = argparse.Namespace(cmd="bind-worktree")
+        with patch.object(handoffctl, "mutate", return_value="already bound"), patch(
+            "builtins.print"
+        ) as printed:
+            handoffctl.dispatch_lifecycle_mutation(args)
+        printed.assert_called_once_with("already bound")
+
 
 class FastReceiptTransportCoverageTests(unittest.TestCase):
     def _peer(self) -> MagicMock:
@@ -461,6 +469,9 @@ class FastReceiptTransportCoverageTests(unittest.TestCase):
                 1,
                 fast_receipt_socket.try_socket_fast(["fast", "observe", "--max-age-seconds", "30"]),
             )
+
+    def test_unrecognized_fast_shape_uses_the_direct_cli_route(self) -> None:
+        self.assertIsNone(fast_receipt_socket.try_socket_fast(["fast", "unknown"]))
 
     def test_strict_fast_parser_exercises_rejected_option_shapes(self) -> None:
         valid_promote = [
