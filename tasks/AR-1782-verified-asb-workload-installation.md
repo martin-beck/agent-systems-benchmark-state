@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 239,
+  "task_revision": 240,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T20:38:14+00:00",
+  "updated_at": "2026-10-11T20:50:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -660,3 +660,6 @@ remain mandatory.
 - 2026-10-11T20:38:14+00:00: PR #584 merged through signed exact-tree two-parent merge 7ce4846 (base
   24cb72d, reviewed head 3be3029d, tree 842ebc25). Ten post-merge workflows are in progress; do not
   release yet.
+
+- 2026-10-11T20:50:26+00:00: Recorded command exit 0; command argv SHA-256
+  c3e3e42ed6378cde65b6e9bc375fc62ca59e70e785d1f0da4c57b4a3a331ca85.
