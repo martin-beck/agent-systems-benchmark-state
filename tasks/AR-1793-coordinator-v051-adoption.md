@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-11T10:47:53+00:00",
+  "claim_expires": "2026-10-11T11:07:34+00:00",
   "depends_on": [
     "AR-1756"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the released Coordinator v0.5.1 snapshot in ASB state and restore all downstream quality gates without modifying vendored bytes.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Coordinator v0.5.1 adoption",
-  "updated_at": "2026-10-11T08:47:53+00:00",
+  "updated_at": "2026-10-11T09:07:34+00:00",
   "worktree_key": ""
 }
 ---
@@ -34,3 +34,5 @@ coverage thresholds, privacy policy, and generated-state integrity must not be
 weakened.
 
 - 2026-10-11T08:47:53+00:00: Claimed by codex-ar1793-awc-v051.
+
+- 2026-10-11T09:07:34+00:00: Heartbeat by codex-ar1793-awc-v051.
