@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T19:31:13+00:00",
+  "updated_at": "2026-10-11T19:31:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -415,3 +415,6 @@ remain mandatory.
 - 2026-10-11T19:31:13+00:00: Fresh CI at 2ee4626e failed only because
   docs/examples/asb-cli-workflow-v1.provenance.json retains the pre-repair lib.rs digest; this is a
   version-coupled fixture repair, not a gate bypass.
+
+- 2026-10-11T19:31:32+00:00: Recorded command exit 0; command argv SHA-256
+  79330f4930c0b2862f387bc03e8f654452ee893b5e4e4b0b5c975164a14b11f5.
