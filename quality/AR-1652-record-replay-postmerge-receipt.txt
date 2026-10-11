@@ -1,0 +1,9 @@
+AR-1652 selected-workload recording and offline replay receipt
+
+Product commit: 7ce484612db043831e4acb995839455f512197c0
+Product tree: clean, exact origin/main
+Implementation: current protected main contains selected/all record-campaign, redacted/provider-bound sealing, atomic complete-coverage publication, and strict offline replay with network denial.
+Focused tests: asb-replay 28/28; asb-cli record_campaign 2/2; TUI qualified_cassette_fixture_reopens_with_catalog_and_offline_campaign 1/1; network-denied record_and_replay_commands_are_explicit_private_and_network_denied 1/1.
+Full asb-cli library: 426/426.
+Hosted post-merge CI for exact commit: 10/10 successful, including emulated AArch64, formal, provenance, credential-free, and repository quality workflows.
+Development boundary: no credentials, provider contact, signatures, or production trust chain required.
