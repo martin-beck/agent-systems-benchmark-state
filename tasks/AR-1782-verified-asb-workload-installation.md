@@ -9,7 +9,7 @@
   "id": "AR-1782",
   "next_action": "Repair hosted workspace coverage shortfall (89.96% vs unchanged 90% floor) with meaningful workload lifecycle tests and headroom; rerun clean cargo llvm-cov, then re-review and exact-head CI.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
-  "observed_dirty": 54,
+  "observed_dirty": 55,
   "observed_head": "8398dcbf32aa16014d16dd87a537199d8db27af6",
   "owner": "ar1782-coordinator-repair",
   "plan": "../plans/AR-1782-verified-asb-workload-installation.md",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T19:43:07+00:00",
+  "updated_at": "2026-10-11T19:43:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
