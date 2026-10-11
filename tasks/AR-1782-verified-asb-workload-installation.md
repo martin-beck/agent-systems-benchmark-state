@@ -7,7 +7,7 @@
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "Await exact-head PR #584 hosted CI at 04ec40fa. All local gates and independent review pass; merge only after every required check is green, then verify the protected-main merge and release AR-1782.",
+  "next_action": "Repair hosted workspace coverage at 89.97% with substantial meaningful verified-workload lifecycle/safety tests; target >=90.2 without exclusions or floor changes, then rerun exact-head CI and review.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "04ec40fadf7858e9fb676fad85e58e891b975e47",
@@ -27,7 +27,7 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 190,
+  "task_revision": 191,
   "title": "Verified asb workload installation",
   "updated_at": "2026-10-11T19:56:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
@@ -539,3 +539,7 @@ remain mandatory.
   unchanged 90% floor; all tests and coverage gate passed. No source changes in verification run.
 
 - 2026-10-11T19:56:15+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:56:15+00:00: Hosted policy gate reproducibly reports 89.97% (101063/101195), so
+  merge remains blocked. Assign second headroom repair; all other observed checks have no product
+  failure.

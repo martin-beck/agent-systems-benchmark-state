@@ -1246,7 +1246,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
-| Next action | Await exact-head PR #584 hosted CI at 04ec40fa. All local gates and independent review pass; merge only after every required check is green, then verify the protected-main merge and release AR-1782. |
+| Next action | Repair hosted workspace coverage at 89.97&#37; with substantial meaningful verified-workload lifecycle/safety tests; target &gt;=90.2 without exclusions or floor changes, then rerun exact-head CI and review. |
 
 ### AR-1783 — Installed workload selection and execution
 
