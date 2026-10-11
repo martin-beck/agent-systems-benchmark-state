@@ -1,0 +1,10 @@
+AR-1782 post-merge receipt
+merge=7ce484612db043831e4acb995839455f512197c0
+reviewed_head=3be3029d7a1d927b86b4ae938abfc939d8339009
+tree=842ebc256484277c5b09f4817579f3d85c61b810
+workspace_tests=cargo test --locked --workspace: exit 0
+post_merge_workflows=10/10 terminal-success
+worktree=clean
+merge_signature=valid
+dco=present
+doctor=clean
