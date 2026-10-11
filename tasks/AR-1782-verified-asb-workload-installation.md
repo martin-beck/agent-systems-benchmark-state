@@ -7,7 +7,7 @@
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "Monitor post-merge workflows at exact main merge 7ce484612db043831e4acb995839455f512197c0 until all terminal-success; then run product post-merge verification, reconcile evidence, and release AR-1782 done.",
+  "next_action": "Recreate a clean integration worktree at exact merge 7ce484612db043831e4acb995839455f512197c0; rerun cargo test --locked --workspace through handoffctl, verify HEAD and cleanliness, then record result before release.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
   "observed_head": "3be3029d7a1d927b86b4ae938abfc939d8339009",
@@ -27,9 +27,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 241,
+  "task_revision": 242,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T20:51:08+00:00",
+  "updated_at": "2026-10-11T20:51:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -665,3 +665,7 @@ remain mandatory.
   c3e3e42ed6378cde65b6e9bc375fc62ca59e70e785d1f0da4c57b4a3a331ca85.
 
 - 2026-10-11T20:51:08+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:51:14+00:00: All 10 exact-main workflows are terminal-success. The attempted
+  post-merge workspace run ended, but its integration worktree was at pre-merge base 24cb72d, so it
+  is invalid evidence; AR remains in progress.

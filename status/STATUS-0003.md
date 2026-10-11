@@ -1246,7 +1246,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
-| Next action | Monitor post-merge workflows at exact main merge 7ce484612db043831e4acb995839455f512197c0 until all terminal-success; then run product post-merge verification, reconcile evidence, and release AR-1782 done. |
+| Next action | Recreate a clean integration worktree at exact merge 7ce484612db043831e4acb995839455f512197c0; rerun cargo test --locked --workspace through handoffctl, verify HEAD and cleanliness, then record result before release. |
 
 ### AR-1783 — Installed workload selection and execution
 

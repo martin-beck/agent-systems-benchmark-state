@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1782](tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Monitor post-merge workflows at exact main merge 7ce484612db043831e4acb995839455f512197c0 until all terminal-success; then run product post-merge verification, reconcile evidence, and release AR-1782 done. | ar1782-coordinator-repair |
+| P0 | [AR-1782](tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | Recreate a clean integration worktree at exact merge 7ce484612db043831e4acb995839455f512197c0; rerun cargo test --locked --workspace through handoffctl, verify HEAD and cleanliness, then record result before release. | ar1782-coordinator-repair |
 
 ## Open
 
