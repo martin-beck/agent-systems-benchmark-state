@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-11T23:59:13+00:00",
+  "updated_at": "2026-10-12T00:41:57+00:00",
   "worktree_key": ""
 }
 ---
@@ -158,3 +158,6 @@ workers checkpoint, retry, and continue useful work during integration churn.
 - 2026-10-11T23:33:48+00:00: Heartbeat by ar1796-reconcile-candidate-luna56.
 
 - 2026-10-11T23:59:13+00:00: Heartbeat by ar1796-reconcile-candidate-luna56.
+
+- 2026-10-12T00:41:57+00:00: Recorded command exit 1; command argv SHA-256
+  35c2a0c44863d14f6aad688ee46521216a40e81cd294c0547a1a516a02d82724.
