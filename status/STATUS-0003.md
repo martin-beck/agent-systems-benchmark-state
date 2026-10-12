@@ -1434,7 +1434,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep autonomous development live during concurrent protected-main integration. |
-| Next action | Run exact-candidate full-exhaustive with TMPDIR and TLC metadirs on verified /srv/data bounded storage; preserve candidate-bound attestation and record terminal result. Do not accept/release without complete attestation. |
+| Next action | Continue the live exact-candidate full-exhaustive TLC run to terminal completion; do not restart or clean while Java/TLC is live. Record attestation and terminal result before any acceptance/release. |
 
 ### AR-1797 — Wire cli2key sidecar into live benchmark execution
 
