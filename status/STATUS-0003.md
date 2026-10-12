@@ -1563,7 +1563,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Independent review found a full-gate regression at exact PR head a0d780b0. |
-| Next action | Regenerate diagnostic legacy catalog identities for all shifted human.rs producers, push a signed fix, rerun cargo test -p asb-cli --tests --offline, then repeat exact-head independent review. |
+| Next action | Repair commit 5cb931f5 refreshes shifted human.rs diagnostic identities; diagnostic_contract and focused regression pass after rebase onto 5c843a12. PR #608 exact head 5cb931f5 needs independent review, all non-TLC hosted checks, then protected exact-base merge and post-merge verification. |
 
 ### AR-1806 — Exhaustive Human Output Contract Audit
 

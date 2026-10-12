@@ -7,7 +7,7 @@
     "AR-1773"
   ],
   "id": "AR-1805",
-  "next_action": "Regenerate diagnostic legacy catalog identities for all shifted human.rs producers, push a signed fix, rerun cargo test -p asb-cli --tests --offline, then repeat exact-head independent review.",
+  "next_action": "Repair commit 5cb931f5 refreshes shifted human.rs diagnostic identities; diagnostic_contract and focused regression pass after rebase onto 5c843a12. PR #608 exact head 5cb931f5 needs independent review, all non-TLC hosted checks, then protected exact-base merge and post-merge verification.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "5cb931f55fa7210afd58e70de25f0d2fce67107a",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent review found a full-gate regression at exact PR head a0d780b0.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:06:34+00:00",
+  "updated_at": "2026-10-12T11:06:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -216,3 +216,7 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 
 - 2026-10-12T11:06:34+00:00: Recorded command exit 0; command argv SHA-256
   dc2aa747a3964d16be0bef1d87399c73679354c72cb0db4d9d565249ffcf6b0d.
+
+- 2026-10-12T11:06:43+00:00: Full workspace test exposed stale catalog identities at human.rs 3570,
+  3611, 3702-3707; refreshed generated catalog mappings, signed commit 5cb931f5, pushed. Review
+  requested again.
