@@ -1,5 +1,11 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1573](../tasks/AR-1573.md) | [AR-1570](../tasks/AR-1570.md) | [AR-1574](../tasks/AR-1574.md), [AR-1576](../tasks/AR-1576.md) |
+| [AR-1574](../tasks/AR-1574.md) | [AR-1573](../tasks/AR-1573.md) | [AR-1577](../tasks/AR-1577.md) |
+| [AR-1576](../tasks/AR-1576.md) | [AR-1573](../tasks/AR-1573.md) | [AR-1588](../tasks/AR-1588.md), [AR-1590](../tasks/AR-1590.md), [AR-1592](../tasks/AR-1592.md), [AR-1594](../tasks/AR-1594.md) |
+| [AR-1577](../tasks/AR-1577.md) | [AR-1574](../tasks/AR-1574.md) | None |
+| [AR-1578](../tasks/AR-1578.md) | None | None |
+| [AR-1588](../tasks/AR-1588.md) | [AR-1564](../tasks/AR-1564.md), [AR-1568](../tasks/AR-1568.md), [AR-1576](../tasks/AR-1576.md) | [AR-1589](../tasks/AR-1589.md), [AR-1598](../tasks/AR-1598.md), [AR-1599](../tasks/AR-1599.md), [AR-1631](../tasks/AR-1631.md) |
 | [AR-1589](../tasks/AR-1589.md) | [AR-1588](../tasks/AR-1588.md) | [AR-1591](../tasks/AR-1591.md), [AR-1598](../tasks/AR-1598.md) |
 | [AR-1590](../tasks/AR-1590.md) | [AR-1576](../tasks/AR-1576.md), [AR-1592](../tasks/AR-1592.md), [AR-1593](../tasks/AR-1593.md), [AR-1594](../tasks/AR-1594.md) | [AR-1591](../tasks/AR-1591.md), [AR-1596](../tasks/AR-1596.md), [AR-1727](../tasks/AR-1727-development-broker-foreground-terminal.md) |
 | [AR-1591](../tasks/AR-1591.md) | [AR-1589](../tasks/AR-1589.md), [AR-1590](../tasks/AR-1590.md) | [AR-1598](../tasks/AR-1598.md), [AR-1606](../tasks/AR-1606.md) |
@@ -208,6 +214,7 @@
 | [AR-1807](../tasks/AR-1807-complete-help-contract.md) | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md) | [AR-1809](../tasks/AR-1809-cli-ux-qualification.md) |
 | [AR-1808](../tasks/AR-1808-universal-list-selection-contract.md) | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md) | [AR-1809](../tasks/AR-1809-cli-ux-qualification.md) |
 | [AR-1809](../tasks/AR-1809-cli-ux-qualification.md) | [AR-1806](../tasks/AR-1806-human-output-contract-audit.md), [AR-1807](../tasks/AR-1807-complete-help-contract.md), [AR-1808](../tasks/AR-1808-universal-list-selection-contract.md) | None |
+| [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md) | None | None |
 
 ## Complete AR inventory
 
@@ -307,7 +314,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (85)
+### Planned (86)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -356,6 +363,7 @@
 | P0 | [AR-1807](../tasks/AR-1807-complete-help-contract.md): Complete Contextual CLI Help Contract | Unclaimed | Provide useful --help on every ASB command and subcommand, including the TUI lifecycle. | Implement and test complete contextual help for every public command path. |
 | P0 | [AR-1808](../tasks/AR-1808-universal-list-selection-contract.md): Universal List and Selection Contract | Unclaimed | Make every ASB command discover its valid choices through a consistent, typed --list interface. | Define and implement the universal --list discovery and selection contract. |
 | P0 | [AR-1809](../tasks/AR-1809-cli-ux-qualification.md): End-to-End CLI UX Contract Qualification | Unclaimed | Qualify the complete ASB command tree for human output, help, list discovery, and selection round trips. | Run end-to-end CLI UX qualification against the complete contract and close contract gaps. |
+| P0 | [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md): Development/formal workflow separation | Unclaimed | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. | Promote and implement the workflow separation on a clean exact-main worktree; ordinary development PRs must not invoke TLC/Alloy, while the final-delivery PR lane retains the sole formal execution gate. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -587,8 +595,3 @@
 | P0 | [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Unclaimed | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Create a narrow protected-main topology repair successor for merge 67fa0d1; repository policy requires topic synchronization merge at tip. Preserve all six other post-merge results and do not waive policy. |
 | P0 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | Unclaimed | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Reconcile and doctor state; release AR-1478 done with complete merge and seven-workflow evidence. |
 | P0 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Unclaimed | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Monitor exact-main post-merge workflows for 1015a461; after all seven green, release AR-1479 and requalify AR-1420 PR #350 head 2884508. |
-| P0 | [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | Unclaimed | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Run reconcile and doctor --live, then release AR-1480 done ownerless with complete merge/post-merge evidence. |
-| P0 | [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | Unclaimed | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Reconcile/doctor, then release AR-1484 done ownerless with complete merge/post-merge evidence. |
-| P0 | [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | Unclaimed | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Release complete; retain exact merge and eight workflow evidence. |
-| P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | Unclaimed | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Release complete; retain exact merge and eight workflow evidence. |
-| P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Unclaimed | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
