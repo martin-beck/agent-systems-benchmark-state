@@ -1112,7 +1112,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
-| Next action | Preserve uncommitted product diff; run bounded baseline/current-main comparison or route this existing diagnostic mapping to its owner, then rerun full asb-cli/workspace gates before signed commit/review. |
+| Next action | Run focused changed-route/reporter gates and bounded formatting; retain full-gate blocker evidence. Do not commit or request review until ambient diagnostic mapping is repaired or an owning successor is routed. |
 
 ### AR-1774 — Status and progress completeness CI
 

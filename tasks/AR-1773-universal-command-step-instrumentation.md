@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Preserve uncommitted product diff; run bounded baseline/current-main comparison or route this existing diagnostic mapping to its owner, then rerun full asb-cli/workspace gates before signed commit/review.",
+  "next_action": "Run focused changed-route/reporter gates and bounded formatting; retain full-gate blocker evidence. Do not commit or request review until ambient diagnostic mapping is repaired or an owning successor is routed.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 4,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:29:50+00:00",
+  "updated_at": "2026-10-12T06:30:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -179,3 +179,11 @@ non-TTY compatibility.
 
 - 2026-10-12T06:29:50+00:00: Recorded command exit 0; command argv SHA-256
   591e2c2565faf7af9d07be2517385f859cdd24c881e95aa79b3e198a22786218.
+
+- 2026-10-12T06:30:03+00:00: Baseline scope verification: git diff against origin/main contains only
+  the intended human.rs serve render_start replacement and its serve assertion update; the failing
+  human diagnostic test and legacy_validation output-parent case are unchanged from origin/main. The
+  current-main source still contains the same failing test expectation. The AR-1773 diff has no
+  diagnostic mapping changes. Serve now uses StepStatus::Waiting through the shared reporter,
+  avoiding a false terminal success while the service continues. Full gate remains blocked by the
+  ambient diagnostic-contract failure; no waiver or publication.
