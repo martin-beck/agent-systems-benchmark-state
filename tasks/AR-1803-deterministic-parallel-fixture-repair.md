@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Implement deterministic process-heavy fixture isolation for AR-1801/full asb-cli gates; preserve bounded parallelism and rerun exact-head gates.",
+  "next_action": "Complete supported make test deterministic gate (RUST_TEST_THREADS=1), then add bounded parallel regression evidence and checkpoint signed repair.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "56db629d58b725114b10e6fad8cc4772b16834d0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T02:37:28+00:00",
+  "updated_at": "2026-10-12T02:39:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -76,3 +76,9 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T02:37:25+00:00: Recorded command exit 0; command argv SHA-256
   2199fee7b68e32f3c0e91ecc5694af33ea025f2e301837044136a490ce7e3e6a.
+
+- 2026-10-12T02:39:57+00:00: Isolation diagnosis checkpoint: direct cargo test with default/high
+  parallelism produced shifting left 6/right 0 and source_checkout Err(Unavailable) failures; all
+  429 asb-cli lib tests pass with --test-threads=2 and repository Makefile intentionally defaults
+  RUST_TEST_THREADS=1 because process/state fixtures must not race. Running the complete supported
+  make test gate now; no product gate is claimed until it exits.

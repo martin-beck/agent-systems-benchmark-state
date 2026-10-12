@@ -1532,7 +1532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
-| Next action | Implement deterministic process-heavy fixture isolation for AR-1801/full asb-cli gates; preserve bounded parallelism and rerun exact-head gates. |
+| Next action | Complete supported make test deterministic gate (RUST_TEST_THREADS=1), then add bounded parallel regression evidence and checkpoint signed repair. |
 
 
 ## Dependency graph
