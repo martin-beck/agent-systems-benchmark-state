@@ -10,7 +10,7 @@
   "id": "AR-1773",
   "next_action": "Remain open awaiting separately bounded compact diagnostic catalog regeneration; preserve AR-1773 diff/worktree and rerun diagnostic/full gates only after that repair lands.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
-  "observed_dirty": 5,
+  "observed_dirty": 6,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
   "owner": "ar1773-catalog-repair-luna56",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T07:06:49+00:00",
+  "updated_at": "2026-10-12T07:06:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
