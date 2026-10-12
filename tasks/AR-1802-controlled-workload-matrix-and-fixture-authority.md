@@ -8,7 +8,7 @@
     "AR-1783"
   ],
   "id": "AR-1802",
-  "next_action": "Repair reviewed diagnostic catalog line identities for AR-1802 source additions; rerun exact package and workspace gates.",
+  "next_action": "Repair or isolate source_checkout fixture contention observed in parallel package gate; then rerun exact package and workspace gates.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "observed_dirty": 0,
   "observed_head": "3ab420e492697e68f248a5f2004b6151d5323e63",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:49:11+00:00",
+  "updated_at": "2026-10-12T03:49:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -212,3 +212,11 @@ remains explicitly unaccepted and blocked until this repair is complete.
 
 - 2026-10-12T03:49:11+00:00: Recorded command exit 0; command argv SHA-256
   64ad88712ce5b7dbd8d39e5d85619766237c00c7d58cadfa00074aa8eabe559a.
+
+- 2026-10-12T03:49:56+00:00: Exact post-catalog package gate diagnosis: cargo test --quiet --locked
+  ... -p asb-cli --tests --target x86_64-unknown-linux-gnu exited 101 with 432/433 lib tests
+  passing. Failing test:
+  source_checkout::tests::exact_fixture_checkout_is_returned_and_cleanup_is_explicit,
+  source_checkout.rs:911, panic unwrap Err(CheckoutError::Unavailable). Same test rerun isolated
+  passed 1/1; this is a parallel fixture/process isolation failure, not waived. Inspect
+  source_checkout fixture setup/guard and repair deterministic parallel behavior.
