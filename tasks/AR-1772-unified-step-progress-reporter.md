@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:07:59+00:00",
+  "updated_at": "2026-10-12T02:08:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -90,4 +90,7 @@ allowed outside this helper.
   30750a6ed153fa6ade122ac0af3ea5d7f30be20442f77a0117ba6d9ab6365c54.
 
 - 2026-10-12T02:07:59+00:00: Recorded command exit 0; command argv SHA-256
+  30750a6ed153fa6ade122ac0af3ea5d7f30be20442f77a0117ba6d9ab6365c54.
+
+- 2026-10-12T02:08:45+00:00: Recorded command exit 101; command argv SHA-256
   30750a6ed153fa6ade122ac0af3ea5d7f30be20442f77a0117ba6d9ab6365c54.
