@@ -1649,6 +1649,20 @@
 | Summary | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. |
 | Next action | Monitor PR #606 exact head d9972679899cf18c1c9ab87e694ad639a2c18786 until all required non-TLC checks are green; then obtain independent review, merge, exact-main post-merge verification, and durable closure. |
 
+### AR-1812 — Implement cli2key ordinary CLI bootstrap
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
+| Next action | Promote and claim after coordinator reconciliation; implement the verified AR-1779 receipt resolver and wire AR-1799 authority into ordinary run/sweep dispatch, then complete review, merge, and post-merge verification. |
+
 
 ## Dependency graph
 
@@ -2522,6 +2536,7 @@ flowchart LR
         AR_1809["AR-1809 - Planned"]:::status_planned
         AR_1810["AR-1810 - Blocked"]:::status_blocked
         AR_1811["AR-1811 - In progress"]:::status_in_progress
+        AR_1812["AR-1812 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4476,6 +4491,7 @@ flowchart LR
     AR_1779 --> AR_1780
     AR_1779 --> AR_1797
     AR_1779 --> AR_1810
+    AR_1779 --> AR_1812
     AR_1781 --> AR_1782
     AR_1781 --> AR_1794
     AR_1782 --> AR_1783
@@ -4496,6 +4512,7 @@ flowchart LR
     AR_1791 --> AR_1792
     AR_1797 --> AR_1810
     AR_1799 --> AR_1810
+    AR_1799 --> AR_1812
     AR_1805 --> AR_1806
     AR_1805 --> AR_1807
     AR_1805 --> AR_1808
