@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Header-policy repair pushed as signed head 65ee830e; local gates green; PR #602 rerun in progress.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:45:43+00:00",
+  "updated_at": "2026-10-12T05:45:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -349,4 +349,7 @@ allowed outside this helper.
   b55a34acd4a89484f7ce0de3d8d8473768713ef43fd8464bcf66199368a3b66f.
 
 - 2026-10-12T05:45:43+00:00: Recorded command exit 8; command argv SHA-256
+  b55a34acd4a89484f7ce0de3d8d8473768713ef43fd8464bcf66199368a3b66f.
+
+- 2026-10-12T05:45:55+00:00: Recorded command exit 8; command argv SHA-256
   b55a34acd4a89484f7ce0de3d8d8473768713ef43fd8464bcf66199368a3b66f.
