@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1802.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T02:39:00+00:00",
+  "updated_at": "2026-10-12T03:31:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -97,3 +97,9 @@ remains explicitly unaccepted and blocked until this repair is complete.
   nondeterministically at tool_discovery::tests::path_discovery_is_deterministic_and_bounded under
   parallel execution; isolated rerun passes. Preserve 97f6c271 (SSH-signed, DCO) unmerged. Resume
   AR-1802 only after AR-1803 repairs and green exact-head full gate; no waiver.
+
+- 2026-10-12T03:31:10+00:00: External fixture-contention blocker resolved by merged and accepted
+  AR-1804: hosted exact-head PR #598 merge 6761a6d0, acceptance evidence
+  quality/AR-1804-pr-598-merge-6761a6d0.txt, full make/default-parallel gates green. AR-1803 remains
+  blocked as historical evidence; AR-1804 is the merged successor repair. Resume AR-1802
+  fixture-authority and full lifecycle/offline matrix work.
