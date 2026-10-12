@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Record independent exact-head review of 506de984, then run tools/integration/merge_pr.py against base 5201a036/tree c2ebca881ea7c31946d20ea18e0cf676b851b22e, verify green protected main, accept and release",
+  "next_action": "Independent review recorded for PR #596 exact head 506de984af222659b3b48824cef7d34b15118862; run approved integration merge against base 5201a0369193be5e093396d76bfa4b1c9b55e9db/tree c2ebca881ea7c31946d20ea18e0cf676b851b22e, verify exact protected main, then accept/release.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "d0799ae9a4e1f819e80fae22c9d140e37ce3e831",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair PR #596 exact head 506de984 has all hosted required checks green; independent review remains required before local integration",
-  "task_revision": 230,
+  "task_revision": 231,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:31:03+00:00",
+  "updated_at": "2026-10-12T01:31:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -713,3 +713,16 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:31:03+00:00: Recorded command exit 1; command argv SHA-256
   a7c13d719060f2141b26f90e8ada2846f2773a72200efc4a219c0358917e5ed8.
+
+- 2026-10-12T01:31:10+00:00: INDEPENDENT TECHNICAL REVIEW APPROVED: PR #596 exact head
+  506de984af222659b3b48824cef7d34b15118862, approved base 5201a0369193be5e093396d76bfa4b1c9b55e9db,
+  exact reviewed tree c2ebca881ea7c31946d20ea18e0cf676b851b22e. Reviewed the installed-workload
+  selection/execution acceptance against the AR-1783 plan/spec: project-bound workload catalog
+  identity/digest/revision/license/terms/preparation/adapter/platform validation,
+  run/sweep/report/compare binding, stale/revoked/missing/manual-substitution rejection, bounded
+  privacy-safe outputs, and no ambient directory fallback. Both commits in the reviewed range are
+  SSH-signed (principal martin.beck2@gmx.de) and carry matching Signed-off-by DCO trailers; no
+  credentials/private host data or gate weakening found. All required hosted checks for PR #596 are
+  terminal SUCCESS, including policy/coverage/supply chain, Rust, aarch64, provenance,
+  credential-free, privacy/TUI, fuzz, formal, mutation, and retained-fault gates. Approved for
+  merge; do not merge in this review.
