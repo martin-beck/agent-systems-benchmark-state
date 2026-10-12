@@ -10,10 +10,11 @@
     "AR-1733",
     "AR-1779",
     "AR-1797",
-    "AR-1799"
+    "AR-1799",
+    "AR-1812"
   ],
   "id": "AR-1810",
-  "next_action": "Coordinator must create or promote a narrowly scoped prerequisite AR for the missing runtime/control-to-CLI cli2key bootstrap seam (verified AR-1779 receipt resolution, command construction, authority retention, and ordinary run/sweep wiring). After that prerequisite merges, rebase and resume AR-1810 implementation.",
+  "next_action": "AR-1812 is the promoted prerequisite for the missing runtime/control-to-CLI cli2key bootstrap seam. After AR-1812 merges, rebase and resume AR-1810 implementation, then complete exact-head review, merge, and post-merge verification.",
   "observed_branch": "feature/ar-1810-cli2key-standard-cli",
   "observed_dirty": 0,
   "observed_head": "07c590e712df11e555228abf1b9de4add3510d4f",
