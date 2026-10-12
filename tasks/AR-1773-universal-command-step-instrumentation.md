@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:28:05+00:00",
+  "updated_at": "2026-10-12T06:28:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -154,3 +154,6 @@ non-TTY compatibility.
   prefix. Rerun passed. Reporter step_progress, TUI directory, owned-directory, benchmark.run-point,
   and serve presentation focused coverage now pass; next run is full asb-cli lib then workspace
   gates.
+
+- 2026-10-12T06:28:35+00:00: Recorded command exit 101; command argv SHA-256
+  dad4ab36f5686c05370b9a5021ac768a9731f41a2058e28a3543dc9ac09b3dcc.
