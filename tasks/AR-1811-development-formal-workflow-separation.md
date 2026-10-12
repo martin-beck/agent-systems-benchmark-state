@@ -11,7 +11,8 @@
   "observed_head": "d9972679899cf18c1c9ab87e694ad639a2c18786",
   "oracle_gate": {
     "completed": [
-      "role"
+      "role",
+      "spec"
     ],
     "discussion_rounds": 0,
     "events": [
@@ -77,9 +78,30 @@
         "stage": "spec",
         "task_id": "AR-1811",
         "task_revision": 43
+      },
+      {
+        "action": "resolve",
+        "after": [
+          {
+            "digest": "sha256:88e12d0e567e6030f4aade22e82ff0870a9640e9e705b8f51c6e04ed17b1c633",
+            "ref": "accepted-spec"
+          }
+        ],
+        "before": [
+          {
+            "digest": "sha256:88e12d0e567e6030f4aade22e82ff0870a9640e9e705b8f51c6e04ed17b1c633",
+            "ref": "candidate-spec"
+          }
+        ],
+        "disposition": "accepted",
+        "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786/spec-accepted",
+        "recorded_at": "2026-10-12T10:19:07+00:00",
+        "stage": "spec",
+        "task_id": "AR-1811",
+        "task_revision": 44
       }
     ],
-    "open_stage": "spec",
+    "open_stage": null,
     "reconciliation_required": false,
     "required": true,
     "stage_sequence": [
@@ -94,9 +116,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:19:03+00:00",
+  "updated_at": "2026-10-12T10:19:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -213,3 +235,6 @@ tests and update the generated quality documentation.
 
 - 2026-10-12T10:19:03+00:00: Recorded open interaction gate spec;
   event=sha256:10c54098babd9d7c94456bb8f2b192568fa688a6158ee0b93e675e72047a0c70.
+
+- 2026-10-12T10:19:07+00:00: Recorded resolve interaction gate spec;
+  event=sha256:7f0867bc0055b584f7103eada798e38afc5fad548a7f2d9daf5c344d3e7a5e6e.
