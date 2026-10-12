@@ -70,8 +70,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority` | `feature/ar-1802-controlled-workload-matrix-and-fixture-authority` | `c9ea7246e6d4` | 0 | behind 26, ahead 0 |
 | `agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair` | `feature/ar-1803-deterministic-parallel-fixture-repair` | `547e42dd90c9` | 0 | behind 24, ahead 0 |
 | `agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore` | `main` | `6761a6d0bcd5` | 0 | behind 30, ahead 0 |
-| `agent-systems-benchmark-ar-1805-cli-surface-contract` | `feature/ar-1805-cli-surface-inventory-contract` | `01631b5bbe14` | 1 | behind 2, ahead 1 |
-| changed files | - | - | - | `crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs` |
+| `agent-systems-benchmark-ar-1805-cli-surface-contract` | `feature/ar-1805-cli-surface-inventory-contract` | `459804d5f10e` | 0 | behind 2, ahead 2 |
 | `agent-systems-benchmark-ar-1810-cli2key-standard-cli` | `feature/ar-1810-cli2key-standard-cli` | `07c590e712df` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar-1811-development-formal-workflow-separation` | `feature/ar-1811-development-formal-workflow-separation` | `d9972679899c` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap` | `feature/ar-1812-cli2key-ordinary-bootstrap` | `07c590e712df` | 0 | behind 5, ahead 0 |
