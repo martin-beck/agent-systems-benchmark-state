@@ -1,0 +1,35 @@
+AR-1815 protected-main signed recovery post-merge receipt
+
+Product: martin-beck/agent-systems-benchmark
+PR: #609
+Preserved GitHub merge: 15c80511cd2cb55947fe3ee1e130affed4c76b4d
+Reviewed topic head: ab4f4c6a81f543e049759d199cca675c7370a1dc
+Recovered signed merge: e57982a79fafa464bfac6b3c858226ffe08737e7
+Recovered merge tree: 60b7fca30b4c3344d029d4858bb2cce6371a7298
+
+The forward-only local merge-integrity tool constructed a signed two-parent
+merge whose first parent is the preserved GitHub merge and whose second parent
+is the reviewed signed DCO recovery topic. The reviewed tree is unchanged.
+No web merge, history rewrite, force update, or gate weakening was used.
+
+Independent exact-head review: accepted for ab4f4c6a.
+PR checks: all required checks terminal-success.
+Exact-main workflows for e57982a (all terminal-success):
+- Repository quality: run 38246184722, attempt 4, success
+- Rust verification: run 38246184903, success
+- Emulated aarch64 portability: run 38246184830, success
+- Cross-repository development broker qualification: run 38246184712, success
+- Development formal assurance: run 38246184764, success
+- Credential-free benchmark path: run 38246184797, success
+- Hosted portability and native qualification: run 38246184734, success
+- Fault assurance: run 38246185030, success
+- Huawei MIT source headers: run 38246184676, success
+- Portable protected-main provenance: run 38246184845, success
+
+Repository quality attempt 3 exposed one runner-only source-checkout fixture
+failure (436 passed, 1 failed, Err(Unavailable)); five independent local
+focused repetitions passed. Attempt 4 passed, so the gate is terminal-success
+without a product change. No TLC/model-check or live-provider run was required.
+
+Privacy: no credentials, prompts, responses, private paths, or raw logs are
+included. Development signing and DCO evidence remain verified.
