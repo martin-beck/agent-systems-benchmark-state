@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Installed tool and workload execution qualification",
-  "updated_at": "2026-10-12T02:10:45+00:00",
+  "updated_at": "2026-10-12T02:11:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1780-installed-tool-workload-execution-qualification"
 }
 ---
@@ -82,3 +82,14 @@ hosted qualification absence is not a blocker for this development evidence.
 
 - 2026-10-12T02:10:43+00:00: Recorded command exit 0; command argv SHA-256
   99270f8441e88a36bed2092410f601fc4207850373ff0809cf6e329a974134da.
+
+- 2026-10-12T02:11:10+00:00: Setup failures classified: exit 128 hash
+  32f2329f17ebfe2e32ec6439a8a438277cb4161fd6f1bdfc3b98e2bac6aa7c84 was an attempted handoffctl-run
+  git worktree add against the coordination checkout; it created an unintended state worktree, then
+  post-reconcile rejected generated tools/__pycache__/handoffctl.cpython-312.pyc (>200 KiB). Exit
+  128 hash fa166ffff8a4b3c539413e2445ca8a6e1daf05c016e8f4af49647768507709ce was cleanup targeted at
+  the ASB product checkout, which did not own that state worktree (fatal not a working tree). Exit
+  255 with the same hash was retrying product worktree add after the product branch name had already
+  been created (fatal branch already exists). These are repository/setup/coordination errors, not
+  qualification failures; state worktree was removed and product worktree was subsequently attached
+  to existing branch at exact origin/main ca494d50.
