@@ -41,7 +41,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38206793159 | `e0e44a7d8b45` | push | Portable protected-main provenance | completed:failure |
 | 38206793147 | `e0e44a7d8b45` | push | Fault assurance | in_progress:- |
 | 38206793146 | `e0e44a7d8b45` | push | Repository quality | completed:failure |
-| 38206793142 | `e0e44a7d8b45` | push | Hosted portability and native qualification | in_progress:- |
-| 38206793125 | `e0e44a7d8b45` | push | Credential-free benchmark path | in_progress:- |
+| 38206793142 | `e0e44a7d8b45` | push | Hosted portability and native qualification | completed:success |
+| 38206793125 | `e0e44a7d8b45` | push | Credential-free benchmark path | completed:success |
 | 38205921465 | `1213928b8724` | pull_request | Portable protected-main provenance | completed:success |
 | 38205921454 | `1213928b8724` | pull_request | Rust verification | completed:success |
