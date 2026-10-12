@@ -1098,7 +1098,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output. |
-| Next action | Blocked on dedicated Cargo tool-discovery fixture isolation successor; reporter focused/diagnostic tests are green, but exact full asb-cli gate has two ambient Cargo probe failures. Do not accept or waive until full gate is green. |
+| Next action | Request fresh independent review of exact signed head 0d2c8365 after rebase onto origin/main e0e44a7d; then publish PR and monitor exact-head hosted CI. |
 
 ### AR-1773 — Universal command step instrumentation
 
