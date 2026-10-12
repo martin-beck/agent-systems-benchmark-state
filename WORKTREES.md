@@ -54,8 +54,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1652-record-replay` | `repair/ar-1652-record-replay` | `7ce484612db0` | 0 | behind 56, ahead 0 |
 | `agent-systems-benchmark-ar-1686` | `qualification/ar-1686` | `f37d3a3ef839` | 0 | behind 40, ahead 0 |
 | `agent-systems-benchmark-ar-1772-unified-step-progress-reporter` | `feature/ar-1772-unified-step-progress-reporter` | `65ee830e6659` | 0 | behind 3, ahead 0 |
-| `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `9c5e557195df` | 3 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/step_progress.rs`, `crates/asb-cli/src/tui.rs` |
+| `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `9c5e557195df` | 4 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/step_progress.rs`, `crates/asb-cli/src/tui.rs` |
 | `agent-systems-benchmark-ar-1775-configurable-output-router-and-levels` | `feature/ar-1775-configurable-output-router-and-levels` | `d7c08c106e52` | 0 | behind 37, ahead 2 |
 | `agent-systems-benchmark-ar-1779-default-usable-tool-install-command` | `feature/ar-1779-default-usable-tool-install-command` | `daf2d3ee9750` | 0 | behind 56, ahead 4 |
 | `agent-systems-benchmark-ar-1780-installed-tool-workload-execution-qualification` | `feature/ar-1780-installed-tool-workload-execution-qualification` | `ca494d506135` | 0 | behind 27, ahead 0 |

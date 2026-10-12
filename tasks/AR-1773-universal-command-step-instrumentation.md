@@ -10,7 +10,7 @@
   "id": "AR-1773",
   "next_action": "Run focused instrumentation tests after replacing direct [WAIT] writes with step_progress::terminal and benchmark.run-point reporter steps; then expand route/mode matrix and full gates.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
   "owner": "ar1772-progress-reporter-luna56",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:26:53+00:00",
+  "updated_at": "2026-10-12T06:26:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
