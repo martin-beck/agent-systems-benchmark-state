@@ -1,6 +1,24 @@
 ---
-{"id":"AR-1816","title":"Coordinator projection and bytecode hygiene recovery","priority":"P0","depends_on":[],"plan":"../plans/AR-1816-state-projection-and-bytecode-hygiene.md","summary":"Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard.","status":"planned","next_action":"Implement a lock-aware, atomic reconciliation path and bytecode-safe coordinator execution, then qualify recovery under concurrent state activity.","owner":"","claim_expires":"","checkpoint_commit":"","spec_ref":"specs/AR-1816.json","spec_revision":1,"task_revision":1,"schema_version":1,"updated_at":"2026-10-12T12:20:00+00:00","branch":"","worktree_key":""}
-
+{
+  "branch": "",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [],
+  "id": "AR-1816",
+  "next_action": "Implement a lock-aware, atomic reconciliation path and bytecode-safe coordinator execution, then qualify recovery under concurrent state activity.",
+  "owner": "",
+  "plan": "../plans/AR-1816-state-projection-and-bytecode-hygiene.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1816.json",
+  "spec_revision": 1,
+  "status": "open",
+  "summary": "Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard.",
+  "task_revision": 2,
+  "title": "Coordinator projection and bytecode hygiene recovery",
+  "updated_at": "2026-10-12T12:40:20+00:00",
+  "worktree_key": ""
+}
 ---
 
 # AR-1816 — Coordinator projection and bytecode hygiene recovery
@@ -26,3 +44,5 @@ suppression or redirection; an integration test must demonstrate clean
 checkout while concurrent mutation is either serialized or clearly rejected.
 No generated projection may be edited manually, and no tracked/untracked
 bytecode, credentials, or host-private runtime configuration may enter commits.
+
+- 2026-10-12T12:40:20+00:00: dependencies verified; begin projection and bytecode hygiene repair
