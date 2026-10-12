@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T11:41:12+00:00",
+  "updated_at": "2026-10-12T11:41:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -49,3 +49,6 @@ introduce a TLC/model-check dependency for development.
   96a0af41a541f5236a5894e26c9eb7ff32fa914aac46bb58bd7dabecaaa5c33e.
 
 - 2026-10-12T11:41:12+00:00: Heartbeat by ar1805_postmerge_repair.
+
+- 2026-10-12T11:41:16+00:00: Recorded command exit 0; command argv SHA-256
+  7c730eec3ea71bd24ffc5a9255bf7f542481bf601dba6c72bed6e00f6c2fab3c.
