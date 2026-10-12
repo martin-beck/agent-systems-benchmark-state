@@ -1504,7 +1504,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make tool-discovery Cargo version fixture deterministic under full workspace execution. |
-| Next action | Diagnose/reproduce parallel asb-cli provider/comparison test failures under full load; stabilize test isolation without weakening contracts, then rerun exact-head gate before PR/merge. |
+| Next action | Current main already contains the deterministic fixture semaphore repair from merged AR-1803; verify current-main full gate and supersede AR-1801 without duplicate product change if green. |
 
 ### AR-1802 — Controlled workload matrix and fixture authority
 

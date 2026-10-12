@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1801",
-  "next_action": "Diagnose/reproduce parallel asb-cli provider/comparison test failures under full load; stabilize test isolation without weakening contracts, then rerun exact-head gate before PR/merge.",
+  "next_action": "Current main already contains the deterministic fixture semaphore repair from merged AR-1803; verify current-main full gate and supersede AR-1801 without duplicate product change if green.",
   "observed_branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "observed_dirty": 0,
   "observed_head": "c20bb7bb44481846e08b135ea6b5fff83cd72617",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T05:18:05+00:00",
+  "updated_at": "2026-10-12T05:18:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -120,3 +120,11 @@ or pin the probe without weakening bounded execution or privacy contracts.
 
 - 2026-10-12T05:18:05+00:00: Recorded command exit 0; command argv SHA-256
   ff83dfea5de073f0e0413c7865b7285abb1d2f1f5cab114eb5ccb712809ddaa8.
+
+- 2026-10-12T05:18:28+00:00: Reproduction on claimed c20bb7bb: full asb-cli cargo test passed
+  429/429 with default threads and 429/429 at --test-threads=8. Current origin/main 3c7ca1c1
+  contains AR-1803 semaphore guards and the 2s discovery timeout; diff c20bb7bb versus current main
+  shows the branch lacks the merged fixture semaphore and has no unique needed repair beyond
+  already-integrated behavior. This establishes AR-1801 is superseded by AR-1803 rather than
+  requiring a duplicate source change; run current-main gate and record durable supersession
+  decision.
