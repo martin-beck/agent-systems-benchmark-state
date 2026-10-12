@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1801",
-  "next_action": "Repair/reproduce full asb-cli gate failure in tests::provider_selection_manifest_drives_plan_run_sweep_compare_and_report; rerun exact-head review and CI before PR/merge.",
+  "next_action": "Retry full exact-head asb-cli gate; if green, checkpoint c20bb7bb, create PR, run exact-head CI, and merge under protected policy.",
   "observed_branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "observed_dirty": 0,
   "observed_head": "c20bb7bb44481846e08b135ea6b5fff83cd72617",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T02:29:13+00:00",
+  "updated_at": "2026-10-12T02:29:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -78,3 +78,11 @@ or pin the probe without weakening bounded execution or privacy contracts.
 
 - 2026-10-12T02:29:13+00:00: Recorded command exit 0; command argv SHA-256
   a66c3e844be61f6881e0cc53c04b2257ffa0a521e71673aa6baa0d11ece7ac36.
+
+- 2026-10-12T02:29:18+00:00: Follow-up focused rerun through handoffctl: cargo test --locked
+  --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation/Cargo.toml
+  -p asb-cli tests::provider_selection_manifest_drives_plan_run_sweep_compare_and_report --
+  --nocapture passed 1/1 in 0.67s. The prior full-gate failure is therefore timing/load-sensitive or
+  unrelated to c20bb7bb; full exact-head gate must be retried and its complete result recorded
+  before PR/merge.
