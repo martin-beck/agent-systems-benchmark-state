@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:47:48+00:00",
+  "updated_at": "2026-10-12T11:47:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -297,3 +297,6 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T11:47:48+00:00: Recorded command exit 0; command argv SHA-256
   cb7ca53a82dbf94694e69b2b9cce5df269e91b4959411ca49cd69869b4d57a5b.
+
+- 2026-10-12T11:47:52+00:00: Recorded command exit 0; command argv SHA-256
+  c0fdc839230df487e155d1d248e8c5483d1b5163d573706b7e4c32644746ef6b.
