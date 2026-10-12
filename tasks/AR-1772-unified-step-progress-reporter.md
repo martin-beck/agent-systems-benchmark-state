@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:05:47+00:00",
+  "updated_at": "2026-10-12T02:06:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -73,3 +73,6 @@ allowed outside this helper.
 
 - 2026-10-12T02:05:47+00:00: Checkpoint: isolated AR-1772 worktree contains initial step_progress
   module and public module wiring; no commit yet.
+
+- 2026-10-12T02:06:12+00:00: Recorded command exit 101; command argv SHA-256
+  30750a6ed153fa6ade122ac0af3ea5d7f30be20442f77a0117ba6d9ab6365c54.

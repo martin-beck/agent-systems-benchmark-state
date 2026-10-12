@@ -1464,6 +1464,20 @@
 | Summary | Coverage margin repair pushed at c5303c05. |
 | Next action | Monitor PR #585 exact-head CI at 55a78934; request independent re-review after hosted coverage passes. |
 
+### AR-1799 — Add cli2key runtime authority composition seam
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
+| Next action | Add a runtime-owned cli2key authority seam that binds the verified bridge receipt, preserves key privacy, and issues a live attempt consumable by the Codex adapter. |
+
 
 ## Dependency graph
 
@@ -2321,6 +2335,7 @@ flowchart LR
         AR_1796["AR-1796 - In progress"]:::status_in_progress
         AR_1797["AR-1797 - In progress"]:::status_in_progress
         AR_1798["AR-1798 - Done"]:::status_done
+        AR_1799["AR-1799 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4190,9 +4205,11 @@ flowchart LR
     AR_1728 --> AR_1730
     AR_1729 --> AR_1731
     AR_1729 --> AR_1797
+    AR_1729 --> AR_1799
     AR_1730 --> AR_1731
     AR_1731 --> AR_1732
     AR_1731 --> AR_1797
+    AR_1731 --> AR_1799
     AR_1732 --> AR_1733
     AR_1732 --> AR_1797
     AR_1733 --> AR_1736
@@ -4277,6 +4294,7 @@ flowchart LR
     AR_1790 --> AR_1789
     AR_1790 --> AR_1791
     AR_1791 --> AR_1792
+    AR_1797 --> AR_1799
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -4343,5 +4361,3 @@ flowchart LR
 | [AR-0510](../tasks/AR-0510-replay-gemini.md) | [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0511](../tasks/AR-0511-replay-qwen.md) | [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0512](../tasks/AR-0512-replay-goose.md) | [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0513](../tasks/AR-0513-replay-miniswe.md) | [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0514](../tasks/AR-0514-replay-openhands.md) | [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
