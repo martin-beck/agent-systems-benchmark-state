@@ -41,7 +41,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38190265324 | `5201a0369193` | push | Formal assurance | in_progress:- |
 | 38190265314 | `5201a0369193` | push | Huawei MIT source headers | completed:success |
 | 38190265310 | `5201a0369193` | push | Hosted portability and native qualification | completed:success |
-| 38190265304 | `5201a0369193` | push | Fault assurance | in_progress:- |
+| 38190265304 | `5201a0369193` | push | Fault assurance | completed:success |
 | 38190265298 | `5201a0369193` | push | Credential-free benchmark path | completed:success |
 | 38190265292 | `5201a0369193` | push | Repository quality | completed:failure |
 | 38190264050 | `f805a4e46c98` | pull_request | Hosted portability and native qualification | completed:success |
