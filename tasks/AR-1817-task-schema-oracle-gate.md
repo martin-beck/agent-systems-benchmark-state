@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "feature/ar-1817-schema-oracle-gate",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-12T15:15:25+00:00",
   "depends_on": [],
@@ -14,10 +14,10 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Align task schema with oracle gate contract",
-  "updated_at": "2026-10-12T13:15:25+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-10-12T13:15:37+00:00",
+  "worktree_key": "agent-systems-benchmark-state-ar-1817-schema-oracle-gate"
 }
 ---
 
@@ -36,3 +36,6 @@ do not make the schema permissive or alter AR-1816 implementation state.
   and blocks coordination CI
 
 - 2026-10-12T13:15:25+00:00: Claimed by ar1817_schema_contract.
+
+- 2026-10-12T13:15:37+00:00: Bound worktree agent-systems-benchmark-state-ar-1817-schema-oracle-gate
+  on branch feature/ar-1817-schema-oracle-gate.
