@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Repair review findings before any PR/CI: restore clean exact signed head, add explicit semaphore hostile contention/cancellation/timeout/cleanup/exhaustion tests, and preserve AR-1800/AR-1802 fixture acquisition behavior.",
+  "next_action": "Run full make test and default-parallel gates after archive-contract restoration and bounded semaphore tests; then commit/checkpoint exact clean signed head for re-review.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 3,
   "observed_head": "a8507d19e1998f2525462b9297c775ccac522095",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:00:59+00:00",
+  "updated_at": "2026-10-12T03:01:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -277,3 +277,11 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:00:59+00:00: Recorded command exit 0; command argv SHA-256
   087bc262d30e98fa256ec70221039eecb302bc403fb0015865ed805241d2a0fb.
+
+- 2026-10-12T03:01:08+00:00: Independent-review repair applied: restored ASB_WORKLOAD_FIXTURE_ROOT
+  credential-free archive acquisition and its URL-bound bounded symlink/relative-root regression
+  test removed by the prior baseline. Reworked test semaphore acquisition from unbounded Mutex::lock
+  to bounded try_lock polling with a 5-second production-test timeout and explicit depth rollback on
+  timeout. Added positive nested/drop and hostile contention timeout/recovery tests. Focused gates:
+  test_fixture_semaphore::tests 2 passed; fixture_acquisition_is_url_bound_bounded_and_network_free
+  1 passed. No PR/merge action taken.

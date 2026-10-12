@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Repair review findings before any PR/CI: restore clean exact signed head, add explicit semaphore hostile contention/cancellation/timeout/cleanup/exhaustion tests, and preserve AR-1800/AR-1802 fixture acquisition behavior. |
+| Next action | Run full make test and default-parallel gates after archive-contract restoration and bounded semaphore tests; then commit/checkpoint exact clean signed head for re-review. |
 
 
 ## Dependency graph
