@@ -56,8 +56,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1686` | `qualification/ar-1686` | `f37d3a3ef839` | 0 | behind 43, ahead 0 |
 | `agent-systems-benchmark-ar-1689-tui-qualification` | `qualification/ar-1689-tui-fresh-user` | `30641f50d68e` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1772-unified-step-progress-reporter` | `feature/ar-1772-unified-step-progress-reporter` | `65ee830e6659` | 0 | behind 6, ahead 0 |
-| `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `9c5e557195df` | 5 | behind 3, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/step_progress.rs`, `crates/asb-cli/src/tui.rs` |
+| `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `9c5e557195df` | 7 | behind 3, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/step_progress.rs`, `crates/asb-cli/src/tui.rs`, `crates/asb-cli/tests/human_cli.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-ar-1775-configurable-output-router-and-levels` | `feature/ar-1775-configurable-output-router-and-levels` | `d7c08c106e52` | 0 | behind 40, ahead 2 |
 | `agent-systems-benchmark-ar-1779-default-usable-tool-install-command` | `feature/ar-1779-default-usable-tool-install-command` | `daf2d3ee9750` | 0 | behind 59, ahead 4 |
 | `agent-systems-benchmark-ar-1780-installed-tool-workload-execution-qualification` | `feature/ar-1780-installed-tool-workload-execution-qualification` | `ca494d506135` | 0 | behind 30, ahead 0 |

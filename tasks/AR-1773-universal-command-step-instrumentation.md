@@ -10,7 +10,7 @@
   "id": "AR-1773",
   "next_action": "Wait for unrelated AR-1796 full formal run to finish and its generated .tlc-runs cleanup; then rerun focused workflow_transcript and full workspace gates through handoffctl. Do not commit until all gates are green.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
-  "observed_dirty": 5,
+  "observed_dirty": 7,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
   "owner": "ar1773-catalog-repair-luna56",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T07:16:53+00:00",
+  "updated_at": "2026-10-12T09:15:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
