@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Installed tool and workload execution qualification",
-  "updated_at": "2026-10-12T02:12:36+00:00",
+  "updated_at": "2026-10-12T02:12:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1780-installed-tool-workload-execution-qualification"
 }
 ---
@@ -107,3 +107,14 @@ hosted qualification absence is not a blocker for this development evidence.
 
 - 2026-10-12T02:12:36+00:00: Recorded command exit 0; command argv SHA-256
   c1c0caae80e747c9c7747f68eb0386af978938012e9904266f2e3215b3944691.
+
+- 2026-10-12T02:12:46+00:00: Qualification gates on exact ASB origin/main
+  ca494d506135c4a3263bea21621dcc97d817614c: cargo test --manifest-path crates/asb-cli/Cargo.toml
+  --test project_qualification (1 passed); pytest tests/workloads/test_external_qualification.py
+  tests/workloads/test_external_workload_runner.py tests/workloads/test_total_selector_coverage.py
+  (13 passed); cargo test --manifest-path crates/asb-cli/Cargo.toml --lib workload_ (22 passed).
+  Evidence covers fresh project/tool/run/report, catalog selector coverage including SWE-mini,
+  workload lifecycle identity/archive/recovery negatives, and content-safe evaluator/report
+  contracts. Full every-ID public install/run remains pending: catalog acquisition is immutable
+  remote archive based and no controlled local acquisition backend is exposed by this exact main; do
+  not misclassify that infrastructure boundary as benchmark failure or claim hosted qualification.
