@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Run default-parallel on clean 5a06ac1f, checkpoint exact head, obtain fresh independent review, then force-with-lease PR #599.",
+  "next_action": "Fresh independent exact-head review of 5a06ac1f; then force-with-lease PR #599, monitor all hosted checks, merge only green.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "5a06ac1fe6a14bb9d0963938a31a5e7cb906ec53",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:17:28+00:00",
+  "updated_at": "2026-10-12T04:17:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -450,3 +450,10 @@ as the affected successor linkage and evidence source.
   13e2aa5d148f9097f642e519d13f83dd607b03dabc7cdbb78c402e46fca20295.
 
 - 2026-10-12T04:17:28+00:00: Checkpointed source commit 29628628c91df43b6fd7770092d762d997065f29.
+
+- 2026-10-12T04:17:32+00:00: Current-main candidate exact clean head
+  5a06ac1fe6a14bb9d0963938a31a5e7cb906ec53. Default-parallel asb-cli gate passed 433/433 in 20.29s.
+  Prior make test product execution reached rustdoc successfully; only handoffctl lease-expiry
+  recording failed and was repaired by heartbeat/reconcile. Diff versus origin/main 1ce208b4 is
+  limited to discovery PROBE_TIMEOUT 750ms->2s, six discovery fixture semaphore guards, and matching
+  provenance digest; archive authority and full diagnostic catalog are inherited intact.
