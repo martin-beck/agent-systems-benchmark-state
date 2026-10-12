@@ -48,15 +48,18 @@ class HandoffRecoveryTest(unittest.TestCase):
         _, body = BASE.CORE.read_task(path)
         BASE.CORE.write_task(path, stale, body)
         self.refresh_views()
-        with patch.object(BASE.CORE, "commit", return_value=True):
+        with (
+            patch.object(BASE.CORE, "commit", return_value=True),
+            self.assertRaisesRegex(RuntimeError, "requires exactly one current session snapshot"),
+        ):
             BASE.CORE.mutate(
                 BASE.argparse.Namespace(
-                    task="AR-0001", expected_revision=2, note="No live process remains."
+                    task="AR-0001", expected_revision=2, note="Reject missing snapshot."
                 ),
                 "recover-expired",
             )
         recovered, _ = BASE.CORE.read_task(path)
-        self.assertEqual("Keep the current claim action.", recovered["next_action"])
+        self.assertEqual("in_progress", recovered["status"])
 
     def test_claim_process_disappearing_during_stat_read_is_absent(self) -> None:
         with (
@@ -86,12 +89,39 @@ class HandoffRecoveryTest(unittest.TestCase):
         )
         with (
             patch.object(BASE.CORE, "commit", return_value=True),
-            self.assertRaisesRegex(RuntimeError, "cannot verify the claim execution scope"),
+            self.assertRaisesRegex(RuntimeError, "requires exactly one current session snapshot"),
         ):
             BASE.CORE.mutate(
                 BASE.argparse.Namespace(task="AR-0001", expected_revision=1, note="Recover."),
                 "recover-expired",
             )
+
+    def test_recover_expired_rejects_duplicate_current_snapshots(self) -> None:
+        path = self.make_task(
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2000-01-01T00:00:00+00:00",
+            next_action="Keep the authoritative current step.",
+        )
+        current, _ = BASE.CORE.read_task(path)
+        snapshot = BASE.CORE.build_session_record(current, "update", "2026-09-24T12:00:00+00:00")
+        backend = BASE.SimpleNamespace(
+            load_tasks=BASE.CORE.GitBackend().load_tasks,
+            load_session_records=lambda _task_id: [snapshot, snapshot.copy()],
+        )
+        with (
+            patch.object(BASE.CORE, "storage_backend", return_value=backend),
+            patch.object(BASE.CORE, "commit", return_value=True),
+            self.assertRaisesRegex(RuntimeError, "requires exactly one current session snapshot"),
+        ):
+            BASE.CORE.mutate(
+                BASE.argparse.Namespace(
+                    task="AR-0001", expected_revision=1, note="Reject ambiguity."
+                ),
+                "recover-expired",
+            )
+        recovered, _ = BASE.CORE.read_task(path)
+        self.assertEqual("in_progress", recovered["status"])
 
     def test_legacy_claim_identity_remains_valid_but_cannot_recover_snapshotless(self) -> None:
         self.make_task(
@@ -103,9 +133,7 @@ class HandoffRecoveryTest(unittest.TestCase):
         self.assertFalse(any("invalid claim_process" in error for error in BASE.CORE.validate()))
         with (
             patch.object(BASE.CORE, "commit", return_value=True),
-            self.assertRaisesRegex(
-                RuntimeError, "requires a scope-bound claim-time worker identity"
-            ),
+            self.assertRaisesRegex(RuntimeError, "requires exactly one current session snapshot"),
         ):
             BASE.CORE.mutate(
                 BASE.argparse.Namespace(task="AR-0001", expected_revision=1, note="Recover."),

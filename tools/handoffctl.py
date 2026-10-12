@@ -2476,18 +2476,12 @@ def apply_recover_expired(args: argparse.Namespace, meta: Meta, _tasks: list[Tas
         if session["task_revision"] > meta["task_revision"]:
             raise RuntimeError("session snapshot revision is newer than the task")
     previous_owner = str(meta["owner"])
-    current_session = next(
-        (
-            session
-            for session in reversed(records)
-            if session["task_revision"] == meta["task_revision"]
-        ),
-        None,
-    )
-    if current_session is not None:
-        meta["next_action"] = str(current_session["next_action"])
-    else:
-        require_claimed_worker_absent(meta)
+    current_sessions = [
+        session for session in records if session["task_revision"] == meta["task_revision"]
+    ]
+    if len(current_sessions) != 1:
+        raise RuntimeError("expired-claim recovery requires exactly one current session snapshot")
+    meta["next_action"] = str(current_sessions[0]["next_action"])
     meta["status"] = "open"
     meta["owner"] = ""
     meta["claim_expires"] = ""
