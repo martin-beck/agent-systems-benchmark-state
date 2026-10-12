@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "checkpoint_commit": "56db629d58b725114b10e6fad8cc4772b16834d0",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T04:16:13+00:00",
   "depends_on": [
     "AR-1762"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "56db629d58b725114b10e6fad8cc4772b16834d0",
-  "owner": "",
+  "owner": "ar1803_parallel_fixture_luna56",
   "plan": "../plans/AR-1803-deterministic-parallel-fixture-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1803.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T03:31:11+00:00",
+  "updated_at": "2026-10-12T03:31:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -109,3 +109,5 @@ as the affected successor linkage and evidence source.
 - 2026-10-12T03:31:11+00:00: Dependency-safe reopening: AR-1762 is done. Preserve prior blocked
   evidence that repository make test passed but direct high-parallel Cargo exposed cross-module
   fixture contention; this task now requires true semaphore repair with hostile coverage.
+
+- 2026-10-12T03:31:13+00:00: Claimed by ar1803_parallel_fixture_luna56.
