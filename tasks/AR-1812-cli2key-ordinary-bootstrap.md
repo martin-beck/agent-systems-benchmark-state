@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Repair workspace gate failure: crates/asb-cli/tests/diagnostic_contract.rs rejects new lib.rs producer line identities after cli2key wiring; update the reviewed call-site identity contract (without weakening diagnostics), remove generated handoffctl __pycache__, rerun the failing test and full workspace gates.",
+  "next_action": "Refresh exact lib.rs producer identities in diagnostic_legacy_catalog_compact.rs, add reviewed entries for new cli2key mapper producers, then rerun focused and full offline gates.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "5c75c1a9fe36bb5f08c3cb4ccc20f213d496b65e",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:33:37+00:00",
+  "updated_at": "2026-10-12T11:34:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -173,3 +173,12 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T11:33:37+00:00: Recorded command exit 101; command argv SHA-256
   73c014881e4bac20da5cad5b01493117e6b6a48bd0e077cb2d62f831bf5d2516.
+
+- 2026-10-12T11:34:20+00:00: Focused gate command via handoffctl: env PYTHONDONTWRITEBYTECODE=1
+  CARGO_TARGET_DIR=/srv/data/projects/asb-target-ar1812-repair cargo test -p asb-cli --test
+  diagnostic_contract ordinary_cli_producers_are_mechanically_closed --offline -- --exact
+  --nocapture. Exit 101: diagnostic_contract reported every legacy_cli producer in
+  crates/asb-cli/src/lib.rs missing a reviewed call-site identity because commit 5c75c1a shifted
+  lib.rs lines and added three cli2key mapper producers. Repair will mechanically refresh only
+  lib.rs catalog line identities and add reviewed entries for the new typed mapper calls; no
+  diagnostic gate weakening.
