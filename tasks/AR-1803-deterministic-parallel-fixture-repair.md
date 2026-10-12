@@ -10,7 +10,7 @@
   "next_action": "Inspect shared process-backed discovery/source/provider fixture state and implement bounded cross-module isolation; add hostile contention regression before retry.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
-  "observed_head": "9817a71553c3c7686bbb907469aab7f782e44762",
+  "observed_head": "d2e44b6e4a26867a5b3c94751466a5091b802c76",
   "owner": "ar1803_parallel_fixture_luna56",
   "plan": "../plans/AR-1803-deterministic-parallel-fixture-repair.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T03:32:45+00:00",
+  "updated_at": "2026-10-12T03:32:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
