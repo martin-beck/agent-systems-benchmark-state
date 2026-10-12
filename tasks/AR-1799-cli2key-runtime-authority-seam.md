@@ -11,7 +11,7 @@
   "next_action": "Publish exact 40120658 PR from clean tree; monitor all hosted checks and merge only exact-head green.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
-  "observed_head": "401206582a8ac5912450533ee1da2d03bf64b391",
+  "observed_head": "1213928b8724cfc740404397b9e14161f56367cc",
   "owner": "ar1799-authority-luna56",
   "plan": "../plans/AR-1799-cli2key-runtime-authority-seam.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:53:57+00:00",
+  "updated_at": "2026-10-12T04:54:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
