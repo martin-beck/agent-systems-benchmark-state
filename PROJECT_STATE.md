@@ -35,7 +35,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 38202912884 | `1ce208b4e573` | push | Emulated aarch64 portability | in_progress:- |
-| 38202912855 | `1ce208b4e573` | push | Repository quality | in_progress:- |
+| 38202912855 | `1ce208b4e573` | push | Repository quality | completed:failure |
 | 38202912850 | `1ce208b4e573` | push | Formal assurance | in_progress:- |
 | 38202912815 | `1ce208b4e573` | push | Rust verification | in_progress:- |
 | 38202912809 | `1ce208b4e573` | push | Cross-repository development broker qualification | in_progress:- |
