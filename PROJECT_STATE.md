@@ -44,7 +44,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38187581930 | `c6cddcaf76cb` | pull_request | Hosted portability and native qualification | completed:success |
 | 38187581928 | `c6cddcaf76cb` | pull_request | Portable protected-main provenance | completed:failure |
 | 38187581924 | `c6cddcaf76cb` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38187581923 | `c6cddcaf76cb` | pull_request | Fault assurance | in_progress:- |
+| 38187581923 | `c6cddcaf76cb` | pull_request | Fault assurance | completed:success |
 | 38187581917 | `c6cddcaf76cb` | pull_request | Rust verification | completed:failure |
 | 38187581916 | `c6cddcaf76cb` | pull_request | Repository quality | completed:failure |
 | 38187473360 | `d7c08c106e52` | pull_request | Portable protected-main provenance | completed:failure |
