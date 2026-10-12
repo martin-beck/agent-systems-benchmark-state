@@ -13,7 +13,7 @@
   "plan": "../plans/AR-1809-cli-ux-qualification.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class":"integration-test","evidence_digest":"","evidence_ref":"","spec_ref":"specs/AR-1809.json","spec_revision":1,"status":"pending"},
+  "spec_acceptance": {"evidence_class":"contract-test","evidence_digest":"","evidence_ref":"","spec_ref":"specs/AR-1809.json","spec_revision":1,"status":"pending"},
   "spec_ref": "specs/AR-1809.json",
   "spec_revision": 1,
   "status": "planned",

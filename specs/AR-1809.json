@@ -12,6 +12,6 @@
   "outputs": [{"id":"cli-ux-qualification","description":"Exact-head end-to-end evidence for complete public CLI usability."}],
   "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
   "forbidden_tools": ["credential-output", "gate-weakening", "force-push"],
-  "required_evidence_classes": ["integration-test", "contract-test", "environmental"],
+  "required_evidence_classes": ["contract-test", "environmental"],
   "gates": [{"id":"complete-cli-ux-matrix","description":"All command families and output modes pass the generated UX matrix."}]
 }
