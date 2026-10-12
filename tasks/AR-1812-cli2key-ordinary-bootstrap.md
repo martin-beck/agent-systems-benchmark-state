@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "AR-1813 is the promoted prerequisite for the runtime-owned receipt and opaque factory contract. After it merges, re-open and claim AR-1812, then wire the verified receipt into ordinary run/sweep dispatch and complete review, merge, and post-merge verification.",
+  "next_action": "AR-1813 is done and branch rebased onto current main 5c843a12. Implement ordinary run/sweep resolver using runtime Cli2KeyRuntimeAuthority::bootstrap_from_receipt_bytes and verified installer receipt; add local/mock positive/negative lifecycle tests, then PR/review/merge.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "5c843a12e976bc7be6c32e9fc653e566bdf20450",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:09:55+00:00",
+  "updated_at": "2026-10-12T11:10:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -77,3 +77,7 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T11:09:52+00:00: Recorded command exit 0; command argv SHA-256
   cec9ac3df8e960560d557772da347f4f99305b0d06d797c609ff7c789cdc49f9.
+
+- 2026-10-12T11:10:15+00:00: Unblocked and claimed after AR-1813 release; existing branch rebased
+  cleanly to 5c843a12. Runtime receipt/factory API is now available; no live provider or TLC
+  required.
