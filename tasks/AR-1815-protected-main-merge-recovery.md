@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:02:43+00:00",
+  "updated_at": "2026-10-12T12:02:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -132,3 +132,6 @@ introduce a TLC/model-check dependency for development.
   analyzer download with HTTP 504 after retries; optional artifact classification failed
   consequentially. No product/policy assertion failed. Repeated infrastructure failure recorded;
   retry only the failed workflow, never bypass the gate.
+
+- 2026-10-12T12:02:46+00:00: Recorded command exit 0; command argv SHA-256
+  ee0828b2e7ad086de644de4f38823e83462721ce84eb45f16d6c8557ef024050.
