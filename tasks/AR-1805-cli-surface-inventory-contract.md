@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:7b085cf88dca04871a16632551b51f2ced70c2c3af263c8354fed143f0a1b512",
+    "evidence_ref": "quality/AR-1815-protected-main-recovery-postmerge-receipt.txt",
     "spec_ref": "specs/AR-1805.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1805.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent exact-head review accepted PR #608 at 0fec6465.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T12:50:59+00:00",
+  "updated_at": "2026-10-12T12:51:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -300,3 +300,8 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   preserved merge 15c80511 and exact-main failures remain documented.
 
 - 2026-10-12T12:50:59+00:00: Claimed by ar1805_postmerge_repair.
+
+- 2026-10-12T12:51:06+00:00: AR-1805 route inventory was independently accepted at 0fec6465 and
+  merged as preserved tree 15c80511; AR-1815 forward-only signed recovery e57982a restored
+  exact-main provenance and all required post-merge gates. Receipt is the durable evidence for the
+  completed contract result.
