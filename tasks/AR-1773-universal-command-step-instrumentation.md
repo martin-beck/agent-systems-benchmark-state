@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Hold AR-1773 at open with preserved diff; route compact diagnostic legacy catalog regeneration for widespread lib.rs line drift, then rerun diagnostic_contract once the catalog repair lands.",
+  "next_action": "Remain open awaiting separately bounded compact diagnostic catalog regeneration; preserve AR-1773 diff/worktree and rerun diagnostic/full gates only after that repair lands.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 5,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:37:02+00:00",
+  "updated_at": "2026-10-12T06:37:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -259,3 +259,10 @@ non-TTY compatibility.
   or publication.
 
 - 2026-10-12T06:37:02+00:00: Claimed by ar1772-progress-reporter-luna56.
+
+- 2026-10-12T06:37:49+00:00: Catalog repair investigation: AR-1773 source shifts lib.rs producers in
+  two regions (prepare-directory replacement has zero net line shift before 9266; benchmark reporter
+  replacement adds 11 lines after 9278). A naive global catalog shift was rejected. The focused
+  diagnostic_contract still reports unresolved identities beginning lib.rs:5710, 5731, 5744 and many
+  later callsites; output-parent AR1793 identity is present at human.rs:3609. This requires a
+  separately bounded generated-catalog reconciliation, not repeated AR-1773 retries.
