@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:42:58+00:00",
+  "updated_at": "2026-10-12T02:44:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -44,3 +44,6 @@ before AR-1801 can be accepted.
   evidence sources and are not prerequisites.
 
 - 2026-10-12T02:42:58+00:00: Claimed by ar1804_fixture_semaphore_luna56.
+
+- 2026-10-12T02:44:47+00:00: Recorded command exit 0; command argv SHA-256
+  425d2b20feee71dd5e65123d2845e5293727701272d0afde09147ad4a8f3e1a0.
