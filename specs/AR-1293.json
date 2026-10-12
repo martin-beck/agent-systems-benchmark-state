@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1293.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "merged-reviewed-head", "description": "PR #120 merges the independently reviewed exact candidate head with required hosted checks successful."},
+    {"id": "postmerge-development", "description": "The merged unsigned-development runner passes its focused tests and source-header verification without invoking TLC or model checking."}
+  ],
+  "definition_of_done": ["Exact reviewed candidate is merged to protected main.", "Post-merge development checks pass and formal qualification remains non-authorized."],
+  "inputs": [{"id": "pr-120", "description": "PR #120 candidate 21a8b4c16c36e1884df83b38e64c34d0658df672 and merge 48ab38c2dc617fa46442d16fd9e64b3e34b88098."}],
+  "outputs": [{"id": "postmerge-evidence", "description": "Privacy-safe exact-head merge and post-merge check evidence."}],
+  "allowed_tools": ["git", "gh", "python", "tools/handoffctl"],
+  "forbidden_tools": ["tlc", "model-check", "credential-output"],
+  "required_evidence_classes": ["mechanical", "contract-test", "hosted"],
+  "gates": [
+    {"id": "exact-head", "description": "Reviewed candidate and merge identities are exact."},
+    {"id": "postmerge", "description": "Focused unsigned-development and source-header checks pass on origin/main."}
+  ]
+}
