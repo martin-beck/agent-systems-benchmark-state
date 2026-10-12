@@ -43,6 +43,6 @@ Generated from local Git and GitHub. Do not edit.
 | 38251122338 | `ad7f1166afc5` | pull_request | Repository quality | completed:success |
 | 38251122336 | `ad7f1166afc5` | pull_request | Hosted portability and native qualification | completed:success |
 | 38251122325 | `ad7f1166afc5` | pull_request | Development formal assurance | completed:success |
-| 38251122324 | `ad7f1166afc5` | pull_request | Rust verification | queued:- |
+| 38251122324 | `ad7f1166afc5` | pull_request | Rust verification | in_progress:- |
 | 38251122318 | `ad7f1166afc5` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38250836110 | `eaa490f2fc88` | pull_request | Agent Workflow Quality shadow | completed:success |
