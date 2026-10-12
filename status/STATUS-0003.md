@@ -1107,11 +1107,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1773-catalog-repair-luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
@@ -2480,7 +2480,7 @@ flowchart LR
         AR_1770["AR-1770 - Done"]:::status_done
         AR_1771["AR-1771 - Done"]:::status_done
         AR_1772["AR-1772 - Done"]:::status_done
-        AR_1773["AR-1773 - In progress"]:::status_in_progress
+        AR_1773["AR-1773 - Done"]:::status_done
         AR_1774["AR-1774 - Planned"]:::status_planned
         AR_1775["AR-1775 - Done"]:::status_done
         AR_1776["AR-1776 - Done"]:::status_done

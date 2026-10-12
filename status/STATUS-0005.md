@@ -236,11 +236,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1773-catalog-repair-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Independent review complete: PR #605 exact head f78a1006 is signed/DCO/privacy clean; focused step_progress 4/4 passes. human_cli one outcome-matrix failure reproduces on parent 1494e474 with unchanged expected status (pre-existing environment failure); retain hosted/full gate evidence and do not merge until integration lane reconciles exact-head results. |
 | P0 | [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md): Development/formal workflow separation | coordinator-ar1811-merge | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. | Monitor PR #606 exact head d9972679899cf18c1c9ab87e694ad639a2c18786 until all required non-TLC checks are green; then obtain independent review, merge, exact-main post-merge verification, and durable closure. |
 
 ### Blocked (85)
@@ -430,7 +429,7 @@
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | User-requested stop recorded. Preserve interrupted exact-candidate retry artifacts and terminal uncertainty; do not accept or release. Reclaim only after explicit continuation and rerun a fresh bounded exact full-exhaustive attempt with PYTHONDONTWRITEBYTECODE=1. |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (599)
+### Done (600)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -604,3 +603,5 @@
 | P0 | [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md): First-customer release readiness and publication | Unclaimed | Prepare and publish the first-customer ASB release from the currently qualified main. | No further action; v0.1.0 was published and fresh customer-consumption verification is recorded. |
 | P0 | [AR-1462](../tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md): Pinned release toolchain and first-customer bundle workflow | Unclaimed | Establish reproducible supply-chain checks and first-customer release bundle publication workflow. | No further action; PR #337 merged and all seven exact-main post-merge workflows are green. |
 | P0 | [AR-1463](../tasks/AR-1463-current-main-requalification-after-capture.md): Current-main first-customer requalification after capture integration | Unclaimed | Exact protected main is requalified for first-customer production-like use: install/build, local/mock workloads, capture redaction and content-addressed sealing, strict offline replay, recovery/privacy/egress denial, coverage and deterministic/formal gates pass; existing v0.1.0 remains the verified release. | No new release publication; retain v0.1.0 as the verified customer release and repeat qualification only for a later protected-main revision. |
+| P0 | [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md): AR-1392 protected-main topology repair | Unclaimed | Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation. | Reconcile and doctor state after seven green exact-main workflows; topology repair complete. |
+| P0 | [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md): Control-to-runtime certificate-chain binding | Unclaimed | Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch. | Reconcile and doctor live state, then release AR-1471 done with merge and seven exact-main workflow evidence. |

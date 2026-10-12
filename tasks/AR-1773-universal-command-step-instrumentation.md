@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T12:09:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "ar1773-catalog-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T10:10:10+00:00",
+  "updated_at": "2026-10-12T10:10:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -462,3 +462,10 @@ non-TTY compatibility.
 - 2026-10-12T10:10:10+00:00: Exact reviewed merge tree is on protected main; all ten exact-main
   post-merge workflows are terminal success. Non-formal acceptance is complete; UD-1802 excludes
   manual TLC/TLA+/model-check execution.
+
+- 2026-10-12T10:10:13+00:00: Merged exact reviewed PR #605 as signed DCO merge
+  07c590e712df11e555228abf1b9de4add3510d4f. Exact-main post-merge workflows all terminal success:
+  Repository quality 38233479899, Rust verification 38233479931, Emulated aarch64 38233479731,
+  Credential-free 38233479685, Cross-repo 38233479635, Hosted portability 38233479875, Fault
+  assurance 38233479708, provenance 38233479752, headers 38233479656, formal 38233479756. Formal run
+  is informational under UD-1802; no manual TLC/TLA+/model-check execution.
