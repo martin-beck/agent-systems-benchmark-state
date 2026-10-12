@@ -2,14 +2,14 @@
 {
   "branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T07:11:27+00:00",
   "depends_on": [
     "AR-1729",
     "AR-1731"
   ],
   "id": "AR-1799",
   "next_action": "Implement runtime-only receipt-to-Cli2KeySidecar bootstrap and opaque LiveProviderAttempt issuance; add hostile lifecycle matrix before CLI integration.",
-  "owner": "",
+  "owner": "ar1799-authority-luna56",
   "plan": "../plans/AR-1799-cli2key-runtime-authority-seam.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1799.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:10:16+00:00",
+  "updated_at": "2026-10-12T04:11:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -50,3 +50,5 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:10:16+00:00: Legacy claim owner has no live worker process. Releasing for
   reassignment; prior lease heartbeat and historical evidence preserved.
+
+- 2026-10-12T04:11:27+00:00: Claimed by ar1799-authority-luna56.
