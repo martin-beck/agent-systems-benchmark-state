@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T02:59:13+00:00",
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Fresh exact-candidate full-exhaustive remains incomplete: generated exhaustive slice exits 1 under 5 GiB TLC heap after tens of millions of states. Rerun on a host with sufficient memory or an approved exact-tier execution; retain portable-smoke only as non-exhaustive. Do not accept or release.",
+  "next_action": "Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-12T00:41:57+00:00",
+  "updated_at": "2026-10-12T00:42:34+00:00",
   "worktree_key": ""
 }
 ---
@@ -161,3 +161,7 @@ workers checkpoint, retry, and continue useful work during integration churn.
 
 - 2026-10-12T00:41:57+00:00: Recorded command exit 1; command argv SHA-256
   35c2a0c44863d14f6aad688ee46521216a40e81cd294c0547a1a516a02d82724.
+
+- 2026-10-12T00:42:34+00:00: Recorded bounded 24 GiB exact-tier retry: all prior models and
+  lifecycle safety exploration passed; Java OOM occurred during liveness checking. No attestation,
+  acceptance, review request, or release.
