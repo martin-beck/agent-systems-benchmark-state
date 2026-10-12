@@ -71,7 +71,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair` | `feature/ar-1803-deterministic-parallel-fixture-repair` | `547e42dd90c9` | 0 | behind 22, ahead 0 |
 | `agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore` | `main` | `6761a6d0bcd5` | 0 | behind 28, ahead 0 |
 | `agent-systems-benchmark-ar-1805-cli-surface-contract` | `feature/ar-1805-cli-surface-inventory-contract` | `5a6c5477cd17` | 5 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/fixtures/human/public-family-output-v1.tsv`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/tests/diagnostic_journey.rs`, `crates/asb-cli/fixtures/human/command-surface-v1.json`, `crates/asb-cli/tests/command_surface_contract.rs` |
+| changed files | - | - | - | `crates/asb-cli/fixtures/human/command-surface-v1.json`, `crates/asb-cli/fixtures/human/public-family-output-v1.tsv`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/tests/command_surface_contract.rs`, `crates/asb-cli/tests/diagnostic_journey.rs` |
 | `agent-systems-benchmark-ar-1810-cli2key-standard-cli` | `feature/ar-1810-cli2key-standard-cli` | `07c590e712df` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1811-development-formal-workflow-separation` | `feature/ar-1811-development-formal-workflow-separation` | `d9972679899c` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap` | `feature/ar-1812-cli2key-ordinary-bootstrap` | `07c590e712df` | 0 | behind 3, ahead 0 |
