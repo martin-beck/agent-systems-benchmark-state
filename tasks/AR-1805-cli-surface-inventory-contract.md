@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent review found a full-gate regression at exact PR head a0d780b0.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:05:01+00:00",
+  "updated_at": "2026-10-12T11:05:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -195,3 +195,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   --offline fails at diagnostic_contract ordinary_cli_producers_are_mechanically_closed: legacy CLI
   producer lacks reviewed identity for human.rs lines 3570, 3611, 3702-3707. Hosted checks were
   still pending and no TLC was run. Review disposition: changes requested; do not merge.
+
+- 2026-10-12T11:05:42+00:00: Recorded command exit 0; command argv SHA-256
+  fa3556b91735662cfe83b71d9218fca3cbbd41fb3c466a9d180a974143ef7bb0.
