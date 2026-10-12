@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Repair run-seam timeout budget to remain bounded but tolerate legitimate long parallel process fixtures; rerun focused failing test and default-parallel.",
+  "next_action": "Rerun full make test and default-parallel after 60-second bounded run-seam budget; then signed clean commit/review.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 1,
   "observed_head": "8e9785f53e846b40e6d410a84f45d6f81f2b1308",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:10:08+00:00",
+  "updated_at": "2026-10-12T03:10:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -388,3 +388,7 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:10:06+00:00: Recorded command exit 0; command argv SHA-256
   3f3e1427b7604799620472b5cb7e4974f7de75ae8aafa8164627f24d26e86eb8.
+
+- 2026-10-12T03:10:13+00:00: Focused failing test now passes 1/1 with the run-seam bounded wait
+  increased from 5s to 60s. Hostile contention tests retain short 10ms timeout and recovery waits
+  remain 5s; only legitimate process-fixture serialization budget changed.

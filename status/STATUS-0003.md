@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Repair run-seam timeout budget to remain bounded but tolerate legitimate long parallel process fixtures; rerun focused failing test and default-parallel. |
+| Next action | Rerun full make test and default-parallel after 60-second bounded run-seam budget; then signed clean commit/review. |
 
 
 ## Dependency graph
