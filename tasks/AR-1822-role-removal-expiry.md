@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1822.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Expired role assignment cleanup semantics",
-  "updated_at": "2026-10-12T16:30:00+02:00",
+  "updated_at": "2026-10-12T15:07:35+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1822-role-removal-expiry"
 }
 ---
@@ -36,3 +36,6 @@ admission: removal may delete only the named structurally valid assignment,
 including an expired one, while list/check/doctor/admission remain fail-closed.
 No runtime authority is broadened and no role state is edited outside the
 transactional command.
+
+- 2026-10-12T15:07:35+00:00: dependencies verified; current-main v6 successor after AR-1823
+  publication
