@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1801.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "deterministic-probe", "description": "Full-workspace tool discovery produces the same bounded Cargo version observation independent of ambient PATH tools."},
+    {"id": "native-boundary", "description": "The repair retains exact native command argument arrays, timeout, output bounds, and unavailable classification."}
+  ],
+  "definition_of_done": ["Focused and full ASB CLI tests pass", "Independent review and exact-head CI pass", "Signed DCO merge and post-merge evidence are recorded"],
+  "inputs": [{"id": "ar-1762", "description": "Completed tool-discovery implementation and contract baseline"}],
+  "outputs": [{"id": "isolated-cargo-fixture", "description": "Deterministic Cargo version-probe fixture and regression tests"}],
+  "allowed_tools": ["cargo", "git", "tools/handoffctl"],
+  "forbidden_tools": ["ambient-version-assumption", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "tool-discovery-full", "description": "The complete ASB CLI test suite passes with deterministic tool-discovery observations."}]
+}
