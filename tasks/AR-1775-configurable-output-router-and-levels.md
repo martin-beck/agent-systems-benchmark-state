@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 322,
+  "task_revision": 323,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T01:26:50+00:00",
+  "updated_at": "2026-10-12T01:27:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -1011,3 +1011,13 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T01:26:50+00:00: Recorded command exit 0; command argv SHA-256
   853f3d080ad98e84c28aafee1cd2cb6d34faa42866c71aefcf2a70a7c750ab04.
+
+- 2026-10-12T01:27:19+00:00: INDEPENDENT REVIEW APPROVED: exact PR #597 head
+  9bb7d3f205c569fd309e4b2014f33049f00f7b5c, base protected-main
+  5201a0369193be5e093396d76bfa4b1c9b55e9db, reviewed topic tree
+  852f5b4ff6fa5f21a7120298e167e5a97487aa7a. Reviewed diff/acceptance for output-level routing,
+  bounded debug command-family marker, raw-artifact preservation, quiet/JSON silence, control panic
+  diagnostic routing, and touched CLI/catalog/provenance files. Verified exact-head hosted checks
+  terminal SUCCESS, signed commits and matching DCO trailers, and no credential/path/transcript
+  leakage or gate weakening. Approved for merge; do not merge in this review. This is technical
+  independent review evidence only; separate merge authorization remains required.
