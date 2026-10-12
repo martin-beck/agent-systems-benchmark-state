@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T03:55:40+00:00",
+  "updated_at": "2026-10-12T03:56:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -274,3 +274,6 @@ as the affected successor linkage and evidence source.
   make test green (workspace fmt/Clippy/tests/contract/provenance/rustdoc), default-parallel asb-cli
   431/431 in 20.09s, focused diagnostic contract, hostile semaphore tests. Review does not authorize
   merge; preserve exact head for hosted CI.
+
+- 2026-10-12T03:56:04+00:00: Recorded command exit 0; command argv SHA-256
+  f26079081646646f9b58f361752a4a22a20d111134ab56f6b26dbdafa84db4d8.
