@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Run cargo fmt check, clippy warnings-denied, rustdoc warnings-denied, and locked release build via handoffctl; then independently review exact diff and prepare PR.",
+  "next_action": "Run full workspace and all offline quality gates on clean repaired branch, then publish signed PR.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 1,
   "observed_head": "343f1c4a0842c27cdc632b7fa22ee30986866006",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:50:10+00:00",
+  "updated_at": "2026-10-12T11:50:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -317,3 +317,11 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T11:50:10+00:00: Recorded command exit 0; command argv SHA-256
   5b02e92046b6bf2dc18596d2da6ab32e3cfe0f5151df1edfbf3589202bb3dfed.
+
+- 2026-10-12T11:50:24+00:00: Exact failures captured: the 11:48:12 fmt/clippy/rustdoc/release
+  wrapper exited 101 before emitting per-gate output because the rebased diagnostic catalog still
+  had pre-cli2key lib.rs identities; the 11:49:45 retry hit the same
+  ordinary_cli_producers_are_mechanically_closed contract failure (exit 101), listing stale
+  identities beginning at lib.rs:337. Root cause was mapping against the implementation-bearing
+  HEAD^ instead of origin/main. Rebuilt the full 2319-entry catalog map from origin/main plus four
+  AR-1812 entries; focused exact test now passes.
