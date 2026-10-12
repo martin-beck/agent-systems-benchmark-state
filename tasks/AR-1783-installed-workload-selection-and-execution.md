@@ -12,7 +12,7 @@
   "next_action": "Create a signed DCO repair PR based on protected main 5201a036, obtain exact-head review and green checks, merge with tools/integration/merge_pr.py, verify exact-main receipts, then accept and release",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
-  "observed_head": "cdf8b131ba1ef4bae8f727133c1e1243cc55a2a7",
+  "observed_head": "506de984af222659b3b48824cef7d34b15118862",
   "owner": "ar1783_workload_selection_luna56",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "AR-1783 merged at 5201a036; post-merge policy and portable provenance rejected GitHub merge committer, requiring supported local-integration forward repair before acceptance",
-  "task_revision": 181,
+  "task_revision": 182,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:06:57+00:00",
+  "updated_at": "2026-10-12T01:07:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
