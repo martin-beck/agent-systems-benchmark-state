@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 244,
+  "task_revision": 245,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T01:03:36+00:00",
+  "updated_at": "2026-10-12T01:04:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -765,4 +765,7 @@ stdout envelope and silences all human/operational output on both streams.
   fc7a1b501a924f17ad8d60ed6075451190f1658bdaaedb6e1acf50866b0f1374.
 
 - 2026-10-12T01:03:36+00:00: Recorded command exit 8; command argv SHA-256
+  fc7a1b501a924f17ad8d60ed6075451190f1658bdaaedb6e1acf50866b0f1374.
+
+- 2026-10-12T01:04:13+00:00: Recorded command exit 8; command argv SHA-256
   fc7a1b501a924f17ad8d60ed6075451190f1658bdaaedb6e1acf50866b0f1374.
