@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one complete machine-checked inventory of every public ASB command and subcommand surface.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:01:34+00:00",
+  "updated_at": "2026-10-12T11:04:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -184,3 +184,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   catalog line collision classified the output-path test as cancellation. Repaired catalog call-site
   mapping, signed commit, rebased onto 5c843a12, pushed with force-with-lease; post-rebase focused
   test passes 5/5.
+
+- 2026-10-12T11:04:47+00:00: Recorded command exit 101; command argv SHA-256
+  e535f40e03c7cd48e895dace0edc7ff83c02ad09a44cf0b8426e54fc2fc98605.
