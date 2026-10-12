@@ -1675,7 +1675,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. |
-| Next action | PR #607 rebased exact head 7889b3bad4c03d1caca5eaa28ffd53b367ebf445; hosted non-TLC checks are running. Focused/full non-TLC gates pass; obtain independent review, then protected exact-head merge and post-merge verification. |
+| Next action | Protected merge 5c843a12e976bc7be6c32e9fc653e566bdf20450 is published from exact base 5a6c5477 and signed head 7889b3; exact-main post-merge workflows are running. Wait for all terminal success, then record receipt and release done. |
 
 ### AR-1814 — Remove stale TLC development ruleset requirement
 

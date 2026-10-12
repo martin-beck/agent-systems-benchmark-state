@@ -8,7 +8,7 @@
     "AR-1799"
   ],
   "id": "AR-1813",
-  "next_action": "PR #607 rebased exact head 7889b3bad4c03d1caca5eaa28ffd53b367ebf445; hosted non-TLC checks are running. Focused/full non-TLC gates pass; obtain independent review, then protected exact-head merge and post-merge verification.",
+  "next_action": "Protected merge 5c843a12e976bc7be6c32e9fc653e566bdf20450 is published from exact base 5a6c5477 and signed head 7889b3; exact-main post-merge workflows are running. Wait for all terminal success, then record receipt and release done.",
   "observed_branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "observed_dirty": 0,
   "observed_head": "7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
@@ -172,9 +172,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:54:16+00:00",
+  "updated_at": "2026-10-12T10:54:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -254,3 +254,6 @@ fabricate authority in the CLI or introduce a provider fallback.
   3f89559c7be03f821932a527202152574a956930b25f12d979f4ae8b932ce77a.
 
 - 2026-10-12T10:54:16+00:00: Heartbeat by ar1810-cli2key-luna56.
+
+- 2026-10-12T10:54:19+00:00: PR #607 merged exact-base signed two-parent commit 5c843a12; post-merge
+  verification pending; no TLC required.
