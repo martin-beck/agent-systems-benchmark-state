@@ -28,7 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@83c2c6635789` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.25 |
-| #607 | `feature/ar-1813-cli2key-runtime-factory-contract@7889b3bad4c0` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): expose verified cli2key receipt contract |
+| #607 | `feature/ar-1813-cli2key-runtime-factory-contract@7889b3bad4c0` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): expose verified cli2key receipt contract |
 
 ## Recent workflows
 
@@ -36,7 +36,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38237622686 | `7889b3bad4c0` | pull_request | Emulated aarch64 portability | completed:success |
 | 38237621295 | `7889b3bad4c0` | pull_request | Credential-free benchmark path | completed:success |
-| 38237621274 | `7889b3bad4c0` | pull_request | Repository quality | in_progress:- |
+| 38237621274 | `7889b3bad4c0` | pull_request | Repository quality | completed:success |
 | 38237621261 | `7889b3bad4c0` | pull_request | Fault assurance | completed:success |
 | 38237621229 | `7889b3bad4c0` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38237621170 | `7889b3bad4c0` | pull_request | Cross-repository development broker qualification | completed:success |
