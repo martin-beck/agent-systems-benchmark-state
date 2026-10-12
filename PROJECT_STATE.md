@@ -45,4 +45,4 @@ Generated from local Git and GitHub. Do not edit.
 | 38233830215 | `d9972679899c` | pull_request | Credential-free benchmark path | completed:success |
 | 38233830209 | `d9972679899c` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38233830205 | `d9972679899c` | pull_request | Portable protected-main provenance | completed:success |
-| 38233479931 | `07c590e712df` | push | Rust verification | in_progress:- |
+| 38233479931 | `07c590e712df` | push | Rust verification | completed:success |
