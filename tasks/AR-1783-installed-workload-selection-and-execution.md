@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Forward repair PR #596 is based on protected main 5201a036; exact signed+DCO head 506de984 passes local policy and hosted checks are running",
-  "task_revision": 203,
+  "task_revision": 204,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:12:42+00:00",
+  "updated_at": "2026-10-12T01:13:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -639,3 +639,6 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:12:42+00:00: Recorded command exit 0; command argv SHA-256
   9a1fee751489e25009af80310de0d5b87ff7a7c3aa470c3b47a1f6bc1d5be8a1.
+
+- 2026-10-12T01:13:17+00:00: Recorded command exit 8; command argv SHA-256
+  f283115d81ec675d674538bdc0103e155035d86d225e19704bb85d3842b0189b.
