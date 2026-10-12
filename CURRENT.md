@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1773](tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Run remaining full workspace gates after the human_cli expectation repair; then independently review the exact diff and prepare a signed DCO commit and PR only if all gates remain green. | ar1773-catalog-repair-luna56 |
-| P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Do not rerun unchanged: reclaim or relocate TLC disk-state storage under a verified bounded filesystem envelope, then obtain a fresh exact-candidate full-exhaustive run. No accept/release without attestation. | ar1796-reconcile-candidate-luna56 |
+| P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Run exact-candidate full-exhaustive with TMPDIR and TLC metadirs on verified /srv/data bounded storage; preserve candidate-bound attestation and record terminal result. Do not accept/release without complete attestation. | ar1796-reconcile-candidate-luna56 |
 
 ## Blocked
 

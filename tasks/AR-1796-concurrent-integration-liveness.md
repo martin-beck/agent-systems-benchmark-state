@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T11:09:09+00:00",
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Do not rerun unchanged: reclaim or relocate TLC disk-state storage under a verified bounded filesystem envelope, then obtain a fresh exact-candidate full-exhaustive run. No accept/release without attestation.",
+  "next_action": "Run exact-candidate full-exhaustive with TMPDIR and TLC metadirs on verified /srv/data bounded storage; preserve candidate-bound attestation and record terminal result. Do not accept/release without complete attestation.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-12T07:11:46+00:00",
+  "updated_at": "2026-10-12T07:14:13+00:00",
   "worktree_key": ""
 }
 ---
@@ -224,3 +224,11 @@ workers checkpoint, retry, and continue useful work during integration churn.
   44G available (95% used); /srv/data had 194G available. This is an infrastructure disk-capacity
   failure, not a model pass or acceptance; preserve exact candidate
   efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 and do not accept/release.
+
+- 2026-10-12T07:14:13+00:00: Bounded cleanup and capacity repair: confirmed failed prior run state
+  /tmp/tmp.2EywNrt6Li had no live process and was disposable TLC output; moved it intact to
+  /srv/data/projects/agent-systems-benchmark-state/.tlc-trash-archive/tmp.2EywNrt6Li (51G) to free
+  root without deleting state. Dedicated retry path created at
+  /srv/data/projects/agent-systems-benchmark-state/.tlc-runs/ar1796-56g-rerun. Current capacity:
+  root /tmp 95G free; /srv/data 143G free. Preserve exact candidate
+  efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0.

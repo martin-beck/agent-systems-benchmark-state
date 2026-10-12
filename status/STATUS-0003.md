@@ -1434,7 +1434,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep autonomous development live during concurrent protected-main integration. |
-| Next action | Do not rerun unchanged: reclaim or relocate TLC disk-state storage under a verified bounded filesystem envelope, then obtain a fresh exact-candidate full-exhaustive run. No accept/release without attestation. |
+| Next action | Run exact-candidate full-exhaustive with TMPDIR and TLC metadirs on verified /srv/data bounded storage; preserve candidate-bound attestation and record terminal result. Do not accept/release without complete attestation. |
 
 ### AR-1797 — Wire cli2key sidecar into live benchmark execution
 
