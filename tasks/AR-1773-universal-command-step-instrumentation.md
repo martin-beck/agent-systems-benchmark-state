@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:20:04+00:00",
+  "updated_at": "2026-10-12T06:20:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -59,3 +59,6 @@ non-TTY compatibility.
   AR-1773 to open for implementation.
 
 - 2026-10-12T06:20:04+00:00: Claimed by ar1772-progress-reporter-luna56.
+
+- 2026-10-12T06:20:24+00:00: Recorded command exit 0; command argv SHA-256
+  9cb963e1051a08fb292e41e233b68dd8e4e1d88e3773f2fa76bda9e3e21054f9.
