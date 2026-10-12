@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent review found a full-gate regression at exact PR head a0d780b0.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:06:43+00:00",
+  "updated_at": "2026-10-12T11:07:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -220,3 +220,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 - 2026-10-12T11:06:43+00:00: Full workspace test exposed stale catalog identities at human.rs 3570,
   3611, 3702-3707; refreshed generated catalog mappings, signed commit 5cb931f5, pushed. Review
   requested again.
+
+- 2026-10-12T11:07:24+00:00: Recorded command exit 101; command argv SHA-256
+  e535f40e03c7cd48e895dace0edc7ff83c02ad09a44cf0b8426e54fc2fc98605.
