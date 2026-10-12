@@ -1532,7 +1532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
-| Next action | Refresh PR #599 checks after merge-ref synchronization; no product repair unless repeat failure shows a changed head or source digest issue. |
+| Next action | Run default-parallel on clean 5a06ac1f, checkpoint exact head, obtain fresh independent review, then force-with-lease PR #599. |
 
 ### AR-1804 — Cross-module fixture semaphore
 

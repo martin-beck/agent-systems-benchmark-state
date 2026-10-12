@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Refresh PR #599 checks after merge-ref synchronization; no product repair unless repeat failure shows a changed head or source digest issue.",
+  "next_action": "Run default-parallel on clean 5a06ac1f, checkpoint exact head, obtain fresh independent review, then force-with-lease PR #599.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "5a06ac1fe6a14bb9d0963938a31a5e7cb906ec53",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:16:39+00:00",
+  "updated_at": "2026-10-12T04:16:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -438,3 +438,10 @@ as the affected successor linkage and evidence source.
   b343720ee939897beb5652e7e74142d82d37c0935901fab13a16372d1a6cee26.
 
 - 2026-10-12T04:16:39+00:00: Heartbeat by ar1803_parallel_fixture_luna56.
+
+- 2026-10-12T04:16:50+00:00: Current-main reconciliation candidate 5a06ac1f: make test product
+  output reached rustdoc successfully with no test failure, but handoffctl command exited 1 at
+  post-reconcile with exact stderr ERROR: AR-1803: expired claim because long gate crossed lease
+  expiry. Heartbeat and reconcile then succeeded; classify as lease/infrastructure boundary, not
+  product failure. Candidate preserves all contracts and only carries discovery timeout/guards
+  versus origin/main 1ce208b4.
