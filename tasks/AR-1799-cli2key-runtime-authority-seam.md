@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:36:28+00:00",
+  "updated_at": "2026-10-12T04:36:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -240,3 +240,6 @@ issue an opaque live attempt to the Codex adapter.
   Cli2KeyRuntimeAuthority bootstrap/attempt_factory lifecycle is not exercised by hostile
   cancellation, timeout, crash, or concurrent teardown tests; existing CLI tests exercise generic
   factories only. Fresh review remains required after adding authority-bound lifecycle matrix.
+
+- 2026-10-12T04:36:46+00:00: Recorded command exit 0; command argv SHA-256
+  5a0e106c9d7f12871812bae463d54756ada3eab68a8041ca4e0736744980eff8.
