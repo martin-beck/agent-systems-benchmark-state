@@ -11,8 +11,8 @@
   "id": "AR-1812",
   "next_action": "Commit signed catalog repair, run full offline workspace tests and applicable format/clippy/docs/build gates via handoffctl; then request independent review and PR.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
-  "observed_dirty": 1,
-  "observed_head": "5c75c1a9fe36bb5f08c3cb4ccc20f213d496b65e",
+  "observed_dirty": 0,
+  "observed_head": "edc345cff97b8a3a0985e105b2deb0a5248f47e4",
   "owner": "ar1812-repair-luna56",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:39:55+00:00",
+  "updated_at": "2026-10-12T11:39:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
