@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1810-cli2key-standard-cli",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T11:09:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1729",
     "AR-1731",
@@ -17,7 +17,7 @@
   "observed_branch": "feature/ar-1810-cli2key-standard-cli",
   "observed_dirty": 0,
   "observed_head": "07c590e712df11e555228abf1b9de4add3510d4f",
-  "owner": "ar1810-cli2key-luna56",
+  "owner": "",
   "plan": "../plans/AR-1810-cli2key-standard-cli-integration.md",
   "priority": "P0",
   "schema_version": 1,
@@ -31,11 +31,11 @@
   },
   "spec_ref": "specs/AR-1810.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Complete cli2key Standard CLI Integration",
-  "updated_at": "2026-10-12T10:09:50+00:00",
+  "updated_at": "2026-10-12T10:09:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1810-cli2key-standard-cli"
 }
 ---
@@ -108,3 +108,8 @@ dispatch.
   project-local receipt to Cli2KeyRuntimeAuthority. Existing handoffctl has no create-task command,
   so no successor was fabricated. AR-1810 remains implementation-blocked pending a
   coordinator-created prerequisite.
+
+- 2026-10-12T10:09:54+00:00: Blocked after repeated audit: no existing ownerless prerequisite owns
+  the missing runtime/control-to-CLI cli2key bootstrap seam, and handoffctl has no supported
+  task-creation command. Coordinator must create/promote that narrowly scoped prerequisite, then
+  re-open AR-1810 with the dependency recorded.
