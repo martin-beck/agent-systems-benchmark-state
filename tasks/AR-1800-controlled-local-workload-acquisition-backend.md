@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "checkpoint_commit": "b72da478631faa391f9be75d7cce1e813deb387d",
-  "claim_expires": "2026-10-12T04:25:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1782",
     "AR-1783"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "observed_dirty": 0,
   "observed_head": "b72da478631faa391f9be75d7cce1e813deb387d",
-  "owner": "ar1800_local_acquisition_luna56",
+  "owner": "",
   "plan": "../plans/AR-1800-controlled-local-workload-acquisition-backend.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1800.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T02:29:09+00:00",
+  "updated_at": "2026-10-12T02:31:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -196,3 +196,11 @@ must not weaken production acquisition, identity, or offline guarantees.
   workflow_transcript 3, and project_qualification 1; only environment-gated tests remained ignored.
   Exact clean signed product head b72da478631faa391f9be75d7cce1e813deb387d; checkpoint_commit and
   observed_head reconciled to this head.
+
+- 2026-10-12T02:31:59+00:00: AR-1800 is not accepted and is released blocked after independent
+  review of signed b72da478631faa391f9be75d7cce1e813deb387d. Review found acceptance gaps: URL-hash
+  archive helper and narrow unit test do not prove development-only fixture authority, complete
+  every-workload install/select/run/sweep/report/compare lifecycle, offline-after-install
+  qualification, hostile identity/size cases, or acquisition-versus-benchmark failure separation.
+  Successor AR-1802 is the dependency-safe repair; resume AR-1800 only after AR-1802 is complete and
+  exact reviewed gates are green.
