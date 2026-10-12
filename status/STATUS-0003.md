@@ -1251,8 +1251,8 @@
 | Owner | ar1783_workload_selection_luna56 |
 | Parent | None |
 | Children | None |
-| Summary | Refresh exact workflow provenance digest and requalify signed PR head e644f9b0 |
-| Next action | Poll PR #587 exact-head e644f9b0 hosted Policy/Rust/AArch64 checks; require all green plus independent review before merge, then verify protected main and release. |
+| Summary | Exact head e644f9b0 has all hosted required checks green; awaiting independent review |
+| Next action | Obtain independent exact-head review for PR #587 at e644f9b0; merge only after approval, then verify protected main and release AR with receipts. |
 
 ### AR-1784 — Command dependency registry and preflight
 

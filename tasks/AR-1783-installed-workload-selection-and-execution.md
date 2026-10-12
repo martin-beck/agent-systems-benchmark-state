@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Poll PR #587 exact-head e644f9b0 hosted Policy/Rust/AArch64 checks; require all green plus independent review before merge, then verify protected main and release.",
+  "next_action": "Obtain independent exact-head review for PR #587 at e644f9b0; merge only after approval, then verify protected main and release AR with receipts.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "e644f9b02c5b3f7d46b051691accc249fa8a3585",
@@ -28,10 +28,10 @@
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
-  "summary": "Refresh exact workflow provenance digest and requalify signed PR head e644f9b0",
-  "task_revision": 138,
+  "summary": "Exact head e644f9b0 has all hosted required checks green; awaiting independent review",
+  "task_revision": 139,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:57:00+00:00",
+  "updated_at": "2026-10-12T00:57:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -432,3 +432,14 @@ the suite from this end-to-end path.
 
 - 2026-10-12T00:57:00+00:00: Recorded command exit 0; command argv SHA-256
   6d4447c3a2ff59739c1940ca442dfe465d3971c5aa334916a1dc4d9a5033eba3.
+
+- 2026-10-12T00:57:26+00:00: Terminal hosted evidence: PR #587 exact head
+  e644f9b02c5b3f7d46b051691accc249fa8a3585. Rust checks succeeded at 00:55:20Z after Tests, Goose,
+  documentation, workload parity, and release build; Policy/coverage/supply-chain succeeded at
+  00:56:41Z after coverage floors, controlled-defect, diagnostic completeness, platform manifests,
+  clean-tree, and optional evidence steps. Emulated AArch64 succeeded at 00:53:35Z; all other
+  required checks (formal, faults, platform, credential-free, TUI, provenance, headers, AWQ)
+  succeeded. PR remains OPEN with no reviews/reviewDecision; independent exact-head review is the
+  only current gate before merge. Prior failures and repairs remain recorded: strict diagnostic
+  identity catalog repair and exact lib.rs provenance digest update in signed DCO commits f4fe84a0
+  and e644f9b0.
