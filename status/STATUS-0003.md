@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Move test_fixture_semaphore imports before its test module, run fmt/Clippy-focused gate, then rerun full make test. |
+| Next action | Restore the reviewed AR-1800/AR-1802 diagnostic catalog baseline matching the restored archive helper, then rerun diagnostic_contract and full make test. |
 
 
 ## Dependency graph

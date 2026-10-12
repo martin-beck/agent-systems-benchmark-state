@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Move test_fixture_semaphore imports before its test module, run fmt/Clippy-focused gate, then rerun full make test.",
+  "next_action": "Restore the reviewed AR-1800/AR-1802 diagnostic catalog baseline matching the restored archive helper, then rerun diagnostic_contract and full make test.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 3,
   "observed_head": "a8507d19e1998f2525462b9297c775ccac522095",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:02:58+00:00",
+  "updated_at": "2026-10-12T03:03:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -301,3 +301,13 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:02:58+00:00: Recorded command exit 2; command argv SHA-256
   3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
+
+- 2026-10-12T03:03:29+00:00: Exact full make test failure after import-order repair: all prior gates
+  and asb-cli tests ran, but diagnostic_contract::ordinary_cli_producers_are_mechanically_closed
+  failed because restored archive helper/test insertion shifted lib.rs legacy call-site lines while
+  the compact reviewed catalog remained from the reduced baseline. The panic listed many missing
+  reviewed identities in crates/asb-cli/src/lib.rs; cargo test ended exit 101 and make: ***
+  [Makefile:112: test] Error 101. This is generated diagnostic inventory drift caused by restoring
+  the removed AR-1800/AR-1802 archive helper, not a qualification failure. The reviewed catalog from
+  signed baseline b72da478 contains the corresponding archive identities and will be restored to
+  match the source.
