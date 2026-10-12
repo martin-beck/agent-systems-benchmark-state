@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1812.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T10:14:28+00:00",
+  "updated_at": "2026-10-12T11:09:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -65,3 +65,7 @@ fixtures and must not require a live provider or TLC.
   opaque sidecar-backed LiveProviderAttemptFactory/source and AR-1779 must publish a verified
   runtime receipt contract. No safe asb-cli-only implementation exists; no fallback or fabricated
   authority used.
+
+- 2026-10-12T11:09:26+00:00: AR-1813 is released done with runtime factory/receipt API, signed merge
+  5c843a12 and verified exact-main gates; prerequisite is now satisfied. Reopen for ordinary CLI
+  run/sweep integration.
