@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Monitor rerun PR #598 checks at exact head d625c822; merge only after every required check is green.",
+  "next_action": "Retry PR #598 with repository-supported merge method after squash rejection; then verify exact merged main and post-merge gates.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 0,
   "observed_head": "d625c822eac51820cc504d995f89988b736348fa",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 143,
+  "task_revision": 144,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:28:32+00:00",
+  "updated_at": "2026-10-12T03:28:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -550,3 +550,9 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:28:32+00:00: Recorded command exit 1; command argv SHA-256
   8f2ecda75326d2c08cbaca3d695183c68922cda359b2afc200e305394ff32462.
+
+- 2026-10-12T03:28:45+00:00: PR #598 exact-head checks all green at d625c822. Merge attempt command:
+  gh pr merge 598 --squash --delete-branch. Exact stderr: GraphQL: Squash merges are not allowed on
+  this repository. (mergePullRequest). Classification: repository merge-policy/setup error, not a
+  qualification failure. Next action: retry supported merge method after inspecting repository
+  policy.

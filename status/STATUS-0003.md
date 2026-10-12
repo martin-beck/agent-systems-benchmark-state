@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Monitor rerun PR #598 checks at exact head d625c822; merge only after every required check is green. |
+| Next action | Retry PR #598 with repository-supported merge method after squash rejection; then verify exact merged main and post-merge gates. |
 
 
 ## Dependency graph
