@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 751,
+  "task_revision": 752,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-29T16:14:18+00:00",
+  "updated_at": "2026-10-12T09:31:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2251,3 +2251,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-29T16:14:18+00:00: Released after removing development seed-digest dependency; remaining
   blockers are runner implementation/formal transition, not generated-seed availability.
+
+- 2026-10-12T09:31:46+00:00: UD-1802 removes TLC/TLA/model-check execution and reviewed seed
+  material as development blockers; reopen provider-free unsigned-development runner work.
