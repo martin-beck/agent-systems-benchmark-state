@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:55:58+00:00",
+  "updated_at": "2026-10-12T02:56:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -219,3 +219,6 @@ before AR-1801 can be accepted.
   *** [Makefile:112: test] Error 101. This is generated provenance drift caused by the intended
   source change, not a qualification failure. Updated
   docs/examples/asb-cli-workflow-v1.provenance.json cli_source_sha256 to the exact computed digest.
+
+- 2026-10-12T02:56:04+00:00: Recorded command exit 0; command argv SHA-256
+  9fa3b1f7c20f9bb18f17cec9e2173b9f8201e5e86dc42bbc13650027f662d9a7.
