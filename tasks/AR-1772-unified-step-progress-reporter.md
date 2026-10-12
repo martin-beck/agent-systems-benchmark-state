@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Header-policy repair pushed as signed head 65ee830e; local gates green; PR #602 rerun in progress.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:51:22+00:00",
+  "updated_at": "2026-10-12T05:51:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -443,3 +443,6 @@ allowed outside this helper.
 - 2026-10-12T05:51:22+00:00: At current poll, no hosted errors. Policy steps 1-12 passed through
   dependency/advisory checks; coverage is active. Rust formatting/clippy passed and tests active.
   aarch64 setup/toolchain/closed emulation passed and immutable guest materialization active.
+
+- 2026-10-12T05:51:58+00:00: Recorded command exit 0; command argv SHA-256
+  2f519d96eb605bcba36b84d9b6c76048308226f819f778d97349c231dbfcf4fa.
