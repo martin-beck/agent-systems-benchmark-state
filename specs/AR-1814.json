@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1814.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "minimal-rule-change", "description": "Only the obsolete TLC/Alloy required-status entry is removed from the ASB protected-main development ruleset."},
+    {"id": "native-gates", "description": "Signatures, non-fast-forward/deletion protection, all other required checks, and merge-method restrictions remain unchanged."},
+    {"id": "formal-separation", "description": "The final-delivery formal workflow remains the sole TLC/Alloy path and is not weakened."},
+    {"id": "mergeability", "description": "A green ordinary development PR without TLC is mergeable under the updated ruleset."}
+  ],
+  "definition_of_done": ["Ruleset repair is independently reviewed, exact evidence recorded, PR #606 merged through established gates, and post-merge verification passes."],
+  "inputs": [{"id": "ruleset", "description": "ASB protected main publication ruleset 24750310."}, {"id": "workflow", "description": "AR-1811 development/formal workflow separation."}],
+  "outputs": [{"id": "ruleset-receipt", "description": "Digest-only before/after ruleset receipt proving minimal TLC removal."}],
+  "allowed_tools": ["gh", "git", "tools/handoffctl"],
+  "forbidden_tools": ["admin-bypass", "force-push", "gate-weakening", "unrelated-ruleset-edit"],
+  "required_evidence_classes": ["mechanical", "hosted"],
+  "gates": [{"id": "minimal", "description": "Ruleset diff is exactly the TLC removal."}, {"id": "merge", "description": "PR #606 merges with ordinary checks and exact-main verification."}]
+}
