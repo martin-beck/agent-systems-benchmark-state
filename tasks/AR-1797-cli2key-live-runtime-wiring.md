@@ -11,7 +11,7 @@
     "AR-1779"
   ],
   "id": "AR-1797",
-  "next_action": "Independent worker must review exact signed/DCO head fd815d5e4de7e6399ee27db65e7b5723b224eddd, specifically authority lifetime, no-fallback cli2key dispatch, generated provenance binding, and green serial/default-parallel gates; then publish PR/CI.",
+  "next_action": "Fresh independent review must ACCEPT exact rebased signed/DCO head 912e218f8deff58d3c4702aa0855de136edb307f; then force-with-lease publish PR #603 and wait exact-head hosted checks before merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:58:11+00:00",
+  "updated_at": "2026-10-12T05:58:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -279,3 +279,9 @@ path and records only redacted provenance and typed outcome evidence.
 
 - 2026-10-12T05:58:11+00:00: Recorded command exit 0; command argv SHA-256
   b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
+
+- 2026-10-12T05:58:24+00:00: Initial merge-commit attempt was rejected because main advanced after
+  PR creation. Fetched current origin/main 4b14797a0892988a484a5171c45c4e8ec3c3d836 and cleanly
+  rebased the single reviewed product commit; new exact signed/DCO head is
+  912e218f8deff58d3c4702aa0855de136edb307f. No source conflicts or product changes beyond the
+  reviewed net diff.
