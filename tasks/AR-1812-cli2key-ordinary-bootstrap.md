@@ -18,20 +18,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:ecec50f190ab75fdf3d9d9bf43d140c8a465f01ed1b6e3a5eacc77c1db11d9ea",
+    "evidence_ref": "https://github.com/martin-beck/agent-systems-benchmark/pull/610",
     "spec_ref": "specs/AR-1812.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1812.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T12:13:40+00:00",
+  "updated_at": "2026-10-12T12:19:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -466,3 +466,16 @@ fixtures and must not require a live provider or TLC.
   test failure was observed. The earlier command used state-repository cwd and returned no
   Cargo.toml. After lock cleared, the same exact command completed exit 0 (recorded at 12:13:06Z),
   so this was transient reviewer tooling contention, not a product failure.
+
+- 2026-10-12T12:19:29+00:00: Independent exact-head review ACCEPTED for PR #610 head
+  736b970566d74644ab1dc9c51ff6dd890298c382 against base e57982a79fafa464bfac6b3c858226ffe08737e7.
+  Full diff reviewed: ordinary cli2key receipt/executable validation, runtime-owned opaque factory
+  composition, fail-closed error mapping, path propagation, generated diagnostic identities, and
+  exact workflow provenance digest. Catalog comparison preserved all prior path/identity/cause
+  tuples and added only four AR-1812 identities. Four commits are SSH-signed by Martin Beck with
+  matching DCO; git diff --check and privacy scan are clean. Focused diagnostic_contract 9/9 and
+  workflow_transcript 3/3 passed; independent full offline workspace cargo test completed exit 0.
+  All 14 exact-head required checks are terminal SUCCESS, including Rust, policy/coverage/supply
+  chain, emulated AArch64, credential-free, TUI/PTY, formal/assurance, fuzz/mutation, Loom/Kani,
+  provenance, headers, platform, and AWQ shadow. No TLC/model-check or live-provider requirement was
+  used. Review acceptance does not authorize merge.
