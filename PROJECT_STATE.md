@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `5201a0369193be5e093396d76bfa4b1c9b55e9db`
-- Local origin/main: `0a2039c448d4ab0ed3c9065c35cf90a77b94db6a`
+- Local origin/main: `5201a0369193be5e093396d76bfa4b1c9b55e9db`
 - Primary worktree head: `24cb72d97422a9b541d4d3fa8406d9dbe8602b1c`
 
 ## Open pull requests
@@ -41,8 +41,8 @@ Generated from local Git and GitHub. Do not edit.
 | 38190265324 | `5201a0369193` | push | Formal assurance | queued:- |
 | 38190265314 | `5201a0369193` | push | Huawei MIT source headers | completed:success |
 | 38190265310 | `5201a0369193` | push | Hosted portability and native qualification | queued:- |
-| 38190265304 | `5201a0369193` | push | Fault assurance | queued:- |
+| 38190265304 | `5201a0369193` | push | Fault assurance | in_progress:- |
 | 38190265298 | `5201a0369193` | push | Credential-free benchmark path | in_progress:- |
-| 38190265292 | `5201a0369193` | push | Repository quality | queued:- |
+| 38190265292 | `5201a0369193` | push | Repository quality | in_progress:- |
 | 38190264050 | `f805a4e46c98` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 38190264037 | `f805a4e46c98` | pull_request | Portable protected-main provenance | completed:success |
