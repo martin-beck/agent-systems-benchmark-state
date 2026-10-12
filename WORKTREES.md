@@ -67,6 +67,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution` | `feature/ar-1783-installed-workload-selection-and-execution` | `aca3f79b3256` | 0 | behind 50, ahead 0 |
 | `agent-systems-benchmark-ar-1798-pinned-source-checkout-acquisition` | `feature/ar-1798-pinned-source-checkout-acquisition` | `55a789348f6f` | 0 | behind 115, ahead 0 |
 | `agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam` | `feature/ar-1799-cli2key-runtime-authority-seam` | `1213928b8724` | 0 | behind 29, ahead 0 |
+| `agent-systems-benchmark-ar-1799-tui-install-rustup-invalid` | `repair/ar-1799-tui-install-rustup-invalid` | `a0a978f13495` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend` | `feature/ar-1800-controlled-local-workload-acquisition-backend` | `1494e4741968` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation` | `feature/ar-1801-tool-discovery-cargo-fixture-isolation` | `e0e44a7d8b45` | 0 | behind 28, ahead 0 |
 | `agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority` | `feature/ar-1802-controlled-workload-matrix-and-fixture-authority` | `c9ea7246e6d4` | 0 | behind 38, ahead 0 |
