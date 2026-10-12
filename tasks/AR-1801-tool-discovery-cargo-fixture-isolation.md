@@ -9,8 +9,8 @@
   "id": "AR-1801",
   "next_action": "Repair the tool-discovery version-probe fixture so full-workspace tests isolate ambient Cargo and retain deterministic unavailable/version observations.",
   "observed_branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
-  "observed_dirty": 1,
-  "observed_head": "98327152f2e92308b5bcf5b21cfe0c9f285cf950",
+  "observed_dirty": 0,
+  "observed_head": "c20bb7bb44481846e08b135ea6b5fff83cd72617",
   "owner": "ar1801-cargo-fixture-luna56",
   "plan": "../plans/AR-1801-tool-discovery-cargo-fixture-isolation.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T02:19:59+00:00",
+  "updated_at": "2026-10-12T02:20:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
