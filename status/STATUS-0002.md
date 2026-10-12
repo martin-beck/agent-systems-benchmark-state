@@ -1,10 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
 | Summary | Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract. |
 | Next action | Done via successor AR-1448: runtime-owned replay authority source merged and post-merge verified at f03d9e484d6ca73eacdbd5476980bf33ca737540. Preserve strict CLI-only fail-closed behavior and keep optional live capture AR-1330 separate. |
 
@@ -4701,3 +4696,8 @@
 ### AR-1688 — Runner-owned cassette capture and replay qualification
 
 | Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |

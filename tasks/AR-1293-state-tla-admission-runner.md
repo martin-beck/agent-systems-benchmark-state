@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T10:32:11+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Use the generated-seed unsigned-development path for provider-free runner and integration tests, recording qualification_authorized=false. Do not wait on archival seed recovery; create a separate formal-only successor only if signed publication qualification is explicitly requested.",
+  "next_action": "Independent review of c915ecbbca; run exact-head applicable state gates and post-merge verification without TLC.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 755,
+  "task_revision": 756,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T09:33:37+00:00",
+  "updated_at": "2026-10-12T09:34:13+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2262,3 +2262,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-10-12T09:33:37+00:00: Recorded command exit 0; command argv SHA-256
   001d2b2e06d1b20d52ade090ae78f6efedd82495ff5339dae6b64de7e53362b8.
+
+- 2026-10-12T09:34:13+00:00: Implemented tools/unsigned_development_runner.py and focused tests in
+  signed DCO commit c915ecbbca. The provider-free unsigned-development path creates a disposable
+  local seed, retains only its digest, emits provider_required=false, formal_execution=false, and
+  qualification_authorized=false, and never invokes TLC/TLA+ or a provider. Focused tests pass via
+  handoffctl run with PYTHONDONTWRITEBYTECODE=1.

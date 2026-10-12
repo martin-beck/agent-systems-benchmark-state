@@ -4532,7 +4532,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. |
-| Next action | Use the generated-seed unsigned-development path for provider-free runner and integration tests, recording qualification_authorized=false. Do not wait on archival seed recovery; create a separate formal-only successor only if signed publication qualification is explicitly requested. |
+| Next action | Independent review of c915ecbbca; run exact-head applicable state gates and post-merge verification without TLC. |
 
 ### AR-1294 — State formal-gate baseline integrity
 
@@ -5002,3 +5002,8 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | --- | --- |
 | Status | done |
 | Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
