@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1772.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:29:19+00:00",
+  "updated_at": "2026-10-12T05:29:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -207,3 +207,6 @@ allowed outside this helper.
   diagnostic focused tests pass, but full asb-cli has two deterministic Cargo probe fixture failures
   (ambient cargo 1.0 observed instead of null/version_probe_unavailable), 430/432 passed. AR-1803 is
   complete but does not repair these distinct probe fixtures. No product PR/merge or gate waiver.
+
+- 2026-10-12T05:29:39+00:00: Reopen stale AR-1772 candidate after AR-1803 completion; rebase
+  reporter diff onto current protected main and rerun exact gates.
