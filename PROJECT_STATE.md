@@ -35,7 +35,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 38239924513 | `a0d780b0f818` | pull_request | Huawei MIT source headers | completed:success |
-| 38239924506 | `a0d780b0f818` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 38239924506 | `a0d780b0f818` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38239924495 | `a0d780b0f818` | pull_request | Development formal assurance | pending:- |
 | 38239924443 | `a0d780b0f818` | pull_request | Credential-free benchmark path | pending:- |
 | 38239924413 | `a0d780b0f818` | pull_request | Fault assurance | pending:- |
