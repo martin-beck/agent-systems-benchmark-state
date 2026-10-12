@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Run full asb-cli lib and workspace make test via handoffctl; inspect clean diff, then commit signed DCO and request independent exact-head review.",
+  "next_action": "Preserve uncommitted product diff; run bounded baseline/current-main comparison or route this existing diagnostic mapping to its owner, then rerun full asb-cli/workspace gates before signed commit/review.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 4,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:28:59+00:00",
+  "updated_at": "2026-10-12T06:29:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -163,3 +163,13 @@ non-TTY compatibility.
 
 - 2026-10-12T06:28:59+00:00: Recorded command exit 101; command argv SHA-256
   f3a7eaae767efe548a7897f963b186dacc7cb27f03d16a606d47a4d6597b10f7.
+
+- 2026-10-12T06:29:13+00:00: Full asb-cli lib gate exact failure captured:
+  human::tests::error_presentations_name_cause_state_and_recovery_without_private_text fails at
+  human.rs:3662 for CliError::legacy_validation("output parent is
+  unavailable").with_path(/tmp/asb-results/report.json). Actual output says Cause: the cause is not
+  yet classified by the reviewed diagnostic catalog; test requires "required parent directory does
+  not exist" and recovery "Create or select the named parent directory". This diagnostic mapping is
+  outside the AR-1773 diff (only human.rs serve render_start and its serve assertion changed);
+  focused AR-1773 tests pass. Full gate remains non-green and must not be waived; classify as
+  ambient current-main diagnostic-contract blocker before review.

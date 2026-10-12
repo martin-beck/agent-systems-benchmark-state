@@ -1112,7 +1112,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
-| Next action | Run full asb-cli lib and workspace make test via handoffctl; inspect clean diff, then commit signed DCO and request independent exact-head review. |
+| Next action | Preserve uncommitted product diff; run bounded baseline/current-main comparison or route this existing diagnostic mapping to its owner, then rerun full asb-cli/workspace gates before signed commit/review. |
 
 ### AR-1774 — Status and progress completeness CI
 

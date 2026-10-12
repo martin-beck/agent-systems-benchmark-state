@@ -194,7 +194,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1772-progress-reporter-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Run full asb-cli lib and workspace make test via handoffctl; inspect clean diff, then commit signed DCO and request independent exact-head review. |
+| P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1772-progress-reporter-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Preserve uncommitted product diff; run bounded baseline/current-main comparison or route this existing diagnostic mapping to its owner, then rerun full asb-cli/workspace gates before signed commit/review. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Run one bounded exact-candidate full-exhaustive retry with verified host envelope; preserve TLC_ATTESTATION_PATH and record terminal result. Do not accept or release without complete attestation. |
 
 ### Blocked (86)
