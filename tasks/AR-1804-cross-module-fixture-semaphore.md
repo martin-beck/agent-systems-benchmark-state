@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Run full make test and default-parallel gates after archive-contract restoration and bounded semaphore tests; then commit/checkpoint exact clean signed head for re-review.",
+  "next_action": "Move test_fixture_semaphore imports before its test module, run fmt/Clippy-focused gate, then rerun full make test.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 3,
   "observed_head": "a8507d19e1998f2525462b9297c775ccac522095",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:01:16+00:00",
+  "updated_at": "2026-10-12T03:01:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -288,3 +288,10 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:01:16+00:00: Recorded command exit 2; command argv SHA-256
   3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
+
+- 2026-10-12T03:01:28+00:00: Exact full make test exit-101 diagnosis after review repair: Clippy
+  rejected test_fixture_semaphore.rs with items-after-test-module at line 72 because OsString/Write
+  imports were accidentally inserted after mod tests (lines 94-95). Stderr: error items after a test
+  module; -D clippy::items-after-test-module; make: *** [Makefile:111: test] Error 101. This is a
+  source ordering/lint failure, not a qualification failure. Moved the imports to the module header
+  before retry.

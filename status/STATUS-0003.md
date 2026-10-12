@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Run full make test and default-parallel gates after archive-contract restoration and bounded semaphore tests; then commit/checkpoint exact clean signed head for re-review. |
+| Next action | Move test_fixture_semaphore imports before its test module, run fmt/Clippy-focused gate, then rerun full make test. |
 
 
 ## Dependency graph
