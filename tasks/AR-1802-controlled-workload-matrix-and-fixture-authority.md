@@ -18,19 +18,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:3b3cba7fd08c3ce00e9c794d2050bfa5d0e1d685ee0466c4c9d6db97df3fd3f6",
+    "evidence_ref": "quality/AR-1802-postmerge-receipt.txt",
     "spec_ref": "specs/AR-1802.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1802.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T04:17:28+00:00",
+  "updated_at": "2026-10-12T04:17:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -335,3 +335,7 @@ remains explicitly unaccepted and blocked until this repair is complete.
 
 - 2026-10-12T04:17:28+00:00: Recorded command exit 0; command argv SHA-256
   3e273f0fa3db565a19beedbe244ad7e19b9b4338304211fdd1248f2d605930ab.
+
+- 2026-10-12T04:17:37+00:00: Accepted AR-1802 task spec against exact merged main 1ce208b4: all
+  hosted PR checks green, non-squash merge preserved reviewed c9ea7246, and fresh post-merge make
+  test passed.
