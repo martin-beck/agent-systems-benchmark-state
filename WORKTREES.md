@@ -299,7 +299,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1765-merge.X54pFB` | `DETACHED` | `3cd8ae24048d` | 0 | behind 225, ahead 0 |
 | `asb-ar1775-6b` | `DETACHED` | `6b5040e9366a` | 0 | behind 53, ahead 1 |
 | `asb-ar1775-main-current` | `DETACHED` | `0a2039c448d4` | 0 | behind 0, ahead 0 |
-| `asb-ar1775-v2` | `feature/ar-1775-configurable-output-router-and-levels-v2` | `3cb37021e2c2` | 0 | behind 53, ahead 2 |
+| `asb-ar1775-v2` | `feature/ar-1775-configurable-output-router-and-levels-v2` | `c6cddcaf76cb` | 0 | behind 0, ahead 3 |
 | `asb-ar1781-repair2` | `repair/ar-1781-provenance-descendant-v2` | `323aa8c26374` | 0 | behind 115, ahead 0 |
 | `asb-ar1782-baseline` | `DETACHED` | `24cb72d97422` | 0 | behind 53, ahead 0 |
 | `asb-merge-568` | `DETACHED` | `4245b4a1046c` | 0 | behind 145, ahead 0 |
