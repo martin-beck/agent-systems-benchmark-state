@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
 | #587 | `feature/ar-1783-installed-workload-selection-and-execution@d86694333eff` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): bind project runs to installed workloads |
-| #588 | `feature/ar-1775-configurable-output-router-and-levels@3cb37021e2c2` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): configurable output router levels |
+| #588 | `feature/ar-1775-configurable-output-router-and-levels@3cb37021e2c2` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): configurable output router levels |
 
 ## Recent workflows
 
@@ -38,9 +38,9 @@ Generated from local Git and GitHub. Do not edit.
 | 38187126386 | `3cb37021e2c2` | pull_request | Formal assurance | in_progress:- |
 | 38187126384 | `3cb37021e2c2` | pull_request | Fault assurance | in_progress:- |
 | 38187126378 | `3cb37021e2c2` | pull_request | Rust verification | in_progress:- |
-| 38187126372 | `3cb37021e2c2` | pull_request | Repository quality | in_progress:- |
+| 38187126372 | `3cb37021e2c2` | pull_request | Repository quality | completed:failure |
 | 38187126353 | `3cb37021e2c2` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38187126350 | `3cb37021e2c2` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38187126350 | `3cb37021e2c2` | pull_request | Hosted portability and native qualification | completed:failure |
 | 38187126346 | `3cb37021e2c2` | pull_request | Portable protected-main provenance | completed:failure |
 | 38187126345 | `3cb37021e2c2` | pull_request | Huawei MIT source headers | completed:success |
 | 38187126343 | `3cb37021e2c2` | pull_request | Agent Workflow Quality shadow | completed:success |
