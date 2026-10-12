@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:50:24+00:00",
+  "updated_at": "2026-10-12T11:51:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -325,3 +325,6 @@ fixtures and must not require a live provider or TLC.
   identities beginning at lib.rs:337. Root cause was mapping against the implementation-bearing
   HEAD^ instead of origin/main. Rebuilt the full 2319-entry catalog map from origin/main plus four
   AR-1812 entries; focused exact test now passes.
+
+- 2026-10-12T11:51:25+00:00: Recorded command exit 0; command argv SHA-256
+  150dd5043b1d74f8d7b4e9843223cf8ed7ca914fdf17c316bc0068d07205f3cd.
