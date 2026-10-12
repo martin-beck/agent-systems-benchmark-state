@@ -9,7 +9,7 @@
   "id": "AR-1772",
   "next_action": "Blocked on dedicated Cargo tool-discovery fixture isolation successor; reporter focused/diagnostic tests are green, but exact full asb-cli gate has two ambient Cargo probe failures. Do not accept or waive until full gate is green.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "763c0f4f60fede50ad63a7b9398aa468ca2d4e61",
   "owner": "ar1772-progress-reporter-luna56",
   "plan": "../plans/AR-1772-unified-step-progress-reporter.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:31:39+00:00",
+  "updated_at": "2026-10-12T05:31:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
