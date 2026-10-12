@@ -43,3 +43,17 @@ released or usable while post-merge assurance is pending or failed.
 
 Release to `done`, `open`, or `blocked` with the merge and post-merge evidence; reconcile and
 run the live doctor.
+# ASB downstream coordinator launcher
+
+The files under `vendor/agent-workflow-coordinator` and the matching
+`tools/handoffctl*` snapshot are immutable and must pass `coordinator.vendor.json`
+verification. ASB-specific projection recovery is provided by
+`tools/awq-handoffctl`, which loads that exact snapshot without changing its
+source bytes. Use this launcher for ASB state mutations and reconciliation; it
+keeps repository-local Python bytecode disabled and recovers interrupted
+derived-view publication before dispatching the pinned Coordinator command.
+
+The normal upstream `tools/handoffctl` remains available for compatibility and
+is not patched downstream. A Coordinator behavior change belongs in an
+upstream release and must be adopted through the documented immutable vendor
+upgrade procedure.

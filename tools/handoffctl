@@ -3,14 +3,7 @@
 # SPDX-License-Identifier: MIT
 """Command-line entry point for the coordination database."""
 
-import os
 import sys
-
-# Keep supported coordinator launches from creating repository-local bytecode.
-# This must run before importing either the fast path or the core module so
-# callers do not need to remember a process-specific environment variable.
-os.environ["PYTHONDONTWRITEBYTECODE"] = "1"
-sys.dont_write_bytecode = True
 
 if len(sys.argv) > 2 and sys.argv[1] == "fast":
     from fast_receipt_socket import try_socket_fast
