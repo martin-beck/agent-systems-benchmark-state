@@ -3,7 +3,13 @@
   "branch": "feature/ar-1797-cli2key-live-runtime-wiring",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1729", "AR-1731", "AR-1732", "AR-1733", "AR-1779"],
+  "depends_on": [
+    "AR-1729",
+    "AR-1731",
+    "AR-1732",
+    "AR-1733",
+    "AR-1779"
+  ],
   "id": "AR-1797",
   "next_action": "Wire the verified project-local cli2key bridge into the runtime-owned sidecar launch path, then qualify fake and opt-in live benchmark execution without exposing credentials.",
   "observed_branch": "",
@@ -13,14 +19,21 @@
   "plan": "../plans/AR-1797-cli2key-live-runtime-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "environmental", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1797.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "environmental",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1797.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1797.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-11T12:04:44Z",
+  "updated_at": "2026-10-12T02:00:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -39,3 +52,6 @@ fall back to OpenRouter, API keys, replay, or another provider, or describe the
 development bridge as official OpenAI support. A credential-free fake is required
 in CI; one opt-in user-authorized live development benchmark proves the complete
 path and records only redacted provenance and typed outcome evidence.
+
+- 2026-10-12T02:00:43+00:00: Dependencies AR-1729, AR-1731, AR-1732, AR-1733, and AR-1779 are done
+  with passing acceptance; promote for implementation.
