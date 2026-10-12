@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Request fresh independent exact-head review of 1be93177; publication remains blocked until ACCEPT.",
+  "next_action": "Add direct authority-bound cancellation, timeout, and concurrent teardown tests exercising attempt_factory and retained attempts; rerun full gates and request another exact-head review.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "1be931771b7db685c9369d8b051c62e0fe25b44a",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:41:50+00:00",
+  "updated_at": "2026-10-12T04:45:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -280,3 +280,10 @@ issue an opaque live attempt to the Codex adapter.
   bootstrap lifecycle fake pinned executable test plus crash/malformed readiness hostile matrix;
   prior revocation fence and relay fence retained. Focused runtime 10 tests, separate CLI dispatch
   tests, and full make test (fmt/clippy/workspace tests/docs) all green.
+
+- 2026-10-12T04:45:53+00:00: Independent final-head review of 1be93177: REJECT. SSH signature/DCO
+  and diff-check verified; authority attempt/relay fences, bootstrap fake, crash, malformed
+  readiness, focused 10 tests, separate generic CLI dispatch tests, and full make test are green.
+  Acceptance still fails required matrix: no authority-bound cancellation, timeout, or concurrent
+  teardown tests directly exercise attempt_factory; generic CLI timeout/concurrency tests do not
+  prove Cli2KeyRuntimeAuthority lifecycle.
