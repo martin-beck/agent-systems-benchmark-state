@@ -11,7 +11,7 @@
   "id": "AR-1812",
   "next_action": "Run cargo fmt check, clippy warnings-denied, rustdoc warnings-denied, and locked release build via handoffctl; then independently review exact diff and prepare PR.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "e8356bf4e494250b8a24028b54aa757218990f8c",
   "owner": "ar1812-repair-luna56",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:47:33+00:00",
+  "updated_at": "2026-10-12T11:47:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
