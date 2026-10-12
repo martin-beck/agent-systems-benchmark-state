@@ -11,7 +11,7 @@
     "AR-1779"
   ],
   "id": "AR-1797",
-  "next_action": "Fresh independent review must ACCEPT exact rebased signed/DCO head 912e218f8deff58d3c4702aa0855de136edb307f; then force-with-lease publish PR #603 and wait exact-head hosted checks before merge.",
+  "next_action": "Record post-merge acceptance for merge commit 9c5e557195df34675e2f5427e6ec3dff3d433254, then release AR-1797 done and reconcile/doctor.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T06:16:31+00:00",
+  "updated_at": "2026-10-12T06:17:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -312,3 +312,10 @@ path and records only redacted provenance and typed outcome evidence.
 
 - 2026-10-12T06:16:31+00:00: Recorded command exit 0; command argv SHA-256
   3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
+
+- 2026-10-12T06:17:12+00:00: Post-merge verification: PR #603 merged non-squash as
+  9c5e557195df34675e2f5427e6ec3dff3d433254; origin/main product ref matched this merge commit and
+  merge tree matched reviewed net tree. Exact-main make test completed all workspace, integration,
+  and doc-test suites green; handoffctl post-reconcile initially failed only because generated
+  tools/__pycache__/handoffctl.cpython-312.pyc exceeded the 200 KiB state-file guard. Removed only
+  generated pycache, reconciled, and handoffctl doctor --live is green.

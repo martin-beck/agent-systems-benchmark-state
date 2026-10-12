@@ -199,7 +199,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0: 24G retry durably failed with liveness OOM. A subsequent 48G/64G attempt has no live process, attestation, or durable handoffctl task result visible; treat it as interrupted/unknown, do not accept or release, and reconcile before any new bounded retry. |
-| P0 | [AR-1797](../tasks/AR-1797-cli2key-live-runtime-wiring.md): Wire cli2key sidecar into live benchmark execution | ar1797_cli2key_repair_luna56 | Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark. | Fresh independent review must ACCEPT exact rebased signed/DCO head 912e218f8deff58d3c4702aa0855de136edb307f; then force-with-lease publish PR #603 and wait exact-head hosted checks before merge. |
+| P0 | [AR-1797](../tasks/AR-1797-cli2key-live-runtime-wiring.md): Wire cli2key sidecar into live benchmark execution | ar1797_cli2key_repair_luna56 | Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark. | Record post-merge acceptance for merge commit 9c5e557195df34675e2f5427e6ec3dff3d433254, then release AR-1797 done and reconcile/doctor. |
 
 ### Blocked (86)
 
