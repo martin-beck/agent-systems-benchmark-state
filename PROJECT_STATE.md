@@ -28,21 +28,21 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
-| #604 | `qualification/ar-1689-tui-fresh-user@af6907636709` | `main` | UNKNOWN | - | fix(qualification): use guided local replay route |
+| #604 | `qualification/ar-1689-tui-fresh-user@af6907636709` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(qualification): use guided local replay route |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38213959881 | `af6907636709` | pull_request | Fault assurance | in_progress:- |
+| 38213959876 | `af6907636709` | pull_request | Formal assurance | in_progress:- |
+| 38213959847 | `af6907636709` | pull_request | Repository quality | queued:- |
+| 38213959830 | `af6907636709` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38213959829 | `af6907636709` | pull_request | Huawei MIT source headers | completed:success |
+| 38213959813 | `af6907636709` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38213959786 | `af6907636709` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38213959784 | `af6907636709` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 38213959781 | `af6907636709` | pull_request | Rust verification | in_progress:- |
+| 38213959770 | `af6907636709` | pull_request | Portable protected-main provenance | in_progress:- |
+| 38213959754 | `af6907636709` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38211462584 | `9c5e557195df` | push | Rust verification | completed:failure |
-| 38211462546 | `9c5e557195df` | push | Formal assurance | completed:success |
-| 38211462538 | `9c5e557195df` | push | Cross-repository development broker qualification | completed:success |
-| 38211462536 | `9c5e557195df` | push | Portable protected-main provenance | completed:failure |
-| 38211462534 | `9c5e557195df` | push | Hosted portability and native qualification | completed:success |
-| 38211462528 | `9c5e557195df` | push | Fault assurance | completed:success |
-| 38211462517 | `9c5e557195df` | push | Credential-free benchmark path | completed:success |
-| 38211462516 | `9c5e557195df` | push | Repository quality | completed:failure |
-| 38211462507 | `9c5e557195df` | push | Emulated aarch64 portability | completed:success |
-| 38211462504 | `9c5e557195df` | push | Huawei MIT source headers | completed:success |
-| 38210581894 | `912e218f8def` | pull_request | Formal assurance | completed:success |
-| 38210581146 | `912e218f8def` | pull_request | Hosted portability and native qualification | completed:success |
