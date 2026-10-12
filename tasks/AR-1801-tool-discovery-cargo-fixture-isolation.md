@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T06:02:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1762"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "observed_dirty": 0,
   "observed_head": "e0e44a7d8b45676ebe683bc44f4a0a6d4eb8f0a9",
-  "owner": "ar1801_cargo_fixture_luna56",
+  "owner": "",
   "plan": "../plans/AR-1801-tool-discovery-cargo-fixture-isolation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1801.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T05:19:42+00:00",
+  "updated_at": "2026-10-12T05:20:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -137,3 +137,10 @@ or pin the probe without weakening bounded execution or privacy contracts.
 
 - 2026-10-12T05:19:42+00:00: Recorded command exit 0; command argv SHA-256
   ff83dfea5de073f0e0413c7865b7285abb1d2f1f5cab114eb5ccb712809ddaa8.
+
+- 2026-10-12T05:20:19+00:00: Superseded by AR-1803 deterministic fixture repair, merged on main
+  through PR #599 as 3c7ca1c1. Original c20bb7bb branch full-load failures were reproduced as
+  timing/resource interference; serial and 8-thread reruns passed. Current main e0e44a7d contains
+  the shared bounded fixture semaphore and 2s discovery timeout, with no unique AR-1801 source
+  change remaining. Current-main asb-cli parallel gate passed 433/433. No PR or duplicate
+  implementation required.
