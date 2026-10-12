@@ -1504,7 +1504,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make tool-discovery Cargo version fixture deterministic under full workspace execution. |
-| Next action | Retry full exact-head asb-cli gate; if green, checkpoint c20bb7bb, create PR, run exact-head CI, and merge under protected policy. |
+| Next action | Diagnose/reproduce parallel asb-cli provider/comparison test failures under full load; stabilize test isolation without weakening contracts, then rerun exact-head gate before PR/merge. |
 
 
 ## Dependency graph

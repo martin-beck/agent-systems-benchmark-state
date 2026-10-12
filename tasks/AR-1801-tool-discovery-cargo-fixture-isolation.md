@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1801",
-  "next_action": "Retry full exact-head asb-cli gate; if green, checkpoint c20bb7bb, create PR, run exact-head CI, and merge under protected policy.",
+  "next_action": "Diagnose/reproduce parallel asb-cli provider/comparison test failures under full load; stabilize test isolation without weakening contracts, then rerun exact-head gate before PR/merge.",
   "observed_branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "observed_dirty": 0,
   "observed_head": "c20bb7bb44481846e08b135ea6b5fff83cd72617",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T02:29:40+00:00",
+  "updated_at": "2026-10-12T02:29:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -89,3 +89,11 @@ or pin the probe without weakening bounded execution or privacy contracts.
 
 - 2026-10-12T02:29:40+00:00: Recorded command exit 101; command argv SHA-256
   843703907fc37a7674d5c096997e5b7542cb55e0ed6c2638159fdcb2f8d43f3e.
+
+- 2026-10-12T02:29:45+00:00: Second full exact-head retry through handoffctl exit 101: 428 passed, 1
+  failed, 0 ignored. Different unrelated test failed this time:
+  tests::comparison_reports_same_selection_multi_candidate_and_asymmetric_availability,
+  crates/asb-cli/src/lib.rs:16161, assertion left 6 right 0. The prior provider_selection_manifest
+  failure passed in this retry. This confirms parallel-load flakiness/resource interference rather
+  than a stable AR-1801 probe regression; PR/CI/merge remain blocked pending deterministic full
+  gate.
