@@ -12,7 +12,8 @@
   "oracle_gate": {
     "completed": [
       "role",
-      "spec"
+      "spec",
+      "decision"
     ],
     "discussion_rounds": 0,
     "events": [
@@ -120,9 +121,30 @@
         "stage": "decision",
         "task_id": "AR-1811",
         "task_revision": 45
+      },
+      {
+        "action": "resolve",
+        "after": [
+          {
+            "digest": "sha256:b678ee8b2515d49f7ba2137e1380f8719a08eb15b97c35efb4b2b8b8d6afe45d",
+            "ref": "accepted-decision"
+          }
+        ],
+        "before": [
+          {
+            "digest": "sha256:b678ee8b2515d49f7ba2137e1380f8719a08eb15b97c35efb4b2b8b8d6afe45d",
+            "ref": "candidate-decision"
+          }
+        ],
+        "disposition": "accepted",
+        "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786/decision-accepted",
+        "recorded_at": "2026-10-12T10:19:22+00:00",
+        "stage": "decision",
+        "task_id": "AR-1811",
+        "task_revision": 46
       }
     ],
-    "open_stage": "decision",
+    "open_stage": null,
     "reconciliation_required": false,
     "required": true,
     "stage_sequence": [
@@ -137,9 +159,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:19:19+00:00",
+  "updated_at": "2026-10-12T10:19:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -262,3 +284,6 @@ tests and update the generated quality documentation.
 
 - 2026-10-12T10:19:19+00:00: Recorded open interaction gate decision;
   event=sha256:b09bfcdd5e6c65771c25af05eb618dc916725a88ad1d3400a145ffe43ccb6718.
+
+- 2026-10-12T10:19:22+00:00: Recorded resolve interaction gate decision;
+  event=sha256:65f6550f65bd93bcbb061cf2fe9476628eb07d5033ff421a90b82f5c11b9a25f.
