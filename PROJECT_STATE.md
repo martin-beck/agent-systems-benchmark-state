@@ -28,7 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
-| #599 | `feature/ar-1803-deterministic-parallel-fixture-repair@14471899c427` | `main` | DIRTY | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | test(cli): make process fixtures deterministic under parallel load |
+| #599 | `feature/ar-1803-deterministic-parallel-fixture-repair@14471899c427` | `main` | DIRTY | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): make process fixtures deterministic under parallel load |
 
 ## Recent workflows
 
@@ -40,7 +40,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38202912815 | `1ce208b4e573` | push | Rust verification | in_progress:- |
 | 38202912809 | `1ce208b4e573` | push | Cross-repository development broker qualification | in_progress:- |
 | 38202912796 | `1ce208b4e573` | push | Portable protected-main provenance | completed:failure |
-| 38202912791 | `1ce208b4e573` | push | Fault assurance | queued:- |
+| 38202912791 | `1ce208b4e573` | push | Fault assurance | in_progress:- |
 | 38202912789 | `1ce208b4e573` | push | Credential-free benchmark path | in_progress:- |
 | 38202912785 | `1ce208b4e573` | push | Hosted portability and native qualification | in_progress:- |
 | 38202912777 | `1ce208b4e573` | push | Huawei MIT source headers | completed:success |

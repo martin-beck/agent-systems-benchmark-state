@@ -161,6 +161,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `0f303b3ec179` | 0 | behind 732, ahead 225 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 732, ahead 14 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 732, ahead 40 |
+| `agent-systems-benchmark-postmerge-1802` | `DETACHED` | `1ce208b4e573` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-pr424-merge` | `DETACHED` | `9c6a69a0f91c` | 0 | behind 704, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 732, ahead 21 |
 | `agent-systems-benchmark-protected-main-admission` | `DETACHED` | `eb0ad13f8b6e` | 0 | behind 732, ahead 581 |
