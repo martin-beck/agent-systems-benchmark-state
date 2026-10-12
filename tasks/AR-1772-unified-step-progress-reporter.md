@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:15:29+00:00",
+  "updated_at": "2026-10-12T02:15:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -146,3 +146,6 @@ allowed outside this helper.
   into human.rs preserved identities. The next focused gate passed. A transient compile failure also
   reported dead_code for unreferenced reporter; module-level allow is intentional until universal
   instrumentation AR-1773 consumes the API.
+
+- 2026-10-12T02:15:56+00:00: Recorded command exit 101; command argv SHA-256
+  c9266e05291502ffd361fe1821edf1e07e255bcbf030cad9d5973101fe63d04d.
