@@ -10,7 +10,7 @@
   "next_action": "Await fresh independent exact-head review of clean 6e65d8c3; after ACCEPT force-with-lease update PR #599, monitor all hosted checks including provenance, merge non-squash only when green.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
-  "observed_head": "6e65d8c39f49cdc0a0d03131ad49b4167a919c87",
+  "observed_head": "547e42dd90c9e0029dd4caea8a64226123cdee85",
   "owner": "ar1803_parallel_fixture_luna56",
   "plan": "../plans/AR-1803-deterministic-parallel-fixture-repair.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 168,
+  "task_revision": 169,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:28:16+00:00",
+  "updated_at": "2026-10-12T04:28:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
