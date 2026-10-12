@@ -9,7 +9,7 @@
   "id": "AR-1804",
   "next_action": "Reproduce the AR-1801/AR-1803 default-parallel failures and inventory cross-module process fixtures.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "ca494d506135c4a3263bea21621dcc97d817614c",
   "owner": "ar1804_fixture_semaphore_luna56",
   "plan": "../plans/AR-1804-cross-module-fixture-semaphore.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:45:06+00:00",
+  "updated_at": "2026-10-12T02:45:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
