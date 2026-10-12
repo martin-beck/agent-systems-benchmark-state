@@ -1476,7 +1476,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
-| Next action | Request fresh independent exact-head review of a9722277; no publication until ACCEPT. |
+| Next action | Add public fake authority tests covering bootstrap, attempt_factory revocation after authority drop, cancellation/timeout/crash/concurrent teardown and direct run/sweep dispatch; rerun full make test and request fresh review of new signed head. |
 
 ### AR-1800 — Controlled local workload acquisition backend
 

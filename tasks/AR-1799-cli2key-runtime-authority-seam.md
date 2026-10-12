@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Request fresh independent exact-head review of a9722277; no publication until ACCEPT.",
+  "next_action": "Add public fake authority tests covering bootstrap, attempt_factory revocation after authority drop, cancellation/timeout/crash/concurrent teardown and direct run/sweep dispatch; rerun full make test and request fresh review of new signed head.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "c7ed2669af79bb187da7d09fe55f03e2e8bd381f",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:36:19+00:00",
+  "updated_at": "2026-10-12T04:36:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -233,3 +233,10 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:36:19+00:00: Recorded command exit 0; command argv SHA-256
   e9a8de16eb0b9d5a09c6e0d4e6925265d5024d520ca3cc3bdd1df8e313c871eb.
+
+- 2026-10-12T04:36:28+00:00: Independent exact-head review of repaired a9722277: REJECT pending
+  stronger evidence. Verified SSH signature/DCO, clean diff-check, revocation-fence implementation,
+  focused runtime/CLI dispatch tests, and prior full make test. However direct
+  Cli2KeyRuntimeAuthority bootstrap/attempt_factory lifecycle is not exercised by hostile
+  cancellation, timeout, crash, or concurrent teardown tests; existing CLI tests exercise generic
+  factories only. Fresh review remains required after adding authority-bound lifecycle matrix.
