@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one complete machine-checked inventory of every public ASB command and subcommand surface.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T10:47:51+00:00",
+  "updated_at": "2026-10-12T10:48:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -54,3 +54,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 - 2026-10-12T10:47:39+00:00: AR-1773 is done; dependency-safe P0 CLI contract work is ready
 
 - 2026-10-12T10:47:51+00:00: Claimed by asb-queue-next-luna56.
+
+- 2026-10-12T10:48:10+00:00: Recorded command exit 0; command argv SHA-256
+  a1159e9df3670d549d04524532629f5477ceb7deec9b45e47e8c009506ecb2c8.
