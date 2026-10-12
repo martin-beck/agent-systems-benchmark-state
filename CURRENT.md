@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1805](tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Independent review found a full-gate regression at exact PR head a0d780b0. | Repair commit 5cb931f5 refreshes shifted human.rs diagnostic identities; diagnostic_contract and focused regression pass after rebase onto 5c843a12. PR #608 exact head 5cb931f5 needs independent review, all non-TLC hosted checks, then protected exact-base merge and post-merge verification. | asb-queue-next-luna56 |
+| P0 | [AR-1805](tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Independent review found a full integration-gate regression at exact PR head 5cb931f5. | Update the executable public-family golden fixture for the new workload family, push a signed fix, rerun cargo test -p asb-cli --tests --offline, then repeat exact-head independent review. | asb-queue-next-luna56 |
 
 ## Blocked
 

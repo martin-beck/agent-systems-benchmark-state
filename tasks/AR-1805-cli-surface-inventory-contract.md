@@ -7,7 +7,7 @@
     "AR-1773"
   ],
   "id": "AR-1805",
-  "next_action": "Repair commit 5cb931f5 refreshes shifted human.rs diagnostic identities; diagnostic_contract and focused regression pass after rebase onto 5c843a12. PR #608 exact head 5cb931f5 needs independent review, all non-TLC hosted checks, then protected exact-base merge and post-merge verification.",
+  "next_action": "Update the executable public-family golden fixture for the new workload family, push a signed fix, rerun cargo test -p asb-cli --tests --offline, then repeat exact-head independent review.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "5cb931f55fa7210afd58e70de25f0d2fce67107a",
@@ -26,10 +26,10 @@
   "spec_ref": "specs/AR-1805.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Independent review found a full-gate regression at exact PR head a0d780b0.",
-  "task_revision": 69,
+  "summary": "Independent review found a full integration-gate regression at exact PR head 5cb931f5.",
+  "task_revision": 70,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:07:53+00:00",
+  "updated_at": "2026-10-12T11:08:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -229,3 +229,11 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 
 - 2026-10-12T11:07:53+00:00: Recorded command exit 0; command argv SHA-256
   31b44c1d3600cbfed72a8c428c5e1083e263b7249aa1eef9cbccd569df9d579a.
+
+- 2026-10-12T11:08:10+00:00: Second independent exact-head review of PR #608 at
+  5cb931f55fa7210afd58e70de25f0d2fce67107a: all three commits SSH-signed with matching DCO; diff
+  check/privacy clean; diagnostic_contract 9/9, command_surface_contract, diagnostic_journey, and
+  asb-cli lib 437/437 pass. Full cargo test -p asb-cli --tests --offline now fails only at human_cli
+  executable_public_family_golden_is_inventory_complete_and_privacy_safe: expected golden family
+  count 28 but inventory has 29 after adding workload. Hosted checks remain pending; no TLC run.
+  Review remains changes requested; do not merge.
