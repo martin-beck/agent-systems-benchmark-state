@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:46:25+00:00",
+  "updated_at": "2026-10-12T03:47:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -179,3 +179,6 @@ remains explicitly unaccepted and blocked until this repair is complete.
   and continuing through shifted lines to 19422. Cause is AR-1802 authority/archive additions and
   test guards moving source line numbers; no gate waiver. Repair catalog via source-line mapping and
   add new reviewed authority producer identity, then rerun.
+
+- 2026-10-12T03:47:01+00:00: Recorded command exit 0; command argv SHA-256
+  e6ecbad67070a44dba657a40fad7f0a924b0a7fda90b40539ad5bfc754ace301.
