@@ -27,7 +27,7 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Configurable output router and levels",
   "updated_at": "2026-10-12T00:24:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
@@ -300,3 +300,6 @@ stdout envelope and silences all human/operational output on both streams.
   Supported handoffctl reconcile --commit repaired the generated projection, and a subsequent doctor
   --live returned OK: structure, references, privacy, generated views and live state are consistent.
   No projection was manually edited.
+
+- 2026-10-12T00:24:05+00:00: Recorded command exit 0; command argv SHA-256
+  fa019ec48d20dd7b7d692c63949dc54fa62c2a01b2a3cae7ea9b2f265855d154.
