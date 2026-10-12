@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T10:19:14+00:00",
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0: 24G retry durably failed with liveness OOM. A subsequent 48G/64G attempt has no live process, attestation, or durable handoffctl task result visible; treat it as interrupted/unknown, do not accept or release, and reconcile before any new bounded retry.",
+  "next_action": "Run one bounded exact-candidate full-exhaustive retry with verified host envelope; preserve TLC_ATTESTATION_PATH and record terminal result. Do not accept or release without complete attestation.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-12T06:19:14+00:00",
+  "updated_at": "2026-10-12T06:19:36+00:00",
   "worktree_key": ""
 }
 ---
@@ -178,3 +178,9 @@ workers checkpoint, retry, and continue useful work during integration churn.
   candidate identity.
 
 - 2026-10-12T06:19:14+00:00: Heartbeat by ar1796-reconcile-candidate-luna56.
+
+- 2026-10-12T06:19:36+00:00: Reconciled before retry at 2026-10-12T08:20Z: AWC candidate
+  efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 resolves exactly and is origin/main; clean candidate
+  checkout. No tlc2.TLC, tlc_runner.py, or AR-1796 handoffctl process is live; no 48G attestation
+  exists. Host reports 125GiB RAM, 87GiB available, and 0 swap. Prior 48G/64G outcome remains
+  unknown/interrupted, not evidence.
