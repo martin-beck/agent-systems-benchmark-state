@@ -11,7 +11,7 @@
     "AR-1779"
   ],
   "id": "AR-1797",
-  "next_action": "Wire the verified project-local cli2key bridge into the runtime-owned sidecar launch path, then qualify fake and opt-in live benchmark execution without exposing credentials.",
+  "next_action": "Run the full make test and default-parallel qualification on the clean signed candidate; then request independent exact-head review.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:33:27+00:00",
+  "updated_at": "2026-10-12T05:33:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -185,3 +185,11 @@ path and records only redacted provenance and typed outcome evidence.
 
 - 2026-10-12T05:33:27+00:00: Recorded command exit 0; command argv SHA-256
   53f59e2013c799afdfe57779ee924dfe6ef7a378ae32d3e384f19f899dc679f7.
+
+- 2026-10-12T05:33:35+00:00: Focused cli2key tests passed 2/2 and crate-wide asb-cli passed 433/433.
+  First full make test reached all product tests but diagnostic_contract ordinary_cli_producers
+  failed because the inserted public seam shifted mechanically reviewed call-site line identities;
+  this was a catalog/setup contract failure, not a qualification failure. Removed the mid-file
+  insertion/import and appended the seam at EOF; cargo fmt and the isolated diagnostic_contract test
+  now pass. A deliberately interrupted duplicate diagnostic test (Ctrl-C during rebuild, handoffctl
+  exit 130) is explained by that source repair and is superseded by the successful rerun.

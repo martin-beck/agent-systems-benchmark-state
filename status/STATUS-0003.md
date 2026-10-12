@@ -1448,7 +1448,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark. |
-| Next action | Wire the verified project-local cli2key bridge into the runtime-owned sidecar launch path, then qualify fake and opt-in live benchmark execution without exposing credentials. |
+| Next action | Run the full make test and default-parallel qualification on the clean signed candidate; then request independent exact-head review. |
 
 ### AR-1798 — Pinned source-checkout acquisition
 
