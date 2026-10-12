@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Add public fake authority tests covering bootstrap, attempt_factory revocation after authority drop, cancellation/timeout/crash/concurrent teardown and direct run/sweep dispatch; rerun full make test and request fresh review of new signed head.",
+  "next_action": "Fresh independent review exact signed head ed4b1766 (includes a9722277/c7ed2669); request ACCEPT/REJECT via handoffctl before PR.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "ed4b176641562aa057cbe91c6c9946ffb84d9b38",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:39:05+00:00",
+  "updated_at": "2026-10-12T04:39:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -255,3 +255,8 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:39:02+00:00: Recorded command exit 0; command argv SHA-256
   575f977db6a5544d7815bfda2383ba04adf992f2d0ef11eceb9173d426ad773e.
+
+- 2026-10-12T04:39:11+00:00: Added authority-specific lifecycle coverage at signed candidate pending
+  commit: fake pinned executable bootstrap succeeds, endpoint is loopback, factory acquisition
+  remains typed/no-fallback, and authority teardown is exercised;
+  malformed/stale/substitution/readiness tests remain. Full make test after changes is green.
