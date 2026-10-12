@@ -11,7 +11,7 @@
   "id": "AR-1812",
   "next_action": "Refresh exact lib.rs producer identities in diagnostic_legacy_catalog_compact.rs, add reviewed entries for new cli2key mapper producers, then rerun focused and full offline gates.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "5c75c1a9fe36bb5f08c3cb4ccc20f213d496b65e",
   "owner": "ar1812-repair-luna56",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:36:49+00:00",
+  "updated_at": "2026-10-12T11:36:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
