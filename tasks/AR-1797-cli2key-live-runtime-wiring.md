@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T02:00:44+00:00",
+  "updated_at": "2026-10-12T02:00:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -57,3 +57,6 @@ path and records only redacted provenance and typed outcome evidence.
   with passing acceptance; promote for implementation.
 
 - 2026-10-12T02:00:44+00:00: Claimed by codex-ar1797-cli2key-repair-luna56.
+
+- 2026-10-12T02:00:53+00:00: Recorded command exit 128; command argv SHA-256
+  d6eff24e71dcade67a2eabad6a7010b78f29090f9795a649e3f1d8d973580c9b.
