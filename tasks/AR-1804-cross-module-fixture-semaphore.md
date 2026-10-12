@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Repair diagnostic-contract catalog/regression for the test-only semaphore producer, then rerun focused diagnostic and full make test.",
+  "next_action": "Repair diagnostic catalog for test-only semaphore callsites, rerun focused diagnostic_contract, then rerun make test.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 0,
   "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:49:08+00:00",
+  "updated_at": "2026-10-12T02:49:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -103,3 +103,11 @@ before AR-1801 can be accepted.
   failure. Root cause is diagnostic producer inventory must explicitly exempt or catalog the
   test-only semaphore calls. Preserve bounded test-only scope; repair catalog/test contract before
   retry.
+
+- 2026-10-12T02:49:21+00:00: Exact exit-2 record 3fc122cf: purpose was the complete supported make
+  test gate after semaphore implementation. GNU make returned exit 2 because its cargo test recipe
+  failed with exit 101; stderr ended: test ordinary_cli_producers_are_mechanically_closed ...
+  FAILED; error: test failed, to rerun pass -p asb-cli --test diagnostic_contract; make: ***
+  [Makefile:112: test] Error 101. This is a product diagnostic-contract gate failure, not
+  command-shape/setup. The underlying failure and repair boundary are already recorded: test-only
+  semaphore callsites need reviewed diagnostic inventory treatment.

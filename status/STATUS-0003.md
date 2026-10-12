@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates. |
-| Next action | Repair diagnostic-contract catalog/regression for the test-only semaphore producer, then rerun focused diagnostic and full make test. |
+| Next action | Repair diagnostic catalog for test-only semaphore callsites, rerun focused diagnostic_contract, then rerun make test. |
 
 
 ## Dependency graph
