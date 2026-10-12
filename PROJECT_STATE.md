@@ -28,21 +28,21 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@83c2c6635789` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.25 |
-| #612 | `feature/ar-1774-status-progress-completeness-ci@eaa490f2fc88` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS: | ci: enforce status and progress completeness |
+| #612 | `feature/ar-1774-status-progress-completeness-ci@ad7f1166afc5` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | ci: enforce status and progress completeness |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38251122396 | `ad7f1166afc5` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38251122364 | `ad7f1166afc5` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38251122361 | `ad7f1166afc5` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38251122357 | `ad7f1166afc5` | pull_request | Portable protected-main provenance | completed:success |
+| 38251122352 | `ad7f1166afc5` | pull_request | Huawei MIT source headers | completed:success |
+| 38251122350 | `ad7f1166afc5` | pull_request | Fault assurance | in_progress:- |
+| 38251122338 | `ad7f1166afc5` | pull_request | Repository quality | pending:- |
+| 38251122336 | `ad7f1166afc5` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38251122325 | `ad7f1166afc5` | pull_request | Development formal assurance | in_progress:- |
+| 38251122324 | `ad7f1166afc5` | pull_request | Rust verification | in_progress:- |
+| 38251122318 | `ad7f1166afc5` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38250836110 | `eaa490f2fc88` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38250836102 | `eaa490f2fc88` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38250836096 | `eaa490f2fc88` | pull_request | Repository quality | in_progress:- |
-| 38250836093 | `eaa490f2fc88` | pull_request | Huawei MIT source headers | completed:success |
-| 38250836063 | `eaa490f2fc88` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 38250836058 | `eaa490f2fc88` | pull_request | Portable protected-main provenance | completed:success |
-| 38250836045 | `eaa490f2fc88` | pull_request | Credential-free benchmark path | in_progress:- |
-| 38250836044 | `eaa490f2fc88` | pull_request | Development formal assurance | completed:success |
-| 38250836042 | `eaa490f2fc88` | pull_request | Fault assurance | in_progress:- |
-| 38250836041 | `eaa490f2fc88` | pull_request | Rust verification | in_progress:- |
-| 38250836023 | `eaa490f2fc88` | pull_request | Cross-repository development broker qualification | in_progress:- |
-| 38250743930 | `8765b84bcaa3` | pull_request | Development formal assurance | completed:cancelled |
