@@ -36,7 +36,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 38189804625 | `ca27f323b95a` | pull_request | Credential-free benchmark path | in_progress:- |
-| 38189804592 | `ca27f323b95a` | pull_request | Rust verification | in_progress:- |
+| 38189804592 | `ca27f323b95a` | pull_request | Rust verification | completed:failure |
 | 38189804553 | `ca27f323b95a` | pull_request | Huawei MIT source headers | completed:success |
 | 38189804543 | `ca27f323b95a` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38189804541 | `ca27f323b95a` | pull_request | Hosted portability and native qualification | completed:success |
