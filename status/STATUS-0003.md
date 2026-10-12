@@ -1140,7 +1140,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels. |
-| Next action | Await distinct reviewer approval for PR #597 head 9bb7d3f205c569fd309e4b2014f33049f00f7b5c; all hosted checks terminal SUCCESS; merge only after separate reviewer approval, then verify exact main and accept/release. |
+| Next action | Accept and release AR-1775 using durable merge receipt: PR #597 merged as 98327152f2e92308b5bcf5b21cfe0c9f285cf950; exact protected main and clean detached post-merge worktree verified; cargo test -p asb-cli --lib 429/429 passed. |
 
 ### AR-1776 — Supported-tool acquisition catalog
 

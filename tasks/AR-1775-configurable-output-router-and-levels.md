@@ -7,7 +7,7 @@
     "AR-1771"
   ],
   "id": "AR-1775",
-  "next_action": "Await distinct reviewer approval for PR #597 head 9bb7d3f205c569fd309e4b2014f33049f00f7b5c; all hosted checks terminal SUCCESS; merge only after separate reviewer approval, then verify exact main and accept/release.",
+  "next_action": "Accept and release AR-1775 using durable merge receipt: PR #597 merged as 98327152f2e92308b5bcf5b21cfe0c9f285cf950; exact protected main and clean detached post-merge worktree verified; cargo test -p asb-cli --lib 429/429 passed.",
   "observed_branch": "feature/ar-1775-configurable-output-router-and-levels",
   "observed_dirty": 0,
   "observed_head": "d7c08c106e52ed9aa144f24ffe130b40dd6c3da7",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 325,
+  "task_revision": 326,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T01:27:31+00:00",
+  "updated_at": "2026-10-12T01:27:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -1027,3 +1027,11 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T01:27:31+00:00: Recorded command exit 0; command argv SHA-256
   311abc13e958763d029e327b3b9bb2f6874bee282f03909b5a5a636e1c82106a.
+
+- 2026-10-12T01:27:38+00:00: Post-merge evidence: PR #597 exact head
+  9bb7d3f205c569fd309e4b2014f33049f00f7b5c merged at 2026-10-12T01:26:38Z via signed integration
+  merge 98327152f2e92308b5bcf5b21cfe0c9f285cf950, with approved base
+  5201a0369193be5e093396d76bfa4b1c9b55e9db and tree 852f5b4ff6fa5f21a7120298e167e5a97487aa7a. Remote
+  refs/heads/main equals merge; clean exact-main detached worktree verified; cargo test
+  --manifest-path /srv/data/projects/agent-systems-benchmark/Cargo.toml -p asb-cli --lib passed
+  429/429.
