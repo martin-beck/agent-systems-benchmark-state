@@ -312,6 +312,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-pr584-merge` | `DETACHED` | `24cb72d97422` | 0 | behind 107, ahead 0 |
 | `asb218-asb` | `DETACHED` | `62fda2f3417b` | 0 | behind 662, ahead 0 |
 | `review-ar1782` | `DETACHED` | `3be3029d7a1d` | 0 | behind 72, ahead 0 |
+| `review-pr610` | `DETACHED` | `95a342fde4c5` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1498` | `feature/ar-1498-authenticated-lifecycle-executor` | `55ff13fb6cb2` | 0 | behind 762, ahead 1275 |
 | `agent-systems-benchmark-ar-1499` | `feature/ar-1499-development-credential-enrollment` | `0a2f6e9c74f9` | 0 | behind 762, ahead 1280 |
 | `ar1722-receipt-worker.ObeqHt` | `DETACHED` | `ac6557038cc3` | 0 | behind 504, ahead 0 |
