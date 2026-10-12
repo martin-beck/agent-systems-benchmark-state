@@ -1112,7 +1112,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
-| Next action | Run focused changed-route/reporter gates and bounded formatting; retain full-gate blocker evidence. Do not commit or request review until ambient diagnostic mapping is repaired or an owning successor is routed. |
+| Next action | Remain open pending stale AR-1793 legacy diagnostic catalog repair; after repair lands, rebase/retest this preserved diff through focused and full gates. |
 
 ### AR-1774 — Status and progress completeness CI
 

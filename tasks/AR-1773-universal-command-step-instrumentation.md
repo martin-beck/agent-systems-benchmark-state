@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Run focused changed-route/reporter gates and bounded formatting; retain full-gate blocker evidence. Do not commit or request review until ambient diagnostic mapping is repaired or an owning successor is routed.",
+  "next_action": "Remain open pending stale AR-1793 legacy diagnostic catalog repair; after repair lands, rebase/retest this preserved diff through focused and full gates.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 4,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:30:54+00:00",
+  "updated_at": "2026-10-12T06:31:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -194,3 +194,10 @@ non-TTY compatibility.
   17d0d0a0f520aeffcd369fdcda77b67a3ac6e38e4dd4288dc07237a40369e7ed.
 
 - 2026-10-12T06:30:54+00:00: Heartbeat by ar1772-progress-reporter-luna56.
+
+- 2026-10-12T06:31:25+00:00: Ownership investigation: AR-1793 is done (PR #582 merged 24f1872c), but
+  its line-addressed AR1793_LEGACY_CLI_CATALOG remains stale after current-main line drift. The
+  current human diagnostic test fails because output-parent legacy_validation has no matching
+  catalog identity and falls back to unclassified cause. Current AR-1773 diff only changes serve
+  rendering/assertion; no diagnostic mapping repair is in scope. Preserve product diff/worktree as
+  uncommitted evidence and route stale AR-1793 catalog repair to its owning successor.
