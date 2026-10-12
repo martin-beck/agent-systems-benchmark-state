@@ -1488,7 +1488,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. |
-| Next action | Blocked on unrelated ambient mini_swe fixture root overlap; AR-1801 owns deterministic Cargo fixture isolation. Preserve exact-main focused workload evidence and resume after AR-1801 repair. |
+| Next action | No AR-1800 product diff remains: required controlled fixture authority and lifecycle evidence are integrated on exact origin/main. Release with parent review evidence. |
 
 ### AR-1801 — Tool-discovery Cargo fixture isolation
 
