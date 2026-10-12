@@ -1661,7 +1661,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
-| Next action | Coordinator must extend the runtime boundary with a production constructor for a cli2key sidecar-backed LiveProviderAttemptFactory (or equivalent opaque runtime source), then expose a verified AR-1779 runtime-receipt resolver contract. AR-1812 can resume only after that API exists. |
+| Next action | AR-1813 is the promoted prerequisite for the runtime-owned receipt and opaque factory contract. After it merges, re-open and claim AR-1812, then wire the verified receipt into ordinary run/sweep dispatch and complete review, merge, and post-merge verification. |
 
 ### AR-1813 — Expose cli2key runtime factory contract
 
@@ -4537,6 +4537,7 @@ flowchart LR
     AR_1807 --> AR_1809
     AR_1808 --> AR_1809
     AR_1812 --> AR_1810
+    AR_1813 --> AR_1812
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px

@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-12T12:14:34+00:00",
   "depends_on": [
@@ -28,10 +28,10 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:14:34+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-10-12T10:14:56+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
 
@@ -46,3 +46,7 @@ fabricate authority in the CLI or introduce a provider fallback.
   or provider fallback.
 
 - 2026-10-12T10:14:34+00:00: Claimed by ar1810-cli2key-luna56.
+
+- 2026-10-12T10:14:56+00:00: Bound worktree
+  agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract on branch
+  feature/ar-1813-cli2key-runtime-factory-contract.
