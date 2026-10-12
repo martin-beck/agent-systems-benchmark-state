@@ -22,7 +22,7 @@
   "spec_acceptance": {
     "evidence_class": "environmental",
     "evidence_digest": "sha256:45715f0c82557911e2f4ba510b2d931a7c879d1f324a302619259e79206b8188",
-    "evidence_ref": "independent-review:AR-1797:fd815d5e4de7e6399ee27db65e7b5723b224eddd",
+    "evidence_ref": "independent-review:AR-1797:912e218f8deff58d3c4702aa0855de136edb307f",
     "spec_ref": "specs/AR-1797.json",
     "spec_revision": 1,
     "status": "pass"
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:59:28+00:00",
+  "updated_at": "2026-10-12T06:01:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -287,3 +287,9 @@ path and records only redacted provenance and typed outcome evidence.
   reviewed net diff.
 
 - 2026-10-12T05:59:28+00:00: Heartbeat by ar1797_cli2key_repair_luna56.
+
+- 2026-10-12T06:01:09+00:00: Fresh independent exact-head review ACCEPT: clean rebased two-file diff
+  at 912e218f; commit SSH-signed with matching DCO. Runtime authority lifetime/no-fallback scope and
+  generated provenance binding unchanged from prior accepted diff; focused cli2key dispatch,
+  provenance hash, parallel-safety tests, and cargo fmt check pass. No publish or merge performed;
+  hosted exact-head CI remains required.
