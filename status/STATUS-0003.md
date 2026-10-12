@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Create GitHub PR from pushed feature/ar-1804-cross-module-fixture-semaphore to main, bind PR identity, then monitor exact-head CI. |
+| Next action | Monitor PR #598 exact head 4cda972c until every required check completes green; merge only after success, then verify main. |
 
 
 ## Dependency graph
