@@ -7,7 +7,7 @@
     "AR-1771"
   ],
   "id": "AR-1775",
-  "next_action": "Targeted diagnostic contract now green after preserving legacy identities (current first identity line 336); remove pycache repair recorded. Run clippy and full applicable local gates on repaired v4; commit signed DCO only after all green, then publish replacement PR.",
+  "next_action": "Monitor PR #597 exact head 9bb7d3f205c569fd309e4b2014f33049f00f7b5c; all local repair gates green (fmt, clippy -D warnings, diagnostic completeness, human regression, workflow provenance, prior 429/429 lib suite). Hosted provenance/headers/AWQ/retained faults green; await remaining checks and independent exact-head review before merge.",
   "observed_branch": "feature/ar-1775-configurable-output-router-and-levels",
   "observed_dirty": 0,
   "observed_head": "d7c08c106e52ed9aa144f24ffe130b40dd6c3da7",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 262,
+  "task_revision": 263,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T01:08:22+00:00",
+  "updated_at": "2026-10-12T01:08:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -820,3 +820,9 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T01:08:22+00:00: Recorded command exit 8; command argv SHA-256
   e4adc98b7139ad9c8e49f6e30db149c4de170864e105e91d1096a894e9e4f383.
+
+- 2026-10-12T01:08:31+00:00: Repair chain durable: PR #595 failures diagnosed as human
+  items-after-test-module and stale workflow provenance digest. v8 module-level lint allowance
+  preserved source line identities; v9 refreshed docs/examples/asb-cli-workflow-v1.provenance.json
+  cli_source_sha256 to 2e153e8a62504c5b93f17e322cb848c1445ed3d9df798795d75fdeae4953fbe0. Signed DCO
+  synchronization merge published in PR #597; PR #595 closed.
