@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Rerun workflow_transcript provenance test once after updating the generated CLI source digest, then rerun full make test.",
+  "next_action": "Commit the complete semaphore/provenance repair as signed DCO, then run default-parallel asb-cli gate and checkpoint exact head for review.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 3,
   "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:58:10+00:00",
+  "updated_at": "2026-10-12T02:58:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -225,3 +225,9 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:58:10+00:00: Recorded command exit 0; command argv SHA-256
   3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
+
+- 2026-10-12T02:58:20+00:00: Full supported make test now exits 0 after the provenance digest
+  repair. Evidence: fmt, Clippy, workspace unit/integration tests, 429 asb-cli unit tests, 9
+  diagnostic-contract tests, workflow transcript/provenance, project/CLI gates, rustdoc all passed;
+  ignored tests remained explicitly provider/credential-boundary cases. The prior provenance failure
+  is repaired by the exact generated cli_source_sha256 update.

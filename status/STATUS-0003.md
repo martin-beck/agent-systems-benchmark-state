@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Rerun workflow_transcript provenance test once after updating the generated CLI source digest, then rerun full make test. |
+| Next action | Commit the complete semaphore/provenance repair as signed DCO, then run default-parallel asb-cli gate and checkpoint exact head for review. |
 
 
 ## Dependency graph

@@ -200,7 +200,7 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope. |
 | P0 | [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md): Add cli2key runtime authority composition seam | codex-ar1799-authority-luna56 | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. | Implement runtime-only receipt-to-Cli2KeySidecar bootstrap and opaque LiveProviderAttempt issuance; add hostile lifecycle matrix before CLI integration. |
-| P0 | [AR-1804](../tasks/AR-1804-cross-module-fixture-semaphore.md): Cross-module fixture semaphore | ar1804_fixture_semaphore_luna56 | Semaphore implementation and diagnostic inventory repair checkpoint | Rerun workflow_transcript provenance test once after updating the generated CLI source digest, then rerun full make test. |
+| P0 | [AR-1804](../tasks/AR-1804-cross-module-fixture-semaphore.md): Cross-module fixture semaphore | ar1804_fixture_semaphore_luna56 | Semaphore implementation and diagnostic inventory repair checkpoint | Commit the complete semaphore/provenance repair as signed DCO, then run default-parallel asb-cli gate and checkpoint exact head for review. |
 
 ### Blocked (91)
 
