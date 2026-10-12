@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T11:09:09+00:00",
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Run one bounded exact-candidate full-exhaustive retry with verified host envelope; preserve TLC_ATTESTATION_PATH and record terminal result. Do not accept or release without complete attestation.",
+  "next_action": "Do not rerun unchanged: reclaim or relocate TLC disk-state storage under a verified bounded filesystem envelope, then obtain a fresh exact-candidate full-exhaustive run. No accept/release without attestation.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-12T07:11:34+00:00",
+  "updated_at": "2026-10-12T07:11:46+00:00",
   "worktree_key": ""
 }
 ---
@@ -215,3 +215,12 @@ workers checkpoint, retry, and continue useful work during integration churn.
 
 - 2026-10-12T07:11:34+00:00: Recorded command exit 1; command argv SHA-256
   4770381a47bde956f1ef67980710be2d2a4d831d443f7f3a198bbcd661440b35.
+
+- 2026-10-12T07:11:46+00:00: Classified terminal result for exact 56G/72G full-exhaustive retry:
+  handoffctl recorded command exit 1 (argv SHA-256
+  4770381a47bde956f1ef67980710be2d2a4d831d443f7f3a198bbcd661440b35); TLC reached 330,079,668
+  generated states and failed in StatePoolWriter with No space left on device. Candidate-bound
+  TLC_ATTESTATION_PATH /tmp/ar1796-full-efbe-56G.json was absent. At capture, root filesystem had
+  44G available (95% used); /srv/data had 194G available. This is an infrastructure disk-capacity
+  failure, not a model pass or acceptance; preserve exact candidate
+  efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 and do not accept/release.

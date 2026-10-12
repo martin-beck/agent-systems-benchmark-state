@@ -1434,7 +1434,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep autonomous development live during concurrent protected-main integration. |
-| Next action | Run one bounded exact-candidate full-exhaustive retry with verified host envelope; preserve TLC_ATTESTATION_PATH and record terminal result. Do not accept or release without complete attestation. |
+| Next action | Do not rerun unchanged: reclaim or relocate TLC disk-state storage under a verified bounded filesystem envelope, then obtain a fresh exact-candidate full-exhaustive run. No accept/release without attestation. |
 
 ### AR-1797 — Wire cli2key sidecar into live benchmark execution
 
