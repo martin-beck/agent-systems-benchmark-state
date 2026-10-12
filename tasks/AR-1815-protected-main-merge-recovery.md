@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "recovery/ar-1815-provenance",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-12T13:38:40+00:00",
   "depends_on": [],
@@ -25,10 +25,10 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T11:38:40+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-10-12T11:40:17+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
 
@@ -39,3 +39,6 @@ introduce a TLC/model-check dependency for development.
 
 
 - 2026-10-12T11:38:40+00:00: Claimed by ar1805_postmerge_repair.
+
+- 2026-10-12T11:40:17+00:00: Bound worktree agent-systems-benchmark-ar-1815-provenance on branch
+  recovery/ar-1815-provenance.
