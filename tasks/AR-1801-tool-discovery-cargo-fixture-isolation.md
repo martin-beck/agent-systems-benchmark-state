@@ -10,7 +10,7 @@
   "next_action": "Current main already contains the deterministic fixture semaphore repair from merged AR-1803; verify current-main full gate and supersede AR-1801 without duplicate product change if green.",
   "observed_branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "observed_dirty": 0,
-  "observed_head": "c20bb7bb44481846e08b135ea6b5fff83cd72617",
+  "observed_head": "e0e44a7d8b45676ebe683bc44f4a0a6d4eb8f0a9",
   "owner": "ar1801_cargo_fixture_luna56",
   "plan": "../plans/AR-1801-tool-discovery-cargo-fixture-isolation.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T05:18:47+00:00",
+  "updated_at": "2026-10-12T05:19:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
