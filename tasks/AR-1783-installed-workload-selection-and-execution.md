@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair reviewed CLI identity catalog and requalify signed PR head f4fe84a0",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:44:48+00:00",
+  "updated_at": "2026-10-12T00:44:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -348,3 +348,6 @@ the suite from this end-to-end path.
 
 - 2026-10-12T00:44:45+00:00: Recorded command exit 0; command argv SHA-256
   ba023e76fd42b3c6b5bf76d17e6c7e17983743eeab8e33fc02237242b77d8db4.
+
+- 2026-10-12T00:44:52+00:00: Recorded command exit 0; command argv SHA-256
+  32d00e7bea48deb591900624d4de1f837dadd9a3cd5c55c2ee1561f8660d7fe2.
