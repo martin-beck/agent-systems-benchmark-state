@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Status and progress completeness CI",
-  "updated_at": "2026-10-12T12:59:03+00:00",
+  "updated_at": "2026-10-12T12:59:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1774-status-progress-completeness-ci"
 }
 ---
@@ -110,3 +110,10 @@ human output additions fail closed until instrumented and tested.
   009ebbd41d3a7743094532f315c855458b4ff453ba4a9cd36e57d4cdeff5802c.
 
 - 2026-10-12T12:59:03+00:00: Heartbeat by ar1774-status-ci-luna56.
+
+- 2026-10-12T12:59:11+00:00: Repair investigation: PR #612 hosted Rust checks failed only at
+  existing source_checkout::tests::exact_fixture_checkout_is_returned_and_cleanup_is_explicit (line
+  913, Err(Unavailable) in full suite). Isolated x20, local --lib --test-threads=16 (437/437), and
+  full local cargo test --locked --workspace passed. Failure is not caused by AR-1774 diff; no safe
+  deterministic product change identified. AR-1803 repaired a separate discovery-fixture race and is
+  already done. Preserve gate; rerun hosted job rather than masking with retry/weakening.
