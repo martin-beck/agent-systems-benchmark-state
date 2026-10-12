@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1801",
-  "next_action": "Independent review exact signed head c20bb7bb, then run exact-head CI and merge.",
+  "next_action": "Repair/reproduce full asb-cli gate failure in tests::provider_selection_manifest_drives_plan_run_sweep_compare_and_report; rerun exact-head review and CI before PR/merge.",
   "observed_branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "observed_dirty": 0,
   "observed_head": "c20bb7bb44481846e08b135ea6b5fff83cd72617",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T02:28:50+00:00",
+  "updated_at": "2026-10-12T02:28:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -61,3 +61,14 @@ or pin the probe without weakening bounded execution or privacy contracts.
 
 - 2026-10-12T02:28:50+00:00: Recorded command exit 101; command argv SHA-256
   843703907fc37a7674d5c096997e5b7542cb55e0ed6c2638159fdcb2f8d43f3e.
+
+- 2026-10-12T02:28:59+00:00: Independent exact-head review of signed c20bb7bb (SHA-256 tree
+  verified; SSH signature Good, Martin Beck; DCO present) found no code-level defect in the
+  750ms-to-2s bounded probe timeout change. Exact-head gate command: cargo test --locked
+  --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation/Cargo.toml
+  -p asb-cli. Result exit 101: 428 passed, 1 failed, 0 ignored;
+  tests::provider_selection_manifest_drives_plan_run_sweep_compare_and_report panicked at
+  crates/asb-cli/src/lib.rs:16076 assertion left 6 right 0. This is a full-gate failure outside the
+  changed tool_discovery.rs lines; do not advance PR/CI/merge until reproduced and
+  repaired/explained.
