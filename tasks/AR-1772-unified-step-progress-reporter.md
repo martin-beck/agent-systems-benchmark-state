@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:11:16+00:00",
+  "updated_at": "2026-10-12T02:12:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -112,3 +112,6 @@ allowed outside this helper.
 - 2026-10-12T02:11:16+00:00: Checkpoint commit 10e336655e39ce9eff0b30770348e72c92aa4e98: signed
   AR-1772 reporter module, router-owned human construction, deterministic clock tests. Focused cargo
   test -p asb-cli step_progress passes 3 tests.
+
+- 2026-10-12T02:12:00+00:00: Recorded command exit 101; command argv SHA-256
+  c9266e05291502ffd361fe1821edf1e07e255bcbf030cad9d5973101fe63d04d.
