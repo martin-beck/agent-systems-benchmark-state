@@ -194,13 +194,12 @@
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope. |
 | P0 | [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md): Add cli2key runtime authority composition seam | ar1799-authority-luna56 | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. | Implement runtime-only receipt-to-Cli2KeySidecar bootstrap and opaque LiveProviderAttempt issuance; add hostile lifecycle matrix before CLI integration. |
-| P0 | [AR-1802](../tasks/AR-1802-controlled-workload-matrix-and-fixture-authority.md): Controlled workload matrix and fixture authority | ar1802-workload-matrix-luna56 | Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review. | Record task-spec acceptance against merged main 1ce208b4, then release done and verify live doctor. |
 | P0 | [AR-1803](../tasks/AR-1803-deterministic-parallel-fixture-repair.md): Deterministic parallel fixture repair | ar1803_parallel_fixture_luna56 | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. | Fresh independent exact-head review of 5a06ac1f; then force-with-lease PR #599, monitor all hosted checks, merge only green. |
 
 ### Blocked (89)
@@ -390,7 +389,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (591)
+### Done (592)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -582,3 +581,4 @@
 | P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Unclaimed | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
 | P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Unclaimed | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | No further AR-1490 action. Development unsigned qualification is complete; any customer/release publication remains separately gated by a genuinely signed production bundle. |
 | P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | Unclaimed | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Reconcile and doctor state projection; retain generated WORKTREES/PROJECT_STATE caveat if reported. |
+| P0 | [AR-1492](../tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | Unclaimed | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Run state reconcile and doctor, then release AR-1492 done ownerless with merge and eight-workflow evidence. |

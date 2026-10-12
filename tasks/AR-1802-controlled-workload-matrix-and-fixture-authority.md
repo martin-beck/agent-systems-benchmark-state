@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T06:31:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1782",
     "AR-1783"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "observed_dirty": 0,
   "observed_head": "c9ea7246e6d4ce7cfd11eabe55216765d2508996",
-  "owner": "ar1802-workload-matrix-luna56",
+  "owner": "",
   "plan": "../plans/AR-1802-controlled-workload-matrix-and-fixture-authority.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1802.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T04:17:37+00:00",
+  "updated_at": "2026-10-12T04:17:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -339,3 +339,7 @@ remains explicitly unaccepted and blocked until this repair is complete.
 - 2026-10-12T04:17:37+00:00: Accepted AR-1802 task spec against exact merged main 1ce208b4: all
   hosted PR checks green, non-squash merge preserved reviewed c9ea7246, and fresh post-merge make
   test passed.
+
+- 2026-10-12T04:17:39+00:00: AR-1802 complete: PR #600 merged non-squash at 1ce208b4; hosted 15/15
+  checks SUCCESS; exact post-merge main make test passed; acceptance receipt
+  quality/AR-1802-postmerge-receipt.txt recorded.

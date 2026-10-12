@@ -1510,11 +1510,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1802-workload-matrix-luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review. |
@@ -2411,7 +2411,7 @@ flowchart LR
         direction TB
         AR_1800["AR-1800 - Blocked"]:::status_blocked
         AR_1801["AR-1801 - Blocked"]:::status_blocked
-        AR_1802["AR-1802 - In progress"]:::status_in_progress
+        AR_1802["AR-1802 - Done"]:::status_done
         AR_1803["AR-1803 - In progress"]:::status_in_progress
         AR_1804["AR-1804 - Done"]:::status_done
     end
