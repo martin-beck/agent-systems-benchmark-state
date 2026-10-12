@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:12:40+00:00",
+  "updated_at": "2026-10-12T12:12:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -148,3 +148,6 @@ introduce a TLC/model-check dependency for development.
   repeated focused run passed 5/5 on current main, so failure is non-reproducible runner/environment
   behavior. Preserve gate and rerun the same exact-main workflow; no repair AR or product change
   warranted.
+
+- 2026-10-12T12:12:45+00:00: Recorded command exit 0; command argv SHA-256
+  ee0828b2e7ad086de644de4f38823e83462721ce84eb45f16d6c8557ef024050.
