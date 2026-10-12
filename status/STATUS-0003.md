@@ -1661,7 +1661,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
-| Next action | Rerun workflow_transcript provenance test and full locked offline workspace suite; then run fmt, clippy warnings-denied, docs and release build. |
+| Next action | Run cargo fmt check, clippy warnings-denied, rustdoc warnings-denied, and locked release build via handoffctl; then independently review exact diff and prepare PR. |
 
 ### AR-1813 — Expose cli2key runtime factory contract
 

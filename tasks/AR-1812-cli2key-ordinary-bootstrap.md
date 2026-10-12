@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Rerun workflow_transcript provenance test and full locked offline workspace suite; then run fmt, clippy warnings-denied, docs and release build.",
+  "next_action": "Run cargo fmt check, clippy warnings-denied, rustdoc warnings-denied, and locked release build via handoffctl; then independently review exact diff and prepare PR.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "0df054d3f86f0c04b946ae925d43cb5296a36246",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:43:34+00:00",
+  "updated_at": "2026-10-12T11:43:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -260,3 +260,10 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T11:43:34+00:00: Recorded command exit 0; command argv SHA-256
   e707df7f55a6654654f37ad080b466fb4a4c80a23a3d8469b684927395ecc17c.
+
+- 2026-10-12T11:43:59+00:00: Full workspace rerun passed after provenance repair: cargo test
+  --locked --workspace --offline exited 0. The preceding failed run was repaired solely by updating
+  docs/examples/asb-cli-workflow-v1.provenance.json cli_source_sha256 to the exact current lib.rs
+  digest. All workspace unit/integration suites completed, including diagnostic_contract (9),
+  workflow_transcript (3), human_cli (16), TUI lifecycle and 437 asb-cli unit tests. No TLC or
+  live-provider requirement used.
