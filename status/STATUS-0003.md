@@ -1532,7 +1532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
-| Next action | Await PR creation/hosted exact-head CI; independent review accepted exact signed head ed7b3105. |
+| Next action | Independent exact-head review of f85b0dd7 after main conflict repair; then force-with-lease push PR #599 and wait hosted CI. |
 
 ### AR-1804 — Cross-module fixture semaphore
 

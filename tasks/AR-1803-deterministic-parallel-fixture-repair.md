@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Await PR creation/hosted exact-head CI; independent review accepted exact signed head ed7b3105.",
+  "next_action": "Independent exact-head review of f85b0dd7 after main conflict repair; then force-with-lease push PR #599 and wait hosted CI.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "f85b0dd7a0a209cfcd15837a4e5145a3efdb9528",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:02:24+00:00",
+  "updated_at": "2026-10-12T04:02:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -324,3 +324,10 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T04:02:24+00:00: Recorded command exit 0; command argv SHA-256
   13e2aa5d148f9097f642e519d13f83dd607b03dabc7cdbb78c402e46fca20295.
+
+- 2026-10-12T04:02:35+00:00: PR #599 conflict repair: exact head ed7b3105 was conflicting against
+  main 6761a6d0 because branch predated merged AR-1804. Through handoffctl, fetched origin/main,
+  created signed merge commit 2cb78a3a, resolved module/provenance conflicts preserving line
+  identities, and restored exact diagnostic catalog in signed f85b0dd7. Final post-merge-to-main
+  gates: make test exit 0; default-parallel asb-cli 431/431 in 20.13s; focused diagnostic and
+  provenance tests pass. Current clean candidate exact head f85b0dd7.
