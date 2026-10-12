@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T11:57:18+00:00",
+  "updated_at": "2026-10-12T11:57:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -86,3 +86,6 @@ introduce a TLC/model-check dependency for development.
 
 - 2026-10-12T11:57:18+00:00: Recorded command exit 0; command argv SHA-256
   8df134f290ec84989599f4894d2a42e955805e4ddda15e6b222758c199b2df67.
+
+- 2026-10-12T11:57:40+00:00: Recorded command exit 0; command argv SHA-256
+  8f8f1ceb8194b695841e2a5db0025ba5f51163901c3ed6da7831b188811c6116.
