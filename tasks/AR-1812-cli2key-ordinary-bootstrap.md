@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:38:51+00:00",
+  "updated_at": "2026-10-12T11:38:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -219,3 +219,6 @@ fixtures and must not require a live provider or TLC.
   generated tools/__pycache__/handoffctl.cpython-312.pyc over 200 KiB; moved recoverably to
   /srv/data/projects/asb-state-generated-cache-ar1812-20261012 and will invoke handoffctl with
   PYTHONDONTWRITEBYTECODE=1.
+
+- 2026-10-12T11:38:54+00:00: Recorded command exit 0; command argv SHA-256
+  7c730eec3ea71bd24ffc5a9255bf7f542481bf601dba6c72bed6e00f6c2fab3c.
