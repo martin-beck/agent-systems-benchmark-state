@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Reproduce and isolate AR-1801 parallel-load fixture failures before implementation.",
+  "next_action": "Implement deterministic process-heavy fixture isolation for AR-1801/full asb-cli gates; preserve bounded parallelism and rerun exact-head gates.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 1,
   "observed_head": "56db629d58b725114b10e6fad8cc4772b16834d0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T02:36:20+00:00",
+  "updated_at": "2026-10-12T02:36:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -63,3 +63,13 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T02:36:20+00:00: Recorded command exit 101; command argv SHA-256
   13e2aa5d148f9097f642e519d13f83dd607b03dabc7cdbb78c402e46fca20295.
+
+- 2026-10-12T02:36:38+00:00: Exact AR-1803 reproduction: full parallel cargo test --locked
+  --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair/Cargo.toml
+  -p asb-cli --lib -- --test-threads=8 exited 101 with 428 passed, 1 failed. Failure moved to
+  source_checkout::tests::exact_fixture_checkout_is_returned_and_cleanup_is_explicit at
+  source_checkout.rs:909, unwrap Err(Unavailable), demonstrating broad process/fixture contention
+  under parallel load. The affected AR-1801 provider/comparison tests pass when focused and all 429
+  lib tests pass serially; no retry is treated as qualification success until deterministic
+  isolation is repaired.
