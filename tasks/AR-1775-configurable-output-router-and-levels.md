@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 263,
+  "task_revision": 264,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T01:08:31+00:00",
+  "updated_at": "2026-10-12T01:09:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -826,3 +826,6 @@ stdout envelope and silences all human/operational output on both streams.
   preserved source line identities; v9 refreshed docs/examples/asb-cli-workflow-v1.provenance.json
   cli_source_sha256 to 2e153e8a62504c5b93f17e322cb848c1445ed3d9df798795d75fdeae4953fbe0. Signed DCO
   synchronization merge published in PR #597; PR #595 closed.
+
+- 2026-10-12T01:09:06+00:00: Recorded command exit 8; command argv SHA-256
+  e4adc98b7139ad9c8e49f6e30db149c4de170864e105e91d1096a894e9e4f383.
