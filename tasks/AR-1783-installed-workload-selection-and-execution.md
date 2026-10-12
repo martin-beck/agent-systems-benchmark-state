@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "PR #596 repaired against current protected main 98327152 at exact head db9b1fb8; prior 506de984 review invalidated and fresh checks/review required",
-  "task_revision": 237,
+  "task_revision": 238,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:32:11+00:00",
+  "updated_at": "2026-10-12T01:32:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -745,3 +745,6 @@ the suite from this end-to-end path.
   852f5b4ff6fa5f21a7120298e167e5a97487aa7a matching current main; local repository policy all checks
   passed. The first attempted sync ae71fb35 lacked Signed-off-by and was discarded; replacement
   db9b1fb8 passes policy.
+
+- 2026-10-12T01:32:21+00:00: Recorded command exit 0; command argv SHA-256
+  118a4754dd6c557f81b8470bb292bd635bd68d77b06d2ef7b41a1795c9e4d2a8.
