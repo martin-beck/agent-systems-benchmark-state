@@ -43,7 +43,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38209256879 | `fd815d5e4de7` | pull_request | Emulated aarch64 portability | completed:success |
 | 38209256876 | `fd815d5e4de7` | pull_request | Fault assurance | completed:success |
 | 38209256869 | `fd815d5e4de7` | pull_request | Formal assurance | completed:success |
-| 38209256859 | `fd815d5e4de7` | pull_request | Repository quality | in_progress:- |
+| 38209256859 | `fd815d5e4de7` | pull_request | Repository quality | completed:success |
 | 38209256858 | `fd815d5e4de7` | pull_request | Hosted portability and native qualification | completed:success |
 | 38209256853 | `fd815d5e4de7` | pull_request | Cross-repository development broker qualification | completed:success |
 | 38209233880 | `65ee830e6659` | pull_request | Hosted portability and native qualification | completed:success |
