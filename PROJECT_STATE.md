@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
 | #606 | `feature/ar-1811-development-formal-workflow-separation@d9972679899c` | `main` | BLOCKED | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Separate development and final-delivery formal workflows |
-| #607 | `feature/ar-1813-cli2key-runtime-factory-contract@d5f814896ccf` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): expose verified cli2key receipt contract |
+| #607 | `feature/ar-1813-cli2key-runtime-factory-contract@d5f814896ccf` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(runtime): expose verified cli2key receipt contract |
 
 ## Recent workflows
 
@@ -41,7 +41,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38235287337 | `d5f814896ccf` | pull_request | Credential-free benchmark path | in_progress:- |
 | 38235287325 | `d5f814896ccf` | pull_request | Repository quality | in_progress:- |
 | 38235287319 | `d5f814896ccf` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38235287308 | `d5f814896ccf` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38235287308 | `d5f814896ccf` | pull_request | Hosted portability and native qualification | completed:success |
 | 38235287285 | `d5f814896ccf` | pull_request | Formal assurance | in_progress:- |
 | 38235287284 | `d5f814896ccf` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38235287274 | `d5f814896ccf` | pull_request | Huawei MIT source headers | completed:success |
