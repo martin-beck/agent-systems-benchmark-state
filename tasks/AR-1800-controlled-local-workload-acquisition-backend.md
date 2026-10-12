@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "checkpoint_commit": "b72da478631faa391f9be75d7cce1e813deb387d",
-  "claim_expires": "2026-10-12T07:18:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1782",
     "AR-1783"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "observed_dirty": 0,
   "observed_head": "b72da478631faa391f9be75d7cce1e813deb387d",
-  "owner": "ar1800-local-acquisition-luna56",
+  "owner": "",
   "plan": "../plans/AR-1800-controlled-local-workload-acquisition-backend.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1800.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T05:24:03+00:00",
+  "updated_at": "2026-10-12T05:24:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -283,3 +283,8 @@ must not weaken production acquisition, identity, or offline guarantees.
   passed 22/22, provider_selection_manifest lifecycle 1/1, benchmark selected/all fanout 1/1,
   full-catalog record campaign 1/1, and network-denied record/replay 1/1. Do not waive full gate;
   AR-1801 deterministic fixture isolation is the external repair prerequisite.
+
+- 2026-10-12T05:24:07+00:00: Released blocked with exact evidence: origin/main e0e44a7d full
+  workspace cargo test has one unrelated ambient mini_swe test failure (test root overlaps
+  repository), while focused AR-1800 workload/archive/offline matrix is green. AR-1801 deterministic
+  fixture isolation is required; no gate waived and no PR/merge performed.
