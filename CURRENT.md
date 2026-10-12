@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1774](tasks/AR-1774-status-progress-completeness-ci.md): Status and progress completeness CI | Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode. | Add required CI enforcement and controlled-defect tests for quiet, status, and progress completeness after universal instrumentation lands. | ar1774-status-ci-luna56 |
-| P0 | [AR-1816](tasks/AR-1816-state-projection-and-bytecode-hygiene.md): Coordinator projection and bytecode hygiene recovery | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. | PR #121 now targets 8c001feda9; independent exact-head review and required state CI must pass. Vendor files are restored; downstream awq-handoffctl owns projection transaction and bytecode hygiene. Then merge and run configured reconcile/snapshot/doctor receipt. | ar1816_projection_hygiene |
+| P0 | [AR-1816](tasks/AR-1816-state-projection-and-bytecode-hygiene.md): Coordinator projection and bytecode hygiene recovery | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. | PR #121 now targets ed4bc979fe; source-header repair pushed. Await exact-head independent review and all required CI checks. Then merge and run configured reconcile/snapshot/doctor receipt. | ar1816_projection_hygiene |
 
 ## Blocked
 
