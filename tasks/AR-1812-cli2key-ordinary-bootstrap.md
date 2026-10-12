@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Publish exact clean signed branch and PR through handoffctl; then wait for independent review and exact-head CI.",
+  "next_action": "Obtain independent review, verify PR #610 head remains 95a342fde4c5135a841017074028bcf053771f05, wait for required CI green, then merge and perform post-merge verification.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "95a342fde4c5135a841017074028bcf053771f05",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:52:23+00:00",
+  "updated_at": "2026-10-12T11:52:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -357,3 +357,8 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T11:52:23+00:00: Recorded command exit 0; command argv SHA-256
   6697dc8fd6b615cf72adfa17cfb9c55149452cae1185bd3b731e3aadefd39b23.
+
+- 2026-10-12T11:52:35+00:00: Published clean exact branch feature/ar-1812-cli2key-ordinary-bootstrap
+  at 95a342fde4c5135a841017074028bcf053771f05 through handoffctl. PR #610 created:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/610. Remote head matches exact local
+  signed head; working tree is clean. Await independent review and exact-head CI.
