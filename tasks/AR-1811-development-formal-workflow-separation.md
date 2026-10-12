@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T11:55:46+00:00",
   "depends_on": [],
   "id": "AR-1811",
-  "next_action": "Promote and implement the workflow separation on a clean exact-main worktree; ordinary development PRs must not invoke TLC/Alloy, while the final-delivery PR lane retains the sole formal execution gate.",
+  "next_action": "Monitor PR #606 exact head da764cf7 until all required non-TLC checks are green; then independent review, merge, exact-main post-merge verification, and durable closure.",
   "observed_branch": "feature/ar-1811-development-formal-workflow-separation",
   "observed_dirty": 0,
   "observed_head": "da764cf74d70783eff73d6f0055a1ac3a0dfa221",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T09:55:46+00:00",
+  "updated_at": "2026-10-12T09:57:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -94,3 +94,11 @@ tests and update the generated quality documentation.
 - 2026-10-12T09:54:24+00:00: Heartbeat by ar1811-formal-separation-luna56.
 
 - 2026-10-12T09:55:46+00:00: Heartbeat by ar1811-formal-separation-luna56.
+
+- 2026-10-12T09:57:07+00:00: PR #606 exact-head repair da764cf74d70783eff73d6f0055a1ac3a0dfa221 adds
+  separated-workflow pin assertions after initial Loom job failure. Initial failure was
+  deterministic toolchain_pins expecting setup-java and temporal invocation in formal.yml; repaired
+  test now binds Kani/Loom to development workflow and setup-java/temporal invocation to
+  final-delivery workflow. Local toolchain_pins passed. TLC/model-check was not run. Current hosted
+  checks: Kani, Loom, platform, retained faults, fuzz, credential-free, TUI, AWQ, provenance,
+  headers and mutation checks green; Rust, policy, QEMU and remaining checks pending.
