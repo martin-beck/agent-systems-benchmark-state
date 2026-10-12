@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1799](tasks/AR-1799-tui-install-rustup-invalid-repair.md): Repair asb tui install rustup/rustc trusted-tool rejection | Repair the remaining current-main asb tui install trusted_tool_invalid failure for development rustup/rustc layouts and qualify the real installed entrypoint. | Reproduce the installed-entrypoint failure on the exact current ASB main head, then repair the failing rustup/rustc path and add regression coverage. | codex-ar1799-tui-install-rustup-invalid-20261012 |
-| P0 | [AR-1819](tasks/AR-1819-expired-claim-recovery-safety.md): Fail-closed expired-claim recovery | Make expired-claim recovery fail closed when the exact current session snapshot is unavailable. | Implementation is complete at signed commits 20ff486bd7 and 44b2e2a0b1; obtain independent exact-head review, run applicable CI, then integrate and verify doctor. | ar1819_stale_claim_repair |
+| P0 | [AR-1819](tasks/AR-1819-expired-claim-recovery-safety.md): Fail-closed expired-claim recovery | Make expired-claim recovery fail closed when the exact current session snapshot is unavailable. | Implementation complete at signed commits 20ff486bd7 and 44b2e2a0b1; focused state suites 152 passed and 52 subtests passed. Await independent exact-head review, applicable CI, then integrate and verify doctor. | ar1819_stale_claim_repair |
 
 ## Open
 
