@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Protected integration may proceed: independent review accepted exact head and all required PR checks are terminal success; do not merge until integration worker revalidates exact target tree.",
+  "next_action": "Request fresh independent review for 736b970566d74644ab1dc9c51ff6dd890298c382 and wait for fresh exact-head required CI; merge only after both are green.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "736b970566d74644ab1dc9c51ff6dd890298c382",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T12:07:15+00:00",
+  "updated_at": "2026-10-12T12:07:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -427,3 +427,11 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T12:07:15+00:00: Recorded command exit 0; command argv SHA-256
   b1f35fabf259601bf35418644185255f166ed2ce5c26f1e621c23a3f040d0850.
+
+- 2026-10-12T12:07:32+00:00: Protected main advanced to e57982a79fafa464bfac6b3c858226ffe08737e7, so
+  old reviewed head 95a342fd was invalidated and PR #610 was not merged. Rebased cleanly onto
+  current origin/main; new exact signed head is 736b970566d74644ab1dc9c51ff6dd890298c382. Focused
+  diagnostic_contract passed 9/9; full cargo test --locked --workspace --offline passed including
+  asb-cli 437 tests; fmt check, clippy -D warnings, rustdoc -D warnings, and locked offline release
+  build all passed. Force-with-lease push through handoffctl updated PR #610; remote matches new
+  head. Prior review/checks do not authorize this head.
