@@ -2956,19 +2956,19 @@ class HandoffTest(unittest.TestCase):
                 "ahead": 1,
             }
         ]
-        real_atomic = CORE.atomic
+        real_stage = CORE._stage_projection
         failed = False
 
-        def fail_project_once(target: Path, text: str) -> None:
+        def fail_project_once(target: Path, text: str) -> Path:
             nonlocal failed
             if target.name == "PROJECT_STATE.md" and not failed:
                 failed = True
                 raise OSError("injected project view write failure")
-            real_atomic(target, text)
+            return real_stage(target, text)
 
         with (
             patch.object(CORE, "project_scan", return_value=state),
-            patch.object(CORE, "atomic", side_effect=fail_project_once),
+            patch.object(CORE, "_stage_projection", side_effect=fail_project_once),
             self.assertRaisesRegex(OSError, "injected project view write failure"),
         ):
             CORE.reconcile(do_commit=False)

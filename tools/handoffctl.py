@@ -3,7 +3,15 @@
 # SPDX-License-Identifier: MIT
 """Transactional, project-configurable coordination state."""
 
+import os
 import sys
+
+# Direct script execution is a supported entry point as well as the wrapper.
+# Set the policy before importing coordinator modules so neither route writes
+# a repository-local __pycache__ file.
+if __name__ == "__main__":
+    os.environ["PYTHONDONTWRITEBYTECODE"] = "1"
+    sys.dont_write_bytecode = True
 
 if __name__ == "__main__" and len(sys.argv) > 2 and sys.argv[1] == "fast":
     from fast_receipt_socket import try_socket_fast  # type: ignore[import-not-found]
@@ -1846,6 +1854,111 @@ def restore_paths(before: dict[Path, str | None]) -> None:
             atomic(path, old)
 
 
+PROJECTION_TRANSACTION = "projection-transaction.json"
+
+
+def _projection_transaction_path() -> Path:
+    return RUNTIME / PROJECTION_TRANSACTION
+
+
+def _stage_projection(path: Path, content: str) -> Path:
+    """Write one fsynced replacement beside its target without publishing it."""
+    descriptor, temporary = tempfile.mkstemp(prefix="." + path.name + ".", dir=path.parent)
+    staged = Path(temporary)
+    try:
+        with os.fdopen(descriptor, "w", encoding="utf-8") as stream:
+            stream.write(content)
+            stream.flush()
+            os.fsync(stream.fileno())
+        staged.chmod(0o600)
+        return staged
+    except Exception:
+        staged.unlink(missing_ok=True)
+        raise
+
+
+def atomic_projection_batch(contents: dict[Path, str | None]) -> None:
+    """Publish all derived views as one recoverable transaction.
+
+    Files are staged and an intent record is durable before any destination is
+    replaced.  A later coordinator invocation can therefore restore the last
+    matched set after an interrupted process, while normal callers still get
+    the ordinary atomic per-file replacement semantics.
+    """
+    if not contents:
+        return
+    RUNTIME.mkdir(mode=0o700, parents=True, exist_ok=True)
+    entries: list[dict[str, str | None]] = []
+    staged_paths: list[Path] = []
+    try:
+        for target, content in contents.items():
+            if target.resolve().parent != target.parent.resolve():
+                raise RuntimeError("projection target must remain in its configured directory")
+            staged = _stage_projection(target, content) if content is not None else None
+            if staged is not None:
+                staged_paths.append(staged)
+            backup = RUNTIME / ("projection-backup-" + uuid.uuid4().hex)
+            if target.exists():
+                backup.write_bytes(target.read_bytes())
+                backup.chmod(0o600)
+            entries.append(
+                {
+                    "target": str(target.relative_to(ROOT)),
+                    "staged": str(staged) if staged is not None else None,
+                    "backup": str(backup) if target.exists() else None,
+                }
+            )
+        atomic(_projection_transaction_path(), json.dumps({"entries": entries}, sort_keys=True))
+        for entry in entries:
+            target = ROOT / str(entry["target"])
+            staged_name = entry["staged"]
+            if staged_name is None:
+                target.unlink(missing_ok=True)
+            else:
+                Path(staged_name).replace(target)
+        _projection_transaction_path().unlink(missing_ok=True)
+        for entry in entries:
+            backup = entry["backup"]
+            if backup:
+                Path(backup).unlink(missing_ok=True)
+    except Exception:
+        # Restore the old matched set before propagating a typed failure.  If
+        # the process is killed in this block, the durable intent is recovered
+        # by the next supported coordinator entry point.
+        _recover_projection_transaction()
+        raise
+    finally:
+        for staged in staged_paths:
+            staged.unlink(missing_ok=True)
+
+
+def _recover_projection_transaction() -> None:
+    """Restore or retire an interrupted projection publication."""
+    marker = _projection_transaction_path()
+    if not marker.exists():
+        return
+    try:
+        record = json.loads(marker.read_text(encoding="utf-8"))
+        entries = record["entries"]
+        if not isinstance(entries, list):
+            raise ValueError("entries is not a list")
+        for entry in entries:
+            target = ROOT / str(entry["target"])
+            backup = entry.get("backup")
+            if backup:
+                atomic(target, Path(backup).read_text(encoding="utf-8"))
+            else:
+                target.unlink(missing_ok=True)
+            staged = entry.get("staged")
+            if staged:
+                Path(staged).unlink(missing_ok=True)
+            if backup:
+                Path(backup).unlink(missing_ok=True)
+        marker.unlink(missing_ok=True)
+    except (OSError, KeyError, TypeError, ValueError) as error:
+        raise RuntimeError("PROJECTION_RECOVERY_FAILED: inspect the transaction marker") from error
+
+
 def generated_paths() -> list[Path]:
     """Return every configured generated projection path."""
     names = ["CURRENT.md", "PROJECT_STATE.md", "WORKTREES.md"]
@@ -1869,13 +1982,24 @@ def changed_paths(before: dict[Path, str | None], *, include_deleted: bool = Fal
 
 def write_generated_views(tasks: list[Task], state: Meta) -> None:
     """Atomically refresh every configured generated projection."""
-    atomic(ROOT / "CURRENT.md", render_current(tasks))
+    _recover_projection_transaction()
+    contents: dict[Path, str | None] = {ROOT / "CURRENT.md": render_current(tasks)}
     if project_settings()["status_view"]:
         expected = render_status_views(tasks)
-        write_status_views(expected)
+        contents.update({ROOT / relative: content for relative, content in expected.items()})
+        expected_paths = {ROOT / relative for relative in expected}
+        contents.update(
+            {
+                path: None
+                for path in generated_paths()
+                if path not in expected_paths
+                and (path.name == "STATUS.md" or path.parent.name == "status")
+            }
+        )
     project, worktrees = live_docs(state)
-    atomic(ROOT / "PROJECT_STATE.md", project)
-    atomic(ROOT / "WORKTREES.md", worktrees)
+    contents[ROOT / "PROJECT_STATE.md"] = project
+    contents[ROOT / "WORKTREES.md"] = worktrees
+    atomic_projection_batch(contents)
 
 
 def policy_snapshot(policy: EvidencePolicy | None) -> EvidencePolicy:
@@ -4215,6 +4339,9 @@ def dispatch_bound_standard_command(args: argparse.Namespace) -> int:  # noqa: C
 
 def dispatch_bound_command(args: argparse.Namespace) -> int:
     """Dispatch a bound command while retaining the opt-in receipt route."""
+    # Recover an interrupted derived-view publication before any command reads
+    # the projections.  This keeps doctor/snapshot from observing a mixed set.
+    _recover_projection_transaction()
     if args.cmd == "fast":
         return dispatch_fast_command(args)
     return dispatch_bound_standard_command(args)
