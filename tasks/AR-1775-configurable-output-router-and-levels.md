@@ -27,7 +27,7 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Configurable output router and levels",
   "updated_at": "2026-10-12T00:23:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
@@ -280,3 +280,6 @@ stdout envelope and silences all human/operational output on both streams.
   non-force-pushed PR #590 on v3 exact head c52dd2b2, parents 3cb3702 and protected base 0a2039c4,
   with valid SSH signature and matching DCO trailer. All local asb-cli lib tests pass 429/429 from
   /srv/data/projects/asb-ar1775-v3-compatible layout; hosted checks are now pending.
+
+- 2026-10-12T00:23:20+00:00: Recorded command exit 0; command argv SHA-256
+  caa6f67806fb45123715126c1b01276f28ce76c71f77563f5393e5867e208ff1.
