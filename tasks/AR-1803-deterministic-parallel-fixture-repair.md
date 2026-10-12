@@ -9,8 +9,8 @@
   "id": "AR-1803",
   "next_action": "Repair PR topology by rebuilding a clean signed topic from current main with only reviewed discovery diff; run gates, obtain fresh independent ACCEPT, force-update PR #599 and rerun hosted checks.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
-  "observed_dirty": 1,
-  "observed_head": "1ce208b4e5738b9608b3f2d454d0a6a0dfbeb323",
+  "observed_dirty": 0,
+  "observed_head": "6e65d8c39f49cdc0a0d03131ad49b4167a919c87",
   "owner": "ar1803_parallel_fixture_luna56",
   "plan": "../plans/AR-1803-deterministic-parallel-fixture-repair.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:23:34+00:00",
+  "updated_at": "2026-10-12T04:23:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
