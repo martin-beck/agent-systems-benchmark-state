@@ -33,7 +33,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38204881830 | `3c7ca1c1f307` | push | Repository quality | in_progress:- |
+| 38204881830 | `3c7ca1c1f307` | push | Repository quality | completed:failure |
 | 38204881819 | `3c7ca1c1f307` | push | Fault assurance | in_progress:- |
 | 38204881812 | `3c7ca1c1f307` | push | Portable protected-main provenance | completed:failure |
 | 38204881806 | `3c7ca1c1f307` | push | Credential-free benchmark path | in_progress:- |
