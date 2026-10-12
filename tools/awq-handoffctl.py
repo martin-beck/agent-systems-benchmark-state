@@ -66,11 +66,13 @@ def _publish_transaction(core: ModuleType, contents: dict[Path, str | None]) -> 
                 backup = runtime / f"asb-projection-backup-{uuid.uuid4().hex}"
                 backup.write_bytes(target.read_bytes())
                 backup.chmod(0o600)
-            entries.append({
-                "target": str(target.relative_to(core.ROOT)),
-                "staged": str(temporary) if temporary else None,
-                "backup": str(backup) if backup else None,
-            })
+            entries.append(
+                {
+                    "target": str(target.relative_to(core.ROOT)),
+                    "staged": str(temporary) if temporary else None,
+                    "backup": str(backup) if backup else None,
+                }
+            )
         core.atomic(marker, json.dumps({"entries": entries}, sort_keys=True))
         for entry in entries:
             target = core.ROOT / str(entry["target"])
@@ -124,11 +126,14 @@ def _install_projection_policy(core: ModuleType) -> None:
             expected = core.render_status_views(tasks)
             contents.update({core.ROOT / relative: text for relative, text in expected.items()})
             expected_paths = {core.ROOT / relative for relative in expected}
-            contents.update({
-                path: None
-                for path in core.generated_paths()
-                if path not in expected_paths and (path.name == "STATUS.md" or path.parent.name == "status")
-            })
+            contents.update(
+                {
+                    path: None
+                    for path in core.generated_paths()
+                    if path not in expected_paths
+                    and (path.name == "STATUS.md" or path.parent.name == "status")
+                }
+            )
         project, worktrees = core.live_docs(state)
         contents[core.ROOT / "PROJECT_STATE.md"] = project
         contents[core.ROOT / "WORKTREES.md"] = worktrees
