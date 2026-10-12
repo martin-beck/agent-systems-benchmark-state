@@ -16,20 +16,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "environmental",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:e30a30bdda825cc347b31d53fad543defd1b5b971745fa1a3fb6fed4f90ef0e6",
+    "evidence_ref": "quality/AR-1804-pr-598-merge-6761a6d0.txt",
     "spec_ref": "specs/AR-1804.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1804.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:29:47+00:00",
+  "updated_at": "2026-10-12T03:30:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -569,3 +569,7 @@ before AR-1801 can be accepted.
   is resolved; no qualification failure.
 
 - 2026-10-12T03:29:47+00:00: Checkpointed source commit 8ebf8893529e32ea0602927dbbd4e5babb97f862.
+
+- 2026-10-12T03:30:11+00:00: Acceptance evidence: exact reviewed PR head d625c822 had every required
+  hosted check green; repository-supported merge method produced main 6761a6d0; reconcile observed
+  main clean at that exact head and handoffctl doctor --live passed.
