@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "PR #596 repaired to single signed/DCO topic commit aca3f79 on current protected base 98327152; portable provenance green and remaining checks running",
-  "task_revision": 265,
+  "task_revision": 266,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:46:12+00:00",
+  "updated_at": "2026-10-12T01:46:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -838,3 +838,6 @@ the suite from this end-to-end path.
   weakening found. All current required hosted checks are terminal SUCCESS at aca3f79, including
   policy/coverage/supply chain, Rust, emulated aarch64, provenance, credential-free, privacy/TUI,
   fuzz, formal, mutation, and retained-fault gates. Approved for merge; do not merge in this review.
+
+- 2026-10-12T01:46:13+00:00: Recorded command exit 0; command argv SHA-256
+  e58541a04ee60bf2b323a5f01a61abdf34360ce8dde236c9f8c61a58790722fb.
