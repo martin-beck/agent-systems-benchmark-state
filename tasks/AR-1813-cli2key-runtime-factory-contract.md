@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T11:17:14+00:00",
+  "claim_expires": "2026-10-12T11:20:23+00:00",
   "depends_on": [
     "AR-1779",
     "AR-1799"
@@ -86,9 +86,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:47:14+00:00",
+  "updated_at": "2026-10-12T10:50:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -146,3 +146,5 @@ fabricate authority in the CLI or introduce a provider fallback.
   event=sha256:097a89204d037616edc44db3bc1b5d068d6fabe65a7e240bfe96d2f80511313b.
 
 - 2026-10-12T10:47:14+00:00: Heartbeat by ar1810-cli2key-luna56.
+
+- 2026-10-12T10:50:23+00:00: Heartbeat by ar1810-cli2key-luna56.
