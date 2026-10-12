@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `15c80511cd2cb55947fe3ee1e130affed4c76b4d`
-- Local origin/main: `15c80511cd2cb55947fe3ee1e130affed4c76b4d`
+- Product remote main: `e57982a79fafa464bfac6b3c858226ffe08737e7`
+- Local origin/main: `e57982a79fafa464bfac6b3c858226ffe08737e7`
 - Primary worktree head: `98327152f2e92308b5bcf5b21cfe0c9f285cf950`
 
 ## Open pull requests
@@ -28,22 +28,21 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@83c2c6635789` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.25 |
-| #609 | `recovery/ar-1815-provenance@ab4f4c6a81f5` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: recover protected merge provenance |
-| #610 | `feature/ar-1812-cli2key-ordinary-bootstrap@95a342fde4c5` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): wire ordinary cli2key bootstrap |
+| #610 | `feature/ar-1812-cli2key-ordinary-bootstrap@95a342fde4c5` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): wire ordinary cli2key bootstrap |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38246185030 | `e57982a79faf` | push | Fault assurance | completed:success |
+| 38246184903 | `e57982a79faf` | push | Rust verification | in_progress:- |
+| 38246184845 | `e57982a79faf` | push | Portable protected-main provenance | completed:success |
+| 38246184830 | `e57982a79faf` | push | Emulated aarch64 portability | in_progress:- |
+| 38246184797 | `e57982a79faf` | push | Credential-free benchmark path | completed:success |
+| 38246184764 | `e57982a79faf` | push | Development formal assurance | completed:success |
+| 38246184734 | `e57982a79faf` | push | Hosted portability and native qualification | completed:success |
+| 38246184722 | `e57982a79faf` | push | Repository quality | in_progress:- |
+| 38246184712 | `e57982a79faf` | push | Cross-repository development broker qualification | completed:success |
+| 38246184676 | `e57982a79faf` | push | Huawei MIT source headers | completed:success |
 | 38245455269 | `95a342fde4c5` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38245455243 | `95a342fde4c5` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38245455218 | `95a342fde4c5` | pull_request | Hosted portability and native qualification | completed:success |
-| 38245455215 | `95a342fde4c5` | pull_request | Fault assurance | completed:success |
-| 38245455199 | `95a342fde4c5` | pull_request | Portable protected-main provenance | completed:success |
-| 38245455180 | `95a342fde4c5` | pull_request | Cross-repository development broker qualification | completed:success |
-| 38245455165 | `95a342fde4c5` | pull_request | Huawei MIT source headers | completed:success |
-| 38245455139 | `95a342fde4c5` | pull_request | Credential-free benchmark path | completed:success |
-| 38245455039 | `95a342fde4c5` | pull_request | Development formal assurance | completed:success |
-| 38245455020 | `95a342fde4c5` | pull_request | Repository quality | in_progress:- |
-| 38245455015 | `95a342fde4c5` | pull_request | Rust verification | in_progress:- |
-| 38244348878 | `ab4f4c6a81f5` | pull_request | Development formal assurance | completed:success |
+| 38245455243 | `95a342fde4c5` | pull_request | Emulated aarch64 portability | completed:success |
