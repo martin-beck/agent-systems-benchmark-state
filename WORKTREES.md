@@ -298,6 +298,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1811-merge-base` | `DETACHED` | `07c590e712df` | 0 | behind 5, ahead 0 |
 | `asb-ar1813-merge-base` | `DETACHED` | `5a6c5477cd17` | 0 | behind 2, ahead 0 |
 | `asb-goose-repair` | `repair/ar-1730-goose-aarch64-diagnostic` | `71b48057cd03` | 0 | behind 476, ahead 0 |
+| `asb-main-current` | `DETACHED` | `5c843a12e976` | 0 | behind 0, ahead 0 |
 | `asb-merge-575` | `DETACHED` | `14de8bce040e` | 0 | behind 165, ahead 0 |
 | `asb-post-568` | `DETACHED` | `d64ac90ad96a` | 0 | behind 188, ahead 0 |
 | `asb-pr1777-review.pqgKnj` | `DETACHED` | `d30079b7188e` | 0 | behind 139, ahead 0 |
