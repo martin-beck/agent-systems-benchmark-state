@@ -1098,7 +1098,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output. |
-| Next action | Run focused asb-cli reporter tests, repair compile/lint failures, then integrate router construction for human mode. |
+| Next action | Repair mutable writer reborrow from focused compiler diagnostics, rerun reporter tests, then run full asb-cli checks. |
 
 ### AR-1773 — Universal command step instrumentation
 

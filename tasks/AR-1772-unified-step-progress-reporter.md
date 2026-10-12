@@ -7,7 +7,7 @@
     "AR-1775"
   ],
   "id": "AR-1772",
-  "next_action": "Run focused asb-cli reporter tests, repair compile/lint failures, then integrate router construction for human mode.",
+  "next_action": "Repair mutable writer reborrow from focused compiler diagnostics, rerun reporter tests, then run full asb-cli checks.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 2,
   "observed_head": "98327152f2e92308b5bcf5b21cfe0c9f285cf950",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:08:45+00:00",
+  "updated_at": "2026-10-12T02:09:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -94,3 +94,8 @@ allowed outside this helper.
 
 - 2026-10-12T02:08:45+00:00: Recorded command exit 101; command argv SHA-256
   30750a6ed153fa6ade122ac0af3ea5d7f30be20442f77a0117ba6d9ab6365c54.
+
+- 2026-10-12T02:09:52+00:00: Focused test initially passed reporter unit tests; router integration
+  compile failed because reporter took stdout/stderr by value. Reborrow fix applied. Prior exact
+  compiler diagnostics: E0382 borrow of moved stderr/stdout at lib.rs:271/280; recommended &mut *
+  reborrow. One post-reconcile run was also blocked by generated handoffctl.pyc >200 KiB.
