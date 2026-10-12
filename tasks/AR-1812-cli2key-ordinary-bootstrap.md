@@ -1,0 +1,33 @@
+---
+{
+  "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": ["AR-1779", "AR-1799"],
+  "id": "AR-1812",
+  "next_action": "Promote and claim after coordinator reconciliation; implement the verified AR-1779 receipt resolver and wire AR-1799 authority into ordinary run/sweep dispatch, then complete review, merge, and post-merge verification.",
+  "observed_branch": "",
+  "observed_dirty": 0,
+  "observed_head": "",
+  "owner": "",
+  "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1812.json", "spec_revision": 1, "status": "pending"},
+  "spec_ref": "specs/AR-1812.json",
+  "spec_revision": 1,
+  "status": "planned",
+  "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
+  "task_revision": 1,
+  "title": "Implement cli2key ordinary CLI bootstrap",
+  "updated_at": "2026-10-12T00:00:00+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
+}
+---
+
+The ordinary ASB CLI currently has the AR-1799 authority seam and the AR-1779
+installation contract, but no production adapter that resolves the verified
+receipt and composes them for `run` and `sweep`. Implement that adapter with
+strict identity checks, opaque authority retention, bounded teardown, and
+typed no-fallback failures. Development qualification must use local/mock
+fixtures and must not require a live provider or TLC.

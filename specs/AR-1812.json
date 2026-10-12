@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1812.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "verified-receipt", "description": "Only a valid AR-1779 project-local receipt with matching identity, platform, entrypoint, and digests can bootstrap cli2key."},
+    {"id": "ordinary-dispatch", "description": "The production run and bounded sweep paths use the runtime-owned cli2key authority without exposing key material."},
+    {"id": "lifecycle", "description": "Cancellation, timeout, crash, and bounded sweep teardown are typed, bounded, and fail closed."},
+    {"id": "no-fallback", "description": "Missing or invalid cli2key installation never falls back to OpenRouter, replay, or another provider."}
+  ],
+  "definition_of_done": ["Implementation, positive and negative tests, documentation, independent exact-head review, green applicable CI, merge, and post-merge verification are complete."],
+  "inputs": [
+    {"id": "installer-receipt", "description": "AR-1779 verified project-local cli2key installation receipt."},
+    {"id": "runtime-authority", "description": "AR-1799 receipt-bound opaque runtime authority seam."},
+    {"id": "dispatch", "description": "Existing ASB run and sweep command dispatch."}
+  ],
+  "outputs": [{"id": "ordinary-bootstrap", "description": "Production run/sweep cli2key bootstrap adapter using opaque runtime authority."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl", "credential-free-fakes"],
+  "forbidden_tools": ["auth-file-scraping", "credential-output", "oauth-copy", "provider-fallback", "force-push", "gate-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [
+    {"id": "focused", "description": "Resolver, dispatch, and hostile lifecycle contract tests pass."},
+    {"id": "offline", "description": "Full applicable offline workspace gates pass without TLC."},
+    {"id": "exact-main", "description": "Independent review, protected merge, and post-merge exact-main verification are green."}
+  ]
+}
