@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Request fresh independent exact-head review of 40120658; publication remains blocked until ACCEPT.",
+  "next_action": "Publish exact 40120658 PR from clean tree; monitor all hosted checks and merge only exact-head green.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "401206582a8ac5912450533ee1da2d03bf64b391",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:49:14+00:00",
+  "updated_at": "2026-10-12T04:51:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -308,3 +308,8 @@ issue an opaque live attempt to the Codex adapter.
   (drop authority then spawn), and four-thread concurrent teardown; all assert LiveHandoff failure.
   Added test-only opaque attempt constructor and retained relay fence. Focused runtime 13 tests and
   full make test (fmt/clippy/workspace tests/docs) green.
+
+- 2026-10-12T04:51:01+00:00: Independent ACCEPT recorded from ar1780 for exact signed/DCO head
+  40120658. Review verified authority-bound attempt lifecycle matrix (cancellation, timeout/drop,
+  concurrent teardown), revocation/relay fences, hostile readiness, direct dispatch evidence,
+  privacy, and green full gates.

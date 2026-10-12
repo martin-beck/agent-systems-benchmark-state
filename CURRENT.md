@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope. | ar1796-reconcile-candidate-luna56 |
-| P0 | [AR-1799](tasks/AR-1799-cli2key-runtime-authority-seam.md): Add cli2key runtime authority composition seam | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. | Request fresh independent exact-head review of 40120658; publication remains blocked until ACCEPT. | ar1799-authority-luna56 |
+| P0 | [AR-1799](tasks/AR-1799-cli2key-runtime-authority-seam.md): Add cli2key runtime authority composition seam | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. | Publish exact 40120658 PR from clean tree; monitor all hosted checks and merge only exact-head green. | ar1799-authority-luna56 |
 
 ## Blocked
 
