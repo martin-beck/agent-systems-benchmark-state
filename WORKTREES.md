@@ -53,8 +53,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 708, ahead 136 |
 | `agent-systems-benchmark-ar-1652-record-replay` | `repair/ar-1652-record-replay` | `7ce484612db0` | 0 | behind 17, ahead 0 |
 | `agent-systems-benchmark-ar-1686` | `qualification/ar-1686` | `f37d3a3ef839` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1775-configurable-output-router-and-levels` | `feature/ar-1775-configurable-output-router-and-levels` | `abe813338a10` | 1 | behind 0, ahead 3 |
-| changed files | - | - | - | `crates/asb-cli/src/human.rs` |
+| `agent-systems-benchmark-ar-1775-configurable-output-router-and-levels` | `feature/ar-1775-configurable-output-router-and-levels` | `d7c08c106e52` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1779-default-usable-tool-install-command` | `feature/ar-1779-default-usable-tool-install-command` | `daf2d3ee9750` | 0 | behind 17, ahead 4 |
 | `agent-systems-benchmark-ar-1782-verified-asb-workload-installation` | `feature/ar-1782-verified-asb-workload-installation` | `3be3029d7a1d` | 0 | behind 18, ahead 0 |
 | `agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution` | `feature/ar-1783-installed-workload-selection-and-execution` | `6ec4d6b19b6b` | 0 | behind 0, ahead 3 |
