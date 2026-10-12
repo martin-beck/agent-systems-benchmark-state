@@ -7,7 +7,7 @@
     "AR-1775"
   ],
   "id": "AR-1772",
-  "next_action": "Implement the single human step reporter on the mandatory output router after its output, level, status, and quiet contracts are accepted.",
+  "next_action": "Run focused asb-cli reporter tests, repair compile/lint failures, then integrate router construction for human mode.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "98327152f2e92308b5bcf5b21cfe0c9f285cf950",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:03:53+00:00",
+  "updated_at": "2026-10-12T02:05:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -70,3 +70,6 @@ allowed outside this helper.
 
 - 2026-10-12T02:03:51+00:00: Recorded command exit 0; command argv SHA-256
   8a1e0e32146a9f14f4ddc4d415c1b397d127f83535b5e7638bf88536bfc46ecd.
+
+- 2026-10-12T02:05:47+00:00: Checkpoint: isolated AR-1772 worktree contains initial step_progress
+  module and public module wiring; no commit yet.

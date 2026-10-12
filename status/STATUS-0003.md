@@ -1098,7 +1098,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output. |
-| Next action | Implement the single human step reporter on the mandatory output router after its output, level, status, and quiet contracts are accepted. |
+| Next action | Run focused asb-cli reporter tests, repair compile/lint failures, then integrate router construction for human mode. |
 
 ### AR-1773 — Universal command step instrumentation
 
