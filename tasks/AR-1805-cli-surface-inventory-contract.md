@@ -9,7 +9,7 @@
   "id": "AR-1805",
   "next_action": "Regenerate diagnostic legacy catalog identities for all shifted human.rs producers, push a signed fix, rerun cargo test -p asb-cli --tests --offline, then repeat exact-head independent review.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "a0d780b0f818f6468bedf07702fc83cc54eebef2",
   "owner": "asb-queue-next-luna56",
   "plan": "../plans/AR-1805-cli-surface-inventory-contract.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent review found a full-gate regression at exact PR head a0d780b0.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:05:42+00:00",
+  "updated_at": "2026-10-12T11:05:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
