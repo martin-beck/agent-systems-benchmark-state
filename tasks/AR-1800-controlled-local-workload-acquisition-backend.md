@@ -10,8 +10,8 @@
   "id": "AR-1800",
   "next_action": "Implement the credential-free controlled acquisition backend and qualify every AR-1781 workload through the AR-1780 journey.",
   "observed_branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
-  "observed_dirty": 1,
-  "observed_head": "508644494f936da99688d6024321755d8df90243",
+  "observed_dirty": 0,
+  "observed_head": "b72da478631faa391f9be75d7cce1e813deb387d",
   "owner": "ar1800_local_acquisition_luna56",
   "plan": "../plans/AR-1800-controlled-local-workload-acquisition-backend.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T02:26:55+00:00",
+  "updated_at": "2026-10-12T02:26:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
