@@ -29,11 +29,11 @@
   },
   "spec_ref": "specs/AR-1797.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T02:06:45+00:00",
+  "updated_at": "2026-10-12T05:25:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -98,3 +98,6 @@ path and records only redacted provenance and typed outcome evidence.
 - 2026-10-12T02:04:18+00:00: Checkpointed source commit db1a776b04c5e93c87c99180a033deca06d5eea7.
 
 - 2026-10-12T02:06:45+00:00: Released claim after durable blocker and successor AR-1799 creation.
+
+- 2026-10-12T05:25:07+00:00: Dependencies AR-1729/1731/1732/1733/1779 are complete; AR-1799 runtime
+  authority seam is now merged on main as e0e44a7d. Resume AR-1797 wiring qualification.
