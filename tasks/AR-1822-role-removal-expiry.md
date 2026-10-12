@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Expired role assignment cleanup semantics",
-  "updated_at": "2026-10-12T14:45:56+00:00",
+  "updated_at": "2026-10-12T14:45:58+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1822-role-removal-expiry"
 }
 ---
@@ -47,3 +47,6 @@ transactional command.
   strict-consistency repair
 
 - 2026-10-12T14:45:56+00:00: Claimed by ar1817_schema_contract.
+
+- 2026-10-12T14:45:58+00:00: Recorded command exit 0; command argv SHA-256
+  938333c163c0521089ae6983592345c10874876a729b516f05ec1ccd9903aac0.
