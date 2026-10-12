@@ -73,8 +73,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1805-cli-surface-contract` | `feature/ar-1805-cli-surface-inventory-contract` | `0fec6465dbb1` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1810-cli2key-standard-cli` | `feature/ar-1810-cli2key-standard-cli` | `07c590e712df` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1811-development-formal-workflow-separation` | `feature/ar-1811-development-formal-workflow-separation` | `d9972679899c` | 0 | behind 8, ahead 0 |
-| `agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap` | `feature/ar-1812-cli2key-ordinary-bootstrap` | `e8356bf4e494` | 1 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs` |
+| `agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap` | `feature/ar-1812-cli2key-ordinary-bootstrap` | `343f1c4a0842` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract` | `feature/ar-1813-cli2key-runtime-factory-contract` | `7889b3bad4c0` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-ar-1814-ruleset-repair` | `feature/ar-1814-ruleset-repair` | `07c590e712df` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1815-provenance` | `recovery/ar-1815-provenance` | `ab4f4c6a81f5` | 0 | behind 0, ahead 1 |
