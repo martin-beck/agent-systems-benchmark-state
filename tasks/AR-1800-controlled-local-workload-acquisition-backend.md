@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1800.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T05:24:07+00:00",
+  "updated_at": "2026-10-12T09:33:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -288,3 +288,7 @@ must not weaken production acquisition, identity, or offline guarantees.
   workspace cargo test has one unrelated ambient mini_swe test failure (test root overlaps
   repository), while focused AR-1800 workload/archive/offline matrix is green. AR-1801 deterministic
   fixture isolation is required; no gate waived and no PR/merge performed.
+
+- 2026-10-12T09:33:43+00:00: AR-1801 fixture isolation is superseded by completed deterministic
+  fixture repairs; reopen controlled local acquisition implementation under no-TLC development
+  policy.
