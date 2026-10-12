@@ -34,13 +34,13 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 38199912756 | `6761a6d0bcd5` | push | Huawei MIT source headers | completed:success |
-| 38199912731 | `6761a6d0bcd5` | push | Fault assurance | in_progress:- |
+| 38199912731 | `6761a6d0bcd5` | push | Fault assurance | completed:success |
 | 38199912719 | `6761a6d0bcd5` | push | Portable protected-main provenance | completed:failure |
 | 38199912713 | `6761a6d0bcd5` | push | Hosted portability and native qualification | completed:success |
-| 38199912709 | `6761a6d0bcd5` | push | Credential-free benchmark path | in_progress:- |
+| 38199912709 | `6761a6d0bcd5` | push | Credential-free benchmark path | completed:success |
 | 38199912706 | `6761a6d0bcd5` | push | Repository quality | completed:failure |
 | 38199912699 | `6761a6d0bcd5` | push | Formal assurance | in_progress:- |
-| 38199912685 | `6761a6d0bcd5` | push | Cross-repository development broker qualification | in_progress:- |
+| 38199912685 | `6761a6d0bcd5` | push | Cross-repository development broker qualification | completed:success |
 | 38199912641 | `6761a6d0bcd5` | push | Rust verification | in_progress:- |
 | 38199912613 | `6761a6d0bcd5` | push | Emulated aarch64 portability | in_progress:- |
 | 38199150278 | `d625c822eac5` | pull_request | Credential-free benchmark path | completed:success |
