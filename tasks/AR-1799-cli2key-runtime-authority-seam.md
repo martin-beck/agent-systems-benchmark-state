@@ -2,14 +2,14 @@
 {
   "branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T06:09:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1729",
     "AR-1731"
   ],
   "id": "AR-1799",
   "next_action": "Implement runtime-only receipt-to-Cli2KeySidecar bootstrap and opaque LiveProviderAttempt issuance; add hostile lifecycle matrix before CLI integration.",
-  "owner": "codex-ar1799-authority-luna56",
+  "owner": "",
   "plan": "../plans/AR-1799-cli2key-runtime-authority-seam.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1799.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:09:56+00:00",
+  "updated_at": "2026-10-12T04:10:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -47,3 +47,6 @@ issue an opaque live attempt to the Codex adapter.
 - 2026-10-12T02:07:46+00:00: Heartbeat by codex-ar1799-authority-luna56.
 
 - 2026-10-12T04:09:56+00:00: Heartbeat by codex-ar1799-authority-luna56.
+
+- 2026-10-12T04:10:16+00:00: Legacy claim owner has no live worker process. Releasing for
+  reassignment; prior lease heartbeat and historical evidence preserved.

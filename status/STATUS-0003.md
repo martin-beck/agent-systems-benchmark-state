@@ -1468,11 +1468,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1799-authority-luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
@@ -2405,7 +2405,7 @@ flowchart LR
         AR_1796["AR-1796 - In progress"]:::status_in_progress
         AR_1797["AR-1797 - Blocked"]:::status_blocked
         AR_1798["AR-1798 - Done"]:::status_done
-        AR_1799["AR-1799 - In progress"]:::status_in_progress
+        AR_1799["AR-1799 - Open"]:::status_open
     end
     subgraph series_18["18 - Additional work"]
         direction TB
