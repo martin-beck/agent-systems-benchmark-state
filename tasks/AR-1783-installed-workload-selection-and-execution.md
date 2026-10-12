@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Refresh exact workflow provenance digest and requalify signed PR head e644f9b0",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:45:44+00:00",
+  "updated_at": "2026-10-12T00:45:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -362,3 +362,6 @@ the suite from this end-to-end path.
   PR #587. The prior strict identity failure remains repaired with exact catalog entries; all local
   focused/full gates previously green. PR remains open pending hosted checks and independent
   exact-head review.
+
+- 2026-10-12T00:45:46+00:00: Recorded command exit 0; command argv SHA-256
+  0f0120a9a80647761b7023e1aec09161f189badcb9a7de98b9ba33922d55f476.
