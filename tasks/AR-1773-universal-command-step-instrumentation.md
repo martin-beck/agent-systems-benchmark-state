@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T07:10:25+00:00",
+  "updated_at": "2026-10-12T07:10:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -322,3 +322,6 @@ non-TTY compatibility.
   callsites, while historical arrays remain intact and the AR-1793 output-parent identities are
   retained. diagnostic_contract passes 9/9 and asb-cli lib passes 437/437. Cargo fmt --all --
   --check and clippy are running/next; AR remains in_progress and no gate is waived.
+
+- 2026-10-12T07:10:27+00:00: Recorded command exit 0; command argv SHA-256
+  eb8648d78be9d44db5631385c3fcbaaeaac0114989924fef6dc1415045ce0bfa.
