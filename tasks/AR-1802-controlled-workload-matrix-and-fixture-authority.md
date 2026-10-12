@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:56:07+00:00",
+  "updated_at": "2026-10-12T03:58:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -278,3 +278,6 @@ remains explicitly unaccepted and blocked until this repair is complete.
   workflow_transcript provenance 3/3 green; diagnostic contract 9/9 green. Prior source_checkout
   parallel failure was repaired by guarding fixture_repository setup. Full workspace make test still
   required on this clean head; no waiver.
+
+- 2026-10-12T03:58:15+00:00: Recorded command exit 0; command argv SHA-256
+  4345237789f5e03a9ff5103c3e9da8c67a64f07757fdaa1c52f6cc23b1de82c4.
