@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:19:15+00:00",
+  "updated_at": "2026-10-12T04:19:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -460,3 +460,6 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T04:19:15+00:00: Recorded command exit 0; command argv SHA-256
   97a9edf16cef0dfc95a3fabf488051abd017b7c1ca3d06ccbdd11bfd80e7fe7a.
+
+- 2026-10-12T04:19:22+00:00: Recorded command exit 0; command argv SHA-256
+  74d47a3d8474f4cdc2d6fd1a9fefbfe896e6efe3c320b1e966f191b34aed5b8e.
