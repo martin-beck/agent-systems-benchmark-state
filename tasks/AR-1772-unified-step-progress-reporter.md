@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1772.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:17:43+00:00",
+  "updated_at": "2026-10-12T05:27:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -167,3 +167,6 @@ allowed outside this helper.
   (expected version_probe_unavailable/null, observed cargo 1.0). Existing AR-1762 is completed
   owner; no dedicated successor currently owns this fixture-isolation repair. Do not waive or accept
   AR-1772 until full exact-head gate is green.
+
+- 2026-10-12T05:27:59+00:00: AR-1803 is complete and merged; re-evaluate AR-1772 against current
+  protected main exact head and rerun full/focused gates.
