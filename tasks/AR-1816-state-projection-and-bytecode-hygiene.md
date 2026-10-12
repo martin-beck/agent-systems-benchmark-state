@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T14:57:42+00:00",
   "depends_on": [],
   "id": "AR-1816",
-  "next_action": "PR #121 now targets 2a20e86de9; bytecode test isolation repaired. Await terminal exact-head CI and independent review. Then merge and run configured reconcile/snapshot/doctor receipt.",
+  "next_action": "PR #121 now targets 7939195cee; AR-1811/1813 oracle evidence normalized into task bodies and schema mismatch repaired. Await terminal exact-head CI and independent review. Then merge and run configured reconcile/snapshot/doctor receipt.",
   "owner": "ar1816_projection_hygiene",
   "plan": "../plans/AR-1816-state-projection-and-bytecode-hygiene.md",
   "priority": "P0",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Coordinator projection and bytecode hygiene recovery",
-  "updated_at": "2026-10-12T13:13:09+00:00",
+  "updated_at": "2026-10-12T13:13:16+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar1816-projection-hygiene"
 }
 ---
@@ -252,3 +252,8 @@ bytecode, credentials, or host-private runtime configuration may enter commits.
 
 - 2026-10-12T13:13:09+00:00: Recorded command exit 0; command argv SHA-256
   c12bbaccafef70e9fbad0ff541439417401c3dba802b89011bc6ea0b738143a9.
+
+- 2026-10-12T13:13:16+00:00: Strict CI exposed unsupported oracle_gate front-matter fields in
+  AR-1811 and AR-1813. Preserved full objects as fenced body evidence while removing only invalid
+  front-matter properties; signed DCO head 7939195cee pushed. Cleaned generated pyc after handoffctl
+  post-reconcile guard.
