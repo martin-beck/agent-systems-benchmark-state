@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `1ce208b4e5738b9608b3f2d454d0a6a0dfbeb323`
-- Local origin/main: `6761a6d0bcd5d5982c92176f4adf687696de90d6`
+- Local origin/main: `1ce208b4e5738b9608b3f2d454d0a6a0dfbeb323`
 - Primary worktree head: `98327152f2e92308b5bcf5b21cfe0c9f285cf950`
 
 ## Open pull requests
@@ -36,13 +36,13 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38202912884 | `1ce208b4e573` | push | Emulated aarch64 portability | in_progress:- |
 | 38202912855 | `1ce208b4e573` | push | Repository quality | in_progress:- |
-| 38202912850 | `1ce208b4e573` | push | Formal assurance | queued:- |
+| 38202912850 | `1ce208b4e573` | push | Formal assurance | in_progress:- |
 | 38202912815 | `1ce208b4e573` | push | Rust verification | in_progress:- |
 | 38202912809 | `1ce208b4e573` | push | Cross-repository development broker qualification | in_progress:- |
-| 38202912796 | `1ce208b4e573` | push | Portable protected-main provenance | in_progress:- |
+| 38202912796 | `1ce208b4e573` | push | Portable protected-main provenance | completed:failure |
 | 38202912791 | `1ce208b4e573` | push | Fault assurance | queued:- |
 | 38202912789 | `1ce208b4e573` | push | Credential-free benchmark path | in_progress:- |
 | 38202912785 | `1ce208b4e573` | push | Hosted portability and native qualification | in_progress:- |
-| 38202912777 | `1ce208b4e573` | push | Huawei MIT source headers | in_progress:- |
+| 38202912777 | `1ce208b4e573` | push | Huawei MIT source headers | completed:success |
 | 38202786285 | `14471899c427` | pull_request | Formal assurance | in_progress:- |
 | 38202786195 | `14471899c427` | pull_request | Hosted portability and native qualification | completed:success |
