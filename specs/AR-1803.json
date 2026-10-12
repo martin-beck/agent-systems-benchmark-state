@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1803.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "deterministic-parallel-fixtures", "description": "Provider-selection and comparison fixtures produce the same expected results under full parallel asb-cli workspace execution."},
+    {"id": "bounded-isolation", "description": "Fixture isolation remains bounded, credential-free, offline, and cannot widen runtime or filesystem authority."},
+    {"id": "failure-preservation", "description": "The repair preserves the existing public assertions and fails closed on fixture setup or cleanup errors."}
+  ],
+  "definition_of_done": ["AR-1801 exact signed head passes focused and full asb-cli/workspace gates repeatedly under parallel load with deterministic fixture evidence."],
+  "inputs": [{"id": "ar1801-head", "description": "AR-1801 tool-discovery fixture-isolation implementation and exact failure evidence."}, {"id": "parallel-failures", "description": "Full-gate left 6/right 0 failures in provider-selection and comparison tests."}],
+  "outputs": [{"id": "parallel-fixture-repair", "description": "Reviewed deterministic isolation repair for AR-1801 full-gate fixtures."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-output", "ambient-network-substitution", "gate-weakening", "force-push", "flaky-test-suppression"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "focused-fixtures", "description": "The affected provider-selection and comparison tests pass repeatedly with exact expected results."}, {"id": "full-parallel-gate", "description": "The complete asb-cli/workspace test gate passes without ignored failures beyond documented environment-gated tests."}]
+}
