@@ -3,7 +3,9 @@
   "branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1762"],
+  "depends_on": [
+    "AR-1762"
+  ],
   "id": "AR-1803",
   "next_action": "Reproduce and isolate AR-1801 parallel-load fixture failures before implementation.",
   "observed_branch": "",
@@ -23,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1803.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T00:00:00+00:00",
+  "updated_at": "2026-10-12T02:33:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -39,3 +41,6 @@ reruns passed. AR-1801 remains unaccepted until this repair or an equivalent
 deterministic root-cause fix makes the full gate green. The dependency is
 AR-1762 (done) so this repair can proceed independently while preserving AR-1801
 as the affected successor linkage and evidence source.
+
+- 2026-10-12T02:33:07+00:00: Dependency-safe promotion: AR-1762 is done; AR-1801 remains blocked as
+  the affected evidence source, not a prerequisite for independently repairing its shared fixtures.
