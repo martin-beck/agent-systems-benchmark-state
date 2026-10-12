@@ -157,13 +157,21 @@
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:cac2dc603365a0d8499427a876e98f1a26f2eb656657c992f21cd91db4152219",
+    "evidence_ref": "quality/AR-1811-postmerge-receipt.txt",
+    "spec_ref": "specs/AR-1811.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1811.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:38:20+00:00",
+  "updated_at": "2026-10-12T10:38:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -320,3 +328,7 @@ tests and update the generated quality documentation.
   c64532d2240f0635cac81226cc4d98546ea999bf320f9358045a0a58b18f522e.
 
 - 2026-10-12T10:38:20+00:00: Bound task spec specs/AR-1811.json revision 1.
+
+- 2026-10-12T10:38:25+00:00: Exact reviewed PR #606 merged at 5a6c5477; all exact-main workflows
+  terminal success after minimal AR-1814 ruleset repair; independent review and DCO/signature
+  evidence retained.
