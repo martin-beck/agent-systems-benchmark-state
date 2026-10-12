@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T13:19:25+00:00",
   "depends_on": [
     "AR-1779",
     "AR-1799",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "5c843a12e976bc7be6c32e9fc653e566bdf20450",
-  "owner": "",
+  "owner": "ar1812-replacement-luna56",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1812.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:16:48+00:00",
+  "updated_at": "2026-10-12T11:19:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -87,3 +87,5 @@ fixtures and must not require a live provider or TLC.
 - 2026-10-12T11:16:48+00:00: Worker interrupted after no durable progress since 11:11:32Z;
   implementation worktree remained clean. Reclaim for a replacement worker; preserve no product
   changes.
+
+- 2026-10-12T11:19:25+00:00: Claimed by ar1812-replacement-luna56.
