@@ -1532,7 +1532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
-| Next action | Complete supported make test deterministic gate (RUST_TEST_THREADS=1), then add bounded parallel regression evidence and checkpoint signed repair. |
+| Next action | Checkpoint clean signed 56db629d, independently review exact head, then publish PR/CI only if supported deterministic gate remains green. |
 
 
 ## Dependency graph
