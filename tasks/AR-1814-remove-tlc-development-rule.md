@@ -13,14 +13,21 @@
   "plan": "../plans/AR-1814-remove-tlc-development-rule.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "mechanical", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1814.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "mechanical",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1814.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1814.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Remove stale TLC development ruleset requirement",
-  "updated_at": "2026-10-12T00:00:00+00:00",
+  "updated_at": "2026-10-12T10:22:51+00:00",
   "worktree_key": ""
 }
 ---
@@ -30,3 +37,7 @@ which contradicts the completed development/formal workflow separation in
 AR-1811. This repair owns only the minimal ruleset edit and the exact evidence
 needed to unblock ordinary development merges; it does not bypass or weaken
 the remaining required checks.
+
+- 2026-10-12T10:22:51+00:00: Promoted P0 ruleset repair: remove only stale TLC/Alloy development
+  requirement after AR-1811 formal separation, preserving all other native gates and final-delivery
+  formal assurance.

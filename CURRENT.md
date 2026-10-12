@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1813](tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | PR #607 exact head d5f814896ccfd71bd0fe09028dc94d7fcf4c88ec is under hosted non-TLC checks; TLC check is present only because PR #606 formal-separation merge is still blocked by GitHub review policy. After ordinary checks and independent review, reconcile the formal lane before merge. | ar1810-cli2key-luna56 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1814](tasks/AR-1814-remove-tlc-development-rule.md): Remove stale TLC development ruleset requirement | Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance. | Promote and claim; inspect ruleset 24750310, remove only the stale TLC/Alloy required status, verify the minimal diff, then complete PR #606 merge and post-merge verification. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -150,7 +156,6 @@ Never edit this file directly.
 | P0 | [AR-1807](tasks/AR-1807-complete-help-contract.md): Complete Contextual CLI Help Contract | Provide useful --help on every ASB command and subcommand, including the TUI lifecycle. | Implement and test complete contextual help for every public command path. | - |
 | P0 | [AR-1808](tasks/AR-1808-universal-list-selection-contract.md): Universal List and Selection Contract | Make every ASB command discover its valid choices through a consistent, typed --list interface. | Define and implement the universal --list discovery and selection contract. | - |
 | P0 | [AR-1809](tasks/AR-1809-cli-ux-qualification.md): End-to-End CLI UX Contract Qualification | Qualify the complete ASB command tree for human output, help, list discovery, and selection round trips. | Run end-to-end CLI UX qualification against the complete contract and close contract gaps. | - |
-| P0 | [AR-1814](tasks/AR-1814-remove-tlc-development-rule.md): Remove stale TLC development ruleset requirement | Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance. | Promote and claim; inspect ruleset 24750310, remove only the stale TLC/Alloy required status, verify the minimal diff, then complete PR #606 merge and post-merge verification. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |

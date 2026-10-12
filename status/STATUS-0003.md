@@ -1681,7 +1681,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -2566,7 +2566,7 @@ flowchart LR
         AR_1811["AR-1811 - Blocked"]:::status_blocked
         AR_1812["AR-1812 - Blocked"]:::status_blocked
         AR_1813["AR-1813 - In progress"]:::status_in_progress
-        AR_1814["AR-1814 - Planned"]:::status_planned
+        AR_1814["AR-1814 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
