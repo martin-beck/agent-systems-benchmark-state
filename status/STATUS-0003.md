@@ -1715,6 +1715,20 @@
 | Summary | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. |
 | Next action | PR #121 now targets 2a20e86de9; bytecode test isolation repaired. Await terminal exact-head CI and independent review. Then merge and run configured reconcile/snapshot/doctor receipt. |
 
+### AR-1817 — Align task schema with oracle gate contract
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields. |
+| Next action | Promote the schema-contract repair, add the documented oracle_gate shape and regression coverage, then independently review and run exact-head coordination CI before merging. |
+
 
 ## Dependency graph
 
@@ -2593,6 +2607,7 @@ flowchart LR
         AR_1814["AR-1814 - Done"]:::status_done
         AR_1815["AR-1815 - Done"]:::status_done
         AR_1816["AR-1816 - In progress"]:::status_in_progress
+        AR_1817["AR-1817 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
