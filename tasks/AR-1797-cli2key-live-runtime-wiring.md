@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1797-cli2key-live-runtime-wiring",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "f972aa003bc40d13aeb0b8abe8c14decd1017080",
   "claim_expires": "2026-10-12T04:03:24+00:00",
   "depends_on": [
     "AR-1729",
@@ -31,7 +31,7 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Wire cli2key sidecar into live benchmark execution",
   "updated_at": "2026-10-12T02:03:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
@@ -78,3 +78,5 @@ path and records only redacted provenance and typed outcome evidence.
   digest, while Codex adapter accepts only digest reference. No path currently resolves AR-1779
   receipt into a runtime-owned live attempt. Next: add runtime composition seam and hostile fake
   coverage; do not weaken no-fallback or key privacy.
+
+- 2026-10-12T02:03:24+00:00: Checkpointed source commit f972aa003bc40d13aeb0b8abe8c14decd1017080.
