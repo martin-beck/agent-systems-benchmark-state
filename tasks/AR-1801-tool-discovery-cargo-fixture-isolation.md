@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1801.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T02:31:42+00:00",
+  "updated_at": "2026-10-12T05:17:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -109,3 +109,6 @@ or pin the probe without weakening bounded execution or privacy contracts.
   lib.rs:16076 and :16161). Focused reruns pass, but deterministic full-gate evidence is absent.
   Successor repair AR-1803 is now created with spec/plan/task to reproduce and isolate the shared
   fixture interference; resume AR-1801 only after AR-1803 repair and full gates are green.
+
+- 2026-10-12T05:17:00+00:00: AR-1803 dependency repair is complete and merged as 3c7ca1c1; resume
+  AR-1801 for final full-gate qualification.
