@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1797-cli2key-live-runtime-wiring",
-  "checkpoint_commit": "f972aa003bc40d13aeb0b8abe8c14decd1017080",
+  "checkpoint_commit": "db1a776b04c5e93c87c99180a033deca06d5eea7",
   "claim_expires": "2026-10-12T04:04:17+00:00",
   "depends_on": [
     "AR-1729",
@@ -31,7 +31,7 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Wire cli2key sidecar into live benchmark execution",
   "updated_at": "2026-10-12T02:04:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
@@ -94,3 +94,5 @@ path and records only redacted provenance and typed outcome evidence.
   passed (1/1). Earlier recorded exit 101 was the invalid state-repo cwd invocation with no
   Cargo.toml, not a product test failure. No product files changed; integration gap remains as
   documented.
+
+- 2026-10-12T02:04:18+00:00: Checkpointed source commit db1a776b04c5e93c87c99180a033deca06d5eea7.
