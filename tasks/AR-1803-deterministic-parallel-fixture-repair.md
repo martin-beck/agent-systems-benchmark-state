@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T02:36:38+00:00",
+  "updated_at": "2026-10-12T02:37:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -73,3 +73,6 @@ as the affected successor linkage and evidence source.
   under parallel load. The affected AR-1801 provider/comparison tests pass when focused and all 429
   lib tests pass serially; no retry is treated as qualification success until deterministic
   isolation is repaired.
+
+- 2026-10-12T02:37:25+00:00: Recorded command exit 0; command argv SHA-256
+  2199fee7b68e32f3c0e91ecc5694af33ea025f2e301837044136a490ce7e3e6a.
