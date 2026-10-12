@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Repair/reconcile unrelated expired AR-1796 state through coordinator; then continue final make test and checkpoint.",
+  "next_action": "Update provenance digest to observed d303289d..., rerun make test once, then rerun default-parallel and checkpoint.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "9490e3f6b63e6e1c74c6540507f09eec37cf0f9f",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T03:49:44+00:00",
+  "updated_at": "2026-10-12T03:49:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -240,3 +240,10 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T03:49:44+00:00: Recorded command exit 2; command argv SHA-256
   3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
+
+- 2026-10-12T03:49:52+00:00: Final make test exact result: exit 2 at
+  workflow_transcript::provenance_binds_the_exact_cli_and_public_fixture_sources; assertion observed
+  current lib sha256 d303289dcda9e9ec148bb98d7e01cd12b3a6bc2e5a29e9f3d386e306c2371d98 versus
+  recorded ec522fde4356e9bc851de022554ef53b2f5ef4d4b5722e39f8211c15495bc816. Classification:
+  expected provenance drift from line-identity-preserving guard edit, not test logic failure. Next
+  action update digest, rerun make test once.
