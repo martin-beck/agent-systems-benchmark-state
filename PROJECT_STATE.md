@@ -40,7 +40,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38209256929 | `fd815d5e4de7` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38209256901 | `fd815d5e4de7` | pull_request | Portable protected-main provenance | completed:success |
 | 38209256893 | `fd815d5e4de7` | pull_request | Credential-free benchmark path | completed:success |
-| 38209256879 | `fd815d5e4de7` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38209256879 | `fd815d5e4de7` | pull_request | Emulated aarch64 portability | completed:success |
 | 38209256876 | `fd815d5e4de7` | pull_request | Fault assurance | completed:success |
 | 38209256869 | `fd815d5e4de7` | pull_request | Formal assurance | completed:success |
 | 38209256859 | `fd815d5e4de7` | pull_request | Repository quality | in_progress:- |
