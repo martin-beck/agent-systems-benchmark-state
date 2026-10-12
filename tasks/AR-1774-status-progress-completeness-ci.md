@@ -11,7 +11,7 @@
   "id": "AR-1774",
   "next_action": "Add required CI enforcement and controlled-defect tests for quiet, status, and progress completeness after universal instrumentation lands.",
   "observed_branch": "feature/ar-1774-status-progress-completeness-ci",
-  "observed_dirty": 2,
+  "observed_dirty": 4,
   "observed_head": "a0a978f134959943c54362e84032a6232c606105",
   "owner": "ar1774-status-ci-luna56",
   "plan": "../plans/AR-1774-status-progress-completeness-ci.md",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Status and progress completeness CI",
-  "updated_at": "2026-10-12T12:41:14+00:00",
+  "updated_at": "2026-10-12T12:41:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1774-status-progress-completeness-ci"
 }
 ---
