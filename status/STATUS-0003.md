@@ -1097,8 +1097,8 @@
 | Owner | ar1772-progress-reporter-luna56 |
 | Parent | None |
 | Children | None |
-| Summary | Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output. |
-| Next action | Request fresh independent review of exact signed head 0d2c8365 after rebase onto origin/main e0e44a7d; then publish PR and monitor exact-head hosted CI. |
+| Summary | Header-policy repair pushed as signed head 65ee830e; local gates green; PR #602 rerun in progress. |
+| Next action | Monitor PR #602 exact head 65ee830e hosted checks; merge only after all required checks are green, then post-merge verify/reconcile/accept/release. |
 
 ### AR-1773 — Universal command step instrumentation
 

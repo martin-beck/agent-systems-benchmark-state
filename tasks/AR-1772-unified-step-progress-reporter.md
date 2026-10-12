@@ -7,7 +7,7 @@
     "AR-1775"
   ],
   "id": "AR-1772",
-  "next_action": "Request fresh independent review of exact signed head 0d2c8365 after rebase onto origin/main e0e44a7d; then publish PR and monitor exact-head hosted CI.",
+  "next_action": "Monitor PR #602 exact head 65ee830e hosted checks; merge only after all required checks are green, then post-merge verify/reconcile/accept/release.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "65ee830e6659ac5426757833d1030ae0c32f8ac5",
@@ -26,10 +26,10 @@
   "spec_ref": "specs/AR-1772.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 95,
+  "summary": "Header-policy repair pushed as signed head 65ee830e; local gates green; PR #602 rerun in progress.",
+  "task_revision": 96,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:44:16+00:00",
+  "updated_at": "2026-10-12T05:44:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -330,3 +330,11 @@ allowed outside this helper.
 
 - 2026-10-12T05:44:16+00:00: Recorded command exit 0; command argv SHA-256
   40bc78a21c6c5e34ef380e3b19d623f398ed92864ee20f7cc2366b00757f0698.
+
+- 2026-10-12T05:44:50+00:00: Diagnosed both failed hosted checks (Huawei MIT source headers and
+  Policy, coverage, and supply chain) from run 38209039117: crates/asb-cli/src/step_progress.rs
+  lacked the exact adjacent repository header at lines 1-2. Added // Copyright (C) Huawei
+  Technologies Co., Ltd. 2026. All rights reserved. and // SPDX-License-Identifier: MIT.
+  Source-header policy plus 18 tests pass; focused reporter 3/3 pass; full make test exit 0. Signed
+  DCO commit 65ee830e6659ac5426757833d1030ae0c32f8ac5 pushed with force-with-lease to PR #602;
+  hosted checks restarted at exact head 65ee830e.
