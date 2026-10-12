@@ -1244,11 +1244,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1783_workload_selection_luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | PR #596 locally integrated as signed/DCO protected-main merge ca494d50; exact remote main now points to it and post-merge workflows are running |
@@ -2305,7 +2305,7 @@ flowchart LR
         AR_1780["AR-1780 - Planned"]:::status_planned
         AR_1781["AR-1781 - Done"]:::status_done
         AR_1782["AR-1782 - Done"]:::status_done
-        AR_1783["AR-1783 - In progress"]:::status_in_progress
+        AR_1783["AR-1783 - Done"]:::status_done
         AR_1784["AR-1784 - Done"]:::status_done
         AR_1785["AR-1785 - Done"]:::status_done
         AR_1786["AR-1786 - Done"]:::status_done

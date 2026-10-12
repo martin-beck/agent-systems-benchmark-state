@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1783](tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | PR #596 locally integrated as signed/DCO protected-main merge ca494d50; exact remote main now points to it and post-merge workflows are running | Wait for all ca494d50 protected-main post-merge workflows terminal green, record exact-main receipts, then accept and release AR-1783 | ar1783_workload_selection_luna56 |
 | P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope. | ar1796-reconcile-candidate-luna56 |
 
 ## Blocked

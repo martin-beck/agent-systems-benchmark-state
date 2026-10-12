@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T02:40:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1763",
     "AR-1764",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "aca3f79b3256729543e93cc321ce3a85daa78051",
-  "owner": "ar1783_workload_selection_luna56",
+  "owner": "",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
-  "status": "in_progress",
+  "status": "done",
   "summary": "PR #596 locally integrated as signed/DCO protected-main merge ca494d50; exact remote main now points to it and post-merge workflows are running",
-  "task_revision": 273,
+  "task_revision": 274,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:59:15+00:00",
+  "updated_at": "2026-10-12T01:59:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -871,3 +871,8 @@ the suite from this end-to-end path.
   38193200393, 38193200407, 38193200410, 38193200422, 38193200427, 38193200434, 38193200435,
   38193200452, 38193200588. Receipt digest is
   sha256:f2d6c53370f84bcc31cb3fe9cbd6565f81f038c8e47375ec01ad5735dc174e19.
+
+- 2026-10-12T01:59:18+00:00: Released AR-1783 done after signed protected-main merge
+  ca494d506135c4a3263bea21621dcc97d817614c, exact tree/parents/signature/DCO verification, and all
+  ten terminal-green post-merge workflows. Historical failed web merge 5201a036 and repair
+  diagnostics remain durable.
