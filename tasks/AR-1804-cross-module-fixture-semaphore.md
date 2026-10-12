@@ -27,7 +27,7 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Cross-module fixture semaphore",
   "updated_at": "2026-10-12T02:46:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
@@ -75,3 +75,6 @@ before AR-1801 can be accepted.
   0 is never read; dead-code implied by -D warnings; could not compile asb-cli (lib test). Root
   cause was the new test semaphore Guard tuple field not visibly read, not a qualification failure.
   Repaired Guard to a named underscore _lock field before retry.
+
+- 2026-10-12T02:46:04+00:00: Recorded command exit 0; command argv SHA-256
+  1ef143001f0fa6d7de6a7fd77e0fe4b1104a7839a8befe81aa43927ee76e3edc.
