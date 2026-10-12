@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1812](tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Monitor every exact-main post-merge workflow for a0a978f1 at 30-second cadence; record terminal success/failure and then perform post-merge verification before closing AR. | ar1812-repair-luna56 |
-| P0 | [AR-1815](tasks/AR-1815-protected-main-merge-recovery.md): Protected-main signed merge recovery | Recover protected-main merge provenance without rewriting the preserved GitHub merge. | Exact merge e57982a is published. Repository quality attempt 4 is in progress after attempt 3 non-reproducible source_checkout Err(Unavailable); monitor attempt 4 and all remaining exact-main workflows to terminal-success before receipt/release. | ar1805_postmerge_repair |
 
 ## Open
 

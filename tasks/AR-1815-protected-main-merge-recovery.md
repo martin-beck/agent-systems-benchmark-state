@@ -2,14 +2,14 @@
 {
   "branch": "recovery/ar-1815-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T13:59:57+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1815",
   "next_action": "Exact merge e57982a is published. Repository quality attempt 4 is in progress after attempt 3 non-reproducible source_checkout Err(Unavailable); monitor attempt 4 and all remaining exact-main workflows to terminal-success before receipt/release.",
   "observed_branch": "recovery/ar-1815-provenance",
   "observed_dirty": 0,
   "observed_head": "ab4f4c6a81f543e049759d199cca675c7370a1dc",
-  "owner": "ar1805_postmerge_repair",
+  "owner": "",
   "plan": "../plans/AR-1815-protected-main-merge-recovery.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1815.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:25:20+00:00",
+  "updated_at": "2026-10-12T12:25:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -167,3 +167,9 @@ introduce a TLC/model-check dependency for development.
   15c80511 and reviewed tree; all PR and exact-main workflows terminal-success. Repository quality
   attempt 4 passed after attempt 3 non-reproducible source_checkout fixture failure; local repeated
   5/5. Receipt is committed and privacy-safe.
+
+- 2026-10-12T12:25:25+00:00: AR-1815 complete: signed forward-only merge e57982a published from
+  preserved 15c80511 and reviewed topic ab4f4c6a; all PR checks and all ten exact-main workflows
+  terminal-success, Repository quality run 38246184722 attempt 4 passed after documented
+  non-reproducible attempt 3 fixture failure. Acceptance passed with receipt digest
+  sha256:7b085cf88dca04871a16632551b51f2ced70c2c3af263c8354fed143f0a1b512.

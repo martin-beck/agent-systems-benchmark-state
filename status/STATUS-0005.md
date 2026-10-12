@@ -266,12 +266,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | ar1812-repair-luna56 | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Monitor every exact-main post-merge workflow for a0a978f1 at 30-second cadence; record terminal success/failure and then perform post-merge verification before closing AR. |
-| P0 | [AR-1815](../tasks/AR-1815-protected-main-merge-recovery.md): Protected-main signed merge recovery | ar1805_postmerge_repair | Recover protected-main merge provenance without rewriting the preserved GitHub merge. | Exact merge e57982a is published. Repository quality attempt 4 is in progress after attempt 3 non-reproducible source_checkout Err(Unavailable); monitor attempt 4 and all remaining exact-main workflows to terminal-success before receipt/release. |
 
 ### Open (1)
 
@@ -466,7 +465,7 @@
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | User-requested stop recorded. Preserve interrupted exact-candidate retry artifacts and terminal uncertainty; do not accept or release. Reclaim only after explicit continuation and rerun a fresh bounded exact full-exhaustive attempt with PYTHONDONTWRITEBYTECODE=1. |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (603)
+### Done (604)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -628,3 +627,4 @@
 | P0 | [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md): Protected-main topology repair for OpenRouter refresh | Unclaimed | Repair the single-parent protected-main merge produced for the OpenRouter model refresh. | PR #324 merged as two-parent 5871de7cad4ee7e496ffce1c5e1fe51862660bfc; monitor seven exact-main workflows 36145976341, 36145976337, 36145976326, 36145976266, 36145976239, 36145976238, 36145976223 to terminal success. Record that GitHub has no independent review record, then update/release AR-1440 only after all seven pass. |
 | P0 | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md): First-customer production qualification | Unclaimed | Qualify ASB in a disposable first-customer production-like environment. | Done: ASB-only first-customer production-like qualification verified on protected merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec. Disposable bootstrap passed; CLI, runtime, and workspace-library gates passed, including literature/local-mock coverage. No live-provider or asb-tui dependency was required; AR-0903 and AR-1336 remain separate. |
 | P0 | [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md): ASB local campaign qualification | Unclaimed | Qualify the complete credential-free ASB local campaign and replay journey. | Done: ASB-only local campaign qualification verified on protected merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec. Targeted guided-local and exact-campaign tests plus full asb-cli library tests (107/107) passed; AR-1338 remains a separate enhancement. |
+| P0 | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Unclaimed | Materialize runtime-owned strict replay authority for normal CLI replay. | Done: signed PR #326 merged as f03d9e484d6ca73eacdbd5476980bf33ca737540; all seven exact-main post-merge workflows and local runtime/CLI verification passed. |
