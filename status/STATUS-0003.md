@@ -1104,11 +1104,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1773-catalog-repair-luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
@@ -1547,6 +1547,76 @@
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
 | Next action | Verify origin/main exact merged head and run post-merge acceptance/doctor; then accept and release AR-1804. |
+
+### AR-1805 — CLI Surface Inventory and UX Contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Define one complete machine-checked inventory of every public ASB command and subcommand surface. |
+| Next action | Create the canonical public command-surface manifest and contract tests. |
+
+### AR-1806 — Exhaustive Human Output Contract Audit
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Guarantee clear human-default success, warning, and failure journeys for every ASB CLI route. |
+| Next action | Implement route-by-route human-output journey tests and repair non-human default output. |
+
+### AR-1807 — Complete Contextual CLI Help Contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide useful --help on every ASB command and subcommand, including the TUI lifecycle. |
+| Next action | Implement and test complete contextual help for every public command path. |
+
+### AR-1808 — Universal List and Selection Contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make every ASB command discover its valid choices through a consistent, typed --list interface. |
+| Next action | Define and implement the universal --list discovery and selection contract. |
+
+### AR-1809 — End-to-End CLI UX Contract Qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the complete ASB command tree for human output, help, list discovery, and selection round trips. |
+| Next action | Run end-to-end CLI UX qualification against the complete contract and close contract gaps. |
 
 
 ## Dependency graph
@@ -2379,7 +2449,7 @@ flowchart LR
         AR_1770["AR-1770 - Done"]:::status_done
         AR_1771["AR-1771 - Done"]:::status_done
         AR_1772["AR-1772 - Done"]:::status_done
-        AR_1773["AR-1773 - In progress"]:::status_in_progress
+        AR_1773["AR-1773 - Open"]:::status_open
         AR_1774["AR-1774 - Planned"]:::status_planned
         AR_1775["AR-1775 - Done"]:::status_done
         AR_1776["AR-1776 - Done"]:::status_done
@@ -2414,6 +2484,11 @@ flowchart LR
         AR_1802["AR-1802 - Done"]:::status_done
         AR_1803["AR-1803 - Done"]:::status_done
         AR_1804["AR-1804 - Done"]:::status_done
+        AR_1805["AR-1805 - Planned"]:::status_planned
+        AR_1806["AR-1806 - Planned"]:::status_planned
+        AR_1807["AR-1807 - Planned"]:::status_planned
+        AR_1808["AR-1808 - Planned"]:::status_planned
+        AR_1809["AR-1809 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4350,6 +4425,8 @@ flowchart LR
     AR_1771 --> AR_1775
     AR_1772 --> AR_1773
     AR_1773 --> AR_1774
+    AR_1773 --> AR_1805
+    AR_1773 --> AR_1806
     AR_1775 --> AR_1772
     AR_1775 --> AR_1774
     AR_1776 --> AR_1777
@@ -4379,6 +4456,12 @@ flowchart LR
     AR_1790 --> AR_1789
     AR_1790 --> AR_1791
     AR_1791 --> AR_1792
+    AR_1805 --> AR_1806
+    AR_1805 --> AR_1807
+    AR_1805 --> AR_1808
+    AR_1806 --> AR_1809
+    AR_1807 --> AR_1809
+    AR_1808 --> AR_1809
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -4434,6 +4517,3 @@ flowchart LR
 | [AR-0405](../tasks/AR-0405-performance-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
 | [AR-0406](../tasks/AR-0406-evolving-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
 | [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) |
-| [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-1005](../tasks/AR-1005-trace-interoperability.md), [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) |
-| [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0905](../tasks/AR-0905-recovery-models.md), [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) |
-| [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) |

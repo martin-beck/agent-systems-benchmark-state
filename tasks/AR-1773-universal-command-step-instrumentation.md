@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T09:16:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 7,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
-  "owner": "ar1773-catalog-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T09:15:37+00:00",
+  "updated_at": "2026-10-12T09:27:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -356,3 +356,7 @@ non-TTY compatibility.
   provenance digest, repaired to 82b519af2a488f028b33061a46ca35c73f072444ec9b45c544fb95c994eceac2.
   The attempted state-run cleanup removed stale 51G TLC trash, but post-reconcile remains blocked by
   active unrelated AR-1796 generated TLC files over the 200 KiB state guard; no gate waiver.
+
+- 2026-10-12T09:27:38+00:00: Coordinator recovery after worker stop: expired lease and no live
+  process. Preserve existing evidence; reopen for dependency-safe reassignment under no-TLC
+  development policy.
