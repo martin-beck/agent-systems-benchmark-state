@@ -189,15 +189,14 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope. |
 | P0 | [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md): Add cli2key runtime authority composition seam | codex-ar1799-authority-luna56 | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. | Implement runtime-only receipt-to-Cli2KeySidecar bootstrap and opaque LiveProviderAttempt issuance; add hostile lifecycle matrix before CLI integration. |
-| P0 | [AR-1803](../tasks/AR-1803-deterministic-parallel-fixture-repair.md): Deterministic parallel fixture repair | ar1803_parallel_fixture_luna56 | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. | Checkpoint clean signed 56db629d, independently review exact head, then publish PR/CI only if supported deterministic gate remains green. |
 
-### Blocked (90)
+### Blocked (91)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -274,6 +273,7 @@
 | P0 | [AR-1800](../tasks/AR-1800-controlled-local-workload-acquisition-backend.md): Controlled local workload acquisition backend | Unclaimed | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. | Remain unaccepted pending AR-1802 repair of fixture authority, full workload lifecycle/offline matrix, hostile identity/size coverage, and acquisition-vs-benchmark failure separation; do not merge signed b72da478. |
 | P0 | [AR-1801](../tasks/AR-1801-tool-discovery-cargo-fixture-isolation.md): Tool-discovery Cargo fixture isolation | Unclaimed | Make tool-discovery Cargo version fixture deterministic under full workspace execution. | Diagnose/reproduce parallel asb-cli provider/comparison test failures under full load; stabilize test isolation without weakening contracts, then rerun exact-head gate before PR/merge. |
 | P0 | [AR-1802](../tasks/AR-1802-controlled-workload-matrix-and-fixture-authority.md): Controlled workload matrix and fixture authority | Unclaimed | Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review. | Independent review is required for signed head 97f6c271; hosted exact-head CI and full lifecycle/offline matrix remain outstanding. |
+| P0 | [AR-1803](../tasks/AR-1803-deterministic-parallel-fixture-repair.md): Deterministic parallel fixture repair | Unclaimed | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. | Checkpoint clean signed 56db629d, independently review exact head, then publish PR/CI only if supported deterministic gate remains green. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
