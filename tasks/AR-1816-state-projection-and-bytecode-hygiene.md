@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Coordinator projection and bytecode hygiene recovery",
-  "updated_at": "2026-10-12T13:09:37+00:00",
+  "updated_at": "2026-10-12T13:11:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar1816-projection-hygiene"
 }
 ---
@@ -228,3 +228,6 @@ bytecode, credentials, or host-private runtime configuration may enter commits.
   pycache; repaired test to assert no new bytecode rather than zero pre-existing files. Focused 2/2
   pass; signed DCO head 2a20e86de9 pushed. TLC admission output is expected fail-closed fixture
   behavior.
+
+- 2026-10-12T13:11:48+00:00: Recorded command exit 0; command argv SHA-256
+  bac0633b4ad369c07e3993ee7ab859f578dca645e9e3a052fb0b3f1ae5a52b3d.
