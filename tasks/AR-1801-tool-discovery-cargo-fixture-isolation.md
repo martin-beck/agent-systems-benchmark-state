@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1801",
-  "next_action": "Current main already contains the deterministic fixture semaphore repair from merged AR-1803; verify current-main full gate and supersede AR-1801 without duplicate product change if green.",
+  "next_action": "Superseded by AR-1803 merged as 3c7ca1c1; no further AR-1801 action.",
   "observed_branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "observed_dirty": 0,
   "observed_head": "e0e44a7d8b45676ebe683bc44f4a0a6d4eb8f0a9",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "superseded",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T05:20:19+00:00",
+  "updated_at": "2026-10-12T05:20:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -144,3 +144,5 @@ or pin the probe without weakening bounded execution or privacy contracts.
   the shared bounded fixture semaphore and 2s discovery timeout, with no unique AR-1801 source
   change remaining. Current-main asb-cli parallel gate passed 433/433. No PR or duplicate
   implementation required.
+
+- 2026-10-12T05:20:24+00:00: Correct stale next_action after superseding AR-1801; claim released.

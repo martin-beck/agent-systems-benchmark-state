@@ -1504,7 +1504,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make tool-discovery Cargo version fixture deterministic under full workspace execution. |
-| Next action | Current main already contains the deterministic fixture semaphore repair from merged AR-1803; verify current-main full gate and supersede AR-1801 without duplicate product change if green. |
+| Next action | Superseded by AR-1803 merged as 3c7ca1c1; no further AR-1801 action. |
 
 ### AR-1802 — Controlled workload matrix and fixture authority
 
