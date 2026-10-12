@@ -9,7 +9,7 @@
   "id": "AR-1772",
   "next_action": "Run focused asb-cli reporter tests, repair compile/lint failures, then integrate router construction for human mode.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "98327152f2e92308b5bcf5b21cfe0c9f285cf950",
   "owner": "ar1772-progress-reporter-luna56",
   "plan": "../plans/AR-1772-unified-step-progress-reporter.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:06:12+00:00",
+  "updated_at": "2026-10-12T02:06:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
