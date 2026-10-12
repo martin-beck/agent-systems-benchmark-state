@@ -1498,7 +1498,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make expired-claim recovery fail closed when the exact current session snapshot is unavailable. |
-| Next action | Implement fail-closed expired-claim recovery, add focused positive and negative coverage, then independently review and integrate the exact signed head. |
+| Next action | Implementation is complete at signed commits 20ff486bd7 and 44b2e2a0b1; obtain independent exact-head review, run applicable CI, then integrate and verify doctor. |
 
 
 ## Dependency graph
