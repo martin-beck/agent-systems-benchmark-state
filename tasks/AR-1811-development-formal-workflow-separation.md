@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T09:53:06+00:00",
+  "updated_at": "2026-10-12T09:53:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -85,3 +85,6 @@ tests and update the generated quality documentation.
 
 - 2026-10-12T09:53:06+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-10-12T09:53:27+00:00: Recorded command exit 0; command argv SHA-256
+  ec4139c84d2ae71d929bef96d31edea3264aebcb788559f0f35f61ab804995a2.
