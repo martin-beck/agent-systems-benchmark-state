@@ -1633,7 +1633,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps. |
-| Next action | Coordinator must create or promote a narrowly scoped prerequisite AR for the missing runtime/control-to-CLI cli2key bootstrap seam (verified AR-1779 receipt resolution, command construction, authority retention, and ordinary run/sweep wiring). After that prerequisite merges, rebase and resume AR-1810 implementation. |
+| Next action | AR-1812 is the promoted prerequisite for the missing runtime/control-to-CLI cli2key bootstrap seam. After AR-1812 merges, rebase and resume AR-1810 implementation, then complete exact-head review, merge, and post-merge verification. |
 
 ### AR-1811 — Development/formal workflow separation
 
@@ -4519,6 +4519,7 @@ flowchart LR
     AR_1806 --> AR_1809
     AR_1807 --> AR_1809
     AR_1808 --> AR_1809
+    AR_1812 --> AR_1810
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
