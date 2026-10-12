@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:20:37+00:00",
+  "updated_at": "2026-10-12T04:20:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -486,3 +486,6 @@ as the affected successor linkage and evidence source.
   synchronization merge must be the topic tip; process exit 1. This is hosted merge-ref
   synchronization/provenance boundary (PUSH_BASE stale old PR head), not a product gate failure.
   Remaining hosted checks are pending; rerun after synchronization, with no source change.
+
+- 2026-10-12T04:20:41+00:00: Recorded command exit 0; command argv SHA-256
+  d5861222e411ce3bda7f3664435081b5ee0034684d759e304d231ee4de8b6319.
