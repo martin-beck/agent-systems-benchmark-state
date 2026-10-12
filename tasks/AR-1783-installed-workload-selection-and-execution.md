@@ -10,9 +10,9 @@
   ],
   "id": "AR-1783",
   "next_action": "Merge only after this independent approval, then verify protected main and release AR with receipts",
-  "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
+  "observed_branch": "codex/ar-1783-protected-main-committer-repair",
   "observed_dirty": 0,
-  "observed_head": "e644f9b02c5b3f7d46b051691accc249fa8a3585",
+  "observed_head": "5201a0369193be5e093396d76bfa4b1c9b55e9db",
   "owner": "ar1783_workload_selection_luna56",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Exact head e644f9b0 has all hosted required checks green; awaiting independent review",
-  "task_revision": 160,
+  "task_revision": 161,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:03:22+00:00",
+  "updated_at": "2026-10-12T01:03:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
