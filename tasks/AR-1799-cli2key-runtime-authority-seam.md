@@ -10,8 +10,8 @@
   "id": "AR-1799",
   "next_action": "Add public fake authority tests covering bootstrap, attempt_factory revocation after authority drop, cancellation/timeout/crash/concurrent teardown and direct run/sweep dispatch; rerun full make test and request fresh review of new signed head.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
-  "observed_dirty": 1,
-  "observed_head": "c7ed2669af79bb187da7d09fe55f03e2e8bd381f",
+  "observed_dirty": 0,
+  "observed_head": "ed4b176641562aa057cbe91c6c9946ffb84d9b38",
   "owner": "ar1799-authority-luna56",
   "plan": "../plans/AR-1799-cli2key-runtime-authority-seam.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:39:02+00:00",
+  "updated_at": "2026-10-12T04:39:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
