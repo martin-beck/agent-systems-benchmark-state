@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
-  "checkpoint_commit": "92631c9596cf41304917918decc25ab2cc6167f9",
+  "checkpoint_commit": "b72da478631faa391f9be75d7cce1e813deb387d",
   "claim_expires": "2026-10-12T04:25:28+00:00",
   "depends_on": [
     "AR-1782",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T02:28:08+00:00",
+  "updated_at": "2026-10-12T02:28:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -186,3 +186,5 @@ must not weaken production acquisition, identity, or offline guarantees.
   bf11d7c527d92341bd70ad12be02d15c47e3fa64ec92ead3465fc6f78ff875a9.
 
 - 2026-10-12T02:28:08+00:00: Checkpointed source commit 92631c9596cf41304917918decc25ab2cc6167f9.
+
+- 2026-10-12T02:28:19+00:00: Checkpointed source commit b72da478631faa391f9be75d7cce1e813deb387d.
