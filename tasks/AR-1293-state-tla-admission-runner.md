@@ -2,14 +2,14 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T11:59:04+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Independent re-review of PR #120 exact head 21a8b4c16c passed focused tests, formatting, and Ruff; full unittest was attempted but stopped on pre-existing SQLite lock contention and environment fixture errors. Mypy is blocked locally by missing types-jsonschema. Hosted full applicable checks must be confirmed before approval/merge.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
-  "owner": "ar1293-merge-luna56",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1293.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 793,
+  "task_revision": 794,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T10:02:14+00:00",
+  "updated_at": "2026-10-12T10:02:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2395,3 +2395,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-10-12T10:02:14+00:00: PR #120 exact candidate 21a8b4c16c36e1884df83b38e64c34d0658df672 merged
   as 48ab38c2dc617fa46442d16fd9e64b3e34b88098; hosted checks and detached origin/main
   unsigned-development/source-header checks passed; no TLC/model-check execution.
+
+- 2026-10-12T10:02:47+00:00: PR #120 merged at exact squash head
+  48ab38c2dc617fa46442d16fd9e64b3e34b88098 from independently accepted candidate
+  21a8b4c16c36e1884df83b38e64c34d0658df672; hosted verify and AWQ shadow checks passed; post-merge
+  unsigned-development tests (2) and source-header verification passed from detached origin/main; no
+  TLC/model-check execution.

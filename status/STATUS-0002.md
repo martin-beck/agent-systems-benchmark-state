@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
@@ -4701,3 +4700,4 @@
 
 ### AR-1688 — Runner-owned cassette capture and replay qualification
 
+| Field | Value |

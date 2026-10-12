@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| Field | Value |
 | --- | --- |
 | Status | done |
 | Priority | P0 |
@@ -2017,7 +2016,7 @@ flowchart LR
         AR_1290["AR-1290 - Done"]:::status_done
         AR_1291["AR-1291 - Done"]:::status_done
         AR_1292["AR-1292 - Blocked"]:::status_blocked
-        AR_1293["AR-1293 - In progress"]:::status_in_progress
+        AR_1293["AR-1293 - Done"]:::status_done
         AR_1294["AR-1294 - Superseded"]:::status_superseded
         AR_1295["AR-1295 - Done"]:::status_done
         AR_1296["AR-1296 - Done"]:::status_done

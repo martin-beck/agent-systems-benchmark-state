@@ -236,11 +236,10 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | ar1293-merge-luna56 | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. | Independent re-review of PR #120 exact head 21a8b4c16c passed focused tests, formatting, and Ruff; full unittest was attempted but stopped on pre-existing SQLite lock contention and environment fixture errors. Mypy is blocked locally by missing types-jsonschema. Hosted full applicable checks must be confirmed before approval/merge. |
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1773-catalog-repair-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Independent review complete: PR #605 exact head f78a1006 is signed/DCO/privacy clean; focused step_progress 4/4 passes. human_cli one outcome-matrix failure reproduces on parent 1494e474 with unchanged expected status (pre-existing environment failure); retain hosted/full gate evidence and do not merge until integration lane reconciles exact-head results. |
 | P0 | [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md): Development/formal workflow separation | coordinator-ar1811-merge | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. | Monitor PR #606 exact head da764cf7 until all required non-TLC checks are green; then independent review, merge, exact-main post-merge verification, and durable closure. |
 
@@ -436,7 +435,7 @@
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | User-requested stop recorded. Preserve interrupted exact-candidate retry artifacts and terminal uncertainty; do not accept or release. Reclaim only after explicit continuation and rerun a fresh bounded exact full-exhaustive attempt with PYTHONDONTWRITEBYTECODE=1. |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (598)
+### Done (599)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -535,6 +534,7 @@
 | P0 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | Unclaimed | Repair the stale formal Cargo.lock required by hosted exact-head gates. | Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success. |
 | P0 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | Unclaimed | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Monitor exact-main post-merge workflows for c1b1860786e844adb69b8f74e39af290592a89c8 to terminal SUCCESS; verify protected main signature/DCO/tree and release AR-1290 done. |
 | P0 | [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md): Repair superseded dependency pointers | Unclaimed | Repair missing successor pointers on superseded dependency tasks. | Claim the state-repair AR, add the verified successor pointers to AR-1052/1054/1056/1058/1061, reconcile and validate AR-1010 dependency readiness. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. | Independent re-review of PR #120 exact head 21a8b4c16c passed focused tests, formatting, and Ruff; full unittest was attempted but stopped on pre-existing SQLite lock contention and environment fixture errors. Mypy is blocked locally by missing types-jsonschema. Hosted full applicable checks must be confirmed before approval/merge. |
 | P0 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Unclaimed | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Repair current generated-state blockers (AR-1160, AR-1258, AR-1303, malformed AR-1309), then re-audit exact-head publication. |
 | P0 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md): State quality-gate baseline | Unclaimed | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95&#37; coverage gate pass. |
 | P0 | [AR-1297](../tasks/AR-1297-task-schema-metadata.md): Task schema and metadata consistency | Unclaimed | Repair task schema and metadata consistency without weakening coordinator validation. | Repair every reported task schema/metadata error from durable evidence, add strict superseded_by schema coverage, regenerate views, and rerun all state gates. |
