@@ -15,19 +15,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "mechanical",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:2595fc33eda6071001fadbbda6d93b5a24bd5d352f55f0548d376896db0091c9",
+    "evidence_ref": "main/5a6c5477cd171606da3aaa0cae9950453ea8dc5c",
     "spec_ref": "specs/AR-1814.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1814.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Remove stale TLC development ruleset requirement",
-  "updated_at": "2026-10-12T10:25:26+00:00",
+  "updated_at": "2026-10-12T10:38:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1814-ruleset-repair"
 }
 ---
@@ -65,3 +65,7 @@ the remaining required checks.
 - 2026-10-12T10:25:26+00:00: Ruleset minimal repair applied and verified; PR #606 merged via signed
   exact-tree merge 5a6c5477cd171606da3aaa0cae9950453ea8dc5c (base 07c590e7, topic d9972679, tree
   7cf7d050). Post-merge workflows queued/running; no TLC was run.
+
+- 2026-10-12T10:38:16+00:00: Ruleset 24750310 before/after digests recorded; exact comparison proves
+  only TLC and Alloy recovery models was removed. PR #606 merged as signed 5a6c5477. All exact-main
+  post-merge workflows terminal success, including Development formal assurance without TLC.
