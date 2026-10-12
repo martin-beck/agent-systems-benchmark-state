@@ -9,15 +9,50 @@
   "observed_branch": "feature/ar-1811-development-formal-workflow-separation",
   "observed_dirty": 0,
   "observed_head": "d9972679899cf18c1c9ab87e694ad639a2c18786",
+  "oracle_gate": {
+    "completed": [],
+    "discussion_rounds": 0,
+    "events": [
+      {
+        "action": "open",
+        "after": [
+          {
+            "digest": "sha256:607625b5d8597e0ae25eca71b8e2608f6f08664ef9f12f06f5583cf5921a2f45",
+            "ref": "review/candidate"
+          }
+        ],
+        "before": [
+          {
+            "digest": "sha256:cc330f6cc2411e636d0434b5cceb13aa3da50412081d4e2307c858c0efe9ae4f",
+            "ref": "review/base"
+          }
+        ],
+        "disposition": "unresolved",
+        "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786",
+        "recorded_at": "2026-10-12T10:16:21+00:00",
+        "stage": "role",
+        "task_id": "AR-1811",
+        "task_revision": 41
+      }
+    ],
+    "open_stage": "role",
+    "reconciliation_required": false,
+    "required": true,
+    "stage_sequence": [
+      "role",
+      "spec",
+      "decision"
+    ]
+  },
   "owner": "coordinator-ar1811-merge",
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:08:02+00:00",
+  "updated_at": "2026-10-12T10:16:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -125,3 +160,6 @@ tests and update the generated quality documentation.
 
 - 2026-10-12T10:08:02+00:00: Updated exact-head next action after rebasing PR #606 onto current
   main; development TLC remains excluded.
+
+- 2026-10-12T10:16:21+00:00: Recorded open interaction gate role;
+  event=sha256:f10a4f38f89d898180a30ebe9f3b2968de4c2b9f63b7443f58d29f91d03783c6.
