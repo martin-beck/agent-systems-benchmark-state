@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Monitor fresh CI at 30-second cadence and obtain independent review for 736b9705; merge only after all required checks and review are green.",
+  "next_action": "Wait for exact-head CI terminal success; record independent review of 736b9705 and then merge only after review and all required checks are green.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "736b970566d74644ab1dc9c51ff6dd890298c382",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T12:13:06+00:00",
+  "updated_at": "2026-10-12T12:13:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -460,3 +460,9 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T12:13:06+00:00: Recorded command exit 0; command argv SHA-256
   cc10b27f3075ab315027aa0869f15dd29bb06d7c0cdc74694ed305a4afd38a4e.
+
+- 2026-10-12T12:13:40+00:00: Reviewer command diagnosis: handoffctl run with absolute Cargo manifest
+  returned exit 101 because the coordinator shared lock was unavailable (LOCK_TIMEOUT); no cargo
+  test failure was observed. The earlier command used state-repository cwd and returned no
+  Cargo.toml. After lock cleared, the same exact command completed exit 0 (recorded at 12:13:06Z),
+  so this was transient reviewer tooling contention, not a product failure.
