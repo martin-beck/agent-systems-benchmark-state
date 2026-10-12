@@ -3,7 +3,9 @@
   "branch": "feature/ar-1775-configurable-output-router-and-levels",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1771"],
+  "depends_on": [
+    "AR-1771"
+  ],
   "id": "AR-1775",
   "next_action": "Implement the sole configurable output router, generated project output defaults, and four-level selection after the output contract is accepted.",
   "observed_branch": "",
@@ -13,14 +15,21 @@
   "plan": "../plans/AR-1775-configurable-output-router-and-levels.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1775.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1775.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1775.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-09T21:29:29+00:00",
+  "updated_at": "2026-10-12T00:06:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -44,3 +53,5 @@ the original command outcome where safe to do so.
 Route all pre-existing ASB output through this router before adding new progress
 behavior. JSON is not a configurable human writer: `--json` retains its exact
 stdout envelope and silences all human/operational output on both streams.
+
+- 2026-10-12T00:06:27+00:00: dependencies verified for AR-1771 output contract
