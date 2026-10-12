@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Repair diagnostic catalog for test-only semaphore callsites, rerun focused diagnostic_contract, then rerun make test.",
+  "next_action": "Run full make test and default-parallel asb-cli gate; then checkpoint exact signed head for independent review.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 2,
   "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
@@ -26,10 +26,10 @@
   "spec_ref": "specs/AR-1804.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 29,
+  "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
+  "task_revision": 30,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:51:24+00:00",
+  "updated_at": "2026-10-12T02:51:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -126,3 +126,13 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:51:24+00:00: Recorded command exit 0; command argv SHA-256
   8cec93ff7d9c3983f4c427681a0b30b16b41a63ed52669a2eab9a3039760005e.
+
+- 2026-10-12T02:51:35+00:00: Diagnostic repair: the prior exit-101 was caused by line-based reviewed
+  legacy-producer identities shifting when the test-only semaphore module was inserted in lib.rs.
+  The narrow fix moves the semaphore implementation to test_fixture_semaphore.rs, declares it at
+  EOF, and keeps the run seam on its original source line (removing one transient blank line),
+  preserving existing catalog line identities; no diagnostic exemptions were added. Focused command
+  cargo test --locked --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore/Cargo.toml -p
+  asb-cli --test diagnostic_contract ordinary_cli_producers_are_mechanically_closed -- --nocapture
+  exited 0: 1 passed, 0 failed.

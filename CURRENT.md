@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope. | ar1796-reconcile-candidate-luna56 |
 | P0 | [AR-1799](tasks/AR-1799-cli2key-runtime-authority-seam.md): Add cli2key runtime authority composition seam | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. | Implement runtime-only receipt-to-Cli2KeySidecar bootstrap and opaque LiveProviderAttempt issuance; add hostile lifecycle matrix before CLI integration. | codex-ar1799-authority-luna56 |
-| P0 | [AR-1804](tasks/AR-1804-cross-module-fixture-semaphore.md): Cross-module fixture semaphore | Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates. | Repair diagnostic catalog for test-only semaphore callsites, rerun focused diagnostic_contract, then rerun make test. | ar1804_fixture_semaphore_luna56 |
+| P0 | [AR-1804](tasks/AR-1804-cross-module-fixture-semaphore.md): Cross-module fixture semaphore | Semaphore implementation and diagnostic inventory repair checkpoint | Run full make test and default-parallel asb-cli gate; then checkpoint exact signed head for independent review. | ar1804_fixture_semaphore_luna56 |
 
 ## Blocked
 

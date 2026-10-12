@@ -1545,8 +1545,8 @@
 | Owner | ar1804_fixture_semaphore_luna56 |
 | Parent | None |
 | Children | None |
-| Summary | Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates. |
-| Next action | Repair diagnostic catalog for test-only semaphore callsites, rerun focused diagnostic_contract, then rerun make test. |
+| Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
+| Next action | Run full make test and default-parallel asb-cli gate; then checkpoint exact signed head for independent review. |
 
 
 ## Dependency graph
