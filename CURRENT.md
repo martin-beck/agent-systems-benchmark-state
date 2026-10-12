@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1799](tasks/AR-1799-tui-install-rustup-invalid-repair.md): Repair asb tui install rustup/rustc trusted-tool rejection | Repair the remaining current-main asb tui install trusted_tool_invalid failure for development rustup/rustc layouts and qualify the real installed entrypoint. | PR #613 (63ba8e7973545f65bd8dda56f3aa24d9d339bb16) is open; focused rustup tests, fmt, clippy, and independent review pass. Await remaining exact-head hosted checks, then merge and run post-merge installed-entrypoint qualification. | codex-ar1799-tui-install-rustup-invalid-20261012 |
-| P0 | [AR-1822](tasks/AR-1822-role-removal-expiry.md): Expired role assignment cleanup semantics | Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission. | Reconcile current state, promote and claim this repair, then implement and test targeted expired-assignment cleanup without weakening read or admission validation. | ar1817_schema_contract |
 | P0 | [AR-1823](tasks/AR-1823-ar1820-receipt-publication.md): AR-1820 receipt publication cleanup | Publish the already-verified AR-1820 provenance receipt and durable done state. | Publish the already-verified AR-1820 receipt and done transition from the durable current-main state; do not change product or historical PR evidence. | ar1823_receipt_cleanup |
 
 ## Open
@@ -19,6 +18,7 @@ Never edit this file directly.
 | P0 | [AR-1779](tasks/AR-1779-default-usable-tool-install-command.md): Default usable tool-install command | Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying. | Independent review and exact-head CI for PR #583 at 7c08cfb0; source-only fallback remains to be resolved before merge. | - |
 | P0 | [AR-1782](tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | PR #584 rebased onto origin/main 24cb72d; exact remote head 96ea497a. Credential-free workload matrix, diagnostic contract, provenance, resolver, and clippy focused gates pass. Poll fresh exact-head CI; do not merge. | - |
 | P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release. | - |
+| P0 | [AR-1822](tasks/AR-1822-role-removal-expiry.md): Expired role assignment cleanup semantics | Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission. | Reconcile current state, promote and claim this repair, then implement and test targeted expired-assignment cleanup without weakening read or admission validation. | - |
 
 ## Blocked
 
