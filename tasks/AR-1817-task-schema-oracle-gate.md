@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Align task schema with oracle gate contract",
-  "updated_at": "2026-10-12T13:19:27+00:00",
+  "updated_at": "2026-10-12T13:20:16+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1817-schema-oracle-gate"
 }
 ---
@@ -44,3 +44,6 @@ do not make the schema permissive or alter AR-1816 implementation state.
 
 - 2026-10-12T13:19:27+00:00: Recorded command exit 0; command argv SHA-256
   13735c302869234e3e97074f961ed597737ad5768de18d49074af5f1eda06029.
+
+- 2026-10-12T13:20:16+00:00: Recorded command exit 0; command argv SHA-256
+  0e5f40a3ed7b0a3f07e3ffa238af0403d8f74ea85d92ccb9af748fd95606978e.
