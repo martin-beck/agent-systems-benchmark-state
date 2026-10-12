@@ -1563,7 +1563,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Independent review found a full integration-gate regression at exact PR head 5cb931f5. |
-| Next action | Update the executable public-family golden fixture for the new workload family, push a signed fix, rerun cargo test -p asb-cli --tests --offline, then repeat exact-head independent review. |
+| Next action | PR #608 exact head 0fec6465 is rebased onto 5c843a12; diagnostic catalog repair and public-family count repair are signed and pushed. Full cargo test -p asb-cli --tests --offline passes. Obtain repeat independent review at exact head, wait all non-TLC checks terminal green, then protected merge/post-merge. |
 
 ### AR-1806 — Exhaustive Human Output Contract Audit
 
