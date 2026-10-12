@@ -1,5 +1,13 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1593](../tasks/AR-1593.md) | [AR-1592](../tasks/AR-1592.md) | [AR-1590](../tasks/AR-1590.md), [AR-1595](../tasks/AR-1595.md) |
+| [AR-1594](../tasks/AR-1594.md) | [AR-1576](../tasks/AR-1576.md) | [AR-1590](../tasks/AR-1590.md) |
+| [AR-1595](../tasks/AR-1595.md) | [AR-1592](../tasks/AR-1592.md), [AR-1593](../tasks/AR-1593.md) | [AR-1596](../tasks/AR-1596.md), [AR-1602](../tasks/AR-1602.md), [AR-1607](../tasks/AR-1607.md) |
+| [AR-1596](../tasks/AR-1596.md) | [AR-1590](../tasks/AR-1590.md), [AR-1595](../tasks/AR-1595.md) | [AR-1597](../tasks/AR-1597.md), [AR-1602](../tasks/AR-1602.md) |
+| [AR-1597](../tasks/AR-1597.md) | [AR-1596](../tasks/AR-1596.md) | [AR-1598](../tasks/AR-1598.md), [AR-1600](../tasks/AR-1600.md), [AR-1718](../tasks/AR-1718.md) |
+| [AR-1598](../tasks/AR-1598.md) | [AR-1588](../tasks/AR-1588.md), [AR-1589](../tasks/AR-1589.md), [AR-1591](../tasks/AR-1591.md), [AR-1597](../tasks/AR-1597.md) | [AR-1603](../tasks/AR-1603.md) |
+| [AR-1599](../tasks/AR-1599.md) | [AR-1563](../tasks/AR-1563.md), [AR-1564](../tasks/AR-1564.md), [AR-1568](../tasks/AR-1568.md), [AR-1588](../tasks/AR-1588.md) | [AR-1600](../tasks/AR-1600.md), [AR-1601](../tasks/AR-1601.md), [AR-1611](../tasks/AR-1611.md) |
+| [AR-1600](../tasks/AR-1600.md) | [AR-1597](../tasks/AR-1597.md), [AR-1599](../tasks/AR-1599.md) | [AR-1601](../tasks/AR-1601.md), [AR-1611](../tasks/AR-1611.md) |
 | [AR-1601](../tasks/AR-1601.md) | [AR-1599](../tasks/AR-1599.md), [AR-1600](../tasks/AR-1600.md) | [AR-1603](../tasks/AR-1603.md), [AR-1607](../tasks/AR-1607.md), [AR-1611](../tasks/AR-1611.md) |
 | [AR-1602](../tasks/AR-1602.md) | [AR-1595](../tasks/AR-1595.md), [AR-1596](../tasks/AR-1596.md) | [AR-1605](../tasks/AR-1605.md) |
 | [AR-1603](../tasks/AR-1603.md) | [AR-1598](../tasks/AR-1598.md), [AR-1601](../tasks/AR-1601.md), [AR-1605](../tasks/AR-1605.md), [AR-1606](../tasks/AR-1606.md), [AR-1607](../tasks/AR-1607.md), [AR-1608](../tasks/AR-1608.md) | [AR-1604](../tasks/AR-1604.md), [AR-1613](../tasks/AR-1613.md) |
@@ -190,6 +198,7 @@
 | [AR-1819](../tasks/AR-1819-expired-claim-recovery-safety.md) | None | None |
 | [AR-1820](../tasks/AR-1820-ar1772-provenance.md) | None | None |
 | [AR-1821](../tasks/AR-1821-ar1817-pr128-integration-recovery.md) | None | None |
+| [AR-1822](../tasks/AR-1822-role-removal-expiry.md) | None | None |
 | [AR-1823](../tasks/AR-1823-ar1820-receipt-publication.md) | None | None |
 
 ## Complete AR inventory
@@ -300,7 +309,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (88)
+### Planned (89)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -352,6 +361,7 @@
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Select every development external workload and prove ASB uses its exact project-local identity end to end. | Integrate every development-supported installed workload bundle into selection and prove full run/sweep/report/compare consumes its exact recorded identity. |
 | P0 | [AR-1797](../tasks/AR-1797-cli2key-live-runtime-wiring.md): Wire cli2key sidecar into live benchmark execution | Unclaimed | Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark. | Wire the verified project-local cli2key bridge into the runtime-owned sidecar launch path, then qualify fake and opt-in live benchmark execution without exposing credentials. |
 | P0 | [AR-1800](../tasks/AR-1800-development-warning-only-trust-contract.md): Development channel warning-only trust contracts | Unclaimed | Make development-channel trust, digest, and exact-version mismatches warning-only without weakening stable/production policy. | Promote and claim AR-1800 after coordinator state is reconciled; inventory every scoped trust validator and define one channel-aware policy before implementation. |
+| P0 | [AR-1822](../tasks/AR-1822-role-removal-expiry.md): Expired role assignment cleanup semantics | Unclaimed | Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission. | Reconcile current state, promote and claim this repair, then implement and test targeted expired-assignment cleanup without weakening read or admission validation. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -583,9 +593,3 @@
 | P0 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | Unclaimed | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Reconcile and doctor state; release AR-1478 done with complete merge and seven-workflow evidence. |
 | P0 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Unclaimed | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Monitor exact-main post-merge workflows for 1015a461; after all seven green, release AR-1479 and requalify AR-1420 PR #350 head 2884508. |
 | P0 | [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | Unclaimed | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Run reconcile and doctor --live, then release AR-1480 done ownerless with complete merge/post-merge evidence. |
-| P0 | [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | Unclaimed | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Reconcile/doctor, then release AR-1484 done ownerless with complete merge/post-merge evidence. |
-| P0 | [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | Unclaimed | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Release complete; retain exact merge and eight workflow evidence. |
-| P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | Unclaimed | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Release complete; retain exact merge and eight workflow evidence. |
-| P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Unclaimed | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
-| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Unclaimed | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
-| P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Unclaimed | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
