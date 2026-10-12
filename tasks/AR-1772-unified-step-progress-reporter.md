@@ -7,7 +7,7 @@
     "AR-1775"
   ],
   "id": "AR-1772",
-  "next_action": "Focused reporter and diagnostic-contract gates pass. Full asb-cli has one pre-existing environment-sensitive tool-discovery version assertion; retain as qualification blocker unless parent accepts bounded exception.",
+  "next_action": "Blocked pending dedicated follow-up to AR-1762 tool-discovery fixture isolation: cargo probe must be pinned/isolated so path_discovery expected fixture remains deterministic.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "f9ad19ff24c69a0bd08d3dc3d9f8b6df09c98a41",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:16:06+00:00",
+  "updated_at": "2026-10-12T02:17:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -155,3 +155,8 @@ allowed outside this helper.
   null/reason version_probe_unavailable but observed cargo 1.0 and reason null. Reporter tests and
   diagnostic_contract::ordinary_cli_producers_are_mechanically_closed pass. This is unrelated to
   AR-1772 and reflects ambient cargo probe output.
+
+- 2026-10-12T02:17:38+00:00: Successor ownership audit: AR-1762-tool-discovery is the existing
+  completed owner for tool discovery, but no open successor owns the ambient Cargo-version fixture
+  regression. Do not waive full gate; preserve exact failure in this task and request successor
+  coordination.

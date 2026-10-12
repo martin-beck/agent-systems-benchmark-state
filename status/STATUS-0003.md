@@ -1098,7 +1098,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output. |
-| Next action | Focused reporter and diagnostic-contract gates pass. Full asb-cli has one pre-existing environment-sensitive tool-discovery version assertion; retain as qualification blocker unless parent accepts bounded exception. |
+| Next action | Blocked pending dedicated follow-up to AR-1762 tool-discovery fixture isolation: cargo probe must be pinned/isolated so path_discovery expected fixture remains deterministic. |
 
 ### AR-1773 — Universal command step instrumentation
 
@@ -1210,7 +1210,7 @@
 | Parent | None |
 | Children | None |
 | Summary | End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution. |
-| Next action | Qualify every development external workload, after installation and selection, through actual run, sweep, report, and comparison flows. |
+| Next action | Create and complete a dependency-safe successor AR for a credential-free controlled local acquisition backend/fixture archive source, then rerun every AR-1781 workload through public install/select/run/sweep/report/compare and exact-main hosted qualification; existing AR-1782 only covers remote acquisition and is not a substitute. |
 
 ### AR-1781 — External workload acquisition catalog
 
