@@ -11,8 +11,8 @@
   "id": "AR-1812",
   "next_action": "Run full workspace and all offline quality gates on clean repaired branch, then publish signed PR.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
-  "observed_dirty": 1,
-  "observed_head": "343f1c4a0842c27cdc632b7fa22ee30986866006",
+  "observed_dirty": 0,
+  "observed_head": "95a342fde4c5135a841017074028bcf053771f05",
   "owner": "ar1812-repair-luna56",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:51:25+00:00",
+  "updated_at": "2026-10-12T11:51:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
