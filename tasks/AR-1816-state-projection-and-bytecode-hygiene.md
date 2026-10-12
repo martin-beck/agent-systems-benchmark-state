@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Coordinator projection and bytecode hygiene recovery",
-  "updated_at": "2026-10-12T12:57:42+00:00",
+  "updated_at": "2026-10-12T12:57:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar1816-projection-hygiene"
 }
 ---
@@ -88,3 +88,6 @@ bytecode, credentials, or host-private runtime configuration may enter commits.
   and replacement repair worktree.
 
 - 2026-10-12T12:57:42+00:00: Claimed by ar1816_projection_hygiene.
+
+- 2026-10-12T12:57:48+00:00: Recorded command exit 0; command argv SHA-256
+  c1125500f804e0d1369c4918ac1365fd4455ae373836eb9db8b2e5462643cb97.
