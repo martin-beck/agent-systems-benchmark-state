@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1772-unified-step-progress-reporter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T07:38:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1775"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "65ee830e6659ac5426757833d1030ae0c32f8ac5",
-  "owner": "ar1772-progress-reporter-luna56",
+  "owner": "",
   "plan": "../plans/AR-1772-unified-step-progress-reporter.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1772.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "AR-1772 merged and post-merge verified on exact main 4b14797a.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:58:57+00:00",
+  "updated_at": "2026-10-12T05:59:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -528,3 +528,8 @@ allowed outside this helper.
   reporter tests passed 3/3, diagnostic_contract ordinary_cli_producers_are_mechanically_closed
   passed 1/1, and make test exited 0. Durable receipt quality/AR-1772-postmerge-receipt.txt
   committed in state.
+
+- 2026-10-12T05:59:04+00:00: Completed and released: PR #602 merged at
+  4b14797a0892988a484a5171c45c4e8ec3c3d836; all 15 hosted checks passed; exact-main focused
+  reporter, diagnostic contract, and make test passed; receipt quality/AR-1772-postmerge-receipt.txt
+  committed.
