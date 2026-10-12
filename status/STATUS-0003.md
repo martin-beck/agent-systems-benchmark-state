@@ -1713,7 +1713,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. |
-| Next action | Implement a lock-aware, atomic reconciliation path and bytecode-safe coordinator execution, then qualify recovery under concurrent state activity. |
+| Next action | PR #121 at 104abc99ad is published; obtain independent exact-head review and required state CI, then merge and run configured reconcile/snapshot/doctor receipt. |
 
 
 ## Dependency graph
