@@ -2480,9 +2480,7 @@ def apply_recover_expired(args: argparse.Namespace, meta: Meta, _tasks: list[Tas
         session for session in records if session["task_revision"] == meta["task_revision"]
     ]
     if len(current_sessions) != 1:
-        raise RuntimeError(
-            "expired-claim recovery requires exactly one current session snapshot"
-        )
+        raise RuntimeError("expired-claim recovery requires exactly one current session snapshot")
     meta["next_action"] = str(current_sessions[0]["next_action"])
     meta["status"] = "open"
     meta["owner"] = ""

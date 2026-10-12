@@ -3798,8 +3798,9 @@ class HandoffTest(unittest.TestCase):
                 "pid_namespace": pid_namespace,
             },
         )
-        with patch.object(CORE, "commit", return_value=True), self.assertRaisesRegex(
-            RuntimeError, "requires exactly one current session snapshot"
+        with (
+            patch.object(CORE, "commit", return_value=True),
+            self.assertRaisesRegex(RuntimeError, "requires exactly one current session snapshot"),
         ):
             CORE.mutate(
                 argparse.Namespace(
@@ -3829,9 +3830,7 @@ class HandoffTest(unittest.TestCase):
         with (
             patch.object(CORE, "storage_backend", return_value=backend),
             patch.object(CORE, "commit", return_value=True),
-            self.assertRaisesRegex(
-                RuntimeError, "requires exactly one current session snapshot"
-            ),
+            self.assertRaisesRegex(RuntimeError, "requires exactly one current session snapshot"),
         ):
             CORE.mutate(
                 argparse.Namespace(
@@ -3852,9 +3851,7 @@ class HandoffTest(unittest.TestCase):
         )
         with (
             patch.object(CORE, "commit", return_value=True),
-            self.assertRaisesRegex(
-                RuntimeError, "requires exactly one current session snapshot"
-            ),
+            self.assertRaisesRegex(RuntimeError, "requires exactly one current session snapshot"),
         ):
             CORE.mutate(
                 argparse.Namespace(
@@ -3887,9 +3884,7 @@ class HandoffTest(unittest.TestCase):
         self.refresh_views()
         with (
             patch.object(CORE, "commit", return_value=True),
-            self.assertRaisesRegex(
-                RuntimeError, "requires exactly one current session snapshot"
-            ),
+            self.assertRaisesRegex(RuntimeError, "requires exactly one current session snapshot"),
         ):
             CORE.mutate(
                 argparse.Namespace(
