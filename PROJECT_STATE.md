@@ -29,21 +29,21 @@ Generated from local Git and GitHub. Do not edit.
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
 | #595 | `feature/ar-1775-configurable-output-router-and-levels-v8@f805a4e46c98` | `main` | BEHIND | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb-cli): configurable output router and levels |
-| #596 | `feature/ar-1783-installed-workload-selection-and-execution@cdf8b131ba1e` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | chore(integration): restore protected-main policy identity |
+| #596 | `feature/ar-1783-installed-workload-selection-and-execution@506de984af22` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | chore(integration): restore protected-main policy identity |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38190636658 | `506de984af22` | pull_request | Portable protected-main provenance | in_progress:- |
+| 38190636560 | `506de984af22` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 38190636526 | `506de984af22` | pull_request | Repository quality | queued:- |
+| 38190636523 | `506de984af22` | pull_request | Emulated aarch64 portability | pending:- |
+| 38190636521 | `506de984af22` | pull_request | Formal assurance | pending:- |
+| 38190636513 | `506de984af22` | pull_request | Fault assurance | pending:- |
+| 38190636507 | `506de984af22` | pull_request | Rust verification | pending:- |
+| 38190636493 | `506de984af22` | pull_request | Hosted portability and native qualification | pending:- |
+| 38190636491 | `506de984af22` | pull_request | Huawei MIT source headers | in_progress:- |
+| 38190636488 | `506de984af22` | pull_request | Cross-repository development broker qualification | pending:- |
+| 38190636477 | `506de984af22` | pull_request | Credential-free benchmark path | pending:- |
 | 38190607461 | `cdf8b131ba1e` | pull_request | Repository quality | completed:failure |
-| 38190607438 | `cdf8b131ba1e` | pull_request | Credential-free benchmark path | in_progress:- |
-| 38190607431 | `cdf8b131ba1e` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38190607404 | `cdf8b131ba1e` | pull_request | Fault assurance | in_progress:- |
-| 38190607401 | `cdf8b131ba1e` | pull_request | Formal assurance | in_progress:- |
-| 38190607386 | `cdf8b131ba1e` | pull_request | Portable protected-main provenance | completed:failure |
-| 38190607379 | `cdf8b131ba1e` | pull_request | Cross-repository development broker qualification | in_progress:- |
-| 38190607376 | `cdf8b131ba1e` | pull_request | Rust verification | in_progress:- |
-| 38190607371 | `cdf8b131ba1e` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38190607367 | `cdf8b131ba1e` | pull_request | Huawei MIT source headers | completed:success |
-| 38190607366 | `cdf8b131ba1e` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 38190460089 | `ad64a90f198d` | pull_request | Credential-free benchmark path | completed:cancelled |
