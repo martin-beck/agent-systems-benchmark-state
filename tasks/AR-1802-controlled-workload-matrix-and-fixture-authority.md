@@ -8,7 +8,7 @@
     "AR-1783"
   ],
   "id": "AR-1802",
-  "next_action": "Independent review of signed c9ea7246; then PR/exact-head hosted CI and lifecycle acceptance.",
+  "next_action": "Monitor PR #600 exact head c9ea7246 until all required hosted checks green; then supported non-squash merge and post-merge verification.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "observed_dirty": 0,
   "observed_head": "c9ea7246e6d4ce7cfd11eabe55216765d2508996",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T04:01:04+00:00",
+  "updated_at": "2026-10-12T04:01:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -297,3 +297,9 @@ remains explicitly unaccepted and blocked until this repair is complete.
 
 - 2026-10-12T04:01:04+00:00: Recorded command exit 0; command argv SHA-256
   0245bc7962356f8e0167627eda92d49f9f488601614655a7b1b7093dd9655fd5.
+
+- 2026-10-12T04:01:32+00:00: Published PR #600 from clean exact signed/DCO head c9ea7246 via
+  handoffctl. gh pr view confirms base main, head c9ea7246, OPEN; all required hosted checks are
+  IN_PROGRESS (Rust verification, repository quality, portability, formal/fault assurance,
+  provenance, credential-free benchmark, AWQ shadow, headers, TUI). No merge before exact-head green
+  CI.

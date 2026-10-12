@@ -1518,7 +1518,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review. |
-| Next action | Independent review of signed c9ea7246; then PR/exact-head hosted CI and lifecycle acceptance. |
+| Next action | Monitor PR #600 exact head c9ea7246 until all required hosted checks green; then supported non-squash merge and post-merge verification. |
 
 ### AR-1803 — Deterministic parallel fixture repair
 
