@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1803.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T02:41:02+00:00",
+  "updated_at": "2026-10-12T03:31:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -105,3 +105,7 @@ as the affected successor linkage and evidence source.
   checkpoint 56db629d. No product behavior was changed beyond the already-reviewed AR-1801 head, so
   no PR/merge was fabricated. Next action: if higher parallelism is required, implement a true
   cross-module process-fixture semaphore and hostile contention regression before reopening.
+
+- 2026-10-12T03:31:11+00:00: Dependency-safe reopening: AR-1762 is done. Preserve prior blocked
+  evidence that repository make test passed but direct high-parallel Cargo exposed cross-module
+  fixture contention; this task now requires true semaphore repair with hostile coverage.
