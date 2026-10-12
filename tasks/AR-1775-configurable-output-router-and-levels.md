@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:11:02+00:00",
+  "updated_at": "2026-10-12T00:11:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -92,3 +92,6 @@ stdout envelope and silences all human/operational output on both streams.
   4d2c5b9c7612b59b9a4f7108fce19e037a51e255fb403ad31785375c7e40a45b.
 
 - 2026-10-12T00:11:02+00:00: Heartbeat by ar1775_output_router_luna56.
+
+- 2026-10-12T00:11:48+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
