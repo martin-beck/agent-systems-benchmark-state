@@ -11,8 +11,8 @@
   "id": "AR-1812",
   "next_action": "Rerun workflow_transcript provenance test and full locked offline workspace suite; then run fmt, clippy warnings-denied, docs and release build.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
-  "observed_dirty": 1,
-  "observed_head": "edc345cff97b8a3a0985e105b2deb0a5248f47e4",
+  "observed_dirty": 0,
+  "observed_head": "0df054d3f86f0c04b946ae925d43cb5296a36246",
   "owner": "ar1812-repair-luna56",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:42:33+00:00",
+  "updated_at": "2026-10-12T11:42:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
