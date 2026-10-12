@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T02:20:08+00:00",
+  "updated_at": "2026-10-12T02:20:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -55,3 +55,6 @@ or pin the probe without weakening bounded execution or privacy contracts.
 - 2026-10-12T02:20:08+00:00: Checkpoint c20bb7bb: increased bounded Cargo probe timeout from 750ms
   to 2s to prevent fixture startup timeout under full parallel CLI test load. Full cargo test -p
   asb-cli passed in isolated AR-1801 worktree; focused path-discovery and diagnostic gates pass.
+
+- 2026-10-12T02:20:13+00:00: Recorded command exit 0; command argv SHA-256
+  23aa870a21be7fabb6dca45302fb2c8ceae92c28d3f7fdea8618378eab870f71.
