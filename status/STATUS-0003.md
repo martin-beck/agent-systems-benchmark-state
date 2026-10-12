@@ -1140,7 +1140,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels. |
-| Next action | Await independent exact-head review for PR #597 head 9bb7d3f205c569fd309e4b2014f33049f00f7b5c; all hosted checks terminal SUCCESS; merge only after distinct reviewer approval, then verify exact main and accept/release. |
+| Next action | Await distinct reviewer approval for PR #597 head 9bb7d3f205c569fd309e4b2014f33049f00f7b5c; all hosted checks terminal SUCCESS; merge only after separate reviewer approval, then verify exact main and accept/release. |
 
 ### AR-1776 — Supported-tool acquisition catalog
 
