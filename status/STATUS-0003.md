@@ -1251,8 +1251,8 @@
 | Owner | ar1783_workload_selection_luna56 |
 | Parent | None |
 | Children | None |
-| Summary | Exact head e644f9b0 has all hosted required checks green; awaiting independent review |
-| Next action | Merge only after this independent approval, then verify protected main and release AR with receipts |
+| Summary | AR-1783 merged at 5201a036; post-merge policy and portable provenance rejected GitHub merge committer, requiring supported local-integration forward repair before acceptance |
+| Next action | Create a signed DCO repair PR based on protected main 5201a036, obtain exact-head review and green checks, merge with tools/integration/merge_pr.py, verify exact-main receipts, then accept and release |
 
 ### AR-1784 — Command dependency registry and preflight
 

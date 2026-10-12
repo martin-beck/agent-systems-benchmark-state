@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Merge only after this independent approval, then verify protected main and release AR with receipts",
+  "next_action": "Create a signed DCO repair PR based on protected main 5201a036, obtain exact-head review and green checks, merge with tools/integration/merge_pr.py, verify exact-main receipts, then accept and release",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "ad64a90f198d71311401be3f13e97ce6df9afc55",
@@ -28,10 +28,10 @@
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
-  "summary": "Exact head e644f9b0 has all hosted required checks green; awaiting independent review",
-  "task_revision": 174,
+  "summary": "AR-1783 merged at 5201a036; post-merge policy and portable provenance rejected GitHub merge committer, requiring supported local-integration forward repair before acceptance",
+  "task_revision": 175,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:06:15+00:00",
+  "updated_at": "2026-10-12T01:06:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -549,3 +549,11 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:06:15+00:00: Recorded command exit 0; command argv SHA-256
   b6a7c16f6fac04887a7890169acf6e61a18106c3a58ea044578c11d5b917cf81.
+
+- 2026-10-12T01:06:26+00:00: Concrete post-merge failure: Repository quality run 38190265292 and
+  Portable protected-main provenance run 38190265359 both rejected merge
+  5201a0369193be5e093396d76bfa4b1c9b55e9db with: protected-main merge committer is not the local
+  integration identity / portable provenance: protected-main merge committer is not the local
+  integration identity. Portable job 114621305936 step 3 used
+  PUSH_BASE=0a2039c448d4ab0ed3c9065c35cf90a77b94db6a and EVENT_HEAD=5201a036. Historical merge is
+  preserved; do not accept/release until a local integration forward repair is green.
