@@ -3,7 +3,10 @@
   "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1779", "AR-1799"],
+  "depends_on": [
+    "AR-1779",
+    "AR-1799"
+  ],
   "id": "AR-1812",
   "next_action": "Promote and claim after coordinator reconciliation; implement the verified AR-1779 receipt resolver and wire AR-1799 authority into ordinary run/sweep dispatch, then complete review, merge, and post-merge verification.",
   "observed_branch": "",
@@ -13,14 +16,21 @@
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "contract-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1812.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1812.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1812.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T00:00:00+00:00",
+  "updated_at": "2026-10-12T10:11:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -31,3 +41,7 @@ receipt and composes them for `run` and `sweep`. Implement that adapter with
 strict identity checks, opaque authority retention, bounded teardown, and
 typed no-fallback failures. Development qualification must use local/mock
 fixtures and must not require a live provider or TLC.
+
+- 2026-10-12T10:11:57+00:00: Promoted P0 prerequisite for AR-1810: wire verified AR-1779 cli2key
+  receipt and AR-1799 opaque authority into ordinary run/sweep dispatch. Development path remains
+  local/mock and non-TLC.
