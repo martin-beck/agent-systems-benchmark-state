@@ -1703,7 +1703,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Recover protected-main merge provenance without rewriting the preserved GitHub merge. |
-| Next action | PR #609 exact head ab4f4c6a81f543e049759d199cca675c7370a1dc is open against main 15c80511; obtain independent exact-head review, wait all required PR checks, then run merge_pr.py with expected base 15c80511 and topic head before protected publication. |
+| Next action | PR #609 exact head ab4f4c6a81f543e049759d199cca675c7370a1dc has all required PR checks terminal-success. Obtain independent exact-head review/approval, then run merge_pr.py with expected base 15c80511, topic head ab4f4c6a, and exact reviewed tree before protected publication. |
 
 
 ## Dependency graph

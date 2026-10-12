@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T13:54:13+00:00",
   "depends_on": [],
   "id": "AR-1815",
-  "next_action": "PR #609 exact head ab4f4c6a81f543e049759d199cca675c7370a1dc is open against main 15c80511; obtain independent exact-head review, wait all required PR checks, then run merge_pr.py with expected base 15c80511 and topic head before protected publication.",
+  "next_action": "PR #609 exact head ab4f4c6a81f543e049759d199cca675c7370a1dc has all required PR checks terminal-success. Obtain independent exact-head review/approval, then run merge_pr.py with expected base 15c80511, topic head ab4f4c6a, and exact reviewed tree before protected publication.",
   "observed_branch": "recovery/ar-1815-provenance",
   "observed_dirty": 0,
   "observed_head": "ab4f4c6a81f543e049759d199cca675c7370a1dc",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T11:54:13+00:00",
+  "updated_at": "2026-10-12T11:54:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -76,3 +76,7 @@ introduce a TLC/model-check dependency for development.
 - 2026-10-12T11:43:39+00:00: Heartbeat by ar1805_postmerge_repair.
 
 - 2026-10-12T11:54:13+00:00: Heartbeat by ar1805_postmerge_repair.
+
+- 2026-10-12T11:54:17+00:00: All PR #609 required checks terminal-success: Rust, emulated AArch64,
+  policy/coverage/supply-chain, credential-free, TUI/PTY, fuzz, mutation, models, Kani, platform,
+  headers, provenance, retained faults, and AWQ shadow evidence. No TLC/live-provider dependency.
