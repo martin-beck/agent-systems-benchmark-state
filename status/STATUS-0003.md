@@ -1202,11 +1202,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1780_workload_qualification_luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution. |
@@ -2316,7 +2316,7 @@ flowchart LR
         AR_1777["AR-1777 - Done"]:::status_done
         AR_1778["AR-1778 - Done"]:::status_done
         AR_1779["AR-1779 - Done"]:::status_done
-        AR_1780["AR-1780 - In progress"]:::status_in_progress
+        AR_1780["AR-1780 - Blocked"]:::status_blocked
         AR_1781["AR-1781 - Done"]:::status_done
         AR_1782["AR-1782 - Done"]:::status_done
         AR_1783["AR-1783 - Done"]:::status_done

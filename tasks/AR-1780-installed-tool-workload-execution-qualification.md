@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1780-installed-tool-workload-execution-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T04:12:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1764",
     "AR-1779",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1780-installed-tool-workload-execution-qualification",
   "observed_dirty": 0,
   "observed_head": "ca494d506135c4a3263bea21621dcc97d817614c",
-  "owner": "ar1780_workload_qualification_luna56",
+  "owner": "",
   "plan": "../plans/AR-1780-installed-tool-workload-execution-qualification.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1780.json",
   "spec_revision": 2,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Installed tool and workload execution qualification",
-  "updated_at": "2026-10-12T02:12:46+00:00",
+  "updated_at": "2026-10-12T02:16:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1780-installed-tool-workload-execution-qualification"
 }
 ---
@@ -120,3 +120,7 @@ hosted qualification absence is not a blocker for this development evidence.
   not misclassify that infrastructure boundary as benchmark failure or claim hosted qualification.
 
 - 2026-10-12T02:12:46+00:00: Heartbeat by ar1780_workload_qualification_luna56.
+
+- 2026-10-12T02:16:51+00:00: Release worker claim as blocked. Focused evidence is green, but full
+  every-ID acquisition/run journey is not executable without the successor controlled local
+  acquisition backend; do not accept or release as done.
