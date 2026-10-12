@@ -12,11 +12,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1819.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make expired-claim recovery fail closed when the exact current session snapshot is unavailable.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Fail-closed expired-claim recovery",
-  "updated_at": "2026-10-12T13:25:00+00:00",
+  "updated_at": "2026-10-12T13:26:02+00:00",
   "worktree_key": ""
 }
 ---
@@ -37,3 +37,5 @@ provider run is required for this development repair.
 
 - 2026-10-12T13:25:00+00:00: Created after AR-1796 expired-claim recovery exposed the
   unsafe snapshotless fallback; AR-1796 history remains immutable evidence.
+
+- 2026-10-12T13:26:02+00:00: Dependencies verified; promote fail-closed expired-claim safety repair.

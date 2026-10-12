@@ -183,7 +183,7 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1799](../tasks/AR-1799-tui-install-rustup-invalid-repair.md): Repair asb tui install rustup/rustc trusted-tool rejection | codex-ar1799-tui-install-rustup-invalid-20261012 | Repair the remaining current-main asb tui install trusted_tool_invalid failure for development rustup/rustc layouts and qualify the real installed entrypoint. | Reproduce the installed-entrypoint failure on the exact current ASB main head, then repair the failing rustup/rustc path and add regression coverage. |
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -191,6 +191,7 @@
 | P0 | [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md): Default usable tool-install command | Unclaimed | Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying. | Independent review and exact-head CI for PR #583 at 7c08cfb0; source-only fallback remains to be resolved before merge. |
 | P0 | [AR-1782](../tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Unclaimed | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | PR #584 rebased onto origin/main 24cb72d; exact remote head 96ea497a. Credential-free workload matrix, diagnostic contract, provenance, resolver, and clippy focused gates pass. Poll fresh exact-head CI; do not merge. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release. |
+| P0 | [AR-1819](../tasks/AR-1819-expired-claim-recovery-safety.md): Fail-closed expired-claim recovery | Unclaimed | Make expired-claim recovery fail closed when the exact current session snapshot is unavailable. | Implement fail-closed expired-claim recovery, add focused positive and negative coverage, then independently review and integrate the exact signed head. |
 
 ### Blocked (85)
 
@@ -282,7 +283,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (88)
+### Planned (87)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -333,7 +334,6 @@
 | P0 | [AR-1780](../tasks/AR-1780-installed-tool-workload-execution-qualification.md): Installed tool and workload execution qualification | Unclaimed | End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution. | Qualify every development external workload, after installation and selection, through actual run, sweep, report, and comparison flows. |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Select every development external workload and prove ASB uses its exact project-local identity end to end. | Integrate every development-supported installed workload bundle into selection and prove full run/sweep/report/compare consumes its exact recorded identity. |
 | P0 | [AR-1797](../tasks/AR-1797-cli2key-live-runtime-wiring.md): Wire cli2key sidecar into live benchmark execution | Unclaimed | Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark. | Wire the verified project-local cli2key bridge into the runtime-owned sidecar launch path, then qualify fake and opt-in live benchmark execution without exposing credentials. |
-| P0 | [AR-1819](../tasks/AR-1819-expired-claim-recovery-safety.md): Fail-closed expired-claim recovery | Unclaimed | Make expired-claim recovery fail closed when the exact current session snapshot is unavailable. | Implement fail-closed expired-claim recovery, add focused positive and negative coverage, then independently review and integrate the exact signed head. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
