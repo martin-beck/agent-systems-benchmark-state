@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T07:26:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1729",
     "AR-1731"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "1213928b8724cfc740404397b9e14161f56367cc",
-  "owner": "ar1799-authority-luna56",
+  "owner": "",
   "plan": "../plans/AR-1799-cli2key-runtime-authority-seam.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1799.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T05:14:49+00:00",
+  "updated_at": "2026-10-12T05:14:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -504,3 +504,7 @@ issue an opaque live attempt to the Codex adapter.
   hosted checks SUCCESS at exact reviewed head 1213928b; protected origin/main fetched to e0e44a7d
   and post-merge exact-main make test completed exit 0 with no remaining test process. Receipt
   committed in state.
+
+- 2026-10-12T05:14:53+00:00: Released done after PR #601 non-squash merge e0e44a7d, all 15 hosted
+  checks green at exact 1213928b, exact-main post-merge make test exit 0, and receipt
+  quality/AR-1799-postmerge-receipt.txt.
