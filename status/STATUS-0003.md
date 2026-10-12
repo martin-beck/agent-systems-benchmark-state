@@ -1476,7 +1476,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
-| Next action | Implement runtime-only receipt-to-Cli2KeySidecar bootstrap and opaque LiveProviderAttempt issuance; add hostile lifecycle matrix before CLI integration. |
+| Next action | Implement receipt validation, sidecar bootstrap, opaque attempt issuance, and lifecycle tests. |
 
 ### AR-1800 — Controlled local workload acquisition backend
 

@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Implement runtime-only receipt-to-Cli2KeySidecar bootstrap and opaque LiveProviderAttempt issuance; add hostile lifecycle matrix before CLI integration.",
+  "next_action": "Implement receipt validation, sidecar bootstrap, opaque attempt issuance, and lifecycle tests.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "6761a6d0bcd5d5982c92176f4adf687696de90d6",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:11:53+00:00",
+  "updated_at": "2026-10-12T04:20:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -58,3 +58,7 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:11:50+00:00: Recorded command exit 0; command argv SHA-256
   2cadf8b93784f2332f913a0010756a6f89279d776e4434fc0d7fe5cf1de23126.
+
+- 2026-10-12T04:20:07+00:00: Implementation checkpoint: claim active; inspected cli2key sidecar,
+  opaque LiveProviderAttempt, and CLI dispatch APIs. Next: add receipt-bound runtime bootstrap and
+  hostile lifecycle tests.
