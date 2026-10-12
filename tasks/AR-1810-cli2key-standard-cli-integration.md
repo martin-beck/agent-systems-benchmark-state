@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T12:01:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1729",
     "AR-1731",
@@ -17,7 +17,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "ar1810-cli2key-luna56",
+  "owner": "",
   "plan": "../plans/AR-1810-cli2key-standard-cli-integration.md",
   "priority": "P0",
   "schema_version": 1,
@@ -31,11 +31,11 @@
   },
   "spec_ref": "specs/AR-1810.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Complete cli2key Standard CLI Integration",
-  "updated_at": "2026-10-12T10:02:03+00:00",
+  "updated_at": "2026-10-12T10:02:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1810-cli2key-standard-cli"
 }
 ---
@@ -75,3 +75,9 @@ dispatch.
   declares worktree_key agent-systems-benchmark-ar-1810-cli2key-standard-cli but branch is empty;
   bind-worktree refuses non-empty legacy metadata, while handoffctl run refuses product mutations
   without declared branch. No product changes made and no gate weakened.
+
+- 2026-10-12T10:02:33+00:00: Released open: handoffctl-only metadata repair is required. Task has
+  prefilled worktree_key agent-systems-benchmark-ar-1810-cli2key-standard-cli but empty branch;
+  bind-worktree rejects non-empty legacy metadata and no supported handoffctl command clears it. No
+  product worktree or implementation mutation was made. Coordinator must repair branch/worktree
+  identity durably before re-claim.
