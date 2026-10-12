@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T13:26:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1773"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "0fec6465dbb1934904fef8d9f79dd1c565c661fc",
-  "owner": "ar1805_postmerge_repair",
+  "owner": "",
   "plan": "../plans/AR-1805-cli-surface-inventory-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1805.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Independent exact-head review accepted PR #608 at 0fec6465.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:27:13+00:00",
+  "updated_at": "2026-10-12T11:38:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -295,3 +295,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   failed solely because GitHub Web Flow merge 15c80511 committer is GitHub <noreply@github.com>;
   merge parents/tree and reviewed evidence are preserved. Existing AR-1794 local merge tool is the
   authorized repair path; no gate weakening or history rewrite.
+
+- 2026-10-12T11:38:36+00:00: Post-merge provenance recovery is transferred to successor AR-1815;
+  preserved merge 15c80511 and exact-main failures remain documented.
