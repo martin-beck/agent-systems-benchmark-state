@@ -9,7 +9,7 @@
   "id": "AR-1775",
   "next_action": "Implement the sole configurable output router, generated project output defaults, and four-level selection after the output contract is accepted.",
   "observed_branch": "feature/ar-1775-configurable-output-router-and-levels",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "6b5040e9366ac8f22db5a9fac84e634ff3ad0be4",
   "owner": "ar1775_output_router_luna56",
   "plan": "../plans/AR-1775-configurable-output-router-and-levels.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:11:48+00:00",
+  "updated_at": "2026-10-12T00:11:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
