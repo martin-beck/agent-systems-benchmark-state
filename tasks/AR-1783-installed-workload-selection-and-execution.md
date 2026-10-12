@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Independent review recorded for PR #596 exact head 506de984af222659b3b48824cef7d34b15118862; run approved integration merge against base 5201a0369193be5e093396d76bfa4b1c9b55e9db/tree c2ebca881ea7c31946d20ea18e0cf676b851b22e, verify exact protected main, then accept/release.",
+  "next_action": "Wait for all PR #596 checks at db9b1fb8 and obtain fresh independent review bound to db9b1fb8/tree 852f5b4f; then integrate only with tools/integration/merge_pr.py against base 98327152, verify exact main, accept/release",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "db9b1fb8f9070e2c93937bf56f8557903397e98b",
@@ -28,10 +28,10 @@
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
-  "summary": "Repair PR #596 exact head 506de984 has all hosted required checks green; independent review remains required before local integration",
-  "task_revision": 236,
+  "summary": "PR #596 repaired against current protected main 98327152 at exact head db9b1fb8; prior 506de984 review invalidated and fresh checks/review required",
+  "task_revision": 237,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:31:42+00:00",
+  "updated_at": "2026-10-12T01:32:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -738,3 +738,10 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:31:42+00:00: Recorded command exit 0; command argv SHA-256
   61a5ea6ddf08a3e2a7086ea9cd731e1d5bb07769bc5efa205ec7e8229d81fa09.
+
+- 2026-10-12T01:32:11+00:00: Protected main advanced from 5201a036 to 98327152 via PR #597 while
+  AR-1783 review was pending. Stale 506de984 approval is intentionally not reused. Repair topic now
+  has signed+DCO add5690b (parents 506de984,98327152) and signed+DCO db9b1fb8 alignment, exact tree
+  852f5b4ff6fa5f21a7120298e167e5a97487aa7a matching current main; local repository policy all checks
+  passed. The first attempted sync ae71fb35 lacked Signed-off-by and was discarded; replacement
+  db9b1fb8 passes policy.

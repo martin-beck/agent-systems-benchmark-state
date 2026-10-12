@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1783](tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Repair PR #596 exact head 506de984 has all hosted required checks green; independent review remains required before local integration | Independent review recorded for PR #596 exact head 506de984af222659b3b48824cef7d34b15118862; run approved integration merge against base 5201a0369193be5e093396d76bfa4b1c9b55e9db/tree c2ebca881ea7c31946d20ea18e0cf676b851b22e, verify exact protected main, then accept/release. | ar1783_workload_selection_luna56 |
+| P0 | [AR-1783](tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | PR #596 repaired against current protected main 98327152 at exact head db9b1fb8; prior 506de984 review invalidated and fresh checks/review required | Wait for all PR #596 checks at db9b1fb8 and obtain fresh independent review bound to db9b1fb8/tree 852f5b4f; then integrate only with tools/integration/merge_pr.py against base 98327152, verify exact main, accept/release | ar1783_workload_selection_luna56 |
 | P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope. | ar1796-reconcile-candidate-luna56 |
 
 ## Blocked

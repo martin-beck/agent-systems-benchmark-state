@@ -1251,8 +1251,8 @@
 | Owner | ar1783_workload_selection_luna56 |
 | Parent | None |
 | Children | None |
-| Summary | Repair PR #596 exact head 506de984 has all hosted required checks green; independent review remains required before local integration |
-| Next action | Independent review recorded for PR #596 exact head 506de984af222659b3b48824cef7d34b15118862; run approved integration merge against base 5201a0369193be5e093396d76bfa4b1c9b55e9db/tree c2ebca881ea7c31946d20ea18e0cf676b851b22e, verify exact protected main, then accept/release. |
+| Summary | PR #596 repaired against current protected main 98327152 at exact head db9b1fb8; prior 506de984 review invalidated and fresh checks/review required |
+| Next action | Wait for all PR #596 checks at db9b1fb8 and obtain fresh independent review bound to db9b1fb8/tree 852f5b4f; then integrate only with tools/integration/merge_pr.py against base 98327152, verify exact main, accept/release |
 
 ### AR-1784 — Command dependency registry and preflight
 
