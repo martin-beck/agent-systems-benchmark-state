@@ -36,7 +36,7 @@
   "task_revision": 7,
   "title": "Complete cli2key Standard CLI Integration",
   "updated_at": "2026-10-12T10:04:39+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1810-cli2key-standard-cli"
+  "worktree_key": ""
 }
 ---
 
