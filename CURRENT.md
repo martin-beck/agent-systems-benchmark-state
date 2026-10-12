@@ -8,7 +8,12 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1805](tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Independent exact-head review accepted PR #608 at 0fec6465. | Create and claim a narrowly scoped forward-only provenance-recovery successor for PR #608; use tools/integration/merge_pr.py from clean exact base 5c843a12 and reviewed topic 0fec6465, publish signed local merge, then watch all exact-main gates. | ar1805_postmerge_repair |
-| P0 | [AR-1812](tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Repair workspace gate failure: crates/asb-cli/tests/diagnostic_contract.rs rejects new lib.rs producer line identities after cli2key wiring; update the reviewed call-site identity contract (without weakening diagnostics), remove generated handoffctl __pycache__, rerun the failing test and full workspace gates. | ar1812-replacement-luna56 |
+
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1812](tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Repair workspace gate failure: crates/asb-cli/tests/diagnostic_contract.rs rejects new lib.rs producer line identities after cli2key wiring; update the reviewed call-site identity contract (without weakening diagnostics), remove generated handoffctl __pycache__, rerun the failing test and full workspace gates. | - |
 
 ## Blocked
 

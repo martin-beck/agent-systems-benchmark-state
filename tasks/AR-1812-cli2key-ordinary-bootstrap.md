@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "checkpoint_commit": "5b71c956ea88788c3b303425331e0682c8dbc241",
-  "claim_expires": "2026-10-12T13:30:37+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1779",
     "AR-1799",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "5c75c1a9fe36bb5f08c3cb4ccc20f213d496b65e",
-  "owner": "ar1812-replacement-luna56",
+  "owner": "",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1812.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:30:37+00:00",
+  "updated_at": "2026-10-12T11:32:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -164,3 +164,7 @@ fixtures and must not require a live provider or TLC.
   contract.
 
 - 2026-10-12T11:30:37+00:00: Heartbeat by ar1812-replacement-luna56.
+
+- 2026-10-12T11:32:14+00:00: Worker interrupted after heartbeat-only interval with no repair
+  progress; preserved deterministic diagnostic-contract failure and implementation commit for
+  replacement.
