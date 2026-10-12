@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T11:54:17+00:00",
+  "updated_at": "2026-10-12T11:56:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -80,3 +80,6 @@ introduce a TLC/model-check dependency for development.
 - 2026-10-12T11:54:17+00:00: All PR #609 required checks terminal-success: Rust, emulated AArch64,
   policy/coverage/supply-chain, credential-free, TUI/PTY, fuzz, mutation, models, Kani, platform,
   headers, provenance, retained faults, and AWQ shadow evidence. No TLC/live-provider dependency.
+
+- 2026-10-12T11:56:56+00:00: Recorded command exit 0; command argv SHA-256
+  6c90071b197ea99a41c00a564ecc1e3fd1178e79785e841c9751e7f4499cdea8.
