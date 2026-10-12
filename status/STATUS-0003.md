@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Run full make test after macro compile repair, then default-parallel asb-cli gate. |
+| Next action | Make test failed on non-test macro availability; declare test_fixture_semaphore module unconditionally with cfg(test) internals, then run cargo check and full make test. |
 
 
 ## Dependency graph

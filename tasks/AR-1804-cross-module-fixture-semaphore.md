@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Run full make test after macro compile repair, then default-parallel asb-cli gate.",
+  "next_action": "Make test failed on non-test macro availability; declare test_fixture_semaphore module unconditionally with cfg(test) internals, then run cargo check and full make test.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 2,
   "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:53:36+00:00",
+  "updated_at": "2026-10-12T02:53:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -187,3 +187,11 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:53:36+00:00: Recorded command exit 2; command argv SHA-256
   3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
+
+- 2026-10-12T02:53:48+00:00: Exact full make test failure after test-only macro repair: non-test
+  Clippy/check compilation failed at lib.rs:150 with error E0433 could not find f in crate root;
+  cargo reported could not compile asb-cli, make: *** [Makefile:111: test] Error 101. Cause: the
+  macro was exported from a module declared only under cfg(test), but make test first builds
+  non-test targets. This is a compile/setup boundary failure, not a qualification failure. Repair is
+  to declare the module unconditionally while cfg-gating only semaphore implementation internals;
+  macro expansion remains no-op outside tests.
