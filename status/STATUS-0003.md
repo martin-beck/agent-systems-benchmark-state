@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Repair parallel semaphore regression tests to tolerate unrelated bounded fixture contenders by using bounded recovery wait; rerun focused module tests before default-parallel. |
+| Next action | Run full make test and default-parallel again after bounded recovery assertions; then create signed clean commit and request independent review. |
 
 
 ## Dependency graph
