@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T02:29:45+00:00",
+  "updated_at": "2026-10-12T02:31:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -97,3 +97,6 @@ or pin the probe without weakening bounded execution or privacy contracts.
   failure passed in this retry. This confirms parallel-load flakiness/resource interference rather
   than a stable AR-1801 probe regression; PR/CI/merge remain blocked pending deterministic full
   gate.
+
+- 2026-10-12T02:31:17+00:00: Recorded command exit 0; command argv SHA-256
+  797b3cd4f404a3d8f83c3f2f3727163c3381a0f61c9442cef98798a4e38600df.
