@@ -1110,7 +1110,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
-| Next action | Focused workflow_transcript passed 3/3, but handoffctl post-reconcile is blocked by unrelated state validation: AR-1809 has unknown evidence class integration-test and active AR-1796 retry has oversized TLC files. Wait for coordinator state repair/AR-1796 cleanup; then rerun non-formal gates through handoffctl. Do not run TLC or formal gates. |
+| Next action | Independent review and exact-head PR #605 checks at f78a1006; merge only after review and required non-formal checks pass. UD-1802 excludes TLC/TLA+/model-check/formal gates. |
 
 ### AR-1774 — Status and progress completeness CI
 
