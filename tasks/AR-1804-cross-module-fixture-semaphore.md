@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Retry PR #598 with repository-supported merge method after squash rejection; then verify exact merged main and post-merge gates.",
+  "next_action": "Verify origin/main exact merged head and run post-merge acceptance/doctor; then accept and release AR-1804.",
   "observed_branch": "main",
   "observed_dirty": 0,
   "observed_head": "6761a6d0bcd5d5982c92176f4adf687696de90d6",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:29:02+00:00",
+  "updated_at": "2026-10-12T03:29:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -562,3 +562,8 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:28:59+00:00: Recorded command exit 0; command argv SHA-256
   eef77fba22b608608cd2cf890f5d1a9ce00eb93adc0bfad998041626c8137d33.
+
+- 2026-10-12T03:29:32+00:00: PR #598 merged with repository-supported --merge method after recorded
+  squash rejection. Exact PR head d625c822 was fully green; merge operation fast-forwarded product
+  worktree to main observed head 6761a6d0bcd5d5982c92176f4adf687696de90d6. Merge policy/setup error
+  is resolved; no qualification failure.

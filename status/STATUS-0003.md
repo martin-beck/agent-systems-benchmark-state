@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Retry PR #598 with repository-supported merge method after squash rejection; then verify exact merged main and post-merge gates. |
+| Next action | Verify origin/main exact merged head and run post-merge acceptance/doctor; then accept and release AR-1804. |
 
 
 ## Dependency graph
