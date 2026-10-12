@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent review found a full integration-gate regression at exact PR head 5cb931f5.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:08:10+00:00",
+  "updated_at": "2026-10-12T11:08:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -237,3 +237,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   executable_public_family_golden_is_inventory_complete_and_privacy_safe: expected golden family
   count 28 but inventory has 29 after adding workload. Hosted checks remain pending; no TLC run.
   Review remains changes requested; do not merge.
+
+- 2026-10-12T11:08:30+00:00: Recorded command exit 0; command argv SHA-256
+  6236eb7675e97867f72179ae41293a169904d9e9b0146b06aeb39eb3ff92c36c.
