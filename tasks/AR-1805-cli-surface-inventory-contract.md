@@ -10,7 +10,7 @@
   "next_action": "PR #608 opened at exact head 01631b5bbe14ba856a8993cc7fb8c4be6aa76fcc. Await independent review and all non-TLC hosted checks, then protected exact-head merge and post-merge verification.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
-  "observed_head": "459804d5f10ec0f3ef21870cd95a169b65f95f64",
+  "observed_head": "a0d780b0f818f6468bedf07702fc83cc54eebef2",
   "owner": "asb-queue-next-luna56",
   "plan": "../plans/AR-1805-cli-surface-inventory-contract.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one complete machine-checked inventory of every public ASB command and subcommand surface.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:00:37+00:00",
+  "updated_at": "2026-10-12T11:00:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
