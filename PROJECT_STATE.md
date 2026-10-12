@@ -35,13 +35,13 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38193200588 | `ca494d506135` | push | Cross-repository development broker qualification | completed:success |
 | 38193200452 | `ca494d506135` | push | Fault assurance | completed:success |
-| 38193200435 | `ca494d506135` | push | Emulated aarch64 portability | in_progress:- |
+| 38193200435 | `ca494d506135` | push | Emulated aarch64 portability | completed:success |
 | 38193200434 | `ca494d506135` | push | Formal assurance | completed:success |
 | 38193200427 | `ca494d506135` | push | Credential-free benchmark path | completed:success |
-| 38193200422 | `ca494d506135` | push | Repository quality | in_progress:- |
+| 38193200422 | `ca494d506135` | push | Repository quality | completed:success |
 | 38193200410 | `ca494d506135` | push | Portable protected-main provenance | completed:success |
 | 38193200407 | `ca494d506135` | push | Hosted portability and native qualification | completed:success |
-| 38193200393 | `ca494d506135` | push | Rust verification | in_progress:- |
+| 38193200393 | `ca494d506135` | push | Rust verification | completed:success |
 | 38193200385 | `ca494d506135` | push | Huawei MIT source headers | completed:success |
 | 38192354018 | `aca3f79b3256` | pull_request | Fault assurance | completed:success |
 | 38192354015 | `aca3f79b3256` | pull_request | Formal assurance | completed:success |
