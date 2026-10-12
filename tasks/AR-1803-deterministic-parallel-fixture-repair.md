@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Obtain fresh independent ACCEPT for 5a06ac1f; rerun hosted provenance after merge-ref synchronization; wait all checks green before supported non-squash merge.",
+  "next_action": "Repair PR topology by rebuilding a clean signed topic from current main with only reviewed discovery diff; run gates, obtain fresh independent ACCEPT, force-update PR #599 and rerun hosted checks.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "5a06ac1fe6a14bb9d0963938a31a5e7cb906ec53",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 148,
+  "task_revision": 149,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:22:27+00:00",
+  "updated_at": "2026-10-12T04:22:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -498,3 +498,12 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T04:22:27+00:00: Recorded command exit 0; command argv SHA-256
   155f86e044af9dedec56375b5afb04b4f7f0e4d65ae7bba0511a6e391ec919ae.
+
+- 2026-10-12T04:22:51+00:00: Hosted provenance rerun exit 1 reproduced exact stderr: portable
+  provenance: pull-request synchronization merge must be the topic tip. Inputs
+  EVENT_HEAD=5a06ac1fe6a14bb9d0963938a31a5e7cb906ec53,
+  PR_BASE=1ce208b4e5738b9608b3f2d454d0a6a0dfbeb323,
+  PUSH_BASE=14471899c4271cf32ef172c76f5141998a9536b4, refs/pull/599/merge. Local topology inspection
+  shows 5a06ac1f includes prior synchronization merge 2cb78a3a in the base-to-head range, so this is
+  a real PR provenance topology failure, not a product test failure. Rebuild a clean topic from
+  current main while preserving the reviewed net product diff, then rerun gates/review.
