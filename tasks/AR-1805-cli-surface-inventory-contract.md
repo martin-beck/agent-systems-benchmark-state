@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one complete machine-checked inventory of every public ASB command and subcommand surface.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T10:48:10+00:00",
+  "updated_at": "2026-10-12T10:48:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -57,3 +57,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 
 - 2026-10-12T10:48:10+00:00: Recorded command exit 0; command argv SHA-256
   a1159e9df3670d549d04524532629f5477ceb7deec9b45e47e8c009506ecb2c8.
+
+- 2026-10-12T10:48:19+00:00: Recorded command exit 0; command argv SHA-256
+  3aa193679a1f3bbbcda65c494e479eac70a0362107e46f55351a6fe0a3ab44bf.
