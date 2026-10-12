@@ -225,13 +225,18 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | ar1811-formal-separation-luna56-review | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. | Obtain independent re-review of 21a8b4c16c on PR #120; merge only after approval, then verify exact merge head and post-merge checks without TLC. |
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1773-catalog-repair-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Independent review complete: PR #605 exact head f78a1006 is signed/DCO/privacy clean; focused step_progress 4/4 passes. human_cli one outcome-matrix failure reproduces on parent 1494e474 with unchanged expected status (pre-existing environment failure); retain hosted/full gate evidence and do not merge until integration lane reconciles exact-head results. |
 | P0 | [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md): Development/formal workflow separation | ar1811-formal-separation-luna56 | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. | Promote and implement the workflow separation on a clean exact-main worktree; ordinary development PRs must not invoke TLC/Alloy, while the final-delivery PR lane retains the sole formal execution gate. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. | Obtain independent re-review of 21a8b4c16c on PR #120; merge only after approval, then verify exact merge head and post-merge checks without TLC. |
 
 ### Blocked (84)
 
