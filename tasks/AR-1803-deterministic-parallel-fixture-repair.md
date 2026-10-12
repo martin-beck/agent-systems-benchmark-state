@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T04:33:24+00:00",
+  "claim_expires": "2026-10-12T04:40:01+00:00",
   "depends_on": [
     "AR-1762"
   ],
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T02:39:57+00:00",
+  "updated_at": "2026-10-12T02:40:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -82,3 +82,5 @@ as the affected successor linkage and evidence source.
   429 asb-cli lib tests pass with --test-threads=2 and repository Makefile intentionally defaults
   RUST_TEST_THREADS=1 because process/state fixtures must not race. Running the complete supported
   make test gate now; no product gate is claimed until it exits.
+
+- 2026-10-12T02:40:01+00:00: Heartbeat by ar1803_parallel_fixture_luna56.
