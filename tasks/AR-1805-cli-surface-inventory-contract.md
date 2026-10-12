@@ -7,7 +7,7 @@
     "AR-1773"
   ],
   "id": "AR-1805",
-  "next_action": "Proceed with protected exact-head merge via handoffctl, then verify post-merge main and reconcile AR-1805.",
+  "next_action": "PR #608 merged as 15c80511, but exact-main post-merge Policy/coverage and Portable protected-main provenance failed because GitHub merge committer is not local integration identity. Preserve merge; create narrowly scoped coordinator repair for merge-identity/provenance contract, then rerun exact-main gates. Other post-merge workflows remain in progress.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "0fec6465dbb1934904fef8d9f79dd1c565c661fc",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent exact-head review accepted PR #608 at 0fec6465.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:23:15+00:00",
+  "updated_at": "2026-10-12T11:24:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -278,3 +278,10 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   --check and changed-file privacy scan clean. Full cargo test -p asb-cli --tests --offline passes.
   All hosted PR checks terminal-success. No TLC/model checks run locally. Review disposition
   accepted; merge may proceed through protected exact-head workflow.
+
+- 2026-10-12T11:24:09+00:00: Post-merge verification at 2026-10-12T13:24Z: PR #608 exact head
+  0fec6465 merged onto base 5c843a12 as 15c80511. AArch64 and pre-merge checks were green.
+  Exact-main runs 38242303503 (Repository quality) and 38242303428 (Portable protected-main
+  provenance) failed with identical policy error: protected-main merge committer is not the local
+  integration identity. This is a coordinator/release-identity gate failure, not a product test
+  failure; no gate weakened and no force action taken.
