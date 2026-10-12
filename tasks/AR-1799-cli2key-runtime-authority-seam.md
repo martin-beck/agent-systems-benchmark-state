@@ -17,20 +17,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:3ac9c4ef277b89f284fdfbcb57fa4c0003fbf8450e9a7e7ea163c03393ea199d",
+    "evidence_ref": "quality/AR-1799-postmerge-receipt.txt",
     "spec_ref": "specs/AR-1799.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1799.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T05:14:34+00:00",
+  "updated_at": "2026-10-12T05:14:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -499,3 +499,8 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T05:14:34+00:00: Recorded command exit 0; command argv SHA-256
   8cdff42ae6ba8c2d48bf7a191aace34f26a0f3db950808ab72f303aa57e21bda.
+
+- 2026-10-12T05:14:49+00:00: Accepted against PR #601 non-squash merge e0e44a7d. All 15 required
+  hosted checks SUCCESS at exact reviewed head 1213928b; protected origin/main fetched to e0e44a7d
+  and post-merge exact-main make test completed exit 0 with no remaining test process. Receipt
+  committed in state.
