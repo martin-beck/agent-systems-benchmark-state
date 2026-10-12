@@ -1689,7 +1689,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance. |
-| Next action | Re-evaluate PR #606 exact-head mergeability after ruleset repair; merge only with all ordinary checks green, then verify exact-main post-merge workflows and close AR-1814. |
+| Next action | Monitor exact-main post-merge workflows for signed merge 5a6c5477; after all terminal success, accept/release AR-1814 with ruleset before/after receipt and doctor evidence. |
 
 
 ## Dependency graph

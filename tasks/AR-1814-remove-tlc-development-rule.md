@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T12:23:00+00:00",
   "depends_on": [],
   "id": "AR-1814",
-  "next_action": "Re-evaluate PR #606 exact-head mergeability after ruleset repair; merge only with all ordinary checks green, then verify exact-main post-merge workflows and close AR-1814.",
+  "next_action": "Monitor exact-main post-merge workflows for signed merge 5a6c5477; after all terminal success, accept/release AR-1814 with ruleset before/after receipt and doctor evidence.",
   "observed_branch": "feature/ar-1814-ruleset-repair",
   "observed_dirty": 0,
   "observed_head": "07c590e712df11e555228abf1b9de4add3510d4f",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Remove stale TLC development ruleset requirement",
-  "updated_at": "2026-10-12T10:25:13+00:00",
+  "updated_at": "2026-10-12T10:25:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1814-ruleset-repair"
 }
 ---
@@ -61,3 +61,7 @@ the remaining required checks.
 
 - 2026-10-12T10:25:11+00:00: Recorded command exit 0; command argv SHA-256
   9b45075adf806d00827a705d18eb8c380a615a255dfcc7c53d3aa32ff9bb1164.
+
+- 2026-10-12T10:25:26+00:00: Ruleset minimal repair applied and verified; PR #606 merged via signed
+  exact-tree merge 5a6c5477cd171606da3aaa0cae9950453ea8dc5c (base 07c590e7, topic d9972679, tree
+  7cf7d050). Post-merge workflows queued/running; no TLC was run.
