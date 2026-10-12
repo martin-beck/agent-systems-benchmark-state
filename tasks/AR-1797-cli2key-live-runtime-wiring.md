@@ -21,19 +21,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "environmental",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:45715f0c82557911e2f4ba510b2d931a7c879d1f324a302619259e79206b8188",
+    "evidence_ref": "independent-review:AR-1797:fd815d5e4de7e6399ee27db65e7b5723b224eddd",
     "spec_ref": "specs/AR-1797.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1797.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:39:38+00:00",
+  "updated_at": "2026-10-12T05:43:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -246,3 +246,9 @@ path and records only redacted provenance and typed outcome evidence.
   plus exact generated provenance hash update. Serial make test and env RUST_TEST_THREADS=8 make
   test both green; no live provider used. Independent exact-head review is now the only gate before
   publication.
+
+- 2026-10-12T05:43:16+00:00: Independent exact-head review ACCEPT: clean two-file diff at fd815d5e;
+  commit SSH-signed with matching DCO. Runtime authority wrapper retains authority through dispatch
+  then drops it; focused cli2key no-fallback, provenance hash, and parallel-safety tests pass.
+  Serial make test passed fully; prior recorded RUST_TEST_THREADS=8 make test passed fully (433
+  asb-cli tests and workspace/doc tests). No publish or merge performed; hosted CI remains required.
