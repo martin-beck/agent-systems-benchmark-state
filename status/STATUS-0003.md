@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Commit the complete semaphore/provenance repair as signed DCO, then run default-parallel asb-cli gate and checkpoint exact head for review. |
+| Next action | Checkpoint exact signed head a8507d19, perform independent review, then hosted PR/CI if infrastructure is available. |
 
 
 ## Dependency graph
