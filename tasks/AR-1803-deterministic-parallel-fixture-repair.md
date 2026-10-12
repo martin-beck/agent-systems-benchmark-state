@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 173,
+  "task_revision": 174,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:29:55+00:00",
+  "updated_at": "2026-10-12T04:30:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -574,3 +574,6 @@ as the affected successor linkage and evidence source.
   547e42dd8b376a300f65cba8bb2b29b28f3fc2d5. Reviewer compared clean-topic net diff against current
   main and confirmed reviewed discovery timeout/fixture guards, preserved authority/catalog
   contracts, and green focused/default-parallel/make gates. Publication may proceed.
+
+- 2026-10-12T04:30:04+00:00: Recorded command exit 0; command argv SHA-256
+  9c66f82640bd8c5783ed74746e334404e0898116f74cdd71c4d8ca25df3f69a2.
