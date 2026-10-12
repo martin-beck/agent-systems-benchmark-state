@@ -20,7 +20,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. |
-| Next action | Post-merge receipt generated for ASB 1494e474 paired with TUI 60ab530d; run full workspace gate, commit receipt, then accept/release after doctor. Reconcile gh API failure separately. |
+| Next action | No further action; AR-1689 is complete and released. |
 
 ### AR-1690 — ASB development-channel current-main materializer
 
