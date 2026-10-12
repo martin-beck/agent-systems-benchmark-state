@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T02:00:59+00:00",
   "depends_on": [
     "AR-1763",
     "AR-1764",
@@ -13,7 +13,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1783_workload_selection_luna56",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,9 +27,9 @@
   },
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Select every development external workload and prove ASB uses its exact project-local identity end to end.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Installed workload selection and execution",
   "updated_at": "2026-10-12T00:00:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
@@ -49,3 +49,5 @@ needed; lack of production authorization or hosted qualification must not block
 the suite from this end-to-end path.
 
 - 2026-10-12T00:00:59+00:00: Dependencies are now complete; open AR-1783 for implementation.
+
+- 2026-10-12T00:00:59+00:00: Claimed by ar1783_workload_selection_luna56.
