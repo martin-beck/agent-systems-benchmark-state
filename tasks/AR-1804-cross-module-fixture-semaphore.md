@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Run full make test after reviewed catalog restoration; then default-parallel asb-cli and commit/checkpoint clean signed head for re-review.",
+  "next_action": "Create one signed DCO repair commit, then run default-parallel asb-cli 429-test gate and request independent exact-head review.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 4,
   "observed_head": "a8507d19e1998f2525462b9297c775ccac522095",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:05:46+00:00",
+  "updated_at": "2026-10-12T03:05:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -325,3 +325,9 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:05:46+00:00: Recorded command exit 0; command argv SHA-256
   3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
+
+- 2026-10-12T03:05:58+00:00: Full make test after catalog restoration exits 0. It passed fmt,
+  Clippy, all workspace tests, restored archive regression, semaphore positive/hostile tests,
+  asb-cli 429 tests, diagnostic contract 9/9, workflow/provenance, integration gates, and rustdoc.
+  The reviewed AR-1800/AR-1802 catalog is restored and no gate failures remain. Working tree still
+  needs signed commit.

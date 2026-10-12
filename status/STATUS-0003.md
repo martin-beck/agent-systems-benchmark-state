@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Run full make test after reviewed catalog restoration; then default-parallel asb-cli and commit/checkpoint clean signed head for re-review. |
+| Next action | Create one signed DCO repair commit, then run default-parallel asb-cli 429-test gate and request independent exact-head review. |
 
 
 ## Dependency graph
