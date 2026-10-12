@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:58:54+00:00",
+  "updated_at": "2026-10-12T04:00:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -288,3 +288,6 @@ remains explicitly unaccepted and blocked until this repair is complete.
   matrix remains green with 433/433 lib and all integration binaries. Diagnostic catalog line
   mapping, fixture authority, source checkout guard, and provenance digest are all covered. No gate
   waived; ready for independent review.
+
+- 2026-10-12T04:00:42+00:00: Recorded command exit 0; command argv SHA-256
+  955e8c50617bf944bdea7a981c2ece6ba1f318fa8675d0663b92bdd3592bad43.
