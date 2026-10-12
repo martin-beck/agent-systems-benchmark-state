@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:11:09+00:00",
+  "updated_at": "2026-10-12T04:11:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -394,3 +394,6 @@ as the affected successor linkage and evidence source.
   receipts record full make/default-parallel gates green; diagnostic contract and hostile semaphore
   tests green. No privacy, credential, fallback, or unbounded-evidence issues found. Candidate is
   ready for force-with-lease PR update and hosted exact-head CI.
+
+- 2026-10-12T04:11:33+00:00: Recorded command exit 0; command argv SHA-256
+  3fbc4ae08dd8d519d6875f2bd6762747fef3a0281bc287ff08f6360b37a7c2d1.
