@@ -60,7 +60,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1782-verified-asb-workload-installation` | `feature/ar-1782-verified-asb-workload-installation` | `3be3029d7a1d` | 0 | behind 42, ahead 0 |
 | `agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution` | `feature/ar-1783-installed-workload-selection-and-execution` | `aca3f79b3256` | 0 | behind 13, ahead 0 |
 | `agent-systems-benchmark-ar-1798-pinned-source-checkout-acquisition` | `feature/ar-1798-pinned-source-checkout-acquisition` | `55a789348f6f` | 0 | behind 78, ahead 0 |
-| `agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam` | `feature/ar-1799-cli2key-runtime-authority-seam` | `a9722277283c` | 0 | behind 5, ahead 2 |
+| `agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam` | `feature/ar-1799-cli2key-runtime-authority-seam` | `a9722277283c` | 1 | behind 5, ahead 2 |
+| changed files | - | - | - | `crates/asb-runtime/src/launch_factory.rs` |
 | `agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend` | `feature/ar-1800-controlled-local-workload-acquisition-backend` | `b72da478631f` | 0 | behind 12, ahead 3 |
 | `agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation` | `feature/ar-1801-tool-discovery-cargo-fixture-isolation` | `c20bb7bb4448` | 0 | behind 14, ahead 1 |
 | `agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority` | `feature/ar-1802-controlled-workload-matrix-and-fixture-authority` | `c9ea7246e6d4` | 0 | behind 1, ahead 0 |
