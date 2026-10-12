@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T04:33:07+00:00",
   "depends_on": [
     "AR-1762"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1803_parallel_fixture_luna56",
   "plan": "../plans/AR-1803-deterministic-parallel-fixture-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,9 +25,9 @@
   },
   "spec_ref": "specs/AR-1803.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Deterministic parallel fixture repair",
   "updated_at": "2026-10-12T02:33:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
@@ -44,3 +44,5 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T02:33:07+00:00: Dependency-safe promotion: AR-1762 is done; AR-1801 remains blocked as
   the affected evidence source, not a prerequisite for independently repairing its shared fixtures.
+
+- 2026-10-12T02:33:07+00:00: Claimed by ar1803_parallel_fixture_luna56.
