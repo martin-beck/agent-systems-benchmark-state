@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "checkpoint_commit": "b72da478631faa391f9be75d7cce1e813deb387d",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T11:34:27+00:00",
   "depends_on": [
     "AR-1782",
     "AR-1783"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "observed_dirty": 0,
   "observed_head": "b72da478631faa391f9be75d7cce1e813deb387d",
-  "owner": "",
+  "owner": "ar1800_local_acquisition_luna56",
   "plan": "../plans/AR-1800-controlled-local-workload-acquisition-backend.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1800.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T09:33:43+00:00",
+  "updated_at": "2026-10-12T09:34:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -292,3 +292,5 @@ must not weaken production acquisition, identity, or offline guarantees.
 - 2026-10-12T09:33:43+00:00: AR-1801 fixture isolation is superseded by completed deterministic
   fixture repairs; reopen controlled local acquisition implementation under no-TLC development
   policy.
+
+- 2026-10-12T09:34:27+00:00: Claimed by ar1800_local_acquisition_luna56.

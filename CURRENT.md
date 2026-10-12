@@ -9,12 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. | Independent review of c915ecbbca; run exact-head applicable state gates and post-merge verification without TLC. | codex-ar1293-unsigned-dev-20261012 |
 | P0 | [AR-1773](tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Focused workflow_transcript passed 3/3, but handoffctl post-reconcile is blocked by unrelated state validation: AR-1809 has unknown evidence class integration-test and active AR-1796 retry has oversized TLC files. Wait for coordinator state repair/AR-1796 cleanup; then rerun non-formal gates through handoffctl. Do not run TLC or formal gates. | ar1773-catalog-repair-luna56 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1800](tasks/AR-1800-controlled-local-workload-acquisition-backend.md): Controlled local workload acquisition backend | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. | Blocked on unrelated ambient mini_swe fixture root overlap; AR-1801 owns deterministic Cargo fixture isolation. Preserve exact-main focused workload evidence and resume after AR-1801 repair. | - |
+| P0 | [AR-1800](tasks/AR-1800-controlled-local-workload-acquisition-backend.md): Controlled local workload acquisition backend | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. | Blocked on unrelated ambient mini_swe fixture root overlap; AR-1801 owns deterministic Cargo fixture isolation. Preserve exact-main focused workload evidence and resume after AR-1801 repair. | ar1800_local_acquisition_luna56 |
 
 ## Blocked
 
