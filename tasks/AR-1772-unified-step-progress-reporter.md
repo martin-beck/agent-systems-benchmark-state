@@ -7,7 +7,7 @@
     "AR-1775"
   ],
   "id": "AR-1772",
-  "next_action": "Hosted PR #602 head 65ee830e has all prior failed checks repaired; 11 required checks pass, remaining policy/canonical, Rust, TLC, aarch64, and TUI workflows are still running. Continue bounded monitoring; merge only after all 15 required checks pass.",
+  "next_action": "Hosted run 38209256859 Policy is still in coverage floors; Rust run 38209256940 remains in tests; aarch64 38209256879 remains guest materialization. All completed checks green, no new failures. Continue polling; merge only after all 15 required checks pass.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "65ee830e6659ac5426757833d1030ae0c32f8ac5",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Header-policy repair pushed as signed head 65ee830e; local gates green; PR #602 rerun in progress.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:51:13+00:00",
+  "updated_at": "2026-10-12T05:51:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -439,3 +439,7 @@ allowed outside this helper.
 
 - 2026-10-12T05:51:13+00:00: Recorded command exit 0; command argv SHA-256
   8c2a7b451d525744d4e8ed2bde29d5c7e61a60373bacf6914b29ff228c83ffae.
+
+- 2026-10-12T05:51:22+00:00: At current poll, no hosted errors. Policy steps 1-12 passed through
+  dependency/advisory checks; coverage is active. Rust formatting/clippy passed and tests active.
+  aarch64 setup/toolchain/closed emulation passed and immutable guest materialization active.

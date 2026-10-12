@@ -1098,7 +1098,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Header-policy repair pushed as signed head 65ee830e; local gates green; PR #602 rerun in progress. |
-| Next action | Hosted PR #602 head 65ee830e has all prior failed checks repaired; 11 required checks pass, remaining policy/canonical, Rust, TLC, aarch64, and TUI workflows are still running. Continue bounded monitoring; merge only after all 15 required checks pass. |
+| Next action | Hosted run 38209256859 Policy is still in coverage floors; Rust run 38209256940 remains in tests; aarch64 38209256879 remains guest materialization. All completed checks green, no new failures. Continue polling; merge only after all 15 required checks pass. |
 
 ### AR-1773 — Universal command step instrumentation
 
