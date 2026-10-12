@@ -7,7 +7,7 @@
     "AR-1773"
   ],
   "id": "AR-1805",
-  "next_action": "PR #608 merged as 15c80511, but exact-main post-merge Policy/coverage and Portable protected-main provenance failed because GitHub merge committer is not local integration identity. Preserve merge; create narrowly scoped coordinator repair for merge-identity/provenance contract, then rerun exact-main gates. Other post-merge workflows remain in progress.",
+  "next_action": "Create and claim a narrowly scoped forward-only provenance-recovery successor for PR #608; use tools/integration/merge_pr.py from clean exact base 5c843a12 and reviewed topic 0fec6465, publish signed local merge, then watch all exact-main gates.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "0fec6465dbb1934904fef8d9f79dd1c565c661fc",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent exact-head review accepted PR #608 at 0fec6465.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:26:59+00:00",
+  "updated_at": "2026-10-12T11:27:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -290,3 +290,8 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   repair remains open.
 
 - 2026-10-12T11:26:59+00:00: Claimed by ar1805_postmerge_repair.
+
+- 2026-10-12T11:27:13+00:00: Claimed for post-merge recovery. Exact runs 38242303503 and 38242303428
+  failed solely because GitHub Web Flow merge 15c80511 committer is GitHub <noreply@github.com>;
+  merge parents/tree and reviewed evidence are preserved. Existing AR-1794 local merge tool is the
+  authorized repair path; no gate weakening or history rewrite.
