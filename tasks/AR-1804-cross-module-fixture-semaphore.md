@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Monitor PR #598 exact head 4cda972c until every required check completes green; merge only after success, then verify main.",
+  "next_action": "Add exact Huawei 2026/SPDX MIT header to test_fixture_semaphore.rs, create signed follow-up, push PR #598, and rerun exact-head CI.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 0,
   "observed_head": "4cda972c8af30c15a76034421ca4bb9926a0a2b5",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:16:27+00:00",
+  "updated_at": "2026-10-12T03:16:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -469,3 +469,10 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:16:27+00:00: Recorded command exit 0; command argv SHA-256
   79855b626706a2b952c71a4d9d2971bda7555a7d43515149cb4cae4befa6f21a.
+
+- 2026-10-12T03:16:35+00:00: Hosted PR #598 checks identified one deterministic policy failure
+  before other gates: Exact Huawei 2026 and SPDX MIT headers failed because
+  crates/asb-cli/src/test_fixture_semaphore.rs lacked the exact adjacent source header at lines 1-2.
+  Policy, coverage, and supply chain failed on the same header error (range head 4cda972c); optional
+  artifact publication was skipped. This is a repository policy metadata failure, not a product
+  qualification failure. Repair is header-only.
