@@ -11,8 +11,8 @@
   "id": "AR-1812",
   "next_action": "AR-1813 is done and branch rebased onto current main 5c843a12. Implement ordinary run/sweep resolver using runtime Cli2KeyRuntimeAuthority::bootstrap_from_receipt_bytes and verified installer receipt; add local/mock positive/negative lifecycle tests, then PR/review/merge.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
-  "observed_dirty": 1,
-  "observed_head": "5c843a12e976bc7be6c32e9fc653e566bdf20450",
+  "observed_dirty": 0,
+  "observed_head": "5c75c1a9fe36bb5f08c3cb4ccc20f213d496b65e",
   "owner": "ar1812-replacement-luna56",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:24:18+00:00",
+  "updated_at": "2026-10-12T11:24:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
