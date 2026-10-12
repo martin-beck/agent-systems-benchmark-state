@@ -13,13 +13,21 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "mechanical",
+    "evidence_digest": "sha256:c28e39279421f5268daae50fe695d591dd8e0e55515d5ab68fd66722d86d9b49",
+    "evidence_ref": "specs/AR-1293.json",
+    "spec_ref": "specs/AR-1293.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1293.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 792,
+  "task_revision": 793,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T10:02:04+00:00",
+  "updated_at": "2026-10-12T10:02:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2383,3 +2391,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   aabffcba9052320929dfffb5d7b4a622e01e9b046f01e79506565790dc4df31a.
 
 - 2026-10-12T10:02:04+00:00: Bound task spec specs/AR-1293.json revision 1.
+
+- 2026-10-12T10:02:14+00:00: PR #120 exact candidate 21a8b4c16c36e1884df83b38e64c34d0658df672 merged
+  as 48ab38c2dc617fa46442d16fd9e64b3e34b88098; hosted checks and detached origin/main
+  unsigned-development/source-header checks passed; no TLC/model-check execution.
