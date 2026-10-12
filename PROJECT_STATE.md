@@ -36,7 +36,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38190265363 | `5201a0369193` | push | Emulated aarch64 portability | in_progress:- |
 | 38190265362 | `5201a0369193` | push | Rust verification | in_progress:- |
-| 38190265359 | `5201a0369193` | push | Portable protected-main provenance | in_progress:- |
+| 38190265359 | `5201a0369193` | push | Portable protected-main provenance | completed:failure |
 | 38190265328 | `5201a0369193` | push | Cross-repository development broker qualification | in_progress:- |
 | 38190265324 | `5201a0369193` | push | Formal assurance | in_progress:- |
 | 38190265314 | `5201a0369193` | push | Huawei MIT source headers | completed:success |
