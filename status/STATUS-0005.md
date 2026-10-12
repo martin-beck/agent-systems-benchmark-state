@@ -181,19 +181,14 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope. |
 | P0 | [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md): Add cli2key runtime authority composition seam | codex-ar1799-authority-luna56 | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. | Implement runtime-only receipt-to-Cli2KeySidecar bootstrap and opaque LiveProviderAttempt issuance; add hostile lifecycle matrix before CLI integration. |
+| P0 | [AR-1800](../tasks/AR-1800-controlled-local-workload-acquisition-backend.md): Controlled local workload acquisition backend | ar1800_local_acquisition_luna56 | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. | Implement the credential-free controlled acquisition backend and qualify every AR-1781 workload through the AR-1780 journey. |
 | P0 | [AR-1801](../tasks/AR-1801-tool-discovery-cargo-fixture-isolation.md): Tool-discovery Cargo fixture isolation | ar1801-cargo-fixture-luna56 | Make tool-discovery Cargo version fixture deterministic under full workspace execution. | Repair the tool-discovery version-probe fixture so full-workspace tests isolate ambient Cargo and retain deterministic unavailable/version observations. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1800](../tasks/AR-1800-controlled-local-workload-acquisition-backend.md): Controlled local workload acquisition backend | Unclaimed | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. | Implement the credential-free controlled acquisition backend and qualify every AR-1781 workload through the AR-1780 journey. |
 
 ### Blocked (87)
 

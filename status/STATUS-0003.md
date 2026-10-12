@@ -1482,11 +1482,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1800_local_acquisition_luna56 |
 | Parent | None |
 | Children | None |
 | Summary | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. |
@@ -2367,7 +2367,7 @@ flowchart LR
     end
     subgraph series_18["18 - Additional work"]
         direction TB
-        AR_1800["AR-1800 - Open"]:::status_open
+        AR_1800["AR-1800 - In progress"]:::status_in_progress
         AR_1801["AR-1801 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002

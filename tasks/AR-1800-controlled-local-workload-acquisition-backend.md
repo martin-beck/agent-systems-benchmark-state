@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T04:18:45+00:00",
   "depends_on": [
     "AR-1782",
     "AR-1783"
@@ -12,7 +12,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1800_local_acquisition_luna56",
   "plan": "../plans/AR-1800-controlled-local-workload-acquisition-backend.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,9 +26,9 @@
   },
   "spec_ref": "specs/AR-1800.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Controlled local workload acquisition backend",
   "updated_at": "2026-10-12T02:18:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
@@ -40,3 +40,5 @@ identified by AR-1780. It must add only a bounded development fixture seam; it
 must not weaken production acquisition, identity, or offline guarantees.
 
 - 2026-10-12T02:18:45+00:00: dependencies verified: AR-1782 and AR-1783 done
+
+- 2026-10-12T02:18:45+00:00: Claimed by ar1800_local_acquisition_luna56.
