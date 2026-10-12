@@ -2,22 +2,22 @@
 {
   "branch": "policy/concurrent-integration-liveness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T13:16:23+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1796",
   "next_action": "User-requested stop recorded. Preserve interrupted exact-candidate retry artifacts and terminal uncertainty; do not accept or release. Reclaim only after explicit continuation and rerun a fresh bounded exact full-exhaustive attempt with PYTHONDONTWRITEBYTECODE=1.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "ar1796-reconcile-candidate-luna56",
+  "owner": "",
   "plan": "../plans/AR-1796-concurrent-integration-liveness.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-12T09:20:46+00:00",
+  "updated_at": "2026-10-12T09:27:38+00:00",
   "worktree_key": ""
 }
 ---
@@ -338,3 +338,7 @@ workers checkpoint, retry, and continue useful work during integration churn.
 
 - 2026-10-12T09:20:46+00:00: Recorded command exit 0; command argv SHA-256
   263e6df7bf524f7d22558cd3ecdc8a67a5f8016fdda910e4ce54c337367e522a.
+
+- 2026-10-12T09:27:38+00:00: Coordinator recovery after user-requested stop: no live worker or TLC
+  process remains. Preserve interrupted formal evidence; reopen for development reassignment under
+  no-TLC policy.
