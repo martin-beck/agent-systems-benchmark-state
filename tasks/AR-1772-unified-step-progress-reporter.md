@@ -7,7 +7,7 @@
     "AR-1775"
   ],
   "id": "AR-1772",
-  "next_action": "Hosted run 38209256859 Policy is still in coverage floors; Rust run 38209256940 remains in tests; aarch64 38209256879 remains guest materialization. All completed checks green, no new failures. Continue polling; merge only after all 15 required checks pass.",
+  "next_action": "Release completed task: PR #602 merged at 4b14797a; exact-main focused reporter, diagnostic contract, and make test all passed; receipt committed.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "65ee830e6659ac5426757833d1030ae0c32f8ac5",
@@ -26,10 +26,10 @@
   "spec_ref": "specs/AR-1772.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Header-policy repair pushed as signed head 65ee830e; local gates green; PR #602 rerun in progress.",
-  "task_revision": 156,
+  "summary": "AR-1772 merged and post-merge verified on exact main 4b14797a.",
+  "task_revision": 157,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:58:41+00:00",
+  "updated_at": "2026-10-12T05:58:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -521,3 +521,10 @@ allowed outside this helper.
 
 - 2026-10-12T05:58:41+00:00: Recorded command exit 0; command argv SHA-256
   ba38ab9e171605c3c75849fc3ae07bf3eee86918e0e23e6a3d0c2591a2b02718.
+
+- 2026-10-12T05:58:57+00:00: Post-merge completion: PR #602 exact head
+  65ee830e6659ac5426757833d1030ae0c32f8ac5 merged at 4b14797a0892988a484a5171c45c4e8ec3c3d836. All
+  15 hosted required checks passed. Detached exact origin/main at merge commit was clean; focused
+  reporter tests passed 3/3, diagnostic_contract ordinary_cli_producers_are_mechanically_closed
+  passed 1/1, and make test exited 0. Durable receipt quality/AR-1772-postmerge-receipt.txt
+  committed in state.

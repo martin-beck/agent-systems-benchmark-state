@@ -1097,8 +1097,8 @@
 | Owner | ar1772-progress-reporter-luna56 |
 | Parent | None |
 | Children | None |
-| Summary | Header-policy repair pushed as signed head 65ee830e; local gates green; PR #602 rerun in progress. |
-| Next action | Hosted run 38209256859 Policy is still in coverage floors; Rust run 38209256940 remains in tests; aarch64 38209256879 remains guest materialization. All completed checks green, no new failures. Continue polling; merge only after all 15 required checks pass. |
+| Summary | AR-1772 merged and post-merge verified on exact main 4b14797a. |
+| Next action | Release completed task: PR #602 merged at 4b14797a; exact-main focused reporter, diagnostic contract, and make test all passed; receipt committed. |
 
 ### AR-1773 — Universal command step instrumentation
 
