@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
-  "checkpoint_commit": "f489fbf51c5cbafe9e7ddc07b09ab1a9997b096d",
+  "checkpoint_commit": "10f095df843fd0b927c8f72f372a6245a9eac954",
   "claim_expires": "2026-10-12T13:19:26+00:00",
   "depends_on": [
     "AR-1779",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:26:08+00:00",
+  "updated_at": "2026-10-12T11:26:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -147,3 +147,5 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T11:26:08+00:00: Recorded command exit 0; command argv SHA-256
   1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
+
+- 2026-10-12T11:26:27+00:00: Checkpointed source commit 10f095df843fd0b927c8f72f372a6245a9eac954.
