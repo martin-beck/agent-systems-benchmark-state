@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T02:28:59+00:00",
+  "updated_at": "2026-10-12T02:29:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -72,3 +72,6 @@ or pin the probe without weakening bounded execution or privacy contracts.
   crates/asb-cli/src/lib.rs:16076 assertion left 6 right 0. This is a full-gate failure outside the
   changed tool_discovery.rs lines; do not advance PR/CI/merge until reproduced and
   repaired/explained.
+
+- 2026-10-12T02:29:02+00:00: Recorded command exit 0; command argv SHA-256
+  37bcc8254196ed341a490056c44b54167b9c218acde17b0fe458435f51075666.
