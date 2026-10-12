@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "checkpoint_commit": "8ebf8893529e32ea0602927dbbd4e5babb97f862",
-  "claim_expires": "2026-10-12T05:26:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1762"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "main",
   "observed_dirty": 0,
   "observed_head": "6761a6d0bcd5d5982c92176f4adf687696de90d6",
-  "owner": "ar1804_fixture_semaphore_luna56",
+  "owner": "",
   "plan": "../plans/AR-1804-cross-module-fixture-semaphore.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1804.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 150,
+  "task_revision": 151,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:30:11+00:00",
+  "updated_at": "2026-10-12T03:30:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -573,3 +573,9 @@ before AR-1801 can be accepted.
 - 2026-10-12T03:30:11+00:00: Acceptance evidence: exact reviewed PR head d625c822 had every required
   hosted check green; repository-supported merge method produced main 6761a6d0; reconcile observed
   main clean at that exact head and handoffctl doctor --live passed.
+
+- 2026-10-12T03:30:16+00:00: AR-1804 complete: signed implementation and independent review
+  accepted; PR #598 exact head d625c822 passed every required hosted check; squash rejection was
+  recorded as repository merge-policy error and supported merge method produced main 6761a6d0;
+  post-merge reconcile observed clean main and handoffctl doctor --live passed. Lease released; no
+  successor action required.

@@ -1538,11 +1538,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1804_fixture_semaphore_luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
@@ -2413,7 +2413,7 @@ flowchart LR
         AR_1801["AR-1801 - Blocked"]:::status_blocked
         AR_1802["AR-1802 - Blocked"]:::status_blocked
         AR_1803["AR-1803 - Blocked"]:::status_blocked
-        AR_1804["AR-1804 - In progress"]:::status_in_progress
+        AR_1804["AR-1804 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
