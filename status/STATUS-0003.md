@@ -1713,7 +1713,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. |
-| Next action | PR #121 now targets 1c396d1d9e; launcher quality repairs pushed. Await exact-head CI and independent review. Then merge and run configured reconcile/snapshot/doctor receipt. |
+| Next action | PR #121 now targets 44541e21e5; current launcher Ruff and targeted mypy pass. Await exact-head CI and independent review. Then merge and run configured reconcile/snapshot/doctor receipt. |
 
 
 ## Dependency graph
