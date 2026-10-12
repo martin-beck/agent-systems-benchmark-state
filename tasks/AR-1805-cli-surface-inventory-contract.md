@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent review found a full integration-gate regression at exact PR head 5cb931f5.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:13:33+00:00",
+  "updated_at": "2026-10-12T11:22:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -258,3 +258,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   commit 0fec6465; repeat independent review required.
 
 - 2026-10-12T11:13:33+00:00: Heartbeat by asb-queue-next-luna56.
+
+- 2026-10-12T11:22:38+00:00: Recorded command exit 0; command argv SHA-256
+  fb2e756a36f808ddc9cc1e39321efec13418ef7cb2515fb0de38b129f44c88af.
