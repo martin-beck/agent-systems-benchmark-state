@@ -34,7 +34,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 38242303507 | `15c80511cd2c` | push | Rust verification | in_progress:- |
-| 38242303503 | `15c80511cd2c` | push | Repository quality | in_progress:- |
+| 38242303503 | `15c80511cd2c` | push | Repository quality | completed:failure |
 | 38242303498 | `15c80511cd2c` | push | Development formal assurance | in_progress:- |
 | 38242303488 | `15c80511cd2c` | push | Fault assurance | in_progress:- |
 | 38242303485 | `15c80511cd2c` | push | Emulated aarch64 portability | in_progress:- |
