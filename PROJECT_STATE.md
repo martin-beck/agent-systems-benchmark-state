@@ -28,8 +28,8 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
-| #602 | `feature/ar-1772-unified-step-progress-reporter@65ee830e6659` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Add unified human step progress reporter |
-| #603 | `feature/ar-1797-cli2key-live-runtime-wiring@fd815d5e4de7` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS: | feat(cli): wire cli2key runtime authority |
+| #602 | `feature/ar-1772-unified-step-progress-reporter@65ee830e6659` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Add unified human step progress reporter |
+| #603 | `feature/ar-1797-cli2key-live-runtime-wiring@fd815d5e4de7` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): wire cli2key runtime authority |
 
 ## Recent workflows
 
@@ -37,12 +37,12 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38209256944 | `fd815d5e4de7` | pull_request | Huawei MIT source headers | queued:- |
 | 38209256940 | `fd815d5e4de7` | pull_request | Rust verification | queued:- |
-| 38209256929 | `fd815d5e4de7` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 38209256901 | `fd815d5e4de7` | pull_request | Portable protected-main provenance | in_progress:- |
+| 38209256929 | `fd815d5e4de7` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38209256901 | `fd815d5e4de7` | pull_request | Portable protected-main provenance | completed:success |
 | 38209256893 | `fd815d5e4de7` | pull_request | Credential-free benchmark path | queued:- |
 | 38209256879 | `fd815d5e4de7` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38209256876 | `fd815d5e4de7` | pull_request | Fault assurance | queued:- |
-| 38209256869 | `fd815d5e4de7` | pull_request | Formal assurance | queued:- |
+| 38209256869 | `fd815d5e4de7` | pull_request | Formal assurance | in_progress:- |
 | 38209256859 | `fd815d5e4de7` | pull_request | Repository quality | in_progress:- |
 | 38209256858 | `fd815d5e4de7` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 38209256853 | `fd815d5e4de7` | pull_request | Cross-repository development broker qualification | in_progress:- |
