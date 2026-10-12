@@ -168,9 +168,9 @@
 | [AR-1794](../tasks/AR-1794-protected-main-merge-path-repair.md) | [AR-1781](../tasks/AR-1781-external-workload-acquisition-catalog.md) | None |
 | [AR-1795](../tasks/AR-1795-coordinator-v051-adoption.md) | [AR-1756](../tasks/AR-1756-coordinator-v040-development.md) | None |
 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md) | None | None |
-| [AR-1797](../tasks/AR-1797-cli2key-live-runtime-wiring.md) | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md), [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md), [AR-1733](../tasks/AR-1733-cli2key-qualification.md), [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md) | [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md) |
+| [AR-1797](../tasks/AR-1797-cli2key-live-runtime-wiring.md) | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md), [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md), [AR-1733](../tasks/AR-1733-cli2key-qualification.md), [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md) | None |
 | [AR-1798](../tasks/AR-1798-pinned-source-checkout-acquisition.md) | [AR-1776](../tasks/AR-1776-supported-tool-acquisition-catalog.md), [AR-1778](../tasks/AR-1778-pinned-source-build-and-project-dependencies.md) | None |
-| [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md) | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md), [AR-1797](../tasks/AR-1797-cli2key-live-runtime-wiring.md) | None |
+| [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md) | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md) | None |
 
 ## Complete AR inventory
 
