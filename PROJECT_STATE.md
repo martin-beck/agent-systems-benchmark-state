@@ -36,7 +36,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38210171658 | `4b14797a0892` | push | Portable protected-main provenance | completed:failure |
 | 38210171548 | `4b14797a0892` | push | Hosted portability and native qualification | completed:success |
-| 38210171522 | `4b14797a0892` | push | Credential-free benchmark path | in_progress:- |
+| 38210171522 | `4b14797a0892` | push | Credential-free benchmark path | completed:success |
 | 38210171511 | `4b14797a0892` | push | Formal assurance | in_progress:- |
 | 38210171502 | `4b14797a0892` | push | Cross-repository development broker qualification | in_progress:- |
 | 38210171485 | `4b14797a0892` | push | Fault assurance | in_progress:- |
