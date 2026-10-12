@@ -1098,7 +1098,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output. |
-| Next action | Run complete asb-cli/full quality checks on clean signed head f9ad19ff; review exact head before publication. |
+| Next action | Focused reporter and diagnostic-contract gates pass. Full asb-cli has one pre-existing environment-sensitive tool-discovery version assertion; retain as qualification blocker unless parent accepts bounded exception. |
 
 ### AR-1773 — Universal command step instrumentation
 
@@ -4359,4 +4359,3 @@ flowchart LR
 | [AR-0509](../tasks/AR-0509-replay-codex.md) | [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0510](../tasks/AR-0510-replay-gemini.md) | [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0511](../tasks/AR-0511-replay-qwen.md) | [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0512](../tasks/AR-0512-replay-goose.md) | [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |

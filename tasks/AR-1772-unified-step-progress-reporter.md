@@ -7,7 +7,7 @@
     "AR-1775"
   ],
   "id": "AR-1772",
-  "next_action": "Run complete asb-cli/full quality checks on clean signed head f9ad19ff; review exact head before publication.",
+  "next_action": "Focused reporter and diagnostic-contract gates pass. Full asb-cli has one pre-existing environment-sensitive tool-discovery version assertion; retain as qualification blocker unless parent accepts bounded exception.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "f9ad19ff24c69a0bd08d3dc3d9f8b6df09c98a41",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:15:56+00:00",
+  "updated_at": "2026-10-12T02:16:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -149,3 +149,9 @@ allowed outside this helper.
 
 - 2026-10-12T02:15:56+00:00: Recorded command exit 101; command argv SHA-256
   c9266e05291502ffd361fe1821edf1e07e255bcbf030cad9d5973101fe63d04d.
+
+- 2026-10-12T02:16:06+00:00: Exact full-gate failure: cargo test -p asb-cli,
+  tool_discovery::tests::path_discovery_is_deterministic_and_bounded, expected tool version
+  null/reason version_probe_unavailable but observed cargo 1.0 and reason null. Reporter tests and
+  diagnostic_contract::ordinary_cli_producers_are_mechanically_closed pass. This is unrelated to
+  AR-1772 and reflects ambient cargo probe output.
