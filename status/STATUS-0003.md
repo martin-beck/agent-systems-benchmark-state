@@ -1719,11 +1719,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1817_schema_contract |
 | Parent | None |
 | Children | None |
 | Summary | Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields. |
@@ -2607,7 +2607,7 @@ flowchart LR
         AR_1814["AR-1814 - Done"]:::status_done
         AR_1815["AR-1815 - Done"]:::status_done
         AR_1816["AR-1816 - In progress"]:::status_in_progress
-        AR_1817["AR-1817 - Open"]:::status_open
+        AR_1817["AR-1817 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

@@ -267,18 +267,13 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1774](../tasks/AR-1774-status-progress-completeness-ci.md): Status and progress completeness CI | ar1774-status-ci-luna56 | Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode. | Add required CI enforcement and controlled-defect tests for quiet, status, and progress completeness after universal instrumentation lands. |
 | P0 | [AR-1816](../tasks/AR-1816-state-projection-and-bytecode-hygiene.md): Coordinator projection and bytecode hygiene recovery | ar1816_projection_hygiene | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. | PR #121 now targets 7939195cee; AR-1811/1813 oracle evidence normalized into task bodies and schema mismatch repaired. Await terminal exact-head CI and independent review. Then merge and run configured reconcile/snapshot/doctor receipt. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1817](../tasks/AR-1817-task-schema-oracle-gate.md): Align task schema with oracle gate contract | Unclaimed | Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields. | Promote the schema-contract repair, add the documented oracle_gate shape and regression coverage, then independently review and run exact-head coordination CI before merging. |
+| P0 | [AR-1817](../tasks/AR-1817-task-schema-oracle-gate.md): Align task schema with oracle gate contract | ar1817_schema_contract | Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields. | Promote the schema-contract repair, add the documented oracle_gate shape and regression coverage, then independently review and run exact-head coordination CI before merging. |
 
 ### Blocked (85)
 

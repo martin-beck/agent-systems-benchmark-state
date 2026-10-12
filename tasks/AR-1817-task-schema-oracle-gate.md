@@ -2,21 +2,21 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T15:15:25+00:00",
   "depends_on": [],
   "id": "AR-1817",
   "next_action": "Promote the schema-contract repair, add the documented oracle_gate shape and regression coverage, then independently review and run exact-head coordination CI before merging.",
-  "owner": "",
+  "owner": "ar1817_schema_contract",
   "plan": "../plans/AR-1817-task-schema-oracle-gate.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1817.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Align task schema with oracle gate contract",
-  "updated_at": "2026-10-12T13:14:34+00:00",
+  "updated_at": "2026-10-12T13:15:25+00:00",
   "worktree_key": ""
 }
 ---
@@ -34,3 +34,5 @@ do not make the schema permissive or alter AR-1816 implementation state.
 
 - 2026-10-12T13:14:34+00:00: dependencies verified; strict oracle_gate schema repair is independent
   and blocks coordination CI
+
+- 2026-10-12T13:15:25+00:00: Claimed by ar1817_schema_contract.
