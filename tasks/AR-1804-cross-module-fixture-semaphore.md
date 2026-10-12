@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Run each affected test with a single filter, then full parallel asb-cli gate; preserve semaphore repair and record all outcomes.",
+  "next_action": "Rerun the repaired single-filter affected tests, then full default-parallel asb-cli/workspace gates.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 2,
   "observed_head": "ca494d506135c4a3263bea21621dcc97d817614c",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:45:53+00:00",
+  "updated_at": "2026-10-12T02:46:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -66,3 +66,12 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:45:53+00:00: Recorded command exit 0; command argv SHA-256
   b845454f334a21891f844cd9d1108259a01ce5845d89940e7f88f2a45eb82f0d.
+
+- 2026-10-12T02:46:04+00:00: Exact exit-101 diagnosis for single-filter retry (command shape was
+  valid): cargo test --locked --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore/Cargo.toml -p
+  asb-cli --lib tests::provider_selection_manifest_drives_plan_run_sweep_compare_and_report --
+  --nocapture failed during compilation. Rustc stderr: crates/asb-cli/src/lib.rs:111:22 error: field
+  0 is never read; dead-code implied by -D warnings; could not compile asb-cli (lib test). Root
+  cause was the new test semaphore Guard tuple field not visibly read, not a qualification failure.
+  Repaired Guard to a named underscore _lock field before retry.

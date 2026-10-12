@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates. |
-| Next action | Run each affected test with a single filter, then full parallel asb-cli gate; preserve semaphore repair and record all outcomes. |
+| Next action | Rerun the repaired single-filter affected tests, then full default-parallel asb-cli/workspace gates. |
 
 
 ## Dependency graph
