@@ -1689,7 +1689,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance. |
-| Next action | Promote and claim; inspect ruleset 24750310, remove only the stale TLC/Alloy required status, verify the minimal diff, then complete PR #606 merge and post-merge verification. |
+| Next action | Re-evaluate PR #606 exact-head mergeability after ruleset repair; merge only with all ordinary checks green, then verify exact-main post-merge workflows and close AR-1814. |
 
 
 ## Dependency graph

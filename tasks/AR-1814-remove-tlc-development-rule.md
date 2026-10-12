@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T12:23:00+00:00",
   "depends_on": [],
   "id": "AR-1814",
-  "next_action": "Promote and claim; inspect ruleset 24750310, remove only the stale TLC/Alloy required status, verify the minimal diff, then complete PR #606 merge and post-merge verification.",
+  "next_action": "Re-evaluate PR #606 exact-head mergeability after ruleset repair; merge only with all ordinary checks green, then verify exact-main post-merge workflows and close AR-1814.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Remove stale TLC development ruleset requirement",
-  "updated_at": "2026-10-12T10:24:22+00:00",
+  "updated_at": "2026-10-12T10:24:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1814-ruleset-repair"
 }
 ---
@@ -52,3 +52,9 @@ the remaining required checks.
 
 - 2026-10-12T10:24:22+00:00: Recorded command exit 0; command argv SHA-256
   994b9fc68a8c919ced9d6cb4e417dd22c3735f40f392fe3a980df7c7b54faf29.
+
+- 2026-10-12T10:24:54+00:00: Ruleset 24750310 read before digest
+  sha256:dd371da427a5c6b57070dcb85d552c71c1b500164cce39c4ad42bcd8fdc5aaa2; after digest
+  sha256:57c08a38ee0feb6a755b04956302a5250e17724d59a2f06b748457a03bc4e5fe. Canonical policy digests
+  e0e30afa... -> 3ff248ab.... Mechanical comparison proves only required status TLC and Alloy
+  recovery models was removed; no checks added.

@@ -254,7 +254,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | ar1810-cli2key-luna56 | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | PR #607 exact head d5f814896ccfd71bd0fe09028dc94d7fcf4c88ec is under hosted non-TLC checks; TLC check is present only because PR #606 formal-separation merge is still blocked by GitHub review policy. After ordinary checks and independent review, reconcile the formal lane before merge. |
-| P0 | [AR-1814](../tasks/AR-1814-remove-tlc-development-rule.md): Remove stale TLC development ruleset requirement | ar1773-catalog-repair-luna56 | Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance. | Promote and claim; inspect ruleset 24750310, remove only the stale TLC/Alloy required status, verify the minimal diff, then complete PR #606 merge and post-merge verification. |
+| P0 | [AR-1814](../tasks/AR-1814-remove-tlc-development-rule.md): Remove stale TLC development ruleset requirement | ar1773-catalog-repair-luna56 | Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance. | Re-evaluate PR #606 exact-head mergeability after ruleset repair; merge only with all ordinary checks green, then verify exact-main post-merge workflows and close AR-1814. |
 
 ### Blocked (87)
 
