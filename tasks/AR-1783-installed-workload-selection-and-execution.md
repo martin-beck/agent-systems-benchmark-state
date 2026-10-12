@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Exact head e644f9b0 has all hosted required checks green; awaiting independent review",
-  "task_revision": 169,
+  "task_revision": 170,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:04:46+00:00",
+  "updated_at": "2026-10-12T01:04:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -534,3 +534,6 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:04:46+00:00: Recorded command exit 1; command argv SHA-256
   2b8b6a2ad67d1409f16849372c2d0fc623d3218660ceed42aa0da77acddd694d.
+
+- 2026-10-12T01:04:52+00:00: Recorded command exit 0; command argv SHA-256
+  a1239bc389d925ac45572156f31122e56f5315002dfe57b5fa16611a7d636df3.
