@@ -161,20 +161,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:0112204acd1de7f843e47097142098019e4ea1db8250c61ac7405a5b89c981d8",
+    "evidence_ref": "main/5c843a12e976bc7be6c32e9fc653e566bdf20450",
     "spec_ref": "specs/AR-1813.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1813.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T11:05:20+00:00",
+  "updated_at": "2026-10-12T11:05:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -269,3 +269,7 @@ fabricate authority in the CLI or introduce a provider fallback.
 
 - 2026-10-12T11:05:20+00:00: Recorded command exit 0; command argv SHA-256
   d55dc3353577df7cae9ec34b2ff6bf2c8dc5954b4b1d04259aaaf12f937d8d62.
+
+- 2026-10-12T11:05:31+00:00: Protected exact-base merge 5c843a12 and 10/10 exact-main
+  terminal-success workflows verified; signed merge/DCO/tree/parents confirmed; no TLC required for
+  development.
