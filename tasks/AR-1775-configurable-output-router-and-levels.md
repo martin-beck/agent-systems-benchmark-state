@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 306,
+  "task_revision": 307,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T01:24:51+00:00",
+  "updated_at": "2026-10-12T01:25:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -963,3 +963,6 @@ stdout envelope and silences all human/operational output on both streams.
   panic diagnostic routing, touched files, and hosted green evidence; no findings. This APPROVED
   review is technical evidence only and not merge authorization; PR #597 must not be merged on this
   review alone.
+
+- 2026-10-12T01:25:11+00:00: Recorded command exit 0; command argv SHA-256
+  c746e0a9fa472fe6602f46ed7ddbf74c1888e83b6121fdd3e4e3e5a781331fb0.
