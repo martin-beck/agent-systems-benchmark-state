@@ -2,17 +2,11 @@
 {
   "branch": "repair/ar-1822-role-removal-expiry",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T16:36:14+00:00",
-  "claim_process": {
-    "boot_digest": "sha256:e7865b965cd7fb9a03f25a68c08a4552c90fa89300f35b839e047ca4bb39ff28",
-    "pid": 1301914,
-    "pid_namespace": "5:4026531836",
-    "start_time": 667326100
-  },
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1822",
   "next_action": "Reconcile current state, promote and claim this repair, then implement and test targeted expired-assignment cleanup without weakening read or admission validation.",
-  "owner": "ar1817_schema_contract",
+  "owner": "",
   "plan": "../plans/AR-1822-role-removal-expiry.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1822.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Expired role assignment cleanup semantics",
-  "updated_at": "2026-10-12T14:36:19+00:00",
+  "updated_at": "2026-10-12T14:36:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1822-role-removal-expiry"
 }
 ---
@@ -49,3 +43,6 @@ transactional command.
 
 - 2026-10-12T14:36:19+00:00: Recorded command exit 0; command argv SHA-256
   068e824af8bf3a8aa87247c4898e90c6138107cddcee634b61b3a15d2082d958.
+
+- 2026-10-12T14:36:29+00:00: Implementation branch published for independent review; focused gates
+  pass; full suite bounded interruption recorded.
