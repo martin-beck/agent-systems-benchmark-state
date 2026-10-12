@@ -20,9 +20,9 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "environmental",
-    "evidence_digest": "sha256:45715f0c82557911e2f4ba510b2d931a7c879d1f324a302619259e79206b8188",
-    "evidence_ref": "independent-review:AR-1797:912e218f8deff58d3c4702aa0855de136edb307f",
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:fbdcdb7595c22f7a24a7a22350026c9cce4c32eb96733011348888aaf090c364",
+    "evidence_ref": "quality/AR-1797-cli2key-runtime-receipt-9c5e5571.txt",
     "spec_ref": "specs/AR-1797.json",
     "spec_revision": 1,
     "status": "pass"
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T06:17:12+00:00",
+  "updated_at": "2026-10-12T06:17:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -319,3 +319,7 @@ path and records only redacted provenance and typed outcome evidence.
   and doc-test suites green; handoffctl post-reconcile initially failed only because generated
   tools/__pycache__/handoffctl.cpython-312.pyc exceeded the 200 KiB state-file guard. Removed only
   generated pycache, reconciled, and handoffctl doctor --live is green.
+
+- 2026-10-12T06:17:43+00:00: Accepted post-merge product tree: PR #603 non-squash merge 9c5e5571,
+  all 15 hosted checks green on exact rebased head 912e218f, exact-main make test green, reviewed
+  net tree preserved, and doctor --live green after generated pycache cleanup.
