@@ -1112,7 +1112,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
-| Next action | Run focused instrumentation tests after replacing direct &#91;WAIT&#93; writes with step_progress::terminal and benchmark.run-point reporter steps; then expand route/mode matrix and full gates. |
+| Next action | Run full asb-cli lib and workspace make test via handoffctl; inspect clean diff, then commit signed DCO and request independent exact-head review. |
 
 ### AR-1774 — Status and progress completeness CI
 

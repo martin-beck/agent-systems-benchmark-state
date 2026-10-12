@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Run focused instrumentation tests after replacing direct [WAIT] writes with step_progress::terminal and benchmark.run-point reporter steps; then expand route/mode matrix and full gates.",
+  "next_action": "Run full asb-cli lib and workspace make test via handoffctl; inspect clean diff, then commit signed DCO and request independent exact-head review.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 4,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:27:52+00:00",
+  "updated_at": "2026-10-12T06:28:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -145,3 +145,12 @@ non-TTY compatibility.
 
 - 2026-10-12T06:27:52+00:00: Recorded command exit 0; command argv SHA-256
   591e2c2565faf7af9d07be2517385f859cdd24c881e95aa79b3e198a22786218.
+
+- 2026-10-12T06:28:05+00:00: Focused diagnosis/repair:
+  every_public_command_has_a_human_safe_invalid_argument_journey initially failed because the new
+  serve reporter line is bounded to 80 columns and the assertion expected the un-clipped
+  configuration suffix. Direct cargo run showed exact output prefix: [DONE] control service
+  (serve.start-control-service, 0s) starting from supplied ; updated the test to assert the bounded
+  prefix. Rerun passed. Reporter step_progress, TUI directory, owned-directory, benchmark.run-point,
+  and serve presentation focused coverage now pass; next run is full asb-cli lib then workspace
+  gates.
