@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:03:22+00:00",
+  "updated_at": "2026-10-12T12:11:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -139,3 +139,6 @@ introduce a TLC/model-check dependency for development.
 - 2026-10-12T12:03:22+00:00: Authoritative GitHub API confirms Repository quality run 38246184722
   attempt 3 is in_progress; it is executing pinned quality-tool setup. Earlier attempts 1 and 2
   failed only at analyzer download HTTP 504. No rerun was lost.
+
+- 2026-10-12T12:11:49+00:00: Recorded command exit 0; command argv SHA-256
+  b99dca4b44e69c6ac3d32ba3f22ae88f7d41df110a1c3e3b14d1107ecf57e348.
