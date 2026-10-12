@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1774-status-progress-completeness-ci",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "b324173cef1bfb513df068255911ff87c40ac742",
   "claim_expires": "2026-10-12T14:41:47+00:00",
   "depends_on": [
     "AR-1769",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Status and progress completeness CI",
-  "updated_at": "2026-10-12T12:41:47+00:00",
+  "updated_at": "2026-10-12T12:42:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1774-status-progress-completeness-ci"
 }
 ---
@@ -62,3 +62,5 @@ human output additions fail closed until instrumented and tested.
 - 2026-10-12T12:40:05+00:00: Claimed by ar1774-status-ci-luna56.
 
 - 2026-10-12T12:41:47+00:00: Heartbeat by ar1774-status-ci-luna56.
+
+- 2026-10-12T12:42:06+00:00: Checkpointed source commit b324173cef1bfb513df068255911ff87c40ac742.
