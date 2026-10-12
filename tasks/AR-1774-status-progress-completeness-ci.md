@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Status and progress completeness CI",
-  "updated_at": "2026-10-12T12:42:20+00:00",
+  "updated_at": "2026-10-12T12:42:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1774-status-progress-completeness-ci"
 }
 ---
@@ -67,3 +67,6 @@ human output additions fail closed until instrumented and tested.
 
 - 2026-10-12T12:42:20+00:00: Recorded command exit 0; command argv SHA-256
   37e2f57dec209c39eb925716bba8c35409869f0b25ea691162f197296ada3434.
+
+- 2026-10-12T12:42:45+00:00: Recorded command exit 0; command argv SHA-256
+  5b20e99b549b874c63fb6fea95f9b013709dc6845a47188bdebfa3bca87b3ef5.
