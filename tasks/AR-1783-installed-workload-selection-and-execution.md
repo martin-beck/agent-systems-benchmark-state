@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Fresh independent review recorded for PR #596 exact head aca3f79b3256729543e93cc321ce3a85daa78051; run approved integration merge only against base 98327152f2e92308b5bcf5b21cfe0c9f285cf950/tree 852f5b4ff6fa5f21a7120298e167e5a97487aa7a, then verify exact protected main and accept/release. Do not merge in this review.",
+  "next_action": "Wait for all ca494d50 protected-main post-merge workflows terminal green, record exact-main receipts, then accept and release AR-1783",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "aca3f79b3256729543e93cc321ce3a85daa78051",
@@ -28,10 +28,10 @@
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
-  "summary": "PR #596 repaired to single signed/DCO topic commit aca3f79 on current protected base 98327152; portable provenance green and remaining checks running",
-  "task_revision": 270,
+  "summary": "PR #596 locally integrated as signed/DCO protected-main merge ca494d50; exact remote main now points to it and post-merge workflows are running",
+  "task_revision": 271,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:46:43+00:00",
+  "updated_at": "2026-10-12T01:47:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -853,3 +853,11 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:46:43+00:00: Recorded command exit 0; command argv SHA-256
   321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
+
+- 2026-10-12T01:47:01+00:00: Integration receipt: tools/integration/merge_pr.py ran in clean
+  detached base worktree, expected base 98327152f2e92308b5bcf5b21cfe0c9f285cf950, reviewed head
+  aca3f79b3256729543e93cc321ce3a85daa78051, expected tree 852f5b4ff6fa5f21a7120298e167e5a97487aa7a;
+  published merge ca494d506135c4a3263bea21621dcc97d817614c. Verified merge parents exactly
+  base/topic, SSH signature GMartin Beck, DCO trailer, tree 852f5b4f, and origin/main exact
+  ca494d50. Post-merge runs 38193200385/393/407/410/422/427/434/435/452/588 are in progress except
+  provenance and headers green.
