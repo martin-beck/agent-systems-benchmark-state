@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:58:20+00:00",
+  "updated_at": "2026-10-12T02:58:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -231,3 +231,6 @@ before AR-1801 can be accepted.
   diagnostic-contract tests, workflow transcript/provenance, project/CLI gates, rustdoc all passed;
   ignored tests remained explicitly provider/credential-boundary cases. The prior provenance failure
   is repaired by the exact generated cli_source_sha256 update.
+
+- 2026-10-12T02:58:23+00:00: Recorded command exit 0; command argv SHA-256
+  ec691a867a567987b10638f70157bf50e8b8109b40724a2fb0a6f31c3bb3ed3d.
