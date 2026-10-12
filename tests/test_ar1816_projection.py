@@ -1,3 +1,5 @@
+# Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
+# SPDX-License-Identifier: MIT
 """Downstream tests for the ASB coordinator projection launcher."""
 
 from __future__ import annotations
