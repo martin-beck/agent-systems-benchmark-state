@@ -297,6 +297,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1791-merge` | `DETACHED` | `59cfd9cf6f06` | 0 | behind 253, ahead 0 |
 | `asb-ar1797-cli2key-live-runtime-wiring` | `feature/ar-1797-cli2key-live-runtime-wiring` | `912e218f8def` | 0 | behind 18, ahead 0 |
 | `asb-ar1811-merge-base` | `DETACHED` | `07c590e712df` | 0 | behind 12, ahead 0 |
+| `asb-ar1812-integration-e57982` | `DETACHED` | `e57982a79faf` | 0 | behind 0, ahead 0 |
 | `asb-ar1813-merge-base` | `DETACHED` | `5a6c5477cd17` | 0 | behind 9, ahead 0 |
 | `asb-goose-repair` | `repair/ar-1730-goose-aarch64-diagnostic` | `71b48057cd03` | 0 | behind 483, ahead 0 |
 | `asb-main-current` | `DETACHED` | `5c843a12e976` | 0 | behind 7, ahead 0 |
