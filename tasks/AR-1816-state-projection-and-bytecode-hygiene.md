@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Coordinator projection and bytecode hygiene recovery",
-  "updated_at": "2026-10-12T13:01:26+00:00",
+  "updated_at": "2026-10-12T13:02:12+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar1816-projection-hygiene"
 }
 ---
@@ -146,3 +146,6 @@ bytecode, credentials, or host-private runtime configuration may enter commits.
 - 2026-10-12T13:01:26+00:00: Strict state consistency diagnosed as ruff-format-only failure in
   downstream launcher; formatted tools/awq-handoffctl.py in signed DCO commit bbba35817b and pushed.
   Vendor digest remains clean.
+
+- 2026-10-12T13:02:12+00:00: Recorded command exit 0; command argv SHA-256
+  cd386233ea7b9692c882e23dd7005dfdccef45e1d1630f73378a5d4c502243f0.
