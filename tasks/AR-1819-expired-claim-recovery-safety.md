@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1819-expired-claim-safety",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T15:34:16+00:00",
+  "claim_expires": "2026-10-12T15:36:56+00:00",
   "depends_on": [],
   "id": "AR-1819",
   "next_action": "Implementation complete at signed commits 20ff486bd7 and 44b2e2a0b1; focused state suites 152 passed and 52 subtests passed. Await independent exact-head review, applicable CI, then integrate and verify doctor.",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make expired-claim recovery fail closed when the exact current session snapshot is unavailable.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Fail-closed expired-claim recovery",
-  "updated_at": "2026-10-12T13:34:33+00:00",
+  "updated_at": "2026-10-12T13:36:56+00:00",
   "worktree_key": ""
 }
 ---
@@ -55,3 +55,5 @@ provider run is required for this development repair.
 
 - 2026-10-12T13:34:33+00:00: Recorded command exit 0; command argv SHA-256
   0ceaf7c0675b35869a41eb62144b92bd348f8787f1ad3735a183035f2be98f0c.
+
+- 2026-10-12T13:36:56+00:00: Heartbeat by ar1819_stale_claim_repair.
