@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T12:19:29+00:00",
+  "updated_at": "2026-10-12T12:20:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -479,3 +479,6 @@ fixtures and must not require a live provider or TLC.
   chain, emulated AArch64, credential-free, TUI/PTY, formal/assurance, fuzz/mutation, Loom/Kani,
   provenance, headers, platform, and AWQ shadow. No TLC/model-check or live-provider requirement was
   used. Review acceptance does not authorize merge.
+
+- 2026-10-12T12:20:14+00:00: Recorded command exit 0; command argv SHA-256
+  8e0151e3dbecaea33434929a36f983443cdf92226a53908eaf55b0ac51394c20.
