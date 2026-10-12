@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T02:35:02+00:00",
+  "updated_at": "2026-10-12T02:35:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -69,3 +69,6 @@ remains explicitly unaccepted and blocked until this repair is complete.
   Focused tests fixture_authority_requires_credential_free_development_context and
   fixture_acquisition_is_url_bound_bounded_and_network_free passed via handoffctl run. Product
   worktree remains dirty pending signed commit.
+
+- 2026-10-12T02:35:41+00:00: Recorded command exit 0; command argv SHA-256
+  b40ad6a354630be241f2c5f798d1cd0633656219608e549add722fff4ac7bda5.
