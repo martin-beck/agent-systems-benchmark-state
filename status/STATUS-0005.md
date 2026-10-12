@@ -197,6 +197,12 @@
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1772-progress-reporter-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Remain open pending stale AR-1793 legacy diagnostic catalog repair; after repair lands, rebase/retest this preserved diff through focused and full gates. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Run one bounded exact-candidate full-exhaustive retry with verified host envelope; preserve TLC_ATTESTATION_PATH and record terminal result. Do not accept or release without complete attestation. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run the disposable exact-head ASB/TUI journey and publish a privacy-safe paired receipt without closing AR-1686 prematurely. |
+
 ### Blocked (86)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -288,7 +294,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (81)
+### Planned (80)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -327,7 +333,6 @@
 | P0 | [AR-1675](../tasks/AR-1675.md): ASB channel manifest and current-main provenance | Unclaimed | Publish a channel manifest that identifies the resolved source head and build, and make dev current-main provenance inspectable by the installer and TUI. | Define the versioned manifest fields and validation rules, emit them from the dev materializer, and add tamper, stale-head, and future-channel fixtures without blocking development credentials. |
 | P0 | [AR-1676](../tasks/AR-1676.md): Paired ASB/TUI channel compatibility matrix | Unclaimed | Qualify ASB and asb-tui against the same dev/stable/nightly/experimental channel vocabulary, defaults, manifests, and typed failure cases. | Build the paired compatibility runner and exact-head receipt covering omitted dev, explicit channels, restart persistence, upgrade/rollback preservation, and unavailable-channel diagnostics. |
 | P0 | [AR-1677](../tasks/AR-1677.md): Channel-aware release and quickstart gate | Unclaimed | Make the default-dev clone, configure, benchmark, offline replay, comparison, and analysis journey channel-aware and release-gated. | Update the one-command quickstart and release gate to show the selected channel, preserve it through all runs, and verify online/offline analysis with a clean-room receipt. |
-| P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Unclaimed | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run the disposable exact-head ASB/TUI journey and publish a privacy-safe paired receipt without closing AR-1686 prematurely. |
 | P0 | [AR-1691](../tasks/AR-1691.md): ASB default-dev fresh-user lifecycle gate | Unclaimed | Qualify the ASB clone-to-benchmark lifecycle with omitted dev selection, current-main provenance, recording, strict offline replay, comparison, and analysis. | A paired positive/negative journey receipt is recorded, but AR-1695 complete RunRequest wire-contract/backend qualification and AR-1696 TUI coverage repair remain required; after both, rerun the exact-head lifecycle and promote only with final receipt evidence. |
 | P0 | [AR-1693](../tasks/AR-1693.md): Default-dev quickstart qualification | Unclaimed | Prove the smallest selection-driven ASB journey from clone and omitted dev channel through benchmark, recording, offline replay, comparison, and analysis. | The exact paired quickstart receipt is recorded, but AR-1695 complete RunRequest wire-contract/backend qualification and AR-1696 TUI coverage repair remain required; after both, rerun and promote only with final hosted/post-merge evidence. |
 | P0 | [AR-1697](../tasks/AR-1697.md): Channel specification and current-head qualification repair | Unclaimed | Repair the missing authoritative channel specs and requalify ASB/TUI channel propagation, manifest provenance, compatibility, and default-dev quickstart at current main heads. | Complete valid AR-1674/1675-compatible state specifications, then run the current-head channel and quickstart matrix against ASB ad43609b and TUI 1cf4b43d without closing predecessor ARs from stale receipts. |
