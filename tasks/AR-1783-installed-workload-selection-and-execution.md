@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Select every development external workload and prove ASB uses its exact project-local identity end to end.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:37:54+00:00",
+  "updated_at": "2026-10-12T00:38:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -290,3 +290,6 @@ the suite from this end-to-end path.
 
 - 2026-10-12T00:37:54+00:00: Recorded command exit 101; command argv SHA-256
   b8d5820028fe4789a64739b2fb6ea5e4523dbe05c2e5fdc7d462c465f26f0075.
+
+- 2026-10-12T00:38:22+00:00: Recorded command exit 0; command argv SHA-256
+  d6a4561800f8e79160f1f30891a3f07ef4351a4749925c2eb7c421e26b160fb0.
