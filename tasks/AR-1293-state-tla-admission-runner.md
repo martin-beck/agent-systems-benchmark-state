@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Use the generated-seed unsigned-development path for provider-free runner and integration tests, recording qualification_authorized=false. Do not wait on archival seed recovery; create a separate formal-only successor only if signed publication qualification is explicitly requested.",
+  "next_action": "Independent re-review of PR #120 exact head 21a8b4c16c passed focused tests, formatting, and Ruff; full unittest was attempted but stopped on pre-existing SQLite lock contention and environment fixture errors. Mypy is blocked locally by missing types-jsonschema. Hosted full applicable checks must be confirmed before approval/merge.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
@@ -13,11 +13,21 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "spec_acceptance": {
+    "evidence_class": "mechanical",
+    "evidence_digest": "sha256:c28e39279421f5268daae50fe695d591dd8e0e55515d5ab68fd66722d86d9b49",
+    "evidence_ref": "specs/AR-1293.json",
+    "spec_ref": "specs/AR-1293.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
+  "spec_ref": "specs/AR-1293.json",
+  "spec_revision": 1,
+  "status": "done",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 751,
+  "task_revision": 794,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-29T16:14:18+00:00",
+  "updated_at": "2026-10-12T10:02:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2251,3 +2261,143 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-29T16:14:18+00:00: Released after removing development seed-digest dependency; remaining
   blockers are runner implementation/formal transition, not generated-seed availability.
+
+- 2026-10-12T09:31:46+00:00: UD-1802 removes TLC/TLA/model-check execution and reviewed seed
+  material as development blockers; reopen provider-free unsigned-development runner work.
+
+- 2026-10-12T09:32:11+00:00: Claimed by codex-ar1293-unsigned-dev-20261012.
+
+- 2026-10-12T09:33:00+00:00: Recorded command exit 0; command argv SHA-256
+  3e95e3685b194218de15062236c933b1c73749ca6b41a6b3686ba9d0b54414dd.
+
+- 2026-10-12T09:33:37+00:00: Recorded command exit 0; command argv SHA-256
+  001d2b2e06d1b20d52ade090ae78f6efedd82495ff5339dae6b64de7e53362b8.
+
+- 2026-10-12T09:34:13+00:00: Implemented tools/unsigned_development_runner.py and focused tests in
+  signed DCO commit c915ecbbca. The provider-free unsigned-development path creates a disposable
+  local seed, retains only its digest, emits provider_required=false, formal_execution=false, and
+  qualification_authorized=false, and never invokes TLC/TLA+ or a provider. Focused tests pass via
+  handoffctl run with PYTHONDONTWRITEBYTECODE=1.
+
+- 2026-10-12T09:34:27+00:00: Recorded command exit 2; command argv SHA-256
+  8b7a689458c8b0158a05d65d3e493367dc5194471d7ab5061e1cd3bbf8a88adb.
+
+- 2026-10-12T09:34:54+00:00: Recorded command exit 1; command argv SHA-256
+  b487540f37deebfd2bc2d03a91be71e37206a5b11f89984a60756e0cbd452f51.
+
+- 2026-10-12T09:35:02+00:00: Recorded command exit 1; command argv SHA-256
+  b487540f37deebfd2bc2d03a91be71e37206a5b11f89984a60756e0cbd452f51.
+
+- 2026-10-12T09:35:23+00:00: Heartbeat by codex-ar1293-unsigned-dev-20261012.
+
+- 2026-10-12T09:38:01+00:00: Recorded command exit 0; command argv SHA-256
+  001d2b2e06d1b20d52ade090ae78f6efedd82495ff5339dae6b64de7e53362b8.
+
+- 2026-10-12T09:38:08+00:00: Recorded command exit 0; command argv SHA-256
+  b487540f37deebfd2bc2d03a91be71e37206a5b11f89984a60756e0cbd452f51.
+
+- 2026-10-12T09:39:01+00:00: Recorded command exit 0; command argv SHA-256
+  940b065b853079cf11908036569b792c5ae0b4d6ebc688a6747caf5056f78a8f.
+
+- 2026-10-12T09:39:11+00:00: Recorded command exit 0; command argv SHA-256
+  89dbe25e28cd0ecd53b9b55dab08842244816ccd07a8da8a0b52a0379efceb83.
+
+- 2026-10-12T09:39:30+00:00: Recorded command exit 0; command argv SHA-256
+  4e28918a12c48034594890be10ef167de53f315cb1f9e2c213bc7d629bfdb807.
+
+- 2026-10-12T09:39:53+00:00: Heartbeat by codex-ar1293-unsigned-dev-20261012.
+
+- 2026-10-12T09:40:18+00:00: Heartbeat by codex-ar1293-unsigned-dev-20261012.
+
+- 2026-10-12T09:40:39+00:00: Recorded command exit 1; command argv SHA-256
+  0956b3acba101840e6ddbaf3fa57476840f5bacbb929f8e2d639253b7540ade4.
+
+- 2026-10-12T09:41:18+00:00: Heartbeat by codex-ar1293-unsigned-dev-20261012.
+
+- 2026-10-12T09:43:48+00:00: Heartbeat by codex-ar1293-unsigned-dev-20261012.
+
+- 2026-10-12T09:43:51+00:00: Recorded command exit 0; command argv SHA-256
+  001d2b2e06d1b20d52ade090ae78f6efedd82495ff5339dae6b64de7e53362b8.
+
+- 2026-10-12T09:43:55+00:00: Recorded command exit 0; command argv SHA-256
+  b487540f37deebfd2bc2d03a91be71e37206a5b11f89984a60756e0cbd452f51.
+
+- 2026-10-12T09:44:06+00:00: Recorded command exit 0; command argv SHA-256
+  4c8309df5f4eafec7b53e0a1e9cfcf98a068e4e62e50fc3411549133f6aa3ae2.
+
+- 2026-10-12T09:44:14+00:00: Recorded command exit 0; command argv SHA-256
+  77710e2cb21582f95940812c9e9eb7c470e8745bb66ee43d098911a2c18afe3f.
+
+- 2026-10-12T09:44:54+00:00: Heartbeat by codex-ar1293-unsigned-dev-20261012.
+
+- 2026-10-12T09:44:58+00:00: Recorded command exit 0; command argv SHA-256
+  00a4feaa399335e6d2d5f7adf479341fdb178db98de88f45ef9622e6ac576f93.
+
+- 2026-10-12T09:45:17+00:00: Independent review found Ruff PTH105 at receipt replacement. Repaired
+  with Path.replace in signed DCO commit 21a8b4c16c. Focused unsigned-development tests, Ruff,
+  source headers, and fresh exact-head PR checks pass. Remote branch and PR #120 both resolve to
+  21a8b4c16c; no TLC/model-check execution.
+
+- 2026-10-12T09:46:26+00:00: Heartbeat by codex-ar1293-unsigned-dev-20261012.
+
+- 2026-10-12T09:47:16+00:00: Coordinator recovery: prior worker stopped after implementation and
+  repair; PR #120 needs independent re-review and merge/post-merge verification. Preserve all signed
+  commits and evidence.
+
+- 2026-10-12T09:51:28+00:00: Claimed by ar1811-formal-separation-luna56-review.
+
+- 2026-10-12T09:51:45+00:00: Independent re-review of PR #120 at exact head
+  21a8b4c16c36e1884df83b38e64c34d0658df672: ACCEPT for the scoped unsigned-development runner
+  change. All three commits are GitHub-verified SSH signatures with matching DCO trailers; diff is
+  limited to the runner and tests, retains provider/formal/qualification non-authorizing flags,
+  digest-only disposable seed evidence, bounded workload validation, and no TLC/model-check
+  execution. Exact-head verify and AWQ shadow checks are successful. No merge authority granted;
+  retain open pending authorized merge/post-merge verification.
+
+- 2026-10-12T09:51:50+00:00: Independent review recorded: ACCEPT exact PR #120 head
+  21a8b4c16c36e1884df83b38e64c34d0658df672; no merge authority. Keep open for authorized merge and
+  post-merge verification without TLC.
+
+- 2026-10-12T09:59:04+00:00: Claimed by ar1293-merge-luna56.
+
+- 2026-10-12T09:59:21+00:00: Recorded command exit 1; command argv SHA-256
+  f2717203f91dd50db61ff886eae8470dda7bbb03d2bc9360ec4956db2bc68391.
+
+- 2026-10-12T09:59:54+00:00: Recorded command exit 0; command argv SHA-256
+  4e31d089ad871870392617c12c77843c1fbc7589cd43098beeef3058b8eccca4.
+
+- 2026-10-12T10:00:14+00:00: Recorded command exit 0; command argv SHA-256
+  12f570c4abdfc22793b2e69f6fdca8ab50864e003ed08b79e8ac27622ad21fb7.
+
+- 2026-10-12T10:00:27+00:00: Recorded command exit 0; command argv SHA-256
+  2dff59d226fdffffe0e9f04b235fb4002a5b8a9b30abd4780d742452a22050d7.
+
+- 2026-10-12T10:00:33+00:00: Recorded command exit 0; command argv SHA-256
+  9adba21cb51896176393735d827371d3eb4916f4f0d52be71510fb16eb6f04ec.
+
+- 2026-10-12T10:00:48+00:00: Re-review of state-repo PR #120 exact head
+  21a8b4c16c36e1884df83b38e64c34d0658df672: diff is one-line pathlib replacement from reviewed
+  parent fede553c; exact head and parent commits are SSH-signed with matching DCO, diff check clean.
+  Focused unsigned runner tests 2/2 pass; ruff format and ruff check pass. Full unittest discovery
+  was attempted in an archive and encountered existing generated-state/SQLite lock contention and
+  fixture failures before interruption; no TLC/TLA+/model-check run. Local mypy is unavailable
+  because types-jsonschema is not installed. Review approval is withheld pending hosted/full
+  applicable gate confirmation, not due to a new code defect.
+
+- 2026-10-12T10:01:16+00:00: Recorded command exit 0; command argv SHA-256
+  a0924a7cc57b17ea4773590f8ab1b02dd8269e1f8f0254fe01f548309a749202.
+
+- 2026-10-12T10:01:41+00:00: Recorded command exit 0; command argv SHA-256
+  aabffcba9052320929dfffb5d7b4a622e01e9b046f01e79506565790dc4df31a.
+
+- 2026-10-12T10:02:04+00:00: Bound task spec specs/AR-1293.json revision 1.
+
+- 2026-10-12T10:02:14+00:00: PR #120 exact candidate 21a8b4c16c36e1884df83b38e64c34d0658df672 merged
+  as 48ab38c2dc617fa46442d16fd9e64b3e34b88098; hosted checks and detached origin/main
+  unsigned-development/source-header checks passed; no TLC/model-check execution.
+
+- 2026-10-12T10:02:47+00:00: PR #120 merged at exact squash head
+  48ab38c2dc617fa46442d16fd9e64b3e34b88098 from independently accepted candidate
+  21a8b4c16c36e1884df83b38e64c34d0658df672; hosted verify and AWQ shadow checks passed; post-merge
+  unsigned-development tests (2) and source-header verification passed from detached origin/main; no
+  TLC/model-check execution.

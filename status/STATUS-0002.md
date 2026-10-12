@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| Role | unassigned |
+| Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
@@ -4266,7 +4268,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4274,7 +4276,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose an easy command to record selected/all workload responses and run the next benchmark offline from the resulting cassette. |
-| Next action | Add an upstream-supported exact-revision mutation that binds branch and worktree_key on an active legacy task, vendor it into ASB state, then bind AR-1652 to repair/ar-1652-record-replay and agent-systems-benchmark-ar-1652-record-replay before any wrapped product command. |
+| Next action | Coordinator/independent reviewer to accept evidence and release AR-1652; no product PR is needed because exact protected main already contains the implementation. |
 
 ### AR-1653 — Current-main development-channel consumption
 
@@ -4500,7 +4502,7 @@
 | Summary | Raise the repaired ASB coordination checkout back above the unchanged 95&#37; coverage gate with behavior-focused tests. |
 | Next action | Add focused tests for authority adapters, rollback/CAS lifecycle, handoff leases, oracle lifecycle, and upgrade contract paths, then pass the unchanged strict gate. |
 
-### AR-1674 — ASB channel option propagation and default persistence
+### AR-1674 — Project-Persisted Channel Resolution for Every ASB Command
 
 | Field | Value |
 | --- | --- |
@@ -4511,8 +4513,8 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Carry the explicit release-channel option through install, status, launch, upgrade, rollback, and remove, with dev as the persisted default and stable typed diagnostics. |
-| Next action | Implement one shared channel selector for every supported ASB command, persist the selected channel for subsequent runs, and add human/JSON tests for omitted dev, explicit dev, and unavailable future channels. |
+| Summary | Make project init persist channel=dev and make every ASB command resolve one validated project channel consistently. |
+| Next action | Extend the project configuration schema and add one shared channel resolver that every executable command receives, then qualify default, override, persistence, and unavailable-channel behavior. |
 
 ### AR-1675 — ASB channel manifest and current-main provenance
 
@@ -4672,7 +4674,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4680,7 +4682,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
+| Next action | No further action; AR-1686 is done. Post-merge evidence is accepted and durable. |
 
 ### AR-1687 — Development/mock provider-bound comparison qualification
 
@@ -4694,3 +4696,12 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
+| Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
+
+### AR-1688 — Runner-owned cassette capture and replay qualification
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |

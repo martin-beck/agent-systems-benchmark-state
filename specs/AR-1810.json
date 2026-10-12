@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1810.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"ordinary-cli-bootstrap","description":"The installed ASB executable creates a runtime-owned cli2key authority for selected live run and sweep requests instead of emitting the missing-sidecar rejection."},
+    {"id":"verified-bridge-only","description":"Bootstrap accepts only the verified project-local cli2key receipt and pinned bridge identity; callers cannot supply endpoint, key, executable, or alternate bridge authority."},
+    {"id":"opaque-attempt-lifecycle","description":"Normal dispatch receives only an opaque attempt factory while one loopback sidecar and private staging are retained and reaped for all terminal outcomes."},
+    {"id":"full-command-journey","description":"Public command-level fake coverage proves install, selection, workload run, bounded sweep, results, report, comparison, cancellation, and typed failures."},
+    {"id":"live-development-workload","description":"One bounded opt-in live development workload with the Codex agent reaches the real cli2key bridge path and records only redacted typed evidence."}
+  ],
+  "definition_of_done": ["A user can install/select cli2key and execute a live Codex-agent workload and bounded sweep through the ordinary asb command; independent review, exact-head CI, signed merge, and post-merge verification pass."],
+  "inputs": [
+    {"id":"sidecar-lifecycle","description":"AR-1729 runtime-owned sidecar lifecycle."},
+    {"id":"codex-adapter","description":"AR-1731 cli2key Codex adapter route."},
+    {"id":"run-sweep-contract","description":"AR-1732 and AR-1733 execution and qualification contracts."},
+    {"id":"verified-install","description":"AR-1779 project-local bridge installation receipt."},
+    {"id":"runtime-wiring-seams","description":"AR-1797 and AR-1799 sidecar and authority seams whose standard CLI consumer remains missing."}
+  ],
+  "outputs": [{"id":"ordinary-cli-cli2key","description":"Full standard-CLI cli2key live workload and sweep integration."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl", "credential-free-fakes", "opt-in-live-test"],
+  "forbidden_tools": ["auth-file-scraping", "credential-output", "oauth-copy", "caller-supplied-launch", "ambient-bridge-substitution", "provider-fallback", "nested-agent-benchmark", "production-promotion", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id":"ordinary-cli-fake-journey","description":"The public installed CLI completes the fake cli2key install-to-run and sweep journey with hostile negative coverage."},
+    {"id":"live-development-workload","description":"A bounded opt-in live development workload reaches the real bridge path or reports an actionable typed development failure without secret retention."}
+  ]
+}

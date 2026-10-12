@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1804.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "cross-module-semaphore", "description": "All process-backed Cargo, provider, comparison, and source-checkout fixtures share one bounded test-only concurrency admission mechanism."},
+    {"id": "parallel-determinism", "description": "The default parallel full ASB CLI gate produces stable successful results without ambient process or fixture contention."},
+    {"id": "hostile-contention", "description": "Contention, timeout, cancellation, cleanup, and semaphore exhaustion cases fail closed without leaks or unbounded queues."}
+  ],
+  "definition_of_done": ["AR-1801 exact signed head plus the cross-module semaphore repair pass focused hostile tests, default parallel asb-cli/workspace gates, independent review, exact-head CI, signed merge, and post-merge verification."],
+  "inputs": [{"id": "ar1801-evidence", "description": "AR-1801 exact-head left 6/right 0 provider/comparison failures under direct parallel Cargo."}, {"id": "ar1803-evidence", "description": "AR-1803 reproduced shifting provider/comparison/source-checkout failures and bounded make-test success."}],
+  "outputs": [{"id": "fixture-semaphore", "description": "Cross-module bounded process-fixture admission and hostile contention regression coverage."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-output", "ambient-network-substitution", "gate-weakening", "force-push", "flaky-test-suppression"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "contention-matrix", "description": "Positive, cancellation, timeout, cleanup, exhaustion, and hostile contention tests pass."}, {"id": "default-parallel", "description": "The default parallel full asb-cli and workspace gates pass repeatedly without process-backed fixture interference."}]
+}

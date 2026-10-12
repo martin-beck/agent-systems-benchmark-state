@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1799.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "receipt-bound", "description": "Only an exact verified project-local cli2key receipt can produce the runtime sidecar authority."},
+    {"id": "opaque-key", "description": "Invocation key bytes and OAuth material never cross the runtime authority boundary or enter evidence."},
+    {"id": "opaque-attempt", "description": "The runtime issues an opaque live attempt consumable by the Codex adapter for one run or bounded sweep."},
+    {"id": "hostile-lifecycle", "description": "Substitution, stale identity, malformed readiness, crash, timeout, cancellation, and cleanup failures are typed and fail closed."},
+    {"id": "no-fallback", "description": "cli2key failures never fall back to OpenRouter, API keys, replay, or another provider."}
+  ],
+  "definition_of_done": ["Runtime seam and public fake tests are merged with exact-head CI and post-merge evidence."],
+  "inputs": [{"id": "sidecar", "description": "AR-1729 Cli2KeySidecar lifecycle."}, {"id": "adapter", "description": "AR-1731 Codex cli2key adapter."}, {"id": "wiring", "description": "AR-1797 blocked CLI wiring."}],
+  "outputs": [{"id": "authority-seam", "description": "Runtime-owned receipt-bound cli2key live-attempt authority."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl", "credential-free-fakes"],
+  "forbidden_tools": ["auth-file-scraping", "credential-output", "oauth-copy", "provider-fallback", "force-push", "gate-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical"],
+  "gates": [{"id": "runtime-authority", "description": "Focused fake and hostile lifecycle matrix passes."}, {"id": "exact-main", "description": "Protected merge and post-merge workflows are green."}]
+}

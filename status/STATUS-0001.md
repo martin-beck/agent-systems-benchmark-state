@@ -7,18 +7,18 @@
 
 ## Portfolio overview
 
-**795 ARs tracked** across 8 active status categories.
+**814 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 85 |
-| **Planned** | Defined work awaiting promotion or dependencies | 87 |
-| **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 584 |
+| **Planned** | Defined work awaiting promotion or dependencies | 83 |
+| **Future** | Deferred roadmap work | 2 |
+| **Done** | Accepted, integrated, and durably verified | 606 |
 | **Cancelled** | Stopped with a recorded rationale | 2 |
-| **Superseded** | Replaced by another AR | 32 |
+| **Superseded** | Replaced by another AR | 33 |
 
 ## Company hierarchy rollup
 
@@ -26,17 +26,17 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Metric | Value |
 | --- | ---: |
-| Tasks | 795 |
+| Tasks | 814 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 4 |
+| Open or active | 3 |
 | Blocked | 85 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 795 | 4 | 85 | 584 |
+| unassigned | unassigned | 814 | 3 | 85 | 606 |
 
 ## Task drill-down
 
@@ -4524,7 +4524,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4532,7 +4532,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. |
-| Next action | Use the generated-seed unsigned-development path for provider-free runner and integration tests, recording qualification_authorized=false. Do not wait on archival seed recovery; create a separate formal-only successor only if signed publication qualification is explicitly requested. |
+| Next action | Independent re-review of PR #120 exact head 21a8b4c16c passed focused tests, formatting, and Ruff; full unittest was attempted but stopped on pre-existing SQLite lock contention and environment fixture errors. Mypy is blocked locally by missing types-jsonschema. Hosted full applicable checks must be confirmed before approval/merge. |
 
 ### AR-1294 — State formal-gate baseline integrity
 
@@ -5002,5 +5002,3 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | --- | --- |
 | Status | done |
 | Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
