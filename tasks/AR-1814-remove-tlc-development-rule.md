@@ -3,7 +3,7 @@
   "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1811"],
+  "depends_on": [],
   "id": "AR-1814",
   "next_action": "Promote and claim; inspect ruleset 24750310, remove only the stale TLC/Alloy required status, verify the minimal diff, then complete PR #606 merge and post-merge verification.",
   "observed_branch": "",
