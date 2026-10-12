@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1811-development-formal-workflow-separation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T12:25:05+00:00",
   "depends_on": [],
   "id": "AR-1811",
   "next_action": "Monitor PR #606 exact head d9972679899cf18c1c9ab87e694ad639a2c18786 until all required non-TLC checks are green; then obtain independent review, merge, exact-main post-merge verification, and durable closure.",
@@ -153,15 +153,15 @@
       "decision"
     ]
   },
-  "owner": "",
+  "owner": "coordinator-ar1811-merge",
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:25:02+00:00",
+  "updated_at": "2026-10-12T10:25:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -311,3 +311,5 @@ tests and update the generated quality documentation.
 - 2026-10-12T10:25:02+00:00: AR-1814 removed only the stale TLC status from ruleset 24750310; PR
   #606 is now clean with all ordinary checks green and state independent review accepted. Resume
   merge transition without admin bypass.
+
+- 2026-10-12T10:25:05+00:00: Claimed by coordinator-ar1811-merge.
