@@ -7,7 +7,7 @@
     "AR-1775"
   ],
   "id": "AR-1772",
-  "next_action": "Blocked pending AR-1801 follow-up to AR-1762 tool-discovery fixture isolation: cargo probe must be pinned/isolated so path_discovery expected fixture remains deterministic.",
+  "next_action": "Blocked on dedicated Cargo tool-discovery fixture isolation successor; reporter focused/diagnostic tests are green, but exact full asb-cli gate has two ambient Cargo probe failures. Do not accept or waive until full gate is green.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "f9ad19ff24c69a0bd08d3dc3d9f8b6df09c98a41",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:29:07+00:00",
+  "updated_at": "2026-10-12T05:29:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -193,3 +193,12 @@ allowed outside this helper.
 
 - 2026-10-12T05:29:07+00:00: Recorded command exit 101; command argv SHA-256
   efcca2fcdc32708cf3d10e499b46d7e57b0561edfd7d1fa792c8d22f4f2a624b.
+
+- 2026-10-12T05:29:15+00:00: Fresh exact-candidate full gate diagnosis: cargo test --locked -p
+  asb-cli --lib on AR-1772 head f9ad19ff ran 432 tests: 430 passed, 2 failed, 0 ignored. Failures
+  are tool_discovery::tests::path_discovery_is_deterministic_and_bounded and
+  tool_discovery::tests::version_probe_reaps_background_processes_without_pipe_hang. Both expected
+  Cargo fixture version null with reason version_probe_unavailable but observed ambient Cargo
+  version cargo 1.0 and reason null. Reporter step_progress 3/3 and diagnostic_contract
+  ordinary_cli_producers 1/1 pass. This is unrelated AR-1772 product behavior; preserve full-gate
+  blocker and do not waive.

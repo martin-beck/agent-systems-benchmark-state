@@ -1098,7 +1098,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output. |
-| Next action | Blocked pending AR-1801 follow-up to AR-1762 tool-discovery fixture isolation: cargo probe must be pinned/isolated so path_discovery expected fixture remains deterministic. |
+| Next action | Blocked on dedicated Cargo tool-discovery fixture isolation successor; reporter focused/diagnostic tests are green, but exact full asb-cli gate has two ambient Cargo probe failures. Do not accept or waive until full gate is green. |
 
 ### AR-1773 — Universal command step instrumentation
 
