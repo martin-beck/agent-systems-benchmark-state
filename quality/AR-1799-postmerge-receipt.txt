@@ -1,0 +1,12 @@
+AR-1799 post-merge acceptance receipt
+
+PR: #601
+Reviewed head: 1213928b8724cfc740404397b9e14161f56367cc
+Merge commit: e0e44a7d8b45676ebe683bc44f4a0a6d4eb8f0a9
+Merge mode: non-squash merge
+Hosted checks: 15/15 required checks SUCCESS at reviewed head
+Protected main: origin/main fetched and verified at e0e44a7d8b45676ebe683bc44f4a0a6d4eb8f0a9
+Post-merge verification: make -C agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam test; exit 0
+Post-merge process check: no active make/cargo test process
+
+This receipt contains no credentials, prompts, transcripts, or private paths.
