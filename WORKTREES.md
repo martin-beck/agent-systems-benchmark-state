@@ -58,7 +58,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1689-tui-qualification` | `qualification/ar-1689-tui-fresh-user` | `30641f50d68e` | 0 | behind 20, ahead 0 |
 | `agent-systems-benchmark-ar-1772-unified-step-progress-reporter` | `feature/ar-1772-unified-step-progress-reporter` | `65ee830e6659` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `f78a1006202d` | 0 | behind 18, ahead 0 |
-| `agent-systems-benchmark-ar-1774-status-progress-completeness-ci` | `feature/ar-1774-status-progress-completeness-ci` | `a0a978f13495` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1774-status-progress-completeness-ci` | `feature/ar-1774-status-progress-completeness-ci` | `a0a978f13495` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `tests/quality/test_status_progress_completeness.py`, `tools/quality/check_status_progress_completeness.py` |
 | `agent-systems-benchmark-ar-1775-configurable-output-router-and-levels` | `feature/ar-1775-configurable-output-router-and-levels` | `d7c08c106e52` | 0 | behind 59, ahead 2 |
 | `agent-systems-benchmark-ar-1779-default-usable-tool-install-command` | `feature/ar-1779-default-usable-tool-install-command` | `daf2d3ee9750` | 0 | behind 78, ahead 4 |
 | `agent-systems-benchmark-ar-1780-installed-tool-workload-execution-qualification` | `feature/ar-1780-installed-tool-workload-execution-qualification` | `ca494d506135` | 0 | behind 49, ahead 0 |
