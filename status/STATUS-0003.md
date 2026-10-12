@@ -1681,11 +1681,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1773-catalog-repair-luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance. |
@@ -2566,7 +2566,7 @@ flowchart LR
         AR_1811["AR-1811 - In progress"]:::status_in_progress
         AR_1812["AR-1812 - Blocked"]:::status_blocked
         AR_1813["AR-1813 - In progress"]:::status_in_progress
-        AR_1814["AR-1814 - In progress"]:::status_in_progress
+        AR_1814["AR-1814 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

@@ -2,14 +2,14 @@
 {
   "branch": "feature/ar-1814-ruleset-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T12:23:00+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1814",
   "next_action": "Monitor exact-main post-merge workflows for signed merge 5a6c5477; after all terminal success, accept/release AR-1814 with ruleset before/after receipt and doctor evidence.",
   "observed_branch": "feature/ar-1814-ruleset-repair",
   "observed_dirty": 0,
   "observed_head": "07c590e712df11e555228abf1b9de4add3510d4f",
-  "owner": "ar1773-catalog-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1814-remove-tlc-development-rule.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1814.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Remove stale TLC development ruleset requirement",
-  "updated_at": "2026-10-12T10:38:16+00:00",
+  "updated_at": "2026-10-12T10:38:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1814-ruleset-repair"
 }
 ---
@@ -69,3 +69,11 @@ the remaining required checks.
 - 2026-10-12T10:38:16+00:00: Ruleset 24750310 before/after digests recorded; exact comparison proves
   only TLC and Alloy recovery models was removed. PR #606 merged as signed 5a6c5477. All exact-main
   post-merge workflows terminal success, including Development formal assurance without TLC.
+
+- 2026-10-12T10:38:25+00:00: Completed minimal ruleset repair. Before full ruleset digest
+  sha256:dd371da427a5c6b57070dcb85d552c71c1b500164cce39c4ad42bcd8fdc5aaa2; after full digest
+  sha256:57c08a38ee0feb6a755b04956302a5250e17724d59a2f06b748457a03bc4e5fe; canonical policy
+  e0e30afa6076eee0da773e7fb2627127a4515fe45f87ae2f47478d1e5aa627a8 ->
+  3ff248abfde816df42ef76f77d3526e58dbf957ff3f2bfcd157b1127113e53eb. Only TLC/Alloy status removed.
+  PR #606 merged signed as 5a6c5477; all 11 post-merge workflows terminal success, Development
+  formal assurance retained Kani/Loom and no TLC.
