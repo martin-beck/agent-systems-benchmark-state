@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1810-cli2key-standard-cli",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T10:50:04+00:00",
+  "claim_expires": "2026-10-12T11:09:46+00:00",
   "depends_on": [
     "AR-1729",
     "AR-1731",
@@ -33,9 +33,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Complete cli2key Standard CLI Integration",
-  "updated_at": "2026-10-12T10:08:16+00:00",
+  "updated_at": "2026-10-12T10:09:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1810-cli2key-standard-cli"
 }
 ---
@@ -99,3 +99,5 @@ dispatch.
 - 2026-10-12T10:08:16+00:00: Reconciled generated state and live doctor successfully after archiving
   oversized generated pycache. Non-TLC gates: focused runtime-control 3/3 passed; full asb-cli
   library suite 437/437 passed offline. No TLC run.
+
+- 2026-10-12T10:09:46+00:00: Heartbeat by ar1810-cli2key-luna56.
