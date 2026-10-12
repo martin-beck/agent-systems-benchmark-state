@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Refresh exact workflow provenance digest and requalify signed PR head e644f9b0",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:55:42+00:00",
+  "updated_at": "2026-10-12T00:56:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -425,4 +425,7 @@ the suite from this end-to-end path.
 - 2026-10-12T00:55:41+00:00: Heartbeat by ar1783_workload_selection_luna56.
 
 - 2026-10-12T00:55:42+00:00: Recorded command exit 0; command argv SHA-256
+  0f0120a9a80647761b7023e1aec09161f189badcb9a7de98b9ba33922d55f476.
+
+- 2026-10-12T00:56:22+00:00: Recorded command exit 0; command argv SHA-256
   0f0120a9a80647761b7023e1aec09161f189badcb9a7de98b9ba33922d55f476.
