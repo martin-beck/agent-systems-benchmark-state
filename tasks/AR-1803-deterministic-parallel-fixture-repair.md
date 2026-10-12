@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Force-with-lease update PR #599 to reviewed 547e42dd; wait every hosted check including provenance, merge supported non-squash only when green; then verify main and close.",
+  "next_action": "Closed: PR #599 merged as 3c7ca1c1; exact main verified and post-merge gates green. No further action.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "547e42dd90c9e0029dd4caea8a64226123cdee85",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "done",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 210,
+  "task_revision": 211,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:45:26+00:00",
+  "updated_at": "2026-10-12T04:46:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -685,3 +685,6 @@ as the affected successor linkage and evidence source.
   signed/DCO candidate 547e42dd is ancestor of origin/main and tree-equivalent; all 15 hosted checks
   green including provenance. Post-merge default-parallel 433/433 and make test exit 0. No successor
   required; AR-1803 deterministic fixture repair is complete.
+
+- 2026-10-12T04:46:46+00:00: Correct stale next_action after durable completion; owner remains
+  released.

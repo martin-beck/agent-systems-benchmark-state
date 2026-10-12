@@ -1532,7 +1532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
-| Next action | Force-with-lease update PR #599 to reviewed 547e42dd; wait every hosted check including provenance, merge supported non-squash only when green; then verify main and close. |
+| Next action | Closed: PR #599 merged as 3c7ca1c1; exact main verified and post-merge gates green. No further action. |
 
 ### AR-1804 — Cross-module fixture semaphore
 
