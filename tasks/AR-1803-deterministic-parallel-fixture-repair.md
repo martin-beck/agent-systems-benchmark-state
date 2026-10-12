@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 165,
+  "task_revision": 166,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:27:08+00:00",
+  "updated_at": "2026-10-12T04:27:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -546,3 +546,6 @@ as the affected successor linkage and evidence source.
   433/433 passed serial, default-parallel 433/433 passed in 20.45s, and make test exited 0. The
   prior provenance topology failure is removed because this topic has one linear product commit atop
   current main. Fresh independent exact-head review is required before publication.
+
+- 2026-10-12T04:27:11+00:00: Recorded command exit 0; command argv SHA-256
+  3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
