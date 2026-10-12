@@ -28,21 +28,21 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
-| #602 | `feature/ar-1772-unified-step-progress-reporter@0d2c8365d16c` | `main` | UNKNOWN | - | Add unified human step progress reporter |
+| #602 | `feature/ar-1772-unified-step-progress-reporter@0d2c8365d16c` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Add unified human step progress reporter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38209039235 | `0d2c8365d16c` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38209039175 | `0d2c8365d16c` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38209039169 | `0d2c8365d16c` | pull_request | Huawei MIT source headers | in_progress:- |
+| 38209039145 | `0d2c8365d16c` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38209039142 | `0d2c8365d16c` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 38209039129 | `0d2c8365d16c` | pull_request | Formal assurance | in_progress:- |
+| 38209039117 | `0d2c8365d16c` | pull_request | Repository quality | in_progress:- |
+| 38209039105 | `0d2c8365d16c` | pull_request | Fault assurance | in_progress:- |
+| 38209039101 | `0d2c8365d16c` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38209039078 | `0d2c8365d16c` | pull_request | Portable protected-main provenance | in_progress:- |
+| 38209039072 | `0d2c8365d16c` | pull_request | Rust verification | in_progress:- |
 | 38206793291 | `e0e44a7d8b45` | push | Cross-repository development broker qualification | completed:success |
-| 38206793200 | `e0e44a7d8b45` | push | Rust verification | completed:failure |
-| 38206793189 | `e0e44a7d8b45` | push | Formal assurance | completed:success |
-| 38206793178 | `e0e44a7d8b45` | push | Huawei MIT source headers | completed:success |
-| 38206793177 | `e0e44a7d8b45` | push | Emulated aarch64 portability | completed:success |
-| 38206793159 | `e0e44a7d8b45` | push | Portable protected-main provenance | completed:failure |
-| 38206793147 | `e0e44a7d8b45` | push | Fault assurance | completed:success |
-| 38206793146 | `e0e44a7d8b45` | push | Repository quality | completed:failure |
-| 38206793142 | `e0e44a7d8b45` | push | Hosted portability and native qualification | completed:success |
-| 38206793125 | `e0e44a7d8b45` | push | Credential-free benchmark path | completed:success |
-| 38205921465 | `1213928b8724` | pull_request | Portable protected-main provenance | completed:success |
-| 38205921454 | `1213928b8724` | pull_request | Rust verification | completed:success |
