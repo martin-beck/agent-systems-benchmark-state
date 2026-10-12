@@ -38,7 +38,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38215438037 | `1494e4741968` | push | Cross-repository development broker qualification | completed:success |
 | 38215438020 | `1494e4741968` | push | Huawei MIT source headers | completed:success |
 | 38215438013 | `1494e4741968` | push | Credential-free benchmark path | completed:success |
-| 38215438011 | `1494e4741968` | push | Rust verification | in_progress:- |
+| 38215438011 | `1494e4741968` | push | Rust verification | completed:failure |
 | 38215438004 | `1494e4741968` | push | Portable protected-main provenance | completed:failure |
 | 38215437999 | `1494e4741968` | push | Fault assurance | completed:success |
 | 38215437990 | `1494e4741968` | push | Repository quality | completed:failure |
