@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:25:13+00:00",
+  "updated_at": "2026-10-12T10:34:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -55,3 +55,6 @@ fabricate authority in the CLI or introduce a provider fallback.
 
 - 2026-10-12T10:21:08+00:00: Recorded exact PR head and the inherited TLC workflow dependency; no
   TLC execution performed locally.
+
+- 2026-10-12T10:34:32+00:00: Recorded command exit 0; command argv SHA-256
+  b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
