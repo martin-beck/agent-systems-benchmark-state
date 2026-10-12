@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T13:59:57+00:00",
   "depends_on": [],
   "id": "AR-1815",
-  "next_action": "Exact merge e57982a is published. Repository quality run 38246184722 attempts 1 and 2 both failed only on repeated external analyzer-download HTTP 504; rerun the failed workflow once more, then require terminal-success or record the external dependency as the sole blocker without weakening gates.",
+  "next_action": "Exact merge e57982a is published. Repository quality run 38246184722 attempt 3 is in progress after two external HTTP 504 failures; monitor it to terminal-success or record the external dependency as the sole blocker without weakening gates. Other exact-main workflows must also finish green.",
   "observed_branch": "recovery/ar-1815-provenance",
   "observed_dirty": 0,
   "observed_head": "ab4f4c6a81f543e049759d199cca675c7370a1dc",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:02:46+00:00",
+  "updated_at": "2026-10-12T12:03:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -135,3 +135,7 @@ introduce a TLC/model-check dependency for development.
 
 - 2026-10-12T12:02:46+00:00: Recorded command exit 0; command argv SHA-256
   ee0828b2e7ad086de644de4f38823e83462721ce84eb45f16d6c8557ef024050.
+
+- 2026-10-12T12:03:22+00:00: Authoritative GitHub API confirms Repository quality run 38246184722
+  attempt 3 is in_progress; it is executing pinned quality-tool setup. Earlier attempts 1 and 2
+  failed only at analyzer download HTTP 504. No rerun was lost.
