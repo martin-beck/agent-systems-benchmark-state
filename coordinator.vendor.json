@@ -385,7 +385,7 @@
       "source": "tools/production_upgrade_binding.py"
     },
     "tools/role_assignment.py": {
-      "sha256": "48f95f8df4c2557620c2bacb83731ffb22de871d6cc12267f42ba4325c6cb9e8",
+      "sha256": "23e014c67670fc3ec3fda6ae6f2aa996074cf9713b62978ab1362e471160fbb7",
       "source": "tools/role_assignment.py"
     },
     "tools/role_registry.py": {
