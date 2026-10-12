@@ -28,8 +28,8 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
-| #595 | `feature/ar-1775-configurable-output-router-and-levels-v8@f805a4e46c98` | `main` | BEHIND | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb-cli): configurable output router and levels |
-| #596 | `feature/ar-1783-installed-workload-selection-and-execution@ad64a90f198d` | `main` | BEHIND | QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | chore(integration): restore protected-main policy identity |
+| #595 | `feature/ar-1775-configurable-output-router-and-levels-v8@f805a4e46c98` | `main` | BEHIND | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb-cli): configurable output router and levels |
+| #596 | `feature/ar-1783-installed-workload-selection-and-execution@ad64a90f198d` | `main` | BEHIND | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | chore(integration): restore protected-main policy identity |
 
 ## Recent workflows
 
@@ -38,12 +38,12 @@ Generated from local Git and GitHub. Do not edit.
 | 38190460089 | `ad64a90f198d` | pull_request | Credential-free benchmark path | in_progress:- |
 | 38190460077 | `ad64a90f198d` | pull_request | Huawei MIT source headers | queued:- |
 | 38190460039 | `ad64a90f198d` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38190460014 | `ad64a90f198d` | pull_request | Portable protected-main provenance | in_progress:- |
-| 38190460001 | `ad64a90f198d` | pull_request | Hosted portability and native qualification | queued:- |
-| 38190459992 | `ad64a90f198d` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 38190460014 | `ad64a90f198d` | pull_request | Portable protected-main provenance | completed:failure |
+| 38190460001 | `ad64a90f198d` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38190459992 | `ad64a90f198d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38190459987 | `ad64a90f198d` | pull_request | Rust verification | in_progress:- |
 | 38190459984 | `ad64a90f198d` | pull_request | Fault assurance | in_progress:- |
 | 38190459970 | `ad64a90f198d` | pull_request | Repository quality | in_progress:- |
-| 38190459933 | `ad64a90f198d` | pull_request | Formal assurance | queued:- |
+| 38190459933 | `ad64a90f198d` | pull_request | Formal assurance | in_progress:- |
 | 38190459926 | `ad64a90f198d` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 38190265363 | `5201a0369193` | push | Emulated aarch64 portability | in_progress:- |
