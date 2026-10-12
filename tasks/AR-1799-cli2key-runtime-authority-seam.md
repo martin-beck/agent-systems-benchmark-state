@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Implement receipt validation, sidecar bootstrap, opaque attempt issuance, and lifecycle tests.",
+  "next_action": "Rerun focused asb-runtime cli2key_sidecar tests, then full gates.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 1,
   "observed_head": "6761a6d0bcd5d5982c92176f4adf687696de90d6",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:21:44+00:00",
+  "updated_at": "2026-10-12T04:21:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -92,3 +92,7 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:21:44+00:00: Recorded command exit 101; command argv SHA-256
   9dc1be90e42281958342d9209775796374f16ae9dc1e27abb99d05221dff56e1.
+
+- 2026-10-12T04:21:51+00:00: Focused cargo test exit 101 diagnosed: asb-runtime -D missing-docs
+  rejected nine public Cli2KeyRuntimeReceipt fields. Repair: added rustdoc for every public field;
+  rerun formatter and focused runtime tests.

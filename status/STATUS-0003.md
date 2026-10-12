@@ -1476,7 +1476,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
-| Next action | Implement receipt validation, sidecar bootstrap, opaque attempt issuance, and lifecycle tests. |
+| Next action | Rerun focused asb-runtime cli2key_sidecar tests, then full gates. |
 
 ### AR-1800 — Controlled local workload acquisition backend
 
