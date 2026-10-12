@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Add exact Huawei 2026/SPDX MIT header to test_fixture_semaphore.rs, create signed follow-up, push PR #598, and rerun exact-head CI. |
+| Next action | Monitor rerun PR #598 checks at exact head d625c822; merge only after every required check is green. |
 
 
 ## Dependency graph

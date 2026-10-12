@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Add exact Huawei 2026/SPDX MIT header to test_fixture_semaphore.rs, create signed follow-up, push PR #598, and rerun exact-head CI.",
+  "next_action": "Monitor rerun PR #598 checks at exact head d625c822; merge only after every required check is green.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 0,
   "observed_head": "d625c822eac51820cc504d995f89988b736348fa",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:17:08+00:00",
+  "updated_at": "2026-10-12T03:17:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -491,3 +491,9 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:17:08+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-10-12T03:17:16+00:00: Policy repair committed and pushed through handoffctl: signed DCO
+  commit d625c822 adds the exact adjacent Huawei 2026/SPDX MIT header to test_fixture_semaphore.rs;
+  fmt and focused semaphore tests pass. PR #598 branch now updates from reviewed 4cda972c to
+  d625c822, so CI must be evaluated at the new exact head. Prior hosted failures were header-only
+  and are repaired.
