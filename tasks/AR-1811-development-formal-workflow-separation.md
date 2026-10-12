@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T12:02:02+00:00",
   "depends_on": [],
   "id": "AR-1811",
-  "next_action": "Monitor PR #606 exact head da764cf7 until all required non-TLC checks are green; then independent review, merge, exact-main post-merge verification, and durable closure.",
+  "next_action": "Monitor PR #606 exact head d9972679899cf18c1c9ab87e694ad639a2c18786 until all required non-TLC checks are green; then obtain independent review, merge, exact-main post-merge verification, and durable closure.",
   "observed_branch": "feature/ar-1811-development-formal-workflow-separation",
   "observed_dirty": 0,
   "observed_head": "d9972679899cf18c1c9ab87e694ad639a2c18786",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:02:50+00:00",
+  "updated_at": "2026-10-12T10:08:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -122,3 +122,6 @@ tests and update the generated quality documentation.
 
 - 2026-10-12T10:02:50+00:00: Recorded command exit 0; command argv SHA-256
   1e89cfc3e9861df745b363d9d839cba4ebf3213e91b9c77468f912e7f67cb87f.
+
+- 2026-10-12T10:08:02+00:00: Updated exact-head next action after rebasing PR #606 onto current
+  main; development TLC remains excluded.
