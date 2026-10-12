@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Run the full make test gate now that non-test visibility is repaired; then run default-parallel asb-cli tests.",
+  "next_action": "Rerun workflow_transcript provenance test once after updating the generated CLI source digest, then rerun full make test.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 2,
   "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:55:38+00:00",
+  "updated_at": "2026-10-12T02:55:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -208,3 +208,14 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:55:38+00:00: Recorded command exit 2; command argv SHA-256
   3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
+
+- 2026-10-12T02:55:58+00:00: Exact full make test failure: all prior formatting, Clippy, workspace
+  tests, asb-cli unit tests (429/429), diagnostic contract tests (9/9), and most integration gates
+  passed; workflow_transcript::provenance_binds_the_exact_cli_and_public_fixture_sources failed at
+  crates/asb-cli/tests/workflow_transcript.rs:330. Assertion reported provenance drift for
+  crates/asb-cli/src/lib.rs: computed SHA-256
+  776b2553bd492bb3dd098b21879f0f5102a32c5619a687f85d6d753fb24d7598, recorded
+  2e153e8a62504c5b93f17e322cb848c1445ed3d9df798795d75fdeae4953fbe0. Cargo ended exit 101 and make:
+  *** [Makefile:112: test] Error 101. This is generated provenance drift caused by the intended
+  source change, not a qualification failure. Updated
+  docs/examples/asb-cli-workflow-v1.provenance.json cli_source_sha256 to the exact computed digest.

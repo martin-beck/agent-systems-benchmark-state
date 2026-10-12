@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Run the full make test gate now that non-test visibility is repaired; then run default-parallel asb-cli tests. |
+| Next action | Rerun workflow_transcript provenance test once after updating the generated CLI source digest, then rerun full make test. |
 
 
 ## Dependency graph
