@@ -5,10 +5,11 @@
   "claim_expires": "",
   "depends_on": [
     "AR-1779",
-    "AR-1799"
+    "AR-1799",
+    "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Coordinator must extend the runtime boundary with a production constructor for a cli2key sidecar-backed LiveProviderAttemptFactory (or equivalent opaque runtime source), then expose a verified AR-1779 runtime-receipt resolver contract. AR-1812 can resume only after that API exists.",
+  "next_action": "AR-1813 is the promoted prerequisite for the runtime-owned receipt and opaque factory contract. After it merges, re-open and claim AR-1812, then wire the verified receipt into ordinary run/sweep dispatch and complete review, merge, and post-merge verification.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "07c590e712df11e555228abf1b9de4add3510d4f",
