@@ -1140,7 +1140,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels. |
-| Next action | Repair diagnostic legacy identity catalog/source line drift on v4 before any push; local targeted contract reproduces hosted exit 101 at missing lib.rs identities 345,350,357; then rerun targeted contract and clippy. |
+| Next action | Targeted diagnostic contract now green after preserving legacy identities (current first identity line 336); remove pycache repair recorded. Run clippy and full applicable local gates on repaired v4; commit signed DCO only after all green, then publish replacement PR. |
 
 ### AR-1776 — Supported-tool acquisition catalog
 

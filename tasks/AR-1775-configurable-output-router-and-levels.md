@@ -7,7 +7,7 @@
     "AR-1771"
   ],
   "id": "AR-1775",
-  "next_action": "Repair diagnostic legacy identity catalog/source line drift on v4 before any push; local targeted contract reproduces hosted exit 101 at missing lib.rs identities 345,350,357; then rerun targeted contract and clippy.",
+  "next_action": "Targeted diagnostic contract now green after preserving legacy identities (current first identity line 336); remove pycache repair recorded. Run clippy and full applicable local gates on repaired v4; commit signed DCO only after all green, then publish replacement PR.",
   "observed_branch": "feature/ar-1775-configurable-output-router-and-levels",
   "observed_dirty": 0,
   "observed_head": "d7c08c106e52ed9aa144f24ffe130b40dd6c3da7",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 159,
+  "task_revision": 160,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:42:23+00:00",
+  "updated_at": "2026-10-12T00:42:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -508,3 +508,10 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T00:42:23+00:00: Recorded command exit 0; command argv SHA-256
   d89c43b28f2a6ac6fb83707b9e20e8397e336513c903c1ccec8e4ccc3ec5d7dc.
+
+- 2026-10-12T00:42:32+00:00: Repair evidence: targeted
+  ordinary_cli_producers_are_mechanically_closed passed at 00:42 after compacting new debug routing
+  and restoring source line parity; prior hosted failure was identity drift, not behavior. Handoff
+  post-reconcile initially failed because tools/__pycache__/handoffctl.cpython-312.pyc exceeded 200
+  KiB; exact generated file was removed via handoffctl run with PYTHONDONTWRITEBYTECODE=1, then
+  state command completed successfully. No red product revision published.
