@@ -1534,6 +1534,20 @@
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
 | Next action | Checkpoint clean signed 56db629d, independently review exact head, then publish PR/CI only if supported deterministic gate remains green. |
 
+### AR-1804 — Cross-module fixture semaphore
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates. |
+| Next action | Reproduce the AR-1801/AR-1803 default-parallel failures and inventory cross-module process fixtures. |
+
 
 ## Dependency graph
 
@@ -2399,6 +2413,7 @@ flowchart LR
         AR_1801["AR-1801 - Blocked"]:::status_blocked
         AR_1802["AR-1802 - Blocked"]:::status_blocked
         AR_1803["AR-1803 - Blocked"]:::status_blocked
+        AR_1804["AR-1804 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4314,6 +4329,7 @@ flowchart LR
     AR_1762 --> AR_1776
     AR_1762 --> AR_1801
     AR_1762 --> AR_1803
+    AR_1762 --> AR_1804
     AR_1763 --> AR_1764
     AR_1763 --> AR_1765
     AR_1763 --> AR_1783
@@ -4420,4 +4436,3 @@ flowchart LR
 | [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) |
 | [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-1005](../tasks/AR-1005-trace-interoperability.md), [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) |
 | [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0905](../tasks/AR-0905-recovery-models.md), [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) |
-| [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) |
