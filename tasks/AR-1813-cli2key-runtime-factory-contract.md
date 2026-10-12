@@ -172,9 +172,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T11:03:22+00:00",
+  "updated_at": "2026-10-12T11:05:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -266,3 +266,6 @@ fabricate authority in the CLI or introduce a provider fallback.
 
 - 2026-10-12T11:03:22+00:00: Rust verification completed successfully; Repository quality is the
   only remaining authoritative post-merge gate.
+
+- 2026-10-12T11:05:20+00:00: Recorded command exit 0; command argv SHA-256
+  d55dc3353577df7cae9ec34b2ff6bf2c8dc5954b4b1d04259aaaf12f937d8d62.
