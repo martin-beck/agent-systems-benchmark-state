@@ -2,22 +2,22 @@
 {
   "branch": "policy/concurrent-integration-liveness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T09:57:43+00:00",
   "depends_on": [],
   "id": "AR-1796",
   "next_action": "User-requested stop recorded. Preserve interrupted exact-candidate retry artifacts and terminal uncertainty; do not accept or release. Reclaim only after explicit continuation and rerun a fresh bounded exact full-exhaustive attempt with PYTHONDONTWRITEBYTECODE=1.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "coordinator-policy-reclassify",
   "plan": "../plans/AR-1796-concurrent-integration-liveness.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-12T09:27:38+00:00",
+  "updated_at": "2026-10-12T09:27:43+00:00",
   "worktree_key": ""
 }
 ---
@@ -342,3 +342,5 @@ workers checkpoint, retry, and continue useful work during integration churn.
 - 2026-10-12T09:27:38+00:00: Coordinator recovery after user-requested stop: no live worker or TLC
   process remains. Preserve interrupted formal evidence; reopen for development reassignment under
   no-TLC policy.
+
+- 2026-10-12T09:27:43+00:00: Claimed by coordinator-policy-reclassify.
