@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:53:30+00:00",
+  "updated_at": "2026-10-12T02:53:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -184,3 +184,6 @@ before AR-1801 can be accepted.
   /srv/data/projects/agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore/Cargo.toml -p
   asb-cli --lib --no-run exited 0 and produced the test executable. This confirms the prior macro
   visibility/path/docs failure is repaired; full gate remains required.
+
+- 2026-10-12T02:53:36+00:00: Recorded command exit 2; command argv SHA-256
+  3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
