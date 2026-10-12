@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Run remaining full workspace gates after the human_cli expectation repair; then independently review the exact diff and prepare a signed DCO commit and PR only if all gates remain green.",
+  "next_action": "Wait for unrelated AR-1796 full formal run to finish and its generated .tlc-runs cleanup; then rerun focused workflow_transcript and full workspace gates through handoffctl. Do not commit until all gates are green.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 5,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T07:16:49+00:00",
+  "updated_at": "2026-10-12T07:16:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -348,3 +348,11 @@ non-TTY compatibility.
   98522ccee50330888293395edb4a58e9167e4c372401011bf02f9263f8675cf7.
 
 - 2026-10-12T07:16:49+00:00: Heartbeat by ar1773-catalog-repair-luna56.
+
+- 2026-10-12T07:16:53+00:00: Bounded catalog regeneration is mechanically available: preserved
+  historical catalog plus 9 retained AR-1793 identities and a generated 810-current-callsite
+  overlay. diagnostic_contract 9/9, asb-cli lib 437/437, focused human_cli 16/16, fmt and clippy
+  green. Full workspace reached workflow_transcript; only product failure was stale lib.rs
+  provenance digest, repaired to 82b519af2a488f028b33061a46ca35c73f072444ec9b45c544fb95c994eceac2.
+  The attempted state-run cleanup removed stale 51G TLC trash, but post-reconcile remains blocked by
+  active unrelated AR-1796 generated TLC files over the 200 KiB state guard; no gate waiver.

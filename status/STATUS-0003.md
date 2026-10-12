@@ -1112,7 +1112,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
-| Next action | Run remaining full workspace gates after the human_cli expectation repair; then independently review the exact diff and prepare a signed DCO commit and PR only if all gates remain green. |
+| Next action | Wait for unrelated AR-1796 full formal run to finish and its generated .tlc-runs cleanup; then rerun focused workflow_transcript and full workspace gates through handoffctl. Do not commit until all gates are green. |
 
 ### AR-1774 — Status and progress completeness CI
 
