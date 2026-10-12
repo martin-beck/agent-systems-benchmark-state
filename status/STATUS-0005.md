@@ -199,7 +199,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0: 24G retry durably failed with liveness OOM. A subsequent 48G/64G attempt has no live process, attestation, or durable handoffctl task result visible; treat it as interrupted/unknown, do not accept or release, and reconcile before any new bounded retry. |
-| P0 | [AR-1800](../tasks/AR-1800-controlled-local-workload-acquisition-backend.md): Controlled local workload acquisition backend | ar1800-local-acquisition-luna56 | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. | Remain unaccepted pending AR-1802 repair of fixture authority, full workload lifecycle/offline matrix, hostile identity/size coverage, and acquisition-vs-benchmark failure separation; do not merge signed b72da478. |
+| P0 | [AR-1800](../tasks/AR-1800-controlled-local-workload-acquisition-backend.md): Controlled local workload acquisition backend | ar1800-local-acquisition-luna56 | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. | Blocked on unrelated ambient mini_swe fixture root overlap; AR-1801 owns deterministic Cargo fixture isolation. Preserve exact-main focused workload evidence and resume after AR-1801 repair. |
 
 ### Blocked (87)
 

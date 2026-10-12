@@ -8,7 +8,7 @@
     "AR-1783"
   ],
   "id": "AR-1800",
-  "next_action": "Remain unaccepted pending AR-1802 repair of fixture authority, full workload lifecycle/offline matrix, hostile identity/size coverage, and acquisition-vs-benchmark failure separation; do not merge signed b72da478.",
+  "next_action": "Blocked on unrelated ambient mini_swe fixture root overlap; AR-1801 owns deterministic Cargo fixture isolation. Preserve exact-main focused workload evidence and resume after AR-1801 repair.",
   "observed_branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "observed_dirty": 0,
   "observed_head": "b72da478631faa391f9be75d7cce1e813deb387d",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T05:23:53+00:00",
+  "updated_at": "2026-10-12T05:24:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -274,3 +274,12 @@ must not weaken production acquisition, identity, or offline guarantees.
 
 - 2026-10-12T05:23:53+00:00: Recorded command exit 101; command argv SHA-256
   a43943f8be07b1ed3092e668309fdfc2a4e9f6e38aace14f1b03ac465afc9a05.
+
+- 2026-10-12T05:24:03+00:00: Exact post-merge gate diagnosis: cargo test --locked --workspace on
+  origin/main e0e44a7d failed one pre-existing ambient test,
+  mini_swe::tests::cancellation_leaves_no_runnable_owned_descendant, at
+  crates/asb-agents/src/mini_swe.rs:2121 because test root overlaps repository. 221 passed, 1
+  failed, 1 ignored. This is unrelated to AR-1800 acquisition code; focused workload/archive matrix
+  passed 22/22, provider_selection_manifest lifecycle 1/1, benchmark selected/all fanout 1/1,
+  full-catalog record campaign 1/1, and network-denied record/replay 1/1. Do not waive full gate;
+  AR-1801 deterministic fixture isolation is the external repair prerequisite.

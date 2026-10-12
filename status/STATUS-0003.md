@@ -1490,7 +1490,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. |
-| Next action | Remain unaccepted pending AR-1802 repair of fixture authority, full workload lifecycle/offline matrix, hostile identity/size coverage, and acquisition-vs-benchmark failure separation; do not merge signed b72da478. |
+| Next action | Blocked on unrelated ambient mini_swe fixture root overlap; AR-1801 owns deterministic Cargo fixture isolation. Preserve exact-main focused workload evidence and resume after AR-1801 repair. |
 
 ### AR-1801 — Tool-discovery Cargo fixture isolation
 
