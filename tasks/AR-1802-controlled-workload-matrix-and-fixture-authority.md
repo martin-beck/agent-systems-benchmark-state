@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:31:14+00:00",
+  "updated_at": "2026-10-12T03:32:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -105,3 +105,6 @@ remains explicitly unaccepted and blocked until this repair is complete.
   fixture-authority and full lifecycle/offline matrix work.
 
 - 2026-10-12T03:31:14+00:00: Claimed by ar1802-workload-matrix-luna56.
+
+- 2026-10-12T03:32:00+00:00: Recorded command exit 1; command argv SHA-256
+  94e70b2894052cdf7bd1f6239d09355cce1f82d947e1ef523ab7b94c9efba45f.
