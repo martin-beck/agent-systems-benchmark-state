@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Select every development external workload and prove ASB uses its exact project-local identity end to end.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:17:12+00:00",
+  "updated_at": "2026-10-12T00:17:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -200,3 +200,6 @@ the suite from this end-to-end path.
 
 - 2026-10-12T00:17:12+00:00: Recorded exact hosted failure and corrective commits 4dfb7a30,
   6ec4d6b1; focused regression rerun passes. Await exact-head CI green.
+
+- 2026-10-12T00:17:18+00:00: Recorded command exit 8; command argv SHA-256
+  727ddf13cb9240da38da2754474c98f8fc0df5748ca22dce8b74ff3a03d4452b.
