@@ -7,7 +7,7 @@
     "AR-1773"
   ],
   "id": "AR-1805",
-  "next_action": "PR #608 opened at exact head 01631b5bbe14ba856a8993cc7fb8c4be6aa76fcc. Await independent review and all non-TLC hosted checks, then protected exact-head merge and post-merge verification.",
+  "next_action": "PR #608 rebased onto protected main 5c843a12 at exact head a0d780b0 (catalog repair included); focused human diagnostic regression passes 5/5 after repair/rebase. Obtain independent exact-head review, wait all non-TLC checks terminal green, then protected exact-head merge and post-merge verification.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "a0d780b0f818f6468bedf07702fc83cc54eebef2",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one complete machine-checked inventory of every public ASB command and subcommand surface.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:01:22+00:00",
+  "updated_at": "2026-10-12T11:01:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -179,3 +179,8 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 
 - 2026-10-12T11:01:22+00:00: Recorded command exit 0; command argv SHA-256
   c822935410cd969a0a6e9fec16a591f6bd2774067a880d74878f98acedd4c0b5.
+
+- 2026-10-12T11:01:34+00:00: Diagnosed deterministic pre-rebase failure: stale legacy diagnostic
+  catalog line collision classified the output-path test as cancellation. Repaired catalog call-site
+  mapping, signed commit, rebased onto 5c843a12, pushed with force-with-lease; post-rebase focused
+  test passes 5/5.

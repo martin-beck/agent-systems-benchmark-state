@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) |
 | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) |
 | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
 | [AR-0320](../tasks/AR-0320-provider-credential-integration.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
@@ -531,6 +532,3 @@
 | [AR-1540](../tasks/AR-1540.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
 | [AR-1541](../tasks/AR-1541.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
 | [AR-1542](../tasks/AR-1542.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md), [AR-1549](../tasks/AR-1549.md) | [AR-1535](../tasks/AR-1535.md) |
-| [AR-1543](../tasks/AR-1543.md) | [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md), [AR-1549](../tasks/AR-1549.md) | [AR-1536](../tasks/AR-1536.md) |
-| [AR-1544](../tasks/AR-1544.md) | [AR-1530](../tasks/AR-1530.md) | None |
-| [AR-1545](../tasks/AR-1545.md) | [AR-1535](../tasks/AR-1535.md) | [AR-1522](../tasks/AR-1522.md) |
