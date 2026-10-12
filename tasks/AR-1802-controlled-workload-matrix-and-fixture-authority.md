@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T06:31:14+00:00",
   "depends_on": [
     "AR-1782",
     "AR-1783"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "observed_dirty": 0,
   "observed_head": "97f6c271db8937e5c84a33d552881b805c361f58",
-  "owner": "",
+  "owner": "ar1802-workload-matrix-luna56",
   "plan": "../plans/AR-1802-controlled-workload-matrix-and-fixture-authority.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1802.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:31:10+00:00",
+  "updated_at": "2026-10-12T03:31:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -103,3 +103,5 @@ remains explicitly unaccepted and blocked until this repair is complete.
   quality/AR-1804-pr-598-merge-6761a6d0.txt, full make/default-parallel gates green. AR-1803 remains
   blocked as historical evidence; AR-1804 is the merged successor repair. Resume AR-1802
   fixture-authority and full lifecycle/offline matrix work.
+
+- 2026-10-12T03:31:14+00:00: Claimed by ar1802-workload-matrix-luna56.
