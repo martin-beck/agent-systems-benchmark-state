@@ -1140,7 +1140,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels. |
-| Next action | Await PR #590 exact-head hosted checks at c52dd2b2; provenance/DCO topology repaired and local 429/429 lib gate is green. |
+| Next action | Await PR #591 exact-head hosted checks at 34202df1; Clippy-clean signed-DCO topic and local verification are green. |
 
 ### AR-1776 — Supported-tool acquisition catalog
 

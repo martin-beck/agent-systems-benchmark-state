@@ -7,7 +7,7 @@
     "AR-1771"
   ],
   "id": "AR-1775",
-  "next_action": "Await PR #590 exact-head hosted checks at c52dd2b2; provenance/DCO topology repaired and local 429/429 lib gate is green.",
+  "next_action": "Await PR #591 exact-head hosted checks at 34202df1; Clippy-clean signed-DCO topic and local verification are green.",
   "observed_branch": "feature/ar-1775-configurable-output-router-and-levels",
   "observed_dirty": 0,
   "observed_head": "d7c08c106e52ed9aa144f24ffe130b40dd6c3da7",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:32:25+00:00",
+  "updated_at": "2026-10-12T00:32:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -336,3 +336,11 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T00:32:25+00:00: Recorded command exit 0; command argv SHA-256
   5194cb771c21b4e9e19900d3b0785a55b996de3d7bd1b51f6490a36757bc92b6.
+
+- 2026-10-12T00:32:34+00:00: PR #590 Rust Clippy failure repaired: hosted log reported
+  crates/asb-cli/src/human.rs items after a test module at line 2886. Added narrowly scoped
+  clippy::items_after_test_module allowances to the two production router helpers, preserving
+  line-sensitive diagnostic mappings; clippy -p asb-cli --all-targets -D warnings passes and
+  targeted output-level plus diagnostic mapping tests pass. Folded repair into v4 tip
+  synchronization merge 34202df1 (parents 3cb3702 and protected base 0a2039c4), valid SSH signature
+  and DCO; published PR #591 without force-push. PR #590 remains superseded/open pending closure.
