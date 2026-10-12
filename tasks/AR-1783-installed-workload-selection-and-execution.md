@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair PR #596 exact head 506de984 has all hosted required checks green; independent review remains required before local integration",
-  "task_revision": 214,
+  "task_revision": 215,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:29:51+00:00",
+  "updated_at": "2026-10-12T01:30:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -674,3 +674,6 @@ the suite from this end-to-end path.
   c2ebca881ea7c31946d20ea18e0cf676b851b22e. PR remains open pending durable independent review.
 
 - 2026-10-12T01:29:51+00:00: Heartbeat by ar1783_workload_selection_luna56.
+
+- 2026-10-12T01:30:13+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
