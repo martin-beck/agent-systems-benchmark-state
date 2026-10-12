@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T04:07:38+00:00",
+  "claim_expires": "2026-10-12T04:07:46+00:00",
   "depends_on": [
     "AR-1729",
     "AR-1731"
@@ -25,7 +25,7 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Add cli2key runtime authority composition seam",
   "updated_at": "2026-10-12T02:07:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
@@ -43,3 +43,5 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T02:07:46+00:00: Claimed after removing blocked AR-1797 from dependency list; AR-1797
   remains the blocked consumer integration task and retains successor evidence.
+
+- 2026-10-12T02:07:46+00:00: Heartbeat by codex-ar1799-authority-luna56.
