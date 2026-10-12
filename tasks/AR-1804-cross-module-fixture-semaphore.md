@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Create one signed DCO repair commit, then run default-parallel asb-cli 429-test gate and request independent exact-head review.",
+  "next_action": "Repair parallel semaphore regression tests to tolerate unrelated bounded fixture contenders by using bounded recovery wait; rerun focused module tests before default-parallel.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 0,
   "observed_head": "53dd3bdfca19011b84fc9449d3ad44297dcdd2d1",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:06:40+00:00",
+  "updated_at": "2026-10-12T03:06:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -340,3 +340,13 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:06:40+00:00: Recorded command exit 101; command argv SHA-256
   8313bf475974370fb24f264142d964ad0f5468d89177bb5f1f62bba84afe609b.
+
+- 2026-10-12T03:06:50+00:00: Exact default-parallel gate failure on signed head 53dd3bdf: cargo test
+  --locked --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore/Cargo.toml -p
+  asb-cli --lib ran 432 tests; 430 passed, 2 failed in test_fixture_semaphore::tests.
+  hostile_contention_times_out_and_recovers_after_release failed line 94 because try_acquire(10ms)
+  returned None after release; positive_nested_and_drop_paths_are_reentrant failed line 85 because
+  try_acquire(Duration::ZERO) returned None. Cause is these recovery assertions raced unrelated
+  parallel fixture holders, not semaphore correctness; tests need a bounded recovery wait rather
+  than zero/10ms. This is a qualification-test flake, not setup.
