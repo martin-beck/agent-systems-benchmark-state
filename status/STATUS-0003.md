@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Run full make test and default-parallel again after bounded recovery assertions; then create signed clean commit and request independent review. |
+| Next action | Create signed clean repair commit, run default-parallel 432-test gate, checkpoint exact head, and request independent review. |
 
 
 ## Dependency graph
