@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:13:12+00:00",
+  "updated_at": "2026-10-12T03:13:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -419,3 +419,8 @@ before AR-1801 can be accepted.
 - 2026-10-12T03:13:04+00:00: Checkpointed source commit 4cda972c8af30c15a76034421ca4bb9926a0a2b5.
 
 - 2026-10-12T03:13:12+00:00: Heartbeat by ar1804_fixture_semaphore_luna56.
+
+- 2026-10-12T03:13:27+00:00: Post-checkpoint live doctor initially hit the known state-repo pycache
+  size guard (handoffctl.cpython-312.pyc exceeded 200 KiB); removed only that generated pyc and
+  reran with PYTHONDONTWRITEBYTECODE=1. doctor --live then returned OK: structure, references,
+  privacy, generated views, and live state consistent.
