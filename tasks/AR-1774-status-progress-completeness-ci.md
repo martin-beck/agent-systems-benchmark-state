@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Status and progress completeness CI",
-  "updated_at": "2026-10-12T12:59:11+00:00",
+  "updated_at": "2026-10-12T13:00:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1774-status-progress-completeness-ci"
 }
 ---
@@ -117,3 +117,6 @@ human output additions fail closed until instrumented and tested.
   full local cargo test --locked --workspace passed. Failure is not caused by AR-1774 diff; no safe
   deterministic product change identified. AR-1803 repaired a separate discovery-fixture race and is
   already done. Preserve gate; rerun hosted job rather than masking with retry/weakening.
+
+- 2026-10-12T13:00:07+00:00: Recorded command exit 0; command argv SHA-256
+  21f16844a042251fef62cec66450e0aeff0a45d92ae7e73a4e7af0c15f30619d.
