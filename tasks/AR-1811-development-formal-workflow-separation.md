@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T09:45:00+00:00",
+  "updated_at": "2026-10-12T09:45:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -29,3 +29,6 @@ Keep exactly one explicitly labelled final-delivery workflow path that invokes
 TLC/Alloy, is not claimable as development work, and remains required only for
 the finished-product delivery PR. Add positive and negative workflow-contract
 tests and update the generated quality documentation.
+
+- 2026-10-12T09:45:28+00:00: No dependencies; promote workflow separation to remove TLC from
+  development CI while preserving final-delivery formal gate.
