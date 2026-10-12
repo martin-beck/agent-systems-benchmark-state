@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T08:20:04+00:00",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -12,7 +12,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1772-progress-reporter-luna56",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:20:03+00:00",
+  "updated_at": "2026-10-12T06:20:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -57,3 +57,5 @@ non-TTY compatibility.
 
 - 2026-10-12T06:20:03+00:00: Dependencies AR-1769 and AR-1772 are complete and released; promote
   AR-1773 to open for implementation.
+
+- 2026-10-12T06:20:04+00:00: Claimed by ar1772-progress-reporter-luna56.
