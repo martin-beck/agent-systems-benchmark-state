@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Inspect shared process-backed discovery/source/provider fixture state and implement bounded cross-module isolation; add hostile contention regression before retry.",
+  "next_action": "Run final make test after latest guard, then verify clean signed exact head and request independent review.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "fd55d357c68e86a9fd5ab751510733ed9f5ec167",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T03:42:01+00:00",
+  "updated_at": "2026-10-12T03:42:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -199,3 +199,15 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T03:42:01+00:00: Recorded command exit 0; command argv SHA-256
   13e2aa5d148f9097f642e519d13f83dd607b03dabc7cdbb78c402e46fca20295.
+
+- 2026-10-12T03:42:10+00:00: Failure ledger repaired: (1) high-parallel reproduction exit 101:
+  tool_discovery path_discovery assertion differed version_probe_unavailable vs cargo 1.0 after 428
+  passed; qualification contention. (2) focused compile exit 101: unused Mutex/OnceLock imports in
+  source_checkout after lock replacement; setup/compiler, fixed. (3) make test exit 101:
+  diagnostic_contract ordinary_cli_producers_are_mechanically_closed due module line insertion
+  shifting reviewed identities; product contract, fixed by tail embedding module. (4) focused
+  workflow exit 101: provenance_binds... expected old lib digest 2e153e... observed ec522f...;
+  product provenance drift, fixed digest. (5) parallel exit 101: record_campaign_empty_workload...
+  left exit 4/right 0 and tool_discovery version_probe... left None/right cargo 1.0; qualification
+  contention, fixed by guarding campaign fixture. Latest full asb-cli parallel gate: 431 passed, 0
+  failed in 19.89s.

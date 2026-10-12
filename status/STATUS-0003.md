@@ -1532,7 +1532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
-| Next action | Inspect shared process-backed discovery/source/provider fixture state and implement bounded cross-module isolation; add hostile contention regression before retry. |
+| Next action | Run final make test after latest guard, then verify clean signed exact head and request independent review. |
 
 ### AR-1804 — Cross-module fixture semaphore
 
