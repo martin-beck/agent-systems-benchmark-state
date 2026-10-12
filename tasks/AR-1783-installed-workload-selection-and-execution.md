@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Wait for all PR #596 checks at db9b1fb8 and obtain fresh independent review bound to db9b1fb8/tree 852f5b4f; then integrate only with tools/integration/merge_pr.py against base 98327152, verify exact main, accept/release",
+  "next_action": "Wait for all checks at aca3f79 and obtain fresh independent review bound to aca3f79/tree 852f5b4f; then run tools/integration/merge_pr.py against base 98327152, verify exact main, accept/release",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "aca3f79b3256729543e93cc321ce3a85daa78051",
@@ -28,10 +28,10 @@
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
-  "summary": "PR #596 repaired against current protected main 98327152 at exact head db9b1fb8; prior 506de984 review invalidated and fresh checks/review required",
-  "task_revision": 246,
+  "summary": "PR #596 repaired to single signed/DCO topic commit aca3f79 on current protected base 98327152; portable provenance green and remaining checks running",
+  "task_revision": 247,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:33:35+00:00",
+  "updated_at": "2026-10-12T01:34:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -766,3 +766,11 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:33:35+00:00: Recorded command exit 0; command argv SHA-256
   d5b51d3ce4fa910e9c44aa6fd4fe2d1aee2efb6ca7ea64db1f4aa611d016cc59.
+
+- 2026-10-12T01:34:23+00:00: Topology diagnosis: portable provenance rejected add5690b because any
+  pull-request synchronization merge must be topic tip; removing alignment left add5690b as an
+  invalid historical topic merge. Final repair head aca3f79b3256729543e93cc321ce3a85daa78051 is a
+  single signed+DCO commit parented directly on current protected main
+  98327152f2e92308b5bcf5b21cfe0c9f285cf950, tree 852f5b4ff6fa5f21a7120298e167e5a97487aa7a. Local
+  repository policy passes; hosted Portable protected-main provenance run 38192353961 is green.
+  Fresh exact-head review is required; prior 506de984 approval is invalidated.

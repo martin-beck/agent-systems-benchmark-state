@@ -1251,8 +1251,8 @@
 | Owner | ar1783_workload_selection_luna56 |
 | Parent | None |
 | Children | None |
-| Summary | PR #596 repaired against current protected main 98327152 at exact head db9b1fb8; prior 506de984 review invalidated and fresh checks/review required |
-| Next action | Wait for all PR #596 checks at db9b1fb8 and obtain fresh independent review bound to db9b1fb8/tree 852f5b4f; then integrate only with tools/integration/merge_pr.py against base 98327152, verify exact main, accept/release |
+| Summary | PR #596 repaired to single signed/DCO topic commit aca3f79 on current protected base 98327152; portable provenance green and remaining checks running |
+| Next action | Wait for all checks at aca3f79 and obtain fresh independent review bound to aca3f79/tree 852f5b4f; then run tools/integration/merge_pr.py against base 98327152, verify exact main, accept/release |
 
 ### AR-1784 — Command dependency registry and preflight
 
