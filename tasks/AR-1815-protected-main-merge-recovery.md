@@ -6,9 +6,9 @@
   "depends_on": [],
   "id": "AR-1815",
   "next_action": "Claim a dedicated recovery worktree; use tools/integration/merge_pr.py to create a forward-only signed DCO recovery for preserved merge 15c80511, then review, publish, merge, and verify exact-main gates.",
-  "observed_branch": "",
+  "observed_branch": "recovery/ar-1815-provenance",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "ab4f4c6a81f543e049759d199cca675c7370a1dc",
   "owner": "ar1805_postmerge_repair",
   "plan": "../plans/AR-1815-protected-main-merge-recovery.md",
   "priority": "P0",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T11:40:47+00:00",
+  "updated_at": "2026-10-12T11:41:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---

@@ -76,6 +76,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap` | `feature/ar-1812-cli2key-ordinary-bootstrap` | `edc345cff97b` | 0 | behind 5, ahead 2 |
 | `agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract` | `feature/ar-1813-cli2key-runtime-factory-contract` | `7889b3bad4c0` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-ar-1814-ruleset-repair` | `feature/ar-1814-ruleset-repair` | `07c590e712df` | 0 | behind 10, ahead 0 |
+| `agent-systems-benchmark-ar-1815-provenance` | `recovery/ar-1815-provenance` | `ab4f4c6a81f5` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 762, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 762, ahead 323 |
