@@ -53,7 +53,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 747, ahead 136 |
 | `agent-systems-benchmark-ar-1652-record-replay` | `repair/ar-1652-record-replay` | `7ce484612db0` | 0 | behind 56, ahead 0 |
 | `agent-systems-benchmark-ar-1686` | `qualification/ar-1686` | `f37d3a3ef839` | 0 | behind 40, ahead 0 |
-| `agent-systems-benchmark-ar-1689-tui-qualification` | `qualification/ar-1689-tui-fresh-user` | `af6907636709` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1689-tui-qualification` | `qualification/ar-1689-tui-fresh-user` | `af6907636709` | 1 | behind 0, ahead 1 |
+| changed files | - | - | - | `tools/run-content-addressed-qualification.py` |
 | `agent-systems-benchmark-ar-1772-unified-step-progress-reporter` | `feature/ar-1772-unified-step-progress-reporter` | `65ee830e6659` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `9c5e557195df` | 5 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/step_progress.rs`, `crates/asb-cli/src/tui.rs` |
