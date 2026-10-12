@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T02:19:48+00:00",
+  "updated_at": "2026-10-12T02:19:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -60,3 +60,16 @@ must not weaken production acquisition, identity, or offline guarantees.
 
 - 2026-10-12T02:19:48+00:00: Recorded command exit 1; command argv SHA-256
   d2315e3186b6711d9369d01fc0fc923d66f891f7f863c08ecda79b92a45029fd.
+
+- 2026-10-12T02:19:56+00:00: Failure classification: exit 1 hash
+  897069c4635a4268b7cc5969faecad65de47de1b4df2728746a3dee1ced2cf57 was `cargo fmt --manifest-path
+  .../crates/asb-cli/Cargo.toml -- --check`; Cargo reported no targets because the workspace
+  manifest is required. Repaired with workspace `cargo fmt --all --manifest-path .../Cargo.toml`.
+  Exit 1 hash 52f94894b74f0834eb9b78274d04836c6220b2e7f16efe9e7df0ff6897f76f9b was the subsequent
+  format check detecting only rustfmt diffs in the new helper/test; repaired by running workspace
+  cargo fmt, and the identical check then exited 0. Exit 1 hash
+  d2315e3186b6711d9369d01fc0fc923d66f891f7f863c08ecda79b92a45029fd was an invalid cargo test
+  invocation passing two filter names (`fixture_acquisition_is_url_bound_bounded_and_network_free
+  workload_lifecycle`); Cargo rejected the second positional filter before running tests. These are
+  setup/command-shape failures, not product qualification failures; next retry uses one filter or a
+  single workload_ filter.
