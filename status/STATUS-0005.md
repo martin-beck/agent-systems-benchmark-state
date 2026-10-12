@@ -170,18 +170,13 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1775](../tasks/AR-1775-configurable-output-router-and-levels.md): Configurable output router and levels | ar1775_output_router_luna56 | Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels. | Implement the sole configurable output router, generated project output defaults, and four-level selection after the output contract is accepted. |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | ar1783_workload_selection_luna56 | Select every development external workload and prove ASB uses its exact project-local identity end to end. | Integrate every development-supported installed workload bundle into selection and prove full run/sweep/report/compare consumes its exact recorded identity. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Fresh exact-candidate full-exhaustive remains incomplete: generated exhaustive slice exits 1 under 5 GiB TLC heap after tens of millions of states. Rerun on a host with sufficient memory or an approved exact-tier execution; retain portable-smoke only as non-exhaustive. Do not accept or release. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1775](../tasks/AR-1775-configurable-output-router-and-levels.md): Configurable output router and levels | Unclaimed | Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels. | Implement the sole configurable output router, generated project output defaults, and four-level selection after the output contract is accepted. |
 
 ### Blocked (84)
 
