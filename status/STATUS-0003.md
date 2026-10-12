@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates. |
-| Next action | Reproduce the AR-1801/AR-1803 default-parallel failures and inventory cross-module process fixtures. |
+| Next action | Run each affected test with a single filter, then full parallel asb-cli gate; preserve semaphore repair and record all outcomes. |
 
 
 ## Dependency graph

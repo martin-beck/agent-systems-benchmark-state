@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Reproduce the AR-1801/AR-1803 default-parallel failures and inventory cross-module process fixtures.",
+  "next_action": "Run each affected test with a single filter, then full parallel asb-cli gate; preserve semaphore repair and record all outcomes.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 2,
   "observed_head": "ca494d506135c4a3263bea21621dcc97d817614c",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:45:09+00:00",
+  "updated_at": "2026-10-12T02:45:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -55,3 +55,8 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:45:09+00:00: Recorded command exit 1; command argv SHA-256
   21247404ed0f8aae1ec0e88eb8ec031a69ad52f4ca7b68248165cc335ab4d993.
+
+- 2026-10-12T02:45:16+00:00: Setup command exit 1 recorded: cargo test was invoked with two
+  positional test filters (provider_selection... and comparison_reports...), and Cargo rejected the
+  second with unexpected argument before running tests. This is command-shape/setup failure, not a
+  qualification result; retry uses one filter per invocation.
