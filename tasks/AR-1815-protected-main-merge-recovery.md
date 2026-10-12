@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:00:46+00:00",
+  "updated_at": "2026-10-12T12:00:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -120,3 +120,6 @@ introduce a TLC/model-check dependency for development.
   install digest-pinned repository analyzers after repeated curl HTTP 504 responses. This is an
   infrastructure download failure, not a product/policy failure; all other observed workflows remain
   successful or in progress. Preserve merge and retry failed workflow only.
+
+- 2026-10-12T12:00:51+00:00: Recorded command exit 0; command argv SHA-256
+  ee0828b2e7ad086de644de4f38823e83462721ce84eb45f16d6c8557ef024050.
