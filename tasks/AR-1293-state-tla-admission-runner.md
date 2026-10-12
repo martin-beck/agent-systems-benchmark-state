@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 767,
+  "task_revision": 768,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T09:40:18+00:00",
+  "updated_at": "2026-10-12T09:40:39+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2298,3 +2298,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-10-12T09:39:53+00:00: Heartbeat by codex-ar1293-unsigned-dev-20261012.
 
 - 2026-10-12T09:40:18+00:00: Heartbeat by codex-ar1293-unsigned-dev-20261012.
+
+- 2026-10-12T09:40:39+00:00: Recorded command exit 1; command argv SHA-256
+  0956b3acba101840e6ddbaf3fa57476840f5bacbb929f8e2d639253b7540ade4.
