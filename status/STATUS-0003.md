@@ -1563,7 +1563,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Independent review found a full integration-gate regression at exact PR head 5cb931f5. |
-| Next action | PR #608 exact head 0fec6465 is rebased onto 5c843a12; diagnostic catalog repair and public-family count repair are signed and pushed. Full cargo test -p asb-cli --tests --offline passes. Obtain repeat independent review at exact head, wait all non-TLC checks terminal green, then protected merge/post-merge. |
+| Next action | Independent review complete for exact PR #608 head 0fec6465: base 5c843a12, clean diff, all four signed DCO commits, git diff --check clean, cargo test -p asb-cli --tests --offline passed (437 unit plus all integration tests), hosted non-TLC checks 14/14 terminal success. Protected exact-head merge now; then verify exact-main post-merge workflows. |
 
 ### AR-1806 — Exhaustive Human Output Contract Audit
 

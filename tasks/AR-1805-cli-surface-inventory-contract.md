@@ -7,7 +7,7 @@
     "AR-1773"
   ],
   "id": "AR-1805",
-  "next_action": "PR #608 exact head 0fec6465 is rebased onto 5c843a12; diagnostic catalog repair and public-family count repair are signed and pushed. Full cargo test -p asb-cli --tests --offline passes. Obtain repeat independent review at exact head, wait all non-TLC checks terminal green, then protected merge/post-merge.",
+  "next_action": "Independent review complete for exact PR #608 head 0fec6465: base 5c843a12, clean diff, all four signed DCO commits, git diff --check clean, cargo test -p asb-cli --tests --offline passed (437 unit plus all integration tests), hosted non-TLC checks 14/14 terminal success. Protected exact-head merge now; then verify exact-main post-merge workflows.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "0fec6465dbb1934904fef8d9f79dd1c565c661fc",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent review found a full integration-gate regression at exact PR head 5cb931f5.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:22:38+00:00",
+  "updated_at": "2026-10-12T11:23:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -261,3 +261,10 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 
 - 2026-10-12T11:22:38+00:00: Recorded command exit 0; command argv SHA-256
   fb2e756a36f808ddc9cc1e39321efec13418ef7cb2515fb0de38b129f44c88af.
+
+- 2026-10-12T11:23:01+00:00: Fresh exact-head review at 2026-10-12T13:22Z: verified PR #608 head
+  0fec6465dbb1934904fef8d9f79dd1c565c661fc and base 5c843a12e976bc7be6c32e9fc653e566bdf20450;
+  working tree clean; git diff --check clean; all four commits SSH-signed and DCO-trailer matched;
+  cargo test -p asb-cli --tests --offline passed 437 unit tests plus all applicable integration
+  suites; hosted Emulated aarch64 and Policy/coverage/supply-chain checks terminal success, no TLC
+  executed. Review disposition accepted for exact head.
