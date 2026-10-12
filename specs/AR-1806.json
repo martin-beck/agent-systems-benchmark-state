@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1806.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"human-default","description":"Every manifest route has tested concise human default output for applicable success and failure journeys."},
+    {"id":"json-opt-in","description":"Machine JSON is emitted only for explicit JSON mode and remains schema-compatible and human-output silent."},
+    {"id":"actionable-diagnostics","description":"Failures name a concrete cause and usable next action without private data."}
+  ],
+  "definition_of_done": ["All route transcript tests and normal ASB quality gates pass on the independently reviewed exact head."],
+  "inputs": [{"id":"command-surface-contract","description":"AR-1805 command inventory."}],
+  "outputs": [{"id":"human-output-corpus","description":"Mechanical human/default/JSON transcript coverage for all public routes."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-output", "raw-json-defaults", "gate-weakening", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical"],
+  "gates": [{"id":"all-route-output","description":"Human, JSON, quiet, and error output contracts pass for every route."}]
+}

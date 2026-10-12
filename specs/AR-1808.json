@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1808.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"universal-list","description":"Every public route accepts --list and reports applicable discovery domains or an explicit empty result."},
+    {"id":"selectable-results","description":"Every advertised selectable ID identifies the consuming command flag and is accepted by that flag."},
+    {"id":"read-only-discovery","description":"Listing is bounded and side-effect free unless a separate explicit refresh action is selected."}
+  ],
+  "definition_of_done": ["Human and JSON list contracts, selection round trips, independent review, and exact-head gates pass."],
+  "inputs": [{"id":"command-surface-contract","description":"AR-1805 route inventory and existing typed catalogs."}],
+  "outputs": [{"id":"universal-discovery","description":"Shared list/domain/selection behavior for all public commands."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-output", "implicit-network-refresh", "implicit-install", "gate-weakening", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical"],
+  "gates": [{"id":"list-selection-roundtrip","description":"Every route/domain and advertised selection is mechanically verified."}]
+}

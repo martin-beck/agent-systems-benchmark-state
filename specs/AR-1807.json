@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1807.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"all-path-help","description":"Every public command path accepts --help and -h with useful, route-specific content."},
+    {"id":"help-is-pure","description":"Help has no installation, configuration, credential, provider, or network side effect."},
+    {"id":"completion-consistency","description":"Generated completion and help route coverage agree with the command-surface contract."}
+  ],
+  "definition_of_done": ["Route-generated help tests, side-effect-negative tests, independent review, and exact-head gates pass."],
+  "inputs": [{"id":"command-surface-contract","description":"AR-1805 command inventory."}],
+  "outputs": [{"id":"contextual-help-contract","description":"Complete tested help and completion behavior."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-output", "help-side-effects", "gate-weakening", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical"],
+  "gates": [{"id":"all-route-help","description":"Every inventory route has pure, useful help."}]
+}

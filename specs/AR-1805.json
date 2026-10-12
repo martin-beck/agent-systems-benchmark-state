@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1805.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"complete-route-manifest","description":"Every reachable public command and subcommand is represented exactly once with mode and selector metadata."},
+    {"id":"drift-is-fatal","description":"CI fails when parser/dispatch routes and the command-surface contract diverge."}
+  ],
+  "definition_of_done": ["The generated inventory and contract tests pass on the exact reviewed head with independent review and normal ASB gates."],
+  "inputs": [{"id":"cli-source","description":"The actual public parser, dispatch, and command implementation routes."}],
+  "outputs": [{"id":"command-surface-contract","description":"Versioned, mechanically verified command route and UX-mode inventory."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-output", "gate-weakening", "force-push"],
+  "required_evidence_classes": ["mechanical", "contract-test"],
+  "gates": [{"id":"route-coverage","description":"Every public route is covered and drift is rejected."}]
+}
