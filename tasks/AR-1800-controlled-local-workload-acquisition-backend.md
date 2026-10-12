@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "checkpoint_commit": "b72da478631faa391f9be75d7cce1e813deb387d",
-  "claim_expires": "2026-10-12T11:38:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1782",
     "AR-1783"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "observed_dirty": 0,
   "observed_head": "1494e4741968f12f2180aeb5e6d62be12ae106bc",
-  "owner": "ar1800_local_acquisition_luna56",
+  "owner": "",
   "plan": "../plans/AR-1800-controlled-local-workload-acquisition-backend.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1800.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T09:40:14+00:00",
+  "updated_at": "2026-10-12T09:40:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -319,3 +319,10 @@ must not weaken production acquisition, identity, or offline guarantees.
 - 2026-10-12T09:40:14+00:00: Acceptance evidence: exact origin/main 1494e474 independently reviewed;
   focused fixture authority/acquisition/lifecycle matrix passed 12/12 and full non-formal workspace
   test passed. TLC/TLA+/formal execution intentionally omitted under UD-1802.
+
+- 2026-10-12T09:40:19+00:00: Released done after independent exact-main review. Controlled
+  credential-free fixture authority and deterministic isolation are integrated through merged
+  AR-1802/1803/1804; focused 12-test acquisition/authority/lifecycle matrix and full non-formal
+  workspace cargo test passed on origin/main 1494e474. No formal/TLC gates were run per UD-1802. No
+  AR-1800-specific product diff remains after rebase because implementation is already on protected
+  main.

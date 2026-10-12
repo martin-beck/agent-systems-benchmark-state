@@ -9,7 +9,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. | Independent review of c915ecbbca; run exact-head applicable state gates and post-merge verification without TLC. | codex-ar1293-unsigned-dev-20261012 |
 | P0 | [AR-1773](tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Independent review and exact-head PR #605 checks at f78a1006; merge only after review and required non-formal checks pass. UD-1802 excludes TLC/TLA+/model-check/formal gates. | ar1773-catalog-repair-luna56 |
-| P0 | [AR-1800](tasks/AR-1800-controlled-local-workload-acquisition-backend.md): Controlled local workload acquisition backend | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. | No AR-1800 product diff remains: required controlled fixture authority and lifecycle evidence are integrated on exact origin/main. Release with parent review evidence. | ar1800_local_acquisition_luna56 |
 
 ## Blocked
 
