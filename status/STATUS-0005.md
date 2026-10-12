@@ -1,8 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1543](../tasks/AR-1543.md) | [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md), [AR-1549](../tasks/AR-1549.md) | [AR-1536](../tasks/AR-1536.md) |
-| [AR-1544](../tasks/AR-1544.md) | [AR-1530](../tasks/AR-1530.md) | None |
-| [AR-1545](../tasks/AR-1545.md) | [AR-1535](../tasks/AR-1535.md) | [AR-1522](../tasks/AR-1522.md) |
 | [AR-1546](../tasks/AR-1546.md) | [AR-1531](../tasks/AR-1531.md), [AR-1536](../tasks/AR-1536.md) | [AR-1522](../tasks/AR-1522.md) |
 | [AR-1547](../tasks/AR-1547.md) | None | [AR-1548](../tasks/AR-1548.md), [AR-1549](../tasks/AR-1549.md) |
 | [AR-1548](../tasks/AR-1548.md) | [AR-1547](../tasks/AR-1547.md) | None |
@@ -256,7 +253,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | asb-queue-next-luna56 | Independent review found a full integration-gate regression at exact PR head 5cb931f5. | Independent review complete for exact PR #608 head 0fec6465: base 5c843a12, clean diff, all four signed DCO commits, git diff --check clean, cargo test -p asb-cli --tests --offline passed (437 unit plus all integration tests), hosted non-TLC checks 14/14 terminal success. Protected exact-head merge now; then verify exact-main post-merge workflows. |
+| P0 | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | asb-queue-next-luna56 | Independent exact-head review accepted PR #608 at 0fec6465. | Proceed with protected exact-head merge via handoffctl, then verify post-merge main and reconcile AR-1805. |
 | P0 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | ar1812-replacement-luna56 | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | AR-1813 is done and branch rebased onto current main 5c843a12. Implement ordinary run/sweep resolver using runtime Cli2KeyRuntimeAuthority::bootstrap_from_receipt_bytes and verified installer receipt; add local/mock positive/negative lifecycle tests, then PR/review/merge. |
 
 ### Blocked (85)
@@ -614,3 +611,4 @@
 | P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Unclaimed | Make CLI and control use the central service for every run lifecycle. | Release AR-1453 complete after all seven exact-main post-merge workflows passed. |
 | P0 | [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md): Protected-main tree-equality repair for runtime replay | Unclaimed | Repair the protected-main tree mismatch after the runtime replay merge. | Post-merge verification complete: all seven workflows succeeded; release AR-1454 and propagate repair evidence to AR-1450. |
 | P0 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | Unclaimed | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Run state reconcile and live doctor, then release AR-1455 done with exact post-merge workflow evidence. |
+| P0 | [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md): First-customer requalification after central orchestration | Unclaimed | Requalify the first-customer production-like journey after central orchestration became authoritative. | Release done: exact protected-main requalification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. |

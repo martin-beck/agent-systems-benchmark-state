@@ -29,4 +29,3 @@ The generated status view is split into deterministic pages to keep every file b
 - [status/STATUS-0004](status/STATUS-0004.md)
 - [status/STATUS-0005](status/STATUS-0005.md)
 - [status/STATUS-0006](status/STATUS-0006.md)
-- [status/STATUS-0007](status/STATUS-0007.md)

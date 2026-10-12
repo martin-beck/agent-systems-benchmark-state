@@ -7,7 +7,7 @@
     "AR-1773"
   ],
   "id": "AR-1805",
-  "next_action": "Independent review complete for exact PR #608 head 0fec6465: base 5c843a12, clean diff, all four signed DCO commits, git diff --check clean, cargo test -p asb-cli --tests --offline passed (437 unit plus all integration tests), hosted non-TLC checks 14/14 terminal success. Protected exact-head merge now; then verify exact-main post-merge workflows.",
+  "next_action": "Proceed with protected exact-head merge via handoffctl, then verify post-merge main and reconcile AR-1805.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "0fec6465dbb1934904fef8d9f79dd1c565c661fc",
@@ -26,10 +26,10 @@
   "spec_ref": "specs/AR-1805.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Independent review found a full integration-gate regression at exact PR head 5cb931f5.",
-  "task_revision": 82,
+  "summary": "Independent exact-head review accepted PR #608 at 0fec6465.",
+  "task_revision": 83,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:23:08+00:00",
+  "updated_at": "2026-10-12T11:23:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -271,3 +271,10 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 
 - 2026-10-12T11:23:08+00:00: Recorded command exit 0; command argv SHA-256
   700758e1fbf138bc47ef0b38a5e947d6d89916d45bced0eea81fd69ed0b07923.
+
+- 2026-10-12T11:23:15+00:00: Fresh independent exact-head review accepted PR #608 at
+  0fec6465dbb1934904fef8d9f79dd1c565c661fc. Full diff reviewed (7 files, 167 insertions, 8
+  deletions); SSH signatures and matching DCO trailers valid on all four PR commits; git diff
+  --check and changed-file privacy scan clean. Full cargo test -p asb-cli --tests --offline passes.
+  All hosted PR checks terminal-success. No TLC/model checks run locally. Review disposition
+  accepted; merge may proceed through protected exact-head workflow.

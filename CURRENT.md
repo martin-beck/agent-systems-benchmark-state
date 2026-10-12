@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1805](tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Independent review found a full integration-gate regression at exact PR head 5cb931f5. | Independent review complete for exact PR #608 head 0fec6465: base 5c843a12, clean diff, all four signed DCO commits, git diff --check clean, cargo test -p asb-cli --tests --offline passed (437 unit plus all integration tests), hosted non-TLC checks 14/14 terminal success. Protected exact-head merge now; then verify exact-main post-merge workflows. | asb-queue-next-luna56 |
+| P0 | [AR-1805](tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Independent exact-head review accepted PR #608 at 0fec6465. | Proceed with protected exact-head merge via handoffctl, then verify post-merge main and reconcile AR-1805. | asb-queue-next-luna56 |
 | P0 | [AR-1812](tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | AR-1813 is done and branch rebased onto current main 5c843a12. Implement ordinary run/sweep resolver using runtime Cli2KeyRuntimeAuthority::bootstrap_from_receipt_bytes and verified installer receipt; add local/mock positive/negative lifecycle tests, then PR/review/merge. | ar1812-replacement-luna56 |
 
 ## Blocked
