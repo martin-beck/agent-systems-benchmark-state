@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Run full make test once after formatting repair, then default-parallel asb-cli gate and checkpoint exact signed head. |
+| Next action | Repair macro visibility/documentation and $crate path; run compile-focused gate once, then make test. |
 
 
 ## Dependency graph
