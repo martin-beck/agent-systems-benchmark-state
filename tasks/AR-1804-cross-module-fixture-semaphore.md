@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Rerun the repaired single-filter affected tests, then full default-parallel asb-cli/workspace gates.",
+  "next_action": "Repair diagnostic-contract catalog/regression for the test-only semaphore producer, then rerun focused diagnostic and full make test.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 0,
   "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:49:01+00:00",
+  "updated_at": "2026-10-12T02:49:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -95,3 +95,11 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:49:01+00:00: Recorded command exit 2; command argv SHA-256
   3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
+
+- 2026-10-12T02:49:08+00:00: Exact full make test exit 101: fmt, Clippy, workspace tests, and most
+  gates passed; final cargo test failed at asb-cli/tests/diagnostic_contract.rs
+  ordinary_cli_producers_are_mechanically_closed. Failure listed newly added test_fixture_semaphore
+  source callsites in lib.rs (including run seam) as mechanically uncatalogued; no product/runtime
+  failure. Root cause is diagnostic producer inventory must explicitly exempt or catalog the
+  test-only semaphore calls. Preserve bounded test-only scope; repair catalog/test contract before
+  retry.
