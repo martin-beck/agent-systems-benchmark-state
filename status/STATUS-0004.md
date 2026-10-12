@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md), [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0705](../tasks/AR-0705-native-debian-capacity.md), [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1004](../tasks/AR-1004-reliability-fairness.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) |
 | [AR-0402](../tasks/AR-0402-external-code-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md) |
 | [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md) |
 | [AR-0404](../tasks/AR-0404-extended-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
@@ -540,14 +541,3 @@
 | [AR-1553](../tasks/AR-1553.md) | [AR-1552](../tasks/AR-1552.md) | [AR-1555](../tasks/AR-1555.md) |
 | [AR-1554](../tasks/AR-1554.md) | None | [AR-1555](../tasks/AR-1555.md), [AR-1559](../tasks/AR-1559.md) |
 | [AR-1555](../tasks/AR-1555.md) | [AR-1552](../tasks/AR-1552.md), [AR-1553](../tasks/AR-1553.md), [AR-1554](../tasks/AR-1554.md) | [AR-1556](../tasks/AR-1556.md), [AR-1558](../tasks/AR-1558.md), [AR-1757](../tasks/AR-1757-human-first-cli-output.md) |
-| [AR-1556](../tasks/AR-1556.md) | [AR-1555](../tasks/AR-1555.md) | None |
-| [AR-1557](../tasks/AR-1557.md) | None | [AR-1558](../tasks/AR-1558.md) |
-| [AR-1558](../tasks/AR-1558.md) | [AR-1555](../tasks/AR-1555.md), [AR-1557](../tasks/AR-1557.md) | None |
-| [AR-1559](../tasks/AR-1559.md) | [AR-1554](../tasks/AR-1554.md) | None |
-| [AR-1560](../tasks/AR-1560.md) | None | None |
-| [AR-1561](../tasks/AR-1561.md) | None | None |
-| [AR-1562](../tasks/AR-1562.md) | None | [AR-1563](../tasks/AR-1563.md), [AR-1564](../tasks/AR-1564.md), [AR-1653](../tasks/AR-1653.md), [AR-1658](../tasks/AR-1658.md) |
-| [AR-1563](../tasks/AR-1563.md) | [AR-1562](../tasks/AR-1562.md) | [AR-1564](../tasks/AR-1564.md), [AR-1567](../tasks/AR-1567.md), [AR-1599](../tasks/AR-1599.md), [AR-1631](../tasks/AR-1631.md), [AR-1653](../tasks/AR-1653.md), [AR-1658](../tasks/AR-1658.md) |
-| [AR-1564](../tasks/AR-1564.md) | [AR-1562](../tasks/AR-1562.md), [AR-1563](../tasks/AR-1563.md) | [AR-1566](../tasks/AR-1566.md), [AR-1568](../tasks/AR-1568.md), [AR-1588](../tasks/AR-1588.md), [AR-1599](../tasks/AR-1599.md), [AR-1631](../tasks/AR-1631.md), [AR-1653](../tasks/AR-1653.md) |
-| [AR-1565](../tasks/AR-1565.md) | None | None |
-| [AR-1566](../tasks/AR-1566.md) | [AR-1564](../tasks/AR-1564.md) | None |

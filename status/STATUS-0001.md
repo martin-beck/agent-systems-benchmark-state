@@ -4532,7 +4532,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. |
-| Next action | Obtain independent re-review of 21a8b4c16c on PR #120; merge only after approval, then verify exact merge head and post-merge checks without TLC. |
+| Next action | Independent re-review of PR #120 exact head 21a8b4c16c passed focused tests, formatting, and Ruff; full unittest was attempted but stopped on pre-existing SQLite lock contention and environment fixture errors. Mypy is blocked locally by missing types-jsonschema. Hosted full applicable checks must be confirmed before approval/merge. |
 
 ### AR-1294 — State formal-gate baseline integrity
 
@@ -5001,9 +5001,3 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Field | Value |
 | --- | --- |
 | Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |

@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T11:59:04+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Obtain independent re-review of 21a8b4c16c on PR #120; merge only after approval, then verify exact merge head and post-merge checks without TLC.",
+  "next_action": "Independent re-review of PR #120 exact head 21a8b4c16c passed focused tests, formatting, and Ruff; full unittest was attempted but stopped on pre-existing SQLite lock contention and environment fixture errors. Mypy is blocked locally by missing types-jsonschema. Hosted full applicable checks must be confirmed before approval/merge.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 788,
+  "task_revision": 789,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T10:00:33+00:00",
+  "updated_at": "2026-10-12T10:00:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2364,3 +2364,12 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-10-12T10:00:33+00:00: Recorded command exit 0; command argv SHA-256
   9adba21cb51896176393735d827371d3eb4916f4f0d52be71510fb16eb6f04ec.
+
+- 2026-10-12T10:00:48+00:00: Re-review of state-repo PR #120 exact head
+  21a8b4c16c36e1884df83b38e64c34d0658df672: diff is one-line pathlib replacement from reviewed
+  parent fede553c; exact head and parent commits are SSH-signed with matching DCO, diff check clean.
+  Focused unsigned runner tests 2/2 pass; ruff format and ruff check pass. Full unittest discovery
+  was attempted in an archive and encountered existing generated-state/SQLite lock contention and
+  fixture failures before interruption; no TLC/TLA+/model-check run. Local mypy is unavailable
+  because types-jsonschema is not installed. Review approval is withheld pending hosted/full
+  applicable gate confirmation, not due to a new code defect.
