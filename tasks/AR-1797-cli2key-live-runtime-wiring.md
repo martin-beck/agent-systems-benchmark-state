@@ -11,7 +11,7 @@
     "AR-1779"
   ],
   "id": "AR-1797",
-  "next_action": "Run the full make test and default-parallel qualification on the clean signed candidate; then request independent exact-head review.",
+  "next_action": "Rerun make test after updating the generated provenance fixture; then run default-parallel and prepare signed exact-head review.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:35:19+00:00",
+  "updated_at": "2026-10-12T05:35:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -199,3 +199,10 @@ path and records only redacted provenance and typed outcome evidence.
 
 - 2026-10-12T05:35:19+00:00: Recorded command exit 0; command argv SHA-256
   75376c334cd61f731ee0739b9dabdcd2df231a47b866ccebed7912f6c1a72f26.
+
+- 2026-10-12T05:35:30+00:00: Second full make test reached the workflow_transcript suite and exited
+  101/overall 2: exact failure was provenance_binds_the_exact_cli_and_public_fixture_sources, with
+  docs/examples/asb-cli-workflow-v1.provenance.json expected cli_source_sha256 b44c179d... but
+  current lib.rs hash c9e1176974b875a11dbfe7e5260a32557912da8c9e57665c684a7365d566a13c. This is
+  generated provenance drift caused by the intentional public seam, not a qualification failure.
+  Updated the checked-in generated provenance fixture to the exact current hash; rerun required.
