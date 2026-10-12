@@ -6,7 +6,7 @@ import copy
 import json
 import unittest
 from pathlib import Path
-from typing import Any, cast
+from typing import Any
 
 from jsonschema import Draft202012Validator, FormatChecker, ValidationError
 
@@ -16,10 +16,49 @@ VALIDATOR = Draft202012Validator(SCHEMA, format_checker=FormatChecker())
 
 
 def record(task_id: str) -> dict[str, Any]:
-    path = next((ROOT / "tasks").glob(f"{task_id}-*.md"))
-    return cast(
-        dict[str, Any], json.loads(path.read_text(encoding="utf-8").split("\n---\n", 1)[0][4:])
-    )
+    """Return a bounded fixture for an archived task record.
+
+    AR-1811 and AR-1813 are intentionally no longer in the generated queue
+    after completion. Keep their supported oracle-gate shape as a checked-in
+    contract fixture instead of coupling schema tests to generated task
+    retention.
+    """
+    digest = "sha256:" + ("0" if task_id == "AR-1811" else "1") * 64
+    event = {
+        "task_id": task_id,
+        "task_revision": 1,
+        "stage": "role",
+        "action": "open",
+        "disposition": "unresolved",
+        "before": [{"ref": "review/base", "digest": digest}],
+        "after": [{"ref": "review/candidate", "digest": digest}],
+        "public_ref": f"PR-{task_id[3:]}/candidate",
+        "recorded_at": "2026-10-12T10:16:21+00:00",
+    }
+    return {
+        "schema_version": 1,
+        "id": task_id,
+        "title": "Archived oracle gate fixture",
+        "status": "done",
+        "priority": "P0",
+        "summary": "Bounded oracle gate fixture",
+        "next_action": "No further action.",
+        "task_revision": 1,
+        "updated_at": "2026-10-12T10:16:21+00:00",
+        "owner": "",
+        "claim_expires": "",
+        "worktree_key": "",
+        "branch": "",
+        "checkpoint_commit": "",
+        "plan": "",
+        "depends_on": [],
+        "oracle_gate": {
+            "required": True,
+            "open_stage": None,
+            "completed": ["role", "spec", "decision"],
+            "events": [event],
+        },
+    }
 
 
 class TaskSchemaOracleGateTests(unittest.TestCase):
