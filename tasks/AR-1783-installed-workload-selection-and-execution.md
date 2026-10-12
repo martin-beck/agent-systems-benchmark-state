@@ -12,7 +12,7 @@
   "next_action": "Independent review recorded for PR #596 exact head 506de984af222659b3b48824cef7d34b15118862; run approved integration merge against base 5201a0369193be5e093396d76bfa4b1c9b55e9db/tree c2ebca881ea7c31946d20ea18e0cf676b851b22e, verify exact protected main, then accept/release.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
-  "observed_head": "d0799ae9a4e1f819e80fae22c9d140e37ce3e831",
+  "observed_head": "db9b1fb8f9070e2c93937bf56f8557903397e98b",
   "owner": "ar1783_workload_selection_luna56",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair PR #596 exact head 506de984 has all hosted required checks green; independent review remains required before local integration",
-  "task_revision": 233,
+  "task_revision": 234,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:31:26+00:00",
+  "updated_at": "2026-10-12T01:31:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
