@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Status and progress completeness CI",
-  "updated_at": "2026-10-12T12:49:54+00:00",
+  "updated_at": "2026-10-12T12:55:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1774-status-progress-completeness-ci"
 }
 ---
@@ -99,3 +99,6 @@ human output additions fail closed until instrumented and tested.
 - 2026-10-12T12:49:13+00:00: Heartbeat by ar1774-status-ci-luna56.
 
 - 2026-10-12T12:49:54+00:00: Heartbeat by ar1774-status-ci-luna56.
+
+- 2026-10-12T12:55:41+00:00: Recorded command exit 0; command argv SHA-256
+  a3c60e0e72da5cb206a4f179b48aeb263195468e5c843054a43d018c042a5903.
