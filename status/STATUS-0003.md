@@ -1476,7 +1476,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
-| Next action | Fresh independent review exact signed head ed4b1766 (includes a9722277/c7ed2669); request ACCEPT/REJECT via handoffctl before PR. |
+| Next action | Request fresh independent exact-head review of 1be93177; publication remains blocked until ACCEPT. |
 
 ### AR-1800 — Controlled local workload acquisition backend
 

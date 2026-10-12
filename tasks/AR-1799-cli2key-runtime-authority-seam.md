@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Fresh independent review exact signed head ed4b1766 (includes a9722277/c7ed2669); request ACCEPT/REJECT via handoffctl before PR.",
+  "next_action": "Request fresh independent exact-head review of 1be93177; publication remains blocked until ACCEPT.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "1be931771b7db685c9369d8b051c62e0fe25b44a",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:41:45+00:00",
+  "updated_at": "2026-10-12T04:41:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -275,3 +275,8 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:41:42+00:00: Recorded command exit 0; command argv SHA-256
   ae31dbc495abd32f8a9f9373a0ba6d2d2e68e8f166e1efded4bab81f458cb346.
+
+- 2026-10-12T04:41:50+00:00: Final repair candidate signed/DCO head 1be93177. Added authority
+  bootstrap lifecycle fake pinned executable test plus crash/malformed readiness hostile matrix;
+  prior revocation fence and relay fence retained. Focused runtime 10 tests, separate CLI dispatch
+  tests, and full make test (fmt/clippy/workspace tests/docs) all green.
