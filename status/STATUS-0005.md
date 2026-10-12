@@ -249,11 +249,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md): Development/formal workflow separation | coordinator-ar1811-merge | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. | Monitor PR #606 exact head d9972679899cf18c1c9ab87e694ad639a2c18786 until all required non-TLC checks are green; then obtain independent review, merge, exact-main post-merge verification, and durable closure. |
 | P0 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | ar1810-cli2key-luna56 | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | PR #607 exact head d5f814896ccfd71bd0fe09028dc94d7fcf4c88ec is under hosted non-TLC checks; TLC check is present only because PR #606 formal-separation merge is still blocked by GitHub review policy. After ordinary checks and independent review, reconcile the formal lane before merge. |
 
 ### Blocked (86)
@@ -444,7 +443,7 @@
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | User-requested stop recorded. Preserve interrupted exact-candidate retry artifacts and terminal uncertainty; do not accept or release. Reclaim only after explicit continuation and rerun a fresh bounded exact full-exhaustive attempt with PYTHONDONTWRITEBYTECODE=1. |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (601)
+### Done (602)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -612,3 +611,4 @@
 | P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Unclaimed | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 merged at exact main a5eb7e6; wait for all seven post-merge workflows, then run exact-main verification and release AR-1452 done before promoting AR-1453. |
 | P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Unclaimed | Make CLI and control use the central service for every run lifecycle. | Release AR-1453 complete after all seven exact-main post-merge workflows passed. |
 | P0 | [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md): Protected-main tree-equality repair for runtime replay | Unclaimed | Repair the protected-main tree mismatch after the runtime replay merge. | Post-merge verification complete: all seven workflows succeeded; release AR-1454 and propagate repair evidence to AR-1450. |
+| P0 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | Unclaimed | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Run state reconcile and live doctor, then release AR-1455 done with exact post-merge workflow evidence. |

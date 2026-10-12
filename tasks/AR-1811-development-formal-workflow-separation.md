@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1811-development-formal-workflow-separation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T12:25:05+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1811",
   "next_action": "Monitor PR #606 exact head d9972679899cf18c1c9ab87e694ad639a2c18786 until all required non-TLC checks are green; then obtain independent review, merge, exact-main post-merge verification, and durable closure.",
@@ -153,7 +153,7 @@
       "decision"
     ]
   },
-  "owner": "coordinator-ar1811-merge",
+  "owner": "",
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -167,11 +167,11 @@
   },
   "spec_ref": "specs/AR-1811.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:38:25+00:00",
+  "updated_at": "2026-10-12T10:38:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -332,3 +332,7 @@ tests and update the generated quality documentation.
 - 2026-10-12T10:38:25+00:00: Exact reviewed PR #606 merged at 5a6c5477; all exact-main workflows
   terminal success after minimal AR-1814 ruleset repair; independent review and DCO/signature
   evidence retained.
+
+- 2026-10-12T10:38:33+00:00: AR-1811 complete: PR #606 merged at exact protected-main commit
+  5a6c5477; all exact-main workflows passed after AR-1814 minimal ruleset repair; acceptance receipt
+  and independent review retained.
