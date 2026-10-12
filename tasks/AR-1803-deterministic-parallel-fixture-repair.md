@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Force-with-lease push exact accepted 14471899 to PR #599; monitor hosted exact-head CI.",
+  "next_action": "Refresh PR #599 checks after merge-ref synchronization; no product repair unless repeat failure shows a changed head or source digest issue.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "14471899c4271cf32ef172c76f5141998a9536b4",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:12:16+00:00",
+  "updated_at": "2026-10-12T04:12:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -406,3 +406,12 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T04:12:16+00:00: Recorded command exit 0; command argv SHA-256
   91d47aefa182fa557a7e30fe00cd44847c65f0e9b02233fda6c37f76e06892c7.
+
+- 2026-10-12T04:12:27+00:00: Exact hosted failure at PR #599 head 14471899: run 38202786130 job
+  114659617611, portable_provenance.py reported "portable provenance: pull-request synchronization
+  merge must be the topic tip" with EVENT_HEAD=14471899c4271cf32ef172c76f5141998a9536b4,
+  PR_BASE=6761a6d0bcd5d5982c92176f4adf687696de90d6,
+  PUSH_BASE=ed7b31055843f11e9f900e2de75d1baefe332e0de9f900e2de75d1baefe332d8a (exact log captured).
+  Classification: hosted pull-request merge-ref synchronization/infrastructure failure, not product
+  provenance drift; local provenance and full gates are green. Next action: allow PR merge ref to
+  synchronize and rerun hosted checks without source change.
