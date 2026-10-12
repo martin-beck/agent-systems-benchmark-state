@@ -9,8 +9,8 @@
   "id": "AR-1805",
   "next_action": "Create the canonical public command-surface manifest and contract tests.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
-  "observed_dirty": 5,
-  "observed_head": "5a6c5477cd171606da3aaa0cae9950453ea8dc5c",
+  "observed_dirty": 0,
+  "observed_head": "01631b5bbe14ba856a8993cc7fb8c4be6aa76fcc",
   "owner": "asb-queue-next-luna56",
   "plan": "../plans/AR-1805-cli-surface-inventory-contract.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one complete machine-checked inventory of every public ASB command and subcommand surface.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T10:51:29+00:00",
+  "updated_at": "2026-10-12T10:51:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
