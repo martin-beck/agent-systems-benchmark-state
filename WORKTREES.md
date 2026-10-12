@@ -62,7 +62,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1798-pinned-source-checkout-acquisition` | `feature/ar-1798-pinned-source-checkout-acquisition` | `55a789348f6f` | 0 | behind 73, ahead 0 |
 | `agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend` | `feature/ar-1800-controlled-local-workload-acquisition-backend` | `b72da478631f` | 0 | behind 7, ahead 3 |
 | `agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation` | `feature/ar-1801-tool-discovery-cargo-fixture-isolation` | `c20bb7bb4448` | 0 | behind 9, ahead 1 |
-| `agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority` | `feature/ar-1802-controlled-workload-matrix-and-fixture-authority` | `97f6c271db89` | 0 | behind 7, ahead 4 |
+| `agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority` | `DETACHED` | `6761a6d0bcd5` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair` | `feature/ar-1803-deterministic-parallel-fixture-repair` | `56db629d58b7` | 0 | behind 7, ahead 1 |
 | `agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore` | `main` | `6761a6d0bcd5` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 727, ahead 326 |
