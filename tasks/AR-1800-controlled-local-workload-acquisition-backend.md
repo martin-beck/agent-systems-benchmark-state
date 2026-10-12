@@ -30,7 +30,7 @@
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
   "task_revision": 71,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T05:20:32+00:00",
+  "updated_at": "2026-10-12T05:20:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -239,5 +239,5 @@ must not weaken production acquisition, identity, or offline guarantees.
 - 2026-10-12T05:20:20+00:00: Recorded command exit 0; command argv SHA-256
   c36136a48390af25cda2004e44b7026c92d57c736cf76584bd81130eb7a18e85.
 
-- 2026-10-12T05:20:32+00:00: Recorded command exit 0; command argv SHA-256
-  ffb7d124af543921d7542d0ddaf236e18d30f323f57480a86fb7566fd6c395e7.
+- 2026-10-12T05:20:42+00:00: Recorded command exit 0; command argv SHA-256
+  56e2d43df9b739bd834a68a3755ec95ac3e1182399c20ceeae3ff3ef61f0db3a.
