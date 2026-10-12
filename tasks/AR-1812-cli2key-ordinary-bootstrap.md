@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "checkpoint_commit": "5b71c956ea88788c3b303425331e0682c8dbc241",
-  "claim_expires": "2026-10-12T13:26:59+00:00",
+  "claim_expires": "2026-10-12T13:30:37+00:00",
   "depends_on": [
     "AR-1779",
     "AR-1799",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:28:24+00:00",
+  "updated_at": "2026-10-12T11:30:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -162,3 +162,5 @@ fixtures and must not require a live provider or TLC.
   reviewed producer line map no longer recognizes shifted lib.rs call sites after commit 5c75c1a.
   Exit 101 at 11:27:51Z. No product fix applied yet; repair must preserve the mechanical diagnostic
   contract.
+
+- 2026-10-12T11:30:37+00:00: Heartbeat by ar1812-replacement-luna56.
