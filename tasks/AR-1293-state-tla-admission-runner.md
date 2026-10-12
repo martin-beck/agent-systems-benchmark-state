@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T11:59:04+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Obtain independent re-review of 21a8b4c16c on PR #120; merge only after approval, then verify exact merge head and post-merge checks without TLC.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
-  "owner": "",
+  "owner": "ar1293-merge-luna56",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 782,
+  "task_revision": 783,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T09:51:50+00:00",
+  "updated_at": "2026-10-12T09:59:04+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2347,3 +2347,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-10-12T09:51:50+00:00: Independent review recorded: ACCEPT exact PR #120 head
   21a8b4c16c36e1884df83b38e64c34d0658df672; no merge authority. Keep open for authorized merge and
   post-merge verification without TLC.
+
+- 2026-10-12T09:59:04+00:00: Claimed by ar1293-merge-luna56.
