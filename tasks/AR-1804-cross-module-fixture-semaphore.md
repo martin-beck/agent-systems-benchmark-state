@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:03:29+00:00",
+  "updated_at": "2026-10-12T03:03:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -311,3 +311,6 @@ before AR-1801 can be accepted.
   the removed AR-1800/AR-1802 archive helper, not a qualification failure. The reviewed catalog from
   signed baseline b72da478 contains the corresponding archive identities and will be restored to
   match the source.
+
+- 2026-10-12T03:03:32+00:00: Recorded command exit 0; command argv SHA-256
+  b3d2b2f6772f0de029db7607704676a4d1976ccb2a521693c24c43904d6d2333.
