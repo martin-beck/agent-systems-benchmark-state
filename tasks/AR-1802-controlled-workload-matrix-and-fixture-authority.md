@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T04:00:42+00:00",
+  "updated_at": "2026-10-12T04:00:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -291,3 +291,6 @@ remains explicitly unaccepted and blocked until this repair is complete.
 
 - 2026-10-12T04:00:42+00:00: Recorded command exit 0; command argv SHA-256
   955e8c50617bf944bdea7a981c2ece6ba1f318fa8675d0663b92bdd3592bad43.
+
+- 2026-10-12T04:00:55+00:00: Recorded command exit 0; command argv SHA-256
+  9d32f5da19fadc39349fed338d0b0d51eb6edcf7b3270bae26c69c8216a6823f.
