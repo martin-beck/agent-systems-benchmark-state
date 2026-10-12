@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:49:56+00:00",
+  "updated_at": "2026-10-12T03:50:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -220,3 +220,6 @@ remains explicitly unaccepted and blocked until this repair is complete.
   source_checkout.rs:911, panic unwrap Err(CheckoutError::Unavailable). Same test rerun isolated
   passed 1/1; this is a parallel fixture/process isolation failure, not waived. Inspect
   source_checkout fixture setup/guard and repair deterministic parallel behavior.
+
+- 2026-10-12T03:50:11+00:00: Recorded command exit 0; command argv SHA-256
+  329dd91c63869de1a7c140cfb574490dbccd5d944bf35ca0d7c3076e82d20f9c.
