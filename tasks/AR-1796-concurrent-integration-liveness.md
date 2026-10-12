@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T13:16:23+00:00",
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Retry exact full-exhaustive after creating the dedicated TMPDIR path; preserve candidate-bound attestation and record terminal result. No accept/release without attestation.",
+  "next_action": "User-requested stop recorded. Preserve interrupted exact-candidate retry artifacts and terminal uncertainty; do not accept or release. Reclaim only after explicit continuation and rerun a fresh bounded exact full-exhaustive attempt with PYTHONDONTWRITEBYTECODE=1.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-12T09:16:23+00:00",
+  "updated_at": "2026-10-12T09:20:45+00:00",
   "worktree_key": ""
 }
 ---
@@ -331,3 +331,7 @@ workers checkpoint, retry, and continue useful work during integration churn.
   efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0.
 
 - 2026-10-12T09:16:23+00:00: Heartbeat by ar1796-reconcile-candidate-luna56.
+
+- 2026-10-12T09:20:45+00:00: User requested the AR-1796 ASB worker stop; coordinator terminated the
+  exact handoffctl/TLC process group after preserving durable evidence. No attestation or acceptance
+  was produced.

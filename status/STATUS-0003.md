@@ -1434,7 +1434,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep autonomous development live during concurrent protected-main integration. |
-| Next action | Retry exact full-exhaustive after creating the dedicated TMPDIR path; preserve candidate-bound attestation and record terminal result. No accept/release without attestation. |
+| Next action | User-requested stop recorded. Preserve interrupted exact-candidate retry artifacts and terminal uncertainty; do not accept or release. Reclaim only after explicit continuation and rerun a fresh bounded exact full-exhaustive attempt with PYTHONDONTWRITEBYTECODE=1. |
 
 ### AR-1797 — Wire cli2key sidecar into live benchmark execution
 
