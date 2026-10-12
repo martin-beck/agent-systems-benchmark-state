@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T05:18:28+00:00",
+  "updated_at": "2026-10-12T05:18:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -128,3 +128,6 @@ or pin the probe without weakening bounded execution or privacy contracts.
   already-integrated behavior. This establishes AR-1801 is superseded by AR-1803 rather than
   requiring a duplicate source change; run current-main gate and record durable supersession
   decision.
+
+- 2026-10-12T05:18:31+00:00: Recorded command exit 0; command argv SHA-256
+  22518d8c83d1887189a21278d6daa291985b6cb280e7fce92a2b8d3f23f4b29d.
