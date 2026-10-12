@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:53:33+00:00",
+  "updated_at": "2026-10-12T11:55:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -377,3 +377,6 @@ fixtures and must not require a live provider or TLC.
   assurance retained faults, protected-main provenance, and Huawei/SPDX headers. Remaining required
   checks are in progress, with no review yet; mergeStateStatus is BLOCKED pending review/check
   completion. No branch mutation or retry was performed.
+
+- 2026-10-12T11:55:47+00:00: Recorded command exit 0; command argv SHA-256
+  97a1ab4d6eb975f29d76fe0fec99ccb4d4daa6e2bce98a33cdb78b7498718736.

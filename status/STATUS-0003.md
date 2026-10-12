@@ -1,9 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |

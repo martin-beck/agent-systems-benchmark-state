@@ -4502,7 +4502,7 @@
 | Summary | Raise the repaired ASB coordination checkout back above the unchanged 95&#37; coverage gate with behavior-focused tests. |
 | Next action | Add focused tests for authority adapters, rollback/CAS lifecycle, handoff leases, oracle lifecycle, and upgrade contract paths, then pass the unchanged strict gate. |
 
-### AR-1674 — ASB channel option propagation and default persistence
+### AR-1674 — Project-Persisted Channel Resolution for Every ASB Command
 
 | Field | Value |
 | --- | --- |
@@ -4513,8 +4513,8 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Carry the explicit release-channel option through install, status, launch, upgrade, rollback, and remove, with dev as the persisted default and stable typed diagnostics. |
-| Next action | Implement one shared channel selector for every supported ASB command, persist the selected channel for subsequent runs, and add human/JSON tests for omitted dev, explicit dev, and unavailable future channels. |
+| Summary | Make project init persist channel=dev and make every ASB command resolve one validated project channel consistently. |
+| Next action | Extend the project configuration schema and add one shared channel resolver that every executable command receives, then qualify default, override, persistence, and unavailable-channel behavior. |
 
 ### AR-1675 — ASB channel manifest and current-main provenance
 
@@ -4701,3 +4701,7 @@
 ### AR-1688 — Runner-owned cassette capture and replay qualification
 
 | Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
