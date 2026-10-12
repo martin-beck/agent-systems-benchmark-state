@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T08:19:21+00:00",
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope.",
+  "next_action": "Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0: 24G retry durably failed with liveness OOM. A subsequent 48G/64G attempt has no live process, attestation, or durable handoffctl task result visible; treat it as interrupted/unknown, do not accept or release, and reconcile before any new bounded retry.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-12T05:19:21+00:00",
+  "updated_at": "2026-10-12T05:19:24+00:00",
   "worktree_key": ""
 }
 ---
@@ -171,3 +171,8 @@ workers checkpoint, retry, and continue useful work during integration churn.
 - 2026-10-12T03:45:59+00:00: Heartbeat by ar1796-reconcile-candidate-luna56.
 
 - 2026-10-12T05:19:21+00:00: Heartbeat by ar1796-reconcile-candidate-luna56.
+
+- 2026-10-12T05:19:24+00:00: Inspected active worker: no AR-1796 TLC or handoffctl process remains;
+  lease was still active and renewed. No 48G attestation exists; canonical queue outcome files do
+  not provide a matching completed 48G task result. Preserve unknown interrupted outcome and
+  candidate identity.

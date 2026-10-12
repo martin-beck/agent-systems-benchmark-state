@@ -1434,7 +1434,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep autonomous development live during concurrent protected-main integration. |
-| Next action | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope. |
+| Next action | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0: 24G retry durably failed with liveness OOM. A subsequent 48G/64G attempt has no live process, attestation, or durable handoffctl task result visible; treat it as interrupted/unknown, do not accept or release, and reconcile before any new bounded retry. |
 
 ### AR-1797 — Wire cli2key sidecar into live benchmark execution
 
