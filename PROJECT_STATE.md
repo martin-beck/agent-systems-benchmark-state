@@ -43,7 +43,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38190459992 | `ad64a90f198d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38190459987 | `ad64a90f198d` | pull_request | Rust verification | in_progress:- |
 | 38190459984 | `ad64a90f198d` | pull_request | Fault assurance | in_progress:- |
-| 38190459970 | `ad64a90f198d` | pull_request | Repository quality | in_progress:- |
+| 38190459970 | `ad64a90f198d` | pull_request | Repository quality | completed:failure |
 | 38190459933 | `ad64a90f198d` | pull_request | Formal assurance | in_progress:- |
 | 38190459926 | `ad64a90f198d` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 38190265363 | `5201a0369193` | push | Emulated aarch64 portability | in_progress:- |
