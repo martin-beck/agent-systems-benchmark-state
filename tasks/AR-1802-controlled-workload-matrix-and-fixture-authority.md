@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T04:01:32+00:00",
+  "updated_at": "2026-10-12T04:02:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -303,3 +303,6 @@ remains explicitly unaccepted and blocked until this repair is complete.
   IN_PROGRESS (Rust verification, repository quality, portability, formal/fault assurance,
   provenance, credential-free benchmark, AWQ shadow, headers, TUI). No merge before exact-head green
   CI.
+
+- 2026-10-12T04:02:08+00:00: Recorded command exit 0; command argv SHA-256
+  c55e94916f6d7aedfb829a52624bc4afaeb1197d65e9abf4ace253f0bf24f8e3.
