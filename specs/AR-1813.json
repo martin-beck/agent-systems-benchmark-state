@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1813.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "receipt-contract", "description": "A versioned non-secret AR-1779 runtime receipt validates identity, platform, entrypoint, bridge protocol, and digests, rejecting substitution and staleness."},
+    {"id": "opaque-factory", "description": "Trusted runtime/control composition exposes an opaque LiveProviderAttemptFactory without exposing sidecar keys or authority internals to CLI code."},
+    {"id": "lifecycle", "description": "Local/mock tests cover readiness, timeout, crash, cancellation, teardown, and bounded-sweep lifetime with typed failures."},
+    {"id": "no-fallback", "description": "Invalid or unavailable cli2key runtime state fails closed without provider, replay, or credential fallback."}
+  ],
+  "definition_of_done": ["Runtime API, receipt contract, tests, docs, independent review, exact-head CI, merge, and post-merge verification complete."],
+  "inputs": [{"id": "installer", "description": "AR-1779 project-local cli2key installation."}, {"id": "authority", "description": "AR-1799 opaque runtime authority seam."}],
+  "outputs": [{"id": "runtime-factory", "description": "Opaque runtime-owned factory/source consumable by AR-1812 ordinary CLI bootstrap."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl", "credential-free-fakes"],
+  "forbidden_tools": ["auth-file-scraping", "credential-output", "oauth-copy", "provider-fallback", "force-push", "gate-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [{"id": "focused", "description": "Receipt and opaque-factory contract/lifecycle tests pass."}, {"id": "offline", "description": "Full applicable development gates pass without TLC."}, {"id": "exact-main", "description": "Independent review, protected merge, and post-merge exact-main verification are green."}]
+}
