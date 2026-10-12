@@ -43,7 +43,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38189192547 | `e644f9b02c5b` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38189192543 | `e644f9b02c5b` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38189192527 | `e644f9b02c5b` | pull_request | Portable protected-main provenance | completed:success |
-| 38189192510 | `e644f9b02c5b` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38189192510 | `e644f9b02c5b` | pull_request | Hosted portability and native qualification | completed:success |
 | 38189192507 | `e644f9b02c5b` | pull_request | Credential-free benchmark path | in_progress:- |
 | 38189192503 | `e644f9b02c5b` | pull_request | Rust verification | in_progress:- |
 | 38188789338 | `f4fe84a0936a` | pull_request | Rust verification | completed:failure |
