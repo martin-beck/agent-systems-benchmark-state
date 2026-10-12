@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Restore the reviewed AR-1800/AR-1802 diagnostic catalog baseline matching the restored archive helper, then rerun diagnostic_contract and full make test. |
+| Next action | Run full make test after reviewed catalog restoration; then default-parallel asb-cli and commit/checkpoint clean signed head for re-review. |
 
 
 ## Dependency graph

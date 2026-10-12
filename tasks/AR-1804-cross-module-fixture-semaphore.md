@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Restore the reviewed AR-1800/AR-1802 diagnostic catalog baseline matching the restored archive helper, then rerun diagnostic_contract and full make test.",
+  "next_action": "Run full make test after reviewed catalog restoration; then default-parallel asb-cli and commit/checkpoint clean signed head for re-review.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 4,
   "observed_head": "a8507d19e1998f2525462b9297c775ccac522095",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:03:42+00:00",
+  "updated_at": "2026-10-12T03:03:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -317,3 +317,8 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:03:42+00:00: Recorded command exit 0; command argv SHA-256
   8cec93ff7d9c3983f4c427681a0b30b16b41a63ed52669a2eab9a3039760005e.
+
+- 2026-10-12T03:03:49+00:00: Reviewed catalog restoration validated: replaced the reduced compact
+  catalog with the b72da478 reviewed AR-1800/AR-1802 catalog containing archive helper identities.
+  Focused ordinary_cli_producers_are_mechanically_closed now passes 1/1 against the restored source
+  and catalog.
