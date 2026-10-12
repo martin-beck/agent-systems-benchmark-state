@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
+  "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-12T12:12:04+00:00",
   "depends_on": [
