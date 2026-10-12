@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Expired role assignment cleanup semantics",
-  "updated_at": "2026-10-12T14:37:45+00:00",
+  "updated_at": "2026-10-12T14:38:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1822-role-removal-expiry"
 }
 ---
@@ -59,4 +59,7 @@ transactional command.
   10c8908c963e4882e990fd7b72ec3524b2da85691ba7014aa4a3e9c8e785e27b.
 
 - 2026-10-12T14:37:45+00:00: Recorded command exit 0; command argv SHA-256
+  f399fa2e4b274c546fafcb0bdfc8e9351a34a5319173e83055f5cf03d89f1033.
+
+- 2026-10-12T14:38:36+00:00: Recorded command exit 0; command argv SHA-256
   f399fa2e4b274c546fafcb0bdfc8e9351a34a5319173e83055f5cf03d89f1033.
