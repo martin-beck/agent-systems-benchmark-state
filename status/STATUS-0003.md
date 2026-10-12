@@ -1713,7 +1713,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. |
-| Next action | PR #121 at 104abc99ad is published; obtain independent exact-head review and required state CI, then merge and run configured reconcile/snapshot/doctor receipt. |
+| Next action | PR #121 now targets 8c001feda9; independent exact-head review and required state CI must pass. Vendor files are restored; downstream awq-handoffctl owns projection transaction and bytecode hygiene. Then merge and run configured reconcile/snapshot/doctor receipt. |
 
 
 ## Dependency graph
