@@ -1563,7 +1563,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define one complete machine-checked inventory of every public ASB command and subcommand surface. |
-| Next action | Create the canonical public command-surface manifest and contract tests. |
+| Next action | PR #608 opened at exact head 01631b5bbe14ba856a8993cc7fb8c4be6aa76fcc. Await independent review and all non-TLC hosted checks, then protected exact-head merge and post-merge verification. |
 
 ### AR-1806 — Exhaustive Human Output Contract Audit
 

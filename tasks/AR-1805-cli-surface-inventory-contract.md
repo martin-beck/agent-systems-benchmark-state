@@ -7,7 +7,7 @@
     "AR-1773"
   ],
   "id": "AR-1805",
-  "next_action": "Create the canonical public command-surface manifest and contract tests.",
+  "next_action": "PR #608 opened at exact head 01631b5bbe14ba856a8993cc7fb8c4be6aa76fcc. Await independent review and all non-TLC hosted checks, then protected exact-head merge and post-merge verification.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "01631b5bbe14ba856a8993cc7fb8c4be6aa76fcc",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one complete machine-checked inventory of every public ASB command and subcommand surface.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T10:51:50+00:00",
+  "updated_at": "2026-10-12T10:52:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -105,3 +105,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 
 - 2026-10-12T10:51:50+00:00: Recorded command exit 0; command argv SHA-256
   a54fbb8e1da25f8e24ed1affa79342bf52d318fb92ff400187269fc1e962afef.
+
+- 2026-10-12T10:52:00+00:00: Implemented versioned command-surface manifest, workload human route
+  inventory, and drift/negative-journey contract tests; focused tests pass.
