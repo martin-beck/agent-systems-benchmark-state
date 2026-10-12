@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T13:59:57+00:00",
   "depends_on": [],
   "id": "AR-1815",
-  "next_action": "Exact merge e57982a is published. Repository quality run 38246184722 attempt 2 is queued after attempt 1 external HTTP 504. Require rerun terminal-success and every other exact-main workflow terminal-success before bounded receipt and done release.",
+  "next_action": "Exact merge e57982a is published. Repository quality run 38246184722 attempts 1 and 2 both failed only on repeated external analyzer-download HTTP 504; rerun the failed workflow once more, then require terminal-success or record the external dependency as the sole blocker without weakening gates.",
   "observed_branch": "recovery/ar-1815-provenance",
   "observed_dirty": 0,
   "observed_head": "ab4f4c6a81f543e049759d199cca675c7370a1dc",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:01:23+00:00",
+  "updated_at": "2026-10-12T12:02:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -127,3 +127,8 @@ introduce a TLC/model-check dependency for development.
 - 2026-10-12T12:01:23+00:00: Reran only failed Repository quality workflow 38246184722 through
   handoffctl; attempt 2 is queued for exact merge e57982a. Archived generated state pycache outside
   repository to keep doctor/command recording healthy. No product or gate changes.
+
+- 2026-10-12T12:02:43+00:00: Repository quality attempt 2 again failed at the same digest-pinned
+  analyzer download with HTTP 504 after retries; optional artifact classification failed
+  consequentially. No product/policy assertion failed. Repeated infrastructure failure recorded;
+  retry only the failed workflow, never bypass the gate.
