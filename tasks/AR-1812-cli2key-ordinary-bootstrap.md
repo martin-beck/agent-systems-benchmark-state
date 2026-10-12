@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T13:09:41+00:00",
+  "claim_expires": "2026-10-12T13:11:32+00:00",
   "depends_on": [
     "AR-1779",
     "AR-1799",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:10:15+00:00",
+  "updated_at": "2026-10-12T11:11:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -81,3 +81,5 @@ fixtures and must not require a live provider or TLC.
 - 2026-10-12T11:10:15+00:00: Unblocked and claimed after AR-1813 release; existing branch rebased
   cleanly to 5c843a12. Runtime receipt/factory API is now available; no live provider or TLC
   required.
+
+- 2026-10-12T11:11:32+00:00: Heartbeat by ar1810-cli2key-luna56.
