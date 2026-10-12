@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Wait for all PR #596 checks and independent exact-head review; integrate only with tools/integration/merge_pr.py, then verify protected main and accept/release",
+  "next_action": "Record independent exact-head review of 506de984, then run tools/integration/merge_pr.py against base 5201a036/tree c2ebca881ea7c31946d20ea18e0cf676b851b22e, verify green protected main, accept and release",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "506de984af222659b3b48824cef7d34b15118862",
@@ -28,10 +28,10 @@
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
-  "summary": "Forward repair PR #596 is based on protected main 5201a036; exact signed+DCO head 506de984 passes local policy and hosted checks are running",
-  "task_revision": 212,
+  "summary": "Repair PR #596 exact head 506de984 has all hosted required checks green; independent review remains required before local integration",
+  "task_revision": 213,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:18:46+00:00",
+  "updated_at": "2026-10-12T01:18:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -665,3 +665,10 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:18:46+00:00: Recorded command exit 0; command argv SHA-256
   e0c7299eb470de7f38a1695f2b20320b95d8e4e8fee04fa5d78cbfeeaceb4b14.
+
+- 2026-10-12T01:18:59+00:00: Hosted terminal evidence at exact head 506de984: PR #596 all listed
+  checks pass, including Rust run 38190636507, Policy/coverage/supply-chain run 38190636526, AArch64
+  38190636523, Formal 38190636521, Fault 38190636513, platform 38190636493, credential-free
+  38190636477, TUI 38190636488, provenance 38190636658, headers 38190636491, and AWQ 38190636560.
+  Exact base/tree verified: base 5201a036; topic tree and base tree
+  c2ebca881ea7c31946d20ea18e0cf676b851b22e. PR remains open pending durable independent review.
