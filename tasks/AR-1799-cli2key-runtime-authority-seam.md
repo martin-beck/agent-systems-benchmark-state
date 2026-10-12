@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Obtain independent exact-head review of 85173e15; then publish PR and run hosted exact-head CI.",
+  "next_action": "Repair factory/sidecar lifecycle binding and add direct CLI run/sweep plus hostile cancellation/timeout/crash/concurrent teardown tests; rerun full gates.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "85173e15d2e17eab0d637110c8a4e57767589752",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:29:07+00:00",
+  "updated_at": "2026-10-12T04:29:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -149,3 +149,10 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:29:07+00:00: Recorded command exit 0; command argv SHA-256
   05a42814091a3a9f9dccee9c190bb8b89877b7c5a3964fa3206ad70af9980bdf.
+
+- 2026-10-12T04:29:18+00:00: Independent exact-head review of 85173e15: REJECT. Signature/DCO,
+  diff-check, focused 7 tests, and full make test are green, but authority bootstrap accepts an
+  arbitrary externally supplied LiveProviderAttemptFactory; attempts are not
+  cryptographically/lifecycle-bound to the sidecar authority, and no direct CLI run/sweep wiring or
+  hostile lifecycle tests prove cancellation/timeout/crash/concurrent teardown. Repair required
+  before PR.
