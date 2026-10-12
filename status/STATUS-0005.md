@@ -1,5 +1,14 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1531](../tasks/AR-1531.md) | [AR-1520](../tasks/AR-1520.md), [AR-1530](../tasks/AR-1530.md) | [AR-1546](../tasks/AR-1546.md) |
+| [AR-1532](../tasks/AR-1532.md) | [AR-1528](../tasks/AR-1528.md) | [AR-1535](../tasks/AR-1535.md), [AR-1542](../tasks/AR-1542.md) |
+| [AR-1533](../tasks/AR-1533.md) | [AR-1528](../tasks/AR-1528.md) | [AR-1536](../tasks/AR-1536.md), [AR-1543](../tasks/AR-1543.md) |
+| [AR-1534](../tasks/AR-1534.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1535](../tasks/AR-1535.md), [AR-1536](../tasks/AR-1536.md), [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
+| [AR-1535](../tasks/AR-1535.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md), [AR-1542](../tasks/AR-1542.md) | [AR-1545](../tasks/AR-1545.md) |
+| [AR-1536](../tasks/AR-1536.md) | [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1543](../tasks/AR-1543.md) | [AR-1546](../tasks/AR-1546.md) |
+| [AR-1537](../tasks/AR-1537.md) | [AR-1530](../tasks/AR-1530.md) | None |
+| [AR-1538](../tasks/AR-1538.md) | [AR-1530](../tasks/AR-1530.md) | None |
+| [AR-1539](../tasks/AR-1539.md) | [AR-1530](../tasks/AR-1530.md) | None |
 | [AR-1540](../tasks/AR-1540.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
 | [AR-1541](../tasks/AR-1541.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
 | [AR-1542](../tasks/AR-1542.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md), [AR-1549](../tasks/AR-1549.md) | [AR-1535](../tasks/AR-1535.md) |
@@ -253,6 +262,7 @@
 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md) | [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md), [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md) | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md) |
 | [AR-1814](../tasks/AR-1814-remove-tlc-development-rule.md) | None | None |
 | [AR-1815](../tasks/AR-1815-protected-main-merge-recovery.md) | None | None |
+| [AR-1816](../tasks/AR-1816-state-projection-and-bytecode-hygiene.md) | None | None |
 
 ## Complete AR inventory
 
@@ -359,7 +369,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (84)
+### Planned (85)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -407,6 +417,7 @@
 | P0 | [AR-1807](../tasks/AR-1807-complete-help-contract.md): Complete Contextual CLI Help Contract | Unclaimed | Provide useful --help on every ASB command and subcommand, including the TUI lifecycle. | Implement and test complete contextual help for every public command path. |
 | P0 | [AR-1808](../tasks/AR-1808-universal-list-selection-contract.md): Universal List and Selection Contract | Unclaimed | Make every ASB command discover its valid choices through a consistent, typed --list interface. | Define and implement the universal --list discovery and selection contract. |
 | P0 | [AR-1809](../tasks/AR-1809-cli-ux-qualification.md): End-to-End CLI UX Contract Qualification | Unclaimed | Qualify the complete ASB command tree for human output, help, list discovery, and selection round trips. | Run end-to-end CLI UX qualification against the complete contract and close contract gaps. |
+| P0 | [AR-1816](../tasks/AR-1816-state-projection-and-bytecode-hygiene.md): Coordinator projection and bytecode hygiene recovery | Unclaimed | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. | Implement a lock-aware, atomic reconciliation path and bytecode-safe coordinator execution, then qualify recovery under concurrent state activity. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -617,7 +628,3 @@
 | P0 | [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md): Protected-main topology repair for OpenRouter refresh | Unclaimed | Repair the single-parent protected-main merge produced for the OpenRouter model refresh. | PR #324 merged as two-parent 5871de7cad4ee7e496ffce1c5e1fe51862660bfc; monitor seven exact-main workflows 36145976341, 36145976337, 36145976326, 36145976266, 36145976239, 36145976238, 36145976223 to terminal success. Record that GitHub has no independent review record, then update/release AR-1440 only after all seven pass. |
 | P0 | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md): First-customer production qualification | Unclaimed | Qualify ASB in a disposable first-customer production-like environment. | Done: ASB-only first-customer production-like qualification verified on protected merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec. Disposable bootstrap passed; CLI, runtime, and workspace-library gates passed, including literature/local-mock coverage. No live-provider or asb-tui dependency was required; AR-0903 and AR-1336 remain separate. |
 | P0 | [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md): ASB local campaign qualification | Unclaimed | Qualify the complete credential-free ASB local campaign and replay journey. | Done: ASB-only local campaign qualification verified on protected merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec. Targeted guided-local and exact-campaign tests plus full asb-cli library tests (107/107) passed; AR-1338 remains a separate enhancement. |
-| P0 | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Unclaimed | Materialize runtime-owned strict replay authority for normal CLI replay. | Done: signed PR #326 merged as f03d9e484d6ca73eacdbd5476980bf33ca737540; all seven exact-main post-merge workflows and local runtime/CLI verification passed. |
-| P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Unclaimed | Keep local replay authority acquisition inside the runtime boundary. | Release-ready: PR #328 head 2832912 passed exact-head checks and independent review; merge 452f3ca was repaired by AR-1454 merge a0bd63d3 with all seven post-merge workflows green. |
-| P0 | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md): Central orchestration authority contract and ASB redesign | Unclaimed | Freeze one runtime-owned orchestration authority for every ASB run and attempt. | PR #329 merged as 071167d. Monitor seven exact-main post-merge workflows 36170798957, 36170798948, 36170798971, 36170798901, 36170798918, 36170798954, 36170798887 to terminal success; then release AR-1451 and promote AR-1452. |
-| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Unclaimed | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 merged at exact main a5eb7e6; wait for all seven post-merge workflows, then run exact-main verification and release AR-1452 done before promoting AR-1453. |
