@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Select every development external workload and prove ASB uses its exact project-local identity end to end.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:19:27+00:00",
+  "updated_at": "2026-10-12T00:19:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -219,3 +219,6 @@ the suite from this end-to-end path.
 - 2026-10-12T00:19:27+00:00: Durable diagnosis for repeated exit 8: argv hash 727d... was not a
   product/CI failure; stderr identified oversized generated handoffctl.pyc. Subsequent commands use
   python3 -B and supported handoffctl state operations.
+
+- 2026-10-12T00:19:33+00:00: Recorded command exit 8; command argv SHA-256
+  727ddf13cb9240da38da2754474c98f8fc0df5748ca22dce8b74ff3a03d4452b.
