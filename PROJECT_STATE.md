@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
 | #596 | `feature/ar-1783-installed-workload-selection-and-execution@506de984af22` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(integration): restore protected-main policy identity |
-| #597 | `feature/ar-1775-configurable-output-router-and-levels-v9@9bb7d3f205c5` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb-cli): configurable output router and levels |
+| #597 | `feature/ar-1775-configurable-output-router-and-levels-v9@9bb7d3f205c5` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb-cli): configurable output router and levels |
 
 ## Recent workflows
 
@@ -40,7 +40,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38190652717 | `9bb7d3f205c5` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38190652703 | `9bb7d3f205c5` | pull_request | Repository quality | in_progress:- |
 | 38190652691 | `9bb7d3f205c5` | pull_request | Fault assurance | completed:success |
-| 38190652684 | `9bb7d3f205c5` | pull_request | Rust verification | in_progress:- |
+| 38190652684 | `9bb7d3f205c5` | pull_request | Rust verification | completed:success |
 | 38190652681 | `9bb7d3f205c5` | pull_request | Hosted portability and native qualification | completed:success |
 | 38190652680 | `9bb7d3f205c5` | pull_request | Portable protected-main provenance | completed:success |
 | 38190652679 | `9bb7d3f205c5` | pull_request | Credential-free benchmark path | completed:success |
