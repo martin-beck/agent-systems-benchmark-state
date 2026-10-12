@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T02:04:17+00:00",
+  "updated_at": "2026-10-12T02:04:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -88,3 +88,9 @@ path and records only redacted provenance and typed outcome evidence.
   e12dd77ba8cb32218916e7b5da2cd778f4c3cf991548ae67e8646404962334f8.
 
 - 2026-10-12T02:04:17+00:00: Heartbeat by codex-ar1797-cli2key-repair-luna56.
+
+- 2026-10-12T02:04:18+00:00: Focused cli2key dispatch test rerun with explicit ASB manifest path and
+  offline lock: cargo test -p asb-cli cli2key_run_dispatch_reaches_runtime_factory_without_fallback
+  passed (1/1). Earlier recorded exit 101 was the invalid state-repo cwd invocation with no
+  Cargo.toml, not a product test failure. No product files changed; integration gap remains as
+  documented.
