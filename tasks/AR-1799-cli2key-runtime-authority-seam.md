@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Repair factory/sidecar lifecycle binding and add direct CLI run/sweep plus hostile cancellation/timeout/crash/concurrent teardown tests; rerun full gates.",
+  "next_action": "Format and run focused runtime/CLI lifecycle tests; then full make test.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "85173e15d2e17eab0d637110c8a4e57767589752",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:31:53+00:00",
+  "updated_at": "2026-10-12T04:32:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -171,3 +171,8 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:31:53+00:00: Recorded command exit 0; command argv SHA-256
   c6d0d44454ace0b17895607889d7730af48bcf6005520ac3b0e3a8e6ce8f5ea7.
+
+- 2026-10-12T04:32:23+00:00: Repair started after independent rejection: added authority revocation
+  fence to LiveProviderAttempt and wrapped authority attempt_factory/issue_attempt so every issued
+  attempt checks enclosing sidecar lifecycle; added typed acquisition-failure test. Next run
+  focused/full gates and add/verify direct dispatch lifecycle coverage.

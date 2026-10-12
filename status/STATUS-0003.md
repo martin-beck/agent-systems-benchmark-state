@@ -1476,7 +1476,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
-| Next action | Repair factory/sidecar lifecycle binding and add direct CLI run/sweep plus hostile cancellation/timeout/crash/concurrent teardown tests; rerun full gates. |
+| Next action | Format and run focused runtime/CLI lifecycle tests; then full make test. |
 
 ### AR-1800 — Controlled local workload acquisition backend
 
