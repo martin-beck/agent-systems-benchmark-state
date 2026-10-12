@@ -269,8 +269,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1761-review` | `DETACHED` | `644085ecd2f3` | 0 | behind 327, ahead 6 |
 | `asb-ar1775-v2` | `feature/ar-1775-configurable-output-router-and-levels-v2` | `c6cddcaf76cb` | 0 | behind 0, ahead 3 |
 | `asb-ar1775-v3` | `feature/ar-1775-configurable-output-router-and-levels-v3` | `d490431b3279` | 0 | behind 0, ahead 4 |
-| `asb-ar1775-v4` | `feature/ar-1775-configurable-output-router-and-levels-v5` | `3cb37021e2c2` | 10 | behind 53, ahead 2 |
-| changed files | - | - | - | `crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/tui.rs`, `crates/asb-metrics/src/kernel.rs`, `crates/asb-workloads/registry/v1/external-workloads.json`, `docs/attestations/plan-create-local-mock-qualification.json`, `docs/examples/asb-cli-workflow-v1.provenance.json`, `tests/workloads/test_content_addressed_qualification.py`, `tools/quality/check_coverage.py`, `tools/run-content-addressed-qualification.py` |
+| `asb-ar1775-v4` | `feature/ar-1775-configurable-output-router-and-levels-v5` | `8ae0707a9d48` | 0 | behind 0, ahead 3 |
 | `asb-ar1782-postmerge-clean-luna56` | `DETACHED` | `0a2039c448d4` | 0 | behind 0, ahead 0 |
 | `asb-ar1785-merge` | `DETACHED` | `16d8512debab` | 0 | behind 195, ahead 0 |
 | `asb-ar1785-postmerge` | `DETACHED` | `daae06efa2d7` | 0 | behind 191, ahead 0 |
