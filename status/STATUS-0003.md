@@ -1490,7 +1490,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. |
-| Next action | Implement the credential-free controlled acquisition backend and qualify every AR-1781 workload through the AR-1780 journey. |
+| Next action | Independent review and exact-head hosted gates for signed b72da478; do not merge until review/CI are green. |
 
 ### AR-1801 — Tool-discovery Cargo fixture isolation
 

@@ -8,7 +8,7 @@
     "AR-1783"
   ],
   "id": "AR-1800",
-  "next_action": "Implement the credential-free controlled acquisition backend and qualify every AR-1781 workload through the AR-1780 journey.",
+  "next_action": "Independent review and exact-head hosted gates for signed b72da478; do not merge until review/CI are green.",
   "observed_branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "observed_dirty": 0,
   "observed_head": "b72da478631faa391f9be75d7cce1e813deb387d",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T02:28:19+00:00",
+  "updated_at": "2026-10-12T02:29:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -188,3 +188,11 @@ must not weaken production acquisition, identity, or offline guarantees.
 - 2026-10-12T02:28:08+00:00: Checkpointed source commit 92631c9596cf41304917918decc25ab2cc6167f9.
 
 - 2026-10-12T02:28:19+00:00: Checkpointed source commit b72da478631faa391f9be75d7cce1e813deb387d.
+
+- 2026-10-12T02:29:09+00:00: Full workspace cargo test gate passed after provenance repair: cargo
+  test --locked --workspace --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend/Cargo.toml;
+  all non-ignored tests passed including 430 asb-cli unit tests, diagnostic_contract 9,
+  workflow_transcript 3, and project_qualification 1; only environment-gated tests remained ignored.
+  Exact clean signed product head b72da478631faa391f9be75d7cce1e813deb387d; checkpoint_commit and
+  observed_head reconciled to this head.
