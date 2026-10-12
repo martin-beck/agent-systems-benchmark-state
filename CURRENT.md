@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Independent review accepted exact PR #604 head 30641f50. Wait for remaining Rust, repository-quality, and emulated-AArch64 checks to complete green; then merge PR #604 through supported merge-commit path and rerun post-merge paired receipt. | ar1689-tui-qualification-luna56 |
+| P0 | [AR-1689](tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Run exact-main post-merge paired qualification at merge 1494e474; commit privacy-safe receipt, run doctor, accept and release AR-1689. | ar1689-tui-qualification-luna56 |
 | P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Run one bounded exact-candidate full-exhaustive retry with verified host envelope; preserve TLC_ATTESTATION_PATH and record terminal result. Do not accept or release without complete attestation. | ar1796-reconcile-candidate-luna56 |
 
 ## Open
