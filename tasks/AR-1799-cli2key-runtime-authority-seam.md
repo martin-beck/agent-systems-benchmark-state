@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:57:55+00:00",
+  "updated_at": "2026-10-12T04:58:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -377,3 +377,6 @@ issue an opaque live attempt to the Codex adapter.
 - 2026-10-12T04:57:55+00:00: Independent ACCEPT confirmed by ar1780 for exact rebased signed/DCO
   head 1213928b8724cfc740404397b9e14161f56367cc. Verified clean linear ancestry atop protected main
   3c7ca1c1, authority lifecycle matrix, privacy/contracts, and full local gates.
+
+- 2026-10-12T04:58:00+00:00: Recorded command exit 0; command argv SHA-256
+  e39ef3b2eb4e6e8f0cb495cbdc397a4126a86942637e250f418ae0bd0e5cd39a.
