@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Independent review accepted exact head 4cda972c; proceed with hosted PR/exact-head CI only. Do not claim merge or release until hosted checks and post-merge evidence pass.",
+  "next_action": "Create GitHub PR from pushed feature/ar-1804-cross-module-fixture-semaphore to main, bind PR identity, then monitor exact-head CI.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 0,
   "observed_head": "4cda972c8af30c15a76034421ca4bb9926a0a2b5",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:14:56+00:00",
+  "updated_at": "2026-10-12T03:15:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -444,3 +444,10 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:14:56+00:00: Recorded command exit 0; command argv SHA-256
   b1ca474329b28b3432036b4205ba5a72bd42e03b7725fe23c0f6e502e69af21e.
+
+- 2026-10-12T03:15:20+00:00: Publication push succeeded through handoffctl: origin
+  feature/ar-1804-cross-module-fixture-semaphore now points to exact signed head
+  4cda972c8af30c15a76034421ca4bb9926a0a2b5. GitHub advertised PR URL
+  https://github.com/martin-beck/agent-systems-benchmark/pull/new/feature/ar-1804-cross-module-fixture-semaphore.
+  Wrapper post-reconcile hit the known state pycache >200 KiB guard (argv SHA b1ca4743...); removed
+  only generated pyc. No PR or CI claim yet.

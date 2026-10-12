@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Independent review accepted exact head 4cda972c; proceed with hosted PR/exact-head CI only. Do not claim merge or release until hosted checks and post-merge evidence pass. |
+| Next action | Create GitHub PR from pushed feature/ar-1804-cross-module-fixture-semaphore to main, bind PR identity, then monitor exact-head CI. |
 
 
 ## Dependency graph
