@@ -18,9 +18,9 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "hosted",
-    "evidence_digest": "sha256:ecec50f190ab75fdf3d9d9bf43d140c8a465f01ed1b6e3a5eacc77c1db11d9ea",
-    "evidence_ref": "https://github.com/martin-beck/agent-systems-benchmark/pull/610",
+    "evidence_class": "environmental",
+    "evidence_digest": "sha256:168eb9c0ed1f25adaebf87cb3ef44e68f551917916d00c0a60aacd5e63689c4e",
+    "evidence_ref": "github-actions/main-a0a978f1",
     "spec_ref": "specs/AR-1812.json",
     "spec_revision": 1,
     "status": "pass"
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 185,
+  "task_revision": 186,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T12:35:55+00:00",
+  "updated_at": "2026-10-12T12:37:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -633,3 +633,10 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T12:35:55+00:00: Recorded command exit 0; command argv SHA-256
   a44378f45917f7f9bfe6dca0da3cde7fdc9abcce2757525c738fc3c2ee558f85.
+
+- 2026-10-12T12:37:18+00:00: Post-merge receipt: signed merge
+  a0a978f134959943c54362e84032a6232c606105 is exact protected main with parents
+  e57982a79fafa464bfac6b3c858226ffe08737e7 and 736b970566d74644ab1dc9c51ff6dd890298c382, tree
+  b3d79394af5fe30c7ea0d726014ddf69ad538f17. All 10 exact-main workflows completed SUCCESS:
+  repository quality, Rust, aarch64, hosted portability, formal assurance, fault assurance,
+  credential-free, cross-repository, provenance, and headers. doctor --live passed.
