@@ -37,9 +37,9 @@ Generated from local Git and GitHub. Do not edit.
 | 38204881819 | `3c7ca1c1f307` | push | Fault assurance | completed:success |
 | 38204881812 | `3c7ca1c1f307` | push | Portable protected-main provenance | completed:failure |
 | 38204881806 | `3c7ca1c1f307` | push | Credential-free benchmark path | completed:success |
-| 38204881799 | `3c7ca1c1f307` | push | Rust verification | in_progress:- |
+| 38204881799 | `3c7ca1c1f307` | push | Rust verification | completed:failure |
 | 38204881783 | `3c7ca1c1f307` | push | Hosted portability and native qualification | completed:success |
-| 38204881780 | `3c7ca1c1f307` | push | Emulated aarch64 portability | in_progress:- |
+| 38204881780 | `3c7ca1c1f307` | push | Emulated aarch64 portability | completed:success |
 | 38204881769 | `3c7ca1c1f307` | push | Huawei MIT source headers | completed:success |
 | 38204881765 | `3c7ca1c1f307` | push | Cross-repository development broker qualification | completed:success |
 | 38204881758 | `3c7ca1c1f307` | push | Formal assurance | completed:success |
