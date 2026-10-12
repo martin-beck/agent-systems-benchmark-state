@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T12:21:20+00:00",
+  "updated_at": "2026-10-12T12:21:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -498,3 +498,6 @@ fixtures and must not require a live provider or TLC.
   reviewed tree b3d79394af5fe30c7ea0d726014ddf69ad538f17, signature G martin.beck2@gmx.de.
   Post-merge workflows for this exact main SHA are launched; Portable protected-main provenance and
   Huawei headers are green, remaining workflows are in progress/pending.
+
+- 2026-10-12T12:21:54+00:00: Recorded command exit 0; command argv SHA-256
+  893ecbee70b2e34a1db03818d663969c360fab938bcbe829ca9582975dddfb5b.
