@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T11:46:26+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Obtain independent re-review of 21a8b4c16c on PR #120; merge only after approval, then verify exact merge head and post-merge checks without TLC.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
-  "owner": "codex-ar1293-unsigned-dev-20261012",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 778,
+  "task_revision": 779,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T09:46:26+00:00",
+  "updated_at": "2026-10-12T09:47:16+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2329,3 +2329,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   21a8b4c16c; no TLC/model-check execution.
 
 - 2026-10-12T09:46:26+00:00: Heartbeat by codex-ar1293-unsigned-dev-20261012.
+
+- 2026-10-12T09:47:16+00:00: Coordinator recovery: prior worker stopped after implementation and
+  repair; PR #120 needs independent re-review and merge/post-merge verification. Preserve all signed
+  commits and evidence.
