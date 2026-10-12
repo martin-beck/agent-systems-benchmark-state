@@ -28,14 +28,14 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
-| #587 | `feature/ar-1783-installed-workload-selection-and-execution@e644f9b02c5b` | `main` | BLOCKED | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): bind project runs to installed workloads |
-| #594 | `feature/ar-1775-configurable-output-router-and-levels-v7@ca27f323b95a` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(asb-cli): configurable output router and levels |
+| #587 | `feature/ar-1783-installed-workload-selection-and-execution@e644f9b02c5b` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): bind project runs to installed workloads |
+| #594 | `feature/ar-1775-configurable-output-router-and-levels-v7@ca27f323b95a` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(asb-cli): configurable output router and levels |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38189804625 | `ca27f323b95a` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38189804625 | `ca27f323b95a` | pull_request | Credential-free benchmark path | completed:success |
 | 38189804592 | `ca27f323b95a` | pull_request | Rust verification | completed:failure |
 | 38189804553 | `ca27f323b95a` | pull_request | Huawei MIT source headers | completed:success |
 | 38189804543 | `ca27f323b95a` | pull_request | Agent Workflow Quality shadow | completed:success |
@@ -44,6 +44,6 @@ Generated from local Git and GitHub. Do not edit.
 | 38189804508 | `ca27f323b95a` | pull_request | Formal assurance | in_progress:- |
 | 38189804499 | `ca27f323b95a` | pull_request | Repository quality | in_progress:- |
 | 38189804458 | `ca27f323b95a` | pull_request | Portable protected-main provenance | completed:success |
-| 38189804439 | `ca27f323b95a` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38189804439 | `ca27f323b95a` | pull_request | Cross-repository development broker qualification | completed:success |
 | 38189804429 | `ca27f323b95a` | pull_request | Fault assurance | in_progress:- |
 | 38189411161 | `df3698369841` | pull_request | Credential-free benchmark path | completed:failure |
