@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Commit the 60-second bounded run-seam repair signed/DCO, run default-parallel 432-test gate, checkpoint exact head, and request independent review. |
+| Next action | Checkpoint exact signed head 4cda972c, request independent review of archive restoration/bounded semaphore hostile matrix, then hosted PR/CI only after review. |
 
 
 ## Dependency graph
