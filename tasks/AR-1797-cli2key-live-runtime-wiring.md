@@ -11,7 +11,7 @@
     "AR-1779"
   ],
   "id": "AR-1797",
-  "next_action": "Run the repository default-parallel qualification once on this exact tree, then checkpoint a signed DCO head and request independent review.",
+  "next_action": "Create a signed DCO commit from the exact green tree, checkpoint it, and request independent exact-head review before publication.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:38:47+00:00",
+  "updated_at": "2026-10-12T05:38:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -221,3 +221,8 @@ path and records only redacted provenance and typed outcome evidence.
 
 - 2026-10-12T05:38:47+00:00: Recorded command exit 0; command argv SHA-256
   893330e42401f5e59dcc08f63f26150441451b68928d060d7a8c24825a86a0e3.
+
+- 2026-10-12T05:38:57+00:00: Default-parallel full gate completed green: env RUST_TEST_THREADS=8
+  make test; asb-cli reported 433 passed and the workspace/doc-test suites completed without
+  failures. The prior workflow provenance fixture repair is included and no live provider was
+  required.
