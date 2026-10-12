@@ -8,9 +8,9 @@
   ],
   "id": "AR-1803",
   "next_action": "Reproduce and isolate AR-1801 parallel-load fixture failures before implementation.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "ca494d506135c4a3263bea21621dcc97d817614c",
   "owner": "ar1803_parallel_fixture_luna56",
   "plan": "../plans/AR-1803-deterministic-parallel-fixture-repair.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T02:33:11+00:00",
+  "updated_at": "2026-10-12T02:33:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
