@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:58cbc950f51a2d47ede92d6c766d6d835abf0c4fbdff9cae020c23958e10153a",
+    "evidence_ref": "independent-review:AR-1772:0d2c8365d16c5d83183ca3df3bc15f4dd1510198",
     "spec_ref": "specs/AR-1772.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1772.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:38:16+00:00",
+  "updated_at": "2026-10-12T05:39:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -280,3 +280,8 @@ allowed outside this helper.
 - 2026-10-12T05:37:46+00:00: Heartbeat by ar1772-progress-reporter-luna56.
 
 - 2026-10-12T05:38:16+00:00: Heartbeat by ar1772-progress-reporter-luna56.
+
+- 2026-10-12T05:39:57+00:00: Independent exact-head review ACCEPT: clean diff at 0d2c8365; commits
+  0d2c8365 and 763c0f4f SSH-signed with matching DCO; cargo fmt check, focused reporter 3/3,
+  diagnostic contract 1/1, and full asb-cli lib 436/436 passed. No publish/merge performed; hosted
+  exact-head CI remains required.
