@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Exact head e644f9b0 has all hosted required checks green; awaiting independent review",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:57:26+00:00",
+  "updated_at": "2026-10-12T00:57:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -443,3 +443,6 @@ the suite from this end-to-end path.
   only current gate before merge. Prior failures and repairs remain recorded: strict diagnostic
   identity catalog repair and exact lib.rs provenance digest update in signed DCO commits f4fe84a0
   and e644f9b0.
+
+- 2026-10-12T00:57:30+00:00: Recorded command exit 0; command argv SHA-256
+  3d2fd6b255cc6177652d59680e0f30480812fbb4a8ba725b4bed4de686d6f350.
