@@ -1117,11 +1117,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1774-status-ci-luna56 |
 | Parent | None |
 | Children | None |
 | Summary | Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode. |
@@ -2547,7 +2547,7 @@ flowchart LR
         AR_1771["AR-1771 - Done"]:::status_done
         AR_1772["AR-1772 - Done"]:::status_done
         AR_1773["AR-1773 - Done"]:::status_done
-        AR_1774["AR-1774 - Open"]:::status_open
+        AR_1774["AR-1774 - In progress"]:::status_in_progress
         AR_1775["AR-1775 - Done"]:::status_done
         AR_1776["AR-1776 - Done"]:::status_done
         AR_1777["AR-1777 - Done"]:::status_done

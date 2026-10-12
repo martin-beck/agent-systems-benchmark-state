@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1774-status-progress-completeness-ci",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T14:40:05+00:00",
   "depends_on": [
     "AR-1769",
     "AR-1773",
@@ -13,7 +13,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1774-status-ci-luna56",
   "plan": "../plans/AR-1774-status-progress-completeness-ci.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1774.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Status and progress completeness CI",
-  "updated_at": "2026-10-12T12:39:43+00:00",
+  "updated_at": "2026-10-12T12:40:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1774-status-progress-completeness-ci"
 }
 ---
@@ -58,3 +58,5 @@ human output additions fail closed until instrumented and tested.
 
 - 2026-10-12T12:39:43+00:00: Dependencies AR-1769, AR-1773, and AR-1775 are complete; implementation
   capacity is available.
+
+- 2026-10-12T12:40:05+00:00: Claimed by ar1774-status-ci-luna56.
