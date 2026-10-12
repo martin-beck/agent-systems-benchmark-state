@@ -18,20 +18,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "environmental",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:f2d6c53370f84bcc31cb3fe9cbd6565f81f038c8e47375ec01ad5735dc174e19",
+    "evidence_ref": "protected-main:ca494d506135c4a3263bea21621dcc97d817614c",
     "spec_ref": "specs/AR-1783.json",
     "spec_revision": 2,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "PR #596 locally integrated as signed/DCO protected-main merge ca494d50; exact remote main now points to it and post-merge workflows are running",
-  "task_revision": 272,
+  "task_revision": 273,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:55:03+00:00",
+  "updated_at": "2026-10-12T01:59:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -863,3 +863,11 @@ the suite from this end-to-end path.
   provenance and headers green.
 
 - 2026-10-12T01:55:03+00:00: Heartbeat by ar1783_workload_selection_luna56.
+
+- 2026-10-12T01:59:15+00:00: Accepted against exact protected-main merge
+  ca494d506135c4a3263bea21621dcc97d817614c. Exact parents 98327152f2e92308b5bcf5b21cfe0c9f285cf950
+  and aca3f79b3256729543e93cc321ce3a85daa78051, tree 852f5b4ff6fa5f21a7120298e167e5a97487aa7a,
+  SSH/DCO verified. All ten post-merge required workflows terminal SUCCESS: 38193200385,
+  38193200393, 38193200407, 38193200410, 38193200422, 38193200427, 38193200434, 38193200435,
+  38193200452, 38193200588. Receipt digest is
+  sha256:f2d6c53370f84bcc31cb3fe9cbd6565f81f038c8e47375ec01ad5735dc174e19.
