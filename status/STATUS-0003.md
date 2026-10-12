@@ -1490,11 +1490,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1819_stale_claim_repair |
 | Parent | None |
 | Children | None |
 | Summary | Make expired-claim recovery fail closed when the exact current session snapshot is unavailable. |
@@ -2361,7 +2361,7 @@ flowchart LR
     end
     subgraph series_18["18 - Additional work"]
         direction TB
-        AR_1819["AR-1819 - Open"]:::status_open
+        AR_1819["AR-1819 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
