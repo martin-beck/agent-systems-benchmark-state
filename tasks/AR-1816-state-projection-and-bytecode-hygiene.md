@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T14:57:42+00:00",
   "depends_on": [],
   "id": "AR-1816",
-  "next_action": "PR #121 now targets 44541e21e5; current launcher Ruff and targeted mypy pass. Await exact-head CI and independent review. Then merge and run configured reconcile/snapshot/doctor receipt.",
+  "next_action": "PR #121 now targets 2a20e86de9; bytecode test isolation repaired. Await terminal exact-head CI and independent review. Then merge and run configured reconcile/snapshot/doctor receipt.",
   "owner": "ar1816_projection_hygiene",
   "plan": "../plans/AR-1816-state-projection-and-bytecode-hygiene.md",
   "priority": "P0",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Coordinator projection and bytecode hygiene recovery",
-  "updated_at": "2026-10-12T13:09:01+00:00",
+  "updated_at": "2026-10-12T13:09:37+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar1816-projection-hygiene"
 }
 ---
@@ -223,3 +223,8 @@ bytecode, credentials, or host-private runtime configuration may enter commits.
 
 - 2026-10-12T13:09:01+00:00: Recorded command exit 0; command argv SHA-256
   4832757b62f8293adafd0162e2b4048d6fd7de60113724863c3bd7f62a7df0c9.
+
+- 2026-10-12T13:09:37+00:00: Strict consistency test failed because full suite pre-populated tools
+  pycache; repaired test to assert no new bytecode rather than zero pre-existing files. Focused 2/2
+  pass; signed DCO head 2a20e86de9 pushed. TLC admission output is expected fail-closed fixture
+  behavior.
