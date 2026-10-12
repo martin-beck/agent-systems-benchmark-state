@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Integrate every development-supported installed workload bundle into selection and prove full run/sweep/report/compare consumes its exact recorded identity.",
+  "next_action": "CI retry on exact head 6ec4d6b1 after fixing credential-free failure: generic tool workload fixtures now bypass external receipt fence; external-workload records remain strictly receipt-bound. Prior failing test was tests::project_bound_run_report_and_compare_use_only_project_results at lib.rs:18842 with plan workload not selected installed project workload.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "6ec4d6b19b6bca3839a82af4e501e20d75548f24",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Select every development external workload and prove ASB uses its exact project-local identity end to end.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:16:59+00:00",
+  "updated_at": "2026-10-12T00:17:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -197,3 +197,6 @@ the suite from this end-to-end path.
 
 - 2026-10-12T00:16:59+00:00: Recorded command exit 0; command argv SHA-256
   5910c431d6b0fd2583dc33666727341191a9a761fbeb1537cdf9dfb86e673820.
+
+- 2026-10-12T00:17:12+00:00: Recorded exact hosted failure and corrective commits 4dfb7a30,
+  6ec4d6b1; focused regression rerun passes. Await exact-head CI green.
