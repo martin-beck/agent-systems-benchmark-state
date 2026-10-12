@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Await fresh independent exact-head review of clean 6e65d8c3; after ACCEPT force-with-lease update PR #599, monitor all hosted checks including provenance, merge non-squash only when green.",
+  "next_action": "Fresh independent exact-head review of corrected signed/DCO 547e42dd; do not publish until ACCEPT. Then force-with-lease update PR #599 and monitor hosted checks.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "547e42dd90c9e0029dd4caea8a64226123cdee85",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 170,
+  "task_revision": 171,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:28:49+00:00",
+  "updated_at": "2026-10-12T04:29:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -558,3 +558,11 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T04:28:49+00:00: Recorded command exit 1; command argv SHA-256
   b4551200f6832a9c5e97a190ce049f698500b3dfdc49e42f6387160f99ada38d.
+
+- 2026-10-12T04:29:05+00:00: Repaired DCO provenance: amended clean topic commit from 6e65d8c3 to
+  547e42dd8b376a300f65cba8bb2b29b28f3fc2d5 because author Martin Beck <martin.beck2@gmx.de> required
+  matching Signed-off-by trailer; corrected trailer now matches. Local product worktree remains
+  clean. Local portable provenance invocation against unpublished head exited 1 with exact stderr:
+  portable provenance: bounded Git provenance operation failed; classification is expected
+  publication setup boundary because GitHub API cannot resolve unpublished commit, not a product
+  failure. Prior focused/default-parallel/make gates remain green for identical tree.
