@@ -13,7 +13,9 @@
   "observed_dirty": 0,
   "observed_head": "7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
   "oracle_gate": {
-    "completed": [],
+    "completed": [
+      "role"
+    ],
     "discussion_rounds": 0,
     "events": [
       {
@@ -36,9 +38,30 @@
         "stage": "role",
         "task_id": "AR-1813",
         "task_revision": 17
+      },
+      {
+        "action": "resolve",
+        "after": [
+          {
+            "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
+            "ref": "review/accepted"
+          }
+        ],
+        "before": [
+          {
+            "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
+            "ref": "review/candidate"
+          }
+        ],
+        "disposition": "accepted",
+        "public_ref": "PR-607/7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
+        "recorded_at": "2026-10-12T10:43:52+00:00",
+        "stage": "role",
+        "task_id": "AR-1813",
+        "task_revision": 18
       }
     ],
-    "open_stage": "role",
+    "open_stage": null,
     "reconciliation_required": false,
     "required": true,
     "stage_sequence": [
@@ -63,9 +86,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:43:45+00:00",
+  "updated_at": "2026-10-12T10:43:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -118,3 +141,6 @@ fabricate authority in the CLI or introduce a provider fallback.
 
 - 2026-10-12T10:43:45+00:00: Recorded open interaction gate role;
   event=sha256:4d06e431f39441330e260bcfe7587f902f9fb6d8cd14a1bafa11bf8622641c5b.
+
+- 2026-10-12T10:43:52+00:00: Recorded resolve interaction gate role;
+  event=sha256:097a89204d037616edc44db3bc1b5d068d6fabe65a7e240bfe96d2f80511313b.
