@@ -9,7 +9,7 @@
   "id": "AR-1803",
   "next_action": "Await PR creation/hosted exact-head CI; independent review accepted exact signed head ed7b3105.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
-  "observed_dirty": 0,
+  "observed_dirty": 4,
   "observed_head": "ed7b31055843f11e9f900e2de75d1baefe332d8a",
   "owner": "ar1803_parallel_fixture_luna56",
   "plan": "../plans/AR-1803-deterministic-parallel-fixture-repair.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T03:58:00+00:00",
+  "updated_at": "2026-10-12T03:58:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
