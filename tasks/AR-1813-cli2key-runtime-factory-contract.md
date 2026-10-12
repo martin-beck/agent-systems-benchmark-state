@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "feature/ar-1813-cli2key-runtime-factory-contract",
+  "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-12T12:14:34+00:00",
   "depends_on": [
@@ -31,7 +31,7 @@
   "task_revision": 3,
   "title": "Expose cli2key runtime factory contract",
   "updated_at": "2026-10-12T10:14:34+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
+  "worktree_key": ""
 }
 ---
 
