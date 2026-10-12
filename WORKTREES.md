@@ -315,6 +315,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1781-repair2` | `repair/ar-1781-provenance-descendant-v2` | `323aa8c26374` | 0 | behind 148, ahead 0 |
 | `asb-ar1782-baseline` | `DETACHED` | `24cb72d97422` | 0 | behind 86, ahead 0 |
 | `asb-ar1783-integration-983` | `DETACHED` | `98327152f2e9` | 0 | behind 23, ahead 0 |
+| `asb-ar1800-postmerge-e0e44a7d` | `DETACHED` | `e0e44a7d8b45` | 0 | behind 0, ahead 0 |
 | `asb-merge-568` | `DETACHED` | `4245b4a1046c` | 0 | behind 178, ahead 0 |
 | `asb-post-568` | `DETACHED` | `d64ac90ad96a` | 0 | behind 172, ahead 0 |
 | `asb-pr496-review.3ZigFi` | `DETACHED` | `dc5a635fd37f` | 0 | behind 464, ahead 1 |
