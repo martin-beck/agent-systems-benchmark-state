@@ -9,9 +9,9 @@
   ],
   "id": "AR-1813",
   "next_action": "Promote and claim; implement the runtime-owned receipt contract and opaque LiveProviderAttemptFactory API needed by AR-1812, then complete review, merge, and post-merge verification.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "d5f814896ccfd71bd0fe09028dc94d7fcf4c88ec",
   "owner": "ar1810-cli2key-luna56",
   "plan": "../plans/AR-1813-cli2key-runtime-factory-contract.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:16:18+00:00",
+  "updated_at": "2026-10-12T10:17:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---

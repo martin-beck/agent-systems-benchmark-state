@@ -72,6 +72,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1810-cli2key-standard-cli` | `feature/ar-1810-cli2key-standard-cli` | `07c590e712df` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1811-development-formal-workflow-separation` | `feature/ar-1811-development-formal-workflow-separation` | `d9972679899c` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap` | `feature/ar-1812-cli2key-ordinary-bootstrap` | `07c590e712df` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract` | `feature/ar-1813-cli2key-runtime-factory-contract` | `d5f814896ccf` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 752, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 752, ahead 323 |
@@ -308,6 +309,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1499` | `feature/ar-1499-development-credential-enrollment` | `0a2f6e9c74f9` | 0 | behind 752, ahead 1280 |
 | `ar1722-receipt-worker.ObeqHt` | `DETACHED` | `ac6557038cc3` | 0 | behind 494, ahead 0 |
 | `ar1784-baseline` | `DETACHED` | `4245b4a1046c` | 0 | behind 189, ahead 0 |
+| `ar1811-review.X51ffA` | `DETACHED` | `d9972679899c` | 0 | behind 0, ahead 2 |
 | `asb-ar1704-integration` | `DETACHED` | `4dfc1e07f424` | 0 | behind 256, ahead 0 |
 | `asb-ar1709-integration` | `DETACHED` | `2c6f3083504c` | 0 | behind 253, ahead 0 |
 | `asb-ar1725-base` | `DETACHED` | `fa9e0c6c9e71` | 0 | behind 207, ahead 0 |
