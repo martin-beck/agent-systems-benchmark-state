@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "AR-1813 is done and branch rebased onto current main 5c843a12. Implement ordinary run/sweep resolver using runtime Cli2KeyRuntimeAuthority::bootstrap_from_receipt_bytes and verified installer receipt; add local/mock positive/negative lifecycle tests, then PR/review/merge.",
+  "next_action": "Repair workspace gate failure: crates/asb-cli/tests/diagnostic_contract.rs rejects new lib.rs producer line identities after cli2key wiring; update the reviewed call-site identity contract (without weakening diagnostics), remove generated handoffctl __pycache__, rerun the failing test and full workspace gates.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "5c75c1a9fe36bb5f08c3cb4ccc20f213d496b65e",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:27:51+00:00",
+  "updated_at": "2026-10-12T11:28:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -156,3 +156,9 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T11:27:51+00:00: Recorded command exit 101; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-10-12T11:28:24+00:00: Full cargo test --locked --workspace reached crates/asb-cli
+  diagnostic_contract and failed only ordinary_cli_producers_are_mechanically_closed: the existing
+  reviewed producer line map no longer recognizes shifted lib.rs call sites after commit 5c75c1a.
+  Exit 101 at 11:27:51Z. No product fix applied yet; repair must preserve the mechanical diagnostic
+  contract.
