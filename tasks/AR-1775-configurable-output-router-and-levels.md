@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:23:55+00:00",
+  "updated_at": "2026-10-12T00:24:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -294,3 +294,9 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T00:23:55+00:00: Recorded command exit 0; command argv SHA-256
   d4cb5fafe7be7b6e6d7bfaf3d43c575359d19e2bd537dbbce4ce454438e8b1ee.
+
+- 2026-10-12T00:24:05+00:00: Generated-state repair evidence: handoffctl doctor --live first
+  reported ERROR: PROJECT_STATE.md is stale; no pycache size error was present in this check.
+  Supported handoffctl reconcile --commit repaired the generated projection, and a subsequent doctor
+  --live returned OK: structure, references, privacy, generated views and live state are consistent.
+  No projection was manually edited.
