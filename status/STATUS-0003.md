@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Create signed clean repair commit, run default-parallel 432-test gate, checkpoint exact head, and request independent review. |
+| Next action | Repair run-seam timeout budget to remain bounded but tolerate legitimate long parallel process fixtures; rerun focused failing test and default-parallel. |
 
 
 ## Dependency graph

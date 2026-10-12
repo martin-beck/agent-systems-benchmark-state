@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Create signed clean repair commit, run default-parallel 432-test gate, checkpoint exact head, and request independent review.",
+  "next_action": "Repair run-seam timeout budget to remain bounded but tolerate legitimate long parallel process fixtures; rerun focused failing test and default-parallel.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 0,
   "observed_head": "8e9785f53e846b40e6d410a84f45d6f81f2b1308",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:09:48+00:00",
+  "updated_at": "2026-10-12T03:09:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -375,3 +375,13 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T03:09:48+00:00: Recorded command exit 101; command argv SHA-256
   8313bf475974370fb24f264142d964ad0f5468d89177bb5f1f62bba84afe609b.
+
+- 2026-10-12T03:09:59+00:00: Exact default-parallel failure on signed head 8e9785f5: cargo test
+  --locked --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore/Cargo.toml -p
+  asb-cli --lib ran 432 tests; 431 passed, 1 failed:
+  tests::record_and_replay_commands_are_explicit_private_and_network_denied panicked at
+  test_fixture_semaphore.rs:26:41, process-fixture semaphore acquisition timed out. This is a
+  bounded-semaphore budget too short for legitimate parallel process-backed fixture duration (5
+  seconds), not a setup or product qualification failure. Keep hostile try_acquire timeout coverage
+  at 10ms; increase only the run-seam bounded wait to a documented larger finite budget.
