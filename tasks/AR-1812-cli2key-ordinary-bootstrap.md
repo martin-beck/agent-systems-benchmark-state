@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Run full workspace and all offline quality gates on clean repaired branch, then publish signed PR.",
+  "next_action": "Publish exact clean signed branch and PR through handoffctl; then wait for independent review and exact-head CI.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "95a342fde4c5135a841017074028bcf053771f05",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:51:56+00:00",
+  "updated_at": "2026-10-12T11:52:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -340,3 +340,14 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T11:51:56+00:00: Recorded command exit 0; command argv SHA-256
   1025ba3329e29edccb97a017f050439aa9450d4c78b01f8d6776069d868c9f35.
+
+- 2026-10-12T11:52:07+00:00: Final repaired branch gates passed on exact HEAD
+  95a342fde4c5135a841017074028bcf053771f05, clean against origin/main 15c80511: cargo test --locked
+  --workspace --offline passed (all workspace suites; asb-cli 437 passed, 1 ignored;
+  diagnostic_contract 9 passed); cargo fmt --all -- --check passed; cargo clippy --locked
+  --workspace --all-targets --offline -- -D warnings passed; RUSTDOCFLAGS=-Dwarnings cargo doc
+  --locked --workspace --no-deps --offline passed; cargo build --locked --workspace --release
+  --offline passed; git diff --check passed. Prior 11:48:12/11:49:45 exit-101 wrapper attempts were
+  stale diagnostic identity maps after rebase, now repaired by origin/main-based 2319-entry refresh
+  and four AR-1812 entries. All product commits are SSH-signed G with matching DCO; no
+  TLC/live-provider gate used.

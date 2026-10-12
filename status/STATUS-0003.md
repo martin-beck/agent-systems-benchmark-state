@@ -1661,7 +1661,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
-| Next action | Run full workspace and all offline quality gates on clean repaired branch, then publish signed PR. |
+| Next action | Publish exact clean signed branch and PR through handoffctl; then wait for independent review and exact-head CI. |
 
 ### AR-1813 — Expose cli2key runtime factory contract
 
