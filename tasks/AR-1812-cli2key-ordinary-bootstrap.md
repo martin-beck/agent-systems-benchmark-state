@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Commit signed catalog repair, run full offline workspace tests and applicable format/clippy/docs/build gates via handoffctl; then request independent review and PR.",
+  "next_action": "Rerun workflow_transcript provenance test and full locked offline workspace suite; then run fmt, clippy warnings-denied, docs and release build.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 1,
   "observed_head": "edc345cff97b8a3a0985e105b2deb0a5248f47e4",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:42:14+00:00",
+  "updated_at": "2026-10-12T11:42:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -239,3 +239,12 @@ fixtures and must not require a live provider or TLC.
   7736d294dcb69072bad1d75088c6afc73a3e3bd2327579b28fb4b7984fc9fca0.
 
 - 2026-10-12T11:42:14+00:00: Heartbeat by ar1812-repair-luna56.
+
+- 2026-10-12T11:42:20+00:00: Full offline workspace gate reached one deterministic failure after 437
+  asb-cli unit tests and all preceding suites passed: cargo test --locked --workspace --offline
+  failed only
+  crates/asb-cli/tests/workflow_transcript.rs::provenance_binds_the_exact_cli_and_public_fixture_sources
+  because cli_source_sha256 retained old value 82b519af... while current crates/asb-cli/src/lib.rs
+  digest is f2dc657257678d446873009d40e633304cf4b128891409f7c8cb9a1b8569c02a. Updated
+  docs/examples/asb-cli-workflow-v1.provenance.json to the exact new source digest. Generated
+  pycache was archived outside state; no TLC/live-provider gate was run.

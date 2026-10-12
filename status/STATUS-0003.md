@@ -1661,7 +1661,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
-| Next action | Commit signed catalog repair, run full offline workspace tests and applicable format/clippy/docs/build gates via handoffctl; then request independent review and PR. |
+| Next action | Rerun workflow_transcript provenance test and full locked offline workspace suite; then run fmt, clippy warnings-denied, docs and release build. |
 
 ### AR-1813 — Expose cli2key runtime factory contract
 
