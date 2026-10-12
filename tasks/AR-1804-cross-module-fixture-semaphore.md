@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:49:21+00:00",
+  "updated_at": "2026-10-12T02:49:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -111,3 +111,6 @@ before AR-1801 can be accepted.
   [Makefile:112: test] Error 101. This is a product diagnostic-contract gate failure, not
   command-shape/setup. The underlying failure and repair boundary are already recorded: test-only
   semaphore callsites need reviewed diagnostic inventory treatment.
+
+- 2026-10-12T02:49:33+00:00: Recorded command exit 101; command argv SHA-256
+  8cec93ff7d9c3983f4c427681a0b30b16b41a63ed52669a2eab9a3039760005e.
