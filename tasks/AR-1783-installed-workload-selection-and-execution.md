@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Wait for all checks at aca3f79 and obtain fresh independent review bound to aca3f79/tree 852f5b4f; then run tools/integration/merge_pr.py against base 98327152, verify exact main, accept/release",
+  "next_action": "Fresh independent review recorded for PR #596 exact head aca3f79b3256729543e93cc321ce3a85daa78051; run approved integration merge only against base 98327152f2e92308b5bcf5b21cfe0c9f285cf950/tree 852f5b4ff6fa5f21a7120298e167e5a97487aa7a, then verify exact protected main and accept/release. Do not merge in this review.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "aca3f79b3256729543e93cc321ce3a85daa78051",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "PR #596 repaired to single signed/DCO topic commit aca3f79 on current protected base 98327152; portable provenance green and remaining checks running",
-  "task_revision": 264,
+  "task_revision": 265,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:46:06+00:00",
+  "updated_at": "2026-10-12T01:46:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -824,3 +824,17 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:46:06+00:00: Recorded command exit 1; command argv SHA-256
   353d303b655aecd02b9b31092a6d781df851605cf3b2337e171f0ddeee7aaf17.
+
+- 2026-10-12T01:46:12+00:00: FRESH INDEPENDENT TECHNICAL REVIEW APPROVED: PR #596 exact head
+  aca3f79b3256729543e93cc321ce3a85daa78051, exact reviewed base
+  98327152f2e92308b5bcf5b21cfe0c9f285cf950, exact reviewed tree
+  852f5b4ff6fa5f21a7120298e167e5a97487aa7a. Prior 506de984 approval is stale and not reused.
+  Reviewed the current installed-workload selection/execution acceptance against AR-1783 plan/spec:
+  project-bound catalog identity/revision/digest/license/terms/preparation/adapter/platform
+  validation; every workload including SWE-mini; install/select/bounded run/sweep/report/compare
+  evidence binding; stale/revoked/missing/incompatible/manual-substitution rejection; bounded
+  privacy-safe output and no ambient directory fallback. Current range is signed with certified SSH
+  identity and matching Signed-off-by DCO trailers; no credentials, private host data, or gate
+  weakening found. All current required hosted checks are terminal SUCCESS at aca3f79, including
+  policy/coverage/supply chain, Rust, emulated aarch64, provenance, credential-free, privacy/TUI,
+  fuzz, formal, mutation, and retained-fault gates. Approved for merge; do not merge in this review.
