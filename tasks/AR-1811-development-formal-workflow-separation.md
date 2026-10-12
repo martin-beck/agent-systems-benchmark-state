@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1811-development-formal-workflow-separation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T12:02:02+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1811",
   "next_action": "Monitor PR #606 exact head d9972679899cf18c1c9ab87e694ad639a2c18786 until all required non-TLC checks are green; then obtain independent review, merge, exact-main post-merge verification, and durable closure.",
@@ -153,15 +153,15 @@
       "decision"
     ]
   },
-  "owner": "coordinator-ar1811-merge",
+  "owner": "",
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:20:22+00:00",
+  "updated_at": "2026-10-12T10:20:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -302,3 +302,8 @@ tests and update the generated quality documentation.
 
 - 2026-10-12T10:20:22+00:00: Recorded command exit 1; command argv SHA-256
   26b3992d561988a3cabbbfbf7f7c01fa93ebc913047738aea55458add02017b6.
+
+- 2026-10-12T10:20:44+00:00: PR #606 has green ordinary checks and independent state acceptance but
+  GitHub branch policy rejects merge without an eligible non-author review; self-approval was
+  rejected and no admin bypass used. Preserve exact-head evidence and resume only after external
+  review policy is satisfied.
