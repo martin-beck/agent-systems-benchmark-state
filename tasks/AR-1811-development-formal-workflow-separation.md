@@ -99,9 +99,30 @@
         "stage": "spec",
         "task_id": "AR-1811",
         "task_revision": 44
+      },
+      {
+        "action": "open",
+        "after": [
+          {
+            "digest": "sha256:b678ee8b2515d49f7ba2137e1380f8719a08eb15b97c35efb4b2b8b8d6afe45d",
+            "ref": "candidate-decision"
+          }
+        ],
+        "before": [
+          {
+            "digest": "sha256:cc330f6cc2411e636d0434b5cceb13aa3da50412081d4e2307c858c0efe9ae4f",
+            "ref": "base-decision"
+          }
+        ],
+        "disposition": "unresolved",
+        "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786/decision",
+        "recorded_at": "2026-10-12T10:19:19+00:00",
+        "stage": "decision",
+        "task_id": "AR-1811",
+        "task_revision": 45
       }
     ],
-    "open_stage": null,
+    "open_stage": "decision",
     "reconciliation_required": false,
     "required": true,
     "stage_sequence": [
@@ -116,9 +137,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:19:07+00:00",
+  "updated_at": "2026-10-12T10:19:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -238,3 +259,6 @@ tests and update the generated quality documentation.
 
 - 2026-10-12T10:19:07+00:00: Recorded resolve interaction gate spec;
   event=sha256:7f0867bc0055b584f7103eada798e38afc5fad548a7f2d9daf5c344d3e7a5e6e.
+
+- 2026-10-12T10:19:19+00:00: Recorded open interaction gate decision;
+  event=sha256:b09bfcdd5e6c65771c25af05eb618dc916725a88ad1d3400a145ffe43ccb6718.
