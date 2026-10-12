@@ -15,19 +15,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "hosted",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:7b085cf88dca04871a16632551b51f2ced70c2c3af263c8354fed143f0a1b512",
+    "evidence_ref": "quality/AR-1815-protected-main-recovery-postmerge-receipt.txt",
     "spec_ref": "specs/AR-1815.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1815.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:24:18+00:00",
+  "updated_at": "2026-10-12T12:25:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -162,3 +162,8 @@ introduce a TLC/model-check dependency for development.
 
 - 2026-10-12T12:24:18+00:00: Recorded command exit 0; command argv SHA-256
   dbdb1d013c00408501772cd67cee883b204f3ed64eaddf35a46485380133ec99.
+
+- 2026-10-12T12:25:20+00:00: Hosted acceptance: PR #609 signed forward-only merge e57982a preserves
+  15c80511 and reviewed tree; all PR and exact-main workflows terminal-success. Repository quality
+  attempt 4 passed after attempt 3 non-reproducible source_checkout fixture failure; local repeated
+  5/5. Receipt is committed and privacy-safe.
