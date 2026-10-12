@@ -1633,7 +1633,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps. |
-| Next action | Implement the missing ordinary executable cli2key bootstrap; existing runtime-control and asb-cli library gates pass on the bound clean worktree. Then add command-level fake coverage, review and merge. |
+| Next action | Coordinator must create or promote a narrowly scoped prerequisite AR for the missing runtime/control-to-CLI cli2key bootstrap seam (verified AR-1779 receipt resolution, command construction, authority retention, and ordinary run/sweep wiring). After that prerequisite merges, rebase and resume AR-1810 implementation. |
 
 ### AR-1811 — Development/formal workflow separation
 

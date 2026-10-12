@@ -13,7 +13,7 @@
     "AR-1799"
   ],
   "id": "AR-1810",
-  "next_action": "Implement the missing ordinary executable cli2key bootstrap; existing runtime-control and asb-cli library gates pass on the bound clean worktree. Then add command-level fake coverage, review and merge.",
+  "next_action": "Coordinator must create or promote a narrowly scoped prerequisite AR for the missing runtime/control-to-CLI cli2key bootstrap seam (verified AR-1779 receipt resolution, command construction, authority retention, and ordinary run/sweep wiring). After that prerequisite merges, rebase and resume AR-1810 implementation.",
   "observed_branch": "feature/ar-1810-cli2key-standard-cli",
   "observed_dirty": 0,
   "observed_head": "07c590e712df11e555228abf1b9de4add3510d4f",
@@ -33,9 +33,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Complete cli2key Standard CLI Integration",
-  "updated_at": "2026-10-12T10:09:46+00:00",
+  "updated_at": "2026-10-12T10:09:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1810-cli2key-standard-cli"
 }
 ---
@@ -101,3 +101,10 @@ dispatch.
   library suite 437/437 passed offline. No TLC run.
 
 - 2026-10-12T10:09:46+00:00: Heartbeat by ar1810-cli2key-luna56.
+
+- 2026-10-12T10:09:50+00:00: Dependency audit found no existing ownerless AR for the missing seam.
+  AR-1779 is marked done but only owns generic tool installation;
+  AR-1729/1730/1731/1732/1733/1797/1799 are complete yet expose no production resolver from verified
+  project-local receipt to Cli2KeyRuntimeAuthority. Existing handoffctl has no create-task command,
+  so no successor was fabricated. AR-1810 remains implementation-blocked pending a
+  coordinator-created prerequisite.
