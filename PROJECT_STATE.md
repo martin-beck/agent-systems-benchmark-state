@@ -33,7 +33,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38211462584 | `9c5e557195df` | push | Rust verification | in_progress:- |
+| 38211462584 | `9c5e557195df` | push | Rust verification | completed:failure |
 | 38211462546 | `9c5e557195df` | push | Formal assurance | completed:success |
 | 38211462538 | `9c5e557195df` | push | Cross-repository development broker qualification | completed:success |
 | 38211462536 | `9c5e557195df` | push | Portable protected-main provenance | completed:failure |
