@@ -12,7 +12,7 @@
   "next_action": "Wait for all PR #596 checks at db9b1fb8 and obtain fresh independent review bound to db9b1fb8/tree 852f5b4f; then integrate only with tools/integration/merge_pr.py against base 98327152, verify exact main, accept/release",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
-  "observed_head": "add5690b8f1c69d8c9cba58a2807b21710309e59",
+  "observed_head": "aca3f79b3256729543e93cc321ce3a85daa78051",
   "owner": "ar1783_workload_selection_luna56",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "PR #596 repaired against current protected main 98327152 at exact head db9b1fb8; prior 506de984 review invalidated and fresh checks/review required",
-  "task_revision": 243,
+  "task_revision": 244,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:33:25+00:00",
+  "updated_at": "2026-10-12T01:33:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
