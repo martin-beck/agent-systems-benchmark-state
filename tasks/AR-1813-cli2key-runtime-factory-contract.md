@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:34:32+00:00",
+  "updated_at": "2026-10-12T10:35:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -58,3 +58,6 @@ fabricate authority in the CLI or introduce a provider fallback.
 
 - 2026-10-12T10:34:32+00:00: Recorded command exit 0; command argv SHA-256
   b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
+
+- 2026-10-12T10:35:07+00:00: Recorded command exit 0; command argv SHA-256
+  297bf0426da2b3a34cc8d291742b5d89c6c71377df2a616c878604996ff250b5.
