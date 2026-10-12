@@ -1,0 +1,11 @@
+AR-1811 development/formal workflow separation post-merge receipt
+
+pr=606
+reviewed_head=d9972679899cf18c1c9ab87e694ad639a2c18786
+merge_commit=5a6c5477cd171606da3aaa0cae9950453ea8dc5c
+merge_parents=07c590e712df11e555228abf1b9de4add3510d4f d9972679899cf18c1c9ab87e694ad639a2c18786
+ruleset_repair=AR-1814 removed only TLC and Alloy recovery models from development required-status checks
+review=independent state reviewer ACCEPT at exact head; GitHub self-approval was not used
+checks=all exact-main workflows for merge_commit passed: repository quality, Rust verification, emulated aarch64 portability, hosted portability and native qualification, development formal assurance, cross-repository development broker qualification, fault assurance, credential-free benchmark path, Huawei MIT source headers, and portable protected-main provenance
+formal=ordinary development TLC/Alloy requirement removed; no local TLC execution
+status=postmerge_verified
