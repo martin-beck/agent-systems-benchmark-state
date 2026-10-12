@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Header-policy repair pushed as signed head 65ee830e; local gates green; PR #602 rerun in progress.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:44:50+00:00",
+  "updated_at": "2026-10-12T05:44:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -338,3 +338,6 @@ allowed outside this helper.
   Source-header policy plus 18 tests pass; focused reporter 3/3 pass; full make test exit 0. Signed
   DCO commit 65ee830e6659ac5426757833d1030ae0c32f8ac5 pushed with force-with-lease to PR #602;
   hosted checks restarted at exact head 65ee830e.
+
+- 2026-10-12T05:44:53+00:00: Recorded command exit 8; command argv SHA-256
+  b55a34acd4a89484f7ce0de3d8d8473768713ef43fd8464bcf66199368a3b66f.
