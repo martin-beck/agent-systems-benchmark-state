@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Repair macro visibility/documentation and $crate path; run compile-focused gate once, then make test.",
+  "next_action": "Run full make test after macro compile repair, then default-parallel asb-cli gate.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 2,
   "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:53:23+00:00",
+  "updated_at": "2026-10-12T02:53:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -177,3 +177,10 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:53:23+00:00: Recorded command exit 0; command argv SHA-256
   04dac05b3691580302341a318d46396a789c9b160fd8ad42a14b646a0080676f.
+
+- 2026-10-12T02:53:30+00:00: Compile-focused repair result: macro is invoked as crate::f!,
+  documented for missing-docs, and expands through $crate::run_with_default_mode_and_stdin; cargo
+  test --locked --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore/Cargo.toml -p
+  asb-cli --lib --no-run exited 0 and produced the test executable. This confirms the prior macro
+  visibility/path/docs failure is repaired; full gate remains required.
