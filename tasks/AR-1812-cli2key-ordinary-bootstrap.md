@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T12:12:04+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1779",
     "AR-1799"
@@ -12,7 +12,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "ar1810-cli2key-luna56",
+  "owner": "",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1812.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T10:13:24+00:00",
+  "updated_at": "2026-10-12T10:13:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -59,3 +59,8 @@ fixtures and must not require a live provider or TLC.
   without an opaque factory would fabricate authority or fallback, violating scope. No product
   changes retained; cargo check of exploratory resolver correctly failed closed under dead-code
   warnings.
+
+- 2026-10-12T10:13:29+00:00: Blocked on missing production runtime API: asb-runtime must expose an
+  opaque sidecar-backed LiveProviderAttemptFactory/source and AR-1779 must publish a verified
+  runtime receipt contract. No safe asb-cli-only implementation exists; no fallback or fabricated
+  authority used.

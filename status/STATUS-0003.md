@@ -1653,11 +1653,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1810-cli2key-luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
@@ -2536,7 +2536,7 @@ flowchart LR
         AR_1809["AR-1809 - Planned"]:::status_planned
         AR_1810["AR-1810 - Blocked"]:::status_blocked
         AR_1811["AR-1811 - In progress"]:::status_in_progress
-        AR_1812["AR-1812 - In progress"]:::status_in_progress
+        AR_1812["AR-1812 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
