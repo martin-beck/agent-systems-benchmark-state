@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:17:32+00:00",
+  "updated_at": "2026-10-12T04:19:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -457,3 +457,6 @@ as the affected successor linkage and evidence source.
   recording failed and was repaired by heartbeat/reconcile. Diff versus origin/main 1ce208b4 is
   limited to discovery PROBE_TIMEOUT 750ms->2s, six discovery fixture semaphore guards, and matching
   provenance digest; archive authority and full diagnostic catalog are inherited intact.
+
+- 2026-10-12T04:19:15+00:00: Recorded command exit 0; command argv SHA-256
+  97a9edf16cef0dfc95a3fabf488051abd017b7c1ca3d06ccbdd11bfd80e7fe7a.
