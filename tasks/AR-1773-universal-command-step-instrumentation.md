@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Remain open awaiting separately bounded compact diagnostic catalog regeneration; preserve AR-1773 diff/worktree and rerun diagnostic/full gates only after that repair lands.",
+  "next_action": "Run the remaining asb-cli/full workspace gates on the mechanically reconciled catalog overlay; if green, commit signed DCO, request independent review, then exact-head CI.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 5,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T07:10:03+00:00",
+  "updated_at": "2026-10-12T07:10:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -316,3 +316,9 @@ non-TTY compatibility.
 
 - 2026-10-12T07:10:03+00:00: Recorded command exit 0; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-10-12T07:10:25+00:00: Bounded catalog repair is mechanically available and now applied in the
+  preserved worktree: generated AR1773_RECONCILED_LEGACY_CLI_CATALOG covers all 810 current legacy
+  callsites, while historical arrays remain intact and the AR-1793 output-parent identities are
+  retained. diagnostic_contract passes 9/9 and asb-cli lib passes 437/437. Cargo fmt --all --
+  --check and clippy are running/next; AR remains in_progress and no gate is waived.
