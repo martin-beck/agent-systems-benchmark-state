@@ -15,7 +15,8 @@
   "oracle_gate": {
     "completed": [
       "role",
-      "spec"
+      "spec",
+      "decision"
     ],
     "discussion_rounds": 0,
     "events": [
@@ -123,9 +124,30 @@
         "stage": "decision",
         "task_id": "AR-1813",
         "task_revision": 23
+      },
+      {
+        "action": "resolve",
+        "after": [
+          {
+            "digest": "sha256:e6aa46eac87ed9900b68e4451eb1153710211e4ae36617b0ba8f869b4a7fe176",
+            "ref": "decision/merge-authorized"
+          }
+        ],
+        "before": [
+          {
+            "digest": "sha256:520987deedc4089478ff58428040d951009fa41d95e13d97760a45e45fbab915",
+            "ref": "specs/AR-1813.json"
+          }
+        ],
+        "disposition": "accepted",
+        "public_ref": "PR-607/7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
+        "recorded_at": "2026-10-12T10:51:57+00:00",
+        "stage": "decision",
+        "task_id": "AR-1813",
+        "task_revision": 24
       }
     ],
-    "open_stage": "decision",
+    "open_stage": null,
     "reconciliation_required": false,
     "required": true,
     "stage_sequence": [
@@ -150,9 +172,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:51:54+00:00",
+  "updated_at": "2026-10-12T10:51:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -221,3 +243,6 @@ fabricate authority in the CLI or introduce a provider fallback.
 
 - 2026-10-12T10:51:54+00:00: Recorded open interaction gate decision;
   event=sha256:898dbf009d62c5204678f7b039d7445fad8c8b9d7f7b71aa6169a5377e2b593a.
+
+- 2026-10-12T10:51:57+00:00: Recorded resolve interaction gate decision;
+  event=sha256:c4f5b993cddc4da94d8e9e15f7feb300d0104eaedafcf52432a77973f8eb6690.
