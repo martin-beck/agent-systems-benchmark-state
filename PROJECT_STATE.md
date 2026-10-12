@@ -29,21 +29,21 @@ Generated from local Git and GitHub. Do not edit.
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
 | #605 | `feature/ar-1773-universal-command-step-instrumentation@f78a1006202d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): instrument command progress steps |
-| #606 | `feature/ar-1811-development-formal-workflow-separation@309d16ca9986` | `main` | UNKNOWN | - | Separate development and final-delivery formal workflows |
+| #606 | `feature/ar-1811-development-formal-workflow-separation@309d16ca9986` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, IN_PROGRESS: | Separate development and final-delivery formal workflows |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38232457447 | `309d16ca9986` | pull_request | Rust verification | in_progress:- |
+| 38232457444 | `309d16ca9986` | pull_request | Fault assurance | in_progress:- |
+| 38232457389 | `309d16ca9986` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38232457330 | `309d16ca9986` | pull_request | Hosted portability and native qualification | completed:success |
+| 38232457325 | `309d16ca9986` | pull_request | Huawei MIT source headers | completed:success |
+| 38232457309 | `309d16ca9986` | pull_request | Formal assurance | completed:failure |
+| 38232457303 | `309d16ca9986` | pull_request | Portable protected-main provenance | completed:success |
+| 38232457300 | `309d16ca9986` | pull_request | Credential-free benchmark path | completed:success |
+| 38232457298 | `309d16ca9986` | pull_request | Repository quality | in_progress:- |
+| 38232457287 | `309d16ca9986` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38232457271 | `309d16ca9986` | pull_request | Cross-repository development broker qualification | completed:success |
 | 38231180452 | `f78a1006202d` | pull_request | Credential-free benchmark path | completed:success |
-| 38231180368 | `f78a1006202d` | pull_request | Formal assurance | completed:success |
-| 38231180245 | `f78a1006202d` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38231180240 | `f78a1006202d` | pull_request | Hosted portability and native qualification | completed:success |
-| 38231180211 | `f78a1006202d` | pull_request | Emulated aarch64 portability | completed:success |
-| 38231179982 | `f78a1006202d` | pull_request | Huawei MIT source headers | completed:success |
-| 38231179959 | `f78a1006202d` | pull_request | Repository quality | completed:success |
-| 38231179913 | `f78a1006202d` | pull_request | Fault assurance | completed:success |
-| 38231179830 | `f78a1006202d` | pull_request | Rust verification | completed:success |
-| 38231179777 | `f78a1006202d` | pull_request | Cross-repository development broker qualification | completed:success |
-| 38231179776 | `f78a1006202d` | pull_request | Portable protected-main provenance | completed:success |
-| 38215438082 | `1494e4741968` | push | Hosted portability and native qualification | completed:success |
