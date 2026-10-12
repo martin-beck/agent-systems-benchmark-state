@@ -11,7 +11,7 @@
     "AR-1779"
   ],
   "id": "AR-1797",
-  "next_action": "Rerun make test after updating the generated provenance fixture; then run default-parallel and prepare signed exact-head review.",
+  "next_action": "Run the repository default-parallel qualification once on this exact tree, then checkpoint a signed DCO head and request independent review.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:37:34+00:00",
+  "updated_at": "2026-10-12T05:37:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -212,3 +212,9 @@ path and records only redacted provenance and typed outcome evidence.
 
 - 2026-10-12T05:37:34+00:00: Recorded command exit 0; command argv SHA-256
   3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
+
+- 2026-10-12T05:37:45+00:00: Third full make test completed without a reported failure after the
+  generated provenance hash repair (all prior failing workflow_transcript assertions were green in
+  the preceding focused rerun); handoffctl returned to idle with no cargo/make process remaining.
+  Worktree contains only the intended runtime seam and generated provenance update. Next is
+  default-parallel qualification, then signed checkpoint/review.

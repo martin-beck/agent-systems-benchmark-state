@@ -1448,7 +1448,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark. |
-| Next action | Rerun make test after updating the generated provenance fixture; then run default-parallel and prepare signed exact-head review. |
+| Next action | Run the repository default-parallel qualification once on this exact tree, then checkpoint a signed DCO head and request independent review. |
 
 ### AR-1798 — Pinned source-checkout acquisition
 
