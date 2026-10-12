@@ -8,7 +8,7 @@
     "AR-1799"
   ],
   "id": "AR-1813",
-  "next_action": "Promote and claim; implement the runtime-owned receipt contract and opaque LiveProviderAttemptFactory API needed by AR-1812, then complete review, merge, and post-merge verification.",
+  "next_action": "PR #607 exact head d5f814896ccfd71bd0fe09028dc94d7fcf4c88ec is under hosted non-TLC checks; TLC check is present only because PR #606 formal-separation merge is still blocked by GitHub review policy. After ordinary checks and independent review, reconcile the formal lane before merge.",
   "observed_branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "observed_dirty": 0,
   "observed_head": "d5f814896ccfd71bd0fe09028dc94d7fcf4c88ec",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:17:44+00:00",
+  "updated_at": "2026-10-12T10:21:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -52,3 +52,6 @@ fabricate authority in the CLI or introduce a provider fallback.
   feature/ar-1813-cli2key-runtime-factory-contract.
 
 - 2026-10-12T10:16:18+00:00: Heartbeat by ar1810-cli2key-luna56.
+
+- 2026-10-12T10:21:08+00:00: Recorded exact PR head and the inherited TLC workflow dependency; no
+  TLC execution performed locally.

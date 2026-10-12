@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1551](../tasks/AR-1551-platform-authority-deployment-bootstrap.md) | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md), [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md), [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md) | None |
+| [AR-1552](../tasks/AR-1552.md) | None | [AR-1553](../tasks/AR-1553.md), [AR-1555](../tasks/AR-1555.md) |
 | [AR-1553](../tasks/AR-1553.md) | [AR-1552](../tasks/AR-1552.md) | [AR-1555](../tasks/AR-1555.md) |
 | [AR-1554](../tasks/AR-1554.md) | None | [AR-1555](../tasks/AR-1555.md), [AR-1559](../tasks/AR-1559.md) |
 | [AR-1555](../tasks/AR-1555.md) | [AR-1552](../tasks/AR-1552.md), [AR-1553](../tasks/AR-1553.md), [AR-1554](../tasks/AR-1554.md) | [AR-1556](../tasks/AR-1556.md), [AR-1558](../tasks/AR-1558.md), [AR-1757](../tasks/AR-1757-human-first-cli-output.md) |
@@ -245,7 +247,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | ar1810-cli2key-luna56 | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | Promote and claim; implement the runtime-owned receipt contract and opaque LiveProviderAttemptFactory API needed by AR-1812, then complete review, merge, and post-merge verification. |
+| P0 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | ar1810-cli2key-luna56 | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | PR #607 exact head d5f814896ccfd71bd0fe09028dc94d7fcf4c88ec is under hosted non-TLC checks; TLC check is present only because PR #606 formal-separation merge is still blocked by GitHub review policy. After ordinary checks and independent review, reconcile the formal lane before merge. |
 
 ### Blocked (87)
 
@@ -605,4 +607,3 @@
 | P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Unclaimed | Make CLI and control use the central service for every run lifecycle. | Release AR-1453 complete after all seven exact-main post-merge workflows passed. |
 | P0 | [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md): Protected-main tree-equality repair for runtime replay | Unclaimed | Repair the protected-main tree mismatch after the runtime replay merge. | Post-merge verification complete: all seven workflows succeeded; release AR-1454 and propagate repair evidence to AR-1450. |
 | P0 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | Unclaimed | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Run state reconcile and live doctor, then release AR-1455 done with exact post-merge workflow evidence. |
-| P0 | [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md): First-customer requalification after central orchestration | Unclaimed | Requalify the first-customer production-like journey after central orchestration became authoritative. | Release done: exact protected-main requalification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. |
