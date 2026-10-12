@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1773](tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Instrument every eligible public command operation through the shared reporter after the diagnostic gate and reporter are accepted. | ar1772-progress-reporter-luna56 |
+| P0 | [AR-1773](tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Inventory all public command routes and existing human status/progress writes, then implement shared-reporter instrumentation with mode/outcome matrix. | ar1772-progress-reporter-luna56 |
 | P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Run one bounded exact-candidate full-exhaustive retry with verified host envelope; preserve TLC_ATTESTATION_PATH and record terminal result. Do not accept or release without complete attestation. | ar1796-reconcile-candidate-luna56 |
 
 ## Blocked

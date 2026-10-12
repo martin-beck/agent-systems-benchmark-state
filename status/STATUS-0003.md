@@ -1111,8 +1111,8 @@
 | Owner | ar1772-progress-reporter-luna56 |
 | Parent | None |
 | Children | None |
-| Summary | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. |
-| Next action | Instrument every eligible public command operation through the shared reporter after the diagnostic gate and reporter are accepted. |
+| Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
+| Next action | Inventory all public command routes and existing human status/progress writes, then implement shared-reporter instrumentation with mode/outcome matrix. |
 
 ### AR-1774 — Status and progress completeness CI
 

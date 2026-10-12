@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Instrument every eligible public command operation through the shared reporter after the diagnostic gate and reporter are accepted.",
+  "next_action": "Inventory all public command routes and existing human status/progress writes, then implement shared-reporter instrumentation with mode/outcome matrix.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -27,10 +27,10 @@
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 4,
+  "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
+  "task_revision": 5,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:20:24+00:00",
+  "updated_at": "2026-10-12T06:20:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -62,3 +62,9 @@ non-TTY compatibility.
 
 - 2026-10-12T06:20:24+00:00: Recorded command exit 0; command argv SHA-256
   9cb963e1051a08fb292e41e233b68dd8e4e1d88e3773f2fa76bda9e3e21054f9.
+
+- 2026-10-12T06:20:47+00:00: AR-1769 and AR-1772 are complete. Promoted and claimed AR-1773 under
+  owner ar1772-progress-reporter-luna56. Created clean worktree
+  /srv/data/projects/agent-systems-benchmark-ar-1773-universal-command-step-instrumentation on
+  branch feature/ar-1773-universal-command-step-instrumentation at origin/main 9c5e5571. Next action
+  is authoritative route inventory before implementation.
