@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:09:40+00:00",
+  "updated_at": "2026-10-12T04:10:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -376,3 +376,6 @@ as the affected successor linkage and evidence source.
   product gate failure. Product tree remains clean; rerun state recording after AR-1799 renewal.
 
 - 2026-10-12T04:09:40+00:00: Checkpointed source commit 3c7692cfc9022f8a59e979f6a75a2cbfc93374bd.
+
+- 2026-10-12T04:10:08+00:00: Recorded command exit 0; command argv SHA-256
+  13e2aa5d148f9097f642e519d13f83dd607b03dabc7cdbb78c402e46fca20295.
