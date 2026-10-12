@@ -1486,6 +1486,20 @@
 | Summary | Repair the remaining current-main asb tui install trusted_tool_invalid failure for development rustup/rustc layouts and qualify the real installed entrypoint. |
 | Next action | PR #613 (63ba8e7973545f65bd8dda56f3aa24d9d339bb16) is open; focused rustup tests, fmt, clippy, and independent review pass. Await remaining exact-head hosted checks, then merge and run post-merge installed-entrypoint qualification. |
 
+### AR-1800 — Repair ASB interactive TUI session lifetime and terminal restoration
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair &#96;asb tui&#96; so a successful development broker session remains interactive until the user exits and always restores the terminal. |
+| Next action | Promote and claim the reproduced installed-entrypoint repair; keep broker admission bounded while removing the interactive-child lifetime deadline. |
+
 
 ## Dependency graph
 
@@ -2344,6 +2358,10 @@ flowchart LR
         AR_1797["AR-1797 - Planned"]:::status_planned
         AR_1798["AR-1798 - Done"]:::status_done
         AR_1799["AR-1799 - In progress"]:::status_in_progress
+    end
+    subgraph series_18["18 - Additional work"]
+        direction TB
+        AR_1800["AR-1800 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -3896,6 +3914,7 @@ flowchart LR
     AR_1576 --> AR_1590
     AR_1576 --> AR_1592
     AR_1576 --> AR_1594
+    AR_1577 --> AR_1800
     AR_1588 --> AR_1589
     AR_1588 --> AR_1598
     AR_1588 --> AR_1599
@@ -4210,6 +4229,7 @@ flowchart LR
     AR_1726 --> AR_1737
     AR_1726 --> AR_1738
     AR_1727 --> AR_1734
+    AR_1727 --> AR_1800
     AR_1728 --> AR_1729
     AR_1728 --> AR_1730
     AR_1729 --> AR_1731
@@ -4364,6 +4384,3 @@ flowchart LR
 | [AR-0506](../tasks/AR-0506-replay-opencode.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0507](../tasks/AR-0507-replay-opendesk.md) | [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0508](../tasks/AR-0508-replay-aider.md) | [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md), [AR-0850](../tasks/AR-0850-aider-deterministic-replay.md) |
-| [AR-0509](../tasks/AR-0509-replay-codex.md) | [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0510](../tasks/AR-0510-replay-gemini.md) | [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0511](../tasks/AR-0511-replay-qwen.md) | [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |

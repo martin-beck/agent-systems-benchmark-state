@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1800.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"interactive-lifetime","description":"After successful broker admission, `asb tui` remains interactive beyond the former 15-second deadline until normal user exit or an explicit cancellation/signal path."},
+    {"id":"bounded-setup","description":"Admission, handshake, failed-child, cancellation, server failure, and cleanup remain bounded and terminate only the ASB-owned child group."},
+    {"id":"terminal-integrity","description":"A controlling PTY proves foreground ownership during the session and exact caller terminal restoration after normal and failure exits."},
+    {"id":"typed-diagnostics","description":"Human and JSON output distinguish launch/admission/control/child/terminal outcomes without raw child output or secrets."},
+    {"id":"installed-regression","description":"A real installed-entrypoint PTY regression covers input, a session longer than 15 seconds, normal quit, cleanup, and caller restoration."}
+  ],
+  "definition_of_done": ["The installed `asb tui` route no longer kills a healthy interactive session at 15 seconds.", "Interactive and failure PTY behavior is deterministically covered without weakening broker or terminal safety.", "Independent review, signed-DCO merge, exact-head CI, and post-merge installed-entrypoint qualification pass."],
+  "inputs": [{"id":"ar-1577","description":"Existing interactive supervision contract."},{"id":"ar-1727","description":"Existing foreground terminal handoff and cleanup contract."}],
+  "outputs": [{"id":"lifetime-safe-launcher","description":"ASB broker launcher with separate bounded admission and unbounded healthy interactive lifetime."},{"id":"pty-regression","description":"Deterministic installed-route controlling-PTY coverage."}],
+  "allowed_tools": ["cargo","git","gh","tools/handoffctl","controlling-pty-fixtures"],
+  "forbidden_tools": ["credential-output","raw-terminal-transcript","child-output-forwarding","deadline-removal-for-handshake","foreground-check-removal","history-rewrite","force-push"],
+  "required_evidence_classes": ["contract-test","environmental","mechanical"],
+  "gates": [{"id":"pty-lifetime","description":"Installed-route PTY lifetime, input, quit, terminal restoration, and hostile cleanup matrix passes."},{"id":"publication","description":"Independent exact-head review, signed-DCO merge, exact-head CI, and exact-main post-merge qualification pass."}]
+}
