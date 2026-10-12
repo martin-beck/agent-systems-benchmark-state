@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1543](../tasks/AR-1543.md) | [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md), [AR-1549](../tasks/AR-1549.md) | [AR-1536](../tasks/AR-1536.md) |
+| [AR-1544](../tasks/AR-1544.md) | [AR-1530](../tasks/AR-1530.md) | None |
+| [AR-1545](../tasks/AR-1545.md) | [AR-1535](../tasks/AR-1535.md) | [AR-1522](../tasks/AR-1522.md) |
 | [AR-1546](../tasks/AR-1546.md) | [AR-1531](../tasks/AR-1531.md), [AR-1536](../tasks/AR-1536.md) | [AR-1522](../tasks/AR-1522.md) |
 | [AR-1547](../tasks/AR-1547.md) | None | [AR-1548](../tasks/AR-1548.md), [AR-1549](../tasks/AR-1549.md) |
 | [AR-1548](../tasks/AR-1548.md) | [AR-1547](../tasks/AR-1547.md) | None |
@@ -249,17 +252,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | asb-queue-next-luna56 | Independent review found a full integration-gate regression at exact PR head 5cb931f5. | PR #608 exact head 0fec6465 is rebased onto 5c843a12; diagnostic catalog repair and public-family count repair are signed and pushed. Full cargo test -p asb-cli --tests --offline passes. Obtain repeat independent review at exact head, wait all non-TLC checks terminal green, then protected merge/post-merge. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | Unclaimed | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | AR-1813 is the promoted prerequisite for the runtime-owned receipt and opaque factory contract. After it merges, re-open and claim AR-1812, then wire the verified receipt into ordinary run/sweep dispatch and complete review, merge, and post-merge verification. |
+| P0 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | ar1810-cli2key-luna56 | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | AR-1813 is the promoted prerequisite for the runtime-owned receipt and opaque factory contract. After it merges, re-open and claim AR-1812, then wire the verified receipt into ordinary run/sweep dispatch and complete review, merge, and post-merge verification. |
 
 ### Blocked (85)
 

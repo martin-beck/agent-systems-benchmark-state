@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T13:09:41+00:00",
   "depends_on": [
     "AR-1779",
     "AR-1799",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "07c590e712df11e555228abf1b9de4add3510d4f",
-  "owner": "",
+  "owner": "ar1810-cli2key-luna56",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1812.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:09:26+00:00",
+  "updated_at": "2026-10-12T11:09:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -69,3 +69,5 @@ fixtures and must not require a live provider or TLC.
 - 2026-10-12T11:09:26+00:00: AR-1813 is released done with runtime factory/receipt API, signed merge
   5c843a12 and verified exact-main gates; prerequisite is now satisfied. Reopen for ordinary CLI
   run/sweep integration.
+
+- 2026-10-12T11:09:41+00:00: Claimed by ar1810-cli2key-luna56.
