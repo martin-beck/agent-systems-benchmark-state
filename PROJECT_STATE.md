@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `5a6c5477cd171606da3aaa0cae9950453ea8dc5c`
-- Local origin/main: `5a6c5477cd171606da3aaa0cae9950453ea8dc5c`
+- Product remote main: `5c843a12e976bc7be6c32e9fc653e566bdf20450`
+- Local origin/main: `5c843a12e976bc7be6c32e9fc653e566bdf20450`
 - Primary worktree head: `98327152f2e92308b5bcf5b21cfe0c9f285cf950`
 
 ## Open pull requests
@@ -27,9 +27,8 @@ Generated from local Git and GitHub. Do not edit.
 | #574 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-repair-v2@0a389a2f8aa3` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool acquisition (superseding repair) |
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
-| #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@83c2c6635789` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.25 |
-| #607 | `feature/ar-1813-cli2key-runtime-factory-contract@7889b3bad4c0` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): expose verified cli2key receipt contract |
-| #608 | `feature/ar-1805-cli-surface-inventory-contract@01631b5bbe14` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, QUEUED:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): inventory public command surface |
+| #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@83c2c6635789` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.25 |
+| #608 | `feature/ar-1805-cli-surface-inventory-contract@01631b5bbe14` | `main` | BEHIND | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): inventory public command surface |
 
 ## Recent workflows
 
@@ -40,10 +39,10 @@ Generated from local Git and GitHub. Do not edit.
 | 38238974708 | `01631b5bbe14` | pull_request | Cross-repository development broker qualification | in_progress:- |
 | 38238974682 | `01631b5bbe14` | pull_request | Development formal assurance | in_progress:- |
 | 38238974572 | `01631b5bbe14` | pull_request | Rust verification | in_progress:- |
-| 38238974540 | `01631b5bbe14` | pull_request | Portable protected-main provenance | in_progress:- |
-| 38238974483 | `01631b5bbe14` | pull_request | Fault assurance | queued:- |
-| 38238974413 | `01631b5bbe14` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 38238974540 | `01631b5bbe14` | pull_request | Portable protected-main provenance | completed:success |
+| 38238974483 | `01631b5bbe14` | pull_request | Fault assurance | in_progress:- |
+| 38238974413 | `01631b5bbe14` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38238974410 | `01631b5bbe14` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38238974404 | `01631b5bbe14` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 38238974394 | `01631b5bbe14` | pull_request | Huawei MIT source headers | in_progress:- |
+| 38238974394 | `01631b5bbe14` | pull_request | Huawei MIT source headers | completed:success |
 | 38237622686 | `7889b3bad4c0` | pull_request | Emulated aarch64 portability | completed:success |
