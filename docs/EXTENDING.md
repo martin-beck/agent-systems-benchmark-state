@@ -10,6 +10,15 @@ Keep these in the consuming state repository:
 - extra read-only reports derived from task data;
 - project-specific tests and CI integration.
 
+The optional task `oracle_gate` field is a strict, public-safe interaction
+contract. Its required fields are `required: true`, `open_stage`, `completed`,
+and `events`; optional stage sequences, bounded discussion rounds, legacy
+`authorized`, reconciliation state, and a typed `human_session` are defined in
+`schema/task-schema.json`. Event artifact references carry only public-safe
+names and SHA-256 digests. Every object rejects unknown fields and events are
+bounded; use `tools/oracle_lifecycle.py` for lifecycle semantics rather than
+loosening the schema.
+
 A downstream extension must not bypass the repository-common coordinator lock, alter task files
 during a read, mutate generated files directly, or monkeypatch a vendored module in production.
 Prefer a separate deterministic command that consumes snapshots when the existing optional status
