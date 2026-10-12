@@ -10,7 +10,7 @@
   "next_action": "Update provenance digest to observed d303289d..., rerun make test once, then rerun default-parallel and checkpoint.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
-  "observed_head": "9490e3f6b63e6e1c74c6540507f09eec37cf0f9f",
+  "observed_head": "ed7b31055843f11e9f900e2de75d1baefe332d8a",
   "owner": "ar1803_parallel_fixture_luna56",
   "plan": "../plans/AR-1803-deterministic-parallel-fixture-repair.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T03:49:55+00:00",
+  "updated_at": "2026-10-12T03:49:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
