@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1797-cli2key-live-runtime-wiring",
   "checkpoint_commit": "fd815d5e4de7e6399ee27db65e7b5723b224eddd",
-  "claim_expires": "2026-10-12T06:50:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1729",
     "AR-1731",
@@ -15,7 +15,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "ar1797_cli2key_repair_luna56",
+  "owner": "",
   "plan": "../plans/AR-1797-cli2key-live-runtime-wiring.md",
   "priority": "P0",
   "schema_version": 1,
@@ -29,11 +29,11 @@
   },
   "spec_ref": "specs/AR-1797.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T06:17:43+00:00",
+  "updated_at": "2026-10-12T06:17:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -323,3 +323,7 @@ path and records only redacted provenance and typed outcome evidence.
 - 2026-10-12T06:17:43+00:00: Accepted post-merge product tree: PR #603 non-squash merge 9c5e5571,
   all 15 hosted checks green on exact rebased head 912e218f, exact-main make test green, reviewed
   net tree preserved, and doctor --live green after generated pycache cleanup.
+
+- 2026-10-12T06:17:52+00:00: AR-1797 complete: runtime-owned cli2key authority dispatch merged as PR
+  #603 merge commit 9c5e5571; exact-head hosted checks, serial/default-parallel gates, exact-main
+  post-merge make test, acceptance evidence, reconcile, and doctor --live all pass.

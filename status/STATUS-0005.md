@@ -194,12 +194,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0: 24G retry durably failed with liveness OOM. A subsequent 48G/64G attempt has no live process, attestation, or durable handoffctl task result visible; treat it as interrupted/unknown, do not accept or release, and reconcile before any new bounded retry. |
-| P0 | [AR-1797](../tasks/AR-1797-cli2key-live-runtime-wiring.md): Wire cli2key sidecar into live benchmark execution | ar1797_cli2key_repair_luna56 | Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark. | Record post-merge acceptance for merge commit 9c5e557195df34675e2f5427e6ec3dff3d433254, then release AR-1797 done and reconcile/doctor. |
 
 ### Blocked (86)
 
@@ -385,7 +384,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (595)
+### Done (596)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -582,3 +581,5 @@
 | P0 | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Unclaimed | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. |
 | P0 | [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Unclaimed | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | Done: PR #375 merged at protected main 8c53a4a62ecaa6fecc9eb195a105fc368a3395c8; independent review passed and all seven post-merge workflows succeeded. |
 | P0 | [AR-1497](../tasks/AR-1497-ar1495-topology-repair.md): AR-1495 protected-main topology repair | Unclaimed | Repair AR-1495 protected-main synchronization topology without changing product semantics. | Monitor eight post-merge workflows for exact protected-main merge 45df6590; release AR-1497 only after all terminal SUCCESS. |
+| P0 | [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | Unclaimed | PR 376 merged at protected main exact merge commit | Verify origin/main contains merge 9231a660675d4b01277a60b75d838d69c6bba917, run post-merge applicable smoke/build checks, then release AR-1498 durably. |
+| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Unclaimed | Repair merged development credential selection binding | Released; no further AR-1499 action. PR #378 merged at protected main ee8ea15; exact main tree and post-merge smoke verified, and all eight post-merge workflows passed. |
