@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:06:29+00:00",
+  "updated_at": "2026-10-12T00:07:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -57,3 +57,6 @@ stdout envelope and silences all human/operational output on both streams.
 - 2026-10-12T00:06:27+00:00: dependencies verified for AR-1771 output contract
 
 - 2026-10-12T00:06:29+00:00: Claimed by ar1775_output_router_luna56.
+
+- 2026-10-12T00:07:07+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
