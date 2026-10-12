@@ -1532,7 +1532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
-| Next action | Repair PR topology by rebuilding a clean signed topic from current main with only reviewed discovery diff; run gates, obtain fresh independent ACCEPT, force-update PR #599 and rerun hosted checks. |
+| Next action | Await fresh independent exact-head review of clean 6e65d8c3; after ACCEPT force-with-lease update PR #599, monitor all hosted checks including provenance, merge non-squash only when green. |
 
 ### AR-1804 — Cross-module fixture semaphore
 

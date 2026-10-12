@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Repair PR topology by rebuilding a clean signed topic from current main with only reviewed discovery diff; run gates, obtain fresh independent ACCEPT, force-update PR #599 and rerun hosted checks.",
+  "next_action": "Await fresh independent exact-head review of clean 6e65d8c3; after ACCEPT force-with-lease update PR #599, monitor all hosted checks including provenance, merge non-squash only when green.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "6e65d8c39f49cdc0a0d03131ad49b4167a919c87",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 164,
+  "task_revision": 165,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:27:00+00:00",
+  "updated_at": "2026-10-12T04:27:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -540,3 +540,9 @@ as the affected successor linkage and evidence source.
 - 2026-10-12T04:25:19+00:00: Heartbeat by ar1803_parallel_fixture_luna56.
 
 - 2026-10-12T04:27:00+00:00: Checkpointed source commit 5f7658ec7fcffa609e4dd7d202a327c6e642c994.
+
+- 2026-10-12T04:27:08+00:00: Clean topic rebuilt from current main 1ce208b4 with reviewed net diff
+  only. Signed/DCO head 6e65d8c39f49cdc0a0d03131ad49b4167a919c87; worktree clean. Focused asb-cli
+  433/433 passed serial, default-parallel 433/433 passed in 20.45s, and make test exited 0. The
+  prior provenance topology failure is removed because this topic has one linear product commit atop
+  current main. Fresh independent exact-head review is required before publication.
