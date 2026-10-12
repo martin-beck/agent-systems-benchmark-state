@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "56db629d58b725114b10e6fad8cc4772b16834d0",
   "claim_expires": "2026-10-12T04:40:01+00:00",
   "depends_on": [
     "AR-1762"
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T02:40:35+00:00",
+  "updated_at": "2026-10-12T02:40:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -94,3 +94,5 @@ as the affected successor linkage and evidence source.
   provider-selection/comparison tests and all 429 asb-cli lib tests also passed with bounded
   --test-threads=2. Direct high-parallel Cargo remains intentionally unsupported because
   process-backed fixtures contend; no runtime gate was weakened.
+
+- 2026-10-12T02:40:38+00:00: Checkpointed source commit 56db629d58b725114b10e6fad8cc4772b16834d0.
