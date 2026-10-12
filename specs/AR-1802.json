@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1802.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "development-authority", "description": "Fixture acquisition requires explicit development-only authority and cannot redirect production acquisition through an ambient environment variable."},
+    {"id": "complete-matrix", "description": "Every AR-1781 development workload passes install, select, run, sweep, report, compare, and offline-after-setup coverage."},
+    {"id": "hostile-identity", "description": "URL/catalog digest, revision, evaluator, missing, unsafe, and archive-size cases fail closed."},
+    {"id": "failure-separation", "description": "Acquisition failures remain distinct from benchmark/provider failures and preserve usable prior state."}
+  ],
+  "definition_of_done": ["AR-1800 review gaps have contract tests and bounded matrix evidence", "Independent review, exact-head CI, signed merge, and post-merge verification pass"],
+  "inputs": [{"id": "ar-1800", "description": "Signed controlled local acquisition backend candidate"}, {"id": "ar-1781", "description": "Development workload catalog and identity contract"}],
+  "outputs": [{"id": "workload-matrix-repair", "description": "Development-only fixture authority and complete lifecycle/offline qualification"}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["ambient-production-fixture", "identity-substitution", "credential-output", "network-fallback", "gate-weakening", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "authority-boundary", "description": "Production acquisition cannot be redirected by ambient fixture configuration."}, {"id": "workload-lifecycle", "description": "The complete bounded workload lifecycle and offline matrix passes for every selected development workload."}]
+}

@@ -8,7 +8,7 @@
     "AR-1783"
   ],
   "id": "AR-1800",
-  "next_action": "Independent review and exact-head hosted gates for signed b72da478; do not merge until review/CI are green.",
+  "next_action": "Remain unaccepted pending AR-1802 repair of fixture authority, full workload lifecycle/offline matrix, hostile identity/size coverage, and acquisition-vs-benchmark failure separation; do not merge signed b72da478.",
   "observed_branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "observed_dirty": 0,
   "observed_head": "b72da478631faa391f9be75d7cce1e813deb387d",
