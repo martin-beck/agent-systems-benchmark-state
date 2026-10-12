@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `e0e44a7d8b45676ebe683bc44f4a0a6d4eb8f0a9`
-- Local origin/main: `3c7ca1c1f307a7f2fea9f1cc80924901cda2ddba`
+- Local origin/main: `e0e44a7d8b45676ebe683bc44f4a0a6d4eb8f0a9`
 - Primary worktree head: `98327152f2e92308b5bcf5b21cfe0c9f285cf950`
 
 ## Open pull requests
@@ -40,7 +40,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38206793177 | `e0e44a7d8b45` | push | Emulated aarch64 portability | in_progress:- |
 | 38206793159 | `e0e44a7d8b45` | push | Portable protected-main provenance | completed:failure |
 | 38206793147 | `e0e44a7d8b45` | push | Fault assurance | in_progress:- |
-| 38206793146 | `e0e44a7d8b45` | push | Repository quality | in_progress:- |
+| 38206793146 | `e0e44a7d8b45` | push | Repository quality | completed:failure |
 | 38206793142 | `e0e44a7d8b45` | push | Hosted portability and native qualification | in_progress:- |
 | 38206793125 | `e0e44a7d8b45` | push | Credential-free benchmark path | in_progress:- |
 | 38205921465 | `1213928b8724` | pull_request | Portable protected-main provenance | completed:success |
