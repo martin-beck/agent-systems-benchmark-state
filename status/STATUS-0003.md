@@ -20,7 +20,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. |
-| Next action | Repair or isolate the content qualification replay-authority setup; rerun exact ASB 9c5e5571/TUI 60ab530d content-addressed journey and preserve receipt only after positive and negative cases pass. |
+| Next action | Obtain independent review of af690763 qualification-route repair, publish PR from clean exact tree, wait exact-head CI and merge; then rerun receipt at merged ASB head paired with TUI 60ab530d. |
 
 ### AR-1690 — ASB development-channel current-main materializer
 
