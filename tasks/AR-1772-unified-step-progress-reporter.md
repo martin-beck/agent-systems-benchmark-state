@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1772-unified-step-progress-reporter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T07:28:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1775"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "f9ad19ff24c69a0bd08d3dc3d9f8b6df09c98a41",
-  "owner": "ar1772-progress-reporter-luna56",
+  "owner": "",
   "plan": "../plans/AR-1772-unified-step-progress-reporter.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1772.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:29:15+00:00",
+  "updated_at": "2026-10-12T05:29:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -202,3 +202,8 @@ allowed outside this helper.
   version cargo 1.0 and reason null. Reporter step_progress 3/3 and diagnostic_contract
   ordinary_cli_producers 1/1 pass. This is unrelated AR-1772 product behavior; preserve full-gate
   blocker and do not waive.
+
+- 2026-10-12T05:29:19+00:00: Released blocked with exact full-gate evidence: AR-1772 reporter and
+  diagnostic focused tests pass, but full asb-cli has two deterministic Cargo probe fixture failures
+  (ambient cargo 1.0 observed instead of null/version_probe_unavailable), 430/432 passed. AR-1803 is
+  complete but does not repair these distinct probe fixtures. No product PR/merge or gate waiver.
