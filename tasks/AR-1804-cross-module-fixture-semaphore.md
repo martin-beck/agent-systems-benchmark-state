@@ -9,7 +9,7 @@
   "id": "AR-1804",
   "next_action": "Repair parallel semaphore regression tests to tolerate unrelated bounded fixture contenders by using bounded recovery wait; rerun focused module tests before default-parallel.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "53dd3bdfca19011b84fc9449d3ad44297dcdd2d1",
   "owner": "ar1804_fixture_semaphore_luna56",
   "plan": "../plans/AR-1804-cross-module-fixture-semaphore.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:06:57+00:00",
+  "updated_at": "2026-10-12T03:06:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
