@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:07:06+00:00",
+  "updated_at": "2026-10-12T03:09:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -358,3 +358,6 @@ before AR-1801 can be accepted.
   5-second bounded recovery waits after release. The timeout contention check remains 10ms,
   preserving hostile timeout semantics; only post-release availability assertions were widened to
   tolerate unrelated bounded parallel holders.
+
+- 2026-10-12T03:09:05+00:00: Recorded command exit 0; command argv SHA-256
+  3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
