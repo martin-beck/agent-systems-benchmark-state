@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Installed tool and workload execution qualification",
-  "updated_at": "2026-10-12T02:09:14+00:00",
+  "updated_at": "2026-10-12T02:09:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1780-installed-tool-workload-execution-qualification"
 }
 ---
@@ -59,3 +59,6 @@ hosted qualification absence is not a blocker for this development evidence.
 
 - 2026-10-12T02:09:14+00:00: Recorded command exit 0; command argv SHA-256
   ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-10-12T02:09:31+00:00: Recorded command exit 0; command argv SHA-256
+  b04e51d6a8a1cd1d991d96d1b0eeb7f5236f1056ccb95c8f404b26c181dc4797.
