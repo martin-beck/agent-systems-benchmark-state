@@ -41,7 +41,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38210171502 | `4b14797a0892` | push | Cross-repository development broker qualification | in_progress:- |
 | 38210171485 | `4b14797a0892` | push | Fault assurance | in_progress:- |
 | 38210171442 | `4b14797a0892` | push | Rust verification | in_progress:- |
-| 38210171401 | `4b14797a0892` | push | Repository quality | in_progress:- |
+| 38210171401 | `4b14797a0892` | push | Repository quality | completed:failure |
 | 38210171391 | `4b14797a0892` | push | Emulated aarch64 portability | in_progress:- |
 | 38210171379 | `4b14797a0892` | push | Huawei MIT source headers | completed:success |
 | 38209256944 | `fd815d5e4de7` | pull_request | Huawei MIT source headers | completed:success |
