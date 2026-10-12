@@ -9,150 +9,6 @@
   "observed_branch": "feature/ar-1811-development-formal-workflow-separation",
   "observed_dirty": 0,
   "observed_head": "d9972679899cf18c1c9ab87e694ad639a2c18786",
-  "oracle_gate": {
-    "completed": [
-      "role",
-      "spec",
-      "decision"
-    ],
-    "discussion_rounds": 0,
-    "events": [
-      {
-        "action": "open",
-        "after": [
-          {
-            "digest": "sha256:607625b5d8597e0ae25eca71b8e2608f6f08664ef9f12f06f5583cf5921a2f45",
-            "ref": "review/candidate"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:cc330f6cc2411e636d0434b5cceb13aa3da50412081d4e2307c858c0efe9ae4f",
-            "ref": "review/base"
-          }
-        ],
-        "disposition": "unresolved",
-        "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786",
-        "recorded_at": "2026-10-12T10:16:21+00:00",
-        "stage": "role",
-        "task_id": "AR-1811",
-        "task_revision": 41
-      },
-      {
-        "action": "resolve",
-        "after": [
-          {
-            "digest": "sha256:607625b5d8597e0ae25eca71b8e2608f6f08664ef9f12f06f5583cf5921a2f45",
-            "ref": "review/accepted"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:607625b5d8597e0ae25eca71b8e2608f6f08664ef9f12f06f5583cf5921a2f45",
-            "ref": "review/candidate"
-          }
-        ],
-        "disposition": "accepted",
-        "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786",
-        "recorded_at": "2026-10-12T10:16:24+00:00",
-        "stage": "role",
-        "task_id": "AR-1811",
-        "task_revision": 42
-      },
-      {
-        "action": "open",
-        "after": [
-          {
-            "digest": "sha256:88e12d0e567e6030f4aade22e82ff0870a9640e9e705b8f51c6e04ed17b1c633",
-            "ref": "candidate-spec"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:cc330f6cc2411e636d0434b5cceb13aa3da50412081d4e2307c858c0efe9ae4f",
-            "ref": "base-spec"
-          }
-        ],
-        "disposition": "unresolved",
-        "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786/spec",
-        "recorded_at": "2026-10-12T10:19:03+00:00",
-        "stage": "spec",
-        "task_id": "AR-1811",
-        "task_revision": 43
-      },
-      {
-        "action": "resolve",
-        "after": [
-          {
-            "digest": "sha256:88e12d0e567e6030f4aade22e82ff0870a9640e9e705b8f51c6e04ed17b1c633",
-            "ref": "accepted-spec"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:88e12d0e567e6030f4aade22e82ff0870a9640e9e705b8f51c6e04ed17b1c633",
-            "ref": "candidate-spec"
-          }
-        ],
-        "disposition": "accepted",
-        "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786/spec-accepted",
-        "recorded_at": "2026-10-12T10:19:07+00:00",
-        "stage": "spec",
-        "task_id": "AR-1811",
-        "task_revision": 44
-      },
-      {
-        "action": "open",
-        "after": [
-          {
-            "digest": "sha256:b678ee8b2515d49f7ba2137e1380f8719a08eb15b97c35efb4b2b8b8d6afe45d",
-            "ref": "candidate-decision"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:cc330f6cc2411e636d0434b5cceb13aa3da50412081d4e2307c858c0efe9ae4f",
-            "ref": "base-decision"
-          }
-        ],
-        "disposition": "unresolved",
-        "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786/decision",
-        "recorded_at": "2026-10-12T10:19:19+00:00",
-        "stage": "decision",
-        "task_id": "AR-1811",
-        "task_revision": 45
-      },
-      {
-        "action": "resolve",
-        "after": [
-          {
-            "digest": "sha256:b678ee8b2515d49f7ba2137e1380f8719a08eb15b97c35efb4b2b8b8d6afe45d",
-            "ref": "accepted-decision"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:b678ee8b2515d49f7ba2137e1380f8719a08eb15b97c35efb4b2b8b8d6afe45d",
-            "ref": "candidate-decision"
-          }
-        ],
-        "disposition": "accepted",
-        "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786/decision-accepted",
-        "recorded_at": "2026-10-12T10:19:22+00:00",
-        "stage": "decision",
-        "task_id": "AR-1811",
-        "task_revision": 46
-      }
-    ],
-    "open_stage": null,
-    "reconciliation_required": false,
-    "required": true,
-    "stage_sequence": [
-      "role",
-      "spec",
-      "decision"
-    ]
-  },
   "owner": "",
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
@@ -175,6 +31,7 @@
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
+
 
 Implement a fail-closed workflow contract in which ordinary pull requests and
 development pushes never invoke TLC/Alloy or require their result. Preserve
@@ -336,3 +193,153 @@ tests and update the generated quality documentation.
 - 2026-10-12T10:38:33+00:00: AR-1811 complete: PR #606 merged at exact protected-main commit
   5a6c5477; all exact-main workflows passed after AR-1814 minimal ruleset repair; acceptance receipt
   and independent review retained.
+
+
+## Preserved oracle-gate evidence
+
+```json
+{
+  "completed": [
+    "role",
+    "spec",
+    "decision"
+  ],
+  "discussion_rounds": 0,
+  "events": [
+    {
+      "action": "open",
+      "after": [
+        {
+          "digest": "sha256:607625b5d8597e0ae25eca71b8e2608f6f08664ef9f12f06f5583cf5921a2f45",
+          "ref": "review/candidate"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:cc330f6cc2411e636d0434b5cceb13aa3da50412081d4e2307c858c0efe9ae4f",
+          "ref": "review/base"
+        }
+      ],
+      "disposition": "unresolved",
+      "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786",
+      "recorded_at": "2026-10-12T10:16:21+00:00",
+      "stage": "role",
+      "task_id": "AR-1811",
+      "task_revision": 41
+    },
+    {
+      "action": "resolve",
+      "after": [
+        {
+          "digest": "sha256:607625b5d8597e0ae25eca71b8e2608f6f08664ef9f12f06f5583cf5921a2f45",
+          "ref": "review/accepted"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:607625b5d8597e0ae25eca71b8e2608f6f08664ef9f12f06f5583cf5921a2f45",
+          "ref": "review/candidate"
+        }
+      ],
+      "disposition": "accepted",
+      "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786",
+      "recorded_at": "2026-10-12T10:16:24+00:00",
+      "stage": "role",
+      "task_id": "AR-1811",
+      "task_revision": 42
+    },
+    {
+      "action": "open",
+      "after": [
+        {
+          "digest": "sha256:88e12d0e567e6030f4aade22e82ff0870a9640e9e705b8f51c6e04ed17b1c633",
+          "ref": "candidate-spec"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:cc330f6cc2411e636d0434b5cceb13aa3da50412081d4e2307c858c0efe9ae4f",
+          "ref": "base-spec"
+        }
+      ],
+      "disposition": "unresolved",
+      "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786/spec",
+      "recorded_at": "2026-10-12T10:19:03+00:00",
+      "stage": "spec",
+      "task_id": "AR-1811",
+      "task_revision": 43
+    },
+    {
+      "action": "resolve",
+      "after": [
+        {
+          "digest": "sha256:88e12d0e567e6030f4aade22e82ff0870a9640e9e705b8f51c6e04ed17b1c633",
+          "ref": "accepted-spec"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:88e12d0e567e6030f4aade22e82ff0870a9640e9e705b8f51c6e04ed17b1c633",
+          "ref": "candidate-spec"
+        }
+      ],
+      "disposition": "accepted",
+      "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786/spec-accepted",
+      "recorded_at": "2026-10-12T10:19:07+00:00",
+      "stage": "spec",
+      "task_id": "AR-1811",
+      "task_revision": 44
+    },
+    {
+      "action": "open",
+      "after": [
+        {
+          "digest": "sha256:b678ee8b2515d49f7ba2137e1380f8719a08eb15b97c35efb4b2b8b8d6afe45d",
+          "ref": "candidate-decision"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:cc330f6cc2411e636d0434b5cceb13aa3da50412081d4e2307c858c0efe9ae4f",
+          "ref": "base-decision"
+        }
+      ],
+      "disposition": "unresolved",
+      "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786/decision",
+      "recorded_at": "2026-10-12T10:19:19+00:00",
+      "stage": "decision",
+      "task_id": "AR-1811",
+      "task_revision": 45
+    },
+    {
+      "action": "resolve",
+      "after": [
+        {
+          "digest": "sha256:b678ee8b2515d49f7ba2137e1380f8719a08eb15b97c35efb4b2b8b8d6afe45d",
+          "ref": "accepted-decision"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:b678ee8b2515d49f7ba2137e1380f8719a08eb15b97c35efb4b2b8b8d6afe45d",
+          "ref": "candidate-decision"
+        }
+      ],
+      "disposition": "accepted",
+      "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786/decision-accepted",
+      "recorded_at": "2026-10-12T10:19:22+00:00",
+      "stage": "decision",
+      "task_id": "AR-1811",
+      "task_revision": 46
+    }
+  ],
+  "open_stage": null,
+  "reconciliation_required": false,
+  "required": true,
+  "stage_sequence": [
+    "role",
+    "spec",
+    "decision"
+  ]
+}
+```

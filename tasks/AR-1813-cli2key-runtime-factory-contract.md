@@ -12,150 +12,6 @@
   "observed_branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "observed_dirty": 0,
   "observed_head": "7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
-  "oracle_gate": {
-    "completed": [
-      "role",
-      "spec",
-      "decision"
-    ],
-    "discussion_rounds": 0,
-    "events": [
-      {
-        "action": "open",
-        "after": [
-          {
-            "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
-            "ref": "review/candidate"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:2595fc33eda6071001fadbbda6d93b5a24bd5d352f55f0548d376896db0091c9",
-            "ref": "review/base"
-          }
-        ],
-        "disposition": "unresolved",
-        "public_ref": "PR-607/7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
-        "recorded_at": "2026-10-12T10:43:45+00:00",
-        "stage": "role",
-        "task_id": "AR-1813",
-        "task_revision": 17
-      },
-      {
-        "action": "resolve",
-        "after": [
-          {
-            "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
-            "ref": "review/accepted"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
-            "ref": "review/candidate"
-          }
-        ],
-        "disposition": "accepted",
-        "public_ref": "PR-607/7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
-        "recorded_at": "2026-10-12T10:43:52+00:00",
-        "stage": "role",
-        "task_id": "AR-1813",
-        "task_revision": 18
-      },
-      {
-        "action": "open",
-        "after": [
-          {
-            "digest": "sha256:520987deedc4089478ff58428040d951009fa41d95e13d97760a45e45fbab915",
-            "ref": "specs/AR-1813.json"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
-            "ref": "review/accepted"
-          }
-        ],
-        "disposition": "unresolved",
-        "public_ref": "AR-1813/spec-520987de",
-        "recorded_at": "2026-10-12T10:51:40+00:00",
-        "stage": "spec",
-        "task_id": "AR-1813",
-        "task_revision": 21
-      },
-      {
-        "action": "resolve",
-        "after": [
-          {
-            "digest": "sha256:520987deedc4089478ff58428040d951009fa41d95e13d97760a45e45fbab915",
-            "ref": "specs/AR-1813.json"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
-            "ref": "review/accepted"
-          }
-        ],
-        "disposition": "accepted",
-        "public_ref": "AR-1813/spec-520987de",
-        "recorded_at": "2026-10-12T10:51:43+00:00",
-        "stage": "spec",
-        "task_id": "AR-1813",
-        "task_revision": 22
-      },
-      {
-        "action": "open",
-        "after": [
-          {
-            "digest": "sha256:e6aa46eac87ed9900b68e4451eb1153710211e4ae36617b0ba8f869b4a7fe176",
-            "ref": "decision/merge-authorized"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:520987deedc4089478ff58428040d951009fa41d95e13d97760a45e45fbab915",
-            "ref": "specs/AR-1813.json"
-          }
-        ],
-        "disposition": "unresolved",
-        "public_ref": "PR-607/7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
-        "recorded_at": "2026-10-12T10:51:54+00:00",
-        "stage": "decision",
-        "task_id": "AR-1813",
-        "task_revision": 23
-      },
-      {
-        "action": "resolve",
-        "after": [
-          {
-            "digest": "sha256:e6aa46eac87ed9900b68e4451eb1153710211e4ae36617b0ba8f869b4a7fe176",
-            "ref": "decision/merge-authorized"
-          }
-        ],
-        "before": [
-          {
-            "digest": "sha256:520987deedc4089478ff58428040d951009fa41d95e13d97760a45e45fbab915",
-            "ref": "specs/AR-1813.json"
-          }
-        ],
-        "disposition": "accepted",
-        "public_ref": "PR-607/7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
-        "recorded_at": "2026-10-12T10:51:57+00:00",
-        "stage": "decision",
-        "task_id": "AR-1813",
-        "task_revision": 24
-      }
-    ],
-    "open_stage": null,
-    "reconciliation_required": false,
-    "required": true,
-    "stage_sequence": [
-      "role",
-      "spec",
-      "decision"
-    ]
-  },
   "owner": "",
   "plan": "../plans/AR-1813-cli2key-runtime-factory-contract.md",
   "priority": "P0",
@@ -178,6 +34,7 @@
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
+
 
 AR-1812 cannot safely implement its ordinary `run`/`sweep` bootstrap because
 the production `asb-runtime` factory constructor is private and the generic
@@ -277,3 +134,153 @@ fabricate authority in the CLI or introduce a provider fallback.
 - 2026-10-12T11:05:35+00:00: AR-1813 complete: PR #607 exact-base signed merge 5c843a12, exact-head
   checks green, 10/10 exact-main post-merge workflows terminal success, durable receipt
   quality/AR-1813-postmerge-receipt.txt.
+
+
+## Preserved oracle-gate evidence
+
+```json
+{
+  "completed": [
+    "role",
+    "spec",
+    "decision"
+  ],
+  "discussion_rounds": 0,
+  "events": [
+    {
+      "action": "open",
+      "after": [
+        {
+          "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
+          "ref": "review/candidate"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:2595fc33eda6071001fadbbda6d93b5a24bd5d352f55f0548d376896db0091c9",
+          "ref": "review/base"
+        }
+      ],
+      "disposition": "unresolved",
+      "public_ref": "PR-607/7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
+      "recorded_at": "2026-10-12T10:43:45+00:00",
+      "stage": "role",
+      "task_id": "AR-1813",
+      "task_revision": 17
+    },
+    {
+      "action": "resolve",
+      "after": [
+        {
+          "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
+          "ref": "review/accepted"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
+          "ref": "review/candidate"
+        }
+      ],
+      "disposition": "accepted",
+      "public_ref": "PR-607/7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
+      "recorded_at": "2026-10-12T10:43:52+00:00",
+      "stage": "role",
+      "task_id": "AR-1813",
+      "task_revision": 18
+    },
+    {
+      "action": "open",
+      "after": [
+        {
+          "digest": "sha256:520987deedc4089478ff58428040d951009fa41d95e13d97760a45e45fbab915",
+          "ref": "specs/AR-1813.json"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
+          "ref": "review/accepted"
+        }
+      ],
+      "disposition": "unresolved",
+      "public_ref": "AR-1813/spec-520987de",
+      "recorded_at": "2026-10-12T10:51:40+00:00",
+      "stage": "spec",
+      "task_id": "AR-1813",
+      "task_revision": 21
+    },
+    {
+      "action": "resolve",
+      "after": [
+        {
+          "digest": "sha256:520987deedc4089478ff58428040d951009fa41d95e13d97760a45e45fbab915",
+          "ref": "specs/AR-1813.json"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
+          "ref": "review/accepted"
+        }
+      ],
+      "disposition": "accepted",
+      "public_ref": "AR-1813/spec-520987de",
+      "recorded_at": "2026-10-12T10:51:43+00:00",
+      "stage": "spec",
+      "task_id": "AR-1813",
+      "task_revision": 22
+    },
+    {
+      "action": "open",
+      "after": [
+        {
+          "digest": "sha256:e6aa46eac87ed9900b68e4451eb1153710211e4ae36617b0ba8f869b4a7fe176",
+          "ref": "decision/merge-authorized"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:520987deedc4089478ff58428040d951009fa41d95e13d97760a45e45fbab915",
+          "ref": "specs/AR-1813.json"
+        }
+      ],
+      "disposition": "unresolved",
+      "public_ref": "PR-607/7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
+      "recorded_at": "2026-10-12T10:51:54+00:00",
+      "stage": "decision",
+      "task_id": "AR-1813",
+      "task_revision": 23
+    },
+    {
+      "action": "resolve",
+      "after": [
+        {
+          "digest": "sha256:e6aa46eac87ed9900b68e4451eb1153710211e4ae36617b0ba8f869b4a7fe176",
+          "ref": "decision/merge-authorized"
+        }
+      ],
+      "before": [
+        {
+          "digest": "sha256:520987deedc4089478ff58428040d951009fa41d95e13d97760a45e45fbab915",
+          "ref": "specs/AR-1813.json"
+        }
+      ],
+      "disposition": "accepted",
+      "public_ref": "PR-607/7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
+      "recorded_at": "2026-10-12T10:51:57+00:00",
+      "stage": "decision",
+      "task_id": "AR-1813",
+      "task_revision": 24
+    }
+  ],
+  "open_stage": null,
+  "reconciliation_required": false,
+  "required": true,
+  "stage_sequence": [
+    "role",
+    "spec",
+    "decision"
+  ]
+}
+```
