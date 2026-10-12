@@ -9,8 +9,8 @@
   "id": "AR-1803",
   "next_action": "Repair f85b0dd7 by preserving AR-1800/1802 controlled fixture authority and archive acquisition; restore removed lifecycle tests and reviewed catalog, then rerun full gates before review.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
-  "observed_dirty": 5,
-  "observed_head": "f85b0dd7a0a209cfcd15837a4e5145a3efdb9528",
+  "observed_dirty": 0,
+  "observed_head": "9bea114934b9b27be16279ffed5e5fc18c8615e2",
   "owner": "ar1803_parallel_fixture_luna56",
   "plan": "../plans/AR-1803-deterministic-parallel-fixture-repair.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:05:27+00:00",
+  "updated_at": "2026-10-12T04:05:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
