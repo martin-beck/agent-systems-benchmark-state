@@ -31,7 +31,7 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Wire cli2key sidecar into live benchmark execution",
   "updated_at": "2026-10-12T02:03:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
@@ -71,3 +71,10 @@ path and records only redacted provenance and typed outcome evidence.
   d4d121064219dc7626da449789752a7f5ea2d79dbfe07ee4ffb9550dcb55c556.
 
 - 2026-10-12T02:03:24+00:00: Heartbeat by codex-ar1797-cli2key-repair-luna56.
+
+- 2026-10-12T02:03:24+00:00: Reproduced integration gap on exact protected-main merge 24cb72d9:
+  execute_loaded_plan rejects cli2key when no runtime factory; production default factory is None.
+  Existing Cli2KeySidecar owns generated key only in private staging and exposes endpoint plus key
+  digest, while Codex adapter accepts only digest reference. No path currently resolves AR-1779
+  receipt into a runtime-owned live attempt. Next: add runtime composition seam and hostile fake
+  coverage; do not weaken no-fallback or key privacy.
