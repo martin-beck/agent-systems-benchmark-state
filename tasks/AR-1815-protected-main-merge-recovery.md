@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T11:57:40+00:00",
+  "updated_at": "2026-10-12T11:58:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -89,3 +89,17 @@ introduce a TLC/model-check dependency for development.
 
 - 2026-10-12T11:57:40+00:00: Recorded command exit 0; command argv SHA-256
   8f8f1ceb8194b695841e2a5db0025ba5f51163901c3ed6da7831b188811c6116.
+
+- 2026-10-12T11:58:34+00:00: Independent exact-head review approved PR #609 at
+  ab4f4c6a81f543e049759d199cca675c7370a1dc: base is exact protected main
+  15c80511cd2cb55947fe3ee1e130affed4c76b4d, merge-base is base, head is SSH-signed by certified
+  martin.beck2@gmx.de, author/committer/signer/DCO identities match, and head tree
+  60b7fca30b4c3344d029d4858bb2cce6371a7298 equals preserved merge tree and exact merge preview. Diff
+  is intentionally metadata-only and empty against the preserved merge; no privacy or source-content
+  changes. repository_policy exact base..head passed; focused portable-provenance/merge-shape suite
+  passed 9 tests plus 7 subtests; signature/DCO/failure-path suite passed 7 tests plus 2 subtests.
+  PR #609 required checks are terminal-success, including Rust, emulated AArch64,
+  policy/coverage/supply-chain, credential-free, TUI/PTY, fuzz, mutation, models, Kani, platform,
+  headers, provenance, retained faults, and AWQ shadow evidence. No TLC/live-provider gate.
+  Independent review approved; do not merge via web; proceed only with established signed
+  merge_pr.py and post-merge exact-main verification.
