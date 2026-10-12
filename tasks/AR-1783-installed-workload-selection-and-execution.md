@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "AR-1783 merged at 5201a036; post-merge policy and portable provenance rejected GitHub merge committer, requiring supported local-integration forward repair before acceptance",
-  "task_revision": 183,
+  "task_revision": 184,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:07:04+00:00",
+  "updated_at": "2026-10-12T01:07:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -575,3 +575,6 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:07:04+00:00: Recorded command exit 0; command argv SHA-256
   1c370d6074b72b12c0e0b562e318d930b3628a08d86c31227c66578bebec7737.
+
+- 2026-10-12T01:07:10+00:00: Recorded command exit 1; command argv SHA-256
+  5b8d25558a601707d8c775e0a95fe67f71900a0937fdc0b9d57e281b5f044eb7.
