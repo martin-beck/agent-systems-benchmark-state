@@ -12,9 +12,9 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1817.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "planned",
   "summary": "Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Align task schema with oracle gate contract",
   "updated_at": "2026-10-12T13:20:00+00:00",
   "worktree_key": ""
