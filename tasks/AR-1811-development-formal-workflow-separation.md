@@ -157,11 +157,11 @@
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:20:44+00:00",
+  "updated_at": "2026-10-12T10:25:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -307,3 +307,7 @@ tests and update the generated quality documentation.
   GitHub branch policy rejects merge without an eligible non-author review; self-approval was
   rejected and no admin bypass used. Preserve exact-head evidence and resume only after external
   review policy is satisfied.
+
+- 2026-10-12T10:25:02+00:00: AR-1814 removed only the stale TLC status from ruleset 24750310; PR
+  #606 is now clean with all ordinary checks green and state independent review accepted. Resume
+  merge transition without admin bypass.
