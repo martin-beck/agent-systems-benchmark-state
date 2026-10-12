@@ -39,7 +39,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38190460077 | `ad64a90f198d` | pull_request | Huawei MIT source headers | completed:success |
 | 38190460039 | `ad64a90f198d` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38190460014 | `ad64a90f198d` | pull_request | Portable protected-main provenance | completed:failure |
-| 38190460001 | `ad64a90f198d` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38190460001 | `ad64a90f198d` | pull_request | Hosted portability and native qualification | completed:failure |
 | 38190459992 | `ad64a90f198d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38190459987 | `ad64a90f198d` | pull_request | Rust verification | in_progress:- |
 | 38190459984 | `ad64a90f198d` | pull_request | Fault assurance | in_progress:- |
