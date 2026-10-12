@@ -149,8 +149,8 @@ def _install_projection_policy(core: ModuleType) -> None:
         contents[core.ROOT / "WORKTREES.md"] = worktrees
         _publish_transaction(core, contents)
 
-    core.write_generated_views = write_generated_views
-    core._asb_original_write_generated_views = original
+    core.write_generated_views = write_generated_views  # type: ignore[attr-defined]
+    core._asb_original_write_generated_views = original  # type: ignore[attr-defined]
 
 
 def main() -> int:

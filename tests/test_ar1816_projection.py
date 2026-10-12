@@ -57,7 +57,7 @@ class ProjectionLauncherTest(unittest.TestCase):
                     raise OSError("injected publication interruption")
                 return original_replace(self, destination)
 
-            Path.replace = fail_replace  # type: ignore[method-assign]
+            Path.replace = fail_replace  # type: ignore[assignment,method-assign]
             try:
                 with self.assertRaisesRegex(OSError, "injected publication interruption"):
                     launcher._publish_transaction(core, {target: "new\n"})
