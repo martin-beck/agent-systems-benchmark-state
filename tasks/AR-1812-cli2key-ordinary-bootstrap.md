@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:52:07+00:00",
+  "updated_at": "2026-10-12T11:52:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -351,3 +351,6 @@ fixtures and must not require a live provider or TLC.
   stale diagnostic identity maps after rebase, now repaired by origin/main-based 2319-entry refresh
   and four AR-1812 entries. All product commits are SSH-signed G with matching DCO; no
   TLC/live-provider gate used.
+
+- 2026-10-12T11:52:13+00:00: Recorded command exit 0; command argv SHA-256
+  07c0638e90e1c841a0c2ed2f3ef089a55eaef56bfd805e9b566ec1d50c98a6cb.
