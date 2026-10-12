@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Obtain independent review, verify PR #610 head remains 95a342fde4c5135a841017074028bcf053771f05, wait for required CI green, then merge and perform post-merge verification.",
+  "next_action": "Continue 30-second-cadence monitoring; obtain independent review and all required exact-head checks before merge.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "95a342fde4c5135a841017074028bcf053771f05",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:53:23+00:00",
+  "updated_at": "2026-10-12T11:53:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -371,3 +371,9 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T11:53:23+00:00: Recorded command exit 0; command argv SHA-256
   99e2d8febc40906b1ded8a1564e58fef26a7feb0fc5d6cf71a0a9e9a85481ae5.
+
+- 2026-10-12T11:53:33+00:00: PR #610 exact head remains 95a342fde4c5135a841017074028bcf053771f05.
+  Hosted CI is running; completed checks currently green include AWQ shadow evidence, fault
+  assurance retained faults, protected-main provenance, and Huawei/SPDX headers. Remaining required
+  checks are in progress, with no review yet; mergeStateStatus is BLOCKED pending review/check
+  completion. No branch mutation or retry was performed.
