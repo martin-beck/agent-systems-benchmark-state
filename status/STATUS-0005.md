@@ -1,9 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1601](../tasks/AR-1601.md) | [AR-1599](../tasks/AR-1599.md), [AR-1600](../tasks/AR-1600.md) | [AR-1603](../tasks/AR-1603.md), [AR-1607](../tasks/AR-1607.md), [AR-1611](../tasks/AR-1611.md) |
-| [AR-1602](../tasks/AR-1602.md) | [AR-1595](../tasks/AR-1595.md), [AR-1596](../tasks/AR-1596.md) | [AR-1605](../tasks/AR-1605.md) |
-| [AR-1603](../tasks/AR-1603.md) | [AR-1598](../tasks/AR-1598.md), [AR-1601](../tasks/AR-1601.md), [AR-1605](../tasks/AR-1605.md), [AR-1606](../tasks/AR-1606.md), [AR-1607](../tasks/AR-1607.md), [AR-1608](../tasks/AR-1608.md) | [AR-1604](../tasks/AR-1604.md), [AR-1613](../tasks/AR-1613.md) |
-| [AR-1604](../tasks/AR-1604.md) | [AR-1603](../tasks/AR-1603.md) | [AR-1613](../tasks/AR-1613.md), [AR-1614](../tasks/AR-1614.md), [AR-1631](../tasks/AR-1631.md), [AR-1633](../tasks/AR-1633.md) |
 | [AR-1605](../tasks/AR-1605.md) | [AR-1602](../tasks/AR-1602.md) | [AR-1603](../tasks/AR-1603.md), [AR-1606](../tasks/AR-1606.md), [AR-1611](../tasks/AR-1611.md), [AR-1612](../tasks/AR-1612.md) |
 | [AR-1606](../tasks/AR-1606.md) | [AR-1591](../tasks/AR-1591.md), [AR-1605](../tasks/AR-1605.md) | [AR-1603](../tasks/AR-1603.md), [AR-1612](../tasks/AR-1612.md) |
 | [AR-1607](../tasks/AR-1607.md) | [AR-1595](../tasks/AR-1595.md), [AR-1601](../tasks/AR-1601.md) | [AR-1603](../tasks/AR-1603.md), [AR-1608](../tasks/AR-1608.md), [AR-1609](../tasks/AR-1609.md), [AR-1642](../tasks/AR-1642.md), [AR-1656](../tasks/AR-1656.md) |
@@ -194,11 +190,10 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1689](../tasks/AR-1689.md): Paired TUI fresh-user integration and receipt qualification | ar1689-tui-qualification-luna56 | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. | Post-merge receipt generated for ASB 1494e474 paired with TUI 60ab530d; run full workspace gate, commit receipt, then accept/release after doctor. Reconcile gh API failure separately. |
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1773-catalog-repair-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Remain open awaiting separately bounded compact diagnostic catalog regeneration; preserve AR-1773 diff/worktree and rerun diagnostic/full gates only after that repair lands. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Run one bounded exact-candidate full-exhaustive retry with verified host envelope; preserve TLC_ATTESTATION_PATH and record terminal result. Do not accept or release without complete attestation. |
 
@@ -384,7 +379,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (596)
+### Done (597)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -583,3 +578,6 @@
 | P0 | [AR-1497](../tasks/AR-1497-ar1495-topology-repair.md): AR-1495 protected-main topology repair | Unclaimed | Repair AR-1495 protected-main synchronization topology without changing product semantics. | Monitor eight post-merge workflows for exact protected-main merge 45df6590; release AR-1497 only after all terminal SUCCESS. |
 | P0 | [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | Unclaimed | PR 376 merged at protected main exact merge commit | Verify origin/main contains merge 9231a660675d4b01277a60b75d838d69c6bba917, run post-merge applicable smoke/build checks, then release AR-1498 durably. |
 | P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Unclaimed | Repair merged development credential selection binding | Released; no further AR-1499 action. PR #378 merged at protected main ee8ea15; exact main tree and post-merge smoke verified, and all eight post-merge workflows passed. |
+| P0 | [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | Unclaimed | Qualify generated development credentials through provider, capture and replay flows. | AR-1500 complete: PR #379 merged at exact checked head; post-merge main tree equality and offline fixture smoke passed. Continue dependent ARs. |
+| P0 | [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | Unclaimed | Runtime-owned authenticated bootstrap authority merged and verified on main. | No further action; release AR-1502 after protected merge and exact-head post-merge workflows. |
+| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Unclaimed | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | No further AR-1505 action; merge and post-merge assurance complete. |
