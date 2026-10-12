@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1812](tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Independent review accepted provisionally; wait for Rust, repository-quality, and emulated-AArch64 exact-head checks to terminate before merge. | ar1812-repair-luna56 |
+| P0 | [AR-1812](tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Protected integration may proceed: independent review accepted exact head and all required PR checks are terminal success; do not merge until integration worker revalidates exact target tree. | ar1812-repair-luna56 |
 | P0 | [AR-1815](tasks/AR-1815-protected-main-merge-recovery.md): Protected-main signed merge recovery | Recover protected-main merge provenance without rewriting the preserved GitHub merge. | Exact merge e57982a is published. Repository quality run 38246184722 attempt 3 is in progress after two external HTTP 504 failures; monitor it to terminal-success or record the external dependency as the sole blocker without weakening gates. Other exact-main workflows must also finish green. | ar1805_postmerge_repair |
 
 ## Open

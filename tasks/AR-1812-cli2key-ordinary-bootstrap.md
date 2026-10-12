@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Independent review accepted provisionally; wait for Rust, repository-quality, and emulated-AArch64 exact-head checks to terminate before merge.",
+  "next_action": "Protected integration may proceed: independent review accepted exact head and all required PR checks are terminal success; do not merge until integration worker revalidates exact target tree.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "95a342fde4c5135a841017074028bcf053771f05",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T12:00:05+00:00",
+  "updated_at": "2026-10-12T12:04:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -388,3 +388,16 @@ fixtures and must not require a live provider or TLC.
   and workflow_transcript 3/3 passed offline; git diff --check and privacy scan clean. Hosted checks
   remaining: Rust verification, repository quality, emulated AArch64 portability. No merge or TLC
   decision made while checks run.
+
+- 2026-10-12T12:04:29+00:00: Independent exact-head review ACCEPTED by ar610_independent_review. PR
+  #610 exact head 95a342fde4c5135a841017074028bcf053771f05 remains clean against base
+  15c80511cd2cb55947fe3ee1e130affed4c76b4d. Full diff reviewed: 3 files, 110 product additions plus
+  mechanically refreshed diagnostic identities and exact provenance digest; no privacy leakage or
+  gate weakening. All 4 commits SSH-signed by Martin Beck key
+  SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE with matching DCO. Independent focused gates
+  diagnostic_contract 9/9 and workflow_transcript 3/3 pass; full offline cargo test workspace passed
+  (437 asb-cli tests and all suites, 1 ignored), git diff --check clean. Hosted exact-head checks
+  all terminal SUCCESS: Rust checks, repository quality/policy coverage supply chain, emulated
+  AArch64, credential-free path, TUI/PTY, formal/assurance, fuzz/mutation, Loom/Kani, provenance,
+  headers, platform and AWQ shadow. No TLC/model-check was used as a development requirement. Review
+  does not authorize merge.
