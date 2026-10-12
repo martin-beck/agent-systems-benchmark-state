@@ -1,0 +1,10 @@
+AR-1802 post-merge acceptance receipt
+
+PR: #600
+Merged main: 1ce208b4e5738b9608b3f2d454d0a6a0dfbeb323
+Reviewed topic head: c9ea7246e6d4ce7cfd11eabe55216765d2508996
+Hosted checks: all 15 SUCCESS; merge state CLEAN.
+Post-merge checkout: origin/main at 1ce208b4.
+Post-merge command: make -C /srv/data/projects/agent-systems-benchmark-postmerge-1802 test
+Post-merge result: exit 0; format, Clippy, workspace tests, contract/provenance, and rustdoc gates passed.
+Contracts: explicit development fixture authority, bounded archive acquisition, full workload campaign matrix, hostile fixture isolation, and reviewed diagnostic identities.
