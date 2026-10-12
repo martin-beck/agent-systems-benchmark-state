@@ -8,7 +8,7 @@
     "AR-1783"
   ],
   "id": "AR-1802",
-  "next_action": "Repair or isolate source_checkout fixture contention observed in parallel package gate; then rerun exact package and workspace gates.",
+  "next_action": "Run exact workspace make test on clean signed c9ea7246; package --tests matrix is green and independent AR-1803 review accepted.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "observed_dirty": 0,
   "observed_head": "c9ea7246e6d4ce7cfd11eabe55216765d2508996",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:53:24+00:00",
+  "updated_at": "2026-10-12T03:56:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -271,3 +271,10 @@ remains explicitly unaccepted and blocked until this repair is complete.
 
 - 2026-10-12T03:53:21+00:00: Recorded command exit 0; command argv SHA-256
   f2e36c40cd1d0b3cc43b0acd7f5b781cba6339f8e1509e9e854a9c929c0786b7.
+
+- 2026-10-12T03:56:07+00:00: Checkpoint: signed product HEAD c9ea7246 includes source-checkout
+  semaphore guards and refreshed cli provenance digest. Exact package --tests gate now passes:
+  433/433 lib tests plus all integration binaries (14,6,9,1,6,16,2,1,2,5,3) green;
+  workflow_transcript provenance 3/3 green; diagnostic contract 9/9 green. Prior source_checkout
+  parallel failure was repaired by guarding fixture_repository setup. Full workspace make test still
+  required on this clean head; no waiver.
