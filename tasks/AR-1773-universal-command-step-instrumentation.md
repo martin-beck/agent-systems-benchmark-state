@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:20:47+00:00",
+  "updated_at": "2026-10-12T06:22:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -68,3 +68,6 @@ non-TTY compatibility.
   /srv/data/projects/agent-systems-benchmark-ar-1773-universal-command-step-instrumentation on
   branch feature/ar-1773-universal-command-step-instrumentation at origin/main 9c5e5571. Next action
   is authoritative route inventory before implementation.
+
+- 2026-10-12T06:22:31+00:00: Recorded command exit 0; command argv SHA-256
+  2a8f194e6adddd75d45f4e106e0f79ed41a2c4749e10429101d9bbf524666fe0.
