@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:35:30+00:00",
+  "updated_at": "2026-10-12T05:35:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -206,3 +206,6 @@ path and records only redacted provenance and typed outcome evidence.
   current lib.rs hash c9e1176974b875a11dbfe7e5260a32557912da8c9e57665c684a7365d566a13c. This is
   generated provenance drift caused by the intentional public seam, not a qualification failure.
   Updated the checked-in generated provenance fixture to the exact current hash; rerun required.
+
+- 2026-10-12T05:35:33+00:00: Recorded command exit 0; command argv SHA-256
+  d2c1f2da93c56080e89172c6bdbea13dfb310792273bd34989003d5a60853c10.
