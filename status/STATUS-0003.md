@@ -1518,7 +1518,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review. |
-| Next action | Run full asb-cli gate; then commit signed fixture-authority repair and request independent review. Full lifecycle/offline matrix remains to be verified. |
+| Next action | Independent review is required for signed head 97f6c271; hosted exact-head CI and full lifecycle/offline matrix remain outstanding. |
 
 ### AR-1803 — Deterministic parallel fixture repair
 

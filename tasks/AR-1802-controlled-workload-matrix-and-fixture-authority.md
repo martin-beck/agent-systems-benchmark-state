@@ -8,7 +8,7 @@
     "AR-1783"
   ],
   "id": "AR-1802",
-  "next_action": "Run full asb-cli gate; then commit signed fixture-authority repair and request independent review. Full lifecycle/offline matrix remains to be verified.",
+  "next_action": "Independent review is required for signed head 97f6c271; hosted exact-head CI and full lifecycle/offline matrix remain outstanding.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "observed_dirty": 0,
   "observed_head": "97f6c271db8937e5c84a33d552881b805c361f58",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T02:35:55+00:00",
+  "updated_at": "2026-10-12T02:36:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -81,3 +81,11 @@ remains explicitly unaccepted and blocked until this repair is complete.
 
 - 2026-10-12T02:35:52+00:00: Recorded command exit 0; command argv SHA-256
   220ecd2ea61b9d5de7a1a1d2835d24813776b3f2246b2da2c1171727660acd3a.
+
+- 2026-10-12T02:36:04+00:00: Signed product commit 97f6c271 (SSH signature verified; DCO trailer
+  present) adds explicit credential-free development fixture authority gating plus positive/negative
+  authority and oversized archive tests. Focused authority and fixture-boundary tests pass. Full
+  cargo test -p asb-cli is not green: exact failing test is
+  tool_discovery::tests::path_discovery_is_deterministic_and_bounded; isolated rerun passes,
+  indicating pre-existing parallel ambient PATH/Cargo fixture interference. Full gate output
+  otherwise reached all tests; no waiver applied. Product worktree clean.
