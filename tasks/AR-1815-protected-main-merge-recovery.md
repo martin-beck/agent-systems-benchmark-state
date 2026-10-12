@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T13:59:57+00:00",
   "depends_on": [],
   "id": "AR-1815",
-  "next_action": "Exact merge e57982a is published. Repository quality run 38246184722 failed only on external analyzer download HTTP 504; rerun that failed workflow, then require every exact-main workflow for e57982a terminal-success before receipt.",
+  "next_action": "Exact merge e57982a is published. Repository quality run 38246184722 attempt 2 is queued after attempt 1 external HTTP 504. Require rerun terminal-success and every other exact-main workflow terminal-success before bounded receipt and done release.",
   "observed_branch": "recovery/ar-1815-provenance",
   "observed_dirty": 0,
   "observed_head": "ab4f4c6a81f543e049759d199cca675c7370a1dc",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:00:51+00:00",
+  "updated_at": "2026-10-12T12:01:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -123,3 +123,7 @@ introduce a TLC/model-check dependency for development.
 
 - 2026-10-12T12:00:51+00:00: Recorded command exit 0; command argv SHA-256
   ee0828b2e7ad086de644de4f38823e83462721ce84eb45f16d6c8557ef024050.
+
+- 2026-10-12T12:01:23+00:00: Reran only failed Repository quality workflow 38246184722 through
+  handoffctl; attempt 2 is queued for exact merge e57982a. Archived generated state pycache outside
+  repository to keep doctor/command recording healthy. No product or gate changes.

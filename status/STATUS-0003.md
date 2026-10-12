@@ -1699,7 +1699,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Recover protected-main merge provenance without rewriting the preserved GitHub merge. |
-| Next action | Exact merge e57982a is published. Repository quality run 38246184722 failed only on external analyzer download HTTP 504; rerun that failed workflow, then require every exact-main workflow for e57982a terminal-success before receipt. |
+| Next action | Exact merge e57982a is published. Repository quality run 38246184722 attempt 2 is queued after attempt 1 external HTTP 504. Require rerun terminal-success and every other exact-main workflow terminal-success before bounded receipt and done release. |
 
 ### AR-1816 — Coordinator projection and bytecode hygiene recovery
 
