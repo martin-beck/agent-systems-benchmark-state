@@ -10,7 +10,7 @@
   "id": "AR-1799",
   "next_action": "Add direct authority-bound cancellation, timeout, and concurrent teardown tests exercising attempt_factory and retained attempts; rerun full gates and request another exact-head review.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "1be931771b7db685c9369d8b051c62e0fe25b44a",
   "owner": "ar1799-authority-luna56",
   "plan": "../plans/AR-1799-cli2key-runtime-authority-seam.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:46:52+00:00",
+  "updated_at": "2026-10-12T04:46:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
