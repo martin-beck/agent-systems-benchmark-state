@@ -1,0 +1,6 @@
+AR-1813 exact-main post-merge receipt
+merge=5c843a12e976bc7be6c32e9fc653e566bdf20450
+base=5a6c5477cd171606da3aaa0cae9950453ea8dc5c
+head=7889b3bad4c03d1caca5eaa28ffd53b367ebf445
+Hosted exact-main workflows: 10/10 terminal success.
+TLC/TLA/model-check: not required for development.
