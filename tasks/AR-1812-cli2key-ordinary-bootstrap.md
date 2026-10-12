@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Request fresh independent review for 736b970566d74644ab1dc9c51ff6dd890298c382 and wait for fresh exact-head required CI; merge only after both are green.",
+  "next_action": "Monitor fresh CI at 30-second cadence and obtain independent review for 736b9705; merge only after all required checks and review are green.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "736b970566d74644ab1dc9c51ff6dd890298c382",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T12:07:51+00:00",
+  "updated_at": "2026-10-12T12:08:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -441,3 +441,10 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T12:07:51+00:00: Recorded command exit 0; command argv SHA-256
   bd91a2d0404cc3661ef2b9383b67cfa36e6cca1b715609dc59b3b64dc9a40ae7.
+
+- 2026-10-12T12:08:05+00:00: Fresh exact-head CI started for PR #610 at
+  736b970566d74644ab1dc9c51ff6dd890298c382; initial completed checks (AWQ shadow, headers, protected
+  provenance) are green and remaining required checks are in progress. Reviews are currently empty
+  because the rebase invalidated prior review; fresh review was explicitly requested in PR comment
+  https://github.com/martin-beck/agent-systems-benchmark/pull/610#issuecomment-6123953660. Merge
+  remains blocked.

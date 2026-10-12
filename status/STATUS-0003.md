@@ -1657,7 +1657,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
-| Next action | Request fresh independent review for 736b970566d74644ab1dc9c51ff6dd890298c382 and wait for fresh exact-head required CI; merge only after both are green. |
+| Next action | Monitor fresh CI at 30-second cadence and obtain independent review for 736b9705; merge only after all required checks and review are green. |
 
 ### AR-1813 — Expose cli2key runtime factory contract
 
