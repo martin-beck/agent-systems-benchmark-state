@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:41:20+00:00",
+  "updated_at": "2026-10-12T00:41:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -499,3 +499,6 @@ stdout envelope and silences all human/operational output on both streams.
   missing identities lib.rs lines 345,350,357. Five repeated exit-101 records at 00:38-00:40 had the
   same argv hash; unchanged retries stopped. Repair must update reviewed source/catalog mapping or
   preserve identities; no red revision published.
+
+- 2026-10-12T00:41:51+00:00: Recorded command exit 101; command argv SHA-256
+  c796ff8e50559894245d5101bdfc24131b57c50a224078acbfb2f9d07e3a588c.
