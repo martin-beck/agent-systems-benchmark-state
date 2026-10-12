@@ -229,11 +229,11 @@
       "source": "tests/test_fast_receipts.py"
     },
     "tests/test_handoffctl.py": {
-      "sha256": "a23605c036607f67d0096f0183ac90f0be7b243112ef1a285996c922356b42c9",
+      "sha256": "5b0fc52151aab85cb94ebdbc76eccaf617dbf051404ab19165b0756d33260dea",
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_handoffctl_recovery.py": {
-      "sha256": "253a487cd5e27727b04453b2437b2be416886b13ebedce0a1a8b799a3029498b",
+      "sha256": "60c56e2dfe4d0efd30f88a311c1fafe21efbcdcac1fc383ccf79c1db8d49d71a",
       "source": "tests/test_handoffctl_recovery.py"
     },
     "tests/test_hierarchy.py": {
