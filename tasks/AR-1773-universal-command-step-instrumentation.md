@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T07:04:01+00:00",
+  "updated_at": "2026-10-12T07:04:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -275,3 +275,6 @@ non-TTY compatibility.
   resuming AR-1773. No commit, review, or publication.
 
 - 2026-10-12T07:04:01+00:00: Claimed by ar1773-catalog-repair-luna56.
+
+- 2026-10-12T07:04:36+00:00: Recorded command exit 0; command argv SHA-256
+  1150d9011ed706e433cf3610bdffa0e9035490345efe325dffd1d86ef3c2bce4.
