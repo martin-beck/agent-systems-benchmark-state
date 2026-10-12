@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Rerun diagnostic contract and make test after line-identity-preserving guard; record results.",
+  "next_action": "Repair/reconcile unrelated expired AR-1796 state through coordinator; then continue final make test and checkpoint.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "fd55d357c68e86a9fd5ab751510733ed9f5ec167",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T03:44:16+00:00",
+  "updated_at": "2026-10-12T03:44:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -228,3 +228,10 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T03:44:16+00:00: Recorded command exit 0; command argv SHA-256
   0b174ca90288131e8eeab65004ae1ad46db81a4eef8aa519fb82ffee79798acc.
+
+- 2026-10-12T03:44:43+00:00: Exact coordination boundary: diagnostic_contract focused command passed
+  1/1, but post-reconcile state recording exited 1 with COMMAND_RECORDED_POST_RECONCILE_FAILED;
+  argv_sha256=0b174ca90288131e8eeab65004ae1ad46db81a4eef8aa519fb82ffee79798acc; validation failed:
+  AR-1796: expired claim. Classification: unrelated coordinator-state validation failure, not
+  product qualification. Preserve clean product head and retry only after state validation is
+  repaired.
