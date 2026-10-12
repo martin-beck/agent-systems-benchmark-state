@@ -29,21 +29,21 @@ Generated from local Git and GitHub. Do not edit.
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@83c2c6635789` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.25 |
 | #607 | `feature/ar-1813-cli2key-runtime-factory-contract@7889b3bad4c0` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): expose verified cli2key receipt contract |
-| #608 | `feature/ar-1805-cli-surface-inventory-contract@01631b5bbe14` | `main` | UNKNOWN | - | feat(cli): inventory public command surface |
+| #608 | `feature/ar-1805-cli-surface-inventory-contract@01631b5bbe14` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, QUEUED:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): inventory public command surface |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38238974947 | `01631b5bbe14` | pull_request | Repository quality | in_progress:- |
+| 38238974726 | `01631b5bbe14` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38238974708 | `01631b5bbe14` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38238974682 | `01631b5bbe14` | pull_request | Development formal assurance | in_progress:- |
+| 38238974572 | `01631b5bbe14` | pull_request | Rust verification | in_progress:- |
+| 38238974540 | `01631b5bbe14` | pull_request | Portable protected-main provenance | in_progress:- |
+| 38238974483 | `01631b5bbe14` | pull_request | Fault assurance | queued:- |
+| 38238974413 | `01631b5bbe14` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 38238974410 | `01631b5bbe14` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38238974404 | `01631b5bbe14` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38238974394 | `01631b5bbe14` | pull_request | Huawei MIT source headers | in_progress:- |
 | 38237622686 | `7889b3bad4c0` | pull_request | Emulated aarch64 portability | completed:success |
-| 38237621295 | `7889b3bad4c0` | pull_request | Credential-free benchmark path | completed:success |
-| 38237621274 | `7889b3bad4c0` | pull_request | Repository quality | completed:success |
-| 38237621261 | `7889b3bad4c0` | pull_request | Fault assurance | completed:success |
-| 38237621229 | `7889b3bad4c0` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38237621170 | `7889b3bad4c0` | pull_request | Cross-repository development broker qualification | completed:success |
-| 38237621126 | `7889b3bad4c0` | pull_request | Hosted portability and native qualification | completed:success |
-| 38237621115 | `7889b3bad4c0` | pull_request | Huawei MIT source headers | completed:success |
-| 38237621076 | `7889b3bad4c0` | pull_request | Development formal assurance | completed:success |
-| 38237621068 | `7889b3bad4c0` | pull_request | Rust verification | completed:success |
-| 38237621066 | `7889b3bad4c0` | pull_request | Portable protected-main provenance | completed:success |
-| 38236448775 | `83c2c6635789` | pull_request | Fault assurance | completed:success |
