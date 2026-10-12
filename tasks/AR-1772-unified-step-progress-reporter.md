@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1772-unified-step-progress-reporter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T06:03:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1775"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "f9ad19ff24c69a0bd08d3dc3d9f8b6df09c98a41",
-  "owner": "ar1772-progress-reporter-luna56",
+  "owner": "",
   "plan": "../plans/AR-1772-unified-step-progress-reporter.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1772.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:17:38+00:00",
+  "updated_at": "2026-10-12T02:17:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -160,3 +160,10 @@ allowed outside this helper.
   completed owner for tool discovery, but no open successor owns the ambient Cargo-version fixture
   regression. Do not waive full gate; preserve exact failure in this task and request successor
   coordination.
+
+- 2026-10-12T02:17:43+00:00: Blocked truthfully: focused AR-1772 reporter and diagnostic-contract
+  tests pass, but required full cargo test remains red at
+  tool_discovery::tests::path_discovery_is_deterministic_and_bounded due ambient cargo version probe
+  (expected version_probe_unavailable/null, observed cargo 1.0). Existing AR-1762 is completed
+  owner; no dedicated successor currently owns this fixture-isolation repair. Do not waive or accept
+  AR-1772 until full exact-head gate is green.
