@@ -242,10 +242,10 @@
 | [AR-1808](../tasks/AR-1808-universal-list-selection-contract.md) | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md) | [AR-1809](../tasks/AR-1809-cli-ux-qualification.md) |
 | [AR-1809](../tasks/AR-1809-cli-ux-qualification.md) | [AR-1806](../tasks/AR-1806-human-output-contract-audit.md), [AR-1807](../tasks/AR-1807-complete-help-contract.md), [AR-1808](../tasks/AR-1808-universal-list-selection-contract.md) | None |
 | [AR-1810](../tasks/AR-1810-cli2key-standard-cli-integration.md) | [AR-1729](../tasks/AR-1729-cli2key-sidecar-lifecycle.md), [AR-1731](../tasks/AR-1731-cli2key-codex-adapter.md), [AR-1732](../tasks/AR-1732-cli2key-run-sweep.md), [AR-1733](../tasks/AR-1733-cli2key-qualification.md), [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md), [AR-1797](../tasks/AR-1797-cli2key-live-runtime-wiring.md), [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md), [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md) | None |
-| [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md) | None | [AR-1814](../tasks/AR-1814-remove-tlc-development-rule.md) |
+| [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md) | None | None |
 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md) | [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md), [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md), [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md) | [AR-1810](../tasks/AR-1810-cli2key-standard-cli-integration.md) |
 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md) | [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md), [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md) | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md) |
-| [AR-1814](../tasks/AR-1814-remove-tlc-development-rule.md) | [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md) | None |
+| [AR-1814](../tasks/AR-1814-remove-tlc-development-rule.md) | None | None |
 
 ## Complete AR inventory
 
