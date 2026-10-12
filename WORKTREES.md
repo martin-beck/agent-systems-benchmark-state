@@ -64,7 +64,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation` | `feature/ar-1801-tool-discovery-cargo-fixture-isolation` | `c20bb7bb4448` | 0 | behind 2, ahead 1 |
 | `agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority` | `feature/ar-1802-controlled-workload-matrix-and-fixture-authority` | `97f6c271db89` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair` | `feature/ar-1803-deterministic-parallel-fixture-repair` | `56db629d58b7` | 0 | behind 0, ahead 1 |
-| `agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore` | `feature/ar-1804-cross-module-fixture-semaphore` | `a8507d19e199` | 0 | behind 0, ahead 2 |
+| `agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore` | `feature/ar-1804-cross-module-fixture-semaphore` | `a8507d19e199` | 2 | behind 0, ahead 2 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/test_fixture_semaphore.rs` |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 720, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 720, ahead 323 |
