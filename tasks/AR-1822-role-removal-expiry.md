@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Expired role assignment cleanup semantics",
-  "updated_at": "2026-10-12T14:36:36+00:00",
+  "updated_at": "2026-10-12T14:36:43+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1822-role-removal-expiry"
 }
 ---
@@ -54,3 +54,6 @@ transactional command.
   pass; full suite bounded interruption recorded.
 
 - 2026-10-12T14:36:36+00:00: Claimed by ar1817_schema_contract.
+
+- 2026-10-12T14:36:43+00:00: Recorded command exit 0; command argv SHA-256
+  10c8908c963e4882e990fd7b72ec3524b2da85691ba7014aa4a3e9c8e785e27b.
