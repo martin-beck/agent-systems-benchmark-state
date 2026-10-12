@@ -38,8 +38,8 @@ Generated from local Git and GitHub. Do not edit.
 | 38210171548 | `4b14797a0892` | push | Hosted portability and native qualification | completed:success |
 | 38210171522 | `4b14797a0892` | push | Credential-free benchmark path | completed:success |
 | 38210171511 | `4b14797a0892` | push | Formal assurance | in_progress:- |
-| 38210171502 | `4b14797a0892` | push | Cross-repository development broker qualification | in_progress:- |
-| 38210171485 | `4b14797a0892` | push | Fault assurance | in_progress:- |
+| 38210171502 | `4b14797a0892` | push | Cross-repository development broker qualification | completed:success |
+| 38210171485 | `4b14797a0892` | push | Fault assurance | completed:success |
 | 38210171442 | `4b14797a0892` | push | Rust verification | in_progress:- |
 | 38210171401 | `4b14797a0892` | push | Repository quality | completed:failure |
 | 38210171391 | `4b14797a0892` | push | Emulated aarch64 portability | in_progress:- |
