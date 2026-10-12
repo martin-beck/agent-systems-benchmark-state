@@ -1667,11 +1667,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1810-cli2key-luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. |
@@ -2565,7 +2565,7 @@ flowchart LR
         AR_1810["AR-1810 - Blocked"]:::status_blocked
         AR_1811["AR-1811 - Done"]:::status_done
         AR_1812["AR-1812 - Blocked"]:::status_blocked
-        AR_1813["AR-1813 - In progress"]:::status_in_progress
+        AR_1813["AR-1813 - Done"]:::status_done
         AR_1814["AR-1814 - Done"]:::status_done
     end
     AR_0001 --> AR_0002

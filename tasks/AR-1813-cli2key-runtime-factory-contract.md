@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T13:03:22+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1779",
     "AR-1799"
@@ -156,7 +156,7 @@
       "decision"
     ]
   },
-  "owner": "ar1810-cli2key-luna56",
+  "owner": "",
   "plan": "../plans/AR-1813-cli2key-runtime-factory-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -170,11 +170,11 @@
   },
   "spec_ref": "specs/AR-1813.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T11:05:31+00:00",
+  "updated_at": "2026-10-12T11:05:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -273,3 +273,7 @@ fabricate authority in the CLI or introduce a provider fallback.
 - 2026-10-12T11:05:31+00:00: Protected exact-base merge 5c843a12 and 10/10 exact-main
   terminal-success workflows verified; signed merge/DCO/tree/parents confirmed; no TLC required for
   development.
+
+- 2026-10-12T11:05:35+00:00: AR-1813 complete: PR #607 exact-base signed merge 5c843a12, exact-head
+  checks green, 10/10 exact-main post-merge workflows terminal success, durable receipt
+  quality/AR-1813-postmerge-receipt.txt.
