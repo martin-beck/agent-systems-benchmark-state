@@ -1532,7 +1532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
-| Next action | Update provenance digest to observed d303289d..., rerun make test once, then rerun default-parallel and checkpoint. |
+| Next action | Independent exact-head review of ed7b3105; publish PR only after review acceptance. |
 
 ### AR-1804 — Cross-module fixture semaphore
 
