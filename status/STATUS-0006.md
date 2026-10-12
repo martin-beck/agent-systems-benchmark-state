@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P0 | [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md): AR-1392 protected-main topology repair | Unclaimed | Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation. | Reconcile and doctor state after seven green exact-main workflows; topology repair complete. |
 | P0 | [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md): Control-to-runtime certificate-chain binding | Unclaimed | Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch. | Reconcile and doctor live state, then release AR-1471 done with merge and seven exact-main workflow evidence. |
 | P0 | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Unclaimed | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Run reconcile and doctor --live, then release AR-1472 done with merge and seven-workflow evidence. |
 | P0 | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md): Runtime-owned authenticated enrollment source | Unclaimed | Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep. | Reconcile/doctor live state, then release AR-1473 done. |

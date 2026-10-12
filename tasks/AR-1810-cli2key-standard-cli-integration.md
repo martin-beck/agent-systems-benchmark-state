@@ -3,7 +3,15 @@
   "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1729", "AR-1731", "AR-1732", "AR-1733", "AR-1779", "AR-1797", "AR-1799"],
+  "depends_on": [
+    "AR-1729",
+    "AR-1731",
+    "AR-1732",
+    "AR-1733",
+    "AR-1779",
+    "AR-1797",
+    "AR-1799"
+  ],
   "id": "AR-1810",
   "next_action": "Replace the ordinary CLI's cli2key rejection with runtime-owned bootstrap and prove real run and sweep execution.",
   "observed_branch": "",
@@ -13,14 +21,21 @@
   "plan": "../plans/AR-1810-cli2key-standard-cli-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class":"environmental","evidence_digest":"","evidence_ref":"","spec_ref":"specs/AR-1810.json","spec_revision":1,"status":"pending"},
+  "spec_acceptance": {
+    "evidence_class": "environmental",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1810.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1810.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Complete cli2key Standard CLI Integration",
-  "updated_at": "2026-10-12T10:30:00+00:00",
+  "updated_at": "2026-10-12T10:01:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1810-cli2key-standard-cli"
 }
 ---
@@ -49,3 +64,6 @@ dispatch.
 - Run one opt-in live development workload with a manually logged-in bridge and
   retain only redacted outcome/provenance evidence. No external authorization
   policy or production-release requirement may block this development test.
+
+- 2026-10-12T10:01:07+00:00: dependencies AR-1729, AR-1731, AR-1732, AR-1733, AR-1779, AR-1797 and
+  AR-1799 verified done; claim for runtime-owned standard cli2key integration
