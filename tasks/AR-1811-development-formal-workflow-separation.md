@@ -8,16 +8,16 @@
   "next_action": "Monitor PR #606 exact head da764cf7 until all required non-TLC checks are green; then independent review, merge, exact-main post-merge verification, and durable closure.",
   "observed_branch": "feature/ar-1811-development-formal-workflow-separation",
   "observed_dirty": 0,
-  "observed_head": "da764cf74d70783eff73d6f0055a1ac3a0dfa221",
+  "observed_head": "d9972679899cf18c1c9ab87e694ad639a2c18786",
   "owner": "coordinator-ar1811-merge",
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:02:39+00:00",
+  "updated_at": "2026-10-12T10:02:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
