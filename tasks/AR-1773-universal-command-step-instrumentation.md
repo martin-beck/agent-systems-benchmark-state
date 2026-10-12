@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T08:33:09+00:00",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 4,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
-  "owner": "",
+  "owner": "ar1772-progress-reporter-luna56",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:31:28+00:00",
+  "updated_at": "2026-10-12T06:33:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -207,3 +207,5 @@ non-TTY compatibility.
   AR-1793 line-addressed legacy diagnostic catalog. Exact failure is human diagnostic output-parent
   fallback to unclassified cause; AR-1793 itself is done at merge 24f1872c and requires a successor
   catalog repair. No gate waiver, commit, review, or publication performed.
+
+- 2026-10-12T06:33:09+00:00: Claimed by ar1772-progress-reporter-luna56.
