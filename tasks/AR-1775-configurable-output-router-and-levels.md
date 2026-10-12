@@ -7,7 +7,7 @@
     "AR-1771"
   ],
   "id": "AR-1775",
-  "next_action": "Monitor PR #597 exact head 9bb7d3f205c569fd309e4b2014f33049f00f7b5c; all local repair gates green (fmt, clippy -D warnings, diagnostic completeness, human regression, workflow provenance, prior 429/429 lib suite). Hosted provenance/headers/AWQ/retained faults green; await remaining checks and independent exact-head review before merge.",
+  "next_action": "Await independent exact-head review for PR #597 head 9bb7d3f205c569fd309e4b2014f33049f00f7b5c; all hosted checks terminal SUCCESS; merge only after distinct reviewer approval, then verify exact main and accept/release.",
   "observed_branch": "feature/ar-1775-configurable-output-router-and-levels",
   "observed_dirty": 0,
   "observed_head": "d7c08c106e52ed9aa144f24ffe130b40dd6c3da7",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 299,
+  "task_revision": 300,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T01:22:18+00:00",
+  "updated_at": "2026-10-12T01:22:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -931,3 +931,10 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T01:22:18+00:00: Recorded command exit 1; command argv SHA-256
   94131adbedc50e9f207d635e8c36650d1f468c5833e1776dcb752a8c500c2afc.
+
+- 2026-10-12T01:22:25+00:00: Diagnosis of recorded exit 1 at 01:20:53: gh pr diff 597 --stat was
+  attempted, but installed gh does not support --stat for gh pr diff and returned usage with exit 1.
+  No files, branch, PR, CI, or coordination state were mutated by that command; it does not affect
+  review/merge. All PR #597 hosted checks are now terminal SUCCESS at exact head 9bb7d3f2.
+  Independent review remains outstanding because PR author martin-beck cannot supply an independent
+  approval. AR-1783/PR #596 is explicitly out of scope for this worker.
