@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "AR-1783 merged at 5201a036; post-merge policy and portable provenance rejected GitHub merge committer, requiring supported local-integration forward repair before acceptance",
-  "task_revision": 175,
+  "task_revision": 176,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:06:26+00:00",
+  "updated_at": "2026-10-12T01:06:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -557,3 +557,6 @@ the suite from this end-to-end path.
   integration identity. Portable job 114621305936 step 3 used
   PUSH_BASE=0a2039c448d4ab0ed3c9065c35cf90a77b94db6a and EVENT_HEAD=5201a036. Historical merge is
   preserved; do not accept/release until a local integration forward repair is green.
+
+- 2026-10-12T01:06:30+00:00: Recorded command exit 0; command argv SHA-256
+  24235539c147b40dccb7fd28bde957e6c1294be08d3c5c70b226609c33cc6226.
