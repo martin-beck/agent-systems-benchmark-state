@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Remove stale TLC development ruleset requirement",
-  "updated_at": "2026-10-12T10:23:34+00:00",
+  "updated_at": "2026-10-12T10:23:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1814-ruleset-repair"
 }
 ---
@@ -46,3 +46,6 @@ the remaining required checks.
 
 - 2026-10-12T10:23:34+00:00: Bound worktree agent-systems-benchmark-ar-1814-ruleset-repair on branch
   feature/ar-1814-ruleset-repair.
+
+- 2026-10-12T10:23:40+00:00: Recorded command exit 1; command argv SHA-256
+  45c6a9f1981fd6ca38e433afc60e02928e1a0228eee1829a213d8d2aa208d88f.
