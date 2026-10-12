@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T02:33:24+00:00",
+  "updated_at": "2026-10-12T02:34:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -54,3 +54,6 @@ as the affected successor linkage and evidence source.
   9c27476ea72ce23cd8aecc4dfced4b7037d62609e1aaed37258c962e2cdf04f3.
 
 - 2026-10-12T02:33:24+00:00: Heartbeat by ar1803_parallel_fixture_luna56.
+
+- 2026-10-12T02:34:05+00:00: Recorded command exit 0; command argv SHA-256
+  3f6c68e6b29f4874fbbe9afc28573f38595b8936776f7528b9516ccb39e673bb.
