@@ -13,7 +13,7 @@
     "AR-1799"
   ],
   "id": "AR-1810",
-  "next_action": "Implement ordinary asb run/sweep cli2key bootstrap in the bound product worktree; run focused and full non-TLC gates, then independent review and exact-head merge evidence.",
+  "next_action": "Implement the missing ordinary executable cli2key bootstrap; existing runtime-control and asb-cli library gates pass on the bound clean worktree. Then add command-level fake coverage, review and merge.",
   "observed_branch": "feature/ar-1810-cli2key-standard-cli",
   "observed_dirty": 0,
   "observed_head": "07c590e712df11e555228abf1b9de4add3510d4f",
@@ -33,9 +33,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Complete cli2key Standard CLI Integration",
-  "updated_at": "2026-10-12T10:06:12+00:00",
+  "updated_at": "2026-10-12T10:08:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1810-cli2key-standard-cli"
 }
 ---
@@ -95,3 +95,7 @@ dispatch.
 - 2026-10-12T10:05:47+00:00: Coordinator metadata repair completed: malformed prefilled worktree key
   was cleared and rebound with feature/ar-1810-cli2key-standard-cli to the isolated product
   worktree. Product implementation may proceed.
+
+- 2026-10-12T10:08:16+00:00: Reconciled generated state and live doctor successfully after archiving
+  oversized generated pycache. Non-TLC gates: focused runtime-control 3/3 passed; full asb-cli
+  library suite 437/437 passed offline. No TLC run.
