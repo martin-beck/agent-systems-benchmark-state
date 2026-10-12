@@ -36,10 +36,10 @@ Generated from local Git and GitHub. Do not edit.
 | 38215438082 | `1494e4741968` | push | Hosted portability and native qualification | in_progress:- |
 | 38215438058 | `1494e4741968` | push | Formal assurance | in_progress:- |
 | 38215438037 | `1494e4741968` | push | Cross-repository development broker qualification | in_progress:- |
-| 38215438020 | `1494e4741968` | push | Huawei MIT source headers | in_progress:- |
+| 38215438020 | `1494e4741968` | push | Huawei MIT source headers | completed:success |
 | 38215438013 | `1494e4741968` | push | Credential-free benchmark path | in_progress:- |
 | 38215438011 | `1494e4741968` | push | Rust verification | in_progress:- |
-| 38215438004 | `1494e4741968` | push | Portable protected-main provenance | in_progress:- |
+| 38215438004 | `1494e4741968` | push | Portable protected-main provenance | completed:failure |
 | 38215437999 | `1494e4741968` | push | Fault assurance | in_progress:- |
 | 38215437990 | `1494e4741968` | push | Repository quality | in_progress:- |
 | 38215437971 | `1494e4741968` | push | Emulated aarch64 portability | in_progress:- |
