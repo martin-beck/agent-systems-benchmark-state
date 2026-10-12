@@ -9,7 +9,7 @@
       "source": "docs/PUBLIC_CONTRACTS.md"
     },
     "docs/agent-workflow-coordinator.md": {
-      "sha256": "f5432fdcd73f9beb82a9f8b8fc2b0527a307562bd138033c0425e430d7b8306c",
+      "sha256": "df7599827c53d939b28660df4e570738b10fb44d5da2de6a0d7dfa1080fa00da",
       "source": "docs/PROJECT_GUIDE.md"
     },
     "examples/roles/role-registry.json": {
