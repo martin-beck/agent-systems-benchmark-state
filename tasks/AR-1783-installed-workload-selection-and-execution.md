@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair PR #596 exact head 506de984 has all hosted required checks green; independent review remains required before local integration",
-  "task_revision": 220,
+  "task_revision": 221,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:30:32+00:00",
+  "updated_at": "2026-10-12T01:30:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -689,3 +689,6 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:30:32+00:00: Recorded command exit 0; command argv SHA-256
   56acd7514594a327da0c6d86bd75ea9bda08106ad88398e1014f1773de4abfcf.
+
+- 2026-10-12T01:30:33+00:00: Recorded command exit 0; command argv SHA-256
+  43eff77a126de093d58e18b90140115a58011d0c551685a25fce1dccce0ce392.
