@@ -1,5 +1,11 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1540](../tasks/AR-1540.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
+| [AR-1541](../tasks/AR-1541.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
+| [AR-1542](../tasks/AR-1542.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md), [AR-1549](../tasks/AR-1549.md) | [AR-1535](../tasks/AR-1535.md) |
+| [AR-1543](../tasks/AR-1543.md) | [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md), [AR-1549](../tasks/AR-1549.md) | [AR-1536](../tasks/AR-1536.md) |
+| [AR-1544](../tasks/AR-1544.md) | [AR-1530](../tasks/AR-1530.md) | None |
+| [AR-1545](../tasks/AR-1545.md) | [AR-1535](../tasks/AR-1535.md) | [AR-1522](../tasks/AR-1522.md) |
 | [AR-1546](../tasks/AR-1546.md) | [AR-1531](../tasks/AR-1531.md), [AR-1536](../tasks/AR-1536.md) | [AR-1522](../tasks/AR-1522.md) |
 | [AR-1547](../tasks/AR-1547.md) | None | [AR-1548](../tasks/AR-1548.md), [AR-1549](../tasks/AR-1549.md) |
 | [AR-1548](../tasks/AR-1548.md) | [AR-1547](../tasks/AR-1547.md) | None |
@@ -246,6 +252,7 @@
 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md) | [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md), [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md), [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md) | [AR-1810](../tasks/AR-1810-cli2key-standard-cli-integration.md) |
 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md) | [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md), [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md) | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md) |
 | [AR-1814](../tasks/AR-1814-remove-tlc-development-rule.md) | None | None |
+| [AR-1815](../tasks/AR-1815-protected-main-merge-recovery.md) | None | None |
 
 ## Complete AR inventory
 
@@ -255,6 +262,12 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | ar1805_postmerge_repair | Independent exact-head review accepted PR #608 at 0fec6465. | Create and claim a narrowly scoped forward-only provenance-recovery successor for PR #608; use tools/integration/merge_pr.py from clean exact base 5c843a12 and reviewed topic 0fec6465, publish signed local merge, then watch all exact-main gates. |
 | P0 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | ar1812-repair-luna56 | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Refresh exact lib.rs producer identities in diagnostic_legacy_catalog_compact.rs, add reviewed entries for new cli2key mapper producers, then rerun focused and full offline gates. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1815](../tasks/AR-1815-protected-main-merge-recovery.md): Protected-main signed merge recovery | Unclaimed | Recover protected-main merge provenance without rewriting the preserved GitHub merge. | Claim a dedicated recovery worktree; use tools/integration/merge_pr.py to create a forward-only signed DCO recovery for preserved merge 15c80511, then review, publish, merge, and verify exact-main gates. |
 
 ### Blocked (85)
 
@@ -608,7 +621,3 @@
 | P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Unclaimed | Keep local replay authority acquisition inside the runtime boundary. | Release-ready: PR #328 head 2832912 passed exact-head checks and independent review; merge 452f3ca was repaired by AR-1454 merge a0bd63d3 with all seven post-merge workflows green. |
 | P0 | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md): Central orchestration authority contract and ASB redesign | Unclaimed | Freeze one runtime-owned orchestration authority for every ASB run and attempt. | PR #329 merged as 071167d. Monitor seven exact-main post-merge workflows 36170798957, 36170798948, 36170798971, 36170798901, 36170798918, 36170798954, 36170798887 to terminal success; then release AR-1451 and promote AR-1452. |
 | P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Unclaimed | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 merged at exact main a5eb7e6; wait for all seven post-merge workflows, then run exact-main verification and release AR-1452 done before promoting AR-1453. |
-| P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Unclaimed | Make CLI and control use the central service for every run lifecycle. | Release AR-1453 complete after all seven exact-main post-merge workflows passed. |
-| P0 | [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md): Protected-main tree-equality repair for runtime replay | Unclaimed | Repair the protected-main tree mismatch after the runtime replay merge. | Post-merge verification complete: all seven workflows succeeded; release AR-1454 and propagate repair evidence to AR-1450. |
-| P0 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | Unclaimed | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Run state reconcile and live doctor, then release AR-1455 done with exact post-merge workflow evidence. |
-| P0 | [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md): First-customer requalification after central orchestration | Unclaimed | Requalify the first-customer production-like journey after central orchestration became authoritative. | Release done: exact protected-main requalification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. |
