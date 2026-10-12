@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Installed tool and workload execution qualification",
-  "updated_at": "2026-10-12T02:10:14+00:00",
+  "updated_at": "2026-10-12T02:10:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1780-installed-tool-workload-execution-qualification"
 }
 ---
@@ -67,3 +67,6 @@ hosted qualification absence is not a blocker for this development evidence.
   df20f88ac79aa7d7ff50d4907276129073f71abdbef6b040ce20b910da05a70b.
 
 - 2026-10-12T02:10:14+00:00: Heartbeat by ar1780_workload_qualification_luna56.
+
+- 2026-10-12T02:10:22+00:00: Recorded command exit 128; command argv SHA-256
+  32f2329f17ebfe2e32ec6439a8a438277cb4161fd6f1bdfc3b98e2bac6aa7c84.
