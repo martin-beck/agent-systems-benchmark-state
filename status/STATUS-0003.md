@@ -1112,7 +1112,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
-| Next action | Wait for unrelated AR-1796 full formal run to finish and its generated .tlc-runs cleanup; then rerun focused workflow_transcript and full workspace gates through handoffctl. Do not commit until all gates are green. |
+| Next action | Focused workflow_transcript passed 3/3, but handoffctl post-reconcile is blocked by unrelated state validation: AR-1809 has unknown evidence class integration-test and active AR-1796 retry has oversized TLC files. Wait for coordinator state repair/AR-1796 cleanup; then rerun non-formal gates through handoffctl. Do not run TLC or formal gates. |
 
 ### AR-1774 — Status and progress completeness CI
 

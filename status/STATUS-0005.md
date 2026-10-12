@@ -215,7 +215,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1773-catalog-repair-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Wait for unrelated AR-1796 full formal run to finish and its generated .tlc-runs cleanup; then rerun focused workflow_transcript and full workspace gates through handoffctl. Do not commit until all gates are green. |
+| P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1773-catalog-repair-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Focused workflow_transcript passed 3/3, but handoffctl post-reconcile is blocked by unrelated state validation: AR-1809 has unknown evidence class integration-test and active AR-1796 retry has oversized TLC files. Wait for coordinator state repair/AR-1796 cleanup; then rerun non-formal gates through handoffctl. Do not run TLC or formal gates. |
 
 ### Blocked (86)
 

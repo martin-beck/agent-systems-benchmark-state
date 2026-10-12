@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Wait for unrelated AR-1796 full formal run to finish and its generated .tlc-runs cleanup; then rerun focused workflow_transcript and full workspace gates through handoffctl. Do not commit until all gates are green.",
+  "next_action": "Focused workflow_transcript passed 3/3, but handoffctl post-reconcile is blocked by unrelated state validation: AR-1809 has unknown evidence class integration-test and active AR-1796 retry has oversized TLC files. Wait for coordinator state repair/AR-1796 cleanup; then rerun non-formal gates through handoffctl. Do not run TLC or formal gates.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 7,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T09:28:10+00:00",
+  "updated_at": "2026-10-12T09:28:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -365,3 +365,9 @@ non-TTY compatibility.
 
 - 2026-10-12T09:28:10+00:00: Recorded command exit 0; command argv SHA-256
   65b187fffb8d15b430c4a6abb6c9b57647249f140e8ef8f05b2c79466df6e418.
+
+- 2026-10-12T09:28:37+00:00: Replacement worker reclaimed expired ownerless claim. Focused
+  workflow_transcript command exited 0 with 3 passed, including exact provenance and privacy checks.
+  State wrapper returned COMMAND_RECORDED_POST_RECONCILE_FAILED solely due unrelated AR-1809 unknown
+  evidence class and active AR-1796 generated TLC files; no product failure and no formal execution
+  performed.
