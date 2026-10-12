@@ -98,7 +98,7 @@ def _semantic_errors(
     registry: dict[str, Any],
     now: dt.datetime | None,
     *,
-    check_expiry: bool,
+    check_expiry: bool = True,
 ) -> list[str]:
     roles = registry.get("roles")
     if not isinstance(roles, list):
