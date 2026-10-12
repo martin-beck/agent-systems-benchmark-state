@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T13:20:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1773"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "0fec6465dbb1934904fef8d9f79dd1c565c661fc",
-  "owner": "ar1805_postmerge_repair",
+  "owner": "",
   "plan": "../plans/AR-1805-cli-surface-inventory-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1805.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Independent exact-head review accepted PR #608 at 0fec6465.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T12:51:06+00:00",
+  "updated_at": "2026-10-12T12:51:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -305,3 +305,10 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   merged as preserved tree 15c80511; AR-1815 forward-only signed recovery e57982a restored
   exact-main provenance and all required post-merge gates. Receipt is the durable evidence for the
   completed contract result.
+
+- 2026-10-12T12:51:12+00:00: AR-1805 complete. Route inventory and contract tests were accepted on
+  exact reviewed head 0fec6465, PR #608 preserved the reviewed tree as 15c80511, and AR-1815
+  recovered protected-main provenance forward-only as signed merge e57982a. All PR and exact-main
+  required workflows are terminal-success; see
+  quality/AR-1815-protected-main-recovery-postmerge-receipt.txt. No TLC or live-provider gate was
+  required.

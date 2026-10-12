@@ -266,12 +266,11 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1774](../tasks/AR-1774-status-progress-completeness-ci.md): Status and progress completeness CI | ar1774-status-ci-luna56 | Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode. | Add required CI enforcement and controlled-defect tests for quiet, status, and progress completeness after universal instrumentation lands. |
-| P0 | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | ar1805_postmerge_repair | Independent exact-head review accepted PR #608 at 0fec6465. | Create and claim a narrowly scoped forward-only provenance-recovery successor for PR #608; use tools/integration/merge_pr.py from clean exact base 5c843a12 and reviewed topic 0fec6465, publish signed local merge, then watch all exact-main gates. |
 | P0 | [AR-1816](../tasks/AR-1816-state-projection-and-bytecode-hygiene.md): Coordinator projection and bytecode hygiene recovery | ar1816_projection_hygiene | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. | PR #121 at 104abc99ad is published; obtain independent exact-head review and required state CI, then merge and run configured reconcile/snapshot/doctor receipt. |
 
 ### Blocked (85)
@@ -459,7 +458,7 @@
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | User-requested stop recorded. Preserve interrupted exact-candidate retry artifacts and terminal uncertainty; do not accept or release. Reclaim only after explicit continuation and rerun a fresh bounded exact full-exhaustive attempt with PYTHONDONTWRITEBYTECODE=1. |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (605)
+### Done (606)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -624,3 +623,4 @@
 | P0 | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Unclaimed | Materialize runtime-owned strict replay authority for normal CLI replay. | Done: signed PR #326 merged as f03d9e484d6ca73eacdbd5476980bf33ca737540; all seven exact-main post-merge workflows and local runtime/CLI verification passed. |
 | P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Unclaimed | Keep local replay authority acquisition inside the runtime boundary. | Release-ready: PR #328 head 2832912 passed exact-head checks and independent review; merge 452f3ca was repaired by AR-1454 merge a0bd63d3 with all seven post-merge workflows green. |
 | P0 | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md): Central orchestration authority contract and ASB redesign | Unclaimed | Freeze one runtime-owned orchestration authority for every ASB run and attempt. | PR #329 merged as 071167d. Monitor seven exact-main post-merge workflows 36170798957, 36170798948, 36170798971, 36170798901, 36170798918, 36170798954, 36170798887 to terminal success; then release AR-1451 and promote AR-1452. |
+| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Unclaimed | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 merged at exact main a5eb7e6; wait for all seven post-merge workflows, then run exact-main verification and release AR-1452 done before promoting AR-1453. |
