@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "feature/ar-1814-ruleset-repair",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-12T12:23:00+00:00",
   "depends_on": [],
@@ -25,10 +25,10 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Remove stale TLC development ruleset requirement",
-  "updated_at": "2026-10-12T10:23:00+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-10-12T10:23:34+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1814-ruleset-repair"
 }
 ---
 
@@ -43,3 +43,6 @@ the remaining required checks.
   formal assurance.
 
 - 2026-10-12T10:23:00+00:00: Claimed by ar1773-catalog-repair-luna56.
+
+- 2026-10-12T10:23:34+00:00: Bound worktree agent-systems-benchmark-ar-1814-ruleset-repair on branch
+  feature/ar-1814-ruleset-repair.
