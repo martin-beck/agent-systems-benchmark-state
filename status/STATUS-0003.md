@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Checkpoint exact signed head 4cda972c, request independent review of archive restoration/bounded semaphore hostile matrix, then hosted PR/CI only after review. |
+| Next action | Independent review accepted exact head 4cda972c; proceed with hosted PR/exact-head CI only. Do not claim merge or release until hosted checks and post-merge evidence pass. |
 
 
 ## Dependency graph
