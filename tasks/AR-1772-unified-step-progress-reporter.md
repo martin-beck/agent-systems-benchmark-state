@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Header-policy repair pushed as signed head 65ee830e; local gates green; PR #602 rerun in progress.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T05:47:36+00:00",
+  "updated_at": "2026-10-12T05:47:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -391,3 +391,6 @@ allowed outside this helper.
   policy step at 05:44:46Z and is currently progressing through canonical contract consistency; no
   new failure. Exact Huawei, platform, provenance, fault, Kani, Loom, fuzz, matcher, AWQ, and
   credential-free checks are passing.
+
+- 2026-10-12T05:47:41+00:00: Recorded command exit 8; command argv SHA-256
+  b55a34acd4a89484f7ce0de3d8d8473768713ef43fd8464bcf66199368a3b66f.
