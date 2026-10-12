@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T13:13:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1773"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "0fec6465dbb1934904fef8d9f79dd1c565c661fc",
-  "owner": "asb-queue-next-luna56",
+  "owner": "",
   "plan": "../plans/AR-1805-cli-surface-inventory-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1805.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Independent exact-head review accepted PR #608 at 0fec6465.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:24:09+00:00",
+  "updated_at": "2026-10-12T11:25:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -285,3 +285,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   provenance) failed with identical policy error: protected-main merge committer is not the local
   integration identity. This is a coordinator/release-identity gate failure, not a product test
   failure; no gate weakened and no force action taken.
+
+- 2026-10-12T11:25:17+00:00: Released completed merge worker lease; post-merge provenance-policy
+  repair remains open.

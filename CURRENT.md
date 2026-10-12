@@ -7,8 +7,13 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1805](tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Independent exact-head review accepted PR #608 at 0fec6465. | PR #608 merged as 15c80511, but exact-main post-merge Policy/coverage and Portable protected-main provenance failed because GitHub merge committer is not local integration identity. Preserve merge; create narrowly scoped coordinator repair for merge-identity/provenance contract, then rerun exact-main gates. Other post-merge workflows remain in progress. | asb-queue-next-luna56 |
 | P0 | [AR-1812](tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | AR-1813 is done and branch rebased onto current main 5c843a12. Implement ordinary run/sweep resolver using runtime Cli2KeyRuntimeAuthority::bootstrap_from_receipt_bytes and verified installer receipt; add local/mock positive/negative lifecycle tests, then PR/review/merge. | ar1812-replacement-luna56 |
+
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1805](tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Independent exact-head review accepted PR #608 at 0fec6465. | PR #608 merged as 15c80511, but exact-main post-merge Policy/coverage and Portable protected-main provenance failed because GitHub merge committer is not local integration identity. Preserve merge; create narrowly scoped coordinator repair for merge-identity/provenance contract, then rerun exact-main gates. Other post-merge workflows remain in progress. | - |
 
 ## Blocked
 
