@@ -12,11 +12,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1817.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Align task schema with oracle gate contract",
-  "updated_at": "2026-10-12T13:20:00+00:00",
+  "updated_at": "2026-10-12T13:14:34+00:00",
   "worktree_key": ""
 }
 ---
@@ -31,3 +31,6 @@ regression tests. Preserve strict rejection of unknown task and gate fields;
 do not make the schema permissive or alter AR-1816 implementation state.
 
 - 2026-10-12T13:20:00+00:00: Strict validation reproduced two failures: AR-1811 and AR-1813 reject the supported oracle_gate field; task-record schema and lifecycle validator establish the intended contract.
+
+- 2026-10-12T13:14:34+00:00: dependencies verified; strict oracle_gate schema repair is independent
+  and blocks coordination CI
