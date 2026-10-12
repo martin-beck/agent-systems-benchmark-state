@@ -32,21 +32,21 @@ Generated from local Git and GitHub. Do not edit.
 | #588 | `feature/ar-1775-configurable-output-router-and-levels@d7c08c106e52` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): configurable output router levels |
 | #589 | `feature/ar-1775-configurable-output-router-and-levels-v2@c6cddcaf76cb` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): configurable output router and levels |
 | #590 | `feature/ar-1775-configurable-output-router-and-levels-v3@c52dd2b2a1a7` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): configurable output router and levels |
-| #591 | `feature/ar-1775-configurable-output-router-and-levels-v4@34202df137dc` | `main` | UNKNOWN | QUEUED: | feat(cli): configurable output router and levels |
+| #591 | `feature/ar-1775-configurable-output-router-and-levels-v4@34202df137dc` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): configurable output router and levels |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38188367271 | `34202df137dc` | pull_request | Fault assurance | in_progress:- |
+| 38188367259 | `34202df137dc` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38188367250 | `34202df137dc` | pull_request | Rust verification | in_progress:- |
+| 38188367245 | `34202df137dc` | pull_request | Portable protected-main provenance | completed:success |
+| 38188367237 | `34202df137dc` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38188367231 | `34202df137dc` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38188367230 | `34202df137dc` | pull_request | Huawei MIT source headers | completed:success |
+| 38188367228 | `34202df137dc` | pull_request | Repository quality | in_progress:- |
+| 38188367226 | `34202df137dc` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38188367223 | `34202df137dc` | pull_request | Formal assurance | in_progress:- |
+| 38188367203 | `34202df137dc` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38187795786 | `c52dd2b2a1a7` | pull_request | Hosted portability and native qualification | completed:success |
-| 38187795746 | `c52dd2b2a1a7` | pull_request | Rust verification | completed:failure |
-| 38187795743 | `c52dd2b2a1a7` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38187795739 | `c52dd2b2a1a7` | pull_request | Repository quality | completed:failure |
-| 38187795737 | `c52dd2b2a1a7` | pull_request | Fault assurance | completed:success |
-| 38187795735 | `c52dd2b2a1a7` | pull_request | Cross-repository development broker qualification | completed:success |
-| 38187795734 | `c52dd2b2a1a7` | pull_request | Credential-free benchmark path | completed:success |
-| 38187795732 | `c52dd2b2a1a7` | pull_request | Huawei MIT source headers | completed:success |
-| 38187795731 | `c52dd2b2a1a7` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 38187795727 | `c52dd2b2a1a7` | pull_request | Formal assurance | completed:success |
-| 38187795716 | `c52dd2b2a1a7` | pull_request | Portable protected-main provenance | completed:success |
-| 38187581948 | `c6cddcaf76cb` | pull_request | Cross-repository development broker qualification | completed:success |
