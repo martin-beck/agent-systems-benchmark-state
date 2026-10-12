@@ -35,11 +35,11 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38206793291 | `e0e44a7d8b45` | push | Cross-repository development broker qualification | in_progress:- |
 | 38206793200 | `e0e44a7d8b45` | push | Rust verification | in_progress:- |
-| 38206793189 | `e0e44a7d8b45` | push | Formal assurance | queued:- |
-| 38206793178 | `e0e44a7d8b45` | push | Huawei MIT source headers | in_progress:- |
+| 38206793189 | `e0e44a7d8b45` | push | Formal assurance | in_progress:- |
+| 38206793178 | `e0e44a7d8b45` | push | Huawei MIT source headers | completed:success |
 | 38206793177 | `e0e44a7d8b45` | push | Emulated aarch64 portability | in_progress:- |
 | 38206793159 | `e0e44a7d8b45` | push | Portable protected-main provenance | completed:failure |
-| 38206793147 | `e0e44a7d8b45` | push | Fault assurance | queued:- |
+| 38206793147 | `e0e44a7d8b45` | push | Fault assurance | in_progress:- |
 | 38206793146 | `e0e44a7d8b45` | push | Repository quality | in_progress:- |
 | 38206793142 | `e0e44a7d8b45` | push | Hosted portability and native qualification | in_progress:- |
 | 38206793125 | `e0e44a7d8b45` | push | Credential-free benchmark path | in_progress:- |
