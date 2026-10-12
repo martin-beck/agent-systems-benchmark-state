@@ -1649,11 +1649,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1812-repair-luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
@@ -2588,7 +2588,7 @@ flowchart LR
         AR_1809["AR-1809 - Planned"]:::status_planned
         AR_1810["AR-1810 - Blocked"]:::status_blocked
         AR_1811["AR-1811 - Done"]:::status_done
-        AR_1812["AR-1812 - In progress"]:::status_in_progress
+        AR_1812["AR-1812 - Done"]:::status_done
         AR_1813["AR-1813 - Done"]:::status_done
         AR_1814["AR-1814 - Done"]:::status_done
         AR_1815["AR-1815 - Done"]:::status_done

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "checkpoint_commit": "5b71c956ea88788c3b303425331e0682c8dbc241",
-  "claim_expires": "2026-10-12T14:04:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1779",
     "AR-1799",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "736b970566d74644ab1dc9c51ff6dd890298c382",
-  "owner": "ar1812-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1812.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 186,
+  "task_revision": 187,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T12:37:18+00:00",
+  "updated_at": "2026-10-12T12:37:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -640,3 +640,7 @@ fixtures and must not require a live provider or TLC.
   b3d79394af5fe30c7ea0d726014ddf69ad538f17. All 10 exact-main workflows completed SUCCESS:
   repository quality, Rust, aarch64, hosted portability, formal assurance, fault assurance,
   credential-free, cross-repository, provenance, and headers. doctor --live passed.
+
+- 2026-10-12T12:37:20+00:00: AR-1812 completed: implementation, signed DCO commits, exact-head
+  review, rebased protected integration, signed merge a0a978f134959943c54362e84032a6232c606105, all
+  10 exact-main post-merge workflows green, and doctor --live/reconciliation passed.
