@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T12:52:52+00:00",
+  "claim_expires": "2026-10-12T13:13:33+00:00",
   "depends_on": [
     "AR-1773"
   ],
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent review found a full integration-gate regression at exact PR head 5cb931f5.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:09:19+00:00",
+  "updated_at": "2026-10-12T11:13:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -256,3 +256,5 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 - 2026-10-12T11:09:19+00:00: Reviewed deterministic failures repaired: stale human diagnostic
   catalog identities and 28-vs-29 public family golden count. Full asb-cli test suite passes after
   commit 0fec6465; repeat independent review required.
+
+- 2026-10-12T11:13:33+00:00: Heartbeat by asb-queue-next-luna56.
