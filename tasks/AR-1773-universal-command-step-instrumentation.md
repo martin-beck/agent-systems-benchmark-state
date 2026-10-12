@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T07:12:30+00:00",
+  "updated_at": "2026-10-12T07:13:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -340,3 +340,6 @@ non-TTY compatibility.
   prose. No catalog logic failure. Repaired those four assertions to the shared reporter output;
   focused cargo test -p asb-cli --test human_cli now passes 16/16. Catalog diagnostic_contract
   remains 9/9 and asb-cli lib 437/437; rerun full workspace gate after this repair. No waiver.
+
+- 2026-10-12T07:13:16+00:00: Recorded command exit 101; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
