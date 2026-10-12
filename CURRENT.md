@@ -10,12 +10,7 @@ Never edit this file directly.
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. | Independent re-review of PR #120 exact head 21a8b4c16c passed focused tests, formatting, and Ruff; full unittest was attempted but stopped on pre-existing SQLite lock contention and environment fixture errors. Mypy is blocked locally by missing types-jsonschema. Hosted full applicable checks must be confirmed before approval/merge. | ar1293-merge-luna56 |
 | P0 | [AR-1773](tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Independent review complete: PR #605 exact head f78a1006 is signed/DCO/privacy clean; focused step_progress 4/4 passes. human_cli one outcome-matrix failure reproduces on parent 1494e474 with unchanged expected status (pre-existing environment failure); retain hosted/full gate evidence and do not merge until integration lane reconciles exact-head results. | ar1773-catalog-repair-luna56 |
 | P0 | [AR-1810](tasks/AR-1810-cli2key-standard-cli-integration.md): Complete cli2key Standard CLI Integration | Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps. | Replace the ordinary CLI's cli2key rejection with runtime-owned bootstrap and prove real run and sweep execution. | ar1810-cli2key-luna56 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1811](tasks/AR-1811-development-formal-workflow-separation.md): Development/formal workflow separation | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. | Monitor PR #606 exact head da764cf7 until all required non-TLC checks are green; then independent review, merge, exact-main post-merge verification, and durable closure. | - |
+| P0 | [AR-1811](tasks/AR-1811-development-formal-workflow-separation.md): Development/formal workflow separation | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. | Monitor PR #606 exact head da764cf7 until all required non-TLC checks are green; then independent review, merge, exact-main post-merge verification, and durable closure. | coordinator-ar1811-merge |
 
 ## Blocked
 
