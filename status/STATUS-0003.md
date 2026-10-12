@@ -1532,7 +1532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
-| Next action | Fresh independent exact-head review of current candidate 14471899 after contract-preserving main restoration; then force-with-lease update PR #599. |
+| Next action | Force-with-lease push exact accepted 14471899 to PR #599; monitor hosted exact-head CI. |
 
 ### AR-1804 — Cross-module fixture semaphore
 
