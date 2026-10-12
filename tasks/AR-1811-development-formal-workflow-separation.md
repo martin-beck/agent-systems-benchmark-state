@@ -10,7 +10,9 @@
   "observed_dirty": 0,
   "observed_head": "d9972679899cf18c1c9ab87e694ad639a2c18786",
   "oracle_gate": {
-    "completed": [],
+    "completed": [
+      "role"
+    ],
     "discussion_rounds": 0,
     "events": [
       {
@@ -33,9 +35,30 @@
         "stage": "role",
         "task_id": "AR-1811",
         "task_revision": 41
+      },
+      {
+        "action": "resolve",
+        "after": [
+          {
+            "digest": "sha256:607625b5d8597e0ae25eca71b8e2608f6f08664ef9f12f06f5583cf5921a2f45",
+            "ref": "review/accepted"
+          }
+        ],
+        "before": [
+          {
+            "digest": "sha256:607625b5d8597e0ae25eca71b8e2608f6f08664ef9f12f06f5583cf5921a2f45",
+            "ref": "review/candidate"
+          }
+        ],
+        "disposition": "accepted",
+        "public_ref": "PR-606/d9972679899cf18c1c9ab87e694ad639a2c18786",
+        "recorded_at": "2026-10-12T10:16:24+00:00",
+        "stage": "role",
+        "task_id": "AR-1811",
+        "task_revision": 42
       }
     ],
-    "open_stage": "role",
+    "open_stage": null,
     "reconciliation_required": false,
     "required": true,
     "stage_sequence": [
@@ -50,9 +73,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:16:21+00:00",
+  "updated_at": "2026-10-12T10:16:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -163,3 +186,6 @@ tests and update the generated quality documentation.
 
 - 2026-10-12T10:16:21+00:00: Recorded open interaction gate role;
   event=sha256:f10a4f38f89d898180a30ebe9f3b2968de4c2b9f63b7443f58d29f91d03783c6.
+
+- 2026-10-12T10:16:24+00:00: Recorded resolve interaction gate role;
+  event=sha256:90cd1a09bd8a4d4165a746e1a99c16e1783e1b5b0ed57c697dcd1a7c3d014ceb.
