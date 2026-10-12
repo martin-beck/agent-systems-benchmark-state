@@ -140,9 +140,7 @@ class RoleManagementTests(unittest.TestCase):
                 expected_revision=2,
                 assignment_id="assignment-expired-target",
             )
-            self.assertEqual(
-                {"revision": 3, "removed": "assignment-expired-target"}, removed
-            )
+            self.assertEqual({"revision": 3, "removed": "assignment-expired-target"}, removed)
             with self.assertRaisesRegex(RolesError, "expired role assignment"):
                 list_assignments(state, REGISTRY, None)
 
