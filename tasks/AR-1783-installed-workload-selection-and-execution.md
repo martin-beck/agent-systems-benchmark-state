@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "PR #596 repaired against current protected main 98327152 at exact head db9b1fb8; prior 506de984 review invalidated and fresh checks/review required",
-  "task_revision": 240,
+  "task_revision": 241,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:32:27+00:00",
+  "updated_at": "2026-10-12T01:32:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -751,3 +751,6 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:32:27+00:00: Recorded command exit 0; command argv SHA-256
   1c370d6074b72b12c0e0b562e318d930b3628a08d86c31227c66578bebec7737.
+
+- 2026-10-12T01:32:34+00:00: Recorded command exit 0; command argv SHA-256
+  66199c99ae3f3e8f18d242cc1a010adcdd21f332a209c21c351b7bed9ec90fa2.
