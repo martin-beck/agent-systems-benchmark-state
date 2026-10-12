@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 756,
+  "task_revision": 757,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T09:34:13+00:00",
+  "updated_at": "2026-10-12T09:34:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2268,3 +2268,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   local seed, retains only its digest, emits provider_required=false, formal_execution=false, and
   qualification_authorized=false, and never invokes TLC/TLA+ or a provider. Focused tests pass via
   handoffctl run with PYTHONDONTWRITEBYTECODE=1.
+
+- 2026-10-12T09:34:27+00:00: Recorded command exit 2; command argv SHA-256
+  8b7a689458c8b0158a05d65d3e493367dc5194471d7ab5061e1cd3bbf8a88adb.
