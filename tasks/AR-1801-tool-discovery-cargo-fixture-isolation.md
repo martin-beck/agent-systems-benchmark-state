@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T06:18:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1762"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "observed_dirty": 0,
   "observed_head": "c20bb7bb44481846e08b135ea6b5fff83cd72617",
-  "owner": "ar1801-cargo-fixture-luna56",
+  "owner": "",
   "plan": "../plans/AR-1801-tool-discovery-cargo-fixture-isolation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1801.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T02:31:21+00:00",
+  "updated_at": "2026-10-12T02:31:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -103,3 +103,9 @@ or pin the probe without weakening bounded execution or privacy contracts.
 
 - 2026-10-12T02:31:21+00:00: Recorded command exit 0; command argv SHA-256
   7b5999708feac6a92cc601cd5fd035f7d87f2fa777729bda923380c962842bcd.
+
+- 2026-10-12T02:31:42+00:00: AR-1801 remains unaccepted and is blocked by two exact-head full-gate
+  parallel-load failures (provider-selection and comparison assertions left 6/right 0 at
+  lib.rs:16076 and :16161). Focused reruns pass, but deterministic full-gate evidence is absent.
+  Successor repair AR-1803 is now created with spec/plan/task to reproduce and isolate the shared
+  fixture interference; resume AR-1801 only after AR-1803 repair and full gates are green.
