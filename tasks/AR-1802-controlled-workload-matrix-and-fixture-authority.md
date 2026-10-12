@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T06:33:08+00:00",
   "depends_on": [
     "AR-1782",
     "AR-1783"
@@ -12,7 +12,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1802-workload-matrix-luna56",
   "plan": "../plans/AR-1802-controlled-workload-matrix-and-fixture-authority.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1802.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T02:33:03+00:00",
+  "updated_at": "2026-10-12T02:33:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -45,3 +45,5 @@ remains explicitly unaccepted and blocked until this repair is complete.
 
 - 2026-10-12T02:33:03+00:00: dependency repair: completed AR-1782 and AR-1783 prerequisites; AR-1800
   remains explicit blocked predecessor
+
+- 2026-10-12T02:33:08+00:00: Claimed by ar1802-workload-matrix-luna56.
