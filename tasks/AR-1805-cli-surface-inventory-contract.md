@@ -9,8 +9,8 @@
   "id": "AR-1805",
   "next_action": "Update the executable public-family golden fixture for the new workload family, push a signed fix, rerun cargo test -p asb-cli --tests --offline, then repeat exact-head independent review.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
-  "observed_dirty": 1,
-  "observed_head": "5cb931f55fa7210afd58e70de25f0d2fce67107a",
+  "observed_dirty": 0,
+  "observed_head": "0fec6465dbb1934904fef8d9f79dd1c565c661fc",
   "owner": "asb-queue-next-luna56",
   "plan": "../plans/AR-1805-cli-surface-inventory-contract.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent review found a full integration-gate regression at exact PR head 5cb931f5.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:08:38+00:00",
+  "updated_at": "2026-10-12T11:08:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
