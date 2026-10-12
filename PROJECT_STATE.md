@@ -28,21 +28,21 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
-| #598 | `feature/ar-1804-cross-module-fixture-semaphore@4cda972c8af3` | `main` | UNKNOWN | - | test(cli): bound cross-module process fixtures |
+| #598 | `feature/ar-1804-cross-module-fixture-semaphore@4cda972c8af3` | `main` | BLOCKED | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test(cli): bound cross-module process fixtures |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38199038515 | `4cda972c8af3` | pull_request | Repository quality | in_progress:- |
+| 38199038502 | `4cda972c8af3` | pull_request | Formal assurance | queued:- |
+| 38199038500 | `4cda972c8af3` | pull_request | Fault assurance | queued:- |
+| 38199038496 | `4cda972c8af3` | pull_request | Huawei MIT source headers | in_progress:- |
+| 38199038494 | `4cda972c8af3` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 38199038432 | `4cda972c8af3` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38199038400 | `4cda972c8af3` | pull_request | Rust verification | in_progress:- |
+| 38199038376 | `4cda972c8af3` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38199038373 | `4cda972c8af3` | pull_request | Portable protected-main provenance | in_progress:- |
+| 38199038369 | `4cda972c8af3` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38199038368 | `4cda972c8af3` | pull_request | Credential-free benchmark path | in_progress:- |
 | 38193200588 | `ca494d506135` | push | Cross-repository development broker qualification | completed:success |
-| 38193200452 | `ca494d506135` | push | Fault assurance | completed:success |
-| 38193200435 | `ca494d506135` | push | Emulated aarch64 portability | completed:success |
-| 38193200434 | `ca494d506135` | push | Formal assurance | completed:success |
-| 38193200427 | `ca494d506135` | push | Credential-free benchmark path | completed:success |
-| 38193200422 | `ca494d506135` | push | Repository quality | completed:success |
-| 38193200410 | `ca494d506135` | push | Portable protected-main provenance | completed:success |
-| 38193200407 | `ca494d506135` | push | Hosted portability and native qualification | completed:success |
-| 38193200393 | `ca494d506135` | push | Rust verification | completed:success |
-| 38193200385 | `ca494d506135` | push | Huawei MIT source headers | completed:success |
-| 38192354018 | `aca3f79b3256` | pull_request | Fault assurance | completed:success |
-| 38192354015 | `aca3f79b3256` | pull_request | Formal assurance | completed:success |
