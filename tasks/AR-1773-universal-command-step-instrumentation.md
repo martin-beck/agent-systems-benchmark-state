@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:24:41+00:00",
+  "updated_at": "2026-10-12T06:24:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -109,3 +109,6 @@ non-TTY compatibility.
   output was initially clipped and message was not retained on terminal finish. Added bounded
   last_message retention and updated tests to assert reporter prefix/newline. Also corrected one
   failed formatter command caused by an incorrect nonexistent worktree path; no product impact.
+
+- 2026-10-12T06:24:45+00:00: Recorded command exit 0; command argv SHA-256
+  2a8f194e6adddd75d45f4e106e0f79ed41a2c4749e10429101d9bbf524666fe0.
