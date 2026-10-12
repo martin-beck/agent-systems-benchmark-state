@@ -28,20 +28,21 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@83c2c6635789` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.25 |
+| #612 | `feature/ar-1774-status-progress-completeness-ci@eaa490f2fc88` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | ci: enforce status and progress completeness |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38248424986 | `a0a978f13495` | push | Hosted portability and native qualification | completed:success |
-| 38248424378 | `a0a978f13495` | push | Emulated aarch64 portability | completed:success |
-| 38248424288 | `a0a978f13495` | push | Cross-repository development broker qualification | completed:success |
-| 38248424228 | `a0a978f13495` | push | Fault assurance | completed:success |
-| 38248424176 | `a0a978f13495` | push | Portable protected-main provenance | completed:success |
-| 38248424156 | `a0a978f13495` | push | Huawei MIT source headers | completed:success |
-| 38248424061 | `a0a978f13495` | push | Rust verification | completed:success |
-| 38248424059 | `a0a978f13495` | push | Development formal assurance | completed:success |
-| 38248424010 | `a0a978f13495` | push | Credential-free benchmark path | completed:success |
-| 38248423834 | `a0a978f13495` | push | Repository quality | completed:success |
-| 38247037423 | `736b970566d7` | pull_request | Development formal assurance | completed:success |
-| 38247037308 | `736b970566d7` | pull_request | Huawei MIT source headers | completed:success |
+| 38250836110 | `eaa490f2fc88` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38250836102 | `eaa490f2fc88` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38250836096 | `eaa490f2fc88` | pull_request | Repository quality | in_progress:- |
+| 38250836093 | `eaa490f2fc88` | pull_request | Huawei MIT source headers | completed:success |
+| 38250836063 | `eaa490f2fc88` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38250836058 | `eaa490f2fc88` | pull_request | Portable protected-main provenance | completed:success |
+| 38250836045 | `eaa490f2fc88` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38250836044 | `eaa490f2fc88` | pull_request | Development formal assurance | in_progress:- |
+| 38250836042 | `eaa490f2fc88` | pull_request | Fault assurance | in_progress:- |
+| 38250836041 | `eaa490f2fc88` | pull_request | Rust verification | in_progress:- |
+| 38250836023 | `eaa490f2fc88` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38250743930 | `8765b84bcaa3` | pull_request | Development formal assurance | completed:cancelled |
