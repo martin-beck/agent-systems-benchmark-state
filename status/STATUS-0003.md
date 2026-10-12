@@ -1675,7 +1675,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. |
-| Next action | Protected merge 5c843a12e976bc7be6c32e9fc653e566bdf20450 is published from exact base 5a6c5477 and signed head 7889b3; exact-main post-merge workflows are running. Wait for all terminal success, then record receipt and release done. |
+| Next action | Exact-main merge 5c843a12 is published and currently has 7/10 terminal-success workflows. Emulated aarch64, Repository quality, and Rust verification remain in progress; wait for all three terminal results before releasing AR-1813. |
 
 ### AR-1814 — Remove stale TLC development ruleset requirement
 

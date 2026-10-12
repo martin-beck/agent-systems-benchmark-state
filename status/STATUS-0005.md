@@ -254,7 +254,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | asb-queue-next-luna56 | Define one complete machine-checked inventory of every public ASB command and subcommand surface. | PR #608 opened at exact head 01631b5bbe14ba856a8993cc7fb8c4be6aa76fcc. Await independent review and all non-TLC hosted checks, then protected exact-head merge and post-merge verification. |
-| P0 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | ar1810-cli2key-luna56 | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | Protected merge 5c843a12e976bc7be6c32e9fc653e566bdf20450 is published from exact base 5a6c5477 and signed head 7889b3; exact-main post-merge workflows are running. Wait for all terminal success, then record receipt and release done. |
+| P0 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | ar1810-cli2key-luna56 | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | Exact-main merge 5c843a12 is published and currently has 7/10 terminal-success workflows. Emulated aarch64, Repository quality, and Rust verification remain in progress; wait for all three terminal results before releasing AR-1813. |
 
 ### Blocked (86)
 
