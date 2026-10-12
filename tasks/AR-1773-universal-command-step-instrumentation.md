@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:30:06+00:00",
+  "updated_at": "2026-10-12T06:30:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -189,3 +189,6 @@ non-TTY compatibility.
   ambient diagnostic-contract failure; no waiver or publication.
 
 - 2026-10-12T06:30:06+00:00: Heartbeat by ar1772-progress-reporter-luna56.
+
+- 2026-10-12T06:30:09+00:00: Recorded command exit 0; command argv SHA-256
+  17d0d0a0f520aeffcd369fdcda77b67a3ac6e38e4dd4288dc07237a40369e7ed.
