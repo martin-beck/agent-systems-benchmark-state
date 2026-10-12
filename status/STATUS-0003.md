@@ -1695,11 +1695,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1805_postmerge_repair |
 | Parent | None |
 | Children | None |
 | Summary | Recover protected-main merge provenance without rewriting the preserved GitHub merge. |
@@ -2581,7 +2581,7 @@ flowchart LR
         AR_1812["AR-1812 - In progress"]:::status_in_progress
         AR_1813["AR-1813 - Done"]:::status_done
         AR_1814["AR-1814 - Done"]:::status_done
-        AR_1815["AR-1815 - Open"]:::status_open
+        AR_1815["AR-1815 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
