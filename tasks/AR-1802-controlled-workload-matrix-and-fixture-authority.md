@@ -10,8 +10,8 @@
   "id": "AR-1802",
   "next_action": "Repair or isolate source_checkout fixture contention observed in parallel package gate; then rerun exact package and workspace gates.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
-  "observed_dirty": 2,
-  "observed_head": "3ab420e492697e68f248a5f2004b6151d5323e63",
+  "observed_dirty": 0,
+  "observed_head": "c9ea7246e6d4ce7cfd11eabe55216765d2508996",
   "owner": "ar1802-workload-matrix-luna56",
   "plan": "../plans/AR-1802-controlled-workload-matrix-and-fixture-authority.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:53:21+00:00",
+  "updated_at": "2026-10-12T03:53:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
