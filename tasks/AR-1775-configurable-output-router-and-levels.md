@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:32:34+00:00",
+  "updated_at": "2026-10-12T00:32:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -344,3 +344,6 @@ stdout envelope and silences all human/operational output on both streams.
   targeted output-level plus diagnostic mapping tests pass. Folded repair into v4 tip
   synchronization merge 34202df1 (parents 3cb3702 and protected base 0a2039c4), valid SSH signature
   and DCO; published PR #591 without force-push. PR #590 remains superseded/open pending closure.
+
+- 2026-10-12T00:32:35+00:00: Recorded command exit 0; command argv SHA-256
+  beca135d018cc3fa28e9d8f1ff26a1fa0c47b92ffc754a3a002abc325457e0e1.
