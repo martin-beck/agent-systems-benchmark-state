@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Checkpoint clean signed 56db629d, independently review exact head, then publish PR/CI only if supported deterministic gate remains green.",
+  "next_action": "Inspect shared process-backed discovery/source/provider fixture state and implement bounded cross-module isolation; add hostile contention regression before retry.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "56db629d58b725114b10e6fad8cc4772b16834d0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T03:31:42+00:00",
+  "updated_at": "2026-10-12T03:31:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -114,3 +114,13 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T03:31:42+00:00: Recorded command exit 101; command argv SHA-256
   13e2aa5d148f9097f642e519d13f83dd607b03dabc7cdbb78c402e46fca20295.
+
+- 2026-10-12T03:31:50+00:00: Reproduction command via handoffctl: cargo test --locked
+  --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair/Cargo.toml
+  -p asb-cli --lib -- --test-threads=8. Exit 101, 428 passed/1 failed after 23.10s. Exact failure:
+  tool_discovery::tests::path_discovery_is_deterministic_and_bounded at tool_discovery.rs:554,
+  assertion left/right differed in discovered cargo version: left version_probe_unavailable with
+  warning, right version cargo 1.0; process/fixture contention shifted the failure from prior
+  provider/comparison/source_checkout tests. Classification: qualification failure demonstrating
+  shared fixture nondeterminism, not setup error.
