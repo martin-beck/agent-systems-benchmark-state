@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-0507](../tasks/AR-0507-replay-opendesk.md) | [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0508](../tasks/AR-0508-replay-aider.md) | [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md), [AR-0850](../tasks/AR-0850-aider-deterministic-replay.md) |
 | [AR-0509](../tasks/AR-0509-replay-codex.md) | [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0510](../tasks/AR-0510-replay-gemini.md) | [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
@@ -574,3 +573,4 @@
 | [AR-1608](../tasks/AR-1608.md) | [AR-1607](../tasks/AR-1607.md), [AR-1609](../tasks/AR-1609.md) | [AR-1603](../tasks/AR-1603.md), [AR-1612](../tasks/AR-1612.md), [AR-1641](../tasks/AR-1641.md), [AR-1656](../tasks/AR-1656.md) |
 | [AR-1609](../tasks/AR-1609.md) | [AR-1607](../tasks/AR-1607.md) | [AR-1608](../tasks/AR-1608.md), [AR-1641](../tasks/AR-1641.md), [AR-1656](../tasks/AR-1656.md) |
 | [AR-1611](../tasks/AR-1611.md) | [AR-1599](../tasks/AR-1599.md), [AR-1600](../tasks/AR-1600.md), [AR-1601](../tasks/AR-1601.md), [AR-1605](../tasks/AR-1605.md) | [AR-1613](../tasks/AR-1613.md), [AR-1614](../tasks/AR-1614.md), [AR-1659](../tasks/AR-1659.md) |
+| [AR-1612](../tasks/AR-1612.md) | [AR-1605](../tasks/AR-1605.md), [AR-1606](../tasks/AR-1606.md), [AR-1608](../tasks/AR-1608.md) | [AR-1613](../tasks/AR-1613.md), [AR-1615](../tasks/AR-1615.md), [AR-1617](../tasks/AR-1617.md), [AR-1618](../tasks/AR-1618.md) |
