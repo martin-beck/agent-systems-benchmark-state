@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T10:34:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1729",
     "AR-1731",
@@ -17,7 +17,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "ar1810-cli2key-luna56",
+  "owner": "",
   "plan": "../plans/AR-1810-cli2key-standard-cli-integration.md",
   "priority": "P0",
   "schema_version": 1,
@@ -31,11 +31,11 @@
   },
   "spec_ref": "specs/AR-1810.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Complete cli2key Standard CLI Integration",
-  "updated_at": "2026-10-12T10:04:23+00:00",
+  "updated_at": "2026-10-12T10:04:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1810-cli2key-standard-cli"
 }
 ---
@@ -83,3 +83,6 @@ dispatch.
   identity durably before re-claim.
 
 - 2026-10-12T10:04:23+00:00: Claimed by ar1810-cli2key-luna56.
+
+- 2026-10-12T10:04:39+00:00: Released to coordinator for supported repair of malformed prefilled
+  worktree metadata; no product mutation.

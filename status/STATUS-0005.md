@@ -236,13 +236,18 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1773-catalog-repair-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Independent review complete: PR #605 exact head f78a1006 is signed/DCO/privacy clean; focused step_progress 4/4 passes. human_cli one outcome-matrix failure reproduces on parent 1494e474 with unchanged expected status (pre-existing environment failure); retain hosted/full gate evidence and do not merge until integration lane reconciles exact-head results. |
-| P0 | [AR-1810](../tasks/AR-1810-cli2key-standard-cli-integration.md): Complete cli2key Standard CLI Integration | ar1810-cli2key-luna56 | Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps. | Coordinator metadata repair required before implementation: promoted task has prefilled worktree_key but empty branch, so handoffctl bind-worktree rejects the first binding and run rejects product mutations. Preserve scope; bind declared branch/worktree then implement. |
 | P0 | [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md): Development/formal workflow separation | coordinator-ar1811-merge | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. | Monitor PR #606 exact head da764cf7 until all required non-TLC checks are green; then independent review, merge, exact-main post-merge verification, and durable closure. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1810](../tasks/AR-1810-cli2key-standard-cli-integration.md): Complete cli2key Standard CLI Integration | Unclaimed | Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps. | Coordinator metadata repair required before implementation: promoted task has prefilled worktree_key but empty branch, so handoffctl bind-worktree rejects the first binding and run rejects product mutations. Preserve scope; bind declared branch/worktree then implement. |
 
 ### Blocked (84)
 
