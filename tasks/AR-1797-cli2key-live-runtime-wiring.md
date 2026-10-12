@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:33:35+00:00",
+  "updated_at": "2026-10-12T05:35:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -193,3 +193,6 @@ path and records only redacted provenance and typed outcome evidence.
   insertion/import and appended the seam at EOF; cargo fmt and the isolated diagnostic_contract test
   now pass. A deliberately interrupted duplicate diagnostic test (Ctrl-C during rebuild, handoffctl
   exit 130) is explained by that source repair and is superseded by the successful rerun.
+
+- 2026-10-12T05:35:05+00:00: Recorded command exit 2; command argv SHA-256
+  3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
