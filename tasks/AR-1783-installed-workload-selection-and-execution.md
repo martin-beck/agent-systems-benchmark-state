@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Poll PR #587 checks only after meaningful head change; require Policy/coverage/supply-chain and Rust verification green, independent exact-head review, then merge and post-merge verify before accept/release.",
+  "next_action": "Poll PR #587 exact-head e644f9b0 hosted Policy/Rust/AArch64 checks; require all green plus independent review before merge, then verify protected main and release.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "e644f9b02c5b3f7d46b051691accc249fa8a3585",
@@ -28,10 +28,10 @@
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
-  "summary": "Repair reviewed CLI identity catalog and requalify signed PR head f4fe84a0",
-  "task_revision": 112,
+  "summary": "Refresh exact workflow provenance digest and requalify signed PR head e644f9b0",
+  "task_revision": 113,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:44:52+00:00",
+  "updated_at": "2026-10-12T00:45:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -351,3 +351,14 @@ the suite from this end-to-end path.
 
 - 2026-10-12T00:44:52+00:00: Recorded command exit 0; command argv SHA-256
   32d00e7bea48deb591900624d4de1f837dadd9a3cd5c55c2ee1561f8660d7fe2.
+
+- 2026-10-12T00:45:44+00:00: Follow-up hosted failure repaired without weakening gates: Rust
+  workflow_transcript.rs:330 provenance_binds_the_exact_cli_and_public_fixture_sources reported
+  crates/asb-cli/src/lib.rs expected cli_source_sha256
+  9d31c6c777920a4effe956f031ca4775b4dff957b75fd5b846bf35d7c04ab61e but exact candidate computed
+  c2501ffb436f5affb77c43341da235729c26a0c4eeb22d2724cd9ce203f96d27 after the reviewed AR-1783 source
+  change. Updated docs/examples/asb-cli-workflow-v1.provenance.json to the computed exact source
+  digest. Focused workflow_transcript test 3/3 passed. Signed DCO product commit e644f9b0 pushed to
+  PR #587. The prior strict identity failure remains repaired with exact catalog entries; all local
+  focused/full gates previously green. PR remains open pending hosted checks and independent
+  exact-head review.

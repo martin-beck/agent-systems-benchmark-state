@@ -1251,8 +1251,8 @@
 | Owner | ar1783_workload_selection_luna56 |
 | Parent | None |
 | Children | None |
-| Summary | Repair reviewed CLI identity catalog and requalify signed PR head f4fe84a0 |
-| Next action | Poll PR #587 checks only after meaningful head change; require Policy/coverage/supply-chain and Rust verification green, independent exact-head review, then merge and post-merge verify before accept/release. |
+| Summary | Refresh exact workflow provenance digest and requalify signed PR head e644f9b0 |
+| Next action | Poll PR #587 exact-head e644f9b0 hosted Policy/Rust/AArch64 checks; require all green plus independent review before merge, then verify protected main and release. |
 
 ### AR-1784 — Command dependency registry and preflight
 
