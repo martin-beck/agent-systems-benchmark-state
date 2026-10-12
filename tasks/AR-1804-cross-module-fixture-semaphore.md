@@ -9,7 +9,7 @@
   "id": "AR-1804",
   "next_action": "Repair run-seam timeout budget to remain bounded but tolerate legitimate long parallel process fixtures; rerun focused failing test and default-parallel.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "8e9785f53e846b40e6d410a84f45d6f81f2b1308",
   "owner": "ar1804_fixture_semaphore_luna56",
   "plan": "../plans/AR-1804-cross-module-fixture-semaphore.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:10:06+00:00",
+  "updated_at": "2026-10-12T03:10:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
