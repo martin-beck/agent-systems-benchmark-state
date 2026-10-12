@@ -7,7 +7,7 @@
     "AR-1771"
   ],
   "id": "AR-1775",
-  "next_action": "Implement the sole configurable output router, generated project output defaults, and four-level selection after the output contract is accepted.",
+  "next_action": "Rebuild topic with protected-main synchronization merge at tip; rerun full gates and hosted checks.",
   "observed_branch": "feature/ar-1775-configurable-output-router-and-levels",
   "observed_dirty": 0,
   "observed_head": "d7c08c106e52ed9aa144f24ffe130b40dd6c3da7",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:19:00+00:00",
+  "updated_at": "2026-10-12T00:19:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -199,3 +199,10 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T00:19:00+00:00: Recorded command exit 0; command argv SHA-256
   c7279374a1098e92724c5399fe48063ddc00c2dddb7fe3011e1ea92eb637dc24.
+
+- 2026-10-12T00:19:20+00:00: Durable failure diagnosis: PR #588 exact head
+  d7c08c106e52ed9aa144f24ffe130b40dd6c3da7 failed Portable protected-main provenance at 00:18:10Z,
+  exit 1 (worker exit-8 record at 00:18:xx): portable provenance: pull-request synchronization merge
+  must be the topic tip. The signed fix d7c08c1 was committed after synchronization merge abe8133,
+  so topology was invalid; no product test failure. Rebuilding on 3cb3702 with the fix folded into a
+  tip synchronization merge; no force-push.

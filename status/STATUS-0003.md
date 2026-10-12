@@ -1140,7 +1140,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels. |
-| Next action | Implement the sole configurable output router, generated project output defaults, and four-level selection after the output contract is accepted. |
+| Next action | Rebuild topic with protected-main synchronization merge at tip; rerun full gates and hosted checks. |
 
 ### AR-1776 — Supported-tool acquisition catalog
 
