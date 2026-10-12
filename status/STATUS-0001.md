@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**806 ARs tracked** across 8 active status categories.
+**806 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 85 |
 | **Planned** | Defined work awaiting promotion or dependencies | 85 |
 | **Future** | Deferred roadmap work | 2 |
@@ -4524,11 +4524,11 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1293-unsigned-dev-20261012 |
 | Parent | None |
 | Children | None |
 | Summary | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. |
@@ -5002,5 +5002,3 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | --- | --- |
 | Status | done |
 | Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |

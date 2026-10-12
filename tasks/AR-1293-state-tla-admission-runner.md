@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T10:32:11+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Use the generated-seed unsigned-development path for provider-free runner and integration tests, recording qualification_authorized=false. Do not wait on archival seed recovery; create a separate formal-only successor only if signed publication qualification is explicitly requested.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
-  "owner": "",
+  "owner": "codex-ar1293-unsigned-dev-20261012",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 752,
+  "task_revision": 753,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T09:31:46+00:00",
+  "updated_at": "2026-10-12T09:32:11+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2254,3 +2254,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-10-12T09:31:46+00:00: UD-1802 removes TLC/TLA/model-check execution and reviewed seed
   material as development blockers; reopen provider-free unsigned-development runner work.
+
+- 2026-10-12T09:32:11+00:00: Claimed by codex-ar1293-unsigned-dev-20261012.
