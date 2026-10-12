@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1819-expired-claim-safety",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T15:32:47+00:00",
+  "claim_expires": "2026-10-12T15:34:16+00:00",
   "depends_on": [],
   "id": "AR-1819",
   "next_action": "Implementation is complete at signed commits 20ff486bd7 and 44b2e2a0b1; obtain independent exact-head review, run applicable CI, then integrate and verify doctor.",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make expired-claim recovery fail closed when the exact current session snapshot is unavailable.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Fail-closed expired-claim recovery",
-  "updated_at": "2026-10-12T13:33:17+00:00",
+  "updated_at": "2026-10-12T13:34:16+00:00",
   "worktree_key": ""
 }
 ---
@@ -47,3 +47,5 @@ provider run is required for this development repair.
 - 2026-10-12T13:33:17+00:00: Focused recovery regression suite: 7 passed; ruff check and format
   check pass. Full suite had 1630 passed and 2 unrelated failures: one expected-message assertion
   now needing review and one coordinator lock timeout under concurrent workers; no product failure.
+
+- 2026-10-12T13:34:16+00:00: Heartbeat by ar1819_stale_claim_repair.
