@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T12:14:34+00:00",
   "depends_on": [
     "AR-1779",
     "AR-1799"
@@ -12,7 +12,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1810-cli2key-luna56",
   "plan": "../plans/AR-1813-cli2key-runtime-factory-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1813.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:14:31+00:00",
+  "updated_at": "2026-10-12T10:14:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -44,3 +44,5 @@ fabricate authority in the CLI or introduce a provider fallback.
 - 2026-10-12T10:14:31+00:00: Promoted P0 prerequisite for AR-1812: expose a runtime-owned verified
   cli2key receipt contract and opaque LiveProviderAttemptFactory without CLI authority fabrication
   or provider fallback.
+
+- 2026-10-12T10:14:34+00:00: Claimed by ar1810-cli2key-luna56.

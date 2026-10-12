@@ -241,17 +241,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md): Development/formal workflow separation | coordinator-ar1811-merge | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. | Monitor PR #606 exact head d9972679899cf18c1c9ab87e694ad639a2c18786 until all required non-TLC checks are green; then obtain independent review, merge, exact-main post-merge verification, and durable closure. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | Unclaimed | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | Promote and claim; implement the runtime-owned receipt contract and opaque LiveProviderAttemptFactory API needed by AR-1812, then complete review, merge, and post-merge verification. |
+| P0 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | ar1810-cli2key-luna56 | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | Promote and claim; implement the runtime-owned receipt contract and opaque LiveProviderAttemptFactory API needed by AR-1812, then complete review, merge, and post-merge verification. |
 
 ### Blocked (86)
 
@@ -611,3 +606,4 @@
 | P0 | [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md): Protected-main tree-equality repair for runtime replay | Unclaimed | Repair the protected-main tree mismatch after the runtime replay merge. | Post-merge verification complete: all seven workflows succeeded; release AR-1454 and propagate repair evidence to AR-1450. |
 | P0 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | Unclaimed | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Run state reconcile and live doctor, then release AR-1455 done with exact post-merge workflow evidence. |
 | P0 | [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md): First-customer requalification after central orchestration | Unclaimed | Requalify the first-customer production-like journey after central orchestration became authoritative. | Release done: exact protected-main requalification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. |
+| P0 | [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md): Current-main first-customer requalification | Unclaimed | Requalify first-customer readiness after the latest local-mock campaign merge. | Release done: current protected-main first-customer qualification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. |
