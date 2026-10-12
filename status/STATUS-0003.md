@@ -1112,7 +1112,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
-| Next action | Run the remaining asb-cli/full workspace gates on the mechanically reconciled catalog overlay; if green, commit signed DCO, request independent review, then exact-head CI. |
+| Next action | Run remaining full workspace gates after the human_cli expectation repair; then independently review the exact diff and prepare a signed DCO commit and PR only if all gates remain green. |
 
 ### AR-1774 — Status and progress completeness CI
 

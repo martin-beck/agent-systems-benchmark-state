@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Run the remaining asb-cli/full workspace gates on the mechanically reconciled catalog overlay; if green, commit signed DCO, request independent review, then exact-head CI.",
+  "next_action": "Run remaining full workspace gates after the human_cli expectation repair; then independently review the exact diff and prepare a signed DCO commit and PR only if all gates remain green.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 5,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T07:12:01+00:00",
+  "updated_at": "2026-10-12T07:12:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -334,3 +334,9 @@ non-TTY compatibility.
 
 - 2026-10-12T07:12:01+00:00: Recorded command exit 0; command argv SHA-256
   a698d8184957a12c242c990c7674569e66f0ea3cf6b0692d32aaeaf85554dc49.
+
+- 2026-10-12T07:12:30+00:00: Full workspace gate reached human_cli and failed 4 tests only because
+  preserved AR-1773 output changes left integration tests asserting superseded [WAIT] and directory
+  prose. No catalog logic failure. Repaired those four assertions to the shared reporter output;
+  focused cargo test -p asb-cli --test human_cli now passes 16/16. Catalog diagnostic_contract
+  remains 9/9 and asb-cli lib 437/437; rerun full workspace gate after this repair. No waiver.
