@@ -7,7 +7,7 @@
     "AR-1775"
   ],
   "id": "AR-1772",
-  "next_action": "Obtain independent review of exact commit, run required full checks, then publish reviewed PR and post-merge acceptance.",
+  "next_action": "Run complete asb-cli/full quality checks on clean signed head f9ad19ff; review exact head before publication.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "f9ad19ff24c69a0bd08d3dc3d9f8b6df09c98a41",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:15:15+00:00",
+  "updated_at": "2026-10-12T02:15:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -139,3 +139,10 @@ allowed outside this helper.
 
 - 2026-10-12T02:15:13+00:00: Recorded command exit 0; command argv SHA-256
   5536295cad907b40de7760309c9964d5980c36afae4fdb3e1e03245d7a38b279.
+
+- 2026-10-12T02:15:29+00:00: Gate diagnosis and repair: full asb-cli failed
+  diagnostic_contract::ordinary_cli_producers_are_mechanically_closed because router edits shifted
+  line-based reviewed call-site identities; restoring router block and moving module declaration
+  into human.rs preserved identities. The next focused gate passed. A transient compile failure also
+  reported dead_code for unreferenced reporter; module-level allow is intentional until universal
+  instrumentation AR-1773 consumes the API.

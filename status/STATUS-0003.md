@@ -1098,7 +1098,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output. |
-| Next action | Obtain independent review of exact commit, run required full checks, then publish reviewed PR and post-merge acceptance. |
+| Next action | Run complete asb-cli/full quality checks on clean signed head f9ad19ff; review exact head before publication. |
 
 ### AR-1773 — Universal command step instrumentation
 
