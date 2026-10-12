@@ -1532,7 +1532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
-| Next action | Repair f85b0dd7 by preserving AR-1800/1802 controlled fixture authority and archive acquisition; restore removed lifecycle tests and reviewed catalog, then rerun full gates before review. |
+| Next action | Update provenance digest to 872ac0e2..., rerun make test and default-parallel, then fresh independent review. |
 
 ### AR-1804 — Cross-module fixture semaphore
 
