@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:22:51+00:00",
+  "updated_at": "2026-10-12T04:22:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -507,3 +507,6 @@ as the affected successor linkage and evidence source.
   shows 5a06ac1f includes prior synchronization merge 2cb78a3a in the base-to-head range, so this is
   a real PR provenance topology failure, not a product test failure. Rebuild a clean topic from
   current main while preserving the reviewed net product diff, then rerun gates/review.
+
+- 2026-10-12T04:22:55+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
