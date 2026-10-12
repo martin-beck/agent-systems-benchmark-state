@@ -3,7 +3,7 @@
   "branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1800"],
+  "depends_on": ["AR-1782", "AR-1783"],
   "id": "AR-1802",
   "next_action": "Repair AR-1800 acceptance gaps: development-only fixture authority, complete every-workload lifecycle matrix, offline qualification, hostile identity/size cases, and acquisition-vs-benchmark failure separation.",
   "observed_branch": "",
@@ -28,3 +28,7 @@ Created from independent review of AR-1800 signed head b72da478. AR-1800 adds
 only a URL-hash archive helper and narrow unit test; it does not prove the full
 workload lifecycle, offline boundary, hostile identity/size behavior, failure
 separation, or development-only fixture authority.
+
+The dependency is repaired to the completed AR-1782/AR-1783 prerequisites so
+this successor can address AR-1800's blocked acceptance directly; AR-1800
+remains explicitly unaccepted and blocked until this repair is complete.

@@ -3,7 +3,7 @@
   "branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1801"],
+  "depends_on": ["AR-1762"],
   "id": "AR-1803",
   "next_action": "Reproduce and isolate AR-1801 parallel-load fixture failures before implementation.",
   "observed_branch": "",
@@ -36,4 +36,6 @@ Created from AR-1801 exact-head full-gate evidence. Two complete `asb-cli`
 runs failed under parallel load with distinct provider/comparison assertions:
 `left 6/right 0` at `crates/asb-cli/src/lib.rs:16076` and `:16161`; focused
 reruns passed. AR-1801 remains unaccepted until this repair or an equivalent
-deterministic root-cause fix makes the full gate green.
+deterministic root-cause fix makes the full gate green. The dependency is
+AR-1762 (done) so this repair can proceed independently while preserving AR-1801
+as the affected successor linkage and evidence source.
