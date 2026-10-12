@@ -36,7 +36,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38192181392 | `d0799ae9a4e1` | pull_request | Huawei MIT source headers | completed:success |
 | 38192181353 | `d0799ae9a4e1` | pull_request | Repository quality | in_progress:- |
-| 38192181348 | `d0799ae9a4e1` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 38192181348 | `d0799ae9a4e1` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38192181313 | `d0799ae9a4e1` | pull_request | Formal assurance | in_progress:- |
 | 38192181307 | `d0799ae9a4e1` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 38192181304 | `d0799ae9a4e1` | pull_request | Portable protected-main provenance | completed:failure |
