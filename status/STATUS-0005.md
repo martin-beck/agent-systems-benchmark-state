@@ -1,8 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1543](../tasks/AR-1543.md) | [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md), [AR-1549](../tasks/AR-1549.md) | [AR-1536](../tasks/AR-1536.md) |
-| [AR-1544](../tasks/AR-1544.md) | [AR-1530](../tasks/AR-1530.md) | None |
-| [AR-1545](../tasks/AR-1545.md) | [AR-1535](../tasks/AR-1535.md) | [AR-1522](../tasks/AR-1522.md) |
 | [AR-1546](../tasks/AR-1546.md) | [AR-1531](../tasks/AR-1531.md), [AR-1536](../tasks/AR-1536.md) | [AR-1522](../tasks/AR-1522.md) |
 | [AR-1547](../tasks/AR-1547.md) | None | [AR-1548](../tasks/AR-1548.md), [AR-1549](../tasks/AR-1549.md) |
 | [AR-1548](../tasks/AR-1548.md) | [AR-1547](../tasks/AR-1547.md) | None |
@@ -256,7 +253,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | asb-queue-next-luna56 | Define one complete machine-checked inventory of every public ASB command and subcommand surface. | PR #608 rebased onto protected main 5c843a12 at exact head a0d780b0 (catalog repair included); focused human diagnostic regression passes 5/5 after repair/rebase. Obtain independent exact-head review, wait all non-TLC checks terminal green, then protected exact-head merge and post-merge verification. |
+| P0 | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | asb-queue-next-luna56 | Independent review found a full-gate regression at exact PR head a0d780b0. | Regenerate diagnostic legacy catalog identities for all shifted human.rs producers, push a signed fix, rerun cargo test -p asb-cli --tests --offline, then repeat exact-head independent review. |
 | P0 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | ar1810-cli2key-luna56 | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | Exact-main merge 5c843a12 is verified by 9/10 terminal-success workflows; Repository quality run 38239012450 remains in progress with no failure. Wait for its terminal result, then record final post-merge receipt and release AR-1813 done. |
 
 ### Blocked (86)
@@ -613,3 +610,5 @@
 | P0 | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md): Central orchestration authority contract and ASB redesign | Unclaimed | Freeze one runtime-owned orchestration authority for every ASB run and attempt. | PR #329 merged as 071167d. Monitor seven exact-main post-merge workflows 36170798957, 36170798948, 36170798971, 36170798901, 36170798918, 36170798954, 36170798887 to terminal success; then release AR-1451 and promote AR-1452. |
 | P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Unclaimed | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 merged at exact main a5eb7e6; wait for all seven post-merge workflows, then run exact-main verification and release AR-1452 done before promoting AR-1453. |
 | P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Unclaimed | Make CLI and control use the central service for every run lifecycle. | Release AR-1453 complete after all seven exact-main post-merge workflows passed. |
+| P0 | [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md): Protected-main tree-equality repair for runtime replay | Unclaimed | Repair the protected-main tree mismatch after the runtime replay merge. | Post-merge verification complete: all seven workflows succeeded; release AR-1454 and propagate repair evidence to AR-1450. |
+| P0 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | Unclaimed | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Run state reconcile and live doctor, then release AR-1455 done with exact post-merge workflow evidence. |

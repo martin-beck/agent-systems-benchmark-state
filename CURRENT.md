@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1805](tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Define one complete machine-checked inventory of every public ASB command and subcommand surface. | PR #608 rebased onto protected main 5c843a12 at exact head a0d780b0 (catalog repair included); focused human diagnostic regression passes 5/5 after repair/rebase. Obtain independent exact-head review, wait all non-TLC checks terminal green, then protected exact-head merge and post-merge verification. | asb-queue-next-luna56 |
+| P0 | [AR-1805](tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Independent review found a full-gate regression at exact PR head a0d780b0. | Regenerate diagnostic legacy catalog identities for all shifted human.rs producers, push a signed fix, rerun cargo test -p asb-cli --tests --offline, then repeat exact-head independent review. | asb-queue-next-luna56 |
 | P0 | [AR-1813](tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | Exact-main merge 5c843a12 is verified by 9/10 terminal-success workflows; Repository quality run 38239012450 remains in progress with no failure. Wait for its terminal result, then record final post-merge receipt and release AR-1813 done. | ar1810-cli2key-luna56 |
 
 ## Blocked

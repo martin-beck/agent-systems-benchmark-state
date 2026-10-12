@@ -7,7 +7,7 @@
     "AR-1773"
   ],
   "id": "AR-1805",
-  "next_action": "PR #608 rebased onto protected main 5c843a12 at exact head a0d780b0 (catalog repair included); focused human diagnostic regression passes 5/5 after repair/rebase. Obtain independent exact-head review, wait all non-TLC checks terminal green, then protected exact-head merge and post-merge verification.",
+  "next_action": "Regenerate diagnostic legacy catalog identities for all shifted human.rs producers, push a signed fix, rerun cargo test -p asb-cli --tests --offline, then repeat exact-head independent review.",
   "observed_branch": "feature/ar-1805-cli-surface-inventory-contract",
   "observed_dirty": 0,
   "observed_head": "a0d780b0f818f6468bedf07702fc83cc54eebef2",
@@ -26,10 +26,10 @@
   "spec_ref": "specs/AR-1805.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Define one complete machine-checked inventory of every public ASB command and subcommand surface.",
-  "task_revision": 55,
+  "summary": "Independent review found a full-gate regression at exact PR head a0d780b0.",
+  "task_revision": 56,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:04:47+00:00",
+  "updated_at": "2026-10-12T11:05:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -187,3 +187,11 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 
 - 2026-10-12T11:04:47+00:00: Recorded command exit 101; command argv SHA-256
   e535f40e03c7cd48e895dace0edc7ff83c02ad09a44cf0b8426e54fc2fc98605.
+
+- 2026-10-12T11:05:01+00:00: Independent exact-head review of PR #608 at
+  a0d780b0f818f6468bedf07702fc83cc54eebef2: SSH signatures and matching DCO trailers valid on both
+  commits; git diff --check and privacy scan clean; focused command_surface_contract,
+  diagnostic_journey, and asb-cli lib gates pass (437/437). Full cargo test -p asb-cli --tests
+  --offline fails at diagnostic_contract ordinary_cli_producers_are_mechanically_closed: legacy CLI
+  producer lacks reviewed identity for human.rs lines 3570, 3611, 3702-3707. Hosted checks were
+  still pending and no TLC was run. Review disposition: changes requested; do not merge.
