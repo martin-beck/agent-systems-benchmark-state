@@ -41,7 +41,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38199912706 | `6761a6d0bcd5` | push | Repository quality | completed:failure |
 | 38199912699 | `6761a6d0bcd5` | push | Formal assurance | completed:success |
 | 38199912685 | `6761a6d0bcd5` | push | Cross-repository development broker qualification | completed:success |
-| 38199912641 | `6761a6d0bcd5` | push | Rust verification | in_progress:- |
+| 38199912641 | `6761a6d0bcd5` | push | Rust verification | completed:failure |
 | 38199912613 | `6761a6d0bcd5` | push | Emulated aarch64 portability | completed:success |
 | 38199150278 | `d625c822eac5` | pull_request | Credential-free benchmark path | completed:success |
 | 38199150277 | `d625c822eac5` | pull_request | Portable protected-main provenance | completed:success |
