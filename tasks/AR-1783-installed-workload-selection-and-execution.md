@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "PR #596 repaired to single signed/DCO topic commit aca3f79 on current protected base 98327152; portable provenance green and remaining checks running",
-  "task_revision": 267,
+  "task_revision": 268,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:46:17+00:00",
+  "updated_at": "2026-10-12T01:46:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -844,3 +844,6 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:46:17+00:00: Recorded command exit 1; command argv SHA-256
   5c73187eef8b5d4721b28ebe9759e45de0ac45b9687fc6679ef478eba2aa6282.
+
+- 2026-10-12T01:46:26+00:00: Recorded command exit 0; command argv SHA-256
+  cf7636d43a51c6626f20eb542b220961dc2da4a80582bf5a8cffe6571ba33358.
