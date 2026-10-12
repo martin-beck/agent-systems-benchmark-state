@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent review found a full integration-gate regression at exact PR head 5cb931f5.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:23:01+00:00",
+  "updated_at": "2026-10-12T11:23:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -268,3 +268,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   cargo test -p asb-cli --tests --offline passed 437 unit tests plus all applicable integration
   suites; hosted Emulated aarch64 and Policy/coverage/supply-chain checks terminal success, no TLC
   executed. Review disposition accepted for exact head.
+
+- 2026-10-12T11:23:08+00:00: Recorded command exit 0; command argv SHA-256
+  700758e1fbf138bc47ef0b38a5e947d6d89916d45bced0eea81fd69ed0b07923.
