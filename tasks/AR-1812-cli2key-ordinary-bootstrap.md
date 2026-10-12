@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "checkpoint_commit": "5b71c956ea88788c3b303425331e0682c8dbc241",
-  "claim_expires": "2026-10-12T13:49:30+00:00",
+  "claim_expires": "2026-10-12T14:04:45+00:00",
   "depends_on": [
     "AR-1779",
     "AR-1799",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T12:04:29+00:00",
+  "updated_at": "2026-10-12T12:04:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -401,3 +401,5 @@ fixtures and must not require a live provider or TLC.
   AArch64, credential-free path, TUI/PTY, formal/assurance, fuzz/mutation, Loom/Kani, provenance,
   headers, platform and AWQ shadow. No TLC/model-check was used as a development requirement. Review
   does not authorize merge.
+
+- 2026-10-12T12:04:45+00:00: Heartbeat by ar1812-repair-luna56.
