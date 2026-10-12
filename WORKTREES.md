@@ -65,7 +65,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution` | `feature/ar-1783-installed-workload-selection-and-execution` | `aca3f79b3256` | 0 | behind 31, ahead 0 |
 | `agent-systems-benchmark-ar-1798-pinned-source-checkout-acquisition` | `feature/ar-1798-pinned-source-checkout-acquisition` | `55a789348f6f` | 0 | behind 96, ahead 0 |
 | `agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam` | `feature/ar-1799-cli2key-runtime-authority-seam` | `1213928b8724` | 0 | behind 10, ahead 0 |
-| `agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend` | `feature/ar-1800-controlled-local-workload-acquisition-backend` | `b72da478631f` | 0 | behind 30, ahead 3 |
+| `agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend` | `DETACHED` | `1494e4741968` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation` | `feature/ar-1801-tool-discovery-cargo-fixture-isolation` | `e0e44a7d8b45` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority` | `feature/ar-1802-controlled-workload-matrix-and-fixture-authority` | `c9ea7246e6d4` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair` | `feature/ar-1803-deterministic-parallel-fixture-repair` | `547e42dd90c9` | 0 | behind 17, ahead 0 |

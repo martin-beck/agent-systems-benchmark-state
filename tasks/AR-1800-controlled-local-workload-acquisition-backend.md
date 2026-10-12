@@ -9,9 +9,9 @@
   ],
   "id": "AR-1800",
   "next_action": "Blocked on unrelated ambient mini_swe fixture root overlap; AR-1801 owns deterministic Cargo fixture isolation. Preserve exact-main focused workload evidence and resume after AR-1801 repair.",
-  "observed_branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
-  "observed_dirty": 0,
-  "observed_head": "b72da478631faa391f9be75d7cce1e813deb387d",
+  "observed_branch": "DETACHED",
+  "observed_dirty": 1,
+  "observed_head": "1494e4741968f12f2180aeb5e6d62be12ae106bc",
   "owner": "ar1800_local_acquisition_luna56",
   "plan": "../plans/AR-1800-controlled-local-workload-acquisition-backend.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T09:34:50+00:00",
+  "updated_at": "2026-10-12T09:34:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
