@@ -56,7 +56,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1775-configurable-output-router-and-levels` | `feature/ar-1775-configurable-output-router-and-levels` | `d7c08c106e52` | 0 | behind 8, ahead 2 |
 | `agent-systems-benchmark-ar-1779-default-usable-tool-install-command` | `feature/ar-1779-default-usable-tool-install-command` | `daf2d3ee9750` | 0 | behind 27, ahead 4 |
 | `agent-systems-benchmark-ar-1782-verified-asb-workload-installation` | `feature/ar-1782-verified-asb-workload-installation` | `3be3029d7a1d` | 0 | behind 28, ahead 0 |
-| `agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution` | `feature/ar-1783-installed-workload-selection-and-execution` | `db9b1fb8f907` | 0 | behind 0, ahead 4 |
+| `agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution` | `feature/ar-1783-installed-workload-selection-and-execution` | `add5690b8f1c` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar-1798-pinned-source-checkout-acquisition` | `feature/ar-1798-pinned-source-checkout-acquisition` | `55a789348f6f` | 0 | behind 64, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 718, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
