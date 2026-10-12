@@ -260,7 +260,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | ar1812-repair-luna56 | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Refresh exact lib.rs producer identities in diagnostic_legacy_catalog_compact.rs, add reviewed entries for new cli2key mapper producers, then rerun focused and full offline gates. |
+| P0 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | ar1812-repair-luna56 | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Commit signed catalog repair, run full offline workspace tests and applicable format/clippy/docs/build gates via handoffctl; then request independent review and PR. |
 | P0 | [AR-1815](../tasks/AR-1815-protected-main-merge-recovery.md): Protected-main signed merge recovery | ar1805_postmerge_repair | Recover protected-main merge provenance without rewriting the preserved GitHub merge. | Claim a dedicated recovery worktree; use tools/integration/merge_pr.py to create a forward-only signed DCO recovery for preserved merge 15c80511, then review, publish, merge, and verify exact-main gates. |
 
 ### Open (1)

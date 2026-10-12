@@ -1661,7 +1661,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
-| Next action | Refresh exact lib.rs producer identities in diagnostic_legacy_catalog_compact.rs, add reviewed entries for new cli2key mapper producers, then rerun focused and full offline gates. |
+| Next action | Commit signed catalog repair, run full offline workspace tests and applicable format/clippy/docs/build gates via handoffctl; then request independent review and PR. |
 
 ### AR-1813 — Expose cli2key runtime factory contract
 

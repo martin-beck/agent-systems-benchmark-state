@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Refresh exact lib.rs producer identities in diagnostic_legacy_catalog_compact.rs, add reviewed entries for new cli2key mapper producers, then rerun focused and full offline gates.",
+  "next_action": "Commit signed catalog repair, run full offline workspace tests and applicable format/clippy/docs/build gates via handoffctl; then request independent review and PR.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 1,
   "observed_head": "5c75c1a9fe36bb5f08c3cb4ccc20f213d496b65e",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:38:41+00:00",
+  "updated_at": "2026-10-12T11:38:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -209,3 +209,13 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T11:38:41+00:00: Recorded command exit 0; command argv SHA-256
   f4718f399d83002dbb6164028e3aad8c698ac4f0c837165aeb0df032c5c2f262.
+
+- 2026-10-12T11:38:51+00:00: Repair diagnosis confirmed: 5c75c1a added four legacy constructor call
+  sites and shifted the full lib.rs catalog. Mechanically refreshed all 2319 lib.rs identities using
+  source-line diff mapping and added reviewed AR-1812 identities at lines 9161, 9164, 9171, 9248; no
+  parser or diagnostic gate weakening. Focused command succeeded: env PYTHONDONTWRITEBYTECODE=1
+  CARGO_TARGET_DIR=/srv/data/projects/asb-target-ar1812-repair cargo test -p asb-cli --test
+  diagnostic_contract --offline -- --nocapture (9 passed). Initial post-reconcile failures were only
+  generated tools/__pycache__/handoffctl.cpython-312.pyc over 200 KiB; moved recoverably to
+  /srv/data/projects/asb-state-generated-cache-ar1812-20261012 and will invoke handoffctl with
+  PYTHONDONTWRITEBYTECODE=1.
