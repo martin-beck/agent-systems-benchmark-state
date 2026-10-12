@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 338,
+  "task_revision": 339,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T01:29:06+00:00",
+  "updated_at": "2026-10-12T01:29:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -1071,3 +1071,6 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T01:29:06+00:00: Post-merge contract evidence: PR #597 head 9bb7d3f2 merged as 98327152;
   exact-main cargo test -p asb-cli --lib passed 429/429.
+
+- 2026-10-12T01:29:07+00:00: Recorded command exit 0; command argv SHA-256
+  d32fc0198412eef310a2068882e9cbc333d8ea4b9ef5666f05859c8adf8cbb56.
