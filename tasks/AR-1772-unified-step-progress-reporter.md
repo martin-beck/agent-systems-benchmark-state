@@ -9,7 +9,7 @@
   "id": "AR-1772",
   "next_action": "Obtain independent review of exact commit, run required full checks, then publish reviewed PR and post-merge acceptance.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
-  "observed_dirty": 1,
+  "observed_dirty": 3,
   "observed_head": "10e336655e39ce9eff0b30770348e72c92aa4e98",
   "owner": "ar1772-progress-reporter-luna56",
   "plan": "../plans/AR-1772-unified-step-progress-reporter.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:14:24+00:00",
+  "updated_at": "2026-10-12T02:14:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
