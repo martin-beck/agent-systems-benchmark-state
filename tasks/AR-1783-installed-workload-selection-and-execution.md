@@ -11,8 +11,8 @@
   "id": "AR-1783",
   "next_action": "Poll PR #587 checks only after meaningful head change; require Policy/coverage/supply-chain and Rust verification green, independent exact-head review, then merge and post-merge verify before accept/release.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
-  "observed_dirty": 1,
-  "observed_head": "f4fe84a0936a26df85f8e4f98b913c924f779c46",
+  "observed_dirty": 0,
+  "observed_head": "e644f9b02c5b3f7d46b051691accc249fa8a3585",
   "owner": "ar1783_workload_selection_luna56",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair reviewed CLI identity catalog and requalify signed PR head f4fe84a0",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:44:45+00:00",
+  "updated_at": "2026-10-12T00:44:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
