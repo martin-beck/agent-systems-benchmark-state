@@ -59,9 +59,30 @@
         "stage": "role",
         "task_id": "AR-1813",
         "task_revision": 18
+      },
+      {
+        "action": "open",
+        "after": [
+          {
+            "digest": "sha256:520987deedc4089478ff58428040d951009fa41d95e13d97760a45e45fbab915",
+            "ref": "specs/AR-1813.json"
+          }
+        ],
+        "before": [
+          {
+            "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
+            "ref": "review/accepted"
+          }
+        ],
+        "disposition": "unresolved",
+        "public_ref": "AR-1813/spec-520987de",
+        "recorded_at": "2026-10-12T10:51:40+00:00",
+        "stage": "spec",
+        "task_id": "AR-1813",
+        "task_revision": 21
       }
     ],
-    "open_stage": null,
+    "open_stage": "spec",
     "reconciliation_required": false,
     "required": true,
     "stage_sequence": [
@@ -86,9 +107,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:50:23+00:00",
+  "updated_at": "2026-10-12T10:51:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -148,3 +169,6 @@ fabricate authority in the CLI or introduce a provider fallback.
 - 2026-10-12T10:47:14+00:00: Heartbeat by ar1810-cli2key-luna56.
 
 - 2026-10-12T10:50:23+00:00: Heartbeat by ar1810-cli2key-luna56.
+
+- 2026-10-12T10:51:40+00:00: Recorded open interaction gate spec;
+  event=sha256:84b44547c3796c5b319512dc3168f86923bc90da67d65a275ced49f8936813d7.
