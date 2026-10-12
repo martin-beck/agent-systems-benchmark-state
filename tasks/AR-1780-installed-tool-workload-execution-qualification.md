@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Installed tool and workload execution qualification",
-  "updated_at": "2026-10-12T02:09:10+00:00",
+  "updated_at": "2026-10-12T02:09:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1780-installed-tool-workload-execution-qualification"
 }
 ---
@@ -56,3 +56,6 @@ hosted qualification absence is not a blocker for this development evidence.
 - 2026-10-12T02:09:08+00:00: dependencies verified: AR-1764, AR-1779, AR-1783 done
 
 - 2026-10-12T02:09:10+00:00: Claimed by ar1780_workload_qualification_luna56.
+
+- 2026-10-12T02:09:14+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
