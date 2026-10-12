@@ -11,8 +11,8 @@
   "id": "AR-1783",
   "next_action": "Do not repeat gh pr checks while unchanged: exact head 6ec4d6b1 has three pending jobs (Emulated aarch64, Policy/coverage/supply chain, Rust verification); all completed checks are green. Poll only after a meaningful state change or lease heartbeat.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
-  "observed_dirty": 3,
-  "observed_head": "6ec4d6b19b6bca3839a82af4e501e20d75548f24",
+  "observed_dirty": 0,
+  "observed_head": "f4fe84a0936a26df85f8e4f98b913c924f779c46",
   "owner": "ar1783_workload_selection_luna56",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Select every development external workload and prove ASB uses its exact project-local identity end to end.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:38:26+00:00",
+  "updated_at": "2026-10-12T00:38:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
