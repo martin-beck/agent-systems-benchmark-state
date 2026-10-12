@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T04:17:10+00:00",
+  "updated_at": "2026-10-12T04:17:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -332,3 +332,6 @@ remains explicitly unaccepted and blocked until this repair is complete.
   merge 1ce208b4, preserving reviewed head c9ea7246 and matching DCO. Fresh detached worktree at
   origin/main=1ce208b4 ran make test through handoffctl and exited 0; workspace fmt, Clippy, tests,
   contract/provenance, and rustdoc gates passed. Hosted PR checks all 15 SUCCESS; merge state CLEAN.
+
+- 2026-10-12T04:17:28+00:00: Recorded command exit 0; command argv SHA-256
+  3e273f0fa3db565a19beedbe244ad7e19b9b4338304211fdd1248f2d605930ab.
