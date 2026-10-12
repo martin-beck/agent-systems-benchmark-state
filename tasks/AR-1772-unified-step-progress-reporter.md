@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:09:52+00:00",
+  "updated_at": "2026-10-12T02:10:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -99,3 +99,6 @@ allowed outside this helper.
   compile failed because reporter took stdout/stderr by value. Reborrow fix applied. Prior exact
   compiler diagnostics: E0382 borrow of moved stderr/stdout at lib.rs:271/280; recommended &mut *
   reborrow. One post-reconcile run was also blocked by generated handoffctl.pyc >200 KiB.
+
+- 2026-10-12T02:10:31+00:00: Recorded command exit 0; command argv SHA-256
+  30750a6ed153fa6ade122ac0af3ea5d7f30be20442f77a0117ba6d9ab6365c54.
