@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1817-schema-oracle-gate",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T15:15:25+00:00",
+  "claim_expires": "2026-10-12T15:18:38+00:00",
   "depends_on": [],
   "id": "AR-1817",
   "next_action": "Promote the schema-contract repair, add the documented oracle_gate shape and regression coverage, then independently review and run exact-head coordination CI before merging.",
@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Align task schema with oracle gate contract",
-  "updated_at": "2026-10-12T13:15:37+00:00",
+  "updated_at": "2026-10-12T13:18:38+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1817-schema-oracle-gate"
 }
 ---
@@ -39,3 +39,5 @@ do not make the schema permissive or alter AR-1816 implementation state.
 
 - 2026-10-12T13:15:37+00:00: Bound worktree agent-systems-benchmark-state-ar-1817-schema-oracle-gate
   on branch feature/ar-1817-schema-oracle-gate.
+
+- 2026-10-12T13:18:38+00:00: Heartbeat by ar1817_schema_contract.
