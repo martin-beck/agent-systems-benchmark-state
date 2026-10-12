@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Add a runtime-owned cli2key authority seam that binds the verified bridge receipt, preserves key privacy, and issues a live attempt consumable by the Codex adapter.",
+  "next_action": "Implement runtime-only receipt-to-Cli2KeySidecar bootstrap and opaque LiveProviderAttempt issuance; add hostile lifecycle matrix before CLI integration.",
   "owner": "codex-ar1799-authority-luna56",
   "plan": "../plans/AR-1799-cli2key-runtime-authority-seam.md",
   "priority": "P0",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T02:07:38+00:00",
+  "updated_at": "2026-10-12T02:07:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -40,3 +40,6 @@ verified AR-1779 receipt, supervise one sidecar per run or bounded sweep, and
 issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T02:07:38+00:00: Claimed by codex-ar1799-authority-luna56.
+
+- 2026-10-12T02:07:46+00:00: Claimed after removing blocked AR-1797 from dependency list; AR-1797
+  remains the blocked consumer integration task and retains successor evidence.

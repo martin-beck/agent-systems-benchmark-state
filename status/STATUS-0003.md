@@ -1476,7 +1476,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
-| Next action | Add a runtime-owned cli2key authority seam that binds the verified bridge receipt, preserves key privacy, and issues a live attempt consumable by the Codex adapter. |
+| Next action | Implement runtime-only receipt-to-Cli2KeySidecar bootstrap and opaque LiveProviderAttempt issuance; add hostile lifecycle matrix before CLI integration. |
 
 
 ## Dependency graph
