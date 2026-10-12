@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T13:59:57+00:00",
   "depends_on": [],
   "id": "AR-1815",
-  "next_action": "PR #609 exact head ab4f4c6a81f543e049759d199cca675c7370a1dc has all required PR checks terminal-success. Obtain independent exact-head review/approval, then run merge_pr.py with expected base 15c80511, topic head ab4f4c6a, and exact reviewed tree before protected publication.",
+  "next_action": "Protected publication succeeded as exact signed merge e57982a79fafa464bfac6b3c858226ffe08737e7. Monitor every exact-main workflow for this SHA to terminal-success, then write bounded receipt and release AR-1815 done.",
   "observed_branch": "recovery/ar-1815-provenance",
   "observed_dirty": 0,
   "observed_head": "ab4f4c6a81f543e049759d199cca675c7370a1dc",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T11:59:57+00:00",
+  "updated_at": "2026-10-12T12:00:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -110,3 +110,8 @@ introduce a TLC/model-check dependency for development.
   28900371f2089412eeacbcf5de9ffd2ed9a5068dcba5b68357bf245e591dcd37.
 
 - 2026-10-12T11:59:57+00:00: Heartbeat by ar1805_postmerge_repair.
+
+- 2026-10-12T12:00:00+00:00: merge_pr.py --push published forward-only signed two-parent merge
+  e57982a79fafa464bfac6b3c858226ffe08737e7 with first parent preserved 15c80511, reviewed topic
+  ab4f4c6a, tree 60b7fca3; no web merge, force update, or gate weakening. Exact-main workflows
+  started; provenance and headers already green.
