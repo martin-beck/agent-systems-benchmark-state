@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T13:59:57+00:00",
   "depends_on": [],
   "id": "AR-1815",
-  "next_action": "Exact merge e57982a is published. Repository quality attempt 3 failed at source_checkout::tests::exact_fixture_checkout_is_returned_and_cleanup_is_explicit (436 passed, 1 failed, Err(Unavailable)); independent local reproduction on current main passed 5/5. Rerun only Repository quality to classify runner flake, then require all exact-main workflows terminal-success.",
+  "next_action": "Exact merge e57982a is published. Repository quality attempt 4 is in progress after attempt 3 non-reproducible source_checkout Err(Unavailable); monitor attempt 4 and all remaining exact-main workflows to terminal-success before receipt/release.",
   "observed_branch": "recovery/ar-1815-provenance",
   "observed_dirty": 0,
   "observed_head": "ab4f4c6a81f543e049759d199cca675c7370a1dc",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:12:45+00:00",
+  "updated_at": "2026-10-12T12:13:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -151,3 +151,8 @@ introduce a TLC/model-check dependency for development.
 
 - 2026-10-12T12:12:45+00:00: Recorded command exit 0; command argv SHA-256
   ee0828b2e7ad086de644de4f38823e83462721ce84eb45f16d6c8557ef024050.
+
+- 2026-10-12T12:13:14+00:00: Authoritative GitHub API confirms Repository quality run 38246184722
+  attempt 4 is in_progress. Attempt 3 failed one source_checkout fixture test, while independent
+  local repeated run passed 5/5. Rerun is bounded classification evidence; no product changes or
+  gate weakening.
