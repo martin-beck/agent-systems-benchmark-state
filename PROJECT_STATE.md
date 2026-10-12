@@ -36,7 +36,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38191903438 | `98327152f2e9` | push | Repository quality | in_progress:- |
 | 38191903413 | `98327152f2e9` | push | Portable protected-main provenance | completed:success |
-| 38191903388 | `98327152f2e9` | push | Cross-repository development broker qualification | in_progress:- |
+| 38191903388 | `98327152f2e9` | push | Cross-repository development broker qualification | completed:success |
 | 38191903385 | `98327152f2e9` | push | Emulated aarch64 portability | in_progress:- |
 | 38191903383 | `98327152f2e9` | push | Rust verification | in_progress:- |
 | 38191903382 | `98327152f2e9` | push | Formal assurance | in_progress:- |
