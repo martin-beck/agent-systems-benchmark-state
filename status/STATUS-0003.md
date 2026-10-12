@@ -1620,11 +1620,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1811-formal-separation-luna56 |
 | Parent | None |
 | Children | None |
 | Summary | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. |
@@ -2501,7 +2501,7 @@ flowchart LR
         AR_1807["AR-1807 - Planned"]:::status_planned
         AR_1808["AR-1808 - Planned"]:::status_planned
         AR_1809["AR-1809 - Planned"]:::status_planned
-        AR_1811["AR-1811 - Open"]:::status_open
+        AR_1811["AR-1811 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
