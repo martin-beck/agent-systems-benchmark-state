@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Do not repeat gh pr checks while unchanged: exact head 6ec4d6b1 has three pending jobs (Emulated aarch64, Policy/coverage/supply chain, Rust verification); all completed checks are green. Poll only after a meaningful state change or lease heartbeat.",
+  "next_action": "Poll PR #587 checks only after meaningful head change; require Policy/coverage/supply-chain and Rust verification green, independent exact-head review, then merge and post-merge verify before accept/release.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "f4fe84a0936a26df85f8e4f98b913c924f779c46",
@@ -28,10 +28,10 @@
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
-  "summary": "Select every development external workload and prove ASB uses its exact project-local identity end to end.",
-  "task_revision": 96,
+  "summary": "Repair reviewed CLI identity catalog and requalify signed PR head f4fe84a0",
+  "task_revision": 97,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:38:33+00:00",
+  "updated_at": "2026-10-12T00:38:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -299,3 +299,17 @@ the suite from this end-to-end path.
 
 - 2026-10-12T00:38:33+00:00: Recorded command exit 0; command argv SHA-256
   32d00e7bea48deb591900624d4de1f837dadd9a3cd5c55c2ee1561f8660d7fe2.
+
+- 2026-10-12T00:38:58+00:00: Concrete hosted failure repaired: PR #587 Rust run 38187409948/job
+  114612678937 and Policy run 38187409894/job 114612676006 failed at
+  crates/asb-cli/tests/diagnostic_contract.rs:554, ordinary_cli_producers_are_mechanically_closed,
+  with every quarantined legacy producer needs a reviewed call-site identity; missing lib.rs
+  identities began at lines 9104/9110/9138 and continued through the shifted legacy producers. The
+  repeated exit 8 was gh pr checks pending status (and earlier generated handoffctl.pyc
+  oversized-state guard), not a product test; no unchanged retry was used. Repair preserves strict
+  matching: validation is bound through ProjectExecution::bind_plan, and AR-1783 adds exact reviewed
+  identities for new/shifted project_run producers in diagnostic_legacy_catalog_compact.rs. Signed
+  DCO product commit f4fe84a0 pushed to PR #587. Local evidence on exact tree: diagnostic_contract
+  9/9 passed; project_run tests 3/3 passed; cargo fmt check passed; workspace clippy -D warnings
+  passed; locked offline workspace tests completed without failure. Await hosted exact-head
+  checks/review; PR remains open and AR remains in_progress.

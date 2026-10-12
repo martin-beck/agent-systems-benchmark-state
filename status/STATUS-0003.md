@@ -1251,8 +1251,8 @@
 | Owner | ar1783_workload_selection_luna56 |
 | Parent | None |
 | Children | None |
-| Summary | Select every development external workload and prove ASB uses its exact project-local identity end to end. |
-| Next action | Do not repeat gh pr checks while unchanged: exact head 6ec4d6b1 has three pending jobs (Emulated aarch64, Policy/coverage/supply chain, Rust verification); all completed checks are green. Poll only after a meaningful state change or lease heartbeat. |
+| Summary | Repair reviewed CLI identity catalog and requalify signed PR head f4fe84a0 |
+| Next action | Poll PR #587 checks only after meaningful head change; require Policy/coverage/supply-chain and Rust verification green, independent exact-head review, then merge and post-merge verify before accept/release. |
 
 ### AR-1784 — Command dependency registry and preflight
 
