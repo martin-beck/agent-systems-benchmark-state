@@ -8,7 +8,7 @@
     "AR-1799"
   ],
   "id": "AR-1813",
-  "next_action": "Exact-main merge 5c843a12 is published and currently has 7/10 terminal-success workflows. Emulated aarch64, Repository quality, and Rust verification remain in progress; wait for all three terminal results before releasing AR-1813.",
+  "next_action": "Exact-main merge 5c843a12 is verified by 9/10 terminal-success workflows; Repository quality run 38239012450 remains in progress with no failure. Wait for its terminal result, then record final post-merge receipt and release AR-1813 done.",
   "observed_branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "observed_dirty": 0,
   "observed_head": "7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
@@ -172,7 +172,7 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Expose cli2key runtime factory contract",
   "updated_at": "2026-10-12T11:03:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
@@ -263,3 +263,6 @@ fabricate authority in the CLI or introduce a provider fallback.
 - 2026-10-12T10:56:48+00:00: Refreshed post-merge observation; no failures and no TLC requirement.
 
 - 2026-10-12T11:03:22+00:00: Heartbeat by ar1810-cli2key-luna56.
+
+- 2026-10-12T11:03:22+00:00: Rust verification completed successfully; Repository quality is the
+  only remaining authoritative post-merge gate.
