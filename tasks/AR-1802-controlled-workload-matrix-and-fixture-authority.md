@@ -10,7 +10,7 @@
   "id": "AR-1802",
   "next_action": "Independent review is required for signed head 97f6c271; hosted exact-head CI and full lifecycle/offline matrix remain outstanding.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "5bbfe76b8b00a28b8b38548226c82f562f90b129",
   "owner": "ar1802-workload-matrix-luna56",
   "plan": "../plans/AR-1802-controlled-workload-matrix-and-fixture-authority.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:34:57+00:00",
+  "updated_at": "2026-10-12T03:35:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
