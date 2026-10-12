@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:52:55+00:00",
+  "updated_at": "2026-10-12T02:53:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -163,3 +163,6 @@ before AR-1801 can be accepted.
   semaphore. This preserves the original lib.rs line count/catalog identities and passes cargo fmt
   --all -- --check via handoffctl (exit 0). The previous f7e206 exit-1 was therefore a
   formatting/setup gate failure and is repaired; no qualification claim was attached.
+
+- 2026-10-12T02:53:03+00:00: Recorded command exit 2; command argv SHA-256
+  3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
