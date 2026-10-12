@@ -157,11 +157,13 @@
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_ref": "specs/AR-1811.json",
+  "spec_revision": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T10:25:11+00:00",
+  "updated_at": "2026-10-12T10:38:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -316,3 +318,5 @@ tests and update the generated quality documentation.
 
 - 2026-10-12T10:25:11+00:00: Recorded command exit 1; command argv SHA-256
   c64532d2240f0635cac81226cc4d98546ea999bf320f9358045a0a58b18f522e.
+
+- 2026-10-12T10:38:20+00:00: Bound task spec specs/AR-1811.json revision 1.
