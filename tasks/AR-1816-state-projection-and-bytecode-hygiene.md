@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "repair/ar-1816-projection-hygiene",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-12T14:40:50+00:00",
   "depends_on": [],
@@ -14,10 +14,10 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Coordinator projection and bytecode hygiene recovery",
-  "updated_at": "2026-10-12T12:41:11+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-10-12T12:41:25+00:00",
+  "worktree_key": "agent-systems-benchmark-state-ar1816-projection-hygiene"
 }
 ---
 
@@ -51,3 +51,6 @@ bytecode, credentials, or host-private runtime configuration may enter commits.
 
 - 2026-10-12T12:41:11+00:00: Recorded command exit 0; command argv SHA-256
   99be4e722646927da94d62e568b3dca6f55d686c88195f84abbcebd396588338.
+
+- 2026-10-12T12:41:25+00:00: Bound worktree agent-systems-benchmark-state-ar1816-projection-hygiene
+  on branch repair/ar-1816-projection-hygiene.
