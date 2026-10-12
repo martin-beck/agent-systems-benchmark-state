@@ -255,6 +255,12 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1813](../tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | ar1810-cli2key-luna56 | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | PR #607 rebased exact head 7889b3bad4c03d1caca5eaa28ffd53b367ebf445; hosted non-TLC checks are running. Focused/full non-TLC gates pass; obtain independent review, then protected exact-head merge and post-merge verification. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Unclaimed | Define one complete machine-checked inventory of every public ASB command and subcommand surface. | Create the canonical public command-surface manifest and contract tests. |
+
 ### Blocked (86)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -346,7 +352,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (85)
+### Planned (84)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -390,7 +396,6 @@
 | P0 | [AR-1697](../tasks/AR-1697.md): Channel specification and current-head qualification repair | Unclaimed | Repair the missing authoritative channel specs and requalify ASB/TUI channel propagation, manifest provenance, compatibility, and default-dev quickstart at current main heads. | Complete valid AR-1674/1675-compatible state specifications, then run the current-head channel and quickstart matrix against ASB ad43609b and TUI 1cf4b43d without closing predecessor ARs from stale receipts. |
 | P0 | [AR-1703](../tasks/AR-1703.md): Current-main TUI live-control qualification | Unclaimed | Qualify and repair the exact current asb-tui main PTY/control journey against ASB development live recording without pinning an older frontend or weakening live semantics. | Reproduce the current-main PTY action gap, repair the owning boundary, then run the exact paired live/offline journey with a real OpenRouter key when supplied and credential-free negative checks otherwise. |
 | P0 | [AR-1774](../tasks/AR-1774-status-progress-completeness-ci.md): Status and progress completeness CI | Unclaimed | Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode. | Add required CI enforcement and controlled-defect tests for quiet, status, and progress completeness after universal instrumentation lands. |
-| P0 | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Unclaimed | Define one complete machine-checked inventory of every public ASB command and subcommand surface. | Create the canonical public command-surface manifest and contract tests. |
 | P0 | [AR-1806](../tasks/AR-1806-human-output-contract-audit.md): Exhaustive Human Output Contract Audit | Unclaimed | Guarantee clear human-default success, warning, and failure journeys for every ASB CLI route. | Implement route-by-route human-output journey tests and repair non-human default output. |
 | P0 | [AR-1807](../tasks/AR-1807-complete-help-contract.md): Complete Contextual CLI Help Contract | Unclaimed | Provide useful --help on every ASB command and subcommand, including the TUI lifecycle. | Implement and test complete contextual help for every public command path. |
 | P0 | [AR-1808](../tasks/AR-1808-universal-list-selection-contract.md): Universal List and Selection Contract | Unclaimed | Make every ASB command discover its valid choices through a consistent, typed --list interface. | Define and implement the universal --list discovery and selection contract. |

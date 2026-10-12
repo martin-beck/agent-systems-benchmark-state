@@ -3,7 +3,9 @@
   "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1773"],
+  "depends_on": [
+    "AR-1773"
+  ],
   "id": "AR-1805",
   "next_action": "Create the canonical public command-surface manifest and contract tests.",
   "observed_branch": "",
@@ -13,14 +15,21 @@
   "plan": "../plans/AR-1805-cli-surface-inventory-contract.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class":"contract-test","evidence_digest":"","evidence_ref":"","spec_ref":"specs/AR-1805.json","spec_revision":1,"status":"pending"},
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1805.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1805.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Define one complete machine-checked inventory of every public ASB command and subcommand surface.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T10:15:00+00:00",
+  "updated_at": "2026-10-12T10:47:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -41,3 +50,5 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 - Cover root, project, config, auth, provider, agent, model/catalog, tool,
   workload, run, sweep, report, compare, replay, serve/control, easy, and TUI
   routes; aliases and error-only paths are not exempt.
+
+- 2026-10-12T10:47:39+00:00: AR-1773 is done; dependency-safe P0 CLI contract work is ready
