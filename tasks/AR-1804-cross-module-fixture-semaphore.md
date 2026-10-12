@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T03:17:16+00:00",
+  "updated_at": "2026-10-12T03:17:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -497,3 +497,6 @@ before AR-1801 can be accepted.
   fmt and focused semaphore tests pass. PR #598 branch now updates from reviewed 4cda972c to
   d625c822, so CI must be evaluated at the new exact head. Prior hosted failures were header-only
   and are repaired.
+
+- 2026-10-12T03:17:19+00:00: Recorded command exit 0; command argv SHA-256
+  f7f8e8efe8f86101748a4fc801a002ccb36a7ee3b6431c65e7267146941a0786.
