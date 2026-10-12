@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Independent review found a full-gate regression at exact PR head a0d780b0.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T11:06:15+00:00",
+  "updated_at": "2026-10-12T11:06:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -207,3 +207,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
 
 - 2026-10-12T11:06:15+00:00: Recorded command exit 0; command argv SHA-256
   48b75ec0431f217b7d1f9a2964a5a9cbf647f9b16e8c15d68d0e40ca11aa1381.
+
+- 2026-10-12T11:06:23+00:00: Recorded command exit 0; command argv SHA-256
+  2aa764634b50a5fec8cc28d39f303117e8ad4cf857f66d269b098312732c9776.
