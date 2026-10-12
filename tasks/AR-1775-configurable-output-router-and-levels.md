@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 160,
+  "task_revision": 161,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:42:32+00:00",
+  "updated_at": "2026-10-12T00:42:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -515,3 +515,6 @@ stdout envelope and silences all human/operational output on both streams.
   post-reconcile initially failed because tools/__pycache__/handoffctl.cpython-312.pyc exceeded 200
   KiB; exact generated file was removed via handoffctl run with PYTHONDONTWRITEBYTECODE=1, then
   state command completed successfully. No red product revision published.
+
+- 2026-10-12T00:42:38+00:00: Recorded command exit 1; command argv SHA-256
+  d731fd871cc7a29b0691dfa4ef4fe2a48c8f05d29a43b6fa7e95adf7e1b580b2.
