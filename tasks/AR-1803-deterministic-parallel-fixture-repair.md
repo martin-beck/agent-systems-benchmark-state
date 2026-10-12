@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
-  "checkpoint_commit": "56db629d58b725114b10e6fad8cc4772b16834d0",
+  "checkpoint_commit": "85058a9ace7726b1ba9beecaa503b164dc8b5247",
   "claim_expires": "2026-10-12T04:16:13+00:00",
   "depends_on": [
     "AR-1762"
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T03:46:11+00:00",
+  "updated_at": "2026-10-12T03:48:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -235,3 +235,5 @@ as the affected successor linkage and evidence source.
   AR-1796: expired claim. Classification: unrelated coordinator-state validation failure, not
   product qualification. Preserve clean product head and retry only after state validation is
   repaired.
+
+- 2026-10-12T03:48:13+00:00: Checkpointed source commit 85058a9ace7726b1ba9beecaa503b164dc8b5247.
