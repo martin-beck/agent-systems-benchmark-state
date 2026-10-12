@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `3c7ca1c1f307a7f2fea9f1cc80924901cda2ddba`
-- Local origin/main: `1ce208b4e5738b9608b3f2d454d0a6a0dfbeb323`
+- Local origin/main: `3c7ca1c1f307a7f2fea9f1cc80924901cda2ddba`
 - Primary worktree head: `98327152f2e92308b5bcf5b21cfe0c9f285cf950`
 
 ## Open pull requests
@@ -35,7 +35,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38204881830 | `3c7ca1c1f307` | push | Repository quality | in_progress:- |
 | 38204881819 | `3c7ca1c1f307` | push | Fault assurance | in_progress:- |
-| 38204881812 | `3c7ca1c1f307` | push | Portable protected-main provenance | in_progress:- |
+| 38204881812 | `3c7ca1c1f307` | push | Portable protected-main provenance | completed:failure |
 | 38204881806 | `3c7ca1c1f307` | push | Credential-free benchmark path | in_progress:- |
 | 38204881799 | `3c7ca1c1f307` | push | Rust verification | in_progress:- |
 | 38204881783 | `3c7ca1c1f307` | push | Hosted portability and native qualification | in_progress:- |
