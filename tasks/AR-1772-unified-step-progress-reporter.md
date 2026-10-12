@@ -7,7 +7,7 @@
     "AR-1775"
   ],
   "id": "AR-1772",
-  "next_action": "Repair mutable writer reborrow from focused compiler diagnostics, rerun reporter tests, then run full asb-cli checks.",
+  "next_action": "Obtain independent review of exact commit, run required full checks, then publish reviewed PR and post-merge acceptance.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "10e336655e39ce9eff0b30770348e72c92aa4e98",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:10:59+00:00",
+  "updated_at": "2026-10-12T02:11:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -108,3 +108,7 @@ allowed outside this helper.
 
 - 2026-10-12T02:10:57+00:00: Recorded command exit 0; command argv SHA-256
   7a66eb479f3d92a2841b13cd4eab1c8fb2d2db58ee4a0a601e07d1f97fbba3f6.
+
+- 2026-10-12T02:11:16+00:00: Checkpoint commit 10e336655e39ce9eff0b30770348e72c92aa4e98: signed
+  AR-1772 reporter module, router-owned human construction, deterministic clock tests. Focused cargo
+  test -p asb-cli step_progress passes 3 tests.
