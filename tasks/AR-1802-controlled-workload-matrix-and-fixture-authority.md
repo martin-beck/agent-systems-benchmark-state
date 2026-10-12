@@ -8,7 +8,7 @@
     "AR-1783"
   ],
   "id": "AR-1802",
-  "next_action": "Repair AR-1800 acceptance gaps: development-only fixture authority, complete every-workload lifecycle matrix, offline qualification, hostile identity/size cases, and acquisition-vs-benchmark failure separation.",
+  "next_action": "Run full asb-cli gate; then commit signed fixture-authority repair and request independent review. Full lifecycle/offline matrix remains to be verified.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "observed_dirty": 1,
   "observed_head": "b72da478631faa391f9be75d7cce1e813deb387d",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T02:34:50+00:00",
+  "updated_at": "2026-10-12T02:35:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -62,3 +62,10 @@ remains explicitly unaccepted and blocked until this repair is complete.
 
 - 2026-10-12T02:34:50+00:00: Recorded command exit 0; command argv SHA-256
   696fb86c86bee70a1ac26ccc27b0c78667af11adbaf6fad04bf29dbbff74be8f.
+
+- 2026-10-12T02:35:02+00:00: Implemented explicit development fixture authority predicate requiring
+  ASB_CI_CREDENTIAL_FREE (1/true/yes) and ASB_DEVELOPMENT_FIXTURE_AUTHORITY=1 before fixture
+  acquisition; added positive/negative authority matrix and sparse 512MiB+ archive rejection tests.
+  Focused tests fixture_authority_requires_credential_free_development_context and
+  fixture_acquisition_is_url_bound_bounded_and_network_free passed via handoffctl run. Product
+  worktree remains dirty pending signed commit.
