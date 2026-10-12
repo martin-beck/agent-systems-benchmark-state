@@ -1705,11 +1705,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1816_projection_hygiene |
 | Parent | None |
 | Children | None |
 | Summary | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. |
@@ -2592,7 +2592,7 @@ flowchart LR
         AR_1813["AR-1813 - Done"]:::status_done
         AR_1814["AR-1814 - Done"]:::status_done
         AR_1815["AR-1815 - Done"]:::status_done
-        AR_1816["AR-1816 - Open"]:::status_open
+        AR_1816["AR-1816 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

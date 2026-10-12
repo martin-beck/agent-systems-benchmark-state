@@ -266,18 +266,18 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1774](../tasks/AR-1774-status-progress-completeness-ci.md): Status and progress completeness CI | ar1774-status-ci-luna56 | Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode. | Add required CI enforcement and controlled-defect tests for quiet, status, and progress completeness after universal instrumentation lands. |
+| P0 | [AR-1816](../tasks/AR-1816-state-projection-and-bytecode-hygiene.md): Coordinator projection and bytecode hygiene recovery | ar1816_projection_hygiene | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. | Implement a lock-aware, atomic reconciliation path and bytecode-safe coordinator execution, then qualify recovery under concurrent state activity. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1805](../tasks/AR-1805-cli-surface-inventory-contract.md): CLI Surface Inventory and UX Contract | Unclaimed | Independent exact-head review accepted PR #608 at 0fec6465. | Create and claim a narrowly scoped forward-only provenance-recovery successor for PR #608; use tools/integration/merge_pr.py from clean exact base 5c843a12 and reviewed topic 0fec6465, publish signed local merge, then watch all exact-main gates. |
-| P0 | [AR-1816](../tasks/AR-1816-state-projection-and-bytecode-hygiene.md): Coordinator projection and bytecode hygiene recovery | Unclaimed | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. | Implement a lock-aware, atomic reconciliation path and bytecode-safe coordinator execution, then qualify recovery under concurrent state activity. |
 
 ### Blocked (85)
 
