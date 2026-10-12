@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T02:25:18+00:00",
+  "updated_at": "2026-10-12T02:25:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -138,3 +138,14 @@ must not weaken production acquisition, identity, or offline guarantees.
 
 - 2026-10-12T02:25:16+00:00: Recorded command exit 0; command argv SHA-256
   e136e25bf4536926170f545fa84a0277e45a5f686a65bced36f56001574c5939.
+
+- 2026-10-12T02:25:27+00:00: Exact exit-101 diagnosis: full `cargo test --locked --workspace
+  --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend/Cargo.toml`
+  reached asb-cli diagnostic_contract and failed `ordinary_cli_producers_are_mechanically_closed` at
+  crates/asb-cli/tests/diagnostic_contract.rs:554. Assertion reported missing reviewed identities
+  beginning at lib.rs callsites 4449, 4466, 4475, 4487 and subsequent shifted producers. Root cause
+  was inserting the fixture helper/test into lib.rs without regenerating the line-bound legacy
+  diagnostic catalog. Repair regenerated the AR-1800 reviewed callsite identities against current
+  source lines; the focused diagnostic test now passes. No credential, provider, or fixture-boundary
+  weakening occurred.
