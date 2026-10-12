@@ -9,8 +9,8 @@
   "id": "AR-1772",
   "next_action": "Repair mutable writer reborrow from focused compiler diagnostics, rerun reporter tests, then run full asb-cli checks.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
-  "observed_dirty": 2,
-  "observed_head": "98327152f2e92308b5bcf5b21cfe0c9f285cf950",
+  "observed_dirty": 0,
+  "observed_head": "10e336655e39ce9eff0b30770348e72c92aa4e98",
   "owner": "ar1772-progress-reporter-luna56",
   "plan": "../plans/AR-1772-unified-step-progress-reporter.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:10:57+00:00",
+  "updated_at": "2026-10-12T02:10:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
