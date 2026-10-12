@@ -12,7 +12,7 @@
   "next_action": "AR-1813 is the promoted prerequisite for the runtime-owned receipt and opaque factory contract. After it merges, re-open and claim AR-1812, then wire the verified receipt into ordinary run/sweep dispatch and complete review, merge, and post-merge verification.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
-  "observed_head": "07c590e712df11e555228abf1b9de4add3510d4f",
+  "observed_head": "5c843a12e976bc7be6c32e9fc653e566bdf20450",
   "owner": "ar1810-cli2key-luna56",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:09:52+00:00",
+  "updated_at": "2026-10-12T11:09:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
