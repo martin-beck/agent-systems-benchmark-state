@@ -56,7 +56,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1775-configurable-output-router-and-levels` | `feature/ar-1775-configurable-output-router-and-levels` | `d7c08c106e52` | 0 | behind 6, ahead 4 |
 | `agent-systems-benchmark-ar-1779-default-usable-tool-install-command` | `feature/ar-1779-default-usable-tool-install-command` | `daf2d3ee9750` | 0 | behind 23, ahead 4 |
 | `agent-systems-benchmark-ar-1782-verified-asb-workload-installation` | `feature/ar-1782-verified-asb-workload-installation` | `3be3029d7a1d` | 0 | behind 24, ahead 0 |
-| `agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution` | `feature/ar-1783-installed-workload-selection-and-execution` | `ad64a90f198d` | 0 | behind 1, ahead 1 |
+| `agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution` | `feature/ar-1783-installed-workload-selection-and-execution` | `cdf8b131ba1e` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar-1798-pinned-source-checkout-acquisition` | `feature/ar-1798-pinned-source-checkout-acquisition` | `55a789348f6f` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 714, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
@@ -269,7 +269,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1761-review` | `DETACHED` | `644085ecd2f3` | 0 | behind 333, ahead 6 |
 | `asb-ar1775-v2` | `feature/ar-1775-configurable-output-router-and-levels-v2` | `c6cddcaf76cb` | 0 | behind 6, ahead 3 |
 | `asb-ar1775-v3` | `feature/ar-1775-configurable-output-router-and-levels-v3` | `d490431b3279` | 0 | behind 6, ahead 4 |
-| `asb-ar1775-v4` | `feature/ar-1775-configurable-output-router-and-levels-v8` | `f805a4e46c98` | 0 | behind 6, ahead 3 |
+| `asb-ar1775-v4` | `feature/ar-1775-configurable-output-router-and-levels-v8` | `f805a4e46c98` | 1 | behind 6, ahead 3 |
+| changed files | - | - | - | `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `asb-ar1782-postmerge-clean-luna56` | `DETACHED` | `0a2039c448d4` | 0 | behind 6, ahead 0 |
 | `asb-ar1785-merge` | `DETACHED` | `16d8512debab` | 0 | behind 201, ahead 0 |
 | `asb-ar1785-postmerge` | `DETACHED` | `daae06efa2d7` | 0 | behind 197, ahead 0 |
