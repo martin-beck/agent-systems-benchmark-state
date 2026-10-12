@@ -185,6 +185,7 @@
 | [AR-1800](../tasks/AR-1800-development-warning-only-trust-contract.md) | [AR-1799](../tasks/AR-1799-tui-install-rustup-invalid-repair.md) | None |
 | [AR-1819](../tasks/AR-1819-expired-claim-recovery-safety.md) | None | None |
 | [AR-1821](../tasks/AR-1821-ar1817-pr128-integration-recovery.md) | None | None |
+| [AR-1822](../tasks/AR-1822-role-removal-expiry.md) | None | None |
 
 ## Complete AR inventory
 
@@ -194,7 +195,7 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1799](../tasks/AR-1799-tui-install-rustup-invalid-repair.md): Repair asb tui install rustup/rustc trusted-tool rejection | codex-ar1799-tui-install-rustup-invalid-20261012 | Repair the remaining current-main asb tui install trusted_tool_invalid failure for development rustup/rustc layouts and qualify the real installed entrypoint. | PR #613 (63ba8e7973545f65bd8dda56f3aa24d9d339bb16) is open; focused rustup tests, fmt, clippy, and independent review pass. Await remaining exact-head hosted checks, then merge and run post-merge installed-entrypoint qualification. |
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -202,6 +203,7 @@
 | P0 | [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md): Default usable tool-install command | Unclaimed | Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying. | Independent review and exact-head CI for PR #583 at 7c08cfb0; source-only fallback remains to be resolved before merge. |
 | P0 | [AR-1782](../tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Unclaimed | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | PR #584 rebased onto origin/main 24cb72d; exact remote head 96ea497a. Credential-free workload matrix, diagnostic contract, provenance, resolver, and clippy focused gates pass. Poll fresh exact-head CI; do not merge. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release. |
+| P0 | [AR-1822](../tasks/AR-1822-role-removal-expiry.md): Expired role assignment cleanup semantics | Unclaimed | Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission. | Reconcile current state, promote and claim this repair, then implement and test targeted expired-assignment cleanup without weakening read or admission validation. |
 
 ### Blocked (85)
 
@@ -584,4 +586,3 @@
 | P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Unclaimed | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
 | P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Unclaimed | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | No further AR-1490 action. Development unsigned qualification is complete; any customer/release publication remains separately gated by a genuinely signed production bundle. |
 | P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | Unclaimed | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Reconcile and doctor state projection; retain generated WORKTREES/PROJECT_STATE caveat if reported. |
-| P0 | [AR-1492](../tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | Unclaimed | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Run state reconcile and doctor, then release AR-1492 done ownerless with merge and eight-workflow evidence. |

@@ -98,6 +98,79 @@ class RoleManagementTests(unittest.TestCase):
         ):
             check(Path(directory) / "roles.json", REGISTRY, "unknown-owner")
 
+    def test_remove_expired_target_and_unrelated_expiry_is_cleanup_safe(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            state = Path(directory) / "roles.json"
+            assign(
+                state,
+                REGISTRY,
+                expected_revision=0,
+                assignment_id="assignment-expired-target",
+                owner_id="expired-target",
+                role_id="implementer",
+                expires_at="2099-01-01T00:00:00Z",
+                evidence_kind="ticket",
+                evidence_ref="AR-1822",
+                evidence_digest=DIGEST,
+            )
+            assign(
+                state,
+                REGISTRY,
+                expected_revision=1,
+                assignment_id="assignment-expired-other",
+                owner_id="expired-other",
+                role_id="reviewer",
+                expires_at="2099-01-01T00:00:00Z",
+                evidence_kind="ticket",
+                evidence_ref="AR-1822/other",
+                evidence_digest=DIGEST,
+            )
+            value = json.loads(state.read_text(encoding="utf-8"))
+            for item in value["assignments"]:
+                item["roles"][0]["expires_at"] = "2020-01-01T00:00:00Z"
+            state.write_text(json.dumps(value), encoding="utf-8")
+
+            with self.assertRaisesRegex(RolesError, "expired role assignment"):
+                list_assignments(state, REGISTRY, None)
+            with self.assertRaisesRegex(RolesError, "expired role assignment"):
+                check(state, REGISTRY, "expired-target")
+            removed = remove(
+                state,
+                REGISTRY,
+                expected_revision=2,
+                assignment_id="assignment-expired-target",
+            )
+            self.assertEqual({"revision": 3, "removed": "assignment-expired-target"}, removed)
+            with self.assertRaisesRegex(RolesError, "expired role assignment"):
+                list_assignments(state, REGISTRY, None)
+
+    def test_remove_rejects_malformed_assignment_even_when_target_is_expired(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            state = Path(directory) / "roles.json"
+            assign(
+                state,
+                REGISTRY,
+                expected_revision=0,
+                assignment_id="assignment-expired-target-2",
+                owner_id="expired-target-2",
+                role_id="implementer",
+                expires_at="2099-01-01T00:00:00Z",
+                evidence_kind="ticket",
+                evidence_ref="AR-1822",
+                evidence_digest=DIGEST,
+            )
+            value = json.loads(state.read_text(encoding="utf-8"))
+            value["assignments"][0]["roles"][0]["expires_at"] = "2020-01-01T00:00:00Z"
+            value["assignments"][0]["authorization_evidence"][0]["digest"] = "invalid"
+            state.write_text(json.dumps(value), encoding="utf-8")
+            with self.assertRaisesRegex(RolesError, "authorization evidence digest"):
+                remove(
+                    state,
+                    REGISTRY,
+                    expected_revision=1,
+                    assignment_id="assignment-expired-target-2",
+                )
+
     def test_cli_and_handoffctl_dispatch_have_stable_json_output(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             state = Path(directory) / "roles.json"
