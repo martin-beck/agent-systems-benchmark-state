@@ -5,11 +5,11 @@
 
 ## Portfolio overview
 
-**798 ARs tracked** across 8 active status categories.
+**799 ARs tracked** across 8 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 85 |
 | **Planned** | Defined work awaiting promotion or dependencies | 88 |

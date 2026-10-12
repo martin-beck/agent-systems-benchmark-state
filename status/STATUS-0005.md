@@ -1,5 +1,11 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1605](../tasks/AR-1605.md) | [AR-1602](../tasks/AR-1602.md) | [AR-1603](../tasks/AR-1603.md), [AR-1606](../tasks/AR-1606.md), [AR-1611](../tasks/AR-1611.md), [AR-1612](../tasks/AR-1612.md) |
+| [AR-1606](../tasks/AR-1606.md) | [AR-1591](../tasks/AR-1591.md), [AR-1605](../tasks/AR-1605.md) | [AR-1603](../tasks/AR-1603.md), [AR-1612](../tasks/AR-1612.md) |
+| [AR-1607](../tasks/AR-1607.md) | [AR-1595](../tasks/AR-1595.md), [AR-1601](../tasks/AR-1601.md) | [AR-1603](../tasks/AR-1603.md), [AR-1608](../tasks/AR-1608.md), [AR-1609](../tasks/AR-1609.md), [AR-1642](../tasks/AR-1642.md), [AR-1656](../tasks/AR-1656.md) |
+| [AR-1608](../tasks/AR-1608.md) | [AR-1607](../tasks/AR-1607.md), [AR-1609](../tasks/AR-1609.md) | [AR-1603](../tasks/AR-1603.md), [AR-1612](../tasks/AR-1612.md), [AR-1641](../tasks/AR-1641.md), [AR-1656](../tasks/AR-1656.md) |
+| [AR-1609](../tasks/AR-1609.md) | [AR-1607](../tasks/AR-1607.md) | [AR-1608](../tasks/AR-1608.md), [AR-1641](../tasks/AR-1641.md), [AR-1656](../tasks/AR-1656.md) |
+| [AR-1611](../tasks/AR-1611.md) | [AR-1599](../tasks/AR-1599.md), [AR-1600](../tasks/AR-1600.md), [AR-1601](../tasks/AR-1601.md), [AR-1605](../tasks/AR-1605.md) | [AR-1613](../tasks/AR-1613.md), [AR-1614](../tasks/AR-1614.md), [AR-1659](../tasks/AR-1659.md) |
 | [AR-1612](../tasks/AR-1612.md) | [AR-1605](../tasks/AR-1605.md), [AR-1606](../tasks/AR-1606.md), [AR-1608](../tasks/AR-1608.md) | [AR-1613](../tasks/AR-1613.md), [AR-1615](../tasks/AR-1615.md), [AR-1617](../tasks/AR-1617.md), [AR-1618](../tasks/AR-1618.md) |
 | [AR-1613](../tasks/AR-1613.md) | [AR-1603](../tasks/AR-1603.md), [AR-1604](../tasks/AR-1604.md), [AR-1611](../tasks/AR-1611.md), [AR-1612](../tasks/AR-1612.md), [AR-1614](../tasks/AR-1614.md), [AR-1615](../tasks/AR-1615.md), [AR-1641](../tasks/AR-1641.md), [AR-1642](../tasks/AR-1642.md) | [AR-1622](../tasks/AR-1622.md), [AR-1643](../tasks/AR-1643.md), [AR-1653](../tasks/AR-1653.md) |
 | [AR-1614](../tasks/AR-1614.md) | [AR-1604](../tasks/AR-1604.md), [AR-1611](../tasks/AR-1611.md) | [AR-1613](../tasks/AR-1613.md), [AR-1615](../tasks/AR-1615.md), [AR-1617](../tasks/AR-1617.md), [AR-1618](../tasks/AR-1618.md), [AR-1620](../tasks/AR-1620.md), [AR-1623](../tasks/AR-1623.md), [AR-1641](../tasks/AR-1641.md) |
@@ -178,14 +184,16 @@
 | [AR-1799](../tasks/AR-1799-tui-install-rustup-invalid-repair.md) | [AR-1636](../tasks/AR-1636.md), [AR-1738](../tasks/AR-1738-development-rustup-permission-compatibility.md) | [AR-1800](../tasks/AR-1800-development-warning-only-trust-contract.md) |
 | [AR-1800](../tasks/AR-1800-development-warning-only-trust-contract.md) | [AR-1799](../tasks/AR-1799-tui-install-rustup-invalid-repair.md) | None |
 | [AR-1821](../tasks/AR-1821-ar1817-pr128-integration-recovery.md) | None | None |
+| [AR-1822](../tasks/AR-1822-role-removal-expiry.md) | None | None |
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1799](../tasks/AR-1799-tui-install-rustup-invalid-repair.md): Repair asb tui install rustup/rustc trusted-tool rejection | codex-ar1799-tui-install-rustup-invalid-20261012 | Repair the remaining current-main asb tui install trusted_tool_invalid failure for development rustup/rustc layouts and qualify the real installed entrypoint. | PR #613 (63ba8e7973545f65bd8dda56f3aa24d9d339bb16) is open; focused rustup tests, fmt, clippy, and independent review pass. Await remaining exact-head hosted checks, then merge and run post-merge installed-entrypoint qualification. |
+| P0 | [AR-1822](../tasks/AR-1822-role-removal-expiry.md): Expired role assignment cleanup semantics | ar1817_schema_contract | Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission. | Reconcile current state, promote and claim this repair, then implement and test targeted expired-assignment cleanup without weakening read or admission validation. |
 
 ### Open (4)
 
@@ -577,8 +585,3 @@
 | P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Unclaimed | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
 | P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Unclaimed | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | No further AR-1490 action. Development unsigned qualification is complete; any customer/release publication remains separately gated by a genuinely signed production bundle. |
 | P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | Unclaimed | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Reconcile and doctor state projection; retain generated WORKTREES/PROJECT_STATE caveat if reported. |
-| P0 | [AR-1492](../tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | Unclaimed | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Run state reconcile and doctor, then release AR-1492 done ownerless with merge and eight-workflow evidence. |
-| P0 | [AR-1493](../tasks/AR-1493-release-authority-enrollment-handoff.md): Release-authority enrollment handoff | Unclaimed | Define and validate the external release-authority enrollment and signed-bundle verification handoff. | Reconcile and doctor state, then release AR-1493 done ownerless with complete merge and post-merge evidence. |
-| P0 | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Unclaimed | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. |
-| P0 | [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Unclaimed | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | Done: PR #375 merged at protected main 8c53a4a62ecaa6fecc9eb195a105fc368a3395c8; independent review passed and all seven post-merge workflows succeeded. |
-| P0 | [AR-1497](../tasks/AR-1497-ar1495-topology-repair.md): AR-1495 protected-main topology repair | Unclaimed | Repair AR-1495 protected-main synchronization topology without changing product semantics. | Monitor eight post-merge workflows for exact protected-main merge 45df6590; release AR-1497 only after all terminal SUCCESS. |

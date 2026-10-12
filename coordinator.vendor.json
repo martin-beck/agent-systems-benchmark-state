@@ -5,7 +5,7 @@
       "source": "docs/EXTENDING.md"
     },
     "docs/PUBLIC_CONTRACTS.md": {
-      "sha256": "790ae4d8be6e50a31a886e9e4f4f4fb338a71b04bb3fe91375c33b6df0892312",
+      "sha256": "7a18d89696b718aef136273e5d2411c581fde16e75b47c012e753e488b34b080",
       "source": "docs/PUBLIC_CONTRACTS.md"
     },
     "docs/agent-workflow-coordinator.md": {
@@ -385,7 +385,7 @@
       "source": "tools/production_upgrade_binding.py"
     },
     "tools/role_assignment.py": {
-      "sha256": "4dc11cbe14cde756fb4b10f0d043b0680564d39a2f58380e10a14fe97d9464db",
+      "sha256": "23e014c67670fc3ec3fda6ae6f2aa996074cf9713b62978ab1362e471160fbb7",
       "source": "tools/role_assignment.py"
     },
     "tools/role_registry.py": {
@@ -393,7 +393,7 @@
       "source": "tools/role_registry.py"
     },
     "tools/roles.py": {
-      "sha256": "52cd8fc4589c9a5c2cb4a14ed73c2b4718fe6ed5e6a0732755afaca0a7b44a48",
+      "sha256": "109639e1e6bea4e7ef3a929e8799260552a76ec6d30ab2bd0d7d6c1db83829de",
       "source": "tools/roles.py"
     },
     "tools/rollback_control_store.py": {
