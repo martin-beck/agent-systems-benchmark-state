@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1800-controlled-local-workload-acquisition-backend",
   "checkpoint_commit": "62a13d378b8dbccbe3242c3c5dc2934c9cbe3c68",
-  "claim_expires": "2026-10-12T04:19:56+00:00",
+  "claim_expires": "2026-10-12T04:21:49+00:00",
   "depends_on": [
     "AR-1782",
     "AR-1783"
@@ -28,7 +28,7 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Controlled local workload acquisition backend",
   "updated_at": "2026-10-12T02:21:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
@@ -103,3 +103,5 @@ must not weaken production acquisition, identity, or offline guarantees.
   gates: cargo fmt workspace check; cargo clippy --locked --workspace --all-targets -D warnings;
   cargo test --locked asb-cli fixture acquisition (1); workload_ unit matrix (22); project
   qualification (1). Earlier command-shape failures are classified in durable history.
+
+- 2026-10-12T02:21:49+00:00: Heartbeat by ar1800_local_acquisition_luna56.
