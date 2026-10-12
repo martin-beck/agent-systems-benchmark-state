@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T12:47:51+00:00",
   "depends_on": [
     "AR-1773"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb-queue-next-luna56",
   "plan": "../plans/AR-1805-cli-surface-inventory-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1805.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define one complete machine-checked inventory of every public ASB command and subcommand surface.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T10:47:39+00:00",
+  "updated_at": "2026-10-12T10:47:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -52,3 +52,5 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   routes; aliases and error-only paths are not exempt.
 
 - 2026-10-12T10:47:39+00:00: AR-1773 is done; dependency-safe P0 CLI contract work is ready
+
+- 2026-10-12T10:47:51+00:00: Claimed by asb-queue-next-luna56.
