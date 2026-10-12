@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `15c80511cd2cb55947fe3ee1e130affed4c76b4d`
-- Local origin/main: `5c843a12e976bc7be6c32e9fc653e566bdf20450`
+- Local origin/main: `15c80511cd2cb55947fe3ee1e130affed4c76b4d`
 - Primary worktree head: `98327152f2e92308b5bcf5b21cfe0c9f285cf950`
 
 ## Open pull requests
@@ -35,13 +35,13 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 38242303507 | `15c80511cd2c` | push | Rust verification | in_progress:- |
 | 38242303503 | `15c80511cd2c` | push | Repository quality | completed:failure |
-| 38242303498 | `15c80511cd2c` | push | Development formal assurance | in_progress:- |
-| 38242303488 | `15c80511cd2c` | push | Fault assurance | in_progress:- |
+| 38242303498 | `15c80511cd2c` | push | Development formal assurance | completed:success |
+| 38242303488 | `15c80511cd2c` | push | Fault assurance | completed:success |
 | 38242303485 | `15c80511cd2c` | push | Emulated aarch64 portability | in_progress:- |
-| 38242303482 | `15c80511cd2c` | push | Hosted portability and native qualification | in_progress:- |
+| 38242303482 | `15c80511cd2c` | push | Hosted portability and native qualification | completed:success |
 | 38242303462 | `15c80511cd2c` | push | Huawei MIT source headers | completed:success |
-| 38242303430 | `15c80511cd2c` | push | Cross-repository development broker qualification | in_progress:- |
+| 38242303430 | `15c80511cd2c` | push | Cross-repository development broker qualification | completed:success |
 | 38242303428 | `15c80511cd2c` | push | Portable protected-main provenance | completed:failure |
-| 38242303382 | `15c80511cd2c` | push | Credential-free benchmark path | in_progress:- |
+| 38242303382 | `15c80511cd2c` | push | Credential-free benchmark path | completed:success |
 | 38240770750 | `0fec6465dbb1` | pull_request | Development formal assurance | completed:success |
 | 38240770610 | `0fec6465dbb1` | pull_request | Hosted portability and native qualification | completed:success |
