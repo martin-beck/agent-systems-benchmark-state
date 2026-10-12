@@ -269,7 +269,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1761-review` | `DETACHED` | `644085ecd2f3` | 0 | behind 327, ahead 6 |
 | `asb-ar1775-v2` | `feature/ar-1775-configurable-output-router-and-levels-v2` | `c6cddcaf76cb` | 0 | behind 0, ahead 3 |
 | `asb-ar1775-v3` | `feature/ar-1775-configurable-output-router-and-levels-v3` | `d490431b3279` | 0 | behind 0, ahead 4 |
-| `asb-ar1775-v4` | `feature/ar-1775-configurable-output-router-and-levels-v6` | `df3698369841` | 0 | behind 0, ahead 3 |
+| `asb-ar1775-v4` | `feature/ar-1775-configurable-output-router-and-levels-v6` | `df3698369841` | 1 | behind 0, ahead 3 |
+| changed files | - | - | - | `crates/asb-cli/src/human.rs` |
 | `asb-ar1782-postmerge-clean-luna56` | `DETACHED` | `0a2039c448d4` | 0 | behind 0, ahead 0 |
 | `asb-ar1785-merge` | `DETACHED` | `16d8512debab` | 0 | behind 195, ahead 0 |
 | `asb-ar1785-postmerge` | `DETACHED` | `daae06efa2d7` | 0 | behind 191, ahead 0 |
