@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:12:27+00:00",
+  "updated_at": "2026-10-12T04:13:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -415,3 +415,6 @@ as the affected successor linkage and evidence source.
   Classification: hosted pull-request merge-ref synchronization/infrastructure failure, not product
   provenance drift; local provenance and full gates are green. Next action: allow PR merge ref to
   synchronize and rerun hosted checks without source change.
+
+- 2026-10-12T04:13:01+00:00: Recorded command exit 1; command argv SHA-256
+  365ae9acf25464ba8aa2ad224861a731d0cafa6d253a738e5c5097b2f974b44d.
