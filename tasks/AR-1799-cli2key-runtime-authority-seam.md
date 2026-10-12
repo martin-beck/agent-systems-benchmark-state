@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:11:27+00:00",
+  "updated_at": "2026-10-12T04:11:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -52,3 +52,6 @@ issue an opaque live attempt to the Codex adapter.
   reassignment; prior lease heartbeat and historical evidence preserved.
 
 - 2026-10-12T04:11:27+00:00: Claimed by ar1799-authority-luna56.
+
+- 2026-10-12T04:11:50+00:00: Recorded command exit 0; command argv SHA-256
+  2cadf8b93784f2332f913a0010756a6f89279d776e4434fc0d7fe5cf1de23126.
