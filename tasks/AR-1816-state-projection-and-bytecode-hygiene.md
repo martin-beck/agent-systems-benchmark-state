@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Coordinator projection and bytecode hygiene recovery",
-  "updated_at": "2026-10-12T12:59:41+00:00",
+  "updated_at": "2026-10-12T12:59:57+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar1816-projection-hygiene"
 }
 ---
@@ -117,3 +117,6 @@ bytecode, credentials, or host-private runtime configuration may enter commits.
   failure was repaired by restoring immutable handoffctl snapshot and moving ASB projection logic to
   tools/awq-handoffctl; focused downstream and 148 existing coordinator tests pass. Await exact-head
   review and CI.
+
+- 2026-10-12T12:59:57+00:00: Recorded command exit 0; command argv SHA-256
+  604adef68586098eb5288028094479aa182bda03b97960c22cf62bff136997a1.
