@@ -1518,7 +1518,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review. |
-| Next action | Monitor PR #600 exact head c9ea7246 until all required hosted checks green; then supported non-squash merge and post-merge verification. |
+| Next action | Record task-spec acceptance against merged main 1ce208b4, then release done and verify live doctor. |
 
 ### AR-1803 — Deterministic parallel fixture repair
 

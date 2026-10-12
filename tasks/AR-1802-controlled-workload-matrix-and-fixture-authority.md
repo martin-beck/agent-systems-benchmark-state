@@ -8,7 +8,7 @@
     "AR-1783"
   ],
   "id": "AR-1802",
-  "next_action": "Monitor PR #600 exact head c9ea7246 until all required hosted checks green; then supported non-squash merge and post-merge verification.",
+  "next_action": "Record task-spec acceptance against merged main 1ce208b4, then release done and verify live doctor.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "observed_dirty": 0,
   "observed_head": "c9ea7246e6d4ce7cfd11eabe55216765d2508996",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T04:16:43+00:00",
+  "updated_at": "2026-10-12T04:17:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -327,3 +327,8 @@ remains explicitly unaccepted and blocked until this repair is complete.
 
 - 2026-10-12T04:16:43+00:00: Recorded command exit 0; command argv SHA-256
   7bc1bc9e314f0cc5684ac8c93f425b78bf77acc41eb78ae81e5f28056468e0ff.
+
+- 2026-10-12T04:17:10+00:00: Post-merge exact-main verification: PR #600 merged non-squash at signed
+  merge 1ce208b4, preserving reviewed head c9ea7246 and matching DCO. Fresh detached worktree at
+  origin/main=1ce208b4 ran make test through handoffctl and exited 0; workspace fmt, Clippy, tests,
+  contract/provenance, and rustdoc gates passed. Hosted PR checks all 15 SUCCESS; merge state CLEAN.
