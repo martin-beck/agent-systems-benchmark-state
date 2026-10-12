@@ -3,7 +3,10 @@
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1769", "AR-1772"],
+  "depends_on": [
+    "AR-1769",
+    "AR-1772"
+  ],
   "id": "AR-1773",
   "next_action": "Instrument every eligible public command operation through the shared reporter after the diagnostic gate and reporter are accepted.",
   "observed_branch": "",
@@ -13,14 +16,21 @@
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "integration-test", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1773.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "integration-test",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1773.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-09T21:29:29+00:00",
+  "updated_at": "2026-10-12T06:20:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -44,3 +54,6 @@ parse, validation, and immediate failures through terminal status output without
 creating a progress bar. All integrations must preserve JSON silence and quiet
 silence, existing prompts, TUI ownership, diagnostic specificity, privacy, and
 non-TTY compatibility.
+
+- 2026-10-12T06:20:03+00:00: Dependencies AR-1769 and AR-1772 are complete and released; promote
+  AR-1773 to open for implementation.
