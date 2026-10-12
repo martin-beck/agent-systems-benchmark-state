@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 783,
+  "task_revision": 784,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T09:59:04+00:00",
+  "updated_at": "2026-10-12T09:59:21+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2349,3 +2349,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   post-merge verification without TLC.
 
 - 2026-10-12T09:59:04+00:00: Claimed by ar1293-merge-luna56.
+
+- 2026-10-12T09:59:21+00:00: Recorded command exit 1; command argv SHA-256
+  f2717203f91dd50db61ff886eae8470dda7bbb03d2bc9360ec4956db2bc68391.
