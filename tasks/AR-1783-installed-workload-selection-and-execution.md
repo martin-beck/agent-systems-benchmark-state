@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Select every development external workload and prove ASB uses its exact project-local identity end to end.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:21:53+00:00",
+  "updated_at": "2026-10-12T00:21:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -245,3 +245,6 @@ the suite from this end-to-end path.
   checks remain pending; stderr has no product failure. Current pending jobs are Emulated aarch64,
   Policy/coverage/supply chain, and Rust checks. Prior post-reconcile bytecode guard was separately
   recorded for argv 727d... .
+
+- 2026-10-12T00:21:58+00:00: Recorded command exit 0; command argv SHA-256
+  9ab20cc6c2b2c2a7159effe0afe4c2fadd47bdbf39b5ca740d93b7e80dbfd093.
