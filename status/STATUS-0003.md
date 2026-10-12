@@ -1532,7 +1532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
-| Next action | Run final make test after latest guard, then verify clean signed exact head and request independent review. |
+| Next action | Rerun diagnostic contract and make test after line-identity-preserving guard; record results. |
 
 ### AR-1804 — Cross-module fixture semaphore
 
