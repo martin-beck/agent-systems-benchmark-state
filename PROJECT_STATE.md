@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
 | #595 | `feature/ar-1775-configurable-output-router-and-levels-v8@f805a4e46c98` | `main` | BEHIND | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb-cli): configurable output router and levels |
-| #596 | `feature/ar-1783-installed-workload-selection-and-execution@ad64a90f198d` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | chore(integration): restore protected-main policy identity |
+| #596 | `feature/ar-1783-installed-workload-selection-and-execution@ad64a90f198d` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(integration): restore protected-main policy identity |
 
 ## Recent workflows
 
@@ -42,7 +42,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38190460001 | `ad64a90f198d` | pull_request | Hosted portability and native qualification | completed:failure |
 | 38190459992 | `ad64a90f198d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38190459987 | `ad64a90f198d` | pull_request | Rust verification | in_progress:- |
-| 38190459984 | `ad64a90f198d` | pull_request | Fault assurance | in_progress:- |
+| 38190459984 | `ad64a90f198d` | pull_request | Fault assurance | completed:success |
 | 38190459970 | `ad64a90f198d` | pull_request | Repository quality | completed:failure |
 | 38190459933 | `ad64a90f198d` | pull_request | Formal assurance | in_progress:- |
 | 38190459926 | `ad64a90f198d` | pull_request | Cross-repository development broker qualification | in_progress:- |
