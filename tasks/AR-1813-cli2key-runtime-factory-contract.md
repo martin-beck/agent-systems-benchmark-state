@@ -12,6 +12,41 @@
   "observed_branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "observed_dirty": 0,
   "observed_head": "7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
+  "oracle_gate": {
+    "completed": [],
+    "discussion_rounds": 0,
+    "events": [
+      {
+        "action": "open",
+        "after": [
+          {
+            "digest": "sha256:2005708252e64993e95f554873286056cea4f0ed56263666e733f00403933907",
+            "ref": "review/candidate"
+          }
+        ],
+        "before": [
+          {
+            "digest": "sha256:2595fc33eda6071001fadbbda6d93b5a24bd5d352f55f0548d376896db0091c9",
+            "ref": "review/base"
+          }
+        ],
+        "disposition": "unresolved",
+        "public_ref": "PR-607/7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
+        "recorded_at": "2026-10-12T10:43:45+00:00",
+        "stage": "role",
+        "task_id": "AR-1813",
+        "task_revision": 17
+      }
+    ],
+    "open_stage": "role",
+    "reconciliation_required": false,
+    "required": true,
+    "stage_sequence": [
+      "role",
+      "spec",
+      "decision"
+    ]
+  },
   "owner": "ar1810-cli2key-luna56",
   "plan": "../plans/AR-1813-cli2key-runtime-factory-contract.md",
   "priority": "P0",
@@ -28,9 +63,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:39:49+00:00",
+  "updated_at": "2026-10-12T10:43:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -80,3 +115,6 @@ fabricate authority in the CLI or introduce a provider fallback.
 - 2026-10-12T10:39:49+00:00: Rebased PR #607 from 458ce867 onto merged main 5a6c5477; local focused
   and full locked workspace tests, fmt, clippy, and repository policy pass. Hosted non-TLC checks
   pending.
+
+- 2026-10-12T10:43:45+00:00: Recorded open interaction gate role;
+  event=sha256:4d06e431f39441330e260bcfe7587f902f9fb6d8cd14a1bafa11bf8622641c5b.
