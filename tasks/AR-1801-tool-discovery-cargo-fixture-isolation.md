@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T06:18:42+00:00",
   "depends_on": [
     "AR-1762"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1801-cargo-fixture-luna56",
   "plan": "../plans/AR-1801-tool-discovery-cargo-fixture-isolation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,9 +25,9 @@
   },
   "spec_ref": "specs/AR-1801.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Tool-discovery Cargo fixture isolation",
   "updated_at": "2026-10-12T02:18:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
@@ -40,3 +40,5 @@ ambient PATH Cargo produced version `1.0` and no warning. Repair must isolate
 or pin the probe without weakening bounded execution or privacy contracts.
 
 - 2026-10-12T02:18:42+00:00: dependency AR-1762 verified done
+
+- 2026-10-12T02:18:42+00:00: Claimed by ar1801-cargo-fixture-luna56.
