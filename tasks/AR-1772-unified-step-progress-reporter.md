@@ -7,7 +7,7 @@
     "AR-1775"
   ],
   "id": "AR-1772",
-  "next_action": "Blocked pending dedicated follow-up to AR-1762 tool-discovery fixture isolation: cargo probe must be pinned/isolated so path_discovery expected fixture remains deterministic.",
+  "next_action": "Blocked pending AR-1801 follow-up to AR-1762 tool-discovery fixture isolation: cargo probe must be pinned/isolated so path_discovery expected fixture remains deterministic.",
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "f9ad19ff24c69a0bd08d3dc3d9f8b6df09c98a41",
