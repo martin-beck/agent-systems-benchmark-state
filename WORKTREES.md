@@ -56,8 +56,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1686` | `qualification/ar-1686` | `f37d3a3ef839` | 0 | behind 43, ahead 0 |
 | `agent-systems-benchmark-ar-1689-tui-qualification` | `qualification/ar-1689-tui-fresh-user` | `30641f50d68e` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1772-unified-step-progress-reporter` | `feature/ar-1772-unified-step-progress-reporter` | `65ee830e6659` | 0 | behind 6, ahead 0 |
-| `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `9c5e557195df` | 7 | behind 3, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs`, `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/step_progress.rs`, `crates/asb-cli/src/tui.rs`, `crates/asb-cli/tests/human_cli.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
+| `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `f78a1006202d` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar-1775-configurable-output-router-and-levels` | `feature/ar-1775-configurable-output-router-and-levels` | `d7c08c106e52` | 0 | behind 40, ahead 2 |
 | `agent-systems-benchmark-ar-1779-default-usable-tool-install-command` | `feature/ar-1779-default-usable-tool-install-command` | `daf2d3ee9750` | 0 | behind 59, ahead 4 |
 | `agent-systems-benchmark-ar-1780-installed-tool-workload-execution-qualification` | `feature/ar-1780-installed-tool-workload-execution-qualification` | `ca494d506135` | 0 | behind 30, ahead 0 |
@@ -65,8 +64,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution` | `feature/ar-1783-installed-workload-selection-and-execution` | `aca3f79b3256` | 0 | behind 31, ahead 0 |
 | `agent-systems-benchmark-ar-1798-pinned-source-checkout-acquisition` | `feature/ar-1798-pinned-source-checkout-acquisition` | `55a789348f6f` | 0 | behind 96, ahead 0 |
 | `agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam` | `feature/ar-1799-cli2key-runtime-authority-seam` | `1213928b8724` | 0 | behind 10, ahead 0 |
-| `agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend` | `DETACHED` | `1494e4741968` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
+| `agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend` | `feature/ar-1800-controlled-local-workload-acquisition-backend` | `1494e4741968` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation` | `feature/ar-1801-tool-discovery-cargo-fixture-isolation` | `e0e44a7d8b45` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority` | `feature/ar-1802-controlled-workload-matrix-and-fixture-authority` | `c9ea7246e6d4` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair` | `feature/ar-1803-deterministic-parallel-fixture-repair` | `547e42dd90c9` | 0 | behind 17, ahead 0 |
