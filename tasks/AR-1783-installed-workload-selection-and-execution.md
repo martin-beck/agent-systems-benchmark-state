@@ -11,8 +11,8 @@
   "id": "AR-1783",
   "next_action": "Record independent exact-head review of 506de984, then run tools/integration/merge_pr.py against base 5201a036/tree c2ebca881ea7c31946d20ea18e0cf676b851b22e, verify green protected main, accept and release",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
-  "observed_dirty": 6,
-  "observed_head": "ae71fb35fbf1325eb34366ea4a3ccfad5e23d8e7",
+  "observed_dirty": 0,
+  "observed_head": "d0799ae9a4e1f819e80fae22c9d140e37ce3e831",
   "owner": "ar1783_workload_selection_luna56",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Repair PR #596 exact head 506de984 has all hosted required checks green; independent review remains required before local integration",
-  "task_revision": 224,
+  "task_revision": 225,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:30:38+00:00",
+  "updated_at": "2026-10-12T01:30:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
