@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:07:11+00:00",
+  "updated_at": "2026-10-12T04:07:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -362,3 +362,6 @@ as the affected successor linkage and evidence source.
   a57dfead46fb44cdce9aca9e9232e1ba5da6c067b4d2e9e2c86f02a0cce9dcee. Classification: expected
   provenance drift from adding line-preserving parallel guards; all preceding workspace tests
   passed. Next action update digest and rerun make test.
+
+- 2026-10-12T04:07:14+00:00: Recorded command exit 0; command argv SHA-256
+  5705a06638ac20e244ff355b0bd6b8b7ca88807f3ba29d44582866cda4efef83.
