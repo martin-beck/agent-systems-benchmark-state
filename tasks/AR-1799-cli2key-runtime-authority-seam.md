@@ -10,7 +10,7 @@
   "id": "AR-1799",
   "next_action": "Fresh independent review exact signed head ed4b1766 (includes a9722277/c7ed2669); request ACCEPT/REJECT via handoffctl before PR.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "ed4b176641562aa057cbe91c6c9946ffb84d9b38",
   "owner": "ar1799-authority-luna56",
   "plan": "../plans/AR-1799-cli2key-runtime-authority-seam.md",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:39:11+00:00",
+  "updated_at": "2026-10-12T04:39:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
