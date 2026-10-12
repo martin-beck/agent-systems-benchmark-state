@@ -16,9 +16,9 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "mechanical",
+    "evidence_class": "environmental",
     "evidence_digest": "sha256:ec988c4a49869b8617bad21a29647b2ecdfdef879d5a34aa999a3947b8c494d5",
-    "evidence_ref": "https://github.com/martin-beck/agent-systems-benchmark/actions/runs/38190652703",
+    "evidence_ref": "https://github.com/martin-beck/agent-systems-benchmark/commit/98327152f2e92308b5bcf5b21cfe0c9f285cf950",
     "spec_ref": "specs/AR-1775.json",
     "spec_revision": 1,
     "status": "pass"
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 343,
+  "task_revision": 344,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T01:29:25+00:00",
+  "updated_at": "2026-10-12T01:29:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -1087,3 +1087,7 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T01:29:25+00:00: Recorded command exit 0; command argv SHA-256
   cfc2926b28a5bd000de40444bea96a07f69997c314c034af18f69d08c92880db.
+
+- 2026-10-12T01:29:31+00:00: Environmental/post-merge evidence: remote protected main resolved
+  exactly to 98327152f2e92308b5bcf5b21cfe0c9f285cf950; clean detached exact-main worktree verified
+  after fetch; no product changes were made after reviewed merge.
