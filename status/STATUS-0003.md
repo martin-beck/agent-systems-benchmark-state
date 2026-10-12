@@ -1476,7 +1476,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
-| Next action | Force-with-lease update PR #601 to exact 1213928b; monitor all required hosted checks. |
+| Next action | Accept and release AR-1799 done after merge e0e44a7d and post-merge exact-main make test exit 0; then doctor live. |
 
 ### AR-1800 — Controlled local workload acquisition backend
 

@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Force-with-lease update PR #601 to exact 1213928b; monitor all required hosted checks.",
+  "next_action": "Accept and release AR-1799 done after merge e0e44a7d and post-merge exact-main make test exit 0; then doctor live.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "1213928b8724cfc740404397b9e14161f56367cc",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T05:13:18+00:00",
+  "updated_at": "2026-10-12T05:13:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -485,3 +485,8 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T05:13:18+00:00: Recorded command exit 0; command argv SHA-256
   e224704ac721434cba12eb0c7f482c23432e86bd785d6ab9ccd9b3ab5c1cb35e.
+
+- 2026-10-12T05:13:31+00:00: Post-merge verification complete: PR #601 merged non-squash at e0e44a7d
+  (2026-10-12T05:10:22Z); origin/main fetched and exact-main make test completed exit 0 with
+  workspace tests and all documented gates; no active make/cargo test process remains. Ready for
+  acceptance/release.
