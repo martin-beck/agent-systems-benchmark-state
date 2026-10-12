@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1803",
-  "next_action": "Fresh independent exact-head review of 5a06ac1f; then force-with-lease PR #599, monitor all hosted checks, merge only green.",
+  "next_action": "Obtain fresh independent ACCEPT for 5a06ac1f; rerun hosted provenance after merge-ref synchronization; wait all checks green before supported non-squash merge.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "5a06ac1fe6a14bb9d0963938a31a5e7cb906ec53",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 143,
+  "task_revision": 144,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:20:32+00:00",
+  "updated_at": "2026-10-12T04:20:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -477,3 +477,12 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T04:20:32+00:00: Recorded command exit 0; command argv SHA-256
   7445f966bb5b2f96aaf1fe9526dba6393a45d547d266dc6d38df25a3e76e5fe4.
+
+- 2026-10-12T04:20:37+00:00: PR #599 exact head 5a06ac1f is mergeable. Portable protected-main
+  provenance failed with exact log: EVENT_NAME=pull_request, EVENT_REF=refs/pull/599/merge,
+  EVENT_HEAD=5a06ac1fe6a14bb9d0963938a31a5e7cb906ec53,
+  PR_BASE=1ce208b4e5738b9608b3f2d454d0a6a0dfbeb323,
+  PUSH_BASE=14471899c4271cf32ef172c76f5141998a9536b4; stderr: portable provenance: pull-request
+  synchronization merge must be the topic tip; process exit 1. This is hosted merge-ref
+  synchronization/provenance boundary (PUSH_BASE stale old PR head), not a product gate failure.
+  Remaining hosted checks are pending; rerun after synchronization, with no source change.
