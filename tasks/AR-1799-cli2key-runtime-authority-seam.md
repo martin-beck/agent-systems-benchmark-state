@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:54:00+00:00",
+  "updated_at": "2026-10-12T04:56:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -364,3 +364,6 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:53:57+00:00: Recorded command exit 0; command argv SHA-256
   5cd950a621e810a1b9754de53d9ca5cec51bc3de8641728cf496ee7d1df181c1.
+
+- 2026-10-12T04:56:14+00:00: Recorded command exit 0; command argv SHA-256
+  f8fec58749f1f3f99113a25e6517cecdc8daf4f467297c76bb229d7737f17cad.
