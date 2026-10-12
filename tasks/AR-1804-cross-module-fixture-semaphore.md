@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:54:08+00:00",
+  "updated_at": "2026-10-12T02:55:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -205,3 +205,6 @@ before AR-1801 can be accepted.
   /srv/data/projects/agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore/Cargo.toml -p
   asb-cli exited 0. This specifically repairs the prior E0433 non-test make failure without
   weakening test-only locking.
+
+- 2026-10-12T02:55:38+00:00: Recorded command exit 2; command argv SHA-256
+  3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
