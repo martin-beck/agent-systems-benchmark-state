@@ -17,20 +17,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "integration-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "contract-test",
+    "evidence_digest": "sha256:cc330f6cc2411e636d0434b5cceb13aa3da50412081d4e2307c858c0efe9ae4f",
+    "evidence_ref": "main/07c590e712df11e555228abf1b9de4add3510d4f",
     "spec_ref": "specs/AR-1773.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T10:09:48+00:00",
+  "updated_at": "2026-10-12T10:10:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -458,3 +458,7 @@ non-TTY compatibility.
   08756fb1a5354e2831a8c501442b10539222f15ca1497167cf13b188d22bf0c0.
 
 - 2026-10-12T10:09:48+00:00: Heartbeat by ar1773-catalog-repair-luna56.
+
+- 2026-10-12T10:10:10+00:00: Exact reviewed merge tree is on protected main; all ten exact-main
+  post-merge workflows are terminal success. Non-formal acceptance is complete; UD-1802 excludes
+  manual TLC/TLA+/model-check execution.
