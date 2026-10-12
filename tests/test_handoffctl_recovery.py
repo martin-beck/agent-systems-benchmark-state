@@ -50,9 +50,7 @@ class HandoffRecoveryTest(unittest.TestCase):
         self.refresh_views()
         with (
             patch.object(BASE.CORE, "commit", return_value=True),
-            self.assertRaisesRegex(
-                RuntimeError, "requires exactly one current session snapshot"
-            ),
+            self.assertRaisesRegex(RuntimeError, "requires exactly one current session snapshot"),
         ):
             BASE.CORE.mutate(
                 BASE.argparse.Namespace(
@@ -91,9 +89,7 @@ class HandoffRecoveryTest(unittest.TestCase):
         )
         with (
             patch.object(BASE.CORE, "commit", return_value=True),
-            self.assertRaisesRegex(
-                RuntimeError, "requires exactly one current session snapshot"
-            ),
+            self.assertRaisesRegex(RuntimeError, "requires exactly one current session snapshot"),
         ):
             BASE.CORE.mutate(
                 BASE.argparse.Namespace(task="AR-0001", expected_revision=1, note="Recover."),
@@ -110,9 +106,7 @@ class HandoffRecoveryTest(unittest.TestCase):
         self.assertFalse(any("invalid claim_process" in error for error in BASE.CORE.validate()))
         with (
             patch.object(BASE.CORE, "commit", return_value=True),
-            self.assertRaisesRegex(
-                RuntimeError, "requires exactly one current session snapshot"
-            ),
+            self.assertRaisesRegex(RuntimeError, "requires exactly one current session snapshot"),
         ):
             BASE.CORE.mutate(
                 BASE.argparse.Namespace(task="AR-0001", expected_revision=1, note="Recover."),
