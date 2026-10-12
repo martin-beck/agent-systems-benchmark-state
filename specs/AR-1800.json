@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1800.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "credential-free-source", "description": "A bounded local development acquisition backend serves pinned fixture archives without credentials or ambient network."},
+    {"id": "catalog-identity", "description": "Fixture archives retain the exact AR-1781 catalog identity and are rejected on digest, revision, or evaluator mismatch."},
+    {"id": "offline-replay", "description": "Every AR-1781 development workload can install, select, run, sweep, report, and compare offline after setup."},
+    {"id": "failure-separation", "description": "Acquisition/backend failures remain distinct from benchmark/provider failures and preserve prior usable state."}
+  ],
+  "definition_of_done": ["A reviewed controlled backend and public fixture mode qualify every AR-1781 development workload through the AR-1780 journey with exact identity evidence."],
+  "inputs": [{"id": "catalog", "description": "AR-1781 immutable external workload catalog."}, {"id": "installer", "description": "AR-1782 verified workload installer and lifecycle."}, {"id": "selection", "description": "AR-1783 installed workload selection and execution."}],
+  "outputs": [{"id": "development-acquisition-backend", "description": "Credential-free bounded local acquisition backend and fixture archive matrix for AR-1780."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-output", "ambient-network-substitution", "false-benchmark-attribution", "gate-weakening", "force-push"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "fixture-matrix", "description": "Every AR-1781 development workload passes bounded install/select/run/sweep/report/compare fixture coverage."}, {"id": "offline-boundary", "description": "The same journey passes with network denied after fixture setup and rejects identity substitution."}]
+}

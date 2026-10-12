@@ -2,34 +2,34 @@
 {
   "branch": "feature/ar-1782-verified-asb-workload-installation",
   "checkpoint_commit": "c5154b12fc85bf356ce61d746c56b83d856ff502",
-  "claim_expires": "2026-10-11T19:28:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1781"
   ],
   "id": "AR-1782",
-  "next_action": "PR #584 rebased onto origin/main 24cb72d; exact remote head 96ea497a. Credential-free workload matrix, diagnostic contract, provenance, resolver, and clippy focused gates pass. Poll fresh exact-head CI; do not merge.",
+  "next_action": "Recreate a clean integration worktree at exact merge 7ce484612db043831e4acb995839455f512197c0; rerun cargo test --locked --workspace through handoffctl, verify HEAD and cleanliness, then record result before release.",
   "observed_branch": "feature/ar-1782-verified-asb-workload-installation",
   "observed_dirty": 0,
-  "observed_head": "12fbe26399975e9114a451ddee632bdadb65b820",
-  "owner": "ar1782_workload_install_luna56",
+  "observed_head": "3be3029d7a1d927b86b4ae938abfc939d8339009",
+  "owner": "",
   "plan": "../plans/AR-1782-verified-asb-workload-installation.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "environmental",
+    "evidence_digest": "sha256:965d865fd1afadeb545c34aac7d9efb6fbed9f3203c0695c0e3f68178702e3e9",
+    "evidence_ref": "evidence/AR-1782-post-merge-receipt.txt",
     "spec_ref": "specs/AR-1782.json",
     "spec_revision": 2,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1782.json",
   "spec_revision": 2,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Implement dedicated verified remote external workload installation and lifecycle through asb workload.",
-  "task_revision": 132,
+  "task_revision": 253,
   "title": "Verified asb workload installation",
-  "updated_at": "2026-10-11T17:28:26+00:00",
+  "updated_at": "2026-10-11T20:57:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1782-verified-asb-workload-installation"
 }
 ---
@@ -399,3 +399,307 @@ remain mandatory.
 
 - 2026-10-11T17:28:26+00:00: Rebase completed with signed repair 96ea497a; preserved arXiv v1
   bounded validation and credential-free network deny boundary.
+
+- 2026-10-11T19:29:04+00:00: Recovered expired claim formerly owned by
+  ar1782_workload_install_luna56. Coordinator recovery: lease expired; preserve recorded PR evidence
+  and await fresh exact-head validation.
+
+- 2026-10-11T19:30:00+00:00: Claimed by ar1782-coordinator-repair.
+
+- 2026-10-11T19:30:05+00:00: Repair commits e2b6c96a and 2ee4626e close path confinement, evaluator
+  layout, license, and diagnostic-contract gaps; worker tests and clippy passed. Coordinator now
+  owns exact-head review and CI transition.
+
+- 2026-10-11T19:31:10+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:31:13+00:00: Fresh CI at 2ee4626e failed only because
+  docs/examples/asb-cli-workflow-v1.provenance.json retains the pre-repair lib.rs digest; this is a
+  version-coupled fixture repair, not a gate bypass.
+
+- 2026-10-11T19:31:32+00:00: Recorded command exit 0; command argv SHA-256
+  79330f4930c0b2862f387bc03e8f654452ee893b5e4e4b0b5c975164a14b11f5.
+
+- 2026-10-11T19:31:50+00:00: Recorded command exit 0; command argv SHA-256
+  ef19043205064ea87bec66574bfe246191c9311bc8c404cd8e347d08fbdc44f0.
+
+- 2026-10-11T19:32:09+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-10-11T19:32:30+00:00: Recorded command exit 0; command argv SHA-256
+  a5e91d8a6e356ba88fd4835c765ebd2411c75eacaa60f98e203295ec257bd3a5.
+
+- 2026-10-11T19:32:57+00:00: Recorded command exit 0; command argv SHA-256
+  43ea9928318902aa9759fb71da6ab8f4065ad9187c052d4dbcfab10689b865dc.
+
+- 2026-10-11T19:33:03+00:00: Recorded command exit 0; command argv SHA-256
+  4f8df750c52059d8635553b027b488846a11042048be7fbf9b169d768cc9b33c.
+
+- 2026-10-11T19:33:05+00:00: Recorded command exit 0; command argv SHA-256
+  7e98eb9e102fb5d7990fdbc762db8b81b0736b84bd704ca74b2362608b3609fb.
+
+- 2026-10-11T19:33:26+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:33:26+00:00: Provenance fixture refreshed to exact lib.rs digest 212ecc...; focused
+  provenance tests, formatting, diff checks, SSH signature, and DCO verified.
+
+- 2026-10-11T19:33:31+00:00: Recorded command exit 0; command argv SHA-256
+  d32df0a8f7802e39b9a6743613fff16ac35e4dddba3905aa783a204f77a7e43f.
+
+- 2026-10-11T19:34:02+00:00: Recorded command exit 0; command argv SHA-256
+  e99fa3526731594bb874afc38873d168af47ae1a7a2b2f28a3ba0ab45ec23c25.
+
+- 2026-10-11T19:34:23+00:00: Recorded command exit 0; command argv SHA-256
+  eb8648d78be9d44db5631385c3fcbaaeaac0114989924fef6dc1415045ce0bfa.
+
+- 2026-10-11T19:41:25+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:41:25+00:00: Policy gate failed on hosted workspace line coverage 89.96%; no
+  threshold or exclusion change authorized. Start focused headroom repair.
+
+- 2026-10-11T19:41:37+00:00: Recorded command exit 1; command argv SHA-256
+  9021062b2f94c8237a275d55c1d58d4b68f814009d1e64c0331cc2e79485dbf5.
+
+- 2026-10-11T19:42:02+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:42:22+00:00: Recorded command exit 0; command argv SHA-256
+  55dcada8241e128ea43fad98b16914d286accd7b1ae8800223abfe72d4b7663f.
+
+- 2026-10-11T19:43:07+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-10-11T19:43:13+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-10-11T19:43:22+00:00: Recorded command exit 101; command argv SHA-256
+  7478958eb316c743a73bd43b84218eeabe587096e7a49efafbd15511f621999a.
+
+- 2026-10-11T19:43:30+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-10-11T19:43:37+00:00: Recorded command exit 0; command argv SHA-256
+  7478958eb316c743a73bd43b84218eeabe587096e7a49efafbd15511f621999a.
+
+- 2026-10-11T19:45:05+00:00: Recorded command exit 101; command argv SHA-256
+  11aa7892ee38d3a937558ce5f68e38a693ff8b89e160ec2c02b25ddf17ea330b.
+
+- 2026-10-11T19:45:40+00:00: Recorded command exit 101; command argv SHA-256
+  bbce46d2ff93648e7eb1884aa7b67c4b6fc4c41a4baf56000d9f1186d564d857.
+
+- 2026-10-11T19:46:02+00:00: Recorded command exit 0; command argv SHA-256
+  7109951d44fa989265b6b6481cadfc8b40676ae39f4e04b8e1126fe99b431b01.
+
+- 2026-10-11T19:47:03+00:00: Recorded command exit 101; command argv SHA-256
+  11aa7892ee38d3a937558ce5f68e38a693ff8b89e160ec2c02b25ddf17ea330b.
+
+- 2026-10-11T19:47:27+00:00: Recorded command exit 0; command argv SHA-256
+  9ff4e40d0a608a041abbfd1d435a9e4d565a2c8931e342870e1969854466c867.
+
+- 2026-10-11T19:47:35+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-10-11T19:47:43+00:00: Recorded command exit 0; command argv SHA-256
+  b97757641a9af30f9ac31e77e95e32904b294391d35779620e8d262127a7ab99.
+
+- 2026-10-11T19:47:48+00:00: Recorded command exit 0; command argv SHA-256
+  1a7e5d90dafbd72b5558a734390990d47e5418d247bc8a648ebfd7ce6ec138d2.
+
+- 2026-10-11T19:47:56+00:00: Recorded command exit 0; command argv SHA-256
+  4f8df750c52059d8635553b027b488846a11042048be7fbf9b169d768cc9b33c.
+
+- 2026-10-11T19:48:29+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:48:30+00:00: Headroom repair added project-bound lifecycle coverage and refreshed
+  diagnostic/provenance fixtures; signed exact head independently verified. Final clean coverage
+  measurement is the remaining gate.
+
+- 2026-10-11T19:48:59+00:00: Recorded command exit 0; command argv SHA-256
+  0595a130fcc91554f444c68fea9ef76dbfed8d5b1eaeca807ca3bed0c813cd47.
+
+- 2026-10-11T19:49:17+00:00: Recorded command exit 101; command argv SHA-256
+  11aa7892ee38d3a937558ce5f68e38a693ff8b89e160ec2c02b25ddf17ea330b.
+
+- 2026-10-11T19:49:46+00:00: Recorded command exit 0; command argv SHA-256
+  0595a130fcc91554f444c68fea9ef76dbfed8d5b1eaeca807ca3bed0c813cd47.
+
+- 2026-10-11T19:50:05+00:00: Recorded command exit 0; command argv SHA-256
+  0f95a7f9172e2a97212e5dbb24d9696c5ff9cf610903dc5271d64450a1d5a9a6.
+
+- 2026-10-11T19:51:20+00:00: Recorded command exit 0; command argv SHA-256
+  11aa7892ee38d3a937558ce5f68e38a693ff8b89e160ec2c02b25ddf17ea330b.
+
+- 2026-10-11T19:51:53+00:00: Recorded command exit 0; command argv SHA-256
+  0595a130fcc91554f444c68fea9ef76dbfed8d5b1eaeca807ca3bed0c813cd47.
+
+- 2026-10-11T19:52:11+00:00: Recorded command exit 0; command argv SHA-256
+  0f95a7f9172e2a97212e5dbb24d9696c5ff9cf610903dc5271d64450a1d5a9a6.
+
+- 2026-10-11T19:52:51+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:52:52+00:00: Clean full workspace llvm-cov completed at 90.22% lines against
+  unchanged 90% floor; all tests and coverage gate passed. No source changes in verification run.
+
+- 2026-10-11T19:56:15+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T19:56:15+00:00: Hosted policy gate reproducibly reports 89.97% (101063/101195), so
+  merge remains blocked. Assign second headroom repair; all other observed checks have no product
+  failure.
+
+- 2026-10-11T19:59:10+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-10-11T19:59:12+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-10-11T19:59:28+00:00: Recorded command exit 1; command argv SHA-256
+  ff20aea9b0bc559883aed2887b24e8d705857cfb012bd868bb645248a13560ba.
+
+- 2026-10-11T20:00:47+00:00: Recorded command exit 101; command argv SHA-256
+  5d64c193216d1be2aaeff68aecf69caf97aa349d2c5ff4deeb8ff3b6b4a136b7.
+
+- 2026-10-11T20:01:57+00:00: Recorded command exit 0; command argv SHA-256
+  15dea97d5832a35e57334c39b8e3b1b4553a2a41dd475a3bab3ec9f09aadcae8.
+
+- 2026-10-11T20:02:16+00:00: Recorded command exit 101; command argv SHA-256
+  c5e03b9da0e4360b9f35add581a1b1d30ff45fad3132e5c5c47cf4c52c195149.
+
+- 2026-10-11T20:02:50+00:00: Recorded command exit 0; command argv SHA-256
+  c5e03b9da0e4360b9f35add581a1b1d30ff45fad3132e5c5c47cf4c52c195149.
+
+- 2026-10-11T20:03:13+00:00: Recorded command exit 0; command argv SHA-256
+  83760dfa21a399b77e0bf8951c77dab0e2814121bb1d4b2d7fa767808d9b921c.
+
+- 2026-10-11T20:03:16+00:00: Recorded command exit 0; command argv SHA-256
+  cf220e791468443b5f7b6ed8baa0ffa18999fac69cd8802c26dc5e10e221d21b.
+
+- 2026-10-11T20:03:22+00:00: Recorded command exit 0; command argv SHA-256
+  d32df0a8f7802e39b9a6743613fff16ac35e4dddba3905aa783a204f77a7e43f.
+
+- 2026-10-11T20:04:28+00:00: Recorded command exit 101; command argv SHA-256
+  11aa7892ee38d3a937558ce5f68e38a693ff8b89e160ec2c02b25ddf17ea330b.
+
+- 2026-10-11T20:04:42+00:00: Recorded command exit 0; command argv SHA-256
+  ef19043205064ea87bec66574bfe246191c9311bc8c404cd8e347d08fbdc44f0.
+
+- 2026-10-11T20:05:52+00:00: Recorded command exit 0; command argv SHA-256
+  11aa7892ee38d3a937558ce5f68e38a693ff8b89e160ec2c02b25ddf17ea330b.
+
+- 2026-10-11T20:05:59+00:00: Recorded command exit 0; command argv SHA-256
+  565b04b503d6d7bfabfd2845aea0b91208d33abbc73adaaf208c27f9198d6768.
+
+- 2026-10-11T20:06:05+00:00: Recorded command exit 0; command argv SHA-256
+  0b96e10e29c6e70d787de4d0497366e66f47eed6083250a7ef07c77a8218677b.
+
+- 2026-10-11T20:06:14+00:00: Recorded command exit 0; command argv SHA-256
+  4f8df750c52059d8635553b027b488846a11042048be7fbf9b169d768cc9b33c.
+
+- 2026-10-11T20:06:41+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:06:42+00:00: Second headroom repair added gzip archive and literature endpoint
+  tests; clean workspace coverage is 90.23%, all focused gates pass, and signed exact head is
+  d16375681b952934909d5ecbdd13e3d5ec361c4d.
+
+- 2026-10-11T20:15:48+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:15:48+00:00: Hosted policy gate remains the sole failure at 89.99%; no
+  floor/exclusion change authorized. Start final larger headroom repair.
+
+- 2026-10-11T20:22:59+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:22:59+00:00: Final headroom repair added archive/lifecycle safety tests;
+  hosted-equivalent coverage is 90.26%, signed exact head d6bddcabab5cfd1063a5f31c01c505f02f4b5d1a
+  is clean. Fresh independent review required.
+
+- 2026-10-11T20:24:09+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:24:09+00:00: Independent review blocked only on provenance drift: actual lib.rs
+  SHA-256 1348bbd2... differs from recorded f0373063... after headroom tests. No source or gate
+  defect found.
+
+- 2026-10-11T20:24:14+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:24:16+00:00: Recorded command exit 0; command argv SHA-256
+  b10a47fbbca97caa7dfa47da6f422ac333e03694b0df1729a7c0d044d44193bf.
+
+- 2026-10-11T20:24:37+00:00: Recorded command exit 0; command argv SHA-256
+  ef19043205064ea87bec66574bfe246191c9311bc8c404cd8e347d08fbdc44f0.
+
+- 2026-10-11T20:25:05+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-10-11T20:25:15+00:00: Recorded command exit 0; command argv SHA-256
+  a5e91d8a6e356ba88fd4835c765ebd2411c75eacaa60f98e203295ec257bd3a5.
+
+- 2026-10-11T20:25:21+00:00: Recorded command exit 0; command argv SHA-256
+  43ea9928318902aa9759fb71da6ab8f4065ad9187c052d4dbcfab10689b865dc.
+
+- 2026-10-11T20:25:30+00:00: Recorded command exit 0; command argv SHA-256
+  4f8df750c52059d8635553b027b488846a11042048be7fbf9b169d768cc9b33c.
+
+- 2026-10-11T20:26:07+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:26:07+00:00: Provenance repair commit 3be3029d is SSH-signed+DCO, exact digest
+  1348bbd2..., focused workflow transcript tests pass, and worktree is clean.
+
+- 2026-10-11T20:37:07+00:00: Recorded command exit 0; command argv SHA-256
+  5fd28450679fe0f026a4ece8457988112387518f7a55ba64de3246fcc7473b0f.
+
+- 2026-10-11T20:37:30+00:00: Recorded command exit 0; command argv SHA-256
+  fa5670793b16622fbc369fe99f679444b8ea527528c6564deb271d26604d921e.
+
+- 2026-10-11T20:37:36+00:00: Recorded command exit 0; command argv SHA-256
+  c97b034a991260112173af8a7610cc6dd21420b5ad53eecb15cb182da223c8fa.
+
+- 2026-10-11T20:37:46+00:00: Recorded command exit 1; command argv SHA-256
+  713c54e4549793b8533c11f13312f71c0275c27222e61a45ec3d67267fc55d51.
+
+- 2026-10-11T20:37:59+00:00: Recorded command exit 0; command argv SHA-256
+  45cd3a6588bbaf54a4e107b912c9bf1e8ae98d1d086587bf3525d7a8c61359b4.
+
+- 2026-10-11T20:38:14+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:38:14+00:00: PR #584 merged through signed exact-tree two-parent merge 7ce4846 (base
+  24cb72d, reviewed head 3be3029d, tree 842ebc25). Ten post-merge workflows are in progress; do not
+  release yet.
+
+- 2026-10-11T20:50:26+00:00: Recorded command exit 0; command argv SHA-256
+  c3e3e42ed6378cde65b6e9bc375fc62ca59e70e785d1f0da4c57b4a3a331ca85.
+
+- 2026-10-11T20:51:08+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:51:14+00:00: All 10 exact-main workflows are terminal-success. The attempted
+  post-merge workspace run ended, but its integration worktree was at pre-merge base 24cb72d, so it
+  is invalid evidence; AR remains in progress.
+
+- 2026-10-11T20:51:59+00:00: Recorded command exit 0; command argv SHA-256
+  8835ca6afa124b5f0cfd058e18f654c75cfea93cbe35cb3c57d7948687d35db1.
+
+- 2026-10-11T20:52:14+00:00: Recorded command exit 0; command argv SHA-256
+  ba24acbef326ec8e9d32a20b23bfddb0dd2065f6246d9f7ae97d747bd72e60d0.
+
+- 2026-10-11T20:52:24+00:00: Recorded command exit 0; command argv SHA-256
+  1172e94c0a9b2ad3427bfc988a1f8c38426761909bf198baba8529e4224c8779.
+
+- 2026-10-11T20:52:35+00:00: Recorded command exit 0; command argv SHA-256
+  0840177781a306f9cac27df908d14e7b5801294074d8c0421041db9a4a0e19c4.
+
+- 2026-10-11T20:54:14+00:00: Recorded command exit 0; command argv SHA-256
+  5158ce0410fcd0ea3ce87276a5bb4bf6fb074f7f17c67aae96f9561c9f58459d.
+
+- 2026-10-11T20:54:29+00:00: Recorded command exit 0; command argv SHA-256
+  6b58f28136c1c504956244d600801fee5cc8b7b8ff6c84e8ecc3b2e561241830.
+
+- 2026-10-11T20:55:45+00:00: Heartbeat by ar1782-coordinator-repair.
+
+- 2026-10-11T20:57:14+00:00: Recorded command exit 0; command argv SHA-256
+  f6afff9379f09b79fd401f28971c62953b4b1993932538a5908401c783a0e0b9.
+
+- 2026-10-11T20:57:16+00:00: Recorded command exit 0; command argv SHA-256
+  8ee7e06cbf2fce8c635b1fa102e13e1c933ff90ceb67105832e260738a46d084.
+
+- 2026-10-11T20:57:29+00:00: Independent post-merge acceptance: exact merge, full workspace test,
+  all post-merge workflows, signature/DCO, clean worktree, and live doctor verified.
+
+- 2026-10-11T20:57:31+00:00: PR #584 merged at 7ce484612db043831e4acb995839455f512197c0 with exact
+  reviewed head 3be3029d7a1d927b86b4ae938abfc939d8339009; exact merge signature/DCO, full locked
+  workspace test, 10/10 post-merge workflows, clean worktree, and doctor verified; acceptance
+  receipt recorded.

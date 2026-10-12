@@ -1,14 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
-
-### AR-1688 — Runner-owned cassette capture and replay qualification
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
@@ -20,7 +11,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -28,7 +19,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. |
-| Next action | Run the disposable exact-head ASB/TUI journey and publish a privacy-safe paired receipt without closing AR-1686 prematurely. |
+| Next action | No further action; AR-1689 is complete and released. |
 
 ### AR-1690 — ASB development-channel current-main materializer
 
@@ -1098,39 +1089,39 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output. |
-| Next action | Implement the single human step reporter on the mandatory output router after its output, level, status, and quiet contracts are accepted. |
+| Summary | AR-1772 merged and post-merge verified on exact main 4b14797a. |
+| Next action | Release completed task: PR #602 merged at 4b14797a; exact-main focused reporter, diagnostic contract, and make test all passed; receipt committed. |
 
 ### AR-1773 — Universal command step instrumentation
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. |
-| Next action | Instrument every eligible public command operation through the shared reporter after the diagnostic gate and reporter are accepted. |
+| Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
+| Next action | Independent review complete: PR #605 exact head f78a1006 is signed/DCO/privacy clean; focused step_progress 4/4 passes. human_cli one outcome-matrix failure reproduces on parent 1494e474 with unchanged expected status (pre-existing environment failure); retain hosted/full gate evidence and do not merge until integration lane reconciles exact-head results. |
 
 ### AR-1774 — Status and progress completeness CI
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1774-status-ci-luna56 |
 | Parent | None |
 | Children | None |
 | Summary | Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode. |
@@ -1140,7 +1131,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -1148,7 +1139,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels. |
-| Next action | Implement the sole configurable output router, generated project output defaults, and four-level selection after the output contract is accepted. |
+| Next action | Accept and release AR-1775 using durable merge receipt: PR #597 merged as 98327152f2e92308b5bcf5b21cfe0c9f285cf950; exact protected main and clean detached post-merge worktree verified; cargo test -p asb-cli --lib 429/429 passed. |
 
 ### AR-1776 — Supported-tool acquisition catalog
 
@@ -1196,11 +1187,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | luna56-ar1779 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying. |
@@ -1210,7 +1201,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -1218,7 +1209,7 @@
 | Parent | None |
 | Children | None |
 | Summary | End-to-end qualify default-installed supported tools and workload bundles through actual ASB execution. |
-| Next action | Qualify every development external workload, after installation and selection, through actual run, sweep, report, and comparison flows. |
+| Next action | Create and complete a dependency-safe successor AR for a credential-free controlled local acquisition backend/fixture archive source, then rerun every AR-1781 workload through public install/select/run/sweep/report/compare and exact-main hosted qualification; existing AR-1782 only covers remote acquisition and is not a substitute. |
 
 ### AR-1781 — External workload acquisition catalog
 
@@ -1238,29 +1229,29 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | ar1782_workload_install_luna56 |
-| Parent | None |
-| Children | None |
-| Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
-| Next action | PR #584 rebased onto origin/main 24cb72d; exact remote head 96ea497a. Credential-free workload matrix, diagnostic contract, provenance, resolver, and clippy focused gates pass. Poll fresh exact-head CI; do not merge. |
-
-### AR-1783 — Installed workload selection and execution
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Select every development external workload and prove ASB uses its exact project-local identity end to end. |
-| Next action | Integrate every development-supported installed workload bundle into selection and prove full run/sweep/report/compare consumes its exact recorded identity. |
+| Summary | Implement dedicated verified remote external workload installation and lifecycle through asb workload. |
+| Next action | Recreate a clean integration worktree at exact merge 7ce484612db043831e4acb995839455f512197c0; rerun cargo test --locked --workspace through handoffctl, verify HEAD and cleanliness, then record result before release. |
+
+### AR-1783 — Installed workload selection and execution
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | PR #596 locally integrated as signed/DCO protected-main merge ca494d50; exact remote main now points to it and post-merge workflows are running |
+| Next action | Wait for all ca494d50 protected-main post-merge workflows terminal green, record exact-main receipts, then accept and release AR-1783 |
 
 ### AR-1784 — Command dependency registry and preflight
 
@@ -1434,21 +1425,21 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | future |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1796-release-path |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Keep autonomous development live during concurrent protected-main integration. |
-| Next action | Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release. |
+| Next action | User-requested stop recorded. Preserve interrupted exact-candidate retry artifacts and terminal uncertainty; do not accept or release. Reclaim only after explicit continuation and rerun a fresh bounded exact full-exhaustive attempt with PYTHONDONTWRITEBYTECODE=1. |
 
 ### AR-1797 — Wire cli2key sidecar into live benchmark execution
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -1456,7 +1447,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark. |
-| Next action | Wire the verified project-local cli2key bridge into the runtime-owned sidecar launch path, then qualify fake and opt-in live benchmark execution without exposing credentials. |
+| Next action | No further action; PR #603 merged as 9c5e5571 and exact-main post-merge verification is green. |
 
 ### AR-1798 — Pinned source-checkout acquisition
 
@@ -1471,6 +1462,258 @@
 | Children | None |
 | Summary | Coverage margin repair pushed at c5303c05. |
 | Next action | Monitor PR #585 exact-head CI at 55a78934; request independent re-review after hosted coverage passes. |
+
+### AR-1799 — Add cli2key runtime authority composition seam
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
+| Next action | Accept and release AR-1799 done after merge e0e44a7d and post-merge exact-main make test exit 0; then doctor live. |
+
+### AR-1800 — Controlled local workload acquisition backend
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification. |
+| Next action | No AR-1800 product diff remains: required controlled fixture authority and lifecycle evidence are integrated on exact origin/main. Release with parent review evidence. |
+
+### AR-1801 — Tool-discovery Cargo fixture isolation
+
+| Field | Value |
+| --- | --- |
+| Status | superseded |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make tool-discovery Cargo version fixture deterministic under full workspace execution. |
+| Next action | Superseded by AR-1803 merged as 3c7ca1c1; no further AR-1801 action. |
+
+### AR-1802 — Controlled workload matrix and fixture authority
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review. |
+| Next action | Record task-spec acceptance against merged main 1ce208b4, then release done and verify live doctor. |
+
+### AR-1803 — Deterministic parallel fixture repair
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
+| Next action | Closed: PR #599 merged as 3c7ca1c1; exact main verified and post-merge gates green. No further action. |
+
+### AR-1804 — Cross-module fixture semaphore
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
+| Next action | Verify origin/main exact merged head and run post-merge acceptance/doctor; then accept and release AR-1804. |
+
+### AR-1805 — CLI Surface Inventory and UX Contract
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Independent exact-head review accepted PR #608 at 0fec6465. |
+| Next action | Create and claim a narrowly scoped forward-only provenance-recovery successor for PR #608; use tools/integration/merge_pr.py from clean exact base 5c843a12 and reviewed topic 0fec6465, publish signed local merge, then watch all exact-main gates. |
+
+### AR-1806 — Exhaustive Human Output Contract Audit
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Guarantee clear human-default success, warning, and failure journeys for every ASB CLI route. |
+| Next action | Implement route-by-route human-output journey tests and repair non-human default output. |
+
+### AR-1807 — Complete Contextual CLI Help Contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide useful --help on every ASB command and subcommand, including the TUI lifecycle. |
+| Next action | Implement and test complete contextual help for every public command path. |
+
+### AR-1808 — Universal List and Selection Contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make every ASB command discover its valid choices through a consistent, typed --list interface. |
+| Next action | Define and implement the universal --list discovery and selection contract. |
+
+### AR-1809 — End-to-End CLI UX Contract Qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the complete ASB command tree for human output, help, list discovery, and selection round trips. |
+| Next action | Run end-to-end CLI UX qualification against the complete contract and close contract gaps. |
+
+### AR-1810 — Complete cli2key Standard CLI Integration
+
+| Field | Value |
+| --- | --- |
+| Status | blocked |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps. |
+| Next action | AR-1812 is the promoted prerequisite for the missing runtime/control-to-CLI cli2key bootstrap seam. After AR-1812 merges, rebase and resume AR-1810 implementation, then complete exact-head review, merge, and post-merge verification. |
+
+### AR-1811 — Development/formal workflow separation
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. |
+| Next action | Monitor PR #606 exact head d9972679899cf18c1c9ab87e694ad639a2c18786 until all required non-TLC checks are green; then obtain independent review, merge, exact-main post-merge verification, and durable closure. |
+
+### AR-1812 — Implement cli2key ordinary CLI bootstrap
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
+| Next action | Monitor every exact-main post-merge workflow for a0a978f1 at 30-second cadence; record terminal success/failure and then perform post-merge verification before closing AR. |
+
+### AR-1813 — Expose cli2key runtime factory contract
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. |
+| Next action | Exact-main merge 5c843a12 is verified by 9/10 terminal-success workflows; Repository quality run 38239012450 remains in progress with no failure. Wait for its terminal result, then record final post-merge receipt and release AR-1813 done. |
+
+### AR-1814 — Remove stale TLC development ruleset requirement
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance. |
+| Next action | Monitor exact-main post-merge workflows for signed merge 5a6c5477; after all terminal success, accept/release AR-1814 with ruleset before/after receipt and doctor evidence. |
+
+### AR-1815 — Protected-main signed merge recovery
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Recover protected-main merge provenance without rewriting the preserved GitHub merge. |
+| Next action | Exact merge e57982a is published. Repository quality attempt 4 is in progress after attempt 3 non-reproducible source_checkout Err(Unavailable); monitor attempt 4 and all remaining exact-main workflows to terminal-success before receipt/release. |
+
+### AR-1816 — Coordinator projection and bytecode hygiene recovery
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | ar1816_projection_hygiene |
+| Parent | None |
+| Children | None |
+| Summary | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. |
+| Next action | Implement a lock-aware, atomic reconciliation path and bytecode-safe coordinator execution, then qualify recovery under concurrent state activity. |
 
 
 ## Dependency graph
@@ -1839,7 +2082,7 @@ flowchart LR
         AR_1290["AR-1290 - Done"]:::status_done
         AR_1291["AR-1291 - Done"]:::status_done
         AR_1292["AR-1292 - Blocked"]:::status_blocked
-        AR_1293["AR-1293 - Blocked"]:::status_blocked
+        AR_1293["AR-1293 - Done"]:::status_done
         AR_1294["AR-1294 - Superseded"]:::status_superseded
         AR_1295["AR-1295 - Done"]:::status_done
         AR_1296["AR-1296 - Done"]:::status_done
@@ -2190,7 +2433,7 @@ flowchart LR
         AR_1649["AR-1649 - Done"]:::status_done
         AR_1650["AR-1650 - Done"]:::status_done
         AR_1651["AR-1651 - Done"]:::status_done
-        AR_1652["AR-1652 - Blocked"]:::status_blocked
+        AR_1652["AR-1652 - Done"]:::status_done
         AR_1653["AR-1653 - Planned"]:::status_planned
         AR_1654["AR-1654 - Planned"]:::status_planned
         AR_1655["AR-1655 - Planned"]:::status_planned
@@ -2219,10 +2462,10 @@ flowchart LR
         AR_1683["AR-1683 - Planned"]:::status_planned
         AR_1684["AR-1684 - Planned"]:::status_planned
         AR_1685["AR-1685 - Done"]:::status_done
-        AR_1686["AR-1686 - Open"]:::status_open
+        AR_1686["AR-1686 - Done"]:::status_done
         AR_1687["AR-1687 - Done"]:::status_done
         AR_1688["AR-1688 - Done"]:::status_done
-        AR_1689["AR-1689 - Planned"]:::status_planned
+        AR_1689["AR-1689 - Done"]:::status_done
         AR_1690["AR-1690 - Done"]:::status_done
         AR_1691["AR-1691 - Planned"]:::status_planned
         AR_1692["AR-1692 - Done"]:::status_done
@@ -2302,18 +2545,18 @@ flowchart LR
         AR_1769["AR-1769 - Done"]:::status_done
         AR_1770["AR-1770 - Done"]:::status_done
         AR_1771["AR-1771 - Done"]:::status_done
-        AR_1772["AR-1772 - Planned"]:::status_planned
-        AR_1773["AR-1773 - Planned"]:::status_planned
-        AR_1774["AR-1774 - Planned"]:::status_planned
-        AR_1775["AR-1775 - Planned"]:::status_planned
+        AR_1772["AR-1772 - Done"]:::status_done
+        AR_1773["AR-1773 - Done"]:::status_done
+        AR_1774["AR-1774 - In progress"]:::status_in_progress
+        AR_1775["AR-1775 - Done"]:::status_done
         AR_1776["AR-1776 - Done"]:::status_done
         AR_1777["AR-1777 - Done"]:::status_done
         AR_1778["AR-1778 - Done"]:::status_done
-        AR_1779["AR-1779 - In progress"]:::status_in_progress
-        AR_1780["AR-1780 - Planned"]:::status_planned
+        AR_1779["AR-1779 - Done"]:::status_done
+        AR_1780["AR-1780 - Blocked"]:::status_blocked
         AR_1781["AR-1781 - Done"]:::status_done
-        AR_1782["AR-1782 - In progress"]:::status_in_progress
-        AR_1783["AR-1783 - Planned"]:::status_planned
+        AR_1782["AR-1782 - Done"]:::status_done
+        AR_1783["AR-1783 - Done"]:::status_done
         AR_1784["AR-1784 - Done"]:::status_done
         AR_1785["AR-1785 - Done"]:::status_done
         AR_1786["AR-1786 - Done"]:::status_done
@@ -2326,9 +2569,30 @@ flowchart LR
         AR_1793["AR-1793 - Done"]:::status_done
         AR_1794["AR-1794 - Done"]:::status_done
         AR_1795["AR-1795 - Done"]:::status_done
-        AR_1796["AR-1796 - In progress"]:::status_in_progress
-        AR_1797["AR-1797 - Planned"]:::status_planned
+        AR_1796["AR-1796 - Future"]:::status_future
+        AR_1797["AR-1797 - Done"]:::status_done
         AR_1798["AR-1798 - Done"]:::status_done
+        AR_1799["AR-1799 - Done"]:::status_done
+    end
+    subgraph series_18["18 - Additional work"]
+        direction TB
+        AR_1800["AR-1800 - Done"]:::status_done
+        AR_1801["AR-1801 - Superseded"]:::status_superseded
+        AR_1802["AR-1802 - Done"]:::status_done
+        AR_1803["AR-1803 - Done"]:::status_done
+        AR_1804["AR-1804 - Done"]:::status_done
+        AR_1805["AR-1805 - Open"]:::status_open
+        AR_1806["AR-1806 - Planned"]:::status_planned
+        AR_1807["AR-1807 - Planned"]:::status_planned
+        AR_1808["AR-1808 - Planned"]:::status_planned
+        AR_1809["AR-1809 - Planned"]:::status_planned
+        AR_1810["AR-1810 - Blocked"]:::status_blocked
+        AR_1811["AR-1811 - Done"]:::status_done
+        AR_1812["AR-1812 - Done"]:::status_done
+        AR_1813["AR-1813 - Done"]:::status_done
+        AR_1814["AR-1814 - Done"]:::status_done
+        AR_1815["AR-1815 - Done"]:::status_done
+        AR_1816["AR-1816 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4198,11 +4462,16 @@ flowchart LR
     AR_1728 --> AR_1730
     AR_1729 --> AR_1731
     AR_1729 --> AR_1797
+    AR_1729 --> AR_1799
+    AR_1729 --> AR_1810
     AR_1730 --> AR_1731
     AR_1731 --> AR_1732
     AR_1731 --> AR_1797
+    AR_1731 --> AR_1799
+    AR_1731 --> AR_1810
     AR_1732 --> AR_1733
     AR_1732 --> AR_1797
+    AR_1732 --> AR_1810
     AR_1733 --> AR_1736
     AR_1733 --> AR_1754
     AR_1733 --> AR_1785
@@ -4212,6 +4481,7 @@ flowchart LR
     AR_1733 --> AR_1789
     AR_1733 --> AR_1790
     AR_1733 --> AR_1797
+    AR_1733 --> AR_1810
     AR_1734 --> AR_1737
     AR_1734 --> AR_1738
     AR_1737 --> AR_1751
@@ -4240,6 +4510,9 @@ flowchart LR
     AR_1762 --> AR_1765
     AR_1762 --> AR_1766
     AR_1762 --> AR_1776
+    AR_1762 --> AR_1801
+    AR_1762 --> AR_1803
+    AR_1762 --> AR_1804
     AR_1763 --> AR_1764
     AR_1763 --> AR_1765
     AR_1763 --> AR_1783
@@ -4260,6 +4533,8 @@ flowchart LR
     AR_1771 --> AR_1775
     AR_1772 --> AR_1773
     AR_1773 --> AR_1774
+    AR_1773 --> AR_1805
+    AR_1773 --> AR_1806
     AR_1775 --> AR_1772
     AR_1775 --> AR_1774
     AR_1776 --> AR_1777
@@ -4271,10 +4546,17 @@ flowchart LR
     AR_1778 --> AR_1798
     AR_1779 --> AR_1780
     AR_1779 --> AR_1797
+    AR_1779 --> AR_1810
+    AR_1779 --> AR_1812
+    AR_1779 --> AR_1813
     AR_1781 --> AR_1782
     AR_1781 --> AR_1794
     AR_1782 --> AR_1783
+    AR_1782 --> AR_1800
+    AR_1782 --> AR_1802
     AR_1783 --> AR_1780
+    AR_1783 --> AR_1800
+    AR_1783 --> AR_1802
     AR_1784 --> AR_1779
     AR_1784 --> AR_1793
     AR_1787 --> AR_1785
@@ -4285,6 +4567,18 @@ flowchart LR
     AR_1790 --> AR_1789
     AR_1790 --> AR_1791
     AR_1791 --> AR_1792
+    AR_1797 --> AR_1810
+    AR_1799 --> AR_1810
+    AR_1799 --> AR_1812
+    AR_1799 --> AR_1813
+    AR_1805 --> AR_1806
+    AR_1805 --> AR_1807
+    AR_1805 --> AR_1808
+    AR_1806 --> AR_1809
+    AR_1807 --> AR_1809
+    AR_1808 --> AR_1809
+    AR_1812 --> AR_1810
+    AR_1813 --> AR_1812
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -4327,29 +4621,3 @@ flowchart LR
 | [AR-0312](../tasks/AR-0312-provider-ollama.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) |
 | [AR-0313](../tasks/AR-0313-all-agents-provider.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md), [AR-1100](../tasks/AR-1100.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) |
 | [AR-0314](../tasks/AR-0314-recording-source-choice.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) |
-| [AR-0315](../tasks/AR-0315-provider-parity-conformance.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1110](../tasks/AR-1110.md), [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) |
-| [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) |
-| [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) |
-| [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) |
-| [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
-| [AR-0320](../tasks/AR-0320-provider-credential-integration.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
-| [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md), [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0705](../tasks/AR-0705-native-debian-capacity.md), [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1004](../tasks/AR-1004-reliability-fairness.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) |
-| [AR-0402](../tasks/AR-0402-external-code-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md) |
-| [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md) |
-| [AR-0404](../tasks/AR-0404-extended-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
-| [AR-0405](../tasks/AR-0405-performance-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
-| [AR-0406](../tasks/AR-0406-evolving-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
-| [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) |
-| [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-1005](../tasks/AR-1005-trace-interoperability.md), [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) |
-| [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0905](../tasks/AR-0905-recovery-models.md), [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) |
-| [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) |
-| [AR-0505](../tasks/AR-0505-agent-replay-conformance.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1151](../tasks/AR-1151.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
-| [AR-0506](../tasks/AR-0506-replay-opencode.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0507](../tasks/AR-0507-replay-opendesk.md) | [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0508](../tasks/AR-0508-replay-aider.md) | [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md), [AR-0850](../tasks/AR-0850-aider-deterministic-replay.md) |
-| [AR-0509](../tasks/AR-0509-replay-codex.md) | [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0510](../tasks/AR-0510-replay-gemini.md) | [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0511](../tasks/AR-0511-replay-qwen.md) | [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0512](../tasks/AR-0512-replay-goose.md) | [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0513](../tasks/AR-0513-replay-miniswe.md) | [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
-| [AR-0514](../tasks/AR-0514-replay-openhands.md) | [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |

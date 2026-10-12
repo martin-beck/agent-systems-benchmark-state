@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1809.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"all-family-journeys","description":"Every public command family completes contract-driven human/help/list/selection journeys."},
+    {"id":"mode-parity","description":"TTY, redirected, JSON, and quiet modes retain their specified contracts."},
+    {"id":"clean-project-usability","description":"A clean project can discover choices and reach documented selection commands without raw JSON interpretation."}
+  ],
+  "definition_of_done": ["End-to-end matrix, independent exact-head review, hosted quality evidence, signed merge, and post-merge verification are green."],
+  "inputs": [{"id":"human-output-corpus","description":"AR-1806 output contract."}, {"id":"help-contract","description":"AR-1807 help contract."}, {"id":"universal-discovery","description":"AR-1808 list and selection contract."}],
+  "outputs": [{"id":"cli-ux-qualification","description":"Exact-head end-to-end evidence for complete public CLI usability."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-output", "gate-weakening", "force-push"],
+  "required_evidence_classes": ["contract-test", "environmental"],
+  "gates": [{"id":"complete-cli-ux-matrix","description":"All command families and output modes pass the generated UX matrix."}]
+}

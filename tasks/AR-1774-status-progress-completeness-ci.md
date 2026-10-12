@@ -2,25 +2,36 @@
 {
   "branch": "feature/ar-1774-status-progress-completeness-ci",
   "checkpoint_commit": "",
-  "claim_expires": "",
-  "depends_on": ["AR-1769", "AR-1773", "AR-1775"],
+  "claim_expires": "2026-10-12T14:40:05+00:00",
+  "depends_on": [
+    "AR-1769",
+    "AR-1773",
+    "AR-1775"
+  ],
   "id": "AR-1774",
   "next_action": "Add required CI enforcement and controlled-defect tests for quiet, status, and progress completeness after universal instrumentation lands.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1774-status-progress-completeness-ci",
   "observed_dirty": 0,
-  "observed_head": "",
-  "owner": "",
+  "observed_head": "a0a978f134959943c54362e84032a6232c606105",
+  "owner": "ar1774-status-ci-luna56",
   "plan": "../plans/AR-1774-status-progress-completeness-ci.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class": "hosted", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1774.json", "spec_revision": 1, "status": "pending"},
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1774.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1774.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "in_progress",
   "summary": "Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode.",
-  "task_revision": 1,
+  "task_revision": 4,
   "title": "Status and progress completeness CI",
-  "updated_at": "2026-10-09T21:29:29+00:00",
+  "updated_at": "2026-10-12T12:40:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1774-status-progress-completeness-ci"
 }
 ---
@@ -44,3 +55,8 @@ network-dependent timing assumptions.
 Do not accept a hand-maintained checklist as the only guard. Tie coverage to
 closed command/step/status types or generated inventories so future commands and
 human output additions fail closed until instrumented and tested.
+
+- 2026-10-12T12:39:43+00:00: Dependencies AR-1769, AR-1773, and AR-1775 are complete; implementation
+  capacity is available.
+
+- 2026-10-12T12:40:05+00:00: Claimed by ar1774-status-ci-luna56.

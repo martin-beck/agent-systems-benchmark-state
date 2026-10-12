@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1779-default-usable-tool-install-command",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-11T16:10:32+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1777",
     "AR-1778",
@@ -12,26 +12,26 @@
   "next_action": "Independent review and exact-head CI for PR #583 at 7c08cfb0; source-only fallback remains to be resolved before merge.",
   "observed_branch": "feature/ar-1779-default-usable-tool-install-command",
   "observed_dirty": 0,
-  "observed_head": "7c08cfb019eebfbfc9032a25a94bf69cde9c8e29",
-  "owner": "luna56-ar1779",
+  "observed_head": "daf2d3ee9750b24adb2a33d113a7096acd961e93",
+  "owner": "",
   "plan": "../plans/AR-1779-default-usable-tool-install-command.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "integration-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "environmental",
+    "evidence_digest": "sha256:eb4b75b18b5b7ea8304c10949634963b29e25f6b1f205408c8da21b93979478b",
+    "evidence_ref": "evidence/AR-1779-post-merge-receipt.txt",
     "spec_ref": "specs/AR-1779.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1779.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying.",
-  "task_revision": 28,
+  "task_revision": 60,
   "title": "Default usable tool-install command",
-  "updated_at": "2026-10-11T14:11:53+00:00",
+  "updated_at": "2026-10-11T21:05:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1779-default-usable-tool-install-command"
 }
 ---
@@ -127,3 +127,87 @@ the adapter smoke check failed.
 
 - 2026-10-11T14:11:53+00:00: Recorded command exit 0; command argv SHA-256
   5cf7ef1b33d2d66d11d63bbe78d94081f0cb3366cd0a77c841993395ec8f82a9.
+
+- 2026-10-11T19:29:04+00:00: Recovered expired claim formerly owned by luna56-ar1779. Coordinator
+  recovery: lease expired; preserve PR #583 head and recorded next action.
+
+- 2026-10-11T20:52:07+00:00: Claimed by ar1779-review-merge-luna56.
+
+- 2026-10-11T20:52:10+00:00: Recorded command exit 0; command argv SHA-256
+  17a35505ebdb797ffbaba7bbdde53d009e26b289b62293d5e1e4d0aabfa8ca1d.
+
+- 2026-10-11T20:52:25+00:00: Recorded command exit 0; command argv SHA-256
+  4d42d72e4864f264baf15a25ba06db5f2547c25cbf8a8c7708e7da2ae34b8999.
+
+- 2026-10-11T20:52:38+00:00: Recorded command exit 0; command argv SHA-256
+  30c5f7dfcd1a0ea6eb72f5f24ce2f479ec87dc913db56ab828b92c5686bd597b.
+
+- 2026-10-11T20:52:42+00:00: Recorded command exit 0; command argv SHA-256
+  24285fcfaf98d0efa54dff3fb037cf77e6d303dfb81beb490d23d427e15ffb48.
+
+- 2026-10-11T20:53:01+00:00: Recorded command exit 0; command argv SHA-256
+  1221ba4ddc514d57554bb1db2da9561f7c6a3fd1a66d78595d7b268c0a4e9a8e.
+
+- 2026-10-11T20:53:05+00:00: Recorded command exit 0; command argv SHA-256
+  35ec55c3e234f7a18afaf73a93beadfd28fb9cf9f04f531f103d5be6ecb2848c.
+
+- 2026-10-11T20:53:57+00:00: Recorded command exit 101; command argv SHA-256
+  22fc19d872be75a975891ff0abd53f1c305974a409b50c49c5df5d842d033e81.
+
+- 2026-10-11T20:54:18+00:00: Recorded command exit 1; command argv SHA-256
+  8da9301c3b436d1d2430be4cf7a9ec902b7262bb7e8f28de6f839d0fd0e2560c.
+
+- 2026-10-11T20:54:29+00:00: Recorded command exit 0; command argv SHA-256
+  e0049c285cc38207c4c5fcabb1fc5a59394e952ca231c49896756236a92890d8.
+
+- 2026-10-11T20:55:14+00:00: Recorded command exit 0; command argv SHA-256
+  e274074a17e0682b5edf79b5caca577a41520ed9ca8daf9342f0433b678582a1.
+
+- 2026-10-11T20:55:34+00:00: Recorded command exit 0; command argv SHA-256
+  7f8e954103b2fb839f013ebb12d6e4c66ce6a8064251e44031ba2c4ebc11debf.
+
+- 2026-10-11T20:56:46+00:00: Recorded command exit 0; command argv SHA-256
+  d21ee7f3c43d56d4497abd9f493e766257107bd28a98eef79e57ad4028072ea5.
+
+- 2026-10-11T20:56:55+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-10-11T20:57:39+00:00: Recorded command exit 0; command argv SHA-256
+  1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
+
+- 2026-10-11T20:58:49+00:00: Recorded command exit 0; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-10-11T20:59:59+00:00: Review worker stopped after no active AR process; preserve PR #583
+  exact head daf2d3ee and source-only fallback concern for a replacement worker.
+
+- 2026-10-11T21:00:49+00:00: Claimed by ar1779-review-merge-luna56.
+
+- 2026-10-11T21:00:51+00:00: Recorded command exit 0; command argv SHA-256
+  17a35505ebdb797ffbaba7bbdde53d009e26b289b62293d5e1e4d0aabfa8ca1d.
+
+- 2026-10-11T21:01:27+00:00: Recorded command exit 101; command argv SHA-256
+  3ebf9b919ee1fcc9f22a059c364358193ba08869b997c9f174fafd823eaccd87.
+
+- 2026-10-11T21:02:02+00:00: Recorded command exit 0; command argv SHA-256
+  851292e15ad2a20e0ee2f1c4e5ede7eabf5c03fbe5bee71b38a36f5ff33c4814.
+
+- 2026-10-11T21:04:17+00:00: Recorded command exit 0; command argv SHA-256
+  beb2864b3de0321ab097a65ee43cecf5286e02a499cc32a7944044b263271823.
+
+- 2026-10-11T21:04:34+00:00: Recorded command exit 0; command argv SHA-256
+  891ba707f01eeb14266821397a2c576d7390b60187f13cccfdc5f86ca77ef248.
+
+- 2026-10-11T21:04:39+00:00: Recorded command exit 0; command argv SHA-256
+  c0d77ac0e85c0cdfde7b135154c2d8c78d3fa912790a07aa30a26f6e9a11c20a.
+
+- 2026-10-11T21:04:44+00:00: Recorded command exit 0; command argv SHA-256
+  8662a565deeeba67d44e00559c68165429b3e59d16ce0b0c285de916da75a82f.
+
+- 2026-10-11T21:04:58+00:00: Exact-main acceptance: implementation is present via merged PR #585,
+  all 15 required checks are green, focused CLI/install lifecycle tests pass, and superseded PR #583
+  is closed without merge.
+
+- 2026-10-11T21:05:00+00:00: Default usable tool installation is on exact protected main via PR #585
+  merge 24cb72d; all 15 required checks and focused lifecycle tests passed; PR #583 closed as
+  empty/superseded; acceptance receipt recorded.

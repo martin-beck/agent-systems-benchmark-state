@@ -5,18 +5,18 @@
 
 ## Portfolio overview
 
-**795 ARs tracked** across 8 active status categories.
+**813 ARs tracked** across 8 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 85 |
-| **Planned** | Defined work awaiting promotion or dependencies | 87 |
-| **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 584 |
+| **Planned** | Defined work awaiting promotion or dependencies | 83 |
+| **Future** | Deferred roadmap work | 2 |
+| **Done** | Accepted, integrated, and durably verified | 605 |
 | **Cancelled** | Stopped with a recorded rationale | 2 |
-| **Superseded** | Replaced by another AR | 32 |
+| **Superseded** | Replaced by another AR | 33 |
 
 
 ## Complete status view
@@ -29,3 +29,4 @@ The generated status view is split into deterministic pages to keep every file b
 - [status/STATUS-0004](status/STATUS-0004.md)
 - [status/STATUS-0005](status/STATUS-0005.md)
 - [status/STATUS-0006](status/STATUS-0006.md)
+- [status/STATUS-0007](status/STATUS-0007.md)

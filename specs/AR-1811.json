@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1811.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "development-separation", "description": "Ordinary development workflows never invoke or require TLC/Alloy."},
+    {"id": "formal-preservation", "description": "A separately labelled final-delivery formal workflow retains TLC/Alloy and is not weakened."},
+    {"id": "native-gates", "description": "Kani, Loom, Rust, policy, privacy, fuzz, supply-chain, and platform checks remain required."},
+    {"id": "postmerge", "description": "Exact reviewed source merges and all exact-main workflows pass."}
+  ],
+  "definition_of_done": ["PR #606 is independently reviewed, merged at exact head, and post-merge workflows are terminal success."],
+  "inputs": [{"id": "development-ci", "description": "Existing ASB development workflow."}, {"id": "formal-ci", "description": "Existing TLC/Alloy formal workflow."}],
+  "outputs": [{"id": "separated-workflows", "description": "Development/formal workflow separation with a future final-delivery TLC lane."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["gate-weakening", "force-push", "provider-egress"],
+  "required_evidence_classes": ["contract-test", "hosted"],
+  "gates": [{"id": "workflow-contract", "description": "Positive and negative workflow-contract tests pass."}, {"id": "exact-main", "description": "Protected merge and exact-main workflows are green."}]
+}

@@ -1,0 +1,13 @@
+AR-1772 post-merge verification
+
+Task: AR-1772
+Pull request: #602
+Reviewed head: 65ee830e6659ac5426757833d1030ae0c32f8ac5
+Merge commit: 4b14797a0892988a484a5171c45c4e8ec3c3d836
+Exact main under test: 4b14797a0892988a484a5171c45c4e8ec3c3d836
+
+Hosted required checks: all 15 SUCCESS (PR #602 exact head).
+Post-merge focused reporter tests: cargo test --locked -p asb-cli --lib step_progress; 3 passed.
+Post-merge diagnostic contract: ordinary_cli_producers_are_mechanically_closed; 1 passed.
+Post-merge full gate: make test; exit 0.
+Post-merge worktree: detached exact origin/main, clean after verification.
