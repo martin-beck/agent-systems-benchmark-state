@@ -9,7 +9,7 @@
     "AR-1783"
   ],
   "id": "AR-1780",
-  "next_action": "Qualify every development external workload, after installation and selection, through actual run, sweep, report, and comparison flows.",
+  "next_action": "Create and complete a dependency-safe successor AR for a credential-free controlled local acquisition backend/fixture archive source, then rerun every AR-1781 workload through public install/select/run/sweep/report/compare and exact-main hosted qualification; existing AR-1782 only covers remote acquisition and is not a substitute.",
   "observed_branch": "feature/ar-1780-installed-tool-workload-execution-qualification",
   "observed_dirty": 0,
   "observed_head": "ca494d506135c4a3263bea21621dcc97d817614c",
