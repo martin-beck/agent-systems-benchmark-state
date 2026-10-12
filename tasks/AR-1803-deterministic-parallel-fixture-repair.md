@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:04:39+00:00",
+  "updated_at": "2026-10-12T04:05:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -343,3 +343,6 @@ as the affected successor linkage and evidence source.
   coverage. It also shrinks diagnostic_legacy_catalog_compact.rs from 1109 to 467 lines (643-line
   deletion), dropping reviewed identities. This violates AR-1803 preservation and AR-1802 acceptance
   contracts; no PR push/CI/merge approval.
+
+- 2026-10-12T04:05:07+00:00: Recorded command exit 1; command argv SHA-256
+  a0962e433c5a4f293f0e7f807808518d7dbd023c1a2c452d746313ece371032f.
