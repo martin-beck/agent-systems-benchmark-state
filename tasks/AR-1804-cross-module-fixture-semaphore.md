@@ -9,7 +9,7 @@
   "id": "AR-1804",
   "next_action": "Repair diagnostic catalog for test-only semaphore callsites, rerun focused diagnostic_contract, then rerun make test.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
   "owner": "ar1804_fixture_semaphore_luna56",
   "plan": "../plans/AR-1804-cross-module-fixture-semaphore.md",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:50:13+00:00",
+  "updated_at": "2026-10-12T02:50:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
