@@ -13,11 +13,13 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_ref": "specs/AR-1293.json",
+  "spec_revision": 1,
   "status": "in_progress",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 791,
+  "task_revision": 792,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T10:01:41+00:00",
+  "updated_at": "2026-10-12T10:02:04+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2379,3 +2381,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-10-12T10:01:41+00:00: Recorded command exit 0; command argv SHA-256
   aabffcba9052320929dfffb5d7b4a622e01e9b046f01e79506565790dc4df31a.
+
+- 2026-10-12T10:02:04+00:00: Bound task spec specs/AR-1293.json revision 1.
