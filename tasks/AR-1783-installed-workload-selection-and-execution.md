@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Obtain independent exact-head review for PR #587 at e644f9b0; merge only after approval, then verify protected main and release AR with receipts.",
+  "next_action": "Merge only after this independent approval, then verify protected main and release AR with receipts",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "e644f9b02c5b3f7d46b051691accc249fa8a3585",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Exact head e644f9b0 has all hosted required checks green; awaiting independent review",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:58:06+00:00",
+  "updated_at": "2026-10-12T00:59:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -449,3 +449,14 @@ the suite from this end-to-end path.
 
 - 2026-10-12T00:58:06+00:00: Recorded command exit 0; command argv SHA-256
   0f0120a9a80647761b7023e1aec09161f189badcb9a7de98b9ba33922d55f476.
+
+- 2026-10-12T00:59:04+00:00: Independent exact-head review approved PR #587 at
+  e644f9b02c5b3f7d46b051691accc249fa8a3585 (tree c2ebca881ea7c31946d20ea18e0cf676b851b22e), base
+  0a2039c448d4ab0ed3c9065c35cf90a77b94db6a. Read complete AR/task plan/spec and ASB
+  development/architecture/quality docs. Reviewed four-file diff: project execution now validates
+  selected external workload identity, platform/status/kind/digest, confined prepared tree, bounded
+  verified receipt with revision/license/preparation/evaluator fields; standalone and legacy
+  non-external fixtures remain explicitly exempt. Focused project_run 3/3, diagnostic_contract 9/9,
+  workflow_transcript 3/3 pass; diff check clean. All five candidate commits SSH-signed by Martin
+  Beck with matching DCO. Live PR checks all SUCCESS at exact head, PR open with no prior review. No
+  privacy or gate-weakening finding. Approved for merge; do not merge in this review.

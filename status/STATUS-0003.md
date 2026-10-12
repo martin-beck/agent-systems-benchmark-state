@@ -1252,7 +1252,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Exact head e644f9b0 has all hosted required checks green; awaiting independent review |
-| Next action | Obtain independent exact-head review for PR #587 at e644f9b0; merge only after approval, then verify protected main and release AR with receipts. |
+| Next action | Merge only after this independent approval, then verify protected main and release AR with receipts |
 
 ### AR-1784 — Command dependency registry and preflight
 
