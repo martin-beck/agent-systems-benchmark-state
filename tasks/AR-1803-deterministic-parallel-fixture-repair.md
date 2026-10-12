@@ -9,8 +9,8 @@
   "id": "AR-1803",
   "next_action": "Refresh PR #599 checks after merge-ref synchronization; no product repair unless repeat failure shows a changed head or source digest issue.",
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
-  "observed_dirty": 4,
-  "observed_head": "14471899c4271cf32ef172c76f5141998a9536b4",
+  "observed_dirty": 0,
+  "observed_head": "5a06ac1fe6a14bb9d0963938a31a5e7cb906ec53",
   "owner": "ar1803_parallel_fixture_luna56",
   "plan": "../plans/AR-1803-deterministic-parallel-fixture-repair.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:14:21+00:00",
+  "updated_at": "2026-10-12T04:14:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
