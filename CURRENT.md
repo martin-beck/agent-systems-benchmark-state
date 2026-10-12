@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1773](tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Wait for unrelated AR-1796 full formal run to finish and its generated .tlc-runs cleanup; then rerun focused workflow_transcript and full workspace gates through handoffctl. Do not commit until all gates are green. | - |
+| P0 | [AR-1773](tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Wait for unrelated AR-1796 full formal run to finish and its generated .tlc-runs cleanup; then rerun focused workflow_transcript and full workspace gates through handoffctl. Do not commit until all gates are green. | ar1773-catalog-repair-luna56 |
 
 ## Blocked
 
