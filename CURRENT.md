@@ -10,12 +10,6 @@ Never edit this file directly.
 | P0 | [AR-1774](tasks/AR-1774-status-progress-completeness-ci.md): Status and progress completeness CI | Make CI reject missing quiet support, status/progress bypasses, false estimates, and any human output in JSON mode. | Add required CI enforcement and controlled-defect tests for quiet, status, and progress completeness after universal instrumentation lands. | ar1774-status-ci-luna56 |
 | P0 | [AR-1816](tasks/AR-1816-state-projection-and-bytecode-hygiene.md): Coordinator projection and bytecode hygiene recovery | Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard. | PR #121 now targets 7939195cee; AR-1811/1813 oracle evidence normalized into task bodies and schema mismatch repaired. Await terminal exact-head CI and independent review. Then merge and run configured reconcile/snapshot/doctor receipt. | ar1816_projection_hygiene |
 
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1817](tasks/AR-1817-task-schema-oracle-gate.md): Align task schema with oracle gate contract | Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields. | Promote the schema-contract repair, add the documented oracle_gate shape and regression coverage, then independently review and run exact-head coordination CI before merging. | - |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -153,6 +147,7 @@ Never edit this file directly.
 | P0 | [AR-1807](tasks/AR-1807-complete-help-contract.md): Complete Contextual CLI Help Contract | Provide useful --help on every ASB command and subcommand, including the TUI lifecycle. | Implement and test complete contextual help for every public command path. | - |
 | P0 | [AR-1808](tasks/AR-1808-universal-list-selection-contract.md): Universal List and Selection Contract | Make every ASB command discover its valid choices through a consistent, typed --list interface. | Define and implement the universal --list discovery and selection contract. | - |
 | P0 | [AR-1809](tasks/AR-1809-cli-ux-qualification.md): End-to-End CLI UX Contract Qualification | Qualify the complete ASB command tree for human output, help, list discovery, and selection round trips. | Run end-to-end CLI UX qualification against the complete contract and close contract gaps. | - |
+| P0 | [AR-1817](tasks/AR-1817-task-schema-oracle-gate.md): Align task schema with oracle gate contract | Align the strict ASB task schema with the documented oracle_gate lifecycle field used by existing task records, while retaining rejection of unknown fields. | Promote the schema-contract repair, add the documented oracle_gate shape and regression coverage, then independently review and run exact-head coordination CI before merging. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |
