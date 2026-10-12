@@ -14,9 +14,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Coordinator projection and bytecode hygiene recovery",
-  "updated_at": "2026-10-12T13:03:51+00:00",
+  "updated_at": "2026-10-12T13:04:34+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar1816-projection-hygiene"
 }
 ---
@@ -174,3 +174,6 @@ bytecode, credentials, or host-private runtime configuration may enter commits.
 - 2026-10-12T13:03:51+00:00: Refactored transaction helpers to satisfy complexity gate, renamed
   launcher module to awq_handoffctl, added narrow S603 rationale, and corrected test import path.
   Focused tests 2/2 pass; signed DCO commit 1c396d1d9e pushed.
+
+- 2026-10-12T13:04:34+00:00: Recorded command exit 0; command argv SHA-256
+  29a40c88674c878b36f5604b9a83aa47b82a85cb5546eb64ffe3fd57f3740956.
