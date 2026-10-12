@@ -36,6 +36,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `.review-ar1761-537` | `DETACHED` | `95e540be95d2` | 0 | behind 370, ahead 0 |
 | `.review-ar1761-537-v2` | `DETACHED` | `fe6aa7c346e5` | 0 | behind 361, ahead 0 |
 | `.review-ar1762-536` | `DETACHED` | `26161a060868` | 0 | behind 375, ahead 0 |
+| `.review-ar1774-612` | `DETACHED` | `ad7f1166afc5` | 0 | behind 0, ahead 3 |
 | `_ar1615-asb` | `DETACHED` | `1521b9800bf4` | 0 | behind 671, ahead 0 |
 | `_ar1615-asb62` | `DETACHED` | `62fda2f3417b` | 0 | behind 669, ahead 0 |
 | `a17b` | `DETACHED` | `dd10b075c065` | 0 | behind 515, ahead 0 |
