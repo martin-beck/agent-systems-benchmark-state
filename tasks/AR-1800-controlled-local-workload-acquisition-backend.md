@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T02:26:29+00:00",
+  "updated_at": "2026-10-12T02:26:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -160,3 +160,15 @@ must not weaken production acquisition, identity, or offline guarantees.
 
 - 2026-10-12T02:26:29+00:00: Recorded command exit 101; command argv SHA-256
   bf11d7c527d92341bd70ad12be02d15c47e3fa64ec92ead3465fc6f78ff875a9.
+
+- 2026-10-12T02:26:44+00:00: Exact full-workspace gate exit 101: cargo test --locked --workspace
+  --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend/Cargo.toml
+  failed only at
+  asb-cli/tests/workflow_transcript.rs::provenance_binds_the_exact_cli_and_public_fixture_sources.
+  Assertion provenance drift crates/asb-cli/src/lib.rs: observed SHA-256
+  b24c98dc604b3ffed3b7cfc42ab65f6d57cff379196672ac6718d6aaba668114, recorded
+  2e153e8a62504c5b93f17e322cb848c1445ed3d9df798795d75fdeae4953fbe0. Root cause is the reviewed
+  provenance fixture not updated for the AR-1800 lib.rs implementation, not a qualification failure;
+  repair is to update only the checked-in provenance digest, rerun workflow_transcript and full
+  workspace gates.
