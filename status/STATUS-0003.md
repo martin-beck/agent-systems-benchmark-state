@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Checkpoint exact signed head a8507d19, perform independent review, then hosted PR/CI if infrastructure is available. |
+| Next action | Repair review findings before any PR/CI: restore clean exact signed head, add explicit semaphore hostile contention/cancellation/timeout/cleanup/exhaustion tests, and preserve AR-1800/AR-1802 fixture acquisition behavior. |
 
 
 ## Dependency graph

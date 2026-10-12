@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Checkpoint exact signed head a8507d19, perform independent review, then hosted PR/CI if infrastructure is available.",
+  "next_action": "Repair review findings before any PR/CI: restore clean exact signed head, add explicit semaphore hostile contention/cancellation/timeout/cleanup/exhaustion tests, and preserve AR-1800/AR-1802 fixture acquisition behavior.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 3,
   "observed_head": "a8507d19e1998f2525462b9297c775ccac522095",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:59:38+00:00",
+  "updated_at": "2026-10-12T02:59:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -255,3 +255,13 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:59:35+00:00: Recorded command exit 0; command argv SHA-256
   9fa3b1f7c20f9bb18f17cec9e2173b9f8201e5e86dc42bbc13650027f662d9a7.
+
+- 2026-10-12T02:59:42+00:00: Independent review of exact signed/DCO head a8507d19: signature
+  verified and recorded full make test/default-parallel receipts are green, but review is NOT
+  acceptable. Diff removes acquire_fixture_workload_archive and its URL-bound/size/symlink tests
+  from lib.rs, regressing the AR-1800/AR-1802 fixture contract. New semaphore module has only the
+  mutex implementation and no explicit positive, cancellation, timeout, cleanup, exhaustion, or
+  hostile-contention tests required by AR-1804 spec; Mutex::lock is unbounded and cannot demonstrate
+  bounded cancellation/timeout. Also current worktree is dirty after a8507d19
+  (lib.rs/test_fixture_semaphore.rs/provenance modified), so exact-head review cannot advance to
+  PR/CI. No PR, merge, acceptance, or gate waiver.
