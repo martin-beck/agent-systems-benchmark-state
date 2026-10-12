@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T09:49:23+00:00",
+  "updated_at": "2026-10-12T09:49:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -56,3 +56,6 @@ tests and update the generated quality documentation.
   24f496bc51708459a0d1eb7a46999509df26464e87b1aad90564d77869e0e019.
 
 - 2026-10-12T09:49:23+00:00: Heartbeat by ar1811-formal-separation-luna56.
+
+- 2026-10-12T09:49:33+00:00: Recorded command exit 0; command argv SHA-256
+  37a902b766633d89a3fe82e64dfe47ad2b2e736573bbed9015dd677621568ba9.
