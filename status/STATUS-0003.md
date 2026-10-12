@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Run full make test and default-parallel asb-cli gate; then checkpoint exact signed head for independent review. |
+| Next action | Repair macro invocation formatting without shifting reviewed catalog identities; run fmt check once, then full make test. |
 
 
 ## Dependency graph

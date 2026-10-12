@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Run full make test and default-parallel asb-cli gate; then checkpoint exact signed head for independent review.",
+  "next_action": "Repair macro invocation formatting without shifting reviewed catalog identities; run fmt check once, then full make test.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 2,
   "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:52:32+00:00",
+  "updated_at": "2026-10-12T02:52:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -145,3 +145,12 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:52:32+00:00: Recorded command exit 1; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-10-12T02:52:41+00:00: Exact exit-1 diagnosis for command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669: command was cargo fmt --all --
+  --check via handoffctl, used as the formatting gate after the diagnostic repair. Stderr reported a
+  rustfmt diff in lib.rs:147, expanding f!(run_with_default_mode_and_stdin(...)) over two lines;
+  this is a formatting gate failure, not a qualification failure. The wrapper also reported
+  COMMAND_RECORDED_POST_RECONCILE_FAILED because handoffctl.cpython-312.pyc exceeded the 200 KiB
+  state-file guard; the pyc was removed before the next attempt. No retry is counted until source
+  formatting is repaired.
