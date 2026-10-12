@@ -7,7 +7,7 @@
     "AR-1771"
   ],
   "id": "AR-1775",
-  "next_action": "Await PR #591 exact-head hosted checks and independent review at 34202df1; do not merge until both are green.",
+  "next_action": "Repair diagnostic legacy identity catalog/source line drift on v4 before any push; local targeted contract reproduces hosted exit 101 at missing lib.rs identities 345,350,357; then rerun targeted contract and clippy.",
   "observed_branch": "feature/ar-1775-configurable-output-router-and-levels",
   "observed_dirty": 0,
   "observed_head": "d7c08c106e52ed9aa144f24ffe130b40dd6c3da7",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:41:18+00:00",
+  "updated_at": "2026-10-12T00:41:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -492,3 +492,10 @@ stdout envelope and silences all human/operational output on both streams.
   c796ff8e50559894245d5101bdfc24131b57c50a224078acbfb2f9d07e3a588c.
 
 - 2026-10-12T00:41:18+00:00: Heartbeat by ar1775_output_router_luna56.
+
+- 2026-10-12T00:41:20+00:00: Durable diagnosis: PR #591 policy/coverage job 38188367228 at 00:37:02Z
+  exited 101 in ordinary_cli_producers_are_mechanically_closed. It reported many missing catalog
+  identities after synchronization. Local targeted cargo test reproduces the same failure, first
+  missing identities lib.rs lines 345,350,357. Five repeated exit-101 records at 00:38-00:40 had the
+  same argv hash; unchanged retries stopped. Repair must update reviewed source/catalog mapping or
+  preserve identities; no red revision published.

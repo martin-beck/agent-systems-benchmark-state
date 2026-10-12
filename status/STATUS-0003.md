@@ -1140,7 +1140,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels. |
-| Next action | Await PR #591 exact-head hosted checks and independent review at 34202df1; do not merge until both are green. |
+| Next action | Repair diagnostic legacy identity catalog/source line drift on v4 before any push; local targeted contract reproduces hosted exit 101 at missing lib.rs identities 345,350,357; then rerun targeted contract and clippy. |
 
 ### AR-1776 — Supported-tool acquisition catalog
 
