@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 171,
+  "task_revision": 172,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:29:05+00:00",
+  "updated_at": "2026-10-12T04:29:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -566,3 +566,6 @@ as the affected successor linkage and evidence source.
   portable provenance: bounded Git provenance operation failed; classification is expected
   publication setup boundary because GitHub API cannot resolve unpublished commit, not a product
   failure. Prior focused/default-parallel/make gates remain green for identical tree.
+
+- 2026-10-12T04:29:41+00:00: Recorded command exit 0; command argv SHA-256
+  71210bdb9fe7020c7ddf7c2e6a151af0d1d3080a006a03b8dcd8e2104b6819b9.
