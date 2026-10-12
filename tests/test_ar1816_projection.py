@@ -7,14 +7,13 @@ from __future__ import annotations
 import importlib.util
 import os
 import subprocess
-import sys
 import tempfile
 import types
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-LAUNCHER = ROOT / "tools" / "awq-handoffctl.py"
+LAUNCHER = ROOT / "tools" / "awq_handoffctl.py"
 
 
 def load_launcher() -> types.ModuleType:
@@ -27,7 +26,7 @@ def load_launcher() -> types.ModuleType:
 
 class ProjectionLauncherTest(unittest.TestCase):
     def test_launcher_disables_bytecode_before_loading_vendor(self) -> None:
-        result = subprocess.run(
+        result = subprocess.run(  # noqa: S603 - executable and arguments are repository constants
             [str(ROOT / "tools" / "awq-handoffctl"), "--help"],
             cwd=ROOT,
             check=True,
