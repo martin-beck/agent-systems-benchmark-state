@@ -1661,7 +1661,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
-| Next action | Promote and claim after coordinator reconciliation; implement the verified AR-1779 receipt resolver and wire AR-1799 authority into ordinary run/sweep dispatch, then complete review, merge, and post-merge verification. |
+| Next action | Coordinator must extend the runtime boundary with a production constructor for a cli2key sidecar-backed LiveProviderAttemptFactory (or equivalent opaque runtime source), then expose a verified AR-1779 runtime-receipt resolver contract. AR-1812 can resume only after that API exists. |
 
 
 ## Dependency graph

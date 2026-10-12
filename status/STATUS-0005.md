@@ -242,7 +242,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1811](../tasks/AR-1811-development-formal-workflow-separation.md): Development/formal workflow separation | coordinator-ar1811-merge | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. | Monitor PR #606 exact head d9972679899cf18c1c9ab87e694ad639a2c18786 until all required non-TLC checks are green; then obtain independent review, merge, exact-main post-merge verification, and durable closure. |
-| P0 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | ar1810-cli2key-luna56 | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Promote and claim after coordinator reconciliation; implement the verified AR-1779 receipt resolver and wire AR-1799 authority into ordinary run/sweep dispatch, then complete review, merge, and post-merge verification. |
+| P0 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | ar1810-cli2key-luna56 | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Coordinator must extend the runtime boundary with a production constructor for a cli2key sidecar-backed LiveProviderAttemptFactory (or equivalent opaque runtime source), then expose a verified AR-1779 runtime-receipt resolver contract. AR-1812 can resume only after that API exists. |
 
 ### Blocked (85)
 

@@ -8,7 +8,7 @@
     "AR-1799"
   ],
   "id": "AR-1812",
-  "next_action": "Promote and claim after coordinator reconciliation; implement the verified AR-1779 receipt resolver and wire AR-1799 authority into ordinary run/sweep dispatch, then complete review, merge, and post-merge verification.",
+  "next_action": "Coordinator must extend the runtime boundary with a production constructor for a cli2key sidecar-backed LiveProviderAttemptFactory (or equivalent opaque runtime source), then expose a verified AR-1779 runtime-receipt resolver contract. AR-1812 can resume only after that API exists.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T10:12:22+00:00",
+  "updated_at": "2026-10-12T10:13:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -51,3 +51,11 @@ fixtures and must not require a live provider or TLC.
 - 2026-10-12T10:12:22+00:00: Bound worktree
   agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap on branch
   feature/ar-1812-cli2key-ordinary-bootstrap.
+
+- 2026-10-12T10:13:24+00:00: Implementation audit found the requested seam cannot be implemented in
+  asb-cli alone: Cli2KeyRuntimeAuthority::bootstrap requires a LiveProviderAttemptFactory, but
+  production construction is private to asb-runtime and only injected test factories exist. AR-1779
+  generic receipt has no runtime identity fields or bridge command contract. A local resolver
+  without an opaque factory would fabricate authority or fallback, violating scope. No product
+  changes retained; cargo check of exploratory resolver correctly failed closed under dead-code
+  warnings.
