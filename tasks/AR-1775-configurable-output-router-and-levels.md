@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:22:25+00:00",
+  "updated_at": "2026-10-12T00:22:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -253,3 +253,6 @@ stdout envelope and silences all human/operational output on both streams.
   environment (manifest path outside /tmp), and full asb-cli lib passed 429/429 in 43.55s. PR #588
   provenance diagnosis remains separately recorded: post-merge d7c08c1 caused
   synchronization-merge-not-tip; repair is tip merge c6cddcaf.
+
+- 2026-10-12T00:22:26+00:00: Recorded command exit 0; command argv SHA-256
+  907807f59e6b36a5fb95e4e7ff9017657c817e9ceb6159e06a053e2537d9320c.
