@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1797-cli2key-live-runtime-wiring",
   "checkpoint_commit": "db1a776b04c5e93c87c99180a033deca06d5eea7",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T06:10:09+00:00",
   "depends_on": [
     "AR-1729",
     "AR-1731",
@@ -15,7 +15,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1797_cli2key_repair_luna56",
   "plan": "../plans/AR-1797-cli2key-live-runtime-wiring.md",
   "priority": "P0",
   "schema_version": 1,
@@ -29,11 +29,11 @@
   },
   "spec_ref": "specs/AR-1797.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:25:07+00:00",
+  "updated_at": "2026-10-12T05:25:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -101,3 +101,5 @@ path and records only redacted provenance and typed outcome evidence.
 
 - 2026-10-12T05:25:07+00:00: Dependencies AR-1729/1731/1732/1733/1779 are complete; AR-1799 runtime
   authority seam is now merged on main as e0e44a7d. Resume AR-1797 wiring qualification.
+
+- 2026-10-12T05:25:09+00:00: Claimed by ar1797_cli2key_repair_luna56.
