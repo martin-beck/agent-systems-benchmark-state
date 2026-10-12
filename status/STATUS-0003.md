@@ -1663,6 +1663,20 @@
 | Summary | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. |
 | Next action | Coordinator must extend the runtime boundary with a production constructor for a cli2key sidecar-backed LiveProviderAttemptFactory (or equivalent opaque runtime source), then expose a verified AR-1779 runtime-receipt resolver contract. AR-1812 can resume only after that API exists. |
 
+### AR-1813 — Expose cli2key runtime factory contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. |
+| Next action | Promote and claim; implement the runtime-owned receipt contract and opaque LiveProviderAttemptFactory API needed by AR-1812, then complete review, merge, and post-merge verification. |
+
 
 ## Dependency graph
 
@@ -2537,6 +2551,7 @@ flowchart LR
         AR_1810["AR-1810 - Blocked"]:::status_blocked
         AR_1811["AR-1811 - In progress"]:::status_in_progress
         AR_1812["AR-1812 - Blocked"]:::status_blocked
+        AR_1813["AR-1813 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4492,6 +4507,7 @@ flowchart LR
     AR_1779 --> AR_1797
     AR_1779 --> AR_1810
     AR_1779 --> AR_1812
+    AR_1779 --> AR_1813
     AR_1781 --> AR_1782
     AR_1781 --> AR_1794
     AR_1782 --> AR_1783
@@ -4513,6 +4529,7 @@ flowchart LR
     AR_1797 --> AR_1810
     AR_1799 --> AR_1810
     AR_1799 --> AR_1812
+    AR_1799 --> AR_1813
     AR_1805 --> AR_1806
     AR_1805 --> AR_1807
     AR_1805 --> AR_1808
@@ -4567,4 +4584,3 @@ flowchart LR
 | [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) |
 | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) |
 | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
-| [AR-0320](../tasks/AR-0320-provider-credential-integration.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |

@@ -9,9 +9,9 @@
   ],
   "id": "AR-1812",
   "next_action": "Coordinator must extend the runtime boundary with a production constructor for a cli2key sidecar-backed LiveProviderAttemptFactory (or equivalent opaque runtime source), then expose a verified AR-1779 runtime-receipt resolver contract. AR-1812 can resume only after that API exists.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "07c590e712df11e555228abf1b9de4add3510d4f",
   "owner": "",
   "plan": "../plans/AR-1812-cli2key-ordinary-bootstrap.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "blocked",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T10:13:29+00:00",
+  "updated_at": "2026-10-12T10:14:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---

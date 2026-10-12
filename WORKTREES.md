@@ -71,6 +71,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore` | `main` | `6761a6d0bcd5` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-ar-1810-cli2key-standard-cli` | `feature/ar-1810-cli2key-standard-cli` | `07c590e712df` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1811-development-formal-workflow-separation` | `feature/ar-1811-development-formal-workflow-separation` | `d9972679899c` | 0 | behind 0, ahead 2 |
+| `agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap` | `feature/ar-1812-cli2key-ordinary-bootstrap` | `07c590e712df` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 752, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 752, ahead 323 |
