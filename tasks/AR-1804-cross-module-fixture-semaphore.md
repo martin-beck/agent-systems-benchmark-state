@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Make test failed on non-test macro availability; declare test_fixture_semaphore module unconditionally with cfg(test) internals, then run cargo check and full make test.",
+  "next_action": "Run the full make test gate now that non-test visibility is repaired; then run default-parallel asb-cli tests.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 2,
   "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:54:01+00:00",
+  "updated_at": "2026-10-12T02:54:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -198,3 +198,10 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:54:01+00:00: Recorded command exit 0; command argv SHA-256
   1d37748246b71151bd76325a020fd6851a616e89b913cc1e353eb785217e3c66.
+
+- 2026-10-12T02:54:08+00:00: Non-test visibility repair validated: test_fixture_semaphore module is
+  declared unconditionally, semaphore imports/types/acquire/drop remain cfg(test), and exported f!
+  macro expands no-op outside tests. cargo check --locked --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore/Cargo.toml -p
+  asb-cli exited 0. This specifically repairs the prior E0433 non-test make failure without
+  weakening test-only locking.
