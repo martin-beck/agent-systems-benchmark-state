@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "feature/ar-1810-cli2key-standard-cli",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-12T10:50:04+00:00",
   "depends_on": [
@@ -33,10 +33,10 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Complete cli2key Standard CLI Integration",
   "updated_at": "2026-10-12T10:05:04+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1810-cli2key-standard-cli"
 }
 ---
 
@@ -88,3 +88,6 @@ dispatch.
   worktree metadata; no product mutation.
 
 - 2026-10-12T10:05:04+00:00: Claimed by ar1810-cli2key-luna56.
+
+- 2026-10-12T10:05:04+00:00: Bound worktree agent-systems-benchmark-ar-1810-cli2key-standard-cli on
+  branch feature/ar-1810-cli2key-standard-cli.
