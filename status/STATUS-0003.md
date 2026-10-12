@@ -1528,6 +1528,20 @@
 | Summary | Recover the durable task record needed to integrate accepted AR-1817 PR #128 after its original task was removed from current generated state. |
 | Next action | Claim this recovery task, verify accepted PR #128 exact head against current main, integrate through the signed local merge path, run exact-main post-merge checks, and close with durable evidence. |
 
+### AR-1822 — Expired role assignment cleanup semantics
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission. |
+| Next action | Reconcile current state, promote and claim this repair, then implement and test targeted expired-assignment cleanup without weakening read or admission validation. |
+
 
 ## Dependency graph
 
@@ -2392,6 +2406,7 @@ flowchart LR
         AR_1800["AR-1800 - Planned"]:::status_planned
         AR_1819["AR-1819 - In progress"]:::status_in_progress
         AR_1821["AR-1821 - Done"]:::status_done
+        AR_1822["AR-1822 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
