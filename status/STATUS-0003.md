@@ -1524,11 +1524,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1803_parallel_fixture_luna56 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. |
@@ -2412,7 +2412,7 @@ flowchart LR
         AR_1800["AR-1800 - Blocked"]:::status_blocked
         AR_1801["AR-1801 - Blocked"]:::status_blocked
         AR_1802["AR-1802 - Done"]:::status_done
-        AR_1803["AR-1803 - In progress"]:::status_in_progress
+        AR_1803["AR-1803 - Done"]:::status_done
         AR_1804["AR-1804 - Done"]:::status_done
     end
     AR_0001 --> AR_0002

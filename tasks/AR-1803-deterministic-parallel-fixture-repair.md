@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "checkpoint_commit": "5f7658ec7fcffa609e4dd7d202a327c6e642c994",
-  "claim_expires": "2026-10-12T05:28:41+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1762"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "547e42dd90c9e0029dd4caea8a64226123cdee85",
-  "owner": "ar1803_parallel_fixture_luna56",
+  "owner": "",
   "plan": "../plans/AR-1803-deterministic-parallel-fixture-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1803.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 209,
+  "task_revision": 210,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:45:17+00:00",
+  "updated_at": "2026-10-12T04:45:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -680,3 +680,8 @@ as the affected successor linkage and evidence source.
   merge 3c7ca1c1. Hosted checks all green including provenance; exact main tree matched candidate.
   Post-merge default-parallel asb-cli passed 433/433 and post-merge make test exited 0. Independent
   review ACCEPT was recorded for 547e42dd.
+
+- 2026-10-12T04:45:26+00:00: Closed after PR #599 merged non-squash as 3c7ca1c1. Exact reviewed
+  signed/DCO candidate 547e42dd is ancestor of origin/main and tree-equivalent; all 15 hosted checks
+  green including provenance. Post-merge default-parallel 433/433 and make test exit 0. No successor
+  required; AR-1803 deterministic fixture repair is complete.
