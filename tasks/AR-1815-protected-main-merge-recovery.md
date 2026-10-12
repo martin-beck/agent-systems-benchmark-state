@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T13:59:57+00:00",
   "depends_on": [],
   "id": "AR-1815",
-  "next_action": "Protected publication succeeded as exact signed merge e57982a79fafa464bfac6b3c858226ffe08737e7. Monitor every exact-main workflow for this SHA to terminal-success, then write bounded receipt and release AR-1815 done.",
+  "next_action": "Exact merge e57982a is published. Repository quality run 38246184722 failed only on external analyzer download HTTP 504; rerun that failed workflow, then require every exact-main workflow for e57982a terminal-success before receipt.",
   "observed_branch": "recovery/ar-1815-provenance",
   "observed_dirty": 0,
   "observed_head": "ab4f4c6a81f543e049759d199cca675c7370a1dc",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:00:00+00:00",
+  "updated_at": "2026-10-12T12:00:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -115,3 +115,8 @@ introduce a TLC/model-check dependency for development.
   e57982a79fafa464bfac6b3c858226ffe08737e7 with first parent preserved 15c80511, reviewed topic
   ab4f4c6a, tree 60b7fca3; no web merge, force update, or gate weakening. Exact-main workflows
   started; provenance and headers already green.
+
+- 2026-10-12T12:00:46+00:00: Post-merge exact-main run 38246184722 Repository quality failed at
+  install digest-pinned repository analyzers after repeated curl HTTP 504 responses. This is an
+  infrastructure download failure, not a product/policy failure; all other observed workflows remain
+  successful or in progress. Preserve merge and retry failed workflow only.
