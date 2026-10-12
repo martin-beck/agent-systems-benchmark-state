@@ -7,7 +7,7 @@
     "AR-1762"
   ],
   "id": "AR-1804",
-  "next_action": "Repair macro invocation formatting without shifting reviewed catalog identities; run fmt check once, then full make test.",
+  "next_action": "Run full make test once after formatting repair, then default-parallel asb-cli gate and checkpoint exact signed head.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
   "observed_dirty": 2,
   "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Semaphore implementation and diagnostic inventory repair checkpoint",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:52:48+00:00",
+  "updated_at": "2026-10-12T02:52:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -157,3 +157,9 @@ before AR-1801 can be accepted.
 
 - 2026-10-12T02:52:48+00:00: Recorded command exit 0; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-10-12T02:52:55+00:00: Formatting repair result: reduced the test-only macro invocation to
+  f!(args, stdout, stderr), with the macro expanding the bounded run and acquiring the test
+  semaphore. This preserves the original lib.rs line count/catalog identities and passes cargo fmt
+  --all -- --check via handoffctl (exit 0). The previous f7e206 exit-1 was therefore a
+  formatting/setup gate failure and is repaired; no qualification claim was attached.
