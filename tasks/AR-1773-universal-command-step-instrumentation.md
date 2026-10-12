@@ -9,9 +9,9 @@
   ],
   "id": "AR-1773",
   "next_action": "Inventory all public command routes and existing human status/progress writes, then implement shared-reporter instrumentation with mode/outcome matrix.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
+  "observed_dirty": 3,
+  "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
   "owner": "ar1772-progress-reporter-luna56",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:23:13+00:00",
+  "updated_at": "2026-10-12T06:23:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
