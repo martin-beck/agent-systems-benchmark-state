@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1800.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Controlled local workload acquisition backend",
-  "updated_at": "2026-10-12T02:31:59+00:00",
+  "updated_at": "2026-10-12T05:17:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
 }
 ---
@@ -204,3 +204,6 @@ must not weaken production acquisition, identity, or offline guarantees.
   qualification, hostile identity/size cases, or acquisition-versus-benchmark failure separation.
   Successor AR-1802 is the dependency-safe repair; resume AR-1800 only after AR-1802 is complete and
   exact reviewed gates are green.
+
+- 2026-10-12T05:17:14+00:00: AR-1802 repair is complete and merged; resume AR-1800 for successor
+  acceptance and any remaining acquisition qualification.
