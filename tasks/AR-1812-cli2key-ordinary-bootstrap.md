@@ -31,7 +31,7 @@
   "task_revision": 3,
   "title": "Implement cli2key ordinary CLI bootstrap",
   "updated_at": "2026-10-12T10:12:04+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
+  "worktree_key": ""
 }
 ---
 
