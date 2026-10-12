@@ -13,7 +13,7 @@
     "AR-1799"
   ],
   "id": "AR-1810",
-  "next_action": "Replace the ordinary CLI's cli2key rejection with runtime-owned bootstrap and prove real run and sweep execution.",
+  "next_action": "Coordinator metadata repair required before implementation: promoted task has prefilled worktree_key but empty branch, so handoffctl bind-worktree rejects the first binding and run rejects product mutations. Preserve scope; bind declared branch/worktree then implement.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -33,9 +33,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Complete cli2key Standard CLI Integration",
-  "updated_at": "2026-10-12T10:01:11+00:00",
+  "updated_at": "2026-10-12T10:02:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1810-cli2key-standard-cli"
 }
 ---
@@ -69,3 +69,9 @@ dispatch.
   AR-1799 verified done; claim for runtime-owned standard cli2key integration
 
 - 2026-10-12T10:01:11+00:00: Claimed by ar1810-cli2key-luna56.
+
+- 2026-10-12T10:02:03+00:00: Dependency-safe AR-1810 selected and claimed after all seven
+  dependencies were verified done. Implementation is currently blocked on coordinator metadata: task
+  declares worktree_key agent-systems-benchmark-ar-1810-cli2key-standard-cli but branch is empty;
+  bind-worktree refuses non-empty legacy metadata, while handoffctl run refuses product mutations
+  without declared branch. No product changes made and no gate weakened.
