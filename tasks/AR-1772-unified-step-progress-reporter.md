@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1772-unified-step-progress-reporter",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T07:29:39+00:00",
   "depends_on": [
     "AR-1775"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1772-unified-step-progress-reporter",
   "observed_dirty": 0,
   "observed_head": "f9ad19ff24c69a0bd08d3dc3d9f8b6df09c98a41",
-  "owner": "",
+  "owner": "ar1772-progress-reporter-luna56",
   "plan": "../plans/AR-1772-unified-step-progress-reporter.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,9 +25,9 @@
   },
   "spec_ref": "specs/AR-1772.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Unified human step-progress reporter",
   "updated_at": "2026-10-12T05:29:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
@@ -210,3 +210,5 @@ allowed outside this helper.
 
 - 2026-10-12T05:29:39+00:00: Reopen stale AR-1772 candidate after AR-1803 completion; rebase
   reporter diff onto current protected main and rerun exact gates.
+
+- 2026-10-12T05:29:39+00:00: Claimed by ar1772-progress-reporter-luna56.
