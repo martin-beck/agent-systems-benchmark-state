@@ -11,8 +11,8 @@
   "id": "AR-1783",
   "next_action": "Integrate every development-supported installed workload bundle into selection and prove full run/sweep/report/compare consumes its exact recorded identity.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
-  "observed_dirty": 1,
-  "observed_head": "d86694333eff92cea4d548a74bed3d3a62c503bd",
+  "observed_dirty": 0,
+  "observed_head": "4dfb7a3038c2e95b76c10844fedde87281b35361",
   "owner": "ar1783_workload_selection_luna56",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Select every development external workload and prove ASB uses its exact project-local identity end to end.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:13:24+00:00",
+  "updated_at": "2026-10-12T00:13:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
