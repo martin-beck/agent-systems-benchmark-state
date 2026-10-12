@@ -29,9 +29,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Refresh exact workflow provenance digest and requalify signed PR head e644f9b0",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T00:53:49+00:00",
+  "updated_at": "2026-10-12T00:54:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -414,4 +414,7 @@ the suite from this end-to-end path.
   77bcc1e4809748d85585bb42d5c4457685a600b7d2c6e56705316844fc61e1b6.
 
 - 2026-10-12T00:53:49+00:00: Recorded command exit 0; command argv SHA-256
+  0f0120a9a80647761b7023e1aec09161f189badcb9a7de98b9ba33922d55f476.
+
+- 2026-10-12T00:54:27+00:00: Recorded command exit 0; command argv SHA-256
   0f0120a9a80647761b7023e1aec09161f189badcb9a7de98b9ba33922d55f476.
