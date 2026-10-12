@@ -1518,11 +1518,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1817_schema_contract |
 | Parent | None |
 | Children | None |
 | Summary | Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission. |
@@ -2391,7 +2391,7 @@ flowchart LR
         direction TB
         AR_1800["AR-1800 - Planned"]:::status_planned
         AR_1821["AR-1821 - Done"]:::status_done
-        AR_1822["AR-1822 - Open"]:::status_open
+        AR_1822["AR-1822 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
