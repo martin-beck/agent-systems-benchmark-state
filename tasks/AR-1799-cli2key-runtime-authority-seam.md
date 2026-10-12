@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Obtain fresh independent review of exact 1213928b; then force-with-lease update PR #601 and monitor all hosted checks.",
+  "next_action": "Force-with-lease update PR #601 to exact 1213928b; monitor all required hosted checks.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "1213928b8724cfc740404397b9e14161f56367cc",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:56:24+00:00",
+  "updated_at": "2026-10-12T04:57:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -373,3 +373,7 @@ issue an opaque live attempt to the Codex adapter.
   signed/DCO topic onto current origin/main; exact linear head is
   1213928b8724cfc740404397b9e14161f56367cc, preserving six reviewed product commits. Fresh full make
   test on rebased topic passed (fmt/clippy/workspace tests/docs).
+
+- 2026-10-12T04:57:55+00:00: Independent ACCEPT confirmed by ar1780 for exact rebased signed/DCO
+  head 1213928b8724cfc740404397b9e14161f56367cc. Verified clean linear ancestry atop protected main
+  3c7ca1c1, authority lifecycle matrix, privacy/contracts, and full local gates.

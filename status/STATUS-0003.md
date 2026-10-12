@@ -1476,7 +1476,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
-| Next action | Obtain fresh independent review of exact 1213928b; then force-with-lease update PR #601 and monitor all hosted checks. |
+| Next action | Force-with-lease update PR #601 to exact 1213928b; monitor all required hosted checks. |
 
 ### AR-1800 — Controlled local workload acquisition backend
 
