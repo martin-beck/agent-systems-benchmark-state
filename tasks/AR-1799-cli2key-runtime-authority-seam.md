@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Format and run focused runtime/CLI lifecycle tests; then full make test.",
+  "next_action": "Complete corrected CLI regex test, then run full make test.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 2,
   "observed_head": "85173e15d2e17eab0d637110c8a4e57767589752",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:32:38+00:00",
+  "updated_at": "2026-10-12T04:33:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -185,3 +185,8 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:32:38+00:00: Recorded command exit 1; command argv SHA-256
   d76065a42e0582b0af87b53b709e9bcf4d90d6e27ff72a105f198ceb14a0cf74.
+
+- 2026-10-12T04:33:00+00:00: Focused command exit 1 diagnosed: cargo test accepts one TESTNAME
+  filter, but prior invocation supplied two positional test names (`cli2key_run_dispatch
+  live_provider_run_and_sweep_dispatch`), producing exact error unexpected argument. Repair: reran
+  with one regex filter; compile/test still running.
