@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T06:02:02+00:00",
   "depends_on": [
     "AR-1762"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1801-tool-discovery-cargo-fixture-isolation",
   "observed_dirty": 0,
   "observed_head": "c20bb7bb44481846e08b135ea6b5fff83cd72617",
-  "owner": "",
+  "owner": "ar1801_cargo_fixture_luna56",
   "plan": "../plans/AR-1801-tool-discovery-cargo-fixture-isolation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1801.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T05:17:00+00:00",
+  "updated_at": "2026-10-12T05:17:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -112,3 +112,5 @@ or pin the probe without weakening bounded execution or privacy contracts.
 
 - 2026-10-12T05:17:00+00:00: AR-1803 dependency repair is complete and merged as 3c7ca1c1; resume
   AR-1801 for final full-gate qualification.
+
+- 2026-10-12T05:17:02+00:00: Claimed by ar1801_cargo_fixture_luna56.

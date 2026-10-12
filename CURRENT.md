@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope. | ar1796-reconcile-candidate-luna56 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1801](tasks/AR-1801-tool-discovery-cargo-fixture-isolation.md): Tool-discovery Cargo fixture isolation | Make tool-discovery Cargo version fixture deterministic under full workspace execution. | Diagnose/reproduce parallel asb-cli provider/comparison test failures under full load; stabilize test isolation without weakening contracts, then rerun exact-head gate before PR/merge. | - |
+| P0 | [AR-1801](tasks/AR-1801-tool-discovery-cargo-fixture-isolation.md): Tool-discovery Cargo fixture isolation | Make tool-discovery Cargo version fixture deterministic under full workspace execution. | Diagnose/reproduce parallel asb-cli provider/comparison test failures under full load; stabilize test isolation without weakening contracts, then rerun exact-head gate before PR/merge. | ar1801_cargo_fixture_luna56 |
 
 ## Blocked
 

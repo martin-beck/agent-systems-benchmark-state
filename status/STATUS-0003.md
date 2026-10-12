@@ -1496,11 +1496,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1801_cargo_fixture_luna56 |
 | Parent | None |
 | Children | None |
 | Summary | Make tool-discovery Cargo version fixture deterministic under full workspace execution. |
@@ -2410,7 +2410,7 @@ flowchart LR
     subgraph series_18["18 - Additional work"]
         direction TB
         AR_1800["AR-1800 - Blocked"]:::status_blocked
-        AR_1801["AR-1801 - Open"]:::status_open
+        AR_1801["AR-1801 - In progress"]:::status_in_progress
         AR_1802["AR-1802 - Done"]:::status_done
         AR_1803["AR-1803 - Done"]:::status_done
         AR_1804["AR-1804 - Done"]:::status_done
