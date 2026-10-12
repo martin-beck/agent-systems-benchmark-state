@@ -34,7 +34,7 @@ def _write_receipt(path: Path, receipt: dict[str, object]) -> None:
     temporary.write_text(
         json.dumps(receipt, sort_keys=True, separators=(",", ":")) + "\n", encoding="utf-8"
     )
-    os.replace(temporary, path)
+    temporary.replace(path)
 
 
 def create_receipt(*, output: Path, workload: str = "development") -> dict[str, object]:
