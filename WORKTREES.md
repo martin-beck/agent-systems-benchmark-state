@@ -297,6 +297,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1744-main-repro` | `DETACHED` | `1ab175c30eb0` | 0 | behind 391, ahead 0 |
 | `asb-ar1746-postmerge` | `DETACHED` | `2f52ecbaf79a` | 0 | behind 378, ahead 0 |
 | `asb-ar1765-merge.X54pFB` | `DETACHED` | `3cd8ae24048d` | 0 | behind 225, ahead 0 |
+| `asb-ar1775-6b` | `DETACHED` | `6b5040e9366a` | 0 | behind 53, ahead 1 |
 | `asb-ar1775-main-current` | `DETACHED` | `0a2039c448d4` | 0 | behind 0, ahead 0 |
 | `asb-ar1781-repair2` | `repair/ar-1781-provenance-descendant-v2` | `323aa8c26374` | 0 | behind 115, ahead 0 |
 | `asb-ar1782-baseline` | `DETACHED` | `24cb72d97422` | 0 | behind 53, ahead 0 |
