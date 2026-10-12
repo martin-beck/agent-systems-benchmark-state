@@ -33,11 +33,11 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38242303507 | `15c80511cd2c` | push | Rust verification | in_progress:- |
+| 38242303507 | `15c80511cd2c` | push | Rust verification | completed:failure |
 | 38242303503 | `15c80511cd2c` | push | Repository quality | completed:failure |
 | 38242303498 | `15c80511cd2c` | push | Development formal assurance | completed:success |
 | 38242303488 | `15c80511cd2c` | push | Fault assurance | completed:success |
-| 38242303485 | `15c80511cd2c` | push | Emulated aarch64 portability | in_progress:- |
+| 38242303485 | `15c80511cd2c` | push | Emulated aarch64 portability | completed:success |
 | 38242303482 | `15c80511cd2c` | push | Hosted portability and native qualification | completed:success |
 | 38242303462 | `15c80511cd2c` | push | Huawei MIT source headers | completed:success |
 | 38242303430 | `15c80511cd2c` | push | Cross-repository development broker qualification | completed:success |
