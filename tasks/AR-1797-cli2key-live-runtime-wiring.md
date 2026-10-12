@@ -11,7 +11,7 @@
     "AR-1779"
   ],
   "id": "AR-1797",
-  "next_action": "Create a signed DCO commit from the exact green tree, checkpoint it, and request independent exact-head review before publication.",
+  "next_action": "Independent worker must review exact signed/DCO head fd815d5e4de7e6399ee27db65e7b5723b224eddd, specifically authority lifetime, no-fallback cli2key dispatch, generated provenance binding, and green serial/default-parallel gates; then publish PR/CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:39:22+00:00",
+  "updated_at": "2026-10-12T05:39:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -240,3 +240,9 @@ path and records only redacted provenance and typed outcome evidence.
 - 2026-10-12T05:39:22+00:00: Checkpointed source commit fd815d5e4de7e6399ee27db65e7b5723b224eddd.
 
 - 2026-10-12T05:39:22+00:00: Heartbeat by ar1797_cli2key_repair_luna56.
+
+- 2026-10-12T05:39:38+00:00: Exact product checkpoint corrected to signed/DCO head
+  fd815d5e4de7e6399ee27db65e7b5723b224eddd. Diff is 19-line public runtime-authority wrapper at EOF
+  plus exact generated provenance hash update. Serial make test and env RUST_TEST_THREADS=8 make
+  test both green; no live provider used. Independent exact-head review is now the only gate before
+  publication.

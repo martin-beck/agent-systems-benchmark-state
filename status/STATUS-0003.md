@@ -1448,7 +1448,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark. |
-| Next action | Create a signed DCO commit from the exact green tree, checkpoint it, and request independent exact-head review before publication. |
+| Next action | Independent worker must review exact signed/DCO head fd815d5e4de7e6399ee27db65e7b5723b224eddd, specifically authority lifetime, no-fallback cli2key dispatch, generated provenance binding, and green serial/default-parallel gates; then publish PR/CI. |
 
 ### AR-1798 — Pinned source-checkout acquisition
 
