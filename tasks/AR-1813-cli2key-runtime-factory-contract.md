@@ -8,7 +8,7 @@
     "AR-1799"
   ],
   "id": "AR-1813",
-  "next_action": "PR #607 exact head d5f814896ccfd71bd0fe09028dc94d7fcf4c88ec is under hosted non-TLC checks; TLC check is present only because PR #606 formal-separation merge is still blocked by GitHub review policy. After ordinary checks and independent review, reconcile the formal lane before merge.",
+  "next_action": "PR #607 rebased exact head 7889b3bad4c03d1caca5eaa28ffd53b367ebf445; hosted non-TLC checks are running. Focused/full non-TLC gates pass; obtain independent review, then protected exact-head merge and post-merge verification.",
   "observed_branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "observed_dirty": 0,
   "observed_head": "7889b3bad4c03d1caca5eaa28ffd53b367ebf445",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:38:40+00:00",
+  "updated_at": "2026-10-12T10:39:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---
@@ -76,3 +76,7 @@ fabricate authority in the CLI or introduce a provider fallback.
 
 - 2026-10-12T10:38:40+00:00: Recorded command exit 0; command argv SHA-256
   d0b74b004b9f693da9a0ac7c2ab5dfcb88cca69545cae5aeda04ca40372cbed9.
+
+- 2026-10-12T10:39:49+00:00: Rebased PR #607 from 458ce867 onto merged main 5a6c5477; local focused
+  and full locked workspace tests, fmt, clippy, and repository policy pass. Hosted non-TLC checks
+  pending.

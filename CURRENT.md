@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1813](tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | PR #607 exact head d5f814896ccfd71bd0fe09028dc94d7fcf4c88ec is under hosted non-TLC checks; TLC check is present only because PR #606 formal-separation merge is still blocked by GitHub review policy. After ordinary checks and independent review, reconcile the formal lane before merge. | ar1810-cli2key-luna56 |
+| P0 | [AR-1813](tasks/AR-1813-cli2key-runtime-factory-contract.md): Expose cli2key runtime factory contract | Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap. | PR #607 rebased exact head 7889b3bad4c03d1caca5eaa28ffd53b367ebf445; hosted non-TLC checks are running. Focused/full non-TLC gates pass; obtain independent review, then protected exact-head merge and post-merge verification. | ar1810-cli2key-luna56 |
 
 ## Blocked
 
