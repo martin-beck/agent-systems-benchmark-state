@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:48:36+00:00",
+  "updated_at": "2026-10-12T02:49:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
@@ -92,3 +92,6 @@ before AR-1801 can be accepted.
   d525e13153e9db2cb0abe8781f9eb99b2cbb8cbfe12503d382e47815a1a8ee96.
 
 - 2026-10-12T02:48:36+00:00: Heartbeat by ar1804_fixture_semaphore_luna56.
+
+- 2026-10-12T02:49:01+00:00: Recorded command exit 2; command argv SHA-256
+  3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6.
