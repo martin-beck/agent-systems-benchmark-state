@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Make tool-discovery Cargo version fixture deterministic under full workspace execution.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Tool-discovery Cargo fixture isolation",
-  "updated_at": "2026-10-12T05:17:28+00:00",
+  "updated_at": "2026-10-12T05:18:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation"
 }
 ---
@@ -117,3 +117,6 @@ or pin the probe without weakening bounded execution or privacy contracts.
 
 - 2026-10-12T05:17:28+00:00: Recorded command exit 0; command argv SHA-256
   63e4921630343484c94900e65ebf15377ea3a65340562f3f17362852c2a9200d.
+
+- 2026-10-12T05:18:05+00:00: Recorded command exit 0; command argv SHA-256
+  ff83dfea5de073f0e0413c7865b7285abb1d2f1f5cab114eb5ccb712809ddaa8.
