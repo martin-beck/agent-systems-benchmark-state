@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Rerun focused asb-runtime cli2key_sidecar tests, then full gates.",
+  "next_action": "Obtain independent exact-head review of 85173e15; then publish PR and run hosted exact-head CI.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "85173e15d2e17eab0d637110c8a4e57767589752",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:25:47+00:00",
+  "updated_at": "2026-10-12T04:25:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -123,3 +123,9 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:25:44+00:00: Recorded command exit 0; command argv SHA-256
   f3e6968cd5bc77b4bfc3a648c2454b4a0dfdd81cc16e6b97a11426ca34253b36.
+
+- 2026-10-12T04:25:56+00:00: Implementation complete at signed/DCO head 85173e15. Added secret-free
+  receipt validation (schema/generation/platform/digests), executable digest accessor/binding,
+  runtime-owned Cli2KeyRuntimeAuthority with sidecar lifecycle and opaque LiveProviderAttempt
+  factory, and hostile receipt substitution/stale/platform tests. Focused 7 tests and full make test
+  (fmt/clippy/workspace tests/docs) pass.

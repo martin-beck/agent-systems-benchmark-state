@@ -199,7 +199,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Exact candidate efbe49d96b51a7278cfd060b6a1bc7a43dfb24c0 full-exhaustive retry with 24 GiB heap reached 272042546 distinct states but exited 1 during liveness OOM without attestation. Do not accept or release; any further retry requires a separately verified larger bounded envelope. |
-| P0 | [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md): Add cli2key runtime authority composition seam | ar1799-authority-luna56 | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. | Rerun focused asb-runtime cli2key_sidecar tests, then full gates. |
+| P0 | [AR-1799](../tasks/AR-1799-cli2key-runtime-authority-seam.md): Add cli2key runtime authority composition seam | ar1799-authority-luna56 | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. | Obtain independent exact-head review of 85173e15; then publish PR and run hosted exact-head CI. |
 | P0 | [AR-1803](../tasks/AR-1803-deterministic-parallel-fixture-repair.md): Deterministic parallel fixture repair | ar1803_parallel_fixture_luna56 | Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates. | Repair PR topology by rebuilding a clean signed topic from current main with only reviewed discovery diff; run gates, obtain fresh independent ACCEPT, force-update PR #599 and rerun hosted checks. |
 
 ### Blocked (89)

@@ -1476,7 +1476,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
-| Next action | Rerun focused asb-runtime cli2key_sidecar tests, then full gates. |
+| Next action | Obtain independent exact-head review of 85173e15; then publish PR and run hosted exact-head CI. |
 
 ### AR-1800 — Controlled local workload acquisition backend
 
