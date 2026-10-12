@@ -3784,7 +3784,7 @@ class HandoffTest(unittest.TestCase):
         ):
             CORE.mutate(args, "recover-expired")
 
-    def test_recover_expired_preserves_current_action_without_session(self) -> None:
+    def test_recover_expired_rejects_snapshotless_claim_even_when_worker_is_absent(self) -> None:
         boot_digest, pid_namespace = CORE.worker_execution_scope()
         path = self.make_task(
             status="in_progress",
@@ -3798,7 +3798,9 @@ class HandoffTest(unittest.TestCase):
                 "pid_namespace": pid_namespace,
             },
         )
-        with patch.object(CORE, "commit", return_value=True):
+        with patch.object(CORE, "commit", return_value=True), self.assertRaisesRegex(
+            RuntimeError, "requires exactly one current session snapshot"
+        ):
             CORE.mutate(
                 argparse.Namespace(
                     task="AR-0001",
@@ -3808,9 +3810,39 @@ class HandoffTest(unittest.TestCase):
                 "recover-expired",
             )
         recovered, _ = CORE.read_task(path)
-        self.assertEqual("open", recovered["status"])
-        self.assertEqual("", recovered["owner"])
-        self.assertEqual("Keep the authoritative current step.", recovered["next_action"])
+        self.assertEqual("in_progress", recovered["status"])
+        self.assertEqual("worker-a", recovered["owner"])
+
+    def test_recover_expired_rejects_duplicate_current_snapshots(self) -> None:
+        path = self.make_task(
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2000-01-01T00:00:00+00:00",
+            next_action="Keep the authoritative current step.",
+        )
+        current, _ = CORE.read_task(path)
+        snapshot = CORE.build_session_record(current, "update", "2026-09-24T12:00:00+00:00")
+        backend = SimpleNamespace(
+            load_tasks=CORE.GitBackend().load_tasks,
+            load_session_records=lambda _task_id: [snapshot, snapshot.copy()],
+        )
+        with (
+            patch.object(CORE, "storage_backend", return_value=backend),
+            patch.object(CORE, "commit", return_value=True),
+            self.assertRaisesRegex(
+                RuntimeError, "requires exactly one current session snapshot"
+            ),
+        ):
+            CORE.mutate(
+                argparse.Namespace(
+                    task="AR-0001",
+                    expected_revision=1,
+                    note="Reject ambiguous evidence.",
+                ),
+                "recover-expired",
+            )
+        recovered, _ = CORE.read_task(path)
+        self.assertEqual("in_progress", recovered["status"])
 
     def test_recover_expired_requires_claim_identity_without_current_session(self) -> None:
         self.make_task(
@@ -3821,7 +3853,7 @@ class HandoffTest(unittest.TestCase):
         with (
             patch.object(CORE, "commit", return_value=True),
             self.assertRaisesRegex(
-                RuntimeError, "requires a scope-bound claim-time worker identity"
+                RuntimeError, "requires exactly one current session snapshot"
             ),
         ):
             CORE.mutate(
@@ -3855,7 +3887,9 @@ class HandoffTest(unittest.TestCase):
         self.refresh_views()
         with (
             patch.object(CORE, "commit", return_value=True),
-            self.assertRaisesRegex(RuntimeError, "former worker process is still alive"),
+            self.assertRaisesRegex(
+                RuntimeError, "requires exactly one current session snapshot"
+            ),
         ):
             CORE.mutate(
                 argparse.Namespace(
