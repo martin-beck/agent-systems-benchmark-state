@@ -69,8 +69,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority` | `feature/ar-1802-controlled-workload-matrix-and-fixture-authority` | `c9ea7246e6d4` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair` | `feature/ar-1803-deterministic-parallel-fixture-repair` | `547e42dd90c9` | 0 | behind 17, ahead 0 |
 | `agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore` | `main` | `6761a6d0bcd5` | 0 | behind 23, ahead 0 |
-| `agent-systems-benchmark-ar-1811-development-formal-workflow-separation` | `feature/ar-1811-development-formal-workflow-separation` | `1494e4741968` | 7 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/final-delivery-formal.yml`, `.github/workflows/formal.yml`, `docs/QUALITY_GATES.md`, `docs/formal/README.md`, `tools/integration/repository_settings.py`, `tools/quality/repository_policy.py`, `tools/quality/test_formal_workflow_separation.py` |
+| `agent-systems-benchmark-ar-1811-development-formal-workflow-separation` | `feature/ar-1811-development-formal-workflow-separation` | `309d16ca9986` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 750, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 750, ahead 323 |

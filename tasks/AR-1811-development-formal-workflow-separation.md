@@ -7,17 +7,17 @@
   "id": "AR-1811",
   "next_action": "Promote and implement the workflow separation on a clean exact-main worktree; ordinary development PRs must not invoke TLC/Alloy, while the final-delivery PR lane retains the sole formal execution gate.",
   "observed_branch": "feature/ar-1811-development-formal-workflow-separation",
-  "observed_dirty": 7,
-  "observed_head": "1494e4741968f12f2180aeb5e6d62be12ae106bc",
+  "observed_dirty": 0,
+  "observed_head": "309d16ca998679d26119e3c322ba082f45a957c5",
   "owner": "ar1811-formal-separation-luna56",
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T09:49:37+00:00",
+  "updated_at": "2026-10-12T09:49:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
