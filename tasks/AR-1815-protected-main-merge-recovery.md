@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T12:13:14+00:00",
+  "updated_at": "2026-10-12T12:24:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -156,3 +156,6 @@ introduce a TLC/model-check dependency for development.
   attempt 4 is in_progress. Attempt 3 failed one source_checkout fixture test, while independent
   local repeated run passed 5/5. Rerun is bounded classification evidence; no product changes or
   gate weakening.
+
+- 2026-10-12T12:24:00+00:00: Recorded command exit 0; command argv SHA-256
+  1eaaea0727076ab1c5adbbbeaa575c28e2ec3b7b74653ed09f6fd50f5fdaa387.
