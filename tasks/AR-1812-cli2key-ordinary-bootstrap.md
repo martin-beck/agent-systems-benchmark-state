@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:42:20+00:00",
+  "updated_at": "2026-10-12T11:42:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -248,3 +248,6 @@ fixtures and must not require a live provider or TLC.
   digest is f2dc657257678d446873009d40e633304cf4b128891409f7c8cb9a1b8569c02a. Updated
   docs/examples/asb-cli-workflow-v1.provenance.json to the exact new source digest. Generated
   pycache was archived outside state; no TLC/live-provider gate was run.
+
+- 2026-10-12T11:42:25+00:00: Recorded command exit 0; command argv SHA-256
+  414265086ec250610c6f49c3adf12e67f9ab2fc8ebc37eb2d649737ce2d224e5.
