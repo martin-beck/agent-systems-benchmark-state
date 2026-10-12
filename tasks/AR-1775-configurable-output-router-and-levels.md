@@ -7,7 +7,7 @@
     "AR-1771"
   ],
   "id": "AR-1775",
-  "next_action": "Rebuild topic with protected-main synchronization merge at tip; rerun full gates and hosted checks.",
+  "next_action": "Publish v2 PR #589 at signed exact tip c6cddcaf; await exact-head hosted checks after local cargo test -p asb-cli --lib passes 429/429.",
   "observed_branch": "feature/ar-1775-configurable-output-router-and-levels",
   "observed_dirty": 0,
   "observed_head": "d7c08c106e52ed9aa144f24ffe130b40dd6c3da7",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:22:19+00:00",
+  "updated_at": "2026-10-12T00:22:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -242,3 +242,14 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T00:22:19+00:00: Recorded command exit 0; command argv SHA-256
   ebaa61e8217166364ab530e828cf4e7d4a6254bf4f5482e8939de6ea76823b12.
+
+- 2026-10-12T00:22:25+00:00: Concrete exit-101 diagnosis and repair: initial full lib run from
+  /tmp/asb-ar1775-v2 failed broad control tests because CARGO_MANIFEST_DIR made repository
+  /tmp/asb-ar1775-v2 while tests validate std::env::temp_dir()=/tmp; first error was
+  control::tests::agent_catalog_refresh_is_generation_fenced_and_restart_stable at control.rs:6439:
+  called Result::unwrap() on Err: test scratch base overlaps the repository. This was
+  test-environment overlap, not product behavior. Removed only our temporary /tmp worktree through
+  handoffctl, recreated exact signed topic at /srv/data/projects/asb-ar1775-v2, reran the changed
+  environment (manifest path outside /tmp), and full asb-cli lib passed 429/429 in 43.55s. PR #588
+  provenance diagnosis remains separately recorded: post-merge d7c08c1 caused
+  synchronization-merge-not-tip; repair is tip merge c6cddcaf.
