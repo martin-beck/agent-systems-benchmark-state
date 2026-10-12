@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T08:37:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 5,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
-  "owner": "ar1772-progress-reporter-luna56",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:37:49+00:00",
+  "updated_at": "2026-10-12T06:37:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -266,3 +266,10 @@ non-TTY compatibility.
   diagnostic_contract still reports unresolved identities beginning lib.rs:5710, 5731, 5744 and many
   later callsites; output-parent AR1793 identity is present at human.rs:3609. This requires a
   separately bounded generated-catalog reconciliation, not repeated AR-1773 retries.
+
+- 2026-10-12T06:37:52+00:00: Released open, not done, after bounded catalog investigation. AR-1773
+  focused reporter/public-route implementation remains preserved in the bound worktree. Full
+  diagnostic_contract is blocked by widespread compact legacy catalog line drift beginning
+  lib.rs:5710/5731/5744 and continuing through later producers; AR1793 output-parent identity is
+  corrected at human.rs:3609. Route catalog regeneration as a separate bounded repair before
+  resuming AR-1773. No commit, review, or publication.
