@@ -42,7 +42,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38191903382 | `98327152f2e9` | push | Formal assurance | in_progress:- |
 | 38191903346 | `98327152f2e9` | push | Fault assurance | completed:success |
 | 38191903342 | `98327152f2e9` | push | Huawei MIT source headers | completed:success |
-| 38191903339 | `98327152f2e9` | push | Credential-free benchmark path | in_progress:- |
+| 38191903339 | `98327152f2e9` | push | Credential-free benchmark path | completed:success |
 | 38191903333 | `98327152f2e9` | push | Hosted portability and native qualification | completed:success |
 | 38190652756 | `9bb7d3f205c5` | pull_request | Huawei MIT source headers | completed:success |
 | 38190652720 | `9bb7d3f205c5` | pull_request | Cross-repository development broker qualification | completed:success |
