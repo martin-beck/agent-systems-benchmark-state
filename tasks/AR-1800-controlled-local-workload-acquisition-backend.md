@@ -28,7 +28,7 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the credential-free controlled local acquisition backend required for AR-1780 every-workload execution qualification.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Controlled local workload acquisition backend",
   "updated_at": "2026-10-12T02:21:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend"
@@ -95,3 +95,11 @@ must not weaken production acquisition, identity, or offline guarantees.
   85a6be930ec15aef33978262b028b17440396ecac5135c724ad82f83475ebe80.
 
 - 2026-10-12T02:21:49+00:00: Checkpointed source commit 62a13d378b8dbccbe3242c3c5dc2934c9cbe3c68.
+
+- 2026-10-12T02:21:49+00:00: Implemented signed+DCO product commit aa2816b8:
+  ASB_WORKLOAD_FIXTURE_ROOT selects a credential-free absolute fixture cache keyed by SHA-256(source
+  URL), bounds archive size, rejects symlinks/non-regular files/relative roots, and never falls back
+  to network; existing catalog digest/revision/evaluator validation remains authoritative. Green
+  gates: cargo fmt workspace check; cargo clippy --locked --workspace --all-targets -D warnings;
+  cargo test --locked asb-cli fixture acquisition (1); workload_ unit matrix (22); project
+  qualification (1). Earlier command-shape failures are classified in durable history.
