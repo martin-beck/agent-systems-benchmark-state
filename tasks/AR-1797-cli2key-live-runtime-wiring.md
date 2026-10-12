@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T05:37:45+00:00",
+  "updated_at": "2026-10-12T05:38:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -218,3 +218,6 @@ path and records only redacted provenance and typed outcome evidence.
   the preceding focused rerun); handoffctl returned to idle with no cargo/make process remaining.
   Worktree contains only the intended runtime seam and generated provenance update. Next is
   default-parallel qualification, then signed checkpoint/review.
+
+- 2026-10-12T05:38:47+00:00: Recorded command exit 0; command argv SHA-256
+  893330e42401f5e59dcc08f63f26150441451b68928d060d7a8c24825a86a0e3.
