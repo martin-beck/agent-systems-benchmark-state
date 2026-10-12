@@ -28,21 +28,21 @@ Generated from local Git and GitHub. Do not edit.
 | #576 | `feature/ar-1777-verified-prebuilt-tool-and-workload-acquisition-clean@ec566dfdcde2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1777: verified prebuilt tool and workload acquisition (coverage continuation) |
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@0fd474355762` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.24 |
-| #595 | `feature/ar-1775-configurable-output-router-and-levels-v8@f805a4e46c98` | `main` | BEHIND | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(asb-cli): configurable output router and levels |
+| #595 | `feature/ar-1775-configurable-output-router-and-levels-v8@f805a4e46c98` | `main` | BEHIND | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(asb-cli): configurable output router and levels |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38190265363 | `5201a0369193` | push | Emulated aarch64 portability | queued:- |
-| 38190265362 | `5201a0369193` | push | Rust verification | queued:- |
+| 38190265363 | `5201a0369193` | push | Emulated aarch64 portability | in_progress:- |
+| 38190265362 | `5201a0369193` | push | Rust verification | in_progress:- |
 | 38190265359 | `5201a0369193` | push | Portable protected-main provenance | queued:- |
 | 38190265328 | `5201a0369193` | push | Cross-repository development broker qualification | in_progress:- |
-| 38190265324 | `5201a0369193` | push | Formal assurance | queued:- |
+| 38190265324 | `5201a0369193` | push | Formal assurance | in_progress:- |
 | 38190265314 | `5201a0369193` | push | Huawei MIT source headers | completed:success |
 | 38190265310 | `5201a0369193` | push | Hosted portability and native qualification | queued:- |
 | 38190265304 | `5201a0369193` | push | Fault assurance | in_progress:- |
 | 38190265298 | `5201a0369193` | push | Credential-free benchmark path | in_progress:- |
-| 38190265292 | `5201a0369193` | push | Repository quality | in_progress:- |
+| 38190265292 | `5201a0369193` | push | Repository quality | completed:failure |
 | 38190264050 | `f805a4e46c98` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 38190264037 | `f805a4e46c98` | pull_request | Portable protected-main provenance | completed:success |
