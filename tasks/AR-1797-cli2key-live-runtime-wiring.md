@@ -11,7 +11,7 @@
     "AR-1779"
   ],
   "id": "AR-1797",
-  "next_action": "Record post-merge acceptance for merge commit 9c5e557195df34675e2f5427e6ec3dff3d433254, then release AR-1797 done and reconcile/doctor.",
+  "next_action": "No further action; PR #603 merged as 9c5e5571 and exact-main post-merge verification is green.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -31,9 +31,9 @@
   "spec_revision": 1,
   "status": "done",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T06:17:52+00:00",
+  "updated_at": "2026-10-12T06:18:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -327,3 +327,5 @@ path and records only redacted provenance and typed outcome evidence.
 - 2026-10-12T06:17:52+00:00: AR-1797 complete: runtime-owned cli2key authority dispatch merged as PR
   #603 merge commit 9c5e5571; exact-head hosted checks, serial/default-parallel gates, exact-main
   post-merge make test, acceptance evidence, reconcile, and doctor --live all pass.
+
+- 2026-10-12T06:18:55+00:00: Correct stale next_action after done release; owner remains cleared.

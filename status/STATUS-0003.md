@@ -1448,7 +1448,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark. |
-| Next action | Record post-merge acceptance for merge commit 9c5e557195df34675e2f5427e6ec3dff3d433254, then release AR-1797 done and reconcile/doctor. |
+| Next action | No further action; PR #603 merged as 9c5e5571 and exact-main post-merge verification is green. |
 
 ### AR-1798 — Pinned source-checkout acquisition
 
