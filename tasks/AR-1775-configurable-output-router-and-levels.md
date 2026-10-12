@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1775-configurable-output-router-and-levels",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T03:23:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1771"
   ],
@@ -11,7 +11,7 @@
   "observed_branch": "feature/ar-1775-configurable-output-router-and-levels",
   "observed_dirty": 0,
   "observed_head": "d7c08c106e52ed9aa144f24ffe130b40dd6c3da7",
-  "owner": "ar1775_output_router_luna56",
+  "owner": "",
   "plan": "../plans/AR-1775-configurable-output-router-and-levels.md",
   "priority": "P0",
   "schema_version": 1,
@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1775.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 346,
+  "task_revision": 347,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T01:29:37+00:00",
+  "updated_at": "2026-10-12T01:29:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -1097,3 +1097,7 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T01:29:37+00:00: Recorded command exit 0; command argv SHA-256
   cfc2926b28a5bd000de40444bea96a07f69997c314c034af18f69d08c92880db.
+
+- 2026-10-12T01:29:43+00:00: AR-1775 implemented, independently reviewed, all hosted checks green,
+  merged via signed exact integration merge 98327152f2e92308b5bcf5b21cfe0c9f285cf950, exact
+  protected main verified, and all three required evidence classes accepted.
