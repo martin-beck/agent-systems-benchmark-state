@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T09:31:53+00:00",
+  "updated_at": "2026-10-12T09:32:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -385,3 +385,6 @@ non-TTY compatibility.
 
 - 2026-10-12T09:31:53+00:00: Recorded command exit 0; command argv SHA-256
   d4de34ae30bd3b68670116cefbd2f307e585efc6c778e5dde58c0aaa8e12d025.
+
+- 2026-10-12T09:32:17+00:00: Recorded command exit 0; command argv SHA-256
+  9ad17c535ae505a508b80a9397240dd44d4f62ff11b11380232c265240e97304.
