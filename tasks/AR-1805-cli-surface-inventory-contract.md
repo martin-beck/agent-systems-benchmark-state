@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define one complete machine-checked inventory of every public ASB command and subcommand surface.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "CLI Surface Inventory and UX Contract",
-  "updated_at": "2026-10-12T10:52:52+00:00",
+  "updated_at": "2026-10-12T10:57:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1805-cli-surface-contract"
 }
 ---
@@ -110,3 +110,6 @@ CI unless they declare human output, JSON, help, and discovery behavior.
   inventory, and drift/negative-journey contract tests; focused tests pass.
 
 - 2026-10-12T10:52:52+00:00: Heartbeat by asb-queue-next-luna56.
+
+- 2026-10-12T10:57:38+00:00: Recorded command exit 1; command argv SHA-256
+  bf6fa10bb2fbebb3498754e1cfd69c8d355a36a64d45c0028b7cea192e6fa427.
