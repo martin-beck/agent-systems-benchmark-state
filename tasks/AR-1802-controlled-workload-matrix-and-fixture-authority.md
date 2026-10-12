@@ -10,8 +10,8 @@
   "id": "AR-1802",
   "next_action": "Repair reviewed diagnostic catalog line identities for AR-1802 source additions; rerun exact package and workspace gates.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
-  "observed_dirty": 1,
-  "observed_head": "45e6513adfeb76effbec8f4be12ed08b3d18af9c",
+  "observed_dirty": 0,
+  "observed_head": "3ab420e492697e68f248a5f2004b6151d5323e63",
   "owner": "ar1802-workload-matrix-luna56",
   "plan": "../plans/AR-1802-controlled-workload-matrix-and-fixture-authority.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:48:27+00:00",
+  "updated_at": "2026-10-12T03:48:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
