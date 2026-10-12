@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T02:03:38+00:00",
+  "updated_at": "2026-10-12T02:03:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -67,3 +67,6 @@ allowed outside this helper.
 - 2026-10-12T02:03:11+00:00: Heartbeat by ar1772-progress-reporter-luna56.
 
 - 2026-10-12T02:03:38+00:00: Heartbeat by ar1772-progress-reporter-luna56.
+
+- 2026-10-12T02:03:51+00:00: Recorded command exit 0; command argv SHA-256
+  8a1e0e32146a9f14f4ddc4d415c1b397d127f83535b5e7638bf88536bfc46ecd.
