@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T02:33:08+00:00",
+  "updated_at": "2026-10-12T02:33:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -47,3 +47,6 @@ remains explicitly unaccepted and blocked until this repair is complete.
   remains explicit blocked predecessor
 
 - 2026-10-12T02:33:08+00:00: Claimed by ar1802-workload-matrix-luna56.
+
+- 2026-10-12T02:33:14+00:00: Recorded command exit 0; command argv SHA-256
+  295a59f98a4cb5b75e323031643549e36542f08df0a9db1e47937c7fdc0b46f5.
