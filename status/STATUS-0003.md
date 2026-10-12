@@ -1518,7 +1518,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review. |
-| Next action | Run exact workspace make test on clean signed c9ea7246; package --tests matrix is green and independent AR-1803 review accepted. |
+| Next action | Independent review of signed c9ea7246; then PR/exact-head hosted CI and lifecycle acceptance. |
 
 ### AR-1803 — Deterministic parallel fixture repair
 

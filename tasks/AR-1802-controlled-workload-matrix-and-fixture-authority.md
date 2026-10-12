@@ -8,7 +8,7 @@
     "AR-1783"
   ],
   "id": "AR-1802",
-  "next_action": "Run exact workspace make test on clean signed c9ea7246; package --tests matrix is green and independent AR-1803 review accepted.",
+  "next_action": "Independent review of signed c9ea7246; then PR/exact-head hosted CI and lifecycle acceptance.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "observed_dirty": 0,
   "observed_head": "c9ea7246e6d4ce7cfd11eabe55216765d2508996",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:58:15+00:00",
+  "updated_at": "2026-10-12T03:58:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -281,3 +281,10 @@ remains explicitly unaccepted and blocked until this repair is complete.
 
 - 2026-10-12T03:58:15+00:00: Recorded command exit 0; command argv SHA-256
   4345237789f5e03a9ff5103c3e9da8c67a64f07757fdaa1c52f6cc23b1de82c4.
+
+- 2026-10-12T03:58:54+00:00: Exact workspace gate now green on clean signed c9ea7246: make -C
+  /srv/data/projects/agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority
+  test exited 0 (workspace fmt, Clippy, tests, contract/provenance, rustdoc gates). Package --tests
+  matrix remains green with 433/433 lib and all integration binaries. Diagnostic catalog line
+  mapping, fixture authority, source checkout guard, and provenance digest are all covered. No gate
+  waived; ready for independent review.
