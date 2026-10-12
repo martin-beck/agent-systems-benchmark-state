@@ -1633,7 +1633,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps. |
-| Next action | Coordinator metadata repair required before implementation: promoted task has prefilled worktree_key but empty branch, so handoffctl bind-worktree rejects the first binding and run rejects product mutations. Preserve scope; bind declared branch/worktree then implement. |
+| Next action | Implement ordinary asb run/sweep cli2key bootstrap in the bound product worktree; run focused and full non-TLC gates, then independent review and exact-head merge evidence. |
 
 ### AR-1811 — Development/formal workflow separation
 
