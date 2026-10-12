@@ -194,7 +194,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1772-progress-reporter-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Inventory all public command routes and existing human status/progress writes, then implement shared-reporter instrumentation with mode/outcome matrix. |
+| P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | ar1772-progress-reporter-luna56 | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Run focused instrumentation tests after replacing direct &#91;WAIT&#93; writes with step_progress::terminal and benchmark.run-point reporter steps; then expand route/mode matrix and full gates. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | ar1796-reconcile-candidate-luna56 | Keep autonomous development live during concurrent protected-main integration. | Run one bounded exact-candidate full-exhaustive retry with verified host envelope; preserve TLC_ATTESTATION_PATH and record terminal result. Do not accept or release without complete attestation. |
 
 ### Blocked (86)

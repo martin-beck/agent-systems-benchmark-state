@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Inventory all public command routes and existing human status/progress writes, then implement shared-reporter instrumentation with mode/outcome matrix.",
+  "next_action": "Run focused instrumentation tests after replacing direct [WAIT] writes with step_progress::terminal and benchmark.run-point reporter steps; then expand route/mode matrix and full gates.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 3,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:24:26+00:00",
+  "updated_at": "2026-10-12T06:24:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -98,3 +98,14 @@ non-TTY compatibility.
 
 - 2026-10-12T06:24:26+00:00: Recorded command exit 101; command argv SHA-256
   ab036175b6b10b8176728129a2a8bb21f1252a2ed7e3efd514574024f4c3dcc2.
+
+- 2026-10-12T06:24:41+00:00: Inventory found public dispatch branches without shared progress:
+  doctor/preflight, capabilities/catalogs, tool discover/list, auth/provider-plan/completion, plan
+  variants, compare/report, serve, replay, plus direct [WAIT] writes in filesystem directory
+  preparation, benchmark run-point, and TUI directory preparation. Implemented shared
+  step_progress::terminal adapter and reporter-owned benchmark.run-point lifecycle; replaced direct
+  progress writes while preserving prompts, JSON, quiet, and TUI routing. Repair diagnosis for exit
+  101: focused owned_directory_preparation test expected the old ad-hoc [WAIT] line; new reporter
+  output was initially clipped and message was not retained on terminal finish. Added bounded
+  last_message retention and updated tests to assert reporter prefix/newline. Also corrected one
+  failed formatter command caused by an incorrect nonexistent worktree path; no product impact.
