@@ -9,7 +9,7 @@
     "AR-1813"
   ],
   "id": "AR-1812",
-  "next_action": "Wait for exact-head CI terminal success; record independent review of 736b9705 and then merge only after review and all required checks are green.",
+  "next_action": "Monitor every exact-main post-merge workflow for a0a978f1 at 30-second cadence; record terminal success/failure and then perform post-merge verification before closing AR.",
   "observed_branch": "feature/ar-1812-cli2key-ordinary-bootstrap",
   "observed_dirty": 0,
   "observed_head": "736b970566d74644ab1dc9c51ff6dd890298c382",
@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T12:20:58+00:00",
+  "updated_at": "2026-10-12T12:21:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -491,3 +491,10 @@ fixtures and must not require a live provider or TLC.
 
 - 2026-10-12T12:20:58+00:00: Recorded command exit 0; command argv SHA-256
   599beaaa3517b2ff7ef612ae598c1a2b8eef9f8c145b8b5f740e1a06994ac12c.
+
+- 2026-10-12T12:21:20+00:00: Authorized local integration completed: signed DCO merge
+  a0a978f134959943c54362e84032a6232c606105 published to protected main with exact parents
+  e57982a79fafa464bfac6b3c858226ffe08737e7 and 736b970566d74644ab1dc9c51ff6dd890298c382, exact
+  reviewed tree b3d79394af5fe30c7ea0d726014ddf69ad538f17, signature G martin.beck2@gmx.de.
+  Post-merge workflows for this exact main SHA are launched; Portable protected-main provenance and
+  Huawei headers are green, remaining workflows are in progress/pending.
