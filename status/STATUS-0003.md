@@ -1546,7 +1546,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Semaphore implementation and diagnostic inventory repair checkpoint |
-| Next action | Rerun full make test and default-parallel after 60-second bounded run-seam budget; then signed clean commit/review. |
+| Next action | Commit the 60-second bounded run-seam repair signed/DCO, run default-parallel 432-test gate, checkpoint exact head, and request independent review. |
 
 
 ## Dependency graph
