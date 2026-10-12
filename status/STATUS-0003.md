@@ -1112,7 +1112,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. |
-| Next action | Remain open pending stale AR-1793 legacy diagnostic catalog repair; after repair lands, rebase/retest this preserved diff through focused and full gates. |
+| Next action | Hold AR-1773 at open with preserved diff; route compact diagnostic legacy catalog regeneration for widespread lib.rs line drift, then rerun diagnostic_contract once the catalog repair lands. |
 
 ### AR-1774 — Status and progress completeness CI
 

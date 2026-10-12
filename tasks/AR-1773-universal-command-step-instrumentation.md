@@ -8,7 +8,7 @@
     "AR-1772"
   ],
   "id": "AR-1773",
-  "next_action": "Remain open pending stale AR-1793 legacy diagnostic catalog repair; after repair lands, rebase/retest this preserved diff through focused and full gates.",
+  "next_action": "Hold AR-1773 at open with preserved diff; route compact diagnostic legacy catalog regeneration for widespread lib.rs line drift, then rerun diagnostic_contract once the catalog repair lands.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 5,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:36:06+00:00",
+  "updated_at": "2026-10-12T06:36:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -242,3 +242,11 @@ non-TTY compatibility.
 
 - 2026-10-12T06:36:06+00:00: Recorded command exit 101; command argv SHA-256
   6690510850b14ee3b4b71c65ac0f2f211c761ed12f8192facf885edeb9860506.
+
+- 2026-10-12T06:36:26+00:00: Fresh diagnostic_contract invocation after correcting AR1793
+  output-parent identity to source line 3609 still fails. Exact first unresolved current lib.rs
+  callsites are 5710, 5731, 5744, 5774, 5796, 5839, 5843, 6159, 6175, 6179, 6182, 6189, 6197, 6213,
+  continuing through dozens to 9241; this is widespread compact legacy catalog line drift, not the
+  AR-1773 output-parent line. The AR1793 source identity now matches 3609. No further identical
+  retries; requires catalog regeneration/reconciliation across lib.rs as a separate bounded repair
+  before full gate.
