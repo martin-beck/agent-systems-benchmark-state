@@ -2,21 +2,21 @@
 {
   "branch": "repair/ar-1816-projection-hygiene",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-12T14:57:42+00:00",
   "depends_on": [],
   "id": "AR-1816",
   "next_action": "PR #121 at 104abc99ad is published; obtain independent exact-head review and required state CI, then merge and run configured reconcile/snapshot/doctor receipt.",
-  "owner": "",
+  "owner": "ar1816_projection_hygiene",
   "plan": "../plans/AR-1816-state-projection-and-bytecode-hygiene.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1816.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair recurring stale ASB coordinator projections and generated Python bytecode that breaches the state-file size guard.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Coordinator projection and bytecode hygiene recovery",
-  "updated_at": "2026-10-12T12:57:33+00:00",
+  "updated_at": "2026-10-12T12:57:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar1816-projection-hygiene"
 }
 ---
@@ -86,3 +86,5 @@ bytecode, credentials, or host-private runtime configuration may enter commits.
 - 2026-10-12T12:57:33+00:00: Recovered expired claim formerly owned by ar1816_projection_hygiene.
   Lease expired at 12:57:18Z; no matching worker process; preserving PR #121 vendor-digest rejection
   and replacement repair worktree.
+
+- 2026-10-12T12:57:42+00:00: Claimed by ar1816_projection_hygiene.
