@@ -16,20 +16,20 @@
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "environmental",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:68a9501e62b9d4f02577992f9d269865ba35e2867bdfacbbe8805dccbc07fb83",
+    "evidence_ref": "quality/AR-1803-postmerge-3c7ca1c1.txt",
     "spec_ref": "specs/AR-1803.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1803.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 208,
+  "task_revision": 209,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:43:41+00:00",
+  "updated_at": "2026-10-12T04:45:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -675,3 +675,8 @@ as the affected successor linkage and evidence source.
   13e2aa5d148f9097f642e519d13f83dd607b03dabc7cdbb78c402e46fca20295.
 
 - 2026-10-12T04:43:41+00:00: Heartbeat by ar1803_parallel_fixture_luna56.
+
+- 2026-10-12T04:45:17+00:00: Accepted exact reviewed candidate 547e42dd after PR #599 non-squash
+  merge 3c7ca1c1. Hosted checks all green including provenance; exact main tree matched candidate.
+  Post-merge default-parallel asb-cli passed 433/433 and post-merge make test exited 0. Independent
+  review ACCEPT was recorded for 547e42dd.
