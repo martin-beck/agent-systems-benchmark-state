@@ -29,9 +29,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Implement cli2key ordinary CLI bootstrap",
-  "updated_at": "2026-10-12T11:27:01+00:00",
+  "updated_at": "2026-10-12T11:27:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1812-cli2key-ordinary-bootstrap"
 }
 ---
@@ -153,3 +153,6 @@ fixtures and must not require a live provider or TLC.
 - 2026-10-12T11:26:59+00:00: Heartbeat by ar1812-replacement-luna56.
 
 - 2026-10-12T11:27:01+00:00: Checkpointed source commit 5b71c956ea88788c3b303425331e0682c8dbc241.
+
+- 2026-10-12T11:27:51+00:00: Recorded command exit 101; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
