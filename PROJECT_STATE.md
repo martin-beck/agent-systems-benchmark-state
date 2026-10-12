@@ -41,7 +41,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38215438011 | `1494e4741968` | push | Rust verification | in_progress:- |
 | 38215438004 | `1494e4741968` | push | Portable protected-main provenance | completed:failure |
 | 38215437999 | `1494e4741968` | push | Fault assurance | in_progress:- |
-| 38215437990 | `1494e4741968` | push | Repository quality | in_progress:- |
+| 38215437990 | `1494e4741968` | push | Repository quality | completed:failure |
 | 38215437971 | `1494e4741968` | push | Emulated aarch64 portability | in_progress:- |
 | 38214370099 | `30641f50d68e` | pull_request | Credential-free benchmark path | completed:success |
 | 38214370095 | `30641f50d68e` | pull_request | Agent Workflow Quality shadow | completed:success |
