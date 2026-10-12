@@ -34,7 +34,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 38248424986 | `a0a978f13495` | push | Hosted portability and native qualification | completed:success |
-| 38248424378 | `a0a978f13495` | push | Emulated aarch64 portability | in_progress:- |
+| 38248424378 | `a0a978f13495` | push | Emulated aarch64 portability | completed:success |
 | 38248424288 | `a0a978f13495` | push | Cross-repository development broker qualification | completed:success |
 | 38248424228 | `a0a978f13495` | push | Fault assurance | completed:success |
 | 38248424176 | `a0a978f13495` | push | Portable protected-main provenance | completed:success |
