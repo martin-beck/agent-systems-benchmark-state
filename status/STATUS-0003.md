@@ -1140,7 +1140,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels. |
-| Next action | Publish v2 PR #589 at signed exact tip c6cddcaf; await exact-head hosted checks after local cargo test -p asb-cli --lib passes 429/429. |
+| Next action | Await PR #590 exact-head hosted checks at c52dd2b2; provenance/DCO topology repaired and local 429/429 lib gate is green. |
 
 ### AR-1776 — Supported-tool acquisition catalog
 

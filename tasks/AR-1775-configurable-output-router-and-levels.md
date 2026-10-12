@@ -7,7 +7,7 @@
     "AR-1771"
   ],
   "id": "AR-1775",
-  "next_action": "Publish v2 PR #589 at signed exact tip c6cddcaf; await exact-head hosted checks after local cargo test -p asb-cli --lib passes 429/429.",
+  "next_action": "Await PR #590 exact-head hosted checks at c52dd2b2; provenance/DCO topology repaired and local 429/429 lib gate is green.",
   "observed_branch": "feature/ar-1775-configurable-output-router-and-levels",
   "observed_dirty": 0,
   "observed_head": "d7c08c106e52ed9aa144f24ffe130b40dd6c3da7",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T00:23:11+00:00",
+  "updated_at": "2026-10-12T00:23:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -274,3 +274,9 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T00:23:11+00:00: Recorded command exit 0; command argv SHA-256
   eae142130295cad079d282af5f4943334aa8e05f25d5f8c512aa2706c1b86f35.
+
+- 2026-10-12T00:23:20+00:00: Repair update: PR #589 exact head c6cddcaf passed topology construction
+  but hosted provenance rejected missing Signed-off-by trailer on the merge commit. Created
+  non-force-pushed PR #590 on v3 exact head c52dd2b2, parents 3cb3702 and protected base 0a2039c4,
+  with valid SSH signature and matching DCO trailer. All local asb-cli lib tests pass 429/429 from
+  /srv/data/projects/asb-ar1775-v3-compatible layout; hosted checks are now pending.
