@@ -1476,7 +1476,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys. |
-| Next action | Complete corrected CLI regex test, then run full make test. |
+| Next action | Request fresh independent exact-head review of a9722277; no publication until ACCEPT. |
 
 ### AR-1800 — Controlled local workload acquisition backend
 

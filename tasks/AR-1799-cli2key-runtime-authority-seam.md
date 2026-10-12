@@ -8,7 +8,7 @@
     "AR-1731"
   ],
   "id": "AR-1799",
-  "next_action": "Complete corrected CLI regex test, then run full make test.",
+  "next_action": "Request fresh independent exact-head review of a9722277; no publication until ACCEPT.",
   "observed_branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "observed_dirty": 0,
   "observed_head": "a9722277283c57f18583dfc8197d389e6af943ea",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:35:39+00:00",
+  "updated_at": "2026-10-12T04:35:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -208,3 +208,10 @@ issue an opaque live attempt to the Codex adapter.
 
 - 2026-10-12T04:35:37+00:00: Recorded command exit 0; command argv SHA-256
   e5476ed9e8b275ff779d5fbbb250fde12f5aebabf5f722b1b57e178a7f33649c.
+
+- 2026-10-12T04:35:45+00:00: Repair signed/DCO head a9722277: LiveProviderAttempt now supports
+  authority revocation fences checked by start_relay/spawn; Cli2KeyRuntimeAuthority binds
+  issue_attempt and attempt_factory outputs to its lifecycle fence, revoking all outstanding
+  attempts on authority drop. Corrected CLI focused tests passed individually (cli2key_run_dispatch;
+  live_provider_run_and_sweep_dispatch), runtime focused 8 tests passed, and full make test
+  (fmt/clippy/workspace tests/docs) passed.
