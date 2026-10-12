@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T04:33:07+00:00",
+  "claim_expires": "2026-10-12T04:33:24+00:00",
   "depends_on": [
     "AR-1762"
   ],
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T02:33:20+00:00",
+  "updated_at": "2026-10-12T02:33:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -52,3 +52,5 @@ as the affected successor linkage and evidence source.
 
 - 2026-10-12T02:33:18+00:00: Recorded command exit 0; command argv SHA-256
   9c27476ea72ce23cd8aecc4dfced4b7037d62609e1aaed37258c962e2cdf04f3.
+
+- 2026-10-12T02:33:24+00:00: Heartbeat by ar1803_parallel_fixture_luna56.
