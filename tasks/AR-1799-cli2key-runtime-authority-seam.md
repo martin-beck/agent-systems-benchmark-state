@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1799-cli2key-runtime-authority-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T07:11:27+00:00",
+  "claim_expires": "2026-10-12T07:26:11+00:00",
   "depends_on": [
     "AR-1729",
     "AR-1731"
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the missing runtime authority composition seam for cli2key live execution without exposing invocation keys.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Add cli2key runtime authority composition seam",
-  "updated_at": "2026-10-12T04:25:56+00:00",
+  "updated_at": "2026-10-12T04:26:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-cli2key-runtime-authority-seam"
 }
 ---
@@ -129,3 +129,5 @@ issue an opaque live attempt to the Codex adapter.
   runtime-owned Cli2KeyRuntimeAuthority with sidecar lifecycle and opaque LiveProviderAttempt
   factory, and hostile receipt substitution/stale/platform tests. Focused 7 tests and full make test
   (fmt/clippy/workspace tests/docs) pass.
+
+- 2026-10-12T04:26:11+00:00: Heartbeat by ar1799-authority-luna56.
