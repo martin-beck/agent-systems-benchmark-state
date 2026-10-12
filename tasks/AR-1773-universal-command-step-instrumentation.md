@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T08:30:54+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 4,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
-  "owner": "ar1772-progress-reporter-luna56",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:31:25+00:00",
+  "updated_at": "2026-10-12T06:31:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -201,3 +201,9 @@ non-TTY compatibility.
   catalog identity and falls back to unclassified cause. Current AR-1773 diff only changes serve
   rendering/assertion; no diagnostic mapping repair is in scope. Preserve product diff/worktree as
   uncommitted evidence and route stale AR-1793 catalog repair to its owning successor.
+
+- 2026-10-12T06:31:28+00:00: Released open, not done: implementation diff is preserved in bound
+  worktree with focused reporter/public-route tests green, but full asb-cli gate is blocked by stale
+  AR-1793 line-addressed legacy diagnostic catalog. Exact failure is human diagnostic output-parent
+  fallback to unclassified cause; AR-1793 itself is done at merge 24f1872c and requires a successor
+  catalog repair. No gate waiver, commit, review, or publication performed.
