@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1803-deterministic-parallel-fixture-repair",
-  "checkpoint_commit": "d4d927f1fb43cc25219294d18c4b853b4098d0a9",
+  "checkpoint_commit": "3c7692cfc9022f8a59e979f6a75a2cbfc93374bd",
   "claim_expires": "2026-10-12T04:16:13+00:00",
   "depends_on": [
     "AR-1762"
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:09:30+00:00",
+  "updated_at": "2026-10-12T04:09:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -374,3 +374,5 @@ as the affected successor linkage and evidence source.
   AR-1803, argv_sha256 3fc122cf075789d0bc02db7fd32de1be63709d388a5a8cb44f03ddbc0ae0dfb6, validation
   failed AR-1799 expired claim. Classification: unrelated coordinator infrastructure validation, not
   product gate failure. Product tree remains clean; rerun state recording after AR-1799 renewal.
+
+- 2026-10-12T04:09:40+00:00: Checkpointed source commit 3c7692cfc9022f8a59e979f6a75a2cbfc93374bd.
