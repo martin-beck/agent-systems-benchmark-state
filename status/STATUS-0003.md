@@ -20,7 +20,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. |
-| Next action | Await independent technical review of PR #604 at af690763 and all exact-head hosted checks; merge only after review acceptance and green required CI, then rerun receipt at merge head. |
+| Next action | Wait for fresh independent review of PR #604 head 30641f50 and exact-head hosted CI; merge only after acceptance and all required checks green, then rerun/refresh receipt at merge head. |
 
 ### AR-1690 — ASB development-channel current-main materializer
 
