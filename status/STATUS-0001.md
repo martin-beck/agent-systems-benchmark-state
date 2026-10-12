@@ -4532,7 +4532,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. |
-| Next action | Independent review of c915ecbbca; run exact-head applicable state gates and post-merge verification without TLC. |
+| Next action | Obtain independent re-review of 21a8b4c16c on PR #120; merge only after approval, then verify exact merge head and post-merge checks without TLC. |
 
 ### AR-1294 — State formal-gate baseline integrity
 

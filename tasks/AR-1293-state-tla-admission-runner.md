@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T11:44:54+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Independent review of c915ecbbca; run exact-head applicable state gates and post-merge verification without TLC.",
+  "next_action": "Obtain independent re-review of 21a8b4c16c on PR #120; merge only after approval, then verify exact merge head and post-merge checks without TLC.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 776,
+  "task_revision": 777,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-10-12T09:44:58+00:00",
+  "updated_at": "2026-10-12T09:45:17+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2322,3 +2322,8 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-10-12T09:44:58+00:00: Recorded command exit 0; command argv SHA-256
   00a4feaa399335e6d2d5f7adf479341fdb178db98de88f45ef9622e6ac576f93.
+
+- 2026-10-12T09:45:17+00:00: Independent review found Ruff PTH105 at receipt replacement. Repaired
+  with Path.replace in signed DCO commit 21a8b4c16c. Focused unsigned-development tests, Ruff,
+  source headers, and fresh exact-head PR checks pass. Remote branch and PR #120 both resolve to
+  21a8b4c16c; no TLC/model-check execution.
