@@ -26,6 +26,7 @@ def load_launcher() -> types.ModuleType:
 
 class ProjectionLauncherTest(unittest.TestCase):
     def test_launcher_disables_bytecode_before_loading_vendor(self) -> None:
+        before = set((ROOT / "tools").rglob("*.pyc"))
         result = subprocess.run(  # noqa: S603 - executable and arguments are repository constants
             [str(ROOT / "tools" / "awq-handoffctl"), "--help"],
             cwd=ROOT,
@@ -35,7 +36,7 @@ class ProjectionLauncherTest(unittest.TestCase):
             env={**os.environ, "PYTHONDONTWRITEBYTECODE": ""},
         )
         self.assertIn("reconcile", result.stdout)
-        self.assertFalse(list((ROOT / "tools").rglob("*.pyc")))
+        self.assertEqual(set((ROOT / "tools").rglob("*.pyc")), before)
 
     def test_transaction_restores_previous_matched_set_after_interruption(self) -> None:
         launcher = load_launcher()
