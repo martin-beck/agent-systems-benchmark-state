@@ -11,7 +11,7 @@
   "next_action": "PR #607 exact head d5f814896ccfd71bd0fe09028dc94d7fcf4c88ec is under hosted non-TLC checks; TLC check is present only because PR #606 formal-separation merge is still blocked by GitHub review policy. After ordinary checks and independent review, reconcile the formal lane before merge.",
   "observed_branch": "feature/ar-1813-cli2key-runtime-factory-contract",
   "observed_dirty": 0,
-  "observed_head": "d5f814896ccfd71bd0fe09028dc94d7fcf4c88ec",
+  "observed_head": "458ce867b1e973fdf51049cd95ff893fe17d4a40",
   "owner": "ar1810-cli2key-luna56",
   "plan": "../plans/AR-1813-cli2key-runtime-factory-contract.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Expose the runtime-owned cli2key receipt contract and opaque factory required for ordinary CLI bootstrap.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Expose cli2key runtime factory contract",
-  "updated_at": "2026-10-12T10:21:08+00:00",
+  "updated_at": "2026-10-12T10:25:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1813-cli2key-runtime-factory-contract"
 }
 ---

@@ -6,9 +6,9 @@
   "depends_on": [],
   "id": "AR-1814",
   "next_action": "Re-evaluate PR #606 exact-head mergeability after ruleset repair; merge only with all ordinary checks green, then verify exact-main post-merge workflows and close AR-1814.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1814-ruleset-repair",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "07c590e712df11e555228abf1b9de4add3510d4f",
   "owner": "ar1773-catalog-repair-luna56",
   "plan": "../plans/AR-1814-remove-tlc-development-rule.md",
   "priority": "P0",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Remove the stale TLC development status requirement while preserving all native gates and final-delivery formal assurance.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Remove stale TLC development ruleset requirement",
-  "updated_at": "2026-10-12T10:25:11+00:00",
+  "updated_at": "2026-10-12T10:25:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1814-ruleset-repair"
 }
 ---
