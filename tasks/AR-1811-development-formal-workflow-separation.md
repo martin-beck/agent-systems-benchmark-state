@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1811-development-formal-workflow-separation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T11:57:44+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1811",
   "next_action": "Monitor PR #606 exact head da764cf7 until all required non-TLC checks are green; then independent review, merge, exact-main post-merge verification, and durable closure.",
   "observed_branch": "feature/ar-1811-development-formal-workflow-separation",
   "observed_dirty": 0,
   "observed_head": "da764cf74d70783eff73d6f0055a1ac3a0dfa221",
-  "owner": "ar1811-formal-separation-luna56",
+  "owner": "",
   "plan": "../plans/AR-1811-development-formal-workflow-separation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Development/formal workflow separation",
-  "updated_at": "2026-10-12T09:57:44+00:00",
+  "updated_at": "2026-10-12T10:01:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1811-development-formal-workflow-separation"
 }
 ---
@@ -104,3 +104,7 @@ tests and update the generated quality documentation.
   headers and mutation checks green; Rust, policy, QEMU and remaining checks pending.
 
 - 2026-10-12T09:57:44+00:00: Heartbeat by ar1811-formal-separation-luna56.
+
+- 2026-10-12T10:01:59+00:00: Worker implementation complete; releasing claim for coordinator to
+  reconcile PR #606 after main advanced. Preserve exact-head evidence and non-TLC development
+  policy.
