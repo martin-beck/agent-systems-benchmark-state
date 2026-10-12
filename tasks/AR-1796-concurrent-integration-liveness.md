@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-12T09:20:45+00:00",
+  "updated_at": "2026-10-12T09:20:46+00:00",
   "worktree_key": ""
 }
 ---
@@ -335,3 +335,6 @@ workers checkpoint, retry, and continue useful work during integration churn.
 - 2026-10-12T09:20:45+00:00: User requested the AR-1796 ASB worker stop; coordinator terminated the
   exact handoffctl/TLC process group after preserving durable evidence. No attestation or acceptance
   was produced.
+
+- 2026-10-12T09:20:46+00:00: Recorded command exit 0; command argv SHA-256
+  263e6df7bf524f7d22558cd3ecdc8a67a5f8016fdda910e4ce54c337367e522a.
