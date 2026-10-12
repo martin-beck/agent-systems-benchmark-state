@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T08:33:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 5,
   "observed_head": "9c5e557195df34675e2f5427e6ec3dff3d433254",
-  "owner": "ar1772-progress-reporter-luna56",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T06:36:26+00:00",
+  "updated_at": "2026-10-12T06:36:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -250,3 +250,10 @@ non-TTY compatibility.
   AR-1773 output-parent line. The AR1793 source identity now matches 3609. No further identical
   retries; requires catalog regeneration/reconciliation across lib.rs as a separate bounded repair
   before full gate.
+
+- 2026-10-12T06:36:29+00:00: Released open after bounded catalog diagnosis. AR1793 output-parent
+  identity is corrected at human.rs line 3609, but diagnostic_contract still reports widespread
+  unresolved lib.rs producer identities beginning at lines 5710/5731/5744 and continuing through
+  9241. This requires separate compact legacy catalog regeneration; AR-1773 focused
+  reporter/public-route work remains preserved in the bound worktree. No full gate, commit, review,
+  or publication.
