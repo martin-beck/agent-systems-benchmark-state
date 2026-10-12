@@ -10,8 +10,8 @@
   "id": "AR-1802",
   "next_action": "Run full asb-cli gate; then commit signed fixture-authority repair and request independent review. Full lifecycle/offline matrix remains to be verified.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
-  "observed_dirty": 1,
-  "observed_head": "b72da478631faa391f9be75d7cce1e813deb387d",
+  "observed_dirty": 0,
+  "observed_head": "97f6c271db8937e5c84a33d552881b805c361f58",
   "owner": "ar1802-workload-matrix-luna56",
   "plan": "../plans/AR-1802-controlled-workload-matrix-and-fixture-authority.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T02:35:52+00:00",
+  "updated_at": "2026-10-12T02:35:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
