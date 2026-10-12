@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:ec988c4a49869b8617bad21a29647b2ecdfdef879d5a34aa999a3947b8c494d5",
+    "evidence_ref": "https://github.com/martin-beck/agent-systems-benchmark/commit/98327152f2e92308b5bcf5b21cfe0c9f285cf950",
     "spec_ref": "specs/AR-1775.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1775.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Implement the mandatory configurable output router and project-configured quiet, normal, verbose, and debug levels.",
-  "task_revision": 337,
+  "task_revision": 338,
   "title": "Configurable output router and levels",
-  "updated_at": "2026-10-12T01:29:00+00:00",
+  "updated_at": "2026-10-12T01:29:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1775-configurable-output-router-and-levels"
 }
 ---
@@ -1068,3 +1068,6 @@ stdout envelope and silences all human/operational output on both streams.
 
 - 2026-10-12T01:29:00+00:00: Recorded command exit 0; command argv SHA-256
   bde42b4ffa54fd2650e939dd2e424c411d2cad35c587aa23a74fa09853be1d14.
+
+- 2026-10-12T01:29:06+00:00: Post-merge contract evidence: PR #597 head 9bb7d3f2 merged as 98327152;
+  exact-main cargo test -p asb-cli --lib passed 429/429.
