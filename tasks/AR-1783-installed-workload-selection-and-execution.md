@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Create a signed DCO repair PR based on protected main 5201a036, obtain exact-head review and green checks, merge with tools/integration/merge_pr.py, verify exact-main receipts, then accept and release",
+  "next_action": "Wait for all PR #596 checks and independent exact-head review; integrate only with tools/integration/merge_pr.py, then verify protected main and accept/release",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "506de984af222659b3b48824cef7d34b15118862",
@@ -28,10 +28,10 @@
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
-  "summary": "AR-1783 merged at 5201a036; post-merge policy and portable provenance rejected GitHub merge committer, requiring supported local-integration forward repair before acceptance",
-  "task_revision": 191,
+  "summary": "Forward repair PR #596 is based on protected main 5201a036; exact signed+DCO head 506de984 passes local policy and hosted checks are running",
+  "task_revision": 192,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-12T01:09:00+00:00",
+  "updated_at": "2026-10-12T01:09:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -599,3 +599,10 @@ the suite from this end-to-end path.
 
 - 2026-10-12T01:09:00+00:00: Recorded command exit 0; command argv SHA-256
   6ac50d8a9f33e53bd30003377cb8771b1d02c0e272f5a4658aff225662e847af.
+
+- 2026-10-12T01:09:13+00:00: Repair evidence: historical web merge 5201a036 remains preserved; PR
+  #596 topic head 506de984 has parents ad64a90f and 5201a036, exact unchanged tree, signed+DCO local
+  identity, and local repository_policy all checks passed. First synchronization cdf8b131 was
+  rejected for missing Signed-off-by; amended -S -s and force-with-lease pushed. Hosted run
+  38190636658 Portable protected-main provenance is already green; remaining required runs are in
+  progress/queued.
