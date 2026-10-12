@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-12T13:42:15+00:00",
   "depends_on": [],
   "id": "AR-1815",
-  "next_action": "Claim a dedicated recovery worktree; use tools/integration/merge_pr.py to create a forward-only signed DCO recovery for preserved merge 15c80511, then review, publish, merge, and verify exact-main gates.",
+  "next_action": "PR #609 exact head ab4f4c6a81f543e049759d199cca675c7370a1dc is open against main 15c80511; obtain independent exact-head review, wait all required PR checks, then run merge_pr.py with expected base 15c80511 and topic head before protected publication.",
   "observed_branch": "recovery/ar-1815-provenance",
   "observed_dirty": 0,
   "observed_head": "ab4f4c6a81f543e049759d199cca675c7370a1dc",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T11:42:15+00:00",
+  "updated_at": "2026-10-12T11:42:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -69,3 +69,6 @@ introduce a TLC/model-check dependency for development.
   99df30ca0ed805631b5a3fe2055833ee120579ed5e644b7bc0e120f71be6c943.
 
 - 2026-10-12T11:42:15+00:00: Heartbeat by ar1805_postmerge_repair.
+
+- 2026-10-12T11:42:18+00:00: Published signed DCO recovery topic ab4f4c6a via PR #609; preserved
+  merge 15c80511 and reviewed tree unchanged. PR checks are running; no TLC/live-provider gate.

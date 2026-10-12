@@ -1703,7 +1703,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Recover protected-main merge provenance without rewriting the preserved GitHub merge. |
-| Next action | Claim a dedicated recovery worktree; use tools/integration/merge_pr.py to create a forward-only signed DCO recovery for preserved merge 15c80511, then review, publish, merge, and verify exact-main gates. |
+| Next action | PR #609 exact head ab4f4c6a81f543e049759d199cca675c7370a1dc is open against main 15c80511; obtain independent exact-head review, wait all required PR checks, then run merge_pr.py with expected base 15c80511 and topic head before protected publication. |
 
 
 ## Dependency graph
