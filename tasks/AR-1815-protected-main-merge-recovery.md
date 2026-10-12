@@ -2,7 +2,7 @@
 {
   "branch": "recovery/ar-1815-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T13:40:37+00:00",
+  "claim_expires": "2026-10-12T13:41:12+00:00",
   "depends_on": [],
   "id": "AR-1815",
   "next_action": "Claim a dedicated recovery worktree; use tools/integration/merge_pr.py to create a forward-only signed DCO recovery for preserved merge 15c80511, then review, publish, merge, and verify exact-main gates.",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main merge provenance without rewriting the preserved GitHub merge.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Protected-main signed merge recovery",
-  "updated_at": "2026-10-12T11:41:08+00:00",
+  "updated_at": "2026-10-12T11:41:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1815-provenance"
 }
 ---
@@ -47,3 +47,5 @@ introduce a TLC/model-check dependency for development.
 
 - 2026-10-12T11:40:47+00:00: Recorded command exit 0; command argv SHA-256
   96a0af41a541f5236a5894e26c9eb7ff32fa914aac46bb58bd7dabecaaa5c33e.
+
+- 2026-10-12T11:41:12+00:00: Heartbeat by ar1805_postmerge_repair.
