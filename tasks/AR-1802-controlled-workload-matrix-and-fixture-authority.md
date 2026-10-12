@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-12T04:36:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1782",
     "AR-1783"
@@ -12,7 +12,7 @@
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "observed_dirty": 0,
   "observed_head": "97f6c271db8937e5c84a33d552881b805c361f58",
-  "owner": "ar1802-workload-matrix-luna56",
+  "owner": "",
   "plan": "../plans/AR-1802-controlled-workload-matrix-and-fixture-authority.md",
   "priority": "P0",
   "schema_version": 1,
@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1802.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T02:36:10+00:00",
+  "updated_at": "2026-10-12T02:39:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -91,3 +91,9 @@ remains explicitly unaccepted and blocked until this repair is complete.
   otherwise reached all tests; no waiver applied. Product worktree clean.
 
 - 2026-10-12T02:36:10+00:00: Heartbeat by ar1802-workload-matrix-luna56.
+
+- 2026-10-12T02:39:00+00:00: Blocked by external successor AR-1803: deterministic parallel
+  tool-discovery fixture isolation. Full cargo test -p asb-cli at signed product head 97f6c271 fails
+  nondeterministically at tool_discovery::tests::path_discovery_is_deterministic_and_bounded under
+  parallel execution; isolated rerun passes. Preserve 97f6c271 (SSH-signed, DCO) unmerged. Resume
+  AR-1802 only after AR-1803 repairs and green exact-head full gate; no waiver.
