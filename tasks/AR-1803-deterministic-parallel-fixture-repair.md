@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair nondeterministic parallel provider-selection and comparison fixtures blocking AR-1801 full gates.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Deterministic parallel fixture repair",
-  "updated_at": "2026-10-12T04:02:35+00:00",
+  "updated_at": "2026-10-12T04:04:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair"
 }
 ---
@@ -331,3 +331,6 @@ as the affected successor linkage and evidence source.
   identities, and restored exact diagnostic catalog in signed f85b0dd7. Final post-merge-to-main
   gates: make test exit 0; default-parallel asb-cli 431/431 in 20.13s; focused diagnostic and
   provenance tests pass. Current clean candidate exact head f85b0dd7.
+
+- 2026-10-12T04:04:04+00:00: Recorded command exit 0; command argv SHA-256
+  b74ea856cab88687381c7ba24de562155b5f04554d55f60430968c185913a514.
