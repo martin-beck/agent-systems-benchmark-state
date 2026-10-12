@@ -8,7 +8,7 @@
     "AR-1783"
   ],
   "id": "AR-1802",
-  "next_action": "Independent review is required for signed head 97f6c271; hosted exact-head CI and full lifecycle/offline matrix remain outstanding.",
+  "next_action": "Repair reviewed diagnostic catalog line identities for AR-1802 source additions; rerun exact package and workspace gates.",
   "observed_branch": "feature/ar-1802-controlled-workload-matrix-and-fixture-authority",
   "observed_dirty": 0,
   "observed_head": "45e6513adfeb76effbec8f4be12ed08b3d18af9c",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Controlled workload matrix and fixture authority",
-  "updated_at": "2026-10-12T03:43:52+00:00",
+  "updated_at": "2026-10-12T03:46:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority"
 }
 ---
@@ -168,3 +168,14 @@ remains explicitly unaccepted and blocked until this repair is complete.
 
 - 2026-10-12T03:43:52+00:00: Recorded command exit 101; command argv SHA-256
   82a6ec1913abe5db52ee468d880e247eebf94ee128f274be1088bcbff50c27e5.
+
+- 2026-10-12T03:46:25+00:00: Exact gate diagnosis (not an opaque retry): cargo test --quiet --locked
+  --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority/Cargo.toml
+  -p asb-cli --tests --target x86_64-unknown-linux-gnu exited 101. 433 lib tests passed;
+  capability_contract 14/14; cli_e2e 6/6; diagnostic_contract 8/9.
+  ordinary_cli_producers_are_mechanically_closed failed at diagnostic_contract.rs:554 because
+  reviewed catalog lacks current lib.rs call-site identities, beginning lines 4366, 4378, 4403, 4406
+  and continuing through shifted lines to 19422. Cause is AR-1802 authority/archive additions and
+  test guards moving source line numbers; no gate waiver. Repair catalog via source-line mapping and
+  add new reviewed authority producer identity, then rerun.

@@ -1518,7 +1518,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Complete controlled workload fixture authority and lifecycle qualification left incomplete by AR-1800 review. |
-| Next action | Independent review is required for signed head 97f6c271; hosted exact-head CI and full lifecycle/offline matrix remain outstanding. |
+| Next action | Repair reviewed diagnostic catalog line identities for AR-1802 source additions; rerun exact package and workspace gates. |
 
 ### AR-1803 — Deterministic parallel fixture repair
 
