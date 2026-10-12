@@ -8,13 +8,8 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1773](tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Dependency-safe AR-1773 claimed; clean isolated worktree created at current main 9c5e5571. | Independent review complete: PR #605 exact head f78a1006 is signed/DCO/privacy clean; focused step_progress 4/4 passes. human_cli one outcome-matrix failure reproduces on parent 1494e474 with unchanged expected status (pre-existing environment failure); retain hosted/full gate evidence and do not merge until integration lane reconciles exact-head results. | ar1773-catalog-repair-luna56 |
+| P0 | [AR-1810](tasks/AR-1810-cli2key-standard-cli-integration.md): Complete cli2key Standard CLI Integration | Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps. | Coordinator metadata repair required before implementation: promoted task has prefilled worktree_key but empty branch, so handoffctl bind-worktree rejects the first binding and run rejects product mutations. Preserve scope; bind declared branch/worktree then implement. | ar1810-cli2key-luna56 |
 | P0 | [AR-1811](tasks/AR-1811-development-formal-workflow-separation.md): Development/formal workflow separation | Separate development CI from the single future final-delivery TLC gate without weakening Kani, Loom, policy, Rust, privacy, or release assurance. | Monitor PR #606 exact head da764cf7 until all required non-TLC checks are green; then independent review, merge, exact-main post-merge verification, and durable closure. | coordinator-ar1811-merge |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1810](tasks/AR-1810-cli2key-standard-cli-integration.md): Complete cli2key Standard CLI Integration | Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps. | Coordinator metadata repair required before implementation: promoted task has prefilled worktree_key but empty branch, so handoffctl bind-worktree rejects the first binding and run rejects product mutations. Preserve scope; bind declared branch/worktree then implement. | - |
 
 ## Blocked
 

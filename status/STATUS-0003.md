@@ -1625,11 +1625,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1810-cli2key-luna56 |
 | Parent | None |
 | Children | None |
 | Summary | Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps. |
@@ -2520,7 +2520,7 @@ flowchart LR
         AR_1807["AR-1807 - Planned"]:::status_planned
         AR_1808["AR-1808 - Planned"]:::status_planned
         AR_1809["AR-1809 - Planned"]:::status_planned
-        AR_1810["AR-1810 - Open"]:::status_open
+        AR_1810["AR-1810 - In progress"]:::status_in_progress
         AR_1811["AR-1811 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
