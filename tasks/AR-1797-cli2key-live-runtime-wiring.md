@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1797-cli2key-live-runtime-wiring",
   "checkpoint_commit": "db1a776b04c5e93c87c99180a033deca06d5eea7",
-  "claim_expires": "2026-10-12T04:04:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1729",
     "AR-1731",
@@ -15,7 +15,7 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1797-cli2key-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1797-cli2key-live-runtime-wiring.md",
   "priority": "P0",
   "schema_version": 1,
@@ -29,11 +29,11 @@
   },
   "spec_ref": "specs/AR-1797.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair cli2key so an installed pinned bridge receives a runtime-issued sidecar launch and can execute a development ASB benchmark.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Wire cli2key sidecar into live benchmark execution",
-  "updated_at": "2026-10-12T02:04:18+00:00",
+  "updated_at": "2026-10-12T02:06:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring"
 }
 ---
@@ -96,3 +96,5 @@ path and records only redacted provenance and typed outcome evidence.
   documented.
 
 - 2026-10-12T02:04:18+00:00: Checkpointed source commit db1a776b04c5e93c87c99180a033deca06d5eea7.
+
+- 2026-10-12T02:06:45+00:00: Released claim after durable blocker and successor AR-1799 creation.
