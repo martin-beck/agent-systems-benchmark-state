@@ -271,7 +271,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1812](../tasks/AR-1812-cli2key-ordinary-bootstrap.md): Implement cli2key ordinary CLI bootstrap | ar1812-repair-luna56 | Wire the verified cli2key installation and runtime authority into ordinary ASB run and sweep dispatch without fallback. | Monitor fresh CI at 30-second cadence and obtain independent review for 736b9705; merge only after all required checks and review are green. |
-| P0 | [AR-1815](../tasks/AR-1815-protected-main-merge-recovery.md): Protected-main signed merge recovery | ar1805_postmerge_repair | Recover protected-main merge provenance without rewriting the preserved GitHub merge. | Exact merge e57982a is published. Repository quality run 38246184722 attempt 3 is in progress after two external HTTP 504 failures; monitor it to terminal-success or record the external dependency as the sole blocker without weakening gates. Other exact-main workflows must also finish green. |
+| P0 | [AR-1815](../tasks/AR-1815-protected-main-merge-recovery.md): Protected-main signed merge recovery | ar1805_postmerge_repair | Recover protected-main merge provenance without rewriting the preserved GitHub merge. | Exact merge e57982a is published. Repository quality attempt 3 failed at source_checkout::tests::exact_fixture_checkout_is_returned_and_cleanup_is_explicit (436 passed, 1 failed, Err(Unavailable)); independent local reproduction on current main passed 5/5. Rerun only Repository quality to classify runner flake, then require all exact-main workflows terminal-success. |
 
 ### Open (1)
 

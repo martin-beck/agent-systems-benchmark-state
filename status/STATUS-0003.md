@@ -1699,7 +1699,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Recover protected-main merge provenance without rewriting the preserved GitHub merge. |
-| Next action | Exact merge e57982a is published. Repository quality run 38246184722 attempt 3 is in progress after two external HTTP 504 failures; monitor it to terminal-success or record the external dependency as the sole blocker without weakening gates. Other exact-main workflows must also finish green. |
+| Next action | Exact merge e57982a is published. Repository quality attempt 3 failed at source_checkout::tests::exact_fixture_checkout_is_returned_and_cleanup_is_explicit (436 passed, 1 failed, Err(Unavailable)); independent local reproduction on current main passed 5/5. Rerun only Repository quality to classify runner flake, then require all exact-main workflows terminal-success. |
 
 ### AR-1816 — Coordinator projection and bytecode hygiene recovery
 
