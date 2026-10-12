@@ -9,8 +9,8 @@
   "id": "AR-1804",
   "next_action": "Rerun the repaired single-filter affected tests, then full default-parallel asb-cli/workspace gates.",
   "observed_branch": "feature/ar-1804-cross-module-fixture-semaphore",
-  "observed_dirty": 2,
-  "observed_head": "ca494d506135c4a3263bea21621dcc97d817614c",
+  "observed_dirty": 0,
+  "observed_head": "cc571419c3229abcb61fc64d45776e35f711391a",
   "owner": "ar1804_fixture_semaphore_luna56",
   "plan": "../plans/AR-1804-cross-module-fixture-semaphore.md",
   "priority": "P0",
@@ -27,9 +27,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide a bounded cross-module process-fixture semaphore for deterministic default parallel gates.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Cross-module fixture semaphore",
-  "updated_at": "2026-10-12T02:46:54+00:00",
+  "updated_at": "2026-10-12T02:46:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore"
 }
 ---
