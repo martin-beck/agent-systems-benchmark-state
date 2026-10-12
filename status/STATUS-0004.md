@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-0402](../tasks/AR-0402-external-code-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md) |
+| [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md) |
+| [AR-0404](../tasks/AR-0404-extended-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
 | [AR-0405](../tasks/AR-0405-performance-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
 | [AR-0406](../tasks/AR-0406-evolving-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
 | [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) |
@@ -548,9 +551,3 @@
 | [AR-1564](../tasks/AR-1564.md) | [AR-1562](../tasks/AR-1562.md), [AR-1563](../tasks/AR-1563.md) | [AR-1566](../tasks/AR-1566.md), [AR-1568](../tasks/AR-1568.md), [AR-1588](../tasks/AR-1588.md), [AR-1599](../tasks/AR-1599.md), [AR-1631](../tasks/AR-1631.md), [AR-1653](../tasks/AR-1653.md) |
 | [AR-1565](../tasks/AR-1565.md) | None | None |
 | [AR-1566](../tasks/AR-1566.md) | [AR-1564](../tasks/AR-1564.md) | None |
-| [AR-1567](../tasks/AR-1567.md) | [AR-1563](../tasks/AR-1563.md) | [AR-1572](../tasks/AR-1572.md), [AR-1634](../tasks/AR-1634.md) |
-| [AR-1568](../tasks/AR-1568.md) | [AR-1564](../tasks/AR-1564.md) | [AR-1569](../tasks/AR-1569.md), [AR-1570](../tasks/AR-1570.md), [AR-1588](../tasks/AR-1588.md), [AR-1599](../tasks/AR-1599.md) |
-| [AR-1569](../tasks/AR-1569.md) | [AR-1568](../tasks/AR-1568.md) | None |
-| [AR-1570](../tasks/AR-1570.md) | [AR-1568](../tasks/AR-1568.md) | [AR-1571](../tasks/AR-1571.md), [AR-1573](../tasks/AR-1573.md) |
-| [AR-1571](../tasks/AR-1571.md) | [AR-1570](../tasks/AR-1570.md) | None |
-| [AR-1572](../tasks/AR-1572.md) | [AR-1567](../tasks/AR-1567.md) | None |

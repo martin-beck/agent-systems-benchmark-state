@@ -1616,6 +1616,20 @@
 | Summary | Qualify the complete ASB command tree for human output, help, list discovery, and selection round trips. |
 | Next action | Run end-to-end CLI UX qualification against the complete contract and close contract gaps. |
 
+### AR-1810 — Complete cli2key Standard CLI Integration
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the missing ordinary-ASB CLI bootstrap so cli2key can execute live Codex-agent workloads and sweeps. |
+| Next action | Replace the ordinary CLI&#x27;s cli2key rejection with runtime-owned bootstrap and prove real run and sweep execution. |
+
 ### AR-1811 — Development/formal workflow separation
 
 | Field | Value |
@@ -2501,6 +2515,7 @@ flowchart LR
         AR_1807["AR-1807 - Planned"]:::status_planned
         AR_1808["AR-1808 - Planned"]:::status_planned
         AR_1809["AR-1809 - Planned"]:::status_planned
+        AR_1810["AR-1810 - Planned"]:::status_planned
         AR_1811["AR-1811 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
@@ -4372,12 +4387,15 @@ flowchart LR
     AR_1729 --> AR_1731
     AR_1729 --> AR_1797
     AR_1729 --> AR_1799
+    AR_1729 --> AR_1810
     AR_1730 --> AR_1731
     AR_1731 --> AR_1732
     AR_1731 --> AR_1797
     AR_1731 --> AR_1799
+    AR_1731 --> AR_1810
     AR_1732 --> AR_1733
     AR_1732 --> AR_1797
+    AR_1732 --> AR_1810
     AR_1733 --> AR_1736
     AR_1733 --> AR_1754
     AR_1733 --> AR_1785
@@ -4387,6 +4405,7 @@ flowchart LR
     AR_1733 --> AR_1789
     AR_1733 --> AR_1790
     AR_1733 --> AR_1797
+    AR_1733 --> AR_1810
     AR_1734 --> AR_1737
     AR_1734 --> AR_1738
     AR_1737 --> AR_1751
@@ -4451,6 +4470,7 @@ flowchart LR
     AR_1778 --> AR_1798
     AR_1779 --> AR_1780
     AR_1779 --> AR_1797
+    AR_1779 --> AR_1810
     AR_1781 --> AR_1782
     AR_1781 --> AR_1794
     AR_1782 --> AR_1783
@@ -4469,6 +4489,8 @@ flowchart LR
     AR_1790 --> AR_1789
     AR_1790 --> AR_1791
     AR_1791 --> AR_1792
+    AR_1797 --> AR_1810
+    AR_1799 --> AR_1810
     AR_1805 --> AR_1806
     AR_1805 --> AR_1807
     AR_1805 --> AR_1808
@@ -4524,6 +4546,3 @@ flowchart LR
 | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
 | [AR-0320](../tasks/AR-0320-provider-credential-integration.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
 | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md), [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0705](../tasks/AR-0705-native-debian-capacity.md), [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1004](../tasks/AR-1004-reliability-fairness.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) |
-| [AR-0402](../tasks/AR-0402-external-code-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md) |
-| [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md) |
-| [AR-0404](../tasks/AR-0404-extended-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
