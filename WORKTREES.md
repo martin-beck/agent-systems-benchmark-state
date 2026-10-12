@@ -63,7 +63,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1800-controlled-local-workload-acquisition-backend` | `feature/ar-1800-controlled-local-workload-acquisition-backend` | `b72da478631f` | 0 | behind 7, ahead 3 |
 | `agent-systems-benchmark-ar-1801-tool-discovery-cargo-fixture-isolation` | `feature/ar-1801-tool-discovery-cargo-fixture-isolation` | `c20bb7bb4448` | 0 | behind 9, ahead 1 |
 | `agent-systems-benchmark-ar-1802-controlled-workload-matrix-and-fixture-authority` | `feature/ar-1802-controlled-workload-matrix-and-fixture-authority` | `45e6513adfeb` | 0 | behind 0, ahead 2 |
-| `agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair` | `feature/ar-1803-deterministic-parallel-fixture-repair` | `fd55d357c68e` | 0 | behind 7, ahead 15 |
+| `agent-systems-benchmark-ar-1803-deterministic-parallel-fixture-repair` | `feature/ar-1803-deterministic-parallel-fixture-repair` | `9490e3f6b63e` | 0 | behind 7, ahead 16 |
 | `agent-systems-benchmark-ar-1804-cross-module-fixture-semaphore` | `main` | `6761a6d0bcd5` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 727, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
