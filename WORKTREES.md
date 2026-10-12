@@ -53,8 +53,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 720, ahead 136 |
 | `agent-systems-benchmark-ar-1652-record-replay` | `repair/ar-1652-record-replay` | `7ce484612db0` | 0 | behind 29, ahead 0 |
 | `agent-systems-benchmark-ar-1686` | `qualification/ar-1686` | `f37d3a3ef839` | 0 | behind 13, ahead 0 |
-| `agent-systems-benchmark-ar-1772-unified-step-progress-reporter` | `feature/ar-1772-unified-step-progress-reporter` | `10e336655e39` | 3 | behind 2, ahead 1 |
-| changed files | - | - | - | `crates/asb-cli/src/human.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/step_progress.rs` |
+| `agent-systems-benchmark-ar-1772-unified-step-progress-reporter` | `feature/ar-1772-unified-step-progress-reporter` | `f9ad19ff24c6` | 0 | behind 2, ahead 1 |
 | `agent-systems-benchmark-ar-1775-configurable-output-router-and-levels` | `feature/ar-1775-configurable-output-router-and-levels` | `d7c08c106e52` | 0 | behind 10, ahead 2 |
 | `agent-systems-benchmark-ar-1779-default-usable-tool-install-command` | `feature/ar-1779-default-usable-tool-install-command` | `daf2d3ee9750` | 0 | behind 29, ahead 4 |
 | `agent-systems-benchmark-ar-1780-installed-tool-workload-execution-qualification` | `feature/ar-1780-installed-tool-workload-execution-qualification` | `ca494d506135` | 0 | behind 0, ahead 0 |
