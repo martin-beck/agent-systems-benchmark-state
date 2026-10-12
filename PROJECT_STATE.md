@@ -29,20 +29,21 @@ Generated from local Git and GitHub. Do not edit.
 | #577 | `repair/ar-1794-protected-main-merge-path@198bf86975f6` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: certify AR-1781 merge provenance |
 | #581 | `dependabot/github_actions/taiki-e/install-action-2.87.24@83c2c6635789` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): Bump taiki-e/install-action from 2.87.14 to 2.87.25 |
 | #612 | `feature/ar-1774-status-progress-completeness-ci@ad7f1166afc5` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce status and progress completeness |
+| #613 | `repair/ar-1799-tui-install-rustup-invalid@63ba8e797354` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): allow development rustup permission findings during binding |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38256173454 | `63ba8e797354` | pull_request | Repository quality | in_progress:- |
+| 38256173316 | `63ba8e797354` | pull_request | Credential-free benchmark path | completed:success |
+| 38256173297 | `63ba8e797354` | pull_request | Huawei MIT source headers | completed:success |
+| 38256173293 | `63ba8e797354` | pull_request | Hosted portability and native qualification | completed:success |
+| 38256173284 | `63ba8e797354` | pull_request | Fault assurance | completed:success |
+| 38256173245 | `63ba8e797354` | pull_request | Development formal assurance | completed:success |
+| 38256173228 | `63ba8e797354` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38256173220 | `63ba8e797354` | pull_request | Portable protected-main provenance | completed:success |
+| 38256173218 | `63ba8e797354` | pull_request | Rust verification | in_progress:- |
+| 38256173216 | `63ba8e797354` | pull_request | Cross-repository development broker qualification | completed:success |
+| 38256173212 | `63ba8e797354` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38251122396 | `ad7f1166afc5` | pull_request | Credential-free benchmark path | completed:success |
-| 38251122364 | `ad7f1166afc5` | pull_request | Cross-repository development broker qualification | completed:success |
-| 38251122361 | `ad7f1166afc5` | pull_request | Emulated aarch64 portability | completed:success |
-| 38251122357 | `ad7f1166afc5` | pull_request | Portable protected-main provenance | completed:success |
-| 38251122352 | `ad7f1166afc5` | pull_request | Huawei MIT source headers | completed:success |
-| 38251122350 | `ad7f1166afc5` | pull_request | Fault assurance | completed:success |
-| 38251122338 | `ad7f1166afc5` | pull_request | Repository quality | completed:success |
-| 38251122336 | `ad7f1166afc5` | pull_request | Hosted portability and native qualification | completed:success |
-| 38251122325 | `ad7f1166afc5` | pull_request | Development formal assurance | completed:success |
-| 38251122324 | `ad7f1166afc5` | pull_request | Rust verification | completed:success |
-| 38251122318 | `ad7f1166afc5` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38250836110 | `eaa490f2fc88` | pull_request | Agent Workflow Quality shadow | completed:success |

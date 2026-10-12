@@ -11,7 +11,7 @@
   "next_action": "Reproduce the installed-entrypoint failure on the exact current ASB main head, then repair the failing rustup/rustc path and add regression coverage.",
   "observed_branch": "repair/ar-1799-tui-install-rustup-invalid",
   "observed_dirty": 0,
-  "observed_head": "a0a978f134959943c54362e84032a6232c606105",
+  "observed_head": "63ba8e7973545f65bd8dda56f3aa24d9d339bb16",
   "owner": "codex-ar1799-tui-install-rustup-invalid-20261012",
   "plan": "../plans/AR-1799-tui-install-rustup-invalid-repair.md",
   "priority": "P0",
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the remaining current-main asb tui install trusted_tool_invalid failure for development rustup/rustc layouts and qualify the real installed entrypoint.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Repair asb tui install rustup/rustc trusted-tool rejection",
-  "updated_at": "2026-10-12T13:25:41+00:00",
+  "updated_at": "2026-10-12T13:36:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1799-tui-install-rustup-invalid"
 }
 ---
