@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1851-ar1793-v074-contracts",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T20:57:41+00:00",
   "depends_on": [],
   "id": "AR-1851",
   "next_action": "Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification.",
-  "owner": "",
+  "owner": "codex-ar1851-publication-recovery-luna2",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1851.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T19:18:48+00:00",
+  "updated_at": "2026-10-13T20:37:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -144,3 +144,5 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
   #146 remains open at 56371a22adcc37fe36ddc6d44e4ec6d74859af5e; PR #148 remains open at
   a7ea458375ebc6f690a09f6010a7412b725ee198. Leave ownerless/open; rerun exact-head review and CI
   only after AR-1852 and AR-1853 repairs merge or equivalent durable resolution.
+
+- 2026-10-13T20:37:41+00:00: Claimed by codex-ar1851-publication-recovery-luna2.
