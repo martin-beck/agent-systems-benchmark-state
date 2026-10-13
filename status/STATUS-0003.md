@@ -2086,7 +2086,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. |
-| Next action | Record formal portable-smoke and full qualification evidence, obtain independent review and exact-head CI, then merge and watch post-merge assurance. |
+| Next action | Obtain independent review and exact-head CI for signed product repair; then merge and watch post-merge assurance before release. |
 
 
 ## Dependency graph

@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T18:56:43+00:00",
   "depends_on": [],
   "id": "AR-1860",
-  "next_action": "Record formal portable-smoke and full qualification evidence, obtain independent review and exact-head CI, then merge and watch post-merge assurance.",
+  "next_action": "Obtain independent review and exact-head CI for signed product repair; then merge and watch post-merge assurance before release.",
   "owner": "ar1857-coverage-repair-luna",
   "plan": "../plans/AR-1860-formal-work-root-adoption.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T17:03:09+00:00",
+  "updated_at": "2026-10-13T17:03:22+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1860-formal-work-root"
 }
 ---
@@ -67,3 +67,8 @@ coverage floor and all formal gates.
 
 - 2026-10-13T17:03:09+00:00: Recorded command exit 0; command argv SHA-256
   022ea8a842fe1c1186950e1af2ff14e380232faa8796092449d4926946f69644.
+
+- 2026-10-13T17:03:22+00:00: Full uv offline suite passed 1638/1638 in 159.067s at exact product
+  HEAD 1f3c7f65ca. Initial system interpreter run failed only from missing jsonschema; no product
+  failure. Portable-smoke formal passed; full hosted formal remains environment-gated by systemd-run
+  admission.
