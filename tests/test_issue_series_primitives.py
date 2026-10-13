@@ -10,6 +10,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from typing import cast
 
 from tools.issue_series import IssueSeriesValidationError, parse_manifest
 from tools.issue_series_plan import IssueSeriesPlanError, plan_issue_series
@@ -57,48 +58,70 @@ class IssueSeriesPrimitiveTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "series.json"
             path.write_text(json.dumps(manifest()), encoding="utf-8")
-            kwargs = {
-                "expected_product_slug": "https://github.com/owner/project",
-                "existing_task_ids": [],
-                "existing_issue_series_identities": [],
-                "current_state_digest": DIGEST,
-            }
-            receipt = json.loads(plan_issue_series(path, **kwargs))
+            receipt = json.loads(
+                plan_issue_series(
+                    path,
+                    expected_product_slug="https://github.com/owner/project",
+                    existing_task_ids=[],
+                    existing_issue_series_identities=[],
+                    current_state_digest=DIGEST,
+                )
+            )
             self.assertEqual(REPOSITORY, receipt["series_identity"]["repository"])
             self.assertEqual(["AR-9000", "AR-9001"], receipt["task_ids"])
-            cases = (
-                ("slug", {**kwargs, "expected_product_slug": "not a slug"}),
-                ("digest", {**kwargs, "current_state_digest": "bad"}),
-                ("task", {**kwargs, "existing_task_ids": ["AR-9000"]}),
+            cases: tuple[tuple[str, str, list[str], list[object], str], ...] = (
+                ("slug", "not a slug", [], [], DIGEST),
+                ("digest", "https://github.com/owner/project", [], [], "bad"),
+                ("task", "https://github.com/owner/project", ["AR-9000"], [], DIGEST),
                 (
                     "legacy-identity",
-                    {
-                        **kwargs,
-                        "existing_issue_series_identities": [
-                            {"repository": "owner/project", "issue_number": 7}
-                        ],
-                    },
+                    "https://github.com/owner/project",
+                    [],
+                    [{"repository": "owner/project", "issue_number": 7}],
+                    DIGEST,
                 ),
                 (
                     "nested-identity",
-                    {
-                        **kwargs,
-                        "existing_issue_series_identities": [
-                            {"repository": REPOSITORY, "issue": {"number": 7}}
-                        ],
-                    },
+                    "https://github.com/owner/project",
+                    [],
+                    [{"repository": REPOSITORY, "issue": {"number": 7}}],
+                    DIGEST,
                 ),
             )
-            for label, values in cases:
+            for label, slug, task_ids, identities, digest in cases:
                 with self.subTest(label=label), self.assertRaises(IssueSeriesPlanError):
-                    plan_issue_series(path, **values)
+                    plan_issue_series(
+                        path,
+                        expected_product_slug=slug,
+                        existing_task_ids=task_ids,
+                        existing_issue_series_identities=identities,
+                        current_state_digest=digest,
+                    )
             with self.assertRaisesRegex(IssueSeriesPlanError, "does not exist"):
-                plan_issue_series(path.with_name("missing.json"), **kwargs)
+                plan_issue_series(
+                    path.with_name("missing.json"),
+                    expected_product_slug="https://github.com/owner/project",
+                    existing_task_ids=[],
+                    existing_issue_series_identities=[],
+                    current_state_digest=DIGEST,
+                )
             with self.assertRaisesRegex(IssueSeriesPlanError, "not a file"):
-                plan_issue_series(Path(directory), **kwargs)
+                plan_issue_series(
+                    Path(directory),
+                    expected_product_slug="https://github.com/owner/project",
+                    existing_task_ids=[],
+                    existing_issue_series_identities=[],
+                    current_state_digest=DIGEST,
+                )
             path.write_text("not json", encoding="utf-8")
             with self.assertRaisesRegex(IssueSeriesPlanError, "not valid JSON"):
-                plan_issue_series(path, **kwargs)
+                plan_issue_series(
+                    path,
+                    expected_product_slug="https://github.com/owner/project",
+                    existing_task_ids=[],
+                    existing_issue_series_identities=[],
+                    current_state_digest=DIGEST,
+                )
 
     def test_manifest_accepts_normalized_tree(self) -> None:
         value = parse_manifest(manifest())
@@ -120,20 +143,25 @@ class IssueSeriesPrimitiveTests(unittest.TestCase):
         bad_url["issue"] = {"number": 7, "url": "https://github.com/owner/project/issues/8"}
         cases.append(("url", bad_url))
         private = manifest()
-        private["members"] = copy.deepcopy(private["members"])
-        private["members"][0]["scope"] = "/tmp/private"  # noqa: S108 - hostile input
+        private_members = cast(list[dict[str, object]], copy.deepcopy(private["members"]))
+        private["members"] = private_members
+        private_members[0]["scope"] = "/tmp/private"  # noqa: S108 - hostile input
         cases.append(("private", private))
         title = manifest()
-        title["members"] = copy.deepcopy(title["members"])
-        title["members"][0]["short_title"] = "one two three four five"  # type: ignore[index]
+        title_members = cast(list[dict[str, object]], copy.deepcopy(title["members"]))
+        title["members"] = title_members
+        title_members[0]["short_title"] = "one two three four five"
         cases.append(("title", title))
         cycle = manifest()
-        cycle["members"] = copy.deepcopy(cycle["members"])
-        cycle["members"][0]["depends_on"] = [{"id": "AR-9001", "rationale": "cycle"}]  # type: ignore[index]
+        cycle_members = cast(list[dict[str, object]], copy.deepcopy(cycle["members"]))
+        cycle["members"] = cycle_members
+        cycle_members[0]["depends_on"] = [{"id": "AR-9001", "rationale": "cycle"}]
         cases.append(("cycle", cycle))
         duplicate = manifest()
-        duplicate["members"] = copy.deepcopy(duplicate["members"])
-        duplicate["members"][1]["depends_on"] *= 2  # type: ignore[index]
+        duplicate_members = cast(list[dict[str, object]], copy.deepcopy(duplicate["members"]))
+        duplicate["members"] = duplicate_members
+        dependencies = cast(list[object], duplicate_members[1]["depends_on"])
+        duplicate_members[1]["depends_on"] = dependencies * 2
         cases.append(("duplicate", duplicate))
         unordered = manifest()
         unordered["finalizer"] = "AR-9000"
@@ -144,8 +172,9 @@ class IssueSeriesPrimitiveTests(unittest.TestCase):
 
     def test_publication_escapes_and_normalizes_transport_boundaries(self) -> None:
         value = manifest()
-        value["members"] = copy.deepcopy(value["members"])
-        value["members"][0]["short_title"] = "escape | [title]"  # type: ignore[index]
+        members = cast(list[dict[str, object]], copy.deepcopy(value["members"]))
+        value["members"] = members
+        members[0]["short_title"] = "escape | [title]"
         parsed = parse_manifest(value)
         key = publication_key(REPOSITORY, 7, DIGEST)
         rendered = render_publication(parsed, DIGEST)
@@ -195,14 +224,14 @@ class IssueSeriesPrimitiveTests(unittest.TestCase):
         self.assertEqual(("published", "42"), (published.status, published.comment_id))
         for repository, number, digest in (
             ("owner/project", 7, DIGEST),
-            (REPOSITORY, True, DIGEST),
+            (REPOSITORY, cast(int, True), DIGEST),
             (REPOSITORY, 7, "bad"),
         ):
             with (
                 self.subTest(repository=repository),
                 self.assertRaises(IssueSeriesPublicationError),
             ):
-                publication_key(repository, number, digest)  # type: ignore[arg-type]
+                publication_key(repository, number, digest)
 
 
 if __name__ == "__main__":
