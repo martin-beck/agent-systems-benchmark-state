@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "2026-10-14T00:08:49+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "execution_envelope": {
     "command_classes": {
@@ -79,7 +79,7 @@
   },
   "id": "AR-1852",
   "next_action": "No safe v0.7.8 rebase: v0.7.8 changes lifecycle role admission from strict to advisory and replaces the v0.7.4 lock/digest wholesale. Preserve PR #148 head 7b46c6b076 unupdated; wait for a Coordinator release that retains strict role authorization or explicitly re-scope AR-1852, then rerun independent review and exact-head CI.",
-  "owner": "ar1852-requalify-luna4",
+  "owner": "",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "retry_circuit": {
@@ -149,11 +149,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T22:10:03+00:00",
+  "updated_at": "2026-10-13T22:10:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -546,3 +546,14 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T22:10:03+00:00: Recorded command exit 1; command argv SHA-256
   64d1ed39bd46b482a083d42a59e0887b52ff2e0b66c78c08d3655469eaae9fcd.
+
+- 2026-10-13T22:10:27+00:00: Requalification stopped: Coordinator b46d2b3 adoption and vendor
+  verification had previously passed; approved staged Cargo 1.93.0 mount is available but irrelevant
+  to this Python gate. Bound vendor probe failed before startup with exact stderr: bwrap: execvp
+  /srv/data/projects/agent-systems-benchmark-state-ar-1852/.venv/bin/python: No such file or
+  directory. System-Python focused probe failed before collection with exact stderr: ImportError:
+  Start directory is not importable:
+  '/srv/data/projects/agent-systems-benchmark-state-ar-1852/tests'. Both executions then hit the
+  existing generated tools/__pycache__/handoffctl.cpython-312.pyc >200 KiB reconciliation guard. No
+  source, vendor, PR, review, or merge changes. Repair approved runner root/venv/identity mounts
+  through authorized workflow, then rerun exact-head focused/full gates.
