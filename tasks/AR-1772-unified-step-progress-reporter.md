@@ -17,19 +17,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:fb4285c78143d1ab188cf6df66de051f2b72e15ba6a29364d48201daaad0c6ca",
+    "evidence_ref": "quality/AR-1820-postmerge-receipt.json",
     "spec_ref": "specs/AR-1772.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1772.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-13T19:37:45+00:00",
+  "updated_at": "2026-10-13T19:38:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -64,3 +64,9 @@ allowed outside this helper.
   evidence are ready for reconciliation.
 
 - 2026-10-13T19:37:45+00:00: Claimed by ar1772-progress-luna.
+
+- 2026-10-13T19:38:46+00:00: Existing AR-1772 implementation is present in reviewed PR #602 topic
+  tree; deterministic reporter tests cover delayed lifecycle, known/unknown estimates, clipping,
+  cancellation and plain redirected output. AR-1820 independently requalified the exact reviewed
+  tree with signed-DCO local integration and ten exact-head post-merge workflows terminal-success;
+  receipt preserves the historical PR #602 failures without weakening gates.
