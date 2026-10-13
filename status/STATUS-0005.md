@@ -309,13 +309,12 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1826](../tasks/AR-1826-explicit-setup-config-contract.md): Define explicit setup configuration and plan-binding contract | ar1826_setup_contract_luna | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. | State metadata repair is required before product requalification: legacy worktree_key is populated while branch is empty. Coordinator repair must restore the declared branch/worktree binding without changing owner/evidence, then rebuild reviewed e9d95999 onto current main d0e6a28 and rerun exact-head review/CI. |
 | P0 | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md): Coordinator v0.5.3 adoption | ar1841-v053-adoption-luna | Adopt Coordinator v0.5.3 with partial legacy worktree binding. | External blocker: repair/restart hosted formal verification runner permissions, then rerun PR #142 exact-head checks; do not merge until formal and coordination checks pass. |
-| P0 | [AR-1843](../tasks/AR-1843-hosted-formal-workspace-permission-repair.md): Hosted formal workspace permission repair | ar1843-formal-workspace-repair-luna | Repair hosted formal TLC workspace permissions for the ASB state runner. | Verify PR #143 remains exact head 7bb995e65d, merge through handoffctl, then watch exact-main post-merge assurance workflows to terminal success. |
 
 ### Open (2)
 
@@ -520,7 +519,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (607)
+### Done (608)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -648,3 +647,4 @@
 | P0 | [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md): Authenticated chain enrollment | Unclaimed | Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance. | Run full applicable gates, independently review the chain-enrollment boundary, then publish a clean exact-head PR and monitor all required checks. |
 | P0 | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | Unclaimed | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | PR #269 merged as aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. |
 | P0 | [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md): Runtime-owned dispatch consumer | Unclaimed | Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers. | PR #270 merged as 0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. |
+| P0 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Unclaimed | Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening. | No development action remains. Preserve the exact-main local/mock and strict-replay dispatch receipt; deployment-owned live-provider materialization is optional future hardening. |

@@ -1840,11 +1840,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1843-formal-workspace-repair-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair hosted formal TLC workspace permissions for the ASB state runner. |
@@ -2806,7 +2806,7 @@ flowchart LR
         AR_1840["AR-1840 - Done"]:::status_done
         AR_1841["AR-1841 - In progress"]:::status_in_progress
         AR_1842["AR-1842 - Planned"]:::status_planned
-        AR_1843["AR-1843 - In progress"]:::status_in_progress
+        AR_1843["AR-1843 - Done"]:::status_done
         AR_1844["AR-1844 - Planned"]:::status_planned
         AR_1845["AR-1845 - Planned"]:::status_planned
         AR_1846["AR-1846 - Planned"]:::status_planned

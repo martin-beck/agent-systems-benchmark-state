@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1843-formal-workspace-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T12:13:13+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1843",
   "next_action": "Verify PR #143 remains exact head 7bb995e65d, merge through handoffctl, then watch exact-main post-merge assurance workflows to terminal success.",
-  "owner": "ar1843-formal-workspace-repair-luna",
+  "owner": "",
   "plan": "../plans/AR-1843-hosted-formal-workspace-permission-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1843.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair hosted formal TLC workspace permissions for the ASB state runner.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Hosted formal workspace permission repair",
-  "updated_at": "2026-10-13T10:32:16+00:00",
+  "updated_at": "2026-10-13T10:32:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1843-formal-workspace-repair"
 }
 ---
@@ -176,3 +176,11 @@ formal assertion, timeout, or resource-bound gate may be removed or weakened.
 - 2026-10-13T10:32:16+00:00: Acceptance evidence binds the independent review artifact to reviewed
   head 7bb995e65d and merge commit 6a59b72023; exact-head PR formal run 38382701566 and exact-main
   formal run 38383354405 succeeded, with exact-main coordination run 38383393269 succeeded.
+
+- 2026-10-13T10:32:23+00:00: Merged PR #143 as exact reviewed merge commit
+  6a59b72023f50d53d9c92aa0b4e7f11ddba16558 from reviewed head
+  7bb995e65deada5f39b2e14cda2695719ed487bf. Independent review artifact digest
+  sha256:8f3fc50714712d406744ff3eb62c43dc600ebef8385a5331c19fda7be3cbe6f7. PR checks green,
+  including formal run 38382701566. Exact-main post-merge formal run 38383354405 succeeded; latest
+  exact-main coordination run 38383393269 succeeded. Earlier coordination cancellations were
+  superseded by the later main push and are retained as diagnostic context.
