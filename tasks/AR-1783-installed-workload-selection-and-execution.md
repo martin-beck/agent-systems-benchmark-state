@@ -38,17 +38,7 @@
     ],
     "hold": null,
     "recoveries": [],
-    "reservations": [
-      {
-        "expires_at": "2026-10-13T21:00:17+00:00",
-        "id": "12702cea82a54c60804ddff8cab62c88",
-        "identity": "sha256:047357179be77cf95ca05174906ce25ff264400271bbecb1b4bd0786b4506fdf",
-        "progress_digest": "sha256:91f3236fb2308e831080f5a2895e239eab36947398c76808d5f38b096fa60ae5",
-        "reserved_at": "2026-10-13T20:29:17+00:00",
-        "task_revision": 473,
-        "window": 3
-      }
-    ],
+    "reservations": [],
     "schema_version": 1
   },
   "schema_version": 1,
@@ -64,9 +54,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift.",
-  "task_revision": 474,
+  "task_revision": 475,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-13T20:29:17+00:00",
+  "updated_at": "2026-10-13T20:29:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -1249,3 +1239,5 @@ the suite from this end-to-end path.
 - 2026-10-13T20:29:10+00:00: Claimed by ar1783-workload-selection-luna-20261013.
 
 - 2026-10-13T20:29:17+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
+
+- 2026-10-13T20:29:20+00:00: Released retry circuit launch slot.
