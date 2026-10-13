@@ -149,7 +149,7 @@
       "source": "formal/handoffctl/slices.py"
     },
     "formal/handoffctl/verify.sh": {
-      "sha256": "14c281385a9c84cf6a57ee17db59441b022207b1660c934858f71f47c3a445f4",
+      "sha256": "3f393389d72b75162128a2d7ca849e73c9f3d798c27098b6061f920b32b71675",
       "source": "formal/handoffctl/verify.sh"
     },
     "formal/oracle/OracleInteractionGates.cfg": {

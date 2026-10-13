@@ -68,6 +68,10 @@ readonly TLA_VERSION=1.7.4
 readonly TLA_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88
 readonly SPEC_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 readonly WORK_ROOT="${TLC_WORK_ROOT:-${TMPDIR:-/tmp}/agent-workflow-coordinator-tlc}"
+if [[ "${WORK_ROOT}" != /* ]]; then
+    echo "TLC_WORK_ROOT must be an absolute path" >&2
+    exit 64
+fi
 mkdir --mode=700 --parents "${WORK_ROOT}"
 readonly TEMP_DIR="$(mktemp -d "${WORK_ROOT}/handoffctl-${TIER}.XXXXXX")"
 readonly SLICE_DIR="${SPEC_DIR}/.tlc-slices-$$"
