@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1849-formal-admission-env-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T21:31:30+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1849",
   "next_action": "Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94% versus required 95%. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication.",
-  "owner": "ar1849-formal-admission-env-luna2",
+  "owner": "",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1849.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T20:33:33+00:00",
+  "updated_at": "2026-10-13T20:33:39+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -466,3 +466,11 @@ retain absolute-path and privacy boundaries, and add regression coverage.
   95% floor. No narrow justified repair; AR-1857 owns coverage seam (blocked with same conclusion),
   AR-1859 owns three formal work-root failures. No product mutation, threshold/gate weakening,
   review, CI, merge, or publication.
+
+- 2026-10-13T20:33:39+00:00: Released ownerless after bounded audit. PR #145 remains closed/unmerged
+  at 5f30c0c92f18ae6043ceedf454c8af43fc8b48f7. Coverage is exactly 94.6951% (19,785 statements; 822
+  missed; 7,322 branches; 588 partial), below unchanged 95% floor, despite 1,636/1,636 tests and
+  formal portable-smoke/resource env success. AR-1857 owns independent coverage repair and concluded
+  no narrow justified test-only repair; AR-1859 owns relative TLC work-root failures
+  (ClassNotFoundException rc1 vs expected rc64). No product mutation or gate weakening; preserve
+  successor boundaries.

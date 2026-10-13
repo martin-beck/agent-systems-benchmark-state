@@ -1924,11 +1924,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1849-formal-admission-env-luna2 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair workflow-wide private TLC admission environment for formal CI. |
@@ -3036,7 +3036,7 @@ flowchart LR
         AR_1846["AR-1846 - Planned"]:::status_planned
         AR_1847["AR-1847 - Planned"]:::status_planned
         AR_1848["AR-1848 - Planned"]:::status_planned
-        AR_1849["AR-1849 - In progress"]:::status_in_progress
+        AR_1849["AR-1849 - Open"]:::status_open
         AR_1850["AR-1850 - Done"]:::status_done
         AR_1851["AR-1851 - Open"]:::status_open
         AR_1852["AR-1852 - Open"]:::status_open
@@ -5034,3 +5034,5 @@ flowchart LR
     AR_1829 --> AR_1832
     AR_1830 --> AR_1831
     AR_1830 --> AR_1832
+    AR_1831 --> AR_1832
+    AR_1832 --> AR_1842
