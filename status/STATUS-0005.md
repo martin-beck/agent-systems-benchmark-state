@@ -315,7 +315,7 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1826](../tasks/AR-1826-explicit-setup-config-contract.md): Define explicit setup configuration and plan-binding contract | ar1826_setup_contract_luna | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. | State metadata repair is required before product requalification: legacy worktree_key is populated while branch is empty. Coordinator repair must restore the declared branch/worktree binding without changing owner/evidence, then rebuild reviewed e9d95999 onto current main d0e6a28 and rerun exact-head review/CI. |
 | P0 | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md): Coordinator v0.5.3 adoption | ar1841-v053-adoption-luna | Adopt Coordinator v0.5.3 with partial legacy worktree binding. | External blocker: repair/restart hosted formal verification runner permissions, then rerun PR #142 exact-head checks; do not merge until formal and coordination checks pass. |
-| P0 | [AR-1843](../tasks/AR-1843-hosted-formal-workspace-permission-repair.md): Hosted formal workspace permission repair | ar1843-formal-workspace-repair-luna | Repair hosted formal TLC workspace permissions for the ASB state runner. | Wait for reviewer recheck and exact-head CI on cbc330c0f8; merge only after review and all required checks are green. |
+| P0 | [AR-1843](../tasks/AR-1843-hosted-formal-workspace-permission-repair.md): Hosted formal workspace permission repair | ar1843-formal-workspace-repair-luna | Repair hosted formal TLC workspace permissions for the ASB state runner. | Reviewer recheck 7bb995e65d; wait for all required PR checks green before any merge. |
 
 ### Open (2)
 

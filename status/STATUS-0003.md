@@ -1848,7 +1848,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair hosted formal TLC workspace permissions for the ASB state runner. |
-| Next action | Wait for reviewer recheck and exact-head CI on cbc330c0f8; merge only after review and all required checks are green. |
+| Next action | Reviewer recheck 7bb995e65d; wait for all required PR checks green before any merge. |
 
 ### AR-1844 — Extract the ASB data-model registry
 
