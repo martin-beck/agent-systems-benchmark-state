@@ -2,22 +2,22 @@
 {
   "branch": "policy/concurrent-integration-liveness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T22:31:25+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1796",
   "next_action": "Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1796-liveness2-luna",
+  "owner": "",
   "plan": "../plans/AR-1796-concurrent-integration-liveness.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-13T20:31:56+00:00",
+  "updated_at": "2026-10-13T20:32:07+00:00",
   "worktree_key": ""
 }
 ---
@@ -77,3 +77,9 @@ workers checkpoint, retry, and continue useful work during integration churn.
   78b4cf216d. No asb-0.5.2 tag or fresh full-exhaustive formal attestation is present. No
   product/release mutation is safe; next action remains reconcile current-head identity then obtain
   fresh exact-head full-exhaustive attestation.
+
+- 2026-10-13T20:32:07+00:00: Blocked by verified stale merge identity and missing current-head exact
+  formal evidence: 78b4cf216d is not ancestor of protected origin/main 870331be533; recorded 31a7e14
+  absent; no asb-0.5.2 tag; no fresh full-exhaustive attestation. Next action: reconcile identity on
+  current protected main, then obtain fresh exact-head full-exhaustive formal attestation before any
+  v0.5.2 release attempt.
