@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1857-coverage-repair",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T17:13:33+00:00",
   "depends_on": [],
   "id": "AR-1857",
   "next_action": "Analyze exact 94% coverage artifact and add narrow tests for uncovered first-party paths; preserve 95% threshold and PR #145 unmerged.",
-  "owner": "",
+  "owner": "ar1857-coverage-repair-luna",
   "plan": "../plans/AR-1857-coverage-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1857.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Restore the full-gate coverage floor after the terminal 94% observation.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Full-gate coverage floor repair",
-  "updated_at": "2026-10-13T15:13:28+00:00",
+  "updated_at": "2026-10-13T15:13:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1857-coverage-repair"
 }
 ---
@@ -62,3 +62,5 @@ modify AR-1841 or AR-1856 ownership and must not weaken formal/resource gates.
   v0.7.0-based worktree was created through handoffctl at
   asb-state-coordinator-v070-ar1857-coverage-repair; release/reclaim is needed because bind-worktree
   rejects replacing non-empty legacy metadata. No wrong-tree tests added.
+
+- 2026-10-13T15:13:33+00:00: Claimed by ar1857-coverage-repair-luna.
