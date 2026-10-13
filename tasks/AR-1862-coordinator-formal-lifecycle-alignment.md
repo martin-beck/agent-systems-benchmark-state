@@ -10,11 +10,13 @@
   "plan": "../plans/AR-1862-coordinator-formal-lifecycle-alignment.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_ref": "specs/AR-1862.json",
+  "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T18:05:27+00:00",
+  "updated_at": "2026-10-13T18:05:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -68,3 +70,5 @@ vendored Coordinator bytes or mutate AR-1826.
 
 - 2026-10-13T18:05:27+00:00: v0.7.8 resolves the upstream lifecycle inventory seam through the
   immutable vendor path.
+
+- 2026-10-13T18:05:36+00:00: Bound task spec specs/AR-1862.json revision 1.
