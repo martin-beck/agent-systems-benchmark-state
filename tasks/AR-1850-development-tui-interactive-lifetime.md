@@ -7,7 +7,7 @@
   "id": "AR-1850",
   "next_action": "Promote, claim an isolated current-main worktree, reproduce the development `asb tui` PTY lifetime failure, and repair the launcher without weakening broker admission or cleanup.",
   "observed_branch": "",
-  "observed_dirty": false,
+  "observed_dirty": 0,
   "observed_head": "",
   "owner": "",
   "plan": "../plans/AR-1850-development-tui-interactive-lifetime.md",
