@@ -2,11 +2,11 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T18:54:25+00:00",
   "depends_on": [],
   "id": "AR-1860",
   "next_action": "Promote and claim the dependency-safe repair adoption; bind the exact v0.7.0 formal worktree and qualify signed HEAD 1f3c7f65ca.",
-  "owner": "",
+  "owner": "ar1857-coverage-repair-luna",
   "plan": "../plans/AR-1860-formal-work-root-adoption.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1860.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T16:54:11+00:00",
+  "updated_at": "2026-10-13T16:54:25+00:00",
   "worktree_key": ""
 }
 ---
@@ -37,3 +37,5 @@ coverage floor and all formal gates.
 
 - 2026-10-13T16:54:11+00:00: Dependencies verified: standalone successor records the AR-1858/1859
   cycle and adopts exact signed v0.7.0 repair head.
+
+- 2026-10-13T16:54:25+00:00: Claimed by ar1857-coverage-repair-luna.

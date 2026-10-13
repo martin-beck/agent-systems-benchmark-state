@@ -2078,11 +2078,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1857-coverage-repair-luna |
 | Parent | None |
 | Children | None |
 | Summary | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. |
@@ -2991,7 +2991,7 @@ flowchart LR
         AR_1857["AR-1857 - Blocked"]:::status_blocked
         AR_1858["AR-1858 - In progress"]:::status_in_progress
         AR_1859["AR-1859 - Planned"]:::status_planned
-        AR_1860["AR-1860 - Open"]:::status_open
+        AR_1860["AR-1860 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
