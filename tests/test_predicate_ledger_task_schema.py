@@ -64,7 +64,7 @@ class PredicateLedgerTaskSchemaTests(unittest.TestCase):
 
         value = record()
         step = value["evidence_ledger"]["steps"][0]  # type: ignore[index]
-        step["evidence_digest"] = "invalid"  # type: ignore[index]
+        step["evidence_digest"] = "invalid"
         with self.assertRaises(ValidationError):
             VALIDATOR.validate(value)
 
