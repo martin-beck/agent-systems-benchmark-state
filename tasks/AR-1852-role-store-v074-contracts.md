@@ -68,6 +68,16 @@
   "execution_envelope_ref": "envelopes/AR-1852-e1.json",
   "execution_envelope_revision": 1,
   "execution_envelope_task_revision": 102,
+  "execution_reservation": {
+    "argv_digest": "564328550cefbde7e82807c5b1f9de9017b40bc5bdfef825d00dd005c8583c63",
+    "command_class": "test",
+    "envelope_digest": "sha256:2ced3a87098a532733346fc0a8ca95a633aab9d21440ac7914f4c2024b1fcda9",
+    "execution_id": "70cdf3e47fab47deabc7f75b877c6c87",
+    "expires_at": "2026-10-13T21:26:57+00:00",
+    "owner": "ar1852-requalify-luna3",
+    "scope_digest": "sha256:33ada7ff7d80a468ee3e71f7f68796b9746d5884fc81abc492a7b27c09e678de",
+    "task_revision": 108
+  },
   "execution_result": {
     "argv_digest": "2b170eed86d3665fc87bf4206e5348c00056aa1d943b8c002fc3b79a3c2ed87b",
     "classification": "EXIT",
@@ -151,9 +161,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T21:23:52+00:00",
+  "updated_at": "2026-10-13T21:23:58+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -507,3 +517,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   (/srv/data/projects/agent-systems-benchmark-state-ar-1852/.venv absent); system interpreter lacks
   jsonschema and state venv is outside candidate sandbox. No PR update/merge. Next: run full gate in
   an approved locked environment or record environmental blocker; preserve strict gates.
+
+- 2026-10-13T21:23:58+00:00: Reserved bound execution 70cdf3e47fab47deabc7f75b877c6c87.
