@@ -333,14 +333,13 @@
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md): Coordinator v0.5.3 adoption | ar1841-v053-adoption-luna | Adopt Coordinator v0.7.4 with partial legacy worktree binding. | Wait for scoped v0.7.4 compatibility repairs AR-1851 (AR-1793), AR-1852 (roles), AR-1853 (complexity), and AR-1849 (formal admission/workspace) to merge; then rebase PR #142 onto protected main, rerun candidate-focused/full gates, obtain fresh exact-head independent review and CI. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | ar1849-formal-admission-env-luna | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 | P0 | [AR-1850](../tasks/AR-1850-development-tui-interactive-lifetime.md): Repair development ASB TUI interactive lifetime | ar1850-development-tui-lifetime-luna | Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline. | Do not release AR-1850. Reconcile the protected signed merge-path provenance failure with Coordinator; retain merge commit and evidence, then run authorized repair/requalification before post-merge PTY verification. |
-| P0 | [AR-1856](../tasks/AR-1856-pr631-protected-main-identity-recovery.md): PR #631 protected-main identity recovery | ar1856-protected-main-repair-luna | Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer. | Keep AR-1856 claimed until every exact-main workflow for merge 870331be533ea1a0ba9645ddbb690df56af84935 is terminal-success; then record the post-merge receipt, accept the spec, release done, reconcile, and doctor --live. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | ar1853-complexity-luna | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
 
 ### Open (5)
@@ -550,7 +549,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (609)
+### Done (610)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -653,3 +652,4 @@
 | P0 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md): State quality-gate baseline | Unclaimed | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95&#37; coverage gate pass. |
 | P0 | [AR-1297](../tasks/AR-1297-task-schema-metadata.md): Task schema and metadata consistency | Unclaimed | Repair task schema and metadata consistency without weakening coordinator validation. | Repair every reported task schema/metadata error from durable evidence, add strict superseded_by schema coverage, regenerate views, and rerun all state gates. |
 | P0 | [AR-1298](../tasks/AR-1298-narrow-metadata-repair.md): Narrow task metadata repair scope | Unclaimed | Narrow AR-1297 metadata changes to the exact evidence-backed schema repairs. | Restore unrelated task files to pre-AR-1297 bytes, retain only evidence-backed schema-failure repairs, regenerate views, and rerun all gates. |
+| P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Unclaimed | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | No further action; protected merge 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928, all seven exact-main workflows, signature/DCO, and merge-tree policy are verified. |

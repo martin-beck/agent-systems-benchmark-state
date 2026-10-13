@@ -2022,11 +2022,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1856-protected-main-repair-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer. |
@@ -2931,7 +2931,7 @@ flowchart LR
         AR_1853["AR-1853 - In progress"]:::status_in_progress
         AR_1854["AR-1854 - Planned"]:::status_planned
         AR_1855["AR-1855 - Done"]:::status_done
-        AR_1856["AR-1856 - In progress"]:::status_in_progress
+        AR_1856["AR-1856 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
