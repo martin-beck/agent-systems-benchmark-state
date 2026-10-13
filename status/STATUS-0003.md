@@ -1932,7 +1932,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair workflow-wide private TLC admission environment for formal CI. |
-| Next action | Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI. |
+| Next action | Full unittest gate passed 1,636/1,636. Coverage report on the terminal full-run artifact is 94&#37; and fails the 95&#37; threshold; preserve PR #145 unmerged and treat this as a separate pre-existing/full-gate coverage blocker requiring scoped follow-up before publication. |
 
 ### AR-1850 — Repair development ASB TUI interactive lifetime
 

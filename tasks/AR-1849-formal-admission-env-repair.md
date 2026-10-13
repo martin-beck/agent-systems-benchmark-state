@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T17:03:44+00:00",
   "depends_on": [],
   "id": "AR-1849",
-  "next_action": "Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI.",
+  "next_action": "Full unittest gate passed 1,636/1,636. Coverage report on the terminal full-run artifact is 94% and fails the 95% threshold; preserve PR #145 unmerged and treat this as a separate pre-existing/full-gate coverage blocker requiring scoped follow-up before publication.",
   "owner": "ar1849-formal-admission-env-luna",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T15:03:44+00:00",
+  "updated_at": "2026-10-13T15:03:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -375,3 +375,10 @@ retain absolute-path and privacy boundaries, and add regression coverage.
   d31bcd2d575b2cea002c8352fc622e2a6bf51a6979348396e88bc68c9328e98c.
 
 - 2026-10-13T15:03:44+00:00: Heartbeat by ar1849-formal-admission-env-luna.
+
+- 2026-10-13T15:03:56+00:00: Terminal full gate: uv run coverage run --branch -m unittest discover
+  completed 1,636 tests in 205.914s with OK. The subsequent coverage report against
+  /tmp/asb-state-v075-strict-10.coverage measured 19,785 statements, 94% total and failed
+  --fail-under=95. A first report against the wrong worktree artifact measured 79%; that was
+  discarded as an environment/path artifact. No formal/resource-bound gate was weakened; PR #145
+  remains unmerged.
