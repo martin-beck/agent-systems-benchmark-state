@@ -1946,7 +1946,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline. |
-| Next action | Wait for credential-free rerun and all remaining required checks; if rerun repeats the unrelated fixture failure, stop merge and assign a focused repair AR. |
+| Next action | Wait for credential-free and emulated reruns plus remaining checks; do not merge unless every required check is green. If either unrelated failure repeats, stop and assign focused repair ARs. |
 
 ### AR-1851 — AR-1793 v0.7.4 compatibility contracts
 

@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T16:00:53+00:00",
   "depends_on": [],
   "id": "AR-1850",
-  "next_action": "Wait for credential-free rerun and all remaining required checks; if rerun repeats the unrelated fixture failure, stop merge and assign a focused repair AR.",
+  "next_action": "Wait for credential-free and emulated reruns plus remaining checks; do not merge unless every required check is green. If either unrelated failure repeats, stop and assign focused repair ARs.",
   "observed_branch": "feature/ar1850-development-tui-interactive-lifetime",
   "observed_dirty": 0,
   "observed_head": "671f898b6a859655952a009b9a4468e685d74013",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:11:47+00:00",
+  "updated_at": "2026-10-13T14:12:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -77,3 +77,8 @@ cross-repository qualification.
 
 - 2026-10-13T14:11:47+00:00: Recorded command exit 0; command argv SHA-256
   7d12739e865d55632d6cb72a839447b58e350416d790072224ab5786826269fb.
+
+- 2026-10-13T14:12:03+00:00: Emulated aarch64 run 38410493750 failed in unrelated
+  goose::tests::diagnostic_and_symlink_fail_closed: 220 passed, 1 failed; expected unwrap_err but
+  received typed failed outcome exit 127. No AR-1850/TUI path involved. Reran unchanged portability
+  workflow; rerun is active.
