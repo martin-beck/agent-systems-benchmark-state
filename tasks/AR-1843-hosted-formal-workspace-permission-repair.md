@@ -12,19 +12,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "mechanical",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:8f3fc50714712d406744ff3eb62c43dc600ebef8385a5331c19fda7be3cbe6f7",
+    "evidence_ref": "PR-143/post-merge-6a59b72023",
     "spec_ref": "specs/AR-1843.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1843.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair hosted formal TLC workspace permissions for the ASB state runner.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Hosted formal workspace permission repair",
-  "updated_at": "2026-10-13T10:26:39+00:00",
+  "updated_at": "2026-10-13T10:32:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1843-formal-workspace-repair"
 }
 ---
@@ -172,3 +172,7 @@ formal assertion, timeout, or resource-bound gate may be removed or weakened.
 
 - 2026-10-13T10:26:39+00:00: Recorded command exit 0; command argv SHA-256
   00e8e2594e56b72bd6cdfa793f9863351720a353274d75610dc2958b618aef55.
+
+- 2026-10-13T10:32:16+00:00: Acceptance evidence binds the independent review artifact to reviewed
+  head 7bb995e65d and merge commit 6a59b72023; exact-head PR formal run 38382701566 and exact-main
+  formal run 38383354405 succeeded, with exact-main coordination run 38383393269 succeeded.
