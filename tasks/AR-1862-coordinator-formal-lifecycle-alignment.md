@@ -4,6 +4,22 @@
   "checkpoint_commit": "b00cdba5bc5267633588dc219c53b10d34fb9dc8",
   "claim_expires": "2026-10-13T20:05:26+00:00",
   "depends_on": [],
+  "evidence_ledger": {
+    "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+    "candidate_ref": "coordinator.vendor.json",
+    "steps": [
+      {
+        "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "lifecycle-parity",
+        "recorded_task_revision": 15,
+        "status": "pass"
+      }
+    ]
+  },
   "id": "AR-1862",
   "next_action": "Bind and accept exact v0.7.8 lifecycle-alignment evidence, then release this obsolete downstream repair successor.",
   "owner": "coord-reconcile-v078-1862",
@@ -14,9 +30,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T18:05:36+00:00",
+  "updated_at": "2026-10-13T18:05:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -72,3 +88,6 @@ vendored Coordinator bytes or mutate AR-1826.
   immutable vendor path.
 
 - 2026-10-13T18:05:36+00:00: Bound task spec specs/AR-1862.json revision 1.
+
+- 2026-10-13T18:05:41+00:00: Accepted v0.7.8 manifest after immutable vendor verifier confirmed
+  formal and runtime lifecycle parity.
