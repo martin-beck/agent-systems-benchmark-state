@@ -1,8 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-    AR_1831 --> AR_1832
-    AR_1832 --> AR_1842
-    AR_1835 --> AR_1836
     AR_1842 --> AR_1844
     AR_1844 --> AR_1845
     AR_1845 --> AR_1846

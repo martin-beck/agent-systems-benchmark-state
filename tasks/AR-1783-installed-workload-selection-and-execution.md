@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "checkpoint_commit": "4902eb0d316228c9e566a9ceacfa823613a3a9f7",
-  "claim_expires": "2026-10-13T22:29:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1763",
     "AR-1764",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "bf0e54df10baef9c261d7bf993e093dc009984d1",
-  "owner": "ar1783-workload-selection-luna-20261013",
+  "owner": "",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
   "retry_circuit": {
@@ -60,11 +60,11 @@
   },
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863.",
-  "task_revision": 480,
+  "task_revision": 481,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-13T20:29:54+00:00",
+  "updated_at": "2026-10-13T20:30:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -1267,3 +1267,8 @@ the suite from this end-to-end path.
   diagnostic_legacy_catalog_compact.rs. AR-1863 is the active owning successor
   (codex-ar1863-catalog-luna); no AR-1783 product repair is warranted. Workload implementation
   remains unchanged.
+
+- 2026-10-13T20:30:05+00:00: No AR-1783 product change warranted. Exact-head diagnostic_contract on
+  bf0e54df10/current main 870331be53 fails solely on eight missing control.rs catalog identities;
+  AR-1863 owns repair. Preserve workload implementation and rerun serialized coverage after AR-1863
+  merges.
