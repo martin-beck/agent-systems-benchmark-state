@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T16:00:53+00:00",
   "depends_on": [],
   "id": "AR-1850",
-  "next_action": "Obtain independent review on PR #631, wait for exact-head required CI, merge only green, then run post-merge PTY verification.",
+  "next_action": "Wait for every required PR #631 check to finish green, verify exact head, merge through handoffctl, then run post-merge PTY validation.",
   "observed_branch": "feature/ar1850-development-tui-interactive-lifetime",
   "observed_dirty": 0,
   "observed_head": "671f898b6a859655952a009b9a4468e685d74013",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:06:45+00:00",
+  "updated_at": "2026-10-13T14:08:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -62,3 +62,7 @@ cross-repository qualification.
   https://github.com/martin-beck/agent-systems-benchmark/pull/631 from exact signed product head
   671f898b6a859655952a009b9a4468e685d74013 against current main. Push and PR creation completed
   through handoffctl run; state reconciled.
+
+- 2026-10-13T14:08:47+00:00: Independent exact-head review approved PR #631 at
+  671f898b6a859655952a009b9a4468e685d74013 with no findings; focused 5/5 passed and
+  cleanup/admission/PTY contracts preserved. Hosted checks remain in progress; merge stays gated.
