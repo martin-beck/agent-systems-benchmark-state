@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T18:01:29+00:00",
+  "claim_expires": "2026-10-13T18:04:29+00:00",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "Exact-worktree bounded split remains on test_issue_series_handoffctl.py; multiprocessing/resource-tracker hang has persisted ~2m18s under 300s bound. Heartbeat refreshed. Preserve invalid partial coverage; after timeout classify and isolate individual test or fixture.",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:04:09+00:00",
+  "updated_at": "2026-10-13T16:04:29+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -124,3 +124,5 @@ artifact. Do not lower the threshold or merge PR #145.
 - 2026-10-13T16:04:09+00:00: Recorded command timeout; classification=SUBPROCESS_TIMEOUT;
   deadline=300.0s; command argv SHA-256
   6c014e7665d80ce4ce7786da83863d150bd751d22e880a0d185024961606344d.
+
+- 2026-10-13T16:04:29+00:00: Heartbeat by ar1858-coverage-v070-luna.
