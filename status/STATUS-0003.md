@@ -2092,7 +2092,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -2100,13 +2100,13 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. |
-| Next action | Remain blocked until compatibility blockers AR-1851, AR-1852, AR-1853 and AR-1849 are independently resolved and merged; then revalidate exact AR-0111 vendor adoption. Preserve immutable eee760513969a2929512df3c822aab9d769bf057 provenance and do not mutate AR-1826. |
+| Next action | Bind and accept the exact v0.7.8 vendor, quality, and advisory-role evidence, then release the verified adoption. |
 
 ### AR-1862 — Coordinator formal lifecycle inventory alignment
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -2114,7 +2114,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption. |
-| Next action | Route recover_execution normalization to an upstream Coordinator successor; preserve immutable ASB vendor provenance and do not publish AR-1862 as an ASB implementation. |
+| Next action | Bind and accept exact v0.7.8 lifecycle-alignment evidence, then release this obsolete downstream repair successor. |
 
 
 ## Dependency graph
@@ -3020,8 +3020,8 @@ flowchart LR
         AR_1858["AR-1858 - Blocked"]:::status_blocked
         AR_1859["AR-1859 - Planned"]:::status_planned
         AR_1860["AR-1860 - Done"]:::status_done
-        AR_1861["AR-1861 - Blocked"]:::status_blocked
-        AR_1862["AR-1862 - Blocked"]:::status_blocked
+        AR_1861["AR-1861 - Done"]:::status_done
+        AR_1862["AR-1862 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -5023,3 +5023,10 @@ flowchart LR
     classDef status_future fill:#455a64,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
+```
+
+### Accessible dependency index
+
+| AR | Prerequisites | Dependents |
+| --- | --- | --- |
