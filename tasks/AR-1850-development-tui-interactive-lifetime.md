@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:19:46+00:00",
+  "updated_at": "2026-10-13T14:20:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -100,3 +100,6 @@ cross-repository qualification.
   Exact source_checkout fixture passed under 24-way concurrency, full suite, and local llvm-cov;
   hosted failure was transient Unavailable under RUST_TEST_THREADS=1. PR #631 exact head remains
   671f898b6a859655952a009b9a4468e685d74013.
+
+- 2026-10-13T14:20:06+00:00: Recorded command exit 0; command argv SHA-256
+  cad5e353d39c70721fb357ebb81245903e11ede24a2dcf5c8278b025ebe11fde.
