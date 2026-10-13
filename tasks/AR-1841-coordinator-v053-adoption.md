@@ -2,13 +2,13 @@
 {
   "branch": "codex/ar1841-v053-adoption",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T13:21:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1795"
   ],
   "id": "AR-1841",
   "next_action": "Re-vendor exact signed Coordinator v0.7.4 at 2ea256d0c0bdcb9922c88e6778a104b33c0e47da, rerun focused/full gates, then exact-head review and CI.",
-  "owner": "ar1841-v053-adoption-luna",
+  "owner": "",
   "plan": "../plans/AR-1841-coordinator-v053-adoption.md",
   "priority": "P0",
   "schema_version": 1,
@@ -22,11 +22,11 @@
   },
   "spec_ref": "specs/AR-1841.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T13:01:05+00:00",
+  "updated_at": "2026-10-13T13:36:00+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -452,3 +452,7 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
 
 - 2026-10-13T13:01:05+00:00: Recorded command exit 0; command argv SHA-256
   a0d24d4e56132ecc2873ef53e2e463dbdce9777ebd7544a06d0a8796bad1ecc7.
+
+- 2026-10-13T13:36:00+00:00: Recovered expired claim formerly owned by ar1841-v053-adoption-luna.
+  Recover expired AR-1841 adoption claim: prior owner process is no longer active; preserve
+  vendor/review evidence and leave next action pointed at v0.7.4 compatibility integration.
