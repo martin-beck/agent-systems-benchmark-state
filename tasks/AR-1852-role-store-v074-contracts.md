@@ -1,7 +1,7 @@
 ---
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "0bba7e8416cb8202df32050dc983d57cb01ecabd",
   "claim_expires": "2026-10-13T15:19:53+00:00",
   "depends_on": [],
   "id": "AR-1852",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:19:53+00:00",
+  "updated_at": "2026-10-13T13:20:08+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -53,3 +53,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   4518ea60604eb497bbfe1a1b96655d2b4ac24cd54ef23546d9c501c33719f401.
 
 - 2026-10-13T13:19:53+00:00: Heartbeat by ar1852-role-store-luna.
+
+- 2026-10-13T13:20:08+00:00: Checkpointed source commit 0bba7e8416cb8202df32050dc983d57cb01ecabd.
