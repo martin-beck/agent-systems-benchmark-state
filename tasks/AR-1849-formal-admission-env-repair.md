@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T14:41:49+00:00",
+  "updated_at": "2026-10-13T14:43:07+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -342,3 +342,6 @@ retain absolute-path and privacy boundaries, and add regression coverage.
   leave AR open for dependency-safe reassignment.
 
 - 2026-10-13T14:41:49+00:00: Claimed by ar1849-formal-admission-env-luna.
+
+- 2026-10-13T14:43:07+00:00: Recorded command exit 1; command argv SHA-256
+  116130655b6a0efd177f0dc736a79d9dfd79a5ed51a94f72c38759d8d87bcdd4.
