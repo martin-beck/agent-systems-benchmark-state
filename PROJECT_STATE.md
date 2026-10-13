@@ -38,7 +38,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38385790668 | `d0e6a28a81b4` | schedule | Fault assurance | queued:- |
+| 38385790668 | `d0e6a28a81b4` | schedule | Fault assurance | in_progress:- |
 | 38374103406 | `d0e6a28a81b4` | push | Emulated aarch64 portability | completed:success |
 | 38374103335 | `d0e6a28a81b4` | push | Credential-free benchmark path | completed:success |
 | 38374103333 | `d0e6a28a81b4` | push | Development formal assurance | completed:success |
