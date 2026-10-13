@@ -317,7 +317,7 @@
 | [AR-1838](../tasks/AR-1838-source-checkout-fixture-repair.md) | None | None |
 | [AR-1839](../tasks/AR-1839-source-fixture-cross-process-isolation.md) | None | None |
 | [AR-1840](../tasks/AR-1840-persist-ar1839-review-evidence.md) | None | None |
-| [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md) | [AR-1795](../tasks/AR-1795-coordinator-v051-adoption.md) | [AR-1861](../tasks/AR-1861-coordinator-ar0034-repair-adoption.md) |
+| [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md) | [AR-1795](../tasks/AR-1795-coordinator-v051-adoption.md) | None |
 | [AR-1842](../tasks/AR-1842-name-first-selection-resolution.md) | [AR-1832](../tasks/AR-1832-explicit-config-e2e-qualification.md) | [AR-1844](../tasks/AR-1844-data-model-registry.md) |
 | [AR-1843](../tasks/AR-1843-hosted-formal-workspace-permission-repair.md) | None | None |
 | [AR-1844](../tasks/AR-1844-data-model-registry.md) | [AR-1842](../tasks/AR-1842-name-first-selection-resolution.md) | [AR-1845](../tasks/AR-1845-entity-storage-extraction.md) |
@@ -337,7 +337,7 @@
 | [AR-1858](../tasks/AR-1858-coverage-v070.md) | None | [AR-1859](../tasks/AR-1859-formal-work-root-validation.md) |
 | [AR-1859](../tasks/AR-1859-formal-work-root-validation.md) | [AR-1858](../tasks/AR-1858-coverage-v070.md) | None |
 | [AR-1860](../tasks/AR-1860-formal-work-root-adoption.md) | None | None |
-| [AR-1861](../tasks/AR-1861-coordinator-ar0034-repair-adoption.md) | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md) | None |
+| [AR-1861](../tasks/AR-1861-coordinator-ar0034-repair-adoption.md) | None | None |
 
 ## Complete AR inventory
 
