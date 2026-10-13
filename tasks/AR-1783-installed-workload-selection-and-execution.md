@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Repair the generated diagnostic catalog in its owning AR/mainline change, then rerun exact-head serialized coverage; do not add duplicate workload/control tests or weaken the 90% floor.",
+  "next_action": "Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90% floor.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "bf0e54df10baef9c261d7bf993e093dc009984d1",
@@ -61,10 +61,10 @@
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
-  "summary": "Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift.",
-  "task_revision": 479,
+  "summary": "Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863.",
+  "task_revision": 480,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-13T20:29:46+00:00",
+  "updated_at": "2026-10-13T20:29:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -1259,3 +1259,11 @@ the suite from this end-to-end path.
 
 - 2026-10-13T20:29:46+00:00: Recorded command exit 101; command argv SHA-256
   d32df0a8f7802e39b9a6743613fff16ac35e4dddba3905aa783a204f77a7e43f.
+
+- 2026-10-13T20:29:54+00:00: Exact-head bf0e54df10 on current origin/main 870331be53: cargo test
+  --locked -p asb-cli --test diagnostic_contract ran 9 tests, 8 passed and
+  ordinary_cli_producers_are_mechanically_closed failed only for control.rs lines 9937, 11663,
+  11674, 11676, 11687, 11690, 11693, 11703 missing reviewed identities in
+  diagnostic_legacy_catalog_compact.rs. AR-1863 is the active owning successor
+  (codex-ar1863-catalog-luna); no AR-1783 product repair is warranted. Workload implementation
+  remains unchanged.

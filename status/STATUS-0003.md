@@ -1259,8 +1259,8 @@
 | Owner | ar1783-workload-selection-luna-20261013 |
 | Parent | None |
 | Children | None |
-| Summary | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift. |
-| Next action | Repair the generated diagnostic catalog in its owning AR/mainline change, then rerun exact-head serialized coverage; do not add duplicate workload/control tests or weaken the 90&#37; floor. |
+| Summary | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. |
+| Next action | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 
 ### AR-1784 — Command dependency registry and preflight
 

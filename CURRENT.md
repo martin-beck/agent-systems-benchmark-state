@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1783 — Installed workload selection and execution](tasks/AR-1783-installed-workload-selection-and-execution.md) | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift. | Repair the generated diagnostic catalog in its owning AR/mainline change, then rerun exact-head serialized coverage; do not add duplicate workload/control tests or weaken the 90% floor. | ar1783-workload-selection-luna-20261013 |
+| P0 | [AR-1783 — Installed workload selection and execution](tasks/AR-1783-installed-workload-selection-and-execution.md) | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90% floor. | ar1783-workload-selection-luna-20261013 |
 | P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded scope and record local acceptance evidence. | codex-ar1863-catalog-luna |
 
 ## Open
