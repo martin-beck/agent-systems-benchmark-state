@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1856-pr631-protected-main-identity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T16:32:14+00:00",
+  "claim_expires": "2026-10-13T16:52:03+00:00",
   "depends_on": [],
   "id": "AR-1856",
   "next_action": "Await independent exact-head review and terminal-success required checks for PR #633 at product head 6e3c57ca6550d35a5997d214479939f525e1d0e3; then merge only via tools/integration/merge_pr.py --push and verify all exact-main workflows.",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "PR #631 protected-main identity recovery",
-  "updated_at": "2026-10-13T14:40:06+00:00",
+  "updated_at": "2026-10-13T14:52:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1856-pr631-protected-main-identity"
 }
 ---
@@ -104,3 +104,5 @@ AR-1850's TUI implementation or AR-1841's Coordinator adoption/state vendor.
   main 9d2290dc with exact-tree signed-DCO empty recovery commit 6e3c57ca. Local repository policy
   passed; portable provenance check is green; remaining required CI is in progress. Canonical state
   main restored and doctor --live passes.
+
+- 2026-10-13T14:52:03+00:00: Heartbeat by ar1856-protected-main-repair-luna.
