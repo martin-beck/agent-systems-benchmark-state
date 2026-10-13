@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T16:53:50+00:00",
   "depends_on": [],
   "id": "AR-1856",
-  "next_action": "Await independent exact-head review and terminal-success required checks for PR #633 at product head 6e3c57ca6550d35a5997d214479939f525e1d0e3; then merge only via tools/integration/merge_pr.py --push and verify all exact-main workflows.",
+  "next_action": "Keep AR-1856 claimed until every exact-main workflow for merge 870331be533ea1a0ba9645ddbb690df56af84935 is terminal-success; then record the post-merge receipt, accept the spec, release done, reconcile, and doctor --live.",
   "owner": "ar1856-protected-main-repair-luna",
   "plan": "../plans/AR-1856-pr631-protected-main-identity-recovery.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "PR #631 protected-main identity recovery",
-  "updated_at": "2026-10-13T14:53:50+00:00",
+  "updated_at": "2026-10-13T14:54:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1856-pr631-protected-main-identity"
 }
 ---
@@ -120,3 +120,12 @@ AR-1850's TUI implementation or AR-1841's Coordinator adoption/state vendor.
   7f458ce7c0c5a04101c512ea701c0b922955724a369f5cedab233e8d8c3a426c.
 
 - 2026-10-13T14:53:50+00:00: Heartbeat by ar1856-protected-main-repair-luna.
+
+- 2026-10-13T14:54:27+00:00: PR #633 merged through tools/integration/merge_pr.py --push as signed
+  local merge 870331be533ea1a0ba9645ddbb690df56af84935. Exact parents:
+  9d2290dc89c9610bb32680f2100759aeba29a06e and 6e3c57ca6550d35a5997d214479939f525e1d0e3; exact
+  reviewed tree 4ea7b75853e06988313d829f892b1aa4ce115b84; committer Martin Beck
+  <martin.beck2@gmx.de>; SSH signature verified. Main runs: 38417261830, 38417261895, 38417261835,
+  38417261915, 38417261997, 38417261897, 38417261992, 38417262123, 38417261834, 38417261877.
+  Portable provenance 38417261915 and headers 38417261877 already pass; remaining runs are in
+  progress.
