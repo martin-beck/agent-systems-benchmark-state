@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1861-coordinator-adoption",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T20:03:24+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "evidence_ledger": {
     "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
@@ -42,15 +42,15 @@
   },
   "id": "AR-1861",
   "next_action": "v0.7.8 is vendor-verified at f1f42d4 and the merged full suite meets 95%; release this completed adoption.",
-  "owner": "coord-reconcile-v078",
+  "owner": "",
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1861.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
   "updated_at": "2026-10-13T18:05:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
@@ -112,3 +112,6 @@ or mutate AR-1826 until the adopted repair is verified.
 
 - 2026-10-13T18:05:14+00:00: Accepted advisory-only role policy through lifecycle and doctor
   contract coverage.
+
+- 2026-10-13T18:05:14+00:00: Completed exact v0.7.8 vendor adoption with lifecycle parity and full
+  95 percent qualification.
