@@ -351,7 +351,7 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1858](../tasks/AR-1858-coverage-v070.md): v0.7.0 coverage floor repair | ar1858-coverage-v070-luna | Repair the v0.7.0 coordinator coverage floor deficit. | AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped. |
 
-### Open (7)
+### Open (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -362,6 +362,7 @@
 | P1 | [AR-1851](../tasks/AR-1851-ar1793-v074-contracts.md): AR-1793 v0.7.4 compatibility contracts | Unclaimed | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. | Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification. |
 | P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | Unclaimed | Align role-store authorization tests with Coordinator v0.7.4. | Independent review and exact-head CI for signed product commit 7b46c6b076 atop 22da911193. Full gate remains blocked by unrelated baseline/environment failures: missing jsonschema, AR-1793 fixture drift, workflow complexity fixture drift, rollback lock timeout, and vendor/generated-state checks. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | Unclaimed | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
+| P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | Unclaimed | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (86)
 
@@ -454,7 +455,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (99)
+### Planned (98)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -553,7 +554,6 @@
 | P1 | [AR-1831](../tasks/AR-1831-explicit-config-cli-tui-docs.md): Align CLI, TUI handoff, and documentation to explicit config workflow | Unclaimed | Make every CLI, TUI handoff, help page, completion, and example teach the explicit setup-output and plan-config workflow. | Align CLI help, human output, completions, TUI handoff, examples, and migration documentation to the explicit setup-config route. |
 | P1 | [AR-1848](../tasks/AR-1848-graph-extraction-qualification.md): Qualify ASB dataflow graph extraction end to end | Unclaimed | Qualify reproducible complete ASB dataflow extraction, DOT/SVG generation, privacy, and paired documentation. | Promote after AR-1847; run clean-checkout extraction and cross-check graph artifacts against all generated registries and CLI options. |
 | P1 | [AR-1854](../tasks/AR-1854-v074-compatibility-integration.md): v0.7.4 compatibility integration qualification | Unclaimed | Integrate and qualify the Coordinator v0.7.4 compatibility repairs. | Promote only after AR-1851, AR-1852 and AR-1853 merge; combine their exact reviewed heads and run the strict/formal integration gates. |
-| P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | Unclaimed | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded scope and record local acceptance evidence. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
