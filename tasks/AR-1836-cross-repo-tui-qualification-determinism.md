@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1836-tui-qualification-determinism",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T21:38:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1835"
   ],
@@ -11,17 +11,17 @@
   "observed_branch": "repair/ar-1837-pr627-protected-main-identity",
   "observed_dirty": 0,
   "observed_head": "6ea3648e483f25179c3112b54ed7c348e141cad4",
-  "owner": "ar1836-tui-qual-luna",
+  "owner": "",
   "plan": "../plans/AR-1836-cross-repo-tui-qualification-determinism.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1836.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the deterministic cross-repository Exact TUI inherited-fd/PTY qualification seam exposed by AR-1835 without weakening its assertions.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Cross-repository Exact TUI qualification determinism",
-  "updated_at": "2026-10-13T19:39:38+00:00",
+  "updated_at": "2026-10-13T19:39:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1837-pr627-protected-main-identity"
 }
 ---
@@ -60,3 +60,9 @@ waive the check, serialize it away, or accept mutable/unverified binaries.
 - 2026-10-13T19:38:49+00:00: Bound worktree
   agent-systems-benchmark-ar-1837-pr627-protected-main-identity on branch
   repair/ar-1836-tui-qualification-determinism.
+
+- 2026-10-13T19:39:52+00:00: Exact-head PR #627 merged at protected-main 6ea3648. Hosted Exact TUI
+  rerun 115141842550 passed for head 06565d3, while 115063830052 and 115065450191 failed identically
+  at tui.rs:6127. Complete-metadata local reproduction passed; no scoped repair is justified.
+  Required second fresh hosted pass remains absent, so release ownerless as blocked without
+  weakening the gate.

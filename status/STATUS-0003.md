@@ -1742,11 +1742,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1836-tui-qual-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the deterministic cross-repository Exact TUI inherited-fd/PTY qualification seam exposed by AR-1835 without weakening its assertions. |
@@ -2995,7 +2995,7 @@ flowchart LR
         AR_1833["AR-1833 - Done"]:::status_done
         AR_1834["AR-1834 - Done"]:::status_done
         AR_1835["AR-1835 - Done"]:::status_done
-        AR_1836["AR-1836 - In progress"]:::status_in_progress
+        AR_1836["AR-1836 - Blocked"]:::status_blocked
         AR_1837["AR-1837 - Done"]:::status_done
         AR_1838["AR-1838 - Done"]:::status_done
         AR_1839["AR-1839 - Done"]:::status_done
