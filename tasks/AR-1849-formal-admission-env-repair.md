@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T13:07:58+00:00",
+  "updated_at": "2026-10-13T13:08:01+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -285,3 +285,6 @@ retain absolute-path and privacy boundaries, and add regression coverage.
   qualify); remaining non-vendor failures are AR-1793 fixture/error-contract expectations,
   role-store authorization semantics, and complexity assertion for the v0.7.4 workflow. No vendor
   files were modified; PR #145 remains unmerged.
+
+- 2026-10-13T13:08:01+00:00: Recorded command exit 0; command argv SHA-256
+  fdc411325eeae5c56a52429ace75586784ecc661b7623b7d5ec03f8858d53df5.
