@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "0bba7e8416cb8202df32050dc983d57cb01ecabd",
-  "claim_expires": "2026-10-13T18:26:48+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1852",
   "next_action": "Blocked pending upstream Coordinator AR-0032 role-store authorization repair/spec adoption. Once AR-0032 is released, bind exact upstream evidence, rebase/adopt without changing immutable vendor snapshot, rerun focused/full ASB gates, obtain independent review, and update PR148.",
-  "owner": "ar1852-role-store-luna",
+  "owner": "",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T17:29:41+00:00",
+  "updated_at": "2026-10-13T17:30:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -116,3 +116,12 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T17:29:41+00:00: Recorded command exit 1; command argv SHA-256
   fdbaadf4e859fa3db2657ead8b8b24b821a4790d1cbe3d5aec305953b3d9c22b.
+
+- 2026-10-13T17:30:14+00:00: Upstream Coordinator AR-0032 is merged at
+  ee01b22fdfc4fd28baca815bb4f5e1aaa8797d51; v0.7.4 vendor digest remains unchanged. Adopted strict
+  durable role admission in signed DCO commit 22da911193 and retained expired-assignment cleanup
+  semantics. Focused role suite passes 10/10. Full discovery exits 1 in the available environment
+  with unrelated failures and generated-view drift; system Python first lacked locked jsonschema,
+  and the locked state venv still reports unrelated failures. No PR merge or release claimed. Next:
+  use the locked ASB test environment with generated-view dependencies, rerun full gate, then obtain
+  independent exact-head review; do not merge PR148 until green.
