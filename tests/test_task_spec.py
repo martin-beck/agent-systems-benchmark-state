@@ -5,6 +5,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import stat
@@ -25,7 +26,9 @@ from tools.task_spec import (
     _head_tracks_policy,
     _tracked_clean_policy,
     done_admission_error,
+    evidence_ledger_errors,
     evidence_policy,
+    next_unmet_predicate,
     require_policy_unchanged,
     spec_errors,
     task_spec_errors,
@@ -95,6 +98,48 @@ class TaskSpecTests(unittest.TestCase):
             ),
         )
 
+    def test_predicate_ledger_binds_artifacts_and_reports_next_unmet_step(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            spec = load("AR-0070.json")
+            (root / "spec.json").write_text(json.dumps({**spec, "spec_ref": "spec.json"}))
+            (root / "candidate.txt").write_text("candidate")
+            (root / "evidence.txt").write_text("evidence")
+
+            def digest(name: str) -> str:
+                return "sha256:" + hashlib.sha256((root / name).read_bytes()).hexdigest()
+
+            predicate = spec["acceptance_predicates"][0]["id"]
+            meta: dict[str, Any] = {
+                "id": "AR-0070",
+                "spec_ref": "spec.json",
+                "spec_revision": 1,
+                "task_revision": 2,
+                "evidence_ledger": {
+                    "candidate_ref": "candidate.txt",
+                    "candidate_digest": digest("candidate.txt"),
+                    "steps": [
+                        {
+                            "predicate_id": predicate,
+                            "status": "pass",
+                            "candidate_ref": "candidate.txt",
+                            "candidate_digest": digest("candidate.txt"),
+                            "evidence_class": "contract-test",
+                            "evidence_ref": "evidence.txt",
+                            "evidence_digest": digest("evidence.txt"),
+                            "recorded_task_revision": 2,
+                        }
+                    ],
+                },
+            }
+            self.assertEqual([], evidence_ledger_errors(root, meta))
+            self.assertNotEqual(predicate, next_unmet_predicate(root, meta))
+            meta["evidence_ledger"]["steps"][0]["evidence_digest"] = "sha256:" + "0" * 64
+            self.assertIn(
+                "evidence ledger evidence artifact digest is invalid",
+                evidence_ledger_errors(root, meta),
+            )
+
     def test_public_schemas_accept_additive_fixture_and_reject_collisions(self) -> None:
         spec_schema = json.loads((ROOT / "schema/task-spec.schema.json").read_text())
         policy_schema = json.loads((ROOT / "schema/task-spec-policy.schema.json").read_text())
@@ -129,7 +174,8 @@ class TaskSpecTests(unittest.TestCase):
             "spec_ref": "examples/task-specs/AR-0070.json",
             "spec_revision": 1,
         }
-        self.assertEqual([], handoffctl.basic_task_errors(ROOT / "task.md", meta))
+        with patch.object(handoffctl, "ROOT", ROOT):
+            self.assertEqual([], handoffctl.basic_task_errors(ROOT / "task.md", meta))
 
     def test_hostile_specs_fail_closed(self) -> None:
         self.assertTrue(
@@ -524,6 +570,15 @@ class TaskSpecTests(unittest.TestCase):
             "done admission denied",
             done_admission_error(ROOT, {**meta, "spec_revision": 2}) or "",
         )
+
+    def test_done_admission_error_keeps_stable_prefix_and_reference_reason(self) -> None:
+        meta: dict[str, Any] = {
+            "id": "AR-0070",
+            "spec_ref": "examples/task-specs/missing.json",
+            "spec_revision": 1,
+        }
+        error = done_admission_error(ROOT, meta)
+        self.assertRegex(error or "", r"^done admission denied: .*cannot read spec_ref")
 
 
 if __name__ == "__main__":

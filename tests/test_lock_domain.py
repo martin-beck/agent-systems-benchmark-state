@@ -10,7 +10,9 @@ import unittest
 from dataclasses import replace
 from pathlib import Path
 from typing import cast
+from unittest.mock import patch
 
+from tools import handoffctl
 from tools.admission_lease import AdmissionLease
 from tools.handoffctl import CoordinatorLockGuard, locked
 from tools.lock_domain import LockDomainContract, LockDomainError, _identity
@@ -46,6 +48,18 @@ class LockDomainTests(unittest.TestCase):
         self.directory = tempfile.TemporaryDirectory()
         self.root = Path(self.directory.name)
         self.root.chmod(0o700)
+        runtime = self.root / ".runtime"
+        runtime.mkdir(mode=0o700)
+        # ``locked`` resolves these globals from the shared handoffctl module.
+        # Other stateful fixtures redirect them, so this contract fixture must
+        # own a private lock rather than contend with unrelated test state.
+        self.coordinator_globals = patch.multiple(
+            handoffctl,
+            ROOT=self.root,
+            RUNTIME=runtime,
+            LOCK=runtime / "state.lock",
+        )
+        self.coordinator_globals.start()
         self.authority = self.root / "authority.sqlite"
         self.authority.write_bytes(b"authority")
         self.authority.chmod(0o600)
@@ -74,6 +88,7 @@ class LockDomainTests(unittest.TestCase):
         self.session = SQLiteBarrierSessionStore(self.store, lambda: "authority-1")
 
     def tearDown(self) -> None:
+        self.coordinator_globals.stop()
         self.directory.cleanup()
 
     def test_capture_and_revalidation_are_read_only_and_stable(self) -> None:

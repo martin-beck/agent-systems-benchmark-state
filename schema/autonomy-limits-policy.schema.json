@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-workflow-coordinator/schema/autonomy-limits-policy.schema.json",
+  "title": "Project autonomy limits policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "max_elapsed_seconds": {"type": "integer", "minimum": 0, "maximum": 1000000000},
+    "max_retries": {"type": "integer", "minimum": 0, "maximum": 1000000000},
+    "max_commands": {"type": "integer", "minimum": 0, "maximum": 1000000000},
+    "max_diff_bytes": {"type": "integer", "minimum": 0, "maximum": 1000000000},
+    "max_cost_units": {"type": "integer", "minimum": 0, "maximum": 1000000000},
+    "max_external_side_effects": {"type": "integer", "minimum": 0, "maximum": 1000000000}
+  },
+  "anyOf": [
+    {"required": ["max_elapsed_seconds"]}, {"required": ["max_retries"]},
+    {"required": ["max_commands"]}, {"required": ["max_diff_bytes"]},
+    {"required": ["max_cost_units"]}, {"required": ["max_external_side_effects"]}
+  ]
+}
