@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar1850-development-tui-interactive-lifetime",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "2b42c8c1d24495d1155484b0b3d76bd7f7d0c11d",
   "claim_expires": "2026-10-13T16:00:53+00:00",
   "depends_on": [],
   "id": "AR-1850",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:00:53+00:00",
+  "updated_at": "2026-10-13T14:02:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -40,3 +40,5 @@ cross-repository qualification.
   dependency-ready.
 
 - 2026-10-13T14:00:53+00:00: Claimed by ar1850-development-tui-lifetime-luna.
+
+- 2026-10-13T14:02:32+00:00: Checkpointed source commit 2b42c8c1d24495d1155484b0b3d76bd7f7d0c11d.
