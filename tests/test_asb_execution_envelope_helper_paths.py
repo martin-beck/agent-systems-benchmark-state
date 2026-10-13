@@ -1,5 +1,6 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
+# mypy: disable-error-code="attr-defined,index,arg-type"
 """Downstream coverage for descriptor-backed execution-envelope helper paths."""
 
 from __future__ import annotations

@@ -1,5 +1,6 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
+# mypy: disable-error-code="list-item,attr-defined,arg-type"
 
 """ASB-owned invariant and error coverage for issue-series service helpers."""
 
@@ -62,10 +63,8 @@ class IssueSeriesServiceCoverageTests(unittest.TestCase):
         )
 
         with patch.object(service, "atomic", side_effect=write_atomic, create=True):
-            series_paths = service.write_sqlite_issue_series_projections(backend)  # type: ignore[arg-type]
-            publication_paths = service.write_sqlite_issue_series_publication_projections(
-                backend  # type: ignore[arg-type]
-            )
+            series_paths = service.write_sqlite_issue_series_projections(backend)
+            publication_paths = service.write_sqlite_issue_series_publication_projections(backend)
 
         self.assertEqual(1, len(series_paths))
         self.assertEqual(

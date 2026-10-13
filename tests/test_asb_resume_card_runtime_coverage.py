@@ -1,5 +1,6 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
+# mypy: disable-error-code=attr-defined
 
 """ASB-owned liveness coverage for read-only resume-card snapshots."""
 

@@ -1,5 +1,6 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
+# mypy: disable-error-code=attr-defined
 """Downstream-only command-result and fast-dispatch coverage for handoffctl."""
 
 from __future__ import annotations

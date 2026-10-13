@@ -1,5 +1,6 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
+# mypy: disable-error-code=arg-type
 """ASB-owned fail-closed coverage for the read-only admission lease contract."""
 
 from __future__ import annotations
@@ -38,9 +39,9 @@ class ASBAdmissionLeaseCoverageTests(unittest.TestCase):
         }
         for field, value in fields.items():
             with self.subTest(field=field), self.assertRaises(AdmissionLeaseError):
-                AdmissionLease(**{**self.record, field: value})  # type: ignore[arg-type]
+                AdmissionLease(**{**self.record, field: value})
         with self.assertRaisesRegex(AdmissionLeaseError, "order"):
-            AdmissionLease(**self.record, order=object())  # type: ignore[arg-type]
+            AdmissionLease(**self.record, order=object())
 
     def test_recheck_rejects_each_corrupted_identity_observation(self) -> None:
         lease = lease_from_record(self.record)
@@ -56,7 +57,7 @@ class ASBAdmissionLeaseCoverageTests(unittest.TestCase):
             with self.subTest(field=field), self.assertRaisesRegex(AdmissionLeaseError, "changed"):
                 validate_recheck(lease, **{**self.record, field: value})
         with self.assertRaisesRegex(AdmissionLeaseError, "lease"):
-            validate_recheck(object(), **self.record)  # type: ignore[arg-type]
+            validate_recheck(object(), **self.record)
 
     def test_corrupt_durable_snapshot_fails_closed_then_exact_restore_rechecks(self) -> None:
         original = dict(self.record)
@@ -83,7 +84,7 @@ class ASBAdmissionLeaseCoverageTests(unittest.TestCase):
         lease = lease_from_record(self.record)
         with self.assertRaisesRegex(AdmissionLeaseError, "lease"):
             AdmissionRecheck(
-                lease=object(),  # type: ignore[arg-type]
+                lease=object(),
                 **self.record,
             )
         with self.assertRaisesRegex(AdmissionLeaseError, "changed"):

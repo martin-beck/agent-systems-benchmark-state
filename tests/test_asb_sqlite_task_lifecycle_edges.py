@@ -1,5 +1,6 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
+# mypy: disable-error-code=arg-type
 """ASB-owned core task lifecycle coverage for SQLite storage."""
 
 from __future__ import annotations

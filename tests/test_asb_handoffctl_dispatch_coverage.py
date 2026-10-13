@@ -1,5 +1,6 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
+# mypy: disable-error-code=attr-defined
 """ASB-only dispatch and error-path coverage for vendored handoffctl."""
 
 from __future__ import annotations

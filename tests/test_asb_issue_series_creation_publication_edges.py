@@ -1,5 +1,6 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
+# mypy: disable-error-code="unused-ignore,attr-defined"
 
 """ASB-owned creation and live-publication coverage for issue-series service."""
 
