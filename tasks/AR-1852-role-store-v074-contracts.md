@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T21:30:30+00:00",
   "depends_on": [],
   "id": "AR-1852",
-  "next_action": "Obtain proper Coordinator/vendor adoption or rebase that restores the locked coordinator.vendor.json digest for tools/handoffctl.py (expected 64d86a03bf85dfb6f411b313af17f5575054ff7e790523b8c460b1d955ed440f; actual db84cc13cbc76abde5ea32d85898a33e90d64a133a0bf76f49e91b7ca33b6c85), without editing the vendor snapshot or weakening authorization; then rerun bounded full gates, independent review, and exact-head CI for 7b46c6b076 before any PR #148 update.",
+  "next_action": "No safe v0.7.8 rebase: v0.7.8 changes lifecycle role admission from strict to advisory and replaces the v0.7.4 lock/digest wholesale. Preserve PR #148 head 7b46c6b076 unupdated; wait for a Coordinator release that retains strict role authorization or explicitly re-scope AR-1852, then rerun independent review and exact-head CI.",
   "owner": "ar1852-role-store-repair2-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
@@ -66,9 +66,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T19:30:35+00:00",
+  "updated_at": "2026-10-13T19:31:39+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -340,3 +340,10 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 - 2026-10-13T19:30:30+00:00: Claimed by ar1852-role-store-repair2-luna.
 
 - 2026-10-13T19:30:35+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
+
+- 2026-10-13T19:31:39+00:00: Read-only compatibility audit: Coordinator v0.7.8 tools/handoffctl.py
+  hashes to f5307c85110c8984a7c42f544e64309c6f113f2b7d050c96958361c5ae64658c, while v0.7.4 expected
+  lock is 64d86a03bf85dfb6f411b313af17f5575054ff7e790523b8c460b1d955ed440f; v0.7.8 changes
+  require_role_admission to advisory and renames the lifecycle test accordingly, so it cannot safely
+  satisfy AR-1852 strict authorization. Existing PR head 7b46c6b076 remains valid non-vendor repair.
+  No product/vendor edits or PR update performed.

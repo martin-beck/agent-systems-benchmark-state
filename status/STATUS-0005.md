@@ -347,7 +347,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | ar1852-role-store-repair2-luna | Align role-store authorization tests with Coordinator v0.7.4. | Obtain proper Coordinator/vendor adoption or rebase that restores the locked coordinator.vendor.json digest for tools/handoffctl.py (expected 64d86a03bf85dfb6f411b313af17f5575054ff7e790523b8c460b1d955ed440f; actual db84cc13cbc76abde5ea32d85898a33e90d64a133a0bf76f49e91b7ca33b6c85), without editing the vendor snapshot or weakening authorization; then rerun bounded full gates, independent review, and exact-head CI for 7b46c6b076 before any PR #148 update. |
+| P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | ar1852-role-store-repair2-luna | Align role-store authorization tests with Coordinator v0.7.4. | No safe v0.7.8 rebase: v0.7.8 changes lifecycle role admission from strict to advisory and replaces the v0.7.4 lock/digest wholesale. Preserve PR #148 head 7b46c6b076 unupdated; wait for a Coordinator release that retains strict role authorization or explicitly re-scope AR-1852, then rerun independent review and exact-head CI. |
 
 ### Open (5)
 
