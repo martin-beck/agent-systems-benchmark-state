@@ -79,12 +79,12 @@
     "task_revision": 108
   },
   "execution_result": {
-    "argv_digest": "2b170eed86d3665fc87bf4206e5348c00056aa1d943b8c002fc3b79a3c2ed87b",
+    "argv_digest": "564328550cefbde7e82807c5b1f9de9017b40bc5bdfef825d00dd005c8583c63",
     "classification": "EXIT",
     "envelope_digest": "sha256:2ced3a87098a532733346fc0a8ca95a633aab9d21440ac7914f4c2024b1fcda9",
-    "execution_id": "47df7fc0a4de41a58f7caff4000fad2b",
+    "execution_id": "70cdf3e47fab47deabc7f75b877c6c87",
     "owner": "ar1852-requalify-luna3",
-    "recorded_at": "2026-10-13T21:23:27+00:00",
+    "recorded_at": "2026-10-13T21:24:55+00:00",
     "returncode": 1
   },
   "id": "AR-1852",
@@ -161,9 +161,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T21:23:58+00:00",
+  "updated_at": "2026-10-13T21:24:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -519,3 +519,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   an approved locked environment or record environmental blocker; preserve strict gates.
 
 - 2026-10-13T21:23:58+00:00: Reserved bound execution 70cdf3e47fab47deabc7f75b877c6c87.
+
+- 2026-10-13T21:24:56+00:00: Recorded execution result 70cdf3e47fab47deabc7f75b877c6c87.
