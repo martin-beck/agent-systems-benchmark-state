@@ -2,19 +2,19 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T19:52:41+00:00",
   "depends_on": [],
   "id": "AR-1862",
   "next_action": "Promote after verifying AR-1861's failed-closed evidence, then align the downstream formal lifecycle runtime/model inventory with the exact upstream AR-0034 vendor contract without weakening gates.",
-  "owner": "",
+  "owner": "ar1841-v053-adoption-luna",
   "plan": "../plans/AR-1862-coordinator-formal-lifecycle-alignment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T17:52:38+00:00",
+  "updated_at": "2026-10-13T17:52:41+00:00",
   "worktree_key": ""
 }
 ---
@@ -30,3 +30,5 @@ vendored Coordinator bytes or mutate AR-1826.
 
 - 2026-10-13T17:52:38+00:00: AR-1861 failed-closed evidence identifies an exact downstream formal
   lifecycle inventory seam; promote narrow compatibility repair.
+
+- 2026-10-13T17:52:41+00:00: Claimed by ar1841-v053-adoption-luna.
