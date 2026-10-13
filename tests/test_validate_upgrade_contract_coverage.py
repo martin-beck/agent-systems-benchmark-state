@@ -52,6 +52,15 @@ class UpgradeContractValidatorCoverageTests(unittest.TestCase):
                 with self.assertRaisesRegex(validator.ContractError, message):
                     validator.validate_contract(document)
 
+    def test_schema_validation_error_is_normalized_to_contract_error(self) -> None:
+        document = self.document()
+        document["rollback"]["required"] = False
+        with (
+            patch.object(validator, "validate_runtime_contract"),
+            self.assertRaisesRegex(validator.ContractError, "was expected"),
+        ):
+            validator.validate_contract(document)
+
     def test_semantic_validation_delegates_phase_and_backend_checks(self) -> None:
         document = self.document()
         phases = Mock()
@@ -64,10 +73,10 @@ class UpgradeContractValidatorCoverageTests(unittest.TestCase):
         phases.assert_called_once_with(document)
         backends.assert_called_once_with(document)
 
-    def test_phase_dependency_and_rollback_backend_edges_fail_closed(self) -> None:
+    def test_phase_authority_and_rollback_backend_edges_fail_closed(self) -> None:
         document = self.document()
-        document["phases"][1]["requires"] = []
-        with self.assertRaisesRegex(validator.ContractError, "incorrect dependencies"):
+        document["phases"][0]["mutates_authority"] = True
+        with self.assertRaisesRegex(validator.ContractError, "only commit"):
             validator._validate_phases(document)
 
         document = self.document()
