@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Restore the full-gate coverage floor after the terminal 94% observation.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Full-gate coverage floor repair",
-  "updated_at": "2026-10-13T15:08:09+00:00",
+  "updated_at": "2026-10-13T15:08:17+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1857-coverage-repair"
 }
 ---
@@ -41,3 +41,6 @@ modify AR-1841 or AR-1856 ownership and must not weaken formal/resource gates.
   unmerged.
 
 - 2026-10-13T15:08:09+00:00: Claimed by ar1857-coverage-repair-luna.
+
+- 2026-10-13T15:08:17+00:00: Recorded command exit 0; command argv SHA-256
+  e106d9998ec904272864aa3dcd98b4ce037394a0a2373e29d959f950cbdc2765.
