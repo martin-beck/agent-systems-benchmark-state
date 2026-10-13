@@ -1932,7 +1932,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair workflow-wide private TLC admission environment for formal CI. |
-| Next action | Hold PR #144 unmerged pending corrected upstream v0.7.3 metadata and immutable ASB re-vendoring; retain workflow-only admission environment change. |
+| Next action | Retain workflow-only private TLC admission environment; rebase onto exact v0.7.4 adoption and rerun focused/full gates, review, and CI. |
 
 ### AR-1850 — Repair development ASB TUI interactive lifetime
 

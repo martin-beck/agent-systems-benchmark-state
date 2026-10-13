@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T13:11:59+00:00",
   "depends_on": [],
   "id": "AR-1849",
-  "next_action": "Hold PR #144 unmerged pending corrected upstream v0.7.3 metadata and immutable ASB re-vendoring; retain workflow-only admission environment change.",
+  "next_action": "Retain workflow-only private TLC admission environment; rebase onto exact v0.7.4 adoption and rerun focused/full gates, review, and CI.",
   "owner": "ar1849-formal-admission-env-luna",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T12:04:59+00:00",
+  "updated_at": "2026-10-13T12:41:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -153,3 +153,6 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 
 - 2026-10-13T12:04:59+00:00: Recorded command exit 0; command argv SHA-256
   fa8b5b71edf3200d321ee3c09e348eccd55c38732142f7ba47f3a35c7d1b1356.
+
+- 2026-10-13T12:41:52+00:00: Dependency retargeted to corrected Coordinator v0.7.4 release at
+  2ea256d0; preserve immutable vendor boundary.

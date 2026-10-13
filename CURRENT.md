@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1841](tasks/AR-1841-coordinator-v053-adoption.md): Coordinator v0.5.3 adoption | Adopt Coordinator v0.7.4 with partial legacy worktree binding. | Re-vendor exact signed Coordinator v0.7.4 at 2ea256d0c0bdcb9922c88e6778a104b33c0e47da, rerun focused/full gates, then exact-head review and CI. | ar1841-v053-adoption-luna |
-| P0 | [AR-1849](tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Repair workflow-wide private TLC admission environment for formal CI. | Hold PR #144 unmerged pending corrected upstream v0.7.3 metadata and immutable ASB re-vendoring; retain workflow-only admission environment change. | ar1849-formal-admission-env-luna |
+| P0 | [AR-1849](tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Repair workflow-wide private TLC admission environment for formal CI. | Retain workflow-only private TLC admission environment; rebase onto exact v0.7.4 adoption and rerun focused/full gates, review, and CI. | ar1849-formal-admission-env-luna |
 
 ## Open
 
