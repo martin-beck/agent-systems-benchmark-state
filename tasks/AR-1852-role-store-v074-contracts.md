@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T22:43:14+00:00",
   "depends_on": [],
   "execution_envelope": {
     "command_classes": {
@@ -79,7 +79,7 @@
   },
   "id": "AR-1852",
   "next_action": "No safe v0.7.8 rebase: v0.7.8 changes lifecycle role admission from strict to advisory and replaces the v0.7.4 lock/digest wholesale. Preserve PR #148 head 7b46c6b076 unupdated; wait for a Coordinator release that retains strict role authorization or explicitly re-scope AR-1852, then rerun independent review and exact-head CI.",
-  "owner": "",
+  "owner": "ar1852-runner-repair-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "retry_circuit": {
@@ -149,11 +149,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T22:10:27+00:00",
+  "updated_at": "2026-10-13T22:23:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -557,3 +557,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   existing generated tools/__pycache__/handoffctl.cpython-312.pyc >200 KiB reconciliation guard. No
   source, vendor, PR, review, or merge changes. Repair approved runner root/venv/identity mounts
   through authorized workflow, then rerun exact-head focused/full gates.
+
+- 2026-10-13T22:23:14+00:00: Claimed by ar1852-runner-repair-luna.
