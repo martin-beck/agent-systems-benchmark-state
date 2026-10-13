@@ -12,7 +12,7 @@ import unittest
 import uuid
 from pathlib import Path
 from typing import Any
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 from tools import fast_receipt_worker as worker
 from tools.fast_receipt_worker import (
@@ -367,13 +367,13 @@ class FastReceiptWorkerTests(unittest.TestCase):
         self.assertEqual("completed-local", result["phase"])
         self.assertEqual("b" * 40, result["commit_oid"])
 
-    def test_untrusted_commit_stays_ambiguous(self) -> None:
+    def test_unverifiable_commit_stays_ambiguous(self) -> None:
         self.enqueue()
         core = FakeCore(self.root, "success")
         with (
             patch(
                 "tools.fast_receipt_worker.verify_local_commit",
-                side_effect=RuntimeError("signature is not trusted"),
+                side_effect=RuntimeError("receipt commit is not on the active state branch"),
             ),
             patch("tools.fast_receipt_worker.find_receipt_commit", return_value="a" * 40),
         ):
@@ -411,7 +411,7 @@ class FastReceiptWorkerTests(unittest.TestCase):
         self.assertEqual(receipt_id, outcomes[0]["receipt_id"])
         self.assertEqual(0, core.calls)
 
-    def test_restart_recovers_exact_signed_commit_marker(self) -> None:
+    def test_restart_recovers_exact_active_branch_commit_marker(self) -> None:
         receipt_id = self.enqueue()
         self.store.claim_next()
         core = FakeCore(self.root, "success")
@@ -433,7 +433,7 @@ class FastReceiptWorkerTests(unittest.TestCase):
             patch("tools.fast_receipt_worker.find_receipt_commit", return_value="a" * 40),
             patch(
                 "tools.fast_receipt_worker.verify_local_commit",
-                side_effect=RuntimeError("signature is not trusted"),
+                side_effect=RuntimeError("receipt commit is not on the active state branch"),
             ),
         ):
             outcomes = recover_running(core, self.store)
@@ -839,7 +839,7 @@ class FastReceiptWorkerTests(unittest.TestCase):
             message = f"chore(state): {operation} AR-0120\n\nHandoffctl-Receipt: {receipt_id}\n"
             verifier = getattr(worker, f"_verify_{operation}_delta")
             with (
-                patch.object(worker, "_require_signed_branch_commit"),
+                patch.object(worker, "_require_active_branch_commit"),
                 patch.object(worker, "_git", return_value=message),
                 patch.object(verifier.__module__ and worker, verifier.__name__, return_value=2),
             ):
@@ -855,7 +855,7 @@ class FastReceiptWorkerTests(unittest.TestCase):
             "payload_json": "{}",
         }
         with (
-            patch.object(worker, "_require_signed_branch_commit"),
+            patch.object(worker, "_require_active_branch_commit"),
             patch.object(worker, "_git", return_value="chore(state): heartbeat AR-0120\n"),
             self.assertRaisesRegex(RuntimeError, "marker"),
         ):
@@ -872,7 +872,7 @@ class FastReceiptWorkerTests(unittest.TestCase):
             )
             with (
                 self.subTest(operation=operation),
-                patch.object(worker, "_require_signed_branch_commit"),
+                patch.object(worker, "_require_active_branch_commit"),
                 patch.object(
                     worker,
                     "_git",
@@ -1259,6 +1259,320 @@ class FastReceiptWorkerTests(unittest.TestCase):
             outcomes = publish_pending(core, self.store)
         self.assertEqual("published-remote", outcomes[0]["phase"])
         self.assertEqual("b" * 40, outcomes[0]["remote_oid"])
+
+    def test_fast_publisher_admits_captured_head_with_remote_lease(self) -> None:
+        receipt_id = self.complete_local()
+        pending = self.store.pending_publication()
+        core = PublicationCore(self.root, "success")
+        with (
+            patch.object(worker, "_is_ancestor", side_effect=[True, False, True]),
+            patch.object(worker, "_observe_remote_main", return_value="b" * 40),
+            patch.object(core, "run", wraps=core.run) as run,
+        ):
+            observed = worker._publish_if_needed(core, self.store, pending, "b" * 40, "c" * 40)
+        self.assertEqual("b" * 40, observed)
+        job = self.store.connection.execute(
+            "SELECT * FROM publication_jobs WHERE candidate_oid=?", ("b" * 40,)
+        ).fetchone()
+        assert job is not None
+        self.assertEqual("published", job["phase"])
+        self.assertEqual("c" * 40, job["expected_remote_oid"])
+        push = next(call.args[0] for call in run.call_args_list if "push" in call.args[0])
+        self.assertIn("--force-with-lease=refs/heads/main:" + "c" * 40, push)
+        self.assertEqual(receipt_id, pending[0]["receipt_id"])
+
+    def test_descendant_observation_terminally_rejects_exact_job(self) -> None:
+        core = PublicationCore(self.root, "success")
+        admitted = self.store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        lease = "1" * 32
+        self.store.claim_publication(job_id, lease=lease)
+        with (
+            patch("tools.fast_receipt_worker._observe_remote_main", return_value="c" * 40),
+            patch("tools.fast_receipt_worker._is_ancestor", return_value=True),
+        ):
+            observed = worker._record_admitted_push_observation(
+                core, self.store, job_id, lease, "a" * 40, "PUSH_UNKNOWN"
+            )
+        self.assertEqual("c" * 40, observed)
+        job = self.store.read_publication(job_id)
+        assert job is not None
+        self.assertEqual("rejected", job["phase"])
+        self.assertEqual("REMOTE_ADVANCED", job["error_code"])
+        self.assertEqual("c" * 40, job["observed_remote_oid"])
+
+    def test_remote_observation_sweeps_historical_expired_publications(self) -> None:
+        admitted = self.store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        self.store.claim_publication(job_id, lease="1" * 32)
+        self.store.connection.execute(
+            "UPDATE publication_jobs SET publisher_lease_expires='2000-01-01T00:00:00.000Z' "
+            "WHERE job_id=?",
+            (job_id,),
+        )
+        worker._recover_outstanding_publications(self.store, "d" * 40, "c" * 40)
+        job = self.store.read_publication(job_id)
+        assert job is not None
+        self.assertEqual("rejected", job["phase"])
+        self.assertEqual("REMOTE_BASE_CHANGED", job["error_code"])
+
+    def test_superseded_requeued_job_is_terminal_on_a_no_receipt_cycle(self) -> None:
+        admitted = self.store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        self.store.claim_publication(job_id, lease="1" * 32)
+        self.store.connection.execute(
+            "UPDATE publication_jobs SET publisher_lease_expires='2000-01-01T00:00:00.000Z' "
+            "WHERE job_id=?",
+            (job_id,),
+        )
+        worker._recover_outstanding_publications(self.store, "a" * 40, "b" * 40)
+        requeued = self.store.read_publication(job_id)
+        assert requeued is not None
+        self.assertEqual("queued", requeued["phase"])
+        worker._recover_outstanding_publications(self.store, "c" * 40, "b" * 40)
+        job = self.store.read_publication(job_id)
+        assert job is not None
+        self.assertEqual("rejected", job["phase"])
+        self.assertEqual("LOCAL_HEAD_SUPERSEDED", job["error_code"])
+
+    def test_publish_admission_terminal_and_lost_claim_paths_return_remote(self) -> None:
+        core = PublicationCore(self.root, "success")
+        pending = [{"commit_oid": "a" * 40}]
+        for phase in ("published", "rejected"):
+            store = Mock()
+            store.admit_publication.return_value = {"job_id": "1" * 32, "phase": phase}
+            with patch("tools.fast_receipt_worker._is_ancestor", side_effect=[True, False, True]):
+                self.assertEqual(
+                    "b" * 40,
+                    worker._publish_if_needed(core, store, pending, "a" * 40, "b" * 40),
+                )
+            store.claim_publication.assert_not_called()
+        store = Mock()
+        store.admit_publication.return_value = {"job_id": "1" * 32, "phase": "queued"}
+        store.claim_publication.return_value = None
+        with patch("tools.fast_receipt_worker._is_ancestor", side_effect=[True, False, True]):
+            self.assertEqual(
+                "b" * 40,
+                worker._publish_if_needed(core, store, pending, "a" * 40, "b" * 40),
+            )
+        store.claim_publication.assert_called_once()
+
+    def test_publish_active_recovery_and_outstanding_race_policy(self) -> None:
+        core = PublicationCore(self.root, "success")
+        pending = [{"commit_oid": "a" * 40}]
+        store = Mock()
+        store.admit_publication.return_value = {"job_id": "1" * 32, "phase": "ambiguous"}
+        store.recover_publication.side_effect = RuntimeError("publication lease is still active")
+        with patch("tools.fast_receipt_worker._is_ancestor", side_effect=[True, False, True]):
+            self.assertEqual(
+                "b" * 40,
+                worker._publish_if_needed(core, store, pending, "a" * 40, "b" * 40),
+            )
+        store.claim_publication.assert_not_called()
+        store = Mock()
+        store.recoverable_publications.return_value = [
+            {"job_id": "1" * 32, "phase": "queued", "candidate_oid": "a" * 40},
+            {"job_id": "2" * 32, "phase": "ambiguous", "candidate_oid": "b" * 40},
+        ]
+        store.recover_publication.side_effect = RuntimeError(
+            "publication job changed while recovering"
+        )
+        worker._recover_outstanding_publications(store, "a" * 40, "c" * 40)
+        store.resolve_superseded_publication.assert_not_called()
+        with self.assertRaisesRegex(RuntimeError, "unexpected"):
+            store.recover_publication.side_effect = RuntimeError("unexpected")
+            worker._recover_outstanding_publications(store, "z" * 40, "c" * 40)
+
+    def test_publish_remote_unknown_and_timeout_integrity_fail_closed(self) -> None:
+        core = PublicationCore(self.root, "success")
+        pending = [{"receipt_id": "1" * 32}]
+        store = Mock()
+        store.record_publication_failure.return_value = {"phase": "completed-local"}
+        with patch("tools.fast_receipt_worker._observe_remote_main", return_value=None):
+            self.assertEqual(
+                [{"phase": "completed-local"}], worker._publish_selected(core, store, pending)
+            )
+        store.pending_publication.return_value = pending
+        store.read.return_value = None
+        with (
+            patch.object(worker, "_require_bound_store"),
+            patch.object(
+                worker, "_publish_selected", side_effect=SubprocessTimeoutError("timeout")
+            ),
+            self.assertRaisesRegex(RuntimeError, "pending receipt disappeared"),
+        ):
+            publish_pending(core, store)
+        store.read.return_value = {"phase": "rejected"}
+        with (
+            patch.object(worker, "_require_bound_store"),
+            patch.object(
+                worker, "_publish_selected", side_effect=SubprocessTimeoutError("timeout")
+            ),
+            self.assertRaisesRegex(RuntimeError, "invalid phase"),
+        ):
+            publish_pending(core, store)
+
+    def test_intent_validation_rejects_cross_field_and_typed_tampering(self) -> None:
+        """Every typed receipt variant rejects malformed data before mutation."""
+
+        def intent(payload: object, **fields: object) -> dict[str, Any]:
+            text = json.dumps(payload, sort_keys=True, separators=(",", ":"))
+            import hashlib
+
+            return {
+                "payload_json": text,
+                "input_digest": hashlib.sha256(text.encode()).hexdigest(),
+                "project_id": self.store.project_id,
+                "task_id": "AR-0120",
+                "expected_revision": 1,
+                **fields,
+            }
+
+        heartbeat = {
+            "expected_revision": 1,
+            "lease_minutes": 20,
+            "operation": "heartbeat",
+            "owner": "worker-a",
+            "project_id": self.store.project_id,
+            "task": "AR-0120",
+        }
+        claim = {**heartbeat, "operation": "claim"}
+        promote = {
+            "expected_revision": 1,
+            "note": "Dependencies verified.",
+            "operation": "promote",
+            "project_id": self.store.project_id,
+            "task": "AR-0120",
+        }
+        update = {
+            "changes": {"priority": "P1"},
+            "expected_revision": 1,
+            "note": "Refined execution plan.",
+            "operation": "update",
+            "owner": "worker-a",
+            "project_id": self.store.project_id,
+            "task": "AR-0120",
+        }
+        cases: tuple[tuple[dict[str, object], dict[str, object], str], ...] = (
+            ({**heartbeat, "project_id": "wrong-project"}, {}, "canonical typed fields"),
+            ({**heartbeat, "task": "AR-9999"}, {}, "canonical typed fields"),
+            ({**heartbeat, "expected_revision": 2}, {}, "canonical typed fields"),
+            ({**heartbeat, "lease_minutes": 0}, {}, "heartbeat intent fields"),
+            ({**heartbeat, "note": "injected"}, {}, "heartbeat intent fields"),
+            (
+                {**claim, "worker_pid": True, "worker_start_time": 1},
+                {},
+                "claim intent fields",
+            ),
+            ({**promote, "expected_revision": True}, {}, "promote intent fields"),
+            ({**promote, "note": "bad\x00note"}, {}, "promote intent fields"),
+            ({**update, "changes": {}}, {}, "update intent fields"),
+            ({**update, "changes": {"owner": "injected"}}, {}, "update intent fields"),
+            ({**heartbeat, "operation": "delete"}, {}, "unsupported"),
+        )
+        for payload, fields, message in cases:
+            with (
+                self.subTest(payload=payload, fields=fields),
+                self.assertRaisesRegex(RuntimeError, message),
+            ):
+                worker._validated_intent(intent(payload, **fields))
+
+    def test_commit_branch_provenance_and_dco_reject_untrusted_metadata(self) -> None:
+        core = FakeCore(self.root, "success")
+        core.project_settings = lambda: {"commit_signoff": True}  # type: ignore[method-assign]
+        oid = "a" * 40
+        with self.assertRaisesRegex(RuntimeError, "invalid receipt commit oid"):
+            worker._require_active_branch_commit(core, "not-an-oid")
+        with (
+            patch.object(core, "run", return_value=subprocess.CompletedProcess([], 1, "")),
+            self.assertRaisesRegex(RuntimeError, "active state branch"),
+        ):
+            worker._require_active_branch_commit(core, oid)
+        with (
+            patch.object(core, "run", return_value=subprocess.CompletedProcess([], 1, "")),
+            self.assertRaisesRegex(RuntimeError, "active state branch"),
+        ):
+            worker._require_active_branch_commit(core, oid)
+        with patch.object(core, "run", return_value=subprocess.CompletedProcess([], 0, "")) as run:
+            worker._require_active_branch_commit(core, oid)
+        self.assertEqual("merge-base", run.call_args.args[0][3])
+        self.assertNotIn("verify-commit", run.call_args.args[0])
+
+        receipt_id = "f" * 32
+        intent = {
+            "receipt_id": receipt_id,
+            "operation": "heartbeat",
+            "task_id": "AR-0120",
+            "payload_json": "{}",
+        }
+        subject = f"chore(state): heartbeat AR-0120\nHandoffctl-Receipt: {receipt_id}\n"
+        for message in (subject, subject + "Signed-off-by: Pat <pat@example.test>\n" * 2):
+            with (
+                self.subTest(message=message),
+                patch.object(worker, "_require_active_branch_commit"),
+                patch.object(worker, "_verify_heartbeat_delta", return_value=2),
+                patch.object(worker, "_git", side_effect=[message, "Pat <pat@example.test>\n"]),
+                self.assertRaisesRegex(RuntimeError, "DCO does not match"),
+            ):
+                verify_local_commit(core, intent, oid)
+
+    def test_private_lock_rejects_symlink_and_linked_lock_artifacts(self) -> None:
+        core = FakeCore(self.root, "success")
+        directory = self.root / "private"
+        directory.mkdir(mode=0o700, exist_ok=True)
+        symlink = directory / "symlink.lock"
+        symlink.symlink_to(directory / "target")
+        with self.assertRaises(OSError), worker._private_lock(core, "symlink.lock"):
+            pass
+
+        target = directory / "lock-target"
+        target.write_text("")
+        target.chmod(0o600)
+        linked = directory / "linked.lock"
+        linked.hardlink_to(target)
+        with (
+            self.assertRaisesRegex(RuntimeError, "lock is unsafe"),
+            worker._private_lock(core, "linked.lock"),
+        ):
+            pass
+
+    def test_admitted_push_observation_records_only_exact_remote_evidence(self) -> None:
+        core = PublicationCore(self.root, "success")
+        candidate = "a" * 40
+        cases = (
+            (candidate, False, "published", None),
+            ("b" * 40, True, "rejected", "REMOTE_ADVANCED"),
+            (None, False, "ambiguous", "PUSH_UNKNOWN"),
+            ("c" * 40, False, "rejected", "REMOTE_CHANGED"),
+        )
+        for observed, descendant, phase, error_code in cases:
+            with self.subTest(observed=observed, phase=phase):
+                store = Mock()
+                with (
+                    patch.object(worker, "_observe_remote_main", return_value=observed),
+                    patch.object(worker, "_is_ancestor", return_value=descendant),
+                ):
+                    self.assertEqual(
+                        observed,
+                        worker._record_admitted_push_observation(
+                            core,
+                            store,
+                            "1" * 32,
+                            "2" * 32,
+                            candidate,
+                            "PUSH_UNKNOWN",
+                        ),
+                    )
+                kwargs = store.finish_publication.call_args.kwargs
+                self.assertEqual(phase, kwargs["phase"])
+                self.assertEqual(error_code, kwargs.get("error_code"))
+                self.assertEqual(observed, kwargs.get("observed_remote_oid"))
 
 
 if __name__ == "__main__":

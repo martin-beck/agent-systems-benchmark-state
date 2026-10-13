@@ -23,7 +23,7 @@ from types import SimpleNamespace
 from typing import Any
 from unittest.mock import MagicMock, patch
 
-from tools import upgrade_authority
+from tools import handoffctl, upgrade_authority
 from tools.admission_lease import AdmissionLease, validate_recheck
 from tools.upgrade_authority import (
     AuthorityError,
@@ -781,6 +781,19 @@ class RuntimeSelectorTests(unittest.TestCase):
     def test_child_death_after_directory_fsync_reconciles_new_pair(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
+            coordinator_directory = tempfile.TemporaryDirectory()
+            self.addCleanup(coordinator_directory.cleanup)
+            coordinator_root = Path(coordinator_directory.name)
+            runtime = coordinator_root / ".runtime"
+            runtime.mkdir(mode=0o700)
+            self.enterContext(
+                patch.multiple(
+                    handoffctl,
+                    ROOT=coordinator_root,
+                    RUNTIME=runtime,
+                    LOCK=runtime / "state.lock",
+                )
+            )
             path = root / "selector.json"
             commit_runtime_selector(path, "old", "older")
             process = multiprocessing.get_context("fork").Process(

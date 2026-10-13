@@ -27,6 +27,7 @@ from _rollback_control_store_subprocess import (
     SUBPROCESS_SESSION_SCRIPT,
 )
 
+import tools.handoffctl as handoffctl
 from tools import upgrade_authority
 from tools.handoffctl import CoordinatorLockGuard, LockOwnershipError, locked
 from tools.rollback_control_store import (
@@ -3479,9 +3480,17 @@ class RollbackControlStoreTests(unittest.TestCase):
     def test_control_lock_timeout_is_bounded_and_preserves_state(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "control.sqlite"
+            runtime = Path(directory) / ".runtime"
+            runtime.mkdir(mode=0o700)
             first = SQLiteRollbackControlStore(path, PROJECT)
             second = SQLiteRollbackControlStore(path, PROJECT)
             with (
+                patch.multiple(
+                    handoffctl,
+                    ROOT=Path(directory),
+                    RUNTIME=runtime,
+                    LOCK=runtime / "state.lock",
+                ),
                 first._control_lock(),
                 patch(
                     "tools.rollback_control_store.time.monotonic",
@@ -3517,9 +3526,17 @@ class RollbackControlStoreTests(unittest.TestCase):
     def test_control_lock_timeout_closes_descriptor_for_retry(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "control.sqlite"
+            runtime = Path(directory) / ".runtime"
+            runtime.mkdir(mode=0o700)
             first = SQLiteRollbackControlStore(path, PROJECT)
             second = SQLiteRollbackControlStore(path, PROJECT)
             with (
+                patch.multiple(
+                    handoffctl,
+                    ROOT=Path(directory),
+                    RUNTIME=runtime,
+                    LOCK=runtime / "state.lock",
+                ),
                 first._control_lock(),
                 patch(
                     "tools.rollback_control_store.time.monotonic",

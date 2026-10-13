@@ -18,6 +18,7 @@ from types import SimpleNamespace
 from typing import Any, cast
 from unittest.mock import patch
 
+import tools.handoffctl as handoffctl
 from tools.admission_lease import AdmissionLease, validate_recheck
 from tools.authority_neutral_commit import CommitAdmissionBundle
 from tools.generate_upgrade_contract import generate
@@ -402,6 +403,17 @@ class SQLiteAuthorityAdapterTests(unittest.TestCase):
     def setUp(self) -> None:
         self.directory = tempfile.TemporaryDirectory()
         self.root = Path(self.directory.name)
+        runtime = self.root / ".runtime"
+        runtime.mkdir(mode=0o700)
+        self.coordinator_globals = patch.multiple(
+            handoffctl,
+            ROOT=self.root,
+            RUNTIME=runtime,
+            LOCK=runtime / "state.lock",
+        )
+        self.addCleanup(self.directory.cleanup)
+        self.coordinator_globals.start()
+        self.addCleanup(self.coordinator_globals.stop)
         self.authority = self.root / "authority.sqlite"
         with closing(sqlite3.connect(self.authority)) as connection, connection:
             connection.execute("CREATE TABLE records (id INTEGER PRIMARY KEY, body TEXT)")
@@ -438,9 +450,6 @@ class SQLiteAuthorityAdapterTests(unittest.TestCase):
             revision=1,
         )
         self.scope = LockDomainScope.bind(self.session, fence, self.lease, self.recheck, locked)
-
-    def tearDown(self) -> None:
-        self.directory.cleanup()
 
     def test_bound_lifecycle_executor_snapshots_real_control_and_journal(self) -> None:
         journal = self.root / "engine-journal.json"
