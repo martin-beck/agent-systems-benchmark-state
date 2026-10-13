@@ -33,16 +33,16 @@ Generated from local Git and GitHub. Do not edit.
 | #619 | `repair/ar-1779-source-fallback-linear3@21372a22aba3` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): fail closed on unavailable source adapters |
 | #624 | `feature/ar-1783-installed-workload-selection-and-execution@32f42827367d` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): bind installed workloads before execution |
 | #629 | `codex/ar-1826-explicit-setup-contract@e9d95999c0ca` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(config): define explicit setup and plan binding contract |
-| #633 | `repair/ar-1856-product-identity-v2@6e3c57ca6550` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | chore(recovery): restore protected-main identity provenance |
+| #633 | `repair/ar-1856-product-identity-v2@6e3c57ca6550` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | chore(recovery): restore protected-main identity provenance |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38414976571 | `6e3c57ca6550` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 38414976517 | `6e3c57ca6550` | pull_request | Portable protected-main provenance | in_progress:- |
+| 38414976571 | `6e3c57ca6550` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38414976517 | `6e3c57ca6550` | pull_request | Portable protected-main provenance | completed:success |
 | 38414976188 | `6e3c57ca6550` | pull_request | Cross-repository development broker qualification | in_progress:- |
-| 38414976095 | `6e3c57ca6550` | pull_request | Development formal assurance | queued:- |
+| 38414976095 | `6e3c57ca6550` | pull_request | Development formal assurance | in_progress:- |
 | 38414975917 | `6e3c57ca6550` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 38414975826 | `6e3c57ca6550` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38414975714 | `6e3c57ca6550` | pull_request | Repository quality | in_progress:- |
