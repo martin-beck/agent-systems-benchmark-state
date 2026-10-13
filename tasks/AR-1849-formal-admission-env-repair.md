@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1849-formal-admission-env-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T17:03:44+00:00",
+  "claim_expires": "2026-10-13T17:04:53+00:00",
   "depends_on": [],
   "id": "AR-1849",
   "next_action": "Full unittest gate passed 1,636/1,636. Coverage report on the terminal full-run artifact is 94% and fails the 95% threshold; preserve PR #145 unmerged and treat this as a separate pre-existing/full-gate coverage blocker requiring scoped follow-up before publication.",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T15:04:42+00:00",
+  "updated_at": "2026-10-13T15:04:53+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -388,3 +388,5 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 
 - 2026-10-13T15:04:42+00:00: Recorded command exit 0; command argv SHA-256
   ec08a732692e8c9234f550bb9bc8ea1e10c6fe387cc172b73c5225d398e1d680.
+
+- 2026-10-13T15:04:53+00:00: Heartbeat by ar1849-formal-admission-env-luna.
