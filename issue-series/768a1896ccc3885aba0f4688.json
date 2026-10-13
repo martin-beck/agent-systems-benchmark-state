@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1863",
+  "issue": {
+    "number": 632,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/632"
+  },
+  "issue_digest": "sha256:7afcacf8307d4776184ad92cae01ad37e84e2583589c0d1899e15d268f438712",
+  "members": [
+    {
+      "acceptance": "Generated catalog parity, focused diagnostic_contract positive and negative coverage, full applicable cargo gate, and signed DCO independent review and exact-head CI pass.",
+      "depends_on": [],
+      "id": "AR-1863",
+      "ownership": "ASB asb-cli control diagnostics; successor to AR-1783 catalog integration seam, distinct from AR-1787 lock lifetime and AR-1835 runtime fixture work.",
+      "scope": "Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates.",
+      "short_title": "Repair control diagnostic catalog"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
