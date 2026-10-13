@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T20:41:32+00:00",
+  "claim_expires": "2026-10-13T20:45:16+00:00",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped.",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T18:43:44+00:00",
+  "updated_at": "2026-10-13T18:45:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar1858-coverage-v070"
 }
 ---
@@ -261,3 +261,5 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-13T18:43:44+00:00: Recorded command exit 2; command argv SHA-256
   a3da466c0b0cc718abf90b91338418db52ad983a30f5bb9b456aaf0969a5dfc0.
+
+- 2026-10-13T18:45:16+00:00: Heartbeat by ar1858-coverage-v070-luna.
