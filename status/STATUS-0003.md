@@ -2032,6 +2032,20 @@
 | Summary | Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer. |
 | Next action | Keep AR-1856 claimed until every exact-main workflow for merge 870331be533ea1a0ba9645ddbb690df56af84935 is terminal-success; then record the post-merge receipt, accept the spec, release done, reconcile, and doctor --live. |
 
+### AR-1857 — Full-gate coverage floor repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Restore the full-gate coverage floor after the terminal 94&#37; observation. |
+| Next action | Repair the recorded 94&#37; full-gate coverage deficit without lowering the 95&#37; threshold; preserve PR #145 unmerged until review and exact-head CI pass. |
+
 
 ## Dependency graph
 
@@ -2932,6 +2946,7 @@ flowchart LR
         AR_1854["AR-1854 - Planned"]:::status_planned
         AR_1855["AR-1855 - Done"]:::status_done
         AR_1856["AR-1856 - Done"]:::status_done
+        AR_1857["AR-1857 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
