@@ -68,6 +68,16 @@
   "execution_envelope_ref": "quality/AR-1773-execution-envelope.json",
   "execution_envelope_revision": 1,
   "execution_envelope_task_revision": 5,
+  "execution_reservation": {
+    "argv_digest": "81f9cbc54a552c045dc19aeb4f088984cadefaafc1d078f7b5f4fb5e7ba473ec",
+    "command_class": "test",
+    "envelope_digest": "sha256:36af7d046d9ef15d3ed21b798ab488b01fd26a5d9ad86cc3a2af1f75907c69cb",
+    "execution_id": "37b2f722e41441118f26927ffa782ae2",
+    "expires_at": "2026-10-13T23:38:01+00:00",
+    "owner": "asb_ar1773_docker_runner_luna",
+    "scope_digest": "sha256:3141c347af5a056abcfbac75faa49756b6f008565747f30e46f3639803148abf",
+    "task_revision": 119
+  },
   "execution_result": {
     "argv_digest": "cb18024e764b7bd36a45fca8ae130ef48932b6ccc37e9352903de41fd79499f6",
     "classification": "EXIT",
@@ -98,9 +108,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 119,
+  "task_revision": 120,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T22:36:43+00:00",
+  "updated_at": "2026-10-13T22:37:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -457,3 +467,5 @@ non-TTY compatibility.
 
 - 2026-10-13T22:36:43+00:00: Recorded command exit 101; command argv SHA-256
   cb18024e764b7bd36a45fca8ae130ef48932b6ccc37e9352903de41fd79499f6.
+
+- 2026-10-13T22:37:01+00:00: Reserved bound execution 37b2f722e41441118f26927ffa782ae2.
