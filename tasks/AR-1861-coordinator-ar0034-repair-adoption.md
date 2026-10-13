@@ -4,6 +4,22 @@
   "checkpoint_commit": "",
   "claim_expires": "2026-10-13T20:03:24+00:00",
   "depends_on": [],
+  "evidence_ledger": {
+    "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+    "candidate_ref": "coordinator.vendor.json",
+    "steps": [
+      {
+        "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "vendor-lifecycle-alignment",
+        "recorded_task_revision": 14,
+        "status": "pass"
+      }
+    ]
+  },
   "id": "AR-1861",
   "next_action": "v0.7.8 is vendor-verified at f1f42d4 and the merged full suite meets 95%; release this completed adoption.",
   "owner": "coord-reconcile-v078",
@@ -14,9 +30,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T18:03:54+00:00",
+  "updated_at": "2026-10-13T18:05:13+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -67,3 +83,6 @@ or mutate AR-1826 until the adopted repair is verified.
 - 2026-10-13T18:03:24+00:00: Recorded exact v0.7.8 vendor and full-suite qualification evidence.
 
 - 2026-10-13T18:03:54+00:00: Bound task spec specs/AR-1861.json revision 1.
+
+- 2026-10-13T18:05:13+00:00: Accepted exact v0.7.8 vendor manifest after verifier confirmed
+  lifecycle parity.
