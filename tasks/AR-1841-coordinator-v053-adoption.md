@@ -7,7 +7,7 @@
     "AR-1795"
   ],
   "id": "AR-1841",
-  "next_action": "External blocker: repair/restart hosted formal verification runner permissions, then rerun PR #142 exact-head checks; do not merge until formal and coordination checks pass.",
+  "next_action": "Rebase/rebuild PR #142 against protected main 5229b166a9df1c49fa6956e4ccf4340ae6b3abea, rerun focused and full applicable gates, then exact-head review and CI.",
   "owner": "ar1841-v053-adoption-luna",
   "plan": "../plans/AR-1841-coordinator-v053-adoption.md",
   "priority": "P0",
@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.5.3 with partial legacy worktree binding.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T10:34:19+00:00",
+  "updated_at": "2026-10-13T10:34:37+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -148,3 +148,6 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
 
 - 2026-10-13T10:34:19+00:00: Recorded command exit 0; command argv SHA-256
   403737a2528b46015f22b141c0547917baeca6e0a8642ce69bf7fc08520eb3c0.
+
+- 2026-10-13T10:34:37+00:00: Runner-permission repair AR-1843 is merged; begin adoption
+  requalification at current protected main.
