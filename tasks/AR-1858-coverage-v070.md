@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:06:28+00:00",
+  "updated_at": "2026-10-13T16:06:39+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -155,3 +155,6 @@ artifact. Do not lower the threshold or merge PR #145.
 - 2026-10-13T16:06:28+00:00: Diagnostic harness defect: /tmp/ar1858_one.py executed unittest at
   import time, so forkserver/spawn tests reported RuntimeError _check_not_importing_main and
   connection resets. These are harness failures, not product conclusions; no coverage accepted.
+
+- 2026-10-13T16:06:39+00:00: Recorded command exit 0; command argv SHA-256
+  17705f81939a622ebc4cf02bb9668f3fb645a18fbc14cbf495234d6fa828d01d.
