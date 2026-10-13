@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.5.3 with partial legacy worktree binding.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T10:34:37+00:00",
+  "updated_at": "2026-10-13T10:35:06+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -151,3 +151,6 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
 
 - 2026-10-13T10:34:37+00:00: Runner-permission repair AR-1843 is merged; begin adoption
   requalification at current protected main.
+
+- 2026-10-13T10:35:06+00:00: Recorded command exit 1; command argv SHA-256
+  00faee78c08bd5e6bcc37eafdc52aebb6c92fb432b42b6f777a0956f0df5d575.
