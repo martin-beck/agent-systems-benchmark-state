@@ -27,6 +27,41 @@ cannot select another policy.
 
 ## Upstream extensions
 
+### Predicate evidence ledger
+
+Spec-bound tasks may use `handoffctl accept --predicate ID --candidate-ref PATH`
+with `--candidate-digest` and the evidence artifact's `--evidence-ref` and
+`--evidence-digest`.  Both references are bounded repository-relative regular
+files and their SHA-256 digests are verified before the transition commits.
+Every accepted predicate is bound to the current candidate.  Recording a new
+candidate requires `--reopen`; existing passing predicates become `stale` and
+must be accepted again for the new candidate before `release --status done`.
+This proves artifact identity and binding only, never the semantic correctness
+of arbitrary evidence.  `snapshot TASK` emits `NEXT_UNMET_STEP` when a
+specification still has a predicate without current-candidate passing evidence.
+
+### Assumption revalidation
+
+`handoffctl assumption` records an opt-in, bounded history for inputs whose
+freshness matters to a task. A declaration names a `base` Git HEAD, a
+dependency task revision, or a regular-file `observation`, and explicitly
+chooses `--material` or `--non-material`. The Coordinator compares each active
+material binding before `accept` and `release --status done`. A changed binding
+requires either `assumption revalidate` (which records the new binding) or
+`assumption dispose --reason ...`; non-material assumptions remain visible but
+never block these transitions. This is a local developer workflow control, not
+an authentication, signature, or reviewer gate.
+
+An installation may also opt into `autonomy-limits-policy.json` at the bound
+state root. Its version-1 schema declares one or more bounded maxima for elapsed
+time, retries, commands, local diff size, self-reported cost units, and declared
+external side effects. The file is a tracked, clean, regular Git blob; a missing,
+replaced, dirty, oversized, or malformed policy rejects command admission.
+Limits are workflow controls, not authentication or approval controls. A breach
+records a privacy-safe diagnostic hold on the current task revision. The active
+owner can clear that exact hold with `autonomy-limits dispose` and a concise local
+reason; no signature, account, external service, or reviewer is involved.
+
 Change upstream when behavior affects:
 
 - lifecycle transitions, ownership, revisions or dependencies;

@@ -83,6 +83,15 @@ class TaskSchemaOracleGateTests(unittest.TestCase):
         with self.assertRaises(ValidationError):
             VALIDATOR.validate(value)
 
+    def test_state_coordinator_worktree_family_is_narrowly_admitted(self) -> None:
+        value = record("AR-1811")
+        value["worktree_key"] = "asb-state-coordinator-v070-ar1858-coverage-v070"
+        VALIDATOR.validate(value)
+
+        value["worktree_key"] = "unrelated-worker"
+        with self.assertRaises(ValidationError):
+            VALIDATOR.validate(value)
+
         value = record("AR-1811")
         event = copy.deepcopy(value["oracle_gate"]["events"][0])
         value["oracle_gate"]["events"] = [event] * 33

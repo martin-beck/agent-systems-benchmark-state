@@ -5,13 +5,16 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import os
+import re
 import sqlite3
 import stat
 import tempfile
 from collections.abc import Callable, Iterator, Sequence
 from contextlib import AbstractContextManager, contextmanager, nullcontext
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Protocol, cast
 
@@ -29,6 +32,28 @@ NETWORK_FILESYSTEMS = frozenset(
     {"9p", "afs", "ceph", "cifs", "fuse.sshfs", "gfs2", "glusterfs", "nfs", "nfs4", "smb3"}
 )
 _FACTORY_SENTINEL = object()
+_SHA256_DIGEST = re.compile(r"sha256:[0-9a-f]{64}$")
+_PUBLICATION_KEY = re.compile(r"[0-9a-f]{64}$")
+_COMMENT_ID = re.compile(r"[1-9][0-9]{0,18}$")
+_BARE_SHA256 = re.compile(r"[0-9a-f]{64}$")
+_EXECUTION_ID = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
+_TASK_ID = re.compile(r"AR-[0-9]{4}$")
+_EXECUTION_RESULT_CLASSIFICATIONS = frozenset({"EXIT", "SUBPROCESS_TIMEOUT"})
+_PUBLICATION_STATUSES = frozenset(
+    {
+        "published",
+        "already_published",
+        "dry_run",
+        "deferred_unavailable",
+        "deferred_unauthorized",
+        "deferred_timeout",
+        "deferred_conflict",
+        "deferred_wrong_identity",
+        "deferred_closed",
+        "deferred_moved",
+        "ambiguous",
+    }
+)
 
 
 class StorageContentionError(RuntimeError):
@@ -463,6 +488,8 @@ class Backend(Protocol):
     def load_session_records(self, task_id: str | None = None) -> list[Meta]: ...
 
     def load_checkpoint_records(self, task_id: str | None = None) -> list[Meta]: ...
+
+    def has_command_result(self, task_id: str, owner: str, argv_sha256: str) -> bool: ...
 
     def append_command_result(
         self,
@@ -921,6 +948,21 @@ class SQLiteBackend:
                     (meta["id"], meta["task_revision"], at, "Recorded live worktree state."),
                 )
 
+    def has_command_result(self, task_id: str, owner: str, argv_sha256: str) -> bool:
+        """Check for exact command evidence without opening a writer transaction."""
+        connection = self._connect(read_only=True)
+        try:
+            row = connection.execute(
+                """SELECT 1 FROM command_results
+                   WHERE task_id=? AND owner=? AND argv_sha256=? LIMIT 1""",
+                (task_id, owner, argv_sha256),
+            ).fetchone()
+            return row is not None
+        except sqlite3.Error as error:
+            raise _translate(error) from error
+        finally:
+            connection.close()
+
     def append_command_result(
         self,
         task_id: str,
@@ -938,6 +980,726 @@ class SQLiteBackend:
                    VALUES (?, ?, ?, ?, ?, ?)""",
                 (task_id, owner, command_hash, returncode, classification, recorded_at),
             )
+
+    @staticmethod
+    def _issue_series_state_digest(tasks: Sequence[Task]) -> str:
+        snapshot = [
+            {
+                "depends_on": meta.get("depends_on", []),
+                "id": meta["id"],
+                "parent_task_ref": meta.get("parent_task_ref", ""),
+                "status": meta["status"],
+                "task_revision": meta["task_revision"],
+            }
+            for _path, meta, _body in sorted(tasks, key=lambda task: str(task[1]["id"]))
+        ]
+        encoded = json.dumps(snapshot, separators=(",", ":"), sort_keys=True).encode("utf-8")
+        return "sha256:" + hashlib.sha256(encoded).hexdigest()
+
+    @staticmethod
+    def _ensure_issue_series_schema(connection: sqlite3.Connection) -> None:
+        """Install the additive series tables for databases created before this feature."""
+        # sqlite3.executescript() commits an active transaction before running
+        # its script.  These individual DDL statements retain the enclosing
+        # BEGIN IMMEDIATE transaction, so a legacy-schema upgrade and series
+        # creation either commit together or roll back together.
+        for statement in ISSUE_SERIES_STATEMENTS:
+            connection.execute(statement)
+
+    @staticmethod
+    def _ensure_execution_envelope_schema(connection: sqlite3.Connection) -> None:
+        """Install immutable execution receipts without rewriting task state."""
+        # Keep every DDL statement inside the caller's transaction: a failed
+        # legacy upgrade must leave neither receipt table behind.
+        for statement in EXECUTION_ENVELOPE_STATEMENTS:
+            connection.execute(statement)
+
+    @staticmethod
+    def _normalize_execution_envelope(envelope: Meta) -> Meta:
+        """Return the exact privacy-safe intent shape accepted by durable storage."""
+        required = {
+            "schema_version",
+            "execution_id",
+            "task",
+            "task_revision",
+            "owner",
+            "claim_expires",
+            "worktree_key",
+            "branch",
+            "spec_ref",
+            "spec_revision",
+            "policy_digest",
+            "argv_sha256",
+            "timeout_seconds",
+            "created_at",
+        }
+        if set(envelope) != required:
+            raise ValueError("execution envelope has unexpected fields")
+        execution_id = envelope["execution_id"]
+        task_id = envelope["task"]
+        revision = envelope["task_revision"]
+        if (
+            type(envelope["schema_version"]) is not int
+            or envelope["schema_version"] != 1
+            or not isinstance(execution_id, str)
+            or not _EXECUTION_ID.fullmatch(execution_id)
+            or not isinstance(task_id, str)
+            or not _TASK_ID.fullmatch(task_id)
+            or isinstance(revision, bool)
+            or not isinstance(revision, int)
+            or revision < 1
+        ):
+            raise ValueError("execution envelope has invalid identity")
+        text_fields = ("owner", "claim_expires", "worktree_key", "branch", "created_at")
+        if any(
+            not isinstance(envelope[field], str)
+            or not envelope[field]
+            or "\n" in envelope[field]
+            or "\r" in envelope[field]
+            for field in text_fields
+        ):
+            raise ValueError("execution envelope has unsafe text field")
+        spec_ref = envelope["spec_ref"]
+        spec_revision = envelope["spec_revision"]
+        if (spec_ref is None) != (spec_revision is None):
+            raise ValueError("execution envelope has incomplete spec binding")
+        if spec_ref is not None and (
+            not isinstance(spec_ref, str)
+            or not spec_ref
+            or "\n" in spec_ref
+            or "\r" in spec_ref
+            or isinstance(spec_revision, bool)
+            or not isinstance(spec_revision, int)
+            or spec_revision < 1
+        ):
+            raise ValueError("execution envelope has invalid spec binding")
+        for field in ("policy_digest", "argv_sha256"):
+            value = envelope[field]
+            if not isinstance(value, str) or not _BARE_SHA256.fullmatch(value):
+                raise ValueError(f"execution envelope has invalid {field}")
+        timeout = envelope["timeout_seconds"]
+        if isinstance(timeout, bool) or not isinstance(timeout, (int, float)) or timeout <= 0:
+            raise ValueError("execution envelope has invalid timeout")
+        return {
+            "schema_version": 1,
+            "execution_id": execution_id,
+            "task": task_id,
+            "task_revision": revision,
+            "owner": envelope["owner"],
+            "claim_expires": envelope["claim_expires"],
+            "worktree_key": envelope["worktree_key"],
+            "branch": envelope["branch"],
+            "spec_ref": spec_ref,
+            "spec_revision": spec_revision,
+            "policy_digest": envelope["policy_digest"],
+            "argv_sha256": envelope["argv_sha256"],
+            "timeout_seconds": float(timeout),
+            "created_at": envelope["created_at"],
+        }
+
+    @staticmethod
+    def _normalize_execution_result(result: Meta) -> Meta:
+        """Return one terminal execution outcome; raw subprocess data is excluded."""
+        required = {"schema_version", "execution_id", "classification", "returncode", "recorded_at"}
+        if set(result) != required:
+            raise ValueError("execution result has unexpected fields")
+        execution_id = result["execution_id"]
+        classification = result["classification"]
+        returncode = result["returncode"]
+        recorded_at = result["recorded_at"]
+        if (
+            type(result["schema_version"]) is not int
+            or result["schema_version"] != 1
+            or not isinstance(execution_id, str)
+            or not _EXECUTION_ID.fullmatch(execution_id)
+            or not isinstance(classification, str)
+            or classification not in _EXECUTION_RESULT_CLASSIFICATIONS
+            or isinstance(returncode, bool)
+            or not isinstance(returncode, int)
+            or not isinstance(recorded_at, str)
+            or not recorded_at
+            or "\n" in recorded_at
+            or "\r" in recorded_at
+        ):
+            raise ValueError("execution result has invalid fields")
+        return {
+            "schema_version": 1,
+            "execution_id": execution_id,
+            "classification": classification,
+            "returncode": returncode,
+            "recorded_at": recorded_at,
+        }
+
+    def load_execution_envelopes(self, task_id: str | None = None) -> list[Meta]:
+        """Load immutable intent records in deterministic task/time/identity order."""
+        connection = self._connect(read_only=True)
+        try:
+            try:
+                rows = connection.execute(
+                    """SELECT envelope_json FROM execution_envelopes
+                       WHERE (? IS NULL OR task_id=?)
+                       ORDER BY task_id, created_at, execution_id""",
+                    (task_id, task_id),
+                )
+            except sqlite3.OperationalError as error:
+                if "no such table" not in str(error).lower():
+                    raise
+                return []
+            records: list[Meta] = []
+            for row in rows:
+                try:
+                    value = json.loads(str(row["envelope_json"]))
+                except json.JSONDecodeError as error:
+                    raise StorageCorruptionError(
+                        "SQLITE_CORRUPT: invalid execution envelope"
+                    ) from error
+                if not isinstance(value, dict):
+                    raise StorageCorruptionError("SQLITE_CORRUPT: invalid execution envelope")
+                try:
+                    records.append(self._normalize_execution_envelope(cast(Meta, value)))
+                except ValueError as error:
+                    raise StorageCorruptionError(
+                        "SQLITE_CORRUPT: invalid execution envelope"
+                    ) from error
+            return records
+        except sqlite3.Error as error:
+            raise _translate(error) from error
+        finally:
+            connection.close()
+
+    def record_execution_envelope(self, envelope: Meta) -> Meta:
+        """Durably record one exact intent; duplicate identities must be byte-equivalent."""
+        normalized = self._normalize_execution_envelope(envelope)
+        canonical = json.dumps(normalized, sort_keys=True, separators=(",", ":"))
+        with self.transaction() as connection:
+            self._ensure_execution_envelope_schema(connection)
+            existing = connection.execute(
+                "SELECT envelope_json FROM execution_envelopes WHERE execution_id=?",
+                (normalized["execution_id"],),
+            ).fetchone()
+            if existing is not None:
+                if str(existing["envelope_json"]) != canonical:
+                    raise RuntimeError("execution envelope conflicts with durable record")
+                return normalized
+            connection.execute(
+                """INSERT INTO execution_envelopes(
+                       execution_id, task_id, task_revision, owner, claim_expires,
+                       worktree_key, branch, spec_ref, spec_revision, policy_digest,
+                       argv_sha256, timeout_seconds, created_at, envelope_json
+                   ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                (
+                    normalized["execution_id"],
+                    normalized["task"],
+                    normalized["task_revision"],
+                    normalized["owner"],
+                    normalized["claim_expires"],
+                    normalized["worktree_key"],
+                    normalized["branch"],
+                    normalized["spec_ref"],
+                    normalized["spec_revision"],
+                    normalized["policy_digest"],
+                    normalized["argv_sha256"],
+                    normalized["timeout_seconds"],
+                    normalized["created_at"],
+                    canonical,
+                ),
+            )
+        return normalized
+
+    def begin_execution_envelope(self, envelope: Meta) -> tuple[bool, Meta | None]:
+        """Atomically reserve a launch, or return its existing terminal receipt.
+
+        A prior intent without a result is deliberately reported as uncertain:
+        replaying an arbitrary subprocess could duplicate an external effect.
+        """
+        normalized = self._normalize_execution_envelope(envelope)
+        canonical = json.dumps(normalized, sort_keys=True, separators=(",", ":"))
+        with self.transaction() as connection:
+            self._ensure_execution_envelope_schema(connection)
+            existing = connection.execute(
+                "SELECT envelope_json FROM execution_envelopes WHERE execution_id=?",
+                (normalized["execution_id"],),
+            ).fetchone()
+            if existing is None:
+                connection.execute(
+                    """INSERT INTO execution_envelopes(
+                           execution_id, task_id, task_revision, owner, claim_expires,
+                           worktree_key, branch, spec_ref, spec_revision, policy_digest,
+                           argv_sha256, timeout_seconds, created_at, envelope_json
+                       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                    (
+                        normalized["execution_id"],
+                        normalized["task"],
+                        normalized["task_revision"],
+                        normalized["owner"],
+                        normalized["claim_expires"],
+                        normalized["worktree_key"],
+                        normalized["branch"],
+                        normalized["spec_ref"],
+                        normalized["spec_revision"],
+                        normalized["policy_digest"],
+                        normalized["argv_sha256"],
+                        normalized["timeout_seconds"],
+                        normalized["created_at"],
+                        canonical,
+                    ),
+                )
+                return True, None
+            if str(existing["envelope_json"]) != canonical:
+                raise RuntimeError("execution envelope conflicts with durable record")
+            result = connection.execute(
+                "SELECT result_json FROM execution_results WHERE execution_id=?",
+                (normalized["execution_id"],),
+            ).fetchone()
+            if result is None:
+                return False, None
+            try:
+                value = json.loads(str(result["result_json"]))
+            except json.JSONDecodeError as error:
+                raise StorageCorruptionError("SQLITE_CORRUPT: invalid execution result") from error
+            if not isinstance(value, dict):
+                raise StorageCorruptionError("SQLITE_CORRUPT: invalid execution result")
+            return False, self._normalize_execution_result(cast(Meta, value))
+
+    def load_execution_results(self, task_id: str | None = None) -> list[Meta]:
+        """Load terminal outcomes in the same deterministic order as intent projection."""
+        connection = self._connect(read_only=True)
+        try:
+            try:
+                rows = connection.execute(
+                    """SELECT result_json FROM execution_results AS result
+                       JOIN execution_envelopes AS intent
+                         ON intent.execution_id=result.execution_id
+                       WHERE (? IS NULL OR intent.task_id=?)
+                       ORDER BY intent.task_id, intent.created_at, result.execution_id""",
+                    (task_id, task_id),
+                )
+            except sqlite3.OperationalError as error:
+                if "no such table" not in str(error).lower():
+                    raise
+                return []
+            records: list[Meta] = []
+            for row in rows:
+                try:
+                    value = json.loads(str(row["result_json"]))
+                except json.JSONDecodeError as error:
+                    raise StorageCorruptionError(
+                        "SQLITE_CORRUPT: invalid execution result"
+                    ) from error
+                if not isinstance(value, dict):
+                    raise StorageCorruptionError("SQLITE_CORRUPT: invalid execution result")
+                try:
+                    records.append(self._normalize_execution_result(cast(Meta, value)))
+                except ValueError as error:
+                    raise StorageCorruptionError(
+                        "SQLITE_CORRUPT: invalid execution result"
+                    ) from error
+            return records
+        except sqlite3.Error as error:
+            raise _translate(error) from error
+        finally:
+            connection.close()
+
+    def record_execution_result(self, result: Meta) -> Meta:
+        """Append one terminal outcome only after its durable execution intent exists."""
+        normalized = self._normalize_execution_result(result)
+        canonical = json.dumps(normalized, sort_keys=True, separators=(",", ":"))
+        with self.transaction() as connection:
+            self._ensure_execution_envelope_schema(connection)
+            intent = connection.execute(
+                "SELECT 1 FROM execution_envelopes WHERE execution_id=?",
+                (normalized["execution_id"],),
+            ).fetchone()
+            if intent is None:
+                raise RuntimeError("execution result lacks a durable intent")
+            existing = connection.execute(
+                "SELECT result_json FROM execution_results WHERE execution_id=?",
+                (normalized["execution_id"],),
+            ).fetchone()
+            if existing is not None:
+                if str(existing["result_json"]) != canonical:
+                    raise RuntimeError("execution result conflicts with durable record")
+                return normalized
+            connection.execute(
+                """INSERT INTO execution_results(
+                       execution_id, classification, returncode, recorded_at, result_json
+                   ) VALUES (?, ?, ?, ?, ?)""",
+                (
+                    normalized["execution_id"],
+                    normalized["classification"],
+                    normalized["returncode"],
+                    normalized["recorded_at"],
+                    canonical,
+                ),
+            )
+        return normalized
+
+    def load_issue_series(self) -> list[Meta]:
+        """Return authoritative local issue-series receipts in deterministic identity order."""
+        connection = self._connect(read_only=True)
+        try:
+            try:
+                rows = connection.execute(
+                    """SELECT repository, issue_number, manifest_json, manifest_digest
+                       FROM issue_series ORDER BY repository, issue_number"""
+                )
+            except sqlite3.OperationalError as error:
+                if "no such table" not in str(error).lower():
+                    raise
+                return []
+            records: list[Meta] = []
+            for row in rows:
+                try:
+                    manifest = json.loads(str(row["manifest_json"]))
+                except json.JSONDecodeError as error:
+                    raise StorageCorruptionError(
+                        "SQLITE_CORRUPT: invalid issue-series JSON"
+                    ) from error
+                if not isinstance(manifest, dict):
+                    raise StorageCorruptionError("SQLITE_CORRUPT: invalid issue-series manifest")
+                records.append(
+                    {
+                        "manifest": manifest,
+                        "manifest_digest": str(row["manifest_digest"]),
+                        "series_identity": {
+                            "repository": str(row["repository"]),
+                            "issue_number": int(row["issue_number"]),
+                        },
+                    }
+                )
+            return records
+        except sqlite3.Error as error:
+            raise _translate(error) from error
+        finally:
+            connection.close()
+
+    @staticmethod
+    def _issue_series_publication_identity(receipt: Meta) -> tuple[str, int]:
+        """Extract the normalized local manifest identity from a receipt."""
+        identity = receipt.get("series_identity")
+        if not isinstance(identity, dict):
+            raise ValueError("issue-series publication lacks series identity")
+        repository = identity.get("repository")
+        issue_number = identity.get("issue_number")
+        if (
+            not isinstance(repository, str)
+            or not repository.startswith("github.com/")
+            or repository != repository.lower()
+            or "\n" in repository
+            or "\r" in repository
+        ):
+            raise ValueError("issue-series publication has unsafe repository identity")
+        if isinstance(issue_number, bool) or not isinstance(issue_number, int) or issue_number < 1:
+            raise ValueError("issue-series publication has invalid issue number")
+        return repository, issue_number
+
+    @staticmethod
+    def _normalize_issue_series_publication(receipt: Meta, recorded_at: str) -> Meta:
+        """Return the small, local receipt shape permitted in durable storage."""
+        repository, issue_number = SQLiteBackend._issue_series_publication_identity(receipt)
+        digest = receipt.get("manifest_digest")
+        key = receipt.get("publication_key")
+        status = receipt.get("status")
+        comment_id = receipt.get("comment_id")
+        if not isinstance(digest, str) or not _SHA256_DIGEST.fullmatch(digest):
+            raise ValueError("issue-series publication has invalid manifest digest")
+        if not isinstance(key, str) or not _PUBLICATION_KEY.fullmatch(key):
+            raise ValueError("issue-series publication has invalid publication key")
+        expected_key = hashlib.sha256(
+            f"issue-series-publication-v1\0{repository}\0{issue_number}\0{digest}".encode()
+        ).hexdigest()
+        if key != expected_key:
+            raise ValueError("issue-series publication key disagrees with its identity")
+        if not isinstance(status, str) or status not in _PUBLICATION_STATUSES:
+            raise ValueError("issue-series publication has invalid status")
+        if comment_id is not None and (
+            not isinstance(comment_id, str) or not _COMMENT_ID.fullmatch(comment_id)
+        ):
+            raise ValueError("issue-series publication has invalid comment identifier")
+        if status not in {"published", "already_published"} and comment_id is not None:
+            raise ValueError("deferred issue-series publication cannot carry a comment identifier")
+        if not isinstance(recorded_at, str) or not recorded_at or "\n" in recorded_at:
+            raise ValueError("issue-series publication has invalid recorded time")
+        return {
+            "series_identity": {"repository": repository, "issue_number": issue_number},
+            "manifest_digest": digest,
+            "publication_key": key,
+            "status": status,
+            "comment_id": comment_id,
+            "recorded_at": recorded_at,
+        }
+
+    def load_issue_series_publications(self) -> list[Meta]:
+        """Return normalized publication receipts in deterministic identity order."""
+        connection = self._connect(read_only=True)
+        try:
+            try:
+                rows = connection.execute(
+                    """SELECT repository, issue_number, manifest_digest, publication_key,
+                              status, comment_id, recorded_at
+                       FROM issue_series_publications
+                       ORDER BY repository, issue_number, manifest_digest, publication_key"""
+                )
+            except sqlite3.OperationalError as error:
+                if "no such table" not in str(error).lower():
+                    raise
+                return []
+            return [
+                {
+                    "series_identity": {
+                        "repository": str(row["repository"]),
+                        "issue_number": int(row["issue_number"]),
+                    },
+                    "manifest_digest": str(row["manifest_digest"]),
+                    "publication_key": str(row["publication_key"]),
+                    "status": str(row["status"]),
+                    "comment_id": row["comment_id"],
+                    "recorded_at": str(row["recorded_at"]),
+                }
+                for row in rows
+            ]
+        except sqlite3.Error as error:
+            raise _translate(error) from error
+        finally:
+            connection.close()
+
+    def record_issue_series_publication(
+        self,
+        receipt_or_repository: Meta | str,
+        issue_number: int | None = None,
+        record: Meta | None = None,
+        *,
+        recorded_at: str | None = None,
+    ) -> Meta:
+        """Atomically persist one normalized publication receipt or return its exact replay.
+
+        A duplicate identity or correlation key is idempotent only when every
+        normalized fact agrees.  This avoids silently converting an uncertain
+        request into a different durable outcome.
+
+        The ``repository, issue_number, record`` form is a narrow adapter for
+        the command layer.  Its optional renderer digest is intentionally not
+        copied to durable storage; the local manifest digest is the binding
+        fact.  Direct callers pass the complete normalized receipt and an
+        explicit ``recorded_at`` value.
+        """
+        if isinstance(receipt_or_repository, str):
+            if issue_number is None or record is None or recorded_at is not None:
+                raise ValueError("issue-series publication adapter arguments are incomplete")
+            receipt: Meta = {
+                "series_identity": {
+                    "repository": receipt_or_repository,
+                    "issue_number": issue_number,
+                },
+                "manifest_digest": record.get("manifest_digest"),
+                "publication_key": record.get("publication_key"),
+                "status": record.get("status"),
+                "comment_id": record.get("comment_id") or None,
+            }
+            timestamp = datetime.now(UTC).isoformat()
+        else:
+            if issue_number is not None or record is not None or recorded_at is None:
+                raise ValueError(
+                    "issue-series publication receipt requires an explicit recorded time"
+                )
+            receipt = receipt_or_repository
+            timestamp = recorded_at
+        normalized = self._normalize_issue_series_publication(receipt, timestamp)
+        identity = cast(Meta, normalized["series_identity"])
+        repository = str(identity["repository"])
+        issue_number = int(identity["issue_number"])
+        digest = str(normalized["manifest_digest"])
+        key = str(normalized["publication_key"])
+        with self.transaction() as connection:
+            self._ensure_issue_series_schema(connection)
+            manifest = connection.execute(
+                """SELECT manifest_digest FROM issue_series
+                   WHERE repository=? AND issue_number=?""",
+                (repository, issue_number),
+            ).fetchone()
+            if manifest is None or str(manifest["manifest_digest"]) != digest:
+                raise RuntimeError("issue-series publication does not match a local manifest")
+            existing = connection.execute(
+                """SELECT repository, issue_number, manifest_digest, publication_key,
+                              status, comment_id, recorded_at
+                       FROM issue_series_publications
+                       WHERE (repository=? AND issue_number=? AND manifest_digest=?)
+                          OR publication_key=?""",
+                (repository, issue_number, digest, key),
+            ).fetchone()
+            if existing is not None:
+                replay = {
+                    "series_identity": {
+                        "repository": str(existing["repository"]),
+                        "issue_number": int(existing["issue_number"]),
+                    },
+                    "manifest_digest": str(existing["manifest_digest"]),
+                    "publication_key": str(existing["publication_key"]),
+                    "status": str(existing["status"]),
+                    "comment_id": existing["comment_id"],
+                    "recorded_at": str(existing["recorded_at"]),
+                }
+                if {key: value for key, value in replay.items() if key != "recorded_at"} != {
+                    key: value for key, value in normalized.items() if key != "recorded_at"
+                }:
+                    raise RuntimeError(
+                        "issue-series publication receipt conflicts with durable record"
+                    )
+                return replay
+            connection.execute(
+                """INSERT INTO issue_series_publications(
+                       repository, issue_number, manifest_digest, publication_key,
+                       status, comment_id, recorded_at
+                   ) VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                (
+                    repository,
+                    issue_number,
+                    digest,
+                    key,
+                    normalized["status"],
+                    normalized["comment_id"],
+                    timestamp,
+                ),
+            )
+        return normalized
+
+    def resolve_issue_series_publication(
+        self, repository: str, issue_number: int, record: Meta
+    ) -> Meta:
+        """Replace only a pre-call ambiguous receipt with one normalized outcome."""
+        receipt: Meta = {
+            "series_identity": {"repository": repository, "issue_number": issue_number},
+            "manifest_digest": record.get("manifest_digest"),
+            "publication_key": record.get("publication_key"),
+            "status": record.get("status"),
+            "comment_id": record.get("comment_id") or None,
+        }
+        normalized = self._normalize_issue_series_publication(
+            receipt, datetime.now(UTC).isoformat()
+        )
+        identity = cast(Meta, normalized["series_identity"])
+        with self.transaction() as connection:
+            existing = connection.execute(
+                """SELECT status FROM issue_series_publications
+                   WHERE repository=? AND issue_number=?
+                     AND manifest_digest=? AND publication_key=?""",
+                (
+                    identity["repository"],
+                    identity["issue_number"],
+                    normalized["manifest_digest"],
+                    normalized["publication_key"],
+                ),
+            ).fetchone()
+            if existing is None:
+                raise RuntimeError("issue-series publication reservation is missing")
+            if str(existing["status"]) in {"published", "already_published"}:
+                if (
+                    str(existing["status"]) != str(normalized["status"])
+                    or existing["comment_id"] != normalized["comment_id"]
+                ):
+                    raise RuntimeError("issue-series publication receipt is already final")
+                return normalized
+            connection.execute(
+                """UPDATE issue_series_publications SET status=?, comment_id=?, recorded_at=?
+                   WHERE repository=? AND issue_number=?
+                     AND manifest_digest=? AND publication_key=?""",
+                (
+                    normalized["status"],
+                    normalized["comment_id"],
+                    normalized["recorded_at"],
+                    identity["repository"],
+                    identity["issue_number"],
+                    normalized["manifest_digest"],
+                    normalized["publication_key"],
+                ),
+            )
+        return normalized
+
+    def create_issue_series(
+        self,
+        receipt: Meta,
+        created: Sequence[Task],
+        *,
+        expected_state_digest: str,
+        recorded_at: str,
+    ) -> None:
+        """Create a whole validated series in the same SQLite transaction and CAS fence."""
+        identity = cast(Meta, receipt["series_identity"])
+        repository = str(identity["repository"])
+        issue_number = int(identity["issue_number"])
+        manifest = cast(Meta, receipt["manifest"])
+        manifest_digest = str(receipt["manifest_digest"])
+        with self.transaction() as connection:
+            self._ensure_issue_series_schema(connection)
+            current = self._load(connection)
+            if self._issue_series_state_digest(current) != expected_state_digest:
+                raise RuntimeError("STALE_STATE: re-run issue-series plan before create")
+            if (
+                connection.execute(
+                    "SELECT 1 FROM issue_series WHERE repository=? AND issue_number=?",
+                    (repository, issue_number),
+                ).fetchone()
+                is not None
+            ):
+                raise RuntimeError("issue-series manifest identity already exists")
+            current_ids = {str(meta["id"]) for _path, meta, _body in current}
+            created_ids = [str(meta["id"]) for _path, meta, _body in created]
+            collisions = sorted(current_ids.intersection(created_ids))
+            if collisions:
+                raise RuntimeError(
+                    "issue-series identifiers already exist: " + ", ".join(collisions)
+                )
+            if len(created_ids) != len(set(created_ids)):
+                raise RuntimeError("issue-series contains duplicate task identifiers")
+            connection.execute(
+                """INSERT INTO issue_series(
+                       repository, issue_number, manifest_json, manifest_digest
+                   )
+                   VALUES (?, ?, ?, ?)""",
+                (
+                    repository,
+                    issue_number,
+                    json.dumps(manifest, sort_keys=True, separators=(",", ":")),
+                    manifest_digest,
+                ),
+            )
+            for filename, meta, body in created:
+                connection.execute(
+                    "INSERT INTO tasks VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    (
+                        meta["id"],
+                        filename.name,
+                        json.dumps(meta, sort_keys=True),
+                        body,
+                        meta["task_revision"],
+                        meta["status"],
+                        meta.get("owner", ""),
+                        meta.get("claim_expires", ""),
+                        meta.get("branch", ""),
+                        meta.get("worktree_key", ""),
+                        meta["updated_at"],
+                    ),
+                )
+                connection.executemany(
+                    "INSERT INTO dependencies(task_id, dependency_id) VALUES (?, ?)",
+                    [(meta["id"], value) for value in meta.get("depends_on", [])],
+                )
+                connection.execute(
+                    """INSERT INTO events(task_id, revision, kind, recorded_at, note)
+                       VALUES (?, ?, 'issue-series-create', ?, ?)""",
+                    (
+                        meta["id"],
+                        meta["task_revision"],
+                        recorded_at,
+                        "Created from a locally validated issue-series manifest.",
+                    ),
+                )
+                linkage = cast(Meta, meta["issue_series"])
+                connection.execute(
+                    """INSERT INTO issue_series_members
+                       (repository, issue_number, task_id, member_id) VALUES (?, ?, ?, ?)""",
+                    (repository, issue_number, meta["id"], linkage["member_id"]),
+                )
 
     def retire(
         self,
@@ -963,7 +1725,72 @@ class SQLiteBackend:
             connection.close()
 
 
-SCHEMA = """
+ISSUE_SERIES_STATEMENTS = (
+    """CREATE TABLE IF NOT EXISTS issue_series(
+ repository TEXT NOT NULL,
+ issue_number INTEGER NOT NULL CHECK(issue_number > 0),
+ manifest_json TEXT NOT NULL CHECK(json_valid(manifest_json)),
+ manifest_digest TEXT NOT NULL CHECK(length(manifest_digest)=71),
+ PRIMARY KEY(repository, issue_number)
+) STRICT""",
+    """CREATE TABLE IF NOT EXISTS issue_series_members(
+ repository TEXT NOT NULL,
+ issue_number INTEGER NOT NULL,
+ task_id TEXT NOT NULL REFERENCES tasks(id) ON DELETE CASCADE,
+ member_id TEXT NOT NULL,
+ PRIMARY KEY(repository, issue_number, task_id),
+ UNIQUE(repository, issue_number, member_id),
+ FOREIGN KEY(repository, issue_number)
+   REFERENCES issue_series(repository, issue_number) ON DELETE CASCADE
+) STRICT""",
+    """CREATE TABLE IF NOT EXISTS issue_series_publications(
+ repository TEXT NOT NULL,
+ issue_number INTEGER NOT NULL CHECK(issue_number > 0),
+ manifest_digest TEXT NOT NULL CHECK(length(manifest_digest)=71),
+ publication_key TEXT NOT NULL CHECK(length(publication_key)=64),
+ status TEXT NOT NULL CHECK(status IN (
+   'published','already_published','dry_run','deferred_unavailable',
+   'deferred_unauthorized','deferred_timeout','deferred_conflict',
+   'deferred_wrong_identity','deferred_closed','deferred_moved','ambiguous')),
+ comment_id TEXT CHECK(comment_id IS NULL OR (length(comment_id) BETWEEN 1 AND 128)),
+ recorded_at TEXT NOT NULL,
+ PRIMARY KEY(repository, issue_number, manifest_digest),
+ UNIQUE(publication_key),
+ FOREIGN KEY(repository, issue_number)
+   REFERENCES issue_series(repository, issue_number) ON DELETE CASCADE,
+ CHECK((status IN ('published','already_published')) OR comment_id IS NULL)
+) STRICT""",
+)
+ISSUE_SERIES_SCHEMA = "\n".join(f"{statement};" for statement in ISSUE_SERIES_STATEMENTS)
+
+
+EXECUTION_ENVELOPE_STATEMENTS = (
+    """CREATE TABLE IF NOT EXISTS execution_envelopes(
+ execution_id TEXT PRIMARY KEY CHECK(length(execution_id)=36),
+ task_id TEXT NOT NULL REFERENCES tasks(id) ON DELETE RESTRICT,
+ task_revision INTEGER NOT NULL CHECK(task_revision >= 1),
+ owner TEXT NOT NULL, claim_expires TEXT NOT NULL, worktree_key TEXT NOT NULL,
+ branch TEXT NOT NULL, spec_ref TEXT, spec_revision INTEGER,
+ policy_digest TEXT NOT NULL CHECK(length(policy_digest)=64),
+ argv_sha256 TEXT NOT NULL CHECK(length(argv_sha256)=64),
+ timeout_seconds REAL NOT NULL CHECK(timeout_seconds > 0), created_at TEXT NOT NULL,
+ envelope_json TEXT NOT NULL CHECK(json_valid(envelope_json)),
+ CHECK((spec_ref IS NULL) = (spec_revision IS NULL))
+) STRICT""",
+    """CREATE TABLE IF NOT EXISTS execution_results(
+ execution_id TEXT PRIMARY KEY REFERENCES execution_envelopes(execution_id) ON DELETE RESTRICT,
+ classification TEXT NOT NULL CHECK(classification IN ('EXIT','SUBPROCESS_TIMEOUT')),
+ returncode INTEGER NOT NULL, recorded_at TEXT NOT NULL,
+ result_json TEXT NOT NULL CHECK(json_valid(result_json))
+) STRICT""",
+)
+EXECUTION_ENVELOPE_SCHEMA = "\n".join(
+    f"{statement};" for statement in EXECUTION_ENVELOPE_STATEMENTS
+)
+
+
+SCHEMA = (
+    """
 CREATE TABLE metadata(key TEXT PRIMARY KEY, value TEXT NOT NULL) STRICT;
 CREATE TABLE tasks(
  id TEXT PRIMARY KEY CHECK(id GLOB 'AR-[0-9][0-9][0-9][0-9]'), filename TEXT NOT NULL UNIQUE,
@@ -996,9 +1823,12 @@ CREATE TABLE migrations(sequence INTEGER PRIMARY KEY AUTOINCREMENT, source_backe
 CREATE TABLE checkpoints(name TEXT PRIMARY KEY, revision INTEGER NOT NULL,
  recorded_at TEXT NOT NULL) STRICT;
 """
+    + ISSUE_SERIES_SCHEMA
+    + EXECUTION_ENVELOPE_SCHEMA
+)
 
 
-def create_database(
+def create_database(  # noqa: C901
     path: Path,
     binding: Meta,
     tasks: Sequence[Task],
@@ -1009,6 +1839,10 @@ def create_database(
     command_results: Sequence[Meta] = (),
     session_records: Sequence[Meta] = (),
     checkpoint_records: Sequence[Meta] = (),
+    issue_series: Sequence[Meta] = (),
+    issue_series_publications: Sequence[Meta] = (),
+    execution_envelopes: Sequence[Meta] = (),
+    execution_results: Sequence[Meta] = (),
 ) -> None:
     """Build a complete database beside its final target and install atomically."""
     require_local_filesystem(path)
@@ -1065,6 +1899,104 @@ def create_database(
                         meta["task_revision"],
                         imported_at,
                         "Imported authoritative task record.",
+                    ),
+                )
+            for receipt in issue_series:
+                identity = cast(Meta, receipt["series_identity"])
+                repository = str(identity["repository"])
+                issue_number = int(identity["issue_number"])
+                manifest = cast(Meta, receipt["manifest"])
+                connection.execute(
+                    """INSERT INTO issue_series(
+                           repository, issue_number, manifest_json, manifest_digest
+                       ) VALUES (?, ?, ?, ?)""",
+                    (
+                        repository,
+                        issue_number,
+                        json.dumps(manifest, sort_keys=True, separators=(",", ":")),
+                        str(receipt["manifest_digest"]),
+                    ),
+                )
+                connection.executemany(
+                    """INSERT INTO issue_series_members(
+                           repository, issue_number, task_id, member_id
+                       ) VALUES (?, ?, ?, ?)""",
+                    [
+                        (repository, issue_number, str(member_id), str(member_id))
+                        for member_id in receipt["task_ids"]
+                    ],
+                )
+            for receipt in issue_series_publications:
+                normalized = SQLiteBackend._normalize_issue_series_publication(receipt, imported_at)
+                identity = cast(Meta, normalized["series_identity"])
+                connection.execute(
+                    """INSERT INTO issue_series_publications(
+                           repository, issue_number, manifest_digest, publication_key,
+                           status, comment_id, recorded_at
+                       ) VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                    (
+                        identity["repository"],
+                        identity["issue_number"],
+                        normalized["manifest_digest"],
+                        normalized["publication_key"],
+                        normalized["status"],
+                        normalized["comment_id"],
+                        normalized["recorded_at"],
+                    ),
+                )
+            normalized_envelopes = [
+                SQLiteBackend._normalize_execution_envelope(envelope)
+                for envelope in execution_envelopes
+            ]
+            normalized_results = [
+                SQLiteBackend._normalize_execution_result(result) for result in execution_results
+            ]
+            envelope_ids = {str(envelope["execution_id"]) for envelope in normalized_envelopes}
+            if len(envelope_ids) != len(normalized_envelopes):
+                raise ValueError("execution envelope import has duplicate identities")
+            if any(
+                str(result["execution_id"]) not in envelope_ids for result in normalized_results
+            ):
+                raise ValueError("execution result import lacks an execution intent")
+            if len({str(result["execution_id"]) for result in normalized_results}) != len(
+                normalized_results
+            ):
+                raise ValueError("execution result import has duplicate identities")
+            for envelope in normalized_envelopes:
+                connection.execute(
+                    """INSERT INTO execution_envelopes(
+                           execution_id, task_id, task_revision, owner, claim_expires,
+                           worktree_key, branch, spec_ref, spec_revision, policy_digest,
+                           argv_sha256, timeout_seconds, created_at, envelope_json
+                       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                    (
+                        envelope["execution_id"],
+                        envelope["task"],
+                        envelope["task_revision"],
+                        envelope["owner"],
+                        envelope["claim_expires"],
+                        envelope["worktree_key"],
+                        envelope["branch"],
+                        envelope["spec_ref"],
+                        envelope["spec_revision"],
+                        envelope["policy_digest"],
+                        envelope["argv_sha256"],
+                        envelope["timeout_seconds"],
+                        envelope["created_at"],
+                        json.dumps(envelope, sort_keys=True, separators=(",", ":")),
+                    ),
+                )
+            for result in normalized_results:
+                connection.execute(
+                    """INSERT INTO execution_results(
+                           execution_id, classification, returncode, recorded_at, result_json
+                       ) VALUES (?, ?, ?, ?, ?)""",
+                    (
+                        result["execution_id"],
+                        result["classification"],
+                        result["returncode"],
+                        result["recorded_at"],
+                        json.dumps(result, sort_keys=True, separators=(",", ":")),
                     ),
                 )
             connection.execute(

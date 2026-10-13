@@ -10,18 +10,14 @@ strictly versioned and must reject unknown fields before a caller treats it as v
 | Coordinator role assignment | `schema/role-assignment.schema.json` | `tools/role_assignment.py` | `tests/test_role_assignment.py` |
 | Task specification | `schema/task-spec.schema.json` | `tools/task_spec.py` | `tests/test_task_spec.py` |
 | Project task-spec evidence policy | `schema/task-spec-policy.schema.json` | `tools/task_spec.py` | `tests/test_task_spec.py`, `tests/test_handoffctl.py`, and `tests/test_sqlite_storage.py` |
+| Project autonomy limits policy | `schema/autonomy-limits-policy.schema.json` | `tools/autonomy_limits.py` | `tests/test_autonomy_limits.py` |
 | Human TUI gate session | `schema/task-record.schema.json#/$defs/humanSession` | `tools.oracle_lifecycle.py` | `tests/test_oracle_lifecycle.py`, `tests/test_handoffctl.py`, and `formal/oracle/OracleInteractionGates.tla` |
+| Resume card | versioned JSON and text projection | `tools/resume_card.py` | `tests/test_resume_card.py` |
 | Capability matrix formal contract | `formal/roles/CapabilityMatrix.tla` and `formal/roles/CapabilityMatrix.cfg` | `tools/capability_matrix_correspondence.py` | `tests/test_capability_matrix_formal.py` |
 
 The role registry is descriptive authorization input. It does not itself authorize a mutation,
 release, rollback, or Dispatch operation; those decisions remain owned by the Coordinator
 runtime and its durable state.
-
-Role assignment expiry is fail-closed for `roles.list`, `roles.check`, doctor, and runtime
-admission. The exact-revision `roles.remove` command is the bounded cleanup exception: it may
-remove the explicitly named structurally valid assignment after expiry, including when another
-assignment is expired, but it still rejects malformed state, invalid registry references,
-invalid evidence, missing targets, and stale revisions.
 
 The task-spec evidence policy is an optional, tracked file at the bound state repository root.
 It can add bounded evidence-class names but cannot remove or reinterpret Coordinator's built-in
