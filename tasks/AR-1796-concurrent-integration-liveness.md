@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-13T20:31:25+00:00",
+  "updated_at": "2026-10-13T20:31:56+00:00",
   "worktree_key": ""
 }
 ---
@@ -69,3 +69,11 @@ workers checkpoint, retry, and continue useful work during integration churn.
   product or release gate changes made.
 
 - 2026-10-13T20:31:25+00:00: Claimed by codex-ar1796-liveness2-luna.
+
+- 2026-10-13T20:31:56+00:00: Live audit 2026-10-13: current protected remote main is
+  870331be533ea1a0ba9645ddbb690df56af84935; historical AR-1796 repair merge
+  78b4cf216d8159171c85c2229e59a163aa432833 is not an ancestor, and recorded 31a7e14 is absent.
+  Public PR lookup reports historical PR #115 as merge 004d87252b065679d80ca9674356b47146754528, not
+  78b4cf216d. No asb-0.5.2 tag or fresh full-exhaustive formal attestation is present. No
+  product/release mutation is safe; next action remains reconcile current-head identity then obtain
+  fresh exact-head full-exhaustive attestation.
