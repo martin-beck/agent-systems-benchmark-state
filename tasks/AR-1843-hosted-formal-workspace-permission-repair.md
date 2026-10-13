@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair hosted formal TLC workspace permissions for the ASB state runner.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Hosted formal workspace permission repair",
-  "updated_at": "2026-10-13T10:19:04+00:00",
+  "updated_at": "2026-10-13T10:19:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1843-formal-workspace-repair"
 }
 ---
@@ -139,3 +139,6 @@ formal assertion, timeout, or resource-bound gate may be removed or weakened.
   TLC_WORK_ROOT values fail closed with exit 64 and the absolute-path diagnostic; focused unittest
   passes. Full unittest discovery remains environment-limited by the pre-existing
   test_git_authority_adapter SQLite collision and was interrupted after the documented hang.
+
+- 2026-10-13T10:19:38+00:00: Recorded command exit 0; command argv SHA-256
+  15a4f5c3826be6662b711af7e5c28c954d80d98b4d110937ae86b3541a4c7ead.
