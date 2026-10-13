@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T17:21:52+00:00",
   "depends_on": [],
   "id": "AR-1858",
-  "next_action": "Add narrow coverage tests in the exact v0.7.0 source worktree; preserve the 95% floor and PR #145 unmerged.",
+  "next_action": "Correct the handoffctl test invocation so Python imports the bound v0.7.0 source worktree before rerunning coverage; reject the invalid 1,562-test artifact.",
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T15:21:52+00:00",
+  "updated_at": "2026-10-13T15:21:57+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -54,3 +54,8 @@ artifact. Do not lower the threshold or merge PR #145.
   a73d18df8e2134bc080c79b5ec61cf23cc007d1ae5cce9ecca32663a99cac5ef.
 
 - 2026-10-13T15:21:52+00:00: Heartbeat by ar1858-coverage-v070-luna.
+
+- 2026-10-13T15:21:57+00:00: Invalid run recorded: 1,562 tests, 105 import errors and 9 failures
+  because handoffctl's canonical-state cwd put
+  /srv/data/projects/agent-systems-benchmark-state/tools ahead of the bound v0.7.0 worktree despite
+  PYTHONPATH. No coverage conclusion or code change was accepted.

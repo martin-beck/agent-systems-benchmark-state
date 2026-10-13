@@ -2058,7 +2058,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
-| Next action | Add narrow coverage tests in the exact v0.7.0 source worktree; preserve the 95&#37; floor and PR #145 unmerged. |
+| Next action | Correct the handoffctl test invocation so Python imports the bound v0.7.0 source worktree before rerunning coverage; reject the invalid 1,562-test artifact. |
 
 
 ## Dependency graph
