@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1857-coverage-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T19:43:22+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1857",
   "next_action": "Analyze exact 94% coverage artifact and add narrow tests for uncovered first-party paths; preserve 95% threshold and PR #145 unmerged.",
-  "owner": "ar1857-coverage-repair-luna",
+  "owner": "",
   "plan": "../plans/AR-1857-coverage-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1857.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Restore the full-gate coverage floor after the terminal 94% observation.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Full-gate coverage floor repair",
-  "updated_at": "2026-10-13T19:28:22+00:00",
+  "updated_at": "2026-10-13T19:28:45+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1857-coverage-repair"
 }
 ---
@@ -89,3 +89,7 @@ modify AR-1841 or AR-1856 ownership and must not weaken formal/resource gates.
   handoffctl before final doctor/snapshot reconciliation; no product changes.
 
 - 2026-10-13T19:28:22+00:00: Claimed by ar1857-coverage-repair-luna.
+
+- 2026-10-13T19:28:45+00:00: Generated pycache removed after bounded resume; no product mutation.
+  Exact coverage evidence remains 94.6951% below unchanged 95% floor; no narrow repair justified;
+  AR-1859 remains scoped successor; PR #145 closed/unmerged. Release ownerless.

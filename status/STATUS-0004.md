@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-### Accessible dependency index
-
 | AR | Prerequisites | Dependents |
 | --- | --- | --- |
 | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | None | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) |

@@ -343,12 +343,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1857](../tasks/AR-1857-coverage-repair.md): Full-gate coverage floor repair | ar1857-coverage-repair-luna | Restore the full-gate coverage floor after the terminal 94&#37; observation. | Analyze exact 94&#37; coverage artifact and add narrow tests for uncovered first-party paths; preserve 95&#37; threshold and PR #145 unmerged. |
-
 ### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -360,7 +354,7 @@
 | P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | Unclaimed | Align role-store authorization tests with Coordinator v0.7.4. | Obtain proper Coordinator/vendor adoption or rebase that restores the locked coordinator.vendor.json digest for tools/handoffctl.py (expected 64d86a03bf85dfb6f411b313af17f5575054ff7e790523b8c460b1d955ed440f; actual db84cc13cbc76abde5ea32d85898a33e90d64a133a0bf76f49e91b7ca33b6c85), without editing the vendor snapshot or weakening authorization; then rerun bounded full gates, independent review, and exact-head CI for 7b46c6b076 before any PR #148 update. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | Unclaimed | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
 
-### Blocked (87)
+### Blocked (88)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -433,6 +427,7 @@
 | P0 | [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md): Enforce protected-main admission for AR-1722 recovery | Unclaimed | Apply and independently verify ASB&#x27;s merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub. | Require all exact-main post-merge workflows for 2f52ecbaf79ae8316e0c2a42ad4c4a79dae5d9eb terminal-success, then invoke the merged typed settings apply once and audit normalized live state; stop on any rejected, partial, or ambiguous result. |
 | P0 | [AR-1826](../tasks/AR-1826-explicit-setup-config-contract.md): Define explicit setup configuration and plan-binding contract | Unclaimed | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. | Supported repair unavailable in vendored handoffctl v0.7.5: bind-worktree rejects retained legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract while branch is empty, and no coordinator command clears the pair. Add/use an explicitly reviewed coordinator repair version, then re-claim, bind codex/ar-1826-explicit-setup-contract to the exact non-overlapping worktree, and requalify reviewed e9d95999 onto current main d0e6a28. |
 | P0 | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md): Coordinator v0.5.3 adoption | Unclaimed | Adopt Coordinator v0.7.4 with partial legacy worktree binding. | Wait for scoped v0.7.4 compatibility repairs AR-1851 (AR-1793), AR-1852 (roles), AR-1853 (complexity), and AR-1849 (formal admission/workspace) to merge; then rebase PR #142 onto protected main, rerun candidate-focused/full gates, obtain fresh exact-head independent review and CI. |
+| P0 | [AR-1857](../tasks/AR-1857-coverage-repair.md): Full-gate coverage floor repair | Unclaimed | Restore the full-gate coverage floor after the terminal 94&#37; observation. | Analyze exact 94&#37; coverage artifact and add narrow tests for uncovered first-party paths; preserve 95&#37; threshold and PR #145 unmerged. |
 | P0 | [AR-1858](../tasks/AR-1858-coverage-v070.md): v0.7.0 coverage floor repair | Unclaimed | Repair the v0.7.0 coordinator coverage floor deficit. | AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
