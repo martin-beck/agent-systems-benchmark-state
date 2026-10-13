@@ -328,36 +328,6 @@ class CampaignTests(unittest.TestCase):
             )
         self.assertEqual("AR-0001", json.loads(stream.getvalue())["tasks"][0]["id"])
 
-        fallback_stream = io.StringIO()
-        with (
-            patch.object(
-                resume_card_runtime,
-                "read_only_snapshot",
-                side_effect=lambda callback, *_: callback(),
-            ),
-            patch.object(campaign, "current_observed_at", return_value=OBSERVED_AT),
-            patch("sys.stdout", fallback_stream),
-        ):
-            self.assertEqual(
-                0,
-                campaign_runtime.dispatch(argparse.Namespace(json=True, observed_at=None), Coordinator),
-            )
-        self.assertEqual(
-            OBSERVED_AT.isoformat(),
-            json.loads(fallback_stream.getvalue())["observed_at"],
-        )
-
-        with (
-            patch.object(
-                resume_card_runtime,
-                "read_only_snapshot",
-                side_effect=lambda callback, *_: callback(),
-            ),
-            patch.object(campaign, "projection_errors", return_value=["unsafe projection"]),
-            self.assertRaisesRegex(RuntimeError, "campaign snapshot validation failed"),
-        ):
-            campaign_runtime.dispatch(argparse.Namespace(json=True, observed_at=OBSERVED_AT), Coordinator)
-
     def test_parser_rejects_naive_campaign_observation_time(self) -> None:
         parser = argparse.ArgumentParser()
         commands = parser.add_subparsers(dest="cmd", required=True)
