@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T13:09:43+00:00",
+  "updated_at": "2026-10-13T13:09:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -296,3 +296,6 @@ retain absolute-path and privacy boundaries, and add regression coverage.
   4eab26800444d22a3cf00cf40616c62781f0dbdfbba6e92ebd7c1f900a3112d5.
 
 - 2026-10-13T13:09:43+00:00: Heartbeat by ar1849-formal-admission-env-luna.
+
+- 2026-10-13T13:09:46+00:00: Recorded command exit 0; command argv SHA-256
+  ad5524ec1205df6abf38071a85873df84d3e8303a1aa1f329437666a130fdf38.
