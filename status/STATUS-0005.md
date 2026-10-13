@@ -327,16 +327,15 @@
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | ar1849-formal-admission-env-luna | Repair workflow-wide private TLC admission environment for formal CI. | Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI. |
 | P1 | [AR-1851](../tasks/AR-1851-ar1793-v074-contracts.md): AR-1793 v0.7.4 compatibility contracts | ar1851-ar1793-v074-luna | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. | Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification. |
-| P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | ar1852-role-store-luna | Align role-store authorization tests with Coordinator v0.7.4. | Blocked pending upstream Coordinator AR-0032 role-store authorization repair/spec adoption. Once AR-0032 is released, bind exact upstream evidence, rebase/adopt without changing immutable vendor snapshot, rerun focused/full ASB gates, obtain independent review, and update PR148. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | ar1853-complexity-luna | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
 
-### Open (5)
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -345,6 +344,7 @@
 | P0 | [AR-1826](../tasks/AR-1826-explicit-setup-config-contract.md): Define explicit setup configuration and plan-binding contract | Unclaimed | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. | Coordinator bind-worktree remains blocked: its safety precondition requires both branch and worktree_key empty, but legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract is retained while branch is empty. No active worker/process; product worktree is clean at reviewed e9d95999 (codex/ar-1826-explicit-setup-contract). Implement a coordinator-mediated legacy-pair repair or use the supported repair version, then bind this exact branch/key and requalify e9d95999 onto current main d0e6a28 with fresh exact-head review/CI. |
 | P0 | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md): Coordinator v0.5.3 adoption | Unclaimed | Adopt Coordinator v0.7.4 with partial legacy worktree binding. | Re-vendor exact signed Coordinator v0.7.4 at 2ea256d0c0bdcb9922c88e6778a104b33c0e47da, rerun focused/full gates, then exact-head review and CI. |
 | P0 | [AR-1850](../tasks/AR-1850-development-tui-interactive-lifetime.md): Repair development ASB TUI interactive lifetime | Unclaimed | Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline. | Promote, claim an isolated current-main worktree, reproduce the development &#96;asb tui&#96; PTY lifetime failure, and repair the launcher without weakening broker admission or cleanup. |
+| P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | Unclaimed | Align role-store authorization tests with Coordinator v0.7.4. | Blocked pending upstream Coordinator AR-0032 role-store authorization repair/spec adoption. Once AR-0032 is released, bind exact upstream evidence, rebase/adopt without changing immutable vendor snapshot, rerun focused/full ASB gates, obtain independent review, and update PR148. |
 
 ### Blocked (84)
 
