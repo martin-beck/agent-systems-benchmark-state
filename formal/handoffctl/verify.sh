@@ -24,11 +24,18 @@ elif [[ "$#" -ne 0 ]]; then
 fi
 readonly EXECUTION_CLASSIFICATION
 readonly ATTESTATION="${TLC_ATTESTATION_PATH:-${TMPDIR:-/tmp}/handoffctl-${TIER}-attestation.json}"
+readonly WORK_ROOT="${TLC_WORK_ROOT:-${TLC_RUNTIME_ROOT:-${TMPDIR:-/tmp}/agent-workflow-coordinator-tlc}}"
+if [[ "${WORK_ROOT}" != /* ]]; then
+    echo "TLC_WORK_ROOT must be an absolute path" >&2
+    exit 64
+fi
+install -d -m 700 -- "${WORK_ROOT}"
+chmod 700 -- "${WORK_ROOT}"
 
 readonly TLA_VERSION=1.7.4
 readonly TLA_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88
 readonly SPEC_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-readonly TEMP_DIR="$(mktemp -d)"
+readonly TEMP_DIR="$(mktemp -d "${WORK_ROOT}/run.XXXXXXXX")"
 readonly MANIFEST="${TEMP_DIR}/outcomes.manifest"
 : > "${MANIFEST}"
 trap 'rm -rf -- "${TEMP_DIR}"' EXIT
