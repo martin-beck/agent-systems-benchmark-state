@@ -47,7 +47,7 @@
     "claim_expires": {"type": "string", "maxLength": 40},
     "worktree_key": {
       "type": "string",
-      "pattern": "^(|agent-systems-benchmark(?:-[a-z0-9-]+)?)$"
+      "pattern": "^(|(?:agent-systems-benchmark|asb-state-coordinator-v070)(?:-[a-z0-9-]+)?)$"
     },
     "branch": {"type": "string", "maxLength": 160},
     "checkpoint_commit": {"type": "string", "pattern": "^(|[0-9a-f]{40})$"},
