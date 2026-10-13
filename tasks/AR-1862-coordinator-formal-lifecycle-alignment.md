@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar1862-formal-lifecycle",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-13T19:52:41+00:00",
   "depends_on": [],
@@ -12,10 +12,10 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T17:52:41+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-10-13T17:52:48+00:00",
+  "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
 
@@ -32,3 +32,6 @@ vendored Coordinator bytes or mutate AR-1826.
   lifecycle inventory seam; promote narrow compatibility repair.
 
 - 2026-10-13T17:52:41+00:00: Claimed by ar1841-v053-adoption-luna.
+
+- 2026-10-13T17:52:48+00:00: Bound worktree agent-systems-benchmark-state-ar-1862-formal-lifecycle
+  on branch codex/ar1862-formal-lifecycle.
