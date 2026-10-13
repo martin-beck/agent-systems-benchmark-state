@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T17:35:13+00:00",
+  "claim_expires": "2026-10-13T17:56:04+00:00",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "Correct the handoffctl test invocation so Python imports the bound v0.7.0 source worktree before rerunning coverage; reject the invalid 1,562-test artifact.",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T15:53:13+00:00",
+  "updated_at": "2026-10-13T15:56:04+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -76,3 +76,5 @@ artifact. Do not lower the threshold or merge PR #145.
 - 2026-10-13T15:53:13+00:00: Recorded command timeout; classification=SUBPROCESS_TIMEOUT;
   deadline=1800.0s; command argv SHA-256
   26c27fc541a549d6ae2db23c5201f002183c032e245c3d787413c5526f418d96.
+
+- 2026-10-13T15:56:04+00:00: Heartbeat by ar1858-coverage-v070-luna.
