@@ -2058,7 +2058,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
-| Next action | Exact-worktree bounded split remains on test_issue_series_handoffctl.py; multiprocessing/resource-tracker hang has persisted ~2m18s under 300s bound. Heartbeat refreshed. Preserve invalid partial coverage; after timeout classify and isolate individual test or fixture. |
+| Next action | The 300s split timeout is classified. Individual-test isolation is required; suspect test_issue_series_handoffctl multiprocessing cases (especially sixteen_processes_*). Run each suspect test with a 90s bound from exact worktree before code changes. |
 
 
 ## Dependency graph

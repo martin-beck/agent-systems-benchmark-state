@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T18:04:29+00:00",
   "depends_on": [],
   "id": "AR-1858",
-  "next_action": "Exact-worktree bounded split remains on test_issue_series_handoffctl.py; multiprocessing/resource-tracker hang has persisted ~2m18s under 300s bound. Heartbeat refreshed. Preserve invalid partial coverage; after timeout classify and isolate individual test or fixture.",
+  "next_action": "The 300s split timeout is classified. Individual-test isolation is required; suspect test_issue_series_handoffctl multiprocessing cases (especially sixteen_processes_*). Run each suspect test with a 90s bound from exact worktree before code changes.",
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:04:32+00:00",
+  "updated_at": "2026-10-13T16:04:46+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -129,3 +129,8 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-13T16:04:32+00:00: Recorded command exit 0; command argv SHA-256
   456ca17979b216b59b92c8ba2a4f92680ae30579250fbebcaae5e558d62840e9.
+
+- 2026-10-13T16:04:46+00:00: Terminal split outcome: test_issue_series_handoffctl.py timed out at
+  300s (handoffctl recorded 16:04:09Z), after hanging with multiprocessing resource_tracker/zombie
+  child. No tests after this file ran; /tmp/ar1858-split-all.coverage remains invalid partial
+  evidence.
