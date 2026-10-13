@@ -88,6 +88,40 @@ _AUTHORITY_TABLES = {
         "finalized",
     ),
     "checkpoints": ("name", "revision", "recorded_at"),
+    "execution_envelopes": (
+        "execution_id",
+        "task_id",
+        "task_revision",
+        "owner",
+        "claim_expires",
+        "worktree_key",
+        "branch",
+        "spec_ref",
+        "spec_revision",
+        "policy_digest",
+        "argv_sha256",
+        "timeout_seconds",
+        "created_at",
+        "envelope_json",
+    ),
+    "execution_results": (
+        "execution_id",
+        "classification",
+        "returncode",
+        "recorded_at",
+        "result_json",
+    ),
+    "issue_series": ("repository", "issue_number", "manifest_json", "manifest_digest"),
+    "issue_series_members": ("repository", "issue_number", "task_id", "member_id"),
+    "issue_series_publications": (
+        "repository",
+        "issue_number",
+        "manifest_digest",
+        "publication_key",
+        "status",
+        "comment_id",
+        "recorded_at",
+    ),
     "sqlite_sequence": ("name", "seq"),
 }
 _AUTHORITY_ORDER = {
@@ -98,6 +132,11 @@ _AUTHORITY_ORDER = {
     "command_results": "sequence",
     "migrations": "sequence",
     "checkpoints": "name",
+    "execution_envelopes": "execution_id",
+    "execution_results": "execution_id",
+    "issue_series": "repository,issue_number",
+    "issue_series_members": "repository,issue_number,task_id",
+    "issue_series_publications": "repository,issue_number,manifest_digest",
     "sqlite_sequence": "name",
 }
 _SQLITE_SIDECARS = ("-wal", "-shm")
@@ -508,10 +547,14 @@ def _authority_rows(connection: sqlite3.Connection) -> dict[str, object]:
             "SELECT name FROM sqlite_schema WHERE type='table' AND name NOT LIKE 'sqlite_%'"
         )
     }
-    if tables != set(_AUTHORITY_TABLES) - {"sqlite_sequence"}:
+    optional_execution_tables = {"execution_envelopes", "execution_results"}
+    required_tables = set(_AUTHORITY_TABLES) - {"sqlite_sequence"} - optional_execution_tables
+    if tables != required_tables and tables != required_tables | optional_execution_tables:
         raise AuthorityError("SQLite authority schema is invalid")
     result: dict[str, object] = {"schema": schema}
     for table, columns in _AUTHORITY_TABLES.items():
+        if table not in tables:
+            continue
         selected = ",".join(columns)
         order = _AUTHORITY_ORDER[table]
         rows = [

@@ -562,3 +562,18 @@ class AdmittedControlStoreTests(unittest.TestCase):
         )
         self.assertEqual(self.record, result)
         self.assertEqual(["snapshot", "order", "hold", "write"], events)
+
+    def test_scope_context_manager_failure_is_normalized_before_store_result(self) -> None:
+        class Scope:
+            def assert_ordered(self) -> None:
+                pass
+
+            def hold(self) -> Any:
+                raise AttributeError("scope context is unavailable")
+
+        class Store:
+            def cas(self, *_args: object, **_kwargs: object) -> dict[str, object]:
+                raise AssertionError("store must not be reached")
+
+        with self.assertRaisesRegex(AdmissionLeaseError, "scope is invalid"):
+            admitted_cas(Store(), 1, self.record, self.lease, self.recheck, Scope())
