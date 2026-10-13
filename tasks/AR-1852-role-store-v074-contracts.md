@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T15:30:17+00:00",
   "depends_on": [],
   "id": "AR-1852",
-  "next_action": "Restore strict doctor and unknown-owner rejection assertions, or provide upstream v0.7.4 contract evidence and runtime repair; rerun focused/full gates and obtain fresh independent review.",
+  "next_action": "Blocked pending upstream Coordinator AR-0032 role-store authorization repair/spec adoption. Once AR-0032 is released, bind exact upstream evidence, rebase/adopt without changing immutable vendor snapshot, rerun focused/full ASB gates, obtain independent review, and update PR148.",
   "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:30:57+00:00",
+  "updated_at": "2026-10-13T13:36:58+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -72,3 +72,7 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   to 0 and test_handoffctl_lifecycle_admission_uses_durable_role_store from rejecting unknown-owner
   to accepting it. No runtime code or verified upstream contract justifies weakening these
   fail-closed authorization checks; the patch masks the regression. Do not merge.
+
+- 2026-10-13T13:36:58+00:00: Dependency handoff: upstream AR-0032 owns strict role-store
+  authorization semantics; ASB AR-1852 remains implementation/integration follow-up. PR148 stays
+  unmerged.

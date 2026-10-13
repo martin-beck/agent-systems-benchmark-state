@@ -1974,7 +1974,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align role-store authorization tests with Coordinator v0.7.4. |
-| Next action | Restore strict doctor and unknown-owner rejection assertions, or provide upstream v0.7.4 contract evidence and runtime repair; rerun focused/full gates and obtain fresh independent review. |
+| Next action | Blocked pending upstream Coordinator AR-0032 role-store authorization repair/spec adoption. Once AR-0032 is released, bind exact upstream evidence, rebase/adopt without changing immutable vendor snapshot, rerun focused/full ASB gates, obtain independent review, and update PR148. |
 
 ### AR-1853 — Complexity v0.7.4 compatibility contract
 
