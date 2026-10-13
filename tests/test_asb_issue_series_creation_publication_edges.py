@@ -1,7 +1,5 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
-# mypy: disable-error-code="unused-ignore,attr-defined"
-
 """ASB-owned creation and live-publication coverage for issue-series service."""
 
 from __future__ import annotations
@@ -10,9 +8,12 @@ import subprocess
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from typing import cast
 from unittest.mock import Mock, patch
 
 from tools import issue_series_service as service
+from tools.sqlite_storage import Meta, Task
+from tools.task_spec import EvidencePolicy
 
 
 class CommitThenExportError(RuntimeError):
@@ -50,7 +51,7 @@ class IssueSeriesCreationPublicationEdgesTests(unittest.TestCase):
             ),
             patch.object(service, "plan_issue_series", planner),
         ):
-            result = service.load_issue_series_plan(manifest, tasks)  # type: ignore[arg-type]
+            result = service.load_issue_series_plan(manifest, cast(list[Task], tasks))
 
         self.assertEqual('{"manifest_digest":"sha256:ok"}', result)
         self.assertEqual(manifest, planner.call_args.args[0])
@@ -87,7 +88,9 @@ class IssueSeriesCreationPublicationEdgesTests(unittest.TestCase):
                 r"github\.com/acme/product#17; disk full",
             ),
         ):
-            service.create_sqlite_issue_series(receipt, created, object())  # type: ignore[arg-type]
+            service.create_sqlite_issue_series(
+                cast(Meta, receipt), cast(list[Task], created), cast(EvidencePolicy, object())
+            )
 
         backend.create_issue_series.assert_called_once_with(
             receipt,
@@ -108,8 +111,8 @@ class IssueSeriesCreationPublicationEdgesTests(unittest.TestCase):
             ),
             patch.object(service, "repository_slug", side_effect=lambda value: value, create=True),
             patch.object(service, "_live_existing_issue_series_comment", return_value=None),
-            patch.object(service.shutil, "which", return_value="/usr/bin/gh"),
-            patch.object(service.subprocess, "run", return_value=response) as run,
+            patch("tools.issue_series_service.shutil.which", return_value="/usr/bin/gh"),
+            patch("tools.issue_series_service.subprocess.run", return_value=response) as run,
         ):
             outcome = service._live_issue_series_publication(
                 "github.com/acme/product", 17, digest, "bounded publication"
@@ -132,10 +135,9 @@ class IssueSeriesCreationPublicationEdgesTests(unittest.TestCase):
             ),
             patch.object(service, "repository_slug", side_effect=lambda value: value, create=True),
             patch.object(service, "_live_existing_issue_series_comment", return_value=None),
-            patch.object(service.shutil, "which", return_value="/usr/bin/gh"),
-            patch.object(
-                service.subprocess,
-                "run",
+            patch("tools.issue_series_service.shutil.which", return_value="/usr/bin/gh"),
+            patch(
+                "tools.issue_series_service.subprocess.run",
                 side_effect=subprocess.TimeoutExpired("gh", 15),
             ),
         ):

@@ -1,7 +1,5 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
-# mypy: disable-error-code="no-any-return,attr-defined,operator,index"
-
 """Focused semantic and CLI coverage for upgrade-contract validation."""
 
 from __future__ import annotations
@@ -9,9 +7,13 @@ from __future__ import annotations
 import importlib.util
 import json
 import unittest
+from collections.abc import Callable
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from typing import Any, cast
 from unittest.mock import Mock, patch
+
+from jsonschema import Draft202012Validator
 
 from tools import validate_upgrade_contract as validator
 
@@ -25,11 +27,11 @@ _FIXTURE_SPEC.loader.exec_module(_fixture)
 
 
 class UpgradeContractValidatorCoverageTests(unittest.TestCase):
-    def document(self) -> dict[str, object]:
-        return _fixture.contract()
+    def document(self) -> dict[str, Any]:
+        return cast(dict[str, Any], _fixture.contract())
 
     def test_semantic_release_identity_edges_after_structural_validation(self) -> None:
-        checks: tuple[tuple[str, object, str], ...] = (
+        checks: tuple[tuple[str, Callable[[dict[str, Any]], None], str], ...] = (
             ("same release", lambda value: value.update(to=value["from"].copy()), "identities"),
             (
                 "same version",
@@ -46,7 +48,7 @@ class UpgradeContractValidatorCoverageTests(unittest.TestCase):
             with (
                 self.subTest(label=label),
                 patch.object(validator, "validate_runtime_contract"),
-                patch.object(validator.Draft202012Validator, "validate"),
+                patch.object(Draft202012Validator, "validate"),
             ):
                 document = self.document()
                 mutate(document)
@@ -86,7 +88,7 @@ class UpgradeContractValidatorCoverageTests(unittest.TestCase):
             validator._validate_backends(document)
 
     def test_input_fencing_branch_edges_fail_closed(self) -> None:
-        inputs = self.document()["phases"][0]["operation"]["inputs"]
+        inputs = cast(dict[str, object], self.document()["phases"][0]["operation"]["inputs"])
         cases: tuple[tuple[str, dict[str, object], bool, str], ...] = (
             ("unknown field", {**inputs, "unknown": "value"}, False, "fields"),
             ("wrong backend", {**inputs, "backend": "git"}, False, "backend"),

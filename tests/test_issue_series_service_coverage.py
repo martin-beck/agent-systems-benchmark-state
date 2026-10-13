@@ -1,7 +1,5 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
-# mypy: disable-error-code="list-item,attr-defined,arg-type"
-
 """ASB-owned invariant and error coverage for issue-series service helpers."""
 
 from __future__ import annotations
@@ -11,9 +9,12 @@ import subprocess
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from typing import Any, cast
 from unittest.mock import Mock, patch
 
 from tools import issue_series_service as service
+from tools.issue_series_publish import publication_key
+from tools.sqlite_storage import SQLiteBackend
 
 
 def write_atomic(path: Path, content: str) -> None:
@@ -48,12 +49,16 @@ class IssueSeriesServiceCoverageTests(unittest.TestCase):
         self.addCleanup(self.directory.cleanup)
 
     def test_sqlite_projection_export_removes_stale_files_and_preserves_receipts(self) -> None:
-        series = {
+        series: dict[str, Any] = {
             "series_identity": {"repository": "github.com/acme/product", "issue_number": 7},
             "manifest": {"schema_version": 1, "members": []},
         }
         key = "a" * 64
-        publication = {"publication_key": key, "status": "published", "comment_id": "19"}
+        publication: dict[str, object] = {
+            "publication_key": key,
+            "status": "published",
+            "comment_id": "19",
+        }
         backend = ReceiptBackend([series], [publication])
         (self.root / "issue-series").mkdir()
         (self.root / "issue-series" / "stale.json").write_text("stale", encoding="utf-8")
@@ -63,8 +68,12 @@ class IssueSeriesServiceCoverageTests(unittest.TestCase):
         )
 
         with patch.object(service, "atomic", side_effect=write_atomic, create=True):
-            series_paths = service.write_sqlite_issue_series_projections(backend)
-            publication_paths = service.write_sqlite_issue_series_publication_projections(backend)
+            series_paths = service.write_sqlite_issue_series_projections(
+                cast(SQLiteBackend, backend)
+            )
+            publication_paths = service.write_sqlite_issue_series_publication_projections(
+                cast(SQLiteBackend, backend)
+            )
 
         self.assertEqual(1, len(series_paths))
         self.assertEqual(
@@ -80,7 +89,9 @@ class IssueSeriesServiceCoverageTests(unittest.TestCase):
     def test_git_publication_receipt_rejects_unlinked_or_oversized_projection(self) -> None:
         digest = "sha256:" + "d" * 64
         identity = {"repository": "github.com/acme/product", "issue_number": 7}
-        key = service.publication_key(identity["repository"], identity["issue_number"], digest)
+        key = publication_key(
+            cast(str, identity["repository"]), cast(int, identity["issue_number"]), digest
+        )
         directory = self.root / "issue-series-publications"
         directory.mkdir()
         receipt = {"publication_key": key, "manifest_digest": digest, "status": "published"}
@@ -160,24 +171,25 @@ class IssueSeriesServiceCoverageTests(unittest.TestCase):
                 self.assertEqual(
                     status, service._live_publication_failure(diagnostic, key, digest).status
                 )
-        with patch.object(service.shutil, "which", return_value=None):
+        with patch("tools.issue_series_service.shutil.which", return_value=None):
             self.assertEqual(
                 "deferred_unavailable",
                 service._live_existing_issue_series_comment("acme/product", 7, key, digest).status,  # type: ignore[union-attr]
             )
         command = Mock(returncode=0, stdout="9\n11\n", stderr="")
         with (
-            patch.object(service.shutil, "which", return_value="gh"),
-            patch.object(service.subprocess, "run", return_value=command),
+            patch("tools.issue_series_service.shutil.which", return_value="gh"),
+            patch("tools.issue_series_service.subprocess.run", return_value=command),
         ):
             self.assertEqual(
                 "ambiguous",
                 service._live_existing_issue_series_comment("acme/product", 7, key, digest).status,  # type: ignore[union-attr]
             )
         with (
-            patch.object(service.shutil, "which", return_value="gh"),
-            patch.object(
-                service.subprocess, "run", side_effect=subprocess.TimeoutExpired("gh", 15)
+            patch("tools.issue_series_service.shutil.which", return_value="gh"),
+            patch(
+                "tools.issue_series_service.subprocess.run",
+                side_effect=subprocess.TimeoutExpired("gh", 15),
             ),
         ):
             self.assertEqual(

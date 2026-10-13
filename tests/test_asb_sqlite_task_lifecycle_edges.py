@@ -1,6 +1,5 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
-# mypy: disable-error-code=arg-type
 """ASB-owned core task lifecycle coverage for SQLite storage."""
 
 from __future__ import annotations
@@ -9,6 +8,7 @@ import sqlite3
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from typing import Any
 
 from fixture_ids import project_uuid
 
@@ -71,7 +71,9 @@ class AsbSQLiteTaskLifecycleEdgeTests(unittest.TestCase):
         self.temporary.cleanup()
 
     def test_mutation_persists_task_session_checkpoint_and_dependency_lifecycle(self) -> None:
-        def transition(meta: dict[str, object], _tasks: list[object]) -> tuple[str, str]:
+        def transition(
+            meta: dict[str, Any], _tasks: list[tuple[Path, dict[str, Any], str]]
+        ) -> tuple[str, str]:
             meta.update(
                 {
                     "status": "in_progress",
