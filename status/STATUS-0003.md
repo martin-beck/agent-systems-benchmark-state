@@ -1932,7 +1932,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair workflow-wide private TLC admission environment for formal CI. |
-| Next action | Rebuild clean v0.7.4 adoption from current origin/main, apply only workflow-wide private TLC admission env/tests, verify immutable vendor snapshot, then rerun focused/full gates and review. |
+| Next action | Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI. |
 
 ### AR-1850 — Repair development ASB TUI interactive lifetime
 

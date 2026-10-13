@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T13:11:59+00:00",
   "depends_on": [],
   "id": "AR-1849",
-  "next_action": "Rebuild clean v0.7.4 adoption from current origin/main, apply only workflow-wide private TLC admission env/tests, verify immutable vendor snapshot, then rerun focused/full gates and review.",
+  "next_action": "Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI.",
   "owner": "ar1849-formal-admission-env-luna",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T13:07:37+00:00",
+  "updated_at": "2026-10-13T13:07:58+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -278,3 +278,10 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 
 - 2026-10-13T13:07:37+00:00: Recorded command exit 0; command argv SHA-256
   65187321677bbc790eee32ec84283f6190a86946a30200afb044c18d54f1a693.
+
+- 2026-10-13T13:07:58+00:00: Clean rebuild exact v0.7.4 vendor verification passed; focused workflow
+  (6) and vendor (12) tests passed. Full discovery terminated with 1797 tests, 8 failures and 16
+  errors in 335.726s: 10 import errors are local missing jsonschema (CI locked uv environment must
+  qualify); remaining non-vendor failures are AR-1793 fixture/error-contract expectations,
+  role-store authorization semantics, and complexity assertion for the v0.7.4 workflow. No vendor
+  files were modified; PR #145 remains unmerged.
