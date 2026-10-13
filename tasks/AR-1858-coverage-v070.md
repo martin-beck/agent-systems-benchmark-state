@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T15:56:21+00:00",
+  "updated_at": "2026-10-13T15:57:28+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -90,3 +90,6 @@ artifact. Do not lower the threshold or merge PR #145.
   /srv/data/projects/asb-state-coordinator-v070, not AR-1858 bound worktree. It is not yet
   classified as a result; avoid killing another active run. AR-1858 timeout artifact remains
   rejected.
+
+- 2026-10-13T15:57:28+00:00: Recorded command exit 0; command argv SHA-256
+  29c26b74c1b431641cb55486906d4feb0585fe7343d4b92f59c679e2a1401955.
