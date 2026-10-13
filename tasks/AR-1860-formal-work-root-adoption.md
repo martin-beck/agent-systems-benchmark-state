@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T17:17:17+00:00",
+  "updated_at": "2026-10-13T17:18:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar1860-formal-work-root"
 }
 ---
@@ -89,3 +89,6 @@ coverage floor and all formal gates.
   is one line, normalizing AR-1858 worktree_key to accepted unique
   agent-systems-benchmark-ar1858-coverage-v070; AR-1860 key was already present in base. No product
   changes. AWQ and strict CI green; PR mergeable.
+
+- 2026-10-13T17:18:52+00:00: Recorded command exit 0; command argv SHA-256
+  19ac5910013c638c6eee371b5fdc3ca9222859fb20824ba4b6e1adb94fa2b33b.
