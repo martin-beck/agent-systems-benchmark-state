@@ -9,24 +9,6 @@
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
-  "retry_circuit": {
-    "abandoned": [],
-    "attempts": [],
-    "hold": null,
-    "recoveries": [],
-    "reservations": [
-      {
-        "expires_at": "2026-10-13T19:49:40+00:00",
-        "id": "170b8825fbb14d789a0572c522677b08",
-        "identity": "sha256:c5f1f030d72a3d87fc60096c1e55b84e12afaba7064f3d6e26b56ee0d581fc2d",
-        "progress_digest": "sha256:5fac4bda38e4a3df8ea06a1946c455591cbd5abd0c255c7168c133926aca5bbe",
-        "reserved_at": "2026-10-13T19:18:40+00:00",
-        "task_revision": 81,
-        "window": 3
-      }
-    ],
-    "schema_version": 1
-  },
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "mechanical",
@@ -40,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T19:18:40+00:00",
+  "updated_at": "2026-10-13T19:18:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar1858-coverage-v070"
 }
 ---
@@ -311,3 +293,5 @@ artifact. Do not lower the threshold or merge PR #145.
 - 2026-10-13T19:18:30+00:00: Claimed by ar1858-coverage-v070-luna.
 
 - 2026-10-13T19:18:40+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
+
+- 2026-10-13T19:18:45+00:00: Released retry circuit launch slot.
