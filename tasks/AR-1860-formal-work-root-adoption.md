@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T18:56:43+00:00",
   "depends_on": [],
   "id": "AR-1860",
-  "next_action": "Create PR for pushed codex/ar1860-formal-work-root, obtain independent exact-head review and hosted CI, merge, then verify exact-main post-merge assurance.",
+  "next_action": "Merge PR #151 signed state-only coordination repair, run exact-main doctor/schema/post-merge assurance, then release AR-1860 with merged evidence.",
   "owner": "ar1857-coverage-repair-luna",
   "plan": "../plans/AR-1860-formal-work-root-adoption.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T17:10:39+00:00",
+  "updated_at": "2026-10-13T17:17:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar1860-formal-work-root"
 }
 ---
@@ -84,3 +84,8 @@ coverage floor and all formal gates.
 
 - 2026-10-13T17:10:39+00:00: Recorded command exit 0; command argv SHA-256
   6ec39729fa000aadc6afbd94bbf0c1639087072caf2c16bc994e4a29e7da65d2.
+
+- 2026-10-13T17:17:17+00:00: Independent review completed at PR #151 head b08db6f917: effective diff
+  is one line, normalizing AR-1858 worktree_key to accepted unique
+  agent-systems-benchmark-ar1858-coverage-v070; AR-1860 key was already present in base. No product
+  changes. AWQ and strict CI green; PR mergeable.

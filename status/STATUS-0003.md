@@ -2086,7 +2086,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. |
-| Next action | Create PR for pushed codex/ar1860-formal-work-root, obtain independent exact-head review and hosted CI, merge, then verify exact-main post-merge assurance. |
+| Next action | Merge PR #151 signed state-only coordination repair, run exact-main doctor/schema/post-merge assurance, then release AR-1860 with merged evidence. |
 
 
 ## Dependency graph
