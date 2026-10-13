@@ -9,6 +9,24 @@
   "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
+  "retry_circuit": {
+    "abandoned": [],
+    "attempts": [],
+    "hold": null,
+    "recoveries": [],
+    "reservations": [
+      {
+        "expires_at": "2026-10-13T19:49:20+00:00",
+        "id": "9c74464c28fb496ea5253c4483f3f56d",
+        "identity": "sha256:810b70e22441ab845b41237bb2f0355ccefb1191b9f62b243f76b5539b3c1136",
+        "progress_digest": "sha256:3ef850421994879ab4e7a7e46e11848a74ff796daa36590c1109bed5c55be567",
+        "reserved_at": "2026-10-13T19:18:21+00:00",
+        "task_revision": 59,
+        "window": 3
+      }
+    ],
+    "schema_version": 1
+  },
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "mechanical",
@@ -22,9 +40,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T19:18:14+00:00",
+  "updated_at": "2026-10-13T19:18:21+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -239,3 +257,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   mismatch. No lease remains.
 
 - 2026-10-13T19:18:14+00:00: Claimed by ar1852-role-store-luna.
+
+- 2026-10-13T19:18:21+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
