@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T15:05:00+00:00",
+  "updated_at": "2026-10-13T15:07:16+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -397,3 +397,6 @@ retain absolute-path and privacy boundaries, and add regression coverage.
   attestation successfully. Full unittest terminal result is 1,636/1,636 OK in 205.914s; coverage
   report is 19,785 statements at 94%, failing --fail-under=95. Focused workflow 6/6 and TLC runner
   19/19 remain green. No formal gate/resource bound weakened.
+
+- 2026-10-13T15:07:16+00:00: Recorded command exit 0; command argv SHA-256
+  d70205fca28c7fb76633921661e96c9ed40be241d2dcd7d3374519880477f424.
