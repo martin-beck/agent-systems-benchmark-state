@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1860-formal-work-root",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T18:54:25+00:00",
+  "claim_expires": "2026-10-13T18:55:16+00:00",
   "depends_on": [],
   "id": "AR-1860",
   "next_action": "Promote and claim the dependency-safe repair adoption; bind the exact v0.7.0 formal worktree and qualify signed HEAD 1f3c7f65ca.",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T16:54:49+00:00",
+  "updated_at": "2026-10-13T16:55:16+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1860-formal-work-root"
 }
 ---
@@ -45,3 +45,5 @@ coverage floor and all formal gates.
 
 - 2026-10-13T16:54:49+00:00: Recorded command exit 0; command argv SHA-256
   90ecad10f27de2ad22f04045e661d6d624c4b20f02482a0a797c15abc441b5da.
+
+- 2026-10-13T16:55:16+00:00: Heartbeat by ar1857-coverage-repair-luna.
