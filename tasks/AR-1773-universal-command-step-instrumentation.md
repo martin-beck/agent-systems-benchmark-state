@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T22:44:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -82,7 +82,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "asb_ar1773_runner_repair_luna2",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -96,11 +96,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T20:45:29+00:00",
+  "updated_at": "2026-10-13T20:47:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -203,3 +203,15 @@ non-TTY compatibility.
 
 - 2026-10-13T20:45:29+00:00: Recorded command exit 1; command argv SHA-256
   d42448eb39334395bd7293439473a2807f657d428657b334f35f2c50e2da3ac1.
+
+- 2026-10-13T20:47:39+00:00: Bounded runner audit complete at exact product head
+  f78a1006202d6fb62df4aa3d5efd0a42381b713c (already ancestor of origin/main
+  870331be533ea1a0ba9645ddbb690df56af84935); worktree clean and no product drift. Two required
+  handoffctl test executions (cargo check --locked --workspace --all-targets; absolute pinned Cargo
+  1.93.0 path) both failed before execution with bwrap: execvp ... cargo: No such file or directory,
+  proving the sandbox cannot mount/resolve any Cargo toolchain. Direct host-pinned Cargo 1.93.0
+  check and clippy both pass; focused cargo test --locked -p asb-cli passes 437/437 plus all
+  integration/doc tests. No source repair justified and no gate weakened; AR-1863 remains separate
+  diagnostic catalog owner. Next action: repair handoffctl/bwrap runner toolchain mount (or provide
+  equivalent container/VM with pinned Cargo 1.93.0), then rerun exact-head focused/full tests
+  through handoffctl and preserve exact-head CI/review requirements.
