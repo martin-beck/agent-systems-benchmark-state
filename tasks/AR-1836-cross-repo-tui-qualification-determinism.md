@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "repair/ar-1836-tui-qualification-determinism",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-13T21:38:15+00:00",
   "depends_on": [
@@ -18,10 +18,10 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic cross-repository Exact TUI inherited-fd/PTY qualification seam exposed by AR-1835 without weakening its assertions.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Cross-repository Exact TUI qualification determinism",
-  "updated_at": "2026-10-13T19:38:15+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-10-13T19:38:49+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1837-pr627-protected-main-identity"
 }
 ---
 
@@ -55,3 +55,7 @@ waive the check, serialize it away, or accept mutable/unverified binaries.
 - 2026-10-13T19:38:00+00:00: Claimed by ar1836-tui-qual-luna.
 
 - 2026-10-13T19:38:15+00:00: Heartbeat by ar1836-tui-qual-luna.
+
+- 2026-10-13T19:38:49+00:00: Bound worktree
+  agent-systems-benchmark-ar-1837-pr627-protected-main-identity on branch
+  repair/ar-1836-tui-qualification-determinism.
