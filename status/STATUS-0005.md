@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md) | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md), [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md) | [AR-1481](../tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md), [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md), [AR-1483](../tasks/AR-1483-authenticated-control-process-owner.md), [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md), [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md), [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md), [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md), [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md), [AR-1504](../tasks/AR-1504-runtime-platform-launcher-seam.md), [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md), [AR-1506](../tasks/AR-1506-runtime-platform-launcher-integration.md), [AR-1507](../tasks/AR-1507-runtime-owned-authority-materialization.md), [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md), [AR-1509](../tasks/AR-1509-authenticated-authority-provider-receipt.md) |
 | [AR-1481](../tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md) | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md), [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md), [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md) | None |
 | [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md) | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md), [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md), [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md) | None |
 | [AR-1483](../tasks/AR-1483-authenticated-control-process-owner.md) | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md), [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md), [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md) | None |
@@ -340,8 +341,15 @@
 | [AR-1860](../tasks/AR-1860-formal-work-root-adoption.md) | None | None |
 | [AR-1861](../tasks/AR-1861-coordinator-ar0034-repair-adoption.md) | None | None |
 | [AR-1862](../tasks/AR-1862-coordinator-formal-lifecycle-alignment.md) | None | None |
+| [AR-1863](../tasks/AR-1863.md) | None | None |
 
 ## Complete AR inventory
+
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | codex-ar1863-catalog-luna | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (7)
 
@@ -648,7 +656,3 @@
 | P0 | [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md): Protected-main DCO recovery for PR202 | Unclaimed | Recover a signed protected-main DCO boundary after the unsigned PR202 web merge. | Monitor exact-main 0a808a6 post-merge workflows to terminal; release AR-1259 and hand off AR-0813 only after all required policies pass. |
 | P0 | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | Unclaimed | Recover signed protected-main integration after PR #205. | Complete: signed main 69e8b064 verified exact parents/tree/DCO; all seven post-merge workflows SUCCESS. Preserve AR-1263 traceability and recovery evidence. |
 | P0 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Unclaimed | Land the authenticated runtime-to-CLI replay transport foundation. | Coverage repaired at signed head b1fb837: asb-core replay_transport 98.24&#37; lines and 97.53&#37; regions, above unchanged 95&#37; floor; focused core 4/4 and runtime 6/6 pass. Fmt, workspace locked tests, and clippy pass; push exact head and await fresh PR #208 checks. |
-| P0 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | Unclaimed | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | Merged as signed local protected merge 2fd9055 (parents f9ddf7e and 0f876c7). Monitor exact-main post-merge workflows 35173271478/71480/71491/71497/71506/71516 to terminal; release done only after all success and verify main signature/DCO. |
-| P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | Unclaimed | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Await terminal post-merge workflows for protected main 2066e323; then verify exact merge/policy/evidence and close lifecycle acceptance. |
-| P0 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | Unclaimed | Provide a delegated runner for real strict-replay child lifecycle qualification. | No further action; protected merge 7ea3e001 exact-main workflows 35202285902/85873/85881/85905/85917/85930/85955 all green, and KVM guest passed 51 normal plus the qualified backend test. AR-1301 is promoted and active. |
-| P0 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | Unclaimed | Repair the stale formal Cargo.lock required by hosted exact-head gates. | Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success. |
