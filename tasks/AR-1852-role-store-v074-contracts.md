@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T15:16:52+00:00",
   "depends_on": [],
   "id": "AR-1852",
   "next_action": "Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then reproduce and repair only non-vendor role-store compatibility tests.",
-  "owner": "",
+  "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:15:49+00:00",
+  "updated_at": "2026-10-13T13:16:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -34,3 +34,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T13:15:49+00:00: Candidate commit 180c96b25d is available; opening role-store
   compatibility repair.
+
+- 2026-10-13T13:16:52+00:00: Claimed by ar1852-role-store-luna.
