@@ -1812,11 +1812,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1841-v053-adoption-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Adopt Coordinator v0.7.4 with partial legacy worktree binding. |
@@ -2073,6 +2073,20 @@
 | Children | None |
 | Summary | Reject non-absolute TLC work roots before formal execution. |
 | Next action | Promote after validating the AR-1858 terminal evidence and bind the exact v0.7.0 formal worktree. |
+
+### AR-1860 — Dependency-safe formal work-root repair adoption
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | ar1857-coverage-repair-luna |
+| Parent | None |
+| Children | None |
+| Summary | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. |
+| Next action | Create PR for pushed codex/ar1860-formal-work-root, obtain independent exact-head review and hosted CI, merge, then verify exact-main post-merge assurance. |
 
 
 ## Dependency graph
@@ -2958,7 +2972,7 @@ flowchart LR
         AR_1838["AR-1838 - Done"]:::status_done
         AR_1839["AR-1839 - Done"]:::status_done
         AR_1840["AR-1840 - Done"]:::status_done
-        AR_1841["AR-1841 - In progress"]:::status_in_progress
+        AR_1841["AR-1841 - Blocked"]:::status_blocked
         AR_1842["AR-1842 - Planned"]:::status_planned
         AR_1843["AR-1843 - Done"]:::status_done
         AR_1844["AR-1844 - Planned"]:::status_planned
@@ -2977,6 +2991,7 @@ flowchart LR
         AR_1857["AR-1857 - Blocked"]:::status_blocked
         AR_1858["AR-1858 - In progress"]:::status_in_progress
         AR_1859["AR-1859 - Planned"]:::status_planned
+        AR_1860["AR-1860 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
