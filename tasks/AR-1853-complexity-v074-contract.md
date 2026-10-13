@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align the complexity-budget contract with Coordinator v0.7.4.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Complexity v0.7.4 compatibility contract",
-  "updated_at": "2026-10-13T13:27:52+00:00",
+  "updated_at": "2026-10-13T13:28:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1853"
 }
 ---
@@ -46,3 +46,6 @@ contract exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T13:27:52+00:00: Recorded command exit 0; command argv SHA-256
   17baccd7e716f865431cf50a0306d5ffaa582cced5e51618bff45d9a30174e13.
+
+- 2026-10-13T13:28:20+00:00: Recorded command exit 0; command argv SHA-256
+  d00d4c092637ae2b2a384450953700f8aba61c130f9a237477ef0366552cc352.
