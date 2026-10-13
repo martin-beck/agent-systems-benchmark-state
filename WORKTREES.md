@@ -55,8 +55,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 825, ahead 136 |
 | `agent-systems-benchmark-ar-1652-record-replay` | `repair/ar-1652-record-replay` | `ab0a791b05d6` | 0 | behind 33, ahead 0 |
 | `agent-systems-benchmark-ar-1686` | `qualification/ar-1686` | `93d75e28a758` | 0 | behind 22, ahead 0 |
-| `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `f78a1006202d` | 1 | behind 74, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/.runner-mount-test/` |
+| `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `f78a1006202d` | 0 | behind 74, ahead 0 |
 | `agent-systems-benchmark-ar-1775-configurable-output-router-and-levels` | `feature/ar-1775-configurable-output-router-and-levels` | `67ddb5221114` | 0 | behind 14, ahead 0 |
 | `agent-systems-benchmark-ar-1779-default-usable-tool-install-command` | `repair/ar-1779-source-fallback-linear4` | `80060a79e716` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring` | `DETACHED` | `da0cbe0848a1` | 0 | behind 11, ahead 0 |
