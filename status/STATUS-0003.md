@@ -1098,11 +1098,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1772-progress-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output. |
@@ -2946,7 +2946,7 @@ flowchart LR
         AR_1769["AR-1769 - Done"]:::status_done
         AR_1770["AR-1770 - Done"]:::status_done
         AR_1771["AR-1771 - Done"]:::status_done
-        AR_1772["AR-1772 - In progress"]:::status_in_progress
+        AR_1772["AR-1772 - Done"]:::status_done
         AR_1773["AR-1773 - Planned"]:::status_planned
         AR_1774["AR-1774 - Planned"]:::status_planned
         AR_1775["AR-1775 - Done"]:::status_done
@@ -5025,4 +5025,6 @@ flowchart LR
     classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
 ```
+
+### Accessible dependency index
 
