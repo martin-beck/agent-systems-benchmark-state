@@ -373,7 +373,7 @@
       "source": "tests/test_task_spec.py"
     },
     "tests/test_tlc_runner.py": {
-      "sha256": "cd6c00aca8989a9eb3d9514f23053c4c3bf1d21ec28279e928f0accc8d75dd78",
+      "sha256": "f02339461b08bc126191492af8dc61c281be05b54b02f710a4b633be2f6786a0",
       "source": "tests/test_tlc_runner.py"
     },
     "tools/admission_lease.py": {
@@ -497,7 +497,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "afb9045891742fe696edd978eb2d0895cf53083c0d1a38d9a2096c1fda301f91",
+      "sha256": "7793ce230a629605c06fb2287c0cf51c6c123f2d2b38f8e102ba0fda2a4fa271",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -675,8 +675,8 @@
   },
   "schema_version": 1,
   "upstream": {
-    "commit": "53bf17e135638991550ee12eb4147167c79295f5",
+    "commit": "e4b79aa4fa45443196a601942e26d3c46013a3fa",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
-    "version": "v0.7.2"
+    "version": "v0.7.5"
   }
 }
