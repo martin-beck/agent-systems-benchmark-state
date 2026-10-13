@@ -5,13 +5,14 @@
 
 from __future__ import annotations
 
+import argparse
 import subprocess
 import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from tools import change_drift
+from tools import change_drift, handoffctl
 
 
 def git(root: Path, *arguments: str) -> None:
@@ -220,6 +221,119 @@ class ChangeDriftTests(unittest.TestCase):
             change_drift.next_record(
                 "AR-0001", 4, "now", self.root, [baseline, delta], "rescope", scope_paths=["src"]
             )
+
+    def test_command_boundary_applies_fenced_delta_and_rejects_wrong_owner(self) -> None:
+        baseline = change_drift.baseline("AR-0001", 2, "now", self.root, ["src"])
+        meta: change_drift.Meta = {
+            "id": "AR-0001",
+            "owner": "worker",
+            "status": "in_progress",
+            "task_revision": 2,
+            "worktree_key": self.root.name,
+            "change_drift": [baseline],
+        }
+        (self.root / "src" / "old.py").write_text("changed\n", encoding="utf-8")
+        args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker",
+            expected_revision=2,
+            change_drift_action="delta",
+            scope_path=None,
+            path=None,
+            reason=None,
+            generated=False,
+        )
+        result = change_drift.apply(args, meta, self.root.parent, "later")
+        self.assertIn("Recorded change-drift delta", result)
+        self.assertEqual(2, len(meta["change_drift"]))
+        args.owner = "other"
+        with self.assertRaisesRegex(RuntimeError, "active task owner"):
+            change_drift.apply(args, meta, self.root.parent, "later")
+
+    def test_history_command_boundary_and_capacity_reject_stale_or_invalid_mutations(self) -> None:
+        baseline = change_drift.baseline("AR-0001", 2, "now", self.root, ["src"])
+        with self.assertRaisesRegex(ValueError, "invalid change-drift history"):
+            change_drift.records({"id": "AR-0001", "change_drift": "not-a-list"})
+        unlinked = dict(baseline)
+        unlinked["previous_digest"] = "sha256:" + "f" * 64
+        self._rehash(unlinked)
+        with self.assertRaisesRegex(ValueError, "history is not linked"):
+            change_drift.records({"id": "AR-0001", "change_drift": [unlinked]})
+        meta: change_drift.Meta = {
+            "id": "AR-0001",
+            "owner": "worker",
+            "status": "in_progress",
+            "task_revision": 2,
+            "change_drift": [baseline],
+        }
+        stale = argparse.Namespace(
+            task="AR-0001",
+            owner="worker",
+            expected_revision=1,
+            change_drift_action="delta",
+            scope_path=None,
+            path=None,
+            reason=None,
+            generated=False,
+        )
+        with self.assertRaisesRegex(RuntimeError, "stale revision"):
+            change_drift.apply(stale, meta, self.root.parent, "later")
+        capped = [baseline] * (change_drift.MAX_RECORDS + 1)
+        with self.assertRaisesRegex(ValueError, "invalid change-drift history"):
+            change_drift.records({"id": "AR-0001", "change_drift": capped})
+
+    def test_command_parser_and_top_level_cli_route_fenced_actions(self) -> None:
+        parser = argparse.ArgumentParser()
+        commands = parser.add_subparsers(dest="command", required=True)
+        change_drift.add_command_parser(commands)
+        values = parser.parse_args(
+            [
+                "change-drift",
+                "explain",
+                "AR-0001",
+                "--owner",
+                "worker",
+                "--expected-revision",
+                "2",
+                "--path",
+                "src/old.py",
+                "--reason",
+                "reviewed",
+            ]
+        )
+        self.assertEqual(("change-drift", "explain"), (values.command, values.change_drift_action))
+        with self.assertRaises(SystemExit):
+            parser.parse_args(["change-drift", "baseline", "AR-0001"])
+        with (
+            patch.object(handoffctl, "assert_project_binding"),
+            patch.object(handoffctl, "dispatch_bound_command", return_value=0) as dispatch,
+            patch(
+                "sys.argv",
+                [
+                    "handoffctl",
+                    "change-drift",
+                    "baseline",
+                    "AR-0001",
+                    "--scope-path",
+                    "src",
+                    "--owner",
+                    "worker",
+                    "--expected-revision",
+                    "2",
+                ],
+            ),
+        ):
+            self.assertEqual(0, handoffctl.main())
+        parsed = dispatch.call_args.args[0]
+        self.assertEqual(
+            ("change-drift", "baseline", "worker", 2),
+            (
+                parsed.cmd,
+                parsed.change_drift_action,
+                parsed.owner,
+                parsed.expected_revision,
+            ),
+        )
 
     def test_baseline_delta_explain_tracks_committed_and_dirty_changes(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
