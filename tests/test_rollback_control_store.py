@@ -27,6 +27,7 @@ from _rollback_control_store_subprocess import (
     SUBPROCESS_SESSION_SCRIPT,
 )
 
+import tools.handoffctl as handoffctl
 from tools import upgrade_authority
 from tools.handoffctl import CoordinatorLockGuard, LockOwnershipError, locked
 from tools.rollback_control_store import (
@@ -259,6 +260,21 @@ class StaticAuthorityRuntimeRereader:
 
 
 class RollbackControlStoreTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.coordinator_directory = tempfile.TemporaryDirectory()
+        root = Path(self.coordinator_directory.name)
+        runtime = root / ".runtime"
+        runtime.mkdir(mode=0o700)
+        self.coordinator_globals = patch.multiple(
+            handoffctl,
+            ROOT=root,
+            RUNTIME=runtime,
+            LOCK=runtime / "state.lock",
+        )
+        self.addCleanup(self.coordinator_directory.cleanup)
+        self.coordinator_globals.start()
+        self.addCleanup(self.coordinator_globals.stop)
+
     def test_session_recheck_and_provision_released_negative_paths(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             control = SQLiteRollbackControlStore(Path(directory) / "control.sqlite", PROJECT)
