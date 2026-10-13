@@ -2134,11 +2134,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb_ar1864_bind_publish_luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Align task-record schema vocabulary for execution, retry, and standard task metadata without changing lifecycle semantics. |
@@ -3051,7 +3051,7 @@ flowchart LR
         AR_1861["AR-1861 - Done"]:::status_done
         AR_1862["AR-1862 - Done"]:::status_done
         AR_1863["AR-1863 - In progress"]:::status_in_progress
-        AR_1864["AR-1864 - In progress"]:::status_in_progress
+        AR_1864["AR-1864 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -5034,3 +5034,5 @@ flowchart LR
     AR_1829 --> AR_1832
     AR_1830 --> AR_1831
     AR_1830 --> AR_1832
+    AR_1831 --> AR_1832
+    AR_1832 --> AR_1842
