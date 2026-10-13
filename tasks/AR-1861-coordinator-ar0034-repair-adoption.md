@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T18:33:25+00:00",
+  "updated_at": "2026-10-13T18:34:40+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -78,3 +78,6 @@ or mutate AR-1826 until the adopted repair is verified.
   f226356f61a774768aa19dcb90bb381ebb51819b0458bdd4a84ea8e0f6f81287.
 
 - 2026-10-13T18:33:25+00:00: Heartbeat by ar1861-resume-luna.
+
+- 2026-10-13T18:34:40+00:00: Recorded command exit 0; command argv SHA-256
+  b017695bebab048d965c083f32a0a640269391291906e90d938bf39ea4fddae6.
