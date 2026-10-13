@@ -2,13 +2,13 @@
 {
   "branch": "codex/ar1841-v053-adoption",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T16:41:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1795"
   ],
   "id": "AR-1841",
   "next_action": "Wait for scoped v0.7.4 compatibility repairs AR-1851 (AR-1793), AR-1852 (roles), AR-1853 (complexity), and AR-1849 (formal admission/workspace) to merge; then rebase PR #142 onto protected main, rerun candidate-focused/full gates, obtain fresh exact-head independent review and CI.",
-  "owner": "ar1841-v053-adoption-luna",
+  "owner": "",
   "plan": "../plans/AR-1841-coordinator-v053-adoption.md",
   "priority": "P0",
   "schema_version": 1,
@@ -22,11 +22,11 @@
   },
   "spec_ref": "specs/AR-1841.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 169,
+  "task_revision": 170,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T14:41:35+00:00",
+  "updated_at": "2026-10-13T16:56:17+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -555,3 +555,7 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
   justified blockers.
 
 - 2026-10-13T14:41:35+00:00: Heartbeat by ar1841-v053-adoption-luna.
+
+- 2026-10-13T16:56:17+00:00: Blocked safely: claim expired and no current session snapshot exists,
+  so fail-closed recovery cannot reconstruct prior work. Preserve all vendor/review evidence;
+  require a new dependency-safe repair/resume path before adoption.
