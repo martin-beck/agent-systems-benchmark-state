@@ -54,9 +54,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift.",
-  "task_revision": 475,
+  "task_revision": 476,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-13T20:29:20+00:00",
+  "updated_at": "2026-10-13T20:29:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -1241,3 +1241,6 @@ the suite from this end-to-end path.
 - 2026-10-13T20:29:17+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
 
 - 2026-10-13T20:29:20+00:00: Released retry circuit launch slot.
+
+- 2026-10-13T20:29:23+00:00: Recorded command exit 0; command argv SHA-256
+  5345cd4b5f66285dc80cddfe59c0a95475263f9ff88d25d2639fce3c300aa4b9.
