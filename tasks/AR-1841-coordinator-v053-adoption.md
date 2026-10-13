@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1841-v053-adoption",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T13:02:14+00:00",
+  "claim_expires": "2026-10-13T13:21:02+00:00",
   "depends_on": [
     "AR-1795"
   ],
@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T12:45:29+00:00",
+  "updated_at": "2026-10-13T13:01:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -447,3 +447,5 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
 
 - 2026-10-13T12:45:29+00:00: Recorded command exit 1; command argv SHA-256
   40b692a745f2ed49269f787a98e49110420f946fcf3de42a6521c324f0d56e25.
+
+- 2026-10-13T13:01:02+00:00: Heartbeat by ar1841-v053-adoption-luna.
