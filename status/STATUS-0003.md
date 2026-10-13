@@ -1946,7 +1946,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline. |
-| Next action | Stop AR-1850 merge pending Coordinator assignment/repair of repeated source_checkout and goose CI failures; preserve PR #631 and all exact-head evidence. |
+| Next action | Hold PR #631 unmerged until AR-1856 repair and all required checks, including emulated rerun, are green; then reverify exact head and continue merge/post-merge. |
 
 ### AR-1851 — AR-1793 v0.7.4 compatibility contracts
 

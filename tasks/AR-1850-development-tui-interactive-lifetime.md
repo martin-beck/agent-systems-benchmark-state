@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T16:00:53+00:00",
   "depends_on": [],
   "id": "AR-1850",
-  "next_action": "Stop AR-1850 merge pending Coordinator assignment/repair of repeated source_checkout and goose CI failures; preserve PR #631 and all exact-head evidence.",
+  "next_action": "Hold PR #631 unmerged until AR-1856 repair and all required checks, including emulated rerun, are green; then reverify exact head and continue merge/post-merge.",
   "observed_branch": "feature/ar1850-development-tui-interactive-lifetime",
   "observed_dirty": 0,
   "observed_head": "671f898b6a859655952a009b9a4468e685d74013",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:12:21+00:00",
+  "updated_at": "2026-10-13T14:13:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -90,3 +90,8 @@ cross-repository qualification.
   diagnostic_and_symlink_fail_closed (220 passed, 1 failed). Exact TUI PTY run 38410494755 passed
   and independent review approved. Do not alter AR-1850 product scope or merge; focused repair ARs
   are required for repeated non-TUI failures.
+
+- 2026-10-13T14:13:19+00:00: Coordinator confirms Policy/coverage failure is reproducible on
+  source_checkout exact_fixture Unavailable; focused AR-1856 repair worker is investigating.
+  Credential-free rerun 115342870094 passes; Exact TUI PTY 38410494755 passes; PR #631 remains
+  unmerged.
