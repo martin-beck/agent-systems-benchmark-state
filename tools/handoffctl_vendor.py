@@ -21,6 +21,7 @@ RETIRED_DESTINATIONS = ("formal/handoffctl/HandoffctlPR.cfg",)
 SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("tools/handoffctl", "tools/handoffctl"),
     ("tools/handoffctl.py", "tools/handoffctl.py"),
+    ("tools/legacy_binding_repair.py", "tools/legacy_binding_repair.py"),
     ("tools/change_drift.py", "tools/change_drift.py"),
     ("tools/assumption_revalidation.py", "tools/assumption_revalidation.py"),
     ("tools/resume_card.py", "tools/resume_card.py"),

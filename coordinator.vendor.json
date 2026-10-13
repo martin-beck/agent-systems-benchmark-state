@@ -369,11 +369,11 @@
       "source": "tests/test_sqlite_storage.py"
     },
     "tests/test_task_spec.py": {
-      "sha256": "9481cc0b185c341bd2296d5f0a29e3699b8e798c181b3ecc72b00a52256bcc58",
+      "sha256": "4e827852a3b2366df7a661f7ad3b52794296202d4ae58e201bf0dca833e2fef8",
       "source": "tests/test_task_spec.py"
     },
     "tests/test_tlc_runner.py": {
-      "sha256": "f02339461b08bc126191492af8dc61c281be05b54b02f710a4b633be2f6786a0",
+      "sha256": "0953d2a2203b79c47f495a2c968b975d143bf202c5ff4290f951ab0de08155b7",
       "source": "tests/test_tlc_runner.py"
     },
     "tools/admission_lease.py": {
@@ -497,11 +497,11 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "e80b738a49b8c8b6d95b9743fc9da8421ebf875a616cd72c73427dd30b780995",
+      "sha256": "f15c85479e3a2fba651d7cf4300938125e66d8001b7ee9f3b54a33df88204a4b",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
-      "sha256": "43087421bd9f5f19c0792bfccbb4eff0b29ef745c12906f4587049276dbe1d57",
+      "sha256": "f110fa367f4725831d5e3a89edda40e8a6caa774d84a35b0674575568c19b842",
       "source": "tools/vendor.py"
     },
     "tools/hierarchy.py": {
@@ -523,6 +523,10 @@
     "tools/issue_series_service.py": {
       "sha256": "bd1d10e5fdff7e591c95a89b00a53fea715348c1140e9378be0edac1cac0f3b2",
       "source": "tools/issue_series_service.py"
+    },
+    "tools/legacy_binding_repair.py": {
+      "sha256": "22014d0f96317cf3bbbaf929cff596fe5cd1ca57f131807a5a2e6abd50c8190c",
+      "source": "tools/legacy_binding_repair.py"
     },
     "tools/lifecycle_session.py": {
       "sha256": "94d8585554e4fb72117a1b284d54535cfe03a4ea8a6d8cc4312bd5bc8bc26b90",
@@ -577,7 +581,7 @@
       "source": "tools/role_registry.py"
     },
     "tools/roles.py": {
-      "sha256": "52cd8fc4589c9a5c2cb4a14ed73c2b4718fe6ed5e6a0732755afaca0a7b44a48",
+      "sha256": "1860ef2d5b1cd5c9b4909cda55af515bd5f42dcbfd5773a4f07bbe2622fabaac",
       "source": "tools/roles.py"
     },
     "tools/rollback_control_store.py": {
@@ -675,8 +679,8 @@
   },
   "schema_version": 1,
   "upstream": {
-    "commit": "6ea439cbb104714bc92453734f87f9145b11022a",
+    "commit": "c7f836145333129076c988510d8469cc3a9735e7",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
-    "version": "v0.7.6"
+    "version": "v0.7.7"
   }
 }

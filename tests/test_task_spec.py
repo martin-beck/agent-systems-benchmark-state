@@ -571,6 +571,15 @@ class TaskSpecTests(unittest.TestCase):
             done_admission_error(ROOT, {**meta, "spec_revision": 2}) or "",
         )
 
+    def test_done_admission_error_keeps_stable_prefix_and_reference_reason(self) -> None:
+        meta: dict[str, Any] = {
+            "id": "AR-0070",
+            "spec_ref": "examples/task-specs/missing.json",
+            "spec_revision": 1,
+        }
+        error = done_admission_error(ROOT, meta)
+        self.assertRegex(error or "", r"^done admission denied: .*cannot read spec_ref")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -232,6 +232,16 @@ def role_admission_errors(
     return sorted(set(errors))
 
 
+def require_admission(state_path: Path, registry_path: Path, owner_id: str, role: str) -> None:
+    error = role_admission_error(state_path, registry_path, owner_id=owner_id, required_role=role)
+    if error:
+        raise RuntimeError(error)
+
+
+def doctor_errors(state_path: Path, owners: list[tuple[str, str]]) -> list[str]:
+    return role_admission_errors(state_path, ROOT / "examples/roles/role-registry.json", owners)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--state", type=Path, default=DEFAULT_STATE)
