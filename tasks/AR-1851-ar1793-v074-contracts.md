@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1851-ar1793-v074-contracts",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T14:45:46+00:00",
   "depends_on": [],
   "id": "AR-1851",
   "next_action": "Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then reproduce and repair only non-vendor AR-1793 compatibility fixtures.",
-  "owner": "",
+  "owner": "ar1851-ar1793-v074-luna",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1851.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:13:51+00:00",
+  "updated_at": "2026-10-13T13:15:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851"
 }
 ---
@@ -34,3 +34,5 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T13:13:51+00:00: Candidate binding 180c96b25d recorded; promote AR-1851 as the
   dependency-safe AR-1793 compatibility repair.
+
+- 2026-10-13T13:15:46+00:00: Claimed by ar1851-ar1793-v074-luna.
