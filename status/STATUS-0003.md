@@ -1988,7 +1988,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align the complexity-budget contract with Coordinator v0.7.4. |
-| Next action | Wait for strict/formal CI and required approval at exact head 56371a22ad; merge only after all green, then perform post-merge verification. |
+| Next action | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
 
 ### AR-1854 — v0.7.4 compatibility integration qualification
 
