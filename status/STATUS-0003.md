@@ -2128,7 +2128,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. |
-| Next action | Retry exact-head PR #634 merge through handoffctl with the verified full 40-character tree 6a2321106a95cf52834d302459feb31b2cb33ef4; then await terminal post-merge CI, verify, and release. |
+| Next action | Resolve the remaining e2 git-publication sandbox limitation (helper requires repository metadata/remote access unavailable to the bound sandbox), then retry exact-head merge; do not direct-merge. |
 
 ### AR-1864 — Align task-record schema vocabulary
 
