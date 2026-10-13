@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T23:09:36+00:00",
+  "claim_expires": "2026-10-13T23:39:39+00:00",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -98,9 +98,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T21:39:36+00:00",
+  "updated_at": "2026-10-13T21:39:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -238,3 +238,5 @@ non-TTY compatibility.
   through handoffctl. No gate weakened; AR-1863 remains separate.
 
 - 2026-10-13T21:39:36+00:00: Claimed by asb_ar1773_runner_repair_luna4.
+
+- 2026-10-13T21:39:39+00:00: Heartbeat by asb_ar1773_runner_repair_luna4.
