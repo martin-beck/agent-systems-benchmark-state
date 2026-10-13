@@ -1946,7 +1946,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline. |
-| Next action | Obtain independent exact-head review, publish reviewed PR, and run required CI. |
+| Next action | Obtain independent review on PR #631, wait for exact-head required CI, merge only green, then run post-merge PTY verification. |
 
 ### AR-1851 — AR-1793 v0.7.4 compatibility contracts
 

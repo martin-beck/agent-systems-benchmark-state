@@ -333,7 +333,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | ar1849-formal-admission-env-luna | Repair workflow-wide private TLC admission environment for formal CI. | Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI. |
-| P0 | [AR-1850](../tasks/AR-1850-development-tui-interactive-lifetime.md): Repair development ASB TUI interactive lifetime | ar1850-development-tui-lifetime-luna | Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline. | Obtain independent exact-head review, publish reviewed PR, and run required CI. |
+| P0 | [AR-1850](../tasks/AR-1850-development-tui-interactive-lifetime.md): Repair development ASB TUI interactive lifetime | ar1850-development-tui-lifetime-luna | Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline. | Obtain independent review on PR #631, wait for exact-head required CI, merge only green, then run post-merge PTY verification. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | ar1853-complexity-luna | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
 
 ### Open (6)
