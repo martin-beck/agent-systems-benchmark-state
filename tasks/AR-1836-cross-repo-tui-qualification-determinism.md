@@ -8,8 +8,9 @@
   ],
   "id": "AR-1836",
   "next_action": "Promote after AR-1835 dependency resolution; reproduce the two hosted failures with complete workflow metadata, identify the owning workflow/asb-tui seam, and implement only a deterministic qualification repair without weakening the gate.",
+  "observed_branch": "repair/ar-1837-pr627-protected-main-identity",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "6ea3648e483f25179c3112b54ed7c348e141cad4",
   "owner": "ar1836-tui-qual-luna",
   "plan": "../plans/AR-1836-cross-repo-tui-qualification-determinism.md",
   "priority": "P0",
@@ -18,9 +19,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic cross-repository Exact TUI inherited-fd/PTY qualification seam exposed by AR-1835 without weakening its assertions.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Cross-repository Exact TUI qualification determinism",
-  "updated_at": "2026-10-13T19:38:49+00:00",
+  "updated_at": "2026-10-13T19:39:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1837-pr627-protected-main-identity"
 }
 ---
