@@ -33,7 +33,7 @@ Generated from local Git and GitHub. Do not edit.
 | #619 | `repair/ar-1779-source-fallback-linear3@21372a22aba3` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): fail closed on unavailable source adapters |
 | #624 | `feature/ar-1783-installed-workload-selection-and-execution@32f42827367d` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): bind installed workloads before execution |
 | #629 | `codex/ar-1826-explicit-setup-contract@e9d95999c0ca` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(config): define explicit setup and plan binding contract |
-| #633 | `repair/ar-1856-product-identity-v2@6e3c57ca6550` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(recovery): restore protected-main identity provenance |
+| #633 | `repair/ar-1856-product-identity-v2@6e3c57ca6550` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(recovery): restore protected-main identity provenance |
 
 ## Recent workflows
 
@@ -47,7 +47,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38414975826 | `6e3c57ca6550` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38414975714 | `6e3c57ca6550` | pull_request | Repository quality | in_progress:- |
 | 38414975707 | `6e3c57ca6550` | pull_request | Fault assurance | completed:success |
-| 38414975309 | `6e3c57ca6550` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38414975309 | `6e3c57ca6550` | pull_request | Credential-free benchmark path | completed:success |
 | 38414974975 | `6e3c57ca6550` | pull_request | Rust verification | in_progress:- |
 | 38414974816 | `6e3c57ca6550` | pull_request | Huawei MIT source headers | completed:success |
 | 38414542663 | `92015d0a7662` | pull_request | Huawei MIT source headers | completed:success |
