@@ -1850,6 +1850,76 @@
 | Summary | Repair hosted formal TLC workspace permissions for the ASB state runner. |
 | Next action | Promote and claim; repair the hosted formal workflow workspace initialization so the gha-asb-state runner can create its per-run TLC workspace and attestation directory without weakening the formal gate, then rerun the exact-head formal workflow. |
 
+### AR-1844 — Extract the ASB data-model registry
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Generate a complete secret-free registry of ASB configuration options and individual settings from the authoritative data model. |
+| Next action | Promote after AR-1842; inventory the authoritative ASB data model and define the generated field registry contract. |
+
+### AR-1845 — Extract configuration entities and storage relations
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Extract where ASB settings are stored and transported across the complete configuration-to-results lifecycle. |
+| Next action | Promote after AR-1844; enumerate storage entities and lifecycle relations from setup through benchmark results. |
+
+### AR-1846 — Extract ASB command and option dataflows
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Extract all ASB commands and options and their relations to configuration entities across the complete workflow. |
+| Next action | Promote after AR-1845; extract the authoritative &#96;asb&#96; command tree and connect every option to lifecycle entities. |
+
+### AR-1847 — Export ASB configuration dataflows to Graphviz and SVG
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Write the ASB configuration/dataflow graph as Graphviz DOT and a developer-screen-readable SVG. |
+| Next action | Promote after AR-1846; implement the extraction command and deterministic DOT/SVG graph artifacts with privacy checks. |
+
+### AR-1848 — Qualify ASB dataflow graph extraction end to end
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify reproducible complete ASB dataflow extraction, DOT/SVG generation, privacy, and paired documentation. |
+| Next action | Promote after AR-1847; run clean-checkout extraction and cross-check graph artifacts against all generated registries and CLI options. |
+
 
 ## Dependency graph
 
@@ -2737,6 +2807,11 @@ flowchart LR
         AR_1841["AR-1841 - In progress"]:::status_in_progress
         AR_1842["AR-1842 - Planned"]:::status_planned
         AR_1843["AR-1843 - In progress"]:::status_in_progress
+        AR_1844["AR-1844 - Planned"]:::status_planned
+        AR_1845["AR-1845 - Planned"]:::status_planned
+        AR_1846["AR-1846 - Planned"]:::status_planned
+        AR_1847["AR-1847 - Planned"]:::status_planned
+        AR_1848["AR-1848 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4722,6 +4797,11 @@ flowchart LR
     AR_1831 --> AR_1832
     AR_1832 --> AR_1842
     AR_1835 --> AR_1836
+    AR_1842 --> AR_1844
+    AR_1844 --> AR_1845
+    AR_1845 --> AR_1846
+    AR_1846 --> AR_1847
+    AR_1847 --> AR_1848
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -4746,9 +4826,3 @@ flowchart LR
 | [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0105](../tasks/AR-0105-sandbox-test-portability.md), [AR-0202](../tasks/AR-0202-kernel-diagnostics.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0603](../tasks/AR-0603-csb-execution-assurance.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0704](../tasks/AR-0704-native-capacity-controller.md), [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md) |
 | [AR-0104](../tasks/AR-0104-durable-results.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0603](../tasks/AR-0603-csb-execution-assurance.md), [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0905](../tasks/AR-0905-recovery-models.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1005](../tasks/AR-1005-trace-interoperability.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) |
 | [AR-0105](../tasks/AR-0105-sandbox-test-portability.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md) |
-| [AR-0201](../tasks/AR-0201-portable-metrics.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0202](../tasks/AR-0202-kernel-diagnostics.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0705](../tasks/AR-0705-native-debian-capacity.md), [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md) |
-| [AR-0202](../tasks/AR-0202-kernel-diagnostics.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0201](../tasks/AR-0201-portable-metrics.md) | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md) |
-| [AR-0203](../tasks/AR-0203-statistical-analysis.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md), [AR-1004](../tasks/AR-1004-reliability-fairness.md) |
-| [AR-0204](../tasks/AR-0204-capacity-sweeps.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0105](../tasks/AR-0105-sandbox-test-portability.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md) | [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0905](../tasks/AR-0905-recovery-models.md), [AR-1004](../tasks/AR-1004-reliability-fairness.md), [AR-1006](../tasks/AR-1006-distributed-workers.md) |
-| [AR-0301](../tasks/AR-0301-agent-opencode.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-1003](../tasks/AR-1003-execution-budgets.md) |
-| [AR-0302](../tasks/AR-0302-agent-opendesk.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-1003](../tasks/AR-1003-execution-budgets.md) |
