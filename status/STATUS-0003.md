@@ -1960,7 +1960,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. |
-| Next action | Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then reproduce and repair only non-vendor AR-1793 compatibility fixtures. |
+| Next action | Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification. |
 
 ### AR-1852 — Role-store v0.7.4 compatibility contracts
 

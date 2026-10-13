@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T14:49:29+00:00",
   "depends_on": [],
   "id": "AR-1851",
-  "next_action": "Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then reproduce and repair only non-vendor AR-1793 compatibility fixtures.",
+  "next_action": "Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification.",
   "owner": "ar1851-ar1793-v074-luna",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:31:05+00:00",
+  "updated_at": "2026-10-13T13:31:22+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -92,3 +92,10 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T13:31:05+00:00: Recorded command exit 1; command argv SHA-256
   f3d06f68e44df840a02eb23ff6fbf4dcf4adcf9b96cbc2d39fb994109467a63f.
+
+- 2026-10-13T13:31:22+00:00: PR #147 formatting repair pushed as signed head 0d3693a24c after strict
+  Ruff-only failure at 0ac8b3eb54. Focused AR-1793 suite remains 59/59 green. Locked full discovery
+  completed 2131 tests in 529.916s with 3 failures and 8 errors: expected cross-repair failures in
+  complexity and role contracts plus SQLite/lock-domain errors under concurrent coordinator
+  activity; no new AR-1793 failure. Do not merge until fresh exact-head CI and independent review
+  pass.
