@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T21:08:00+00:00",
+  "claim_expires": "2026-10-13T21:38:15+00:00",
   "depends_on": [
     "AR-1835"
   ],
@@ -18,9 +18,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic cross-repository Exact TUI inherited-fd/PTY qualification seam exposed by AR-1835 without weakening its assertions.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Cross-repository Exact TUI qualification determinism",
-  "updated_at": "2026-10-13T19:38:00+00:00",
+  "updated_at": "2026-10-13T19:38:15+00:00",
   "worktree_key": ""
 }
 ---
@@ -53,3 +53,5 @@ waive the check, serialize it away, or accept mutable/unverified binaries.
   receipt; promote dependency-ready qualification repair.
 
 - 2026-10-13T19:38:00+00:00: Claimed by ar1836-tui-qual-luna.
+
+- 2026-10-13T19:38:15+00:00: Heartbeat by ar1836-tui-qual-luna.
