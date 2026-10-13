@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T12:13:13+00:00",
   "depends_on": [],
   "id": "AR-1843",
-  "next_action": "Run exact-head hosted formal workflow after independent review; local full suite remains environment-limited because unittest discovery hangs in pre-existing test_git_backup concurrent collision and pytest is not a locked project dependency.",
+  "next_action": "Wait for reviewer recheck and exact-head CI on cbc330c0f8; merge only after review and all required checks are green.",
   "owner": "ar1843-formal-workspace-repair-luna",
   "plan": "../plans/AR-1843-hosted-formal-workspace-permission-repair.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair hosted formal TLC workspace permissions for the ASB state runner.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Hosted formal workspace permission repair",
-  "updated_at": "2026-10-13T10:18:46+00:00",
+  "updated_at": "2026-10-13T10:19:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1843-formal-workspace-repair"
 }
 ---
@@ -133,3 +133,9 @@ formal assertion, timeout, or resource-bound gate may be removed or weakened.
 
 - 2026-10-13T10:18:46+00:00: Recorded command exit 0; command argv SHA-256
   2ee00dae99f8259e64a35f8422e2e0a774320f7e9b6acfc673c3099932051a06.
+
+- 2026-10-13T10:19:04+00:00: Independent review found missing negative workspace-contract coverage.
+  Added test_workflow_triggers coverage proving relative, parent-relative, and space-containing
+  TLC_WORK_ROOT values fail closed with exit 64 and the absolute-path diagnostic; focused unittest
+  passes. Full unittest discovery remains environment-limited by the pre-existing
+  test_git_authority_adapter SQLite collision and was interrupted after the documented hang.
