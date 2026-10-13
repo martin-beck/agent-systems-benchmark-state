@@ -2130,6 +2130,20 @@
 | Summary | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1864 — Align task-record schema vocabulary
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Align task-record schema vocabulary for execution, retry, and standard task metadata without changing lifecycle semantics. |
+| Next action | Align task-record schema execution/retry and standard metadata vocabulary; add positive and hostile fixtures and regenerate documentation. |
+
 
 ## Dependency graph
 
@@ -3037,6 +3051,7 @@ flowchart LR
         AR_1861["AR-1861 - Done"]:::status_done
         AR_1862["AR-1862 - Done"]:::status_done
         AR_1863["AR-1863 - In progress"]:::status_in_progress
+        AR_1864["AR-1864 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -5021,16 +5036,3 @@ flowchart LR
     AR_1830 --> AR_1832
     AR_1831 --> AR_1832
     AR_1832 --> AR_1842
-    AR_1835 --> AR_1836
-    AR_1842 --> AR_1844
-    AR_1844 --> AR_1845
-    AR_1845 --> AR_1846
-    AR_1846 --> AR_1847
-    AR_1847 --> AR_1848
-    AR_1851 --> AR_1854
-    AR_1852 --> AR_1854
-    AR_1853 --> AR_1854
-    AR_1858 --> AR_1859
-    classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
-    classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
-    classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px

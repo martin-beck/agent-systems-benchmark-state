@@ -1,5 +1,18 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1835 --> AR_1836
+    AR_1842 --> AR_1844
+    AR_1844 --> AR_1845
+    AR_1845 --> AR_1846
+    AR_1846 --> AR_1847
+    AR_1847 --> AR_1848
+    AR_1851 --> AR_1854
+    AR_1852 --> AR_1854
+    AR_1853 --> AR_1854
+    AR_1858 --> AR_1859
+    classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_planned fill:#6a1b9a,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_future fill:#455a64,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
