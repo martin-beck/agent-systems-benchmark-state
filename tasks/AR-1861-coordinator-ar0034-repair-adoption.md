@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1861-coordinator-adoption",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T20:25:35+00:00",
+  "claim_expires": "2026-10-13T20:25:43+00:00",
   "depends_on": [],
   "id": "AR-1861",
   "next_action": "Route the downstream formal-lifecycle operation drift exposed by AR-0034 vendor verification to a narrowly scoped compatibility successor; preserve AR-1826 and do not publish this incomplete adoption.",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T18:25:35+00:00",
+  "updated_at": "2026-10-13T18:25:43+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -63,3 +63,5 @@ or mutate AR-1826 until the adopted repair is verified.
   Reopen adoption for exact vendor/provenance verification; preserve AR-1826.
 
 - 2026-10-13T18:25:35+00:00: Claimed by ar1861-resume-luna.
+
+- 2026-10-13T18:25:43+00:00: Heartbeat by ar1861-resume-luna.
