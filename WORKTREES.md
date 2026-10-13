@@ -62,6 +62,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1800-development-warning-only-trust-contract` | `feature/ar-1800-development-warning-only-trust-contract` | `961243b302dc` | 0 | behind 46, ahead 0 |
 | `agent-systems-benchmark-ar-1837-pr627-protected-main-identity` | `repair/ar-1837-pr627-protected-main-identity` | `6ea3648e483f` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar-1838-source-checkout-fixture-repair-luna` | `repair/ar-1838-source-checkout-fixture-repair-luna` | `15f70ef23af6` | 0 | behind 1, ahead 0 |
+| `agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime` | `feature/ar1850-development-tui-interactive-lifetime` | `671f898b6a85` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar1838-merge-int` | `DETACHED` | `4a486e97abbb` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 821, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |

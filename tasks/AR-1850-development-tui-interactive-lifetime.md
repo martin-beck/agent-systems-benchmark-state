@@ -6,9 +6,9 @@
   "depends_on": [],
   "id": "AR-1850",
   "next_action": "Obtain independent exact-head review, publish reviewed PR, and run required CI.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar1850-development-tui-interactive-lifetime",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "671f898b6a859655952a009b9a4468e685d74013",
   "owner": "ar1850-development-tui-lifetime-luna",
   "plan": "../plans/AR-1850-development-tui-interactive-lifetime.md",
   "priority": "P0",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:05:05+00:00",
+  "updated_at": "2026-10-13T14:06:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
