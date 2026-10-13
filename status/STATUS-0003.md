@@ -1742,7 +1742,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -2995,7 +2995,7 @@ flowchart LR
         AR_1833["AR-1833 - Done"]:::status_done
         AR_1834["AR-1834 - Done"]:::status_done
         AR_1835["AR-1835 - Done"]:::status_done
-        AR_1836["AR-1836 - Planned"]:::status_planned
+        AR_1836["AR-1836 - Open"]:::status_open
         AR_1837["AR-1837 - Done"]:::status_done
         AR_1838["AR-1838 - Done"]:::status_done
         AR_1839["AR-1839 - Done"]:::status_done
@@ -5028,3 +5028,4 @@ flowchart LR
 
 ### Accessible dependency index
 
+| AR | Prerequisites | Dependents |

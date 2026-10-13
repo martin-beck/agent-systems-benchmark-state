@@ -3,7 +3,9 @@
   "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1835"],
+  "depends_on": [
+    "AR-1835"
+  ],
   "id": "AR-1836",
   "next_action": "Promote after AR-1835 dependency resolution; reproduce the two hosted failures with complete workflow metadata, identify the owning workflow/asb-tui seam, and implement only a deterministic qualification repair without weakening the gate.",
   "observed_dirty": 0,
@@ -14,11 +16,11 @@
   "schema_version": 1,
   "spec_ref": "specs/AR-1836.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the deterministic cross-repository Exact TUI inherited-fd/PTY qualification seam exposed by AR-1835 without weakening its assertions.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Cross-repository Exact TUI qualification determinism",
-  "updated_at": "2026-10-13T00:00:00+00:00",
+  "updated_at": "2026-10-13T19:37:30+00:00",
   "worktree_key": ""
 }
 ---
@@ -46,3 +48,6 @@ waive the check, serialize it away, or accept mutable/unverified binaries.
   AR-1835 remains `in_progress` while PR #627 has a terminal-failed required
   check, so AR-1836 must remain planned and ownerless; do not claim or start a
   replacement worker before AR-1835 reaches a dependency-satisfying state.
+
+- 2026-10-13T19:37:30+00:00: AR-1835 is now done with signed protected-main merge and post-merge
+  receipt; promote dependency-ready qualification repair.
