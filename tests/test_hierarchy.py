@@ -107,6 +107,9 @@ class HierarchyTests(unittest.TestCase):
         schema = json.loads(Path("schema/task-record.schema.json").read_text(encoding="utf-8"))
         record = task("AR-0001", children=["AR-0002"])[1]
         jsonschema.Draft202012Validator(schema).validate(record)
+        record["worktree_key"] = "../escape"
+        with self.assertRaises(jsonschema.ValidationError):
+            jsonschema.Draft202012Validator(schema).validate(record)
 
     def test_task_schema_requires_closed_at_for_terminal_human_session(self) -> None:
         schema = json.loads(Path("schema/task-record.schema.json").read_text(encoding="utf-8"))
