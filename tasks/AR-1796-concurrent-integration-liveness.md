@@ -11,7 +11,7 @@
   },
   "depends_on": [],
   "id": "AR-1796",
-  "next_action": "Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release.",
+  "next_action": "Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-13T19:35:05+00:00",
+  "updated_at": "2026-10-13T19:35:12+00:00",
   "worktree_key": ""
 }
 ---
@@ -62,3 +62,9 @@ workers checkpoint, retry, and continue useful work during integration churn.
 - 2026-10-13T19:34:57+00:00: Claimed by codex-ar1796-liveness2-luna.
 
 - 2026-10-13T19:35:05+00:00: Heartbeat by codex-ar1796-liveness2-luna.
+
+- 2026-10-13T19:35:12+00:00: Exact live audit 2026-10-13: historical AR-1796 repair commit
+  78b4cf216d is present but is not an ancestor of current origin/main 870331be533; recorded 31a7e14
+  is absent; latest public release is asb-0.1.0-plan-output-ce190 and no v0.5.2/full-exhaustive
+  attestation is present. Implementation/release cannot be marked complete until current-head
+  identity and fresh attestation are reconciled.

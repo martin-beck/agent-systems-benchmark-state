@@ -1442,7 +1442,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep autonomous development live during concurrent protected-main integration. |
-| Next action | Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release. |
+| Next action | Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt. |
 
 ### AR-1797 — Wire cli2key sidecar into live benchmark execution
 
@@ -5028,5 +5028,3 @@ flowchart LR
 
 ### Accessible dependency index
 
-| AR | Prerequisites | Dependents |
-| --- | --- | --- |

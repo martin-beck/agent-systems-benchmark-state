@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1796 — Concurrent integration liveness](tasks/AR-1796-concurrent-integration-liveness.md) | Keep autonomous development live during concurrent protected-main integration. | Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release. | codex-ar1796-liveness2-luna |
+| P0 | [AR-1796 — Concurrent integration liveness](tasks/AR-1796-concurrent-integration-liveness.md) | Keep autonomous development live during concurrent protected-main integration. | Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt. | codex-ar1796-liveness2-luna |
 
 ## Open
 
