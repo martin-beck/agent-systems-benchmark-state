@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T17:24:41+00:00",
+  "updated_at": "2026-10-13T17:24:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -102,3 +102,6 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T17:24:41+00:00: Recorded command exit 0; command argv SHA-256
   d170cc85a2be959fd73c389ee497884b18214e31c9ac47779ba11f9c89375fdc.
+
+- 2026-10-13T17:24:54+00:00: Recorded command exit 0; command argv SHA-256
+  7dfc0fae7d9361c87f74f10b0075482ba898cea80262d3628466ce5b3cf64f78.
