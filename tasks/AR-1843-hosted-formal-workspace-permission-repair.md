@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T12:13:13+00:00",
   "depends_on": [],
   "id": "AR-1843",
-  "next_action": "Reviewer recheck 7bb995e65d; wait for all required PR checks green before any merge.",
+  "next_action": "Verify PR #143 remains exact head 7bb995e65d, merge through handoffctl, then watch exact-main post-merge assurance workflows to terminal success.",
   "owner": "ar1843-formal-workspace-repair-luna",
   "plan": "../plans/AR-1843-hosted-formal-workspace-permission-repair.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair hosted formal TLC workspace permissions for the ASB state runner.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Hosted formal workspace permission repair",
-  "updated_at": "2026-10-13T10:20:44+00:00",
+  "updated_at": "2026-10-13T10:25:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1843-formal-workspace-repair"
 }
 ---
@@ -159,3 +159,7 @@ formal assertion, timeout, or resource-bound gate may be removed or weakened.
   S603/S607. Repaired the test to invoke /usr/bin/bash with a narrowly scoped S603 waiver; local
   Ruff format/check and six focused tests now pass. Updated exact PR head is 7bb995e65d; awaiting
   reviewer recheck and fresh required CI.
+
+- 2026-10-13T10:25:57+00:00: Independent re-review approved exact candidate head 7bb995e65d;
+  reviewer artifact digest sha256:8f3fc50714712d406744ff3eb62c43dc600ebef8385a5331c19fda7be3cbe6f7.
+  Formal workflow run 38382701566 is terminal SUCCESS and all required PR #143 checks are green.

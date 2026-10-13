@@ -1848,7 +1848,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair hosted formal TLC workspace permissions for the ASB state runner. |
-| Next action | Reviewer recheck 7bb995e65d; wait for all required PR checks green before any merge. |
+| Next action | Verify PR #143 remains exact head 7bb995e65d, merge through handoffctl, then watch exact-main post-merge assurance workflows to terminal success. |
 
 ### AR-1844 — Extract the ASB data-model registry
 
