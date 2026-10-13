@@ -382,5 +382,78 @@ class ConsistentReadAndDispatchCoverageTests(unittest.TestCase):
             handoffctl.cmd_upgrade(missing_binding)
 
 
+class LegacyBindingRepairCoverageTests(unittest.TestCase):
+    """Prove the narrow legacy worktree repair preserves every safety fence."""
+
+    def test_repair_legacy_binding_clears_only_the_exact_stale_key(self) -> None:
+        args = argparse.Namespace(
+            task="AR-1793",
+            expected_revision=7,
+            worktree_key="asb-state-ar1793",
+            note="rebind to the current isolated worktree",
+        )
+        meta = {
+            "id": "AR-1793",
+            "task_revision": 7,
+            "status": "open",
+            "owner": "",
+            "claim_expires": "",
+            "branch": "",
+            "worktree_key": args.worktree_key,
+        }
+        self.assertEqual(
+            args.note,
+            handoffctl.apply_repair_legacy_binding(args, meta, []),
+        )
+        self.assertEqual("", meta["worktree_key"])
+
+    def test_repair_legacy_binding_rejects_each_unsafe_state(self) -> None:
+        args = argparse.Namespace(
+            task="AR-1793",
+            expected_revision=7,
+            worktree_key="asb-state-ar1793",
+            note="repair",
+        )
+        base = {
+            "id": "AR-1793",
+            "task_revision": 7,
+            "status": "open",
+            "owner": "",
+            "claim_expires": "",
+            "branch": "",
+            "worktree_key": args.worktree_key,
+        }
+        cases: tuple[tuple[str, argparse.Namespace, dict[str, object], str], ...] = (
+            (
+                "stale",
+                argparse.Namespace(**{**vars(args), "expected_revision": 8}),
+                {},
+                "stale revision",
+            ),
+            ("active", args, {"status": "in_progress", "owner": "worker-a"}, "open, unowned"),
+            ("leased", args, {"claim_expires": "2999-01-01T00:00:00+00:00"}, "open, unowned"),
+            ("branch", args, {"branch": "codex/ar1793"}, "empty legacy branch"),
+            ("key", args, {"worktree_key": "other"}, "does not match"),
+            (
+                "blank-note",
+                argparse.Namespace(**{**vars(args), "note": "  "}),
+                {},
+                "must not be empty",
+            ),
+        )
+        for label, request, changes, message in cases:
+            with self.subTest(label=label):
+                meta = {**base, **changes}
+                before = dict(meta)
+                with self.assertRaisesRegex(RuntimeError, message):
+                    handoffctl.apply_repair_legacy_binding(request, meta, [])
+                self.assertEqual(before, meta)
+        with (
+            patch.object(handoffctl, "valid_binding_worktree", return_value=False),
+            self.assertRaisesRegex(RuntimeError, "worktree key is invalid"),
+        ):
+            handoffctl.apply_repair_legacy_binding(args, dict(base), [])
+
+
 if __name__ == "__main__":
     unittest.main()
