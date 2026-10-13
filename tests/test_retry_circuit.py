@@ -171,6 +171,50 @@ class RetryCircuitTests(unittest.TestCase):
         self.assertEqual(first, second)
         with self.assertRaisesRegex(ValueError, "scope"):
             retry_circuit.normalized_identity("a" * 64, "test", ["../escape"])
+        with self.assertRaisesRegex(ValueError, "digest"):
+            retry_circuit.normalized_identity("not-a-digest", "test", [])
+        with self.assertRaisesRegex(ValueError, "class"):
+            retry_circuit.normalized_identity("a" * 64, "shell", [])
+
+    def test_corrupt_durable_metadata_fails_closed_without_admission(self) -> None:
+        self.meta["retry_circuit"] = {
+            **retry_circuit.empty(),
+            "attempts": [
+                {
+                    "identity": self.identity,
+                    "failure": "EXIT",
+                    "progress_digest": retry_circuit.progress_digest(self.meta),
+                    "task_revision": 2,
+                    "recorded_at": NOW,
+                    "window": 3,
+                }
+            ],
+            "reservations": [
+                {
+                    "id": "b" * 32,
+                    "identity": self.identity,
+                    "progress_digest": retry_circuit.progress_digest(self.meta),
+                    "task_revision": 2,
+                    "reserved_at": NOW,
+                    "expires_at": "2026-10-13T12:01:01+00:00",
+                    "window": 3,
+                },
+                {
+                    "id": "b" * 32,
+                    "identity": self.identity,
+                    "progress_digest": retry_circuit.progress_digest(self.meta),
+                    "task_revision": 3,
+                    "reserved_at": NOW,
+                    "expires_at": "2026-10-13T12:01:01+00:00",
+                    "window": 3,
+                },
+            ],
+        }
+        self.assertEqual(
+            "retry circuit reservations are duplicated", retry_circuit.metadata_error(self.meta)
+        )
+        with self.assertRaisesRegex(ValueError, "duplicated"):
+            retry_circuit.admit(self.meta, self.identity)
 
     def test_bounded_unchanged_failures_open_and_hold_the_exact_identity(self) -> None:
         self.assertIn("1/3", self._failure(2, "one"))
@@ -431,6 +475,58 @@ class RetryCircuitTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "not current"):
             retry_circuit.resolve(self.meta, self.identity, "b" * 32, "EXIT", LATER)
         retry_circuit.validate(self.meta["retry_circuit"])
+
+    def test_successful_resolution_releases_the_exact_slot_and_clears_empty_state(self) -> None:
+        retry_circuit.reserve(
+            self.meta,
+            self.identity,
+            3,
+            "b" * 32,
+            NOW,
+            "2026-10-13T12:01:01+00:00",
+        )
+        self.assertEqual(
+            3,
+            retry_circuit.resolution_revision(self.meta, self.identity, "b" * 32),
+        )
+        self.assertEqual(
+            "Released retry circuit launch slot.",
+            retry_circuit.resolve(self.meta, self.identity, "b" * 32, None, NOW),
+        )
+        self.assertNotIn("retry_circuit", self.meta)
+        with self.assertRaisesRegex(RuntimeError, "not current"):
+            retry_circuit.resolution_revision(self.meta, self.identity, "b" * 32)
+
+    def test_recovery_retires_expired_slots_but_rejects_malformed_reasons(self) -> None:
+        for revision in range(2, 5):
+            self._failure(revision, str(revision))
+        self.meta["task_revision"] = 5
+        retry_circuit.reserve(
+            self.meta,
+            retry_circuit.normalized_identity("b" * 64, "test", ["tests"]),
+            3,
+            "b" * 32,
+            NOW,
+            "2026-10-13T12:00:01+00:00",
+        )
+        with self.assertRaisesRegex(ValueError, "reason"):
+            retry_circuit.recover(self.meta, self.identity, "retry-exception", "bad\nreason", LATER)
+        self.meta.update({"owner": "worker", "status": "in_progress"})
+        self.assertIn(
+            "recovered",
+            retry_circuit.apply(
+                argparse.Namespace(
+                    owner="worker",
+                    expected_revision=5,
+                    attempt=self.identity,
+                    retry_circuit_action="retry-exception",
+                    reason="expired peer slot retired",
+                ),
+                self.meta,
+                LATER,
+            ),
+        )
+        self.assertEqual(1, len(self.meta["retry_circuit"]["abandoned"]))
 
     def test_schema_matches_strict_reservation_and_abandoned_state(self) -> None:
         retry_circuit.reserve(
