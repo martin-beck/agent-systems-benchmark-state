@@ -2,19 +2,19 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T19:48:47+00:00",
   "depends_on": [],
   "id": "AR-1861",
   "next_action": "Promote and claim after verifying the immutable upstream AR-0034 repair source, then vendor it through the approved coordinator tool and qualify AR-1826 re-binding.",
-  "owner": "",
+  "owner": "ar1841-v053-adoption-luna",
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T17:48:25+00:00",
+  "updated_at": "2026-10-13T17:48:47+00:00",
   "worktree_key": ""
 }
 ---
@@ -30,3 +30,5 @@ or mutate AR-1826 until the adopted repair is verified.
 
 - 2026-10-13T17:48:25+00:00: Upstream Coordinator AR-0034 is complete at signed merge 3b200c9;
   promote isolated downstream adoption.
+
+- 2026-10-13T17:48:47+00:00: Claimed by ar1841-v053-adoption-luna.
