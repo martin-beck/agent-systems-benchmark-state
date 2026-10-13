@@ -1,0 +1,28 @@
+{
+  "ar": "AR-1837",
+  "credential_free_attempts": {
+    "first": "failure:source_checkout.Unavailable",
+    "second": "success"
+  },
+  "head": "5e78a03bcd0988da32b681ad7c0bff9f2d17c68f",
+  "immutable_invalid_merge": "6ea3648e483f25179c3112b54ed7c348e141cad4",
+  "merge": "4a486e97abbb450eb5927faf599119a5aa8be6fb",
+  "parents": [
+    "6ea3648e483f25179c3112b54ed7c348e141cad4",
+    "5e78a03bcd0988da32b681ad7c0bff9f2d17c68f"
+  ],
+  "pr": 628,
+  "tree": "bf0cab4849363586724b29e649992319c642a6a7",
+  "workflows": [
+    38353669093,
+    38353669122,
+    38353669100,
+    38353669203,
+    38353669082,
+    38353669080,
+    38353669101,
+    38353669099,
+    38353669102,
+    38353669498
+  ]
+}\n

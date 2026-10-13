@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1851.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "v074-contract", "description": "AR-1793 coverage asserts the exact v0.7.4 validation and error contracts."},
+    {"id": "fail-closed", "description": "Malformed, unsafe, and missing inputs remain rejected."},
+    {"id": "gates", "description": "Focused and locked full quality gates pass with independent review."}
+  ],
+  "definition_of_done": ["Non-vendor AR-1793 fixtures and expectations match v0.7.4.", "Positive and negative coverage is retained.", "Exact-head review and CI evidence are recorded."],
+  "inputs": [{"id": "failures", "description": "Strict v0.7.4 adoption failures in AR-1793 coverage tests."}],
+  "outputs": [{"id": "compatibility-tests", "description": "Downstream compatibility tests for the v0.7.4 contract."}],
+  "allowed_tools": ["git", "python", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["vendor-edit", "gate-weakening", "history-rewrite"],
+  "required_evidence_classes": ["mechanical", "contract-test"],
+  "gates": [{"id": "tests", "description": "Focused and full locked quality gates pass."}, {"id": "review", "description": "Independent exact-head review and CI are green."}]
+}

@@ -1,0 +1,18 @@
+AR-1839 independent review: commit 46ac642c40ced2fa60b55e8639510d119fc33e49
+Reviewer: ar1839-independent-review-luna
+
+Scope and mechanical checks
+- Reviewed docs/DEVELOPMENT.md, docs/ARCHITECTURE.md, docs/QUALITY.md, the AR-1839 task and plan, and specs/AR-1839.json.
+- Reviewed the complete one-file diff. The repair atomically reserves checkout-$PID[-suffix] with mkdir/create_dir, skips AlreadyExists, bounds attempts at 128, and removes only the owned transaction root on failure.
+- git diff --check and git show --check pass; worktree is clean.
+- git verify-commit 46ac642c40ced2fa60b55e8639510d119fc33e49 passes SSH signature verification for Martin Beck (ED25519 key SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE); commit has matching Signed-off-by.
+
+Tests
+- cargo test --locked -p asb-cli source_checkout -- --nocapture: 28 focused tests passed.
+- 12 independent cargo test --locked -p asb-cli --lib source_checkout -- --test-threads=1 processes ran concurrently; each reported 28 passed, 0 failed.
+- cargo test --locked -p asb-cli: 459 library tests and all applicable integration/doc tests passed.
+- cargo fmt --all -- --check and cargo clippy --locked -p asb-cli --all-targets -- -D warnings passed.
+
+Review disposition
+- No product findings. The new reservation is collision-safe across processes, bounded, and fail-closed on non-AlreadyExists filesystem errors; source identity, revision checks, and cleanup behavior remain intact.
+- One exploratory invocation of eight unqualified `cargo test -p asb-cli source_checkout` commands had one test-binary failure in an unrelated process-wide fixture interaction; the required focused `--lib` concurrent-process run passed 12/12, and the serial full package suite passed. Keep hosted exact-head and publication gates pending.

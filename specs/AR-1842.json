@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1842.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "name-first-selection", "description": "Setup, plan creation, validation, run, sweep, report, compare, and TUI flows let users select agents, providers, models, tools, and workloads by stable display names only."},
+    {"id": "internal-resolution", "description": "Each selected name resolves through one catalog/config resolver to the canonical executable, provider endpoint, model identifier, workload definition, version, and integrity metadata without requiring the user to enter or copy those values."},
+    {"id": "binding-integrity", "description": "The resolver rejects ambiguous, stale, missing, or name-to-artifact mismatches with a clear name-based remediation; plan/run binding uses the resolved identity rather than trusting a separately supplied path or hash."},
+    {"id": "human-output", "description": "Default human prompts, status, errors, and reports expose names and actionable choices, not filesystem paths, hashes, opaque versions, or internal identity fields; JSON retains machine-readable resolved metadata only where required by its contract."},
+    {"id": "paired-tui", "description": "The standalone asb-tui and embedded TUI consume the same name catalog and resolver, with identical choices and no duplicated path/hash/version entry workflow."}
+  ],
+  "definition_of_done": ["After AR-1832, a fresh user can complete the supported ASB workflow by choosing names, while ASB internally resolves and verifies all physical and versioned identities consistently across CLI and TUI."],
+  "inputs": [
+    {"id": "explicit-config-workflow", "description": "AR-1832 qualified setup-output and explicit config-bound benchmark route."},
+    {"id": "catalogs", "description": "Configured and discovered catalogs for agents, providers, models, tools, and workloads."},
+    {"id": "tui-contract", "description": "ASB CLI/TUI and standalone asb-tui selection and handoff contracts."}
+  ],
+  "outputs": [
+    {"id": "name-resolver", "description": "Shared name-to-identity resolver and persisted logical selections."},
+    {"id": "name-first-ux", "description": "Name-only human setup, execution, and analysis flows with paired CLI/TUI coverage."},
+    {"id": "qualification-receipt", "description": "Contract and journey evidence proving mismatch prevention and name-first operation."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl", "credential-free-fakes", "opt-in-live-test"],
+  "forbidden_tools": ["credential-output", "user-path-prompting", "user-hash-prompting", "opaque-version-selection", "duplicated-resolver", "provider-fallback", "gate-weakening", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["contract-test", "journey", "mechanical", "privacy"],
+  "gates": [
+    {"id": "resolver-contract", "description": "Focused tests prove every supported logical name resolves deterministically and ambiguous or mismatched identities fail with name-based remediation."},
+    {"id": "fresh-user-journey", "description": "A clean-project CLI and paired TUI journey completes setup, selection, benchmark, and analysis without user-supplied paths, hashes, or versions."},
+    {"id": "no-regression", "description": "Existing explicit-config, safety, privacy, and development-channel contracts remain green."}
+  ]
+}

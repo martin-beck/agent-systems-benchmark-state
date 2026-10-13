@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1843.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "runner-workspace", "description": "The hosted formal workflow creates its per-run TLC workspace and attestation directory under /srv/data/projects/.asb-tlc as the gha-asb-state runner account."},
+    {"id": "formal-preserved", "description": "PR #142 exact-head formal verification passes without removing or weakening any model, attestation, resource, privacy, or DCO gate."},
+    {"id": "postmerge", "description": "Exact-main post-merge formal and coordination workflows are terminally successful."}
+  ],
+  "definition_of_done": [
+    "The workflow initializes a private, bounded, runner-writable TLC workspace and attestation parent under the approved second-disk root.",
+    "The exact PR #142 formal check passes after the repair with all formal assertions and resource gates intact.",
+    "The merged repair has exact-main post-merge evidence and is reconciled in durable state."
+  ],
+  "inputs": [
+    {"id": "failure", "description": "PR #142 formal-run permission failure showing unwritable /tmp workspace and attestation paths."},
+    {"id": "workflow", "description": "The ASB-state handoffctl formal workflow and approved /srv/data/projects/.asb-tlc runner root."}
+  ],
+  "outputs": [
+    {"id": "repair", "description": "Reviewed workflow and runner workspace initialization repair."},
+    {"id": "evidence", "description": "Exact-head and exact-main formal verification receipts."}
+  ],
+  "allowed_tools": ["git", "gh", "python", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["formal-gate-removal", "resource-bound-weakening", "history-rewrite", "force-push-main"],
+  "required_evidence_classes": ["mechanical", "contract-test", "bounded-model", "environmental"],
+  "gates": [
+    {"id": "workspace", "description": "Runner workspace and attestation parents are created with private permissions on the approved root."},
+    {"id": "formal", "description": "The unchanged formal model, attestation, and resource-bound checks pass on the exact candidate head."},
+    {"id": "publication", "description": "Independent review, exact-head CI, signed DCO merge, and exact-main post-merge checks pass."}
+  ]
+}

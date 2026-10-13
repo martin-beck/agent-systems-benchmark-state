@@ -2,36 +2,36 @@
 {
   "branch": "feature/ar-1835-authenticated-control-live-isolation-repair",
   "checkpoint_commit": "06565d3de95aa72fa67bf2fde73078753acfd49b",
-  "claim_expires": "2026-10-13T06:19:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1763",
     "AR-1764",
     "AR-1782"
   ],
   "id": "AR-1835",
-  "next_action": "Merge PR #627 only through the reviewed signed integration procedure, then run post-merge exact-main verification and reconcile AR-1835; keep AR-1783 in progress.",
+  "next_action": "Reconcile AR-1835 acceptance against signed protected-main merge 4a486e97 and receipt quality/AR-1837-postmerge-receipt.json; preserve AR-1783 in progress.",
   "observed_branch": "feature/ar-1835-authenticated-control-live-isolation-repair",
   "observed_dirty": 0,
   "observed_head": "06565d3de95aa72fa67bf2fde73078753acfd49b",
-  "owner": "ar1835-control-isolation-luna",
+  "owner": "",
   "plan": "../plans/AR-1835-authenticated-control-live-isolation-repair.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
-    "evidence_class": "contract-test",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:1d74a4ae886d24a0cb23a7d6bbd50fffe7c206c5d2e19036a36af5342781b08d",
+    "evidence_ref": "quality/AR-1837-postmerge-receipt.json",
     "spec_ref": "specs/AR-1835.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1835.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the missing authenticated ControlClient/server and delegated live-isolation coverage seam without weakening AR-1783 gates.",
-  "task_revision": 80,
+  "task_revision": 88,
   "title": "Authenticated control and live-isolation coverage repair",
-  "updated_at": "2026-10-13T05:30:08+00:00",
+  "updated_at": "2026-10-13T06:12:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1835-authenticated-control-live-isolation-repair"
 }
 ---
@@ -324,3 +324,36 @@ Add a bounded test-only authenticated control fixture and/or delegated-isolation
 
 - 2026-10-13T05:30:08+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-10-13T06:07:20+00:00: Post-merge evidence recorded from AR-1837: PR #627 head
+  06565d3de95aa72fa67bf2fde73078753acfd49b was published in signed+DCO local merge
+  4a486e97abbb450eb5927faf599119a5aa8be6fb. Exact-main workflows 38353669093, 38353669122,
+  38353669100, 38353669203, 38353669082, 38353669080, 38353669101, 38353669099, 38353669102 (rerun
+  attempt 2), and 38353669498 are terminal-success. Immutable invalid web merge 6ea3648e remains
+  preserved; no product-path evidence changed.
+
+- 2026-10-13T06:09:12+00:00: Heartbeat by ar1835-control-isolation-luna.
+
+- 2026-10-13T06:11:08+00:00: Heartbeat by ar1835-control-isolation-luna.
+
+- 2026-10-13T06:11:26+00:00: Recorded command exit 0; command argv SHA-256
+  7c6e3a4ddef775916827052c1bd90a1958ad6edfbb895244fa332ae1fb6ed4b2.
+
+- 2026-10-13T06:11:48+00:00: Recorded command exit 0; command argv SHA-256
+  68decd35174e19333a0af6f11a03589d94eab31c9fc00531dd61f9fff19012f6.
+
+- 2026-10-13T06:12:11+00:00: Recorded command exit 0; command argv SHA-256
+  5b8c54a33b95c8cd614e660e9db04c78cac6080f38e59f0bbce08b5535c4a44f.
+
+- 2026-10-13T06:12:18+00:00: Acceptance passed: reviewed signed+DCO PR #627 head 06565d3 is
+  integrated in signed protected-main merge 4a486e97 with exact tree and preserved invalid web merge
+  history; focused control evidence is 74/74 with fmt, clippy and diagnostic-contract checks green;
+  AR-1837 receipt records all ten exact-main workflows terminal-success. AR-1783 remains
+  in_progress.
+
+- 2026-10-13T06:12:36+00:00: Released done: acceptance passed against
+  quality/AR-1837-postmerge-receipt.json
+  (sha256:1d74a4ae886d24a0cb23a7d6bbd50fffe7c206c5d2e19036a36af5342781b08d); signed+DCO PR #627
+  exact head 06565d3 is in signed merge 4a486e97; all ten exact-main workflows terminal-success;
+  focused controls 74/74, fmt, clippy and diagnostic-contract evidence retained. AR-1783
+  intentionally remains in_progress.

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1841.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "upstream-release", "description": "The exact upstream Coordinator v0.5.3 release at 2714cfd87f9dd1c6229ab6d9622b13862de186b1 is verified before synchronization."},
+    {"id": "vendor-integrity", "description": "The synchronized vendor manifest verifies byte-for-byte with no manual vendored edits."},
+    {"id": "partial-binding", "description": "The adopted handoffctl accepts an active legacy task with empty branch and matching pre-existing worktree_key, while rejecting conflicting identities."},
+    {"id": "integration", "description": "Exact-head review, required CI, signed DCO integration, and exact-main post-merge verification succeed."}
+  ],
+  "definition_of_done": [
+    "ASB state vendors the verified v0.5.3 snapshot and doctor passes.",
+    "The partial-legacy binding contract is exercised by positive and negative tests without weakening existing gates.",
+    "The reviewed merge and post-merge exact-main evidence is recorded durably."
+  ],
+  "inputs": [
+    {"id": "upstream", "description": "Agent Workflow Coordinator v0.5.3 tag and immutable source tree."},
+    {"id": "state", "description": "Current ASB state vendor manifest and quality gates."}
+  ],
+  "outputs": [
+    {"id": "vendor-receipt", "description": "Verified v0.5.3 vendor manifest and immutable downstream adoption receipt."}
+  ],
+  "allowed_tools": ["git", "gh", "python", "uv", "tools/handoffctl", "tools/handoffctl_vendor.py"],
+  "forbidden_tools": ["vendored-file-patching", "coverage-threshold-lowering", "history-rewrite", "force-push-main"],
+  "required_evidence_classes": ["mechanical", "contract-test", "bounded-model", "hosted"],
+  "gates": [
+    {"id": "vendor", "description": "Exact v0.5.3 vendor manifest verification passes offline."},
+    {"id": "quality", "description": "Applicable state quality, schema, privacy, formal and generated-view gates pass unchanged."},
+    {"id": "publication", "description": "Independent review, exact-head CI, signed DCO merge and exact-main post-merge checks pass."}
+  ]
+}

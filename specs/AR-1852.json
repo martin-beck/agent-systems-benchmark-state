@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1852.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "role-contract", "description": "Role doctor and lifecycle admission tests match exact v0.7.4 role-store behavior."},
+    {"id": "authorization", "description": "Unauthorized and expired role assignments remain rejected."},
+    {"id": "gates", "description": "Focused and locked full quality gates pass with independent review."}
+  ],
+  "definition_of_done": ["Non-vendor role fixtures and assertions match v0.7.4.", "Positive and negative authorization coverage remains intact.", "Exact-head review and CI evidence are recorded."],
+  "inputs": [{"id": "failures", "description": "Strict v0.7.4 adoption failures in role-store authorization tests."}],
+  "outputs": [{"id": "role-compatibility", "description": "Downstream role-store compatibility tests for v0.7.4."}],
+  "allowed_tools": ["git", "python", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["vendor-edit", "authorization-weakening", "history-rewrite"],
+  "required_evidence_classes": ["mechanical", "contract-test"],
+  "gates": [{"id": "tests", "description": "Focused and full locked quality gates pass."}, {"id": "review", "description": "Independent exact-head review and CI are green."}]
+}
