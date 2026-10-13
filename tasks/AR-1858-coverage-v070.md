@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T17:56:04+00:00",
+  "claim_expires": "2026-10-13T17:58:15+00:00",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "A separate process is running outside the bound worktree: /srv/data/projects/asb-state-coordinator-v070 with COVERAGE_FILE=/tmp/asb-state-v075-strict-19.coverage. Do not accept it as AR-1858 evidence until exact worktree root and terminal result are verified. After it ends, run bounded split suites from /srv/data/projects/asb-state-coordinator-v070-ar1858-coverage-v070.",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T15:57:46+00:00",
+  "updated_at": "2026-10-13T15:58:15+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -96,3 +96,5 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-13T15:57:46+00:00: Recorded command exit 0; command argv SHA-256
   bfa3002a80a55cbec231d0fdce80649c57c22c3bbeedce512e66899aa55b6c99.
+
+- 2026-10-13T15:58:15+00:00: Heartbeat by ar1858-coverage-v070-luna.
