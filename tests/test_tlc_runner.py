@@ -249,22 +249,21 @@ class TLCAdmissionTests(unittest.TestCase):
             self.assertEqual(len(outcomes), 1)
             self.assertEqual(json.loads(outcomes[0].read_text())["state"], "completed")
 
-    def test_parser_uses_environment_lock_and_accepts_explicit_isolated_lock(self) -> None:
+    def test_parser_keeps_canonical_lock_default_and_accepts_explicit_isolated_lock(self) -> None:
         isolated_lock = "isolated-admission.lock"
-        with patch.dict(os.environ, {"TLC_ADMISSION_LOCK": "job-private.lock"}):
-            args = parser().parse_args(
-                [
-                    "--jar",
-                    "tla.jar",
-                    "--model",
-                    "Model.tla",
-                    "--config",
-                    "Model.cfg",
-                    "--metadir",
-                    "states",
-                ]
-            )
-        self.assertEqual(args.admission_lock, "job-private.lock")
+        args = parser().parse_args(
+            [
+                "--jar",
+                "tla.jar",
+                "--model",
+                "Model.tla",
+                "--config",
+                "Model.cfg",
+                "--metadir",
+                "states",
+            ]
+        )
+        self.assertEqual(args.admission_lock, _runner.DEFAULT_ADMISSION_LOCK)
         args = parser().parse_args(
             [
                 "--jar",
