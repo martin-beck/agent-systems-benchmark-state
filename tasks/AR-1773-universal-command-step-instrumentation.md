@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T21:43:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -82,7 +82,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "asb_ar1773_instrument_luna",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -96,11 +96,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T19:43:48+00:00",
+  "updated_at": "2026-10-13T19:43:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -157,3 +157,10 @@ non-TTY compatibility.
   741025f82ae045889c1f17411456cfd7f22843be12678fead0dcda63f198a4bd.
 
 - 2026-10-13T19:43:48+00:00: Heartbeat by asb_ar1773_instrument_luna.
+
+- 2026-10-13T19:43:56+00:00: Released ownerless after exact-head requalification attempt.
+  Implementation commit f78a100620 is already ancestor of current origin/main. Exact blockers:
+  handoffctl test envelope cannot mount any Cargo toolchain (cargo not found in bwrap); direct
+  pinned cargo then fails current main at crates/asb-cli/src/control.rs:9998 with unused variable
+  error under -D warnings. Repair that current-main gate and rerun focused/full exact-head tests
+  through a mounted pinned toolchain.
