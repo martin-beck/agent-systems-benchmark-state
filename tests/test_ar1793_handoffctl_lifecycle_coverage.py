@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 from unittest.mock import MagicMock, patch
 
-from tools import handoffctl
+from tools import handoffctl, predicate_ledger
 
 
 def active_meta(**changes: object) -> dict[str, Any]:
@@ -188,7 +188,6 @@ class LifecycleRecoveryCoverageTests(unittest.TestCase):
         cases = (
             ("owner", active_meta(owner="worker-b", spec_ref="x", spec_revision=1), "owned by"),
             ("inactive", active_meta(status="open", spec_ref="x", spec_revision=1), "active task"),
-            ("missing-spec", active_meta(), "referenced task spec"),
             (
                 "stale",
                 active_meta(spec_ref="x", spec_revision=1, task_revision=8),
@@ -199,10 +198,16 @@ class LifecycleRecoveryCoverageTests(unittest.TestCase):
             for label, meta, message in cases:
                 with self.subTest(label=label), self.assertRaisesRegex(RuntimeError, message):
                     handoffctl.apply_accept(args, meta, None)
+        best_effort = active_meta()
+        with patch.object(handoffctl, "require_role_admission"):
+            handoffctl.apply_accept(args, best_effort, None)
+        self.assertEqual("best_effort", best_effort["spec_acceptance"]["match"])
         meta = active_meta(spec_ref="x", spec_revision=1)
         with (
             patch.object(handoffctl, "require_role_admission"),
-            patch.object(handoffctl, "done_admission_error", return_value="evidence rejected"),
+            patch.object(
+                predicate_ledger, "done_admission_error", return_value="evidence rejected"
+            ),
             self.assertRaisesRegex(RuntimeError, "evidence rejected"),
         ):
             handoffctl.apply_accept(args, meta, None)

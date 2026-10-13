@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Any
 from unittest.mock import MagicMock, patch
 
-from tools import fast_receipt_socket, handoffctl, role_assignment, role_registry
+from tools import fast_receipt_socket, handoffctl, predicate_ledger, role_assignment, role_registry
 from tools.guest_seed import build_user_data
 from tools.role_assignment import assignment_errors, validate_assignment
 from tools.role_registry import registry_errors, validate_registry
@@ -366,7 +366,9 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "active task"):
                 handoffctl.apply_accept(accept_args, {**accepted, "status": "open"}, None)
             with (
-                patch.object(handoffctl, "done_admission_error", return_value="evidence rejected"),
+                patch.object(
+                    predicate_ledger, "done_admission_error", return_value="evidence rejected"
+                ),
                 self.assertRaisesRegex(RuntimeError, "evidence rejected"),
             ):
                 handoffctl.apply_accept(accept_args, dict(accepted), None)

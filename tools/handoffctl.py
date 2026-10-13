@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
-"""Transactional, project-configurable coordination state."""
+"""State."""
 
 import sys
 
@@ -28,10 +28,10 @@ import threading
 import time
 import uuid
 from collections import Counter
-from collections.abc import Iterator
+from collections.abc import Callable, Iterator
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from typing import Any, cast
+from typing import TYPE_CHECKING, Any, cast
 
 if not __package__:
     _SCRIPT_ROOT = str(Path(__file__).resolve().parent.parent)
@@ -39,6 +39,18 @@ if not __package__:
         sys.path.insert(0, _SCRIPT_ROOT)
 
 if __package__:
+    from . import (
+        assumption_revalidation,
+        change_drift,
+        command_results,
+        execution_envelope,
+        execution_receipt,
+        resume_card,
+        resume_card_runtime,
+        retry_circuit,
+        run_command,
+    )
+    from . import autonomy_limits as al
     from .board_metrics import build_metrics
     from .board_metrics import encode as encode_metrics
     from .checkpoint_records import (
@@ -67,6 +79,7 @@ if __package__:
         gate_errors,
         transition_allowed,
     )
+    from .predicate_ledger import apply_acceptance
     from .rollback_records import (
         append_record,
         build_record,
@@ -100,11 +113,17 @@ if __package__:
         EvidencePolicy,
         done_admission_error,
         evidence_policy,
+        next_unmet_predicate,
         require_policy_unchanged,
         task_spec_errors,
         task_spec_policy_errors,
     )
 else:  # pragma: no cover - direct script execution
+    import assumption_revalidation  # type: ignore[import-not-found,no-redef]
+    import autonomy_limits as al  # type: ignore[import-not-found,no-redef]
+    import change_drift  # type: ignore[import-not-found,no-redef]
+    import command_results  # type: ignore[import-not-found,no-redef]
+
     try:
         from board_metrics import build_metrics  # type: ignore[import-not-found,no-redef]  # noqa: I001
         from board_metrics import encode as encode_metrics  # type: ignore[no-redef]
@@ -118,6 +137,12 @@ else:  # pragma: no cover - direct script execution
             del metrics
             raise RuntimeError("board metrics module is unavailable in this vendored bootstrap")
 
+    import execution_envelope  # type: ignore[import-not-found,no-redef]
+    import execution_receipt  # type: ignore[import-not-found,no-redef]
+    import resume_card  # type: ignore[import-not-found,no-redef]
+    import resume_card_runtime  # type: ignore[import-not-found,no-redef]
+    import retry_circuit  # type: ignore[import-not-found,no-redef]
+    import run_command  # type: ignore[import-not-found,no-redef]
     from checkpoint_records import (  # type: ignore[import-not-found,no-redef]
         append_checkpoint,
         build_checkpoint,
@@ -147,6 +172,7 @@ else:  # pragma: no cover - direct script execution
         gate_errors,
         transition_allowed,
     )
+    from predicate_ledger import apply_acceptance  # type: ignore[import-not-found,no-redef]
     from rollback_records import (  # type: ignore[import-not-found,no-redef]
         append_record,
         build_record,
@@ -180,9 +206,17 @@ else:  # pragma: no cover - direct script execution
         EvidencePolicy,
         done_admission_error,
         evidence_policy,
+        next_unmet_predicate,
         require_policy_unchanged,
         task_spec_errors,
         task_spec_policy_errors,
+    )
+
+if TYPE_CHECKING:
+    __all__ = (
+        "DEFAULT_EVIDENCE_POLICY",
+        "graph_errors",
+        "hierarchy_errors",
     )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -226,13 +260,17 @@ LIFECYCLE_MUTATION_COMMANDS = (
     "accept",
     "bind-spec",
     "bind-worktree",
+    "bind-envelope",
     "release",
     "promote",
     "pause",
     "resume",
     "unblock",
     "recover-expired",
+    "recover-execution",
     "update",
+    "change-drift",
+    "assumption",
 )
 
 
@@ -256,6 +294,7 @@ REQ = (
     "updated_at",
 )
 FIELDS = set(REQ) | {
+    "short_title",
     "owner",
     "role",
     "team",
@@ -274,14 +313,52 @@ FIELDS = set(REQ) | {
     "spec_ref",
     "spec_revision",
     "spec_acceptance",
+    "evidence_ledger",
+    "execution_envelope_ref",
+    "execution_envelope_revision",
+    "execution_envelope_task_revision",
+    "execution_envelope_digest",
+    "execution_envelope",
+    "execution_reservation",
+    "execution_result",
     "parent_task_ref",
     "children",
+    "issue_series",
+    "change_drift",
+    "assumption_revalidation",
+    "retry_circuit",
+    "autonomy_limits",
 }
 type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
-COORDINATOR_VERSION = "0.5.1"
+
+def task_label(meta: Meta) -> str:
+    """Return the compatibility-safe human label for one task."""
+    return f"{meta['id']} — {meta.get('short_title') or meta['title']}"
+
+
+def short_title_errors(path: Path, task_id: str, value: object) -> list[str]:
+    """Validate optional concise navigational metadata independently of task state."""
+    if value is None:
+        return []
+    if (
+        not isinstance(value, str)
+        or not value.strip()
+        or any(ord(char) < 32 or ord(char) == 127 for char in value)
+    ):
+        return [f"{task_id}: invalid short_title"]
+    if len(value) > 120:
+        return [f"{task_id}: short_title exceeds 120 characters"]
+    if len(value.split()) > 4:
+        return [f"{task_id}: short_title exceeds four words"]
+    if private_text_errors(path, value):
+        return [f"{task_id}: privacy-unsafe short_title"]
+    return []
+
+
+COORDINATOR_VERSION = "0.7.0"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -376,6 +453,14 @@ class GitBackend:
     def load_checkpoint_records(self, task_id: str | None = None) -> list[Meta]:
         return load_checkpoints(ROOT, task_id)
 
+    def has_command_result(self, task_id: str, owner: str, argv_sha256: str) -> bool:
+        return any(
+            record["task"] == task_id
+            and record["owner"] == owner
+            and record["argv_sha256"] == argv_sha256
+            for record in legacy_command_results()
+        )
+
     def append_command_result(
         self,
         task_id: str,
@@ -398,12 +483,6 @@ def storage_backend() -> Backend:
 
 
 def mutating_sqlite_backend() -> SQLiteBackend:
-    """Return the barrier-aware writer, or an explicit legacy compatibility route.
-
-    Pre-marker installations remain usable as required by the compatibility
-    contract. They cannot start an upgrade; once provisioning exists, every
-    write goes through the durable fence factory below.
-    """
     if not all(
         path.exists()
         for path in (
@@ -579,17 +658,19 @@ def assert_project_binding(caller_cwd: Path | None = None) -> None:
         raise RuntimeError("handoffctl must be called from its bound state or product project")
 
 
-class LockTimeoutError(RuntimeError):
-    """The coordinator lock could not be acquired within its bounded deadline."""
+class RetryableCoordinatorError(RuntimeError):
+    pass
+
+
+class LockTimeoutError(RetryableCoordinatorError):
+    pass
 
 
 class LockOwnershipError(RuntimeError):
-    """A coordinator lock capability is missing, stale, or used incorrectly."""
+    pass
 
 
 class CoordinatorLockGuard:
-    """Capability proving that this process and thread hold one lock inode."""
-
     __slots__ = (
         "_active",
         "_exclusive",
@@ -623,7 +704,6 @@ class CoordinatorLockGuard:
         return self._path
 
     def assert_owned(self) -> None:
-        """Fail closed unless the original owner still holds the same inode."""
         if not self._active:
             raise LockOwnershipError("coordinator lock guard is inactive")
         if not self._exclusive:
@@ -651,23 +731,27 @@ class CoordinatorLockGuard:
 
 
 class SubprocessTimeoutError(RuntimeError):
-    """A Git/GitHub or coordinator command exceeded its bounded deadline."""
+    pass
 
 
-class ReplicaDivergedError(RuntimeError):
-    """The state replica cannot be advanced without reconciling Git history."""
+class RepairRequiredCoordinatorError(RuntimeError):
+    pass
+
+
+class ReplicaDivergedError(RepairRequiredCoordinatorError):
+    pass
 
 
 class ExternalObservationError(RuntimeError):
-    """A bounded read-only external observation failed after retries."""
+    pass
 
 
 class PostCommandReconcileError(RuntimeError):
-    """A command result is durable, but its subsequent live reconciliation failed."""
+    pass
 
 
 class StorageCommittedError(RuntimeError):
-    """A SQLite transaction committed but its disposable projection failed."""
+    pass
 
 
 PRIVATE = (
@@ -771,6 +855,44 @@ def coordinator_lock_path() -> Path:
     if not common.is_absolute():
         common = ROOT / common
     return common.resolve() / "handoffctl" / "state.lock"
+
+
+def task_execution_lock_path(task_id: str) -> Path:
+    if not execution_envelope.TASK.fullmatch(task_id):
+        raise RuntimeError("invalid task execution fence identifier")
+    return coordinator_lock_path().parent / "task-executions" / f"{task_id}.lock"
+
+
+@contextlib.contextmanager
+def task_execution_locked(
+    task_id: str,
+    *,
+    exclusive: bool,
+    timeout: float = LOCK_TIMEOUT_SECONDS,
+    phase: str = "task_execution",
+) -> Iterator[None]:
+    lock_path = task_execution_lock_path(task_id)
+    lock_path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
+    fd = os.open(lock_path, os.O_CREAT | os.O_RDWR, 0o600)
+    try:
+        operation = fcntl.LOCK_EX if exclusive else fcntl.LOCK_SH
+        deadline = time.monotonic() + timeout
+        while True:
+            try:
+                fcntl.flock(fd, operation | fcntl.LOCK_NB)
+                break
+            except BlockingIOError as error:
+                remaining = deadline - time.monotonic()
+                if remaining <= 0:
+                    mode = "exclusive" if exclusive else "shared"
+                    raise LockTimeoutError(
+                        f"LOCK_TIMEOUT after {timeout:.1f}s acquiring {mode} {phase} fence"
+                    ) from error
+                time.sleep(min(LOCK_POLL_SECONDS, remaining))
+        yield
+    finally:
+        fcntl.flock(fd, fcntl.LOCK_UN)
+        os.close(fd)
 
 
 @contextlib.contextmanager
@@ -935,7 +1057,16 @@ def render_current(tasks: list[Task]) -> str:
     by_id = {meta["id"]: path.name for path, meta, _ in tasks}
 
     def clean(value: object) -> str:
-        return str(value or "-").replace("|", "\\|").replace("\n", " ")
+        return (
+            str(value or "-")
+            .replace("\\", "\\\\")
+            .replace("|", "\\|")
+            .replace("\n", " ")
+            .replace("[", "\\[")
+            .replace("]", "\\]")
+            .replace("(", "\\(")
+            .replace(")", "\\)")
+        )
 
     for status in CURRENT_STATUSES:
         rows = sorted(
@@ -950,9 +1081,9 @@ def render_current(tasks: list[Task]) -> str:
             "| --- | --- | --- | --- | --- |",
         ]
         for meta in rows:
-            link = f"[{meta['id']}](tasks/{by_id[meta['id']]})"
+            link = f"[{clean(task_label(meta))}](tasks/{by_id[meta['id']]})"
             row = (
-                f"| {meta['priority']} | {link}: {clean(meta['title'])} | "
+                f"| {meta['priority']} | {link} | "
                 f"{clean(meta['summary'])} | {clean(meta['next_action'])} | "
                 f"{clean(meta.get('owner'))} |"
             )
@@ -1178,8 +1309,6 @@ def possible_uuid_pattern(text: str) -> bool:
 
 def possible_privacy_pattern(text: str, lowered: str, label: str) -> bool:
     """Use only necessary literals before the authoritative privacy regex."""
-    # Python's Unicode IGNORECASE can match non-ASCII case variants of ASCII
-    # literals that lower() does not turn into those same ASCII byte sequences.
     if not text.isascii():
         return True
     if label == "absolute Linux home path":
@@ -1199,8 +1328,6 @@ def possible_privacy_pattern(text: str, lowered: str, label: str) -> bool:
         return "-----BEGIN " in text
     if label == "session-like UUID":
         return possible_uuid_pattern(text)
-    # New pattern families must retain the full regex until a necessary
-    # prefilter is reviewed; an unknown label must never suppress a finding.
     return True
 
 
@@ -1317,11 +1444,55 @@ def value_errors(path: Path, meta: Meta) -> list[str]:
         for name in ("title", "summary", "next_action", "updated_at")
         if not isinstance(meta.get(name), str) or not meta.get(name)
     )
+    errors.extend(short_title_errors(path, task_id, meta.get("short_title")))
     errors.extend(f"{task_id}: {error}" for error in gate_errors(meta.get("oracle_gate")))
+    errors.extend(execution_metadata_errors(task_id, meta))
+    return errors
+
+
+def execution_metadata_errors(task_id: str, meta: Meta) -> list[str]:
+    """Validate optional process and execution-fence metadata together."""
+    errors: list[str] = []
     claim_process = meta.get("claim_process")
     if claim_process is not None and not valid_claim_process(claim_process):
         errors.append(f"{task_id}: invalid claim_process")
+    reservation = meta.get("execution_reservation")
+    if reservation is not None and not valid_execution_reservation(reservation):
+        errors.append(f"{task_id}: invalid execution_reservation")
+    result = meta.get("execution_result")
+    if result is not None and not valid_execution_result(result):
+        errors.append(f"{task_id}: invalid execution_result")
+    if not valid_execution_envelope_binding(meta):
+        errors.append(f"{task_id}: invalid execution envelope binding")
+    if error := change_drift.metadata_error(meta):
+        errors.append(f"{task_id}: {error}")
+    if error := assumption_revalidation.metadata_error(meta):
+        errors.append(f"{task_id}: {error}")
+    if error := retry_circuit.metadata_error(meta):
+        errors.append(f"{task_id}: {error}")
+    if error := al.metadata_error(meta):
+        errors.append(f"{task_id}: {error}")
     return errors
+
+
+valid_execution_reservation = execution_envelope.valid_reservation
+valid_execution_envelope_binding = execution_envelope.valid_binding
+valid_execution_result = execution_receipt.valid
+execution_result_matches = execution_receipt.matches
+
+
+def live_execution_reservation(meta: Meta) -> Meta | None:
+    reservation = meta.get("execution_reservation")
+    if not valid_execution_reservation(reservation):
+        return None
+    valid_reservation = cast(Meta, reservation)
+    expires = dt.datetime.fromisoformat(str(valid_reservation["expires_at"]).replace("Z", "+00:00"))
+    return valid_reservation if expires > dt.datetime.now(dt.UTC) else None
+
+
+def require_no_execution_reservation(meta: Meta) -> None:
+    if meta.get("execution_reservation") is not None:
+        raise RuntimeError("EXECUTION_RECOVERY_REQUIRED: task has a bound execution reservation")
 
 
 def reference_errors(path: Path, meta: Meta) -> list[str]:
@@ -1337,6 +1508,18 @@ def reference_errors(path: Path, meta: Meta) -> list[str]:
     plan = meta.get("plan")
     if plan and not (path.parent / plan).resolve().is_file():
         errors.append(f"{task_id}: missing plan {plan}")
+    reference = meta.get("execution_envelope_ref")
+    if isinstance(reference, str):
+        envelope = meta.get("execution_envelope")
+        found = execution_envelope.errors(envelope)
+        if not isinstance(envelope, dict) or found:
+            errors.append(f"{task_id}: invalid execution envelope: {'; '.join(found)}")
+        elif meta.get("execution_envelope_digest") != execution_envelope.canonical_digest(envelope):
+            errors.append(f"{task_id}: execution envelope digest mismatch")
+        elif meta.get("execution_envelope_revision") != envelope.get("envelope_revision"):
+            errors.append(f"{task_id}: execution envelope revision mismatch")
+        elif meta.get("execution_envelope_task_revision") != envelope.get("task_revision"):
+            errors.append(f"{task_id}: execution envelope task revision mismatch")
     return errors
 
 
@@ -1450,6 +1633,16 @@ def require_claimed_worker_absent(meta: Meta) -> None:
     start_time = identity["start_time"]
     if process_start_time(pid) == start_time:
         raise RuntimeError("former worker process is still alive")
+
+
+def legacy_recovery_admitted(args: argparse.Namespace, meta: Meta) -> bool:
+    """Admit an explicitly acknowledged recovery of a pre-identity legacy claim."""
+    if not getattr(args, "allow_legacy_without_identity", False):
+        return False
+    if "claim_process" in meta:
+        return False
+    expiry = parse_claim_expiry(meta.get("claim_expires"))
+    return not expiry > dt.datetime.now(dt.UTC)
 
 
 def attach_claim_process(args: argparse.Namespace, meta: Meta) -> None:
@@ -1659,7 +1852,7 @@ def directive_validation_errors() -> list[str]:
     return []
 
 
-def validate(  # noqa: C901
+def validate(
     *, live: bool = False, policy: EvidencePolicy | None = None, live_state: State | None = None
 ) -> list[str]:
     errors: list[str] = []
@@ -1696,15 +1889,9 @@ def validate(  # noqa: C901
     errors.extend(directive_validation_errors())
     errors.extend(privacy_errors())
     if live:
-        state = project_scan() if live_state is None else live_state
-        project, worktrees = live_docs(state)
-        if (
-            not (ROOT / "PROJECT_STATE.md").exists()
-            or (ROOT / "PROJECT_STATE.md").read_text() != project
-        ):
-            errors.append("PROJECT_STATE.md is stale")
-        if not (ROOT / "WORKTREES.md").exists() or (ROOT / "WORKTREES.md").read_text() != worktrees:
-            errors.append("WORKTREES.md is stale")
+        # Hosted run/worktree observations can change after reconciliation.
+        # They are advisory, not immutable local integrity evidence.
+        del live_state
     return errors
 
 
@@ -1722,7 +1909,7 @@ def commit(message: str, paths: list[Path]) -> bool:
             == 0
         ):
             return False
-        command = ["git", "-C", str(ROOT), "commit", "-S"]
+        command = ["git", "-C", str(ROOT), "commit"]
         if project_settings()["commit_signoff"]:
             command.append("-s")
         run([*command, "-m", message, "--only", "--", *relative], capture=False)
@@ -2105,11 +2292,12 @@ def write_sqlite_projections(
         views = rendered_task_views(tasks)
         for target, content in views.items():
             atomic(target, content)
+        backend = storage_backend()
+        issue_series_paths = issue_series_service.sqlite_projection_paths(backend)
         require_policy_unchanged(ROOT, selected_policy)
         errors = validate(live=False, policy=selected_policy)
         if errors:
             raise RuntimeError("projection validation failed:\n" + "\n".join(errors))
-        backend = storage_backend()
         session_records = backend.load_session_records()
         session_paths = write_session_projections(session_records)
         checkpoint_records = backend.load_checkpoint_records()
@@ -2117,6 +2305,7 @@ def write_sqlite_projections(
         return [
             *[path for path, _, _ in tasks],
             *views,
+            *issue_series_paths,
             *session_paths,
             *checkpoint_paths,
         ]
@@ -2202,27 +2391,8 @@ def dependency_satisfied(dependency_id: str, tasks: list[Task]) -> bool:
 
 
 def require_role_admission(owner_id: str, required_role: str = "implementer") -> None:
-    """Require a durable capability when the role workstream is initialized."""
-    state_path = RUNTIME / "roles.json"
-    if not state_path.exists():
-        return
-    try:
-        if __package__:
-            from .roles import role_admission_error as _role_admission_error
-        else:  # pragma: no cover - direct script execution
-            from roles import (  # type: ignore[import-not-found,no-redef]
-                role_admission_error as _role_admission_error,
-            )
-        admission_error = _role_admission_error(
-            state_path,
-            ROOT / "examples/roles/role-registry.json",
-            owner_id=owner_id,
-            required_role=required_role,
-        )
-    except Exception as import_error:  # fail closed if the admission module is unavailable
-        raise RuntimeError(f"role admission unavailable: {import_error}") from import_error
-    if admission_error:
-        raise RuntimeError(admission_error)
+    """Compatibility no-op: role assignments are advisory, never an execution gate."""
+    del owner_id, required_role
 
 
 def require_update_role_admission(kind: str, owner_id: str) -> None:
@@ -2244,6 +2414,17 @@ def require_done_admission(
         hierarchy_error = open_child_error(meta, tasks)
         if hierarchy_error:
             raise RuntimeError(hierarchy_error)
+    if error := change_drift.done_admission_error(meta):
+        raise RuntimeError(error)
+    task_metadata = [item for _, item, _ in tasks] if tasks is not None else []
+    if error := (
+        assumption_revalidation.admission_error(
+            ROOT, Path(str(config()["projects_root"])), meta, task_metadata
+        )
+        if assumption_revalidation.needs_admission(meta)
+        else None
+    ):
+        raise RuntimeError(error)
 
 
 def require_release_admission(
@@ -2374,6 +2555,7 @@ def apply_pause(args: argparse.Namespace, meta: Meta) -> str:
     if meta.get("owner") != args.owner:
         raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
     require_role_admission(str(args.owner))
+    require_no_execution_reservation(meta)
     if args.expected_revision != meta["task_revision"]:
         raise RuntimeError(
             f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
@@ -2454,8 +2636,18 @@ def apply_unblock(args: argparse.Namespace, meta: Meta, _tasks: list[Task]) -> s
     return str(args.note)
 
 
+def current_recovery_session(records: list[Meta], revision: int) -> Meta | None:
+    """Validate recovery snapshots and return only the exact-current record."""
+    for session in records:
+        validate_session_record(session)
+        if session["task_revision"] > revision:
+            raise RuntimeError("session snapshot revision is newer than the task")
+    return next(
+        (session for session in reversed(records) if session["task_revision"] == revision), None
+    )
+
+
 def apply_recover_expired(args: argparse.Namespace, meta: Meta, _tasks: list[Task]) -> str:
-    """Reopen an expired claim, restoring only its exact current session snapshot."""
     if args.expected_revision != meta["task_revision"]:
         raise RuntimeError(
             f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
@@ -2470,23 +2662,22 @@ def apply_recover_expired(args: argparse.Namespace, meta: Meta, _tasks: list[Tas
         raise RuntimeError(f"{args.task} claim has not expired")
     if not args.note.strip():
         raise RuntimeError("expired-claim recovery note must not be empty")
+    retry_circuit.require_no_live_reservation(meta, now())
     records = storage_backend().load_session_records(args.task)
-    for session in records:
-        validate_session_record(session)
-        if session["task_revision"] > meta["task_revision"]:
-            raise RuntimeError("session snapshot revision is newer than the task")
     previous_owner = str(meta["owner"])
-    current_sessions = [
-        session for session in records if session["task_revision"] == meta["task_revision"]
-    ]
-    if len(current_sessions) != 1:
-        raise RuntimeError("expired-claim recovery requires exactly one current session snapshot")
-    meta["next_action"] = str(current_sessions[0]["next_action"])
+    recovery_note = str(args.note)
+    current_session = current_recovery_session(records, int(meta["task_revision"]))
+    if current_session is not None:
+        meta["next_action"] = str(current_session["next_action"])
+    elif legacy_recovery_admitted(args, meta):
+        recovery_note = "LEGACY_NO_IDENTITY_RECOVERY: " + recovery_note
+    else:
+        require_claimed_worker_absent(meta)
     meta["status"] = "open"
     meta["owner"] = ""
     meta["claim_expires"] = ""
     meta.pop("claim_process", None)
-    return f"Recovered expired claim formerly owned by {previous_owner}. {args.note}"
+    return f"Recovered expired claim formerly owned by {previous_owner}. {recovery_note}"
 
 
 def require_promotion_preflight(kind: str) -> None:
@@ -2500,31 +2691,30 @@ def require_promotion_preflight(kind: str) -> None:
         raise RuntimeError("promotion requires a clean state repository")
 
 
-def apply_accept(args: argparse.Namespace, meta: Meta, policy: EvidencePolicy | None) -> str:
-    """Record one owner's exact-revision assertion against the referenced spec."""
-    if meta.get("owner") != args.owner:
-        raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
+def apply_accept(
+    args: argparse.Namespace,
+    meta: Meta,
+    policy: EvidencePolicy | None,
+    tasks: list[Task] | None = None,
+) -> str:
+    """Record acceptance with optional material-assumption freshness admission."""
     require_role_admission(str(args.owner))
-    if meta.get("status") != "in_progress":
-        raise RuntimeError("accept requires an active task")
-    if "spec_ref" not in meta or "spec_revision" not in meta:
-        raise RuntimeError("accept requires a referenced task spec")
-    if args.expected_revision != meta["task_revision"]:
-        raise RuntimeError(
-            f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
-        )
-    meta["spec_acceptance"] = {
-        "spec_ref": meta["spec_ref"],
-        "spec_revision": meta["spec_revision"],
-        "status": "pass",
-        "evidence_class": args.evidence_class,
-        "evidence_ref": args.evidence_ref,
-        "evidence_digest": args.evidence_digest,
-    }
-    error = done_admission_error(ROOT, meta, policy)
-    if error:
-        raise RuntimeError(error)
-    return str(args.note)
+    return apply_acceptance(
+        ROOT,
+        args,
+        meta,
+        policy,
+        lambda: (
+            assumption_revalidation.admission_error(
+                ROOT,
+                Path(str(config()["projects_root"])),
+                meta,
+                [item for _, item, _ in tasks] if tasks is not None else [],
+            )
+            if assumption_revalidation.needs_admission(meta)
+            else None
+        ),
+    )
 
 
 def apply_bind_spec(args: argparse.Namespace, meta: Meta, policy: EvidencePolicy | None) -> str:
@@ -2611,7 +2801,7 @@ def require_active_binding_owner(args: argparse.Namespace, meta: Meta) -> None:
 def require_bind_worktree_admission(
     args: argparse.Namespace, meta: Meta, tasks: list[Task]
 ) -> None:
-    """Admit a first binding or an exact no-op replay, rejecting every other request."""
+    """Admit a first binding or a matching partial-legacy completion safely."""
     require_active_binding_owner(args, meta)
     if not valid_binding_branch(args.branch):
         raise RuntimeError("bind-worktree branch is invalid")
@@ -2621,37 +2811,186 @@ def require_bind_worktree_admission(
         raise RuntimeError("bind-worktree identity conflicts with an active task")
     branch = meta.get("branch", "")
     worktree_key = meta.get("worktree_key", "")
-    if branch or worktree_key:
-        if (
-            branch == args.branch
-            and worktree_key == args.worktree_key
-            and valid_binding_branch(branch)
-            and valid_binding_worktree(worktree_key)
-        ):
+    if branch and worktree_key:
+        if branch == args.branch and worktree_key == args.worktree_key:
             raise IdempotentMutationError(
                 f"Worktree {args.worktree_key} on branch {args.branch} is already bound."
             )
         raise RuntimeError("bind-worktree requires empty legacy worktree metadata")
+    if branch:
+        raise RuntimeError("bind-worktree requires an empty legacy branch")
+    if worktree_key and worktree_key != args.worktree_key:
+        raise RuntimeError("bind-worktree worktree key conflicts with declared legacy metadata")
 
 
 def apply_bind_worktree(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
     """Bind one legacy task, or report an exact retry without mutating it."""
     require_bind_worktree_admission(args, meta, tasks)
+    require_no_execution_reservation(meta)
     meta.update(branch=args.branch, worktree_key=args.worktree_key)
     return f"Bound worktree {args.worktree_key} on branch {args.branch}."
 
 
-def apply_owned_change(  # noqa: C901
+def bind_envelope_candidate(args: argparse.Namespace, meta: Meta) -> tuple[Meta, str]:
+    """Load an envelope and verify its identity against the exact task revision."""
+    if not isinstance(meta.get("spec_ref"), str) or not isinstance(meta.get("spec_revision"), int):
+        raise RuntimeError("bind-envelope requires a bound task spec")
+    envelope, _actual_digest, found = execution_envelope.load(ROOT, args.envelope_ref)
+    if found or envelope is None:
+        raise RuntimeError("bind-envelope envelope is invalid: " + "; ".join(found))
+    if execution_envelope.errors(envelope):  # defensive: loader already validates this.
+        raise RuntimeError("bind-envelope envelope is invalid")
+    if envelope["task"] != args.task or envelope["spec_ref"] != meta["spec_ref"]:
+        raise RuntimeError("bind-envelope envelope task or spec does not match")
+    if envelope["task_revision"] != meta["task_revision"]:
+        raise RuntimeError("bind-envelope envelope task revision does not match")
+    if envelope["spec_revision"] != meta["spec_revision"]:
+        raise RuntimeError("bind-envelope envelope spec revision does not match")
+    if args.envelope_revision != envelope["envelope_revision"]:
+        raise RuntimeError("bind-envelope envelope revision does not match")
+    return envelope, execution_envelope.canonical_digest(envelope)
+
+
+def apply_bind_envelope(args: argparse.Namespace, meta: Meta) -> str:
+    """Bind one immutable, validated execution envelope to an active task."""
+    require_active_binding_owner(args, meta)
+    require_no_execution_reservation(meta)
+    envelope, actual_digest = bind_envelope_candidate(args, meta)
+    existing = (
+        meta.get("execution_envelope_ref"),
+        meta.get("execution_envelope_revision"),
+        meta.get("execution_envelope_task_revision"),
+        meta.get("execution_envelope_digest"),
+        meta.get("execution_envelope"),
+    )
+    requested = (
+        args.envelope_ref,
+        args.envelope_revision,
+        meta["task_revision"],
+        actual_digest,
+        envelope,
+    )
+    if any(value is not None for value in existing):
+        if existing == requested:
+            raise IdempotentMutationError(
+                f"Execution envelope {args.envelope_ref} is already bound."
+            )
+        raise RuntimeError("bind-envelope requires an unbound execution envelope")
+    meta.update(
+        execution_envelope_ref=args.envelope_ref,
+        execution_envelope_revision=args.envelope_revision,
+        execution_envelope_task_revision=meta["task_revision"],
+        execution_envelope_digest=actual_digest,
+        execution_envelope=envelope,
+    )
+    return f"Bound execution envelope {args.envelope_ref} revision {args.envelope_revision}."
+
+
+def apply_execution_start(args: argparse.Namespace, meta: Meta) -> str:
+    require_active_binding_owner(args, meta)
+    if not isinstance(meta.get("execution_envelope"), dict):
+        raise RuntimeError("execution reservation requires a bound execution envelope")
+    if live_execution_reservation(meta) is not None:
+        raise RuntimeError("EXECUTION_IN_PROGRESS: bound task already has a live execution")
+    if meta.get("execution_reservation") is not None:
+        raise RuntimeError("EXECUTION_RECOVERY_REQUIRED: expired execution reservation remains")
+    execution_id = getattr(args, "execution_id", "")
+    expires_at = getattr(args, "execution_expires_at", "")
+    if not re.fullmatch(r"[0-9a-f]{32}", str(execution_id)):
+        raise RuntimeError("invalid execution reservation identifier")
+    try:
+        expires = dt.datetime.fromisoformat(str(expires_at).replace("Z", "+00:00"))
+    except ValueError as error:
+        raise RuntimeError("invalid execution reservation expiry") from error
+    if expires <= dt.datetime.now(dt.UTC):
+        raise RuntimeError("execution reservation expiry must be in the future")
+    meta["execution_reservation"] = {
+        "execution_id": execution_id,
+        "owner": args.owner,
+        "task_revision": meta["task_revision"],
+        "envelope_digest": meta["execution_envelope_digest"],
+        "command_class": args.command_class,
+        "scope_digest": args.scope_digest,
+        "argv_digest": args.argv_digest,
+        "expires_at": expires.replace(microsecond=0).isoformat(),
+    }
+    claim_expiry = parse_claim_expiry(meta.get("claim_expires"))
+    if claim_expiry < expires:
+        meta["claim_expires"] = expires.replace(microsecond=0).isoformat()
+    return f"Reserved bound execution {execution_id}."
+
+
+def apply_execution_finish(args: argparse.Namespace, meta: Meta) -> str:
+    reservation = meta.get("execution_reservation")
+    if not isinstance(reservation, dict) or reservation.get("execution_id") != args.execution_id:
+        raise RuntimeError("execution reservation no longer matches this command")
+    if reservation.get("owner") != args.owner:
+        raise RuntimeError("execution reservation owner does not match")
+    require_optional_revision(args, meta)
+    if not execution_result_matches(cast(Meta, reservation), meta.get("execution_result")):
+        raise RuntimeError("execution finish requires an exact durable result")
+    meta.pop("execution_reservation", None)
+    return str(args.note)
+
+
+def apply_execution_result(args: argparse.Namespace, meta: Meta) -> str:
+    reservation = meta.get("execution_reservation")
+    if not isinstance(reservation, dict) or reservation.get("execution_id") != args.execution_id:
+        raise RuntimeError("execution reservation no longer matches this command")
+    require_optional_revision(args, meta)
+    try:
+        result = execution_receipt.build(reservation, args)
+    except ValueError as error:
+        raise RuntimeError(str(error)) from error
+    if meta.get("execution_result") == result:
+        raise IdempotentMutationError(f"Execution result {args.execution_id} is already recorded.")
+    meta["execution_result"] = result
+    return f"Recorded execution result {args.execution_id}."
+
+
+def apply_recover_execution(args: argparse.Namespace, meta: Meta) -> str:
+    require_optional_revision(args, meta)
+    reservation = meta.get("execution_reservation")
+    if not valid_execution_reservation(reservation):
+        raise RuntimeError("execution recovery requires a valid reservation")
+    valid_reservation = cast(Meta, reservation)
+    if live_execution_reservation(meta) is not None:
+        raise RuntimeError("EXECUTION_IN_PROGRESS: execution reservation has not expired")
+    require_claimed_worker_absent(meta)
+    if not execution_result_matches(valid_reservation, meta.get("execution_result")):
+        raise RuntimeError(
+            "EXECUTION_RESULT_UNKNOWN: reservation-specific completion evidence is unavailable"
+        )
+    meta.pop("execution_reservation", None)
+    return f"Recovered completed execution {valid_reservation['execution_id']}."
+
+
+def require_owned_change_admission(
+    args: argparse.Namespace,
+    kind: str,
+    meta: Meta,
+    tasks: list[Task] | None,
+    policy: EvidencePolicy | None,
+) -> None:
+    """Apply shared owner, role, fence, and release-admission checks."""
+    if meta.get("owner") != args.owner:
+        raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
+    require_update_role_admission(kind, str(args.owner))
+    if kind in {"release", "pause"}:
+        require_no_execution_reservation(meta)
+    if kind in {"heartbeat", "update"} and meta.get("execution_reservation") is not None:
+        raise RuntimeError("EXECUTION_IN_PROGRESS: use the bound command completion path")
+    require_release_admission(kind, getattr(args, "status", None), meta, tasks, policy)
+
+
+def apply_owned_change(
     args: argparse.Namespace,
     kind: str,
     meta: Meta,
     tasks: list[Task] | None = None,
     policy: EvidencePolicy | None = None,
 ) -> str:
-    if meta.get("owner") != args.owner:
-        raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
-    require_update_role_admission(kind, str(args.owner))
-    require_release_admission(kind, getattr(args, "status", None), meta, tasks, policy)
+    require_owned_change_admission(args, kind, meta, tasks, policy)
     if kind == "heartbeat":
         if args.lease_minutes <= 0 or meta.get("status") != "in_progress":
             raise RuntimeError("heartbeat requires an active task and positive lease")
@@ -2682,6 +3021,7 @@ def apply_owned_change(  # noqa: C901
         value = getattr(args, name, None)
         if value is not None:
             meta[name] = value
+    al.carry_run_hold(args, kind, meta)
     return str(args.note)
 
 
@@ -2713,6 +3053,10 @@ def apply_rollback(args: argparse.Namespace, meta: Meta) -> str:
     state = checkpoint["state"]
     if not isinstance(state, dict) or state.get("id") != meta.get("id"):
         raise RuntimeError("rollback checkpoint task does not match target task")
+    if "short_title" in state:
+        meta["short_title"] = state["short_title"]
+    else:
+        meta.pop("short_title", None)
     for field in (
         "priority",
         "summary",
@@ -2806,6 +3150,53 @@ def apply_gate(args: argparse.Namespace, meta: Meta) -> str:
         raise RuntimeError(str(error)) from error
 
 
+def apply_recover_expired_transition(
+    args: argparse.Namespace, meta: Meta, tasks: list[Task]
+) -> str:
+    require_no_execution_reservation(meta)
+    return apply_recover_expired(args, meta, tasks)
+
+
+def lifecycle_transition_handler(
+    args: argparse.Namespace,
+    kind: str,
+    meta: Meta,
+    tasks: list[Task],
+    policy: EvidencePolicy | None,
+) -> Callable[[], str] | None:
+    handlers: dict[str, Callable[[], str]] = {
+        "claim": lambda: apply_claim(args, meta, tasks),
+        "promote": lambda: apply_promote(args, meta, tasks),
+        "pause": lambda: apply_pause(args, meta),
+        "resume": lambda: apply_resume(args, meta, tasks),
+        "unblock": lambda: apply_unblock(args, meta, tasks),
+        "recover-expired": lambda: apply_recover_expired_transition(args, meta, tasks),
+        "recover-execution": lambda: apply_recover_execution(args, meta),
+        "gate": lambda: apply_gate(args, meta),
+        "change-drift": lambda: change_drift.apply(
+            args, meta, Path(str(config()["projects_root"])), now()
+        ),
+        "assumption": lambda: assumption_revalidation.apply(
+            ROOT, Path(str(config()["projects_root"])), args, meta, [item for _, item, _ in tasks]
+        ),
+        "retry-circuit": lambda: retry_circuit.apply(args, meta, now()),
+        "retry-circuit-reserve": lambda: retry_circuit.apply_reserve(args, meta, now()),
+        "retry-circuit-resolve": lambda: retry_circuit.apply_resolve(args, meta, now()),
+        "checkpoint": lambda: apply_checkpoint(args, meta),
+        "rollback": lambda: apply_rollback(args, meta),
+        "accept": lambda: apply_accept(args, meta, policy),
+        "bind-spec": lambda: apply_bind_spec(args, meta, policy),
+        "bind-worktree": lambda: apply_bind_worktree(args, meta, tasks),
+        "bind-envelope": lambda: apply_bind_envelope(args, meta),
+        "execution-start": lambda: apply_execution_start(args, meta),
+        "execution-result": lambda: apply_execution_result(args, meta),
+        "execution-finish": lambda: apply_execution_finish(args, meta),
+    }
+    if kind.startswith("autonomy-limits"):
+        return lambda: al.transition(require_active_binding_owner, args, meta, now())
+    return handlers.get(kind)
+
+
 def apply_transition(
     args: argparse.Namespace,
     kind: str,
@@ -2813,30 +3204,9 @@ def apply_transition(
     tasks: list[Task],
     policy: EvidencePolicy | None = None,
 ) -> str:
-    """Dispatch one typed lifecycle transition for both storage backends."""
-    if kind == "claim":
-        return apply_claim(args, meta, tasks)
-    if kind == "promote":
-        return apply_promote(args, meta, tasks)
-    if kind == "pause":
-        return apply_pause(args, meta)
-    reopen = {"resume": apply_resume, "unblock": apply_unblock}.get(kind)
-    if reopen is not None:
-        return reopen(args, meta, tasks)
-    if kind == "recover-expired":
-        return apply_recover_expired(args, meta, tasks)
-    if kind == "gate":
-        return apply_gate(args, meta)
-    record_transition = {"checkpoint": apply_checkpoint, "rollback": apply_rollback}.get(kind)
-    if record_transition is not None:
-        return record_transition(args, meta)
-    transition = {
-        "accept": lambda: apply_accept(args, meta, policy),
-        "bind-spec": lambda: apply_bind_spec(args, meta, policy),
-        "bind-worktree": lambda: apply_bind_worktree(args, meta, tasks),
-    }.get(kind)
-    if transition is not None:
-        return transition()
+    handler = lifecycle_transition_handler(args, kind, meta, tasks, policy)
+    if handler is not None:
+        return handler()
     return apply_owned_change(args, kind, meta, tasks, policy)
 
 
@@ -3032,6 +3402,15 @@ def commit_persisted_mutation(
 
 
 def mutate(args: argparse.Namespace, kind: str, policy: EvidencePolicy | None = None) -> str | None:
+    if kind not in {"release", "pause", "recover-expired", "recover-execution"}:
+        return _mutate_fenced(args, kind, policy)
+    with task_execution_locked(args.task, exclusive=True, phase="task_lifecycle_mutation"):
+        return _mutate_fenced(args, kind, policy)
+
+
+def _mutate_fenced(
+    args: argparse.Namespace, kind: str, policy: EvidencePolicy | None = None
+) -> str | None:
     receipt_id = fast_receipt_id(args, kind)
     if backend_selection()["backend"] == "sqlite":
         if receipt_id is not None:
@@ -3132,11 +3511,13 @@ def mutate_sqlite(
     def transition(meta: Meta, tasks: list[Task]) -> tuple[str, str]:
         require_policy_unchanged(ROOT, selected_policy)
         note = apply_transition(args, kind, meta, tasks, selected_policy)
+        validated = al.next_revision_projection(meta)
         candidate = [
-            (path, meta if item["id"] == args.task else item, text) for path, item, text in tasks
+            (path, validated if item["id"] == args.task else item, text)
+            for path, item, text in tasks
         ]
         errors = (
-            basic_task_errors(selected[0], meta, selected_policy)
+            basic_task_errors(selected[0], validated, selected_policy)
             + graph_errors(candidate)
             + hierarchy_errors(candidate)
             + supersession_errors(candidate)
@@ -3206,27 +3587,8 @@ def cmd_render_status(*, check: bool) -> None:
 
 
 def role_doctor_errors() -> list[str]:
-    if not (RUNTIME / "roles.json").exists():
-        return []
-    try:
-        if __package__:
-            from .roles import role_admission_errors as _role_admission_errors
-        else:  # pragma: no cover - direct script execution
-            from roles import (  # type: ignore[no-redef]
-                role_admission_errors as _role_admission_errors,
-            )
-        active_roles = [
-            (str(meta.get("owner")), "implementer")
-            for _, meta, _ in all_tasks()
-            if meta.get("status") == "in_progress" and meta.get("owner")
-        ]
-        return _role_admission_errors(
-            RUNTIME / "roles.json",
-            ROOT / "examples/roles/role-registry.json",
-            active_roles,
-        )
-    except Exception as error:
-        return [f"role admission unavailable: {error}"]
+    """Roles belong to the external role registry and do not gate coordinator health."""
+    return []
 
 
 def doctor_checks(*, live: bool, sqlite: bool, live_state: State | None) -> list[str]:
@@ -3334,23 +3696,29 @@ def print_snapshot_under_lock(task_id: str | None, sqlite: bool) -> None:
         if record is None:
             raise RuntimeError(f"no session snapshot for {task_id}")
         validate_session_record(record)
+        task = next((meta for _, meta, _ in all_tasks() if meta.get("id") == task_id), None)
+        if task is None:
+            raise RuntimeError(f"unknown task {task_id}")
+        next_step = next_unmet_predicate(ROOT, task)
+        if next_step is not None:
+            print("NEXT_UNMET_STEP=" + next_step)
         print("SESSION_SNAPSHOT=" + json.dumps(record, sort_keys=True, separators=(",", ":")))
 
 
-def cmd_board() -> None:
-    """Print the privacy-safe company board from the SQLite authority."""
+def _cmd_analytics(label: str) -> None:
+    """Print one SQLite-only deterministic analytics projection."""
     if backend_selection()["backend"] != "sqlite":
-        raise RuntimeError("board requires the SQLite authority")
+        raise RuntimeError(f"{label} requires the SQLite authority")
     with locked(exclusive=False):
         print(encode_metrics(build_metrics(all_tasks())), end="")
+
+
+def cmd_board() -> None:
+    _cmd_analytics("board")
 
 
 def cmd_metrics() -> None:
-    """Print the deterministic metrics projection from the SQLite authority."""
-    if backend_selection()["backend"] != "sqlite":
-        raise RuntimeError("metrics requires the SQLite authority")
-    with locked(exclusive=False):
-        print(encode_metrics(build_metrics(all_tasks())), end="")
+    _cmd_analytics("metrics")
 
 
 def cmd_checkpoint(args: argparse.Namespace) -> None:
@@ -3517,7 +3885,6 @@ def _revert_product(product: Path, source_commit: str, current_commit: str) -> s
             "-C",
             str(product),
             "commit",
-            "-S",
             "-s",
             "-m",
             f"revert: restore coordinator checkpoint {source_commit[:12]}",
@@ -3689,6 +4056,85 @@ def require_active_owner(task_id: str, owner: str) -> EvidencePolicy:
         return policy
 
 
+def execution_preflight(args: argparse.Namespace) -> tuple[bool, str, str, float | None]:
+    """Evaluate a bound envelope and return its admission result plus timeout cap."""
+    with locked(exclusive=False, phase="execution_envelope_preflight"):
+        _, meta, _ = locate(args.task)
+        worktree_key = meta.get("worktree_key")
+        if not isinstance(worktree_key, str) or not worktree_key:
+            return False, "WORKTREE_BINDING_REQUIRED", "bound execution requires a worktree", None
+        worktree = Path(str(config()["projects_root"])).resolve() / worktree_key
+        result = execution_envelope.preflight(
+            meta,
+            args.owner,
+            args.command_class,
+            list(args.scope_path),
+            worktree,
+        )
+        if not result.allowed:
+            return False, result.code, result.detail, None
+        envelope = meta.get("execution_envelope")
+        if not isinstance(envelope, dict):
+            return False, "ENVELOPE_INVALID", "durable execution envelope is missing", None
+        if execution_envelope.canonical_digest(envelope) != meta.get("execution_envelope_digest"):
+            return False, "ENVELOPE_INVALID", "durable execution envelope digest mismatches", None
+        mount_scope = list(envelope["path_scope"]["read"])
+        if args.command_class in {"source-write", "git-publication"}:
+            mount_scope.extend(args.scope_path)
+        try:
+            for relative in mount_scope:
+                envelope_scope_path(worktree, str(relative))
+        except RuntimeError as error:
+            return False, "PATH_SCOPE_UNAVAILABLE", str(error), None
+        rule = envelope["command_classes"][args.command_class]
+        args._envelope_worktree = str(worktree)
+        args._envelope_write_scope = (
+            list(args.scope_path)
+            if args.command_class in {"source-write", "git-publication"}
+            else []
+        )
+        args._envelope_read_scope = list(envelope["path_scope"]["read"])
+        return True, result.code, result.detail, rule.get("timeout_seconds")
+
+
+def print_execution_preflight(args: argparse.Namespace) -> int:
+    """Print an explainable, side-effect-free envelope admission decision."""
+    allowed, code, detail, timeout = execution_preflight(args)
+    result: dict[str, object] = {"allowed": allowed, "code": code, "detail": detail}
+    if timeout is not None:
+        result["timeout_seconds"] = timeout
+    if args.json:
+        print(json.dumps(result, sort_keys=True, separators=(",", ":")))
+    else:
+        print(f"{code}: {detail}")
+    return 0 if allowed else 2
+
+
+def run_envelope_timeout(args: argparse.Namespace) -> float | None:
+    """Require envelope admission for a bound task and return its timeout cap."""
+    with locked(exclusive=False, phase="run_envelope_check"):
+        _, meta, _ = locate(args.task)
+        has_envelope = "execution_envelope_ref" in meta
+    command_class = getattr(args, "command_class", None)
+    if has_envelope and command_class is None:
+        raise RuntimeError("bound execution envelope requires --command-class")
+    if command_class is None:
+        return None
+    args.command_class = command_class
+    if not hasattr(args, "scope_path"):
+        args.scope_path = []
+    allowed, code, detail, timeout_cap = execution_preflight(args)
+    if not allowed:
+        raise RuntimeError(f"execution preflight {code}: {detail}")
+    return timeout_cap
+
+
+sandboxed_envelope_command = execution_envelope.sandboxed_envelope_command
+envelope_sandbox_mounts = execution_envelope.envelope_sandbox_mounts
+sandbox_base_command = execution_envelope.sandbox_base_command
+envelope_scope_path = execution_envelope.envelope_scope_path
+
+
 def invocation_worktree() -> tuple[str, str] | None:
     """Return the product worktree identity when called from a product checkout.
 
@@ -3751,44 +4197,14 @@ def append_file_command_result(
     classification: str,
     recorded_at: str,
 ) -> None:
-    """Fsync a privacy-safe local result before any fallible post-command work."""
-    RUNTIME.mkdir(mode=0o700, parents=True, exist_ok=True)
-    record = {
-        "at": recorded_at,
-        "task": task_id,
-        "owner": owner,
-        "argv_sha256": command_hash,
-        "returncode": returncode,
-        "classification": classification,
-    }
-    path = RUNTIME / "command-results.jsonl"
-    descriptor = os.open(path, os.O_APPEND | os.O_CREAT | os.O_WRONLY, 0o600)
-    with os.fdopen(descriptor, "ab") as stream:
-        stream.write((json.dumps(record, sort_keys=True) + "\n").encode())
-        stream.flush()
-        os.fsync(stream.fileno())
+    command_results.append_file(
+        RUNTIME, task_id, owner, command_hash, returncode, classification, recorded_at
+    )
 
 
 def legacy_command_results() -> list[Meta]:
     """Strictly load the privacy-safe Git-backend journal for migration."""
-    path = RUNTIME / "command-results.jsonl"
-    if not path.exists():
-        return []
-    required = {"at", "task", "owner", "argv_sha256", "returncode", "classification"}
-    records: list[Meta] = []
-    for number, line in enumerate(path.read_text().splitlines(), 1):
-        try:
-            record = json.loads(line)
-        except json.JSONDecodeError as error:
-            raise RuntimeError(f"invalid command journal line {number}") from error
-        if not isinstance(record, dict) or set(record) != required:
-            raise RuntimeError(f"invalid command journal line {number}")
-        if not re.fullmatch(r"[0-9a-f]{64}", str(record["argv_sha256"])):
-            raise RuntimeError(f"invalid command journal digest at line {number}")
-        if not isinstance(record["returncode"], int):
-            raise RuntimeError(f"invalid command journal return code at line {number}")
-        records.append(cast(Meta, record))
-    return records
+    return command_results.load_file(RUNTIME)
 
 
 def append_command_result(
@@ -3798,78 +4214,107 @@ def append_command_result(
     returncode: int,
     timed_out: bool,
 ) -> None:
-    """Record through the selected backend before any fallible follow-up."""
     selected_backend = (
         mutating_sqlite_backend()
         if backend_selection()["backend"] == "sqlite"
         else storage_backend()
     )
-    selected_backend.append_command_result(
-        task_id,
-        owner,
-        command_hash,
-        returncode,
-        "SUBPROCESS_TIMEOUT" if timed_out else "EXIT",
-        now(),
+    command_results.append_backend(
+        selected_backend, now, task_id, owner, command_hash, returncode, timed_out
     )
 
 
+class _RunRuntime:
+    def __getattr__(self, name: str) -> Any:
+        return globals()[name]
+
+
+_RUN_RUNTIME = _RunRuntime()
+
+
 def cmd_run(args: argparse.Namespace) -> int:
-    if not args.command:
-        raise RuntimeError("missing command")
+    return run_command.cmd_run(_RUN_RUNTIME, args)
+
+
+def _cmd_run_fenced(
+    args: argparse.Namespace,
+) -> tuple[EvidencePolicy, str, float, bool, int, str | None, int | None]:
     if backend_selection()["backend"] == "git":
         config()
     policy = require_active_owner(args.task, args.owner)
-    # Never execute or consume untracked caller input. Scripts and data must be
-    # named by argv or a stable file, whose content digest can be recorded too.
-    command_hash = hashlib.sha256("\0".join(args.command).encode()).hexdigest()
     timeout = float(getattr(args, "timeout_seconds", COMMAND_TIMEOUT_SECONDS))
     if timeout <= 0:
         raise RuntimeError("command timeout must be positive")
+    try:
+        retry_circuit._window(getattr(args, "retry_window", retry_circuit.DEFAULT_WINDOW))
+    except ValueError as error:
+        raise RuntimeError(str(error)) from error
+    timeout_cap = run_envelope_timeout(args)
+    command_hash = hashlib.sha256("\0".join(args.command).encode()).hexdigest()
+    if timeout_cap is not None and timeout > timeout_cap:
+        raise RuntimeError(f"command timeout exceeds envelope limit of {timeout_cap}s")
     require_policy_unchanged(ROOT, policy)
+    al.prepare(_RUN_RUNTIME, args, policy)
+    command = sandboxed_envelope_command(args)
+    execution_id: str | None = None
+    execution_revision: int | None = None
+    if hasattr(args, "_envelope_worktree"):
+        execution_id = uuid.uuid4().hex
+        expires_at = (
+            (dt.datetime.now(dt.UTC) + dt.timedelta(seconds=timeout + 60))
+            .replace(microsecond=0)
+            .isoformat()
+        )
+        _, current, _ = locate(args.task)
+        reserve = argparse.Namespace(
+            task=args.task,
+            owner=args.owner,
+            expected_revision=current["task_revision"],
+            execution_id=execution_id,
+            execution_expires_at=expires_at,
+            command_class=args.command_class,
+            scope_digest="sha256:"
+            + hashlib.sha256(
+                json.dumps(list(args.scope_path), separators=(",", ":")).encode()
+            ).hexdigest(),
+            argv_digest=command_hash,
+        )
+        mutate(reserve, "execution-start", policy)
+        _, reserved, _ = locate(args.task)
+        execution_revision = int(reserved["task_revision"])
+    if execution_id is None:
+        identity = retry_circuit.normalized_identity(
+            command_hash,
+            getattr(args, "command_class", None),
+            list(getattr(args, "scope_path", [])),
+        )
+        with task_execution_locked(args.task, exclusive=True, phase="retry_circuit_launch"):
+            _, current, _ = locate(args.task)
+            args.expected_revision = int(current["task_revision"])
+            args.retry_circuit_identity = identity
+            args.retry_circuit_reservation = uuid.uuid4().hex
+            args.retry_window = getattr(args, "retry_window", retry_circuit.DEFAULT_WINDOW)
+            args.retry_circuit_expires_at = (
+                (dt.datetime.now(dt.UTC) + dt.timedelta(seconds=timeout + 60))
+                .replace(microsecond=0)
+                .isoformat()
+            )
+            mutate(args, "retry-circuit-reserve", policy)
+            args.retry_circuit_resolution_revision = int(args.expected_revision) + 1
     timed_out = False
     try:
-        proc = subprocess.run(args.command, check=False, stdin=subprocess.DEVNULL, timeout=timeout)
+        proc = subprocess.run(
+            command,
+            check=False,
+            stdin=subprocess.DEVNULL,
+            timeout=timeout,
+        )
     except subprocess.TimeoutExpired:
         timed_out = True
         returncode = 124
     else:
         returncode = proc.returncode
-    append_command_result(
-        args.task,
-        args.owner,
-        command_hash,
-        returncode,
-        timed_out,
-    )
-    note = (
-        f"Recorded command timeout; classification=SUBPROCESS_TIMEOUT; "
-        f"deadline={timeout:.1f}s; command argv SHA-256 {command_hash}."
-        if timed_out
-        else f"Recorded command exit {returncode}; command argv SHA-256 {command_hash}."
-    )
-    update = argparse.Namespace(
-        task=args.task,
-        owner=args.owner,
-        expected_revision=None,
-        status=None,
-        priority=None,
-        summary=None,
-        next_action=None,
-        note=note,
-        _session_trigger="run",
-    )
-    mutate(update, "update", policy)
-    sqlite = backend_selection()["backend"] == "sqlite"
-    try:
-        require_policy_unchanged(ROOT, policy)
-        reconcile(do_commit=not sqlite, push=not sqlite, policy=policy)
-    except Exception as error:
-        raise PostCommandReconcileError(
-            "COMMAND_RECORDED_POST_RECONCILE_FAILED: "
-            f"task={args.task}; argv_sha256={command_hash}; {error}"
-        ) from error
-    return returncode
+    return policy, command_hash, timeout, timed_out, returncode, execution_id, execution_revision
 
 
 def cmd_init(args: argparse.Namespace) -> None:
@@ -4115,7 +4560,7 @@ def dispatch_roles_command(args: argparse.Namespace) -> int:
         from .roles import list_assignments as list_roles
         from .roles import remove as remove_role
     else:  # pragma: no cover - direct script execution
-        from roles import RolesError  # type: ignore[no-redef]
+        from roles import RolesError  # type: ignore[import-not-found,no-redef]
         from roles import assign as assign_role  # type: ignore[no-redef]
         from roles import check as check_roles  # type: ignore[no-redef]
         from roles import list_assignments as list_roles  # type: ignore[no-redef]
@@ -4151,64 +4596,125 @@ def dispatch_roles_command(args: argparse.Namespace) -> int:
     return 0
 
 
-def dispatch_read_only_command(args: argparse.Namespace) -> None:
-    """Dispatch read-only projections without inflating the mutation dispatcher."""
+def dispatch_read_only_command(args: argparse.Namespace) -> int:
     if args.cmd == "snapshot":
         cmd_snapshot(args.task)
+    elif args.cmd == "resume-card":
+        return resume_card_runtime.dispatch(args, sys.modules[__name__])
+    elif args.cmd == "campaign":
+        return cast(
+            int,
+            __import__("tools.campaign_runtime", fromlist=["dispatch"]).dispatch(
+                args, sys.modules[__name__]
+            ),
+        )
     elif args.cmd == "board":
         cmd_board()
-    else:
+    elif args.cmd == "metrics":
         cmd_metrics()
+    else:
+        return print_execution_preflight(args)
+    return 0
+
+
+def cmd_retry_circuit_status(task_id: str) -> int:
+    """Render the durable retry state without exposing command input or output."""
+    with locked(exclusive=False, phase="retry_circuit_status"):
+        _, meta, _ = locate(task_id)
+        state = meta.get("retry_circuit")
+        if state is None:
+            state = {
+                "schema_version": retry_circuit.SCHEMA_VERSION,
+                "attempts": [],
+                "recoveries": [],
+                "hold": None,
+                "reservations": [],
+                "abandoned": [],
+            }
+        else:
+            retry_circuit.validate(state)
+        print(json.dumps(state, sort_keys=True, separators=(",", ":")))
+    return 0
 
 
 def dispatch_fast_command(args: argparse.Namespace) -> int:
-    """Dispatch the opt-in receipt contract after normal project binding."""
     from tools.fast_receipt_cli import dispatch_fast
 
     return dispatch_fast(sys.modules[__name__], args)
 
 
 def dispatch_lifecycle_mutation(args: argparse.Namespace) -> None:
-    """Run one lifecycle mutation and report an admitted no-op replay."""
     note = mutate(args, args.cmd)
     if note is not None:
         print(note)
 
 
-def dispatch_bound_standard_command(args: argparse.Namespace) -> int:  # noqa: C901
-    """Dispatch every non-fast command after permanent project binding."""
-    if args.cmd == "reconcile":
-        reconcile(do_commit=args.commit, push=args.push)
-    elif args.cmd == "roles":
+def dispatch_retry_circuit(args: argparse.Namespace) -> int:
+    if args.retry_circuit_action == "status":
+        return cmd_retry_circuit_status(args.task)
+    dispatch_lifecycle_mutation(args)
+    return 0
+
+
+def dispatch_side_effect_command(args: argparse.Namespace) -> bool:
+    handlers: dict[str, Callable[[], object]] = {
+        "reconcile": lambda: reconcile(do_commit=args.commit, push=args.push),
+        "checkpoint": lambda: cmd_checkpoint(args),
+        "rollback": lambda: cmd_rollback(args),
+        "render-status": lambda: cmd_render_status(check=args.check),
+        "migrate": lambda: cmd_migrate(args),
+    }
+    handler = handlers.get(args.cmd)
+    if handler is None:
+        return False
+    handler()
+    return True
+
+
+def dispatch_returning_command(args: argparse.Namespace) -> int | None:
+    if args.cmd == "roles":
         return dispatch_roles_command(args)
-    elif args.cmd in ("snapshot", "board", "metrics"):
-        dispatch_read_only_command(args)
-    elif args.cmd == "checkpoint":
-        cmd_checkpoint(args)
-    elif args.cmd == "rollback":
-        cmd_rollback(args)
-    elif args.cmd == "doctor":
+    if args.cmd in ("snapshot", "resume-card", "campaign", "board", "metrics", "preflight"):
+        return dispatch_read_only_command(args)
+    if args.cmd == "retry-circuit":
+        return dispatch_retry_circuit(args)
+    if args.cmd == "autonomy-limits":
+        return al.dispatch(_RUN_RUNTIME, args)
+    if args.cmd == "doctor":
         return cmd_doctor(live=args.live)
-    elif args.cmd == "render-status":
-        cmd_render_status(check=args.check)
-    elif args.cmd in (
+    if args.cmd == "upgrade":
+        return cmd_upgrade(args)
+    return None
+
+
+def dispatch_bound_standard_command(args: argparse.Namespace) -> int:
+    result = dispatch_returning_command(args)
+    if result is not None:
+        return result
+    if args.cmd in (
         *LIFECYCLE_MUTATION_COMMANDS,
         "gate",
     ):
         dispatch_lifecycle_mutation(args)
-    elif args.cmd == "run":
+        return 0
+    if args.cmd == "run":
         if args.command and args.command[0] == "--":
             args.command = args.command[1:]
         return cmd_run(args)
-    elif args.cmd == "migrate":
-        cmd_migrate(args)
-    elif args.cmd == "upgrade":
-        return cmd_upgrade(args)
+    if dispatch_side_effect_command(args):
+        return 0
     return 0
 
 
+if __package__:
+    from . import issue_series_service
+else:  # pragma: no cover - direct vendored execution
+    import issue_series_service  # type: ignore[import-not-found,no-redef]
+
+globals().update(issue_series_service.install(globals()))
+
+
 def dispatch_bound_command(args: argparse.Namespace) -> int:
-    """Dispatch a bound command while retaining the opt-in receipt route."""
     if args.cmd == "fast":
         return dispatch_fast_command(args)
     return dispatch_bound_standard_command(args)
@@ -4268,6 +4774,9 @@ def main() -> int:
     role.add_argument("--assignment-id", required=True)
     item = commands.add_parser("snapshot")
     item.add_argument("--task")
+    resume_card.add_command_parser(commands)
+    __import__("tools.campaign", fromlist=["add_command_parser"]).add_command_parser(commands)
+    issue_series_service.add_cli_parser(commands)
     commands.add_parser("board")
     commands.add_parser("metrics")
     item = commands.add_parser("checkpoint")
@@ -4369,6 +4878,10 @@ def main() -> int:
     item.add_argument("--evidence-class", required=True)
     item.add_argument("--evidence-ref", required=True)
     item.add_argument("--evidence-digest", required=True)
+    item.add_argument("--predicate")
+    item.add_argument("--candidate-ref")
+    item.add_argument("--candidate-digest")
+    item.add_argument("--reopen", action="store_true")
     item.add_argument("--note", required=True)
     item = commands.add_parser("bind-spec")
     item.add_argument("task")
@@ -4382,6 +4895,20 @@ def main() -> int:
     item.add_argument("--expected-revision", type=int, required=True)
     item.add_argument("--branch", required=True)
     item.add_argument("--worktree-key", required=True)
+    item = commands.add_parser("bind-envelope")
+    item.add_argument("task")
+    item.add_argument("--owner", required=True)
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--envelope-ref", required=True)
+    item.add_argument("--envelope-revision", type=int, required=True)
+    item = commands.add_parser("preflight")
+    item.add_argument("task")
+    item.add_argument("--owner", required=True)
+    item.add_argument(
+        "--command-class", choices=sorted(execution_envelope.COMMAND_CLASSES), required=True
+    )
+    item.add_argument("--scope-path", action="append", default=[])
+    item.add_argument("--json", action="store_true")
     item = commands.add_parser("promote")
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
@@ -4403,6 +4930,11 @@ def main() -> int:
     item = commands.add_parser("recover-expired")
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--allow-legacy-without-identity", action="store_true")
+    item.add_argument("--note", required=True)
+    item = commands.add_parser("recover-execution")
+    item.add_argument("task")
+    item.add_argument("--expected-revision", type=int, required=True)
     item.add_argument("--note", required=True)
     item = commands.add_parser("update")
     item.add_argument("task")
@@ -4413,6 +4945,10 @@ def main() -> int:
     item.add_argument("--summary")
     item.add_argument("--next-action")
     item.add_argument("--note", required=True)
+    change_drift.add_command_parser(commands)
+    assumption_revalidation.add_command_parser(commands)
+    retry_circuit.add_command_parser(commands)
+    al.add_command_parser(commands)
     item = commands.add_parser("gate")
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
@@ -4445,6 +4981,10 @@ def main() -> int:
     item.add_argument("task")
     item.add_argument("--owner", required=True)
     item.add_argument("--timeout-seconds", type=float, default=COMMAND_TIMEOUT_SECONDS)
+    item.add_argument("--retry-window", type=int, default=retry_circuit.DEFAULT_WINDOW)
+    al.add_run_arguments(item)
+    item.add_argument("--command-class", choices=sorted(execution_envelope.COMMAND_CLASSES))
+    item.add_argument("--scope-path", action="append", default=[])
     item.add_argument("command", nargs=argparse.REMAINDER)
     args = parser.parse_args()
     if args.cmd == "init":
@@ -4454,12 +4994,24 @@ def main() -> int:
     if args.cmd == "directive":
         cmd_directive(args)
         return 0
+    if issue_series_service.dispatch_cli(args, globals()):
+        return 0
     return dispatch_bound_command(args)
 
 
-if __name__ == "__main__":
+def main_entrypoint() -> int:
     try:
-        raise SystemExit(main())
+        return main()
+    except RetryableCoordinatorError as error:
+        print(f"RETRYABLE: {error}", file=sys.stderr)
+        return 75
+    except RepairRequiredCoordinatorError as error:
+        print(f"REPAIR_REQUIRED: {error}", file=sys.stderr)
+        return 76
     except Exception as error:
         print(f"ERROR: {error}", file=sys.stderr)
-        raise SystemExit(1) from error
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main_entrypoint())
