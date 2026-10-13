@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "checkpoint_commit": "4902eb0d316228c9e566a9ceacfa823613a3a9f7",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T21:37:07+00:00",
   "depends_on": [
     "AR-1763",
     "AR-1764",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "d87352ddb511c48b4be1bdbecdd26fb2cf6597a8",
-  "owner": "",
+  "owner": "ar1783-workload-selection-luna",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
   "schema_version": 1,
@@ -27,11 +27,11 @@
   },
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
-  "status": "open",
+  "status": "in_progress",
   "summary": "AR-1835 exact-head fixture now covers the authenticated runtime bootstrap/control seam; AR-1783 remains below 90% until that reviewed change is integrated.",
-  "task_revision": 456,
+  "task_revision": 457,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-13T00:42:41+00:00",
+  "updated_at": "2026-10-13T19:37:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -1164,3 +1164,5 @@ the suite from this end-to-end path.
 
 - 2026-10-13T00:42:41+00:00: Worker overlap audit complete: no product gap distinct from AR-1835;
   preserve checkpoint and defer serialized coverage rerun until AR-1835 exact-head gate resolves.
+
+- 2026-10-13T19:37:07+00:00: Claimed by ar1783-workload-selection-luna.

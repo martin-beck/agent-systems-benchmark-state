@@ -1252,11 +1252,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1783-workload-selection-luna |
 | Parent | None |
 | Children | None |
 | Summary | AR-1835 exact-head fixture now covers the authenticated runtime bootstrap/control seam; AR-1783 remains below 90&#37; until that reviewed change is integrated. |
@@ -2957,7 +2957,7 @@ flowchart LR
         AR_1780["AR-1780 - Planned"]:::status_planned
         AR_1781["AR-1781 - Done"]:::status_done
         AR_1782["AR-1782 - Done"]:::status_done
-        AR_1783["AR-1783 - Open"]:::status_open
+        AR_1783["AR-1783 - In progress"]:::status_in_progress
         AR_1784["AR-1784 - Done"]:::status_done
         AR_1785["AR-1785 - Done"]:::status_done
         AR_1786["AR-1786 - Done"]:::status_done
@@ -5028,5 +5028,3 @@ flowchart LR
 
 ### Accessible dependency index
 
-| AR | Prerequisites | Dependents |
-| --- | --- | --- |
