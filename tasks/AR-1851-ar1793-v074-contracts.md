@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1851-ar1793-v074-contracts",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T14:49:29+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1851",
   "next_action": "Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification.",
-  "owner": "ar1851-ar1793-v074-luna",
+  "owner": "",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1851.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:40:42+00:00",
+  "updated_at": "2026-10-13T13:41:12+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -105,3 +105,11 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T13:40:42+00:00: Recorded command exit 0; command argv SHA-256
   854044105d96dfd3261a3910fb75635b09691f8eabbc07389318bf0936e4caf5.
+
+- 2026-10-13T13:41:12+00:00: Lease released without completion. PR #147 remains open at exact head
+  0d3693a24cdb4039ccc65ffc9a391b6b88e29ca5; focused AR-1793 suite is 59/59 green, while required
+  Strict state consistency run 38405503655 and Model and implementation contract run 38405503547
+  fail on cross-repair fault/refinement coverage (complexity/role contracts and concurrent
+  SQLite/lock-domain errors). Next action: obtain fresh independent review and rerun terminal
+  strict/formal CI at exact head only after cross-repair failures are resolved; merge only when all
+  required checks are green, then perform post-merge verification.
