@@ -1259,8 +1259,8 @@
 | Owner | ar1783-workload-selection-luna |
 | Parent | None |
 | Children | None |
-| Summary | AR-1835 exact-head fixture now covers the authenticated runtime bootstrap/control seam; AR-1783 remains below 90&#37; until that reviewed change is integrated. |
-| Next action | Do not duplicate AR-1835 control/bootstrap coverage. Preserve d87352ddb511c48b4be1bdbecdd26fb2cf6597a8 as the AR-1783 product checkpoint; after AR-1835 exact-head merge/reconciliation, rerun serialized coverage and accept only if the unchanged 90&#37; floor passes. |
+| Summary | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift. |
+| Next action | Repair the generated diagnostic catalog in its owning AR/mainline change, then rerun exact-head serialized coverage; do not add duplicate workload/control tests or weaken the 90&#37; floor. |
 
 ### AR-1784 — Command dependency registry and preflight
 
@@ -5028,3 +5028,5 @@ flowchart LR
 
 ### Accessible dependency index
 
+| AR | Prerequisites | Dependents |
+| --- | --- | --- |

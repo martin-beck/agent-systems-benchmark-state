@@ -9,7 +9,7 @@
     "AR-1782"
   ],
   "id": "AR-1783",
-  "next_action": "Do not duplicate AR-1835 control/bootstrap coverage. Preserve d87352ddb511c48b4be1bdbecdd26fb2cf6597a8 as the AR-1783 product checkpoint; after AR-1835 exact-head merge/reconciliation, rerun serialized coverage and accept only if the unchanged 90% floor passes.",
+  "next_action": "Repair the generated diagnostic catalog in its owning AR/mainline change, then rerun exact-head serialized coverage; do not add duplicate workload/control tests or weaken the 90% floor.",
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "bf0e54df10baef9c261d7bf993e093dc009984d1",
@@ -53,10 +53,10 @@
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
   "status": "in_progress",
-  "summary": "AR-1835 exact-head fixture now covers the authenticated runtime bootstrap/control seam; AR-1783 remains below 90% until that reviewed change is integrated.",
-  "task_revision": 470,
+  "summary": "Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift.",
+  "task_revision": 471,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-13T19:39:38+00:00",
+  "updated_at": "2026-10-13T19:39:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -1219,3 +1219,10 @@ the suite from this end-to-end path.
 
 - 2026-10-13T19:39:32+00:00: Recorded command exit 101; command argv SHA-256
   22fc19d872be75a975891ff0abd53f1c305974a409b50c49c5df5d842d033e81.
+
+- 2026-10-13T19:39:49+00:00: Integrated origin/main AR-1835 exact-head via signed DCO merge
+  bf0e54df10. cargo test --locked -p asb-cli: 474 unit tests passed; diagnostic_contract
+  ordinary_cli_producers_are_mechanically_closed fails because control.rs call sites at lines 9937,
+  11663, 11674, 11676, 11687, 11690, 11693, 11703 lack reviewed identities in
+  diagnostic_legacy_catalog_compact.rs. No AR-1783 product gap remains; preserve exact workload
+  implementation and await owning generated-catalog repair.
