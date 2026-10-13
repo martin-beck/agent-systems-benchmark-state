@@ -7,4 +7,4 @@ to match the verified Coordinator v0.7.4 behavior.
 2. Update positive and negative tests to the released contract without weakening fail-closed behavior.
 3. Run focused and full locked quality gates with independent review.
 
-Dependency: AR-1841 exact v0.7.4 adoption must be complete first.
+Candidate binding: exact ASB v0.7.4 candidate worktree commit `180c96b25d`; do not promote until this binding is recorded.
