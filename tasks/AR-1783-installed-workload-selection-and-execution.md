@@ -38,7 +38,17 @@
     ],
     "hold": null,
     "recoveries": [],
-    "reservations": [],
+    "reservations": [
+      {
+        "expires_at": "2026-10-13T21:00:39+00:00",
+        "id": "b5f888ffd692416ab2353ffaa0b2a9ad",
+        "identity": "sha256:55cf1ea6f76b1c567d4fe48ba5534b98f28ad7aa4e76c97fc1d367fecc312078",
+        "progress_digest": "sha256:91f3236fb2308e831080f5a2895e239eab36947398c76808d5f38b096fa60ae5",
+        "reserved_at": "2026-10-13T20:29:40+00:00",
+        "task_revision": 476,
+        "window": 3
+      }
+    ],
     "schema_version": 1
   },
   "schema_version": 1,
@@ -54,9 +64,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift.",
-  "task_revision": 476,
+  "task_revision": 477,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-13T20:29:23+00:00",
+  "updated_at": "2026-10-13T20:29:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -1244,3 +1254,5 @@ the suite from this end-to-end path.
 
 - 2026-10-13T20:29:23+00:00: Recorded command exit 0; command argv SHA-256
   5345cd4b5f66285dc80cddfe59c0a95475263f9ff88d25d2639fce3c300aa4b9.
+
+- 2026-10-13T20:29:40+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
