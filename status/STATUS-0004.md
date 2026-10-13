@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+```
+
 ### Accessible dependency index
 
 | AR | Prerequisites | Dependents |
