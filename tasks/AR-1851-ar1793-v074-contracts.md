@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1851-ar1793-v074-contracts",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T20:57:41+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1851",
   "next_action": "Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification.",
-  "owner": "codex-ar1851-publication-recovery-luna2",
+  "owner": "",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1851.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T20:37:41+00:00",
+  "updated_at": "2026-10-13T20:37:44+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -146,3 +146,9 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
   only after AR-1852 and AR-1853 repairs merge or equivalent durable resolution.
 
 - 2026-10-13T20:37:41+00:00: Claimed by codex-ar1851-publication-recovery-luna2.
+
+- 2026-10-13T20:37:44+00:00: Fresh canonical-main reconciliation of signed stale release evidence
+  4bbd0957bf: preserve PR #147 at exact head 0d3693a24cdb4039ccc65ffc9a391b6b88e29ca5; strict/formal
+  exact-head runs 38405503655 and 38405503547 remain failing on unresolved cross-repair
+  coverage/role/complexity issues, while verify 38405503451 and AWQ shadow 38405503512 pass. No
+  merge, rebase, gate weakening, or vendor edit; resolve AR-1852/AR-1853 before fresh review and CI.
