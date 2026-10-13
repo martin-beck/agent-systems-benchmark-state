@@ -1812,11 +1812,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1841-v053-adoption-luna |
 | Parent | None |
 | Children | None |
 | Summary | Adopt Coordinator v0.7.4 with partial legacy worktree binding. |
@@ -2902,7 +2902,7 @@ flowchart LR
         AR_1838["AR-1838 - Done"]:::status_done
         AR_1839["AR-1839 - Done"]:::status_done
         AR_1840["AR-1840 - Done"]:::status_done
-        AR_1841["AR-1841 - Open"]:::status_open
+        AR_1841["AR-1841 - In progress"]:::status_in_progress
         AR_1842["AR-1842 - Planned"]:::status_planned
         AR_1843["AR-1843 - Done"]:::status_done
         AR_1844["AR-1844 - Planned"]:::status_planned
