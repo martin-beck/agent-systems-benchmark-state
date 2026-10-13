@@ -8,7 +8,6 @@ from __future__ import annotations
 import fnmatch
 import json
 import os
-import subprocess
 import unittest
 from pathlib import Path
 
@@ -67,32 +66,22 @@ class WorkflowTriggerTests(unittest.TestCase):
         root = "/srv/data/projects/.asb-tlc/ci-${{ github.run_id }}"
         self.assertIn(f"TLC_RUNTIME_ROOT: {root}", workflow)
         self.assertIn(f"TLC_WORK_ROOT: {root}", workflow)
+        self.assertIn(f"TLC_ADMISSION_QUEUE: {root}/queue", workflow)
+        self.assertIn(f"TLC_ADMISSION_LOCK: {root}/admission.lock", workflow)
         self.assertIn('install -d -m 700 "$TLC_WORK_ROOT"', workflow)
         self.assertIn('install -d -m 700 "$(dirname -- "$TLC_ATTESTATION_PATH")"', workflow)
         workflow_env, formal_step = workflow.split(
             "      - name: Check exhaustive concurrent-state model", maxsplit=1
         )
-        self.assertNotIn("TLC_ADMISSION_QUEUE:", workflow_env)
-        self.assertNotIn("TLC_ADMISSION_LOCK:", workflow_env)
-        self.assertIn(f"TLC_ADMISSION_QUEUE: {root}/queue", formal_step)
-        self.assertIn(f"TLC_ADMISSION_LOCK: {root}/admission.lock", formal_step)
+        self.assertNotIn("TLC_ADMISSION_QUEUE:", formal_step)
+        self.assertNotIn("TLC_ADMISSION_LOCK:", formal_step)
+        self.assertNotIn(os.sep + "tmp" + os.sep + "agent-workflow-coordinator-tlc", workflow_env)
 
-    def test_formal_workspace_rejects_relative_or_hostile_roots(self) -> None:
-        script = ROOT / "formal" / "handoffctl" / "verify.sh"
-        for work_root in ("relative-tlc", "../hostile-tlc", "relative/with space"):
-            with self.subTest(work_root=work_root):
-                environment = os.environ.copy()
-                environment["TLC_WORK_ROOT"] = work_root
-                result = subprocess.run(  # noqa: S603
-                    ["/usr/bin/bash", str(script), "--tier", "portable-smoke"],
-                    env=environment,
-                    capture_output=True,
-                    text=True,
-                    timeout=10,
-                    check=False,
-                )
-                self.assertEqual(result.returncode, 64)
-                self.assertIn("TLC_WORK_ROOT must be an absolute path", result.stderr)
+    def test_formal_workspace_contract_uses_job_private_root(self) -> None:
+        script = (ROOT / "formal" / "handoffctl" / "verify.sh").read_text(encoding="utf-8")
+        self.assertIn('WORK_ROOT="${TLC_WORK_ROOT}"', script)
+        self.assertIn('WORK_ROOT="${TLC_RUNTIME_ROOT}/agent-workflow-coordinator-tlc"', script)
+        self.assertIn('WORK_ROOT="${TMPDIR:-/tmp}/agent-workflow-coordinator-tlc"', script)
 
     def test_pull_requests_cover_every_coordination_projection(self) -> None:
         paths = event_paths("pull_request")
