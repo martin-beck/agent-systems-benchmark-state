@@ -64,9 +64,13 @@ class RetryCircuitValidationEdgeTests(unittest.TestCase):
             retry_circuit.validate(state)
 
         self.meta["task_revision"] = 3
-        retry_circuit.record_failure(self.meta, self.identity, "EXIT", 3, "2026-10-13T12:00:01+00:00")
+        retry_circuit.record_failure(
+            self.meta, self.identity, "EXIT", 3, "2026-10-13T12:00:01+00:00"
+        )
         self.meta["task_revision"] = 4
-        retry_circuit.record_failure(self.meta, self.identity, "EXIT", 3, "2026-10-13T12:00:02+00:00")
+        retry_circuit.record_failure(
+            self.meta, self.identity, "EXIT", 3, "2026-10-13T12:00:02+00:00"
+        )
         self.meta["task_revision"] = 5
         retry_circuit.recover(self.meta, self.identity, "changed-approach", "new evidence", NOW)
         state = copy.deepcopy(self.meta["retry_circuit"])
@@ -89,7 +93,10 @@ class RetryCircuitValidationEdgeTests(unittest.TestCase):
         self.reserve()
         state = copy.deepcopy(self.meta["retry_circuit"])
         state["schema_version"] = 2
-        self.assertEqual("retry circuit schema is unsupported", retry_circuit.metadata_error({"retry_circuit": state}))
+        self.assertEqual(
+            "retry circuit schema is unsupported",
+            retry_circuit.metadata_error({"retry_circuit": state}),
+        )
 
         state = copy.deepcopy(self.meta["retry_circuit"])
         state["reservations"] = "not-a-list"
