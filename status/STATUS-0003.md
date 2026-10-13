@@ -1980,11 +1980,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1853-complexity-luna |
 | Parent | None |
 | Children | None |
 | Summary | Align the complexity-budget contract with Coordinator v0.7.4. |
@@ -2886,7 +2886,7 @@ flowchart LR
         AR_1850["AR-1850 - Open"]:::status_open
         AR_1851["AR-1851 - In progress"]:::status_in_progress
         AR_1852["AR-1852 - Open"]:::status_open
-        AR_1853["AR-1853 - Open"]:::status_open
+        AR_1853["AR-1853 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
