@@ -2102,6 +2102,20 @@
 | Summary | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. |
 | Next action | Route the downstream formal-lifecycle operation drift exposed by AR-0034 vendor verification to a narrowly scoped compatibility successor; preserve AR-1826 and do not publish this incomplete adoption. |
 
+### AR-1862 — Coordinator formal lifecycle inventory alignment
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption. |
+| Next action | Promote after verifying AR-1861&#x27;s failed-closed evidence, then align the downstream formal lifecycle runtime/model inventory with the exact upstream AR-0034 vendor contract without weakening gates. |
+
 
 ## Dependency graph
 
@@ -3007,6 +3021,7 @@ flowchart LR
         AR_1859["AR-1859 - Planned"]:::status_planned
         AR_1860["AR-1860 - Done"]:::status_done
         AR_1861["AR-1861 - Blocked"]:::status_blocked
+        AR_1862["AR-1862 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -5008,11 +5023,3 @@ flowchart LR
     classDef status_future fill:#455a64,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
-    classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
-```
-
-### Accessible dependency index
-
-| AR | Prerequisites | Dependents |
-| --- | --- | --- |
-| [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | None | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) |
