@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T12:41:52+00:00",
+  "updated_at": "2026-10-13T12:45:09+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -156,3 +156,6 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 
 - 2026-10-13T12:41:52+00:00: Dependency retargeted to corrected Coordinator v0.7.4 release at
   2ea256d0; preserve immutable vendor boundary.
+
+- 2026-10-13T12:45:09+00:00: Recorded command exit 1; command argv SHA-256
+  cf56dfc1f49967d16a9299afcad06728c9e30837c00559964ce2ebc58065ccc7.
