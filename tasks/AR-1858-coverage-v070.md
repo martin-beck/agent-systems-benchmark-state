@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1858.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T18:46:59+00:00",
+  "updated_at": "2026-10-13T19:04:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar1858-coverage-v070"
 }
 ---
@@ -275,3 +275,7 @@ artifact. Do not lower the threshold or merge PR #145.
   tests pass; combined exact artifact after additions is 94.6951%, still below gate. AR-1859 remains
   the scoped formal TLC_WORK_ROOT successor and must not be promoted before this dependency is
   resolved. PR #145 remains unmerged; no product commit.
+
+- 2026-10-13T19:04:19+00:00: Resuming authorized coverage investigation after AR-1860 fixed the
+  separate formal-root seam; preserve recorded 94.6398% baseline, 94.6951% test-only result, and
+  unchanged 95% gate.
