@@ -20,6 +20,7 @@ from typing import Any, cast
 from unittest.mock import MagicMock, patch
 
 import tools.sqlite_storage as sqlite_storage
+from tools import handoffctl
 from tools.admission_lease import AdmissionLease, validate_recheck
 from tools.authority_neutral_commit import CommitAdmissionBundle
 from tools.generate_upgrade_contract import generate
@@ -721,6 +722,18 @@ class GitAuthorityAdapterTests(unittest.TestCase):
         self.adapter = GitAuthorityAdapter(self.root)
         self.coordination = tempfile.TemporaryDirectory()
         coord = Path(self.coordination.name)
+        runtime = coord / ".runtime"
+        runtime.mkdir(mode=0o700)
+        # ``locked`` resolves globals from the shared coordinator module.
+        # Keep this authority fixture's durable control-store operations out
+        # of unrelated stateful fixtures' lock domain.
+        self.coordinator_globals = patch.multiple(
+            handoffctl,
+            ROOT=coord,
+            RUNTIME=runtime,
+            LOCK=runtime / "state.lock",
+        )
+        self.coordinator_globals.start()
         authority = coord / "authority.sqlite"
         self.authority_tasks = coord / "tasks"
         self.authority_tasks.mkdir()
@@ -788,6 +801,7 @@ class GitAuthorityAdapterTests(unittest.TestCase):
         self.scope = LockDomainScope.bind(self.session, fence, self.lease, self.recheck, locked)
 
     def tearDown(self) -> None:
+        self.coordinator_globals.stop()
         self.coordination.cleanup()
         self.directory.cleanup()
 

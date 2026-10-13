@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-workflow-coordinator/schema/execution-envelope.schema.json",
+  "title": "Coordinator execution envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "envelope_id", "envelope_revision", "task", "task_revision", "spec_ref", "spec_revision", "outputs", "non_goals", "path_scope", "command_classes", "evidence", "stop_conditions"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "envelope_id": {"type": "string", "pattern": "^AR-[0-9]{4}-e[1-9][0-9]*$"},
+    "envelope_revision": {"type": "integer", "minimum": 1},
+    "task": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
+    "task_revision": {"type": "integer", "minimum": 1},
+    "spec_ref": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]{2,255}$"},
+    "spec_revision": {"type": "integer", "minimum": 1},
+    "outputs": {"$ref": "#/$defs/namedItems"},
+    "non_goals": {"type": "array", "minItems": 1, "maxItems": 32, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "maxLength": 240}},
+    "path_scope": {"$ref": "#/$defs/pathScope"},
+    "command_classes": {"$ref": "#/$defs/commandClasses"},
+    "evidence": {"$ref": "#/$defs/evidence"},
+    "stop_conditions": {"$ref": "#/$defs/stopConditions"}
+  },
+  "$defs": {
+    "namedItems": {"type": "array", "minItems": 1, "maxItems": 32, "items": {"type": "object", "additionalProperties": false, "required": ["id", "description"], "properties": {"id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{2,63}$"}, "description": {"type": "string", "minLength": 1, "maxLength": 1000}}}},
+    "path": {"type": "string", "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9][A-Za-z0-9._/-]{0,255}$"},
+    "pathScope": {"type": "object", "additionalProperties": false, "required": ["read", "write"], "properties": {"read": {"type": "array", "minItems": 1, "maxItems": 64, "uniqueItems": true, "items": {"$ref": "#/$defs/path"}}, "write": {"type": "array", "minItems": 1, "maxItems": 64, "uniqueItems": true, "items": {"$ref": "#/$defs/path"}}}},
+    "commandClass": {"type": "object", "additionalProperties": false, "required": ["allowed"], "properties": {"allowed": {"type": "boolean"}, "timeout_seconds": {"type": "integer", "minimum": 1, "maximum": 3600}}},
+    "commandClasses": {"type": "object", "additionalProperties": false, "minProperties": 1, "properties": {"read": {"$ref": "#/$defs/commandClass"}, "test": {"$ref": "#/$defs/commandClass"}, "source-write": {"$ref": "#/$defs/commandClass"}, "git-publication": {"$ref": "#/$defs/commandClass"}}},
+    "evidence": {"type": "array", "minItems": 1, "maxItems": 32, "items": {"type": "object", "additionalProperties": false, "required": ["id", "class", "required"], "properties": {"id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{2,63}$"}, "class": {"type": "string", "pattern": "^[a-z]+(?:-[a-z]+)*$"}, "required": {"type": "boolean"}}}},
+    "stopConditions": {"type": "array", "minItems": 1, "maxItems": 32, "items": {"type": "object", "additionalProperties": false, "required": ["id", "kind"], "properties": {"id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{2,63}$"}, "kind": {"enum": ["deny", "pause"]}}}}
+  }
+}
