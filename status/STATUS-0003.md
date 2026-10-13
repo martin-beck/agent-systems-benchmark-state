@@ -1974,7 +1974,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align role-store authorization tests with Coordinator v0.7.4. |
-| Next action | Blocked pending upstream Coordinator AR-0032 role-store authorization repair/spec adoption. Once AR-0032 is released, bind exact upstream evidence, rebase/adopt without changing immutable vendor snapshot, rerun focused/full ASB gates, obtain independent review, and update PR148. |
+| Next action | Obtain a correct locked environment with jsonschema and reconcile unrelated baseline full-gate failures; separately resolve stale expired-cleanup assertion without changing immutable vendor snapshot before any PR148 merge. |
 
 ### AR-1853 — Complexity v0.7.4 compatibility contract
 

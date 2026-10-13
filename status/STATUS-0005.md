@@ -343,7 +343,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1858](../tasks/AR-1858-coverage-v070.md): v0.7.0 coverage floor repair | ar1858-coverage-v070-luna | Repair the v0.7.0 coordinator coverage floor deficit. | AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped. |
-| P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | ar1852-role-store-luna | Align role-store authorization tests with Coordinator v0.7.4. | Blocked pending upstream Coordinator AR-0032 role-store authorization repair/spec adoption. Once AR-0032 is released, bind exact upstream evidence, rebase/adopt without changing immutable vendor snapshot, rerun focused/full ASB gates, obtain independent review, and update PR148. |
+| P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | ar1852-role-store-luna | Align role-store authorization tests with Coordinator v0.7.4. | Obtain a correct locked environment with jsonschema and reconcile unrelated baseline full-gate failures; separately resolve stale expired-cleanup assertion without changing immutable vendor snapshot before any PR148 merge. |
 
 ### Open (6)
 

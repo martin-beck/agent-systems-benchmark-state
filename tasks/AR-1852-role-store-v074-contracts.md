@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T19:39:04+00:00",
   "depends_on": [],
   "id": "AR-1852",
-  "next_action": "Blocked pending upstream Coordinator AR-0032 role-store authorization repair/spec adoption. Once AR-0032 is released, bind exact upstream evidence, rebase/adopt without changing immutable vendor snapshot, rerun focused/full ASB gates, obtain independent review, and update PR148.",
+  "next_action": "Obtain a correct locked environment with jsonschema and reconcile unrelated baseline full-gate failures; separately resolve stale expired-cleanup assertion without changing immutable vendor snapshot before any PR148 merge.",
   "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T17:39:04+00:00",
+  "updated_at": "2026-10-13T17:39:10+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -137,3 +137,11 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   d89c43b28f2a6ac6fb83707b9e20e8397e336513c903c1ccec8e4ccc3ec5d7dc.
 
 - 2026-10-13T17:39:04+00:00: Heartbeat by ar1852-role-store-luna.
+
+- 2026-10-13T17:39:10+00:00: Full locked discovery ran 1797 tests in 346.393s: 6 failures and 17
+  errors. Unrelated baseline failures include missing locked jsonschema, AR-1793 lifecycle/worktree
+  expectations, complexity workflow fixture drift, and rollback lock timeout. AR-1852 role-specific
+  failure is test_remove_expired_target_and_unrelated_expiry_is_cleanup_safe: 22da911193 test
+  expects expired cleanup, but immutable Coordinator v0.7.4 validator rejects expired assignments
+  during remove. Focused role suite is 9/10 under current vendor snapshot. No merge or release
+  claimed.
