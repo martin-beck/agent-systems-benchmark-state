@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1854.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "inputs", "description": "The integrated tree contains the exact reviewed merged heads of AR-1851, AR-1852 and AR-1853."},
+    {"id": "gates", "description": "Strict state-consistency, formal model/implementation and locked full quality gates pass on the integrated head."},
+    {"id": "no-weakening", "description": "No complexity, coverage, formal or state-consistency threshold is weakened."}
+  ],
+  "definition_of_done": ["All three predecessor repairs are merged and verified in one exact tree.", "Integrated strict/formal/full gates are green.", "Independent review, CI and post-merge evidence are recorded."],
+  "inputs": [{"id": "cross-repair-failures", "description": "Standalone candidate-based PRs expose failures across AR-1851/1852/1853 until their repairs are combined."}],
+  "outputs": [{"id": "integrated-qualification", "description": "Exact-head integrated v0.7.4 compatibility qualification with unchanged gates."}],
+  "allowed_tools": ["git", "python", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["budget-weakening", "vendor-edit", "history-rewrite"],
+  "required_evidence_classes": ["mechanical", "contract-test"],
+  "gates": [
+    {"id": "integration", "description": "Exact reviewed predecessor heads are present in the integrated tree."},
+    {"id": "quality", "description": "Locked full, strict state-consistency and formal model/implementation gates pass."},
+    {"id": "review", "description": "Independent exact-head review, CI and post-merge evidence are green."}
+  ]
+}
