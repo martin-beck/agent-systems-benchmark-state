@@ -54,17 +54,7 @@
     ],
     "hold": null,
     "recoveries": [],
-    "reservations": [
-      {
-        "expires_at": "2026-10-13T21:51:03+00:00",
-        "id": "14f68177241a4a9985b9aa2eac43931d",
-        "identity": "sha256:ac92e2a74d594c526e1cabbc80426d539a23cfae1bbc59ae43131029011aed2d",
-        "progress_digest": "sha256:3ef850421994879ab4e7a7e46e11848a74ff796daa36590c1109bed5c55be567",
-        "reserved_at": "2026-10-13T21:20:03+00:00",
-        "task_revision": 83,
-        "window": 3
-      }
-    ],
+    "reservations": [],
     "schema_version": 1
   },
   "schema_version": 1,
@@ -80,9 +70,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T21:20:03+00:00",
+  "updated_at": "2026-10-13T21:20:07+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -372,3 +362,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 - 2026-10-13T21:19:51+00:00: Claimed by ar1852-requalify-luna3.
 
 - 2026-10-13T21:20:03+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=2.
+
+- 2026-10-13T21:20:07+00:00: Released retry circuit launch slot.
