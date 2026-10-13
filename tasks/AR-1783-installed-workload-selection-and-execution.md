@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "checkpoint_commit": "4902eb0d316228c9e566a9ceacfa823613a3a9f7",
-  "claim_expires": "2026-10-13T21:37:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1763",
     "AR-1764",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "bf0e54df10baef9c261d7bf993e093dc009984d1",
-  "owner": "ar1783-workload-selection-luna",
+  "owner": "",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
   "retry_circuit": {
@@ -52,11 +52,11 @@
   },
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift.",
-  "task_revision": 471,
+  "task_revision": 472,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-13T19:39:49+00:00",
+  "updated_at": "2026-10-13T19:40:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -1226,3 +1226,12 @@ the suite from this end-to-end path.
   11663, 11674, 11676, 11687, 11690, 11693, 11703 lack reviewed identities in
   diagnostic_legacy_catalog_compact.rs. No AR-1783 product gap remains; preserve exact workload
   implementation and await owning generated-catalog repair.
+
+- 2026-10-13T19:40:16+00:00: Released ownerless after bounded implementation cycle. Exact product
+  checkpoint d87352ddb511c48b4be1bdbecdd26fb2cf6597a8; signed DCO main integration bf0e54df10
+  includes merged AR-1835 authenticated bootstrap coverage. cargo test --locked -p asb-cli passed
+  474 unit tests; diagnostic_contract ordinary_cli_producers_are_mechanically_closed remains failing
+  because current-main control.rs call sites 9937, 11663, 11674, 11676, 11687, 11690, 11693, 11703
+  lack reviewed identities in generated diagnostic_legacy_catalog_compact.rs. Next action: owning
+  generated-catalog repair, then rerun exact-head serialized coverage without weakening the fixed
+  90% floor.

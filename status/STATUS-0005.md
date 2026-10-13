@@ -343,16 +343,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | ar1783-workload-selection-luna | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift. | Repair the generated diagnostic catalog in its owning AR/mainline change, then rerun exact-head serialized coverage; do not add duplicate workload/control tests or weaken the 90&#37; floor. |
-
-### Open (5)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
+| P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift. | Repair the generated diagnostic catalog in its owning AR/mainline change, then rerun exact-head serialized coverage; do not add duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 | P1 | [AR-1851](../tasks/AR-1851-ar1793-v074-contracts.md): AR-1793 v0.7.4 compatibility contracts | Unclaimed | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. | Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification. |
