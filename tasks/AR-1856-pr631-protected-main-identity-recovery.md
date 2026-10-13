@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "PR #631 protected-main identity recovery",
-  "updated_at": "2026-10-13T14:37:15+00:00",
+  "updated_at": "2026-10-13T14:37:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1856-pr631-protected-main-identity"
 }
 ---
@@ -80,3 +80,6 @@ AR-1850's TUI implementation or AR-1841's Coordinator adoption/state vendor.
 
 - 2026-10-13T14:37:15+00:00: Recorded command exit 0; command argv SHA-256
   fd36fb11d593ee274ffd4c446ca63106f1ae0a10a08a077743d03be553fa74b3.
+
+- 2026-10-13T14:37:22+00:00: Recorded command exit 0; command argv SHA-256
+  9a8759c922c021afdb88174a7e6f1a8ca51929ac43280ea9623ce06ac8627d17.
