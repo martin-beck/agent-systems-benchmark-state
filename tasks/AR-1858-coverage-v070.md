@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T17:58:15+00:00",
+  "claim_expires": "2026-10-13T18:01:29+00:00",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "Bounded split isolation is running from exact worktree. test_campaign.py 15/15 and issue_series_service_coverage.py 4/4 pass with absolute source; test_issue_series_handoffctl.py is currently hung in multiprocessing/resource-tracker path and will be classified at the 300s handoffctl bound. Do not accept partial coverage.",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:00:21+00:00",
+  "updated_at": "2026-10-13T16:01:29+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -114,3 +114,5 @@ artifact. Do not lower the threshold or merge PR #145.
   run exceeded 1 minute with child zombie PID 3893141 and live multiprocessing resource_tracker PID
   3887425; parent process wchan jbd2_log_wait_commit. No coverage conclusion accepted. Bound is
   300s; subsequent suite files are not started until terminal classification.
+
+- 2026-10-13T16:01:29+00:00: Heartbeat by ar1858-coverage-v070-luna.
