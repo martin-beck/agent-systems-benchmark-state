@@ -2,19 +2,19 @@
 {
   "branch": "codex/ar1862-formal-lifecycle",
   "checkpoint_commit": "b00cdba5bc5267633588dc219c53b10d34fb9dc8",
-  "claim_expires": "2026-10-13T19:53:50+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1862",
   "next_action": "Route recover_execution normalization to an upstream Coordinator successor; preserve immutable ASB vendor provenance and do not publish AR-1862 as an ASB implementation.",
-  "owner": "ar1841-v053-adoption-luna",
+  "owner": "",
   "plan": "../plans/AR-1862-coordinator-formal-lifecycle-alignment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T17:54:54+00:00",
+  "updated_at": "2026-10-13T17:55:00+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -56,3 +56,7 @@ vendored Coordinator bytes or mutate AR-1826.
   attempted 7e5c06775a repair caused expected vendor digest mismatch and was reverted in signed+DCO
   9bbca7e6d1. Existing pinned vendor verify passes at v0.5.1; exact upstream AR-0034 sync remains
   blocked by upstream formal lifecycle operation drift. No vendored bytes retained.
+
+- 2026-10-13T17:55:00+00:00: ASB ownership audit confirms the formal lifecycle normalization belongs
+  upstream: affected ASB files are immutable vendored Coordinator artifacts. Reverted attempted
+  downstream edit; route an upstream successor and preserve AR-1861/AR-1826 boundaries.
