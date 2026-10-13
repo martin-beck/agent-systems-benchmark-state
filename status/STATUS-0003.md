@@ -1610,7 +1610,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. |
-| Next action | Coordinator bind-worktree remains blocked: its safety precondition requires both branch and worktree_key empty, but legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract is retained while branch is empty. No active worker/process; product worktree is clean at reviewed e9d95999 (codex/ar-1826-explicit-setup-contract). Implement a coordinator-mediated legacy-pair repair or use the supported repair version, then bind this exact branch/key and requalify e9d95999 onto current main d0e6a28 with fresh exact-head review/CI. |
+| Next action | Supported repair unavailable in vendored handoffctl v0.7.5: bind-worktree rejects retained legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract while branch is empty, and no coordinator command clears the pair. Add/use an explicitly reviewed coordinator repair version, then re-claim, bind codex/ar-1826-explicit-setup-contract to the exact non-overlapping worktree, and requalify reviewed e9d95999 onto current main d0e6a28. |
 
 ### AR-1827 — Author complete explicit benchmark configuration with asb setup
 
