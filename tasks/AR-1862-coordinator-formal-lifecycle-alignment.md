@@ -1,7 +1,7 @@
 ---
 {
   "branch": "codex/ar1862-formal-lifecycle",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "b00cdba5bc5267633588dc219c53b10d34fb9dc8",
   "claim_expires": "2026-10-13T19:53:50+00:00",
   "depends_on": [],
   "id": "AR-1862",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T17:53:50+00:00",
+  "updated_at": "2026-10-13T17:53:53+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -37,3 +37,5 @@ vendored Coordinator bytes or mutate AR-1826.
   on branch codex/ar1862-formal-lifecycle.
 
 - 2026-10-13T17:53:50+00:00: Heartbeat by ar1841-v053-adoption-luna.
+
+- 2026-10-13T17:53:53+00:00: Checkpointed source commit b00cdba5bc5267633588dc219c53b10d34fb9dc8.
