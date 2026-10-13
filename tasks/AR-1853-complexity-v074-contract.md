@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1853-complexity-v074-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T15:33:12+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1853",
   "next_action": "Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence.",
-  "owner": "ar1853-complexity-luna",
+  "owner": "",
   "plan": "../plans/AR-1853-complexity-v074-contract.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1853.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align the complexity-budget contract with Coordinator v0.7.4.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Complexity v0.7.4 compatibility contract",
-  "updated_at": "2026-10-13T13:33:15+00:00",
+  "updated_at": "2026-10-13T15:58:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1853"
 }
 ---
@@ -61,3 +61,7 @@ contract exposed by exact Coordinator v0.7.4 adoption.
   strict failures are attributable to remaining AR-1851/AR-1852 compatibility repairs. Planned
   successor AR-1854 (coord commit 07addce7b7) depends on all three repairs for integrated
   qualification.
+
+- 2026-10-13T15:58:48+00:00: Recovered expired claim formerly owned by ar1853-complexity-luna.
+  Recovered expired ownerless claim after verifying no AR-1853 worker or process remains; preserve
+  PR #146 and its dependency-wait evidence.
