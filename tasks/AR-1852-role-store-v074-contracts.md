@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T19:40:09+00:00",
   "depends_on": [],
   "id": "AR-1852",
-  "next_action": "Obtain a correct locked environment with jsonschema and reconcile unrelated baseline full-gate failures; separately resolve stale expired-cleanup assertion without changing immutable vendor snapshot before any PR148 merge.",
+  "next_action": "Independent review and exact-head CI for signed product commit 7b46c6b076 atop 22da911193. Full gate remains blocked by unrelated baseline/environment failures: missing jsonschema, AR-1793 fixture drift, workflow complexity fixture drift, rollback lock timeout, and vendor/generated-state checks.",
   "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T17:40:09+00:00",
+  "updated_at": "2026-10-13T17:40:15+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -147,3 +147,11 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   claimed.
 
 - 2026-10-13T17:40:09+00:00: Heartbeat by ar1852-role-store-luna.
+
+- 2026-10-13T17:40:15+00:00: Upstream Coordinator AR-0032 evidence confirms only doctor/lifecycle
+  admission changed; immutable v0.7.4 role validator and remove() retain fail-closed
+  expired-assignment rejection. Repaired stale AR-1852 downstream cleanup assertion in signed
+  DCO/SSH commit 7b46c6b076; no vendor files changed. Focused role suite now passes 10/10. Vendor
+  verify still reports pre-existing tools/handoffctl.py digest mismatch; generated-view check
+  reports CURRENT.md drift; schema gate unavailable because locked environment lacks jsonschema. No
+  merge/release claimed.

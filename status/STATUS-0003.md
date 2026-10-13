@@ -1974,7 +1974,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align role-store authorization tests with Coordinator v0.7.4. |
-| Next action | Obtain a correct locked environment with jsonschema and reconcile unrelated baseline full-gate failures; separately resolve stale expired-cleanup assertion without changing immutable vendor snapshot before any PR148 merge. |
+| Next action | Independent review and exact-head CI for signed product commit 7b46c6b076 atop 22da911193. Full gate remains blocked by unrelated baseline/environment failures: missing jsonschema, AR-1793 fixture drift, workflow complexity fixture drift, rollback lock timeout, and vendor/generated-state checks. |
 
 ### AR-1853 — Complexity v0.7.4 compatibility contract
 
