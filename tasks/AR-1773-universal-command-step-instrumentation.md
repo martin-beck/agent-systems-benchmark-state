@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T00:26:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -82,7 +82,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "asb_ar1773_runner_provision_luna",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -96,11 +96,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T22:26:46+00:00",
+  "updated_at": "2026-10-13T22:27:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -407,3 +407,16 @@ non-TTY compatibility.
   through handoffctl. No product changes or gate weakening.
 
 - 2026-10-13T22:26:46+00:00: Claimed by asb_ar1773_runner_provision_luna.
+
+- 2026-10-13T22:27:29+00:00: Fresh infrastructure-only audit 2026-10-14: project-local
+  /srv/data/projects/asb-replay-vm is a stopped Ubuntu 24.04 qcow2 (8 GiB, 4.29 GiB allocated) whose
+  cloud-init only provisions bubblewrap/systemd/openssh; no pinned Rust/Cargo toolchain or
+  compiler/linker support is provisioned. /srv/data/projects/asb-openeuler-vm is a 2.84 GiB
+  openEuler disk image with stale stopped runtime files and no runner/toolchain manifest. Docker
+  daemon exists but /var/run/docker.sock is root:docker 0660 and worker uid 1001 is not in docker
+  group, so non-root Docker is unavailable. handoffctl execution envelopes unshare networking and
+  mount only declared worktree paths, preventing SSH/VM use as a backend; no authorized host changes
+  or network installation were made. Existing Cargo-absent bwrap blocker was not repeated. No
+  product source change or gate weakening; exact-head handoffctl tests remain blocked pending an
+  authorized runner with pinned Cargo 1.93.0, linker/compiler support, full source, identity files,
+  and Bubblewrap.
