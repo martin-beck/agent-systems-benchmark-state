@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1862-formal-lifecycle",
   "checkpoint_commit": "b00cdba5bc5267633588dc219c53b10d34fb9dc8",
-  "claim_expires": "2026-10-13T20:05:26+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "evidence_ledger": {
     "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
@@ -42,15 +42,15 @@
   },
   "id": "AR-1862",
   "next_action": "Bind and accept exact v0.7.8 lifecycle-alignment evidence, then release this obsolete downstream repair successor.",
-  "owner": "coord-reconcile-v078-1862",
+  "owner": "",
   "plan": "../plans/AR-1862-coordinator-formal-lifecycle-alignment.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1862.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Coordinator formal lifecycle inventory alignment",
   "updated_at": "2026-10-13T18:05:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
@@ -117,3 +117,6 @@ vendored Coordinator bytes or mutate AR-1826.
 
 - 2026-10-13T18:05:42+00:00: Accepted exact candidate qualification with the unchanged full 95
   percent coverage floor.
+
+- 2026-10-13T18:05:42+00:00: Completed by verified v0.7.8 lifecycle alignment through immutable
+  vendor adoption.
