@@ -1,7 +1,7 @@
 ---
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
-  "checkpoint_commit": "0bba7e8416cb8202df32050dc983d57cb01ecabd",
+  "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
   "claim_expires": "2026-10-13T19:40:09+00:00",
   "depends_on": [],
   "id": "AR-1852",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T17:40:15+00:00",
+  "updated_at": "2026-10-13T17:40:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -155,3 +155,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   verify still reports pre-existing tools/handoffctl.py digest mismatch; generated-view check
   reports CURRENT.md drift; schema gate unavailable because locked environment lacks jsonschema. No
   merge/release claimed.
+
+- 2026-10-13T17:40:55+00:00: Checkpointed source commit 98ba8073d5ee754a40c312e291e478cdff105fc6.
