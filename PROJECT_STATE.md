@@ -33,7 +33,7 @@ Generated from local Git and GitHub. Do not edit.
 | #619 | `repair/ar-1779-source-fallback-linear3@21372a22aba3` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): fail closed on unavailable source adapters |
 | #624 | `feature/ar-1783-installed-workload-selection-and-execution@32f42827367d` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): bind installed workloads before execution |
 | #629 | `codex/ar-1826-explicit-setup-contract@e9d95999c0ca` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(config): define explicit setup and plan binding contract |
-| #631 | `feature/ar1850-development-tui-interactive-lifetime@671f898b6a85` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): keep admitted development TUI interactive |
+| #631 | `feature/ar1850-development-tui-interactive-lifetime@671f898b6a85` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): keep admitted development TUI interactive |
 
 ## Recent workflows
 
@@ -46,8 +46,8 @@ Generated from local Git and GitHub. Do not edit.
 | 38410494755 | `671f898b6a85` | pull_request | Cross-repository development broker qualification | completed:success |
 | 38410494641 | `671f898b6a85` | pull_request | Portable protected-main provenance | completed:success |
 | 38410494620 | `671f898b6a85` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38410494475 | `671f898b6a85` | pull_request | Rust verification | in_progress:- |
-| 38410493915 | `671f898b6a85` | pull_request | Credential-free benchmark path | in_progress:- |
-| 38410493750 | `671f898b6a85` | pull_request | Emulated aarch64 portability | queued:- |
+| 38410494475 | `671f898b6a85` | pull_request | Rust verification | completed:success |
+| 38410493915 | `671f898b6a85` | pull_request | Credential-free benchmark path | completed:success |
+| 38410493750 | `671f898b6a85` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 38410493681 | `671f898b6a85` | pull_request | Development formal assurance | completed:success |
 | 38385790668 | `d0e6a28a81b4` | schedule | Fault assurance | completed:success |
