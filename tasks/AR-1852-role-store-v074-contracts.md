@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T20:56:27+00:00",
   "depends_on": [],
   "id": "AR-1852",
   "next_action": "Independent review and exact-head CI for signed product commit 7b46c6b076 atop 22da911193. Full gate remains blocked by unrelated baseline/environment failures: missing jsonschema, AR-1793 fixture drift, workflow complexity fixture drift, rollback lock timeout, and vendor/generated-state checks.",
-  "owner": "",
+  "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T17:41:01+00:00",
+  "updated_at": "2026-10-13T18:56:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -163,3 +163,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   and was not updated because locked full gate is non-green: 6 failures/17 errors including missing
   jsonschema, unrelated AR-1793/workflow/rollback fixtures, vendor digest mismatch, and generated
   CURRENT.md drift. Resume only with a correct locked environment and fresh exact-head gates.
+
+- 2026-10-13T18:56:27+00:00: Claimed by ar1852-role-store-luna.
