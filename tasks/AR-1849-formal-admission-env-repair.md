@@ -9,33 +9,6 @@
   "owner": "ar1849-formal-admission-env-luna",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
-  "retry_circuit": {
-    "abandoned": [],
-    "attempts": [],
-    "hold": null,
-    "recoveries": [],
-    "reservations": [
-      {
-        "expires_at": "2026-10-13T20:05:15+00:00",
-        "id": "7519f9954e0447a89d77886b95c75c61",
-        "identity": "sha256:0af1137f0c5c585701cbb1ab3b685ef73615b382a6470c0b8601d502e5b03239",
-        "progress_digest": "sha256:5fac4bda38e4a3df8ea06a1946c455591cbd5abd0c255c7168c133926aca5bbe",
-        "reserved_at": "2026-10-13T19:34:16+00:00",
-        "task_revision": 123,
-        "window": 3
-      },
-      {
-        "expires_at": "2026-10-13T19:35:51+00:00",
-        "id": "c83bf7d175d443f2a713c67960ebdc86",
-        "identity": "sha256:c9661d966f260bcd2ed515cb8763ec6712c648241666e03b5039d0c8342816ae",
-        "progress_digest": "sha256:5fac4bda38e4a3df8ea06a1946c455591cbd5abd0c255c7168c133926aca5bbe",
-        "reserved_at": "2026-10-13T19:34:22+00:00",
-        "task_revision": 124,
-        "window": 3
-      }
-    ],
-    "schema_version": 1
-  },
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "mechanical",
@@ -49,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T19:34:22+00:00",
+  "updated_at": "2026-10-13T19:34:24+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -446,3 +419,5 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 - 2026-10-13T19:34:16+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
 
 - 2026-10-13T19:34:22+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
+
+- 2026-10-13T19:34:24+00:00: Released retry circuit launch slot.
