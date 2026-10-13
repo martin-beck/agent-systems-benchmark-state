@@ -151,9 +151,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T21:23:45+00:00",
+  "updated_at": "2026-10-13T21:23:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -499,3 +499,11 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   2b170eed86d3665fc87bf4206e5348c00056aa1d943b8c002fc3b79a3c2ed87b.
 
 - 2026-10-13T21:23:45+00:00: Heartbeat by ar1852-requalify-luna3.
+
+- 2026-10-13T21:23:52+00:00: sync-development adoption and vendor verify succeeded at exact
+  Coordinator b46d2b3 (runtime v0.7.8, strict role restoration); focused tests/test_roles.py 10/10
+  pass. Bound execution envelope to satisfy current handoffctl fence. Full unittest attempt was
+  admitted but sandbox could not exec external locked venv path
+  (/srv/data/projects/agent-systems-benchmark-state-ar-1852/.venv absent); system interpreter lacks
+  jsonschema and state venv is outside candidate sandbox. No PR update/merge. Next: run full gate in
+  an approved locked environment or record environmental blocker; preserve strict gates.
