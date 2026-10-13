@@ -1,3 +1,5 @@
+# Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
+# SPDX-License-Identifier: MIT
 """ASB-owned regression coverage for durable SQLite issue-series receipts."""
 
 from __future__ import annotations
