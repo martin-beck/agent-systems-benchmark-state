@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T15:35:13+00:00",
+  "updated_at": "2026-10-13T15:53:13+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -72,3 +72,7 @@ artifact. Do not lower the threshold or merge PR #145.
   02d9c6baec633920383554d0177ac978900def886d5a6938ad547713e6e8972a.
 
 - 2026-10-13T15:35:13+00:00: Heartbeat by ar1858-coverage-v070-luna.
+
+- 2026-10-13T15:53:13+00:00: Recorded command timeout; classification=SUBPROCESS_TIMEOUT;
+  deadline=1800.0s; command argv SHA-256
+  26c27fc541a549d6ae2db23c5201f002183c032e245c3d787413c5526f418d96.
