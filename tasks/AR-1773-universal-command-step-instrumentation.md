@@ -78,7 +78,7 @@
     "returncode": 1
   },
   "id": "AR-1773",
-  "next_action": "Instrument every eligible public command operation through the shared reporter after the diagnostic gate and reporter are accepted.",
+  "next_action": "Repair the handoffctl Bubblewrap Cargo toolchain mount (or provide an equivalent pinned-toolchain runner), then rerun the exact-head focused/full tests through handoffctl; no source repair is justified.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
@@ -98,9 +98,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T21:36:07+00:00",
+  "updated_at": "2026-10-13T21:36:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -224,3 +224,9 @@ non-TTY compatibility.
 
 - 2026-10-13T21:36:07+00:00: Recorded command exit 1; command argv SHA-256
   22fc19d872be75a975891ff0abd53f1c305974a409b50c49c5df5d842d033e81.
+
+- 2026-10-13T21:36:49+00:00: Exact-head f78a100620 is clean and already an ancestor of origin/main
+  870331be. The bound cargo test failed before execution with exact stderr: bwrap: execvp cargo: No
+  such file or directory. This is the same runner/toolchain-mount blocker recorded previously; no
+  product source gap or gate weakening was found. Host-pinned Cargo evidence remains supplemental
+  only. State doctor --live passes after removing generated tools/__pycache__ bytecode.
