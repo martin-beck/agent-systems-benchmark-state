@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T19:31:47+00:00",
   "depends_on": [],
   "id": "AR-1852",
   "next_action": "Provide a locked ASB environment with jsonschema installed and repair the pre-existing immutable tools/handoffctl.py vendor digest mismatch without changing v0.7.4 vendor content; rerun full gates, obtain independent exact-head review/CI for 7b46c6b076, update PR #148, and merge only when green.",
-  "owner": "",
+  "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T18:58:08+00:00",
+  "updated_at": "2026-10-13T19:01:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -206,3 +206,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   mismatch. Pycache cleanup was attempted through handoffctl run; doctor --live passed. No lease
   remains; next action is the precise locked-environment/vendor repair and exact-head review/CI path
   in metadata.
+
+- 2026-10-13T19:01:47+00:00: Claimed by ar1852-role-store-luna.
