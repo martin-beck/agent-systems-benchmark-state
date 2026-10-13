@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-    classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
 ```
 
 ### Accessible dependency index

@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1862-coordinator-formal-lifecycle-alignment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T00:00:00Z",
+  "updated_at": "2026-10-13T17:52:38+00:00",
   "worktree_key": ""
 }
 ---
@@ -27,3 +27,6 @@ ASB's downstream runtime/model inventory is older. This task owns only the
 ASB-side formal lifecycle alignment needed for adoption; it does not edit
 vendored Coordinator bytes or mutate AR-1826.
 
+
+- 2026-10-13T17:52:38+00:00: AR-1861 failed-closed evidence identifies an exact downstream formal
+  lifecycle inventory seam; promote narrow compatibility repair.
