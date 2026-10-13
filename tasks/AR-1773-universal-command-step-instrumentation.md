@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T22:48:23+00:00",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -82,7 +82,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "",
+  "owner": "asb_ar1773_runner_repair_luna5",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -96,11 +96,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T22:03:06+00:00",
+  "updated_at": "2026-10-13T22:18:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -345,3 +345,5 @@ non-TTY compatibility.
   authorized runner-root repair must mount pinned Cargo 1.93.0, compiler/linker support, complete
   workspace source, required identity files, and network-denied fixtures; then rerun exact-head
   focused/full tests through handoffctl. No product source or gate changes.
+
+- 2026-10-13T22:18:23+00:00: Claimed by asb_ar1773_runner_repair_luna5.

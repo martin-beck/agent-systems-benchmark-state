@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1827 --> AR_1831
+    AR_1827 --> AR_1832
     AR_1828 --> AR_1829
     AR_1828 --> AR_1830
     AR_1828 --> AR_1831
@@ -533,4 +535,3 @@
 | [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md) | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md) | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md) |
 | [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md) | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md) | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md) |
 | [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md) | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md) | None |
-| [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md) | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md), [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md) | None |
