@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 167,
+  "task_revision": 168,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T14:41:10+00:00",
+  "updated_at": "2026-10-13T14:41:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -546,3 +546,10 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
   51cc4cce1266c5e7a12e5f813ff1bdcebb5df4233b44fb89cd53c444d0b9c73a.
 
 - 2026-10-13T14:41:10+00:00: Heartbeat by ar1841-v053-adoption-luna.
+
+- 2026-10-13T14:41:29+00:00: Requalification refresh: canonical doctor is green after recoverable
+  pycache quarantine and generated-view reconcile. Exact vendor verify passes at
+  v0.7.4/2ea256d0c0bdcb9922c88e6778a104b33c0e47da. PR #142 remains open at 173b74c738 with no hosted
+  checks. A vendor-verify wrapper run exited 0 but post-reconcile initially failed on stale
+  unrelated AR-1849 claim; no AR-1849 ownership was changed. Existing compatibility ARs remain the
+  justified blockers.
