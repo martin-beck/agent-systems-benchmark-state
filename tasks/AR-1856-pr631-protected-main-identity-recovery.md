@@ -12,19 +12,19 @@
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "hosted",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:03e609dec4f181476c791671dca86f58cf3ae02baff2d1c3c91e4a63091913e5",
+    "evidence_ref": "quality/AR-1856-postmerge-receipt.json",
     "spec_ref": "specs/AR-1856.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1856.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "PR #631 protected-main identity recovery",
-  "updated_at": "2026-10-13T15:05:35+00:00",
+  "updated_at": "2026-10-13T15:06:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1856-pr631-protected-main-identity"
 }
 ---
@@ -139,3 +139,7 @@ AR-1850's TUI implementation or AR-1841's Coordinator adoption/state vendor.
 
 - 2026-10-13T15:05:35+00:00: Recorded command exit 0; command argv SHA-256
   aaff0a393001249812fa08e0b124bae242089ff7ff541b85e40d0df2d009496d.
+
+- 2026-10-13T15:06:01+00:00: Accepted exact protected-main identity recovery: signed local merge
+  870331be with exact parents/tree, verified committer/signature, and all ten exact-main workflows
+  terminal-success.
