@@ -79,13 +79,13 @@
     "task_revision": 104
   },
   "execution_result": {
-    "argv_digest": "298de8df9b7e46a9c28ddb8018ea725606043351fe8f6e806cde75a77d9f2dde",
+    "argv_digest": "88c290700cb6a8367e8564d612daa0612bce5d8574878909ee7eb11f291ecd45",
     "classification": "EXIT",
     "envelope_digest": "sha256:36af7d046d9ef15d3ed21b798ab488b01fd26a5d9ad86cc3a2af1f75907c69cb",
-    "execution_id": "f37b6a852e62499083f5b2e313c41711",
-    "owner": "asb_ar1773_runner_repair_luna5",
-    "recorded_at": "2026-10-13T22:20:39+00:00",
-    "returncode": 127
+    "execution_id": "f59f518703994a178fd1f0978ddd4825",
+    "owner": "asb_ar1773_docker_runner_luna",
+    "recorded_at": "2026-10-13T22:34:15+00:00",
+    "returncode": 1
   },
   "id": "AR-1773",
   "next_action": "Repair the coordinator Bubblewrap runtime root to mount the approved pinned Cargo toolchain, compiler/linker support, complete workspace source, and required identity files through an authorized runner; then rerun exact-head focused and full tests through handoffctl. No product source repair is justified.",
@@ -108,9 +108,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T22:34:13+00:00",
+  "updated_at": "2026-10-13T22:34:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -434,3 +434,5 @@ non-TTY compatibility.
 - 2026-10-13T22:33:57+00:00: Claimed by asb_ar1773_docker_runner_luna.
 
 - 2026-10-13T22:34:13+00:00: Reserved bound execution f59f518703994a178fd1f0978ddd4825.
+
+- 2026-10-13T22:34:18+00:00: Recorded execution result f59f518703994a178fd1f0978ddd4825.
