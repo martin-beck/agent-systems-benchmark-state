@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T16:00:53+00:00",
   "depends_on": [],
   "id": "AR-1850",
-  "next_action": "Wait for all exact-main runs at merge commit 9d2290dc89c9610bb32680f2100759aeba29a06e to finish green, then run post-merge PTY/state verification and release AR-1850.",
+  "next_action": "Do not release AR-1850. Reconcile the protected signed merge-path provenance failure with Coordinator; retain merge commit and evidence, then run authorized repair/requalification before post-merge PTY verification.",
   "observed_branch": "feature/ar1850-development-tui-interactive-lifetime",
   "observed_dirty": 0,
   "observed_head": "671f898b6a859655952a009b9a4468e685d74013",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:29:23+00:00",
+  "updated_at": "2026-10-13T14:29:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -113,3 +113,9 @@ cross-repository qualification.
   2026-10-13T14:29:01Z: runs 38413736823 headers success; 38413736478 formal, 38413736253 quality,
   38413736420 emulated, 38413736646 provenance, 38413736158 Rust, 38413736582 TUI, 38413736373
   credential-free, 38413736477 platform, 38413736406 faults in progress.
+
+- 2026-10-13T14:29:47+00:00: Exact-main provenance run 38413736646 failed: merge commit
+  9d2290dc89c9610bb32680f2100759aeba29a06e has Commit: GitHub <noreply@github.com>, and
+  portable_provenance rejects non-local integration identity. Product parent is exact reviewed head
+  671f898b6a; this is a protected merge-path provenance defect, not a TUI behavior failure. Other
+  exact-main runs remain in progress.
