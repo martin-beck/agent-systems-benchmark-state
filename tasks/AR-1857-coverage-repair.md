@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1857-coverage-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T17:13:00+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1857",
   "next_action": "Analyze exact 94% coverage artifact and add narrow tests for uncovered first-party paths; preserve 95% threshold and PR #145 unmerged.",
-  "owner": "ar1857-coverage-repair-luna",
+  "owner": "",
   "plan": "../plans/AR-1857-coverage-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1857.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Restore the full-gate coverage floor after the terminal 94% observation.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Full-gate coverage floor repair",
-  "updated_at": "2026-10-13T15:13:05+00:00",
+  "updated_at": "2026-10-13T15:13:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1857-coverage-repair"
 }
 ---
@@ -56,3 +56,9 @@ modify AR-1841 or AR-1856 ownership and must not weaken formal/resource gates.
 
 - 2026-10-13T15:13:05+00:00: Recorded command exit 0; command argv SHA-256
   66235c9375356cf2bd62b8c8de767119b82ed0e7bd10e23bbc67f3d44a47dcba.
+
+- 2026-10-13T15:13:28+00:00: Retargeting required: initial state worktree lacked source modules
+  referenced by exact 94% artifact (/srv/data/projects/asb-state-coordinator-v070). A distinct
+  v0.7.0-based worktree was created through handoffctl at
+  asb-state-coordinator-v070-ar1857-coverage-repair; release/reclaim is needed because bind-worktree
+  rejects replacing non-empty legacy metadata. No wrong-tree tests added.

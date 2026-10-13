@@ -2036,11 +2036,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1857-coverage-repair-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Restore the full-gate coverage floor after the terminal 94&#37; observation. |
@@ -2946,7 +2946,7 @@ flowchart LR
         AR_1854["AR-1854 - Planned"]:::status_planned
         AR_1855["AR-1855 - Done"]:::status_done
         AR_1856["AR-1856 - Done"]:::status_done
-        AR_1857["AR-1857 - In progress"]:::status_in_progress
+        AR_1857["AR-1857 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
