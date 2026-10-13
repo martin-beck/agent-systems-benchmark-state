@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T13:11:59+00:00",
   "depends_on": [],
   "id": "AR-1849",
-  "next_action": "Claim the repair, add workflow-wide private TLC admission variables and contract tests, then publish exact-head CI evidence before requalifying AR-1841.",
+  "next_action": "Hold PR #144 unmerged pending corrected upstream v0.7.3 metadata and immutable ASB re-vendoring; retain workflow-only admission environment change.",
   "owner": "ar1849-formal-admission-env-luna",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T11:37:05+00:00",
+  "updated_at": "2026-10-13T12:04:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -146,3 +146,7 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 
 - 2026-10-13T11:37:05+00:00: Recorded command exit 0; command argv SHA-256
   99f4656875599a1086f0499220e6f74c47a388942e530b029a387af8ba3bc2c0.
+
+- 2026-10-13T12:04:28+00:00: Dependency blocker recorded: AR-0029 tag v0.7.3 metadata/runtime
+  mismatch prevents immutable vendor sync. Do not weaken vendor verification or alter vendored
+  files.
