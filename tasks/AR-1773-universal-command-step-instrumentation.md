@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T23:58:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -82,7 +82,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "asb_ar1773_runner_root_luna3",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -96,11 +96,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T21:59:48+00:00",
+  "updated_at": "2026-10-13T22:00:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -317,3 +317,9 @@ non-TTY compatibility.
 
 - 2026-10-13T21:59:48+00:00: Recorded command exit 1; command argv SHA-256
   1483b10f2b5682ea1f996c071c18fdc4d6afb55631f034d354b1692d74a756a7.
+
+- 2026-10-13T22:00:05+00:00: Runner repair qualification remains blocked: bound Bubblewrap root
+  still cannot resolve cargo (exact stderr bwrap: execvp cargo: No such file or directory). No
+  approved Cargo/toolchain, compiler/linker, complete workspace, identity-file, or network-fixture
+  mount was available to modify through this task envelope; no product source, AR-1293, or gate
+  changes made.
