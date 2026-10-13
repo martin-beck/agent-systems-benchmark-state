@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T17:04:53+00:00",
   "depends_on": [],
   "id": "AR-1849",
-  "next_action": "Full unittest gate passed 1,636/1,636. Coverage report on the terminal full-run artifact is 94% and fails the 95% threshold; preserve PR #145 unmerged and treat this as a separate pre-existing/full-gate coverage blocker requiring scoped follow-up before publication.",
+  "next_action": "Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94% versus required 95%. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication.",
   "owner": "ar1849-formal-admission-env-luna",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T15:04:53+00:00",
+  "updated_at": "2026-10-13T15:05:00+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -390,3 +390,10 @@ retain absolute-path and privacy boundaries, and add regression coverage.
   ec08a732692e8c9234f550bb9bc8ea1e10c6fe387cc172b73c5225d398e1d680.
 
 - 2026-10-13T15:04:53+00:00: Heartbeat by ar1849-formal-admission-env-luna.
+
+- 2026-10-13T15:05:00+00:00: Formal gate result: first portable-smoke invocation completed TLC (4
+  distinct states) but attest.py failed closed because TLC_MEMORY_MAX was absent. Rerun with
+  TLC_MEMORY_MAX=3G, TLC_SWAP_MAX=3G, private TLC runtime/work/queue/lock paths completed TLC and
+  attestation successfully. Full unittest terminal result is 1,636/1,636 OK in 205.914s; coverage
+  report is 19,785 statements at 94%, failing --fail-under=95. Focused workflow 6/6 and TLC runner
+  19/19 remain green. No formal gate/resource bound weakened.

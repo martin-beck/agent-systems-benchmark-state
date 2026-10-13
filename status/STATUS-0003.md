@@ -1932,7 +1932,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair workflow-wide private TLC admission environment for formal CI. |
-| Next action | Full unittest gate passed 1,636/1,636. Coverage report on the terminal full-run artifact is 94&#37; and fails the 95&#37; threshold; preserve PR #145 unmerged and treat this as a separate pre-existing/full-gate coverage blocker requiring scoped follow-up before publication. |
+| Next action | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 
 ### AR-1850 — Repair development ASB TUI interactive lifetime
 
