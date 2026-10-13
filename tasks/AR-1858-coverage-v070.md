@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T17:58:15+00:00",
   "depends_on": [],
   "id": "AR-1858",
-  "next_action": "Exact-worktree split test_campaign.py ran 15/15 OK, but coverage emitted no-data-collected; no coverage conclusion accepted. The handoffctl command post-reconcile also failed due unrelated expired AR-1853, now recorded as coordination blocker. Need parent to resolve AR-1853 state, then validate coverage collection and continue bounded split suites.",
+  "next_action": "Bounded split isolation is running from exact worktree. test_campaign.py 15/15 and issue_series_service_coverage.py 4/4 pass with absolute source; test_issue_series_handoffctl.py is currently hung in multiprocessing/resource-tracker path and will be classified at the 300s handoffctl bound. Do not accept partial coverage.",
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T15:58:54+00:00",
+  "updated_at": "2026-10-13T16:00:21+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -109,3 +109,8 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-13T15:58:54+00:00: Recorded command exit 0; command argv SHA-256
   eee7e6f4d5c48ab97b538729a460d3e415f88edb8a746c0906c49f7fa309199e.
+
+- 2026-10-13T16:00:21+00:00: Hang diagnostic at 16:00Z: exact-root test_issue_series_handoffctl.py
+  run exceeded 1 minute with child zombie PID 3893141 and live multiprocessing resource_tracker PID
+  3887425; parent process wchan jbd2_log_wait_commit. No coverage conclusion accepted. Bound is
+  300s; subsequent suite files are not started until terminal classification.
