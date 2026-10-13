@@ -27,6 +27,16 @@
         "predicate_id": "immutable-provenance",
         "recorded_task_revision": 16,
         "status": "pass"
+      },
+      {
+        "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "contract-test",
+        "evidence_digest": "sha256:1d3232c5908903e5fa89fa04a6ec4ef50309fcdd1c6b5bad19922ecba1dbd6f1",
+        "evidence_ref": "tests/test_handoffctl_vendor.py",
+        "predicate_id": "qualification-floor",
+        "recorded_task_revision": 17,
+        "status": "pass"
       }
     ]
   },
@@ -40,9 +50,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T18:05:41+00:00",
+  "updated_at": "2026-10-13T18:05:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -104,3 +114,6 @@ vendored Coordinator bytes or mutate AR-1826.
 
 - 2026-10-13T18:05:41+00:00: Accepted provenance-pinned resolution with no downstream immutable
   vendor-byte change.
+
+- 2026-10-13T18:05:42+00:00: Accepted exact candidate qualification with the unchanged full 95
+  percent coverage floor.
