@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair hosted formal TLC workspace permissions for the ASB state runner.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Hosted formal workspace permission repair",
-  "updated_at": "2026-10-13T10:03:26+00:00",
+  "updated_at": "2026-10-13T10:03:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1843-formal-workspace-repair"
 }
 ---
@@ -55,3 +55,6 @@ formal assertion, timeout, or resource-bound gate may be removed or weakened.
   797db10fe221c9904286e98287c1ead6ef3d6555b9087d739081325c72e2ef0c.
 
 - 2026-10-13T10:03:26+00:00: Heartbeat by ar1843-formal-workspace-repair-luna.
+
+- 2026-10-13T10:03:50+00:00: Recorded command exit 0; command argv SHA-256
+  6b6600eb9432102ee0920b8b3ba9bc9e22c585f8c59147fe2673c8ff364f59f0.
