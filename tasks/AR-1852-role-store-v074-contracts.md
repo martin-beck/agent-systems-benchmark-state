@@ -78,7 +78,7 @@
     "returncode": 1
   },
   "id": "AR-1852",
-  "next_action": "No safe v0.7.8 rebase: v0.7.8 changes lifecycle role admission from strict to advisory and replaces the v0.7.4 lock/digest wholesale. Preserve PR #148 head 7b46c6b076 unupdated; wait for a Coordinator release that retains strict role authorization or explicitly re-scope AR-1852, then rerun independent review and exact-head CI.",
+  "next_action": "Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner.",
   "owner": "ar1852-runner-repair-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
@@ -151,9 +151,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T22:23:32+00:00",
+  "updated_at": "2026-10-13T22:24:07+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -566,3 +566,11 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T22:23:32+00:00: Recorded command exit 1; command argv SHA-256
   b5e6f77be438be2102aff91bb048414f26e4ed0c05b6986e84f0c35806afc018.
+
+- 2026-10-13T22:24:07+00:00: New runner-root qualification 2026-10-14: exact PR source 7b46c6b076
+  ran from agent-systems-benchmark-state-ar-1852 with /srv/data/projects/asb-state-v078-dco/.venv
+  (Python 3.14.7, jsonschema 4.25.1). tests.test_roles passed 10/10. Direct unittest discovery ran
+  2132 tests in 259.349s: 8 failures and 6 errors, all outside role suite (coordination-lock
+  contention, pre-existing vendor/generated digest/workflow drift, AR-1793 fixture drift, SQLite
+  authority fixture, and subprocess timing). Attempted handoffctl run records sandbox blocker: bwrap
+  cannot exec /bin/true and cannot see external runner-root path. No product files changed.

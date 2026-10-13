@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1852 — Role-store v0.7.4 compatibility contracts](tasks/AR-1852-role-store-v074-contracts.md) | Align role-store authorization tests with Coordinator v0.7.4. | No safe v0.7.8 rebase: v0.7.8 changes lifecycle role admission from strict to advisory and replaces the v0.7.4 lock/digest wholesale. Preserve PR #148 head 7b46c6b076 unupdated; wait for a Coordinator release that retains strict role authorization or explicitly re-scope AR-1852, then rerun independent review and exact-head CI. | ar1852-runner-repair-luna |
+| P1 | [AR-1852 — Role-store v0.7.4 compatibility contracts](tasks/AR-1852-role-store-v074-contracts.md) | Align role-store authorization tests with Coordinator v0.7.4. | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv \(bwrap execvp ENOENT\), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. | ar1852-runner-repair-luna |
 | P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Obtain separate-account independent approval for PR #634 at exact head 6215f49dcb7cf8f8c786f34453fb8fe5af4c3295; then merge only with all required checks green and verify post-merge. | codex-asb-state-hygiene-luna4 |
 
 ## Open

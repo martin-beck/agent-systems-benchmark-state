@@ -1974,7 +1974,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align role-store authorization tests with Coordinator v0.7.4. |
-| Next action | No safe v0.7.8 rebase: v0.7.8 changes lifecycle role admission from strict to advisory and replaces the v0.7.4 lock/digest wholesale. Preserve PR #148 head 7b46c6b076 unupdated; wait for a Coordinator release that retains strict role authorization or explicitly re-scope AR-1852, then rerun independent review and exact-head CI. |
+| Next action | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. |
 
 ### AR-1853 — Complexity v0.7.4 compatibility contract
 
