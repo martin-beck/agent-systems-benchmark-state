@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T16:00:53+00:00",
   "depends_on": [],
   "id": "AR-1850",
-  "next_action": "Wait for credential-free and emulated reruns plus remaining checks; do not merge unless every required check is green. If either unrelated failure repeats, stop and assign focused repair ARs.",
+  "next_action": "Stop AR-1850 merge pending Coordinator assignment/repair of repeated source_checkout and goose CI failures; preserve PR #631 and all exact-head evidence.",
   "observed_branch": "feature/ar1850-development-tui-interactive-lifetime",
   "observed_dirty": 0,
   "observed_head": "671f898b6a859655952a009b9a4468e685d74013",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:12:03+00:00",
+  "updated_at": "2026-10-13T14:12:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -82,3 +82,11 @@ cross-repository qualification.
   goose::tests::diagnostic_and_symlink_fail_closed: 220 passed, 1 failed; expected unwrap_err but
   received typed failed outcome exit 127. No AR-1850/TUI path involved. Reran unchanged portability
   workflow; rerun is active.
+
+- 2026-10-13T14:12:21+00:00: Required checks now show unrelated repeated failures: credential-free
+  initial run 38410493915 had source_checkout collision/poison failures; policy/coverage 38410495133
+  independently failed exact_fixture_checkout_is_returned_and_cleanup_is_explicit (458 passed, 1
+  failed, Unavailable); emulated aarch64 38410493750 failed unrelated goose
+  diagnostic_and_symlink_fail_closed (220 passed, 1 failed). Exact TUI PTY run 38410494755 passed
+  and independent review approved. Do not alter AR-1850 product scope or merge; focused repair ARs
+  are required for repeated non-TUI failures.
