@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-workflow-coordinator/schema/campaign-projection.schema.json",
+  "title": "Read-only campaign projection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "observed_at", "tasks", "summary"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "observed_at": {"$ref": "#/$defs/timestamp"},
+    "tasks": {"type": "array", "maxItems": 10000, "items": {"$ref": "#/$defs/card"}},
+    "summary": {"$ref": "#/$defs/summary"}
+  },
+  "$defs": {
+    "taskId": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
+    "timestamp": {"type": "string", "format": "date-time", "maxLength": 64, "pattern": "^[0-9]{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12][0-9]|3[01])T(?:[01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](?:\\.[0-9]{1,9})?(?:Z|[+-](?:0[0-9]|1[0-4]):[0-5][0-9])$"},
+    "status": {"enum": ["in_progress", "open", "blocked", "planned", "future", "done", "cancelled", "superseded"]},
+    "worker": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false, "required": ["state"], "properties": {"state": {"const": "unassigned"}}},
+        {"type": "object", "additionalProperties": false, "required": ["owner", "state"], "properties": {"owner": {"type": "string", "minLength": 1, "maxLength": 128}, "state": {"const": "unfenced"}}},
+        {"type": "object", "additionalProperties": false, "required": ["owner", "claim_expires", "state"], "properties": {"owner": {"type": "string", "minLength": 1, "maxLength": 128}, "claim_expires": {"$ref": "#/$defs/timestamp"}, "state": {"enum": ["active", "expired"]}}}
+      ]
+    },
+    "dependency": {"type": "object", "additionalProperties": false, "required": ["task", "status"], "properties": {"task": {"$ref": "#/$defs/taskId"}, "status": {"oneOf": [{"$ref": "#/$defs/status"}, {"const": "missing"}]}}},
+    "blocker": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false, "required": ["kind", "task", "status"], "properties": {"kind": {"const": "dependency"}, "task": {"$ref": "#/$defs/taskId"}, "status": {"oneOf": [{"$ref": "#/$defs/status"}, {"const": "missing"}]}}},
+        {"type": "object", "additionalProperties": false, "required": ["kind"], "properties": {"kind": {"const": "task-status"}}},
+        {"type": "object", "additionalProperties": false, "required": ["kind", "state"], "properties": {"kind": {"const": "execution-claim"}, "state": {"enum": ["live", "expired"]}}},
+        {"type": "object", "additionalProperties": false, "required": ["kind", "state"], "properties": {"kind": {"enum": ["retry-circuit", "retry-claim"]}, "state": {"enum": ["held", "live"]}}}
+      ]
+    },
+    "attempt": {"type": "object", "additionalProperties": false, "required": ["revision", "recorded_at", "status", "trigger", "state"], "properties": {"revision": {"type": "integer", "minimum": 1}, "recorded_at": {"$ref": "#/$defs/timestamp"}, "status": {"type": "string", "minLength": 1, "maxLength": 64}, "trigger": {"enum": ["update", "run", "pause"]}, "state": {"enum": ["current", "stale"]}}},
+    "session": {"type": "object", "additionalProperties": false, "required": ["current_session", "stale_sessions"], "properties": {"current_session": {"type": "boolean"}, "stale_sessions": {"type": "integer", "minimum": 0, "maximum": 10000}}},
+    "recovery": {"type": "object", "additionalProperties": false, "required": ["kind"], "properties": {"kind": {"enum": ["none", "recover-execution-claim", "wait-for-execution-claim", "recover-expired-claim", "resume-or-unblock", "record-current-session"]}}},
+    "outcome": {"oneOf": [{"type": "null"}, {"type": "object", "additionalProperties": false, "required": ["status", "acceptance"], "properties": {"status": {"enum": ["done", "cancelled", "superseded"]}, "acceptance": {"enum": ["pass", "absent"]}}}]},
+    "noneRecovery": {"type": "object", "additionalProperties": false, "required": ["kind"], "properties": {"kind": {"const": "none"}}},
+    "terminalOutcome": {"type": "object", "additionalProperties": false, "required": ["status", "acceptance"], "properties": {"status": {"enum": ["done", "cancelled", "superseded"]}, "acceptance": {"enum": ["pass", "absent"]}}},
+    "card": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "priority", "status", "revision", "worker", "dependencies", "blockers", "attempts", "session", "recovery", "outcome"],
+      "properties": {"id": {"$ref": "#/$defs/taskId"}, "title": {"type": "string", "minLength": 1, "maxLength": 240}, "priority": {"enum": ["P0", "P1", "P2", "P3", "P4"]}, "status": {"$ref": "#/$defs/status"}, "revision": {"type": "integer", "minimum": 1}, "worker": {"$ref": "#/$defs/worker"}, "dependencies": {"type": "array", "maxItems": 2048, "items": {"$ref": "#/$defs/dependency"}}, "blockers": {"type": "array", "maxItems": 4096, "items": {"$ref": "#/$defs/blocker"}}, "attempts": {"type": "array", "maxItems": 10000, "items": {"$ref": "#/$defs/attempt"}}, "session": {"$ref": "#/$defs/session"}, "recovery": {"$ref": "#/$defs/recovery"}, "outcome": {"$ref": "#/$defs/outcome"}},
+      "allOf": [
+        {"if": {"properties": {"status": {"const": "done"}}}, "then": {"properties": {"outcome": {"allOf": [{"$ref": "#/$defs/terminalOutcome"}, {"properties": {"status": {"const": "done"}}}]}, "recovery": {"$ref": "#/$defs/noneRecovery"}}}},
+        {"if": {"properties": {"status": {"const": "cancelled"}}}, "then": {"properties": {"outcome": {"allOf": [{"$ref": "#/$defs/terminalOutcome"}, {"properties": {"status": {"const": "cancelled"}}}]}, "recovery": {"$ref": "#/$defs/noneRecovery"}}}},
+        {"if": {"properties": {"status": {"const": "superseded"}}}, "then": {"properties": {"outcome": {"allOf": [{"$ref": "#/$defs/terminalOutcome"}, {"properties": {"status": {"const": "superseded"}}}]}, "recovery": {"$ref": "#/$defs/noneRecovery"}}}},
+        {"if": {"properties": {"status": {"enum": ["in_progress", "open", "blocked", "planned", "future"]}}}, "then": {"properties": {"outcome": {"type": "null"}}}}
+      ]
+    },
+    "byStatus": {"type": "object", "additionalProperties": false, "properties": {"in_progress": {"type": "integer", "minimum": 0}, "open": {"type": "integer", "minimum": 0}, "blocked": {"type": "integer", "minimum": 0}, "planned": {"type": "integer", "minimum": 0}, "future": {"type": "integer", "minimum": 0}, "done": {"type": "integer", "minimum": 0}, "cancelled": {"type": "integer", "minimum": 0}, "superseded": {"type": "integer", "minimum": 0}}},
+    "summary": {"type": "object", "additionalProperties": false, "required": ["tasks", "sessions", "by_status", "recovery_required"], "properties": {"tasks": {"type": "integer", "minimum": 0, "maximum": 10000}, "sessions": {"type": "integer", "minimum": 0, "maximum": 100000}, "by_status": {"$ref": "#/$defs/byStatus"}, "recovery_required": {"type": "integer", "minimum": 0, "maximum": 10000}}}
+  }
+}

@@ -1,0 +1,75 @@
+{
+    "schema_version": 1,
+    "source_model": "Handoffctl.tla",
+    "source_configuration": "Handoffctl.cfg",
+    "reduced_configuration": "HandoffctlLiveness.cfg",
+    "retained": {
+        "constants": {"processes": 1, "tasks": 2, "actors": 1, "max_revision": 1},
+        "invariants": [
+            "TypeOK",
+            "OwnershipCoherence",
+            "BlockedProvenance",
+            "HierarchyCoherent",
+            "UniqueActiveOwner",
+            "LockSafety",
+            "RevisionAccounting",
+            "ProjectionAtomicity",
+            "SpecBindingIsMonotonic",
+            "AcceptedSpecBindIsBound",
+            "WorktreeBindingIsMonotonic",
+            "AcceptedWorktreeBindIsBound",
+            "PartialWorktreeKeyIsPreserved",
+            "UniqueActiveWorktreeIdentity"
+        ],
+        "properties": ["EventualCompletion"]
+    },
+    "omitted_dimensions": [
+        {
+            "dimension": "second lifecycle process and interleavings",
+            "reduction": "one lifecycle process",
+            "coverage": ["full-exhaustive:HandoffctlSlice-*", "HandoffctlLocks"]
+        },
+        {
+            "dimension": "second independent actor and competing expired claims",
+            "reduction": "one actor",
+            "coverage": ["HandoffctlRecovery"]
+        },
+        {
+            "dimension": "revision retry depth",
+            "reduction": "MaxRevision = 1",
+            "coverage": ["HandoffctlStorage"],
+            "source_only_coverage": ["tests/test_sqlite_storage.py"]
+        },
+        {
+            "dimension": "publication ambiguity and retry outcomes",
+            "reduction": "not represented in the lifecycle abstraction",
+            "coverage": ["HandoffctlPublication", "HandoffctlPublicationFast"]
+        },
+        {
+            "dimension": "repository lock reader and writer contention",
+            "reduction": "not represented in the lifecycle abstraction",
+            "coverage": ["HandoffctlLocks"],
+            "source_only_coverage": ["tests/test_lock_domain.py"]
+        },
+        {
+            "dimension": "Git and SQLite backend transaction paths",
+            "reduction": "abstract revision transition only",
+            "coverage": ["HandoffctlStorage"],
+            "source_only_coverage": [
+                "tests/test_git_authority_adapter.py",
+                "tests/test_sqlite_storage.py"
+            ]
+        },
+        {
+            "dimension": "foreign project and worktree admission",
+            "reduction": "one in-model project and worktree identity",
+            "coverage": ["HandoffctlBinding"],
+            "source_only_coverage": ["tests/test_bind_spec.py"]
+        }
+    ],
+    "non_claims": [
+        "The mapping is a bounded coverage argument, not implementation refinement proof.",
+        "The reduced tier does not explore the complete two-process lifecycle cross-product.",
+        "The advisory full-exhaustive tier is supplementary evidence and never an external progression gate."
+    ]
+}

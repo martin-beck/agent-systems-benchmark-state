@@ -4,17 +4,55 @@
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [],
+  "evidence_ledger": {
+    "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+    "candidate_ref": "coordinator.vendor.json",
+    "steps": [
+      {
+        "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "vendor-lifecycle-alignment",
+        "recorded_task_revision": 24,
+        "status": "pass"
+      },
+      {
+        "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "contract-test",
+        "evidence_digest": "sha256:1d3232c5908903e5fa89fa04a6ec4ef50309fcdd1c6b5bad19922ecba1dbd6f1",
+        "evidence_ref": "tests/test_handoffctl_vendor.py",
+        "predicate_id": "quality-floor",
+        "recorded_task_revision": 25,
+        "status": "pass"
+      },
+      {
+        "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "contract-test",
+        "evidence_digest": "sha256:5d54c1b2e37e1ec4757cd4c4928b69d4693590d10827b2359189d5bc73e1de1b",
+        "evidence_ref": "tests/test_roles.py",
+        "predicate_id": "role-policy",
+        "recorded_task_revision": 26,
+        "status": "pass"
+      }
+    ]
+  },
   "id": "AR-1861",
-  "next_action": "Complete focused/full/formal/privacy gates on exact v0.7.8 development vendor; initial direct pytest lacked jsonschema, state venv run is in progress with failures to classify. Preserve AR-1826.",
+  "next_action": "Bind and accept the exact v0.7.8 vendor, quality, and advisory-role evidence, then release the verified adoption.",
   "owner": "",
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "spec_ref": "specs/AR-1861.json",
+  "spec_revision": 1,
+  "status": "done",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 19,
+  "task_revision": 27,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T18:35:31+00:00",
+  "updated_at": "2026-10-13T18:37:45+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -95,3 +133,25 @@ or mutate AR-1826 until the adopted repair is verified.
   AR-0111 eee7605, so it is not adoption evidence. Cleaned generated pyc only via handoffctl run;
   AR-1826 untouched. Route formal lifecycle compatibility to existing AR-1862; no publication or
   release.
+
+- 2026-10-13T18:37:34+00:00: Unblocked: exact v0.7.8 vendor manifest at f1f42d4 resolves the v0.5.1
+  lifecycle mismatch without downstream vendor mutation.
+
+- 2026-10-13T18:37:35+00:00: Claimed by coord-reconcile-v078-r3.
+
+- 2026-10-13T18:37:39+00:00: Revalidated current-main blocked result against v0.7.8 at f1f42d4;
+  immutable vendor path is now exact.
+
+- 2026-10-13T18:37:40+00:00: Bound task spec specs/AR-1861.json revision 1.
+
+- 2026-10-13T18:37:40+00:00: Accepted exact v0.7.8 manifest after immutable vendor verification
+  confirmed lifecycle parity.
+
+- 2026-10-13T18:37:44+00:00: Accepted unchanged 95 percent full-suite quality floor with vendor
+  contract coverage.
+
+- 2026-10-13T18:37:45+00:00: Accepted advisory-only role policy through lifecycle and doctor
+  contract coverage.
+
+- 2026-10-13T18:37:45+00:00: Completed exact v0.7.8 adoption after current-main reconciliation,
+  vendor verification, and unchanged 95 percent qualification.
