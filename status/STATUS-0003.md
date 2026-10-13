@@ -2086,7 +2086,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. |
-| Next action | Obtain independent review and exact-head CI for signed product repair; then merge and watch post-merge assurance before release. |
+| Next action | Obtain independent exact-head review and CI/publication evidence for product head 1f3c7f65ca; merge only after all required gates and post-merge assurance. |
 
 
 ## Dependency graph

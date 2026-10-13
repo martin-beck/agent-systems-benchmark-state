@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T18:56:43+00:00",
   "depends_on": [],
   "id": "AR-1860",
-  "next_action": "Obtain independent review and exact-head CI for signed product repair; then merge and watch post-merge assurance before release.",
+  "next_action": "Obtain independent exact-head review and CI/publication evidence for product head 1f3c7f65ca; merge only after all required gates and post-merge assurance.",
   "owner": "ar1857-coverage-repair-luna",
   "plan": "../plans/AR-1860-formal-work-root-adoption.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T17:04:43+00:00",
+  "updated_at": "2026-10-13T17:04:57+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1860-formal-work-root"
 }
 ---
@@ -75,3 +75,6 @@ coverage floor and all formal gates.
 
 - 2026-10-13T17:04:43+00:00: Recorded command exit 0; command argv SHA-256
   5101bcf96d946f412ead54be400cc738e6fe3381146adc613efebe8f9fe375bc.
+
+- 2026-10-13T17:04:57+00:00: Formal pr-publication gate passed terminally at exact product head
+  1f3c7f65ca; every checked TLC model reported no error, including Handoffctl and recovery models.
