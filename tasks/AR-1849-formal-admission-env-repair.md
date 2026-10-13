@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1849-formal-admission-env-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T14:39:43+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1849",
   "next_action": "Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI.",
-  "owner": "ar1849-formal-admission-env-luna",
+  "owner": "",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1849.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T13:16:34+00:00",
+  "updated_at": "2026-10-13T14:40:03+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -335,3 +335,8 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 
 - 2026-10-13T13:16:34+00:00: Recorded command exit 0; command argv SHA-256
   56e791bfc969e7e322c94a7d7ccba500dfd19a1e8b6736eeb9c7ed85b7825173.
+
+- 2026-10-13T14:40:03+00:00: Recovered expired claim formerly owned by
+  ar1849-formal-admission-env-luna. Coordinator recovery: lease expired at 2026-10-13T14:39:43Z; no
+  ar1849-formal-admission-env-luna process remains. Preserve all PR #145 and formal-gate evidence;
+  leave AR open for dependency-safe reassignment.
