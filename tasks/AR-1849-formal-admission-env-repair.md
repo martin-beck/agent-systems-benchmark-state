@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T12:04:28+00:00",
+  "updated_at": "2026-10-13T12:04:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -150,3 +150,6 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 - 2026-10-13T12:04:28+00:00: Dependency blocker recorded: AR-0029 tag v0.7.3 metadata/runtime
   mismatch prevents immutable vendor sync. Do not weaken vendor verification or alter vendored
   files.
+
+- 2026-10-13T12:04:59+00:00: Recorded command exit 0; command argv SHA-256
+  fa8b5b71edf3200d321ee3c09e348eccd55c38732142f7ba47f3a35c7d1b1356.
