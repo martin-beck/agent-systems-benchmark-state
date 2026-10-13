@@ -118,6 +118,41 @@ class ProductionUpgradeBindingTests(unittest.TestCase):
                         finalized INTEGER NOT NULL);
                     CREATE TABLE checkpoints(name TEXT PRIMARY KEY, revision INTEGER NOT NULL,
                         recorded_at TEXT NOT NULL);
+                    CREATE TABLE issue_series(
+                        repository TEXT NOT NULL,
+                        issue_number INTEGER NOT NULL CHECK(issue_number > 0),
+                        manifest_json TEXT NOT NULL CHECK(json_valid(manifest_json)),
+                        manifest_digest TEXT NOT NULL CHECK(length(manifest_digest)=71),
+                        PRIMARY KEY(repository, issue_number)
+                    ) STRICT;
+                    CREATE TABLE issue_series_members(
+                        repository TEXT NOT NULL, issue_number INTEGER NOT NULL,
+                        task_id TEXT NOT NULL REFERENCES tasks(id) ON DELETE CASCADE,
+                        member_id TEXT NOT NULL,
+                        PRIMARY KEY(repository, issue_number, task_id),
+                        UNIQUE(repository, issue_number, member_id),
+                        FOREIGN KEY(repository, issue_number)
+                            REFERENCES issue_series(repository, issue_number) ON DELETE CASCADE
+                    ) STRICT;
+                    CREATE TABLE issue_series_publications(
+                        repository TEXT NOT NULL,
+                        issue_number INTEGER NOT NULL CHECK(issue_number > 0),
+                        manifest_digest TEXT NOT NULL CHECK(length(manifest_digest)=71),
+                        publication_key TEXT NOT NULL CHECK(length(publication_key)=64),
+                        status TEXT NOT NULL CHECK(status IN (
+                            'published','already_published','dry_run','deferred_unavailable',
+                            'deferred_unauthorized','deferred_timeout','deferred_conflict',
+                            'deferred_wrong_identity','deferred_closed','deferred_moved','ambiguous')),
+                        comment_id TEXT CHECK(
+                            comment_id IS NULL OR (length(comment_id) BETWEEN 1 AND 128)
+                        ),
+                        recorded_at TEXT NOT NULL,
+                        PRIMARY KEY(repository, issue_number, manifest_digest),
+                        UNIQUE(publication_key),
+                        FOREIGN KEY(repository, issue_number)
+                            REFERENCES issue_series(repository, issue_number) ON DELETE CASCADE,
+                        CHECK((status IN ('published','already_published')) OR comment_id IS NULL)
+                    ) STRICT;
                     INSERT INTO metadata(key, value) VALUES
                         ('schema_version', '1'), ('backend', 'sqlite'),
                         ('project_id', 'placeholder'),

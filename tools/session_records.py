@@ -49,16 +49,35 @@ def _canonical(value: object) -> bytes:
     return json.dumps(value, sort_keys=True, separators=(",", ":")).encode()
 
 
+def _ledger_artifact_refs(ledger: object) -> list[str]:
+    if not isinstance(ledger, dict):
+        return []
+    refs = []
+    candidate = ledger.get("candidate_ref")
+    if isinstance(candidate, str) and candidate:
+        refs.append(f"candidate:{candidate}")
+    refs.extend(
+        f"evidence:{step['evidence_ref']}"
+        for step in ledger.get("steps", [])
+        if isinstance(step, dict) and isinstance(step.get("evidence_ref"), str)
+    )
+    return refs
+
+
 def _artifact_refs(meta: Meta) -> list[str]:
     refs: list[str] = []
     spec_ref = meta.get("spec_ref")
     if isinstance(spec_ref, str) and spec_ref:
         refs.append(f"spec:{spec_ref}")
+    envelope_ref = meta.get("execution_envelope_ref")
+    if isinstance(envelope_ref, str) and envelope_ref:
+        refs.append(f"envelope:{envelope_ref}")
     acceptance = meta.get("spec_acceptance")
     if isinstance(acceptance, dict):
         evidence_ref = acceptance.get("evidence_ref")
         if isinstance(evidence_ref, str) and evidence_ref:
             refs.append(f"evidence:{evidence_ref}")
+    refs.extend(_ledger_artifact_refs(meta.get("evidence_ledger")))
     checkpoint = meta.get("checkpoint_commit")
     if (
         isinstance(checkpoint, str)
@@ -66,7 +85,7 @@ def _artifact_refs(meta: Meta) -> list[str]:
         and all(character in "0123456789abcdef" for character in checkpoint)
     ):
         refs.append(f"git:{checkpoint}")
-    return refs
+    return list(dict.fromkeys(refs))[:8]
 
 
 def build_session_record(meta: Meta, trigger: str, recorded_at: str) -> Meta:
@@ -79,6 +98,9 @@ def build_session_record(meta: Meta, trigger: str, recorded_at: str) -> Meta:
         "worktree_key": meta.get("worktree_key", ""),
         "spec_ref": meta.get("spec_ref", ""),
         "spec_revision": meta.get("spec_revision", 0),
+        "execution_envelope_ref": meta.get("execution_envelope_ref", ""),
+        "execution_envelope_revision": meta.get("execution_envelope_revision", 0),
+        "execution_envelope_digest": meta.get("execution_envelope_digest", ""),
     }
     record: Meta = {
         "schema_version": SESSION_SCHEMA_VERSION,

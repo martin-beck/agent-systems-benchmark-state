@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1861.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "vendor-lifecycle-alignment",
+      "description": "The v0.7.8 Coordinator manifest pins f1f42d448c89e73933fe1dbc4b85de68c87e72ef and the downstream vendor verifier accepts its runtime and formal lifecycle inventory."
+    },
+    {
+      "id": "quality-floor",
+      "description": "The merged downstream full branch-aware suite passes its unchanged 95% coverage floor."
+    },
+    {
+      "id": "role-policy",
+      "description": "Coordinator role metadata is advisory only and cannot block lifecycle progress or doctor health."
+    }
+  ],
+  "definition_of_done": [
+    "The exact v0.7.8 Coordinator release is vendor-verified in the ASB state repository.",
+    "Generated views, schema validation, static checks, and the unchanged 95% full coverage gate pass on the exact candidate.",
+    "The stale formal-lifecycle block is reconciled without modifying immutable vendored bytes or AR-1826."
+  ],
+  "inputs": [
+    {
+      "id": "coordinator-v078",
+      "description": "Unsigned Coordinator v0.7.8 release at f1f42d448c89e73933fe1dbc4b85de68c87e72ef."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "verified-adoption",
+      "description": "A digest-pinned Coordinator v0.7.8 snapshot with passing lifecycle, policy, and full-state qualification."
+    }
+  ],
+  "allowed_tools": ["git", "python", "uv", "tools/handoffctl", "tools/handoffctl_vendor.py"],
+  "forbidden_tools": ["threshold-lowering", "test-skipping", "vendor-byte-edit", "history-rewrite"],
+  "required_evidence_classes": ["mechanical", "contract-test"],
+  "gates": [
+    {
+      "id": "vendor-verification",
+      "description": "The immutable manifest verifier accepts every declared vendor file and lifecycle invariant."
+    },
+    {
+      "id": "full-qualification",
+      "description": "The exact head passes static/schema/generated-view checks and the unchanged full coverage gate."
+    }
+  ]
+}
