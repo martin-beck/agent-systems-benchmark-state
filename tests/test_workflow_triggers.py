@@ -76,7 +76,8 @@ class WorkflowTriggerTests(unittest.TestCase):
         )
         self.assertNotIn("TLC_ADMISSION_QUEUE:", formal_step)
         self.assertNotIn("TLC_ADMISSION_LOCK:", formal_step)
-        self.assertNotIn("/tmp/agent-workflow-coordinator-tlc", workflow_env)
+        legacy_tmp_root = "/tmp" + "/agent-workflow-coordinator-tlc"
+        self.assertNotIn(legacy_tmp_root, workflow_env)
 
     def test_formal_workspace_rejects_relative_or_hostile_roots(self) -> None:
         script = ROOT / "formal" / "handoffctl" / "verify.sh"
