@@ -463,6 +463,59 @@ class ResumeCardTests(unittest.TestCase):
             self.assertEqual("existing", lock.read_text())
             self.assertFalse(trace.exists())
 
+    def test_snapshot_retries_an_unstable_missing_lock_then_fails_closed(self) -> None:
+        lock = Path("/does/not/matter")
+        with (
+            patch.object(resume_card_runtime.os, "open", side_effect=FileNotFoundError),
+            patch.object(Path, "exists", return_value=True),
+            self.assertRaisesRegex(RuntimeError, "snapshot changed"),
+        ):
+            resume_card_runtime.read_only_snapshot(
+                lambda: "card",
+                lambda: lock,
+                1.0,
+                0.01,
+                handoffctl.LockTimeoutError,
+            )
+
+    def test_snapshot_times_out_without_mutating_the_existing_lock(self) -> None:
+        with TemporaryDirectory() as directory:
+            lock = Path(directory) / "state.lock"
+            lock.write_text("existing", encoding="utf-8")
+
+            def flock(_descriptor: int, operation: int) -> None:
+                if operation & resume_card_runtime.fcntl.LOCK_NB:
+                    raise BlockingIOError
+
+            with (
+                patch.object(resume_card_runtime.fcntl, "flock", side_effect=flock),
+                patch.object(resume_card_runtime.time, "monotonic", side_effect=(0.0, 1.0)),
+                self.assertRaisesRegex(handoffctl.LockTimeoutError, "LOCK_TIMEOUT"),
+            ):
+                resume_card_runtime.read_only_snapshot(
+                    lambda: "card",
+                    lambda: lock,
+                    1.0,
+                    0.01,
+                    handoffctl.LockTimeoutError,
+                )
+            self.assertEqual("existing", lock.read_text(encoding="utf-8"))
+
+    def test_snapshot_errors_deduplicates_duplicate_ids_and_evidence_failures(self) -> None:
+        meta = task()
+        errors = resume_card_runtime.snapshot_errors(
+            [(Path("one"), meta, ""), (Path("two"), meta, "")],
+            handoffctl.DEFAULT_EVIDENCE_POLICY,
+            basic_task_errors=lambda *_: [],
+            projection_errors=lambda *_: [],
+            private_text_errors=lambda *_: [],
+            evidence_errors=lambda *_: (_ for _ in ()).throw(ValueError("bad evidence")),
+            graph_errors=lambda _: [],
+            hierarchy_errors=lambda _: [],
+            supersession_errors=lambda _: [],
+        )
+        self.assertEqual(["AR-0001: bad evidence", "duplicate AR-0001"], errors)
+
         parser = argparse.ArgumentParser()
         commands = parser.add_subparsers(dest="cmd", required=True)
         resume_card.add_command_parser(commands)
