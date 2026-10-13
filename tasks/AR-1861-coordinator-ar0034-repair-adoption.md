@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1861-coordinator-adoption",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T20:27:08+00:00",
+  "claim_expires": "2026-10-13T20:33:25+00:00",
   "depends_on": [],
   "id": "AR-1861",
   "next_action": "Complete focused/full/formal/privacy gates on exact v0.7.8 development vendor; initial direct pytest lacked jsonschema, state venv run is in progress with failures to classify. Preserve AR-1826.",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T18:27:57+00:00",
+  "updated_at": "2026-10-13T18:33:25+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -76,3 +76,5 @@ or mutate AR-1826 until the adopted repair is verified.
 
 - 2026-10-13T18:27:57+00:00: Recorded command exit 0; command argv SHA-256
   f226356f61a774768aa19dcb90bb381ebb51819b0458bdd4a84ea8e0f6f81287.
+
+- 2026-10-13T18:33:25+00:00: Heartbeat by ar1861-resume-luna.
