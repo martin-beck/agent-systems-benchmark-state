@@ -25,6 +25,104 @@ def record(
 
 
 class AssumptionRevalidationCoverageTests(unittest.TestCase):
+    def test_validation_helpers_reject_invalid_kinds_bindings_and_identities(self) -> None:
+        with self.assertRaisesRegex(ValueError, "identity"):
+            assumptions._record("unknown", "check", "dependency", True, {}, 1, "")
+        for kind, binding in (
+            ("base", {"head": "not-a-head"}),
+            ("dependency", {"task": "AR-x", "task_revision": 0}),
+            ("observation", {"ref": "../escape", "digest": "sha256:" + "0" * 64}),
+            ("unknown", {}),
+        ):
+            with self.subTest(kind=kind), self.assertRaisesRegex(ValueError, "binding|kind"):
+                assumptions._validate_binding(kind, binding)
+        with self.assertRaisesRegex(ValueError, "fields"):
+            assumptions._record_fields([])
+
+    def test_ledger_rejects_duplicate_invalid_followups_and_disposed_changes(self) -> None:
+        first = record()
+        duplicate = assumptions._record(
+            "declare",
+            "check",
+            "dependency",
+            True,
+            {"task": "AR-0002", "task_revision": 2},
+            2,
+            str(first["digest"]),
+        )
+        missing = assumptions._record(
+            "revalidate",
+            "missing",
+            "dependency",
+            True,
+            {"task": "AR-0002", "task_revision": 2},
+            1,
+            "",
+        )
+        disposed = assumptions._record(
+            "dispose",
+            "check",
+            "dependency",
+            True,
+            {"task": "AR-0002", "task_revision": 2},
+            2,
+            str(first["digest"]),
+            "replaced",
+        )
+        changed_after_dispose = assumptions._record(
+            "revalidate",
+            "check",
+            "dependency",
+            True,
+            {"task": "AR-0002", "task_revision": 3},
+            3,
+            str(disposed["digest"]),
+        )
+        for history, message in (
+            ([first, duplicate], "more than once"),
+            ([missing], "follow-up"),
+            ([first, disposed, changed_after_dispose], "disposed"),
+        ):
+            with self.subTest(message=message), self.assertRaisesRegex(ValueError, message):
+                assumptions.records({"assumption_revalidation": history})
+
+    def test_apply_rejects_record_limit_and_invalid_disposition_before_mutation(self) -> None:
+        meta: dict[str, object] = {
+            "id": "AR-0001",
+            "owner": "worker",
+            "status": "in_progress",
+            "task_revision": 1,
+        }
+        args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker",
+            expected_revision=1,
+            assumption_action="declare",
+            assumption_id="next",
+            kind="dependency",
+            reference="AR-0002",
+            material=True,
+            reason="",
+        )
+        with (
+            patch.object(assumptions, "records", return_value=[record()] * 64),
+            self.assertRaisesRegex(RuntimeError, "bounded record limit"),
+        ):
+            assumptions.apply(Path(), Path(), args, meta, [])
+        meta["assumption_revalidation"] = [record()]
+        args.assumption_action = "dispose"
+        args.assumption_id = "check"
+        args.kind = None
+        args.material = None
+        with self.assertRaisesRegex(RuntimeError, "disposition requires a reason"):
+            assumptions.apply(
+                Path(),
+                Path(),
+                args,
+                meta,
+                [{"id": "AR-0002", "task_revision": 1}],
+            )
+
     def test_owner_and_followup_fences_reject_policy_drift(self) -> None:
         meta: dict[str, object] = {
             "id": "AR-0001",
@@ -141,3 +239,28 @@ class AssumptionRevalidationCoverageTests(unittest.TestCase):
             broken = record(binding={"task": "AR-0002", "task_revision": 0})
             with self.assertRaisesRegex(ValueError, "binding"):
                 assumptions.current_binding(root, root, meta, tasks, broken)
+
+    def test_admission_reports_lookup_errors_and_ignores_disposed_records(self) -> None:
+        invalid_base = assumptions._record(
+            "declare", "base", "base", True, {"head": "0" * 40}, 1, ""
+        )
+        meta: dict[str, object] = {
+            "worktree_key": "missing",
+            "assumption_revalidation": [invalid_base],
+        }
+        self.assertIn(
+            "ASSUMPTION_REVALIDATION_REQUIRED: assumption base worktree is unavailable",
+            assumptions.admission_error(Path(), Path(), meta, []),
+        )
+        disposed = assumptions._record(
+            "dispose",
+            "base",
+            "base",
+            True,
+            {"head": "0" * 40},
+            2,
+            str(invalid_base["digest"]),
+            "no longer material",
+        )
+        meta["assumption_revalidation"] = [invalid_base, disposed]
+        self.assertIsNone(assumptions.admission_error(Path(), Path(), meta, []))
