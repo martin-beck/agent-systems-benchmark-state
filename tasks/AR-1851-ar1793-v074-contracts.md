@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1851-ar1793-v074-contracts",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T17:08:52+00:00",
   "depends_on": [],
   "id": "AR-1851",
   "next_action": "Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification.",
-  "owner": "",
+  "owner": "ar1851-ar1793-v074-luna",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1851.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:41:12+00:00",
+  "updated_at": "2026-10-13T15:08:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -113,3 +113,5 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
   SQLite/lock-domain errors). Next action: obtain fresh independent review and rerun terminal
   strict/formal CI at exact head only after cross-repair failures are resolved; merge only when all
   required checks are green, then perform post-merge verification.
+
+- 2026-10-13T15:08:52+00:00: Claimed by ar1851-ar1793-v074-luna.
