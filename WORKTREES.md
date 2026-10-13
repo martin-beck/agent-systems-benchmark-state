@@ -55,8 +55,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 825, ahead 136 |
 | `agent-systems-benchmark-ar-1652-record-replay` | `repair/ar-1652-record-replay` | `ab0a791b05d6` | 0 | behind 33, ahead 0 |
 | `agent-systems-benchmark-ar-1686` | `qualification/ar-1686` | `93d75e28a758` | 0 | behind 22, ahead 0 |
-| `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `f78a1006202d` | 1 | behind 74, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/.runner/` |
+| `agent-systems-benchmark-ar-1773-universal-command-step-instrumentation` | `feature/ar-1773-universal-command-step-instrumentation` | `f78a1006202d` | 0 | behind 74, ahead 0 |
 | `agent-systems-benchmark-ar-1775-configurable-output-router-and-levels` | `feature/ar-1775-configurable-output-router-and-levels` | `67ddb5221114` | 0 | behind 14, ahead 0 |
 | `agent-systems-benchmark-ar-1779-default-usable-tool-install-command` | `repair/ar-1779-source-fallback-linear4` | `80060a79e716` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-ar-1797-cli2key-live-runtime-wiring` | `DETACHED` | `da0cbe0848a1` | 0 | behind 11, ahead 0 |
@@ -293,6 +292,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1825-source-to-executable-adapter-runtime-contract` | `feature/ar-1825-source-to-executable-adapter-runtime-contract` | `630d380866e4` | 0 | behind 24, ahead 0 |
 | `agent-systems-benchmark-ar-1835-authenticated-control-live-isolation-repair` | `feature/ar-1835-authenticated-control-live-isolation-repair` | `06565d3de95a` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1839` | `codex/ar-1839-cross-process-fixture` | `46ac642c40ce` | 0 | behind 7, ahead 1 |
+| `agent-systems-benchmark-ar-1863-control-diagnostic-catalog` | `codex/ar-1863-control-diagnostic-catalog` | `870331be533e` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs` |
 | `ar1826-review.IL8AVJ` | `DETACHED` | `ecf3ed20fa15` | 0 | behind 7, ahead 3 |
 | `ar1850-main-verify` | `DETACHED` | `870331be533e` | 0 | behind 0, ahead 0 |
 | `asb-pr307-review-d0e6a28a` | `DETACHED` | `d0e6a28a81b4` | 0 | behind 4, ahead 0 |
