@@ -2114,7 +2114,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption. |
-| Next action | Promote after verifying AR-1861&#x27;s failed-closed evidence, then align the downstream formal lifecycle runtime/model inventory with the exact upstream AR-0034 vendor contract without weakening gates. |
+| Next action | Independently review signed product commit 7e5c06775a, run exact vendor/full state gates and CI, then merge; do not touch AR-1826 before adoption verification. |
 
 
 ## Dependency graph
@@ -5023,3 +5023,6 @@ flowchart LR
     classDef status_future fill:#455a64,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
+```
+
