@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Define explicit setup configuration and plan-binding contract",
-  "updated_at": "2026-10-13T18:51:07+00:00",
+  "updated_at": "2026-10-13T18:51:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1826-explicit-setup-config-contract"
 }
 ---
@@ -198,3 +198,12 @@ and compatibility contract on which the remaining ARs depend.
 
 - 2026-10-13T18:51:07+00:00: Recorded command exit 0; command argv SHA-256
   fa8b5b71edf3200d321ee3c09e348eccd55c38732142f7ba47f3a35c7d1b1356.
+
+- 2026-10-13T18:51:19+00:00: Fresh blocker verification 2026-10-13: AR-1860 is complete but is
+  formal work-root adoption only and does not provide the legacy-binding repair. Exact ASB main
+  9021691fd6 still vendors Coordinator v0.5.1; bind-worktree admission rejects retained worktree_key
+  agent-systems-benchmark-ar-1826-explicit-setup-config-contract when branch is empty, and no
+  supported clear/reset transition exists. AR-1861 is the narrowly scoped coordinator-adoption path
+  but remains blocked on its vendor/formal compatibility failures. Product remains untouched; do not
+  claim/bind or requalify e9d95999 until an explicitly reviewed coordinator repair is merged and
+  adopted.
