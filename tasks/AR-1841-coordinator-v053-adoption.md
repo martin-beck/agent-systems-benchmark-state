@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T14:16:56+00:00",
+  "updated_at": "2026-10-13T14:17:10+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -458,3 +458,6 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
   vendor/review evidence and leave next action pointed at v0.7.4 compatibility integration.
 
 - 2026-10-13T14:16:56+00:00: Claimed by ar1841-v053-adoption-luna.
+
+- 2026-10-13T14:17:10+00:00: Recorded command exit 1; command argv SHA-256
+  a0123845e80a5bd65be5e0223d6b2eecd65332001d29de8a95e00167ce162f0c.
