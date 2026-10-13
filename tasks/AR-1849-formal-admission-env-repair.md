@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T12:57:04+00:00",
+  "updated_at": "2026-10-13T12:57:08+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -227,3 +227,6 @@ retain absolute-path and privacy boundaries, and add regression coverage.
   reported 9 failures and 3 errors, including stale v0.5.3 projection/fixture expectations against
   the exact v0.7.4 snapshot. Rebuild from current origin/main plus the exact v0.7.4 adoption and
   retain only the workflow-wide private TLC admission change; do not modify vendor files or merge.
+
+- 2026-10-13T12:57:08+00:00: Recorded command exit 0; command argv SHA-256
+  e200748f04c875734071fb30c2f8d76fa88e238c245ef72a7d4b0b33766e62bf.
