@@ -79,13 +79,13 @@
     "task_revision": 40
   },
   "execution_result": {
-    "argv_digest": "22fc19d872be75a975891ff0abd53f1c305974a409b50c49c5df5d842d033e81",
+    "argv_digest": "67288d5ad4b8a7bf37bf9c15675a5d01c091a5867e356369715d798fa6a7c106",
     "classification": "EXIT",
     "envelope_digest": "sha256:36af7d046d9ef15d3ed21b798ab488b01fd26a5d9ad86cc3a2af1f75907c69cb",
-    "execution_id": "10277ece53ee4651ae90b9455ccc9823",
-    "owner": "asb_ar1773_instrumentation_luna3",
-    "recorded_at": "2026-10-13T21:36:04+00:00",
-    "returncode": 1
+    "execution_id": "51fe01351abe4500a8dc390b9de8e74b",
+    "owner": "asb_ar1773_runner_repair_luna4",
+    "recorded_at": "2026-10-13T21:41:28+00:00",
+    "returncode": 0
   },
   "id": "AR-1773",
   "next_action": "Repair the handoffctl Bubblewrap Cargo toolchain mount (or provide an equivalent pinned-toolchain runner), then rerun the exact-head focused/full tests through handoffctl; no source repair is justified.",
@@ -108,9 +108,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T21:41:26+00:00",
+  "updated_at": "2026-10-13T21:41:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -252,3 +252,5 @@ non-TTY compatibility.
 - 2026-10-13T21:39:39+00:00: Heartbeat by asb_ar1773_runner_repair_luna4.
 
 - 2026-10-13T21:41:26+00:00: Reserved bound execution 51fe01351abe4500a8dc390b9de8e74b.
+
+- 2026-10-13T21:41:29+00:00: Recorded execution result 51fe01351abe4500a8dc390b9de8e74b.
