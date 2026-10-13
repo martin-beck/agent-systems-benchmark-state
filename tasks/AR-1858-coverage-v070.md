@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T18:20:35+00:00",
   "depends_on": [],
   "id": "AR-1858",
-  "next_action": "Full guarded exact-root suite is still live at ~6m, with forkserver child epoll and coverage process reported D-state jbd2_log_wait_commit. Preserve as bounded run; classify only at handoffctl terminal timeout/result. If timeout reproduces, isolate full-suite concurrency path by guarded test-file batches.",
+  "next_action": "Terminal full guarded run: 2337 tests in 432.002s, 3 failures in test_workflow_triggers formal workspace rejection (all variants expected rc64, observed rc1 because tlc2.TLC unavailable before validation). Coverage /tmp/ar1858-v070-guarded-full.coverage is 95% exactly. Preserve PR145/unmerged; do not release until formal environment failure is repaired or scoped.",
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:20:48+00:00",
+  "updated_at": "2026-10-13T16:21:28+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -222,3 +222,8 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-13T16:20:48+00:00: Recorded command exit 1; command argv SHA-256
   7a71473a144632d022e8b0013fe8748fec2326e89bd709714b5c92db06d83f1d.
+
+- 2026-10-13T16:21:28+00:00: Terminal evidence: handoffctl full-run command exited 1; 2337 tests, 3
+  failures, 432.002s. Failures: relative-tlc, ../hostile-tlc, relative/with space; stderr Java
+  ClassNotFoundException tlc2.TLC; rc1 instead of expected64. Coverage total 19785 statements, 830
+  missed, 7322 branches, 595 partial, 95%; threshold unchanged. No product changes or merge.
