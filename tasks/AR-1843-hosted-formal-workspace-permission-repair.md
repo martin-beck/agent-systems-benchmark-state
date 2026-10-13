@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T12:03:26+00:00",
   "depends_on": [],
   "id": "AR-1843",
-  "next_action": "Promote and claim; repair the hosted formal workflow workspace initialization so the gha-asb-state runner can create its per-run TLC workspace and attestation directory without weakening the formal gate, then rerun the exact-head formal workflow.",
+  "next_action": "Run exact-head hosted formal workflow after independent review; local full suite remains environment-limited because unittest discovery hangs in pre-existing test_git_backup concurrent collision and pytest is not a locked project dependency.",
   "owner": "ar1843-formal-workspace-repair-luna",
   "plan": "../plans/AR-1843-hosted-formal-workspace-permission-repair.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair hosted formal TLC workspace permissions for the ASB state runner.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Hosted formal workspace permission repair",
-  "updated_at": "2026-10-13T10:06:19+00:00",
+  "updated_at": "2026-10-13T10:07:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1843-formal-workspace-repair"
 }
 ---
@@ -97,3 +97,11 @@ formal assertion, timeout, or resource-bound gate may be removed or weakened.
 
 - 2026-10-13T10:06:19+00:00: Recorded command exit 1; command argv SHA-256
   dc48d8ba5b8a8ab562f4c5e486907dc015748be86393e77d059c260c2ca15899.
+
+- 2026-10-13T10:07:56+00:00: Focused workflow/vendor tests pass: 17 tests and 25 subtests. bash -n
+  passes. Local formal pr-fast cannot initialize a new child under /srv/data/projects/.asb-tlc
+  because the approved root is owned by gha-asb-state; this is the hosted runner account and not a
+  candidate failure. Initial full pytest failed first with system interpreter missing jsonschema,
+  then with uv from wrong cwd (tools import failure), and corrected unittest discovery reached a
+  pre-existing test_git_backup concurrent restore collision and was interrupted; no
+  candidate-specific assertion failure observed.

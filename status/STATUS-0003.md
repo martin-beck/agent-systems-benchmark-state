@@ -1848,7 +1848,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair hosted formal TLC workspace permissions for the ASB state runner. |
-| Next action | Promote and claim; repair the hosted formal workflow workspace initialization so the gha-asb-state runner can create its per-run TLC workspace and attestation directory without weakening the formal gate, then rerun the exact-head formal workflow. |
+| Next action | Run exact-head hosted formal workflow after independent review; local full suite remains environment-limited because unittest discovery hangs in pre-existing test_git_backup concurrent collision and pytest is not a locked project dependency. |
 
 ### AR-1844 — Extract the ASB data-model registry
 
