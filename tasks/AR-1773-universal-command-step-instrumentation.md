@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T23:35:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -82,7 +82,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "asb_ar1773_instrumentation_luna3",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -96,11 +96,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T21:36:49+00:00",
+  "updated_at": "2026-10-13T21:36:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -230,3 +230,9 @@ non-TTY compatibility.
   such file or directory. This is the same runner/toolchain-mount blocker recorded previously; no
   product source gap or gate weakening was found. Host-pinned Cargo evidence remains supplemental
   only. State doctor --live passes after removing generated tools/__pycache__ bytecode.
+
+- 2026-10-13T21:36:52+00:00: Released ownerless after exact-head requalification. Implementation
+  f78a100620 is already in origin/main; no source change justified. Required handoffctl test is
+  blocked before execution by exact stderr bwrap: execvp cargo: No such file or directory. Next
+  action is to repair the pinned Cargo mount/runner, then rerun exact-head focused/full tests
+  through handoffctl. No gate weakened; AR-1863 remains separate.
