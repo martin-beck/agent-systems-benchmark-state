@@ -83,8 +83,8 @@ class WorkflowTriggerTests(unittest.TestCase):
             with self.subTest(work_root=work_root):
                 environment = os.environ.copy()
                 environment["TLC_WORK_ROOT"] = work_root
-                result = subprocess.run(
-                    ["bash", str(script), "--tier", "portable-smoke"],
+                result = subprocess.run(  # noqa: S603
+                    ["/usr/bin/bash", str(script), "--tier", "portable-smoke"],
                     env=environment,
                     capture_output=True,
                     text=True,
