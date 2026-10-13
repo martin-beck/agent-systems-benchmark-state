@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T17:51:46+00:00",
+  "updated_at": "2026-10-13T18:24:25+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -56,3 +56,8 @@ or mutate AR-1826 until the adopted repair is verified.
 - 2026-10-13T17:51:46+00:00: Released safely after checkpoint: AR-0034 adoption failed closed on
   exact formal lifecycle inventory drift. Preserve evidence; route the downstream compatibility seam
   to a narrowly scoped successor before retrying adoption or touching AR-1826.
+
+- 2026-10-13T18:24:25+00:00: Upstream Coordinator AR-0111 formal inventory repair is now published
+  at product commit eee760513969a2929512df3c822aab9d769bf057 and signed integration merge
+  3dda5d2d021beac1382a7f561e16ca93d3941536; prior AR-1861 failed-closed seam is externally resolved.
+  Reopen adoption for exact vendor/provenance verification; preserve AR-1826.
