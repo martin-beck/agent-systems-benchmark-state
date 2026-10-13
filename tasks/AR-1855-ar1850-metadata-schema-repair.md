@@ -2,14 +2,14 @@
 {
   "branch": "feature/ar1855-ar1850-metadata-schema-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T15:49:32+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1855",
   "next_action": "Merge PR #149 at exact reviewed head 7fc186e48b after green required checks, then verify exact-main schema, focused tests, and live doctor.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "ar1855-metadata-schema-luna",
+  "owner": "",
   "plan": "../plans/AR-1855-ar1850-metadata-schema-repair.md",
   "priority": "P1",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1855.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the malformed observed_dirty coordination field on AR-1850 without changing its product scope.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Repair AR-1850 coordination metadata schema",
-  "updated_at": "2026-10-13T13:59:24+00:00",
+  "updated_at": "2026-10-13T13:59:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1855-ar1850-metadata-schema-repair"
 }
 ---
@@ -81,3 +81,7 @@ AR-1850 product requirement, owner, dependency, and launcher scope.
 
 - 2026-10-13T13:59:24+00:00: Recorded command exit 1; command argv SHA-256
   0c7355e5222ac3088779d12f5f6406f083b1344e9f2d24463658fe02e2f4494a.
+
+- 2026-10-13T13:59:27+00:00: PR #149 merged as protected-main merge a7b7f1e8472 at reviewed head
+  7fc186e48b. Exact-main 1e9551d2d2 passes doctor --live, schema validation, Ruff, mypy, focused
+  positive/hostile tests, and required CI.

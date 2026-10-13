@@ -328,13 +328,12 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | ar1849-formal-admission-env-luna | Repair workflow-wide private TLC admission environment for formal CI. | Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | ar1853-complexity-luna | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
-| P1 | [AR-1855](../tasks/AR-1855-ar1850-metadata-schema-repair.md): Repair AR-1850 coordination metadata schema | ar1855-metadata-schema-luna | Repair the malformed observed_dirty coordination field on AR-1850 without changing its product scope. | Merge PR #149 at exact reviewed head 7fc186e48b after green required checks, then verify exact-main schema, focused tests, and live doctor. |
 
 ### Open (7)
 
@@ -545,7 +544,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (608)
+### Done (609)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -654,3 +653,4 @@
 | P0 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Unclaimed | Create a clean required-containment QEMU runner for formal publication evidence. | Independent exact-head review of signed commits 56001d6e2, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation. |
 | P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Development-complete: fresh image v2 plus writable disposable data overlay and locally generated unsigned-development seed reached FULL_EXHAUSTIVE_TRANSIENT_RC=0. Generator now provisions the UID-1000 asb user without default-user collision. Formal attestation is intentionally not claimed. | No further development action. Preserve the generated-seed image-native evidence; any signed/formal/publication qualification must use a separate formal successor and must not block development. |
 | P0 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | Unclaimed | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | Recheck approved exact head, merge the PR, verify post-merge state, and close AR with durable evidence. |
+| P0 | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Unclaimed | Runtime-owned provider capture and recording campaign qualification. | Implementation and coverage successor are merged; retain historical DCO finding as AR-1313 and continue with authenticated agent-catalog producer AR-1316. |

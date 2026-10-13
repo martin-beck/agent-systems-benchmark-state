@@ -2008,11 +2008,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1855-metadata-schema-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the malformed observed_dirty coordination field on AR-1850 without changing its product scope. |
@@ -2916,7 +2916,7 @@ flowchart LR
         AR_1852["AR-1852 - Open"]:::status_open
         AR_1853["AR-1853 - In progress"]:::status_in_progress
         AR_1854["AR-1854 - Planned"]:::status_planned
-        AR_1855["AR-1855 - In progress"]:::status_in_progress
+        AR_1855["AR-1855 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
