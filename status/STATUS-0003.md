@@ -2058,7 +2058,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
-| Next action | A separate process is running outside the bound worktree: /srv/data/projects/asb-state-coordinator-v070 with COVERAGE_FILE=/tmp/asb-state-v075-strict-19.coverage. Do not accept it as AR-1858 evidence until exact worktree root and terminal result are verified. After it ends, run bounded split suites from /srv/data/projects/asb-state-coordinator-v070-ar1858-coverage-v070. |
+| Next action | Exact-worktree split test_campaign.py ran 15/15 OK, but coverage emitted no-data-collected; no coverage conclusion accepted. The handoffctl command post-reconcile also failed due unrelated expired AR-1853, now recorded as coordination blocker. Need parent to resolve AR-1853 state, then validate coverage collection and continue bounded split suites. |
 
 
 ## Dependency graph

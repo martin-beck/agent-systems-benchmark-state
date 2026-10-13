@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T17:58:15+00:00",
   "depends_on": [],
   "id": "AR-1858",
-  "next_action": "A separate process is running outside the bound worktree: /srv/data/projects/asb-state-coordinator-v070 with COVERAGE_FILE=/tmp/asb-state-v075-strict-19.coverage. Do not accept it as AR-1858 evidence until exact worktree root and terminal result are verified. After it ends, run bounded split suites from /srv/data/projects/asb-state-coordinator-v070-ar1858-coverage-v070.",
+  "next_action": "Exact-worktree split test_campaign.py ran 15/15 OK, but coverage emitted no-data-collected; no coverage conclusion accepted. The handoffctl command post-reconcile also failed due unrelated expired AR-1853, now recorded as coordination blocker. Need parent to resolve AR-1853 state, then validate coverage collection and continue bounded split suites.",
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T15:58:15+00:00",
+  "updated_at": "2026-10-13T15:58:20+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -98,3 +98,8 @@ artifact. Do not lower the threshold or merge PR #145.
   bfa3002a80a55cbec231d0fdce80649c57c22c3bbeedce512e66899aa55b6c99.
 
 - 2026-10-13T15:58:15+00:00: Heartbeat by ar1858-coverage-v070-luna.
+
+- 2026-10-13T15:58:20+00:00: Terminal split result: test_campaign.py 15/15 OK (0.008s), exact
+  worktree root. Coverage file /tmp/ar1858-split.coverage is 69632 bytes but coverage warned
+  no-data-collected, so it is invalid for floor measurement. Handoffctl post-reconcile failure:
+  AR-1853 expired claim. No code changes made.
