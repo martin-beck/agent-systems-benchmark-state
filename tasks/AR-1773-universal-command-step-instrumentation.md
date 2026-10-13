@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T21:41:00+00:00",
+  "claim_expires": "2026-10-13T21:41:50+00:00",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -28,9 +28,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T19:41:00+00:00",
+  "updated_at": "2026-10-13T19:41:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -59,3 +59,5 @@ non-TTY compatibility.
   implementation.
 
 - 2026-10-13T19:41:00+00:00: Claimed by asb_ar1773_instrument_luna.
+
+- 2026-10-13T19:41:50+00:00: Heartbeat by asb_ar1773_instrument_luna.
