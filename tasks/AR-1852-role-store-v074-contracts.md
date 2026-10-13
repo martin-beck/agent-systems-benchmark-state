@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "2026-10-13T22:43:14+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "execution_envelope": {
     "command_classes": {
@@ -79,7 +79,7 @@
   },
   "id": "AR-1852",
   "next_action": "Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner.",
-  "owner": "ar1852-runner-repair-luna",
+  "owner": "",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "retry_circuit": {
@@ -149,11 +149,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 126,
+  "task_revision": 127,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T22:24:07+00:00",
+  "updated_at": "2026-10-13T22:24:16+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -574,3 +574,8 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   contention, pre-existing vendor/generated digest/workflow drift, AR-1793 fixture drift, SQLite
   authority fixture, and subprocess timing). Attempted handoffctl run records sandbox blocker: bwrap
   cannot exec /bin/true and cannot see external runner-root path. No product files changed.
+
+- 2026-10-13T22:24:16+00:00: Released owner after new runner-root qualification. Focused role
+  contract passes 10/10 in external locked v078 DCO environment; approved handoffctl sandbox cannot
+  access external runner-root, and direct full gate remains non-green only on unrelated
+  baseline/environment failures. PR148 7b46c6b076 preserved; no product mutation.
