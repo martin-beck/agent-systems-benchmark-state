@@ -2,19 +2,19 @@
 {
   "branch": "codex/ar1861-coordinator-adoption",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T19:30:52+00:00",
   "depends_on": [],
   "id": "AR-1861",
   "next_action": "Complete focused/full/formal/privacy gates on exact v0.7.8 development vendor; initial direct pytest lacked jsonschema, state venv run is in progress with failures to classify. Preserve AR-1826.",
-  "owner": "",
+  "owner": "ar1861-resume-luna",
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T19:00:47+00:00",
+  "updated_at": "2026-10-13T19:00:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -99,3 +99,5 @@ or mutate AR-1826 until the adopted repair is verified.
 - 2026-10-13T19:00:47+00:00: Metadata reconciliation only: identify concrete upstream compatibility
   blockers AR-1851, AR-1852, AR-1853 and AR-1849; preserve blocked/ownerless status and immutable
   AR-0111 adoption evidence.
+
+- 2026-10-13T19:00:52+00:00: Claimed by ar1861-resume-luna.
