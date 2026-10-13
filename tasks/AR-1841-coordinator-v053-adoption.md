@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.5.3 with partial legacy worktree binding.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T12:39:55+00:00",
+  "updated_at": "2026-10-13T12:40:43+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -405,3 +405,6 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
   and ownership/lease fields were not changed. AR-1841 may resume only after corrected upstream
   v0.7.3 metadata and exact immutable re-vendoring; do not start v0.7.4 sync from current tag
   95c6b559 reporting runtime 0.7.2.
+
+- 2026-10-13T12:40:43+00:00: Recorded command exit 0; command argv SHA-256
+  f90bf574bfea5804c1af55cf93814c132c31acb972c877f6c6845d912a232b27.
