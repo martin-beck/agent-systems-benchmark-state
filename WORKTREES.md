@@ -290,3 +290,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1835-authenticated-control-live-isolation-repair` | `feature/ar-1835-authenticated-control-live-isolation-repair` | `06565d3de95a` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-ar-1839` | `codex/ar-1839-cross-process-fixture` | `46ac642c40ce` | 0 | behind 3, ahead 1 |
 | `ar1826-review.IL8AVJ` | `DETACHED` | `ecf3ed20fa15` | 0 | behind 3, ahead 3 |
+| `asb-pr307-review-d0e6a28a` | `DETACHED` | `d0e6a28a81b4` | 0 | behind 0, ahead 0 |
