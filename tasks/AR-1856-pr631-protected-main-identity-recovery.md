@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "repair/ar-1856-pr631-protected-main-identity",
+  "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-13T16:32:14+00:00",
   "depends_on": [],
@@ -25,7 +25,7 @@
   "task_revision": 4,
   "title": "PR #631 protected-main identity recovery",
   "updated_at": "2026-10-13T14:32:26+00:00",
-  "worktree_key": "agent-systems-benchmark-state-ar-1856-pr631-protected-main-identity"
+  "worktree_key": ""
 }
 ---
 
