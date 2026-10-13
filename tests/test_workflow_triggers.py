@@ -67,15 +67,16 @@ class WorkflowTriggerTests(unittest.TestCase):
         root = "/srv/data/projects/.asb-tlc/ci-${{ github.run_id }}"
         self.assertIn(f"TLC_RUNTIME_ROOT: {root}", workflow)
         self.assertIn(f"TLC_WORK_ROOT: {root}", workflow)
+        self.assertIn(f"TLC_ADMISSION_QUEUE: {root}/queue", workflow)
+        self.assertIn(f"TLC_ADMISSION_LOCK: {root}/admission.lock", workflow)
         self.assertIn('install -d -m 700 "$TLC_WORK_ROOT"', workflow)
         self.assertIn('install -d -m 700 "$(dirname -- "$TLC_ATTESTATION_PATH")"', workflow)
         workflow_env, formal_step = workflow.split(
             "      - name: Check exhaustive concurrent-state model", maxsplit=1
         )
-        self.assertNotIn("TLC_ADMISSION_QUEUE:", workflow_env)
-        self.assertNotIn("TLC_ADMISSION_LOCK:", workflow_env)
-        self.assertIn(f"TLC_ADMISSION_QUEUE: {root}/queue", formal_step)
-        self.assertIn(f"TLC_ADMISSION_LOCK: {root}/admission.lock", formal_step)
+        self.assertNotIn("TLC_ADMISSION_QUEUE:", formal_step)
+        self.assertNotIn("TLC_ADMISSION_LOCK:", formal_step)
+        self.assertNotIn("/tmp/agent-workflow-coordinator-tlc", workflow_env)
 
     def test_formal_workspace_rejects_relative_or_hostile_roots(self) -> None:
         script = ROOT / "formal" / "handoffctl" / "verify.sh"
