@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1858.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T19:04:59+00:00",
+  "updated_at": "2026-10-13T19:18:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar1858-coverage-v070"
 }
 ---
@@ -286,3 +286,6 @@ artifact. Do not lower the threshold or merge PR #145.
   Preserve prior terminal exact-head evidence: 94.6398% baseline, 94.6951% after focused tests, and
   three TLC ClassNotFoundException fixture failures. No new coverage conclusion; keep AR-1859
   planned.
+
+- 2026-10-13T19:18:27+00:00: Authorized resume after generated state reconciliation; preserve prior
+  evidence and all gates.
