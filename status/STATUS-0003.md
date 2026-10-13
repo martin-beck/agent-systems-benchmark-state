@@ -2050,11 +2050,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1858-coverage-v070-luna |
 | Parent | None |
 | Children | None |
 | Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
@@ -2961,7 +2961,7 @@ flowchart LR
         AR_1855["AR-1855 - Done"]:::status_done
         AR_1856["AR-1856 - Done"]:::status_done
         AR_1857["AR-1857 - Blocked"]:::status_blocked
-        AR_1858["AR-1858 - Open"]:::status_open
+        AR_1858["AR-1858 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

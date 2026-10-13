@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T17:15:06+00:00",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "Add narrow coverage tests in the exact v0.7.0 source worktree; preserve the 95% floor and PR #145 unmerged.",
-  "owner": "",
+  "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1858.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T15:14:53+00:00",
+  "updated_at": "2026-10-13T15:15:06+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1857-coverage-repair"
 }
 ---
@@ -35,3 +35,5 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-13T15:14:53+00:00: Dependencies verified; successor uses exact v0.7.0 source worktree
   because AR-1857 legacy binding cannot be replaced. Preserve 95% floor and PR #145 unmerged.
+
+- 2026-10-13T15:15:06+00:00: Claimed by ar1858-coverage-v070-luna.
