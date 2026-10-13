@@ -1988,7 +1988,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align the complexity-budget contract with Coordinator v0.7.4. |
-| Next action | Independent exact-head review of 56371a22ad; focused gates pass, full suite has unrelated baseline failures. |
+| Next action | Wait for strict/formal CI and required approval at exact head 56371a22ad; merge only after all green, then perform post-merge verification. |
 
 
 ## Dependency graph

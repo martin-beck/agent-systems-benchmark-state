@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T15:27:10+00:00",
   "depends_on": [],
   "id": "AR-1853",
-  "next_action": "Independent exact-head review of 56371a22ad; focused gates pass, full suite has unrelated baseline failures.",
+  "next_action": "Wait for strict/formal CI and required approval at exact head 56371a22ad; merge only after all green, then perform post-merge verification.",
   "owner": "ar1853-complexity-luna",
   "plan": "../plans/AR-1853-complexity-v074-contract.md",
   "priority": "P1",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align the complexity-budget contract with Coordinator v0.7.4.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Complexity v0.7.4 compatibility contract",
-  "updated_at": "2026-10-13T13:28:20+00:00",
+  "updated_at": "2026-10-13T13:29:18+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1853"
 }
 ---
@@ -49,3 +49,8 @@ contract exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T13:28:20+00:00: Recorded command exit 0; command argv SHA-256
   d00d4c092637ae2b2a384450953700f8aba61c130f9a237477ef0366552cc352.
+
+- 2026-10-13T13:29:18+00:00: Independent review of PR #146 exact head 56371a22ad approved: diff from
+  candidate 180c96b25d is exactly one workflow line adding tools/assumption_revalidation.py to the
+  existing lizard CCN 14 command; no vendor changes, threshold unchanged, DCO signature present.
+  Merge remains prohibited until required CI is terminal green.
