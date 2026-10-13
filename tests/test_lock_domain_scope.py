@@ -18,6 +18,7 @@ from pathlib import Path
 from typing import Any, cast
 from unittest.mock import patch
 
+from tools import handoffctl
 from tools.admission_lease import (
     AdmissionLease,
     AdmissionLeaseError,
@@ -442,6 +443,15 @@ class LockDomainScopeTests(unittest.TestCase):
         self.directory = tempfile.TemporaryDirectory()
         self.root = Path(self.directory.name)
         self.root.chmod(0o700)
+        runtime = self.root / ".runtime"
+        runtime.mkdir(mode=0o700)
+        self.coordinator_globals = patch.multiple(
+            handoffctl,
+            ROOT=self.root,
+            RUNTIME=runtime,
+            LOCK=runtime / "state.lock",
+        )
+        self.coordinator_globals.start()
         self.authority = self.root / "authority.sqlite"
         self.authority.write_bytes(b"authority")
         self.authority.chmod(0o600)
@@ -470,6 +480,7 @@ class LockDomainScopeTests(unittest.TestCase):
         self.recheck = lease_recheck(self.lease)
 
     def tearDown(self) -> None:
+        self.coordinator_globals.stop()
         self.directory.cleanup()
 
     def test_model_lock_actions_are_available_for_concrete_trace_events(self) -> None:
