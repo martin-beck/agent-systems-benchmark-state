@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T13:11:59+00:00",
   "depends_on": [],
   "id": "AR-1849",
-  "next_action": "Retain workflow-only private TLC admission environment; rebase onto exact v0.7.4 adoption and rerun focused/full gates, review, and CI.",
+  "next_action": "Rebuild clean v0.7.4 adoption from current origin/main, apply only workflow-wide private TLC admission env/tests, verify immutable vendor snapshot, then rerun focused/full gates and review.",
   "owner": "ar1849-formal-admission-env-luna",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T12:56:47+00:00",
+  "updated_at": "2026-10-13T12:57:04+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -222,3 +222,8 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 
 - 2026-10-13T12:56:47+00:00: Recorded command exit 1; command argv SHA-256
   55bcd0348dbb3f2b4ca9165f15407ec5599fb78901f59bdbdc8615de9731934f.
+
+- 2026-10-13T12:57:04+00:00: Independent review rejected PR #145 exact head 75f9b62801: strict CI
+  reported 9 failures and 3 errors, including stale v0.5.3 projection/fixture expectations against
+  the exact v0.7.4 snapshot. Rebuild from current origin/main plus the exact v0.7.4 adoption and
+  retain only the workflow-wide private TLC admission change; do not modify vendor files or merge.

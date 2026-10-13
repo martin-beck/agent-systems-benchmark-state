@@ -1932,7 +1932,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair workflow-wide private TLC admission environment for formal CI. |
-| Next action | Retain workflow-only private TLC admission environment; rebase onto exact v0.7.4 adoption and rerun focused/full gates, review, and CI. |
+| Next action | Rebuild clean v0.7.4 adoption from current origin/main, apply only workflow-wide private TLC admission env/tests, verify immutable vendor snapshot, then rerun focused/full gates and review. |
 
 ### AR-1850 — Repair development ASB TUI interactive lifetime
 
