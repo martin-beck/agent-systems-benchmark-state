@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1860-formal-work-root",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T18:56:43+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1860",
   "next_action": "Merge PR #151 signed state-only coordination repair, run exact-main doctor/schema/post-merge assurance, then release AR-1860 with merged evidence.",
-  "owner": "ar1857-coverage-repair-luna",
+  "owner": "",
   "plan": "../plans/AR-1860-formal-work-root-adoption.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1860.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T17:18:52+00:00",
+  "updated_at": "2026-10-13T17:19:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar1860-formal-work-root"
 }
 ---
@@ -92,3 +92,10 @@ coverage floor and all formal gates.
 
 - 2026-10-13T17:18:52+00:00: Recorded command exit 0; command argv SHA-256
   19ac5910013c638c6eee371b5fdc3ca9222859fb20824ba4b6e1adb94fa2b33b.
+
+- 2026-10-13T17:19:12+00:00: Released after signed local merge
+  462e40d4311534438cb7689334eb9dfcaa0f5d43 of PR #151; origin/main exact at 1473bb90bd. Doctor
+  --live, render-status --check, validate_schema.py, and check_generated_views.py all passed.
+  Post-merge exact product worktree c8cce18b81737872fd2f0ce47a6da8ab9dbc9fcb focused workflow
+  triggers passed 6/6. Full 1638/1638 and formal qualification remain durably recorded; signed
+  DCO/independent review/hosted CI evidence retained.

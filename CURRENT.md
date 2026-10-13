@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1858](tasks/AR-1858-coverage-v070.md): v0.7.0 coverage floor repair | Repair the v0.7.0 coordinator coverage floor deficit. | AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped. | ar1858-coverage-v070-luna |
-| P0 | [AR-1860](tasks/AR-1860-formal-work-root-adoption.md): Dependency-safe formal work-root repair adoption | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. | Merge PR #151 signed state-only coordination repair, run exact-main doctor/schema/post-merge assurance, then release AR-1860 with merged evidence. | ar1857-coverage-repair-luna |
 
 ## Open
 

@@ -338,12 +338,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1858](../tasks/AR-1858-coverage-v070.md): v0.7.0 coverage floor repair | ar1858-coverage-v070-luna | Repair the v0.7.0 coordinator coverage floor deficit. | AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped. |
-| P0 | [AR-1860](../tasks/AR-1860-formal-work-root-adoption.md): Dependency-safe formal work-root repair adoption | ar1857-coverage-repair-luna | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. | Merge PR #151 signed state-only coordination repair, run exact-main doctor/schema/post-merge assurance, then release AR-1860 with merged evidence. |
 
 ### Open (7)
 
@@ -557,7 +556,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (611)
+### Done (612)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -655,3 +654,4 @@
 | P0 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | Unclaimed | Provide a delegated runner for real strict-replay child lifecycle qualification. | No further action; protected merge 7ea3e001 exact-main workflows 35202285902/85873/85881/85905/85917/85930/85955 all green, and KVM guest passed 51 normal plus the qualified backend test. AR-1301 is promoted and active. |
 | P0 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | Unclaimed | Repair the stale formal Cargo.lock required by hosted exact-head gates. | Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success. |
 | P0 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | Unclaimed | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Monitor exact-main post-merge workflows for c1b1860786e844adb69b8f74e39af290592a89c8 to terminal SUCCESS; verify protected main signature/DCO/tree and release AR-1290 done. |
+| P0 | [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md): Repair superseded dependency pointers | Unclaimed | Repair missing successor pointers on superseded dependency tasks. | Claim the state-repair AR, add the verified successor pointers to AR-1052/1054/1056/1058/1061, reconcile and validate AR-1010 dependency readiness. |
