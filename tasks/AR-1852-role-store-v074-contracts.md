@@ -78,9 +78,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T21:21:21+00:00",
+  "updated_at": "2026-10-13T21:21:37+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -396,3 +396,8 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T21:21:21+00:00: Recorded command exit 0; command argv SHA-256
   63c21a1625ade4a0cee363d0e299b6b29afbb4534796d34857d7e7daa04e1ef1.
+
+- 2026-10-13T21:21:37+00:00: Upstream Coordinator main b46d2b3 (AR-0119 merged; runtime v0.7.8) is
+  clean and was adopted into exact PR worktree through documented sync-development, preserving
+  strict role authorization; vendor tool reports OK. Next run vendor verify and focused/full gates
+  on candidate; do not use tagged v0.7.8 because it predates b46d2b3.
