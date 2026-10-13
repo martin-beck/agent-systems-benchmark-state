@@ -2058,7 +2058,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
-| Next action | Bounded split isolation is running from exact worktree. test_campaign.py 15/15 and issue_series_service_coverage.py 4/4 pass with absolute source; test_issue_series_handoffctl.py is currently hung in multiprocessing/resource-tracker path and will be classified at the 300s handoffctl bound. Do not accept partial coverage. |
+| Next action | Exact-worktree bounded split remains on test_issue_series_handoffctl.py; multiprocessing/resource-tracker hang has persisted ~2m18s under 300s bound. Heartbeat refreshed. Preserve invalid partial coverage; after timeout classify and isolate individual test or fixture. |
 
 
 ## Dependency graph
