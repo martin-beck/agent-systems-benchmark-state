@@ -2036,11 +2036,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1857-coverage-repair-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Restore the full-gate coverage floor after the terminal 94&#37; observation. |
@@ -3016,7 +3016,7 @@ flowchart LR
         AR_1854["AR-1854 - Planned"]:::status_planned
         AR_1855["AR-1855 - Done"]:::status_done
         AR_1856["AR-1856 - Done"]:::status_done
-        AR_1857["AR-1857 - In progress"]:::status_in_progress
+        AR_1857["AR-1857 - Blocked"]:::status_blocked
         AR_1858["AR-1858 - Blocked"]:::status_blocked
         AR_1859["AR-1859 - Planned"]:::status_planned
         AR_1860["AR-1860 - Done"]:::status_done
@@ -5025,4 +5025,6 @@ flowchart LR
     classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
 ```
+
+### Accessible dependency index
 

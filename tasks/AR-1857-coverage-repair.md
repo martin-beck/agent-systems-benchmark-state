@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1857-coverage-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T19:57:34+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1857",
   "next_action": "Analyze exact 94% coverage artifact and add narrow tests for uncovered first-party paths; preserve 95% threshold and PR #145 unmerged.",
-  "owner": "ar1857-coverage-repair-luna",
+  "owner": "",
   "plan": "../plans/AR-1857-coverage-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1857.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Restore the full-gate coverage floor after the terminal 94% observation.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Full-gate coverage floor repair",
-  "updated_at": "2026-10-13T19:27:34+00:00",
+  "updated_at": "2026-10-13T19:27:49+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1857-coverage-repair"
 }
 ---
@@ -75,3 +75,12 @@ modify AR-1841 or AR-1856 ownership and must not weaken formal/resource gates.
   status, and successor evidence; preserve 95% floor and formal gates.
 
 - 2026-10-13T19:27:34+00:00: Claimed by ar1857-coverage-repair-luna.
+
+- 2026-10-13T19:27:49+00:00: Bounded resume conclusion: exact v0.7.0 combined artifact is 94.6951%
+  (19,785 statements, 822 missed, 7,322 branches, 588 partial; 95% display), below unchanged 95%
+  floor. Misses are distributed across broad first-party paths, so no narrow justified test-only
+  repair was identified. Full run retained three formal TLC fixture failures (relative-tlc,
+  ../hostile-tlc, relative/with space) with ClassNotFoundException tlc2.TLC rc1 versus expected
+  rc64; AR-1859 remains the scoped successor. Public GitHub API shows PR #145 closed and unmerged at
+  5f30c0c92f18ae6043ceedf454c8af43fc8b48f7, so no publication action. No product mutation or
+  threshold/gate weakening; release ownerless.
