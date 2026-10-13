@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T21:18:30+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped.",
-  "owner": "ar1858-coverage-v070-luna",
+  "owner": "",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1858.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T19:18:51+00:00",
+  "updated_at": "2026-10-13T19:19:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar1858-coverage-v070"
 }
 ---
@@ -298,3 +298,11 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-13T19:18:51+00:00: Recorded command exit 0; command argv SHA-256
   009ac97b8aebee08fab2d53dbb5fcd58b9fb4bb9cb71e85aa820f316173c73c3.
+
+- 2026-10-13T19:19:10+00:00: Resumed safely: handoffctl-recorded pycache cleanup completed;
+  PYTHONDONTWRITEBYTECODE snapshot and doctor --live both passed. Exact artifact remains 19,785
+  statements, 822 missed, 7,322 branches, 588 partial, 94.6951% real combined coverage (95%
+  display), below unchanged 95% gate. Remaining misses are distributed across broad first-party
+  paths (handoffctl 163, rollback_control_store 101, sqlite_storage 72, plus runtime/authority
+  seams); no additional narrow test-only repair was justified within this bounded resume. No product
+  mutation or PR #145 change. AR-1859 remains planned.
