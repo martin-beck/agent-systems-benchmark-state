@@ -2,17 +2,17 @@
 {
   "branch": "codex/ar1862-formal-lifecycle",
   "checkpoint_commit": "b00cdba5bc5267633588dc219c53b10d34fb9dc8",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T20:05:26+00:00",
   "depends_on": [],
   "id": "AR-1862",
   "next_action": "Route recover_execution normalization to an upstream Coordinator successor; preserve immutable ASB vendor provenance and do not publish AR-1862 as an ASB implementation.",
-  "owner": "",
+  "owner": "coord-reconcile-v078-1862",
   "plan": "../plans/AR-1862-coordinator-formal-lifecycle-alignment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Coordinator formal lifecycle inventory alignment",
   "updated_at": "2026-10-13T18:05:26+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
@@ -63,3 +63,5 @@ vendored Coordinator bytes or mutate AR-1826.
 
 - 2026-10-13T18:05:26+00:00: Unblocked: exact Coordinator v0.7.8 vendor manifest verifies the
   formerly mismatched lifecycle inventory without downstream vendor mutation.
+
+- 2026-10-13T18:05:26+00:00: Claimed by coord-reconcile-v078-1862.

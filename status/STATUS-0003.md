@@ -2106,11 +2106,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | coord-reconcile-v078-1862 |
 | Parent | None |
 | Children | None |
 | Summary | Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption. |
@@ -3021,7 +3021,7 @@ flowchart LR
         AR_1859["AR-1859 - Planned"]:::status_planned
         AR_1860["AR-1860 - Done"]:::status_done
         AR_1861["AR-1861 - Done"]:::status_done
-        AR_1862["AR-1862 - Open"]:::status_open
+        AR_1862["AR-1862 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
