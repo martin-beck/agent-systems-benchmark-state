@@ -181,7 +181,7 @@
       "source": "formal/handoffctl/slices.py"
     },
     "formal/handoffctl/verify.sh": {
-      "sha256": "d4d059dcdd691ee82d4599682fcb7df184f5eb59d88fbef81d53e55419b67fda",
+      "sha256": "23fc8cb1d0a5ad0dde8d92dab38c8c705c3d4cac1a33576b8a9e8888629e40ab",
       "source": "formal/handoffctl/verify.sh"
     },
     "formal/oracle/OracleInteractionGates.cfg": {
@@ -497,7 +497,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "7793ce230a629605c06fb2287c0cf51c6c123f2d2b38f8e102ba0fda2a4fa271",
+      "sha256": "e80b738a49b8c8b6d95b9743fc9da8421ebf875a616cd72c73427dd30b780995",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -675,8 +675,8 @@
   },
   "schema_version": 1,
   "upstream": {
-    "commit": "e4b79aa4fa45443196a601942e26d3c46013a3fa",
+    "commit": "6ea439cbb104714bc92453734f87f9145b11022a",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
-    "version": "v0.7.5"
+    "version": "v0.7.6"
   }
 }

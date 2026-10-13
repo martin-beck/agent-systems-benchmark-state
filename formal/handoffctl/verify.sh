@@ -74,6 +74,10 @@ elif [[ -n "${TLC_RUNTIME_ROOT:-}" ]]; then
 else
     WORK_ROOT="${TMPDIR:-/tmp}/agent-workflow-coordinator-tlc"
 fi
+if [[ "${WORK_ROOT}" != /* ]]; then
+    echo "TLC_WORK_ROOT must be an absolute path" >&2
+    exit 64
+fi
 readonly WORK_ROOT
 mkdir --mode=700 --parents "${WORK_ROOT}"
 readonly TEMP_DIR="$(mktemp -d "${WORK_ROOT}/handoffctl-${TIER}.XXXXXX")"
