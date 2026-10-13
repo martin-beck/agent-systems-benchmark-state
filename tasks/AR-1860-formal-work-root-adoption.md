@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T16:57:24+00:00",
+  "updated_at": "2026-10-13T16:57:32+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1860-formal-work-root"
 }
 ---
@@ -55,3 +55,6 @@ coverage floor and all formal gates.
 
 - 2026-10-13T16:57:24+00:00: Exact signed product head passes six focused workflow tests, including
   all three hostile TLC_WORK_ROOT variants; rc64 guard remains before TLC/Java execution.
+
+- 2026-10-13T16:57:32+00:00: Recorded command exit 0; command argv SHA-256
+  404b2e7badf14e1b35bcf8ef2d52e0f0aec5407f78caeaa459702baa76d9bf8d.
