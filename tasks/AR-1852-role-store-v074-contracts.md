@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T15:30:17+00:00",
   "depends_on": [],
   "id": "AR-1852",
-  "next_action": "Independent review and exact-head CI for signed product commit a7ea458375; focused role suites pass 20/20. Full discovery is non-green only in unrelated pre-existing formal/dependency/projection fixtures.",
+  "next_action": "Restore strict doctor and unknown-owner rejection assertions, or provide upstream v0.7.4 contract evidence and runtime repair; rerun focused/full gates and obtain fresh independent review.",
   "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:30:25+00:00",
+  "updated_at": "2026-10-13T13:30:57+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -66,3 +66,9 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T13:30:25+00:00: Recorded command exit 0; command argv SHA-256
   bec158cf24442d943a5f30280f760f9bb6fefac5adf73d146899af5531251dae.
+
+- 2026-10-13T13:30:57+00:00: Independent review rejected PR #148 exact head a7ea458375.
+  tests/test_roles.py changes test_doctor_reports_role_authorization_violations from expected exit 1
+  to 0 and test_handoffctl_lifecycle_admission_uses_durable_role_store from rejecting unknown-owner
+  to accepting it. No runtime code or verified upstream contract justifies weakening these
+  fail-closed authorization checks; the patch masks the regression. Do not merge.
