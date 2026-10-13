@@ -2044,7 +2044,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Restore the full-gate coverage floor after the terminal 94&#37; observation. |
-| Next action | Repair the recorded 94&#37; full-gate coverage deficit without lowering the 95&#37; threshold; preserve PR #145 unmerged until review and exact-head CI pass. |
+| Next action | Analyze exact 94&#37; coverage artifact and add narrow tests for uncovered first-party paths; preserve 95&#37; threshold and PR #145 unmerged. |
 
 
 ## Dependency graph
