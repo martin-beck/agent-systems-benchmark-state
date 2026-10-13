@@ -2058,7 +2058,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
-| Next action | The 300s split timeout is classified. Individual-test isolation is required; suspect test_issue_series_handoffctl multiprocessing cases (especially sixteen_processes_*). Run each suspect test with a 90s bound from exact worktree before code changes. |
+| Next action | The first per-test probe is invalid because its helper lacked __main__ guard, causing multiprocessing spawn bootstrap errors. After bounded probe ends, replace helper with guarded runner and rerun only multiprocessing suspect tests; keep all probe output non-evidence. |
 
 
 ## Dependency graph

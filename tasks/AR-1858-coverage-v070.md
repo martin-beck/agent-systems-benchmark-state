@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T18:06:20+00:00",
   "depends_on": [],
   "id": "AR-1858",
-  "next_action": "The 300s split timeout is classified. Individual-test isolation is required; suspect test_issue_series_handoffctl multiprocessing cases (especially sixteen_processes_*). Run each suspect test with a 90s bound from exact worktree before code changes.",
+  "next_action": "The first per-test probe is invalid because its helper lacked __main__ guard, causing multiprocessing spawn bootstrap errors. After bounded probe ends, replace helper with guarded runner and rerun only multiprocessing suspect tests; keep all probe output non-evidence.",
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:06:20+00:00",
+  "updated_at": "2026-10-13T16:06:28+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -151,3 +151,7 @@ artifact. Do not lower the threshold or merge PR #145.
   f3421c98df423b8f2644ed7a5ed1980940b5925d76f2aaa230755567e0e6381b.
 
 - 2026-10-13T16:06:20+00:00: Heartbeat by ar1858-coverage-v070-luna.
+
+- 2026-10-13T16:06:28+00:00: Diagnostic harness defect: /tmp/ar1858_one.py executed unittest at
+  import time, so forkserver/spawn tests reported RuntimeError _check_not_importing_main and
+  connection resets. These are harness failures, not product conclusions; no coverage accepted.
