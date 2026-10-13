@@ -40,6 +40,15 @@
         "reserved_at": "2026-10-13T19:22:25+00:00",
         "task_revision": 66,
         "window": 3
+      },
+      {
+        "expires_at": "2026-10-13T19:24:25+00:00",
+        "id": "62ffa2ad54b241429d24dbd8b9395efb",
+        "identity": "sha256:2601ad8fd3106f4513b1b86f1c8094ecc819b2004f71710e2345319122c2ede5",
+        "progress_digest": "sha256:3ef850421994879ab4e7a7e46e11848a74ff796daa36590c1109bed5c55be567",
+        "reserved_at": "2026-10-13T19:22:55+00:00",
+        "task_revision": 70,
+        "window": 3
       }
     ],
     "schema_version": 1
@@ -57,9 +66,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T19:22:35+00:00",
+  "updated_at": "2026-10-13T19:22:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -300,3 +309,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T19:22:35+00:00: Recorded command exit 1; command argv SHA-256
   adc280b5d8aad54a352fae1748e4ab08773b1aff03bf65377d924417dec24e20.
+
+- 2026-10-13T19:22:55+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
