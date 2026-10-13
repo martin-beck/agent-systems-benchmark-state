@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair hosted formal TLC workspace permissions for the ASB state runner.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Hosted formal workspace permission repair",
-  "updated_at": "2026-10-13T10:06:14+00:00",
+  "updated_at": "2026-10-13T10:06:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1843-formal-workspace-repair"
 }
 ---
@@ -94,3 +94,6 @@ formal assertion, timeout, or resource-bound gate may be removed or weakened.
 
 - 2026-10-13T10:06:14+00:00: Recorded command exit 0; command argv SHA-256
   18d9e3a8a18c083613f2185119e5f69c02e2263623f7ae83b1548869fb74e999.
+
+- 2026-10-13T10:06:19+00:00: Recorded command exit 1; command argv SHA-256
+  dc48d8ba5b8a8ab562f4c5e486907dc015748be86393e77d059c260c2ca15899.
