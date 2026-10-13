@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T15:16:08+00:00",
+  "updated_at": "2026-10-13T15:21:36+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -49,3 +49,6 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-13T15:16:08+00:00: Bound worktree asb-state-coordinator-v070-ar1858-coverage-v070 on
   branch codex/ar1858-coverage-v070.
+
+- 2026-10-13T15:21:36+00:00: Recorded command exit 1; command argv SHA-256
+  a73d18df8e2134bc080c79b5ec61cf23cc007d1ae5cce9ecca32663a99cac5ef.
