@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:03:18+00:00",
+  "updated_at": "2026-10-13T14:05:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -51,3 +51,6 @@ cross-repository qualification.
 - 2026-10-13T14:03:18+00:00: Full cargo test -p asb-cli --no-fail-fast passes: 459 unit tests plus
   all package integration/doc tests, 0 failed. cargo fmt check remains green; product HEAD remains
   signed 671f898b6a859655952a009b9a4468e685d74013.
+
+- 2026-10-13T14:05:05+00:00: Recorded command exit 0; command argv SHA-256
+  6023d9dd2abd13ac06f5483e5e87a5dc322906b2df5745d38e5a6c5e9515aff2.
