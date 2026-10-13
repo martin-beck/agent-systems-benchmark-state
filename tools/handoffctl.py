@@ -275,7 +275,7 @@ LIFECYCLE_MUTATION_COMMANDS = (
 
 
 class IdempotentMutationError(RuntimeError):
-    """Signal an admitted replay that must not create another state revision."""
+    """Signal an admitted no-op replay."""
 
 
 # CURRENT.md is the compact actionable queue; terminal history remains in the
@@ -340,7 +340,7 @@ def task_label(meta: Meta) -> str:
 
 
 def short_title_errors(path: Path, task_id: str, value: object) -> list[str]:
-    """Validate optional concise navigational metadata independently of task state."""
+    """Validate optional concise task metadata."""
     if value is None:
         return []
     if (
@@ -358,7 +358,7 @@ def short_title_errors(path: Path, task_id: str, value: object) -> list[str]:
     return []
 
 
-COORDINATOR_VERSION = "0.7.1"
+COORDINATOR_VERSION = "0.7.2"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -412,7 +412,7 @@ def repository_slug(value: object) -> str:
 
 
 def backend_selection() -> Meta:
-    """Load the project-bound backend; missing legacy selection means Git."""
+    """Load the selected backend."""
     if not BACKEND_CONFIG.exists():
         return {"schema_version": 1, "backend": "git", "legacy": True}
     try:
@@ -524,7 +524,7 @@ def mutating_sqlite_backend() -> SQLiteBackend:
 
 
 def provision_sqlite_barrier() -> None:
-    """Provision the authority fence and one released baseline session."""
+    """Provision the authority fence and baseline session."""
     from tools.mutation_fence import provision, provision_control_binding
     from tools.rollback_control_store import SQLiteBarrierSessionStore, SQLiteRollbackControlStore
     from tools.upgrade_identity import BarrierSessionIdentity, canonical_barrier_session_digest
@@ -587,20 +587,20 @@ def project_binding() -> Meta:
 
 
 def git_repository_slug(root: Path) -> str:
-    """Read and normalize one checkout's origin identity."""
+    """Normalize a checkout origin."""
     result = run(["git", "-C", str(root), "remote", "get-url", "origin"])
     return repository_slug(result.stdout.strip())
 
 
 def inside(candidate: Path, root: Path) -> bool:
-    """Return whether candidate is root or one of its descendants."""
+    """Inside."""
     candidate = candidate.resolve()
     root = root.resolve()
     return candidate == root or root in candidate.parents
 
 
 def _assert_storage_binding(binding: Meta) -> None:
-    """Check the tracked selector and SQLite-internal identity."""
+    """Check stored identity."""
     selection = backend_selection()
     if not selection.get("legacy") and selection.get("project_id") != binding["project_id"]:
         raise RuntimeError("storage backend does not match coordinator binding")
@@ -841,7 +841,7 @@ def run_github_observation(args: list[str]) -> subprocess.CompletedProcess[str]:
 
 
 def coordinator_lock_path() -> Path:
-    """Resolve one lock shared by every worktree of the same local Git repository."""
+    """Resolve the lock shared by local Git worktrees."""
     configured = RUNTIME / "state.lock"
     if configured != LOCK or not (ROOT / ".git").exists():
         return LOCK
@@ -942,7 +942,7 @@ def locked(
 
 
 def trace_lock_metric(phase: str, mode: str, wait: float, hold: float | None) -> None:
-    """Emit optional private, bounded lock timing without command or path data."""
+    """Emit bounded private lock timing."""
     destination = os.environ.get("HANDOFFCTL_LOCK_TRACE")
     if not destination:
         return
@@ -963,12 +963,12 @@ def trace_lock_metric(phase: str, mode: str, wait: float, hold: float | None) ->
 
 
 def observation_marker(name: str) -> Path:
-    """Order scans for one checkout's independent task and projection files."""
+    """Order per-checkout task and projection scans."""
     return RUNTIME / name
 
 
 def reserve_observation_ticket() -> int:
-    """Order slow scans without occupying the authority lock while they run."""
+    """Order slow scans outside the authority lock."""
     path = observation_marker("observation-sequence")
     path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
     descriptor = os.open(path.with_suffix(".lock"), os.O_CREAT | os.O_RDWR, 0o600)
@@ -1093,7 +1093,7 @@ def render_current(tasks: list[Task]) -> str:
 
 
 def parse_worktree_listing(raw: str) -> list[tuple[Path, str, str]]:
-    """Reuse Git's exact listed head/branch, falling back only for incomplete records."""
+    """Reuse Git's listed head and branch when available."""
     records: list[tuple[Path, str, str]] = []
     for block in raw.split("\n\n"):
         lines = block.splitlines()
@@ -1111,7 +1111,7 @@ def parse_worktree_listing(raw: str) -> list[tuple[Path, str, str]]:
 
 
 def scan_worktree(item: tuple[Path, str, str]) -> dict[str, Any]:
-    """Observe one independent product checkout without changing its Git state."""
+    """Observe one product checkout without Git mutation."""
     path, listed_head, listed_branch = item
     head = listed_head or run(["git", "-C", str(path), "rev-parse", "HEAD"]).stdout.strip()
     branch = listed_branch or (
@@ -1308,7 +1308,7 @@ def possible_uuid_pattern(text: str) -> bool:
 
 
 def possible_privacy_pattern(text: str, lowered: str, label: str) -> bool:
-    """Use only necessary literals before the authoritative privacy regex."""
+    """Use literals before the privacy regex."""
     if not text.isascii():
         return True
     if label == "absolute Linux home path":
@@ -1332,7 +1332,7 @@ def possible_privacy_pattern(text: str, lowered: str, label: str) -> bool:
 
 
 def private_text_errors(relative: Path, text: str) -> list[str]:
-    """Keep the original regex and label ordering after cheap prefilters."""
+    """Keep the original privacy ordering after prefilters."""
     lowered = text.lower()
     return [
         f"{relative}: {label}"
@@ -1445,6 +1445,9 @@ def value_errors(path: Path, meta: Meta) -> list[str]:
         if not isinstance(meta.get(name), str) or not meta.get(name)
     )
     errors.extend(short_title_errors(path, task_id, meta.get("short_title")))
+    worktree_key = meta.get("worktree_key")
+    if worktree_key not in (None, "") and not valid_binding_worktree(worktree_key):
+        errors.append(f"{task_id}: invalid worktree_key")
     errors.extend(f"{task_id}: {error}" for error in gate_errors(meta.get("oracle_gate")))
     errors.extend(execution_metadata_errors(task_id, meta))
     return errors
@@ -1728,7 +1731,7 @@ def mutation_errors(
     *,
     rendered_snapshot: tuple[list[Task], dict[Path, str], Meta] | None = None,
 ) -> list[str]:
-    """Validate a Git mutation without gating on unrelated repository findings."""
+    """Validate a Git mutation."""
     tasks = all_tasks()
     selected = [meta for candidate, meta, _ in tasks if candidate == path]
     if len(selected) != 1:
@@ -1743,17 +1746,17 @@ def mutation_errors(
 
 
 def render_status_view(tasks: list[Task]) -> str:
-    """Render the public task dashboard with coordinator presentation constants."""
+    """Render the public dashboard."""
     return render_status(tasks, STATUSES, PRIORITIES, str(project_settings()["project_title"]))
 
 
 def render_status_views(tasks: list[Task]) -> dict[str, str]:
-    """Render the complete status view through the compatibility render hook."""
+    """Render the complete status view."""
     return render_status_pages_from_text(render_status_view(tasks))
 
 
 def status_projection_errors(expected: dict[str, str]) -> list[str]:
-    """Compare status pages and report missing, changed, or orphaned files."""
+    """Compare status pages."""
     errors = [
         f"{relative} differs from generated tasks"
         for relative, content in expected.items()
@@ -1785,7 +1788,7 @@ def generated_view_errors(
     *,
     rendered_snapshot: tuple[list[Task], dict[Path, str], Meta] | None = None,
 ) -> list[str]:
-    """Check both task-derived views without allowing renderer errors to escape."""
+    """Check task-derived views."""
     errors: list[str] = []
     if not all(meta.get("status") in STATUSES for _, meta, _ in tasks):
         return errors
@@ -1814,7 +1817,7 @@ def generated_view_errors(
 
 
 def rollback_validation_errors() -> list[str]:
-    """Validate the durable rollback journal independently from task views."""
+    """Validate the rollback journal."""
     try:
         for record in load_records(ROOT):
             validate_record(record)
@@ -1824,7 +1827,7 @@ def rollback_validation_errors() -> list[str]:
 
 
 def session_validation_errors() -> list[str]:
-    """Validate every authoritative session record on the selected backend."""
+    """Validate session records."""
     try:
         for record in storage_backend().load_session_records():
             validate_session_record(record)
@@ -1834,7 +1837,7 @@ def session_validation_errors() -> list[str]:
 
 
 def directive_validation_errors() -> list[str]:
-    """Validate the bounded directive journal and its active precedence rules."""
+    """Validate the directive journal."""
     try:
         records = latest_directives(ROOT)
         for record in records:
@@ -1960,7 +1963,7 @@ def is_ancestor(older: str, newer: str) -> bool:
 
 
 def record_replica_block(code: str, local_head: str, remote_head: str) -> None:
-    """Persist a privacy-safe circuit-breaker marker for reconciliation services."""
+    """Persist a reconciliation circuit-breaker marker."""
     atomic(
         REPLICA_BLOCKED,
         json.dumps(
@@ -1978,12 +1981,12 @@ def record_replica_block(code: str, local_head: str, remote_head: str) -> None:
 
 
 def clear_replica_block() -> None:
-    """Clear a replica circuit breaker after verified ancestry recovery."""
+    """Clear a recovered replica circuit breaker."""
     REPLICA_BLOCKED.unlink(missing_ok=True)
 
 
 def sync_replica_before_write() -> None:
-    """Fast-forward a clean behind replica before creating coordinator state."""
+    """Fast-forward a clean replica."""
     if not replication_enabled():
         return
     local_head, remote_head = replica_heads()
@@ -2025,7 +2028,7 @@ def push_replica() -> None:
 
 
 def restore_paths(before: dict[Path, str | None]) -> None:
-    """Restore a pre-transaction snapshot after a detected failure."""
+    """Restore a transaction snapshot."""
     for path, old in before.items():
         if old is None:
             path.unlink(missing_ok=True)
@@ -2034,7 +2037,7 @@ def restore_paths(before: dict[Path, str | None]) -> None:
 
 
 def generated_paths() -> list[Path]:
-    """Return every configured generated projection path."""
+    """Return generated projection paths."""
     names = ["CURRENT.md", "PROJECT_STATE.md", "WORKTREES.md"]
     if project_settings()["status_view"]:
         names.append("STATUS.md")
@@ -2045,7 +2048,7 @@ def generated_paths() -> list[Path]:
 
 
 def changed_paths(before: dict[Path, str | None], *, include_deleted: bool = False) -> list[Path]:
-    """Return paths whose current text differs from the captured snapshot."""
+    """Return changed snapshot paths."""
     return [
         path
         for path, old in before.items()
@@ -2055,7 +2058,7 @@ def changed_paths(before: dict[Path, str | None], *, include_deleted: bool = Fal
 
 
 def write_generated_views(tasks: list[Task], state: Meta) -> None:
-    """Atomically refresh every configured generated projection."""
+    """Atomically refresh projections."""
     atomic(ROOT / "CURRENT.md", render_current(tasks))
     if project_settings()["status_view"]:
         expected = render_status_views(tasks)
@@ -2066,7 +2069,7 @@ def write_generated_views(tasks: list[Task], state: Meta) -> None:
 
 
 def policy_snapshot(policy: EvidencePolicy | None) -> EvidencePolicy:
-    """Use one caller-owned policy snapshot or load it once at the outer boundary."""
+    """Return one policy snapshot."""
     return evidence_policy(ROOT) if policy is None else policy
 
 
@@ -2100,7 +2103,7 @@ def reconcile(
 
 
 def observation_is_superseded(scan_config: Meta | None, scan_binding: Meta, ticket: int) -> bool:
-    """Fence an unlocked scan against changed inputs and newer publications."""
+    """Fence an unlocked scan."""
     if backend_selection()["backend"] != "git":
         raise RuntimeError("BACKEND_CHANGED: retry using the selected backend")
     current_config = config() if CONFIG.exists() else None
@@ -2111,7 +2114,7 @@ def observation_is_superseded(scan_config: Meta | None, scan_binding: Meta, tick
 
 
 def pending_observation_paths() -> list[Path]:
-    """Return only coordinator-produced paths awaiting a reconciliation commit."""
+    """Return pending coordinator paths."""
     marker = RUNTIME / "last-reconcile.json"
     if not marker.exists():
         return []
@@ -2136,7 +2139,7 @@ def pending_observation_paths() -> list[Path]:
 
 
 def pending_path_matches_head(path: Path) -> bool:
-    """Discard only paths already committed (or absent both locally and at HEAD)."""
+    """Discard paths already committed."""
     relative = path.relative_to(ROOT).as_posix()
     committed = run(["git", "-C", str(ROOT), "show", f"HEAD:{relative}"], check=False)
     if committed.returncode:
@@ -2145,7 +2148,7 @@ def pending_path_matches_head(path: Path) -> bool:
 
 
 def validate_pending_path_scope(paths: list[Path]) -> None:
-    """Refuse marker paths outside task and generated projection namespaces."""
+    """Refuse unsafe marker paths."""
     allowed = {path.resolve() for path, _, _ in all_tasks()}
     allowed.update(path.resolve() for path in generated_paths())
     if any(
@@ -2160,12 +2163,12 @@ def validate_pending_path_scope(paths: list[Path]) -> None:
 
 
 def pending_path_digest(path: Path) -> str | None:
-    """Bind a pending path to exact contents, including an intentional deletion."""
+    """Bind a pending path to contents."""
     return hashlib.sha256(path.read_bytes()).hexdigest() if path.exists() else None
 
 
 def remaining_pending_paths(paths: list[Path], do_commit: bool) -> list[str]:
-    """Keep coordinator-produced paths until a commit request consumes them."""
+    """Keep coordinator paths pending commit."""
     if do_commit:
         return []
     return [str(path.relative_to(ROOT)) for path in paths]
@@ -2180,7 +2183,7 @@ def apply_git_reconciliation(
     do_commit: bool,
     push: bool,
 ) -> bool | None:
-    """Apply a completed external observation while holding the authority lock."""
+    """Apply an external observation."""
     if observation_is_superseded(scan_config, scan_binding, ticket):
         return None
     prior_pending = pending_observation_paths()
@@ -2233,7 +2236,7 @@ def apply_git_reconciliation(
 
 
 def write_session_projections(session_records: list[Meta]) -> list[Path]:
-    """Render bounded session histories from authoritative records."""
+    """Render bounded session histories."""
     by_task: dict[str, list[Meta]] = {}
     for record in session_records:
         validate_session_record(record)
@@ -2254,7 +2257,7 @@ def write_session_projections(session_records: list[Meta]) -> list[Path]:
 
 
 def write_checkpoint_projections(checkpoint_records: list[Meta]) -> list[Path]:
-    """Render bounded checkpoint histories from authoritative SQLite records."""
+    """Render bounded checkpoint histories."""
     by_task: dict[str, list[Meta]] = {}
     for record in checkpoint_records:
         validate_checkpoint(record)
@@ -2280,7 +2283,7 @@ def write_sqlite_projections(
     already_locked: bool = False,
     policy: EvidencePolicy | None = None,
 ) -> list[Path]:
-    """Regenerate byte-stable Markdown projections from one database snapshot."""
+    """Regenerate Markdown projections."""
     selected_policy = policy_snapshot(policy)
     with contextlib.nullcontext() if already_locked else locked():
         expected = {path.resolve() for path, _, _ in tasks}
@@ -2312,13 +2315,13 @@ def write_sqlite_projections(
 
 
 def export_sqlite_projections(policy: EvidencePolicy | None = None) -> list[Path]:
-    """Regenerate projections from the currently selected SQLite authority."""
+    """Regenerate SQLite projections."""
     selected_policy = policy_snapshot(policy)
     return write_sqlite_projections(all_tasks(), policy=selected_policy)
 
 
 def refresh_sqlite_live_state() -> State | None:
-    """Refresh live observations when the private runtime is configured."""
+    """Refresh configured live observations."""
     if not (CONFIG.exists() and config().get("github_repository")):
         return None
     state = project_scan()
@@ -2328,7 +2331,7 @@ def refresh_sqlite_live_state() -> State | None:
 
 
 def reconcile_sqlite(*, do_commit: bool, push: bool, policy: EvidencePolicy | None = None) -> bool:
-    """Export local authority; optional Git/GitHub publication is a replica only."""
+    """Export local authority."""
     if push and not do_commit:
         raise RuntimeError("SQLite publication requires --commit with --push")
     selected_policy = policy_snapshot(policy)
@@ -2361,14 +2364,7 @@ def locate(task_id: str) -> Task:
 
 
 def dependency_satisfied(dependency_id: str, tasks: list[Task]) -> bool:
-    """Return whether one dependency is complete or explicitly superseded.
-
-    A superseded task is not completion by itself. It satisfies a dependency
-    only when its ``superseded_by`` field names an existing task that is done,
-    or a finite chain of explicitly superseding tasks ending in one that is
-    done. Malformed, missing, self-referential, cyclic, or unfinished
-    successors therefore remain fail-closed and block the transition.
-    """
+    """Return whether a dependency is terminal."""
     by_id = {meta.get("id"): meta for _, meta, _ in tasks}
     seen: set[str] = set()
     current = dependency_id
@@ -2391,7 +2387,7 @@ def dependency_satisfied(dependency_id: str, tasks: list[Task]) -> bool:
 
 
 def require_role_admission(owner_id: str, required_role: str = "implementer") -> None:
-    """Compatibility no-op: role assignments are advisory, never an execution gate."""
+    """Retain advisory role compatibility."""
     del owner_id, required_role
 
 
@@ -2479,7 +2475,7 @@ def apply_claim(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
 
 
 def dirty_state_paths() -> list[str]:
-    """Return public state-repository changes that would make promotion ambiguous."""
+    """Return ambiguous public changes."""
     result = run(
         [
             "git",
@@ -2745,7 +2741,7 @@ def apply_bind_spec(args: argparse.Namespace, meta: Meta, policy: EvidencePolicy
 
 
 def valid_binding_branch(value: object) -> bool:
-    """Accept one bounded, non-detached branch accepted by Git itself."""
+    """Validate a branch."""
     if not isinstance(value, str) or len(value) > 128 or value == "DETACHED":
         return False
     try:
@@ -2756,18 +2752,26 @@ def valid_binding_branch(value: object) -> bool:
 
 
 def valid_binding_worktree(value: object) -> bool:
-    """Accept one bounded worktree basename below the configured projects root."""
-    if not isinstance(value, str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]{0,127}", value):
+    """Validate a direct worktree."""
+    if not change_drift.valid_worktree_key(value):
         return False
-    if value in {".", "..", str(config().get("product_worktree", ""))}:
-        return False
+    value = cast(str, value)
     try:
-        return inside(
-            Path(str(config()["projects_root"])).resolve() / value,
-            Path(str(config()["projects_root"])).resolve(),
-        )
-    except (KeyError, RuntimeError):
+        settings = config()
+        if value in {".", "..", str(settings.get("product_worktree", ""))}:
+            return False
+        if "projects_root" not in settings:
+            return bool(settings)
+        projects_root = settings["projects_root"]
+        if not isinstance(projects_root, str) or not projects_root:
+            return False
+        root = Path(projects_root).resolve()
+        candidate = root / value
+        return not candidate.is_symlink() and inside(candidate, root)
+    except KeyError:
         return False
+    except RuntimeError:
+        return not CONFIG.exists()
 
 
 def binding_identity_conflicts(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> bool:
@@ -3174,7 +3178,11 @@ def lifecycle_transition_handler(
         "recover-execution": lambda: apply_recover_execution(args, meta),
         "gate": lambda: apply_gate(args, meta),
         "change-drift": lambda: change_drift.apply(
-            args, meta, Path(str(config()["projects_root"])), now()
+            args,
+            meta,
+            Path(str(config()["projects_root"])),
+            now(),
+            str(config().get("product_worktree", "")),
         ),
         "assumption": lambda: assumption_revalidation.apply(
             ROOT, Path(str(config()["projects_root"])), args, meta, [item for _, item, _ in tasks]
@@ -4057,57 +4065,93 @@ def require_active_owner(task_id: str, owner: str) -> EvidencePolicy:
 
 
 def execution_preflight(args: argparse.Namespace) -> tuple[bool, str, str, float | None]:
-    """Evaluate a bound envelope and return its admission result plus timeout cap."""
+    """Evaluate envelope admission."""
     with locked(exclusive=False, phase="execution_envelope_preflight"):
+        release_envelope_worktree(args)
         _, meta, _ = locate(args.task)
-        worktree_key = meta.get("worktree_key")
-        if not isinstance(worktree_key, str) or not worktree_key:
+        if not meta.get("worktree_key"):
             return False, "WORKTREE_BINDING_REQUIRED", "bound execution requires a worktree", None
-        worktree = Path(str(config()["projects_root"])).resolve() / worktree_key
-        result = execution_envelope.preflight(
-            meta,
-            args.owner,
-            args.command_class,
-            list(args.scope_path),
-            worktree,
-        )
-        if not result.allowed:
-            return False, result.code, result.detail, None
-        envelope = meta.get("execution_envelope")
-        if not isinstance(envelope, dict):
-            return False, "ENVELOPE_INVALID", "durable execution envelope is missing", None
-        if execution_envelope.canonical_digest(envelope) != meta.get("execution_envelope_digest"):
-            return False, "ENVELOPE_INVALID", "durable execution envelope digest mismatches", None
-        mount_scope = list(envelope["path_scope"]["read"])
-        if args.command_class in {"source-write", "git-publication"}:
-            mount_scope.extend(args.scope_path)
         try:
+            worktree_context = change_drift.bound_worktree(
+                meta,
+                Path(str(config()["projects_root"])),
+                str(config().get("product_worktree", "")),
+            )
+            worktree = worktree_context.__enter__()
+            args._envelope_worktree_context = worktree_context
+        except RuntimeError as error:
+            return False, "WORKTREE_BINDING_INVALID", str(error), None
+        try:
+            result = execution_envelope.preflight(
+                meta,
+                args.owner,
+                args.command_class,
+                list(args.scope_path),
+                worktree,
+            )
+            if not result.allowed:
+                release_envelope_worktree(args)
+                return False, result.code, result.detail, None
+            envelope = meta.get("execution_envelope")
+            if not isinstance(envelope, dict):
+                release_envelope_worktree(args)
+                return False, "ENVELOPE_INVALID", "durable execution envelope is missing", None
+            if execution_envelope.canonical_digest(envelope) != meta.get(
+                "execution_envelope_digest"
+            ):
+                release_envelope_worktree(args)
+                return (
+                    False,
+                    "ENVELOPE_INVALID",
+                    "durable execution envelope digest mismatches",
+                    None,
+                )
+            mount_scope = list(envelope["path_scope"]["read"])
+            if args.command_class in {"source-write", "git-publication"}:
+                mount_scope.extend(args.scope_path)
             for relative in mount_scope:
                 envelope_scope_path(worktree, str(relative))
+            rule = envelope["command_classes"][args.command_class]
+            args._envelope_worktree = str(worktree)
+            args._envelope_worktree_fd = int(worktree.name)
+            args._envelope_worktree_context = worktree_context
+            args._envelope_write_scope = (
+                list(args.scope_path)
+                if args.command_class in {"source-write", "git-publication"}
+                else []
+            )
+            args._envelope_read_scope = list(envelope["path_scope"]["read"])
+            return True, result.code, result.detail, rule.get("timeout_seconds")
         except RuntimeError as error:
+            release_envelope_worktree(args)
             return False, "PATH_SCOPE_UNAVAILABLE", str(error), None
-        rule = envelope["command_classes"][args.command_class]
-        args._envelope_worktree = str(worktree)
-        args._envelope_write_scope = (
-            list(args.scope_path)
-            if args.command_class in {"source-write", "git-publication"}
-            else []
-        )
-        args._envelope_read_scope = list(envelope["path_scope"]["read"])
-        return True, result.code, result.detail, rule.get("timeout_seconds")
+
+
+def release_envelope_worktree(args: argparse.Namespace) -> None:
+    """Close a descriptor retained from bound execution admission."""
+    context = getattr(args, "_envelope_worktree_context", None)
+    if context is not None:
+        delattr(args, "_envelope_worktree_context")
+        context.__exit__(None, None, None)
+    for name in ("_envelope_worktree", "_envelope_worktree_fd"):
+        if hasattr(args, name):
+            delattr(args, name)
 
 
 def print_execution_preflight(args: argparse.Namespace) -> int:
     """Print an explainable, side-effect-free envelope admission decision."""
-    allowed, code, detail, timeout = execution_preflight(args)
-    result: dict[str, object] = {"allowed": allowed, "code": code, "detail": detail}
-    if timeout is not None:
-        result["timeout_seconds"] = timeout
-    if args.json:
-        print(json.dumps(result, sort_keys=True, separators=(",", ":")))
-    else:
-        print(f"{code}: {detail}")
-    return 0 if allowed else 2
+    try:
+        allowed, code, detail, timeout = execution_preflight(args)
+        result: dict[str, object] = {"allowed": allowed, "code": code, "detail": detail}
+        if timeout is not None:
+            result["timeout_seconds"] = timeout
+        if args.json:
+            print(json.dumps(result, sort_keys=True, separators=(",", ":")))
+        else:
+            print(f"{code}: {detail}")
+        return 0 if allowed else 2
+    finally:
+        release_envelope_worktree(args)
 
 
 def run_envelope_timeout(args: argparse.Namespace) -> float | None:
@@ -4136,13 +4180,7 @@ envelope_scope_path = execution_envelope.envelope_scope_path
 
 
 def invocation_worktree() -> tuple[str, str] | None:
-    """Return the product worktree identity when called from a product checkout.
-
-    The coordinator itself is normally invoked from the bound state repository, so
-    that location remains valid for state-only commands.  When a caller starts in
-    the configured product checkout, identify the actual Git root and branch so an
-    active task can be fenced to its declared worktree.
-    """
+    """Return product worktree identity."""
     if not CONFIG.exists():
         return None
     settings = config()
@@ -4168,7 +4206,7 @@ def invocation_worktree() -> tuple[str, str] | None:
 
 
 def assert_invocation_worktree(meta: Meta) -> None:
-    """Reject product-checkout calls that do not match the active task claim."""
+    """Fence product-checkout calls."""
     observed = invocation_worktree()
     if observed is None:
         return
@@ -4234,6 +4272,20 @@ _RUN_RUNTIME = _RunRuntime()
 
 def cmd_run(args: argparse.Namespace) -> int:
     return run_command.cmd_run(_RUN_RUNTIME, args)
+
+
+def _run_envelope_subprocess(
+    command: list[str], timeout: float, args: argparse.Namespace
+) -> subprocess.CompletedProcess[bytes]:
+    if hasattr(args, "_envelope_worktree_fd"):
+        return subprocess.run(
+            command,
+            check=False,
+            stdin=subprocess.DEVNULL,
+            timeout=timeout,
+            pass_fds=(int(args._envelope_worktree_fd),),
+        )
+    return subprocess.run(command, check=False, stdin=subprocess.DEVNULL, timeout=timeout)
 
 
 def _cmd_run_fenced(
@@ -4303,12 +4355,7 @@ def _cmd_run_fenced(
             args.retry_circuit_resolution_revision = int(args.expected_revision) + 1
     timed_out = False
     try:
-        proc = subprocess.run(
-            command,
-            check=False,
-            stdin=subprocess.DEVNULL,
-            timeout=timeout,
-        )
+        proc = _run_envelope_subprocess(command, timeout, args)
     except subprocess.TimeoutExpired:
         timed_out = True
         returncode = 124

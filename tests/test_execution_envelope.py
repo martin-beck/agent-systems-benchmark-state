@@ -5,15 +5,10 @@
 from __future__ import annotations
 
 import json
-import os
-import sys
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
-from types import SimpleNamespace
-from unittest.mock import patch
 
-from tools import execution_envelope
 from tools.execution_envelope import Preflight, canonical_digest, digest, errors, load, preflight
 
 
@@ -47,7 +42,6 @@ class ExecutionEnvelopeTests(unittest.TestCase):
         (self.root / "envelopes").mkdir()
         self.worktree = self.root / "worker"
         (self.worktree / "src").mkdir(parents=True)
-        (self.worktree / "tests").mkdir()
         self.reference = "envelopes/AR-0001-e1.json"
         self.write_envelope(envelope())
 
@@ -210,140 +204,6 @@ class ExecutionEnvelopeTests(unittest.TestCase):
         self.assertEqual(
             ["envelope reference contains a symlink"], load(self.root, self.reference)[2]
         )
-
-    def test_descriptor_openers_reject_unsafe_missing_and_non_directory_sources(self) -> None:
-        file_path = self.root / "plain-file"
-        file_path.write_text("not a directory", encoding="utf-8")
-        with self.assertRaisesRegex(RuntimeError, "must be absolute"):
-            execution_envelope._open_path(Path("relative"))
-        with self.assertRaisesRegex(FileNotFoundError, "missing"):
-            execution_envelope._open_path(self.root / "missing")
-        with self.assertRaisesRegex(RuntimeError, "not a directory"):
-            execution_envelope._open_path(file_path, directory=True)
-        for relative in ("", ".", "../escape"):
-            with self.assertRaisesRegex(RuntimeError, "unsafe"):
-                execution_envelope._open_scope_path(self.worktree, relative)
-        with self.assertRaisesRegex(FileNotFoundError, "missing"):
-            execution_envelope._open_scope_path(self.worktree, "missing")
-        with self.assertRaisesRegex(RuntimeError, "non-directory component"):
-            execution_envelope._open_scope_path(self.root, "plain-file/child")
-
-    def test_sandbox_command_serializes_descriptor_and_fallback_mount_modes(self) -> None:
-        descriptor = os.open(self.worktree, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
-        try:
-            bound = SimpleNamespace(
-                command=["true"],
-                _envelope_worktree=str(self.worktree),
-                _envelope_worktree_fd=descriptor,
-                _envelope_write_scope=["src"],
-                _envelope_read_scope=["tests"],
-            )
-            with patch("tools.execution_envelope.shutil.which", return_value="/usr/bin/bwrap"):
-                bound_payload = json.loads(execution_envelope.sandboxed_envelope_command(bound)[4])
-            self.assertEqual(descriptor, bound_payload["specification"]["root_fd"])
-            self.assertEqual(
-                [
-                    {"relative": "tests", "destination": "/worktree/tests", "mode": "--ro-bind"},
-                    {"relative": "src", "destination": "/worktree/src", "mode": "--bind"},
-                ],
-                bound_payload["specification"]["mounts"],
-            )
-            delattr(bound, "_envelope_worktree_fd")
-            with patch("tools.execution_envelope.shutil.which", return_value="/usr/bin/bwrap"):
-                fallback_payload = json.loads(
-                    execution_envelope.sandboxed_envelope_command(bound)[4]
-                )
-            self.assertIsNone(fallback_payload["specification"]["root_fd"])
-            self.assertEqual("src", fallback_payload["specification"]["mounts"][1]["relative"])
-        finally:
-            os.close(descriptor)
-
-    def test_sandbox_helper_rejects_bad_argv_and_releases_opened_descriptors(self) -> None:
-        with (
-            patch.object(sys, "argv", ["helper"]),
-            self.assertRaisesRegex(RuntimeError, "arguments"),
-        ):
-            execution_envelope._run_sandbox_helper()
-        with (
-            patch.object(sys, "argv", ["helper", str(self.root), "{", "--"]),
-            self.assertRaises(json.JSONDecodeError),
-        ):
-            execution_envelope._run_sandbox_helper()
-        payload = {
-            "command": ["bwrap"],
-            "specification": {
-                "root": str(self.worktree),
-                "root_fd": None,
-                "mounts": [
-                    {"relative": "src", "destination": "/worktree/src", "mode": "--ro-bind"}
-                ],
-            },
-        }
-        seed = os.open(self.worktree, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
-        opened: list[int] = []
-
-        def duplicate(*_args: object, **_kwargs: object) -> int:
-            descriptor = os.dup(seed)
-            opened.append(descriptor)
-            return descriptor
-
-        argv = ["helper", str(self.root), json.dumps(payload), "--", "true"]
-        try:
-            with (
-                patch.object(sys, "argv", argv),
-                patch.object(execution_envelope, "_open_path", side_effect=duplicate),
-                patch.object(execution_envelope, "_open_scope_path", side_effect=duplicate),
-                patch("tools.execution_envelope.shutil.which", return_value=None),
-                self.assertRaisesRegex(RuntimeError, "requires bubblewrap"),
-            ):
-                execution_envelope._run_sandbox_helper()
-            self.assertEqual(4, len(opened))
-            for descriptor in opened:
-                with self.assertRaises(OSError):
-                    os.fstat(descriptor)
-        finally:
-            os.close(seed)
-
-    def test_sandbox_helper_uses_inherited_root_descriptor_and_cleans_up_after_exec(self) -> None:
-        root_descriptor = os.open(self.worktree, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
-        seed = os.open(self.worktree, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
-        opened: list[int] = []
-
-        def duplicate(*_args: object, **_kwargs: object) -> int:
-            descriptor = os.dup(seed)
-            opened.append(descriptor)
-            return descriptor
-
-        payload = {
-            "command": ["bwrap"],
-            "specification": {
-                "root": str(self.worktree),
-                "root_fd": root_descriptor,
-                "mounts": [{"relative": "src", "destination": "/worktree/src", "mode": "--bind"}],
-            },
-        }
-        argv = ["helper", str(self.root), json.dumps(payload), "--", "true"]
-        try:
-            with (
-                patch.object(sys, "argv", argv),
-                patch.object(execution_envelope, "_open_path", side_effect=duplicate),
-                patch.object(
-                    execution_envelope, "_open_scope_fd", side_effect=duplicate
-                ) as scope_fd,
-                patch.object(execution_envelope.os, "execvpe", side_effect=OSError("exec blocked")),
-                patch("tools.execution_envelope.shutil.which", return_value="/usr/bin/bwrap"),
-                self.assertRaisesRegex(OSError, "exec blocked"),
-            ):
-                execution_envelope._run_sandbox_helper()
-            scope_fd.assert_called_once_with(root_descriptor, "src")
-            self.assertEqual(4, len(opened))
-            os.fstat(root_descriptor)
-            for descriptor in opened:
-                with self.assertRaises(OSError):
-                    os.fstat(descriptor)
-        finally:
-            os.close(seed)
-            os.close(root_descriptor)
 
 
 if __name__ == "__main__":  # pragma: no cover

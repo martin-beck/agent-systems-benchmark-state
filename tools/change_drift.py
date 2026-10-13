@@ -5,12 +5,15 @@
 from __future__ import annotations
 
 import argparse
+import contextlib
 import hashlib
 import json
+import os
 import re
 import subprocess
+from collections.abc import Iterator
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 type Meta = dict[str, Any]
 
@@ -20,6 +23,7 @@ TASK = re.compile(r"^AR-[0-9]{4}$")
 DIGEST = re.compile(r"^sha256:[0-9a-f]{64}$")
 KINDS = frozenset({"baseline", "delta", "explain", "rescope"})
 CLASSIFICATIONS = frozenset({"in_scope", "out_of_scope"})
+WORKTREE_KEY = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$")
 
 
 def canonical(value: object) -> bytes:
@@ -39,6 +43,11 @@ def safe_path(value: object) -> bool:
         and not Path(value).is_absolute()
         and all(part not in {"", ".", ".."} for part in Path(value).parts)
     )
+
+
+def valid_worktree_key(value: object) -> bool:
+    """Accept one bounded basename suitable for a projects-root child."""
+    return isinstance(value, str) and bool(WORKTREE_KEY.fullmatch(value))
 
 
 def normalize_scope(values: list[str]) -> list[str]:
@@ -116,7 +125,7 @@ def _status_entries(raw: bytes, worktree: Path | None = None) -> list[Meta]:
 
 def observe(worktree: Path) -> Meta:
     """Take a stable, path-safe worktree observation without changing it."""
-    root = worktree.resolve()
+    root = worktree
     head = subprocess.run(  # noqa: S603
         ["git", "-C", str(root), "rev-parse", "--verify", "HEAD"],  # noqa: S607
         check=False,
@@ -628,15 +637,40 @@ def next_record(
     raise ValueError("unknown change-drift action")
 
 
-def bound_worktree(meta: Meta, projects_root: Path) -> Path:
-    """Resolve the task's declared worktree without accepting arbitrary paths."""
+@contextlib.contextmanager
+def bound_worktree(
+    meta: Meta, projects_root: Path, product_worktree: str | None = None
+) -> Iterator[Path]:
+    """Yield a no-follow descriptor path for the task's declared worktree."""
     key = meta.get("worktree_key")
-    if not isinstance(key, str) or not key:
+    if not valid_worktree_key(key) or key == product_worktree:
         raise RuntimeError("change-drift requires a bound worktree")
-    return projects_root.resolve() / key
+    key = cast(str, key)
+    root = projects_root.resolve()
+    try:
+        root_fd = os.open(root, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
+        try:
+            worktree_fd = os.open(key, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=root_fd)
+        except BaseException:
+            os.close(root_fd)
+            raise
+    except OSError as error:
+        raise RuntimeError("change-drift bound worktree must be a direct directory") from error
+    try:
+        # Child Git processes dereference this coordinator-owned descriptor, not their own.
+        yield Path(f"/proc/{os.getpid()}/fd/{worktree_fd}")
+    finally:
+        os.close(worktree_fd)
+        os.close(root_fd)
 
 
-def apply(args: argparse.Namespace, meta: Meta, projects_root: Path, timestamp: str) -> str:
+def apply(
+    args: argparse.Namespace,
+    meta: Meta,
+    projects_root: Path,
+    timestamp: str,
+    product_worktree: str | None = None,
+) -> str:
     """Apply the command boundary's owner/revision-fenced drift mutation."""
     if meta.get("owner") != args.owner or meta.get("status") != "in_progress":
         raise RuntimeError("change-drift requires the active task owner")
@@ -646,18 +680,19 @@ def apply(args: argparse.Namespace, meta: Meta, projects_root: Path, timestamp: 
         )
     history = records(meta)
     revision = int(meta["task_revision"]) + 1
-    record, history = next_record(
-        args.task,
-        revision,
-        timestamp,
-        bound_worktree(meta, projects_root),
-        history,
-        args.change_drift_action,
-        scope_paths=getattr(args, "scope_path", None),
-        paths=getattr(args, "path", None),
-        reason=getattr(args, "reason", None),
-        generated=getattr(args, "generated", False),
-    )
+    with bound_worktree(meta, projects_root, product_worktree) as worktree:
+        record, history = next_record(
+            args.task,
+            revision,
+            timestamp,
+            worktree,
+            history,
+            args.change_drift_action,
+            scope_paths=getattr(args, "scope_path", None),
+            paths=getattr(args, "path", None),
+            reason=getattr(args, "reason", None),
+            generated=getattr(args, "generated", False),
+        )
     if len(history) >= MAX_RECORDS:
         raise RuntimeError("change-drift active cycle reached its bounded record limit")
     meta["change_drift"] = [*history, record]

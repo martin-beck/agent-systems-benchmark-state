@@ -186,3 +186,30 @@ class ExecutionSandboxTests(unittest.TestCase):
                 )
             finally:
                 os.close(descriptor)
+
+    def test_inherited_worktree_descriptor_survives_prelaunch_replacement(self) -> None:
+        """The helper mounts the admitted descriptor, not its later pathname."""
+        with TemporaryDirectory() as temporary:
+            parent = Path(temporary)
+            root = parent / "candidate"
+            (root / "src").mkdir(parents=True)
+            (root / "src" / "marker").write_text("original", encoding="utf-8")
+            descriptor = os.open(root, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
+            try:
+                args = argparse.Namespace(
+                    command=["sh", "-ceu", 'test "$(cat src/marker)" = original'],
+                    _envelope_worktree=str(root),
+                    _envelope_worktree_fd=descriptor,
+                    _envelope_write_scope=[],
+                    _envelope_read_scope=["src"],
+                )
+                command = sandboxed_envelope_command(args)
+                root.rename(parent / "parked")
+                (root / "src").mkdir(parents=True)
+                (root / "src" / "marker").write_text("replacement", encoding="utf-8")
+                result = subprocess.run(  # noqa: S603 -- fixed test argv exercises descriptor passing.
+                    command, check=False, pass_fds=(descriptor,)
+                )
+                self.assertEqual(0, result.returncode)
+            finally:
+                os.close(descriptor)

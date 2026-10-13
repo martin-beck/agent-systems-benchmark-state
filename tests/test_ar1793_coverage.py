@@ -349,7 +349,10 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
             self.assertFalse(handoffctl.valid_binding_worktree("product"))
             self.assertFalse(handoffctl.valid_binding_worktree("not allowed"))
         with patch.object(handoffctl, "config", return_value={"product_worktree": "product"}):
-            self.assertFalse(handoffctl.valid_binding_worktree("receipt-worker"))
+            # SQLite projection-only state has no local projects_root.  It may
+            # retain structurally valid worktree metadata while the runtime
+            # binding enforces the physical checkout boundary.
+            self.assertTrue(handoffctl.valid_binding_worktree("receipt-worker"))
 
     def test_accept_and_mutate_keep_failure_and_idempotency_boundaries(self) -> None:
         accepted = {**self.meta, "spec_ref": "specs/a.json", "spec_revision": 1}

@@ -380,7 +380,13 @@ def sandboxed_envelope_command(args: Any) -> list[str]:
     if shutil.which("bwrap") is None:
         raise RuntimeError("execution envelope sandbox requires bubblewrap (bwrap)")
     root = Path(worktree).absolute()
-    mounts = envelope_sandbox_mounts(root, read_scope, write_scope)
+    root_fd = getattr(args, "_envelope_worktree_fd", None)
+    if type(root_fd) is int and root_fd >= 0:
+        mounts = [(str(relative), Path(), "--ro-bind") for relative in read_scope] + [
+            (str(relative), Path(), "--bind") for relative in write_scope
+        ]
+    else:
+        mounts = envelope_sandbox_mounts(root, read_scope, write_scope)
     targets = {Path("/worktree")}
     for relative, _candidate, _flag in mounts:
         targets.update((Path("/worktree") / relative).parents)
@@ -391,6 +397,7 @@ def sandboxed_envelope_command(args: Any) -> list[str]:
         command.extend(["--dir", str(directory)])
     specification = {
         "root": str(root),
+        "root_fd": root_fd,
         "mounts": [
             {"relative": relative, "destination": f"/worktree/{relative}", "mode": flag}
             for relative, _candidate, flag in mounts
@@ -544,6 +551,27 @@ def _open_scope_path(root: Path, relative: str) -> int:
         raise
 
 
+def _open_scope_fd(root_fd: int, relative: str) -> int:
+    """Open a declared source beneath an inherited no-follow root descriptor."""
+    parts = Path(relative).parts
+    if not parts or any(part in {"", ".", ".."} for part in parts):
+        raise RuntimeError("sandbox source path is unsafe")
+    current = os.dup(root_fd)
+    try:
+        for index, part in enumerate(parts):
+            next_fd = os.open(part, os.O_PATH | os.O_NOFOLLOW, dir_fd=current)
+            if index < len(parts) - 1 and not stat.S_ISDIR(os.fstat(next_fd).st_mode):
+                os.close(next_fd)
+                raise RuntimeError("sandbox source contains a non-directory component")
+            os.close(current)
+            current = next_fd
+        os.set_inheritable(current, True)
+        return current
+    except BaseException:
+        os.close(current)
+        raise
+
+
 def _run_sandbox_helper() -> None:
     """Open sources by descriptor, then exec Bubblewrap with descriptor mounts."""
     if len(sys.argv) < 4 or sys.argv[3] != "--":
@@ -553,6 +581,7 @@ def _run_sandbox_helper() -> None:
     command = [str(item) for item in payload["command"]]
     specification = payload["specification"]
     root = Path(specification["root"])
+    root_fd = specification.get("root_fd")
     opened: list[int] = []
     try:
         for runtime_source, runtime_destination in (
@@ -567,7 +596,11 @@ def _run_sandbox_helper() -> None:
             opened.append(fd)
             command.extend(["--ro-bind-fd", str(fd), runtime_destination])
         for mount in specification["mounts"]:
-            fd = _open_scope_path(root, str(mount["relative"]))
+            fd = (
+                _open_scope_fd(root_fd, str(mount["relative"]))
+                if type(root_fd) is int and root_fd >= 0
+                else _open_scope_path(root, str(mount["relative"]))
+            )
             opened.append(fd)
             command.extend(
                 [

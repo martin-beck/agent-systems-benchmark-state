@@ -65,7 +65,7 @@
                 }
             ]
         },
-        "worktree_key": {"type": "string"},
+        "worktree_key": {"type": "string", "pattern": "^$|^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
         "branch": {"type": "string"},
         "checkpoint_commit": {"type": "string"},
         "plan": {"type": "string"},

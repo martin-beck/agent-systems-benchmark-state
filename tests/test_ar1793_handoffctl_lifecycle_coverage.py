@@ -128,7 +128,7 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
             "config",
             side_effect=[{"product_worktree": "product"}, RuntimeError("unavailable")],
         ):
-            self.assertFalse(handoffctl.valid_binding_worktree("ar1793-worker"))
+            self.assertTrue(handoffctl.valid_binding_worktree("ar1793-worker"))
         failures: tuple[
             tuple[str, bool, bool, list[tuple[Path, dict[str, Any], str]], str], ...
         ] = (
@@ -174,6 +174,89 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
 
 class LifecycleRecoveryCoverageTests(unittest.TestCase):
     """Prove recovery and acceptance stop at their lifecycle gates."""
+
+    def test_bound_execution_transitions_preserve_receipt_and_recovery_fences(self) -> None:
+        digest = "sha256:" + "a" * 64
+        argv_digest = "b" * 64
+        start = argparse.Namespace(
+            task="AR-1793",
+            owner="worker-a",
+            expected_revision=7,
+            execution_id="c" * 32,
+            execution_expires_at="2999-01-01T00:00:00+00:00",
+            command_class="test",
+            scope_digest="sha256:" + "d" * 64,
+            argv_digest=argv_digest,
+        )
+        meta = active_meta(
+            execution_envelope={"envelope_id": "AR-1793-e1"},
+            execution_envelope_digest=digest,
+        )
+        with patch.object(handoffctl, "require_active_binding_owner"):
+            self.assertEqual(
+                "Reserved bound execution " + "c" * 32 + ".",
+                handoffctl.apply_execution_start(start, meta),
+            )
+        reservation = meta["execution_reservation"]
+        self.assertEqual(start.execution_id, reservation["execution_id"])
+        with (
+            patch.object(handoffctl, "require_active_binding_owner"),
+            self.assertRaisesRegex(RuntimeError, "live execution"),
+        ):
+            handoffctl.apply_execution_start(start, meta)
+
+        receipt = argparse.Namespace(
+            task="AR-1793",
+            owner="worker-a",
+            expected_revision=7,
+            execution_id=start.execution_id,
+            classification="EXIT",
+            returncode=0,
+            recorded_at="2026-10-13T00:00:00+00:00",
+        )
+        self.assertEqual(
+            "Recorded execution result " + start.execution_id + ".",
+            handoffctl.apply_execution_result(receipt, meta),
+        )
+        with self.assertRaisesRegex(handoffctl.IdempotentMutationError, "already recorded"):
+            handoffctl.apply_execution_result(receipt, meta)
+        finish = argparse.Namespace(
+            task="AR-1793",
+            owner="worker-a",
+            expected_revision=7,
+            execution_id=start.execution_id,
+            note="execution finished",
+        )
+        self.assertEqual("execution finished", handoffctl.apply_execution_finish(finish, meta))
+        self.assertNotIn("execution_reservation", meta)
+
+        expired = active_meta(
+            execution_reservation={
+                **reservation,
+                "expires_at": "2000-01-01T00:00:00+00:00",
+            },
+            execution_result={
+                "execution_id": start.execution_id,
+                "owner": "worker-a",
+                "envelope_digest": digest,
+                "argv_digest": argv_digest,
+                "classification": "EXIT",
+                "returncode": 0,
+                "recorded_at": "2026-10-13T00:00:00+00:00",
+            },
+        )
+        with patch.object(handoffctl, "require_claimed_worker_absent"):
+            self.assertEqual(
+                "Recovered completed execution " + start.execution_id + ".",
+                handoffctl.apply_recover_execution(
+                    argparse.Namespace(expected_revision=7), expired
+                ),
+            )
+        self.assertNotIn("execution_reservation", expired)
+        with self.assertRaisesRegex(RuntimeError, "valid reservation"):
+            handoffctl.apply_recover_execution(
+                argparse.Namespace(expected_revision=7), active_meta()
+            )
 
     def test_accept_requires_current_active_spec_and_admitted_evidence(self) -> None:
         args = argparse.Namespace(

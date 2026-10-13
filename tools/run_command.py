@@ -12,15 +12,20 @@ def cmd_run(runtime: Any, args: argparse.Namespace) -> int:  # noqa: C901
     """Execute one fenced command, then durably record its result and retry state."""
     if not args.command:
         raise RuntimeError("missing command")
-    (
-        policy,
-        command_hash,
-        timeout,
-        timed_out,
-        returncode,
-        execution_id,
-        execution_revision,
-    ) = runtime._cmd_run_fenced(args)
+    try:
+        (
+            policy,
+            command_hash,
+            timeout,
+            timed_out,
+            returncode,
+            execution_id,
+            execution_revision,
+        ) = runtime._cmd_run_fenced(args)
+    finally:
+        release = getattr(runtime, "release_envelope_worktree", None)
+        if callable(release):
+            release(args)
     if execution_id is not None:
         result = argparse.Namespace(
             task=args.task,
