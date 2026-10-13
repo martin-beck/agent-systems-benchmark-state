@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T16:00:53+00:00",
   "depends_on": [],
   "id": "AR-1850",
-  "next_action": "Hold PR #631 unmerged until AR-1856 repair and all required checks, including emulated rerun, are green; then reverify exact head and continue merge/post-merge.",
+  "next_action": "Rerun only failed Policy/coverage workflow 38410495133 through handoffctl; keep PR unmerged until rerun, pending emulated-aarch64, and all required checks are terminal green.",
   "observed_branch": "feature/ar1850-development-tui-interactive-lifetime",
   "observed_dirty": 0,
   "observed_head": "671f898b6a859655952a009b9a4468e685d74013",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:13:19+00:00",
+  "updated_at": "2026-10-13T14:19:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -95,3 +95,8 @@ cross-repository qualification.
   source_checkout exact_fixture Unavailable; focused AR-1856 repair worker is investigating.
   Credential-free rerun 115342870094 passes; Exact TUI PTY 38410494755 passes; PR #631 remains
   unmerged.
+
+- 2026-10-13T14:19:46+00:00: AR-1856 diagnostic reconciled: no deterministic product defect found.
+  Exact source_checkout fixture passed under 24-way concurrency, full suite, and local llvm-cov;
+  hosted failure was transient Unavailable under RUST_TEST_THREADS=1. PR #631 exact head remains
+  671f898b6a859655952a009b9a4468e685d74013.
