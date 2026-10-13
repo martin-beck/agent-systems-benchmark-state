@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:01:35+00:00",
+  "updated_at": "2026-10-13T16:04:09+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -120,3 +120,7 @@ artifact. Do not lower the threshold or merge PR #145.
 - 2026-10-13T16:01:35+00:00: Current live diagnostic: process tree parent 3887170 coverage runner,
   zombie child 3893141, resource_tracker 3887425; parent waiting on jbd2_log_wait_commit. No
   threshold or formal gate changes.
+
+- 2026-10-13T16:04:09+00:00: Recorded command timeout; classification=SUBPROCESS_TIMEOUT;
+  deadline=300.0s; command argv SHA-256
+  6c014e7665d80ce4ce7786da83863d150bd751d22e880a0d185024961606344d.
