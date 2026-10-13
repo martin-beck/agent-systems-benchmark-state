@@ -64,7 +64,34 @@
     "oracle_gate": {"$ref": "#/$defs/oracleGate"},
     "spec_ref": {"type": "string", "pattern": "^specs/AR-[0-9]{4}\\.json$"},
     "spec_revision": {"type": "integer", "minimum": 1},
-    "spec_acceptance": {"type": "object", "additionalProperties": true}
+    "spec_acceptance": {"type": "object", "additionalProperties": true},
+    "evidence_ledger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_ref", "candidate_digest", "steps"],
+      "properties": {
+        "candidate_ref": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"},
+        "candidate_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["predicate_id", "status", "candidate_ref", "candidate_digest", "evidence_class", "evidence_ref", "evidence_digest", "recorded_task_revision"],
+            "properties": {
+              "predicate_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{2,63}$"},
+              "status": {"enum": ["pass", "stale"]},
+              "candidate_ref": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"},
+              "candidate_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+              "evidence_class": {"enum": ["mechanical", "contract-test", "property-or-fuzz", "bounded-model", "environmental"]},
+              "evidence_ref": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"},
+              "evidence_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+              "recorded_task_revision": {"type": "integer", "minimum": 1}
+            }
+          }
+        }
+      }
+    }
   },
   "$defs": {
     "artifactRef": {
