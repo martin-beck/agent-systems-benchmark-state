@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T21:04:22+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped.",
-  "owner": "ar1858-coverage-v070-luna",
+  "owner": "",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1858.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T19:04:22+00:00",
+  "updated_at": "2026-10-13T19:04:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar1858-coverage-v070"
 }
 ---
@@ -281,3 +281,8 @@ artifact. Do not lower the threshold or merge PR #145.
   unchanged 95% gate.
 
 - 2026-10-13T19:04:22+00:00: Claimed by ar1858-coverage-v070-luna.
+
+- 2026-10-13T19:04:59+00:00: Interrupted resumed investigation before any test or product mutation.
+  Preserve prior terminal exact-head evidence: 94.6398% baseline, 94.6951% after focused tests, and
+  three TLC ClassNotFoundException fixture failures. No new coverage conclusion; keep AR-1859
+  planned.
