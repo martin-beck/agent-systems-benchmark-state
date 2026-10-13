@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T18:16:21+00:00",
   "depends_on": [],
   "id": "AR-1858",
-  "next_action": "Guarded exact-root runner completed test_issue_series_handoffctl.py successfully (handoffctl command exit 0 at 16:10:28Z). The 29% coverage artifact is intentionally partial (single file, not a floor result). Continue guarded split suites with absolute source and append, then run full guarded suite; do not accept partial coverage or change 95% threshold.",
+  "next_action": "Full guarded exact-root suite is still live at ~6m, with forkserver child epoll and coverage process reported D-state jbd2_log_wait_commit. Preserve as bounded run; classify only at handoffctl terminal timeout/result. If timeout reproduces, isolate full-suite concurrency path by guarded test-file batches.",
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:16:21+00:00",
+  "updated_at": "2026-10-13T16:20:21+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -212,3 +212,8 @@ artifact. Do not lower the threshold or merge PR #145.
 - 2026-10-13T16:13:28+00:00: Heartbeat by ar1858-coverage-v070-luna.
 
 - 2026-10-13T16:16:21+00:00: Heartbeat by ar1858-coverage-v070-luna.
+
+- 2026-10-13T16:20:21+00:00: Live diagnostic 16:19Z: full guarded runner progressed through many
+  tests but has no terminal summary. Forkserver PID 4051648 is epoll; parent coverage process
+  observed in jbd2_log_wait_commit. This is not accepted coverage or a failure until handoffctl
+  bound terminates.
