@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1849-formal-admission-env-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T20:34:11+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1849",
   "next_action": "Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94% versus required 95%. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication.",
-  "owner": "ar1849-formal-admission-env-luna",
+  "owner": "",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1849.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T19:34:27+00:00",
+  "updated_at": "2026-10-13T19:35:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -424,3 +424,13 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 
 - 2026-10-13T19:34:27+00:00: Recorded command exit 0; command argv SHA-256
   14e53f8743a23d120a63dbf91120fa1a42f04ce3fb84502eb660780b51ca9500.
+
+- 2026-10-13T19:35:02+00:00: Requalified exact current evidence: PR #145 is closed and unmerged at
+  5f30c0c92f18ae6043ceedf454c8af43fc8b48f7. Workflow-wide private TLC admission repair itself is not
+  eligible for merge/publication because terminal full run is 1,636/1,636 but 19,785 statements at
+  94.6951%, below unchanged 95% floor; no threshold/formal/resource gate weakening. Formal
+  portable-smoke passed only with TLC_MEMORY_MAX=3G, TLC_SWAP_MAX=3G and private TLC
+  runtime/work/queue/lock paths. AR-1857 owns the independent coverage seam; AR-1859 owns three
+  formal work-root failures (relative-tlc, ../hostile-tlc, relative/with space: rc1
+  ClassNotFoundException instead of rc64). No product mutation, release ownerless; preserve
+  successor boundaries.
