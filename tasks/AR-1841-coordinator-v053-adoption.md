@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T12:43:41+00:00",
+  "updated_at": "2026-10-13T12:43:50+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -435,3 +435,6 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
 
 - 2026-10-13T12:43:41+00:00: Recorded command exit 0; command argv SHA-256
   aaf35e35db5b484a39b800b6be912e989f46109de8434a4760fa1c61fc6bfe0a.
+
+- 2026-10-13T12:43:50+00:00: Recorded command exit 0; command argv SHA-256
+  cc3b3487272b6def6860788a42c5227200abc12b17be771c58b0a530f5d4ccbb.
