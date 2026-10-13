@@ -1602,11 +1602,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1826_setup_contract_luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. |
@@ -2985,7 +2985,7 @@ flowchart LR
         AR_1823["AR-1823 - Done"]:::status_done
         AR_1824["AR-1824 - Done"]:::status_done
         AR_1825["AR-1825 - Done"]:::status_done
-        AR_1826["AR-1826 - In progress"]:::status_in_progress
+        AR_1826["AR-1826 - Blocked"]:::status_blocked
         AR_1827["AR-1827 - Planned"]:::status_planned
         AR_1828["AR-1828 - Planned"]:::status_planned
         AR_1829["AR-1829 - Planned"]:::status_planned
@@ -5025,4 +5025,6 @@ flowchart LR
     classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
 ```
+
+### Accessible dependency index
 
