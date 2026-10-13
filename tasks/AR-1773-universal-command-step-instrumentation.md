@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T23:20:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -82,7 +82,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "asb_ar1773_runner_repair_luna5",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -96,11 +96,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T22:21:24+00:00",
+  "updated_at": "2026-10-13T22:21:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -398,3 +398,10 @@ non-TTY compatibility.
   tests; workspace check --locked --offline passes. Docker client exists but daemon is unavailable;
   QEMU exists without approved VM/image. No product drift or source repair justified; no gate
   weakening.
+
+- 2026-10-13T22:21:27+00:00: Released ownerless after fresh exact-head runner audit. Handoffctl
+  Bubblewrap still lacks Cargo/toolchain mounts; focused/full authorized tests exit 127 before
+  execution. Host-pinned exact-head Cargo 1.93.0 tests/check pass only as supplemental evidence.
+  Next action: coordinator-authorized runner-root repair mounting pinned Cargo 1.93.0,
+  compiler/linker, complete source and identity files, then rerun focused/full exact-head gates
+  through handoffctl. No product changes or gate weakening.
