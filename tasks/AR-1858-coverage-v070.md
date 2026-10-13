@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T17:56:04+00:00",
   "depends_on": [],
   "id": "AR-1858",
-  "next_action": "Correct the handoffctl test invocation so Python imports the bound v0.7.0 source worktree before rerunning coverage; reject the invalid 1,562-test artifact.",
+  "next_action": "Classify the 1800s timeout as invalid partial evidence; bounded split-suite runs from the exact v0.7.0 worktree are required before accepting coverage or implementing tests. Preserve /tmp/ar1858-v070.coverage as rejected.",
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T15:56:04+00:00",
+  "updated_at": "2026-10-13T15:56:12+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -78,3 +78,10 @@ artifact. Do not lower the threshold or merge PR #145.
   26c27fc541a549d6ae2db23c5201f002183c032e245c3d787413c5526f418d96.
 
 - 2026-10-13T15:56:04+00:00: Heartbeat by ar1858-coverage-v070-luna.
+
+- 2026-10-13T15:56:12+00:00: Terminal result: corrected worktree-root coverage invocation hit
+  handoffctl SUBPROCESS_TIMEOUT at 1800s (recorded 2026-10-13 15:53:13Z). Artifact
+  /tmp/ar1858-v070.coverage exists (843776 bytes) but is invalid because the run did not produce a
+  test summary or complete suite. A separate uv/coverage process is currently visible; do not
+  classify it until its terminal output is captured. Next action is bounded split-suite isolation
+  with correct worktree import order.

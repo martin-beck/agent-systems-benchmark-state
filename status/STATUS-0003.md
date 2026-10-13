@@ -2058,7 +2058,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
-| Next action | Correct the handoffctl test invocation so Python imports the bound v0.7.0 source worktree before rerunning coverage; reject the invalid 1,562-test artifact. |
+| Next action | Classify the 1800s timeout as invalid partial evidence; bounded split-suite runs from the exact v0.7.0 worktree are required before accepting coverage or implementing tests. Preserve /tmp/ar1858-v070.coverage as rejected. |
 
 
 ## Dependency graph
