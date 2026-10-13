@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T17:03:22+00:00",
+  "updated_at": "2026-10-13T17:04:43+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1860-formal-work-root"
 }
 ---
@@ -72,3 +72,6 @@ coverage floor and all formal gates.
   HEAD 1f3c7f65ca. Initial system interpreter run failed only from missing jsonschema; no product
   failure. Portable-smoke formal passed; full hosted formal remains environment-gated by systemd-run
   admission.
+
+- 2026-10-13T17:04:43+00:00: Recorded command exit 0; command argv SHA-256
+  5101bcf96d946f412ead54be400cc738e6fe3381146adc613efebe8f9fe375bc.
