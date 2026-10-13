@@ -10,11 +10,13 @@
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_ref": "specs/AR-1861.json",
+  "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T18:03:24+00:00",
+  "updated_at": "2026-10-13T18:03:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -63,3 +65,5 @@ or mutate AR-1826 until the adopted repair is verified.
 - 2026-10-13T18:03:24+00:00: Claimed by coord-reconcile-v078.
 
 - 2026-10-13T18:03:24+00:00: Recorded exact v0.7.8 vendor and full-suite qualification evidence.
+
+- 2026-10-13T18:03:54+00:00: Bound task spec specs/AR-1861.json revision 1.
