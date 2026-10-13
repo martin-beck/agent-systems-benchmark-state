@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P2 | [AR-0601](../tasks/AR-0601-csb-integration.md): Prototype optional CSB integration | Unclaimed | Reuse CSB application execution and monitoring where contracts fit ASB. | Monitor PR #70 exact-head CI for terminal results; do not merge without coordinator authorization. |
 | P2 | [AR-0802](../tasks/AR-0802-executable-guides.md): Deliver runnable user and extension guides | Unclaimed | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. | Capture actual CLI workflows after commands are implemented. |
 | P2 | [AR-1005](../tasks/AR-1005-trace-interoperability.md): Export interoperable privacy-safe traces | Unclaimed | Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention. | Monitor PR #75 exact head 921cf004 CI; classify any failure before repair and do not merge without coordinator authorization. |
 | P2 | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Unclaimed | Audit and promote asb-tui from optional extension to verified release when eligible. | Review exact-head PR 8 hosted evidence, merge without weakening permanent protections, then obtain exact-main hosted and trusted local evidence. |

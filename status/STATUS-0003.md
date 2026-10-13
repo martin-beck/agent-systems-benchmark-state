@@ -1610,7 +1610,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. |
-| Next action | State metadata repair is required before product requalification: legacy worktree_key is populated while branch is empty. Coordinator repair must restore the declared branch/worktree binding without changing owner/evidence, then rebuild reviewed e9d95999 onto current main d0e6a28 and rerun exact-head review/CI. |
+| Next action | Coordinator bind-worktree remains blocked: its safety precondition requires both branch and worktree_key empty, but legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract is retained while branch is empty. No active worker/process; product worktree is clean at reviewed e9d95999 (codex/ar-1826-explicit-setup-contract). Implement a coordinator-mediated legacy-pair repair or use the supported repair version, then bind this exact branch/key and requalify e9d95999 onto current main d0e6a28 with fresh exact-head review/CI. |
 
 ### AR-1827 — Author complete explicit benchmark configuration with asb setup
 
