@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1857.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Restore the full-gate coverage floor after the terminal 94% observation.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Full-gate coverage floor repair",
-  "updated_at": "2026-10-13T19:27:49+00:00",
+  "updated_at": "2026-10-13T19:28:19+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1857-coverage-repair"
 }
 ---
@@ -84,3 +84,6 @@ modify AR-1841 or AR-1856 ownership and must not weaken formal/resource gates.
   rc64; AR-1859 remains the scoped successor. Public GitHub API shows PR #145 closed and unmerged at
   5f30c0c92f18ae6043ceedf454c8af43fc8b48f7, so no publication action. No product mutation or
   threshold/gate weakening; release ownerless.
+
+- 2026-10-13T19:28:19+00:00: Temporary bounded reopen solely to remove generated pycache through
+  handoffctl before final doctor/snapshot reconciliation; no product changes.
