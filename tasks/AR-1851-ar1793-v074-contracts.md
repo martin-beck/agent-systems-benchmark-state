@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1851-ar1793-v074-contracts",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T19:28:24+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1851",
   "next_action": "Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification.",
-  "owner": "ar1853-complexity-luna",
+  "owner": "",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1851.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T19:18:24+00:00",
+  "updated_at": "2026-10-13T19:18:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -136,3 +136,11 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
   after AR-1852/AR-1853 merge or equivalent durable resolution.
 
 - 2026-10-13T19:18:24+00:00: Claimed by ar1853-complexity-luna.
+
+- 2026-10-13T19:18:48+00:00: Fresh exact-head verification 2026-10-13: state PR #147 remains open at
+  0d3693a24cdb4039ccc65ffc9a391b6b88e29ca5; required Coordination verification run 38405503655 fails
+  at Fault tests and coverage, and handoffctl formal verification run 38405503547 fails at Check
+  implementation refinement and fault behavior. Shadow and source-header checks pass. Dependency PR
+  #146 remains open at 56371a22adcc37fe36ddc6d44e4ec6d74859af5e; PR #148 remains open at
+  a7ea458375ebc6f690a09f6010a7412b725ee198. Leave ownerless/open; rerun exact-head review and CI
+  only after AR-1852 and AR-1853 repairs merge or equivalent durable resolution.

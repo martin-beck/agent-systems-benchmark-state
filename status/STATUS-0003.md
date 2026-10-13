@@ -1952,11 +1952,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1853-complexity-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. |
@@ -3010,7 +3010,7 @@ flowchart LR
         AR_1848["AR-1848 - Planned"]:::status_planned
         AR_1849["AR-1849 - Open"]:::status_open
         AR_1850["AR-1850 - Done"]:::status_done
-        AR_1851["AR-1851 - In progress"]:::status_in_progress
+        AR_1851["AR-1851 - Open"]:::status_open
         AR_1852["AR-1852 - In progress"]:::status_in_progress
         AR_1853["AR-1853 - Open"]:::status_open
         AR_1854["AR-1854 - Planned"]:::status_planned
@@ -5028,3 +5028,5 @@ flowchart LR
 
 ### Accessible dependency index
 
+| AR | Prerequisites | Dependents |
+| --- | --- | --- |
