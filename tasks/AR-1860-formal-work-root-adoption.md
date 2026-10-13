@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T17:00:22+00:00",
+  "updated_at": "2026-10-13T17:03:09+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1860-formal-work-root"
 }
 ---
@@ -64,3 +64,6 @@ coverage floor and all formal gates.
 
 - 2026-10-13T17:00:22+00:00: Recorded command exit 1; command argv SHA-256
   3a25f96e51b065e3f52ee81355fe3e625eb6cd2e735a0d508eea0bd4a4e0584b.
+
+- 2026-10-13T17:03:09+00:00: Recorded command exit 0; command argv SHA-256
+  022ea8a842fe1c1186950e1af2ff14e380232faa8796092449d4926946f69644.
