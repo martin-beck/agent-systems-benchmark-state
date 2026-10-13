@@ -2004,6 +2004,20 @@
 | Summary | Integrate and qualify the Coordinator v0.7.4 compatibility repairs. |
 | Next action | Promote only after AR-1851, AR-1852 and AR-1853 merge; combine their exact reviewed heads and run the strict/formal integration gates. |
 
+### AR-1855 — Repair AR-1850 coordination metadata schema
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | ar1855-metadata-schema-luna |
+| Parent | None |
+| Children | None |
+| Summary | Repair the malformed observed_dirty coordination field on AR-1850 without changing its product scope. |
+| Next action | Validate the corrected AR-1850 coordination metadata against the published task schema, review the positive and hostile cases, and publish the state-only repair. |
+
 
 ## Dependency graph
 
@@ -2902,6 +2916,7 @@ flowchart LR
         AR_1852["AR-1852 - Open"]:::status_open
         AR_1853["AR-1853 - In progress"]:::status_in_progress
         AR_1854["AR-1854 - Planned"]:::status_planned
+        AR_1855["AR-1855 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
