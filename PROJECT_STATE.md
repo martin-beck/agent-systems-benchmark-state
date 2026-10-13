@@ -33,7 +33,7 @@ Generated from local Git and GitHub. Do not edit.
 | #619 | `repair/ar-1779-source-fallback-linear3@21372a22aba3` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): fail closed on unavailable source adapters |
 | #624 | `feature/ar-1783-installed-workload-selection-and-execution@32f42827367d` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): bind installed workloads before execution |
 | #629 | `codex/ar-1826-explicit-setup-contract@e9d95999c0ca` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(config): define explicit setup and plan binding contract |
-| #634 | `codex/ar-1863-control-diagnostic-catalog@6215f49dcb7c` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): repair control diagnostic catalog identities |
+| #634 | `codex/ar-1863-control-diagnostic-catalog@6215f49dcb7c` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): repair control diagnostic catalog identities |
 
 ## Recent workflows
 
@@ -45,7 +45,7 @@ Generated from local Git and GitHub. Do not edit.
 | 38473816583 | `6215f49dcb7c` | pull_request | Fault assurance | completed:success |
 | 38473816537 | `6215f49dcb7c` | pull_request | Credential-free benchmark path | completed:success |
 | 38473816524 | `6215f49dcb7c` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38473816520 | `6215f49dcb7c` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38473816520 | `6215f49dcb7c` | pull_request | Emulated aarch64 portability | completed:success |
 | 38473816519 | `6215f49dcb7c` | pull_request | Rust verification | in_progress:- |
 | 38473816500 | `6215f49dcb7c` | pull_request | Portable protected-main provenance | completed:success |
 | 38473816493 | `6215f49dcb7c` | pull_request | Development formal assurance | completed:success |
