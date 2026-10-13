@@ -39,7 +39,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 38410495133 | `671f898b6a85` | pull_request | Repository quality | queued:- |
+| 38410495133 | `671f898b6a85` | pull_request | Repository quality | in_progress:- |
 | 38410495045 | `671f898b6a85` | pull_request | Huawei MIT source headers | completed:success |
 | 38410494930 | `671f898b6a85` | pull_request | Hosted portability and native qualification | completed:success |
 | 38410494852 | `671f898b6a85` | pull_request | Fault assurance | completed:success |
