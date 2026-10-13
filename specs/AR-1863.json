@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1863.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "generated-catalog-parity", "description": "Every one of the eight current-main crates/asb-cli/src/control.rs legacy producer call sites introduced or shifted by AR-1835 has exactly one stable entry in diagnostic_legacy_catalog_compact.rs, and generator/catalog parity is clean."},
+    {"id": "focused-diagnostic-contract", "description": "The focused diagnostic_contract suite passes with positive coverage for all eight mappings and negative coverage proving an unmapped control.rs producer is rejected; no diagnostic completeness assertion is removed or weakened."},
+    {"id": "applicable-cargo-gate", "description": "The applicable locked offline cargo format, clippy, focused tests, and serialized full workspace diagnostic/quality gates pass at unchanged thresholds."},
+    {"id": "scope-and-privacy", "description": "Only the reviewed control.rs catalog seam and required generated artifacts change; no credentials, private paths, prompts, transcripts, runtime downloads, or AR-1787 files enter the tree."},
+    {"id": "reviewed-publication", "description": "Independent exact-head review accepts the complete diff; product integration uses an SSH-signed commit with matching DCO trailer, reviewed pull request, green exact-head CI, and post-merge verification."}
+  ],
+  "definition_of_done": [
+    "The eight-call-site catalog gap is repaired with stable identities and reviewed generated output.",
+    "AR-1787 remains untouched and AR-1835/AR-1783 ownership boundaries are recorded without duplicate implementation.",
+    "Focused and full applicable gates, independent review, signed DCO integration, exact-head CI, and post-merge evidence are durable."
+  ],
+  "inputs": [
+    {"id": "ar1835-current-main", "description": "AR-1835 protected-main integration and its control.rs producer changes."},
+    {"id": "diagnostic-contract", "description": "crates/asb-cli/tests/diagnostic_contract.rs mechanical legacy producer closure gate."},
+    {"id": "compact-catalog", "description": "crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs generated legacy identity catalog."}
+  ],
+  "outputs": [
+    {"id": "catalog-repair", "description": "Reviewed stable entries for exactly eight missing control.rs producer call sites."},
+    {"id": "gate-evidence", "description": "Privacy-safe focused/full cargo, review, signed-DCO, exact-head CI, and post-merge receipts."}
+  ],
+  "allowed_tools": ["git", "cargo", "python3", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["ar1787-mutation", "gate-weakening", "test-skipping", "credential-output", "raw-transcript-retention", "runtime-network", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["mechanical", "contract-test", "hosted"],
+  "gates": [
+    {"id": "catalog", "description": "Generated diagnostic catalog and control.rs call-site parity checks pass."},
+    {"id": "diagnostic-contract", "description": "Focused positive and negative diagnostic_contract tests pass unchanged in strength."},
+    {"id": "cargo-quality", "description": "All applicable locked offline cargo quality and serialized full gates pass."},
+    {"id": "review-ci", "description": "Independent review, SSH-signed DCO commit, exact-head CI, and post-merge workflows pass."}
+  ]
+}
