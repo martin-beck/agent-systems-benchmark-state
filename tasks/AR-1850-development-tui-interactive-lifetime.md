@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:08:47+00:00",
+  "updated_at": "2026-10-13T14:09:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -66,3 +66,6 @@ cross-repository qualification.
 - 2026-10-13T14:08:47+00:00: Independent exact-head review approved PR #631 at
   671f898b6a859655952a009b9a4468e685d74013 with no findings; focused 5/5 passed and
   cleanup/admission/PTY contracts preserved. Hosted checks remain in progress; merge stays gated.
+
+- 2026-10-13T14:09:36+00:00: Recorded command exit 0; command argv SHA-256
+  138d2c1840ff852c43dd72d516eb85dd14b58e25b0417148f52fa00fcc8ceff4.
