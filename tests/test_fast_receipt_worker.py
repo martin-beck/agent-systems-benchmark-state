@@ -12,7 +12,7 @@ import unittest
 import uuid
 from pathlib import Path
 from typing import Any
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 from tools import fast_receipt_worker as worker
 from tools.fast_receipt_worker import (
@@ -1259,6 +1259,164 @@ class FastReceiptWorkerTests(unittest.TestCase):
             outcomes = publish_pending(core, self.store)
         self.assertEqual("published-remote", outcomes[0]["phase"])
         self.assertEqual("b" * 40, outcomes[0]["remote_oid"])
+
+    def test_fast_publisher_admits_captured_head_with_remote_lease(self) -> None:
+        receipt_id = self.complete_local()
+        pending = self.store.pending_publication()
+        core = PublicationCore(self.root, "success")
+        with (
+            patch.object(worker, "_is_ancestor", side_effect=[True, False, True]),
+            patch.object(worker, "_observe_remote_main", return_value="b" * 40),
+            patch.object(core, "run", wraps=core.run) as run,
+        ):
+            observed = worker._publish_if_needed(core, self.store, pending, "b" * 40, "c" * 40)
+        self.assertEqual("b" * 40, observed)
+        job = self.store.connection.execute(
+            "SELECT * FROM publication_jobs WHERE candidate_oid=?", ("b" * 40,)
+        ).fetchone()
+        assert job is not None
+        self.assertEqual("published", job["phase"])
+        self.assertEqual("c" * 40, job["expected_remote_oid"])
+        push = next(call.args[0] for call in run.call_args_list if "push" in call.args[0])
+        self.assertIn("--force-with-lease=refs/heads/main:" + "c" * 40, push)
+        self.assertEqual(receipt_id, pending[0]["receipt_id"])
+
+    def test_descendant_observation_terminally_rejects_exact_job(self) -> None:
+        core = PublicationCore(self.root, "success")
+        admitted = self.store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        lease = "1" * 32
+        self.store.claim_publication(job_id, lease=lease)
+        with (
+            patch("tools.fast_receipt_worker._observe_remote_main", return_value="c" * 40),
+            patch("tools.fast_receipt_worker._is_ancestor", return_value=True),
+        ):
+            observed = worker._record_admitted_push_observation(
+                core, self.store, job_id, lease, "a" * 40, "PUSH_UNKNOWN"
+            )
+        self.assertEqual("c" * 40, observed)
+        job = self.store.read_publication(job_id)
+        assert job is not None
+        self.assertEqual("rejected", job["phase"])
+        self.assertEqual("REMOTE_ADVANCED", job["error_code"])
+        self.assertEqual("c" * 40, job["observed_remote_oid"])
+
+    def test_remote_observation_sweeps_historical_expired_publications(self) -> None:
+        admitted = self.store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        self.store.claim_publication(job_id, lease="1" * 32)
+        self.store.connection.execute(
+            "UPDATE publication_jobs SET publisher_lease_expires='2000-01-01T00:00:00.000Z' "
+            "WHERE job_id=?",
+            (job_id,),
+        )
+        worker._recover_outstanding_publications(self.store, "d" * 40, "c" * 40)
+        job = self.store.read_publication(job_id)
+        assert job is not None
+        self.assertEqual("rejected", job["phase"])
+        self.assertEqual("REMOTE_BASE_CHANGED", job["error_code"])
+
+    def test_superseded_requeued_job_is_terminal_on_a_no_receipt_cycle(self) -> None:
+        admitted = self.store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        self.store.claim_publication(job_id, lease="1" * 32)
+        self.store.connection.execute(
+            "UPDATE publication_jobs SET publisher_lease_expires='2000-01-01T00:00:00.000Z' "
+            "WHERE job_id=?",
+            (job_id,),
+        )
+        worker._recover_outstanding_publications(self.store, "a" * 40, "b" * 40)
+        requeued = self.store.read_publication(job_id)
+        assert requeued is not None
+        self.assertEqual("queued", requeued["phase"])
+        worker._recover_outstanding_publications(self.store, "c" * 40, "b" * 40)
+        job = self.store.read_publication(job_id)
+        assert job is not None
+        self.assertEqual("rejected", job["phase"])
+        self.assertEqual("LOCAL_HEAD_SUPERSEDED", job["error_code"])
+
+    def test_publish_admission_terminal_and_lost_claim_paths_return_remote(self) -> None:
+        core = PublicationCore(self.root, "success")
+        pending = [{"commit_oid": "a" * 40}]
+        for phase in ("published", "rejected"):
+            store = Mock()
+            store.admit_publication.return_value = {"job_id": "1" * 32, "phase": phase}
+            with patch("tools.fast_receipt_worker._is_ancestor", side_effect=[True, False, True]):
+                self.assertEqual(
+                    "b" * 40,
+                    worker._publish_if_needed(core, store, pending, "a" * 40, "b" * 40),
+                )
+            store.claim_publication.assert_not_called()
+        store = Mock()
+        store.admit_publication.return_value = {"job_id": "1" * 32, "phase": "queued"}
+        store.claim_publication.return_value = None
+        with patch("tools.fast_receipt_worker._is_ancestor", side_effect=[True, False, True]):
+            self.assertEqual(
+                "b" * 40,
+                worker._publish_if_needed(core, store, pending, "a" * 40, "b" * 40),
+            )
+        store.claim_publication.assert_called_once()
+
+    def test_publish_active_recovery_and_outstanding_race_policy(self) -> None:
+        core = PublicationCore(self.root, "success")
+        pending = [{"commit_oid": "a" * 40}]
+        store = Mock()
+        store.admit_publication.return_value = {"job_id": "1" * 32, "phase": "ambiguous"}
+        store.recover_publication.side_effect = RuntimeError("publication lease is still active")
+        with patch("tools.fast_receipt_worker._is_ancestor", side_effect=[True, False, True]):
+            self.assertEqual(
+                "b" * 40,
+                worker._publish_if_needed(core, store, pending, "a" * 40, "b" * 40),
+            )
+        store.claim_publication.assert_not_called()
+        store = Mock()
+        store.recoverable_publications.return_value = [
+            {"job_id": "1" * 32, "phase": "queued", "candidate_oid": "a" * 40},
+            {"job_id": "2" * 32, "phase": "ambiguous", "candidate_oid": "b" * 40},
+        ]
+        store.recover_publication.side_effect = RuntimeError(
+            "publication job changed while recovering"
+        )
+        worker._recover_outstanding_publications(store, "a" * 40, "c" * 40)
+        store.resolve_superseded_publication.assert_not_called()
+        with self.assertRaisesRegex(RuntimeError, "unexpected"):
+            store.recover_publication.side_effect = RuntimeError("unexpected")
+            worker._recover_outstanding_publications(store, "z" * 40, "c" * 40)
+
+    def test_publish_remote_unknown_and_timeout_integrity_fail_closed(self) -> None:
+        core = PublicationCore(self.root, "success")
+        pending = [{"receipt_id": "1" * 32}]
+        store = Mock()
+        store.record_publication_failure.return_value = {"phase": "completed-local"}
+        with patch("tools.fast_receipt_worker._observe_remote_main", return_value=None):
+            self.assertEqual(
+                [{"phase": "completed-local"}], worker._publish_selected(core, store, pending)
+            )
+        store.pending_publication.return_value = pending
+        store.read.return_value = None
+        with (
+            patch.object(worker, "_require_bound_store"),
+            patch.object(
+                worker, "_publish_selected", side_effect=SubprocessTimeoutError("timeout")
+            ),
+            self.assertRaisesRegex(RuntimeError, "pending receipt disappeared"),
+        ):
+            publish_pending(core, store)
+        store.read.return_value = {"phase": "rejected"}
+        with (
+            patch.object(worker, "_require_bound_store"),
+            patch.object(
+                worker, "_publish_selected", side_effect=SubprocessTimeoutError("timeout")
+            ),
+            self.assertRaisesRegex(RuntimeError, "invalid phase"),
+        ):
+            publish_pending(core, store)
 
 
 if __name__ == "__main__":

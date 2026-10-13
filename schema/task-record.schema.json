@@ -19,6 +19,7 @@
         "schema_version": {"const": 1},
         "id": {"$ref": "#/$defs/taskId"},
         "title": {"type": "string", "minLength": 1, "maxLength": 240},
+        "short_title": {"type": "string", "minLength": 1, "maxLength": 120},
         "status": {
             "enum": [
                 "in_progress",

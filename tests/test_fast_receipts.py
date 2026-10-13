@@ -461,6 +461,113 @@ class FastReceiptTests(unittest.TestCase):
         assert current is not None
         self.assertEqual("queued-local", current["phase"])
 
+    def test_v3_queue_migrates_to_publication_schema_without_losing_receipts(self) -> None:
+        self.path.parent.mkdir(mode=0o700)
+        self.path.parent.chmod(0o700)
+        receipt_id = uuid.uuid4().hex
+        connection = sqlite3.connect(self.path)
+        connection.execute("PRAGMA journal_mode=WAL")
+        connection.executescript(
+            """CREATE TABLE receipt_binding (
+                   singleton INTEGER PRIMARY KEY CHECK (singleton = 1),
+                   project_id TEXT NOT NULL
+               );
+               CREATE TABLE intents (
+                   receipt_id TEXT PRIMARY KEY,
+                   project_id TEXT NOT NULL,
+                   idempotency_key TEXT NOT NULL,
+                   operation TEXT NOT NULL,
+                   task_id TEXT NOT NULL,
+                   expected_revision INTEGER NOT NULL,
+                   payload_json TEXT NOT NULL,
+                   input_digest TEXT NOT NULL,
+                   phase TEXT NOT NULL,
+                   started_at TEXT,
+                   commit_oid TEXT,
+                   result_revision INTEGER,
+                   error_code TEXT,
+                   remote_oid TEXT,
+                   remote_observed_at TEXT,
+                   publication_error TEXT,
+                   created_at TEXT NOT NULL,
+                   UNIQUE(project_id, idempotency_key)
+               );"""
+        )
+        payload = json.dumps({"operation": "heartbeat", "project_id": self.project_id})
+        connection.execute(
+            "INSERT INTO receipt_binding(singleton, project_id) VALUES (1, ?)",
+            (self.project_id,),
+        )
+        connection.execute(
+            """INSERT INTO intents
+            (receipt_id, project_id, idempotency_key, operation, task_id, expected_revision,
+             payload_json, input_digest, phase, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                receipt_id,
+                self.project_id,
+                "legacy:heartbeat:1",
+                "heartbeat",
+                "AR-0120",
+                1,
+                payload,
+                "a" * 64,
+                "queued-local",
+                "2026-10-11T00:00:00.000Z",
+            ),
+        )
+        connection.execute("PRAGMA user_version=3")
+        connection.commit()
+        connection.close()
+        self.path.chmod(0o600)
+        for suffix in ("-wal", "-shm"):
+            sidecar = self.path.with_name(self.path.name + suffix)
+            if sidecar.exists():
+                sidecar.chmod(0o600)
+        with ReceiptStore(self.path, self.project_id) as migrated:
+            self.assertEqual(5, migrated.connection.execute("PRAGMA user_version").fetchone()[0])
+            legacy = migrated.read(receipt_id)
+            assert legacy is not None
+            self.assertEqual("queued-local", legacy["phase"])
+            self.assertEqual("legacy:heartbeat:1", legacy["idempotency_key"])
+            tables = {
+                row[0]
+                for row in migrated.connection.execute(
+                    "SELECT name FROM sqlite_master WHERE type='table'"
+                ).fetchall()
+            }
+        self.assertTrue({"publication_jobs", "publication_request_keys"} <= tables)
+
+    def test_incomplete_current_schema_recovers_required_table(self) -> None:
+        original = self.store()
+        original.close()
+        connection = sqlite3.connect(self.path)
+        connection.execute("DROP TABLE publication_request_keys")
+        connection.commit()
+        connection.close()
+        with ReceiptStore(self.path, self.project_id) as repaired:
+            tables = {
+                row[0]
+                for row in repaired.connection.execute(
+                    "SELECT name FROM sqlite_master WHERE type='table'"
+                ).fetchall()
+            }
+        self.assertIn("publication_request_keys", tables)
+
+    def test_current_schema_with_missing_publication_columns_fails_closed(self) -> None:
+        original = self.store()
+        original.close()
+        connection = sqlite3.connect(self.path)
+        connection.execute("DROP TABLE publication_request_keys")
+        connection.execute("DROP TABLE publication_jobs")
+        connection.execute(
+            "CREATE TABLE publication_jobs (job_id TEXT PRIMARY KEY, project_id TEXT NOT NULL)"
+        )
+        connection.commit()
+        connection.close()
+        with self.assertRaisesRegex(RuntimeError, "schema is incomplete"):
+            ReceiptStore(self.path, self.project_id)
+
     def test_initialized_queue_without_project_binding_fails_closed(self) -> None:
         original = self.store()
         original.close()
@@ -546,6 +653,316 @@ class FastReceiptTests(unittest.TestCase):
         self.assertEqual(remote, store.record_remote_observation(receipt_id, "b" * 40))
         with self.assertRaises(ReceiptConflictError):
             store.record_remote_observation(receipt_id, "c" * 40)
+
+    def test_publication_admission_is_candidate_idempotent_and_base_fenced(self) -> None:
+        store = self.store()
+        first = store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        self.assertEqual("queued", first["phase"])
+        self.assertEqual(
+            first,
+            store.admit_publication(
+                key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+            ),
+        )
+        reused = store.admit_publication(
+            key="publisher-b:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        self.assertEqual(first["job_id"], reused["job_id"])
+        with self.assertRaises(ReceiptConflictError):
+            store.admit_publication(
+                key="publisher-b:1", candidate_oid="c" * 40, expected_remote_oid="b" * 40
+            )
+        with self.assertRaises(ReceiptConflictError):
+            store.admit_publication(
+                key="publisher-a:1", candidate_oid="c" * 40, expected_remote_oid="b" * 40
+            )
+        with self.assertRaises(ReceiptConflictError):
+            store.admit_publication(
+                key="publisher-c:1", candidate_oid="a" * 40, expected_remote_oid="c" * 40
+            )
+        count = store.connection.execute("SELECT count(*) FROM publication_jobs").fetchone()[0]
+        self.assertEqual(1, count)
+
+    def test_publication_lookup_claim_and_recovery_reject_bad_or_unknown_inputs(self) -> None:
+        store = self.store()
+        with self.assertRaises(ValueError):
+            store.read_publication("not-a-job")
+        with self.assertRaises(ValueError):
+            store.publication_for_candidate("not-an-oid")
+        self.assertIsNone(store.publication_for_candidate("a" * 40))
+        self.assertIsNone(store.read_publication("1" * 32))
+        with self.assertRaises(ValueError):
+            store.claim_publication("not-a-job", lease="1" * 32)
+        with self.assertRaises(ValueError):
+            store.claim_publication("1" * 32, lease="not-a-lease")
+        self.assertIsNone(store.claim_publication("1" * 32, lease="1" * 32))
+        with self.assertRaises(ValueError):
+            store.recover_publication("not-a-job", observed_remote_oid="a" * 40)
+        with self.assertRaises(ValueError):
+            store.recover_publication("1" * 32, observed_remote_oid="not-an-oid")
+        with self.assertRaisesRegex(RuntimeError, "unknown publication job"):
+            store.recover_publication("1" * 32, observed_remote_oid="a" * 40)
+
+    def test_superseded_resolution_covers_exact_and_invalid_job_states(self) -> None:
+        store = self.store()
+        with self.assertRaises(ValueError):
+            store.resolve_superseded_publication("not-a-job", observed_remote_oid="a" * 40)
+        with self.assertRaisesRegex(RuntimeError, "unknown publication job"):
+            store.resolve_superseded_publication("1" * 32, observed_remote_oid="a" * 40)
+        exact = store.admit_publication(
+            key="publisher-a:exact", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        resolved = store.resolve_superseded_publication(
+            str(exact["job_id"]), observed_remote_oid="a" * 40
+        )
+        self.assertEqual("published", resolved["phase"])
+        changed = store.admit_publication(
+            key="publisher-a:changed", candidate_oid="c" * 40, expected_remote_oid="d" * 40
+        )
+        rejected = store.resolve_superseded_publication(
+            str(changed["job_id"]), observed_remote_oid="e" * 40
+        )
+        self.assertEqual("REMOTE_BASE_CHANGED", rejected["error_code"])
+        with self.assertRaisesRegex(RuntimeError, "not queued"):
+            store.resolve_superseded_publication(
+                str(changed["job_id"]), observed_remote_oid="e" * 40
+            )
+
+    def test_publication_outcome_conflicts_and_terminal_recovery_fail_closed(self) -> None:
+        store = self.store()
+        admitted = store.admit_publication(
+            key="publisher-a:terminal", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        with self.assertRaises(ValueError):
+            store.finish_publication(job_id, lease="1" * 32, phase="unknown")
+        with self.assertRaisesRegex(RuntimeError, "not owned"):
+            store.finish_publication(
+                job_id, lease="1" * 32, phase="published", observed_remote_oid="a" * 40
+            )
+        store.claim_publication(job_id, lease="1" * 32)
+        store.finish_publication(
+            job_id, lease="1" * 32, phase="published", observed_remote_oid="a" * 40
+        )
+        with self.assertRaises(ReceiptConflictError):
+            store.finish_publication(
+                job_id, lease="1" * 32, phase="published", observed_remote_oid="b" * 40
+            )
+        with self.assertRaisesRegex(RuntimeError, "not recoverable"):
+            store.recover_publication(job_id, observed_remote_oid="a" * 40)
+
+    def test_publication_transition_races_and_visibility_fail_closed(self) -> None:
+        store = self.store()
+        admitted = store.admit_publication(
+            key="publisher-a:resolve-race", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        store.connection.execute(
+            """CREATE TRIGGER publication_resolve_race BEFORE UPDATE ON publication_jobs
+            WHEN OLD.phase = 'queued' BEGIN SELECT RAISE(IGNORE); END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "changed while resolving"):
+            store.resolve_superseded_publication(job_id, observed_remote_oid="b" * 40)
+        store.connection.execute("DROP TRIGGER publication_resolve_race")
+        store.claim_publication(job_id, lease="1" * 32)
+        store.connection.execute(
+            """CREATE TRIGGER publication_finish_race BEFORE UPDATE ON publication_jobs
+            WHEN OLD.phase = 'publishing' BEGIN
+                UPDATE publication_jobs SET phase='rejected' WHERE job_id=OLD.job_id;
+                SELECT RAISE(IGNORE);
+            END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "changed while finishing"):
+            store.finish_publication(
+                job_id, lease="1" * 32, phase="published", observed_remote_oid="a" * 40
+            )
+        store.connection.execute("DROP TRIGGER publication_finish_race")
+
+    def test_publication_completion_and_recovery_visibility_fail_closed(self) -> None:
+        store = self.store()
+        admitted = store.admit_publication(
+            key="publisher-a:finish-visibility",
+            candidate_oid="a" * 40,
+            expected_remote_oid="b" * 40,
+        )
+        job_id = str(admitted["job_id"])
+        store.claim_publication(job_id, lease="1" * 32)
+        store.connection.execute(
+            """CREATE TRIGGER publication_finish_visibility AFTER UPDATE ON publication_jobs
+            WHEN NEW.phase = 'published' BEGIN
+                DELETE FROM publication_jobs WHERE job_id=NEW.job_id;
+            END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "outcome was not visible"):
+            store.finish_publication(
+                job_id, lease="1" * 32, phase="published", observed_remote_oid="a" * 40
+            )
+        store.connection.execute("DROP TRIGGER publication_finish_visibility")
+        ambiguous = store.admit_publication(
+            key="publisher-a:recover-visibility",
+            candidate_oid="c" * 40,
+            expected_remote_oid="d" * 40,
+        )
+        ambiguous_id = str(ambiguous["job_id"])
+        store.claim_publication(ambiguous_id, lease="2" * 32)
+        store.finish_publication(
+            ambiguous_id, lease="2" * 32, phase="ambiguous", error_code="PUSH_TIMEOUT"
+        )
+        store.connection.execute(
+            """CREATE TRIGGER publication_recover_visibility AFTER UPDATE ON publication_jobs
+            WHEN NEW.phase = 'published' BEGIN
+                DELETE FROM publication_jobs WHERE job_id=NEW.job_id;
+            END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "recovery was not visible"):
+            store.recover_publication(ambiguous_id, observed_remote_oid="c" * 40)
+        store.connection.execute("DROP TRIGGER publication_recover_visibility")
+
+    def test_publication_claim_has_one_owner_and_truthful_terminal_outcome(self) -> None:
+        store = self.store()
+        admitted = store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        lease = "1" * 32
+        claimed = store.claim_publication(job_id, lease=lease)
+        assert claimed is not None
+        self.assertEqual("publishing", claimed["phase"])
+        self.assertEqual(lease, claimed["publisher_lease"])
+        self.assertIsNone(store.claim_publication(job_id, lease="2" * 32))
+        with self.assertRaisesRegex(RuntimeError, "not owned"):
+            store.finish_publication(
+                job_id,
+                lease="2" * 32,
+                phase="published",
+                observed_remote_oid="c" * 40,
+            )
+        with self.assertRaises(ValueError):
+            store.finish_publication(job_id, lease=lease, phase="published")
+        with self.assertRaises(ValueError):
+            store.finish_publication(
+                job_id,
+                lease=lease,
+                phase="published",
+                observed_remote_oid="c" * 40,
+            )
+        finished = store.finish_publication(
+            job_id,
+            lease=lease,
+            phase="published",
+            observed_remote_oid="a" * 40,
+        )
+        self.assertEqual("published", finished["phase"])
+        self.assertEqual("a" * 40, finished["observed_remote_oid"])
+        self.assertEqual(
+            finished,
+            store.finish_publication(
+                job_id,
+                lease=lease,
+                phase="published",
+                observed_remote_oid="a" * 40,
+            ),
+        )
+
+    def test_publication_ambiguous_outcome_cannot_be_claimed_or_rewritten(self) -> None:
+        store = self.store()
+        admitted = store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        lease = "1" * 32
+        store.claim_publication(job_id, lease=lease)
+        ambiguous = store.finish_publication(
+            job_id, lease=lease, phase="ambiguous", error_code="PUSH_TIMEOUT"
+        )
+        self.assertEqual("ambiguous", ambiguous["phase"])
+        self.assertIsNone(store.claim_publication(job_id, lease="2" * 32))
+        with self.assertRaises(RuntimeError):
+            store.finish_publication(
+                job_id,
+                lease=lease,
+                phase="published",
+                observed_remote_oid="c" * 40,
+            )
+
+    def test_remote_advanced_rejection_records_the_observed_head(self) -> None:
+        store = self.store()
+        admitted = store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        lease = "1" * 32
+        store.claim_publication(job_id, lease=lease)
+        rejected = store.finish_publication(
+            job_id,
+            lease=lease,
+            phase="rejected",
+            observed_remote_oid="c" * 40,
+            error_code="REMOTE_ADVANCED",
+        )
+        self.assertEqual("rejected", rejected["phase"])
+        self.assertEqual("c" * 40, rejected["observed_remote_oid"])
+        self.assertEqual("REMOTE_ADVANCED", rejected["error_code"])
+
+    def test_expired_publication_lease_cannot_report_success(self) -> None:
+        store = self.store()
+        admitted = store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        lease = "1" * 32
+        store.claim_publication(job_id, lease=lease)
+        store.connection.execute(
+            "UPDATE publication_jobs SET publisher_lease_expires='2000-01-01T00:00:00.000Z' "
+            "WHERE job_id=?",
+            (job_id,),
+        )
+        with self.assertRaisesRegex(RuntimeError, "lease has expired"):
+            store.finish_publication(
+                job_id,
+                lease=lease,
+                phase="published",
+                observed_remote_oid="a" * 40,
+            )
+
+    def test_ambiguous_publication_recovers_only_from_a_fresh_exact_observation(self) -> None:
+        store = self.store()
+        admitted = store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        lease = "1" * 32
+        store.claim_publication(job_id, lease=lease)
+        store.finish_publication(job_id, lease=lease, phase="ambiguous", error_code="PUSH_TIMEOUT")
+        requeued = store.recover_publication(job_id, observed_remote_oid="b" * 40)
+        self.assertEqual("queued", requeued["phase"])
+        claimed = store.claim_publication(job_id, lease="2" * 32)
+        assert claimed is not None
+        store.finish_publication(
+            job_id, lease="2" * 32, phase="ambiguous", error_code="PUSH_TIMEOUT"
+        )
+        published = store.recover_publication(job_id, observed_remote_oid="a" * 40)
+        self.assertEqual("published", published["phase"])
+
+    def test_recovery_rejects_foreign_head_and_active_lease(self) -> None:
+        store = self.store()
+        admitted = store.admit_publication(
+            key="publisher-a:1", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        store.claim_publication(job_id, lease="1" * 32)
+        with self.assertRaisesRegex(RuntimeError, "still active"):
+            store.recover_publication(job_id, observed_remote_oid="b" * 40)
+        store.connection.execute(
+            "UPDATE publication_jobs SET publisher_lease_expires='2000-01-01T00:00:00.000Z' "
+            "WHERE job_id=?",
+            (job_id,),
+        )
+        rejected = store.recover_publication(job_id, observed_remote_oid="c" * 40)
+        self.assertEqual("rejected", rejected["phase"])
+        self.assertEqual("REMOTE_BASE_CHANGED", rejected["error_code"])
 
 
 if __name__ == "__main__":
