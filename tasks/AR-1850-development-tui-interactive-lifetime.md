@@ -13,13 +13,21 @@
   "plan": "../plans/AR-1850-development-tui-interactive-lifetime.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "sha256:ab45e96c8a32ee21207f1920ae30a52dc5052b8ef8c6b3b557e89d3f27adee86",
+    "evidence_ref": "quality/AR-1850-postmerge-receipt.json",
+    "spec_ref": "specs/AR-1850.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1850.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:29:47+00:00",
+  "updated_at": "2026-10-13T15:06:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -119,3 +127,8 @@ cross-repository qualification.
   portable_provenance rejects non-local integration identity. Product parent is exact reviewed head
   671f898b6a; this is a protected merge-path provenance defect, not a TUI behavior failure. Other
   exact-main runs remain in progress.
+
+- 2026-10-13T15:06:40+00:00: Accepted exact AR-1850 specification after signed AR-1856 recovery
+  merge 870331be533ea1a0ba9645ddbb690df56af84935. All 10 exact-main workflows terminal-success;
+  exact-main focused TUI lifecycle, cleanup, terminal restoration, and inherited-channel descendant
+  cleanup tests pass.
