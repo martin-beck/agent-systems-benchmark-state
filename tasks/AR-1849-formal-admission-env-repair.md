@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1849-formal-admission-env-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T16:41:49+00:00",
+  "claim_expires": "2026-10-13T16:44:10+00:00",
   "depends_on": [],
   "id": "AR-1849",
   "next_action": "Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI.",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T14:43:54+00:00",
+  "updated_at": "2026-10-13T14:44:10+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -351,3 +351,5 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 
 - 2026-10-13T14:43:54+00:00: Recorded command exit 0; command argv SHA-256
   9fad2743f48e2117f9a7f7e29b906b2f8d6f4e129bd6e0c65878f538a213a39a.
+
+- 2026-10-13T14:44:10+00:00: Heartbeat by ar1849-formal-admission-env-luna.
