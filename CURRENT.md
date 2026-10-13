@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1841](tasks/AR-1841-coordinator-v053-adoption.md): Coordinator v0.5.3 adoption | Adopt Coordinator v0.5.3 with partial legacy worktree binding. | Rebase/rebuild PR #142 against protected main 5229b166a9df1c49fa6956e4ccf4340ae6b3abea, rerun focused and full applicable gates, then exact-head review and CI. | ar1841-v053-adoption-luna |
+| P0 | [AR-1849](tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Repair workflow-wide private TLC admission environment for formal CI. | Claim the repair, add workflow-wide private TLC admission variables and contract tests, then publish exact-head CI evidence before requalifying AR-1841. | ar1849-formal-admission-env-luna |
 
 ## Open
 
@@ -16,7 +17,6 @@ Never edit this file directly.
 | P0 | [AR-1783](tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | AR-1835 exact-head fixture now covers the authenticated runtime bootstrap/control seam; AR-1783 remains below 90% until that reviewed change is integrated. | Do not duplicate AR-1835 control/bootstrap coverage. Preserve d87352ddb511c48b4be1bdbecdd26fb2cf6597a8 as the AR-1783 product checkpoint; after AR-1835 exact-head merge/reconciliation, rerun serialized coverage and accept only if the unchanged 90% floor passes. | - |
 | P0 | [AR-1796](tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Keep autonomous development live during concurrent protected-main integration. | Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release. | - |
 | P0 | [AR-1826](tasks/AR-1826-explicit-setup-config-contract.md): Define explicit setup configuration and plan-binding contract | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. | Coordinator bind-worktree remains blocked: its safety precondition requires both branch and worktree_key empty, but legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract is retained while branch is empty. No active worker/process; product worktree is clean at reviewed e9d95999 (codex/ar-1826-explicit-setup-contract). Implement a coordinator-mediated legacy-pair repair or use the supported repair version, then bind this exact branch/key and requalify e9d95999 onto current main d0e6a28 with fresh exact-head review/CI. | - |
-| P0 | [AR-1849](tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Repair workflow-wide private TLC admission environment for formal CI. | Claim the repair, add workflow-wide private TLC admission variables and contract tests, then publish exact-head CI evidence before requalifying AR-1841. | - |
 
 ## Blocked
 
