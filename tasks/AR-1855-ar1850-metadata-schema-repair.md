@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the malformed observed_dirty coordination field on AR-1850 without changing its product scope.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Repair AR-1850 coordination metadata schema",
-  "updated_at": "2026-10-13T13:51:06+00:00",
+  "updated_at": "2026-10-13T13:57:40+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1855-ar1850-metadata-schema-repair"
 }
 ---
@@ -51,3 +51,6 @@ AR-1850 product requirement, owner, dependency, and launcher scope.
 
 - 2026-10-13T13:51:06+00:00: Recorded command exit 0; command argv SHA-256
   4f4b2b53231bbc9bfeec52a1798ac3bc0df3c69da42db14963dcd42b4c07993e.
+
+- 2026-10-13T13:57:40+00:00: Recorded command exit 0; command argv SHA-256
+  5764b6e0a77eb76d1a332ced5f0b73c6fd0abb42fd073ef12e800fc84ff1df62.
