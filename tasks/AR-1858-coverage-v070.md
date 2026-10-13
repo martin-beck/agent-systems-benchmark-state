@@ -25,7 +25,7 @@
   "task_revision": 66,
   "title": "v0.7.0 coverage floor repair",
   "updated_at": "2026-10-13T16:28:22+00:00",
-  "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
+  "worktree_key": "agent-systems-benchmark-ar1858-coverage-v070"
 }
 ---
 
