@@ -1820,7 +1820,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt Coordinator v0.7.4 with partial legacy worktree binding. |
-| Next action | Run full state suite with the bound state .venv (system Python lacks jsonschema), then formal/generated/privacy gates; vendor verify already passes and focused vendor tests are 12 passed. |
+| Next action | Repair/reconcile current ASB state doctor blockers (AR-1856 task projection missing schema_version, stale generated CURRENT/STATUS/PROJECT_STATE/WORKTREES, regenerated oversized candidate pycache) through coordinator before rerunning gates; then address candidate v0.7.4 compatibility failures via scoped AR dependencies, not waivers. |
 
 ### AR-1842 — Name-first selection and internal identity resolution
 

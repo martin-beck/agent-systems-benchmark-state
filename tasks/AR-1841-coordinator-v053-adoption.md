@@ -7,7 +7,7 @@
     "AR-1795"
   ],
   "id": "AR-1841",
-  "next_action": "Run full state suite with the bound state .venv (system Python lacks jsonschema), then formal/generated/privacy gates; vendor verify already passes and focused vendor tests are 12 passed.",
+  "next_action": "Repair/reconcile current ASB state doctor blockers (AR-1856 task projection missing schema_version, stale generated CURRENT/STATUS/PROJECT_STATE/WORKTREES, regenerated oversized candidate pycache) through coordinator before rerunning gates; then address candidate v0.7.4 compatibility failures via scoped AR dependencies, not waivers.",
   "owner": "ar1841-v053-adoption-luna",
   "plan": "../plans/AR-1841-coordinator-v053-adoption.md",
   "priority": "P0",
@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T14:31:25+00:00",
+  "updated_at": "2026-10-13T14:31:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -511,3 +511,10 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
   be313cb59fb9f1996617d2045585674de14e92ffecedbd24f3b6a541905fbc33.
 
 - 2026-10-13T14:31:25+00:00: Heartbeat by ar1841-v053-adoption-luna.
+
+- 2026-10-13T14:31:42+00:00: Full suite completed 2123 passed, 1315 subtests, 14 failed in 456.84s
+  on candidate 173b74c738. Failures are recorded above. Post-run doctor now also reports concurrent
+  state blockers: malformed untracked AR-1856 projection, stale generated views, and oversized
+  generated tools/__pycache__/handoffctl.cpython-312.pyc in candidate worktree. A direct cleanup
+  wrapper attempt recorded command exit 1 because the pyc path had already changed; no vendor bytes
+  were modified. Current exact vendor verify remains green.
