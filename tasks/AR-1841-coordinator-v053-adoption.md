@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.5.3 with partial legacy worktree binding.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T12:04:25+00:00",
+  "updated_at": "2026-10-13T12:39:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -394,3 +394,14 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
 - 2026-10-13T12:04:25+00:00: Recorded durable blocker: upstream v0.7.3 tag 95c6b559 has pyproject
   and COORDINATOR_VERSION 0.7.2, conflicting with vendor verifier tag/version identity. Vendor files
   unchanged; PR #142 remains unmerged.
+
+- 2026-10-13T12:39:55+00:00: Coordination role cleanup verified 2026-10-13T12:39:38Z: exact-revision
+  roles remove advanced .runtime/roles.json revision 57->74 and removed only 17 assignments already
+  expired at 2026-10-13T12:30:00Z; all 26 unexpired assignments, including AR-1841
+  implementer/reviewer and AR-1849 implementer roles through 23:00:00Z, remain unchanged. roles.json
+  sha256 8d88f01a5cc060fefd50fafc5fbe4fb808a7587e44431a874ddb766243089703. handoffctl reconcile
+  --commit --push ticket 8141 completed with pending_paths []; doctor --live passed before and after
+  reconcile. Oversized generated pycache was moved recoverably outside state checkout. Vendor files
+  and ownership/lease fields were not changed. AR-1841 may resume only after corrected upstream
+  v0.7.3 metadata and exact immutable re-vendoring; do not start v0.7.4 sync from current tag
+  95c6b559 reporting runtime 0.7.2.
