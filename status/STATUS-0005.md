@@ -334,6 +334,7 @@
 | [AR-1857](../tasks/AR-1857-coverage-repair.md) | None | None |
 | [AR-1858](../tasks/AR-1858-coverage-v070.md) | None | [AR-1859](../tasks/AR-1859-formal-work-root-validation.md) |
 | [AR-1859](../tasks/AR-1859-formal-work-root-validation.md) | [AR-1858](../tasks/AR-1858-coverage-v070.md) | None |
+| [AR-1860](../tasks/AR-1860-formal-work-root-adoption.md) | None | None |
 
 ## Complete AR inventory
 
@@ -446,7 +447,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (98)
+### Planned (99)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -505,6 +506,7 @@
 | P0 | [AR-1846](../tasks/AR-1846-command-dataflow-extraction.md): Extract ASB command and option dataflows | Unclaimed | Extract all ASB commands and options and their relations to configuration entities across the complete workflow. | Promote after AR-1845; extract the authoritative &#96;asb&#96; command tree and connect every option to lifecycle entities. |
 | P0 | [AR-1847](../tasks/AR-1847-graphviz-svg-export.md): Export ASB configuration dataflows to Graphviz and SVG | Unclaimed | Write the ASB configuration/dataflow graph as Graphviz DOT and a developer-screen-readable SVG. | Promote after AR-1846; implement the extraction command and deterministic DOT/SVG graph artifacts with privacy checks. |
 | P0 | [AR-1859](../tasks/AR-1859-formal-work-root-validation.md): v0.7.0 formal work-root validation | Unclaimed | Reject non-absolute TLC work roots before formal execution. | Promote after validating the AR-1858 terminal evidence and bind the exact v0.7.0 formal worktree. |
+| P0 | [AR-1860](../tasks/AR-1860-formal-work-root-adoption.md): Dependency-safe formal work-root repair adoption | Unclaimed | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. | Promote and claim the dependency-safe repair adoption; bind the exact v0.7.0 formal worktree and qualify signed HEAD 1f3c7f65ca. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -653,4 +655,3 @@
 | P0 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | Unclaimed | Provide a delegated runner for real strict-replay child lifecycle qualification. | No further action; protected merge 7ea3e001 exact-main workflows 35202285902/85873/85881/85905/85917/85930/85955 all green, and KVM guest passed 51 normal plus the qualified backend test. AR-1301 is promoted and active. |
 | P0 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | Unclaimed | Repair the stale formal Cargo.lock required by hosted exact-head gates. | Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success. |
 | P0 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | Unclaimed | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Monitor exact-main post-merge workflows for c1b1860786e844adb69b8f74e39af290592a89c8 to terminal SUCCESS; verify protected main signature/DCO/tree and release AR-1290 done. |
-| P0 | [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md): Repair superseded dependency pointers | Unclaimed | Repair missing successor pointers on superseded dependency tasks. | Claim the state-repair AR, add the verified successor pointers to AR-1052/1054/1056/1058/1061, reconcile and validate AR-1010 dependency readiness. |

@@ -2074,6 +2074,20 @@
 | Summary | Reject non-absolute TLC work roots before formal execution. |
 | Next action | Promote after validating the AR-1858 terminal evidence and bind the exact v0.7.0 formal worktree. |
 
+### AR-1860 — Dependency-safe formal work-root repair adoption
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. |
+| Next action | Promote and claim the dependency-safe repair adoption; bind the exact v0.7.0 formal worktree and qualify signed HEAD 1f3c7f65ca. |
+
 
 ## Dependency graph
 
@@ -2977,6 +2991,7 @@ flowchart LR
         AR_1857["AR-1857 - Blocked"]:::status_blocked
         AR_1858["AR-1858 - In progress"]:::status_in_progress
         AR_1859["AR-1859 - Planned"]:::status_planned
+        AR_1860["AR-1860 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
