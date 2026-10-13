@@ -1120,7 +1120,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. |
-| Next action | Repair the handoffctl Bubblewrap Cargo toolchain mount (or provide an equivalent pinned-toolchain runner), then rerun the exact-head focused/full tests through handoffctl; no source repair is justified. |
+| Next action | Repair the coordinator Bubblewrap runtime root to mount the approved pinned Cargo toolchain, compiler/linker support, complete workspace source, and required identity files through an authorized runner; then rerun exact-head focused and full tests through handoffctl. No product source repair is justified. |
 
 ### AR-1774 — Status and progress completeness CI
 
@@ -5027,7 +5027,3 @@ flowchart LR
     AR_1827 --> AR_1832
     AR_1828 --> AR_1829
     AR_1828 --> AR_1830
-    AR_1828 --> AR_1831
-    AR_1828 --> AR_1832
-    AR_1829 --> AR_1830
-    AR_1829 --> AR_1831

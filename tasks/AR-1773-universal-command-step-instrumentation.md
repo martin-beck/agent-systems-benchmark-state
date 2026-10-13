@@ -78,7 +78,7 @@
     "returncode": 0
   },
   "id": "AR-1773",
-  "next_action": "Repair the handoffctl Bubblewrap Cargo toolchain mount (or provide an equivalent pinned-toolchain runner), then rerun the exact-head focused/full tests through handoffctl; no source repair is justified.",
+  "next_action": "Repair the coordinator Bubblewrap runtime root to mount the approved pinned Cargo toolchain, compiler/linker support, complete workspace source, and required identity files through an authorized runner; then rerun exact-head focused and full tests through handoffctl. No product source repair is justified.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 1,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
@@ -98,9 +98,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T21:45:11+00:00",
+  "updated_at": "2026-10-13T21:45:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -289,3 +289,12 @@ non-TTY compatibility.
 
 - 2026-10-13T21:45:11+00:00: Recorded command exit 0; command argv SHA-256
   dcf2a1e092d8beb91cc00f73e1d47ad3100c2a45398d78007d503d78806b996f.
+
+- 2026-10-13T21:45:20+00:00: Runner repair qualification: the pinned Cargo toolchain staged under
+  the declared crates/asb-cli read mount resolved Cargo 1.93.0 inside bwrap (prior exact error
+  bwrap: execvp cargo: No such file or directory is eliminated). A staged exact-head workspace
+  compiled and the focused human:: subset passed 35/35 through handoffctl. Full asb-cli lib
+  execution reached all 437 tests but remains environmentally non-green: minimal bwrap root lacks
+  /etc/passwd (root-only tests report No user exists for uid 0), and network-denied provider probes
+  fail closed; no source or gate change is justified. Keep AR open ownerless for coordinator runner
+  repair; do not modify AR-1293.
