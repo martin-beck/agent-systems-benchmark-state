@@ -157,6 +157,127 @@ class AssumptionRevalidationTests(unittest.TestCase):
                 )
             )
 
+    def test_unavailable_bindings_are_rejected_without_recording_an_assumption(self) -> None:
+        cases = (
+            ("base", "", "assumption base requires a safely bound worktree"),
+            ("dependency", "not-an-ar", "assumption dependency is invalid"),
+            ("dependency", "AR-9999", "assumption dependency is unavailable"),
+            ("observation", "missing.txt", "assumption observation is unavailable"),
+        )
+        for index, (kind, reference, error) in enumerate(cases):
+            with self.subTest(kind=kind, reference=reference):
+                if kind == "base":
+                    self.meta.pop("worktree_key")
+                with self.assertRaisesRegex(RuntimeError, error):
+                    self.apply(
+                        self.args(
+                            "declare",
+                            f"missing-{index}",
+                            kind=kind,
+                            reference=reference,
+                            material=True,
+                        )
+                    )
+                self.assertNotIn("assumption_revalidation", self.meta)
+                self.meta["worktree_key"] = "worker"
+
+        directory = self.root / "directory.txt"
+        directory.mkdir()
+        with self.assertRaisesRegex(RuntimeError, "bounded regular file"):
+            self.apply(
+                self.args(
+                    "declare",
+                    "directory",
+                    kind="observation",
+                    reference="directory.txt",
+                    material=True,
+                )
+            )
+
+    def test_tampered_or_unlinked_history_fails_closed_before_admission(self) -> None:
+        declaration = assumption_revalidation._record(
+            "declare", "base", "base", True, {"head": "a" * 40}, 3, ""
+        )
+        duplicate = assumption_revalidation._record(
+            "declare", "base", "base", True, {"head": "b" * 40}, 4, declaration["digest"]
+        )
+        revalidation = assumption_revalidation._record(
+            "revalidate", "base", "base", True, {"head": "b" * 40}, 4, ""
+        )
+        dispose_without_reason = assumption_revalidation._record(
+            "dispose", "base", "base", True, {"head": "b" * 40}, 4, declaration["digest"]
+        )
+        cases = (
+            ([declaration, duplicate], "assumption is declared more than once"),
+            ([revalidation], "assumption follow-up is not linked to declaration"),
+            ([declaration, dispose_without_reason], "assumption disposition reason is invalid"),
+            (
+                [declaration] * (assumption_revalidation.MAX_RECORDS + 1),
+                "assumption history is invalid",
+            ),
+        )
+        for ledger, error in cases:
+            with self.subTest(error=error):
+                self.meta["assumption_revalidation"] = ledger
+                self.assertIn(error, assumption_revalidation.metadata_error(self.meta) or "")
+                self.assertEqual(
+                    f"ASSUMPTION_REVALIDATION_REQUIRED: {error}",
+                    assumption_revalidation.admission_error(
+                        self.root, self.projects, self.meta, self.tasks
+                    ),
+                )
+
+    def test_owner_and_followup_fences_prevent_mutating_a_different_assumption(self) -> None:
+        wrong_task = self.args("declare", "base", kind="base", material=True)
+        wrong_task.task = "AR-0002"
+        with self.assertRaisesRegex(RuntimeError, "does not match"):
+            self.apply(wrong_task)
+        wrong_owner = self.args("declare", "base", kind="base", material=True)
+        wrong_owner.owner = "other"
+        with self.assertRaisesRegex(RuntimeError, "is owned by worker"):
+            self.apply(wrong_owner)
+        self.meta["status"] = "planned"
+        with self.assertRaisesRegex(RuntimeError, "require an active task"):
+            self.apply(self.args("declare", "base", kind="base", material=True))
+        self.meta["status"] = "in_progress"
+        with self.assertRaisesRegex(RuntimeError, "must be declared before follow-up"):
+            self.apply(self.args("dispose", "unknown", reason="not applicable"))
+
+    def test_disposed_material_assumption_needs_no_lookup_but_corrupt_active_binding_blocks(
+        self,
+    ) -> None:
+        self.apply(
+            self.args(
+                "declare", "scan", kind="observation", reference="observation.txt", material=True
+            )
+        )
+        self.meta["task_revision"] = 3
+        self.apply(self.args("dispose", "scan", reason="superseded"))
+        (self.root / "observation.txt").unlink()
+        self.assertFalse(assumption_revalidation.needs_admission(self.meta))
+        self.assertIsNone(
+            assumption_revalidation.admission_error(self.root, self.projects, self.meta, self.tasks)
+        )
+
+        self.meta["assumption_revalidation"] = [
+            assumption_revalidation._record(
+                "declare",
+                "scan",
+                "observation",
+                True,
+                {"ref": "missing.txt", "digest": "sha256:" + "a" * 64},
+                3,
+                "",
+            )
+        ]
+        self.assertTrue(assumption_revalidation.needs_admission(self.meta))
+        self.assertEqual(
+            "ASSUMPTION_REVALIDATION_REQUIRED: assumption observation is unavailable",
+            assumption_revalidation.admission_error(
+                self.root, self.projects, self.meta, self.tasks
+            ),
+        )
+
     def test_assumption_validator_is_covered_by_the_enforced_complexity_budget(self) -> None:
         workflow = (REPOSITORY_ROOT / ".github/workflows/verify.yml").read_text(encoding="utf-8")
         self.assertIn(
