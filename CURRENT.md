@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1773 — Universal command step instrumentation](tasks/AR-1773-universal-command-step-instrumentation.md) | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Instrument every eligible public command operation through the shared reporter after the diagnostic gate and reporter are accepted. | asb_ar1773_instrument_luna |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1773 — Universal command step instrumentation](tasks/AR-1773-universal-command-step-instrumentation.md) | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Instrument every eligible public command operation through the shared reporter after the diagnostic gate and reporter are accepted. | - |
 | P0 | [AR-1783 — Installed workload selection and execution](tasks/AR-1783-installed-workload-selection-and-execution.md) | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift. | Repair the generated diagnostic catalog in its owning AR/mainline change, then rerun exact-head serialized coverage; do not add duplicate workload/control tests or weaken the 90% floor. | - |
 | P0 | [AR-1796 — Concurrent integration liveness](tasks/AR-1796-concurrent-integration-liveness.md) | Keep autonomous development live during concurrent protected-main integration. | Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt. | - |
 | P0 | [AR-1849 — Formal admission environment repair](tasks/AR-1849-formal-admission-env-repair.md) | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94% versus required 95%. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. | - |
