@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T23:39:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -82,7 +82,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 1,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "asb_ar1773_runner_repair_luna4",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -96,11 +96,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T21:45:20+00:00",
+  "updated_at": "2026-10-13T21:45:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -298,3 +298,9 @@ non-TTY compatibility.
   /etc/passwd (root-only tests report No user exists for uid 0), and network-denied provider probes
   fail closed; no source or gate change is justified. Keep AR open ownerless for coordinator runner
   repair; do not modify AR-1293.
+
+- 2026-10-13T21:45:25+00:00: Released ownerless after runner qualification. Pinned Cargo mount is
+  proven effective: Cargo 1.93.0 resolves and human:: focused tests pass 35/35 through bwrap. Exact
+  full package reaches 437 tests but cannot be green under current minimal runner because
+  /etc/passwd is absent for uid 0 tests and network-denied fixture probes are environmental. No
+  product source change, AR-1293 change, or gate weakening.
