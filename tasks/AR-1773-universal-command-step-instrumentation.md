@@ -98,9 +98,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T22:20:42+00:00",
+  "updated_at": "2026-10-13T22:21:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -389,3 +389,12 @@ non-TTY compatibility.
 
 - 2026-10-13T22:20:42+00:00: Recorded command exit 127; command argv SHA-256
   298de8df9b7e46a9c28ddb8018ea725606043351fe8f6e806cde75a77d9f2dde.
+
+- 2026-10-13T22:21:24+00:00: Fresh runner-root audit complete at exact product head
+  f78a1006202d6fb62df4aa3d5efd0a42381b713c. Authorized handoffctl probes: cargo, rustc, and absolute
+  pinned Rust 1.93.0 cargo all exit 127 before tool execution because the minimal Bubblewrap root
+  has no mounted toolchain. Focused and full handoffctl test attempts both exit 127. Host pinned
+  Cargo 1.93.0 exact-head cargo test --locked --offline -p asb-cli passes 437 plus integration/doc
+  tests; workspace check --locked --offline passes. Docker client exists but daemon is unavailable;
+  QEMU exists without approved VM/image. No product drift or source repair justified; no gate
+  weakening.
