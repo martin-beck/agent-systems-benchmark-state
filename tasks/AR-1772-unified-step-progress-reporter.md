@@ -25,11 +25,11 @@
   },
   "spec_ref": "specs/AR-1772.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide the sole status/progress reporter for delayed, terminal-safe, ETA-bearing human step output.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Unified human step-progress reporter",
-  "updated_at": "2026-10-12T13:22:43+00:00",
+  "updated_at": "2026-10-13T19:37:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1772-unified-step-progress-reporter"
 }
 ---
@@ -59,3 +59,6 @@ Non-terminals receive stable,
 append-only fixed-width lines without ANSI/control/redraw bytes; a terminal may
 redraw the `[WAIT]` progress bar. No hand-written status or progress print is
 allowed outside this helper.
+
+- 2026-10-13T19:37:28+00:00: Dependency AR-1775 is complete; existing merged implementation and
+  evidence are ready for reconciliation.
