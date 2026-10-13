@@ -307,7 +307,7 @@
 | [AR-1838](../tasks/AR-1838-source-checkout-fixture-repair.md) | None | None |
 | [AR-1839](../tasks/AR-1839-source-fixture-cross-process-isolation.md) | None | None |
 | [AR-1840](../tasks/AR-1840-persist-ar1839-review-evidence.md) | None | None |
-| [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md) | [AR-1795](../tasks/AR-1795-coordinator-v051-adoption.md) | [AR-1851](../tasks/AR-1851-ar1793-v074-contracts.md), [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md), [AR-1853](../tasks/AR-1853-complexity-v074-contract.md) |
+| [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md) | [AR-1795](../tasks/AR-1795-coordinator-v051-adoption.md) | None |
 | [AR-1842](../tasks/AR-1842-name-first-selection-resolution.md) | [AR-1832](../tasks/AR-1832-explicit-config-e2e-qualification.md) | [AR-1844](../tasks/AR-1844-data-model-registry.md) |
 | [AR-1843](../tasks/AR-1843-hosted-formal-workspace-permission-repair.md) | None | None |
 | [AR-1844](../tasks/AR-1844-data-model-registry.md) | [AR-1842](../tasks/AR-1842-name-first-selection-resolution.md) | [AR-1845](../tasks/AR-1845-entity-storage-extraction.md) |
@@ -317,9 +317,9 @@
 | [AR-1848](../tasks/AR-1848-graph-extraction-qualification.md) | [AR-1847](../tasks/AR-1847-graphviz-svg-export.md) | None |
 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md) | None | None |
 | [AR-1850](../tasks/AR-1850-development-tui-interactive-lifetime.md) | None | None |
-| [AR-1851](../tasks/AR-1851-ar1793-v074-contracts.md) | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md) | None |
-| [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md) | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md) | None |
-| [AR-1853](../tasks/AR-1853-complexity-v074-contract.md) | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md) | None |
+| [AR-1851](../tasks/AR-1851-ar1793-v074-contracts.md) | None | None |
+| [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md) | None | None |
+| [AR-1853](../tasks/AR-1853-complexity-v074-contract.md) | None | None |
 
 ## Complete AR inventory
 
@@ -525,9 +525,9 @@
 | P1 | [AR-1684](../tasks/AR-1684.md): Harden runtime selector helper matrix | Unclaimed | Lock in fail-closed rejection of hostile selector directory, symlink, and non-regular entries. | Run the targeted authority defensive matrix and full hosted checks on the signed head. |
 | P1 | [AR-1831](../tasks/AR-1831-explicit-config-cli-tui-docs.md): Align CLI, TUI handoff, and documentation to explicit config workflow | Unclaimed | Make every CLI, TUI handoff, help page, completion, and example teach the explicit setup-output and plan-config workflow. | Align CLI help, human output, completions, TUI handoff, examples, and migration documentation to the explicit setup-config route. |
 | P1 | [AR-1848](../tasks/AR-1848-graph-extraction-qualification.md): Qualify ASB dataflow graph extraction end to end | Unclaimed | Qualify reproducible complete ASB dataflow extraction, DOT/SVG generation, privacy, and paired documentation. | Promote after AR-1847; run clean-checkout extraction and cross-check graph artifacts against all generated registries and CLI options. |
-| P1 | [AR-1851](../tasks/AR-1851-ar1793-v074-contracts.md): AR-1793 v0.7.4 compatibility contracts | Unclaimed | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. | Wait for AR-1841 v0.7.4 adoption completion, then reproduce and repair only non-vendor AR-1793 compatibility fixtures. |
-| P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | Unclaimed | Align role-store authorization tests with Coordinator v0.7.4. | Wait for AR-1841 v0.7.4 adoption completion, then reproduce and repair only non-vendor role-store compatibility tests. |
-| P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | Unclaimed | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1841 v0.7.4 adoption completion, then align the non-vendor complexity command and contract test without changing the budget. |
+| P1 | [AR-1851](../tasks/AR-1851-ar1793-v074-contracts.md): AR-1793 v0.7.4 compatibility contracts | Unclaimed | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. | Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then reproduce and repair only non-vendor AR-1793 compatibility fixtures. |
+| P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | Unclaimed | Align role-store authorization tests with Coordinator v0.7.4. | Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then reproduce and repair only non-vendor role-store compatibility tests. |
+| P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | Unclaimed | Align the complexity-budget contract with Coordinator v0.7.4. | Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then align the non-vendor complexity command and contract test without changing the budget. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |

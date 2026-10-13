@@ -1960,7 +1960,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. |
-| Next action | Wait for AR-1841 v0.7.4 adoption completion, then reproduce and repair only non-vendor AR-1793 compatibility fixtures. |
+| Next action | Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then reproduce and repair only non-vendor AR-1793 compatibility fixtures. |
 
 ### AR-1852 — Role-store v0.7.4 compatibility contracts
 
@@ -1974,7 +1974,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align role-store authorization tests with Coordinator v0.7.4. |
-| Next action | Wait for AR-1841 v0.7.4 adoption completion, then reproduce and repair only non-vendor role-store compatibility tests. |
+| Next action | Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then reproduce and repair only non-vendor role-store compatibility tests. |
 
 ### AR-1853 — Complexity v0.7.4 compatibility contract
 
@@ -1988,7 +1988,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align the complexity-budget contract with Coordinator v0.7.4. |
-| Next action | Wait for AR-1841 v0.7.4 adoption completion, then align the non-vendor complexity command and contract test without changing the budget. |
+| Next action | Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then align the non-vendor complexity command and contract test without changing the budget. |
 
 
 ## Dependency graph
@@ -4872,9 +4872,6 @@ flowchart LR
     AR_1831 --> AR_1832
     AR_1832 --> AR_1842
     AR_1835 --> AR_1836
-    AR_1841 --> AR_1851
-    AR_1841 --> AR_1852
-    AR_1841 --> AR_1853
     AR_1842 --> AR_1844
     AR_1844 --> AR_1845
     AR_1845 --> AR_1846
