@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:30:20+00:00",
+  "updated_at": "2026-10-13T13:31:05+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -89,3 +89,6 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T13:30:20+00:00: Recorded command exit 0; command argv SHA-256
   2934cf10a3158c46702c7b91e0a17138489bf7e87db8d255f46dc7f7199c50ff.
+
+- 2026-10-13T13:31:05+00:00: Recorded command exit 1; command argv SHA-256
+  f3d06f68e44df840a02eb23ff6fbf4dcf4adcf9b96cbc2d39fb994109467a63f.
