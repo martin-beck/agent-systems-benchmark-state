@@ -346,12 +346,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | codex-ar1863-catalog-luna | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1864](../tasks/AR-1864.md): Align task-record schema vocabulary | asb_ar1864_close_luna | Align task-record schema vocabulary for execution, retry, and standard task metadata without changing lifecycle semantics. | Align task-record schema execution/retry and standard metadata vocabulary; add positive and hostile fixtures and regenerate documentation. |
 
 ### Open (7)
 
@@ -565,7 +564,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (615)
+### Done (616)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -657,3 +656,4 @@
 | P0 | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | Unclaimed | Provision an approved isolated qualification runner for ASB executable evidence. | Monitor post-merge workflows for main 85bcd1e until terminal; verify exact tree/signature/DCO/policy, then release AR-1252 done. |
 | P0 | [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md): Protected-main DCO recovery for PR202 | Unclaimed | Recover a signed protected-main DCO boundary after the unsigned PR202 web merge. | Monitor exact-main 0a808a6 post-merge workflows to terminal; release AR-1259 and hand off AR-0813 only after all required policies pass. |
 | P0 | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | Unclaimed | Recover signed protected-main integration after PR #205. | Complete: signed main 69e8b064 verified exact parents/tree/DCO; all seven post-merge workflows SUCCESS. Preserve AR-1263 traceability and recovery evidence. |
+| P0 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Unclaimed | Land the authenticated runtime-to-CLI replay transport foundation. | Coverage repaired at signed head b1fb837: asb-core replay_transport 98.24&#37; lines and 97.53&#37; regions, above unchanged 95&#37; floor; focused core 4/4 and runtime 6/6 pass. Fmt, workspace locked tests, and clippy pass; push exact head and await fresh PR #208 checks. |

@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded scope and record local acceptance evidence. | codex-ar1863-catalog-luna |
-| P1 | [AR-1864 — Align task-record schema vocabulary](tasks/AR-1864.md) | Align task-record schema vocabulary for execution, retry, and standard task metadata without changing lifecycle semantics. | Align task-record schema execution/retry and standard metadata vocabulary; add positive and hostile fixtures and regenerate documentation. | asb_ar1864_close_luna |
 
 ## Open
 
