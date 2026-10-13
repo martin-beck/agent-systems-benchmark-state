@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T17:56:04+00:00",
   "depends_on": [],
   "id": "AR-1858",
-  "next_action": "Classify the 1800s timeout as invalid partial evidence; bounded split-suite runs from the exact v0.7.0 worktree are required before accepting coverage or implementing tests. Preserve /tmp/ar1858-v070.coverage as rejected.",
+  "next_action": "A separate process is running outside the bound worktree: /srv/data/projects/asb-state-coordinator-v070 with COVERAGE_FILE=/tmp/asb-state-v075-strict-19.coverage. Do not accept it as AR-1858 evidence until exact worktree root and terminal result are verified. After it ends, run bounded split suites from /srv/data/projects/asb-state-coordinator-v070-ar1858-coverage-v070.",
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T15:56:12+00:00",
+  "updated_at": "2026-10-13T15:56:21+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -85,3 +85,8 @@ artifact. Do not lower the threshold or merge PR #145.
   test summary or complete suite. A separate uv/coverage process is currently visible; do not
   classify it until its terminal output is captured. Next action is bounded split-suite isolation
   with correct worktree import order.
+
+- 2026-10-13T15:56:21+00:00: Process inspection at 15:56Z found uv/coverage PID 3847760 cwd
+  /srv/data/projects/asb-state-coordinator-v070, not AR-1858 bound worktree. It is not yet
+  classified as a result; avoid killing another active run. AR-1858 timeout artifact remains
+  rejected.
