@@ -68,6 +68,16 @@
   "execution_envelope_ref": "quality/AR-1773-execution-envelope.json",
   "execution_envelope_revision": 1,
   "execution_envelope_task_revision": 5,
+  "execution_reservation": {
+    "argv_digest": "6c5198a40e0b254ecf810bcbe0dffa65f72de6acc03387325c438f1adee5f20e",
+    "command_class": "test",
+    "envelope_digest": "sha256:36af7d046d9ef15d3ed21b798ab488b01fd26a5d9ad86cc3a2af1f75907c69cb",
+    "execution_id": "fcfadb06ceeb4d528227e49750dd4e45",
+    "expires_at": "2026-10-13T21:16:04+00:00",
+    "owner": "asb_ar1773_runner_repair_luna2",
+    "scope_digest": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "task_revision": 25
+  },
   "execution_result": {
     "argv_digest": "01118936340c7a874aa04f692ae8412e4bb92f3e4b83b4796b445b4abde4664e",
     "classification": "EXIT",
@@ -98,9 +108,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T20:44:49+00:00",
+  "updated_at": "2026-10-13T20:45:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -189,3 +199,5 @@ non-TTY compatibility.
   weakening.
 
 - 2026-10-13T20:44:49+00:00: Claimed by asb_ar1773_runner_repair_luna2.
+
+- 2026-10-13T20:45:05+00:00: Reserved bound execution fcfadb06ceeb4d528227e49750dd4e45.
