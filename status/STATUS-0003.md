@@ -2016,7 +2016,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the malformed observed_dirty coordination field on AR-1850 without changing its product scope. |
-| Next action | Validate the corrected AR-1850 coordination metadata against the published task schema, review the positive and hostile cases, and publish the state-only repair. |
+| Next action | Merge PR #149 at exact reviewed head 7fc186e48b after green required checks, then verify exact-main schema, focused tests, and live doctor. |
 
 
 ## Dependency graph

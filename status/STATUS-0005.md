@@ -334,7 +334,7 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | ar1849-formal-admission-env-luna | Repair workflow-wide private TLC admission environment for formal CI. | Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | ar1853-complexity-luna | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
-| P1 | [AR-1855](../tasks/AR-1855-ar1850-metadata-schema-repair.md): Repair AR-1850 coordination metadata schema | ar1855-metadata-schema-luna | Repair the malformed observed_dirty coordination field on AR-1850 without changing its product scope. | Validate the corrected AR-1850 coordination metadata against the published task schema, review the positive and hostile cases, and publish the state-only repair. |
+| P1 | [AR-1855](../tasks/AR-1855-ar1850-metadata-schema-repair.md): Repair AR-1850 coordination metadata schema | ar1855-metadata-schema-luna | Repair the malformed observed_dirty coordination field on AR-1850 without changing its product scope. | Merge PR #149 at exact reviewed head 7fc186e48b after green required checks, then verify exact-main schema, focused tests, and live doctor. |
 
 ### Open (7)
 

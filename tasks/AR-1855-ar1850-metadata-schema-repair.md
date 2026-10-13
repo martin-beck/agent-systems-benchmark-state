@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T15:49:32+00:00",
   "depends_on": [],
   "id": "AR-1855",
-  "next_action": "Validate the corrected AR-1850 coordination metadata against the published task schema, review the positive and hostile cases, and publish the state-only repair.",
+  "next_action": "Merge PR #149 at exact reviewed head 7fc186e48b after green required checks, then verify exact-main schema, focused tests, and live doctor.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the malformed observed_dirty coordination field on AR-1850 without changing its product scope.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Repair AR-1850 coordination metadata schema",
-  "updated_at": "2026-10-13T13:58:02+00:00",
+  "updated_at": "2026-10-13T13:58:19+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1855-ar1850-metadata-schema-repair"
 }
 ---
@@ -57,3 +57,7 @@ AR-1850 product requirement, owner, dependency, and launcher scope.
 
 - 2026-10-13T13:58:02+00:00: Recorded command exit 0; command argv SHA-256
   8b872581a42f60c2dba01e615ff19183488db00eb5327c618f2b8a9893a63bed.
+
+- 2026-10-13T13:58:19+00:00: Independent reviewer approved PR #149 exact head 7fc186e48b: six-line
+  test typing/format-only diff; positive and hostile cases remain intact; no gate or product
+  changes.
