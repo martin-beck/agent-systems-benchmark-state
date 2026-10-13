@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1863-e2",
+  "envelope_revision": 2,
+  "task": "AR-1863",
+  "task_revision": 76,
+  "spec_ref": "specs/AR-1863.json",
+  "spec_revision": 1,
+  "outputs": [
+    {"id": "merge", "description": "Verify exact-head review, checks, merge, and post-merge evidence."},
+    {"id": "repair", "description": "Record the immutable successor-envelope repair and its exact binding."}
+  ],
+  "non_goals": [
+    "Do not change AR-1787, diagnostic gates, or unrelated tasks.",
+    "Do not grant source-write authority or alter the reviewed product tree."
+  ],
+  "path_scope": {
+    "read": ["config", "tools/integration", "tools/quality", "crates/asb-cli", "Cargo.toml", "Cargo.lock"],
+    "write": ["tools/integration"]
+  },
+  "command_classes": {
+    "read": {"allowed": true},
+    "test": {"allowed": true, "timeout_seconds": 900},
+    "source-write": {"allowed": false},
+    "git-publication": {"allowed": true, "timeout_seconds": 900}
+  },
+  "evidence": [
+    {"id": "review", "class": "mechanical", "required": true},
+    {"id": "repair", "class": "mechanical", "required": true}
+  ],
+  "stop_conditions": [
+    {"id": "scope", "kind": "deny"},
+    {"id": "source-write", "kind": "deny"}
+  ]
+}
