@@ -2114,7 +2114,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption. |
-| Next action | Route recover_execution normalization to an upstream Coordinator successor; preserve immutable ASB vendor provenance and do not publish AR-1862 as an ASB implementation. |
+| Next action | Bind and accept exact v0.7.8 lifecycle-alignment evidence, then release this obsolete downstream repair successor. |
 
 
 ## Dependency graph
