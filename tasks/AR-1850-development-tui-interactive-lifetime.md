@@ -2,14 +2,14 @@
 {
   "branch": "feature/ar1850-development-tui-interactive-lifetime",
   "checkpoint_commit": "2b42c8c1d24495d1155484b0b3d76bd7f7d0c11d",
-  "claim_expires": "2026-10-13T16:00:53+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1850",
   "next_action": "Do not release AR-1850. Reconcile the protected signed merge-path provenance failure with Coordinator; retain merge commit and evidence, then run authorized repair/requalification before post-merge PTY verification.",
   "observed_branch": "feature/ar1850-development-tui-interactive-lifetime",
   "observed_dirty": 0,
   "observed_head": "671f898b6a859655952a009b9a4468e685d74013",
-  "owner": "ar1850-development-tui-lifetime-luna",
+  "owner": "",
   "plan": "../plans/AR-1850-development-tui-interactive-lifetime.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1850.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T15:06:40+00:00",
+  "updated_at": "2026-10-13T15:06:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -132,3 +132,10 @@ cross-repository qualification.
   merge 870331be533ea1a0ba9645ddbb690df56af84935. All 10 exact-main workflows terminal-success;
   exact-main focused TUI lifecycle, cleanup, terminal restoration, and inherited-channel descendant
   cleanup tests pass.
+
+- 2026-10-13T15:06:56+00:00: Released AR-1850 after exact-main signed AR-1856 recovery merge
+  870331be533ea1a0ba9645ddbb690df56af84935. Receipt quality/AR-1850-postmerge-receipt.json
+  (sha256:ab45e96c8a32ee21207f1920ae30a52dc5052b8ef8c6b3b557e89d3f27adee86) records all 10
+  terminal-success workflows and focused exact-main TUI lifetime, cleanup, terminal restoration, and
+  inherited-fd tests. Product implementation 671f898b6a859655952a009b9a4468e685d74013 is in signed
+  merge ancestry. doctor --live is green.

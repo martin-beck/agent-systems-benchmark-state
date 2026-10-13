@@ -1938,11 +1938,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1850-development-tui-lifetime-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline. |
@@ -2939,7 +2939,7 @@ flowchart LR
         AR_1847["AR-1847 - Planned"]:::status_planned
         AR_1848["AR-1848 - Planned"]:::status_planned
         AR_1849["AR-1849 - In progress"]:::status_in_progress
-        AR_1850["AR-1850 - In progress"]:::status_in_progress
+        AR_1850["AR-1850 - Done"]:::status_done
         AR_1851["AR-1851 - Open"]:::status_open
         AR_1852["AR-1852 - Open"]:::status_open
         AR_1853["AR-1853 - In progress"]:::status_in_progress
