@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:31:22+00:00",
+  "updated_at": "2026-10-13T13:40:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -99,3 +99,6 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
   complexity and role contracts plus SQLite/lock-domain errors under concurrent coordinator
   activity; no new AR-1793 failure. Do not merge until fresh exact-head CI and independent review
   pass.
+
+- 2026-10-13T13:40:27+00:00: Recorded command exit 0; command argv SHA-256
+  fa8b5b71edf3200d321ee3c09e348eccd55c38732142f7ba47f3a35c7d1b1356.
