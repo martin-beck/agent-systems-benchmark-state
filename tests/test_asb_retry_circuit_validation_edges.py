@@ -123,4 +123,3 @@ class RetryCircuitValidationEdgeTests(unittest.TestCase):
         )
         with self.assertRaisesRegex(RuntimeError, "current task revision"):
             retry_circuit.apply(args, self.meta, NOW)
-
