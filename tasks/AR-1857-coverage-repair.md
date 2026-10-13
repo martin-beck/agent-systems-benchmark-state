@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1857-coverage-repair",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T19:43:22+00:00",
   "depends_on": [],
   "id": "AR-1857",
   "next_action": "Analyze exact 94% coverage artifact and add narrow tests for uncovered first-party paths; preserve 95% threshold and PR #145 unmerged.",
-  "owner": "",
+  "owner": "ar1857-coverage-repair-luna",
   "plan": "../plans/AR-1857-coverage-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1857.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Restore the full-gate coverage floor after the terminal 94% observation.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Full-gate coverage floor repair",
-  "updated_at": "2026-10-13T19:28:19+00:00",
+  "updated_at": "2026-10-13T19:28:22+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1857-coverage-repair"
 }
 ---
@@ -87,3 +87,5 @@ modify AR-1841 or AR-1856 ownership and must not weaken formal/resource gates.
 
 - 2026-10-13T19:28:19+00:00: Temporary bounded reopen solely to remove generated pycache through
   handoffctl before final doctor/snapshot reconciliation; no product changes.
+
+- 2026-10-13T19:28:22+00:00: Claimed by ar1857-coverage-repair-luna.
