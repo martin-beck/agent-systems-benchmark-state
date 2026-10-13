@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T00:00:00Z",
+  "updated_at": "2026-10-13T17:48:25+00:00",
   "worktree_key": ""
 }
 ---
@@ -27,3 +27,6 @@ repair at signed merge `3b200c9` (PR #1293 head `0bc30d4`) through the
 approved vendor/provenance path. It must not patch vendored coordinator files
 or mutate AR-1826 until the adopted repair is verified.
 
+
+- 2026-10-13T17:48:25+00:00: Upstream Coordinator AR-0034 is complete at signed merge 3b200c9;
+  promote isolated downstream adoption.
