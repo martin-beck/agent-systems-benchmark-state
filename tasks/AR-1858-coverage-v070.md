@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T18:20:35+00:00",
   "depends_on": [],
   "id": "AR-1858",
-  "next_action": "Terminal full guarded run: 2337 tests in 432.002s, 3 failures in test_workflow_triggers formal workspace rejection (all variants expected rc64, observed rc1 because tlc2.TLC unavailable before validation). Coverage /tmp/ar1858-v070-guarded-full.coverage is 95% exactly. Preserve PR145/unmerged; do not release until formal environment failure is repaired or scoped.",
+  "next_action": "AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped.",
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:28:07+00:00",
+  "updated_at": "2026-10-13T16:28:22+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -236,3 +236,7 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-13T16:28:07+00:00: Recorded command exit 0; command argv SHA-256
   f8a636084dc1be7707acba9c8cfcb887a479a23d6187d9cc626c868a219b321d.
+
+- 2026-10-13T16:28:22+00:00: Successor linkage: AR-1859 formal work-root validation files committed
+  in state commit 7bfc0eb53c, with exact three failure variants and rc64 contract. Promotion attempt
+  failed closed: unfinished dependency AR-1858. No gate weakening or acceptance.

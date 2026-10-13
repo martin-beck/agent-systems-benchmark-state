@@ -2058,7 +2058,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
-| Next action | Terminal full guarded run: 2337 tests in 432.002s, 3 failures in test_workflow_triggers formal workspace rejection (all variants expected rc64, observed rc1 because tlc2.TLC unavailable before validation). Coverage /tmp/ar1858-v070-guarded-full.coverage is 95&#37; exactly. Preserve PR145/unmerged; do not release until formal environment failure is repaired or scoped. |
+| Next action | AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped. |
 
 ### AR-1859 — v0.7.0 formal work-root validation
 
