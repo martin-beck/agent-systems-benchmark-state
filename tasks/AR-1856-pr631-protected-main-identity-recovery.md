@@ -2,11 +2,11 @@
 {
   "branch": "repair/ar-1856-pr631-protected-main-identity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T16:32:14+00:00",
   "depends_on": [],
   "id": "AR-1856",
   "next_action": "Inspect current protected-main refs and preserve the immutable PR #631 merge failure before creating a forward-only recovery topic.",
-  "owner": "",
+  "owner": "ar1856-protected-main-repair-luna",
   "plan": "../plans/AR-1856-pr631-protected-main-identity-recovery.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1856.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "PR #631 protected-main identity recovery",
-  "updated_at": "2026-10-13T14:31:38+00:00",
+  "updated_at": "2026-10-13T14:32:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1856-pr631-protected-main-identity"
 }
 ---
@@ -40,3 +40,5 @@ AR-1850's TUI implementation or AR-1841's Coordinator adoption/state vendor.
 
 - 2026-10-13T14:31:38+00:00: Durable provenance failure evidence supports a narrowly scoped forward
   identity recovery; no AR-1850 or AR-1841 overlap.
+
+- 2026-10-13T14:32:14+00:00: Claimed by ar1856-protected-main-repair-luna.
