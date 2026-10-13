@@ -2086,7 +2086,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. |
-| Next action | Promote and claim the dependency-safe repair adoption; bind the exact v0.7.0 formal worktree and qualify signed HEAD 1f3c7f65ca. |
+| Next action | Record formal portable-smoke and full qualification evidence, obtain independent review and exact-head CI, then merge and watch post-merge assurance. |
 
 
 ## Dependency graph

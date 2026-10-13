@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T18:56:43+00:00",
   "depends_on": [],
   "id": "AR-1860",
-  "next_action": "Promote and claim the dependency-safe repair adoption; bind the exact v0.7.0 formal worktree and qualify signed HEAD 1f3c7f65ca.",
+  "next_action": "Record formal portable-smoke and full qualification evidence, obtain independent review and exact-head CI, then merge and watch post-merge assurance.",
   "owner": "ar1857-coverage-repair-luna",
   "plan": "../plans/AR-1860-formal-work-root-adoption.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T16:57:32+00:00",
+  "updated_at": "2026-10-13T16:57:46+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1860-formal-work-root"
 }
 ---
@@ -58,3 +58,6 @@ coverage floor and all formal gates.
 
 - 2026-10-13T16:57:32+00:00: Recorded command exit 0; command argv SHA-256
   404b2e7badf14e1b35bcf8ef2d52e0f0aec5407f78caeaa459702baa76d9bf8d.
+
+- 2026-10-13T16:57:46+00:00: Portable-smoke formal gate passed at exact signed product head
+  1f3c7f65ca; TLC completed with no error and handoffctl recorded terminal success.
