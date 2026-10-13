@@ -347,7 +347,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1861](../tasks/AR-1861-coordinator-ar0034-repair-adoption.md): Adopt Coordinator AR-0034 legacy-binding repair | ar1861-resume-luna | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. | Route the downstream formal-lifecycle operation drift exposed by AR-0034 vendor verification to a narrowly scoped compatibility successor; preserve AR-1826 and do not publish this incomplete adoption. |
+| P0 | [AR-1861](../tasks/AR-1861-coordinator-ar0034-repair-adoption.md): Adopt Coordinator AR-0034 legacy-binding repair | ar1861-resume-luna | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. | Complete focused/full/formal/privacy gates on exact v0.7.8 development vendor; initial direct pytest lacked jsonschema, state venv run is in progress with failures to classify. Preserve AR-1826. |
 
 ### Open (8)
 

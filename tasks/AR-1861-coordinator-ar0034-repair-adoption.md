@@ -5,16 +5,16 @@
   "claim_expires": "2026-10-13T20:27:08+00:00",
   "depends_on": [],
   "id": "AR-1861",
-  "next_action": "Route the downstream formal-lifecycle operation drift exposed by AR-0034 vendor verification to a narrowly scoped compatibility successor; preserve AR-1826 and do not publish this incomplete adoption.",
+  "next_action": "Complete focused/full/formal/privacy gates on exact v0.7.8 development vendor; initial direct pytest lacked jsonschema, state venv run is in progress with failures to classify. Preserve AR-1826.",
   "owner": "ar1861-resume-luna",
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T18:27:08+00:00",
+  "updated_at": "2026-10-13T18:27:37+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -67,3 +67,9 @@ or mutate AR-1826 until the adopted repair is verified.
 - 2026-10-13T18:25:43+00:00: Heartbeat by ar1861-resume-luna.
 
 - 2026-10-13T18:27:08+00:00: Heartbeat by ar1861-resume-luna.
+
+- 2026-10-13T18:27:37+00:00: Validated upstream AR-0111 product commit
+  eee760513969a2929512df3c822aab9d769bf057 and signed merge
+  3dda5d2d021beac1382a7f561e16ca93d3941536. Official sync-development into isolated adoption
+  worktree succeeded; handoffctl_vendor verify passed. AR-1826 remains untouched. Full suite
+  launched with state venv; no publication yet.
