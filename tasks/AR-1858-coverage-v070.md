@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:05:14+00:00",
+  "updated_at": "2026-10-13T16:05:22+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -143,3 +143,6 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-13T16:05:14+00:00: Recorded command exit 0; command argv SHA-256
   c18034f4047fbd3cf1302980ea14066aa40b93d6ec7554b03dcd20584f19118c.
+
+- 2026-10-13T16:05:22+00:00: Recorded command exit 0; command argv SHA-256
+  2664abc0bc457ed7efc0d4f20c8124b76b9cd55d3acce4aa3fd7d1fcf3a03f2a.
