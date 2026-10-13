@@ -57,9 +57,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T19:22:33+00:00",
+  "updated_at": "2026-10-13T19:22:35+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -297,3 +297,6 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 - 2026-10-13T19:22:30+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
 
 - 2026-10-13T19:22:33+00:00: Recorded retryable failure 1/3.
+
+- 2026-10-13T19:22:35+00:00: Recorded command exit 1; command argv SHA-256
+  adc280b5d8aad54a352fae1748e4ab08773b1aff03bf65377d924417dec24e20.
