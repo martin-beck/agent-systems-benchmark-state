@@ -2120,11 +2120,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1863-merge-verify-luna3 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. |
@@ -3050,7 +3050,7 @@ flowchart LR
         AR_1860["AR-1860 - Done"]:::status_done
         AR_1861["AR-1861 - Done"]:::status_done
         AR_1862["AR-1862 - Done"]:::status_done
-        AR_1863["AR-1863 - In progress"]:::status_in_progress
+        AR_1863["AR-1863 - Open"]:::status_open
         AR_1864["AR-1864 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -5023,3 +5023,5 @@ flowchart LR
     AR_1826 --> AR_1829
     AR_1827 --> AR_1828
     AR_1827 --> AR_1829
+    AR_1827 --> AR_1831
+    AR_1827 --> AR_1832
