@@ -6,7 +6,11 @@ import unittest
 from collections.abc import Iterator, Mapping
 from contextlib import contextmanager
 from typing import Any, cast
+from unittest.mock import patch
 
+from tools.admission_lease import AdmissionLease
+from tools.lock_domain import LockDomainIdentity
+from tools.rollback_control_store import BarrierSessionState
 from tools.scoped_backend_adapter import ScopedBackendAdapter
 
 IDENTITY = {
@@ -63,6 +67,29 @@ class Backend:
 
 
 class ScopedBackendAdapterAsbCoverageTests(unittest.TestCase):
+    def test_validated_session_constructs_only_after_identity_binding(self) -> None:
+        scope = InMemoryScope()
+        identity = object.__new__(LockDomainIdentity)
+        lease = AdmissionLease("asb", "authority-7", "fence-8", "worker-a", "barrier-9", 3)
+
+        with (
+            patch.object(LockDomainIdentity, "assert_descriptor_binding") as descriptor,
+            patch.object(LockDomainIdentity, "assert_session_binding") as session,
+        ):
+            adapter = ScopedBackendAdapter.from_validated_session(
+                Backend(),
+                scope,
+                identity,
+                object(),
+                cast(BarrierSessionState, object()),
+                lease,
+            )
+
+        self.assertIsInstance(adapter, ScopedBackendAdapter)
+        self.assertEqual(["ordered"], scope.events)
+        descriptor.assert_called_once()
+        session.assert_called_once()
+
     def test_snapshot_rejects_complete_context_without_all_admission_fields(self) -> None:
         scope = InMemoryScope()
         backend = Backend()
