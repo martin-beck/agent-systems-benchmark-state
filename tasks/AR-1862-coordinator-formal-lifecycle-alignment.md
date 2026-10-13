@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1862-coordinator-formal-lifecycle-alignment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T17:55:00+00:00",
+  "updated_at": "2026-10-13T18:05:26+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -60,3 +60,6 @@ vendored Coordinator bytes or mutate AR-1826.
 - 2026-10-13T17:55:00+00:00: ASB ownership audit confirms the formal lifecycle normalization belongs
   upstream: affected ASB files are immutable vendored Coordinator artifacts. Reverted attempted
   downstream edit; route an upstream successor and preserve AR-1861/AR-1826 boundaries.
+
+- 2026-10-13T18:05:26+00:00: Unblocked: exact Coordinator v0.7.8 vendor manifest verifies the
+  formerly mismatched lifecycle inventory without downstream vendor mutation.
