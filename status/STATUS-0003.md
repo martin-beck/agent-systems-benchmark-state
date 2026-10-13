@@ -1946,7 +1946,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline. |
-| Next action | Rerun only failed Policy/coverage workflow 38410495133 through handoffctl; keep PR unmerged until rerun, pending emulated-aarch64, and all required checks are terminal green. |
+| Next action | Wait for all exact-main runs at merge commit 9d2290dc89c9610bb32680f2100759aeba29a06e to finish green, then run post-merge PTY/state verification and release AR-1850. |
 
 ### AR-1851 — AR-1793 v0.7.4 compatibility contracts
 
