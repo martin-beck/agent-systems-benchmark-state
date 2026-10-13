@@ -136,6 +136,91 @@ class ChangeDriftTests(unittest.TestCase):
                 "AR-0001", 3, "now", self.root, [baseline], "baseline", scope_paths=["src"]
             )
 
+    def test_record_validation_rejects_tampered_payloads_and_bad_explanations(self) -> None:
+        baseline = change_drift.baseline("AR-0001", 2, "now", self.root, ["src"])
+        malformed_scope = dict(baseline)
+        malformed_scope["payload"] = {**baseline["payload"], "scope": ["src", "src"]}
+        self._rehash(malformed_scope)
+        with self.assertRaisesRegex(ValueError, "baseline payload"):
+            change_drift.validate(malformed_scope)
+        with self.assertRaisesRegex(ValueError, "explanation paths"):
+            change_drift.explain("AR-0001", 3, "now", baseline["digest"], [], "why", False)
+        with self.assertRaisesRegex(ValueError, "reason"):
+            change_drift.explain(
+                "AR-0001", 3, "now", baseline["digest"], ["src/old.py"], "two\nlines", False
+            )
+        with self.assertRaisesRegex(ValueError, "baseline digest"):
+            change_drift.rescope("AR-0001", 3, "now", "not-a-digest", ["src"])
+
+    def test_history_rejects_cross_task_unlinked_rescope_and_duplicate_delta(self) -> None:
+        baseline = change_drift.baseline("AR-0001", 2, "now", self.root, ["src"])
+        wrong_task = change_drift.baseline(
+            "AR-0002", 3, "now", self.root, ["src"], baseline["digest"]
+        )
+        with self.assertRaisesRegex(ValueError, "differs from task"):
+            change_drift.records({"id": "AR-0001", "change_drift": [baseline, wrong_task]})
+        bad_rescope = change_drift.rescope(
+            "AR-0001", 3, "now", "sha256:" + "1" * 64, ["src"], baseline["digest"]
+        )
+        with self.assertRaisesRegex(ValueError, "not linked to the active baseline"):
+            change_drift.records({"id": "AR-0001", "change_drift": [baseline, bad_rescope]})
+        (self.root / "src" / "old.py").write_text("changed\n", encoding="utf-8")
+        first = change_drift.delta("AR-0001", 3, "now", self.root, baseline, ["src"])
+        second = change_drift.delta(
+            "AR-0001", 4, "now", self.root, baseline, ["src"], first["digest"]
+        )
+        with self.assertRaisesRegex(ValueError, "delta is not linked"):
+            change_drift.records({"id": "AR-0001", "change_drift": [baseline, first, second]})
+
+    def test_rescope_and_delta_ignore_unneeded_changes(self) -> None:
+        baseline = change_drift.baseline("AR-0001", 2, "now", self.root, ["src"])
+        widened = change_drift.rescope("AR-0001", 3, "now", baseline["digest"], ["src", "docs"])
+        self.assertEqual(["docs", "src"], change_drift.active_scope([baseline, widened], baseline))
+        with self.assertRaisesRegex(ValueError, "duplicates"):
+            change_drift.rescope("AR-0001", 3, "now", baseline["digest"], ["src", "src"])
+        self.assertEqual(
+            [],
+            change_drift.delta("AR-0001", 3, "now", self.root, baseline, ["src"])["payload"][
+                "entries"
+            ],
+        )
+
+    def test_observation_and_fingerprinting_fail_closed_on_unusable_git_results(self) -> None:
+        self.assertEqual("", change_drift._content_digest(self.root, "src/missing.py"))
+        bad_fingerprint = subprocess.CompletedProcess(["git"], 0, stdout="not-a-hash\n")
+        with (
+            patch("tools.change_drift.subprocess.run", return_value=bad_fingerprint),
+            self.assertRaisesRegex(RuntimeError, "could not fingerprint"),
+        ):
+            change_drift._content_digest(self.root, "src/old.py")
+        failed_status = subprocess.CompletedProcess(["git"], 1, stdout=b"")
+        head = subprocess.CompletedProcess(["git"], 1, stdout="")
+        with (
+            patch("tools.change_drift.subprocess.run", side_effect=[head, failed_status]),
+            self.assertRaisesRegex(RuntimeError, "requires a Git worktree"),
+        ):
+            change_drift.observe(self.root)
+
+    def test_history_rejects_unfinished_cycles_and_rescope_after_delta(self) -> None:
+        baseline = change_drift.baseline("AR-0001", 2, "now", self.root, ["src"])
+        delta = change_drift._record(
+            "delta",
+            "AR-0001",
+            3,
+            "now",
+            {"baseline_digest": baseline["digest"], "head": "head", "entries": []},
+            baseline["digest"],
+        )
+        rescope = change_drift.rescope(
+            "AR-0001", 4, "now", baseline["digest"], ["src"], delta["digest"]
+        )
+        with self.assertRaisesRegex(ValueError, "re-scope is not linked"):
+            change_drift.records({"id": "AR-0001", "change_drift": [baseline, delta, rescope]})
+        with self.assertRaisesRegex(RuntimeError, "re-scope requires a baseline"):
+            change_drift.next_record(
+                "AR-0001", 4, "now", self.root, [baseline, delta], "rescope", scope_paths=["src"]
+            )
+
     def test_baseline_delta_explain_tracks_committed_and_dirty_changes(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -201,6 +286,21 @@ class ChangeDriftTests(unittest.TestCase):
             change_drift.next_record("AR-9000", 1, "now", Path(), [], "delta")
         with self.assertRaisesRegex(ValueError, "unknown"):
             change_drift.next_record("AR-9000", 1, "now", Path(), [], "unknown")
+
+    def _rehash(self, record: change_drift.Meta) -> None:
+        record["digest"] = change_drift.digest(
+            {
+                key: record[key]
+                for key in (
+                    "schema_version",
+                    "kind",
+                    "task",
+                    "task_revision",
+                    "payload",
+                    "previous_digest",
+                )
+            }
+        )
 
 
 if __name__ == "__main__":
