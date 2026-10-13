@@ -22,10 +22,10 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T17:05:39+00:00",
-  "worktree_key": "asb-state-coordinator-v070-ar1860-formal-work-root"
+  "updated_at": "2026-10-13T17:10:39+00:00",
+  "worktree_key": "agent-systems-benchmark-ar1860-formal-work-root"
 }
 ---
 
@@ -81,3 +81,6 @@ coverage floor and all formal gates.
 
 - 2026-10-13T17:05:39+00:00: Exact-head review: 89/89 commits from origin/main are SSH-signed and
   carry DCO trailers; product worktree clean. Candidate branch pushed to origin for PR publication.
+
+- 2026-10-13T17:10:39+00:00: Recorded command exit 0; command argv SHA-256
+  6ec39729fa000aadc6afbd94bbf0c1639087072caf2c16bc994e4a29e7da65d2.
