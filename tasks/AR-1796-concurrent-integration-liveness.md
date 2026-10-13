@@ -2,22 +2,28 @@
 {
   "branch": "policy/concurrent-integration-liveness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T20:34:57+00:00",
+  "claim_process": {
+    "boot_digest": "sha256:7c78a2fd8557e03d4043618cb2c5f862fad89bf0143b18d8e2ebad9dc949c1b4",
+    "pid": 1060249,
+    "pid_namespace": "5:4026531836",
+    "start_time": 4039008
+  },
   "depends_on": [],
   "id": "AR-1796",
   "next_action": "Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1796-liveness2-luna",
   "plan": "../plans/AR-1796-concurrent-integration-liveness.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-12T13:22:13+00:00",
+  "updated_at": "2026-10-13T19:34:57+00:00",
   "worktree_key": ""
 }
 ---
@@ -52,3 +58,5 @@ workers checkpoint, retry, and continue useful work during integration churn.
 
 - 2026-10-12T13:22:13+00:00: Expired release handoff has no live worker; return task to open for
   coordinator consistency.
+
+- 2026-10-13T19:34:57+00:00: Claimed by codex-ar1796-liveness2-luna.
