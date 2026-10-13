@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T18:27:37+00:00",
+  "updated_at": "2026-10-13T18:27:57+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -73,3 +73,6 @@ or mutate AR-1826 until the adopted repair is verified.
   3dda5d2d021beac1382a7f561e16ca93d3941536. Official sync-development into isolated adoption
   worktree succeeded; handoffctl_vendor verify passed. AR-1826 remains untouched. Full suite
   launched with state venv; no publication yet.
+
+- 2026-10-13T18:27:57+00:00: Recorded command exit 0; command argv SHA-256
+  f226356f61a774768aa19dcb90bb381ebb51819b0458bdd4a84ea8e0f6f81287.
