@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 163,
+  "task_revision": 164,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T14:39:35+00:00",
+  "updated_at": "2026-10-13T14:39:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -536,3 +536,6 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
   dependencies: AR-1851 AR-1793 binding/admission expectations; AR-1852 role-store semantics;
   AR-1853 complexity command contract; AR-1849 formal hostile-root and upgrade/rollback environment
   contracts. Do not duplicate ownership or waive failures.
+
+- 2026-10-13T14:39:41+00:00: Recorded command exit 0; command argv SHA-256
+  bd2e71e4a898933e1598db497b17c50aaf27e2d7127aecd889033bf1b386b0f5.
