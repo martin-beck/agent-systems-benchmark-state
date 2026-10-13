@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T20:56:27+00:00",
   "depends_on": [],
   "id": "AR-1852",
-  "next_action": "Independent review and exact-head CI for signed product commit 7b46c6b076 atop 22da911193. Full gate remains blocked by unrelated baseline/environment failures: missing jsonschema, AR-1793 fixture drift, workflow complexity fixture drift, rollback lock timeout, and vendor/generated-state checks.",
+  "next_action": "Install the locked jsonschema dependency in the ASB test environment and repair the pre-existing tools/handoffctl.py immutable vendor digest mismatch (without weakening authorization or changing the v0.7.4 vendor); then rerun full gates, obtain independent exact-head review/CI for 7b46c6b076, update PR #148, and merge only when green.",
   "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T18:57:28+00:00",
+  "updated_at": "2026-10-13T18:57:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -177,3 +177,10 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T18:57:28+00:00: Recorded command exit 1; command argv SHA-256
   62236d3e81d0c8b2effe042cc36870c289084ce1b5f90ceb55328609c037d33d.
+
+- 2026-10-13T18:57:41+00:00: Reconfirmed durable blockers without product/Git changes: locked
+  product venv import jsonschema fails with ModuleNotFoundError; handoffctl_vendor.py verify on
+  exact product worktree fails with immutable vendor digest mismatch at tools/handoffctl.py. Focused
+  role suite remains prior 10/10 evidence; PR #148 remains old unupdated head a7ea458 and exact
+  reviewed product head is 7b46c6b076. Cache hygiene removed only the >200 KiB generated pyc; doctor
+  --live is OK. Keep AR open and do not duplicate vendor or dependency repairs.

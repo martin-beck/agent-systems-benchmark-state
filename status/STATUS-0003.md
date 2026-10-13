@@ -1974,7 +1974,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align role-store authorization tests with Coordinator v0.7.4. |
-| Next action | Independent review and exact-head CI for signed product commit 7b46c6b076 atop 22da911193. Full gate remains blocked by unrelated baseline/environment failures: missing jsonschema, AR-1793 fixture drift, workflow complexity fixture drift, rollback lock timeout, and vendor/generated-state checks. |
+| Next action | Install the locked jsonschema dependency in the ASB test environment and repair the pre-existing tools/handoffctl.py immutable vendor digest mismatch (without weakening authorization or changing the v0.7.4 vendor); then rerun full gates, obtain independent exact-head review/CI for 7b46c6b076, update PR #148, and merge only when green. |
 
 ### AR-1853 — Complexity v0.7.4 compatibility contract
 
@@ -5023,6 +5023,3 @@ flowchart LR
     classDef status_future fill:#455a64,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
-    classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
-```
-
