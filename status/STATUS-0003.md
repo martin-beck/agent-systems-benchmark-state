@@ -1820,7 +1820,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt Coordinator v0.7.4 with partial legacy worktree binding. |
-| Next action | Repair/reconcile current ASB state doctor blockers (AR-1856 task projection missing schema_version, stale generated CURRENT/STATUS/PROJECT_STATE/WORKTREES, regenerated oversized candidate pycache) through coordinator before rerunning gates; then address candidate v0.7.4 compatibility failures via scoped AR dependencies, not waivers. |
+| Next action | Wait for scoped v0.7.4 compatibility repairs AR-1851 (AR-1793), AR-1852 (roles), AR-1853 (complexity), and AR-1849 (formal admission/workspace) to merge; then rebase PR #142 onto protected main, rerun candidate-focused/full gates, obtain fresh exact-head independent review and CI. |
 
 ### AR-1842 — Name-first selection and internal identity resolution
 

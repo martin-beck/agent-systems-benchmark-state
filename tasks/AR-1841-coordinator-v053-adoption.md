@@ -7,7 +7,7 @@
     "AR-1795"
   ],
   "id": "AR-1841",
-  "next_action": "Repair/reconcile current ASB state doctor blockers (AR-1856 task projection missing schema_version, stale generated CURRENT/STATUS/PROJECT_STATE/WORKTREES, regenerated oversized candidate pycache) through coordinator before rerunning gates; then address candidate v0.7.4 compatibility failures via scoped AR dependencies, not waivers.",
+  "next_action": "Wait for scoped v0.7.4 compatibility repairs AR-1851 (AR-1793), AR-1852 (roles), AR-1853 (complexity), and AR-1849 (formal admission/workspace) to merge; then rebase PR #142 onto protected main, rerun candidate-focused/full gates, obtain fresh exact-head independent review and CI.",
   "owner": "ar1841-v053-adoption-luna",
   "plan": "../plans/AR-1841-coordinator-v053-adoption.md",
   "priority": "P0",
@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 162,
+  "task_revision": 163,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T14:39:19+00:00",
+  "updated_at": "2026-10-13T14:39:35+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -529,3 +529,10 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
   26a0b0704d5bed7b71adc5e6d96b67abcad4ff34a1cc40b0d458dc52246e81ce.
 
 - 2026-10-13T14:39:19+00:00: Heartbeat by ar1841-v053-adoption-luna.
+
+- 2026-10-13T14:39:35+00:00: Canonical state doctor is green after concurrent AR-1856 restoration.
+  Exact vendor verify passes and candidate branch 173b74c738 is clean/pushed. PR #142 is open at
+  exact head 173b74c738 with no hosted checks yet. Full-suite failures map to existing scoped
+  dependencies: AR-1851 AR-1793 binding/admission expectations; AR-1852 role-store semantics;
+  AR-1853 complexity command contract; AR-1849 formal hostile-root and upgrade/rollback environment
+  contracts. Do not duplicate ownership or waive failures.
