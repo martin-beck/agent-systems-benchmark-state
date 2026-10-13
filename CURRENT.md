@@ -7,13 +7,13 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1773 — Universal command step instrumentation](tasks/AR-1773-universal-command-step-instrumentation.md) | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Instrument every eligible public command operation through the shared reporter after the diagnostic gate and reporter are accepted. | asb_ar1773_compile_luna |
 | P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded scope and record local acceptance evidence. | codex-ar1863-catalog-luna |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1773 — Universal command step instrumentation](tasks/AR-1773-universal-command-step-instrumentation.md) | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Instrument every eligible public command operation through the shared reporter after the diagnostic gate and reporter are accepted. | - |
 | P0 | [AR-1783 — Installed workload selection and execution](tasks/AR-1783-installed-workload-selection-and-execution.md) | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift. | Repair the generated diagnostic catalog in its owning AR/mainline change, then rerun exact-head serialized coverage; do not add duplicate workload/control tests or weaken the 90% floor. | - |
 | P0 | [AR-1796 — Concurrent integration liveness](tasks/AR-1796-concurrent-integration-liveness.md) | Keep autonomous development live during concurrent protected-main integration. | Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt. | - |
 | P0 | [AR-1849 — Formal admission environment repair](tasks/AR-1849-formal-admission-env-repair.md) | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94% versus required 95%. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. | - |

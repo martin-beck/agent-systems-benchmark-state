@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T22:13:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -82,7 +82,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "asb_ar1773_compile_luna",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -96,11 +96,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T20:14:17+00:00",
+  "updated_at": "2026-10-13T20:15:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -178,3 +178,12 @@ non-TTY compatibility.
 
 - 2026-10-13T20:14:17+00:00: Recorded command exit 1; command argv SHA-256
   01118936340c7a874aa04f692ae8412e4bb92f3e4b83b4796b445b4abde4664e.
+
+- 2026-10-13T20:15:41+00:00: Requalified current main with pinned Rust 1.93.0 outside sandbox: cargo
+  check --locked --workspace --all-targets and cargo clippy --locked --workspace --all-targets -- -D
+  warnings both pass on AR head f78a100620 and archived origin/main 870331be53. No product fix is
+  justified; the reported control.rs:9998 unused error is no longer present on current main.
+  Handoffctl test envelope still fails before execution because bwrap cannot mount the pinned Cargo
+  toolchain (cargo not found). Keep AR open ownerless with infrastructure-only blocker; repair
+  runner/toolchain mount, then rerun exact-head tests through handoffctl. No source commit, no gate
+  weakening.
