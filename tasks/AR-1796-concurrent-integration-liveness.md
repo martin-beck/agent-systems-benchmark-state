@@ -2,28 +2,22 @@
 {
   "branch": "policy/concurrent-integration-liveness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T20:35:05+00:00",
-  "claim_process": {
-    "boot_digest": "sha256:7c78a2fd8557e03d4043618cb2c5f862fad89bf0143b18d8e2ebad9dc949c1b4",
-    "pid": 1060249,
-    "pid_namespace": "5:4026531836",
-    "start_time": 4039008
-  },
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1796",
   "next_action": "Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1796-liveness2-luna",
+  "owner": "",
   "plan": "../plans/AR-1796-concurrent-integration-liveness.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-13T19:35:12+00:00",
+  "updated_at": "2026-10-13T19:35:42+00:00",
   "worktree_key": ""
 }
 ---
@@ -68,3 +62,8 @@ workers checkpoint, retry, and continue useful work during integration churn.
   is absent; latest public release is asb-0.1.0-plan-output-ce190 and no v0.5.2/full-exhaustive
   attestation is present. Implementation/release cannot be marked complete until current-head
   identity and fresh attestation are reconciled.
+
+- 2026-10-13T19:35:42+00:00: Bounded exact-state audit complete. Return ownerless/open with
+  preserved next_action: reconcile stale AR-1796 merge identity against current protected main,
+  obtain fresh exact-head full-exhaustive formal attestation, then reassess v0.5.2 release. No
+  product or release gate changes made.
