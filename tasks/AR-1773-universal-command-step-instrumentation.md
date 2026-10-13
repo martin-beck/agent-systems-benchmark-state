@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T23:09:36+00:00",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -82,7 +82,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "",
+  "owner": "asb_ar1773_runner_repair_luna4",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -96,11 +96,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T21:36:52+00:00",
+  "updated_at": "2026-10-13T21:39:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -236,3 +236,5 @@ non-TTY compatibility.
   blocked before execution by exact stderr bwrap: execvp cargo: No such file or directory. Next
   action is to repair the pinned Cargo mount/runner, then rerun exact-head focused/full tests
   through handoffctl. No gate weakened; AR-1863 remains separate.
+
+- 2026-10-13T21:39:36+00:00: Claimed by asb_ar1773_runner_repair_luna4.
