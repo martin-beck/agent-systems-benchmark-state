@@ -331,6 +331,7 @@
 | [AR-1855](../tasks/AR-1855-ar1850-metadata-schema-repair.md) | None | None |
 | [AR-1856](../tasks/AR-1856-pr631-protected-main-identity-recovery.md) | None | None |
 | [AR-1857](../tasks/AR-1857-coverage-repair.md) | None | None |
+| [AR-1858](../tasks/AR-1858-coverage-v070.md) | None | None |
 
 ## Complete AR inventory
 
@@ -442,7 +443,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (97)
+### Planned (98)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -500,6 +501,7 @@
 | P0 | [AR-1845](../tasks/AR-1845-entity-storage-extraction.md): Extract configuration entities and storage relations | Unclaimed | Extract where ASB settings are stored and transported across the complete configuration-to-results lifecycle. | Promote after AR-1844; enumerate storage entities and lifecycle relations from setup through benchmark results. |
 | P0 | [AR-1846](../tasks/AR-1846-command-dataflow-extraction.md): Extract ASB command and option dataflows | Unclaimed | Extract all ASB commands and options and their relations to configuration entities across the complete workflow. | Promote after AR-1845; extract the authoritative &#96;asb&#96; command tree and connect every option to lifecycle entities. |
 | P0 | [AR-1847](../tasks/AR-1847-graphviz-svg-export.md): Export ASB configuration dataflows to Graphviz and SVG | Unclaimed | Write the ASB configuration/dataflow graph as Graphviz DOT and a developer-screen-readable SVG. | Promote after AR-1846; implement the extraction command and deterministic DOT/SVG graph artifacts with privacy checks. |
+| P0 | [AR-1858](../tasks/AR-1858-coverage-v070.md): v0.7.0 coverage floor repair | Unclaimed | Repair the v0.7.0 coordinator coverage floor deficit. | Add narrow coverage tests in the exact v0.7.0 source worktree; preserve the 95&#37; floor and PR #145 unmerged. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -653,4 +655,3 @@
 | P0 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md): State quality-gate baseline | Unclaimed | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95&#37; coverage gate pass. |
 | P0 | [AR-1297](../tasks/AR-1297-task-schema-metadata.md): Task schema and metadata consistency | Unclaimed | Repair task schema and metadata consistency without weakening coordinator validation. | Repair every reported task schema/metadata error from durable evidence, add strict superseded_by schema coverage, regenerate views, and rerun all state gates. |
 | P0 | [AR-1298](../tasks/AR-1298-narrow-metadata-repair.md): Narrow task metadata repair scope | Unclaimed | Narrow AR-1297 metadata changes to the exact evidence-backed schema repairs. | Restore unrelated task files to pre-AR-1297 bytes, retain only evidence-backed schema-failure repairs, regenerate views, and rerun all gates. |
-| P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Unclaimed | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | No further action; protected merge 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928, all seven exact-main workflows, signature/DCO, and merge-tree policy are verified. |

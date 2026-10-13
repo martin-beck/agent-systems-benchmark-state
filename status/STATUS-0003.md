@@ -2046,6 +2046,20 @@
 | Summary | Restore the full-gate coverage floor after the terminal 94&#37; observation. |
 | Next action | Analyze exact 94&#37; coverage artifact and add narrow tests for uncovered first-party paths; preserve 95&#37; threshold and PR #145 unmerged. |
 
+### AR-1858 — v0.7.0 coverage floor repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
+| Next action | Add narrow coverage tests in the exact v0.7.0 source worktree; preserve the 95&#37; floor and PR #145 unmerged. |
+
 
 ## Dependency graph
 
@@ -2947,6 +2961,7 @@ flowchart LR
         AR_1855["AR-1855 - Done"]:::status_done
         AR_1856["AR-1856 - Done"]:::status_done
         AR_1857["AR-1857 - Blocked"]:::status_blocked
+        AR_1858["AR-1858 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
