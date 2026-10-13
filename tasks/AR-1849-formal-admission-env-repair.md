@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T12:46:12+00:00",
+  "updated_at": "2026-10-13T12:46:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -162,3 +162,6 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 
 - 2026-10-13T12:46:12+00:00: Recorded command exit 0; command argv SHA-256
   8ac9a4b628a007ec2fff82b024c102bf6572498af3f438314240edeae4e2c646.
+
+- 2026-10-13T12:46:28+00:00: Recorded command exit 0; command argv SHA-256
+  6a075973886059416de4aa06021dbf0a54102baa243ece8060a361c48fe167e0.
