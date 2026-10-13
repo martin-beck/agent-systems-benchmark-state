@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1857.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Restore the full-gate coverage floor after the terminal 94% observation.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Full-gate coverage floor repair",
-  "updated_at": "2026-10-13T15:13:43+00:00",
+  "updated_at": "2026-10-13T19:27:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1857-coverage-repair"
 }
 ---
@@ -70,3 +70,6 @@ modify AR-1841 or AR-1856 ownership and must not weaken formal/resource gates.
   coordinator checkout. A correct source worktree exists at
   asb-state-coordinator-v070-ar1857-coverage-repair but cannot be bound to this task. Create
   successor with correct worktree_key; preserve this task and 94% evidence.
+
+- 2026-10-13T19:27:27+00:00: Authorized bounded resume to reconcile current exact artifact, PR
+  status, and successor evidence; preserve 95% floor and formal gates.
