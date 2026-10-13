@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T19:48:47+00:00",
+  "claim_expires": "2026-10-13T19:49:18+00:00",
   "depends_on": [],
   "id": "AR-1861",
   "next_action": "Create and bind a dedicated product/state adoption worktree, then vendor and qualify the immutable AR-0034 repair before any AR-1826 mutation.",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T17:49:13+00:00",
+  "updated_at": "2026-10-13T17:49:18+00:00",
   "worktree_key": ""
 }
 ---
@@ -37,3 +37,5 @@ or mutate AR-1826 until the adopted repair is verified.
   exact head 0bc30d4, signed integration merge 3b200c9, terminal hosted/formal/AWQ/scope checks
   green, and 3/3 post-merge focused repair tests. No product mutation started; isolated adoption
   worktree remains required.
+
+- 2026-10-13T17:49:18+00:00: Heartbeat by ar1841-v053-adoption-luna.
