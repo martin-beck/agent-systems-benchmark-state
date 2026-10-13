@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1852](tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | Align role-store authorization tests with Coordinator v0.7.4. | Provide a locked ASB environment with jsonschema installed and repair the pre-existing immutable tools/handoffctl.py vendor digest mismatch without changing v0.7.4 vendor content; rerun full gates, obtain independent exact-head review/CI for 7b46c6b076, update PR #148, and merge only when green. | ar1852-role-store-luna |
+| P1 | [AR-1852](tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | Align role-store authorization tests with Coordinator v0.7.4. | Use the correct v078 DCO environment (jsonschema 4.25.1 available) to run the full unittest gate from exact PR worktree 7b46c6b076; separately repair the pre-existing immutable tools/handoffctl.py vendor digest mismatch without altering v0.7.4 vendor content, then obtain independent exact-head review/CI and update PR #148 only when green. | ar1852-role-store-luna |
 
 ## Open
 
