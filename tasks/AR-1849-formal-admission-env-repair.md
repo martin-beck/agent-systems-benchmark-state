@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T14:44:10+00:00",
+  "updated_at": "2026-10-13T14:44:16+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -353,3 +353,10 @@ retain absolute-path and privacy boundaries, and add regression coverage.
   9fad2743f48e2117f9a7f7e29b906b2f8d6f4e129bd6e0c65878f538a213a39a.
 
 - 2026-10-13T14:44:10+00:00: Heartbeat by ar1849-formal-admission-env-luna.
+
+- 2026-10-13T14:44:16+00:00: Recovery/gate note: initial focused invocation failed because
+  handoffctl ran from canonical state root and unittest module names were not importable
+  (ModuleNotFoundError for tests.test_workflow_triggers and tests.test_tlc_runner); a concurrent
+  full-suite worker then held the coordinator lock causing one LOCK_TIMEOUT. No product mutation
+  occurred. After using discover with the claimed worktree test root, workflow trigger 6/6 and TLC
+  runner 19/19 passed; doctor --live is green after reconcile and generated-cache cleanup.
