@@ -46,9 +46,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "AR-1835 exact-head fixture now covers the authenticated runtime bootstrap/control seam; AR-1783 remains below 90% until that reviewed change is integrated.",
-  "task_revision": 459,
+  "task_revision": 460,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-13T19:37:22+00:00",
+  "updated_at": "2026-10-13T19:37:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -1187,3 +1187,6 @@ the suite from this end-to-end path.
 - 2026-10-13T19:37:19+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
 
 - 2026-10-13T19:37:22+00:00: Recorded retryable failure 1/3.
+
+- 2026-10-13T19:37:25+00:00: Recorded command exit 1; command argv SHA-256
+  8da9301c3b436d1d2430be4cf7a9ec902b7262bb7e8f28de6f839d0fd0e2560c.
