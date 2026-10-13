@@ -2,22 +2,22 @@
 {
   "branch": "policy/concurrent-integration-liveness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T22:31:25+00:00",
   "depends_on": [],
   "id": "AR-1796",
   "next_action": "Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt.",
   "observed_branch": "policy/concurrent-integration-liveness",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1796-liveness2-luna",
   "plan": "../plans/AR-1796-concurrent-integration-liveness.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Keep autonomous development live during concurrent protected-main integration.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Concurrent integration liveness",
-  "updated_at": "2026-10-13T19:35:42+00:00",
+  "updated_at": "2026-10-13T20:31:25+00:00",
   "worktree_key": ""
 }
 ---
@@ -67,3 +67,5 @@ workers checkpoint, retry, and continue useful work during integration churn.
   preserved next_action: reconcile stale AR-1796 merge identity against current protected main,
   obtain fresh exact-head full-exhaustive formal attestation, then reassess v0.5.2 release. No
   product or release gate changes made.
+
+- 2026-10-13T20:31:25+00:00: Claimed by codex-ar1796-liveness2-luna.

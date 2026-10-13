@@ -1434,11 +1434,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1796-liveness2-luna |
 | Parent | None |
 | Children | None |
 | Summary | Keep autonomous development live during concurrent protected-main integration. |
@@ -2998,7 +2998,7 @@ flowchart LR
         AR_1793["AR-1793 - Done"]:::status_done
         AR_1794["AR-1794 - Done"]:::status_done
         AR_1795["AR-1795 - Done"]:::status_done
-        AR_1796["AR-1796 - Open"]:::status_open
+        AR_1796["AR-1796 - In progress"]:::status_in_progress
         AR_1797["AR-1797 - Done"]:::status_done
         AR_1798["AR-1798 - Done"]:::status_done
         AR_1799["AR-1799 - Done"]:::status_done
@@ -5035,5 +5035,3 @@ flowchart LR
     AR_1830 --> AR_1831
     AR_1830 --> AR_1832
     AR_1831 --> AR_1832
-    AR_1832 --> AR_1842
-    AR_1835 --> AR_1836
