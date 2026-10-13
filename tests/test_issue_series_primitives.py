@@ -6,9 +6,13 @@
 from __future__ import annotations
 
 import copy
+import json
+import tempfile
 import unittest
+from pathlib import Path
 
 from tools.issue_series import IssueSeriesValidationError, parse_manifest
+from tools.issue_series_plan import IssueSeriesPlanError, plan_issue_series
 from tools.issue_series_publish import (
     IssueSeriesPublicationError,
     normalize_outcome,
@@ -49,6 +53,53 @@ def manifest() -> dict[str, object]:
 
 
 class IssueSeriesPrimitiveTests(unittest.TestCase):
+    def test_planning_is_canonical_and_rejects_untrusted_state(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "series.json"
+            path.write_text(json.dumps(manifest()), encoding="utf-8")
+            kwargs = {
+                "expected_product_slug": "https://github.com/owner/project",
+                "existing_task_ids": [],
+                "existing_issue_series_identities": [],
+                "current_state_digest": DIGEST,
+            }
+            receipt = json.loads(plan_issue_series(path, **kwargs))
+            self.assertEqual(REPOSITORY, receipt["series_identity"]["repository"])
+            self.assertEqual(["AR-9000", "AR-9001"], receipt["task_ids"])
+            cases = (
+                ("slug", {**kwargs, "expected_product_slug": "not a slug"}),
+                ("digest", {**kwargs, "current_state_digest": "bad"}),
+                ("task", {**kwargs, "existing_task_ids": ["AR-9000"]}),
+                (
+                    "legacy-identity",
+                    {
+                        **kwargs,
+                        "existing_issue_series_identities": [
+                            {"repository": "owner/project", "issue_number": 7}
+                        ],
+                    },
+                ),
+                (
+                    "nested-identity",
+                    {
+                        **kwargs,
+                        "existing_issue_series_identities": [
+                            {"repository": REPOSITORY, "issue": {"number": 7}}
+                        ],
+                    },
+                ),
+            )
+            for label, values in cases:
+                with self.subTest(label=label), self.assertRaises(IssueSeriesPlanError):
+                    plan_issue_series(path, **values)
+            with self.assertRaisesRegex(IssueSeriesPlanError, "does not exist"):
+                plan_issue_series(path.with_name("missing.json"), **kwargs)
+            with self.assertRaisesRegex(IssueSeriesPlanError, "not a file"):
+                plan_issue_series(Path(directory), **kwargs)
+            path.write_text("not json", encoding="utf-8")
+            with self.assertRaisesRegex(IssueSeriesPlanError, "not valid JSON"):
+                plan_issue_series(path, **kwargs)
+
     def test_manifest_accepts_normalized_tree(self) -> None:
         value = parse_manifest(manifest())
         self.assertEqual(REPOSITORY, value.repository)
