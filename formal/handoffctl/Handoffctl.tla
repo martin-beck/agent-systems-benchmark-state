@@ -31,7 +31,7 @@ ReleaseOperations ==
     {"release_planned", "release_open", "release_blocked", "release_done"}
 
 Operations ==
-    {"promote", "resume", "unblock", "pause", "claim", "heartbeat", "update", "accept", "bind-spec", "bind-worktree", "recover_expired"}
+    {"promote", "resume", "unblock", "pause", "claim", "heartbeat", "update", "accept", "bind-spec", "bind-worktree", "bind-envelope", "recover_expired", "recover_execution", "change-drift", "assumption"}
         \cup ReleaseOperations
 
 Phases == {"waiting", "holding", "releasing", "done"}
@@ -175,7 +175,7 @@ EnabledOperation(p) ==
       [] operation[p] = "heartbeat" ->
             /\ status[t] = "in_progress"
             /\ owner[t] = actor[p]
-      [] operation[p] \in {"update", "accept"} ->
+      [] operation[p] \in {"update", "accept", "change-drift", "assumption"} ->
             /\ status[t] = "in_progress"
             /\ owner[t] = actor[p]
             /\ expected[p] = revision[t]
@@ -197,10 +197,19 @@ EnabledOperation(p) ==
                         \/ boundWorktreeKey[t] = RequestedWorktreeKey(p)))
                 \/ (RequestedBranch(p) = boundBranch[t]
                     /\ RequestedWorktreeKey(p) = boundWorktreeKey[t]))
+      [] operation[p] = "bind-envelope" ->
+            /\ status[t] = "in_progress"
+            /\ owner[t] = actor[p]
+            /\ ~leaseExpired[t]
+            /\ specBound[t]
+            /\ expected[p] = revision[t]
       [] operation[p] = "recover_expired" ->
             /\ status[t] = "in_progress"
             /\ owner[t] # NoActor
             /\ leaseExpired[t]
+            /\ expected[p] = revision[t]
+      [] operation[p] = "recover_execution" ->
+            /\ status[t] = "in_progress"
             /\ expected[p] = revision[t]
       [] operation[p] \in ReleaseOperations ->
             /\ status[t] = "in_progress"
@@ -212,7 +221,7 @@ StatusAfter(p) ==
       [] operation[p] = "pause" -> "blocked"
       [] operation[p] = "claim" -> "in_progress"
       [] operation[p] = "recover_expired" -> "open"
-      [] operation[p] \in {"heartbeat", "update", "accept", "bind-spec", "bind-worktree"} -> status[target[p]]
+      [] operation[p] \in {"heartbeat", "update", "accept", "bind-spec", "bind-worktree", "bind-envelope", "recover_execution", "change-drift", "assumption"} -> status[target[p]]
       [] operation[p] = "release_planned" -> "planned"
       [] operation[p] = "release_open" -> "open"
       [] operation[p] = "release_blocked" -> "blocked"

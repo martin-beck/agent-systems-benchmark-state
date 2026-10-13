@@ -117,7 +117,12 @@ not lifecycle, merge, or release prerequisites; see
 ```sh
 tools/handoffctl snapshot
 tools/handoffctl claim AR-0001 --owner worker-unique --lease-minutes 120
-tools/handoffctl run --owner worker-unique AR-0001 -- command arg
+tools/handoffctl bind-envelope AR-0001 --owner worker-unique --expected-revision 2 \
+  --envelope-ref envelopes/AR-0001-e1.json --envelope-revision 1
+tools/handoffctl preflight AR-0001 --owner worker-unique --command-class source-write \
+  --scope-path tools --json
+tools/handoffctl run --owner worker-unique --command-class source-write --scope-path tools \
+  AR-0001 -- command arg
 tools/handoffctl update AR-0001 --owner worker-unique --expected-revision 2 \
   --note "Verified result and exact next action"
 tools/handoffctl accept AR-0001 --owner worker-unique --expected-revision 3 \
@@ -138,6 +143,42 @@ identity at claim time and later recovers only after it is absent.
 spec and validates the metadata. It does not independently inspect or prove the
 evidence contents; project review and evidence-class obligations still apply.
 The `done` release gate remains fail closed when acceptance is missing or invalid.
+
+## Change-drift guard
+
+Use `change-drift baseline` before source work, then `change-drift delta` before completion.
+The baseline and delta preserve Git rename pairs and generated-file markers without touching the
+worktree. Every changed path remains material until it is explicitly explained; generated output is
+not silently exempt. `explain` and `rescope` require the active owner and exact task revision, so a
+concurrent lifecycle change cannot be overwritten.
+
+```sh
+tools/handoffctl change-drift baseline AR-0001 --owner worker-unique --expected-revision 2 \
+  --scope-path tools --scope-path tests
+tools/handoffctl change-drift delta AR-0001 --owner worker-unique --expected-revision 3
+tools/handoffctl change-drift explain AR-0001 --owner worker-unique --expected-revision 4 \
+  --path build/output.generated --generated --reason "Documented local build output"
+tools/handoffctl change-drift rescope AR-0001 --owner worker-unique --expected-revision 5 \
+  --scope-path tools --scope-path tests --scope-path docs
+```
+
+Both the Git task record and the SQLite task row carry the same bounded canonical history. A task
+cannot transition to `done` while its latest delta has material paths without matching explanations.
+
+An execution envelope is an optional, immutable, revision-bound task contract. Once bound, every
+`run` must declare an allowed command class and, for mutations, at least one allowed scope path.
+`preflight` gives a machine-readable explanation without changing state. The bound envelope is the
+durable authority and its write paths are enforced by a Bubblewrap sandbox; `--scope-path` remains
+an auditable admission declaration and cannot expand that envelope-wide write capability. Commands
+without a mutating class receive no writable project path. Before a bound command starts,
+`handoffctl` commits a revision-CAS execution fence carrying the owner, envelope digest,
+command class, scope digest, argv digest, and deadline. With replicated Git authority, workers
+begin only after that mutation has been pushed; competing clones therefore fail before launching a
+subprocess. Lifecycle changes
+cannot bypass either live or expired execution fences. An expired execution fence requires the explicit
+`recover-execution` path, which independently verifies the claim worker has exited and the exact durable
+command-result evidence exists before clearing it. This is a safety fence, not a remote kill switch: a worker that loses authority must terminate
+its subprocess, and strict cross-host fencing still requires a target-side gateway.
 
 Restore a verified checkpoint only from a clean descendant product checkout:
 

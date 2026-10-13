@@ -67,11 +67,14 @@ export TLC_SWAP_MAX="${TLC_SWAP_MAX:-3G}"
 readonly TLA_VERSION=1.7.4
 readonly TLA_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88
 readonly SPEC_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-readonly WORK_ROOT="${TLC_WORK_ROOT:-${TMPDIR:-/tmp}/agent-workflow-coordinator-tlc}"
-if [[ "${WORK_ROOT}" != /* ]]; then
-    echo "TLC_WORK_ROOT must be an absolute path" >&2
-    exit 64
+if [[ -n "${TLC_WORK_ROOT:-}" ]]; then
+    WORK_ROOT="${TLC_WORK_ROOT}"
+elif [[ -n "${TLC_RUNTIME_ROOT:-}" ]]; then
+    WORK_ROOT="${TLC_RUNTIME_ROOT}/agent-workflow-coordinator-tlc"
+else
+    WORK_ROOT="${TMPDIR:-/tmp}/agent-workflow-coordinator-tlc"
 fi
+readonly WORK_ROOT
 mkdir --mode=700 --parents "${WORK_ROOT}"
 readonly TEMP_DIR="$(mktemp -d "${WORK_ROOT}/handoffctl-${TIER}.XXXXXX")"
 readonly SLICE_DIR="${SPEC_DIR}/.tlc-slices-$$"
@@ -182,6 +185,10 @@ elif [[ "${TIER}" == "pr-publication" ]]; then
     run_model HandoffctlReceipts
     run_model HandoffctlPublication
     run_model HandoffctlObservation
+    run_model HandoffctlPredicateLedger
+    run_model HandoffctlAssumptions
+    run_model HandoffctlRetryCircuit
+    run_model HandoffctlAutonomyLimits
     run_model HandoffctlLiveness Handoffctl
     run_model HandoffctlRecovery
 else
@@ -192,6 +199,10 @@ else
     run_model HandoffctlReceipts
     run_model HandoffctlPublication
     run_model HandoffctlObservation
+    run_model HandoffctlPredicateLedger
+    run_model HandoffctlAssumptions
+    run_model HandoffctlRetryCircuit
+    run_model HandoffctlAutonomyLimits
     # `operation` is immutable. These p1 operation slices partition the
     # original two-process aggregate model exactly; p2 retains its full domain.
     mapfile -t local_operations < <(
@@ -209,4 +220,4 @@ else
 fi
 timeout --foreground --signal=TERM --kill-after=5s "$(remaining_seconds)" \
     python3 "${SPEC_DIR}/attest.py" --tier "${TIER}" --output "${ATTESTATION}" --jar "${JAR}" --manifest "${MANIFEST}" --execution-classification "${EXECUTION_CLASSIFICATION}" --budget-seconds "${DECLARED_BUDGET_SECONDS}" --started-epoch "${START_EPOCH_SECONDS}" \
-    --models $(if [[ "${TIER}" == "portable-smoke" ]]; then echo HandoffctlBinding; elif [[ "${TIER}" == "pr-fast" ]]; then echo HandoffctlFast HandoffctlReceiptsFast HandoffctlPublicationFast HandoffctlObservation OracleInteractionGates; elif [[ "${TIER}" == "pr-publication" ]]; then echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage HandoffctlReceipts HandoffctlPublication HandoffctlObservation HandoffctlLiveness HandoffctlRecovery; else printf 'HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage HandoffctlReceipts HandoffctlPublication HandoffctlObservation '; (cd "${SPEC_DIR}" && python3 -c 'from slices import OPERATIONS; print(*(f"HandoffctlSlice-{operation}" for operation in OPERATIONS))'); echo HandoffctlRecovery; fi)
+    --models $(if [[ "${TIER}" == "portable-smoke" ]]; then echo HandoffctlBinding; elif [[ "${TIER}" == "pr-fast" ]]; then echo HandoffctlFast HandoffctlReceiptsFast HandoffctlPublicationFast HandoffctlObservation OracleInteractionGates; elif [[ "${TIER}" == "pr-publication" ]]; then echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage HandoffctlReceipts HandoffctlPublication HandoffctlObservation HandoffctlPredicateLedger HandoffctlAssumptions HandoffctlRetryCircuit HandoffctlAutonomyLimits HandoffctlLiveness HandoffctlRecovery; else printf 'HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage HandoffctlReceipts HandoffctlPublication HandoffctlObservation HandoffctlPredicateLedger HandoffctlAssumptions HandoffctlRetryCircuit HandoffctlAutonomyLimits '; (cd "${SPEC_DIR}" && python3 -c 'from slices import OPERATIONS; print(*(f"HandoffctlSlice-{operation}" for operation in OPERATIONS))'); echo HandoffctlRecovery; fi)

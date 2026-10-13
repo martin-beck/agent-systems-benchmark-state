@@ -964,6 +964,303 @@ class FastReceiptTests(unittest.TestCase):
         self.assertEqual("rejected", rejected["phase"])
         self.assertEqual("REMOTE_BASE_CHANGED", rejected["error_code"])
 
+    def test_receipt_visibility_fences_roll_back_each_partial_persistence_write(self) -> None:
+        store = self.store()
+        store.connection.execute(
+            """CREATE TRIGGER receipt_insert_invisible AFTER INSERT ON intents BEGIN
+            DELETE FROM intents WHERE receipt_id=NEW.receipt_id;
+            END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "insert was not visible"):
+            self.submit(store)
+        store.connection.execute("DROP TRIGGER receipt_insert_invisible")
+        self.assertEqual(0, store.connection.execute("SELECT count(*) FROM intents").fetchone()[0])
+
+        queued = self.submit(store)
+        receipt_id = str(queued["receipt_id"])
+        store.connection.execute(
+            """CREATE TRIGGER receipt_claim_invisible BEFORE UPDATE ON intents
+            WHEN OLD.phase = 'queued-local' BEGIN SELECT RAISE(IGNORE); END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "reservation was not visible"):
+            store.claim_next()
+        store.connection.execute("DROP TRIGGER receipt_claim_invisible")
+        current = store.read(receipt_id)
+        assert current is not None
+        self.assertEqual("queued-local", current["phase"])
+
+        store.claim_next()
+        store.connection.execute(
+            """CREATE TRIGGER receipt_finish_invisible BEFORE UPDATE ON intents
+            WHEN OLD.phase = 'running' BEGIN SELECT RAISE(IGNORE); END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "outcome was not visible"):
+            store.record_local_commit(receipt_id, "a" * 40, 2)
+        store.connection.execute("DROP TRIGGER receipt_finish_invisible")
+        current = store.read(receipt_id)
+        assert current is not None
+        self.assertEqual("running", current["phase"])
+
+        local = store.record_local_commit(receipt_id, "a" * 40, 2)
+        store.connection.execute(
+            """CREATE TRIGGER receipt_remote_invisible AFTER UPDATE ON intents
+            WHEN NEW.phase = 'published-remote' BEGIN
+            DELETE FROM intents WHERE receipt_id=NEW.receipt_id;
+            END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "remote receipt was not visible"):
+            store.record_remote_observation(receipt_id, "b" * 40)
+        store.connection.execute("DROP TRIGGER receipt_remote_invisible")
+        self.assertEqual(local, store.read(receipt_id))
+
+    def test_recovery_lists_are_durable_and_exclude_active_or_terminal_publications(self) -> None:
+        store = self.store()
+        queued = self.submit(store, key="queued")
+        running = self.submit(store, key="running")
+        first = store.claim_next()
+        second = store.claim_next()
+        assert first is not None and second is not None
+        self.assertEqual(str(queued["receipt_id"]), first["receipt_id"])
+        self.assertEqual(str(running["receipt_id"]), second["receipt_id"])
+        self.assertEqual(
+            [str(queued["receipt_id"]), str(running["receipt_id"])],
+            [item["receipt_id"] for item in store.running()],
+        )
+        store.record_local_commit(str(queued["receipt_id"]), "a" * 40, 2)
+        self.assertEqual(
+            [str(queued["receipt_id"])],
+            [item["receipt_id"] for item in store.pending_publication()],
+        )
+
+        queued_job = store.admit_publication(
+            key="recovery:queued", candidate_oid="b" * 40, expected_remote_oid="c" * 40
+        )
+        ambiguous_job = store.admit_publication(
+            key="recovery:ambiguous", candidate_oid="d" * 40, expected_remote_oid="e" * 40
+        )
+        active_job = store.admit_publication(
+            key="recovery:active", candidate_oid="f" * 40, expected_remote_oid="0" * 40
+        )
+        expired_job = store.admit_publication(
+            key="recovery:expired", candidate_oid="1" * 40, expected_remote_oid="2" * 40
+        )
+        terminal_job = store.admit_publication(
+            key="recovery:terminal", candidate_oid="3" * 40, expected_remote_oid="4" * 40
+        )
+        store.claim_publication(str(ambiguous_job["job_id"]), lease="a" * 32)
+        store.finish_publication(
+            str(ambiguous_job["job_id"]),
+            lease="a" * 32,
+            phase="ambiguous",
+            error_code="PUSH_TIMEOUT",
+        )
+        store.claim_publication(str(active_job["job_id"]), lease="b" * 32)
+        store.claim_publication(str(expired_job["job_id"]), lease="c" * 32)
+        store.connection.execute(
+            "UPDATE publication_jobs SET publisher_lease_expires='2000-01-01T00:00:00.000Z' "
+            "WHERE job_id=?",
+            (str(expired_job["job_id"]),),
+        )
+        store.claim_publication(str(terminal_job["job_id"]), lease="d" * 32)
+        store.finish_publication(
+            str(terminal_job["job_id"]),
+            lease="d" * 32,
+            phase="rejected",
+            error_code="REMOTE_ADVANCED",
+        )
+        self.assertEqual(
+            {str(queued_job["job_id"]), str(ambiguous_job["job_id"]), str(expired_job["job_id"])},
+            {item["job_id"] for item in store.recoverable_publications()},
+        )
+
+    def test_publication_visibility_and_recovery_races_leave_no_false_outcome(self) -> None:
+        store = self.store()
+        store.connection.execute(
+            """CREATE TRIGGER publication_admission_invisible AFTER INSERT ON publication_jobs BEGIN
+            DELETE FROM publication_jobs WHERE job_id=NEW.job_id;
+            END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "admission was not visible"):
+            store.admit_publication(
+                key="visibility:admit", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+            )
+        store.connection.execute("DROP TRIGGER publication_admission_invisible")
+        self.assertEqual(
+            0, store.connection.execute("SELECT count(*) FROM publication_jobs").fetchone()[0]
+        )
+
+        admitted = store.admit_publication(
+            key="visibility:claim", candidate_oid="c" * 40, expected_remote_oid="d" * 40
+        )
+        job_id = str(admitted["job_id"])
+        store.connection.execute(
+            """CREATE TRIGGER publication_claim_invisible AFTER UPDATE ON publication_jobs
+            WHEN NEW.phase = 'publishing' BEGIN
+            DELETE FROM publication_jobs WHERE job_id=NEW.job_id;
+            END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "claim was not visible"):
+            store.claim_publication(job_id, lease="1" * 32)
+        store.connection.execute("DROP TRIGGER publication_claim_invisible")
+        current = store.read_publication(job_id)
+        assert current is not None
+        self.assertEqual("queued", current["phase"])
+
+        store.claim_publication(job_id, lease="1" * 32)
+        store.connection.execute(
+            "UPDATE publication_jobs SET publisher_lease_expires='2000-01-01T00:00:00.000Z' "
+            "WHERE job_id=?",
+            (job_id,),
+        )
+        store.connection.execute(
+            """CREATE TRIGGER publication_recover_race BEFORE UPDATE ON publication_jobs
+            WHEN OLD.phase = 'publishing' BEGIN
+            UPDATE publication_jobs SET phase='rejected' WHERE job_id=OLD.job_id;
+            SELECT RAISE(IGNORE);
+            END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "changed while recovering"):
+            store.recover_publication(job_id, observed_remote_oid="d" * 40)
+        store.connection.execute("DROP TRIGGER publication_recover_race")
+        current = store.read_publication(job_id)
+        assert current is not None
+        self.assertEqual("publishing", current["phase"])
+
+    def test_sidecar_open_failure_closes_initialization_without_admitting_a_store(self) -> None:
+        real_open = os.open
+
+        def reject_sidecar(
+            path: str | bytes | os.PathLike[str] | os.PathLike[bytes],
+            *args: object,
+            **kwargs: object,
+        ) -> int:
+            if os.fsdecode(os.fspath(path)).endswith(("-wal", "-shm")):
+                raise OSError("sidecar unavailable")
+            return real_open(path, *args, **kwargs)  # type: ignore[arg-type]
+
+        with (
+            patch("tools.fast_receipts.os.open", side_effect=reject_sidecar),
+            self.assertRaisesRegex(RuntimeError, "WAL sidecar is unavailable"),
+        ):
+            ReceiptStore(self.path, self.project_id)
+
+    def test_claim_and_update_reject_boolean_and_malformed_inputs_before_enqueue(self) -> None:
+        store = self.store()
+        invalid_claims = (
+            {"expected_revision": 0},
+            {"worker_pid": True, "worker_start_time": 1},
+            {"worker_pid": 1, "worker_start_time": -1},
+        )
+        for changes in invalid_claims:
+            with (
+                self.subTest(changes=changes),
+                self.assertRaisesRegex(ValueError, "worker|revision"),
+            ):
+                claim = {
+                    "key": "worker-a:claim:invalid",
+                    "task": "AR-0120",
+                    "owner": "worker-a",
+                    "expected_revision": 1,
+                    "lease_minutes": 20,
+                }
+                claim.update(changes)
+                store.enqueue_claim(**claim)  # type: ignore[arg-type]
+        for update_changes in (
+            {"expected_revision": True},
+            {"note": "contains\x00nul"},
+            {"owner": "not valid"},
+        ):
+            with (
+                self.subTest(changes=update_changes),
+                self.assertRaisesRegex(ValueError, "update receipt"),
+            ):
+                update = {
+                    "key": "worker-a:update:invalid",
+                    "task": "AR-0120",
+                    "owner": "worker-a",
+                    "expected_revision": 1,
+                    "changes": {"priority": "P1"},
+                    "note": "ordinary note",
+                }
+                update.update(update_changes)
+                store.enqueue_update(**update)  # type: ignore[arg-type]
+        self.assertEqual(0, store.connection.execute("SELECT count(*) FROM intents").fetchone()[0])
+
+    def test_publication_admission_and_finish_fail_closed_for_invalid_or_missing_jobs(self) -> None:
+        store = self.store()
+        for changes in (
+            {"key": "invalid key", "candidate_oid": "a" * 40, "expected_remote_oid": "b" * 40},
+            {
+                "key": "publisher:invalid",
+                "candidate_oid": "not-an-oid",
+                "expected_remote_oid": "b" * 40,
+            },
+            {
+                "key": "publisher:invalid",
+                "candidate_oid": "a" * 40,
+                "expected_remote_oid": "a" * 40,
+            },
+        ):
+            with (
+                self.subTest(changes=changes),
+                self.assertRaisesRegex(ValueError, "publication admission"),
+            ):
+                store.admit_publication(**changes)
+        with self.assertRaisesRegex(RuntimeError, "unknown publication job"):
+            store.finish_publication(
+                "1" * 32,
+                lease="2" * 32,
+                phase="rejected",
+                error_code="REMOTE_ADVANCED",
+            )
+        self.assertEqual(
+            0, store.connection.execute("SELECT count(*) FROM publication_jobs").fetchone()[0]
+        )
+
+    def test_superseded_resolution_visibility_failure_rolls_back_the_outcome(self) -> None:
+        store = self.store()
+        admitted = store.admit_publication(
+            key="visibility:superseded", candidate_oid="a" * 40, expected_remote_oid="b" * 40
+        )
+        job_id = str(admitted["job_id"])
+        store.connection.execute(
+            """CREATE TRIGGER publication_resolution_invisible AFTER UPDATE ON publication_jobs
+            WHEN NEW.phase = 'rejected' BEGIN
+            DELETE FROM publication_jobs WHERE job_id=NEW.job_id;
+            END"""
+        )
+        with self.assertRaisesRegex(RuntimeError, "resolution was not visible"):
+            store.resolve_superseded_publication(job_id, observed_remote_oid="c" * 40)
+        store.connection.execute("DROP TRIGGER publication_resolution_invisible")
+        current = store.read_publication(job_id)
+        assert current is not None
+        self.assertEqual("queued", current["phase"])
+
+    def test_nonunique_and_nonmatching_indexes_do_not_satisfy_publication_schema(self) -> None:
+        store = self.store()
+        store.connection.execute("CREATE INDEX intents_task_nonunique ON intents(task_id)")
+        self.assertFalse(store._has_unique_index("intents", ("task_id",)))
+        self.assertFalse(store._has_unique_index("intents", ("missing_column",)))
+
+    def test_claim_and_private_enqueue_reject_invalid_descriptors_before_writes(self) -> None:
+        store = self.store()
+        with self.assertRaisesRegex(ValueError, "invalid owner"):
+            store.enqueue_claim(
+                key="worker-a:claim:bad-owner",
+                task="AR-0120",
+                owner="owner with spaces",
+                expected_revision=1,
+                lease_minutes=20,
+            )
+        with self.assertRaisesRegex(ValueError, "invalid receipt operation"):
+            store._enqueue(
+                key="worker-a:unknown-operation",
+                task="AR-0120",
+                expected_revision=1,
+                payload={},
+            )
+        self.assertEqual(0, store.connection.execute("SELECT count(*) FROM intents").fetchone()[0])
+
 
 if __name__ == "__main__":
     unittest.main()

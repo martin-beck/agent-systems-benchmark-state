@@ -510,18 +510,20 @@ class TLCAdmissionTests(unittest.TestCase):
 
     def test_parser_keeps_canonical_lock_default_and_accepts_explicit_isolated_lock(self) -> None:
         isolated_lock = "isolated-admission.lock"
-        args = parser().parse_args(
-            [
-                "--jar",
-                "tla.jar",
-                "--model",
-                "Model.tla",
-                "--config",
-                "Model.cfg",
-                "--metadir",
-                "states",
-            ]
-        )
+        with patch.dict(os.environ):
+            os.environ.pop("TLC_ADMISSION_LOCK", None)
+            args = parser().parse_args(
+                [
+                    "--jar",
+                    "tla.jar",
+                    "--model",
+                    "Model.tla",
+                    "--config",
+                    "Model.cfg",
+                    "--metadir",
+                    "states",
+                ]
+            )
         self.assertEqual(args.admission_lock, _runner.DEFAULT_ADMISSION_LOCK)
         args = parser().parse_args(
             [

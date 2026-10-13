@@ -379,12 +379,10 @@ def _verify_update_session(
         raise RuntimeError("receipt session does not match update")
 
 
-def _require_signed_branch_commit(core: Any, oid: str) -> None:
+def _require_active_branch_commit(core: Any, oid: str) -> None:
+    """Require a well-formed commit reachable from the active state branch."""
     if not _OID.fullmatch(oid):
         raise RuntimeError("invalid receipt commit oid")
-    result = core.run(["git", "-C", str(core.ROOT), "verify-commit", oid], check=False)
-    if result.returncode:
-        raise RuntimeError("receipt commit signature is not trusted")
     ancestor = core.run(
         ["git", "-C", str(core.ROOT), "merge-base", "--is-ancestor", oid, "HEAD"],
         check=False,
@@ -406,8 +404,8 @@ def _verify_operation_delta(
 
 
 def verify_local_commit(core: Any, intent: dict[str, Any], oid: str) -> int:
-    """Verify exact marker, signed commit and task revision before local receipt."""
-    _require_signed_branch_commit(core, oid)
+    """Verify exact marker, active-branch commit, and task revision before receipt."""
+    _require_active_branch_commit(core, oid)
     message = _git(core, "log", "-1", "--format=%B", oid)
     marker = f"Handoffctl-Receipt: {intent['receipt_id']}"
     lines = message.splitlines()

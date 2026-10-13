@@ -7,7 +7,7 @@ the Python implementation, not a replacement implementation.
 ## Evidence classification
 
 [`../evidence.json`](../evidence.json) records the structured formal-evidence contract required by
-Agent Workflow Quality v0.24.0. It classifies these eight TLC runs as bounded-model evidence and
+Agent Workflow Quality v0.24.0. It classifies these tracked TLC runs as bounded-model evidence and
 records the largest finite process, task, actor, project, worktree, and revision domains used by
 their checked configurations. Each `.cfg` file remains authoritative for the exact bound of its
 model.
@@ -41,6 +41,7 @@ authoritative revision, task status and owner unchanged.
 | `heartbeat` | `in_progress` | current owner, positive lease | lease renewed |
 | `update` | `in_progress` | current owner, exact revision | active fields updated |
 | `accept` | `in_progress`, referenced spec | current owner, exact revision, valid evidence metadata | spec acceptance recorded; lifecycle status unchanged |
+| `bind-envelope` | `in_progress`, referenced spec | current owner, exact revision, immutable matching envelope | envelope reference, revision, and digest recorded |
 | `release` | `in_progress` | current owner | chosen non-active state, owner and lease cleared |
 | `recover-expired` | expired `in_progress` | exact revision; a verified claim-time worker identity must now be absent unless a validated exact-current session exists; pre-identity records require explicit `--allow-legacy-without-identity` | `open`, ownership cleared; restores `next_action` only from an exact-current session snapshot |
 | `run` record | `in_progress`, unexpired | owner and current revision | bounded result recorded |
@@ -54,10 +55,44 @@ tests; the bounded model does not claim to prove evidence contents.
 `open`, `blocked`, and `done`.
 
 `run` checks runtime configuration and the live claim before executing outside the coordinator
-lock. Immediately after execution it fsyncs a privacy-safe local journal entry, then commits the
-task result before attempting live reconciliation. `HandoffctlRun.tla` proves that preflight
-rejection has no external effect and that task-record or post-reconciliation failure cannot erase
-journal evidence. Arbitrary command correctness remains outside the proof.
+lock. A bound run first records one revision-CAS execution fence; only that fence
+holder may start its external effect. Immediately after execution it fsyncs a privacy-safe local
+journal entry, then records the task result, clears the exact fence, and attempts live
+reconciliation. `HandoffctlRun.tla` proves that preflight rejection has no external effect, an
+effect requires a fence, and task-record, fence-completion, or post-reconciliation
+task-record, fence-completion, or post-reconciliation failure cannot erase journal evidence.
+After task recording or fence completion fails, expired-fence recovery may clear only the exact fence
+whose durable command-result evidence exists. A journal-write failure retains an execution-unknown
+fence that ordinary expiry recovery cannot clear. An operator must reconcile durable command-result
+evidence before resolving that ambiguity.
+Arbitrary command correctness remains outside the model.
+
+For a task with a bound execution envelope, `run` additionally requires a declared allowed command
+class and evaluates its declared scope paths before the external effect. This is a deterministic
+admission check, not a claim that the wrapped command respects its declaration. The concrete
+Git/SQLite tests cover envelope identity, private Bubblewrap mounts, two-clone contention, and
+recovery; the bounded run model abstracts the envelope to preflight readiness and its single live
+execution-fence slot. It models durable recovery evidence as a record with explicit `task_id`,
+`owner`, `argv_sha256`, and `execution_id` fields in either the Git or SQLite evidence backend;
+recovery requires the exact record for its reserved execution. It does not model evidence contents
+beyond that identity.
+
+Unbound `run` calls may additionally use the retry circuit. It reserves a privacy-safe command
+identity slot under the task lock before launch and resolves it after child completion, but only at
+the revision immediately following slot creation; an intervening mutation leaves the result
+stale. Slots have a durable bounded expiry. A child crash, interrupt, or command-result recording
+fault leaves an auditable abandoned slot which a later launch retires only after expiry, so it
+cannot exhaust the retry window permanently. Expired-claim recovery rejects live unbound slots.
+`HandoffctlRetryCircuit.tla` models owner and revision fencing, bounded slots, stale-result
+rejection, expiry cleanup, expired-claim recovery, and fresh held-command recovery series. Bound
+envelope runs do not use these slots and retain their execution-fence sequencing.
+
+An opt-in tracked autonomy-limits policy records only a policy digest, bounded
+counters, timestamps, and concise local dispositions. `HandoffctlAutonomyLimits.tla`
+models a command/cost-like budget, elapsed expiry, a held revision fence, a
+no-effect bypass attempt, and explicit local disposition. It is bounded
+best-effort design guidance; concrete Git and SQLite tests cover the typed policy,
+all six budget triggers, and task-record parity.
 
 The linearization point is the successful transition while the process holds the lock below Git's
 common directory. Every worktree of one local clone resolves the same lock path. Expected revisions
@@ -114,8 +149,9 @@ eventually recovered.
 
 The separate three-process lock model covers two readers plus one writer and two worktree
 identities resolving one repository-common lock.
-`HandoffctlRun.tla` covers preflight rejection, external execution, durable journaling, task-record
-failure, and post-reconciliation success or failure. The binding model covers the configured
+`HandoffctlRun.tla` covers preflight rejection, durable execution fence, external execution, durable
+journaling, task-record failure, fence-completion failure, and post-reconciliation success
+or failure. The binding model covers the configured
 project and one foreign caller, including rejection without mutation and fair progress. These are
 exhaustive proofs of the abstractions, not proofs of Linux, Git, Python, or the filesystem
 implementation.
@@ -149,6 +185,23 @@ and timeout is terminal. It is an abstraction of the resident socket cache;
 it does not claim operating-system event delivery or implementation refinement.
 [`OBSERVATION_CORRESPONDENCE.md`](OBSERVATION_CORRESPONDENCE.md) maps the
 abstraction to focused implementation evidence and records those limits.
+
+HandoffctlPredicateLedger.tla checks predicate-aware `accept`: exact
+candidate ref/digest binding, revision and owner fencing, explicit candidate
+reopen, stale-history conversion, and done admission only after complete
+current-candidate predicate evidence. It explores two workers, two predicates,
+and the complete two-reference by two-digest candidate identity cross-product,
+including same-ref/changed-digest and different-ref/same-digest transitions;
+it is a bounded abstraction, not
+implementation-refinement evidence.
+
+HandoffctlAssumptions.tla checks opt-in material freshness bindings for a
+base, dependency, and local observation. It explores moved binding races, stale
+and current revisions, explicit revalidation/disposition, non-material
+assumptions, and owner-and-revision-fenced `accept`. It requires both acceptance
+and a task released `done` to have every material declared input fresh or
+explicitly disposed; it is bounded best-effort design guidance, not an
+implementation-refinement proof.
 
 `HandoffctlStorage.tla` checks both selected backends, transaction mutual exclusion, one accepted
 revision increment per process, prepared SQLite authority before selector switch, eventual command
@@ -259,8 +312,9 @@ processes and leases untouched. A durable per-job queue record survives caller
 death for stale-job recovery; completed, failed, and canceled outcomes retain
 the exact resource bounds and exit classification. `systemd-run` owns the process group (`KillMode=control-group`) on hosts with a user systemd bus. Hosted CI selects an explicit `portable` containment mode: GNU `timeout` and `prlimit` enforce aggregate address-space, process-count, CPU-time, and wall-clock limits; the runner fails closed if either tool is unavailable.
 
-Every verifier invocation creates a private workspace beneath `TLC_WORK_ROOT`
-(or the configured temporary root). TLC receives that path as both its Java
+Every verifier invocation creates a private workspace below the first configured
+root: `TLC_WORK_ROOT`, then `TLC_RUNTIME_ROOT`, then the temporary root. TLC
+receives that path as both its Java
 temporary directory and working directory, so standard modules and state files
 cannot collide with another verifier through shared `/tmp`. The runner rejects
 a metadir outside that workspace, preflights available storage against
