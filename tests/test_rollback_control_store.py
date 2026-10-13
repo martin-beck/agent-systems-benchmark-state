@@ -260,21 +260,6 @@ class StaticAuthorityRuntimeRereader:
 
 
 class RollbackControlStoreTests(unittest.TestCase):
-    def setUp(self) -> None:
-        self.coordinator_directory = tempfile.TemporaryDirectory()
-        root = Path(self.coordinator_directory.name)
-        runtime = root / ".runtime"
-        runtime.mkdir(mode=0o700)
-        self.coordinator_globals = patch.multiple(
-            handoffctl,
-            ROOT=root,
-            RUNTIME=runtime,
-            LOCK=runtime / "state.lock",
-        )
-        self.addCleanup(self.coordinator_directory.cleanup)
-        self.coordinator_globals.start()
-        self.addCleanup(self.coordinator_globals.stop)
-
     def test_session_recheck_and_provision_released_negative_paths(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             control = SQLiteRollbackControlStore(Path(directory) / "control.sqlite", PROJECT)
@@ -3495,9 +3480,17 @@ class RollbackControlStoreTests(unittest.TestCase):
     def test_control_lock_timeout_is_bounded_and_preserves_state(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "control.sqlite"
+            runtime = Path(directory) / ".runtime"
+            runtime.mkdir(mode=0o700)
             first = SQLiteRollbackControlStore(path, PROJECT)
             second = SQLiteRollbackControlStore(path, PROJECT)
             with (
+                patch.multiple(
+                    handoffctl,
+                    ROOT=Path(directory),
+                    RUNTIME=runtime,
+                    LOCK=runtime / "state.lock",
+                ),
                 first._control_lock(),
                 patch(
                     "tools.rollback_control_store.time.monotonic",
@@ -3533,9 +3526,17 @@ class RollbackControlStoreTests(unittest.TestCase):
     def test_control_lock_timeout_closes_descriptor_for_retry(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "control.sqlite"
+            runtime = Path(directory) / ".runtime"
+            runtime.mkdir(mode=0o700)
             first = SQLiteRollbackControlStore(path, PROJECT)
             second = SQLiteRollbackControlStore(path, PROJECT)
             with (
+                patch.multiple(
+                    handoffctl,
+                    ROOT=Path(directory),
+                    RUNTIME=runtime,
+                    LOCK=runtime / "state.lock",
+                ),
                 first._control_lock(),
                 patch(
                     "tools.rollback_control_store.time.monotonic",
