@@ -2,10 +2,10 @@
 {
   "branch": "codex/ar1849-formal-admission-env-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T16:59:14+00:00",
+  "claim_expires": "2026-10-13T17:04:53+00:00",
   "depends_on": [],
   "id": "AR-1849",
-  "next_action": "Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI.",
+  "next_action": "Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94% versus required 95%. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication.",
   "owner": "ar1849-formal-admission-env-luna",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 108,
+  "task_revision": 121,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T14:59:14+00:00",
+  "updated_at": "2026-10-13T15:14:44+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -364,3 +364,48 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 - 2026-10-13T14:45:03+00:00: Heartbeat by ar1849-formal-admission-env-luna.
 
 - 2026-10-13T14:59:14+00:00: Heartbeat by ar1849-formal-admission-env-luna.
+
+- 2026-10-13T15:02:47+00:00: Recorded command exit 0; command argv SHA-256
+  55029e58f4e767809d6aae0895600c78dbf8d638c4fda21fb39c23050027ebeb.
+
+- 2026-10-13T15:02:56+00:00: Recorded command exit 2; command argv SHA-256
+  298174853e00be26a5c1ad0941f4b40566f57a3e655f8281f07b7aefff92fa8d.
+
+- 2026-10-13T15:03:25+00:00: Recorded command exit 2; command argv SHA-256
+  d31bcd2d575b2cea002c8352fc622e2a6bf51a6979348396e88bc68c9328e98c.
+
+- 2026-10-13T15:03:44+00:00: Heartbeat by ar1849-formal-admission-env-luna.
+
+- 2026-10-13T15:03:56+00:00: Terminal full gate: uv run coverage run --branch -m unittest discover
+  completed 1,636 tests in 205.914s with OK. The subsequent coverage report against
+  /tmp/asb-state-v075-strict-10.coverage measured 19,785 statements, 94% total and failed
+  --fail-under=95. A first report against the wrong worktree artifact measured 79%; that was
+  discarded as an environment/path artifact. No formal/resource-bound gate was weakened; PR #145
+  remains unmerged.
+
+- 2026-10-13T15:04:30+00:00: Recorded command exit 2; command argv SHA-256
+  beead2297e2b9a72dbf2bef6319d08b7b0f3fb4a934cabbd4e61f549ad4bfada.
+
+- 2026-10-13T15:04:42+00:00: Recorded command exit 0; command argv SHA-256
+  ec08a732692e8c9234f550bb9bc8ea1e10c6fe387cc172b73c5225d398e1d680.
+
+- 2026-10-13T15:04:53+00:00: Heartbeat by ar1849-formal-admission-env-luna.
+
+- 2026-10-13T15:05:00+00:00: Formal gate result: first portable-smoke invocation completed TLC (4
+  distinct states) but attest.py failed closed because TLC_MEMORY_MAX was absent. Rerun with
+  TLC_MEMORY_MAX=3G, TLC_SWAP_MAX=3G, private TLC runtime/work/queue/lock paths completed TLC and
+  attestation successfully. Full unittest terminal result is 1,636/1,636 OK in 205.914s; coverage
+  report is 19,785 statements at 94%, failing --fail-under=95. Focused workflow 6/6 and TLC runner
+  19/19 remain green. No formal gate/resource bound weakened.
+
+- 2026-10-13T15:07:16+00:00: Recorded command exit 0; command argv SHA-256
+  d70205fca28c7fb76633921661e96c9ed40be241d2dcd7d3374519880477f424.
+
+- 2026-10-13T15:07:30+00:00: Recorded command exit 0; command argv SHA-256
+  278c9e41058aeeb4b717079969695110dd1e2bb6b6179bcc5dcfa31621a1645b.
+
+- 2026-10-13T15:14:04+00:00: Recorded command exit 0; command argv SHA-256
+  2990add6391b76b31fb589cd37f9b182077e504ae122f779f146acebadc45821.
+
+- 2026-10-13T15:14:44+00:00: Recorded command exit 0; command argv SHA-256
+  8c4a55be91e9ad9c040179ae9207a7781298ab8361e222400c65d31ba349132c.

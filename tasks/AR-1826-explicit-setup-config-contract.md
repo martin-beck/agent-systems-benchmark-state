@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1826",
-  "next_action": "Coordinator bind-worktree remains blocked: its safety precondition requires both branch and worktree_key empty, but legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract is retained while branch is empty. No active worker/process; product worktree is clean at reviewed e9d95999 (codex/ar-1826-explicit-setup-contract). Implement a coordinator-mediated legacy-pair repair or use the supported repair version, then bind this exact branch/key and requalify e9d95999 onto current main d0e6a28 with fresh exact-head review/CI.",
+  "next_action": "Supported repair unavailable in vendored handoffctl v0.7.5: bind-worktree rejects retained legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract while branch is empty, and no coordinator command clears the pair. Add/use an explicitly reviewed coordinator repair version, then re-claim, bind codex/ar-1826-explicit-setup-contract to the exact non-overlapping worktree, and requalify reviewed e9d95999 onto current main d0e6a28.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -25,9 +25,9 @@
   "spec_revision": 1,
   "status": "open",
   "summary": "Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts.",
-  "task_revision": 40,
+  "task_revision": 44,
   "title": "Define explicit setup configuration and plan-binding contract",
-  "updated_at": "2026-10-13T11:10:37+00:00",
+  "updated_at": "2026-10-13T15:18:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1826-explicit-setup-config-contract"
 }
 ---
@@ -171,3 +171,20 @@ and compatibility contract on which the remaining ARs depend.
   coordinator bind-worktree rejecting retained legacy worktree_key with empty branch; preserve
   owner/evidence, then perform supported legacy-pair repair and re-claim before product
   requalification. Product remains clean at reviewed e9d95999; no mutation or stale merge attempted.
+
+- 2026-10-13T15:17:35+00:00: Claimed by ar1826_setup_contract_luna.
+
+- 2026-10-13T15:17:41+00:00: Recorded command exit 0; command argv SHA-256
+  4d384260108a96a48c8692a5721b3df1f8d87ecac31cc8c647f738f6df9b5ca0.
+
+- 2026-10-13T15:18:27+00:00: Repair audit complete: doctor --live passes; no active product
+  worker/process; product checkout remains clean at reviewed e9d95999. bind-worktree was not retried
+  because the same legacy-metadata precondition remains and no supported clearing operation exists.
+  No product, PR, or reviewed commit mutation.
+
+- 2026-10-13T15:18:33+00:00: Precise blocker: vendored handoffctl v0.7.5 has no supported
+  legacy-pair repair. bind-worktree rejects non-empty legacy worktree_key with empty branch;
+  update/release/recover-expired/resume cannot clear it. doctor --live passes. Product remains clean
+  at reviewed e9d95999; preserve it and use a reviewed coordinator repair version before
+  re-claiming, binding codex/ar-1826-explicit-setup-contract, and requalifying onto current main
+  d0e6a28.

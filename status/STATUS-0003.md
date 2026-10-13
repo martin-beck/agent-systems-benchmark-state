@@ -1610,7 +1610,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. |
-| Next action | Coordinator bind-worktree remains blocked: its safety precondition requires both branch and worktree_key empty, but legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract is retained while branch is empty. No active worker/process; product worktree is clean at reviewed e9d95999 (codex/ar-1826-explicit-setup-contract). Implement a coordinator-mediated legacy-pair repair or use the supported repair version, then bind this exact branch/key and requalify e9d95999 onto current main d0e6a28 with fresh exact-head review/CI. |
+| Next action | Supported repair unavailable in vendored handoffctl v0.7.5: bind-worktree rejects retained legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract while branch is empty, and no coordinator command clears the pair. Add/use an explicitly reviewed coordinator repair version, then re-claim, bind codex/ar-1826-explicit-setup-contract to the exact non-overlapping worktree, and requalify reviewed e9d95999 onto current main d0e6a28. |
 
 ### AR-1827 — Author complete explicit benchmark configuration with asb setup
 
@@ -1932,17 +1932,17 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair workflow-wide private TLC admission environment for formal CI. |
-| Next action | Keep PR #145 unmerged. Reconcile non-vendor v0.7.4 compatibility tests and workflow complexity contract, run locked full gates, then independent review and exact-head CI. |
+| Next action | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 
 ### AR-1850 — Repair development ASB TUI interactive lifetime
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1850-development-tui-lifetime-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline. |
@@ -1980,11 +1980,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1853-complexity-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Align the complexity-budget contract with Coordinator v0.7.4. |
@@ -2022,15 +2022,57 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1856-protected-main-repair-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer. |
 | Next action | Keep AR-1856 claimed until every exact-main workflow for merge 870331be533ea1a0ba9645ddbb690df56af84935 is terminal-success; then record the post-merge receipt, accept the spec, release done, reconcile, and doctor --live. |
+
+### AR-1857 — Full-gate coverage floor repair
+
+| Field | Value |
+| --- | --- |
+| Status | blocked |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Restore the full-gate coverage floor after the terminal 94&#37; observation. |
+| Next action | Analyze exact 94&#37; coverage artifact and add narrow tests for uncovered first-party paths; preserve 95&#37; threshold and PR #145 unmerged. |
+
+### AR-1858 — v0.7.0 coverage floor repair
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | ar1858-coverage-v070-luna |
+| Parent | None |
+| Children | None |
+| Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
+| Next action | AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped. |
+
+### AR-1859 — v0.7.0 formal work-root validation
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Reject non-absolute TLC work roots before formal execution. |
+| Next action | Promote after validating the AR-1858 terminal evidence and bind the exact v0.7.0 formal worktree. |
 
 
 ## Dependency graph
@@ -2925,13 +2967,16 @@ flowchart LR
         AR_1847["AR-1847 - Planned"]:::status_planned
         AR_1848["AR-1848 - Planned"]:::status_planned
         AR_1849["AR-1849 - In progress"]:::status_in_progress
-        AR_1850["AR-1850 - In progress"]:::status_in_progress
+        AR_1850["AR-1850 - Done"]:::status_done
         AR_1851["AR-1851 - Open"]:::status_open
         AR_1852["AR-1852 - Open"]:::status_open
-        AR_1853["AR-1853 - In progress"]:::status_in_progress
+        AR_1853["AR-1853 - Open"]:::status_open
         AR_1854["AR-1854 - Planned"]:::status_planned
         AR_1855["AR-1855 - Done"]:::status_done
-        AR_1856["AR-1856 - In progress"]:::status_in_progress
+        AR_1856["AR-1856 - Done"]:::status_done
+        AR_1857["AR-1857 - Blocked"]:::status_blocked
+        AR_1858["AR-1858 - In progress"]:::status_in_progress
+        AR_1859["AR-1859 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4925,6 +4970,7 @@ flowchart LR
     AR_1851 --> AR_1854
     AR_1852 --> AR_1854
     AR_1853 --> AR_1854
+    AR_1858 --> AR_1859
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -4941,6 +4987,3 @@ flowchart LR
 | --- | --- | --- |
 | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | None | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) |
 | [AR-0002](../tasks/AR-0002-coordination-assurance.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0004](../tasks/AR-0004-ar-status-document.md), [AR-0005](../tasks/AR-0005-transactional-promotion.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0895](../tasks/AR-0895-verify-coordination-content.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
-| [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md), [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0895](../tasks/AR-0895-verify-coordination-content.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md), [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1283](../tasks/AR-1283-formal-lockfile.md) |
-| [AR-0004](../tasks/AR-0004-ar-status-document.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md) | [AR-0005](../tasks/AR-0005-transactional-promotion.md), [AR-0849](../tasks/AR-0849-ar0801-documentation-repair.md) |
-| [AR-0005](../tasks/AR-0005-transactional-promotion.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0004](../tasks/AR-0004-ar-status-document.md) | None |

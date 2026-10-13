@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "open",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 26,
+  "task_revision": 33,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:41:12+00:00",
+  "updated_at": "2026-10-13T15:10:04+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -113,3 +113,24 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
   SQLite/lock-domain errors). Next action: obtain fresh independent review and rerun terminal
   strict/formal CI at exact head only after cross-repair failures are resolved; merge only when all
   required checks are green, then perform post-merge verification.
+
+- 2026-10-13T15:08:52+00:00: Claimed by ar1851-ar1793-v074-luna.
+
+- 2026-10-13T15:09:01+00:00: Recorded command exit 0; command argv SHA-256
+  e124f4d13e6f2713a89661cb24871216755ad02c96b5d199935a913ced920e50.
+
+- 2026-10-13T15:09:21+00:00: Recorded command exit 0; command argv SHA-256
+  637f5caaade9e5be9be4388a75fe4b503d10b1614b890ae988b81dec0edba9fd.
+
+- 2026-10-13T15:09:40+00:00: Recorded command exit 0; command argv SHA-256
+  72b9f7872e6a84665a84632b69d7bc1a5a8f65054b908b73843227da56b081c5.
+
+- 2026-10-13T15:09:42+00:00: Recorded command exit 0; command argv SHA-256
+  468506894a2b088c06ea774198cb3acb0494f656cd3458ff2fef38b085a5683f.
+
+- 2026-10-13T15:09:49+00:00: Recorded command exit 0; command argv SHA-256
+  468506894a2b088c06ea774198cb3acb0494f656cd3458ff2fef38b085a5683f.
+
+- 2026-10-13T15:10:04+00:00: Released after fresh exact-head verification; required strict/formal
+  checks still fail on cross-repair dependencies. Preserve PR #147 at 0d3693a24c and retry only
+  after AR-1852/AR-1853 merge or equivalent durable resolution.

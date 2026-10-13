@@ -2,29 +2,29 @@
 {
   "branch": "repair/ar-1856-pr631-protected-main-identity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T16:56:27+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1856",
   "next_action": "Keep AR-1856 claimed until every exact-main workflow for merge 870331be533ea1a0ba9645ddbb690df56af84935 is terminal-success; then record the post-merge receipt, accept the spec, release done, reconcile, and doctor --live.",
-  "owner": "ar1856-protected-main-repair-luna",
+  "owner": "",
   "plan": "../plans/AR-1856-pr631-protected-main-identity-recovery.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "hosted",
-    "evidence_digest": "",
-    "evidence_ref": "",
+    "evidence_digest": "sha256:03e609dec4f181476c791671dca86f58cf3ae02baff2d1c3c91e4a63091913e5",
+    "evidence_ref": "quality/AR-1856-postmerge-receipt.json",
     "spec_ref": "specs/AR-1856.json",
     "spec_revision": 1,
-    "status": "pending"
+    "status": "pass"
   },
   "spec_ref": "specs/AR-1856.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer.",
-  "task_revision": 31,
+  "task_revision": 35,
   "title": "PR #631 protected-main identity recovery",
-  "updated_at": "2026-10-13T14:56:27+00:00",
+  "updated_at": "2026-10-13T15:06:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1856-pr631-protected-main-identity"
 }
 ---
@@ -133,3 +133,17 @@ AR-1850's TUI implementation or AR-1841's Coordinator adoption/state vendor.
 - 2026-10-13T14:55:06+00:00: Heartbeat by ar1856-protected-main-repair-luna.
 
 - 2026-10-13T14:56:27+00:00: Heartbeat by ar1856-protected-main-repair-luna.
+
+- 2026-10-13T15:05:27+00:00: Recorded command exit 0; command argv SHA-256
+  8423304a1d8e5f171022d86369d31cafbe28ba3e40fa46901fca53b939e6512a.
+
+- 2026-10-13T15:05:35+00:00: Recorded command exit 0; command argv SHA-256
+  aaff0a393001249812fa08e0b124bae242089ff7ff541b85e40d0df2d009496d.
+
+- 2026-10-13T15:06:01+00:00: Accepted exact protected-main identity recovery: signed local merge
+  870331be with exact parents/tree, verified committer/signature, and all ten exact-main workflows
+  terminal-success.
+
+- 2026-10-13T15:06:18+00:00: Completed forward-only PR #631 protected-main identity recovery.
+  Historical GitHub committer merge and failures preserved; signed local merge 870331be verified
+  with all ten exact-main workflows terminal-success. No AR-1850 or AR-1841 scope changed.
