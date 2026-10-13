@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1852-e1",
+  "envelope_revision": 1,
+  "task": "AR-1852",
+  "task_revision": 102,
+  "spec_ref": "specs/AR-1852.json",
+  "spec_revision": 1,
+  "outputs": [{"id": "qualification", "description": "Record bounded candidate qualification evidence."}],
+  "non_goals": ["Do not weaken role authorization, vendor verification, or formal gates."],
+  "path_scope": {"read": ["tests", "tools", "formal", "coordinator.vendor.json"], "write": ["tests", "tools", "formal", "coordinator.vendor.json"]},
+  "command_classes": {"read": {"allowed": true}, "test": {"allowed": true, "timeout_seconds": 900}, "source-write": {"allowed": false}, "git-publication": {"allowed": false}},
+  "evidence": [{"id": "gates", "class": "contract-test", "required": true}],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}]
+}
