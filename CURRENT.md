@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1858 — v0.7.0 coverage floor repair](tasks/AR-1858-coverage-v070.md) | Repair the v0.7.0 coordinator coverage floor deficit. | AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped. | ar1858-coverage-v070-luna |
+| P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded scope and record local acceptance evidence. | codex-ar1863-catalog-luna |
 
 ## Open
 
@@ -20,7 +21,6 @@ Never edit this file directly.
 | P1 | [AR-1851 — AR-1793 v0.7.4 compatibility contracts](tasks/AR-1851-ar1793-v074-contracts.md) | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. | Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification. | - |
 | P1 | [AR-1852 — Role-store v0.7.4 compatibility contracts](tasks/AR-1852-role-store-v074-contracts.md) | Align role-store authorization tests with Coordinator v0.7.4. | Independent review and exact-head CI for signed product commit 7b46c6b076 atop 22da911193. Full gate remains blocked by unrelated baseline/environment failures: missing jsonschema, AR-1793 fixture drift, workflow complexity fixture drift, rollback lock timeout, and vendor/generated-state checks. | - |
 | P1 | [AR-1853 — Complexity v0.7.4 compatibility contract](tasks/AR-1853-complexity-v074-contract.md) | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. | - |
-| P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded scope and record local acceptance evidence. | - |
 
 ## Blocked
 
