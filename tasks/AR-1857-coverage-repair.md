@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1857-coverage-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T17:13:33+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1857",
   "next_action": "Analyze exact 94% coverage artifact and add narrow tests for uncovered first-party paths; preserve 95% threshold and PR #145 unmerged.",
-  "owner": "ar1857-coverage-repair-luna",
+  "owner": "",
   "plan": "../plans/AR-1857-coverage-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1857.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Restore the full-gate coverage floor after the terminal 94% observation.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Full-gate coverage floor repair",
-  "updated_at": "2026-10-13T15:13:33+00:00",
+  "updated_at": "2026-10-13T15:13:43+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1857-coverage-repair"
 }
 ---
@@ -64,3 +64,9 @@ modify AR-1841 or AR-1856 ownership and must not weaken formal/resource gates.
   rejects replacing non-empty legacy metadata. No wrong-tree tests added.
 
 - 2026-10-13T15:13:33+00:00: Claimed by ar1857-coverage-repair-luna.
+
+- 2026-10-13T15:13:43+00:00: Binding is structurally blocked: handoffctl bind-worktree rejects
+  replacement of non-empty legacy worktree metadata, while exact artifact source requires the v0.7.0
+  coordinator checkout. A correct source worktree exists at
+  asb-state-coordinator-v070-ar1857-coverage-repair but cannot be bound to this task. Create
+  successor with correct worktree_key; preserve this task and 94% evidence.
