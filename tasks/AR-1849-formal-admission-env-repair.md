@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 126,
+  "task_revision": 127,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T19:34:24+00:00",
+  "updated_at": "2026-10-13T19:34:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -421,3 +421,6 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 - 2026-10-13T19:34:22+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
 
 - 2026-10-13T19:34:24+00:00: Released retry circuit launch slot.
+
+- 2026-10-13T19:34:27+00:00: Recorded command exit 0; command argv SHA-256
+  14e53f8743a23d120a63dbf91120fa1a42f04ce3fb84502eb660780b51ca9500.
