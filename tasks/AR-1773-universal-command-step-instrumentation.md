@@ -79,12 +79,12 @@
     "task_revision": 96
   },
   "execution_result": {
-    "argv_digest": "008d0d47a91016b96ed8af534d23813aafa8528af62641a067a13a27011caedb",
+    "argv_digest": "298de8df9b7e46a9c28ddb8018ea725606043351fe8f6e806cde75a77d9f2dde",
     "classification": "EXIT",
     "envelope_digest": "sha256:36af7d046d9ef15d3ed21b798ab488b01fd26a5d9ad86cc3a2af1f75907c69cb",
-    "execution_id": "5f22003d27214fd4a7b373b908b392dd",
+    "execution_id": "f37b6a852e62499083f5b2e313c41711",
     "owner": "asb_ar1773_runner_repair_luna5",
-    "recorded_at": "2026-10-13T22:20:31+00:00",
+    "recorded_at": "2026-10-13T22:20:39+00:00",
     "returncode": 127
   },
   "id": "AR-1773",
@@ -108,9 +108,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T22:20:37+00:00",
+  "updated_at": "2026-10-13T22:20:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -394,3 +394,5 @@ non-TTY compatibility.
   008d0d47a91016b96ed8af534d23813aafa8528af62641a067a13a27011caedb.
 
 - 2026-10-13T22:20:37+00:00: Reserved bound execution f37b6a852e62499083f5b2e313c41711.
+
+- 2026-10-13T22:20:40+00:00: Recorded execution result f37b6a852e62499083f5b2e313c41711.
