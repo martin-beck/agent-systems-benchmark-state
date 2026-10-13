@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-    classDef status_planned fill:#6a1b9a,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_future fill:#455a64,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px

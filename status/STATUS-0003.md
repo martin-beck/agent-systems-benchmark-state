@@ -2120,7 +2120,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
@@ -3036,7 +3036,7 @@ flowchart LR
         AR_1860["AR-1860 - Done"]:::status_done
         AR_1861["AR-1861 - Done"]:::status_done
         AR_1862["AR-1862 - Done"]:::status_done
-        AR_1863["AR-1863 - Planned"]:::status_planned
+        AR_1863["AR-1863 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -5034,3 +5034,4 @@ flowchart LR
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_planned fill:#6a1b9a,color:#ffffff,stroke:#263238,stroke-width:2px
