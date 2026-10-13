@@ -2,14 +2,14 @@
 {
   "branch": "",
   "checkpoint_commit": "45427b6ec7fc73f896574701df5e35b6d72b7cf4",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T17:17:35+00:00",
   "depends_on": [],
   "id": "AR-1826",
   "next_action": "Coordinator bind-worktree remains blocked: its safety precondition requires both branch and worktree_key empty, but legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract is retained while branch is empty. No active worker/process; product worktree is clean at reviewed e9d95999 (codex/ar-1826-explicit-setup-contract). Implement a coordinator-mediated legacy-pair repair or use the supported repair version, then bind this exact branch/key and requalify e9d95999 onto current main d0e6a28 with fresh exact-head review/CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1826_setup_contract_luna",
   "plan": "../plans/AR-1826-explicit-setup-config-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1826.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Define explicit setup configuration and plan-binding contract",
-  "updated_at": "2026-10-13T11:10:37+00:00",
+  "updated_at": "2026-10-13T15:17:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1826-explicit-setup-config-contract"
 }
 ---
@@ -171,3 +171,5 @@ and compatibility contract on which the remaining ARs depend.
   coordinator bind-worktree rejecting retained legacy worktree_key with empty branch; preserve
   owner/evidence, then perform supported legacy-pair repair and re-claim before product
   requalification. Product remains clean at reviewed e9d95999; no mutation or stale merge attempted.
+
+- 2026-10-13T15:17:35+00:00: Claimed by ar1826_setup_contract_luna.
