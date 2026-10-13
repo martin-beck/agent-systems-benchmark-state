@@ -64,6 +64,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1837-pr627-protected-main-identity` | `repair/ar-1837-pr627-protected-main-identity` | `6ea3648e483f` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-ar-1838-source-checkout-fixture-repair-luna` | `repair/ar-1838-source-checkout-fixture-repair-luna` | `15f70ef23af6` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime` | `feature/ar1850-development-tui-interactive-lifetime` | `671f898b6a85` | 0 | behind 3, ahead 0 |
+| `agent-systems-benchmark-ar-1863-control-diagnostic-catalog` | `codex/ar-1863-control-diagnostic-catalog` | `6215f49dcb7c` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar1838-merge-int` | `DETACHED` | `4a486e97abbb` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 825, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
@@ -292,7 +293,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1825-source-to-executable-adapter-runtime-contract` | `feature/ar-1825-source-to-executable-adapter-runtime-contract` | `630d380866e4` | 0 | behind 24, ahead 0 |
 | `agent-systems-benchmark-ar-1835-authenticated-control-live-isolation-repair` | `feature/ar-1835-authenticated-control-live-isolation-repair` | `06565d3de95a` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1839` | `codex/ar-1839-cross-process-fixture` | `46ac642c40ce` | 0 | behind 7, ahead 1 |
-| `agent-systems-benchmark-ar-1863-control-diagnostic-catalog` | `codex/ar-1863-control-diagnostic-catalog` | `6215f49dcb7c` | 0 | behind 0, ahead 1 |
 | `ar1826-review.IL8AVJ` | `DETACHED` | `ecf3ed20fa15` | 0 | behind 7, ahead 3 |
 | `ar1850-main-verify` | `DETACHED` | `870331be533e` | 0 | behind 0, ahead 0 |
 | `asb-pr307-review-d0e6a28a` | `DETACHED` | `d0e6a28a81b4` | 0 | behind 4, ahead 0 |
