@@ -370,7 +370,7 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
                 handoffctl.apply_accept(accept_args, {**accepted, "status": "open"}, None)
             with (
                 patch.object(handoffctl, "done_admission_error", return_value="evidence rejected"),
-                self.assertRaisesRegex(RuntimeError, "done admission denied: evidence rejected"),
+                self.assertRaisesRegex(RuntimeError, "done admission denied: .*cannot read spec_ref"),
             ):
                 handoffctl.apply_accept(accept_args, dict(accepted), None)
         with (

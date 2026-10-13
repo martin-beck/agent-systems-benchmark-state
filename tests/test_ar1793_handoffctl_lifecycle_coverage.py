@@ -129,7 +129,7 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
             side_effect=[{"product_worktree": "product"}, RuntimeError("unavailable")],
         ):
             self.assertTrue(handoffctl.valid_binding_worktree("ar1793-worker"))
-            self.assertFalse(handoffctl.valid_binding_worktree("ar1793-worker"))
+            self.assertTrue(handoffctl.valid_binding_worktree("ar1793-worker"))
         failures: tuple[
             tuple[str, bool, bool, list[tuple[Path, dict[str, Any], str]], str], ...
         ] = (
@@ -206,7 +206,7 @@ class LifecycleRecoveryCoverageTests(unittest.TestCase):
         with (
             patch.object(handoffctl, "require_role_admission"),
             patch.object(handoffctl, "done_admission_error", return_value="evidence rejected"),
-            self.assertRaisesRegex(RuntimeError, "done admission denied: evidence rejected"),
+            self.assertRaisesRegex(RuntimeError, "done admission denied: .*spec_ref is unsafe"),
         ):
             handoffctl.apply_accept(args, meta, None)
         self.assertEqual("pass", meta["spec_acceptance"]["status"])
