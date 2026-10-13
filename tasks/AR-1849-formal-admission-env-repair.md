@@ -13,7 +13,7 @@
   "spec_acceptance": {"evidence_class": "mechanical", "evidence_digest": "", "evidence_ref": "", "spec_ref": "specs/AR-1849.json", "spec_revision": 1, "status": "pending"},
   "spec_ref": "specs/AR-1849.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "planned",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
   "task_revision": 1,
   "title": "Formal admission environment repair",
