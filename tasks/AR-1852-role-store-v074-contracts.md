@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T21:30:30+00:00",
   "depends_on": [],
   "id": "AR-1852",
   "next_action": "Obtain proper Coordinator/vendor adoption or rebase that restores the locked coordinator.vendor.json digest for tools/handoffctl.py (expected 64d86a03bf85dfb6f411b313af17f5575054ff7e790523b8c460b1d955ed440f; actual db84cc13cbc76abde5ea32d85898a33e90d64a133a0bf76f49e91b7ca33b6c85), without editing the vendor snapshot or weakening authorization; then rerun bounded full gates, independent review, and exact-head CI for 7b46c6b076 before any PR #148 update.",
-  "owner": "",
+  "owner": "ar1852-role-store-repair2-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "retry_circuit": {
@@ -55,11 +55,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T19:23:42+00:00",
+  "updated_at": "2026-10-13T19:30:30+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -327,3 +327,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   tests 10/10 pass; full gate timed out at 180 seconds; vendor mismatch is independently measured
   expected 64d86a03... versus actual db84cc13... and requires proper adoption/rebase reconciliation.
   No product/Git/PR or vendor mutation; pycache hygiene completed via handoffctl run.
+
+- 2026-10-13T19:30:30+00:00: Claimed by ar1852-role-store-repair2-luna.
