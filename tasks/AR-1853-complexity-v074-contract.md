@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T15:16:12+00:00",
   "depends_on": [],
   "id": "AR-1853",
-  "next_action": "Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then align the non-vendor complexity command and contract test without changing the budget.",
+  "next_action": "Independent exact-head review of 56371a22ad; focused gates pass, full suite has unrelated baseline failures.",
   "owner": "ar1853-complexity-luna",
   "plan": "../plans/AR-1853-complexity-v074-contract.md",
   "priority": "P1",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align the complexity-budget contract with Coordinator v0.7.4.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Complexity v0.7.4 compatibility contract",
-  "updated_at": "2026-10-13T13:16:12+00:00",
+  "updated_at": "2026-10-13T13:27:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1853"
 }
 ---
@@ -36,3 +36,8 @@ contract exposed by exact Coordinator v0.7.4 adoption.
   repair.
 
 - 2026-10-13T13:16:12+00:00: Claimed by ar1853-complexity-luna.
+
+- 2026-10-13T13:27:02+00:00: Candidate worktree
+  /srv/data/projects/agent-systems-benchmark-ar-1853-complexity-v074 is based at 180c96b25d.
+  Non-vendor workflow now enforces lizard CCN 14 over tools/handoffctl.py and
+  tools/assumption_revalidation.py; signed commit 56371a22ad.

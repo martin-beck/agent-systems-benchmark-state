@@ -1988,7 +1988,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align the complexity-budget contract with Coordinator v0.7.4. |
-| Next action | Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then align the non-vendor complexity command and contract test without changing the budget. |
+| Next action | Independent exact-head review of 56371a22ad; focused gates pass, full suite has unrelated baseline failures. |
 
 
 ## Dependency graph
