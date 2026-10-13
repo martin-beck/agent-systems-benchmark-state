@@ -2,14 +2,14 @@
 {
   "branch": "",
   "checkpoint_commit": "45427b6ec7fc73f896574701df5e35b6d72b7cf4",
-  "claim_expires": "2026-10-13T17:17:35+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1826",
   "next_action": "Supported repair unavailable in vendored handoffctl v0.7.5: bind-worktree rejects retained legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract while branch is empty, and no coordinator command clears the pair. Add/use an explicitly reviewed coordinator repair version, then re-claim, bind codex/ar-1826-explicit-setup-contract to the exact non-overlapping worktree, and requalify reviewed e9d95999 onto current main d0e6a28.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "ar1826_setup_contract_luna",
+  "owner": "",
   "plan": "../plans/AR-1826-explicit-setup-config-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1826.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Define explicit setup configuration and plan-binding contract",
-  "updated_at": "2026-10-13T15:18:27+00:00",
+  "updated_at": "2026-10-13T15:18:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1826-explicit-setup-config-contract"
 }
 ---
@@ -181,3 +181,10 @@ and compatibility contract on which the remaining ARs depend.
   worker/process; product checkout remains clean at reviewed e9d95999. bind-worktree was not retried
   because the same legacy-metadata precondition remains and no supported clearing operation exists.
   No product, PR, or reviewed commit mutation.
+
+- 2026-10-13T15:18:33+00:00: Precise blocker: vendored handoffctl v0.7.5 has no supported
+  legacy-pair repair. bind-worktree rejects non-empty legacy worktree_key with empty branch;
+  update/release/recover-expired/resume cannot clear it. doctor --live passes. Product remains clean
+  at reviewed e9d95999; preserve it and use a reviewed coordinator repair version before
+  re-claiming, binding codex/ar-1826-explicit-setup-contract, and requalifying onto current main
+  d0e6a28.
