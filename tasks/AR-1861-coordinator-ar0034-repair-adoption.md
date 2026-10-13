@@ -2,19 +2,19 @@
 {
   "branch": "codex/ar1861-coordinator-adoption",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T19:51:23+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1861",
   "next_action": "Route the downstream formal-lifecycle operation drift exposed by AR-0034 vendor verification to a narrowly scoped compatibility successor; preserve AR-1826 and do not publish this incomplete adoption.",
-  "owner": "ar1841-v053-adoption-luna",
+  "owner": "",
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T17:51:23+00:00",
+  "updated_at": "2026-10-13T17:51:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -52,3 +52,7 @@ or mutate AR-1826 until the adopted repair is verified.
   inventory is older. No vendored files or AR-1826 state mutated.
 
 - 2026-10-13T17:51:23+00:00: Heartbeat by ar1841-v053-adoption-luna.
+
+- 2026-10-13T17:51:46+00:00: Released safely after checkpoint: AR-0034 adoption failed closed on
+  exact formal lifecycle inventory drift. Preserve evidence; route the downstream compatibility seam
+  to a narrowly scoped successor before retrying adoption or touching AR-1826.
