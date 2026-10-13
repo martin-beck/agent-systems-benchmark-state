@@ -27,6 +27,16 @@
         "predicate_id": "quality-floor",
         "recorded_task_revision": 15,
         "status": "pass"
+      },
+      {
+        "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "contract-test",
+        "evidence_digest": "sha256:5d54c1b2e37e1ec4757cd4c4928b69d4693590d10827b2359189d5bc73e1de1b",
+        "evidence_ref": "tests/test_roles.py",
+        "predicate_id": "role-policy",
+        "recorded_task_revision": 16,
+        "status": "pass"
       }
     ]
   },
@@ -40,9 +50,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T18:05:13+00:00",
+  "updated_at": "2026-10-13T18:05:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -98,4 +108,7 @@ or mutate AR-1826 until the adopted repair is verified.
   lifecycle parity.
 
 - 2026-10-13T18:05:13+00:00: Accepted unchanged 95 percent full-suite quality floor with vendor
+  contract coverage.
+
+- 2026-10-13T18:05:14+00:00: Accepted advisory-only role policy through lifecycle and doctor
   contract coverage.
