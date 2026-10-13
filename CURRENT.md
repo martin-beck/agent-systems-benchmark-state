@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1858 — v0.7.0 coverage floor repair](tasks/AR-1858-coverage-v070.md) | Repair the v0.7.0 coordinator coverage floor deficit. | AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped. | ar1858-coverage-v070-luna |
-| P0 | [AR-1861 — Adopt Coordinator AR-0034 legacy-binding repair](tasks/AR-1861-coordinator-ar0034-repair-adoption.md) | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. | Route the downstream formal-lifecycle operation drift exposed by AR-0034 vendor verification to a narrowly scoped compatibility successor; preserve AR-1826 and do not publish this incomplete adoption. | coord-reconcile-v078 |
+| P0 | [AR-1861 — Adopt Coordinator AR-0034 legacy-binding repair](tasks/AR-1861-coordinator-ar0034-repair-adoption.md) | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. | v0.7.8 is vendor-verified at f1f42d4 and the merged full suite meets 95%; release this completed adoption. | coord-reconcile-v078 |
 
 ## Open
 

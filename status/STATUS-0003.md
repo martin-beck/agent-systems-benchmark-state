@@ -2100,7 +2100,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. |
-| Next action | Route the downstream formal-lifecycle operation drift exposed by AR-0034 vendor verification to a narrowly scoped compatibility successor; preserve AR-1826 and do not publish this incomplete adoption. |
+| Next action | v0.7.8 is vendor-verified at f1f42d4 and the merged full suite meets 95&#37;; release this completed adoption. |
 
 ### AR-1862 — Coordinator formal lifecycle inventory alignment
 
@@ -5024,3 +5024,8 @@ flowchart LR
     classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
+```
+
+### Accessible dependency index
+
+| AR | Prerequisites | Dependents |
