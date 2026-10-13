@@ -16,6 +16,24 @@
   "owner": "ar1783-workload-selection-luna",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
+  "retry_circuit": {
+    "abandoned": [],
+    "attempts": [],
+    "hold": null,
+    "recoveries": [],
+    "reservations": [
+      {
+        "expires_at": "2026-10-13T20:08:18+00:00",
+        "id": "69349ac1a9444812b17abec214580c3a",
+        "identity": "sha256:e506d6880a64ed5d2d84732d257c1c2c1d606d0748f2a10711707809737ba9a2",
+        "progress_digest": "sha256:91f3236fb2308e831080f5a2895e239eab36947398c76808d5f38b096fa60ae5",
+        "reserved_at": "2026-10-13T19:37:19+00:00",
+        "task_revision": 457,
+        "window": 3
+      }
+    ],
+    "schema_version": 1
+  },
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "environmental",
@@ -29,9 +47,9 @@
   "spec_revision": 2,
   "status": "in_progress",
   "summary": "AR-1835 exact-head fixture now covers the authenticated runtime bootstrap/control seam; AR-1783 remains below 90% until that reviewed change is integrated.",
-  "task_revision": 457,
+  "task_revision": 458,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-13T19:37:07+00:00",
+  "updated_at": "2026-10-13T19:37:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -1166,3 +1184,5 @@ the suite from this end-to-end path.
   preserve checkpoint and defer serialized coverage rerun until AR-1835 exact-head gate resolves.
 
 - 2026-10-13T19:37:07+00:00: Claimed by ar1783-workload-selection-luna.
+
+- 2026-10-13T19:37:19+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
