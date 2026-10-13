@@ -13,13 +13,21 @@
   "plan": "../plans/AR-1855-ar1850-metadata-schema-repair.md",
   "priority": "P1",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "sha256:2f30d050f4f7a7f8ea31e11b2e3c25a9dd7bcd2e29a83602fdaf18726dca42be",
+    "evidence_ref": "tests/test_ar1855_metadata_schema.py",
+    "spec_ref": "specs/AR-1855.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
   "spec_ref": "specs/AR-1855.json",
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the malformed observed_dirty coordination field on AR-1850 without changing its product scope.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Repair AR-1850 coordination metadata schema",
-  "updated_at": "2026-10-13T13:58:48+00:00",
+  "updated_at": "2026-10-13T13:59:21+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1855-ar1850-metadata-schema-repair"
 }
 ---
@@ -67,3 +75,6 @@ AR-1850 product requirement, owner, dependency, and launcher scope.
 
 - 2026-10-13T13:58:48+00:00: Recorded command exit 1; command argv SHA-256
   b67abc1ec80b7accc1b33148d9bd43c2c51b882579171b3563081771251d9a4a.
+
+- 2026-10-13T13:59:21+00:00: Exact-main post-merge schema and focused positive/hostile validation
+  passed at 1e9551d2d2.
