@@ -78,6 +78,15 @@
     "scope_digest": "sha256:33ada7ff7d80a468ee3e71f7f68796b9746d5884fc81abc492a7b27c09e678de",
     "task_revision": 103
   },
+  "execution_result": {
+    "argv_digest": "2b170eed86d3665fc87bf4206e5348c00056aa1d943b8c002fc3b79a3c2ed87b",
+    "classification": "EXIT",
+    "envelope_digest": "sha256:2ced3a87098a532733346fc0a8ca95a633aab9d21440ac7914f4c2024b1fcda9",
+    "execution_id": "47df7fc0a4de41a58f7caff4000fad2b",
+    "owner": "ar1852-requalify-luna3",
+    "recorded_at": "2026-10-13T21:23:27+00:00",
+    "returncode": 1
+  },
   "id": "AR-1852",
   "next_action": "No safe v0.7.8 rebase: v0.7.8 changes lifecycle role admission from strict to advisory and replaces the v0.7.4 lock/digest wholesale. Preserve PR #148 head 7b46c6b076 unupdated; wait for a Coordinator release that retains strict role authorization or explicitly re-scope AR-1852, then rerun independent review and exact-head CI.",
   "owner": "ar1852-requalify-luna3",
@@ -152,9 +161,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T21:23:24+00:00",
+  "updated_at": "2026-10-13T21:23:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -493,3 +502,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 - 2026-10-13T21:22:52+00:00: Bound execution envelope envelopes/AR-1852-e1.json revision 1.
 
 - 2026-10-13T21:23:24+00:00: Reserved bound execution 47df7fc0a4de41a58f7caff4000fad2b.
+
+- 2026-10-13T21:23:27+00:00: Recorded execution result 47df7fc0a4de41a58f7caff4000fad2b.
