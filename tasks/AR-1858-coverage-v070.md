@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T18:20:35+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped.",
-  "owner": "ar1858-coverage-v070-luna",
+  "owner": "",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1858.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:28:22+00:00",
+  "updated_at": "2026-10-13T18:24:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar1858-coverage-v070"
 }
 ---
@@ -240,3 +240,7 @@ artifact. Do not lower the threshold or merge PR #145.
 - 2026-10-13T16:28:22+00:00: Successor linkage: AR-1859 formal work-root validation files committed
   in state commit 7bfc0eb53c, with exact three failure variants and rc64 contract. Promotion attempt
   failed closed: unfinished dependency AR-1858. No gate weakening or acceptance.
+
+- 2026-10-13T18:24:16+00:00: Recovered expired claim formerly owned by ar1858-coverage-v070-luna.
+  Lease expired at 2026-10-13T18:20:35Z; inspect current session snapshot and recover only if
+  exactly one valid snapshot exists.
