@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T18:56:27+00:00",
+  "updated_at": "2026-10-13T18:56:31+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -165,3 +165,6 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   CURRENT.md drift. Resume only with a correct locked environment and fresh exact-head gates.
 
 - 2026-10-13T18:56:27+00:00: Claimed by ar1852-role-store-luna.
+
+- 2026-10-13T18:56:31+00:00: Recorded command exit 0; command argv SHA-256
+  31eb9514f177f55c45718ed30a63bbef4b0a43b0298db24297eb68b65d834337.
