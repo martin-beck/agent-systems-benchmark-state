@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T19:01:47+00:00",
+  "updated_at": "2026-10-13T19:01:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -208,3 +208,6 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   in metadata.
 
 - 2026-10-13T19:01:47+00:00: Claimed by ar1852-role-store-luna.
+
+- 2026-10-13T19:01:52+00:00: Recorded command exit 1; command argv SHA-256
+  7a9a3f9cca2f0f3f6106a4c507c17976dfac22c29b8cdd8a438652c83c2fed3f.
