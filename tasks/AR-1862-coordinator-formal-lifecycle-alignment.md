@@ -4,17 +4,55 @@
   "checkpoint_commit": "b00cdba5bc5267633588dc219c53b10d34fb9dc8",
   "claim_expires": "",
   "depends_on": [],
+  "evidence_ledger": {
+    "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+    "candidate_ref": "coordinator.vendor.json",
+    "steps": [
+      {
+        "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "lifecycle-parity",
+        "recorded_task_revision": 15,
+        "status": "pass"
+      },
+      {
+        "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "immutable-provenance",
+        "recorded_task_revision": 16,
+        "status": "pass"
+      },
+      {
+        "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "contract-test",
+        "evidence_digest": "sha256:1d3232c5908903e5fa89fa04a6ec4ef50309fcdd1c6b5bad19922ecba1dbd6f1",
+        "evidence_ref": "tests/test_handoffctl_vendor.py",
+        "predicate_id": "qualification-floor",
+        "recorded_task_revision": 17,
+        "status": "pass"
+      }
+    ]
+  },
   "id": "AR-1862",
-  "next_action": "Route recover_execution normalization to an upstream Coordinator successor; preserve immutable ASB vendor provenance and do not publish AR-1862 as an ASB implementation.",
+  "next_action": "Bind and accept exact v0.7.8 lifecycle-alignment evidence, then release this obsolete downstream repair successor.",
   "owner": "",
   "plan": "../plans/AR-1862-coordinator-formal-lifecycle-alignment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "spec_ref": "specs/AR-1862.json",
+  "spec_revision": 1,
+  "status": "done",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 10,
+  "task_revision": 18,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T17:55:00+00:00",
+  "updated_at": "2026-10-13T18:05:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -60,3 +98,25 @@ vendored Coordinator bytes or mutate AR-1826.
 - 2026-10-13T17:55:00+00:00: ASB ownership audit confirms the formal lifecycle normalization belongs
   upstream: affected ASB files are immutable vendored Coordinator artifacts. Reverted attempted
   downstream edit; route an upstream successor and preserve AR-1861/AR-1826 boundaries.
+
+- 2026-10-13T18:05:26+00:00: Unblocked: exact Coordinator v0.7.8 vendor manifest verifies the
+  formerly mismatched lifecycle inventory without downstream vendor mutation.
+
+- 2026-10-13T18:05:26+00:00: Claimed by coord-reconcile-v078-1862.
+
+- 2026-10-13T18:05:27+00:00: v0.7.8 resolves the upstream lifecycle inventory seam through the
+  immutable vendor path.
+
+- 2026-10-13T18:05:36+00:00: Bound task spec specs/AR-1862.json revision 1.
+
+- 2026-10-13T18:05:41+00:00: Accepted v0.7.8 manifest after immutable vendor verifier confirmed
+  formal and runtime lifecycle parity.
+
+- 2026-10-13T18:05:41+00:00: Accepted provenance-pinned resolution with no downstream immutable
+  vendor-byte change.
+
+- 2026-10-13T18:05:42+00:00: Accepted exact candidate qualification with the unchanged full 95
+  percent coverage floor.
+
+- 2026-10-13T18:05:42+00:00: Completed by verified v0.7.8 lifecycle alignment through immutable
+  vendor adoption.

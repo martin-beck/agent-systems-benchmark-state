@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1862.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {
+      "id": "lifecycle-parity",
+      "description": "The v0.7.8 Coordinator manifest pins f1f42d448c89e73933fe1dbc4b85de68c87e72ef and the downstream vendor verifier accepts its runtime and formal lifecycle inventory."
+    },
+    {
+      "id": "immutable-provenance",
+      "description": "The resolution uses the digest-pinned vendor snapshot without editing immutable Coordinator vendor bytes."
+    },
+    {
+      "id": "qualification-floor",
+      "description": "The exact downstream candidate passes generated/schema/static checks and the unchanged 95% full coverage gate."
+    }
+  ],
+  "definition_of_done": [
+    "The former formal lifecycle mismatch is resolved by verified Coordinator v0.7.8 vendor adoption.",
+    "No downstream edit changes immutable Coordinator vendor artifacts or AR-1826.",
+    "The exact candidate retains all qualification gates, including the 95% coverage floor."
+  ],
+  "inputs": [
+    {
+      "id": "coordinator-v078",
+      "description": "Unsigned Coordinator v0.7.8 release at f1f42d448c89e73933fe1dbc4b85de68c87e72ef."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "verified-lifecycle-alignment",
+      "description": "A provenance-pinned v0.7.8 vendor snapshot accepted by the ASB lifecycle verifier."
+    }
+  ],
+  "allowed_tools": ["git", "python", "uv", "tools/handoffctl", "tools/handoffctl_vendor.py"],
+  "forbidden_tools": ["threshold-lowering", "test-skipping", "vendor-byte-edit", "history-rewrite"],
+  "required_evidence_classes": ["mechanical", "contract-test"],
+  "gates": [
+    {
+      "id": "vendor-verification",
+      "description": "The immutable manifest verifier accepts every declared vendor file and lifecycle invariant."
+    },
+    {
+      "id": "full-qualification",
+      "description": "The exact head passes static/schema/generated-view checks and the unchanged full coverage gate."
+    }
+  ]
+}

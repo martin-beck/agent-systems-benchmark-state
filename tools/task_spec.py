@@ -27,6 +27,19 @@ TOOL_REF = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:/-]{0,127}$")
 ID_REF = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{2,63}$")
 EVIDENCE_REF = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$")
 DIGEST = re.compile(r"^sha256:[0-9a-f]{64}$")
+LEDGER_FIELDS = frozenset({"candidate_ref", "candidate_digest", "steps"})
+LEDGER_STEP_FIELDS = frozenset(
+    {
+        "predicate_id",
+        "status",
+        "candidate_ref",
+        "candidate_digest",
+        "evidence_class",
+        "evidence_ref",
+        "evidence_digest",
+        "recorded_task_revision",
+    }
+)
 SPEC_FIELDS = {
     "schema_version",
     "spec_ref",
@@ -461,7 +474,133 @@ def task_spec_errors(
         errors.append(f"{task_id}: spec_revision does not match referenced spec")
     if isinstance(value, dict) and value.get("spec_ref") != spec_ref:
         errors.append(f"{task_id}: spec_ref does not match referenced spec")
+    errors.extend(evidence_ledger_errors(root, meta, selected_policy))
     return sorted(set(errors))
+
+
+def _artifact_digest(root: Path, reference: object) -> str | None:
+    """Return a local artifact digest only for a bounded relative regular file."""
+    if not isinstance(reference, str) or not EVIDENCE_REF.fullmatch(reference):
+        return None
+    path = Path(reference)
+    if path.is_absolute() or ".." in path.parts:
+        return None
+    target = root / path
+    try:
+        if target.is_symlink() or not target.is_file() or target.stat().st_size > 4 * 1024 * 1024:
+            return None
+        return "sha256:" + hashlib.sha256(target.read_bytes()).hexdigest()
+    except OSError:
+        return None
+
+
+def evidence_ledger_errors(  # noqa: C901
+    root: Path, meta: dict[str, Any], policy: EvidencePolicy | None = None
+) -> list[str]:
+    """Validate the optional predicate ledger and its locally verifiable artifacts."""
+    ledger = meta.get("evidence_ledger")
+    if ledger is None:
+        return []
+    if not isinstance(ledger, dict) or set(ledger) != LEDGER_FIELDS:
+        return ["evidence ledger is incomplete or unknown"]
+    selected = policy or evidence_policy(root)
+    candidate_ref, candidate_digest, steps = (
+        ledger.get("candidate_ref"),
+        ledger.get("candidate_digest"),
+        ledger.get("steps"),
+    )
+    if _artifact_digest(root, candidate_ref) != candidate_digest:
+        return ["evidence ledger candidate artifact digest is invalid"]
+    if not isinstance(steps, list):
+        return ["evidence ledger steps are invalid"]
+    spec_ref = meta.get("spec_ref")
+    value, load_errors = _load_spec(root, str(meta.get("id", "task")), str(spec_ref))
+    if load_errors or not isinstance(value, dict):
+        return ["evidence ledger task spec is unavailable"]
+    predicates = {
+        item["id"] for item in value.get("acceptance_predicates", []) if isinstance(item, dict)
+    }
+    seen: set[str] = set()
+    errors: list[str] = []
+    for step in steps:
+        if not isinstance(step, dict) or set(step) != LEDGER_STEP_FIELDS:
+            errors.append("evidence ledger step is incomplete or unknown")
+            continue
+        predicate = step.get("predicate_id")
+        if predicate not in predicates or predicate in seen:
+            errors.append("evidence ledger predicate is invalid or duplicated")
+        if isinstance(predicate, str):
+            seen.add(predicate)
+        if step.get("status") not in {"pass", "stale"}:
+            errors.append("evidence ledger step status is invalid")
+        is_current = step.get("status") == "pass"
+        if not isinstance(step.get("candidate_ref"), str) or not EVIDENCE_REF.fullmatch(
+            step["candidate_ref"]
+        ):
+            errors.append("evidence ledger step candidate ref is invalid")
+        if not isinstance(step.get("candidate_digest"), str) or not DIGEST.fullmatch(
+            step["candidate_digest"]
+        ):
+            errors.append("evidence ledger step candidate digest is invalid")
+        if is_current and (
+            step.get("candidate_ref") != candidate_ref
+            or step.get("candidate_digest") != candidate_digest
+        ):
+            errors.append("evidence ledger passing step candidate does not match ledger")
+        if is_current and _artifact_digest(root, step.get("candidate_ref")) != step.get(
+            "candidate_digest"
+        ):
+            errors.append("evidence ledger step candidate artifact digest is invalid")
+        if not is_current and (
+            step.get("candidate_ref") == candidate_ref
+            and step.get("candidate_digest") == candidate_digest
+        ):
+            errors.append("evidence ledger stale step candidate matches ledger")
+        if step.get("evidence_class") not in selected.classes:
+            errors.append("evidence ledger evidence class is unknown")
+        if not isinstance(step.get("evidence_ref"), str) or not EVIDENCE_REF.fullmatch(
+            step["evidence_ref"]
+        ):
+            errors.append("evidence ledger evidence ref is invalid")
+        if not isinstance(step.get("evidence_digest"), str) or not DIGEST.fullmatch(
+            step["evidence_digest"]
+        ):
+            errors.append("evidence ledger evidence digest is invalid")
+        if is_current and _artifact_digest(root, step.get("evidence_ref")) != step.get(
+            "evidence_digest"
+        ):
+            errors.append("evidence ledger evidence artifact digest is invalid")
+        revision = step.get("recorded_task_revision")
+        # The accept transition validates before its shared mutation wrapper
+        # advances the task revision, so its newly recorded step is one ahead
+        # only during that in-memory pre-commit interval.
+        if type(revision) is not int or revision < 1 or revision > meta.get("task_revision", 0) + 1:
+            errors.append("evidence ledger step revision is invalid")
+    return sorted(set(errors))
+
+
+def next_unmet_predicate(root: Path, meta: dict[str, Any]) -> str | None:
+    """Return the first spec predicate not passed for the ledger candidate."""
+    if "spec_ref" not in meta:
+        return None
+    value, errors = _load_spec(root, str(meta.get("id", "task")), str(meta["spec_ref"]))
+    if errors or not isinstance(value, dict):
+        return None
+    ledger = meta.get("evidence_ledger")
+    steps = ledger.get("steps", []) if isinstance(ledger, dict) else []
+    passing = {
+        step.get("predicate_id")
+        for step in steps
+        if isinstance(step, dict) and step.get("status") == "pass"
+    }
+    return next(
+        (
+            item["id"]
+            for item in value.get("acceptance_predicates", [])
+            if item.get("id") not in passing
+        ),
+        None,
+    )
 
 
 def done_admission_error(  # noqa: C901
@@ -475,20 +614,33 @@ def done_admission_error(  # noqa: C901
     errors = task_spec_errors(root, meta, selected_policy)
     if errors:
         return "done admission denied: " + "; ".join(errors)
+    ledger = meta.get("evidence_ledger")
+    if ledger is not None:
+        ledger_errors = evidence_ledger_errors(root, meta, selected_policy)
+        if ledger_errors:
+            return "done admission denied: " + "; ".join(ledger_errors)
+        if next_unmet_predicate(root, meta) is not None:
+            return "done admission denied: predicate evidence steps remain unmet"
+        return None
     acceptance = meta.get("spec_acceptance")
+    has_spec = "spec_ref" in meta or "spec_revision" in meta
     required = {
-        "spec_ref",
-        "spec_revision",
         "status",
         "evidence_class",
         "evidence_ref",
         "evidence_digest",
     }
+    if has_spec:
+        required |= {"spec_ref", "spec_revision"}
+    else:
+        required.add("match")
     if not isinstance(acceptance, dict) or set(acceptance) != required:
         return "done admission denied: spec_acceptance is incomplete or unknown"
-    if acceptance["spec_ref"] != meta.get("spec_ref"):
+    if not has_spec and acceptance.get("match") != "best_effort":
+        return "done admission denied: acceptance match is not best_effort"
+    if has_spec and acceptance["spec_ref"] != meta.get("spec_ref"):
         return "done admission denied: acceptance spec_ref does not match task spec"
-    if acceptance["spec_revision"] != meta.get("spec_revision"):
+    if has_spec and acceptance["spec_revision"] != meta.get("spec_revision"):
         return "done admission denied: acceptance spec_revision does not match task spec"
     if acceptance["status"] != "pass":
         return "done admission denied: acceptance status is not pass"
