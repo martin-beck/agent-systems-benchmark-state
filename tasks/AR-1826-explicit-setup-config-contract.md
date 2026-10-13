@@ -2,14 +2,14 @@
 {
   "branch": "",
   "checkpoint_commit": "45427b6ec7fc73f896574701df5e35b6d72b7cf4",
-  "claim_expires": "2026-10-13T18:14:51+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1826",
   "next_action": "Supported repair unavailable in vendored handoffctl v0.7.5: bind-worktree rejects retained legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract while branch is empty, and no coordinator command clears the pair. Add/use an explicitly reviewed coordinator repair version, then re-claim, bind codex/ar-1826-explicit-setup-contract to the exact non-overlapping worktree, and requalify reviewed e9d95999 onto current main d0e6a28.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "ar1826_setup_contract_luna",
+  "owner": "",
   "plan": "../plans/AR-1826-explicit-setup-config-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1826.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Define explicit setup configuration and plan-binding contract",
-  "updated_at": "2026-10-13T17:44:51+00:00",
+  "updated_at": "2026-10-13T17:45:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1826-explicit-setup-config-contract"
 }
 ---
@@ -190,3 +190,6 @@ and compatibility contract on which the remaining ARs depend.
   d0e6a28.
 
 - 2026-10-13T17:44:51+00:00: Claimed by ar1826_setup_contract_luna.
+
+- 2026-10-13T17:45:01+00:00: Released after state-only coordinator-adoption routing; product
+  implementation remains untouched.
