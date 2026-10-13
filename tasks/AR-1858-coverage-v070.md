@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T18:06:20+00:00",
+  "claim_expires": "2026-10-13T18:11:12+00:00",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "The first per-test probe is invalid because its helper lacked __main__ guard, causing multiprocessing spawn bootstrap errors. After bounded probe ends, replace helper with guarded runner and rerun only multiprocessing suspect tests; keep all probe output non-evidence.",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:10:28+00:00",
+  "updated_at": "2026-10-13T16:11:12+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -200,3 +200,5 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-13T16:10:28+00:00: Recorded command exit 0; command argv SHA-256
   5fc7f720e61d3e7f3c8b726267a42f59d0a0298a1a909253c4add84006f1e922.
+
+- 2026-10-13T16:11:12+00:00: Heartbeat by ar1858-coverage-v070-luna.
