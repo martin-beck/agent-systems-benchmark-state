@@ -4,6 +4,70 @@
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
   "claim_expires": "2026-10-13T23:19:51+00:00",
   "depends_on": [],
+  "execution_envelope": {
+    "command_classes": {
+      "git-publication": {
+        "allowed": false
+      },
+      "read": {
+        "allowed": true
+      },
+      "source-write": {
+        "allowed": false
+      },
+      "test": {
+        "allowed": true,
+        "timeout_seconds": 900
+      }
+    },
+    "envelope_id": "AR-1852-e1",
+    "envelope_revision": 1,
+    "evidence": [
+      {
+        "class": "contract-test",
+        "id": "gates",
+        "required": true
+      }
+    ],
+    "non_goals": [
+      "Do not weaken role authorization, vendor verification, or formal gates."
+    ],
+    "outputs": [
+      {
+        "description": "Record bounded candidate qualification evidence.",
+        "id": "qualification"
+      }
+    ],
+    "path_scope": {
+      "read": [
+        "tests",
+        "tools",
+        "formal",
+        "coordinator.vendor.json"
+      ],
+      "write": [
+        "tests",
+        "tools",
+        "formal",
+        "coordinator.vendor.json"
+      ]
+    },
+    "schema_version": 1,
+    "spec_ref": "specs/AR-1852.json",
+    "spec_revision": 1,
+    "stop_conditions": [
+      {
+        "id": "scope",
+        "kind": "deny"
+      }
+    ],
+    "task": "AR-1852",
+    "task_revision": 102
+  },
+  "execution_envelope_digest": "sha256:2ced3a87098a532733346fc0a8ca95a633aab9d21440ac7914f4c2024b1fcda9",
+  "execution_envelope_ref": "envelopes/AR-1852-e1.json",
+  "execution_envelope_revision": 1,
+  "execution_envelope_task_revision": 102,
   "id": "AR-1852",
   "next_action": "No safe v0.7.8 rebase: v0.7.8 changes lifecycle role admission from strict to advisory and replaces the v0.7.4 lock/digest wholesale. Preserve PR #148 head 7b46c6b076 unupdated; wait for a Coordinator release that retains strict role authorization or explicitly re-scope AR-1852, then rerun independent review and exact-head CI.",
   "owner": "ar1852-requalify-luna3",
@@ -78,9 +142,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T21:22:04+00:00",
+  "updated_at": "2026-10-13T21:22:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -415,3 +479,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T21:22:04+00:00: Recorded command exit 0; command argv SHA-256
   79f121677af75a7360228d9d7af2c540d367df67d5cdcd777410e454205fd891.
+
+- 2026-10-13T21:22:52+00:00: Bound execution envelope envelopes/AR-1852-e1.json revision 1.
