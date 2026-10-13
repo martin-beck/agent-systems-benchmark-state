@@ -151,9 +151,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T21:24:59+00:00",
+  "updated_at": "2026-10-13T21:25:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -514,3 +514,12 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T21:24:59+00:00: Recorded command exit 1; command argv SHA-256
   564328550cefbde7e82807c5b1f9de9017b40bc5bdfef825d00dd005c8583c63.
+
+- 2026-10-13T21:25:36+00:00: Full unittest discovery on exact adopted candidate exited 1 after 62s
+  under /usr/bin/python3: baseline/environment failures include missing jsonschema in system
+  interpreter, bwrap uid-map permission errors, and generated CURRENT/STATUS drift; no product
+  assertion or authorization weakening was changed. The approved state .venv contains jsonschema
+  4.25.1 outside the candidate sandbox, while candidate .venv is absent, so the locked full gate
+  cannot be admitted by the immutable execution envelope. Focused role suite remains 10/10 and
+  vendor verify is green at b46d2b3. Do not retry identical command; next action is provision/repair
+  approved locked environment through authorized handoffctl workflow, then rerun once.
