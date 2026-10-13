@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1861](tasks/AR-1861-coordinator-ar0034-repair-adoption.md): Adopt Coordinator AR-0034 legacy-binding repair | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. | Complete focused/full/formal/privacy gates on exact v0.7.8 development vendor; initial direct pytest lacked jsonschema, state venv run is in progress with failures to classify. Preserve AR-1826. | ar1861-resume-luna |
+| P0 | [AR-1861](tasks/AR-1861-coordinator-ar0034-repair-adoption.md): Adopt Coordinator AR-0034 legacy-binding repair | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. | Remain blocked until compatibility blockers AR-1851, AR-1852, AR-1853 and AR-1849 are independently resolved and merged; then revalidate exact AR-0111 vendor adoption. Preserve immutable eee760513969a2929512df3c822aab9d769bf057 provenance and do not mutate AR-1826. | ar1861-resume-luna |
 
 ## Open
 

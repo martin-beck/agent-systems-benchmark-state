@@ -5,16 +5,16 @@
   "claim_expires": "2026-10-13T19:30:52+00:00",
   "depends_on": [],
   "id": "AR-1861",
-  "next_action": "Complete focused/full/formal/privacy gates on exact v0.7.8 development vendor; initial direct pytest lacked jsonschema, state venv run is in progress with failures to classify. Preserve AR-1826.",
+  "next_action": "Remain blocked until compatibility blockers AR-1851, AR-1852, AR-1853 and AR-1849 are independently resolved and merged; then revalidate exact AR-0111 vendor adoption. Preserve immutable eee760513969a2929512df3c822aab9d769bf057 provenance and do not mutate AR-1826.",
   "owner": "ar1861-resume-luna",
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T19:00:52+00:00",
+  "updated_at": "2026-10-13T19:01:00+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -101,3 +101,8 @@ or mutate AR-1826 until the adopted repair is verified.
   AR-0111 adoption evidence.
 
 - 2026-10-13T19:00:52+00:00: Claimed by ar1861-resume-luna.
+
+- 2026-10-13T19:01:00+00:00: Durable metadata reconciliation only. Concrete blockers are
+  AR-1851/AR-1852/AR-1853 Coordinator v0.7.4 compatibility repairs and AR-1849 formal admission
+  environment repair. AR-1862 remains the scoped formal-lifecycle successor. No product or vendor
+  adoption mutation performed.

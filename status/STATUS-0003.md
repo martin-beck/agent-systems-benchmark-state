@@ -2100,7 +2100,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. |
-| Next action | Complete focused/full/formal/privacy gates on exact v0.7.8 development vendor; initial direct pytest lacked jsonschema, state venv run is in progress with failures to classify. Preserve AR-1826. |
+| Next action | Remain blocked until compatibility blockers AR-1851, AR-1852, AR-1853 and AR-1849 are independently resolved and merged; then revalidate exact AR-0111 vendor adoption. Preserve immutable eee760513969a2929512df3c822aab9d769bf057 provenance and do not mutate AR-1826. |
 
 ### AR-1862 — Coordinator formal lifecycle inventory alignment
 
@@ -5023,6 +5023,3 @@ flowchart LR
     classDef status_future fill:#455a64,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
-    classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
-```
-
