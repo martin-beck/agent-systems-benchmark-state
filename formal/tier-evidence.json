@@ -3,41 +3,61 @@
   "profiles": {
     "portable-smoke": {
       "exhaustive": false,
+      "aggregate_budget_seconds": 600,
       "models": ["HandoffctlBinding"],
       "claims": "smoke-only; no full formal evidence or release attestation"
     },
     "pr-fast": {
       "exhaustive": false,
-      "models": ["HandoffctlFast", "HandoffctlReceiptsFast", "HandoffctlObservation", "OracleInteractionGates"],
+      "aggregate_budget_seconds": 300,
+      "models": ["HandoffctlFast", "HandoffctlReceiptsFast", "HandoffctlPublicationFast", "HandoffctlObservation", "OracleInteractionGates"],
       "claims": "required bounded safety-only merge gate; no liveness, full formal evidence, or release attestation"
     },
     "pr-publication": {
       "exhaustive": false,
+      "aggregate_budget_seconds": 900,
       "models": [
         "HandoffctlBinding",
         "HandoffctlLocks",
         "HandoffctlRun",
         "HandoffctlStorage",
         "HandoffctlReceipts",
+        "HandoffctlPublication",
         "HandoffctlObservation",
-        "HandoffctlPR",
+        "HandoffctlLiveness",
         "HandoffctlRecovery"
       ],
-      "claims": "all invariant families with bounded lifecycle coverage; no full two-process lifecycle cross-product or release attestation"
+      "claims": "reduced bounded release qualification for this declared model set; HandoffctlLiveness is a documented one-process abstraction with complete lifecycle safety invariants and EventualCompletion; neither refinement evidence nor the full two-process lifecycle cross-product, and no full formal or release attestation"
     },
     "full-exhaustive": {
       "exhaustive": true,
+      "aggregate_budget_seconds": 86400,
       "models": [
         "HandoffctlBinding",
         "HandoffctlLocks",
         "HandoffctlRun",
         "HandoffctlStorage",
         "HandoffctlReceipts",
+        "HandoffctlPublication",
         "HandoffctlObservation",
-        "Handoffctl",
+        "HandoffctlSlice-promote",
+        "HandoffctlSlice-resume",
+        "HandoffctlSlice-unblock",
+        "HandoffctlSlice-pause",
+        "HandoffctlSlice-claim",
+        "HandoffctlSlice-heartbeat",
+        "HandoffctlSlice-update",
+        "HandoffctlSlice-accept",
+        "HandoffctlSlice-bind-spec",
+        "HandoffctlSlice-bind-worktree",
+        "HandoffctlSlice-recover_expired",
+        "HandoffctlSlice-release_planned",
+        "HandoffctlSlice-release_open",
+        "HandoffctlSlice-release_blocked",
+        "HandoffctlSlice-release_done",
         "HandoffctlRecovery"
       ],
-      "claims": "all tracked models, configurations, invariants, and liveness properties"
+      "claims": "scheduled/manual advisory exploratory contained bounded model checking; all tracked configurations and the two-process lifecycle aggregate are checked through the exhaustive union of disjoint immutable-operation slices"
     }
   },
   "required_full_inputs": [
@@ -51,6 +71,8 @@
   "non_claims": [
     "portable-smoke does not prove exhaustive model coverage",
     "pr-publication does not prove the full two-process lifecycle cross-product",
+    "pr-publication is not refinement evidence",
+    "full-exhaustive is exploratory supplementary evidence and cannot block normal progression, acceptance, merge, or release",
     "portable address-space limits are not equivalent to cgroup RSS or swap accounting",
     "neither tier proves implementation correspondence"
   ]

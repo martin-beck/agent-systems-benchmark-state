@@ -43,8 +43,10 @@ correspondence, not a proof that the Python implementation refines the model.
 ## Legacy worktree binding
 
 `bind-worktree` is the corresponding exact-revision transition for a claimed
-legacy record with both worktree fields empty. It requires a live owner lease,
-rejects unsafe or conflicting identities, and changes the bounded
+legacy record with both worktree fields empty, or with an empty branch and a
+valid predeclared worktree key matching the request. It requires a live owner
+lease, rejects unsafe, conflicting, mismatched, or branch-only partial
+identities, and changes the bounded
 `worktreeBound`, branch, and worktree-key states only on acceptance. A retry
 at the immediately resulting revision with the same owner and exact identity
 is an accepted no-op: it preserves task/projection revisions and records no
@@ -53,9 +55,9 @@ second mutation. A different identity remains rejected.
 `UniqueActiveWorktreeIdentity` preserve the one-way binding and prohibit two
 active tasks from sharing either bounded identity, while timeouts, stale
 requests, expired leases, and conflicting requests stutter.
-The model starts each bounded task with empty legacy worktree metadata; this
-keeps the checked domain focused on the migration transition rather than on
-arbitrary pre-existing identities.
+The model includes an empty legacy record and a record with one predeclared
+matching worktree key; it does not model arbitrary pre-existing identities.
+Hostile tests cover the branch-only and mismatched-key rejections.
 This is bounded-model guidance and hostile test correspondence, not an
 implementation-refinement proof.
 

@@ -73,6 +73,22 @@ Existing initialized projects without `coordinator.backend.json` remain Git-back
 Never manufacture that file to migrate; use `handoffctl migrate --to sqlite`, verify the database
 and projections, and retain the Git files for the documented `migrate --to git` rollback.
 
+## Concise task titles
+
+Task records may carry an optional `short_title`: one to four human-readable words used beside
+the task ID in operator-facing views. `title` remains the full durable description. During the
+v0.5 compatibility window, records without `short_title` render their full title after the ID and
+remain valid; the coordinator never derives or writes a short title while reading a record.
+
+Migrate a Git-backed project in one reviewable state change: add a valid `short_title` to each
+task front matter, regenerate `CURRENT.md` and `STATUS.md` with `render-status`, then require
+`render-status --check` and `doctor` in the state PR. For SQLite authority, use the supported
+`migrate --to git` export, apply and review that same mapping in Git, then `migrate --to sqlite`;
+the migration equivalence check must preserve the distinct field. Before the next schema-major
+release, the project must explicitly either complete that mapping or retain the v0.5 compatibility
+policy; a future required-field change must reject missing titles during validation rather than
+silently inventing them.
+
 Omit `--status-view` if the project has no `STATUS.md`. Omit `--commit-signoff` if DCO trailers
 are not project policy. Commit both binding files with the vendor snapshot. There is deliberately
 no rebind command: create a fresh state repository and initialize it separately.
@@ -83,18 +99,19 @@ tracked binding.
 
 ## Normal user and agent loop
 
-Development merge review identity is defined in
-[`DEVELOPMENT_REVIEW_POLICY.md`](DEVELOPMENT_REVIEW_POLICY.md). The required
-technical review remains independent, while a same-account GitHub approval is
-acceptable for development-only integration. Verified releases retain their
-separate release and provenance gates.
+Local reproducible functional and privacy evidence is sufficient for normal
+development integration and release. External signatures, authentication,
+GitHub approval, and independent review may supplement that evidence but are
+not lifecycle, merge, or release prerequisites; see
+[`DEVELOPMENT_REVIEW_POLICY.md`](DEVELOPMENT_REVIEW_POLICY.md).
 
 1. Read the project's development policy, complete snapshot, selected task and plan.
 2. Claim one dependency-ready open task with a stable unique owner.
 3. Run every state-changing product, Git, review or publication command through `run`.
 4. Record each material result immediately; heartbeat before lease expiry.
 5. After interruption, inspect revisions, commits, refs, processes and CI before retrying.
-6. For `done`, record reviewed task-spec acceptance at the exact current revision.
+6. For `done`, record locally verifiable task-spec acceptance at the exact
+   current revision; supplementary review is optional.
 7. Release to `done`, `open`, or `blocked`; reconcile and run the live doctor.
 
 ```sh
@@ -113,11 +130,9 @@ tools/handoffctl reconcile --commit --push
 tools/handoffctl doctor --live
 ```
 
-Expired-claim recovery is fail-closed: workers must leave exactly one validated session snapshot
-at the current task revision. A claim-time PID/start-time may be retained as diagnostic evidence,
-but process absence never authorizes snapshotless recovery or reconstructs the former worker's
-last action. If the current snapshot is missing or ambiguous, preserve the claim and create a
-durable checkpoint before retrying recovery.
+Workers that need snapshotless expired-claim recovery pass their live Linux PID and start-time
+with `claim --worker-pid PID --worker-start-time START_TIME`. Coordinator verifies that exact
+identity at claim time and later recovers only after it is absent.
 
 `accept` records the active owner's acceptance assertion for the task's referenced
 spec and validates the metadata. It does not independently inspect or prove the
@@ -169,6 +184,19 @@ tools/handoffctl recover-expired AR-0001 --expected-revision REVISION \
 tools/handoffctl unblock AR-0002 --expected-revision REVISION \
   --note "External blocker and exact revision independently verified"
 ```
+
+Pre-identity task records have no durable worker identity to inspect. They remain fail closed by
+default, but an operator can use the one-time compatibility route only after confirming the record
+has no `claim_process` field and its lease has expired:
+
+```sh
+tools/handoffctl recover-expired AR-0001 --expected-revision REVISION \
+  --allow-legacy-without-identity \
+  --note "Legacy worker identity was never recorded; recovery is explicitly acknowledged"
+```
+
+The resulting task history is prefixed `LEGACY_NO_IDENTITY_RECOVERY`; it is an audit marker, not
+evidence that the former worker was observed absent.
 
 A future or malformed deadline and a stale revision are rejected before mutation.
 

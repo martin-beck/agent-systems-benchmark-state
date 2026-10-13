@@ -38,7 +38,7 @@ Phases == {"waiting", "holding", "releasing", "done"}
 Results == {"pending", "accepted", "rejected", "rolled_back", "lock_timeout"}
 PauseProvenances == {"absent", "unique_valid", "unique_incoherent", "duplicate"}
 BranchNames == {"branch-1"}
-WorktreeKeys == {"worktree-1"}
+WorktreeKeys == {"worktree-1", "worktree-2"}
 NoBranch == "no-branch"
 NoWorktreeKey == "no-worktree-key"
 
@@ -112,7 +112,8 @@ Init ==
     /\ worktreeBound = [t \in Tasks |-> FALSE]
     /\ initialWorktreeBound = worktreeBound
     /\ boundBranch = [t \in Tasks |-> NoBranch]
-    /\ boundWorktreeKey = [t \in Tasks |-> NoWorktreeKey]
+    /\ boundWorktreeKey = [t \in Tasks |->
+        IF t = "t1" THEN "worktree-1" ELSE NoWorktreeKey]
     /\ \A t \in Tasks: worktreeBound[t] <=>
         (boundBranch[t] # NoBranch /\ boundWorktreeKey[t] # NoWorktreeKey)
     /\ ActiveWorktreeIdentitiesAreUnique(status, boundBranch, boundWorktreeKey)
@@ -134,7 +135,11 @@ NoOtherActiveTask(p) ==
         owner[t] # actor[p]
 
 RequestedBranch(p) == "branch-1"
-RequestedWorktreeKey(p) == "worktree-1"
+\* `dependencyReady` supplies the bounded request-key choice.  It is immutable
+\* during a request, so both matching and mismatched partial-key admissions are
+\* explored without adding another transition variable.
+RequestedWorktreeKey(p) ==
+    IF dependencyReady[target[p]] THEN "worktree-1" ELSE "worktree-2"
 
 NoOtherActiveWorktreeIdentity(p) ==
     \A t \in (Tasks \ {target[p]}):
@@ -186,7 +191,10 @@ EnabledOperation(p) ==
             /\ ~leaseExpired[t]
             /\ NoOtherActiveWorktreeIdentity(p)
             /\ expected[p] = revision[t]
-            /\ (~worktreeBound[t]
+            /\ ((~worktreeBound[t]
+                    /\ boundBranch[t] = NoBranch
+                    /\ (boundWorktreeKey[t] = NoWorktreeKey
+                        \/ boundWorktreeKey[t] = RequestedWorktreeKey(p)))
                 \/ (RequestedBranch(p) = boundBranch[t]
                     /\ RequestedWorktreeKey(p) = boundWorktreeKey[t]))
       [] operation[p] = "recover_expired" ->
@@ -410,6 +418,9 @@ WorktreeBindingIsMonotonic ==
 AcceptedWorktreeBindIsBound ==
     \A p \in Processes:
         result[p] = "accepted" /\ operation[p] = "bind-worktree" => worktreeBound[target[p]]
+
+PartialWorktreeKeyIsPreserved ==
+    boundWorktreeKey["t1"] = "worktree-1"
 
 EventualCompletion ==
     <>(\A p \in Processes: pc[p] = "done")

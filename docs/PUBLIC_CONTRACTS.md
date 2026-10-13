@@ -17,12 +17,6 @@ The role registry is descriptive authorization input. It does not itself authori
 release, rollback, or Dispatch operation; those decisions remain owned by the Coordinator
 runtime and its durable state.
 
-Role assignment expiry is fail-closed for `roles.list`, `roles.check`, doctor, and runtime
-admission. The exact-revision `roles.remove` command is the bounded cleanup exception: it may
-remove the explicitly named structurally valid assignment after expiry, including when another
-assignment is expired, but it still rejects malformed state, invalid registry references,
-invalid evidence, missing targets, and stale revisions.
-
 The task-spec evidence policy is an optional, tracked file at the bound state repository root.
 It can add bounded evidence-class names but cannot remove or reinterpret Coordinator's built-in
 classes. The runtime captures one policy identity for each operation. Invalid, removed, dirty, or

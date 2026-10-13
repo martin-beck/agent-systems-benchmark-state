@@ -15,6 +15,7 @@ import signal
 import stat
 import threading
 import time
+import uuid
 from collections.abc import Iterator
 from contextlib import contextmanager
 from typing import Any
@@ -691,7 +692,11 @@ def _observe_remote_main(core: Any) -> str | None:
 
 
 def _publish_if_needed(
-    core: Any, pending: list[dict[str, Any]], local_head: str, remote_head: str
+    core: Any,
+    store: ReceiptStore,
+    pending: list[dict[str, Any]],
+    local_head: str,
+    remote_head: str,
 ) -> str | None:
     needs_push = any(
         not _is_ancestor(core, str(item["commit_oid"]), remote_head)
@@ -701,11 +706,106 @@ def _publish_if_needed(
     if not needs_push or not _is_ancestor(core, remote_head, local_head):
         return remote_head
     core.assert_project_binding()
-    core.run(
-        ["git", "-C", str(core.ROOT), "push", "origin", f"{local_head}:refs/heads/main"],
-        check=False,
+    job = store.admit_publication(
+        key=f"fast-publisher:{local_head}",
+        candidate_oid=local_head,
+        expected_remote_oid=remote_head,
     )
-    return _observe_remote_main(core)
+    job_id = str(job["job_id"])
+    if job["phase"] in {"ambiguous", "publishing"}:
+        try:
+            job = store.recover_publication(job_id, observed_remote_oid=remote_head)
+        except RuntimeError as error:
+            if "still active" not in str(error):
+                raise
+    if job["phase"] == "published":
+        return remote_head
+    if job["phase"] != "queued":
+        return remote_head
+    lease = uuid.uuid4().hex
+    claimed = store.claim_publication(job_id, lease=lease)
+    if claimed is None:
+        return remote_head
+    try:
+        core.run(
+            [
+                "git",
+                "-C",
+                str(core.ROOT),
+                "push",
+                f"--force-with-lease=refs/heads/main:{remote_head}",
+                "origin",
+                f"{local_head}:refs/heads/main",
+            ],
+            check=False,
+        )
+    except Exception:
+        _record_admitted_push_observation(core, store, job_id, lease, local_head, "PUSH_UNKNOWN")
+        raise
+
+    return _record_admitted_push_observation(
+        core, store, job_id, lease, local_head, "REMOTE_UNKNOWN"
+    )
+
+
+def _recover_outstanding_publications(
+    store: ReceiptStore, local_head: str, remote_head: str
+) -> None:
+    """Resolve every nonterminal job; only the current local head may remain queued."""
+    for existing in store.recoverable_publications():
+        try:
+            job_id = str(existing["job_id"])
+            if existing["phase"] == "queued":
+                if existing["candidate_oid"] == local_head:
+                    continue
+                store.resolve_superseded_publication(job_id, observed_remote_oid=remote_head)
+            else:
+                store.recover_publication(job_id, observed_remote_oid=remote_head)
+        except RuntimeError as error:
+            if not (
+                "still active" in str(error)
+                or "changed while recovering" in str(error)
+                or "changed while resolving" in str(error)
+            ):
+                raise
+
+
+def _record_admitted_push_observation(
+    core: Any,
+    store: ReceiptStore,
+    job_id: str,
+    lease: str,
+    candidate: str,
+    unknown_code: str,
+) -> str | None:
+    """Persist only an exact remote observation for the admitted candidate."""
+    observed = _observe_remote_main(core)
+    if observed == candidate:
+        store.finish_publication(
+            job_id,
+            lease=lease,
+            phase="published",
+            observed_remote_oid=observed,
+        )
+    elif observed is not None and _is_ancestor(core, candidate, observed):
+        store.finish_publication(
+            job_id,
+            lease=lease,
+            phase="rejected",
+            observed_remote_oid=observed,
+            error_code="REMOTE_ADVANCED",
+        )
+    elif observed is None:
+        store.finish_publication(job_id, lease=lease, phase="ambiguous", error_code=unknown_code)
+    else:
+        store.finish_publication(
+            job_id,
+            lease=lease,
+            phase="rejected",
+            observed_remote_oid=observed,
+            error_code="REMOTE_CHANGED",
+        )
+    return observed
 
 
 def _finish_publications(
@@ -753,7 +853,8 @@ def _publish_selected(
             store.record_publication_failure(str(item["receipt_id"]), "REMOTE_UNKNOWN")
             for item in pending
         ]
-    remote_head = _publish_if_needed(core, pending, local_head, remote_head)
+    _recover_outstanding_publications(store, local_head, remote_head)
+    remote_head = _publish_if_needed(core, store, pending, local_head, remote_head)
     if remote_head is None:
         return [
             store.record_publication_failure(str(item["receipt_id"]), "REMOTE_UNKNOWN")
@@ -766,8 +867,6 @@ def publish_pending(core: Any, store: ReceiptStore) -> list[dict[str, Any]]:
     """Observe exact remote ancestry; a bounded timeout remains a local receipt."""
     _require_bound_store(core, store)
     pending = store.pending_publication()
-    if not pending:
-        return []
     try:
         return _publish_selected(core, store, pending)
     except Exception as error:

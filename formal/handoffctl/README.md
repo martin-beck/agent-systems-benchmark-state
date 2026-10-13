@@ -42,7 +42,7 @@ authoritative revision, task status and owner unchanged.
 | `update` | `in_progress` | current owner, exact revision | active fields updated |
 | `accept` | `in_progress`, referenced spec | current owner, exact revision, valid evidence metadata | spec acceptance recorded; lifecycle status unchanged |
 | `release` | `in_progress` | current owner | chosen non-active state, owner and lease cleared |
-| `recover-expired` | expired `in_progress` | exact revision; a verified claim-time worker identity must now be absent unless a validated exact-current session exists | `open`, ownership cleared; restores `next_action` only from an exact-current session snapshot |
+| `recover-expired` | expired `in_progress` | exact revision; a verified claim-time worker identity must now be absent unless a validated exact-current session exists; pre-identity records require explicit `--allow-legacy-without-identity` | `open`, ownership cleared; restores `next_action` only from an exact-current session snapshot |
 | `run` record | `in_progress`, unexpired | owner and current revision | bounded result recorded |
 
 The model includes `accept` as a status-preserving, exact-revision transition.
@@ -130,6 +130,18 @@ implementation correspondence. Its liveness property is conditional on both
 services eventually remaining available; repeated crashes are therefore an
 explicitly nonterminal environmental condition, not a false completion claim.
 
+`HandoffctlPublication.tla` checks candidate-bound protected-main publication: idempotent admission,
+descriptor-change rejection, one publisher lease, expected-base compare-and-swap, remote observation
+before success, and observation-based recovery from ambiguous pushes. It is a one-candidate
+abstraction: database-wide liveness across historical jobs is established by executable sweep tests,
+not claimed as a refinement result. The fast PR tier checks its
+safety invariants; publication and full tiers also check eventual terminal resolution after the
+publisher eventually remains available. Repeated publisher crashes remain a nonterminal
+environmental condition, rather than an unsound completion guarantee. The finite model includes
+at most one ambiguous push and one competing remote advance.
+Git ancestry and transport are abstracted as finite head values; this is not
+implementation-correspondence evidence.
+
 HandoffctlObservation.tla checks the bounded opt-in `cached-observation-v1`
 contract: cache hits require the exact current input generation, one refresh
 serves concurrent waiters, an input change rejects the in-flight generation,
@@ -201,30 +213,65 @@ the JAR or modify coordinator state.
 
 Formal tiers are explicit: `verify.sh --tier portable-smoke` runs one model
 and is non-exhaustive; it cannot produce publication or full evidence.
-`verify.sh --tier pr-publication` checks every invariant family. Six models
-use their full configurations; the general lifecycle model uses the
-one-process `HandoffctlPR.cfg`, while the separate lock and recovery models
-retain independent-process races. This exact-head PR tier is not the complete
-two-process lifecycle cross-product and cannot produce full release evidence.
-`verify.sh --tier full-exhaustive` runs all eight full configurations on the
-scheduled weekly or manually dispatched gate. A release claim requires its
-fresh exact-head full attestation; neither smaller tier substitutes for it.
+`verify.sh --tier pr-publication` is reduced bounded release qualification for
+its declared model set. Seven models use their full configurations; the general
+lifecycle model uses the explicitly named one-process `HandoffctlLiveness.cfg`.
+`LIVENESS_COVERAGE.json` maps each omitted dimension to focused models and
+concrete tests, while the separate lock and recovery models retain
+independent-process races. The reduced configuration retains every lifecycle
+safety invariant and `EventualCompletion`. This is a bounded coverage argument,
+not refinement evidence or the complete two-process lifecycle cross-product,
+and cannot produce full formal or release evidence.
+
+`HandoffctlPR.cfg` is a source-only compatibility bootstrap for snapshots
+created before AR-0101. It is deliberately excluded from every tier. An old
+vendored updater needs it for one sync that installs the new updater; the new
+updater removes the bootstrap on its next atomic sync.
+`verify.sh --tier full-exhaustive` runs every full focused configuration plus
+the complete two-process lifecycle domain as fifteen disjoint immutable-
+operation slices. Each slice fixes one process's request operation and leaves
+the competing process's operation domain complete; because requests do not
+change operation, their union is exactly the original aggregate state graph.
+The scheduled weekly run or an explicit dispatch of the separate **Advisory
+Formal Stress** workflow on `main` checks every slice as exploratory evidence.
+It uses a dedicated runner label, private workspace, queue, and admission lock;
+it can be canceled or retried independently of bounded validation. Its receipt
+and any partial or interrupted outcomes are explicitly exploratory. A failed or
+missing full-exhaustive run cannot block normal progression, acceptance, merge,
+or release. Neither a missing slice nor a smaller tier supports a full formal
+claim.
 
 Each model is executed through `tools/tlc_runner.py`, never directly through
-TLC. The runner uses finite workers (`2`), a `4096m` heap for cgroup-contained
-same-repository publication and weekly runs, a `512m` heap for hosted smoke, CPU
-quota (`200%`), process limit (`64`), a 1200-second ordinary PR or 6000-second
-release-sensitive/weekly per-model deadline, and cgroup memory/swap limits (`6G`/`6G`) for contained runs
-and (`3G`/`3G`) for hosted smoke. A canonical host-wide admission lock prevents
+TLC. The runner uses finite workers (`2`), a dedicated `48g` heap and `64G`/`64G`
+memory/swap cgroup limits for full-exhaustive runs, a `2g` heap and `3G`/`3G`
+limits for ordinary same-repository PR publication, and a `512m` heap for hosted
+smoke. It retains CPU quota (`200%`), process limit (`64`), a 300-second
+`pr-fast` or 900-second `pr-publication` aggregate end-to-end budget (including
+queue/lock admission), and an 86400-second advisory full-exhaustive aggregate
+budget, plus a fail-closed 64 GiB
+host/parent-cgroup prerequisite for full evidence. Before every required TLC
+execution, the runner reads `memory.max`, `memory.high`, and
+`memory.swap.max` from inside the transient unit and all of its ancestors; the
+leaf limits must exactly match the requested bounds and no ancestor may be
+lower. A canonical host-wide admission lock prevents
 multiple formal jobs from competing for memory while leaving coordinator worker
 processes and leases untouched. A durable per-job queue record survives caller
 death for stale-job recovery; completed, failed, and canceled outcomes retain
 the exact resource bounds and exit classification. `systemd-run` owns the process group (`KillMode=control-group`) on hosts with a user systemd bus. Hosted CI selects an explicit `portable` containment mode: GNU `timeout` and `prlimit` enforce aggregate address-space, process-count, CPU-time, and wall-clock limits; the runner fails closed if either tool is unavailable.
 
+Every verifier invocation creates a private workspace beneath `TLC_WORK_ROOT`
+(or the configured temporary root). TLC receives that path as both its Java
+temporary directory and working directory, so standard modules and state files
+cannot collide with another verifier through shared `/tmp`. The runner rejects
+a metadir outside that workspace, preflights available storage against
+`TLC_STORAGE_RESERVE`, and terminates a run that exceeds `TLC_STORAGE_MAX` with
+a durable `storage-exhausted` outcome rather than misclassifying it as a model
+success.
+
 The runner retains `/tmp/agent-workflow-coordinator-tlc-admission.lock` as the canonical
-publication lock. The verifier uses that shared admission path by default. For an isolated
-clean-destination diagnostic on a host where the shared path is inaccessible, the verifier accepts
-an explicit private queue and lock pair:
+publication lock. Bounded validation uses that shared admission path by default.
+Exploratory stress uses an explicit private queue and lock pair, as can an
+isolated clean-destination diagnostic on a host where the shared path is inaccessible:
 
 ```bash
 formal/handoffctl/verify.sh --tier portable-smoke \
@@ -237,3 +284,53 @@ arguments; there is no verifier environment override. The resulting attestation 
 `diagnostic-private-admission`, sets `canonical_publication_evidence` to false, and states that it
 cannot support publication or release claims. Hosted and checked-in workflows omit these flags and
 therefore retain the canonical shared admission path and fail-closed publication semantics.
+
+## Candidate-bound formal jobs
+
+`tools/formal_job_receipts.py` separates long-running formal execution from
+coordinator authority. A short SQLite transaction records a `started` job bound
+to the exact candidate object ID, tier-contract digest, and resource class.
+Beginning a run writes a fenced execution token and releases the database before
+the executor is called. Completion, failure, cancellation, recovery, and
+supersession are separate atomic transitions. A replacement candidate
+supersedes any active job in that scope, and a late worker cannot write a
+terminal result because it lacks the current revision and execution token.
+
+Only a zero-exit `completed` receipt whose candidate and tier digest exactly
+match the consumer's current inputs is usable as formal evidence. `failed`,
+`cancelled`, `superseded`, incomplete, and mismatched receipts are explicitly
+not evidence. The receipt store is local operational state; it uses no
+coordinator task lease, external authentication, signature, or review gate.
+
+## Exact-head bounded receipts
+
+The main formal workflow runs the fixed `pr-publication` tier rather than
+accepting a workflow input that could select a different profile. After the
+verifier writes its attestation, `tools/formal_receipt.py` checks it against the
+locally checked-out commit, each declared model and configuration digest, and
+the tier's fixed aggregate budget. A stale candidate, timeout, or resource
+exhaustion is rejected with concise remediation guidance. This validation is
+locally reproducible:
+
+```bash
+python3 tools/formal_receipt.py \
+  --receipt /path/to/formal-attestation.json \
+  --candidate "$(git rev-parse HEAD)" \
+  --tier pr-publication
+```
+
+Hosted CI can publish this receipt as advisory operational evidence, but it is
+not an authentication, signature, approval, review, merge, acceptance, or
+release gate.
+
+## Tier-migration qualification
+
+`tests/test_formal_tier_qualification.py` exercises the local end-to-end
+evidence boundary with controlled runner projections: exact candidate identity
+is rendered into a bounded receipt and then validated against the checked-out
+tree. It also verifies typed storage/admission and deadline remediation,
+noncanonical cancellable advisory-stress receipts, and the one-sync legacy
+`HandoffctlPR.cfg` vendor migration. These are deterministic boundary tests;
+the tier runners remain responsible for executing TLC itself. No hosted CI,
+external account, signature, or independent review is needed to reproduce or
+use this qualification evidence.

@@ -435,7 +435,11 @@ class SQLiteStorageTest(unittest.TestCase):
 
     def test_bind_worktree_uses_the_same_live_owner_and_identity_fence(self) -> None:
         active = task("AR-0001", status="in_progress")
-        active[1].update(owner="worker-a", claim_expires="2099-01-01T00:00:00+00:00")
+        active[1].update(
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+            worktree_key="worker-one",
+        )
         conflict = task("AR-0002", status="in_progress")
         conflict[1].update(
             owner="worker-b",
@@ -688,7 +692,9 @@ class SQLiteStorageTest(unittest.TestCase):
 
     def test_explicit_migration_round_trip_preserves_records_and_projections(self) -> None:
         self.configure_core()
-        self.write_git_tasks([task("AR-0001"), task("AR-0002")])
+        concise = task("AR-0001")
+        concise[1]["short_title"] = "Migration title test"
+        self.write_git_tasks([concise, task("AR-0002")])
         CORE.RUNTIME.mkdir(exist_ok=True)
         (CORE.RUNTIME / "command-results.jsonl").write_text(
             json.dumps(
@@ -712,6 +718,7 @@ class SQLiteStorageTest(unittest.TestCase):
             CORE.cmd_migrate(argparse.Namespace(to="sqlite"))
         self.assertEqual("sqlite", CORE.backend_selection()["backend"])
         self.assertEqual(["AR-0001", "AR-0002"], [item[1]["id"] for item in CORE.all_tasks()])
+        self.assertEqual("Migration title test", CORE.all_tasks()[0][1]["short_title"])
         connection = sqlite3.connect(self.database)
         self.assertEqual(
             1, connection.execute("SELECT count(*) FROM command_results").fetchone()[0]
@@ -724,6 +731,7 @@ class SQLiteStorageTest(unittest.TestCase):
             CORE.cmd_migrate(argparse.Namespace(to="git"))
         self.assertEqual("git", CORE.backend_selection()["backend"])
         self.assertEqual(2, len(CORE.git_tasks()))
+        self.assertEqual("Migration title test", CORE.git_tasks()[0][1]["short_title"])
         with self.assertRaisesRegex(RuntimeError, "already uses"):
             CORE.cmd_migrate(argparse.Namespace(to="git"))
 
