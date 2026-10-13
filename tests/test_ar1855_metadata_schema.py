@@ -7,17 +7,18 @@ from __future__ import annotations
 import json
 import unittest
 from pathlib import Path
+from typing import Any
 
 import jsonschema
 
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def _schema() -> dict[str, object]:
+def _schema() -> Any:
     return json.loads((ROOT / "schema/task-schema.json").read_text(encoding="utf-8"))
 
 
-def _task() -> dict[str, object]:
+def _task() -> Any:
     text = (ROOT / "tasks/AR-1850-development-tui-interactive-lifetime.md").read_text(
         encoding="utf-8"
     )
@@ -31,7 +32,6 @@ class Ar1855MetadataSchemaTests(unittest.TestCase):
         self.assertEqual(record["observed_dirty"], 0)
         self.assertIs(type(record["observed_dirty"]), int)
         jsonschema.Draft202012Validator(_schema()).validate(record)
-
 
     def test_boolean_dirty_observation_is_rejected(self) -> None:
         record = _task()
