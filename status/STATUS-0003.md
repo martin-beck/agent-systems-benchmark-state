@@ -1820,7 +1820,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt Coordinator v0.7.4 with partial legacy worktree binding. |
-| Next action | Re-vendor exact signed Coordinator v0.7.4 at 2ea256d0c0bdcb9922c88e6778a104b33c0e47da, rerun focused/full gates, then exact-head review and CI. |
+| Next action | Run full state suite with the bound state .venv (system Python lacks jsonschema), then formal/generated/privacy gates; vendor verify already passes and focused vendor tests are 12 passed. |
 
 ### AR-1842 — Name-first selection and internal identity resolution
 
