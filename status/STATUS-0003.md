@@ -1966,11 +1966,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1852-role-store-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Align role-store authorization tests with Coordinator v0.7.4. |
@@ -3011,7 +3011,7 @@ flowchart LR
         AR_1849["AR-1849 - Open"]:::status_open
         AR_1850["AR-1850 - Done"]:::status_done
         AR_1851["AR-1851 - Open"]:::status_open
-        AR_1852["AR-1852 - In progress"]:::status_in_progress
+        AR_1852["AR-1852 - Open"]:::status_open
         AR_1853["AR-1853 - Open"]:::status_open
         AR_1854["AR-1854 - Planned"]:::status_planned
         AR_1855["AR-1855 - Done"]:::status_done
@@ -5022,3 +5022,4 @@ flowchart LR
     classDef status_planned fill:#6a1b9a,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_future fill:#455a64,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px

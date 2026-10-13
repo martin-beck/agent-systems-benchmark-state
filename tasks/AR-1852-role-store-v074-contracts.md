@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "2026-10-13T19:31:47+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1852",
   "next_action": "Use the correct v078 DCO environment (jsonschema 4.25.1 available) to run the full unittest gate from exact PR worktree 7b46c6b076; separately repair the pre-existing immutable tools/handoffctl.py vendor digest mismatch without altering v0.7.4 vendor content, then obtain independent exact-head review/CI and update PR #148 only when green.",
-  "owner": "ar1852-role-store-luna",
+  "owner": "",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T19:03:30+00:00",
+  "updated_at": "2026-10-13T19:03:35+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -232,3 +232,8 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   has no pytest; argv SHA cc2b5ea6... was unittest discover with absolute start/top and failed
   because the tests start directory was not importable. Neither indicates missing jsonschema. No
   product/Git/PR mutation performed.
+
+- 2026-10-13T19:03:35+00:00: Released ownerless/open after read-only requalification. Correct v078
+  venv has jsonschema 4.25.1; exact PR worktree collection is 2131 tests with zero failed import
+  suites. Vendor verification remains independently blocked by tools/handoffctl.py immutable digest
+  mismatch. No lease remains.

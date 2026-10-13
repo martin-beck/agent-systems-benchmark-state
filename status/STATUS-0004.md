@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-    classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
 ```
 
@@ -508,3 +507,4 @@
 | [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md) | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md) | None |
 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md) | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md), [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md) | None |
 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md) | None | None |
+| [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md) | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md), [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md) | [AR-1481](../tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md), [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md), [AR-1483](../tasks/AR-1483-authenticated-control-process-owner.md), [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md), [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md), [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md), [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md), [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md), [AR-1504](../tasks/AR-1504-runtime-platform-launcher-seam.md), [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md), [AR-1506](../tasks/AR-1506-runtime-platform-launcher-integration.md), [AR-1507](../tasks/AR-1507-runtime-owned-authority-materialization.md), [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md), [AR-1509](../tasks/AR-1509-authenticated-authority-provider-receipt.md) |
