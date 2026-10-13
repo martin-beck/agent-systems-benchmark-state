@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T20:03:14+00:00",
   "depends_on": [],
   "id": "AR-1852",
-  "next_action": "Use the correct v078 DCO environment (jsonschema 4.25.1 available) to run the full unittest gate from exact PR worktree 7b46c6b076; separately repair the pre-existing immutable tools/handoffctl.py vendor digest mismatch without altering v0.7.4 vendor content, then obtain independent exact-head review/CI and update PR #148 only when green.",
+  "next_action": "Obtain proper Coordinator/vendor adoption or rebase that restores the locked coordinator.vendor.json digest for tools/handoffctl.py (expected 64d86a03bf85dfb6f411b313af17f5575054ff7e790523b8c460b1d955ed440f; actual db84cc13cbc76abde5ea32d85898a33e90d64a133a0bf76f49e91b7ca33b6c85), without editing the vendor snapshot or weakening authorization; then rerun bounded full gates, independent review, and exact-head CI for 7b46c6b076 before any PR #148 update.",
   "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
@@ -57,9 +57,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T19:23:22+00:00",
+  "updated_at": "2026-10-13T19:23:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -314,3 +314,11 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T19:23:22+00:00: Recorded command exit 0; command argv SHA-256
   1428f56d9516b0deb47f2392027de82ee2633f787cce2c25a8aed29dc3ffe81e.
+
+- 2026-10-13T19:23:36+00:00: Bounded requalification on exact PR worktree 7b46c6b076: focused
+  tests/test_roles.py ran 10/10 OK in the v078 DCO venv. Full unittest discovery was attempted with
+  a 180-second handoffctl deadline and timed out (SUBPROCESS_TIMEOUT; no completion claim). Vendor
+  verification separately fails only at tools/handoffctl.py digest mismatch; manifest expected
+  64d86a03... and observed sha256sum db84cc13... . This mismatch indicates coordinator
+  adoption/rebase/integrity reconciliation is required, not a vendor edit; no product/Git/PR
+  mutation performed. Generated pycache over guard was removed via handoffctl run.

@@ -1974,7 +1974,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align role-store authorization tests with Coordinator v0.7.4. |
-| Next action | Use the correct v078 DCO environment (jsonschema 4.25.1 available) to run the full unittest gate from exact PR worktree 7b46c6b076; separately repair the pre-existing immutable tools/handoffctl.py vendor digest mismatch without altering v0.7.4 vendor content, then obtain independent exact-head review/CI and update PR #148 only when green. |
+| Next action | Obtain proper Coordinator/vendor adoption or rebase that restores the locked coordinator.vendor.json digest for tools/handoffctl.py (expected 64d86a03bf85dfb6f411b313af17f5575054ff7e790523b8c460b1d955ed440f; actual db84cc13cbc76abde5ea32d85898a33e90d64a133a0bf76f49e91b7ca33b6c85), without editing the vendor snapshot or weakening authorization; then rerun bounded full gates, independent review, and exact-head CI for 7b46c6b076 before any PR #148 update. |
 
 ### AR-1853 — Complexity v0.7.4 compatibility contract
 
@@ -5026,7 +5026,3 @@ flowchart LR
     classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
 ```
 
-### Accessible dependency index
-
-| AR | Prerequisites | Dependents |
-| --- | --- | --- |
