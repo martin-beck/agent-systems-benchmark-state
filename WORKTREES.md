@@ -292,3 +292,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1839` | `codex/ar-1839-cross-process-fixture` | `46ac642c40ce` | 0 | behind 3, ahead 1 |
 | `ar1826-review.IL8AVJ` | `DETACHED` | `ecf3ed20fa15` | 0 | behind 3, ahead 3 |
 | `asb-pr307-review-d0e6a28a` | `DETACHED` | `d0e6a28a81b4` | 0 | behind 0, ahead 0 |
+| `asb-pr631-review.KGzTlR` | `DETACHED` | `671f898b6a85` | 0 | behind 0, ahead 1 |
