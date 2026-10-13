@@ -38,6 +38,8 @@ env:
   TLC_RUNTIME_ROOT: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}
   TLC_WORK_ROOT: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}
   TLC_ATTESTATION_PATH: /srv/data/projects/.asb-tlc/attestations/ci-${{ github.run_id }}.json
+  TLC_ADMISSION_QUEUE: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}/queue
+  TLC_ADMISSION_LOCK: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}/admission.lock
   # Match the approved pr-publication resource profile consumed by attest.py.
   TLC_MEMORY_MAX: 3G
   TLC_SWAP_MAX: 3G
@@ -83,9 +85,6 @@ jobs:
           install -d -m 700 "$(dirname -- "$TLC_ATTESTATION_PATH")"
 
       - name: Check exhaustive concurrent-state model
-        env:
-          TLC_ADMISSION_QUEUE: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}/queue
-          TLC_ADMISSION_LOCK: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}/admission.lock
         run: formal/handoffctl/verify.sh --tier pr-publication
 
       - name: Check implementation refinement and fault behavior

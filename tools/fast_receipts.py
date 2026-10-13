@@ -37,6 +37,11 @@ _PHASE_REMOTE = "published-remote"
 _PHASE_REJECTED = "rejected"
 _PHASE_AMBIGUOUS = "ambiguous"
 _COMMIT = re.compile(r"[0-9a-f]{40}\Z")
+_PUBLICATION_QUEUED = "queued"
+_PUBLICATION_PUBLISHING = "publishing"
+_PUBLICATION_PUBLISHED = "published"
+_PUBLICATION_REJECTED = "rejected"
+_PUBLICATION_AMBIGUOUS = "ambiguous"
 
 
 class ReceiptConflictError(RuntimeError):
@@ -217,7 +222,7 @@ class ReceiptStore:
             if "locked" not in str(error).lower():
                 raise
             return False
-        if mode != "wal" or version != 3:
+        if mode != "wal" or version != 5:
             return False
         binding = self.connection.execute(
             "SELECT project_id FROM receipt_binding WHERE singleton=1"
@@ -226,13 +231,79 @@ class ReceiptStore:
             raise RuntimeError("receipt database has no project binding")
         if binding["project_id"] != self.project_id:
             raise RuntimeError("receipt database is bound to a different project")
-        return True
+        required = {
+            "intents": {
+                "receipt_id",
+                "project_id",
+                "idempotency_key",
+                "operation",
+                "task_id",
+                "expected_revision",
+                "payload_json",
+                "input_digest",
+                "phase",
+                "started_at",
+                "commit_oid",
+                "result_revision",
+                "error_code",
+                "remote_oid",
+                "remote_observed_at",
+                "publication_error",
+                "created_at",
+            },
+            "publication_jobs": {
+                "job_id",
+                "project_id",
+                "idempotency_key",
+                "candidate_oid",
+                "expected_remote_oid",
+                "phase",
+                "publisher_lease",
+                "publisher_lease_expires",
+                "observed_remote_oid",
+                "error_code",
+                "created_at",
+                "updated_at",
+            },
+            "publication_request_keys": {
+                "project_id",
+                "idempotency_key",
+                "job_id",
+                "candidate_oid",
+                "expected_remote_oid",
+            },
+        }
+        for table, columns in required.items():
+            found = {
+                str(row[1])
+                for row in self.connection.execute(f"PRAGMA table_info({table})").fetchall()
+            }
+            if not columns <= found:
+                return False
+        jobs_unique = self._has_unique_index("publication_jobs", ("project_id", "candidate_oid"))
+        keys_unique = self._has_unique_index(
+            "publication_request_keys", ("project_id", "idempotency_key")
+        )
+        return jobs_unique and keys_unique
+
+    def _has_unique_index(self, table: str, columns: tuple[str, ...]) -> bool:
+        for row in self.connection.execute(f"PRAGMA index_list({table})").fetchall():
+            if not row[2]:
+                continue
+            name = str(row[1])
+            indexed = tuple(
+                str(item[2])
+                for item in self.connection.execute(f"PRAGMA index_info({name})").fetchall()
+            )
+            if indexed == columns:
+                return True
+        return False
 
     def _initialize(self) -> None:
         try:
             self.connection.execute("BEGIN IMMEDIATE")
             version = self.connection.execute("PRAGMA user_version").fetchone()[0]
-            if version not in (0, 3):
+            if version not in (0, 3, 4, 5):
                 raise RuntimeError("unsupported receipt database schema")
             self.connection.execute(
                 """CREATE TABLE IF NOT EXISTS receipt_binding (
@@ -275,7 +346,46 @@ class ReceiptStore:
                     UNIQUE(project_id, idempotency_key)
                 )"""
             )
-            self.connection.execute("PRAGMA user_version=3")
+            self.connection.execute(
+                """CREATE TABLE IF NOT EXISTS publication_jobs (
+                    job_id TEXT PRIMARY KEY,
+                    project_id TEXT NOT NULL,
+                    idempotency_key TEXT NOT NULL,
+                    candidate_oid TEXT NOT NULL,
+                    expected_remote_oid TEXT NOT NULL,
+                    phase TEXT NOT NULL CHECK (
+                        phase IN ('queued', 'publishing', 'published', 'rejected', 'ambiguous')
+                    ),
+                    publisher_lease TEXT,
+                    publisher_lease_expires TEXT,
+                    observed_remote_oid TEXT,
+                    error_code TEXT,
+                    created_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')),
+                    updated_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')),
+                    UNIQUE(project_id, idempotency_key),
+                    UNIQUE(project_id, candidate_oid)
+                )"""
+            )
+            self.connection.execute(
+                """CREATE TABLE IF NOT EXISTS publication_request_keys (
+                    project_id TEXT NOT NULL,
+                    idempotency_key TEXT NOT NULL,
+                    job_id TEXT NOT NULL,
+                    candidate_oid TEXT NOT NULL,
+                    expected_remote_oid TEXT NOT NULL,
+                    PRIMARY KEY (project_id, idempotency_key),
+                    FOREIGN KEY (job_id) REFERENCES publication_jobs(job_id)
+                )"""
+            )
+            self.connection.execute("PRAGMA user_version=5")
+            if not self._schema_ready():
+                raise RuntimeError("receipt database schema is incomplete")
+            self.connection.execute(
+                """INSERT OR IGNORE INTO publication_request_keys
+                (project_id, idempotency_key, job_id, candidate_oid, expected_remote_oid)
+                SELECT project_id, idempotency_key, job_id, candidate_oid, expected_remote_oid
+                FROM publication_jobs"""
+            )
             self._assert_path()
             self.connection.execute("COMMIT")
         except BaseException:
@@ -658,3 +768,336 @@ class ReceiptStore:
             if row is None or row["phase"] != _PHASE_LOCAL:
                 raise RuntimeError("receipt is not locally completed")
             return dict(row)
+
+    def admit_publication(
+        self, *, key: str, candidate_oid: str, expected_remote_oid: str
+    ) -> dict[str, Any]:
+        """Durably admit one protected-main candidate before any remote I/O.
+
+        Candidate identity is global per bound project.  A retry under the
+        same key must retain its exact descriptor; a second key may discover
+        the existing identical candidate but can never create a second job.
+        A changed remote base is intentionally a different descriptor and
+        requires a newly rebuilt candidate rather than an unsafe replay.
+        """
+        if (
+            not _TOKEN.fullmatch(key)
+            or not _COMMIT.fullmatch(candidate_oid)
+            or not _COMMIT.fullmatch(expected_remote_oid)
+            or candidate_oid == expected_remote_oid
+        ):
+            raise ValueError("invalid publication admission")
+        with self._transaction():
+            by_key = self.connection.execute(
+                """SELECT publication_jobs.* FROM publication_request_keys
+                JOIN publication_jobs ON publication_jobs.job_id=publication_request_keys.job_id
+                WHERE publication_request_keys.project_id=?
+                AND publication_request_keys.idempotency_key=?""",
+                (self.project_id, key),
+            ).fetchone()
+            if by_key is not None:
+                if (
+                    by_key["candidate_oid"] != candidate_oid
+                    or by_key["expected_remote_oid"] != expected_remote_oid
+                ):
+                    raise ReceiptConflictError("publication key already binds different input")
+                return dict(by_key)
+            by_candidate = self.connection.execute(
+                """SELECT * FROM publication_jobs
+                WHERE project_id=? AND candidate_oid=?""",
+                (self.project_id, candidate_oid),
+            ).fetchone()
+            if by_candidate is not None:
+                if by_candidate["expected_remote_oid"] != expected_remote_oid:
+                    raise ReceiptConflictError("candidate already binds another remote base")
+                self.connection.execute(
+                    """INSERT INTO publication_request_keys
+                    (project_id, idempotency_key, job_id, candidate_oid, expected_remote_oid)
+                    VALUES (?, ?, ?, ?, ?)""",
+                    (
+                        self.project_id,
+                        key,
+                        by_candidate["job_id"],
+                        candidate_oid,
+                        expected_remote_oid,
+                    ),
+                )
+                return dict(by_candidate)
+            job_id = uuid.uuid4().hex
+            self.connection.execute(
+                """INSERT INTO publication_jobs
+                (job_id, project_id, idempotency_key, candidate_oid, expected_remote_oid, phase)
+                VALUES (?, ?, ?, ?, ?, ?)""",
+                (
+                    job_id,
+                    self.project_id,
+                    key,
+                    candidate_oid,
+                    expected_remote_oid,
+                    _PUBLICATION_QUEUED,
+                ),
+            )
+            self.connection.execute(
+                """INSERT INTO publication_request_keys
+                (project_id, idempotency_key, job_id, candidate_oid, expected_remote_oid)
+                VALUES (?, ?, ?, ?, ?)""",
+                (self.project_id, key, job_id, candidate_oid, expected_remote_oid),
+            )
+            row = self.connection.execute(
+                "SELECT * FROM publication_jobs WHERE project_id=? AND job_id=?",
+                (self.project_id, job_id),
+            ).fetchone()
+            if row is None:
+                raise RuntimeError("publication admission was not visible")
+            return dict(row)
+
+    def read_publication(self, job_id: str) -> dict[str, Any] | None:
+        if not re.fullmatch(r"[0-9a-f]{32}", job_id):
+            raise ValueError("invalid publication job id")
+        self._assert_path()
+        row = self.connection.execute(
+            "SELECT * FROM publication_jobs WHERE project_id=? AND job_id=?",
+            (self.project_id, job_id),
+        ).fetchone()
+        self._assert_path()
+        return None if row is None else dict(row)
+
+    def publication_for_candidate(self, candidate_oid: str) -> dict[str, Any] | None:
+        if not _COMMIT.fullmatch(candidate_oid):
+            raise ValueError("invalid publication candidate")
+        self._assert_path()
+        row = self.connection.execute(
+            """SELECT * FROM publication_jobs
+            WHERE project_id=? AND candidate_oid=?""",
+            (self.project_id, candidate_oid),
+        ).fetchone()
+        self._assert_path()
+        return None if row is None else dict(row)
+
+    def recoverable_publications(self) -> list[dict[str, Any]]:
+        """Return nonterminal jobs for a fresh remote observation and head decision."""
+        self._assert_path()
+        rows = self.connection.execute(
+            """SELECT * FROM publication_jobs WHERE project_id=?
+            AND (phase=? OR phase=? OR (phase=? AND publisher_lease_expires <
+                 strftime('%Y-%m-%dT%H:%M:%fZ','now')))
+            ORDER BY created_at, job_id""",
+            (
+                self.project_id,
+                _PUBLICATION_QUEUED,
+                _PUBLICATION_AMBIGUOUS,
+                _PUBLICATION_PUBLISHING,
+            ),
+        ).fetchall()
+        self._assert_path()
+        return [dict(row) for row in rows]
+
+    def resolve_superseded_publication(
+        self, job_id: str, *, observed_remote_oid: str
+    ) -> dict[str, Any]:
+        """Terminally resolve a queued candidate that is no longer local main."""
+        if not re.fullmatch(r"[0-9a-f]{32}", job_id) or not _COMMIT.fullmatch(observed_remote_oid):
+            raise ValueError("invalid superseded publication resolution")
+        with self._transaction():
+            row = self.connection.execute(
+                "SELECT * FROM publication_jobs WHERE project_id=? AND job_id=?",
+                (self.project_id, job_id),
+            ).fetchone()
+            if row is None:
+                raise RuntimeError("unknown publication job")
+            if row["phase"] != _PUBLICATION_QUEUED:
+                raise RuntimeError("publication job is not queued")
+            if observed_remote_oid == row["candidate_oid"]:
+                phase, error = _PUBLICATION_PUBLISHED, None
+            elif observed_remote_oid == row["expected_remote_oid"]:
+                phase, error = _PUBLICATION_REJECTED, "LOCAL_HEAD_SUPERSEDED"
+            else:
+                phase, error = _PUBLICATION_REJECTED, "REMOTE_BASE_CHANGED"
+            updated = self.connection.execute(
+                """UPDATE publication_jobs SET phase=?, observed_remote_oid=?, error_code=?,
+                updated_at=strftime('%Y-%m-%dT%H:%M:%fZ','now')
+                WHERE project_id=? AND job_id=? AND phase=?""",
+                (phase, observed_remote_oid, error, self.project_id, job_id, _PUBLICATION_QUEUED),
+            )
+            if updated.rowcount != 1:
+                raise RuntimeError("publication job changed while resolving")
+            resolved = self.connection.execute(
+                "SELECT * FROM publication_jobs WHERE project_id=? AND job_id=?",
+                (self.project_id, job_id),
+            ).fetchone()
+            if resolved is None or resolved["phase"] != phase:
+                raise RuntimeError("publication resolution was not visible")
+            return dict(resolved)
+
+    def claim_publication(self, job_id: str, *, lease: str) -> dict[str, Any] | None:
+        """Lease one queued job; a caller owns at most its returned lease token."""
+        if not re.fullmatch(r"[0-9a-f]{32}", job_id) or not re.fullmatch(r"[0-9a-f]{32}", lease):
+            raise ValueError("invalid publication claim")
+        with self._transaction():
+            row = self.connection.execute(
+                "SELECT * FROM publication_jobs WHERE project_id=? AND job_id=?",
+                (self.project_id, job_id),
+            ).fetchone()
+            if row is None:
+                return None
+            if row["phase"] != _PUBLICATION_QUEUED:
+                return None
+            self.connection.execute(
+                """UPDATE publication_jobs SET phase=?, publisher_lease=?,
+                publisher_lease_expires=strftime('%Y-%m-%dT%H:%M:%fZ','now','+60 seconds'),
+                error_code=NULL, updated_at=strftime('%Y-%m-%dT%H:%M:%fZ','now')
+                WHERE project_id=? AND job_id=? AND phase=?""",
+                (_PUBLICATION_PUBLISHING, lease, self.project_id, job_id, _PUBLICATION_QUEUED),
+            )
+            claimed = self.connection.execute(
+                "SELECT * FROM publication_jobs WHERE project_id=? AND job_id=?",
+                (self.project_id, job_id),
+            ).fetchone()
+            if claimed is None or claimed["phase"] != _PUBLICATION_PUBLISHING:
+                raise RuntimeError("publication claim was not visible")
+            return dict(claimed)
+
+    def finish_publication(
+        self,
+        job_id: str,
+        *,
+        lease: str,
+        phase: str,
+        observed_remote_oid: str | None = None,
+        error_code: str | None = None,
+    ) -> dict[str, Any]:
+        """Record a verified terminal remote outcome for the owning publisher."""
+        if (
+            not re.fullmatch(r"[0-9a-f]{32}", job_id)
+            or not re.fullmatch(r"[0-9a-f]{32}", lease)
+            or phase not in {_PUBLICATION_PUBLISHED, _PUBLICATION_REJECTED, _PUBLICATION_AMBIGUOUS}
+            or (observed_remote_oid is not None and not _COMMIT.fullmatch(observed_remote_oid))
+            or (error_code is not None and not _TOKEN.fullmatch(error_code))
+            or (phase == _PUBLICATION_PUBLISHED and observed_remote_oid is None)
+            or (phase == _PUBLICATION_AMBIGUOUS and observed_remote_oid is not None)
+            or (phase != _PUBLICATION_PUBLISHED and error_code is None)
+        ):
+            raise ValueError("invalid publication outcome")
+        with self._transaction():
+            row = self.connection.execute(
+                "SELECT * FROM publication_jobs WHERE project_id=? AND job_id=?",
+                (self.project_id, job_id),
+            ).fetchone()
+            if row is None:
+                raise RuntimeError("unknown publication job")
+            if row["phase"] == phase:
+                if (
+                    row["publisher_lease"] != lease
+                    or row["observed_remote_oid"] != observed_remote_oid
+                    or row["error_code"] != error_code
+                ):
+                    raise ReceiptConflictError("publication outcome differs")
+                return dict(row)
+            if row["phase"] != _PUBLICATION_PUBLISHING or row["publisher_lease"] != lease:
+                raise RuntimeError("publication job is not owned by this publisher")
+            if phase == _PUBLICATION_PUBLISHED and observed_remote_oid != row["candidate_oid"]:
+                raise ValueError("published observation must equal candidate")
+            self._finish_owned_publication(job_id, lease, phase, observed_remote_oid, error_code)
+            finished = self.connection.execute(
+                "SELECT * FROM publication_jobs WHERE project_id=? AND job_id=?",
+                (self.project_id, job_id),
+            ).fetchone()
+            if finished is None or finished["phase"] != phase:
+                raise RuntimeError("publication outcome was not visible")
+            return dict(finished)
+
+    def _finish_owned_publication(
+        self,
+        job_id: str,
+        lease: str,
+        phase: str,
+        observed_remote_oid: str | None,
+        error_code: str | None,
+    ) -> None:
+        """Atomically fence a terminal write against expiry of its publisher lease."""
+        updated = self.connection.execute(
+            """UPDATE publication_jobs SET phase=?, observed_remote_oid=?, error_code=?,
+            publisher_lease_expires=NULL, updated_at=strftime('%Y-%m-%dT%H:%M:%fZ','now')
+            WHERE project_id=? AND job_id=? AND phase=? AND publisher_lease=?
+            AND publisher_lease_expires >= strftime('%Y-%m-%dT%H:%M:%fZ','now')""",
+            (
+                phase,
+                observed_remote_oid,
+                error_code,
+                self.project_id,
+                job_id,
+                _PUBLICATION_PUBLISHING,
+                lease,
+            ),
+        )
+        if updated.rowcount == 1:
+            return
+        current = self.connection.execute(
+            "SELECT * FROM publication_jobs WHERE project_id=? AND job_id=?",
+            (self.project_id, job_id),
+        ).fetchone()
+        if (
+            current is not None
+            and current["phase"] == _PUBLICATION_PUBLISHING
+            and current["publisher_lease"] == lease
+        ):
+            raise RuntimeError("publication lease has expired")
+        raise RuntimeError("publication job changed while finishing")
+
+    def recover_publication(self, job_id: str, *, observed_remote_oid: str) -> dict[str, Any]:
+        """Resolve an expired or ambiguous publish only from a fresh ref observation.
+
+        A recovered job returns to the queue only when the observed ref is the
+        exact immutable base.  A candidate observation is durable success;
+        every other observed head is a truthful rejection.  This deliberately
+        forbids blind timeout retries.
+        """
+        if not re.fullmatch(r"[0-9a-f]{32}", job_id) or not _COMMIT.fullmatch(observed_remote_oid):
+            raise ValueError("invalid publication recovery")
+        with self._transaction():
+            row = self.connection.execute(
+                "SELECT * FROM publication_jobs WHERE project_id=? AND job_id=?",
+                (self.project_id, job_id),
+            ).fetchone()
+            if row is None:
+                raise RuntimeError("unknown publication job")
+            if row["phase"] not in {_PUBLICATION_PUBLISHING, _PUBLICATION_AMBIGUOUS}:
+                raise RuntimeError("publication job is not recoverable")
+            if observed_remote_oid == row["candidate_oid"]:
+                phase, error = _PUBLICATION_PUBLISHED, None
+            elif observed_remote_oid == row["expected_remote_oid"]:
+                phase, error = _PUBLICATION_QUEUED, None
+            else:
+                phase, error = _PUBLICATION_REJECTED, "REMOTE_BASE_CHANGED"
+            updated = self.connection.execute(
+                """UPDATE publication_jobs SET phase=?, publisher_lease=NULL,
+                publisher_lease_expires=NULL, observed_remote_oid=?, error_code=?,
+                updated_at=strftime('%Y-%m-%dT%H:%M:%fZ','now')
+                WHERE project_id=? AND job_id=? AND
+                (phase=? OR (phase=? AND publisher_lease_expires <
+                 strftime('%Y-%m-%dT%H:%M:%fZ','now')))""",
+                (
+                    phase,
+                    observed_remote_oid,
+                    error,
+                    self.project_id,
+                    job_id,
+                    _PUBLICATION_AMBIGUOUS,
+                    _PUBLICATION_PUBLISHING,
+                ),
+            )
+            if updated.rowcount != 1:
+                current = self.connection.execute(
+                    "SELECT phase FROM publication_jobs WHERE project_id=? AND job_id=?",
+                    (self.project_id, job_id),
+                ).fetchone()
+                if current is not None and current["phase"] == _PUBLICATION_PUBLISHING:
+                    raise RuntimeError("publication lease is still active")
+                raise RuntimeError("publication job changed while recovering")
+            recovered = self.connection.execute(
+                "SELECT * FROM publication_jobs WHERE project_id=? AND job_id=?",
+                (self.project_id, job_id),
+            ).fetchone()
+            if recovered is None or recovered["phase"] != phase:
+                raise RuntimeError("publication recovery was not visible")
+            return dict(recovered)

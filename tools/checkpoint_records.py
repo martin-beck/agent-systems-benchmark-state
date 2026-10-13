@@ -44,6 +44,9 @@ def _artifact_refs(meta: Meta) -> list[str]:
     spec = meta.get("spec_ref")
     if isinstance(spec, str) and spec:
         refs.append(f"spec:{spec}")
+    envelope = meta.get("execution_envelope_ref")
+    if isinstance(envelope, str) and envelope:
+        refs.append(f"envelope:{envelope}")
     acceptance = meta.get("spec_acceptance")
     if isinstance(acceptance, dict):
         evidence = acceptance.get("evidence_ref")

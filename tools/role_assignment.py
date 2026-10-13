@@ -94,11 +94,7 @@ def _schema_errors(value: dict[str, Any]) -> list[str]:
 
 
 def _semantic_errors(
-    value: dict[str, Any],
-    registry: dict[str, Any],
-    now: dt.datetime | None,
-    *,
-    check_expiry: bool = True,
+    value: dict[str, Any], registry: dict[str, Any], now: dt.datetime | None
 ) -> list[str]:
     roles = registry.get("roles")
     if not isinstance(roles, list):
@@ -112,17 +108,16 @@ def _semantic_errors(
     unknown = sorted(set(role_ids) - known_roles)
     if unknown:
         errors.append(f"semantic: unknown role: {unknown}")
-    if check_expiry:
-        current = now or dt.datetime.now(dt.UTC)
-        if current.tzinfo is None:
-            errors.append("semantic: validation time must be timezone-aware")
-        else:
-            for item in assignments:
-                expires = dt.datetime.fromisoformat(
-                    item["expires_at"].replace("Z", "+00:00").replace("z", "+00:00")
-                )
-                if expires <= current:
-                    errors.append(f"semantic: expired role assignment: {item['role_id']}")
+    current = now or dt.datetime.now(dt.UTC)
+    if current.tzinfo is None:
+        errors.append("semantic: validation time must be timezone-aware")
+    else:
+        for item in assignments:
+            expires = dt.datetime.fromisoformat(
+                item["expires_at"].replace("Z", "+00:00").replace("z", "+00:00")
+            )
+            if expires <= current:
+                errors.append(f"semantic: expired role assignment: {item['role_id']}")
     return errors
 
 
@@ -131,7 +126,6 @@ def assignment_errors(
     registry: object,
     *,
     now: dt.datetime | None = None,
-    check_expiry: bool = True,
 ) -> list[str]:
     """Return schema, registry-reference, expiry, and evidence errors."""
     if not isinstance(value, dict):
@@ -141,7 +135,7 @@ def assignment_errors(
         return [f"schema: {error}" for error in errors]
     if not isinstance(registry, dict):
         return ["registry: role registry must be an object"]
-    return errors + _semantic_errors(value, registry, now, check_expiry=check_expiry)
+    return errors + _semantic_errors(value, registry, now)
 
 
 def validate_assignment(
@@ -149,10 +143,9 @@ def validate_assignment(
     registry: object,
     *,
     now: dt.datetime | None = None,
-    check_expiry: bool = True,
 ) -> dict[str, Any]:
     """Validate and return a detached assignment, or fail closed."""
-    errors = assignment_errors(value, registry, now=now, check_expiry=check_expiry)
+    errors = assignment_errors(value, registry, now=now)
     if errors:
         raise RoleAssignmentError("; ".join(errors))
     if not isinstance(value, dict):
