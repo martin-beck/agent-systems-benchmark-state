@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T15:19:53+00:00",
   "depends_on": [],
   "id": "AR-1852",
-  "next_action": "Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then reproduce and repair only non-vendor role-store compatibility tests.",
+  "next_action": "Independent review and exact-head CI for signed product commit a7ea458375; focused role suites pass 20/20. Full discovery is non-green only in unrelated pre-existing formal/dependency/projection fixtures.",
   "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:20:08+00:00",
+  "updated_at": "2026-10-13T13:27:37+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -55,3 +55,9 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 - 2026-10-13T13:19:53+00:00: Heartbeat by ar1852-role-store-luna.
 
 - 2026-10-13T13:20:08+00:00: Checkpointed source commit 0bba7e8416cb8202df32050dc983d57cb01ecabd.
+
+- 2026-10-13T13:27:37+00:00: Implemented only non-vendor role compatibility assertions against
+  immutable Coordinator v0.7.4: expired cleanup remains fail-closed and legacy handoffctl role hook
+  is advisory; direct role-store admission negatives remain strict. Signed DCO product commit
+  a7ea458375. Focused role/assignment suites pass 20/20; full 1797-test discovery was non-green with
+  unrelated existing failures and missing jsonschema.

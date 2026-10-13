@@ -1974,7 +1974,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align role-store authorization tests with Coordinator v0.7.4. |
-| Next action | Bind to the exact v0.7.4 candidate worktree at ASB commit 180c96b25d, then reproduce and repair only non-vendor role-store compatibility tests. |
+| Next action | Independent review and exact-head CI for signed product commit a7ea458375; focused role suites pass 20/20. Full discovery is non-green only in unrelated pre-existing formal/dependency/projection fixtures. |
 
 ### AR-1853 — Complexity v0.7.4 compatibility contract
 
