@@ -73,6 +73,22 @@ Existing initialized projects without `coordinator.backend.json` remain Git-back
 Never manufacture that file to migrate; use `handoffctl migrate --to sqlite`, verify the database
 and projections, and retain the Git files for the documented `migrate --to git` rollback.
 
+## Concise task titles
+
+Task records may carry an optional `short_title`: one to four human-readable words used beside
+the task ID in operator-facing views. `title` remains the full durable description. During the
+v0.5 compatibility window, records without `short_title` render their full title after the ID and
+remain valid; the coordinator never derives or writes a short title while reading a record.
+
+Migrate a Git-backed project in one reviewable state change: add a valid `short_title` to each
+task front matter, regenerate `CURRENT.md` and `STATUS.md` with `render-status`, then require
+`render-status --check` and `doctor` in the state PR. For SQLite authority, use the supported
+`migrate --to git` export, apply and review that same mapping in Git, then `migrate --to sqlite`;
+the migration equivalence check must preserve the distinct field. Before the next schema-major
+release, the project must explicitly either complete that mapping or retain the v0.5 compatibility
+policy; a future required-field change must reject missing titles during validation rather than
+silently inventing them.
+
 Omit `--status-view` if the project has no `STATUS.md`. Omit `--commit-signoff` if DCO trailers
 are not project policy. Commit both binding files with the vendor snapshot. There is deliberately
 no rebind command: create a fresh state repository and initialize it separately.
@@ -83,24 +99,30 @@ tracked binding.
 
 ## Normal user and agent loop
 
-Development merge review identity is defined in
-[`DEVELOPMENT_REVIEW_POLICY.md`](DEVELOPMENT_REVIEW_POLICY.md). The required
-technical review remains independent, while a same-account GitHub approval is
-acceptable for development-only integration. Verified releases retain their
-separate release and provenance gates.
+Local reproducible functional and privacy evidence is sufficient for normal
+development integration and release. External signatures, authentication,
+GitHub approval, and independent review may supplement that evidence but are
+not lifecycle, merge, or release prerequisites; see
+[`DEVELOPMENT_REVIEW_POLICY.md`](DEVELOPMENT_REVIEW_POLICY.md).
 
 1. Read the project's development policy, complete snapshot, selected task and plan.
 2. Claim one dependency-ready open task with a stable unique owner.
 3. Run every state-changing product, Git, review or publication command through `run`.
 4. Record each material result immediately; heartbeat before lease expiry.
 5. After interruption, inspect revisions, commits, refs, processes and CI before retrying.
-6. For `done`, record reviewed task-spec acceptance at the exact current revision.
+6. For `done`, record locally verifiable task-spec acceptance at the exact
+   current revision; supplementary review is optional.
 7. Release to `done`, `open`, or `blocked`; reconcile and run the live doctor.
 
 ```sh
 tools/handoffctl snapshot
 tools/handoffctl claim AR-0001 --owner worker-unique --lease-minutes 120
-tools/handoffctl run --owner worker-unique AR-0001 -- command arg
+tools/handoffctl bind-envelope AR-0001 --owner worker-unique --expected-revision 2 \
+  --envelope-ref envelopes/AR-0001-e1.json --envelope-revision 1
+tools/handoffctl preflight AR-0001 --owner worker-unique --command-class source-write \
+  --scope-path tools --json
+tools/handoffctl run --owner worker-unique --command-class source-write --scope-path tools \
+  AR-0001 -- command arg
 tools/handoffctl update AR-0001 --owner worker-unique --expected-revision 2 \
   --note "Verified result and exact next action"
 tools/handoffctl accept AR-0001 --owner worker-unique --expected-revision 3 \
@@ -113,16 +135,50 @@ tools/handoffctl reconcile --commit --push
 tools/handoffctl doctor --live
 ```
 
-Expired-claim recovery is fail-closed: workers must leave exactly one validated session snapshot
-at the current task revision. A claim-time PID/start-time may be retained as diagnostic evidence,
-but process absence never authorizes snapshotless recovery or reconstructs the former worker's
-last action. If the current snapshot is missing or ambiguous, preserve the claim and create a
-durable checkpoint before retrying recovery.
+Workers that need snapshotless expired-claim recovery pass their live Linux PID and start-time
+with `claim --worker-pid PID --worker-start-time START_TIME`. Coordinator verifies that exact
+identity at claim time and later recovers only after it is absent.
 
 `accept` records the active owner's acceptance assertion for the task's referenced
 spec and validates the metadata. It does not independently inspect or prove the
 evidence contents; project review and evidence-class obligations still apply.
 The `done` release gate remains fail closed when acceptance is missing or invalid.
+
+## Change-drift guard
+
+Use `change-drift baseline` before source work, then `change-drift delta` before completion.
+The baseline and delta preserve Git rename pairs and generated-file markers without touching the
+worktree. Every changed path remains material until it is explicitly explained; generated output is
+not silently exempt. `explain` and `rescope` require the active owner and exact task revision, so a
+concurrent lifecycle change cannot be overwritten.
+
+```sh
+tools/handoffctl change-drift baseline AR-0001 --owner worker-unique --expected-revision 2 \
+  --scope-path tools --scope-path tests
+tools/handoffctl change-drift delta AR-0001 --owner worker-unique --expected-revision 3
+tools/handoffctl change-drift explain AR-0001 --owner worker-unique --expected-revision 4 \
+  --path build/output.generated --generated --reason "Documented local build output"
+tools/handoffctl change-drift rescope AR-0001 --owner worker-unique --expected-revision 5 \
+  --scope-path tools --scope-path tests --scope-path docs
+```
+
+Both the Git task record and the SQLite task row carry the same bounded canonical history. A task
+cannot transition to `done` while its latest delta has material paths without matching explanations.
+
+An execution envelope is an optional, immutable, revision-bound task contract. Once bound, every
+`run` must declare an allowed command class and, for mutations, at least one allowed scope path.
+`preflight` gives a machine-readable explanation without changing state. The bound envelope is the
+durable authority and its write paths are enforced by a Bubblewrap sandbox; `--scope-path` remains
+an auditable admission declaration and cannot expand that envelope-wide write capability. Commands
+without a mutating class receive no writable project path. Before a bound command starts,
+`handoffctl` commits a revision-CAS execution fence carrying the owner, envelope digest,
+command class, scope digest, argv digest, and deadline. With replicated Git authority, workers
+begin only after that mutation has been pushed; competing clones therefore fail before launching a
+subprocess. Lifecycle changes
+cannot bypass either live or expired execution fences. An expired execution fence requires the explicit
+`recover-execution` path, which independently verifies the claim worker has exited and the exact durable
+command-result evidence exists before clearing it. This is a safety fence, not a remote kill switch: a worker that loses authority must terminate
+its subprocess, and strict cross-host fencing still requires a target-side gateway.
 
 Restore a verified checkpoint only from a clean descendant product checkout:
 
@@ -169,6 +225,19 @@ tools/handoffctl recover-expired AR-0001 --expected-revision REVISION \
 tools/handoffctl unblock AR-0002 --expected-revision REVISION \
   --note "External blocker and exact revision independently verified"
 ```
+
+Pre-identity task records have no durable worker identity to inspect. They remain fail closed by
+default, but an operator can use the one-time compatibility route only after confirming the record
+has no `claim_process` field and its lease has expired:
+
+```sh
+tools/handoffctl recover-expired AR-0001 --expected-revision REVISION \
+  --allow-legacy-without-identity \
+  --note "Legacy worker identity was never recorded; recovery is explicitly acknowledged"
+```
+
+The resulting task history is prefixed `LEGACY_NO_IDENTITY_RECOVERY`; it is an audit marker, not
+evidence that the former worker was observed absent.
 
 A future or malformed deadline and a stale revision are rejected before mutation.
 

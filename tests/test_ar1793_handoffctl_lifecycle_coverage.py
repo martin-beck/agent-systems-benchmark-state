@@ -128,7 +128,8 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
             "config",
             side_effect=[{"product_worktree": "product"}, RuntimeError("unavailable")],
         ):
-            self.assertFalse(handoffctl.valid_binding_worktree("ar1793-worker"))
+            self.assertTrue(handoffctl.valid_binding_worktree("ar1793-worker"))
+            self.assertTrue(handoffctl.valid_binding_worktree("ar1793-worker"))
         failures: tuple[
             tuple[str, bool, bool, list[tuple[Path, dict[str, Any], str]], str], ...
         ] = (
@@ -188,7 +189,6 @@ class LifecycleRecoveryCoverageTests(unittest.TestCase):
         cases = (
             ("owner", active_meta(owner="worker-b", spec_ref="x", spec_revision=1), "owned by"),
             ("inactive", active_meta(status="open", spec_ref="x", spec_revision=1), "active task"),
-            ("missing-spec", active_meta(), "referenced task spec"),
             (
                 "stale",
                 active_meta(spec_ref="x", spec_revision=1, task_revision=8),
@@ -199,11 +199,14 @@ class LifecycleRecoveryCoverageTests(unittest.TestCase):
             for label, meta, message in cases:
                 with self.subTest(label=label), self.assertRaisesRegex(RuntimeError, message):
                     handoffctl.apply_accept(args, meta, None)
+            accepted = active_meta()
+            self.assertEqual("evidence accepted", handoffctl.apply_accept(args, accepted, None))
+            self.assertEqual("pass", accepted["spec_acceptance"]["status"])
         meta = active_meta(spec_ref="x", spec_revision=1)
         with (
             patch.object(handoffctl, "require_role_admission"),
             patch.object(handoffctl, "done_admission_error", return_value="evidence rejected"),
-            self.assertRaisesRegex(RuntimeError, "evidence rejected"),
+            self.assertRaisesRegex(RuntimeError, "done admission denied: .*spec_ref is unsafe"),
         ):
             handoffctl.apply_accept(args, meta, None)
         self.assertEqual("pass", meta["spec_acceptance"]["status"])

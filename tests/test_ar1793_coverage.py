@@ -349,7 +349,10 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
             self.assertFalse(handoffctl.valid_binding_worktree("product"))
             self.assertFalse(handoffctl.valid_binding_worktree("not allowed"))
         with patch.object(handoffctl, "config", return_value={"product_worktree": "product"}):
-            self.assertFalse(handoffctl.valid_binding_worktree("receipt-worker"))
+            # v0.7.4 permits a relative worktree key when no projects_root is
+            # configured; the coordinator still rejects traversal and product
+            # aliases above.
+            self.assertTrue(handoffctl.valid_binding_worktree("receipt-worker"))
 
     def test_accept_and_mutate_keep_failure_and_idempotency_boundaries(self) -> None:
         accepted = {**self.meta, "spec_ref": "specs/a.json", "spec_revision": 1}
@@ -367,7 +370,9 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
                 handoffctl.apply_accept(accept_args, {**accepted, "status": "open"}, None)
             with (
                 patch.object(handoffctl, "done_admission_error", return_value="evidence rejected"),
-                self.assertRaisesRegex(RuntimeError, "evidence rejected"),
+                self.assertRaisesRegex(
+                    RuntimeError, "done admission denied: .*cannot read spec_ref"
+                ),
             ):
                 handoffctl.apply_accept(accept_args, dict(accepted), None)
         with (
