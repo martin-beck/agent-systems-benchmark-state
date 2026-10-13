@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "0bba7e8416cb8202df32050dc983d57cb01ecabd",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T18:21:55+00:00",
   "depends_on": [],
   "id": "AR-1852",
   "next_action": "Blocked pending upstream Coordinator AR-0032 role-store authorization repair/spec adoption. Once AR-0032 is released, bind exact upstream evidence, rebase/adopt without changing immutable vendor snapshot, rerun focused/full ASB gates, obtain independent review, and update PR148.",
-  "owner": "",
+  "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:37:31+00:00",
+  "updated_at": "2026-10-13T17:21:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -80,3 +80,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 - 2026-10-13T13:37:31+00:00: Release implementation lease while upstream Coordinator AR-0032 repairs
   fail-closed role-store semantics; PR #148 remains unmerged and ASB must resume only after the
   upstream fix is adopted.
+
+- 2026-10-13T17:21:55+00:00: Claimed by ar1852-role-store-luna.
