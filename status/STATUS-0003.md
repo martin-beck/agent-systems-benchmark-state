@@ -2114,7 +2114,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption. |
-| Next action | Run full vendor/state/formal/privacy gates via handoffctl; publish only from clean exact 7e5c06775a and merge only after terminal CI green. |
+| Next action | Route recover_execution normalization to an upstream Coordinator successor; preserve immutable ASB vendor provenance and do not publish AR-1862 as an ASB implementation. |
 
 
 ## Dependency graph
@@ -5023,6 +5023,3 @@ flowchart LR
     classDef status_future fill:#455a64,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
-    classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
-```
-

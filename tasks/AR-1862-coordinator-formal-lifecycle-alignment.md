@@ -5,16 +5,16 @@
   "claim_expires": "2026-10-13T19:53:50+00:00",
   "depends_on": [],
   "id": "AR-1862",
-  "next_action": "Run full vendor/state/formal/privacy gates via handoffctl; publish only from clean exact 7e5c06775a and merge only after terminal CI green.",
+  "next_action": "Route recover_execution normalization to an upstream Coordinator successor; preserve immutable ASB vendor provenance and do not publish AR-1862 as an ASB implementation.",
   "owner": "ar1841-v053-adoption-luna",
   "plan": "../plans/AR-1862-coordinator-formal-lifecycle-alignment.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T17:54:29+00:00",
+  "updated_at": "2026-10-13T17:54:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -50,3 +50,9 @@ vendored Coordinator bytes or mutate AR-1826.
   7e5c06775a: diff is limited to recover_execution normalization plus one positive parity test;
   diff-check clean; SSH signature and matching DCO verified; no privacy, authority, or
   gate-weakening findings.
+
+- 2026-10-13T17:54:54+00:00: Ownership audit: tools/handoffctl_vendor.py and formal
+  lifecycle/runtime inventory are covered by ASB immutable Coordinator vendor manifest. The
+  attempted 7e5c06775a repair caused expected vendor digest mismatch and was reverted in signed+DCO
+  9bbca7e6d1. Existing pinned vendor verify passes at v0.5.1; exact upstream AR-0034 sync remains
+  blocked by upstream formal lifecycle operation drift. No vendored bytes retained.
