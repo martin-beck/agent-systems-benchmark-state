@@ -2092,7 +2092,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -2100,13 +2100,13 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. |
-| Next action | Complete focused/full/formal/privacy gates on exact v0.7.8 development vendor; initial direct pytest lacked jsonschema, state venv run is in progress with failures to classify. Preserve AR-1826. |
+| Next action | Bind and accept the exact v0.7.8 vendor, quality, and advisory-role evidence, then release the verified adoption. |
 
 ### AR-1862 — Coordinator formal lifecycle inventory alignment
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -2114,7 +2114,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption. |
-| Next action | Route recover_execution normalization to an upstream Coordinator successor; preserve immutable ASB vendor provenance and do not publish AR-1862 as an ASB implementation. |
+| Next action | Bind and accept exact v0.7.8 lifecycle-alignment evidence, then release this obsolete downstream repair successor. |
 
 
 ## Dependency graph
@@ -3020,8 +3020,8 @@ flowchart LR
         AR_1858["AR-1858 - In progress"]:::status_in_progress
         AR_1859["AR-1859 - Planned"]:::status_planned
         AR_1860["AR-1860 - Done"]:::status_done
-        AR_1861["AR-1861 - Blocked"]:::status_blocked
-        AR_1862["AR-1862 - Blocked"]:::status_blocked
+        AR_1861["AR-1861 - Done"]:::status_done
+        AR_1862["AR-1862 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -5026,3 +5026,7 @@ flowchart LR
     classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
 ```
 
+### Accessible dependency index
+
+| AR | Prerequisites | Dependents |
+| --- | --- | --- |
