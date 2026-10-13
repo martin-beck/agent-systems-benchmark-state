@@ -67,7 +67,14 @@ export TLC_SWAP_MAX="${TLC_SWAP_MAX:-3G}"
 readonly TLA_VERSION=1.7.4
 readonly TLA_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88
 readonly SPEC_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-readonly WORK_ROOT="${TLC_WORK_ROOT:-${TMPDIR:-/tmp}/agent-workflow-coordinator-tlc}"
+if [[ -n "${TLC_WORK_ROOT:-}" ]]; then
+    WORK_ROOT="${TLC_WORK_ROOT}"
+elif [[ -n "${TLC_RUNTIME_ROOT:-}" ]]; then
+    WORK_ROOT="${TLC_RUNTIME_ROOT}/agent-workflow-coordinator-tlc"
+else
+    WORK_ROOT="${TMPDIR:-/tmp}/agent-workflow-coordinator-tlc"
+fi
+readonly WORK_ROOT
 mkdir --mode=700 --parents "${WORK_ROOT}"
 readonly TEMP_DIR="$(mktemp -d "${WORK_ROOT}/handoffctl-${TIER}.XXXXXX")"
 readonly SLICE_DIR="${SPEC_DIR}/.tlc-slices-$$"

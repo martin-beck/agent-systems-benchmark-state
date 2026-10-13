@@ -312,8 +312,9 @@ processes and leases untouched. A durable per-job queue record survives caller
 death for stale-job recovery; completed, failed, and canceled outcomes retain
 the exact resource bounds and exit classification. `systemd-run` owns the process group (`KillMode=control-group`) on hosts with a user systemd bus. Hosted CI selects an explicit `portable` containment mode: GNU `timeout` and `prlimit` enforce aggregate address-space, process-count, CPU-time, and wall-clock limits; the runner fails closed if either tool is unavailable.
 
-Every verifier invocation creates a private workspace beneath `TLC_WORK_ROOT`
-(or the configured temporary root). TLC receives that path as both its Java
+Every verifier invocation creates a private workspace below the first configured
+root: `TLC_WORK_ROOT`, then `TLC_RUNTIME_ROOT`, then the temporary root. TLC
+receives that path as both its Java
 temporary directory and working directory, so standard modules and state files
 cannot collide with another verifier through shared `/tmp`. The runner rejects
 a metadir outside that workspace, preflights available storage against
