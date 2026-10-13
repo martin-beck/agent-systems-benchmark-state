@@ -29,6 +29,7 @@ from tools.sqlite_storage import (
     SQLiteAuthorityBinding,
     SQLiteBackend,
     StorageContentionError,
+    StorageCorruptionError,
     _translate,
     create_database,
     require_local_filesystem,
@@ -632,6 +633,155 @@ class SQLiteStorageTest(unittest.TestCase):
         # clearing the reservation, so the terminal lifecycle consumes three
         # revisions after the binding mutation.
         self.assertEqual(5, completed["task_revision"])
+
+    def test_execution_receipts_preserve_replay_and_result_boundaries(self) -> None:
+        """A launch intent is replay-safe only after its terminal result is durable."""
+        backend = self.create([task("AR-0002"), task("AR-0001")])
+        envelope = {
+            "schema_version": 1,
+            "execution_id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "task": "AR-0001",
+            "task_revision": 3,
+            "owner": "worker-a",
+            "claim_expires": "2099-01-01T00:00:00+00:00",
+            "worktree_key": "worker-a",
+            "branch": "feature/worker-a",
+            "spec_ref": None,
+            "spec_revision": None,
+            "policy_digest": "b" * 64,
+            "argv_sha256": "c" * 64,
+            "timeout_seconds": 5,
+            "created_at": "2026-10-13T00:00:00+00:00",
+        }
+        result = {
+            "schema_version": 1,
+            "execution_id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "classification": "EXIT",
+            "returncode": 0,
+            "recorded_at": "2026-10-13T00:00:01+00:00",
+        }
+
+        self.assertEqual((True, None), backend.begin_execution_envelope(envelope))
+        self.assertEqual((False, None), backend.begin_execution_envelope(envelope))
+        self.assertEqual(result, backend.record_execution_result(result))
+        self.assertEqual(result, backend.record_execution_result(dict(result)))
+        self.assertEqual((False, result), backend.begin_execution_envelope(envelope))
+        self.assertEqual([result], backend.load_execution_results("AR-0001"))
+        self.assertEqual([], backend.load_execution_results("AR-0002"))
+
+        conflicting_envelope = {**envelope, "owner": "worker-b"}
+        with self.assertRaisesRegex(RuntimeError, "envelope conflicts"):
+            backend.begin_execution_envelope(conflicting_envelope)
+        with self.assertRaisesRegex(RuntimeError, "result conflicts"):
+            backend.record_execution_result({**result, "returncode": 1})
+        with self.assertRaisesRegex(RuntimeError, "lacks a durable intent"):
+            backend.record_execution_result(
+                {**result, "execution_id": "dddddddd-dddd-dddd-dddd-dddddddddddd"}
+            )
+
+    def test_execution_receipt_storage_handles_legacy_and_corrupt_records(self) -> None:
+        """Legacy databases read as empty; malformed durable receipt JSON fails closed."""
+        backend = self.create()
+        self.assertEqual([], backend.load_execution_envelopes())
+        self.assertEqual([], backend.load_execution_results())
+        envelope = {
+            "schema_version": 1,
+            "execution_id": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
+            "task": "AR-0001",
+            "task_revision": 1,
+            "owner": "worker-a",
+            "claim_expires": "2099-01-01T00:00:00+00:00",
+            "worktree_key": "worker-a",
+            "branch": "feature/worker-a",
+            "spec_ref": "specs/AR-0001.json",
+            "spec_revision": 1,
+            "policy_digest": "f" * 64,
+            "argv_sha256": "0" * 64,
+            "timeout_seconds": 1.5,
+            "created_at": "2026-10-13T00:00:00+00:00",
+        }
+        result = {
+            "schema_version": 1,
+            "execution_id": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
+            "classification": "SUBPROCESS_TIMEOUT",
+            "returncode": 124,
+            "recorded_at": "2026-10-13T00:00:02+00:00",
+        }
+        self.assertEqual(envelope, backend.record_execution_envelope(envelope))
+        self.assertEqual(result, backend.record_execution_result(result))
+        connection = sqlite3.connect(self.database)
+        connection.execute("PRAGMA ignore_check_constraints=ON")
+        connection.execute(
+            "UPDATE execution_envelopes SET envelope_json=? WHERE execution_id=?",
+            ("not-json", envelope["execution_id"]),
+        )
+        connection.commit()
+        connection.close()
+        with self.assertRaisesRegex(StorageCorruptionError, "invalid execution envelope"):
+            backend.load_execution_envelopes()
+        connection = sqlite3.connect(self.database)
+        connection.execute("PRAGMA ignore_check_constraints=ON")
+        connection.execute(
+            "UPDATE execution_results SET result_json=? WHERE execution_id=?",
+            ("[]", result["execution_id"]),
+        )
+        connection.commit()
+        connection.close()
+        with self.assertRaisesRegex(StorageCorruptionError, "invalid execution result"):
+            backend.load_execution_results()
+
+    def test_execution_receipts_reject_invalid_privacy_safe_shapes(self) -> None:
+        backend = self.create()
+        envelope = {
+            "schema_version": 1,
+            "execution_id": "11111111-1111-1111-1111-111111111111",
+            "task": "AR-0001",
+            "task_revision": 1,
+            "owner": "worker-a",
+            "claim_expires": "2099-01-01T00:00:00+00:00",
+            "worktree_key": "worker-a",
+            "branch": "feature/worker-a",
+            "spec_ref": None,
+            "spec_revision": None,
+            "policy_digest": "2" * 64,
+            "argv_sha256": "3" * 64,
+            "timeout_seconds": 1,
+            "created_at": "2026-10-13T00:00:00+00:00",
+        }
+        for change in (
+            {"unexpected": "field"},
+            {"execution_id": "short"},
+            {"task_revision": True},
+            {"owner": "worker\nunsafe"},
+            {"spec_ref": "specs/a.json"},
+            {"policy_digest": "not-a-digest"},
+            {"timeout_seconds": 0},
+        ):
+            with (
+                self.subTest(change=change),
+                self.assertRaisesRegex(ValueError, "execution envelope"),
+            ):
+                backend.record_execution_envelope({**envelope, **change})
+        result = {
+            "schema_version": 1,
+            "execution_id": "11111111-1111-1111-1111-111111111111",
+            "classification": "EXIT",
+            "returncode": 0,
+            "recorded_at": "2026-10-13T00:00:00+00:00",
+        }
+        for change in (
+            {"unexpected": "field"},
+            {"execution_id": "not-a-uuid"},
+            {"classification": "raw-output"},
+            {"returncode": True},
+            {"recorded_at": "unsafe\nrecorded-at"},
+            {"recorded_at": ""},
+        ):
+            with (
+                self.subTest(result_change=change),
+                self.assertRaisesRegex(ValueError, "execution result"),
+            ):
+                backend.record_execution_result({**result, **change})
 
     def test_every_write_route_enters_fence_before_sqlite_mutation(self) -> None:
         ordinary = self.create()
