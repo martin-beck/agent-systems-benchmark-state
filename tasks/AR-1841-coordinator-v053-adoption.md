@@ -7,7 +7,7 @@
     "AR-1795"
   ],
   "id": "AR-1841",
-  "next_action": "Blocked pending corrected upstream v0.7.3 release metadata: current tag 95c6b559 reports runtime 0.7.2, so immutable vendor sync fails closed. Keep PR #142 unmerged; rerun exact re-vendor and all gates after correction.",
+  "next_action": "Re-vendor exact signed Coordinator v0.7.4 at 2ea256d0c0bdcb9922c88e6778a104b33c0e47da, rerun focused/full gates, then exact-head review and CI.",
   "owner": "ar1841-v053-adoption-luna",
   "plan": "../plans/AR-1841-coordinator-v053-adoption.md",
   "priority": "P0",
@@ -23,10 +23,10 @@
   "spec_ref": "specs/AR-1841.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Adopt Coordinator v0.5.3 with partial legacy worktree binding.",
-  "task_revision": 124,
+  "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
+  "task_revision": 125,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T12:41:02+00:00",
+  "updated_at": "2026-10-13T12:41:49+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -414,3 +414,6 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
 
 - 2026-10-13T12:41:02+00:00: Recorded command exit 1; command argv SHA-256
   f1a19234d831c14da7838892be6f1e7fea4733539ea45df1b985e2acc64db2cc.
+
+- 2026-10-13T12:41:49+00:00: Retargeted adoption from stale v0.5.3 to corrected v0.7.4 release;
+  preserve historical v0.5.3 evidence entries.

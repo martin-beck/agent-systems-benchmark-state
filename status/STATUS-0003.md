@@ -1819,8 +1819,8 @@
 | Owner | ar1841-v053-adoption-luna |
 | Parent | None |
 | Children | None |
-| Summary | Adopt Coordinator v0.5.3 with partial legacy worktree binding. |
-| Next action | Blocked pending corrected upstream v0.7.3 release metadata: current tag 95c6b559 reports runtime 0.7.2, so immutable vendor sync fails closed. Keep PR #142 unmerged; rerun exact re-vendor and all gates after correction. |
+| Summary | Adopt Coordinator v0.7.4 with partial legacy worktree binding. |
+| Next action | Re-vendor exact signed Coordinator v0.7.4 at 2ea256d0c0bdcb9922c88e6778a104b33c0e47da, rerun focused/full gates, then exact-head review and CI. |
 
 ### AR-1842 — Name-first selection and internal identity resolution
 

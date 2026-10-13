@@ -321,7 +321,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md): Coordinator v0.5.3 adoption | ar1841-v053-adoption-luna | Adopt Coordinator v0.5.3 with partial legacy worktree binding. | Blocked pending corrected upstream v0.7.3 release metadata: current tag 95c6b559 reports runtime 0.7.2, so immutable vendor sync fails closed. Keep PR #142 unmerged; rerun exact re-vendor and all gates after correction. |
+| P0 | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md): Coordinator v0.5.3 adoption | ar1841-v053-adoption-luna | Adopt Coordinator v0.7.4 with partial legacy worktree binding. | Re-vendor exact signed Coordinator v0.7.4 at 2ea256d0c0bdcb9922c88e6778a104b33c0e47da, rerun focused/full gates, then exact-head review and CI. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | ar1849-formal-admission-env-luna | Repair workflow-wide private TLC admission environment for formal CI. | Hold PR #144 unmerged pending corrected upstream v0.7.3 metadata and immutable ASB re-vendoring; retain workflow-only admission environment change. |
 
 ### Open (4)
