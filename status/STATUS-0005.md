@@ -348,7 +348,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1858](../tasks/AR-1858-coverage-v070.md): v0.7.0 coverage floor repair | ar1858-coverage-v070-luna | Repair the v0.7.0 coordinator coverage floor deficit. | AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped. |
-| P0 | [AR-1862](../tasks/AR-1862-coordinator-formal-lifecycle-alignment.md): Coordinator formal lifecycle inventory alignment | ar1841-v053-adoption-luna | Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption. | Independently review signed product commit 7e5c06775a, run exact vendor/full state gates and CI, then merge; do not touch AR-1826 before adoption verification. |
+| P0 | [AR-1862](../tasks/AR-1862-coordinator-formal-lifecycle-alignment.md): Coordinator formal lifecycle inventory alignment | ar1841-v053-adoption-luna | Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption. | Run full vendor/state/formal/privacy gates via handoffctl; publish only from clean exact 7e5c06775a and merge only after terminal CI green. |
 
 ### Open (7)
 

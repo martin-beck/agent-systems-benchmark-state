@@ -5,16 +5,16 @@
   "claim_expires": "2026-10-13T19:53:50+00:00",
   "depends_on": [],
   "id": "AR-1862",
-  "next_action": "Independently review signed product commit 7e5c06775a, run exact vendor/full state gates and CI, then merge; do not touch AR-1826 before adoption verification.",
+  "next_action": "Run full vendor/state/formal/privacy gates via handoffctl; publish only from clean exact 7e5c06775a and merge only after terminal CI green.",
   "owner": "ar1841-v053-adoption-luna",
   "plan": "../plans/AR-1862-coordinator-formal-lifecycle-alignment.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T17:53:59+00:00",
+  "updated_at": "2026-10-13T17:54:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -45,3 +45,8 @@ vendored Coordinator bytes or mutate AR-1826.
   Added positive parity fixture test. Focused vendor suite: 13/13 passed; diff-check clean.
   Signed+DCO product commit 7e5c06775a66f9667290fc3b066f548e008d5845. Upstream vendored bytes were
   not modified or committed.
+
+- 2026-10-13T17:54:29+00:00: Independent exact-head review completed in separate clean worktree at
+  7e5c06775a: diff is limited to recover_execution normalization plus one positive parity test;
+  diff-check clean; SSH signature and matching DCO verified; no privacy, authority, or
+  gate-weakening findings.

@@ -2114,7 +2114,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption. |
-| Next action | Independently review signed product commit 7e5c06775a, run exact vendor/full state gates and CI, then merge; do not touch AR-1826 before adoption verification. |
+| Next action | Run full vendor/state/formal/privacy gates via handoffctl; publish only from clean exact 7e5c06775a and merge only after terminal CI green. |
 
 
 ## Dependency graph
