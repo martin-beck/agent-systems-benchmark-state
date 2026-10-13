@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar1861-coordinator-adoption",
   "checkpoint_commit": "",
   "claim_expires": "2026-10-13T19:49:18+00:00",
   "depends_on": [],
@@ -12,10 +12,10 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T17:49:18+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-10-13T17:50:13+00:00",
+  "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
 
@@ -39,3 +39,7 @@ or mutate AR-1826 until the adopted repair is verified.
   worktree remains required.
 
 - 2026-10-13T17:49:18+00:00: Heartbeat by ar1841-v053-adoption-luna.
+
+- 2026-10-13T17:50:13+00:00: Bound worktree
+  agent-systems-benchmark-state-ar-1861-coordinator-adoption on branch
+  codex/ar1861-coordinator-adoption.
