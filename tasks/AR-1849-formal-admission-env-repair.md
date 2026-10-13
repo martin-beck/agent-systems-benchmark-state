@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T20:33:13+00:00",
+  "updated_at": "2026-10-13T20:33:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -457,3 +457,12 @@ retain absolute-path and privacy boundaries, and add regression coverage.
 
 - 2026-10-13T20:33:13+00:00: Recorded command exit 0; command argv SHA-256
   43638e080c0b252139d4896fca6499309be5004fe42906eacdd547b13c936d58.
+
+- 2026-10-13T20:33:33+00:00: Bounded final audit: PR #145 closed/unmerged at
+  5f30c0c92f18ae6043ceedf454c8af43fc8b48f7. Workflow-wide private TLC admission repair has focused
+  workflow 6/6, TLC runner 19/19, full unittest 1,636/1,636, and portable-smoke green with
+  TLC_MEMORY_MAX=3G, TLC_SWAP_MAX=3G plus private runtime/work/queue/lock paths. Exact combined
+  coverage is 19,785 statements, 822 missed, 7,322 branches, 588 partial, 94.6951%, below unchanged
+  95% floor. No narrow justified repair; AR-1857 owns coverage seam (blocked with same conclusion),
+  AR-1859 owns three formal work-root failures. No product mutation, threshold/gate weakening,
+  review, CI, merge, or publication.
