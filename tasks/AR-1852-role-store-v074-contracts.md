@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T19:27:56+00:00",
   "depends_on": [],
   "id": "AR-1852",
-  "next_action": "Install the locked jsonschema dependency in the ASB test environment and repair the pre-existing tools/handoffctl.py immutable vendor digest mismatch (without weakening authorization or changing the v0.7.4 vendor); then rerun full gates, obtain independent exact-head review/CI for 7b46c6b076, update PR #148, and merge only when green.",
+  "next_action": "Provide a locked ASB environment with jsonschema installed and repair the pre-existing immutable tools/handoffctl.py vendor digest mismatch without changing v0.7.4 vendor content; rerun full gates, obtain independent exact-head review/CI for 7b46c6b076, update PR #148, and merge only when green.",
   "owner": "ar1852-role-store-luna",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T18:57:56+00:00",
+  "updated_at": "2026-10-13T18:58:03+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -191,3 +191,12 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   metadata.
 
 - 2026-10-13T18:57:56+00:00: Claimed by ar1852-role-store-luna.
+
+- 2026-10-13T18:58:03+00:00: Terminal reconciliation: the two post-claim exit-1 records at 18:57:15
+  (argv SHA-256 ab4c8c3c5307ba8d75041b27e8a63bd6e8edb73e6f2434462976aad3b324e5b6) and 18:57:27 (argv
+  SHA-256 62236d3e81d0c8b2effe042cc36870c289084ce1b5f90ceb55328609c037d33) are the expected blocker
+  probes: locked product venv jsonschema import failed with ModuleNotFoundError, and exact product
+  vendor verification failed at tools/handoffctl.py immutable digest mismatch. The >200 KiB
+  generated tools/__pycache__/handoffctl.cpython-312.pyc was removed via handoffctl run; doctor
+  --live then passed. No product/Git or PR #148 changes; release ownerless/open immediately after
+  this note.
