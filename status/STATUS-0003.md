@@ -1812,11 +1812,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1841-v053-adoption-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Adopt Coordinator v0.7.4 with partial legacy worktree binding. |
@@ -1924,11 +1924,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1849-formal-admission-env-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair workflow-wide private TLC admission environment for formal CI. |
@@ -2073,6 +2073,20 @@
 | Children | None |
 | Summary | Reject non-absolute TLC work roots before formal execution. |
 | Next action | Promote after validating the AR-1858 terminal evidence and bind the exact v0.7.0 formal worktree. |
+
+### AR-1860 — Dependency-safe formal work-root repair adoption
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. |
+| Next action | Merge PR #151 signed state-only coordination repair, run exact-main doctor/schema/post-merge assurance, then release AR-1860 with merged evidence. |
 
 
 ## Dependency graph
@@ -2958,7 +2972,7 @@ flowchart LR
         AR_1838["AR-1838 - Done"]:::status_done
         AR_1839["AR-1839 - Done"]:::status_done
         AR_1840["AR-1840 - Done"]:::status_done
-        AR_1841["AR-1841 - In progress"]:::status_in_progress
+        AR_1841["AR-1841 - Blocked"]:::status_blocked
         AR_1842["AR-1842 - Planned"]:::status_planned
         AR_1843["AR-1843 - Done"]:::status_done
         AR_1844["AR-1844 - Planned"]:::status_planned
@@ -2966,7 +2980,7 @@ flowchart LR
         AR_1846["AR-1846 - Planned"]:::status_planned
         AR_1847["AR-1847 - Planned"]:::status_planned
         AR_1848["AR-1848 - Planned"]:::status_planned
-        AR_1849["AR-1849 - In progress"]:::status_in_progress
+        AR_1849["AR-1849 - Open"]:::status_open
         AR_1850["AR-1850 - Done"]:::status_done
         AR_1851["AR-1851 - Open"]:::status_open
         AR_1852["AR-1852 - Open"]:::status_open
@@ -2977,6 +2991,7 @@ flowchart LR
         AR_1857["AR-1857 - Blocked"]:::status_blocked
         AR_1858["AR-1858 - In progress"]:::status_in_progress
         AR_1859["AR-1859 - Planned"]:::status_planned
+        AR_1860["AR-1860 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

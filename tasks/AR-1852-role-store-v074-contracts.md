@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "open",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 16,
+  "task_revision": 30,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T13:37:31+00:00",
+  "updated_at": "2026-10-13T17:30:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -80,3 +80,48 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 - 2026-10-13T13:37:31+00:00: Release implementation lease while upstream Coordinator AR-0032 repairs
   fail-closed role-store semantics; PR #148 remains unmerged and ASB must resume only after the
   upstream fix is adopted.
+
+- 2026-10-13T17:21:55+00:00: Claimed by ar1852-role-store-luna.
+
+- 2026-10-13T17:21:59+00:00: Heartbeat by ar1852-role-store-luna.
+
+- 2026-10-13T17:22:34+00:00: Recorded command exit 1; command argv SHA-256
+  f154d5e9691ea527268a4ec85945becbbfb9d8ad851d705be7a06a0e0c2f3c7b.
+
+- 2026-10-13T17:23:08+00:00: Recorded command exit 1; command argv SHA-256
+  7dfc0fae7d9361c87f74f10b0075482ba898cea80262d3628466ce5b3cf64f78.
+
+- 2026-10-13T17:23:59+00:00: Recorded command exit 0; command argv SHA-256
+  2f33b56a5dbfb736ed7a63ced1e7ba2c492692045edf3bf66d2e5039d805cf20.
+
+- 2026-10-13T17:24:19+00:00: Recorded command exit 0; command argv SHA-256
+  22f415db61c518664acbdbc787173ae344fb363971bef261544d65f5661f6c8f.
+
+- 2026-10-13T17:24:31+00:00: Recorded command exit 0; command argv SHA-256
+  09b34f641b0ef753d8f6450deb5565c89b6659ebc447e3d8e1ba653e94258453.
+
+- 2026-10-13T17:24:41+00:00: Recorded command exit 0; command argv SHA-256
+  d170cc85a2be959fd73c389ee497884b18214e31c9ac47779ba11f9c89375fdc.
+
+- 2026-10-13T17:24:54+00:00: Recorded command exit 0; command argv SHA-256
+  7dfc0fae7d9361c87f74f10b0075482ba898cea80262d3628466ce5b3cf64f78.
+
+- 2026-10-13T17:26:28+00:00: Recorded command exit 1; command argv SHA-256
+  31ef88c296b33a6b9875d2646e4adfc953bdd5cb6fcd3d05951270061117467a.
+
+- 2026-10-13T17:26:48+00:00: Heartbeat by ar1852-role-store-luna.
+
+- 2026-10-13T17:27:03+00:00: Recorded command exit 1; command argv SHA-256
+  b0f441ab155224e6335342a952930308a758c556a81c2392c47880a0eb573b78.
+
+- 2026-10-13T17:29:41+00:00: Recorded command exit 1; command argv SHA-256
+  fdbaadf4e859fa3db2657ead8b8b24b821a4790d1cbe3d5aec305953b3d9c22b.
+
+- 2026-10-13T17:30:14+00:00: Upstream Coordinator AR-0032 is merged at
+  ee01b22fdfc4fd28baca815bb4f5e1aaa8797d51; v0.7.4 vendor digest remains unchanged. Adopted strict
+  durable role admission in signed DCO commit 22da911193 and retained expired-assignment cleanup
+  semantics. Focused role suite passes 10/10. Full discovery exits 1 in the available environment
+  with unrelated failures and generated-view drift; system Python first lacked locked jsonschema,
+  and the locked state venv still reports unrelated failures. No PR merge or release claimed. Next:
+  use the locked ASB test environment with generated-view dependencies, rerun full gate, then obtain
+  independent exact-head review; do not merge PR148 until green.
