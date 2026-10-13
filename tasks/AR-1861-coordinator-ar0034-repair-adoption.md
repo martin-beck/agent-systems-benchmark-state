@@ -17,6 +17,16 @@
         "predicate_id": "vendor-lifecycle-alignment",
         "recorded_task_revision": 14,
         "status": "pass"
+      },
+      {
+        "candidate_digest": "sha256:b80db19e2f7786eec2f930052400bc9c8b80033fd7062d8e9a8d269489b36cc2",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "contract-test",
+        "evidence_digest": "sha256:1d3232c5908903e5fa89fa04a6ec4ef50309fcdd1c6b5bad19922ecba1dbd6f1",
+        "evidence_ref": "tests/test_handoffctl_vendor.py",
+        "predicate_id": "quality-floor",
+        "recorded_task_revision": 15,
+        "status": "pass"
       }
     ]
   },
@@ -30,7 +40,7 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
   "updated_at": "2026-10-13T18:05:13+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
@@ -86,3 +96,6 @@ or mutate AR-1826 until the adopted repair is verified.
 
 - 2026-10-13T18:05:13+00:00: Accepted exact v0.7.8 vendor manifest after verifier confirmed
   lifecycle parity.
+
+- 2026-10-13T18:05:13+00:00: Accepted unchanged 95 percent full-suite quality floor with vendor
+  contract coverage.
