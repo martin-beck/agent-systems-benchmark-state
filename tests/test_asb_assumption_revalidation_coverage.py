@@ -4,6 +4,7 @@
 
 from __future__ import annotations
 
+import argparse
 import subprocess
 import unittest
 from pathlib import Path
@@ -24,6 +25,46 @@ def record(
 
 
 class AssumptionRevalidationCoverageTests(unittest.TestCase):
+    def test_owner_and_followup_fences_reject_policy_drift(self) -> None:
+        meta: dict[str, object] = {
+            "id": "AR-0001",
+            "owner": "worker",
+            "status": "in_progress",
+            "task_revision": 2,
+        }
+        args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker",
+            expected_revision=2,
+            assumption_action="revalidate",
+            assumption_id="check",
+            kind=None,
+            reference=None,
+            material=None,
+        )
+        for field, value, message in (
+            ("task", "AR-9999", "does not match"),
+            ("owner", "other", "owned by"),
+            ("expected_revision", 1, "stale revision"),
+        ):
+            original = getattr(args, field)
+            setattr(args, field, value)
+            with self.subTest(field=field), self.assertRaisesRegex(RuntimeError, message):
+                assumptions._require_fenced_owner(args, meta)
+            setattr(args, field, original)
+        meta["status"] = "open"
+        with self.assertRaisesRegex(RuntimeError, "active task"):
+            assumptions._require_fenced_owner(args, meta)
+        existing = record()
+        with self.assertRaisesRegex(RuntimeError, "declared before"):
+            assumptions._followup_identity(args, None)
+        disposed = {**existing, "action": "dispose"}
+        with self.assertRaisesRegex(RuntimeError, "disposed"):
+            assumptions._followup_identity(args, disposed)
+        args.kind = "observation"
+        with self.assertRaisesRegex(RuntimeError, "cannot change"):
+            assumptions._followup_identity(args, existing)
+
     def test_bounded_filesystem_and_git_observation_failures(self) -> None:
         with TemporaryDirectory() as temporary:
             root = Path(temporary)
