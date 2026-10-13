@@ -2116,6 +2116,20 @@
 | Summary | Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption. |
 | Next action | Bind and accept exact v0.7.8 lifecycle-alignment evidence, then release this obsolete downstream repair successor. |
 
+### AR-1863 — Repair control diagnostic catalog
+
+| Field | Value |
+| --- | --- |
+| Status | in_progress |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | codex-ar1863-catalog-luna |
+| Parent | None |
+| Children | None |
+| Summary | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3022,6 +3036,7 @@ flowchart LR
         AR_1860["AR-1860 - Done"]:::status_done
         AR_1861["AR-1861 - Done"]:::status_done
         AR_1862["AR-1862 - Done"]:::status_done
+        AR_1863["AR-1863 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -5019,14 +5034,3 @@ flowchart LR
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
-    classDef status_planned fill:#6a1b9a,color:#ffffff,stroke:#263238,stroke-width:2px
-    classDef status_future fill:#455a64,color:#ffffff,stroke:#263238,stroke-width:2px
-    classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
-    classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
-    classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
-```
-
-### Accessible dependency index
-
-| AR | Prerequisites | Dependents |
-| --- | --- | --- |

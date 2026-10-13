@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded scope and record local acceptance evidence. | codex-ar1863-catalog-luna |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
