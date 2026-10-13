@@ -10,14 +10,21 @@
   "plan": "../plans/AR-1856-pr631-protected-main-identity-recovery.md",
   "priority": "P0",
   "schema_version": 1,
-  "spec_acceptance": {"evidence_class":"hosted","evidence_digest":"","evidence_ref":"","spec_ref":"specs/AR-1856.json","spec_revision":1,"status":"pending"},
+  "spec_acceptance": {
+    "evidence_class": "hosted",
+    "evidence_digest": "",
+    "evidence_ref": "",
+    "spec_ref": "specs/AR-1856.json",
+    "spec_revision": 1,
+    "status": "pending"
+  },
   "spec_ref": "specs/AR-1856.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "PR #631 protected-main identity recovery",
-  "updated_at": "2026-10-13T16:00:00+00:00",
+  "updated_at": "2026-10-13T14:31:38+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1856-pr631-protected-main-identity"
 }
 ---
@@ -30,3 +37,6 @@ merge and failure; repair only by a forward signed local integration merge.
 
 This AR owns the provenance recovery and post-merge evidence. It does not alter
 AR-1850's TUI implementation or AR-1841's Coordinator adoption/state vendor.
+
+- 2026-10-13T14:31:38+00:00: Durable provenance failure evidence supports a narrowly scoped forward
+  identity recovery; no AR-1850 or AR-1841 overlap.
