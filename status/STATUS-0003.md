@@ -2100,7 +2100,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. |
-| Next action | Promote and claim after verifying the immutable upstream AR-0034 repair source, then vendor it through the approved coordinator tool and qualify AR-1826 re-binding. |
+| Next action | Create and bind a dedicated product/state adoption worktree, then vendor and qualify the immutable AR-0034 repair before any AR-1826 mutation. |
 
 
 ## Dependency graph
