@@ -2,14 +2,14 @@
 {
   "branch": "",
   "checkpoint_commit": "45427b6ec7fc73f896574701df5e35b6d72b7cf4",
-  "claim_expires": "2026-10-13T11:05:49+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1826",
   "next_action": "State metadata repair is required before product requalification: legacy worktree_key is populated while branch is empty. Coordinator repair must restore the declared branch/worktree binding without changing owner/evidence, then rebuild reviewed e9d95999 onto current main d0e6a28 and rerun exact-head review/CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "ar1826_setup_contract_luna",
+  "owner": "",
   "plan": "../plans/AR-1826-explicit-setup-config-contract.md",
   "priority": "P0",
   "schema_version": 1,
@@ -23,11 +23,11 @@
   },
   "spec_ref": "specs/AR-1826.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Define explicit setup configuration and plan-binding contract",
-  "updated_at": "2026-10-13T09:14:13+00:00",
+  "updated_at": "2026-10-13T11:09:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1826-explicit-setup-config-contract"
 }
 ---
@@ -152,3 +152,7 @@ and compatibility contract on which the remaining ARs depend.
   correctly refuses the inconsistent legacy pair (branch empty, worktree_key
   agent-systems-benchmark-ar-1826-explicit-setup-config-contract). No product, PR, owner, or
   evidence mutation performed.
+
+- 2026-10-13T11:09:38+00:00: Recovered expired claim formerly owned by ar1826_setup_contract_luna.
+  Recovered after expired lease; no worker process, product worktree clean at e9d95999, preserved
+  checkpoint/evidence for metadata repair and requalification.

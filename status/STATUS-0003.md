@@ -1602,11 +1602,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1826_setup_contract_luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. |
@@ -1919,6 +1919,20 @@
 | Children | None |
 | Summary | Qualify reproducible complete ASB dataflow extraction, DOT/SVG generation, privacy, and paired documentation. |
 | Next action | Promote after AR-1847; run clean-checkout extraction and cross-check graph artifacts against all generated registries and CLI options. |
+
+### AR-1849 — Formal admission environment repair
+
+| Field | Value |
+| --- | --- |
+| Status | open |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair workflow-wide private TLC admission environment for formal CI. |
+| Next action | Claim the repair, add workflow-wide private TLC admission variables and contract tests, then publish exact-head CI evidence before requalifying AR-1841. |
 
 
 ## Dependency graph
@@ -2789,7 +2803,7 @@ flowchart LR
         AR_1823["AR-1823 - Done"]:::status_done
         AR_1824["AR-1824 - Done"]:::status_done
         AR_1825["AR-1825 - Done"]:::status_done
-        AR_1826["AR-1826 - In progress"]:::status_in_progress
+        AR_1826["AR-1826 - Open"]:::status_open
         AR_1827["AR-1827 - Planned"]:::status_planned
         AR_1828["AR-1828 - Planned"]:::status_planned
         AR_1829["AR-1829 - Planned"]:::status_planned
@@ -2812,6 +2826,7 @@ flowchart LR
         AR_1846["AR-1846 - Planned"]:::status_planned
         AR_1847["AR-1847 - Planned"]:::status_planned
         AR_1848["AR-1848 - Planned"]:::status_planned
+        AR_1849["AR-1849 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4826,4 +4841,3 @@ flowchart LR
 | [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0105](../tasks/AR-0105-sandbox-test-portability.md), [AR-0202](../tasks/AR-0202-kernel-diagnostics.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0603](../tasks/AR-0603-csb-execution-assurance.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0704](../tasks/AR-0704-native-capacity-controller.md), [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md) |
 | [AR-0104](../tasks/AR-0104-durable-results.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0603](../tasks/AR-0603-csb-execution-assurance.md), [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0905](../tasks/AR-0905-recovery-models.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1005](../tasks/AR-1005-trace-interoperability.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) |
 | [AR-0105](../tasks/AR-0105-sandbox-test-portability.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md) |
-| [AR-0201](../tasks/AR-0201-portable-metrics.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0202](../tasks/AR-0202-kernel-diagnostics.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0705](../tasks/AR-0705-native-debian-capacity.md), [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md) |

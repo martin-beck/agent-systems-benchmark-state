@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1499](../tasks/AR-1499-development-credential-enrollment.md) | [AR-1501](../tasks/AR-1501-production-credential-hardening.md), [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md) |
+| [AR-1501](../tasks/AR-1501-production-credential-hardening.md) | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md), [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md) | [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md) |
 | [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md) | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md), [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md), [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md), [AR-1501](../tasks/AR-1501-production-credential-hardening.md) | [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md), [AR-1504](../tasks/AR-1504-runtime-platform-launcher-seam.md), [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md), [AR-1506](../tasks/AR-1506-runtime-platform-launcher-integration.md), [AR-1507](../tasks/AR-1507-runtime-owned-authority-materialization.md), [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md), [AR-1509](../tasks/AR-1509-authenticated-authority-provider-receipt.md), [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md), [AR-1512](../tasks/AR-1512-process-owner-material-contract.md), [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md) |
 | [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md) | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md), [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md), [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md), [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md), [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md), [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md) | None |
 | [AR-1504](../tasks/AR-1504-runtime-platform-launcher-seam.md) | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md), [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md), [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md), [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md), [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md), [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md) | None |
@@ -306,22 +308,24 @@
 | [AR-1846](../tasks/AR-1846-command-dataflow-extraction.md) | [AR-1845](../tasks/AR-1845-entity-storage-extraction.md) | [AR-1847](../tasks/AR-1847-graphviz-svg-export.md) |
 | [AR-1847](../tasks/AR-1847-graphviz-svg-export.md) | [AR-1846](../tasks/AR-1846-command-dataflow-extraction.md) | [AR-1848](../tasks/AR-1848-graph-extraction-qualification.md) |
 | [AR-1848](../tasks/AR-1848-graph-extraction-qualification.md) | [AR-1847](../tasks/AR-1847-graphviz-svg-export.md) | None |
+| [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md) | None | None |
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1826](../tasks/AR-1826-explicit-setup-config-contract.md): Define explicit setup configuration and plan-binding contract | ar1826_setup_contract_luna | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. | State metadata repair is required before product requalification: legacy worktree_key is populated while branch is empty. Coordinator repair must restore the declared branch/worktree binding without changing owner/evidence, then rebuild reviewed e9d95999 onto current main d0e6a28 and rerun exact-head review/CI. |
 | P0 | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md): Coordinator v0.5.3 adoption | ar1841-v053-adoption-luna | Adopt Coordinator v0.5.3 with partial legacy worktree binding. | Rebase/rebuild PR #142 against protected main 5229b166a9df1c49fa6956e4ccf4340ae6b3abea, rerun focused and full applicable gates, then exact-head review and CI. |
 
-### Open (2)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | AR-1835 exact-head fixture now covers the authenticated runtime bootstrap/control seam; AR-1783 remains below 90&#37; until that reviewed change is integrated. | Do not duplicate AR-1835 control/bootstrap coverage. Preserve d87352ddb511c48b4be1bdbecdd26fb2cf6597a8 as the AR-1783 product checkpoint; after AR-1835 exact-head merge/reconciliation, rerun serialized coverage and accept only if the unchanged 90&#37; floor passes. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | Obtain fresh exact-head full-exhaustive formal attestation, then execute and verify the v0.5.2 release. |
+| P0 | [AR-1826](../tasks/AR-1826-explicit-setup-config-contract.md): Define explicit setup configuration and plan-binding contract | Unclaimed | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. | State metadata repair is required before product requalification: legacy worktree_key is populated while branch is empty. Coordinator repair must restore the declared branch/worktree binding without changing owner/evidence, then rebuild reviewed e9d95999 onto current main d0e6a28 and rerun exact-head review/CI. |
+| P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Claim the repair, add workflow-wide private TLC admission variables and contract tests, then publish exact-head CI evidence before requalifying AR-1841. |
 
 ### Blocked (84)
 
@@ -646,5 +650,3 @@
 | P0 | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | Unclaimed | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Release completed AR-1363 after exact protected-main verification; no further product action. |
 | P0 | [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md): Authenticated chain enrollment | Unclaimed | Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance. | Run full applicable gates, independently review the chain-enrollment boundary, then publish a clean exact-head PR and monitor all required checks. |
 | P0 | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | Unclaimed | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | PR #269 merged as aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. |
-| P0 | [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md): Runtime-owned dispatch consumer | Unclaimed | Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers. | PR #270 merged as 0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. |
-| P0 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Unclaimed | Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening. | No development action remains. Preserve the exact-main local/mock and strict-replay dispatch receipt; deployment-owned live-provider materialization is optional future hardening. |
