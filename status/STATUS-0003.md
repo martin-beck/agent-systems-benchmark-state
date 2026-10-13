@@ -1946,7 +1946,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline. |
-| Next action | Promote, claim an isolated current-main worktree, reproduce the development &#96;asb tui&#96; PTY lifetime failure, and repair the launcher without weakening broker admission or cleanup. |
+| Next action | Obtain independent exact-head review, run applicable full gates, then publish reviewed PR and required CI. |
 
 ### AR-1851 — AR-1793 v0.7.4 compatibility contracts
 

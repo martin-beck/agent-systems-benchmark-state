@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T16:00:53+00:00",
   "depends_on": [],
   "id": "AR-1850",
-  "next_action": "Promote, claim an isolated current-main worktree, reproduce the development `asb tui` PTY lifetime failure, and repair the launcher without weakening broker admission or cleanup.",
+  "next_action": "Obtain independent exact-head review, run applicable full gates, then publish reviewed PR and required CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:02:32+00:00",
+  "updated_at": "2026-10-13T14:02:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -42,3 +42,8 @@ cross-repository qualification.
 - 2026-10-13T14:00:53+00:00: Claimed by ar1850-development-tui-lifetime-luna.
 
 - 2026-10-13T14:02:32+00:00: Checkpointed source commit 2b42c8c1d24495d1155484b0b3d76bd7f7d0c11d.
+
+- 2026-10-13T14:02:40+00:00: Product checkpoint 671f898b6a859655952a009b9a4468e685d74013
+  (SSH-signed, DCO): removed post-admission 15s child deadline; retained bounded admission and
+  cleanup; extended pinned PTY qualification idle assertion to 16s. cargo fmt --all -- --check and
+  focused spawn/early-exit cleanup tests pass; cross-repo PTY test compiles with --no-run.
