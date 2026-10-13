@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "checkpoint_commit": "4902eb0d316228c9e566a9ceacfa823613a3a9f7",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T22:29:10+00:00",
   "depends_on": [
     "AR-1763",
     "AR-1764",
@@ -13,7 +13,7 @@
   "observed_branch": "feature/ar-1783-installed-workload-selection-and-execution",
   "observed_dirty": 0,
   "observed_head": "bf0e54df10baef9c261d7bf993e093dc009984d1",
-  "owner": "",
+  "owner": "ar1783-workload-selection-luna-20261013",
   "plan": "../plans/AR-1783-installed-workload-selection-and-execution.md",
   "priority": "P0",
   "retry_circuit": {
@@ -52,11 +52,11 @@
   },
   "spec_ref": "specs/AR-1783.json",
   "spec_revision": 2,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift.",
-  "task_revision": 472,
+  "task_revision": 473,
   "title": "Installed workload selection and execution",
-  "updated_at": "2026-10-13T19:40:16+00:00",
+  "updated_at": "2026-10-13T20:29:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1783-installed-workload-selection-and-execution"
 }
 ---
@@ -1235,3 +1235,5 @@ the suite from this end-to-end path.
   lack reviewed identities in generated diagnostic_legacy_catalog_compact.rs. Next action: owning
   generated-catalog repair, then rerun exact-head serialized coverage without weakening the fixed
   90% floor.
+
+- 2026-10-13T20:29:10+00:00: Claimed by ar1783-workload-selection-luna-20261013.
