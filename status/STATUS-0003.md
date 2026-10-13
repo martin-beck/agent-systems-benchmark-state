@@ -2092,11 +2092,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1861-resume-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. |
@@ -3020,7 +3020,7 @@ flowchart LR
         AR_1858["AR-1858 - Open"]:::status_open
         AR_1859["AR-1859 - Planned"]:::status_planned
         AR_1860["AR-1860 - Done"]:::status_done
-        AR_1861["AR-1861 - In progress"]:::status_in_progress
+        AR_1861["AR-1861 - Blocked"]:::status_blocked
         AR_1862["AR-1862 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002

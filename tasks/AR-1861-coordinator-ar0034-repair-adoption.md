@@ -2,19 +2,19 @@
 {
   "branch": "codex/ar1861-coordinator-adoption",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T20:33:25+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1861",
   "next_action": "Complete focused/full/formal/privacy gates on exact v0.7.8 development vendor; initial direct pytest lacked jsonschema, state venv run is in progress with failures to classify. Preserve AR-1826.",
-  "owner": "ar1861-resume-luna",
+  "owner": "",
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T18:35:03+00:00",
+  "updated_at": "2026-10-13T18:35:31+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -84,3 +84,14 @@ or mutate AR-1826 until the adopted repair is verified.
 
 - 2026-10-13T18:35:03+00:00: Recorded command exit 0; command argv SHA-256
   41a72cd0f56278e9af92b3f06ed20bc8b0bec45cbaf5ce7ec091faefdbb15355.
+
+- 2026-10-13T18:35:31+00:00: Terminal gate evidence: exact sync-development and handoffctl run
+  succeeded; vendor verify passed at eee760513969a2929512df3c822aab9d769bf057. Adoption checkout
+  PYTHONPATH=. state-venv pytest completed 2120 passed, 17 failed, 1312 subtests passed in 454.93s.
+  Failures include legacy worktree-binding expectations, vendor attestation expectations, role
+  expiry fixture assumptions, issue-series SQLite parity, upgrade binding, and rollback lock
+  timeout. Canonical unrelated v0.7.8 full unittest coverage process completed its && chain;
+  coverage report exited 0 at 95% (19858 statements, 95%), but that checkout is pinned f1f42d4, not
+  AR-0111 eee7605, so it is not adoption evidence. Cleaned generated pyc only via handoffctl run;
+  AR-1826 untouched. Route formal lifecycle compatibility to existing AR-1862; no publication or
+  release.
