@@ -79,12 +79,12 @@
     "task_revision": 117
   },
   "execution_result": {
-    "argv_digest": "d9c54a8ded9eb49a8ac8acd11783c37335a39eb7f8ee04b39da415c8c3d7c02c",
+    "argv_digest": "64d1ed39bd46b482a083d42a59e0887b52ff2e0b66c78c08d3655469eaae9fcd",
     "classification": "EXIT",
     "envelope_digest": "sha256:2ced3a87098a532733346fc0a8ca95a633aab9d21440ac7914f4c2024b1fcda9",
-    "execution_id": "a43371e8ca7a4db0bcddbeb209b353de",
+    "execution_id": "e6def516a6684f2da99040b3c3dc2072",
     "owner": "ar1852-requalify-luna4",
-    "recorded_at": "2026-10-13T22:09:22+00:00",
+    "recorded_at": "2026-10-13T22:09:59+00:00",
     "returncode": 1
   },
   "id": "AR-1852",
@@ -161,9 +161,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T22:09:57+00:00",
+  "updated_at": "2026-10-13T22:10:00+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -551,3 +551,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   d9c54a8ded9eb49a8ac8acd11783c37335a39eb7f8ee04b39da415c8c3d7c02c.
 
 - 2026-10-13T22:09:57+00:00: Reserved bound execution e6def516a6684f2da99040b3c3dc2072.
+
+- 2026-10-13T22:10:00+00:00: Recorded execution result e6def516a6684f2da99040b3c3dc2072.
