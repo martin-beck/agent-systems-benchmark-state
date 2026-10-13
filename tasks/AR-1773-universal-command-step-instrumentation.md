@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T00:01:47+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -82,7 +82,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "asb_ar1773_runner_root_luna4",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -96,11 +96,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T22:02:31+00:00",
+  "updated_at": "2026-10-13T22:03:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -339,3 +339,9 @@ non-TTY compatibility.
 
 - 2026-10-13T22:02:31+00:00: Recorded command exit 6; command argv SHA-256
   7a18ec3878fbe29976862f2e543ccb31264435f6a9c5a45689250766fa52a0bc.
+
+- 2026-10-13T22:03:06+00:00: Released ownerless after exact handoffctl runner-root attempt: required
+  bound executions exited 4/6 before qualifying the full runner envelope. Preserve next action: an
+  authorized runner-root repair must mount pinned Cargo 1.93.0, compiler/linker support, complete
+  workspace source, required identity files, and network-denied fixtures; then rerun exact-head
+  focused/full tests through handoffctl. No product source or gate changes.
