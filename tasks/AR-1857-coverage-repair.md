@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1857-coverage-repair",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T17:08:09+00:00",
   "depends_on": [],
   "id": "AR-1857",
   "next_action": "Repair the recorded 94% full-gate coverage deficit without lowering the 95% threshold; preserve PR #145 unmerged until review and exact-head CI pass.",
-  "owner": "",
+  "owner": "ar1857-coverage-repair-luna",
   "plan": "../plans/AR-1857-coverage-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1857.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Restore the full-gate coverage floor after the terminal 94% observation.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Full-gate coverage floor repair",
-  "updated_at": "2026-10-13T15:07:41+00:00",
+  "updated_at": "2026-10-13T15:08:09+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1857-coverage-repair"
 }
 ---
@@ -39,3 +39,5 @@ modify AR-1841 or AR-1856 ownership and must not weaken formal/resource gates.
 - 2026-10-13T15:07:41+00:00: Dependencies verified: independent coverage successor to AR-1849;
   observed 1,636/1,636 tests with 94% coverage against unchanged 95% floor; PR #145 remains
   unmerged.
+
+- 2026-10-13T15:08:09+00:00: Claimed by ar1857-coverage-repair-luna.
