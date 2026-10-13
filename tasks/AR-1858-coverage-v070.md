@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T18:11:12+00:00",
   "depends_on": [],
   "id": "AR-1858",
-  "next_action": "The first per-test probe is invalid because its helper lacked __main__ guard, causing multiprocessing spawn bootstrap errors. After bounded probe ends, replace helper with guarded runner and rerun only multiprocessing suspect tests; keep all probe output non-evidence.",
+  "next_action": "Guarded exact-root runner completed test_issue_series_handoffctl.py successfully (handoffctl command exit 0 at 16:10:28Z). The 29% coverage artifact is intentionally partial (single file, not a floor result). Continue guarded split suites with absolute source and append, then run full guarded suite; do not accept partial coverage or change 95% threshold.",
   "owner": "ar1858-coverage-v070-luna",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:11:12+00:00",
+  "updated_at": "2026-10-13T16:11:20+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -202,3 +202,9 @@ artifact. Do not lower the threshold or merge PR #145.
   5fc7f720e61d3e7f3c8b726267a42f59d0a0298a1a909253c4add84006f1e922.
 
 - 2026-10-13T16:11:12+00:00: Heartbeat by ar1858-coverage-v070-luna.
+
+- 2026-10-13T16:11:20+00:00: Harness repair outcome: __main__-guarded runner eliminated the prior
+  multiprocessing hang; exact-root test_issue_series_handoffctl.py completed under 600s. Coverage
+  /tmp/ar1858-issue-fixed.coverage reports 29% only because it covers one test file and all source
+  modules; this is not a gate result. Prior 300s timeout and unguarded-helper failures remain
+  invalid evidence. No product code changed.
