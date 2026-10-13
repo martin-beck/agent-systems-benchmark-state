@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T16:32:14+00:00",
   "depends_on": [],
   "id": "AR-1856",
-  "next_action": "Inspect current protected-main refs and preserve the immutable PR #631 merge failure before creating a forward-only recovery topic.",
+  "next_action": "Await independent exact-head review and terminal-success required checks for PR #633 at product head 6e3c57ca6550d35a5997d214479939f525e1d0e3; then merge only via tools/integration/merge_pr.py --push and verify all exact-main workflows.",
   "owner": "ar1856-protected-main-repair-luna",
   "plan": "../plans/AR-1856-pr631-protected-main-identity-recovery.md",
   "priority": "P0",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "PR #631 protected-main identity recovery",
-  "updated_at": "2026-10-13T14:38:52+00:00",
+  "updated_at": "2026-10-13T14:40:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1856-pr631-protected-main-identity"
 }
 ---
@@ -98,3 +98,9 @@ AR-1850's TUI implementation or AR-1841's Coordinator adoption/state vendor.
 
 - 2026-10-13T14:38:52+00:00: Recorded command exit 0; command argv SHA-256
   a11078b0611baade8e38b4887ceafa3db0d448675a25bdd405d9ea6a99ab098c.
+
+- 2026-10-13T14:40:06+00:00: Corrected initial synchronization failure: PR #632 was based on
+  pre-merge d0e6a28 and was closed with evidence preserved. Created PR #633 from current protected
+  main 9d2290dc with exact-tree signed-DCO empty recovery commit 6e3c57ca. Local repository policy
+  passed; portable provenance check is green; remaining required CI is in progress. Canonical state
+  main restored and doctor --live passes.

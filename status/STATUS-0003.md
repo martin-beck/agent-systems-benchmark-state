@@ -2030,7 +2030,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer. |
-| Next action | Inspect current protected-main refs and preserve the immutable PR #631 merge failure before creating a forward-only recovery topic. |
+| Next action | Await independent exact-head review and terminal-success required checks for PR #633 at product head 6e3c57ca6550d35a5997d214479939f525e1d0e3; then merge only via tools/integration/merge_pr.py --push and verify all exact-main workflows. |
 
 
 ## Dependency graph
