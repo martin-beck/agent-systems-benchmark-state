@@ -2,12 +2,12 @@
 {
   "branch": "codex/ar1841-v053-adoption",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T12:52:19+00:00",
+  "claim_expires": "2026-10-13T13:02:14+00:00",
   "depends_on": [
     "AR-1795"
   ],
   "id": "AR-1841",
-  "next_action": "Rebase/rebuild PR #142 against protected main 5229b166a9df1c49fa6956e4ccf4340ae6b3abea, rerun focused and full applicable gates, then exact-head review and CI.",
+  "next_action": "Re-vendor exact signed Coordinator v0.7.4 at 2ea256d0c0bdcb9922c88e6778a104b33c0e47da, rerun focused/full gates, then exact-head review and CI.",
   "owner": "ar1841-v053-adoption-luna",
   "plan": "../plans/AR-1841-coordinator-v053-adoption.md",
   "priority": "P0",
@@ -23,10 +23,10 @@
   "spec_ref": "specs/AR-1841.json",
   "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Adopt Coordinator v0.5.3 with partial legacy worktree binding.",
-  "task_revision": 85,
+  "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
+  "task_revision": 135,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T10:52:19+00:00",
+  "updated_at": "2026-10-13T12:45:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -290,3 +290,160 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
   9ae2bddb263043e3cf2d4bd712f9bb663218996d731e34a0969adfa67f88f8aa.
 
 - 2026-10-13T10:52:19+00:00: Heartbeat by ar1841-v053-adoption-luna.
+
+- 2026-10-13T10:52:22+00:00: Recorded command exit 1; command argv SHA-256
+  614552b7d23cb1aa07fb6a692f28bbc491283db9f39cb697f64190e832edfc7a.
+
+- 2026-10-13T10:52:35+00:00: Recorded command exit 0; command argv SHA-256
+  52b8441625dc4e7b2f60a0351be60a5ef882501f80c5139e80d3a06792e80e64.
+
+- 2026-10-13T10:52:43+00:00: Recorded command exit 0; command argv SHA-256
+  085fa38e99d9cc2b7dbaaa619500e2b34128bbd3f7be68a5c72662d9d6ede785.
+
+- 2026-10-13T10:52:50+00:00: Recorded command exit 0; command argv SHA-256
+  fe38c02958eecc086a268be682bb5ee12160c3be0bb153e4fb03a1b091039f62.
+
+- 2026-10-13T10:53:02+00:00: Recorded command exit 0; command argv SHA-256
+  9f5d73d55a98f805bd0362582e6c934e1680defdddb582a21c4072dcef54d725.
+
+- 2026-10-13T10:58:07+00:00: Heartbeat by ar1841-v053-adoption-luna.
+
+- 2026-10-13T10:58:12+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-10-13T10:58:33+00:00: Recorded command exit 0; command argv SHA-256
+  6b03fb7ca49754f0272482b61a879151c768cbba6322e23a2033e33866d55fc3.
+
+- 2026-10-13T10:58:51+00:00: Recorded command exit 0; command argv SHA-256
+  8927f85932f437804b45c70762b3495172963f904635e7f8daf6537852f2bb9f.
+
+- 2026-10-13T10:59:11+00:00: Recorded command exit 0; command argv SHA-256
+  b8e0f8e03c77f5e84d87afb8eac1b8038668fa8760ce59a6d7e280d6278333af.
+
+- 2026-10-13T10:59:14+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-10-13T10:59:40+00:00: Recorded command exit 0; command argv SHA-256
+  177b4fd0878c6f4d5392cc128daac008d65c01463b5c38e3228e6bde7226642c.
+
+- 2026-10-13T10:59:43+00:00: Recorded command exit 0; command argv SHA-256
+  f5f768a8b375d452e64e4150b968cbf4b12eaab05f71fcb5bcf90cdac90d5ea1.
+
+- 2026-10-13T10:59:48+00:00: Recorded command exit 0; command argv SHA-256
+  9e808f764c153d2f3035fc39bfa8cca7bbe5bc485685eb9f14c5241806c63cb2.
+
+- 2026-10-13T10:59:56+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-10-13T10:59:59+00:00: Recorded command exit 129; command argv SHA-256
+  1278e0deacbe43a83b1929801d82818ee243fc1aaaae81a4f66128affea93691.
+
+- 2026-10-13T11:00:36+00:00: Recorded command exit 127; command argv SHA-256
+  93755d4fa7111964e8460ff49bdd671943a7baee43f156c0ff143e0d4130ad81.
+
+- 2026-10-13T11:00:49+00:00: Recorded command exit 1; command argv SHA-256
+  150a88c0be45255ec54158507d37886b65556669ab15a737508fae63b9b765e0.
+
+- 2026-10-13T11:00:59+00:00: Recorded command exit 1; command argv SHA-256
+  eaf3e6f9cd25f2aae76f4eebc51c753ad9ada1ed5e537b5f4d351939e961f087.
+
+- 2026-10-13T11:01:09+00:00: Recorded command exit 0; command argv SHA-256
+  9cc424e25e876cbf33dc9067ab443e6807183d394ebb26dfd53226e8f72abb05.
+
+- 2026-10-13T11:02:14+00:00: Heartbeat by ar1841-v053-adoption-luna.
+
+- 2026-10-13T11:02:27+00:00: Recorded command exit 0; command argv SHA-256
+  6b7a19dead2dc52e96520d2456feafbf09d4587bca2a9959ac61613194ce7fde.
+
+- 2026-10-13T11:02:47+00:00: Recorded command exit 0; command argv SHA-256
+  2e21ff74f04ff6709df7505cfc71ba75767b401f27868799088eae67eca81ad8.
+
+- 2026-10-13T11:02:58+00:00: Recorded command exit 0; command argv SHA-256
+  784d9676a955bf33ada8621d7378d8a8ca4cefed2e5be7c30f44dbfe951dd9e6.
+
+- 2026-10-13T11:03:06+00:00: Recorded command exit 0; command argv SHA-256
+  c654afe2d5d284e2c5ee9413dcdc148cf99cd75132dd7abcb44a69e2b08dcad1.
+
+- 2026-10-13T11:03:17+00:00: Recorded command exit 0; command argv SHA-256
+  facf8679d652a4db719de44e332035c2314b120c8b1e32b46ee2c05ba4a6ca7c.
+
+- 2026-10-13T11:10:30+00:00: Recorded command exit 0; command argv SHA-256
+  fa8b5b71edf3200d321ee3c09e348eccd55c38732142f7ba47f3a35c7d1b1356.
+
+- 2026-10-13T11:10:54+00:00: Recorded command exit 0; command argv SHA-256
+  d805dc28d38a8af70e9139baf44914ea1fc662d9f5cee63f4c7a20ea196c203a.
+
+- 2026-10-13T11:11:03+00:00: Recorded command exit 0; command argv SHA-256
+  7c309c5feaffda3a4221e6e269083cea46c20d73d3b5ce686735589771845439.
+
+- 2026-10-13T11:11:21+00:00: Recorded command exit 0; command argv SHA-256
+  7f9b876ec1d94d2462bba65e9b57286535cbbb1cca33b7fac0b92bd7811f79c9.
+
+- 2026-10-13T11:11:31+00:00: Recorded command exit 0; command argv SHA-256
+  c18b8db1e53fa8100916a815b9ee740fddbd7d0158923e05f4dbd290a9bfa4f5.
+
+- 2026-10-13T12:02:47+00:00: Recorded command exit 1; command argv SHA-256
+  72d086d3e24f3e4835782bdf728a15ae745b8894e9c2acfdb5ffc91ba29edc07.
+
+- 2026-10-13T12:02:57+00:00: Recorded command exit 0; command argv SHA-256
+  6e1079ad62d490e9ab9deaace0441bb6ae2c073af6f28ec4b7cdfaa3f7da15a8.
+
+- 2026-10-13T12:03:08+00:00: Recorded command exit 1; command argv SHA-256
+  72d086d3e24f3e4835782bdf728a15ae745b8894e9c2acfdb5ffc91ba29edc07.
+
+- 2026-10-13T12:04:25+00:00: Recorded durable blocker: upstream v0.7.3 tag 95c6b559 has pyproject
+  and COORDINATOR_VERSION 0.7.2, conflicting with vendor verifier tag/version identity. Vendor files
+  unchanged; PR #142 remains unmerged.
+
+- 2026-10-13T12:39:55+00:00: Coordination role cleanup verified 2026-10-13T12:39:38Z: exact-revision
+  roles remove advanced .runtime/roles.json revision 57->74 and removed only 17 assignments already
+  expired at 2026-10-13T12:30:00Z; all 26 unexpired assignments, including AR-1841
+  implementer/reviewer and AR-1849 implementer roles through 23:00:00Z, remain unchanged. roles.json
+  sha256 8d88f01a5cc060fefd50fafc5fbe4fb808a7587e44431a874ddb766243089703. handoffctl reconcile
+  --commit --push ticket 8141 completed with pending_paths []; doctor --live passed before and after
+  reconcile. Oversized generated pycache was moved recoverably outside state checkout. Vendor files
+  and ownership/lease fields were not changed. AR-1841 may resume only after corrected upstream
+  v0.7.3 metadata and exact immutable re-vendoring; do not start v0.7.4 sync from current tag
+  95c6b559 reporting runtime 0.7.2.
+
+- 2026-10-13T12:40:43+00:00: Recorded command exit 0; command argv SHA-256
+  f90bf574bfea5804c1af55cf93814c132c31acb972c877f6c6845d912a232b27.
+
+- 2026-10-13T12:40:54+00:00: Recorded command exit 0; command argv SHA-256
+  1d55fa8c5f631c96e9b1dbdf623cc50c17a22c8b9f734ea35614819cecd85f08.
+
+- 2026-10-13T12:41:02+00:00: Recorded command exit 1; command argv SHA-256
+  f1a19234d831c14da7838892be6f1e7fea4733539ea45df1b985e2acc64db2cc.
+
+- 2026-10-13T12:41:49+00:00: Retargeted adoption from stale v0.5.3 to corrected v0.7.4 release;
+  preserve historical v0.5.3 evidence entries.
+
+- 2026-10-13T12:42:01+00:00: Recorded command exit 0; command argv SHA-256
+  f1a19234d831c14da7838892be6f1e7fea4733539ea45df1b985e2acc64db2cc.
+
+- 2026-10-13T12:42:20+00:00: Recorded command exit 0; command argv SHA-256
+  9c6850cb1ac71d290d1e880a7b273e2ec676f5230434f202121e1d402e9bc9af.
+
+- 2026-10-13T12:42:27+00:00: Recorded command exit 0; command argv SHA-256
+  24a421cae2838ddad0864194b6778c80ca5d2a71c0550e8e5bd6b472f0458041.
+
+- 2026-10-13T12:42:44+00:00: Recorded command exit 1; command argv SHA-256
+  1ee954fa5de1279bb2f0e8d362718ad5490be9850d05692037b2747e44ab386d.
+
+- 2026-10-13T12:43:23+00:00: Recorded command exit 0; command argv SHA-256
+  f1a19234d831c14da7838892be6f1e7fea4733539ea45df1b985e2acc64db2cc.
+
+- 2026-10-13T12:43:41+00:00: Recorded command exit 0; command argv SHA-256
+  aaf35e35db5b484a39b800b6be912e989f46109de8434a4760fa1c61fc6bfe0a.
+
+- 2026-10-13T12:43:50+00:00: Recorded command exit 0; command argv SHA-256
+  cc3b3487272b6def6860788a42c5227200abc12b17be771c58b0a530f5d4ccbb.
+
+- 2026-10-13T12:44:02+00:00: Recorded command exit 0; command argv SHA-256
+  1ee954fa5de1279bb2f0e8d362718ad5490be9850d05692037b2747e44ab386d.
+
+- 2026-10-13T12:44:15+00:00: Recorded command exit 0; command argv SHA-256
+  facf8679d652a4db719de44e332035c2314b120c8b1e32b46ee2c05ba4a6ca7c.
+
+- 2026-10-13T12:45:29+00:00: Recorded command exit 1; command argv SHA-256
+  40b692a745f2ed49269f787a98e49110420f946fcf3de42a6521c324f0d56e25.

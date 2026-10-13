@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1849.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "workflow-scope", "description": "The private TLC admission queue and lock are available to every formal workflow command."},
+    {"id": "contract-tests", "description": "Positive and negative tests cover the absolute private admission paths without weakening fail-closed behavior."},
+    {"id": "requalification", "description": "Dependent AR-1841 is requalified only after exact-head CI for this repair is terminal green."}
+  ],
+  "definition_of_done": [
+    "The hosted formal workflow exports runner-private TLC admission paths at job scope.",
+    "Focused and full applicable gates pass with positive and negative coverage.",
+    "Independent review and exact-head CI evidence are recorded before AR-1841 requalification."
+  ],
+  "inputs": [
+    {"id": "failure", "description": "Hosted formal unittest failures caused by fallback to the root-owned /tmp admission lock."}
+  ],
+  "outputs": [
+    {"id": "workflow-repair", "description": "Workflow-wide private TLC admission environment and regression tests."}
+  ],
+  "allowed_tools": ["git", "python", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["formal-gate-removal", "resource-bound-weakening", "history-rewrite", "force-push-main"],
+  "required_evidence_classes": ["mechanical", "contract-test", "environmental"],
+  "gates": [
+    {"id": "workflow", "description": "Workflow trigger and environment contract checks pass."},
+    {"id": "quality", "description": "Focused and full state quality gates pass."},
+    {"id": "publication", "description": "Independent review, exact-head CI, and signed DCO publication pass."}
+  ]
+}
