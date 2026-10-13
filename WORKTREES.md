@@ -292,8 +292,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1825-source-to-executable-adapter-runtime-contract` | `feature/ar-1825-source-to-executable-adapter-runtime-contract` | `630d380866e4` | 0 | behind 24, ahead 0 |
 | `agent-systems-benchmark-ar-1835-authenticated-control-live-isolation-repair` | `feature/ar-1835-authenticated-control-live-isolation-repair` | `06565d3de95a` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1839` | `codex/ar-1839-cross-process-fixture` | `46ac642c40ce` | 0 | behind 7, ahead 1 |
-| `agent-systems-benchmark-ar-1863-control-diagnostic-catalog` | `codex/ar-1863-control-diagnostic-catalog` | `870331be533e` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs` |
+| `agent-systems-benchmark-ar-1863-control-diagnostic-catalog` | `codex/ar-1863-control-diagnostic-catalog` | `6215f49dcb7c` | 0 | behind 0, ahead 1 |
 | `ar1826-review.IL8AVJ` | `DETACHED` | `ecf3ed20fa15` | 0 | behind 7, ahead 3 |
 | `ar1850-main-verify` | `DETACHED` | `870331be533e` | 0 | behind 0, ahead 0 |
 | `asb-pr307-review-d0e6a28a` | `DETACHED` | `d0e6a28a81b4` | 0 | behind 4, ahead 0 |
