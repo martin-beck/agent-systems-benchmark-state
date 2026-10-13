@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Recover protected-main provenance after PR #631 was GitHub-web-merged with a non-local committer.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "PR #631 protected-main identity recovery",
-  "updated_at": "2026-10-13T14:52:03+00:00",
+  "updated_at": "2026-10-13T14:52:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1856-pr631-protected-main-identity"
 }
 ---
@@ -106,3 +106,6 @@ AR-1850's TUI implementation or AR-1841's Coordinator adoption/state vendor.
   main restored and doctor --live passes.
 
 - 2026-10-13T14:52:03+00:00: Heartbeat by ar1856-protected-main-repair-luna.
+
+- 2026-10-13T14:52:14+00:00: Recorded command exit 1; command argv SHA-256
+  c265e7c8499763bc50a2bf285aeb1a27dbed1d4433c32e6dceda7184d4a97bdc.
