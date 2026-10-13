@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T18:56:43+00:00",
   "depends_on": [],
   "id": "AR-1860",
-  "next_action": "Create clean state-only PR from codex/ar1860-state-pr, obtain independent review and exact-head CI, merge coordination changes, then record product PR/merge/post-merge evidence.",
+  "next_action": "Create PR for pushed codex/ar1860-formal-work-root, obtain independent exact-head review and hosted CI, merge, then verify exact-main post-merge assurance.",
   "owner": "ar1857-coverage-repair-luna",
   "plan": "../plans/AR-1860-formal-work-root-adoption.md",
   "priority": "P0",
@@ -24,8 +24,8 @@
   "summary": "Adopt and qualify the dependency-safe v0.7.0 formal work-root repair.",
   "task_revision": 18,
   "title": "Dependency-safe formal work-root repair adoption",
-  "updated_at": "2026-10-13T17:07:10+00:00",
-  "worktree_key": "asb-state-coordinator-v070-ar1860-formal-work-root"
+  "updated_at": "2026-10-13T17:10:39+00:00",
+  "worktree_key": "agent-systems-benchmark-ar1860-formal-work-root"
 }
 ---
 
@@ -82,6 +82,5 @@ coverage floor and all formal gates.
 - 2026-10-13T17:05:39+00:00: Exact-head review: 89/89 commits from origin/main are SSH-signed and
   carry DCO trailers; product worktree clean. Candidate branch pushed to origin for PR publication.
 
-- 2026-10-13T17:07:10+00:00: Closed invalid PR #150: it accidentally published the product worktree
-  history to the state repository. Product qualification evidence is preserved; replacement PR must
-  contain only AR-1860 state records and projections.
+- 2026-10-13T17:10:39+00:00: Recorded command exit 0; command argv SHA-256
+  6ec39729fa000aadc6afbd94bbf0c1639087072caf2c16bc994e4a29e7da65d2.
