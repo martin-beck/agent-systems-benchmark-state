@@ -2,24 +2,24 @@
 {
   "branch": "feature/ar1850-development-tui-interactive-lifetime",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T16:00:53+00:00",
   "depends_on": [],
   "id": "AR-1850",
   "next_action": "Promote, claim an isolated current-main worktree, reproduce the development `asb tui` PTY lifetime failure, and repair the launcher without weakening broker admission or cleanup.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1850-development-tui-lifetime-luna",
   "plan": "../plans/AR-1850-development-tui-interactive-lifetime.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1850.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T12:08:38+00:00",
+  "updated_at": "2026-10-13T14:00:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -38,3 +38,5 @@ cross-repository qualification.
 
 - 2026-10-13T12:08:38+00:00: P0 user-reported development TUI launcher lifetime repair is
   dependency-ready.
+
+- 2026-10-13T14:00:53+00:00: Claimed by ar1850-development-tui-lifetime-luna.
