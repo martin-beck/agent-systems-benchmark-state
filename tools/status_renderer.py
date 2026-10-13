@@ -227,7 +227,7 @@ def _hierarchy_rollups(tasks: list[Task]) -> list[str]:
         role, team = _rollup_group(meta)
         lines.extend(
             [
-                f"### {_plain(meta['id'])} — {_plain(meta['title'])}",
+                f"### {_plain(meta['id'])} — {_plain(meta.get('short_title') or meta['title'])}",
                 "",
                 "| Field | Value |",
                 "| --- | --- |",
@@ -347,7 +347,8 @@ def _inventory(
         )
         for _, meta, _ in rows:
             owner = meta.get("owner") or "Unclaimed"
-            task = f"{_task_link(meta['id'], filenames)}: {_plain(meta['title'])}"
+            title = _plain(meta.get("short_title") or meta["title"])
+            task = f"{_task_link(meta['id'], filenames)}: {title}"
             lines.append(
                 f"| {meta['priority']} | {task} | {_plain(owner)} | "
                 f"{_plain(meta['summary'])} | {_plain(meta['next_action'])} |"

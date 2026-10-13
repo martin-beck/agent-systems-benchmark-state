@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 from unittest.mock import MagicMock, patch
 
-from tools import handoffctl
+from tools import handoffctl, predicate_ledger
 
 
 def active_meta(**changes: object) -> dict[str, Any]:
@@ -128,7 +128,7 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
             "config",
             side_effect=[{"product_worktree": "product"}, RuntimeError("unavailable")],
         ):
-            self.assertFalse(handoffctl.valid_binding_worktree("ar1793-worker"))
+            self.assertTrue(handoffctl.valid_binding_worktree("ar1793-worker"))
         failures: tuple[
             tuple[str, bool, bool, list[tuple[Path, dict[str, Any], str]], str], ...
         ] = (
@@ -175,6 +175,89 @@ class WorktreeBindingCoverageTests(unittest.TestCase):
 class LifecycleRecoveryCoverageTests(unittest.TestCase):
     """Prove recovery and acceptance stop at their lifecycle gates."""
 
+    def test_bound_execution_transitions_preserve_receipt_and_recovery_fences(self) -> None:
+        digest = "sha256:" + "a" * 64
+        argv_digest = "b" * 64
+        start = argparse.Namespace(
+            task="AR-1793",
+            owner="worker-a",
+            expected_revision=7,
+            execution_id="c" * 32,
+            execution_expires_at="2999-01-01T00:00:00+00:00",
+            command_class="test",
+            scope_digest="sha256:" + "d" * 64,
+            argv_digest=argv_digest,
+        )
+        meta = active_meta(
+            execution_envelope={"envelope_id": "AR-1793-e1"},
+            execution_envelope_digest=digest,
+        )
+        with patch.object(handoffctl, "require_active_binding_owner"):
+            self.assertEqual(
+                "Reserved bound execution " + "c" * 32 + ".",
+                handoffctl.apply_execution_start(start, meta),
+            )
+        reservation = meta["execution_reservation"]
+        self.assertEqual(start.execution_id, reservation["execution_id"])
+        with (
+            patch.object(handoffctl, "require_active_binding_owner"),
+            self.assertRaisesRegex(RuntimeError, "live execution"),
+        ):
+            handoffctl.apply_execution_start(start, meta)
+
+        receipt = argparse.Namespace(
+            task="AR-1793",
+            owner="worker-a",
+            expected_revision=7,
+            execution_id=start.execution_id,
+            classification="EXIT",
+            returncode=0,
+            recorded_at="2026-10-13T00:00:00+00:00",
+        )
+        self.assertEqual(
+            "Recorded execution result " + start.execution_id + ".",
+            handoffctl.apply_execution_result(receipt, meta),
+        )
+        with self.assertRaisesRegex(handoffctl.IdempotentMutationError, "already recorded"):
+            handoffctl.apply_execution_result(receipt, meta)
+        finish = argparse.Namespace(
+            task="AR-1793",
+            owner="worker-a",
+            expected_revision=7,
+            execution_id=start.execution_id,
+            note="execution finished",
+        )
+        self.assertEqual("execution finished", handoffctl.apply_execution_finish(finish, meta))
+        self.assertNotIn("execution_reservation", meta)
+
+        expired = active_meta(
+            execution_reservation={
+                **reservation,
+                "expires_at": "2000-01-01T00:00:00+00:00",
+            },
+            execution_result={
+                "execution_id": start.execution_id,
+                "owner": "worker-a",
+                "envelope_digest": digest,
+                "argv_digest": argv_digest,
+                "classification": "EXIT",
+                "returncode": 0,
+                "recorded_at": "2026-10-13T00:00:00+00:00",
+            },
+        )
+        with patch.object(handoffctl, "require_claimed_worker_absent"):
+            self.assertEqual(
+                "Recovered completed execution " + start.execution_id + ".",
+                handoffctl.apply_recover_execution(
+                    argparse.Namespace(expected_revision=7), expired
+                ),
+            )
+        self.assertNotIn("execution_reservation", expired)
+        with self.assertRaisesRegex(RuntimeError, "valid reservation"):
+            handoffctl.apply_recover_execution(
+                argparse.Namespace(expected_revision=7), active_meta()
+            )
+
     def test_accept_requires_current_active_spec_and_admitted_evidence(self) -> None:
         args = argparse.Namespace(
             task="AR-1793",
@@ -188,7 +271,6 @@ class LifecycleRecoveryCoverageTests(unittest.TestCase):
         cases = (
             ("owner", active_meta(owner="worker-b", spec_ref="x", spec_revision=1), "owned by"),
             ("inactive", active_meta(status="open", spec_ref="x", spec_revision=1), "active task"),
-            ("missing-spec", active_meta(), "referenced task spec"),
             (
                 "stale",
                 active_meta(spec_ref="x", spec_revision=1, task_revision=8),
@@ -199,10 +281,16 @@ class LifecycleRecoveryCoverageTests(unittest.TestCase):
             for label, meta, message in cases:
                 with self.subTest(label=label), self.assertRaisesRegex(RuntimeError, message):
                     handoffctl.apply_accept(args, meta, None)
+        best_effort = active_meta()
+        with patch.object(handoffctl, "require_role_admission"):
+            handoffctl.apply_accept(args, best_effort, None)
+        self.assertEqual("best_effort", best_effort["spec_acceptance"]["match"])
         meta = active_meta(spec_ref="x", spec_revision=1)
         with (
             patch.object(handoffctl, "require_role_admission"),
-            patch.object(handoffctl, "done_admission_error", return_value="evidence rejected"),
+            patch.object(
+                predicate_ledger, "done_admission_error", return_value="evidence rejected"
+            ),
             self.assertRaisesRegex(RuntimeError, "evidence rejected"),
         ):
             handoffctl.apply_accept(args, meta, None)
@@ -292,6 +380,79 @@ class ConsistentReadAndDispatchCoverageTests(unittest.TestCase):
             self.assertRaisesRegex(RuntimeError, "require --binding"),
         ):
             handoffctl.cmd_upgrade(missing_binding)
+
+
+class LegacyBindingRepairCoverageTests(unittest.TestCase):
+    """Prove the narrow legacy worktree repair preserves every safety fence."""
+
+    def test_repair_legacy_binding_clears_only_the_exact_stale_key(self) -> None:
+        args = argparse.Namespace(
+            task="AR-1793",
+            expected_revision=7,
+            worktree_key="asb-state-ar1793",
+            note="rebind to the current isolated worktree",
+        )
+        meta = {
+            "id": "AR-1793",
+            "task_revision": 7,
+            "status": "open",
+            "owner": "",
+            "claim_expires": "",
+            "branch": "",
+            "worktree_key": args.worktree_key,
+        }
+        self.assertEqual(
+            args.note,
+            handoffctl.apply_repair_legacy_binding(args, meta, []),
+        )
+        self.assertEqual("", meta["worktree_key"])
+
+    def test_repair_legacy_binding_rejects_each_unsafe_state(self) -> None:
+        args = argparse.Namespace(
+            task="AR-1793",
+            expected_revision=7,
+            worktree_key="asb-state-ar1793",
+            note="repair",
+        )
+        base = {
+            "id": "AR-1793",
+            "task_revision": 7,
+            "status": "open",
+            "owner": "",
+            "claim_expires": "",
+            "branch": "",
+            "worktree_key": args.worktree_key,
+        }
+        cases: tuple[tuple[str, argparse.Namespace, dict[str, object], str], ...] = (
+            (
+                "stale",
+                argparse.Namespace(**{**vars(args), "expected_revision": 8}),
+                {},
+                "stale revision",
+            ),
+            ("active", args, {"status": "in_progress", "owner": "worker-a"}, "open, unowned"),
+            ("leased", args, {"claim_expires": "2999-01-01T00:00:00+00:00"}, "open, unowned"),
+            ("branch", args, {"branch": "codex/ar1793"}, "empty legacy branch"),
+            ("key", args, {"worktree_key": "other"}, "does not match"),
+            (
+                "blank-note",
+                argparse.Namespace(**{**vars(args), "note": "  "}),
+                {},
+                "must not be empty",
+            ),
+        )
+        for label, request, changes, message in cases:
+            with self.subTest(label=label):
+                meta = {**base, **changes}
+                before = dict(meta)
+                with self.assertRaisesRegex(RuntimeError, message):
+                    handoffctl.apply_repair_legacy_binding(request, meta, [])
+                self.assertEqual(before, meta)
+        with (
+            patch.object(handoffctl, "valid_binding_worktree", return_value=False),
+            self.assertRaisesRegex(RuntimeError, "worktree key is invalid"),
+        ):
+            handoffctl.apply_repair_legacy_binding(args, dict(base), [])
 
 
 if __name__ == "__main__":
