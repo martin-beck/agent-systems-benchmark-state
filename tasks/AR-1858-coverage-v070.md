@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:21:28+00:00",
+  "updated_at": "2026-10-13T16:27:29+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -227,3 +227,6 @@ artifact. Do not lower the threshold or merge PR #145.
   failures, 432.002s. Failures: relative-tlc, ../hostile-tlc, relative/with space; stderr Java
   ClassNotFoundException tlc2.TLC; rc1 instead of expected64. Coverage total 19785 statements, 830
   missed, 7322 branches, 595 partial, 95%; threshold unchanged. No product changes or merge.
+
+- 2026-10-13T16:27:29+00:00: Recorded command exit 0; command argv SHA-256
+  b0f3a29024f387b546335674c46afacadd48dbb27472088e0b3728bd16cee38f.
