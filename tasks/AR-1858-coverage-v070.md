@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T16:04:46+00:00",
+  "updated_at": "2026-10-13T16:04:52+00:00",
   "worktree_key": "asb-state-coordinator-v070-ar1858-coverage-v070"
 }
 ---
@@ -134,3 +134,6 @@ artifact. Do not lower the threshold or merge PR #145.
   300s (handoffctl recorded 16:04:09Z), after hanging with multiprocessing resource_tracker/zombie
   child. No tests after this file ran; /tmp/ar1858-split-all.coverage remains invalid partial
   evidence.
+
+- 2026-10-13T16:04:52+00:00: Recorded command exit 0; command argv SHA-256
+  e92bb3fadd44732a62b4cd01d9e59db8f0444ee5681837e3c06385451906409e.
