@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-13T16:00:53+00:00",
   "depends_on": [],
   "id": "AR-1850",
-  "next_action": "Wait for every required PR #631 check to finish green, verify exact head, merge through handoffctl, then run post-merge PTY validation.",
+  "next_action": "Wait for credential-free rerun and all remaining required checks; if rerun repeats the unrelated fixture failure, stop merge and assign a focused repair AR.",
   "observed_branch": "feature/ar1850-development-tui-interactive-lifetime",
   "observed_dirty": 0,
   "observed_head": "671f898b6a859655952a009b9a4468e685d74013",
@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:09:36+00:00",
+  "updated_at": "2026-10-13T14:09:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -69,3 +69,8 @@ cross-repository qualification.
 
 - 2026-10-13T14:09:36+00:00: Recorded command exit 0; command argv SHA-256
   138d2c1840ff852c43dd72d516eb85dd14b58e25b0417148f52fa00fcc8ceff4.
+
+- 2026-10-13T14:09:53+00:00: PR #631 initial credential-free run 38410493915 failed only in
+  unrelated concurrent source_checkout fixtures: acquisition collision returned Unavailable and
+  poisoned exact-fixture lock; 457 passed/2 failed. Exact TUI inherited-fd/PTY check passed (run
+  38410494755). Reran failed workflow unchanged; rerun job is 115342870094.
