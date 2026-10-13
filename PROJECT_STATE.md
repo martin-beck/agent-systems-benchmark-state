@@ -33,21 +33,21 @@ Generated from local Git and GitHub. Do not edit.
 | #619 | `repair/ar-1779-source-fallback-linear3@21372a22aba3` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): fail closed on unavailable source adapters |
 | #624 | `feature/ar-1783-installed-workload-selection-and-execution@32f42827367d` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): bind installed workloads before execution |
 | #629 | `codex/ar-1826-explicit-setup-contract@e9d95999c0ca` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(config): define explicit setup and plan binding contract |
-| #631 | `feature/ar1850-development-tui-interactive-lifetime@671f898b6a85` | `main` | BLOCKED | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | fix(cli): keep admitted development TUI interactive |
+| #631 | `feature/ar1850-development-tui-interactive-lifetime@671f898b6a85` | `main` | BLOCKED | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(cli): keep admitted development TUI interactive |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38410495133 | `671f898b6a85` | pull_request | Repository quality | in_progress:- |
+| 38410495045 | `671f898b6a85` | pull_request | Huawei MIT source headers | completed:success |
+| 38410494930 | `671f898b6a85` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 38410494852 | `671f898b6a85` | pull_request | Fault assurance | in_progress:- |
+| 38410494755 | `671f898b6a85` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 38410494641 | `671f898b6a85` | pull_request | Portable protected-main provenance | in_progress:- |
+| 38410494620 | `671f898b6a85` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38410494475 | `671f898b6a85` | pull_request | Rust verification | in_progress:- |
+| 38410493915 | `671f898b6a85` | pull_request | Credential-free benchmark path | in_progress:- |
+| 38410493750 | `671f898b6a85` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38410493681 | `671f898b6a85` | pull_request | Development formal assurance | in_progress:- |
 | 38385790668 | `d0e6a28a81b4` | schedule | Fault assurance | completed:success |
-| 38374103406 | `d0e6a28a81b4` | push | Emulated aarch64 portability | completed:success |
-| 38374103335 | `d0e6a28a81b4` | push | Credential-free benchmark path | completed:success |
-| 38374103333 | `d0e6a28a81b4` | push | Development formal assurance | completed:success |
-| 38374103290 | `d0e6a28a81b4` | push | Huawei MIT source headers | completed:success |
-| 38374103270 | `d0e6a28a81b4` | push | Rust verification | completed:success |
-| 38374103128 | `d0e6a28a81b4` | push | Hosted portability and native qualification | completed:success |
-| 38374103107 | `d0e6a28a81b4` | push | Cross-repository development broker qualification | completed:success |
-| 38374103100 | `d0e6a28a81b4` | push | Fault assurance | completed:success |
-| 38374103087 | `d0e6a28a81b4` | push | Portable protected-main provenance | completed:success |
-| 38374103004 | `d0e6a28a81b4` | push | Repository quality | completed:success |
-| 38372373194 | `e9d95999c0ca` | pull_request | Cross-repository development broker qualification | completed:success |
