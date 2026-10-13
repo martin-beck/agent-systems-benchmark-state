@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1857-coverage-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-13T17:08:09+00:00",
+  "claim_expires": "2026-10-13T17:08:59+00:00",
   "depends_on": [],
   "id": "AR-1857",
   "next_action": "Repair the recorded 94% full-gate coverage deficit without lowering the 95% threshold; preserve PR #145 unmerged until review and exact-head CI pass.",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Restore the full-gate coverage floor after the terminal 94% observation.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Full-gate coverage floor repair",
-  "updated_at": "2026-10-13T15:08:17+00:00",
+  "updated_at": "2026-10-13T15:08:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1857-coverage-repair"
 }
 ---
@@ -44,3 +44,5 @@ modify AR-1841 or AR-1856 ownership and must not weaken formal/resource gates.
 
 - 2026-10-13T15:08:17+00:00: Recorded command exit 0; command argv SHA-256
   e106d9998ec904272864aa3dcd98b4ce037394a0a2373e29d959f950cbdc2765.
+
+- 2026-10-13T15:08:59+00:00: Heartbeat by ar1857-coverage-repair-luna.
