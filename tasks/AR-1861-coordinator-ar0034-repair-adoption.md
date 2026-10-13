@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1861-coordinator-ar0034-repair-adoption.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-13T18:35:31+00:00",
+  "updated_at": "2026-10-13T19:00:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -95,3 +95,7 @@ or mutate AR-1826 until the adopted repair is verified.
   AR-0111 eee7605, so it is not adoption evidence. Cleaned generated pyc only via handoffctl run;
   AR-1826 untouched. Route formal lifecycle compatibility to existing AR-1862; no publication or
   release.
+
+- 2026-10-13T19:00:47+00:00: Metadata reconciliation only: identify concrete upstream compatibility
+  blockers AR-1851, AR-1852, AR-1853 and AR-1849; preserve blocked/ownerless status and immutable
+  AR-0111 adoption evidence.
