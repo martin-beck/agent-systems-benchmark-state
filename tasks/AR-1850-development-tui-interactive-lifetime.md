@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:09:53+00:00",
+  "updated_at": "2026-10-13T14:11:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -74,3 +74,6 @@ cross-repository qualification.
   unrelated concurrent source_checkout fixtures: acquisition collision returned Unavailable and
   poisoned exact-fixture lock; 457 passed/2 failed. Exact TUI inherited-fd/PTY check passed (run
   38410494755). Reran failed workflow unchanged; rerun job is 115342870094.
+
+- 2026-10-13T14:11:47+00:00: Recorded command exit 0; command argv SHA-256
+  7d12739e865d55632d6cb72a839447b58e350416d790072224ab5786826269fb.
