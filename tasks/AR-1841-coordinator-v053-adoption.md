@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T14:31:42+00:00",
+  "updated_at": "2026-10-13T14:31:57+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -518,3 +518,6 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
   generated tools/__pycache__/handoffctl.cpython-312.pyc in candidate worktree. A direct cleanup
   wrapper attempt recorded command exit 1 because the pyc path had already changed; no vendor bytes
   were modified. Current exact vendor verify remains green.
+
+- 2026-10-13T14:31:57+00:00: Recorded command exit 0; command argv SHA-256
+  076837f5aff8b25b99bfd17677eedf6c3f9c1994444b25847fb36b9a9e5f6469.
