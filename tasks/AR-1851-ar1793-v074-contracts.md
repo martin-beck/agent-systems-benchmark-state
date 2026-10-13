@@ -25,7 +25,7 @@
   "task_revision": 5,
   "title": "AR-1793 v0.7.4 compatibility contracts",
   "updated_at": "2026-10-13T13:16:16+00:00",
-  "worktree_key": "agent-systems-benchmark-state-ar-1851"
+  "worktree_key": ""
 }
 ---
 
