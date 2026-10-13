@@ -356,7 +356,7 @@ def short_title_errors(path: Path, task_id: str, value: object) -> list[str]:
     return []
 
 
-COORDINATOR_VERSION = "0.7.7"
+COORDINATOR_VERSION = "0.7.8"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -2380,10 +2380,8 @@ def dependency_satisfied(dependency_id: str, tasks: list[Task]) -> bool:
 
 
 def require_role_admission(owner_id: str, required_role: str = "implementer") -> None:
-    roles = __import__(f"{__package__ + '.' if __package__ else ''}roles", fromlist=["r"])
-    roles.require_admission(
-        RUNTIME / "roles.json", ROOT / "examples/roles/role-registry.json", owner_id, required_role
-    )
+    """Retain advisory role compatibility without gating lifecycle progress."""
+    del owner_id, required_role
 
 
 def require_update_role_admission(kind: str, owner_id: str) -> None:
@@ -3596,13 +3594,8 @@ def cmd_render_status(*, check: bool) -> None:
 
 
 def role_doctor_errors() -> list[str]:
-    roles = __import__(f"{__package__ + '.' if __package__ else ''}roles", fromlist=["r"])
-    owners = [
-        (str(m["owner"]), "implementer")
-        for _, m, _ in all_tasks()
-        if m.get("status") == "in_progress" and m.get("owner")
-    ]
-    return cast(list[str], roles.doctor_errors(RUNTIME / "roles.json", owners))
+    """Roles are external metadata and do not gate coordinator health."""
+    return []
 
 
 def doctor_checks(*, live: bool, sqlite: bool, live_state: State | None) -> list[str]:
