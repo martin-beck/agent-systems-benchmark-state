@@ -17,9 +17,26 @@ from typing import Any
 
 UPSTREAM_REPOSITORY = "https://github.com/martin-beck/agent-workflow-coordinator"
 LOCK_NAME = "coordinator.vendor.json"
+RETIRED_DESTINATIONS = ("formal/handoffctl/HandoffctlPR.cfg",)
 SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("tools/handoffctl", "tools/handoffctl"),
     ("tools/handoffctl.py", "tools/handoffctl.py"),
+    ("tools/change_drift.py", "tools/change_drift.py"),
+    ("tools/assumption_revalidation.py", "tools/assumption_revalidation.py"),
+    ("tools/resume_card.py", "tools/resume_card.py"),
+    ("tools/resume_card_runtime.py", "tools/resume_card_runtime.py"),
+    ("tools/campaign.py", "tools/campaign.py"),
+    ("tools/campaign_runtime.py", "tools/campaign_runtime.py"),
+    ("tools/autonomy_limits.py", "tools/autonomy_limits.py"),
+    ("tools/command_results.py", "tools/command_results.py"),
+    ("tools/retry_circuit.py", "tools/retry_circuit.py"),
+    ("tools/run_command.py", "tools/run_command.py"),
+    ("tools/issue_series_service.py", "tools/issue_series_service.py"),
+    ("tools/issue_series.py", "tools/issue_series.py"),
+    ("tools/issue_series_plan.py", "tools/issue_series_plan.py"),
+    ("tools/issue_series_publish.py", "tools/issue_series_publish.py"),
+    ("tools/execution_envelope.py", "tools/execution_envelope.py"),
+    ("tools/execution_receipt.py", "tools/execution_receipt.py"),
     ("tools/fast_receipts.py", "tools/fast_receipts.py"),
     ("tools/fast_observation.py", "tools/fast_observation.py"),
     ("tools/fast_receipt_worker.py", "tools/fast_receipt_worker.py"),
@@ -51,6 +68,7 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("tools/git_backup.py", "tools/git_backup.py"),
     ("tools/lifecycle_session.py", "tools/lifecycle_session.py"),
     ("tools/oracle_lifecycle.py", "tools/oracle_lifecycle.py"),
+    ("tools/predicate_ledger.py", "tools/predicate_ledger.py"),
     ("tools/sqlite_storage.py", "tools/sqlite_storage.py"),
     ("tools/lifecycle_trace.py", "tools/lifecycle_trace.py"),
     ("tools/lock_domain.py", "tools/lock_domain.py"),
@@ -81,8 +99,24 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("tools/production_upgrade_binding.py", "tools/production_upgrade_binding.py"),
     ("tools/upgrade_contract_runtime.py", "tools/upgrade_contract_runtime.py"),
     ("tools/tlc_runner.py", "tools/tlc_runner.py"),
+    ("tools/formal_receipt.py", "tools/formal_receipt.py"),
     ("tools/vendor.py", "tools/handoffctl_vendor.py"),
     ("tests/test_handoffctl.py", "tests/test_handoffctl.py"),
+    ("tests/test_handoffctl_retry_recovery.py", "tests/test_handoffctl_retry_recovery.py"),
+    ("tests/test_assumption_revalidation.py", "tests/test_assumption_revalidation.py"),
+    ("tests/test_resume_card.py", "tests/test_resume_card.py"),
+    ("tests/test_campaign.py", "tests/test_campaign.py"),
+    ("tests/test_autonomy_limits.py", "tests/test_autonomy_limits.py"),
+    ("tests/test_retry_circuit.py", "tests/test_retry_circuit.py"),
+    ("tests/test_predicate_evidence_ledger.py", "tests/test_predicate_evidence_ledger.py"),
+    (
+        "tests/test_assumption_revalidation_formal_model.py",
+        "tests/test_assumption_revalidation_formal_model.py",
+    ),
+    ("tests/test_issue_series_handoffctl.py", "tests/test_issue_series_handoffctl.py"),
+    ("tests/test_concise_titles.py", "tests/test_concise_titles.py"),
+    ("tests/test_execution_envelope.py", "tests/test_execution_envelope.py"),
+    ("tests/test_execution_sandbox.py", "tests/test_execution_sandbox.py"),
     ("tests/test_handoffctl_recovery.py", "tests/test_handoffctl_recovery.py"),
     ("tests/test_fast_receipts.py", "tests/test_fast_receipts.py"),
     ("tests/test_fast_observation.py", "tests/test_fast_observation.py"),
@@ -97,10 +131,12 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("tests/test_checkpoint_records.py", "tests/test_checkpoint_records.py"),
     ("tests/test_hierarchy.py", "tests/test_hierarchy.py"),
     ("tests/test_tlc_runner.py", "tests/test_tlc_runner.py"),
+    ("tests/test_formal_receipt.py", "tests/test_formal_receipt.py"),
     (
         "schema/project-config.schema.json",
         "schema/handoffctl-project-config.schema.json",
     ),
+    ("schema/autonomy-limits-policy.schema.json", "schema/autonomy-limits-policy.schema.json"),
     (
         "schema/project-binding.schema.json",
         "schema/handoffctl-project-binding.schema.json",
@@ -114,6 +150,7 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
         "schema/handoffctl-upgrade-contract.schema.json",
     ),
     ("schema/session-record.schema.json", "schema/handoffctl-session-record.schema.json"),
+    ("schema/campaign-projection.schema.json", "schema/campaign-projection.schema.json"),
     (
         "schema/checkpoint-record.schema.json",
         "schema/handoffctl-checkpoint-record.schema.json",
@@ -127,6 +164,7 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
         "schema/handoffctl-directive-record.schema.json",
     ),
     ("schema/task-record.schema.json", "schema/task-record.schema.json"),
+    ("schema/execution-envelope.schema.json", "schema/execution-envelope.schema.json"),
     ("schema/role.schema.json", "schema/role.schema.json"),
     ("schema/role-registry.schema.json", "schema/role-registry.schema.json"),
     ("schema/role-assignment.schema.json", "schema/role-assignment.schema.json"),
@@ -162,6 +200,7 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("formal/handoffctl/HandoffctlBinding.cfg", "formal/handoffctl/HandoffctlBinding.cfg"),
     ("formal/handoffctl/HandoffctlBinding.tla", "formal/handoffctl/HandoffctlBinding.tla"),
     ("formal/handoffctl/HandoffctlFast.cfg", "formal/handoffctl/HandoffctlFast.cfg"),
+    ("formal/handoffctl/LIVENESS_COVERAGE.json", "formal/handoffctl/LIVENESS_COVERAGE.json"),
     (
         "formal/handoffctl/HandoffctlObservation.cfg",
         "formal/handoffctl/HandoffctlObservation.cfg",
@@ -169,6 +208,38 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     (
         "formal/handoffctl/HandoffctlObservation.tla",
         "formal/handoffctl/HandoffctlObservation.tla",
+    ),
+    (
+        "formal/handoffctl/HandoffctlPredicateLedger.cfg",
+        "formal/handoffctl/HandoffctlPredicateLedger.cfg",
+    ),
+    (
+        "formal/handoffctl/HandoffctlPredicateLedger.tla",
+        "formal/handoffctl/HandoffctlPredicateLedger.tla",
+    ),
+    (
+        "formal/handoffctl/HandoffctlAssumptions.cfg",
+        "formal/handoffctl/HandoffctlAssumptions.cfg",
+    ),
+    (
+        "formal/handoffctl/HandoffctlAssumptions.tla",
+        "formal/handoffctl/HandoffctlAssumptions.tla",
+    ),
+    (
+        "formal/handoffctl/HandoffctlRetryCircuit.cfg",
+        "formal/handoffctl/HandoffctlRetryCircuit.cfg",
+    ),
+    (
+        "formal/handoffctl/HandoffctlRetryCircuit.tla",
+        "formal/handoffctl/HandoffctlRetryCircuit.tla",
+    ),
+    (
+        "formal/handoffctl/HandoffctlAutonomyLimits.cfg",
+        "formal/handoffctl/HandoffctlAutonomyLimits.cfg",
+    ),
+    (
+        "formal/handoffctl/HandoffctlAutonomyLimits.tla",
+        "formal/handoffctl/HandoffctlAutonomyLimits.tla",
     ),
     (
         "formal/handoffctl/OBSERVATION_CORRESPONDENCE.md",
@@ -176,7 +247,7 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ),
     ("formal/handoffctl/HandoffctlLocks.cfg", "formal/handoffctl/HandoffctlLocks.cfg"),
     ("formal/handoffctl/HandoffctlLocks.tla", "formal/handoffctl/HandoffctlLocks.tla"),
-    ("formal/handoffctl/HandoffctlPR.cfg", "formal/handoffctl/HandoffctlPR.cfg"),
+    ("formal/handoffctl/HandoffctlLiveness.cfg", "formal/handoffctl/HandoffctlLiveness.cfg"),
     ("formal/handoffctl/HandoffctlRecovery.cfg", "formal/handoffctl/HandoffctlRecovery.cfg"),
     ("formal/handoffctl/HandoffctlRecovery.tla", "formal/handoffctl/HandoffctlRecovery.tla"),
     ("formal/handoffctl/HandoffctlRun.cfg", "formal/handoffctl/HandoffctlRun.cfg"),
@@ -193,6 +264,18 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
         "formal/handoffctl/HandoffctlReceipts.tla",
         "formal/handoffctl/HandoffctlReceipts.tla",
     ),
+    (
+        "formal/handoffctl/HandoffctlPublication.cfg",
+        "formal/handoffctl/HandoffctlPublication.cfg",
+    ),
+    (
+        "formal/handoffctl/HandoffctlPublicationFast.cfg",
+        "formal/handoffctl/HandoffctlPublicationFast.cfg",
+    ),
+    (
+        "formal/handoffctl/HandoffctlPublication.tla",
+        "formal/handoffctl/HandoffctlPublication.tla",
+    ),
     ("formal/handoffctl/HandoffctlStorage.cfg", "formal/handoffctl/HandoffctlStorage.cfg"),
     ("formal/handoffctl/HandoffctlStorage.tla", "formal/handoffctl/HandoffctlStorage.tla"),
     (
@@ -201,6 +284,7 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ),
     ("formal/handoffctl/README.md", "formal/handoffctl/README.md"),
     ("formal/handoffctl/attest.py", "formal/handoffctl/attest.py"),
+    ("formal/handoffctl/slices.py", "formal/handoffctl/slices.py"),
     ("formal/handoffctl/verify.sh", "formal/handoffctl/verify.sh"),
     ("formal/oracle/OracleInteractionGates.cfg", "formal/oracle/OracleInteractionGates.cfg"),
     ("formal/oracle/OracleInteractionGates.tla", "formal/oracle/OracleInteractionGates.tla"),
@@ -377,11 +461,33 @@ def build_development_lock(source: Path, commit: str) -> dict[str, Any]:
     return development_snapshot(source, commit)[0]
 
 
+def retire_staged_destinations(
+    target: Path,
+    backup_root: Path,
+    destinations: list[str],
+    retired_destinations: tuple[str, ...],
+    installed: list[tuple[Path, Path, bool]],
+) -> None:
+    """Move obsolete snapshot files into the transaction backup set."""
+    for destination_name in retired_destinations:
+        if destination_name in destinations:
+            raise RuntimeError(f"retired destination remains allowlisted: {destination_name}")
+        destination = target / destination_name
+        backup = backup_root / destination_name
+        if destination.is_symlink():
+            raise RuntimeError(f"refusing symlink destination: {destination}")
+        if destination.exists():
+            backup.parent.mkdir(parents=True, exist_ok=True)
+            destination.replace(backup)
+            installed.append((destination, backup, True))
+
+
 def install_staged_snapshot(
     staged: Path,
     target: Path,
     destinations: list[str],
     verify_installed: Callable[[], None] | None = None,
+    retired_destinations: tuple[str, ...] = (),
 ) -> None:
     """Install one fully staged vendor set and roll back failed rename sequences."""
     backup_root = staged / ".backup"
@@ -400,6 +506,9 @@ def install_staged_snapshot(
                 destination.replace(backup)
             installed.append((destination, backup, existed))
             source.replace(destination)
+        retire_staged_destinations(
+            target, backup_root, destinations, retired_destinations, installed
+        )
         if verify_installed is not None:
             verify_installed()
     except Exception:
@@ -437,6 +546,7 @@ def install_snapshot(
             target,
             [*destinations, LOCK_NAME],
             lambda: verify(target),
+            RETIRED_DESTINATIONS,
         )
 
 
@@ -529,6 +639,8 @@ def verify_formal_lifecycle_alignment(target: Path) -> None:
             if item.startswith("release_")
             else "recover-expired"
             if item == "recover_expired"
+            else "recover-execution"
+            if item == "recover_execution"
             else item
         )
         for item in modeled

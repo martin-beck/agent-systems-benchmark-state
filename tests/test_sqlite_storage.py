@@ -4,6 +4,7 @@
 """SQLite backend conformance, fault and real multiprocess tests."""
 
 import argparse
+import hashlib
 import importlib.util
 import json
 import multiprocessing
@@ -23,6 +24,7 @@ from unittest.mock import patch
 
 from fixture_ids import project_uuid
 
+from tools import change_drift
 from tools.sqlite_storage import (
     SQLiteAuthorityBinding,
     SQLiteBackend,
@@ -31,6 +33,7 @@ from tools.sqlite_storage import (
     create_database,
     require_local_filesystem,
 )
+from tools.task_spec import evidence_ledger_errors
 
 ROOT = Path(__file__).resolve().parent.parent
 TOOLS = ROOT / "tools"
@@ -90,7 +93,7 @@ def _commit_then_crash_before_projection(database: str, tasks_root: str) -> None
 
 
 def task(
-    task_id: str, *, status: str = "open", revision: int = 1
+    task_id: str, *, status: str = "open", revision: int = 1, **changes: object
 ) -> tuple[Path, dict[str, Any], str]:
     meta = {
         "schema_version": 1,
@@ -110,6 +113,7 @@ def task(
         "plan": "",
         "depends_on": [],
     }
+    meta.update(changes)
     return Path(f"{task_id}-test.md"), meta, "# Test\n"
 
 
@@ -159,6 +163,29 @@ def revision_stress_worker(
     outcomes.put(("done", task_id, completed))
 
 
+def execution_reservation_worker(
+    start: Any, outcomes: Any, execution_id: str, expected_revision: int
+) -> None:
+    """Race the real CLI transition from an independent SQLite process."""
+    start.wait(5)
+    arguments = argparse.Namespace(
+        task="AR-0001",
+        owner="worker-a",
+        expected_revision=expected_revision,
+        execution_id=execution_id,
+        execution_expires_at="2099-01-01T00:00:00+00:00",
+        command_class="test",
+        scope_digest="sha256:" + "a" * 64,
+        argv_digest="b" * 64,
+    )
+    try:
+        CORE.mutate(arguments, "execution-start")
+    except RuntimeError as error:
+        outcomes.put(("rejected", str(error)))
+    else:
+        outcomes.put(("accepted", execution_id))
+
+
 def sqlite_unblock_worker(start: Any, outcomes: Any) -> None:
     """Race the supported external unblock against one SQLite authority."""
     start.wait(5)
@@ -193,6 +220,32 @@ def sqlite_resume_worker(start: Any, outcomes: Any) -> None:
 
 
 class SQLiteStorageTest(unittest.TestCase):
+    def test_change_drift_history_round_trips_and_keeps_the_revision_fence(self) -> None:
+        record = change_drift._record(
+            "baseline",
+            "AR-0001",
+            1,
+            "2026-10-12T00:00:00+00:00",
+            {"head": "", "entries": [], "scope": ["src"]},
+        )
+        backend = self.create([task("AR-0001", change_drift=[record])])
+        self.assertEqual([record], backend.load_tasks()[0][1]["change_drift"])
+
+        def append(meta: dict[str, Any], _tasks: list[Any]) -> tuple[str, str]:
+            history = change_drift.records(meta)
+            meta["change_drift"] = [
+                *history,
+                change_drift.rescope(
+                    "AR-0001", 2, "2026-10-12T00:01:00+00:00", record["digest"], ["src", "tests"]
+                ),
+            ]
+            return "rescope", "# Test\n"
+
+        backend.mutate("AR-0001", 1, "change-drift", "2026-10-12T00:01:00+00:00", append)
+        self.assertEqual(2, len(backend.load_tasks()[0][1]["change_drift"]))
+        with self.assertRaisesRegex(RuntimeError, "stale revision"):
+            backend.mutate("AR-0001", 1, "change-drift", "2026-10-12T00:02:00+00:00", append)
+
     def test_authority_sidecar_descriptor_failures_are_fail_closed(self) -> None:
         with TemporaryDirectory() as directory:
             root = Path(directory)
@@ -435,7 +488,10 @@ class SQLiteStorageTest(unittest.TestCase):
 
     def test_bind_worktree_uses_the_same_live_owner_and_identity_fence(self) -> None:
         active = task("AR-0001", status="in_progress")
-        active[1].update(owner="worker-a", claim_expires="2099-01-01T00:00:00+00:00")
+        active[1].update(
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+        )
         conflict = task("AR-0002", status="in_progress")
         conflict[1].update(
             owner="worker-b",
@@ -498,6 +554,84 @@ class SQLiteStorageTest(unittest.TestCase):
                 ),
                 "bind-worktree",
             )
+
+    def test_sqlite_preserves_a_bound_execution_envelope(self) -> None:
+        spec = json.loads(
+            (Path(__file__).resolve().parents[1] / "examples/task-specs/AR-0070.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        spec["spec_ref"] = "spec.json"
+        (self.root / "spec.json").write_text(json.dumps(spec) + "\n", encoding="utf-8")
+        active = task("AR-0001", status="in_progress")
+        active[1].update(
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+            spec_ref="spec.json",
+            spec_revision=1,
+            worktree_key="candidate-worker",
+            branch="feature/candidate-worker",
+        )
+        backend = self.create([active])
+        self.configure_core(backend="sqlite")
+        envelope_path = self.root / "envelopes"
+        envelope_path.mkdir()
+        payload = {
+            "schema_version": 1,
+            "envelope_id": "AR-0001-e1",
+            "envelope_revision": 1,
+            "task": "AR-0001",
+            "task_revision": 1,
+            "spec_ref": "spec.json",
+            "spec_revision": 1,
+            "outputs": [{"id": "implementation", "description": "Implement the bounded change."}],
+            "non_goals": ["No prompt-derived authorization."],
+            "path_scope": {"read": ["src"], "write": ["src"]},
+            "command_classes": {"test": {"allowed": True}},
+            "evidence": [{"id": "tests", "class": "contract-test", "required": True}],
+            "stop_conditions": [{"id": "scope", "kind": "deny"}],
+        }
+        (envelope_path / "AR-0001-e1.json").write_text(json.dumps(payload), encoding="utf-8")
+        CORE.mutate(
+            argparse.Namespace(
+                task="AR-0001",
+                owner="worker-a",
+                expected_revision=1,
+                envelope_ref="envelopes/AR-0001-e1.json",
+                envelope_revision=1,
+            ),
+            "bind-envelope",
+        )
+        bound = backend.load_tasks()[0][1]
+        self.assertEqual("envelopes/AR-0001-e1.json", bound["execution_envelope_ref"])
+        self.assertEqual(1, bound["execution_envelope_revision"])
+        self.assertEqual(1, bound["execution_envelope_task_revision"])
+        self.assertRegex(str(bound["execution_envelope_digest"]), r"^sha256:[0-9a-f]{64}$")
+        self.assertEqual("AR-0001-e1", bound["execution_envelope"]["envelope_id"])
+        projects = self.root / "products"
+        (projects / "candidate-worker" / "src").mkdir(parents=True)
+        CORE.CONFIG.parent.mkdir(exist_ok=True)
+        CORE.CONFIG.write_text(json.dumps({"projects_root": str(projects)}), encoding="utf-8")
+        with patch.object(CORE, "sandboxed_envelope_command", return_value=["/bin/true"]):
+            self.assertEqual(
+                0,
+                CORE.cmd_run(
+                    argparse.Namespace(
+                        task="AR-0001",
+                        owner="worker-a",
+                        timeout_seconds=5.0,
+                        command_class="test",
+                        scope_path=[],
+                        command=["/bin/true"],
+                    )
+                ),
+            )
+        completed = backend.load_tasks()[0][1]
+        self.assertNotIn("execution_reservation", completed)
+        # Bound runs record the reservation-bound completion receipt before
+        # clearing the reservation, so the terminal lifecycle consumes three
+        # revisions after the binding mutation.
+        self.assertEqual(5, completed["task_revision"])
 
     def test_every_write_route_enters_fence_before_sqlite_mutation(self) -> None:
         ordinary = self.create()
@@ -571,6 +705,73 @@ class SQLiteStorageTest(unittest.TestCase):
         self.assertEqual("in_progress", row["status"])
         self.assertIn(row["owner"], ("worker-a", "worker-b"))
 
+    def test_real_processes_cannot_double_reserve_bound_execution(self) -> None:
+        """A SQLite CAS admits one subprocess reservation before either can run."""
+        spec = json.loads(
+            (Path(__file__).resolve().parents[1] / "examples/task-specs/AR-0070.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        spec["spec_ref"] = "spec.json"
+        (self.root / "spec.json").write_text(json.dumps(spec) + "\n", encoding="utf-8")
+        envelope = {
+            "schema_version": 1,
+            "envelope_id": "AR-0001-e1",
+            "envelope_revision": 1,
+            "task": "AR-0001",
+            "task_revision": 1,
+            "spec_ref": "spec.json",
+            "spec_revision": 1,
+            "outputs": [{"id": "implementation", "description": "Implement the change."}],
+            "non_goals": ["No prompt-derived authorization."],
+            "path_scope": {"read": ["src"], "write": ["src"]},
+            "command_classes": {"test": {"allowed": True}},
+            "evidence": [{"id": "tests", "class": "contract-test", "required": True}],
+            "stop_conditions": [{"id": "scope", "kind": "deny"}],
+        }
+        (self.root / "envelopes").mkdir()
+        (self.root / "envelopes/AR-0001-e1.json").write_text(json.dumps(envelope), encoding="utf-8")
+        active = task("AR-0001", status="in_progress")
+        active[1].update(
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+            spec_ref="spec.json",
+            spec_revision=1,
+        )
+        backend = self.create([active])
+        self.configure_core(backend="sqlite")
+        CORE.mutate(
+            argparse.Namespace(
+                task="AR-0001",
+                owner="worker-a",
+                expected_revision=1,
+                envelope_ref="envelopes/AR-0001-e1.json",
+                envelope_revision=1,
+            ),
+            "bind-envelope",
+        )
+        context = multiprocessing.get_context("fork")
+        start, outcomes = context.Event(), context.Queue()
+        processes = [
+            context.Process(
+                target=execution_reservation_worker,
+                args=(start, outcomes, execution_id, 2),
+            )
+            for execution_id in ("1" * 32, "2" * 32)
+        ]
+        for process in processes:
+            process.start()
+        start.set()
+        results = [outcomes.get(timeout=10) for _ in processes]
+        for process in processes:
+            process.join(10)
+            self.assertEqual(0, process.exitcode)
+        self.assertEqual(1, sum(result[0] == "accepted" for result in results), results)
+        self.assertEqual(1, sum(result[0] == "rejected" for result in results), results)
+        reserved = backend.load_tasks()[0][1]
+        self.assertEqual(3, reserved["task_revision"])
+        self.assertIn(reserved["execution_reservation"]["execution_id"], {"1" * 32, "2" * 32})
+
     def test_high_frequency_same_and_different_task_writers_have_no_lost_updates(self) -> None:
         backend = self.create([task("AR-0001"), task("AR-0002")])
         context = multiprocessing.get_context("fork")
@@ -613,15 +814,47 @@ class SQLiteStorageTest(unittest.TestCase):
 
     def test_command_result_is_an_independent_durable_transaction(self) -> None:
         backend = self.create()
+        self.assertFalse(backend.has_command_result("AR-0001", "worker", "a" * 64))
         backend.append_command_result(
             "AR-0001", "worker", "a" * 64, 7, "EXIT", "2026-09-08T00:01:00+00:00"
         )
+        self.assertTrue(backend.has_command_result("AR-0001", "worker", "a" * 64))
+        self.assertFalse(backend.has_command_result("AR-0002", "worker", "a" * 64))
+        self.assertFalse(backend.has_command_result("AR-0001", "other-worker", "a" * 64))
+        self.assertFalse(backend.has_command_result("AR-0001", "worker", "b" * 64))
         connection = sqlite3.connect(self.database)
         self.assertEqual(
             (7, "EXIT"),
             connection.execute("SELECT returncode, classification FROM command_results").fetchone(),
         )
         connection.close()
+
+    def test_additive_issue_series_schema_stays_inside_legacy_transaction(self) -> None:
+        backend = self.create()
+        connection = sqlite3.connect(self.database, isolation_level=None)
+        try:
+            connection.execute("DROP TABLE issue_series_members")
+            connection.execute("DROP TABLE issue_series")
+            connection.execute("BEGIN IMMEDIATE")
+            backend._ensure_issue_series_schema(connection)
+            connection.rollback()
+        finally:
+            connection.close()
+        check = sqlite3.connect(self.database)
+        try:
+            self.assertIsNone(
+                check.execute(
+                    "SELECT name FROM sqlite_master WHERE type='table' AND name='issue_series'"
+                ).fetchone()
+            )
+            self.assertIsNone(
+                check.execute(
+                    """SELECT name FROM sqlite_master
+                       WHERE type='table' AND name='issue_series_members'"""
+                ).fetchone()
+            )
+        finally:
+            check.close()
 
     def test_busy_timeout_corruption_network_fs_and_read_only_fail_closed(self) -> None:
         backend = self.create()
@@ -688,7 +921,9 @@ class SQLiteStorageTest(unittest.TestCase):
 
     def test_explicit_migration_round_trip_preserves_records_and_projections(self) -> None:
         self.configure_core()
-        self.write_git_tasks([task("AR-0001"), task("AR-0002")])
+        concise = task("AR-0001")
+        concise[1]["short_title"] = "Migration title test"
+        self.write_git_tasks([concise, task("AR-0002")])
         CORE.RUNTIME.mkdir(exist_ok=True)
         (CORE.RUNTIME / "command-results.jsonl").write_text(
             json.dumps(
@@ -712,6 +947,7 @@ class SQLiteStorageTest(unittest.TestCase):
             CORE.cmd_migrate(argparse.Namespace(to="sqlite"))
         self.assertEqual("sqlite", CORE.backend_selection()["backend"])
         self.assertEqual(["AR-0001", "AR-0002"], [item[1]["id"] for item in CORE.all_tasks()])
+        self.assertEqual("Migration title test", CORE.all_tasks()[0][1]["short_title"])
         connection = sqlite3.connect(self.database)
         self.assertEqual(
             1, connection.execute("SELECT count(*) FROM command_results").fetchone()[0]
@@ -724,6 +960,7 @@ class SQLiteStorageTest(unittest.TestCase):
             CORE.cmd_migrate(argparse.Namespace(to="git"))
         self.assertEqual("git", CORE.backend_selection()["backend"])
         self.assertEqual(2, len(CORE.git_tasks()))
+        self.assertEqual("Migration title test", CORE.git_tasks()[0][1]["short_title"])
         with self.assertRaisesRegex(RuntimeError, "already uses"):
             CORE.cmd_migrate(argparse.Namespace(to="git"))
 
@@ -969,8 +1206,11 @@ class SQLiteStorageTest(unittest.TestCase):
                     "schema_version": 1,
                     "spec_ref": "spec.json",
                     "spec_revision": 1,
-                    "acceptance_predicates": [{"id": "predicate", "description": "pass"}],
-                    "definition_of_done": ["pass"],
+                    "acceptance_predicates": [
+                        {"id": "predicate-a", "description": "pass"},
+                        {"id": "predicate-b", "description": "pass"},
+                    ],
+                    "definition_of_done": ["pass both predicates"],
                     "inputs": [{"id": "input", "description": "input"}],
                     "outputs": [{"id": "output", "description": "output"}],
                     "allowed_tools": ["source.read"],
@@ -980,6 +1220,12 @@ class SQLiteStorageTest(unittest.TestCase):
                 }
             )
         )
+        (self.root / "candidate.txt").write_text("candidate a", encoding="utf-8")
+        (self.root / "evidence.txt").write_text("evidence a", encoding="utf-8")
+
+        def digest(name: str) -> str:
+            return "sha256:" + hashlib.sha256((self.root / name).read_bytes()).hexdigest()
+
         CORE.export_sqlite_projections()
         with patch.object(CORE, "push_replica"):
             CORE.mutate(
@@ -1009,8 +1255,12 @@ class SQLiteStorageTest(unittest.TestCase):
                 owner="worker",
                 expected_revision=3,
                 evidence_class="contract-test",
-                evidence_ref="awq/evidence/AR-0001",
-                evidence_digest="sha256:" + "c" * 64,
+                evidence_ref="evidence.txt",
+                evidence_digest=digest("evidence.txt"),
+                predicate="predicate-a",
+                candidate_ref="candidate.txt",
+                candidate_digest=digest("candidate.txt"),
+                reopen=False,
                 note="accepted",
             )
             with self.assertRaisesRegex(RuntimeError, "stale revision"):
@@ -1018,16 +1268,127 @@ class SQLiteStorageTest(unittest.TestCase):
                     argparse.Namespace(**{**vars(accept), "expected_revision": 2}), "accept"
                 )
             CORE.mutate(accept, "accept")
+            (self.root / "candidate.txt").write_text("candidate b", encoding="utf-8")
+            (self.root / "evidence.txt").write_text("evidence b", encoding="utf-8")
+            reopened = argparse.Namespace(
+                **{
+                    **vars(accept),
+                    "expected_revision": 4,
+                    "predicate": "predicate-b",
+                    "candidate_digest": digest("candidate.txt"),
+                    "evidence_digest": digest("evidence.txt"),
+                    "reopen": True,
+                }
+            )
+            CORE.mutate(reopened, "accept")
+            current = CORE.all_tasks()[0][1]
+            self.assertEqual([], evidence_ledger_errors(self.root, current))
+            (self.root / "candidate.txt").write_text("tampered", encoding="utf-8")
+            self.assertIn(
+                "evidence ledger candidate artifact digest is invalid",
+                evidence_ledger_errors(self.root, current),
+            )
+            (self.root / "candidate.txt").write_text("candidate b", encoding="utf-8")
+            CORE.mutate(
+                argparse.Namespace(
+                    **{
+                        **vars(reopened),
+                        "expected_revision": 5,
+                        "predicate": "predicate-a",
+                        "reopen": False,
+                    }
+                ),
+                "accept",
+            )
             CORE.mutate(
                 argparse.Namespace(task="AR-0001", owner="worker", status="done", note="done"),
                 "release",
             )
         final = CORE.all_tasks()[0][1]
         self.assertEqual(
-            ("done", 5, "P0"), (final["status"], final["task_revision"], final["priority"])
+            ("done", 7, "P0"), (final["status"], final["task_revision"], final["priority"])
         )
-        self.assertEqual("pass", final["spec_acceptance"]["status"])
+        self.assertEqual(
+            ["pass", "pass"], [step["status"] for step in final["evidence_ledger"]["steps"]]
+        )
         self.assertIn("updated", (self.tasks / "AR-0001-test.md").read_text())
+
+    def test_predicate_reopen_rejects_malformed_sqlite_ledger_before_persisting(self) -> None:
+        self.configure_core(backend="sqlite")
+        task_path, task_meta, task_body = task("AR-0001", status="in_progress")
+        task_meta.update(
+            owner="worker",
+            claim_expires="2099-01-01T00:00:00+00:00",
+            spec_ref="spec.json",
+            spec_revision=1,
+        )
+        (self.root / "spec.json").write_text(
+            json.dumps(
+                {
+                    "schema_version": 1,
+                    "spec_ref": "spec.json",
+                    "spec_revision": 1,
+                    "acceptance_predicates": [
+                        {"id": "predicate-a", "description": "pass"},
+                        {"id": "predicate-b", "description": "pass"},
+                    ],
+                    "definition_of_done": ["pass both predicates"],
+                    "inputs": [{"id": "input", "description": "input"}],
+                    "outputs": [{"id": "output", "description": "output"}],
+                    "allowed_tools": ["source.read"],
+                    "forbidden_tools": [],
+                    "required_evidence_classes": ["contract-test"],
+                    "gates": [{"id": "gate", "description": "pass"}],
+                }
+            ),
+            encoding="utf-8",
+        )
+        (self.root / "candidate.txt").write_text("candidate a", encoding="utf-8")
+        (self.root / "evidence.txt").write_text("evidence a", encoding="utf-8")
+
+        def digest(name: str) -> str:
+            return "sha256:" + hashlib.sha256((self.root / name).read_bytes()).hexdigest()
+
+        old_candidate_digest = digest("candidate.txt")
+        old_evidence_digest = digest("evidence.txt")
+        task_meta["evidence_ledger"] = {
+            "candidate_ref": "candidate.txt",
+            "candidate_digest": old_candidate_digest,
+            "steps": [
+                {
+                    "predicate_id": "predicate-a",
+                    "status": "pass",
+                    "candidate_ref": "candidate.txt",
+                    "candidate_digest": old_candidate_digest,
+                    "evidence_class": "contract-test",
+                    "evidence_ref": "evidence.txt",
+                    "evidence_digest": old_evidence_digest,
+                    "recorded_task_revision": 1,
+                },
+                "malformed historical row",
+            ],
+        }
+        backend = self.create([(task_path, task_meta, task_body)])
+        (self.root / "candidate.txt").write_text("candidate b", encoding="utf-8")
+        (self.root / "evidence.txt").write_text("evidence b", encoding="utf-8")
+        reopen = argparse.Namespace(
+            task="AR-0001",
+            owner="worker",
+            expected_revision=1,
+            evidence_class="contract-test",
+            evidence_ref="evidence.txt",
+            evidence_digest=digest("evidence.txt"),
+            predicate="predicate-b",
+            candidate_ref="candidate.txt",
+            candidate_digest=digest("candidate.txt"),
+            reopen=True,
+            note="candidate b",
+        )
+        with self.assertRaisesRegex(RuntimeError, "evidence ledger step is incomplete or unknown"):
+            CORE.mutate(reopen, "accept")
+        persisted = backend.load_tasks()[0][1]
+        self.assertEqual(1, persisted["task_revision"])
+        self.assertEqual("malformed historical row", persisted["evidence_ledger"]["steps"][1])
 
     def test_sqlite_gate_persists_and_exports_human_session_metadata(self) -> None:
         self.configure_core(backend="sqlite")

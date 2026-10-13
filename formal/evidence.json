@@ -6,35 +6,40 @@
     "A continuously runnable process is eventually scheduled and a lock holder eventually exits its critical section.",
     "Successful local commits and SQLite transactions have the durability described by the coordinator contract.",
     "The pinned TLC verifier is downloaded successfully and matches its recorded SHA-256 digest.",
-    "Cgroup-contained same-repository PR and weekly TLC invocations use a 4096 MiB JVM heap, 256 MiB metaspace, 128 MiB compressed class space, 256 KiB thread stacks, 6144 MiB memory and swap limits, 200 percent CPU quota, and 64 process slots after a host-capacity preflight. Fork smoke retains a 512 MiB heap and 3072 MiB address-space limit. Ordinary PR publication has a 1200 second per-model deadline; release-sensitive and weekly full-exhaustive runs have a 6000 second per-model deadline.",
-    "Formal jobs use one canonical host-wide flock admission lock and durable per-job queue and outcome records; admission does not stop coordinator workers."
+    "The full-exhaustive tier has a 48 GiB JVM heap and 64 GiB memory and swap cgroup limits after a 64 GiB host and parent-cgroup preflight.",
+    "Before each required run, the runner verifies in its transient unit that leaf memory and swap limits exactly match the requested bounds.",
+    "Before each required run, the runner verifies that no ancestor has a lower memory, memory-high, or swap limit.",
+    "pr-fast has a 300-second aggregate end-to-end verifier budget and pr-publication has a 900-second aggregate end-to-end verifier budget, including admission; full-exhaustive has an 86400-second advisory aggregate budget.",
+    "Bounded validation uses one canonical host-wide flock admission lock; exploratory full-exhaustive stress uses isolated admission paths and durable per-job queue and outcome records, neither of which stops coordinator workers."
   ],
   "bounds": {
     "max_actors": 2,
     "max_processes": 3,
     "max_projects": 2,
-    "max_revision": 2,
+    "max_revision": 8,
     "max_tasks": 2,
     "max_worktrees": 2,
-    "model_count": 8,
+    "model_count": 12,
     "tlc_workers": 2,
-    "jvm_heap_mb": 4096,
+    "jvm_heap_mb": 49152,
     "hosted_portable_jvm_heap_mb": 512,
-    "memory_max_mb": 6144,
-    "swap_max_mb": 6144,
+    "memory_max_mb": 65536,
+    "swap_max_mb": 65536,
     "cpu_quota_percent": 200,
     "tasks_max": 64,
-    "pr_runtime_max_seconds": 1200,
-    "runtime_max_seconds": 6000
+    "pr_runtime_max_seconds": 900,
+    "pr_fast_runtime_max_seconds": 300,
+    "pr_publication_runtime_max_seconds": 900,
+    "runtime_max_seconds": 86400
   },
   "correspondence": "bounded-correspondence",
   "evidence_class": "bounded-model",
   "limitations": [
-    "TLC explores only the finite constants declared in the eight tracked model configurations.",
+    "TLC explores only the finite constants declared in the twelve tracked model configurations.",
     "The evidence applies only to the specifications, configurations, invariants, and temporal properties executed by formal/handoffctl/verify.sh.",
     "Implementation tests provide separate correspondence evidence but do not turn bounded model checking into an implementation proof.",
     "Separate clones, network filesystems, non-cooperating writers, and failures outside the documented recovery boundary are excluded.",
-    "Same-repository PR publication and weekly full-exhaustive use systemd-run user cgroups. Fork PR smoke uses the portable timeout and prlimit boundary, which is not equivalent to cgroup RSS or swap accounting."
+    "Same-repository PR publication and the isolated exploratory full-exhaustive workflow use systemd-run user cgroups. Fork PR smoke uses the portable timeout and prlimit boundary, which is not equivalent to cgroup RSS or swap accounting."
   ],
   "non_claims": [
     "This evidence does not prove the Python implementation correct.",
