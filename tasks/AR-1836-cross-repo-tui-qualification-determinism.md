@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-13T21:08:00+00:00",
   "depends_on": [
     "AR-1835"
   ],
@@ -10,17 +10,17 @@
   "next_action": "Promote after AR-1835 dependency resolution; reproduce the two hosted failures with complete workflow metadata, identify the owning workflow/asb-tui seam, and implement only a deterministic qualification repair without weakening the gate.",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1836-tui-qual-luna",
   "plan": "../plans/AR-1836-cross-repo-tui-qualification-determinism.md",
   "priority": "P0",
   "schema_version": 1,
   "spec_ref": "specs/AR-1836.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the deterministic cross-repository Exact TUI inherited-fd/PTY qualification seam exposed by AR-1835 without weakening its assertions.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Cross-repository Exact TUI qualification determinism",
-  "updated_at": "2026-10-13T19:37:30+00:00",
+  "updated_at": "2026-10-13T19:38:00+00:00",
   "worktree_key": ""
 }
 ---
@@ -51,3 +51,5 @@ waive the check, serialize it away, or accept mutable/unverified binaries.
 
 - 2026-10-13T19:37:30+00:00: AR-1835 is now done with signed protected-main merge and post-merge
   receipt; promote dependency-ready qualification repair.
+
+- 2026-10-13T19:38:00+00:00: Claimed by ar1836-tui-qual-luna.
