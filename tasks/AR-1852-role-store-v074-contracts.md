@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "2026-10-13T23:23:45+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "execution_envelope": {
     "command_classes": {
@@ -79,7 +79,7 @@
   },
   "id": "AR-1852",
   "next_action": "No safe v0.7.8 rebase: v0.7.8 changes lifecycle role admission from strict to advisory and replaces the v0.7.4 lock/digest wholesale. Preserve PR #148 head 7b46c6b076 unupdated; wait for a Coordinator release that retains strict role authorization or explicitly re-scope AR-1852, then rerun independent review and exact-head CI.",
-  "owner": "ar1852-requalify-luna3",
+  "owner": "",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "retry_circuit": {
@@ -149,11 +149,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T21:25:36+00:00",
+  "updated_at": "2026-10-13T21:25:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -523,3 +523,10 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   cannot be admitted by the immutable execution envelope. Focused role suite remains 10/10 and
   vendor verify is green at b46d2b3. Do not retry identical command; next action is provision/repair
   approved locked environment through authorized handoffctl workflow, then rerun once.
+
+- 2026-10-13T21:25:41+00:00: Released after one bounded full-gate attempt. Exact b46d2b3 development
+  adoption and vendor verify pass; focused roles 10/10. Full gate exited 1 due
+  locked-environment/sandbox blockers (system Python missing jsonschema; approved state venv outside
+  immutable candidate envelope; bwrap uid-map and generated-view baseline failures). No PR #148
+  update or merge. Resume only after authorized locked environment is repaired, then rerun full gate
+  once.
