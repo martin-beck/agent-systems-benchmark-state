@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "2026-10-13T21:30:30+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1852",
   "next_action": "No safe v0.7.8 rebase: v0.7.8 changes lifecycle role admission from strict to advisory and replaces the v0.7.4 lock/digest wholesale. Preserve PR #148 head 7b46c6b076 unupdated; wait for a Coordinator release that retains strict role authorization or explicitly re-scope AR-1852, then rerun independent review and exact-head CI.",
-  "owner": "ar1852-role-store-repair2-luna",
+  "owner": "",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "retry_circuit": {
@@ -64,11 +64,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T19:31:39+00:00",
+  "updated_at": "2026-10-13T19:31:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -347,3 +347,10 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   require_role_admission to advisory and renames the lifecycle test accordingly, so it cannot safely
   satisfy AR-1852 strict authorization. Existing PR head 7b46c6b076 remains valid non-vendor repair.
   No product/vendor edits or PR update performed.
+
+- 2026-10-13T19:31:48+00:00: Released ownerless/open after compatibility audit. Coordinator v0.7.8
+  is not a safe AR-1852 successor: its lifecycle role admission is explicitly advisory, while
+  AR-1852 requires strict unauthorized/expired rejection; its vendor lock replaces the v0.7.4 digest
+  rather than restoring it. Preserve non-vendor head 7b46c6b076 and PR #148 unchanged. Next action
+  remains a strict-role Coordinator release/vendor adoption or explicit re-scope, then full gates,
+  review, and exact-head CI.
