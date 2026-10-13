@@ -10,7 +10,30 @@
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "retry_circuit": {
-    "abandoned": [],
+    "abandoned": [
+      {
+        "cause": "expired",
+        "cleaned_at": "2026-10-13T21:20:03+00:00",
+        "expires_at": "2026-10-13T19:53:25+00:00",
+        "id": "87d4f7e431c242f2a3c2669dfcac180e",
+        "identity": "sha256:9324744784ec55c3e8be7b8b27d20878af39f519820b86295e1efe0c4e90eee9",
+        "progress_digest": "sha256:3ef850421994879ab4e7a7e46e11848a74ff796daa36590c1109bed5c55be567",
+        "reserved_at": "2026-10-13T19:22:25+00:00",
+        "task_revision": 66,
+        "window": 3
+      },
+      {
+        "cause": "expired",
+        "cleaned_at": "2026-10-13T21:20:03+00:00",
+        "expires_at": "2026-10-13T20:01:34+00:00",
+        "id": "32ff9c03d98242c786a7e0e68a592e52",
+        "identity": "sha256:32570bc2bfd10d767f6d4b76b20c153f287ff04ab1c94042319a5923035d27c5",
+        "progress_digest": "sha256:3ef850421994879ab4e7a7e46e11848a74ff796daa36590c1109bed5c55be567",
+        "reserved_at": "2026-10-13T19:30:35+00:00",
+        "task_revision": 79,
+        "window": 3
+      }
+    ],
     "attempts": [
       {
         "failure": "SUBPROCESS_TIMEOUT",
@@ -33,21 +56,12 @@
     "recoveries": [],
     "reservations": [
       {
-        "expires_at": "2026-10-13T19:53:25+00:00",
-        "id": "87d4f7e431c242f2a3c2669dfcac180e",
-        "identity": "sha256:9324744784ec55c3e8be7b8b27d20878af39f519820b86295e1efe0c4e90eee9",
+        "expires_at": "2026-10-13T21:51:03+00:00",
+        "id": "14f68177241a4a9985b9aa2eac43931d",
+        "identity": "sha256:ac92e2a74d594c526e1cabbc80426d539a23cfae1bbc59ae43131029011aed2d",
         "progress_digest": "sha256:3ef850421994879ab4e7a7e46e11848a74ff796daa36590c1109bed5c55be567",
-        "reserved_at": "2026-10-13T19:22:25+00:00",
-        "task_revision": 66,
-        "window": 3
-      },
-      {
-        "expires_at": "2026-10-13T20:01:34+00:00",
-        "id": "32ff9c03d98242c786a7e0e68a592e52",
-        "identity": "sha256:32570bc2bfd10d767f6d4b76b20c153f287ff04ab1c94042319a5923035d27c5",
-        "progress_digest": "sha256:3ef850421994879ab4e7a7e46e11848a74ff796daa36590c1109bed5c55be567",
-        "reserved_at": "2026-10-13T19:30:35+00:00",
-        "task_revision": 79,
+        "reserved_at": "2026-10-13T21:20:03+00:00",
+        "task_revision": 83,
         "window": 3
       }
     ],
@@ -66,9 +80,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T21:19:51+00:00",
+  "updated_at": "2026-10-13T21:20:03+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -356,3 +370,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   review, and exact-head CI.
 
 - 2026-10-13T21:19:51+00:00: Claimed by ar1852-requalify-luna3.
+
+- 2026-10-13T21:20:03+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=2.
