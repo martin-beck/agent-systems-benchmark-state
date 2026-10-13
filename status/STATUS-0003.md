@@ -1602,11 +1602,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1826_setup_contract_luna |
 | Parent | None |
 | Children | None |
 | Summary | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. |
@@ -2087,6 +2087,20 @@
 | Children | None |
 | Summary | Adopt and qualify the dependency-safe v0.7.0 formal work-root repair. |
 | Next action | Merge PR #151 signed state-only coordination repair, run exact-main doctor/schema/post-merge assurance, then release AR-1860 with merged evidence. |
+
+### AR-1861 — Adopt Coordinator AR-0034 legacy-binding repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826. |
+| Next action | Promote after AR-1841 and verify the immutable upstream AR-0034 repair source, then vendor it through the approved coordinator tool and qualify AR-1826 re-binding. |
 
 
 ## Dependency graph
@@ -2957,7 +2971,7 @@ flowchart LR
         AR_1823["AR-1823 - Done"]:::status_done
         AR_1824["AR-1824 - Done"]:::status_done
         AR_1825["AR-1825 - Done"]:::status_done
-        AR_1826["AR-1826 - Open"]:::status_open
+        AR_1826["AR-1826 - In progress"]:::status_in_progress
         AR_1827["AR-1827 - Planned"]:::status_planned
         AR_1828["AR-1828 - Planned"]:::status_planned
         AR_1829["AR-1829 - Planned"]:::status_planned
@@ -2992,6 +3006,7 @@ flowchart LR
         AR_1858["AR-1858 - In progress"]:::status_in_progress
         AR_1859["AR-1859 - Planned"]:::status_planned
         AR_1860["AR-1860 - Done"]:::status_done
+        AR_1861["AR-1861 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4977,6 +4992,7 @@ flowchart LR
     AR_1831 --> AR_1832
     AR_1832 --> AR_1842
     AR_1835 --> AR_1836
+    AR_1841 --> AR_1861
     AR_1842 --> AR_1844
     AR_1844 --> AR_1845
     AR_1845 --> AR_1846
@@ -5001,4 +5017,3 @@ flowchart LR
 | AR | Prerequisites | Dependents |
 | --- | --- | --- |
 | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | None | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) |
-| [AR-0002](../tasks/AR-0002-coordination-assurance.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0004](../tasks/AR-0004-ar-status-document.md), [AR-0005](../tasks/AR-0005-transactional-promotion.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0895](../tasks/AR-0895-verify-coordination-content.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
