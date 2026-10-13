@@ -1,11 +1,11 @@
 ---
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
-  "checkpoint_commit": "0bba7e8416cb8202df32050dc983d57cb01ecabd",
+  "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1852",
-  "next_action": "Blocked pending upstream Coordinator AR-0032 role-store authorization repair/spec adoption. Once AR-0032 is released, bind exact upstream evidence, rebase/adopt without changing immutable vendor snapshot, rerun focused/full ASB gates, obtain independent review, and update PR148.",
+  "next_action": "Independent review and exact-head CI for signed product commit 7b46c6b076 atop 22da911193. Full gate remains blocked by unrelated baseline/environment failures: missing jsonschema, AR-1793 fixture drift, workflow complexity fixture drift, rollback lock timeout, and vendor/generated-state checks.",
   "owner": "",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "open",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 30,
+  "task_revision": 40,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T17:30:14+00:00",
+  "updated_at": "2026-10-13T17:41:01+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -125,3 +125,41 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   and the locked state venv still reports unrelated failures. No PR merge or release claimed. Next:
   use the locked ASB test environment with generated-view dependencies, rerun full gate, then obtain
   independent exact-head review; do not merge PR148 until green.
+
+- 2026-10-13T17:31:36+00:00: Claimed by ar1852-role-store-luna.
+
+- 2026-10-13T17:31:42+00:00: Heartbeat by ar1852-role-store-luna.
+
+- 2026-10-13T17:31:54+00:00: Recorded command exit 0; command argv SHA-256
+  73f701a3dbe5e8cfde71b4cc1d48eb7edbe155ae39667498449acb0ccd6f572a.
+
+- 2026-10-13T17:32:16+00:00: Recorded command exit 0; command argv SHA-256
+  d89c43b28f2a6ac6fb83707b9e20e8397e336513c903c1ccec8e4ccc3ec5d7dc.
+
+- 2026-10-13T17:39:04+00:00: Heartbeat by ar1852-role-store-luna.
+
+- 2026-10-13T17:39:10+00:00: Full locked discovery ran 1797 tests in 346.393s: 6 failures and 17
+  errors. Unrelated baseline failures include missing locked jsonschema, AR-1793 lifecycle/worktree
+  expectations, complexity workflow fixture drift, and rollback lock timeout. AR-1852 role-specific
+  failure is test_remove_expired_target_and_unrelated_expiry_is_cleanup_safe: 22da911193 test
+  expects expired cleanup, but immutable Coordinator v0.7.4 validator rejects expired assignments
+  during remove. Focused role suite is 9/10 under current vendor snapshot. No merge or release
+  claimed.
+
+- 2026-10-13T17:40:09+00:00: Heartbeat by ar1852-role-store-luna.
+
+- 2026-10-13T17:40:15+00:00: Upstream Coordinator AR-0032 evidence confirms only doctor/lifecycle
+  admission changed; immutable v0.7.4 role validator and remove() retain fail-closed
+  expired-assignment rejection. Repaired stale AR-1852 downstream cleanup assertion in signed
+  DCO/SSH commit 7b46c6b076; no vendor files changed. Focused role suite now passes 10/10. Vendor
+  verify still reports pre-existing tools/handoffctl.py digest mismatch; generated-view check
+  reports CURRENT.md drift; schema gate unavailable because locked environment lacks jsonschema. No
+  merge/release claimed.
+
+- 2026-10-13T17:40:55+00:00: Checkpointed source commit 98ba8073d5ee754a40c312e291e478cdff105fc6.
+
+- 2026-10-13T17:41:01+00:00: Checkpointed exact reviewed product head 7b46c6b076 (stale
+  expired-cleanup assertion repaired; focused role suite 10/10). PR148 remains at old head a7ea458
+  and was not updated because locked full gate is non-green: 6 failures/17 errors including missing
+  jsonschema, unrelated AR-1793/workflow/rollback fixtures, vendor digest mismatch, and generated
+  CURRENT.md drift. Resume only with a correct locked environment and fresh exact-head gates.
