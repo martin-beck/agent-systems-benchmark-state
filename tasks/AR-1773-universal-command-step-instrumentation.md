@@ -26,11 +26,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-12T13:22:43+00:00",
+  "updated_at": "2026-10-13T19:40:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -54,3 +54,6 @@ parse, validation, and immediate failures through terminal status output without
 creating a progress bar. All integrations must preserve JSON silence and quiet
 silence, existing prompts, TUI ownership, diagnostic specificity, privacy, and
 non-TTY compatibility.
+
+- 2026-10-13T19:40:57+00:00: Dependencies AR-1769 and AR-1772 are done; promote dependency-ready
+  implementation.
