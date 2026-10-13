@@ -17,9 +17,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Stop the development ASB launcher from killing a successfully admitted interactive TUI after its fixed 15-second lifetime deadline.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Repair development ASB TUI interactive lifetime",
-  "updated_at": "2026-10-13T14:06:10+00:00",
+  "updated_at": "2026-10-13T14:06:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime"
 }
 ---
@@ -54,3 +54,6 @@ cross-repository qualification.
 
 - 2026-10-13T14:05:05+00:00: Recorded command exit 0; command argv SHA-256
   6023d9dd2abd13ac06f5483e5e87a5dc322906b2df5745d38e5a6c5e9515aff2.
+
+- 2026-10-13T14:06:18+00:00: Recorded command exit 0; command argv SHA-256
+  63d9c7861e91dbbf674cb4e284f9b9aa7e1751619bc89d3a42579ccd9be12ea3.
