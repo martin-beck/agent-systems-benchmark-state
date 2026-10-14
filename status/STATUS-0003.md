@@ -2298,6 +2298,20 @@
 | Summary | Create and bind a successor AR-1863 execution envelope that authorizes only the reviewed diagnostic-catalog source-write and publication paths, preserving the existing AR-1863 non-goals, path scope, fail-closed gates, and exact current-main review evidence. Do not modify AR-1787 or AR-1835. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1876 — Replace stale AR-1863 envelope
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide an explicit fail-closed coordinator transition for replacing AR-1863&#x27;s already-bound obsolete execution envelope with the reviewed successor AR-1863-e3, requiring exact task revision, active owner, no live execution reservation, immutable replacement evidence, and preserving all existing path and non-goal restrictions. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3217,6 +3231,7 @@ flowchart LR
         AR_1873["AR-1873 - Done"]:::status_done
         AR_1874["AR-1874 - Superseded"]:::status_superseded
         AR_1875["AR-1875 - Blocked"]:::status_blocked
+        AR_1876["AR-1876 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4832,33 +4847,3 @@ flowchart LR
     AR_1611 --> AR_1614
     AR_1611 --> AR_1659
     AR_1612 --> AR_1613
-    AR_1612 --> AR_1615
-    AR_1612 --> AR_1617
-    AR_1612 --> AR_1618
-    AR_1613 --> AR_1622
-    AR_1613 --> AR_1643
-    AR_1613 --> AR_1653
-    AR_1614 --> AR_1613
-    AR_1614 --> AR_1615
-    AR_1614 --> AR_1617
-    AR_1614 --> AR_1618
-    AR_1614 --> AR_1620
-    AR_1614 --> AR_1623
-    AR_1614 --> AR_1641
-    AR_1615 --> AR_1613
-    AR_1615 --> AR_1622
-    AR_1615 --> AR_1625
-    AR_1615 --> AR_1626
-    AR_1615 --> AR_1627
-    AR_1615 --> AR_1628
-    AR_1615 --> AR_1644
-    AR_1617 --> AR_1615
-    AR_1617 --> AR_1619
-    AR_1617 --> AR_1646
-    AR_1618 --> AR_1615
-    AR_1618 --> AR_1619
-    AR_1619 --> AR_1615
-    AR_1619 --> AR_1620
-    AR_1619 --> AR_1621
-    AR_1619 --> AR_1646
-    AR_1620 --> AR_1615

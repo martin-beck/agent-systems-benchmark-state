@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1876",
+  "issue": {
+    "number": 10007,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10007"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "The replacement transition is schema-valid, rejects wrong owner/revision, active reservations, malformed or broader envelopes, records immutable evidence, binds AR-1863-e3 at the exact current revision, and passes handoffctl doctor and focused lifecycle tests.",
+      "depends_on": [],
+      "id": "AR-1876",
+      "ownership": "ASB state handoffctl envelope replacement and focused tests only; no product source, direct task edits, or gate weakening.",
+      "scope": "Provide an explicit fail-closed coordinator transition for replacing AR-1863's already-bound obsolete execution envelope with the reviewed successor AR-1863-e3, requiring exact task revision, active owner, no live execution reservation, immutable replacement evidence, and preserving all existing path and non-goal restrictions.",
+      "short_title": "Replace stale AR-1863 envelope"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
