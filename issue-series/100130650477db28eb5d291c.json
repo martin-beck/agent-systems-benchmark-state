@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1884",
+  "issue": {
+    "number": 10015,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10015"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "After AR-0120 lands, provide an ownerless, immutable state-side recovery envelope for an expired no-claim_process reservation with exact task, revision, reservation, terminal-result, expiry, and operator evidence matching; publish only the reviewed product commit and separate state-root artifacts, reject cross-root, missing, traversal, arbitrary-path, identity, active, malformed, and mismatched evidence, and preserve AR-1878 through AR-1883 without formal or TLC claims.",
+      "depends_on": [],
+      "id": "AR-1884",
+      "ownership": "ASB state-side terminal-result recovery and cross-repository publication scope after upstream AR-0120; ownerless until AR-0120 is landed and the exact product/state roots are available.",
+      "scope": "Create a dependency-scoped successor repair for the no-claim_process terminal-result recovery path. Do not mutate AR-1878, AR-1881, AR-1882, or AR-1883. Keep state-checkout recovery evidence and product-tree publication evidence under separate explicit roots and bounded allowlists; require exact reservation/result/expiry/operator identity evidence and immutable audit; leave ownerless pending AR-0120 landing with the next action to re-plan against its landed head and then bind exact roots.",
+      "short_title": "Gate orphan-result recovery"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

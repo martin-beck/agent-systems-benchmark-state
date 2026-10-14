@@ -2410,6 +2410,20 @@
 | Summary | Create a fresh successor task and immutable execution envelope for cross-repository publication-scope validation of the already reviewed terminal-recovery product commit 3162fe8be2. Separate product-tree paths from state-checkout artifacts using explicit repository roots and bounded allowlists; retain fail-closed missing-path, traversal, and arbitrary-path rejection; do not rewrite prior envelopes, alter product code, or weaken gates. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1884 — Gate orphan-result recovery
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a dependency-scoped successor repair for the no-claim_process terminal-result recovery path. Do not mutate AR-1878, AR-1881, AR-1882, or AR-1883. Keep state-checkout recovery evidence and product-tree publication evidence under separate explicit roots and bounded allowlists; require exact reservation/result/expiry/operator identity evidence and immutable audit; leave ownerless pending AR-0120 landing with the next action to re-plan against its landed head and then bind exact roots. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3337,6 +3351,7 @@ flowchart LR
         AR_1881["AR-1881 - In progress"]:::status_in_progress
         AR_1882["AR-1882 - Blocked"]:::status_blocked
         AR_1883["AR-1883 - Blocked"]:::status_blocked
+        AR_1884["AR-1884 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4656,39 +4671,3 @@ flowchart LR
     AR_1453 --> AR_1455
     AR_1453 --> AR_1457
     AR_1453 --> AR_1458
-    AR_1453 --> AR_1523
-    AR_1453 --> AR_1524
-    AR_1453 --> AR_1525
-    AR_1453 --> AR_1526
-    AR_1455 --> AR_1487
-    AR_1455 --> AR_1488
-    AR_1455 --> AR_1496
-    AR_1455 --> AR_1526
-    AR_1456 --> AR_1333
-    AR_1456 --> AR_1458
-    AR_1456 --> AR_1460
-    AR_1456 --> AR_1461
-    AR_1456 --> AR_1526
-    AR_1457 --> AR_1459
-    AR_1458 --> AR_1460
-    AR_1460 --> AR_1461
-    AR_1460 --> AR_1462
-    AR_1461 --> AR_1463
-    AR_1461 --> AR_1489
-    AR_1461 --> AR_1490
-    AR_1461 --> AR_1491
-    AR_1461 --> AR_1492
-    AR_1461 --> AR_1493
-    AR_1462 --> AR_1489
-    AR_1462 --> AR_1490
-    AR_1462 --> AR_1491
-    AR_1462 --> AR_1492
-    AR_1462 --> AR_1493
-    AR_1471 --> AR_1473
-    AR_1471 --> AR_1474
-    AR_1472 --> AR_1473
-    AR_1472 --> AR_1474
-    AR_1472 --> AR_1475
-    AR_1472 --> AR_1476
-    AR_1472 --> AR_1477
-    AR_1472 --> AR_1480
