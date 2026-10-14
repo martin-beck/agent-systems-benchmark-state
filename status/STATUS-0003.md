@@ -2158,6 +2158,20 @@
 | Summary | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1866 — Correct vendor version docs
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Correct ASB public vendor documentation that still names Coordinator v0.3.5 after the checked-in coordinator.vendor.json adopted v0.7.8, without changing runtime or coordinator behavior. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3067,6 +3081,7 @@ flowchart LR
         AR_1863["AR-1863 - Open"]:::status_open
         AR_1864["AR-1864 - Done"]:::status_done
         AR_1865["AR-1865 - Planned"]:::status_planned
+        AR_1866["AR-1866 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4987,27 +5002,3 @@ flowchart LR
     AR_1763 --> AR_1835
     AR_1764 --> AR_1765
     AR_1764 --> AR_1780
-    AR_1764 --> AR_1783
-    AR_1764 --> AR_1835
-    AR_1766 --> AR_1767
-    AR_1766 --> AR_1768
-    AR_1767 --> AR_1768
-    AR_1767 --> AR_1770
-    AR_1768 --> AR_1769
-    AR_1768 --> AR_1771
-    AR_1769 --> AR_1763
-    AR_1769 --> AR_1773
-    AR_1769 --> AR_1774
-    AR_1770 --> AR_1791
-    AR_1770 --> AR_1792
-    AR_1771 --> AR_1775
-    AR_1772 --> AR_1773
-    AR_1773 --> AR_1774
-    AR_1775 --> AR_1772
-    AR_1775 --> AR_1774
-    AR_1776 --> AR_1777
-    AR_1776 --> AR_1778
-    AR_1776 --> AR_1784
-    AR_1776 --> AR_1798
-    AR_1776 --> AR_1825
-    AR_1777 --> AR_1779
