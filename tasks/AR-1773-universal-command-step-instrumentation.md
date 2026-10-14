@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-14T15:53:15+00:00",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -93,7 +93,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "",
+  "owner": "asb-ar1773-instrumentation-20261014",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -107,11 +107,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-14T09:04:40+00:00",
+  "updated_at": "2026-10-14T13:53:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -487,3 +487,5 @@ non-TTY compatibility.
 
 - 2026-10-14T09:04:40+00:00: Abandoned expired execution bc8c565fa0f94ad78c86b2ba9000159a and
   recovered claim formerly owned by asb_ar1773_docker_runner_luna after local evidence verification.
+
+- 2026-10-14T13:53:15+00:00: Claimed by asb-ar1773-instrumentation-20261014.
