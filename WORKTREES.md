@@ -298,7 +298,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1825-source-to-executable-adapter-runtime-contract` | `feature/ar-1825-source-to-executable-adapter-runtime-contract` | `630d380866e4` | 0 | behind 29, ahead 0 |
 | `agent-systems-benchmark-ar-1835-authenticated-control-live-isolation-repair` | `feature/ar-1835-authenticated-control-live-isolation-repair` | `06565d3de95a` | 0 | behind 15, ahead 0 |
 | `agent-systems-benchmark-ar-1839` | `codex/ar-1839-cross-process-fixture` | `46ac642c40ce` | 0 | behind 12, ahead 1 |
-| `ar1824-repair.Tp51GE` | `DETACHED` | `c2745e04e231` | 0 | behind 64858, ahead 2225 |
+| `ar1824-repair.Tp51GE` | `DETACHED` | `c2745e04e231` | 0 | behind 64866, ahead 2225 |
 | `ar1826-review.IL8AVJ` | `DETACHED` | `ecf3ed20fa15` | 0 | behind 12, ahead 3 |
 | `ar1850-main-verify` | `DETACHED` | `870331be533e` | 0 | behind 5, ahead 0 |
 | `asb-pr307-review-d0e6a28a` | `DETACHED` | `d0e6a28a81b4` | 0 | behind 9, ahead 0 |
