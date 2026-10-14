@@ -101,6 +101,39 @@ class ReplacementTests(unittest.TestCase):
         ):
             handoffctl.apply_replace_envelope(self._args(), meta)
 
+    def test_replace_bound_rejects_each_successor_widening_boundary(self) -> None:
+        import tempfile
+        from pathlib import Path
+
+        old = _envelope()
+        successor = _envelope(2)
+        args = self._args()
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for mutate, message in (
+                (lambda m: m.pop("execution_envelope"), "existing bound"),
+            ):
+                meta = self._meta()
+                mutate(meta)
+                with self.assertRaisesRegex(RuntimeError, message):
+                    execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
+            meta = self._meta()
+            with patch.object(execution_envelope, "load", return_value=(None, "", ["bad"])):
+                with self.assertRaisesRegex(RuntimeError, "envelope is invalid"):
+                    execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
+            for mutate, message in (
+                (lambda e: e.update(task_revision=4), "revision does not match task"),
+                (lambda e: e.update(envelope_revision=9), "envelope revision does not match"),
+                (lambda e: e.update(envelope_id=old["envelope_id"]), "distinct successor"),
+                (lambda e: e.update(non_goals=["other restriction"]), "remove non-goals"),
+            ):
+                candidate = dict(successor)
+                mutate(candidate)
+                meta = self._meta()
+                with patch.object(execution_envelope, "load", return_value=(candidate, "", [])):
+                    with self.assertRaisesRegex(RuntimeError, message):
+                        execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
+
 
 if __name__ == "__main__":
     unittest.main()
