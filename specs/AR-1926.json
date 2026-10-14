@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1926.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "runtime", "description": "Approved AR-1924 runtime/bin entrypoints execute bounded focused checks."},
+    {"id": "scope", "description": "Only exact AR-1901 scope/test paths and runtime/bin paths are admitted; traversal and cross-root paths fail closed."},
+    {"id": "history", "description": "AR-1901, AR-1881, AR-1882, and AR-1900 history remains unchanged."}
+  ],
+  "definition_of_done": ["Bind immutable spec and envelope.", "Run focused positive and negative scope tests or record the exact blocker."],
+  "inputs": [{"id": "ar1901", "description": "Blocked AR-1901 scope evidence."}, {"id": "runtime", "description": "Released AR-1924 runtime/bin entrypoints."}],
+  "outputs": [{"id": "scope", "description": "Bounded AR-1901 scope validation evidence."}],
+  "allowed_tools": ["python", "pytest", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["network", "runtime-download", "host-mount", "tlc", "formal", "history-rewrite"],
+  "required_evidence_classes": ["contract-test", "mechanical"],
+  "gates": [{"id": "scope", "description": "Focused runtime and fail-closed path admission checks."}]
+}
