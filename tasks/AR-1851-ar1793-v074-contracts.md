@@ -40,9 +40,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-14T13:52:34+00:00",
+  "updated_at": "2026-10-14T13:52:45+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -190,3 +190,11 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
 - 2026-10-14T13:52:34+00:00: Policy metadata correction: UD-0003 makes formal/TLC runs optional
   evidence, never an admission or merge gate; retain exact-head independent review and all
   non-formal required gates.
+
+- 2026-10-14T13:52:45+00:00: Exact candidate 0d3693a24c verified unchanged. Focused AR-1793
+  compatibility suite: 59/59 passed. Exact-head static non-formal checks passed: vendor pin, source
+  headers, Ruff format/check, mypy, lizard. Hosted PR #147 required Strict state consistency and
+  Model and implementation contract remain failed on cross-repair faults in AR-1852/AR-1853; no
+  AR-1793-specific failure. Formal/TLC was not rerun because UD-0003 classifies it optional. Do not
+  merge until the cross-repair required-gate failures are durably resolved and fresh exact-head
+  CI/review is green.
