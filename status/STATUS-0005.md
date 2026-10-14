@@ -465,12 +465,13 @@
 | P1 | [AR-1895](../tasks/AR-1895.md): Admit receipt dependency | codex-ar1895-receipt-20261014 | State-only successor admitting exactly tools/execution_receipt.py for the AR-1894 focused replacement test. Preserve AR-1894 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1896](../tasks/AR-1896.md): Admit revalidation dependency | codex-ar1896-revalidation-20261014 | State-only successor admitting exactly tools/assumption_revalidation.py for the AR-1895 focused replacement test. Preserve AR-1895 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
+| P1 | [AR-1897](../tasks/AR-1897.md): Renew implementer assignment | Unclaimed | State-only coordination repair to renew an explicit implementer assignment for the AR-1896 bounded dependency admission. Preserve AR-1896 and earlier histories; reject force-clear, cross-root, network, formal/TLC, or task-scope widening. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (101)
 
@@ -578,7 +579,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (97)
+### Planned (96)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -663,4 +664,3 @@
 | P1 | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Unclaimed | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. |
 | P1 | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Unclaimed | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. |
 | P1 | [AR-1624](../tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
-| P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
