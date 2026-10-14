@@ -2326,6 +2326,20 @@
 | Summary | Adopt the merged upstream Agent Workflow Coordinator successor-envelope replacement capability at commit c604e1dd82401a3000d9ec083e7b4fba22f6d513 using the documented vendor sync path. Update only coordinator vendor files and generated integrity evidence, preserve ASB overlays and task history, then validate AR-1863 envelope replacement without direct edits or gate weakening. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1878 — Reissue diagnostic catalog task
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a fresh successor task for the reviewed control diagnostic catalog repair with a new source-write execution envelope scoped only to the catalog files and required tests/publication. Preserve AR-1863 as immutable blocked history; do not widen or mutate its bound envelope, alter AR-1787/AR-1835, or weaken coordinator gates. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3247,6 +3261,7 @@ flowchart LR
         AR_1875["AR-1875 - In progress"]:::status_in_progress
         AR_1876["AR-1876 - Blocked"]:::status_blocked
         AR_1877["AR-1877 - Done"]:::status_done
+        AR_1878["AR-1878 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4789,33 +4804,3 @@ flowchart LR
     AR_1568 --> AR_1569
     AR_1568 --> AR_1570
     AR_1568 --> AR_1588
-    AR_1568 --> AR_1599
-    AR_1570 --> AR_1571
-    AR_1570 --> AR_1573
-    AR_1573 --> AR_1574
-    AR_1573 --> AR_1576
-    AR_1574 --> AR_1577
-    AR_1576 --> AR_1588
-    AR_1576 --> AR_1590
-    AR_1576 --> AR_1592
-    AR_1576 --> AR_1594
-    AR_1588 --> AR_1589
-    AR_1588 --> AR_1598
-    AR_1588 --> AR_1599
-    AR_1588 --> AR_1631
-    AR_1589 --> AR_1591
-    AR_1589 --> AR_1598
-    AR_1590 --> AR_1591
-    AR_1590 --> AR_1596
-    AR_1590 --> AR_1727
-    AR_1591 --> AR_1598
-    AR_1591 --> AR_1606
-    AR_1592 --> AR_1590
-    AR_1592 --> AR_1593
-    AR_1592 --> AR_1595
-    AR_1593 --> AR_1590
-    AR_1593 --> AR_1595
-    AR_1594 --> AR_1590
-    AR_1595 --> AR_1596
-    AR_1595 --> AR_1602
-    AR_1595 --> AR_1607

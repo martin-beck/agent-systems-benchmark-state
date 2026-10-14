@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1878",
+  "issue": {
+    "number": 10009,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10009"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Fresh task and envelope are schema-valid, exact paths/non-goals are fail-closed, focused preflight and doctor pass, and the reviewed product repair proceeds through signed PR, exact-head green CI, merge, and post-merge verification.",
+      "depends_on": [],
+      "id": "AR-1878",
+      "ownership": "ASB task/envelope coordination for the diagnostic catalog successor only; no direct edits to AR-1863 metadata or unrelated tasks.",
+      "scope": "Create a fresh successor task for the reviewed control diagnostic catalog repair with a new source-write execution envelope scoped only to the catalog files and required tests/publication. Preserve AR-1863 as immutable blocked history; do not widen or mutate its bound envelope, alter AR-1787/AR-1835, or weaken coordinator gates.",
+      "short_title": "Reissue diagnostic catalog task"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
