@@ -2058,7 +2058,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
-| Next action | AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped. |
+| Next action | AR-1859 remains the separately scoped TLC_WORK_ROOT successor and is not promoted before its dependency is resolved. Preserve the unchanged 95&#37; coverage/source-test gates and PR #145 evidence; formal/TLC fixture failures are optional for autonomous development under UD-0003 and remain separately authorized for final product-delivery qualification. |
 
 ### AR-1859 — v0.7.0 formal work-root validation
 
@@ -4792,5 +4792,3 @@ flowchart LR
     AR_1563 --> AR_1599
     AR_1563 --> AR_1631
     AR_1563 --> AR_1653
-    AR_1563 --> AR_1658
-    AR_1564 --> AR_1566

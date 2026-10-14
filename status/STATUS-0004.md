@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1563 --> AR_1658
+    AR_1564 --> AR_1566
     AR_1564 --> AR_1568
     AR_1564 --> AR_1588
     AR_1564 --> AR_1599
@@ -945,4 +947,3 @@
 | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md), [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md) |
 | [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) |
 | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md), [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md), [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md), [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md), [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md) |
-| [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | None |
