@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import unittest
+from collections.abc import Callable
 from typing import Any, cast
 from unittest.mock import patch
 
@@ -110,7 +111,10 @@ class ReplacementTests(unittest.TestCase):
         args = self._args()
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            for mutate, message in ((lambda m: m.pop("execution_envelope"), "existing bound"),):
+            cases: tuple[tuple[Callable[[dict[str, object]], object], str], ...] = (
+                (lambda m: m.pop("execution_envelope"), "existing bound"),
+            )
+            for mutate, message in cases:
                 meta = self._meta()
                 mutate(meta)
                 with self.assertRaisesRegex(RuntimeError, message):

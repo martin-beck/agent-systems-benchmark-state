@@ -11,10 +11,9 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
-from types import SimpleNamespace
 from unittest.mock import patch
 
-from tools import handoffctl
+from tools import handoffctl, retry_circuit
 
 
 class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
@@ -38,7 +37,7 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
         self.directory.cleanup()
 
     def test_fenced_run_rejects_invalid_retry_window_and_envelope_timeout(self) -> None:
-        args = SimpleNamespace(
+        args = argparse.Namespace(
             task="AR-0001",
             owner="worker",
             command=["true"],
@@ -48,7 +47,7 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
         with (
             patch.object(handoffctl, "backend_selection", return_value={"backend": "sqlite"}),
             patch.object(handoffctl, "require_active_owner", return_value={}),
-            patch.object(handoffctl.retry_circuit, "_window", side_effect=ValueError("bad window")),
+            patch.object(retry_circuit, "_window", side_effect=ValueError("bad window")),
             self.assertRaisesRegex(RuntimeError, "bad window"),
         ):
             handoffctl._cmd_run_fenced(args)

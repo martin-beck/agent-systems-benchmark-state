@@ -167,7 +167,8 @@ class ExecutionEnvelopeTests(unittest.TestCase):
 
     def test_validator_rejects_every_private_shape_boundary(self) -> None:
         value = envelope()
-        for candidate in (None, [], "text", 1):
+        candidates: tuple[object, ...] = (None, [], "text", 1)
+        for candidate in candidates:
             self.assertIn("envelope must be an object", errors(candidate))
         for field, replacement in (
             ("schema_version", 3),
