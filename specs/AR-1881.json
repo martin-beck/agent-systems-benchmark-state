@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1881.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "terminal-recovery", "description": "Recover only an expired reservation with a structurally valid, exactly matching durable EXIT result and no claim_process identity, with explicit operator evidence."},
+    {"id": "fail-closed", "description": "Reject active, unexpired, malformed, mismatched, identity-bearing, or unauthorised cases without mutation."},
+    {"id": "verification", "description": "Focused positive and hostile tests, applicable non-formal gates, exact-head review, merge, and post-merge doctor pass."}
+  ],
+  "definition_of_done": ["Reviewed signed source commit, focused recovery evidence, and post-merge state validation are recorded."],
+  "inputs": [{"id": "orphan-recovery", "description": "AR-1867/AR-1872 recovery contracts and the AR-1878 terminal-result orphan fixture."}],
+  "outputs": [{"id": "terminal-recovery", "description": "A handoffctl-managed fail-closed recovery path for terminal-result orphan reservations."}],
+  "allowed_tools": ["git", "python", "tools/handoffctl"],
+  "forbidden_tools": ["direct-task-state-edit", "force-clear", "gate-weakening", "formal-success-without-evidence"],
+  "required_evidence_classes": ["mechanical", "contract-test"],
+  "gates": [{"id": "focused", "description": "Focused terminal-result recovery tests pass."}, {"id": "review", "description": "Independent exact-head review and required checks are green."}]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1881-e1",
+  "envelope_revision": 1,
+  "task": "AR-1881",
+  "task_revision": 4,
+  "spec_ref": "specs/AR-1881.json",
+  "spec_revision": 1,
+  "path_scope": {"read": ["tools", "tests", "tasks", "specs", "envelopes"], "write": ["tools", "tests", "evidence"]},
+  "command_classes": {"read": {"allowed": true, "timeout_seconds": 120}, "source-write": {"allowed": true, "timeout_seconds": 300}, "test": {"allowed": true, "timeout_seconds": 900}, "git-publication": {"allowed": true, "timeout_seconds": 900}},
+  "evidence": [{"id": "focused", "class": "contract-test", "required": true}, {"id": "review", "class": "mechanical", "required": true}],
+  "outputs": [{"id": "recovery", "description": "Bounded terminal-result orphan recovery implementation and evidence."}],
+  "non_goals": ["Do not edit AR-1878 or any historical task record directly.", "Do not weaken reservation, result, expiry, or identity fences.", "Do not force-clear reservations or claim formal/TLC success without evidence."],
+  "stop_conditions": [{"id": "unexpected-record", "kind": "deny"}, {"id": "scope", "kind": "deny"}]
+}
