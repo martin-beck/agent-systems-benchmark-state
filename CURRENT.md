@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1874 — Upgrade Coordinator v0.7.11](tasks/AR-1874.md) | Adopt the exact signed upstream Agent Workflow Coordinator v0.7.11 release in the ASB state repository using the documented vendor sync path. Preserve ASB-owned overlays, task state, formal inventories, generated views, and fail-closed lifecycle behavior; do not patch vendored bytes or weaken existing gates. | Implement the bounded scope and record local acceptance evidence. | codex-ar1873-repair-20261014 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |

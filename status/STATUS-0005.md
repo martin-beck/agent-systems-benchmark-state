@@ -378,12 +378,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1874](../tasks/AR-1874.md): Upgrade Coordinator v0.7.11 | codex-ar1873-repair-20261014 | Adopt the exact signed upstream Agent Workflow Coordinator v0.7.11 release in the ASB state repository using the documented vendor sync path. Preserve ASB-owned overlays, task state, formal inventories, generated views, and fail-closed lifecycle behavior; do not patch vendored bytes or weaken existing gates. | Implement the bounded scope and record local acceptance evidence. |
-
 ### Open (8)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -666,3 +660,4 @@
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Release AR-1212 as done with complete merge and post-merge evidence; then reconcile and monitor stale PR #306/AR-1316 closure. |
 | P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | PR #311 exists at exact head fe00f59; run independent review and exact-head CI, then merge and complete seven post-merge checks. |
+| P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Resolve or requalify post-merge repository-quality failure for merge f51164569bf4da67a0759328b4be280385abe9a4; then rerun/monitor all seven post-merge workflows to terminal and release only after all succeed. |
