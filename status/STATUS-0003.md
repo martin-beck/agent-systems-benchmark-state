@@ -2288,11 +2288,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1875-envelope-repair-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create and bind a successor AR-1863 execution envelope that authorizes only the reviewed diagnostic-catalog source-write and publication paths, preserving the existing AR-1863 non-goals, path scope, fail-closed gates, and exact current-main review evidence. Do not modify AR-1787 or AR-1835. |
@@ -3216,7 +3216,7 @@ flowchart LR
         AR_1872["AR-1872 - Done"]:::status_done
         AR_1873["AR-1873 - Done"]:::status_done
         AR_1874["AR-1874 - Superseded"]:::status_superseded
-        AR_1875["AR-1875 - Open"]:::status_open
+        AR_1875["AR-1875 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4860,5 +4860,3 @@ flowchart LR
     AR_1619 --> AR_1615
     AR_1619 --> AR_1620
     AR_1619 --> AR_1621
-    AR_1619 --> AR_1646
-    AR_1620 --> AR_1615
