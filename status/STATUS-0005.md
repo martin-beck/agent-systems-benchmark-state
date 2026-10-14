@@ -522,7 +522,7 @@
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | codex-ar1919-git-publication-20261014 | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (15)
+### Open (16)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -541,6 +541,7 @@
 | P1 | [AR-1908](../tasks/AR-1908.md): Admit run-command dependency | Unclaimed | State-only successor admitting exactly tools/run_command.py for the AR-1907 focused replacement test. Preserve AR-1907, AR-1906 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | Unclaimed | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1923](../tasks/AR-1923.md): Admit sandbox test runtime | Unclaimed | Create the immutable successor for AR-1922: bind a dedicated state worktree and execution envelope admitting only the reviewed offline interpreter and pytest/uv tool paths under /srv/data/projects. Preserve network denial, product/state path scopes, AR-1922 blocked history, and formal/TLC exclusion. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (117)
 
@@ -664,7 +665,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (99)
+### Planned (98)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -673,4 +674,3 @@
 | P0 | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md): Build remote terminal frontend workflows | Unclaimed | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. |
 | P0 | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Unclaimed | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
 | P0 | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md): Generate asb-tui CI workflow screenshots | Unclaimed | Produce reproducible standalone TUI screenshots and text equivalents from workflows executed in CI. | Generate privacy-safe asb-tui workflow screenshots from real synthetic CI executions. |
-| P0 | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md): Qualify cross-repository ASB and asb-tui integration | Unclaimed | Integrate and adversarially test the exact ASB and asb-tui revisions together. | Wait for AR-1024, AR-1025, AR-1029 and the complete standalone UI integration AR-1011, then qualify exact install, update, rollback, launch, remove and benchmark-continuity paths across both repositories. |
