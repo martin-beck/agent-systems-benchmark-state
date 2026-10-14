@@ -10,7 +10,7 @@ import unittest
 from types import SimpleNamespace
 from typing import cast
 
-from tools import execution_abandonment, execution_lifecycle
+from tools import execution_abandonment, execution_lifecycle, resume_card, upgrade_commands
 
 RESERVATION = {
     "execution_id": "a" * 32,
@@ -135,6 +135,14 @@ class LifecycleTests(unittest.TestCase):
             execution_lifecycle.start(runtime, self.start_args(), {"task_revision": 1})
         with self.assertRaisesRegex(RuntimeError, "identifier"):
             execution_lifecycle.start(runtime, self.start_args(execution_id="bad"), self.meta())
+        existing = self.meta()
+        existing["execution_reservation"] = dict(RESERVATION)
+        with self.assertRaisesRegex(RuntimeError, "RECOVERY_REQUIRED"):
+            execution_lifecycle.start(runtime, self.start_args(), existing)
+        with self.assertRaisesRegex(RuntimeError, "expiry"):
+            execution_lifecycle.start(
+                runtime, self.start_args(execution_expires_at="invalid"), self.meta()
+            )
         with self.assertRaisesRegex(RuntimeError, "future"):
             execution_lifecycle.start(
                 runtime,
@@ -167,6 +175,109 @@ class LifecycleTests(unittest.TestCase):
         )
         self.assertEqual("open", meta["status"])
         self.assertEqual("", meta["owner"])
+
+    def test_lifecycle_rejects_mismatched_and_unproven_transitions(self) -> None:
+        runtime = RuntimeDouble()
+        meta = self.meta()
+        with self.assertRaisesRegex(RuntimeError, "no longer matches"):
+            execution_lifecycle.finish(runtime, abandonment_args(), meta)
+        meta["execution_reservation"] = dict(RESERVATION)
+        with self.assertRaisesRegex(RuntimeError, "owner"):
+            execution_lifecycle.finish(runtime, abandonment_args(owner="other"), meta)
+        with self.assertRaisesRegex(RuntimeError, "no longer matches"):
+            execution_lifecycle.result(runtime, abandonment_args(execution_id="b" * 32), meta)
+        with self.assertRaisesRegex(RuntimeError, "invalid execution result"):
+            execution_lifecycle.result(runtime, abandonment_args(returncode="bad"), meta)
+        with self.assertRaisesRegex(RuntimeError, "valid reservation"):
+            execution_lifecycle.recover(runtime, abandonment_args(), self.meta())
+        meta["execution_reservation"] = dict(RESERVATION)
+        with self.assertRaisesRegex(RuntimeError, "has not expired"):
+            execution_lifecycle.recover(RuntimeDouble(live={}), abandonment_args(), meta)
+        with self.assertRaisesRegex(RuntimeError, "worker still claimed"):
+            execution_lifecycle.recover(
+                RuntimeDouble(worker_absent=False), abandonment_args(), meta
+            )
+        with self.assertRaisesRegex(RuntimeError, "RESULT_UNKNOWN"):
+            execution_lifecycle.recover(RuntimeDouble(result=False), abandonment_args(), meta)
+        with self.assertRaisesRegex(RuntimeError, "valid reservation"):
+            execution_lifecycle.abandon(runtime, abandonment_args(), self.meta())
+        meta["execution_reservation"] = dict(RESERVATION)
+        with self.assertRaisesRegex(RuntimeError, "identity"):
+            execution_lifecycle.abandon(runtime, abandonment_args(execution_id="b" * 32), meta)
+        with self.assertRaisesRegex(RuntimeError, "has not expired"):
+            execution_lifecycle.abandon(RuntimeDouble(live={}), abandonment_args(), meta)
+        meta["execution_reservation"] = dict(RESERVATION)
+        with self.assertRaisesRegex(RuntimeError, "worker still claimed"):
+            execution_lifecycle.abandon(
+                RuntimeDouble(worker_absent=False), abandonment_args(), meta
+            )
+        meta["execution_reservation"] = dict(RESERVATION)
+        with self.assertRaisesRegex(RuntimeError, "durable result"):
+            execution_lifecycle.abandon(RuntimeDouble(result=True), abandonment_args(), meta)
+        meta["execution_reservation"] = dict(RESERVATION)
+        with self.assertRaisesRegex(RuntimeError, "invalid execution abandonment evidence"):
+            execution_lifecycle.abandon(
+                RuntimeDouble(result=False), abandonment_args(evidence_ref="../escape"), meta
+            )
+
+    def test_abandonment_history_duplicate_and_expiry_helpers(self) -> None:
+        runtime = RuntimeDouble(result=False)
+        meta = self.meta()
+        meta["execution_reservation"] = dict(RESERVATION)
+        meta["claim_expires"] = "2000-01-01T00:00:00+00:00"
+        first = execution_lifecycle.abandon(
+            runtime, abandonment_args(allow_legacy_without_identity=True), meta
+        )
+        self.assertIn("Abandoned", first)
+        meta["execution_reservation"] = dict(RESERVATION)
+        meta["status"] = "in_progress"
+        meta["owner"] = "worker-a"
+        meta["claim_expires"] = "2000-01-01T00:00:00+00:00"
+        with self.assertRaises(RuntimeDouble.IdempotentMutationError):
+            execution_lifecycle.abandon(
+                runtime, abandonment_args(allow_legacy_without_identity=True), meta
+            )
+        self.assertFalse(execution_lifecycle._expired_claim({}))
+        self.assertFalse(execution_lifecycle._expired_claim({"claim_expires": "invalid"}))
+        self.assertFalse(
+            execution_lifecycle._expired_claim({"claim_expires": "2999-01-01T00:00:00+00:00"})
+        )
+
+
+class ResumeAndUpgradeCoverageTests(unittest.TestCase):
+    def test_resume_card_acceptance_and_ledger_reject_bad_shapes(self) -> None:
+        classes = frozenset({"contract-test"})
+        with self.assertRaisesRegex(ValueError, "incomplete"):
+            resume_card._acceptance({"spec_acceptance": {"status": "pass"}}, classes)
+        acceptance = {
+            "status": "pass",
+            "evidence_class": "contract-test",
+            "evidence_ref": "tests/evidence.txt",
+            "evidence_digest": "sha256:" + "a" * 64,
+            "match": "best_effort",
+        }
+        self.assertIsNotNone(resume_card._acceptance({"spec_acceptance": acceptance}, classes))
+        with self.assertRaisesRegex(ValueError, "invalid"):
+            resume_card._acceptance({"spec_acceptance": {**acceptance, "match": "bad"}}, classes)
+        ledger = {
+            "candidate_ref": "candidate.txt",
+            "candidate_digest": "sha256:" + "b" * 64,
+            "steps": [],
+        }
+        self.assertEqual([], resume_card._predicates({"evidence_ledger": ledger}, classes))
+        with self.assertRaisesRegex(ValueError, "invalid"):
+            resume_card._predicates(
+                {"evidence_ledger": {**ledger, "candidate_digest": "bad"}}, classes
+            )
+        with self.assertRaisesRegex(ValueError, "step is incomplete"):
+            resume_card._predicates({"evidence_ledger": {**ledger, "steps": [{}]}}, classes)
+
+    def test_upgrade_command_json_guards(self) -> None:
+        self.assertEqual({"a": 1}, upgrade_commands._strict_object([("a", 1)]))
+        with self.assertRaisesRegex(ValueError, "duplicate"):
+            upgrade_commands._strict_object([("a", 1), ("a", 2)])
+        with self.assertRaisesRegex(ValueError, "non-finite"):
+            upgrade_commands._reject_constant("NaN")
 
 
 if __name__ == "__main__":
