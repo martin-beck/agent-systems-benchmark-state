@@ -2596,11 +2596,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1897-role-renewal-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | State-only coordination repair to renew an explicit implementer assignment for the AR-1896 bounded dependency admission. Preserve AR-1896 and earlier histories; reject force-clear, cross-root, network, formal/TLC, or task-scope widening. |
@@ -3546,7 +3546,7 @@ flowchart LR
         AR_1894["AR-1894 - In progress"]:::status_in_progress
         AR_1895["AR-1895 - In progress"]:::status_in_progress
         AR_1896["AR-1896 - In progress"]:::status_in_progress
-        AR_1897["AR-1897 - Open"]:::status_open
+        AR_1897["AR-1897 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4482,4 +4482,3 @@ flowchart LR
     AR_1308 --> AR_1309
     AR_1310 --> AR_1316
     AR_1310 --> AR_1319
-    AR_1314 --> AR_1315
