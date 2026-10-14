@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 12 |
-| **Open** | Dependency-ready and available to claim | 9 |
+| **In progress** | Claimed work with a live lease | 11 |
+| **Open** | Dependency-ready and available to claim | 10 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 112 |
 | **Planned** | Defined work awaiting promotion or dependencies | 99 |
 | **Future** | Deferred roadmap work | 1 |
@@ -5003,4 +5003,3 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Status | done |
 | Priority | P1 |
 | Role | unassigned |
-| Team | unassigned |

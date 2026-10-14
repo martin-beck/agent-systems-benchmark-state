@@ -2736,11 +2736,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1907-runtime-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/resume_card_runtime.py for the AR-1905 focused replacement test. Preserve AR-1906, AR-1905 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -3839,7 +3839,7 @@ flowchart LR
         AR_1904["AR-1904 - Blocked"]:::status_blocked
         AR_1905["AR-1905 - Open"]:::status_open
         AR_1906["AR-1906 - Blocked"]:::status_blocked
-        AR_1907["AR-1907 - In progress"]:::status_in_progress
+        AR_1907["AR-1907 - Open"]:::status_open
         AR_1908["AR-1908 - In progress"]:::status_in_progress
         AR_1909["AR-1909 - Blocked"]:::status_blocked
         AR_1910["AR-1910 - In progress"]:::status_in_progress
@@ -4229,3 +4229,4 @@ flowchart LR
     AR_0701 --> AR_0703
     AR_0701 --> AR_0704
     AR_0701 --> AR_0707
+    AR_0701 --> AR_0820
