@@ -2466,6 +2466,20 @@
 | Summary | Repair only the exact AR-1886 non-formal gate failures: temporary non-repository Git assumptions and offline jsonschema provisioning. Preserve AR-1886 immutable history; do not weaken tests, add network/downloads, or require TLC/formal gates. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1888 — Publish gate repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Publish the already reviewed AR-1887 state repair at exact commit 12074686d4, including its signed/DCO ancestry and full-suite evidence digest sha256:65c3adc9516e93a55aa1a629beceb15c1ede0b3a345b73c51a4c40463298535e. Scope is immutable to tools/handoffctl.py, tests, and quality evidence; preserve AR-1887 and earlier histories. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3397,6 +3411,7 @@ flowchart LR
         AR_1885["AR-1885 - In progress"]:::status_in_progress
         AR_1886["AR-1886 - In progress"]:::status_in_progress
         AR_1887["AR-1887 - In progress"]:::status_in_progress
+        AR_1888["AR-1888 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4592,32 +4607,3 @@ flowchart LR
     AR_1393 --> AR_1434
     AR_1394 --> AR_1395
     AR_1394 --> AR_1399
-    AR_1395 --> AR_1396
-    AR_1395 --> AR_1401
-    AR_1396 --> AR_1400
-    AR_1397 --> AR_1495
-    AR_1398 --> AR_1421
-    AR_1399 --> AR_1396
-    AR_1399 --> AR_1400
-    AR_1399 --> AR_1408
-    AR_1400 --> AR_1401
-    AR_1400 --> AR_1404
-    AR_1400 --> AR_1408
-    AR_1401 --> AR_1402
-    AR_1401 --> AR_1409
-    AR_1401 --> AR_1411
-    AR_1401 --> AR_1412
-    AR_1401 --> AR_1413
-    AR_1401 --> AR_1416
-    AR_1402 --> AR_1403
-    AR_1402 --> AR_1404
-    AR_1402 --> AR_1410
-    AR_1402 --> AR_1416
-    AR_1403 --> AR_1423
-    AR_1404 --> AR_1410
-    AR_1405 --> AR_1406
-    AR_1405 --> AR_1407
-    AR_1406 --> AR_1414
-    AR_1408 --> AR_1409
-    AR_1408 --> AR_1411
-    AR_1408 --> AR_1412
