@@ -2428,11 +2428,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1885-cwd-routing-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Adopt upstream Coordinator multi-root/cwd-routing at exact commit 2493c67f2ea162885b15c648fb3d626c84732170 via development vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, and generated integrity evidence; preserve ASB overlays, views, and immutable AR-1878 through AR-1884. No Agent Relay dependency, formal/TLC gate, runtime download, or direct state-history/file copy. |
@@ -3828,7 +3828,7 @@ flowchart LR
         AR_1882["AR-1882 - Blocked"]:::status_blocked
         AR_1883["AR-1883 - Blocked"]:::status_blocked
         AR_1884["AR-1884 - Blocked"]:::status_blocked
-        AR_1885["AR-1885 - In progress"]:::status_in_progress
+        AR_1885["AR-1885 - Open"]:::status_open
         AR_1886["AR-1886 - In progress"]:::status_in_progress
         AR_1887["AR-1887 - Blocked"]:::status_blocked
         AR_1888["AR-1888 - In progress"]:::status_in_progress
@@ -4221,3 +4221,5 @@ flowchart LR
     AR_0506 --> AR_0515
     AR_0507 --> AR_0515
     AR_0508 --> AR_0515
+    AR_0508 --> AR_0850
+    AR_0509 --> AR_0515
