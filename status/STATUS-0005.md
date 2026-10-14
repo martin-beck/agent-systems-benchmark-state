@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) |
+| [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
 | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1403](../tasks/AR-1403-literature-external-qualification.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1410](../tasks/AR-1410-literature-selector-completeness.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
 | [AR-1403](../tasks/AR-1403-literature-external-qualification.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) |
 | [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md) | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
@@ -453,6 +455,7 @@
 | [AR-1897](../tasks/AR-1897.md) | None | None |
 | [AR-1898](../tasks/AR-1898.md) | None | None |
 | [AR-1899](../tasks/AR-1899.md) | None | None |
+| [AR-1900](../tasks/AR-1900.md) | None | None |
 
 ## Complete AR inventory
 
@@ -589,7 +592,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (96)
+### Planned (97)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -665,6 +668,3 @@
 | P1 | [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md): Automate workflow documentation refresh | Unclaimed | Automatically refresh or reject stale workflow documentation and CI captures when essential user-visible behavior changes. | Add essential-change detection, deterministic regeneration, and reviewed update automation for workflows and captures. |
 | P1 | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md): Compare LLM test and inference evidence modes | Unclaimed | Quantify what each LLM execution mode proves without pooling unlike evidence or hiding harness saturation. | Execute balanced synthetic, strict replay, local inference, and remote live comparisons and publish bounded claims and capacity evidence. |
 | P1 | [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md): Document CLI setup for LLM doubles and local inference | Unclaimed | Provide executable beginner-safe CLI workflows for negotiated LLM modes without claiming unfinished TUI parity. | Add concise CLI setup, preflight, run, inspect, compare, and teardown workflows only for exact supported mock and local profiles. |
-| P1 | [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md): Add TUI parity for supported LLM modes | Unclaimed | Add tested TUI parity for supported LLM setup and diagnostics only after CLI and existing TUI evidence are stable. | After CLI and existing TUI CI-evidence dependencies complete, implement discoverable TUI parity for negotiated supported profiles and modes. |
-| P1 | [AR-1011](../tasks/AR-1011-tui-ux-quality.md): Deliver TUI UX quality features | Unclaimed | Deliver an easy, discoverable, keyboard-first TUI experience for setup and benchmark analysis. | Integrate AR-1014, AR-1031 through AR-1035 and AR-1170 after the focused standalone wizard journeys complete. |
-| P1 | [AR-1012](../tasks/AR-1012-tui-quality-assurance.md): Qualify TUI quality and isolation | Unclaimed | Qualify TUI reliability, accessibility, performance isolation, and reproducible CI captures. | Qualify the complete Ratatui/Crossterm TUI across terminals, failure paths, accessibility checks, and benchmark-overhead budgets. |
