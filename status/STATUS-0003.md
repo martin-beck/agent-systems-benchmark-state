@@ -2988,11 +2988,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1925-ar1900-runtime-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create a narrow successor for blocked AR-1900 using the released AR-1924 runtime. Admit exactly runtime/bin/python, runtime/bin/pytest, runtime/bin/uv, tools/execution_envelope.py, and the focused AR-1900 replacement test scope; preserve AR-1900 and earlier histories, retain all existing lifecycle gates, and exclude network, runtime downloads, host mounts, formal, and TLC. |
@@ -3969,7 +3969,7 @@ flowchart LR
         AR_1922["AR-1922 - Blocked"]:::status_blocked
         AR_1923["AR-1923 - Blocked"]:::status_blocked
         AR_1924["AR-1924 - Done"]:::status_done
-        AR_1925["AR-1925 - In progress"]:::status_in_progress
+        AR_1925["AR-1925 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4110,3 +4110,5 @@ flowchart LR
     AR_0201 --> AR_0604
     AR_0201 --> AR_0702
     AR_0201 --> AR_0703
+    AR_0201 --> AR_0705
+    AR_0201 --> AR_0706
