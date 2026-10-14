@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1919 — Repair git publication](tasks/AR-1919.md) | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. | codex-ar1919-git-publication-20261014 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -147,6 +141,7 @@ Never edit this file directly.
 | P1 | [AR-1909 — Bootstrap retention worktree](tasks/AR-1909.md) | Create a narrow successor for the missing direct worktree needed to execute AR-1906. Use only handoffctl-authorized worktree and test paths; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. | Implement the bounded scope and record local acceptance evidence. | - |
 | P1 | [AR-1915 — Adopt coordinator privacy fix](tasks/AR-1915.md) | Adopt upstream Agent Workflow Coordinator merge a4defa3880b4f371085b0bfd4eef127489c1eab7 into ASB state through the documented clean-source sync-development path. Change only vendored Coordinator files and generated integrity evidence; preserve AR-1904, AR-1906, AR-1909, AR-1912 artifacts and all prior history. No product files, arbitrary paths, network-dependent runtime behavior, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. | - |
 | P1 | [AR-1916 — Refresh stale ledger digests](tasks/AR-1916.md) | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in ASB tasks AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes after AR-1878 recovery; preserve every other task field and all historical records, and do not run formal or TLC checks. | Record exact signed commit and post-merge doctor evidence; broader vendor manifest test remains outside ledger-only scope. | - |
+| P1 | [AR-1919 — Repair git publication](tasks/AR-1919.md) | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. | - |
 | P2 | [AR-0705 — Provide native Debian capacity](tasks/AR-0705-native-debian-capacity.md) | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
 | P2 | [AR-0706 — Provide native openEuler capacity](tasks/AR-0706-native-openeuler-capacity.md) | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
 | P2 | [AR-1444 — First-class journey qualification](tasks/AR-1444-first-class-journey-qualification.md) | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. | - |
