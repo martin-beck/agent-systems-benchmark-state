@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-14T13:48:10+00:00",
+  "updated_at": "2026-10-14T13:48:13+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -161,3 +161,6 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
 - 2026-10-14T13:48:03+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
 
 - 2026-10-14T13:48:10+00:00: Released retry circuit launch slot.
+
+- 2026-10-14T13:48:13+00:00: Recorded command exit 0; command argv SHA-256
+  cd62dce42fcf18c521be5070d619fb6d7d7c68a4a4af7ddbd14fe816e550d76a.
