@@ -1,0 +1,27 @@
+AR-1901 terminal publication-scope validation
+Recorded: 2026-10-14
+
+Positive admission:
+- tasks/AR-1901.md: ALLOWED (durable envelope admission passed)
+- envelopes/AR-1881-e1.json: ALLOWED (durable envelope admission passed)
+
+Fail-closed admission:
+- ../agent-systems-benchmark-state/tasks/AR-1881.md: PATH_OUTSIDE_SCOPE
+- /srv/data/projects/agent-systems-benchmark/tools/execution_lifecycle.py:
+  PATH_OUTSIDE_SCOPE
+- tools/execution_lifecycle.py: ALLOWED only as a state-checkout-relative path;
+  this does not admit the product checkout.
+- The bound AR-1901 envelope admits only coordination-state paths and has no
+  product-checkout root or product path admission. The existing one-root
+  worktree/scope contract cannot represent the reviewed product checkout and
+  coordination-state checkout simultaneously without widening scope.
+
+Focused command attempts:
+- handoffctl run ... python -m pytest ...: blocked by bounded runner image;
+  python is unavailable.
+- handoffctl run ... python3 -m pytest ...: blocked because /usr/bin/python3
+  has no pytest module.
+- No formal or TLC command was run.
+
+Disposition: precise fail-closed blocker. Preserve AR-1881, AR-1882, and AR-1900
+history; do not widen the immutable AR-1901 envelope or mutate product history.
