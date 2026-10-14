@@ -2604,7 +2604,7 @@
 | Parent | None |
 | Children | None |
 | Summary | State-only coordination repair to renew an explicit implementer assignment for the AR-1896 bounded dependency admission. Preserve AR-1896 and earlier histories; reject force-clear, cross-root, network, formal/TLC, or task-scope widening. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Release after signed state repair commit, exact-head review/CI, merge, post-merge assurance, and live doctor. |
 
 ### AR-1898 — Admit change-drift dependency
 
@@ -4225,5 +4225,3 @@ flowchart LR
     AR_0509 --> AR_0515
     AR_0510 --> AR_0515
     AR_0511 --> AR_0515
-    AR_0512 --> AR_0515
-    AR_0513 --> AR_0515
