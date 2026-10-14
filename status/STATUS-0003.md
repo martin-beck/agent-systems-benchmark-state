@@ -2676,6 +2676,20 @@
 | Summary | State-only successor admitting exactly tools/resume_card.py for the AR-1900 focused replacement test. Preserve AR-1901, AR-1900 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1903 — Admit retry-circuit dependency
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only successor admitting exactly tools/retry_circuit.py for the AR-1902 focused replacement test. Preserve AR-1902 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3625,6 +3639,7 @@ flowchart LR
         AR_1900["AR-1900 - In progress"]:::status_in_progress
         AR_1901["AR-1901 - In progress"]:::status_in_progress
         AR_1902["AR-1902 - In progress"]:::status_in_progress
+        AR_1903["AR-1903 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4388,28 +4403,3 @@ flowchart LR
     AR_1170 --> AR_1180
     AR_1180 --> AR_0809
     AR_1190 --> AR_1191
-    AR_1190 --> AR_1198
-    AR_1190 --> AR_1199
-    AR_1190 --> AR_1299
-    AR_1190 --> AR_1316
-    AR_1190 --> AR_1498
-    AR_1191 --> AR_1199
-    AR_1191 --> AR_1316
-    AR_1191 --> AR_1498
-    AR_1200 --> AR_1226
-    AR_1200 --> AR_1475
-    AR_1200 --> AR_1476
-    AR_1200 --> AR_1477
-    AR_1210 --> AR_1211
-    AR_1210 --> AR_1216
-    AR_1211 --> AR_1212
-    AR_1211 --> AR_1216
-    AR_1212 --> AR_1213
-    AR_1212 --> AR_1216
-    AR_1213 --> AR_1214
-    AR_1213 --> AR_1215
-    AR_1213 --> AR_1216
-    AR_1214 --> AR_1216
-    AR_1215 --> AR_1216
-    AR_1226 --> AR_1337
-    AR_1228 --> AR_1120

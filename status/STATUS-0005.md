@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md) | [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md) |
 | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md), [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) |
 | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) |
 | [AR-1396](../tasks/AR-1396-literature-workload-selection.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) |
@@ -464,6 +465,7 @@
 | [AR-1900](../tasks/AR-1900.md) | None | None |
 | [AR-1901](../tasks/AR-1901.md) | None | None |
 | [AR-1902](../tasks/AR-1902.md) | None | None |
+| [AR-1903](../tasks/AR-1903.md) | None | None |
 
 ## Complete AR inventory
 
@@ -603,7 +605,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (96)
+### Planned (97)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -668,5 +670,3 @@
 | P1 | [AR-0818](../tasks/AR-0818-remote-control-security-audit.md): Audit remote benchmark control | Unclaimed | Attack and qualify remote benchmark control before any release enables it. | Independently audit remote protocol, trust, authorization, lifecycle, interoperability, privacy, and operational safety. |
 | P1 | [AR-0823](../tasks/AR-0823-installation-qualification.md): Audit installation and first-run experience | Unclaimed | Qualify the one-line experience and complete install lifecycle across the supported native matrix. | Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall. |
 | P1 | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Unclaimed | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. |
-| P1 | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md): Add linked artifact retention and cleanup | Unclaimed | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. |
-| P1 | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md): Coordinate OpenJiuwen and WorkBuddy agent support | Unclaimed | Coordinate independently qualified OpenJiuwen and WorkBuddy support without merging their provenance or evidence boundaries. | Keep planned while both child series run independently; complete only after AR-0862 and AR-0868 are durably done with executable live/replay qualification. |
