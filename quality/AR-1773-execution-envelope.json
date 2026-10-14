@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1773-e1",
+  "envelope_revision": 1,
+  "task": "AR-1773",
+  "task_revision": 130,
+  "spec_ref": "specs/AR-1773.json",
+  "spec_revision": 1,
+  "command_classes": {
+    "read": {"allowed": true, "timeout_seconds": 120},
+    "test": {"allowed": true, "timeout_seconds": 3600}
+  },
+  "path_scope": {
+    "read": ["crates/asb-cli", "docs", "Cargo.toml", "Cargo.lock"],
+    "write": ["quality"]
+  },
+  "evidence": [
+    {"id": "contract-test", "class": "contract-test", "required": true},
+    {"id": "mechanical-check", "class": "mechanical", "required": true}
+  ],
+  "outputs": [{"id": "test-evidence", "description": "Run bounded exact-head tests and mechanical instrumentation checks."}],
+  "non_goals": ["No product source changes; implementation is already an ancestor of current main."],
+  "stop_conditions": [{"id": "unexpected-drift", "kind": "pause"}]
+}
