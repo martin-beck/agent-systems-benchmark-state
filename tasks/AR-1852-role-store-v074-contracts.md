@@ -79,6 +79,16 @@
   "execution_envelope_ref": "envelopes/AR-1852-e1.json",
   "execution_envelope_revision": 1,
   "execution_envelope_task_revision": 102,
+  "execution_reservation": {
+    "argv_digest": "31d792407ba7531a7c453d1f6ae7572fbc6a6726c9e605213313de6a4fc39e59",
+    "command_class": "test",
+    "envelope_digest": "sha256:2ced3a87098a532733346fc0a8ca95a633aab9d21440ac7914f4c2024b1fcda9",
+    "execution_id": "d0d9f626bbb44633a0420125d0d365db",
+    "expires_at": "2026-10-14T14:03:19+00:00",
+    "owner": "asb-ar1852-role-store-20261014",
+    "scope_digest": "sha256:af7f0b2bd342822f2fa8e6a9fda610570f911f30d3108379ea4184c0866727c3",
+    "task_revision": 135
+  },
   "execution_result": {
     "argv_digest": "3b17f062d953ba7b353a6538557ea2a6d8205257bbe546e8581fe5b8a930dc62",
     "classification": "EXIT",
@@ -162,9 +172,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-14T13:46:58+00:00",
+  "updated_at": "2026-10-14T13:47:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -608,3 +618,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 - 2026-10-14T13:46:25+00:00: Claimed by asb-ar1852-role-store-20261014.
 
 - 2026-10-14T13:46:58+00:00: Heartbeat by asb-ar1852-role-store-20261014.
+
+- 2026-10-14T13:47:20+00:00: Reserved bound execution d0d9f626bbb44633a0420125d0d365db.
