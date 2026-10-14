@@ -386,7 +386,13 @@
 
 ## Complete AR inventory
 
-### Open (6)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1877](../tasks/AR-1877.md): Adopt envelope replacement | asb-ar1877-coordinator-adoption-20261014 | Adopt the merged upstream Agent Workflow Coordinator successor-envelope replacement capability at commit c604e1dd82401a3000d9ec083e7b4fba22f6d513 using the documented vendor sync path. Update only coordinator vendor files and generated integrity evidence, preserve ASB overlays and task history, then validate AR-1863 envelope replacement without direct edits or gate weakening. | Implement the bounded scope and record local acceptance evidence. |
+
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -395,7 +401,6 @@
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 | P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | Unclaimed | Align role-store authorization tests with Coordinator v0.7.4. | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | Unclaimed | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
-| P1 | [AR-1877](../tasks/AR-1877.md): Adopt envelope replacement | Unclaimed | Adopt the merged upstream Agent Workflow Coordinator successor-envelope replacement capability at commit c604e1dd82401a3000d9ec083e7b4fba22f6d513 using the documented vendor sync path. Update only coordinator vendor files and generated integrity evidence, preserve ASB overlays and task history, then validate AR-1863 envelope replacement without direct edits or gate weakening. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (94)
 
@@ -663,4 +668,3 @@
 | P0 | [AR-1190](../tasks/AR-1190.md): Authenticated agent catalog control | Unclaimed | Expose a verified, capability-aware local-agent catalog to asb-tui. | Wait for exact-main post-merge assurance on 748c16ba67b9cff5a08558784dd183d020a1f2d4, then qualify ASB v1.4 fixtures against asb-tui PR #86. |
 | P0 | [AR-1191](../tasks/AR-1191.md): Verified local-agent lifecycle | Unclaimed | Install, activate, verify and recover supported local benchmark agents safely. | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. |
 | P0 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Unclaimed | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Completed: PR #170 merged; stale duplicate PR #171 requires authorized cleanup. |
-| P0 | [AR-1198](../tasks/AR-1198.md): Canonical authenticated agent-catalog digest | Unclaimed | Define and enforce the canonical authenticated ASB v1.4 agent-catalog digest. | Independently review PR #174 at exact head 3cc8fa1a27587642bda5100f45140c11f1fd0c6d, run cross-repository vector checks with asb-tui AR-1195, then merge only after all exact-head checks are green. |

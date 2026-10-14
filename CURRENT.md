@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1877 — Adopt envelope replacement](tasks/AR-1877.md) | Adopt the merged upstream Agent Workflow Coordinator successor-envelope replacement capability at commit c604e1dd82401a3000d9ec083e7b4fba22f6d513 using the documented vendor sync path. Update only coordinator vendor files and generated integrity evidence, preserve ASB overlays and task history, then validate AR-1863 envelope replacement without direct edits or gate weakening. | Implement the bounded scope and record local acceptance evidence. | asb-ar1877-coordinator-adoption-20261014 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -12,7 +18,6 @@ Never edit this file directly.
 | P0 | [AR-1849 — Formal admission environment repair](tasks/AR-1849-formal-admission-env-repair.md) | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94% versus required 95%. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. | - |
 | P1 | [AR-1852 — Role-store v0.7.4 compatibility contracts](tasks/AR-1852-role-store-v074-contracts.md) | Align role-store authorization tests with Coordinator v0.7.4. | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv \(bwrap execvp ENOENT\), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. | - |
 | P1 | [AR-1853 — Complexity v0.7.4 compatibility contract](tasks/AR-1853-complexity-v074-contract.md) | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. | - |
-| P1 | [AR-1877 — Adopt envelope replacement](tasks/AR-1877.md) | Adopt the merged upstream Agent Workflow Coordinator successor-envelope replacement capability at commit c604e1dd82401a3000d9ec083e7b4fba22f6d513 using the documented vendor sync path. Update only coordinator vendor files and generated integrity evidence, preserve ASB overlays and task history, then validate AR-1863 envelope replacement without direct edits or gate weakening. | Implement the bounded scope and record local acceptance evidence. | - |
 
 ## Blocked
 
