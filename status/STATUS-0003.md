@@ -1966,11 +1966,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-ar1852-role-store-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Align role-store authorization tests with Coordinator v0.7.4. |
@@ -3235,7 +3235,7 @@ flowchart LR
         AR_1849["AR-1849 - Open"]:::status_open
         AR_1850["AR-1850 - Done"]:::status_done
         AR_1851["AR-1851 - Blocked"]:::status_blocked
-        AR_1852["AR-1852 - Open"]:::status_open
+        AR_1852["AR-1852 - In progress"]:::status_in_progress
         AR_1853["AR-1853 - Open"]:::status_open
         AR_1854["AR-1854 - Planned"]:::status_planned
         AR_1855["AR-1855 - Done"]:::status_done
@@ -4803,5 +4803,3 @@ flowchart LR
     AR_1567 --> AR_1634
     AR_1568 --> AR_1569
     AR_1568 --> AR_1570
-    AR_1568 --> AR_1588
-    AR_1568 --> AR_1599

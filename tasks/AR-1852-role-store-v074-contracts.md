@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "",
+  "claim_expires": "2026-10-14T15:46:25+00:00",
   "depends_on": [],
   "execution_abandonments": [
     {
@@ -90,7 +90,7 @@
   },
   "id": "AR-1852",
   "next_action": "Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner.",
-  "owner": "",
+  "owner": "asb-ar1852-role-store-20261014",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "retry_circuit": {
@@ -160,11 +160,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-14T09:04:44+00:00",
+  "updated_at": "2026-10-14T13:46:25+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -604,3 +604,5 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-14T09:04:44+00:00: Abandoned expired execution d5f580e45bd14a78926072e512ec24e0 and
   recovered claim formerly owned by ar1852-env-repair-luna5 after local evidence verification.
+
+- 2026-10-14T13:46:25+00:00: Claimed by asb-ar1852-role-store-20261014.
