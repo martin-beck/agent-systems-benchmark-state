@@ -1,1 +1,15 @@
-{"schema_version":1,"envelope_id":"AR-1924-e1","envelope_revision":1,"task":"AR-1924","task_revision":3,"spec_ref":"specs/AR-1924.json","spec_revision":1,"outputs":[{"id":"runtime","description":"Verify materialized offline python, pytest, and uv entrypoints."}],"non_goals":["Do not alter AR-1923 or earlier histories.","Do not add network, downloads, arbitrary mounts, product changes, or formal/TLC gates."],"path_scope":{"read":["tools","tests","runtime/bin","specs/AR-1924.json","envelopes/AR-1924-e1.json","tasks/AR-1924.md"],"write":["quality"]},"command_classes":{"read":{"allowed":true},"test":{"allowed":true,"timeout_seconds":900}},"evidence":[{"id":"runtime","class":"contract-test","required":true}],"stop_conditions":[{"id":"scope","kind":"deny"},{"id":"network","kind":"deny"},{"id":"formal","kind":"deny"}]}
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1924-e1",
+  "envelope_revision": 1,
+  "task": "AR-1924",
+  "task_revision": 5,
+  "spec_ref": "specs/AR-1924.json",
+  "spec_revision": 1,
+  "outputs": [{"id": "runtime", "description": "Verify materialized offline python, pytest, and uv entrypoints."}],
+  "non_goals": ["Do not alter AR-1923 or earlier histories.", "Do not add network, downloads, arbitrary mounts, product changes, or formal/TLC gates."],
+  "path_scope": {"read": ["tools", "tests", "runtime/bin", "specs/AR-1924.json", "envelopes/AR-1924-e1.json", "tasks/AR-1924.md"], "write": ["quality"]},
+  "command_classes": {"read": {"allowed": true}, "test": {"allowed": true, "timeout_seconds": 900}},
+  "evidence": [{"id": "runtime", "class": "contract-test", "required": true}],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}, {"id": "network", "kind": "deny"}, {"id": "formal", "kind": "deny"}]
+}
