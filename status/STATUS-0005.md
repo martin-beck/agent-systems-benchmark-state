@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md) | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md) | None |
 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md) | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md), [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md) | None |
 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md) | None | None |
 | [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md) | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md), [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md) | [AR-1481](../tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md), [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md), [AR-1483](../tasks/AR-1483-authenticated-control-process-owner.md), [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md), [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md), [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md), [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md), [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md), [AR-1504](../tasks/AR-1504-runtime-platform-launcher-seam.md), [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md), [AR-1506](../tasks/AR-1506-runtime-platform-launcher-integration.md), [AR-1507](../tasks/AR-1507-runtime-owned-authority-materialization.md), [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md), [AR-1509](../tasks/AR-1509-authenticated-authority-provider-receipt.md) |
@@ -349,21 +348,21 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | asb_ar1773_docker_runner_luna | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Repair the coordinator Bubblewrap runtime root to mount the approved pinned Cargo toolchain, compiler/linker support, complete workspace source, and required identity files through an authorized runner; then rerun exact-head focused and full tests through handoffctl. No product source repair is justified. |
 | P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | ar1852-env-repair-luna5 | Align role-store authorization tests with Coordinator v0.7.4. | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. |
-| P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | codex-asb-ar1863-publication-retry-20261014 | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | AR-0035 is merged, but this ASB handoffctl runner still omits .git metadata and required external-side-effect/network capability from git-publication execution. Repair or rebind the ASB publication sandbox to mount reviewed repository metadata and authorized remote access, then rerun the exact helper; do not direct-merge or weaken source-write/diagnostic gates. |
 
-### Open (3)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | Unclaimed | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
+| P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | Unclaimed | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | AR-0035 is merged, but this ASB handoffctl runner still omits .git metadata and required external-side-effect/network capability from git-publication execution. Repair or rebind the ASB publication sandbox to mount reviewed repository metadata and authorized remote access, then rerun the exact helper; do not direct-merge or weaken source-write/diagnostic gates. |
 
 ### Blocked (91)
 
