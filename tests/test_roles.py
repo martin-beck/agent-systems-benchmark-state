@@ -449,7 +449,9 @@ class RoleManagementTests(unittest.TestCase):
                 patch.object(handoffctl, "validate", return_value=[]),
                 patch.object(handoffctl, "all_tasks", return_value=active_unknown),
             ):
-                self.assertEqual(0, handoffctl.cmd_doctor(live=False))
+                with redirect_stdout(StringIO()) as output:
+                    self.assertEqual(1, handoffctl.cmd_doctor(live=False))
+                self.assertIn("no active assignment", output.getvalue())
 
     def test_handoffctl_lifecycle_admission_uses_durable_role_store(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -476,7 +478,8 @@ class RoleManagementTests(unittest.TestCase):
                 patch.object(handoffctl, "ROOT", root),
             ):
                 handoffctl.require_role_admission("worker-007")
-                handoffctl.require_role_admission("unknown-owner")
+                with self.assertRaisesRegex(RuntimeError, "no active assignment"):
+                    handoffctl.require_role_admission("unknown-owner")
 
 
 if __name__ == "__main__":

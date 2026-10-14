@@ -148,7 +148,7 @@ class TaskRecordSchemaTests(unittest.TestCase):
 
     def test_invalid_standard_metadata_is_rejected(self) -> None:
         invalid = record()
-        invalid["observed_dirty"] = False
+        invalid["observed_dirty"] = -1
         with self.assertRaises(ValidationError):
             self.validator.validate(invalid)
         invalid = copy.deepcopy(record())
