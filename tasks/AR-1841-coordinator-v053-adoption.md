@@ -22,11 +22,11 @@
   },
   "spec_ref": "specs/AR-1841.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 170,
+  "task_revision": 171,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-13T16:56:17+00:00",
+  "updated_at": "2026-10-14T14:00:05+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -559,3 +559,6 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
 - 2026-10-13T16:56:17+00:00: Blocked safely: claim expired and no current session snapshot exists,
   so fail-closed recovery cannot reconstruct prior work. Preserve all vendor/review evidence;
   require a new dependency-safe repair/resume path before adoption.
+
+- 2026-10-14T14:00:05+00:00: Coordinator-authorized UD-0003 metadata normalization: reopen for
+  next_action correction only; preserve dependency graph and historical evidence.
