@@ -2624,11 +2624,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1899-results-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/command_results.py for the AR-1898 focused replacement test. Preserve AR-1898 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -3884,7 +3884,7 @@ flowchart LR
         AR_1896["AR-1896 - Blocked"]:::status_blocked
         AR_1897["AR-1897 - Done"]:::status_done
         AR_1898["AR-1898 - Done"]:::status_done
-        AR_1899["AR-1899 - In progress"]:::status_in_progress
+        AR_1899["AR-1899 - Done"]:::status_done
     end
     subgraph series_19["19 - Additional work"]
         direction TB
@@ -4174,3 +4174,5 @@ flowchart LR
     AR_0320 --> AR_0869
     AR_0320 --> AR_0876
     AR_0320 --> AR_1120
+    AR_0320 --> AR_1228
+    AR_0320 --> AR_1230
