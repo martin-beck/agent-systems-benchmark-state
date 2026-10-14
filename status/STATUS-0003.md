@@ -2442,11 +2442,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1886-runner-env-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Repair only the bounded handoffctl Bubblewrap execution root so approved pinned executables (pwd, git, and sync tooling) are visible for AR-1885 commands. Preserve AR-1885 immutable history; do not add host mounts, network, runtime downloads, scope widening, or gate weakening. |
@@ -3871,7 +3871,7 @@ flowchart LR
         AR_1883["AR-1883 - Blocked"]:::status_blocked
         AR_1884["AR-1884 - Blocked"]:::status_blocked
         AR_1885["AR-1885 - Open"]:::status_open
-        AR_1886["AR-1886 - Open"]:::status_open
+        AR_1886["AR-1886 - In progress"]:::status_in_progress
         AR_1887["AR-1887 - Blocked"]:::status_blocked
         AR_1888["AR-1888 - Open"]:::status_open
         AR_1889["AR-1889 - Open"]:::status_open
@@ -4178,5 +4178,3 @@ flowchart LR
     AR_0320 --> AR_1230
     AR_0401 --> AR_0402
     AR_0401 --> AR_0403
-    AR_0401 --> AR_0405
-    AR_0401 --> AR_0505

@@ -510,7 +510,13 @@
 
 ## Complete AR inventory
 
-### Open (20)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1886](../tasks/AR-1886.md): Repair runner environment | codex-ar1886-runner-env-20261014 | Repair only the bounded handoffctl Bubblewrap execution root so approved pinned executables (pwd, git, and sync tooling) are visible for AR-1885 commands. Preserve AR-1885 immutable history; do not add host mounts, network, runtime downloads, scope widening, or gate weakening. | Implement the bounded scope and record local acceptance evidence. |
+
+### Open (19)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -519,7 +525,6 @@
 | P1 | [AR-1878](../tasks/AR-1878.md): Reissue diagnostic catalog task | Unclaimed | Create a fresh successor task for the reviewed control diagnostic catalog repair with a new source-write execution envelope scoped only to the catalog files and required tests/publication. Preserve AR-1863 as immutable blocked history; do not widen or mutate its bound envelope, alter AR-1787/AR-1835, or weaken coordinator gates. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1881](../tasks/AR-1881.md): Recover terminal orphan reservation | Unclaimed | Add a narrowly scoped handoffctl recovery path for an expired bound reservation with an exactly matching durable terminal result but no legacy claim_process identity. Reuse AR-1867/AR-1872 evidence and structural fences; preserve exact reservation/result identity, expiry, structural validation, and immutable audit. Do not edit AR-1878 before lease expiry, weaken other recover/abandon cases, or force-clear state. | Obtain exact-head review and publication for signed product commit 3162fe8be2; retain envelope read-scope and git_metadata admission blockers as non-waived evidence. |
 | P1 | [AR-1885](../tasks/AR-1885.md): Adopt cwd routing | Unclaimed | Adopt upstream Coordinator multi-root/cwd-routing at exact commit 2493c67f2ea162885b15c648fb3d626c84732170 via development vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, and generated integrity evidence; preserve ASB overlays, views, and immutable AR-1878 through AR-1884. No Agent Relay dependency, formal/TLC gate, runtime download, or direct state-history/file copy. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1886](../tasks/AR-1886.md): Repair runner environment | Unclaimed | Repair only the bounded handoffctl Bubblewrap execution root so approved pinned executables (pwd, git, and sync tooling) are visible for AR-1885 commands. Preserve AR-1885 immutable history; do not add host mounts, network, runtime downloads, scope widening, or gate weakening. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1888](../tasks/AR-1888.md): Publish gate repair | Unclaimed | Publish the already reviewed AR-1887 state repair at exact commit 12074686d4, including its signed/DCO ancestry and full-suite evidence digest sha256:65c3adc9516e93a55aa1a629beceb15c1ede0b3a345b73c51a4c40463298535e. Scope is immutable to tools/handoffctl.py, tests, and quality evidence; preserve AR-1887 and earlier histories. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1889](../tasks/AR-1889.md): Recover expired claim | Unclaimed | Add only the state-side recovery capability needed to clear AR-1878&#x27;s exact expired reservation with matching durable terminal EXIT evidence. Scope tools/handoffctl.py, execution lifecycle, and focused tests; preserve AR-1878 through AR-1888, reject force-clear/cross-root paths, and do not run formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1892](../tasks/AR-1892.md): Admit observation scope | Unclaimed | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. | Run bounded focused recovery scope test through AR-1892 envelope. |
@@ -671,4 +676,3 @@
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
-| P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
