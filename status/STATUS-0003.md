@@ -2830,6 +2830,20 @@
 | Summary | Create a narrow successor for clean-state admission blocked by untracked AR-1904/1906/1909 specs and envelopes. Reconcile only through handoffctl-authorized paths; do not delete, directly edit, overwrite, or broaden artifacts, and do not alter product files or prior history. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1914 — Ignore cache artifacts
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only handoffctl privacy-validation repair: ignore only ignored __pycache__ artifacts during state-file size/privacy scanning, while retaining validation for tracked or non-ignored files. Add focused positive and negative tests. Preserve AR-1878 through AR-1912, all worker artifacts and prior history; do not delete files, widen exclusions, alter product files, bypass claims, use network, or run formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3790,6 +3804,7 @@ flowchart LR
         AR_1911["AR-1911 - Planned"]:::status_planned
         AR_1912["AR-1912 - Planned"]:::status_planned
         AR_1913["AR-1913 - Planned"]:::status_planned
+        AR_1914["AR-1914 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4242,36 +4257,3 @@ flowchart LR
     AR_0808 --> AR_0810
     AR_0808 --> AR_0811
     AR_0809 --> AR_0810
-    AR_0809 --> AR_0811
-    AR_0810 --> AR_0811
-    AR_0811 --> AR_0903
-    AR_0812 --> AR_0807
-    AR_0812 --> AR_0820
-    AR_0812 --> AR_1033
-    AR_0813 --> AR_0814
-    AR_0813 --> AR_0818
-    AR_0813 --> AR_1288
-    AR_0814 --> AR_0815
-    AR_0814 --> AR_0818
-    AR_0815 --> AR_0816
-    AR_0815 --> AR_0817
-    AR_0815 --> AR_0818
-    AR_0816 --> AR_0817
-    AR_0816 --> AR_0818
-    AR_0817 --> AR_0809
-    AR_0817 --> AR_0818
-    AR_0818 --> AR_0903
-    AR_0819 --> AR_0809
-    AR_0819 --> AR_0815
-    AR_0819 --> AR_0816
-    AR_0819 --> AR_0817
-    AR_0819 --> AR_0818
-    AR_0820 --> AR_0821
-    AR_0820 --> AR_0822
-    AR_0820 --> AR_1024
-    AR_0821 --> AR_0808
-    AR_0821 --> AR_0809
-    AR_0821 --> AR_0822
-    AR_0821 --> AR_0823
-    AR_0821 --> AR_1024
-    AR_0821 --> AR_1441

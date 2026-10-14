@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1914",
+  "issue": {
+    "number": 10045,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10045"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Create the successor task through handoffctl, then implement positive and negative tests proving an ignored __pycache__ .pyc over 200 KiB does not block validation while an equally oversized non-ignored state file still fails; record the exact fail-closed blocker if implementation cannot proceed.",
+      "depends_on": [],
+      "id": "AR-1914",
+      "ownership": "ASB handoffctl privacy-validation repair only; preserve all existing task histories, worker artifacts, product head, lifecycle gates and formal/TLC exclusion.",
+      "scope": "State-only handoffctl privacy-validation repair: ignore only ignored __pycache__ artifacts during state-file size/privacy scanning, while retaining validation for tracked or non-ignored files. Add focused positive and negative tests. Preserve AR-1878 through AR-1912, all worker artifacts and prior history; do not delete files, widen exclusions, alter product files, bypass claims, use network, or run formal/TLC.",
+      "short_title": "Ignore cache artifacts"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
