@@ -2184,7 +2184,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add a fail-closed ASB downstream handoffctl overlay path to recover expired bound execution reservations from pre-identity claims without direct state edits or weakened reservation structural checks. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Focused recovery tests pass (8/8). Full unittest discovery was started but hung in a filesystem/jbd2 D-state after broad baseline output and was terminated at a bounded threshold; preserve this environment blocker and continue with focused publication review. |
 
 
 ## Dependency graph
@@ -4977,11 +4977,3 @@ flowchart LR
     AR_1733 --> AR_1754
     AR_1733 --> AR_1785
     AR_1733 --> AR_1786
-    AR_1733 --> AR_1787
-    AR_1733 --> AR_1788
-    AR_1733 --> AR_1789
-    AR_1733 --> AR_1790
-    AR_1733 --> AR_1797
-    AR_1734 --> AR_1737
-    AR_1734 --> AR_1738
-    AR_1737 --> AR_1751
