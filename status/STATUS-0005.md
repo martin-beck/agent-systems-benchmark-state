@@ -471,12 +471,13 @@
 | P1 | [AR-1896](../tasks/AR-1896.md): Admit revalidation dependency | codex-ar1896-revalidation-20261014 | State-only successor admitting exactly tools/assumption_revalidation.py for the AR-1895 focused replacement test. Preserve AR-1895 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1897](../tasks/AR-1897.md): Renew implementer assignment | codex-ar1897-role-renewal-20261014 | State-only coordination repair to renew an explicit implementer assignment for the AR-1896 bounded dependency admission. Preserve AR-1896 and earlier histories; reject force-clear, cross-root, network, formal/TLC, or task-scope widening. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
+| P1 | [AR-1898](../tasks/AR-1898.md): Admit change-drift dependency | Unclaimed | State-only successor admitting exactly tools/change_drift.py for the AR-1896 focused replacement test. Preserve AR-1897, AR-1896 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (101)
 
@@ -584,7 +585,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (97)
+### Planned (96)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -666,4 +667,3 @@
 | P1 | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md): Add grouped measurement selection to the TUI | Unclaimed | Let users select grouped measurements from the standalone ASB TUI. | After AR-1025, AR-1033 and ASB AR-1037 complete, implement the bounded selector with precise v1.3 validation UX, generic v1.2 fallback and canonical plan round trips only in standalone asb-tui. |
 | P1 | [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md): Add a pinned, provenance-safe CSB measurement adapter | Unclaimed | Import qualified CSB resource, system-statistics, and contention measurements into ASB. | Inventory pinned CSB signals and implement only contract-compatible adapters after the catalog is accepted. |
 | P1 | [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Unclaimed | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. |
-| P1 | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Unclaimed | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. |
