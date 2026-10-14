@@ -362,7 +362,7 @@
 | P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | ar1852-env-repair-luna5 | Align role-store authorization tests with Coordinator v0.7.4. | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. |
 | P1 | [AR-1866](../tasks/AR-1866.md): Correct vendor version docs | asb-vendor-docs-repair | Correct ASB public vendor documentation that still names Coordinator v0.3.5 after the checked-in coordinator.vendor.json adopted v0.7.8, without changing runtime or coordinator behavior. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -370,6 +370,7 @@
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | Unclaimed | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
 | P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | Unclaimed | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Blocked: AR-0035 v2 envelope cannot bind because durable role state contains expired assignments; clean expired roles through coordinator authority, then bind AR-1863-e3 and rerun exact-head publication preflight. Do not direct-merge. |
+| P1 | [AR-1865](../tasks/AR-1865.md): Repair expired role cleanup | Unclaimed | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (91)
 
@@ -467,7 +468,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (96)
+### Planned (95)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -563,7 +564,6 @@
 | P1 | [AR-1831](../tasks/AR-1831-explicit-config-cli-tui-docs.md): Align CLI, TUI handoff, and documentation to explicit config workflow | Unclaimed | Make every CLI, TUI handoff, help page, completion, and example teach the explicit setup-output and plan-config workflow. | Align CLI help, human output, completions, TUI handoff, examples, and migration documentation to the explicit setup-config route. |
 | P1 | [AR-1848](../tasks/AR-1848-graph-extraction-qualification.md): Qualify ASB dataflow graph extraction end to end | Unclaimed | Qualify reproducible complete ASB dataflow extraction, DOT/SVG generation, privacy, and paired documentation. | Promote after AR-1847; run clean-checkout extraction and cross-check graph artifacts against all generated registries and CLI options. |
 | P1 | [AR-1854](../tasks/AR-1854-v074-compatibility-integration.md): v0.7.4 compatibility integration qualification | Unclaimed | Integrate and qualify the Coordinator v0.7.4 compatibility repairs. | Promote only after AR-1851, AR-1852 and AR-1853 merge; combine their exact reviewed heads and run the strict/formal integration gates. |
-| P1 | [AR-1865](../tasks/AR-1865.md): Repair expired role cleanup | Unclaimed | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. | Implement the bounded scope and record local acceptance evidence. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
