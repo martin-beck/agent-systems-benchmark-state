@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1907",
+  "issue": {
+    "number": 10038,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10038"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Bind exact read scope and focused test; record pass or fail-closed result.",
+      "depends_on": [],
+      "id": "AR-1907",
+      "ownership": "ASB execution-envelope scope admission only; no product/vendor/history changes.",
+      "scope": "State-only successor admitting exactly tools/resume_card_runtime.py for the AR-1905 focused replacement test. Preserve AR-1906, AR-1905 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC.",
+      "short_title": "Admit resume runtime dependency"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

@@ -2732,6 +2732,20 @@
 | Summary | Create a narrow successor for bind-spec/bind-envelope candidate retention. Use only handoffctl issue-series and authorized coordinator paths; preserve AR-1901 through AR-1905 immutable records, reject direct Git/state edits and arbitrary paths, and do not alter product files. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1907 — Admit resume runtime dependency
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only successor admitting exactly tools/resume_card_runtime.py for the AR-1905 focused replacement test. Preserve AR-1906, AR-1905 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3685,6 +3699,7 @@ flowchart LR
         AR_1904["AR-1904 - In progress"]:::status_in_progress
         AR_1905["AR-1905 - In progress"]:::status_in_progress
         AR_1906["AR-1906 - Planned"]:::status_planned
+        AR_1907["AR-1907 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4337,29 +4352,3 @@ flowchart LR
     AR_1017 --> AR_1019
     AR_1017 --> AR_1021
     AR_1017 --> AR_1022
-    AR_1017 --> AR_1030
-    AR_1018 --> AR_1019
-    AR_1018 --> AR_1021
-    AR_1018 --> AR_1022
-    AR_1018 --> AR_1199
-    AR_1018 --> AR_1498
-    AR_1019 --> AR_1020
-    AR_1019 --> AR_1021
-    AR_1019 --> AR_1022
-    AR_1019 --> AR_1199
-    AR_1019 --> AR_1498
-    AR_1020 --> AR_1021
-    AR_1020 --> AR_1022
-    AR_1020 --> AR_1199
-    AR_1020 --> AR_1498
-    AR_1021 --> AR_1022
-    AR_1022 --> AR_1024
-    AR_1022 --> AR_1025
-    AR_1022 --> AR_1060
-    AR_1023 --> AR_1024
-    AR_1023 --> AR_1025
-    AR_1023 --> AR_1036
-    AR_1023 --> AR_1038
-    AR_1023 --> AR_1060
-    AR_1024 --> AR_1026
-    AR_1024 --> AR_1029
