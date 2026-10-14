@@ -2240,7 +2240,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Integrate independently reviewed AR-1868 schema vocabulary repair and AR-1870 ledger digest repair on current main, changing only schema/task-schema.json, tests/test_task_record_schema.py, and AR-1861/AR-1862 evidence_ledger blocks. This successor explicitly depends on AR-1868 and AR-1870 review evidence; do not include checkpoints, sessions, projections, runtime state, or unrelated files. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Publish exact-head signed integration PR; obtain independent review; run green CI; merge via handoffctl; post-merge verify schema and both evidence ledgers. |
 
 
 ## Dependency graph
@@ -4915,7 +4915,3 @@ flowchart LR
     AR_1656 --> AR_1704
     AR_1656 --> AR_1710
     AR_1656 --> AR_1719
-    AR_1657 --> AR_1655
-    AR_1657 --> AR_1660
-    AR_1657 --> AR_1704
-    AR_1657 --> AR_1710
