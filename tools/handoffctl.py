@@ -267,6 +267,7 @@ LIFECYCLE_MUTATION_COMMANDS = (
     "bind-spec",
     "bind-worktree",
     "bind-envelope",
+    "replace-envelope",
     "release",
     "promote",
     "pause",
@@ -327,6 +328,7 @@ FIELDS = set(REQ) | {
     "execution_envelope_digest",
     "execution_envelope",
     "execution_reservation",
+    "execution_envelope_replacement",
     "execution_result",
     "execution_abandonments",
     "parent_task_ref",
@@ -1463,6 +1465,7 @@ def execution_metadata_errors(task_id: str, meta: Meta) -> list[str]:
     if result is not None and not valid_execution_result(result):
         errors.append(f"{task_id}: invalid execution_result")
     errors.extend(execution_abandonment_errors(task_id, meta))
+    errors.extend(envelope_replacement_errors(task_id, meta))
     if not valid_execution_envelope_binding(meta):
         errors.append(f"{task_id}: invalid execution envelope binding")
     if error := change_drift.metadata_error(meta):
@@ -1487,6 +1490,44 @@ valid_execution_reservation = execution_envelope.valid_reservation
 valid_execution_envelope_binding = execution_envelope.valid_binding
 valid_execution_result = execution_receipt.valid
 execution_result_matches = execution_receipt.matches
+
+
+def valid_envelope_replacement(value: object) -> bool:
+    """Validate the immutable, one-shot envelope replacement evidence record."""
+    if not isinstance(value, dict) or set(value) != {
+        "from_ref",
+        "from_revision",
+        "from_task_revision",
+        "from_digest",
+        "to_ref",
+        "to_revision",
+        "to_task_revision",
+        "to_digest",
+        "owner",
+        "recorded_at",
+    }:
+        return False
+    if not all(
+        isinstance(value.get(key), str) and value[key]
+        for key in ("from_ref", "to_ref", "owner", "recorded_at")
+    ):
+        return False
+    if not all(
+        type(value.get(key)) is int and value[key] >= 1
+        for key in ("from_revision", "from_task_revision", "to_revision", "to_task_revision")
+    ):
+        return False
+    return all(
+        isinstance(value.get(key), str) and re.fullmatch(r"sha256:[0-9a-f]{64}", value[key])
+        for key in ("from_digest", "to_digest")
+    )
+
+
+def envelope_replacement_errors(task_id: str, meta: Meta) -> list[str]:
+    replacement = meta.get("execution_envelope_replacement")
+    if replacement is not None and not valid_envelope_replacement(replacement):
+        return [f"{task_id}: invalid execution envelope replacement evidence"]
+    return []
 
 
 def live_execution_reservation(meta: Meta) -> Meta | None:
@@ -2906,6 +2947,100 @@ def apply_bind_envelope(args: argparse.Namespace, meta: Meta) -> str:
     return f"Bound execution envelope {args.envelope_ref} revision {args.envelope_revision}."
 
 
+def reviewed_replacement_scope(candidate: Meta) -> bool:
+    return bool(
+        candidate["path_scope"]
+        == {
+            "read": [
+                "crates/asb-cli/src/control.rs",
+                "crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs",
+                "crates/asb-cli/tests/diagnostic_contract.rs",
+                "crates/asb-cli/Cargo.toml",
+                "Cargo.toml",
+                "Cargo.lock",
+            ],
+            "write": [
+                "crates/asb-cli/src/control.rs",
+                "crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs",
+            ],
+        }
+        and candidate["non_goals"]
+        == [
+            "Do not change AR-1787, AR-1835, diagnostic gates, or unrelated tasks.",
+            "Do not write outside the reviewed control diagnostic catalog paths.",
+        ]
+    )
+
+
+def replacement_candidate(args: argparse.Namespace, meta: Meta) -> tuple[Meta, str]:
+    validate_replacement_identity(args, meta)
+    candidate, digest, found = execution_envelope.load(ROOT, args.to_ref)
+    if found or candidate is None:
+        raise RuntimeError("replace-envelope envelope is invalid: " + "; ".join(found))
+    if candidate["task"] != args.task or candidate["task_revision"] != meta["task_revision"]:
+        raise RuntimeError("replace-envelope candidate is not bound to the exact current revision")
+    if candidate["spec_ref"] != meta.get("spec_ref") or candidate["spec_revision"] != meta.get(
+        "spec_revision"
+    ):
+        raise RuntimeError("replace-envelope candidate spec binding does not match")
+    if not reviewed_replacement_scope(candidate):
+        raise RuntimeError("replace-envelope candidate broadens reviewed scope")
+    return candidate, digest
+
+
+def validate_replacement_identity(args: argparse.Namespace, meta: Meta) -> None:
+    if (
+        args.task != "AR-1863"
+        or args.from_ref != "envelopes/AR-1863-e2.json"
+        or args.to_ref != "envelopes/AR-1863-e3.json"
+    ):
+        raise RuntimeError("replace-envelope admits only AR-1863 e2 to e3")
+    if args.from_revision != 2 or args.to_revision != 3:
+        raise RuntimeError("replace-envelope envelope revisions are fixed at e2 to e3")
+    if meta.get("execution_envelope_replacement") is not None:
+        raise RuntimeError("replace-envelope evidence is immutable")
+    if (
+        meta.get("execution_envelope_ref") != args.from_ref
+        or meta.get("execution_envelope_revision") != 2
+    ):
+        raise RuntimeError("replace-envelope requires the bound AR-1863-e2 envelope")
+    old = meta.get("execution_envelope")
+    if not isinstance(old, dict) or execution_envelope.errors(old):
+        raise RuntimeError("replace-envelope old envelope is malformed")
+
+
+def apply_replace_envelope(args: argparse.Namespace, meta: Meta) -> str:
+    """Replace only the reviewed stale AR-1863 envelope at one exact revision."""
+    require_active_binding_owner(args, meta)
+    require_no_execution_reservation(meta)
+    if args.expected_revision != meta["task_revision"]:
+        raise RuntimeError(
+            f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
+        )
+    candidate, candidate_digest = replacement_candidate(args, meta)
+    evidence = {
+        "from_ref": args.from_ref,
+        "from_revision": 2,
+        "from_task_revision": int(meta["execution_envelope_task_revision"]),
+        "from_digest": str(meta["execution_envelope_digest"]),
+        "to_ref": args.to_ref,
+        "to_revision": 3,
+        "to_task_revision": int(meta["task_revision"]),
+        "to_digest": candidate_digest,
+        "owner": str(args.owner),
+        "recorded_at": now(),
+    }
+    meta.update(
+        execution_envelope_ref=args.to_ref,
+        execution_envelope_revision=3,
+        execution_envelope_task_revision=meta["task_revision"],
+        execution_envelope_digest=candidate_digest,
+        execution_envelope=candidate,
+        execution_envelope_replacement=evidence,
+    )
+    return "Replaced AR-1863-e2 with reviewed AR-1863-e3 at the exact current task revision."
+
+
 def apply_execution_start(args: argparse.Namespace, meta: Meta) -> str:
     return execution_lifecycle.start(_EXECUTION_RUNTIME, args, meta)
 
@@ -3155,6 +3290,7 @@ def lifecycle_transition_handler(
         "bind-worktree": lambda: apply_bind_worktree(args, meta, tasks),
         "repair-legacy-binding": lambda: apply_repair_legacy_binding(args, meta, tasks),
         "bind-envelope": lambda: apply_bind_envelope(args, meta),
+        "replace-envelope": lambda: apply_replace_envelope(args, meta),
         "execution-start": lambda: apply_execution_start(args, meta),
         "execution-result": lambda: apply_execution_result(args, meta),
         "execution-finish": lambda: apply_execution_finish(args, meta),
@@ -4948,6 +5084,14 @@ def main() -> int:
     item.add_argument("--expected-revision", type=int, required=True)
     item.add_argument("--envelope-ref", required=True)
     item.add_argument("--envelope-revision", type=int, required=True)
+    item = commands.add_parser("replace-envelope")
+    item.add_argument("task")
+    item.add_argument("--owner", required=True)
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--from-ref", required=True)
+    item.add_argument("--from-revision", type=int, required=True)
+    item.add_argument("--to-ref", required=True)
+    item.add_argument("--to-revision", type=int, required=True)
     item = commands.add_parser("preflight")
     item.add_argument("task")
     item.add_argument("--owner", required=True)

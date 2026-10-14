@@ -288,6 +288,34 @@
     "execution_envelope": {
       "type": "object"
     },
+    "execution_envelope_replacement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "from_ref",
+        "from_revision",
+        "from_task_revision",
+        "from_digest",
+        "to_ref",
+        "to_revision",
+        "to_task_revision",
+        "to_digest",
+        "owner",
+        "recorded_at"
+      ],
+      "properties": {
+        "from_ref": {"type": "string", "minLength": 1},
+        "from_revision": {"type": "integer", "minimum": 1},
+        "from_task_revision": {"type": "integer", "minimum": 1},
+        "from_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "to_ref": {"type": "string", "minLength": 1},
+        "to_revision": {"type": "integer", "minimum": 1},
+        "to_task_revision": {"type": "integer", "minimum": 1},
+        "to_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "owner": {"type": "string", "minLength": 1, "maxLength": 128},
+        "recorded_at": {"type": "string", "format": "date-time"}
+      }
+    },
     "execution_reservation": {
       "type": "object",
       "additionalProperties": false,
