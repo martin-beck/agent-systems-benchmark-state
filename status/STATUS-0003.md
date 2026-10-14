@@ -2750,7 +2750,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
@@ -3714,7 +3714,7 @@ flowchart LR
         AR_1905["AR-1905 - In progress"]:::status_in_progress
         AR_1906["AR-1906 - In progress"]:::status_in_progress
         AR_1907["AR-1907 - In progress"]:::status_in_progress
-        AR_1908["AR-1908 - Planned"]:::status_planned
+        AR_1908["AR-1908 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4338,3 +4338,4 @@ flowchart LR
     AR_1001 --> AR_1007
     AR_1001 --> AR_1013
     AR_1002 --> AR_0405
+    AR_1002 --> AR_1016

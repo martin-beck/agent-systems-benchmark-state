@@ -509,12 +509,13 @@
 | P1 | [AR-1906](../tasks/AR-1906.md): Retain envelope artifacts | codex-ar1906-retention-20261014 | Create a narrow successor for bind-spec/bind-envelope candidate retention. Use only handoffctl issue-series and authorized coordinator paths; preserve AR-1901 through AR-1905 immutable records, reject direct Git/state edits and arbitrary paths, and do not alter product files. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1907](../tasks/AR-1907.md): Admit resume runtime dependency | codex-ar1907-runtime-20261014 | State-only successor admitting exactly tools/resume_card_runtime.py for the AR-1905 focused replacement test. Preserve AR-1906, AR-1905 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
+| P1 | [AR-1908](../tasks/AR-1908.md): Admit run-command dependency | Unclaimed | State-only successor admitting exactly tools/run_command.py for the AR-1907 focused replacement test. Preserve AR-1907, AR-1906 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (101)
 
@@ -622,7 +623,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (97)
+### Planned (96)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -670,4 +671,3 @@
 | P0 | [AR-1827](../tasks/AR-1827-complete-setup-authoring.md): Author complete explicit benchmark configuration with asb setup | Unclaimed | Make asb setup --output the complete authoring route for agents, live providers/models, workloads, monitors, measures, and bounded execution choices. | Implement the complete interactive and noninteractive setup authoring route against the explicit configuration contract. |
 | P0 | [AR-1828](../tasks/AR-1828-retire-provider-selection-surfaces.md): Retire legacy provider selection and implicit configuration surfaces | Unclaimed | Retire public config/catalog/provider-plan commands and all ProviderSelection artifacts in favor of setup-created explicit config. | Remove legacy public config, provider-catalog, provider-plan, and ProviderSelection surfaces after setup contains their user-facing selection responsibilities. |
 | P0 | [AR-1829](../tasks/AR-1829-config-bound-plan-create.md): Compile config-bound benchmark plans with explicit output | Unclaimed | Make asb plan create compile a complete setup file into an explicit-output immutable benchmark plan with no provider-selection inputs. | Implement config-only benchmark plan compilation with mandatory --config and --output arguments. |
-| P0 | [AR-1830](../tasks/AR-1830-config-bound-plan-run-sweep.md): Execute config-bound live runs and sweeps | Unclaimed | Make plan validation, run, and sweep require the setup config and safely execute complete live benchmark selections from config-bound plans. | Require explicit config validation for plan validation, live run, and live sweep, then wire bounded multi-agent execution. |
