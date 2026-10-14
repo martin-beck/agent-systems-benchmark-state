@@ -2,13 +2,13 @@
 {
   "branch": "codex/ar1841-v053-adoption",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-14T14:30:20+00:00",
   "depends_on": [
     "AR-1795"
   ],
   "id": "AR-1841",
   "next_action": "Wait for scoped v0.7.4 compatibility repairs AR-1851 (AR-1793), AR-1852 (roles), AR-1853 (complexity), and AR-1849 (formal admission/workspace) to merge; then rebase PR #142 onto protected main, rerun candidate-focused/full gates, obtain fresh exact-head independent review and CI.",
-  "owner": "",
+  "owner": "asb-policy-formal-cleanup-20261014",
   "plan": "../plans/AR-1841-coordinator-v053-adoption.md",
   "priority": "P0",
   "schema_version": 1,
@@ -22,11 +22,11 @@
   },
   "spec_ref": "specs/AR-1841.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 171,
+  "task_revision": 172,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-14T14:00:05+00:00",
+  "updated_at": "2026-10-14T14:00:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -562,3 +562,5 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
 
 - 2026-10-14T14:00:05+00:00: Coordinator-authorized UD-0003 metadata normalization: reopen for
   next_action correction only; preserve dependency graph and historical evidence.
+
+- 2026-10-14T14:00:20+00:00: Claimed by asb-policy-formal-cleanup-20261014.
