@@ -475,12 +475,13 @@
 | P1 | [AR-1897](../tasks/AR-1897.md): Renew implementer assignment | codex-ar1897-role-renewal-20261014 | State-only coordination repair to renew an explicit implementer assignment for the AR-1896 bounded dependency admission. Preserve AR-1896 and earlier histories; reject force-clear, cross-root, network, formal/TLC, or task-scope widening. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1898](../tasks/AR-1898.md): Admit change-drift dependency | codex-ar1898-drift-20261014 | State-only successor admitting exactly tools/change_drift.py for the AR-1896 focused replacement test. Preserve AR-1897, AR-1896 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
+| P1 | [AR-1899](../tasks/AR-1899.md): Admit command-results dependency | Unclaimed | State-only successor admitting exactly tools/command_results.py for the AR-1898 focused replacement test. Preserve AR-1898 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (101)
 
@@ -588,7 +589,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (97)
+### Planned (96)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -667,4 +668,3 @@
 | P1 | [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md): Add TUI parity for supported LLM modes | Unclaimed | Add tested TUI parity for supported LLM setup and diagnostics only after CLI and existing TUI evidence are stable. | After CLI and existing TUI CI-evidence dependencies complete, implement discoverable TUI parity for negotiated supported profiles and modes. |
 | P1 | [AR-1011](../tasks/AR-1011-tui-ux-quality.md): Deliver TUI UX quality features | Unclaimed | Deliver an easy, discoverable, keyboard-first TUI experience for setup and benchmark analysis. | Integrate AR-1014, AR-1031 through AR-1035 and AR-1170 after the focused standalone wizard journeys complete. |
 | P1 | [AR-1012](../tasks/AR-1012-tui-quality-assurance.md): Qualify TUI quality and isolation | Unclaimed | Qualify TUI reliability, accessibility, performance isolation, and reproducible CI captures. | Qualify the complete Ratatui/Crossterm TUI across terminals, failure paths, accessibility checks, and benchmark-overhead budgets. |
-| P1 | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md): Add grouped measurement selection to the TUI | Unclaimed | Let users select grouped measurements from the standalone ASB TUI. | After AR-1025, AR-1033 and ASB AR-1037 complete, implement the bounded selector with precise v1.3 validation UX, generic v1.2 fallback and canonical plan round trips only in standalone asb-tui. |
