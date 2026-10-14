@@ -13,19 +13,26 @@
     "summary",
     "next_action",
     "task_revision",
-    "updated_at",
-    "owner",
-    "claim_expires",
-    "worktree_key",
-    "branch",
-    "checkpoint_commit",
-    "plan",
-    "depends_on"
+    "updated_at"
   ],
   "properties": {
-    "schema_version": {"const": 1},
-    "id": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
-    "title": {"type": "string", "minLength": 1, "maxLength": 120},
+    "schema_version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^AR-[0-9]{4}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "short_title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
     "status": {
       "enum": [
         "in_progress",
@@ -38,163 +45,1029 @@
         "superseded"
       ]
     },
-    "priority": {"enum": ["P0", "P1", "P2", "P3", "P4"]},
-    "summary": {"type": "string", "minLength": 1, "maxLength": 800},
-    "next_action": {"type": "string", "minLength": 1, "maxLength": 800},
-    "task_revision": {"type": "integer", "minimum": 1},
-    "updated_at": {"type": "string", "format": "date-time"},
-    "owner": {"type": "string", "maxLength": 80},
-    "claim_expires": {"type": "string", "maxLength": 40},
+    "priority": {
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 800
+    },
+    "next_action": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 800
+    },
+    "task_revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "owner": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "role": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$"
+    },
+    "team": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$"
+    },
+    "claim_expires": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "claim_process": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pid",
+            "start_time"
+          ],
+          "properties": {
+            "pid": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "start_time": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pid",
+            "start_time",
+            "boot_digest",
+            "pid_namespace"
+          ],
+          "properties": {
+            "pid": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "start_time": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "boot_digest": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "pid_namespace": {
+              "type": "string",
+              "pattern": "^[0-9]+:[0-9]+$"
+            }
+          }
+        }
+      ]
+    },
     "worktree_key": {
       "type": "string",
       "pattern": "^(|(?:agent-systems-benchmark|asb-state-coordinator-v070)(?:-[a-z0-9-]+)?)$"
     },
-    "branch": {"type": "string", "maxLength": 160},
-    "checkpoint_commit": {"type": "string", "pattern": "^(|[0-9a-f]{40})$"},
-    "plan": {"type": "string", "pattern": "^(|\\.\\./plans/AR-[0-9]{4}(?:-[a-z0-9-]+)?\\.md)$"},
+    "branch": {
+      "type": "string",
+      "maxLength": 160
+    },
+    "checkpoint_commit": {
+      "type": "string",
+      "pattern": "^(|[0-9a-f]{40})$"
+    },
+    "plan": {
+      "type": "string",
+      "pattern": "^(|\\.\\./plans/AR-[0-9]{4}(?:-[a-z0-9-]+)?\\.md)$"
+    },
     "depends_on": {
       "type": "array",
       "uniqueItems": true,
-      "items": {"type": "string", "pattern": "^AR-[0-9]{4}$"}
+      "items": {
+        "type": "string",
+        "pattern": "^AR-[0-9]{4}$"
+      }
     },
-    "observed_branch": {"type": "string", "maxLength": 160},
-    "observed_head": {"type": "string", "pattern": "^(|[0-9a-f]{40})$"},
-    "superseded_by": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
-    "observed_dirty": {"type": "integer", "minimum": 0},
-    "oracle_gate": {"$ref": "#/$defs/oracleGate"},
-    "spec_ref": {"type": "string", "pattern": "^specs/AR-[0-9]{4}\\.json$"},
-    "spec_revision": {"type": "integer", "minimum": 1},
-    "spec_acceptance": {"type": "object", "additionalProperties": true},
+    "observed_branch": {
+      "type": "string",
+      "maxLength": 160
+    },
+    "observed_head": {
+      "type": "string",
+      "pattern": "^(|[0-9a-f]{40})$"
+    },
+    "observed_dirty": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "superseded_by": {
+      "type": "string",
+      "pattern": "^AR-[0-9]{4}$"
+    },
+    "oracle_gate": {
+      "$ref": "#/$defs/oracleGate"
+    },
+    "spec_ref": {
+      "type": "string",
+      "pattern": "^specs/AR-[0-9]{4}\\.json$"
+    },
+    "spec_revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "spec_acceptance": {
+      "type": "object",
+      "additionalProperties": true
+    },
     "evidence_ledger": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["candidate_ref", "candidate_digest", "steps"],
+      "required": [
+        "candidate_ref",
+        "candidate_digest",
+        "steps"
+      ],
       "properties": {
-        "candidate_ref": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"},
-        "candidate_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "candidate_ref": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"
+        },
+        "candidate_digest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
         "steps": {
           "type": "array",
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["predicate_id", "status", "candidate_ref", "candidate_digest", "evidence_class", "evidence_ref", "evidence_digest", "recorded_task_revision"],
+            "required": [
+              "predicate_id",
+              "status",
+              "candidate_ref",
+              "candidate_digest",
+              "evidence_class",
+              "evidence_ref",
+              "evidence_digest",
+              "recorded_task_revision"
+            ],
             "properties": {
-              "predicate_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{2,63}$"},
-              "status": {"enum": ["pass", "stale"]},
-              "candidate_ref": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"},
-              "candidate_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
-              "evidence_class": {"enum": ["mechanical", "contract-test", "property-or-fuzz", "bounded-model", "environmental"]},
-              "evidence_ref": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"},
-              "evidence_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
-              "recorded_task_revision": {"type": "integer", "minimum": 1}
+              "predicate_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{2,63}$"
+              },
+              "status": {
+                "enum": [
+                  "pass",
+                  "stale"
+                ]
+              },
+              "candidate_ref": {
+                "type": "string",
+                "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"
+              },
+              "candidate_digest": {
+                "type": "string",
+                "pattern": "^sha256:[0-9a-f]{64}$"
+              },
+              "evidence_class": {
+                "enum": [
+                  "mechanical",
+                  "contract-test",
+                  "property-or-fuzz",
+                  "bounded-model",
+                  "environmental"
+                ]
+              },
+              "evidence_ref": {
+                "type": "string",
+                "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"
+              },
+              "evidence_digest": {
+                "type": "string",
+                "pattern": "^sha256:[0-9a-f]{64}$"
+              },
+              "recorded_task_revision": {
+                "type": "integer",
+                "minimum": 1
+              }
             }
           }
         }
       }
-    }
-  },
-  "$defs": {
-    "artifactRef": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["ref", "digest"],
-      "properties": {
-        "ref": {
-          "type": "string",
-          "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$"
-        },
-        "digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
-      }
     },
-    "interactionEvent": {
+    "execution_envelope_ref": {
+      "type": "string"
+    },
+    "execution_envelope_revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "execution_envelope_task_revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "execution_envelope_digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "execution_envelope": {
+      "type": "object"
+    },
+    "execution_reservation": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "task_id", "task_revision", "stage", "action", "disposition",
-        "before", "after", "public_ref", "recorded_at"
+        "execution_id",
+        "owner",
+        "task_revision",
+        "envelope_digest",
+        "command_class",
+        "scope_digest",
+        "argv_digest",
+        "expires_at"
       ],
       "properties": {
-        "task_id": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
-        "task_revision": {"type": "integer", "minimum": 1},
-        "stage": {
-          "enum": ["intake", "discussion", "formal_spec_review", "reconciliation", "role", "spec", "decision"]
-        },
-        "action": {"enum": ["open", "resolve", "reopen"]},
-        "disposition": {
-          "enum": ["accepted", "rejected", "clarify", "user-added-option", "contradiction", "unresolved"]
-        },
-        "before": {"type": "array", "minItems": 1, "maxItems": 32, "items": {"$ref": "#/$defs/artifactRef"}},
-        "after": {"type": "array", "minItems": 1, "maxItems": 32, "items": {"$ref": "#/$defs/artifactRef"}},
-        "public_ref": {
+        "execution_id": {
           "type": "string",
-          "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$"
+          "pattern": "^[0-9a-f]{32}$"
         },
-        "recorded_at": {"type": "string", "format": "date-time"}
+        "owner": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "task_revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "envelope_digest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "command_class": {
+          "enum": [
+            "read",
+            "test",
+            "source-write",
+            "git-publication"
+          ]
+        },
+        "scope_digest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "argv_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "expires_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "execution_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "execution_id",
+        "owner",
+        "envelope_digest",
+        "argv_digest",
+        "classification",
+        "returncode",
+        "recorded_at"
+      ],
+      "properties": {
+        "execution_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{32}$"
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "envelope_digest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "argv_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "classification": {
+          "enum": [
+            "EXIT",
+            "SUBPROCESS_TIMEOUT"
+          ]
+        },
+        "returncode": {
+          "type": "integer"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "change_drift": {
+      "type": "array",
+      "maxItems": 32,
+      "items": {
+        "type": "object"
+      }
+    },
+    "assumption_revalidation": {
+      "type": "array",
+      "maxItems": 64,
+      "items": {
+        "type": "object"
+      }
+    },
+    "retry_circuit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "attempts",
+        "recoveries",
+        "hold",
+        "reservations",
+        "abandoned"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "attempts": {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "identity",
+              "failure",
+              "progress_digest",
+              "task_revision",
+              "recorded_at",
+              "window"
+            ],
+            "properties": {
+              "identity": {
+                "type": "string",
+                "pattern": "^sha256:[0-9a-f]{64}$"
+              },
+              "failure": {
+                "enum": [
+                  "EXIT",
+                  "SUBPROCESS_TIMEOUT",
+                  "RETRYABLE"
+                ]
+              },
+              "progress_digest": {
+                "type": "string",
+                "pattern": "^sha256:[0-9a-f]{64}$"
+              },
+              "task_revision": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "recorded_at": {
+                "type": "string",
+                "minLength": 1
+              },
+              "window": {
+                "type": "integer",
+                "minimum": 3,
+                "maximum": 16
+              }
+            }
+          }
+        },
+        "recoveries": {
+          "type": "array",
+          "maxItems": 32,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "identity",
+              "progress_digest",
+              "kind",
+              "reason",
+              "task_revision",
+              "recorded_at",
+              "checkpoint_commit"
+            ],
+            "properties": {
+              "identity": {
+                "type": "string",
+                "pattern": "^sha256:[0-9a-f]{64}$"
+              },
+              "progress_digest": {
+                "type": "string",
+                "pattern": "^sha256:[0-9a-f]{64}$"
+              },
+              "kind": {
+                "enum": [
+                  "checkpoint",
+                  "changed-approach",
+                  "retry-exception"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "^[^\\n]+$"
+              },
+              "task_revision": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "recorded_at": {
+                "type": "string",
+                "minLength": 1
+              },
+              "checkpoint_commit": {
+                "type": "string",
+                "pattern": "^(|[0-9a-f]{40})$"
+              }
+            }
+          }
+        },
+        "hold": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "identity",
+                "attempts",
+                "progress_digest",
+                "held_at",
+                "window"
+              ],
+              "properties": {
+                "identity": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "attempts": {
+                  "type": "integer",
+                  "minimum": 3,
+                  "maximum": 16
+                },
+                "progress_digest": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "held_at": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "window": {
+                  "type": "integer",
+                  "minimum": 3,
+                  "maximum": 16
+                }
+              }
+            }
+          ]
+        },
+        "reservations": {
+          "type": "array",
+          "maxItems": 16,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "identity",
+              "progress_digest",
+              "window",
+              "task_revision",
+              "reserved_at",
+              "expires_at"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{32}$"
+              },
+              "identity": {
+                "type": "string",
+                "pattern": "^sha256:[0-9a-f]{64}$"
+              },
+              "progress_digest": {
+                "type": "string",
+                "pattern": "^sha256:[0-9a-f]{64}$"
+              },
+              "window": {
+                "type": "integer",
+                "minimum": 3,
+                "maximum": 16
+              },
+              "task_revision": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "reserved_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "expires_at": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          }
+        },
+        "abandoned": {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "identity",
+              "progress_digest",
+              "window",
+              "task_revision",
+              "reserved_at",
+              "expires_at",
+              "cleaned_at",
+              "cause"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{32}$"
+              },
+              "identity": {
+                "type": "string",
+                "pattern": "^sha256:[0-9a-f]{64}$"
+              },
+              "progress_digest": {
+                "type": "string",
+                "pattern": "^sha256:[0-9a-f]{64}$"
+              },
+              "window": {
+                "type": "integer",
+                "minimum": 3,
+                "maximum": 16
+              },
+              "task_revision": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "reserved_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "expires_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "cleaned_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "cause": {
+                "const": "expired"
+              }
+            }
+          }
+        }
+      }
+    },
+    "autonomy_limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "policy_digest",
+        "started_at",
+        "commands",
+        "retries",
+        "cost_units",
+        "external_side_effects",
+        "hold",
+        "dispositions"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "policy_digest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "started_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "commands": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "retries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cost_units": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "external_side_effects": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "hold": {
+          "type": [
+            "null",
+            "object"
+          ]
+        },
+        "dispositions": {
+          "type": "array",
+          "maxItems": 32
+        }
+      }
+    },
+    "parent_task_ref": {
+      "anyOf": [
+        {
+          "type": "string",
+          "maxLength": 0
+        },
+        {
+          "$ref": "#/$defs/taskId"
+        }
+      ]
+    },
+    "children": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/taskId"
+      }
+    },
+    "issue_series": {
+      "$ref": "#/$defs/issueSeriesLinkage"
+    }
+  },
+  "$defs": {
+    "taskId": {
+      "type": "string",
+      "pattern": "^AR-[0-9]{4}$"
+    },
+    "oracleGate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required",
+        "open_stage",
+        "completed",
+        "events"
+      ],
+      "properties": {
+        "required": {
+          "const": true
+        },
+        "stage_sequence": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 7,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "intake",
+              "discussion",
+              "formal_spec_review",
+              "reconciliation",
+              "role",
+              "spec",
+              "decision"
+            ]
+          }
+        },
+        "open_stage": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "enum": [
+                "intake",
+                "discussion",
+                "formal_spec_review",
+                "reconciliation",
+                "role",
+                "spec",
+                "decision"
+              ]
+            }
+          ]
+        },
+        "completed": {
+          "type": "array",
+          "maxItems": 7,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "intake",
+              "discussion",
+              "formal_spec_review",
+              "reconciliation",
+              "role",
+              "spec",
+              "decision"
+            ]
+          }
+        },
+        "events": {
+          "type": "array",
+          "maxItems": 32,
+          "items": {
+            "$ref": "#/$defs/interactionEvent"
+          }
+        },
+        "human_session": {
+          "$ref": "#/$defs/humanSession"
+        },
+        "authorized": {
+          "type": "boolean"
+        },
+        "discussion_rounds": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 16
+        },
+        "reconciliation_required": {
+          "type": "boolean"
+        }
+      }
+    },
+    "issueSeriesLinkage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "manifest_ref",
+        "manifest_digest",
+        "member_id"
+      ],
+      "properties": {
+        "manifest_ref": {
+          "type": "string",
+          "pattern": "^issue-series/[a-z0-9][a-z0-9._-]{0,127}\\.json$"
+        },
+        "manifest_digest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "member_id": {
+          "$ref": "#/$defs/taskId"
+        }
       }
     },
     "humanSession": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "schema_version", "session_id", "request_ref", "activation", "status",
-        "task_revision", "tui_contract_version", "opened_at"
+        "schema_version",
+        "session_id",
+        "request_ref",
+        "activation",
+        "status",
+        "task_revision",
+        "tui_contract_version",
+        "opened_at"
       ],
       "properties": {
-        "schema_version": {"const": "1.0"},
-        "session_id": {"type": "string", "pattern": "^AWTUI-[A-Z0-9-]{1,127}$"},
-        "request_ref": {"type": "string", "pattern": "^AWG-[A-Z0-9-]{1,127}$"},
-        "activation": {
-          "enum": ["user-decision", "user-detail-request", "user-proposal-review", "agent-uncertainty", "policy-required-approval"]
+        "schema_version": {
+          "const": "1.0"
         },
-        "status": {"enum": ["presenting", "clarification_requested", "resolved"]},
-        "task_revision": {"type": "integer", "minimum": 1},
-        "tui_contract_version": {"const": "1.0"},
-        "opened_at": {"type": "string", "format": "date-time"},
-        "closed_at": {"type": "string", "format": "date-time"}
+        "session_id": {
+          "type": "string",
+          "pattern": "^AWTUI-[A-Z0-9-]{1,127}$"
+        },
+        "request_ref": {
+          "type": "string",
+          "pattern": "^AWG-[A-Z0-9-]{1,127}$"
+        },
+        "activation": {
+          "enum": [
+            "user-decision",
+            "user-detail-request",
+            "user-proposal-review",
+            "agent-uncertainty",
+            "policy-required-approval"
+          ]
+        },
+        "status": {
+          "enum": [
+            "presenting",
+            "clarification_requested",
+            "resolved"
+          ]
+        },
+        "task_revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "tui_contract_version": {
+          "const": "1.0"
+        },
+        "opened_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "closed_at": {
+          "type": "string",
+          "format": "date-time"
+        }
       },
       "allOf": [
-        {"if": {"properties": {"status": {"const": "presenting"}}}, "then": {"not": {"required": ["closed_at"]}}},
-        {"if": {"properties": {"status": {"enum": ["clarification_requested", "resolved"]}}}, "then": {"required": ["closed_at"]}}
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "presenting"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": [
+                "closed_at"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "clarification_requested",
+                  "resolved"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "closed_at"
+            ]
+          }
+        }
       ]
     },
-    "oracleGate": {
+    "artifactRef": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["required", "open_stage", "completed", "events"],
+      "required": [
+        "ref",
+        "digest"
+      ],
       "properties": {
-        "required": {"const": true},
-        "stage_sequence": {
-          "type": "array", "minItems": 1, "maxItems": 7, "uniqueItems": true,
-          "items": {"enum": ["intake", "discussion", "formal_spec_review", "reconciliation", "role", "spec", "decision"]}
+        "ref": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$"
         },
-        "open_stage": {
-          "anyOf": [{"type": "null"}, {"enum": ["intake", "discussion", "formal_spec_review", "reconciliation", "role", "spec", "decision"]}]
+        "digest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        }
+      }
+    },
+    "interactionEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_id",
+        "task_revision",
+        "stage",
+        "action",
+        "disposition",
+        "before",
+        "after",
+        "public_ref",
+        "recorded_at"
+      ],
+      "properties": {
+        "task_id": {
+          "type": "string",
+          "pattern": "^AR-[0-9]{4}$"
         },
-        "completed": {
-          "type": "array", "maxItems": 7, "uniqueItems": true,
-          "items": {"enum": ["intake", "discussion", "formal_spec_review", "reconciliation", "role", "spec", "decision"]}
+        "task_revision": {
+          "type": "integer",
+          "minimum": 1
         },
-        "events": {"type": "array", "maxItems": 32, "items": {"$ref": "#/$defs/interactionEvent"}},
-        "human_session": {"$ref": "#/$defs/humanSession"},
-        "authorized": {"type": "boolean"},
-        "discussion_rounds": {"type": "integer", "minimum": 0, "maximum": 16},
-        "reconciliation_required": {"type": "boolean"}
+        "stage": {
+          "enum": [
+            "intake",
+            "discussion",
+            "formal_spec_review",
+            "reconciliation",
+            "role",
+            "spec",
+            "decision"
+          ]
+        },
+        "action": {
+          "enum": [
+            "open",
+            "resolve",
+            "reopen"
+          ]
+        },
+        "disposition": {
+          "enum": [
+            "accepted",
+            "rejected",
+            "clarify",
+            "user-added-option",
+            "contradiction",
+            "unresolved"
+          ]
+        },
+        "before": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 32,
+          "items": {
+            "$ref": "#/$defs/artifactRef"
+          }
+        },
+        "after": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 32,
+          "items": {
+            "$ref": "#/$defs/artifactRef"
+          }
+        },
+        "public_ref": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        }
       }
     }
   },
   "allOf": [
     {
-      "if": {"properties": {"status": {"const": "in_progress"}}},
+      "if": {
+        "properties": {
+          "status": {
+            "const": "in_progress"
+          }
+        }
+      },
       "then": {
         "properties": {
-          "owner": {"minLength": 1},
-          "claim_expires": {"minLength": 20}
+          "owner": {
+            "minLength": 1
+          },
+          "claim_expires": {
+            "minLength": 20
+          }
         }
       },
       "else": {
         "properties": {
-          "owner": {"maxLength": 0},
-          "claim_expires": {"maxLength": 0}
+          "owner": {
+            "maxLength": 0
+          },
+          "claim_expires": {
+            "maxLength": 0
+          }
         }
       }
     }
