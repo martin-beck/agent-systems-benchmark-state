@@ -2998,6 +2998,20 @@
 | Summary | Create a narrow successor for blocked AR-1900 using the released AR-1924 runtime. Admit exactly runtime/bin/python, runtime/bin/pytest, runtime/bin/uv, tools/execution_envelope.py, and the focused AR-1900 replacement test scope; preserve AR-1900 and earlier histories, retain all existing lifecycle gates, and exclude network, runtime downloads, host mounts, formal, and TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1926 — Repair terminal scope runtime
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a fresh successor for blocked AR-1901 using the released AR-1924 runtime/bin/python, runtime/bin/pytest, and runtime/bin/uv entrypoints. Admit only those runtime paths plus exact AR-1901 scope and focused-test paths needed to validate separated product and coordination-state roots; preserve AR-1901, AR-1881, AR-1882, and AR-1900 history and exclude network, downloads, mounts, product mutation, formal, and TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3970,6 +3984,7 @@ flowchart LR
         AR_1923["AR-1923 - Blocked"]:::status_blocked
         AR_1924["AR-1924 - Done"]:::status_done
         AR_1925["AR-1925 - In progress"]:::status_in_progress
+        AR_1926["AR-1926 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4077,36 +4092,3 @@ flowchart LR
     AR_0103 --> AR_0707
     AR_0103 --> AR_0830
     AR_0103 --> AR_0848
-    AR_0103 --> AR_0857
-    AR_0103 --> AR_0863
-    AR_0103 --> AR_0875
-    AR_0103 --> AR_0876
-    AR_0103 --> AR_0902
-    AR_0103 --> AR_0908
-    AR_0103 --> AR_0909
-    AR_0103 --> AR_1002
-    AR_0104 --> AR_0204
-    AR_0104 --> AR_0314
-    AR_0104 --> AR_0601
-    AR_0104 --> AR_0603
-    AR_0104 --> AR_0801
-    AR_0104 --> AR_0803
-    AR_0104 --> AR_0805
-    AR_0104 --> AR_0806
-    AR_0104 --> AR_0822
-    AR_0104 --> AR_0841
-    AR_0104 --> AR_0847
-    AR_0104 --> AR_0902
-    AR_0104 --> AR_0905
-    AR_0104 --> AR_1002
-    AR_0104 --> AR_1005
-    AR_0104 --> AR_1037
-    AR_0105 --> AR_0204
-    AR_0201 --> AR_0202
-    AR_0201 --> AR_0204
-    AR_0201 --> AR_0504
-    AR_0201 --> AR_0601
-    AR_0201 --> AR_0602
-    AR_0201 --> AR_0604
-    AR_0201 --> AR_0702
-    AR_0201 --> AR_0703

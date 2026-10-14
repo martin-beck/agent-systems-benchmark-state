@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1926",
+  "issue": {
+    "number": 10057,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10057"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Bind an immutable envelope with exact runtime/bin and AR-1901 scope/test admissions, materialize and bind the successor worktree, run positive and negative focused tests through the AR-1924 runtime, and accept/release done only with evidence or record the exact fail-closed blocker; reconcile and doctor the resulting state.",
+      "depends_on": [],
+      "id": "AR-1926",
+      "ownership": "ASB terminal-recovery publication-scope validation only; use the released AR-1924 runtime, preserve prior task/envelope/checkpoint/evidence history, and do not mutate product behavior or run network, formal, or TLC gates.",
+      "scope": "Create a fresh successor for blocked AR-1901 using the released AR-1924 runtime/bin/python, runtime/bin/pytest, and runtime/bin/uv entrypoints. Admit only those runtime paths plus exact AR-1901 scope and focused-test paths needed to validate separated product and coordination-state roots; preserve AR-1901, AR-1881, AR-1882, and AR-1900 history and exclude network, downloads, mounts, product mutation, formal, and TLC.",
+      "short_title": "Repair terminal scope runtime"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
