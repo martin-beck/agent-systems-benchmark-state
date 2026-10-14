@@ -2232,11 +2232,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb_ar1871_schema_ledger_integration |
 | Parent | None |
 | Children | None |
 | Summary | Integrate independently reviewed AR-1868 schema vocabulary repair and AR-1870 ledger digest repair on current main, changing only schema/task-schema.json, tests/test_task_record_schema.py, and AR-1861/AR-1862 evidence_ledger blocks. This successor explicitly depends on AR-1868 and AR-1870 review evidence; do not include checkpoints, sessions, projections, runtime state, or unrelated files. |
@@ -3156,7 +3156,7 @@ flowchart LR
         AR_1868["AR-1868 - In progress"]:::status_in_progress
         AR_1869["AR-1869 - In progress"]:::status_in_progress
         AR_1870["AR-1870 - In progress"]:::status_in_progress
-        AR_1871["AR-1871 - Open"]:::status_open
+        AR_1871["AR-1871 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4919,5 +4919,3 @@ flowchart LR
     AR_1657 --> AR_1660
     AR_1657 --> AR_1704
     AR_1657 --> AR_1710
-    AR_1658 --> AR_1659
-    AR_1658 --> AR_1663
