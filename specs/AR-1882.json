@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1882.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "immutable-successor", "description": "Retain AR-1881 immutable evidence and bind only the reviewed terminal-recovery product commit 3162fe8be2."},
+    {"id": "publication-capability", "description": "Use an immutable schema-v2 envelope with explicit git_metadata and network capabilities for exact-head publication."},
+    {"id": "verification", "description": "Record exact-head review, required CI, merge, and post-merge validation, or a precise durable blocker."}
+  ],
+  "definition_of_done": ["Fresh successor envelope is bound and publication outcome or precise blocker is recorded without widening scope."],
+  "inputs": [{"id": "terminal-recovery", "description": "AR-1881 immutable evidence and reviewed product commit 3162fe8be2."}],
+  "outputs": [{"id": "publication-capability", "description": "Scope-bound schema-v2 envelope explicitly admitting git metadata and publication network capability."}],
+  "allowed_tools": ["git", "python", "tools/handoffctl"],
+  "forbidden_tools": ["direct-task-state-edit", "product-rewrite", "gate-weakening", "formal-success-without-evidence"],
+  "required_evidence_classes": ["mechanical", "hosted"],
+  "gates": [{"id": "review", "description": "Independent exact-head review and required checks are green."}, {"id": "publication", "description": "Merge and post-merge validation are recorded, or the exact blocker is durable."}]
+}

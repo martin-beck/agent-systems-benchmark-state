@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "envelope_id": "AR-1882-e1",
+  "envelope_revision": 1,
+  "task": "AR-1882",
+  "task_revision": 1,
+  "spec_ref": "specs/AR-1882.json",
+  "spec_revision": 1,
+  "outputs": [
+    {"id": "publication", "description": "Exact-head publication attempt for reviewed terminal-recovery product commit 3162fe8be2."},
+    {"id": "blocker", "description": "Precise durable blocker evidence when publication cannot safely proceed."}
+  ],
+  "non_goals": [
+    "Do not mutate AR-1881 task, envelope, checkpoints, sessions, or evidence.",
+    "Do not change product files, unrelated paths, lifecycle gates, or review requirements.",
+    "Do not claim formal or TLC success without evidence."
+  ],
+  "path_scope": {
+    "read": ["tools/execution_lifecycle.py", "tools/handoffctl.py", "tests/test_execution_recovery_coverage.py", "tasks/AR-1881.md", "envelopes/AR-1881-e1.json"],
+    "write": ["tools/execution_lifecycle.py", "tools/handoffctl.py", "tests/test_execution_recovery_coverage.py"]
+  },
+  "command_classes": {
+    "read": {"allowed": true, "timeout_seconds": 120},
+    "test": {"allowed": true, "timeout_seconds": 900},
+    "git-publication": {"allowed": true, "timeout_seconds": 900}
+  },
+  "capabilities": {"git_metadata": {"allowed": true}, "network": {"allowed": true}},
+  "evidence": [
+    {"id": "review", "class": "mechanical", "required": true},
+    {"id": "publication", "class": "hosted", "required": true}
+  ],
+  "stop_conditions": [
+    {"id": "scope", "kind": "deny"},
+    {"id": "immutable-history", "kind": "deny"},
+    {"id": "unreviewed-head", "kind": "pause"}
+  ]
+}
