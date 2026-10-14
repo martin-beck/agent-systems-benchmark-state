@@ -2428,11 +2428,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1885-cwd-routing-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Adopt upstream Coordinator multi-root/cwd-routing at exact commit 2493c67f2ea162885b15c648fb3d626c84732170 via development vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, and generated integrity evidence; preserve ASB overlays, views, and immutable AR-1878 through AR-1884. No Agent Relay dependency, formal/TLC gate, runtime download, or direct state-history/file copy. |
@@ -2442,11 +2442,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1886-runner-env-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Repair only the bounded handoffctl Bubblewrap execution root so approved pinned executables (pwd, git, and sync tooling) are visible for AR-1885 commands. Preserve AR-1885 immutable history; do not add host mounts, network, runtime downloads, scope widening, or gate weakening. |
@@ -2470,11 +2470,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1888-publication-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Publish the already reviewed AR-1887 state repair at exact commit 12074686d4, including its signed/DCO ancestry and full-suite evidence digest sha256:65c3adc9516e93a55aa1a629beceb15c1ede0b3a345b73c51a4c40463298535e. Scope is immutable to tools/handoffctl.py, tests, and quality evidence; preserve AR-1887 and earlier histories. |
@@ -2652,11 +2652,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1901-terminal-publication-scope-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create a fresh successor task and immutable execution envelope correcting AR-1882&#x27;s missing cross-repository scope admission. Do not require envelopes/AR-1881-e1.json in product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3; resolve product paths only in the reviewed product checkout and state paths only in the coordination-state checkout; do not rewrite prior envelopes or widen arbitrary paths. |
@@ -2666,11 +2666,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1902-resumecard-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/resume_card.py for the AR-1900 focused replacement test. Preserve AR-1901, AR-1900 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -2680,11 +2680,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1903-retry-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/retry_circuit.py for the AR-1902 focused replacement test. Preserve AR-1902 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -2885,20 +2885,6 @@
 | Children | None |
 | Summary | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
-
-### AR-1918 — Repair rustls advisories
-
-| Field | Value |
-| --- | --- |
-| Status | in_progress |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | codex-asb-close-ar1918-20261014 |
-| Parent | None |
-| Children | None |
-| Summary | Repair PR #635&#x27;s hosted Policy, coverage, and supply-chain failure by updating only the Rust dependency manifests and lockfile needed to raise rustls from 0.23.45 to at least 0.23.46 and clear RUSTSEC-2026-0347, RUSTSEC-2026-0348, and RUSTSEC-2026-0349. Preserve advisory gates, offline and locked resolution, unrelated source and state history, and the explicit exclusion of TLC/formal checks. |
-| Next action | Commit signed DCO dependency diff, publish PR, run exact-head hosted CI and merge only when required checks are green. |
 
 
 ## Dependency graph
@@ -3828,10 +3814,10 @@ flowchart LR
         AR_1882["AR-1882 - Blocked"]:::status_blocked
         AR_1883["AR-1883 - Blocked"]:::status_blocked
         AR_1884["AR-1884 - Blocked"]:::status_blocked
-        AR_1885["AR-1885 - Open"]:::status_open
-        AR_1886["AR-1886 - Open"]:::status_open
+        AR_1885["AR-1885 - In progress"]:::status_in_progress
+        AR_1886["AR-1886 - In progress"]:::status_in_progress
         AR_1887["AR-1887 - Blocked"]:::status_blocked
-        AR_1888["AR-1888 - In progress"]:::status_in_progress
+        AR_1888["AR-1888 - Open"]:::status_open
         AR_1889["AR-1889 - In progress"]:::status_in_progress
         AR_1890["AR-1890 - Blocked"]:::status_blocked
         AR_1891["AR-1891 - Blocked"]:::status_blocked
@@ -3847,9 +3833,9 @@ flowchart LR
     subgraph series_19["19 - Additional work"]
         direction TB
         AR_1900["AR-1900 - Open"]:::status_open
-        AR_1901["AR-1901 - Open"]:::status_open
-        AR_1902["AR-1902 - Open"]:::status_open
-        AR_1903["AR-1903 - Open"]:::status_open
+        AR_1901["AR-1901 - In progress"]:::status_in_progress
+        AR_1902["AR-1902 - In progress"]:::status_in_progress
+        AR_1903["AR-1903 - In progress"]:::status_in_progress
         AR_1904["AR-1904 - Blocked"]:::status_blocked
         AR_1905["AR-1905 - Open"]:::status_open
         AR_1906["AR-1906 - Blocked"]:::status_blocked
@@ -3864,7 +3850,6 @@ flowchart LR
         AR_1915["AR-1915 - Blocked"]:::status_blocked
         AR_1916["AR-1916 - Blocked"]:::status_blocked
         AR_1917["AR-1917 - In progress"]:::status_in_progress
-        AR_1918["AR-1918 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4223,3 +4208,31 @@ flowchart LR
     AR_0508 --> AR_0515
     AR_0508 --> AR_0850
     AR_0509 --> AR_0515
+    AR_0510 --> AR_0515
+    AR_0511 --> AR_0515
+    AR_0512 --> AR_0515
+    AR_0513 --> AR_0515
+    AR_0514 --> AR_0515
+    AR_0517 --> AR_0518
+    AR_0517 --> AR_0520
+    AR_0518 --> AR_0519
+    AR_0601 --> AR_0405
+    AR_0601 --> AR_0602
+    AR_0601 --> AR_0604
+    AR_0601 --> AR_1015
+    AR_0602 --> AR_1015
+    AR_0603 --> AR_0601
+    AR_0604 --> AR_0602
+    AR_0604 --> AR_1015
+    AR_0701 --> AR_0317
+    AR_0701 --> AR_0702
+    AR_0701 --> AR_0703
+    AR_0701 --> AR_0704
+    AR_0701 --> AR_0707
+    AR_0701 --> AR_0820
+    AR_0701 --> AR_0848
+    AR_0701 --> AR_1007
+    AR_0702 --> AR_0807
+    AR_0702 --> AR_0813
+    AR_0702 --> AR_0816
+    AR_0702 --> AR_0903
