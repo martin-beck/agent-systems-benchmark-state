@@ -3016,11 +3016,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1901-terminal-publication-scope-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create a fresh narrow state-only repair for the AR-1926 accepted evidence-ledger artifact digest mismatch. Reconcile the privacy-safe evidence artifact and its ledger through handoffctl, restore doctor --live, preserve immutable AR-1926 and AR-1901 history, and record the distinct AR-1901 cross-root blocker as a separate next action; do not reopen or rewrite prior tasks and do not run formal or TLC gates. |
@@ -3999,7 +3999,7 @@ flowchart LR
         AR_1924["AR-1924 - Done"]:::status_done
         AR_1925["AR-1925 - Blocked"]:::status_blocked
         AR_1926["AR-1926 - Done"]:::status_done
-        AR_1928["AR-1928 - In progress"]:::status_in_progress
+        AR_1928["AR-1928 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4074,3 +4074,5 @@ flowchart LR
     AR_0102 --> AR_0304
     AR_0102 --> AR_0305
     AR_0102 --> AR_0306
+    AR_0102 --> AR_0307
+    AR_0102 --> AR_0308

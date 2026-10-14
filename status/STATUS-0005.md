@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md), [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md), [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md) |
 | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | None |
 | [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | None |
 | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md), [AR-1376](../tasks/AR-1376-runtime-live-adapter.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md), [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md), [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md), [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md) |
@@ -527,12 +526,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | codex-ar1919-git-publication-20261014 | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1928](../tasks/AR-1928.md): Repair evidence ledger digest | codex-ar1901-terminal-publication-scope-20261014 | Create a fresh narrow state-only repair for the AR-1926 accepted evidence-ledger artifact digest mismatch. Reconcile the privacy-safe evidence artifact and its ledger through handoffctl, restore doctor --live, preserve immutable AR-1926 and AR-1901 history, and record the distinct AR-1901 cross-root blocker as a separate next action; do not reopen or rewrite prior tasks and do not run formal or TLC gates. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (15)
 
@@ -554,7 +552,7 @@
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | Unclaimed | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Blocked (119)
+### Blocked (120)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -671,3 +669,5 @@
 | P1 | [AR-1915](../tasks/AR-1915.md): Adopt coordinator privacy fix | Unclaimed | Adopt upstream Agent Workflow Coordinator merge a4defa3880b4f371085b0bfd4eef127489c1eab7 into ASB state through the documented clean-source sync-development path. Change only vendored Coordinator files and generated integrity evidence; preserve AR-1904, AR-1906, AR-1909, AR-1912 artifacts and all prior history. No product files, arbitrary paths, network-dependent runtime behavior, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1916](../tasks/AR-1916.md): Refresh stale ledger digests | Unclaimed | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in ASB tasks AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes after AR-1878 recovery; preserve every other task field and all historical records, and do not run formal or TLC checks. | Record exact signed commit and post-merge doctor evidence; broader vendor manifest test remains outside ledger-only scope. |
 | P1 | [AR-1920](../tasks/AR-1920.md): Materialize publication worktree | Unclaimed | Create a narrow successor for AR-1919&#x27;s exact nonexistent .git/worktrees binding. Materialize one safe isolated coordination-state worktree under /srv/data/projects and bind it through handoffctl to the reviewed AR-1878 and AR-1886 exact heads and declared publication paths. Grant only the minimum worktree/git-metadata publication authority needed to verify the binding; reject arbitrary paths, path widening, history rewriting, and all unrelated capabilities. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1922](../tasks/AR-1922.md): Repair sandbox test runtime | Unclaimed | Repair only the bounded handoffctl execution envelope for repeated AR-1900/AR-1901/AR-1912 test-runtime failures where python, pytest, and uv are unavailable. Admit only the reviewed offline interpreter and test-tool visibility required under /srv/data/projects, preserving network denial, repository/state path scopes, and all existing lifecycle gates. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1923](../tasks/AR-1923.md): Admit sandbox test runtime | Unclaimed | Create the immutable successor for AR-1922: bind a dedicated state worktree and execution envelope admitting only the reviewed offline interpreter and pytest/uv tool paths under /srv/data/projects. Preserve network denial, product/state path scopes, AR-1922 blocked history, and formal/TLC exclusion. | Implement the bounded scope and record local acceptance evidence. |
