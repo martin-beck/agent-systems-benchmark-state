@@ -2218,11 +2218,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb_ar1870_ledger_successor |
 | Parent | None |
 | Children | None |
 | Summary | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes, leaving schema, tests, checkpoints, sessions, predicates, and all other task fields unchanged. |
@@ -3141,7 +3141,7 @@ flowchart LR
         AR_1867["AR-1867 - In progress"]:::status_in_progress
         AR_1868["AR-1868 - In progress"]:::status_in_progress
         AR_1869["AR-1869 - In progress"]:::status_in_progress
-        AR_1870["AR-1870 - Open"]:::status_open
+        AR_1870["AR-1870 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4937,5 +4937,3 @@ flowchart LR
     AR_1674 --> AR_1690
     AR_1675 --> AR_1676
     AR_1675 --> AR_1690
-    AR_1676 --> AR_1677
-    AR_1676 --> AR_1678
