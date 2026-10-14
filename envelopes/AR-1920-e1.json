@@ -1,1 +1,16 @@
-{"envelope_id":"AR-1920-e1","envelope_revision":1,"schema_version":2,"task":"AR-1920","task_revision":1,"command_classes":{"git-publication":{"allowed":true,"timeout_seconds":900},"read":{"allowed":true,"timeout_seconds":120}},"capabilities":{"git_metadata":{"allowed":true},"network":{"allowed":false}},"path_scope":{"read":["tasks/AR-1878.md","tasks/AR-1886.md","tasks/AR-1919.md","tasks/AR-1920.md","specs/AR-1878.json","specs/AR-1886.json","specs/AR-1919.json","specs/AR-1920.json","envelopes/AR-1878-e1.json","envelopes/AR-1886-e2.json","envelopes/AR-1919-e1.json","envelopes/AR-1920-e1.json"],"write":["quality"]},"non_goals":["Do not mutate AR-1878, AR-1886, AR-1919, or any earlier task, spec, envelope, checkpoint, session, review, CI, or evidence history.","Do not alter product behavior, unrelated paths, lifecycle gates, or review requirements.","Do not grant network, source-write, test, runtime-download, host-mount, formal, TLC, path-widening, or history-rewrite capability."],"outputs":[{"id":"binding","description":"Exact isolated state worktree materialization and binding under /srv/data/projects."},{"id":"preflight","description":"Bounded git-publication preflight result."}],"evidence":[{"class":"mechanical","id":"binding","required":true},{"class":"mechanical","id":"preflight","required":true}],"stop_conditions":[{"id":"scope","kind":"deny"},{"id":"immutable-history","kind":"deny"},{"id":"path-widening","kind":"deny"},{"id":"network","kind":"deny"},{"id":"formal","kind":"deny"}]}
+{
+  "envelope_id": "AR-1920-e1",
+  "envelope_revision": 1,
+  "schema_version": 2,
+  "task": "AR-1920",
+  "task_revision": 1,
+  "spec_ref": "specs/AR-1920.json",
+  "spec_revision": 1,
+  "command_classes": {"git-publication": {"allowed": true, "timeout_seconds": 900}, "read": {"allowed": true, "timeout_seconds": 120}},
+  "capabilities": {"git_metadata": {"allowed": true}, "network": {"allowed": false}},
+  "path_scope": {"read": ["tasks/AR-1878.md", "tasks/AR-1886.md", "tasks/AR-1919.md", "tasks/AR-1920.md", "specs/AR-1878.json", "specs/AR-1886.json", "specs/AR-1919.json", "specs/AR-1920.json", "envelopes/AR-1878-e1.json", "envelopes/AR-1886-e2.json", "envelopes/AR-1919-e1.json", "envelopes/AR-1920-e1.json"], "write": ["quality"]},
+  "non_goals": ["Do not mutate AR-1878, AR-1886, AR-1919, or any earlier task, spec, envelope, checkpoint, session, review, CI, or evidence history.", "Do not alter product behavior, unrelated paths, lifecycle gates, or review requirements.", "Do not grant network, source-write, test, runtime-download, host-mount, formal, TLC, path-widening, or history-rewrite capability."],
+  "outputs": [{"id": "binding", "description": "Exact isolated state worktree materialization and binding under /srv/data/projects."}, {"id": "preflight", "description": "Bounded git-publication preflight result."}],
+  "evidence": [{"class": "mechanical", "id": "binding", "required": true}, {"class": "mechanical", "id": "preflight", "required": true}],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}, {"id": "immutable-history", "kind": "deny"}, {"id": "path-widening", "kind": "deny"}, {"id": "network", "kind": "deny"}, {"id": "formal", "kind": "deny"}]
+}
