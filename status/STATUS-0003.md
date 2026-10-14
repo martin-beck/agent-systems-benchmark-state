@@ -2946,11 +2946,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1922-sandbox-runtime-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Repair only the bounded handoffctl execution envelope for repeated AR-1900/AR-1901/AR-1912 test-runtime failures where python, pytest, and uv are unavailable. Admit only the reviewed offline interpreter and test-tool visibility required under /srv/data/projects, preserving network denial, repository/state path scopes, and all existing lifecycle gates. |
@@ -3924,7 +3924,7 @@ flowchart LR
         AR_1919["AR-1919 - In progress"]:::status_in_progress
         AR_1920["AR-1920 - Blocked"]:::status_blocked
         AR_1921["AR-1921 - Done"]:::status_done
-        AR_1922["AR-1922 - Open"]:::status_open
+        AR_1922["AR-1922 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4154,5 +4154,3 @@ flowchart LR
     AR_0312 --> AR_0879
     AR_0312 --> AR_0891
     AR_0313 --> AR_0314
-    AR_0313 --> AR_0315
-    AR_0313 --> AR_0804
