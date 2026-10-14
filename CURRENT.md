@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1871 — Integrate schema ledger fix](tasks/AR-1871.md) | Integrate independently reviewed AR-1868 schema vocabulary repair and AR-1870 ledger digest repair on current main, changing only schema/task-schema.json, tests/test_task_record_schema.py, and AR-1861/AR-1862 evidence_ledger blocks. This successor explicitly depends on AR-1868 and AR-1870 review evidence; do not include checkpoints, sessions, projections, runtime state, or unrelated files. | Publish exact-head signed integration PR; obtain independent review; run green CI; merge via handoffctl; post-merge verify schema and both evidence ledgers. | codex-asb-closeout-20261014 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
