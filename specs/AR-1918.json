@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1918.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "dependency", "description": "The lockfile resolves rustls at or above 0.23.46 and removes the reported RUSTSEC advisories without a waiver."},
+    {"id": "quality", "description": "Locked/offline tests, Clippy, coverage, policy, and supply-chain checks pass with existing thresholds and gates."},
+    {"id": "publication", "description": "Signed DCO exact-head review, hosted CI, merge, and post-merge verification agree, or a precise compatibility blocker is recorded."}
+  ],
+  "definition_of_done": [
+    "Only the required Cargo manifests and Cargo.lock change in the product diff.",
+    "All applicable non-formal quality and supply-chain gates pass without weakening policy.",
+    "The reviewed PR merges green and durable coordination evidence closes the AR, or the exact blocker leaves it open/blocked."
+  ],
+  "inputs": [
+    {"id": "pr635", "description": "Hosted PR #635 failure showing rustls 0.23.45 and advisories RUSTSEC-2026-0347, RUSTSEC-2026-0348, and RUSTSEC-2026-0349."}
+  ],
+  "outputs": [
+    {"id": "dependency-repair", "description": "Minimal reviewed Cargo manifest and lockfile update."},
+    {"id": "quality-evidence", "description": "Bounded local and hosted non-formal policy, test, coverage, and supply-chain evidence."},
+    {"id": "lifecycle", "description": "Signed PR, exact-head CI, merge, post-merge, and AR lifecycle evidence or precise blocker."}
+  ],
+  "allowed_tools": ["git", "cargo", "python", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["advisory-waiver", "gate-weakening", "runtime-download", "tlc", "formal", "history-rewrite"],
+  "required_evidence_classes": ["mechanical", "contract-test", "environmental"],
+  "gates": [
+    {"id": "policy", "description": "Existing dependency policy and advisory checks pass without waivers."},
+    {"id": "quality", "description": "Locked/offline tests, Clippy, and coverage checks pass at existing floors."},
+    {"id": "publication", "description": "Signed DCO exact-head hosted review, green CI, merge, and post-merge verification pass."}
+  ]
+}
