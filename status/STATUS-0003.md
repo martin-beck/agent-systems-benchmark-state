@@ -2708,11 +2708,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1905-taskspec-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/task_spec.py for the AR-1903 focused replacement test. Preserve AR-1904, AR-1903, AR-1901 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -3837,7 +3837,7 @@ flowchart LR
         AR_1902["AR-1902 - In progress"]:::status_in_progress
         AR_1903["AR-1903 - In progress"]:::status_in_progress
         AR_1904["AR-1904 - Blocked"]:::status_blocked
-        AR_1905["AR-1905 - In progress"]:::status_in_progress
+        AR_1905["AR-1905 - Open"]:::status_open
         AR_1906["AR-1906 - Blocked"]:::status_blocked
         AR_1907["AR-1907 - In progress"]:::status_in_progress
         AR_1908["AR-1908 - In progress"]:::status_in_progress
@@ -4227,3 +4227,5 @@ flowchart LR
     AR_0701 --> AR_0317
     AR_0701 --> AR_0702
     AR_0701 --> AR_0703
+    AR_0701 --> AR_0704
+    AR_0701 --> AR_0707
