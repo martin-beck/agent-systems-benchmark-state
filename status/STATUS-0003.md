@@ -2592,6 +2592,20 @@
 | Summary | State-only successor admitting exactly tools/assumption_revalidation.py for the AR-1895 focused replacement test. Preserve AR-1895 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1897 — Renew implementer assignment
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only coordination repair to renew an explicit implementer assignment for the AR-1896 bounded dependency admission. Preserve AR-1896 and earlier histories; reject force-clear, cross-root, network, formal/TLC, or task-scope widening. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3532,6 +3546,7 @@ flowchart LR
         AR_1894["AR-1894 - In progress"]:::status_in_progress
         AR_1895["AR-1895 - In progress"]:::status_in_progress
         AR_1896["AR-1896 - In progress"]:::status_in_progress
+        AR_1897["AR-1897 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4468,29 +4483,3 @@ flowchart LR
     AR_1310 --> AR_1316
     AR_1310 --> AR_1319
     AR_1314 --> AR_1315
-    AR_1314 --> AR_1495
-    AR_1316 --> AR_1320
-    AR_1316 --> AR_1422
-    AR_1316 --> AR_1442
-    AR_1319 --> AR_1316
-    AR_1325 --> AR_1326
-    AR_1325 --> AR_1327
-    AR_1325 --> AR_1328
-    AR_1326 --> AR_1327
-    AR_1326 --> AR_1328
-    AR_1327 --> AR_1329
-    AR_1327 --> AR_1334
-    AR_1327 --> AR_1342
-    AR_1327 --> AR_1343
-    AR_1327 --> AR_1346
-    AR_1327 --> AR_1347
-    AR_1327 --> AR_1348
-    AR_1327 --> AR_1349
-    AR_1327 --> AR_1432
-    AR_1327 --> AR_1433
-    AR_1328 --> AR_1329
-    AR_1328 --> AR_1334
-    AR_1328 --> AR_1339
-    AR_1328 --> AR_1342
-    AR_1328 --> AR_1343
-    AR_1328 --> AR_1346

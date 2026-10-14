@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1897",
+  "issue": {
+    "number": 10028,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10028"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Use roles/handoffctl validation with explicit owner, role, expiry, and ticket evidence; record fail-closed rejection if registry policy refuses renewal.",
+      "depends_on": [],
+      "id": "AR-1897",
+      "ownership": "ASB coordination role registry only; no product/vendor/history changes.",
+      "scope": "State-only coordination repair to renew an explicit implementer assignment for the AR-1896 bounded dependency admission. Preserve AR-1896 and earlier histories; reject force-clear, cross-root, network, formal/TLC, or task-scope widening.",
+      "short_title": "Renew implementer assignment"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

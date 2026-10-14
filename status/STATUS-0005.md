@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md), [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md) |
 | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md) | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) |
 | [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
@@ -443,6 +444,7 @@
 | [AR-1894](../tasks/AR-1894.md) | None | None |
 | [AR-1895](../tasks/AR-1895.md) | None | None |
 | [AR-1896](../tasks/AR-1896.md) | None | None |
+| [AR-1897](../tasks/AR-1897.md) | None | None |
 
 ## Complete AR inventory
 
@@ -576,7 +578,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (96)
+### Planned (97)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -662,5 +664,3 @@
 | P1 | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Unclaimed | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. |
 | P1 | [AR-1624](../tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
-| P1 | [AR-1666](../tasks/AR-1666.md): Trusted-main broad TUI coverage qualification | Unclaimed | Raise current TUI main coverage from 89.43&#37; to the strict 90&#37; gate through behavior-focused tests without weakening thresholds. | Reproduce trusted-main coverage at exact head 06e96770, identify low-coverage wizard/runtime/UI paths, and add focused behavior tests preserving development nonblocking authentication, signature, and key-management rules. |
-| P1 | [AR-1679](../tasks/AR-1679.md): ASB legacy task-spec normalization | Unclaimed | Normalize the remaining ASB legacy task-spec records rejected by strict validation without changing task intent or gates. | Normalize AR-1625/1626/1628-1630 and AR-1641-1655, regenerate projections, and pass fresh strict validation. |

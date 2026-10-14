@@ -1,5 +1,31 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1314 --> AR_1495
+    AR_1316 --> AR_1320
+    AR_1316 --> AR_1422
+    AR_1316 --> AR_1442
+    AR_1319 --> AR_1316
+    AR_1325 --> AR_1326
+    AR_1325 --> AR_1327
+    AR_1325 --> AR_1328
+    AR_1326 --> AR_1327
+    AR_1326 --> AR_1328
+    AR_1327 --> AR_1329
+    AR_1327 --> AR_1334
+    AR_1327 --> AR_1342
+    AR_1327 --> AR_1343
+    AR_1327 --> AR_1346
+    AR_1327 --> AR_1347
+    AR_1327 --> AR_1348
+    AR_1327 --> AR_1349
+    AR_1327 --> AR_1432
+    AR_1327 --> AR_1433
+    AR_1328 --> AR_1329
+    AR_1328 --> AR_1334
+    AR_1328 --> AR_1339
+    AR_1328 --> AR_1342
+    AR_1328 --> AR_1343
+    AR_1328 --> AR_1346
     AR_1328 --> AR_1347
     AR_1328 --> AR_1348
     AR_1328 --> AR_1349
@@ -1477,4 +1503,3 @@
 | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md), [AR-1407](../tasks/AR-1407-sha2-compatibility.md) |
 | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | [AR-1414](../tasks/AR-1414-action-pin-followup.md) |
 | [AR-1407](../tasks/AR-1407-sha2-compatibility.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None |
-| [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md), [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md) |
