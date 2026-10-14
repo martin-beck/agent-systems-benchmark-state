@@ -2270,6 +2270,20 @@
 | Summary | Add a fail-closed abandon-expired-execution transition clearing only expired bound reservations with no live identity; classify missing/mismatched results as failed, require exact owner/revision matches, non-empty operator evidence, and immutable audit. Reject live/non-expired, malformed, matching-success, wrong-owner/revision, and missing-evidence cases. No recovery/success authorization or direct edits to AR-1773/1852/1871. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1874 — Upgrade Coordinator v0.7.11
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt the exact signed upstream Agent Workflow Coordinator v0.7.11 release in the ASB state repository using the documented vendor sync path. Preserve ASB-owned overlays, task state, formal inventories, generated views, and fail-closed lifecycle behavior; do not patch vendored bytes or weaken existing gates. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3187,6 +3201,7 @@ flowchart LR
         AR_1871["AR-1871 - In progress"]:::status_in_progress
         AR_1872["AR-1872 - Blocked"]:::status_blocked
         AR_1873["AR-1873 - Planned"]:::status_planned
+        AR_1874["AR-1874 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4857,31 +4872,3 @@ flowchart LR
     AR_1633 --> AR_1634
     AR_1634 --> AR_1615
     AR_1634 --> AR_1632
-    AR_1634 --> AR_1635
-    AR_1634 --> AR_1636
-    AR_1634 --> AR_1726
-    AR_1635 --> AR_1615
-    AR_1635 --> AR_1632
-    AR_1635 --> AR_1636
-    AR_1636 --> AR_1615
-    AR_1636 --> AR_1632
-    AR_1636 --> AR_1637
-    AR_1636 --> AR_1638
-    AR_1636 --> AR_1726
-    AR_1636 --> AR_1799
-    AR_1637 --> AR_1615
-    AR_1637 --> AR_1632
-    AR_1637 --> AR_1638
-    AR_1637 --> AR_1726
-    AR_1638 --> AR_1615
-    AR_1638 --> AR_1632
-    AR_1638 --> AR_1639
-    AR_1639 --> AR_1615
-    AR_1639 --> AR_1632
-    AR_1639 --> AR_1640
-    AR_1640 --> AR_1615
-    AR_1640 --> AR_1632
-    AR_1641 --> AR_1613
-    AR_1641 --> AR_1622
-    AR_1641 --> AR_1643
-    AR_1641 --> AR_1645
