@@ -2368,6 +2368,20 @@
 | Summary | Bind a real isolated ASB state worktree and execution envelope so the narrowly scoped AR-1879 runner/worktree/lock repair can proceed. Preserve AR-1879 blocked history and enable only authorized state-only integration of signed AR-1853 commit 5a703b46651930e244af57cf9fbb843851a86bac. No product, vendor, gate, role-contract, PR, or unrelated task edits. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1881 — Recover terminal orphan reservation
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add a narrowly scoped handoffctl recovery path for an expired bound reservation with an exactly matching durable terminal result but no legacy claim_process identity. Reuse AR-1867/AR-1872 evidence and structural fences; preserve exact reservation/result identity, expiry, structural validation, and immutable audit. Do not edit AR-1878 before lease expiry, weaken other recover/abandon cases, or force-clear state. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3292,6 +3306,7 @@ flowchart LR
         AR_1878["AR-1878 - In progress"]:::status_in_progress
         AR_1879["AR-1879 - Blocked"]:::status_blocked
         AR_1880["AR-1880 - Blocked"]:::status_blocked
+        AR_1881["AR-1881 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4727,36 +4742,3 @@ flowchart LR
     AR_1496 --> AR_1498
     AR_1496 --> AR_1499
     AR_1498 --> AR_1199
-    AR_1499 --> AR_1500
-    AR_1499 --> AR_1501
-    AR_1499 --> AR_1514
-    AR_1500 --> AR_1501
-    AR_1500 --> AR_1514
-    AR_1501 --> AR_1502
-    AR_1502 --> AR_1503
-    AR_1502 --> AR_1504
-    AR_1502 --> AR_1505
-    AR_1502 --> AR_1506
-    AR_1502 --> AR_1507
-    AR_1502 --> AR_1508
-    AR_1502 --> AR_1509
-    AR_1502 --> AR_1511
-    AR_1502 --> AR_1512
-    AR_1502 --> AR_1513
-    AR_1505 --> AR_1506
-    AR_1505 --> AR_1507
-    AR_1505 --> AR_1508
-    AR_1505 --> AR_1509
-    AR_1505 --> AR_1510
-    AR_1505 --> AR_1523
-    AR_1505 --> AR_1525
-    AR_1505 --> AR_1551
-    AR_1513 --> AR_1523
-    AR_1513 --> AR_1551
-    AR_1514 --> AR_1523
-    AR_1514 --> AR_1526
-    AR_1514 --> AR_1551
-    AR_1517 --> AR_1518
-    AR_1517 --> AR_1529
-    AR_1519 --> AR_1520
-    AR_1519 --> AR_1528
