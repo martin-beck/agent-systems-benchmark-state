@@ -2156,7 +2156,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Obtain independent GitHub approval for PR #160 at exact head b0811a8802; merge via authorized signed path, then run post-merge verification and repaired roles.remove cleanup. Current gh pr review --approve is rejected because the available identity owns the PR. |
 
 ### AR-1866 — Correct vendor version docs
 
@@ -4994,11 +4994,3 @@ flowchart LR
     AR_1761 --> AR_1776
     AR_1762 --> AR_1763
     AR_1762 --> AR_1765
-    AR_1762 --> AR_1766
-    AR_1762 --> AR_1776
-    AR_1763 --> AR_1764
-    AR_1763 --> AR_1765
-    AR_1763 --> AR_1783
-    AR_1763 --> AR_1835
-    AR_1764 --> AR_1765
-    AR_1764 --> AR_1780
