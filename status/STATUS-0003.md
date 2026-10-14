@@ -2746,6 +2746,20 @@
 | Summary | State-only successor admitting exactly tools/resume_card_runtime.py for the AR-1905 focused replacement test. Preserve AR-1906, AR-1905 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1908 — Admit run-command dependency
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only successor admitting exactly tools/run_command.py for the AR-1907 focused replacement test. Preserve AR-1907, AR-1906 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3700,6 +3714,7 @@ flowchart LR
         AR_1905["AR-1905 - In progress"]:::status_in_progress
         AR_1906["AR-1906 - In progress"]:::status_in_progress
         AR_1907["AR-1907 - In progress"]:::status_in_progress
+        AR_1908["AR-1908 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4323,29 +4338,3 @@ flowchart LR
     AR_1001 --> AR_1007
     AR_1001 --> AR_1013
     AR_1002 --> AR_0405
-    AR_1002 --> AR_1016
-    AR_1007 --> AR_0405
-    AR_1007 --> AR_0406
-    AR_1007 --> AR_1016
-    AR_1007 --> AR_1394
-    AR_1008 --> AR_0898
-    AR_1010 --> AR_1011
-    AR_1010 --> AR_1012
-    AR_1010 --> AR_1024
-    AR_1010 --> AR_1025
-    AR_1010 --> AR_1033
-    AR_1011 --> AR_0807
-    AR_1011 --> AR_1012
-    AR_1011 --> AR_1026
-    AR_1012 --> AR_0823
-    AR_1012 --> AR_0903
-    AR_1012 --> AR_1027
-    AR_1013 --> AR_1014
-    AR_1013 --> AR_1015
-    AR_1013 --> AR_1036
-    AR_1014 --> AR_1011
-    AR_1014 --> AR_1016
-    AR_1014 --> AR_1032
-    AR_1014 --> AR_1034
-    AR_1015 --> AR_1016
-    AR_1017 --> AR_1018

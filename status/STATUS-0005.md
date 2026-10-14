@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1386](../tasks/AR-1386-live-cli-dispatch-integration.md) | [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md), [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md) | None |
+| [AR-1387](../tasks/AR-1387-runtime-control-cli-bridge.md) | [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md) | None |
 | [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md) | [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md) | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md) |
 | [AR-1389](../tasks/AR-1389-formal-fixture-exec-race.md) | [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md) | None |
 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md) | None |
@@ -475,6 +477,7 @@
 | [AR-1905](../tasks/AR-1905.md) | None | None |
 | [AR-1906](../tasks/AR-1906.md) | None | None |
 | [AR-1907](../tasks/AR-1907.md) | None | None |
+| [AR-1908](../tasks/AR-1908.md) | None | None |
 
 ## Complete AR inventory
 
@@ -619,7 +622,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (96)
+### Planned (97)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -668,4 +671,3 @@
 | P0 | [AR-1828](../tasks/AR-1828-retire-provider-selection-surfaces.md): Retire legacy provider selection and implicit configuration surfaces | Unclaimed | Retire public config/catalog/provider-plan commands and all ProviderSelection artifacts in favor of setup-created explicit config. | Remove legacy public config, provider-catalog, provider-plan, and ProviderSelection surfaces after setup contains their user-facing selection responsibilities. |
 | P0 | [AR-1829](../tasks/AR-1829-config-bound-plan-create.md): Compile config-bound benchmark plans with explicit output | Unclaimed | Make asb plan create compile a complete setup file into an explicit-output immutable benchmark plan with no provider-selection inputs. | Implement config-only benchmark plan compilation with mandatory --config and --output arguments. |
 | P0 | [AR-1830](../tasks/AR-1830-config-bound-plan-run-sweep.md): Execute config-bound live runs and sweeps | Unclaimed | Make plan validation, run, and sweep require the setup config and safely execute complete live benchmark selections from config-bound plans. | Require explicit config validation for plan validation, live run, and live sweep, then wire bounded multi-agent execution. |
-| P0 | [AR-1832](../tasks/AR-1832-explicit-config-e2e-qualification.md): Qualify explicit setup-config benchmark workflow end-to-end | Unclaimed | Qualify fresh-user setup-output through explicit config-bound plan creation, validation, live run, sweep, reporting, and legacy-surface absence. | Qualify the full fresh-user explicit-config route across supported selection matrices and live development execution. |
