@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded control diagnostic catalog repair and record local acceptance evidence after the coordinator binds the reviewed source-write successor envelope; do not change AR-1787 or AR-1835. | codex-ar1863-catalog-repair-20261014 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -112,6 +106,7 @@ Never edit this file directly.
 | P1 | [AR-1258 — Provision Docker binfmt/QEMU capability](tasks/AR-1258-docker-binfmt-qemu.md) | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked. | - |
 | P1 | [AR-1354 — Runtime enrollment implementation](tasks/AR-1354-runtime-enrollment-implementation.md) | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target\(s\), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. | - |
 | P1 | [AR-1851 — AR-1793 v0.7.4 compatibility contracts](tasks/AR-1851-ar1793-v074-contracts.md) | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. | Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification. | - |
+| P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded control diagnostic catalog repair and record local acceptance evidence after the coordinator binds the reviewed source-write successor envelope; do not change AR-1787 or AR-1835. | - |
 | P1 | [AR-1875 — Repair AR-1863 source-write envelope](tasks/AR-1875.md) | Create and bind a successor AR-1863 execution envelope that authorizes only the reviewed diagnostic-catalog source-write and publication paths, preserving the existing AR-1863 non-goals, path scope, fail-closed gates, and exact current-main review evidence. Do not modify AR-1787 or AR-1835. | Implement the bounded scope and record local acceptance evidence. | - |
 | P1 | [AR-1876 — Replace stale AR-1863 envelope](tasks/AR-1876.md) | Provide an explicit fail-closed coordinator transition for replacing AR-1863's already-bound obsolete execution envelope with the reviewed successor AR-1863-e3, requiring exact task revision, active owner, no live execution reservation, immutable replacement evidence, and preserving all existing path and non-goal restrictions. | Implement the bounded scope and record local acceptance evidence. | - |
 | P2 | [AR-0705 — Provide native Debian capacity](tasks/AR-0705-native-debian-capacity.md) | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |

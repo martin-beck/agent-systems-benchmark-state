@@ -2120,11 +2120,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1863-catalog-repair-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. |
@@ -3218,7 +3218,7 @@ flowchart LR
         AR_1860["AR-1860 - Done"]:::status_done
         AR_1861["AR-1861 - Done"]:::status_done
         AR_1862["AR-1862 - Done"]:::status_done
-        AR_1863["AR-1863 - In progress"]:::status_in_progress
+        AR_1863["AR-1863 - Blocked"]:::status_blocked
         AR_1864["AR-1864 - Done"]:::status_done
         AR_1865["AR-1865 - Done"]:::status_done
         AR_1866["AR-1866 - Done"]:::status_done
@@ -4849,3 +4849,4 @@ flowchart LR
     AR_1612 --> AR_1613
     AR_1612 --> AR_1615
     AR_1612 --> AR_1617
+    AR_1612 --> AR_1618
