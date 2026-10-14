@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1851-ar1793-v074-contracts",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-14T15:47:29+00:00",
   "depends_on": [],
   "id": "AR-1851",
   "next_action": "Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification.",
-  "owner": "",
+  "owner": "asb-ar1851-v074-contracts-20261014",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1851.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-14T13:47:17+00:00",
+  "updated_at": "2026-10-14T13:47:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -155,3 +155,5 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
 
 - 2026-10-14T13:47:17+00:00: Parallel development authorized: inspect candidate 0d3693a24c5
   exact-head review and rerun terminal strict/formal gates; preserve any baseline failures.
+
+- 2026-10-14T13:47:29+00:00: Claimed by asb-ar1851-v074-contracts-20261014.

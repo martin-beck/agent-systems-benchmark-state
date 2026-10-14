@@ -390,22 +390,22 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-1851](../tasks/AR-1851-ar1793-v074-contracts.md): AR-1793 v0.7.4 compatibility contracts | asb-ar1851-v074-contracts-20261014 | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. | Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification. |
 | P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | asb-ar1852-role-store-20261014 | Align role-store authorization tests with Coordinator v0.7.4. | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | asb-ar1853-complexity-20261014 | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
 | P1 | [AR-1878](../tasks/AR-1878.md): Reissue diagnostic catalog task | asb-ar1878-diagnostic-successor-20261014 | Create a fresh successor task for the reviewed control diagnostic catalog repair with a new source-write execution envelope scoped only to the catalog files and required tests/publication. Preserve AR-1863 as immutable blocked history; do not widen or mutate its bound envelope, alter AR-1787/AR-1835, or weaken coordinator gates. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (4)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Unclaimed | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Repair the coordinator Bubblewrap runtime root to mount the approved pinned Cargo toolchain, compiler/linker support, complete workspace source, and required identity files through an authorized runner; then rerun exact-head focused and full tests through handoffctl. No product source repair is justified. |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
-| P1 | [AR-1851](../tasks/AR-1851-ar1793-v074-contracts.md): AR-1793 v0.7.4 compatibility contracts | Unclaimed | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. | Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification. |
 
 ### Blocked (91)
 
