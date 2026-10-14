@@ -9,6 +9,24 @@
   "owner": "asb-ar1851-v074-contracts-20261014",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
+  "retry_circuit": {
+    "abandoned": [],
+    "attempts": [],
+    "hold": null,
+    "recoveries": [],
+    "reservations": [
+      {
+        "expires_at": "2026-10-14T14:19:45+00:00",
+        "id": "4933bcd6807b4177a0440f95879a45f9",
+        "identity": "sha256:0edbce3b93620d07307ac7ff1f50392a3c662fed44f0b5054291f90e92c7376d",
+        "progress_digest": "sha256:5fac4bda38e4a3df8ea06a1946c455591cbd5abd0c255c7168c133926aca5bbe",
+        "reserved_at": "2026-10-14T13:48:45+00:00",
+        "task_revision": 42,
+        "window": 3
+      }
+    ],
+    "schema_version": 1
+  },
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "mechanical",
@@ -22,9 +40,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-14T13:48:13+00:00",
+  "updated_at": "2026-10-14T13:48:45+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -164,3 +182,5 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
 
 - 2026-10-14T13:48:13+00:00: Recorded command exit 0; command argv SHA-256
   cd62dce42fcf18c521be5070d619fb6d7d7c68a4a4af7ddbd14fe816e550d76a.
+
+- 2026-10-14T13:48:45+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
