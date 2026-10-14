@@ -2858,6 +2858,20 @@
 | Summary | Adopt upstream Agent Workflow Coordinator merge a4defa3880b4f371085b0bfd4eef127489c1eab7 into ASB state through the documented clean-source sync-development path. Change only vendored Coordinator files and generated integrity evidence; preserve AR-1904, AR-1906, AR-1909, AR-1912 artifacts and all prior history. No product files, arbitrary paths, network-dependent runtime behavior, claim bypass, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1916 — Refresh stale ledger digests
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in ASB tasks AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes after AR-1878 recovery; preserve every other task field and all historical records, and do not run formal or TLC checks. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3820,6 +3834,7 @@ flowchart LR
         AR_1913["AR-1913 - Planned"]:::status_planned
         AR_1914["AR-1914 - Planned"]:::status_planned
         AR_1915["AR-1915 - Blocked"]:::status_blocked
+        AR_1916["AR-1916 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4216,31 +4231,3 @@ flowchart LR
     AR_0801 --> AR_0820
     AR_0801 --> AR_0840
     AR_0801 --> AR_0842
-    AR_0801 --> AR_0847
-    AR_0801 --> AR_0849
-    AR_0801 --> AR_0869
-    AR_0802 --> AR_0808
-    AR_0802 --> AR_0809
-    AR_0802 --> AR_0872
-    AR_0802 --> AR_0903
-    AR_0803 --> AR_0804
-    AR_0803 --> AR_0805
-    AR_0803 --> AR_0813
-    AR_0803 --> AR_0819
-    AR_0803 --> AR_0821
-    AR_0803 --> AR_1010
-    AR_0803 --> AR_1017
-    AR_0803 --> AR_1023
-    AR_0804 --> AR_0805
-    AR_0804 --> AR_0807
-    AR_0804 --> AR_0809
-    AR_0804 --> AR_0812
-    AR_0804 --> AR_0817
-    AR_0804 --> AR_0819
-    AR_0804 --> AR_0820
-    AR_0804 --> AR_0821
-    AR_0804 --> AR_0870
-    AR_0804 --> AR_1010
-    AR_0804 --> AR_1014
-    AR_0804 --> AR_1017
-    AR_0804 --> AR_1025

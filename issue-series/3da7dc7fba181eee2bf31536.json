@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1916",
+  "issue": {
+    "number": 10047,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10047"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "A fresh current-main signed DCO commit changes only the two evidence_ledger blocks, focused non-formal task-spec and vendor consistency tests pass, the reviewed exact-head PR merges, and post-merge handoffctl doctor --live confirms both ledgers bind the current vendor artifact.",
+      "depends_on": [],
+      "id": "AR-1916",
+      "ownership": "ASB coordination-state task evidence_ledger metadata only in AR-1861 and AR-1862; no schema, runtime, projection, checkpoint, session, product, vendor, or formal/TLC changes.",
+      "scope": "Refresh only the stale evidence_ledger candidate and mechanical evidence digests in ASB tasks AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes after AR-1878 recovery; preserve every other task field and all historical records, and do not run formal or TLC checks.",
+      "short_title": "Refresh stale ledger digests"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

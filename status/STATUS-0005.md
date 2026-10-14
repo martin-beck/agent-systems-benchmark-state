@@ -493,6 +493,7 @@
 | [AR-1913](../tasks/AR-1913.md) | None | None |
 | [AR-1914](../tasks/AR-1914.md) | None | None |
 | [AR-1915](../tasks/AR-1915.md) | None | None |
+| [AR-1916](../tasks/AR-1916.md) | None | None |
 
 ## Complete AR inventory
 
@@ -642,7 +643,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (99)
+### Planned (100)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -672,4 +673,3 @@
 | P0 | [AR-1658](../tasks/AR-1658.md): Development release-channel resolver contract | Unclaimed | Define and implement the ASB-side channel option with dev as the default and current-main provenance. | Implement the explicit channel parser/resolver and immutable current-main manifest checks, then add dev/stable/nightly/experimental negative coverage. |
 | P0 | [AR-1659](../tasks/AR-1659.md): Atomic TUI materializer and launch handoff | Unclaimed | Build the selected dev-channel TUI in a temporary location and atomically install and launch it from ASB. | Implement the bounded clone/build/materialize/rollback runner and verify cleanup, manifest compatibility, and launch diagnostics. |
 | P0 | [AR-1660](../tasks/AR-1660.md): Fresh-user setup-to-comparison acceptance runner | Unclaimed | Run one selectable ASB journey from install and wizard setup through benchmark, recording, offline replay, and comparison. | Implement the disposable acceptance runner and capture exact-head human and JSON receipts for the paired qualification gate. |
-| P0 | [AR-1663](../tasks/AR-1663.md): Repair protected-main DCO recognition failure | Unclaimed | Repair the current protected-main merge metadata so DCO recognition succeeds without changing product files or development nonblocking behavior. | Confirm AR-1661 and AR-1658 dependency evidence, then repair and independently verify the exact protected-main merge topology, Signed-off-by trailer, SSH signature, unchanged tree, and hosted policy. |
