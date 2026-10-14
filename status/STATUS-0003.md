@@ -2666,11 +2666,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1902-resumecard-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/resume_card.py for the AR-1900 focused replacement test. Preserve AR-1901, AR-1900 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -3834,7 +3834,7 @@ flowchart LR
         direction TB
         AR_1900["AR-1900 - Open"]:::status_open
         AR_1901["AR-1901 - Open"]:::status_open
-        AR_1902["AR-1902 - In progress"]:::status_in_progress
+        AR_1902["AR-1902 - Open"]:::status_open
         AR_1903["AR-1903 - In progress"]:::status_in_progress
         AR_1904["AR-1904 - Blocked"]:::status_blocked
         AR_1905["AR-1905 - Open"]:::status_open
@@ -4240,3 +4240,5 @@ flowchart LR
     AR_0702 --> AR_1006
     AR_0704 --> AR_0705
     AR_0704 --> AR_0706
+    AR_0801 --> AR_0802
+    AR_0801 --> AR_0803
