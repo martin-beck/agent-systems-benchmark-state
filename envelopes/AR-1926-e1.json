@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "envelope_id": "AR-1926-e1",
+  "envelope_revision": 1,
+  "task": "AR-1926",
+  "task_revision": 5,
+  "spec_ref": "specs/AR-1926.json",
+  "spec_revision": 1,
+  "capabilities": {"git_metadata": {"allowed": true}, "network": {"allowed": false}},
+  "command_classes": {"read": {"allowed": true, "timeout_seconds": 120}, "test": {"allowed": true, "timeout_seconds": 900}},
+  "path_scope": {
+    "read": ["runtime/bin/python", "runtime/bin/pytest", "runtime/bin/uv", "tasks/AR-1901.md", "specs/AR-1901.json", "evidence/AR-1901-scope.txt", "tools", "tests"],
+    "write": ["evidence/AR-1926-runtime-scope.txt"]
+  },
+  "evidence": [{"class": "contract-test", "id": "scope", "required": true}, {"class": "mechanical", "id": "history", "required": true}],
+  "outputs": [{"id": "scope", "description": "Repository-separated AR-1901 publication-scope validation evidence."}],
+  "non_goals": ["Do not mutate AR-1901, AR-1881, AR-1882, or AR-1900 history.", "Do not run network, downloads, mounts, formal, or TLC gates."],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}, {"id": "immutable-history", "kind": "deny"}, {"id": "network", "kind": "deny"}, {"id": "formal", "kind": "deny"}]
+}
