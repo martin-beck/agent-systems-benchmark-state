@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1853-complexity-v074-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T15:46:28+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1853",
   "next_action": "Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence.",
-  "owner": "asb-ar1853-complexity-20261014",
+  "owner": "",
   "plan": "../plans/AR-1853-complexity-v074-contract.md",
   "priority": "P1",
   "retry_circuit": {
@@ -38,11 +38,11 @@
   },
   "spec_ref": "specs/AR-1853.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Align the complexity-budget contract with Coordinator v0.7.4.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Complexity v0.7.4 compatibility contract",
-  "updated_at": "2026-10-14T14:17:22+00:00",
+  "updated_at": "2026-10-14T14:17:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1853"
 }
 ---
@@ -120,3 +120,7 @@ contract exposed by exact Coordinator v0.7.4 adoption.
   3e14921737381ba5d569fece46490321fa4a0933eaff1f9b8a0515c50b21eb39.
 
 - 2026-10-14T14:17:22+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
+
+- 2026-10-14T14:17:47+00:00: Released ownerless after preserving candidate PR #146 and signed
+  release branch; AR-1851/AR-1852 non-formal dependency repairs remain. Formal/TLC optional under
+  UD-0004.
