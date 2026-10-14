@@ -500,13 +500,14 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1886](../tasks/AR-1886.md): Repair runner environment | codex-ar1886-runner-env-20261014 | Repair only the bounded handoffctl Bubblewrap execution root so approved pinned executables (pwd, git, and sync tooling) are visible for AR-1885 commands. Preserve AR-1885 immutable history; do not add host mounts, network, runtime downloads, scope widening, or gate weakening. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1912](../tasks/AR-1912.md): Admit roles dependency | codex-ar1912-roles-20261014 | Create a narrow successor for the missing tools.roles dependency required by the focused scope-admission chain. Admit exactly tools/roles.py and its focused test through handoffctl; do not widen paths, bypass expired claims, alter product files, rewrite prior histories, use network, or run formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (19)
+### Open (18)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -527,7 +528,6 @@
 | P1 | [AR-1907](../tasks/AR-1907.md): Admit resume runtime dependency | Unclaimed | State-only successor admitting exactly tools/resume_card_runtime.py for the AR-1905 focused replacement test. Preserve AR-1906, AR-1905 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1908](../tasks/AR-1908.md): Admit run-command dependency | Unclaimed | State-only successor admitting exactly tools/run_command.py for the AR-1907 focused replacement test. Preserve AR-1907, AR-1906 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | Unclaimed | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1912](../tasks/AR-1912.md): Admit roles dependency | Unclaimed | Create a narrow successor for the missing tools.roles dependency required by the focused scope-admission chain. Admit exactly tools/roles.py and its focused test through handoffctl; do not widen paths, bypass expired claims, alter product files, rewrite prior histories, use network, or run formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (113)

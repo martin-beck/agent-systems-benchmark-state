@@ -2806,11 +2806,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1912-roles-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create a narrow successor for the missing tools.roles dependency required by the focused scope-admission chain. Admit exactly tools/roles.py and its focused test through handoffctl; do not widen paths, bypass expired claims, alter product files, rewrite prior histories, use network, or run formal/TLC. |
@@ -3858,7 +3858,7 @@ flowchart LR
         AR_1909["AR-1909 - Blocked"]:::status_blocked
         AR_1910["AR-1910 - Open"]:::status_open
         AR_1911["AR-1911 - Planned"]:::status_planned
-        AR_1912["AR-1912 - Open"]:::status_open
+        AR_1912["AR-1912 - In progress"]:::status_in_progress
         AR_1913["AR-1913 - Planned"]:::status_planned
         AR_1914["AR-1914 - Planned"]:::status_planned
         AR_1915["AR-1915 - Blocked"]:::status_blocked
@@ -4227,5 +4227,3 @@ flowchart LR
     AR_0511 --> AR_0515
     AR_0512 --> AR_0515
     AR_0513 --> AR_0515
-    AR_0514 --> AR_0515
-    AR_0517 --> AR_0518
