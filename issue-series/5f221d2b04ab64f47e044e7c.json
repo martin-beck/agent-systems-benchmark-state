@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1865",
+  "issue": {
+    "number": 633,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/633"
+  },
+  "issue_digest": "sha256:4b4d6c8d5b5d7277a51d1a6b3d3a1ed99e0f4ee4e5e5d74be4fbb1b5f0d3b7d2",
+  "members": [
+    {
+      "acceptance": "Focused positive and negative role tests prove explicit expired-target removal at the exact revision, stale/malformed/missing rejection, and unchanged read/admission expiry rejection; applicable full gates, independent review, signed DCO, exact-head CI, merge, and post-merge verification pass.",
+      "depends_on": [],
+      "id": "AR-1865",
+      "ownership": "ASB state coordinator overlay tools/roles.py and tests/test_roles.py; do not edit .runtime/roles.json or broaden the vendored Coordinator release.",
+      "scope": "Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior.",
+      "short_title": "Repair expired role cleanup"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

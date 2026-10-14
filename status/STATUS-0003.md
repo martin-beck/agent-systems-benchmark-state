@@ -2144,6 +2144,20 @@
 | Summary | Align task-record schema vocabulary for execution, retry, and standard task metadata without changing lifecycle semantics. |
 | Next action | Align task-record schema execution/retry and standard metadata vocabulary; add positive and hostile fixtures and regenerate documentation. |
 
+### AR-1865 — Repair expired role cleanup
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3052,6 +3066,7 @@ flowchart LR
         AR_1862["AR-1862 - Done"]:::status_done
         AR_1863["AR-1863 - Open"]:::status_open
         AR_1864["AR-1864 - Done"]:::status_done
+        AR_1865["AR-1865 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4996,27 +5011,3 @@ flowchart LR
     AR_1776 --> AR_1798
     AR_1776 --> AR_1825
     AR_1777 --> AR_1779
-    AR_1778 --> AR_1779
-    AR_1778 --> AR_1798
-    AR_1778 --> AR_1825
-    AR_1779 --> AR_1780
-    AR_1779 --> AR_1797
-    AR_1781 --> AR_1782
-    AR_1781 --> AR_1794
-    AR_1782 --> AR_1783
-    AR_1782 --> AR_1835
-    AR_1783 --> AR_1780
-    AR_1784 --> AR_1779
-    AR_1784 --> AR_1793
-    AR_1787 --> AR_1785
-    AR_1788 --> AR_1785
-    AR_1788 --> AR_1791
-    AR_1789 --> AR_1788
-    AR_1789 --> AR_1791
-    AR_1790 --> AR_1789
-    AR_1790 --> AR_1791
-    AR_1791 --> AR_1792
-    AR_1795 --> AR_1841
-    AR_1799 --> AR_1800
-    AR_1826 --> AR_1827
-    AR_1826 --> AR_1828
