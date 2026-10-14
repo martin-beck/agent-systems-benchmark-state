@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1920",
+  "issue": {
+    "number": 10051,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10051"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Materialize and bind one real isolated ASB state worktree under /srv/data/projects for the exact reviewed AR-1878 and AR-1886 heads, then run bounded git-publication preflight and record the exact result without changing either head or prior history.",
+      "depends_on": [],
+      "id": "AR-1920",
+      "ownership": "ASB coordination-state worktree materialization and binding for reviewed AR-1878 and AR-1886 publication only; preserve AR-1919 and all earlier task, spec, envelope, checkpoint, review, CI, and evidence history. No product, vendor, network, source-write, test, formal/TLC, runtime-download, host-mount, path-widening, or history-rewrite changes.",
+      "scope": "Create a narrow successor for AR-1919's exact nonexistent .git/worktrees binding. Materialize one safe isolated coordination-state worktree under /srv/data/projects and bind it through handoffctl to the reviewed AR-1878 and AR-1886 exact heads and declared publication paths. Grant only the minimum worktree/git-metadata publication authority needed to verify the binding; reject arbitrary paths, path widening, history rewriting, and all unrelated capabilities.",
+      "short_title": "Materialize publication worktree"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md) | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md), [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md), [AR-1376](../tasks/AR-1376-runtime-live-adapter.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md), [AR-1382](../tasks/AR-1382-authenticated-live-execution-source.md), [AR-1383](../tasks/AR-1383-runtime-authority-profile.md), [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md), [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md), [AR-1524](../tasks/AR-1524.md) |
 | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md) |
 | [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1374](../tasks/AR-1374-cli-live-dispatch.md) | None |
 | [AR-1376](../tasks/AR-1376-runtime-live-adapter.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | None |
@@ -501,6 +502,7 @@
 | [AR-1917](../tasks/AR-1917.md) | None | None |
 | [AR-1918](../tasks/AR-1918.md) | None | None |
 | [AR-1919](../tasks/AR-1919.md) | None | None |
+| [AR-1920](../tasks/AR-1920.md) | None | None |
 
 ## Complete AR inventory
 
@@ -647,7 +649,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (98)
+### Planned (99)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -667,7 +669,3 @@
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1545](../tasks/AR-1545.md): AR-1307 formal-input readiness repair | Unclaimed | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. |
-| P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
-| P0 | [AR-1622](../tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | Unclaimed | Make the clone-to-wizard-to-benchmark-to-offline-comparison journey executable in one disposable runner with simple selection-driven guidance. | Promote after final lifecycle and development-auth qualification; implement paired runner, guide, and exact-head acceptance. |
-| P0 | [AR-1623](../tasks/AR-1623.md): Development-channel release, upgrade, and rollback gate | Unclaimed | Qualify clean-machine dev installation, default-channel behavior, restart persistence, upgrade, rollback, and tamper diagnostics across ASB and TUI. | Promote after the quickstart runner and exact bundle consumer are released; execute disposable release-gate matrix. |
-| P0 | [AR-1643](../tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | Implement the disposable paired runner after setup-to-runtime, capture/replay, and comparison seams are complete. |

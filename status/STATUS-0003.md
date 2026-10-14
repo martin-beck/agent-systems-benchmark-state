@@ -2914,6 +2914,20 @@
 | Summary | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1920 — Materialize publication worktree
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a narrow successor for AR-1919&#x27;s exact nonexistent .git/worktrees binding. Materialize one safe isolated coordination-state worktree under /srv/data/projects and bind it through handoffctl to the reviewed AR-1878 and AR-1886 exact heads and declared publication paths. Grant only the minimum worktree/git-metadata publication authority needed to verify the binding; reject arbitrary paths, path widening, history rewriting, and all unrelated capabilities. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3880,6 +3894,7 @@ flowchart LR
         AR_1917["AR-1917 - Open"]:::status_open
         AR_1918["AR-1918 - Done"]:::status_done
         AR_1919["AR-1919 - Blocked"]:::status_blocked
+        AR_1920["AR-1920 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4180,38 +4195,3 @@ flowchart LR
     AR_0502 --> AR_0503
     AR_0502 --> AR_0516
     AR_0502 --> AR_0517
-    AR_0502 --> AR_0518
-    AR_0502 --> AR_0520
-    AR_0502 --> AR_0871
-    AR_0502 --> AR_0879
-    AR_0502 --> AR_0901
-    AR_0502 --> AR_1005
-    AR_0502 --> AR_1330
-    AR_0503 --> AR_0314
-    AR_0503 --> AR_0504
-    AR_0503 --> AR_0505
-    AR_0503 --> AR_0506
-    AR_0503 --> AR_0507
-    AR_0503 --> AR_0508
-    AR_0503 --> AR_0509
-    AR_0503 --> AR_0510
-    AR_0503 --> AR_0511
-    AR_0503 --> AR_0512
-    AR_0503 --> AR_0513
-    AR_0503 --> AR_0514
-    AR_0503 --> AR_0516
-    AR_0503 --> AR_0517
-    AR_0503 --> AR_0518
-    AR_0503 --> AR_0520
-    AR_0503 --> AR_0857
-    AR_0503 --> AR_0863
-    AR_0503 --> AR_0871
-    AR_0503 --> AR_0879
-    AR_0503 --> AR_0902
-    AR_0503 --> AR_0905
-    AR_0503 --> AR_1330
-    AR_0504 --> AR_0314
-    AR_0504 --> AR_0505
-    AR_0504 --> AR_0506
-    AR_0504 --> AR_0507
-    AR_0504 --> AR_0508

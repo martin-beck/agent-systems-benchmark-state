@@ -1,5 +1,40 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_0502 --> AR_0518
+    AR_0502 --> AR_0520
+    AR_0502 --> AR_0871
+    AR_0502 --> AR_0879
+    AR_0502 --> AR_0901
+    AR_0502 --> AR_1005
+    AR_0502 --> AR_1330
+    AR_0503 --> AR_0314
+    AR_0503 --> AR_0504
+    AR_0503 --> AR_0505
+    AR_0503 --> AR_0506
+    AR_0503 --> AR_0507
+    AR_0503 --> AR_0508
+    AR_0503 --> AR_0509
+    AR_0503 --> AR_0510
+    AR_0503 --> AR_0511
+    AR_0503 --> AR_0512
+    AR_0503 --> AR_0513
+    AR_0503 --> AR_0514
+    AR_0503 --> AR_0516
+    AR_0503 --> AR_0517
+    AR_0503 --> AR_0518
+    AR_0503 --> AR_0520
+    AR_0503 --> AR_0857
+    AR_0503 --> AR_0863
+    AR_0503 --> AR_0871
+    AR_0503 --> AR_0879
+    AR_0503 --> AR_0902
+    AR_0503 --> AR_0905
+    AR_0503 --> AR_1330
+    AR_0504 --> AR_0314
+    AR_0504 --> AR_0505
+    AR_0504 --> AR_0506
+    AR_0504 --> AR_0507
+    AR_0504 --> AR_0508
     AR_0504 --> AR_0509
     AR_0504 --> AR_0510
     AR_0504 --> AR_0511
@@ -2069,4 +2104,3 @@
 | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | None |
 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) |
 | [AR-1372](../tasks/AR-1372-topology-repair.md) | None | None |
-| [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md) | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md), [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md), [AR-1376](../tasks/AR-1376-runtime-live-adapter.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md), [AR-1382](../tasks/AR-1382-authenticated-live-execution-source.md), [AR-1383](../tasks/AR-1383-runtime-authority-profile.md), [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md), [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md), [AR-1524](../tasks/AR-1524.md) |
