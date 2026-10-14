@@ -2050,11 +2050,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-policy-formal-cleanup-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the v0.7.0 coordinator coverage floor deficit. |
@@ -3241,7 +3241,7 @@ flowchart LR
         AR_1855["AR-1855 - Done"]:::status_done
         AR_1856["AR-1856 - Done"]:::status_done
         AR_1857["AR-1857 - Blocked"]:::status_blocked
-        AR_1858["AR-1858 - In progress"]:::status_in_progress
+        AR_1858["AR-1858 - Blocked"]:::status_blocked
         AR_1859["AR-1859 - Planned"]:::status_planned
         AR_1860["AR-1860 - Done"]:::status_done
         AR_1861["AR-1861 - Done"]:::status_done
@@ -4792,3 +4792,5 @@ flowchart LR
     AR_1563 --> AR_1599
     AR_1563 --> AR_1631
     AR_1563 --> AR_1653
+    AR_1563 --> AR_1658
+    AR_1564 --> AR_1566

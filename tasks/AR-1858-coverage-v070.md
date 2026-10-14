@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T14:31:13+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "AR-1859 remains the separately scoped TLC_WORK_ROOT successor and is not promoted before its dependency is resolved. Preserve the unchanged 95% coverage/source-test gates and PR #145 evidence; formal/TLC fixture failures are optional for autonomous development under UD-0003 and remain separately authorized for final product-delivery qualification.",
-  "owner": "asb-policy-formal-cleanup-20261014",
+  "owner": "",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1858.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-14T14:01:23+00:00",
+  "updated_at": "2026-10-14T14:01:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar1858-coverage-v070"
 }
 ---
@@ -315,3 +315,6 @@ artifact. Do not lower the threshold or merge PR #145.
 - 2026-10-14T14:01:23+00:00: Applied UD-0003: formal/TLC failures no longer block
   autonomous-development progression; preserved the 95% coverage floor, source/test gates, PR
   evidence, and AR-1859 formal successor boundary.
+
+- 2026-10-14T14:01:30+00:00: Return to blocked after UD-0003 next_action normalization; preserve
+  AR-1859 formal successor and unchanged coverage/source gates.
