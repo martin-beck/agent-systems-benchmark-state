@@ -2218,11 +2218,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-queue-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes, leaving schema, tests, checkpoints, sessions, predicates, and all other task fields unchanged. |
@@ -3197,7 +3197,7 @@ flowchart LR
         AR_1867["AR-1867 - Open"]:::status_open
         AR_1868["AR-1868 - Done"]:::status_done
         AR_1869["AR-1869 - Open"]:::status_open
-        AR_1870["AR-1870 - In progress"]:::status_in_progress
+        AR_1870["AR-1870 - Done"]:::status_done
         AR_1871["AR-1871 - Done"]:::status_done
         AR_1872["AR-1872 - Blocked"]:::status_blocked
         AR_1873["AR-1873 - Blocked"]:::status_blocked
@@ -4876,3 +4876,4 @@ flowchart LR
     AR_1634 --> AR_1636
     AR_1634 --> AR_1726
     AR_1635 --> AR_1615
+    AR_1635 --> AR_1632
