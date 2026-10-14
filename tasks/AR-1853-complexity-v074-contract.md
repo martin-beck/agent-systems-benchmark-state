@@ -9,6 +9,24 @@
   "owner": "asb-ar1853-complexity-20261014",
   "plan": "../plans/AR-1853-complexity-v074-contract.md",
   "priority": "P1",
+  "retry_circuit": {
+    "abandoned": [],
+    "attempts": [],
+    "hold": null,
+    "recoveries": [],
+    "reservations": [
+      {
+        "expires_at": "2026-10-14T14:29:55+00:00",
+        "id": "90080b58096e4a8ba73c7dd41dd08b86",
+        "identity": "sha256:952df906e1aa876de6b896f7a7b933806ee2e02318c0db17cdd6c456db877667",
+        "progress_digest": "sha256:5fac4bda38e4a3df8ea06a1946c455591cbd5abd0c255c7168c133926aca5bbe",
+        "reserved_at": "2026-10-14T13:58:56+00:00",
+        "task_revision": 14,
+        "window": 3
+      }
+    ],
+    "schema_version": 1
+  },
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "mechanical",
@@ -22,9 +40,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align the complexity-budget contract with Coordinator v0.7.4.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Complexity v0.7.4 compatibility contract",
-  "updated_at": "2026-10-14T13:46:28+00:00",
+  "updated_at": "2026-10-14T13:58:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1853"
 }
 ---
@@ -72,3 +90,5 @@ contract exposed by exact Coordinator v0.7.4 adoption.
   pycache cleanup command. Existing dependency blocker and exact PR/CI evidence remain unchanged.
 
 - 2026-10-14T13:46:28+00:00: Claimed by asb-ar1853-complexity-20261014.
+
+- 2026-10-14T13:58:56+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
