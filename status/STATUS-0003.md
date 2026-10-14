@@ -2932,11 +2932,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1921-read-scope-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create a narrow successor for AR-1920&#x27;s exact read-scope mismatch: admit specs/AR-1863.json because AR-1878 references that spec, while retaining every existing AR-1920 path and capability unchanged. Bind and preflight only the already materialized isolated state worktree under /srv/data/projects; do not widen any command, capability, or publication path. |
@@ -3909,7 +3909,7 @@ flowchart LR
         AR_1918["AR-1918 - Done"]:::status_done
         AR_1919["AR-1919 - Blocked"]:::status_blocked
         AR_1920["AR-1920 - Blocked"]:::status_blocked
-        AR_1921["AR-1921 - Open"]:::status_open
+        AR_1921["AR-1921 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4178,5 +4178,3 @@ flowchart LR
     AR_0320 --> AR_1230
     AR_0401 --> AR_0402
     AR_0401 --> AR_0403
-    AR_0401 --> AR_0405
-    AR_0401 --> AR_0505
