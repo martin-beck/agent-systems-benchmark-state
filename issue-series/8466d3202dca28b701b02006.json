@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1928",
+  "issue": {
+    "number": 10058,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10058"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Bind an immutable repair spec and envelope admitting only AR-1926 evidence and generated state projections, run bounded digest validation, restore reconcile and doctor --live, and release done only with matching evidence; otherwise record the exact fail-closed blocker.",
+      "depends_on": [],
+      "id": "AR-1928",
+      "ownership": "ASB coordination-state evidence-ledger repair only; no product changes, prior-history mutation, AR-1901 transition, network, downloads, mounts, formal, or TLC.",
+      "scope": "Create a fresh narrow state-only repair for the AR-1926 accepted evidence-ledger artifact digest mismatch. Reconcile the privacy-safe evidence artifact and its ledger through handoffctl, restore doctor --live, preserve immutable AR-1926 and AR-1901 history, and record the distinct AR-1901 cross-root blocker as a separate next action; do not reopen or rewrite prior tasks and do not run formal or TLC gates.",
+      "short_title": "Repair evidence ledger digest"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

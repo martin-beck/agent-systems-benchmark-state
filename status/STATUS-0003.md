@@ -3012,6 +3012,20 @@
 | Summary | Create a fresh successor for blocked AR-1901 using the released AR-1924 runtime/bin/python, runtime/bin/pytest, and runtime/bin/uv entrypoints. Admit only those runtime paths plus exact AR-1901 scope and focused-test paths needed to validate separated product and coordination-state roots; preserve AR-1901, AR-1881, AR-1882, and AR-1900 history and exclude network, downloads, mounts, product mutation, formal, and TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1928 — Repair evidence ledger digest
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a fresh narrow state-only repair for the AR-1926 accepted evidence-ledger artifact digest mismatch. Reconcile the privacy-safe evidence artifact and its ledger through handoffctl, restore doctor --live, preserve immutable AR-1926 and AR-1901 history, and record the distinct AR-1901 cross-root blocker as a separate next action; do not reopen or rewrite prior tasks and do not run formal or TLC gates. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3985,6 +3999,7 @@ flowchart LR
         AR_1924["AR-1924 - Done"]:::status_done
         AR_1925["AR-1925 - Blocked"]:::status_blocked
         AR_1926["AR-1926 - Done"]:::status_done
+        AR_1928["AR-1928 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4061,36 +4076,3 @@ flowchart LR
     AR_0102 --> AR_0306
     AR_0102 --> AR_0307
     AR_0102 --> AR_0308
-    AR_0102 --> AR_0309
-    AR_0102 --> AR_0317
-    AR_0102 --> AR_0318
-    AR_0102 --> AR_0503
-    AR_0102 --> AR_0601
-    AR_0102 --> AR_0603
-    AR_0102 --> AR_0857
-    AR_0102 --> AR_0863
-    AR_0102 --> AR_0875
-    AR_0102 --> AR_0876
-    AR_0102 --> AR_0901
-    AR_0102 --> AR_0905
-    AR_0102 --> AR_0908
-    AR_0102 --> AR_0909
-    AR_0103 --> AR_0105
-    AR_0103 --> AR_0202
-    AR_0103 --> AR_0204
-    AR_0103 --> AR_0305
-    AR_0103 --> AR_0306
-    AR_0103 --> AR_0307
-    AR_0103 --> AR_0308
-    AR_0103 --> AR_0309
-    AR_0103 --> AR_0401
-    AR_0103 --> AR_0601
-    AR_0103 --> AR_0603
-    AR_0103 --> AR_0702
-    AR_0103 --> AR_0703
-    AR_0103 --> AR_0704
-    AR_0103 --> AR_0707
-    AR_0103 --> AR_0830
-    AR_0103 --> AR_0848
-    AR_0103 --> AR_0857
-    AR_0103 --> AR_0863
