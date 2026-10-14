@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P1 | [AR-1925](../tasks/AR-1925.md): Run AR-1900 replacement test | Unclaimed | Create a narrow successor for blocked AR-1900 using the released AR-1924 runtime. Admit exactly runtime/bin/python, runtime/bin/pytest, runtime/bin/uv, tools/execution_envelope.py, and the focused AR-1900 replacement test scope; preserve AR-1900 and earlier histories, retain all existing lifecycle gates, and exclude network, runtime downloads, host mounts, formal, and TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
@@ -114,7 +113,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (631)
+### Done (632)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -494,3 +493,4 @@
 | P0 | [AR-1778](../tasks/AR-1778-pinned-source-build-and-project-dependencies.md): Pinned source builds and project dependencies | Unclaimed | Build supported tools from verified pinned source and materialize missing dependencies in a project-owned prefix. | Accept AR-1778 with exact-main postmerge evidence at d64ac90a; then release done after durable acceptance. |
 | P0 | [AR-1779](../tasks/AR-1779-default-usable-tool-install-command.md): Default usable tool-install command | Unclaimed | Make default asb tool install produce and verify a usable project-local supported executable tool without manual source copying. | Current origin/main da0cbe0848a10e61a2cd0b9a3144217842a3369 is green across all 10 required workflows; AR-1825 is accepted on merged PR #622 with source-executable matrix and bounded adapter/rollback/smoke negative gates. Release AR-1779 from its owner with durable exact-main and post-merge evidence. Preserve AR-1826–1832. |
 | P0 | [AR-1781](../tasks/AR-1781-external-workload-acquisition-catalog.md): External workload acquisition catalog | Unclaimed | PR #578 merged at signed local merge 4a8f0925. | Wait for all exact-main workflows at 4a8f0925 to finish green, then post-merge verify and close AR-1781. |
+| P0 | [AR-1782](../tasks/AR-1782-verified-asb-workload-installation.md): Verified asb workload installation | Unclaimed | Implement dedicated verified remote external workload installation and lifecycle through asb workload. | PR #584 rebased onto origin/main 24cb72d; exact remote head 96ea497a. Credential-free workload matrix, diagnostic contract, provenance, resolver, and clippy focused gates pass. Poll fresh exact-head CI; do not merge. |

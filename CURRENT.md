@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1919 — Repair git publication](tasks/AR-1919.md) | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. | codex-ar1919-git-publication-20261014 |
-| P1 | [AR-1926 — Repair terminal scope runtime](tasks/AR-1926.md) | Create a fresh successor for blocked AR-1901 using the released AR-1924 runtime/bin/python, runtime/bin/pytest, and runtime/bin/uv entrypoints. Admit only those runtime paths plus exact AR-1901 scope and focused-test paths needed to validate separated product and coordination-state roots; preserve AR-1901, AR-1881, AR-1882, and AR-1900 history and exclude network, downloads, mounts, product mutation, formal, and TLC. | Implement the bounded scope and record local acceptance evidence. | codex-ar1901-terminal-publication-scope-20261014 |
 
 ## Open
 

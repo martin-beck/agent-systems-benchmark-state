@@ -523,12 +523,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | codex-ar1919-git-publication-20261014 | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1926](../tasks/AR-1926.md): Repair terminal scope runtime | codex-ar1901-terminal-publication-scope-20261014 | Create a fresh successor for blocked AR-1901 using the released AR-1924 runtime/bin/python, runtime/bin/pytest, and runtime/bin/uv entrypoints. Admit only those runtime paths plus exact AR-1901 scope and focused-test paths needed to validate separated product and coordination-state roots; preserve AR-1901, AR-1881, AR-1882, and AR-1900 history and exclude network, downloads, mounts, product mutation, formal, and TLC. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (15)
 
@@ -669,3 +668,4 @@
 | P1 | [AR-1920](../tasks/AR-1920.md): Materialize publication worktree | Unclaimed | Create a narrow successor for AR-1919&#x27;s exact nonexistent .git/worktrees binding. Materialize one safe isolated coordination-state worktree under /srv/data/projects and bind it through handoffctl to the reviewed AR-1878 and AR-1886 exact heads and declared publication paths. Grant only the minimum worktree/git-metadata publication authority needed to verify the binding; reject arbitrary paths, path widening, history rewriting, and all unrelated capabilities. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1922](../tasks/AR-1922.md): Repair sandbox test runtime | Unclaimed | Repair only the bounded handoffctl execution envelope for repeated AR-1900/AR-1901/AR-1912 test-runtime failures where python, pytest, and uv are unavailable. Admit only the reviewed offline interpreter and test-tool visibility required under /srv/data/projects, preserving network denial, repository/state path scopes, and all existing lifecycle gates. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1923](../tasks/AR-1923.md): Admit sandbox test runtime | Unclaimed | Create the immutable successor for AR-1922: bind a dedicated state worktree and execution envelope admitting only the reviewed offline interpreter and pytest/uv tool paths under /srv/data/projects. Preserve network denial, product/state path scopes, AR-1922 blocked history, and formal/TLC exclusion. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1925](../tasks/AR-1925.md): Run AR-1900 replacement test | Unclaimed | Create a narrow successor for blocked AR-1900 using the released AR-1924 runtime. Admit exactly runtime/bin/python, runtime/bin/pytest, runtime/bin/uv, tools/execution_envelope.py, and the focused AR-1900 replacement test scope; preserve AR-1900 and earlier histories, retain all existing lifecycle gates, and exclude network, runtime downloads, host mounts, formal, and TLC. | Implement the bounded scope and record local acceptance evidence. |

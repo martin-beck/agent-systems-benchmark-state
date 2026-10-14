@@ -3002,11 +3002,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1901-terminal-publication-scope-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create a fresh successor for blocked AR-1901 using the released AR-1924 runtime/bin/python, runtime/bin/pytest, and runtime/bin/uv entrypoints. Admit only those runtime paths plus exact AR-1901 scope and focused-test paths needed to validate separated product and coordination-state roots; preserve AR-1901, AR-1881, AR-1882, and AR-1900 history and exclude network, downloads, mounts, product mutation, formal, and TLC. |
@@ -3984,7 +3984,7 @@ flowchart LR
         AR_1923["AR-1923 - Blocked"]:::status_blocked
         AR_1924["AR-1924 - Done"]:::status_done
         AR_1925["AR-1925 - Blocked"]:::status_blocked
-        AR_1926["AR-1926 - In progress"]:::status_in_progress
+        AR_1926["AR-1926 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4091,3 +4091,6 @@ flowchart LR
     AR_0103 --> AR_0704
     AR_0103 --> AR_0707
     AR_0103 --> AR_0830
+    AR_0103 --> AR_0848
+    AR_0103 --> AR_0857
+    AR_0103 --> AR_0863
