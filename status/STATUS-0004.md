@@ -1,5 +1,31 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1282 --> AR_1284
+    AR_1282 --> AR_1285
+    AR_1282 --> AR_1286
+    AR_1282 --> AR_1300
+    AR_1285 --> AR_1286
+    AR_1285 --> AR_1300
+    AR_1287 --> AR_1301
+    AR_1287 --> AR_1306
+    AR_1288 --> AR_1370
+    AR_1288 --> AR_1371
+    AR_1288 --> AR_1377
+    AR_1288 --> AR_1468
+    AR_1300 --> AR_1301
+    AR_1300 --> AR_1306
+    AR_1302 --> AR_1304
+    AR_1302 --> AR_1305
+    AR_1302 --> AR_1307
+    AR_1302 --> AR_1515
+    AR_1304 --> AR_1308
+    AR_1304 --> AR_1516
+    AR_1304 --> AR_1517
+    AR_1304 --> AR_1519
+    AR_1307 --> AR_1309
+    AR_1308 --> AR_1309
+    AR_1310 --> AR_1316
+    AR_1310 --> AR_1319
     AR_1314 --> AR_1315
     AR_1314 --> AR_1495
     AR_1316 --> AR_1320
@@ -1500,7 +1526,3 @@
 | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
 | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1403](../tasks/AR-1403-literature-external-qualification.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1410](../tasks/AR-1410-literature-selector-completeness.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
 | [AR-1403](../tasks/AR-1403-literature-external-qualification.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) |
-| [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md) | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
-| [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md), [AR-1407](../tasks/AR-1407-sha2-compatibility.md) |
-| [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | [AR-1414](../tasks/AR-1414-action-pin-followup.md) |
-| [AR-1407](../tasks/AR-1407-sha2-compatibility.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None |

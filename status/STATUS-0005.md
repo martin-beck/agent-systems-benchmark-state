@@ -1,5 +1,9 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md) | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
+| [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md), [AR-1407](../tasks/AR-1407-sha2-compatibility.md) |
+| [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | [AR-1414](../tasks/AR-1414-action-pin-followup.md) |
+| [AR-1407](../tasks/AR-1407-sha2-compatibility.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None |
 | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md), [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md) |
 | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md) | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) |
@@ -445,6 +449,7 @@
 | [AR-1895](../tasks/AR-1895.md) | None | None |
 | [AR-1896](../tasks/AR-1896.md) | None | None |
 | [AR-1897](../tasks/AR-1897.md) | None | None |
+| [AR-1898](../tasks/AR-1898.md) | None | None |
 
 ## Complete AR inventory
 
@@ -579,7 +584,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (96)
+### Planned (97)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -662,5 +667,3 @@
 | P1 | [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md): Add a pinned, provenance-safe CSB measurement adapter | Unclaimed | Import qualified CSB resource, system-statistics, and contention measurements into ASB. | Inventory pinned CSB signals and implement only contract-compatible adapters after the catalog is accepted. |
 | P1 | [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Unclaimed | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. |
 | P1 | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Unclaimed | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. |
-| P1 | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Unclaimed | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. |
-| P1 | [AR-1624](../tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |

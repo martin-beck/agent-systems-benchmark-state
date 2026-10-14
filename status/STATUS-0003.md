@@ -2606,6 +2606,20 @@
 | Summary | State-only coordination repair to renew an explicit implementer assignment for the AR-1896 bounded dependency admission. Preserve AR-1896 and earlier histories; reject force-clear, cross-root, network, formal/TLC, or task-scope widening. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1898 — Admit change-drift dependency
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only successor admitting exactly tools/change_drift.py for the AR-1896 focused replacement test. Preserve AR-1897, AR-1896 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3547,6 +3561,7 @@ flowchart LR
         AR_1895["AR-1895 - In progress"]:::status_in_progress
         AR_1896["AR-1896 - In progress"]:::status_in_progress
         AR_1897["AR-1897 - In progress"]:::status_in_progress
+        AR_1898["AR-1898 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4456,29 +4471,3 @@ flowchart LR
     AR_1253 --> AR_1255
     AR_1253 --> AR_1256
     AR_1254 --> AR_1255
-    AR_1282 --> AR_1284
-    AR_1282 --> AR_1285
-    AR_1282 --> AR_1286
-    AR_1282 --> AR_1300
-    AR_1285 --> AR_1286
-    AR_1285 --> AR_1300
-    AR_1287 --> AR_1301
-    AR_1287 --> AR_1306
-    AR_1288 --> AR_1370
-    AR_1288 --> AR_1371
-    AR_1288 --> AR_1377
-    AR_1288 --> AR_1468
-    AR_1300 --> AR_1301
-    AR_1300 --> AR_1306
-    AR_1302 --> AR_1304
-    AR_1302 --> AR_1305
-    AR_1302 --> AR_1307
-    AR_1302 --> AR_1515
-    AR_1304 --> AR_1308
-    AR_1304 --> AR_1516
-    AR_1304 --> AR_1517
-    AR_1304 --> AR_1519
-    AR_1307 --> AR_1309
-    AR_1308 --> AR_1309
-    AR_1310 --> AR_1316
-    AR_1310 --> AR_1319
