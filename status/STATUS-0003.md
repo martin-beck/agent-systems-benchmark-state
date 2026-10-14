@@ -2534,7 +2534,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Run bounded focused recovery scope test through AR-1892 envelope. |
 
 
 ## Dependency graph
