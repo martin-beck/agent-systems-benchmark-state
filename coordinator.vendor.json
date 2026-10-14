@@ -41,7 +41,7 @@
       "source": "formal/handoffctl/Handoffctl.cfg"
     },
     "formal/handoffctl/Handoffctl.tla": {
-      "sha256": "e81dbcffcc44d47b75e776bec1863c8c48e216a0ec944864ac597b5054019fb6",
+      "sha256": "c61971bced927dd1cc713607fcfaba1dd547069f4f996bab6a1c739d42b25ccf",
       "source": "formal/handoffctl/Handoffctl.tla"
     },
     "formal/handoffctl/HandoffctlAssumptions.cfg": {
@@ -253,7 +253,7 @@
       "source": "schema/role.schema.json"
     },
     "schema/task-record.schema.json": {
-      "sha256": "d8651b77fe59e038d085e76555232f2cb7288492fd50cb0f9e767c19cc0dd618",
+      "sha256": "0bffd0708edcf9b3dff7df99a1de4d3bed811b0a44f10fba2de4aaa30b785ff3",
       "source": "schema/task-record.schema.json"
     },
     "schema/task-spec-policy.schema.json": {
@@ -453,7 +453,7 @@
       "source": "tools/execution_abandonment.py"
     },
     "tools/execution_envelope.py": {
-      "sha256": "5fb9f1532551c078850f0df67b02511444bdbeccf7a07b65e55d978360990439",
+      "sha256": "8a1a8ce182fa3b09d40ccadab27022f833df5bd7c7dcf8e0e1105d0553e3aa88",
       "source": "tools/execution_envelope.py"
     },
     "tools/execution_lifecycle.py": {
@@ -505,7 +505,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "7e8b71aad79ec64bb3760428140f83a5c36ea06182d8f91fed0b3b4b87d731c9",
+      "sha256": "dea1726a56a7c97b508cf3bb2ae7bc63fad9bf7b6d801c2609e692f25f17f435",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -685,10 +685,12 @@
       "source": "LICENSE"
     }
   },
-  "schema_version": 1,
+  "schema_version": 2,
   "upstream": {
-    "commit": "9d56254b538274becdf74f79b9a619f69269097d",
+    "channel": "development",
+    "commit": "c604e1dd82401a3000d9ec083e7b4fba22f6d513",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
+    "tree": "d5829d685e69c8137a078d211dc158ce02ffc0f7",
     "version": "v0.7.12"
   }
 }

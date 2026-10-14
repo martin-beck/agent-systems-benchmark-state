@@ -96,6 +96,25 @@
         "execution_envelope_task_revision": {"type": "integer", "minimum": 1},
         "execution_envelope_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
         "execution_envelope": {"type": "object"},
+        "execution_envelope_replacements": {
+            "type": "array",
+            "maxItems": 16,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["old_ref", "old_revision", "old_task_revision", "old_digest", "new_ref", "new_revision", "new_digest", "replaced_at"],
+                "properties": {
+                    "old_ref": {"type": "string"},
+                    "old_revision": {"type": "integer", "minimum": 1},
+                    "old_task_revision": {"type": "integer", "minimum": 1},
+                    "old_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+                    "new_ref": {"type": "string"},
+                    "new_revision": {"type": "integer", "minimum": 1},
+                    "new_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+                    "replaced_at": {"type": "string", "format": "date-time"}
+                }
+            }
+        },
         "execution_reservation": {
             "type": "object",
             "additionalProperties": false,

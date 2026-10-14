@@ -269,6 +269,123 @@ def valid_binding(meta: dict[str, Any]) -> bool:
     )
 
 
+def replace_bound(meta: dict[str, Any], args: Any, root: Path, replaced_at: str) -> str:  # noqa: C901
+    """Admit one exact, narrower successor and retain the old identity."""
+    old = meta.get("execution_envelope")
+    if not isinstance(old, dict):
+        raise RuntimeError("replace-envelope requires an existing bound execution envelope")
+    old_ref, old_rev, old_task_rev, old_digest = (
+        meta.get("execution_envelope_ref"),
+        meta.get("execution_envelope_revision"),
+        meta.get("execution_envelope_task_revision"),
+        meta.get("execution_envelope_digest"),
+    )
+    if not (
+        isinstance(old_ref, str)
+        and type(old_rev) is int
+        and type(old_task_rev) is int
+        and isinstance(old_digest, str)
+    ):
+        raise RuntimeError("replace-envelope requires a coherent existing binding")
+    envelope, _file_digest, found = load(root, args.envelope_ref)
+    if found or envelope is None or errors(envelope):
+        raise RuntimeError("replace-envelope envelope is invalid: " + "; ".join(found))
+    if envelope.get("task") != args.task or envelope.get("spec_ref") != meta.get("spec_ref"):
+        raise RuntimeError("replace-envelope envelope task or spec does not match")
+    if envelope.get("task_revision") != meta.get("task_revision") or envelope.get(
+        "spec_revision"
+    ) != meta.get("spec_revision"):
+        raise RuntimeError("replace-envelope envelope revision does not match task specification")
+    if args.envelope_revision != envelope.get("envelope_revision"):
+        raise RuntimeError("replace-envelope envelope revision does not match")
+    actual_digest = canonical_digest(envelope)
+    if args.envelope_ref == old_ref or envelope["envelope_id"] == old["envelope_id"]:
+        raise RuntimeError("replace-envelope requires a distinct successor envelope")
+    if args.envelope_revision != old_rev + 1 or actual_digest == old_digest:
+        raise RuntimeError("replace-envelope successor revision or bytes are invalid")
+    for access in ("read", "write"):
+        if not set(envelope["path_scope"][access]).issubset(set(old["path_scope"][access])):
+            raise RuntimeError("replace-envelope cannot widen path scope")
+    for name, rule in envelope["command_classes"].items():
+        prior = old["command_classes"].get(name, {"allowed": False})
+        if rule.get("allowed") and not prior.get("allowed", False):
+            raise RuntimeError("replace-envelope cannot widen command classes")
+        if rule.get("timeout_seconds", 0) > prior.get(
+            "timeout_seconds", rule.get("timeout_seconds", 0)
+        ):
+            raise RuntimeError("replace-envelope cannot widen command timeout")
+    for name, rule in envelope.get("capabilities", {}).items():
+        if rule.get("allowed") and not old.get("capabilities", {}).get(name, {}).get(
+            "allowed", False
+        ):
+            raise RuntimeError("replace-envelope cannot widen capabilities")
+    if not set(old.get("non_goals", [])).issubset(set(envelope.get("non_goals", []))):
+        raise RuntimeError("replace-envelope cannot remove non-goals")
+    history = meta.get("execution_envelope_replacements", [])
+    if not isinstance(history, list):
+        raise RuntimeError("replace-envelope replacement evidence is invalid")
+    history.append(
+        {
+            "old_ref": old_ref,
+            "old_revision": old_rev,
+            "old_task_revision": old_task_rev,
+            "old_digest": old_digest,
+            "new_ref": args.envelope_ref,
+            "new_revision": args.envelope_revision,
+            "new_digest": actual_digest,
+            "replaced_at": replaced_at,
+        }
+    )
+    meta["execution_envelope_replacements"] = history
+    meta.update(
+        execution_envelope_ref=args.envelope_ref,
+        execution_envelope_revision=args.envelope_revision,
+        execution_envelope_task_revision=meta["task_revision"],
+        execution_envelope_digest=actual_digest,
+        execution_envelope=envelope,
+    )
+    return (
+        f"Replaced execution envelope {old_ref} with {args.envelope_ref} "
+        f"revision {args.envelope_revision}."
+    )
+
+
+def valid_replacements(value: object) -> bool:
+    """Validate bounded immutable replacement evidence."""
+    if value is None:
+        return True
+    fields = {
+        "old_ref",
+        "old_revision",
+        "old_task_revision",
+        "old_digest",
+        "new_ref",
+        "new_revision",
+        "new_digest",
+        "replaced_at",
+    }
+    return (
+        isinstance(value, list)
+        and len(value) <= 16
+        and all(
+            isinstance(item, dict)
+            and set(item) == fields
+            and isinstance(item["old_ref"], str)
+            and isinstance(item["new_ref"], str)
+            and type(item["old_revision"]) is int
+            and item["old_revision"] >= 1
+            and type(item["old_task_revision"]) is int
+            and item["old_task_revision"] >= 1
+            and DIGEST.fullmatch(str(item["old_digest"])) is not None
+            and type(item["new_revision"]) is int
+            and item["new_revision"] >= 1
+            and DIGEST.fullmatch(str(item["new_digest"])) is not None
+            and isinstance(item["replaced_at"], str)
+            for item in value
+        )
+    )
+
+
 def load(root: Path, reference: str) -> tuple[dict[str, Any] | None, str, list[str]]:
     """Load one root-bound immutable envelope and return its exact digest."""
     if not REF.fullmatch(reference) or reference.startswith(".") or ".." in Path(reference).parts:

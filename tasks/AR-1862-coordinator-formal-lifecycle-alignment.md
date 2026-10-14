@@ -5,34 +5,34 @@
   "claim_expires": "",
   "depends_on": [],
   "evidence_ledger": {
-    "candidate_digest": "sha256:8029d3b5d79f69c0d53fc600f05363cb7c85bc8c170bd26686daffec73a704e1",
+    "candidate_digest": "sha256:89a14fb72dc8fdd19ef928e61cc12398903a2c84040781ee696a70daeaf61985",
     "candidate_ref": "coordinator.vendor.json",
     "steps": [
       {
-        "candidate_digest": "sha256:8029d3b5d79f69c0d53fc600f05363cb7c85bc8c170bd26686daffec73a704e1",
+        "candidate_digest": "sha256:89a14fb72dc8fdd19ef928e61cc12398903a2c84040781ee696a70daeaf61985",
         "candidate_ref": "coordinator.vendor.json",
         "evidence_class": "mechanical",
-        "evidence_digest": "sha256:8029d3b5d79f69c0d53fc600f05363cb7c85bc8c170bd26686daffec73a704e1",
+        "evidence_digest": "sha256:89a14fb72dc8fdd19ef928e61cc12398903a2c84040781ee696a70daeaf61985",
         "evidence_ref": "coordinator.vendor.json",
         "predicate_id": "lifecycle-parity",
         "recorded_task_revision": 15,
         "status": "pass"
       },
       {
-        "candidate_digest": "sha256:8029d3b5d79f69c0d53fc600f05363cb7c85bc8c170bd26686daffec73a704e1",
+        "candidate_digest": "sha256:89a14fb72dc8fdd19ef928e61cc12398903a2c84040781ee696a70daeaf61985",
         "candidate_ref": "coordinator.vendor.json",
         "evidence_class": "mechanical",
-        "evidence_digest": "sha256:8029d3b5d79f69c0d53fc600f05363cb7c85bc8c170bd26686daffec73a704e1",
+        "evidence_digest": "sha256:89a14fb72dc8fdd19ef928e61cc12398903a2c84040781ee696a70daeaf61985",
         "evidence_ref": "coordinator.vendor.json",
         "predicate_id": "immutable-provenance",
         "recorded_task_revision": 16,
         "status": "pass"
       },
       {
-        "candidate_digest": "sha256:8029d3b5d79f69c0d53fc600f05363cb7c85bc8c170bd26686daffec73a704e1",
+        "candidate_digest": "sha256:89a14fb72dc8fdd19ef928e61cc12398903a2c84040781ee696a70daeaf61985",
         "candidate_ref": "coordinator.vendor.json",
         "evidence_class": "contract-test",
-        "evidence_digest": "sha256:4d61e8419152325f90e880811b423875064765d4276fb8c8b42c7d69ccf5ae23",
+        "evidence_digest": "sha256:d36e1c863891a38c3c794fdc2bf4dc7dcb7f98ce0c06a771f4ee31eb8bb87e65",
         "evidence_ref": "tests/test_handoffctl_vendor.py",
         "predicate_id": "qualification-floor",
         "recorded_task_revision": 17,
