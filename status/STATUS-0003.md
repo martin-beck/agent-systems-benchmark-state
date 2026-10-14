@@ -2200,6 +2200,20 @@
 | Summary | Update only schema/task-schema.json and generated validation fixtures so accepted modern task-record metadata is validated by ASB while unknown fields remain rejected; preserve ASB-specific lifecycle constraints. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1869 — Repair evidence ledger digests
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3112,6 +3126,7 @@ flowchart LR
         AR_1866["AR-1866 - Done"]:::status_done
         AR_1867["AR-1867 - In progress"]:::status_in_progress
         AR_1868["AR-1868 - In progress"]:::status_in_progress
+        AR_1869["AR-1869 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4943,27 +4958,3 @@ flowchart LR
     AR_1700 --> AR_1701
     AR_1700 --> AR_1702
     AR_1700 --> AR_1704
-    AR_1700 --> AR_1709
-    AR_1700 --> AR_1711
-    AR_1700 --> AR_1715
-    AR_1700 --> AR_1754
-    AR_1701 --> AR_1703
-    AR_1701 --> AR_1712
-    AR_1702 --> AR_1703
-    AR_1704 --> AR_1709
-    AR_1704 --> AR_1711
-    AR_1709 --> AR_1710
-    AR_1709 --> AR_1711
-    AR_1709 --> AR_1715
-    AR_1711 --> AR_1712
-    AR_1711 --> AR_1715
-    AR_1711 --> AR_1723
-    AR_1711 --> AR_1785
-    AR_1711 --> AR_1786
-    AR_1711 --> AR_1787
-    AR_1711 --> AR_1788
-    AR_1711 --> AR_1789
-    AR_1711 --> AR_1790
-    AR_1712 --> AR_1716
-    AR_1712 --> AR_1717
-    AR_1712 --> AR_1724
