@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1873 — Abandon expired executions](tasks/AR-1873.md) | Add a fail-closed abandon-expired-execution transition clearing only expired bound reservations with no live identity; classify missing/mismatched results as failed, require exact owner/revision matches, non-empty operator evidence, and immutable audit. Reject live/non-expired, malformed, matching-success, wrong-owner/revision, and missing-evidence cases. No recovery/success authorization or direct edits to AR-1773/1852/1871. | Implement the bounded scope and record local acceptance evidence. | codex-ar1873-repair-20261014 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
