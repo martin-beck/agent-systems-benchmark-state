@@ -478,7 +478,7 @@
 
 ## Complete AR inventory
 
-### In progress (21)
+### In progress (22)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -503,15 +503,15 @@
 | P1 | [AR-1903](../tasks/AR-1903.md): Admit retry-circuit dependency | codex-ar1903-retry-20261014 | State-only successor admitting exactly tools/retry_circuit.py for the AR-1902 focused replacement test. Preserve AR-1902 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1904](../tasks/AR-1904.md): Bootstrap publication scope | codex-ar1904-bootstrap-20261014 | Create a narrow successor for AR-1901&#x27;s worktree and spec-retention failure using only handoffctl-authorized state paths and commands. Retain AR-1901 immutable task, envelope, bindings, and evidence; do not perform out-of-band Git/state edits, broaden paths, or alter product files. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1905](../tasks/AR-1905.md): Admit task-spec dependency | codex-ar1905-taskspec-20261014 | State-only successor admitting exactly tools/task_spec.py for the AR-1903 focused replacement test. Preserve AR-1904, AR-1903, AR-1901 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1907](../tasks/AR-1907.md): Admit resume runtime dependency | codex-ar1907-runtime-20261014 | State-only successor admitting exactly tools/resume_card_runtime.py for the AR-1905 focused replacement test. Preserve AR-1906, AR-1905 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (4)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 | P1 | [AR-1906](../tasks/AR-1906.md): Retain envelope artifacts | Unclaimed | Create a narrow successor for bind-spec/bind-envelope candidate retention. Use only handoffctl issue-series and authorized coordinator paths; preserve AR-1901 through AR-1905 immutable records, reject direct Git/state edits and arbitrary paths, and do not alter product files. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1907](../tasks/AR-1907.md): Admit resume runtime dependency | Unclaimed | State-only successor admitting exactly tools/resume_card_runtime.py for the AR-1905 focused replacement test. Preserve AR-1906, AR-1905 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (101)
 
