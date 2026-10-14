@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "task": "AR-1874",
+  "status": "superseded",
+  "reason": "The requested v0.7.11 adoption was superseded by the already merged and verified v0.7.12 adoption on current main; no vendored downgrade or byte patch was performed.",
+  "state_head": "ccbd213b945098b350cbdb5bd72ce279adfd183f",
+  "upstream": {
+    "version": "v0.7.12",
+    "commit": "9d56254b538274becdf74f79b9a619f69269097d",
+    "manifest_sha256": "8029d3b5d79f69c0d53fc600f05363cb7c85bc8c170bd26686daffec73a704e1"
+  },
+  "superseded_target": {
+    "version": "v0.7.11",
+    "commit": "6f7cb5eeb411898c7812fdebc9da08e1f586c936"
+  },
+  "gates": {
+    "vendor_verify": "pass",
+    "vendor_focused_tests": "12 passed",
+    "generated_views": "pass",
+    "doctor_live": "pass",
+    "diff_check": "pass",
+    "schema_suite": "not_run: jsonschema dependency unavailable in this environment"
+  },
+  "prior_acceptance": [
+    "AR-1872 current-main v0.7.12 orphan-recovery acceptance",
+    "AR-1873 current-main v0.7.12 lifecycle-overlay acceptance"
+  ],
+  "privacy": "No credentials, prompts, transcripts, subprocess output, or private host paths recorded."
+}
