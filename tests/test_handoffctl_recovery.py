@@ -132,3 +132,89 @@ class HandoffRecoveryTest(unittest.TestCase):
                 BASE.argparse.Namespace(task="AR-0001", expected_revision=1, note="Recover."),
                 "recover-expired",
             )
+
+    def test_legacy_bound_reservation_requires_explicit_ack_and_exact_receipt(self) -> None:
+        reservation = {
+            "execution_id": "a" * 32,
+            "owner": "legacy-worker",
+            "task_revision": 1,
+            "envelope_digest": "sha256:" + "b" * 64,
+            "command_class": "test",
+            "scope_digest": "sha256:" + "c" * 64,
+            "argv_digest": "d" * 64,
+            "expires_at": "2000-01-01T00:00:00+00:00",
+        }
+        result = {
+            "execution_id": reservation["execution_id"],
+            "owner": reservation["owner"],
+            "envelope_digest": reservation["envelope_digest"],
+            "argv_digest": reservation["argv_digest"],
+            "classification": "EXIT",
+            "returncode": 0,
+            "recorded_at": "2026-10-13T22:00:00+00:00",
+        }
+        path = self.make_task(
+            status="in_progress",
+            owner="legacy-worker",
+            claim_expires="2000-01-01T00:00:00+00:00",
+            execution_reservation=reservation,
+            execution_result=result,
+        )
+        with patch.object(BASE.CORE, "commit", return_value=True):
+            with self.assertRaisesRegex(RuntimeError, "scope-bound claim-time worker identity"):
+                BASE.CORE.mutate(
+                    BASE.argparse.Namespace(task="AR-0001", expected_revision=1, note="Recover."),
+                    "recover-execution",
+                )
+            BASE.CORE.mutate(
+                BASE.argparse.Namespace(
+                    task="AR-0001", expected_revision=1,
+                    allow_legacy_without_identity=True,
+                    note="Confirmed this pre-identity reservation is abandoned.",
+                ),
+                "recover-execution",
+            )
+        recovered, _ = BASE.CORE.read_task(path)
+        self.assertNotIn("execution_reservation", recovered)
+
+    def test_legacy_bound_reservation_still_rejects_unknown_receipt(self) -> None:
+        reservation = {
+            "execution_id": "e" * 32,
+            "owner": "legacy-worker",
+            "task_revision": 1,
+            "envelope_digest": "sha256:" + "f" * 64,
+            "command_class": "test",
+            "scope_digest": "sha256:" + "1" * 64,
+            "argv_digest": "2" * 64,
+            "expires_at": "2000-01-01T00:00:00+00:00",
+        }
+        path = self.make_task(
+            status="in_progress",
+            owner="legacy-worker",
+            claim_expires="2000-01-01T00:00:00+00:00",
+            execution_reservation=reservation,
+            execution_result={
+                "execution_id": "3" * 32,
+                "owner": "legacy-worker",
+                "envelope_digest": reservation["envelope_digest"],
+                "argv_digest": reservation["argv_digest"],
+                "classification": "EXIT",
+                "returncode": 1,
+                "recorded_at": "2026-10-13T22:00:00+00:00",
+            },
+        )
+        with (
+            patch.object(BASE.CORE, "commit", return_value=True),
+            self.assertRaisesRegex(RuntimeError, "EXECUTION_RESULT_UNKNOWN"),
+        ):
+            BASE.CORE.mutate(
+                BASE.argparse.Namespace(
+                    task="AR-0001",
+                    expected_revision=1,
+                    allow_legacy_without_identity=True,
+                    note="Acknowledge only after exact receipt checks.",
+                ),
+                "recover-execution",
+            )
+        unchanged, _ = BASE.CORE.read_task(path)
+        self.assertIn("execution_reservation", unchanged)

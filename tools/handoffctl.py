@@ -1637,6 +1637,8 @@ def legacy_recovery_admitted(args: argparse.Namespace, meta: Meta) -> bool:
         return False
     if "claim_process" in meta:
         return False
+    if meta.get("status") == "open" and not meta.get("owner") and not meta.get("claim_expires"):
+        return True
     expiry = parse_claim_expiry(meta.get("claim_expires"))
     return not expiry > dt.datetime.now(dt.UTC)
 
@@ -2959,12 +2961,23 @@ def apply_recover_execution(args: argparse.Namespace, meta: Meta) -> str:
     valid_reservation = cast(Meta, reservation)
     if live_execution_reservation(meta) is not None:
         raise RuntimeError("EXECUTION_IN_PROGRESS: execution reservation has not expired")
-    require_claimed_worker_absent(meta)
+    # Pre-identity claims have no process scope to inspect.  Permit their
+    # recovery only with the same explicit compatibility acknowledgement used
+    # by recover-expired; reservation expiry and exact receipt matching remain
+    # mandatory safety fences.
+    legacy = legacy_recovery_admitted(args, meta)
+    if not legacy:
+        require_claimed_worker_absent(meta)
     if not execution_result_matches(valid_reservation, meta.get("execution_result")):
         raise RuntimeError(
             "EXECUTION_RESULT_UNKNOWN: reservation-specific completion evidence is unavailable"
         )
     meta.pop("execution_reservation", None)
+    if legacy and meta.get("status") == "in_progress":
+        meta["status"] = "open"
+        meta["owner"] = ""
+        meta["claim_expires"] = ""
+        meta.pop("claim_process", None)
     return f"Recovered completed execution {valid_reservation['execution_id']}."
 
 
@@ -4989,6 +5002,7 @@ def main() -> int:
     item = commands.add_parser("recover-execution")
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--allow-legacy-without-identity", action="store_true")
     item.add_argument("--note", required=True)
     item = commands.add_parser("update")
     item.add_argument("task")

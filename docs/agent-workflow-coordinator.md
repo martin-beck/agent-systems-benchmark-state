@@ -180,6 +180,12 @@ cannot bypass either live or expired execution fences. An expired execution fenc
 command-result evidence exists before clearing it. This is a safety fence, not a remote kill switch: a worker that loses authority must terminate
 its subprocess, and strict cross-host fencing still requires a target-side gateway.
 
+For a pre-identity legacy claim, use `recover-execution` with
+`--allow-legacy-without-identity` only after independently confirming both the claim and the bound
+reservation have expired. The command still requires a structurally valid reservation and an exact
+reservation-specific durable result; on success it clears the abandoned claim and reservation in one
+revision-fenced transition. The flag is rejected for records that carry any claim-time identity.
+
 Restore a verified checkpoint only from a clean descendant product checkout:
 
 ```sh
