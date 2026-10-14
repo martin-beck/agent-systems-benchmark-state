@@ -9,7 +9,7 @@
       "source": "docs/PUBLIC_CONTRACTS.md"
     },
     "docs/agent-workflow-coordinator.md": {
-      "sha256": "b1288d9102dfa86eeaace3c468a6199f8cd6f10f4a8f2d904fda51222f35a7d5",
+      "sha256": "1cda4be4180ae1c8d81dead32e5cf4536b934410002fa421aa086cae1a029965",
       "source": "docs/PROJECT_GUIDE.md"
     },
     "examples/roles/role-registry.json": {
@@ -329,7 +329,7 @@
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_handoffctl_recovery.py": {
-      "sha256": "f2e2d7fc692b1f9d55b6612a1bb340d312e42f158c342810c98e32615942cd26",
+      "sha256": "c8d1ff463aae80d17b883e174c0a294787175f0ff44bfd3917b07de4c0d2ca90",
       "source": "tests/test_handoffctl_recovery.py"
     },
     "tests/test_handoffctl_retry_recovery.py": {
@@ -497,7 +497,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "f5307c85110c8984a7c42f544e64309c6f113f2b7d050c96958361c5ae64658c",
+      "sha256": "7a682a067ee0d5d6577589beae8cb5a7c31a1c14cc3856f7457933d8c4d5360b",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
