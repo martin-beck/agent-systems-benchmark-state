@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1871",
+  "issue": {
+    "number": 10002,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10002"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Fresh signed PR from current main contains exactly reviewed PR #163 schema/test diff plus reviewed PR #165 AR-1861/AR-1862 ledger digest diff; strict/full consistency, focused schema tests, source headers, generated views, exact-head CI, independent review, merge, and post-merge ledger/schema verification pass.",
+      "depends_on": [],
+      "id": "AR-1871",
+      "ownership": "ASB state schema/task-schema.json and tests/test_task_record_schema.py plus evidence_ledger fields in tasks/AR-1861-coordinator-ar0034-repair-adoption.md and tasks/AR-1862-coordinator-formal-lifecycle-alignment.md only; integration of reviewed AR-1868 and AR-1870 changes; no direct runtime state edits.",
+      "scope": "Integrate independently reviewed AR-1868 schema vocabulary repair and AR-1870 ledger digest repair on current main, changing only schema/task-schema.json, tests/test_task_record_schema.py, and AR-1861/AR-1862 evidence_ledger blocks. This successor explicitly depends on AR-1868 and AR-1870 review evidence; do not include checkpoints, sessions, projections, runtime state, or unrelated files.",
+      "short_title": "Integrate schema ledger fix"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

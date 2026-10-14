@@ -2228,6 +2228,20 @@
 | Summary | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes, leaving schema, tests, checkpoints, sessions, predicates, and all other task fields unchanged. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1871 — Integrate schema ledger fix
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Integrate independently reviewed AR-1868 schema vocabulary repair and AR-1870 ledger digest repair on current main, changing only schema/task-schema.json, tests/test_task_record_schema.py, and AR-1861/AR-1862 evidence_ledger blocks. This successor explicitly depends on AR-1868 and AR-1870 review evidence; do not include checkpoints, sessions, projections, runtime state, or unrelated files. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3142,6 +3156,7 @@ flowchart LR
         AR_1868["AR-1868 - In progress"]:::status_in_progress
         AR_1869["AR-1869 - In progress"]:::status_in_progress
         AR_1870["AR-1870 - In progress"]:::status_in_progress
+        AR_1871["AR-1871 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4905,35 +4920,3 @@ flowchart LR
     AR_1657 --> AR_1704
     AR_1657 --> AR_1710
     AR_1658 --> AR_1659
-    AR_1658 --> AR_1663
-    AR_1658 --> AR_1667
-    AR_1658 --> AR_1674
-    AR_1658 --> AR_1675
-    AR_1658 --> AR_1676
-    AR_1658 --> AR_1697
-    AR_1659 --> AR_1660
-    AR_1659 --> AR_1667
-    AR_1659 --> AR_1674
-    AR_1659 --> AR_1697
-    AR_1660 --> AR_1667
-    AR_1660 --> AR_1668
-    AR_1660 --> AR_1697
-    AR_1661 --> AR_1663
-    AR_1661 --> AR_1665
-    AR_1663 --> AR_1665
-    AR_1663 --> AR_1666
-    AR_1665 --> AR_1666
-    AR_1665 --> AR_1670
-    AR_1665 --> AR_1679
-    AR_1665 --> AR_1680
-    AR_1665 --> AR_1681
-    AR_1665 --> AR_1682
-    AR_1667 --> AR_1668
-    AR_1668 --> AR_1677
-    AR_1670 --> AR_1671
-    AR_1671 --> AR_1684
-    AR_1674 --> AR_1675
-    AR_1674 --> AR_1676
-    AR_1674 --> AR_1690
-    AR_1675 --> AR_1676
-    AR_1675 --> AR_1690
