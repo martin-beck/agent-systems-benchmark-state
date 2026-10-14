@@ -2,8 +2,19 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "2026-10-14T00:34:15+00:00",
+  "claim_expires": "",
   "depends_on": [],
+  "execution_abandonments": [
+    {
+      "evidence_digest": "sha256:4638a831e0d1d40af2030dbc7d9c7562c66d88cddd568a05a704deb30cedea44",
+      "evidence_ref": "recovery/AR-1852-expired-20261014",
+      "execution_id": "d5f580e45bd14a78926072e512ec24e0",
+      "owner": "ar1852-env-repair-luna5",
+      "recorded_at": "2026-10-14T09:04:44+00:00",
+      "reservation_digest": "sha256:88b2d8e48bb28989a402a794e2b94a5f572f8cb24c6230052b98b4947ba983e4",
+      "schema_version": 1
+    }
+  ],
   "execution_envelope": {
     "command_classes": {
       "git-publication": {
@@ -68,16 +79,6 @@
   "execution_envelope_ref": "envelopes/AR-1852-e1.json",
   "execution_envelope_revision": 1,
   "execution_envelope_task_revision": 102,
-  "execution_reservation": {
-    "argv_digest": "8b60f655f62e725393e64a5378c7482f7b06653045ecce192765002f93ad782a",
-    "command_class": "test",
-    "envelope_digest": "sha256:2ced3a87098a532733346fc0a8ca95a633aab9d21440ac7914f4c2024b1fcda9",
-    "execution_id": "d5f580e45bd14a78926072e512ec24e0",
-    "expires_at": "2026-10-13T22:39:17+00:00",
-    "owner": "ar1852-env-repair-luna5",
-    "scope_digest": "sha256:af7f0b2bd342822f2fa8e6a9fda610570f911f30d3108379ea4184c0866727c3",
-    "task_revision": 131
-  },
   "execution_result": {
     "argv_digest": "3b17f062d953ba7b353a6538557ea2a6d8205257bbe546e8581fe5b8a930dc62",
     "classification": "EXIT",
@@ -89,7 +90,7 @@
   },
   "id": "AR-1852",
   "next_action": "Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner.",
-  "owner": "ar1852-env-repair-luna5",
+  "owner": "",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "retry_circuit": {
@@ -159,11 +160,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T22:36:18+00:00",
+  "updated_at": "2026-10-14T09:04:44+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -600,3 +601,6 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
   3b17f062d953ba7b353a6538557ea2a6d8205257bbe546e8581fe5b8a930dc62.
 
 - 2026-10-13T22:36:18+00:00: Reserved bound execution d5f580e45bd14a78926072e512ec24e0.
+
+- 2026-10-14T09:04:44+00:00: Abandoned expired execution d5f580e45bd14a78926072e512ec24e0 and
+  recovered claim formerly owned by ar1852-env-repair-luna5 after local evidence verification.
