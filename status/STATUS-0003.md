@@ -3044,11 +3044,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1929-evidence-correction-20261015 |
 | Parent | None |
 | Children | None |
 | Summary | Adopt Coordinator v0.7.14 at exact commit c40457ec0696925d021a4996fb07f44d3b067f4d through tagged vendor sync and integrity verification. Generate a fresh privacy-safe AR-1926 candidate and invoke v0.7.14 repair-predicate-ledger to append one audited correction, then reconcile and doctor --live. Preserve AR-1926/1928/1929 history and untracked AR-1919; no product, network, downloads, mounts, formal, or TLC. |
@@ -4029,12 +4029,10 @@ flowchart LR
         AR_1926["AR-1926 - Done"]:::status_done
         AR_1928["AR-1928 - Blocked"]:::status_blocked
         AR_1929["AR-1929 - Blocked"]:::status_blocked
-        AR_1930["AR-1930 - Open"]:::status_open
+        AR_1930["AR-1930 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
     AR_0001 --> AR_0101
     AR_0001 --> AR_0501
     AR_0001 --> AR_0701
-    AR_0002 --> AR_0004
-    AR_0002 --> AR_0005
