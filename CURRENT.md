@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1871 — Integrate schema ledger fix](tasks/AR-1871.md) | Integrate independently reviewed AR-1868 schema vocabulary repair and AR-1870 ledger digest repair on current main, changing only schema/task-schema.json, tests/test_task_record_schema.py, and AR-1861/AR-1862 evidence_ledger blocks. This successor explicitly depends on AR-1868 and AR-1870 review evidence; do not include checkpoints, sessions, projections, runtime state, or unrelated files. | Publish exact-head signed integration PR; obtain independent review; run green CI; merge via handoffctl; post-merge verify schema and both evidence ledgers. | codex-asb-closeout-20261014 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -18,7 +24,6 @@ Never edit this file directly.
 | P1 | [AR-1868 — Synchronize task schema vocabulary](tasks/AR-1868.md) | Update only schema/task-schema.json and generated validation fixtures so accepted modern task-record metadata is validated by ASB while unknown fields remain rejected; preserve ASB-specific lifecycle constraints. | Implement the bounded scope and record local acceptance evidence. | - |
 | P1 | [AR-1869 — Repair evidence ledger digests](tasks/AR-1869.md) | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. | Repair PR #164 scope at a fresh exact head: retain only the two AR-1861/AR-1862 evidence-ledger digest updates, restore/rebase away schema/task-record, checkpoint/session, and test changes; rerun focused/full gates and request fresh independent review. | - |
 | P1 | [AR-1870 — Repair ledger digests only](tasks/AR-1870.md) | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes, leaving schema, tests, checkpoints, sessions, predicates, and all other task fields unchanged. | Implement the bounded scope and record local acceptance evidence. | - |
-| P1 | [AR-1871 — Integrate schema ledger fix](tasks/AR-1871.md) | Integrate independently reviewed AR-1868 schema vocabulary repair and AR-1870 ledger digest repair on current main, changing only schema/task-schema.json, tests/test_task_record_schema.py, and AR-1861/AR-1862 evidence_ledger blocks. This successor explicitly depends on AR-1868 and AR-1870 review evidence; do not include checkpoints, sessions, projections, runtime state, or unrelated files. | Publish exact-head signed integration PR; obtain independent review; run green CI; merge via handoffctl; post-merge verify schema and both evidence ledgers. | - |
 
 ## Blocked
 
