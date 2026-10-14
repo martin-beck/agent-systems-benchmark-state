@@ -253,7 +253,7 @@
       "source": "schema/role.schema.json"
     },
     "schema/task-record.schema.json": {
-      "sha256": "259e99c0abafabda4aa9df3640b5e4687ad4064877642d48348d5a81208af562",
+      "sha256": "8085073849ec3265c4e2e3a01849715d8b8036c668fb420f77400e39a20cd969",
       "source": "schema/task-record.schema.json"
     },
     "schema/task-spec-policy.schema.json": {
