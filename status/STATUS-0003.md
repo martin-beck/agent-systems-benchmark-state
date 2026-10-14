@@ -2498,11 +2498,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1890-scope-admission-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create a state-only successor envelope for the focused AR-1889 recovery tests that explicitly admits tools/fast_receipt_cli.py and its required test dependencies. Preserve AR-1889 and AR-1878 through AR-1888; do not bypass the expired-claim blocker or run formal/TLC. |
@@ -3455,7 +3455,7 @@ flowchart LR
         AR_1887["AR-1887 - In progress"]:::status_in_progress
         AR_1888["AR-1888 - In progress"]:::status_in_progress
         AR_1889["AR-1889 - In progress"]:::status_in_progress
-        AR_1890["AR-1890 - In progress"]:::status_in_progress
+        AR_1890["AR-1890 - Blocked"]:::status_blocked
         AR_1891["AR-1891 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -4559,3 +4559,4 @@ flowchart LR
     AR_1365 --> AR_1373
     AR_1366 --> AR_1367
     AR_1366 --> AR_1368
+    AR_1366 --> AR_1369
