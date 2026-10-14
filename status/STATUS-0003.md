@@ -2918,11 +2918,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1920-worktree-binding-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create a narrow successor for AR-1919&#x27;s exact nonexistent .git/worktrees binding. Materialize one safe isolated coordination-state worktree under /srv/data/projects and bind it through handoffctl to the reviewed AR-1878 and AR-1886 exact heads and declared publication paths. Grant only the minimum worktree/git-metadata publication authority needed to verify the binding; reject arbitrary paths, path widening, history rewriting, and all unrelated capabilities. |
@@ -3894,7 +3894,7 @@ flowchart LR
         AR_1917["AR-1917 - Open"]:::status_open
         AR_1918["AR-1918 - Done"]:::status_done
         AR_1919["AR-1919 - Blocked"]:::status_blocked
-        AR_1920["AR-1920 - In progress"]:::status_in_progress
+        AR_1920["AR-1920 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4194,3 +4194,4 @@ flowchart LR
     AR_0501 --> AR_0879
     AR_0502 --> AR_0503
     AR_0502 --> AR_0516
+    AR_0502 --> AR_0517
