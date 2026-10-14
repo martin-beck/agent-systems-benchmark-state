@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1891",
+  "issue": {
+    "number": 10022,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10022"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Schema-valid task/envelope; exact AR-1878 task/revision, reservation, envelope, result, expiry, terminal EXIT, absent worker/claim_process, and operator evidence are required. Focused tests reject active/unexpired, mismatched, malformed/missing, cross-root, arbitrary-target, force-clear, and normal-publication inputs. Preserve AR-1878 through AR-1890; record doctor/reconciliation evidence; no formal/TLC claims.",
+      "depends_on": [],
+      "id": "AR-1891",
+      "ownership": "ASB coordination-state recovery-mode reconciliation and focused handoffctl tests only; preserve AR-1878 through AR-1890, product/vendor/publication boundaries, and all formal/TLC exclusions.",
+      "scope": "Add state-only recovery reconciliation for expired AR-1878 terminal-result evidence. Require exact target/revision/reservation/result/envelope, expiry, terminal EXIT, absent worker/claim_process, and operator evidence; immutable audit then existing recovery. Reject arbitrary, active/unexpired, mismatched, malformed/missing, cross-root, force-clear, and publication inputs. Preserve AR-1878 through AR-1890; no product/vendor/formal/TLC state.",
+      "short_title": "Reconcile terminal recovery"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

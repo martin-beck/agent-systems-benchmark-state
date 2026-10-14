@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md) | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md) | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) |
+| [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md), [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) |
 | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) | [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) |
 | [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
 | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) | [AR-1403](../tasks/AR-1403-literature-external-qualification.md), [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md), [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md), [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) |
@@ -425,6 +427,7 @@
 | [AR-1888](../tasks/AR-1888.md) | None | None |
 | [AR-1889](../tasks/AR-1889.md) | None | None |
 | [AR-1890](../tasks/AR-1890.md) | None | None |
+| [AR-1891](../tasks/AR-1891.md) | None | None |
 
 ## Complete AR inventory
 
@@ -553,7 +556,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (95)
+### Planned (96)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -649,6 +652,7 @@
 | P1 | [AR-1831](../tasks/AR-1831-explicit-config-cli-tui-docs.md): Align CLI, TUI handoff, and documentation to explicit config workflow | Unclaimed | Make every CLI, TUI handoff, help page, completion, and example teach the explicit setup-output and plan-config workflow. | Align CLI help, human output, completions, TUI handoff, examples, and migration documentation to the explicit setup-config route. |
 | P1 | [AR-1848](../tasks/AR-1848-graph-extraction-qualification.md): Qualify ASB dataflow graph extraction end to end | Unclaimed | Qualify reproducible complete ASB dataflow extraction, DOT/SVG generation, privacy, and paired documentation. | Promote after AR-1847; run clean-checkout extraction and cross-check graph artifacts against all generated registries and CLI options. |
 | P1 | [AR-1854](../tasks/AR-1854-v074-compatibility-integration.md): v0.7.4 compatibility integration qualification | Unclaimed | Integrate and qualify the Coordinator v0.7.4 compatibility repairs. | Promote only after AR-1851, AR-1852 and AR-1853 merge; combine their exact reviewed heads and run the strict/formal integration gates. |
+| P1 | [AR-1891](../tasks/AR-1891.md): Reconcile terminal recovery | Unclaimed | Add state-only recovery reconciliation for expired AR-1878 terminal-result evidence. Require exact target/revision/reservation/result/envelope, expiry, terminal EXIT, absent worker/claim_process, and operator evidence; immutable audit then existing recovery. Reject arbitrary, active/unexpired, mismatched, malformed/missing, cross-root, force-clear, and publication inputs. Preserve AR-1878 through AR-1890; no product/vendor/formal/TLC state. | Implement the bounded scope and record local acceptance evidence. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
@@ -666,8 +670,3 @@
 | P0 | [AR-0001](../tasks/AR-0001-repository-bootstrap.md): Bootstrap public repositories | Unclaimed | Establish both public MIT repositories, Rust workspace, coordination reuse and evidence-backed plans. | No action; foundation verified. Begin AR-0002, AR-0003, AR-0101, AR-0501 or AR-0701 through the coordinator. |
 | P0 | [AR-0105](../tasks/AR-0105-sandbox-test-portability.md): Repair sandbox test target portability | Unclaimed | Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work. | Release AR-0105 done after repaired exact-main local/hosted/state validation. |
 | P0 | [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md): Define runtime bundle manifest and verifier | Unclaimed | Define common signed runtime bundle manifests and offline verification. | Completed; retain Linux/operator-owned acquisition limits. |
-| P0 | [AR-0506](../tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | Unclaimed | Qualify replay conformance for OpenCode. | Monitor rerun of exact-head x86 Rust job after investigated bounded ETXTBSY fixture flake; merge only after every workflow is green. |
-| P0 | [AR-0507](../tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | Unclaimed | Qualify replay conformance for OpenDesk. | Independently review immutable head 24a5519ef006c063f3a8d6e81d0928f2e9e986f9/tree 96f01bd39cd5e75a70d3618cec55e603b9643d38; publish only after approval, then require exact-head x86_64/aarch64 quality/formal/fault CI. |
-| P0 | [AR-0508](../tasks/AR-0508-replay-aider.md): Qualify aider replay | Unclaimed | Qualify replay conformance for aider. | Await independent immutable review of exact ec0a2930690c108987b4a867632316651282cc97; if approved, publish with an exact absent-ref lease, open focused PR, and require exact-head CI before integration. |
-| P0 | [AR-0509](../tasks/AR-0509-replay-codex.md): Qualify Codex replay | Unclaimed | Qualify replay conformance for Codex. | Monitor PR #45 exact d086fec checks; investigate any failure, then integrate only after every required workflow is green. |
-| P0 | [AR-0510](../tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | Unclaimed | Qualify replay conformance for Gemini. | Independent immutable review of one-path timing repair 1366ad3bd03fe8806e80223a55989e34fd72245a before publication. |
