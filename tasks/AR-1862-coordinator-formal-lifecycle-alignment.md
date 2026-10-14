@@ -32,7 +32,7 @@
         "candidate_digest": "sha256:8029d3b5d79f69c0d53fc600f05363cb7c85bc8c170bd26686daffec73a704e1",
         "candidate_ref": "coordinator.vendor.json",
         "evidence_class": "contract-test",
-        "evidence_digest": "sha256:ca303ecb17caf12a74056377ad8fec420e0f52125658ba80603909184ed2a196",
+        "evidence_digest": "sha256:3476d9728c964f87c5860b2c61afbed03befc63cf6e149fbfd2db89881c830d0",
         "evidence_ref": "tests/test_handoffctl_vendor.py",
         "predicate_id": "qualification-floor",
         "recorded_task_revision": 17,
