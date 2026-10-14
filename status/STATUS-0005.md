@@ -390,12 +390,11 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | codex-ar1863-catalog-repair-20261014 | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded control diagnostic catalog repair and record local acceptance evidence after the coordinator binds the reviewed source-write successor envelope; do not change AR-1787 or AR-1835. |
-| P1 | [AR-1876](../tasks/AR-1876.md): Replace stale AR-1863 envelope | codex-ar1876-envelope-replace-20261014 | Provide an explicit fail-closed coordinator transition for replacing AR-1863&#x27;s already-bound obsolete execution envelope with the reviewed successor AR-1863-e3, requiring exact task revision, active owner, no live execution reservation, immutable replacement evidence, and preserving all existing path and non-goal restrictions. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1878](../tasks/AR-1878.md): Reissue diagnostic catalog task | asb-ar1878-diagnostic-successor-20261014 | Create a fresh successor task for the reviewed control diagnostic catalog repair with a new source-write execution envelope scoped only to the catalog files and required tests/publication. Preserve AR-1863 as immutable blocked history; do not widen or mutate its bound envelope, alter AR-1787/AR-1835, or weaken coordinator gates. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (5)
@@ -668,3 +667,5 @@
 | P0 | [AR-1140](../tasks/AR-1140.md): CLI setup wizard | Unclaimed | Guide CLI setup and reconfiguration. | Wait for PR #186 exact-head CI and independent review on 1e3212b; do not merge. |
 | P0 | [AR-1150](../tasks/AR-1150.md): Recording campaigns | Unclaimed | Record response cassettes. | Post-merge verification complete: PR #182 merged at a83ba8e; exact-main tree matches feature tree, focused replay tests and full locked offline workspace tests passed, worktree clean. Release AR-1150 as done. |
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Monitor PR #225 fresh gates at exact head 20db76e; after green review/merge, implement AR-1160 runtime campaign launch/progress/cancel, cassette coverage reconciliation, and offline-default activation. |
+| P0 | [AR-1190](../tasks/AR-1190.md): Authenticated agent catalog control | Unclaimed | Expose a verified, capability-aware local-agent catalog to asb-tui. | Wait for exact-main post-merge assurance on 748c16ba67b9cff5a08558784dd183d020a1f2d4, then qualify ASB v1.4 fixtures against asb-tui PR #86. |
+| P0 | [AR-1191](../tasks/AR-1191.md): Verified local-agent lifecycle | Unclaimed | Install, activate, verify and recover supported local benchmark agents safely. | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. |

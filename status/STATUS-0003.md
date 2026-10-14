@@ -2302,11 +2302,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | superseded |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1876-envelope-replace-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Provide an explicit fail-closed coordinator transition for replacing AR-1863&#x27;s already-bound obsolete execution envelope with the reviewed successor AR-1863-e3, requiring exact task revision, active owner, no live execution reservation, immutable replacement evidence, and preserving all existing path and non-goal restrictions. |
@@ -3259,7 +3259,7 @@ flowchart LR
         AR_1873["AR-1873 - Done"]:::status_done
         AR_1874["AR-1874 - Superseded"]:::status_superseded
         AR_1875["AR-1875 - Superseded"]:::status_superseded
-        AR_1876["AR-1876 - In progress"]:::status_in_progress
+        AR_1876["AR-1876 - Superseded"]:::status_superseded
         AR_1877["AR-1877 - Done"]:::status_done
         AR_1878["AR-1878 - In progress"]:::status_in_progress
     end
@@ -4802,3 +4802,4 @@ flowchart LR
     AR_1567 --> AR_1572
     AR_1567 --> AR_1634
     AR_1568 --> AR_1569
+    AR_1568 --> AR_1570
