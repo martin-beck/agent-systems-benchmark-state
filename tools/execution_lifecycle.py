@@ -114,7 +114,15 @@ def abandon(runtime: Any, args: Any, meta: Meta) -> str:
         raise RuntimeError("execution abandonment reservation identity does not match")
     if runtime.live_execution_reservation(meta) is not None:
         raise RuntimeError("EXECUTION_IN_PROGRESS: execution reservation has not expired")
-    runtime.require_claimed_worker_absent(meta)
+    # Pre-identity reservations can be recovered only with explicit operator
+    # acknowledgement; all exact reservation, expiry, result, and evidence
+    # checks below remain mandatory.
+    if not (
+        getattr(args, "allow_legacy_without_identity", False)
+        and "claim_process" not in meta
+        and _expired_claim(meta)
+    ):
+        runtime.require_claimed_worker_absent(meta)
     if runtime.execution_result_matches(valid_reservation, meta.get("execution_result")):
         raise RuntimeError("execution abandonment rejects a reservation with a durable result")
     try:
@@ -140,3 +148,15 @@ def abandon(runtime: Any, args: Any, meta: Meta) -> str:
         f"Abandoned expired execution {args.execution_id} and recovered claim formerly owned by "
         f"{previous_owner} after local evidence verification."
     )
+
+
+def _expired_claim(meta: Meta) -> bool:
+    """Return whether the task claim is durably expired for legacy recovery."""
+    value = meta.get("claim_expires")
+    if not isinstance(value, str) or not value:
+        return False
+    try:
+        expiry = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    return expiry.tzinfo is not None and expiry <= dt.datetime.now(dt.UTC)

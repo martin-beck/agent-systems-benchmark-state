@@ -258,6 +258,49 @@ class LifecycleRecoveryCoverageTests(unittest.TestCase):
                 argparse.Namespace(expected_revision=7), active_meta()
             )
 
+    def test_abandon_expired_identityless_legacy_reservation_requires_opt_in(self) -> None:
+        digest = "sha256:" + "e" * 64
+        reservation = {
+            "execution_id": "f" * 32,
+            "owner": "legacy-worker",
+            "task_revision": 7,
+            "envelope_digest": digest,
+            "command_class": "test",
+            "scope_digest": digest,
+            "argv_digest": "a" * 64,
+            "expires_at": "2000-01-01T00:00:00+00:00",
+        }
+        meta = active_meta(
+            owner="legacy-worker",
+            claim_expires="2000-01-01T00:00:00+00:00",
+            execution_reservation=reservation,
+            execution_result={
+                "execution_id": "0" * 32,
+                "owner": "legacy-worker",
+                "envelope_digest": digest,
+                "argv_digest": "a" * 64,
+                "classification": "EXIT",
+                "returncode": 1,
+                "recorded_at": "2000-01-01T00:00:00+00:00",
+            },
+        )
+        args = argparse.Namespace(
+            expected_revision=7,
+            execution_id=reservation["execution_id"],
+            evidence_ref="recovery/legacy-reservation",
+            evidence_digest="sha256:" + "b" * 64,
+            allow_legacy_without_identity=False,
+        )
+        with self.assertRaisesRegex(RuntimeError, "scope-bound claim-time"):
+            handoffctl.apply_abandon_execution(args, meta)
+        args.allow_legacy_without_identity = True
+        message = handoffctl.apply_abandon_execution(args, meta)
+        self.assertIn("Abandoned expired execution", message)
+        self.assertEqual("open", meta["status"])
+        self.assertEqual("", meta["owner"])
+        self.assertNotIn("execution_reservation", meta)
+        self.assertEqual(1, len(meta["execution_abandonments"]))
+
     def test_accept_requires_current_active_spec_and_admitted_evidence(self) -> None:
         args = argparse.Namespace(
             task="AR-1793",

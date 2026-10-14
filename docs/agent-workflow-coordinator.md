@@ -184,6 +184,11 @@ result, retains a bounded structured abandonment audit record, and appends the n
 history; it does not edit task files directly or authorize a live worker. This is a safety fence, not a remote kill switch: a worker that loses authority must terminate
 its subprocess, and strict cross-host fencing still requires a target-side gateway.
 
+For reservations created before claim-time worker identity was available, the operator may additionally
+pass `--allow-legacy-without-identity`. This explicit acknowledgement is accepted only for an
+identity-less, already-expired claim; exact reservation identity, structural validation, expiry, result
+mismatch, and bounded evidence checks remain fail-closed.
+
 Execution envelopes are offline by default. A version-2 envelope may explicitly grant the
 `git_metadata` and `network` capabilities, but only `git-publication` may use them. The network
 capability also requires the invocation flag `--authorize-external-side-effects`; the sandbox then

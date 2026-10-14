@@ -4987,6 +4987,7 @@ def main() -> int:
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
     item.add_argument("--execution-id", required=True)
+    item.add_argument("--allow-legacy-without-identity", action="store_true")
     item.add_argument("--evidence-ref", required=True)
     item.add_argument("--evidence-digest", required=True)
     item.add_argument("--note", required=True)
