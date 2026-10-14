@@ -2680,11 +2680,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1903-retry-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/retry_circuit.py for the AR-1902 focused replacement test. Preserve AR-1902 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -3639,7 +3639,7 @@ flowchart LR
         AR_1900["AR-1900 - In progress"]:::status_in_progress
         AR_1901["AR-1901 - In progress"]:::status_in_progress
         AR_1902["AR-1902 - In progress"]:::status_in_progress
-        AR_1903["AR-1903 - Open"]:::status_open
+        AR_1903["AR-1903 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4401,5 +4401,3 @@ flowchart LR
     AR_1170 --> AR_1032
     AR_1170 --> AR_1035
     AR_1170 --> AR_1180
-    AR_1180 --> AR_0809
-    AR_1190 --> AR_1191
