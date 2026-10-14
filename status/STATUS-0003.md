@@ -2890,11 +2890,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1918-rustls-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Repair PR #635&#x27;s hosted Policy, coverage, and supply-chain failure by updating only the Rust dependency manifests and lockfile needed to raise rustls from 0.23.45 to at least 0.23.46 and clear RUSTSEC-2026-0347, RUSTSEC-2026-0348, and RUSTSEC-2026-0349. Preserve advisory gates, offline and locked resolution, unrelated source and state history, and the explicit exclusion of TLC/formal checks. |
@@ -3864,7 +3864,7 @@ flowchart LR
         AR_1915["AR-1915 - Blocked"]:::status_blocked
         AR_1916["AR-1916 - Blocked"]:::status_blocked
         AR_1917["AR-1917 - In progress"]:::status_in_progress
-        AR_1918["AR-1918 - Open"]:::status_open
+        AR_1918["AR-1918 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4222,4 +4222,3 @@ flowchart LR
     AR_0507 --> AR_0515
     AR_0508 --> AR_0515
     AR_0508 --> AR_0850
-    AR_0509 --> AR_0515

@@ -501,7 +501,7 @@
 
 ## Complete AR inventory
 
-### In progress (6)
+### In progress (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -511,8 +511,9 @@
 | P1 | [AR-1889](../tasks/AR-1889.md): Recover expired claim | codex-ar1889-recovery-20261014 | Add only the state-side recovery capability needed to clear AR-1878&#x27;s exact expired reservation with matching durable terminal EXIT evidence. Scope tools/handoffctl.py, execution lifecycle, and focused tests; preserve AR-1878 through AR-1888, reject force-clear/cross-root paths, and do not run formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1892](../tasks/AR-1892.md): Admit observation scope | codex-ar1892-observation-scope-20261014 | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. | Run bounded focused recovery scope test through AR-1892 envelope. |
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | codex-ar1917-recovery-publication-20261014 | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1918](../tasks/AR-1918.md): Repair rustls advisories | codex-ar1918-rustls-20261014 | Repair PR #635&#x27;s hosted Policy, coverage, and supply-chain failure by updating only the Rust dependency manifests and lockfile needed to raise rustls from 0.23.45 to at least 0.23.46 and clear RUSTSEC-2026-0347, RUSTSEC-2026-0348, and RUSTSEC-2026-0349. Preserve advisory gates, offline and locked resolution, unrelated source and state history, and the explicit exclusion of TLC/formal checks. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (16)
+### Open (15)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -531,7 +532,6 @@
 | P1 | [AR-1907](../tasks/AR-1907.md): Admit resume runtime dependency | Unclaimed | State-only successor admitting exactly tools/resume_card_runtime.py for the AR-1905 focused replacement test. Preserve AR-1906, AR-1905 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1908](../tasks/AR-1908.md): Admit run-command dependency | Unclaimed | State-only successor admitting exactly tools/run_command.py for the AR-1907 focused replacement test. Preserve AR-1907, AR-1906 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | Unclaimed | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1918](../tasks/AR-1918.md): Repair rustls advisories | Unclaimed | Repair PR #635&#x27;s hosted Policy, coverage, and supply-chain failure by updating only the Rust dependency manifests and lockfile needed to raise rustls from 0.23.45 to at least 0.23.46 and clear RUSTSEC-2026-0347, RUSTSEC-2026-0348, and RUSTSEC-2026-0349. Preserve advisory gates, offline and locked resolution, unrelated source and state history, and the explicit exclusion of TLC/formal checks. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (112)
 
