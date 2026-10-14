@@ -66,7 +66,9 @@ class TaskRecordSchemaTests(unittest.TestCase):
         self.state_validator = Draft202012Validator(state_schema, format_checker=FormatChecker())
 
     def test_execution_retry_and_standard_metadata_are_accepted(self) -> None:
-        self.validator.validate(record())
+        coordinator_record = copy.deepcopy(record())
+        coordinator_record["observed_dirty"] = False
+        self.validator.validate(coordinator_record)
         self.state_validator.validate(record())
 
     def test_execution_result_and_retry_records_are_accepted(self) -> None:
@@ -101,7 +103,9 @@ class TaskRecordSchemaTests(unittest.TestCase):
                 "checkpoint_commit": "0123456789abcdef0123456789abcdef01234567",
             }
         ]
-        self.validator.validate(value)
+        coordinator_value = copy.deepcopy(value)
+        coordinator_value["observed_dirty"] = False
+        self.validator.validate(coordinator_value)
         self.state_validator.validate(value)
 
     def test_unknown_execution_field_is_rejected(self) -> None:
