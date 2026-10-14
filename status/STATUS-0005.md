@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md) | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md), [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md) |
 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md) | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md), [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md), [AR-1523](../tasks/AR-1523.md), [AR-1524](../tasks/AR-1524.md), [AR-1525](../tasks/AR-1525.md), [AR-1526](../tasks/AR-1526.md) |
 | [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md) | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md), [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md) | None |
 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md) | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md), [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md), [AR-1526](../tasks/AR-1526.md) |
@@ -386,13 +387,14 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | codex-ar1863-catalog-repair-20261014 | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded control diagnostic catalog repair and record local acceptance evidence after the coordinator binds the reviewed source-write successor envelope; do not change AR-1787 or AR-1835. |
 | P1 | [AR-1875](../tasks/AR-1875.md): Repair AR-1863 source-write envelope | codex-ar1875-envelope-repair-20261014 | Create and bind a successor AR-1863 execution envelope that authorizes only the reviewed diagnostic-catalog source-write and publication paths, preserving the existing AR-1863 non-goals, path scope, fail-closed gates, and exact current-main review evidence. Do not modify AR-1787 or AR-1835. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (6)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -401,7 +403,6 @@
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 | P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | Unclaimed | Align role-store authorization tests with Coordinator v0.7.4. | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | Unclaimed | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
-| P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | Unclaimed | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded control diagnostic catalog repair and record local acceptance evidence after the coordinator binds the reviewed source-write successor envelope; do not change AR-1787 or AR-1835. |
 
 ### Blocked (92)
 
@@ -667,4 +668,3 @@
 | P0 | [AR-1190](../tasks/AR-1190.md): Authenticated agent catalog control | Unclaimed | Expose a verified, capability-aware local-agent catalog to asb-tui. | Wait for exact-main post-merge assurance on 748c16ba67b9cff5a08558784dd183d020a1f2d4, then qualify ASB v1.4 fixtures against asb-tui PR #86. |
 | P0 | [AR-1191](../tasks/AR-1191.md): Verified local-agent lifecycle | Unclaimed | Install, activate, verify and recover supported local benchmark agents safely. | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. |
 | P0 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Unclaimed | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Completed: PR #170 merged; stale duplicate PR #171 requires authorized cleanup. |
-| P0 | [AR-1198](../tasks/AR-1198.md): Canonical authenticated agent-catalog digest | Unclaimed | Define and enforce the canonical authenticated ASB v1.4 agent-catalog digest. | Independently review PR #174 at exact head 3cc8fa1a27587642bda5100f45140c11f1fd0c6d, run cross-repository vector checks with asb-tui AR-1195, then merge only after all exact-head checks are green. |
