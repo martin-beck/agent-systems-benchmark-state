@@ -2862,11 +2862,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-ar1916-ledger-repair-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in ASB tasks AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes after AR-1878 recovery; preserve every other task field and all historical records, and do not run formal or TLC checks. |
@@ -3834,7 +3834,7 @@ flowchart LR
         AR_1913["AR-1913 - Planned"]:::status_planned
         AR_1914["AR-1914 - Planned"]:::status_planned
         AR_1915["AR-1915 - Blocked"]:::status_blocked
-        AR_1916["AR-1916 - Open"]:::status_open
+        AR_1916["AR-1916 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4230,5 +4230,3 @@ flowchart LR
     AR_0801 --> AR_0808
     AR_0801 --> AR_0820
     AR_0801 --> AR_0840
-    AR_0801 --> AR_0842
-    AR_0801 --> AR_0847
