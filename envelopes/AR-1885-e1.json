@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1885-e1",
+  "envelope_revision": 2,
+  "task": "AR-1885",
+  "task_revision": 5,
+  "spec_ref": "specs/AR-1885.json",
+  "spec_revision": 1,
+  "outputs": [{"id": "vendor-adoption", "description": "Verify the exact scoped development vendor snapshot."}, {"id": "verification", "description": "Record non-formal compatibility and post-adoption state evidence."}, {"id": "publication", "description": "Verify signed review, CI, merge, and post-merge evidence."}],
+  "non_goals": ["Do not alter AR-1878, AR-1881, AR-1882, AR-1883, or AR-1884.", "Do not add Agent Relay dependencies or run formal/TLC qualification.", "Do not change ASB product files, task history, or unrelated vendor paths."],
+  "path_scope": {"read": ["coordinator.vendor.json", "vendor/agent-workflow-coordinator", "tools/handoffctl_vendor.py", "docs", "tests", "schema", "tasks/AR-1885.md", "specs/AR-1885.json", "envelopes/AR-1885-e1.json"], "write": ["coordinator.vendor.json", "vendor/agent-workflow-coordinator", "tools/handoffctl_vendor.py", "quality", "specs", "envelopes"]},
+  "command_classes": {"read": {"allowed": true}, "test": {"allowed": true, "timeout_seconds": 900}, "source-write": {"allowed": true, "timeout_seconds": 900}, "git-publication": {"allowed": true, "timeout_seconds": 900}},
+  "evidence": [{"id": "vendor-adoption", "class": "mechanical", "required": true}, {"id": "compatibility", "class": "contract-test", "required": true}, {"id": "publication", "class": "hosted", "required": true}],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}, {"id": "formal", "kind": "deny"}, {"id": "relay", "kind": "deny"}]
+}

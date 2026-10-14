@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1885.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "upstream-cwd-routing", "description": "The vendor snapshot is bound to upstream commit 2493c67f2ea162885b15c648fb3d626c84732170 and verified byte-for-byte."},
+    {"id": "compatibility-positive", "description": "Focused compatibility coverage proves bound commands execute from the product worktree in a multi-root state/product setup."},
+    {"id": "compatibility-negative", "description": "Focused tests reject unbound or wrong-cwd execution and preserve fail-closed identity checks."},
+    {"id": "scope-preservation", "description": "Only the allowlisted coordinator vendor and generated integrity paths change; AR-1878 through AR-1884 and formal/TLC inputs remain unchanged."},
+    {"id": "post-adoption", "description": "Vendor verification, non-formal state tests, generated-view checks, exact-head review/CI, merge, and post-merge doctor pass."}
+  ],
+  "definition_of_done": ["Sync-development installs the exact upstream capability and vendor verification passes.", "Focused positive/negative cwd-routing compatibility tests and non-formal ASB state gates pass.", "The scoped signed+DCO change is reviewed, merged, and post-merge doctor evidence is recorded."],
+  "inputs": [{"id": "upstream", "description": "Clean Coordinator checkout at exact commit 2493c67f2ea162885b15c648fb3d626c84732170."}, {"id": "asb-state", "description": "Current ASB state main and its v0.7.12 vendor manifest."}],
+  "outputs": [{"id": "vendor-adoption", "description": "Exact development vendor snapshot and manifest for the cwd-routing capability."}, {"id": "verification", "description": "Privacy-safe non-formal compatibility, vendor, generated-view, doctor, review, CI, merge, and post-merge evidence."}],
+  "allowed_tools": ["git", "gh", "python", "uv", "tools/handoffctl", "tools/handoffctl_vendor.py", "upstream-sync-development"],
+  "forbidden_tools": ["tlc", "agent-relay", "history-rewrite", "direct-task-edit-after-bootstrap", "worker-checkout-as-vendor-source", "runtime-download"],
+  "required_evidence_classes": ["contract-test", "mechanical", "hosted"],
+  "gates": [{"id": "vendor-verify", "description": "Every declared vendored blob, mode, digest, runtime dependency, and manifest identity verifies exactly."}, {"id": "non-formal-state", "description": "Focused coordinator compatibility, schema, privacy, generated-view, and doctor gates pass without formal/TLC qualification."}, {"id": "independent-review", "description": "A separate worker approves the exact signed+DCO candidate and hosted pre/post-merge verification is green."}]
+}
