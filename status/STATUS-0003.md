@@ -2638,11 +2638,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1900-envelope-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/execution_envelope.py for the AR-1899 focused replacement test. Preserve AR-1899 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -3594,7 +3594,7 @@ flowchart LR
     end
     subgraph series_19["19 - Additional work"]
         direction TB
-        AR_1900["AR-1900 - Open"]:::status_open
+        AR_1900["AR-1900 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4445,5 +4445,3 @@ flowchart LR
     AR_1238 --> AR_1269
     AR_1238 --> AR_1270
     AR_1238 --> AR_1271
-    AR_1238 --> AR_1272
-    AR_1238 --> AR_1273
