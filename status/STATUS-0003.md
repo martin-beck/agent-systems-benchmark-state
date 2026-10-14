@@ -2886,6 +2886,20 @@
 | Summary | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1918 — Repair rustls advisories
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair PR #635&#x27;s hosted Policy, coverage, and supply-chain failure by updating only the Rust dependency manifests and lockfile needed to raise rustls from 0.23.45 to at least 0.23.46 and clear RUSTSEC-2026-0347, RUSTSEC-2026-0348, and RUSTSEC-2026-0349. Preserve advisory gates, offline and locked resolution, unrelated source and state history, and the explicit exclusion of TLC/formal checks. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3850,6 +3864,7 @@ flowchart LR
         AR_1915["AR-1915 - Blocked"]:::status_blocked
         AR_1916["AR-1916 - Blocked"]:::status_blocked
         AR_1917["AR-1917 - In progress"]:::status_in_progress
+        AR_1918["AR-1918 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4208,35 +4223,3 @@ flowchart LR
     AR_0508 --> AR_0515
     AR_0508 --> AR_0850
     AR_0509 --> AR_0515
-    AR_0510 --> AR_0515
-    AR_0511 --> AR_0515
-    AR_0512 --> AR_0515
-    AR_0513 --> AR_0515
-    AR_0514 --> AR_0515
-    AR_0517 --> AR_0518
-    AR_0517 --> AR_0520
-    AR_0518 --> AR_0519
-    AR_0601 --> AR_0405
-    AR_0601 --> AR_0602
-    AR_0601 --> AR_0604
-    AR_0601 --> AR_1015
-    AR_0602 --> AR_1015
-    AR_0603 --> AR_0601
-    AR_0604 --> AR_0602
-    AR_0604 --> AR_1015
-    AR_0701 --> AR_0317
-    AR_0701 --> AR_0702
-    AR_0701 --> AR_0703
-    AR_0701 --> AR_0704
-    AR_0701 --> AR_0707
-    AR_0701 --> AR_0820
-    AR_0701 --> AR_0848
-    AR_0701 --> AR_1007
-    AR_0702 --> AR_0807
-    AR_0702 --> AR_0813
-    AR_0702 --> AR_0816
-    AR_0702 --> AR_0903
-    AR_0702 --> AR_0907
-    AR_0702 --> AR_1006
-    AR_0704 --> AR_0705
-    AR_0704 --> AR_0706

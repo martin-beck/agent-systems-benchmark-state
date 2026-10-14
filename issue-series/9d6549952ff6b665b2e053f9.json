@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1918",
+  "issue": {
+    "number": 10049,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10049"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Fresh clean ASB checkout has the minimal dependency repair; cargo tests, clippy, coverage, policy and supply-chain checks pass with no advisory waiver; signed DCO PR exact-head CI is green, the reviewed PR merges, post-merge verification passes, and the AR closes, or the exact incompatible-dependency blocker and evidence leave it open/blocked.",
+      "depends_on": [],
+      "id": "AR-1918",
+      "ownership": "ASB Cargo dependency manifests and Cargo.lock only, plus required tests and durable lifecycle evidence; no source behavior changes, advisory-gate weakening, runtime downloads, or TLC/formal execution.",
+      "scope": "Repair PR #635's hosted Policy, coverage, and supply-chain failure by updating only the Rust dependency manifests and lockfile needed to raise rustls from 0.23.45 to at least 0.23.46 and clear RUSTSEC-2026-0347, RUSTSEC-2026-0348, and RUSTSEC-2026-0349. Preserve advisory gates, offline and locked resolution, unrelated source and state history, and the explicit exclusion of TLC/formal checks.",
+      "short_title": "Repair rustls advisories"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
