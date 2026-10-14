@@ -2260,11 +2260,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-legacy-abandonment-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Add a fail-closed abandon-expired-execution transition clearing only expired bound reservations with no live identity; classify missing/mismatched results as failed, require exact owner/revision matches, non-empty operator evidence, and immutable audit. Reject live/non-expired, malformed, matching-success, wrong-owner/revision, and missing-evidence cases. No recovery/success authorization or direct edits to AR-1773/1852/1871. |
@@ -3200,7 +3200,7 @@ flowchart LR
         AR_1870["AR-1870 - Open"]:::status_open
         AR_1871["AR-1871 - In progress"]:::status_in_progress
         AR_1872["AR-1872 - Blocked"]:::status_blocked
-        AR_1873["AR-1873 - In progress"]:::status_in_progress
+        AR_1873["AR-1873 - Blocked"]:::status_blocked
         AR_1874["AR-1874 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
@@ -4870,3 +4870,5 @@ flowchart LR
     AR_1632 --> AR_1644
     AR_1633 --> AR_1632
     AR_1633 --> AR_1634
+    AR_1634 --> AR_1615
+    AR_1634 --> AR_1632
