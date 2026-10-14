@@ -2170,7 +2170,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Correct ASB public vendor documentation that still names Coordinator v0.3.5 after the checked-in coordinator.vendor.json adopted v0.7.8, without changing runtime or coordinator behavior. |
-| Next action | Independent review and publication of signed docs commit 35e8c37eb1; vendor verifier remains blocked by pre-existing schema/task-record.schema.json digest mismatch. |
+| Next action | Release AR-1866 after exact-main verification. |
 
 
 ## Dependency graph
@@ -4996,3 +4996,8 @@ flowchart LR
     AR_1762 --> AR_1765
     AR_1762 --> AR_1766
     AR_1762 --> AR_1776
+    AR_1763 --> AR_1764
+    AR_1763 --> AR_1765
+    AR_1763 --> AR_1783
+    AR_1763 --> AR_1835
+    AR_1764 --> AR_1765
