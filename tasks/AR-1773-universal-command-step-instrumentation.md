@@ -2,10 +2,21 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T00:33:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
+  ],
+  "execution_abandonments": [
+    {
+      "evidence_digest": "sha256:013649645f93b220ed4edf521933894a5cee4e32b66f47a52ba19d9316dbf11c",
+      "evidence_ref": "recovery/AR-1773-expired-20261014",
+      "execution_id": "bc8c565fa0f94ad78c86b2ba9000159a",
+      "owner": "asb_ar1773_docker_runner_luna",
+      "recorded_at": "2026-10-14T09:04:40+00:00",
+      "reservation_digest": "sha256:4908c15f8eff10ed608dbd484ff9a6bdddc2d3b23b37874b55c29776476dd93d",
+      "schema_version": 1
+    }
   ],
   "execution_envelope": {
     "command_classes": {
@@ -68,16 +79,6 @@
   "execution_envelope_ref": "quality/AR-1773-execution-envelope.json",
   "execution_envelope_revision": 1,
   "execution_envelope_task_revision": 5,
-  "execution_reservation": {
-    "argv_digest": "af01b7172da67747d8152bf861d46d3076af9c213be897d7981023010cac6118",
-    "command_class": "test",
-    "envelope_digest": "sha256:36af7d046d9ef15d3ed21b798ab488b01fd26a5d9ad86cc3a2af1f75907c69cb",
-    "execution_id": "bc8c565fa0f94ad78c86b2ba9000159a",
-    "expires_at": "2026-10-13T23:38:38+00:00",
-    "owner": "asb_ar1773_docker_runner_luna",
-    "scope_digest": "sha256:3141c347af5a056abcfbac75faa49756b6f008565747f30e46f3639803148abf",
-    "task_revision": 125
-  },
   "execution_result": {
     "argv_digest": "09c81bb852986172efea8db4bb646b53794307bb0ebd49a83247bb877cbdcda7",
     "classification": "EXIT",
@@ -92,7 +93,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "asb_ar1773_docker_runner_luna",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -106,11 +107,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-13T22:38:50+00:00",
+  "updated_at": "2026-10-14T09:04:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -483,3 +484,6 @@ non-TTY compatibility.
   09c81bb852986172efea8db4bb646b53794307bb0ebd49a83247bb877cbdcda7.
 
 - 2026-10-13T22:37:39+00:00: Reserved bound execution bc8c565fa0f94ad78c86b2ba9000159a.
+
+- 2026-10-14T09:04:40+00:00: Abandoned expired execution bc8c565fa0f94ad78c86b2ba9000159a and
+  recovered claim formerly owned by asb_ar1773_docker_runner_luna after local evidence verification.

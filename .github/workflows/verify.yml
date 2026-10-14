@@ -106,7 +106,8 @@ jobs:
           uv run ruff check --no-fix tools tests
           uv run mypy tools tests
       - name: Coordinator complexity budget
-        run: uv run lizard -l python --CCN 14 tools/handoffctl.py tools/assumption_revalidation.py
+        run: |
+          uv run lizard -l python --CCN 14 tools/handoffctl.py tools/assumption_revalidation.py tools/retry_circuit.py
       - name: Fault tests and coverage
         run: |
           uv run coverage run --branch -m unittest discover -s tests -p 'test_*.py'

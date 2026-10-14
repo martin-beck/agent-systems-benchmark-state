@@ -61,9 +61,15 @@ class TaskRecordSchemaTests(unittest.TestCase):
         schema = json.loads((ROOT / "schema/task-record.schema.json").read_text())
         Draft202012Validator.check_schema(schema)
         self.validator = Draft202012Validator(schema, format_checker=FormatChecker())
+        state_schema = json.loads((ROOT / "schema/task-schema.json").read_text())
+        Draft202012Validator.check_schema(state_schema)
+        self.state_validator = Draft202012Validator(state_schema, format_checker=FormatChecker())
 
     def test_execution_retry_and_standard_metadata_are_accepted(self) -> None:
-        self.validator.validate(record())
+        coordinator_record = copy.deepcopy(record())
+        coordinator_record["observed_dirty"] = False
+        self.validator.validate(coordinator_record)
+        self.state_validator.validate(record())
 
     def test_execution_result_and_retry_records_are_accepted(self) -> None:
         value = record()
@@ -97,13 +103,18 @@ class TaskRecordSchemaTests(unittest.TestCase):
                 "checkpoint_commit": "0123456789abcdef0123456789abcdef01234567",
             }
         ]
-        self.validator.validate(value)
+        coordinator_value = copy.deepcopy(value)
+        coordinator_value["observed_dirty"] = False
+        self.validator.validate(coordinator_value)
+        self.state_validator.validate(value)
 
     def test_unknown_execution_field_is_rejected(self) -> None:
         invalid = record()
         invalid["execution_reservation"]["unexpected"] = True
         with self.assertRaises(ValidationError):
             self.validator.validate(invalid)
+        with self.assertRaises(ValidationError):
+            self.state_validator.validate(invalid)
 
         invalid = record()
         invalid["execution_result"] = {
@@ -118,6 +129,8 @@ class TaskRecordSchemaTests(unittest.TestCase):
         }
         with self.assertRaises(ValidationError):
             self.validator.validate(invalid)
+        with self.assertRaises(ValidationError):
+            self.state_validator.validate(invalid)
 
     def test_unknown_retry_field_is_rejected(self) -> None:
         invalid = record()
@@ -134,10 +147,12 @@ class TaskRecordSchemaTests(unittest.TestCase):
         ]
         with self.assertRaises(ValidationError):
             self.validator.validate(invalid)
+        with self.assertRaises(ValidationError):
+            self.state_validator.validate(invalid)
 
     def test_invalid_standard_metadata_is_rejected(self) -> None:
         invalid = record()
-        invalid["observed_dirty"] = False
+        invalid["observed_dirty"] = -1
         with self.assertRaises(ValidationError):
             self.validator.validate(invalid)
         invalid = copy.deepcopy(record())

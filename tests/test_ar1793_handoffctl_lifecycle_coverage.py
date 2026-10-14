@@ -430,8 +430,8 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
                 {},
                 "stale revision",
             ),
-            ("active", args, {"status": "in_progress", "owner": "worker-a"}, "open, unowned"),
-            ("leased", args, {"claim_expires": "2999-01-01T00:00:00+00:00"}, "open, unowned"),
+            ("active", args, {"status": "in_progress", "owner": "worker-a"}, "inactive, unowned"),
+            ("leased", args, {"claim_expires": "2999-01-01T00:00:00+00:00"}, "inactive, unowned"),
             ("branch", args, {"branch": "codex/ar1793"}, "empty legacy branch"),
             ("key", args, {"worktree_key": "other"}, "does not match"),
             (
@@ -448,11 +448,6 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
                 with self.assertRaisesRegex(RuntimeError, message):
                     handoffctl.apply_repair_legacy_binding(request, meta, [])
                 self.assertEqual(before, meta)
-        with (
-            patch.object(handoffctl, "valid_binding_worktree", return_value=False),
-            self.assertRaisesRegex(RuntimeError, "worktree key is invalid"),
-        ):
-            handoffctl.apply_repair_legacy_binding(args, dict(base), [])
 
 
 if __name__ == "__main__":

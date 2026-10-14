@@ -5,11 +5,11 @@
       "source": "docs/EXTENDING.md"
     },
     "docs/PUBLIC_CONTRACTS.md": {
-      "sha256": "3f4fd15fbcbf9b23a381fc4ae5a4e51670228c6a880a9f4c3928f149724e2d2d",
+      "sha256": "93138ef3afa770ca98a5ad1df8b11ff9a2b87f9938e22303b391a0ad960fe68d",
       "source": "docs/PUBLIC_CONTRACTS.md"
     },
     "docs/agent-workflow-coordinator.md": {
-      "sha256": "a17b571673988b01347e09dfb2e7374b9e1a964c980461e72d0c823c1aa4c9ff",
+      "sha256": "1fed424c1c20fd815b425ca9115a006dc536209c879952e110f20133cab1bf0b",
       "source": "docs/PROJECT_GUIDE.md"
     },
     "examples/roles/role-registry.json": {
@@ -457,7 +457,7 @@
       "source": "tools/execution_envelope.py"
     },
     "tools/execution_lifecycle.py": {
-      "sha256": "85521ef71fbe06c094ef1c4b35aecbc155a4169fdbd199d1bbd05137ef54d5cc",
+      "sha256": "c2f63fc7bfdba4e7a011be7822cc7b2c392639a109dbcf3f77a7b069f756a6fe",
       "source": "tools/execution_lifecycle.py"
     },
     "tools/execution_receipt.py": {
@@ -505,7 +505,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "fba1c5c015a93ecaedcbcc967f6f757edd9da7679302caf2a945db80845478c7",
+      "sha256": "7e8b71aad79ec64bb3760428140f83a5c36ea06182d8f91fed0b3b4b87d731c9",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -581,7 +581,7 @@
       "source": "tools/retry_circuit.py"
     },
     "tools/role_assignment.py": {
-      "sha256": "4dc11cbe14cde756fb4b10f0d043b0680564d39a2f58380e10a14fe97d9464db",
+      "sha256": "23e014c67670fc3ec3fda6ae6f2aa996074cf9713b62978ab1362e471160fbb7",
       "source": "tools/role_assignment.py"
     },
     "tools/role_registry.py": {
@@ -589,7 +589,7 @@
       "source": "tools/role_registry.py"
     },
     "tools/roles.py": {
-      "sha256": "1860ef2d5b1cd5c9b4909cda55af515bd5f42dcbfd5773a4f07bbe2622fabaac",
+      "sha256": "1c53d0455a0c5e4263652cdb073fd318b4a0cfa40e51d032e3d257760680e110",
       "source": "tools/roles.py"
     },
     "tools/rollback_control_store.py": {
@@ -687,8 +687,8 @@
   },
   "schema_version": 1,
   "upstream": {
-    "commit": "6f7cb5eeb411898c7812fdebc9da08e1f586c936",
+    "commit": "9d56254b538274becdf74f79b9a619f69269097d",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
-    "version": "v0.7.11"
+    "version": "v0.7.12"
   }
 }

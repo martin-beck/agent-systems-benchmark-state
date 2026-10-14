@@ -1112,11 +1112,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb_ar1773_docker_runner_luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. |
@@ -1966,11 +1966,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1852-env-repair-luna5 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Align role-store authorization tests with Coordinator v0.7.4. |
@@ -2232,11 +2232,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb_ar1871_schema_ledger_integration |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Integrate independently reviewed AR-1868 schema vocabulary repair and AR-1870 ledger digest repair on current main, changing only schema/task-schema.json, tests/test_task_record_schema.py, and AR-1861/AR-1862 evidence_ledger blocks. This successor explicitly depends on AR-1868 and AR-1870 review evidence; do not include checkpoints, sessions, projections, runtime state, or unrelated files. |
@@ -3115,7 +3115,7 @@ flowchart LR
         AR_1770["AR-1770 - Done"]:::status_done
         AR_1771["AR-1771 - Done"]:::status_done
         AR_1772["AR-1772 - Done"]:::status_done
-        AR_1773["AR-1773 - In progress"]:::status_in_progress
+        AR_1773["AR-1773 - Open"]:::status_open
         AR_1774["AR-1774 - Planned"]:::status_planned
         AR_1775["AR-1775 - Done"]:::status_done
         AR_1776["AR-1776 - Done"]:::status_done
@@ -3179,7 +3179,7 @@ flowchart LR
         AR_1849["AR-1849 - Open"]:::status_open
         AR_1850["AR-1850 - Done"]:::status_done
         AR_1851["AR-1851 - Blocked"]:::status_blocked
-        AR_1852["AR-1852 - In progress"]:::status_in_progress
+        AR_1852["AR-1852 - Open"]:::status_open
         AR_1853["AR-1853 - Open"]:::status_open
         AR_1854["AR-1854 - Planned"]:::status_planned
         AR_1855["AR-1855 - Done"]:::status_done
@@ -3198,7 +3198,7 @@ flowchart LR
         AR_1868["AR-1868 - Open"]:::status_open
         AR_1869["AR-1869 - Open"]:::status_open
         AR_1870["AR-1870 - Open"]:::status_open
-        AR_1871["AR-1871 - In progress"]:::status_in_progress
+        AR_1871["AR-1871 - Open"]:::status_open
         AR_1872["AR-1872 - Blocked"]:::status_blocked
         AR_1873["AR-1873 - Blocked"]:::status_blocked
         AR_1874["AR-1874 - Blocked"]:::status_blocked
@@ -4872,3 +4872,8 @@ flowchart LR
     AR_1633 --> AR_1634
     AR_1634 --> AR_1615
     AR_1634 --> AR_1632
+    AR_1634 --> AR_1635
+    AR_1634 --> AR_1636
+    AR_1634 --> AR_1726
+    AR_1635 --> AR_1615
+    AR_1635 --> AR_1632
