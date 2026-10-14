@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1853-complexity-v074-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-14T15:46:28+00:00",
   "depends_on": [],
   "id": "AR-1853",
   "next_action": "Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence.",
-  "owner": "",
+  "owner": "asb-ar1853-complexity-20261014",
   "plan": "../plans/AR-1853-complexity-v074-contract.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1853.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align the complexity-budget contract with Coordinator v0.7.4.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Complexity v0.7.4 compatibility contract",
-  "updated_at": "2026-10-13T20:41:15+00:00",
+  "updated_at": "2026-10-14T13:46:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1853"
 }
 ---
@@ -70,3 +70,5 @@ contract exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-13T20:41:15+00:00: Maintenance claim released; stale AR-1853 worktree binding prevented
   pycache cleanup command. Existing dependency blocker and exact PR/CI evidence remain unchanged.
+
+- 2026-10-14T13:46:28+00:00: Claimed by asb-ar1853-complexity-20261014.
