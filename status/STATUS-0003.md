@@ -2774,6 +2774,20 @@
 | Summary | Create a narrow successor for the missing direct worktree needed to execute AR-1906. Use only handoffctl-authorized worktree and test paths; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1910 — Admit autonomy-limits dependency
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3730,6 +3744,7 @@ flowchart LR
         AR_1907["AR-1907 - In progress"]:::status_in_progress
         AR_1908["AR-1908 - In progress"]:::status_in_progress
         AR_1909["AR-1909 - In progress"]:::status_in_progress
+        AR_1910["AR-1910 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4298,29 +4313,3 @@ flowchart LR
     AR_0874 --> AR_0808
     AR_0874 --> AR_0809
     AR_0875 --> AR_0908
-    AR_0875 --> AR_1031
-    AR_0875 --> AR_1035
-    AR_0876 --> AR_1130
-    AR_0877 --> AR_1021
-    AR_0878 --> AR_0906
-    AR_0879 --> AR_0888
-    AR_0879 --> AR_0891
-    AR_0888 --> AR_0889
-    AR_0888 --> AR_0890
-    AR_0888 --> AR_0896
-    AR_0888 --> AR_1249
-    AR_0888 --> AR_1250
-    AR_0888 --> AR_1251
-    AR_0889 --> AR_0890
-    AR_0889 --> AR_0896
-    AR_0889 --> AR_1249
-    AR_0889 --> AR_1250
-    AR_0889 --> AR_1251
-    AR_0890 --> AR_0892
-    AR_0890 --> AR_0893
-    AR_0891 --> AR_0892
-    AR_0891 --> AR_0893
-    AR_0892 --> AR_0893
-    AR_0893 --> AR_0894
-    AR_0897 --> AR_0898
-    AR_0897 --> AR_0903
