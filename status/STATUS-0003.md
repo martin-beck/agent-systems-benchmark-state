@@ -2904,11 +2904,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1919-git-publication-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. |
@@ -3879,7 +3879,7 @@ flowchart LR
         AR_1916["AR-1916 - Blocked"]:::status_blocked
         AR_1917["AR-1917 - Open"]:::status_open
         AR_1918["AR-1918 - Done"]:::status_done
-        AR_1919["AR-1919 - Open"]:::status_open
+        AR_1919["AR-1919 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4214,5 +4214,3 @@ flowchart LR
     AR_0504 --> AR_0505
     AR_0504 --> AR_0506
     AR_0504 --> AR_0507
-    AR_0504 --> AR_0508
-    AR_0504 --> AR_0509
