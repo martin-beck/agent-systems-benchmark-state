@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-    AR_0201 --> AR_0848
-    AR_0202 --> AR_0602
     AR_0202 --> AR_0604
     AR_0203 --> AR_0204
     AR_0203 --> AR_0806
