@@ -390,12 +390,11 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | codex-ar1863-catalog-repair-20261014 | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded control diagnostic catalog repair and record local acceptance evidence after the coordinator binds the reviewed source-write successor envelope; do not change AR-1787 or AR-1835. |
-| P1 | [AR-1875](../tasks/AR-1875.md): Repair AR-1863 source-write envelope | codex-ar1875-envelope-repair-20261014 | Create and bind a successor AR-1863 execution envelope that authorizes only the reviewed diagnostic-catalog source-write and publication paths, preserving the existing AR-1863 non-goals, path scope, fail-closed gates, and exact current-main review evidence. Do not modify AR-1787 or AR-1835. | Blocked: coordinator-native replace-envelope rejects reviewed AR-1863-e3 because e2 path scope is tools/integration and source-write=false while e3 intentionally grants catalog source-write paths; do not weaken replacement gate or edit task metadata directly. Doctor green; focused replacement tests 2/2 green; source-write preflight remains denied. |
 | P1 | [AR-1878](../tasks/AR-1878.md): Reissue diagnostic catalog task | asb-ar1878-diagnostic-successor-20261014 | Create a fresh successor task for the reviewed control diagnostic catalog repair with a new source-write execution envelope scoped only to the catalog files and required tests/publication. Preserve AR-1863 as immutable blocked history; do not widen or mutate its bound envelope, alter AR-1787/AR-1835, or weaken coordinator gates. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (5)
@@ -667,3 +666,5 @@
 | P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | Unclaimed | Enroll provider authentication. | AR complete: merged PR #176 at bd9e153a; post-merge exact-main verification and full auth package gates passed; retain closure evidence in state. |
 | P0 | [AR-1130](../tasks/AR-1130.md): Configured provider launches | Unclaimed | Launch agents with configured providers. | Post-merge verification complete: PR #181 merged at 0443ebac; exact-main tree matches feature tree, focused provider-launch/workflow tests and full locked offline workspace tests passed, worktree clean. Release AR-1130 as done. |
 | P0 | [AR-1140](../tasks/AR-1140.md): CLI setup wizard | Unclaimed | Guide CLI setup and reconfiguration. | Wait for PR #186 exact-head CI and independent review on 1e3212b; do not merge. |
+| P0 | [AR-1150](../tasks/AR-1150.md): Recording campaigns | Unclaimed | Record response cassettes. | Post-merge verification complete: PR #182 merged at a83ba8e; exact-main tree matches feature tree, focused replay tests and full locked offline workspace tests passed, worktree clean. Release AR-1150 as done. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Monitor PR #225 fresh gates at exact head 20db76e; after green review/merge, implement AR-1160 runtime campaign launch/progress/cancel, cassette coverage reconciliation, and offline-default activation. |
