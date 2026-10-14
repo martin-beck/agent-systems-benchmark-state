@@ -2470,11 +2470,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1888-publication-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Publish the already reviewed AR-1887 state repair at exact commit 12074686d4, including its signed/DCO ancestry and full-suite evidence digest sha256:65c3adc9516e93a55aa1a629beceb15c1ede0b3a345b73c51a4c40463298535e. Scope is immutable to tools/handoffctl.py, tests, and quality evidence; preserve AR-1887 and earlier histories. |
@@ -3411,7 +3411,7 @@ flowchart LR
         AR_1885["AR-1885 - In progress"]:::status_in_progress
         AR_1886["AR-1886 - In progress"]:::status_in_progress
         AR_1887["AR-1887 - In progress"]:::status_in_progress
-        AR_1888["AR-1888 - Open"]:::status_open
+        AR_1888["AR-1888 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4606,4 +4606,3 @@ flowchart LR
     AR_1393 --> AR_1433
     AR_1393 --> AR_1434
     AR_1394 --> AR_1395
-    AR_1394 --> AR_1399
