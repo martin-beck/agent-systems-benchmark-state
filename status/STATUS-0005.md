@@ -504,7 +504,7 @@
 
 ## Complete AR inventory
 
-### Open (19)
+### Open (20)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -527,6 +527,7 @@
 | P1 | [AR-1908](../tasks/AR-1908.md): Admit run-command dependency | Unclaimed | State-only successor admitting exactly tools/run_command.py for the AR-1907 focused replacement test. Preserve AR-1907, AR-1906 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | Unclaimed | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | Unclaimed | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (113)
 
@@ -646,7 +647,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (99)
+### Planned (98)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -670,4 +671,3 @@
 | P0 | [AR-1622](../tasks/AR-1622.md): Current-main fresh-user quickstart runner and operator guide | Unclaimed | Make the clone-to-wizard-to-benchmark-to-offline-comparison journey executable in one disposable runner with simple selection-driven guidance. | Promote after final lifecycle and development-auth qualification; implement paired runner, guide, and exact-head acceptance. |
 | P0 | [AR-1623](../tasks/AR-1623.md): Development-channel release, upgrade, and rollback gate | Unclaimed | Qualify clean-machine dev installation, default-channel behavior, restart persistence, upgrade, rollback, and tamper diagnostics across ASB and TUI. | Promote after the quickstart runner and exact bundle consumer are released; execute disposable release-gate matrix. |
 | P0 | [AR-1643](../tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | Implement the disposable paired runner after setup-to-runtime, capture/replay, and comparison seams are complete. |
-| P0 | [AR-1653](../tasks/AR-1653.md): Current-main development-channel consumption | Unclaimed | Qualify a clean clone using the default dev channel to install and run the current ASB/TUI heads with rollback evidence. | Run the bounded clean-clone materializer and lifecycle matrix after the paired quickstart runner exists. |
