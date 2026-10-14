@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1878-e1",
+  "envelope_revision": 1,
+  "task": "AR-1878",
+  "task_revision": 4,
+  "spec_ref": "specs/AR-1863.json",
+  "spec_revision": 1,
+  "outputs": [
+    {"id": "merge", "description": "Verify exact-head review, checks, merge, and post-merge evidence."},
+    {"id": "repair", "description": "Record the fresh successor task and its exact catalog repair binding."}
+  ],
+  "non_goals": [
+    "Preserve AR-1863 as immutable blocked history; do not mutate its task or envelopes.",
+    "Do not change AR-1787, AR-1835, diagnostic gates, or unrelated tasks.",
+    "Do not write outside the reviewed control diagnostic catalog paths."
+  ],
+  "path_scope": {
+    "read": [
+      "crates/asb-cli/src/control.rs",
+      "crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs",
+      "crates/asb-cli/tests/diagnostic_contract.rs",
+      "crates/asb-cli/Cargo.toml",
+      "Cargo.toml",
+      "Cargo.lock"
+    ],
+    "write": [
+      "crates/asb-cli/src/control.rs",
+      "crates/asb-cli/src/diagnostic_legacy_catalog_compact.rs"
+    ]
+  },
+  "command_classes": {
+    "read": {"allowed": true},
+    "test": {"allowed": true, "timeout_seconds": 900},
+    "source-write": {"allowed": true, "timeout_seconds": 900},
+    "git-publication": {"allowed": true, "timeout_seconds": 900}
+  },
+  "evidence": [
+    {"id": "review", "class": "mechanical", "required": true},
+    {"id": "repair", "class": "mechanical", "required": true}
+  ],
+  "stop_conditions": [
+    {"id": "scope", "kind": "deny"},
+    {"id": "unreviewed-path", "kind": "deny"},
+    {"id": "immutable-history", "kind": "deny"}
+  ]
+}
