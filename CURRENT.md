@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1869 — Repair evidence ledger digests](tasks/AR-1869.md) | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. | Repair PR #164 scope at a fresh exact head: retain only the two AR-1861/AR-1862 evidence-ledger digest updates, restore/rebase away schema/task-record, checkpoint/session, and test changes; rerun focused/full gates and request fresh independent review. | codex-asb-ar1869-20261014 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -15,7 +21,6 @@ Never edit this file directly.
 | P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Blocked: AR-0035 v2 envelope cannot bind because durable role state contains expired assignments; clean expired roles through coordinator authority, then bind AR-1863-e3 and rerun exact-head publication preflight. Do not direct-merge. | - |
 | P1 | [AR-1865 — Repair expired role cleanup](tasks/AR-1865.md) | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. | Obtain independent GitHub approval for PR #160 at exact head b0811a8802; merge via authorized signed path, then run post-merge verification and repaired roles.remove cleanup. Current gh pr review --approve is rejected because the available identity owns the PR. | - |
 | P1 | [AR-1867 — Legacy reservation recovery](tasks/AR-1867.md) | Add a fail-closed ASB downstream handoffctl overlay path to recover expired bound execution reservations from pre-identity claims without direct state edits or weakened reservation structural checks. | PR #161 published at exact source head 7281ca87f5 plus signed overlay commit 5f7f247a39; obtain independent exact-head review and required CI before merge. Full unittest remains environment-blocked by bounded filesystem/jbd2 hang. | - |
-| P1 | [AR-1869 — Repair evidence ledger digests](tasks/AR-1869.md) | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. | Repair PR #164 scope at a fresh exact head: retain only the two AR-1861/AR-1862 evidence-ledger digest updates, restore/rebase away schema/task-record, checkpoint/session, and test changes; rerun focused/full gates and request fresh independent review. | - |
 
 ## Blocked
 
