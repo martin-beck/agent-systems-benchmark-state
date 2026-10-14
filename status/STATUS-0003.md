@@ -2480,6 +2480,20 @@
 | Summary | Publish the already reviewed AR-1887 state repair at exact commit 12074686d4, including its signed/DCO ancestry and full-suite evidence digest sha256:65c3adc9516e93a55aa1a629beceb15c1ede0b3a345b73c51a4c40463298535e. Scope is immutable to tools/handoffctl.py, tests, and quality evidence; preserve AR-1887 and earlier histories. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1889 — Recover expired claim
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add only the state-side recovery capability needed to clear AR-1878&#x27;s exact expired reservation with matching durable terminal EXIT evidence. Scope tools/handoffctl.py, execution lifecycle, and focused tests; preserve AR-1878 through AR-1888, reject force-clear/cross-root paths, and do not run formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3412,6 +3426,7 @@ flowchart LR
         AR_1886["AR-1886 - In progress"]:::status_in_progress
         AR_1887["AR-1887 - In progress"]:::status_in_progress
         AR_1888["AR-1888 - In progress"]:::status_in_progress
+        AR_1889["AR-1889 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4577,32 +4592,3 @@ flowchart LR
     AR_1381 --> AR_1382
     AR_1381 --> AR_1383
     AR_1381 --> AR_1384
-    AR_1381 --> AR_1385
-    AR_1381 --> AR_1386
-    AR_1383 --> AR_1384
-    AR_1384 --> AR_1385
-    AR_1384 --> AR_1386
-    AR_1384 --> AR_1387
-    AR_1384 --> AR_1388
-    AR_1384 --> AR_1389
-    AR_1385 --> AR_1386
-    AR_1385 --> AR_1387
-    AR_1385 --> AR_1388
-    AR_1385 --> AR_1390
-    AR_1385 --> AR_1391
-    AR_1385 --> AR_1392
-    AR_1385 --> AR_1393
-    AR_1385 --> AR_1432
-    AR_1385 --> AR_1433
-    AR_1385 --> AR_1434
-    AR_1388 --> AR_1390
-    AR_1388 --> AR_1391
-    AR_1388 --> AR_1392
-    AR_1388 --> AR_1393
-    AR_1388 --> AR_1432
-    AR_1388 --> AR_1433
-    AR_1388 --> AR_1434
-    AR_1393 --> AR_1432
-    AR_1393 --> AR_1433
-    AR_1393 --> AR_1434
-    AR_1394 --> AR_1395

@@ -1,5 +1,34 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1381 --> AR_1385
+    AR_1381 --> AR_1386
+    AR_1383 --> AR_1384
+    AR_1384 --> AR_1385
+    AR_1384 --> AR_1386
+    AR_1384 --> AR_1387
+    AR_1384 --> AR_1388
+    AR_1384 --> AR_1389
+    AR_1385 --> AR_1386
+    AR_1385 --> AR_1387
+    AR_1385 --> AR_1388
+    AR_1385 --> AR_1390
+    AR_1385 --> AR_1391
+    AR_1385 --> AR_1392
+    AR_1385 --> AR_1393
+    AR_1385 --> AR_1432
+    AR_1385 --> AR_1433
+    AR_1385 --> AR_1434
+    AR_1388 --> AR_1390
+    AR_1388 --> AR_1391
+    AR_1388 --> AR_1392
+    AR_1388 --> AR_1393
+    AR_1388 --> AR_1432
+    AR_1388 --> AR_1433
+    AR_1388 --> AR_1434
+    AR_1393 --> AR_1432
+    AR_1393 --> AR_1433
+    AR_1393 --> AR_1434
+    AR_1394 --> AR_1395
     AR_1394 --> AR_1399
     AR_1395 --> AR_1396
     AR_1395 --> AR_1401
@@ -1261,4 +1290,3 @@
 | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) | [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) |
 | [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
 | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) | [AR-1403](../tasks/AR-1403-literature-external-qualification.md), [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md), [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md), [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) |
-| [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) | [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) |

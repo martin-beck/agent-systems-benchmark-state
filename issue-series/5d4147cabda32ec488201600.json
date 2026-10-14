@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1889",
+  "issue": {
+    "number": 10020,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10020"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Require exact task/revision/reservation/result identity, expiry, absent worker, and operator evidence; reject active, mismatched, malformed, missing, force-clear, and cross-root inputs. Focused positive/negative tests, signed review, doctor, and reconciliation pass.",
+      "depends_on": [],
+      "id": "AR-1889",
+      "ownership": "ASB state recovery capability only; no product/vendor/publication changes or history edits.",
+      "scope": "Add only the state-side recovery capability needed to clear AR-1878's exact expired reservation with matching durable terminal EXIT evidence. Scope tools/handoffctl.py, execution lifecycle, and focused tests; preserve AR-1878 through AR-1888, reject force-clear/cross-root paths, and do not run formal/TLC.",
+      "short_title": "Recover expired claim"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
