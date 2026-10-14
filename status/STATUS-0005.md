@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
+| [AR-1414](../tasks/AR-1414-action-pin-followup.md) | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) |
+| [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md), [AR-1414](../tasks/AR-1414-action-pin-followup.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) |
 | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md), [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md), [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) |
 | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md) | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) |
 | [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md) | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) |
@@ -433,6 +436,7 @@
 | [AR-1891](../tasks/AR-1891.md) | None | None |
 | [AR-1892](../tasks/AR-1892.md) | None | None |
 | [AR-1893](../tasks/AR-1893.md) | None | None |
+| [AR-1894](../tasks/AR-1894.md) | None | None |
 
 ## Complete AR inventory
 
@@ -563,7 +567,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (96)
+### Planned (97)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -659,4 +663,3 @@
 | P1 | [AR-1831](../tasks/AR-1831-explicit-config-cli-tui-docs.md): Align CLI, TUI handoff, and documentation to explicit config workflow | Unclaimed | Make every CLI, TUI handoff, help page, completion, and example teach the explicit setup-output and plan-config workflow. | Align CLI help, human output, completions, TUI handoff, examples, and migration documentation to the explicit setup-config route. |
 | P1 | [AR-1848](../tasks/AR-1848-graph-extraction-qualification.md): Qualify ASB dataflow graph extraction end to end | Unclaimed | Qualify reproducible complete ASB dataflow extraction, DOT/SVG generation, privacy, and paired documentation. | Promote after AR-1847; run clean-checkout extraction and cross-check graph artifacts against all generated registries and CLI options. |
 | P1 | [AR-1854](../tasks/AR-1854-v074-compatibility-integration.md): v0.7.4 compatibility integration qualification | Unclaimed | Integrate and qualify the Coordinator v0.7.4 compatibility repairs. | Promote only after AR-1851, AR-1852 and AR-1853 merge; combine their exact reviewed heads and run the strict/formal integration gates. |
-| P1 | [AR-1891](../tasks/AR-1891.md): Reconcile terminal recovery | Unclaimed | Add state-only recovery reconciliation for expired AR-1878 terminal-result evidence. Require exact target/revision/reservation/result/envelope, expiry, terminal EXIT, absent worker/claim_process, and operator evidence; immutable audit then existing recovery. Reject arbitrary, active/unexpired, mismatched, malformed/missing, cross-root, force-clear, and publication inputs. Preserve AR-1878 through AR-1890; no product/vendor/formal/TLC state. | Implement the bounded scope and record local acceptance evidence. |

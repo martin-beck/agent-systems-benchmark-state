@@ -2550,6 +2550,20 @@
 | Summary | State-only repair to admit the authorized execution_envelope_replacements task field and validator path needed to replace AR-1892&#x27;s malformed predecessor envelope without widening unrelated scope. Preserve AR-1892, AR-1891, AR-1890 and earlier histories; no claim bypass, cross-root, network, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1894 — Admit abandonment dependency
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only successor admitting exactly tools/execution_abandonment.py for the AR-1893 focused schema test. Preserve AR-1893, AR-1892, AR-1891, AR-1890 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3487,6 +3501,7 @@ flowchart LR
         AR_1891["AR-1891 - Planned"]:::status_planned
         AR_1892["AR-1892 - In progress"]:::status_in_progress
         AR_1893["AR-1893 - In progress"]:::status_in_progress
+        AR_1894["AR-1894 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4504,30 +4519,3 @@ flowchart LR
     AR_1339 --> AR_1392
     AR_1339 --> AR_1393
     AR_1340 --> AR_1329
-    AR_1340 --> AR_1342
-    AR_1340 --> AR_1343
-    AR_1340 --> AR_1344
-    AR_1340 --> AR_1345
-    AR_1340 --> AR_1346
-    AR_1340 --> AR_1347
-    AR_1340 --> AR_1348
-    AR_1340 --> AR_1349
-    AR_1340 --> AR_1350
-    AR_1340 --> AR_1351
-    AR_1340 --> AR_1367
-    AR_1340 --> AR_1368
-    AR_1340 --> AR_1374
-    AR_1340 --> AR_1390
-    AR_1340 --> AR_1391
-    AR_1340 --> AR_1392
-    AR_1340 --> AR_1393
-    AR_1341 --> AR_1390
-    AR_1341 --> AR_1391
-    AR_1341 --> AR_1392
-    AR_1341 --> AR_1393
-    AR_1341 --> AR_1432
-    AR_1341 --> AR_1433
-    AR_1341 --> AR_1434
-    AR_1341 --> AR_1451
-    AR_1342 --> AR_1344
-    AR_1342 --> AR_1345
