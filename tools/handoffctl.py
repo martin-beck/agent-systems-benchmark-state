@@ -267,6 +267,7 @@ LIFECYCLE_MUTATION_COMMANDS = (
     "bind-spec",
     "bind-worktree",
     "bind-envelope",
+    "replace-envelope",
     "release",
     "promote",
     "pause",
@@ -1450,7 +1451,7 @@ def value_errors(path: Path, meta: Meta) -> list[str]:
     return errors
 
 
-def execution_metadata_errors(task_id: str, meta: Meta) -> list[str]:
+def execution_metadata_errors(task_id: str, meta: Meta) -> list[str]:  # noqa: C901
     """Validate optional process and execution-fence metadata together."""
     errors: list[str] = []
     claim_process = meta.get("claim_process")
@@ -1465,6 +1466,8 @@ def execution_metadata_errors(task_id: str, meta: Meta) -> list[str]:
     errors.extend(execution_abandonment_errors(task_id, meta))
     if not valid_execution_envelope_binding(meta):
         errors.append(f"{task_id}: invalid execution envelope binding")
+    if not execution_envelope.valid_replacements(meta.get("execution_envelope_replacements")):
+        errors.append(f"{task_id}: invalid execution envelope replacements")
     if error := change_drift.metadata_error(meta):
         errors.append(f"{task_id}: {error}")
     if error := assumption_revalidation.metadata_error(meta):
@@ -2906,6 +2909,12 @@ def apply_bind_envelope(args: argparse.Namespace, meta: Meta) -> str:
     return f"Bound execution envelope {args.envelope_ref} revision {args.envelope_revision}."
 
 
+def apply_replace_envelope(args: argparse.Namespace, meta: Meta) -> str:
+    require_active_binding_owner(args, meta)
+    require_no_execution_reservation(meta)
+    return execution_envelope.replace_bound(meta, args, ROOT, now())
+
+
 def apply_execution_start(args: argparse.Namespace, meta: Meta) -> str:
     return execution_lifecycle.start(_EXECUTION_RUNTIME, args, meta)
 
@@ -3155,6 +3164,7 @@ def lifecycle_transition_handler(
         "bind-worktree": lambda: apply_bind_worktree(args, meta, tasks),
         "repair-legacy-binding": lambda: apply_repair_legacy_binding(args, meta, tasks),
         "bind-envelope": lambda: apply_bind_envelope(args, meta),
+        "replace-envelope": lambda: apply_replace_envelope(args, meta),
         "execution-start": lambda: apply_execution_start(args, meta),
         "execution-result": lambda: apply_execution_result(args, meta),
         "execution-finish": lambda: apply_execution_finish(args, meta),
@@ -4943,6 +4953,12 @@ def main() -> int:
     item.add_argument("--worktree-key", required=True)
     item.add_argument("--note", required=True)
     item = commands.add_parser("bind-envelope")
+    item.add_argument("task")
+    item.add_argument("--owner", required=True)
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--envelope-ref", required=True)
+    item.add_argument("--envelope-revision", type=int, required=True)
+    item = commands.add_parser("replace-envelope")
     item.add_argument("task")
     item.add_argument("--owner", required=True)
     item.add_argument("--expected-revision", type=int, required=True)
