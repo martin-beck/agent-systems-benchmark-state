@@ -2660,7 +2660,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Create a fresh successor task and immutable execution envelope correcting AR-1882&#x27;s missing cross-repository scope admission. Do not require envelopes/AR-1881-e1.json in product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3; resolve product paths only in the reviewed product checkout and state paths only in the coordination-state checkout; do not rewrite prior envelopes or widen arbitrary paths. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Blocked: immutable AR-1901 envelope admits coordination-state paths only; a product-checkout path is PATH_OUTSIDE_SCOPE. A successor must provide explicit cross-root scope admission without widening arbitrary paths. |
 
 ### AR-1902 — Admit resume-card dependency
 
@@ -4169,10 +4169,3 @@ flowchart LR
     AR_0318 --> AR_0876
     AR_0318 --> AR_1325
     AR_0319 --> AR_0876
-    AR_0319 --> AR_1228
-    AR_0319 --> AR_1230
-    AR_0320 --> AR_0869
-    AR_0320 --> AR_0876
-    AR_0320 --> AR_1120
-    AR_0320 --> AR_1228
-    AR_0320 --> AR_1230

@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) |
 | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | None |
 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) |
 | [AR-1372](../tasks/AR-1372-topology-repair.md) | None | None |
@@ -514,7 +515,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1901](../tasks/AR-1901.md): Repair terminal publication scope | codex-ar1901-terminal-publication-scope-20261014 | Create a fresh successor task and immutable execution envelope correcting AR-1882&#x27;s missing cross-repository scope admission. Do not require envelopes/AR-1881-e1.json in product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3; resolve product paths only in the reviewed product checkout and state paths only in the coordination-state checkout; do not rewrite prior envelopes or widen arbitrary paths. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1901](../tasks/AR-1901.md): Repair terminal publication scope | codex-ar1901-terminal-publication-scope-20261014 | Create a fresh successor task and immutable execution envelope correcting AR-1882&#x27;s missing cross-repository scope admission. Do not require envelopes/AR-1881-e1.json in product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3; resolve product paths only in the reviewed product checkout and state paths only in the coordination-state checkout; do not rewrite prior envelopes or widen arbitrary paths. | Blocked: immutable AR-1901 envelope admits coordination-state paths only; a product-checkout path is PATH_OUTSIDE_SCOPE. A successor must provide explicit cross-root scope admission without widening arbitrary paths. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | codex-ar1919-git-publication-20261014 | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (16)
@@ -675,4 +676,3 @@
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
-| P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
