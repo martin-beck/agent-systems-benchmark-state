@@ -22,7 +22,7 @@
         "candidate_digest": "sha256:6d1a28f6c642c0ff8cde0afca821eb140ef451458ec8b4c05427e1b5d71f8821",
         "candidate_ref": "coordinator.vendor.json",
         "evidence_class": "contract-test",
-        "evidence_digest": "sha256:1d3232c5908903e5fa89fa04a6ec4ef50309fcdd1c6b5bad19922ecba1dbd6f1",
+        "evidence_digest": "sha256:ca303ecb17caf12a74056377ad8fec420e0f52125658ba80603909184ed2a196",
         "evidence_ref": "tests/test_handoffctl_vendor.py",
         "predicate_id": "quality-floor",
         "recorded_task_revision": 25,
