@@ -2802,6 +2802,20 @@
 | Summary | Create a narrow successor for candidate spec/envelope disappearance between bind-envelope and bind-worktree. Use only handoffctl-authorized paths and commands; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1912 — Admit roles dependency
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a narrow successor for the missing tools.roles dependency required by the focused scope-admission chain. Admit exactly tools/roles.py and its focused test through handoffctl; do not widen paths, bypass expired claims, alter product files, rewrite prior histories, use network, or run formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 ### AR-1913 — Reconcile retention artifacts
 
 | Field | Value |
@@ -3774,6 +3788,7 @@ flowchart LR
         AR_1909["AR-1909 - In progress"]:::status_in_progress
         AR_1910["AR-1910 - In progress"]:::status_in_progress
         AR_1911["AR-1911 - Planned"]:::status_planned
+        AR_1912["AR-1912 - Planned"]:::status_planned
         AR_1913["AR-1913 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -4260,31 +4275,3 @@ flowchart LR
     AR_0821 --> AR_0823
     AR_0821 --> AR_1024
     AR_0821 --> AR_1441
-    AR_0822 --> AR_0808
-    AR_0822 --> AR_0809
-    AR_0822 --> AR_0823
-    AR_0822 --> AR_1024
-    AR_0822 --> AR_1441
-    AR_0823 --> AR_0903
-    AR_0823 --> AR_1027
-    AR_0830 --> AR_0831
-    AR_0830 --> AR_0832
-    AR_0830 --> AR_0833
-    AR_0830 --> AR_0834
-    AR_0830 --> AR_0835
-    AR_0830 --> AR_0836
-    AR_0830 --> AR_1438
-    AR_0831 --> AR_0832
-    AR_0831 --> AR_0835
-    AR_0831 --> AR_0836
-    AR_0831 --> AR_0845
-    AR_0832 --> AR_0833
-    AR_0835 --> AR_0837
-    AR_0836 --> AR_0837
-    AR_0840 --> AR_0841
-    AR_0840 --> AR_0842
-    AR_0840 --> AR_0843
-    AR_0840 --> AR_0844
-    AR_0840 --> AR_1023
-    AR_0841 --> AR_0842
-    AR_0841 --> AR_0843

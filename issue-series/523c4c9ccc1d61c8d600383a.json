@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1912",
+  "issue": {
+    "number": 10043,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10043"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Bind the exact missing tools/roles.py read scope and focused non-formal test, then execute through handoffctl or record the exact fail-closed blocker without changing prior histories.",
+      "depends_on": [],
+      "id": "AR-1912",
+      "ownership": "ASB execution-envelope scope admission only; preserve AR-1910, AR-1908, AR-1878 expiry handling, all earlier histories, product head, and formal/TLC exclusion.",
+      "scope": "Create a narrow successor for the missing tools.roles dependency required by the focused scope-admission chain. Admit exactly tools/roles.py and its focused test through handoffctl; do not widen paths, bypass expired claims, alter product files, rewrite prior histories, use network, or run formal/TLC.",
+      "short_title": "Admit roles dependency"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
