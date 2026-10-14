@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1851-ar1793-v074-contracts",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T15:52:50+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1851",
   "next_action": "Obtain fresh independent review and exact-head non-formal required-gate CI at 0d3693a24c; formal/TLC evidence is optional under UD-0003. Merge only when required gates are green, then perform post-merge verification.",
-  "owner": "asb-ar1851-v074-contracts-20261014",
+  "owner": "",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
   "retry_circuit": {
@@ -38,11 +38,11 @@
   },
   "spec_ref": "specs/AR-1851.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-14T13:52:50+00:00",
+  "updated_at": "2026-10-14T13:53:22+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -200,3 +200,9 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
   CI/review is green.
 
 - 2026-10-14T13:52:50+00:00: Heartbeat by asb-ar1851-v074-contracts-20261014.
+
+- 2026-10-14T13:53:22+00:00: Blocked and released ownerless: preserve PR #147 at exact head
+  0d3693a24cdb4039ccc65ffc9a391b6b88e29ca5 and its focused/static evidence. Required non-formal
+  strict coverage remains blocked by cross-repair failures in AR-1852 and AR-1853. Complete those
+  repairs, then obtain fresh independent AR-1851 review and exact-head non-formal CI; formal/TLC
+  remains optional under UD-0003. Do not merge or weaken gates.

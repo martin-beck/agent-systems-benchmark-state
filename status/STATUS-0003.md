@@ -1952,11 +1952,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-ar1851-v074-contracts-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. |
@@ -3234,7 +3234,7 @@ flowchart LR
         AR_1848["AR-1848 - Planned"]:::status_planned
         AR_1849["AR-1849 - Open"]:::status_open
         AR_1850["AR-1850 - Done"]:::status_done
-        AR_1851["AR-1851 - In progress"]:::status_in_progress
+        AR_1851["AR-1851 - Blocked"]:::status_blocked
         AR_1852["AR-1852 - Blocked"]:::status_blocked
         AR_1853["AR-1853 - In progress"]:::status_in_progress
         AR_1854["AR-1854 - Planned"]:::status_planned
@@ -4797,3 +4797,5 @@ flowchart LR
     AR_1564 --> AR_1568
     AR_1564 --> AR_1588
     AR_1564 --> AR_1599
+    AR_1564 --> AR_1631
+    AR_1564 --> AR_1653
