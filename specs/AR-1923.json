@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1923.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "envelope", "description": "The immutable envelope admits only the dedicated worktree, its .venv interpreter and pytest/uv tool paths, and focused tests."},
+    {"id": "positive-runtime", "description": "Approved offline python, pytest, and uv commands execute from the materialized state worktree."},
+    {"id": "negative-boundary", "description": "Unapproved executables, paths outside /srv/data/projects, host leakage, network, downloads, and scope escapes fail closed."},
+    {"id": "history", "description": "AR-1922 remains blocked and immutable; no product or formal/TLC history changes."}
+  ],
+  "definition_of_done": ["Bind the schema-valid spec and envelope through handoffctl.", "Run bounded positive and negative runtime tests or record the exact fail-closed blocker."],
+  "inputs": [{"id": "ar1922", "description": "AR-1922 blocked evidence showing missing python, pytest, and uv in the sandbox."}],
+  "outputs": [{"id": "runtime", "description": "Bounded offline test-runtime visibility evidence."}],
+  "allowed_tools": ["python", "pytest", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["network", "runtime-download", "host-mount", "tlc", "formal", "history-rewrite"],
+  "required_evidence_classes": ["contract-test", "mechanical"],
+  "gates": [{"id": "focused-runtime", "description": "Approved runtime positive/negative tests or precise fail-closed blocker."}]
+}
