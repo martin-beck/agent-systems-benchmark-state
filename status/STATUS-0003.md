@@ -2428,11 +2428,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1885-cwd-routing-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Adopt upstream Coordinator multi-root/cwd-routing at exact commit 2493c67f2ea162885b15c648fb3d626c84732170 via development vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, and generated integrity evidence; preserve ASB overlays, views, and immutable AR-1878 through AR-1884. No Agent Relay dependency, formal/TLC gate, runtime download, or direct state-history/file copy. |
@@ -2442,11 +2442,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1886-runner-env-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair only the bounded handoffctl Bubblewrap execution root so approved pinned executables (pwd, git, and sync tooling) are visible for AR-1885 commands. Preserve AR-1885 immutable history; do not add host mounts, network, runtime downloads, scope widening, or gate weakening. |
@@ -2885,6 +2885,20 @@
 | Children | None |
 | Summary | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
+
+### AR-1918 — Repair rustls advisories
+
+| Field | Value |
+| --- | --- |
+| Status | done |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair PR #635&#x27;s hosted Policy, coverage, and supply-chain failure by updating only the Rust dependency manifests and lockfile needed to raise rustls from 0.23.45 to at least 0.23.46 and clear RUSTSEC-2026-0347, RUSTSEC-2026-0348, and RUSTSEC-2026-0349. Preserve advisory gates, offline and locked resolution, unrelated source and state history, and the explicit exclusion of TLC/formal checks. |
+| Next action | Commit signed DCO dependency diff, publish PR, run exact-head hosted CI and merge only when required checks are green. |
 
 
 ## Dependency graph
@@ -3814,8 +3828,8 @@ flowchart LR
         AR_1882["AR-1882 - Blocked"]:::status_blocked
         AR_1883["AR-1883 - Blocked"]:::status_blocked
         AR_1884["AR-1884 - Blocked"]:::status_blocked
-        AR_1885["AR-1885 - In progress"]:::status_in_progress
-        AR_1886["AR-1886 - In progress"]:::status_in_progress
+        AR_1885["AR-1885 - Open"]:::status_open
+        AR_1886["AR-1886 - Open"]:::status_open
         AR_1887["AR-1887 - Blocked"]:::status_blocked
         AR_1888["AR-1888 - Open"]:::status_open
         AR_1889["AR-1889 - Open"]:::status_open
@@ -3850,6 +3864,7 @@ flowchart LR
         AR_1915["AR-1915 - Blocked"]:::status_blocked
         AR_1916["AR-1916 - Blocked"]:::status_blocked
         AR_1917["AR-1917 - Open"]:::status_open
+        AR_1918["AR-1918 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4216,33 +4231,3 @@ flowchart LR
     AR_0517 --> AR_0518
     AR_0517 --> AR_0520
     AR_0518 --> AR_0519
-    AR_0601 --> AR_0405
-    AR_0601 --> AR_0602
-    AR_0601 --> AR_0604
-    AR_0601 --> AR_1015
-    AR_0602 --> AR_1015
-    AR_0603 --> AR_0601
-    AR_0604 --> AR_0602
-    AR_0604 --> AR_1015
-    AR_0701 --> AR_0317
-    AR_0701 --> AR_0702
-    AR_0701 --> AR_0703
-    AR_0701 --> AR_0704
-    AR_0701 --> AR_0707
-    AR_0701 --> AR_0820
-    AR_0701 --> AR_0848
-    AR_0701 --> AR_1007
-    AR_0702 --> AR_0807
-    AR_0702 --> AR_0813
-    AR_0702 --> AR_0816
-    AR_0702 --> AR_0903
-    AR_0702 --> AR_0907
-    AR_0702 --> AR_1006
-    AR_0704 --> AR_0705
-    AR_0704 --> AR_0706
-    AR_0801 --> AR_0802
-    AR_0801 --> AR_0803
-    AR_0801 --> AR_0808
-    AR_0801 --> AR_0820
-    AR_0801 --> AR_0840
-    AR_0801 --> AR_0842
