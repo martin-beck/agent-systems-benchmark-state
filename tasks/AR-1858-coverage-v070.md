@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1858.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-13T19:19:10+00:00",
+  "updated_at": "2026-10-14T14:01:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar1858-coverage-v070"
 }
 ---
@@ -306,3 +306,6 @@ artifact. Do not lower the threshold or merge PR #145.
   paths (handoffctl 163, rollback_control_store 101, sqlite_storage 72, plus runtime/authority
   seams); no additional narrow test-only repair was justified within this bounded resume. No product
   mutation or PR #145 change. AR-1859 remains planned.
+
+- 2026-10-14T14:01:08+00:00: Coordinator-authorized UD-0003 metadata normalization; reopen only to
+  correct next_action while preserving historical formal evidence and coverage gates.
