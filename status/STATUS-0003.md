@@ -2848,11 +2848,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-ar1915-adopt-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Adopt upstream Agent Workflow Coordinator merge a4defa3880b4f371085b0bfd4eef127489c1eab7 into ASB state through the documented clean-source sync-development path. Change only vendored Coordinator files and generated integrity evidence; preserve AR-1904, AR-1906, AR-1909, AR-1912 artifacts and all prior history. No product files, arbitrary paths, network-dependent runtime behavior, claim bypass, or formal/TLC. |
@@ -3819,7 +3819,7 @@ flowchart LR
         AR_1912["AR-1912 - Planned"]:::status_planned
         AR_1913["AR-1913 - Planned"]:::status_planned
         AR_1914["AR-1914 - Planned"]:::status_planned
-        AR_1915["AR-1915 - Open"]:::status_open
+        AR_1915["AR-1915 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4238,5 +4238,3 @@ flowchart LR
     AR_0804 --> AR_0817
     AR_0804 --> AR_0819
     AR_0804 --> AR_0820
-    AR_0804 --> AR_0821
-    AR_0804 --> AR_0870
