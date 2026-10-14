@@ -2358,11 +2358,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-ar1879-runner-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Bind a real isolated ASB state worktree and execution envelope so the narrowly scoped AR-1879 runner/worktree/lock repair can proceed. Preserve AR-1879 blocked history and enable only authorized state-only integration of signed AR-1853 commit 5a703b46651930e244af57cf9fbb843851a86bac. No product, vendor, gate, role-contract, PR, or unrelated task edits. |
@@ -3291,7 +3291,7 @@ flowchart LR
         AR_1877["AR-1877 - Done"]:::status_done
         AR_1878["AR-1878 - In progress"]:::status_in_progress
         AR_1879["AR-1879 - Blocked"]:::status_blocked
-        AR_1880["AR-1880 - In progress"]:::status_in_progress
+        AR_1880["AR-1880 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4757,3 +4757,5 @@ flowchart LR
     AR_1514 --> AR_1526
     AR_1514 --> AR_1551
     AR_1517 --> AR_1518
+    AR_1517 --> AR_1529
+    AR_1519 --> AR_1520
