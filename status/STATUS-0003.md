@@ -2568,11 +2568,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1895-receipt-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/execution_receipt.py for the AR-1894 focused replacement test. Preserve AR-1894 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -3810,7 +3810,7 @@ flowchart LR
         AR_1892["AR-1892 - In progress"]:::status_in_progress
         AR_1893["AR-1893 - Blocked"]:::status_blocked
         AR_1894["AR-1894 - Blocked"]:::status_blocked
-        AR_1895["AR-1895 - In progress"]:::status_in_progress
+        AR_1895["AR-1895 - Blocked"]:::status_blocked
         AR_1896["AR-1896 - In progress"]:::status_in_progress
         AR_1897["AR-1897 - In progress"]:::status_in_progress
         AR_1898["AR-1898 - In progress"]:::status_in_progress
@@ -4238,3 +4238,4 @@ flowchart LR
     AR_0802 --> AR_0809
     AR_0802 --> AR_0872
     AR_0802 --> AR_0903
+    AR_0803 --> AR_0804
