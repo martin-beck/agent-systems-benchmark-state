@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1655](../tasks/AR-1655.md): Paired wizard release and quality gate | Unclaimed | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. |
 | P0 | [AR-1658](../tasks/AR-1658.md): Development release-channel resolver contract | Unclaimed | Define and implement the ASB-side channel option with dev as the default and current-main provenance. | Implement the explicit channel parser/resolver and immutable current-main manifest checks, then add dev/stable/nightly/experimental negative coverage. |
 | P0 | [AR-1659](../tasks/AR-1659.md): Atomic TUI materializer and launch handoff | Unclaimed | Build the selected dev-channel TUI in a temporary location and atomically install and launch it from ASB. | Implement the bounded clone/build/materialize/rollback runner and verify cleanup, manifest compatibility, and launch diagnostics. |
 | P0 | [AR-1660](../tasks/AR-1660.md): Fresh-user setup-to-comparison acceptance runner | Unclaimed | Run one selectable ASB journey from install and wizard setup through benchmark, recording, offline replay, and comparison. | Implement the disposable acceptance runner and capture exact-head human and JSON receipts for the paired qualification gate. |
@@ -84,7 +83,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (625)
+### Done (626)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -485,3 +484,4 @@
 | P0 | [AR-1821](../tasks/AR-1821-ar1817-pr128-integration-recovery.md): AR-1817 PR #128 integration recovery | Unclaimed | Recover the durable task record needed to integrate accepted AR-1817 PR #128 after its original task was removed from current generated state. | Claim this recovery task, verify accepted PR #128 exact head against current main, integrate through the signed local merge path, run exact-main post-merge checks, and close with durable evidence. |
 | P0 | [AR-1822](../tasks/AR-1822-role-removal-expiry.md): Expired role assignment cleanup semantics | Unclaimed | Allow exact-revision roles.remove cleanup of explicitly named expired assignments while preserving fail-closed reads and admission. | Merged exact reviewed PR #140 at 4cea485091; stale assignment ar1774-pr612-review-ad7f1166 removed at role revision 22 to 23; verify roles list, doctor, and post-merge checks before acceptance and release. |
 | P0 | [AR-1823](../tasks/AR-1823-ar1820-receipt-publication.md): AR-1820 receipt publication cleanup | Unclaimed | Publish the already-verified AR-1820 provenance receipt and durable done state. | Publish the already-verified AR-1820 receipt and done transition from the durable current-main state; do not change product or historical PR evidence. |
+| P0 | [AR-1824](../tasks/AR-1824-cli2key-public-composition.md): cli2key public provider composition | Unclaimed | Add public cli2key provider-plan/catalog construction and direct runtime-authority composition. | Implement the cli2key provider-plan/catalog and direct runtime-authority composition seam without reopening AR-1797. |

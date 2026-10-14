@@ -500,13 +500,12 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1878](../tasks/AR-1878.md): Reissue diagnostic catalog task | asb-ar1878-diagnostic-successor-20261014 | Create a fresh successor task for the reviewed control diagnostic catalog repair with a new source-write execution envelope scoped only to the catalog files and required tests/publication. Preserve AR-1863 as immutable blocked history; do not widen or mutate its bound envelope, alter AR-1787/AR-1835, or weaken coordinator gates. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1892](../tasks/AR-1892.md): Admit observation scope | codex-ar1892-observation-scope-20261014 | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. | Run bounded focused recovery scope test through AR-1892 envelope. |
-| P1 | [AR-1897](../tasks/AR-1897.md): Renew implementer assignment | codex-ar1897-role-renewal-20261014 | State-only coordination repair to renew an explicit implementer assignment for the AR-1896 bounded dependency admission. Preserve AR-1896 and earlier histories; reject force-clear, cross-root, network, formal/TLC, or task-scope widening. | Release after signed state repair commit, exact-head review/CI, merge, post-merge assurance, and live doctor. |
 
 ### Open (18)
 
@@ -674,3 +673,4 @@
 | P0 | [AR-1643](../tasks/AR-1643.md): Executable fresh-user quickstart runner | Unclaimed | Make clone-to-wizard-to-benchmark-to-offline-comparison one simple executable journey. | Implement the disposable paired runner after setup-to-runtime, capture/replay, and comparison seams are complete. |
 | P0 | [AR-1653](../tasks/AR-1653.md): Current-main development-channel consumption | Unclaimed | Qualify a clean clone using the default dev channel to install and run the current ASB/TUI heads with rollback evidence. | Run the bounded clean-clone materializer and lifecycle matrix after the paired quickstart runner exists. |
 | P0 | [AR-1654](../tasks/AR-1654.md): Self-explanatory operator quickstart | Unclaimed | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. |
+| P0 | [AR-1655](../tasks/AR-1655.md): Paired wizard release and quality gate | Unclaimed | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. |

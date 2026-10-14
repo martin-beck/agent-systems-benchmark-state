@@ -9,7 +9,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1878 — Reissue diagnostic catalog task](tasks/AR-1878.md) | Create a fresh successor task for the reviewed control diagnostic catalog repair with a new source-write execution envelope scoped only to the catalog files and required tests/publication. Preserve AR-1863 as immutable blocked history; do not widen or mutate its bound envelope, alter AR-1787/AR-1835, or weaken coordinator gates. | Implement the bounded scope and record local acceptance evidence. | asb-ar1878-diagnostic-successor-20261014 |
 | P1 | [AR-1892 — Admit observation scope](tasks/AR-1892.md) | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. | Run bounded focused recovery scope test through AR-1892 envelope. | codex-ar1892-observation-scope-20261014 |
-| P1 | [AR-1897 — Renew implementer assignment](tasks/AR-1897.md) | State-only coordination repair to renew an explicit implementer assignment for the AR-1896 bounded dependency admission. Preserve AR-1896 and earlier histories; reject force-clear, cross-root, network, formal/TLC, or task-scope widening. | Release after signed state repair commit, exact-head review/CI, merge, post-merge assurance, and live doctor. | codex-ar1897-role-renewal-20261014 |
 
 ## Open
 
