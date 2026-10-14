@@ -2172,6 +2172,20 @@
 | Summary | Correct ASB public vendor documentation that still names Coordinator v0.3.5 after the checked-in coordinator.vendor.json adopted v0.7.8, without changing runtime or coordinator behavior. |
 | Next action | Release AR-1866 after exact-main verification. |
 
+### AR-1867 — Legacy reservation recovery
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add a fail-closed ASB downstream handoffctl overlay path to recover expired bound execution reservations from pre-identity claims without direct state edits or weakened reservation structural checks. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3082,6 +3096,7 @@ flowchart LR
         AR_1864["AR-1864 - Done"]:::status_done
         AR_1865["AR-1865 - Blocked"]:::status_blocked
         AR_1866["AR-1866 - Done"]:::status_done
+        AR_1867["AR-1867 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4971,27 +4986,3 @@ flowchart LR
     AR_1734 --> AR_1738
     AR_1737 --> AR_1751
     AR_1738 --> AR_1799
-    AR_1740 --> AR_1745
-    AR_1745 --> AR_1755
-    AR_1745 --> AR_1759
-    AR_1749 --> AR_1753
-    AR_1750 --> AR_1748
-    AR_1753 --> AR_1756
-    AR_1756 --> AR_1795
-    AR_1757 --> AR_1766
-    AR_1759 --> AR_1760
-    AR_1759 --> AR_1761
-    AR_1759 --> AR_1762
-    AR_1760 --> AR_1761
-    AR_1760 --> AR_1762
-    AR_1760 --> AR_1765
-    AR_1760 --> AR_1766
-    AR_1760 --> AR_1781
-    AR_1761 --> AR_1763
-    AR_1761 --> AR_1764
-    AR_1761 --> AR_1765
-    AR_1761 --> AR_1766
-    AR_1761 --> AR_1776
-    AR_1762 --> AR_1763
-    AR_1762 --> AR_1765
-    AR_1762 --> AR_1766

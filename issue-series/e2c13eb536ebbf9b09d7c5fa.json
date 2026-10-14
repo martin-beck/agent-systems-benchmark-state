@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1867",
+  "issue": {
+    "number": 9999,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/9999"
+  },
+  "issue_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "members": [
+    {
+      "acceptance": "Focused positive and negative recovery tests pass; exact reservation/result checks, expiry, structural validation, and explicit legacy acknowledgement remain fail-closed; reviewed signed PR, exact-head CI, merge, and post-merge verification complete.",
+      "depends_on": [],
+      "id": "AR-1867",
+      "ownership": "ASB state coordinator overlay tools/handoffctl.py and focused recovery tests; preserve the vendored Coordinator release and stale claim records.",
+      "scope": "Add a fail-closed ASB downstream handoffctl overlay path to recover expired bound execution reservations from pre-identity claims without direct state edits or weakened reservation structural checks.",
+      "short_title": "Legacy reservation recovery"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
