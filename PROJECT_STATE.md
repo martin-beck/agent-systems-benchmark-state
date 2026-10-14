@@ -34,7 +34,7 @@ Generated from local Git and GitHub. Do not edit.
 | #624 | `feature/ar-1783-installed-workload-selection-and-execution@32f42827367d` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): bind installed workloads before execution |
 | #629 | `codex/ar-1826-explicit-setup-contract@e9d95999c0ca` | `main` | BEHIND | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(config): define explicit setup and plan binding contract |
 | #634 | `codex/ar-1863-control-diagnostic-catalog@6215f49dcb7c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): repair control diagnostic catalog identities |
-| #635 | `codex/ar-1878-diagnostic-catalog-successor@f5763f0bcf45` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): repair diagnostic catalog identities |
+| #635 | `codex/ar-1878-diagnostic-catalog-successor@f5763f0bcf45` | `main` | BLOCKED | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): repair diagnostic catalog identities |
 
 ## Recent workflows
 
@@ -49,6 +49,6 @@ Generated from local Git and GitHub. Do not edit.
 | 38615255626 | `f5763f0bcf45` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 38615255584 | `f5763f0bcf45` | pull_request | Fault assurance | completed:success |
 | 38615255559 | `f5763f0bcf45` | pull_request | Credential-free benchmark path | completed:success |
-| 38615255503 | `f5763f0bcf45` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38615255503 | `f5763f0bcf45` | pull_request | Emulated aarch64 portability | completed:success |
 | 38615255424 | `f5763f0bcf45` | pull_request | Portable protected-main provenance | completed:success |
 | 38473816758 | `6215f49dcb7c` | pull_request | Repository quality | completed:success |
