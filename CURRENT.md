@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1912 — Admit roles dependency](tasks/AR-1912.md) | Create a narrow successor for the missing tools.roles dependency required by the focused scope-admission chain. Admit exactly tools/roles.py and its focused test through handoffctl; do not widen paths, bypass expired claims, alter product files, rewrite prior histories, use network, or run formal/TLC. | Implement the bounded scope and record local acceptance evidence. | codex-ar1912-roles-20261014 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
