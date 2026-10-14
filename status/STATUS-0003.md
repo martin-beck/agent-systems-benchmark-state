@@ -2382,6 +2382,20 @@
 | Summary | Add a narrowly scoped handoffctl recovery path for an expired bound reservation with an exactly matching durable terminal result but no legacy claim_process identity. Reuse AR-1867/AR-1872 evidence and structural fences; preserve exact reservation/result identity, expiry, structural validation, and immutable audit. Do not edit AR-1878 before lease expiry, weaken other recover/abandon cases, or force-clear state. |
 | Next action | Obtain exact-head review and publication for signed product commit 3162fe8be2; retain envelope read-scope and git_metadata admission blockers as non-waived evidence. |
 
+### AR-1882 — Repair terminal-recovery publication capability
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a fresh successor task and immutable execution envelope for publication of the already reviewed terminal-recovery product diff at commit 3162fe8be2. Add only explicit git_metadata/publication capability and the exact reviewed product scope; retain AR-1881 history and do not alter unrelated paths, gates, or product code. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3307,6 +3321,7 @@ flowchart LR
         AR_1879["AR-1879 - Blocked"]:::status_blocked
         AR_1880["AR-1880 - Blocked"]:::status_blocked
         AR_1881["AR-1881 - In progress"]:::status_in_progress
+        AR_1882["AR-1882 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4706,33 +4721,3 @@ flowchart LR
     AR_1480 --> AR_1508
     AR_1480 --> AR_1509
     AR_1484 --> AR_1485
-    AR_1484 --> AR_1486
-    AR_1484 --> AR_1503
-    AR_1484 --> AR_1504
-    AR_1484 --> AR_1505
-    AR_1484 --> AR_1506
-    AR_1484 --> AR_1507
-    AR_1484 --> AR_1508
-    AR_1484 --> AR_1509
-    AR_1484 --> AR_1511
-    AR_1484 --> AR_1512
-    AR_1484 --> AR_1513
-    AR_1485 --> AR_1486
-    AR_1485 --> AR_1503
-    AR_1485 --> AR_1504
-    AR_1485 --> AR_1505
-    AR_1485 --> AR_1506
-    AR_1485 --> AR_1507
-    AR_1485 --> AR_1508
-    AR_1485 --> AR_1509
-    AR_1486 --> AR_1487
-    AR_1487 --> AR_1488
-    AR_1488 --> AR_1489
-    AR_1488 --> AR_1490
-    AR_1488 --> AR_1491
-    AR_1489 --> AR_1490
-    AR_1489 --> AR_1491
-    AR_1491 --> AR_1492
-    AR_1491 --> AR_1493
-    AR_1491 --> AR_1495
-    AR_1492 --> AR_1493

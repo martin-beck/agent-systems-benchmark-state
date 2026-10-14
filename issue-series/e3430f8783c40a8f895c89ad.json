@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1882",
+  "issue": {
+    "number": 10013,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10013"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Provide an immutable, scope-bound successor envelope with explicit schema-v2 git_metadata and network publication capabilities for the already reviewed terminal-recovery product commit 3162fe8be2; preserve AR-1881 evidence and do not widen paths or weaken gates. Record exact-head review, CI, merge, and post-merge evidence when available; otherwise record the precise blocker.",
+      "depends_on": [],
+      "id": "AR-1882",
+      "ownership": "ASB publication-capability repair for the reviewed terminal-recovery product diff only; preserve AR-1881 immutable evidence, product commit 3162fe8be2, and all existing lifecycle and gate boundaries.",
+      "scope": "Create a fresh successor task and immutable execution envelope for publication of the already reviewed terminal-recovery product diff at commit 3162fe8be2. Add only explicit git_metadata/publication capability and the exact reviewed product scope; retain AR-1881 history and do not alter unrelated paths, gates, or product code.",
+      "short_title": "Repair terminal-recovery publication capability"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
