@@ -3026,6 +3026,20 @@
 | Summary | Create a fresh narrow state-only repair for the AR-1926 accepted evidence-ledger artifact digest mismatch. Reconcile the privacy-safe evidence artifact and its ledger through handoffctl, restore doctor --live, preserve immutable AR-1926 and AR-1901 history, and record the distinct AR-1901 cross-root blocker as a separate next action; do not reopen or rewrite prior tasks and do not run formal or TLC gates. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1929 — Correct AR-1926 evidence ledger
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a narrow successor for the blocked AR-1928 digest repair. Reproduce the bounded AR-1926 runtime/scope checks, write only a privacy-safe successor evidence artifact, and use v0.7.13 repair-predicate-ledger with exact revision, predicate, evidence class, reference, and digest if its done-task contract admits the correction. Keep AR-1926 and AR-1928 historical rows immutable except for the explicitly audited appended correction row; otherwise fail closed with exact evidence. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4000,6 +4014,7 @@ flowchart LR
         AR_1925["AR-1925 - Blocked"]:::status_blocked
         AR_1926["AR-1926 - Done"]:::status_done
         AR_1928["AR-1928 - Blocked"]:::status_blocked
+        AR_1929["AR-1929 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4040,39 +4055,3 @@ flowchart LR
     AR_0101 --> AR_0304
     AR_0101 --> AR_0305
     AR_0101 --> AR_0306
-    AR_0101 --> AR_0307
-    AR_0101 --> AR_0308
-    AR_0101 --> AR_0309
-    AR_0101 --> AR_0310
-    AR_0101 --> AR_0317
-    AR_0101 --> AR_0401
-    AR_0101 --> AR_0502
-    AR_0101 --> AR_0517
-    AR_0101 --> AR_0601
-    AR_0101 --> AR_0603
-    AR_0101 --> AR_0801
-    AR_0101 --> AR_0803
-    AR_0101 --> AR_0840
-    AR_0101 --> AR_0847
-    AR_0101 --> AR_0857
-    AR_0101 --> AR_0863
-    AR_0101 --> AR_0875
-    AR_0101 --> AR_0901
-    AR_0101 --> AR_0904
-    AR_0101 --> AR_0908
-    AR_0101 --> AR_0909
-    AR_0101 --> AR_1001
-    AR_0101 --> AR_1003
-    AR_0101 --> AR_1005
-    AR_0101 --> AR_1013
-    AR_0102 --> AR_0103
-    AR_0102 --> AR_0201
-    AR_0102 --> AR_0204
-    AR_0102 --> AR_0301
-    AR_0102 --> AR_0302
-    AR_0102 --> AR_0303
-    AR_0102 --> AR_0304
-    AR_0102 --> AR_0305
-    AR_0102 --> AR_0306
-    AR_0102 --> AR_0307
-    AR_0102 --> AR_0308
