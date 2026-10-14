@@ -2344,11 +2344,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-ar1879-runner-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Fresh successor for AR-1852 runner, worktree, and coordinator-lock repair. Repair only runner-root/worktree binding, executable visibility, and lock contention needed to rerun exact PR #148 head 7b46c6b076 role and locked-full gates. Preserve AR-1852, strict authorization, and unrelated failures. Integrate signed state-only AR-1853 commit 5a703b4665 onto ASB state main through handoffctl; change no product files. Record exact state and doctor evidence. |
@@ -3276,7 +3276,7 @@ flowchart LR
         AR_1876["AR-1876 - Superseded"]:::status_superseded
         AR_1877["AR-1877 - Done"]:::status_done
         AR_1878["AR-1878 - In progress"]:::status_in_progress
-        AR_1879["AR-1879 - In progress"]:::status_in_progress
+        AR_1879["AR-1879 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4773,3 +4773,4 @@ flowchart LR
     AR_1534 --> AR_1535
     AR_1534 --> AR_1536
     AR_1534 --> AR_1542
+    AR_1534 --> AR_1543
