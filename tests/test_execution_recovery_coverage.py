@@ -126,7 +126,9 @@ class LifecycleTests(unittest.TestCase):
     def test_start_success_and_guard_paths(self) -> None:
         runtime = RuntimeDouble()
         meta = self.meta()
-        self.assertIn(RESERVATION["execution_id"], execution_lifecycle.start(runtime, self.start_args(), meta))
+        self.assertIn(
+            RESERVATION["execution_id"], execution_lifecycle.start(runtime, self.start_args(), meta)
+        )
         self.assertEqual(RESERVATION["execution_id"], meta["execution_reservation"]["execution_id"])
         with self.assertRaisesRegex(RuntimeError, "live execution"):
             execution_lifecycle.start(RuntimeDouble(live={}), self.start_args(), self.meta())
@@ -136,7 +138,9 @@ class LifecycleTests(unittest.TestCase):
             execution_lifecycle.start(runtime, self.start_args(execution_id="bad"), self.meta())
         with self.assertRaisesRegex(RuntimeError, "future"):
             execution_lifecycle.start(
-                runtime, self.start_args(execution_expires_at="2000-01-01T00:00:00+00:00"), self.meta()
+                runtime,
+                self.start_args(execution_expires_at="2000-01-01T00:00:00+00:00"),
+                self.meta(),
             )
 
     def test_finish_result_recover_and_abandon(self) -> None:
@@ -159,7 +163,9 @@ class LifecycleTests(unittest.TestCase):
         meta["claim_expires"] = "2000-01-01T00:00:00+00:00"
         meta.pop("execution_result", None)
         abandon = abandonment_args(allow_legacy_without_identity=True)
-        self.assertIn("Abandoned", execution_lifecycle.abandon(RuntimeDouble(result=False), abandon, meta))
+        self.assertIn(
+            "Abandoned", execution_lifecycle.abandon(RuntimeDouble(result=False), abandon, meta)
+        )
         self.assertEqual("open", meta["status"])
         self.assertEqual("", meta["owner"])
 
