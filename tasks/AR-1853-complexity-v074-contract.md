@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1853-complexity-v074-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T00:45:22+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1853",
   "next_action": "Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence.",
-  "owner": "ar1853-complexity-codex",
+  "owner": "",
   "plan": "../plans/AR-1853-complexity-v074-contract.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1853.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Align the complexity-budget contract with Coordinator v0.7.4.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Complexity v0.7.4 compatibility contract",
-  "updated_at": "2026-10-14T00:15:22+00:00",
+  "updated_at": "2026-10-14T00:15:23+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1853"
 }
 ---
@@ -67,3 +67,9 @@ contract exposed by exact Coordinator v0.7.4 adoption.
   PR #146 and its dependency-wait evidence.
 
 - 2026-10-14T00:15:22+00:00: Claimed by ar1853-complexity-codex.
+
+- 2026-10-14T00:15:23+00:00: Dependency blocker confirmed live 2026-10-14: AR-1851 and AR-1852 are
+  both blocked, so the recorded rerun prerequisite is unmet. Candidate 56371a22ad is not in
+  origin/main and no live PR matches that head; historical PR #146 is closed/unmerged. No product
+  gates or duplicate publication performed; rerun exact-head qualification only after dependency
+  repairs are merged or the contract is explicitly rescoped.
