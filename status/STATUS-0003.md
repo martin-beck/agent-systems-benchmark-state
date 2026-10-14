@@ -2148,11 +2148,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb_ar1865_role_cleanup |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. |
@@ -3080,7 +3080,7 @@ flowchart LR
         AR_1862["AR-1862 - Done"]:::status_done
         AR_1863["AR-1863 - Open"]:::status_open
         AR_1864["AR-1864 - Done"]:::status_done
-        AR_1865["AR-1865 - In progress"]:::status_in_progress
+        AR_1865["AR-1865 - Blocked"]:::status_blocked
         AR_1866["AR-1866 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -5002,3 +5002,4 @@ flowchart LR
     AR_1763 --> AR_1835
     AR_1764 --> AR_1765
     AR_1764 --> AR_1780
+    AR_1764 --> AR_1783
