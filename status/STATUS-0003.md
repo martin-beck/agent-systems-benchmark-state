@@ -2666,7 +2666,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
@@ -3624,7 +3624,7 @@ flowchart LR
         direction TB
         AR_1900["AR-1900 - In progress"]:::status_in_progress
         AR_1901["AR-1901 - Open"]:::status_open
-        AR_1902["AR-1902 - Planned"]:::status_planned
+        AR_1902["AR-1902 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
