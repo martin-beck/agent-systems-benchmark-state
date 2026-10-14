@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1868 — Synchronize task schema vocabulary](tasks/AR-1868.md) | Update only schema/task-schema.json and generated validation fixtures so accepted modern task-record metadata is validated by ASB while unknown fields remain rejected; preserve ASB-specific lifecycle constraints. | Implement the bounded scope and record local acceptance evidence. | codex-asb-queue-20261014 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |

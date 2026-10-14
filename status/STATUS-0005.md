@@ -378,12 +378,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1868](../tasks/AR-1868.md): Synchronize task schema vocabulary | codex-asb-queue-20261014 | Update only schema/task-schema.json and generated validation fixtures so accepted modern task-record metadata is validated by ASB while unknown fields remain rejected; preserve ASB-specific lifecycle constraints. | Implement the bounded scope and record local acceptance evidence. |
-
 ### Open (10)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -604,7 +598,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (618)
+### Done (619)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -664,3 +658,4 @@
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Monitor PR #225 fresh gates at exact head 20db76e; after green review/merge, implement AR-1160 runtime campaign launch/progress/cancel, cassette coverage reconciliation, and offline-default activation. |
 | P0 | [AR-1190](../tasks/AR-1190.md): Authenticated agent catalog control | Unclaimed | Expose a verified, capability-aware local-agent catalog to asb-tui. | Wait for exact-main post-merge assurance on 748c16ba67b9cff5a08558784dd183d020a1f2d4, then qualify ASB v1.4 fixtures against asb-tui PR #86. |
 | P0 | [AR-1191](../tasks/AR-1191.md): Verified local-agent lifecycle | Unclaimed | Install, activate, verify and recover supported local benchmark agents safely. | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. |
+| P0 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Unclaimed | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Completed: PR #170 merged; stale duplicate PR #171 requires authorized cleanup. |
