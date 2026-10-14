@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1875 — Repair AR-1863 source-write envelope](tasks/AR-1875.md) | Create and bind a successor AR-1863 execution envelope that authorizes only the reviewed diagnostic-catalog source-write and publication paths, preserving the existing AR-1863 non-goals, path scope, fail-closed gates, and exact current-main review evidence. Do not modify AR-1787 or AR-1835. | Implement the bounded scope and record local acceptance evidence. | codex-ar1875-envelope-repair-20261014 |
-| P1 | [AR-1877 — Adopt envelope replacement](tasks/AR-1877.md) | Adopt the merged upstream Agent Workflow Coordinator successor-envelope replacement capability at commit c604e1dd82401a3000d9ec083e7b4fba22f6d513 using the documented vendor sync path. Update only coordinator vendor files and generated integrity evidence, preserve ASB overlays and task history, then validate AR-1863 envelope replacement without direct edits or gate weakening. | Implement the bounded scope and record local acceptance evidence. | asb-ar1877-coordinator-adoption-20261014 |
 
 ## Open
 

@@ -2316,11 +2316,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-ar1877-coordinator-adoption-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Adopt the merged upstream Agent Workflow Coordinator successor-envelope replacement capability at commit c604e1dd82401a3000d9ec083e7b4fba22f6d513 using the documented vendor sync path. Update only coordinator vendor files and generated integrity evidence, preserve ASB overlays and task history, then validate AR-1863 envelope replacement without direct edits or gate weakening. |
@@ -3246,7 +3246,7 @@ flowchart LR
         AR_1874["AR-1874 - Superseded"]:::status_superseded
         AR_1875["AR-1875 - In progress"]:::status_in_progress
         AR_1876["AR-1876 - Blocked"]:::status_blocked
-        AR_1877["AR-1877 - In progress"]:::status_in_progress
+        AR_1877["AR-1877 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4830,3 +4830,5 @@ flowchart LR
     AR_1599 --> AR_1611
     AR_1600 --> AR_1601
     AR_1600 --> AR_1611
+    AR_1601 --> AR_1603
+    AR_1601 --> AR_1607
