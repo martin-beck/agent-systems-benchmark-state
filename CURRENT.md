@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Blocked: AR-0035 v2 envelope cannot bind because durable role state contains expired assignments; clean expired roles through coordinator authority, then bind AR-1863-e3 and rerun exact-head publication preflight. Do not direct-merge. | codex-ar1863-catalog-repair-20261014 |
+| P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded control diagnostic catalog repair and record local acceptance evidence after the coordinator binds the reviewed source-write successor envelope; do not change AR-1787 or AR-1835. | codex-ar1863-catalog-repair-20261014 |
 
 ## Open
 

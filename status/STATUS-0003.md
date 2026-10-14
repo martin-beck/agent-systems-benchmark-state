@@ -2128,7 +2128,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. |
-| Next action | Blocked: AR-0035 v2 envelope cannot bind because durable role state contains expired assignments; clean expired roles through coordinator authority, then bind AR-1863-e3 and rerun exact-head publication preflight. Do not direct-merge. |
+| Next action | Implement the bounded control diagnostic catalog repair and record local acceptance evidence after the coordinator binds the reviewed source-write successor envelope; do not change AR-1787 or AR-1835. |
 
 ### AR-1864 — Align task-record schema vocabulary
 
@@ -4847,3 +4847,5 @@ flowchart LR
     AR_1611 --> AR_1614
     AR_1611 --> AR_1659
     AR_1612 --> AR_1613
+    AR_1612 --> AR_1615
+    AR_1612 --> AR_1617
