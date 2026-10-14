@@ -2372,11 +2372,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1881-terminal-recovery-luna-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Add a narrowly scoped handoffctl recovery path for an expired bound reservation with an exactly matching durable terminal result but no legacy claim_process identity. Reuse AR-1867/AR-1872 evidence and structural fences; preserve exact reservation/result identity, expiry, structural validation, and immutable audit. Do not edit AR-1878 before lease expiry, weaken other recover/abandon cases, or force-clear state. |
@@ -3306,7 +3306,7 @@ flowchart LR
         AR_1878["AR-1878 - In progress"]:::status_in_progress
         AR_1879["AR-1879 - Blocked"]:::status_blocked
         AR_1880["AR-1880 - Blocked"]:::status_blocked
-        AR_1881["AR-1881 - Open"]:::status_open
+        AR_1881["AR-1881 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4740,5 +4740,3 @@ flowchart LR
     AR_1493 --> AR_1497
     AR_1496 --> AR_1199
     AR_1496 --> AR_1498
-    AR_1496 --> AR_1499
-    AR_1498 --> AR_1199
