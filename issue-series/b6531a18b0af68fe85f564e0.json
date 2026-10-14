@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1895",
+  "issue": {
+    "number": 10026,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10026"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Bind exact read scope and focused test; record pass or fail-closed result.",
+      "depends_on": [],
+      "id": "AR-1895",
+      "ownership": "ASB execution-envelope scope admission only; no product/vendor/history changes.",
+      "scope": "State-only successor admitting exactly tools/execution_receipt.py for the AR-1894 focused replacement test. Preserve AR-1894 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC.",
+      "short_title": "Admit receipt dependency"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
