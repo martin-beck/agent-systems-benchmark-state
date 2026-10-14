@@ -10,7 +10,6 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker, ValidationError
 
-
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -76,23 +75,27 @@ class TaskRecordSchemaTests(unittest.TestCase):
             "returncode": 0,
             "recorded_at": "2026-10-13T22:00:00+00:00",
         }
-        value["retry_circuit"]["attempts"] = [{
-            "identity": "sha256:" + "d" * 64,
-            "failure": "RETRYABLE",
-            "progress_digest": "sha256:" + "e" * 64,
-            "task_revision": 2,
-            "recorded_at": "2026-10-13T22:00:00+00:00",
-            "window": 3,
-        }]
-        value["retry_circuit"]["recoveries"] = [{
-            "identity": "sha256:" + "d" * 64,
-            "progress_digest": "sha256:" + "e" * 64,
-            "kind": "checkpoint",
-            "reason": "Saved checkpoint.",
-            "task_revision": 2,
-            "recorded_at": "2026-10-13T22:01:00+00:00",
-            "checkpoint_commit": "0123456789abcdef0123456789abcdef01234567",
-        }]
+        value["retry_circuit"]["attempts"] = [
+            {
+                "identity": "sha256:" + "d" * 64,
+                "failure": "RETRYABLE",
+                "progress_digest": "sha256:" + "e" * 64,
+                "task_revision": 2,
+                "recorded_at": "2026-10-13T22:00:00+00:00",
+                "window": 3,
+            }
+        ]
+        value["retry_circuit"]["recoveries"] = [
+            {
+                "identity": "sha256:" + "d" * 64,
+                "progress_digest": "sha256:" + "e" * 64,
+                "kind": "checkpoint",
+                "reason": "Saved checkpoint.",
+                "task_revision": 2,
+                "recorded_at": "2026-10-13T22:01:00+00:00",
+                "checkpoint_commit": "0123456789abcdef0123456789abcdef01234567",
+            }
+        ]
         self.validator.validate(value)
 
     def test_unknown_execution_field_is_rejected(self) -> None:
@@ -117,15 +120,17 @@ class TaskRecordSchemaTests(unittest.TestCase):
 
     def test_unknown_retry_field_is_rejected(self) -> None:
         invalid = record()
-        invalid["retry_circuit"]["attempts"] = [{
-            "identity": "sha256:" + "d" * 64,
-            "failure": "RETRYABLE",
-            "progress_digest": "sha256:" + "e" * 64,
-            "task_revision": 2,
-            "recorded_at": "2026-10-13T22:00:00+00:00",
-            "window": 3,
-            "unexpected": True,
-        }]
+        invalid["retry_circuit"]["attempts"] = [
+            {
+                "identity": "sha256:" + "d" * 64,
+                "failure": "RETRYABLE",
+                "progress_digest": "sha256:" + "e" * 64,
+                "task_revision": 2,
+                "recorded_at": "2026-10-13T22:00:00+00:00",
+                "window": 3,
+                "unexpected": True,
+            }
+        ]
         with self.assertRaises(ValidationError):
             self.validator.validate(invalid)
 

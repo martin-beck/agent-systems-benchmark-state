@@ -168,7 +168,8 @@ class HandoffRecoveryTest(unittest.TestCase):
                 )
             BASE.CORE.mutate(
                 BASE.argparse.Namespace(
-                    task="AR-0001", expected_revision=1,
+                    task="AR-0001",
+                    expected_revision=1,
                     allow_legacy_without_identity=True,
                     note="Confirmed this pre-identity reservation is abandoned.",
                 ),
