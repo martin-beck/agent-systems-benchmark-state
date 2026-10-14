@@ -2246,11 +2246,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-serial-repair-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Add a narrowly scoped handoffctl recovery path for expired bound execution reservations whose original claim lacks worker PID/start-time identity, reusing only the AR-1867 legacy-recovery contract where explicit operator evidence, exact reservation/result matching, expiry, structural validation, and fail-closed identity checks remain mandatory. Do not edit AR-1871 state directly or force-clear reservations. |
@@ -3185,7 +3185,7 @@ flowchart LR
         AR_1869["AR-1869 - Open"]:::status_open
         AR_1870["AR-1870 - Open"]:::status_open
         AR_1871["AR-1871 - In progress"]:::status_in_progress
-        AR_1872["AR-1872 - Open"]:::status_open
+        AR_1872["AR-1872 - In progress"]:::status_in_progress
         AR_1873["AR-1873 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -4884,5 +4884,3 @@ flowchart LR
     AR_1641 --> AR_1613
     AR_1641 --> AR_1622
     AR_1641 --> AR_1643
-    AR_1641 --> AR_1645
-    AR_1641 --> AR_1657
