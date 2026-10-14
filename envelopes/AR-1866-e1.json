@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1866-e1",
+  "envelope_revision": 1,
+  "task": "AR-1866",
+  "task_revision": 5,
+  "spec_ref": "specs/AR-1866.json",
+  "spec_revision": 1,
+  "outputs": [
+    {"id": "documentation", "description": "Verify the bounded README/vendor documentation repair."},
+    {"id": "publication", "description": "Verify independent review, exact-head CI, merge, and post-merge evidence."}
+  ],
+  "non_goals": ["Do not change runtime source, tests, gates, or AR-1865 role cleanup.", "Do not alter .runtime state."],
+  "path_scope": {"read": ["README.md", "coordinator.vendor.json", "docs"], "write": ["README.md", "docs"]},
+  "command_classes": {"read": {"allowed": true}, "test": {"allowed": true, "timeout_seconds": 900}, "source-write": {"allowed": true, "timeout_seconds": 900}, "git-publication": {"allowed": true, "timeout_seconds": 900}},
+  "evidence": [{"id": "documentation", "class": "mechanical", "required": true}, {"id": "publication", "class": "hosted", "required": true}],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}, {"id": "runtime", "kind": "deny"}]
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1866.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "vendor-doc-version", "description": "Public README and directly related vendor documentation identify Coordinator v0.7.8 consistently with coordinator.vendor.json."},
+    {"id": "bounded-diff", "description": "No runtime, tests, gates, or coordination implementation files change."},
+    {"id": "quality", "description": "Documentation/vendor consistency checks and applicable quality gates pass."},
+    {"id": "reviewed-publication", "description": "Independent exact-head review, SSH-signed DCO publication, green CI, merge, and post-merge verification pass."}
+  ],
+  "definition_of_done": [
+    "Stale public Coordinator v0.3.5 documentation is corrected to v0.7.8.",
+    "The product diff is limited to README and directly related vendor documentation.",
+    "Focused/full applicable gates, review, merge, and post-merge evidence are durable."
+  ],
+  "inputs": [
+    {"id": "vendor-manifest", "description": "Checked-in coordinator.vendor.json and its v0.7.8 manifest."},
+    {"id": "public-docs", "description": "ASB README.md and directly related public vendor documentation."}
+  ],
+  "outputs": [
+    {"id": "documentation-repair", "description": "Consistent public Coordinator v0.7.8 documentation."},
+    {"id": "gate-evidence", "description": "Privacy-safe validation, review, CI, merge, and post-merge receipts."}
+  ],
+  "allowed_tools": ["git", "python3", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["runtime-source-edit", "gate-weakening", "credential-output", "raw-transcript-retention", "runtime-network", "history-rewrite", "force-push"],
+  "required_evidence_classes": ["mechanical", "hosted"],
+  "gates": [
+    {"id": "documentation", "description": "README/vendor consistency checks pass."},
+    {"id": "quality", "description": "Applicable product quality gates pass."},
+    {"id": "review-ci", "description": "Independent review, signed DCO, exact-head CI, merge, and post-merge workflows pass."}
+  ]
+}
