@@ -2170,7 +2170,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Correct ASB public vendor documentation that still names Coordinator v0.3.5 after the checked-in coordinator.vendor.json adopted v0.7.8, without changing runtime or coordinator behavior. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Commit the three bounded state documentation edits through reviewed publication; product tree remains unchanged. |
 
 
 ## Dependency graph
@@ -4998,5 +4998,3 @@ flowchart LR
     AR_1762 --> AR_1776
     AR_1763 --> AR_1764
     AR_1763 --> AR_1765
-    AR_1763 --> AR_1783
-    AR_1763 --> AR_1835
