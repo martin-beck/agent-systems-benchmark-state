@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_0102 --> AR_0307
+    AR_0102 --> AR_0308
+    AR_0102 --> AR_0309
     AR_0102 --> AR_0317
     AR_0102 --> AR_0318
     AR_0102 --> AR_0503
@@ -2313,4 +2316,3 @@
 | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) |
 | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1358](../tasks/AR-1358-runtime-enrollment-cli-dispatch.md), [AR-1359](../tasks/AR-1359-runtime-control-bridge.md), [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md), [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md), [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md), [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md) |
 | [AR-1358](../tasks/AR-1358-runtime-enrollment-cli-dispatch.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | None |
-| [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md), [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md), [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md) |
