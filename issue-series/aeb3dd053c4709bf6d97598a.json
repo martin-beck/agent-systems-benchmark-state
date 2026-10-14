@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1875",
+  "issue": {
+    "number": 10006,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10006"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "A signed successor envelope is schema-valid, bound to AR-1863 at the current task revision, admits only the reviewed catalog paths and required tests/publication, and handoffctl preflight plus doctor pass without direct state edits or gate weakening.",
+      "depends_on": [],
+      "id": "AR-1875",
+      "ownership": "ASB state envelope and handoffctl coordination metadata for AR-1863 only; no product source or unrelated task changes.",
+      "scope": "Create and bind a successor AR-1863 execution envelope that authorizes only the reviewed diagnostic-catalog source-write and publication paths, preserving the existing AR-1863 non-goals, path scope, fail-closed gates, and exact current-main review evidence. Do not modify AR-1787 or AR-1835.",
+      "short_title": "Repair AR-1863 source-write envelope"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
