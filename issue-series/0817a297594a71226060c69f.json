@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1924",
+  "issue": {
+    "number": 10055,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10055"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Positive bounded tests execute the approved python, pytest, and uv entrypoints and a focused test from the materialized worktree. Negative tests reject unapproved paths, scope escapes, host leakage, network/download attempts, and arbitrary mounts. Close only with evidence or record the exact fail-closed blocker.",
+      "depends_on": [],
+      "id": "AR-1924",
+      "ownership": "ASB handoffctl sandbox runtime materialization and focused tests only; no product behavior, arbitrary mounts, runtime acquisition, gate weakening, or formal/TLC.",
+      "scope": "Create the successor for blocked AR-1923 by materializing only reviewed offline runtime/bin/python, runtime/bin/pytest, and runtime/bin/uv entrypoints under /srv/data/projects, using already-installed local tools and no download, network, or host mount. Preserve AR-1923 and earlier histories, path scopes, network denial, and formal/TLC exclusion.",
+      "short_title": "Materialize sandbox test runtime"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

@@ -1,5 +1,35 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_0303 --> AR_0311
+    AR_0303 --> AR_0312
+    AR_0303 --> AR_0315
+    AR_0303 --> AR_0316
+    AR_0303 --> AR_0505
+    AR_0303 --> AR_0508
+    AR_0303 --> AR_0850
+    AR_0303 --> AR_1003
+    AR_0304 --> AR_0311
+    AR_0304 --> AR_0312
+    AR_0304 --> AR_0315
+    AR_0304 --> AR_0316
+    AR_0304 --> AR_0505
+    AR_0304 --> AR_0509
+    AR_0304 --> AR_1003
+    AR_0305 --> AR_0311
+    AR_0305 --> AR_0312
+    AR_0305 --> AR_0315
+    AR_0305 --> AR_0316
+    AR_0305 --> AR_0510
+    AR_0306 --> AR_0311
+    AR_0306 --> AR_0312
+    AR_0306 --> AR_0315
+    AR_0306 --> AR_0316
+    AR_0306 --> AR_0511
+    AR_0307 --> AR_0311
+    AR_0307 --> AR_0312
+    AR_0307 --> AR_0315
+    AR_0307 --> AR_0316
+    AR_0307 --> AR_0512
     AR_0308 --> AR_0311
     AR_0308 --> AR_0312
     AR_0308 --> AR_0315
@@ -2193,4 +2223,3 @@
 | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md), [AR-1376](../tasks/AR-1376-runtime-live-adapter.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md), [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md), [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md), [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md) |
 | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md) |
 | [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md), [AR-1376](../tasks/AR-1376-runtime-live-adapter.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) |
-| [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md) | [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) |
