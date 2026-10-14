@@ -80,6 +80,24 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
             target,
             handoffctl.binding_artifact_path(argparse.Namespace(spec_ref="spec.json"), "bind-spec"),
         )
+        directory = self.root / "directory"
+        directory.mkdir()
+        self.assertIsNone(
+            handoffctl.binding_artifact_path(argparse.Namespace(spec_ref="directory"), "bind-spec")
+        )
+        link = self.root / "link.json"
+        link.symlink_to(target)
+        self.assertIsNone(
+            handoffctl.binding_artifact_path(argparse.Namespace(spec_ref="link.json"), "bind-spec")
+        )
+        oversized = self.root / "oversized.json"
+        with oversized.open("wb") as stream:
+            stream.truncate(4_194_305)
+        self.assertIsNone(
+            handoffctl.binding_artifact_path(
+                argparse.Namespace(spec_ref="oversized.json"), "bind-spec"
+            )
+        )
 
     def test_snapshot_rejects_validation_and_backend_races(self) -> None:
         for label, selections, errors, message in (

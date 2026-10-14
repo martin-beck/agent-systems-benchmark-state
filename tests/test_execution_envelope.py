@@ -164,6 +164,16 @@ class ExecutionEnvelopeTests(unittest.TestCase):
             preflight(meta, "worker", "git-publication", ["src"], self.worktree, True).code,
         )
         self.assertTrue(errors({**value, "capabilities": {"git_metadata": {"allowed": True}}}))
+        command_classes = cast(dict[str, dict[str, object]], value["command_classes"])
+        command_classes["git-publication"]["allowed"] = True
+        value["capabilities"] = {"git_metadata": {"allowed": False}, "network": {"allowed": False}}
+        metadata_denied = self.meta()
+        metadata_denied["execution_envelope"] = value
+        metadata_denied["execution_envelope_digest"] = canonical_digest(value)
+        self.assertEqual(
+            "GIT_METADATA_CAPABILITY_DENIED",
+            preflight(metadata_denied, "worker", "git-publication", ["src"], self.worktree).code,
+        )
 
     def test_validator_rejects_every_private_shape_boundary(self) -> None:
         value = envelope()
