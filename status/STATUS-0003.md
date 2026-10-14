@@ -2274,11 +2274,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-asb-coordinator-v0711-upgrade-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Adopt the exact signed upstream Agent Workflow Coordinator v0.7.11 release in the ASB state repository using the documented vendor sync path. Preserve ASB-owned overlays, task state, formal inventories, generated views, and fail-closed lifecycle behavior; do not patch vendored bytes or weaken existing gates. |
@@ -3201,7 +3201,7 @@ flowchart LR
         AR_1871["AR-1871 - In progress"]:::status_in_progress
         AR_1872["AR-1872 - Blocked"]:::status_blocked
         AR_1873["AR-1873 - Planned"]:::status_planned
-        AR_1874["AR-1874 - Open"]:::status_open
+        AR_1874["AR-1874 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4870,5 +4870,3 @@ flowchart LR
     AR_1632 --> AR_1644
     AR_1633 --> AR_1632
     AR_1633 --> AR_1634
-    AR_1634 --> AR_1615
-    AR_1634 --> AR_1632

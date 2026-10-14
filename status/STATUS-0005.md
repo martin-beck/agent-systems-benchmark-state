@@ -378,15 +378,16 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | asb_ar1773_docker_runner_luna | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Repair the coordinator Bubblewrap runtime root to mount the approved pinned Cargo toolchain, compiler/linker support, complete workspace source, and required identity files through an authorized runner; then rerun exact-head focused and full tests through handoffctl. No product source repair is justified. |
 | P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | ar1852-env-repair-luna5 | Align role-store authorization tests with Coordinator v0.7.4. | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. |
 | P1 | [AR-1871](../tasks/AR-1871.md): Integrate schema ledger fix | asb_ar1871_schema_ledger_integration | Integrate independently reviewed AR-1868 schema vocabulary repair and AR-1870 ledger digest repair on current main, changing only schema/task-schema.json, tests/test_task_record_schema.py, and AR-1861/AR-1862 evidence_ledger blocks. This successor explicitly depends on AR-1868 and AR-1870 review evidence; do not include checkpoints, sessions, projections, runtime state, or unrelated files. | Publish exact-head signed integration PR; obtain independent review; run green CI; merge via handoffctl; post-merge verify schema and both evidence ledgers. |
+| P1 | [AR-1874](../tasks/AR-1874.md): Upgrade Coordinator v0.7.11 | codex-asb-coordinator-v0711-upgrade-20261014 | Adopt the exact signed upstream Agent Workflow Coordinator v0.7.11 release in the ASB state repository using the documented vendor sync path. Preserve ASB-owned overlays, task state, formal inventories, generated views, and fail-closed lifecycle behavior; do not patch vendored bytes or weaken existing gates. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (9)
+### Open (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -398,7 +399,6 @@
 | P1 | [AR-1868](../tasks/AR-1868.md): Synchronize task schema vocabulary | Unclaimed | Update only schema/task-schema.json and generated validation fixtures so accepted modern task-record metadata is validated by ASB while unknown fields remain rejected; preserve ASB-specific lifecycle constraints. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1869](../tasks/AR-1869.md): Repair evidence ledger digests | Unclaimed | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. | Repair PR #164 scope at a fresh exact head: retain only the two AR-1861/AR-1862 evidence-ledger digest updates, restore/rebase away schema/task-record, checkpoint/session, and test changes; rerun focused/full gates and request fresh independent review. |
 | P1 | [AR-1870](../tasks/AR-1870.md): Repair ledger digests only | Unclaimed | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes, leaving schema, tests, checkpoints, sessions, predicates, and all other task fields unchanged. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1874](../tasks/AR-1874.md): Upgrade Coordinator v0.7.11 | Unclaimed | Adopt the exact signed upstream Agent Workflow Coordinator v0.7.11 release in the ASB state repository using the documented vendor sync path. Preserve ASB-owned overlays, task state, formal inventories, generated views, and fail-closed lifecycle behavior; do not patch vendored bytes or weaken existing gates. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (93)
 
