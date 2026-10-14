@@ -2620,6 +2620,20 @@
 | Summary | State-only successor admitting exactly tools/change_drift.py for the AR-1896 focused replacement test. Preserve AR-1897, AR-1896 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1899 — Admit command-results dependency
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only successor admitting exactly tools/command_results.py for the AR-1898 focused replacement test. Preserve AR-1898 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3562,6 +3576,7 @@ flowchart LR
         AR_1896["AR-1896 - In progress"]:::status_in_progress
         AR_1897["AR-1897 - In progress"]:::status_in_progress
         AR_1898["AR-1898 - In progress"]:::status_in_progress
+        AR_1899["AR-1899 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4444,29 +4459,3 @@ flowchart LR
     AR_1239 --> AR_1275
     AR_1239 --> AR_1276
     AR_1239 --> AR_1277
-    AR_1239 --> AR_1278
-    AR_1239 --> AR_1279
-    AR_1239 --> AR_1280
-    AR_1239 --> AR_1281
-    AR_1239 --> AR_1282
-    AR_1239 --> AR_1284
-    AR_1239 --> AR_1285
-    AR_1239 --> AR_1286
-    AR_1240 --> AR_1241
-    AR_1240 --> AR_1243
-    AR_1241 --> AR_1243
-    AR_1242 --> AR_1245
-    AR_1242 --> AR_1246
-    AR_1242 --> AR_1247
-    AR_1242 --> AR_1259
-    AR_1243 --> AR_1245
-    AR_1245 --> AR_1246
-    AR_1250 --> AR_1257
-    AR_1251 --> AR_1257
-    AR_1252 --> AR_1253
-    AR_1252 --> AR_1254
-    AR_1252 --> AR_1256
-    AR_1252 --> AR_1303
-    AR_1253 --> AR_1254
-    AR_1253 --> AR_1255
-    AR_1253 --> AR_1256

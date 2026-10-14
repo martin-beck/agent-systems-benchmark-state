@@ -1,5 +1,31 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1239 --> AR_1278
+    AR_1239 --> AR_1279
+    AR_1239 --> AR_1280
+    AR_1239 --> AR_1281
+    AR_1239 --> AR_1282
+    AR_1239 --> AR_1284
+    AR_1239 --> AR_1285
+    AR_1239 --> AR_1286
+    AR_1240 --> AR_1241
+    AR_1240 --> AR_1243
+    AR_1241 --> AR_1243
+    AR_1242 --> AR_1245
+    AR_1242 --> AR_1246
+    AR_1242 --> AR_1247
+    AR_1242 --> AR_1259
+    AR_1243 --> AR_1245
+    AR_1245 --> AR_1246
+    AR_1250 --> AR_1257
+    AR_1251 --> AR_1257
+    AR_1252 --> AR_1253
+    AR_1252 --> AR_1254
+    AR_1252 --> AR_1256
+    AR_1252 --> AR_1303
+    AR_1253 --> AR_1254
+    AR_1253 --> AR_1255
+    AR_1253 --> AR_1256
     AR_1254 --> AR_1255
     AR_1282 --> AR_1284
     AR_1282 --> AR_1285
@@ -1525,5 +1551,3 @@
 | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) |
 | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) |
 | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
-| [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1403](../tasks/AR-1403-literature-external-qualification.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1410](../tasks/AR-1410-literature-selector-completeness.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
-| [AR-1403](../tasks/AR-1403-literature-external-qualification.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) |

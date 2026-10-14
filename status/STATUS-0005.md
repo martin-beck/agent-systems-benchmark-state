@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1403](../tasks/AR-1403-literature-external-qualification.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1410](../tasks/AR-1410-literature-selector-completeness.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
+| [AR-1403](../tasks/AR-1403-literature-external-qualification.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) |
 | [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md) | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
 | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md), [AR-1407](../tasks/AR-1407-sha2-compatibility.md) |
 | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | [AR-1414](../tasks/AR-1414-action-pin-followup.md) |
@@ -450,6 +452,7 @@
 | [AR-1896](../tasks/AR-1896.md) | None | None |
 | [AR-1897](../tasks/AR-1897.md) | None | None |
 | [AR-1898](../tasks/AR-1898.md) | None | None |
+| [AR-1899](../tasks/AR-1899.md) | None | None |
 
 ## Complete AR inventory
 
@@ -585,7 +588,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (96)
+### Planned (97)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -665,5 +668,3 @@
 | P1 | [AR-1011](../tasks/AR-1011-tui-ux-quality.md): Deliver TUI UX quality features | Unclaimed | Deliver an easy, discoverable, keyboard-first TUI experience for setup and benchmark analysis. | Integrate AR-1014, AR-1031 through AR-1035 and AR-1170 after the focused standalone wizard journeys complete. |
 | P1 | [AR-1012](../tasks/AR-1012-tui-quality-assurance.md): Qualify TUI quality and isolation | Unclaimed | Qualify TUI reliability, accessibility, performance isolation, and reproducible CI captures. | Qualify the complete Ratatui/Crossterm TUI across terminals, failure paths, accessibility checks, and benchmark-overhead budgets. |
 | P1 | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md): Add grouped measurement selection to the TUI | Unclaimed | Let users select grouped measurements from the standalone ASB TUI. | After AR-1025, AR-1033 and ASB AR-1037 complete, implement the bounded selector with precise v1.3 validation UX, generic v1.2 fallback and canonical plan round trips only in standalone asb-tui. |
-| P1 | [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md): Add a pinned, provenance-safe CSB measurement adapter | Unclaimed | Import qualified CSB resource, system-statistics, and contention measurements into ASB. | Inventory pinned CSB signals and implement only contract-compatible adapters after the catalog is accepted. |
-| P1 | [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Unclaimed | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. |
