@@ -1980,11 +1980,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-ar1853-complexity-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Align the complexity-budget contract with Coordinator v0.7.4. |
@@ -3236,7 +3236,7 @@ flowchart LR
         AR_1850["AR-1850 - Done"]:::status_done
         AR_1851["AR-1851 - Blocked"]:::status_blocked
         AR_1852["AR-1852 - Blocked"]:::status_blocked
-        AR_1853["AR-1853 - In progress"]:::status_in_progress
+        AR_1853["AR-1853 - Blocked"]:::status_blocked
         AR_1854["AR-1854 - Planned"]:::status_planned
         AR_1855["AR-1855 - Done"]:::status_done
         AR_1856["AR-1856 - Done"]:::status_done
@@ -4794,3 +4794,4 @@ flowchart LR
     AR_1563 --> AR_1653
     AR_1563 --> AR_1658
     AR_1564 --> AR_1566
+    AR_1564 --> AR_1568

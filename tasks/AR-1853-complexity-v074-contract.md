@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1853-complexity-v074-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T15:46:28+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1853",
   "next_action": "Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence.",
-  "owner": "asb-ar1853-complexity-20261014",
+  "owner": "",
   "plan": "../plans/AR-1853-complexity-v074-contract.md",
   "priority": "P1",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1853.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Align the complexity-budget contract with Coordinator v0.7.4.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Complexity v0.7.4 compatibility contract",
-  "updated_at": "2026-10-14T13:59:34+00:00",
+  "updated_at": "2026-10-14T14:03:50+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1853"
 }
 ---
@@ -86,3 +86,9 @@ contract exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-14T13:59:34+00:00: Recorded command exit 0; command argv SHA-256
   5edf889c9994e47a51db31ec7c3152ad94f004eef47dbbdf618078fbc6659040.
+
+- 2026-10-14T14:03:50+00:00: Dependency blocker confirmed 2026-10-14: AR-1851 remains
+  blocked/ownerless and AR-1852 runner repair remains under investigation. UD-0003 makes formal/TLC
+  optional; the remaining prerequisite is non-formal dependency repair and exact-head evidence.
+  Preserve existing candidate 56371a22ad, historical PR #146, and prior focused/non-waived
+  cross-repair evidence. No implementation is active; release ownerless pending dependency repair.
