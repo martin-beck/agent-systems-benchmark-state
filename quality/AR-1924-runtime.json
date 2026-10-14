@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task": "AR-1924",
+  "runtime": {"python": "pass", "pytest": "pass", "uv": "pass"},
+  "focused_test": "pass",
+  "network_denial": "pass",
+  "scope_escape_denial": "pass",
+  "downloads": "not_attempted",
+  "formal_tlc": "not_run",
+  "limitations": ["pytest is a bounded offline unittest-compatible wrapper materialized from an installed local environment."]
+}
