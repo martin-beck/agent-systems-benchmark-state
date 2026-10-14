@@ -2974,11 +2974,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1924-sandbox-runtime-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create the successor for blocked AR-1923 by materializing only reviewed offline runtime/bin/python, runtime/bin/pytest, and runtime/bin/uv entrypoints under /srv/data/projects, using already-installed local tools and no download, network, or host mount. Preserve AR-1923 and earlier histories, path scopes, network denial, and formal/TLC exclusion. |
@@ -3954,7 +3954,7 @@ flowchart LR
         AR_1921["AR-1921 - Done"]:::status_done
         AR_1922["AR-1922 - Blocked"]:::status_blocked
         AR_1923["AR-1923 - Blocked"]:::status_blocked
-        AR_1924["AR-1924 - Open"]:::status_open
+        AR_1924["AR-1924 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4126,5 +4126,3 @@ flowchart LR
     AR_0302 --> AR_0316
     AR_0302 --> AR_0505
     AR_0302 --> AR_0507
-    AR_0302 --> AR_0516
-    AR_0302 --> AR_1003

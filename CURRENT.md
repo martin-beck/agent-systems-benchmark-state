@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1919 — Repair git publication](tasks/AR-1919.md) | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. | codex-ar1919-git-publication-20261014 |
+| P1 | [AR-1924 — Materialize sandbox test runtime](tasks/AR-1924.md) | Create the successor for blocked AR-1923 by materializing only reviewed offline runtime/bin/python, runtime/bin/pytest, and runtime/bin/uv entrypoints under /srv/data/projects, using already-installed local tools and no download, network, or host mount. Preserve AR-1923 and earlier histories, path scopes, network denial, and formal/TLC exclusion. | Implement the bounded scope and record local acceptance evidence. | codex-ar1924-sandbox-runtime-20261014 |
 
 ## Open
 
@@ -28,7 +29,6 @@ Never edit this file directly.
 | P1 | [AR-1908 — Admit run-command dependency](tasks/AR-1908.md) | State-only successor admitting exactly tools/run_command.py for the AR-1907 focused replacement test. Preserve AR-1907, AR-1906 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. | - |
 | P1 | [AR-1910 — Admit autonomy-limits dependency](tasks/AR-1910.md) | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. | - |
 | P1 | [AR-1917 — Publish recovery commits](tasks/AR-1917.md) | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. | - |
-| P1 | [AR-1924 — Materialize sandbox test runtime](tasks/AR-1924.md) | Create the successor for blocked AR-1923 by materializing only reviewed offline runtime/bin/python, runtime/bin/pytest, and runtime/bin/uv entrypoints under /srv/data/projects, using already-installed local tools and no download, network, or host mount. Preserve AR-1923 and earlier histories, path scopes, network denial, and formal/TLC exclusion. | Implement the bounded scope and record local acceptance evidence. | - |
 
 ## Blocked
 
