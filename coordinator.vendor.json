@@ -5,7 +5,7 @@
       "source": "docs/EXTENDING.md"
     },
     "docs/PUBLIC_CONTRACTS.md": {
-      "sha256": "93138ef3afa770ca98a5ad1df8b11ff9a2b87f9938e22303b391a0ad960fe68d",
+      "sha256": "5777337b850d4ebbb7403a0c2573cc65fe6224593cf9d4f1eb85977ccc07eb46",
       "source": "docs/PUBLIC_CONTRACTS.md"
     },
     "docs/agent-workflow-coordinator.md": {
@@ -325,7 +325,7 @@
       "source": "tests/test_formal_receipt.py"
     },
     "tests/test_handoffctl.py": {
-      "sha256": "6cdbff0788b322823e4abd009e915d489497084f77c8825bdbfd1121d612d2e3",
+      "sha256": "e88fbd2dc7c5c5f45df011ca7be9ac67854ecc043b47a79e996303361e78aaa1",
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_handoffctl_recovery.py": {
@@ -505,7 +505,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "dea1726a56a7c97b508cf3bb2ae7bc63fad9bf7b6d801c2609e692f25f17f435",
+      "sha256": "39d139a76f48f8110056e38bd0982a485629d09ff5026e46a15952a8ef34870c",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -688,9 +688,9 @@
   "schema_version": 2,
   "upstream": {
     "channel": "development",
-    "commit": "c604e1dd82401a3000d9ec083e7b4fba22f6d513",
+    "commit": "54a6af80be8252cf7b745da0031cfe83c911e16b",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
-    "tree": "d5829d685e69c8137a078d211dc158ce02ffc0f7",
+    "tree": "0c10c83e2ea6f1d218423fa3b03d8ff70111f009",
     "version": "v0.7.12"
   }
 }

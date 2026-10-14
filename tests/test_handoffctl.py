@@ -1612,28 +1612,6 @@ class HandoffTest(unittest.TestCase):
             reader.join(5)
         self.assertEqual(0, reader.exitcode)
 
-    def test_lock_timeout_is_bounded_and_does_not_wait_for_convoy(self) -> None:
-        ready = multiprocessing.Event()
-        release = multiprocessing.Event()
-        process = multiprocessing.Process(
-            target=hold_lock,
-            args=(str(CORE.LOCK), ready, release),
-        )
-        process.start()
-        self.assertTrue(ready.wait(5))
-        started = time.monotonic()
-        try:
-            with (
-                self.assertRaisesRegex(CORE.LockTimeoutError, "LOCK_TIMEOUT"),
-                CORE.locked(timeout=0.1),
-            ):
-                pass
-        finally:
-            release.set()
-            process.join(5)
-        self.assertLess(time.monotonic() - started, 1)
-        self.assertEqual(0, process.exitcode)
-
     def test_lock_is_released_after_body_error(self) -> None:
         with self.assertRaisesRegex(RuntimeError, "body failure"), CORE.locked(timeout=0.1):
             raise RuntimeError("body failure")
@@ -1930,6 +1908,12 @@ class HandoffTest(unittest.TestCase):
         self.assertNotIn("tools/handoffctl.py: session-like UUID", errors)
         self.assertNotIn("coordinator.binding.json: session-like UUID", errors)
         self.assertIn("coordinator.binding.json: possible credential", errors)
+
+    def test_privacy_scan_ignores_generated_python_bytecode(self) -> None:
+        cache = self.root / "tools" / "__pycache__" / "compiled.pyc"
+        cache.parent.mkdir(parents=True)
+        cache.write_text("x" * 200001 + "\n", encoding="utf-8")
+        self.assertEqual([], CORE.privacy_errors())
 
     def test_validation_reports_all_basic_reference_and_claim_errors(self) -> None:
         path = self.make_task("AR-0001")

@@ -31,3 +31,8 @@ It can add bounded evidence-class names but cannot remove or reinterpret Coordin
 classes. The runtime captures one policy identity for each operation. Invalid, removed, dirty, or
 racing policy input rejects before authority changes; the lifecycle model therefore observes the
 same stuttering rejection as every other failed preflight guard.
+
+Git-backed `bind-spec` and `bind-envelope` mutations retain their bounded referenced artifact
+files in the same signed state commit as the task binding. This prevents a valid binding from
+leaving an untracked specification or envelope that disappears when a worktree is recreated;
+unsafe, symlinked, non-regular, and oversized references are never retained.

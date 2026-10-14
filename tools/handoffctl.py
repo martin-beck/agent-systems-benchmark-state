@@ -1351,6 +1351,8 @@ def privacy_errors() -> list[str]:
             or ".venv" in path.parts
             or ".mypy_cache" in path.parts
             or ".ruff_cache" in path.parts
+            or "__pycache__" in path.parts
+            or path.suffix in {".pyc", ".pyo"}
             or "private-archive" in path.parts
         ):
             continue
@@ -2787,6 +2789,25 @@ def valid_binding_worktree(value: object) -> bool:
         return not CONFIG.exists()
 
 
+def binding_artifact_path(args: argparse.Namespace, kind: str) -> Path | None:
+    name = "spec_ref" if kind == "bind-spec" else "envelope_ref"
+    reference = getattr(args, name, None)
+    if not isinstance(reference, str) or not reference or Path(reference).is_absolute():
+        return None
+    candidate = ROOT / reference
+    if ".." in Path(reference).parts:
+        return None
+    try:
+        info = candidate.lstat()
+    except OSError:
+        return None
+    if candidate.is_symlink() or not stat.S_ISREG(info.st_mode):
+        return None
+    if info.st_size > 4194304:
+        return None
+    return candidate
+
+
 def binding_identity_conflicts(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> bool:
     return any(
         other.get("id") != meta.get("id")
@@ -3322,6 +3343,7 @@ def persist_git_mutation(
     selected_policy: EvidencePolicy,
     session_record: Meta | None,
     checkpoint_record: Meta | None,
+    retained_paths: tuple[Path, ...] = (),
 ) -> None:
     """Write, validate, commit, and retain one locked Git mutation transaction."""
     committed = False
@@ -3347,7 +3369,9 @@ def persist_git_mutation(
             raise RuntimeError("\n".join(errors))
         for target in generated_paths():
             before.setdefault(target, None)
-        committed = commit_persisted_mutation(args, kind, receipt_id, before, meta)
+        committed = commit_persisted_mutation(
+            args, kind, receipt_id, before, meta, retained_paths=retained_paths
+        )
         if receipt_id is None:
             push_replica()
     except Exception:
@@ -3362,12 +3386,18 @@ def commit_persisted_mutation(
     receipt_id: str | None,
     before: dict[Path, str | None],
     meta: Meta,
+    *,
+    retained_paths: tuple[Path, ...] = (),
 ) -> bool:
     """Commit a validated mutation and expose receipt-only local evidence."""
     message = f"chore(state): {kind} {args.task}"
     if receipt_id is not None:
         message += f"\n\nHandoffctl-Receipt: {receipt_id}"
-    committed = commit(message, changed_paths(before, include_deleted=True))
+    paths = changed_paths(before, include_deleted=True)
+    for path in retained_paths:
+        if path.exists() and path not in paths:
+            paths.append(path)
+    committed = commit(message, paths)
     if receipt_id is not None and not committed:
         raise RuntimeError("fast receipt mutation produced no signed commit")
     if receipt_id is not None:
@@ -3414,6 +3444,9 @@ def _mutate_fenced(
                 for target in generated_paths()
             }
         )
+        retained_paths = tuple(
+            path for path in (binding_artifact_path(args, kind),) if path is not None
+        )
         try:
             note = apply_transition(args, kind, meta, all_tasks(), selected_policy)
         except IdempotentMutationError as replay:
@@ -3452,6 +3485,7 @@ def _mutate_fenced(
             selected_policy,
             session_record,
             checkpoint_record,
+            retained_paths,
         )
     return None
 
@@ -4289,6 +4323,7 @@ def _run_envelope_subprocess(
     if hasattr(args, "_envelope_worktree_fd"):
         return subprocess.run(
             command,
+            cwd=str(args._envelope_worktree),
             check=False,
             stdin=subprocess.DEVNULL,
             timeout=timeout,
