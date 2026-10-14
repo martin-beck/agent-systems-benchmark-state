@@ -116,9 +116,11 @@ class ReplacementTests(unittest.TestCase):
                 with self.assertRaisesRegex(RuntimeError, message):
                     execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
             meta = self._meta()
-            with patch.object(execution_envelope, "load", return_value=(None, "", ["bad"])):
-                with self.assertRaisesRegex(RuntimeError, "envelope is invalid"):
-                    execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
+            with (
+                patch.object(execution_envelope, "load", return_value=(None, "", ["bad"])),
+                self.assertRaisesRegex(RuntimeError, "envelope is invalid"),
+            ):
+                execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
             for mutate, message in (
                 (lambda e: e.update(task_revision=4), "revision does not match task"),
                 (lambda e: e.update(envelope_revision=9), "envelope revision does not match"),
@@ -128,9 +130,11 @@ class ReplacementTests(unittest.TestCase):
                 candidate = dict(successor)
                 mutate(candidate)
                 meta = self._meta()
-                with patch.object(execution_envelope, "load", return_value=(candidate, "", [])):
-                    with self.assertRaisesRegex(RuntimeError, message):
-                        execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
+                with (
+                    patch.object(execution_envelope, "load", return_value=(candidate, "", [])),
+                    self.assertRaisesRegex(RuntimeError, message),
+                ):
+                    execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
 
 
 if __name__ == "__main__":
