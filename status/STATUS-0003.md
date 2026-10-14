@@ -2354,6 +2354,20 @@
 | Summary | Fresh successor for AR-1852 runner, worktree, and coordinator-lock repair. Repair only runner-root/worktree binding, executable visibility, and lock contention needed to rerun exact PR #148 head 7b46c6b076 role and locked-full gates. Preserve AR-1852, strict authorization, and unrelated failures. Integrate signed state-only AR-1853 commit 5a703b4665 onto ASB state main through handoffctl; change no product files. Record exact state and doctor evidence. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1880 — Bind runner repair worktree
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Bind a real isolated ASB state worktree and execution envelope so the narrowly scoped AR-1879 runner/worktree/lock repair can proceed. Preserve AR-1879 blocked history and enable only authorized state-only integration of signed AR-1853 commit 5a703b46651930e244af57cf9fbb843851a86bac. No product, vendor, gate, role-contract, PR, or unrelated task edits. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3277,6 +3291,7 @@ flowchart LR
         AR_1877["AR-1877 - Done"]:::status_done
         AR_1878["AR-1878 - In progress"]:::status_in_progress
         AR_1879["AR-1879 - Blocked"]:::status_blocked
+        AR_1880["AR-1880 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4744,33 +4759,3 @@ flowchart LR
     AR_1517 --> AR_1518
     AR_1517 --> AR_1529
     AR_1519 --> AR_1520
-    AR_1519 --> AR_1528
-    AR_1520 --> AR_1521
-    AR_1520 --> AR_1526
-    AR_1520 --> AR_1528
-    AR_1520 --> AR_1529
-    AR_1520 --> AR_1530
-    AR_1520 --> AR_1531
-    AR_1527 --> AR_1528
-    AR_1528 --> AR_1532
-    AR_1528 --> AR_1533
-    AR_1529 --> AR_1530
-    AR_1530 --> AR_1521
-    AR_1530 --> AR_1522
-    AR_1530 --> AR_1531
-    AR_1530 --> AR_1534
-    AR_1530 --> AR_1537
-    AR_1530 --> AR_1538
-    AR_1530 --> AR_1539
-    AR_1530 --> AR_1540
-    AR_1530 --> AR_1541
-    AR_1530 --> AR_1544
-    AR_1531 --> AR_1546
-    AR_1532 --> AR_1535
-    AR_1532 --> AR_1542
-    AR_1533 --> AR_1536
-    AR_1533 --> AR_1543
-    AR_1534 --> AR_1535
-    AR_1534 --> AR_1536
-    AR_1534 --> AR_1542
-    AR_1534 --> AR_1543

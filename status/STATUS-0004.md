@@ -1,5 +1,35 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1519 --> AR_1528
+    AR_1520 --> AR_1521
+    AR_1520 --> AR_1526
+    AR_1520 --> AR_1528
+    AR_1520 --> AR_1529
+    AR_1520 --> AR_1530
+    AR_1520 --> AR_1531
+    AR_1527 --> AR_1528
+    AR_1528 --> AR_1532
+    AR_1528 --> AR_1533
+    AR_1529 --> AR_1530
+    AR_1530 --> AR_1521
+    AR_1530 --> AR_1522
+    AR_1530 --> AR_1531
+    AR_1530 --> AR_1534
+    AR_1530 --> AR_1537
+    AR_1530 --> AR_1538
+    AR_1530 --> AR_1539
+    AR_1530 --> AR_1540
+    AR_1530 --> AR_1541
+    AR_1530 --> AR_1544
+    AR_1531 --> AR_1546
+    AR_1532 --> AR_1535
+    AR_1532 --> AR_1542
+    AR_1533 --> AR_1536
+    AR_1533 --> AR_1543
+    AR_1534 --> AR_1535
+    AR_1534 --> AR_1536
+    AR_1534 --> AR_1542
+    AR_1534 --> AR_1543
     AR_1535 --> AR_1545
     AR_1536 --> AR_1546
     AR_1540 --> AR_1542
@@ -977,4 +1007,3 @@
 | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md), [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md) |
 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | None |
 | [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md) | None | None |
-| [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md), [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md) |
