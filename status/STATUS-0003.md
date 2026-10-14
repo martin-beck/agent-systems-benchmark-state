@@ -1112,11 +1112,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb_ar1773_docker_runner_luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. |
@@ -3115,7 +3115,7 @@ flowchart LR
         AR_1770["AR-1770 - Done"]:::status_done
         AR_1771["AR-1771 - Done"]:::status_done
         AR_1772["AR-1772 - Done"]:::status_done
-        AR_1773["AR-1773 - In progress"]:::status_in_progress
+        AR_1773["AR-1773 - Open"]:::status_open
         AR_1774["AR-1774 - Planned"]:::status_planned
         AR_1775["AR-1775 - Done"]:::status_done
         AR_1776["AR-1776 - Done"]:::status_done
@@ -4872,3 +4872,5 @@ flowchart LR
     AR_1633 --> AR_1634
     AR_1634 --> AR_1615
     AR_1634 --> AR_1632
+    AR_1634 --> AR_1635
+    AR_1634 --> AR_1636
