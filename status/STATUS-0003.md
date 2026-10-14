@@ -2652,7 +2652,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
@@ -3609,7 +3609,7 @@ flowchart LR
     subgraph series_19["19 - Additional work"]
         direction TB
         AR_1900["AR-1900 - In progress"]:::status_in_progress
-        AR_1901["AR-1901 - Planned"]:::status_planned
+        AR_1901["AR-1901 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4427,3 +4427,4 @@ flowchart LR
     AR_1237 --> AR_1261
     AR_1237 --> AR_1262
     AR_1237 --> AR_1265
+    AR_1237 --> AR_1266
