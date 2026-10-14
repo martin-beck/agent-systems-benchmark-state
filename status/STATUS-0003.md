@@ -2778,11 +2778,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1910-limits-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -3744,7 +3744,7 @@ flowchart LR
         AR_1907["AR-1907 - In progress"]:::status_in_progress
         AR_1908["AR-1908 - In progress"]:::status_in_progress
         AR_1909["AR-1909 - In progress"]:::status_in_progress
-        AR_1910["AR-1910 - Open"]:::status_open
+        AR_1910["AR-1910 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4312,5 +4312,3 @@ flowchart LR
     AR_0873 --> AR_1012
     AR_0874 --> AR_0808
     AR_0874 --> AR_0809
-    AR_0875 --> AR_0908
-    AR_0875 --> AR_1031
