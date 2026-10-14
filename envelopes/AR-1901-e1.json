@@ -1,0 +1,16 @@
+{
+  "capabilities": {"git_metadata": {"allowed": true}, "network": {"allowed": false}},
+  "command_classes": {"read": {"allowed": true, "timeout_seconds": 120}, "test": {"allowed": true, "timeout_seconds": 900}},
+  "envelope_id": "AR-1901-e1",
+  "envelope_revision": 1,
+  "evidence": [{"class": "contract-test", "id": "scope", "required": true}, {"class": "mechanical", "id": "review", "required": true}],
+  "non_goals": ["Do not mutate AR-1881, AR-1882, or AR-1900 history.", "Do not require coordination-state envelopes inside the reviewed product commit.", "Do not run formal or TLC gates."],
+  "outputs": [{"description": "Repository-separated publication-scope validation evidence.", "id": "scope"}],
+  "path_scope": {"read": ["tasks/AR-1881.md", "envelopes/AR-1881-e1.json", "tasks/AR-1882.md", "tasks/AR-1901.md", "specs/AR-1901.json", "tools", "tests"], "write": ["evidence"]},
+  "schema_version": 2,
+  "spec_ref": "specs/AR-1901.json",
+  "spec_revision": 1,
+  "stop_conditions": [{"id": "scope", "kind": "deny"}, {"id": "immutable-history", "kind": "deny"}],
+  "task": "AR-1901",
+  "task_revision": 4
+}

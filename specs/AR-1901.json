@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1901.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "repository-separation", "description": "Resolve reviewed product paths only in the product checkout and AR-1881 evidence only in the coordination-state checkout."},
+    {"id": "immutable-history", "description": "Preserve AR-1881, AR-1882, and AR-1900 task, envelope, checkpoint, and evidence history."},
+    {"id": "fail-closed", "description": "Reject missing, traversal, cross-root, arbitrary, or product-commit state-envelope paths without widening scope."}
+  ],
+  "definition_of_done": ["Bind a scope-separated envelope and record focused non-formal validation or the exact durable blocker."],
+  "inputs": [{"id": "terminal-recovery", "description": "Reviewed product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3 and immutable AR-1881 state evidence."}],
+  "outputs": [{"id": "scope-envelope", "description": "Immutable state-side envelope describing separate product and coordination-state roots."}],
+  "allowed_tools": ["git", "python", "tools/handoffctl"],
+  "forbidden_tools": ["direct-task-state-edit", "product-rewrite", "history-rewrite", "formal-success-without-evidence"],
+  "required_evidence_classes": ["contract-test", "mechanical"],
+  "gates": [{"id": "scope", "description": "Focused non-formal tests prove repository separation and fail-closed path handling."}]
+}
