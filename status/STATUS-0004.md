@@ -1,5 +1,37 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1441 --> AR_1488
+    AR_1442 --> AR_1338
+    AR_1442 --> AR_1443
+    AR_1442 --> AR_1446
+    AR_1442 --> AR_1447
+    AR_1442 --> AR_1488
+    AR_1442 --> AR_1499
+    AR_1443 --> AR_1331
+    AR_1443 --> AR_1338
+    AR_1443 --> AR_1444
+    AR_1443 --> AR_1446
+    AR_1443 --> AR_1448
+    AR_1443 --> AR_1449
+    AR_1443 --> AR_1500
+    AR_1446 --> AR_1331
+    AR_1446 --> AR_1338
+    AR_1446 --> AR_1448
+    AR_1446 --> AR_1458
+    AR_1446 --> AR_1487
+    AR_1447 --> AR_1443
+    AR_1447 --> AR_1456
+    AR_1447 --> AR_1496
+    AR_1448 --> AR_1449
+    AR_1448 --> AR_1450
+    AR_1448 --> AR_1451
+    AR_1448 --> AR_1452
+    AR_1448 --> AR_1455
+    AR_1450 --> AR_1455
+    AR_1450 --> AR_1487
+    AR_1450 --> AR_1488
+    AR_1450 --> AR_1496
+    AR_1451 --> AR_1452
     AR_1451 --> AR_1454
     AR_1452 --> AR_1453
     AR_1452 --> AR_1454
@@ -1149,4 +1181,3 @@
 | [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) |
 | [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) | [AR-1722](../tasks/AR-1722.md), [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md), [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md) |
 | [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md) | [AR-1699](../tasks/AR-1699.md) |
-| [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md) | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md), [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md), [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md), [AR-1700](../tasks/AR-1700.md) |

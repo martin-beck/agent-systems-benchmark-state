@@ -2424,6 +2424,20 @@
 | Summary | Create a dependency-scoped successor repair for no-claim_process terminal-result recovery after the landed runtime successor chain AR-0121, AR-0122, and AR-0123. Do not mutate AR-1878, AR-1881, AR-1882, or AR-1883. Keep state-checkout recovery evidence and product-tree publication evidence under separate explicit roots and bounded allowlists; require exact reservation/result/expiry/operator identity evidence and immutable audit; remain ownerless after metadata repair until exact product/state roots are contractually bound. |
 | Next action | After the landed AR-0121 -&gt; AR-0122 chain (with AR-0123 merged by AR-0122) is recorded, re-plan and bind exact product/state roots; do not bind roots or implement early. |
 
+### AR-1885 — Adopt cwd routing
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt upstream Coordinator multi-root/cwd-routing at exact commit 2493c67f2ea162885b15c648fb3d626c84732170 via development vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, and generated integrity evidence; preserve ASB overlays, views, and immutable AR-1878 through AR-1884. No Agent Relay dependency, formal/TLC gate, runtime download, or direct state-history/file copy. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3352,6 +3366,7 @@ flowchart LR
         AR_1882["AR-1882 - Blocked"]:::status_blocked
         AR_1883["AR-1883 - Blocked"]:::status_blocked
         AR_1884["AR-1884 - Blocked"]:::status_blocked
+        AR_1885["AR-1885 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4633,35 +4648,3 @@ flowchart LR
     AR_1437 --> AR_1447
     AR_1441 --> AR_1442
     AR_1441 --> AR_1446
-    AR_1441 --> AR_1488
-    AR_1442 --> AR_1338
-    AR_1442 --> AR_1443
-    AR_1442 --> AR_1446
-    AR_1442 --> AR_1447
-    AR_1442 --> AR_1488
-    AR_1442 --> AR_1499
-    AR_1443 --> AR_1331
-    AR_1443 --> AR_1338
-    AR_1443 --> AR_1444
-    AR_1443 --> AR_1446
-    AR_1443 --> AR_1448
-    AR_1443 --> AR_1449
-    AR_1443 --> AR_1500
-    AR_1446 --> AR_1331
-    AR_1446 --> AR_1338
-    AR_1446 --> AR_1448
-    AR_1446 --> AR_1458
-    AR_1446 --> AR_1487
-    AR_1447 --> AR_1443
-    AR_1447 --> AR_1456
-    AR_1447 --> AR_1496
-    AR_1448 --> AR_1449
-    AR_1448 --> AR_1450
-    AR_1448 --> AR_1451
-    AR_1448 --> AR_1452
-    AR_1448 --> AR_1455
-    AR_1450 --> AR_1455
-    AR_1450 --> AR_1487
-    AR_1450 --> AR_1488
-    AR_1450 --> AR_1496
-    AR_1451 --> AR_1452
