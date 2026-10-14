@@ -5,14 +5,11 @@
 
 from __future__ import annotations
 
-import argparse
 import datetime as dt
 import unittest
 from types import SimpleNamespace
-from unittest.mock import patch
 
 from tools import execution_abandonment, execution_lifecycle
-
 
 RESERVATION = {
     "execution_id": "a" * 32,
