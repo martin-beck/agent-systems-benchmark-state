@@ -1,0 +1,21 @@
+AR-1929 privacy-safe AR-1926 evidence correction
+Recorded: 2026-10-15
+
+Bounded reproducible checks (state-only, offline):
+- released runtime/bin/python --version: PASS (Python 3.12.3)
+- released runtime/bin/uv --version: PASS (uv 0.12.8, x86_64-unknown-linux-gnu)
+- released runtime/bin/pytest --version: FAIL CLOSED (entrypoint shebang points to unavailable /worktree/runtime/bin/python; no test output retained)
+- focused scope/history assertions over tasks/AR-1926.md, tasks/AR-1928.md, and evidence/AR-1926-runtime-scope.txt: PASS
+
+Privacy and boundary checks:
+- only relative state paths were read; parent traversal and absolute host paths were rejected by assertion.
+- no network, download, mount, product mutation, formal, or TLC command was run.
+- AR-1926 and AR-1928 historical task records were read-only inputs; AR-1919 was untouched.
+
+Correction basis:
+- current evidence/AR-1926-runtime-scope.txt digest: sha256:6806124f62e1524baa92e40ddb2336ca1ba19b20c2f83dc5ff92c26dcdfde513
+- AR-1926 accepted ledger digest: sha256:4d53f8be0b21734daa2a265253c8ce0a5211bc13667801a775db91e6b8201710
+- this successor artifact is the exact bounded correction candidate; its digest is computed after writing and passed explicitly to the released repair command.
+
+Fail-closed note:
+- pytest entrypoint is not executable in the materialized AR-1924 runtime because its recorded interpreter path is absent. No claim is made that the historical pytest check was reproduced.
