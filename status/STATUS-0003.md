@@ -2526,11 +2526,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1892-observation-scope-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. |
@@ -3835,7 +3835,7 @@ flowchart LR
         AR_1889["AR-1889 - Open"]:::status_open
         AR_1890["AR-1890 - Blocked"]:::status_blocked
         AR_1891["AR-1891 - Blocked"]:::status_blocked
-        AR_1892["AR-1892 - In progress"]:::status_in_progress
+        AR_1892["AR-1892 - Open"]:::status_open
         AR_1893["AR-1893 - Blocked"]:::status_blocked
         AR_1894["AR-1894 - Blocked"]:::status_blocked
         AR_1895["AR-1895 - Blocked"]:::status_blocked
@@ -4228,3 +4228,6 @@ flowchart LR
     AR_0512 --> AR_0515
     AR_0513 --> AR_0515
     AR_0514 --> AR_0515
+    AR_0517 --> AR_0518
+    AR_0517 --> AR_0520
+    AR_0518 --> AR_0519

@@ -500,13 +500,7 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1892](../tasks/AR-1892.md): Admit observation scope | codex-ar1892-observation-scope-20261014 | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. | Run bounded focused recovery scope test through AR-1892 envelope. |
-
-### Open (18)
+### Open (19)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -517,6 +511,7 @@
 | P1 | [AR-1886](../tasks/AR-1886.md): Repair runner environment | Unclaimed | Repair only the bounded handoffctl Bubblewrap execution root so approved pinned executables (pwd, git, and sync tooling) are visible for AR-1885 commands. Preserve AR-1885 immutable history; do not add host mounts, network, runtime downloads, scope widening, or gate weakening. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1888](../tasks/AR-1888.md): Publish gate repair | Unclaimed | Publish the already reviewed AR-1887 state repair at exact commit 12074686d4, including its signed/DCO ancestry and full-suite evidence digest sha256:65c3adc9516e93a55aa1a629beceb15c1ede0b3a345b73c51a4c40463298535e. Scope is immutable to tools/handoffctl.py, tests, and quality evidence; preserve AR-1887 and earlier histories. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1889](../tasks/AR-1889.md): Recover expired claim | Unclaimed | Add only the state-side recovery capability needed to clear AR-1878&#x27;s exact expired reservation with matching durable terminal EXIT evidence. Scope tools/handoffctl.py, execution lifecycle, and focused tests; preserve AR-1878 through AR-1888, reject force-clear/cross-root paths, and do not run formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1892](../tasks/AR-1892.md): Admit observation scope | Unclaimed | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. | Run bounded focused recovery scope test through AR-1892 envelope. |
 | P1 | [AR-1898](../tasks/AR-1898.md): Admit change-drift dependency | Unclaimed | State-only successor admitting exactly tools/change_drift.py for the AR-1896 focused replacement test. Preserve AR-1897, AR-1896 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1899](../tasks/AR-1899.md): Admit command-results dependency | Unclaimed | State-only successor admitting exactly tools/command_results.py for the AR-1898 focused replacement test. Preserve AR-1898 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1900](../tasks/AR-1900.md): Admit execution-envelope dependency | Unclaimed | State-only successor admitting exactly tools/execution_envelope.py for the AR-1899 focused replacement test. Preserve AR-1899 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
@@ -674,3 +669,4 @@
 | P0 | [AR-1653](../tasks/AR-1653.md): Current-main development-channel consumption | Unclaimed | Qualify a clean clone using the default dev channel to install and run the current ASB/TUI heads with rollback evidence. | Run the bounded clean-clone materializer and lifecycle matrix after the paired quickstart runner exists. |
 | P0 | [AR-1654](../tasks/AR-1654.md): Self-explanatory operator quickstart | Unclaimed | Make install, wizard setup, benchmarking, recording/replay, and comparison a short selection-driven journey with human and JSON output. | Implement and qualify the paired operator runner and help/error text after the underlying routes are complete. |
 | P0 | [AR-1655](../tasks/AR-1655.md): Paired wizard release and quality gate | Unclaimed | Qualify the complete ASB/TUI wizard, benchmark, recording/replay, comparison, and dev-channel journey with AWQ/AWC evidence. | Run the final exact-head matrix only after all dependent implementation and journey ARs are complete. |
+| P0 | [AR-1658](../tasks/AR-1658.md): Development release-channel resolver contract | Unclaimed | Define and implement the ASB-side channel option with dev as the default and current-main provenance. | Implement the explicit channel parser/resolver and immutable current-main manifest checks, then add dev/stable/nightly/experimental negative coverage. |
