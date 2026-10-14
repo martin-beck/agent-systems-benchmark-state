@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #362 | `dependabot/cargo/serde_json-1.0.151@756be4e1ef2d` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde_json from 1.0.143 to 1.0.151 |
 | #363 | `dependabot/cargo/rustix-1.1.5@d50255e59f09` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rustix from 1.1.4 to 1.1.5 |
-| #364 | `dependabot/cargo/jsonschema-0.56.0@38faa177c3a9` | `main` | BEHIND | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump jsonschema from 0.33.0 to 0.58.5 |
+| #364 | `dependabot/cargo/jsonschema-0.56.0@db491d8a9a05` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump jsonschema from 0.33.0 to 0.58.6 |
 | #365 | `dependabot/cargo/rcgen-0.14.10@c0afd0dfdd90` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@25e54f7f679e` | `main` | BLOCKED | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
@@ -42,15 +42,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 38629260385 | `db491d8a9a05` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 38629260338 | `db491d8a9a05` | pull_request | Development formal assurance | completed:success |
+| 38629260287 | `db491d8a9a05` | pull_request | Fault assurance | completed:success |
+| 38629260178 | `db491d8a9a05` | pull_request | Rust verification | in_progress:- |
+| 38629260169 | `db491d8a9a05` | pull_request | Cross-repository development broker qualification | completed:success |
+| 38629260149 | `db491d8a9a05` | pull_request | Repository quality | completed:failure |
+| 38629260110 | `db491d8a9a05` | pull_request | Portable protected-main provenance | completed:failure |
+| 38629260102 | `db491d8a9a05` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 38629260097 | `db491d8a9a05` | pull_request | Hosted portability and native qualification | completed:success |
+| 38629260083 | `db491d8a9a05` | pull_request | Huawei MIT source headers | completed:success |
+| 38629260073 | `db491d8a9a05` | pull_request | Credential-free benchmark path | completed:success |
 | 38623188920 | `c0afd0dfdd90` | pull_request | Emulated aarch64 portability | completed:success |
-| 38623188803 | `c0afd0dfdd90` | pull_request | Hosted portability and native qualification | completed:success |
-| 38623188782 | `c0afd0dfdd90` | pull_request | Credential-free benchmark path | completed:success |
-| 38623188713 | `c0afd0dfdd90` | pull_request | Huawei MIT source headers | completed:success |
-| 38623188711 | `c0afd0dfdd90` | pull_request | Portable protected-main provenance | completed:failure |
-| 38623188618 | `c0afd0dfdd90` | pull_request | Rust verification | completed:failure |
-| 38623188617 | `c0afd0dfdd90` | pull_request | Development formal assurance | completed:success |
-| 38623188562 | `c0afd0dfdd90` | pull_request | Cross-repository development broker qualification | completed:success |
-| 38623188514 | `c0afd0dfdd90` | pull_request | Fault assurance | completed:success |
-| 38623188510 | `c0afd0dfdd90` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 38623188502 | `c0afd0dfdd90` | pull_request | Repository quality | completed:failure |
-| 38623187172 | `d50255e59f09` | pull_request | Huawei MIT source headers | completed:success |
