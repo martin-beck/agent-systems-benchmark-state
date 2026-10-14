@@ -2760,6 +2760,20 @@
 | Summary | State-only successor admitting exactly tools/run_command.py for the AR-1907 focused replacement test. Preserve AR-1907, AR-1906 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1909 — Bootstrap retention worktree
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a narrow successor for the missing direct worktree needed to execute AR-1906. Use only handoffctl-authorized worktree and test paths; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3715,6 +3729,7 @@ flowchart LR
         AR_1906["AR-1906 - In progress"]:::status_in_progress
         AR_1907["AR-1907 - In progress"]:::status_in_progress
         AR_1908["AR-1908 - In progress"]:::status_in_progress
+        AR_1909["AR-1909 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4311,29 +4326,3 @@ flowchart LR
     AR_0897 --> AR_0903
     AR_0897 --> AR_1242
     AR_0897 --> AR_1264
-    AR_0898 --> AR_0899
-    AR_0898 --> AR_0903
-    AR_0899 --> AR_0903
-    AR_0901 --> AR_0877
-    AR_0901 --> AR_0878
-    AR_0901 --> AR_0903
-    AR_0901 --> AR_0906
-    AR_0902 --> AR_0813
-    AR_0902 --> AR_0877
-    AR_0902 --> AR_0878
-    AR_0902 --> AR_0903
-    AR_0902 --> AR_0906
-    AR_0902 --> AR_0909
-    AR_0903 --> AR_0846
-    AR_0903 --> AR_1027
-    AR_0904 --> AR_1023
-    AR_0906 --> AR_0877
-    AR_0906 --> AR_1021
-    AR_0907 --> AR_1303
-    AR_1001 --> AR_0310
-    AR_1001 --> AR_0806
-    AR_1001 --> AR_0875
-    AR_1001 --> AR_0904
-    AR_1001 --> AR_1006
-    AR_1001 --> AR_1007
-    AR_1001 --> AR_1013

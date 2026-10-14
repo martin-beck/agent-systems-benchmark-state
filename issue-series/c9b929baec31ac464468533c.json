@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1909",
+  "issue": {
+    "number": 10040,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10040"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Provide an authorized handoffctl-only worktree bootstrap path for AR-1906 and run a bounded non-formal retention test, or record the exact durable blocker without changing AR-1906 or earlier history.",
+      "depends_on": [],
+      "id": "AR-1909",
+      "ownership": "ASB coordinator worktree bootstrap validation only; preserve AR-1906, AR-1901 through AR-1905, product head, lifecycle gates, and formal/TLC exclusion.",
+      "scope": "Create a narrow successor for the missing direct worktree needed to execute AR-1906. Use only handoffctl-authorized worktree and test paths; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories.",
+      "short_title": "Bootstrap retention worktree"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
