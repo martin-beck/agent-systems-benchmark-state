@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**903 ARs tracked** across 8 active status categories.
+**904 ARs tracked** across 8 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 15 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 118 |
-| **Planned** | Defined work awaiting promotion or dependencies | 98 |
+| **Planned** | Defined work awaiting promotion or dependencies | 99 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 631 |
 | **Cancelled** | Stopped with a recorded rationale | 2 |
@@ -26,7 +26,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Metric | Value |
 | --- | ---: |
-| Tasks | 903 |
+| Tasks | 904 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
 | Open or active | 16 |
@@ -36,7 +36,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 903 | 16 | 118 | 631 |
+| unassigned | unassigned | 904 | 16 | 118 | 631 |
 
 ## Task drill-down
 
