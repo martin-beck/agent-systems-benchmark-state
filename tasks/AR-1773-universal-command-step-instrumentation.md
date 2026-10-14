@@ -91,7 +91,7 @@
   "id": "AR-1773",
   "next_action": "Repair the coordinator Bubblewrap runtime root to mount the approved pinned Cargo toolchain, compiler/linker support, complete workspace source, and required identity files through an authorized runner; then rerun exact-head focused and full tests through handoffctl. No product source repair is justified.",
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
-  "observed_dirty": 1,
+  "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
   "owner": "asb-ar1773-instrumentation-20261014",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
@@ -109,9 +109,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-14T13:56:46+00:00",
+  "updated_at": "2026-10-14T13:56:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
