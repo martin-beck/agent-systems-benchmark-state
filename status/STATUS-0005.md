@@ -446,7 +446,7 @@
 
 ## Complete AR inventory
 
-### In progress (11)
+### In progress (12)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -461,14 +461,14 @@
 | P1 | [AR-1893](../tasks/AR-1893.md): Repair envelope replacement schema | codex-ar1893-envelope-schema-20261014 | State-only repair to admit the authorized execution_envelope_replacements task field and validator path needed to replace AR-1892&#x27;s malformed predecessor envelope without widening unrelated scope. Preserve AR-1892, AR-1891, AR-1890 and earlier histories; no claim bypass, cross-root, network, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1894](../tasks/AR-1894.md): Admit abandonment dependency | codex-ar1894-abandonment-20261014 | State-only successor admitting exactly tools/execution_abandonment.py for the AR-1893 focused schema test. Preserve AR-1893, AR-1892, AR-1891, AR-1890 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1895](../tasks/AR-1895.md): Admit receipt dependency | codex-ar1895-receipt-20261014 | State-only successor admitting exactly tools/execution_receipt.py for the AR-1894 focused replacement test. Preserve AR-1894 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1896](../tasks/AR-1896.md): Admit revalidation dependency | codex-ar1896-revalidation-20261014 | State-only successor admitting exactly tools/assumption_revalidation.py for the AR-1895 focused replacement test. Preserve AR-1895 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
-| P1 | [AR-1896](../tasks/AR-1896.md): Admit revalidation dependency | Unclaimed | State-only successor admitting exactly tools/assumption_revalidation.py for the AR-1895 focused replacement test. Preserve AR-1895 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (101)
 

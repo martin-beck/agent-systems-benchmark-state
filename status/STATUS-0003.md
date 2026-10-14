@@ -2582,11 +2582,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1896-revalidation-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/assumption_revalidation.py for the AR-1895 focused replacement test. Preserve AR-1895 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -3531,7 +3531,7 @@ flowchart LR
         AR_1893["AR-1893 - In progress"]:::status_in_progress
         AR_1894["AR-1894 - In progress"]:::status_in_progress
         AR_1895["AR-1895 - In progress"]:::status_in_progress
-        AR_1896["AR-1896 - Open"]:::status_open
+        AR_1896["AR-1896 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4494,5 +4494,3 @@ flowchart LR
     AR_1328 --> AR_1342
     AR_1328 --> AR_1343
     AR_1328 --> AR_1346
-    AR_1328 --> AR_1347
-    AR_1328 --> AR_1348
