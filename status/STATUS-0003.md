@@ -2610,11 +2610,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1898-drift-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/change_drift.py for the AR-1896 focused replacement test. Preserve AR-1897, AR-1896 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -3561,7 +3561,7 @@ flowchart LR
         AR_1895["AR-1895 - In progress"]:::status_in_progress
         AR_1896["AR-1896 - In progress"]:::status_in_progress
         AR_1897["AR-1897 - In progress"]:::status_in_progress
-        AR_1898["AR-1898 - Open"]:::status_open
+        AR_1898["AR-1898 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4470,4 +4470,3 @@ flowchart LR
     AR_1253 --> AR_1254
     AR_1253 --> AR_1255
     AR_1253 --> AR_1256
-    AR_1254 --> AR_1255
