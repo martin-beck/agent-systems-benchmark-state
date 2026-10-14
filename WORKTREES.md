@@ -65,7 +65,10 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1838-source-checkout-fixture-repair-luna` | `repair/ar-1838-source-checkout-fixture-repair-luna` | `15f70ef23af6` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar-1850-development-tui-interactive-lifetime` | `feature/ar1850-development-tui-interactive-lifetime` | `671f898b6a85` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1863-control-diagnostic-catalog` | `codex/ar-1863-control-diagnostic-catalog` | `6215f49dcb7c` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1866` | `codex/ar-1866-vendor-docs` | `870331be533e` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1867-legacy-reservation-recovery` | `codex/ar-1867-legacy-reservation-recovery` | `870331be533e` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1838-merge-int` | `DETACHED` | `4a486e97abbb` | 0 | behind 7, ahead 0 |
+| `agent-systems-benchmark-ar1872-orphan-reservations` | `repair/ar-1872-orphan-reservations` | `b00cdba5bc52` | 0 | behind 34, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 825, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 825, ahead 323 |
@@ -203,6 +206,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `23035acde688` | 0 | behind 825, ahead 67 |
 | `agent-systems-benchmark-shellcheck-fail-closed` | `fix/shellcheck-fail-closed` | `760eded801d3` | 0 | behind 825, ahead 580 |
 | `agent-systems-benchmark-ssh-remote-bootstrap` | `feature/ssh-remote-bootstrap` | `980276dd2885` | 0 | behind 825, ahead 229 |
+| `agent-systems-benchmark-state-ar-1873` | `repair/ar-1873-legacy-abandonment` | `870331be533e` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 825, ahead 30 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 825, ahead 42 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 825, ahead 7 |
