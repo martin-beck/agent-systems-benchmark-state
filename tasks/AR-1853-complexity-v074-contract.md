@@ -22,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align the complexity-budget contract with Coordinator v0.7.4.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Complexity v0.7.4 compatibility contract",
-  "updated_at": "2026-10-14T13:59:32+00:00",
+  "updated_at": "2026-10-14T13:59:34+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1853"
 }
 ---
@@ -83,3 +83,6 @@ contract exposed by exact Coordinator v0.7.4 adoption.
 - 2026-10-14T13:59:29+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
 
 - 2026-10-14T13:59:32+00:00: Released retry circuit launch slot.
+
+- 2026-10-14T13:59:34+00:00: Recorded command exit 0; command argv SHA-256
+  5edf889c9994e47a51db31ec7c3152ad94f004eef47dbbdf618078fbc6659040.
