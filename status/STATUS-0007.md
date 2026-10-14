@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P1 | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Unclaimed | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P1 | [AR-0841](../tasks/AR-0841-frontend-local-transport.md): Implement frontend local transport | Unclaimed | Implement the local frontend control transport and authorization boundary. | Implement bounded owner-only Unix-socket transport with peer checks and fail-closed framing. |
 | P1 | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md): Implement frontend run lifecycle | Unclaimed | Define and implement frontend-independent run lifecycle semantics. | Implement idempotent launch, cancellation, status reconnect, history, and recovery semantics. |
 | P1 | [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | Unclaimed | Qualify frontend privacy, artifact access, and fault behavior. | Monitor PR #69 exact-head CI at cca49ec3bea429a90a267600acf821cebe45c138; investigate any failure and do not merge without coordinator authorization. |

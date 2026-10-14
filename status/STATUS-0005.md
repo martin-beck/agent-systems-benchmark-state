@@ -462,12 +462,13 @@
 | P1 | [AR-1894](../tasks/AR-1894.md): Admit abandonment dependency | codex-ar1894-abandonment-20261014 | State-only successor admitting exactly tools/execution_abandonment.py for the AR-1893 focused schema test. Preserve AR-1893, AR-1892, AR-1891, AR-1890 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1895](../tasks/AR-1895.md): Admit receipt dependency | codex-ar1895-receipt-20261014 | State-only successor admitting exactly tools/execution_receipt.py for the AR-1894 focused replacement test. Preserve AR-1894 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
+| P1 | [AR-1896](../tasks/AR-1896.md): Admit revalidation dependency | Unclaimed | State-only successor admitting exactly tools/assumption_revalidation.py for the AR-1895 focused replacement test. Preserve AR-1895 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (101)
 
@@ -575,7 +576,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (97)
+### Planned (96)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -663,4 +664,3 @@
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 | P1 | [AR-1666](../tasks/AR-1666.md): Trusted-main broad TUI coverage qualification | Unclaimed | Raise current TUI main coverage from 89.43&#37; to the strict 90&#37; gate through behavior-focused tests without weakening thresholds. | Reproduce trusted-main coverage at exact head 06e96770, identify low-coverage wizard/runtime/UI paths, and add focused behavior tests preserving development nonblocking authentication, signature, and key-management rules. |
 | P1 | [AR-1679](../tasks/AR-1679.md): ASB legacy task-spec normalization | Unclaimed | Normalize the remaining ASB legacy task-spec records rejected by strict validation without changing task intent or gates. | Normalize AR-1625/1626/1628-1630 and AR-1641-1655, regenerate projections, and pass fresh strict validation. |
-| P1 | [AR-1680](../tasks/AR-1680.md): Repair vendor manifest regression fixture | Unclaimed | Align the immutable vendor-manifest regression fixture with the intentional task-spec validator vocabulary extension. | Run vendor verification and the complete vendor regression test on the exact signed head. |
