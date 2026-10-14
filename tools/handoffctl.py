@@ -364,7 +364,7 @@ def short_title_errors(path: Path, task_id: str, value: object) -> list[str]:
     return []
 
 
-COORDINATOR_VERSION = "0.7.11"
+COORDINATOR_VERSION = "0.7.12"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -4987,6 +4987,7 @@ def main() -> int:
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
     item.add_argument("--execution-id", required=True)
+    item.add_argument("--allow-legacy-without-identity", action="store_true")
     item.add_argument("--evidence-ref", required=True)
     item.add_argument("--evidence-digest", required=True)
     item.add_argument("--note", required=True)
