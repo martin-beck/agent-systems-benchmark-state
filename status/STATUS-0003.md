@@ -2330,11 +2330,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1919-git-publication-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create a fresh successor task for the reviewed control diagnostic catalog repair with a new source-write execution envelope scoped only to the catalog files and required tests/publication. Preserve AR-1863 as immutable blocked history; do not widen or mutate its bound envelope, alter AR-1787/AR-1835, or weaken coordinator gates. |
@@ -3863,7 +3863,7 @@ flowchart LR
         AR_1875["AR-1875 - Superseded"]:::status_superseded
         AR_1876["AR-1876 - Superseded"]:::status_superseded
         AR_1877["AR-1877 - Done"]:::status_done
-        AR_1878["AR-1878 - In progress"]:::status_in_progress
+        AR_1878["AR-1878 - Open"]:::status_open
         AR_1879["AR-1879 - Blocked"]:::status_blocked
         AR_1880["AR-1880 - Blocked"]:::status_blocked
         AR_1881["AR-1881 - Open"]:::status_open
@@ -4178,3 +4178,5 @@ flowchart LR
     AR_0320 --> AR_1230
     AR_0401 --> AR_0402
     AR_0401 --> AR_0403
+    AR_0401 --> AR_0405
+    AR_0401 --> AR_0505
