@@ -2414,11 +2414,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1884-metadata-repair-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create a dependency-scoped successor repair for the no-claim_process terminal-result recovery path. Do not mutate AR-1878, AR-1881, AR-1882, or AR-1883. Keep state-checkout recovery evidence and product-tree publication evidence under separate explicit roots and bounded allowlists; require exact reservation/result/expiry/operator identity evidence and immutable audit; leave ownerless pending AR-0120 landing with the next action to re-plan against its landed head and then bind exact roots. |
@@ -3351,7 +3351,7 @@ flowchart LR
         AR_1881["AR-1881 - In progress"]:::status_in_progress
         AR_1882["AR-1882 - Blocked"]:::status_blocked
         AR_1883["AR-1883 - Blocked"]:::status_blocked
-        AR_1884["AR-1884 - Open"]:::status_open
+        AR_1884["AR-1884 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4669,5 +4669,3 @@ flowchart LR
     AR_1452 --> AR_1453
     AR_1452 --> AR_1454
     AR_1453 --> AR_1455
-    AR_1453 --> AR_1457
-    AR_1453 --> AR_1458
