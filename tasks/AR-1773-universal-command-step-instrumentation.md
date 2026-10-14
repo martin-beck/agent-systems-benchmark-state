@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T15:53:15+00:00",
+  "claim_expires": "2026-10-14T15:55:41+00:00",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -109,9 +109,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-14T13:55:11+00:00",
+  "updated_at": "2026-10-14T13:55:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -496,3 +496,5 @@ non-TTY compatibility.
 
 - 2026-10-14T13:55:05+00:00: Recorded command exit 1; command argv SHA-256
   1483b10f2b5682ea1f996c071c18fdc4d6afb55631f034d354b1692d74a756a7.
+
+- 2026-10-14T13:55:41+00:00: Heartbeat by asb-ar1773-instrumentation-20261014.
