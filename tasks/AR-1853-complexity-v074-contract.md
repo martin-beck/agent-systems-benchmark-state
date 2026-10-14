@@ -9,6 +9,24 @@
   "owner": "asb-ar1853-complexity-20261014",
   "plan": "../plans/AR-1853-complexity-v074-contract.md",
   "priority": "P1",
+  "retry_circuit": {
+    "abandoned": [],
+    "attempts": [],
+    "hold": null,
+    "recoveries": [],
+    "reservations": [
+      {
+        "expires_at": "2026-10-14T14:30:28+00:00",
+        "id": "80ad4541900648dc84e4ace6172cd5de",
+        "identity": "sha256:1889f82f29098d9eb2a47010ec9f59e7c10c0470496683ee3630074de470807d",
+        "progress_digest": "sha256:5fac4bda38e4a3df8ea06a1946c455591cbd5abd0c255c7168c133926aca5bbe",
+        "reserved_at": "2026-10-14T13:59:29+00:00",
+        "task_revision": 17,
+        "window": 3
+      }
+    ],
+    "schema_version": 1
+  },
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "mechanical",
@@ -22,9 +40,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align the complexity-budget contract with Coordinator v0.7.4.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Complexity v0.7.4 compatibility contract",
-  "updated_at": "2026-10-14T13:59:02+00:00",
+  "updated_at": "2026-10-14T13:59:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1853"
 }
 ---
@@ -79,3 +97,5 @@ contract exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-14T13:59:02+00:00: Recorded command exit 0; command argv SHA-256
   fd269df255b807895133c60b3fabdfcff435591c33900da97052f6456e773903.
+
+- 2026-10-14T13:59:29+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
