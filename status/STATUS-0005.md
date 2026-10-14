@@ -378,7 +378,13 @@
 
 ## Complete AR inventory
 
-### Open (10)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1873](../tasks/AR-1873.md): Abandon expired executions | codex-ar1873-repair-20261014 | Add a fail-closed abandon-expired-execution transition clearing only expired bound reservations with no live identity; classify missing/mismatched results as failed, require exact owner/revision matches, non-empty operator evidence, and immutable audit. Reject live/non-expired, malformed, matching-success, wrong-owner/revision, and missing-evidence cases. No recovery/success authorization or direct edits to AR-1773/1852/1871. | Implement the bounded scope and record local acceptance evidence. |
+
+### Open (9)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -391,7 +397,6 @@
 | P1 | [AR-1865](../tasks/AR-1865.md): Repair expired role cleanup | Unclaimed | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. | Obtain independent GitHub approval for PR #160 at exact head b0811a8802; merge via authorized signed path, then run post-merge verification and repaired roles.remove cleanup. Current gh pr review --approve is rejected because the available identity owns the PR. |
 | P1 | [AR-1867](../tasks/AR-1867.md): Legacy reservation recovery | Unclaimed | Add a fail-closed ASB downstream handoffctl overlay path to recover expired bound execution reservations from pre-identity claims without direct state edits or weakened reservation structural checks. | PR #161 published at exact source head 7281ca87f5 plus signed overlay commit 5f7f247a39; obtain independent exact-head review and required CI before merge. Full unittest remains environment-blocked by bounded filesystem/jbd2 hang. |
 | P1 | [AR-1869](../tasks/AR-1869.md): Repair evidence ledger digests | Unclaimed | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. | Repair PR #164 scope at a fresh exact head: retain only the two AR-1861/AR-1862 evidence-ledger digest updates, restore/rebase away schema/task-record, checkpoint/session, and test changes; rerun focused/full gates and request fresh independent review. |
-| P1 | [AR-1873](../tasks/AR-1873.md): Abandon expired executions | Unclaimed | Add a fail-closed abandon-expired-execution transition clearing only expired bound reservations with no live identity; classify missing/mismatched results as failed, require exact owner/revision matches, non-empty operator evidence, and immutable audit. Reject live/non-expired, malformed, matching-success, wrong-owner/revision, and missing-evidence cases. No recovery/success authorization or direct edits to AR-1773/1852/1871. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (92)
 
@@ -659,4 +664,3 @@
 | P0 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Unclaimed | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Completed: PR #170 merged; stale duplicate PR #171 requires authorized cleanup. |
 | P0 | [AR-1198](../tasks/AR-1198.md): Canonical authenticated agent-catalog digest | Unclaimed | Define and enforce the canonical authenticated ASB v1.4 agent-catalog digest. | Independently review PR #174 at exact head 3cc8fa1a27587642bda5100f45140c11f1fd0c6d, run cross-repository vector checks with asb-tui AR-1195, then merge only after all exact-head checks are green. |
 | P0 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | Unclaimed | Define offline tutorial steps and validate them against the ASB CLI grammar. | Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence. |
-| P0 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Unclaimed | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |

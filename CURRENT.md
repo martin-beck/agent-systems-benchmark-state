@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1873 — Abandon expired executions](tasks/AR-1873.md) | Add a fail-closed abandon-expired-execution transition clearing only expired bound reservations with no live identity; classify missing/mismatched results as failed, require exact owner/revision matches, non-empty operator evidence, and immutable audit. Reject live/non-expired, malformed, matching-success, wrong-owner/revision, and missing-evidence cases. No recovery/success authorization or direct edits to AR-1773/1852/1871. | Implement the bounded scope and record local acceptance evidence. | codex-ar1873-repair-20261014 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -16,7 +22,6 @@ Never edit this file directly.
 | P1 | [AR-1865 — Repair expired role cleanup](tasks/AR-1865.md) | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. | Obtain independent GitHub approval for PR #160 at exact head b0811a8802; merge via authorized signed path, then run post-merge verification and repaired roles.remove cleanup. Current gh pr review --approve is rejected because the available identity owns the PR. | - |
 | P1 | [AR-1867 — Legacy reservation recovery](tasks/AR-1867.md) | Add a fail-closed ASB downstream handoffctl overlay path to recover expired bound execution reservations from pre-identity claims without direct state edits or weakened reservation structural checks. | PR #161 published at exact source head 7281ca87f5 plus signed overlay commit 5f7f247a39; obtain independent exact-head review and required CI before merge. Full unittest remains environment-blocked by bounded filesystem/jbd2 hang. | - |
 | P1 | [AR-1869 — Repair evidence ledger digests](tasks/AR-1869.md) | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. | Repair PR #164 scope at a fresh exact head: retain only the two AR-1861/AR-1862 evidence-ledger digest updates, restore/rebase away schema/task-record, checkpoint/session, and test changes; rerun focused/full gates and request fresh independent review. | - |
-| P1 | [AR-1873 — Abandon expired executions](tasks/AR-1873.md) | Add a fail-closed abandon-expired-execution transition clearing only expired bound reservations with no live identity; classify missing/mismatched results as failed, require exact owner/revision matches, non-empty operator evidence, and immutable audit. Reject live/non-expired, malformed, matching-success, wrong-owner/revision, and missing-evidence cases. No recovery/success authorization or direct edits to AR-1773/1852/1871. | Implement the bounded scope and record local acceptance evidence. | - |
 
 ## Blocked
 
