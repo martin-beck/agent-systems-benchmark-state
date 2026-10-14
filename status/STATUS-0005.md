@@ -378,7 +378,13 @@
 
 ## Complete AR inventory
 
-### Open (10)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1870](../tasks/AR-1870.md): Repair ledger digests only | codex-asb-queue-20261014 | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes, leaving schema, tests, checkpoints, sessions, predicates, and all other task fields unchanged. | Implement the bounded scope and record local acceptance evidence. |
+
+### Open (9)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -391,7 +397,6 @@
 | P1 | [AR-1865](../tasks/AR-1865.md): Repair expired role cleanup | Unclaimed | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. | Obtain independent GitHub approval for PR #160 at exact head b0811a8802; merge via authorized signed path, then run post-merge verification and repaired roles.remove cleanup. Current gh pr review --approve is rejected because the available identity owns the PR. |
 | P1 | [AR-1867](../tasks/AR-1867.md): Legacy reservation recovery | Unclaimed | Add a fail-closed ASB downstream handoffctl overlay path to recover expired bound execution reservations from pre-identity claims without direct state edits or weakened reservation structural checks. | PR #161 published at exact source head 7281ca87f5 plus signed overlay commit 5f7f247a39; obtain independent exact-head review and required CI before merge. Full unittest remains environment-blocked by bounded filesystem/jbd2 hang. |
 | P1 | [AR-1869](../tasks/AR-1869.md): Repair evidence ledger digests | Unclaimed | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. | Repair PR #164 scope at a fresh exact head: retain only the two AR-1861/AR-1862 evidence-ledger digest updates, restore/rebase away schema/task-record, checkpoint/session, and test changes; rerun focused/full gates and request fresh independent review. |
-| P1 | [AR-1870](../tasks/AR-1870.md): Repair ledger digests only | Unclaimed | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes, leaving schema, tests, checkpoints, sessions, predicates, and all other task fields unchanged. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (94)
 
