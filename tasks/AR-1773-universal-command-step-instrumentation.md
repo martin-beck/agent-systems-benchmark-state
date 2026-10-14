@@ -90,12 +90,12 @@
     "task_revision": 135
   },
   "execution_result": {
-    "argv_digest": "1483b10f2b5682ea1f996c071c18fdc4d6afb55631f034d354b1692d74a756a7",
+    "argv_digest": "4003864c771cf486ec639b56e4bf852c25e0f0b499393ed37e2b441babca7ec4",
     "classification": "EXIT",
     "envelope_digest": "sha256:36af7d046d9ef15d3ed21b798ab488b01fd26a5d9ad86cc3a2af1f75907c69cb",
-    "execution_id": "4a0186245d594c8da4d16a6e6513c5d6",
+    "execution_id": "fdd4c2b4afc849ddb4d7267d60ec6731",
     "owner": "asb-ar1773-instrumentation-20261014",
-    "recorded_at": "2026-10-14T13:55:01+00:00",
+    "recorded_at": "2026-10-14T13:55:51+00:00",
     "returncode": 1
   },
   "id": "AR-1773",
@@ -119,9 +119,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-14T13:55:49+00:00",
+  "updated_at": "2026-10-14T13:55:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -510,3 +510,5 @@ non-TTY compatibility.
 - 2026-10-14T13:55:41+00:00: Heartbeat by asb-ar1773-instrumentation-20261014.
 
 - 2026-10-14T13:55:49+00:00: Reserved bound execution fdd4c2b4afc849ddb4d7267d60ec6731.
+
+- 2026-10-14T13:55:52+00:00: Recorded execution result fdd4c2b4afc849ddb4d7267d60ec6731.
