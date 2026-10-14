@@ -2190,11 +2190,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb_ar1868_task_schema_luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Update only schema/task-schema.json and generated validation fixtures so accepted modern task-record metadata is validated by ASB while unknown fields remain rejected; preserve ASB-specific lifecycle constraints. |
@@ -3181,7 +3181,7 @@ flowchart LR
         AR_1865["AR-1865 - Blocked"]:::status_blocked
         AR_1866["AR-1866 - Done"]:::status_done
         AR_1867["AR-1867 - Open"]:::status_open
-        AR_1868["AR-1868 - In progress"]:::status_in_progress
+        AR_1868["AR-1868 - Open"]:::status_open
         AR_1869["AR-1869 - Open"]:::status_open
         AR_1870["AR-1870 - Open"]:::status_open
         AR_1871["AR-1871 - In progress"]:::status_in_progress
@@ -4884,3 +4884,4 @@ flowchart LR
     AR_1641 --> AR_1613
     AR_1641 --> AR_1622
     AR_1641 --> AR_1643
+    AR_1641 --> AR_1645
