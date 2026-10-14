@@ -497,7 +497,7 @@
 
 ## Complete AR inventory
 
-### In progress (22)
+### In progress (21)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -521,10 +521,9 @@
 | P1 | [AR-1905](../tasks/AR-1905.md): Admit task-spec dependency | codex-ar1905-taskspec-20261014 | State-only successor admitting exactly tools/task_spec.py for the AR-1903 focused replacement test. Preserve AR-1904, AR-1903, AR-1901 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1907](../tasks/AR-1907.md): Admit resume runtime dependency | codex-ar1907-runtime-20261014 | State-only successor admitting exactly tools/resume_card_runtime.py for the AR-1905 focused replacement test. Preserve AR-1906, AR-1905 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1908](../tasks/AR-1908.md): Admit run-command dependency | codex-ar1908-runcommand-20261014 | State-only successor admitting exactly tools/run_command.py for the AR-1907 focused replacement test. Preserve AR-1907, AR-1906 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1909](../tasks/AR-1909.md): Bootstrap retention worktree | codex-ar1909-bootstrap-20261014 | Create a narrow successor for the missing direct worktree needed to execute AR-1906. Use only handoffctl-authorized worktree and test paths; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | codex-ar1910-limits-20261014 | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (6)
+### Open (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -534,6 +533,7 @@
 | P1 | [AR-1881](../tasks/AR-1881.md): Recover terminal orphan reservation | Unclaimed | Add a narrowly scoped handoffctl recovery path for an expired bound reservation with an exactly matching durable terminal result but no legacy claim_process identity. Reuse AR-1867/AR-1872 evidence and structural fences; preserve exact reservation/result identity, expiry, structural validation, and immutable audit. Do not edit AR-1878 before lease expiry, weaken other recover/abandon cases, or force-clear state. | Obtain exact-head review and publication for signed product commit 3162fe8be2; retain envelope read-scope and git_metadata admission blockers as non-waived evidence. |
 | P1 | [AR-1904](../tasks/AR-1904.md): Bootstrap publication scope | Unclaimed | Create a narrow successor for AR-1901&#x27;s worktree and spec-retention failure using only handoffctl-authorized state paths and commands. Retain AR-1901 immutable task, envelope, bindings, and evidence; do not perform out-of-band Git/state edits, broaden paths, or alter product files. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1906](../tasks/AR-1906.md): Retain envelope artifacts | Unclaimed | Create a narrow successor for bind-spec/bind-envelope candidate retention. Use only handoffctl issue-series and authorized coordinator paths; preserve AR-1901 through AR-1905 immutable records, reject direct Git/state edits and arbitrary paths, and do not alter product files. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1909](../tasks/AR-1909.md): Bootstrap retention worktree | Unclaimed | Create a narrow successor for the missing direct worktree needed to execute AR-1906. Use only handoffctl-authorized worktree and test paths; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (104)
 
