@@ -526,13 +526,14 @@
 | P1 | [AR-1909](../tasks/AR-1909.md): Bootstrap retention worktree | codex-ar1909-bootstrap-20261014 | Create a narrow successor for the missing direct worktree needed to execute AR-1906. Use only handoffctl-authorized worktree and test paths; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | codex-ar1910-limits-20261014 | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (3)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 | P1 | [AR-1881](../tasks/AR-1881.md): Recover terminal orphan reservation | Unclaimed | Add a narrowly scoped handoffctl recovery path for an expired bound reservation with an exactly matching durable terminal result but no legacy claim_process identity. Reuse AR-1867/AR-1872 evidence and structural fences; preserve exact reservation/result identity, expiry, structural validation, and immutable audit. Do not edit AR-1878 before lease expiry, weaken other recover/abandon cases, or force-clear state. | Obtain exact-head review and publication for signed product commit 3162fe8be2; retain envelope read-scope and git_metadata admission blockers as non-waived evidence. |
+| P1 | [AR-1891](../tasks/AR-1891.md): Reconcile terminal recovery | Unclaimed | Add state-only recovery reconciliation for expired AR-1878 terminal-result evidence. Require exact target/revision/reservation/result/envelope, expiry, terminal EXIT, absent worker/claim_process, and operator evidence; immutable audit then existing recovery. Reject arbitrary, active/unexpired, mismatched, malformed/missing, cross-root, force-clear, and publication inputs. Preserve AR-1878 through AR-1890; no product/vendor/formal/TLC state. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (102)
 
@@ -641,7 +642,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (100)
+### Planned (99)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -671,5 +672,3 @@
 | P0 | [AR-1658](../tasks/AR-1658.md): Development release-channel resolver contract | Unclaimed | Define and implement the ASB-side channel option with dev as the default and current-main provenance. | Implement the explicit channel parser/resolver and immutable current-main manifest checks, then add dev/stable/nightly/experimental negative coverage. |
 | P0 | [AR-1659](../tasks/AR-1659.md): Atomic TUI materializer and launch handoff | Unclaimed | Build the selected dev-channel TUI in a temporary location and atomically install and launch it from ASB. | Implement the bounded clone/build/materialize/rollback runner and verify cleanup, manifest compatibility, and launch diagnostics. |
 | P0 | [AR-1660](../tasks/AR-1660.md): Fresh-user setup-to-comparison acceptance runner | Unclaimed | Run one selectable ASB journey from install and wizard setup through benchmark, recording, offline replay, and comparison. | Implement the disposable acceptance runner and capture exact-head human and JSON receipts for the paired qualification gate. |
-| P0 | [AR-1663](../tasks/AR-1663.md): Repair protected-main DCO recognition failure | Unclaimed | Repair the current protected-main merge metadata so DCO recognition succeeds without changing product files or development nonblocking behavior. | Confirm AR-1661 and AR-1658 dependency evidence, then repair and independently verify the exact protected-main merge topology, Signed-off-by trailer, SSH signature, unchanged tree, and hosted policy. |
-| P0 | [AR-1667](../tasks/AR-1667.md): Development-channel launch diagnostics repair | Unclaimed | Preserve the resolved development channel and warning-only diagnostics on every ASB TUI launch failure, including omitted-channel launches. | Review and merge the signed ASB launch repair, then rerun the exact-head PTY launch and fresh-user journey without weakening environment or security boundaries. |
