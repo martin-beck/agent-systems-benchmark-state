@@ -2176,11 +2176,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb_ar1867_legacy_recovery_luna |
 | Parent | None |
 | Children | None |
 | Summary | Add a fail-closed ASB downstream handoffctl overlay path to recover expired bound execution reservations from pre-identity claims without direct state edits or weakened reservation structural checks. |
@@ -3096,7 +3096,7 @@ flowchart LR
         AR_1864["AR-1864 - Done"]:::status_done
         AR_1865["AR-1865 - Blocked"]:::status_blocked
         AR_1866["AR-1866 - Done"]:::status_done
-        AR_1867["AR-1867 - Open"]:::status_open
+        AR_1867["AR-1867 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4985,5 +4985,3 @@ flowchart LR
     AR_1734 --> AR_1737
     AR_1734 --> AR_1738
     AR_1737 --> AR_1751
-    AR_1738 --> AR_1799
-    AR_1740 --> AR_1745
