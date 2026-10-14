@@ -1812,11 +1812,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-policy-formal-cleanup-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Adopt Coordinator v0.7.4 with partial legacy worktree binding. |
@@ -3224,7 +3224,7 @@ flowchart LR
         AR_1838["AR-1838 - Done"]:::status_done
         AR_1839["AR-1839 - Done"]:::status_done
         AR_1840["AR-1840 - Done"]:::status_done
-        AR_1841["AR-1841 - In progress"]:::status_in_progress
+        AR_1841["AR-1841 - Blocked"]:::status_blocked
         AR_1842["AR-1842 - Planned"]:::status_planned
         AR_1843["AR-1843 - Done"]:::status_done
         AR_1844["AR-1844 - Planned"]:::status_planned
@@ -4794,3 +4794,4 @@ flowchart LR
     AR_1563 --> AR_1653
     AR_1563 --> AR_1658
     AR_1564 --> AR_1566
+    AR_1564 --> AR_1568
