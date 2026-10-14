@@ -10,6 +10,7 @@ import io
 import sys
 import tempfile
 import unittest
+from types import SimpleNamespace
 from pathlib import Path
 from unittest.mock import patch
 
@@ -35,6 +36,30 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
     def tearDown(self) -> None:
         self.globals.stop()
         self.directory.cleanup()
+
+    def test_fenced_run_rejects_invalid_retry_window_and_envelope_timeout(self) -> None:
+        args = SimpleNamespace(
+            task="AR-0001",
+            owner="worker",
+            command=["true"],
+            timeout_seconds=5,
+            retry_window=0,
+        )
+        with (
+            patch.object(handoffctl, "backend_selection", return_value={"backend": "sqlite"}),
+            patch.object(handoffctl, "require_active_owner", return_value={}),
+            patch.object(handoffctl.retry_circuit, "_window", side_effect=ValueError("bad window")),
+            self.assertRaisesRegex(RuntimeError, "bad window"),
+        ):
+            handoffctl._cmd_run_fenced(args)
+        args.retry_window = 3
+        with (
+            patch.object(handoffctl, "backend_selection", return_value={"backend": "sqlite"}),
+            patch.object(handoffctl, "require_active_owner", return_value={}),
+            patch.object(handoffctl, "run_envelope_timeout", return_value=1.0),
+            self.assertRaisesRegex(RuntimeError, "exceeds envelope limit"),
+        ):
+            handoffctl._cmd_run_fenced(args)
 
     def test_snapshot_rejects_validation_and_backend_races(self) -> None:
         for label, selections, errors, message in (
