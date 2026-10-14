@@ -1820,7 +1820,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Adopt Coordinator v0.7.4 with partial legacy worktree binding. |
-| Next action | Wait for scoped v0.7.4 compatibility repairs AR-1851 (AR-1793), AR-1852 (roles), AR-1853 (complexity), and AR-1849 (formal admission/workspace) to merge; then rebase PR #142 onto protected main, rerun candidate-focused/full gates, obtain fresh exact-head independent review and CI. |
+| Next action | Wait for scoped v0.7.4 compatibility repairs AR-1851 (AR-1793), AR-1852 (roles), and AR-1853 (complexity) to merge; then rebase PR #142 onto protected main, rerun candidate-focused/full non-formal required gates, obtain fresh exact-head independent review and CI. AR-1849 formal-admission evidence is optional for autonomous development and remains separately authorized for final product-delivery qualification. |
 
 ### AR-1842 — Name-first selection and internal identity resolution
 
@@ -4794,8 +4794,3 @@ flowchart LR
     AR_1563 --> AR_1653
     AR_1563 --> AR_1658
     AR_1564 --> AR_1566
-    AR_1564 --> AR_1568
-    AR_1564 --> AR_1588
-    AR_1564 --> AR_1599
-    AR_1564 --> AR_1631
-    AR_1564 --> AR_1653

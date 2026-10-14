@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P1 | [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md): OpenRouter free-model conformance and hostile qualification | Unclaimed | Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing. | No further action; merged PR #255 and its exact qualification evidence are recorded. |
 | P1 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Unclaimed | Add the required credential-free CI stage for the complete benchmark path. | Reconcile and doctor state; release AR-1335 done with PR, rerun, and eight post-merge workflow evidence. |
 | P1 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md): Live benchmark workflow documentation and support matrix | Unclaimed | Document the live benchmark workflow and publish the supported agent and provider matrix. | All eight post-merge workflows green; release AR-1336 done and reconcile/doctor. |
 | P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Unclaimed | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Run state reconcile and live doctor, then release AR-1338 done with exact post-merge workflow evidence. |

@@ -7,7 +7,7 @@
     "AR-1795"
   ],
   "id": "AR-1841",
-  "next_action": "Wait for scoped v0.7.4 compatibility repairs AR-1851 (AR-1793), AR-1852 (roles), AR-1853 (complexity), and AR-1849 (formal admission/workspace) to merge; then rebase PR #142 onto protected main, rerun candidate-focused/full gates, obtain fresh exact-head independent review and CI.",
+  "next_action": "Wait for scoped v0.7.4 compatibility repairs AR-1851 (AR-1793), AR-1852 (roles), and AR-1853 (complexity) to merge; then rebase PR #142 onto protected main, rerun candidate-focused/full non-formal required gates, obtain fresh exact-head independent review and CI. AR-1849 formal-admission evidence is optional for autonomous development and remains separately authorized for final product-delivery qualification.",
   "owner": "asb-policy-formal-cleanup-20261014",
   "plan": "../plans/AR-1841-coordinator-v053-adoption.md",
   "priority": "P0",
@@ -24,9 +24,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Adopt Coordinator v0.7.4 with partial legacy worktree binding.",
-  "task_revision": 172,
+  "task_revision": 173,
   "title": "Coordinator v0.5.3 adoption",
-  "updated_at": "2026-10-14T14:00:20+00:00",
+  "updated_at": "2026-10-14T14:00:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1841-v053"
 }
 ---
@@ -564,3 +564,7 @@ with the verified v0.5.3 snapshot needed to unblock AR-1826.
   next_action correction only; preserve dependency graph and historical evidence.
 
 - 2026-10-14T14:00:20+00:00: Claimed by asb-policy-formal-cleanup-20261014.
+
+- 2026-10-14T14:00:33+00:00: Applied UD-0003: formal/TLC evidence is optional for autonomous
+  development and is not an admission or merge gate; preserved exact-head review,
+  source/test/privacy/CI/release gates and the separate AR-1849 qualification path.
