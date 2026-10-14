@@ -2421,8 +2421,8 @@
 | Owner | codex-ar1884-metadata-repair-20261014 |
 | Parent | None |
 | Children | None |
-| Summary | Create a dependency-scoped successor repair for the no-claim_process terminal-result recovery path. Do not mutate AR-1878, AR-1881, AR-1882, or AR-1883. Keep state-checkout recovery evidence and product-tree publication evidence under separate explicit roots and bounded allowlists; require exact reservation/result/expiry/operator identity evidence and immutable audit; leave ownerless pending AR-0120 landing with the next action to re-plan against its landed head and then bind exact roots. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Summary | Create a dependency-scoped successor repair for no-claim_process terminal-result recovery after the landed runtime successor chain AR-0121, AR-0122, and AR-0123. Do not mutate AR-1878, AR-1881, AR-1882, or AR-1883. Keep state-checkout recovery evidence and product-tree publication evidence under separate explicit roots and bounded allowlists; require exact reservation/result/expiry/operator identity evidence and immutable audit; remain ownerless after metadata repair until exact product/state roots are contractually bound. |
+| Next action | After the landed AR-0121 -&gt; AR-0122 chain (with AR-0123 merged by AR-0122) is recorded, re-plan and bind exact product/state roots; do not bind roots or implement early. |
 
 
 ## Dependency graph
@@ -4663,9 +4663,3 @@ flowchart LR
     AR_1450 --> AR_1455
     AR_1450 --> AR_1487
     AR_1450 --> AR_1488
-    AR_1450 --> AR_1496
-    AR_1451 --> AR_1452
-    AR_1451 --> AR_1454
-    AR_1452 --> AR_1453
-    AR_1452 --> AR_1454
-    AR_1453 --> AR_1455
