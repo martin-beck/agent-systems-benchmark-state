@@ -2536,6 +2536,20 @@
 | Summary | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. |
 | Next action | Run bounded focused recovery scope test through AR-1892 envelope. |
 
+### AR-1893 — Repair envelope replacement schema
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only repair to admit the authorized execution_envelope_replacements task field and validator path needed to replace AR-1892&#x27;s malformed predecessor envelope without widening unrelated scope. Preserve AR-1892, AR-1891, AR-1890 and earlier histories; no claim bypass, cross-root, network, or formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3472,6 +3486,7 @@ flowchart LR
         AR_1890["AR-1890 - Blocked"]:::status_blocked
         AR_1891["AR-1891 - Planned"]:::status_planned
         AR_1892["AR-1892 - In progress"]:::status_in_progress
+        AR_1893["AR-1893 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4518,31 +4533,3 @@ flowchart LR
     AR_1342 --> AR_1345
     AR_1342 --> AR_1390
     AR_1342 --> AR_1391
-    AR_1342 --> AR_1392
-    AR_1342 --> AR_1393
-    AR_1342 --> AR_1432
-    AR_1342 --> AR_1433
-    AR_1342 --> AR_1434
-    AR_1347 --> AR_1349
-    AR_1347 --> AR_1350
-    AR_1347 --> AR_1351
-    AR_1350 --> AR_1349
-    AR_1350 --> AR_1351
-    AR_1351 --> AR_1352
-    AR_1352 --> AR_1353
-    AR_1352 --> AR_1354
-    AR_1352 --> AR_1355
-    AR_1352 --> AR_1356
-    AR_1356 --> AR_1357
-    AR_1357 --> AR_1358
-    AR_1357 --> AR_1359
-    AR_1357 --> AR_1451
-    AR_1357 --> AR_1452
-    AR_1357 --> AR_1470
-    AR_1357 --> AR_1471
-    AR_1359 --> AR_1360
-    AR_1359 --> AR_1361
-    AR_1359 --> AR_1362
-    AR_1359 --> AR_1470
-    AR_1359 --> AR_1471
-    AR_1362 --> AR_1363

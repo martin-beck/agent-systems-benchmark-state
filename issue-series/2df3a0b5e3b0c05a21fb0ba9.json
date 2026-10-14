@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1893",
+  "issue": {
+    "number": 10024,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10024"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Bind exact state-tool and focused-test scope; validate stale-revision, no-widening, and replacement acceptance/rejection cases; record fail-closed AR-1878 expiry evidence.",
+      "depends_on": [],
+      "id": "AR-1893",
+      "ownership": "ASB handoffctl/task-schema repair only; no product/vendor/history changes.",
+      "scope": "State-only repair to admit the authorized execution_envelope_replacements task field and validator path needed to replace AR-1892's malformed predecessor envelope without widening unrelated scope. Preserve AR-1892, AR-1891, AR-1890 and earlier histories; no claim bypass, cross-root, network, or formal/TLC.",
+      "short_title": "Repair envelope replacement schema"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
