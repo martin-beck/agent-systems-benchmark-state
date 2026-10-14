@@ -2870,7 +2870,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in ASB tasks AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes after AR-1878 recovery; preserve every other task field and all historical records, and do not run formal or TLC checks. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Record exact signed commit and post-merge doctor evidence; broader vendor manifest test remains outside ledger-only scope. |
 
 
 ## Dependency graph
@@ -4227,6 +4227,3 @@ flowchart LR
     AR_0704 --> AR_0706
     AR_0801 --> AR_0802
     AR_0801 --> AR_0803
-    AR_0801 --> AR_0808
-    AR_0801 --> AR_0820
-    AR_0801 --> AR_0840
