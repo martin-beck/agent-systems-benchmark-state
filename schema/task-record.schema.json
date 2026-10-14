@@ -18,7 +18,7 @@
     "properties": {
         "schema_version": {"const": 1},
         "id": {"$ref": "#/$defs/taskId"},
-        "title": {"type": "string", "minLength": 1, "maxLength": 120},
+        "title": {"type": "string", "minLength": 1, "maxLength": 240},
         "short_title": {"type": "string", "minLength": 1, "maxLength": 120},
         "status": {
             "enum": [
@@ -33,14 +33,14 @@
             ]
         },
         "priority": {"enum": ["P0", "P1", "P2", "P3", "P4"]},
-        "summary": {"type": "string", "minLength": 1, "maxLength": 800},
-        "next_action": {"type": "string", "minLength": 1, "maxLength": 800},
+        "summary": {"type": "string", "minLength": 1, "maxLength": 4000},
+        "next_action": {"type": "string", "minLength": 1, "maxLength": 4000},
         "task_revision": {"type": "integer", "minimum": 1},
         "updated_at": {"type": "string", "format": "date-time"},
-        "owner": {"type": "string", "maxLength": 80},
+        "owner": {"type": "string"},
         "role": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$"},
         "team": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$"},
-        "claim_expires": {"type": "string", "maxLength": 40},
+        "claim_expires": {"type": "string"},
         "claim_process": {
             "oneOf": [
                 {
@@ -66,43 +66,29 @@
             ]
         },
         "worktree_key": {"type": "string", "pattern": "^$|^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
-        "branch": {"type": "string", "maxLength": 160},
-        "checkpoint_commit": {"type": "string", "pattern": "^(|[0-9a-f]{40})$"},
-        "plan": {"type": "string", "pattern": "^(|\\.\\./plans/AR-[0-9]{4}(?:-[a-z0-9-]+)?\\.md)$"},
+        "branch": {"type": "string"},
+        "checkpoint_commit": {"type": "string"},
+        "plan": {"type": "string"},
         "depends_on": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/taskId"}},
-        "observed_branch": {"type": "string", "maxLength": 160},
-        "observed_head": {"type": "string", "pattern": "^(|[0-9a-f]{40})$"},
-        "observed_dirty": {"type": "integer", "minimum": 0},
+        "observed_branch": {"type": "string"},
+        "observed_head": {"type": "string"},
+        "observed_dirty": {"type": "boolean"},
         "superseded_by": {"$ref": "#/$defs/taskId"},
-        "oracle_gate": {"$ref": "#/$defs/oracleGate"},
-        "spec_ref": {"type": "string", "pattern": "^specs/AR-[0-9]{4}\\.json$"},
+        "oracle_gate": {
+            "type": "object",
+            "properties": {"human_session": {"$ref": "#/$defs/humanSession"}}
+        },
+        "spec_ref": {"type": "string"},
         "spec_revision": {"type": "integer", "minimum": 1},
-        "spec_acceptance": {"type": "object", "additionalProperties": true},
+        "spec_acceptance": {},
         "evidence_ledger": {
             "type": "object",
             "additionalProperties": false,
             "required": ["candidate_ref", "candidate_digest", "steps"],
             "properties": {
-                "candidate_ref": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"},
+                "candidate_ref": {"type": "string"},
                 "candidate_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
-                "steps": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "required": ["predicate_id", "status", "candidate_ref", "candidate_digest", "evidence_class", "evidence_ref", "evidence_digest", "recorded_task_revision"],
-                        "properties": {
-                            "predicate_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{2,63}$"},
-                            "status": {"enum": ["pass", "stale"]},
-                            "candidate_ref": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"},
-                            "candidate_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
-                            "evidence_class": {"enum": ["mechanical", "contract-test", "property-or-fuzz", "bounded-model", "environmental"]},
-                            "evidence_ref": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)(?!.*//)[A-Za-z0-9][A-Za-z0-9._:/-]{2,255}$"},
-                            "evidence_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
-                            "recorded_task_revision": {"type": "integer", "minimum": 1}
-                        }
-                    }
-                }
+                "steps": {"type": "array"}
             }
         },
         "execution_envelope_ref": {"type": "string"},
@@ -137,6 +123,24 @@
                 "classification": {"enum": ["EXIT", "SUBPROCESS_TIMEOUT"]},
                 "returncode": {"type": "integer"},
                 "recorded_at": {"type": "string", "format": "date-time"}
+            }
+        },
+        "execution_abandonments": {
+            "type": "array",
+            "maxItems": 32,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["schema_version", "execution_id", "owner", "reservation_digest", "evidence_ref", "evidence_digest", "recorded_at"],
+                "properties": {
+                    "schema_version": {"const": 1},
+                    "execution_id": {"type": "string", "pattern": "^[0-9a-f]{32}$"},
+                    "owner": {"type": "string", "minLength": 1, "maxLength": 128},
+                    "reservation_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+                    "evidence_ref": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]{2,255}$"},
+                    "evidence_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+                    "recorded_at": {"type": "string", "format": "date-time"}
+                }
             }
         },
         "change_drift": {
@@ -271,11 +275,6 @@
     },
     "$defs": {
         "taskId": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
-        "oracleGate": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {"human_session": {"$ref": "#/$defs/humanSession"}}
-        },
         "issueSeriesLinkage": {
             "type": "object",
             "additionalProperties": false,

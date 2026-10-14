@@ -175,16 +175,21 @@ without a mutating class receive no writable project path. Before a bound comman
 command class, scope digest, argv digest, and deadline. With replicated Git authority, workers
 begin only after that mutation has been pushed; competing clones therefore fail before launching a
 subprocess. Lifecycle changes
-cannot bypass either live or expired execution fences. An expired execution fence requires the explicit
+cannot bypass either live or expired execution fences. An expired execution fence normally requires the explicit
 `recover-execution` path, which independently verifies the claim worker has exited and the exact durable
-command-result evidence exists before clearing it. This is a safety fence, not a remote kill switch: a worker that loses authority must terminate
+command-result evidence exists before clearing it. If no matching result can be recovered, a state-root
+operator may use `abandon-execution` only with the exact current revision and execution ID, an expired
+execution fence, an absent claim worker, and a local evidence reference plus digest. It rejects a matching
+result, retains a bounded structured abandonment audit record, and appends the normal immutable state
+history; it does not edit task files directly or authorize a live worker. This is a safety fence, not a remote kill switch: a worker that loses authority must terminate
 its subprocess, and strict cross-host fencing still requires a target-side gateway.
 
-For a pre-identity legacy claim, use `recover-execution` with
-`--allow-legacy-without-identity` only after independently confirming both the claim and the bound
-reservation have expired. The command still requires a structurally valid reservation and an exact
-reservation-specific durable result; on success it clears the abandoned claim and reservation in one
-revision-fenced transition. The flag is rejected for records that carry any claim-time identity.
+Execution envelopes are offline by default. A version-2 envelope may explicitly grant the
+`git_metadata` and `network` capabilities, but only `git-publication` may use them. The network
+capability also requires the invocation flag `--authorize-external-side-effects`; the sandbox then
+mounts only the admitted worktree metadata (`.git`) read-only and shares the caller's network.
+Version-1 envelopes and all read, test, and source-write commands retain the isolated network-denied
+behavior. Missing, partial, or ambiguous capability declarations fail closed.
 
 Restore a verified checkpoint only from a clean descendant product checkout:
 
@@ -274,7 +279,7 @@ Use a clean checkout at an exact upstream release tag:
 python /path/to/agent-workflow-coordinator/tools/vendor.py sync \
   --source /path/to/agent-workflow-coordinator \
   --target /path/to/project-state \
-  --version v0.7.8
+  --version v0.3.5
 python tools/handoffctl_vendor.py verify --target .
 ```
 

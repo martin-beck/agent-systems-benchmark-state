@@ -11,6 +11,7 @@ strictly versioned and must reject unknown fields before a caller treats it as v
 | Task specification | `schema/task-spec.schema.json` | `tools/task_spec.py` | `tests/test_task_spec.py` |
 | Project task-spec evidence policy | `schema/task-spec-policy.schema.json` | `tools/task_spec.py` | `tests/test_task_spec.py`, `tests/test_handoffctl.py`, and `tests/test_sqlite_storage.py` |
 | Project autonomy limits policy | `schema/autonomy-limits-policy.schema.json` | `tools/autonomy_limits.py` | `tests/test_autonomy_limits.py` |
+| Execution envelope | `schema/execution-envelope.schema.json` | `tools/execution_envelope.py` | `tests/test_execution_envelope.py`, `tests/test_execution_sandbox.py` |
 | Human TUI gate session | `schema/task-record.schema.json#/$defs/humanSession` | `tools.oracle_lifecycle.py` | `tests/test_oracle_lifecycle.py`, `tests/test_handoffctl.py`, and `formal/oracle/OracleInteractionGates.tla` |
 | Resume card | versioned JSON and text projection | `tools/resume_card.py` | `tests/test_resume_card.py` |
 | Capability matrix formal contract | `formal/roles/CapabilityMatrix.tla` and `formal/roles/CapabilityMatrix.cfg` | `tools/capability_matrix_correspondence.py` | `tests/test_capability_matrix_formal.py` |

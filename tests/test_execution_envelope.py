@@ -8,6 +8,7 @@ import json
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from typing import cast
 
 from tools.execution_envelope import Preflight, canonical_digest, digest, errors, load, preflight
 
@@ -118,6 +119,39 @@ class ExecutionEnvelopeTests(unittest.TestCase):
         forbidden = preflight(self.meta(), "worker", "git-publication", [], self.worktree)
         self.assertFalse(forbidden.allowed)
         self.assertEqual("COMMAND_CLASS_DENIED", forbidden.code)
+
+    def test_publication_requires_versioned_metadata_network_and_invocation_authorization(
+        self,
+    ) -> None:
+        value = envelope()
+        value["schema_version"] = 2
+        command_classes = cast(dict[str, dict[str, object]], value["command_classes"])
+        command_classes["git-publication"]["allowed"] = True
+        value["capabilities"] = {"git_metadata": {"allowed": True}, "network": {"allowed": True}}
+        meta = self.meta()
+        meta["execution_envelope"] = value
+        meta["execution_envelope_digest"] = canonical_digest(value)
+        denied = preflight(meta, "worker", "git-publication", ["src"], self.worktree)
+        self.assertEqual("EXTERNAL_SIDE_EFFECT_AUTHORIZATION_REQUIRED", denied.code)
+        allowed = preflight(meta, "worker", "git-publication", ["src"], self.worktree, True)
+        self.assertTrue(allowed.allowed)
+
+    def test_publication_capabilities_fail_closed_and_v1_stays_offline(self) -> None:
+        denied = preflight(self.meta(), "worker", "git-publication", ["src"], self.worktree)
+        self.assertEqual("COMMAND_CLASS_DENIED", denied.code)
+        value = envelope()
+        value["schema_version"] = 2
+        command_classes = cast(dict[str, dict[str, object]], value["command_classes"])
+        command_classes["git-publication"]["allowed"] = True
+        value["capabilities"] = {"git_metadata": {"allowed": True}, "network": {"allowed": False}}
+        meta = self.meta()
+        meta["execution_envelope"] = value
+        meta["execution_envelope_digest"] = canonical_digest(value)
+        self.assertEqual(
+            "NETWORK_CAPABILITY_DENIED",
+            preflight(meta, "worker", "git-publication", ["src"], self.worktree, True).code,
+        )
+        self.assertTrue(errors({**value, "capabilities": {"git_metadata": {"allowed": True}}}))
 
     def test_validator_rejects_schema_shape_and_identity_failures(self) -> None:
         cases = (

@@ -22,6 +22,7 @@ REF = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._/-]{2,255}$")
 ENVELOPE_ID = re.compile(r"^AR-[0-9]{4}-e[1-9][0-9]*$")
 DIGEST = re.compile(r"^sha256:[0-9a-f]{64}$")
 COMMAND_CLASSES = frozenset({"read", "test", "source-write", "git-publication"})
+CAPABILITY_KEYS = frozenset({"git_metadata", "network"})
 
 
 @dataclass(frozen=True)
@@ -69,8 +70,8 @@ def _paths(value: object, field: str, errors: list[str]) -> None:
 def _identity_errors(value: dict[str, Any]) -> list[str]:
     """Validate the stable envelope/task/spec identity fields."""
     result: list[str] = []
-    if type(value.get("schema_version")) is not int or value.get("schema_version") != 1:
-        result.append("envelope schema_version must be 1")
+    if type(value.get("schema_version")) is not int or value.get("schema_version") not in (1, 2):
+        result.append("envelope schema_version must be 1 or 2")
     envelope_id = value.get("envelope_id")
     task = value.get("task")
     if not isinstance(envelope_id, str) or not ENVELOPE_ID.fullmatch(envelope_id):
@@ -194,6 +195,26 @@ def _valid_stop_condition(item: object) -> bool:
     )
 
 
+def _capability_errors(value: dict[str, Any]) -> list[str]:
+    """Validate opt-in publication capabilities; absent v1 capabilities deny all."""
+    capabilities = value.get("capabilities")
+    if capabilities is None:
+        return []
+    if value.get("schema_version") != 2:
+        return ["capabilities require envelope schema_version 2"]
+    if not isinstance(capabilities, dict) or set(capabilities) != CAPABILITY_KEYS:
+        return ["capabilities must contain exactly git_metadata and network"]
+    for name in CAPABILITY_KEYS:
+        item = capabilities[name]
+        if (
+            not isinstance(item, dict)
+            or set(item) != {"allowed"}
+            or type(item.get("allowed")) is not bool
+        ):
+            return [f"capability {name} is invalid"]
+    return []
+
+
 def errors(value: object) -> list[str]:
     """Validate a closed version-one envelope without inferring authorization."""
     if not isinstance(value, dict):
@@ -213,9 +234,14 @@ def errors(value: object) -> list[str]:
         "evidence",
         "stop_conditions",
     }
+    # Capabilities are optional for version-one envelopes and required by the
+    # version-two schema; retain v1 readability while rejecting unknown fields.
+    if isinstance(value.get("schema_version"), int) and value.get("schema_version") == 2:
+        required.add("capabilities")
     result = [f"envelope missing field: {name}" for name in sorted(required - set(value))]
     result.extend(f"envelope unknown field: {name}" for name in sorted(set(value) - required))
     result.extend(_identity_errors(value))
+    result.extend(_capability_errors(value))
     result.extend(_collection_errors(value))
     result.extend(_rule_errors(value))
     return result
@@ -323,12 +349,59 @@ def _scope_error(
     return None
 
 
+def _capability_denial(
+    envelope: dict[str, Any], command_class: str, authorize_external_side_effects: bool
+) -> Preflight | None:
+    capabilities = envelope.get("capabilities", {})
+    metadata_allowed = (
+        isinstance(capabilities, dict)
+        and isinstance(capabilities.get("git_metadata"), dict)
+        and capabilities["git_metadata"].get("allowed") is True
+    )
+    network_allowed = (
+        isinstance(capabilities, dict)
+        and isinstance(capabilities.get("network"), dict)
+        and capabilities["network"].get("allowed") is True
+    )
+    if command_class == "git-publication" and not metadata_allowed:
+        return Preflight(
+            False, "GIT_METADATA_CAPABILITY_DENIED", "git metadata capability is required"
+        )
+    if authorize_external_side_effects and command_class != "git-publication":
+        return Preflight(
+            False, "EXTERNAL_SIDE_EFFECTS_DENIED", "external side effects require git-publication"
+        )
+    if authorize_external_side_effects and not network_allowed:
+        return Preflight(False, "NETWORK_CAPABILITY_DENIED", "network capability is not authorized")
+    if (
+        command_class == "git-publication"
+        and network_allowed
+        and not authorize_external_side_effects
+    ):
+        return Preflight(
+            False,
+            "EXTERNAL_SIDE_EFFECT_AUTHORIZATION_REQUIRED",
+            "network publication requires explicit authorization",
+        )
+    return None
+
+
+def publication_metadata_allowed(envelope: dict[str, Any]) -> bool:
+    capabilities = envelope.get("capabilities", {})
+    return (
+        isinstance(capabilities, dict)
+        and isinstance(capabilities.get("git_metadata"), dict)
+        and capabilities["git_metadata"].get("allowed") is True
+    )
+
+
 def preflight(
     meta: dict[str, Any],
     owner: str,
     command_class: str,
     paths: list[str],
     worktree: Path,
+    authorize_external_side_effects: bool = False,
 ) -> Preflight:
     """Evaluate only durable task/envelope facts; this function has no side effects."""
     envelope, denial = _bound_envelope(meta)
@@ -354,6 +427,9 @@ def preflight(
         return Preflight(
             False, "COMMAND_CLASS_DENIED", "command class is not allowed by the envelope"
         )
+    capability_denial = _capability_denial(envelope, command_class, authorize_external_side_effects)
+    if capability_denial is not None:
+        return capability_denial
     scope_denial = _scope_error(envelope, command_class, paths, worktree)
     if scope_denial is not None:
         return scope_denial
@@ -371,6 +447,7 @@ def sandboxed_envelope_command(args: Any) -> list[str]:
     worktree = getattr(args, "_envelope_worktree", None)
     write_scope = getattr(args, "_envelope_write_scope", None)
     read_scope = getattr(args, "_envelope_read_scope", None)
+    git_metadata = bool(getattr(args, "_envelope_git_metadata", False))
     if (
         not isinstance(worktree, str)
         or not isinstance(write_scope, list)
@@ -382,15 +459,16 @@ def sandboxed_envelope_command(args: Any) -> list[str]:
     root = Path(worktree).absolute()
     root_fd = getattr(args, "_envelope_worktree_fd", None)
     if type(root_fd) is int and root_fd >= 0:
-        mounts = [(str(relative), Path(), "--ro-bind") for relative in read_scope] + [
-            (str(relative), Path(), "--bind") for relative in write_scope
-        ]
+        mounts = [(str(relative), Path(), "--ro-bind") for relative in read_scope]
+        if git_metadata:
+            mounts.append((".git", Path(), "--ro-bind"))
+        mounts.extend([(str(relative), Path(), "--bind") for relative in write_scope])
     else:
-        mounts = envelope_sandbox_mounts(root, read_scope, write_scope)
+        mounts = envelope_sandbox_mounts(root, read_scope, write_scope, git_metadata=git_metadata)
     targets = {Path("/worktree")}
     for relative, _candidate, _flag in mounts:
         targets.update((Path("/worktree") / relative).parents)
-    command = sandbox_base_command()
+    command = sandbox_base_command(network=getattr(args, "_envelope_network", False))
     for directory in sorted(
         (path for path in targets if path != Path("/")), key=lambda path: len(path.parts)
     ):
@@ -419,7 +497,7 @@ def sandboxed_envelope_command(args: Any) -> list[str]:
 
 
 def envelope_sandbox_mounts(
-    root: Path, read_scope: list[object], write_scope: list[object]
+    root: Path, read_scope: list[object], write_scope: list[object], *, git_metadata: bool = False
 ) -> list[tuple[str, Path, str]]:
     """Return read-only and writable project mounts for one envelope execution."""
     read_mounts = [
@@ -430,7 +508,10 @@ def envelope_sandbox_mounts(
         (str(relative), envelope_scope_path(root, str(relative)), "--bind")
         for relative in write_scope
     ]
-    return [*read_mounts, *write_mounts]
+    metadata_mounts = (
+        [(".git", envelope_scope_path(root, ".git"), "--ro-bind")] if git_metadata else []
+    )
+    return [*read_mounts, *metadata_mounts, *write_mounts]
 
 
 def valid_reservation(value: object) -> bool:  # noqa: C901
@@ -470,13 +551,13 @@ def valid_reservation(value: object) -> bool:  # noqa: C901
     return expires_at.tzinfo is not None and expires_at.utcoffset() is not None
 
 
-def sandbox_base_command() -> list[str]:
+def sandbox_base_command(*, network: bool = False) -> list[str]:
     """Build a private Bubblewrap root with no inherited host state."""
     return [
         "bwrap",
         "--die-with-parent",
         "--unshare-user",
-        "--unshare-net",
+        *([] if network else ["--unshare-net"]),
         "--uid",
         "0",
         "--gid",

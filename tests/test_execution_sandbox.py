@@ -50,6 +50,38 @@ class ExecutionSandboxFailureTests(unittest.TestCase):
         self.assertIn("--clearenv", command)
         self.assertNotIn("--share-net", command)
 
+    def test_network_is_opt_in_and_git_metadata_mount_is_read_only(self) -> None:
+        isolated = sandbox_base_command()
+        shared = sandbox_base_command(network=True)
+        self.assertIn("--unshare-net", isolated)
+        self.assertNotIn("--unshare-net", shared)
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / ".git").write_text("gitdir: metadata", encoding="utf-8")
+            mounts = envelope_sandbox_mounts(root, [], [], git_metadata=True)
+            self.assertEqual((".git", root / ".git", "--ro-bind"), mounts[0])
+
+    def test_descriptor_mount_builder_keeps_git_metadata_capability(self) -> None:
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / ".git").write_text("gitdir: metadata", encoding="utf-8")
+            descriptor = os.open(root, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
+            try:
+                args = argparse.Namespace(
+                    command=["true"],
+                    _envelope_worktree=str(root),
+                    _envelope_worktree_fd=descriptor,
+                    _envelope_write_scope=["src"],
+                    _envelope_read_scope=[],
+                    _envelope_git_metadata=True,
+                    _envelope_network=False,
+                )
+                with patch("tools.execution_envelope.shutil.which", return_value="bwrap"):
+                    command = sandboxed_envelope_command(args)
+                self.assertIn('"relative": ".git"', " ".join(command))
+            finally:
+                os.close(descriptor)
+
 
 @unittest.skipUnless(shutil.which("bwrap"), "bubblewrap is required for sandbox verification")
 class ExecutionSandboxTests(unittest.TestCase):

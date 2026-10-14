@@ -5,6 +5,7 @@
 from __future__ import annotations
 
 import argparse
+import shlex
 import subprocess
 import unittest
 from pathlib import Path
@@ -14,6 +15,18 @@ from unittest.mock import patch
 from tools import assumption_revalidation, change_drift, handoffctl
 
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
+EXPECTED_COMPLEXITY_COMMAND = [
+    "uv",
+    "run",
+    "lizard",
+    "-l",
+    "python",
+    "--CCN",
+    "14",
+    "tools/handoffctl.py",
+    "tools/assumption_revalidation.py",
+    "tools/retry_circuit.py",
+]
 
 
 def git(root: Path, *arguments: str) -> None:
@@ -157,11 +170,43 @@ class AssumptionRevalidationTests(unittest.TestCase):
                 )
             )
 
-    def test_assumption_validator_is_covered_by_the_enforced_complexity_budget(self) -> None:
+    def _parse_workflow_complexity_command(self, workflow: str) -> list[str]:
+        lines = [line.strip() for line in workflow.splitlines() if "uv run lizard" in line]
+        self.assertEqual(1, len(lines), "verify workflow must declare one complexity command")
+        return shlex.split(lines[0])
+
+    def _workflow_complexity_command(self) -> list[str]:
         workflow = (REPOSITORY_ROOT / ".github/workflows/verify.yml").read_text(encoding="utf-8")
-        self.assertIn(
-            "lizard -l python --CCN 14 tools/handoffctl.py tools/assumption_revalidation.py",
-            workflow,
+        return self._parse_workflow_complexity_command(workflow)
+
+    @staticmethod
+    def _is_expected_complexity_command(command: list[str]) -> bool:
+        return command == EXPECTED_COMPLEXITY_COMMAND
+
+    def test_v074_modules_are_covered_by_the_enforced_complexity_budget(self) -> None:
+        self.assertTrue(self._is_expected_complexity_command(self._workflow_complexity_command()))
+
+    def test_complexity_contract_rejects_missing_v074_module(self) -> None:
+        workflow = (REPOSITORY_ROOT / ".github/workflows/verify.yml").read_text(encoding="utf-8")
+        candidate = workflow.replace(" tools/retry_circuit.py", "")
+        self.assertFalse(
+            self._is_expected_complexity_command(self._parse_workflow_complexity_command(candidate))
+        )
+
+    def test_complexity_contract_rejects_extra_module(self) -> None:
+        workflow = (REPOSITORY_ROOT / ".github/workflows/verify.yml").read_text(encoding="utf-8")
+        candidate = workflow.replace(
+            " tools/retry_circuit.py", " tools/retry_circuit.py tools/role_registry.py"
+        )
+        self.assertFalse(
+            self._is_expected_complexity_command(self._parse_workflow_complexity_command(candidate))
+        )
+
+    def test_complexity_contract_rejects_lower_threshold(self) -> None:
+        workflow = (REPOSITORY_ROOT / ".github/workflows/verify.yml").read_text(encoding="utf-8")
+        candidate = workflow.replace("--CCN 14", "--CCN 13")
+        self.assertFalse(
+            self._is_expected_complexity_command(self._parse_workflow_complexity_command(candidate))
         )
 
     def test_followups_are_fenced_and_cannot_change_policy_or_revalidate_same_binding(self) -> None:
