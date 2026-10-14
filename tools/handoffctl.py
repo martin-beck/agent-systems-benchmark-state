@@ -53,6 +53,7 @@ if __package__:
         run_command,
     )
     from . import autonomy_limits as al
+    from . import predicate_ledger_repair as plr
     from . import roles as role_module
     from .board_metrics import build_metrics
     from .board_metrics import encode as encode_metrics
@@ -144,6 +145,7 @@ else:
     import execution_envelope  # type: ignore[import-not-found,no-redef]
     import execution_lifecycle  # type: ignore[import-not-found,no-redef]
     import execution_receipt  # type: ignore[import-not-found,no-redef]
+    import predicate_ledger_repair as plr  # type: ignore[import-not-found,no-redef]
     import resume_card  # type: ignore[import-not-found,no-redef]
     import resume_card_runtime  # type: ignore[import-not-found,no-redef]
     import retry_circuit  # type: ignore[import-not-found,no-redef]
@@ -286,8 +288,6 @@ class IdempotentMutationError(RuntimeError):
     """Signal an admitted no-op replay."""
 
 
-# CURRENT.md is the compact actionable queue; terminal history remains in the
-# full STATUS.md projection and authoritative task records.
 CURRENT_STATUSES = ("in_progress", "open", "blocked", "planned", "future")
 PRIORITIES = ("P0", "P1", "P2", "P3", "P4")
 REQ = (
@@ -365,7 +365,7 @@ def short_title_errors(path: Path, task_id: str, value: object) -> list[str]:
     return []
 
 
-COORDINATOR_VERSION = "0.7.12"
+COORDINATOR_VERSION = "0.7.14"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -1180,8 +1180,6 @@ def project_scan() -> State:
         "--json",
         "databaseId,headSha,status,conclusion,workflowName,event",
     ]
-    # Checkouts own separate Git indexes. Observe all fields freshly, but overlap
-    # the independent GitHub and remote reads with the bounded checkout scan.
     with ThreadPoolExecutor(max_workers=min(32, max(1, len(paths))) + 3) as workers:
         prs_result = workers.submit(run_github_observation, pr_args)
         runs_result = workers.submit(run_github_observation, run_args)
@@ -3184,6 +3182,7 @@ def lifecycle_transition_handler(
         "bind-spec": lambda: apply_bind_spec(args, meta, policy),
         "bind-worktree": lambda: apply_bind_worktree(args, meta, tasks),
         "repair-legacy-binding": lambda: apply_repair_legacy_binding(args, meta, tasks),
+        "repair-predicate-ledger": lambda: plr.repair(ROOT, args, meta, policy),
         "bind-envelope": lambda: apply_bind_envelope(args, meta),
         "replace-envelope": lambda: apply_replace_envelope(args, meta),
         "execution-start": lambda: apply_execution_start(args, meta),
@@ -4775,7 +4774,7 @@ def dispatch_bound_standard_command(args: argparse.Namespace) -> int:
     result = dispatch_returning_command(args)
     if result is not None:
         return result
-    if args.cmd == "repair-legacy-binding":
+    if args.cmd in {"repair-legacy-binding", "repair-predicate-ledger"}:
         dispatch_lifecycle_mutation(args)
         return 0
     if args.cmd in (
@@ -4987,6 +4986,7 @@ def main() -> int:
     item.add_argument("--expected-revision", type=int, required=True)
     item.add_argument("--worktree-key", required=True)
     item.add_argument("--note", required=True)
+    plr.add_parser(commands)
     item = commands.add_parser("bind-envelope")
     item.add_argument("task")
     item.add_argument("--owner", required=True)

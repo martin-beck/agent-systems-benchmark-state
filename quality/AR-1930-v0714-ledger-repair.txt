@@ -1,0 +1,20 @@
+AR-1930 bounded evidence (2026-10-15)
+
+Vendor adoption: PASS. Tagged Coordinator v0.7.14 at commit
+c40457ec0696925d021a4996fb07f44d3b067f4d was synced from a clean detached
+source checkout and tools/handoffctl_vendor.py verify --target . passed.
+
+Focused non-formal tests: 40 passed, 3 failed, 45 subtests passed. The three
+failures are existing vendor-test fixtures: the checked-in attestation manifest
+digest is stale for v0.7.14, and two sync fixtures use a source runtime version
+that does not match the v0.7.14 lock. No formal or TLC gates were run.
+
+Repair attempt: FAIL CLOSED. v0.7.14 repair-predicate-ledger was invoked for
+AR-1926 with a fresh privacy-safe candidate and exact digest. The transition
+was rejected because retained pass rows for AR-1926 history/runtime still
+reference the old candidate; changing only the scope row leaves those pass
+rows mismatched. No AR-1926 history was written.
+
+Live doctor: FAIL CLOSED with the pre-existing stale AR-1926 candidate digest
+until a contract-compatible append-only repair can be admitted. AR-1919
+publication-blocker.txt remained untouched and untracked.

@@ -1309,7 +1309,8 @@ class SQLiteStorageTest(unittest.TestCase):
             ("done", 7, "P0"), (final["status"], final["task_revision"], final["priority"])
         )
         self.assertEqual(
-            ["pass", "pass"], [step["status"] for step in final["evidence_ledger"]["steps"]]
+            ["stale", "pass", "pass"],
+            [step["status"] for step in final["evidence_ledger"]["steps"]],
         )
         self.assertIn("updated", (self.tasks / "AR-0001-test.md").read_text())
 

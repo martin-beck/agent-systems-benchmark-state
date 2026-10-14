@@ -527,9 +527,9 @@ def evidence_ledger_errors(  # noqa: C901
             errors.append("evidence ledger step is incomplete or unknown")
             continue
         predicate = step.get("predicate_id")
-        if predicate not in predicates or predicate in seen:
+        if predicate not in predicates or (predicate in seen and step.get("status") == "pass"):
             errors.append("evidence ledger predicate is invalid or duplicated")
-        if isinstance(predicate, str):
+        if isinstance(predicate, str) and step.get("status") == "pass":
             seen.add(predicate)
         if step.get("status") not in {"pass", "stale"}:
             errors.append("evidence ledger step status is invalid")

@@ -72,6 +72,7 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("tools/lifecycle_session.py", "tools/lifecycle_session.py"),
     ("tools/oracle_lifecycle.py", "tools/oracle_lifecycle.py"),
     ("tools/predicate_ledger.py", "tools/predicate_ledger.py"),
+    ("tools/predicate_ledger_repair.py", "tools/predicate_ledger_repair.py"),
     ("tools/sqlite_storage.py", "tools/sqlite_storage.py"),
     ("tools/lifecycle_trace.py", "tools/lifecycle_trace.py"),
     ("tools/lock_domain.py", "tools/lock_domain.py"),

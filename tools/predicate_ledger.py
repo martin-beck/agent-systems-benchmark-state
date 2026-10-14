@@ -148,7 +148,12 @@ def _record_step(
         "evidence_digest": args.evidence_digest,
         "recorded_task_revision": int(meta["task_revision"]) + 1,
     }
-    ledger["steps"] = [row for row in steps if row.get("predicate_id") != predicate] + [step]
+    # Keep the old row as an auditable historical record.  A predicate may have
+    # one current pass and any number of stale historical rows.
+    for row in steps:
+        if row.get("predicate_id") == predicate and row.get("status") == "pass":
+            row["status"] = "stale"
+    ledger["steps"] = [*steps, step]
     meta["evidence_ledger"] = ledger
 
 

@@ -1,7 +1,7 @@
 {
   "files": {
     "docs/EXTENDING.md": {
-      "sha256": "31a853efa408c28076aa0debbaf4bc667650dfe0a95900f9c04a405ad7711b63",
+      "sha256": "e5c97d08c932494db8c893fd9200ddb369e81a80ff1e6eb9ffff52ff2c8dc451",
       "source": "docs/EXTENDING.md"
     },
     "docs/PUBLIC_CONTRACTS.md": {
@@ -365,7 +365,7 @@
       "source": "tests/test_session_records.py"
     },
     "tests/test_sqlite_storage.py": {
-      "sha256": "e12beb5c4647b5125668be9ba10ec816779a98930f146957f2a08d90f5a9d95d",
+      "sha256": "0bdb018fd628bba1c71eafa56fabfc07d626d4d225fc8d3e91369806d35911fe",
       "source": "tests/test_sqlite_storage.py"
     },
     "tests/test_task_spec.py": {
@@ -505,11 +505,11 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "39d139a76f48f8110056e38bd0982a485629d09ff5026e46a15952a8ef34870c",
+      "sha256": "67d6fb09cf36ebef1e779ae19b5d8dbeb3700e35aa96d6c673b9a064c09e09db",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
-      "sha256": "b6a02b484c8c6a091736f664fade99083d81f74c866431225a5c14ba161ce059",
+      "sha256": "3c94fd91c38b49cd7c56befb2b594fa1987d6aafb10d0a9e8a39ccff87ccdaaa",
       "source": "tools/vendor.py"
     },
     "tools/hierarchy.py": {
@@ -561,8 +561,12 @@
       "source": "tools/oracle_lifecycle.py"
     },
     "tools/predicate_ledger.py": {
-      "sha256": "ff99feb06cf0c0b2f44b6f4c1ea3ab76220a39e5667c668072c164518c3245ca",
+      "sha256": "a5f342e818d24c5eb14051a73c6450373dbe3ee486dd6db1c7b3adcc5671b782",
       "source": "tools/predicate_ledger.py"
+    },
+    "tools/predicate_ledger_repair.py": {
+      "sha256": "a419b71ad77a9f2488a384809b49be4537f19671214dc7d1709f71fbb7683a77",
+      "source": "tools/predicate_ledger_repair.py"
     },
     "tools/production_upgrade_binding.py": {
       "sha256": "8e8d26366f1482c4a174ffd5d4ed6a97ab25bd9a1f9e962adbc0be6b45b4d1f5",
@@ -645,7 +649,7 @@
       "source": "tools/status_renderer.py"
     },
     "tools/task_spec.py": {
-      "sha256": "b7e119dafd1cdc37774a0ef20fcf875f5721ece7b721d68668fafc1d5d4bed99",
+      "sha256": "7f56fc6f56265de637793aa402537f69c4e537e3885ceaeb65d63dbc08b34441",
       "source": "tools/task_spec.py"
     },
     "tools/tlc_runner.py": {
@@ -685,12 +689,10 @@
       "source": "LICENSE"
     }
   },
-  "schema_version": 2,
+  "schema_version": 1,
   "upstream": {
-    "channel": "development",
-    "commit": "54a6af80be8252cf7b745da0031cfe83c911e16b",
+    "commit": "c40457ec0696925d021a4996fb07f44d3b067f4d",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
-    "tree": "0c10c83e2ea6f1d218423fa3b03d8ff70111f009",
-    "version": "v0.7.12"
+    "version": "v0.7.14"
   }
 }

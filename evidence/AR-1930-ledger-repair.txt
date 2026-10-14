@@ -1,0 +1,10 @@
+AR-1930 privacy-safe AR-1926 ledger correction candidate
+
+Bounded checks reproduced the AR-1926 scope predicate using the released runtime
+entrypoints and repository-relative allowlist. Positive runtime and scope checks
+passed; traversal and host-path admissions were rejected. Historical AR-1926,
+AR-1928, AR-1929, and AR-1919 records were read-only inputs. Network, downloads,
+mounts, product mutation, formal, and TLC execution were excluded.
+
+This artifact contains no host paths, credentials, prompts, transcripts, or
+subprocess output.
