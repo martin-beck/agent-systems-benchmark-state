@@ -2212,7 +2212,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Repair PR #164 scope at a fresh exact head: retain only the two AR-1861/AR-1862 evidence-ledger digest updates, restore/rebase away schema/task-record, checkpoint/session, and test changes; rerun focused/full gates and request fresh independent review. |
 
 
 ## Dependency graph
@@ -4950,10 +4950,3 @@ flowchart LR
     AR_1696 --> AR_1693
     AR_1698 --> AR_1701
     AR_1698 --> AR_1712
-    AR_1699 --> AR_1700
-    AR_1699 --> AR_1702
-    AR_1699 --> AR_1704
-    AR_1699 --> AR_1709
-    AR_1699 --> AR_1754
-    AR_1700 --> AR_1701
-    AR_1700 --> AR_1702
