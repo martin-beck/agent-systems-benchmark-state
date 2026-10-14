@@ -7,13 +7,14 @@ import copy
 import json
 import unittest
 from pathlib import Path
+from typing import Any
 
 from jsonschema import Draft202012Validator, FormatChecker, ValidationError
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def record() -> dict:
+def record() -> dict[str, Any]:
     return {
         "schema_version": 1,
         "id": "AR-1864",
