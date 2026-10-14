@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1913",
+  "issue": {
+    "number": 10044,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10044"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Use an authorized handoffctl reconciliation path to preserve and account for the six existing AR-1904/1906/1909 spec and envelope artifacts, restore a clean-state admission path, or record the exact durable blocker without deleting or rewriting them.",
+      "depends_on": [],
+      "id": "AR-1913",
+      "ownership": "ASB coordination-state artifact reconciliation only; preserve AR-1911, AR-1906, AR-1909, all prior histories, product head, lifecycle gates, and formal/TLC exclusion.",
+      "scope": "Create a narrow successor for clean-state admission blocked by untracked AR-1904/1906/1909 specs and envelopes. Reconcile only through handoffctl-authorized paths; do not delete, directly edit, overwrite, or broaden artifacts, and do not alter product files or prior history.",
+      "short_title": "Reconcile retention artifacts"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

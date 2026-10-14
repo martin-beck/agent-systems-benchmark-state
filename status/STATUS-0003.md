@@ -2802,6 +2802,20 @@
 | Summary | Create a narrow successor for candidate spec/envelope disappearance between bind-envelope and bind-worktree. Use only handoffctl-authorized paths and commands; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1913 — Reconcile retention artifacts
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a narrow successor for clean-state admission blocked by untracked AR-1904/1906/1909 specs and envelopes. Reconcile only through handoffctl-authorized paths; do not delete, directly edit, overwrite, or broaden artifacts, and do not alter product files or prior history. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3760,6 +3774,7 @@ flowchart LR
         AR_1909["AR-1909 - In progress"]:::status_in_progress
         AR_1910["AR-1910 - In progress"]:::status_in_progress
         AR_1911["AR-1911 - Planned"]:::status_planned
+        AR_1913["AR-1913 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4273,30 +4288,3 @@ flowchart LR
     AR_0840 --> AR_1023
     AR_0841 --> AR_0842
     AR_0841 --> AR_0843
-    AR_0841 --> AR_0844
-    AR_0841 --> AR_1023
-    AR_0842 --> AR_0844
-    AR_0842 --> AR_1023
-    AR_0843 --> AR_0844
-    AR_0843 --> AR_1023
-    AR_0844 --> AR_0870
-    AR_0844 --> AR_1023
-    AR_0845 --> AR_0846
-    AR_0848 --> AR_0907
-    AR_0851 --> AR_1017
-    AR_0855 --> AR_0857
-    AR_0855 --> AR_0863
-    AR_0857 --> AR_0858
-    AR_0857 --> AR_0880
-    AR_0858 --> AR_0859
-    AR_0859 --> AR_0860
-    AR_0860 --> AR_0861
-    AR_0861 --> AR_0862
-    AR_0862 --> AR_0856
-    AR_0863 --> AR_0864
-    AR_0864 --> AR_0865
-    AR_0865 --> AR_0866
-    AR_0866 --> AR_0867
-    AR_0867 --> AR_0868
-    AR_0868 --> AR_0856
-    AR_0869 --> AR_0870
