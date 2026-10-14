@@ -9,24 +9,6 @@
   "owner": "asb-ar1851-v074-contracts-20261014",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
-  "retry_circuit": {
-    "abandoned": [],
-    "attempts": [],
-    "hold": null,
-    "recoveries": [],
-    "reservations": [
-      {
-        "expires_at": "2026-10-14T13:50:03+00:00",
-        "id": "f7a4210a5a524efcb0fd263f0db1ebe3",
-        "identity": "sha256:211c372fba676da0a04d64dddcab963e04dcdd3d75717a6a5961e2c15b511cfc",
-        "progress_digest": "sha256:5fac4bda38e4a3df8ea06a1946c455591cbd5abd0c255c7168c133926aca5bbe",
-        "reserved_at": "2026-10-14T13:48:03+00:00",
-        "task_revision": 39,
-        "window": 3
-      }
-    ],
-    "schema_version": 1
-  },
   "schema_version": 1,
   "spec_acceptance": {
     "evidence_class": "mechanical",
@@ -40,9 +22,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-14T13:48:03+00:00",
+  "updated_at": "2026-10-14T13:48:10+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -177,3 +159,5 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
 - 2026-10-14T13:47:29+00:00: Claimed by asb-ar1851-v074-contracts-20261014.
 
 - 2026-10-14T13:48:03+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
+
+- 2026-10-14T13:48:10+00:00: Released retry circuit launch slot.
