@@ -3,7 +3,7 @@
   "envelope_revision": 1,
   "schema_version": 2,
   "task": "AR-1920",
-  "task_revision": 1,
+  "task_revision": 4,
   "spec_ref": "specs/AR-1920.json",
   "spec_revision": 1,
   "command_classes": {"git-publication": {"allowed": true, "timeout_seconds": 900}, "read": {"allowed": true, "timeout_seconds": 120}},
