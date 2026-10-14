@@ -2960,11 +2960,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1923-sandbox-runtime-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create the immutable successor for AR-1922: bind a dedicated state worktree and execution envelope admitting only the reviewed offline interpreter and pytest/uv tool paths under /srv/data/projects. Preserve network denial, product/state path scopes, AR-1922 blocked history, and formal/TLC exclusion. |
@@ -3939,7 +3939,7 @@ flowchart LR
         AR_1920["AR-1920 - Blocked"]:::status_blocked
         AR_1921["AR-1921 - Done"]:::status_done
         AR_1922["AR-1922 - Blocked"]:::status_blocked
-        AR_1923["AR-1923 - In progress"]:::status_in_progress
+        AR_1923["AR-1923 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4141,3 +4141,5 @@ flowchart LR
     AR_0307 --> AR_0311
     AR_0307 --> AR_0312
     AR_0307 --> AR_0315
+    AR_0307 --> AR_0316
+    AR_0307 --> AR_0512
