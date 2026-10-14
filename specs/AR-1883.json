@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1883.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "repository-separation", "description": "Product paths are resolved only in the reviewed product checkout; AR-1881 state artifacts are resolved only in the coordination-state checkout."},
+    {"id": "fail-closed-scope", "description": "Missing paths, traversal, cross-root references, and arbitrary paths are denied without widening or rewriting prior envelopes."},
+    {"id": "verification", "description": "Record exact-head review, required CI, merge, and post-merge validation, or a precise durable contract blocker."}
+  ],
+  "definition_of_done": ["A fresh immutable envelope or precise schema-level blocker is recorded; AR-1881 and AR-1882 history remains unchanged."],
+  "inputs": [{"id": "terminal-recovery", "description": "AR-1881 immutable evidence and reviewed product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3."}],
+  "outputs": [{"id": "scope-validation", "description": "Bounded cross-repository publication-scope validation evidence or blocker."}],
+  "allowed_tools": ["git", "python", "tools/handoffctl"],
+  "forbidden_tools": ["direct-task-state-edit", "envelope-rewrite", "product-rewrite", "gate-weakening", "formal-success-without-evidence"],
+  "required_evidence_classes": ["mechanical", "hosted"],
+  "gates": [{"id": "review", "description": "Independent exact-head review and required checks are green."}, {"id": "publication", "description": "Publication and post-merge validation are recorded, or the exact scope-contract blocker is durable."}]
+}
