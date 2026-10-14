@@ -1,5 +1,30 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1408 --> AR_1418
+    AR_1409 --> AR_1410
+    AR_1410 --> AR_1415
+    AR_1411 --> AR_1410
+    AR_1412 --> AR_1410
+    AR_1413 --> AR_1410
+    AR_1414 --> AR_1415
+    AR_1415 --> AR_1416
+    AR_1415 --> AR_1423
+    AR_1416 --> AR_1417
+    AR_1416 --> AR_1418
+    AR_1416 --> AR_1421
+    AR_1416 --> AR_1424
+    AR_1416 --> AR_1430
+    AR_1417 --> AR_1419
+    AR_1417 --> AR_1420
+    AR_1417 --> AR_1425
+    AR_1418 --> AR_1419
+    AR_1418 --> AR_1420
+    AR_1418 --> AR_1425
+    AR_1419 --> AR_1420
+    AR_1419 --> AR_1423
+    AR_1420 --> AR_1424
+    AR_1421 --> AR_1427
+    AR_1423 --> AR_1424
     AR_1423 --> AR_1426
     AR_1423 --> AR_1430
     AR_1424 --> AR_1425
@@ -1208,5 +1233,3 @@
 | [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md), [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md) |
 | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md) | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md), [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) | None |
 | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) | [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md), [AR-1722](../tasks/AR-1722.md), [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md), [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md) |
-| [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) |
-| [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) | [AR-1722](../tasks/AR-1722.md), [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md), [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md) |

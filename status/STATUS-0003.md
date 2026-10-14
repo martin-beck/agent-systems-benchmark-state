@@ -2452,6 +2452,20 @@
 | Summary | Repair only the bounded handoffctl Bubblewrap execution root so approved pinned executables (pwd, git, and sync tooling) are visible for AR-1885 commands. Preserve AR-1885 immutable history; do not add host mounts, network, runtime downloads, scope widening, or gate weakening. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1887 — Repair nonformal gates
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair only the exact AR-1886 non-formal gate failures: temporary non-repository Git assumptions and offline jsonschema provisioning. Preserve AR-1886 immutable history; do not weaken tests, add network/downloads, or require TLC/formal gates. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3382,6 +3396,7 @@ flowchart LR
         AR_1884["AR-1884 - Blocked"]:::status_blocked
         AR_1885["AR-1885 - In progress"]:::status_in_progress
         AR_1886["AR-1886 - In progress"]:::status_in_progress
+        AR_1887["AR-1887 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4608,28 +4623,3 @@ flowchart LR
     AR_1408 --> AR_1412
     AR_1408 --> AR_1413
     AR_1408 --> AR_1417
-    AR_1408 --> AR_1418
-    AR_1409 --> AR_1410
-    AR_1410 --> AR_1415
-    AR_1411 --> AR_1410
-    AR_1412 --> AR_1410
-    AR_1413 --> AR_1410
-    AR_1414 --> AR_1415
-    AR_1415 --> AR_1416
-    AR_1415 --> AR_1423
-    AR_1416 --> AR_1417
-    AR_1416 --> AR_1418
-    AR_1416 --> AR_1421
-    AR_1416 --> AR_1424
-    AR_1416 --> AR_1430
-    AR_1417 --> AR_1419
-    AR_1417 --> AR_1420
-    AR_1417 --> AR_1425
-    AR_1418 --> AR_1419
-    AR_1418 --> AR_1420
-    AR_1418 --> AR_1425
-    AR_1419 --> AR_1420
-    AR_1419 --> AR_1423
-    AR_1420 --> AR_1424
-    AR_1421 --> AR_1427
-    AR_1423 --> AR_1424
