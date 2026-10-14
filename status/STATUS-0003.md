@@ -2694,11 +2694,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1904-bootstrap-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create a narrow successor for AR-1901&#x27;s worktree and spec-retention failure using only handoffctl-authorized state paths and commands. Retain AR-1901 immutable task, envelope, bindings, and evidence; do not perform out-of-band Git/state edits, broaden paths, or alter product files. |
@@ -3822,7 +3822,7 @@ flowchart LR
         AR_1901["AR-1901 - In progress"]:::status_in_progress
         AR_1902["AR-1902 - In progress"]:::status_in_progress
         AR_1903["AR-1903 - In progress"]:::status_in_progress
-        AR_1904["AR-1904 - Open"]:::status_open
+        AR_1904["AR-1904 - In progress"]:::status_in_progress
         AR_1905["AR-1905 - In progress"]:::status_in_progress
         AR_1906["AR-1906 - Open"]:::status_open
         AR_1907["AR-1907 - In progress"]:::status_in_progress
@@ -4232,5 +4232,3 @@ flowchart LR
     AR_0801 --> AR_0840
     AR_0801 --> AR_0842
     AR_0801 --> AR_0847
-    AR_0801 --> AR_0849
-    AR_0801 --> AR_0869
