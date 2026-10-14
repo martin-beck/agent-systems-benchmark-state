@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) |
 | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | None |
 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) |
 | [AR-1372](../tasks/AR-1372-topology-repair.md) | None | None |
@@ -511,11 +510,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1901](../tasks/AR-1901.md): Repair terminal publication scope | codex-ar1901-terminal-publication-scope-20261014 | Create a fresh successor task and immutable execution envelope correcting AR-1882&#x27;s missing cross-repository scope admission. Do not require envelopes/AR-1881-e1.json in product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3; resolve product paths only in the reviewed product checkout and state paths only in the coordination-state checkout; do not rewrite prior envelopes or widen arbitrary paths. | Blocked: immutable AR-1901 envelope admits coordination-state paths only; a product-checkout path is PATH_OUTSIDE_SCOPE. A successor must provide explicit cross-root scope admission without widening arbitrary paths. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | codex-ar1919-git-publication-20261014 | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (16)
@@ -539,7 +537,7 @@
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | Unclaimed | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Blocked (114)
+### Blocked (115)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -648,6 +646,7 @@
 | P1 | [AR-1894](../tasks/AR-1894.md): Admit abandonment dependency | Unclaimed | State-only successor admitting exactly tools/execution_abandonment.py for the AR-1893 focused schema test. Preserve AR-1893, AR-1892, AR-1891, AR-1890 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1895](../tasks/AR-1895.md): Admit receipt dependency | Unclaimed | State-only successor admitting exactly tools/execution_receipt.py for the AR-1894 focused replacement test. Preserve AR-1894 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1896](../tasks/AR-1896.md): Admit revalidation dependency | Unclaimed | State-only successor admitting exactly tools/assumption_revalidation.py for the AR-1895 focused replacement test. Preserve AR-1895 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1901](../tasks/AR-1901.md): Repair terminal publication scope | Unclaimed | Create a fresh successor task and immutable execution envelope correcting AR-1882&#x27;s missing cross-repository scope admission. Do not require envelopes/AR-1881-e1.json in product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3; resolve product paths only in the reviewed product checkout and state paths only in the coordination-state checkout; do not rewrite prior envelopes or widen arbitrary paths. | Blocked: immutable AR-1901 envelope admits coordination-state paths only; a product-checkout path is PATH_OUTSIDE_SCOPE. A successor must provide explicit cross-root scope admission without widening arbitrary paths. |
 | P1 | [AR-1904](../tasks/AR-1904.md): Bootstrap publication scope | Unclaimed | Create a narrow successor for AR-1901&#x27;s worktree and spec-retention failure using only handoffctl-authorized state paths and commands. Retain AR-1901 immutable task, envelope, bindings, and evidence; do not perform out-of-band Git/state edits, broaden paths, or alter product files. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1906](../tasks/AR-1906.md): Retain envelope artifacts | Unclaimed | Create a narrow successor for bind-spec/bind-envelope candidate retention. Use only handoffctl issue-series and authorized coordinator paths; preserve AR-1901 through AR-1905 immutable records, reject direct Git/state edits and arbitrary paths, and do not alter product files. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1909](../tasks/AR-1909.md): Bootstrap retention worktree | Unclaimed | Create a narrow successor for the missing direct worktree needed to execute AR-1906. Use only handoffctl-authorized worktree and test paths; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. | Implement the bounded scope and record local acceptance evidence. |
@@ -676,3 +675,4 @@
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
+| P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |

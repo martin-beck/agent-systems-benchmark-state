@@ -2652,11 +2652,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1901-terminal-publication-scope-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create a fresh successor task and immutable execution envelope correcting AR-1882&#x27;s missing cross-repository scope admission. Do not require envelopes/AR-1881-e1.json in product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3; resolve product paths only in the reviewed product checkout and state paths only in the coordination-state checkout; do not rewrite prior envelopes or widen arbitrary paths. |
@@ -3889,7 +3889,7 @@ flowchart LR
     subgraph series_19["19 - Additional work"]
         direction TB
         AR_1900["AR-1900 - Open"]:::status_open
-        AR_1901["AR-1901 - In progress"]:::status_in_progress
+        AR_1901["AR-1901 - Blocked"]:::status_blocked
         AR_1902["AR-1902 - Open"]:::status_open
         AR_1903["AR-1903 - Open"]:::status_open
         AR_1904["AR-1904 - Blocked"]:::status_blocked
@@ -4169,3 +4169,6 @@ flowchart LR
     AR_0318 --> AR_0876
     AR_0318 --> AR_1325
     AR_0319 --> AR_0876
+    AR_0319 --> AR_1228
+    AR_0319 --> AR_1230
+    AR_0320 --> AR_0869
