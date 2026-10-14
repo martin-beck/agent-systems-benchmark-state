@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1902",
+  "issue": {
+    "number": 10033,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10033"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Bind exact read scope and focused test; record pass or fail-closed result.",
+      "depends_on": [],
+      "id": "AR-1902",
+      "ownership": "ASB execution-envelope scope admission only; no product/vendor/history changes.",
+      "scope": "State-only successor admitting exactly tools/resume_card.py for the AR-1900 focused replacement test. Preserve AR-1901, AR-1900 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC.",
+      "short_title": "Admit resume-card dependency"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

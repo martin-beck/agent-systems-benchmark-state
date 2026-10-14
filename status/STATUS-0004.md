@@ -1,5 +1,31 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1230 --> AR_1229
+    AR_1230 --> AR_1231
+    AR_1230 --> AR_1232
+    AR_1231 --> AR_1151
+    AR_1231 --> AR_1233
+    AR_1231 --> AR_1234
+    AR_1231 --> AR_1236
+    AR_1231 --> AR_1238
+    AR_1231 --> AR_1248
+    AR_1232 --> AR_1151
+    AR_1232 --> AR_1244
+    AR_1232 --> AR_1248
+    AR_1233 --> AR_1232
+    AR_1233 --> AR_1237
+    AR_1233 --> AR_1257
+    AR_1234 --> AR_1232
+    AR_1236 --> AR_1233
+    AR_1236 --> AR_1234
+    AR_1236 --> AR_1237
+    AR_1236 --> AR_1239
+    AR_1237 --> AR_1232
+    AR_1237 --> AR_1260
+    AR_1237 --> AR_1261
+    AR_1237 --> AR_1262
+    AR_1237 --> AR_1265
+    AR_1237 --> AR_1266
     AR_1237 --> AR_1267
     AR_1237 --> AR_1268
     AR_1237 --> AR_1269
@@ -1608,5 +1634,3 @@
 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md) | None |
 | [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md) | [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md) |
 | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md), [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) |
-| [AR-1395](../tasks/AR-1395-literature-workload-adapters.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) |
-| [AR-1396](../tasks/AR-1396-literature-workload-selection.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) |

@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1395](../tasks/AR-1395-literature-workload-adapters.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) |
+| [AR-1396](../tasks/AR-1396-literature-workload-selection.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) |
 | [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md) |
 | [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) |
 | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) |
@@ -460,6 +462,7 @@
 | [AR-1899](../tasks/AR-1899.md) | None | None |
 | [AR-1900](../tasks/AR-1900.md) | None | None |
 | [AR-1901](../tasks/AR-1901.md) | None | None |
+| [AR-1902](../tasks/AR-1902.md) | None | None |
 
 ## Complete AR inventory
 
@@ -598,7 +601,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (96)
+### Planned (97)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -667,5 +670,3 @@
 | P1 | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md): Coordinate OpenJiuwen and WorkBuddy agent support | Unclaimed | Coordinate independently qualified OpenJiuwen and WorkBuddy support without merging their provenance or evidence boundaries. | Keep planned while both child series run independently; complete only after AR-0862 and AR-0868 are durably done with executable live/replay qualification. |
 | P1 | [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md): Independently qualify and document OpenJiuwen support | Unclaimed | Independently qualify and document OpenJiuwen support. | Run independent exact-tree qualification with native x86_64 and required pinned QEMU AArch64 portability gates; document native ARM64 as optional future evidence. |
 | P1 | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md): Implement the WorkBuddy contract and capability adapter | Unclaimed | Implement the WorkBuddy contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
-| P1 | [AR-0865](../tasks/AR-0865-workbuddy-live.md): Qualify pinned WorkBuddy live execution | Unclaimed | Qualify pinned WorkBuddy live execution. | Run the pinned executable against a credential-free loopback provider and prove editing, tools, usage, cancellation, cleanup, and network denial. |
-| P1 | [AR-0866](../tasks/AR-0866-workbuddy-replay.md): Qualify strict WorkBuddy replay | Unclaimed | Qualify strict WorkBuddy replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
