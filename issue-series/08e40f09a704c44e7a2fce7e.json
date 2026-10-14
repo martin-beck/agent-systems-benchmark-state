@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1879",
+  "issue": {
+    "number": 10010,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10010"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Schema-valid bounded task/spec/envelope; repair reproduced with evidence; authorized exact-head rerun records tests.test_roles positive/negative coverage and locked-full result without waivers. Verify and integrate signed 5a703b4665 state-only with no product-tree mutation; record head, signature/DCO, projections, and doctor --live. Under UD-0003 formal/TLC is optional and non-blocking; claim no formal success without evidence.",
+      "depends_on": [],
+      "id": "AR-1879",
+      "ownership": "ASB state coordination and AR-1852 runner/worktree/lock repair only, plus state-only AR-1853 commit integration; no product, vendor, gate, role-contract, PR, or unrelated task edits.",
+      "scope": "Fresh successor for AR-1852 runner, worktree, and coordinator-lock repair. Repair only runner-root/worktree binding, executable visibility, and lock contention needed to rerun exact PR #148 head 7b46c6b076 role and locked-full gates. Preserve AR-1852, strict authorization, and unrelated failures. Integrate signed state-only AR-1853 commit 5a703b4665 onto ASB state main through handoffctl; change no product files. Record exact state and doctor evidence.",
+      "short_title": "Repair runner worktree lock"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
