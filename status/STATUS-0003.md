@@ -2380,7 +2380,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add a narrowly scoped handoffctl recovery path for an expired bound reservation with an exactly matching durable terminal result but no legacy claim_process identity. Reuse AR-1867/AR-1872 evidence and structural fences; preserve exact reservation/result identity, expiry, structural validation, and immutable audit. Do not edit AR-1878 before lease expiry, weaken other recover/abandon cases, or force-clear state. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Obtain exact-head review and publication for signed product commit 3162fe8be2; retain envelope read-scope and git_metadata admission blockers as non-waived evidence. |
 
 
 ## Dependency graph
@@ -4736,7 +4736,3 @@ flowchart LR
     AR_1491 --> AR_1493
     AR_1491 --> AR_1495
     AR_1492 --> AR_1493
-    AR_1493 --> AR_1495
-    AR_1493 --> AR_1497
-    AR_1496 --> AR_1199
-    AR_1496 --> AR_1498
