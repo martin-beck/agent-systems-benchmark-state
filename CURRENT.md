@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Blocked: AR-0035 v2 envelope cannot bind because durable role state contains expired assignments; clean expired roles through coordinator authority, then bind AR-1863-e3 and rerun exact-head publication preflight. Do not direct-merge. | codex-ar1863-catalog-repair-20261014 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -12,7 +18,6 @@ Never edit this file directly.
 | P0 | [AR-1849 — Formal admission environment repair](tasks/AR-1849-formal-admission-env-repair.md) | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94% versus required 95%. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. | - |
 | P1 | [AR-1852 — Role-store v0.7.4 compatibility contracts](tasks/AR-1852-role-store-v074-contracts.md) | Align role-store authorization tests with Coordinator v0.7.4. | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv \(bwrap execvp ENOENT\), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. | - |
 | P1 | [AR-1853 — Complexity v0.7.4 compatibility contract](tasks/AR-1853-complexity-v074-contract.md) | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. | - |
-| P1 | [AR-1863 — Repair control diagnostic catalog](tasks/AR-1863.md) | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Blocked: AR-0035 v2 envelope cannot bind because durable role state contains expired assignments; clean expired roles through coordinator authority, then bind AR-1863-e3 and rerun exact-head publication preflight. Do not direct-merge. | - |
 | P1 | [AR-1865 — Repair expired role cleanup](tasks/AR-1865.md) | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. | Obtain independent GitHub approval for PR #160 at exact head b0811a8802; merge via authorized signed path, then run post-merge verification and repaired roles.remove cleanup. Current gh pr review --approve is rejected because the available identity owns the PR. | - |
 | P1 | [AR-1867 — Legacy reservation recovery](tasks/AR-1867.md) | Add a fail-closed ASB downstream handoffctl overlay path to recover expired bound execution reservations from pre-identity claims without direct state edits or weakened reservation structural checks. | PR #161 published at exact source head 7281ca87f5 plus signed overlay commit 5f7f247a39; obtain independent exact-head review and required CI before merge. Full unittest remains environment-blocked by bounded filesystem/jbd2 hang. | - |
 
