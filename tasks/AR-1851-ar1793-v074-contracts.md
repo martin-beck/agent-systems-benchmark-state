@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1851-ar1793-v074-contracts",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T15:50:43+00:00",
+  "claim_expires": "2026-10-14T15:52:50+00:00",
   "depends_on": [],
   "id": "AR-1851",
   "next_action": "Obtain fresh independent review and exact-head non-formal required-gate CI at 0d3693a24c; formal/TLC evidence is optional under UD-0003. Merge only when required gates are green, then perform post-merge verification.",
@@ -40,9 +40,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-14T13:52:45+00:00",
+  "updated_at": "2026-10-14T13:52:50+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -198,3 +198,5 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
   AR-1793-specific failure. Formal/TLC was not rerun because UD-0003 classifies it optional. Do not
   merge until the cross-repair required-gate failures are durably resolved and fresh exact-head
   CI/review is green.
+
+- 2026-10-14T13:52:50+00:00: Heartbeat by asb-ar1851-v074-contracts-20261014.
