@@ -2242,6 +2242,20 @@
 | Summary | Integrate independently reviewed AR-1868 schema vocabulary repair and AR-1870 ledger digest repair on current main, changing only schema/task-schema.json, tests/test_task_record_schema.py, and AR-1861/AR-1862 evidence_ledger blocks. This successor explicitly depends on AR-1868 and AR-1870 review evidence; do not include checkpoints, sessions, projections, runtime state, or unrelated files. |
 | Next action | Publish exact-head signed integration PR; obtain independent review; run green CI; merge via handoffctl; post-merge verify schema and both evidence ledgers. |
 
+### AR-1872 — Recover orphan reservations
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add a narrowly scoped handoffctl recovery path for expired bound execution reservations whose original claim lacks worker PID/start-time identity, reusing only the AR-1867 legacy-recovery contract where explicit operator evidence, exact reservation/result matching, expiry, structural validation, and fail-closed identity checks remain mandatory. Do not edit AR-1871 state directly or force-clear reservations. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3157,6 +3171,7 @@ flowchart LR
         AR_1869["AR-1869 - In progress"]:::status_in_progress
         AR_1870["AR-1870 - In progress"]:::status_in_progress
         AR_1871["AR-1871 - In progress"]:::status_in_progress
+        AR_1872["AR-1872 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4882,36 +4897,3 @@ flowchart LR
     AR_1647 --> AR_1643
     AR_1647 --> AR_1657
     AR_1648 --> AR_1647
-    AR_1648 --> AR_1649
-    AR_1648 --> AR_1650
-    AR_1648 --> AR_1686
-    AR_1648 --> AR_1695
-    AR_1649 --> AR_1647
-    AR_1649 --> AR_1651
-    AR_1649 --> AR_1686
-    AR_1649 --> AR_1687
-    AR_1650 --> AR_1647
-    AR_1650 --> AR_1652
-    AR_1650 --> AR_1686
-    AR_1650 --> AR_1695
-    AR_1651 --> AR_1643
-    AR_1651 --> AR_1647
-    AR_1651 --> AR_1655
-    AR_1651 --> AR_1657
-    AR_1651 --> AR_1686
-    AR_1651 --> AR_1687
-    AR_1652 --> AR_1643
-    AR_1652 --> AR_1654
-    AR_1652 --> AR_1655
-    AR_1652 --> AR_1686
-    AR_1652 --> AR_1688
-    AR_1653 --> AR_1654
-    AR_1653 --> AR_1655
-    AR_1653 --> AR_1658
-    AR_1654 --> AR_1655
-    AR_1654 --> AR_1660
-    AR_1656 --> AR_1654
-    AR_1656 --> AR_1657
-    AR_1656 --> AR_1704
-    AR_1656 --> AR_1710
-    AR_1656 --> AR_1719

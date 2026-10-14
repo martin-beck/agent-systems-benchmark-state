@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1872",
+  "issue": {
+    "number": 10003,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10003"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Positive and negative tests cover identity-less expired orphan recovery, live/non-expired rejection, mismatched reservation/result rejection, malformed structural data rejection, and missing operator evidence rejection; signed reviewed PR, exact-head green CI, merge, and post-merge verification pass.",
+      "depends_on": [],
+      "id": "AR-1872",
+      "ownership": "ASB handoffctl recovery overlay and focused recovery tests only; no direct runtime/task-state edits, no weakening of reservation fences, and no changes to AR-1871 records.",
+      "scope": "Add a narrowly scoped handoffctl recovery path for expired bound execution reservations whose original claim lacks worker PID/start-time identity, reusing only the AR-1867 legacy-recovery contract where explicit operator evidence, exact reservation/result matching, expiry, structural validation, and fail-closed identity checks remain mandatory. Do not edit AR-1871 state directly or force-clear reservations.",
+      "short_title": "Recover orphan reservations"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
