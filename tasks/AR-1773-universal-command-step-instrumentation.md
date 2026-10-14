@@ -109,9 +109,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-14T13:55:55+00:00",
+  "updated_at": "2026-10-14T13:56:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -505,3 +505,11 @@ non-TTY compatibility.
 
 - 2026-10-14T13:55:55+00:00: Recorded command exit 1; command argv SHA-256
   4003864c771cf486ec639b56e4bf852c25e0f0b499393ed37e2b441babca7ec4.
+
+- 2026-10-14T13:56:46+00:00: Bounded exact-head requalification: handoffctl Bubblewrap cargo
+  --version and cargo test --locked --offline -p asb-cli both fail before execution with bwrap:
+  execvp cargo: No such file or directory; runner root still mounts no approved pinned
+  Cargo/toolchain. Supplemental host-pinned Rust 1.93.0 cargo test --locked --offline -p asb-cli
+  passes 437/437 plus integration/doc tests using /tmp/ar1773-target. No product source, gate,
+  privacy, or formal/TLC changes; exact handoffctl qualification remains blocked pending authorized
+  toolchain/compiler/linker/source/identity mounts.
