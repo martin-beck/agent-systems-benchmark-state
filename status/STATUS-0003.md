@@ -2904,11 +2904,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1919-git-publication-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. |
@@ -3977,13 +3977,14 @@ flowchart LR
         AR_1916["AR-1916 - Blocked"]:::status_blocked
         AR_1917["AR-1917 - Open"]:::status_open
         AR_1918["AR-1918 - Done"]:::status_done
-        AR_1919["AR-1919 - Open"]:::status_open
+        AR_1919["AR-1919 - In progress"]:::status_in_progress
         AR_1920["AR-1920 - Blocked"]:::status_blocked
         AR_1921["AR-1921 - Done"]:::status_done
         AR_1922["AR-1922 - Blocked"]:::status_blocked
         AR_1923["AR-1923 - Blocked"]:::status_blocked
         AR_1924["AR-1924 - Done"]:::status_done
         AR_1925["AR-1925 - Blocked"]:::status_blocked
+        AR_1926["AR-1926 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4090,41 +4091,3 @@ flowchart LR
     AR_0103 --> AR_0704
     AR_0103 --> AR_0707
     AR_0103 --> AR_0830
-    AR_0103 --> AR_0848
-    AR_0103 --> AR_0857
-    AR_0103 --> AR_0863
-    AR_0103 --> AR_0875
-    AR_0103 --> AR_0876
-    AR_0103 --> AR_0902
-    AR_0103 --> AR_0908
-    AR_0103 --> AR_0909
-    AR_0103 --> AR_1002
-    AR_0104 --> AR_0204
-    AR_0104 --> AR_0314
-    AR_0104 --> AR_0601
-    AR_0104 --> AR_0603
-    AR_0104 --> AR_0801
-    AR_0104 --> AR_0803
-    AR_0104 --> AR_0805
-    AR_0104 --> AR_0806
-    AR_0104 --> AR_0822
-    AR_0104 --> AR_0841
-    AR_0104 --> AR_0847
-    AR_0104 --> AR_0902
-    AR_0104 --> AR_0905
-    AR_0104 --> AR_1002
-    AR_0104 --> AR_1005
-    AR_0104 --> AR_1037
-    AR_0105 --> AR_0204
-    AR_0201 --> AR_0202
-    AR_0201 --> AR_0204
-    AR_0201 --> AR_0504
-    AR_0201 --> AR_0601
-    AR_0201 --> AR_0602
-    AR_0201 --> AR_0604
-    AR_0201 --> AR_0702
-    AR_0201 --> AR_0703
-    AR_0201 --> AR_0705
-    AR_0201 --> AR_0706
-    AR_0201 --> AR_0848
-    AR_0202 --> AR_0602
