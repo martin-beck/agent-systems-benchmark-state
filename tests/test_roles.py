@@ -98,7 +98,7 @@ class RoleManagementTests(unittest.TestCase):
         ):
             check(Path(directory) / "roles.json", REGISTRY, "unknown-owner")
 
-    def test_remove_rejects_expired_assignments(self) -> None:
+    def test_remove_expired_target_and_unrelated_expiry_is_cleanup_safe(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             state = Path(directory) / "roles.json"
             assign(
@@ -134,13 +134,15 @@ class RoleManagementTests(unittest.TestCase):
                 list_assignments(state, REGISTRY, None)
             with self.assertRaisesRegex(RolesError, "expired role assignment"):
                 check(state, REGISTRY, "expired-target")
+            removed = remove(
+                state,
+                REGISTRY,
+                expected_revision=2,
+                assignment_id="assignment-expired-target",
+            )
+            self.assertEqual({"revision": 3, "removed": "assignment-expired-target"}, removed)
             with self.assertRaisesRegex(RolesError, "expired role assignment"):
-                remove(
-                    state,
-                    REGISTRY,
-                    expected_revision=2,
-                    assignment_id="assignment-expired-target",
-                )
+                list_assignments(state, REGISTRY, None)
 
     def test_remove_rejects_malformed_assignment_even_when_target_is_expired(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

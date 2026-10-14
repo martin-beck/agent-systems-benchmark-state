@@ -148,7 +148,15 @@ def remove(
                 f"stale role revision: expected {expected_revision}, current {state['revision']}"
             )
         registry = _registry(registry_path)
-        _assignments(state, registry)
+        # Cleanup is explicitly scoped to the named assignment and exact
+        # revision. Expiry is an admission/read concern: it must not prevent
+        # removing stale state. Structural, registry, duplicate-role, and
+        # evidence validation remains fail-closed for every assignment.
+        for item in state["assignments"]:
+            try:
+                validate_assignment(item, registry, check_expiry=False)
+            except RoleAssignmentError as error:
+                raise RolesError(str(error)) from error
         before = len(state["assignments"])
         state["assignments"] = [
             item for item in state["assignments"] if item.get("assignment_id") != assignment_id
