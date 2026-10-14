@@ -9,7 +9,7 @@
       "source": "docs/PUBLIC_CONTRACTS.md"
     },
     "docs/agent-workflow-coordinator.md": {
-      "sha256": "83e2110b25dd8a29083e6fb514cc51d2b20f59751b1dea763132d2bce5b37a7a",
+      "sha256": "1fed424c1c20fd815b425ca9115a006dc536209c879952e110f20133cab1bf0b",
       "source": "docs/PROJECT_GUIDE.md"
     },
     "examples/roles/role-registry.json": {
@@ -687,7 +687,7 @@
   },
   "schema_version": 1,
   "upstream": {
-    "commit": "5ea38d69bef325175484d97be67a095b76e3e898",
+    "commit": "9d56254b538274becdf74f79b9a619f69269097d",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
     "version": "v0.7.12"
   }
