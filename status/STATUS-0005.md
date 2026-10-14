@@ -458,12 +458,13 @@
 | P1 | [AR-1893](../tasks/AR-1893.md): Repair envelope replacement schema | codex-ar1893-envelope-schema-20261014 | State-only repair to admit the authorized execution_envelope_replacements task field and validator path needed to replace AR-1892&#x27;s malformed predecessor envelope without widening unrelated scope. Preserve AR-1892, AR-1891, AR-1890 and earlier histories; no claim bypass, cross-root, network, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1894](../tasks/AR-1894.md): Admit abandonment dependency | codex-ar1894-abandonment-20261014 | State-only successor admitting exactly tools/execution_abandonment.py for the AR-1893 focused schema test. Preserve AR-1893, AR-1892, AR-1891, AR-1890 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
+| P1 | [AR-1895](../tasks/AR-1895.md): Admit receipt dependency | Unclaimed | State-only successor admitting exactly tools/execution_receipt.py for the AR-1894 focused replacement test. Preserve AR-1894 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (101)
 
@@ -571,7 +572,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (97)
+### Planned (96)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -663,4 +664,3 @@
 | P1 | [AR-1681](../tasks/AR-1681.md): Normalize residual ASB task specifications | Unclaimed | Complete strict-schema normalization for residual ASB task records AR-1617 through AR-1621 without changing their acceptance or evidence requirements. | Add only missing strict vocabulary fields, regenerate projections, and pass exact validation. |
 | P1 | [AR-1682](../tasks/AR-1682.md): Restore formal hierarchy model contract | Unclaimed | Repair the PR-publication formal model fixture so its hierarchy invariant matches the declared task domain without weakening any invariant or hosted gate. | Run exact formal publication verification and independent review on the corrected model fixture. |
 | P1 | [AR-1683](../tasks/AR-1683.md): Provide approved TLC attestation resource bounds | Unclaimed | Make the hosted formal workflow export the approved TLC memory and swap bounds required by attestation. | Run formal publication verification and runner regression tests on the exact hosted head. |
-| P1 | [AR-1684](../tasks/AR-1684.md): Harden runtime selector helper matrix | Unclaimed | Lock in fail-closed rejection of hostile selector directory, symlink, and non-regular entries. | Run the targeted authority defensive matrix and full hosted checks on the signed head. |
