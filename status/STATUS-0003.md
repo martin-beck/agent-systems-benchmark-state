@@ -2296,7 +2296,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Create and bind a successor AR-1863 execution envelope that authorizes only the reviewed diagnostic-catalog source-write and publication paths, preserving the existing AR-1863 non-goals, path scope, fail-closed gates, and exact current-main review evidence. Do not modify AR-1787 or AR-1835. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Blocked: coordinator-native replace-envelope rejects reviewed AR-1863-e3 because e2 path scope is tools/integration and source-write=false while e3 intentionally grants catalog source-write paths; do not weaken replacement gate or edit task metadata directly. Doctor green; focused replacement tests 2/2 green; source-write preflight remains denied. |
 
 ### AR-1876 — Replace stale AR-1863 envelope
 
@@ -4819,15 +4819,3 @@ flowchart LR
     AR_1595 --> AR_1596
     AR_1595 --> AR_1602
     AR_1595 --> AR_1607
-    AR_1596 --> AR_1597
-    AR_1596 --> AR_1602
-    AR_1597 --> AR_1598
-    AR_1597 --> AR_1600
-    AR_1597 --> AR_1718
-    AR_1598 --> AR_1603
-    AR_1599 --> AR_1600
-    AR_1599 --> AR_1601
-    AR_1599 --> AR_1611
-    AR_1600 --> AR_1601
-    AR_1600 --> AR_1611
-    AR_1601 --> AR_1603
