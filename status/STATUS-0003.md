@@ -2932,7 +2932,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
@@ -3909,7 +3909,7 @@ flowchart LR
         AR_1918["AR-1918 - Done"]:::status_done
         AR_1919["AR-1919 - Blocked"]:::status_blocked
         AR_1920["AR-1920 - Blocked"]:::status_blocked
-        AR_1921["AR-1921 - Blocked"]:::status_blocked
+        AR_1921["AR-1921 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4179,3 +4179,4 @@ flowchart LR
     AR_0401 --> AR_0402
     AR_0401 --> AR_0403
     AR_0401 --> AR_0405
+    AR_0401 --> AR_0505
