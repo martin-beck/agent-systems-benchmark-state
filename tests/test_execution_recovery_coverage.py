@@ -8,6 +8,7 @@ from __future__ import annotations
 import datetime as dt
 import unittest
 from types import SimpleNamespace
+from typing import cast
 
 from tools import execution_abandonment, execution_lifecycle
 
@@ -126,7 +127,8 @@ class LifecycleTests(unittest.TestCase):
         self.assertIn(
             RESERVATION["execution_id"], execution_lifecycle.start(runtime, self.start_args(), meta)
         )
-        self.assertEqual(RESERVATION["execution_id"], meta["execution_reservation"]["execution_id"])
+        reservation = cast(dict[str, object], meta["execution_reservation"])
+        self.assertEqual(RESERVATION["execution_id"], reservation["execution_id"])
         with self.assertRaisesRegex(RuntimeError, "live execution"):
             execution_lifecycle.start(RuntimeDouble(live={}), self.start_args(), self.meta())
         with self.assertRaisesRegex(RuntimeError, "bound execution envelope"):
