@@ -10,7 +10,19 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import cast
 
-from tools.execution_envelope import Preflight, canonical_digest, digest, errors, load, preflight
+from tools.execution_envelope import (
+    Preflight,
+    _capability_errors,
+    _identity_errors,
+    _paths,
+    canonical_digest,
+    digest,
+    errors,
+    load,
+    preflight,
+    publication_metadata_allowed,
+    valid_replacements,
+)
 
 
 def envelope() -> dict[str, object]:
@@ -152,6 +164,41 @@ class ExecutionEnvelopeTests(unittest.TestCase):
             preflight(meta, "worker", "git-publication", ["src"], self.worktree, True).code,
         )
         self.assertTrue(errors({**value, "capabilities": {"git_metadata": {"allowed": True}}}))
+
+    def test_validator_rejects_every_private_shape_boundary(self) -> None:
+        value = envelope()
+        for candidate in (None, [], "text", 1):
+            self.assertIn("envelope must be an object", errors(candidate))
+        for field, replacement in (
+            ("schema_version", 3),
+            ("envelope_revision", 0),
+            ("task_revision", "1"),
+            ("spec_revision", 0),
+            ("envelope_id", "AR-0001"),
+            ("task", "bad"),
+            ("spec_ref", "../bad"),
+        ):
+            self.assertTrue(errors({**value, field: replacement}), field)
+        for paths in ([], ["src", "src"], ["../escape"], ["."]):
+            self.assertTrue(errors({**value, "path_scope": {"read": paths, "write": ["src"]}}))
+        self.assertEqual([], _capability_errors({"schema_version": 1}))
+        self.assertTrue(_capability_errors({"schema_version": 1, "capabilities": {}}))
+        self.assertTrue(
+            _capability_errors(
+                {"schema_version": 2, "capabilities": {"git_metadata": {"allowed": 1}, "network": {"allowed": False}}}
+            )
+        )
+        self.assertTrue(_identity_errors({"schema_version": 9, "envelope_id": "bad", "task": "bad"}))
+
+    def test_private_helpers_reject_duplicates_and_invalid_replacement_records(self) -> None:
+        problems: list[str] = []
+        _paths(["src", "src"], "read", problems)
+        self.assertIn("duplicates", problems[0])
+        self.assertFalse(valid_replacements([{"old_ref": "bad"}]))
+        self.assertTrue(valid_replacements(None))
+        self.assertFalse(publication_metadata_allowed(envelope()))
+        v2 = envelope() | {"schema_version": 2, "capabilities": {"git_metadata": {"allowed": True}}}
+        self.assertTrue(publication_metadata_allowed(v2))
 
     def test_validator_rejects_schema_shape_and_identity_failures(self) -> None:
         cases = (
