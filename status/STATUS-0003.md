@@ -2214,6 +2214,20 @@
 | Summary | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. |
 | Next action | Repair PR #164 scope at a fresh exact head: retain only the two AR-1861/AR-1862 evidence-ledger digest updates, restore/rebase away schema/task-record, checkpoint/session, and test changes; rerun focused/full gates and request fresh independent review. |
 
+### AR-1870 — Repair ledger digests only
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes, leaving schema, tests, checkpoints, sessions, predicates, and all other task fields unchanged. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3127,6 +3141,7 @@ flowchart LR
         AR_1867["AR-1867 - In progress"]:::status_in_progress
         AR_1868["AR-1868 - In progress"]:::status_in_progress
         AR_1869["AR-1869 - In progress"]:::status_in_progress
+        AR_1870["AR-1870 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4924,29 +4939,3 @@ flowchart LR
     AR_1675 --> AR_1690
     AR_1676 --> AR_1677
     AR_1676 --> AR_1678
-    AR_1676 --> AR_1691
-    AR_1677 --> AR_1678
-    AR_1677 --> AR_1691
-    AR_1682 --> AR_1683
-    AR_1686 --> AR_1689
-    AR_1687 --> AR_1686
-    AR_1687 --> AR_1689
-    AR_1688 --> AR_1686
-    AR_1688 --> AR_1689
-    AR_1688 --> AR_1691
-    AR_1688 --> AR_1698
-    AR_1689 --> AR_1833
-    AR_1690 --> AR_1691
-    AR_1690 --> AR_1692
-    AR_1690 --> AR_1694
-    AR_1691 --> AR_1693
-    AR_1692 --> AR_1693
-    AR_1694 --> AR_1691
-    AR_1694 --> AR_1693
-    AR_1695 --> AR_1691
-    AR_1695 --> AR_1693
-    AR_1695 --> AR_1696
-    AR_1696 --> AR_1691
-    AR_1696 --> AR_1693
-    AR_1698 --> AR_1701
-    AR_1698 --> AR_1712

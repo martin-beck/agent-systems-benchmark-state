@@ -1,5 +1,31 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1676 --> AR_1691
+    AR_1677 --> AR_1678
+    AR_1677 --> AR_1691
+    AR_1682 --> AR_1683
+    AR_1686 --> AR_1689
+    AR_1687 --> AR_1686
+    AR_1687 --> AR_1689
+    AR_1688 --> AR_1686
+    AR_1688 --> AR_1689
+    AR_1688 --> AR_1691
+    AR_1688 --> AR_1698
+    AR_1689 --> AR_1833
+    AR_1690 --> AR_1691
+    AR_1690 --> AR_1692
+    AR_1690 --> AR_1694
+    AR_1691 --> AR_1693
+    AR_1692 --> AR_1693
+    AR_1694 --> AR_1691
+    AR_1694 --> AR_1693
+    AR_1695 --> AR_1691
+    AR_1695 --> AR_1693
+    AR_1695 --> AR_1696
+    AR_1696 --> AR_1691
+    AR_1696 --> AR_1693
+    AR_1698 --> AR_1701
+    AR_1698 --> AR_1712
     AR_1699 --> AR_1700
     AR_1699 --> AR_1702
     AR_1699 --> AR_1704
@@ -676,4 +702,3 @@
 | [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | None |
 | [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md) | None | None |
 | [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md), [AR-1359](../tasks/AR-1359-runtime-control-bridge.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | None |
-| [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md), [AR-1359](../tasks/AR-1359-runtime-control-bridge.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md), [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md) |
