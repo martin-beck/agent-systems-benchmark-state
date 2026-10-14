@@ -329,7 +329,7 @@
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_handoffctl_recovery.py": {
-      "sha256": "c8d1ff463aae80d17b883e174c0a294787175f0ff44bfd3917b07de4c0d2ca90",
+      "sha256": "5d7c352a2f60a04e91af9dd7c038b5b3be3b5388bb1d7573defa294b539d81cd",
       "source": "tests/test_handoffctl_recovery.py"
     },
     "tests/test_handoffctl_retry_recovery.py": {
