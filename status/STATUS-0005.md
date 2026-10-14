@@ -418,7 +418,7 @@
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -426,14 +426,14 @@
 | P1 | [AR-1881](../tasks/AR-1881.md): Recover terminal orphan reservation | codex-ar1881-terminal-recovery-luna-20261014 | Add a narrowly scoped handoffctl recovery path for an expired bound reservation with an exactly matching durable terminal result but no legacy claim_process identity. Reuse AR-1867/AR-1872 evidence and structural fences; preserve exact reservation/result identity, expiry, structural validation, and immutable audit. Do not edit AR-1878 before lease expiry, weaken other recover/abandon cases, or force-clear state. | Obtain exact-head review and publication for signed product commit 3162fe8be2; retain envelope read-scope and git_metadata admission blockers as non-waived evidence. |
 | P1 | [AR-1885](../tasks/AR-1885.md): Adopt cwd routing | codex-ar1885-cwd-routing-20261014 | Adopt upstream Coordinator multi-root/cwd-routing at exact commit 2493c67f2ea162885b15c648fb3d626c84732170 via development vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, and generated integrity evidence; preserve ASB overlays, views, and immutable AR-1878 through AR-1884. No Agent Relay dependency, formal/TLC gate, runtime download, or direct state-history/file copy. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1886](../tasks/AR-1886.md): Repair runner environment | codex-ar1886-runner-env-20261014 | Repair only the bounded handoffctl Bubblewrap execution root so approved pinned executables (pwd, git, and sync tooling) are visible for AR-1885 commands. Preserve AR-1885 immutable history; do not add host mounts, network, runtime downloads, scope widening, or gate weakening. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1887](../tasks/AR-1887.md): Repair nonformal gates | codex-ar1887-nonformal-gates-20261014 | Repair only the exact AR-1886 non-formal gate failures: temporary non-repository Git assumptions and offline jsonschema provisioning. Preserve AR-1886 immutable history; do not weaken tests, add network/downloads, or require TLC/formal gates. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
-| P1 | [AR-1887](../tasks/AR-1887.md): Repair nonformal gates | Unclaimed | Repair only the exact AR-1886 non-formal gate failures: temporary non-repository Git assumptions and offline jsonschema provisioning. Preserve AR-1886 immutable history; do not weaken tests, add network/downloads, or require TLC/formal gates. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (100)
 

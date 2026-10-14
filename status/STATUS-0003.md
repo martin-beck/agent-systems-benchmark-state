@@ -2456,11 +2456,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1887-nonformal-gates-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Repair only the exact AR-1886 non-formal gate failures: temporary non-repository Git assumptions and offline jsonschema provisioning. Preserve AR-1886 immutable history; do not weaken tests, add network/downloads, or require TLC/formal gates. |
@@ -3396,7 +3396,7 @@ flowchart LR
         AR_1884["AR-1884 - Blocked"]:::status_blocked
         AR_1885["AR-1885 - In progress"]:::status_in_progress
         AR_1886["AR-1886 - In progress"]:::status_in_progress
-        AR_1887["AR-1887 - Open"]:::status_open
+        AR_1887["AR-1887 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4621,5 +4621,3 @@ flowchart LR
     AR_1408 --> AR_1409
     AR_1408 --> AR_1411
     AR_1408 --> AR_1412
-    AR_1408 --> AR_1413
-    AR_1408 --> AR_1417
