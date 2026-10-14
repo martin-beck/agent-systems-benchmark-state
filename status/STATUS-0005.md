@@ -354,14 +354,13 @@
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | asb_ar1773_docker_runner_luna | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Repair the coordinator Bubblewrap runtime root to mount the approved pinned Cargo toolchain, compiler/linker support, complete workspace source, and required identity files through an authorized runner; then rerun exact-head focused and full tests through handoffctl. No product source repair is justified. |
 | P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | ar1852-env-repair-luna5 | Align role-store authorization tests with Coordinator v0.7.4. | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. |
 | P1 | [AR-1865](../tasks/AR-1865.md): Repair expired role cleanup | asb_ar1865_role_cleanup | Restore the AR-1822 exact-revision roles.remove cleanup semantics lost when ASB adopted Coordinator v0.7.8, preserving fail-closed reads, admission, malformed-state checks, and unrelated coordinator behavior. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1866](../tasks/AR-1866.md): Correct vendor version docs | asb-vendor-docs-repair | Correct ASB public vendor documentation that still names Coordinator v0.3.5 after the checked-in coordinator.vendor.json adopted v0.7.8, without changing runtime or coordinator behavior. | Release AR-1866 after exact-main verification. |
 
 ### Open (4)
 
@@ -574,7 +573,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (616)
+### Done (617)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -658,3 +657,4 @@
 | P0 | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md): Native signed-bundle supervisor fixture | Unclaimed | Add native signed-bundle fixture and end-to-end supervisor isolation tests. | Extend native fixture invocation from helper lifecycle proof to authenticated cassette HTTP success plus provider/descendant denial and cleanup/non-interference matrix. |
 | P0 | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md): Native isolation negative and lifecycle matrix | Unclaimed | Complete native signed-bundle isolation negative and lifecycle evidence. | Add provider/external/descendant egress denial and timeout/cancel/crash/non-interference tests for the signed native bundle. |
 | P0 | [AR-1242](../tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | Unclaimed | Prevent protected-main admission from creating unsigned GitHub merge commits. | No further action; signed merge and all exact-main post-merge gates are complete. |
+| P0 | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | Unclaimed | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | No further action; clean signed bundle assembly, verification, and deterministic build gates are complete. |

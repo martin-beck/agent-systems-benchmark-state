@@ -2162,11 +2162,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-vendor-docs-repair |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Correct ASB public vendor documentation that still names Coordinator v0.3.5 after the checked-in coordinator.vendor.json adopted v0.7.8, without changing runtime or coordinator behavior. |
@@ -3081,7 +3081,7 @@ flowchart LR
         AR_1863["AR-1863 - Open"]:::status_open
         AR_1864["AR-1864 - Done"]:::status_done
         AR_1865["AR-1865 - In progress"]:::status_in_progress
-        AR_1866["AR-1866 - In progress"]:::status_in_progress
+        AR_1866["AR-1866 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -5001,3 +5001,4 @@ flowchart LR
     AR_1763 --> AR_1783
     AR_1763 --> AR_1835
     AR_1764 --> AR_1765
+    AR_1764 --> AR_1780
