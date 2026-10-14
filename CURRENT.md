@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1921 — Repair publication read scope](tasks/AR-1921.md) | Create a narrow successor for AR-1920's exact read-scope mismatch: admit specs/AR-1863.json because AR-1878 references that spec, while retaining every existing AR-1920 path and capability unchanged. Bind and preflight only the already materialized isolated state worktree under /srv/data/projects; do not widen any command, capability, or publication path. | Implement the bounded scope and record local acceptance evidence. | codex-ar1921-read-scope-close-20261014 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
