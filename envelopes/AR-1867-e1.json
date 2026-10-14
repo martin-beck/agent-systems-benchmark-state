@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1867-e1",
+  "envelope_revision": 1,
+  "task": "AR-1867",
+  "task_revision": 7,
+  "spec_ref": "specs/AR-1867.json",
+  "spec_revision": 1,
+  "path_scope": {
+    "read": ["tools", "tests", "docs", "specs", "envelopes"],
+    "write": ["tools", "tests", "docs"]
+  },
+  "command_classes": {
+    "read": {"allowed": true},
+    "test": {"allowed": true, "timeout_seconds": 900},
+    "source-write": {"allowed": true, "timeout_seconds": 120}
+  },
+  "evidence": [{"class": "contract-test", "id": "focused", "required": true}],
+  "outputs": [{"id": "source", "description": "Reviewed overlay source and tests."}],
+  "non_goals": ["Do not edit stale task records directly.", "Do not weaken receipt checks."],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}]
+}

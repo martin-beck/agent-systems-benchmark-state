@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1867.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "legacy-explicit", "description": "Legacy recover-execution requires explicit acknowledgement and rejects identities."},
+    {"id": "receipt-fence", "description": "Reservation expiry, structural validation, and exact durable result matching remain mandatory."},
+    {"id": "focused-gates", "description": "Focused positive and negative recovery tests pass."}
+  ],
+  "definition_of_done": ["Reviewed signed source commit and exact-head CI evidence are recorded."],
+  "inputs": [{"id": "stale-asb-claims", "description": "AR-1773 and AR-1852 pre-identity bound reservations."}],
+  "outputs": [{"id": "recovery-overlay", "description": "Bounded downstream handoffctl compatibility path."}],
+  "allowed_tools": ["git", "python", "tools/handoffctl"],
+  "forbidden_tools": ["direct-state-edit", "vendor-release-change", "gate-weakening"],
+  "required_evidence_classes": ["mechanical", "contract-test", "environmental"],
+  "gates": [{"id": "focused", "description": "Focused recovery tests pass."}, {"id": "review", "description": "Independent exact-head review and CI are green."}]
+}
