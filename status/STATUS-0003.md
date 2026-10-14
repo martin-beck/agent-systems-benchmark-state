@@ -2578,6 +2578,20 @@
 | Summary | State-only successor admitting exactly tools/execution_receipt.py for the AR-1894 focused replacement test. Preserve AR-1894 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1896 — Admit revalidation dependency
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only successor admitting exactly tools/assumption_revalidation.py for the AR-1895 focused replacement test. Preserve AR-1895 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3517,6 +3531,7 @@ flowchart LR
         AR_1893["AR-1893 - In progress"]:::status_in_progress
         AR_1894["AR-1894 - In progress"]:::status_in_progress
         AR_1895["AR-1895 - In progress"]:::status_in_progress
+        AR_1896["AR-1896 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4480,29 +4495,3 @@ flowchart LR
     AR_1328 --> AR_1343
     AR_1328 --> AR_1346
     AR_1328 --> AR_1347
-    AR_1328 --> AR_1348
-    AR_1328 --> AR_1349
-    AR_1328 --> AR_1350
-    AR_1328 --> AR_1367
-    AR_1328 --> AR_1368
-    AR_1328 --> AR_1374
-    AR_1328 --> AR_1432
-    AR_1328 --> AR_1433
-    AR_1328 --> AR_1436
-    AR_1328 --> AR_1437
-    AR_1328 --> AR_1440
-    AR_1328 --> AR_1442
-    AR_1328 --> AR_1699
-    AR_1329 --> AR_1330
-    AR_1329 --> AR_1333
-    AR_1329 --> AR_1700
-    AR_1330 --> AR_1463
-    AR_1330 --> AR_1496
-    AR_1331 --> AR_1332
-    AR_1331 --> AR_1338
-    AR_1332 --> AR_1333
-    AR_1332 --> AR_1456
-    AR_1333 --> AR_1335
-    AR_1333 --> AR_1336
-    AR_1333 --> AR_1420
-    AR_1334 --> AR_1335
