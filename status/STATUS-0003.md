@@ -2438,6 +2438,20 @@
 | Summary | Adopt upstream Coordinator multi-root/cwd-routing at exact commit 2493c67f2ea162885b15c648fb3d626c84732170 via development vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, and generated integrity evidence; preserve ASB overlays, views, and immutable AR-1878 through AR-1884. No Agent Relay dependency, formal/TLC gate, runtime download, or direct state-history/file copy. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1886 — Repair runner environment
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair only the bounded handoffctl Bubblewrap execution root so approved pinned executables (pwd, git, and sync tooling) are visible for AR-1885 commands. Preserve AR-1885 immutable history; do not add host mounts, network, runtime downloads, scope widening, or gate weakening. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3367,6 +3381,7 @@ flowchart LR
         AR_1883["AR-1883 - Blocked"]:::status_blocked
         AR_1884["AR-1884 - Blocked"]:::status_blocked
         AR_1885["AR-1885 - In progress"]:::status_in_progress
+        AR_1886["AR-1886 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4619,31 +4634,3 @@ flowchart LR
     AR_1421 --> AR_1427
     AR_1423 --> AR_1424
     AR_1423 --> AR_1426
-    AR_1423 --> AR_1430
-    AR_1424 --> AR_1425
-    AR_1425 --> AR_1426
-    AR_1427 --> AR_1431
-    AR_1427 --> AR_1722
-    AR_1427 --> AR_1746
-    AR_1427 --> AR_1750
-    AR_1430 --> AR_1424
-    AR_1431 --> AR_1722
-    AR_1431 --> AR_1746
-    AR_1431 --> AR_1750
-    AR_1432 --> AR_1699
-    AR_1433 --> AR_1446
-    AR_1433 --> AR_1447
-    AR_1433 --> AR_1451
-    AR_1433 --> AR_1452
-    AR_1433 --> AR_1456
-    AR_1433 --> AR_1496
-    AR_1433 --> AR_1700
-    AR_1434 --> AR_1435
-    AR_1435 --> AR_1436
-    AR_1436 --> AR_1437
-    AR_1436 --> AR_1440
-    AR_1436 --> AR_1442
-    AR_1437 --> AR_1440
-    AR_1437 --> AR_1443
-    AR_1437 --> AR_1447
-    AR_1441 --> AR_1442

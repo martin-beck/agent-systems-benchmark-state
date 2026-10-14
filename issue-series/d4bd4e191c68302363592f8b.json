@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1886",
+  "issue": {
+    "number": 10017,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10017"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Positive tests prove approved pwd/git/sync commands execute in the admitted root and retain product/state cwd routing. Negative tests reject absent or unapproved executables, host-path leakage, network/download attempts, and scope escapes. Exact signed+DCO review, CI, merge, and post-repair doctor evidence pass; AR-1885 remains unchanged.",
+      "depends_on": [],
+      "id": "AR-1886",
+      "ownership": "ASB handoffctl runner-environment admission and focused tests only; preserve vendored Coordinator, product code, AR-1885, AR-1878 through AR-1884, and formal/TLC gates.",
+      "scope": "Repair only the bounded handoffctl Bubblewrap execution root so approved pinned executables (pwd, git, and sync tooling) are visible for AR-1885 commands. Preserve AR-1885 immutable history; do not add host mounts, network, runtime downloads, scope widening, or gate weakening.",
+      "short_title": "Repair runner environment"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

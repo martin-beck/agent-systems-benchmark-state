@@ -1,5 +1,33 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1423 --> AR_1430
+    AR_1424 --> AR_1425
+    AR_1425 --> AR_1426
+    AR_1427 --> AR_1431
+    AR_1427 --> AR_1722
+    AR_1427 --> AR_1746
+    AR_1427 --> AR_1750
+    AR_1430 --> AR_1424
+    AR_1431 --> AR_1722
+    AR_1431 --> AR_1746
+    AR_1431 --> AR_1750
+    AR_1432 --> AR_1699
+    AR_1433 --> AR_1446
+    AR_1433 --> AR_1447
+    AR_1433 --> AR_1451
+    AR_1433 --> AR_1452
+    AR_1433 --> AR_1456
+    AR_1433 --> AR_1496
+    AR_1433 --> AR_1700
+    AR_1434 --> AR_1435
+    AR_1435 --> AR_1436
+    AR_1436 --> AR_1437
+    AR_1436 --> AR_1440
+    AR_1436 --> AR_1442
+    AR_1437 --> AR_1440
+    AR_1437 --> AR_1443
+    AR_1437 --> AR_1447
+    AR_1441 --> AR_1442
     AR_1441 --> AR_1446
     AR_1441 --> AR_1488
     AR_1442 --> AR_1338
@@ -1181,4 +1209,3 @@
 | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) | [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md), [AR-1722](../tasks/AR-1722.md), [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md), [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md) |
 | [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) |
 | [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) | [AR-1722](../tasks/AR-1722.md), [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md), [AR-1750](../tasks/AR-1750-github-ruleset-response-normalization.md) |
-| [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md) | [AR-1699](../tasks/AR-1699.md) |
