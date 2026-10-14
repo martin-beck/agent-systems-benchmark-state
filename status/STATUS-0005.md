@@ -372,7 +372,7 @@
 
 ## Complete AR inventory
 
-### In progress (7)
+### In progress (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -380,11 +380,10 @@
 | P1 | [AR-1852](../tasks/AR-1852-role-store-v074-contracts.md): Role-store v0.7.4 compatibility contracts | ar1852-env-repair-luna5 | Align role-store authorization tests with Coordinator v0.7.4. | Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner. |
 | P1 | [AR-1867](../tasks/AR-1867.md): Legacy reservation recovery | asb_ar1867_legacy_recovery_luna | Add a fail-closed ASB downstream handoffctl overlay path to recover expired bound execution reservations from pre-identity claims without direct state edits or weakened reservation structural checks. | PR #161 published at exact source head 7281ca87f5 plus signed overlay commit 5f7f247a39; obtain independent exact-head review and required CI before merge. Full unittest remains environment-blocked by bounded filesystem/jbd2 hang. |
 | P1 | [AR-1868](../tasks/AR-1868.md): Synchronize task schema vocabulary | asb_ar1868_task_schema_luna | Update only schema/task-schema.json and generated validation fixtures so accepted modern task-record metadata is validated by ASB while unknown fields remain rejected; preserve ASB-specific lifecycle constraints. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1869](../tasks/AR-1869.md): Repair evidence ledger digests | asb_ar1869_ledger_luna | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. | Repair PR #164 scope at a fresh exact head: retain only the two AR-1861/AR-1862 evidence-ledger digest updates, restore/rebase away schema/task-record, checkpoint/session, and test changes; rerun focused/full gates and request fresh independent review. |
 | P1 | [AR-1870](../tasks/AR-1870.md): Repair ledger digests only | asb_ar1870_ledger_successor | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes, leaving schema, tests, checkpoints, sessions, predicates, and all other task fields unchanged. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1871](../tasks/AR-1871.md): Integrate schema ledger fix | asb_ar1871_schema_ledger_integration | Integrate independently reviewed AR-1868 schema vocabulary repair and AR-1870 ledger digest repair on current main, changing only schema/task-schema.json, tests/test_task_record_schema.py, and AR-1861/AR-1862 evidence_ledger blocks. This successor explicitly depends on AR-1868 and AR-1870 review evidence; do not include checkpoints, sessions, projections, runtime state, or unrelated files. | Publish exact-head signed integration PR; obtain independent review; run green CI; merge via handoffctl; post-merge verify schema and both evidence ledgers. |
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -392,6 +391,7 @@
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 | P1 | [AR-1853](../tasks/AR-1853-complexity-v074-contract.md): Complexity v0.7.4 compatibility contract | Unclaimed | Align the complexity-budget contract with Coordinator v0.7.4. | Wait for AR-1851 and AR-1852 merged repairs, then rerun exact-head CI for approved PR #146 at 56371a22ad; preserve cross-repair failures as non-waived evidence. |
 | P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | Unclaimed | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Blocked: AR-0035 v2 envelope cannot bind because durable role state contains expired assignments; clean expired roles through coordinator authority, then bind AR-1863-e3 and rerun exact-head publication preflight. Do not direct-merge. |
+| P1 | [AR-1869](../tasks/AR-1869.md): Repair evidence ledger digests | Unclaimed | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. | Repair PR #164 scope at a fresh exact head: retain only the two AR-1861/AR-1862 evidence-ledger digest updates, restore/rebase away schema/task-record, checkpoint/session, and test changes; rerun focused/full gates and request fresh independent review. |
 
 ### Blocked (92)
 

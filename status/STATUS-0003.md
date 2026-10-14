@@ -2204,11 +2204,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb_ar1869_ledger_luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. |
@@ -3168,7 +3168,7 @@ flowchart LR
         AR_1866["AR-1866 - Done"]:::status_done
         AR_1867["AR-1867 - In progress"]:::status_in_progress
         AR_1868["AR-1868 - In progress"]:::status_in_progress
-        AR_1869["AR-1869 - In progress"]:::status_in_progress
+        AR_1869["AR-1869 - Open"]:::status_open
         AR_1870["AR-1870 - In progress"]:::status_in_progress
         AR_1871["AR-1871 - In progress"]:::status_in_progress
         AR_1872["AR-1872 - Planned"]:::status_planned
@@ -4897,3 +4897,5 @@ flowchart LR
     AR_1647 --> AR_1643
     AR_1647 --> AR_1657
     AR_1648 --> AR_1647
+    AR_1648 --> AR_1649
+    AR_1648 --> AR_1650
