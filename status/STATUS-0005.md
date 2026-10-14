@@ -454,12 +454,13 @@
 | P1 | [AR-1892](../tasks/AR-1892.md): Admit observation scope | codex-ar1892-observation-scope-20261014 | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. | Run bounded focused recovery scope test through AR-1892 envelope. |
 | P1 | [AR-1893](../tasks/AR-1893.md): Repair envelope replacement schema | codex-ar1893-envelope-schema-20261014 | State-only repair to admit the authorized execution_envelope_replacements task field and validator path needed to replace AR-1892&#x27;s malformed predecessor envelope without widening unrelated scope. Preserve AR-1892, AR-1891, AR-1890 and earlier histories; no claim bypass, cross-root, network, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1783](../tasks/AR-1783-installed-workload-selection-and-execution.md): Installed workload selection and execution | Unclaimed | Implementation is integrated and workload matrix tests pass; qualification is blocked by current-main diagnostic catalog drift owned by AR-1863. | Await AR-1863 generated catalog repair, then rerun exact-head serialized coverage; do not duplicate workload/control tests or weaken the 90&#37; floor. |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
+| P1 | [AR-1894](../tasks/AR-1894.md): Admit abandonment dependency | Unclaimed | State-only successor admitting exactly tools/execution_abandonment.py for the AR-1893 focused schema test. Preserve AR-1893, AR-1892, AR-1891, AR-1890 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (101)
 
@@ -567,7 +568,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (97)
+### Planned (96)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -662,4 +663,3 @@
 | P1 | [AR-1684](../tasks/AR-1684.md): Harden runtime selector helper matrix | Unclaimed | Lock in fail-closed rejection of hostile selector directory, symlink, and non-regular entries. | Run the targeted authority defensive matrix and full hosted checks on the signed head. |
 | P1 | [AR-1831](../tasks/AR-1831-explicit-config-cli-tui-docs.md): Align CLI, TUI handoff, and documentation to explicit config workflow | Unclaimed | Make every CLI, TUI handoff, help page, completion, and example teach the explicit setup-output and plan-config workflow. | Align CLI help, human output, completions, TUI handoff, examples, and migration documentation to the explicit setup-config route. |
 | P1 | [AR-1848](../tasks/AR-1848-graph-extraction-qualification.md): Qualify ASB dataflow graph extraction end to end | Unclaimed | Qualify reproducible complete ASB dataflow extraction, DOT/SVG generation, privacy, and paired documentation. | Promote after AR-1847; run clean-checkout extraction and cross-check graph artifacts against all generated registries and CLI options. |
-| P1 | [AR-1854](../tasks/AR-1854-v074-compatibility-integration.md): v0.7.4 compatibility integration qualification | Unclaimed | Integrate and qualify the Coordinator v0.7.4 compatibility repairs. | Promote only after AR-1851, AR-1852 and AR-1853 merge; combine their exact reviewed heads and run the strict/formal integration gates. |
