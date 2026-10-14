@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) |
 | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | None |
 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) |
 | [AR-1372](../tasks/AR-1372-topology-repair.md) | None | None |
@@ -510,13 +511,14 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-1900](../tasks/AR-1900.md): Admit execution-envelope dependency | codex-ar1900-envelope-20261014 | State-only successor admitting exactly tools/execution_envelope.py for the AR-1899 focused replacement test. Preserve AR-1899 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | codex-ar1919-git-publication-20261014 | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (16)
+### Open (15)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -528,7 +530,6 @@
 | P1 | [AR-1888](../tasks/AR-1888.md): Publish gate repair | Unclaimed | Publish the already reviewed AR-1887 state repair at exact commit 12074686d4, including its signed/DCO ancestry and full-suite evidence digest sha256:65c3adc9516e93a55aa1a629beceb15c1ede0b3a345b73c51a4c40463298535e. Scope is immutable to tools/handoffctl.py, tests, and quality evidence; preserve AR-1887 and earlier histories. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1889](../tasks/AR-1889.md): Recover expired claim | Unclaimed | Add only the state-side recovery capability needed to clear AR-1878&#x27;s exact expired reservation with matching durable terminal EXIT evidence. Scope tools/handoffctl.py, execution lifecycle, and focused tests; preserve AR-1878 through AR-1888, reject force-clear/cross-root paths, and do not run formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1892](../tasks/AR-1892.md): Admit observation scope | Unclaimed | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. | Run bounded focused recovery scope test through AR-1892 envelope. |
-| P1 | [AR-1900](../tasks/AR-1900.md): Admit execution-envelope dependency | Unclaimed | State-only successor admitting exactly tools/execution_envelope.py for the AR-1899 focused replacement test. Preserve AR-1899 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1902](../tasks/AR-1902.md): Admit resume-card dependency | Unclaimed | State-only successor admitting exactly tools/resume_card.py for the AR-1900 focused replacement test. Preserve AR-1901, AR-1900 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1903](../tasks/AR-1903.md): Admit retry-circuit dependency | Unclaimed | State-only successor admitting exactly tools/retry_circuit.py for the AR-1902 focused replacement test. Preserve AR-1902 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1905](../tasks/AR-1905.md): Admit task-spec dependency | Unclaimed | State-only successor admitting exactly tools/task_spec.py for the AR-1903 focused replacement test. Preserve AR-1904, AR-1903, AR-1901 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
@@ -675,4 +676,3 @@
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
-| P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
