@@ -2554,11 +2554,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1894-abandonment-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor admitting exactly tools/execution_abandonment.py for the AR-1893 focused schema test. Preserve AR-1893, AR-1892, AR-1891, AR-1890 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
@@ -3501,7 +3501,7 @@ flowchart LR
         AR_1891["AR-1891 - Planned"]:::status_planned
         AR_1892["AR-1892 - In progress"]:::status_in_progress
         AR_1893["AR-1893 - In progress"]:::status_in_progress
-        AR_1894["AR-1894 - Open"]:::status_open
+        AR_1894["AR-1894 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4518,5 +4518,3 @@ flowchart LR
     AR_1339 --> AR_1391
     AR_1339 --> AR_1392
     AR_1339 --> AR_1393
-    AR_1340 --> AR_1329
-    AR_1340 --> AR_1342
