@@ -5,21 +5,21 @@
   "claim_expires": "",
   "depends_on": [],
   "evidence_ledger": {
-    "candidate_digest": "sha256:89a14fb72dc8fdd19ef928e61cc12398903a2c84040781ee696a70daeaf61985",
+    "candidate_digest": "sha256:e9f4d59af56b1ff76aa3d607e2dbbfa4b4f17fb8d33845a445945732cc26a842",
     "candidate_ref": "coordinator.vendor.json",
     "steps": [
       {
-        "candidate_digest": "sha256:89a14fb72dc8fdd19ef928e61cc12398903a2c84040781ee696a70daeaf61985",
+        "candidate_digest": "sha256:e9f4d59af56b1ff76aa3d607e2dbbfa4b4f17fb8d33845a445945732cc26a842",
         "candidate_ref": "coordinator.vendor.json",
         "evidence_class": "mechanical",
-        "evidence_digest": "sha256:89a14fb72dc8fdd19ef928e61cc12398903a2c84040781ee696a70daeaf61985",
+        "evidence_digest": "sha256:e9f4d59af56b1ff76aa3d607e2dbbfa4b4f17fb8d33845a445945732cc26a842",
         "evidence_ref": "coordinator.vendor.json",
         "predicate_id": "vendor-lifecycle-alignment",
         "recorded_task_revision": 24,
         "status": "pass"
       },
       {
-        "candidate_digest": "sha256:89a14fb72dc8fdd19ef928e61cc12398903a2c84040781ee696a70daeaf61985",
+        "candidate_digest": "sha256:e9f4d59af56b1ff76aa3d607e2dbbfa4b4f17fb8d33845a445945732cc26a842",
         "candidate_ref": "coordinator.vendor.json",
         "evidence_class": "contract-test",
         "evidence_digest": "sha256:d36e1c863891a38c3c794fdc2bf4dc7dcb7f98ce0c06a771f4ee31eb8bb87e65",
@@ -29,7 +29,7 @@
         "status": "pass"
       },
       {
-        "candidate_digest": "sha256:89a14fb72dc8fdd19ef928e61cc12398903a2c84040781ee696a70daeaf61985",
+        "candidate_digest": "sha256:e9f4d59af56b1ff76aa3d607e2dbbfa4b4f17fb8d33845a445945732cc26a842",
         "candidate_ref": "coordinator.vendor.json",
         "evidence_class": "contract-test",
         "evidence_digest": "sha256:acffbc7a0bb3e2f2e76c73d66c08b02aa9105ed3bb6b93d927b26065d93af699",
