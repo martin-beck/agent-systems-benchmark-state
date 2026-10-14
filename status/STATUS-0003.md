@@ -2494,6 +2494,20 @@
 | Summary | Add only the state-side recovery capability needed to clear AR-1878&#x27;s exact expired reservation with matching durable terminal EXIT evidence. Scope tools/handoffctl.py, execution lifecycle, and focused tests; preserve AR-1878 through AR-1888, reject force-clear/cross-root paths, and do not run formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1890 — Admit recovery scope
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a state-only successor envelope for the focused AR-1889 recovery tests that explicitly admits tools/fast_receipt_cli.py and its required test dependencies. Preserve AR-1889 and AR-1878 through AR-1888; do not bypass the expired-claim blocker or run formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3427,6 +3441,7 @@ flowchart LR
         AR_1887["AR-1887 - In progress"]:::status_in_progress
         AR_1888["AR-1888 - In progress"]:::status_in_progress
         AR_1889["AR-1889 - In progress"]:::status_in_progress
+        AR_1890["AR-1890 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4564,30 +4579,3 @@ flowchart LR
     AR_1377 --> AR_1380
     AR_1377 --> AR_1381
     AR_1377 --> AR_1382
-    AR_1377 --> AR_1383
-    AR_1377 --> AR_1384
-    AR_1377 --> AR_1385
-    AR_1377 --> AR_1386
-    AR_1377 --> AR_1387
-    AR_1377 --> AR_1388
-    AR_1378 --> AR_1379
-    AR_1378 --> AR_1380
-    AR_1378 --> AR_1381
-    AR_1378 --> AR_1382
-    AR_1378 --> AR_1386
-    AR_1378 --> AR_1387
-    AR_1378 --> AR_1388
-    AR_1379 --> AR_1473
-    AR_1379 --> AR_1474
-    AR_1379 --> AR_1475
-    AR_1379 --> AR_1476
-    AR_1379 --> AR_1477
-    AR_1379 --> AR_1478
-    AR_1380 --> AR_1381
-    AR_1380 --> AR_1382
-    AR_1380 --> AR_1383
-    AR_1380 --> AR_1384
-    AR_1380 --> AR_1385
-    AR_1380 --> AR_1386
-    AR_1381 --> AR_1382
-    AR_1381 --> AR_1383

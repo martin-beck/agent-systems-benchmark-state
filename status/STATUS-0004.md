@@ -1,5 +1,32 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1377 --> AR_1383
+    AR_1377 --> AR_1384
+    AR_1377 --> AR_1385
+    AR_1377 --> AR_1386
+    AR_1377 --> AR_1387
+    AR_1377 --> AR_1388
+    AR_1378 --> AR_1379
+    AR_1378 --> AR_1380
+    AR_1378 --> AR_1381
+    AR_1378 --> AR_1382
+    AR_1378 --> AR_1386
+    AR_1378 --> AR_1387
+    AR_1378 --> AR_1388
+    AR_1379 --> AR_1473
+    AR_1379 --> AR_1474
+    AR_1379 --> AR_1475
+    AR_1379 --> AR_1476
+    AR_1379 --> AR_1477
+    AR_1379 --> AR_1478
+    AR_1380 --> AR_1381
+    AR_1380 --> AR_1382
+    AR_1380 --> AR_1383
+    AR_1380 --> AR_1384
+    AR_1380 --> AR_1385
+    AR_1380 --> AR_1386
+    AR_1381 --> AR_1382
+    AR_1381 --> AR_1383
     AR_1381 --> AR_1384
     AR_1381 --> AR_1385
     AR_1381 --> AR_1386
@@ -1288,6 +1315,3 @@
 | [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md) | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) |
 | [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md) | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md) | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) |
 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md), [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) |
-| [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) | [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) |
-| [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
-| [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) | [AR-1403](../tasks/AR-1403-literature-external-qualification.md), [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md), [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md), [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) |
