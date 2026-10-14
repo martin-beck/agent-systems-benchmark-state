@@ -2522,6 +2522,20 @@
 | Summary | Add state-only recovery reconciliation for expired AR-1878 terminal-result evidence. Require exact target/revision/reservation/result/envelope, expiry, terminal EXIT, absent worker/claim_process, and operator evidence; immutable audit then existing recovery. Reject arbitrary, active/unexpired, mismatched, malformed/missing, cross-root, force-clear, and publication inputs. Preserve AR-1878 through AR-1890; no product/vendor/formal/TLC state. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1892 — Admit observation scope
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3457,6 +3471,7 @@ flowchart LR
         AR_1889["AR-1889 - In progress"]:::status_in_progress
         AR_1890["AR-1890 - Blocked"]:::status_blocked
         AR_1891["AR-1891 - Planned"]:::status_planned
+        AR_1892["AR-1892 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4533,30 +4548,3 @@ flowchart LR
     AR_1362 --> AR_1363
     AR_1362 --> AR_1364
     AR_1362 --> AR_1365
-    AR_1362 --> AR_1366
-    AR_1362 --> AR_1369
-    AR_1362 --> AR_1376
-    AR_1362 --> AR_1378
-    AR_1362 --> AR_1379
-    AR_1362 --> AR_1380
-    AR_1362 --> AR_1381
-    AR_1362 --> AR_1468
-    AR_1362 --> AR_1470
-    AR_1362 --> AR_1471
-    AR_1362 --> AR_1474
-    AR_1363 --> AR_1472
-    AR_1364 --> AR_1365
-    AR_1364 --> AR_1366
-    AR_1364 --> AR_1369
-    AR_1364 --> AR_1376
-    AR_1364 --> AR_1377
-    AR_1364 --> AR_1378
-    AR_1364 --> AR_1379
-    AR_1364 --> AR_1380
-    AR_1364 --> AR_1381
-    AR_1364 --> AR_1468
-    AR_1365 --> AR_1366
-    AR_1365 --> AR_1373
-    AR_1366 --> AR_1367
-    AR_1366 --> AR_1368
-    AR_1366 --> AR_1369

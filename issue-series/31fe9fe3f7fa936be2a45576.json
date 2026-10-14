@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1892",
+  "issue": {
+    "number": 10023,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10023"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Bind exact read scope for fast_receipt_cli.py, fast_observation.py, and required focused tests; run only the scope test and record fail-closed results. Reject scope escapes and do not bypass doctor or expired claims.",
+      "depends_on": [],
+      "id": "AR-1892",
+      "ownership": "ASB execution-envelope scope admission only; no product/vendor/history changes.",
+      "scope": "Create a state-only successor envelope admitting exactly tools/fast_observation.py as the missing dependency for AR-1890 focused recovery tests. Preserve AR-1890/1889 and earlier histories; retain the AR-1878 expired-claim blocker; do not broaden arbitrary tools or run formal/TLC.",
+      "short_title": "Admit observation scope"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

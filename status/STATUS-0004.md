@@ -1,5 +1,32 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1362 --> AR_1366
+    AR_1362 --> AR_1369
+    AR_1362 --> AR_1376
+    AR_1362 --> AR_1378
+    AR_1362 --> AR_1379
+    AR_1362 --> AR_1380
+    AR_1362 --> AR_1381
+    AR_1362 --> AR_1468
+    AR_1362 --> AR_1470
+    AR_1362 --> AR_1471
+    AR_1362 --> AR_1474
+    AR_1363 --> AR_1472
+    AR_1364 --> AR_1365
+    AR_1364 --> AR_1366
+    AR_1364 --> AR_1369
+    AR_1364 --> AR_1376
+    AR_1364 --> AR_1377
+    AR_1364 --> AR_1378
+    AR_1364 --> AR_1379
+    AR_1364 --> AR_1380
+    AR_1364 --> AR_1381
+    AR_1364 --> AR_1468
+    AR_1365 --> AR_1366
+    AR_1365 --> AR_1373
+    AR_1366 --> AR_1367
+    AR_1366 --> AR_1368
+    AR_1366 --> AR_1369
     AR_1366 --> AR_1373
     AR_1366 --> AR_1376
     AR_1366 --> AR_1378
@@ -1345,5 +1372,3 @@
 | [AR-1414](../tasks/AR-1414-action-pin-followup.md) | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) |
 | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md), [AR-1414](../tasks/AR-1414-action-pin-followup.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) |
 | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md), [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md), [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) |
-| [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md) | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) |
-| [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md) | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) |

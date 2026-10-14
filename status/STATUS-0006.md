@@ -1,5 +1,14 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
+
+### Done (624)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0001](../tasks/AR-0001-repository-bootstrap.md): Bootstrap public repositories | Unclaimed | Establish both public MIT repositories, Rust workspace, coordination reuse and evidence-backed plans. | No action; foundation verified. Begin AR-0002, AR-0003, AR-0101, AR-0501 or AR-0701 through the coordinator. |
+| P0 | [AR-0105](../tasks/AR-0105-sandbox-test-portability.md): Repair sandbox test target portability | Unclaimed | Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work. | Release AR-0105 done after repaired exact-main local/hosted/state validation. |
+| P0 | [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md): Define runtime bundle manifest and verifier | Unclaimed | Define common signed runtime bundle manifests and offline verification. | Completed; retain Linux/operator-owned acquisition limits. |
 | P0 | [AR-0506](../tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | Unclaimed | Qualify replay conformance for OpenCode. | Monitor rerun of exact-head x86 Rust job after investigated bounded ETXTBSY fixture flake; merge only after every workflow is green. |
 | P0 | [AR-0507](../tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | Unclaimed | Qualify replay conformance for OpenDesk. | Independently review immutable head 24a5519ef006c063f3a8d6e81d0928f2e9e986f9/tree 96f01bd39cd5e75a70d3618cec55e603b9643d38; publish only after approval, then require exact-head x86_64/aarch64 quality/formal/fault CI. |
 | P0 | [AR-0508](../tasks/AR-0508-replay-aider.md): Qualify aider replay | Unclaimed | Qualify replay conformance for aider. | Await independent immutable review of exact ec0a2930690c108987b4a867632316651282cc97; if approved, publish with an exact absent-ref lease, open focused PR, and require exact-head CI before integration. |
@@ -476,7 +485,3 @@
 | P1 | [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Complete; no further action. |
 | P1 | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md): Pin OpenJiuwen source, package, and license provenance | Unclaimed | Pin OpenJiuwen source, package, and license provenance. | Integrate signed no-ff PR #97 onto current main, then run and verify all exact-main post-merge workflows before release. |
 | P1 | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Unclaimed | Implement the OpenJiuwen contract and capability adapter. | Monitor all required post-merge CI runs for exact main 096dc4f275c05ad81772f443b6f22dddfb92da3d; release only after every required gate is green. |
-| P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | No further action; live qualification and protected-main recovery are complete. |
-| P1 | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | Unclaimed | Qualify strict OpenJiuwen replay. | Monitor draft PR #189 exact-head CI and request independent review; do not merge until all gates/review green. Head c894a34. |
-| P1 | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md): Add CLI multi-agent provider selection | Unclaimed | Select several agents and apply one preconfigured provider profile through inspectable command-line options. | Complete; no further action. |
-| P1 | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | Unclaimed | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Push signed repair b3c19b1 with force-with-lease, then rerun exact-head PR checks; do not merge until all required jobs pass. |
