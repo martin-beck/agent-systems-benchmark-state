@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md) | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md), [AR-1368](../tasks/AR-1368-control-receipt-runtime-source.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1376](../tasks/AR-1376-runtime-live-adapter.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md), [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) |
 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | None |
 | [AR-1368](../tasks/AR-1368-control-receipt-runtime-source.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | None |
 | [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) |
@@ -511,6 +512,7 @@
 | [AR-1920](../tasks/AR-1920.md) | None | None |
 | [AR-1921](../tasks/AR-1921.md) | None | None |
 | [AR-1922](../tasks/AR-1922.md) | None | None |
+| [AR-1923](../tasks/AR-1923.md) | None | None |
 
 ## Complete AR inventory
 
@@ -662,7 +664,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (98)
+### Planned (99)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -672,7 +674,3 @@
 | P0 | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Unclaimed | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
 | P0 | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md): Generate asb-tui CI workflow screenshots | Unclaimed | Produce reproducible standalone TUI screenshots and text equivalents from workflows executed in CI. | Generate privacy-safe asb-tui workflow screenshots from real synthetic CI executions. |
 | P0 | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md): Qualify cross-repository ASB and asb-tui integration | Unclaimed | Integrate and adversarially test the exact ASB and asb-tui revisions together. | Wait for AR-1024, AR-1025, AR-1029 and the complete standalone UI integration AR-1011, then qualify exact install, update, rollback, launch, remove and benchmark-continuity paths across both repositories. |
-| P0 | [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md): Remove the legacy in-tree TUI implementation | Unclaimed | Ensure agent-systems-benchmark contains no TUI renderer or terminal application implementation. | Remove the legacy ASB renderer only after the standalone application and trusted router are complete. |
-| P0 | [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md): Build the standalone TUI landing screen | Unclaimed | Add a state-aware landing screen with primary journeys and bounded recent activity. | Implement the landing screen after the shell, visual system and first-run wizard expose stable typed routes. |
-| P0 | [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md): Add contextual hotkeys and complete action help | Unclaimed | Provide a context-fitted hotkey window, global action search and mechanically complete help. | Add the contextual action registry, search field, fitted hotkey window and complete help coverage after the user-facing screens exist. |
-| P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |

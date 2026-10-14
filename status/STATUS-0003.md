@@ -2956,6 +2956,20 @@
 | Summary | Repair only the bounded handoffctl execution envelope for repeated AR-1900/AR-1901/AR-1912 test-runtime failures where python, pytest, and uv are unavailable. Admit only the reviewed offline interpreter and test-tool visibility required under /srv/data/projects, preserving network denial, repository/state path scopes, and all existing lifecycle gates. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1923 — Admit sandbox test runtime
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create the immutable successor for AR-1922: bind a dedicated state worktree and execution envelope admitting only the reviewed offline interpreter and pytest/uv tool paths under /srv/data/projects. Preserve network denial, product/state path scopes, AR-1922 blocked history, and formal/TLC exclusion. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3925,6 +3939,7 @@ flowchart LR
         AR_1920["AR-1920 - Blocked"]:::status_blocked
         AR_1921["AR-1921 - Done"]:::status_done
         AR_1922["AR-1922 - Blocked"]:::status_blocked
+        AR_1923["AR-1923 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4128,31 +4143,3 @@ flowchart LR
     AR_0307 --> AR_0315
     AR_0307 --> AR_0316
     AR_0307 --> AR_0512
-    AR_0308 --> AR_0311
-    AR_0308 --> AR_0312
-    AR_0308 --> AR_0315
-    AR_0308 --> AR_0316
-    AR_0308 --> AR_0513
-    AR_0308 --> AR_0909
-    AR_0309 --> AR_0311
-    AR_0309 --> AR_0312
-    AR_0309 --> AR_0315
-    AR_0309 --> AR_0316
-    AR_0309 --> AR_0514
-    AR_0309 --> AR_0521
-    AR_0310 --> AR_0311
-    AR_0310 --> AR_0312
-    AR_0310 --> AR_0314
-    AR_0310 --> AR_0318
-    AR_0310 --> AR_0857
-    AR_0310 --> AR_0863
-    AR_0310 --> AR_1325
-    AR_0311 --> AR_0313
-    AR_0311 --> AR_0315
-    AR_0312 --> AR_0313
-    AR_0312 --> AR_0315
-    AR_0312 --> AR_0879
-    AR_0312 --> AR_0891
-    AR_0313 --> AR_0314
-    AR_0313 --> AR_0315
-    AR_0313 --> AR_0804

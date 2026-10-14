@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1923",
+  "issue": {
+    "number": 10054,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10054"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Schema-valid spec and envelope are bound. Positive bounded tests prove the approved offline interpreter and test tools execute from the materialized state worktree. Negative tests reject paths outside /srv/data/projects, unapproved executables, host-path leakage, network/download attempts, and scope escapes. Close only with evidence; otherwise record the precise fail-closed blocker.",
+      "depends_on": [],
+      "id": "AR-1923",
+      "ownership": "ASB handoffctl execution-envelope admission and focused tests only; no product behavior, arbitrary mounts, runtime downloads, gate weakening, or formal/TLC.",
+      "scope": "Create the immutable successor for AR-1922: bind a dedicated state worktree and execution envelope admitting only the reviewed offline interpreter and pytest/uv tool paths under /srv/data/projects. Preserve network denial, product/state path scopes, AR-1922 blocked history, and formal/TLC exclusion.",
+      "short_title": "Admit sandbox test runtime"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
