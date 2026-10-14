@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1920 — Materialize publication worktree](tasks/AR-1920.md) | Create a narrow successor for AR-1919's exact nonexistent .git/worktrees binding. Materialize one safe isolated coordination-state worktree under /srv/data/projects and bind it through handoffctl to the reviewed AR-1878 and AR-1886 exact heads and declared publication paths. Grant only the minimum worktree/git-metadata publication authority needed to verify the binding; reject arbitrary paths, path widening, history rewriting, and all unrelated capabilities. | Implement the bounded scope and record local acceptance evidence. | codex-ar1920-worktree-binding-20261014 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -26,7 +32,6 @@ Never edit this file directly.
 | P1 | [AR-1908 — Admit run-command dependency](tasks/AR-1908.md) | State-only successor admitting exactly tools/run_command.py for the AR-1907 focused replacement test. Preserve AR-1907, AR-1906 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. | - |
 | P1 | [AR-1910 — Admit autonomy-limits dependency](tasks/AR-1910.md) | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. | - |
 | P1 | [AR-1917 — Publish recovery commits](tasks/AR-1917.md) | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. | - |
-| P1 | [AR-1920 — Materialize publication worktree](tasks/AR-1920.md) | Create a narrow successor for AR-1919's exact nonexistent .git/worktrees binding. Materialize one safe isolated coordination-state worktree under /srv/data/projects and bind it through handoffctl to the reviewed AR-1878 and AR-1886 exact heads and declared publication paths. Grant only the minimum worktree/git-metadata publication authority needed to verify the binding; reject arbitrary paths, path widening, history rewriting, and all unrelated capabilities. | Implement the bounded scope and record local acceptance evidence. | - |
 
 ## Blocked
 
