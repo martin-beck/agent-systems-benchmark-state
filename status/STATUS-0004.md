@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-    AR_0002 --> AR_0004
-    AR_0002 --> AR_0005
     AR_0002 --> AR_0830
     AR_0002 --> AR_0834
     AR_0002 --> AR_0895
@@ -2377,3 +2375,4 @@
 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | None |
 | [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) |
 | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) |
+| [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md), [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md), [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md), [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) |
