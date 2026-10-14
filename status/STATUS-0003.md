@@ -2876,11 +2876,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1917-recovery-publication-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. |
@@ -3849,7 +3849,7 @@ flowchart LR
         AR_1914["AR-1914 - Planned"]:::status_planned
         AR_1915["AR-1915 - Blocked"]:::status_blocked
         AR_1916["AR-1916 - Blocked"]:::status_blocked
-        AR_1917["AR-1917 - In progress"]:::status_in_progress
+        AR_1917["AR-1917 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4244,3 +4244,5 @@ flowchart LR
     AR_0801 --> AR_0803
     AR_0801 --> AR_0808
     AR_0801 --> AR_0820
+    AR_0801 --> AR_0840
+    AR_0801 --> AR_0842
