@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1858-coverage-v070",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-14T14:31:13+00:00",
   "depends_on": [],
   "id": "AR-1858",
   "next_action": "AR-1859 is created and committed as the scoped successor for verify.sh TLC_WORK_ROOT validation, depends_on AR-1858, and is intentionally not promoted because handoffctl correctly rejects unfinished dependencies. Preserve AR-1858 evidence and PR145 unmerged until formal failures are repaired or explicitly scoped.",
-  "owner": "",
+  "owner": "asb-policy-formal-cleanup-20261014",
   "plan": "../plans/AR-1858-coverage-v070.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1858.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the v0.7.0 coordinator coverage floor deficit.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "v0.7.0 coverage floor repair",
-  "updated_at": "2026-10-14T14:01:08+00:00",
+  "updated_at": "2026-10-14T14:01:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar1858-coverage-v070"
 }
 ---
@@ -309,3 +309,5 @@ artifact. Do not lower the threshold or merge PR #145.
 
 - 2026-10-14T14:01:08+00:00: Coordinator-authorized UD-0003 metadata normalization; reopen only to
   correct next_action while preserving historical formal evidence and coverage gates.
+
+- 2026-10-14T14:01:13+00:00: Claimed by asb-policy-formal-cleanup-20261014.
