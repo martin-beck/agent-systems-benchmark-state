@@ -2690,6 +2690,20 @@
 | Summary | State-only successor admitting exactly tools/retry_circuit.py for the AR-1902 focused replacement test. Preserve AR-1902 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1904 — Bootstrap publication scope
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a narrow successor for AR-1901&#x27;s worktree and spec-retention failure using only handoffctl-authorized state paths and commands. Retain AR-1901 immutable task, envelope, bindings, and evidence; do not perform out-of-band Git/state edits, broaden paths, or alter product files. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3640,6 +3654,7 @@ flowchart LR
         AR_1901["AR-1901 - In progress"]:::status_in_progress
         AR_1902["AR-1902 - In progress"]:::status_in_progress
         AR_1903["AR-1903 - In progress"]:::status_in_progress
+        AR_1904["AR-1904 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4374,30 +4389,3 @@ flowchart LR
     AR_1100 --> AR_1234
     AR_1100 --> AR_1236
     AR_1100 --> AR_1238
-    AR_1100 --> AR_1328
-    AR_1110 --> AR_1130
-    AR_1120 --> AR_1110
-    AR_1130 --> AR_1140
-    AR_1130 --> AR_1150
-    AR_1140 --> AR_0808
-    AR_1140 --> AR_0823
-    AR_1140 --> AR_1180
-    AR_1150 --> AR_1151
-    AR_1151 --> AR_0808
-    AR_1151 --> AR_1160
-    AR_1151 --> AR_1227
-    AR_1151 --> AR_1310
-    AR_1151 --> AR_1496
-    AR_1160 --> AR_1034
-    AR_1160 --> AR_1170
-    AR_1160 --> AR_1227
-    AR_1170 --> AR_0807
-    AR_1170 --> AR_0809
-    AR_1170 --> AR_0823
-    AR_1170 --> AR_0873
-    AR_1170 --> AR_1011
-    AR_1170 --> AR_1026
-    AR_1170 --> AR_1031
-    AR_1170 --> AR_1032
-    AR_1170 --> AR_1035
-    AR_1170 --> AR_1180
