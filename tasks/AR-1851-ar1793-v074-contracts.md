@@ -5,7 +5,7 @@
   "claim_expires": "2026-10-14T15:50:43+00:00",
   "depends_on": [],
   "id": "AR-1851",
-  "next_action": "Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification.",
+  "next_action": "Obtain fresh independent review and exact-head non-formal required-gate CI at 0d3693a24c; formal/TLC evidence is optional under UD-0003. Merge only when required gates are green, then perform post-merge verification.",
   "owner": "asb-ar1851-v074-contracts-20261014",
   "plan": "../plans/AR-1851-ar1793-v074-contracts.md",
   "priority": "P1",
@@ -40,9 +40,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-14T13:50:43+00:00",
+  "updated_at": "2026-10-14T13:52:34+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -186,3 +186,7 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
 - 2026-10-14T13:48:45+00:00: Reserved retry circuit launch slot; expired_slots_cleaned=0.
 
 - 2026-10-14T13:50:43+00:00: Heartbeat by asb-ar1851-v074-contracts-20261014.
+
+- 2026-10-14T13:52:34+00:00: Policy metadata correction: UD-0003 makes formal/TLC runs optional
+  evidence, never an admission or merge gate; retain exact-head independent review and all
+  non-formal required gates.

@@ -1960,7 +1960,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Align AR-1793 compatibility fixtures with Coordinator v0.7.4. |
-| Next action | Obtain fresh independent review and terminal strict/formal CI at exact head 0d3693a24c; merge only when all required checks are green, then perform post-merge verification. |
+| Next action | Obtain fresh independent review and exact-head non-formal required-gate CI at 0d3693a24c; formal/TLC evidence is optional under UD-0003. Merge only when required gates are green, then perform post-merge verification. |
 
 ### AR-1852 — Role-store v0.7.4 compatibility contracts
 
@@ -4799,5 +4799,3 @@ flowchart LR
     AR_1564 --> AR_1599
     AR_1564 --> AR_1631
     AR_1564 --> AR_1653
-    AR_1567 --> AR_1572
-    AR_1567 --> AR_1634
