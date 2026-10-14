@@ -2764,11 +2764,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1909-bootstrap-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create a narrow successor for the missing direct worktree needed to execute AR-1906. Use only handoffctl-authorized worktree and test paths; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. |
@@ -3827,7 +3827,7 @@ flowchart LR
         AR_1906["AR-1906 - Blocked"]:::status_blocked
         AR_1907["AR-1907 - In progress"]:::status_in_progress
         AR_1908["AR-1908 - In progress"]:::status_in_progress
-        AR_1909["AR-1909 - In progress"]:::status_in_progress
+        AR_1909["AR-1909 - Blocked"]:::status_blocked
         AR_1910["AR-1910 - In progress"]:::status_in_progress
         AR_1911["AR-1911 - Planned"]:::status_planned
         AR_1912["AR-1912 - Planned"]:::status_planned
@@ -4232,3 +4232,4 @@ flowchart LR
     AR_0801 --> AR_0840
     AR_0801 --> AR_0842
     AR_0801 --> AR_0847
+    AR_0801 --> AR_0849
