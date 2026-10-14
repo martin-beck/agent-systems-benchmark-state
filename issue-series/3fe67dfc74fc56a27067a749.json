@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1883",
+  "issue": {
+    "number": 10014,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10014"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Provide an immutable, scope-bound successor envelope that validates product-tree paths against the reviewed product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3 and validates AR-1881 state artifacts only in the coordination-state checkout; preserve AR-1881 and AR-1882 evidence, fail closed on cross-repository or missing paths, and do not widen arbitrary paths. Record exact-head review, CI, merge, and post-merge evidence when available; otherwise record the precise blocker.",
+      "depends_on": [],
+      "id": "AR-1883",
+      "ownership": "ASB cross-repository publication-scope validation for the reviewed terminal-recovery product commit only; preserve AR-1881 and AR-1882 immutable evidence, product commit 3162fe8be2, and all existing lifecycle and gate boundaries.",
+      "scope": "Create a fresh successor task and immutable execution envelope for cross-repository publication-scope validation of the already reviewed terminal-recovery product commit 3162fe8be2. Separate product-tree paths from state-checkout artifacts using explicit repository roots and bounded allowlists; retain fail-closed missing-path, traversal, and arbitrary-path rejection; do not rewrite prior envelopes, alter product code, or weaken gates.",
+      "short_title": "Validate cross-repository publication scope"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

@@ -2396,6 +2396,20 @@
 | Summary | Create a fresh successor task and immutable execution envelope for publication of the already reviewed terminal-recovery product diff at commit 3162fe8be2. Add only explicit git_metadata/publication capability and the exact reviewed product scope; retain AR-1881 history and do not alter unrelated paths, gates, or product code. |
 | Next action | Blocked: publication preflight PATH_SCOPE_UNAVAILABLE because bound immutable AR-1882-e1 read scope includes missing product-tree path envelopes/AR-1881-e1.json; preserve AR-1881 and do not widen or rewrite envelope. Exact product commit remains 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3. |
 
+### AR-1883 — Validate cross-repository publication scope
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a fresh successor task and immutable execution envelope for cross-repository publication-scope validation of the already reviewed terminal-recovery product commit 3162fe8be2. Separate product-tree paths from state-checkout artifacts using explicit repository roots and bounded allowlists; retain fail-closed missing-path, traversal, and arbitrary-path rejection; do not rewrite prior envelopes, alter product code, or weaken gates. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3322,6 +3336,7 @@ flowchart LR
         AR_1880["AR-1880 - Blocked"]:::status_blocked
         AR_1881["AR-1881 - In progress"]:::status_in_progress
         AR_1882["AR-1882 - Blocked"]:::status_blocked
+        AR_1883["AR-1883 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4677,37 +4692,3 @@ flowchart LR
     AR_1472 --> AR_1476
     AR_1472 --> AR_1477
     AR_1472 --> AR_1480
-    AR_1472 --> AR_1481
-    AR_1472 --> AR_1482
-    AR_1472 --> AR_1483
-    AR_1472 --> AR_1484
-    AR_1472 --> AR_1485
-    AR_1473 --> AR_1480
-    AR_1473 --> AR_1481
-    AR_1473 --> AR_1482
-    AR_1473 --> AR_1483
-    AR_1473 --> AR_1484
-    AR_1473 --> AR_1485
-    AR_1473 --> AR_1502
-    AR_1473 --> AR_1503
-    AR_1473 --> AR_1504
-    AR_1473 --> AR_1505
-    AR_1473 --> AR_1506
-    AR_1473 --> AR_1507
-    AR_1473 --> AR_1508
-    AR_1473 --> AR_1509
-    AR_1474 --> AR_1502
-    AR_1474 --> AR_1503
-    AR_1474 --> AR_1504
-    AR_1474 --> AR_1505
-    AR_1474 --> AR_1506
-    AR_1474 --> AR_1507
-    AR_1474 --> AR_1508
-    AR_1474 --> AR_1509
-    AR_1475 --> AR_1478
-    AR_1476 --> AR_1478
-    AR_1480 --> AR_1481
-    AR_1480 --> AR_1482
-    AR_1480 --> AR_1483
-    AR_1480 --> AR_1484
-    AR_1480 --> AR_1485

@@ -1,5 +1,39 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1472 --> AR_1481
+    AR_1472 --> AR_1482
+    AR_1472 --> AR_1483
+    AR_1472 --> AR_1484
+    AR_1472 --> AR_1485
+    AR_1473 --> AR_1480
+    AR_1473 --> AR_1481
+    AR_1473 --> AR_1482
+    AR_1473 --> AR_1483
+    AR_1473 --> AR_1484
+    AR_1473 --> AR_1485
+    AR_1473 --> AR_1502
+    AR_1473 --> AR_1503
+    AR_1473 --> AR_1504
+    AR_1473 --> AR_1505
+    AR_1473 --> AR_1506
+    AR_1473 --> AR_1507
+    AR_1473 --> AR_1508
+    AR_1473 --> AR_1509
+    AR_1474 --> AR_1502
+    AR_1474 --> AR_1503
+    AR_1474 --> AR_1504
+    AR_1474 --> AR_1505
+    AR_1474 --> AR_1506
+    AR_1474 --> AR_1507
+    AR_1474 --> AR_1508
+    AR_1474 --> AR_1509
+    AR_1475 --> AR_1478
+    AR_1476 --> AR_1478
+    AR_1480 --> AR_1481
+    AR_1480 --> AR_1482
+    AR_1480 --> AR_1483
+    AR_1480 --> AR_1484
+    AR_1480 --> AR_1485
     AR_1480 --> AR_1486
     AR_1480 --> AR_1502
     AR_1480 --> AR_1503
@@ -1077,7 +1111,3 @@
 | [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md) | [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md) | [AR-1435](../tasks/AR-1435-local-mock-cli-wiring.md) |
 | [AR-1435](../tasks/AR-1435-local-mock-cli-wiring.md) | [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md) | [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md) |
 | [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1435](../tasks/AR-1435-local-mock-cli-wiring.md) | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) |
-| [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md) | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) |
-| [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | None |
-| [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md) | None |
-| [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) | [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md) | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md) |
