@@ -2186,6 +2186,20 @@
 | Summary | Add a fail-closed ASB downstream handoffctl overlay path to recover expired bound execution reservations from pre-identity claims without direct state edits or weakened reservation structural checks. |
 | Next action | PR #161 published at exact source head 7281ca87f5 plus signed overlay commit 5f7f247a39; obtain independent exact-head review and required CI before merge. Full unittest remains environment-blocked by bounded filesystem/jbd2 hang. |
 
+### AR-1868 — Synchronize task schema vocabulary
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Update only schema/task-schema.json and generated validation fixtures so accepted modern task-record metadata is validated by ASB while unknown fields remain rejected; preserve ASB-specific lifecycle constraints. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3097,6 +3111,7 @@ flowchart LR
         AR_1865["AR-1865 - Blocked"]:::status_blocked
         AR_1866["AR-1866 - Done"]:::status_done
         AR_1867["AR-1867 - In progress"]:::status_in_progress
+        AR_1868["AR-1868 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4953,28 +4968,3 @@ flowchart LR
     AR_1712 --> AR_1717
     AR_1712 --> AR_1724
     AR_1715 --> AR_1723
-    AR_1719 --> AR_1721
-    AR_1719 --> AR_1752
-    AR_1723 --> AR_1724
-    AR_1723 --> AR_1725
-    AR_1723 --> AR_1754
-    AR_1724 --> AR_1725
-    AR_1724 --> AR_1754
-    AR_1726 --> AR_1734
-    AR_1726 --> AR_1737
-    AR_1726 --> AR_1738
-    AR_1727 --> AR_1734
-    AR_1728 --> AR_1729
-    AR_1728 --> AR_1730
-    AR_1729 --> AR_1731
-    AR_1729 --> AR_1797
-    AR_1730 --> AR_1731
-    AR_1731 --> AR_1732
-    AR_1731 --> AR_1797
-    AR_1732 --> AR_1733
-    AR_1732 --> AR_1797
-    AR_1733 --> AR_1736
-    AR_1733 --> AR_1754
-    AR_1733 --> AR_1785
-    AR_1733 --> AR_1786
-    AR_1733 --> AR_1787

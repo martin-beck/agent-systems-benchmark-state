@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1868",
+  "issue": {
+    "number": 10000,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10000"
+  },
+  "issue_digest": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "members": [
+    {
+      "acceptance": "Schema and generated validation gates pass with positive modern vocabulary and hostile unknown/malformed fixtures; signed reviewed PR, exact-head CI, merge, and post-merge verification pass.",
+      "depends_on": [],
+      "id": "AR-1868",
+      "ownership": "ASB state schema/task-schema.json and schema validation fixtures/tests only; no product/runtime or direct task-state edits.",
+      "scope": "Update only schema/task-schema.json and generated validation fixtures so accepted modern task-record metadata is validated by ASB while unknown fields remain rejected; preserve ASB-specific lifecycle constraints.",
+      "short_title": "Synchronize task schema vocabulary"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

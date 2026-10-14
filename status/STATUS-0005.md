@@ -353,6 +353,7 @@
 | [AR-1865](../tasks/AR-1865.md) | None | None |
 | [AR-1866](../tasks/AR-1866.md) | None | None |
 | [AR-1867](../tasks/AR-1867.md) | None | None |
+| [AR-1868](../tasks/AR-1868.md) | None | None |
 
 ## Complete AR inventory
 
@@ -470,7 +471,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (95)
+### Planned (96)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -566,6 +567,7 @@
 | P1 | [AR-1831](../tasks/AR-1831-explicit-config-cli-tui-docs.md): Align CLI, TUI handoff, and documentation to explicit config workflow | Unclaimed | Make every CLI, TUI handoff, help page, completion, and example teach the explicit setup-output and plan-config workflow. | Align CLI help, human output, completions, TUI handoff, examples, and migration documentation to the explicit setup-config route. |
 | P1 | [AR-1848](../tasks/AR-1848-graph-extraction-qualification.md): Qualify ASB dataflow graph extraction end to end | Unclaimed | Qualify reproducible complete ASB dataflow extraction, DOT/SVG generation, privacy, and paired documentation. | Promote after AR-1847; run clean-checkout extraction and cross-check graph artifacts against all generated registries and CLI options. |
 | P1 | [AR-1854](../tasks/AR-1854-v074-compatibility-integration.md): v0.7.4 compatibility integration qualification | Unclaimed | Integrate and qualify the Coordinator v0.7.4 compatibility repairs. | Promote only after AR-1851, AR-1852 and AR-1853 merge; combine their exact reviewed heads and run the strict/formal integration gates. |
+| P1 | [AR-1868](../tasks/AR-1868.md): Synchronize task schema vocabulary | Unclaimed | Update only schema/task-schema.json and generated validation fixtures so accepted modern task-record metadata is validated by ASB while unknown fields remain rejected; preserve ASB-specific lifecycle constraints. | Implement the bounded scope and record local acceptance evidence. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
@@ -654,4 +656,3 @@
 | P0 | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md): Approved loopback-only sandbox transport | Unclaimed | Provide an authenticated loopback-only sandbox transport for strict replay services. | Typed LoopbackOnly policy slice 143213c passes full asb-runtime package tests; actual attested loopback namespace/listener binding remains required. Implement backend capability without weakening Deny, then add native child-service/provider-egress tests and full workspace gates. |
 | P0 | [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md): Runtime-owned loopback namespace capability | Unclaimed | Provide an approved runtime-owned loopback-only sandbox namespace capability. | Capability audit complete: pinned tools exist but unshare -n fails Operation not permitted. Do not add ambient privileged setup or host sharing. Require approved runtime-owned loopback namespace/helper capability, then implement native service/egress tests. |
 | P0 | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md): Runtime-owned loopback sidecar capability | Unclaimed | Provide a runtime-owned private-namespace loopback sidecar capability. | Implement the versioned runtime-issued sidecar handoff: same-private-namespace sidecar and adapter, authenticated route/generation/command metadata, listener readiness, bounded forwarding, teardown, and non-interference tests; preserve NetworkPolicy::Deny. |
-| P0 | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md): Strict-replay child launch bridge | Unclaimed | Map the authenticated relay into the strict-replay child launch contract. | Extend the reviewed strict-replay launch contract to map ReplayRelayHandoff into the child-visible HTTP loopback endpoint, with authenticated route/generation metadata and bounded lifecycle ownership. |
