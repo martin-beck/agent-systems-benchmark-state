@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar1852-role-store-v074-contracts",
   "checkpoint_commit": "98ba8073d5ee754a40c312e291e478cdff105fc6",
-  "claim_expires": "2026-10-14T15:46:58+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "execution_abandonments": [
     {
@@ -90,7 +90,7 @@
   },
   "id": "AR-1852",
   "next_action": "Blocked: direct exact-head role gate passes 10/10 using locked external v078 DCO venv; approved handoffctl sandbox cannot access /bin/true or external venv (bwrap execvp ENOENT), and direct full 2132-test gate has 8 baseline failures and 6 environment errors unrelated to role tests. Preserve PR148 7b46c6b076 and release owner.",
-  "owner": "asb-ar1852-role-store-20261014",
+  "owner": "",
   "plan": "../plans/AR-1852-role-store-v074-contracts.md",
   "priority": "P1",
   "retry_circuit": {
@@ -160,11 +160,11 @@
   },
   "spec_ref": "specs/AR-1852.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Align role-store authorization tests with Coordinator v0.7.4.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Role-store v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-14T13:47:26+00:00",
+  "updated_at": "2026-10-14T13:48:06+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1852"
 }
 ---
@@ -615,3 +615,13 @@ authorization contract failures exposed by exact Coordinator v0.7.4 adoption.
 
 - 2026-10-14T13:47:26+00:00: Recorded command exit 1; command argv SHA-256
   31d792407ba7531a7c453d1f6ae7572fbc6a6726c9e605213313de6a4fc39e59.
+
+- 2026-10-14T13:48:06+00:00: Blocked after bounded qualification: exact reviewed product head
+  7b46c6b076 remains the valid non-vendor role repair, and prior locked external v078 evidence
+  recorded tests/test_roles.py 10/10. Current authorized handoffctl focused run was admitted but
+  sandbox mounted the product as /worktree without examples/roles/role-registry.json, yielding 9
+  errors and 1 failure before meaningful assertions. Full gate remains non-green on unrelated
+  baseline/environment failures; live doctor also hit coordinator LOCK_TIMEOUT after 10s. Preserve
+  concurrent dirty worktree edits, PR #148 head 7b46c6b076, strict authorization gates, and release
+  owner. Next action: repair approved runner/worktree and coordinator lock environment, then rerun
+  exact-head focused/full gates and independent review/CI; do not weaken tests or edit vendor files.
