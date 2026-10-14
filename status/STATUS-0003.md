@@ -2512,11 +2512,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1891-recovery-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Add state-only recovery reconciliation for expired AR-1878 terminal-result evidence. Require exact target/revision/reservation/result/envelope, expiry, terminal EXIT, absent worker/claim_process, and operator evidence; immutable audit then existing recovery. Reject arbitrary, active/unexpired, mismatched, malformed/missing, cross-root, force-clear, and publication inputs. Preserve AR-1878 through AR-1890; no product/vendor/formal/TLC state. |
@@ -3792,7 +3792,7 @@ flowchart LR
         AR_1888["AR-1888 - In progress"]:::status_in_progress
         AR_1889["AR-1889 - In progress"]:::status_in_progress
         AR_1890["AR-1890 - Blocked"]:::status_blocked
-        AR_1891["AR-1891 - Open"]:::status_open
+        AR_1891["AR-1891 - In progress"]:::status_in_progress
         AR_1892["AR-1892 - In progress"]:::status_in_progress
         AR_1893["AR-1893 - In progress"]:::status_in_progress
         AR_1894["AR-1894 - In progress"]:::status_in_progress
@@ -4240,5 +4240,3 @@ flowchart LR
     AR_0804 --> AR_0820
     AR_0804 --> AR_0821
     AR_0804 --> AR_0870
-    AR_0804 --> AR_1010
-    AR_0804 --> AR_1014
