@@ -1,0 +1,11 @@
+AR-1866 documentation review receipt
+
+Reviewed commit: 35e8c37eb1c086461aa72ed592c42a7a792f369e
+Reviewed paths: README.md, SETUP.md, docs/agent-workflow-coordinator.md
+Review result: pass
+
+The three stale Coordinator v0.3.5 references are corrected to v0.7.8, matching
+coordinator.vendor.json. No product runtime, tests, gates, or AR-1865 files are
+changed. The exact-main origin contains the reviewed commit and all three
+corrected references. Vendor verification has a pre-existing digest mismatch in
+schema/task-record.schema.json and is retained as a limitation.
