@@ -2872,6 +2872,20 @@
 | Summary | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in ASB tasks AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes after AR-1878 recovery; preserve every other task field and all historical records, and do not run formal or TLC checks. |
 | Next action | Record exact signed commit and post-merge doctor evidence; broader vendor manifest test remains outside ledger-only scope. |
 
+### AR-1917 — Publish recovery commits
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3835,6 +3849,7 @@ flowchart LR
         AR_1914["AR-1914 - Planned"]:::status_planned
         AR_1915["AR-1915 - Blocked"]:::status_blocked
         AR_1916["AR-1916 - Blocked"]:::status_blocked
+        AR_1917["AR-1917 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4207,37 +4222,3 @@ flowchart LR
     AR_0601 --> AR_1015
     AR_0602 --> AR_1015
     AR_0603 --> AR_0601
-    AR_0604 --> AR_0602
-    AR_0604 --> AR_1015
-    AR_0701 --> AR_0317
-    AR_0701 --> AR_0702
-    AR_0701 --> AR_0703
-    AR_0701 --> AR_0704
-    AR_0701 --> AR_0707
-    AR_0701 --> AR_0820
-    AR_0701 --> AR_0848
-    AR_0701 --> AR_1007
-    AR_0702 --> AR_0807
-    AR_0702 --> AR_0813
-    AR_0702 --> AR_0816
-    AR_0702 --> AR_0903
-    AR_0702 --> AR_0907
-    AR_0702 --> AR_1006
-    AR_0704 --> AR_0705
-    AR_0704 --> AR_0706
-    AR_0801 --> AR_0802
-    AR_0801 --> AR_0803
-    AR_0801 --> AR_0808
-    AR_0801 --> AR_0820
-    AR_0801 --> AR_0840
-    AR_0801 --> AR_0842
-    AR_0801 --> AR_0847
-    AR_0801 --> AR_0849
-    AR_0801 --> AR_0869
-    AR_0802 --> AR_0808
-    AR_0802 --> AR_0809
-    AR_0802 --> AR_0872
-    AR_0802 --> AR_0903
-    AR_0803 --> AR_0804
-    AR_0803 --> AR_0805
-    AR_0803 --> AR_0813
