@@ -2898,7 +2898,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair PR #635&#x27;s hosted Policy, coverage, and supply-chain failure by updating only the Rust dependency manifests and lockfile needed to raise rustls from 0.23.45 to at least 0.23.46 and clear RUSTSEC-2026-0347, RUSTSEC-2026-0348, and RUSTSEC-2026-0349. Preserve advisory gates, offline and locked resolution, unrelated source and state history, and the explicit exclusion of TLC/formal checks. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Commit signed DCO dependency diff, publish PR, run exact-head hosted CI and merge only when required checks are green. |
 
 
 ## Dependency graph
@@ -4219,6 +4219,3 @@ flowchart LR
     AR_0505 --> AR_1231
     AR_0505 --> AR_1232
     AR_0506 --> AR_0515
-    AR_0507 --> AR_0515
-    AR_0508 --> AR_0515
-    AR_0508 --> AR_0850
