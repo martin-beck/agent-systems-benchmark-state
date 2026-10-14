@@ -2204,11 +2204,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | superseded |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-asb-ar1869-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Refresh only the stale evidence-ledger candidate digests in AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes; preserve all predicates, evidence, and fail-closed validation. |
@@ -3196,7 +3196,7 @@ flowchart LR
         AR_1866["AR-1866 - Done"]:::status_done
         AR_1867["AR-1867 - Open"]:::status_open
         AR_1868["AR-1868 - Done"]:::status_done
-        AR_1869["AR-1869 - In progress"]:::status_in_progress
+        AR_1869["AR-1869 - Superseded"]:::status_superseded
         AR_1870["AR-1870 - Done"]:::status_done
         AR_1871["AR-1871 - Done"]:::status_done
         AR_1872["AR-1872 - Done"]:::status_done
