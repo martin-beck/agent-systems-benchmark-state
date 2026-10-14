@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1919",
+  "issue": {
+    "number": 10050,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10050"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Through handoffctl, create and promote a schema-valid successor with an immutable envelope whose only new authority is the minimum git_metadata/publication capability for the exact AR-1878 and AR-1886 reviewed heads and paths. Bind the envelope, verify preflight, push the exact signed/DCO history, and record exact-head hosted publication or the precise fail-closed blocker; do not mutate prior tasks or weaken any gate.",
+      "depends_on": [],
+      "id": "AR-1919",
+      "ownership": "ASB coordination-state publication capability repair for AR-1878 and AR-1886 only; preserve all prior task, spec, envelope, checkpoint, worker, review, CI, and evidence history. No product behavior, vendor, formal/TLC, network/runtime, or unrelated state changes.",
+      "scope": "Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths.",
+      "short_title": "Repair git publication"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

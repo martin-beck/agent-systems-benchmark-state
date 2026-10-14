@@ -2900,6 +2900,20 @@
 | Summary | Repair PR #635&#x27;s hosted Policy, coverage, and supply-chain failure by updating only the Rust dependency manifests and lockfile needed to raise rustls from 0.23.45 to at least 0.23.46 and clear RUSTSEC-2026-0347, RUSTSEC-2026-0348, and RUSTSEC-2026-0349. Preserve advisory gates, offline and locked resolution, unrelated source and state history, and the explicit exclusion of TLC/formal checks. |
 | Next action | Commit signed DCO dependency diff, publish PR, run exact-head hosted CI and merge only when required checks are green. |
 
+### AR-1919 — Repair git publication
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3865,6 +3879,7 @@ flowchart LR
         AR_1916["AR-1916 - Blocked"]:::status_blocked
         AR_1917["AR-1917 - Open"]:::status_open
         AR_1918["AR-1918 - Done"]:::status_done
+        AR_1919["AR-1919 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4200,34 +4215,3 @@ flowchart LR
     AR_0504 --> AR_0506
     AR_0504 --> AR_0507
     AR_0504 --> AR_0508
-    AR_0504 --> AR_0509
-    AR_0504 --> AR_0510
-    AR_0504 --> AR_0511
-    AR_0504 --> AR_0512
-    AR_0504 --> AR_0513
-    AR_0504 --> AR_0514
-    AR_0504 --> AR_0516
-    AR_0504 --> AR_0517
-    AR_0504 --> AR_0879
-    AR_0505 --> AR_0315
-    AR_0505 --> AR_0802
-    AR_0505 --> AR_0808
-    AR_0505 --> AR_0871
-    AR_0505 --> AR_0879
-    AR_0505 --> AR_0903
-    AR_0505 --> AR_1151
-    AR_0505 --> AR_1231
-    AR_0505 --> AR_1232
-    AR_0506 --> AR_0515
-    AR_0507 --> AR_0515
-    AR_0508 --> AR_0515
-    AR_0508 --> AR_0850
-    AR_0509 --> AR_0515
-    AR_0510 --> AR_0515
-    AR_0511 --> AR_0515
-    AR_0512 --> AR_0515
-    AR_0513 --> AR_0515
-    AR_0514 --> AR_0515
-    AR_0517 --> AR_0518
-    AR_0517 --> AR_0520
-    AR_0518 --> AR_0519
