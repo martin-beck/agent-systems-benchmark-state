@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1773-universal-command-step-instrumentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-10-14T15:55:41+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1769",
     "AR-1772"
@@ -93,7 +93,7 @@
   "observed_branch": "feature/ar-1773-universal-command-step-instrumentation",
   "observed_dirty": 0,
   "observed_head": "f78a1006202d6fb62df4aa3d5efd0a42381b713c",
-  "owner": "asb-ar1773-instrumentation-20261014",
+  "owner": "",
   "plan": "../plans/AR-1773-universal-command-step-instrumentation.md",
   "priority": "P0",
   "schema_version": 1,
@@ -107,11 +107,11 @@
   },
   "spec_ref": "specs/AR-1773.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Route every eligible public ASB command step through the shared status/progress reporter with real work updates.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Universal command step instrumentation",
-  "updated_at": "2026-10-14T13:56:58+00:00",
+  "updated_at": "2026-10-14T13:57:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1773-universal-command-step-instrumentation"
 }
 ---
@@ -513,3 +513,11 @@ non-TTY compatibility.
   passes 437/437 plus integration/doc tests using /tmp/ar1773-target. No product source, gate,
   privacy, or formal/TLC changes; exact handoffctl qualification remains blocked pending authorized
   toolchain/compiler/linker/source/identity mounts.
+
+- 2026-10-14T13:57:31+00:00: Blocked after fresh authorized probes: Bubblewrap runner root cannot
+  resolve cargo (bwrap: execvp cargo: No such file or directory) for cargo --version and exact
+  focused cargo test before execution. Host pinned Rust 1.93.0 supplemental test passes 437/437 in
+  the isolated AR worktree with /tmp target, but does not qualify the required handoffctl boundary.
+  No approved toolchain/compiler/linker/source/identity mounts are available to repair through this
+  envelope; no product source or gate weakening. UD-0003 formal/TLC remains optional and was not
+  run.
