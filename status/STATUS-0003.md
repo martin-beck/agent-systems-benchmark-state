@@ -2386,11 +2386,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1875-envelope-repair-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create a fresh successor task and immutable execution envelope for publication of the already reviewed terminal-recovery product diff at commit 3162fe8be2. Add only explicit git_metadata/publication capability and the exact reviewed product scope; retain AR-1881 history and do not alter unrelated paths, gates, or product code. |
@@ -3321,7 +3321,7 @@ flowchart LR
         AR_1879["AR-1879 - Blocked"]:::status_blocked
         AR_1880["AR-1880 - Blocked"]:::status_blocked
         AR_1881["AR-1881 - In progress"]:::status_in_progress
-        AR_1882["AR-1882 - Open"]:::status_open
+        AR_1882["AR-1882 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4719,5 +4719,3 @@ flowchart LR
     AR_1480 --> AR_1506
     AR_1480 --> AR_1507
     AR_1480 --> AR_1508
-    AR_1480 --> AR_1509
-    AR_1484 --> AR_1485
