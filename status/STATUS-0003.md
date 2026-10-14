@@ -2648,6 +2648,20 @@
 | Summary | State-only successor admitting exactly tools/execution_envelope.py for the AR-1899 focused replacement test. Preserve AR-1899 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1901 — Repair terminal publication scope
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a fresh successor task and immutable execution envelope correcting AR-1882&#x27;s missing cross-repository scope admission. Do not require envelopes/AR-1881-e1.json in product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3; resolve product paths only in the reviewed product checkout and state paths only in the coordination-state checkout; do not rewrite prior envelopes or widen arbitrary paths. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3595,6 +3609,7 @@ flowchart LR
     subgraph series_19["19 - Additional work"]
         direction TB
         AR_1900["AR-1900 - In progress"]:::status_in_progress
+        AR_1901["AR-1901 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4412,36 +4427,3 @@ flowchart LR
     AR_1237 --> AR_1261
     AR_1237 --> AR_1262
     AR_1237 --> AR_1265
-    AR_1237 --> AR_1266
-    AR_1237 --> AR_1267
-    AR_1237 --> AR_1268
-    AR_1237 --> AR_1269
-    AR_1237 --> AR_1270
-    AR_1237 --> AR_1271
-    AR_1237 --> AR_1272
-    AR_1237 --> AR_1273
-    AR_1237 --> AR_1274
-    AR_1237 --> AR_1275
-    AR_1237 --> AR_1276
-    AR_1237 --> AR_1277
-    AR_1237 --> AR_1278
-    AR_1237 --> AR_1279
-    AR_1237 --> AR_1280
-    AR_1237 --> AR_1281
-    AR_1237 --> AR_1282
-    AR_1237 --> AR_1284
-    AR_1237 --> AR_1285
-    AR_1237 --> AR_1286
-    AR_1238 --> AR_1236
-    AR_1238 --> AR_1240
-    AR_1238 --> AR_1260
-    AR_1238 --> AR_1261
-    AR_1238 --> AR_1262
-    AR_1238 --> AR_1263
-    AR_1238 --> AR_1265
-    AR_1238 --> AR_1266
-    AR_1238 --> AR_1267
-    AR_1238 --> AR_1268
-    AR_1238 --> AR_1269
-    AR_1238 --> AR_1270
-    AR_1238 --> AR_1271

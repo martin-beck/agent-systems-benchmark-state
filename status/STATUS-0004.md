@@ -1,5 +1,38 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1237 --> AR_1266
+    AR_1237 --> AR_1267
+    AR_1237 --> AR_1268
+    AR_1237 --> AR_1269
+    AR_1237 --> AR_1270
+    AR_1237 --> AR_1271
+    AR_1237 --> AR_1272
+    AR_1237 --> AR_1273
+    AR_1237 --> AR_1274
+    AR_1237 --> AR_1275
+    AR_1237 --> AR_1276
+    AR_1237 --> AR_1277
+    AR_1237 --> AR_1278
+    AR_1237 --> AR_1279
+    AR_1237 --> AR_1280
+    AR_1237 --> AR_1281
+    AR_1237 --> AR_1282
+    AR_1237 --> AR_1284
+    AR_1237 --> AR_1285
+    AR_1237 --> AR_1286
+    AR_1238 --> AR_1236
+    AR_1238 --> AR_1240
+    AR_1238 --> AR_1260
+    AR_1238 --> AR_1261
+    AR_1238 --> AR_1262
+    AR_1238 --> AR_1263
+    AR_1238 --> AR_1265
+    AR_1238 --> AR_1266
+    AR_1238 --> AR_1267
+    AR_1238 --> AR_1268
+    AR_1238 --> AR_1269
+    AR_1238 --> AR_1270
+    AR_1238 --> AR_1271
     AR_1238 --> AR_1272
     AR_1238 --> AR_1273
     AR_1238 --> AR_1274
@@ -1578,6 +1611,3 @@
 | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md), [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) |
 | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) |
 | [AR-1396](../tasks/AR-1396-literature-workload-selection.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) |
-| [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md) |
-| [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) |
-| [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) |

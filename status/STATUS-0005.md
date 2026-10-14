@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md) |
+| [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) |
+| [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) |
 | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) |
 | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
 | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1403](../tasks/AR-1403-literature-external-qualification.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1410](../tasks/AR-1410-literature-selector-completeness.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
@@ -456,6 +459,7 @@
 | [AR-1898](../tasks/AR-1898.md) | None | None |
 | [AR-1899](../tasks/AR-1899.md) | None | None |
 | [AR-1900](../tasks/AR-1900.md) | None | None |
+| [AR-1901](../tasks/AR-1901.md) | None | None |
 
 ## Complete AR inventory
 
@@ -593,7 +597,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (96)
+### Planned (97)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -666,5 +670,3 @@
 | P1 | [AR-0866](../tasks/AR-0866-workbuddy-replay.md): Qualify strict WorkBuddy replay | Unclaimed | Qualify strict WorkBuddy replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
 | P1 | [AR-0867](../tasks/AR-0867-workbuddy-parity.md): Add WorkBuddy provider parity and support matrix evidence | Unclaimed | Add WorkBuddy provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified WorkBuddy combinations under a serialized shared-path fence. |
 | P1 | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md): Independently qualify and document WorkBuddy support | Unclaimed | Independently qualify and document WorkBuddy support. | Run independent exact-tree qualification with native x86_64 and required pinned QEMU AArch64 portability gates; document native ARM64 as optional future evidence. |
-| P1 | [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md): Automate workflow documentation refresh | Unclaimed | Automatically refresh or reject stale workflow documentation and CI captures when essential user-visible behavior changes. | Add essential-change detection, deterministic regeneration, and reviewed update automation for workflows and captures. |
-| P1 | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md): Compare LLM test and inference evidence modes | Unclaimed | Quantify what each LLM execution mode proves without pooling unlike evidence or hiding harness saturation. | Execute balanced synthetic, strict replay, local inference, and remote live comparisons and publish bounded claims and capacity evidence. |
