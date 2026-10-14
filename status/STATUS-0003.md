@@ -3030,11 +3030,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1929-evidence-correction-20261015 |
 | Parent | None |
 | Children | None |
 | Summary | Create a narrow successor for the blocked AR-1928 digest repair. Reproduce the bounded AR-1926 runtime/scope checks, write only a privacy-safe successor evidence artifact, and use v0.7.13 repair-predicate-ledger with exact revision, predicate, evidence class, reference, and digest if its done-task contract admits the correction. Keep AR-1926 and AR-1928 historical rows immutable except for the explicitly audited appended correction row; otherwise fail closed with exact evidence. |
@@ -4014,7 +4014,7 @@ flowchart LR
         AR_1925["AR-1925 - Blocked"]:::status_blocked
         AR_1926["AR-1926 - Done"]:::status_done
         AR_1928["AR-1928 - Blocked"]:::status_blocked
-        AR_1929["AR-1929 - Open"]:::status_open
+        AR_1929["AR-1929 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4054,5 +4054,3 @@ flowchart LR
     AR_0101 --> AR_0303
     AR_0101 --> AR_0304
     AR_0101 --> AR_0305
-    AR_0101 --> AR_0306
-    AR_0101 --> AR_0307

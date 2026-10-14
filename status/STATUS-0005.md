@@ -530,13 +530,14 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | codex-ar1919-git-publication-20261014 | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1929](../tasks/AR-1929.md): Correct AR-1926 evidence ledger | codex-ar1929-evidence-correction-20261015 | Create a narrow successor for the blocked AR-1928 digest repair. Reproduce the bounded AR-1926 runtime/scope checks, write only a privacy-safe successor evidence artifact, and use v0.7.13 repair-predicate-ledger with exact revision, predicate, evidence class, reference, and digest if its done-task contract admits the correction. Keep AR-1926 and AR-1928 historical rows immutable except for the explicitly audited appended correction row; otherwise fail closed with exact evidence. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (16)
+### Open (15)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -555,7 +556,6 @@
 | P1 | [AR-1908](../tasks/AR-1908.md): Admit run-command dependency | Unclaimed | State-only successor admitting exactly tools/run_command.py for the AR-1907 focused replacement test. Preserve AR-1907, AR-1906 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | Unclaimed | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1929](../tasks/AR-1929.md): Correct AR-1926 evidence ledger | Unclaimed | Create a narrow successor for the blocked AR-1928 digest repair. Reproduce the bounded AR-1926 runtime/scope checks, write only a privacy-safe successor evidence artifact, and use v0.7.13 repair-predicate-ledger with exact revision, predicate, evidence class, reference, and digest if its done-task contract admits the correction. Keep AR-1926 and AR-1928 historical rows immutable except for the explicitly audited appended correction row; otherwise fail closed with exact evidence. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (120)
 
