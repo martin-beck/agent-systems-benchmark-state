@@ -1,5 +1,9 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
+| [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
+| [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
+| [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) |
 | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1358](../tasks/AR-1358-runtime-enrollment-cli-dispatch.md), [AR-1359](../tasks/AR-1359-runtime-control-bridge.md), [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md), [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md), [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md), [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md) |
 | [AR-1358](../tasks/AR-1358-runtime-enrollment-cli-dispatch.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | None |
 | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md), [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md), [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md) |
@@ -527,6 +531,7 @@
 | [AR-1926](../tasks/AR-1926.md) | None | None |
 | [AR-1928](../tasks/AR-1928.md) | None | None |
 | [AR-1929](../tasks/AR-1929.md) | None | None |
+| [AR-1930](../tasks/AR-1930.md) | None | None |
 
 ## Complete AR inventory
 
@@ -672,4 +677,3 @@
 | P1 | [AR-1909](../tasks/AR-1909.md): Bootstrap retention worktree | Unclaimed | Create a narrow successor for the missing direct worktree needed to execute AR-1906. Use only handoffctl-authorized worktree and test paths; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1915](../tasks/AR-1915.md): Adopt coordinator privacy fix | Unclaimed | Adopt upstream Agent Workflow Coordinator merge a4defa3880b4f371085b0bfd4eef127489c1eab7 into ASB state through the documented clean-source sync-development path. Change only vendored Coordinator files and generated integrity evidence; preserve AR-1904, AR-1906, AR-1909, AR-1912 artifacts and all prior history. No product files, arbitrary paths, network-dependent runtime behavior, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1916](../tasks/AR-1916.md): Refresh stale ledger digests | Unclaimed | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in ASB tasks AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes after AR-1878 recovery; preserve every other task field and all historical records, and do not run formal or TLC checks. | Record exact signed commit and post-merge doctor evidence; broader vendor manifest test remains outside ledger-only scope. |
-| P1 | [AR-1920](../tasks/AR-1920.md): Materialize publication worktree | Unclaimed | Create a narrow successor for AR-1919&#x27;s exact nonexistent .git/worktrees binding. Materialize one safe isolated coordination-state worktree under /srv/data/projects and bind it through handoffctl to the reviewed AR-1878 and AR-1886 exact heads and declared publication paths. Grant only the minimum worktree/git-metadata publication authority needed to verify the binding; reject arbitrary paths, path widening, history rewriting, and all unrelated capabilities. | Implement the bounded scope and record local acceptance evidence. |

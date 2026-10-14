@@ -1,5 +1,37 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_0002 --> AR_0830
+    AR_0002 --> AR_0834
+    AR_0002 --> AR_0895
+    AR_0002 --> AR_0903
+    AR_0003 --> AR_0830
+    AR_0003 --> AR_0831
+    AR_0003 --> AR_0845
+    AR_0003 --> AR_0855
+    AR_0003 --> AR_0877
+    AR_0003 --> AR_0878
+    AR_0003 --> AR_0895
+    AR_0003 --> AR_0897
+    AR_0003 --> AR_0898
+    AR_0003 --> AR_0899
+    AR_0003 --> AR_0903
+    AR_0003 --> AR_0906
+    AR_0003 --> AR_1235
+    AR_0003 --> AR_1242
+    AR_0003 --> AR_1252
+    AR_0003 --> AR_1283
+    AR_0004 --> AR_0005
+    AR_0004 --> AR_0849
+    AR_0101 --> AR_0102
+    AR_0101 --> AR_0104
+    AR_0101 --> AR_0201
+    AR_0101 --> AR_0203
+    AR_0101 --> AR_0301
+    AR_0101 --> AR_0302
+    AR_0101 --> AR_0303
+    AR_0101 --> AR_0304
+    AR_0101 --> AR_0305
+    AR_0101 --> AR_0306
     AR_0101 --> AR_0307
     AR_0101 --> AR_0308
     AR_0101 --> AR_0309
@@ -2344,7 +2376,3 @@
 | [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) |
 | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) |
 | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md), [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md), [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md), [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) |
-| [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
-| [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
-| [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
-| [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) |

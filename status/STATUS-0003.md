@@ -3040,6 +3040,20 @@
 | Summary | Create a narrow successor for the blocked AR-1928 digest repair. Reproduce the bounded AR-1926 runtime/scope checks, write only a privacy-safe successor evidence artifact, and use v0.7.13 repair-predicate-ledger with exact revision, predicate, evidence class, reference, and digest if its done-task contract admits the correction. Keep AR-1926 and AR-1928 historical rows immutable except for the explicitly audited appended correction row; otherwise fail closed with exact evidence. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1930 — Repair AR-1926 ledger
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt Coordinator v0.7.14 at exact commit c40457ec0696925d021a4996fb07f44d3b067f4d through tagged vendor sync and integrity verification. Generate a fresh privacy-safe AR-1926 candidate and invoke v0.7.14 repair-predicate-ledger to append one audited correction, then reconcile and doctor --live. Preserve AR-1926/1928/1929 history and untracked AR-1919; no product, network, downloads, mounts, formal, or TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4015,6 +4029,7 @@ flowchart LR
         AR_1926["AR-1926 - Done"]:::status_done
         AR_1928["AR-1928 - Blocked"]:::status_blocked
         AR_1929["AR-1929 - Blocked"]:::status_blocked
+        AR_1930["AR-1930 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4023,35 +4038,3 @@ flowchart LR
     AR_0001 --> AR_0701
     AR_0002 --> AR_0004
     AR_0002 --> AR_0005
-    AR_0002 --> AR_0830
-    AR_0002 --> AR_0834
-    AR_0002 --> AR_0895
-    AR_0002 --> AR_0903
-    AR_0003 --> AR_0830
-    AR_0003 --> AR_0831
-    AR_0003 --> AR_0845
-    AR_0003 --> AR_0855
-    AR_0003 --> AR_0877
-    AR_0003 --> AR_0878
-    AR_0003 --> AR_0895
-    AR_0003 --> AR_0897
-    AR_0003 --> AR_0898
-    AR_0003 --> AR_0899
-    AR_0003 --> AR_0903
-    AR_0003 --> AR_0906
-    AR_0003 --> AR_1235
-    AR_0003 --> AR_1242
-    AR_0003 --> AR_1252
-    AR_0003 --> AR_1283
-    AR_0004 --> AR_0005
-    AR_0004 --> AR_0849
-    AR_0101 --> AR_0102
-    AR_0101 --> AR_0104
-    AR_0101 --> AR_0201
-    AR_0101 --> AR_0203
-    AR_0101 --> AR_0301
-    AR_0101 --> AR_0302
-    AR_0101 --> AR_0303
-    AR_0101 --> AR_0304
-    AR_0101 --> AR_0305
-    AR_0101 --> AR_0306

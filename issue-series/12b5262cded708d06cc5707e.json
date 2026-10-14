@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1930",
+  "issue": {
+    "number": 10060,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10060"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Exact v0.7.14 vendor and manifest verify at the pinned commit; fresh candidate and evidence digests are exact; released repair-predicate-ledger appends one fresh AR-1926 scope pass without rewriting retained rows; focused and applicable full non-formal gates pass; reconcile and doctor --live pass, or the exact fail-closed blocker is recorded.",
+      "depends_on": [],
+      "id": "AR-1930",
+      "ownership": "ASB coordination-state Coordinator vendor adoption and append-only AR-1926 evidence-ledger repair only; preserve AR-1926, AR-1928, AR-1929, and AR-1919 history.",
+      "scope": "Adopt Coordinator v0.7.14 at exact commit c40457ec0696925d021a4996fb07f44d3b067f4d through tagged vendor sync and integrity verification. Generate a fresh privacy-safe AR-1926 candidate and invoke v0.7.14 repair-predicate-ledger to append one audited correction, then reconcile and doctor --live. Preserve AR-1926/1928/1929 history and untracked AR-1919; no product, network, downloads, mounts, formal, or TLC.",
+      "short_title": "Repair AR-1926 ledger"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
