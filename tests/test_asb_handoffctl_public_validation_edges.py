@@ -64,14 +64,24 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
     def test_binding_artifact_path_rejects_unsafe_and_accepts_regular_files(self) -> None:
         target = self.root / "spec.json"
         target.write_text("{}", encoding="utf-8")
-        self.assertIsNone(handoffctl.binding_artifact_path(argparse.Namespace(spec_ref=None), "bind-spec"))
         self.assertIsNone(
-            handoffctl.binding_artifact_path(argparse.Namespace(spec_ref="../spec.json"), "bind-spec")
+            handoffctl.binding_artifact_path(argparse.Namespace(spec_ref=None), "bind-spec")
         )
         self.assertIsNone(
-            handoffctl.binding_artifact_path(argparse.Namespace(spec_ref="missing.json"), "bind-spec")
+            handoffctl.binding_artifact_path(
+                argparse.Namespace(spec_ref="../spec.json"), "bind-spec"
+            )
         )
-        self.assertEqual(target, handoffctl.binding_artifact_path(argparse.Namespace(spec_ref="spec.json"), "bind-spec"))
+        self.assertIsNone(
+            handoffctl.binding_artifact_path(
+                argparse.Namespace(spec_ref="missing.json"), "bind-spec"
+            )
+        )
+        self.assertEqual(
+            target,
+            handoffctl.binding_artifact_path(argparse.Namespace(spec_ref="spec.json"), "bind-spec"),
+        )
+
     def test_snapshot_rejects_validation_and_backend_races(self) -> None:
         for label, selections, errors, message in (
             (

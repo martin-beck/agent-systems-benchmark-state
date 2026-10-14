@@ -185,10 +185,15 @@ class ExecutionEnvelopeTests(unittest.TestCase):
         self.assertTrue(_capability_errors({"schema_version": 1, "capabilities": {}}))
         self.assertTrue(
             _capability_errors(
-                {"schema_version": 2, "capabilities": {"git_metadata": {"allowed": 1}, "network": {"allowed": False}}}
+                {
+                    "schema_version": 2,
+                    "capabilities": {"git_metadata": {"allowed": 1}, "network": {"allowed": False}},
+                }
             )
         )
-        self.assertTrue(_identity_errors({"schema_version": 9, "envelope_id": "bad", "task": "bad"}))
+        self.assertTrue(
+            _identity_errors({"schema_version": 9, "envelope_id": "bad", "task": "bad"})
+        )
 
     def test_private_helpers_reject_duplicates_and_invalid_replacement_records(self) -> None:
         problems: list[str] = []

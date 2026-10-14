@@ -110,9 +110,7 @@ class ReplacementTests(unittest.TestCase):
         args = self._args()
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            for mutate, message in (
-                (lambda m: m.pop("execution_envelope"), "existing bound"),
-            ):
+            for mutate, message in ((lambda m: m.pop("execution_envelope"), "existing bound"),):
                 meta = self._meta()
                 mutate(meta)
                 with self.assertRaisesRegex(RuntimeError, message):
