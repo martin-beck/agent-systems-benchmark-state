@@ -2330,11 +2330,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-ar1878-diagnostic-successor-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create a fresh successor task for the reviewed control diagnostic catalog repair with a new source-write execution envelope scoped only to the catalog files and required tests/publication. Preserve AR-1863 as immutable blocked history; do not widen or mutate its bound envelope, alter AR-1787/AR-1835, or weaken coordinator gates. |
@@ -3821,7 +3821,7 @@ flowchart LR
         AR_1875["AR-1875 - Superseded"]:::status_superseded
         AR_1876["AR-1876 - Superseded"]:::status_superseded
         AR_1877["AR-1877 - Done"]:::status_done
-        AR_1878["AR-1878 - Open"]:::status_open
+        AR_1878["AR-1878 - In progress"]:::status_in_progress
         AR_1879["AR-1879 - Blocked"]:::status_blocked
         AR_1880["AR-1880 - Blocked"]:::status_blocked
         AR_1881["AR-1881 - Open"]:::status_open
@@ -4228,6 +4228,3 @@ flowchart LR
     AR_0512 --> AR_0515
     AR_0513 --> AR_0515
     AR_0514 --> AR_0515
-    AR_0517 --> AR_0518
-    AR_0517 --> AR_0520
-    AR_0518 --> AR_0519
