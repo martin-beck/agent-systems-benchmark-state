@@ -69,6 +69,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1867-legacy-reservation-recovery` | `codex/ar-1867-legacy-reservation-recovery` | `870331be533e` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1838-merge-int` | `DETACHED` | `4a486e97abbb` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-ar1872-orphan-reservations` | `repair/ar-1872-orphan-reservations` | `b00cdba5bc52` | 0 | behind 34, ahead 0 |
+| `agent-systems-benchmark-ar1878-diagnostic-successor-20261014` | `codex/ar-1878-diagnostic-catalog-successor` | `870331be533e` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 1 | behind 825, ahead 326 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 825, ahead 323 |
