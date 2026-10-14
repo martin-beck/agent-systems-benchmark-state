@@ -1,5 +1,31 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1036 --> AR_1037
+    AR_1037 --> AR_1014
+    AR_1037 --> AR_1024
+    AR_1037 --> AR_1025
+    AR_1040 --> AR_1043
+    AR_1045 --> AR_1051
+    AR_1052 --> AR_1010
+    AR_1054 --> AR_1010
+    AR_1056 --> AR_1010
+    AR_1058 --> AR_1010
+    AR_1060 --> AR_1024
+    AR_1060 --> AR_1025
+    AR_1060 --> AR_1160
+    AR_1060 --> AR_1227
+    AR_1060 --> AR_1310
+    AR_1061 --> AR_1010
+    AR_1062 --> AR_1010
+    AR_1062 --> AR_1058
+    AR_1062 --> AR_1061
+    AR_1100 --> AR_1120
+    AR_1100 --> AR_1228
+    AR_1100 --> AR_1230
+    AR_1100 --> AR_1231
+    AR_1100 --> AR_1232
+    AR_1100 --> AR_1233
+    AR_1100 --> AR_1234
     AR_1100 --> AR_1236
     AR_1100 --> AR_1238
     AR_1100 --> AR_1328
@@ -1690,4 +1716,3 @@
 | [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md) | [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md) | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md) |
 | [AR-1389](../tasks/AR-1389-formal-fixture-exec-race.md) | [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md) | None |
 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md) | None |
-| [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md) | None |

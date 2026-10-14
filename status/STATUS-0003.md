@@ -2704,6 +2704,20 @@
 | Summary | Create a narrow successor for AR-1901&#x27;s worktree and spec-retention failure using only handoffctl-authorized state paths and commands. Retain AR-1901 immutable task, envelope, bindings, and evidence; do not perform out-of-band Git/state edits, broaden paths, or alter product files. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1905 — Admit task-spec dependency
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only successor admitting exactly tools/task_spec.py for the AR-1903 focused replacement test. Preserve AR-1904, AR-1903, AR-1901 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3655,6 +3669,7 @@ flowchart LR
         AR_1902["AR-1902 - In progress"]:::status_in_progress
         AR_1903["AR-1903 - In progress"]:::status_in_progress
         AR_1904["AR-1904 - In progress"]:::status_in_progress
+        AR_1905["AR-1905 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4361,29 +4376,3 @@ flowchart LR
     AR_1035 --> AR_1011
     AR_1035 --> AR_1032
     AR_1036 --> AR_1014
-    AR_1036 --> AR_1037
-    AR_1037 --> AR_1014
-    AR_1037 --> AR_1024
-    AR_1037 --> AR_1025
-    AR_1040 --> AR_1043
-    AR_1045 --> AR_1051
-    AR_1052 --> AR_1010
-    AR_1054 --> AR_1010
-    AR_1056 --> AR_1010
-    AR_1058 --> AR_1010
-    AR_1060 --> AR_1024
-    AR_1060 --> AR_1025
-    AR_1060 --> AR_1160
-    AR_1060 --> AR_1227
-    AR_1060 --> AR_1310
-    AR_1061 --> AR_1010
-    AR_1062 --> AR_1010
-    AR_1062 --> AR_1058
-    AR_1062 --> AR_1061
-    AR_1100 --> AR_1120
-    AR_1100 --> AR_1228
-    AR_1100 --> AR_1230
-    AR_1100 --> AR_1231
-    AR_1100 --> AR_1232
-    AR_1100 --> AR_1233
-    AR_1100 --> AR_1234
