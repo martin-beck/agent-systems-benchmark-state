@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1871-e1",
+  "envelope_revision": 2,
+  "task": "AR-1871",
+  "task_revision": 7,
+  "spec_ref": "specs/AR-1871.json",
+  "spec_revision": 1,
+  "path_scope": {"read": [".", "schema", "tests", "tasks", "tools", "envelopes"], "write": [".", "schema/task-schema.json", "tests/test_task_record_schema.py", "tasks/AR-1861-coordinator-ar0034-repair-adoption.md", "tasks/AR-1862-coordinator-formal-lifecycle-alignment.md"]},
+  "command_classes": {"read": {"allowed": true}, "test": {"allowed": true, "timeout_seconds": 900}, "git-publication": {"allowed": true, "timeout_seconds": 900}},
+  "evidence": [{"id": "integration", "class": "contract-test", "required": true}, {"id": "publication", "class": "mechanical", "required": true}],
+  "outputs": [{"id": "reviewed-integration", "description": "Reviewed exact-head schema and ledger integration."}],
+  "non_goals": ["Do not modify runtime state, checkpoints, sessions, projections, or unrelated task files."],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}]
+}

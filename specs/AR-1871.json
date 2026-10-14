@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1871.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "scope", "description": "Integration changes only task schema, its schema tests, and AR-1861/AR-1862 evidence ledgers."},
+    {"id": "validation", "description": "Schema positive and negative tests, generated views, source headers, and strict consistency pass."},
+    {"id": "publication", "description": "Signed exact-head PR receives independent review, green CI, merge, and post-merge verification."}
+  ],
+  "definition_of_done": ["Reviewed signed source commits and exact-head CI evidence are recorded."],
+  "inputs": [{"id": "reviewed-prs", "description": "PR #163 schema-only review and PR #165 ledger-only review; both are red only on the complementary strict gate."}],
+  "outputs": [{"id": "integrated-repair", "description": "Current-main integration of the reviewed schema and ledger repairs."}],
+  "allowed_tools": ["git", "python", "tools/handoffctl"],
+  "forbidden_tools": ["direct-runtime-state-edit", "scope-expansion", "gate-weakening"],
+  "required_evidence_classes": ["mechanical", "contract-test"],
+  "gates": [{"id": "focused", "description": "Focused schema and ledger validation passes."}, {"id": "review", "description": "Independent exact-head review and CI are green."}]
+}

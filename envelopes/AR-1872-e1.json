@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1872-e1",
+  "envelope_revision": 1,
+  "task": "AR-1872",
+  "task_revision": 5,
+  "spec_ref": "specs/AR-1872.json",
+  "spec_revision": 1,
+  "path_scope": {"read": ["tools", "tests", "tasks", "specs", "envelopes"], "write": ["tools", "tests", "evidence"]},
+  "command_classes": {"read": {"allowed": true, "timeout_seconds": 120}, "source-write": {"allowed": true, "timeout_seconds": 300}, "test": {"allowed": true, "timeout_seconds": 900}, "git-publication": {"allowed": true, "timeout_seconds": 900}},
+  "evidence": [{"id": "focused", "class": "contract-test", "required": true}, {"id": "review", "class": "mechanical", "required": true}],
+  "outputs": [{"id": "recovery", "description": "Bounded orphan reservation recovery implementation and evidence."}],
+  "non_goals": ["Do not edit AR-1773, AR-1852, or AR-1871 directly.", "Do not weaken reservation fences."],
+  "stop_conditions": [{"id": "unexpected-record", "kind": "deny"}]
+}

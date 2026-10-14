@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1872.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "bounded-recovery", "description": "Recover only expired orphan execution reservations with explicit operator evidence and exact reservation/result matching."},
+    {"id": "fail-closed", "description": "Reject live, malformed, mismatched, or unauthorised reservations without changing task state."},
+    {"id": "verification", "description": "Focused positive and hostile tests, full applicable gates, exact-head review, CI, and post-merge doctor pass."}
+  ],
+  "definition_of_done": ["Reviewed signed source commit, exact-head CI, and durable recovery evidence are recorded."],
+  "inputs": [{"id": "legacy-recovery", "description": "Existing AR-1867 recovery contract and failing orphan-reservation fixtures."}],
+  "outputs": [{"id": "orphan-recovery", "description": "A handoffctl-managed fail-closed orphan reservation recovery path."}],
+  "allowed_tools": ["git", "python", "tools/handoffctl"],
+  "forbidden_tools": ["direct-task-state-edit", "force-clear", "gate-weakening"],
+  "required_evidence_classes": ["mechanical", "contract-test"],
+  "gates": [{"id": "focused", "description": "Focused recovery tests pass."}, {"id": "review", "description": "Independent exact-head review and CI are green."}]
+}
