@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1873",
+  "issue": {
+    "number": 10004,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10004"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Positive and negative contract tests cover every stated rejection and abandonment condition; exact owner/revision, expiry, structural validation, failure classification, and immutable audit evidence remain fail-closed; signed reviewed PR, exact-head green CI, merge, and post-merge verification pass.",
+      "depends_on": [],
+      "id": "AR-1873",
+      "ownership": "ASB handoffctl execution lifecycle overlay and focused tests only; no direct task-state edits, no recovery/success authorization, no changes to AR-1773/1852/1871.",
+      "scope": "Add a fail-closed abandon-expired-execution transition clearing only expired bound reservations with no live identity; classify missing/mismatched results as failed, require exact owner/revision matches, non-empty operator evidence, and immutable audit. Reject live/non-expired, malformed, matching-success, wrong-owner/revision, and missing-evidence cases. No recovery/success authorization or direct edits to AR-1773/1852/1871.",
+      "short_title": "Abandon expired executions"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

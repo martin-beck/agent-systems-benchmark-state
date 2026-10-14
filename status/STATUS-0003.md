@@ -2256,6 +2256,20 @@
 | Summary | Add a narrowly scoped handoffctl recovery path for expired bound execution reservations whose original claim lacks worker PID/start-time identity, reusing only the AR-1867 legacy-recovery contract where explicit operator evidence, exact reservation/result matching, expiry, structural validation, and fail-closed identity checks remain mandatory. Do not edit AR-1871 state directly or force-clear reservations. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1873 — Abandon expired executions
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add a fail-closed abandon-expired-execution transition clearing only expired bound reservations with no live identity; classify missing/mismatched results as failed, require exact owner/revision matches, non-empty operator evidence, and immutable audit. Reject live/non-expired, malformed, matching-success, wrong-owner/revision, and missing-evidence cases. No recovery/success authorization or direct edits to AR-1773/1852/1871. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3172,6 +3186,7 @@ flowchart LR
         AR_1870["AR-1870 - Open"]:::status_open
         AR_1871["AR-1871 - In progress"]:::status_in_progress
         AR_1872["AR-1872 - Planned"]:::status_planned
+        AR_1873["AR-1873 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4869,36 +4884,3 @@ flowchart LR
     AR_1641 --> AR_1613
     AR_1641 --> AR_1622
     AR_1641 --> AR_1643
-    AR_1641 --> AR_1645
-    AR_1641 --> AR_1657
-    AR_1641 --> AR_1725
-    AR_1642 --> AR_1613
-    AR_1642 --> AR_1622
-    AR_1642 --> AR_1643
-    AR_1642 --> AR_1645
-    AR_1642 --> AR_1646
-    AR_1642 --> AR_1725
-    AR_1643 --> AR_1653
-    AR_1643 --> AR_1654
-    AR_1644 --> AR_1650
-    AR_1645 --> AR_1643
-    AR_1645 --> AR_1647
-    AR_1645 --> AR_1648
-    AR_1645 --> AR_1657
-    AR_1645 --> AR_1686
-    AR_1645 --> AR_1695
-    AR_1646 --> AR_1643
-    AR_1646 --> AR_1647
-    AR_1646 --> AR_1648
-    AR_1646 --> AR_1652
-    AR_1646 --> AR_1686
-    AR_1646 --> AR_1688
-    AR_1646 --> AR_1698
-    AR_1647 --> AR_1643
-    AR_1647 --> AR_1657
-    AR_1648 --> AR_1647
-    AR_1648 --> AR_1649
-    AR_1648 --> AR_1650
-    AR_1648 --> AR_1686
-    AR_1648 --> AR_1695
-    AR_1649 --> AR_1647

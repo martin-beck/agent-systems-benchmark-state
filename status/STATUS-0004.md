@@ -1,5 +1,38 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1641 --> AR_1645
+    AR_1641 --> AR_1657
+    AR_1641 --> AR_1725
+    AR_1642 --> AR_1613
+    AR_1642 --> AR_1622
+    AR_1642 --> AR_1643
+    AR_1642 --> AR_1645
+    AR_1642 --> AR_1646
+    AR_1642 --> AR_1725
+    AR_1643 --> AR_1653
+    AR_1643 --> AR_1654
+    AR_1644 --> AR_1650
+    AR_1645 --> AR_1643
+    AR_1645 --> AR_1647
+    AR_1645 --> AR_1648
+    AR_1645 --> AR_1657
+    AR_1645 --> AR_1686
+    AR_1645 --> AR_1695
+    AR_1646 --> AR_1643
+    AR_1646 --> AR_1647
+    AR_1646 --> AR_1648
+    AR_1646 --> AR_1652
+    AR_1646 --> AR_1686
+    AR_1646 --> AR_1688
+    AR_1646 --> AR_1698
+    AR_1647 --> AR_1643
+    AR_1647 --> AR_1657
+    AR_1648 --> AR_1647
+    AR_1648 --> AR_1649
+    AR_1648 --> AR_1650
+    AR_1648 --> AR_1686
+    AR_1648 --> AR_1695
+    AR_1649 --> AR_1647
     AR_1649 --> AR_1651
     AR_1649 --> AR_1686
     AR_1649 --> AR_1687
@@ -759,4 +792,3 @@
 | [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md) | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) |
 | [AR-1459](../tasks/AR-1459-retire-stale-state-prs.md) | [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md) | None |
 | [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md) | [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md), [AR-1462](../tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md) |
-| [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md) | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) | [AR-1463](../tasks/AR-1463-current-main-requalification-after-capture.md), [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md), [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md), [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md), [AR-1492](../tasks/AR-1492-customer-bundle-signing-handoff.md), [AR-1493](../tasks/AR-1493-release-authority-enrollment-handoff.md) |
