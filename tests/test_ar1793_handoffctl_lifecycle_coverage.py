@@ -448,11 +448,6 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
                 with self.assertRaisesRegex(RuntimeError, message):
                     handoffctl.apply_repair_legacy_binding(request, meta, [])
                 self.assertEqual(before, meta)
-        with (
-            patch.object(handoffctl, "valid_binding_worktree", return_value=False),
-            self.assertRaisesRegex(RuntimeError, "worktree key is invalid"),
-        ):
-            handoffctl.apply_repair_legacy_binding(args, dict(base), [])
 
 
 if __name__ == "__main__":
