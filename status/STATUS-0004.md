@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_0510 --> AR_0515
+    AR_0511 --> AR_0515
     AR_0512 --> AR_0515
     AR_0513 --> AR_0515
     AR_0514 --> AR_0515
@@ -2047,4 +2049,3 @@
 | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md) | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md), [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md), [AR-1376](../tasks/AR-1376-runtime-live-adapter.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md), [AR-1382](../tasks/AR-1382-authenticated-live-execution-source.md), [AR-1383](../tasks/AR-1383-runtime-authority-profile.md), [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md), [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md), [AR-1524](../tasks/AR-1524.md) |
 | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md) |
 | [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1374](../tasks/AR-1374-cli-live-dispatch.md) | None |
-| [AR-1376](../tasks/AR-1376-runtime-live-adapter.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | None |
