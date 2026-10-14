@@ -2484,11 +2484,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | codex-ar1889-recovery-20261014 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Add only the state-side recovery capability needed to clear AR-1878&#x27;s exact expired reservation with matching durable terminal EXIT evidence. Scope tools/handoffctl.py, execution lifecycle, and focused tests; preserve AR-1878 through AR-1888, reject force-clear/cross-root paths, and do not run formal/TLC. |
@@ -3818,7 +3818,7 @@ flowchart LR
         AR_1886["AR-1886 - In progress"]:::status_in_progress
         AR_1887["AR-1887 - Blocked"]:::status_blocked
         AR_1888["AR-1888 - Open"]:::status_open
-        AR_1889["AR-1889 - In progress"]:::status_in_progress
+        AR_1889["AR-1889 - Open"]:::status_open
         AR_1890["AR-1890 - Blocked"]:::status_blocked
         AR_1891["AR-1891 - Blocked"]:::status_blocked
         AR_1892["AR-1892 - In progress"]:::status_in_progress
@@ -4236,3 +4236,5 @@ flowchart LR
     AR_0702 --> AR_0813
     AR_0702 --> AR_0816
     AR_0702 --> AR_0903
+    AR_0702 --> AR_0907
+    AR_0702 --> AR_1006
