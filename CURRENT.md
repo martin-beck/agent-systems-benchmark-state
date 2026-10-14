@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1872 — Recover orphan reservations](tasks/AR-1872.md) | Add a narrowly scoped handoffctl recovery path for expired bound execution reservations whose original claim lacks worker PID/start-time identity, reusing only the AR-1867 legacy-recovery contract where explicit operator evidence, exact reservation/result matching, expiry, structural validation, and fail-closed identity checks remain mandatory. Do not edit AR-1871 state directly or force-clear reservations. | Implement the bounded scope and record local acceptance evidence. | codex-asb-ar1872-20261014 |
 | P1 | [AR-1873 — Abandon expired executions](tasks/AR-1873.md) | Add a fail-closed abandon-expired-execution transition clearing only expired bound reservations with no live identity; classify missing/mismatched results as failed, require exact owner/revision matches, non-empty operator evidence, and immutable audit. Reject live/non-expired, malformed, matching-success, wrong-owner/revision, and missing-evidence cases. No recovery/success authorization or direct edits to AR-1773/1852/1871. | Implement the bounded scope and record local acceptance evidence. | codex-asb-queue-20261014 |
 
 ## Open
