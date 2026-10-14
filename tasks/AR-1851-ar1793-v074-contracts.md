@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1851.json",
   "spec_revision": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Align AR-1793 compatibility fixtures with Coordinator v0.7.4.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "AR-1793 v0.7.4 compatibility contracts",
-  "updated_at": "2026-10-13T20:37:44+00:00",
+  "updated_at": "2026-10-14T13:47:17+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1851-ar1793-v074"
 }
 ---
@@ -152,3 +152,6 @@ contract failures exposed by the exact Coordinator v0.7.4 adoption.
   exact-head runs 38405503655 and 38405503547 remain failing on unresolved cross-repair
   coverage/role/complexity issues, while verify 38405503451 and AWQ shadow 38405503512 pass. No
   merge, rebase, gate weakening, or vendor edit; resolve AR-1852/AR-1853 before fresh review and CI.
+
+- 2026-10-14T13:47:17+00:00: Parallel development authorized: inspect candidate 0d3693a24c5
+  exact-head review and rerun terminal strict/formal gates; preserve any baseline failures.
