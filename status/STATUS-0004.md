@@ -1,5 +1,36 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_0401 --> AR_0505
+    AR_0401 --> AR_0506
+    AR_0401 --> AR_0507
+    AR_0401 --> AR_0508
+    AR_0401 --> AR_0509
+    AR_0401 --> AR_0510
+    AR_0401 --> AR_0511
+    AR_0401 --> AR_0512
+    AR_0401 --> AR_0513
+    AR_0401 --> AR_0514
+    AR_0401 --> AR_0702
+    AR_0401 --> AR_0703
+    AR_0401 --> AR_0705
+    AR_0401 --> AR_0706
+    AR_0401 --> AR_0802
+    AR_0401 --> AR_0808
+    AR_0401 --> AR_0848
+    AR_0401 --> AR_1002
+    AR_0401 --> AR_1004
+    AR_0401 --> AR_1007
+    AR_0402 --> AR_0404
+    AR_0402 --> AR_0406
+    AR_0403 --> AR_0404
+    AR_0404 --> AR_1394
+    AR_0405 --> AR_1394
+    AR_0406 --> AR_1394
+    AR_0501 --> AR_0502
+    AR_0501 --> AR_0879
+    AR_0502 --> AR_0503
+    AR_0502 --> AR_0516
+    AR_0502 --> AR_0517
     AR_0502 --> AR_0518
     AR_0502 --> AR_0520
     AR_0502 --> AR_0871
@@ -2101,6 +2132,3 @@
 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | None |
 | [AR-1368](../tasks/AR-1368-control-receipt-runtime-source.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | None |
 | [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) |
-| [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | None |
-| [AR-1371](../tasks/AR-1371-runner-authority-injection.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) |
-| [AR-1372](../tasks/AR-1372-topology-repair.md) | None | None |

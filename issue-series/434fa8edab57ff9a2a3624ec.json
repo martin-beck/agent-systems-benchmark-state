@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1921",
+  "issue": {
+    "number": 10052,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10052"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Bind a successor envelope that admits only the actual AR-1878 referenced spec specs/AR-1863.json, run bounded git-publication preflight against the real AR-1920 worktree, and record the exact result without changing any reviewed head or prior history.",
+      "depends_on": [],
+      "id": "AR-1921",
+      "ownership": "ASB coordination-state envelope read-scope repair for the AR-1920 worktree binding only; preserve AR-1878, AR-1886, AR-1919, AR-1920 and all earlier task, spec, envelope, checkpoint, review, CI, and evidence history. No product, vendor, network, source-write, test, formal/TLC, runtime-download, host-mount, path-widening, or history-rewrite changes.",
+      "scope": "Create a narrow successor for AR-1920's exact read-scope mismatch: admit specs/AR-1863.json because AR-1878 references that spec, while retaining every existing AR-1920 path and capability unchanged. Bind and preflight only the already materialized isolated state worktree under /srv/data/projects; do not widen any command, capability, or publication path.",
+      "short_title": "Repair publication read scope"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

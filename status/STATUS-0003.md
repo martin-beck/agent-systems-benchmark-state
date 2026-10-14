@@ -2928,6 +2928,20 @@
 | Summary | Create a narrow successor for AR-1919&#x27;s exact nonexistent .git/worktrees binding. Materialize one safe isolated coordination-state worktree under /srv/data/projects and bind it through handoffctl to the reviewed AR-1878 and AR-1886 exact heads and declared publication paths. Grant only the minimum worktree/git-metadata publication authority needed to verify the binding; reject arbitrary paths, path widening, history rewriting, and all unrelated capabilities. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1921 — Repair publication read scope
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a narrow successor for AR-1920&#x27;s exact read-scope mismatch: admit specs/AR-1863.json because AR-1878 references that spec, while retaining every existing AR-1920 path and capability unchanged. Bind and preflight only the already materialized isolated state worktree under /srv/data/projects; do not widen any command, capability, or publication path. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -3895,6 +3909,7 @@ flowchart LR
         AR_1918["AR-1918 - Done"]:::status_done
         AR_1919["AR-1919 - Blocked"]:::status_blocked
         AR_1920["AR-1920 - Blocked"]:::status_blocked
+        AR_1921["AR-1921 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4164,34 +4179,3 @@ flowchart LR
     AR_0401 --> AR_0402
     AR_0401 --> AR_0403
     AR_0401 --> AR_0405
-    AR_0401 --> AR_0505
-    AR_0401 --> AR_0506
-    AR_0401 --> AR_0507
-    AR_0401 --> AR_0508
-    AR_0401 --> AR_0509
-    AR_0401 --> AR_0510
-    AR_0401 --> AR_0511
-    AR_0401 --> AR_0512
-    AR_0401 --> AR_0513
-    AR_0401 --> AR_0514
-    AR_0401 --> AR_0702
-    AR_0401 --> AR_0703
-    AR_0401 --> AR_0705
-    AR_0401 --> AR_0706
-    AR_0401 --> AR_0802
-    AR_0401 --> AR_0808
-    AR_0401 --> AR_0848
-    AR_0401 --> AR_1002
-    AR_0401 --> AR_1004
-    AR_0401 --> AR_1007
-    AR_0402 --> AR_0404
-    AR_0402 --> AR_0406
-    AR_0403 --> AR_0404
-    AR_0404 --> AR_1394
-    AR_0405 --> AR_1394
-    AR_0406 --> AR_1394
-    AR_0501 --> AR_0502
-    AR_0501 --> AR_0879
-    AR_0502 --> AR_0503
-    AR_0502 --> AR_0516
-    AR_0502 --> AR_0517
