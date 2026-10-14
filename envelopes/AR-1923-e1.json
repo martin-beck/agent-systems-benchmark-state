@@ -9,7 +9,7 @@
   "outputs": [{"id": "runtime", "description": "Verify approved offline interpreter and test-tool visibility."}],
   "non_goals": ["Do not alter AR-1922 or earlier histories.", "Do not add network, downloads, arbitrary mounts, product changes, or formal/TLC gates."],
   "path_scope": {
-    "read": ["tools", "tests", ".venv/bin", "specs/AR-1923.json", "envelopes/AR-1923-e1.json", "tasks/AR-1923.md"],
+    "read": ["tools", "tests", "runtime/bin", "specs/AR-1923.json", "envelopes/AR-1923-e1.json", "tasks/AR-1923.md"],
     "write": ["quality"]
   },
   "command_classes": {"read": {"allowed": true}, "test": {"allowed": true, "timeout_seconds": 900}},
