@@ -2722,11 +2722,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1906-retention-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | Create a narrow successor for bind-spec/bind-envelope candidate retention. Use only handoffctl issue-series and authorized coordinator paths; preserve AR-1901 through AR-1905 immutable records, reject direct Git/state edits and arbitrary paths, and do not alter product files. |
@@ -3698,7 +3698,7 @@ flowchart LR
         AR_1903["AR-1903 - In progress"]:::status_in_progress
         AR_1904["AR-1904 - In progress"]:::status_in_progress
         AR_1905["AR-1905 - In progress"]:::status_in_progress
-        AR_1906["AR-1906 - Open"]:::status_open
+        AR_1906["AR-1906 - In progress"]:::status_in_progress
         AR_1907["AR-1907 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
@@ -4349,5 +4349,3 @@ flowchart LR
     AR_1014 --> AR_1034
     AR_1015 --> AR_1016
     AR_1017 --> AR_1018
-    AR_1017 --> AR_1019
-    AR_1017 --> AR_1021
