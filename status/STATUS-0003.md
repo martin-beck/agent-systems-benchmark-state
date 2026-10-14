@@ -2540,11 +2540,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1893-envelope-schema-20261014 |
 | Parent | None |
 | Children | None |
 | Summary | State-only repair to admit the authorized execution_envelope_replacements task field and validator path needed to replace AR-1892&#x27;s malformed predecessor envelope without widening unrelated scope. Preserve AR-1892, AR-1891, AR-1890 and earlier histories; no claim bypass, cross-root, network, or formal/TLC. |
@@ -3486,7 +3486,7 @@ flowchart LR
         AR_1890["AR-1890 - Blocked"]:::status_blocked
         AR_1891["AR-1891 - Planned"]:::status_planned
         AR_1892["AR-1892 - In progress"]:::status_in_progress
-        AR_1893["AR-1893 - Open"]:::status_open
+        AR_1893["AR-1893 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4531,5 +4531,3 @@ flowchart LR
     AR_1341 --> AR_1451
     AR_1342 --> AR_1344
     AR_1342 --> AR_1345
-    AR_1342 --> AR_1390
-    AR_1342 --> AR_1391
