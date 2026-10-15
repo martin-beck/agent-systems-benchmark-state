@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1948",
+  "issue": {
+    "number": 10078,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10078"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "A bound test command resolves an existing local interpreter inside the sandbox, missing or unsafe interpreter paths fail closed, focused/full applicable tests pass, and no runtime download, credential, formal, TLC, or gate weakening is introduced.",
+      "depends_on": [],
+      "id": "AR-1948",
+      "ownership": "ASB execution sandbox interpreter resolution only; preserve all prior task histories and publication boundaries.",
+      "scope": "Repair the execution sandbox runtime so bounded test commands can invoke the reviewed local Python interpreter without downloads or broad host mounts; preserve fail-closed path scope and network policy, and add positive/negative interpreter-resolution tests.",
+      "short_title": "Expose bounded test interpreter"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

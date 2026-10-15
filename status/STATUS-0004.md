@@ -1,5 +1,16 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1679["AR-1679 - Planned"]:::status_planned
+        AR_1680["AR-1680 - Planned"]:::status_planned
+        AR_1681["AR-1681 - Planned"]:::status_planned
+        AR_1682["AR-1682 - Planned"]:::status_planned
+        AR_1683["AR-1683 - Planned"]:::status_planned
+        AR_1684["AR-1684 - Planned"]:::status_planned
+        AR_1685["AR-1685 - Done"]:::status_done
+        AR_1686["AR-1686 - Done"]:::status_done
+        AR_1687["AR-1687 - Done"]:::status_done
+        AR_1688["AR-1688 - Done"]:::status_done
+        AR_1689["AR-1689 - Done"]:::status_done
         AR_1690["AR-1690 - Done"]:::status_done
         AR_1691["AR-1691 - Planned"]:::status_planned
         AR_1692["AR-1692 - Done"]:::status_done
@@ -242,6 +253,7 @@
         AR_1945["AR-1945 - In progress"]:::status_in_progress
         AR_1946["AR-1946 - Blocked"]:::status_blocked
         AR_1947["AR-1947 - Blocked"]:::status_blocked
+        AR_1948["AR-1948 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2600,4 +2612,3 @@
 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md) | None | None |
 | [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md), [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
 | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
-| [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md), [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md), [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md) |

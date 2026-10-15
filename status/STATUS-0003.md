@@ -3292,6 +3292,20 @@
 | Summary | Repair the authoritative outer bwrap publication mount for linked worktrees whose .git is a gitdir file: parse the descriptor-backed target, safely resolve it under the repository admin root, and mount it at the sandbox-visible absolute gitdir path with required parents. Reject host-path leakage, unsafe, and missing targets; preserve AR-1941 through AR-1946 and do not rewrite the .git pointer or bypass isolation. Initial schema-v2 envelope authorizes network only for git-publication. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1948 — Expose bounded test interpreter
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the execution sandbox runtime so bounded test commands can invoke the reviewed local Python interpreter without downloads or broad host mounts; preserve fail-closed path scope and network policy, and add positive/negative interpreter-resolution tests. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4032,14 +4046,3 @@ flowchart LR
         AR_1676["AR-1676 - Planned"]:::status_planned
         AR_1677["AR-1677 - Planned"]:::status_planned
         AR_1678["AR-1678 - Done"]:::status_done
-        AR_1679["AR-1679 - Planned"]:::status_planned
-        AR_1680["AR-1680 - Planned"]:::status_planned
-        AR_1681["AR-1681 - Planned"]:::status_planned
-        AR_1682["AR-1682 - Planned"]:::status_planned
-        AR_1683["AR-1683 - Planned"]:::status_planned
-        AR_1684["AR-1684 - Planned"]:::status_planned
-        AR_1685["AR-1685 - Done"]:::status_done
-        AR_1686["AR-1686 - Done"]:::status_done
-        AR_1687["AR-1687 - Done"]:::status_done
-        AR_1688["AR-1688 - Done"]:::status_done
-        AR_1689["AR-1689 - Done"]:::status_done
