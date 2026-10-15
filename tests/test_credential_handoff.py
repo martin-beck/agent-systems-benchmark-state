@@ -7,7 +7,7 @@ from __future__ import annotations
 import argparse
 import subprocess
 import unittest
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 from tools import credential_handoff, handoffctl
 
@@ -104,6 +104,60 @@ class CredentialHandoffTests(unittest.TestCase):
                 authorize_external_side_effects=True,
             )
         )
+
+    def test_cmd_run_fenced_rejects_invalid_descriptor_before_launch(self) -> None:
+        args = argparse.Namespace(
+            task="AR-1936",
+            owner="worker",
+            command=["true"],
+            command_class="git-publication",
+            authorize_external_side_effects=True,
+            credential_fd=2,
+        )
+        with (
+            patch.object(handoffctl, "backend_selection", return_value={"backend": "git"}),
+            patch.object(handoffctl, "config", return_value={}),
+            patch.object(handoffctl, "require_active_owner", return_value=MagicMock()),
+            patch.object(handoffctl, "_run_envelope_subprocess") as launch,
+            self.assertRaisesRegex(RuntimeError, "open fd >= 3"),
+        ):
+            handoffctl._cmd_run_fenced(args)
+        launch.assert_not_called()
+
+    def test_cmd_run_fenced_admits_authorized_descriptor_to_launch(self) -> None:
+        args = argparse.Namespace(
+            task="AR-1936",
+            owner="worker",
+            command=["true"],
+            command_class="git-publication",
+            authorize_external_side_effects=True,
+            credential_fd=93,
+            _envelope_worktree="bound",
+            _envelope_worktree_fd=71,
+            scope_path=[],
+            retry_window=3,
+        )
+        with (
+            patch.object(handoffctl, "backend_selection", return_value={"backend": "git"}),
+            patch.object(handoffctl, "config", return_value={}),
+            patch.object(handoffctl, "require_active_owner", return_value=MagicMock()),
+            patch.object(handoffctl, "run_envelope_timeout", return_value=None),
+            patch.object(handoffctl, "require_policy_unchanged"),
+            patch.object(handoffctl.al, "prepare"),  # type: ignore[attr-defined]
+            patch.object(handoffctl, "sandboxed_envelope_command", return_value=["true"]),
+            patch.object(handoffctl, "locate", return_value=(None, {"task_revision": 4}, None)),
+            patch.object(handoffctl, "mutate"),
+            patch.object(handoffctl, "task_execution_locked", return_value=MagicMock()),
+            patch.object(
+                handoffctl,
+                "_run_envelope_subprocess",
+                side_effect=RuntimeError("launch boundary"),
+            ) as launch,
+            self.assertRaisesRegex(RuntimeError, "launch boundary"),
+        ):
+            handoffctl._cmd_run_fenced(args)
+        launch.assert_called_once()
+        self.assertEqual(93, launch.call_args.args[2].credential_fd)
 
 
 if __name__ == "__main__":  # pragma: no cover
