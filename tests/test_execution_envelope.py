@@ -14,6 +14,8 @@ from tools.execution_envelope import (
     Preflight,
     _capability_errors,
     _identity_errors,
+    _open_path,
+    _open_scope_fd,
     _paths,
     canonical_digest,
     digest,
@@ -174,6 +176,45 @@ class ExecutionEnvelopeTests(unittest.TestCase):
             "GIT_METADATA_CAPABILITY_DENIED",
             preflight(metadata_denied, "worker", "git-publication", ["src"], self.worktree).code,
         )
+
+    def test_publication_preflight_rejects_metadata_and_external_side_effects(self) -> None:
+        value = envelope() | {
+            "schema_version": 2,
+            "capabilities": {
+                "git_metadata": {"allowed": False},
+                "network": {"allowed": False},
+            },
+        }
+        cast(dict[str, dict[str, object]], value["command_classes"])["git-publication"] = {
+            "allowed": True
+        }
+        meta = self.meta() | {
+            "execution_envelope": value,
+            "execution_envelope_digest": canonical_digest(value),
+        }
+        self.assertEqual(
+            "GIT_METADATA_CAPABILITY_DENIED",
+            preflight(meta, "worker", "git-publication", ["src"], self.worktree).code,
+        )
+        self.assertEqual(
+            "EXTERNAL_SIDE_EFFECTS_DENIED",
+            preflight(meta, "worker", "test", ["src"], self.worktree, True).code,
+        )
+
+    def test_descriptor_scope_openers_reject_non_directories_and_unsafe_paths(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "file").write_text("x", encoding="utf-8")
+            root_fd = _open_path(root, directory=True)
+            try:
+                with self.assertRaisesRegex(RuntimeError, "non-directory"):
+                    _open_scope_fd(root_fd, "file/child")
+                with self.assertRaisesRegex(RuntimeError, "unsafe"):
+                    _open_scope_fd(root_fd, "../escape")
+            finally:
+                import os
+
+                os.close(root_fd)
 
     def test_validator_rejects_every_private_shape_boundary(self) -> None:
         value = envelope()

@@ -106,12 +106,12 @@ class ReplacementTests(unittest.TestCase):
         import tempfile
         from pathlib import Path
 
-        old = _envelope()
         successor = _envelope(2)
         args = self._args()
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            cases2: tuple[tuple[Callable[[dict[str, object]], object], str], ...] = (
+            old = _envelope()
+            cases2: tuple[tuple[Callable[[dict[str, Any]], object], str], ...] = (
                 (lambda m: m.pop("execution_envelope"), "existing bound"),
             )
             for mutate, message in cases2:
@@ -125,14 +125,14 @@ class ReplacementTests(unittest.TestCase):
                 self.assertRaisesRegex(RuntimeError, "envelope is invalid"),
             ):
                 execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
-            cases: tuple[tuple[Callable[[dict[str, object]], object], str], ...] = (
+            cases: tuple[tuple[Callable[[dict[str, Any]], object], str], ...] = (
                 (lambda e: e.update(task_revision=4), "revision does not match task"),
                 (lambda e: e.update(envelope_revision=9), "envelope revision does not match"),
                 (lambda e: e.update(envelope_id=old["envelope_id"]), "distinct successor"),
                 (lambda e: e.update(non_goals=["other restriction"]), "remove non-goals"),
             )
             for mutate, message in cases:
-                candidate = dict(successor)
+                candidate = cast(dict[str, Any], successor.copy())
                 mutate(candidate)
                 meta = self._meta()
                 with (
@@ -149,7 +149,7 @@ class ReplacementTests(unittest.TestCase):
         successor = _envelope(2)
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            cases3: tuple[tuple[Callable[[dict[str, object]], object], str], ...] = (
+            cases3: tuple[tuple[Callable[[dict[str, Any]], object], str], ...] = (
                 (lambda m: m.update(execution_envelope_ref=None), "coherent existing binding"),
                 (lambda m: m.update(spec_ref="other.json"), "task or spec"),
                 (lambda m: m.update(execution_envelope_revision=9), "successor revision"),
@@ -160,6 +160,50 @@ class ReplacementTests(unittest.TestCase):
                 mutate(meta)
                 with (
                     patch.object(execution_envelope, "load", return_value=(successor, "", [])),
+                    self.assertRaisesRegex(RuntimeError, message),
+                ):
+                    execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
+
+    def test_replace_bound_rejects_command_timeout_capability_and_history_widening(self) -> None:
+        import tempfile
+        from pathlib import Path
+
+        successor = _envelope(2)
+        args = self._args()
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            cases: tuple[tuple[Callable[[dict[str, Any]], object], str], ...] = (
+                (
+                    lambda e: e["command_classes"].update(
+                        {"test": {"allowed": True, "timeout_seconds": 120}}
+                    ),
+                    "command timeout",
+                ),
+                (
+                    lambda e: e["command_classes"].update({"read": {"allowed": True}}),
+                    "command classes",
+                ),
+                (
+                    lambda e: e.update(
+                        schema_version=2,
+                        capabilities={
+                            "network": {"allowed": True},
+                            "git_metadata": {"allowed": False},
+                        },
+                    ),
+                    "capabilities",
+                ),
+                (lambda e: e.update(non_goals=["new restriction"]), "remove non-goals"),
+            )
+            for mutate, message in cases:
+                candidate = dict(successor)
+                candidate["command_classes"] = cast(
+                    dict[str, Any], successor["command_classes"]
+                ).copy()
+                mutate(candidate)
+                meta = self._meta()
+                with (
+                    patch.object(execution_envelope, "load", return_value=(candidate, "", [])),
                     self.assertRaisesRegex(RuntimeError, message),
                 ):
                     execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
