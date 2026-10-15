@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1849 — Formal admission environment repair](tasks/AR-1849-formal-admission-env-repair.md) | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94% versus required 95%. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. | ar1849-formal-admission-env-luna |
-| P1 | [AR-1931 — AR-1849 publication capability successor](tasks/AR-1931.md) | State-only successor for the AR-1849 reviewed PR #171 publication capability. Bind a fresh schema-v2 execution envelope granting only git metadata and network publication authority; preserve AR-1849, its original envelope, and all prior history. | Implement the bounded scope and record local acceptance evidence. | ar1931-publication-capability-luna |
 
 ## Open
 

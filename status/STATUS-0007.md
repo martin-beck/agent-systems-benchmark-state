@@ -267,12 +267,13 @@
 | P3 | [AR-0406](../tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. |
 | P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done. |
 
-### Cancelled (2)
+### Cancelled (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1551](../tasks/AR-1551-platform-authority-deployment-bootstrap.md): First-customer platform authority deployment bootstrap | Unclaimed | Optional future production-live platform authority bootstrap; not a development qualification requirement. | No development action: deployment-owned authenticated authority is optional future production hardening. If live-provider production is later authorized, create a separately scoped successor; local/mock authority is sufficient for development qualification. |
 | P0 | [AR-1561](../tasks/AR-1561.md): State strict-mypy repair | Unclaimed | Repair strict mypy failures that prevent the changed coordination repository from reaching a releasable state. | Promote and resolve the latent strict-mypy import/typing failures after the formatter repair; preserve fail-closed optional authority boundaries and rerun hosted state verification. |
+| P1 | [AR-1931](../tasks/AR-1931.md): AR-1849 publication capability successor | Unclaimed | State-only successor for the AR-1849 reviewed PR #171 publication capability. Bind a fresh schema-v2 execution envelope granting only git metadata and network publication authority; preserve AR-1849, its original envelope, and all prior history. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Superseded (37)
 

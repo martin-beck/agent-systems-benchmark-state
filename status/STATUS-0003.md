@@ -3058,11 +3058,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | cancelled |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1931-publication-capability-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor for the AR-1849 reviewed PR #171 publication capability. Bind a fresh schema-v2 execution envelope granting only git metadata and network publication authority; preserve AR-1849, its original envelope, and all prior history. |
