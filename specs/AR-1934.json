@@ -1,8 +1,17 @@
 {
   "schema_version": 1,
-  "id": "AR-1934",
-  "title": "PR 1318 publication successor",
-  "summary": "Merge only coordinator PR #1318 through the authorized publication envelope.",
-  "acceptance": ["PR #1318 merged", "bounded post-merge evidence recorded"],
-  "predicates": []
+  "spec_ref": "specs/AR-1934.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "publication-capability", "description": "A schema-v2 envelope authorizes only coordinator PR #1318 publication."},
+    {"id": "history-preserved", "description": "AR-1933 and all prior task history remain unchanged."},
+    {"id": "formal-excluded", "description": "No TLC or formal qualification is run or claimed."}
+  ],
+  "definition_of_done": ["Bind the publication envelope through handoffctl.", "Merge PR #1318 only through handoffctl run with exact-head evidence.", "Record bounded post-merge lifecycle evidence."],
+  "inputs": [{"id": "reviewed-pr", "description": "Coordinator PR #1318 exact-head checks are green."}],
+  "outputs": [{"id": "publication-receipt", "description": "Authorized PR #1318 publication and post-merge evidence."}],
+  "allowed_tools": ["git", "gh", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["formal-gate-removal", "resource-bound-weakening", "history-rewrite", "force-push-main"],
+  "required_evidence_classes": ["mechanical", "hosted"],
+  "gates": [{"id": "publication", "description": "PR #1318 exact-head publication and post-merge verification pass."}]
 }
