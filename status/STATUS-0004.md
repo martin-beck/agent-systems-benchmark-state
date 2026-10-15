@@ -1,5 +1,23 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1691["AR-1691 - Planned"]:::status_planned
+        AR_1692["AR-1692 - Done"]:::status_done
+        AR_1693["AR-1693 - Planned"]:::status_planned
+        AR_1694["AR-1694 - Done"]:::status_done
+        AR_1695["AR-1695 - Done"]:::status_done
+        AR_1696["AR-1696 - Done"]:::status_done
+        AR_1697["AR-1697 - Planned"]:::status_planned
+        AR_1698["AR-1698 - Done"]:::status_done
+        AR_1699["AR-1699 - Done"]:::status_done
+    end
+    subgraph series_17["17 - Additional work"]
+        direction TB
+        AR_1700["AR-1700 - Done"]:::status_done
+        AR_1701["AR-1701 - Done"]:::status_done
+        AR_1702["AR-1702 - Blocked"]:::status_blocked
+        AR_1703["AR-1703 - Planned"]:::status_planned
+        AR_1704["AR-1704 - Done"]:::status_done
+        AR_1709["AR-1709 - Done"]:::status_done
         AR_1710["AR-1710 - Done"]:::status_done
         AR_1711["AR-1711 - Done"]:::status_done
         AR_1712["AR-1712 - Done"]:::status_done
@@ -222,6 +240,7 @@
         AR_1944["AR-1944 - Blocked"]:::status_blocked
         AR_1945["AR-1945 - In progress"]:::status_in_progress
         AR_1946["AR-1946 - Blocked"]:::status_blocked
+        AR_1947["AR-1947 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

@@ -3278,6 +3278,20 @@
 | Summary | Repair the authoritative outer handoffctl sandbox so a linked worktree&#x27;s resolved Git admin target is mounted at the sandbox-visible admin location using the bound descriptor, without host absolute-path leakage or fallback. Preserve AR-1941 through AR-1944 and add a hostile missing-admin-path test. Initial schema-v2 envelope authorizes network only for git-publication. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1947 — Map linked gitdir target
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the authoritative outer bwrap publication mount for linked worktrees whose .git is a gitdir file: parse the descriptor-backed target, safely resolve it under the repository admin root, and mount it at the sandbox-visible absolute gitdir path with required parents. Reject host-path leakage, unsafe, and missing targets; preserve AR-1941 through AR-1946 and do not rewrite the .git pointer or bypass isolation. Initial schema-v2 envelope authorizes network only for git-publication. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4030,21 +4044,3 @@ flowchart LR
         AR_1688["AR-1688 - Done"]:::status_done
         AR_1689["AR-1689 - Done"]:::status_done
         AR_1690["AR-1690 - Done"]:::status_done
-        AR_1691["AR-1691 - Planned"]:::status_planned
-        AR_1692["AR-1692 - Done"]:::status_done
-        AR_1693["AR-1693 - Planned"]:::status_planned
-        AR_1694["AR-1694 - Done"]:::status_done
-        AR_1695["AR-1695 - Done"]:::status_done
-        AR_1696["AR-1696 - Done"]:::status_done
-        AR_1697["AR-1697 - Planned"]:::status_planned
-        AR_1698["AR-1698 - Done"]:::status_done
-        AR_1699["AR-1699 - Done"]:::status_done
-    end
-    subgraph series_17["17 - Additional work"]
-        direction TB
-        AR_1700["AR-1700 - Done"]:::status_done
-        AR_1701["AR-1701 - Done"]:::status_done
-        AR_1702["AR-1702 - Blocked"]:::status_blocked
-        AR_1703["AR-1703 - Planned"]:::status_planned
-        AR_1704["AR-1704 - Done"]:::status_done
-        AR_1709["AR-1709 - Done"]:::status_done

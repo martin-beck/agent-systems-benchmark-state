@@ -573,6 +573,7 @@
 | [AR-1944](../tasks/AR-1944.md) | None | None |
 | [AR-1945](../tasks/AR-1945.md) | None | None |
 | [AR-1946](../tasks/AR-1946.md) | None | None |
+| [AR-1947](../tasks/AR-1947.md) | None | None |
 
 ## Complete AR inventory
 

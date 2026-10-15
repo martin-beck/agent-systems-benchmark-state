@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1947",
+  "issue": {
+    "number": 10077,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10077"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Linked-worktree git-publication resolves its admin target through the sandbox-visible mapped path; missing/unsafe targets fail closed; exact positive and hostile mapping tests pass; no direct push, credentials, formal, TLC, or history rewrite.",
+      "depends_on": [],
+      "id": "AR-1947",
+      "ownership": "ASB authoritative outer sandbox .git gitdir-target mapping only; preserve prior signed fixes and histories.",
+      "scope": "Repair the authoritative outer bwrap publication mount for linked worktrees whose .git is a gitdir file: parse the descriptor-backed target, safely resolve it under the repository admin root, and mount it at the sandbox-visible absolute gitdir path with required parents. Reject host-path leakage, unsafe, and missing targets; preserve AR-1941 through AR-1946 and do not rewrite the .git pointer or bypass isolation. Initial schema-v2 envelope authorizes network only for git-publication.",
+      "short_title": "Map linked gitdir target"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
