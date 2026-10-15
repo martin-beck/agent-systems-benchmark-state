@@ -1,5 +1,9 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1297](../tasks/AR-1297-task-schema-metadata.md) | None | None |
+| [AR-1298](../tasks/AR-1298-narrow-metadata-repair.md) | None | None |
+| [AR-1299](../tasks/AR-1299.md) | [AR-1190](../tasks/AR-1190.md) | None |
+| [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md), [AR-1305](../tasks/AR-1305-image-native-user-session.md), [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md) |
 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md), [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | None |
@@ -604,6 +608,7 @@
 | [AR-1952](../tasks/AR-1952.md) | None | None |
 | [AR-1953](../tasks/AR-1953.md) | None | None |
 | [AR-1954](../tasks/AR-1954.md) | None | None |
+| [AR-1955](../tasks/AR-1955.md) | None | None |
 
 ## Complete AR inventory
 
@@ -708,4 +713,3 @@
 | P0 | [AR-1571](../tasks/AR-1571.md): ASB development broker channel transport handoff | Unclaimed | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. | Remain blocked as historical evidence; the active exact inherited-fd qualification is tracked by ASB AR-1590 after TUI AR-1587 completes the real bridge. |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Obtain independent review of quality/AR-1613-20261007-current-paired-journey.json and reconcile exact protected-main paired-head policy before any done/release claim. |
 | P0 | [AR-1702](../tasks/AR-1702.md): Development live OpenRouter qualification | Unclaimed | Run credential-backed online OpenRouter smoke and typed negative tests for the merged ASB live path without mock fallback. | Provide OPENROUTER_API_KEY only in the worker runtime environment, then rerun one bounded real OpenRouter request at exact ASB main 31ca7a481fca8b79bfbff126b92db6c6118beb7c and record only redacted provider/model/timing/outcome metadata; retain the already-green credential-free negative matrix. |
-| P0 | [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md): Enforce protected-main admission for AR-1722 recovery | Unclaimed | Apply and independently verify ASB&#x27;s merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub. | Require all exact-main post-merge workflows for 2f52ecbaf79ae8316e0c2a42ad4c4a79dae5d9eb terminal-success, then invoke the merged typed settings apply once and audit normalized live state; stop on any rejected, partial, or ambiguous result. |

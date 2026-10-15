@@ -3390,6 +3390,20 @@
 | Summary | Repair compatibility between the supported Coordinator v0.7.16 vendor snapshot and ASB legacy fixtures: inactive-owner error ordering, envelope subprocess setup, vendor version/manifest expectations, and selector cases. Preserve fail-closed validation and do not weaken gates or run formal/TLC as implementation scope. |
 | Next action | Wait exact-head CI for 002c4f8f23; verify vendor integrity and coverage &gt;=95&#37;, then merge/reconcile. |
 
+### AR-1955 — Adopt state integrity repairs
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Publish only the already signed historical-ledger validation tolerance from ae352f4b3e and handoffctl size reduction from be9aea4648 on current ASB state main. Preserve AR-1861, AR-1862, AR-1926, AR-1949, AR-1945, and all active work; do not rewrite ledger history or change product behavior. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4034,15 +4048,3 @@ flowchart LR
         AR_1566["AR-1566 - Blocked"]:::status_blocked
         AR_1567["AR-1567 - Done"]:::status_done
         AR_1568["AR-1568 - Done"]:::status_done
-        AR_1569["AR-1569 - Done"]:::status_done
-        AR_1570["AR-1570 - Done"]:::status_done
-        AR_1571["AR-1571 - Blocked"]:::status_blocked
-        AR_1572["AR-1572 - Done"]:::status_done
-        AR_1573["AR-1573 - Done"]:::status_done
-        AR_1574["AR-1574 - Done"]:::status_done
-        AR_1576["AR-1576 - Done"]:::status_done
-        AR_1577["AR-1577 - Done"]:::status_done
-        AR_1578["AR-1578 - Done"]:::status_done
-        AR_1588["AR-1588 - Done"]:::status_done
-        AR_1589["AR-1589 - Done"]:::status_done
-        AR_1590["AR-1590 - Done"]:::status_done

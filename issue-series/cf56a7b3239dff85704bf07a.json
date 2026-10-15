@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1955",
+  "issue": {
+    "number": 10085,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10085"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Historical done-task ledgers validate without artifact rehashing, tools/handoffctl.py is at or below 200000 bytes, focused and configured non-formal state tests pass, exact-head CI and independent review pass, and post-merge doctor --live plus generated projections reconcile.",
+      "depends_on": [],
+      "id": "AR-1955",
+      "ownership": "ASB state tools/task_spec.py historical evidence-ledger validation, tools/handoffctl.py size repair, focused tests, quality evidence, and reviewed publication only; no AR-1950 or AR-1954 paths.",
+      "scope": "Publish only the already signed historical-ledger validation tolerance from ae352f4b3e and handoffctl size reduction from be9aea4648 on current ASB state main. Preserve AR-1861, AR-1862, AR-1926, AR-1949, AR-1945, and all active work; do not rewrite ledger history or change product behavior.",
+      "short_title": "Adopt state integrity repairs"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
