@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "evidence_ledger": {
-    "candidate_digest": "sha256:04bfdd25c798b53e54c8401244426b5499de195d1eeb28684bfc851249403f2b",
+    "candidate_digest": "sha256:9365f8525e24e1628164de0a8df92958c1ba8083475bd165b210daad49d5e600",
     "candidate_ref": "coordinator.vendor.json",
     "steps": [
       {
@@ -26,7 +26,7 @@
         "evidence_ref": "tests/test_handoffctl_vendor.py",
         "predicate_id": "quality-floor",
         "recorded_task_revision": 25,
-        "status": "pass"
+        "status": "stale"
       },
       {
         "candidate_digest": "sha256:e9f4d59af56b1ff76aa3d607e2dbbfa4b4f17fb8d33845a445945732cc26a842",
@@ -36,7 +36,7 @@
         "evidence_ref": "tests/test_roles.py",
         "predicate_id": "role-policy",
         "recorded_task_revision": 26,
-        "status": "pass"
+        "status": "stale"
       },
       {
         "candidate_digest": "sha256:0fef02fac6e98c47136abbacae9203a4da893f22588b2ee2f43f913717330d8b",
@@ -56,6 +56,16 @@
         "evidence_ref": "coordinator.vendor.json",
         "predicate_id": "vendor-lifecycle-alignment",
         "recorded_task_revision": 29,
+        "status": "stale"
+      },
+      {
+        "candidate_digest": "sha256:9365f8525e24e1628164de0a8df92958c1ba8083475bd165b210daad49d5e600",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:9365f8525e24e1628164de0a8df92958c1ba8083475bd165b210daad49d5e600",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "vendor-lifecycle-alignment",
+        "recorded_task_revision": 30,
         "status": "pass"
       }
     ]
@@ -70,9 +80,9 @@
   "spec_revision": 1,
   "status": "done",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-15T00:37:40+00:00",
+  "updated_at": "2026-10-15T00:42:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -195,3 +205,6 @@ or mutate AR-1826 until the adopted repair is verified.
 
 - 2026-10-15T00:37:40+00:00: Refresh stale vendor lifecycle ledger digest after reviewed repair
   tooling update.
+
+- 2026-10-15T00:42:41+00:00: Refresh all historical vendor lifecycle rows to current reviewed
+  artifact.
