@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1958-e1",
+  "envelope_revision": 1,
+  "task": "AR-1958",
+  "task_revision": 6,
+  "spec_ref": "specs/AR-1958.json",
+  "spec_revision": 1,
+  "outputs": [{"id": "coverage", "description": "Coverage and projection evidence"}],
+  "non_goals": ["Do not weaken quality gates or alter vendored projections"],
+  "path_scope": {"read": ["tools", "tests", "specs/AR-1958.json", "tasks/AR-1958.md"], "write": ["tests/test_ar1954_envelope_coverage.py", "specs/AR-1958.json", "envelopes/AR-1958-e1.json", "tasks/AR-1958.md"]},
+  "command_classes": {"read": {"allowed": true}, "test": {"allowed": true}, "source-write": {"allowed": true}},
+  "evidence": [{"id": "tests", "class": "unit-test", "required": true}],
+  "stop_conditions": [{"id": "blocked", "kind": "pause"}]
+}

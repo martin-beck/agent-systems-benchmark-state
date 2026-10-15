@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1958.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [{"id": "coverage", "description": "Configured coverage exceeds 95% with headroom."}, {"id": "projection", "description": "CURRENT.md and STATUS.md are regenerated through handoffctl."}, {"id": "publication", "description": "PR #174 exact-head checks, merge, doctor, and reconcile pass."}],
+  "definition_of_done": ["Add non-vendored positive and negative coverage tests.", "Regenerate projections after AR-1955/AR-1956 repairs.", "Publish the signed/DCO adoption through reviewed merge."],
+  "inputs": [{"id": "history", "description": "AR-1954 and PR #174 strict evidence."}, {"id": "repairs", "description": "Main-checkout AR-1955 and AR-1956 repairs."}],
+  "outputs": [{"id": "coverage", "description": "Coverage evidence above the configured floor."}, {"id": "projection", "description": "Supported generated-view reconciliation evidence."}, {"id": "publication", "description": "Hosted review, CI, merge, and doctor evidence."}],
+  "allowed_tools": ["git", "gh", "python", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["tlc", "agent-relay", "history-rewrite", "direct-task-edit", "gate-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "coverage", "description": "Configured coverage exceeds 95% with headroom."}, {"id": "projection", "description": "Generated views reconcile through the supported workflow."}, {"id": "publication", "description": "Exact signed/DCO candidate is reviewed, green, merged, and reconciled."}]
+}
