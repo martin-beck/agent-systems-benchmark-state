@@ -237,7 +237,7 @@
         AR_1941["AR-1941 - Blocked"]:::status_blocked
         AR_1942["AR-1942 - Blocked"]:::status_blocked
         AR_1943["AR-1943 - Blocked"]:::status_blocked
-        AR_1944["AR-1944 - Blocked"]:::status_blocked
+        AR_1944["AR-1944 - Open"]:::status_open
         AR_1945["AR-1945 - Blocked"]:::status_blocked
         AR_1946["AR-1946 - Blocked"]:::status_blocked
         AR_1947["AR-1947 - Blocked"]:::status_blocked
