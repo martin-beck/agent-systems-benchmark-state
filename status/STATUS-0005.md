@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) |
+| [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) |
 | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md) |
 | [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
@@ -565,6 +567,7 @@
 | [AR-1941](../tasks/AR-1941.md) | None | None |
 | [AR-1942](../tasks/AR-1942.md) | None | None |
 | [AR-1943](../tasks/AR-1943.md) | None | None |
+| [AR-1944](../tasks/AR-1944.md) | None | None |
 
 ## Complete AR inventory
 
@@ -688,4 +691,3 @@
 | P1 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Unclaimed | Add a bounded transport and sandbox fixture for MockAgents qualification. | Await reviewed AR-1252 integration allowing pinned MockAgents and Python client in one approved sandbox; then add real transport/lifecycle/egress tests. |
 | P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Unclaimed | Qualify MockAgents through the pinned Python sandbox. | Await AR-1258 pinned arm64 runner and AR-1255 transport evidence; then qualify protocol, cancellation, egress and restart. |
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
-| P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked. |

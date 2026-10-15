@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1944",
+  "issue": {
+    "number": 10074,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10074"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "State-main handoffctl uses the reviewed bound runner and linked-worktree admin mount during a bounded publication attempt, with positive and hostile activation tests; no direct push, credentials, formal, TLC, or history rewrite.",
+      "depends_on": [],
+      "id": "AR-1944",
+      "ownership": "ASB state runner activation only; preserve all prior signed fixes and histories.",
+      "scope": "Activate the reviewed AR-1943 outer-runner selection in the authoritative state-main handoffctl runtime before attempting bound publication; preserve AR-1941 through AR-1943, add exact activation and wrong-runner tests, and keep network authorization limited to git-publication.",
+      "short_title": "Activate state runner fix"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

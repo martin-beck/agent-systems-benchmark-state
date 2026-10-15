@@ -3236,6 +3236,20 @@
 | Summary | Repair the state checkout handoffctl outer publication bootstrap so its own preflight and mount preparation select the exact bound worktree runner implementation before invoking git-publication. Preserve AR-1942 runner-selection and AR-1941 descriptor mount fixes; add positive and hostile wrong-runner tests. Initial schema-v2 envelope authorizes network only for git-publication. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1944 — Activate state runner fix
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Activate the reviewed AR-1943 outer-runner selection in the authoritative state-main handoffctl runtime before attempting bound publication; preserve AR-1941 through AR-1943, add exact activation and wrong-runner tests, and keep network authorization limited to git-publication. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4032,16 +4046,3 @@ flowchart LR
         AR_1735["AR-1735 - Done"]:::status_done
         AR_1736["AR-1736 - Done"]:::status_done
         AR_1737["AR-1737 - Done"]:::status_done
-        AR_1738["AR-1738 - Done"]:::status_done
-        AR_1739["AR-1739 - Done"]:::status_done
-        AR_1740["AR-1740 - Done"]:::status_done
-        AR_1741["AR-1741 - Done"]:::status_done
-        AR_1742["AR-1742 - Done"]:::status_done
-        AR_1743["AR-1743 - Done"]:::status_done
-        AR_1744["AR-1744 - Done"]:::status_done
-        AR_1745["AR-1745 - Done"]:::status_done
-        AR_1746["AR-1746 - Blocked"]:::status_blocked
-        AR_1747["AR-1747 - Done"]:::status_done
-        AR_1748["AR-1748 - Done"]:::status_done
-        AR_1749["AR-1749 - Done"]:::status_done
-        AR_1750["AR-1750 - Done"]:::status_done
