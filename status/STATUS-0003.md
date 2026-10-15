@@ -3432,6 +3432,20 @@
 | Summary | Repair only authorized DNS/network visibility inside the bounded handoffctl publication sandbox so AR-1956 can reach the configured HTTPS Git remote. Preserve fail-closed network policy, reject unapproved destinations and selectors, and do not broaden network access or modify AR-1955/1956 source. |
 | Next action | Provision authorized sandbox DNS/network visibility for the git-publication envelope, then retry AR-1957 exact push and AR-1956 publication. |
 
+### AR-1958 — Finish v0.7.16 adoption gates
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Raise the nonformal execution-envelope coverage above the 95&#37; floor with headroom using non-vendored positive and negative tests, then regenerate CURRENT.md and STATUS.md through handoffctl after the main-checkout integrity and runner repairs AR-1955/AR-1956. Do not weaken gates, alter vendored projections, or claim completion before exact-head CI, merge, doctor, and reconcile pass. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4031,18 +4045,3 @@ flowchart LR
         AR_1521["AR-1521 - Superseded"]:::status_superseded
         AR_1522["AR-1522 - Blocked"]:::status_blocked
         AR_1523["AR-1523 - Done"]:::status_done
-        AR_1524["AR-1524 - Done"]:::status_done
-        AR_1525["AR-1525 - Done"]:::status_done
-        AR_1526["AR-1526 - Done"]:::status_done
-        AR_1527["AR-1527 - Done"]:::status_done
-        AR_1528["AR-1528 - Done"]:::status_done
-        AR_1529["AR-1529 - Done"]:::status_done
-        AR_1530["AR-1530 - Done"]:::status_done
-        AR_1531["AR-1531 - Blocked"]:::status_blocked
-        AR_1532["AR-1532 - Done"]:::status_done
-        AR_1533["AR-1533 - Done"]:::status_done
-        AR_1534["AR-1534 - Done"]:::status_done
-        AR_1535["AR-1535 - Blocked"]:::status_blocked
-        AR_1536["AR-1536 - Done"]:::status_done
-        AR_1537["AR-1537 - Blocked"]:::status_blocked
-        AR_1538["AR-1538 - Blocked"]:::status_blocked
