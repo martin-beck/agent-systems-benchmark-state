@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1956.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "runner", "description": "The supported runner resolves the bound linked-worktree Git admin path."},
+    {"id": "hostile", "description": "Wrong or substituted runner/admin paths fail closed."},
+    {"id": "publication", "description": "AR-1955 exact publication can be retried through the bound runner without direct push."}
+  ],
+  "definition_of_done": ["Bind immutable spec, envelope, and worktree.", "Repair only runner activation/admin mounting and focused tests.", "Retry AR-1955 publication through the supported lifecycle."],
+  "inputs": [{"id": "failure", "description": "AR-1955 bound publication failure and exact admin path."}],
+  "outputs": [{"id": "runner", "description": "Bound runner activation repair."}, {"id": "tests", "description": "Positive and hostile runner tests."}],
+  "allowed_tools": ["python", "uv", "git", "tools/handoffctl"],
+  "forbidden_tools": ["credentials", "formal", "tlc", "history-rewrite", "direct-push", "gate-weakening", "product-write"],
+  "required_evidence_classes": ["contract-test", "mechanical"],
+  "gates": [{"id": "focused", "description": "Runner activation and hostile path tests pass."}, {"id": "publication", "description": "AR-1955 publication is retried through the bound runner."}]
+}
