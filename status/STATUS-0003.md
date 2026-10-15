@@ -3450,11 +3450,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | gpt-5.6-luna-ar1885-v0715 |
 | Parent | None |
 | Children | None |
 | Summary | Repair the AR-1958 publication-capability omission by creating a bounded successor envelope/task authority. Admit git-publication and read-only Git metadata only for the exact AR-1958 worktree and declared paths, retain SSH-signed/DCO publication, and reject network, credentials, formal/TLC, arbitrary path widening, and history rewrite. |
