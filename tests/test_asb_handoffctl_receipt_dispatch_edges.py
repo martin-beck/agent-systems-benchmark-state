@@ -81,7 +81,7 @@ class HandoffctlReceiptDispatchEdgeTests(unittest.TestCase):
 
     def test_envelope_subprocess_preserves_or_omits_the_worktree_descriptor(self) -> None:
         completed = MagicMock()
-        inherited = argparse.Namespace(_envelope_worktree_fd=71)
+        inherited = argparse.Namespace(_envelope_worktree="/worktree", _envelope_worktree_fd=71)
         plain = argparse.Namespace()
         with patch.object(handoffctl.subprocess, "run", return_value=completed) as run:
             self.assertIs(completed, handoffctl._run_envelope_subprocess(["true"], 3.5, inherited))
@@ -91,6 +91,7 @@ class HandoffctlReceiptDispatchEdgeTests(unittest.TestCase):
                 (
                     (["true"],),
                     {
+                        "cwd": "/worktree",
                         "check": False,
                         "stdin": handoffctl.subprocess.DEVNULL,
                         "timeout": 3.5,
