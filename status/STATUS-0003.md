@@ -3408,11 +3408,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1956-runner-mount-20261015 |
 | Parent | None |
 | Children | None |
 | Summary | Repair only the supported handoffctl outer-runner and linked-worktree Git admin mount needed for bounded publication of AR-1955. Preserve AR-1955 signed candidate commits, AR-1950 and AR-1954 active work, all prior task history, and fail-closed path isolation. |
@@ -4048,4 +4048,3 @@ flowchart LR
         AR_1552["AR-1552 - Done"]:::status_done
         AR_1553["AR-1553 - Done"]:::status_done
         AR_1554["AR-1554 - Done"]:::status_done
-        AR_1555["AR-1555 - Done"]:::status_done

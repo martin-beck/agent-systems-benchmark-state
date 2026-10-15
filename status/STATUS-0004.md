@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1555["AR-1555 - Done"]:::status_done
         AR_1556["AR-1556 - Superseded"]:::status_superseded
         AR_1557["AR-1557 - Done"]:::status_done
         AR_1558["AR-1558 - Done"]:::status_done
@@ -370,7 +371,7 @@
         AR_1953["AR-1953 - Blocked"]:::status_blocked
         AR_1954["AR-1954 - In progress"]:::status_in_progress
         AR_1955["AR-1955 - In progress"]:::status_in_progress
-        AR_1956["AR-1956 - Open"]:::status_open
+        AR_1956["AR-1956 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
