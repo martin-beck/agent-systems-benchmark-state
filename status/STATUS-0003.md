@@ -3096,6 +3096,20 @@
 | Summary | Implement the smallest coordinator-owned credential handoff needed for authorized git-publication commands to use host gh authentication without exposing credentials in argv, envelopes, task records, evidence, or subprocess output. Preserve fail-closed capability and network gates, and do not alter AR-1849, AR-1931, AR-1932, PR #171, or historical state. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1934 — PR 1318 publication successor
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4026,14 +4040,3 @@ flowchart LR
         AR_1884["AR-1884 - Blocked"]:::status_blocked
         AR_1885["AR-1885 - Open"]:::status_open
         AR_1886["AR-1886 - Blocked"]:::status_blocked
-        AR_1887["AR-1887 - Blocked"]:::status_blocked
-        AR_1888["AR-1888 - Open"]:::status_open
-        AR_1889["AR-1889 - Open"]:::status_open
-        AR_1890["AR-1890 - Blocked"]:::status_blocked
-        AR_1891["AR-1891 - Blocked"]:::status_blocked
-        AR_1892["AR-1892 - Open"]:::status_open
-        AR_1893["AR-1893 - Blocked"]:::status_blocked
-        AR_1894["AR-1894 - Blocked"]:::status_blocked
-        AR_1895["AR-1895 - Blocked"]:::status_blocked
-        AR_1896["AR-1896 - Blocked"]:::status_blocked
-        AR_1897["AR-1897 - Done"]:::status_done
