@@ -3334,6 +3334,20 @@
 | Summary | Repair the handoffctl execution-envelope binding so a state-owned task can resolve explicitly declared ASB product test paths from the configured product checkout without treating the product checkout as the state worktree or broadening read/write isolation. Add positive and hostile path-resolution tests. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1951 — Adopt Coordinator v0.7.15
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt Agent Workflow Coordinator v0.7.15 at exact commit 02e3593136ba69c3160fb2143d0d946deb2f243d through the documented clean-source vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, tools/handoffctl_vendor.py verifier inputs, and generated integrity evidence. Preserve all task histories and overlays; no formal/TLC, Agent Relay, runtime downloads, or direct state edits. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4034,18 +4048,3 @@ flowchart LR
         AR_1631["AR-1631 - Done"]:::status_done
         AR_1632["AR-1632 - Done"]:::status_done
         AR_1633["AR-1633 - Done"]:::status_done
-        AR_1634["AR-1634 - Done"]:::status_done
-        AR_1635["AR-1635 - Done"]:::status_done
-        AR_1636["AR-1636 - Done"]:::status_done
-        AR_1637["AR-1637 - Done"]:::status_done
-        AR_1638["AR-1638 - Done"]:::status_done
-        AR_1639["AR-1639 - Done"]:::status_done
-        AR_1640["AR-1640 - Done"]:::status_done
-        AR_1641["AR-1641 - Done"]:::status_done
-        AR_1642["AR-1642 - Done"]:::status_done
-        AR_1643["AR-1643 - Planned"]:::status_planned
-        AR_1644["AR-1644 - Done"]:::status_done
-        AR_1645["AR-1645 - Done"]:::status_done
-        AR_1646["AR-1646 - Done"]:::status_done
-        AR_1647["AR-1647 - Done"]:::status_done
-        AR_1648["AR-1648 - Done"]:::status_done

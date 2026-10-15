@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1951",
+  "issue": {
+    "number": 10081,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10081"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Exact v0.7.15 sync and vendor verification pass; AR-1950 root-qualified envelope compatibility tests pass; focused and configured non-formal gates, exact-head review/CI, merge, doctor, and post-merge verification pass.",
+      "depends_on": [],
+      "id": "AR-1951",
+      "ownership": "ASB coordinator vendor snapshot and generated integrity evidence only; preserve unrelated task, plan, envelope, and product files.",
+      "scope": "Adopt Agent Workflow Coordinator v0.7.15 at exact commit 02e3593136ba69c3160fb2143d0d946deb2f243d through the documented clean-source vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, tools/handoffctl_vendor.py verifier inputs, and generated integrity evidence. Preserve all task histories and overlays; no formal/TLC, Agent Relay, runtime downloads, or direct state edits.",
+      "short_title": "Adopt Coordinator v0.7.15"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
