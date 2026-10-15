@@ -3068,6 +3068,20 @@
 | Summary | State-only successor for the AR-1849 reviewed PR #171 publication capability. Bind a fresh schema-v2 execution envelope granting only git metadata and network publication authority; preserve AR-1849, its original envelope, and all prior history. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1932 — AR-1849 publication capability successor
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only successor for the AR-1849 reviewed PR #171 publication capability. Bind a fresh schema-v2 execution envelope granting only git metadata and network publication authority; preserve AR-1849, its original envelope, and all prior history. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4025,14 +4039,3 @@ flowchart LR
         AR_1908["AR-1908 - Open"]:::status_open
         AR_1909["AR-1909 - Blocked"]:::status_blocked
         AR_1910["AR-1910 - Open"]:::status_open
-        AR_1911["AR-1911 - Planned"]:::status_planned
-        AR_1912["AR-1912 - Done"]:::status_done
-        AR_1913["AR-1913 - Planned"]:::status_planned
-        AR_1914["AR-1914 - Planned"]:::status_planned
-        AR_1915["AR-1915 - Blocked"]:::status_blocked
-        AR_1916["AR-1916 - Blocked"]:::status_blocked
-        AR_1917["AR-1917 - Open"]:::status_open
-        AR_1918["AR-1918 - Done"]:::status_done
-        AR_1919["AR-1919 - Open"]:::status_open
-        AR_1920["AR-1920 - Blocked"]:::status_blocked
-        AR_1921["AR-1921 - Done"]:::status_done

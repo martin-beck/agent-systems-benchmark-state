@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1932",
+  "issue": {
+    "number": 10062,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10062"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Claim AR-1932, bind the fresh envelope, merge only PR #171 through handoffctl run, and record bounded post-merge evidence. Do not run TLC/formal qualification or mutate AR-1841.",
+      "depends_on": [],
+      "id": "AR-1932",
+      "ownership": "ASB coordination state only; no product source, vendor, formal, TLC, or historical task changes.",
+      "scope": "State-only successor for the AR-1849 reviewed PR #171 publication capability. Bind a fresh schema-v2 execution envelope granting only git metadata and network publication authority; preserve AR-1849, its original envelope, and all prior history.",
+      "short_title": "AR-1849 publication capability successor"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
