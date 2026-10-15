@@ -140,6 +140,21 @@ class TaskSpecTests(unittest.TestCase):
                 evidence_ledger_errors(root, meta),
             )
 
+    def test_repair_admission_can_skip_only_historical_ledger_validation(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            spec = load("AR-0070.json")
+            spec["spec_ref"] = "spec.json"
+            (root / "spec.json").write_text(json.dumps(spec), encoding="utf-8")
+            meta = {
+                "id": "AR-0070",
+                "spec_ref": "spec.json",
+                "spec_revision": 1,
+                "evidence_ledger": {"steps": "retained malformed history"},
+            }
+            self.assertEqual([], task_spec_errors(root, meta, include_ledger=False))
+            self.assertIn("evidence ledger is incomplete or unknown", task_spec_errors(root, meta))
+
     def test_public_schemas_accept_additive_fixture_and_reject_collisions(self) -> None:
         spec_schema = json.loads((ROOT / "schema/task-spec.schema.json").read_text())
         policy_schema = json.loads((ROOT / "schema/task-spec-policy.schema.json").read_text())

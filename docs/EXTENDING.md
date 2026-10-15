@@ -112,3 +112,10 @@ predicate, evidence class, reference, and digest are still validated strictly.
 Active, owned, stale-revision, malformed-target, symlink, traversal, same-
 candidate, or digest-mismatched requests fail closed. Ordinary `accept` remains
 owner- and active-task-bound and does not inherit this repair exception.
+
+Admission has one corresponding seam: while this command is mutating, the outer
+mutation validator omits only the historical ledger revalidation. The repair
+function immediately validates the completed, inactive, unowned target, task
+specification, fresh candidate and evidence, then appends the audited correction.
+No other command may use this omission, and a normal lifecycle transition still
+validates the complete ledger before it can commit.

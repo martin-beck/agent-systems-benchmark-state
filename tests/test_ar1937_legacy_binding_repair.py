@@ -1,3 +1,5 @@
+# Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
+# SPDX-License-Identifier: MIT
 """Positive and hostile coverage for the exact AR-1937 binding repair."""
 
 import argparse
