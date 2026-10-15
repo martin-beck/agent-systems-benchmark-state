@@ -3296,11 +3296,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1948-sandbox-interpreter-luna |
 | Parent | None |
 | Children | None |
 | Summary | Repair the execution sandbox runtime so bounded test commands can invoke the reviewed local Python interpreter without downloads or broad host mounts; preserve fail-closed path scope and network policy, and add positive/negative interpreter-resolution tests. |
@@ -4045,4 +4045,3 @@ flowchart LR
         AR_1675["AR-1675 - Planned"]:::status_planned
         AR_1676["AR-1676 - Planned"]:::status_planned
         AR_1677["AR-1677 - Planned"]:::status_planned
-        AR_1678["AR-1678 - Done"]:::status_done
