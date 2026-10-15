@@ -634,7 +634,7 @@
 
 ## Complete AR inventory
 
-### In progress (7)
+### In progress (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -644,7 +644,6 @@
 | P1 | [AR-1955](../tasks/AR-1955.md): Adopt state integrity repairs | codex-ar1955-state-integrity-20261015 | Publish only the already signed historical-ledger validation tolerance from ae352f4b3e and handoffctl size reduction from be9aea4648 on current ASB state main. Preserve AR-1861, AR-1862, AR-1926, AR-1949, AR-1945, and all active work; do not rewrite ledger history or change product behavior. | Repair supported linked-worktree admin mount/runner activation, then rerun bound git-publication for signed candidate 2d8a00b259. |
 | P1 | [AR-1956](../tasks/AR-1956.md): Repair runner mount | codex-ar1956-runner-mount-20261015 | Repair only the supported handoffctl outer-runner and linked-worktree Git admin mount needed for bounded publication of AR-1955. Preserve AR-1955 signed candidate commits, AR-1950 and AR-1954 active work, all prior task history, and fail-closed path isolation. | Repair authorized network/DNS visibility inside the bounded publication sandbox, then retry exact AR-1956 push; otherwise hand off signed candidate 0a05e5a165 with this fail-closed evidence. |
 | P1 | [AR-1957](../tasks/AR-1957.md): Repair sandbox DNS | codex-ar1957-sandbox-dns-20261015 | Repair only authorized DNS/network visibility inside the bounded handoffctl publication sandbox so AR-1956 can reach the configured HTTPS Git remote. Preserve fail-closed network policy, reject unapproved destinations and selectors, and do not broaden network access or modify AR-1955/1956 source. | Provision authorized sandbox DNS/network visibility for the git-publication envelope, then retry AR-1957 exact push and AR-1956 publication. |
-| P1 | [AR-1959](../tasks/AR-1959.md): Authorize AR-1958 publication | gpt-5.6-luna-ar1885-v0715 | Repair the AR-1958 publication-capability omission by creating a bounded successor envelope/task authority. Admit git-publication and read-only Git metadata only for the exact AR-1958 worktree and declared paths, retain SSH-signed/DCO publication, and reject network, credentials, formal/TLC, arbitrary path widening, and history rewrite. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (17)
 
@@ -668,7 +667,7 @@
 | P1 | [AR-1934](../tasks/AR-1934.md): PR 1318 publication successor | Unclaimed | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1936](../tasks/AR-1936.md): Integrate credential FD handoff | Unclaimed | Integrate the already-reviewed coordinator credential-handoff contract into the ASB state handoffctl run path: admit an explicit credential FD only for authorized git-publication execution, pass it and the worktree FD to the bounded subprocess, fail closed when the helper is unavailable or the descriptor is invalid, and add no formal/TLC or unrelated runtime changes. | Implement the bounded scope and record local acceptance evidence. |
 
-### Blocked (141)
+### Blocked (142)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -726,3 +725,5 @@
 | P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Unclaimed | Lifecycle expiry fencing repaired and covered by seven focused plus 167 full asb-runtime tests; production platform authority callsite remains absent. | Development qualification is not blocked: retain the passing lifecycle-fencing tests and use deterministic local/mock and strict-replay authority for development. Route any non-test deployment source to optional future production hardening; do not make it a local qualification gate. |
 | P0 | [AR-1509](../tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | Unclaimed | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Blocked: implement a real runtime/control platform-authority adapter that obtains credential/enrollment/private roots from authenticated control state, emits a control-authenticated receipt, wires materialize_provisioner into live run/sweep, and rechecks restart/revocation/expiry at transitions; preserve this worktree for successor AR. |
 | P0 | [AR-1510](../tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | Unclaimed | Provider boundary and expiry fencing are implemented and runtime/CLI tests mostly pass; ordinary production dispatch still lacks an authenticated non-test platform material source. | Development qualification is not blocked: wire and test the opaque source with deterministic local/mock and strict-replay authority through ordinary run/sweep. A platform-owned deployment adapter is optional future production hardening and must not gate local qualification. |
+| P0 | [AR-1512](../tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Unclaimed | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Independent exact-head review of a4064abf; create successor for authenticated lease-to-LiveProviderRuntimeHandle bridge, then publish exact-head PR/CI if review accepts provider-free boundary. |
+| P0 | [AR-1518](../tasks/AR-1518.md): C | Unclaimed | Capacity profile boots and runs, but the 1700-second bounded QEMU attempt timed out without terminal TLC result or attestation. | Use AR-1519 for separately scoped reduced-model development; do not claim AR-1307 or AR-1308 formal qualification. |

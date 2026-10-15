@@ -419,7 +419,7 @@
         AR_1956["AR-1956 - In progress"]:::status_in_progress
         AR_1957["AR-1957 - In progress"]:::status_in_progress
         AR_1958["AR-1958 - Blocked"]:::status_blocked
-        AR_1959["AR-1959 - In progress"]:::status_in_progress
+        AR_1959["AR-1959 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
