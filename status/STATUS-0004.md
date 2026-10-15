@@ -325,7 +325,7 @@
         AR_1950["AR-1950 - In progress"]:::status_in_progress
         AR_1951["AR-1951 - Blocked"]:::status_blocked
         AR_1952["AR-1952 - Blocked"]:::status_blocked
-        AR_1953["AR-1953 - Planned"]:::status_planned
+        AR_1953["AR-1953 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
