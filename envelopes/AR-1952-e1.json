@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1952-e1",
+  "envelope_revision": 1,
+  "task": "AR-1952",
+  "task_revision": 5,
+  "spec_ref": "specs/AR-1952.json",
+  "spec_revision": 1,
+  "outputs": [{"id": "vendor-adoption", "description": "Verify the exact v0.7.16 vendor snapshot."}, {"id": "source-binding", "description": "Record source-root admission evidence."}, {"id": "publication", "description": "Verify hosted review, CI, merge, release, and reconciliation."}],
+  "non_goals": ["Do not substitute another Coordinator commit.", "Do not weaken path, symlink, traversal, or lifecycle validation.", "Do not copy external source files into the ASB checkout."],
+  "path_scope": {"read": ["coordinator.vendor.json", "vendor/agent-workflow-coordinator", "tools/handoffctl_vendor.py", "docs", "tests", "schema"], "write": ["coordinator.vendor.json", "vendor/agent-workflow-coordinator", "tools/handoffctl_vendor.py", "quality"]},
+  "command_classes": {"read": {"allowed": true}, "test": {"allowed": true, "timeout_seconds": 900}, "source-write": {"allowed": true, "timeout_seconds": 900}, "git-publication": {"allowed": true, "timeout_seconds": 900}},
+  "evidence": [{"id": "vendor", "class": "mechanical", "required": true}, {"id": "compatibility", "class": "contract-test", "required": true}, {"id": "publication", "class": "hosted", "required": true}],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}, {"id": "formal", "kind": "deny"}, {"id": "relay", "kind": "deny"}]
+}
