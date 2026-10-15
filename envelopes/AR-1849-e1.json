@@ -7,7 +7,8 @@
   "spec_ref": "specs/AR-1849.json",
   "spec_revision": 1,
   "capabilities": {
-    "git_metadata": {"allowed": true}
+    "git_metadata": {"allowed": true},
+    "network": {"allowed": true}
   },
   "outputs": [
     {"id": "publication", "description": "Verify reviewed PR #171 exact-head publication and post-merge state evidence."}
