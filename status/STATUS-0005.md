@@ -561,7 +561,7 @@
 
 ## Complete AR inventory
 
-### In progress (6)
+### In progress (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -571,8 +571,9 @@
 | P1 | [AR-1936](../tasks/AR-1936.md): Integrate credential FD handoff | ar1932-publication-capability-luna | Integrate the already-reviewed coordinator credential-handoff contract into the ASB state handoffctl run path: admit an explicit credential FD only for authorized git-publication execution, pass it and the worktree FD to the bounded subprocess, fail closed when the helper is unavailable or the descriptor is invalid, and add no formal/TLC or unrelated runtime changes. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1939](../tasks/AR-1939.md): Repair stale evidence ledgers | ar1939-ledger-repair-luna | Repair the released handoffctl predicate-ledger transition so a completed inactive task with stale historical evidence rows can append one fresh, exactly digested correction without rewriting or deleting history. Apply the bounded repair to AR-1861, AR-1862, and AR-1926 only; preserve all task identities, privacy boundaries, and fail-closed validation for new evidence. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1940](../tasks/AR-1940.md): Repair stale ledger successor | ar1940-ledger-repair-luna | Create a successor for blocked AR-1939 with the same bounded stale-history-tolerant predicate-ledger repair and an initial schema-v2 execution envelope that authorizes network only for git-publication; preserve historical rows and fail closed for new evidence. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1941](../tasks/AR-1941.md): Repair sandbox admin mounts | ar1941-sandbox-admin-luna | Repair the handoffctl execution-envelope sandbox so linked Git worktrees resolve required admin metadata through sandbox-visible descriptors without leaking host absolute paths, while retaining the bounded AR-1940 stale-ledger tolerance. Add positive and negative admin-metadata mount tests, including missing metadata and host-path rejection; use an initial schema-v2 envelope with network authorized only for git-publication. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (16)
+### Open (15)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -591,7 +592,6 @@
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | Unclaimed | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | Unclaimed | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1941](../tasks/AR-1941.md): Repair sandbox admin mounts | Unclaimed | Repair the handoffctl execution-envelope sandbox so linked Git worktrees resolve required admin metadata through sandbox-visible descriptors without leaking host absolute paths, while retaining the bounded AR-1940 stale-ledger tolerance. Add positive and negative admin-metadata mount tests, including missing metadata and host-path rejection; use an initial schema-v2 envelope with network authorized only for git-publication. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (125)
 
