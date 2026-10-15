@@ -3226,11 +3226,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1943-outer-runner-bootstrap-luna |
 | Parent | None |
 | Children | None |
 | Summary | Repair the state checkout handoffctl outer publication bootstrap so its own preflight and mount preparation select the exact bound worktree runner implementation before invoking git-publication. Preserve AR-1942 runner-selection and AR-1941 descriptor mount fixes; add positive and hostile wrong-runner tests. Initial schema-v2 envelope authorizes network only for git-publication. |
