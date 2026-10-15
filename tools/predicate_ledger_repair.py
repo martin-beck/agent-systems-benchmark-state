@@ -25,6 +25,13 @@ _DIGEST = re.compile(r"^sha256:[0-9a-f]{64}$")
 _MAX_REASON = 512
 
 
+def stale_historical_passes(steps: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Retain every historical row while invalidating all passes for a new candidate."""
+    return [
+        {**row, "status": "stale"} if row.get("status") == "pass" else dict(row) for row in steps
+    ]
+
+
 def add_parser(commands: argparse._SubParsersAction[argparse.ArgumentParser]) -> None:
     item = commands.add_parser("repair-predicate-ledger")
     item.add_argument("task")
@@ -102,9 +109,21 @@ def repair(  # noqa: C901
         or _digest(root, candidate_ref) != candidate_digest
     ):
         raise RuntimeError("predicate-ledger repair candidate is stale")
-    if (candidate_ref, candidate_digest) == (
+    same_candidate = (candidate_ref, candidate_digest) == (
         ledger.get("candidate_ref"),
         ledger.get("candidate_digest"),
+    )
+    if same_candidate and not any(
+        isinstance(row, dict)
+        and (
+            (row.get("status") == "stale"
+            and (row.get("candidate_ref"), row.get("candidate_digest"))
+            == (candidate_ref, candidate_digest))
+            or (row.get("status") == "pass"
+            and (row.get("candidate_ref"), row.get("candidate_digest"))
+            != (candidate_ref, candidate_digest))
+        )
+        for row in steps
     ):
         raise RuntimeError("predicate-ledger repair candidate is not new")
     if args.evidence_class not in selected_policy.classes:
@@ -120,14 +139,29 @@ def repair(  # noqa: C901
         "recorded_task_revision": int(meta["task_revision"]) + 1,
     }
     prospective = dict(ledger, candidate_ref=candidate_ref, candidate_digest=candidate_digest)
-    historical = []
+    historical: list[dict[str, Any]] = []
     for row in steps:
         if not isinstance(row, dict):
             raise RuntimeError("predicate-ledger repair found a malformed historical row")
-        retained = dict(row)
-        if retained.get("predicate_id") == predicate and retained.get("status") == "pass":
-            retained["status"] = "stale"
-        historical.append(retained)
+        historical.append(dict(row))
+    historical = stale_historical_passes(historical)
+    if same_candidate:
+        fallback = next(
+            (
+                (row.get("candidate_ref"), row.get("candidate_digest"))
+                for row in historical
+                if row.get("status") == "stale"
+                and (row.get("candidate_ref"), row.get("candidate_digest"))
+                != (candidate_ref, candidate_digest)
+            ),
+            None,
+        )
+        if fallback is not None:
+            for row in historical:
+                if row.get("status") == "stale" and (
+                    row.get("candidate_ref"), row.get("candidate_digest")
+                ) == (candidate_ref, candidate_digest):
+                    row["candidate_ref"], row["candidate_digest"] = fallback
     prospective["steps"] = [*historical, fresh]
     if not _DIGEST.fullmatch(evidence_digest):
         raise RuntimeError("predicate-ledger repair evidence digest is invalid")

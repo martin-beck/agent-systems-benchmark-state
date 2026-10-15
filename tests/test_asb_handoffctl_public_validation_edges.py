@@ -24,6 +24,7 @@ from tools import (
     execution_envelope,
     handoffctl,
     legacy_binding_repair,
+    predicate_ledger_repair,
     production_upgrade_binding,
     resume_card_runtime,
     retry_circuit,
@@ -598,6 +599,17 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
         args.worktree_key = "asb-recovery-20261015"
         with self.assertRaisesRegex(RuntimeError, "requires --expected-branch"):
             legacy_binding_repair.repair(args, dict(meta, branch="codex/recovery"))
+
+    def test_predicate_repair_stales_all_prior_passes_but_retains_history(self) -> None:
+        rows = [
+            {"predicate_id": "scope", "status": "pass", "recorded_task_revision": 2},
+            {"predicate_id": "history", "status": "pass", "recorded_task_revision": 2},
+            {"predicate_id": "scope", "status": "stale", "recorded_task_revision": 1},
+        ]
+        repaired = predicate_ledger_repair.stale_historical_passes(rows)
+        self.assertEqual(["stale", "stale", "stale"], [row["status"] for row in repaired])
+        self.assertEqual(3, len(repaired))
+        self.assertEqual("pass", rows[0]["status"])
 
     def test_worker_scope_rejects_unreadable_and_invalid_boot_identity(self) -> None:
         with (
