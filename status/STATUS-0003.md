@@ -3054,6 +3054,20 @@
 | Summary | Adopt Coordinator v0.7.14 at exact commit c40457ec0696925d021a4996fb07f44d3b067f4d through tagged vendor sync and integrity verification. Generate a fresh privacy-safe AR-1926 candidate and invoke v0.7.14 repair-predicate-ledger to append one audited correction, then reconcile and doctor --live. Preserve AR-1926/1928/1929 history and untracked AR-1919; no product, network, downloads, mounts, formal, or TLC. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1931 — AR-1849 publication capability successor
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | State-only successor for the AR-1849 reviewed PR #171 publication capability. Bind a fresh schema-v2 execution envelope granting only git metadata and network publication authority; preserve AR-1849, its original envelope, and all prior history. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4022,19 +4036,3 @@ flowchart LR
         AR_1919["AR-1919 - Open"]:::status_open
         AR_1920["AR-1920 - Blocked"]:::status_blocked
         AR_1921["AR-1921 - Done"]:::status_done
-        AR_1922["AR-1922 - Blocked"]:::status_blocked
-        AR_1923["AR-1923 - Blocked"]:::status_blocked
-        AR_1924["AR-1924 - Done"]:::status_done
-        AR_1925["AR-1925 - Blocked"]:::status_blocked
-        AR_1926["AR-1926 - Done"]:::status_done
-        AR_1928["AR-1928 - Blocked"]:::status_blocked
-        AR_1929["AR-1929 - Blocked"]:::status_blocked
-        AR_1930["AR-1930 - Blocked"]:::status_blocked
-    end
-    AR_0001 --> AR_0002
-    AR_0001 --> AR_0003
-    AR_0001 --> AR_0101
-    AR_0001 --> AR_0501
-    AR_0001 --> AR_0701
-    AR_0002 --> AR_0004
-    AR_0002 --> AR_0005

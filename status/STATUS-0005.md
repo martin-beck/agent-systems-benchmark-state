@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) |
+| [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md), [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md), [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md), [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) |
 | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 | [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
@@ -532,6 +534,7 @@
 | [AR-1928](../tasks/AR-1928.md) | None | None |
 | [AR-1929](../tasks/AR-1929.md) | None | None |
 | [AR-1930](../tasks/AR-1930.md) | None | None |
+| [AR-1931](../tasks/AR-1931.md) | None | None |
 
 ## Complete AR inventory
 
@@ -675,5 +678,3 @@
 | P1 | [AR-1904](../tasks/AR-1904.md): Bootstrap publication scope | Unclaimed | Create a narrow successor for AR-1901&#x27;s worktree and spec-retention failure using only handoffctl-authorized state paths and commands. Retain AR-1901 immutable task, envelope, bindings, and evidence; do not perform out-of-band Git/state edits, broaden paths, or alter product files. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1906](../tasks/AR-1906.md): Retain envelope artifacts | Unclaimed | Create a narrow successor for bind-spec/bind-envelope candidate retention. Use only handoffctl issue-series and authorized coordinator paths; preserve AR-1901 through AR-1905 immutable records, reject direct Git/state edits and arbitrary paths, and do not alter product files. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1909](../tasks/AR-1909.md): Bootstrap retention worktree | Unclaimed | Create a narrow successor for the missing direct worktree needed to execute AR-1906. Use only handoffctl-authorized worktree and test paths; do not create worktrees out of band, rewrite bindings, broaden paths, alter product files, or mutate prior histories. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1915](../tasks/AR-1915.md): Adopt coordinator privacy fix | Unclaimed | Adopt upstream Agent Workflow Coordinator merge a4defa3880b4f371085b0bfd4eef127489c1eab7 into ASB state through the documented clean-source sync-development path. Change only vendored Coordinator files and generated integrity evidence; preserve AR-1904, AR-1906, AR-1909, AR-1912 artifacts and all prior history. No product files, arbitrary paths, network-dependent runtime behavior, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1916](../tasks/AR-1916.md): Refresh stale ledger digests | Unclaimed | Refresh only the stale evidence_ledger candidate and mechanical evidence digests in ASB tasks AR-1861 and AR-1862 to the exact current coordinator.vendor.json bytes after AR-1878 recovery; preserve every other task field and all historical records, and do not run formal or TLC checks. | Record exact signed commit and post-merge doctor evidence; broader vendor manifest test remains outside ledger-only scope. |
