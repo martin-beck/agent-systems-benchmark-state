@@ -3110,6 +3110,20 @@
 | Summary | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1935 — Coordinator PR publication
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Coordinator checkout successor for PR #1318 publication. Bind exact coordinator worktree and branch with only credential helper read access, git metadata, and network publication authority. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4030,13 +4044,3 @@ flowchart LR
         AR_1874["AR-1874 - Superseded"]:::status_superseded
         AR_1875["AR-1875 - Superseded"]:::status_superseded
         AR_1876["AR-1876 - Superseded"]:::status_superseded
-        AR_1877["AR-1877 - Done"]:::status_done
-        AR_1878["AR-1878 - Open"]:::status_open
-        AR_1879["AR-1879 - Blocked"]:::status_blocked
-        AR_1880["AR-1880 - Blocked"]:::status_blocked
-        AR_1881["AR-1881 - Open"]:::status_open
-        AR_1882["AR-1882 - Blocked"]:::status_blocked
-        AR_1883["AR-1883 - Blocked"]:::status_blocked
-        AR_1884["AR-1884 - Blocked"]:::status_blocked
-        AR_1885["AR-1885 - Open"]:::status_open
-        AR_1886["AR-1886 - Blocked"]:::status_blocked

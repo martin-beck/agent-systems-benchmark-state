@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
+| [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | None |
 | [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | None |
 | [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
 | [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md), [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) |
@@ -544,6 +546,7 @@
 | [AR-1932](../tasks/AR-1932.md) | None | None |
 | [AR-1933](../tasks/AR-1933.md) | None | None |
 | [AR-1934](../tasks/AR-1934.md) | None | None |
+| [AR-1935](../tasks/AR-1935.md) | None | None |
 
 ## Complete AR inventory
 
@@ -681,5 +684,3 @@
 | P1 | [AR-1890](../tasks/AR-1890.md): Admit recovery scope | Unclaimed | Create a state-only successor envelope for the focused AR-1889 recovery tests that explicitly admits tools/fast_receipt_cli.py and its required test dependencies. Preserve AR-1889 and AR-1878 through AR-1888; do not bypass the expired-claim blocker or run formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1891](../tasks/AR-1891.md): Reconcile terminal recovery | Unclaimed | Add state-only recovery reconciliation for expired AR-1878 terminal-result evidence. Require exact target/revision/reservation/result/envelope, expiry, terminal EXIT, absent worker/claim_process, and operator evidence; immutable audit then existing recovery. Reject arbitrary, active/unexpired, mismatched, malformed/missing, cross-root, force-clear, and publication inputs. Preserve AR-1878 through AR-1890; no product/vendor/formal/TLC state. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1893](../tasks/AR-1893.md): Repair envelope replacement schema | Unclaimed | State-only repair to admit the authorized execution_envelope_replacements task field and validator path needed to replace AR-1892&#x27;s malformed predecessor envelope without widening unrelated scope. Preserve AR-1892, AR-1891, AR-1890 and earlier histories; no claim bypass, cross-root, network, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1894](../tasks/AR-1894.md): Admit abandonment dependency | Unclaimed | State-only successor admitting exactly tools/execution_abandonment.py for the AR-1893 focused schema test. Preserve AR-1893, AR-1892, AR-1891, AR-1890 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1895](../tasks/AR-1895.md): Admit receipt dependency | Unclaimed | State-only successor admitting exactly tools/execution_receipt.py for the AR-1894 focused replacement test. Preserve AR-1894 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |

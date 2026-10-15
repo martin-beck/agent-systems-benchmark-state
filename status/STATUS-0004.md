@@ -1,5 +1,15 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1877["AR-1877 - Done"]:::status_done
+        AR_1878["AR-1878 - Open"]:::status_open
+        AR_1879["AR-1879 - Blocked"]:::status_blocked
+        AR_1880["AR-1880 - Blocked"]:::status_blocked
+        AR_1881["AR-1881 - Open"]:::status_open
+        AR_1882["AR-1882 - Blocked"]:::status_blocked
+        AR_1883["AR-1883 - Blocked"]:::status_blocked
+        AR_1884["AR-1884 - Blocked"]:::status_blocked
+        AR_1885["AR-1885 - Open"]:::status_open
+        AR_1886["AR-1886 - Blocked"]:::status_blocked
         AR_1887["AR-1887 - Blocked"]:::status_blocked
         AR_1888["AR-1888 - Open"]:::status_open
         AR_1889["AR-1889 - Open"]:::status_open
@@ -50,6 +60,7 @@
         AR_1932["AR-1932 - Blocked"]:::status_blocked
         AR_1933["AR-1933 - In progress"]:::status_in_progress
         AR_1934["AR-1934 - In progress"]:::status_in_progress
+        AR_1935["AR-1935 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2424,5 +2435,3 @@
 | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md), [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md), [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md), [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md), [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md), [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md), [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md), [AR-1368](../tasks/AR-1368-control-receipt-runtime-source.md), [AR-1374](../tasks/AR-1374-cli-live-dispatch.md), [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md) |
 | [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md), [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md) |
 | [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md), [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md), [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md) |
-| [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
-| [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | None |
