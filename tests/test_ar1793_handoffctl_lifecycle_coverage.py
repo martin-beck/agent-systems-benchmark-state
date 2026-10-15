@@ -389,6 +389,7 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
         args = argparse.Namespace(
             task="AR-1793",
             expected_revision=7,
+            expected_branch="codex/ar1793",
             worktree_key="asb-state-ar1793",
             note="rebind to the current isolated worktree",
         )
@@ -398,7 +399,7 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
             "status": "open",
             "owner": "",
             "claim_expires": "",
-            "branch": "",
+            "branch": "codex/ar1793",
             "worktree_key": args.worktree_key,
         }
         self.assertEqual(
@@ -411,6 +412,7 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
         args = argparse.Namespace(
             task="AR-1793",
             expected_revision=7,
+            expected_branch="codex/ar1793",
             worktree_key="asb-state-ar1793",
             note="repair",
         )
@@ -420,7 +422,7 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
             "status": "open",
             "owner": "",
             "claim_expires": "",
-            "branch": "",
+            "branch": "codex/ar1793",
             "worktree_key": args.worktree_key,
         }
         cases: tuple[tuple[str, argparse.Namespace, dict[str, object], str], ...] = (
@@ -432,7 +434,7 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
             ),
             ("active", args, {"status": "in_progress", "owner": "worker-a"}, "inactive, unowned"),
             ("leased", args, {"claim_expires": "2999-01-01T00:00:00+00:00"}, "inactive, unowned"),
-            ("branch", args, {"branch": "codex/ar1793"}, "empty legacy branch"),
+            ("branch", args, {"branch": "codex/other"}, "branch does not match"),
             ("key", args, {"worktree_key": "other"}, "does not match"),
             (
                 "blank-note",
