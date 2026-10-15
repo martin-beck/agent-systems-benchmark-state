@@ -66,6 +66,20 @@ class CredentialHandoffTests(unittest.TestCase):
             )
         launch.assert_called_once_with(["gh", "status"], 2.0, args)
 
+    def test_handoffctl_fallback_preserves_bound_worktree_cwd_without_credentials(self) -> None:
+        args = argparse.Namespace(_envelope_worktree_fd=71, _envelope_worktree="bound")
+        completed: subprocess.CompletedProcess[bytes] = subprocess.CompletedProcess(["true"], 0)
+        with patch.object(handoffctl.subprocess, "run", return_value=completed) as run:  # type: ignore[attr-defined]
+            self.assertIs(completed, handoffctl._run_envelope_subprocess(["true"], 2.0, args))
+        run.assert_called_once_with(
+            ["true"],
+            cwd="bound",
+            check=False,
+            stdin=subprocess.DEVNULL,
+            timeout=2.0,
+            pass_fds=(71,),
+        )
+
     def test_rejects_missing_credential_descriptor(self) -> None:
         with self.assertRaisesRegex(RuntimeError, "credential descriptor is required"):
             credential_handoff.run_envelope_subprocess(["true"], 1.0, argparse.Namespace())
@@ -205,6 +219,48 @@ class CredentialHandoffTests(unittest.TestCase):
         self.assertEqual("execution-start", mutate.call_args.args[1])
         self.assertEqual("AR-1936", reservation.task)
         self.assertEqual(93, args.credential_fd)
+
+    def test_cmd_run_fenced_rejects_invalid_retry_window_before_launch(self) -> None:
+        args = argparse.Namespace(
+            task="AR-1936",
+            owner="worker",
+            command=["true"],
+            command_class="git-publication",
+            authorize_external_side_effects=True,
+            credential_fd=93,
+            retry_window=2,
+        )
+        with (
+            patch.object(handoffctl, "backend_selection", return_value={"backend": "git"}),
+            patch.object(handoffctl, "config", return_value={}),
+            patch.object(handoffctl, "require_active_owner", return_value=MagicMock()),
+            patch.object(handoffctl, "_run_envelope_subprocess") as launch,
+            self.assertRaisesRegex(RuntimeError, "retry circuit window"),
+        ):
+            handoffctl._cmd_run_fenced(args)
+        launch.assert_not_called()
+
+    def test_cmd_run_fenced_rejects_timeout_above_envelope_cap(self) -> None:
+        args = argparse.Namespace(
+            task="AR-1936",
+            owner="worker",
+            command=["true"],
+            command_class="git-publication",
+            authorize_external_side_effects=True,
+            credential_fd=93,
+            retry_window=3,
+            timeout_seconds=11.0,
+        )
+        with (
+            patch.object(handoffctl, "backend_selection", return_value={"backend": "git"}),
+            patch.object(handoffctl, "config", return_value={}),
+            patch.object(handoffctl, "require_active_owner", return_value=MagicMock()),
+            patch.object(handoffctl, "run_envelope_timeout", return_value=10.0),
+            patch.object(handoffctl, "_run_envelope_subprocess") as launch,
+            self.assertRaisesRegex(RuntimeError, "exceeds envelope limit"),
+        ):
+            handoffctl._cmd_run_fenced(args)
+        launch.assert_not_called()
 
 
 if __name__ == "__main__":  # pragma: no cover
