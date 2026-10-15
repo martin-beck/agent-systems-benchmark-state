@@ -3262,7 +3262,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Review signed commit be9aea464882f0b3d01d7c3cd28c3f32a90e267e, run hosted exact-head gates, and publish through reviewed lifecycle. |
 
 ### AR-1946 — Mount outer admin target
 
@@ -4047,4 +4047,3 @@ flowchart LR
         AR_1702["AR-1702 - Blocked"]:::status_blocked
         AR_1703["AR-1703 - Planned"]:::status_planned
         AR_1704["AR-1704 - Done"]:::status_done
-        AR_1709["AR-1709 - Done"]:::status_done
