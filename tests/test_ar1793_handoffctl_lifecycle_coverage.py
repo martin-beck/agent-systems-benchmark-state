@@ -389,17 +389,16 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
         args = argparse.Namespace(
             task="AR-1891",
             expected_revision=7,
-            branch="codex/ar-1891-recovery",
             worktree_key="asb-ar1891-recovery-20261014",
             note="rebind to the current isolated worktree",
         )
         meta = {
             "id": "AR-1891",
             "task_revision": 7,
-            "status": "blocked",
+            "status": "open",
             "owner": "",
             "claim_expires": "",
-            "branch": "codex/ar-1891-recovery",
+            "branch": "",
             "worktree_key": args.worktree_key,
         }
         self.assertEqual(
@@ -412,17 +411,16 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
         args = argparse.Namespace(
             task="AR-1891",
             expected_revision=7,
-            branch="codex/ar-1891-recovery",
             worktree_key="asb-ar1891-recovery-20261014",
             note="repair",
         )
         base = {
             "id": "AR-1891",
             "task_revision": 7,
-            "status": "blocked",
+            "status": "open",
             "owner": "",
             "claim_expires": "",
-            "branch": "codex/ar-1891-recovery",
+            "branch": "",
             "worktree_key": args.worktree_key,
         }
         cases: tuple[tuple[str, argparse.Namespace, dict[str, object], str], ...] = (
@@ -434,13 +432,13 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
             ),
             ("active", args, {"status": "in_progress", "owner": "worker-a"}, "inactive, unowned"),
             ("leased", args, {"claim_expires": "2999-01-01T00:00:00+00:00"}, "inactive, unowned"),
-            ("branch", args, {"branch": "codex/ar1793"}, "does not match retained metadata"),
+            ("branch", args, {"branch": "codex/ar1793"}, "requires an empty legacy branch"),
             ("key", args, {"worktree_key": "other"}, "does not match"),
             (
                 "blank-note",
                 argparse.Namespace(**{**vars(args), "note": "  "}),
                 {},
-                "evidence must be nonempty",
+                "note must not be empty",
             ),
         )
         for label, request, changes, message in cases:

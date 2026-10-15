@@ -452,7 +452,11 @@ def _load_spec(root: Path, task_id: str, spec_ref: str) -> tuple[object | None, 
 
 
 def task_spec_errors(
-    root: Path, meta: dict[str, Any], policy: EvidencePolicy | None = None
+    root: Path,
+    meta: dict[str, Any],
+    policy: EvidencePolicy | None = None,
+    *,
+    include_ledger: bool = True,
 ) -> list[str]:
     """Validate optional task metadata and its referenced local spec."""
     if "spec_ref" not in meta and "spec_revision" not in meta:
@@ -474,7 +478,8 @@ def task_spec_errors(
         errors.append(f"{task_id}: spec_revision does not match referenced spec")
     if isinstance(value, dict) and value.get("spec_ref") != spec_ref:
         errors.append(f"{task_id}: spec_ref does not match referenced spec")
-    errors.extend(evidence_ledger_errors(root, meta, selected_policy))
+    if include_ledger:
+        errors.extend(evidence_ledger_errors(root, meta, selected_policy))
     return sorted(set(errors))
 
 
