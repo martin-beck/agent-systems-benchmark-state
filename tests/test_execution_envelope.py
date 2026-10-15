@@ -10,7 +10,17 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import cast
 
-from tools.execution_envelope import Preflight, canonical_digest, digest, errors, load, preflight
+from tools.execution_envelope import (
+    Preflight,
+    canonical_digest,
+    digest,
+    envelope_sandbox_mounts,
+    envelope_scope_path,
+    errors,
+    load,
+    preflight,
+    validate_external_root,
+)
 
 
 def envelope() -> dict[str, object]:
@@ -171,6 +181,33 @@ class ExecutionEnvelopeTests(unittest.TestCase):
                 meta, "worker", "test", ["source-root"], self.worktree, source_root=alias
             ).code,
         )
+
+    def test_root_validation_and_mounts_fail_closed(self) -> None:
+        state = self.root / "state"
+        source = self.root / "source"
+        (state / "tasks").mkdir(parents=True)
+        (source / "src").mkdir(parents=True)
+        self.assertEqual(state.resolve(), validate_external_root(state, "state"))
+        with self.assertRaisesRegex(RuntimeError, "root is unavailable"):
+            validate_external_root(self.root / "missing", "state")
+        mounts = envelope_sandbox_mounts(
+            self.worktree,
+            ["product-root", "state:tasks", "source-root"],
+            ["state:tasks"],
+            state_root=state,
+            source_root=source,
+        )
+        self.assertEqual(
+            ["product/.", "state/tasks", "source/.", "state/tasks"],
+            [item[0] for item in mounts],
+        )
+        with self.assertRaisesRegex(RuntimeError, "unavailable root"):
+            envelope_sandbox_mounts(self.worktree, ["source-root"], [], state_root=state)
+        outside = self.root / "outside"
+        outside.mkdir()
+        (self.worktree / "escape").symlink_to(outside, target_is_directory=True)
+        with self.assertRaisesRegex(RuntimeError, "contains a symlink"):
+            envelope_scope_path(self.worktree, "escape")
 
     def test_rejects_mutated_bytes_and_hostile_shape(self) -> None:
         bound_meta = self.meta()
