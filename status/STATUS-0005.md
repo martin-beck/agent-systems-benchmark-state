@@ -598,7 +598,7 @@
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -606,7 +606,6 @@
 | P1 | [AR-1944](../tasks/AR-1944.md): Activate state runner fix | ar1944-state-runner-activation-luna | Activate the reviewed AR-1943 outer-runner selection in the authoritative state-main handoffctl runtime before attempting bound publication; preserve AR-1941 through AR-1943, add exact activation and wrong-runner tests, and keep network authorization limited to git-publication. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1945](../tasks/AR-1945.md): Reduce handoffctl state size | ar1945-handoffctl-size-luna | Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories. | Review signed commit be9aea464882f0b3d01d7c3cd28c3f32a90e267e, run hosted exact-head gates, and publish through reviewed lifecycle. |
 | P1 | [AR-1950](../tasks/AR-1950.md): Bind product test paths | ar1950-product-path-binding-luna | Repair the handoffctl execution-envelope binding so a state-owned task can resolve explicitly declared ASB product test paths from the configured product checkout without treating the product checkout as the state worktree or broadening read/write isolation. Add positive and hostile path-resolution tests. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1952](../tasks/AR-1952.md): Adopt Coordinator v0.7.16 | gpt-5.6-luna-ar1885-v0715 | Adopt Agent Workflow Coordinator v0.7.16 at exact merge commit 6127f6c76c8feafd9e83cb0ba8f4bd478ac656b1 through the documented clean-source vendor sync using explicit source-root binding. Change only coordinator.vendor.json, allowlisted vendor files, tools/handoffctl_vendor.py verifier inputs, and generated integrity evidence. Preserve AR-1951 history and all overlays; no formal/TLC, Agent Relay, runtime downloads, or direct source copying. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (16)
 
@@ -629,7 +628,7 @@
 | P1 | [AR-1934](../tasks/AR-1934.md): PR 1318 publication successor | Unclaimed | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1936](../tasks/AR-1936.md): Integrate credential FD handoff | Unclaimed | Integrate the already-reviewed coordinator credential-handoff contract into the ASB state handoffctl run path: admit an explicit credential FD only for authorized git-publication execution, pass it and the worktree FD to the bounded subprocess, fail closed when the helper is unavailable or the descriptor is invalid, and add no formal/TLC or unrelated runtime changes. | Implement the bounded scope and record local acceptance evidence. |
 
-### Blocked (137)
+### Blocked (138)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -703,3 +702,4 @@
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Unclaimed | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Repair the coordinator Bubblewrap runtime root to mount the approved pinned Cargo toolchain, compiler/linker support, complete workspace source, and required identity files through an authorized runner; then rerun exact-head focused and full tests through handoffctl. No product source repair is justified. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt. |
 | P0 | [AR-1826](../tasks/AR-1826-explicit-setup-config-contract.md): Define explicit setup configuration and plan-binding contract | Unclaimed | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. | Supported repair unavailable in vendored handoffctl v0.7.5: bind-worktree rejects retained legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract while branch is empty, and no coordinator command clears the pair. Add/use an explicitly reviewed coordinator repair version, then re-claim, bind codex/ar-1826-explicit-setup-contract to the exact non-overlapping worktree, and requalify reviewed e9d95999 onto current main d0e6a28. |
+| P0 | [AR-1836](../tasks/AR-1836-cross-repo-tui-qualification-determinism.md): Cross-repository Exact TUI qualification determinism | Unclaimed | Repair the deterministic cross-repository Exact TUI inherited-fd/PTY qualification seam exposed by AR-1835 without weakening its assertions. | Promote after AR-1835 dependency resolution; reproduce the two hosted failures with complete workflow metadata, identify the owning workflow/asb-tui seam, and implement only a deterministic qualification repair without weakening the gate. |
