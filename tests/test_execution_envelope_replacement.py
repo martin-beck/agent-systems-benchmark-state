@@ -140,6 +140,28 @@ class ReplacementTests(unittest.TestCase):
                 ):
                     execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
 
+    def test_replace_bound_rejects_binding_and_scope_evidence_shapes(self) -> None:
+        import tempfile
+        from pathlib import Path
+
+        args = self._args()
+        successor = _envelope(2)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for mutate, message in (
+                (lambda m: m.update(execution_envelope_ref=None), "coherent existing binding"),
+                (lambda m: m.update(spec_ref="other.json"), "task or spec"),
+                (lambda m: m.update(execution_envelope_revision=9), "successor revision"),
+                (lambda m: m.update(execution_envelope_replacements={}), "evidence is invalid"),
+            ):
+                meta = self._meta()
+                mutate(meta)
+                with (
+                    patch.object(execution_envelope, "load", return_value=(successor, "", [])),
+                    self.assertRaisesRegex(RuntimeError, message),
+                ):
+                    execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
+
 
 if __name__ == "__main__":
     unittest.main()

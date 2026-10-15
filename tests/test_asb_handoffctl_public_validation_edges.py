@@ -13,6 +13,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+from tests.test_execution_envelope import envelope as make_envelope
 from tools import handoffctl, retry_circuit
 
 
@@ -98,6 +99,28 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
                 argparse.Namespace(spec_ref="oversized.json"), "bind-spec"
             )
         )
+
+    def test_bind_envelope_candidate_rejects_identity_and_revision_mismatches(self) -> None:
+        candidate = make_envelope()
+        meta = {
+            "spec_ref": "specs/AR-0001.json",
+            "spec_revision": 2,
+            "task_revision": 7,
+        }
+        args = argparse.Namespace(task="AR-0001", envelope_ref="env.json", envelope_revision=1)
+        for mutate, message in (
+            (lambda item: item.update(spec_ref="other.json"), "task or spec"),
+            (lambda item: item.update(task_revision=4), "task revision"),
+            (lambda item: item.update(spec_revision=3), "spec revision"),
+            (lambda item: item.update(envelope_revision=2), "envelope revision"),
+        ):
+            item = dict(candidate)
+            mutate(item)
+            with (
+                patch.object(handoffctl.execution_envelope, "load", return_value=(item, "", [])),
+                self.assertRaisesRegex(RuntimeError, message),
+            ):
+                handoffctl.bind_envelope_candidate(args, meta)
 
     def test_snapshot_rejects_validation_and_backend_races(self) -> None:
         for label, selections, errors, message in (
