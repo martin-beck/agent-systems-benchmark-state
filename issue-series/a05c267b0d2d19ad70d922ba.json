@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1946",
+  "issue": {
+    "number": 10076,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10076"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Bound git-publication sees the linked-worktree admin target through the authoritative outer sandbox, while missing or unsafe admin targets fail closed; positive and hostile tests pass; no direct push, credentials, formal, TLC, or history rewrite.",
+      "depends_on": [],
+      "id": "AR-1946",
+      "ownership": "ASB authoritative outer sandbox admin-target mount only; preserve all prior signed fixes and histories.",
+      "scope": "Repair the authoritative outer handoffctl sandbox so a linked worktree's resolved Git admin target is mounted at the sandbox-visible admin location using the bound descriptor, without host absolute-path leakage or fallback. Preserve AR-1941 through AR-1944 and add a hostile missing-admin-path test. Initial schema-v2 envelope authorizes network only for git-publication.",
+      "short_title": "Mount outer admin target"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

@@ -3264,6 +3264,20 @@
 | Summary | Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1946 — Mount outer admin target
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the authoritative outer handoffctl sandbox so a linked worktree&#x27;s resolved Git admin target is mounted at the sandbox-visible admin location using the bound descriptor, without host absolute-path leakage or fallback. Preserve AR-1941 through AR-1944 and add a hostile missing-admin-path test. Initial schema-v2 envelope authorizes network only for git-publication. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4035,17 +4049,3 @@ flowchart LR
         AR_1704["AR-1704 - Done"]:::status_done
         AR_1709["AR-1709 - Done"]:::status_done
         AR_1710["AR-1710 - Done"]:::status_done
-        AR_1711["AR-1711 - Done"]:::status_done
-        AR_1712["AR-1712 - Done"]:::status_done
-        AR_1715["AR-1715 - Done"]:::status_done
-        AR_1716["AR-1716 - Done"]:::status_done
-        AR_1717["AR-1717 - Done"]:::status_done
-        AR_1718["AR-1718 - Done"]:::status_done
-        AR_1719["AR-1719 - Done"]:::status_done
-        AR_1720["AR-1720 - Done"]:::status_done
-        AR_1721["AR-1721 - Done"]:::status_done
-        AR_1722["AR-1722 - Done"]:::status_done
-        AR_1723["AR-1723 - Done"]:::status_done
-        AR_1724["AR-1724 - Done"]:::status_done
-        AR_1725["AR-1725 - Done"]:::status_done
-        AR_1726["AR-1726 - Done"]:::status_done
