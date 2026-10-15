@@ -5,7 +5,9 @@
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
+import sys
 import unittest
 from unittest.mock import MagicMock, patch
 
@@ -13,6 +15,23 @@ from tools import credential_handoff, handoffctl
 
 
 class CredentialHandoffTests(unittest.TestCase):
+    def test_handoffctl_runs_real_credential_descriptor_path(self) -> None:
+        read_fd, write_fd = os.pipe()
+        try:
+            os.write(write_fd, b"x")
+            os.close(write_fd)
+            args = argparse.Namespace(credential_fd=read_fd)
+            command = [
+                sys.executable,
+                "-c",
+                "import os,sys; raise SystemExit(os.read(int(sys.argv[1]), 1) != b'x')",
+                str(read_fd),
+            ]
+            completed = handoffctl._run_envelope_subprocess(command, 5.0, args)
+            self.assertEqual(0, completed.returncode)
+        finally:
+            os.close(read_fd)
+
     def test_passes_only_worktree_and_credential_descriptors(self) -> None:
         args = argparse.Namespace(
             _envelope_worktree="bound-worktree",
@@ -261,6 +280,44 @@ class CredentialHandoffTests(unittest.TestCase):
         ):
             handoffctl._cmd_run_fenced(args)
         launch.assert_not_called()
+
+    def test_main_parses_credential_fd_and_dispatches_run(self) -> None:
+        with (
+            patch.object(
+                sys,
+                "argv",
+                [
+                    "handoffctl",
+                    "run",
+                    "--owner",
+                    "worker",
+                    "--command-class",
+                    "git-publication",
+                    "--authorize-external-side-effects",
+                    "--credential-fd",
+                    "93",
+                    "AR-1936",
+                    "--",
+                    "true",
+                ],
+            ),
+            patch.object(handoffctl, "assert_project_binding"),
+            patch.object(handoffctl, "dispatch_bound_command", return_value=0) as dispatch,
+        ):
+            self.assertEqual(0, handoffctl.main())
+        parsed = dispatch.call_args.args[0]
+        self.assertEqual("run", parsed.cmd)
+        self.assertEqual(93, parsed.credential_fd)
+        self.assertEqual(["true"], parsed.command)
+
+    def test_dispatch_side_effect_command_routes_supported_and_unknown_commands(self) -> None:
+        args = argparse.Namespace(cmd="reconcile", commit=False, push=False)
+        with patch.object(handoffctl, "reconcile") as reconcile:
+            self.assertTrue(handoffctl.dispatch_side_effect_command(args))
+        reconcile.assert_called_once_with(do_commit=False, push=False)
+
+        args.cmd = "not-a-side-effect"
+        self.assertFalse(handoffctl.dispatch_side_effect_command(args))
 
 
 if __name__ == "__main__":  # pragma: no cover
