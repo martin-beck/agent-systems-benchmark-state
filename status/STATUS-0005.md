@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md), [AR-1305](../tasks/AR-1305-image-native-user-session.md), [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md) |
+| [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md), [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | None |
 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md), [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md), [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1519](../tasks/AR-1519.md) |
 | [AR-1305](../tasks/AR-1305-image-native-user-session.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None |
 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
@@ -600,6 +602,7 @@
 | [AR-1951](../tasks/AR-1951.md) | None | None |
 | [AR-1952](../tasks/AR-1952.md) | None | None |
 | [AR-1953](../tasks/AR-1953.md) | None | None |
+| [AR-1954](../tasks/AR-1954.md) | None | None |
 
 ## Complete AR inventory
 
@@ -706,4 +709,3 @@
 | P0 | [AR-1702](../tasks/AR-1702.md): Development live OpenRouter qualification | Unclaimed | Run credential-backed online OpenRouter smoke and typed negative tests for the merged ASB live path without mock fallback. | Provide OPENROUTER_API_KEY only in the worker runtime environment, then rerun one bounded real OpenRouter request at exact ASB main 31ca7a481fca8b79bfbff126b92db6c6118beb7c and record only redacted provider/model/timing/outcome metadata; retain the already-green credential-free negative matrix. |
 | P0 | [AR-1746](../tasks/AR-1746-protected-main-admission-enforcement.md): Enforce protected-main admission for AR-1722 recovery | Unclaimed | Apply and independently verify ASB&#x27;s merge-only protected-main settings and active exact-head ruleset so signed local integrations are enforced by GitHub. | Require all exact-main post-merge workflows for 2f52ecbaf79ae8316e0c2a42ad4c4a79dae5d9eb terminal-success, then invoke the merged typed settings apply once and audit normalized live state; stop on any rejected, partial, or ambiguous result. |
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Unclaimed | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Repair the coordinator Bubblewrap runtime root to mount the approved pinned Cargo toolchain, compiler/linker support, complete workspace source, and required identity files through an authorized runner; then rerun exact-head focused and full tests through handoffctl. No product source repair is justified. |
-| P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt. |

@@ -3376,6 +3376,20 @@
 | Summary | Repair ASB handoffctl execution-envelope resolution so immutable envelopes can declare bounded state metadata paths separately from bound product paths, while preserving fail-closed traversal, symlink, wrong-root, and scope validation. Do not weaken isolation, mutate prior task history, or run formal/TLC. |
 | Next action | Wait exact-head CI for aa53388f8e; merge only if all required checks green, then reconcile state. |
 
+### AR-1954 — Repair v0.7.16 compatibility
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair compatibility between the supported Coordinator v0.7.16 vendor snapshot and ASB legacy fixtures: inactive-owner error ordering, envelope subprocess setup, vendor version/manifest expectations, and selector cases. Preserve fail-closed validation and do not weaken gates or run formal/TLC as implementation scope. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4033,18 +4047,3 @@ flowchart LR
         AR_1589["AR-1589 - Done"]:::status_done
         AR_1590["AR-1590 - Done"]:::status_done
         AR_1591["AR-1591 - Done"]:::status_done
-        AR_1592["AR-1592 - Done"]:::status_done
-        AR_1593["AR-1593 - Done"]:::status_done
-        AR_1594["AR-1594 - Done"]:::status_done
-        AR_1595["AR-1595 - Done"]:::status_done
-        AR_1596["AR-1596 - Done"]:::status_done
-        AR_1597["AR-1597 - Done"]:::status_done
-        AR_1598["AR-1598 - Done"]:::status_done
-        AR_1599["AR-1599 - Done"]:::status_done
-    end
-    subgraph series_16["16 - Additional work"]
-        direction TB
-        AR_1600["AR-1600 - Done"]:::status_done
-        AR_1601["AR-1601 - Done"]:::status_done
-        AR_1602["AR-1602 - Done"]:::status_done
-        AR_1603["AR-1603 - Done"]:::status_done

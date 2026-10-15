@@ -1,5 +1,20 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1592["AR-1592 - Done"]:::status_done
+        AR_1593["AR-1593 - Done"]:::status_done
+        AR_1594["AR-1594 - Done"]:::status_done
+        AR_1595["AR-1595 - Done"]:::status_done
+        AR_1596["AR-1596 - Done"]:::status_done
+        AR_1597["AR-1597 - Done"]:::status_done
+        AR_1598["AR-1598 - Done"]:::status_done
+        AR_1599["AR-1599 - Done"]:::status_done
+    end
+    subgraph series_16["16 - Additional work"]
+        direction TB
+        AR_1600["AR-1600 - Done"]:::status_done
+        AR_1601["AR-1601 - Done"]:::status_done
+        AR_1602["AR-1602 - Done"]:::status_done
+        AR_1603["AR-1603 - Done"]:::status_done
         AR_1604["AR-1604 - Done"]:::status_done
         AR_1605["AR-1605 - Done"]:::status_done
         AR_1606["AR-1606 - Done"]:::status_done
@@ -327,6 +342,7 @@
         AR_1951["AR-1951 - Blocked"]:::status_blocked
         AR_1952["AR-1952 - Blocked"]:::status_blocked
         AR_1953["AR-1953 - In progress"]:::status_in_progress
+        AR_1954["AR-1954 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2664,5 +2680,3 @@
 | [AR-1299](../tasks/AR-1299.md) | [AR-1190](../tasks/AR-1190.md) | None |
 | [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
-| [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md), [AR-1305](../tasks/AR-1305-image-native-user-session.md), [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md) |
-| [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md), [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | None |

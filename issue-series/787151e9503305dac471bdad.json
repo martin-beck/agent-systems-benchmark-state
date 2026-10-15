@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1954",
+  "issue": {
+    "number": 10084,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10084"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "All eight strict-suite compatibility failures from run 38684522356 are repaired with positive and negative coverage; full configured nonformal suite, exact-head review/CI, merge, doctor, and reconcile pass.",
+      "depends_on": [],
+      "id": "AR-1954",
+      "ownership": "ASB vendored Coordinator v0.7.16 compatibility fixtures and bounded execution-envelope tests only; preserve AR-1953 and PR #173 history.",
+      "scope": "Repair compatibility between the supported Coordinator v0.7.16 vendor snapshot and ASB legacy fixtures: inactive-owner error ordering, envelope subprocess setup, vendor version/manifest expectations, and selector cases. Preserve fail-closed validation and do not weaken gates or run formal/TLC as implementation scope.",
+      "short_title": "Repair v0.7.16 compatibility"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
