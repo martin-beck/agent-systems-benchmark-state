@@ -3086,11 +3086,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1933-credential-handoff-luna |
 | Parent | None |
 | Children | None |
 | Summary | Implement the smallest coordinator-owned credential handoff needed for authorized git-publication commands to use host gh authentication without exposing credentials in argv, envelopes, task records, evidence, or subprocess output. Preserve fail-closed capability and network gates, and do not alter AR-1849, AR-1931, AR-1932, PR #171, or historical state. |
@@ -4037,4 +4037,3 @@ flowchart LR
         AR_1895["AR-1895 - Blocked"]:::status_blocked
         AR_1896["AR-1896 - Blocked"]:::status_blocked
         AR_1897["AR-1897 - Done"]:::status_done
-        AR_1898["AR-1898 - Done"]:::status_done

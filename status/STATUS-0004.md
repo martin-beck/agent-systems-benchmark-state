@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1898["AR-1898 - Done"]:::status_done
         AR_1899["AR-1899 - Done"]:::status_done
     end
     subgraph series_19["19 - Additional work"]
@@ -36,7 +37,7 @@
         AR_1930["AR-1930 - Blocked"]:::status_blocked
         AR_1931["AR-1931 - Cancelled"]:::status_cancelled
         AR_1932["AR-1932 - Blocked"]:::status_blocked
-        AR_1933["AR-1933 - Open"]:::status_open
+        AR_1933["AR-1933 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
