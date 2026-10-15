@@ -2,11 +2,15 @@
 # SPDX-License-Identifier: MIT
 """Additional non-vendored coverage for AR-1954 root compatibility branches."""
 
+import os
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
 from tools.execution_envelope import (
+    _open_path,
+    _open_scope_fd,
+    _open_scope_path,
     canonical_digest,
     envelope_sandbox_mounts,
     envelope_scope_path,
@@ -166,6 +170,22 @@ class EnvelopeCompatibilityCoverageTests(unittest.TestCase):
             self.assertTrue(allowed.allowed)
             outside = preflight(meta, "worker", "read", ["missing"], root, state_root=state)
             self.assertEqual("PATH_SCOPE_UNAVAILABLE", outside.code)
+
+    def test_descriptor_walkers_reject_unsafe_components(self) -> None:
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "nested").mkdir()
+            (root / "nested" / "leaf").write_text("x")
+            fd = _open_path(root, directory=True)
+            try:
+                child = _open_scope_fd(fd, "nested/leaf")
+                os.close(child)
+            finally:
+                os.close(fd)
+            with self.assertRaisesRegex(RuntimeError, "unsafe"):
+                _open_scope_path(root, "../nested")
+            with self.assertRaisesRegex(RuntimeError, "not a directory"):
+                _open_scope_path(root / "nested" / "leaf", "child")
 
 
 if __name__ == "__main__":
