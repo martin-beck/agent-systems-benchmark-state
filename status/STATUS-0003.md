@@ -3282,11 +3282,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1947-gitdir-target-mapping-luna |
 | Parent | None |
 | Children | None |
 | Summary | Repair the authoritative outer bwrap publication mount for linked worktrees whose .git is a gitdir file: parse the descriptor-backed target, safely resolve it under the repository admin root, and mount it at the sandbox-visible absolute gitdir path with required parents. Reject host-path leakage, unsafe, and missing targets; preserve AR-1941 through AR-1946 and do not rewrite the .git pointer or bypass isolation. Initial schema-v2 envelope authorizes network only for git-publication. |
@@ -4043,4 +4043,3 @@ flowchart LR
         AR_1687["AR-1687 - Done"]:::status_done
         AR_1688["AR-1688 - Done"]:::status_done
         AR_1689["AR-1689 - Done"]:::status_done
-        AR_1690["AR-1690 - Done"]:::status_done
