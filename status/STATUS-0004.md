@@ -252,7 +252,7 @@
         AR_1931["AR-1931 - Cancelled"]:::status_cancelled
         AR_1932["AR-1932 - Blocked"]:::status_blocked
         AR_1933["AR-1933 - In progress"]:::status_in_progress
-        AR_1934["AR-1934 - In progress"]:::status_in_progress
+        AR_1934["AR-1934 - Open"]:::status_open
         AR_1935["AR-1935 - Blocked"]:::status_blocked
         AR_1936["AR-1936 - In progress"]:::status_in_progress
         AR_1937["AR-1937 - Blocked"]:::status_blocked

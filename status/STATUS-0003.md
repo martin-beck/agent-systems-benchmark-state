@@ -3100,11 +3100,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1931-publication-capability-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. |
