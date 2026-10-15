@@ -6,20 +6,27 @@ from __future__ import annotations
 
 import argparse
 import contextlib
+import fcntl
 import io
 import sys
 import tempfile
+import time
 import unittest
 from collections.abc import Callable
 from pathlib import Path
+from typing import cast
 from unittest.mock import patch
 
 from tools import (
     autonomy_limits,
+    campaign_runtime,
+    change_drift,
     execution_envelope,
     handoffctl,
+    production_upgrade_binding,
     resume_card_runtime,
     retry_circuit,
+    upgrade_commands,
 )
 
 
@@ -126,7 +133,7 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
 
     def test_bind_envelope_candidate_rejects_identity_and_revision_mismatches(self) -> None:
         candidate = make_envelope()
-        meta = {
+        meta: dict[str, object] = {
             "spec_ref": "specs/AR-0001.json",
             "spec_revision": 2,
             "task_revision": 7,
@@ -306,6 +313,310 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
         with patch.object(handoffctl, "print_execution_preflight", return_value=2) as render:
             self.assertEqual(2, handoffctl.dispatch_read_only_command(preflight_args))
         render.assert_called_once_with(preflight_args)
+
+        campaign_args = argparse.Namespace(cmd="campaign")
+        with patch.object(campaign_runtime, "dispatch", return_value=8) as dispatch:
+            self.assertEqual(8, handoffctl.dispatch_read_only_command(campaign_args))
+        dispatch.assert_called_once()
+
+    def test_upgrade_consume_passes_the_complete_runtime_identity(self) -> None:
+        args = argparse.Namespace(
+            upgrade_action="consume",
+            selector="runtime-selector.json",
+            releases_root="releases",
+            source_commit="commit",
+            tag_ref="refs/tags/v1",
+            tag_object="tag-object",
+            signature_sha256="signature",
+            trust_policy_sha256="policy",
+            vendor_manifest_sha256="vendor",
+            manifest_digest="manifest",
+            runtime_command=["python", "-m", "service"],
+        )
+        with patch.object(
+            upgrade_commands, "consume_selected_runtime_command", return_value=9
+        ) as consume:
+            self.assertEqual(9, handoffctl.cmd_upgrade(args))
+        identity = consume.call_args.args[2]
+        self.assertEqual("commit", identity.source_commit)
+        self.assertEqual("refs/tags/v1", identity.tag_ref)
+        consume.assert_called_once_with(
+            Path("runtime-selector.json"),
+            Path("releases"),
+            identity,
+            "manifest",
+            ("python", "-m", "service"),
+        )
+
+    def test_upgrade_mutations_resolve_backend_live_bindings_before_execution(self) -> None:
+        for backend, resolver_name in (
+            ("sqlite", "resolve_sqlite_live_binding"),
+            ("git", "resolve_git_live_binding"),
+        ):
+            with self.subTest(backend=backend):
+                args = argparse.Namespace(
+                    upgrade_action="apply",
+                    binding="binding.json",
+                    contract="contract.json",
+                )
+                with (
+                    patch.object(
+                        handoffctl, "backend_selection", return_value={"backend": backend}
+                    ),
+                    patch.object(upgrade_commands, "_read_contract", return_value={"version": 1}),
+                    patch.object(
+                        upgrade_commands,
+                        "_read_runtime_binding",
+                        return_value={"backend": backend},
+                    ),
+                    patch.object(
+                        production_upgrade_binding,
+                        resolver_name,
+                        return_value={"live": backend},
+                    ) as resolve,
+                    patch.object(
+                        upgrade_commands, "execute_upgrade_command", return_value=10
+                    ) as execute,
+                ):
+                    self.assertEqual(10, handoffctl.cmd_upgrade(args))
+                resolve.assert_called_once()
+                execute.assert_called_once_with(
+                    "apply", Path("contract.json"), backend, Path("binding.json"), {"live": backend}
+                )
+
+    def test_execution_lock_timeout_and_invalid_task_id_fail_closed(self) -> None:
+        with self.assertRaisesRegex(RuntimeError, "invalid task execution fence"):
+            handoffctl.task_execution_lock_path("not-a-task")
+        with (
+            patch.object(fcntl, "flock", side_effect=[BlockingIOError(), None]),
+            self.assertRaisesRegex(handoffctl.LockTimeoutError, "LOCK_TIMEOUT"),
+            handoffctl.task_execution_locked("AR-0001", exclusive=True, timeout=0),
+        ):
+            self.fail("lock acquisition unexpectedly succeeded")
+
+    def test_external_observation_retries_then_reports_bounded_failure(self) -> None:
+        with (
+            patch.object(handoffctl, "run", side_effect=RuntimeError("unavailable")),
+            patch.object(time, "sleep") as sleep,
+            self.assertRaisesRegex(handoffctl.ExternalObservationError, "after 3 attempts"),
+        ):
+            handoffctl.run_github_observation(["gh", "api", "user"])
+        self.assertEqual(2, sleep.call_count)
+
+    def test_execution_preflight_rejects_invalid_binding_and_missing_envelope(self) -> None:
+        args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker",
+            command_class="test",
+            scope_path=[],
+        )
+        with (
+            patch.object(handoffctl, "locate", return_value=(None, {"worktree_key": "bad"}, "")),
+            patch.object(
+                change_drift,
+                "bound_worktree",
+                side_effect=RuntimeError("stale worktree"),
+            ),
+            patch.object(handoffctl, "config", return_value={"projects_root": str(self.root)}),
+        ):
+            self.assertEqual(
+                (False, "WORKTREE_BINDING_INVALID", "stale worktree", None),
+                handoffctl.execution_preflight(args),
+            )
+
+        with (
+            patch.object(handoffctl, "locate", return_value=(None, {"worktree_key": "bound"}, "")),
+            patch.object(handoffctl, "config", return_value={"projects_root": str(self.root)}),
+            patch.object(
+                change_drift,
+                "bound_worktree",
+                return_value=contextlib.nullcontext(self.root / "123"),
+            ),
+            patch.object(
+                execution_envelope,
+                "preflight",
+                return_value=argparse.Namespace(allowed=True, code="OK", detail="ready"),
+            ),
+        ):
+            self.assertEqual(
+                (False, "ENVELOPE_INVALID", "durable execution envelope is missing", None),
+                handoffctl.execution_preflight(args),
+            )
+
+    def test_execution_preflight_rejects_envelope_digest_mismatch(self) -> None:
+        args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker",
+            command_class="test",
+            scope_path=[],
+        )
+        envelope = make_envelope()
+        meta = {
+            "worktree_key": "bound",
+            "execution_envelope": envelope,
+            "execution_envelope_digest": "sha256:stale",
+        }
+        allowed = argparse.Namespace(allowed=True, code="OK", detail="ready")
+        with (
+            patch.object(handoffctl, "locate", return_value=(None, meta, "")),
+            patch.object(handoffctl, "config", return_value={"projects_root": str(self.root)}),
+            patch.object(
+                change_drift,
+                "bound_worktree",
+                return_value=contextlib.nullcontext(self.root / "123"),
+            ),
+            patch.object(execution_envelope, "preflight", return_value=allowed),
+        ):
+            self.assertEqual(
+                (False, "ENVELOPE_INVALID", "durable execution envelope digest mismatches", None),
+                handoffctl.execution_preflight(args),
+            )
+
+    def test_execution_preflight_releases_denied_and_scope_error_worktrees(self) -> None:
+        args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker",
+            command_class="test",
+            scope_path=[],
+        )
+        meta = {"worktree_key": "bound"}
+        denied = argparse.Namespace(allowed=False, code="DENIED", detail="policy")
+        with (
+            patch.object(handoffctl, "locate", return_value=(None, meta, "")),
+            patch.object(handoffctl, "config", return_value={"projects_root": str(self.root)}),
+            patch.object(
+                change_drift,
+                "bound_worktree",
+                return_value=contextlib.nullcontext(self.root / "123"),
+            ),
+            patch.object(execution_envelope, "preflight", return_value=denied),
+        ):
+            self.assertEqual(
+                (False, "DENIED", "policy", None),
+                handoffctl.execution_preflight(args),
+            )
+
+        envelope = make_envelope()
+        second_meta: dict[str, object] = {
+            "worktree_key": "bound",
+            "execution_envelope": envelope,
+            "execution_envelope_digest": execution_envelope.canonical_digest(envelope),
+        }
+        with (
+            patch.object(handoffctl, "locate", return_value=(None, second_meta, "")),
+            patch.object(handoffctl, "config", return_value={"projects_root": str(self.root)}),
+            patch.object(
+                change_drift,
+                "bound_worktree",
+                return_value=contextlib.nullcontext(self.root / "123"),
+            ),
+            patch.object(
+                execution_envelope,
+                "preflight",
+                return_value=argparse.Namespace(allowed=True, code="OK", detail="ready"),
+            ),
+            patch.object(handoffctl, "prepare_envelope_mounts", side_effect=RuntimeError("scope")),
+        ):
+            self.assertEqual(
+                (False, "PATH_SCOPE_UNAVAILABLE", "scope", None),
+                handoffctl.execution_preflight(args),
+            )
+
+    def test_prepare_envelope_mounts_records_source_write_scope(self) -> None:
+        envelope = make_envelope()
+        command_classes = cast(dict[str, dict[str, object]], envelope["command_classes"])
+        command_classes["source-write"] = {"allowed": True, "timeout_seconds": 60}
+        args = argparse.Namespace(
+            command_class="source-write",
+            scope_path=["src"],
+            authorize_external_side_effects=False,
+        )
+        with patch.object(handoffctl, "envelope_scope_path") as scope:
+            rule = handoffctl.prepare_envelope_mounts(args, envelope, Path("123"), object())
+        self.assertEqual({"allowed": True, "timeout_seconds": 60}, rule)
+        self.assertEqual(2, scope.call_count)
+        self.assertEqual(["src"], args._envelope_write_scope)
+        self.assertEqual(["src"], args._envelope_read_scope)
+
+    def test_worker_identity_and_private_title_validation_fail_closed(self) -> None:
+        with self.assertRaisesRegex(RuntimeError, "positive --worker-pid"):
+            handoffctl.claimed_process_identity(
+                argparse.Namespace(worker_pid=0, worker_start_time=1)
+            )
+        with (
+            patch.object(handoffctl, "process_start_time", return_value=None),
+            self.assertRaisesRegex(RuntimeError, "not a live matching process"),
+        ):
+            handoffctl.claimed_process_identity(
+                argparse.Namespace(worker_pid=123, worker_start_time=1)
+            )
+        self.assertIsNone(handoffctl.process_start_time(-1))
+        with patch.object(handoffctl, "private_text_errors", return_value=["private"]):
+            self.assertEqual(
+                ["AR-0001: privacy-unsafe short_title"],
+                handoffctl.short_title_errors(Path("task.json"), "AR-0001", "safe"),
+            )
+
+    def test_missing_runtime_config_is_rejected(self) -> None:
+        with (
+            patch.object(handoffctl, "CONFIG", self.root / "missing.json"),
+            self.assertRaisesRegex(RuntimeError, "missing private runtime config"),
+        ):
+            handoffctl.config()
+
+    def test_worker_scope_rejects_unreadable_and_invalid_boot_identity(self) -> None:
+        with (
+            patch.object(Path, "read_text", side_effect=OSError("unreadable")),
+            self.assertRaisesRegex(
+                RuntimeError, "cannot independently read worker execution scope"
+            ),
+        ):
+            handoffctl.worker_execution_scope()
+
+    def test_preflight_timeout_is_rendered_and_run_requires_scope_defaults(self) -> None:
+        args = argparse.Namespace(json=True)
+        with (
+            patch.object(
+                handoffctl,
+                "execution_preflight",
+                return_value=(True, "OK", "ready", 30.0),
+            ),
+            patch.object(handoffctl, "release_envelope_worktree"),
+            contextlib.redirect_stdout(io.StringIO()) as output,
+        ):
+            self.assertEqual(0, handoffctl.print_execution_preflight(args))
+        self.assertIn('"timeout_seconds":30.0', output.getvalue())
+
+        run_args = argparse.Namespace(task="AR-0001", command_class="test")
+        with (
+            patch.object(
+                handoffctl,
+                "locate",
+                return_value=(None, {"execution_envelope_ref": "env"}, ""),
+            ),
+            patch.object(
+                handoffctl,
+                "execution_preflight",
+                return_value=(True, "OK", "ready", 30.0),
+            ),
+        ):
+            self.assertEqual(30.0, handoffctl.run_envelope_timeout(run_args))
+        self.assertEqual([], run_args.scope_path)
+        with (
+            patch.object(Path, "read_text", return_value="not-a-uuid"),
+            self.assertRaisesRegex(RuntimeError, "invalid boot identity"),
+        ):
+            handoffctl.worker_execution_scope()
+
+    def test_task_lock_retries_once_before_acquiring(self) -> None:
+        with (
+            patch.object(fcntl, "flock", side_effect=[BlockingIOError(), None, None]),
+            patch.object(time, "monotonic", side_effect=[0.0, 0.0, 2.0]),
+            patch.object(time, "sleep") as sleep,
+            handoffctl.task_execution_locked("AR-0001", exclusive=True, timeout=1),
+        ):
+            pass
+        sleep.assert_called_once()
 
     def test_dispatch_returning_command_routes_lifecycle_handlers(self) -> None:
         with patch.object(handoffctl, "dispatch_roles_command", return_value=3) as roles:
