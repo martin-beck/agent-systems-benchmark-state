@@ -99,6 +99,13 @@ class CredentialHandoffTests(unittest.TestCase):
             pass_fds=(71,),
         )
 
+    def test_handoffctl_fallback_without_worktree_descriptor(self) -> None:
+        args = argparse.Namespace()
+        completed: subprocess.CompletedProcess[bytes] = subprocess.CompletedProcess(["true"], 0)
+        with patch.object(handoffctl.subprocess, "run", return_value=completed) as run:  # type: ignore[attr-defined]
+            self.assertIs(completed, handoffctl._run_envelope_subprocess(["true"], 2.0, args))
+        run.assert_called_once_with(["true"], check=False, stdin=subprocess.DEVNULL, timeout=2.0)
+
     def test_rejects_missing_credential_descriptor(self) -> None:
         with self.assertRaisesRegex(RuntimeError, "credential descriptor is required"):
             credential_handoff.run_envelope_subprocess(["true"], 1.0, argparse.Namespace())
@@ -259,6 +266,25 @@ class CredentialHandoffTests(unittest.TestCase):
             handoffctl._cmd_run_fenced(args)
         launch.assert_not_called()
 
+    def test_cmd_run_fenced_rejects_nonpositive_timeout_before_launch(self) -> None:
+        args = argparse.Namespace(
+            task="AR-1936",
+            owner="worker",
+            command=["true"],
+            command_class="read",
+            authorize_external_side_effects=False,
+            timeout_seconds=0,
+        )
+        with (
+            patch.object(handoffctl, "backend_selection", return_value={"backend": "git"}),
+            patch.object(handoffctl, "config", return_value={}),
+            patch.object(handoffctl, "require_active_owner", return_value=MagicMock()),
+            patch.object(handoffctl, "_run_envelope_subprocess") as launch,
+            self.assertRaisesRegex(RuntimeError, "timeout must be positive"),
+        ):
+            handoffctl._cmd_run_fenced(args)
+        launch.assert_not_called()
+
     def test_cmd_run_fenced_rejects_timeout_above_envelope_cap(self) -> None:
         args = argparse.Namespace(
             task="AR-1936",
@@ -280,6 +306,49 @@ class CredentialHandoffTests(unittest.TestCase):
         ):
             handoffctl._cmd_run_fenced(args)
         launch.assert_not_called()
+
+    def test_cmd_run_fenced_reserves_retry_circuit_without_bound_worktree(self) -> None:
+        args = argparse.Namespace(
+            task="AR-1936",
+            owner="worker",
+            command=["true"],
+            command_class="read",
+            authorize_external_side_effects=False,
+            retry_window=3,
+            timeout_seconds=5.0,
+            scope_path=[],
+        )
+        policy = MagicMock()
+        lock = MagicMock()
+        with (
+            patch.object(handoffctl, "backend_selection", return_value={"backend": "git"}),
+            patch.object(handoffctl, "config", return_value={}),
+            patch.object(handoffctl, "require_active_owner", return_value=policy),
+            patch.object(handoffctl, "run_envelope_timeout", return_value=None),
+            patch.object(handoffctl, "require_policy_unchanged"),
+            patch.object(handoffctl.al, "prepare"),  # type: ignore[attr-defined]
+            patch.object(handoffctl, "sandboxed_envelope_command", return_value=["true"]),
+            patch.object(handoffctl, "locate", return_value=(None, {"task_revision": 4}, None)),
+            patch.object(handoffctl, "mutate"),
+            patch.object(handoffctl, "task_execution_locked", return_value=lock),
+            patch.object(
+                handoffctl,
+                "_run_envelope_subprocess",
+                return_value=subprocess.CompletedProcess(["true"], 0),
+            ) as launch,
+        ):
+            result = handoffctl._cmd_run_fenced(args)
+        self.assertEqual((policy, result[1], 5.0, False, 0, None, None), result)
+        launch.assert_called_once()
+
+    def test_dispatch_retry_circuit_status_routes_to_renderer(self) -> None:
+        args = argparse.Namespace(
+            retry_circuit_action="status",
+            task="AR-1936",
+        )
+        with patch.object(handoffctl, "cmd_retry_circuit_status", return_value=7) as status:
+            self.assertEqual(7, handoffctl.dispatch_retry_circuit(args))
+        status.assert_called_once_with("AR-1936")
 
     def test_main_parses_credential_fd_and_dispatches_run(self) -> None:
         with (
