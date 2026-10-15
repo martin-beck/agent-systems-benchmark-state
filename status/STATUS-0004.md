@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-        AR_1634["AR-1634 - Done"]:::status_done
         AR_1635["AR-1635 - Done"]:::status_done
         AR_1636["AR-1636 - Done"]:::status_done
         AR_1637["AR-1637 - Done"]:::status_done
@@ -296,7 +295,7 @@
         AR_1948["AR-1948 - Blocked"]:::status_blocked
         AR_1949["AR-1949 - Blocked"]:::status_blocked
         AR_1950["AR-1950 - In progress"]:::status_in_progress
-        AR_1951["AR-1951 - Planned"]:::status_planned
+        AR_1951["AR-1951 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2645,3 +2644,4 @@
 | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) |
 | [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md) | None | None |
 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md) | None | None |
+| [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md) | None | None |
