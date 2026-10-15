@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1942",
+  "issue": {
+    "number": 10072,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10072"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "A bounded git-publication command invokes the exact bound runner and uses descriptor-backed admin metadata, while wrong-runner and missing-metadata cases fail closed; positive and hostile tests pass; no direct push, credentials, formal, TLC, or history rewrite.",
+      "depends_on": [],
+      "id": "AR-1942",
+      "ownership": "ASB state handoffctl execution bootstrap and sandbox publication boundary only; preserve all prior task histories and signed fixes.",
+      "scope": "Repair the ASB state handoffctl publication bootstrap so a bound execution invokes the reviewed dedicated-runner sandbox and linked-worktree Git-admin mount implementation, without falling back to the main vendored runner or bypassing isolation. Preserve AR-1941 mount and AR-1940 ledger fixes; add positive and negative bootstrap tests, with initial schema-v2 network authorization limited to git-publication.",
+      "short_title": "Bootstrap bound publication runner"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

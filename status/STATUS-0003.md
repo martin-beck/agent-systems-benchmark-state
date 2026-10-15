@@ -3208,6 +3208,20 @@
 | Summary | Repair the handoffctl execution-envelope sandbox so linked Git worktrees resolve required admin metadata through sandbox-visible descriptors without leaking host absolute paths, while retaining the bounded AR-1940 stale-ledger tolerance. Add positive and negative admin-metadata mount tests, including missing metadata and host-path rejection; use an initial schema-v2 envelope with network authorized only for git-publication. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1942 — Bootstrap bound publication runner
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the ASB state handoffctl publication bootstrap so a bound execution invokes the reviewed dedicated-runner sandbox and linked-worktree Git-admin mount implementation, without falling back to the main vendored runner or bypassing isolation. Preserve AR-1941 mount and AR-1940 ledger fixes; add positive and negative bootstrap tests, with initial schema-v2 network authorization limited to git-publication. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4030,18 +4044,3 @@ flowchart LR
         AR_1761["AR-1761 - Done"]:::status_done
         AR_1762["AR-1762 - Done"]:::status_done
         AR_1763["AR-1763 - Done"]:::status_done
-        AR_1764["AR-1764 - Done"]:::status_done
-        AR_1765["AR-1765 - Done"]:::status_done
-        AR_1766["AR-1766 - Done"]:::status_done
-        AR_1767["AR-1767 - Done"]:::status_done
-        AR_1768["AR-1768 - Done"]:::status_done
-        AR_1769["AR-1769 - Done"]:::status_done
-        AR_1770["AR-1770 - Done"]:::status_done
-        AR_1771["AR-1771 - Done"]:::status_done
-        AR_1772["AR-1772 - Done"]:::status_done
-        AR_1773["AR-1773 - Blocked"]:::status_blocked
-        AR_1774["AR-1774 - Planned"]:::status_planned
-        AR_1775["AR-1775 - Done"]:::status_done
-        AR_1776["AR-1776 - Done"]:::status_done
-        AR_1777["AR-1777 - Done"]:::status_done
-        AR_1778["AR-1778 - Done"]:::status_done

@@ -1,5 +1,20 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1764["AR-1764 - Done"]:::status_done
+        AR_1765["AR-1765 - Done"]:::status_done
+        AR_1766["AR-1766 - Done"]:::status_done
+        AR_1767["AR-1767 - Done"]:::status_done
+        AR_1768["AR-1768 - Done"]:::status_done
+        AR_1769["AR-1769 - Done"]:::status_done
+        AR_1770["AR-1770 - Done"]:::status_done
+        AR_1771["AR-1771 - Done"]:::status_done
+        AR_1772["AR-1772 - Done"]:::status_done
+        AR_1773["AR-1773 - Blocked"]:::status_blocked
+        AR_1774["AR-1774 - Planned"]:::status_planned
+        AR_1775["AR-1775 - Done"]:::status_done
+        AR_1776["AR-1776 - Done"]:::status_done
+        AR_1777["AR-1777 - Done"]:::status_done
+        AR_1778["AR-1778 - Done"]:::status_done
         AR_1779["AR-1779 - Done"]:::status_done
         AR_1780["AR-1780 - Planned"]:::status_planned
         AR_1781["AR-1781 - Done"]:::status_done
@@ -150,6 +165,7 @@
         AR_1939["AR-1939 - In progress"]:::status_in_progress
         AR_1940["AR-1940 - In progress"]:::status_in_progress
         AR_1941["AR-1941 - In progress"]:::status_in_progress
+        AR_1942["AR-1942 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2517,5 +2533,3 @@
 | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md) |
 | [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
-| [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1725](../tasks/AR-1725-documentation-quickstart-and-platform-install.md) |
-| [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md), [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md) |
