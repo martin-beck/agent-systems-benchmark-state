@@ -3362,6 +3362,20 @@
 | Summary | Adopt Agent Workflow Coordinator v0.7.16 at exact merge commit 6127f6c76c8feafd9e83cb0ba8f4bd478ac656b1 through the documented clean-source vendor sync using explicit source-root binding. Change only coordinator.vendor.json, allowlisted vendor files, tools/handoffctl_vendor.py verifier inputs, and generated integrity evidence. Preserve AR-1951 history and all overlays; no formal/TLC, Agent Relay, runtime downloads, or direct source copying. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1953 — Resolve envelope roots
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair ASB handoffctl execution-envelope resolution so immutable envelopes can declare bounded state metadata paths separately from bound product paths, while preserving fail-closed traversal, symlink, wrong-root, and scope validation. Do not weaken isolation, mutate prior task history, or run formal/TLC. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4035,16 +4049,3 @@ flowchart LR
         AR_1602["AR-1602 - Done"]:::status_done
         AR_1603["AR-1603 - Done"]:::status_done
         AR_1604["AR-1604 - Done"]:::status_done
-        AR_1605["AR-1605 - Done"]:::status_done
-        AR_1606["AR-1606 - Done"]:::status_done
-        AR_1607["AR-1607 - Done"]:::status_done
-        AR_1608["AR-1608 - Done"]:::status_done
-        AR_1609["AR-1609 - Done"]:::status_done
-        AR_1611["AR-1611 - Done"]:::status_done
-        AR_1612["AR-1612 - Done"]:::status_done
-        AR_1613["AR-1613 - Blocked"]:::status_blocked
-        AR_1614["AR-1614 - Done"]:::status_done
-        AR_1615["AR-1615 - Done"]:::status_done
-        AR_1617["AR-1617 - Done"]:::status_done
-        AR_1618["AR-1618 - Done"]:::status_done
-        AR_1619["AR-1619 - Done"]:::status_done

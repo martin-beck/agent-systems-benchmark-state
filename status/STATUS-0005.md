@@ -1,5 +1,9 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md), [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md), [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1519](../tasks/AR-1519.md) |
+| [AR-1305](../tasks/AR-1305-image-native-user-session.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None |
+| [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
+| [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
 | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | None |
 | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) |
@@ -595,6 +599,7 @@
 | [AR-1950](../tasks/AR-1950.md) | None | None |
 | [AR-1951](../tasks/AR-1951.md) | None | None |
 | [AR-1952](../tasks/AR-1952.md) | None | None |
+| [AR-1953](../tasks/AR-1953.md) | None | None |
 
 ## Complete AR inventory
 
@@ -702,4 +707,3 @@
 | P0 | [AR-1773](../tasks/AR-1773-universal-command-step-instrumentation.md): Universal command step instrumentation | Unclaimed | Route every eligible public ASB command step through the shared status/progress reporter with real work updates. | Repair the coordinator Bubblewrap runtime root to mount the approved pinned Cargo toolchain, compiler/linker support, complete workspace source, and required identity files through an authorized runner; then rerun exact-head focused and full tests through handoffctl. No product source repair is justified. |
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt. |
 | P0 | [AR-1826](../tasks/AR-1826-explicit-setup-config-contract.md): Define explicit setup configuration and plan-binding contract | Unclaimed | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. | Supported repair unavailable in vendored handoffctl v0.7.5: bind-worktree rejects retained legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract while branch is empty, and no coordinator command clears the pair. Add/use an explicitly reviewed coordinator repair version, then re-claim, bind codex/ar-1826-explicit-setup-contract to the exact non-overlapping worktree, and requalify reviewed e9d95999 onto current main d0e6a28. |
-| P0 | [AR-1836](../tasks/AR-1836-cross-repo-tui-qualification-determinism.md): Cross-repository Exact TUI qualification determinism | Unclaimed | Repair the deterministic cross-repository Exact TUI inherited-fd/PTY qualification seam exposed by AR-1835 without weakening its assertions. | Promote after AR-1835 dependency resolution; reproduce the two hosted failures with complete workflow metadata, identify the owning workflow/asb-tui seam, and implement only a deterministic qualification repair without weakening the gate. |

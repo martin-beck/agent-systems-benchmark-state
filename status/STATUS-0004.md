@@ -1,5 +1,18 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1605["AR-1605 - Done"]:::status_done
+        AR_1606["AR-1606 - Done"]:::status_done
+        AR_1607["AR-1607 - Done"]:::status_done
+        AR_1608["AR-1608 - Done"]:::status_done
+        AR_1609["AR-1609 - Done"]:::status_done
+        AR_1611["AR-1611 - Done"]:::status_done
+        AR_1612["AR-1612 - Done"]:::status_done
+        AR_1613["AR-1613 - Blocked"]:::status_blocked
+        AR_1614["AR-1614 - Done"]:::status_done
+        AR_1615["AR-1615 - Done"]:::status_done
+        AR_1617["AR-1617 - Done"]:::status_done
+        AR_1618["AR-1618 - Done"]:::status_done
+        AR_1619["AR-1619 - Done"]:::status_done
         AR_1620["AR-1620 - Done"]:::status_done
         AR_1621["AR-1621 - Done"]:::status_done
         AR_1622["AR-1622 - Planned"]:::status_planned
@@ -312,6 +325,7 @@
         AR_1950["AR-1950 - In progress"]:::status_in_progress
         AR_1951["AR-1951 - Blocked"]:::status_blocked
         AR_1952["AR-1952 - Blocked"]:::status_blocked
+        AR_1953["AR-1953 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2651,7 +2665,3 @@
 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md), [AR-1305](../tasks/AR-1305-image-native-user-session.md), [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md) |
 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md), [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | None |
-| [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md), [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md), [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1519](../tasks/AR-1519.md) |
-| [AR-1305](../tasks/AR-1305-image-native-user-session.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None |
-| [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
-| [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
