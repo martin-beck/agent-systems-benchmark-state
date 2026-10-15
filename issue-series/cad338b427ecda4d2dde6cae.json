@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1956",
+  "issue": {
+    "number": 10086,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10086"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Bound runner resolves the declared linked-worktree Git admin path for a bounded publication preflight and exact AR-1955 git-publication attempt; positive and hostile runner-selection tests pass; no direct push or gate weakening.",
+      "depends_on": [],
+      "id": "AR-1956",
+      "ownership": "ASB handoffctl outer-runner selection and linked-worktree admin mount only; no product changes, ledger edits, task-history rewrites, or AR-1955 source changes.",
+      "scope": "Repair only the supported handoffctl outer-runner and linked-worktree Git admin mount needed for bounded publication of AR-1955. Preserve AR-1955 signed candidate commits, AR-1950 and AR-1954 active work, all prior task history, and fail-closed path isolation.",
+      "short_title": "Repair runner mount"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

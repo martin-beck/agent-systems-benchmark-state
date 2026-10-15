@@ -1,5 +1,16 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1556["AR-1556 - Superseded"]:::status_superseded
+        AR_1557["AR-1557 - Done"]:::status_done
+        AR_1558["AR-1558 - Done"]:::status_done
+        AR_1559["AR-1559 - Done"]:::status_done
+        AR_1560["AR-1560 - Superseded"]:::status_superseded
+        AR_1561["AR-1561 - Cancelled"]:::status_cancelled
+        AR_1562["AR-1562 - Done"]:::status_done
+        AR_1563["AR-1563 - Done"]:::status_done
+        AR_1564["AR-1564 - Done"]:::status_done
+        AR_1565["AR-1565 - Done"]:::status_done
+        AR_1566["AR-1566 - Blocked"]:::status_blocked
         AR_1567["AR-1567 - Done"]:::status_done
         AR_1568["AR-1568 - Done"]:::status_done
         AR_1569["AR-1569 - Done"]:::status_done
@@ -359,6 +370,7 @@
         AR_1953["AR-1953 - Blocked"]:::status_blocked
         AR_1954["AR-1954 - In progress"]:::status_in_progress
         AR_1955["AR-1955 - In progress"]:::status_in_progress
+        AR_1956["AR-1956 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2682,10 +2694,3 @@
 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
-| [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) |
-| [AR-1289](../tasks/AR-1289-formal-lock-gate.md) | None | None |
-| [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md) | None | None |
-| [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md) | None | None |
-| [AR-1292](../tasks/AR-1292-tla-provenance-repair.md) | None | None |
-| [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |
-| [AR-1294](../tasks/AR-1294-state-gate-baseline.md) | None | None |

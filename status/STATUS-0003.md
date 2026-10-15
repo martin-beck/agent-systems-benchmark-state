@@ -3404,6 +3404,20 @@
 | Summary | Publish only the already signed historical-ledger validation tolerance from ae352f4b3e and handoffctl size reduction from be9aea4648 on current ASB state main. Preserve AR-1861, AR-1862, AR-1926, AR-1949, AR-1945, and all active work; do not rewrite ledger history or change product behavior. |
 | Next action | Repair supported linked-worktree admin mount/runner activation, then rerun bound git-publication for signed candidate 2d8a00b259. |
 
+### AR-1956 — Repair runner mount
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair only the supported handoffctl outer-runner and linked-worktree Git admin mount needed for bounded publication of AR-1955. Preserve AR-1955 signed candidate commits, AR-1950 and AR-1954 active work, all prior task history, and fail-closed path isolation. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4035,14 +4049,3 @@ flowchart LR
         AR_1553["AR-1553 - Done"]:::status_done
         AR_1554["AR-1554 - Done"]:::status_done
         AR_1555["AR-1555 - Done"]:::status_done
-        AR_1556["AR-1556 - Superseded"]:::status_superseded
-        AR_1557["AR-1557 - Done"]:::status_done
-        AR_1558["AR-1558 - Done"]:::status_done
-        AR_1559["AR-1559 - Done"]:::status_done
-        AR_1560["AR-1560 - Superseded"]:::status_superseded
-        AR_1561["AR-1561 - Cancelled"]:::status_cancelled
-        AR_1562["AR-1562 - Done"]:::status_done
-        AR_1563["AR-1563 - Done"]:::status_done
-        AR_1564["AR-1564 - Done"]:::status_done
-        AR_1565["AR-1565 - Done"]:::status_done
-        AR_1566["AR-1566 - Blocked"]:::status_blocked
