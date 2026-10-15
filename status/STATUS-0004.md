@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1568["AR-1568 - Done"]:::status_done
         AR_1569["AR-1569 - Done"]:::status_done
         AR_1570["AR-1570 - Done"]:::status_done
         AR_1571["AR-1571 - Blocked"]:::status_blocked
@@ -356,7 +357,7 @@
         AR_1952["AR-1952 - Blocked"]:::status_blocked
         AR_1953["AR-1953 - Blocked"]:::status_blocked
         AR_1954["AR-1954 - In progress"]:::status_in_progress
-        AR_1955["AR-1955 - Open"]:::status_open
+        AR_1955["AR-1955 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2688,4 +2689,3 @@
 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |
 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md) | None | None |
 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md) | None | None |
-| [AR-1296](../tasks/AR-1296-state-quality-baseline.md) | None | None |

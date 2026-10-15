@@ -3394,11 +3394,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1955-state-integrity-20261015 |
 | Parent | None |
 | Children | None |
 | Summary | Publish only the already signed historical-ledger validation tolerance from ae352f4b3e and handoffctl size reduction from be9aea4648 on current ASB state main. Preserve AR-1861, AR-1862, AR-1926, AR-1949, AR-1945, and all active work; do not rewrite ledger history or change product behavior. |
@@ -4047,4 +4047,3 @@ flowchart LR
         AR_1565["AR-1565 - Done"]:::status_done
         AR_1566["AR-1566 - Blocked"]:::status_blocked
         AR_1567["AR-1567 - Done"]:::status_done
-        AR_1568["AR-1568 - Done"]:::status_done

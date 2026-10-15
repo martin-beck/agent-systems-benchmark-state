@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1296](../tasks/AR-1296-state-quality-baseline.md) | None | None |
 | [AR-1297](../tasks/AR-1297-task-schema-metadata.md) | None | None |
 | [AR-1298](../tasks/AR-1298-narrow-metadata-repair.md) | None | None |
 | [AR-1299](../tasks/AR-1299.md) | [AR-1190](../tasks/AR-1190.md) | None |
@@ -612,7 +613,7 @@
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -620,8 +621,9 @@
 | P1 | [AR-1945](../tasks/AR-1945.md): Reduce handoffctl state size | ar1945-handoffctl-size-luna | Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories. | Review signed commit be9aea464882f0b3d01d7c3cd28c3f32a90e267e, run hosted exact-head gates, and publish through reviewed lifecycle. |
 | P1 | [AR-1950](../tasks/AR-1950.md): Bind product test paths | ar1950-product-path-binding-luna | Repair the handoffctl execution-envelope binding so a state-owned task can resolve explicitly declared ASB product test paths from the configured product checkout without treating the product checkout as the state worktree or broadening read/write isolation. Add positive and hostile path-resolution tests. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1954](../tasks/AR-1954.md): Repair v0.7.16 compatibility | gpt-5.6-luna-ar1885-v0715 | Repair compatibility between the supported Coordinator v0.7.16 vendor snapshot and ASB legacy fixtures: inactive-owner error ordering, envelope subprocess setup, vendor version/manifest expectations, and selector cases. Preserve fail-closed validation and do not weaken gates or run formal/TLC as implementation scope. | Wait exact-head CI for 002c4f8f23; verify vendor integrity and coverage &gt;=95&#37;, then merge/reconcile. |
+| P1 | [AR-1955](../tasks/AR-1955.md): Adopt state integrity repairs | codex-ar1955-state-integrity-20261015 | Publish only the already signed historical-ledger validation tolerance from ae352f4b3e and handoffctl size reduction from be9aea4648 on current ASB state main. Preserve AR-1861, AR-1862, AR-1926, AR-1949, AR-1945, and all active work; do not rewrite ledger history or change product behavior. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (18)
+### Open (17)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -642,7 +644,6 @@
 | P1 | [AR-1933](../tasks/AR-1933.md): Coordinator publication credential handoff | Unclaimed | Implement the smallest coordinator-owned credential handoff needed for authorized git-publication commands to use host gh authentication without exposing credentials in argv, envelopes, task records, evidence, or subprocess output. Preserve fail-closed capability and network gates, and do not alter AR-1849, AR-1931, AR-1932, PR #171, or historical state. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1934](../tasks/AR-1934.md): PR 1318 publication successor | Unclaimed | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1936](../tasks/AR-1936.md): Integrate credential FD handoff | Unclaimed | Integrate the already-reviewed coordinator credential-handoff contract into the ASB state handoffctl run path: admit an explicit credential FD only for authorized git-publication execution, pass it and the worktree FD to the bounded subprocess, fail closed when the helper is unavailable or the descriptor is invalid, and add no formal/TLC or unrelated runtime changes. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1955](../tasks/AR-1955.md): Adopt state integrity repairs | Unclaimed | Publish only the already signed historical-ledger validation tolerance from ae352f4b3e and handoffctl size reduction from be9aea4648 on current ASB state main. Preserve AR-1861, AR-1862, AR-1926, AR-1949, AR-1945, and all active work; do not rewrite ledger history or change product behavior. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (139)
 
@@ -713,4 +714,3 @@
 | P0 | [AR-1566](../tasks/AR-1566.md): ASB development broker handoff integration | Unclaimed | Wire ASB development launch through the authenticated asb-tui broker handoff seam. | Remain blocked as historical evidence; the active real bridge work is tracked by TUI AR-1587 and ASB AR-1590, which must complete before this boundary can be closed. |
 | P0 | [AR-1571](../tasks/AR-1571.md): ASB development broker channel transport handoff | Unclaimed | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. | Remain blocked as historical evidence; the active exact inherited-fd qualification is tracked by ASB AR-1590 after TUI AR-1587 completes the real bridge. |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Obtain independent review of quality/AR-1613-20261007-current-paired-journey.json and reconcile exact protected-main paired-head policy before any done/release claim. |
-| P0 | [AR-1702](../tasks/AR-1702.md): Development live OpenRouter qualification | Unclaimed | Run credential-backed online OpenRouter smoke and typed negative tests for the merged ASB live path without mock fallback. | Provide OPENROUTER_API_KEY only in the worker runtime environment, then rerun one bounded real OpenRouter request at exact ASB main 31ca7a481fca8b79bfbff126b92db6c6118beb7c and record only redacted provider/model/timing/outcome metadata; retain the already-green credential-free negative matrix. |
