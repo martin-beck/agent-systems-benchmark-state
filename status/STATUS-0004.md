@@ -213,7 +213,7 @@
         AR_1882["AR-1882 - Blocked"]:::status_blocked
         AR_1883["AR-1883 - Blocked"]:::status_blocked
         AR_1884["AR-1884 - Blocked"]:::status_blocked
-        AR_1885["AR-1885 - Open"]:::status_open
+        AR_1885["AR-1885 - In progress"]:::status_in_progress
         AR_1886["AR-1886 - Blocked"]:::status_blocked
         AR_1887["AR-1887 - Blocked"]:::status_blocked
         AR_1888["AR-1888 - Open"]:::status_open
