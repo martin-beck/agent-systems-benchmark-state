@@ -565,7 +565,7 @@
       "source": "tools/predicate_ledger.py"
     },
     "tools/predicate_ledger_repair.py": {
-      "sha256": "5a6c7c550056d0743eff1b1f90e7e69821a35174a598a7730b0994da9cc028ed",
+      "sha256": "045b6b4f56a375b5fe90dfc766d0c5e95f23d6bee320db8eeca3b6fdc17f5fb2",
       "source": "tools/predicate_ledger_repair.py"
     },
     "tools/production_upgrade_binding.py": {

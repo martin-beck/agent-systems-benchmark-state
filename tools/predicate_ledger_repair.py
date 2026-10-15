@@ -116,12 +116,16 @@ def repair(  # noqa: C901
     if same_candidate and not any(
         isinstance(row, dict)
         and (
-            (row.get("status") == "stale"
-            and (row.get("candidate_ref"), row.get("candidate_digest"))
-            == (candidate_ref, candidate_digest))
-            or (row.get("status") == "pass"
-            and (row.get("candidate_ref"), row.get("candidate_digest"))
-            != (candidate_ref, candidate_digest))
+            (
+                row.get("status") == "stale"
+                and (row.get("candidate_ref"), row.get("candidate_digest"))
+                == (candidate_ref, candidate_digest)
+            )
+            or (
+                row.get("status") == "pass"
+                and (row.get("candidate_ref"), row.get("candidate_digest"))
+                != (candidate_ref, candidate_digest)
+            )
         )
         for row in steps
     ):
@@ -159,7 +163,8 @@ def repair(  # noqa: C901
         if fallback is not None:
             for row in historical:
                 if row.get("status") == "stale" and (
-                    row.get("candidate_ref"), row.get("candidate_digest")
+                    row.get("candidate_ref"),
+                    row.get("candidate_digest"),
                 ) == (candidate_ref, candidate_digest):
                     row["candidate_ref"], row["candidate_digest"] = fallback
     prospective["steps"] = [*historical, fresh]
