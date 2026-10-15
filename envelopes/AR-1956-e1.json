@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "envelope_id": "AR-1956-e1",
+  "envelope_revision": 1,
+  "task": "AR-1956",
+  "task_revision": 4,
+  "spec_ref": "specs/AR-1956.json",
+  "spec_revision": 1,
+  "capabilities": {"git_metadata": {"allowed": true}, "network": {"allowed": true}},
+  "command_classes": {"read": {"allowed": true, "timeout_seconds": 120}, "test": {"allowed": true, "timeout_seconds": 900}, "source-write": {"allowed": true, "timeout_seconds": 900}, "git-publication": {"allowed": true, "timeout_seconds": 900}},
+  "path_scope": {"read": ["specs/AR-1956.json", "envelopes/AR-1956-e1.json", "tasks/AR-1956.md", "tools", "tests"], "write": ["tools/handoffctl.py", "tools/execution_envelope.py", "tests", "quality"]},
+  "evidence": [{"class": "contract-test", "id": "runner", "required": true}, {"class": "mechanical", "id": "tests", "required": true}],
+  "outputs": [{"id": "runner", "description": "Bound runner activation repair."}, {"id": "tests", "description": "Positive and hostile runner tests."}],
+  "non_goals": ["Do not modify AR-1955 source, ledgers, product files, active AR-1950/AR-1954, or historical tasks.", "Do not direct-push or run formal/TLC."],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}, {"id": "history", "kind": "deny"}, {"id": "formal", "kind": "deny"}]
+}
