@@ -3422,11 +3422,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1957-sandbox-dns-20261015 |
 | Parent | None |
 | Children | None |
 | Summary | Repair only authorized DNS/network visibility inside the bounded handoffctl publication sandbox so AR-1956 can reach the configured HTTPS Git remote. Preserve fail-closed network policy, reject unapproved destinations and selectors, and do not broaden network access or modify AR-1955/1956 source. |
@@ -4047,4 +4047,3 @@ flowchart LR
         AR_1537["AR-1537 - Blocked"]:::status_blocked
         AR_1538["AR-1538 - Blocked"]:::status_blocked
         AR_1539["AR-1539 - Blocked"]:::status_blocked
-        AR_1540["AR-1540 - Done"]:::status_done
