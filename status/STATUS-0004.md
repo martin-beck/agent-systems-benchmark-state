@@ -181,7 +181,7 @@
         AR_1940["AR-1940 - In progress"]:::status_in_progress
         AR_1941["AR-1941 - In progress"]:::status_in_progress
         AR_1942["AR-1942 - In progress"]:::status_in_progress
-        AR_1943["AR-1943 - Planned"]:::status_planned
+        AR_1943["AR-1943 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
