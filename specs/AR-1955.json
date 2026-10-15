@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1955.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "historical-ledger", "description": "Done-task evidence ledgers validate their stored digests without rehashing changed current artifacts."},
+    {"id": "size-bound", "description": "The reviewed tools/handoffctl.py implementation is at or below 200000 bytes."},
+    {"id": "verification", "description": "Focused and configured non-formal tests pass without changing fail-closed behavior."},
+    {"id": "preservation", "description": "AR-1861, AR-1862, AR-1926, AR-1949, AR-1945, AR-1950, and AR-1954 history and paths remain untouched."}
+  ],
+  "definition_of_done": ["Bind immutable spec, envelope, and worktree.", "Apply only the signed ledger-tolerance and size repairs.", "Run focused and configured non-formal gates and publish through reviewed exact-head lifecycle."],
+  "inputs": [{"id": "ledger-fix", "description": "Signed historical-ledger validation tolerance ae352f4b3e."}, {"id": "size-fix", "description": "Signed handoffctl size reduction be9aea4648."}],
+  "outputs": [{"id": "repair", "description": "Current-main state integrity repair."}, {"id": "evidence", "description": "Focused, non-formal, hosted, and post-merge evidence."}],
+  "allowed_tools": ["python", "uv", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["network-download", "credentials", "formal", "tlc", "history-rewrite", "direct-task-edit", "gate-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "focused", "description": "Focused task-spec, handoffctl, and preservation tests pass."}, {"id": "full", "description": "Configured non-formal exact-head CI passes."}, {"id": "doctor", "description": "Post-merge live doctor and reconcile pass."}]
+}
