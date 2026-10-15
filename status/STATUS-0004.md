@@ -1,5 +1,18 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1510["AR-1510 - Blocked"]:::status_blocked
+        AR_1511["AR-1511 - Superseded"]:::status_superseded
+        AR_1512["AR-1512 - Blocked"]:::status_blocked
+        AR_1513["AR-1513 - Done"]:::status_done
+        AR_1514["AR-1514 - Done"]:::status_done
+        AR_1515["AR-1515 - Done"]:::status_done
+        AR_1516["AR-1516 - Done"]:::status_done
+        AR_1517["AR-1517 - Done"]:::status_done
+        AR_1518["AR-1518 - Blocked"]:::status_blocked
+        AR_1519["AR-1519 - Done"]:::status_done
+        AR_1520["AR-1520 - Done"]:::status_done
+        AR_1521["AR-1521 - Superseded"]:::status_superseded
+        AR_1522["AR-1522 - Blocked"]:::status_blocked
         AR_1523["AR-1523 - Done"]:::status_done
         AR_1524["AR-1524 - Done"]:::status_done
         AR_1525["AR-1525 - Done"]:::status_done
@@ -406,6 +419,7 @@
         AR_1956["AR-1956 - In progress"]:::status_in_progress
         AR_1957["AR-1957 - In progress"]:::status_in_progress
         AR_1958["AR-1958 - Blocked"]:::status_blocked
+        AR_1959["AR-1959 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2720,6 +2734,3 @@
 | [AR-1276](../tasks/AR-1276-primary-replay-runtime.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1278](../tasks/AR-1278-primary-runtime-client.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |

@@ -3446,6 +3446,20 @@
 | Summary | Raise the nonformal execution-envelope coverage above the 95&#37; floor with headroom using non-vendored positive and negative tests, then regenerate CURRENT.md and STATUS.md through handoffctl after the main-checkout integrity and runner repairs AR-1955/AR-1956. Do not weaken gates, alter vendored projections, or claim completion before exact-head CI, merge, doctor, and reconcile pass. |
 | Next action | Create a narrowly scoped successor envelope-authority repair that explicitly permits signed git-publication and git metadata; then publish this exact coverage diff. |
 
+### AR-1959 — Authorize AR-1958 publication
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the AR-1958 publication-capability omission by creating a bounded successor envelope/task authority. Admit git-publication and read-only Git metadata only for the exact AR-1958 worktree and declared paths, retain SSH-signed/DCO publication, and reject network, credentials, formal/TLC, arbitrary path widening, and history rewrite. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4031,16 +4045,3 @@ flowchart LR
         AR_1507["AR-1507 - Blocked"]:::status_blocked
         AR_1508["AR-1508 - Blocked"]:::status_blocked
         AR_1509["AR-1509 - Blocked"]:::status_blocked
-        AR_1510["AR-1510 - Blocked"]:::status_blocked
-        AR_1511["AR-1511 - Superseded"]:::status_superseded
-        AR_1512["AR-1512 - Blocked"]:::status_blocked
-        AR_1513["AR-1513 - Done"]:::status_done
-        AR_1514["AR-1514 - Done"]:::status_done
-        AR_1515["AR-1515 - Done"]:::status_done
-        AR_1516["AR-1516 - Done"]:::status_done
-        AR_1517["AR-1517 - Done"]:::status_done
-        AR_1518["AR-1518 - Blocked"]:::status_blocked
-        AR_1519["AR-1519 - Done"]:::status_done
-        AR_1520["AR-1520 - Done"]:::status_done
-        AR_1521["AR-1521 - Superseded"]:::status_superseded
-        AR_1522["AR-1522 - Blocked"]:::status_blocked
