@@ -205,6 +205,8 @@ class ExecutionEnvelopeTests(unittest.TestCase):
         with TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "file").write_text("x", encoding="utf-8")
+            with self.assertRaisesRegex(RuntimeError, "non-directory"):
+                _open_path(root / "file" / "child")
             root_fd = _open_path(root, directory=True)
             try:
                 with self.assertRaisesRegex(RuntimeError, "non-directory"):

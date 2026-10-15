@@ -208,6 +208,37 @@ class ReplacementTests(unittest.TestCase):
                 ):
                     execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
 
+    def test_replace_bound_rejects_capability_widening_against_v2_binding(self) -> None:
+        import tempfile
+        from pathlib import Path
+
+        old = _envelope()
+        old.update(
+            schema_version=2,
+            capabilities={
+                "git_metadata": {"allowed": False},
+                "network": {"allowed": False},
+            },
+        )
+        successor = _envelope(2)
+        successor.update(
+            schema_version=2,
+            capabilities={
+                "git_metadata": {"allowed": False},
+                "network": {"allowed": True},
+            },
+        )
+        meta = self._meta()
+        meta["execution_envelope"] = old
+        meta["execution_envelope_digest"] = canonical_digest(old)
+        args = self._args()
+        with (
+            tempfile.TemporaryDirectory() as directory,
+            patch.object(execution_envelope, "load", return_value=(successor, "", [])),
+            self.assertRaisesRegex(RuntimeError, "widen capabilities"),
+        ):
+            execution_envelope.replace_bound(meta, args, Path(directory), "2026-01-01T00:00:00Z")
+
 
 if __name__ == "__main__":
     unittest.main()

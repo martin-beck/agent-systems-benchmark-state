@@ -14,7 +14,13 @@ from collections.abc import Callable
 from pathlib import Path
 from unittest.mock import patch
 
-from tools import execution_envelope, handoffctl, retry_circuit
+from tools import (
+    autonomy_limits,
+    execution_envelope,
+    handoffctl,
+    resume_card_runtime,
+    retry_circuit,
+)
 
 
 def make_envelope() -> dict[str, object]:
@@ -262,3 +268,71 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
             self.assertTrue(handoffctl.dispatch_side_effect_command(reconcile))
             self.assertFalse(handoffctl.dispatch_side_effect_command(unknown))
         operation.assert_called_once_with(do_commit=True, push=False)
+
+    def test_dispatch_side_effect_routes_all_bounded_mutations(self) -> None:
+        cases: tuple[tuple[str, dict[str, object], str], ...] = (
+            ("reconcile", {"commit": True, "push": False}, "reconcile"),
+            ("checkpoint", {}, "cmd_checkpoint"),
+            ("rollback", {}, "cmd_rollback"),
+            ("render-status", {"check": True}, "cmd_render_status"),
+            ("migrate", {}, "cmd_migrate"),
+        )
+        for command, values, handler_name in cases:
+            with self.subTest(command=command):
+                args = argparse.Namespace(cmd=command, **values)
+                with patch.object(handoffctl, handler_name) as handler:
+                    self.assertTrue(handoffctl.dispatch_side_effect_command(args))
+                handler.assert_called_once()
+
+    def test_dispatch_read_only_routes_public_views(self) -> None:
+        cases: tuple[tuple[str, dict[str, object], str], ...] = (
+            ("snapshot", {"task": "AR-0001"}, "cmd_snapshot"),
+            ("board", {}, "cmd_board"),
+            ("metrics", {}, "cmd_metrics"),
+        )
+        for command, values, handler_name in cases:
+            with self.subTest(command=command):
+                args = argparse.Namespace(cmd=command, **values)
+                with patch.object(handoffctl, handler_name) as handler:
+                    self.assertEqual(0, handoffctl.dispatch_read_only_command(args))
+                handler.assert_called_once()
+
+        resume_args = argparse.Namespace(cmd="resume-card")
+        with patch.object(resume_card_runtime, "dispatch", return_value=7) as dispatch:
+            self.assertEqual(7, handoffctl.dispatch_read_only_command(resume_args))
+        dispatch.assert_called_once()
+
+        preflight_args = argparse.Namespace(cmd="preflight")
+        with patch.object(handoffctl, "print_execution_preflight", return_value=2) as render:
+            self.assertEqual(2, handoffctl.dispatch_read_only_command(preflight_args))
+        render.assert_called_once_with(preflight_args)
+
+    def test_dispatch_returning_command_routes_lifecycle_handlers(self) -> None:
+        with patch.object(handoffctl, "dispatch_roles_command", return_value=3) as roles:
+            self.assertEqual(
+                3, handoffctl.dispatch_returning_command(argparse.Namespace(cmd="roles"))
+            )
+        roles.assert_called_once()
+
+        with patch.object(handoffctl, "dispatch_retry_circuit", return_value=4) as retry:
+            self.assertEqual(
+                4, handoffctl.dispatch_returning_command(argparse.Namespace(cmd="retry-circuit"))
+            )
+        retry.assert_called_once()
+
+        with patch.object(autonomy_limits, "dispatch", return_value=5) as autonomy:
+            self.assertEqual(
+                5, handoffctl.dispatch_returning_command(argparse.Namespace(cmd="autonomy-limits"))
+            )
+        autonomy.assert_called_once()
+
+        with patch.object(handoffctl, "cmd_doctor", return_value=6) as doctor:
+            args = argparse.Namespace(cmd="doctor", live=True)
+            self.assertEqual(6, handoffctl.dispatch_returning_command(args))
+        doctor.assert_called_once_with(live=True)
+
+        with patch.object(handoffctl, "cmd_upgrade", return_value=7) as upgrade:
+            args = argparse.Namespace(cmd="upgrade")
+            self.assertEqual(7, handoffctl.dispatch_returning_command(args))
+        upgrade.assert_called_once_with(args)
+        self.assertIsNone(handoffctl.dispatch_returning_command(argparse.Namespace(cmd="unknown")))
