@@ -12,8 +12,8 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 4 |
-| **Open** | Dependency-ready and available to claim | 16 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 138 |
+| **Open** | Dependency-ready and available to claim | 17 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 137 |
 | **Planned** | Defined work awaiting promotion or dependencies | 99 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 632 |
@@ -29,14 +29,14 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Tasks | 930 |
 | Parent tasks | 0 |
 | Child tasks | 0 |
-| Open or active | 20 |
-| Blocked | 138 |
+| Open or active | 21 |
+| Blocked | 137 |
 
 ## Role and team rollup
 
 | Role | Team | Tasks | Open/active | Blocked | Done |
 | --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 930 | 20 | 138 | 632 |
+| unassigned | unassigned | 930 | 21 | 137 | 632 |
 
 ## Task drill-down
 
