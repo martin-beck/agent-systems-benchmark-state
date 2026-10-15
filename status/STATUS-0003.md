@@ -3348,6 +3348,20 @@
 | Summary | Adopt Agent Workflow Coordinator v0.7.15 at exact commit 02e3593136ba69c3160fb2143d0d946deb2f243d through the documented clean-source vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, tools/handoffctl_vendor.py verifier inputs, and generated integrity evidence. Preserve all task histories and overlays; no formal/TLC, Agent Relay, runtime downloads, or direct state edits. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1952 — Adopt Coordinator v0.7.16
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Adopt Agent Workflow Coordinator v0.7.16 at exact merge commit 6127f6c76c8feafd9e83cb0ba8f4bd478ac656b1 through the documented clean-source vendor sync using explicit source-root binding. Change only coordinator.vendor.json, allowlisted vendor files, tools/handoffctl_vendor.py verifier inputs, and generated integrity evidence. Preserve AR-1951 history and all overlays; no formal/TLC, Agent Relay, runtime downloads, or direct source copying. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4033,18 +4047,3 @@ flowchart LR
         AR_1615["AR-1615 - Done"]:::status_done
         AR_1617["AR-1617 - Done"]:::status_done
         AR_1618["AR-1618 - Done"]:::status_done
-        AR_1619["AR-1619 - Done"]:::status_done
-        AR_1620["AR-1620 - Done"]:::status_done
-        AR_1621["AR-1621 - Done"]:::status_done
-        AR_1622["AR-1622 - Planned"]:::status_planned
-        AR_1623["AR-1623 - Planned"]:::status_planned
-        AR_1624["AR-1624 - Planned"]:::status_planned
-        AR_1625["AR-1625 - Done"]:::status_done
-        AR_1626["AR-1626 - Done"]:::status_done
-        AR_1627["AR-1627 - Done"]:::status_done
-        AR_1628["AR-1628 - Done"]:::status_done
-        AR_1629["AR-1629 - Done"]:::status_done
-        AR_1630["AR-1630 - Done"]:::status_done
-        AR_1631["AR-1631 - Done"]:::status_done
-        AR_1632["AR-1632 - Done"]:::status_done
-        AR_1633["AR-1633 - Done"]:::status_done

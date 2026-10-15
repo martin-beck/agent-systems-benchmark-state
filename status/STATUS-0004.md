@@ -1,5 +1,20 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1619["AR-1619 - Done"]:::status_done
+        AR_1620["AR-1620 - Done"]:::status_done
+        AR_1621["AR-1621 - Done"]:::status_done
+        AR_1622["AR-1622 - Planned"]:::status_planned
+        AR_1623["AR-1623 - Planned"]:::status_planned
+        AR_1624["AR-1624 - Planned"]:::status_planned
+        AR_1625["AR-1625 - Done"]:::status_done
+        AR_1626["AR-1626 - Done"]:::status_done
+        AR_1627["AR-1627 - Done"]:::status_done
+        AR_1628["AR-1628 - Done"]:::status_done
+        AR_1629["AR-1629 - Done"]:::status_done
+        AR_1630["AR-1630 - Done"]:::status_done
+        AR_1631["AR-1631 - Done"]:::status_done
+        AR_1632["AR-1632 - Done"]:::status_done
+        AR_1633["AR-1633 - Done"]:::status_done
         AR_1634["AR-1634 - Done"]:::status_done
         AR_1635["AR-1635 - Done"]:::status_done
         AR_1636["AR-1636 - Done"]:::status_done
@@ -297,6 +312,7 @@
         AR_1949["AR-1949 - Blocked"]:::status_blocked
         AR_1950["AR-1950 - In progress"]:::status_in_progress
         AR_1951["AR-1951 - Blocked"]:::status_blocked
+        AR_1952["AR-1952 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2640,8 +2656,3 @@
 | [AR-1305](../tasks/AR-1305-image-native-user-session.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None |
 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
-| [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
-| [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | None |
-| [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) |
-| [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md) | None | None |
-| [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md) | None | None |

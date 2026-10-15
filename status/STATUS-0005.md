@@ -1,5 +1,10 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
+| [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | None |
+| [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) |
+| [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md) | None | None |
+| [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md) | None | None |
 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md) | None | None |
 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md), [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md) |
 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None |
@@ -589,6 +594,7 @@
 | [AR-1949](../tasks/AR-1949.md) | None | None |
 | [AR-1950](../tasks/AR-1950.md) | None | None |
 | [AR-1951](../tasks/AR-1951.md) | None | None |
+| [AR-1952](../tasks/AR-1952.md) | None | None |
 
 ## Complete AR inventory
 
@@ -697,5 +703,3 @@
 | P0 | [AR-1796](../tasks/AR-1796-concurrent-integration-liveness.md): Concurrent integration liveness | Unclaimed | Keep autonomous development live during concurrent protected-main integration. | Reconcile the stale AR-1796 merge identity against current protected main, then obtain a fresh exact-head full-exhaustive formal attestation before any v0.5.2 release attempt. |
 | P0 | [AR-1826](../tasks/AR-1826-explicit-setup-config-contract.md): Define explicit setup configuration and plan-binding contract | Unclaimed | Define the explicit setup-file and config-bound plan contract that replaces implicit user configuration and provider-selection artifacts. | Supported repair unavailable in vendored handoffctl v0.7.5: bind-worktree rejects retained legacy worktree_key agent-systems-benchmark-ar-1826-explicit-setup-config-contract while branch is empty, and no coordinator command clears the pair. Add/use an explicitly reviewed coordinator repair version, then re-claim, bind codex/ar-1826-explicit-setup-contract to the exact non-overlapping worktree, and requalify reviewed e9d95999 onto current main d0e6a28. |
 | P0 | [AR-1836](../tasks/AR-1836-cross-repo-tui-qualification-determinism.md): Cross-repository Exact TUI qualification determinism | Unclaimed | Repair the deterministic cross-repository Exact TUI inherited-fd/PTY qualification seam exposed by AR-1835 without weakening its assertions. | Promote after AR-1835 dependency resolution; reproduce the two hosted failures with complete workflow metadata, identify the owning workflow/asb-tui seam, and implement only a deterministic qualification repair without weakening the gate. |
-| P0 | [AR-1841](../tasks/AR-1841-coordinator-v053-adoption.md): Coordinator v0.5.3 adoption | Unclaimed | Adopt Coordinator v0.7.4 with partial legacy worktree binding. | Wait for scoped v0.7.4 compatibility repairs AR-1851 (AR-1793), AR-1852 (roles), and AR-1853 (complexity) to merge; then rebase PR #142 onto protected main, rerun candidate-focused/full non-formal required gates, obtain fresh exact-head independent review and CI. AR-1849 formal-admission evidence is optional for autonomous development and remains separately authorized for final product-delivery qualification. |
-| P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | Unclaimed | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
