@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-        AR_1619["AR-1619 - Done"]:::status_done
         AR_1620["AR-1620 - Done"]:::status_done
         AR_1621["AR-1621 - Done"]:::status_done
         AR_1622["AR-1622 - Planned"]:::status_planned
@@ -296,7 +295,7 @@
         AR_1933["AR-1933 - In progress"]:::status_in_progress
         AR_1934["AR-1934 - Open"]:::status_open
         AR_1935["AR-1935 - Blocked"]:::status_blocked
-        AR_1936["AR-1936 - In progress"]:::status_in_progress
+        AR_1936["AR-1936 - Open"]:::status_open
         AR_1937["AR-1937 - Blocked"]:::status_blocked
         AR_1938["AR-1938 - Planned"]:::status_planned
         AR_1939["AR-1939 - Blocked"]:::status_blocked

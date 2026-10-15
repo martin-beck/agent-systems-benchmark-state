@@ -3128,11 +3128,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1932-publication-capability-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Integrate the already-reviewed coordinator credential-handoff contract into the ASB state handoffctl run path: admit an explicit credential FD only for authorized git-publication execution, pass it and the worktree FD to the bounded subprocess, fail closed when the helper is unavailable or the descriptor is invalid, and add no formal/TLC or unrelated runtime changes. |
@@ -4047,3 +4047,4 @@ flowchart LR
         AR_1615["AR-1615 - Done"]:::status_done
         AR_1617["AR-1617 - Done"]:::status_done
         AR_1618["AR-1618 - Done"]:::status_done
+        AR_1619["AR-1619 - Done"]:::status_done
