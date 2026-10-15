@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1647](../tasks/AR-1647.md): Selected-agent comparison orchestration | Unclaimed | Run selected agents/workloads and produce comparison results from online or offline replay runs. | Current signed ASB main already contains the final route; exact-head focused/full gates and hosted assurance pass. Record acceptance from the paired qualification receipt and release. |
 | P0 | [AR-1648](../tasks/AR-1648.md): Selected-agent/workload fan-out | Unclaimed | Fan out persisted selected agents and workloads into durable online/offline run references. | No further action; merged ASB PR #445 and hosted/independent fan-out checks passed. |
 | P0 | [AR-1649](../tasks/AR-1649.md): Comparison analysis and report | Unclaimed | Produce typed selected-agent comparison analysis and human/JSON reports from paired runs. | Implement comparability analysis, confounder/unavailable evidence reporting, and projections for fan-out run references. |
 | P0 | [AR-1650](../tasks/AR-1650.md): Fan-out control protocol and TUI integration | Unclaimed | Expose selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | Implement the paired protocol/TUI adapter over Orchestrator::admit_fanout with exact human/JSON and offline tests. |
