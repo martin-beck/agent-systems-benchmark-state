@@ -1,0 +1,15 @@
+{
+  "finalizer": "AR-1935",
+  "issue": {"number": 10065, "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10065"},
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [{
+    "acceptance": "Claim AR-1935, bind the coordinator checkout envelope, merge only coordinator PR #1318 through handoffctl run, and record bounded post-merge evidence. Do not run TLC/formal qualification or mutate AR-1933, AR-1934, AR-1849, or AR-1932.",
+    "depends_on": [],
+    "id": "AR-1935",
+    "ownership": "Coordinator publication lifecycle only; no ASB source, vendor, formal, TLC, or historical task changes.",
+    "scope": "Coordinator checkout successor for PR #1318 publication. Bind exact coordinator worktree and branch with only credential helper read access, git metadata, and network publication authority.",
+    "short_title": "Coordinator PR publication"
+  }],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
