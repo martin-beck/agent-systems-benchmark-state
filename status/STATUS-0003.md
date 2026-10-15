@@ -3310,11 +3310,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1949-state-projection-scope-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair authoritative ASB state projection so valid historical evidence-ledger rows are preserved without false digest rejection, the 200000-byte handoffctl limit is enforced against the reviewed implementation, and bound envelopes can resolve their declared product test paths without broadening isolation. Preserve AR-1948 and all prior history. |
@@ -4047,3 +4047,4 @@ flowchart LR
         AR_1658["AR-1658 - Planned"]:::status_planned
         AR_1659["AR-1659 - Planned"]:::status_planned
         AR_1660["AR-1660 - Planned"]:::status_planned
+        AR_1661["AR-1661 - Done"]:::status_done
