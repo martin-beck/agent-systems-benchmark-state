@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "envelope_id": "AR-1849-e2",
+  "envelope_revision": 2,
+  "task": "AR-1849",
+  "task_revision": 142,
+  "spec_ref": "specs/AR-1849.json",
+  "spec_revision": 1,
+  "capabilities": {
+    "git_metadata": {"allowed": true},
+    "network": {"allowed": true}
+  },
+  "outputs": [
+    {"id": "publication", "description": "Verify reviewed PR #171 exact-head publication and post-merge state evidence."}
+  ],
+  "non_goals": [
+    "Do not run TLC or formal qualification.",
+    "Do not modify AR-1841, unrelated tasks, or generated state outside the authorized lifecycle.",
+    "Do not merge PR #170 or rewrite history."
+  ],
+  "path_scope": {
+    "read": ["tasks/AR-1849-formal-admission-env-repair.md", "specs/AR-1849.json", "envelopes/AR-1849-e2.json"],
+    "write": ["tasks/AR-1849-formal-admission-env-repair.md", "PROJECT_STATE.md", "WORKTREES.md", "CURRENT.md", "STATUS.md", "status"]
+  },
+  "command_classes": {
+    "read": {"allowed": true, "timeout_seconds": 120},
+    "git-publication": {"allowed": true, "timeout_seconds": 900}
+  },
+  "evidence": [
+    {"id": "publication", "class": "hosted", "required": true}
+  ],
+  "stop_conditions": [
+    {"id": "scope", "kind": "deny"},
+    {"id": "formal", "kind": "deny"},
+    {"id": "history", "kind": "deny"}
+  ]
+}
