@@ -387,18 +387,19 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
 
     def test_repair_legacy_binding_clears_only_the_exact_stale_key(self) -> None:
         args = argparse.Namespace(
-            task="AR-1793",
+            task="AR-1891",
             expected_revision=7,
-            worktree_key="asb-state-ar1793",
+            branch="codex/ar-1891-recovery",
+            worktree_key="asb-ar1891-recovery-20261014",
             note="rebind to the current isolated worktree",
         )
         meta = {
-            "id": "AR-1793",
+            "id": "AR-1891",
             "task_revision": 7,
-            "status": "open",
+            "status": "blocked",
             "owner": "",
             "claim_expires": "",
-            "branch": "",
+            "branch": "codex/ar-1891-recovery",
             "worktree_key": args.worktree_key,
         }
         self.assertEqual(
@@ -409,18 +410,19 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
 
     def test_repair_legacy_binding_rejects_each_unsafe_state(self) -> None:
         args = argparse.Namespace(
-            task="AR-1793",
+            task="AR-1891",
             expected_revision=7,
-            worktree_key="asb-state-ar1793",
+            branch="codex/ar-1891-recovery",
+            worktree_key="asb-ar1891-recovery-20261014",
             note="repair",
         )
         base = {
-            "id": "AR-1793",
+            "id": "AR-1891",
             "task_revision": 7,
-            "status": "open",
+            "status": "blocked",
             "owner": "",
             "claim_expires": "",
-            "branch": "",
+            "branch": "codex/ar-1891-recovery",
             "worktree_key": args.worktree_key,
         }
         cases: tuple[tuple[str, argparse.Namespace, dict[str, object], str], ...] = (
@@ -432,13 +434,13 @@ class LegacyBindingRepairCoverageTests(unittest.TestCase):
             ),
             ("active", args, {"status": "in_progress", "owner": "worker-a"}, "inactive, unowned"),
             ("leased", args, {"claim_expires": "2999-01-01T00:00:00+00:00"}, "inactive, unowned"),
-            ("branch", args, {"branch": "codex/ar1793"}, "empty legacy branch"),
+            ("branch", args, {"branch": "codex/ar1793"}, "does not match retained metadata"),
             ("key", args, {"worktree_key": "other"}, "does not match"),
             (
                 "blank-note",
                 argparse.Namespace(**{**vars(args), "note": "  "}),
                 {},
-                "must not be empty",
+                "evidence must be nonempty",
             ),
         )
         for label, request, changes, message in cases:

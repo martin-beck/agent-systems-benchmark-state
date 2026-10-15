@@ -4984,6 +4984,7 @@ def main() -> int:
     item = commands.add_parser("repair-legacy-binding")
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--branch", required=True)
     item.add_argument("--worktree-key", required=True)
     item.add_argument("--note", required=True)
     plr.add_parser(commands)
