@@ -577,14 +577,13 @@
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1933](../tasks/AR-1933.md): Coordinator publication credential handoff | ar1933-credential-handoff-luna | Implement the smallest coordinator-owned credential handoff needed for authorized git-publication commands to use host gh authentication without exposing credentials in argv, envelopes, task records, evidence, or subprocess output. Preserve fail-closed capability and network gates, and do not alter AR-1849, AR-1931, AR-1932, PR #171, or historical state. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1934](../tasks/AR-1934.md): PR 1318 publication successor | ar1931-publication-capability-luna | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1936](../tasks/AR-1936.md): Integrate credential FD handoff | ar1932-publication-capability-luna | Integrate the already-reviewed coordinator credential-handoff contract into the ASB state handoffctl run path: admit an explicit credential FD only for authorized git-publication execution, pass it and the worktree FD to the bounded subprocess, fail closed when the helper is unavailable or the descriptor is invalid, and add no formal/TLC or unrelated runtime changes. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1945](../tasks/AR-1945.md): Reduce handoffctl state size | ar1945-handoffctl-size-luna | Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories. | Review signed commit be9aea464882f0b3d01d7c3cd28c3f32a90e267e, run hosted exact-head gates, and publish through reviewed lifecycle. |
 | P1 | [AR-1947](../tasks/AR-1947.md): Map linked gitdir target | ar1947-gitdir-target-mapping-luna | Repair the authoritative outer bwrap publication mount for linked worktrees whose .git is a gitdir file: parse the descriptor-backed target, safely resolve it under the repository admin root, and mount it at the sandbox-visible absolute gitdir path with required parents. Reject host-path leakage, unsafe, and missing targets; preserve AR-1941 through AR-1946 and do not rewrite the .git pointer or bypass isolation. Initial schema-v2 envelope authorizes network only for git-publication. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (15)
@@ -607,7 +606,7 @@
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | Unclaimed | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
 
-### Blocked (133)
+### Blocked (134)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -691,3 +690,4 @@
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
 | P1 | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Unclaimed | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. |
 | P1 | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Unclaimed | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |
+| P1 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |

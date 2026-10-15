@@ -3254,11 +3254,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1945-handoffctl-size-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories. |
@@ -4043,3 +4043,4 @@ flowchart LR
         AR_1687["AR-1687 - Done"]:::status_done
         AR_1688["AR-1688 - Done"]:::status_done
         AR_1689["AR-1689 - Done"]:::status_done
+        AR_1690["AR-1690 - Done"]:::status_done
