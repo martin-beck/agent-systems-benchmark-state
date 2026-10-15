@@ -49,7 +49,7 @@
         AR_1931["AR-1931 - Cancelled"]:::status_cancelled
         AR_1932["AR-1932 - Blocked"]:::status_blocked
         AR_1933["AR-1933 - In progress"]:::status_in_progress
-        AR_1934["AR-1934 - Planned"]:::status_planned
+        AR_1934["AR-1934 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2426,3 +2426,4 @@
 | [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md), [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md), [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md) |
 | [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | None |
+| [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | None |
