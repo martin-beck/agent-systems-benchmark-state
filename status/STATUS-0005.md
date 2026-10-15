@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md) | None | None |
 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md), [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md) |
 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None |
 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md), [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) |
@@ -591,7 +592,7 @@
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -600,8 +601,9 @@
 | P1 | [AR-1944](../tasks/AR-1944.md): Activate state runner fix | ar1944-state-runner-activation-luna | Activate the reviewed AR-1943 outer-runner selection in the authoritative state-main handoffctl runtime before attempting bound publication; preserve AR-1941 through AR-1943, add exact activation and wrong-runner tests, and keep network authorization limited to git-publication. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1945](../tasks/AR-1945.md): Reduce handoffctl state size | ar1945-handoffctl-size-luna | Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories. | Review signed commit be9aea464882f0b3d01d7c3cd28c3f32a90e267e, run hosted exact-head gates, and publish through reviewed lifecycle. |
 | P1 | [AR-1950](../tasks/AR-1950.md): Bind product test paths | ar1950-product-path-binding-luna | Repair the handoffctl execution-envelope binding so a state-owned task can resolve explicitly declared ASB product test paths from the configured product checkout without treating the product checkout as the state worktree or broadening read/write isolation. Add positive and hostile path-resolution tests. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1951](../tasks/AR-1951.md): Adopt Coordinator v0.7.15 | gpt-5.6-luna-ar1885-v0715 | Adopt Agent Workflow Coordinator v0.7.15 at exact commit 02e3593136ba69c3160fb2143d0d946deb2f243d through the documented clean-source vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, tools/handoffctl_vendor.py verifier inputs, and generated integrity evidence. Preserve all task histories and overlays; no formal/TLC, Agent Relay, runtime downloads, or direct state edits. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (16)
+### Open (15)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -620,7 +622,6 @@
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | Unclaimed | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1934](../tasks/AR-1934.md): PR 1318 publication successor | Unclaimed | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1951](../tasks/AR-1951.md): Adopt Coordinator v0.7.15 | Unclaimed | Adopt Agent Workflow Coordinator v0.7.15 at exact commit 02e3593136ba69c3160fb2143d0d946deb2f243d through the documented clean-source vendor sync. Change only coordinator.vendor.json, allowlisted vendor files, tools/handoffctl_vendor.py verifier inputs, and generated integrity evidence. Preserve all task histories and overlays; no formal/TLC, Agent Relay, runtime downloads, or direct state edits. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (136)
 
