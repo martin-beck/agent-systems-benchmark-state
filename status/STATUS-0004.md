@@ -8,7 +8,7 @@
         AR_1928["AR-1928 - Blocked"]:::status_blocked
         AR_1929["AR-1929 - Blocked"]:::status_blocked
         AR_1930["AR-1930 - Blocked"]:::status_blocked
-        AR_1931["AR-1931 - Planned"]:::status_planned
+        AR_1931["AR-1931 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
