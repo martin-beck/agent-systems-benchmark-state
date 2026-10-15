@@ -3388,7 +3388,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair compatibility between the supported Coordinator v0.7.16 vendor snapshot and ASB legacy fixtures: inactive-owner error ordering, envelope subprocess setup, vendor version/manifest expectations, and selector cases. Preserve fail-closed validation and do not weaken gates or run formal/TLC as implementation scope. |
-| Next action | Wait exact-head CI for eeecdf1660; repair only concrete failures, then merge and reconcile. |
+| Next action | Add bounded positive/negative compatibility coverage for newly vendored APIs to restore required &gt;=95&#37; coverage; rerun full nonformal suite and exact-head CI. |
 
 
 ## Dependency graph
@@ -4045,4 +4045,3 @@ flowchart LR
         AR_1578["AR-1578 - Done"]:::status_done
         AR_1588["AR-1588 - Done"]:::status_done
         AR_1589["AR-1589 - Done"]:::status_done
-        AR_1590["AR-1590 - Done"]:::status_done
