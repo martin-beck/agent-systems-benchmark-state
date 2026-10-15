@@ -550,14 +550,13 @@
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | ar1849-formal-admission-env-luna | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
 | P1 | [AR-1933](../tasks/AR-1933.md): Coordinator publication credential handoff | ar1933-credential-handoff-luna | Implement the smallest coordinator-owned credential handoff needed for authorized git-publication commands to use host gh authentication without exposing credentials in argv, envelopes, task records, evidence, or subprocess output. Preserve fail-closed capability and network gates, and do not alter AR-1849, AR-1931, AR-1932, PR #171, or historical state. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1934](../tasks/AR-1934.md): PR 1318 publication successor | ar1931-publication-capability-luna | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1935](../tasks/AR-1935.md): Coordinator PR publication | ar1932-publication-capability-luna | Coordinator checkout successor for PR #1318 publication. Bind exact coordinator worktree and branch with only credential helper read access, git metadata, and network publication authority. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (15)
 
@@ -579,7 +578,7 @@
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | Unclaimed | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
 
-### Blocked (123)
+### Blocked (124)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -684,3 +683,4 @@
 | P1 | [AR-1887](../tasks/AR-1887.md): Repair nonformal gates | Unclaimed | Repair only the exact AR-1886 non-formal gate failures: temporary non-repository Git assumptions and offline jsonschema provisioning. Preserve AR-1886 immutable history; do not weaken tests, add network/downloads, or require TLC/formal gates. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1890](../tasks/AR-1890.md): Admit recovery scope | Unclaimed | Create a state-only successor envelope for the focused AR-1889 recovery tests that explicitly admits tools/fast_receipt_cli.py and its required test dependencies. Preserve AR-1889 and AR-1878 through AR-1888; do not bypass the expired-claim blocker or run formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1891](../tasks/AR-1891.md): Reconcile terminal recovery | Unclaimed | Add state-only recovery reconciliation for expired AR-1878 terminal-result evidence. Require exact target/revision/reservation/result/envelope, expiry, terminal EXIT, absent worker/claim_process, and operator evidence; immutable audit then existing recovery. Reject arbitrary, active/unexpired, mismatched, malformed/missing, cross-root, force-clear, and publication inputs. Preserve AR-1878 through AR-1890; no product/vendor/formal/TLC state. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1893](../tasks/AR-1893.md): Repair envelope replacement schema | Unclaimed | State-only repair to admit the authorized execution_envelope_replacements task field and validator path needed to replace AR-1892&#x27;s malformed predecessor envelope without widening unrelated scope. Preserve AR-1892, AR-1891, AR-1890 and earlier histories; no claim bypass, cross-root, network, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
