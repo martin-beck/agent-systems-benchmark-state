@@ -1,5 +1,20 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1899["AR-1899 - Done"]:::status_done
+    end
+    subgraph series_19["19 - Additional work"]
+        direction TB
+        AR_1900["AR-1900 - Blocked"]:::status_blocked
+        AR_1901["AR-1901 - Blocked"]:::status_blocked
+        AR_1902["AR-1902 - Open"]:::status_open
+        AR_1903["AR-1903 - Open"]:::status_open
+        AR_1904["AR-1904 - Blocked"]:::status_blocked
+        AR_1905["AR-1905 - Open"]:::status_open
+        AR_1906["AR-1906 - Blocked"]:::status_blocked
+        AR_1907["AR-1907 - Open"]:::status_open
+        AR_1908["AR-1908 - Open"]:::status_open
+        AR_1909["AR-1909 - Blocked"]:::status_blocked
+        AR_1910["AR-1910 - Open"]:::status_open
         AR_1911["AR-1911 - Planned"]:::status_planned
         AR_1912["AR-1912 - Done"]:::status_done
         AR_1913["AR-1913 - Planned"]:::status_planned
@@ -21,6 +36,7 @@
         AR_1930["AR-1930 - Blocked"]:::status_blocked
         AR_1931["AR-1931 - Cancelled"]:::status_cancelled
         AR_1932["AR-1932 - Blocked"]:::status_blocked
+        AR_1933["AR-1933 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2399,5 +2415,3 @@
 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | None |
 | [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | None |
 | [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
-| [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md), [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) |
-| [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |

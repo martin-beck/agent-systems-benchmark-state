@@ -3082,6 +3082,20 @@
 | Summary | State-only successor for the AR-1849 reviewed PR #171 publication capability. Bind a fresh schema-v2 execution envelope granting only git metadata and network publication authority; preserve AR-1849, its original envelope, and all prior history. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1933 — Coordinator publication credential handoff
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Implement the smallest coordinator-owned credential handoff needed for authorized git-publication commands to use host gh authentication without exposing credentials in argv, envelopes, task records, evidence, or subprocess output. Preserve fail-closed capability and network gates, and do not alter AR-1849, AR-1931, AR-1932, PR #171, or historical state. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4024,18 +4038,3 @@ flowchart LR
         AR_1896["AR-1896 - Blocked"]:::status_blocked
         AR_1897["AR-1897 - Done"]:::status_done
         AR_1898["AR-1898 - Done"]:::status_done
-        AR_1899["AR-1899 - Done"]:::status_done
-    end
-    subgraph series_19["19 - Additional work"]
-        direction TB
-        AR_1900["AR-1900 - Blocked"]:::status_blocked
-        AR_1901["AR-1901 - Blocked"]:::status_blocked
-        AR_1902["AR-1902 - Open"]:::status_open
-        AR_1903["AR-1903 - Open"]:::status_open
-        AR_1904["AR-1904 - Blocked"]:::status_blocked
-        AR_1905["AR-1905 - Open"]:::status_open
-        AR_1906["AR-1906 - Blocked"]:::status_blocked
-        AR_1907["AR-1907 - Open"]:::status_open
-        AR_1908["AR-1908 - Open"]:::status_open
-        AR_1909["AR-1909 - Blocked"]:::status_blocked
-        AR_1910["AR-1910 - Open"]:::status_open
