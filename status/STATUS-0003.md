@@ -3324,11 +3324,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1950-product-path-binding-luna |
 | Parent | None |
 | Children | None |
 | Summary | Repair the handoffctl execution-envelope binding so a state-owned task can resolve explicitly declared ASB product test paths from the configured product checkout without treating the product checkout as the state worktree or broadening read/write isolation. Add positive and hostile path-resolution tests. |
@@ -4049,4 +4049,3 @@ flowchart LR
         AR_1646["AR-1646 - Done"]:::status_done
         AR_1647["AR-1647 - Done"]:::status_done
         AR_1648["AR-1648 - Done"]:::status_done
-        AR_1649["AR-1649 - Done"]:::status_done

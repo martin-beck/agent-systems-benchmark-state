@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1649["AR-1649 - Done"]:::status_done
         AR_1650["AR-1650 - Done"]:::status_done
         AR_1651["AR-1651 - Done"]:::status_done
         AR_1652["AR-1652 - Done"]:::status_done
@@ -279,7 +280,7 @@
         AR_1947["AR-1947 - Blocked"]:::status_blocked
         AR_1948["AR-1948 - Blocked"]:::status_blocked
         AR_1949["AR-1949 - Blocked"]:::status_blocked
-        AR_1950["AR-1950 - Open"]:::status_open
+        AR_1950["AR-1950 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2631,4 +2632,3 @@
 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md) | None | None |
 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md), [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md) |
 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None |
-| [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md), [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) |
