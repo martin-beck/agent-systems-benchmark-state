@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1953-e1",
+  "envelope_revision": 1,
+  "task": "AR-1953",
+  "task_revision": 5,
+  "spec_ref": "specs/AR-1953.json",
+  "spec_revision": 1,
+  "outputs": [{"id": "repair", "description": "Implement bounded root resolution."}, {"id": "tests", "description": "Record positive and hostile root tests."}, {"id": "publication", "description": "Record hosted review and reconciliation."}],
+  "non_goals": ["Do not broaden product isolation or copy source files.", "Do not mutate prior task history or weaken fail-closed checks.", "Do not run formal/TLC or Agent Relay qualification."],
+  "path_scope": {"read": ["tools", "tests", "schema", "docs"], "write": ["tools", "tests", "schema", "docs", "quality"]},
+  "command_classes": {"read": {"allowed": true}, "test": {"allowed": true, "timeout_seconds": 900}, "source-write": {"allowed": true, "timeout_seconds": 900}, "git-publication": {"allowed": true, "timeout_seconds": 900}},
+  "evidence": [{"id": "scope", "class": "contract-test", "required": true}, {"id": "tests", "class": "mechanical", "required": true}, {"id": "publication", "class": "hosted", "required": true}],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}, {"id": "formal", "kind": "deny"}, {"id": "relay", "kind": "deny"}]
+}
