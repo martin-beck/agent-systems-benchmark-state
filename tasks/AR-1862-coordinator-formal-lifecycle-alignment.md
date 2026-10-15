@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "evidence_ledger": {
-    "candidate_digest": "sha256:0fef02fac6e98c47136abbacae9203a4da893f22588b2ee2f43f913717330d8b",
+    "candidate_digest": "sha256:04bfdd25c798b53e54c8401244426b5499de195d1eeb28684bfc851249403f2b",
     "candidate_ref": "coordinator.vendor.json",
     "steps": [
       {
@@ -46,6 +46,16 @@
         "evidence_ref": "coordinator.vendor.json",
         "predicate_id": "lifecycle-parity",
         "recorded_task_revision": 19,
+        "status": "stale"
+      },
+      {
+        "candidate_digest": "sha256:04bfdd25c798b53e54c8401244426b5499de195d1eeb28684bfc851249403f2b",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:04bfdd25c798b53e54c8401244426b5499de195d1eeb28684bfc851249403f2b",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "lifecycle-parity",
+        "recorded_task_revision": 20,
         "status": "pass"
       }
     ]
@@ -60,9 +70,9 @@
   "spec_revision": 1,
   "status": "done",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-15T00:37:02+00:00",
+  "updated_at": "2026-10-15T00:37:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -133,3 +143,6 @@ vendored Coordinator bytes or mutate AR-1826.
 
 - 2026-10-15T00:37:02+00:00: Refresh stale lifecycle parity ledger digest to current reviewed
   artifact.
+
+- 2026-10-15T00:37:41+00:00: Refresh stale lifecycle parity ledger digest after reviewed repair
+  tooling update.
