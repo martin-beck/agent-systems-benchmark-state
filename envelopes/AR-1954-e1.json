@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "envelope_id": "AR-1954-e1",
+  "envelope_revision": 1,
+  "task": "AR-1954",
+  "task_revision": 5,
+  "spec_ref": "specs/AR-1954.json",
+  "spec_revision": 1,
+  "outputs": [{"id": "compatibility", "description": "Implement bounded compatibility repair."}, {"id": "evidence", "description": "Record full nonformal verification."}],
+  "non_goals": ["Do not weaken fail-closed validation or alter prior task history.", "Do not run formal/TLC or Agent Relay qualification."],
+  "path_scope": {"read": ["tools", "tests", "schema", "docs", "coordinator.vendor.json"], "write": ["tools", "tests", "schema", "docs", "coordinator.vendor.json", "quality"]},
+  "command_classes": {"read": {"allowed": true}, "test": {"allowed": true, "timeout_seconds": 1800}, "source-write": {"allowed": true, "timeout_seconds": 1800}, "git-publication": {"allowed": true, "timeout_seconds": 900}},
+  "evidence": [{"id": "compatibility", "class": "contract-test", "required": true}, {"id": "suite", "class": "mechanical", "required": true}],
+  "stop_conditions": [{"id": "scope", "kind": "deny"}, {"id": "formal", "kind": "deny"}, {"id": "relay", "kind": "deny"}]
+}
