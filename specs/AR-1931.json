@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1931.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "publication-capability", "description": "A fresh schema-v2 envelope authorizes only the reviewed PR #171 git publication operation."},
+    {"id": "history-preserved", "description": "AR-1849 and its original envelope remain unchanged historical records."},
+    {"id": "formal-excluded", "description": "No TLC or formal qualification is run or claimed."}
+  ],
+  "definition_of_done": [
+    "Bind the fresh publication envelope through handoffctl.",
+    "Merge PR #171 only through handoffctl run with exact-head evidence.",
+    "Record bounded post-merge lifecycle evidence."
+  ],
+  "inputs": [{"id": "blocked-publication", "description": "AR-1849 publication was fail-closed by its immutable schema-v1 envelope capabilities."}],
+  "outputs": [{"id": "publication-receipt", "description": "Authorized PR #171 publication and post-merge state evidence."}],
+  "allowed_tools": ["git", "gh", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["formal-gate-removal", "resource-bound-weakening", "history-rewrite", "force-push-main"],
+  "required_evidence_classes": ["mechanical", "hosted"],
+  "gates": [{"id": "publication", "description": "PR #171 exact-head publication and post-merge verification pass."}]
+}
