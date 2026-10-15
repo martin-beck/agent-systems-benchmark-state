@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "envelope_id": "AR-1955-e1",
+  "envelope_revision": 1,
+  "task": "AR-1955",
+  "task_revision": 4,
+  "spec_ref": "specs/AR-1955.json",
+  "spec_revision": 1,
+  "capabilities": {"git_metadata": {"allowed": true}, "network": {"allowed": true}},
+  "command_classes": {"read": {"allowed": true, "timeout_seconds": 120}, "test": {"allowed": true, "timeout_seconds": 900}, "source-write": {"allowed": true, "timeout_seconds": 900}, "git-publication": {"allowed": true, "timeout_seconds": 900}},
+  "path_scope": {"read": ["specs/AR-1955.json", "envelopes/AR-1955-e1.json", "tasks/AR-1955.md", "tools", "tests", "quality"], "write": ["tools/task_spec.py", "tools/handoffctl.py", "tests", "quality"]},
+  "evidence": [{"class": "contract-test", "id": "repair", "required": true}, {"class": "mechanical", "id": "evidence", "required": true}],
+  "outputs": [{"id": "repair", "description": "Historical ledger and handoffctl size repair."}, {"id": "evidence", "description": "Bounded test and publication evidence."}],
+  "non_goals": ["Do not mutate historical task ledgers or active AR-1950/AR-1954 paths.", "Do not run formal/TLC, download, weaken gates, or rewrite history."],
+  "stop_conditions": [{"id": "history", "kind": "deny"}, {"id": "scope", "kind": "deny"}, {"id": "formal", "kind": "deny"}]
+}
