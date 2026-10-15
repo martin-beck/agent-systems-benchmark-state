@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1953.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "root-positive", "description": "Bound product and state metadata roots resolve independently in preflight and sandbox admission."},
+    {"id": "root-negative", "description": "Traversal, symlink, wrong-root, and unavailable-root declarations fail closed."},
+    {"id": "compatibility", "description": "Single-root legacy envelopes retain their existing behavior."},
+    {"id": "publication", "description": "Focused nonformal gates, exact-head review/CI, merge, doctor, and reconcile pass."}
+  ],
+  "definition_of_done": ["Implement bounded root resolution with positive and hostile tests.", "Run focused and configured nonformal gates.", "Publish the signed/DCO change through reviewed merge and reconcile."],
+  "inputs": [{"id": "state", "description": "ASB state root and bound product worktree."}, {"id": "contract", "description": "Coordinator v0.7.16 root-qualified scope contract."}],
+  "outputs": [{"id": "repair", "description": "Bound product/state envelope resolution."}, {"id": "tests", "description": "Positive and negative root-resolution evidence."}, {"id": "publication", "description": "Hosted review, CI, merge, and doctor evidence."}],
+  "allowed_tools": ["git", "gh", "python", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["tlc", "agent-relay", "history-rewrite", "direct-task-edit", "gate-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "scope", "description": "Root resolution preserves fail-closed isolation."}, {"id": "tests", "description": "Focused and applicable nonformal tests pass."}, {"id": "publication", "description": "Exact signed/DCO candidate is reviewed, green, merged, and reconciled."}]
+}
