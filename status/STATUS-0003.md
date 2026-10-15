@@ -3124,6 +3124,20 @@
 | Summary | Coordinator checkout successor for PR #1318 publication. Bind exact coordinator worktree and branch with only credential helper read access, git metadata, and network publication authority. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1936 — Integrate credential FD handoff
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Integrate the already-reviewed coordinator credential-handoff contract into the ASB state handoffctl run path: admit an explicit credential FD only for authorized git-publication execution, pass it and the worktree FD to the bounded subprocess, fail closed when the helper is unavailable or the descriptor is invalid, and add no formal/TLC or unrelated runtime changes. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4031,16 +4045,3 @@ flowchart LR
         AR_1861["AR-1861 - Done"]:::status_done
         AR_1862["AR-1862 - Done"]:::status_done
         AR_1863["AR-1863 - Blocked"]:::status_blocked
-        AR_1864["AR-1864 - Done"]:::status_done
-        AR_1865["AR-1865 - Done"]:::status_done
-        AR_1866["AR-1866 - Done"]:::status_done
-        AR_1867["AR-1867 - Superseded"]:::status_superseded
-        AR_1868["AR-1868 - Done"]:::status_done
-        AR_1869["AR-1869 - Superseded"]:::status_superseded
-        AR_1870["AR-1870 - Done"]:::status_done
-        AR_1871["AR-1871 - Done"]:::status_done
-        AR_1872["AR-1872 - Done"]:::status_done
-        AR_1873["AR-1873 - Done"]:::status_done
-        AR_1874["AR-1874 - Superseded"]:::status_superseded
-        AR_1875["AR-1875 - Superseded"]:::status_superseded
-        AR_1876["AR-1876 - Superseded"]:::status_superseded
