@@ -2,11 +2,11 @@
 {
   "branch": "codex/ar1849-formal-admission-env-repair",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-10-15T02:59:29+00:00",
   "depends_on": [],
   "id": "AR-1849",
   "next_action": "Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94% versus required 95%. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication.",
-  "owner": "",
+  "owner": "ar1849-formal-admission-env-luna",
   "plan": "../plans/AR-1849-formal-admission-env-repair.md",
   "priority": "P0",
   "schema_version": 1,
@@ -20,11 +20,11 @@
   },
   "spec_ref": "specs/AR-1849.json",
   "spec_revision": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-13T20:33:39+00:00",
+  "updated_at": "2026-10-15T00:59:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -474,3 +474,5 @@ retain absolute-path and privacy boundaries, and add regression coverage.
   no narrow justified test-only repair; AR-1859 owns relative TLC work-root failures
   (ClassNotFoundException rc1 vs expected rc64). No product mutation or gate weakening; preserve
   successor boundaries.
+
+- 2026-10-15T00:59:29+00:00: Claimed by ar1849-formal-admission-env-luna.
