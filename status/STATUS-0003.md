@@ -3198,11 +3198,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1941-sandbox-admin-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the handoffctl execution-envelope sandbox so linked Git worktrees resolve required admin metadata through sandbox-visible descriptors without leaking host absolute paths, while retaining the bounded AR-1940 stale-ledger tolerance. Add positive and negative admin-metadata mount tests, including missing metadata and host-path rejection; use an initial schema-v2 envelope with network authorized only for git-publication. |
@@ -4044,3 +4044,4 @@ flowchart LR
         AR_1747["AR-1747 - Done"]:::status_done
         AR_1748["AR-1748 - Done"]:::status_done
         AR_1749["AR-1749 - Done"]:::status_done
+        AR_1750["AR-1750 - Done"]:::status_done
