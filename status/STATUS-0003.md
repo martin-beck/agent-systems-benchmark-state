@@ -3170,11 +3170,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1939-ledger-repair-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the released handoffctl predicate-ledger transition so a completed inactive task with stale historical evidence rows can append one fresh, exactly digested correction without rewriting or deleting history. Apply the bounded repair to AR-1861, AR-1862, and AR-1926 only; preserve all task identities, privacy boundaries, and fail-closed validation for new evidence. |
@@ -4043,3 +4043,4 @@ flowchart LR
         AR_1746["AR-1746 - Blocked"]:::status_blocked
         AR_1747["AR-1747 - Done"]:::status_done
         AR_1748["AR-1748 - Done"]:::status_done
+        AR_1749["AR-1749 - Done"]:::status_done
