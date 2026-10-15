@@ -3268,11 +3268,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1946-outer-admin-target-mount-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the authoritative outer handoffctl sandbox so a linked worktree&#x27;s resolved Git admin target is mounted at the sandbox-visible admin location using the bound descriptor, without host absolute-path leakage or fallback. Preserve AR-1941 through AR-1944 and add a hostile missing-admin-path test. Initial schema-v2 envelope authorizes network only for git-publication. |
@@ -4047,3 +4047,4 @@ flowchart LR
         AR_1702["AR-1702 - Blocked"]:::status_blocked
         AR_1703["AR-1703 - Planned"]:::status_planned
         AR_1704["AR-1704 - Done"]:::status_done
+        AR_1709["AR-1709 - Done"]:::status_done
