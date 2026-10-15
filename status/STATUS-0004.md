@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-        AR_1566["AR-1566 - Blocked"]:::status_blocked
         AR_1567["AR-1567 - Done"]:::status_done
         AR_1568["AR-1568 - Done"]:::status_done
         AR_1569["AR-1569 - Done"]:::status_done

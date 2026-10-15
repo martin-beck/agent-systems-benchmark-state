@@ -3402,7 +3402,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Publish only the already signed historical-ledger validation tolerance from ae352f4b3e and handoffctl size reduction from be9aea4648 on current ASB state main. Preserve AR-1861, AR-1862, AR-1926, AR-1949, AR-1945, and all active work; do not rewrite ledger history or change product behavior. |
-| Next action | Publish signed candidate 2d8a00b259 (historical-ledger tolerance plus handoffctl size repair), wait exact-head CI/review, then reconcile and rerun doctor --live. |
+| Next action | Repair supported linked-worktree admin mount/runner activation, then rerun bound git-publication for signed candidate 2d8a00b259. |
 
 
 ## Dependency graph
@@ -4045,3 +4045,4 @@ flowchart LR
         AR_1563["AR-1563 - Done"]:::status_done
         AR_1564["AR-1564 - Done"]:::status_done
         AR_1565["AR-1565 - Done"]:::status_done
+        AR_1566["AR-1566 - Blocked"]:::status_blocked
