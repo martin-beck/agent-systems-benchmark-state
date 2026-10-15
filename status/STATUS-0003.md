@@ -3142,11 +3142,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1937-legacy-binding-repair-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Add or use a fail-closed handoffctl repair path for the exact stale blocked ownerless bindings AR-1891/asb-ar1891-recovery-20261014 and AR-1935/agent-workflow-coordinator-ar1933-credential-handoff. Require exact retained branch and worktree-key metadata, nonempty bounded evidence, and inactive ownerless status; preserve all blocked histories and reject every mismatch. |
@@ -4046,3 +4046,4 @@ flowchart LR
         AR_1834["AR-1834 - Done"]:::status_done
         AR_1835["AR-1835 - Done"]:::status_done
         AR_1836["AR-1836 - Blocked"]:::status_blocked
+        AR_1837["AR-1837 - Done"]:::status_done

@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-        AR_1837["AR-1837 - Done"]:::status_done
         AR_1838["AR-1838 - Done"]:::status_done
         AR_1839["AR-1839 - Done"]:::status_done
         AR_1840["AR-1840 - Done"]:::status_done
@@ -102,7 +101,7 @@
         AR_1934["AR-1934 - In progress"]:::status_in_progress
         AR_1935["AR-1935 - Blocked"]:::status_blocked
         AR_1936["AR-1936 - In progress"]:::status_in_progress
-        AR_1937["AR-1937 - In progress"]:::status_in_progress
+        AR_1937["AR-1937 - Blocked"]:::status_blocked
         AR_1938["AR-1938 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002

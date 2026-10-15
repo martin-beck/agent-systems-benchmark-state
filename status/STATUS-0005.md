@@ -556,7 +556,7 @@
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -564,7 +564,6 @@
 | P1 | [AR-1933](../tasks/AR-1933.md): Coordinator publication credential handoff | ar1933-credential-handoff-luna | Implement the smallest coordinator-owned credential handoff needed for authorized git-publication commands to use host gh authentication without exposing credentials in argv, envelopes, task records, evidence, or subprocess output. Preserve fail-closed capability and network gates, and do not alter AR-1849, AR-1931, AR-1932, PR #171, or historical state. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1934](../tasks/AR-1934.md): PR 1318 publication successor | ar1931-publication-capability-luna | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1936](../tasks/AR-1936.md): Integrate credential FD handoff | ar1932-publication-capability-luna | Integrate the already-reviewed coordinator credential-handoff contract into the ASB state handoffctl run path: admit an explicit credential FD only for authorized git-publication execution, pass it and the worktree FD to the bounded subprocess, fail closed when the helper is unavailable or the descriptor is invalid, and add no formal/TLC or unrelated runtime changes. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1937](../tasks/AR-1937.md): Repair stale legacy bindings | ar1937-legacy-binding-repair-luna | Add or use a fail-closed handoffctl repair path for the exact stale blocked ownerless bindings AR-1891/asb-ar1891-recovery-20261014 and AR-1935/agent-workflow-coordinator-ar1933-credential-handoff. Require exact retained branch and worktree-key metadata, nonempty bounded evidence, and inactive ownerless status; preserve all blocked histories and reject every mismatch. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (15)
 
@@ -586,7 +585,7 @@
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | Unclaimed | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
 
-### Blocked (124)
+### Blocked (125)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -684,3 +683,4 @@
 | P1 | [AR-1863](../tasks/AR-1863.md): Repair control diagnostic catalog | Unclaimed | Repair the eight current-main control.rs producer call sites missing from diagnostic_legacy_catalog_compact.rs after AR-1835 integration, without changing AR-1787 or diagnostic gates. | Implement the bounded control diagnostic catalog repair and record local acceptance evidence after the coordinator binds the reviewed source-write successor envelope; do not change AR-1787 or AR-1835. |
 | P1 | [AR-1879](../tasks/AR-1879.md): Repair runner worktree lock | Unclaimed | Fresh successor for AR-1852 runner, worktree, and coordinator-lock repair. Repair only runner-root/worktree binding, executable visibility, and lock contention needed to rerun exact PR #148 head 7b46c6b076 role and locked-full gates. Preserve AR-1852, strict authorization, and unrelated failures. Integrate signed state-only AR-1853 commit 5a703b4665 onto ASB state main through handoffctl; change no product files. Record exact state and doctor evidence. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1880](../tasks/AR-1880.md): Bind runner repair worktree | Unclaimed | Bind a real isolated ASB state worktree and execution envelope so the narrowly scoped AR-1879 runner/worktree/lock repair can proceed. Preserve AR-1879 blocked history and enable only authorized state-only integration of signed AR-1853 commit 5a703b46651930e244af57cf9fbb843851a86bac. No product, vendor, gate, role-contract, PR, or unrelated task edits. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1882](../tasks/AR-1882.md): Repair terminal-recovery publication capability | Unclaimed | Create a fresh successor task and immutable execution envelope for publication of the already reviewed terminal-recovery product diff at commit 3162fe8be2. Add only explicit git_metadata/publication capability and the exact reviewed product scope; retain AR-1881 history and do not alter unrelated paths, gates, or product code. | Blocked: publication preflight PATH_SCOPE_UNAVAILABLE because bound immutable AR-1882-e1 read scope includes missing product-tree path envelopes/AR-1881-e1.json; preserve AR-1881 and do not widen or rewrite envelope. Exact product commit remains 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3. |
