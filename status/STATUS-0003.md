@@ -3416,7 +3416,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair only the supported handoffctl outer-runner and linked-worktree Git admin mount needed for bounded publication of AR-1955. Preserve AR-1955 signed candidate commits, AR-1950 and AR-1954 active work, all prior task history, and fail-closed path isolation. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Publish the signed runner repair candidate through the supported state-main publication path; after integration retry AR-1955 exact publication, then run doctor --live and reconcile. |
 
 
 ## Dependency graph
@@ -4046,5 +4046,3 @@ flowchart LR
         AR_1550["AR-1550 - Done"]:::status_done
         AR_1551["AR-1551 - Cancelled"]:::status_cancelled
         AR_1552["AR-1552 - Done"]:::status_done
-        AR_1553["AR-1553 - Done"]:::status_done
-        AR_1554["AR-1554 - Done"]:::status_done
