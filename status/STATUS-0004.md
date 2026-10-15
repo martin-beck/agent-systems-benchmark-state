@@ -1,5 +1,20 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1749["AR-1749 - Done"]:::status_done
+        AR_1750["AR-1750 - Done"]:::status_done
+        AR_1751["AR-1751 - Done"]:::status_done
+        AR_1752["AR-1752 - Done"]:::status_done
+        AR_1753["AR-1753 - Done"]:::status_done
+        AR_1754["AR-1754 - Done"]:::status_done
+        AR_1755["AR-1755 - Done"]:::status_done
+        AR_1756["AR-1756 - Done"]:::status_done
+        AR_1757["AR-1757 - Done"]:::status_done
+        AR_1758["AR-1758 - Done"]:::status_done
+        AR_1759["AR-1759 - Done"]:::status_done
+        AR_1760["AR-1760 - Done"]:::status_done
+        AR_1761["AR-1761 - Done"]:::status_done
+        AR_1762["AR-1762 - Done"]:::status_done
+        AR_1763["AR-1763 - Done"]:::status_done
         AR_1764["AR-1764 - Done"]:::status_done
         AR_1765["AR-1765 - Done"]:::status_done
         AR_1766["AR-1766 - Done"]:::status_done
@@ -166,6 +181,7 @@
         AR_1940["AR-1940 - In progress"]:::status_in_progress
         AR_1941["AR-1941 - In progress"]:::status_in_progress
         AR_1942["AR-1942 - In progress"]:::status_in_progress
+        AR_1943["AR-1943 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2530,6 +2546,3 @@
 | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) | [AR-1463](../tasks/AR-1463-current-main-requalification-after-capture.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) |
 | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) |
 | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) |
-| [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md) |
-| [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
-| [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |

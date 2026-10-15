@@ -3222,6 +3222,20 @@
 | Summary | Repair the ASB state handoffctl publication bootstrap so a bound execution invokes the reviewed dedicated-runner sandbox and linked-worktree Git-admin mount implementation, without falling back to the main vendored runner or bypassing isolation. Preserve AR-1941 mount and AR-1940 ledger fixes; add positive and negative bootstrap tests, with initial schema-v2 network authorization limited to git-publication. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1943 — Repair outer runner bootstrap
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the state checkout handoffctl outer publication bootstrap so its own preflight and mount preparation select the exact bound worktree runner implementation before invoking git-publication. Preserve AR-1942 runner-selection and AR-1941 descriptor mount fixes; add positive and hostile wrong-runner tests. Initial schema-v2 envelope authorizes network only for git-publication. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4029,18 +4043,3 @@ flowchart LR
         AR_1746["AR-1746 - Blocked"]:::status_blocked
         AR_1747["AR-1747 - Done"]:::status_done
         AR_1748["AR-1748 - Done"]:::status_done
-        AR_1749["AR-1749 - Done"]:::status_done
-        AR_1750["AR-1750 - Done"]:::status_done
-        AR_1751["AR-1751 - Done"]:::status_done
-        AR_1752["AR-1752 - Done"]:::status_done
-        AR_1753["AR-1753 - Done"]:::status_done
-        AR_1754["AR-1754 - Done"]:::status_done
-        AR_1755["AR-1755 - Done"]:::status_done
-        AR_1756["AR-1756 - Done"]:::status_done
-        AR_1757["AR-1757 - Done"]:::status_done
-        AR_1758["AR-1758 - Done"]:::status_done
-        AR_1759["AR-1759 - Done"]:::status_done
-        AR_1760["AR-1760 - Done"]:::status_done
-        AR_1761["AR-1761 - Done"]:::status_done
-        AR_1762["AR-1762 - Done"]:::status_done
-        AR_1763["AR-1763 - Done"]:::status_done
