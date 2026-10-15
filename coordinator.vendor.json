@@ -293,7 +293,7 @@
       "source": "tests/test_concise_titles.py"
     },
     "tests/test_execution_envelope.py": {
-      "sha256": "d56dc92f1a6548ca507b29c8007c89813dc739816ce6089588439c3f973e7bb3",
+      "sha256": "be4a5b3ea25f2c15245c023e5ce24f905d8c4629d73b6735030b532a15726d5e",
       "source": "tests/test_execution_envelope.py"
     },
     "tests/test_execution_sandbox.py": {
@@ -505,7 +505,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "67d6fb09cf36ebef1e779ae19b5d8dbeb3700e35aa96d6c673b9a064c09e09db",
+      "sha256": "39d67eca5ce8203bf3d892bcd08feee54cf516ea56c5c62d40e21f9e49008629",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -533,7 +533,7 @@
       "source": "tools/issue_series_service.py"
     },
     "tools/legacy_binding_repair.py": {
-      "sha256": "c24043d3785ba421d41ac3ca15a8d4384f05ff81317ed83fec2d93182331f13a",
+      "sha256": "b8accf7e3009edab951ebf0b5ce30d633ebc5dac16be933ece8914d0432ad4d5",
       "source": "tools/legacy_binding_repair.py"
     },
     "tools/lifecycle_session.py": {
@@ -565,7 +565,7 @@
       "source": "tools/predicate_ledger.py"
     },
     "tools/predicate_ledger_repair.py": {
-      "sha256": "a419b71ad77a9f2488a384809b49be4537f19671214dc7d1709f71fbb7683a77",
+      "sha256": "045b6b4f56a375b5fe90dfc766d0c5e95f23d6bee320db8eeca3b6fdc17f5fb2",
       "source": "tools/predicate_ledger_repair.py"
     },
     "tools/production_upgrade_binding.py": {
