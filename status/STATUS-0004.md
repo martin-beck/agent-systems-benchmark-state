@@ -117,7 +117,7 @@
         AR_1936["AR-1936 - In progress"]:::status_in_progress
         AR_1937["AR-1937 - Blocked"]:::status_blocked
         AR_1938["AR-1938 - Planned"]:::status_planned
-        AR_1939["AR-1939 - Open"]:::status_open
+        AR_1939["AR-1939 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
