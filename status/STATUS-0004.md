@@ -192,7 +192,7 @@
         AR_1940["AR-1940 - Blocked"]:::status_blocked
         AR_1941["AR-1941 - Blocked"]:::status_blocked
         AR_1942["AR-1942 - Blocked"]:::status_blocked
-        AR_1943["AR-1943 - In progress"]:::status_in_progress
+        AR_1943["AR-1943 - Blocked"]:::status_blocked
         AR_1944["AR-1944 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
