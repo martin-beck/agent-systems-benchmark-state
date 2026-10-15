@@ -3072,11 +3072,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1932-publication-capability-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | State-only successor for the AR-1849 reviewed PR #171 publication capability. Bind a fresh schema-v2 execution envelope granting only git metadata and network publication authority; preserve AR-1849, its original envelope, and all prior history. |
@@ -4038,3 +4038,4 @@ flowchart LR
         AR_1907["AR-1907 - Open"]:::status_open
         AR_1908["AR-1908 - Open"]:::status_open
         AR_1909["AR-1909 - Blocked"]:::status_blocked
+        AR_1910["AR-1910 - Open"]:::status_open

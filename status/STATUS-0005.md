@@ -541,12 +541,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1849](../tasks/AR-1849-formal-admission-env-repair.md): Formal admission environment repair | ar1849-formal-admission-env-luna | Repair workflow-wide private TLC admission environment for formal CI. | Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94&#37; versus required 95&#37;. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication. |
-| P1 | [AR-1932](../tasks/AR-1932.md): AR-1849 publication capability successor | ar1932-publication-capability-luna | State-only successor for the AR-1849 reviewed PR #171 publication capability. Bind a fresh schema-v2 execution envelope granting only git metadata and network publication authority; preserve AR-1849, its original envelope, and all prior history. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Open (15)
 
@@ -568,7 +567,7 @@
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | Unclaimed | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
 
-### Blocked (122)
+### Blocked (123)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -680,3 +679,4 @@
 | P1 | [AR-1900](../tasks/AR-1900.md): Admit execution-envelope dependency | Unclaimed | State-only successor admitting exactly tools/execution_envelope.py for the AR-1899 focused replacement test. Preserve AR-1899 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1901](../tasks/AR-1901.md): Repair terminal publication scope | Unclaimed | Create a fresh successor task and immutable execution envelope correcting AR-1882&#x27;s missing cross-repository scope admission. Do not require envelopes/AR-1881-e1.json in product commit 3162fe8be2c3c5af3c5839c136775f19c4ef4ad3; resolve product paths only in the reviewed product checkout and state paths only in the coordination-state checkout; do not rewrite prior envelopes or widen arbitrary paths. | Blocked: immutable AR-1901 envelope admits coordination-state paths only; a product-checkout path is PATH_OUTSIDE_SCOPE. A successor must provide explicit cross-root scope admission without widening arbitrary paths. |
 | P1 | [AR-1904](../tasks/AR-1904.md): Bootstrap publication scope | Unclaimed | Create a narrow successor for AR-1901&#x27;s worktree and spec-retention failure using only handoffctl-authorized state paths and commands. Retain AR-1901 immutable task, envelope, bindings, and evidence; do not perform out-of-band Git/state edits, broaden paths, or alter product files. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1906](../tasks/AR-1906.md): Retain envelope artifacts | Unclaimed | Create a narrow successor for bind-spec/bind-envelope candidate retention. Use only handoffctl issue-series and authorized coordinator paths; preserve AR-1901 through AR-1905 immutable records, reject direct Git/state edits and arbitrary paths, and do not alter product files. | Implement the bounded scope and record local acceptance evidence. |

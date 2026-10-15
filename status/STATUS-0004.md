@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-        AR_1910["AR-1910 - Open"]:::status_open
         AR_1911["AR-1911 - Planned"]:::status_planned
         AR_1912["AR-1912 - Done"]:::status_done
         AR_1913["AR-1913 - Planned"]:::status_planned
@@ -21,7 +20,7 @@
         AR_1929["AR-1929 - Blocked"]:::status_blocked
         AR_1930["AR-1930 - Blocked"]:::status_blocked
         AR_1931["AR-1931 - Cancelled"]:::status_cancelled
-        AR_1932["AR-1932 - In progress"]:::status_in_progress
+        AR_1932["AR-1932 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
