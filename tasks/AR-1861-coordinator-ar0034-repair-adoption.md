@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "evidence_ledger": {
-    "candidate_digest": "sha256:97852cdf71becff9aba59e0f39a6c175e64b28ad026b4f4d2d3bc4501b9e9b6a",
+    "candidate_digest": "sha256:9ecca72fcfbc70c0d0445cafb37725b1bba009f754e07d172f83229790ff561d",
     "candidate_ref": "coordinator.vendor.json",
     "steps": [
       {
@@ -76,6 +76,16 @@
         "evidence_ref": "coordinator.vendor.json",
         "predicate_id": "vendor-lifecycle-alignment",
         "recorded_task_revision": 31,
+        "status": "stale"
+      },
+      {
+        "candidate_digest": "sha256:9ecca72fcfbc70c0d0445cafb37725b1bba009f754e07d172f83229790ff561d",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:9ecca72fcfbc70c0d0445cafb37725b1bba009f754e07d172f83229790ff561d",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "vendor-lifecycle-alignment",
+        "recorded_task_revision": 32,
         "status": "pass"
       }
     ]
@@ -90,9 +100,9 @@
   "spec_revision": 1,
   "status": "done",
   "summary": "Adopt the merged Coordinator AR-0034 partial-legacy worktree repair needed to unblock ASB AR-1826.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Adopt Coordinator AR-0034 legacy-binding repair",
-  "updated_at": "2026-10-15T00:44:18+00:00",
+  "updated_at": "2026-10-15T00:46:08+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1861-coordinator-adoption"
 }
 ---
@@ -220,4 +230,7 @@ or mutate AR-1826 until the adopted repair is verified.
   artifact.
 
 - 2026-10-15T00:44:18+00:00: Refresh all historical vendor lifecycle rows to final reviewed
+  artifact.
+
+- 2026-10-15T00:46:08+00:00: Refresh all historical vendor lifecycle rows to final formatted
   artifact.
