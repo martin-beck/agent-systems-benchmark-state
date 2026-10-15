@@ -19,7 +19,7 @@
     "Do not merge PR #170 or rewrite history."
   ],
   "path_scope": {
-    "read": ["tasks/AR-1849-formal-admission-env-repair.md", "specs/AR-1849.json", "envelopes/AR-1849-e2.json"],
+    "read": ["tasks/AR-1849-formal-admission-env-repair.md", "specs/AR-1849.json", "envelopes/AR-1849-e1.json"],
     "write": ["tasks/AR-1849-formal-admission-env-repair.md", "PROJECT_STATE.md", "WORKTREES.md", "CURRENT.md", "STATUS.md", "status"]
   },
   "command_classes": {
