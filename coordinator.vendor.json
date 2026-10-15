@@ -505,7 +505,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "67d6fb09cf36ebef1e779ae19b5d8dbeb3700e35aa96d6c673b9a064c09e09db",
+      "sha256": "230e6c0961d7d0222f5850f76d6907491c18e63fb8fb9fd15a68a5bc6b118a18",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -533,7 +533,7 @@
       "source": "tools/issue_series_service.py"
     },
     "tools/legacy_binding_repair.py": {
-      "sha256": "c24043d3785ba421d41ac3ca15a8d4384f05ff81317ed83fec2d93182331f13a",
+      "sha256": "b8accf7e3009edab951ebf0b5ce30d633ebc5dac16be933ece8914d0432ad4d5",
       "source": "tools/legacy_binding_repair.py"
     },
     "tools/lifecycle_session.py": {

@@ -23,6 +23,7 @@ from tools import (
     change_drift,
     execution_envelope,
     handoffctl,
+    legacy_binding_repair,
     production_upgrade_binding,
     resume_card_runtime,
     retry_circuit,
@@ -563,6 +564,40 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
             self.assertRaisesRegex(RuntimeError, "missing private runtime config"),
         ):
             handoffctl.config()
+
+    def test_legacy_binding_repair_clears_only_exact_branch_and_key(self) -> None:
+        args = argparse.Namespace(
+            expected_revision=4,
+            expected_branch="codex/recovery",
+            worktree_key="asb-recovery-20261015",
+            note="clear stale binding",
+        )
+        meta: dict[str, object] = {
+            "task_revision": 4,
+            "status": "open",
+            "owner": "",
+            "claim_expires": "",
+            "branch": "codex/recovery",
+            "worktree_key": "asb-recovery-20261015",
+        }
+        self.assertEqual("clear stale binding", legacy_binding_repair.repair(args, meta))
+        self.assertEqual("", meta["worktree_key"])
+
+        for field, value, message in (
+            ("expected_branch", "codex/other", "branch does not match"),
+            ("worktree_key", "asb-other", "worktree key does not match"),
+        ):
+            with self.subTest(field=field):
+                candidate = dict(meta, worktree_key="asb-recovery-20261015")
+                args.expected_branch = "codex/recovery"
+                args.worktree_key = "asb-recovery-20261015"
+                setattr(args, field, value)
+                with self.assertRaisesRegex(RuntimeError, message):
+                    legacy_binding_repair.repair(args, candidate)
+        args.expected_branch = ""
+        args.worktree_key = "asb-recovery-20261015"
+        with self.assertRaisesRegex(RuntimeError, "requires --expected-branch"):
+            legacy_binding_repair.repair(args, dict(meta, branch="codex/recovery"))
 
     def test_worker_scope_rejects_unreadable_and_invalid_boot_identity(self) -> None:
         with (
