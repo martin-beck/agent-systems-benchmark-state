@@ -1,5 +1,16 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1541["AR-1541 - Done"]:::status_done
+        AR_1542["AR-1542 - Done"]:::status_done
+        AR_1543["AR-1543 - Done"]:::status_done
+        AR_1544["AR-1544 - Superseded"]:::status_superseded
+        AR_1545["AR-1545 - Planned"]:::status_planned
+        AR_1546["AR-1546 - Planned"]:::status_planned
+        AR_1547["AR-1547 - Done"]:::status_done
+        AR_1548["AR-1548 - Superseded"]:::status_superseded
+        AR_1549["AR-1549 - Done"]:::status_done
+        AR_1550["AR-1550 - Done"]:::status_done
+        AR_1551["AR-1551 - Cancelled"]:::status_cancelled
         AR_1552["AR-1552 - Done"]:::status_done
         AR_1553["AR-1553 - Done"]:::status_done
         AR_1554["AR-1554 - Done"]:::status_done
@@ -375,6 +386,7 @@
         AR_1954["AR-1954 - In progress"]:::status_in_progress
         AR_1955["AR-1955 - In progress"]:::status_in_progress
         AR_1956["AR-1956 - In progress"]:::status_in_progress
+        AR_1957["AR-1957 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2695,6 +2707,3 @@
 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
 | [AR-1283](../tasks/AR-1283-formal-lockfile.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | None |
-| [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
-| [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
-| [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |

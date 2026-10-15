@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
+| [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
+| [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) |
 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md) | None | None |
 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md) | None | None |
@@ -619,6 +622,7 @@
 | [AR-1954](../tasks/AR-1954.md) | None | None |
 | [AR-1955](../tasks/AR-1955.md) | None | None |
 | [AR-1956](../tasks/AR-1956.md) | None | None |
+| [AR-1957](../tasks/AR-1957.md) | None | None |
 
 ## Complete AR inventory
 
@@ -719,5 +723,3 @@
 | P0 | [AR-1531](../tasks/AR-1531.md): Provision signed 8G formal capacity fixture | Unclaimed | Provision the missing 8G/8G disposable formal fixture and resource evidence required by AR-1522. | External operator must supply the exact reviewed formal seed and matching model/JDK/TLC/source inputs; preserve the provisioned 8 GiB/8 GiB fixture and do not run qualification before preflight passes. |
 | P0 | [AR-1535](../tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | Unclaimed | Reconcile AR-1307&#x27;s repaired development runner with the formal qualification handoff after the approved vendor release. | Formal-only blocker: an authorized external operator must provide the exact reviewed AR-1307 seed and matching model/JDK/TLC/source bundle; do not substitute development fixtures. This does not block the completed unsigned-development path. Then AR-1545 audits the inputs for AR-1522. |
 | P0 | [AR-1537](../tasks/AR-1537.md): Coordinator vendor bootstrap closure | Unclaimed | Allowlist closure is implemented and focused tests pass, but consuming v0.3.50 also changes ASB-owned formal/tests surfaces; AR-1538 owns that compatibility integration. | Remain blocked pending AR-1538 downstream integration. Preserve the repaired explicit allowlist and the mixed-snapshot failure; do not rerun sync until ASB-owned compatibility work is reviewed. |
-| P0 | [AR-1538](../tasks/AR-1538.md): Coordinator v0.3.50 downstream integration | Unclaimed | v0.3.50 sync and immutable vendor verification pass, but the coordinator lifecycle/session contract is incompatible with ASB-owned tests and SQLite fence fixtures; a narrower compatibility successor is required. | Remain blocked pending AR-1539 compatibility repair. Preserve branch preserve/ar1538-v0350-mixed-snapshot and do not publish the failing integration. |
-| P0 | [AR-1539](../tasks/AR-1539.md): Coordinator v0.3.50 compatibility repair | Unclaimed | Compatibility audit reproduced the v0.3.50 failures and split them into AR-1540 session/lifecycle and AR-1541 SQLite fence repairs; no incompatible runtime is publishable. | Remain blocked pending AR-1540, AR-1541 and AR-1544. Preserve the exact v0.3.50 verifier result and the disposable failure evidence; resume AR-1534 only after all compatibility successors pass. |

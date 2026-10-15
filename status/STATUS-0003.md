@@ -3418,6 +3418,20 @@
 | Summary | Repair only the supported handoffctl outer-runner and linked-worktree Git admin mount needed for bounded publication of AR-1955. Preserve AR-1955 signed candidate commits, AR-1950 and AR-1954 active work, all prior task history, and fail-closed path isolation. |
 | Next action | Repair authorized network/DNS visibility inside the bounded publication sandbox, then retry exact AR-1956 push; otherwise hand off signed candidate 0a05e5a165 with this fail-closed evidence. |
 
+### AR-1957 — Repair sandbox DNS
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair only authorized DNS/network visibility inside the bounded handoffctl publication sandbox so AR-1956 can reach the configured HTTPS Git remote. Preserve fail-closed network policy, reject unapproved destinations and selectors, and do not broaden network access or modify AR-1955/1956 source. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4034,14 +4048,3 @@ flowchart LR
         AR_1538["AR-1538 - Blocked"]:::status_blocked
         AR_1539["AR-1539 - Blocked"]:::status_blocked
         AR_1540["AR-1540 - Done"]:::status_done
-        AR_1541["AR-1541 - Done"]:::status_done
-        AR_1542["AR-1542 - Done"]:::status_done
-        AR_1543["AR-1543 - Done"]:::status_done
-        AR_1544["AR-1544 - Superseded"]:::status_superseded
-        AR_1545["AR-1545 - Planned"]:::status_planned
-        AR_1546["AR-1546 - Planned"]:::status_planned
-        AR_1547["AR-1547 - Done"]:::status_done
-        AR_1548["AR-1548 - Superseded"]:::status_superseded
-        AR_1549["AR-1549 - Done"]:::status_done
-        AR_1550["AR-1550 - Done"]:::status_done
-        AR_1551["AR-1551 - Cancelled"]:::status_cancelled

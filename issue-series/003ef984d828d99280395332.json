@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1957",
+  "issue": {
+    "number": 10087,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10087"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Authorized HTTPS publication destination resolves inside the sandbox, hostile/unapproved destinations and network-disabled commands remain denied, focused positive/negative selector tests pass, and AR-1956 exact publication can be retried through handoffctl.",
+      "depends_on": [],
+      "id": "AR-1957",
+      "ownership": "ASB execution-envelope sandbox network/DNS admission and focused tests only; no product, ledger, task-history, or direct-push changes.",
+      "scope": "Repair only authorized DNS/network visibility inside the bounded handoffctl publication sandbox so AR-1956 can reach the configured HTTPS Git remote. Preserve fail-closed network policy, reject unapproved destinations and selectors, and do not broaden network access or modify AR-1955/1956 source.",
+      "short_title": "Repair sandbox DNS"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
