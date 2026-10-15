@@ -3310,11 +3310,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | gpt-5.6-luna-ar1885-v0715 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair authoritative ASB state projection so valid historical evidence-ledger rows are preserved without false digest rejection, the 200000-byte handoffctl limit is enforced against the reviewed implementation, and bound envelopes can resolve their declared product test paths without broadening isolation. Preserve AR-1948 and all prior history. |
@@ -4047,3 +4047,4 @@ flowchart LR
         AR_1615["AR-1615 - Done"]:::status_done
         AR_1617["AR-1617 - Done"]:::status_done
         AR_1618["AR-1618 - Done"]:::status_done
+        AR_1619["AR-1619 - Done"]:::status_done
