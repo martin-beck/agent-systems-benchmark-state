@@ -53,6 +53,7 @@ if __package__:
         run_command,
     )
     from . import autonomy_limits as al
+    from . import credential_handoff as _credential_handoff_runtime
     from . import predicate_ledger_repair as plr
     from . import roles as role_module
     from .board_metrics import build_metrics
@@ -127,6 +128,11 @@ else:
     import autonomy_limits as al  # type: ignore[import-not-found,no-redef]
     import change_drift  # type: ignore[import-not-found,no-redef]
     import command_results  # type: ignore[import-not-found,no-redef]
+
+    try:
+        import credential_handoff as _credential_handoff_runtime  # type: ignore[import-not-found,no-redef]
+    except ModuleNotFoundError:
+        _credential_handoff_runtime = None  # type: ignore[assignment]
 
     try:
         from board_metrics import build_metrics  # type: ignore[import-not-found,no-redef]  # noqa: I001
@@ -4319,10 +4325,23 @@ def cmd_run(args: argparse.Namespace) -> int:
 def _run_envelope_subprocess(
     command: list[str], timeout: float, args: argparse.Namespace
 ) -> subprocess.CompletedProcess[bytes]:
+    credential_fd = getattr(args, "credential_fd", None)
+    if credential_fd is not None:
+        if _credential_handoff_runtime is None:
+            raise RuntimeError("credential helper unavailable")
+        return _credential_handoff_runtime.run_envelope_subprocess(command, timeout, args)
     if hasattr(args, "_envelope_worktree_fd"):
+        if hasattr(args, "_envelope_worktree"):
+            return subprocess.run(
+                command,
+                cwd=str(args._envelope_worktree),
+                check=False,
+                stdin=subprocess.DEVNULL,
+                timeout=timeout,
+                pass_fds=(int(args._envelope_worktree_fd),),
+            )
         return subprocess.run(
             command,
-            cwd=str(args._envelope_worktree),
             check=False,
             stdin=subprocess.DEVNULL,
             timeout=timeout,
@@ -4331,12 +4350,26 @@ def _run_envelope_subprocess(
     return subprocess.run(command, check=False, stdin=subprocess.DEVNULL, timeout=timeout)
 
 
+def _validate_credential_fd(args: argparse.Namespace) -> None:
+    """Admit credential descriptors only for authorized publication runs."""
+    credential_fd = getattr(args, "credential_fd", None)
+    if credential_fd is None:
+        return
+    if getattr(args, "command_class", None) != "git-publication":
+        raise RuntimeError("credential fd requires git-publication command class")
+    if not getattr(args, "authorize_external_side_effects", False):
+        raise RuntimeError("credential fd requires authorized external side effects")
+    if type(credential_fd) is not int or credential_fd < 3:
+        raise RuntimeError("credential fd must be an open fd >= 3")
+
+
 def _cmd_run_fenced(
     args: argparse.Namespace,
 ) -> tuple[EvidencePolicy, str, float, bool, int, str | None, int | None]:
     if backend_selection()["backend"] == "git":
         config()
     policy = require_active_owner(args.task, args.owner)
+    _validate_credential_fd(args)
     timeout = float(getattr(args, "timeout_seconds", COMMAND_TIMEOUT_SECONDS))
     if timeout <= 0:
         raise RuntimeError("command timeout must be positive")
@@ -5092,6 +5125,7 @@ def main() -> int:
     item.add_argument("--command-class", choices=sorted(execution_envelope.COMMAND_CLASSES))
     item.add_argument("--scope-path", action="append", default=[])
     item.add_argument("--authorize-external-side-effects", action="store_true")
+    item.add_argument("--credential-fd", type=int)
     item.add_argument("command", nargs=argparse.REMAINDER)
     args = parser.parse_args()
     if args.cmd == "init":
