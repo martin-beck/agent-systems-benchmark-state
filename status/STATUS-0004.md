@@ -404,7 +404,7 @@
         AR_1955["AR-1955 - In progress"]:::status_in_progress
         AR_1956["AR-1956 - In progress"]:::status_in_progress
         AR_1957["AR-1957 - In progress"]:::status_in_progress
-        AR_1958["AR-1958 - Planned"]:::status_planned
+        AR_1958["AR-1958 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
