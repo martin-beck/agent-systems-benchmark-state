@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "evidence_ledger": {
-    "candidate_digest": "sha256:e9f4d59af56b1ff76aa3d607e2dbbfa4b4f17fb8d33845a445945732cc26a842",
+    "candidate_digest": "sha256:0fef02fac6e98c47136abbacae9203a4da893f22588b2ee2f43f913717330d8b",
     "candidate_ref": "coordinator.vendor.json",
     "steps": [
       {
@@ -16,7 +16,7 @@
         "evidence_ref": "coordinator.vendor.json",
         "predicate_id": "lifecycle-parity",
         "recorded_task_revision": 15,
-        "status": "pass"
+        "status": "stale"
       },
       {
         "candidate_digest": "sha256:e9f4d59af56b1ff76aa3d607e2dbbfa4b4f17fb8d33845a445945732cc26a842",
@@ -37,6 +37,16 @@
         "predicate_id": "qualification-floor",
         "recorded_task_revision": 17,
         "status": "pass"
+      },
+      {
+        "candidate_digest": "sha256:0fef02fac6e98c47136abbacae9203a4da893f22588b2ee2f43f913717330d8b",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:0fef02fac6e98c47136abbacae9203a4da893f22588b2ee2f43f913717330d8b",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "lifecycle-parity",
+        "recorded_task_revision": 19,
+        "status": "pass"
       }
     ]
   },
@@ -50,9 +60,9 @@
   "spec_revision": 1,
   "status": "done",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T18:05:42+00:00",
+  "updated_at": "2026-10-15T00:37:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -120,3 +130,6 @@ vendored Coordinator bytes or mutate AR-1826.
 
 - 2026-10-13T18:05:42+00:00: Completed by verified v0.7.8 lifecycle alignment through immutable
   vendor adoption.
+
+- 2026-10-15T00:37:02+00:00: Refresh stale lifecycle parity ledger digest to current reviewed
+  artifact.
