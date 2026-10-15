@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "id": "AR-1934",
+  "title": "PR 1318 publication successor",
+  "summary": "Merge only coordinator PR #1318 through the authorized publication envelope.",
+  "acceptance": ["PR #1318 merged", "bounded post-merge evidence recorded"],
+  "predicates": []
+}

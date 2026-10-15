@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "envelope_id": "AR-1934-e1",
+  "envelope_revision": 1,
+  "task": "AR-1934",
+  "task_revision": 1,
+  "spec_ref": "specs/AR-1934.json",
+  "spec_revision": 1,
+  "capabilities": {
+    "git_metadata": {"allowed": true},
+    "network": {"allowed": true}
+  },
+  "outputs": [
+    {"id": "publication", "description": "Merge coordinator PR #1318 and record bounded post-merge evidence."}
+  ],
+  "non_goals": [
+    "Do not run TLC or formal qualification.",
+    "Do not modify AR-1849, AR-1932, AR-1933, or historical task records.",
+    "Do not merge any PR other than coordinator PR #1318."
+  ],
+  "path_scope": {
+    "read": ["tasks/AR-1934.md", "specs/AR-1934.json", "envelopes/AR-1934-e1.json"],
+    "write": ["tasks/AR-1934.md", "PROJECT_STATE.md", "WORKTREES.md", "CURRENT.md", "STATUS.md", "status"]
+  },
+  "command_classes": {
+    "read": {"allowed": true, "timeout_seconds": 120},
+    "git-publication": {"allowed": true, "timeout_seconds": 900}
+  },
+  "evidence": [{"id": "publication", "class": "hosted", "required": true}],
+  "stop_conditions": [
+    {"id": "scope", "kind": "deny"},
+    {"id": "formal", "kind": "deny"},
+    {"id": "history", "kind": "deny"}
+  ]
+}
