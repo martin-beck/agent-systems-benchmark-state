@@ -8,7 +8,7 @@
   "spec_revision": 1,
   "capabilities": {
     "git_metadata": {"allowed": true},
-    "network": {"allowed": true}
+    "network": {"allowed": false}
   },
   "outputs": [
     {"id": "publication", "description": "Verify reviewed PR #171 exact-head publication and post-merge state evidence."}
