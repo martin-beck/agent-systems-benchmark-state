@@ -3320,6 +3320,20 @@
 | Summary | Repair authoritative ASB state projection so valid historical evidence-ledger rows are preserved without false digest rejection, the 200000-byte handoffctl limit is enforced against the reviewed implementation, and bound envelopes can resolve their declared product test paths without broadening isolation. Preserve AR-1948 and all prior history. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1950 — Bind product test paths
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the handoffctl execution-envelope binding so a state-owned task can resolve explicitly declared ASB product test paths from the configured product checkout without treating the product checkout as the state worktree or broadening read/write isolation. Add positive and hostile path-resolution tests. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4036,15 +4050,3 @@ flowchart LR
         AR_1647["AR-1647 - Done"]:::status_done
         AR_1648["AR-1648 - Done"]:::status_done
         AR_1649["AR-1649 - Done"]:::status_done
-        AR_1650["AR-1650 - Done"]:::status_done
-        AR_1651["AR-1651 - Done"]:::status_done
-        AR_1652["AR-1652 - Done"]:::status_done
-        AR_1653["AR-1653 - Planned"]:::status_planned
-        AR_1654["AR-1654 - Planned"]:::status_planned
-        AR_1655["AR-1655 - Planned"]:::status_planned
-        AR_1656["AR-1656 - Done"]:::status_done
-        AR_1657["AR-1657 - Done"]:::status_done
-        AR_1658["AR-1658 - Planned"]:::status_planned
-        AR_1659["AR-1659 - Planned"]:::status_planned
-        AR_1660["AR-1660 - Planned"]:::status_planned
-        AR_1661["AR-1661 - Done"]:::status_done

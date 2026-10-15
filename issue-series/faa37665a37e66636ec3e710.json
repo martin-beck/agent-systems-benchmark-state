@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1950",
+  "issue": {
+    "number": 10080,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10080"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "A clean bound execution worktree resolves the declared ASB product test paths through the configured product checkout, while state paths remain state-root scoped; missing, symlinked, cross-repository, and write-path escapes fail closed, with focused positive and hostile tests.",
+      "depends_on": [],
+      "id": "AR-1950",
+      "ownership": "ASB execution-envelope product-worktree path resolution only; preserve AR-1948, AR-1949, and all prior histories.",
+      "scope": "Repair the handoffctl execution-envelope binding so a state-owned task can resolve explicitly declared ASB product test paths from the configured product checkout without treating the product checkout as the state worktree or broadening read/write isolation. Add positive and hostile path-resolution tests.",
+      "short_title": "Bind product test paths"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

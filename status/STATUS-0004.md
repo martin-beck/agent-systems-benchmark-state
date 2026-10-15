@@ -1,5 +1,17 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1650["AR-1650 - Done"]:::status_done
+        AR_1651["AR-1651 - Done"]:::status_done
+        AR_1652["AR-1652 - Done"]:::status_done
+        AR_1653["AR-1653 - Planned"]:::status_planned
+        AR_1654["AR-1654 - Planned"]:::status_planned
+        AR_1655["AR-1655 - Planned"]:::status_planned
+        AR_1656["AR-1656 - Done"]:::status_done
+        AR_1657["AR-1657 - Done"]:::status_done
+        AR_1658["AR-1658 - Planned"]:::status_planned
+        AR_1659["AR-1659 - Planned"]:::status_planned
+        AR_1660["AR-1660 - Planned"]:::status_planned
+        AR_1661["AR-1661 - Done"]:::status_done
         AR_1663["AR-1663 - Planned"]:::status_planned
         AR_1665["AR-1665 - Planned"]:::status_planned
         AR_1666["AR-1666 - Planned"]:::status_planned
@@ -267,6 +279,7 @@
         AR_1947["AR-1947 - Blocked"]:::status_blocked
         AR_1948["AR-1948 - Blocked"]:::status_blocked
         AR_1949["AR-1949 - Blocked"]:::status_blocked
+        AR_1950["AR-1950 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2619,7 +2632,3 @@
 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md), [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md) |
 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None |
 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md), [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) |
-| [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) |
-| [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
-| [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md) | None | None |
-| [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md) | None | None |
