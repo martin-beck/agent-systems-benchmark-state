@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-        AR_1763["AR-1763 - Done"]:::status_done
         AR_1764["AR-1764 - Done"]:::status_done
         AR_1765["AR-1765 - Done"]:::status_done
         AR_1766["AR-1766 - Done"]:::status_done
@@ -71,7 +70,7 @@
         AR_1846["AR-1846 - Planned"]:::status_planned
         AR_1847["AR-1847 - Planned"]:::status_planned
         AR_1848["AR-1848 - Planned"]:::status_planned
-        AR_1849["AR-1849 - In progress"]:::status_in_progress
+        AR_1849["AR-1849 - Blocked"]:::status_blocked
         AR_1850["AR-1850 - Done"]:::status_done
         AR_1851["AR-1851 - Blocked"]:::status_blocked
         AR_1852["AR-1852 - Blocked"]:::status_blocked
@@ -2533,3 +2532,4 @@
 | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) |
 | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md) |
 | [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
+| [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
