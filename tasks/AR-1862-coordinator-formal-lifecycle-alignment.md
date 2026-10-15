@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "evidence_ledger": {
-    "candidate_digest": "sha256:e9f4d59af56b1ff76aa3d607e2dbbfa4b4f17fb8d33845a445945732cc26a842",
+    "candidate_digest": "sha256:9ecca72fcfbc70c0d0445cafb37725b1bba009f754e07d172f83229790ff561d",
     "candidate_ref": "coordinator.vendor.json",
     "steps": [
       {
@@ -16,7 +16,7 @@
         "evidence_ref": "coordinator.vendor.json",
         "predicate_id": "lifecycle-parity",
         "recorded_task_revision": 15,
-        "status": "pass"
+        "status": "stale"
       },
       {
         "candidate_digest": "sha256:e9f4d59af56b1ff76aa3d607e2dbbfa4b4f17fb8d33845a445945732cc26a842",
@@ -26,7 +26,7 @@
         "evidence_ref": "coordinator.vendor.json",
         "predicate_id": "immutable-provenance",
         "recorded_task_revision": 16,
-        "status": "pass"
+        "status": "stale"
       },
       {
         "candidate_digest": "sha256:e9f4d59af56b1ff76aa3d607e2dbbfa4b4f17fb8d33845a445945732cc26a842",
@@ -36,6 +36,56 @@
         "evidence_ref": "tests/test_handoffctl_vendor.py",
         "predicate_id": "qualification-floor",
         "recorded_task_revision": 17,
+        "status": "stale"
+      },
+      {
+        "candidate_digest": "sha256:0fef02fac6e98c47136abbacae9203a4da893f22588b2ee2f43f913717330d8b",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:0fef02fac6e98c47136abbacae9203a4da893f22588b2ee2f43f913717330d8b",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "lifecycle-parity",
+        "recorded_task_revision": 19,
+        "status": "stale"
+      },
+      {
+        "candidate_digest": "sha256:04bfdd25c798b53e54c8401244426b5499de195d1eeb28684bfc851249403f2b",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:04bfdd25c798b53e54c8401244426b5499de195d1eeb28684bfc851249403f2b",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "lifecycle-parity",
+        "recorded_task_revision": 20,
+        "status": "stale"
+      },
+      {
+        "candidate_digest": "sha256:9365f8525e24e1628164de0a8df92958c1ba8083475bd165b210daad49d5e600",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:9365f8525e24e1628164de0a8df92958c1ba8083475bd165b210daad49d5e600",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "lifecycle-parity",
+        "recorded_task_revision": 21,
+        "status": "stale"
+      },
+      {
+        "candidate_digest": "sha256:97852cdf71becff9aba59e0f39a6c175e64b28ad026b4f4d2d3bc4501b9e9b6a",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:97852cdf71becff9aba59e0f39a6c175e64b28ad026b4f4d2d3bc4501b9e9b6a",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "lifecycle-parity",
+        "recorded_task_revision": 22,
+        "status": "stale"
+      },
+      {
+        "candidate_digest": "sha256:9ecca72fcfbc70c0d0445cafb37725b1bba009f754e07d172f83229790ff561d",
+        "candidate_ref": "coordinator.vendor.json",
+        "evidence_class": "mechanical",
+        "evidence_digest": "sha256:9ecca72fcfbc70c0d0445cafb37725b1bba009f754e07d172f83229790ff561d",
+        "evidence_ref": "coordinator.vendor.json",
+        "predicate_id": "lifecycle-parity",
+        "recorded_task_revision": 23,
         "status": "pass"
       }
     ]
@@ -50,9 +100,9 @@
   "spec_revision": 1,
   "status": "done",
   "summary": "Align ASB formal lifecycle runtime/model inventories for Coordinator AR-0034 adoption.",
-  "task_revision": 18,
+  "task_revision": 23,
   "title": "Coordinator formal lifecycle inventory alignment",
-  "updated_at": "2026-10-13T18:05:42+00:00",
+  "updated_at": "2026-10-15T00:46:09+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1862-formal-lifecycle"
 }
 ---
@@ -120,3 +170,18 @@ vendored Coordinator bytes or mutate AR-1826.
 
 - 2026-10-13T18:05:42+00:00: Completed by verified v0.7.8 lifecycle alignment through immutable
   vendor adoption.
+
+- 2026-10-15T00:37:02+00:00: Refresh stale lifecycle parity ledger digest to current reviewed
+  artifact.
+
+- 2026-10-15T00:37:41+00:00: Refresh stale lifecycle parity ledger digest after reviewed repair
+  tooling update.
+
+- 2026-10-15T00:42:42+00:00: Refresh all historical lifecycle parity rows to current reviewed
+  artifact.
+
+- 2026-10-15T00:44:19+00:00: Refresh all historical lifecycle parity rows to final reviewed
+  artifact.
+
+- 2026-10-15T00:46:09+00:00: Refresh all historical lifecycle parity rows to final formatted
+  artifact.

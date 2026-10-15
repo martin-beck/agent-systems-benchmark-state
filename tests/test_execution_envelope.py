@@ -10,7 +10,21 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import cast
 
-from tools.execution_envelope import Preflight, canonical_digest, digest, errors, load, preflight
+from tools.execution_envelope import (
+    Preflight,
+    _capability_errors,
+    _identity_errors,
+    _open_path,
+    _open_scope_fd,
+    _paths,
+    canonical_digest,
+    digest,
+    errors,
+    load,
+    preflight,
+    publication_metadata_allowed,
+    valid_replacements,
+)
 
 
 def envelope() -> dict[str, object]:
@@ -152,6 +166,98 @@ class ExecutionEnvelopeTests(unittest.TestCase):
             preflight(meta, "worker", "git-publication", ["src"], self.worktree, True).code,
         )
         self.assertTrue(errors({**value, "capabilities": {"git_metadata": {"allowed": True}}}))
+        command_classes = cast(dict[str, dict[str, object]], value["command_classes"])
+        command_classes["git-publication"]["allowed"] = True
+        value["capabilities"] = {"git_metadata": {"allowed": False}, "network": {"allowed": False}}
+        metadata_denied = self.meta()
+        metadata_denied["execution_envelope"] = value
+        metadata_denied["execution_envelope_digest"] = canonical_digest(value)
+        self.assertEqual(
+            "GIT_METADATA_CAPABILITY_DENIED",
+            preflight(metadata_denied, "worker", "git-publication", ["src"], self.worktree).code,
+        )
+
+    def test_publication_preflight_rejects_metadata_and_external_side_effects(self) -> None:
+        value = envelope() | {
+            "schema_version": 2,
+            "capabilities": {
+                "git_metadata": {"allowed": False},
+                "network": {"allowed": False},
+            },
+        }
+        cast(dict[str, dict[str, object]], value["command_classes"])["git-publication"] = {
+            "allowed": True
+        }
+        meta = self.meta() | {
+            "execution_envelope": value,
+            "execution_envelope_digest": canonical_digest(value),
+        }
+        self.assertEqual(
+            "GIT_METADATA_CAPABILITY_DENIED",
+            preflight(meta, "worker", "git-publication", ["src"], self.worktree).code,
+        )
+        self.assertEqual(
+            "EXTERNAL_SIDE_EFFECTS_DENIED",
+            preflight(meta, "worker", "test", ["src"], self.worktree, True).code,
+        )
+
+    def test_descriptor_scope_openers_reject_non_directories_and_unsafe_paths(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "file").write_text("x", encoding="utf-8")
+            with self.assertRaisesRegex(RuntimeError, "non-directory"):
+                _open_path(root / "file" / "child")
+            root_fd = _open_path(root, directory=True)
+            try:
+                with self.assertRaisesRegex(RuntimeError, "non-directory"):
+                    _open_scope_fd(root_fd, "file/child")
+                with self.assertRaisesRegex(RuntimeError, "unsafe"):
+                    _open_scope_fd(root_fd, "../escape")
+            finally:
+                import os
+
+                os.close(root_fd)
+
+    def test_validator_rejects_every_private_shape_boundary(self) -> None:
+        value = envelope()
+        candidates: tuple[object, ...] = (None, [], "text", 1)
+        for candidate in candidates:
+            self.assertIn("envelope must be an object", errors(candidate))
+        for field, replacement in (
+            ("schema_version", 3),
+            ("envelope_revision", 0),
+            ("task_revision", "1"),
+            ("spec_revision", 0),
+            ("envelope_id", "AR-0001"),
+            ("task", "bad"),
+            ("spec_ref", "../bad"),
+        ):
+            self.assertTrue(errors({**value, field: replacement}), field)
+        for paths in ([], ["src", "src"], ["../escape"], ["."]):
+            self.assertTrue(errors({**value, "path_scope": {"read": paths, "write": ["src"]}}))
+        self.assertEqual([], _capability_errors({"schema_version": 1}))
+        self.assertTrue(_capability_errors({"schema_version": 1, "capabilities": {}}))
+        self.assertTrue(
+            _capability_errors(
+                {
+                    "schema_version": 2,
+                    "capabilities": {"git_metadata": {"allowed": 1}, "network": {"allowed": False}},
+                }
+            )
+        )
+        self.assertTrue(
+            _identity_errors({"schema_version": 9, "envelope_id": "bad", "task": "bad"})
+        )
+
+    def test_private_helpers_reject_duplicates_and_invalid_replacement_records(self) -> None:
+        problems: list[str] = []
+        _paths(["src", "src"], "read", problems)
+        self.assertIn("duplicates", problems[0])
+        self.assertFalse(valid_replacements([{"old_ref": "bad"}]))
+        self.assertTrue(valid_replacements(None))
+        self.assertFalse(publication_metadata_allowed(envelope()))
+        v2 = envelope() | {"schema_version": 2, "capabilities": {"git_metadata": {"allowed": True}}}
+        self.assertTrue(publication_metadata_allowed(v2))
 
     def test_validator_rejects_schema_shape_and_identity_failures(self) -> None:
         cases = (

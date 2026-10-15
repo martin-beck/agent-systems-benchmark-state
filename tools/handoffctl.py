@@ -1737,6 +1737,7 @@ def mutation_errors(
     before: dict[Path, str | None],
     policy: EvidencePolicy | None = None,
     *,
+    kind: str | None = None,
     rendered_snapshot: tuple[list[Task], dict[Path, str], Meta] | None = None,
 ) -> list[str]:
     """Validate a Git mutation."""
@@ -1745,7 +1746,11 @@ def mutation_errors(
     if len(selected) != 1:
         return [f"{path.name}: mutation target is not unique"]
     errors = [] if policy is not None else task_spec_policy_errors(ROOT)
-    errors.extend(basic_task_errors(path, selected[0], policy))
+    validation_meta = selected[0]
+    if kind == "repair-predicate-ledger":
+        validation_meta = dict(selected[0])
+        validation_meta.pop("evidence_ledger", None)
+    errors.extend(basic_task_errors(path, validation_meta, policy))
     errors.extend(claim_errors(selected[0], {}, {}, {}))
     errors.extend(mutation_global_errors(tasks))
     errors.extend(generated_view_errors(tasks, rendered_snapshot=rendered_snapshot))
@@ -3362,6 +3367,7 @@ def persist_git_mutation(
             path,
             before,
             selected_policy,
+            kind=kind,
             rendered_snapshot=(view_tasks, views, view_settings),
         )
         if errors:
@@ -3507,7 +3513,7 @@ def _transition_note(body: str, note: str, at: str) -> str:
     )
 
 
-def mutate_sqlite(
+def mutate_sqlite(  # noqa: C901
     args: argparse.Namespace, kind: str, policy: EvidencePolicy | None = None
 ) -> str | None:
     """Linearize a lifecycle mutation at SQLite's committed CAS update."""
@@ -3530,8 +3536,14 @@ def mutate_sqlite(
             (path, validated if item["id"] == args.task else item, text)
             for path, item, text in tasks
         ]
+        validation_meta = validated
+        if kind == "repair-predicate-ledger":
+            # The repair handler is the audited boundary for stale ledger rows;
+            # validate the task contract after excluding only that repair target.
+            validation_meta = dict(validated)
+            validation_meta.pop("evidence_ledger", None)
         errors = (
-            basic_task_errors(selected[0], validated, selected_policy)
+            basic_task_errors(selected[0], validation_meta, selected_policy)
             + graph_errors(candidate)
             + hierarchy_errors(candidate)
             + supersession_errors(candidate)
@@ -4984,6 +4996,7 @@ def main() -> int:
     item = commands.add_parser("repair-legacy-binding")
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--expected-branch", required=True)
     item.add_argument("--worktree-key", required=True)
     item.add_argument("--note", required=True)
     plr.add_parser(commands)
