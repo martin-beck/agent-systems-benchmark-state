@@ -14,6 +14,7 @@ from tools.execution_envelope import (
     preflight,
     sandbox_base_command,
     valid_binding,
+    valid_replacements,
     valid_reservation,
     validate_external_root,
 )
@@ -88,6 +89,20 @@ class EnvelopeCompatibilityCoverageTests(unittest.TestCase):
         connected = sandbox_base_command(network=True)
         self.assertIn("--unshare-net", isolated)
         self.assertNotIn("--unshare-net", connected)
+        for invalid in (
+            {"schema_version": 3},
+            {"schema_version": 2, "capabilities": {}},
+            {"schema_version": 2, "capabilities": {"git_metadata": {}, "network": {}}},
+            {"schema_version": 1, "capabilities": {}},
+            {"schema_version": 1, "path_scope": {"read": [], "write": ["../bad"]}},
+            {"schema_version": 1, "path_scope": {"read": ["state:/absolute"], "write": ["tools"]}},
+            {"schema_version": 1, "path_scope": {"read": ["tools", "tools"], "write": ["tools"]}},
+            {"schema_version": 1, "outputs": [{"id": "bad", "description": ""}]},
+            {"schema_version": 1, "evidence": [{"id": "bad", "class": "Bad Class", "required": 1}]},
+        ):
+            self.assertTrue(errors(invalid))
+        self.assertTrue(valid_replacements(None))
+        self.assertFalse(valid_replacements({}))
 
     def test_metadata_mount_and_root_selector(self) -> None:
         with TemporaryDirectory() as temporary:
