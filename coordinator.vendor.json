@@ -444,6 +444,10 @@
       "sha256": "d2c21b4d772171c614da4380d3652abf73663a0c1e8f803c16f20db9097cc2ce",
       "source": "tools/command_results.py"
     },
+    "tools/credential_handoff.py": {
+      "sha256": "62a6916a7b9e28c0c3d57d47a8c50029b1a705e621713090d20d940deceb885c",
+      "source": "tools/credential_handoff.py"
+    },
     "tools/directive_records.py": {
       "sha256": "e5290365a963b26d5c922f2dcd32a903e2cec69b5d5d05a1ace7df4cc6c719a4",
       "source": "tools/directive_records.py"
@@ -505,11 +509,11 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "67d6fb09cf36ebef1e779ae19b5d8dbeb3700e35aa96d6c673b9a064c09e09db",
+      "sha256": "dc9cd3c2ce259189f5710726fbbf7bd1db0a89357ff2bea8257c27b17917a8bc",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
-      "sha256": "3c94fd91c38b49cd7c56befb2b594fa1987d6aafb10d0a9e8a39ccff87ccdaaa",
+      "sha256": "b73aecc0cb8d42d143659a6d0d52c0086d75576ba5ae68ac02464f598dbd5a4d",
       "source": "tools/vendor.py"
     },
     "tools/hierarchy.py": {

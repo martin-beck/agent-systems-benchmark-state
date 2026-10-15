@@ -32,6 +32,7 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("tools/campaign_runtime.py", "tools/campaign_runtime.py"),
     ("tools/autonomy_limits.py", "tools/autonomy_limits.py"),
     ("tools/command_results.py", "tools/command_results.py"),
+    ("tools/credential_handoff.py", "tools/credential_handoff.py"),
     ("tools/retry_circuit.py", "tools/retry_circuit.py"),
     ("tools/run_command.py", "tools/run_command.py"),
     ("tools/issue_series_service.py", "tools/issue_series_service.py"),
