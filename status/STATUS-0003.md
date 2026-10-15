@@ -3352,11 +3352,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | gpt-5.6-luna-ar1885-v0715 |
 | Parent | None |
 | Children | None |
 | Summary | Adopt Agent Workflow Coordinator v0.7.16 at exact merge commit 6127f6c76c8feafd9e83cb0ba8f4bd478ac656b1 through the documented clean-source vendor sync using explicit source-root binding. Change only coordinator.vendor.json, allowlisted vendor files, tools/handoffctl_vendor.py verifier inputs, and generated integrity evidence. Preserve AR-1951 history and all overlays; no formal/TLC, Agent Relay, runtime downloads, or direct source copying. |
