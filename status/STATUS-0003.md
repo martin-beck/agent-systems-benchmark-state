@@ -3366,11 +3366,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | gpt-5.6-luna-ar1885-v0715 |
 | Parent | None |
 | Children | None |
 | Summary | Repair ASB handoffctl execution-envelope resolution so immutable envelopes can declare bounded state metadata paths separately from bound product paths, while preserving fail-closed traversal, symlink, wrong-root, and scope validation. Do not weaken isolation, mutate prior task history, or run formal/TLC. |
@@ -4048,4 +4048,3 @@ flowchart LR
         AR_1601["AR-1601 - Done"]:::status_done
         AR_1602["AR-1602 - Done"]:::status_done
         AR_1603["AR-1603 - Done"]:::status_done
-        AR_1604["AR-1604 - Done"]:::status_done
