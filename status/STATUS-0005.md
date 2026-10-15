@@ -568,14 +568,13 @@
 
 ## Complete AR inventory
 
-### In progress (6)
+### In progress (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1933](../tasks/AR-1933.md): Coordinator publication credential handoff | ar1933-credential-handoff-luna | Implement the smallest coordinator-owned credential handoff needed for authorized git-publication commands to use host gh authentication without exposing credentials in argv, envelopes, task records, evidence, or subprocess output. Preserve fail-closed capability and network gates, and do not alter AR-1849, AR-1931, AR-1932, PR #171, or historical state. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1934](../tasks/AR-1934.md): PR 1318 publication successor | ar1931-publication-capability-luna | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1936](../tasks/AR-1936.md): Integrate credential FD handoff | ar1932-publication-capability-luna | Integrate the already-reviewed coordinator credential-handoff contract into the ASB state handoffctl run path: admit an explicit credential FD only for authorized git-publication execution, pass it and the worktree FD to the bounded subprocess, fail closed when the helper is unavailable or the descriptor is invalid, and add no formal/TLC or unrelated runtime changes. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1940](../tasks/AR-1940.md): Repair stale ledger successor | ar1940-ledger-repair-luna | Create a successor for blocked AR-1939 with the same bounded stale-history-tolerant predicate-ledger repair and an initial schema-v2 execution envelope that authorizes network only for git-publication; preserve historical rows and fail closed for new evidence. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1941](../tasks/AR-1941.md): Repair sandbox admin mounts | ar1941-sandbox-admin-luna | Repair the handoffctl execution-envelope sandbox so linked Git worktrees resolve required admin metadata through sandbox-visible descriptors without leaking host absolute paths, while retaining the bounded AR-1940 stale-ledger tolerance. Add positive and negative admin-metadata mount tests, including missing metadata and host-path rejection; use an initial schema-v2 envelope with network authorized only for git-publication. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1943](../tasks/AR-1943.md): Repair outer runner bootstrap | ar1943-outer-runner-bootstrap-luna | Repair the state checkout handoffctl outer publication bootstrap so its own preflight and mount preparation select the exact bound worktree runner implementation before invoking git-publication. Preserve AR-1942 runner-selection and AR-1941 descriptor mount fixes; add positive and hostile wrong-runner tests. Initial schema-v2 envelope authorizes network only for git-publication. | Implement the bounded scope and record local acceptance evidence. |
 
@@ -599,7 +598,7 @@
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | Unclaimed | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
 
-### Blocked (128)
+### Blocked (129)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |

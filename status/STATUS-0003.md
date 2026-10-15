@@ -3184,11 +3184,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1940-ledger-repair-luna |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Create a successor for blocked AR-1939 with the same bounded stale-history-tolerant predicate-ledger repair and an initial schema-v2 execution envelope that authorizes network only for git-publication; preserve historical rows and fail closed for new evidence. |
