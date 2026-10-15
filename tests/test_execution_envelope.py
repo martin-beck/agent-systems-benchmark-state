@@ -79,6 +79,45 @@ class ExecutionEnvelopeTests(unittest.TestCase):
         self.assertFalse(missing.allowed)
         self.assertEqual("SCOPE_DECLARATION_REQUIRED", missing.code)
 
+    def test_root_qualified_product_and_state_scopes_are_independent(self) -> None:
+        state = self.root / "state"
+        (state / "tasks").mkdir(parents=True)
+        value = envelope()
+        value["schema_version"] = 2
+        value["path_scope"] = {
+            "read": ["product-root", "state:tasks"],
+            "write": ["product:src", "state:tasks"],
+        }
+        value["capabilities"] = {"git_metadata": {"allowed": False}, "network": {"allowed": False}}
+        meta = self.meta()
+        meta["execution_envelope"] = value
+        meta["execution_envelope_digest"] = canonical_digest(value)
+        self.assertTrue(
+            preflight(
+                meta,
+                "worker",
+                "source-write",
+                ["state:tasks/item"],
+                self.worktree,
+                state_root=state,
+            ).allowed
+        )
+        self.assertEqual(
+            "PATH_OUTSIDE_SCOPE",
+            preflight(
+                meta,
+                "worker",
+                "source-write",
+                ["state:../outside"],
+                self.worktree,
+                state_root=state,
+            ).code,
+        )
+        self.assertEqual(
+            "PATH_SCOPE_UNAVAILABLE",
+            preflight(meta, "worker", "source-write", ["state:tasks/item"], self.worktree).code,
+        )
+
     def test_rejects_mutated_bytes_and_hostile_shape(self) -> None:
         bound_meta = self.meta()
         mutated = envelope()

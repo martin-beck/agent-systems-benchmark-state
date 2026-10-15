@@ -23,6 +23,8 @@ ENVELOPE_ID = re.compile(r"^AR-[0-9]{4}-e[1-9][0-9]*$")
 DIGEST = re.compile(r"^sha256:[0-9a-f]{64}$")
 COMMAND_CLASSES = frozenset({"read", "test", "source-write", "git-publication"})
 CAPABILITY_KEYS = frozenset({"git_metadata", "network"})
+ROOT_NAMES = frozenset({"product", "state"})
+ROOT_SELECTORS = {"product-root": "product", "state-root": "state"}
 
 
 @dataclass(frozen=True)
@@ -62,7 +64,20 @@ def _paths(value: object, field: str, errors: list[str]) -> None:
         errors.append(f"{field} contains duplicates")
     for item in value:
         path = str(item)
-        if not isinstance(item, str) or not REF.fullmatch(path) or path.startswith("."):
+        if not isinstance(item, str):
+            errors.append(f"{field} contains an unsafe path")
+            break
+        if ":" in path:
+            root, _, relative = path.partition(":")
+            if (
+                root not in ROOT_NAMES
+                or not relative
+                or relative.startswith("/")
+                or not REF.fullmatch(relative)
+            ):
+                errors.append(f"{field} contains an unsafe root-qualified path")
+                break
+        elif path not in ROOT_SELECTORS and (not REF.fullmatch(path) or path.startswith(".")):
             errors.append(f"{field} contains an unsafe path")
             break
 
@@ -437,7 +452,11 @@ def _bound_envelope(meta: dict[str, Any]) -> tuple[dict[str, Any] | None, Prefli
 
 
 def _scope_error(
-    envelope: dict[str, Any], command_class: str, paths: list[str], worktree: Path
+    envelope: dict[str, Any],
+    command_class: str,
+    paths: list[str],
+    worktree: Path,
+    state_root: Path | None = None,
 ) -> Preflight | None:
     """Return a denial if declared paths leave their class-specific scope."""
     if command_class in {"source-write", "git-publication"} and not paths:
@@ -447,9 +466,20 @@ def _scope_error(
     allowed = envelope["path_scope"][
         "write" if command_class in {"source-write", "git-publication"} else "read"
     ]
-    root = worktree.resolve()
+    roots = {"product": worktree.resolve()}
+    if state_root is not None:
+        roots["state"] = state_root.resolve()
     for declared in paths:
-        candidate = (root / declared).resolve()
+        prefix, separator, relative = declared.partition(":")
+        if not separator:
+            relative = declared
+        root_name = prefix if separator else "product"
+        if declared in ROOT_SELECTORS:
+            root_name, relative = ROOT_SELECTORS[declared], "."
+        if root_name not in roots:
+            return Preflight(False, "PATH_SCOPE_UNAVAILABLE", "declared root is unavailable")
+        root = roots[root_name]
+        candidate = (root / relative).resolve()
         try:
             relative = candidate.relative_to(root).as_posix()
         except ValueError:
@@ -457,7 +487,14 @@ def _scope_error(
                 False, "PATH_OUTSIDE_SCOPE", "declared path escapes the bound worktree"
             )
         if not any(
-            relative == scope.rstrip("/") or relative.startswith(scope.rstrip("/") + "/")
+            (scope in ROOT_SELECTORS and ROOT_SELECTORS[scope] == root_name)
+            or f"{root_name}:{relative}" == scope.rstrip("/")
+            or f"{root_name}:{relative}".startswith(scope.rstrip("/") + "/")
+            or (
+                not separator
+                and root_name == "product"
+                and (relative == scope.rstrip("/") or relative.startswith(scope.rstrip("/") + "/"))
+            )
             for scope in allowed
         ):
             return Preflight(
@@ -519,6 +556,7 @@ def preflight(
     paths: list[str],
     worktree: Path,
     authorize_external_side_effects: bool = False,
+    state_root: Path | None = None,
 ) -> Preflight:
     """Evaluate only durable task/envelope facts; this function has no side effects."""
     envelope, denial = _bound_envelope(meta)
@@ -547,7 +585,7 @@ def preflight(
     capability_denial = _capability_denial(envelope, command_class, authorize_external_side_effects)
     if capability_denial is not None:
         return capability_denial
-    scope_denial = _scope_error(envelope, command_class, paths, worktree)
+    scope_denial = _scope_error(envelope, command_class, paths, worktree, state_root)
     if scope_denial is not None:
         return scope_denial
     return Preflight(
@@ -565,6 +603,7 @@ def sandboxed_envelope_command(args: Any) -> list[str]:
     write_scope = getattr(args, "_envelope_write_scope", None)
     read_scope = getattr(args, "_envelope_read_scope", None)
     git_metadata = bool(getattr(args, "_envelope_git_metadata", False))
+    state_root = getattr(args, "_envelope_state_root", None)
     if (
         not isinstance(worktree, str)
         or not isinstance(write_scope, list)
@@ -581,7 +620,13 @@ def sandboxed_envelope_command(args: Any) -> list[str]:
             mounts.append((".git", Path(), "--ro-bind"))
         mounts.extend([(str(relative), Path(), "--bind") for relative in write_scope])
     else:
-        mounts = envelope_sandbox_mounts(root, read_scope, write_scope, git_metadata=git_metadata)
+        mounts = envelope_sandbox_mounts(
+            root,
+            read_scope,
+            write_scope,
+            git_metadata=git_metadata,
+            state_root=Path(state_root) if isinstance(state_root, str) else None,
+        )
     targets = {Path("/worktree")}
     for relative, _candidate, _flag in mounts:
         targets.update((Path("/worktree") / relative).parents)
@@ -614,17 +659,38 @@ def sandboxed_envelope_command(args: Any) -> list[str]:
 
 
 def envelope_sandbox_mounts(
-    root: Path, read_scope: list[object], write_scope: list[object], *, git_metadata: bool = False
+    root: Path,
+    read_scope: list[object],
+    write_scope: list[object],
+    *,
+    git_metadata: bool = False,
+    state_root: Path | None = None,
 ) -> list[tuple[str, Path, str]]:
     """Return read-only and writable project mounts for one envelope execution."""
-    read_mounts = [
-        (str(relative), envelope_scope_path(root, str(relative)), "--ro-bind")
-        for relative in read_scope
-    ]
-    write_mounts = [
-        (str(relative), envelope_scope_path(root, str(relative)), "--bind")
-        for relative in write_scope
-    ]
+    roots = {"product": root}
+    if state_root is not None:
+        roots["state"] = state_root
+
+    def mount(item: object, mode: str) -> tuple[str, Path, str]:
+        declared = str(item)
+        prefix, separator, relative = declared.partition(":")
+        if not separator:
+            relative = declared
+        root_name = prefix if separator else "product"
+        if declared in ROOT_SELECTORS:
+            root_name, relative = ROOT_SELECTORS[declared], "."
+        if root_name not in roots:
+            raise RuntimeError("execution envelope path scope has an unavailable root")
+        source = (
+            roots[root_name] if relative == "." else envelope_scope_path(roots[root_name], relative)
+        )
+        destination = (
+            f"{root_name}/{relative}" if separator or declared in ROOT_SELECTORS else relative
+        )
+        return destination, source, mode
+
+    read_mounts = [mount(relative, "--ro-bind") for relative in read_scope]
+    write_mounts = [mount(relative, "--bind") for relative in write_scope]
     metadata_mounts = (
         [(".git", envelope_scope_path(root, ".git"), "--ro-bind")] if git_metadata else []
     )
