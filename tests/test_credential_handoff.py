@@ -39,6 +39,33 @@ class CredentialHandoffTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "open fd >= 3"):
             credential_handoff.run_envelope_subprocess(["true"], 1.0, args)
 
+        args = argparse.Namespace(_envelope_worktree_fd=-1, credential_fd=93)
+        with self.assertRaisesRegex(RuntimeError, "worktree descriptor"):
+            credential_handoff.run_envelope_subprocess(["true"], 1.0, args)
+
+    def test_runs_without_a_worktree_descriptor_when_credential_is_admitted(self) -> None:
+        args = argparse.Namespace(credential_fd=93)
+        completed: subprocess.CompletedProcess[bytes] = subprocess.CompletedProcess(["gh"], 0)
+        with patch.object(credential_handoff.subprocess, "run", return_value=completed):  # type: ignore[attr-defined]
+            self.assertIs(
+                completed,
+                credential_handoff.run_envelope_subprocess(["gh", "status"], 2.0, args),
+            )
+
+    def test_handoffctl_delegates_admitted_credential_runs(self) -> None:
+        args = argparse.Namespace(credential_fd=93)
+        completed: subprocess.CompletedProcess[bytes] = subprocess.CompletedProcess(["gh"], 0)
+        with patch.object(
+            handoffctl._credential_handoff_runtime,  # type: ignore[attr-defined]
+            "run_envelope_subprocess",
+            return_value=completed,
+        ) as launch:
+            self.assertIs(
+                completed,
+                handoffctl._run_envelope_subprocess(["gh", "status"], 2.0, args),
+            )
+        launch.assert_called_once_with(["gh", "status"], 2.0, args)
+
     def test_rejects_missing_credential_descriptor(self) -> None:
         with self.assertRaisesRegex(RuntimeError, "credential descriptor is required"):
             credential_handoff.run_envelope_subprocess(["true"], 1.0, argparse.Namespace())
@@ -68,6 +95,15 @@ class CredentialHandoffTests(unittest.TestCase):
             self.assertRaisesRegex(RuntimeError, "credential helper unavailable"),
         ):
             handoffctl._run_envelope_subprocess(["gh", "pr", "merge"], 15.0, args)
+
+    def test_handoffctl_accepts_authorized_publication_descriptor(self) -> None:
+        handoffctl._validate_credential_fd(
+            argparse.Namespace(
+                credential_fd=93,
+                command_class="git-publication",
+                authorize_external_side_effects=True,
+            )
+        )
 
 
 if __name__ == "__main__":  # pragma: no cover
