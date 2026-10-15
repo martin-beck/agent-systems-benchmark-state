@@ -279,7 +279,7 @@
         AR_1947["AR-1947 - Blocked"]:::status_blocked
         AR_1948["AR-1948 - Blocked"]:::status_blocked
         AR_1949["AR-1949 - Blocked"]:::status_blocked
-        AR_1950["AR-1950 - Planned"]:::status_planned
+        AR_1950["AR-1950 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
