@@ -3388,7 +3388,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair compatibility between the supported Coordinator v0.7.16 vendor snapshot and ASB legacy fixtures: inactive-owner error ordering, envelope subprocess setup, vendor version/manifest expectations, and selector cases. Preserve fail-closed validation and do not weaken gates or run formal/TLC as implementation scope. |
-| Next action | Wait exact-head CI for 22a7b2e4d1; verify coverage reaches &gt;=95&#37;, then merge/reconcile. |
+| Next action | Wait exact-head CI for 002c4f8f23; verify vendor integrity and coverage &gt;=95&#37;, then merge/reconcile. |
 
 
 ## Dependency graph
