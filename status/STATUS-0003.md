@@ -3430,7 +3430,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair only authorized DNS/network visibility inside the bounded handoffctl publication sandbox so AR-1956 can reach the configured HTTPS Git remote. Preserve fail-closed network policy, reject unapproved destinations and selectors, and do not broaden network access or modify AR-1955/1956 source. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Publish 4eb51b7cf22a91ba6ff536c6eb267f2ba0c5afb0 through the supported handoffctl publication path, then retry AR-1956 exact publication. |
 
 
 ## Dependency graph
@@ -4046,4 +4046,3 @@ flowchart LR
         AR_1536["AR-1536 - Done"]:::status_done
         AR_1537["AR-1537 - Blocked"]:::status_blocked
         AR_1538["AR-1538 - Blocked"]:::status_blocked
-        AR_1539["AR-1539 - Blocked"]:::status_blocked
