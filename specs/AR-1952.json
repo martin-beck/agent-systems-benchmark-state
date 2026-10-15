@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1952.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "release-pin", "description": "The vendor snapshot is bound byte-for-byte to Coordinator v0.7.16 merge 6127f6c76c8feafd9e83cb0ba8f4bd478ac656b1."},
+    {"id": "source-binding", "description": "The clean external Coordinator source root is admitted only through explicit identity-bound scope."},
+    {"id": "verification", "description": "Vendor, root-qualified compatibility, focused nonformal, generated-view, and doctor gates pass."},
+    {"id": "publication", "description": "Exact-head review, CI, merge, and post-merge evidence pass."}
+  ],
+  "definition_of_done": ["Sync and vendor verification pass at exact v0.7.16.", "Focused and configured nonformal ASB gates pass.", "The scoped signed+DCO change is reviewed, merged, and reconciled."],
+  "inputs": [{"id": "upstream", "description": "Clean Coordinator checkout at exact merge 6127f6c76c8feafd9e83cb0ba8f4bd478ac656b1."}, {"id": "asb-state", "description": "Current ASB state main."}],
+  "outputs": [{"id": "vendor-adoption", "description": "Exact v0.7.16 vendor snapshot and manifest."}, {"id": "source-binding", "description": "Explicit source-root admission evidence."}, {"id": "publication", "description": "Review, CI, merge, reconcile, and doctor evidence."}],
+  "allowed_tools": ["git", "gh", "python", "uv", "tools/handoffctl", "tools/handoffctl_vendor.py"],
+  "forbidden_tools": ["tlc", "agent-relay", "history-rewrite", "direct-source-copy", "runtime-download"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "vendor", "description": "All pinned vendor blobs and manifest identity verify exactly."}, {"id": "non-formal", "description": "Applicable nonformal compatibility and state gates pass."}, {"id": "publication", "description": "Exact signed/DCO head is hosted-reviewed, green, merged, and reconciled."}]
+}
