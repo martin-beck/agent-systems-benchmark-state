@@ -3250,6 +3250,20 @@
 | Summary | Activate the reviewed AR-1943 outer-runner selection in the authoritative state-main handoffctl runtime before attempting bound publication; preserve AR-1941 through AR-1943, add exact activation and wrong-runner tests, and keep network authorization limited to git-publication. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1945 — Reduce handoffctl state size
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4035,14 +4049,3 @@ flowchart LR
         AR_1724["AR-1724 - Done"]:::status_done
         AR_1725["AR-1725 - Done"]:::status_done
         AR_1726["AR-1726 - Done"]:::status_done
-        AR_1727["AR-1727 - Done"]:::status_done
-        AR_1728["AR-1728 - Done"]:::status_done
-        AR_1729["AR-1729 - Done"]:::status_done
-        AR_1730["AR-1730 - Done"]:::status_done
-        AR_1731["AR-1731 - Done"]:::status_done
-        AR_1732["AR-1732 - Done"]:::status_done
-        AR_1733["AR-1733 - Done"]:::status_done
-        AR_1734["AR-1734 - Done"]:::status_done
-        AR_1735["AR-1735 - Done"]:::status_done
-        AR_1736["AR-1736 - Done"]:::status_done
-        AR_1737["AR-1737 - Done"]:::status_done

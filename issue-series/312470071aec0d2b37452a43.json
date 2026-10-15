@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1945",
+  "issue": {
+    "number": 10075,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10075"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "The reviewed handoffctl.py is at or below 200000 bytes, imports and focused/full applicable tests pass, behavior and fail-closed gates are unchanged, and no direct push, credentials, formal, TLC, or history rewrite is used.",
+      "depends_on": [],
+      "id": "AR-1945",
+      "ownership": "ASB state handoffctl size limit only; no feature or policy changes.",
+      "scope": "Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories.",
+      "short_title": "Reduce handoffctl state size"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

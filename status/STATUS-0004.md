@@ -1,5 +1,16 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1727["AR-1727 - Done"]:::status_done
+        AR_1728["AR-1728 - Done"]:::status_done
+        AR_1729["AR-1729 - Done"]:::status_done
+        AR_1730["AR-1730 - Done"]:::status_done
+        AR_1731["AR-1731 - Done"]:::status_done
+        AR_1732["AR-1732 - Done"]:::status_done
+        AR_1733["AR-1733 - Done"]:::status_done
+        AR_1734["AR-1734 - Done"]:::status_done
+        AR_1735["AR-1735 - Done"]:::status_done
+        AR_1736["AR-1736 - Done"]:::status_done
+        AR_1737["AR-1737 - Done"]:::status_done
         AR_1738["AR-1738 - Done"]:::status_done
         AR_1739["AR-1739 - Done"]:::status_done
         AR_1740["AR-1740 - Done"]:::status_done
@@ -194,6 +205,7 @@
         AR_1942["AR-1942 - Blocked"]:::status_blocked
         AR_1943["AR-1943 - Blocked"]:::status_blocked
         AR_1944["AR-1944 - In progress"]:::status_in_progress
+        AR_1945["AR-1945 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2554,5 +2566,3 @@
 | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
 | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md), [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md), [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md) |
 | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1100](../tasks/AR-1100.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md), [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md), [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md), [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md), [AR-1368](../tasks/AR-1368-control-receipt-runtime-source.md), [AR-1374](../tasks/AR-1374-cli-live-dispatch.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1699](../tasks/AR-1699.md) |
-| [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md), [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1700](../tasks/AR-1700.md) |
-| [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) | [AR-1463](../tasks/AR-1463-current-main-requalification-after-capture.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) |
