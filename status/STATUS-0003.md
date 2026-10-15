@@ -3374,7 +3374,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair ASB handoffctl execution-envelope resolution so immutable envelopes can declare bounded state metadata paths separately from bound product paths, while preserving fail-closed traversal, symlink, wrong-root, and scope validation. Do not weaken isolation, mutate prior task history, or run formal/TLC. |
-| Next action | Wait exact-head CI for aa53388f8e; merge only if all required checks green, then reconcile state. |
+| Next action | Work only through promoted AR-1954 successor; keep PR #173 open and do not merge until exact-head checks are green. |
 
 ### AR-1954 — Repair v0.7.16 compatibility
 
