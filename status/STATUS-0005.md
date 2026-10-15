@@ -555,6 +555,7 @@
 | [AR-1937](../tasks/AR-1937.md) | None | None |
 | [AR-1938](../tasks/AR-1938.md) | None | None |
 | [AR-1939](../tasks/AR-1939.md) | None | None |
+| [AR-1940](../tasks/AR-1940.md) | None | None |
 
 ## Complete AR inventory
 

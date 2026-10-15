@@ -3180,6 +3180,20 @@
 | Summary | Repair the released handoffctl predicate-ledger transition so a completed inactive task with stale historical evidence rows can append one fresh, exactly digested correction without rewriting or deleting history. Apply the bounded repair to AR-1861, AR-1862, and AR-1926 only; preserve all task identities, privacy boundaries, and fail-closed validation for new evidence. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1940 — Repair stale ledger successor
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Create a successor for blocked AR-1939 with the same bounded stale-history-tolerant predicate-ledger repair and an initial schema-v2 execution envelope that authorizes network only for git-publication; preserve historical rows and fail closed for new evidence. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4033,17 +4047,3 @@ flowchart LR
         AR_1792["AR-1792 - Done"]:::status_done
         AR_1793["AR-1793 - Done"]:::status_done
         AR_1794["AR-1794 - Done"]:::status_done
-        AR_1795["AR-1795 - Done"]:::status_done
-        AR_1796["AR-1796 - Blocked"]:::status_blocked
-        AR_1797["AR-1797 - Done"]:::status_done
-        AR_1798["AR-1798 - Done"]:::status_done
-        AR_1799["AR-1799 - Done"]:::status_done
-    end
-    subgraph series_18["18 - Additional work"]
-        direction TB
-        AR_1800["AR-1800 - Done"]:::status_done
-        AR_1819["AR-1819 - Done"]:::status_done
-        AR_1820["AR-1820 - Done"]:::status_done
-        AR_1821["AR-1821 - Done"]:::status_done
-        AR_1822["AR-1822 - Done"]:::status_done
-        AR_1823["AR-1823 - Done"]:::status_done

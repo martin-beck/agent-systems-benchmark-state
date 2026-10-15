@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |

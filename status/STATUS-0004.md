@@ -1,5 +1,19 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1795["AR-1795 - Done"]:::status_done
+        AR_1796["AR-1796 - Blocked"]:::status_blocked
+        AR_1797["AR-1797 - Done"]:::status_done
+        AR_1798["AR-1798 - Done"]:::status_done
+        AR_1799["AR-1799 - Done"]:::status_done
+    end
+    subgraph series_18["18 - Additional work"]
+        direction TB
+        AR_1800["AR-1800 - Done"]:::status_done
+        AR_1819["AR-1819 - Done"]:::status_done
+        AR_1820["AR-1820 - Done"]:::status_done
+        AR_1821["AR-1821 - Done"]:::status_done
+        AR_1822["AR-1822 - Done"]:::status_done
+        AR_1823["AR-1823 - Done"]:::status_done
         AR_1824["AR-1824 - Done"]:::status_done
         AR_1825["AR-1825 - Done"]:::status_done
         AR_1826["AR-1826 - Blocked"]:::status_blocked
@@ -118,6 +132,7 @@
         AR_1937["AR-1937 - Blocked"]:::status_blocked
         AR_1938["AR-1938 - Planned"]:::status_planned
         AR_1939["AR-1939 - In progress"]:::status_in_progress
+        AR_1940["AR-1940 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
