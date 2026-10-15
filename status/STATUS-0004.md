@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1522["AR-1522 - Blocked"]:::status_blocked
+        AR_1523["AR-1523 - Done"]:::status_done
         AR_1524["AR-1524 - Done"]:::status_done
         AR_1525["AR-1525 - Done"]:::status_done
         AR_1526["AR-1526 - Done"]:::status_done

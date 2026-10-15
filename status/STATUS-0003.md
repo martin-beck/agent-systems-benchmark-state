@@ -3444,7 +3444,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Raise the nonformal execution-envelope coverage above the 95&#37; floor with headroom using non-vendored positive and negative tests, then regenerate CURRENT.md and STATUS.md through handoffctl after the main-checkout integrity and runner repairs AR-1955/AR-1956. Do not weaken gates, alter vendored projections, or claim completion before exact-head CI, merge, doctor, and reconcile pass. |
-| Next action | Implement the bounded scope and record local acceptance evidence. |
+| Next action | Create a narrowly scoped successor envelope-authority repair that explicitly permits signed git-publication and git metadata; then publish this exact coverage diff. |
 
 
 ## Dependency graph
@@ -4043,5 +4043,3 @@ flowchart LR
         AR_1519["AR-1519 - Done"]:::status_done
         AR_1520["AR-1520 - Done"]:::status_done
         AR_1521["AR-1521 - Superseded"]:::status_superseded
-        AR_1522["AR-1522 - Blocked"]:::status_blocked
-        AR_1523["AR-1523 - Done"]:::status_done
