@@ -3402,7 +3402,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Publish only the already signed historical-ledger validation tolerance from ae352f4b3e and handoffctl size reduction from be9aea4648 on current ASB state main. Preserve AR-1861, AR-1862, AR-1926, AR-1949, AR-1945, and all active work; do not rewrite ledger history or change product behavior. |
-| Next action | Run focused tests via an explicitly declared absolute interpreter path through the supported bound runner, then record signed candidate evidence. |
+| Next action | Publish signed candidate 2d8a00b259 (historical-ledger tolerance plus handoffctl size repair), wait exact-head CI/review, then reconcile and rerun doctor --live. |
 
 
 ## Dependency graph
