@@ -136,6 +136,7 @@ class CredentialHandoffTests(unittest.TestCase):
             _envelope_worktree_fd=71,
             scope_path=[],
             retry_window=3,
+            timeout_seconds=10.0,
         )
         with (
             patch.object(handoffctl, "backend_selection", return_value={"backend": "git"}),
@@ -158,6 +159,52 @@ class CredentialHandoffTests(unittest.TestCase):
             handoffctl._cmd_run_fenced(args)
         launch.assert_called_once()
         self.assertEqual(93, launch.call_args.args[2].credential_fd)
+
+    def test_cmd_run_fenced_records_bound_execution_reservation(self) -> None:
+        args = argparse.Namespace(
+            task="AR-1936",
+            owner="worker",
+            command=["gh", "status"],
+            command_class="git-publication",
+            authorize_external_side_effects=True,
+            credential_fd=93,
+            _envelope_worktree="bound",
+            _envelope_worktree_fd=71,
+            scope_path=["tools/credential_handoff.py"],
+            retry_window=3,
+            timeout_seconds=10.0,
+        )
+        policy = MagicMock()
+        with (
+            patch.object(handoffctl, "backend_selection", return_value={"backend": "git"}),
+            patch.object(handoffctl, "config", return_value={}),
+            patch.object(handoffctl, "require_active_owner", return_value=policy),
+            patch.object(handoffctl, "run_envelope_timeout", return_value=15.0),
+            patch.object(handoffctl, "require_policy_unchanged"),
+            patch.object(handoffctl.al, "prepare"),  # type: ignore[attr-defined]
+            patch.object(handoffctl, "sandboxed_envelope_command", return_value=["gh", "status"]),
+            patch.object(
+                handoffctl,
+                "locate",
+                side_effect=[
+                    (None, {"task_revision": 4}, None),
+                    (None, {"task_revision": 5}, None),
+                ],
+            ),
+            patch.object(handoffctl, "mutate") as mutate,
+            patch.object(
+                handoffctl,
+                "_run_envelope_subprocess",
+                return_value=subprocess.CompletedProcess(["gh", "status"], 0),
+            ) as launch,
+        ):
+            result = handoffctl._cmd_run_fenced(args)
+        self.assertEqual((policy, result[1], 10.0, False, 0), result[:5])
+        launch.assert_called_once()
+        reservation = mutate.call_args.args[0]
+        self.assertEqual("execution-start", mutate.call_args.args[1])
+        self.assertEqual("AR-1936", reservation.task)
+        self.assertEqual(93, args.credential_fd)
 
 
 if __name__ == "__main__":  # pragma: no cover
