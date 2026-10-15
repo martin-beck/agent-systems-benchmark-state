@@ -3436,7 +3436,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | open |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
