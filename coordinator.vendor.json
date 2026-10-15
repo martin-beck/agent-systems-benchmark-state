@@ -505,7 +505,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "230e6c0961d7d0222f5850f76d6907491c18e63fb8fb9fd15a68a5bc6b118a18",
+      "sha256": "39d67eca5ce8203bf3d892bcd08feee54cf516ea56c5c62d40e21f9e49008629",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
