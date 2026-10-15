@@ -4,6 +4,76 @@
   "checkpoint_commit": "",
   "claim_expires": "2026-10-15T02:59:29+00:00",
   "depends_on": [],
+  "execution_envelope": {
+    "command_classes": {
+      "git-publication": {
+        "allowed": true,
+        "timeout_seconds": 900
+      },
+      "read": {
+        "allowed": true,
+        "timeout_seconds": 120
+      }
+    },
+    "envelope_id": "AR-1849-e1",
+    "envelope_revision": 1,
+    "evidence": [
+      {
+        "class": "hosted",
+        "id": "publication",
+        "required": true
+      }
+    ],
+    "non_goals": [
+      "Do not run TLC or formal qualification.",
+      "Do not modify AR-1841, unrelated tasks, or generated state outside the authorized lifecycle.",
+      "Do not merge PR #170 or rewrite history."
+    ],
+    "outputs": [
+      {
+        "description": "Verify reviewed PR #171 exact-head publication and post-merge state evidence.",
+        "id": "publication"
+      }
+    ],
+    "path_scope": {
+      "read": [
+        "tasks/AR-1849-formal-admission-env-repair.md",
+        "specs/AR-1849.json",
+        "envelopes/AR-1849-e1.json"
+      ],
+      "write": [
+        "tasks/AR-1849-formal-admission-env-repair.md",
+        "PROJECT_STATE.md",
+        "WORKTREES.md",
+        "CURRENT.md",
+        "STATUS.md",
+        "status"
+      ]
+    },
+    "schema_version": 1,
+    "spec_ref": "specs/AR-1849.json",
+    "spec_revision": 1,
+    "stop_conditions": [
+      {
+        "id": "scope",
+        "kind": "deny"
+      },
+      {
+        "id": "formal",
+        "kind": "deny"
+      },
+      {
+        "id": "history",
+        "kind": "deny"
+      }
+    ],
+    "task": "AR-1849",
+    "task_revision": 141
+  },
+  "execution_envelope_digest": "sha256:7011c86348aa3200a9258b58a717adfdc0a86e061fc3f6f2fdb01dd54f6dd55e",
+  "execution_envelope_ref": "envelopes/AR-1849-e1.json",
+  "execution_envelope_revision": 1,
+  "execution_envelope_task_revision": 141,
   "id": "AR-1849",
   "next_action": "Focused suites and TLC portable-smoke pass; full unittest 1,636/1,636 passes and formal portable-smoke passes with required admission/resource env, but terminal coverage is 94% versus required 95%. Preserve PR #145 unmerged; route the concrete coverage deficit to a scoped follow-up before independent review/CI publication.",
   "owner": "ar1849-formal-admission-env-luna",
@@ -22,9 +92,9 @@
   "spec_revision": 1,
   "status": "in_progress",
   "summary": "Repair workflow-wide private TLC admission environment for formal CI.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Formal admission environment repair",
-  "updated_at": "2026-10-15T00:59:29+00:00",
+  "updated_at": "2026-10-15T01:00:21+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1849-formal-admission-env"
 }
 ---
@@ -476,3 +546,5 @@ retain absolute-path and privacy boundaries, and add regression coverage.
   successor boundaries.
 
 - 2026-10-15T00:59:29+00:00: Claimed by ar1849-formal-admission-env-luna.
+
+- 2026-10-15T01:00:21+00:00: Bound execution envelope envelopes/AR-1849-e1.json revision 1.
