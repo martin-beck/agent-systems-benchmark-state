@@ -1,5 +1,18 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1661["AR-1661 - Done"]:::status_done
+        AR_1663["AR-1663 - Planned"]:::status_planned
+        AR_1665["AR-1665 - Planned"]:::status_planned
+        AR_1666["AR-1666 - Planned"]:::status_planned
+        AR_1667["AR-1667 - Planned"]:::status_planned
+        AR_1668["AR-1668 - Planned"]:::status_planned
+        AR_1670["AR-1670 - Planned"]:::status_planned
+        AR_1671["AR-1671 - Planned"]:::status_planned
+        AR_1674["AR-1674 - Planned"]:::status_planned
+        AR_1675["AR-1675 - Planned"]:::status_planned
+        AR_1676["AR-1676 - Planned"]:::status_planned
+        AR_1677["AR-1677 - Planned"]:::status_planned
+        AR_1678["AR-1678 - Done"]:::status_done
         AR_1679["AR-1679 - Planned"]:::status_planned
         AR_1680["AR-1680 - Planned"]:::status_planned
         AR_1681["AR-1681 - Planned"]:::status_planned
@@ -254,6 +267,7 @@
         AR_1946["AR-1946 - Blocked"]:::status_blocked
         AR_1947["AR-1947 - Blocked"]:::status_blocked
         AR_1948["AR-1948 - Blocked"]:::status_blocked
+        AR_1949["AR-1949 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2610,5 +2624,3 @@
 | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
 | [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md) | None | None |
 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md) | None | None |
-| [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md), [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
-| [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |

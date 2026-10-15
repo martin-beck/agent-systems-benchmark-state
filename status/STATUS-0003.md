@@ -3306,6 +3306,20 @@
 | Summary | Repair the execution sandbox runtime so bounded test commands can invoke the reviewed local Python interpreter without downloads or broad host mounts; preserve fail-closed path scope and network policy, and add positive/negative interpreter-resolution tests. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1949 — Repair state projection scope
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair authoritative ASB state projection so valid historical evidence-ledger rows are preserved without false digest rejection, the 200000-byte handoffctl limit is enforced against the reviewed implementation, and bound envelopes can resolve their declared product test paths without broadening isolation. Preserve AR-1948 and all prior history. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4033,16 +4047,3 @@ flowchart LR
         AR_1658["AR-1658 - Planned"]:::status_planned
         AR_1659["AR-1659 - Planned"]:::status_planned
         AR_1660["AR-1660 - Planned"]:::status_planned
-        AR_1661["AR-1661 - Done"]:::status_done
-        AR_1663["AR-1663 - Planned"]:::status_planned
-        AR_1665["AR-1665 - Planned"]:::status_planned
-        AR_1666["AR-1666 - Planned"]:::status_planned
-        AR_1667["AR-1667 - Planned"]:::status_planned
-        AR_1668["AR-1668 - Planned"]:::status_planned
-        AR_1670["AR-1670 - Planned"]:::status_planned
-        AR_1671["AR-1671 - Planned"]:::status_planned
-        AR_1674["AR-1674 - Planned"]:::status_planned
-        AR_1675["AR-1675 - Planned"]:::status_planned
-        AR_1676["AR-1676 - Planned"]:::status_planned
-        AR_1677["AR-1677 - Planned"]:::status_planned
-        AR_1678["AR-1678 - Done"]:::status_done

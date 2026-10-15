@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1949",
+  "issue": {
+    "number": 10079,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10079"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Doctor/snapshot accept corrected historical ledger representation, handoffctl remains at or below 200000 bytes, bound product-path test scope resolves in a clean worktree, and focused/hostile tests pass; no direct push, credentials, formal, TLC, history rewrite, or gate weakening.",
+      "depends_on": [],
+      "id": "AR-1949",
+      "ownership": "ASB state projection, evidence-ledger validation, size guard, and bounded product-path scope only.",
+      "scope": "Repair authoritative ASB state projection so valid historical evidence-ledger rows are preserved without false digest rejection, the 200000-byte handoffctl limit is enforced against the reviewed implementation, and bound envelopes can resolve their declared product test paths without broadening isolation. Preserve AR-1948 and all prior history.",
+      "short_title": "Repair state projection scope"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
