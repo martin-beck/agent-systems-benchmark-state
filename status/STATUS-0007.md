@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1636](../tasks/AR-1636.md): Trusted rustc path propagation | Unclaimed | Propagate a validated rustc toolchain path through the cleared development materializer so current TUI installation succeeds. | No further action; merged PR #439 and paired lifecycle evidence cover the scoped rustc propagation. |
 | P0 | [AR-1637](../tasks/AR-1637.md): Paired TUI toolchain propagation | Unclaimed | Propagate the validated development toolchain contract through ASB into nested asb-tui lifecycle operations. | No further action; nested propagation is covered by merged ASB/TUI toolchain contracts and paired evidence. |
 | P0 | [AR-1638](../tasks/AR-1638.md): Trusted linker-tool propagation | Unclaimed | Propagate validated linker tools through the cleared development materializer so TUI installation can complete. | No further action; merged PR #440 and paired lifecycle evidence cover validated linker propagation. |
 | P0 | [AR-1639](../tasks/AR-1639.md): Trusted auxiliary linker resolution | Unclaimed | Resolve GCC auxiliary linker tools explicitly so cleared development builds can complete without ambient PATH. | No further action; live PTY terminal application failure remains separately owned by AR-1615. |
