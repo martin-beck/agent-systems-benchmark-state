@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1954.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "compat-positive", "description": "Current v0.7.16 vendor APIs and compatibility fixtures agree on valid behavior."},
+    {"id": "compat-negative", "description": "Inactive-owner, missing-context, wrong-selector, and stale-manifest cases remain fail-closed."},
+    {"id": "suite", "description": "Configured nonformal full suite and exact-head CI pass without gate weakening."}
+  ],
+  "definition_of_done": ["Repair the eight recorded compatibility failures with positive and negative tests.", "Run full configured nonformal gates and exact-head CI."],
+  "inputs": [{"id": "vendor", "description": "Supported Coordinator v0.7.16 vendor projection."}, {"id": "failures", "description": "Strict suite run 38684522356 failure evidence."}],
+  "outputs": [{"id": "compatibility", "description": "Bounded compatibility repair and tests."}, {"id": "evidence", "description": "Full nonformal and hosted verification evidence."}],
+  "allowed_tools": ["git", "gh", "python", "uv", "tools/handoffctl"],
+  "forbidden_tools": ["tlc", "agent-relay", "history-rewrite", "direct-task-edit", "gate-weakening"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id": "compatibility", "description": "Positive and negative compatibility tests pass."}, {"id": "suite", "description": "Full configured nonformal suite and exact-head CI pass."}]
+}
