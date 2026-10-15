@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1937",
+  "issue": {
+    "number": 10067,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10067"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Repair only the exact stale blocked ownerless worktree bindings for AR-1891 and AR-1935 through a reviewed handoffctl path, preserving blocked history and all other metadata; reconcile, render, and doctor must pass, or retain a precise fail-closed blocker.",
+      "depends_on": [],
+      "id": "AR-1937",
+      "ownership": "ASB coordination-state legacy binding repair for AR-1891 and AR-1935 only; no product, vendor, schema weakening, publication, formal, TLC, or unrelated task changes.",
+      "scope": "Add or use a fail-closed handoffctl repair path for the exact stale blocked ownerless bindings AR-1891/asb-ar1891-recovery-20261014 and AR-1935/agent-workflow-coordinator-ar1933-credential-handoff. Require exact retained branch and worktree-key metadata, nonempty bounded evidence, and inactive ownerless status; preserve all blocked histories and reject every mismatch.",
+      "short_title": "Repair stale legacy bindings"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
