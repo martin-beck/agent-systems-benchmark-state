@@ -3138,6 +3138,20 @@
 | Summary | Integrate the already-reviewed coordinator credential-handoff contract into the ASB state handoffctl run path: admit an explicit credential FD only for authorized git-publication execution, pass it and the worktree FD to the bounded subprocess, fail closed when the helper is unavailable or the descriptor is invalid, and add no formal/TLC or unrelated runtime changes. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1937 — Repair stale legacy bindings
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add or use a fail-closed handoffctl repair path for the exact stale blocked ownerless bindings AR-1891/asb-ar1891-recovery-20261014 and AR-1935/agent-workflow-coordinator-ar1933-credential-handoff. Require exact retained branch and worktree-key metadata, nonempty bounded evidence, and inactive ownerless status; preserve all blocked histories and reject every mismatch. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4031,16 +4045,3 @@ flowchart LR
         AR_1847["AR-1847 - Planned"]:::status_planned
         AR_1848["AR-1848 - Planned"]:::status_planned
         AR_1849["AR-1849 - In progress"]:::status_in_progress
-        AR_1850["AR-1850 - Done"]:::status_done
-        AR_1851["AR-1851 - Blocked"]:::status_blocked
-        AR_1852["AR-1852 - Blocked"]:::status_blocked
-        AR_1853["AR-1853 - Blocked"]:::status_blocked
-        AR_1854["AR-1854 - Planned"]:::status_planned
-        AR_1855["AR-1855 - Done"]:::status_done
-        AR_1856["AR-1856 - Done"]:::status_done
-        AR_1857["AR-1857 - Blocked"]:::status_blocked
-        AR_1858["AR-1858 - Blocked"]:::status_blocked
-        AR_1859["AR-1859 - Planned"]:::status_planned
-        AR_1860["AR-1860 - Done"]:::status_done
-        AR_1861["AR-1861 - Done"]:::status_done
-        AR_1862["AR-1862 - Done"]:::status_done
