@@ -205,7 +205,7 @@
         AR_1942["AR-1942 - Blocked"]:::status_blocked
         AR_1943["AR-1943 - Blocked"]:::status_blocked
         AR_1944["AR-1944 - In progress"]:::status_in_progress
-        AR_1945["AR-1945 - Open"]:::status_open
+        AR_1945["AR-1945 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

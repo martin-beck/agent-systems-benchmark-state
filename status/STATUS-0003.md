@@ -3254,11 +3254,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1945-handoffctl-size-luna |
 | Parent | None |
 | Children | None |
 | Summary | Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories. |

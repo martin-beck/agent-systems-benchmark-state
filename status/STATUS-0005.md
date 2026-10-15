@@ -574,7 +574,7 @@
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -582,8 +582,9 @@
 | P1 | [AR-1934](../tasks/AR-1934.md): PR 1318 publication successor | ar1931-publication-capability-luna | Narrow successor for AR-1933 coordinator PR #1318 publication capability. Bind only git metadata and network publication authority for the reviewed coordinator PR merge and post-merge verification; preserve AR-1933 and all prior history. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1936](../tasks/AR-1936.md): Integrate credential FD handoff | ar1932-publication-capability-luna | Integrate the already-reviewed coordinator credential-handoff contract into the ASB state handoffctl run path: admit an explicit credential FD only for authorized git-publication execution, pass it and the worktree FD to the bounded subprocess, fail closed when the helper is unavailable or the descriptor is invalid, and add no formal/TLC or unrelated runtime changes. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1944](../tasks/AR-1944.md): Activate state runner fix | ar1944-state-runner-activation-luna | Activate the reviewed AR-1943 outer-runner selection in the authoritative state-main handoffctl runtime before attempting bound publication; preserve AR-1941 through AR-1943, add exact activation and wrong-runner tests, and keep network authorization limited to git-publication. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1945](../tasks/AR-1945.md): Reduce handoffctl state size | ar1945-handoffctl-size-luna | Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (16)
+### Open (15)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -602,7 +603,6 @@
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | Unclaimed | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | Unclaimed | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1945](../tasks/AR-1945.md): Reduce handoffctl state size | Unclaimed | Reduce tools/handoffctl.py below the documented 200000-byte state-file limit without changing command behavior or gates; add deterministic size and import/regression checks and preserve all prior task histories. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (131)
 
@@ -692,4 +692,3 @@
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Hostile harness repair is signed, but pinned MockAgents still accepts oversized requests and approved AArch64/network-none runner evidence is unavailable. | Keep AR-0890 blocked. Repair or replace the pinned MockAgents oversized-request behavior, then rerun amd64 hostile/repeat qualification and an approved network-none AArch64 QEMU lane; do not use host QEMU or claim support. |
 | P1 | [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md): Complete MockAgents executable qualification evidence | Unclaimed | Complete missing evidence for the pinned MockAgents executable qualification. | Create a narrowly scoped candidate-repair AR for MockAgents v0.5.0 streaming truncation; rerun strict lifecycle/network qualification only after truncate_after_chunks suppresses terminal &#91;DONE&#93;. |
 | P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Unclaimed | Extend the pinned MockAgents executable qualification harness. | Route candidate oversized-request behavior to AR-1249 or a reviewed successor; do not weaken the harness rejection. After candidate repair, rerun arm64 and amd64 repeat qualification with the verified QEMU runner. |
-| P1 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Unclaimed | Add a bounded transport and sandbox fixture for MockAgents qualification. | Await reviewed AR-1252 integration allowing pinned MockAgents and Python client in one approved sandbox; then add real transport/lifecycle/egress tests. |
