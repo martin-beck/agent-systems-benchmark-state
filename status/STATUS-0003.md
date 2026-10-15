@@ -3416,7 +3416,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair only the supported handoffctl outer-runner and linked-worktree Git admin mount needed for bounded publication of AR-1955. Preserve AR-1955 signed candidate commits, AR-1950 and AR-1954 active work, all prior task history, and fail-closed path isolation. |
-| Next action | Wait for authorized network/DNS availability, then retry the same bound git-publication command once; otherwise record publication blocked by external network and hand off exact candidate commits. |
+| Next action | Repair authorized network/DNS visibility inside the bounded publication sandbox, then retry exact AR-1956 push; otherwise hand off signed candidate 0a05e5a165 with this fail-closed evidence. |
 
 
 ## Dependency graph
