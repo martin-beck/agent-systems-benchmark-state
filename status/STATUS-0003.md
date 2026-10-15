@@ -3430,7 +3430,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair only authorized DNS/network visibility inside the bounded handoffctl publication sandbox so AR-1956 can reach the configured HTTPS Git remote. Preserve fail-closed network policy, reject unapproved destinations and selectors, and do not broaden network access or modify AR-1955/1956 source. |
-| Next action | Use a clean ordinary checkout or integrate the runner repair before retrying AR-1957 publication; then retry AR-1956 exact publication. |
+| Next action | Provision authorized sandbox DNS/network visibility for the git-publication envelope, then retry AR-1957 exact push and AR-1956 publication. |
 
 
 ## Dependency graph
