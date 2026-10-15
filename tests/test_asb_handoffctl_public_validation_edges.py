@@ -10,11 +10,29 @@ import io
 import sys
 import tempfile
 import unittest
+from collections.abc import Callable
 from pathlib import Path
 from unittest.mock import patch
 
-from tests.test_execution_envelope import envelope as make_envelope
-from tools import handoffctl, retry_circuit
+from tools import execution_envelope, handoffctl, retry_circuit
+
+
+def make_envelope() -> dict[str, object]:
+    return {
+        "schema_version": 1,
+        "envelope_id": "AR-0001-e1",
+        "envelope_revision": 1,
+        "task": "AR-0001",
+        "task_revision": 7,
+        "spec_ref": "specs/AR-0001.json",
+        "spec_revision": 2,
+        "outputs": [{"id": "implementation", "description": "bounded output"}],
+        "non_goals": ["preserve restrictions"],
+        "path_scope": {"read": ["src"], "write": ["src"]},
+        "command_classes": {"test": {"allowed": True, "timeout_seconds": 60}},
+        "evidence": [{"id": "tests", "class": "contract-test", "required": True}],
+        "stop_conditions": [{"id": "scope", "kind": "deny"}],
+    }
 
 
 class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
@@ -108,16 +126,17 @@ class HandoffctlPublicValidationEdgeTests(unittest.TestCase):
             "task_revision": 7,
         }
         args = argparse.Namespace(task="AR-0001", envelope_ref="env.json", envelope_revision=1)
-        for mutate, message in (
+        cases: tuple[tuple[Callable[[dict[str, object]], object], str], ...] = (
             (lambda item: item.update(spec_ref="other.json"), "task or spec"),
             (lambda item: item.update(task_revision=4), "task revision"),
             (lambda item: item.update(spec_revision=3), "spec revision"),
             (lambda item: item.update(envelope_revision=2), "envelope revision"),
-        ):
+        )
+        for mutate, message in cases:
             item = dict(candidate)
             mutate(item)
             with (
-                patch.object(handoffctl.execution_envelope, "load", return_value=(item, "", [])),
+                patch.object(execution_envelope, "load", return_value=(item, "", [])),
                 self.assertRaisesRegex(RuntimeError, message),
             ):
                 handoffctl.bind_envelope_candidate(args, meta)

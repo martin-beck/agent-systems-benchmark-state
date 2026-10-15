@@ -111,10 +111,10 @@ class ReplacementTests(unittest.TestCase):
         args = self._args()
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            cases: tuple[tuple[Callable[[dict[str, object]], object], str], ...] = (
+            cases2: tuple[tuple[Callable[[dict[str, object]], object], str], ...] = (
                 (lambda m: m.pop("execution_envelope"), "existing bound"),
             )
-            for mutate, message in cases:
+            for mutate, message in cases2:
                 meta = self._meta()
                 mutate(meta)
                 with self.assertRaisesRegex(RuntimeError, message):
@@ -125,12 +125,13 @@ class ReplacementTests(unittest.TestCase):
                 self.assertRaisesRegex(RuntimeError, "envelope is invalid"),
             ):
                 execution_envelope.replace_bound(meta, args, root, "2026-01-01T00:00:00Z")
-            for mutate, message in (
+            cases: tuple[tuple[Callable[[dict[str, object]], object], str], ...] = (
                 (lambda e: e.update(task_revision=4), "revision does not match task"),
                 (lambda e: e.update(envelope_revision=9), "envelope revision does not match"),
                 (lambda e: e.update(envelope_id=old["envelope_id"]), "distinct successor"),
                 (lambda e: e.update(non_goals=["other restriction"]), "remove non-goals"),
-            ):
+            )
+            for mutate, message in cases:
                 candidate = dict(successor)
                 mutate(candidate)
                 meta = self._meta()
@@ -148,12 +149,13 @@ class ReplacementTests(unittest.TestCase):
         successor = _envelope(2)
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            for mutate, message in (
+            cases3: tuple[tuple[Callable[[dict[str, object]], object], str], ...] = (
                 (lambda m: m.update(execution_envelope_ref=None), "coherent existing binding"),
                 (lambda m: m.update(spec_ref="other.json"), "task or spec"),
                 (lambda m: m.update(execution_envelope_revision=9), "successor revision"),
                 (lambda m: m.update(execution_envelope_replacements={}), "evidence is invalid"),
-            ):
+            )
+            for mutate, message in cases3:
                 meta = self._meta()
                 mutate(meta)
                 with (
