@@ -3,7 +3,7 @@
   "envelope_id": "AR-1934-e1",
   "envelope_revision": 1,
   "task": "AR-1934",
-  "task_revision": 1,
+  "task_revision": 4,
   "spec_ref": "specs/AR-1934.json",
   "spec_revision": 1,
   "capabilities": {
