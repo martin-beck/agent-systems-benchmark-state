@@ -3194,6 +3194,20 @@
 | Summary | Create a successor for blocked AR-1939 with the same bounded stale-history-tolerant predicate-ledger repair and an initial schema-v2 execution envelope that authorizes network only for git-publication; preserve historical rows and fail closed for new evidence. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1941 — Repair sandbox admin mounts
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the handoffctl execution-envelope sandbox so linked Git worktrees resolve required admin metadata through sandbox-visible descriptors without leaking host absolute paths, while retaining the bounded AR-1940 stale-ledger tolerance. Add positive and negative admin-metadata mount tests, including missing metadata and host-path rejection; use an initial schema-v2 envelope with network authorized only for git-publication. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4032,18 +4046,3 @@ flowchart LR
         AR_1777["AR-1777 - Done"]:::status_done
         AR_1778["AR-1778 - Done"]:::status_done
         AR_1779["AR-1779 - Done"]:::status_done
-        AR_1780["AR-1780 - Planned"]:::status_planned
-        AR_1781["AR-1781 - Done"]:::status_done
-        AR_1782["AR-1782 - Done"]:::status_done
-        AR_1783["AR-1783 - Open"]:::status_open
-        AR_1784["AR-1784 - Done"]:::status_done
-        AR_1785["AR-1785 - Done"]:::status_done
-        AR_1786["AR-1786 - Done"]:::status_done
-        AR_1787["AR-1787 - Done"]:::status_done
-        AR_1788["AR-1788 - Done"]:::status_done
-        AR_1789["AR-1789 - Done"]:::status_done
-        AR_1790["AR-1790 - Done"]:::status_done
-        AR_1791["AR-1791 - Done"]:::status_done
-        AR_1792["AR-1792 - Done"]:::status_done
-        AR_1793["AR-1793 - Done"]:::status_done
-        AR_1794["AR-1794 - Done"]:::status_done

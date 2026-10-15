@@ -1,5 +1,20 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1780["AR-1780 - Planned"]:::status_planned
+        AR_1781["AR-1781 - Done"]:::status_done
+        AR_1782["AR-1782 - Done"]:::status_done
+        AR_1783["AR-1783 - Open"]:::status_open
+        AR_1784["AR-1784 - Done"]:::status_done
+        AR_1785["AR-1785 - Done"]:::status_done
+        AR_1786["AR-1786 - Done"]:::status_done
+        AR_1787["AR-1787 - Done"]:::status_done
+        AR_1788["AR-1788 - Done"]:::status_done
+        AR_1789["AR-1789 - Done"]:::status_done
+        AR_1790["AR-1790 - Done"]:::status_done
+        AR_1791["AR-1791 - Done"]:::status_done
+        AR_1792["AR-1792 - Done"]:::status_done
+        AR_1793["AR-1793 - Done"]:::status_done
+        AR_1794["AR-1794 - Done"]:::status_done
         AR_1795["AR-1795 - Done"]:::status_done
         AR_1796["AR-1796 - Blocked"]:::status_blocked
         AR_1797["AR-1797 - Done"]:::status_done
@@ -133,6 +148,7 @@
         AR_1938["AR-1938 - Planned"]:::status_planned
         AR_1939["AR-1939 - In progress"]:::status_in_progress
         AR_1940["AR-1940 - In progress"]:::status_in_progress
+        AR_1941["AR-1941 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2502,4 +2518,3 @@
 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1725](../tasks/AR-1725-documentation-quickstart-and-platform-install.md) |
 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md), [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md) |
-| [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1526](../tasks/AR-1526.md), [AR-1725](../tasks/AR-1725-documentation-quickstart-and-platform-install.md), [AR-1757](../tasks/AR-1757-human-first-cli-output.md) |
