@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1938",
+  "issue": {
+    "number": 10068,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10068"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Make bounded git-publication worktrees usable inside the handoffctl sandbox without leaking host absolute paths or weakening isolation; preserve a precise negative test for linked worktree admin-path absence and pass positive and hostile coverage.",
+      "depends_on": [],
+      "id": "AR-1938",
+      "ownership": "ASB coordination infrastructure only: handoffctl sandbox worktree/admin-metadata publication boundary; no product, vendor, credential, formal, TLC, unrelated task, or direct publication changes.",
+      "scope": "Repair the handoffctl execution-envelope publication mount for linked Git worktrees so bounded git-publication commands can resolve required Git metadata through sandbox-visible paths. Preserve sandbox isolation, reject host absolute-path leakage and missing admin metadata, and add positive/negative tests.",
+      "short_title": "Repair sandboxed worktree publication"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}

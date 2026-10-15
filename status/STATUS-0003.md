@@ -3152,6 +3152,20 @@
 | Summary | Add or use a fail-closed handoffctl repair path for the exact stale blocked ownerless bindings AR-1891/asb-ar1891-recovery-20261014 and AR-1935/agent-workflow-coordinator-ar1933-credential-handoff. Require exact retained branch and worktree-key metadata, nonempty bounded evidence, and inactive ownerless status; preserve all blocked histories and reject every mismatch. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1938 — Repair sandboxed worktree publication
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the handoffctl execution-envelope publication mount for linked Git worktrees so bounded git-publication commands can resolve required Git metadata through sandbox-visible paths. Preserve sandbox isolation, reject host absolute-path leakage and missing admin metadata, and add positive/negative tests. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4032,15 +4046,3 @@ flowchart LR
         AR_1834["AR-1834 - Done"]:::status_done
         AR_1835["AR-1835 - Done"]:::status_done
         AR_1836["AR-1836 - Blocked"]:::status_blocked
-        AR_1837["AR-1837 - Done"]:::status_done
-        AR_1838["AR-1838 - Done"]:::status_done
-        AR_1839["AR-1839 - Done"]:::status_done
-        AR_1840["AR-1840 - Done"]:::status_done
-        AR_1841["AR-1841 - Blocked"]:::status_blocked
-        AR_1842["AR-1842 - Planned"]:::status_planned
-        AR_1843["AR-1843 - Done"]:::status_done
-        AR_1844["AR-1844 - Planned"]:::status_planned
-        AR_1845["AR-1845 - Planned"]:::status_planned
-        AR_1846["AR-1846 - Planned"]:::status_planned
-        AR_1847["AR-1847 - Planned"]:::status_planned
-        AR_1848["AR-1848 - Planned"]:::status_planned
