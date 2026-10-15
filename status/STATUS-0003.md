@@ -3212,11 +3212,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1942-publication-bootstrap-luna |
 | Parent | None |
 | Children | None |
 | Summary | Repair the ASB state handoffctl publication bootstrap so a bound execution invokes the reviewed dedicated-runner sandbox and linked-worktree Git-admin mount implementation, without falling back to the main vendored runner or bypassing isolation. Preserve AR-1941 mount and AR-1940 ledger fixes; add positive and negative bootstrap tests, with initial schema-v2 network authorization limited to git-publication. |
@@ -4043,4 +4043,3 @@ flowchart LR
         AR_1760["AR-1760 - Done"]:::status_done
         AR_1761["AR-1761 - Done"]:::status_done
         AR_1762["AR-1762 - Done"]:::status_done
-        AR_1763["AR-1763 - Done"]:::status_done

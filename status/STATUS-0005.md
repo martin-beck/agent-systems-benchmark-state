@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1725](../tasks/AR-1725-documentation-quickstart-and-platform-install.md) |
 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md), [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md) |
 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1526](../tasks/AR-1526.md), [AR-1725](../tasks/AR-1725-documentation-quickstart-and-platform-install.md), [AR-1757](../tasks/AR-1757-human-first-cli-output.md) |
@@ -564,7 +565,7 @@
 
 ## Complete AR inventory
 
-### In progress (7)
+### In progress (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -575,8 +576,9 @@
 | P1 | [AR-1939](../tasks/AR-1939.md): Repair stale evidence ledgers | ar1939-ledger-repair-luna | Repair the released handoffctl predicate-ledger transition so a completed inactive task with stale historical evidence rows can append one fresh, exactly digested correction without rewriting or deleting history. Apply the bounded repair to AR-1861, AR-1862, and AR-1926 only; preserve all task identities, privacy boundaries, and fail-closed validation for new evidence. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1940](../tasks/AR-1940.md): Repair stale ledger successor | ar1940-ledger-repair-luna | Create a successor for blocked AR-1939 with the same bounded stale-history-tolerant predicate-ledger repair and an initial schema-v2 execution envelope that authorizes network only for git-publication; preserve historical rows and fail closed for new evidence. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1941](../tasks/AR-1941.md): Repair sandbox admin mounts | ar1941-sandbox-admin-luna | Repair the handoffctl execution-envelope sandbox so linked Git worktrees resolve required admin metadata through sandbox-visible descriptors without leaking host absolute paths, while retaining the bounded AR-1940 stale-ledger tolerance. Add positive and negative admin-metadata mount tests, including missing metadata and host-path rejection; use an initial schema-v2 envelope with network authorized only for git-publication. | Implement the bounded scope and record local acceptance evidence. |
+| P1 | [AR-1942](../tasks/AR-1942.md): Bootstrap bound publication runner | ar1942-publication-bootstrap-luna | Repair the ASB state handoffctl publication bootstrap so a bound execution invokes the reviewed dedicated-runner sandbox and linked-worktree Git-admin mount implementation, without falling back to the main vendored runner or bypassing isolation. Preserve AR-1941 mount and AR-1940 ledger fixes; add positive and negative bootstrap tests, with initial schema-v2 network authorization limited to git-publication. | Implement the bounded scope and record local acceptance evidence. |
 
-### Open (16)
+### Open (15)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -595,7 +597,6 @@
 | P1 | [AR-1910](../tasks/AR-1910.md): Admit autonomy-limits dependency | Unclaimed | State-only successor admitting exactly tools/autonomy_limits.py for the AR-1908 focused replacement test. Preserve AR-1909, AR-1908 and earlier histories; retain AR-1878 expiry blocker; no arbitrary widening, network, claim bypass, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1917](../tasks/AR-1917.md): Publish recovery commits | Unclaimed | Create a narrow successor for publication of already-reviewed recovery commits, including exact AR-1901 restoration of the cross-repository publication scope. Admit only git-publication capability plus bounded read/test commands, exact product/state paths, fresh-clone verification, signed DCO checks, and updated Coordinator v0.7.12. Preserve every hash and history; no arbitrary paths, force-clear, product edits, vendor edits, or formal/TLC. | Implement the bounded scope and record local acceptance evidence. |
 | P1 | [AR-1919](../tasks/AR-1919.md): Repair git publication | Unclaimed | Create a narrow successor for the repeated GIT_METADATA_CAPABILITY_DENIED blocker affecting reviewed AR-1878 and AR-1886. Grant only bounded git metadata/publication capability for those exact heads and paths; preserve histories, scopes, gates, and evidence. Exclude network, source-write, test, formal, TLC, runtime downloads, host mounts, and unrelated paths. | Implement the bounded scope and record local acceptance evidence. |
-| P1 | [AR-1942](../tasks/AR-1942.md): Bootstrap bound publication runner | Unclaimed | Repair the ASB state handoffctl publication bootstrap so a bound execution invokes the reviewed dedicated-runner sandbox and linked-worktree Git-admin mount implementation, without falling back to the main vendored runner or bypassing isolation. Preserve AR-1941 mount and AR-1940 ledger fixes; add positive and negative bootstrap tests, with initial schema-v2 network authorization limited to git-publication. | Implement the bounded scope and record local acceptance evidence. |
 
 ### Blocked (125)
 
@@ -687,4 +688,3 @@
 | P1 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Unclaimed | Add a bounded transport and sandbox fixture for MockAgents qualification. | Await reviewed AR-1252 integration allowing pinned MockAgents and Python client in one approved sandbox; then add real transport/lifecycle/egress tests. |
 | P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Unclaimed | Qualify MockAgents through the pinned Python sandbox. | Await AR-1258 pinned arm64 runner and AR-1255 transport evidence; then qualify protocol, cancellation, egress and restart. |
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
-| P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked. |
