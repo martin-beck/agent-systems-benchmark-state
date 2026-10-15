@@ -3166,6 +3166,20 @@
 | Summary | Repair the handoffctl execution-envelope publication mount for linked Git worktrees so bounded git-publication commands can resolve required Git metadata through sandbox-visible paths. Preserve sandbox isolation, reject host absolute-path leakage and missing admin metadata, and add positive/negative tests. |
 | Next action | Implement the bounded scope and record local acceptance evidence. |
 
+### AR-1939 — Repair stale evidence ledgers
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the released handoffctl predicate-ledger transition so a completed inactive task with stale historical evidence rows can append one fresh, exactly digested correction without rewriting or deleting history. Apply the bounded repair to AR-1861, AR-1862, and AR-1926 only; preserve all task identities, privacy boundaries, and fail-closed validation for new evidence. |
+| Next action | Implement the bounded scope and record local acceptance evidence. |
+
 
 ## Dependency graph
 
@@ -4033,17 +4047,3 @@ flowchart LR
         AR_1821["AR-1821 - Done"]:::status_done
         AR_1822["AR-1822 - Done"]:::status_done
         AR_1823["AR-1823 - Done"]:::status_done
-        AR_1824["AR-1824 - Done"]:::status_done
-        AR_1825["AR-1825 - Done"]:::status_done
-        AR_1826["AR-1826 - Blocked"]:::status_blocked
-        AR_1827["AR-1827 - Planned"]:::status_planned
-        AR_1828["AR-1828 - Planned"]:::status_planned
-        AR_1829["AR-1829 - Planned"]:::status_planned
-        AR_1830["AR-1830 - Planned"]:::status_planned
-        AR_1831["AR-1831 - Planned"]:::status_planned
-        AR_1832["AR-1832 - Planned"]:::status_planned
-        AR_1833["AR-1833 - Done"]:::status_done
-        AR_1834["AR-1834 - Done"]:::status_done
-        AR_1835["AR-1835 - Done"]:::status_done
-        AR_1836["AR-1836 - Blocked"]:::status_blocked
-        AR_1837["AR-1837 - Done"]:::status_done

@@ -1,0 +1,20 @@
+{
+  "finalizer": "AR-1939",
+  "issue": {
+    "number": 10069,
+    "url": "https://github.com/martin-beck/agent-systems-benchmark/issues/10069"
+  },
+  "issue_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "members": [
+    {
+      "acceptance": "Positive and hostile tests prove stale historical rows are retained while fresh candidate/evidence references and digests are validated; exact ledger corrections make snapshot, reconcile, render, and doctor pass or preserve a precise remaining blocker; signed reviewed PR, exact-head CI, merge, and post-merge verification complete.",
+      "depends_on": [],
+      "id": "AR-1939",
+      "ownership": "ASB state handoffctl predicate-ledger repair and focused tests only; no product, vendor, publication, formal, TLC, or unrelated task changes.",
+      "scope": "Repair the released handoffctl predicate-ledger transition so a completed inactive task with stale historical evidence rows can append one fresh, exactly digested correction without rewriting or deleting history. Apply the bounded repair to AR-1861, AR-1862, and AR-1926 only; preserve all task identities, privacy boundaries, and fail-closed validation for new evidence.",
+      "short_title": "Repair stale evidence ledgers"
+    }
+  ],
+  "repository": "github.com/martin-beck/agent-systems-benchmark",
+  "schema_version": 1
+}
