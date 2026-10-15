@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1566["AR-1566 - Blocked"]:::status_blocked
+        AR_1567["AR-1567 - Done"]:::status_done
         AR_1568["AR-1568 - Done"]:::status_done
         AR_1569["AR-1569 - Done"]:::status_done
         AR_1570["AR-1570 - Done"]:::status_done
@@ -2688,4 +2690,3 @@
 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md) | None | None |
 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |
 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md) | None | None |
-| [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md) | None | None |
