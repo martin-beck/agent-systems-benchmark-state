@@ -47,6 +47,7 @@ if __package__:
         execution_envelope,
         execution_lifecycle,
         execution_receipt,
+        mutation_admission,
         resume_card,
         resume_card_runtime,
         retry_circuit,
@@ -145,6 +146,7 @@ else:
     import execution_envelope  # type: ignore[import-not-found,no-redef]
     import execution_lifecycle  # type: ignore[import-not-found,no-redef]
     import execution_receipt  # type: ignore[import-not-found,no-redef]
+    import mutation_admission  # type: ignore[import-not-found,no-redef]
     import predicate_ledger_repair as plr  # type: ignore[import-not-found,no-redef]
     import resume_card  # type: ignore[import-not-found,no-redef]
     import resume_card_runtime  # type: ignore[import-not-found,no-redef]
@@ -365,7 +367,7 @@ def short_title_errors(path: Path, task_id: str, value: object) -> list[str]:
     return []
 
 
-COORDINATOR_VERSION = "0.7.14"
+COORDINATOR_VERSION = "0.7.15"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -1147,7 +1149,6 @@ def project_scan() -> State:
         raw = run(["git", "-C", str(checkout), "worktree", "list", "--porcelain"]).stdout
         return parse_worktree_listing(raw)
 
-    # Exclude coordinator-owned checkouts from product worktree projections.
     coordinator_paths = {path.resolve() for path, _, _ in listed_worktrees(ROOT)}
     paths: list[tuple[Path, str, str]] = []
     seen_paths: set[Path] = set()
@@ -1480,7 +1481,6 @@ def execution_metadata_errors(task_id: str, meta: Meta) -> list[str]:  # noqa: C
 
 
 def execution_abandonment_errors(task_id: str, meta: Meta) -> list[str]:
-    """Reject malformed bounded abandonment history before it reaches projections."""
     if execution_abandonment.valid_records(meta.get("execution_abandonments")):
         return []
     return [f"{task_id}: invalid execution_abandonments"]
@@ -1535,7 +1535,6 @@ def reference_errors(path: Path, meta: Meta) -> list[str]:
 
 
 def supersession_errors(tasks: list[Task]) -> list[str]:
-    """Validate explicitly recorded supersession pointers without weakening old data."""
     by_id = {meta.get("id"): meta for _, meta, _ in tasks}
     errors: list[str] = []
     for _, meta, _ in tasks:
@@ -1560,17 +1559,22 @@ def supersession_errors(tasks: list[Task]) -> list[str]:
     return errors
 
 
-def basic_task_errors(path: Path, meta: Meta, policy: EvidencePolicy | None = None) -> list[str]:
+def basic_task_errors(
+    path: Path,
+    meta: Meta,
+    policy: EvidencePolicy | None = None,
+    *,
+    include_ledger: bool = True,
+) -> list[str]:
     return [
         *field_errors(path, meta),
         *value_errors(path, meta),
         *reference_errors(path, meta),
-        *task_spec_errors(ROOT, meta, policy),
+        *mutation_admission.task_errors(ROOT, meta, policy, include_ledger=include_ledger),
     ]
 
 
 def parse_claim_expiry(expiry: object) -> dt.datetime:
-    """Parse one timezone-aware lease deadline."""
     if not isinstance(expiry, str) or not expiry:
         raise ValueError("missing or non-string claim expiry")
     parsed = dt.datetime.fromisoformat(expiry.replace("Z", "+00:00"))
@@ -1580,7 +1584,6 @@ def parse_claim_expiry(expiry: object) -> dt.datetime:
 
 
 def process_start_time(pid: int) -> int | None:
-    """Return a Linux process start time, or ``None`` after it has exited."""
     proc = Path("/proc") / str(pid)
     try:
         stat_fields = (proc / "stat").read_text(encoding="utf-8").rsplit(")", 1)[1].split()
@@ -1592,7 +1595,6 @@ def process_start_time(pid: int) -> int | None:
 
 
 def worker_execution_scope() -> tuple[str, str]:
-    """Return the local boot and PID-namespace identities for recovery fencing."""
     try:
         boot_id = (Path("/proc/sys/kernel/random/boot_id").read_text(encoding="utf-8")).strip()
         namespace = Path("/proc/self/ns/pid").stat()
@@ -1609,7 +1611,6 @@ def worker_execution_scope() -> tuple[str, str]:
 
 
 def claimed_process_identity(args: argparse.Namespace) -> Meta | None:
-    """Validate an optional live worker identity at the exact claim transition."""
     pid = getattr(args, "worker_pid", None)
     start_time = getattr(args, "worker_start_time", None)
     if pid is None and start_time is None:
@@ -1630,7 +1631,6 @@ def claimed_process_identity(args: argparse.Namespace) -> Meta | None:
 
 
 def require_claimed_worker_absent(meta: Meta) -> None:
-    """Require a claim-time identity and independently confirm it no longer runs."""
     identity = meta.get("claim_process")
     if not scoped_claim_process(identity):
         raise RuntimeError(
@@ -1738,6 +1738,7 @@ def mutation_errors(
     policy: EvidencePolicy | None = None,
     *,
     rendered_snapshot: tuple[list[Task], dict[Path, str], Meta] | None = None,
+    include_ledger: bool = True,
 ) -> list[str]:
     """Validate a Git mutation."""
     tasks = all_tasks()
@@ -1745,7 +1746,7 @@ def mutation_errors(
     if len(selected) != 1:
         return [f"{path.name}: mutation target is not unique"]
     errors = [] if policy is not None else task_spec_policy_errors(ROOT)
-    errors.extend(basic_task_errors(path, selected[0], policy))
+    errors.extend(basic_task_errors(path, selected[0], policy, include_ledger=include_ledger))
     errors.extend(claim_errors(selected[0], {}, {}, {}))
     errors.extend(mutation_global_errors(tasks))
     errors.extend(generated_view_errors(tasks, rendered_snapshot=rendered_snapshot))
@@ -1900,8 +1901,6 @@ def validate(
     errors.extend(directive_validation_errors())
     errors.extend(privacy_errors())
     if live:
-        # Hosted run/worktree observations can change after reconciliation.
-        # They are advisory, not immutable local integrity evidence.
         del live_state
     return errors
 
@@ -2093,7 +2092,6 @@ def reconcile(
     if push and not do_commit:
         raise RuntimeError("PUSH_REQUIRES_COMMIT: reconcile --push also requires --commit")
 
-    # Keep external observations outside the authority lock.
     for _ in range(32):
         scan_config = config() if CONFIG.exists() else None
         scan_binding = project_binding()
@@ -3242,7 +3240,6 @@ def unchanged_generated_view(path: Path, content: str) -> bool:
         with os.fdopen(descriptor, "rb", closefd=False) as stream:
             if stream.read(len(expected) + 1) != expected:
                 return False
-        # Replaced pathnames must be re-read from the current inode.
         try:
             current_parent = path.parent.lstat()
             current = path.lstat()
@@ -3363,6 +3360,7 @@ def persist_git_mutation(
             before,
             selected_policy,
             rendered_snapshot=(view_tasks, views, view_settings),
+            include_ledger=kind != "repair-predicate-ledger",
         )
         if errors:
             raise RuntimeError("\n".join(errors))
@@ -3531,7 +3529,12 @@ def mutate_sqlite(
             for path, item, text in tasks
         ]
         errors = (
-            basic_task_errors(selected[0], validated, selected_policy)
+            basic_task_errors(
+                selected[0],
+                validated,
+                selected_policy,
+                include_ledger=kind != "repair-predicate-ledger",
+            )
             + graph_errors(candidate)
             + hierarchy_errors(candidate)
             + supersession_errors(candidate)
@@ -3647,7 +3650,6 @@ def git_doctor_checks(*, live: bool) -> list[str]:
             if project_binding() != scan_binding:
                 raise RuntimeError("OBSERVATION_INPUT_CHANGED: retry doctor")
             errors = doctor_checks(live=live, sqlite=False, live_state=live_state)
-            # Retry only stale live comparisons.
             if (
                 ticket != published_observation_ticket()
                 and errors
@@ -4077,7 +4079,6 @@ def require_active_owner(task_id: str, owner: str) -> EvidencePolicy:
 
 
 def execution_preflight(args: argparse.Namespace) -> tuple[bool, str, str, float | None]:
-    """Evaluate envelope admission."""
     with locked(exclusive=False, phase="execution_envelope_preflight"):
         release_envelope_worktree(args)
         _, meta, _ = locate(args.task)
@@ -4094,6 +4095,7 @@ def execution_preflight(args: argparse.Namespace) -> tuple[bool, str, str, float
         except RuntimeError as error:
             return False, "WORKTREE_BINDING_INVALID", str(error), None
         try:
+            source_root = getattr(args, "source_root", None)
             result = execution_envelope.preflight(
                 meta,
                 args.owner,
@@ -4101,6 +4103,10 @@ def execution_preflight(args: argparse.Namespace) -> tuple[bool, str, str, float
                 list(args.scope_path),
                 worktree,
                 bool(getattr(args, "authorize_external_side_effects", False)),
+                ROOT,
+                execution_envelope.validate_external_root(Path(source_root), "source")
+                if source_root
+                else None,
             )
             if not result.allowed:
                 release_envelope_worktree(args)
@@ -4129,7 +4135,6 @@ def execution_preflight(args: argparse.Namespace) -> tuple[bool, str, str, float
 def prepare_envelope_mounts(
     args: argparse.Namespace, envelope: dict[str, Any], worktree: Path, worktree_context: Any
 ) -> dict[str, Any]:
-    """Validate and retain the exact publication metadata/network mounts."""
     mount_scope = list(envelope["path_scope"]["read"])
     git_metadata = (
         args.command_class == "git-publication"
@@ -4139,8 +4144,17 @@ def prepare_envelope_mounts(
         mount_scope.extend(args.scope_path)
     if git_metadata:
         envelope_scope_path(worktree, ".git")
-    for relative in mount_scope:
-        envelope_scope_path(worktree, str(relative))
+    source_root = getattr(args, "source_root", None)
+    execution_envelope.envelope_sandbox_mounts(
+        worktree,
+        mount_scope,
+        [],
+        git_metadata=git_metadata,
+        state_root=ROOT,
+        source_root=execution_envelope.validate_external_root(Path(source_root), "source")
+        if source_root
+        else None,
+    )
     rule = envelope["command_classes"][args.command_class]
     args._envelope_worktree = str(worktree)
     args._envelope_worktree_fd = int(worktree.name)
@@ -4149,13 +4163,14 @@ def prepare_envelope_mounts(
         list(args.scope_path) if args.command_class in {"source-write", "git-publication"} else []
     )
     args._envelope_read_scope = list(envelope["path_scope"]["read"])
+    args._envelope_state_root = str(ROOT)
+    args._envelope_source_root = str(source_root) if source_root else None
     args._envelope_git_metadata = git_metadata
     args._envelope_network = bool(getattr(args, "authorize_external_side_effects", False))
     return cast(dict[str, Any], rule)
 
 
 def release_envelope_worktree(args: argparse.Namespace) -> None:
-    """Close a descriptor retained from bound execution admission."""
     context = getattr(args, "_envelope_worktree_context", None)
     if context is not None:
         delattr(args, "_envelope_worktree_context")
@@ -4165,6 +4180,7 @@ def release_envelope_worktree(args: argparse.Namespace) -> None:
         "_envelope_worktree_fd",
         "_envelope_git_metadata",
         "_envelope_network",
+        "_envelope_state_root",
     ):
         if hasattr(args, name):
             delattr(args, name)
@@ -4984,7 +5000,6 @@ def main() -> int:
     item = commands.add_parser("repair-legacy-binding")
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
-    item.add_argument("--branch", required=True)
     item.add_argument("--worktree-key", required=True)
     item.add_argument("--note", required=True)
     plr.add_parser(commands)
@@ -5007,6 +5022,7 @@ def main() -> int:
         "--command-class", choices=sorted(execution_envelope.COMMAND_CLASSES), required=True
     )
     item.add_argument("--scope-path", action="append", default=[])
+    item.add_argument("--source-root")
     item.add_argument("--json", action="store_true")
     item = commands.add_parser("promote")
     item.add_argument("task")
@@ -5092,6 +5108,7 @@ def main() -> int:
     al.add_run_arguments(item)
     item.add_argument("--command-class", choices=sorted(execution_envelope.COMMAND_CLASSES))
     item.add_argument("--scope-path", action="append", default=[])
+    item.add_argument("--source-root")
     item.add_argument("--authorize-external-side-effects", action="store_true")
     item.add_argument("command", nargs=argparse.REMAINDER)
     args = parser.parse_args()

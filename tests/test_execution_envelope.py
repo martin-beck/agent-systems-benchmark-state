@@ -79,6 +79,99 @@ class ExecutionEnvelopeTests(unittest.TestCase):
         self.assertFalse(missing.allowed)
         self.assertEqual("SCOPE_DECLARATION_REQUIRED", missing.code)
 
+    def test_root_qualified_product_and_state_scopes_are_independent(self) -> None:
+        state = self.root / "state"
+        (state / "tasks").mkdir(parents=True)
+        value = envelope()
+        value["schema_version"] = 2
+        value["capabilities"] = {"git_metadata": {"allowed": False}, "network": {"allowed": False}}
+        value["path_scope"] = {
+            "read": ["product:src", "state:tasks"],
+            "write": ["product:src", "state:tasks"],
+        }
+        meta = self.meta()
+        meta["execution_envelope"] = value
+        meta["execution_envelope_digest"] = canonical_digest(value)
+        self.assertTrue(
+            preflight(
+                meta, "worker", "test", ["state:tasks"], self.worktree, state_root=state
+            ).allowed
+        )
+        self.assertTrue(
+            preflight(
+                meta,
+                "worker",
+                "source-write",
+                ["product:src/new.py"],
+                self.worktree,
+                state_root=state,
+            ).allowed
+        )
+        self.assertEqual(
+            "PATH_OUTSIDE_SCOPE",
+            preflight(meta, "worker", "test", ["state:src"], self.worktree, state_root=state).code,
+        )
+        self.assertEqual(
+            "PATH_OUTSIDE_SCOPE",
+            preflight(meta, "worker", "test", ["state:tasks"], self.worktree).code,
+        )
+
+    def test_root_qualified_scope_rejects_symlink_and_traversal(self) -> None:
+        state = self.root / "state"
+        (state / "tasks").mkdir(parents=True)
+        (state / "alias").symlink_to(self.worktree / "src")
+        value = envelope()
+        value["schema_version"] = 2
+        value["capabilities"] = {"git_metadata": {"allowed": False}, "network": {"allowed": False}}
+        value["path_scope"] = {"read": ["state:tasks"], "write": ["state:tasks"]}
+        meta = self.meta()
+        meta["execution_envelope"] = value
+        meta["execution_envelope_digest"] = canonical_digest(value)
+        self.assertEqual(
+            "PATH_OUTSIDE_SCOPE",
+            preflight(
+                meta, "worker", "test", ["state:alias"], self.worktree, state_root=state
+            ).code,
+        )
+        self.assertEqual(
+            "PATH_OUTSIDE_SCOPE",
+            preflight(
+                meta, "worker", "test", ["state:../src"], self.worktree, state_root=state
+            ).code,
+        )
+
+    def test_source_root_is_independently_bound_and_rejects_aliases(self) -> None:
+        source = self.root / "source"
+        (source / "tools").mkdir(parents=True)
+        value = envelope()
+        value["schema_version"] = 2
+        value["capabilities"] = {"git_metadata": {"allowed": False}, "network": {"allowed": False}}
+        value["path_scope"] = {"read": ["source-root"], "write": ["source:tools"]}
+        meta = self.meta()
+        meta["execution_envelope"] = value
+        meta["execution_envelope_digest"] = canonical_digest(value)
+        self.assertTrue(
+            preflight(
+                meta, "worker", "source-write", ["source:tools"], self.worktree, source_root=source
+            ).allowed
+        )
+        self.assertEqual(
+            "PATH_SCOPE_UNAVAILABLE",
+            preflight(meta, "worker", "test", ["source-root"], self.worktree).code,
+        )
+        self.assertEqual(
+            "PATH_SCOPE_UNAVAILABLE",
+            preflight(meta, "worker", "test", ["source:tools"], self.worktree).code,
+        )
+        alias = self.root / "source-alias"
+        alias.symlink_to(source)
+        self.assertEqual(
+            "PATH_SCOPE_UNAVAILABLE",
+            preflight(
+                meta, "worker", "test", ["source-root"], self.worktree, source_root=alias
+            ).code,
+        )
+
     def test_rejects_mutated_bytes_and_hostile_shape(self) -> None:
         bound_meta = self.meta()
         mutated = envelope()
